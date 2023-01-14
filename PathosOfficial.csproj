@@ -123,22 +123,13 @@
 
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />
 
+  <!-- Automatically regenerates the Resources files -->
   <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
-    <!-- Automatically regenerates the Resources files -->
     <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
 
+  <!-- Make the Atlases and Albums -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)' == 'net48' ">
-    <!-- Make the Atlases and Albums -->
     <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
-
-    <!-- Ensure the subfolder exists in the installation -->
-    <Exec Command="if not exist $(PathosInstallation)\Campaigns md $(PathosInstallation)\Campaigns" />
-
-    <!-- a deploy assemblies to the installation subfolder -->
-    <Exec Command="copy $(TargetDir)$(TargetName).* $(PathosInstallation)\Campaigns" />
-
-    <!-- a deploy assets to the installation subfolder -->
-    <Exec Command="xcopy /d /y $(ProjectDir)Assets\*.* $(PathosInstallation)\Campaigns" />
   </Target>
 </Project>

@@ -15,7 +15,7 @@ The content definitions and module generations are declared as C# code. This cod
 1. Install **Microsoft Visual Studio 2022** or Microsoft Visual Code.
 2. Download **Pathos for Windows Desktop** from the [Official Website](https://pathos.azurewebsites.net/).
 3. Install Pathos to `C:\Games\Pathos`**.
-4. Fork this public repository: https://github.com/callanh/pathos-official.git.
+4. Fork this public repository: <https://github.com/callanh/pathos-official.git>.
 5. Open **PathosOfficial.sln.**
 6. Run **PathosOfficial** project.
 
@@ -49,16 +49,16 @@ Because of the way .NET JIT (Just-In-Time) compilation works, it is desirable to
 Please reach out to me for any help or even just to share your variant :)
 
 **Email**
-mailto:hodgskin.callan@gmail.com
+<mailto:hodgskin.callan@gmail.com>
 
 **Twitter**
-https://twitter.com/callan_hodgskin
+<https://twitter.com/callan_hodgskin>
 
 **Reddit**
-https://www.reddit.com/r/pathos_nethack
+<https://www.reddit.com/r/pathos_nethack>
 
 **Discord**
-https://discord.gg/TRhRZhX
+<https://discord.gg/TRhRZhX>
 
 **Made with Invention**
-https://gitlab.com/hodgskin-callan/Invention
+<https://gitlab.com/hodgskin-callan/Invention>
