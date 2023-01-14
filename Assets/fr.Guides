@@ -1,0 +1,447 @@
+# Commands; Commandes
+. Single tap/left click or arrow keys to move and attack.; Touchez l’écran (smartphones), faites un clic-gauche ou utilisez le pavé directionnel pour vous mouvoir et attaquer.
+. Long press/right click to operate doors/traps.; Touchez l’écran de manière prolongée (smartphones) ou faites un clic-droit pour actionner les pièges, les portes, ainsi que pour équiper/utiliser un objet depuis l’inventaire ou bien le sol.
+. Double tap to pick up items, traverse stairs or wait one move.; Touchez l’écran deux fois (smartphones) ou faites un double-clic pour ramasser des objets, prendre un escalier ou attendre durant un tour.
+/
+- . | wait one turn (also double tap on self); . | attendre un tour (idem double-clic sur le personnage)
+- , | pick up the top item on the floor; , | ramasser le premier objet sur le sol
+- A | toggle log (click the log to expand/collapse); A | afficher le journal (cliquez sur le journal pour l’étendre/le réduire)
+- B | move down-left; B | se déplacer vers le bas à gauche
+- C | toggle character; C | changer de personnage
+- D | re-use last item; D | réutiliser le dernier objet utilisé
+- E | mount or dismount your steed; E | monter ou descendre de votre monture
+- F | toggle floor; F | changer d'étage
+- G | re-equip last item; G | rééquiper le dernier objet
+- H | move left; H | se déplacer vers la gauche
+- I | toggle inventory; I | afficher l'inventaire
+- J | move down; J | se déplacer vers le bas
+- K | move up; K | se déplacer vers le haut
+- L | move right; L | se déplacer vers la droite
+- M | toggle map; M | afficher la carte
+- N | move down-right; N | se déplacer vers le bas à droite
+- O | hide from view; O | se cacher dans l’ombre
+- P | polymorph at will; P | avoir recours au polymorphisme à volonté
+- Q | save or quit this game; Q | sauvegarder ou quitter cette session de jeu
+- R | for rest mode to recover life and mana; R | activer le mode repos afin de récupérer vie et mana
+- S | for search mode for secret doors and traps; S | activer le mode recherche pour détecter les portes secrètes et les pièges
+- T | teleport at will; T | se téléporter à volonté
+- U | move up-right; U | se déplacer vers le haut à droite
+- V | kick in a direction; V | donner un coup dans une direction
+- W | jump in a direction (if you have the talent); W | sauter dans une direction (si vous en avez le talent)
+- X | re-cast last spell; X | relancer le dernier sort utilisé
+- Y | move up-left; Y | se déplacer vers le haut à gauche
+- Z | toggle cast spells (read books to learn spells); Z | parcourir les sorts (lisez des livres pour apprendre des sorts)
+- ' | blink in a direction; ' | clignement dans une direction
+- ;; | telekinesis in a direction; ;; | télékinésier dans  une direction
+- > | descend stairs; > | descendre des escaliers
+- < | ascend stairs; < | monter des escaliers
+- / | toggle chat in multiplayer; / | activer/désactiver les discussions en mode multijoueur
+- \ | view knowledge panel; \ | afficher le panneau de connaissances
+- + | zoom in; + | zoom in
+- - | zoom out; + | zoom avant
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | actions rapides à gauche (changez d'action en utilisant shift + un nombre)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | actions rapides à droite (changez d'action en utilisant shift + un nombre)
+- INSERT | toggle tunnelling mode; INSERT | passer au mode tunnelage
+- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | tirer un projectile sans se déplacer
+- CTRL + arrow | interact with the target without moving; CTRL + flèche | interagir avec la cible sans se déplacer
+- ENTER | select the top item on the floor; ENTER | sélectionner le premier objet sur le sol
+- ESCAPE | hides open panels and clears your target; ESCAPE | cacher les menus ouverts et désélectionne votre cible
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; RETOUR ARRIÈRE | annule les dialogues ouverts et efface le curseur de votre clavier
+- SPACE | toggle real-time or turn-based; ESPACE | basculer entre temps réel ou au tour par tour
+- PgUp | switch to previous character; Page Précédente | passer au personnage précédent
+- PgDown | switch to next character; Page Suivante | passer au personnage suivant
+- ALT | show labels; ALT | afficher les noms en jeu
+- F1 | show this help; F1 | afficher cette aide
+- F6 | quick save; F6 | sauvegarde rapide
+- F10 | open side menu; F10 | ouvrir le menu latéral
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | alterner entre les modes plein écran et fenêtre (PC Windows)
+
+# General mechanics; Mécaniques générales de jeu
+. You will die.; Vous allez mourir.
+. But don't despair, you will learn something new each time.; Mais ne désespérez pas, vous allez en tirer des leçons à chaque fois.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Le but de Pathos est de survivre tout au long du chemin jusqu’au niveau 40, avant de revenir vous échapper au niveau 1.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos se joue au tour-par-tour alors prenez votre temps et considérez vos options quand la situation devient délicate.
+. Each class starts with different items, skills and abilities.; Chaque classe débute avec différents objets, compétences et attributs.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; Les effets des potions, des parchemins, des anneaux, des baguettes et de certaines armures sont déterminés aléatoirement au début de chaque aventure.
+. For example, the orange potion will not have a consistent effect across different adventures.; Par exemple, les effets de la potion orange ne seront pas les mêmes d'une partie à l'autre.
+
+# Combat; Combat
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; Lors d'une attaque, un d20 est lancé afin d'obtenir un nombre aléatoire entre 1 et 20.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; Un résultat de 1 est un échec critique, un résultat de 20 est un coup critique.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; Un échec critique interrompt toutes les autres attaques pour ce tour (si vous disposez d'attaques multiples).
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Un coup critique double les dommages de base d'une arme. A noter que les modificateurs d'enchantement et de force ne sont pas doublés.
+. The strength bonus to damage is doubled when using a two handed weapon.; Le bonus de force appliqué aux dommages est doublé pour les armes à deux mains.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Si un résultat critique est la seule possibilité de réussite ou d'échec alors le coup en résultant est dégradé en coup normal (réussit ou raté).
+. Otherwise, this number is added to the attack score and compared to the defence score.; Dans les autres cas, ce nombre est ajouté au score d'attaque pour être comparé au score de défense :
+/
+` (Attack + d20) >= Defence;(Attaque + d20) >= Défense
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Vos scores d'attaque et de défense sont influencés par vos attributs, compétences et enchantements magiques.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Les enchantements d'armes affectent directement votre score d'attaque et s'ajoutent aux dommages.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; Le bonus de compétence est basé sur votre niveau, la formule est identique pour toutes les classes :
+/
+` Skill Bonus = (Level / 4) + 1; Bonus de compétence = (niveau / 4) + 1
+/
+. Your defence is also affected by your circumstances:; Votre défense est aussi affectée par votre état :
+/
+` {Mod} defence when blind; {Mod} défense quand aveugle
+` {Mod} defence when invisible; {Mod} défense quand invisible
+` {Mod} defence when displaced; {Mod} défense quand déplacé
+` {Mod} defence when paralysed or sleeping; {Mod} défense quand paralysé ou endormi
+` {Mod} defence when stuck; {Mod} défense quand bloqué
+` {Mod} defence when punished; {Mod} défense quand puni
+` {Mod} defence when attacked from concealment; {Mod} défense quand attaqué par surprise
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Une armure lourde vous ralentira de {UnskilledPenalty} point si vous n'êtes pas compétent et de {SkilledPenalty} point si vous êtes compétent.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Une armure moyenne vous ralentira de {UnskilledPenalty} point si vous n'êtes pas compétent, aucun malus ne s'applique si vous êtes compétent .
+. Light armour has no speed penalty if you are unskilled.; Une armure légère n'entraine aucune pénalité de mouvement, même si vous n'en avez pas la compétence.
+. Unskilled use of armour also attracts a one point defence penalty.; L'utilisation d'un type d'armure sans avoir de la compétence associée diminue la défense de 1 point.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Le bonus de dextérité est appliqué à votre défense lorsque vous êtes compétent dans toutes vos pièces d'armure portées.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Ceci est limité à un maximum de +4 lorsqu'au moins un élément d'armure moyenne est équipé et de +2 pour un élément d'armure lourde.
+
+# Skills; Compétences
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; Chaque compétence est évaluée selon 5 niveaux à l'aide d'un score de 0 à 2000 :
+/
+` (0) Proficient =    0..199; (0) Compétent   =    0..199
+` (1) Specialist =  200..499; (1) Spécialiste =  200..499
+` (2) Expert     =  500..999; (2) Expert      =  500..999
+` (3) Master     = 1000..1999; (3) Maître      = 1000..1999
+` (4) Champion   = 2000; (4) Champion    = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; Les scores de compétence sont améliorés par la pratique, comme infliger des coups avec une arme ou éviter des dommages grâce à une armure
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; Les compétences liées à un type de d'arme donnent un bonus d'attaque et de dégâts égal au niveau de maitrise atteint.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; Par exemple, un maître dans le maniement des lames lourdes reçoit un bonus de +3 en attaque et de +3 aux dommages quand il utilise une épée à deux mains.
+. This bonus to damage is doubled on a critical hit.; Ce bonus aux dégâts est doublé en cas ce coup critique.
+/
+. Armour skill gives you the competency level as a defence bonus.; Les compétences liées à un type d'armure donnent un bonus de défense égal au niveau de maitrise atteint.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; Par exemple, un expert en armures lourdes reçoit un bonus de +2 en défense lorqu'il porte un armure de plaques.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; Ce bonus de défense est égal à la moyenne des niveaux de compétence de toutes les pièces d'armure équipées.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; Par exemple, un expert en armure lourde équipé d'une armure de plaque (lourde) et d'un petit bouclier (léger) qui est seulement au niveau compétent (0) en armure légère aura un bonus de défense de +1.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; Les niveaux de compétence dans les différentes écoles de magie améliorent la portée des sorts et permettent d'obtenir de meilleurs effets.
+. These skills are practised by learning and casting spells.; Ces compétences sont améliorées par la pratique, en apprenant et en lançant des sorts.
+
+# Life; Vie
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; Votre vie initiale est déterminée par votre race et votre classe plus votre modificateur de constitution.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Quand vous franchissez un niveau d'experience, votre vie est augmentée par un montant aléatoire détérminé par votre race et votre classe plus votre modificateur de constitution.
+. There are also magical means to increase your life potential.; Il y a aussi des moyens magiques d'augmenter votre potentiel de Vie.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Néanmoins, la vie ne peut pas être augmentée au delà du potentiel maximal plus votre score de constitution.
+/
+` Initial = Class base + Race base + {CON} modifier; Valeur initiale = base de Classe + base de Race + modificateur de {CON}
+` Advancement = Class roll + Race roll + {CON} modifier; Avancement = lancer de Classe + lancer de Race + modificateur de {CON}
+` Limit = Initial + max(Advancement) x Level + {CON} score; Limite = Valeur initiale + max(Avancement) × Niveau + score de {CON}
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; La vie se récupère naturellement à raison d'un point par ({LevelCap} - Niveau - modificateur de {CON}) tours.
+. Sleeping improves recovery by halving the number of turns.; Dormir améliore la récuperation en divisant le nombre de tours par deux.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; La Famine limite la récupération de vie à raison d'un point tous les {StarvationRecoveryRate} tours.
+. Life regeneration guarantees the recovery at one point per turn.; La régénération de vie garantit la récupération d'un point par tour.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; Le régime {inediate} ralentit la récupération de vie en doublant le nombre de tours.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; Lorsque la propriété {hunger} est présente en combinaison avec le régime {inediate}, la vie ne sera plus naturellement récupérée. Toutefois, avec l’ajout de {life regeneration}, la vie se rétablira au rythme habituel plus lent.
+. Active {phasing} prevents the natural recovery of life.; Le {phasing} actif empêche la récupération naturelle de vie.
+
+# Mana; Mana
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; Il n'y a pas d'effets adverses si vous épuisez votre mana.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Quand vous avancez d'un niveau d'experience, votre mana augmente d'un montant aléatoire déterminé par votre race et classe plus votre modificateur de sagesse.
+. There are also magical means to increase your mana potential.; Il existe également des moyens magiques d'augmenter votre potentiel de mana.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Néanmoins, le mana ne peut être augmenté au-delà du potentiel maximum plus votre score de sagesse.
+/
+` Initial = Class base + Race base + {WIS} modifier; Valeur initiale = base de Classe + base de Race + modificateur de {WIS}
+` Advancement = Class roll + Race roll + {WIS} modifier; Avancement = lancer de Classe + lancer de Race + modificateur de {WIS}
+` Limit = Initial + max(Advancement) x Level + {WIS} score; Limite = Valeur initiale + max(Avancement) × Niveau + score de {WIS}
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Le Mana se régénére automatiquement à raison d'un point par ({LevelCap} - Niveau - modificateur de {WIS}) tours.
+. Sleeping improves recovery by halving the number of turns.; Dormir améliore la récupération en divisant de moitié le nombre de tours.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; La Famine limite la récupération de vie à raison d'un point tous les {StarvationRecoveryRate} tours.
+. Mana regeneration guarantees the recovery at one point per turn.; La régénération de Mana garantit la récupération d'un point par tour.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; Le régime {inediate} ralentit la récupération de mana en doublant le nombre de tours.
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; Lorsque la propriété {hunger} est présente en combinaison avec le régime {inediate}, le mana ne se rétablit plus naturellement. Toutefois, avec l’ajout de {mana regeneration}, le mana se rétablira au rythme habituel plus lent.
+. Active {phasing} prevents the natural recovery of mana.; Le {phasing} actif empêche la récupération naturelle de mana.
+
+# Nutrition; Nutrition
+. Maintaining a food supply is important to avoid starving to death.; Conserver une réserve de nourriture est capital pour éviter de mourir de faim.
+. In desperate or pragmatic times you can eat corpses.; Dans des situations désespérées vous pouvez manger des cadavres.
+
+# Corpses; Cadavres
+. The bodies of your enemies and allies can be a source of nutrition.; Les corps de vos ennemis et de vos alliés peuvent être une source de nourriture.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; Beaucoup de cadavres peuvent intoxiquer ou transmettre des maladies mais certains peuvent aussi octroyer des talents bénéfiques.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; Attention, la pratique du cannibalisme est souvent une mauvaise idée, même dans des moments désespérés.
+
+# Encumbrance; Encombrement
+. Everything you pick up adds to your encumbrance and you may become burdened.; Tout ce que vous récupérez s'ajoute à votre charge, le poids de votre équipement peut vous encombrer.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; Cela va ralentir vos mouvements et faire de vous une proie facile pour les habitants du donjon.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); Capacité de transport = (Score de Force - Pénalité de Nutrition) x {WeightMultiplier} + ({WeightPercentage} poids du corps)
+
+# Resting; Repos
+. The camp-fire action button toggles resting.; Le bouton feu de camp déclenche ou interrompt le repos.
+. While resting your life and mana recover at a faster rate.; Lorsque vous vous reposez, votre vie et votre mana se régénèrent à un rythme accéléré.
+. Companions will rest when you rest.; Vos compagnons se reposerons en même temps que vous.
+. Resting will be interrupted if there is a hostile in your zone.; Le repos du groupe sera interrompu si une créature hostile pénètre dans la zone.
+
+# Searching; Chercher
+. The eye action button toggles searching.; Le bouton en forme d'oeil déclenche ou interrompt la recherche.
+. Searching will find secret doors and concealed traps.; Chercher permet de découvrir des portes secrètes ou des pièges camouflés.
+. Companions will search when you search to help find secrets.; Vos compagnons vous aiderons à chercher pour découvrir ces secrets.
+. Searching will be interrupted if there is a hostile in your zone.; Le recherche sera interrompue si une créature hostile pénètre dans la zone.
+
+# Abilities; Attributs
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; Il y a six scores d'attributs - Force, Dextérité, Constitution, Intelligence, Sagesse et Charisme.
+. Your starting ability scores is determined by rolling 4d6 six times.; Vos scores de départ sont déterminés en jetant 4d6 six fois.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; Le dé le plus faible de chaque série est écarté ce qui permet d'obtenir un score entre 3 et 18.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; Les scores les plus forts sont répartis aléatoirement entre les attributs principaux, ceux-ci peuvent être consultés dans Aide > Classes.
+. Racial limits are then applied as shown in help > races.; Les restrictions raciales sont alors appliquées comment indiqué dans Aide > Races.
+. Any points that are reduced by racial limits are transferred to another ability.; Tous les points réduits à cause des restrictions raciales sont réalloués à un autre attribut.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma; Karma
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; Le karma est gagné en tuant des monstres et dépensé lorsque une faveur divine est demandée (prier et demander une bénédiction à un autel).
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; Le karma peut être perdu en agissant comme un mauvais citoyen du donjon, comme en attaquant ou tuant un monstre neutre ou un allié.
+. You can gain additional karma by donating gold to a priest at a shrine.; Du karma supplémentaire peut être gagné auprès d'un prêtre en faisant une donation d'or à un autel.
+. You can pray at any time by long press/right click on your character.; Vous pouvez prier à tout moment par un appui prolongé ou par un clic droit sur votre personnage.
+. This will cost {Number} karma and has the following effects:; Une prière coûte 250 points de karma et a les effets suivants :
+/
+` karma >= hopeful; karma >= plein d'espoir
+`   gain {Number} nutrition when hungry;  gagne 250 de nutrition en état de faim
+`   unafflict;  enlève l'infection
+`   unpolymorph;  dé-polymorphe
+`   escape from being stuck;  sortie de l'état de coincé
+`   remove punishment;  supprime un châtiment
+/
+` karma >= good; karma >= bon
+`   fully healed if less than half life;  la vie est complètement restaurée si inférieure à la moitié
+`   fully restored if less than half mana;  la mana est complètement restaurée si inférieure à la moitié
+/
+` karma >= glorious; karma >= glorieux
+`   remove blindness;  supprime la cécité
+`   remove hallucination;  supprime les hallucinations
+`   remove rage;  supprime la rage
+`   remove sickness;  guérit de la maladie
+/
+` karma >= exalted; karma >= exalté
+`   remove one curse;  supprime une malédiction
+`   raise dead for one loyal companion; revenir d'entre les morts pour un compagnon loyal
+
+# Diets;Régimes alimentaires
+. Entities have different diets that allow them to eat specific materials.; Les entités ont des régimes alimentaires différents qui ne leur permettent de ne manger que certains type de denrées.
+/
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
+
+# Spells; Sorts
+. Spells are learned by studying from magical books found in the dungeon.; Les sorts sont appris en étudiant les livres magiques trouvés dans le donjon.
+. Any class can learn spells but only the skilled will use their mana efficiently.; N'importe quelle classe peut apprendre des sorts mais seul un bon niveau de compétence permet d'utiliser la mana efficacement.
+
+# Gold; Or
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; L'or n'est pas comptabilisé dans le calcul de l'encombrement, il a plusieurs utilités dans le donjon.
+. Gold can be traded for items from merchants or donated to priests for karma.; L'or peut servir à acheter des objets aux marchands ou être donné aux prêtres contre du karma.
+
+# Companions; Compagnons
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; Les animaux domestiques peuvent être apprivoisés en leur donnant une nourriture qu'ils apprécient (mais il n'est pas nécessaire de les nourrir pour qu'ils survivent).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; Les chats vont miauler et les chiens aboyer lorsqu'ils marchent sur un objet maudit ou une installation maudite (comme une fontaine).
+. You can mount some types of companions and ride around the dungeon.; Vous pouvez utiliser certains compagnons comme monture et les chevaucher pour vous déplacer dans le donjon.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; Votre monture peut parfois intercepter une attaque ou en être directement la cible.
+. Your steed will be the first into any traps so take good care of their well-being.; Votre monture sera la première à subir les effets d'un piège donc prenez bien soin d'elle.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; Un cavalier accompli pourra ajouter son bonus de compétence à l'attaque et la défense de sa monture.
+. A steed is useful when you are burdened and it is strong enough to take your load.; Une monture est utile lorsque vous êtes encombré et qu'elle est assez forte pour porter votre charge.
+. To dismount your steed you need to long press/right click on your character.; Pour descendre de votre monture vous devez appuyer longuement/clic droit sur votre personnage.
+
+# Engulfing; Engloutissement
+. Some entities can swallow or engulf other entities.; Certaines entités peuvent en avaler ou engloutir d'autres.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; Quand vous êtes avalé vous subissez des dégâts à chaque tour jusqu'à ce que vous soyez régurgité.
+. Alternatively, there are many mechanisms which can be used to escape.; Alternativement, il y a d'autres mécanismes qui peuvent être utilisés pour s'échapper.
+. It is impossible to fight with your equipped weapons when swallowed.; Il est impossible de combattre avec votre arme équipée lorsque vous êtes avalé.
+. If you cast when engulfed the spell will hit your engulfer.; Si vous lancez un sort en étant avalé le sort va toucher la créature.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; Toutefois, les rayons peuvent ricocher sur les murs et revenir vers votre assaillant et vous toucher.
+
+# Spawning; Apparitions
+. Monsters will randomly spawn into areas outside your current zone.; Les monstres vont apparaitre de manière aléatoire dans les zones hors de la votre.
+. The rate of spawning increases as you descend deeper into the dungeon.; Le taux d'apparition augmente à mesure que vous descendez plus profondément dans le donjon.
+. The talent of aggravation also increases the spawn rates for monsters.; Le talent d'aggravation augmente également le taux d'apparition des monstres.
+
+# Polymorph; Polymorphisme
+. Transform into another entity with all the advantages or disadvantages that brings.; Se transformer en une autre entité avec tous les avantages et inconvénients que cela comporte.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; Par exemple, un dragon n'a pas de mains mais peut voler et cracher des rayons d'énergie.
+. When you perish in your polymorphed form you will often revert to your original form.; Lorsque vous mourrez dans une forme transformée, vous retournerez le plus souvent à votre forme originale.
+. You can transform into the entity of your choice when you have polymorph control.; Lorsque vous avez le contrôle du polymorphisme, vous pouvez vous transformer en une entité de votre choix.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; Cette capacité est limitée aux entités que vous avez réussi à tuer, chaque transformation consomme de votre nutrition.
+. To access polymorph-at-will you need to long press/right click on your character.; Pour accéder au polymorphisme à volonté vous devez appuyer longuement/clic droit sur votre personnage.
+
+# Locks; Serrures
+. Doors and containers can be locked and possibly trapped.; Les portes et les coffres peuvent être verrouillés et potentiellement piégés.
+. You can kick locks to break them but this will trigger any trap.; Vous pouvez forcer les serrures pour les casser mais cela déclenchera un éventuel piège.
+. Items such as skeleton keys and lock picks can be used to unlock.; Des objets tels que les passe-partout et les crochets peuvent servir à déverrouiller les serrures.
+. These items can break and the chance is influenced by your competency with locks.; Ces objets peuvent casser en fonction de votre compétence avec les serrures.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; De plus, les objets maudits ont le double de chance de se briser et les objet béni seulement la moitié.
+. There are other magical items and spells that can be used to unlock.; Il y a d'autres objets magiques et sorts qui peuvent être utilisés pour déverrouiller une serrure.
+
+# Traps; Pièges
+. Traps have a difficulty rating that reflects the lethality of the device.; Les pièges ont un niveau de difficulté qui reflète leur dangerosité.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; Ce niveau de difficulté est aussi le plus bas niveau de donjon que le piège peut générer.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; Les chances de désactiver un piège sont calculées en opposant la difficulté du piège à votre compétence en désarmement et à votre dextérité.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; Si vous êtes dans certains états comme la maladresse, la cécité, la confusion, l'hallucination ou si vous êtes assommé alors il vous sera plus difficile de désarmer le piège.
+. Untrapping requires you to move into the square.; Désarmer un piège nécessite que vous vous déplaciez dessus.
+. A failure to untrap will cause it to be triggered.; Un échec du désarmement déclenchera le piège.
+
+# Teleport; Téléportation
+. Teleportation transports your character around the current dungeon level.; La téléportation transporte votre personnage à un autre endroit du niveau actuel du donjon.
+. When uncontrolled, this is a random event that may help or hinder your journey.; Quand non contrôlé, c'est un évènement aléatoire qui peut vous aider ou sérieusement compliquer votre aventure.
+. Controlled teleportation allows you to select on the map your destination location.; Le contrôle de la téléportation vous permet de choisir votre destination sur la carte.
+. However, each teleportation will cost you nutrition so use it wisely.; Toutefois, chaque téléportation vous coûte en nutrition alors utilisez-là avec discernement.
+. To access teleport-at-will you need to long press/right click on your character.; Pour accéder à la téléportation à volonté vous devez presser longuement/clic droit sur votre personnage.
+
+# Dual wielding; Double maniement des armes
+. Dual wielding allows the character to hold two single handed weapons.; Le double maniement permet à votre personnage d'utiliser deux armes à une main en même temps.
+. This allows for two attacks instead of one but the chance of hitting is reduced.; Cela permet d'effectuer deux attaques à la place d'une seule mais les chances de toucher sont réduites.
+. If you are skilled then it is only a -2 to attack on the offhand.; Si vous êtes compétent alors le malus est seulement de -2 pour les attaques de la main gauche (pour un droitier).
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; Dans le cas contraire, les malus d'attaques seraient de -2 pour la main droite et -4 pour la main gauche.
+
+# Crafting; Artisanat
+. Items can be scrapped into their raw essence and base material on a workbench.; Les objets peuvent être démantelés sur un établi pour en extraire leur essence et leur matériau de base.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; L'essence est le fondement de la création et peut être extraite des objets banals et des objets magiques.
+. New items can be crafted on a workbench using enough of the base material and essence.; Les nouveaux objets peuvent être fabriqués sur un établi en utilisant suffisamment de matériaux et d'essence.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; Les établis apparaissent avec des matériaux résiduels (0 - 10 essence et six matériaux aléatoires 10 - 200).
+. Materials are not transferable between workbenches.; Les matériaux ne sont pas transférables entre différents établis.
+/
+. The crafting skill influences how much material you gain when scrapping.; La compétence d'artisanat détermine la quantité de matériaux obtenue après le démantèlement d'un objet.
+. That is, when unskilled you recover only 50% of the scrapped material.; Par exemple, un personnage inexpérimenté ne peut récupérer que 50% des matériaux.
+/
+` Unskilled  =  50%; Inexpérimenté =  50%
+` Proficient =  60%; Compétent     =  60%
+` Specialist =  70%; Spécialiste   =  70%
+` Expert     =  80%; Expert        =  80%
+` Master     =  90%; Maître        =  90%
+` Champion   = 100%; Champion      = 100%
+/
+. The crafting skill influences how much material you need when crafting.; La compétence d'artisanat détermine la quantité de matériaux nécessaire pour fabriquer un objet.
+. That is, when unskilled you need 150% of the required material to craft an item.; Par exemple, un personnage inexpérimenté a besoin de 150% des matériaux normalement nécessaires pour fabriquer un objet donné.
+/
+` Unskilled  = 150%; Inexpérimenté = 150%
+` Proficient = 140%; Compétent     = 140%
+` Specialist = 130%; Spécialiste   = 130%
+` Expert     = 120%; Expert        = 120%
+` Master     = 110%; Maître        = 110%
+` Champion   = 100%; Champion      = 100%
+
+# Enchantment; Enchantement
+. Weapons and armour have a modifier that can be changed with enchantment magic.; Les armes et armures ont un modificateur qui peut évoluer grâce à un enchantement magique.
+. The modifier is limited to between {Min} and {Max}.; Ce modificateur ne peut excéder {Min} et {Max}.
+. A modifier of +0 is a normal, mundane item.; Un modificateur de +0 correspond à un objet standard, banal.
+. Modifiers on armour apply to your defence score.; Les modificateurs d'armures s'appliquent à votre score de défense.
+. Modifiers on weapons apply to your attack and damage scores.; Les modificateurs d'armes s'appliquent aux scores d'attaques et aux dégâts.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Un objet sera détruit si son modificateur évolue au-delà de {Min} / {Max}.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Les Artéfacts peuvent être enchantés jusqu'à {Modifier} et seront remis à zéro si cette valeur est dépassée.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Les effets des objets peuvent également être améliorés comme en enchantant un banal sifflet afin d'obtenir un sifflet magique.
+
+# Punishments; Les punitions
+. This severe curse can be gained by magical means or misconduct.; Cette malédiction grâve peut être obtenue par le biais de la magie ou par mauvaise conduite.
+. There is a chance of being punished each time your karma dips below zero.; Il y a une chance d'être puni à chaque fois que votre score de karma descend en dessous de zéro.
+. Only one punishment can be active at one time.; Seul un type de punition peut être actif à la fois.
+. A punishment can be released with any remove curse magic.; Une punition peut être levée avec n'importe quelle magie de suppression de malédiction.
+
+# Charming & taming; Charmer et apprivoiser
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; La différence entre votre niveau et celui de la cible est utilisé comme un pourcentage afin d'augmenter ou de réduire la durée de l'effet de loyauté.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; Par exemple, si vous êtes niveau 10 et que charmez une entité de niveau 20 alors la durée de loyauté sera réduite de moitié.
+. The charisma bonus for you and the target entity also modifies this relative percentage.; Le bonus de charisme, pour vous et pour la cible, modifie également ce pourcentage.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; Par exemple, un personnage de niveau 4 avec 18 en charisme (+4) pourra lancer le sort de charme comme un personnage de niveau 8.
+
+# Death; Mort
+. There are seven mechanics for death:; Il existe sept manières de mourir:
+/
+* life points reaches zero; Les points de vie atteignent zéro
+* any ability score reaches zero; Un score d'attribut atteint zéro
+* starvation; Mourir de faim suite au manque de nourriture
+* death effect (eg. wand of death); Subir un effet de mort (comme la baguette de mort)
+* genocide; Etre concerné par un effet de génocide
+* incarceration (eg. turned into a statue); incarcération (par exemple : changé en statue)
+* decapitation (eg. vorpal attacks); décapitation (ex: attaques vorpales)
+
+# Revenants; Les revenants
+. Upon your death there is a 50% chance of creating a revenant on the current level.; Suite à votre mort il y a 50% de chance pour qu'un revenant apparaisse à ce niveau.
+. When you go down stairs there is a 50% chance of encountering this revenant.; Lorsque vous descendez les escaliers il y a 50% de chances pour que vous rencontriez ce revenant.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; Ce revenant est une version ressuscitée et hostile de vous-même équipée avec toutes les armes et armures que vous possédiez.
+. They will be as tough as you were at full health and may be quite challenging at times.; Ils seront aussi puissants que vous avec la vie au maximum, les battre peut être un véritable défi.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; Il est possible de mourir dans le niveau d'un revenant, ainsi votre prochain personnage peut avoir deux revenants à combattre.
+. Level 1 will never create a revenant.; Le donjon de niveau 1 ne créera jamais de revenant.
+
+# Fame; Réputation
+. Fame is calculated by the following formula.; La réputation est calculée à l'aide de la formule suivante :
+/
+` = Maximum Depth x {Multiplier}; = Profondeur maximale x {Multiplier}
+` + Explored Maps x {Multiplier}; + Cartes explosées x {Multiplier}
+` + Visited Locations x {Multiplier}; + Lieux visités x {Multiplier}
+` + Discovered Items x {Multiplier}; + Objets découverts x {Multiplier}
+` + Encountered Entities x {Multiplier}; + Entités rencontrées x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + Artefacts en possession x {Multiplier}
+` + Earned Experience (capped to {Cap}); + Expérience acquise (plafonnée {Cap})
+` + Development Level x {Multiplier}; + Niveau de développement x {Multiplier}
+` + Practised Skills x {Multiplier}; + Compétences pratiquées x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + Sorts appris x {Multiplier} (somme du coût en mana de base x niveau de maîtrise)
+` + Increased Life x {Multiplier}; + Vie x {Multiplier}
+` + Increased Mana x {Multiplier}; + Mana x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + Attributs x {Multiplier}
+` + Acquired Talents x {Multiplier}; + Talents x {Multiplier}
+` + Gained Resistances x {Multiplier}; + Résistances x {Multiplier}
+` + Total Inventory Worth (in gold); + Valeur totale des stocks (en or)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; La valeur totale de l'inventaire est plafonnée de manière à ne pas dépasser le reste du score.
+
+# Resurrect and continue; Réssusciter et continuer
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; Cette option est utile lorsque votre personnage meurt par malchance ou d'une manière qui semble injuste.
+. You may learn that your character was not viable and death comes quick again.; Vous pouvez vous rendre compte que votre personnage n'était pas viable et qu'il va rapidement mourir à nouveau.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; Vous pouvez vous ressusciter à l'infini mais votre renommée sera remise à zéro.
+. Fame achieved subsequent to your resurrection will contribute to your score.; La renommée obtenue après votre résurrection contribuera à votre score.
+. This is similar to the 'explorer mode' from the original Nethack.; Ces mécanismes sont similaires à ceux du 'mode exploration' du jeu Nethack original.
+
+# Multiplayer; Multijoueur
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Le multijoueur est basé sur la technologie 'graphical telnet' de la plateforme 'Invention'.
+. This means the game is executed on the server and the user interface is projected to each of the clients.; Cela signifie que le jeu est exécuté sur le serveur et que l'interface utilisateur est renvoyée à chaque client.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; Vous pouvez jouer via WIFI/LAN et internet car les protocoles de communication sont basés sur TCP/IP.
+. This technology only works well with low latency (less than 30ms ping should be playable).; Pour fonctionner correctement, cette technologie nécessite une faible latence (ping en dessous de 30ms pour être jouable).
+/
+. One player needs to be the server and HOST the game.; Un joueur a besoin de faire office de serveur et d'héberger la partie.
+. All other players are clients and JOIN the game.; Les autres joueurs sont clients et doivent joindre la partie.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.; Le joueur 'serveur' va devoir entrer son adresse IP dans les réglages réseau de son appareil et la partager avec les joueurs clients.
+. Firewall settings and port forwarding may be required when playing over the internet.; Les réglages de pare-feu et de réacheminement de port peuvent être requis pour jouer via internet.
+/
+. The HOST can use 3717 and tap CONNECT.; Le joueur 'serveur' peut utiliser 3717 et taper CONNECTER.
+. The other players JOIN by typing in the host's IP Address and the port.; Les autres joueurs peuvent rejoindre en tapant l'adresse IP de l'hôte et le port.
+. For example: 192.168.1.5:3717; Par exemple : 192.168.1.5:3717
+
+# Translations; Traductions
+. The language translations have been contributed by a number of dedicated players.; Les traductions linguistiques ont été fournies par un certain nombre de joueurs dévoués.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; Compléter une traduction est une réalisation importante qui nécessite un entretien continu.
+. The percentage on the language selection indicates the current completeness of the translation.; Le pourcentage sur la sélection de la langue indique l’exhaustivité actuelle de la traduction.
+. You can also browse the individual translations in the Diagnostics screen.; Vous pouvez également parcourir les traductions individuelles dans l’écran Diagnostics.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; Veuillez contacter le développeur si vous souhaitez contribuer à une nouvelle traduction, compléter une traduction existante, ou même soumettre une correction.
+
+# Master mode; Mode Maître
+. This is a cheat mode for more quickly learning the secrets of Pathos.; C'est un mode de triche afin d'apprendre rapidement les secrets de Pathos.
+. Any adventures in this mode will not be tracked in the hall of fame.; Aucune aventure dans ce mode n'apparait dans le Temple de la Renommée.
+/
+- ` | open master console (more commands); ` | ouvre la console du mode Maître (plus de commandes)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | obscurité dans la zone
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | Fait apparaitre aléatoirement un monstre capable d'engloutir et être avalé par lui
+- shift + F | all adjacent enemies are charmed; shift + F | tous les ennemis adjacents sont charmés
+- shift + G | gain 1000 gold; shift + G | gagner 1000 pièces d'or
+- shift + I | identify all items on the floor; shift + I | identifie tous les objets au sol
+- shift + W | jump at will; shift + W | saute à volonté
+- shift + D | light this zone; shift + D | éclaire cette zone
+- shift + M | reveal the entire map; shift + M | révèle la carte du niveau
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | révèle les cartes de tous les niveaux
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | transforme le donjon (la carte finale est modifiée)
+- shift + P | polymorph into any entity; shift + P | se transformer en n'importe quelle entité
+- shift + T | teleport to a target zone; shift + T | se téléporter vers la zone ciblée
+- shift + Z | learn all spells; shift + Z | apprendre tous les sorts
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | active/désactive le mode d'utilisation automatique (utilise tous les objets présents sur une case sur laquelle on se déplace)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | monter vers le niveau précédent (même si on ne se trouve pas sur un escalier)
+- > | descend to the next dungeon level (even when not on a staircase); > | descendre vers le niveau suivant (même si on ne se trouve pas sur un escalier)
+- F5 | refresh the screen; F5 | rafraichir l'écran
+- F9 | quick load; F9 | chargement rapide
+/
+. There are additional manipulations built into the character panel and contextual help.; Il existe d'autres manipulations qui sont décrites dans la fiche de personnage et dans l'aide contextuelle.

@@ -1,0 +1,447 @@
+# Commands;Komutalar
+. Single tap/left click or arrow keys to move and attack.;Saldırmak ve hareket etmek için sol tıklamayı veya yön tuşlarını kullanabilirsin.
+. Long press/right click to operate doors/traps.;Sağ fare tuşunu tıklayarak veya basılı tutarak kapıları ve tuzakları kullanabilir, envanterindeki ya da yerdeki bir eşyayı kullanabilir veya kuşanabilirsin.
+. Double tap to pick up items, traverse stairs or wait one move.;Çift tıklayarak eşyaları yerden alablir, merdivenleri kullanabilir veya bir tur bekleyebilirsin.
+/
+- . | wait one turn (also double tap on self); . | bir tur bekle (veya kendine çift tıkla)
+- , | pick up the top item on the floor; , | yerde en üstteki eşyayı al
+- A | toggle log (click the log to expand/collapse); A | kayıdı değiştir (kayıda tıklayarak büyült veya küçült)
+- B | move down-left; B | sol alt çapraza ilerle
+- C | toggle character; C | karakter değiştir
+- D | re-use last item; D | son kullandığın eşyayı yeniden kullan
+- E | mount or dismount your steed; E | bineğe bin yada in
+- F | toggle floor; F | zemini değiştir
+- G | re-equip last item; G | son eşyayı tekrar kuşan
+- H | move left; H | sola ilerle
+- I | toggle inventory; I | envanteri değiştir
+- J | move down; J | aşağıya ilerle
+- K | move up; K | yukarı ilerle
+- L | move right; L | sağa ilerle
+- M | toggle map; M | haritayı değiştir
+- N | move down-right; N | sağ alt çapraza ilerle
+- O | hide from view; O | gölgelerde saklan
+- P | polymorph at will; P | şekil değiştir
+- Q | save or quit this game; Q | oyundan çık veya kaydet
+- R | for rest mode to recover life and mana; R | canını ve mananı yenilemek için dinlen
+- S | for search mode for secret doors and traps; S | kapıları ve tuzakları aramak için göz gezdir
+- T | teleport at will; T | ışınlan
+- U | move up-right; U | yukarı sağ çapraza ilerle
+- V | kick in a direction; V | bir yöne tekme at
+- W | jump in a direction (if you have the talent); W | bir yöne zıpla (eğer yeteneğin varsa)
+- X | re-cast last spell; X | son kullandığın büyüyü yeniden kullan
+- Y | move up-left; Y | yukarı sol çapraza ilerle
+- Z | toggle cast spells (read books to learn spells); Z | büyü değiştir (büyü öğrenmek için kitap oku)
+- ' | blink in a direction; ' | bir yöne ışınlan
+- ;; | telekinesis in a direction;
+- > | descend stairs; > | merdivenlerden in
+- < | ascend stairs; < | merdivenlerden çık
+- / | toggle chat in multiplayer; / | çok oyunculuda sohbeti aç-kapat
+- \ | view knowledge panel; \ | bilgi panelini görüntüle
+- + | zoom in; + | yakınlaştır
+- - | zoom out; - | uzaklaştır
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | soldaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | sağdaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
+- INSERT | toggle tunnelling mode;
+- SHIFT + arrow | fire a missile without moving; SHIFT + ok tuşu | hareket etmeden bir cisim fırlat
+- CTRL + arrow | interact with the target without moving; CTRL + ok tuşu | hareket etmeden hedefle etkileşime geç
+- ENTER | select the top item on the floor; ENTER | yerde en üstte kalan eşyayı seç
+- ESCAPE | hides open panels and clears your target; ESCAPE | açık sekmeleri kapatıp hedefini belirler
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | açık diyalogları kapatıp görüntüyü temizler
+- SPACE | toggle real-time or turn-based; SPACE | gerçek zamanlı ile tur bazlı arasında geçiş yap
+- PgUp | switch to previous character; PgUp | önceki karaktere geç
+- PgDown | switch to next character; PgDown | sonraki karaktere geç
+- ALT | show labels; ALT | etiketleri göster
+- F1 | show this help; F1 | bu yardımı göster
+- F6 | quick save; F6 | hızlı kaydet
+- F10 | open side menu; F10 | yan menüyü aç
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | Pencere moduna tam ekrana arasında geçiş yap (Windows Masaüstü)
+
+# General mechanics;Genel Mekanikler
+. You will die.;Öleceksin.
+. But don't despair, you will learn something new each time.; Ama bu seni umutsuzluğa düşürmesin, her ölüşünde yeni bir şey öğreneceksin.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos'ta amaç 40. seviyeye kadar hayatta kalıp, tekrar 1'e geri dönüp kaçmaktır.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos sıra tabanlıdır yani işler ciddileştiğinde bekleyip seçeneklerini düşünebilirsin.
+. Each class starts with different items, skills and abilities.; Her sınıf farklı eşyalar,beceriler ve yeteneklerle başlar.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; İksirlerin, parşömenlerin, yüzüklerin, asaların ve bazı zırhların özellikleri her maceranın başında karıştırılır.
+. For example, the orange potion will not have a consistent effect across different adventures.; Mesela turuncu iksirin bir maceranda seni zehirlemesi başka bir macerada da zehirleyeceği anlamına gelmez.
+
+# Combat;Dövüş
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; Her saldırında oyun 20 yüzlü bir zar atar. (d20)
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; 1 çıkarsa ıskalarsın 20 çıkarsa kritik vuruş olur
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; Bir turda birden fazla saldırın varsa ıskalaman hepsini iptal eder.
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Kritik saldırılar ana silah hasarını ikiye katlar. Efsunlar ve güç geliştirmeleri katlanmaz.
+. The strength bonus to damage is doubled when using a two handed weapon.; Bir silahı iki elle kullanırken güç bonusun ikiye katlanır.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Eğer vurmanın ve ıskalamanın tek yolu kritik ise o zaman kritik terimi normal bir vuruşa veya ıskalamaya dönüşür.
+. Otherwise, this number is added to the attack score and compared to the defence score.; Aksi takdirde, bu sayı saldırı saldırı skoruna eklenir ve savunma skorun ile karşılaştırılır.
+/
+` (Attack + d20) >= Defence;(Saldırı + d20) >= Savunma
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Saldırı ve savunma derecelerin becerilerinden, kabiliyetlerinden ve büyülü efsunlarından etkilenir.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Silahlarına eklenen büyülü efsunlar saldırı dereceni direkt olarak etkiler ve sonra hasar derecene eklenirler.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; Beceri bonusun seviyene bağlı ve her sınıf için aynı formülle hesaplanır :
+/
+` Skill Bonus = (Level / 4) + 1;Beceri Bonusu = (seviye / 4) + 1
+/
+. Your defence is also affected by your circumstances:; Savunman durumdan duruma değişir:
+/
+` {Mod} defence when blind;{Mod} kör olduğunda
+` {Mod} defence when invisible;{Mod} görünmez olduğunda
+` {Mod} defence when displaced;{Mod} yersiz olduğunda
+` {Mod} defence when paralysed or sleeping;{Mod} uyurken veya felçliyken
+` {Mod} defence when stuck;{Mod} yakalandığında
+` {Mod} defence when punished;{Mod} cezalıyken
+` {Mod} defence when attacked from concealment;{Mod} gizlilikten çıkan saldırılarda
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Eğer becerin yoksa ağır zırh seni {UnskilledPenalty} puan yavaşlatır eğer varsa {SkilledPenalty} puan yavaşlatır.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Eğer becerin yoksa orta ağırlıklı zırh seni {UnskilledPenalty} puan yavaşlatır eğer varsa yavaşlatmaz.
+. Light armour has no speed penalty if you are unskilled.; Hafif zırh becerin olsa da olmasa da yavaşlamazsın.
+. Unskilled use of armour also attracts a one point defence penalty.; Becerin olmadan zırh kullanman savunmandan bir puan azaltır
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Çeviklik düzenleyicisi her zırhta becerin olduğunda savunmana uygulanır.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Bu orta ağırlıkta bir zırh giydiğinde bu +4 ile sınırlanır. Herhangi bir ağır zırh giydiğinde +2 ile sınırlanır.
+
+# Skills;Beceriler
+. Each skill has a rating between 0 and 2000 and there are five competency levels.;Her becerinin 0 ile 2000 arasında derecelendirmesi var ve beş başarı seviyesine ayrılırlar
+/
+` (0) Proficient =    0..199; (0) Etkili   =    0..199
+` (1) Specialist =  200..499; (1) Öğrenci  =  200..499
+` (2) Expert     =  500..999; (2) Usta     =  500..999
+` (3) Master     = 1000..1999; (3) Üstat    = 1000..1999
+` (4) Champion   = 2000; (4) Şampiyon = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.;Beceri dereceleri pratikle gelişir mesela silahla vurarak veya zırh giyerken darbe almamak
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.;Silah becerisi sana yeterlik seviyesi olarak saldırı bonusu ve hasar bonusu verir.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.;Örnek olarak, ağır kılıçlarda üstat olan birisi ağır bir kılıç kullanırken +3 hasar ve +3 saldırı kazanır.
+. This bonus to damage is doubled on a critical hit.;Hasara gelen bu bonus kritik bir saldırıda ikiye katlanır.
+/
+. Armour skill gives you the competency level as a defence bonus.;Zırh becerisi sana yeterlilik seviyesi olarak savunma bonusu verir.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.;Örnek olarak, ağır zırhta bir usta plaka zırh giyerken +2 savunma kazanır.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.;Savunma bonusu kuandığın her zırhtaki beceri seviyelerinin ortalamasıdır.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.;Örnek olarak, ağır zırhta usta (2) olan birisi hafif zırhta etkili (0) birisi plaka zırh (ağır) ve küçük kalkan (hafif) giyerse savunma bonusu +1 olur.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.;Büyü türlerinde beceri, menzili yükseltir ve her yeterlilik seviyesi yükseldikçe daha iyi etkilere sahip olur.
+. These skills are practised by learning and casting spells.;Bu beceriler büyü öğrenerek ve kullanarak geliştirilir.
+
+# Life; Can
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; Başlangıç can puanın seçtiğin ırk, sınıf ve dayanıklılık bonusunla belirlenir.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Seviye atladığında can puanın rastgele miktarda artar, bunu ise seçtiğin ırk, sınıf ve dayanıklılık bonusun etkiler.
+. There are also magical means to increase your life potential.; Canını büyülü yollarla da arttırmanın yolu var.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Ancak can miktarın, belirlenmiş maksimum potansiyelin artı dayanıklılık bonusunu geçemez.
+/
+` Initial = Class base + Race base + {CON} modifier; Mevcut = Sınıf taban + Irk taban + {CON} bonusu
+` Advancement = Class roll + Race roll + {CON} modifier; Artış = Sınıf zarı + Irk zarı + {CON} bonusu
+` Limit = Initial + max(Advancement) x Level + {CON} score; Limit = Mevcut + max(Artış) x Seviye + {CON} miktarı
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; Bir puan can doğal olarak şu formulle yenilenir ({LevelCap} - Seviye - {CON} bonusu)
+. Sleeping improves recovery by halving the number of turns.; Uyumak iyileşme sürecini yarılar.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; Açlık tur başına bir puanlık can yenilenmesini {StarvationRecoveryRate} şekilde değiştirir.
+. Life regeneration guarantees the recovery at one point per turn.; Can Yinelemesi her tur bir puan can yeniletir.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; Beslenme çeşitlerinden {inediate} can yenileme süreni iki katına çıkarır.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;
+. Active {phasing} prevents the natural recovery of life.; Aktif {phasing} yeteneği, doğal can yenilemesine mani olur.
+
+# Mana; Mana
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; Mana miktarını tüketmenin herhangi bir olumsuz sonucu yoktur.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Seviye atladığında mana puanın rastgele miktarda artar, bunu ise seçtiğin ırk, sınıf ve bilgelik bonusun etkiler.
+. There are also magical means to increase your mana potential.; Mananı büyülü yollarla da arttırmanın yolu var.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Ancak, mana miktarın, belirlenmiş maksimum potansiyelin artı bilgelik bonusunu geçemez.
+/
+` Initial = Class base + Race base + {WIS} modifier; Mevcut = Sınıf taban + Irk taban + {WIS} bonusu
+` Advancement = Class roll + Race roll + {WIS} modifier; Artış = Sınıf zarı + Irk zarı + {WIS} bonusu
+` Limit = Initial + max(Advancement) x Level + {WIS} score; Mevcut + max(Artış) x Seviye + {WIS} miktarı
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Bir puan can doğal olarak şu formulle yenilenir ({LevelCap} - Seviye - {WIS} bonusu)
+. Sleeping improves recovery by halving the number of turns.; Uyumak yenileme sürecini yarılar.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; Açlık tur başına bir puanlık mana yenilenmesini {StarvationRecoveryRate} şekilde değiştirir.
+. Mana regeneration guarantees the recovery at one point per turn.; Mana Yinelemesi her tur bir puan can yeniletir.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; Beslenme çeşitlerinden {inediate} mana yenileme süreni iki katına çıkarır.
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;
+. Active {phasing} prevents the natural recovery of mana.; Aktif {phasing} yeteneği, doğal mana yenilemesine mani olur.
+
+# Nutrition;Besin
+. Maintaining a food supply is important to avoid starving to death.;Sürekli yemek taşımak açlıktan ölmemek için gereklidir.
+. In desperate or pragmatic times you can eat corpses.;Umutsuz ve ya zorlu zamanlarda ceset yiyebilirsin.
+
+# Corpses;Cesetler
+. The bodies of your enemies and allies can be a source of nutrition.;Dostlarının ve düşmanlarının cesetleri de besin taşır.
+. Many corpses also convey harm and illness but some may impart beneficial talents.;.Çoğu ceset zarar ve hastalık getirir ama bazıları faydalı olabilir.
+. Be aware that cannibalism is considered a bad idea even in desperate times.;Dikkatli ol! Yamyamlık zor zamanlarda bile kötü bir davranış olarak kabul edilir.
+
+# Encumbrance;Ağırlık
+. Everything you pick up adds to your encumbrance and you may become burdened.;Taşıdığın herşey ağırlığına ekler ve sana engel olabilir.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.;Bu seni yavaşlatır ve seni zindan sakinlerine kolay yem yapar.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight);Taşıma kapasitesi = (güç derecesi - besin cezası) x {WeightMultiplier} + ({WeightPercentage} Body Weight)
+
+# Resting;Dinlenme
+. The camp-fire action button toggles resting.;Kamp ateşi tuşu dinlenmeye girip çıkmak için kullanılır
+. While resting your life and mana recover at a faster rate.;Dinlenirken manan ve canın daha hızlı yükselir.
+. Companions will rest when you rest.;Sen dinlenirken yoldaşların da dinlenir.
+. Resting will be interrupted if there is a hostile in your zone.;Bir düşman görüşüne girince dinlenme durdurulur.
+
+# Searching;Arama
+. The eye action button toggles searching.;Göz tuşu aramayı başlatır.
+. Searching will find secret doors and concealed traps.;Aramak gizli kapıları ve tuzakları ortaya çıkarır.
+. Companions will search when you search to help find secrets.;Sen ararken yoldaşların da arar.
+. Searching will be interrupted if there is a hostile in your zone.;Bir düşman görüşüne girince arama durdurulur.
+
+# Abilities;Yetenekler
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; Altı yetenek derecesi var - güç, çeviklik, dayanıklılık, zeka, bilgelik and karizma.
+. Your starting ability scores is determined by rolling 4d6 six times.; Başlangıç yetenek seviyeleri dört kere altılı zar atarak belirlenir.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; En düşük zar eksiltilir ve kalanlar toplanır böylece 3-18 arasında bir sayı çıkar.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; En yüksek sayılar ana özellklerine verilir. Ana özelliklerini yardım > sınıflardan görebilirsin.
+. Racial limits are then applied as shown in help > races.; Sonra da ırk limitlerine göre düzenleme yapılır. Irk limitlerini yardım > ırklardan görebilirsin.
+. Any points that are reduced by racial limits are transferred to another ability.; Irk limitleri yüzünden eksiltilen puanlar başka yeteneklerine eklenir.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma;Karma
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).;Karma, canavarları öldürdüğünde kazanılır ve ilahi yardım (Bir tapınakta dua ettiğinde veya kutsandığında.) istediğinde azalır.
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.;Dostlarına ve tarafsız canlılara saldırarak kötü bir zindan vatandaşı olursan karma kaybedersin.
+. You can gain additional karma by donating gold to a priest at a shrine.;Tapınaklardaki bir rahiplere para bağışlayarak fazladan karma kazanabilirsin.
+. You can pray at any time by long press/right click on your character.;Karakterine uzun dokunarak veya sağ tıklayarak istediğin zaman dua edebilirsin.
+. This will cost {Number} karma and has the following effects:;Bu sana {Number} karma kaybettirir ve bu etkilere neden olabilir:
+/
+` karma >= hopeful;karma >= umutlu
+`   gain {Number} nutrition when hungry;  aç kaldığında {Number} besin kazan
+`   unafflict;  bela kaldır
+`   unpolymorph;  asıl şekline geri dön
+`   escape from being stuck;  takılmaktan kurtul
+`   remove punishment;  ceza kaldır
+/
+` karma >= good;karma >= iyi
+`   fully healed if less than half life;  Canın yarıdan az ise tamamlanır
+`   fully restored if less than half mana;  Manan yarıdan az ise tamamlanır
+/
+` karma >= glorious;karma >= şanlı
+`   remove blindness;  körlüğün kalkar
+`   remove hallucination;  varsanı kalkar
+`   remove rage;  öfke kalkar
+`   remove sickness;  hastalık kalkar
+/
+` karma >= exalted;karma >= yüce
+`   remove one curse;  bir lanet kalkar
+`   raise dead for one loyal companion; ölü bir yaverin dirilir
+
+# Diets;Diyetler
+. Entities have different diets that allow them to eat specific materials.;Canlıların farklı diyetleri vardır bu yüzden farklı şeyler yerler.
+/
+` {DietName}: {MaterialNames};{DietName}: {MaterialNames}
+
+# Spells;Büyüler
+. Spells are learned by studying from magical books found in the dungeon.;Zindanda bulduğun büyülü kitapları okuyarak büyü öğrenebilirsin
+. Any class can learn spells but only the skilled will use their mana efficiently.;Her sınıf büyü öğrenebilir ama saddee becerisi olanlar manalarını tam potansiyeli ile kullanabilir.
+
+# Gold;Altın
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.;Altınlar ağırlıksızdır ve birçok kullanımları vardır.
+. Gold can be traded for items from merchants or donated to priests for karma.;Tüccarlarla alışveriş yapmak için ve tapınaklara bağış yapmak için altınını kullanabilirsin.
+
+# Companions;Yoldaşlar
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).;Evcil hayvanlara yemeyi sevdikleri birşey yedirerek onları ehlileştirebilirsin. (Başka zamanlarda aç hissetmezler).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).;Lanetli bir eşyanın ya da möbelin üstüne geldiklerinde kediler miyavlar köpekler havlar (mesela bir çeşme).
+. You can mount some types of companions and ride around the dungeon.;Bazı yoldaşların üstüne binebilirsin.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.;Bineğin bazen senin yerine vurur bazen de senin yerine hasar alır.
+. Your steed will be the first into any traps so take good care of their well-being.;Tuzaklara ilk bineğin girer. Bu yüzden sağlıklarına dikkat et.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.;Becerili bir sürücünün beceri bonusu bineğinin saldırısına ve savunmasına eklenir.
+. A steed is useful when you are burdened and it is strong enough to take your load.;Yükün fazla geldiğinde ve bineğin kaldırabilecek kadar güçlüyse kullanışlı olur.
+. To dismount your steed you need to long press/right click on your character.;İnmek için karakterine sağ tıkla/uzun dokun
+
+# Engulfing;Yutma
+. Some entities can swallow or engulf other entities.;Bazı canlılar diğer canlıları yutabilir.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.;Yutulduğunda tükürülene kadar her tur hasar alırsın
+. Alternatively, there are many mechanisms which can be used to escape.;Alternatif olarak, çıkmak için kullanabileceğin başka mekanizmalar da var.
+. It is impossible to fight with your equipped weapons when swallowed.;Yutulduğunda kuşandığın silahlarla saldıramazsın.
+. If you cast when engulfed the spell will hit your engulfer.;Yutulduğunda büyü kullanırsan seni yutan canlıya vurabilirsin.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.;Ama, büyü yutan canlıdan sekip sana çarpabilir.
+
+# Spawning;Canlanma
+. Monsters will randomly spawn into areas outside your current zone.;Canavarlar bulunduğun alanın dışında rastgele canlanırlar.
+. The rate of spawning increases as you descend deeper into the dungeon.;Canlanma oranı zindanda alaçldıkça hızlanır.
+. The talent of aggravation also increases the spawn rates for monsters.;Kızdırma becerisi canavarların canlanma hızını yükseltir.
+
+# Polymorph;Şekil değiştirme
+. Transform into another entity with all the advantages or disadvantages that brings.;Başka bir canlıya dönüşebilirsin ama faydalarına ve zararlarına dikkat et.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.;Mesela bir ejderhanın elleri olmayabilir ama uçup enerji ışınları püskürtebilir.
+. When you perish in your polymorphed form you will often revert to your original form.;Şekil değiştirip ölürsen asıl haline dönüşürsün.
+. You can transform into the entity of your choice when you have polymorph control.;Şekil değiştirme kontrolüne sahip olduğunda istediğin canlıya dönüşebilirsin.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.;Bu kontrol sadece önceden öldürmüş öldüğün canlılar için geçerlidir.
+. To access polymorph-at-will you need to long press/right click on your character.;Şekil değiştirme menüsüne ulaşmak için karakterine sağ tıkla/uzun dokun
+
+# Locks;Kilitler
+. Doors and containers can be locked and possibly trapped.;Kapılar ve kaplar kilitlenebilir ve tuzaklanabilir.
+. You can kick locks to break them but this will trigger any trap.;Kilitleri tekmeleyerek açabilirsin ama kırdığında kilidin içindeki tuazğı da tetiklersin.
+. Items such as skeleton keys and lock picks can be used to unlock.;İskelet anahtar ve maymuncuk ile kilitleri açabilirsin.
+. These items can break and the chance is influenced by your competency with locks.;Kilitlerle etkililiğine bağlı olarak bu eşyaları yanlışlıkla kırabilirsin.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.;lanetli eşyalar kırılmaya iki kat yatkın iken kutsanmış eşyalar iki kat daha sağlamdır.
+. There are other magical items and spells that can be used to unlock.;Kilitlerde kullanabileceğin başka bir eşyalar ve büyülerde mevcuttur.
+
+# Traps;Tuzaklar
+. Traps have a difficulty rating that reflects the lethality of the device.; Tuzakların zorluk seviyeleri vardır ve bu seviyeler tuzağın ölümcüllüğünü belirlerler.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.;Bu zorluk seviyesi tuzağın yaratılacağı asgari derinliği de belirler.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.;Bir tuzağı bozma ihtimalin beceri ve çevikliğinle hesaplanır.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.;Sakarlık, körlük, kafa karışıklığı, sersemlik veya varsanı etkisi altındaysan tuzakları bozmak zorlaşır.
+. Untrapping requires you to move into the square.;Tuzak bozmak seni tuzağın üstüne itecektir.
+. A failure to untrap will cause it to be triggered.;Eğer tuzağı bozamazsan bu tuzağı tetiklemene neden olacaktır.
+
+# Teleport;Işınlanma
+. Teleportation transports your character around the current dungeon level.;Bulunduğun zindan seviyesinde ışınlanarak hareket edebilirsin.
+. When uncontrolled, this is a random event that may help or hinder your journey.;Kontrol edilmediğinde rastgele ışınlanırsın ve bu macerana yardım edebileceği gibi zorlaştırabilir de
+. Controlled teleportation allows you to select on the map your destination location.;Teleport kontrolü ışınlanacağın yeri haritadan seçmeni sağlar
+. However, each teleportation will cost you nutrition so use it wisely.;Ancak, her ışınlanma besininden harcayacak bu yüzden dikkatli kullan.
+. To access teleport-at-will you need to long press/right click on your character.;İstediğin an ışınlanmaya ulaşmak için karakterine sağ tıkla/uzun basılı tut
+
+# Dual wielding;Çift Kuşanmak
+. Dual wielding allows the character to hold two single handed weapons.;Çift kuşanma sayesinde karakterin iki adet tek elle kulanılan silahı aynı anda kullanabilir.
+. This allows for two attacks instead of one but the chance of hitting is reduced.;Bu bir kere yerine iki kere saldırmanı sağlar ama vurma ihtimalin azalır.
+. If you are skilled then it is only a -2 to attack on the offhand.;Eğer becerin varsa bu ikinci silahına -2 olarak yansır.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.;Yoksa ana silahına -2 ikinci silahına -4 olarak yansır.
+
+# Crafting;El İşi
+. Items can be scrapped into their raw essence and base material on a workbench.;Eşyalar parçalara ayrılabilir ve esansları alınabilir.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.;Esanslar eşyaların temelleridir ve hem büyülü eşyalardan hem de normal eşyalardan çıkarlar.
+. New items can be crafted on a workbench using enough of the base material and essence.;Eğer yeterince malzemen ve esansın varsa çalışma masasında yeni eşyalar yapabilirsin.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).;Çalışma tahtalarının üstünde rastgele malzemeler mevcut olur.(0 - 10 esans ve altı rastgele malzeme 10 - 200).
+. Materials are not transferable between workbenches.;Malzemeler çalışma masaları arasında taşınamazlar.
+/
+. The crafting skill influences how much material you gain when scrapping.;El işi becerin eşyaları parçalara ayırdığında geri aldığın malzeme sayılarını değiştirir
+. That is, when unskilled you recover only 50% of the scrapped material.;Yani, becerin olmadığında parçalara ayrılan eşyanın %50'sini kurtarabilirsin
+/
+` Unskilled  =  50%; Beceriksiz =  50%
+` Proficient =  60%; Etkili     =  60%
+` Specialist =  70%; Öğrenci    =  70%
+` Expert     =  80%; Usta       =  80%
+` Master     =  90%; Üstat      =  90%
+` Champion   = 100%; Şampiyon   = 100%
+/
+. The crafting skill influences how much material you need when crafting.;El işi becerin eşya oluştururken ne kadar malzemeye ihtiyacın olacağını belirler.
+. That is, when unskilled you need 150% of the required material to craft an item.;Yani becerin olmadığında gereken malzemelerin %150'sini kullanman gerekir
+/
+` Unskilled  = 150%; Beceriksiz = 150%
+` Proficient = 140%; Etkili     = 140%
+` Specialist = 130%; Öğrenci    = 130%
+` Expert     = 120%; Usta       = 120%
+` Master     = 110%; Üstat      = 110%
+` Champion   = 100%; Şampiyon   = 100%
+
+# Enchantment;Efsunlama
+. Weapons and armour have a modifier that can be changed with enchantment magic.;Silahların ve zırhların efsun büyüsüyle değiştirilebilecek düzenleyicileri vardır.
+. The modifier is limited to between {Min} and {Max}.;Düzenleyici {Min} ile {Max} arası değişebilir.
+. A modifier of +0 is a normal, mundane item.;Normal bir eşyanın düzenleyicisi +0 olur.
+. Modifiers on armour apply to your defence score.;Zırhlardaki düzenleyiciler savunma dereceni etkiler.
+. Modifiers on weapons apply to your attack and damage scores.;Silahlardaki düzenleyiciler saldırı ve hasar dereceni etkiler.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.;Eğer düzenleyiciyi {Min} in altına veya {Max}in üstüne çıkarmaya çalışırsan eşyan yok olur.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Eser eşyaları {Modifier} seviyesine kadar yükseltilebilir, fazladan yapılan yükseltmeler eşyayı sıfır seviyesine geri döndürür.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;Aletler de efsunlanabilir. Mesela teneke bir düdük büyülü bir düdüğe dönüşebilir.
+
+# Punishments;Cezalar
+. This severe curse can be gained by magical means or misconduct.;Bu rahatsızlıklar büyüyle ve ahlaksızlıklarla edinilebilir.
+. There is a chance of being punished each time your karma dips below zero.;Karman her sıfıra düştüğünde cezalandırılma ihtimalin vardır.
+. Only one punishment can be active at one time.;Aynı anda birden fazla ceza aktif olamaz.
+. A punishment can be released with any remove curse magic.;Lanet kaldırma büyüleriyle cezalar kaldırılabilir.
+
+# Charming & taming;Cezbetme & Ehlileştirme
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.;Senin seviyen ve hedef canlının seviyesi arasındaki fark yüzdesi sadakat süresini hesaplamak için kullanılır.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.;Örneğin, sen 10 seviyeysen ve 20 seviye bir canlıyı cezbediyorsan sadakati sürenin yarısı kadar sürer.
+. The charisma bonus for you and the target entity also modifies this relative percentage.;Karizma bonusun ve hedef alınan canlının karizma bonusu bu yüzdeyi etkiler.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.;Örneğin, seviyen 4 ise ve karizman 18(+4) ise büyü, sanki seviyen 8'miş gibi çıkar.
+
+# Death;Ölüm
+. There are seven mechanics for death:; Ölümün yedi mekaniği var:
+/
+* life points reaches zero; can sıfıra kadar düşer
+* any ability score reaches zero; herhangi bir yetenek sıfıra düşer
+* starvation; açlık
+* death effect (eg. wand of death); ölüm etkisi (örn. ölüm asası)
+* genocide; soykırım
+* incarceration (eg. turned into a statue); hapsolma (örn. heykele dönüşmek)
+* decapitation (eg. vorpal attacks); uzuv kaybı (örn. ölümcül saldırılar)
+
+# Revenants; Hortlak
+. Upon your death there is a 50% chance of creating a revenant on the current level.; Ölümünden sonra, arkanda hortlağını bırakma ihtimalin %50'dir
+. When you go down stairs there is a 50% chance of encountering this revenant.; Merdivenlerden inerken bu hortlakla karşılaşma ihtimalin %50'dir
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; Bu hortlak senin öldüğünde sahip olduğun bütün eşyalara ve silahlara sahip saldırgan bir kopyandır.
+. They will be as tough as you were at full health and may be quite challenging at times.; Canın tamken ne kadar güçlüysen bu hortlak da o kadar güçlü olur ve bazen zorlayabilir.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; Mezar kaçkınlı bir seviyede ölürsen bir sonraki karakterin iki kaçkınla uğraşmak zorunda kalabilir.
+. Level 1 will never create a revenant.; Birinci derinlikte asla kaçkın oluşmaz.
+
+# Fame;Şan
+. Fame is calculated by the following formula.;Şan bu formül ile hesaplanır:
+/
+` = Maximum Depth x {Multiplier}; = Keşfettiğin Zindan Derinliği x {Multiplier}
+` + Explored Maps x {Multiplier}; + Keşfedilen Haritalar x {Multiplier}
+` + Visited Locations x {Multiplier}; + Ziyaret Edilen Bölgeler x {Multiplier}
+` + Discovered Items x {Multiplier}; + Tanımlanan Eşyalar x {Multiplier}
+` + Encountered Entities x {Multiplier}; + Karşılaşılan Varlıklar x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + Taşıdığın Eserler x {Multiplier}
+` + Earned Experience (capped to {Cap}); + Kazandığın Tecrübe (capped to {Cap})
+` + Development Level x {Multiplier}; + Gelişmişlik seviyesi  x {Multiplier}
+` + Practised Skills x {Multiplier}; + Çalışılan Yetenekler  x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + Öğrendiğin büyüler x {Multiplier} (temel mana maliyetlerinin toplamı x mastery level)
+` + Increased Life x {Multiplier}; + Yükselmiş Can Miktarın  x {Multiplier}
+` + Increased Mana x {Multiplier}; + Yükselmiş Mana Miktarın  x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + Elde Edilen Nitelik Puanları  x {Multiplier}
+` + Acquired Talents x {Multiplier}; + Elde Edilen Kabiliyetler  x {Multiplier}
+` + Gained Resistances x {Multiplier}; + Kazanılmış Dirençler  x {Multiplier}
+` + Total Inventory Worth (in gold); + Envanterinin Değeri (altın ile hesaplanır)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; Toplam envanter kıymeti şan'ı belli bir sınıra kadar yükseltebilir.
+
+# Resurrect and continue;Tekrar Canlandır ve Devam Et
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.;Bu tercihi özellik karakterin bahtsız veya adil olmayan bir şekilde öldüğünde kullanışlıdır.
+. You may learn that your character was not viable and death comes quick again.;Bazen karakterinin yetersiz olduğunu öğrenerek tekrar ölürsün.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.;Sonsuza kadar tekrar canlanabilirsin ama kazandığın şan sıfırlanır.
+. Fame achieved subsequent to your resurrection will contribute to your score.;Tekrar canlanmana müteakip bütün şanlar skoruna eklenir.
+. This is similar to the 'explorer mode' from the original Nethack.;Bu asıl Nethack'teki "Keşif Modu" gibidir.
+
+# Multiplayer;Çoklu oyuncu
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;Çoklu oyuncu Invention platformunda bulunan 'graphical telnet' teknolojisiyle yapıldı
+. This means the game is executed on the server and the user interface is projected to each of the clients.;Bu, oyunun bir sunucuda gerçekleşeceğini ve kullanıcı arayüzünün oyunculara yönlendirileceği anlamına geliyor.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.;Hem WIFI/LAN üzerinden hem de internetten oynayabilirsiniz çünkü iletişim TCP/IP bazlı.
+. This technology only works well with low latency (less than 30ms ping should be playable).;Bu teknoloji sadece düşük geçikmeyle çalışıyor(30ms pingden az olduğu sürece oynanabilir).
+/
+. One player needs to be the server and HOST the game.;Bir oyuncu sunucuyu barındırıp sunucu sahibi olmalı.
+. All other players are clients and JOIN the game.;Diğer oyuncular misafirlerdir ve oyuna katılmaları gerekir.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.;Sunucu sahiplerinin aygıt ağı ayarlarından IP adresine bakmaları ve misafirleriyle paylaşması gerekir.
+. Firewall settings and port forwarding may be required when playing over the internet.;Firewall ayarları ve port paylaşımı internetten oynanırken gerekebilir.
+/
+. The HOST can use 3717 and tap CONNECT.;Ev sahibi 3717'yi kullanıp BAĞLAN'a tıklayarak katılabilir.
+. The other players JOIN by typing in the host's IP Address and the port.;Diğer oyuncular KATILmak için sunucu sahibinin IP adresini ve PORTunu kullanırlar.
+. For example: 192.168.1.5:3717; Örneğin :192.168.1.5:3717
+
+# Translations; Çeviriler
+. The language translations have been contributed by a number of dedicated players.; Dil çevirileri kendini adamış birçok oyuncumuz tarafından yapılmaktadır.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; Bir çeviriyi tamamlamak, sürekli bakım gerektiren kayda değer bir başarıdır.
+. The percentage on the language selection indicates the current completeness of the translation.; Dil seçim ekranındaki yüzde, çevirinin anlık tamlığını simgelemektedir.
+. You can also browse the individual translations in the Diagnostics screen.; Aynı zamanda Sistem Kontrol ekranından diğer kişilerin çevirilerine de bakabilirsiniz.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; Eğer yeni bir çeviri, varolan çeviriye destek olmak veya sadece bir çeviri hatasını bile bildirmek isterseniz Geliştiriciyle iletişime geçiniz.
+
+# Master mode;Usta Modu
+. This is a cheat mode for more quickly learning the secrets of Pathos.;Bu Pathos'un sırlarını çabuk öğrenmek için bir hile modudur.
+. Any adventures in this mode will not be tracked in the hall of fame.;Bu modda yaşadığın hiçbir macera şan salonuna eklenmez.
+/
+- ` | open master console (more commands); ` | usta konsolunu aç (daha fazla komutlar)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | bölgede karanlık
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | Canlan ve rastgele bir yutucu tarafından yutul
+- shift + F | all adjacent enemies are charmed; shift + F | etrafındaki bütün canlılar cezbedilir
+- shift + G | gain 1000 gold; shift + G | 1000 altın kazan
+- shift + I | identify all items on the floor; shift + I | yerdeki bütün eşyaları tanımla
+- shift + W | jump at will; shift + W | keyfine göre zıpla
+- shift + D | light this zone; shift + D | bölgeyi ışıklandır
+- shift + M | reveal the entire map; shift + M | bütün haritayı açığa çıkar
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | bütün seviyelerde haritaları açığa çıkar
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | zindanın şeklini boz (oyun sonu haritası değişir)
+- shift + P | polymorph into any entity; shift + P | bir canlıya dönüş
+- shift + T | teleport to a target zone; shift + T | hedeflenen bölgeye ışınlan
+- shift + Z | learn all spells; shift + Z | bütün büyüleri öğren
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | otomatik kullanma modunu aç/kapa (bir kareye adım at ve bütün eşyalar kullanılsın)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | bir önceki seviyeye yüksel (merdivene yakın olman gerekmez)
+- > | descend to the next dungeon level (even when not on a staircase); > | aşağıdakı seviyeye düş (merdivene yakın olman gerekmez)
+- F5 | refresh the screen; F5 | ekranı yenile
+- F9 | quick load; F9 | hızlı yükle
+/
+. There are additional manipulations built into the character panel and contextual help.;Oyundaki karakter paneli sana anlık yardım sunacak.

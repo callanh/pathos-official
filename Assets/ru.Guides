@@ -1,0 +1,447 @@
+# Commands; Команды
+. Single tap/left click or arrow keys to move and attack.; Нажатие на экран, клик левой кнопкой мыши или стрелки используются для передвижения и атаки.
+. Long press/right click to operate doors/traps.; Долгое нажатие на экран или клик правой кнопкой мыши для взаимодействия с дверьми/ловушками или для поднятия/использования предмета из инвентаря или с пола.
+. Double tap to pick up items, traverse stairs or wait one move.; Двойное нажатие для поднятия предметов, использования лестниц или пропуска одного хода.
+/
+- . | wait one turn (also double tap on self); . | пропуск одного хода (также двойное нажатие на себя)
+- , | pick up the top item on the floor; , | поднять верхний предмет с пола
+- A | toggle log (click the log to expand/collapse); A | открыть/закрыть лог (кликнуть/нажать на него для разворачивания)
+- B | move down-left; B | двигаться вниз и влево
+- C | toggle character; C | открыть/закрыть информацию о персонаже
+- D | re-use last item; D | использовать последний использованный предмет
+- E | mount or dismount your steed; E | сесть или спешиться со скакуна
+- F | toggle floor; F | открыть/закрыть информацию о том, что находиться под ногами
+- G | re-equip last item; G | переодеться в последнюю использованную вещь
+- H | move left; H | двигаться влево
+- I | toggle inventory; I | открыть/закрыть инвентарь
+- J | move down; J | двигаться вниз
+- K | move up; K | двигаться вверх
+- L | move right; L | двигаться вправо
+- M | toggle map; M | открыть/закрыть карту
+- N | move down-right; N | двигаться вниз и вправо
+- O | hide from view; O | скрыться в тенях (при наличии соответствующего свойства)
+- P | polymorph at will; P | контролируемое превращение (при наличии соответствующего свойства)
+- Q | save or quit this game; Q | сохранить или покинуть эту игру
+- R | for rest mode to recover life and mana; R | войти в режим ожидания для восстановления здоровья и маны
+- S | for search mode for secret doors and traps; S | войти в режим поиска для обнаружения секретных дверей и ловушек
+- T | teleport at will; T | контролируемый телепорт (при наличии соответствующего свойства)
+- U | move up-right; U | двигаться вверх и вправо
+- V | kick in a direction; V | пнуть в направлении
+- W | jump in a direction (if you have the talent); W | прыжок в направлении (при наличии соответствующего свойства)
+- X | re-cast last spell; X | использовать последние заклинание
+- Y | move up-left; Y | двигаться вверх и влево
+- Z | toggle cast spells (read books to learn spells); Z | переключиться между использованными заклинаниями (читайте книги для изучения заклинаний)
+- ' | blink in a direction; ' | мерцание в направлении (при наличии соответствующего свойства)
+- ;; | telekinesis in a direction; ;; | телекинез в направлении (при наличии соответствующего свойства)
+- > | descend stairs; > | спуститься по лестнице
+- < | ascend stairs; < | подняться по лестнице
+- / | toggle chat in multiplayer; / | открыть/закрыть чат в многопользовательской игре
+- \ | view knowledge panel; \ | открыть/закрыть информацию о знаниях
+- + | zoom in; + | отдалить
+- - | zoom out; - | приблизить
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | быстрые действия слева (shift + цифра для выбора действия)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | быстрые действия справа (shift + цифра для выбора действия)
+- INSERT | toggle tunnelling mode; INSERT | переключиться на прокладку тоннелей
+- SHIFT + arrow | fire a missile without moving; SHIFT + стрелка | выстрелить без передвижения
+- CTRL + arrow | interact with the target without moving; CTRL + стрелка | взаимодействовать с целью не двигаясь
+- ENTER | select the top item on the floor; ENTER | выбрать верхний предмет на полу
+- ESCAPE | hides open panels and clears your target; ESCAPE | скрывает окна и отменяет цель
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | закрывает диалоговые окна и останавливает текущие задачи
+- SPACE | toggle real-time or turn-based; SPACE | переключить пошаговую игру и игру в реальном времени
+- PgUp | switch to previous character; PgUp | переключиться на предыдущего персонажа
+- PgDown | switch to next character; PgDown | переключиться на следующего персонажа
+- ALT | show labels; ALT | показать названия
+- F1 | show this help; F1 | показать это окно помощи
+- F6 | quick save; F6 | быстрое сохранение
+- F10 | open side menu; F10 | открыть боковое меню
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | переключиться между оконным и полноэкранным режимом (Windows)
+
+# General mechanics; Основные механики
+. You will die.; Вы умрёте.
+. But don't despair, you will learn something new each time.; Но не отчаивайтесь, каждый раз вы будете узнавать что-нибудь новое.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Цель игры Pathos — пройти весь путь до 40 уровня подземелий, найти ценный предмет и вернуться с ним на поверхность.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos — пошаговая игра, поэтому всегда можно сделать паузу и взвесить все варианты решений, когда дела идут плохо.
+. Each class starts with different items, skills and abilities.; Каждый класс начинает игру с разными предметами, умениями и способностями.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; Эффекты зелий, свитков, колец, палочек и некоторой брони случайны в начале каждого приключения.
+. For example, the orange potion will not have a consistent effect across different adventures.; Так например, оранжевое зелье будет иметь разный эффект в каждое новое прохождение.
+
+# Combat; Сражение
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; При атаке персонаж бросает кость к20, которая имеет значение от 1 до 20.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; Выпадение 1 считается критическим промахом, выпадение 20 — критическим попаданием.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; Критический промах прекращает все последующие атаки в этом ходу (если у персонажа множественные атаки).
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Критическое попадание удваивает базовый урон от оружия. Обратите внимание, что зачаровывания и модификаторы силы не удваиваются.
+. The strength bonus to damage is doubled when using a two handed weapon.; Бонус к урону от силы удваивается при использовании двуручного оружия.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Если критическое попадание или промах являются единственной возможностью попадания или промаха, они становятся обычным попаданием или промахом.
+. Otherwise, this number is added to the attack score and compared to the defence score.; В любом другом случае, выпавшее число добавляется к значению атаки и сравнивается с защитой цели.
+/
+` (Attack + d20) >= Defence; (Атака + к20) >= Защита
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Показатели атаки и защиты также зависят от ваших свойств, навыков и зачаровывания.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Зачаровывания оружия напрямую влияют на показатель атаки и добавляются к показателю урона.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; Бонус от навыка зависит от вашего уровня, и для всех классов работает следующая формула:
+/
+` Skill Bonus = (Level / 4) + 1; Бонус навыка = (Уровень / 4) + 1
+/
+. Your defence is also affected by your circumstances:; Ваша защита также зависит от вашего состояния:
+/
+` {Mod} defence when blind; {Mod} защиты когда ослеплён
+` {Mod} defence when invisible; {Mod} защиты когда невидим
+` {Mod} defence when displaced; {Mod} защиты когда имеет свойство «ускользание»
+` {Mod} defence when paralysed or sleeping; {Mod} защиты когда парализован или усыплён
+` {Mod} defence when stuck; {Mod} защиты когда застрял
+` {Mod} defence when punished; {Mod} защиты когда под действием наказания
+` {Mod} defence when attacked from concealment; {Mod} защиты когда атакован из укрытия
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Каждый элемент тяжёлых доспехов делает вас на {UnskilledPenalty} пункт медленнее, когда вы не имеете этого навыка, и на {SkilledPenalty} пункт медленнее, когда он у вас есть.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Каждый элемент средних доспехов делает вас на {UnskilledPenalty} пункт медленнее, когда вы не имеете этого навыка, когда же навык есть, штрафа по скорости нет.
+. Light armour has no speed penalty if you are unskilled.; Лёгкие доспехи не налагают штрафа на скорость, даже при отсутствии навыка.
+. Unskilled use of armour also attracts a one point defence penalty.; Использование элемента доспехов без наличия навыка также налагает -1 штраф к защите.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Модификатор ловкости прибавляется к вашей защите когда у вас есть навык в каждом элементе доспехов.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Модификатор ограничен +4 при ношении любого элемента средних доспехов и +2 при ношении любого элемента тяжёлых доспехов.
+
+# Skills; Навыки
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; Каждый навык имеет значение от 0 до 2000 и имеет 5 уровней мастерства.
+/
+` (0) Proficient =    0..199; (0) Умелый =    0..199
+` (1) Specialist =  200..499; (1) Специалист =  200..499
+` (2) Expert     =  500..999; (2) Эксперт     =  500..999
+` (3) Master     = 1000..1999; (3) Мастер     = 1000..1999
+` (4) Champion   = 2000; (4) Чемпион   = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; Значения навыков постепенно увеличиваются с практикой, например, при нанесении удара оружием или при промахе вражеского удара по вам.
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; Навыки оружия дают бонус к атаке и урону соответственно уровню мастерства.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; Например, мастер в тяжёлых клинках получает +3 к атаке и +3 к урону при использовании двуручного меча.
+. This bonus to damage is doubled on a critical hit.; Этот бонус к урону удваивается при критическом ударе.
+/
+. Armour skill gives you the competency level as a defence bonus.; Навыки доспехов дают бонус к защите соответственно уровню мастерства.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; К примеру, эксперт в тяжёлых доспехах получает +2 к защите при ношении лат.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; Бонус к защите является средним значением от уровня мастерства в ношении каждого элемента доспехов.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; К примеру, эксперт (2) в тяжёлых доспехах, но лишь умелый (0) в лёгких, при ношении лат (тяжёлые) и малого щита (лёгкие) получит бонус к защите +1.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; Уровень в школах магии улучшает дальность действия заклинаний и усиливает эффекты на каждом уровне мастерства.
+. These skills are practised by learning and casting spells.; Эти навыки улучшаются при изучении и использовании заклинаний.
+
+# Life; Здоровье
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; Ваша стартовое здоровье определяется вашей расой и классом, а также модификатором телосложения.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Когда вы получаете уровень, ваше здоровье увеличивается на случайную величину, определяемую вашей расой и классом, а также модификатором телосложения.
+. There are also magical means to increase your life potential.; Существуют также магические способы увеличения вашего жизненного потенциала.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Тем не менее, здоровье не может быть увеличено сверх максимального потенциала плюс ваш показатель телосложения.
+/
+` Initial = Class base + Race base + {CON} modifier; Стартовое = Базовое значение класса +  Базовое значение расы + модификатор {CON}.
+` Advancement = Class roll + Race roll + {CON} modifier; Повышение = Значение броска класса + Значение броска расы + модификатор {CON}.
+` Limit = Initial + max(Advancement) x Level + {CON} score; Предел = Стартовое + максимум(Повышение) x Уровень + показатель {CON}.
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; Здоровье естественным образом восстанавливается на одно очко за ({LevelCap} - Уровень - модификатор {CON}) ходов.
+. Sleeping improves recovery by halving the number of turns.; Сон улучшает восстановление, уменьшая вдвое количество ходов.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; Голод заставляет здоровье восстанавливаться на одно очко за {StarvationRecoveryRate} ходов.
+. Life regeneration guarantees the recovery at one point per turn.; Регенерация здоровья гарантирует восстановление на одно очко за ход.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; Диета {inediate} замедляет восстановление здоровья, удваивая количество ходов
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; Когда свойство {hunger} присутствует в сочетании с диетой {inediate}, жизнь больше не будет восстанавливаться естественным образом. Однако при добавлении {life regeneration} жизнь будет восстанавливаться как обычно, но более медленной скоростью.
+. Active {phasing} prevents the natural recovery of life.; Активное свойство {phasing} препятствует естественному восстановлению здоровья.
+
+# Mana; Мана
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; Нет ни каких негативных эффектов уменьшающих вашу ману.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Когда вы получаете уровень, ваша мана увеличивается на случайную величину, определяемую вашей расой и классом, а также модификатором мудрости.
+. There are also magical means to increase your mana potential.; Существуют также магические способы увеличения вашего потенциала маны.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Тем не менее, мана не может быть увеличена сверх максимального потенциала плюс ваш показатель мудрости.
+/
+` Initial = Class base + Race base + {WIS} modifier; Стартовое = Базовое значение класса +  Базовое значение расы + модификатор {WIS}.
+` Advancement = Class roll + Race roll + {WIS} modifier; Повышение = Значение броска класса + Значение броска расы + модификатор {WIS}.
+` Limit = Initial + max(Advancement) x Level + {WIS} score; Предел = Стартовое + максимум(Повышение) x Уровень + показатель {WIS}.
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Мана естественным образом восстанавливается на одно очко за ({LevelCap} - Уровень - модификатор {WIS}) ходов.
+. Sleeping improves recovery by halving the number of turns.; Сон улучшает восстановление, уменьшая вдвое количество ходов.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; Голод заставляет ману восстанавливаться на одно очко за {StarvationRecoveryRate} ходов.
+. Mana regeneration guarantees the recovery at one point per turn.; Регенерация маны гарантирует восстановление на одно очко за ход.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; Диета {inediate} замедляет восстановление здоровья, удваивая количество ходов
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; Когда свойство {hunger} присутствует в сочетании с диетой {inediate}, мана больше не будет восстанавливаться естественным образом. Однако при добавлении {mana regeneration} мана будет восстанавливаться как обычно, но более медленной скоростью.
+. Active {phasing} prevents the natural recovery of mana.; Активное свойство {phasing} препятствует естественному восстановлению маны.
+
+# Nutrition; Питание
+. Maintaining a food supply is important to avoid starving to death.; Наличие запаса еды важно для того, чтобы не умереть от голода.
+. In desperate or pragmatic times you can eat corpses.; От отчаяния или из практического интереса вы можете есть трупы.
+
+# Corpses; Трупы
+. The bodies of your enemies and allies can be a source of nutrition.; Трупы ваших врагов и союзников могут быть источником питания.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; Часто поедание трупов может привести к неприятным последствиям, но некоторые из них могут придать вам дополнительные свойства.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; Помните, что каннибализм даже от отчаяния — это плохо.
+
+# Encumbrance; Переносимый вес
+. Everything you pick up adds to your encumbrance and you may become burdened.; Всё, что вы подбираете, увеличивает переносимый вами вес, и вы можете стать обременённым.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; Это замедлит ваши движения и сделает вас лёгкой добычей для обитателей подземелья.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); Максимальный переносимый вес = (Значение силы - штраф от недоедания) * {WeightMultiplier} + ({WeightPercentage} массы тела)
+
+# Resting; Отдых
+. The camp-fire action button toggles resting.; Кнопка с пиктограммой костра включает режим отдыха.
+. While resting your life and mana recover at a faster rate.; Во время отдыха жизнь и мана восстанавливаются быстрее.
+. Companions will rest when you rest.; Компаньоны отдыхают вместе с вами.
+. Resting will be interrupted if there is a hostile in your zone.; Отдых прерывается при появлении врага в поле зрения.
+
+# Searching; Поиск
+. The eye action button toggles searching.; Кнопка с пиктограммой глаза включает режим поиска.
+. Searching will find secret doors and concealed traps.; Поиск используется для нахождения ловушек и секретных дверей.
+. Companions will search when you search to help find secrets.; Компаньоны ищут вместе с вами.
+. Searching will be interrupted if there is a hostile in your zone.; Поиск прерывается при появлении врага в поле зрения.
+
+# Abilities; Характеристики
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; В игре 6 характеристик — сила, ловкость, телосложение, интеллект, мудрость и харизма.
+. Your starting ability scores is determined by rolling 4d6 six times.; Ваши стартовые значения определяются броском 4к6 шесть раз.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; Самый низкий результат каждого из 4 бросков отбрасывается, давая значения от 3 до 18.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; Наибольшие значения автоматически присваиваются первичным характеристикам, которые показаны в помощь > классы.
+. Racial limits are then applied as shown in help > races.; Применяются расовые лимиты, которые показаны в помощь > расы.
+. Any points that are reduced by racial limits are transferred to another ability.; Все очки, которые были уменьшены из-за расовых лимитов перераспределяются на другие характеристики.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma; Карма
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; Вы получаете карму когда убиваете монстров, и она тратится, когда вы получаете божественную помощь (молитвы и получения даров в храмах).
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; Карма может быть потеряна, если вы плохо себя ведёте — атакуете нейтральных монстров или убиваете союзников.
+. You can gain additional karma by donating gold to a priest at a shrine.; Вы можете получать дополнительную карму, жертвуя золото жрецу в храме.
+. You can pray at any time by long press/right click on your character.; Вы можете молиться в любое время, используя правый клик/долгое нажатие на своём персонаже.
+. This will cost {Number} karma and has the following effects:; Это будет стоить вам {Number} кармы и приведёт к следующим эффектам:
+/
+` karma >= hopeful; карма >= многообещающий
+`   gain {Number} nutrition when hungry; получить {Number} сытости, когда голодны
+`   unafflict; излечивает от заражения
+`   unpolymorph; вернуться в первоначальное состояние после превращения
+`   escape from being stuck; избавиться от застревания
+`   remove punishment; снять наказание
+/
+` karma >= good; карма >= добрый
+`   fully healed if less than half life; полностью излечиться, если у вас меньше половины здоровья
+`   fully restored if less than half mana; полностью восстановить ману, если её меньше половины
+/
+` karma >= glorious; карма >= прославленный
+`   remove blindness; снять слепоту
+`   remove hallucination; снять галлюцинации
+`   remove rage; снять ярость
+`   remove sickness; снять болезнь
+/
+` karma >= exalted; карма >= возвышенный
+`   remove one curse; избавиться от одного проклятия
+`   raise dead for one loyal companion; воскрешение одного мёртвого лояльного компаньона
+
+# Diets; Предпочтения по пище
+. Entities have different diets that allow them to eat specific materials.; У разных созданий есть разные вкусовые пристрастия, которые позволяют им есть пригодную для них пищу.
+/
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
+
+# Spells; Заклинания
+. Spells are learned by studying from magical books found in the dungeon.; Заклинания изучаются путём чтения магических книг, найденных в подземелье.
+. Any class can learn spells but only the skilled will use their mana efficiently.; Любой класс может изучать заклинания, но только умелые будут использовать свою ману эффективно.
+
+# Gold; Золото
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; Золото не считается частью общего веса и имеет несколько путей применения в подземелье.
+. Gold can be traded for items from merchants or donated to priests for karma.; Золотом можно расплачиваться с торговцами, или жертвовать его жрецам для получения кармы.
+
+# Companions; Компаньоны
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; Домашние животные могут быть приручены, если вы их покормите чем-нибудь, что им нравится (они не становятся голодными со временем).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; Кошки мяукают, а собаки лают, когда наступают на проклятую вещь или объект (например, фонтан).
+. You can mount some types of companions and ride around the dungeon.; Вы можете ездить на некоторых типах компаньонах.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; Ваше ездовое существо периодически будет атаковать и становиться целью атаки.
+. Your steed will be the first into any traps so take good care of their well-being.; Ваше ездовое существо будет первым попадать во все ловушки, поэтому заботьтесь о нём.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; Умелый наездник будет добавлять бонус навыка езды к атаке и защите ездового существа.
+. A steed is useful when you are burdened and it is strong enough to take your load.; Ездовое существо полезно, когда вы перегружены, увеличивая лимит веса.
+. To dismount your steed you need to long press/right click on your character.; Для спешивания используйте правый клик/долгое нажатие на своём персонаже.
+
+# Engulfing; Проглатывание
+. Some entities can swallow or engulf other entities.; Некоторые создания могут проглатывать других.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; Пока вы проглочены, вы будете получать урон каждый ход и можете пытаться вырваться, пока у вас не получится.
+. Alternatively, there are many mechanisms which can be used to escape.; В качестве альтернативы, есть много других способов спастись.
+. It is impossible to fight with your equipped weapons when swallowed.; Пока вы проглочены, невозможно использовать своё оружие.
+. If you cast when engulfed the spell will hit your engulfer.; Если вы будете использовать заклинание, оно будет направлено на поглотившего вас.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; Однако, лучи могут отразиться от стен подземелья, ударить обратно в поглотившего и в вас.
+
+# Spawning; Появление монстров
+. Monsters will randomly spawn into areas outside your current zone.; Монстры будут появляться случайным образом в областях вне вашей зоны видимости.
+. The rate of spawning increases as you descend deeper into the dungeon.; Частота их появления увеличивается по мере вашего продвижения в глубины подземелья.
+. The talent of aggravation also increases the spawn rates for monsters.; Свойство "раздражение" также увеличивает частоту появления монстров.
+
+# Polymorph; Превращение
+. Transform into another entity with all the advantages or disadvantages that brings.; В игре можно превратиться в другое существо со всеми его достоинствами и недостатками.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; Например, у дракона нет рук, но он может летать и дышать смертоносными лучами.
+. When you perish in your polymorphed form you will often revert to your original form.; Когда вы погибаете будучи превращённым, скорее всего вы вернётесь в свою изначальную форму.
+. You can transform into the entity of your choice when you have polymorph control.; Если у вас есть свойство контроля превращения, вы можете выбирать, в какое существо вы превратитесь.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; Это выбор ограничен созданиями, которых вы убили, а каждое превращение будет уменьшать вашу сытость.
+. To access polymorph-at-will you need to long press/right click on your character.; Для доступа к контролю превращения используйте правый клик/долгое нажатие на своём персонаже.
+
+# Locks; Замки
+. Doors and containers can be locked and possibly trapped.; Двери и контейнеры могут быть замкнутыми и, возможно, содержать ловушки.
+. You can kick locks to break them but this will trigger any trap.; Вы можете сломать замок силой, но это вызовет срабатывание ловушки.
+. Items such as skeleton keys and lock picks can be used to unlock.; Предметы, такие как скелетный ключ и отмычки, могут помочь отомкнуть замок.
+. These items can break and the chance is influenced by your competency with locks.; Эти предметы могут быть сломаны в процессе открытия, в зависимости от уровня вашего навыка "замки".
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; Проклятые предметы имеют удвоенный шанс поломки, а благословлённые — в половину меньше.
+. There are other magical items and spells that can be used to unlock.; Есть и другие магические предметы и заклинания, которые могут быть использованы для открывания.
+
+# Traps; Ловушки
+. Traps have a difficulty rating that reflects the lethality of the device.; Ловушки имеют рейтинг сложности, который отражает их смертоносность.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; Рейтинг сложности также показывает минимальный уровень подземелья, на котором ловушка может быть сгенерирована.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; Шанс обезвреживания ловушки рассчитывается в зависимости от её сложности, вашего навыка взлома и модификатора ловкости.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; Если вы находитесь под влиянием негативного свойства, например неуклюжесть, слепота, оглушение, смятение или галлюцинации, обезвредить ловушку будет сложнее.
+. Untrapping requires you to move into the square.; Обезвреживание ловушки должно сопровождаться передвижением на клетку с ней.
+. A failure to untrap will cause it to be triggered.; Неудача в её обезвреживании приведёт к её срабатыванию.
+
+# Teleport; Телепорт
+. Teleportation transports your character around the current dungeon level.; Телепортация перемещает вашего персонажа по текущему уровню подземелья.
+. When uncontrolled, this is a random event that may help or hinder your journey.; Когда она неконтролируема, то происходит спонтанно, что может помочь вашему приключению или усложнить его.
+. Controlled teleportation allows you to select on the map your destination location.; Контролируемая телепортация позволяет выбрать область на карте для телепортации туда.
+. However, each teleportation will cost you nutrition so use it wisely.; Любая телепортация будет стоит вам сытости.
+. To access teleport-at-will you need to long press/right click on your character.; Для контролируемой телепортации используйте правый клик/долгое нажатие на своём персонаже.
+
+# Dual wielding; Ношение парного оружия
+. Dual wielding allows the character to hold two single handed weapons.; Ношение парного оружия позволяет персонажу владеть двумя одноручными оружиями.
+. This allows for two attacks instead of one but the chance of hitting is reduced.; Это позволяет совершать две атаки вместо одной, однако, шанс попадания при этом уменьшается.
+. If you are skilled then it is only a -2 to attack on the offhand.; Если ваш персонаж умелый в парном оружии, то он получает -2 к атаке оружием во второй руке.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; В противном случае, штраф составляет -2 к атаке основной рукой и -4 к атаке второй рукой.
+
+# Crafting; Ремесло
+. Items can be scrapped into their raw essence and base material on a workbench.; Предметы могут быть разобраны на верстаке для получения эссенции и базового материала.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; Эссенция — основа для создания и может быть получена как из обычных, так и из зачарованных вещей.
+. New items can be crafted on a workbench using enough of the base material and essence.; Новые предметы могут быть созданы на верстаке из эссенции и базового материала.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; Каждый верстак генерируется с остатками материалов (0-10 эссенции и 6 случайных материалов 10-200).
+. Materials are not transferable between workbenches.; Материалы не могут быть перенесены с одного верстака на другой.
+/
+. The crafting skill influences how much material you gain when scrapping.; Навык ремесла влияет на количество получаемого материала при разборе.
+. That is, when unskilled you recover only 50% of the scrapped material.; Так, когда этого навыка нет, вы получите только 50% от разобранного.
+/
+` Unskilled  =  50%; Неумелый   =  50%
+` Proficient =  60%; Умелый     =  60%
+` Specialist =  70%; Специалист =  70%
+` Expert     =  80%; Эксперт    =  80%
+` Master     =  90%; Мастер     =  90%
+` Champion   = 100%; Чемпион    = 100%
+/
+. The crafting skill influences how much material you need when crafting.; Навык ремесла влияет на количество необходимого материала при создании предметов.
+. That is, when unskilled you need 150% of the required material to craft an item.; Так, когда этого навыка нет, для создания предмета необходимо 150% материалов.
+/
+` Unskilled  = 150%; Неумелый   = 150%
+` Proficient = 140%; Умелый     = 140%
+` Specialist = 130%; Специалист = 130%
+` Expert     = 120%; Эксперт    = 120%
+` Master     = 110%; Мастер     = 110%
+` Champion   = 100%; Чемпион    = 100%
+
+# Enchantment; Зачаровывание
+. Weapons and armour have a modifier that can be changed with enchantment magic.; Оружие и доспехи имеют модификатор, который может быть изменён магией зачаровывания.
+. The modifier is limited to between {Min} and {Max}.; Модификатор может иметь значения от {Min} до {Max}.
+. A modifier of +0 is a normal, mundane item.; Модификатор +0 представляет собой обычную земную вещь.
+. Modifiers on armour apply to your defence score.; Модификатор на доспехах применяется к вашей защите.
+. Modifiers on weapons apply to your attack and damage scores.; Модификатор на оружии применяется к вашим показателям атаки и урона.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; При попытке зачаровывания ниже {Min} или выше {Max} предмет разрушается.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Артефакты могут быть зачарованы до {Modifier} и при превышении лимита зачаровывания откатится до нуля.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Некоторые другие вещи также могут быть зачарованы, например оловянный свисток может быть улучшен в волшебный свисток.
+
+# Punishments; Наказания
+. This severe curse can be gained by magical means or misconduct.; Эти свирепые напасти могут возникнуть из-за проступков или магии.
+. There is a chance of being punished each time your karma dips below zero.; Каждый раз, когда карма падает нижу нуля, есть шанс получить наказание.
+. Only one punishment can be active at one time.; Одновременно может быть активно только одно наказание.
+. A punishment can be released with any remove curse magic.; Наказание может быть снято любой магией снятия проклятия.
+
+# Charming & taming; Очарование и приручение
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; Для расчёта продолжительности очарования используется разница между вашим уровнем и уровнем цели.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; Например, если у вас 10 уровень, а вы зачаровываете существо 20 уровня, его лояльность будет продолжаться всего лишь половину времени от указанного.
+. The charisma bonus for you and the target entity also modifies this relative percentage.; Ваш модификатор харизмы также влияет на эту длительность.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; Например, если у вас 4 уровень, а ваша харизма = 18 (модификатор +4), то очарование накладывается как будто вы были бы на 8 уровне.
+
+# Death; Смерть
+. There are seven mechanics for death:; Может быть семь причин смерти:
+/
+* life points reaches zero; очки здоровья падают до нуля
+* any ability score reaches zero; любая из характеристик падает до нуля
+* starvation; смерть от голода
+* death effect (eg. wand of death); эффект смерти (например, палочка смерти)
+* genocide; массовое истребление
+* incarceration (eg. turned into a statue); заточение (например, превращение в статую)
+* decapitation (eg. vorpal attacks); обезглавливание (например, атаки вострым оружием)
+
+# Revenants; Восставшие герои
+. Upon your death there is a 50% chance of creating a revenant on the current level.; После смерти персонажа есть 50% шанс на создание восставшего героя на текущем уровне подземелья.
+. When you go down stairs there is a 50% chance of encountering this revenant.; Когда вы спускаетесь на этот уровень другим персонажем, есть 50% шанс встретить восставшего.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; Восставший будет воскрешённой и враждебной версией вашего бывшего персонажа, сохранившей все оружие и доспехи.
+. They will be as tough as you were at full health and may be quite challenging at times.; Этот восставший будет обладать всеми вашими способностями, и временами вам придётся сложно.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; Если вы умрёте на уровне с восставшим, ваш следующий персонаж может столкнуться сразу с двумя восставшими.
+. Level 1 will never create a revenant.; На первом уровне подземелья восставшие не появляются.
+
+# Fame; Слава
+. Fame is calculated by the following formula.; Слава рассчитывается по следующей формуле:
+/
+` = Maximum Depth x {Multiplier}; = Максимальный уровень подземелья x {Multiplier}
+` + Explored Maps x {Multiplier}; + Разведанные карты x {Multiplier}
+` + Visited Locations x {Multiplier}; + Посещённые локации x {Multiplier}
+` + Discovered Items x {Multiplier};+ Обнаруженные предметы x {Multiplier}
+` + Encountered Entities x {Multiplier}; + Встреченные существа x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + Владение артефактами x {Multiplier}
+` + Earned Experience (capped to {Cap}); + Заработанный опыт (ограничена {Cap})
+` + Development Level x {Multiplier}; + Уровень развития x {Multiplier}
+` + Practised Skills x {Multiplier}; + Изученные навыки x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + Выученные заклинания x {Multiplier} (базовая стоимость в мане х уровень мастерства)
+` + Increased Life x {Multiplier}; + Повышение очков жизни x {Multiplier}
+` + Increased Mana x {Multiplier}; + Повышение очков маны x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + Корректировка атрибутов x {Multiplier}
+` + Acquired Talents x {Multiplier}; + Приобретённые таланты x {Multiplier}
+` + Gained Resistances x {Multiplier}; + Полученные сопротивления x {Multiplier}
+` + Total Inventory Worth (in gold); + Общая ценность инвентаря (в золоте)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; Общая ценность инвентаря ограничена, поэтому не может превышать остальную часть счета.
+
+# Resurrect and continue; Воскресить и продолжить
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; Эта опция полезна когда ваш персонаж погиб смертью, которая вам кажется нечестной.
+. You may learn that your character was not viable and death comes quick again.; Вы также можете понять, что ваш персонаж нежизнеспособен, и смерть быстро наступит снова.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; Вы можете воскрешать персонажа бесконечное число раз, однако каждый раз ваша накопленная слава будет сбрасываться до нуля.
+. Fame achieved subsequent to your resurrection will contribute to your score.; Слава, накопленная после воскрешения, будет учитываться.
+. This is similar to the 'explorer mode' from the original Nethack.; Эта опция похожа на "режим исследователя" из оригинального Nethack.
+
+# Multiplayer; Многопользовательская игра
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Многопользовательская игра основана на технологии «графического Telnet'а» на платформе Invention.
+. This means the game is executed on the server and the user interface is projected to each of the clients.; Это означает, что игра происходит на сервере, а пользовательский интерфейс проецируется на каждого из клиентов.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; Вы можете играть через Wi-Fi, Локальную сеть или Интернет, потому что связь основана на модели TCP/IP.
+. This technology only works well with low latency (less than 30ms ping should be playable).; Эта технология хорошо работает только с низкой задержкой (пинг менее 30 мс).
+/
+. One player needs to be the server and HOST the game.; Один игрок должен выступать в роли сервера и хоста.
+. All other players are clients and JOIN the game.; Все остальные игроки являются клиентами и присоединяются к игре.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.; Игрок в роли сервера должен найти свой IP-адрес в сетевых настройках устройства и поделиться им с игроками-клиентами.
+. Firewall settings and port forwarding may be required when playing over the internet.; Настройки брандмауэра и переадресация портов могут потребоваться при игре через Интернет.
+/
+. The HOST can use 3717 and tap CONNECT.; Хост может использовать порт 3717 и нажать кнопку "Подключиться".
+. The other players JOIN by typing in the host's IP Address and the port.; Остальные игроки присоединяются, вводя IP-адрес хоста и порт.
+. For example: 192.168.1.5:3717; Например : 192.168.1.5:3717
+
+# Translations; Перевод игры
+. The language translations have been contributed by a number of dedicated players.; Языковые переводы были сделаны рядом преданных своему делу игроков.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; Завершение перевода является значительным достижением и требует постоянного обслуживания.
+. The percentage on the language selection indicates the current completeness of the translation.; Процентная часть при выборе языка указывает на текущую полноту перевода.
+. You can also browse the individual translations in the Diagnostics screen.; Вы также можете просмотреть отдельные переводы в разделе диагностики.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; Пожалуйста, свяжитесь с разработчиком, если вы хотите добавить новый перевод, поддержать существующий перевод или внести исправление.
+
+# Master mode; Мастер режим
+. This is a cheat mode for more quickly learning the secrets of Pathos.; Это чит режим, который позволяет значительно быстрее раскрыть секреты игры.
+. Any adventures in this mode will not be tracked in the hall of fame.; Приключения в этом режиме не попадают в Зал Славы.
+/
+- ` | open master console (more commands); ` | открыть мастер консоль (больше команд)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | тьма в этой зоне
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | призвать и быть проглоченным случайным поглотителем
+- shift + F | all adjacent enemies are charmed; shift + F | все ближайшие существа очарованы
+- shift + G | gain 1000 gold; shift + G | получите 1000 золота
+- shift + I | identify all items on the floor; shift + I | опознать все предметы на полу
+- shift + W | jump at will; shift + W | прыжок по желанию
+- shift + D | light this zone; shift + D | осветить эту зону
+- shift + M | reveal the entire map; shift + M | открыть всю карту
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | открыть карту на всех уровнях
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | преобразуйте подземелье (как после прохождения последнего уровня)
+- shift + P | polymorph into any entity; shift + P | превратиться в любое существо
+- shift + T | teleport to a target zone; shift + T | телепорт в указанную зону
+- shift + Z | learn all spells; shift + Z | выучить все заклинания
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | включить/выключить режим автоиспользования всех вещей с пола
+- < | ascend to the previous dungeon level (even when not on a staircase); < | поднимитесь на предыдущий уровень подземелья (даже не будучи на лестнице)
+- > | descend to the next dungeon level (even when not on a staircase); > | спуститесь на следующий уровень подземелья (даже не будучи на лестнице)
+- F5 | refresh the screen; - F5 | обновите экран
+- F9 | quick load; - F9 | быстрая загрузка
+/
+. There are additional manipulations built into the character panel and contextual help.; Также есть другие действия, которые можно найти в панели персонажа и контекстном меню.

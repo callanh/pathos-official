@@ -1,0 +1,447 @@
+# Commands; 커맨드
+. Single tap/left click or arrow keys to move and attack.; 탭, 좌클릭 또는 화살표로 이동하고 공격할 수 있습니다.
+. Long press/right click to operate doors/traps.; 길게 누르거나 우클릭으로 문이나 함정을 조작할 수 있습니다.
+. Double tap to pick up items, traverse stairs or wait one move.; 더블 탭하여 아이템을 집어들거나 계단을 오르내리고, 또는 한 턴을 기다릴 수 있습니다.
+/
+- . | wait one turn (also double tap on self); . | 한 턴 기다리기 (자신을 두 번 탭해도 됨)
+- , | pick up the top item on the floor; , | 바닥의 맨 상단 아이템 집어들기
+- A | toggle log (click the log to expand/collapse); A | 로그 켜고 끄기 (로그를 눌러 펼치기/접기)
+- B | move down-left; B | 왼쪽 아래로 이동하기
+- C | toggle character; C | 캐릭터 켜고 끄기
+- D | re-use last item; D | 마지막 아이템 재사용하기
+- E | mount or dismount your steed; E | 탈 것에 탑승 / 내리기
+- F | toggle floor; F | 층 켜고 끄기
+- G | re-equip last item; G | 마지막 아이템 다시 장비하기
+- H | move left; H | 왼쪽으로 이동하기
+- I | toggle inventory; I | 인벤토리 켜고 끄기
+- J | move down; J | 아래로 이동하기
+- K | move up; K | 위로 이동하기
+- L | move right; L | 오른쪽으로 이동하기
+- M | toggle map; M | 지도 켜고 끄기
+- N | move down-right; N | 오른쪽 아래로 이동하기
+- O | hide from view; O | 시야에서 숨기
+- P | polymorph at will; P | 폴리모프
+- Q | save or quit this game; Q | 저장 혹은 게임 종료하기
+- R | for rest mode to recover life and mana; R | 생명력과 마나를 회복하기 위한 휴식 모드
+- S | for search mode for secret doors and traps; S | 숨겨진 문이나 함정을 찾기 위한 탐색 모드
+- T | teleport at will; T | 텔레포트
+- U | move up-right; U | 오른쪽 위로 이동하기
+- V | kick in a direction; V | 원하는 방향으로 발차기
+- W | jump in a direction (if you have the talent); W | 원하는 방향으로 점프 (해당 재능이 있을 시)
+- X | re-cast last spell; X | 마지막 마법 재시전하기
+- Y | move up-left; Y | 왼쪽 위로 이동하기
+- Z | toggle cast spells (read books to learn spells); Z | 마법 주문 켜고 끄기(마법은 마법서를 읽어서 학습)
+- ' | blink in a direction; ' | 원하는 방향으로 점멸하기
+- ;; | telekinesis in a direction; ;; | 원하는 방향으로 염동력 발동하기
+- > | descend stairs; > | 계단 내려가기
+- < | ascend stairs; < | 계단 오르기
+- / | toggle chat in multiplayer; / | 멀티 플레이에서 채팅 켜고 끄기
+- \ | view knowledge panel; \ | 지식 패널 보기
+- + | zoom in; + | 확대하기
+- - | zoom out; - | 축소하기
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | 왼쪽 빠른 행동 (행동은 shift + 숫자로 변경)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | 오른쪽 빠른 행동 (행동은 shift + 숫자로 변경)
+- INSERT | toggle tunnelling mode; INSERT | 터널링 모드 토글
+- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | 움직이지 않고 발사하기
+- CTRL + arrow | interact with the target without moving; CTRL + arrow | 움직이지 않고 대상과 상호작용하기
+- ENTER | select the top item on the floor; ENTER | 바닥의 최상위 아이템 선택하기
+- ESCAPE | hides open panels and clears your target; ESCAPE | 켜져있는 패널을 닫고 대상 초기화하기
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 열려 있는 대화 취소하고 키보드 포커스 해제하기
+- SPACE | toggle real-time or turn-based; SPACE | 실시간/턴제 모드 켜고 끄기
+- PgUp | switch to previous character; PgUp | 이전 캐릭터로 전환하기
+- PgDown | switch to next character; PgDown | 다음 캐릭터로 전환하기
+- ALT | show labels; ALT | 설명 보기
+- F1 | show this help; F1 | 도움말 보기
+- F6 | quick save; F6 | 퀵 세이브
+- F10 | open side menu; F10 | 사이드 메뉴 열기
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | 전체 화면 켜고 끄기 (데스크탑 Windows에서만)
+
+# General mechanics; 전체적인 규칙
+. You will die.; 당신은 죽게 될 것입니다.
+. But don't despair, you will learn something new each time.; 하지만 좌절하지 마십시오. 당신은 매번 새로운 것을 배울 수 있을 것입니다.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos의 목적은 1층에서 시작해서 40층까지, 그리고 다시 1층으로 돌아와 탈출하기 위해 살아남는 것입니다.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos는 턴제 방식이니까 문제가 생기면 서두르지 말고 천천히 고민하십시오.
+. Each class starts with different items, skills and abilities.; 각각의 직업은 서로 다른 아이템, 기술, 능력치를 가지고 시작하게 됩니다.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 모든 포션, 주문서, 반지, 지팡이, 그리고 몇몇 방어구들의 효과는 모험을 시작할 때 무작위로 결정됩니다.
+. For example, the orange potion will not have a consistent effect across different adventures.; 예를 들어, 주황색 포션은 각각의 모험에서 서로 다른 효과를 나타낼 것입니다.
+
+# Combat; 전투
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; 공격할 때는 d20 주사위를 굴려 1에서 20 사이 임의의 숫자를 반환합니다.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; 주사위 1은 치명적인 빗나감이며, 20은 치명적인 공격입니다.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; 치명적인 빗나감은 (여러 번의 공격이 가능할 때) 해당 턴의 모든 추가적인 공격을 멈추게 합니다.
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; 치명적인 공격은 기본 무기 피해를 두 배로 합니다. 강화와 능력치 보정치는 두배가 되지 않습니다.
+. The strength bonus to damage is doubled when using a two handed weapon.; 피해의 힘 보정치는 쌍수 무기를 사용할 때 두배가 됩니다.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; 치명적인 공격이나 빗나감이 공격하거나 빗나갈 수 있는 유일한 경우라면 이는 일반적인 공격으로 간주됩니다.
+. Otherwise, this number is added to the attack score and compared to the defence score.; 이외의 경우, 이 수치는 아래 공식을 따라서 공격 수치에 합산되어 방어 수치와 비교하여 적용됩니다.
+/
+` (Attack + d20) >= Defence; (공격 + d20) >= 방어
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; 당신의 공격과 방어 수치는 당신의 능력치, 기술, 마법적 강화에 영향을 받습니다.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; 무기의 마법적 강화는 공격 수치에 직접적으로 영향을 주고 데미지 점수에 합산됩니다.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; 당신의 스킬 보너스는 레벨에 기반하고, 모든 직업에서 아래 공식과 같이 적용됩니다.
+/
+` Skill Bonus = (Level / 4) + 1; 스킬 보너스 = (레벨 / 4) + 1
+/
+. Your defence is also affected by your circumstances:; 당신의 방어력은 주변 환경에도 영향을 받습니다.
+/
+` {Mod} defence when blind; {Mod} 방어 - 실명 상태일 때
+` {Mod} defence when invisible; {Mod} 방어 - 투명 상태일 때
+` {Mod} defence when displaced; {Mod} 방어 - 변위 상태일 때
+` {Mod} defence when paralysed or sleeping; {Mod} 방어 - 마비 또는 수면 상태일 때
+` {Mod} defence when stuck; {Mod} 방어 - 갇힘 상태일 때
+` {Mod} defence when punished; {Mod} 방어 - 형벌을 받았을 때
+` {Mod} defence when attacked from concealment; {Mod} 방어 - 은폐한 적으로부터 공격받을 때
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; 중갑을 입으면 숙련되지 않았을 때 {UnskilledPenalty}포인트 만큼, 이외의 경우 {SkilledPenalty}포인트 만큼 느려집니다.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; 평갑을 입으면, 숙력되지 않았을 때 {UnskilledPenalty}포인트 만큼 느려지고, 이외의 경우 속도에 영향을 주지 않습니다.
+. Light armour has no speed penalty if you are unskilled.; 경갑은 숙련되지 않아도 속도에 아무런 문제를 주지 않습니다.
+. Unskilled use of armour also attracts a one point defence penalty.; 미숙한 방어구의 착용은 1포인트 만큼 방어력 페널티가 있습니다.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; 민첩 보정치는 입고 있는 모든 방어구에 숙련되었을 때 방어 수치에 적용됩니다.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; 이 수치는 평갑을 입고 있을 때 최대 +4 만큼, 중갑을 입고 있을 때 최대 +2 만큼 적용됩니다.
+
+# Skills; 스킬
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; 모든 기술은 0에서 2000점 사이로 매겨지며, 다섯 개의 숙련도 레벨로 나누어 구분합니다.
+/
+` (0) Proficient =    0..199; (0) 초보자 =    0..199
+` (1) Specialist =  200..499; (1) 숙련자 =  200..499
+` (2) Expert     =  500..999; (2) 전문가 =  500..999
+` (3) Master     = 1000..1999; (3) 달인 = 1000..1999
+` (4) Champion   = 2000; (4) 챔피언  = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; 숙련도 점수는 무기를 사용하여 타격하거나 방어구를 입고 공격을 회피하는 등의 훈련을 통해 향상됩니다.
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; 무기의 숙련도는 숙련도 레벨만큼의 공격 보너스와 추가 피해를 부여합니다.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; 예를 들어, 중검술의 달인이 양손검을 사용할 때는 공격 수치 +3과 피해 +3의 보정을 받습니다.
+. This bonus to damage is doubled on a critical hit.; 이 보너스 피해는 치명적인 공격일 때 두 배가 됩니다.
+/
+. Armour skill gives you the competency level as a defence bonus.; 방어구의 숙련도는 방어 수치에 숙련도 레벨만큼의 보너스를 줍니다.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; 예를 들어, 중갑의 전문가는 판금 갑옷을 입고 있을 때 방어력 +2만큼의 보정을 받습니다.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; 방어 보너스는 착용하고 있는 각 방어구들의 평균 숙련도 레벨입니다.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; 예를 들어, 중갑에 전문가(2)이지만 경갑에 초보자(0)인 캐릭터가 판금 갑온(중갑)과 소형 방패(경갑)을 착용하면, 방어 보너스는 +1로 계산됩니다.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; 각 학파에 대한 마법 숙련도는 시전 사거리와 효과를 증폭시킵니다.
+. These skills are practised by learning and casting spells.; 이 스킬은 마법의 시전과 학습으로 단련할 수 있습니다.
+
+# Life; 생명력
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; 당신의 초기 생명력은 종족과 직업, 그리고 건강 보정치로 결정됩니다.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; 당신의 레벨이 상승하면, 당신의 생명력은 종족과 직업, 그리고 건강 보정치로 정해진 무작위 수치만큼 증가합니다.
+. There are also magical means to increase your life potential.; 당신의 잠재적인 생명력을 상승시키는 마법적인 수단도 존재합니다.
+. However, life cannot be increased past the maximum potential plus your constitution score.; 하지만, 생명력은 잠재 생명력의 최대치와 건강 수치의 합 이상으로 증가할 수는 없습니다.
+/
+` Initial = Class base + Race base + {CON} modifier; 초기값 = 직업 기반 생명력 + 종족 기반 생명력 + {CON} 보정치
+` Advancement = Class roll + Race roll + {CON} modifier; 증가값 = 직업 생명력 주사위 + 종족 생명력 주사위 + {CON} 보정치
+` Limit = Initial + max(Advancement) x Level + {CON} score; 한계치 = 초기값 + 최대 증가값 x 레벨 + {CON} 수치
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; 생명력은 ({LevelCap} - 레벨 - {CON} 보정치) 턴마다 1씩 자연적으로 회복됩니다.
+. Sleeping improves recovery by halving the number of turns.; 수면 중에는 회복력이 상승해 회복에 필요한 턴수가 절반으로 감소합니다.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; 굶주린 상태에서는 생명력이 {StarvationRecoveryRate} 턴마다 1씩 회복됩니다.
+. Life regeneration guarantees the recovery at one point per turn.; 생명력 재생이 있다면 매 턴 1의 생명력 회복이 보장됩니다.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; {inediate} 식성의 경우 생명력 회복에 드는 턴이 두 배로 증가합니다.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;{inediate}인 동시에 {hunger} 상태라면, 생명력은 자연적으로 회복되지 않습니다. 하지만 {life regeneration}을 가지고 있다면, 생명력은 느린 속도로 회복됩니다.
+. Active {phasing} prevents the natural recovery of life.; 투과가 활성화된 상태에서는 생명력이 자연적으로 회복되지 않습니다.
+
+# Mana; 마나
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; 마나가 고갈됨에 따른 부정적인 효과는 없습니다.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; 당신의 레벨이 상승하면, 당신의 마나는 종족과 직업, 그리고 지혜 보정치로 정해진 무작위 수치만큼 증가합니다.
+. There are also magical means to increase your mana potential.; 당신의 잠재적인 마나를 상승시키는 마법적인 수단도 존재합니다.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; 하지만, 마나는 잠재 마나의 최대치와 지혜 수치의 합 이상으로 증가할 수는 없습니다.
+/
+` Initial = Class base + Race base + {WIS} modifier; 초기값 = 직업 기반 마나 + 종족 기반 마나 + {WIS} 보정치
+` Advancement = Class roll + Race roll + {WIS} modifier; 증가값 = 직업 마나 주사위 + 종족 마나 주사위 + {WIS} 보정치
+` Limit = Initial + max(Advancement) x Level + {WIS} score; 한계치 = 초기값 + 최대 증가값 x 레벨 + {WIS} 수치
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; 마나는 ({LevelCap} - 레벨 - {WIS} 보정치) 턴마다 1씩 자연적으로 회복됩니다.
+. Sleeping improves recovery by halving the number of turns.; 수면 중에는 회복력이 상승해 회복에 필요한 턴수가 절반으로 감소합니다.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; 굶주린 상태에서는 마나가 {StarvationRecoveryRate} 턴마다 1씩 회복됩니다.
+. Mana regeneration guarantees the recovery at one point per turn.; 마나 재생이 있다면 매 턴 1의 마나 회복이 보장됩니다.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; {inediate} 식성의 경우 마나 회복에 드는 턴이 두 배로 증가합니다.
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;{inediate}인 동시에 {hunger} 상태라면, 마나는 자연적으로 회복되지 않습니다. 하지만 {mana regeneration}을 가지고 있다면, 마나는 느린 속도로 회복됩니다.
+. Active {phasing} prevents the natural recovery of mana.; 투과가 활성화된 상태에서는마나가 자연적으로 회복되지 않습니다.
+
+# Nutrition; 영양
+. Maintaining a food supply is important to avoid starving to death.; 굶어 죽는 것을 피하기 위해서는 꾸준히 식량을 섭취하는 것이 중요합니다.
+. In desperate or pragmatic times you can eat corpses.; 만약 위급한 상황이거나 식량을 아끼고 싶다면, 시체를 먹는 것도 방법입니다.
+
+# Corpses; 시체
+. The bodies of your enemies and allies can be a source of nutrition.; 당신의 적과 아군의 시체는 훌륭한 영양분이 될 수도 있습니다.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; 많은 시체는 먹었을 때 병에 걸리거나 피해를 입을 수 있지만, 어떤 시체는 유용한 특성을 부여하기도 합니다.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; 아무리 위급한 상황이라도, 식인은 매우 나쁜 생각이라는 것을 유념하세요.
+
+# Encumbrance; 소지품
+. Everything you pick up adds to your encumbrance and you may become burdened.; 당신이 줍는 모든 것은 당신의 소지품에 추가되고, 너무 많으면 부담될 수도 있습니다.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; 많은 소지품은 이동을 느리게 만들며, 당신은 이 던전의 존재들에게 쉬운 먹잇감으로 만들어 버릴겁니다.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); 소지 무게 = (힘 수치 - 영양 페널티) x {WeightMultiplier} + ({WeightPercentage} 체중)
+
+# Resting; 휴식
+. The camp-fire action button toggles resting.; 캠프파이어 모양 버튼으로 휴식을 켜고 끌 수 있습니다.
+. While resting your life and mana recover at a faster rate.; 휴식하는 동안에는 생명력과 마나가 빠른 속도로 회복됩니다.
+. Companions will rest when you rest.; 당신이 휴식할 때 동료들도 함께 쉽니다.
+. Resting will be interrupted if there is a hostile in your zone.; 만약 주변에 적대적인 개체가 나타나면, 휴식은 종료됩니다.
+
+# Searching; 탐색
+. The eye action button toggles searching.; 눈 모양 버튼으로 탐색을 켜고 끌 수 있습니다.
+. Searching will find secret doors and concealed traps.; 탐색으로 숨겨진 문과 감추어진 함정을 찾아낼 수 있습니다.
+. Companions will search when you search to help find secrets.; 당신이 탐색할 때 동료들도 함께 비밀을 찾기 위해 돕습니다.
+. Searching will be interrupted if there is a hostile in your zone.; 만약 주변에 적대적인 개체가 나타나면, 탐색은 종료됩니다.
+
+# Abilities; 능력치
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; 능력치는 힘, 민첩, 건강, 지능, 지혜, 매력으로 총 여섯 가지가 있습니다.
+. Your starting ability scores is determined by rolling 4d6 six times.; 당신의 초기 능력치는 4d6(6면체 주사위 4개) 주사위를 여섯 번 굴려서 결정됩니다.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; 각 주사위 굴림에서 가장 낮은 수치는 버려서, 3에서 18 사이의 값이 나오게 됩니다.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; 가장 높은 수치들은 도움말 > 직업에서 확인 가능한 당신의 주요 능력치에 무작위로 배정됩니다.
+. Racial limits are then applied as shown in help > races.; 그 다음, 도움말 > 종족에서 확인 가능한 종족 한계치가 적용됩니다.
+. Any points that are reduced by racial limits are transferred to another ability.; 종족 한계치로 인해 감소된 능력치 값은 다른 능력치로 전달됩니다.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma; 카르마
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; 카르마는 몬스터를 죽여서 얻을 수 있고, 신의 은총(기도하기 또는 제단에서 은혜 받기)으로 소모됩니다.
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; 중립 몬스터를 공격하거나 동료를 죽이는 등의 사악한 행동을 하면 카르마를 잃을 수 있습니다.
+. You can gain additional karma by donating gold to a priest at a shrine.; 제단의 사제에게 골드를 기부하여 추가적인 카르마를 얻을 수 있습니다.
+. You can pray at any time by long press/right click on your character.; 캐릭터를 길게 누르거나 우클릭으로 언제든 기도할 수 있습니다.
+. This will cost {Number} karma and has the following effects:; 기도는 {Number}만큼의 카르마를 소모하고, 다음과 같은 효과를 얻습니다:
+/
+` karma >= hopeful; 카르마 >= 희망찬
+`   gain {Number} nutrition when hungry; 배고픔 상태일 때 {Number}만큼의 영양 획득
+`   unafflict;  감염 해제
+`   unpolymorph; 폴리모프 해제
+`   escape from being stuck; 갇힘 상태에서 탈출
+`   remove punishment; 형벌 제거
+/
+` karma >= good; 카르마 >= 좋음
+`   fully healed if less than half life; 체력이 절반 이하면 완전히 회복됨
+`   fully restored if less than half mana; 마나가 절반 이하면 완전히 회복됨
+/
+` karma >= glorious; 카르마 >= 영광스러운
+`   remove blindness; 실명 제거
+`   remove hallucination; 환각 제거
+`   remove rage; 분노 제거
+`   remove sickness; 질병 제거
+/
+` karma >= exalted; 카르마 >= 숭고한
+`   remove one curse; 저주 하나 제거
+`   raise dead for one loyal companion; 충실한 동료 하나 부활
+
+# Diets; 식성
+. Entities have different diets that allow them to eat specific materials.; 개체들은 서로 다른 식성을 가지고 있어서, 특정한 재질을 먹을 수 있도록 해줍니다.
+/
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
+
+# Spells; 주문
+. Spells are learned by studying from magical books found in the dungeon.; 주문은 던전에서 발견할 수 있는 마법서를 읽어서 학습할 수 있습니다.
+. Any class can learn spells but only the skilled will use their mana efficiently.; 모든 직업이 주문을 배울 수 있지만, 숙련된 상태에서만 마나를 효율적으로 사용할 수 있습니다.
+
+# Gold; 골드
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; 던전에서 다양한 목적으로 사용될 수 있는 골드는, 소지품에서 무게를 더하지 않습니다.
+. Gold can be traded for items from merchants or donated to priests for karma.; 골드로 상인에게서 아이템을 구매할 때 쓰거나 사제에게 기부하여 카르마를 얻을 수 있습니다.
+
+# Companions; 동료
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; 가축들은 그들이 좋아하는 음식을 먹여서 길들일 수 있습니다. (하지만 그들은 배고픔을 느끼진 않습니다.)
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; 개와 고양이는 저주받은 아이템이나 시설물(분수 등) 위에 서면 야옹 / 멍멍 하고 짖습니다.
+. You can mount some types of companions and ride around the dungeon.; 어떤 종류의 동료는 타고 다닐 수 있습니다.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; 당신의 탈것은 종종 대신 공격하거나 공격의 대상이 될 수 있습니다.
+. Your steed will be the first into any traps so take good care of their well-being.; 모든 종류의 함정은 탈것에게 먼저 발동하므로, 건강을 잘 챙겨주십시오.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 숙련된 기승자는 탈것의 공격과 방어에 숙련도 보너스를 더해줍니다.
+. A steed is useful when you are burdened and it is strong enough to take your load.; 탈것은 당신의 짐의 무게를 짊어질 만큼 충분히 힘이 있어서, 짐이 부담될 때 유용합니다.
+. To dismount your steed you need to long press/right click on your character.; 탈것에서 내리려면 캐릭터를 길게 누르거나 우클릭 하세요.
+
+# Engulfing; 삼키기
+. Some entities can swallow or engulf other entities.; 어떤 개채들은 다른 개체를 집어삼키거나 사로잡을 수 있습니다.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; 삼켜지면 매 턴마다 데미지를 받고 뱉어질 때까지 발버둥칠 수 있습니다.
+. Alternatively, there are many mechanisms which can be used to escape.; 아니면, 탈출하기 위해 사용할 수 있는 여러 방법이 있습니다.
+. It is impossible to fight with your equipped weapons when swallowed.; 삼켜진 상태에서 당신이 장비한 무기로 싸울 수 없습니다.
+. If you cast when engulfed the spell will hit your engulfer.; 삼켜진 상태에서 주문을 시전하면, 삼킨 대상이 맞게됩니다.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; 하지만, 광선 종류는 벽에 튕겨서 돌아와 삼킨 대상과 당신이 모두 맞게 됩니다.
+
+# Spawning; 생성
+. Monsters will randomly spawn into areas outside your current zone.; 몬스터들은 무작위로 당신의 현재 영역 밖의 공간에서 생성됩니다.
+. The rate of spawning increases as you descend deeper into the dungeon.; 던전의 아래로 더 깊이 내려갈 수록, 몬스터의 생성률은 점점 증가합니다.
+. The talent of aggravation also increases the spawn rates for monsters.; 도발 특성 또한 몬스터의 생성률을 증가시킵니다.
+
+# Polymorph; 폴리모프
+. Transform into another entity with all the advantages or disadvantages that brings.; 다른 개체로 변하게 되며, 해당 개체의 모든 장점과 단점도 함께 적용됩니다.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; 예를 들어, 드래곤은 손이 없지만 날 수 있고 치명적인 에너지 광선을 내뿜을 수 있습니다.
+. When you perish in your polymorphed form you will often revert to your original form.; 폴리모프된 상태에서 죽음에 이르면, 가끔 원래 형태로 되살아 납니다.
+. You can transform into the entity of your choice when you have polymorph control.; 폴리모프 통제가 있으면 원하는 개체로 폴리모프할 수 있습니다.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; 폴리모프 통제로 선택할 수 있는 개체는 당신이 한번 죽였던 개체들 뿐이고, 매 변신은 영양을 소모합니다.
+. To access polymorph-at-will you need to long press/right click on your character.; 캐릭터를 길게 누르거나 우클릭하여 원하는 대로 폴리모프할 수 있습니다.
+
+# Locks; 자물쇠
+. Doors and containers can be locked and possibly trapped.; 문이나 보관함은 잠겨있거나 함정이 설치되어 있을 수 있습니다.
+. You can kick locks to break them but this will trigger any trap.; 발로 차서 자물쇠를 부술 수도 있지만, 이 방식은 항상 함정을 발동시킵니다.
+. Items such as skeleton keys and lock picks can be used to unlock.; 만능 열쇠나 락픽같은 아이템으로 잠금을 해제할 수 있습니다.
+. These items can break and the chance is influenced by your competency with locks.; 이 아이템들은 부서질 수 있는데, 그 확률은 당신의 보안 숙련도에 비례합니다.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; 저주받은 아이템은 부서질 확률이 두 배이며 축복받은 경우에는 부서질 확률이 반이 됩니다.
+. There are other magical items and spells that can be used to unlock.; 잠금 해제에 사용할 수 있는 마법 아이템이나 주문도 있습니다.
+
+# Traps; 함정
+. Traps have a difficulty rating that reflects the lethality of the device.; 함정은 그 위험도를 반영하는 난이도 등급이 있습니다.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; 이 난이도 등급은 함정이 생길 수 있는 던전의 최소 층을 의미합니다.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 함정 해제의 확률은 장치의 난이도 대비 당신의 숙련도와 민첩 보정치로 계산됩니다.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; 만약 실수, 실명, 스턴, 혼란, 환각 등 상태이상에 걸려 있으면, 함정 해제가 더욱 어렵게 됩니다.
+. Untrapping requires you to move into the square.; 함정 해제 행동을 위해서는 해당 함정 위로 움직여야만 합니다.
+. A failure to untrap will cause it to be triggered.; 함정 해제에 실패하면 해당 함정을 발동시킵니다.
+
+# Teleport; 텔레포트
+. Teleportation transports your character around the current dungeon level.; 텔레포트는 당신의 캐릭터를 현재 던전 층의 어딘가로 보내줍니다.
+. When uncontrolled, this is a random event that may help or hinder your journey.; 텔레포트 통제가 없으면 이것은 당신의 여정에 도움이 되거나 방해가 되는, 예측할 수 없는 일이 될 것입니다.
+. Controlled teleportation allows you to select on the map your destination location.; 텔레포트 통제가 있다면 맵에서 선택한 위치로 이동할 수 있습니다.
+. However, each teleportation will cost you nutrition so use it wisely.; 하지만, 각 텔레포트는 영양을 소모하게 되니 현명하게 사용하세요.
+. To access teleport-at-will you need to long press/right click on your character.; 캐릭터를 길게 누르거나 우클릭으로 원하는 대로 텔레포트 할 수 있습니다.
+
+# Dual wielding; 쌍수 장비
+. Dual wielding allows the character to hold two single handed weapons.; 쌍수 장비로 캐릭터가 두개의 한손 무기를 장비할 수 있습니다.
+. This allows for two attacks instead of one but the chance of hitting is reduced.; 이것은 캐릭터가 한번이 아니라 두번의 공격을 할 수 있도록 하지만, 명중 확률은 감소합니다.
+. If you are skilled then it is only a -2 to attack on the offhand.; 만약 당신이 쌍수 장비 스킬이 있다면 부무장만 공격 -2로 계산됩니다.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; 아니라면, 주무장 공격 -2 이며 부무장 공격 -4로 계산됩니다.
+
+# Crafting; 제작
+. Items can be scrapped into their raw essence and base material on a workbench.; 아이템은 작업대에서 각각의 원료와 정수로 분해될 수 있습니다.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; 정수는 창조를 위한 기본요소로, 마법 또는 일반 아이템에서 추출할 수 있습니다.
+. New items can be crafted on a workbench using enough of the base material and essence.; 충분한 양의 원료와 정수를 사용해서 작업대에서 새로운 아이템을 제작할 수 있습니다.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 작업대는 약간의 잔여 원료를 가지고 생성됩니다. (정수 0 - 10, 6개의 무작위 원료 10 - 200).
+. Materials are not transferable between workbenches.; 작업대 간의 원료는 옮길 수 없습니다.
+/
+. The crafting skill influences how much material you gain when scrapping.; 제작 숙련도 분해할 때 습득하는 원료의 양에 영향을 줍니다.
+. That is, when unskilled you recover only 50% of the scrapped material.; 이는, 미숙한 상태에서는 분해 시 50%의 원료만 얻을 수 있다는 뜻입니다.
+/
+` Unskilled  =  50%; 미숙함 =  50%
+` Proficient =  60%; 초보자 =  60%
+` Specialist =  70%; 숙련자 =  70%
+` Expert     =  80%; 전문가 =  80%
+` Master     =  90%; 달인  =  90%
+` Champion   = 100%; 챔피언 = 100%
+/
+. The crafting skill influences how much material you need when crafting.; 제작 스킬은 제작할 때 필요한 원료의 양에 영향을 줍니다.
+. That is, when unskilled you need 150% of the required material to craft an item.; 이는, 미숙한 상태에서는 제작에 150%의 원료가 필요하다는 뜻입니다.
+/
+` Unskilled  = 150%; 미숙함 = 150%
+` Proficient = 140%; 초보자 = 140%
+` Specialist = 130%; 숙력자 = 130%
+` Expert     = 120%; 전문가 = 120%
+` Master     = 110%; 달인  = 110%
+` Champion   = 100%; 챔피언 = 100%
+
+# Enchantment; 강화
+. Weapons and armour have a modifier that can be changed with enchantment magic.; 무기와 방어구는 강화 마법을 통해 달라지는 보정치를 가질 수 있습니다.
+. The modifier is limited to between {Min} and {Max}.; 이 보정치는 {Min}에서 {Max} 사이의 값으로 제한됩니다.
+. A modifier of +0 is a normal, mundane item.; 일반적인 아이템의 보청치는 +0 입니다.
+. Modifiers on armour apply to your defence score.; 방어구의 보정치는 방어 수치에 영향을 줍니다.
+. Modifiers on weapons apply to your attack and damage scores.; 무기의 보정치는 공격 수치와 피해량에 영향을 줍니다.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; 만약 보정치의 {Min}이나 {Max}를 넘어서 변경하려고 하면, 아이템은 파괴됩니다.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 유물의 경우 {Modifier}까지 강화되고 이를 초과할 경우 보정치가 0으로 초기화됩니다.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 또한, 주석 호루라기를 강화하면 마법 호루라기가 되는 식으로 아이템을 업그레이드 할 수 있습니다.
+
+# Punishments; 형벌
+. This severe curse can be gained by magical means or misconduct.; 이 가혹한 저주는 마법적인 행동이나 위법행위로 인해 얻어집니다.
+. There is a chance of being punished each time your karma dips below zero.; 카르마가 0 이하로 내려갈 때 마다, 형벌을 받을 확률이 있습니다.
+. Only one punishment can be active at one time.; 한번에 단 하나의 형벌만 받을 수 있습니다.
+. A punishment can be released with any remove curse magic.; 형벌은 저주 해제 마법으로 해제될 수 있습니다.
+
+# Charming & taming; 매혹과 길들이기
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; 당신과 대상의 레벨 차이가 충성도 지속시간 증감의 비율로 적용됩니다.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; 예를 들어, 당신의 레벨이 10이고 20레벨의 개체를 매혹한다면, 충성도는 표시된 기간의 절반에 불과하게 됩니다.
+. The charisma bonus for you and the target entity also modifies this relative percentage.; 당신과 대상의 매력 보너스 또한 이 비율을 보정합니다.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; 예를들어, 4레벨에 매력이 18(+4)라면 레벨이 8로 간주되어 매혹을 사용할 수 있습니다.
+
+# Death; 죽음
+. There are seven mechanics for death:; 죽음에는 일곱 가지 방식이 있습니다:
+/
+* life points reaches zero; 생명력이 0에 도달함
+* any ability score reaches zero; 어떤 능력치든 0에 도달함
+* starvation; 굶주림
+* death effect (eg. wand of death); 즉사 효과(예 - 죽음의 지팡이)
+* genocide; 학살
+* incarceration (eg. turned into a statue); 감금 (예 - 석상으로 변함)
+* decapitation (eg. vorpal attacks); 참수 (예 - 보팔 공격)
+
+# Revenants; 망령
+. Upon your death there is a 50% chance of creating a revenant on the current level.; 죽었을 때 50% 확률로 현재 레벨에 망령을 생성하게 됩니다.
+. When you go down stairs there is a 50% chance of encountering this revenant.; 해당 층으로 내려가게 되면, 당신은 50% 확률로 해당 망령과 조우할 수 있습니다.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; 이 망령은 예전의 당신이 되살아나서 모든 무기와 방어구를 착용한 채로 적대적으로 행동합니다.
+. They will be as tough as you were at full health and may be quite challenging at times.; 이 망령들은 이전 당신의 최대 체력으로 경우에 따라서 꽤 까다로울 수 있습니다.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; 망령이 있는 층에서 죽게 되면 다음 캐릭터가 두 명의 망령과 만날 가능성도 있습니다.
+. Level 1 will never create a revenant.; 1층에서는 망령이 생성되지 않습니다.
+
+# Fame; 명성
+. Fame is calculated by the following formula.; 명성은 아래의 공식에 따라 계산됩니다.
+/
+` = Maximum Depth x {Multiplier}; = 도달한 최대 깊이 x {Multiplier}
+` + Explored Maps x {Multiplier}; + 탐험한 지역 x {Multiplier}
+` + Visited Locations x {Multiplier}; + 방문한 장소 x {Multiplier}
+` + Discovered Items x {Multiplier}; + 발견한 아이템 x {Multiplier}
+` + Encountered Entities x {Multiplier}; + 조우한 개체 x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + 소유한 유물 x {Multiplier}
+` + Earned Experience (capped to {Cap}); + 획득한 경험치 (capped to {Cap})
+` + Development Level x {Multiplier}; + 달성한 레벨 x {Multiplier}
+` + Practised Skills x {Multiplier}; + 숙련도 x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + 학습한 주문 x {Multiplier} (기본 마나 소모량의 합 x 마스터리 레벨)
+` + Increased Life x {Multiplier}; + 증가한 생명력 x {Multiplier}
+` + Increased Mana x {Multiplier}; + 증가한 마나 x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + 조정한 능력치 x {Multiplier}
+` + Acquired Talents x {Multiplier}; + 습득한 재능 x {Multiplier}
+` + Gained Resistances x {Multiplier}; + 습득한 저항 x {Multiplier}
+` + Total Inventory Worth (in gold); + 총 소지품의 가치 (골드로)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; 총 소지품의 가치는 상한선이 있어 나머지 점수 합을 초과할 수 없습니다.
+
+# Resurrect and continue; 부활과 계속하기
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; 이 기능은 선택사항으로 운이 없거나 불합리하게 당신의 캐릭터가 죽은 경우 도움이 될 수 있습니다.
+. You may learn that your character was not viable and death comes quick again.; 당신은 당신의 캐릭터가 살 수 없었으며, 죽음은 빠르게 찾아온다는 것을 배울 수 있을 겁니다.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; 원한다면 계속해서 부활할 수 있지만, 당신이 획득한 명성은 0으로 초기화될 것입니다.
+. Fame achieved subsequent to your resurrection will contribute to your score.; 부활 이후에 쌓은 명성은 이후에 당신의 점수에 반영됩니다.
+. This is similar to the 'explorer mode' from the original Nethack.; 이것은 오리지널 넷핵의 '모험가 모드(explorer mode)'와 유사합니다.
+
+# Multiplayer; 멀티플레이어
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; 멀티플레이어는 Invention platform의 'graphical telnet' 기술에 기반합니다.
+. This means the game is executed on the server and the user interface is projected to each of the clients.; 이 방식은 게임이 서버에서 실행되고, 유저 인터페이스는 각 사용자의 클라이언트(장비)에 나타납니다.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; 전송 방식은 TCP/IP에 기반하기 때문에, 와이파이 / LAN 그리고 인터넷으로 플레이 할 수 있습니다.
+. This technology only works well with low latency (less than 30ms ping should be playable).; 이 방식은 응답 지연(latency)이 낮은 경우에만 잘 작동합니다 (30ms 이하의 핑이 플레이하기에 적절합니다).
+/
+. One player needs to be the server and HOST the game.; 한명의 플레이어가 서버가 되어 게임의 호스트(HOST)가 됩니다다.
+. All other players are clients and JOIN the game.; 다른 플레이어들은 클라이언트로 게임에 참여(JOIN)합니다.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.; 서버 플레이어는 자신 기기의 네트워크에 설정된 IP 주소를 찾아내서 클라이언트 플레이어들에게 공유해야 합니다.
+. Firewall settings and port forwarding may be required when playing over the internet.; 인터넷으로 플레이하려면 방화벽 설정과 포트포워딩이 필요할 수 있습니다.
+/
+. The HOST can use 3717 and tap CONNECT.; 예를 들어, 호스트(HOST)는 3717(포트)를 사용하여 연결(CONNECT)을 누릅니다.
+. The other players JOIN by typing in the host's IP Address and the port.; 그러면 다른 플레이어는 호스트의 IP주소와 포트를 입력하여 참여(JOIN)할 수 있습니다.
+. For example: 192.168.1.5:3717; 예 - 192.168.1.5:3717
+
+# Translations; 번역
+. The language translations have been contributed by a number of dedicated players.; 번역은 다수의 헌신적인 플레이어들의 기여로 이루어져왔습니다.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; 완전한 번역이 주 목표이며, 이의 지속적인 유지도 필요합니다.
+. The percentage on the language selection indicates the current completeness of the translation.; 언어 선택에 표시된 퍼센트는 현재 각 언어의 번역 완성도를 나타냅니다.
+. You can also browse the individual translations in the Diagnostics screen.; 또한, 진단 화면에서 개별적인 번역의 진행도도 확인하실 수 있습니다.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; 새로운 번역의 기여와 기존 번역의 유지 및 보수, 오류 수정을 원하신다면 개발자에게 연락해주시기 바랍니다.
+
+# Master mode; 마스터 모드
+. This is a cheat mode for more quickly learning the secrets of Pathos.; 이것은 Pathos의 비밀을 빠르게 학습하기 위한 치트 모드입니다.
+. Any adventures in this mode will not be tracked in the hall of fame.; 이 모드에서는 어떤 모험도 명예의 전당에 기록되지 않습니다.
+/
+- ` | open master console (more commands); ` | 마스터 콘솔 열기 (더 많은 커맨드)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 현재 지역을 어둡게 하기
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | 삼킬 수 있는 임의의 개체를 소환하여 삼켜지기
+- shift + F | all adjacent enemies are charmed; shift + F | 주변의 모든 적들을 매혹하기
+- shift + G | gain 1000 gold; shift + G | 1000골드 획득하기
+- shift + I | identify all items on the floor; shift + I | 바닥에 있는 모든 아이템 식별하기
+- shift + W | jump at will; shift + W | 점프하기
+- shift + D | light this zone; shift + D | 현재 지역을 밝히기
+- shift + M | reveal the entire map; shift + M | 전체 지도 드러내기
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 모든 층의 지도 드러내기
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | 다른 던전으로 워프함 (최종 맵이 변형됨)
+- shift + P | polymorph into any entity; shift + P | 어떤 개체로든 폴리모프
+- shift + T | teleport to a target zone; shift + T | 선택한 위치로 텔레포트
+- shift + Z | learn all spells; shift + Z | 모든 마법 학습하기
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | 자동 사용 모드 (밟고 있는 사각형 위의 모든 아이템 사용)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | 이전 층으로 올라가기 (계단이 없더라도)
+- > | descend to the next dungeon level (even when not on a staircase); > | 다음 층으로 내려가기 (계단이 없더라도)
+- F5 | refresh the screen; F5 | 화면 새로고침
+- F9 | quick load; F9 | 빠른 불러오기
+/
+. There are additional manipulations built into the character panel and contextual help.; 캐릭터 창과 도움말에 추가적인 조작이 있습니다.

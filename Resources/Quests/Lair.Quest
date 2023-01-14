@@ -1,0 +1,1650 @@
+﻿quest "Medusa Lair"
+
+map [Medusa Lair Entrance] difficulty 0 40 x 40
+character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[000008]@[000009]@[000010]@[000011]@[000012]@[000013]@[000014]@[000015]@[000016]@[000017]@[000018];
+(11,04)! |[stone wall] topleftcorner permanent
+(12,04)! |[stone wall] horizontal permanent
+(13,04)! |[stone wall] toprightcorner permanent
+(11,05)! |[stone wall] vertical permanent
+(12,05)! .[stone corridor]
+(13,05)! |[stone wall] vertical permanent
+(11,06)! |[stone wall] vertical permanent
+(12,06)! .[stone corridor]
+(13,06)! |[stone wall] vertical permanent
+(15,06)  |[stone wall] topleftcorner permanent
+(16,06)  |[stone wall] horizontal permanent
+(17,06)  |[stone wall] horizontal permanent
+(18,06)  |[stone wall] horizontal permanent
+(19,06)  |[stone wall] horizontal permanent
+(20,06)  |[stone wall] horizontal permanent
+(21,06)  |[stone wall] horizontal permanent
+(22,06)  |[stone wall] horizontal permanent
+(23,06)  |[stone wall] horizontal permanent
+(24,06)  |[stone wall] horizontal permanent
+(25,06)  |[stone wall] horizontal permanent
+(26,06)  |[stone wall] horizontal permanent
+(27,06)  |[stone wall] horizontal permanent
+(28,06)  |[stone wall] horizontal permanent
+(29,06)  |[stone wall] toprightcorner permanent
+(08,07)  |[stone wall] topleftcorner permanent
+(09,07)  |[stone wall] horizontal permanent
+(10,07)  |[stone wall] horizontal permanent
+(11,07)! |[stone wall] bottomrightcorner permanent
+(12,07)! .[stone floor]
+(13,07)! |[stone wall] bottomleftcorner permanent
+(14,07)  |[stone wall] horizontal permanent
+(15,07)! |[stone wall] bottomrightcorner permanent .[stone floor]
+(16,07)! .[stone floor]
+(17,07)! .[stone floor]
+(18,07)! .[stone floor]
+(19,07)! .[stone floor]
+(20,07)! .[stone floor]
+(21,07)! .[stone floor]
+(22,07)! .[stone floor]
+(23,07)! .[stone floor]
+(24,07)! .[water]
+(25,07)! .[water]
+(26,07)! .[water]
+(27,07)! .[water]
+(28,07)! .[water]
+(29,07)  |[stone wall] bottomleftcorner permanent
+(30,07)  |[stone wall] horizontal permanent
+(31,07)  |[stone wall] toprightcorner permanent
+(08,08)  |[stone wall] vertical permanent
+(09,08)! .[stone floor]
+(10,08)! .[stone floor]
+(11,08)! .[stone floor]
+(12,08)! .[stone floor]
+(13,08)! .[stone floor]
+(14,08)! .[stone floor]
+(15,08)! .[stone floor]
+(16,08)! .[water]
+(17,08)! .[water]
+(18,08)! .[water]
+(19,08)! .[water]
+(20,08)! .[water]
+(21,08)! .[water]
+(22,08)! .[water]
+(23,08)! .[water]
+(24,08)! .[water]
+(25,08)! .[water]
+(26,08)! .[water]
+(27,08)! .[water]
+(28,08)! .[water]
+(29,08)! .[water]
+(30,08)  .[water]
+(31,08)  |[stone wall] bottomleftcorner permanent
+(32,08)  |[stone wall] toprightcorner permanent
+(08,09)  |[stone wall] vertical permanent
+(09,09)! .[stone floor]
+(10,09)! .[water] @[000014]
+(11,09)! .[stone corridor]
+(12,09)! .[stone corridor]
+(13,09)! .[stone corridor]
+(14,09)! .[water]
+(15,09)! .[water] @[000017]
+(16,09)! .[water]
+(17,09)! .[water]
+(18,09)! .[water]
+(19,09)! .[water]
+(20,09)! .[water]
+(21,09)! .[water]
+(22,09)! .[water]
+(23,09)! .[water]
+(24,09)! .[water]
+(25,09)! .[water]
+(26,09)! .[water]
+(27,09)! .[water]
+(28,09)! .[water]
+(29,09)! .[water]
+(30,09)! .[water]
+(31,09)  .[water]
+(32,09)  |[stone wall] bottomleftcorner permanent
+(33,09)  |[stone wall] toprightcorner permanent
+(08,10)  |[stone wall] vertical permanent
+(09,10)! .[water]
+(10,10)! .[water]
+(11,10)! .[water]
+(12,10)! .[stone corridor]
+(13,10)! .[water]
+(14,10)! .[water]
+(15,10)! .[water]
+(16,10)! .[water]
+(17,10)! .[water]
+(18,10)! .[water]
+(19,10)! .[water]
+(20,10)! .[water]
+(21,10)! .[water]
+(22,10)! .[water]
+(23,10)! .[water]
+(24,10)! .[water]
+(25,10)! .[water]
+(26,10)! .[water]
+(27,10)! .[water]
+(28,10)! .[water]
+(29,10)! .[water]
+(30,10)! .[water]
+(31,10)! .[water]
+(32,10)  .[water]
+(33,10)  |[stone wall] bottomleftcorner permanent
+(34,10)  |[stone wall] horizontal permanent
+(35,10)  |[stone wall] toprightcorner permanent
+(07,11)  |[stone wall] topleftcorner permanent
+(08,11)  |[stone wall] bottomrightcorner permanent
+(09,11)! .[water]
+(10,11)! .[water] @[000015]
+(11,11)! .[water]
+(12,11)! .[water] #[wooden bridge] horizontal
+(13,11)! .[water] @[000016]
+(14,11)! .[water]
+(15,11)! .[water]
+(16,11)! .[water] @[000018]
+(17,11)! .[water]
+(18,11)! .[water] @[000002]
+(19,11)! .[water]
+(20,11)! .[water]
+(21,11)! .[water]
+(22,11)! .[water]
+(23,11)! .[water]
+(24,11)! .[water]
+(25,11)! .[water]
+(26,11)! .[water]
+(27,11)! .[water]
+(28,11)! .[water]
+(29,11)! .[water]
+(30,11)! .[water]
+(31,11)! .[water]
+(32,11)! .[water]
+(33,11)  .[water]
+(34,11)  .[water]
+(35,11)  |[stone wall] bottomleftcorner permanent
+(36,11)  |[stone wall] toprightcorner permanent
+(06,12)  |[stone wall] topleftcorner permanent
+(07,12)  |[stone wall] bottomrightcorner permanent
+(08,12)! .[water]
+(09,12)! .[water]
+(10,12)! .[water]
+(11,12)! .[water]
+(12,12)! .[water] #[wooden bridge] horizontal
+(13,12)! .[water]
+(14,12)! .[water]
+(15,12)! .[water]
+(16,12)! .[water]
+(17,12)! .[water]
+(18,12)! .[water]
+(19,12)! .[water]
+(20,12)! .[water]
+(21,12)! .[water]
+(22,12)! .[water]
+(23,12)! .[stone floor]
+(24,12)! .[stone floor]
+(25,12)! .[stone floor]
+(26,12)! .[water]
+(27,12)! .[water]
+(28,12)! .[water]
+(29,12)! .[water]
+(30,12)! .[water]
+(31,12)! .[water]
+(32,12)! .[water]
+(33,12)! .[water]
+(34,12)! .[water]
+(35,12)  .[water]
+(36,12)  |[stone wall] vertical permanent
+(06,13)  |[stone wall] vertical permanent
+(07,13)! .[water]
+(08,13)! .[water]
+(09,13)! .[water]
+(10,13)! .[water]
+(11,13)! .[water]
+(12,13)! .[water] #[wooden bridge] horizontal
+(13,13)! .[water]
+(14,13)! .[water]
+(15,13)! .[water]
+(16,13)! .[water]
+(17,13)! .[water]
+(18,13)! .[water]
+(19,13)! .[water]
+(20,13)! .[water]
+(21,13)! .[water]
+(22,13)! .[water]
+(23,13)! .[stone floor]
+(24,13)! .[stone corridor] _[fountain]
+(25,13)! .[stone floor]
+(26,13)! .[stone floor] #[wooden bridge] horizontal
+(27,13)! .[stone floor] #[wooden bridge] horizontal
+(28,13)! .[stone floor] #[wooden bridge] horizontal
+(29,13)! .[stone floor] #[wooden bridge] horizontal
+(30,13)! .[stone floor] #[wooden bridge] horizontal
+(31,13)! .[water]
+(32,13)! .[water]
+(33,13)! .[water]
+(34,13)! .[water]
+(35,13)  .[water]
+(36,13)  |[stone wall] vertical permanent
+(05,14)  |[stone wall] topleftcorner permanent
+(06,14)  |[stone wall] bottomrightcorner permanent
+(07,14)! .[water]
+(08,14)! .[water]
+(09,14)! .[water]
+(10,14)! .[water]
+(11,14)! .[water]
+(12,14)! .[water] #[wooden bridge] horizontal
+(13,14)! .[water] #[wooden bridge] horizontal
+(14,14)! .[water]
+(15,14)! .[water] #[wooden bridge] horizontal
+(16,14)! .[water]
+(17,14)! .[water]
+(18,14)! .[water]
+(19,14)! .[water]
+(20,14)! .[water]
+(21,14)! .[water]
+(22,14)! .[water]
+(23,14)! .[stone floor]
+(24,14)! .[stone floor]
+(25,14)! .[stone floor]
+(26,14)! .[water]
+(27,14)! .[water]
+(28,14)! .[water]
+(29,14)! .[water]
+(30,14)! .[stone floor] #[wooden bridge] horizontal
+(31,14)! .[water]
+(32,14)! .[water]
+(33,14)! .[water]
+(34,14)! .[water]
+(35,14)  .[water]
+(36,14)  |[stone wall] vertical permanent
+(05,15)  |[stone wall] vertical permanent
+(06,15)! .[water]
+(07,15)! .[water]
+(08,15)! .[water]
+(09,15)! .[water] @[000004]
+(10,15)! .[water]
+(11,15)! .[water]
+(12,15)! .[water]
+(13,15)! .[water]
+(14,15)! .[water]
+(15,15)! .[water] #[wooden bridge] horizontal
+(16,15)! .[water]
+(17,15)! .[water]
+(18,15)! .[water]
+(19,15)! .[water] @[000003]
+(20,15)! .[water]
+(21,15)! .[water]
+(22,15)! .[water]
+(23,15)! .[water]
+(24,15)! .[water] #[wooden bridge] horizontal
+(25,15)! .[water]
+(26,15)! .[water]
+(27,15)! .[water]
+(28,15)! .[water]
+(29,15)! .[water]
+(30,15)! .[stone floor] #[wooden bridge] horizontal
+(31,15)! .[water]
+(32,15)! .[water]
+(33,15)! .[water]
+(34,15)! .[water]
+(35,15)  .[water]
+(36,15)  |[stone wall] bottomleftcorner permanent
+(37,15)  |[stone wall] toprightcorner permanent
+(05,16)  |[stone wall] vertical permanent
+(06,16)! .[water]
+(07,16)! .[water]
+(08,16)! .[water]
+(09,16)! .[water]
+(10,16)! .[water]
+(11,16)! .[water]
+(12,16)! .[water]
+(13,16)! .[water]
+(14,16)! .[water]
+(15,16)! .[water]
+(16,16)! .[water]
+(17,16)! .[water]
+(18,16)! .[water]
+(19,16)! .[water]
+(20,16)! .[water]
+(21,16)! .[water]
+(22,16)! .[water]
+(23,16)! .[water]
+(24,16)! .[water]
+(25,16)! .[water]
+(26,16)! .[water]
+(27,16)! .[water]
+(28,16)! .[water]
+(29,16)! .[water]
+(30,16)! .[stone floor] #[wooden bridge] horizontal ^[water trap] 0
+(31,16)! .[water]
+(32,16)! .[water]
+(33,16)! .[water]
+(34,16)! .[water]
+(35,16)  .[water]
+(36,16)  .[water]
+(37,16)  |[stone wall] vertical permanent
+(05,17)  |[stone wall] vertical permanent
+(06,17)! .[water]
+(07,17)! .[water]
+(08,17)! .[water]
+(09,17)! .[water]
+(10,17)! .[water]
+(11,17)! .[water]
+(12,17)! .[water]
+(13,17)! .[water]
+(14,17)! .[water]
+(15,17)! .[water]
+(16,17)! .[water]
+(17,17)! .[water]
+(18,17)! .[water]
+(19,17)! .[water]
+(20,17)! .[water]
+(21,17)! .[water]
+(22,17)! .[water]
+(23,17)! .[water]
+(24,17)! .[water]
+(25,17)! .[water]
+(26,17)! .[water]
+(27,17)! .[water] @[000011]
+(28,17)! .[water]
+(29,17)! .[water]
+(30,17)! .[marble floor] ^[water trap] 0 revealed
+(31,17)! .[marble floor]
+(32,17)! |[stone wall] endup .[water]
+(33,17)! .[water]
+(34,17)! .[water] @[000010]
+(35,17)  .[water]
+(36,17)  .[water]
+(37,17)  |[stone wall] bottomleftcorner permanent
+(38,17)  |[stone wall] toprightcorner permanent
+(05,18)  |[stone wall] bottomleftcorner permanent
+(06,18)  |[stone wall] toprightcorner permanent
+(07,18)! .[water]
+(08,18)! .[water]
+(09,18)! .[water]
+(10,18)! .[water]
+(11,18)! .[water]
+(12,18)! .[water]
+(13,18)! .[water] @[000001]
+(14,18)! .[water]
+(15,18)! .[water] #[wooden bridge] horizontal
+(16,18)! .[water]
+(17,18)! .[water]
+(18,18)! .[water]
+(19,18)! .[water]
+(20,18)! .[water]
+(21,18)! .[water] @[000006]
+(22,18)! .[water]
+(23,18)! .[water]
+(24,18)! .[water] #[wooden bridge] horizontal
+(25,18)! .[water]
+(26,18)! .[water]
+(27,18)! .[water]
+(28,18)! .[water]
+(29,18)! .[water]
+(30,18)! .[water]
+(31,18)! .[marble floor]
+(32,18)! |[stone wall] vertical .[water]
+(33,18)! .[water]
+(34,18)! .[water]
+(35,18)  .[water]
+(36,18)  .[water]
+(37,18)  .[water]
+(38,18)  |[stone wall] vertical permanent
+(06,19)  |[stone wall] bottomleftcorner permanent
+(07,19)  |[stone wall] toprightcorner permanent
+(08,19)! .[dirt floor] ^[bear trap] 0
+(09,19)! .[dirt floor] ^[bear trap] 0
+(10,19)! .[water]
+(11,19)! .[water]
+(12,19)! .[water] @[000005]
+(13,19)! .[water]
+(14,19)! .[water]
+(15,19)! .[water] #[wooden bridge] horizontal
+(16,19)! .[water]
+(17,19)! .[water]
+(18,19)! .[water]
+(19,19)! .[water]
+(20,19)! .[water]
+(21,19)! .[water]
+(22,19)! .[water]
+(23,19)! .[water]
+(24,19)! .[water] #[wooden bridge] horizontal
+(25,19)! .[water]
+(26,19)! .[water]
+(27,19)! .[water]
+(28,19)! |[stone wall] endup .[water]
+(29,19)! .[marble floor]
+(30,19)! .[marble floor]
+(31,19)! .[marble floor]
+(32,19)! |[stone wall] vertical .[water]
+(33,19)! .[water]
+(34,19)! .[water]
+(35,19)  .[water]
+(36,19)  .[water]
+(37,19)  .[water]
+(38,19)  |[stone wall] vertical permanent
+(07,20)  |[stone wall] vertical permanent
+(08,20)! .[dirt floor] ?[potion of ESP]
+(09,20)! .[dirt floor] ^[bear trap] 0
+(10,20)! .[water]
+(11,20)! .[water]
+(12,20)! .[water]
+(13,20)! .[water]
+(14,20)! .[water]
+(15,20)! .[water]
+(16,20)! .[water]
+(17,20)! .[water]
+(18,20)! .[water]
+(19,20)! .[water] #[wooden bridge] horizontal
+(20,20)! .[water]
+(21,20)! .[water] #[wooden bridge] horizontal
+(22,20)! .[water] #[wooden bridge] horizontal
+(23,20)! .[water]
+(24,20)! .[water] #[wooden bridge] horizontal
+(25,20)! .[water]
+(26,20)! .[water]
+(27,20)! .[water]
+(28,20)! |[stone wall] enddown .[water]
+(29,20)! .[marble floor]
+(30,20)! .[marble floor]
+(31,20)! .[marble floor]
+(32,20)! |[stone wall] vertical .[water]
+(33,20)! .[water]
+(34,20)! .[water]
+(35,20)  .[water]
+(36,20)  .[water]
+(37,20)  |[stone wall] topleftcorner permanent
+(38,20)  |[stone wall] bottomrightcorner permanent
+(07,21)  |[stone wall] bottomleftcorner permanent
+(08,21)  |[stone wall] horizontal permanent
+(09,21)  |[stone wall] toprightcorner permanent
+(10,21)! .[water]
+(11,21)! .[water]
+(12,21)! .[water]
+(13,21)! .[water]
+(14,21)! .[water]
+(15,21)! .[water] #[wooden bridge] horizontal
+(16,21)! .[water]
+(17,21)! .[water]
+(18,21)! .[water]
+(19,21)! .[water]
+(20,21)! .[water]
+(21,21)! .[water]
+(22,21)! .[water]
+(23,21)! .[water]
+(24,21)! .[water]
+(25,21)! .[water]
+(26,21)! .[water]
+(27,21)! .[water]
+(28,21)! .[water]
+(29,21)! .[marble floor]
+(30,21)! .[water]
+(31,21)! .[water]
+(32,21)! |[stone wall] enddown .[water]
+(33,21)! .[water]
+(34,21)! .[water]
+(35,21)  .[water] @[000007]
+(36,21)  .[water]
+(37,21)  |[stone wall] vertical permanent
+(09,22)  |[stone wall] vertical permanent
+(10,22)! .[water]
+(11,22)! .[water]
+(12,22)! .[water]
+(13,22)! .[water]
+(14,22)! .[water]
+(15,22)! .[water] #[wooden bridge] horizontal
+(16,22)! .[stone floor]
+(17,22)! .[stone corridor]
+(18,22)! .[stone floor]
+(19,22)! .[stone corridor]
+(20,22)! .[water]
+(21,22)! .[water]
+(22,22)! .[water]
+(23,22)! .[water]
+(24,22)! .[water]
+(25,22)! .[water] @[000008]
+(26,22)! .[water]
+(27,22)! .[water]
+(28,22)! .[water]
+(29,22)! .[water]
+(30,22)! .[marble floor] ^[sleeping gas trap] 0
+(31,22)! .[water]
+(32,22)! .[water] @[000013]
+(33,22)! .[water]
+(34,22)! .[water]
+(35,22)  .[water]
+(36,22)  .[water]
+(37,22)  |[stone wall] vertical permanent
+(09,23)  |[stone wall] bottomleftcorner permanent
+(10,23)  |[stone wall] horizontal permanent
+(11,23)  |[stone wall] horizontal permanent
+(12,23)  |[stone wall] toprightcorner permanent
+(13,23)! .[water]
+(14,23)! .[water]
+(15,23)! .[water] #[wooden bridge] horizontal
+(16,23)! .[stone corridor]
+(17,23)! .[stone floor] ?[sack] container
+(18,23)! .[stone corridor] _[grave]
+(19,23)! .[stone floor]
+(20,23)! .[water]
+(21,23)! .[water]
+(22,23)! .[water]
+(23,23)! .[water]
+(24,23)! .[water]
+(25,23)! .[water]
+(26,23)! .[water]
+(27,23)! .[water]
+(28,23)! .[water]
+(29,23)! .[marble floor] ^[sleeping gas trap] 0
+(30,23)! .[marble floor]
+(31,23)! .[marble floor] ^[sleeping gas trap] 0
+(32,23)! .[water]
+(33,23)! .[water]
+(34,23)! .[water] @[000009]
+(35,23)  .[water]
+(36,23)  .[water]
+(37,23)  |[stone wall] vertical permanent
+(12,24)  |[stone wall] bottomleftcorner permanent
+(13,24)  |[stone wall] toprightcorner permanent
+(14,24)  .[water]
+(15,24)! .[water]
+(16,24)! .[stone floor]
+(17,24)! .[stone corridor]
+(18,24)! .[stone floor]
+(19,24)! .[water]
+(20,24)! .[water]
+(21,24)! .[water]
+(22,24)! .[water]
+(23,24)! .[water]
+(24,24)! .[water]
+(25,24)! .[water]
+(26,24)! .[water]
+(27,24)! .[water]
+(28,24)! |[stone wall] endup .[water]
+(29,24)! .[marble floor]
+(30,24)! .[marble floor]
+(31,24)! .[marble floor]
+(32,24)! |[stone wall] endup .[water]
+(33,24)  .[water]
+(34,24)  .[water]
+(35,24)  .[water]
+(36,24)  .[water]
+(37,24)  |[stone wall] vertical permanent
+(13,25)  |[stone wall] vertical permanent
+(14,25)  .[water]
+(15,25)  .[water]
+(16,25)! .[water]
+(17,25)! .[water]
+(18,25)! .[water]
+(19,25)! .[water]
+(20,25)! .[water]
+(21,25)! .[water]
+(22,25)! .[water]
+(23,25)! .[water]
+(24,25)! .[water]
+(25,25)! .[water]
+(26,25)! .[water] @[000012]
+(27,25)! .[water]
+(28,25)! |[stone wall] vertical .[water]
+(29,25)! .[marble floor]
+(30,25)! .[marble floor] >[stone staircase down] : map [Underground River] (12,06)
+(31,25)! .[marble floor]
+(32,25)! |[stone wall] vertical .[water]
+(33,25)  .[water]
+(34,25)  .[water]
+(35,25)  .[water]
+(36,25)  |[stone wall] topleftcorner permanent
+(37,25)  |[stone wall] bottomrightcorner permanent
+(13,26)  |[stone wall] vertical permanent
+(14,26)  .[water]
+(15,26)  .[water]
+(16,26)  .[water]
+(17,26)! .[water]
+(18,26)! .[water]
+(19,26)! .[water]
+(20,26)! .[water]
+(21,26)! .[water]
+(22,26)! .[water]
+(23,26)! .[water]
+(24,26)! .[water]
+(25,26)! .[water]
+(26,26)! .[water]
+(27,26)! .[water]
+(28,26)! |[stone wall] bottomleftcorner .[water]
+(29,26)! |[stone wall] teedown .[marble floor]
+(30,26)! +[wooden door] horizontal secret closed .[marble floor]
+(31,26)! |[stone wall] teedown .[marble floor]
+(32,26)  |[stone wall] bottomrightcorner
+(33,26)  .[water]
+(34,26)  .[water]
+(35,26)  .[water]
+(36,26)  |[stone wall] vertical permanent
+(13,27)  |[stone wall] bottomleftcorner permanent
+(14,27)  |[stone wall] horizontal permanent
+(15,27)  |[stone wall] horizontal permanent
+(16,27)  |[stone wall] horizontal permanent
+(17,27)  |[stone wall] toprightcorner permanent
+(18,27)! .[water]
+(19,27)! .[water]
+(20,27)! .[water]
+(21,27)  .[water]
+(22,27)  .[water]
+(23,27)  .[water]
+(24,27)  .[water]
+(25,27)  .[water]
+(26,27)  .[water]
+(27,27)  .[water]
+(28,27)  .[water]
+(29,27)  |[stone wall] vertical .[water]
+(30,27)  .[marble floor] ^[explosive trap] 0 ?[emerald], [dilithium crystal]
+(31,27)  |[stone wall] vertical .[water]
+(32,27)  .[water]
+(33,27)  .[water]
+(34,27)  .[water]
+(35,27)  |[stone wall] topleftcorner permanent
+(36,27)  |[stone wall] bottomrightcorner permanent
+(17,28)  |[stone wall] bottomleftcorner permanent
+(18,28)  |[stone wall] horizontal permanent
+(19,28)  |[stone wall] horizontal permanent
+(20,28)  |[stone wall] horizontal permanent
+(21,28)  |[stone wall] horizontal permanent
+(22,28)  |[stone wall] toprightcorner permanent
+(23,28)  .[water]
+(24,28)  .[water]
+(25,28)  .[water]
+(26,28)  .[water]
+(27,28)  .[water]
+(28,28)  .[water]
+(29,28)  |[stone wall] bottomleftcorner .[water]
+(30,28)  |[stone wall] horizontal .[water]
+(31,28)  |[stone wall] bottomrightcorner .[water]
+(32,28)  .[water]
+(33,28)  .[water]
+(34,28)  |[stone wall] topleftcorner permanent
+(35,28)  |[stone wall] bottomrightcorner permanent
+(22,29)  |[stone wall] bottomleftcorner permanent
+(23,29)  |[stone wall] horizontal permanent
+(24,29)  |[stone wall] horizontal permanent
+(25,29)  |[stone wall] toprightcorner permanent
+(26,29)  .[water]
+(27,29)  .[water]
+(28,29)  .[water]
+(29,29)  .[water]
+(30,29)  .[water]
+(31,29)  .[water]
+(32,29)  .[water]
+(33,29)  .[water]
+(34,29)  |[stone wall] vertical permanent
+(25,30)  |[stone wall] bottomleftcorner permanent
+(26,30)  |[stone wall] horizontal permanent
+(27,30)  |[stone wall] horizontal permanent
+(28,30)  |[stone wall] horizontal permanent
+(29,30)  |[stone wall] horizontal permanent
+(30,30)  |[stone wall] horizontal permanent
+(31,30)  |[stone wall] horizontal permanent
+(32,30)  |[stone wall] horizontal permanent
+(33,30)  |[stone wall] horizontal permanent
+(34,30)  |[stone wall] bottomrightcorner permanent
+
+map [Underground River] difficulty 0 40 x 40
+character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[000026]@[000027]@[000028]@[000029]@[000030]@[000031]@[000032]@[000033]@[000034]@[000035]@[000036]@[000037]@[000038]@[000039]@[000040]@[000041]@[000042]@[000043]@[000044]@[000045]@[000046]@[000047]@[000048]@[000049]@[000050]@[000051]@[000052];
+(11,05)  |[cave wall] topleftcorner permanent
+(12,05)  |[cave wall] horizontal permanent
+(13,05)  |[cave wall] toprightcorner permanent
+(11,06)  |[cave wall] vertical permanent
+(12,06)! .[dirt floor] >[stone staircase up] : map [Medusa Lair Entrance] (30,25)
+(13,06)  |[cave wall] vertical permanent
+(11,07)  |[cave wall] vertical permanent
+(12,07)! .[water]
+(13,07)  |[cave wall] vertical permanent
+(11,08)  |[cave wall] vertical permanent
+(12,08)! .[water]
+(13,08)  |[cave wall] bottomleftcorner permanent
+(14,08)  |[cave wall] horizontal permanent
+(15,08)  |[cave wall] horizontal permanent
+(16,08)  |[cave wall] horizontal permanent
+(17,08)  |[cave wall] horizontal permanent
+(18,08)  |[cave wall] horizontal permanent
+(19,08)  |[cave wall] horizontal permanent
+(20,08)  |[cave wall] toprightcorner permanent
+(11,09)  |[cave wall] vertical permanent
+(12,09)  .[water]
+(13,09)  .[dirt floor]
+(14,09)  .[dirt floor] `[stone boulder]
+(15,09)  .[dirt floor]
+(16,09)  .[dirt floor]
+(17,09)  .[dirt floor]
+(18,09)  .[dirt floor]
+(19,09)  .[water]
+(20,09)  |[cave wall] vertical permanent
+(11,10)  |[cave wall] vertical permanent
+(12,10)  .[water]
+(13,10)  |[cave wall] topleftcorner permanent
+(14,10)  |[cave wall] teedown permanent
+(15,10)  |[cave wall] horizontal permanent
+(16,10)  |[cave wall] horizontal permanent
+(17,10)  |[cave wall] toprightcorner permanent
+(18,10)  .[water]
+(19,10)  .[water]
+(20,10)  |[cave wall] vertical permanent
+(24,10)! |[cave wall] topleftcorner permanent
+(25,10)! |[cave wall] horizontal permanent
+(26,10)! |[cave wall] horizontal permanent
+(27,10)! |[cave wall] horizontal permanent
+(28,10)! |[cave wall] horizontal permanent
+(29,10)! |[cave wall] horizontal permanent
+(30,10)! |[cave wall] horizontal permanent
+(31,10)! |[cave wall] horizontal permanent
+(32,10)! |[cave wall] toprightcorner permanent
+(11,11)  |[cave wall] vertical permanent
+(12,11)  .[water]
+(13,11)  |[cave wall] vertical permanent
+(14,11)  |[cave wall] vertical permanent
+(17,11)  |[cave wall] bottomleftcorner permanent
+(18,11)  |[cave wall] toprightcorner permanent
+(19,11)  .[water]
+(20,11)  |[cave wall] bottomleftcorner permanent
+(21,11)  |[cave wall] toprightcorner permanent
+(23,11)  |[cave wall] topleftcorner permanent
+(24,11)! |[cave wall] bottomrightcorner permanent
+(25,11)! .[water]
+(26,11)! .[water]
+(27,11)! .[water]
+(28,11)! .[water]
+(29,11)! .[water]
+(30,11)! .[water]
+(31,11)! .[water]
+(32,11)! |[cave wall] bottomleftcorner permanent
+(33,11)! |[cave wall] toprightcorner permanent
+(09,12)  |[cave wall] topleftcorner permanent
+(10,12)  |[cave wall] horizontal permanent
+(11,12)  |[cave wall] bottomrightcorner permanent
+(12,12)  .[water]
+(13,12)  |[cave wall] bottomleftcorner permanent
+(14,12)  |[cave wall] teeleft permanent
+(18,12)  |[cave wall] vertical permanent
+(19,12)  .[water]
+(20,12)  .[water]
+(21,12)  |[cave wall] bottomleftcorner permanent
+(22,12)  |[cave wall] horizontal permanent
+(23,12)  |[cave wall] teeleft permanent
+(24,12)! .[water]
+(25,12)! .[water]
+(26,12)! .[water]
+(27,12)! .[water]
+(28,12)! .[water]
+(29,12)! .[water] @[000031]
+(30,12)! .[water] @[000030]
+(31,12)! .[water]
+(32,12)! .[water]
+(33,12)! |[cave wall] bottomleftcorner permanent
+(34,12)! |[cave wall] toprightcorner permanent
+(09,13)  |[cave wall] vertical permanent
+(10,13)  .[water] @[000026]
+(11,13)  .[water]
+(12,13)  .[water]
+(13,13)  .[water]
+(14,13)  |[cave wall] bottomleftcorner permanent
+(15,13)  |[cave wall] toprightcorner permanent
+(18,13)  |[cave wall] bottomleftcorner permanent
+(19,13)  |[cave wall] toprightcorner permanent
+(20,13)  .[water]
+(21,13)  .[water]
+(22,13)  .[water]
+(23,13)  +[wooden door] vertical locked .[water]
+(24,13)! .[water]
+(25,13)! .[water]
+(26,13)! .[water]
+(27,13)! .[water] @[000027]
+(28,13)! .[water]
+(29,13)! .[water] @[000037]
+(30,13)! .[water] @[000032]
+(31,13)! .[water]
+(32,13)! .[dirt floor]
+(33,13)! .[dirt floor]
+(34,13)! |[cave wall] vertical permanent
+(08,14)  |[cave wall] topleftcorner permanent
+(09,14)  |[cave wall] bottomrightcorner permanent
+(10,14)  .[water] @[000025]
+(11,14)  |[cave wall] topleftcorner permanent
+(12,14)  |[cave wall] toprightcorner permanent
+(13,14)  .[water]
+(14,14)  .[water]
+(15,14)  |[cave wall] bottomleftcorner permanent
+(16,14)  |[cave wall] toprightcorner permanent
+(19,14)  |[cave wall] bottomleftcorner permanent
+(20,14)  |[cave wall] horizontal permanent
+(21,14)  |[cave wall] horizontal permanent
+(22,14)  |[cave wall] horizontal permanent
+(23,14)  |[cave wall] teeleft permanent
+(24,14)! .[water]
+(25,14)! .[water]
+(26,14)! .[water]
+(27,14)! .[water] @[000028]
+(28,14)! .[water]
+(29,14)! .[water] @[000036]
+(30,14)! .[water] @[000033]
+(31,14)! .[dirt floor]
+(32,14)! .[dirt floor]
+(33,14)! .[dirt floor] ?[chest] container
+(34,14)! |[cave wall] vertical permanent
+(08,15)  |[cave wall] vertical permanent
+(09,15)  .[water] @[000019]
+(10,15)  .[water] @[000024]
+(11,15)  |[cave wall] teeright permanent
+(12,15)  |[cave wall] teeup permanent
+(13,15)  |[cave wall] toprightcorner permanent
+(14,15)  .[water]
+(15,15)  .[water]
+(16,15)  |[cave wall] bottomleftcorner permanent
+(17,15)  |[cave wall] toprightcorner permanent
+(23,15)  |[cave wall] vertical permanent
+(24,15)! .[water]
+(25,15)! .[water]
+(26,15)! .[water]
+(27,15)! .[water] @[000029]
+(28,15)! .[water]
+(29,15)! .[water] @[000035]
+(30,15)! .[water] @[000034]
+(31,15)! .[dirt floor]
+(32,15)! .[dirt floor]
+(33,15)! .[dirt floor] ?[chest] container
+(34,15)! |[cave wall] vertical permanent
+(08,16)  |[cave wall] vertical permanent
+(09,16)  .[water] @[000020]
+(10,16)  .[water] @[000023]
+(11,16)  |[cave wall] vertical permanent
+(13,16)  |[cave wall] bottomleftcorner permanent
+(14,16)  |[cave wall] toprightcorner permanent
+(15,16)  .[water]
+(16,16)  .[water]
+(17,16)  |[cave wall] bottomleftcorner permanent
+(18,16)  |[cave wall] toprightcorner permanent
+(23,16)  |[cave wall] vertical permanent
+(24,16)! .[water]
+(25,16)! .[water]
+(26,16)! .[water]
+(27,16)! .[water]
+(28,16)! .[water]
+(29,16)! .[water]
+(30,16)! .[water]
+(31,16)! .[water]
+(32,16)! .[dirt floor]
+(33,16)! .[dirt floor]
+(34,16)! |[cave wall] vertical permanent
+(08,17)  |[cave wall] vertical permanent
+(09,17)  .[water] @[000021]
+(10,17)  .[water] @[000022]
+(11,17)  |[cave wall] vertical permanent
+(14,17)  |[cave wall] bottomleftcorner permanent
+(15,17)  |[cave wall] toprightcorner permanent
+(16,17)  .[water]
+(17,17)  .[water]
+(18,17)  |[cave wall] bottomleftcorner permanent
+(19,17)  |[cave wall] toprightcorner permanent
+(23,17)  |[cave wall] bottomleftcorner permanent
+(24,17)! |[cave wall] toprightcorner permanent
+(25,17)! .[water]
+(26,17)! .[water]
+(27,17)! .[water]
+(28,17)! .[water]
+(29,17)! .[water]
+(30,17)! .[water]
+(31,17)! .[water]
+(32,17)! .[water]
+(33,17)! |[cave wall] topleftcorner permanent
+(34,17)! |[cave wall] bottomrightcorner permanent
+(08,18)  |[cave wall] bottomleftcorner permanent
+(09,18)  |[cave wall] horizontal permanent
+(10,18)  |[cave wall] horizontal permanent
+(11,18)  |[cave wall] bottomrightcorner permanent
+(15,18)  |[cave wall] bottomleftcorner permanent
+(16,18)  |[cave wall] toprightcorner permanent
+(17,18)  .[water]
+(18,18)  .[water]
+(19,18)  |[cave wall] vertical permanent
+(24,18)! |[cave wall] bottomleftcorner permanent
+(25,18)! |[cave wall] horizontal permanent
+(26,18)! |[cave wall] horizontal permanent
+(27,18)! |[cave wall] horizontal permanent
+(28,18)! |[cave wall] toprightcorner permanent
+(29,18)! .[water]
+(30,18)! .[water]
+(31,18)! .[water]
+(32,18)! |[cave wall] topleftcorner permanent
+(33,18)! |[cave wall] bottomrightcorner permanent
+(16,19)  |[cave wall] bottomleftcorner permanent
+(17,19)  |[cave wall] toprightcorner permanent
+(18,19)  .[water]
+(19,19)  |[cave wall] vertical permanent
+(28,19)! |[cave wall] bottomleftcorner permanent
+(29,19)! |[cave wall] horizontal permanent
+(30,19)! |[cave wall] horizontal permanent
+(31,19)! |[cave wall] horizontal permanent
+(32,19)! |[cave wall] bottomrightcorner permanent
+(17,20)  |[cave wall] vertical permanent
+(18,20)  .[water]
+(19,20)  |[cave wall] vertical permanent
+(16,21)  |[cave wall] topleftcorner permanent
+(17,21)  |[cave wall] bottomrightcorner permanent
+(18,21)  .[water]
+(19,21)  |[cave wall] vertical permanent
+(11,22)  |[cave wall] topleftcorner permanent
+(12,22)  |[cave wall] horizontal permanent
+(13,22)  |[cave wall] horizontal permanent
+(14,22)  |[cave wall] horizontal permanent
+(15,22)  |[cave wall] horizontal permanent
+(16,22)  |[cave wall] bottomrightcorner permanent
+(17,22)  .[water]
+(18,22)  .[water]
+(19,22)  |[cave wall] vertical permanent
+(04,23)! |[stone wall] topleftcorner permanent
+(05,23)! |[stone wall] horizontal permanent .[dirt floor]
+(06,23)! |[stone wall] horizontal permanent .[water]
+(07,23)! |[stone wall] horizontal permanent .[water]
+(08,23)! |[stone wall] toprightcorner permanent .[water]
+(11,23)  |[cave wall] vertical permanent
+(12,23)  .[water]
+(13,23)  .[water]
+(14,23)  .[water]
+(15,23)  .[water]
+(16,23)  .[water] @[000042]
+(17,23)  .[water] @[000045]
+(18,23)  |[cave wall] topleftcorner permanent
+(19,23)  |[cave wall] bottomrightcorner permanent
+(04,24)! |[stone wall] vertical permanent
+(05,24)! .[obsidian floor]
+(06,24)! .[obsidian floor] _[altar]
+(07,24)! .[obsidian floor]
+(08,24)! |[stone wall] vertical permanent .[water]
+(10,24)  |[cave wall] topleftcorner permanent
+(11,24)  |[cave wall] bottomrightcorner permanent
+(12,24)  .[water]
+(13,24)  |[cave wall] topleftcorner permanent
+(14,24)  |[cave wall] horizontal permanent
+(15,24)  |[cave wall] toprightcorner permanent
+(16,24)  .[water] @[000043]
+(17,24)  .[water] @[000044]
+(18,24)  |[cave wall] vertical permanent
+(04,25)! |[stone wall] vertical permanent
+(05,25)! .[obsidian floor]
+(06,25)! .[obsidian floor] @[000038]
+(07,25)! .[obsidian floor]
+(08,25)! |[stone wall] vertical permanent .[water]
+(10,25)  |[cave wall] vertical permanent
+(11,25)  .[water]
+(12,25)  .[water]
+(13,25)  |[cave wall] vertical permanent
+(15,25)  |[cave wall] bottomleftcorner permanent
+(16,25)  |[cave wall] toprightcorner permanent
+(17,25)  .[water]
+(18,25)  |[cave wall] vertical permanent
+(04,26)! |[stone wall] vertical permanent
+(05,26)! .[dirt floor] @[000040]
+(06,26)! .[dirt floor] @[000041]
+(07,26)! .[dirt floor] @[000039]
+(08,26)! |[stone wall] vertical permanent .[water]
+(09,26)  |[cave wall] topleftcorner permanent
+(10,26)  |[cave wall] bottomrightcorner permanent
+(11,26)  .[water]
+(12,26)  |[cave wall] topleftcorner permanent
+(13,26)  |[cave wall] bottomrightcorner permanent
+(16,26)  |[cave wall] vertical permanent
+(17,26)  .[water]
+(18,26)  |[cave wall] bottomleftcorner permanent
+(19,26)  |[cave wall] toprightcorner permanent
+(04,27)! |[stone wall] vertical permanent
+(05,27)! .[dirt floor]
+(06,27)! .[dirt floor]
+(07,27)! .[dirt floor]
+(08,27)! |[stone wall] vertical permanent .[water]
+(09,27)  |[cave wall] enddown permanent
+(10,27)  .[water]
+(11,27)  .[water]
+(12,27)  |[cave wall] vertical permanent
+(16,27)  |[cave wall] vertical permanent
+(17,27)  .[water]
+(18,27)  .[water]
+(19,27)  |[cave wall] bottomleftcorner permanent
+(20,27)  |[cave wall] toprightcorner permanent
+(03,28)! |[cave wall] endup permanent
+(04,28)! |[stone wall] enddown permanent
+(05,28)! .[dirt floor]
+(06,28)! .[dirt floor]
+(07,28)! .[dirt floor]
+(08,28)! |[stone wall] enddown permanent .[water]
+(09,28)  .[water]
+(10,28)  .[water]
+(11,28)  |[cave wall] topleftcorner permanent
+(12,28)  |[cave wall] bottomrightcorner permanent
+(16,28)  |[cave wall] bottomleftcorner permanent
+(17,28)  |[cave wall] toprightcorner permanent
+(18,28)  .[water]
+(19,28)  .[water]
+(20,28)  |[cave wall] bottomleftcorner permanent
+(21,28)  |[cave wall] horizontal permanent
+(22,28)  |[cave wall] horizontal permanent
+(23,28)  |[cave wall] toprightcorner permanent
+(27,28)  |[cave wall] topleftcorner permanent
+(28,28)  |[cave wall] horizontal permanent
+(29,28)  |[cave wall] horizontal permanent
+(30,28)  |[cave wall] toprightcorner permanent
+(03,29)  |[cave wall] bottomleftcorner permanent
+(04,29)  |[cave wall] toprightcorner permanent
+(05,29)  .[water]
+(06,29)  .[dirt floor]
+(07,29)  .[water]
+(08,29)  .[water]
+(09,29)  .[water]
+(10,29)  .[water]
+(11,29)  |[cave wall] vertical permanent
+(17,29)  |[cave wall] bottomleftcorner permanent
+(18,29)  |[cave wall] toprightcorner permanent
+(19,29)  .[water]
+(20,29)  .[water]
+(21,29)  .[water]
+(22,29)  .[water]
+(23,29)  |[cave wall] bottomleftcorner permanent
+(24,29)  |[cave wall] toprightcorner permanent
+(26,29)  |[cave wall] topleftcorner permanent
+(27,29)  |[cave wall] bottomrightcorner permanent
+(28,29)  .[water]
+(29,29)  .[water]
+(30,29)  |[cave wall] bottomleftcorner permanent
+(31,29)  |[cave wall] toprightcorner permanent
+(04,30)  |[cave wall] vertical permanent
+(05,30)  .[water]
+(06,30)  .[water]
+(07,30)  .[water]
+(08,30)  .[water]
+(09,30)  .[water]
+(10,30)  |[cave wall] topleftcorner permanent
+(11,30)  |[cave wall] bottomrightcorner permanent
+(18,30)  |[cave wall] bottomleftcorner permanent
+(19,30)  |[cave wall] horizontal permanent
+(20,30)  |[cave wall] horizontal permanent
+(21,30)  |[cave wall] toprightcorner permanent
+(22,30)  .[water] @[000047]
+(23,30)  .[water] @[000046]
+(24,30)  |[cave wall] teeright permanent
+(25,30)  |[cave wall] teedown permanent
+(26,30)  |[cave wall] bottomrightcorner permanent
+(27,30)  .[water]
+(28,30)  .[water]
+(29,30)  .[water]
+(30,30)  .[water]
+(31,30)  |[cave wall] bottomleftcorner permanent
+(32,30)  |[cave wall] horizontal permanent
+(33,30)  |[cave wall] toprightcorner permanent
+(04,31)  |[cave wall] bottomleftcorner permanent
+(05,31)  |[cave wall] toprightcorner permanent
+(06,31)  .[water]
+(07,31)  .[water]
+(08,31)  .[water]
+(09,31)  |[cave wall] topleftcorner permanent
+(10,31)  |[cave wall] bottomrightcorner permanent
+(21,31)  |[cave wall] bottomleftcorner permanent
+(22,31)  |[cave wall] teedown permanent
+(23,31)  |[cave wall] horizontal illusion .[water]
+(24,31)  |[cave wall] teeup permanent
+(25,31)  |[cave wall] bottomrightcorner permanent
+(26,31)  .[water] @[000052]
+(27,31)  .[water]
+(28,31)  .[water]
+(29,31)  .[water]
+(30,31)  .[water]
+(31,31)  .[water]
+(32,31)  .[water]
+(33,31)  |[cave wall] vertical permanent
+(05,32)  |[cave wall] bottomleftcorner permanent
+(06,32)  |[cave wall] horizontal permanent
+(07,32)  |[cave wall] horizontal permanent
+(08,32)  |[cave wall] horizontal permanent
+(09,32)  |[cave wall] bottomrightcorner permanent
+(22,32)  |[cave wall] vertical permanent
+(23,32)  .[water]
+(24,32)  .[water]
+(25,32)  .[water]
+(26,32)  .[water]
+(27,32)! |[jade wall] pillar .[dirt floor]
+(28,32)! .[marble floor]
+(29,32)! .[marble floor] @[000048]
+(30,32)! .[marble floor]
+(31,32)! |[jade wall] pillar .[dirt floor]
+(32,32)  .[water]
+(33,32)  |[cave wall] bottomleftcorner permanent
+(34,32)  |[cave wall] toprightcorner permanent
+(22,33)  |[cave wall] bottomleftcorner permanent
+(23,33)  |[cave wall] toprightcorner permanent
+(24,33)  .[water]
+(25,33)  .[water]
+(26,33)  .[water]
+(27,33)! .[marble floor] @[000049]
+(28,33)! .[stone corridor]
+(29,33)! .[stone floor]
+(30,33)! .[stone corridor]
+(31,33)! .[marble floor]
+(32,33)  .[water]
+(33,33)  .[water]
+(34,33)  |[cave wall] vertical permanent
+(23,34)  |[cave wall] vertical permanent
+(24,34)  .[water]
+(25,34)  .[water]
+(26,34)  .[water]
+(27,34)! .[marble floor] @[000050]
+(28,34)! .[stone floor]
+(29,34)! .[stone corridor] >[stone staircase down] : map [Medusa's Lair] (18,36) `[statue]
+(30,34)! .[stone floor]
+(31,34)! .[marble floor]
+(32,34)  .[water]
+(33,34)  .[water]
+(34,34)  |[cave wall] vertical permanent
+(23,35)  |[cave wall] vertical permanent
+(24,35)  .[water]
+(25,35)  .[water]
+(26,35)  .[water]
+(27,35)! .[marble floor] @[000051]
+(28,35)! .[stone corridor]
+(29,35)! .[stone floor]
+(30,35)! .[stone corridor]
+(31,35)! .[marble floor]
+(32,35)  .[water]
+(33,35)  .[water]
+(34,35)  |[cave wall] vertical permanent
+(23,36)  |[cave wall] vertical permanent
+(24,36)  .[water]
+(25,36)  .[water]
+(26,36)  .[water]
+(27,36)! |[jade wall] pillar .[dirt floor]
+(28,36)! .[marble floor]
+(29,36)! .[marble floor]
+(30,36)! .[marble floor]
+(31,36)! |[jade wall] pillar .[dirt floor]
+(32,36)  .[water]
+(33,36)  |[cave wall] topleftcorner permanent
+(34,36)  |[cave wall] bottomrightcorner permanent
+(23,37)  |[cave wall] bottomleftcorner permanent
+(24,37)  |[cave wall] toprightcorner permanent
+(25,37)  .[water]
+(26,37)  .[water]
+(27,37)  .[water]
+(28,37)  .[water]
+(29,37)  .[water]
+(30,37)  .[water]
+(31,37)  .[water]
+(32,37)  .[water]
+(33,37)  |[cave wall] vertical permanent
+(24,38)  |[cave wall] bottomleftcorner permanent
+(25,38)  |[cave wall] horizontal permanent
+(26,38)  |[cave wall] horizontal permanent
+(27,38)  |[cave wall] toprightcorner permanent
+(28,38)  .[water]
+(29,38)  .[water]
+(30,38)  .[water]
+(31,38)  |[cave wall] topleftcorner permanent
+(32,38)  |[cave wall] horizontal permanent
+(33,38)  |[cave wall] bottomrightcorner permanent
+(27,39)  |[cave wall] bottomleftcorner permanent
+(28,39)  |[cave wall] horizontal permanent
+(29,39)  |[cave wall] horizontal permanent
+(30,39)  |[cave wall] horizontal permanent
+(31,39)  |[cave wall] bottomrightcorner
+
+map [Medusa's Lair] terminal difficulty 0 40 x 40
+character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[000060]@[000061]@[000062]@[000063]@[000064]@[000065]@[000066]@[000067]@[000068]@[000069]@[000070]@[000071]@[000072]@[000073]@[000074]@[000075]@[000076]@[000077]@[000078]@[000079]@[000080]@[000081]@[000082]@[000083]@[000084]@[000085]@[000086]@[000087]@[000088]@[000089]@[000090]@[000091]@[000092];
+(12,01)! |[stone wall] topleftcorner permanent
+(13,01)! |[stone wall] horizontal permanent
+(14,01)! |[stone wall] horizontal permanent
+(15,01)! |[stone wall] teedown permanent
+(16,01)! |[stone wall] horizontal permanent
+(17,01)! |[stone wall] horizontal permanent
+(18,01)! |[stone wall] horizontal permanent .[marble floor]
+(19,01)! |[stone wall] horizontal permanent .[marble floor]
+(20,01)! |[stone wall] horizontal permanent
+(21,01)! |[stone wall] horizontal permanent
+(22,01)! |[stone wall] teedown permanent
+(23,01)! |[stone wall] horizontal permanent
+(24,01)! |[stone wall] horizontal permanent
+(25,01)! |[stone wall] teedown permanent
+(26,01)! |[stone wall] horizontal permanent
+(27,01)! |[stone wall] toprightcorner permanent
+(12,02)! |[stone wall] vertical permanent
+(13,02)! .[marble floor] ?[chest] container
+(14,02)! .[marble floor] @[000091]
+(15,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(16,02)! .[marble floor]
+(17,02)! .[marble floor] @[000076]
+(18,02)! .[marble floor] _[throne] @[000053]
+(19,02)! .[marble floor] _[fountain]
+(20,02)! .[marble floor] @[000081]
+(21,02)! .[marble floor]
+(22,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(23,02)! .[marble floor] @[000092]
+(24,02)! .[marble floor] ?[chest] container
+(25,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(26,02)! .[marble floor] >[transportal]
+(27,02)! |[stone wall] vertical permanent
+(12,03)! |[stone wall] bottomleftcorner permanent
+(13,03)! |[stone wall] horizontal permanent
+(14,03)! |[stone wall] horizontal permanent
+(15,03)! |[stone wall] teeleft permanent
+(16,03)! .[marble floor]
+(17,03)! .[marble floor]
+(18,03)! .[marble floor]
+(19,03)! .[marble floor]
+(20,03)! .[marble floor]
+(21,03)! .[marble floor]
+(22,03)! |[stone wall] teeright permanent
+(23,03)! |[stone wall] horizontal permanent
+(24,03)! |[stone wall] horizontal permanent
+(25,03)! |[stone wall] teeup permanent
+(26,03)! |[stone wall] horizontal permanent
+(27,03)! |[stone wall] bottomrightcorner permanent
+(15,04)! |[stone wall] bottomleftcorner permanent
+(16,04)! |[stone wall] horizontal permanent
+(17,04)! |[stone wall] toprightcorner permanent
+(18,04)! .[marble floor] @[000077]
+(19,04)! .[marble floor] @[000078]
+(20,04)! |[stone wall] topleftcorner permanent
+(21,04)! |[stone wall] horizontal permanent
+(22,04)! |[stone wall] bottomrightcorner permanent
+(17,05)! |[stone wall] vertical permanent
+(18,05)! .[marble floor] @[000080]
+(19,05)! .[marble floor] @[000079]
+(20,05)! |[stone wall] vertical permanent
+(15,06)! |[stone wall] topleftcorner permanent
+(16,06)! |[stone wall] horizontal permanent
+(17,06)! |[stone wall] teeup permanent
+(18,06)! +[crystal door] horizontal locked trapped [magic trap] 0 .[marble floor]
+(19,06)! +[crystal door] horizontal locked trapped [magic trap] 0 .[marble floor]
+(20,06)! |[stone wall] teeup permanent
+(21,06)! |[stone wall] horizontal permanent
+(22,06)! |[stone wall] toprightcorner permanent
+(14,07)! |[stone wall] topleftcorner permanent
+(15,07)! |[stone wall] bottomrightcorner permanent
+(16,07)! .[obsidian floor]
+(17,07)! .[obsidian floor]
+(18,07)! .[stone floor] `[statue]
+(19,07)! .[stone floor]
+(20,07)! .[obsidian floor]
+(21,07)! .[obsidian floor]
+(22,07)! |[stone wall] bottomleftcorner permanent
+(23,07)! |[stone wall] toprightcorner permanent
+(14,08)! |[stone wall] vertical permanent
+(15,08)! .[obsidian floor]
+(16,08)! .[obsidian floor]
+(17,08)! |[stone wall] pillar .[obsidian floor]
+(18,08)! .[stone floor]
+(19,08)! .[stone floor] `[statue]
+(20,08)! |[stone wall] pillar .[obsidian floor]
+(21,08)! .[obsidian floor]
+(22,08)! .[obsidian floor]
+(23,08)! |[stone wall] vertical permanent
+(14,09)! |[stone wall] vertical permanent
+(15,09)! .[obsidian floor]
+(16,09)! .[stone floor] _[fountain]
+(17,09)! .[obsidian floor] @[000055]
+(18,09)! .[stone floor] @[000056]
+(19,09)! .[stone floor] @[000057]
+(20,09)! .[obsidian floor] @[000058]
+(21,09)! .[stone floor] _[fountain]
+(22,09)! .[obsidian floor]
+(23,09)! |[stone wall] vertical permanent
+(14,10)! |[stone wall] vertical permanent
+(15,10)! .[obsidian floor]
+(16,10)! .[obsidian floor]
+(17,10)! |[stone wall] pillar .[obsidian floor]
+(18,10)! .[stone floor]
+(19,10)! .[stone floor]
+(20,10)! |[stone wall] pillar .[obsidian floor]
+(21,10)! .[obsidian floor]
+(22,10)! .[obsidian floor]
+(23,10)! |[stone wall] vertical permanent
+(14,11)! |[stone wall] enddown permanent
+(15,11)! .[obsidian floor]
+(16,11)! .[obsidian floor]
+(17,11)! .[obsidian floor]
+(18,11)! .[stone floor] @[000054]
+(19,11)! .[stone floor] @[000059]
+(20,11)! .[obsidian floor]
+(21,11)! .[obsidian floor]
+(22,11)! .[obsidian floor]
+(23,11)! |[stone wall] enddown permanent
+(14,12)! |[jade wall] endup permanent
+(15,12)! .[obsidian floor]
+(16,12)! .[obsidian floor] @[000060]
+(17,12)! |[jade wall] topleftcorner permanent .[obsidian floor]
+(18,12)! +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(19,12)! +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(20,12)! |[jade wall] toprightcorner permanent .[obsidian floor]
+(21,12)! .[obsidian floor] @[000061]
+(22,12)! .[obsidian floor]
+(23,12)! |[jade wall] endup permanent
+(14,13)  |[jade wall] teeright permanent
+(15,13)  |[jade wall] horizontal permanent .[stone floor]
+(16,13)  |[jade wall] horizontal permanent .[stone floor]
+(17,13)  |[jade wall] bottomrightcorner permanent .[stone floor]
+(18,13)  .[obsidian floor]
+(19,13)  .[obsidian floor] `[statue]
+(20,13)  |[jade wall] bottomleftcorner permanent .[stone floor]
+(21,13)  |[jade wall] horizontal permanent .[stone floor]
+(22,13)  |[jade wall] horizontal permanent .[stone floor]
+(23,13)  |[jade wall] teeleft permanent
+(14,14)  |[jade wall] vertical permanent
+(15,14)! .[water]
+(16,14)! .[water]
+(17,14)! .[stone floor]
+(18,14)! .[obsidian floor] `[statue]
+(19,14)! .[obsidian floor]
+(20,14)! .[stone floor]
+(21,14)! .[water]
+(22,14)! .[water]
+(23,14)  |[jade wall] vertical permanent
+(14,15)  |[jade wall] vertical permanent
+(15,15)! .[water]
+(16,15)! .[stone floor] `[statue]
+(17,15)! .[stone floor]
+(18,15)! .[obsidian floor]
+(19,15)! .[obsidian floor] `[statue]
+(20,15)! .[stone floor]
+(21,15)! .[stone floor] `[statue]
+(22,15)! .[water]
+(23,15)  |[jade wall] vertical permanent
+(14,16)  |[jade wall] vertical permanent
+(15,16)! .[water]
+(16,16)! .[water]
+(17,16)! .[stone floor] _[fountain]
+(18,16)! .[obsidian floor]
+(19,16)! .[obsidian floor]
+(20,16)! .[stone floor] _[fountain]
+(21,16)! .[water]
+(22,16)! .[water]
+(23,16)  |[jade wall] vertical permanent
+(14,17)  |[jade wall] vertical permanent
+(15,17)! .[water]
+(16,17)! .[stone floor] `[statue]
+(17,17)! .[stone floor]
+(18,17)! .[obsidian floor]
+(19,17)! .[obsidian floor]
+(20,17)! .[stone floor]
+(21,17)! .[stone floor] `[statue]
+(22,17)! .[water]
+(23,17)  |[jade wall] vertical permanent
+(14,18)  |[jade wall] vertical permanent
+(15,18)! .[water]
+(16,18)! .[water]
+(17,18)! .[stone floor] @[000083]
+(18,18)! .[obsidian floor] @[000084]
+(19,18)! .[obsidian floor] @[000085]
+(20,18)! .[stone floor] @[000086]
+(21,18)! .[water]
+(22,18)! .[water]
+(23,18)  |[jade wall] vertical permanent
+(14,19)  |[jade wall] vertical permanent
+(15,19)! .[water]
+(16,19)! .[stone floor] `[statue]
+(17,19)! .[stone floor] @[000090]
+(18,19)! .[obsidian floor] @[000089]
+(19,19)! .[obsidian floor] @[000088]
+(20,19)! .[stone floor] @[000087]
+(21,19)! .[stone floor] `[statue]
+(22,19)! .[water]
+(23,19)  |[jade wall] vertical permanent
+(14,20)  |[jade wall] vertical permanent
+(15,20)! .[water]
+(16,20)! .[water]
+(17,20)! .[stone floor]
+(18,20)! .[obsidian floor]
+(19,20)! .[obsidian floor]
+(20,20)! .[stone floor]
+(21,20)! .[water]
+(22,20)! .[water]
+(23,20)  |[jade wall] vertical permanent
+(14,21)  |[jade wall] vertical permanent
+(15,21)! .[water]
+(16,21)! .[stone floor] `[statue]
+(17,21)! .[stone floor]
+(18,21)! .[obsidian floor]
+(19,21)! .[obsidian floor]
+(20,21)! .[stone floor] @[000082]
+(21,21)! .[stone floor] `[statue]
+(22,21)! .[water]
+(23,21)  |[jade wall] vertical permanent
+(14,22)  |[jade wall] vertical permanent
+(15,22)! .[water]
+(16,22)! .[water]
+(17,22)! .[stone floor]
+(18,22)! .[obsidian floor]
+(19,22)! .[obsidian floor]
+(20,22)! .[stone floor]
+(21,22)! .[water]
+(22,22)! .[water]
+(23,22)  |[jade wall] vertical permanent
+(14,23)  |[jade wall] vertical permanent
+(15,23)! .[water]
+(16,23)! .[stone floor] `[statue]
+(17,23)! .[stone floor]
+(18,23)! .[obsidian floor]
+(19,23)! .[obsidian floor]
+(20,23)! .[stone floor]
+(21,23)! .[stone floor] `[statue]
+(22,23)! .[water]
+(23,23)  |[jade wall] vertical permanent
+(14,24)  |[jade wall] vertical permanent
+(15,24)! .[water]
+(16,24)! .[water]
+(17,24)! .[stone floor] _[fountain]
+(18,24)! .[obsidian floor]
+(19,24)! .[obsidian floor]
+(20,24)! .[stone floor] _[fountain]
+(21,24)! .[water]
+(22,24)! .[water]
+(23,24)  |[jade wall] vertical permanent
+(14,25)  |[jade wall] vertical permanent
+(15,25)! .[water]
+(16,25)! .[stone floor] `[statue]
+(17,25)! .[stone floor]
+(18,25)! .[obsidian floor]
+(19,25)! .[obsidian floor]
+(20,25)! .[stone floor]
+(21,25)! .[stone floor] `[statue]
+(22,25)! .[water]
+(23,25)  |[jade wall] vertical permanent
+(14,26)  |[jade wall] vertical permanent
+(15,26)! .[water]
+(16,26)! .[water]
+(17,26)! .[stone floor] @[000066]
+(18,26)! .[obsidian floor] @[000067]
+(19,26)! .[obsidian floor] @[000068]
+(20,26)! .[stone floor] @[000069]
+(21,26)! .[water]
+(22,26)! .[water]
+(23,26)  |[jade wall] vertical permanent
+(14,27)  |[jade wall] vertical permanent
+(15,27)! .[water]
+(16,27)! .[stone floor] `[statue]
+(17,27)! .[stone floor]
+(18,27)! .[obsidian floor]
+(19,27)! .[obsidian floor]
+(20,27)! .[stone floor]
+(21,27)! .[stone floor] `[statue]
+(22,27)! .[water]
+(23,27)  |[jade wall] vertical permanent
+(14,28)  |[jade wall] vertical permanent
+(15,28)! .[water] @[000070]
+(16,28)! .[water]
+(17,28)! .[stone floor]
+(18,28)! .[obsidian floor]
+(19,28)! .[obsidian floor]
+(20,28)! .[stone floor]
+(21,28)! .[water]
+(22,28)! .[water] @[000073]
+(23,28)  |[jade wall] vertical permanent
+(14,29)  |[jade wall] vertical permanent
+(15,29)! .[water] @[000071]
+(16,29)! .[stone floor] `[statue]
+(17,29)! .[stone floor]
+(18,29)! .[obsidian floor]
+(19,29)! .[obsidian floor]
+(20,29)! .[stone floor]
+(21,29)! .[stone floor] `[statue]
+(22,29)! .[water] @[000074]
+(23,29)  |[jade wall] vertical permanent
+(14,30)  |[jade wall] vertical permanent
+(15,30)! .[water] @[000072]
+(16,30)! .[water]
+(17,30)! .[stone floor] @[000062]
+(18,30)! .[obsidian floor] @[000063]
+(19,30)! .[obsidian floor] @[000064]
+(20,30)! .[stone floor] @[000065]
+(21,30)! .[water]
+(22,30)! .[water] @[000075]
+(23,30)  |[jade wall] vertical permanent
+(14,31)  |[jade wall] vertical permanent
+(15,31)! .[water]
+(16,31)! .[stone floor] `[statue]
+(17,31)! .[stone floor]
+(18,31)! .[obsidian floor]
+(19,31)! .[obsidian floor]
+(20,31)! .[stone floor]
+(21,31)! .[stone floor] `[statue]
+(22,31)! .[water]
+(23,31)  |[jade wall] vertical permanent
+(14,32)  |[jade wall] vertical permanent
+(15,32)! .[water]
+(16,32)! .[water]
+(17,32)! .[stone floor] _[fountain]
+(18,32)! .[obsidian floor]
+(19,32)! .[obsidian floor]
+(20,32)! .[stone floor] _[fountain]
+(21,32)! .[water]
+(22,32)! .[water]
+(23,32)  |[jade wall] vertical permanent
+(14,33)  |[jade wall] vertical permanent
+(15,33)! .[water]
+(16,33)! .[stone floor] `[statue]
+(17,33)! .[stone floor]
+(18,33)! .[obsidian floor] `[statue]
+(19,33)! .[obsidian floor] `[statue]
+(20,33)! .[stone floor]
+(21,33)! .[stone floor] `[statue]
+(22,33)! .[water]
+(23,33)  |[jade wall] vertical permanent
+(14,34)  |[jade wall] bottomleftcorner permanent
+(15,34)  |[jade wall] horizontal permanent
+(16,34)  |[jade wall] horizontal permanent
+(17,34)  |[jade wall] teedown permanent .[obsidian floor]
+(18,34)  +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(19,34)  +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(20,34)  |[jade wall] teedown permanent .[obsidian floor]
+(21,34)  |[jade wall] horizontal permanent
+(22,34)  |[jade wall] horizontal permanent
+(23,34)  |[jade wall] bottomrightcorner permanent
+(17,35)  |[jade wall] vertical permanent .[obsidian floor]
+(18,35)  .[obsidian floor]
+(19,35)  .[obsidian floor] `[statue]
+(20,35)  |[jade wall] vertical permanent .[obsidian floor]
+(17,36)  |[jade wall] vertical permanent
+(18,36)  .[obsidian floor] >[stone staircase up] : map [Underground River] (29,34)
+(19,36)  .[obsidian floor]
+(20,36)  |[jade wall] vertical permanent
+(17,37)  |[jade wall] bottomleftcorner permanent
+(18,37)  |[jade wall] horizontal permanent
+(19,37)  |[jade wall] horizontal permanent
+(20,37)  |[jade wall] bottomrightcorner permanent
+
+site "Medusa Lair"
+level [Medusa Lair Entrance] down (30,25);
+level [Underground River] up (12,06) down (29,34);
+level [Medusa's Lair] up (18,36);
+
+character @[000001] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (13,18);
+character @[000002] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (18,11);
+character @[000003] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (19,15);
+character @[000004] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (09,15);
+character @[000005] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (12,19);
+character @[000006] [neuter] [kraken] noclass square map [Medusa Lair Entrance] (21,18);
+character @[000007] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (35,21);
+character @[000008] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (25,22);
+character @[000009] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (34,23);
+character @[000010] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (34,17);
+character @[000011] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (27,17);
+character @[000012] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (26,25);
+character @[000013] [neuter] [giant eel] noclass square map [Medusa Lair Entrance] (32,22);
+character @[000014] [neuter] [electric eel] noclass square map [Medusa Lair Entrance] (10,09);
+character @[000015] [neuter] [electric eel] noclass square map [Medusa Lair Entrance] (10,11);
+character @[000016] [neuter] [electric eel] noclass square map [Medusa Lair Entrance] (13,11);
+character @[000017] [neuter] [electric eel] noclass square map [Medusa Lair Entrance] (15,09);
+character @[000018] [neuter] [electric eel] noclass square map [Medusa Lair Entrance] (16,11);
+character @[000019] [neuter] [water moccasin] noclass square map [Underground River] (09,15);
+character @[000020] [neuter] [water moccasin] noclass square map [Underground River] (09,16);
+character @[000021] [neuter] [water moccasin] noclass square map [Underground River] (09,17);
+character @[000022] [neuter] [water moccasin] noclass square map [Underground River] (10,17);
+character @[000023] [neuter] [water moccasin] noclass square map [Underground River] (10,16);
+character @[000024] [neuter] [water moccasin] noclass square map [Underground River] (10,15);
+character @[000025] [neuter] [water moccasin] noclass square map [Underground River] (10,14);
+character @[000026] [neuter] [water moccasin] noclass square map [Underground River] (10,13);
+character @[000027] [neuter] [water elemental] noclass square map [Underground River] (27,13);
+character @[000028] [neuter] [water elemental] noclass square map [Underground River] (27,14);
+character @[000029] [neuter] [water elemental] noclass square map [Underground River] (27,15);
+character @[000030] [neuter] [water moccasin] noclass square map [Underground River] (30,12);
+character @[000031] [neuter] [water moccasin] noclass square map [Underground River] (29,12);
+character @[000032] [neuter] [water moccasin] noclass square map [Underground River] (30,13);
+character @[000033] [neuter] [water moccasin] noclass square map [Underground River] (30,14);
+character @[000034] [neuter] [water moccasin] noclass square map [Underground River] (30,15);
+character @[000035] [neuter] [water moccasin] noclass square map [Underground River] (29,15);
+character @[000036] [neuter] [water moccasin] noclass square map [Underground River] (29,14);
+character @[000037] [neuter] [water moccasin] noclass square map [Underground River] (29,13);
+character @[000038] [neuter] [master lich] noclass square map [Underground River] (06,25);
+character @[000039] [neuter] [skeleton] noclass square map [Underground River] (07,26);
+character @[000040] [neuter] [skeleton] noclass square map [Underground River] (05,26);
+character @[000041] [neuter] [skeleton] noclass square map [Underground River] (06,26);
+character @[000042] [neuter] [snake] noclass square map [Underground River] (16,23);
+character @[000043] [neuter] [snake] noclass square map [Underground River] (16,24);
+character @[000044] [neuter] [snake] noclass square map [Underground River] (17,24);
+character @[000045] [neuter] [snake] noclass square map [Underground River] (17,23);
+character @[000046] [neuter] [garter snake] noclass square map [Underground River] (23,30);
+character @[000047] [neuter] [garter snake] noclass square map [Underground River] (22,30);
+character @[000048] [neuter] [water hulk] noclass square map [Underground River] (29,32);
+character @[000049] [neuter] [water moccasin] noclass square map [Underground River] (27,33);
+character @[000050] [neuter] [water moccasin] noclass square map [Underground River] (27,34);
+character @[000051] [neuter] [water moccasin] noclass square map [Underground River] (27,35);
+character @[000052] [neuter] [water hulk] noclass square map [Underground River] (26,31);
+character @[000053] [female] [medusa] noclass square map [Medusa's Lair] (18,02);
+character @[000054] [male] [stone giant] noclass square map [Medusa's Lair] (18,11);
+character @[000055] [male] [cockatrice] noclass square map [Medusa's Lair] (17,09);
+character @[000056] [male] [cockatrice] noclass square map [Medusa's Lair] (18,09);
+character @[000057] [male] [cockatrice] noclass square map [Medusa's Lair] (19,09);
+character @[000058] [male] [cockatrice] noclass square map [Medusa's Lair] (20,09);
+character @[000059] [male] [stone giant] noclass square map [Medusa's Lair] (19,11);
+character @[000060] [neuter] [lich] noclass square map [Medusa's Lair] (16,12);
+character @[000061] [neuter] [lich] noclass square map [Medusa's Lair] (21,12);
+character @[000062] [male] [water troll] noclass square map [Medusa's Lair] (17,30);
+character @[000063] [male] [water troll] noclass square map [Medusa's Lair] (18,30);
+character @[000064] [male] [water troll] noclass square map [Medusa's Lair] (19,30);
+character @[000065] [male] [water troll] noclass square map [Medusa's Lair] (20,30);
+character @[000066] [neuter] [water hulk] noclass square map [Medusa's Lair] (17,26);
+character @[000067] [neuter] [water hulk] noclass square map [Medusa's Lair] (18,26);
+character @[000068] [neuter] [water hulk] noclass square map [Medusa's Lair] (19,26);
+character @[000069] [neuter] [water hulk] noclass square map [Medusa's Lair] (20,26);
+character @[000070] [neuter] [water elemental] noclass square map [Medusa's Lair] (15,28);
+character @[000071] [neuter] [water elemental] noclass square map [Medusa's Lair] (15,29);
+character @[000072] [neuter] [water elemental] noclass square map [Medusa's Lair] (15,30);
+character @[000073] [neuter] [water elemental] noclass square map [Medusa's Lair] (22,28);
+character @[000074] [neuter] [water elemental] noclass square map [Medusa's Lair] (22,29);
+character @[000075] [neuter] [water elemental] noclass square map [Medusa's Lair] (22,30);
+character @[000076] [neuter] [water elemental] noclass square map [Medusa's Lair] (17,02);
+character @[000077] [neuter] [water demon] noclass square map [Medusa's Lair] (18,04);
+character @[000078] [neuter] [water demon] noclass square map [Medusa's Lair] (19,04);
+character @[000079] [neuter] [water demon] noclass square map [Medusa's Lair] (19,05);
+character @[000080] [neuter] [water demon] noclass square map [Medusa's Lair] (18,05);
+character @[000081] [neuter] [water elemental] noclass square map [Medusa's Lair] (20,02);
+character @[000082] [neuter] [water moccasin] noclass square map [Medusa's Lair] (20,21);
+character @[000083] [neuter] [water moccasin] noclass square map [Medusa's Lair] (17,18);
+character @[000084] [neuter] [water moccasin] noclass square map [Medusa's Lair] (18,18);
+character @[000085] [neuter] [water moccasin] noclass square map [Medusa's Lair] (19,18);
+character @[000086] [neuter] [water moccasin] noclass square map [Medusa's Lair] (20,18);
+character @[000087] [neuter] [water moccasin] noclass square map [Medusa's Lair] (20,19);
+character @[000088] [neuter] [water moccasin] noclass square map [Medusa's Lair] (19,19);
+character @[000089] [neuter] [water moccasin] noclass square map [Medusa's Lair] (18,19);
+character @[000090] [neuter] [water moccasin] noclass square map [Medusa's Lair] (17,19);
+character @[000091] [neuter] [water demon] noclass square map [Medusa's Lair] (14,02);
+character @[000092] [neuter] [water demon] noclass square map [Medusa's Lair] (23,02);
+start [Medusa Lair Entrance] (12,05);

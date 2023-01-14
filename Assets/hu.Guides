@@ -1,0 +1,447 @@
+# Commands;Irányítás
+. Single tap/left click or arrow keys to move and attack.;Egy koppintás/bal klikk vagy nyilak lenyomása a mozgáshoz és támadáshoz.
+. Long press/right click to operate doors/traps.;Hosszú lenyomás/jobb klikk a csapdák és ajtók használatához.
+. Double tap to pick up items, traverse stairs or wait one move.;Dupla koppintás a tárgyak felvételéhez, a lépcsőkön való haladáshoz vagy egy kör várakozáshoz.
+/
+- . | wait one turn (also double tap on self); . | egy kör várakozás (karakterre duplán kattintva is működik)
+- , | pick up the top item on the floor; , | a padlón lévő legfelső tárgy felvétele
+- A | toggle log (click the log to expand/collapse); A | napló megjelenítése (kattints a napló kinyitásához és összecsukásához)
+- B | move down-left; B | mozgás balra lefelé
+- C | toggle character; C | karakteradatok megjelenítése
+- D | re-use last item; D | legutóbbi tárgy újbóli használata
+- E | mount or dismount your steed; E | fel- és leszállás (hátasnál)
+- F | toggle floor; F | talaj megjelenítése
+- G | re-equip last item; G | legutóbbi tárgy újbóli felszerelése
+- H | move left; H | mozgás balra
+- I | toggle inventory; I | leltár megjelenítése
+- J | move down; J | mozgás lefelé
+- K | move up; K | mozgás felfelé
+- L | move right; L | mozgás jobbra
+- M | toggle map; M | térkép megjelenítése
+- N | move down-right; N | mozgás jobbra lefelé
+- O | hide from view; O | elrejtőzés
+- P | polymorph at will; P | önkéntes átváltozás
+- Q | save or quit this game; Q | mentés vagy kilépés a játékból
+- R | for rest mode to recover life and mana; R | pihenés (élet és mana visszatöltése)
+- S | for search mode for secret doors and traps; S | titkos ajtók és csapdák keresése
+- T | teleport at will; T | önkéntes teleportálás
+- U | move up-right; U | mozgás jobbra felfelé
+- V | kick in a direction; V | rúgás tetszőleges irányba
+- W | jump in a direction (if you have the talent); W | ugrás tetszőleges irányba (készség birtoklása esetén)
+- X | re-cast last spell; X | legutóbbi varázslat újbóli használata
+- Y | move up-left; Y | mozgás balra felfelé
+- Z | toggle cast spells (read books to learn spells); Z | varázslatok listájának megjelenítése (a varázslatok megtanulásához olvass könyveket)
+- ' | blink in a direction; ' | elillanás tetszőleges irányba
+- ;; | telekinesis in a direction; ;; | telekinézis tetszőleges irányba
+- > | descend stairs; > | leereszkedés a lépcsőn
+- < | ascend stairs; < | felsétálás a lépcsőn
+- / | toggle chat in multiplayer; / | chat megnyitása többjátékos módban
+- \ | view knowledge panel; \ | az Ismeretek megnyitása
+- + | zoom in; + | nagyítás
+- - | zoom out; - | kicsinyítés
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | bal oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | jobb oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
+- INSERT | toggle tunnelling mode;
+- SHIFT + arrow | fire a missile without moving; SHIFT + nyilak | rakéta kilövése mozgás nélkül
+- CTRL + arrow | interact with the target without moving; CTRL + nyilak | interakció a célponttal, mozgás nélkül
+- ENTER | select the top item on the floor; ENTER | a padlón lévő legfelső tárgy kiválasztása
+- ESCAPE | hides open panels and clears your target; ESCAPE | megnyitott panelek bezárása
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | megnyitott panelek bezárása és billentyűzetfókusz törlése
+- SPACE | toggle real-time or turn-based; SPACE | váltás a körökre osztott és a valós idejű játék között
+- PgUp | switch to previous character; PgUp | váltás az előző karakterre
+- PgDown | switch to next character; PgDown | váltás a következő karakterre
+- ALT | show labels; ALT | címkék mutatása
+- F1 | show this help; F1 | súgó megnyitása
+- F6 | quick save; F6 | gyorsmentés
+- F10 | open side menu; F10 | oldalsó menü megnyitása
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | teljesképernyős-mód átállítása ablakos módra (Windows)
+
+# General mechanics;Általános mechanika
+. You will die.;Sokszor meg fogsz halni.
+. But don't despair, you will learn something new each time.;Azonban ne csüggedj, mivel minden alkalommal valami újat fogsz tanulni.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.;A Pathos célja, hogy túléld a 40 szinten át tartó utat, mielőtt az első szintre visszatérve kijutnál a kazamatából.
+. Pathos is turn-based so take your time and consider your options when things get serious.;Mivel a Pathos körökre osztott játékmeneten alapszik, így a szorult helyzetekben lesz időd mérlegelni a lehetőségeidet.
+. Each class starts with different items, skills and abilities.;Minden osztály más kezdő tárgyakkal, képességekkel és adottságokkal rendelkezik.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.;A főzetek, tekercsek, gyűrűk, pálcák és egyes vértek hatásai minden kalandkezdetkor újrakeverésre kerülnek.
+. For example, the orange potion will not have a consistent effect across different adventures.;Ez azt jelenti, hogy például a narancssárga főzet hatása mindig más lesz a különböző kalandok során.
+
+# Combat;Harc
+. When attacking a d20 is rolled which gives a random number between 1 and 20.;Támadáskor egy 20 oldalú dobókocka (d20) kerül dobásra, amely egy véletlenszerű számot ad 1 és 20 között.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.;Az 1-es dobás kritikus melléütésnek, a 20-as dobás pedig kritikus találatnak számít.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).;A kritikus melléütés hatására többet nem támadhatsz az adott körben (amennyiben eredetileg többször támadhatnál).
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.;Kritikus találat esetén a fegyver alapsebzése megduplázódik. Fontos, hogy az igézések és az erőmódosítók nem duplázódnak meg.
+. The strength bonus to damage is doubled when using a two handed weapon.;A sebzéshez adott erőbónusz megduplázódik, ha kétkezes fegyvert használsz.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.;Ha a kritikus az egyetlen módja a találatnak vagy melléütésnek, akkor a támadás normál találattá vagy melléütéssé minősül vissza.
+. Otherwise, this number is added to the attack score and compared to the defence score.;Ellenkező esetben ez a szám hozzáadódik a támadási pontszámhoz, és összehasonlításra kerül a védekezési pontszámmal.
+/
+` (Attack + d20) >= Defence;(Támadás + d20) >= Védekezés
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.;A támadási és védekezési pontszámokat az adottságok, a képességek és az igézések befolyásolják.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.;A fegyverek igézései közvetlenül befolyásolják a támadási pontszámodat, és hozzáadódnak a sebzési pontszámhoz is.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:;A képességbónuszod függ a szintedtől, és minden osztály esetében ugyanúgy kerül kiszámításra:
+/
+` Skill Bonus = (Level / 4) + 1;Képességbónusz = (Szint / 4) + 1
+/
+. Your defence is also affected by your circumstances:;A védekezésedet a körülmények is befolyásolják:
+/
+` {Mod} defence when blind;{Mod} védekezés vakság esetén
+` {Mod} defence when invisible;{Mod} védekezés láthatatlanság esetén
+` {Mod} defence when displaced;{Mod} védekezés elmozdulás esetén
+` {Mod} defence when paralysed or sleeping;{Mod} védekezés bénulás vagy alvás közben
+` {Mod} defence when stuck;{Mod} védekezés beszorult állapotban
+` {Mod} defence when punished;{Mod} védekezés büntetés közben
+` {Mod} defence when attacked from concealment;{Mod} védekezés, ha lesből ér támadás
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.;A nehézpáncélzat gyakorlatlanság esetén {UnskilledPenalty} ponttal tesz lassabbá, míg gyakorlottság esetében ez a szám {SkilledPenalty}.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.;A félnehéz-páncélzat gyakorlatlanként {UnskilledPenalty} ponttal tesz lassabbá, egyébként nincs ráhatása a sebességedre.
+. Light armour has no speed penalty if you are unskilled.;A könnyűpáncélzat gyakorlatlanság esetén sem von le a sebességedből.
+. Unskilled use of armour also attracts a one point defence penalty.;Ha gyakorlatlanként hordasz egy páncélt, akkor a védekezési pontszámod 1-gyel csökken.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.;Az ügyességmódosító akkor adódik hozzá a védekezésedhez, ha gyakorlott vagy páncélzatod minden részének viselésében.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.;Ez legfeljebb +4, ha bármilyen félnehéz-páncélzatot viselsz, és +2, amennyiben nehézpáncélzat van rajtad.
+
+# Skills;Képességek
+. Each skill has a rating between 0 and 2000 and there are five competency levels.;Minden képesség 0 és 2000 közötti értékeléssel, valamint öt kompetenciaszinttel rendelkezik.
+/
+` (0) Proficient =    0..199;(0) Jártas      =    0..199
+` (1) Specialist =  200..499;(1) Specialista =  200..499
+` (2) Expert     =  500..999;(2) Szakértő    =  500..999
+` (3) Master     = 1000..1999;(3) Mester      = 1000..1999
+` (4) Champion   = 2000;(4) Bajnok   		   = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.;A képességértékek gyakorlás hatására javulnak: fegyverrel való támadással vagy a találatok elkerülésével (ha a karaktered páncélzatot visel).
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.;A fegyverforgatás kompetenciaszintje támadásbónuszt és nagyobb sebzést jelent.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.;Aki például a nehézpengés fegyvereket mesterként használja, +3 támadást és +3 sebzést kap, amennyiben kétkezes karddal küzd.
+. This bonus to damage is doubled on a critical hit.;Ez a sebzési bónusz megduplázódik kritikus találat esetén.
+/
+. Armour skill gives you the competency level as a defence bonus.;A páncélképesség kompetenciaszintje védekezési bónuszt jelent.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.;Aki például szakértő a nehézpáncélzatok hordásában, +2 védelmet kap, ha lemezpáncélt visel.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.;A védekezési bónusz az egyes felszerelt páncélok képességszintjeinek átlagából jön ki.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.;Például: egy nehézpáncélzat-szakértő (2), aki a könnyű páncélzat viselésében csak jártas (0), lemezpáncélt (nehéz) és kis pajzsot (könnyű) viselve +1-es védekezési bónuszt kap.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.;A mágia iskoláiban való jártasság javítja a varázslatok hatótávolságát és azok hatásait is (kompetenciaszintenként).
+. These skills are practised by learning and casting spells.;Ezeket a képességeket a varázslatok megtanulásával és használatával tudod fejleszteni.
+
+# Life;Életerő
+. {LifeDefinition};{LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.;A kezdő életerődet a fajod, az osztályod és az alkatmódosítóid határozzák meg.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.;Amikor egy tapasztalati szintettel feljebb lépsz, az életerőd véletlenszerű mennyiséggel növekszik, melyet a fajod, az osztályod, valamint az alkatmódosítóid határoznak meg.
+. There are also magical means to increase your life potential.;A maximális életerő-potenciálodat mágikus eszközökkel is növelheted.
+. However, life cannot be increased past the maximum potential plus your constitution score.;Az életerő azonban nem növelhető a maximális életerő-potenciál és az alkatpontszám együttes összege fölé.
+/
+` Initial = Class base + Race base + {CON} modifier;Kezdő = Osztály + Faj + {CON}-módosító
+` Advancement = Class roll + Race roll + {CON} modifier;Fejlődés = Kockadobás (osztály) + Kockadobás (faj) + {CON}-módosító
+` Limit = Initial + max(Advancement) x Level + {CON} score;Határérték = Kezdő + max(Fejlődés) x Szint + {CON}-pontszám
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.;Az életerő természetes módon ({LevelCap} - Szint - {CON}-módosító) körönként 1 pontot regenerálódik.
+. Sleeping improves recovery by halving the number of turns.;Az alvás javítja a regenerálódást, mivel megfelezi a szükséges körök számát.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.;Éhezés hatására az életerő {StarvationRecoveryRate} körönként 1 pontot regenerálódik.
+. Life regeneration guarantees the recovery at one point per turn.;Az életregenerálódás-tulajdonság garantálja a körönkénti 1 pontos gyógyulást.
+. The {inediate} diet slows recovery of life by doubling the number of turns.;Ha egy entitásnak {inediate}, akkor az életerő regenerálódása kétszer annyi kört igényel.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;Amennyiben az {hunger} "{inediate}" étrenddel párosul, az életerő nem fog automatikusan regenerálódni, kivéve, ha az {life regeneration} is aktív: ebben az esetben a szokásos, lassabb visszatöltődés érvényesül.
+. Active {phasing} prevents the natural recovery of life.;Az aktív {phasing} megakadályozza az életerő természetes helyreállását.
+
+# Mana;Mana
+. {ManaDefinition};{ManaDefinition}
+. There are no adverse effects for exhausting your mana.;A mana kimerítésének nincsenek káros hatásai.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.;Amikor egy tapasztalati szintet előrelépsz, a manád a fajod és az osztályod, valamint a bölcsességmódosítód által meghatározott véletlenszerű értékkel nő.
+. There are also magical means to increase your mana potential.;Maximális manapotenciálodat mágikus eszközökkel is növelheted.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.;A mana azonban nem növelhető a maximális manapotenciál és az bölcsességpontszám együttes összege fölé.
+/
+` Initial = Class base + Race base + {WIS} modifier;Kezdő = Osztály + Faj + {WIS}-módosító
+` Advancement = Class roll + Race roll + {WIS} modifier;Fejlődés = Kockadobás (osztály) + Kockadobás (faj) + {WIS}-módosító
+` Limit = Initial + max(Advancement) x Level + {WIS} score;Határérték = Kezdő + max(Fejlődés) x Szint + {WIS}-pontszám
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.;Az mana természetes módon ({LevelCap} - Szint - {WIS}-módosító) körönként 1 pontot regenerálódik.
+. Sleeping improves recovery by halving the number of turns.;Az alvás javítja a regenerálódást, mivel megfelezi a szükséges körök számát.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.;Éhezés hatására a mana {StarvationRecoveryRate} körönként 1 pontot regenerálódik.
+. Mana regeneration guarantees the recovery at one point per turn.;A manaregenerálódás-tulajdonság garantálja a körönkénti 1 pontos regenerálódást.
+. The {inediate} diet slows recovery of mana by doubling the number of turns;Ha egy entitásnak {inediate}, akkor a mana regenerálódása kétszer annyi kört igényel.
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;Amennyiben az {hunger} "{inediate}" étrenddel párosul, a mana nem fog automatikusan regenerálódni, kivéve, ha a {mana regeneration} is aktív: ebben az esetben a szokásos, lassabb visszatöltődés érvényesül.
+. Active {phasing} prevents the natural recovery of mana.;Az aktív {phasing} megakadályozza a mana természetes helyreállását.
+
+# Nutrition;Táplálkozás
+. Maintaining a food supply is important to avoid starving to death.;Tarts magadnál mindig elegendő ételt, hogy elkerüld az éhhalált.
+. In desperate or pragmatic times you can eat corpses.;Ha minden kötél szakad, holttesteket is elfogyaszthatsz.
+
+# Corpses;Tetemek
+. The bodies of your enemies and allies can be a source of nutrition.;Elesett ellenségeid és szövetségeseid tetemei táplálékforrásként szolgálhatnak.
+. Many corpses also convey harm and illness but some may impart beneficial talents.;Számos tetem káros és betegségeket hordoz, ám vannak olyanok is, amelyek hasznos készségekkel ruházzák fel elfogyasztójukat.
+. Be aware that cannibalism is considered a bad idea even in desperate times.;Ne feledd, hogy a kannibalizmus nehéz időkben sem számít jó ötletnek.
+
+# Encumbrance;Teherbírás
+. Everything you pick up adds to your encumbrance and you may become burdened.;A felvett tárgyakat és egyéb dolgokat idővel egyre nehezebb lesz hordoznod, és ez túlterheltséghez vezethet.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.;A túlterheltség következtében mozgásod lelassul, és a kazamatában lakó rémségek könnyű prédájává válsz.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight);Hordozható teher mennyisége = (Erőpontszám - Táplálkozási büntetés) x {WeightMultiplier} + ({WeightPercentage} Testsúly)
+
+# Resting;Pihenés
+. The camp-fire action button toggles resting.;A pihenést a tábortűzgombbal tudod aktiválni.
+. While resting your life and mana recover at a faster rate.;Pihenés közben az életerőd és a manád szintje gyorsabban regenerálódik.
+. Companions will rest when you rest.;Társaid is veled együtt pihennek.
+. Resting will be interrupted if there is a hostile in your zone.;A pihenés félbeszakad, ha egy ellenséges entitás jelenik meg a közeledben.
+
+# Searching;Keresés
+. The eye action button toggles searching.;A szemgombbal kapcsolhatod be a keresést.
+. Searching will find secret doors and concealed traps.;Keresés során titkos ajtókra és rejtett csapdákra bukkanhatsz.
+. Companions will search when you search to help find secrets.;Társaid veled együtt fognak keresni, hogy segítsenek a titkok felfedezésében.
+. Searching will be interrupted if there is a hostile in your zone.;A keresés félbeszakad, ha egy ellenséges entitás jelenik meg a közeledben.
+
+# Abilities;Adottságok
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.;Összesen 6 adottságra kaphatsz pontszámot: erő, ügyesség, alkat, intelligencia, bölcsesség és karizma.
+. Your starting ability scores is determined by rolling 4d6 six times.;A kezdő adottságpontjaid úgy lesznek meghatározva, hogy egy 4d6-os kocka (6 oldalú dobókocka, négyszer eldobva) kerül dobásra.
+. The lowest roll from each set is dropped giving a score between 3 and 18.;A legalacsonyabb dobás minden sorozat esetében kiesik, és egy 3 és 18 közötti pontszámot ad.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.;A legmagasabb pontszámok véletlenszerűen kerülnek kiosztásra az elsődleges adottságaidhoz, amelyeket a Súgó > Osztályok fülön találsz meg.
+. Racial limits are then applied as shown in help > races.;Ezután a faji korlátok a Súgó > Fajok fülön megadottak szerint lesznek alkalmazva.
+. Any points that are reduced by racial limits are transferred to another ability.;A faji korlátok által csökkentett pontok hozzáadódnak egy másik adottsághoz.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription};{AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma;Karma
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).;A karmát a szörnyek leöléséért kapod, elkölteni pedig isteni szívességekre cserébe tudod (imádkozás és áldáskérés szentélynél).
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.;Karmát veszíthetsz, ha nem viselkedsz megfelelően a kazamatában: megtámadsz egy közömbös szörnyet, vagy megölöd a szövetségeseidet.
+. You can gain additional karma by donating gold to a priest at a shrine.;További karmára tehetsz szert, ha a szentélyeknél aranyat adományozol a papoknak.
+. You can pray at any time by long press/right click on your character.;A bármikori imádkozáshoz tartsd ujjad hosszan/használd a jobb klikket a karaktereden.
+. This will cost {Number} karma and has the following effects:;Ez {Number} karmába kerül, és a következő hatásokkal jár:
+/
+` karma >= hopeful;karma >= reményteljes
+`   gain {Number} nutrition when hungry;  éhség esetén {Number} tápanyag
+`   unafflict;  megtisztítás
+`   unpolymorph;  visszaváltozás
+`   escape from being stuck;  kiszabadulás beragadásból
+`   remove punishment;  büntetés eltávolítása
+/
+` karma >= good;karma >= jó
+`   fully healed if less than half life;  ha az életerő kevesebb mint a felére csökken: teljes gyógyulás
+`   fully restored if less than half mana;  ha a mana kevesebb mint a felére csökken: teljes visszatöltés
+/
+` karma >= glorious;karma >= dicsőséges
+`   remove blindness;  vakság eltávolítása
+`   remove hallucination;  hallucináció eltávolítása
+`   remove rage;  düh eltávolítása
+`   remove sickness;  betegség eltávolítása
+/
+` karma >= exalted;karma >= fennkölt
+`   remove one curse;  egy átok eltávolítása
+`   raise dead for one loyal companion;  egy hűséges halott feltámasztása
+
+# Diets;Étrendek
+. Entities have different diets that allow them to eat specific materials.;Az entitások különböző étrendekkel rendelkeznek, melyeknek köszönhetően sajátos anyagokat képesek elfogyasztani.
+/
+` {DietName}: {MaterialNames};{DietName}: {MaterialNames}
+
+# Spells;Varázslatok
+. Spells are learned by studying from magical books found in the dungeon.;A varázslatokat a kazamataszerte található mágikus könyvekből tanulhatod meg.
+. Any class can learn spells but only the skilled will use their mana efficiently.;Bármelyik osztály képes varázslatokat megtanulni, azonban csak a hozzáértők tudják manájukat hatékonyan felhasználni.
+
+# Gold;Arany
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.;Az arany számos dologra felhasználható, és cipelése nem jelent terhet a karaktered számára.
+. Gold can be traded for items from merchants or donated to priests for karma.;Az aranyat a kereskedőknél tárgyakra cserélheted, vagy papoknak adományozhatod karmáért cserébe.
+
+# Companions;Társak
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).;A háziállatokat meg lehet szelídíteni, ha számukra megfelelő étellel eteted őket (maguktól nem éheznek meg).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).;A macskák nyávogni, a kutyák pedig ugatni fognak, ha egy átkozott tárgyra vagy tereptárgyra (például szökőkútra) lépnek.
+. You can mount some types of companions and ride around the dungeon.;Egyes társakra fel lehet ülni, majd a hátukon körbeutazni a kazamatát.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.;A hátasod néha helyetted is támadni fog, máskor pedig a támadások célpontjává válik.
+. Your steed will be the first into any traps so take good care of their well-being.;A hátasod lesz az első, aki a csapdákba belesétál, ezért vigyáznod kell az épségére.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.;A gyakorlott lovasok képességbónusza hozzáadódik a hátas támadási és védekezési pontszámához.
+. A steed is useful when you are burdened and it is strong enough to take your load.;A hátasok hasznosak, ha sok terhet kell cipelned, mivel jó a teherbírásuk.
+. To dismount your steed you need to long press/right click on your character.;Tartsd ujjad hosszan/használd a jobb klikket a karaktereden, hogy leszállj a hátasodról.
+
+# Engulfing;Elnyelés
+. Some entities can swallow or engulf other entities.;Egyes entitások képesek elnyelni vagy lenyelni más lényeket.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.;Ha lenyelnek, minden körben sebződsz, és addig kell küzdened, míg ki nem köpnek.
+. Alternatively, there are many mechanisms which can be used to escape.;Szerencsére van módja a menekülésnek is.
+. It is impossible to fight with your equipped weapons when swallowed.;Amikor lenyelnek, nem tudsz harcolni a felszerelt fegyvereiddel.
+. If you cast when engulfed the spell will hit your engulfer.;Ha elnyelt állapotban varázsolsz, a varázslat eltalálja a téged elnyelő entitást.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.;Azonban az is előfordulhat, hogy egyes varázslatok visszapattannak a falakról és eltalálják a téged elnyelő entitás mellett a karakteredet is.
+
+# Spawning;Entitások megjelenése
+. Monsters will randomly spawn into areas outside your current zone.;A szörnyek véletlenszerűen fognak megjelenni az aktuális tartózkodási helyeden kívüli területeken.
+. The rate of spawning increases as you descend deeper into the dungeon.;A megjelenő szörnyek száma növekszik, ahogy egyre mélyebbre ereszkedsz a kazamatában.
+. The talent of aggravation also increases the spawn rates for monsters.;A felbosszantáskészség növeli a szörnyek megjelenésének arányát.
+
+# Polymorph;Átváltozás
+. Transform into another entity with all the advantages or disadvantages that brings.;Változz át egy másik entitássá, annak minden előnyével és hátrányával együtt.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.;A sárkányoknak például nincsenek kezei, de képesek repülni és halálos energiasugarakkal támadni.
+. When you perish in your polymorphed form you will often revert to your original form.;Ha átváltozott alakban ér utol a vég, gyakran visszaváltozol az eredeti formádra.
+. You can transform into the entity of your choice when you have polymorph control.;Ha irányított átváltozás birtokában vagy, át tudsz alakulni egy általad választott entitássá.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.;Az irányított átváltozás azokra az entitásokra korlátozódik, amelyeket már sikerült megölnöd. Fontos, hogy minden egyes átalakulás felemészti a tápanyagszintedet.
+. To access polymorph-at-will you need to long press/right click on your character.;Az önkéntes átváltozáshoz tartsd ujjad hosszan/használd a jobb klikket a karaktereden.
+
+# Locks;Zárak
+. Doors and containers can be locked and possibly trapped.;Az ajtók és a tárolók sokszor zárva lehetnek, esetleg csapdákat is rejthetnek.
+. You can kick locks to break them but this will trigger any trap.;A zárakat szétrúghatod, hogy feltörd őket, de ez aktiválni fogja a mögöttük lévő csapdákat.
+. Items such as skeleton keys and lock picks can be used to unlock.;A zárakat többek közt csontkulcsokkal és tolvajkulcsokkal nyithatod ki.
+. These items can break and the chance is influenced by your competency with locks.;Ezek a tárgyak eltörhetnek, melynek az esélyét az befolyásolja, hogy a karaktered mennyire bánik jól a zárakkal.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.;Ezenkívül az átkozott tárgyak kétszer nagyobb, míg az áldott tárgyak fele akkora valószínűséggel törnek el.
+. There are other magical items and spells that can be used to unlock.;A zárakat egyéb mágikus tárgyakkal és varázslatokkal is ki lehet nyitni.
+
+# Traps;Csapdák
+. Traps have a difficulty rating that reflects the lethality of the device.;A csapdák különböző nehézségi fokozat alá esnek, amely a halálosságukat tükrözi.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.;A nehézségi fokozat egyben azt is megmutatja, hogy az adott csapda melyik kazamataszinttől kezdve jelenik meg.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.;A csapda hatástalanításának esélye az eszköz nehézsége, valamint a képesség- és ügyességmódosítók alapján kerül kiszámításra.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.;Ha bármilyen átmeneti állapot hatása alatt állsz – például ügyetlenség, vakság, kábulás, zavartság vagy hallucináció –, nehezebb lesz a csapda hatástalanítása.
+. Untrapping requires you to move into the square.;A hatástalanításhoz a csapdára kell lépned.
+. A failure to untrap will cause it to be triggered.;Amennyiben nem sikerül hatástalanítani a csapdát, az adott eszköz bekapcsol.
+
+# Teleport;Teleport
+. Teleportation transports your character around the current dungeon level.;Teleportálás hatására a karaktered az aktuális kazamataszinten belül változtat helyet.
+. When uncontrolled, this is a random event that may help or hinder your journey.;Nem irányított teleportálás esetén ez a véletlenszerű esemény segítheti vagy akadályozhatja is az utazásodat.
+. Controlled teleportation allows you to select on the map your destination location.;Az irányított teleportálás lehetővé teszi, hogy a térképen kiválaszd, hova szeretnél érkezni.
+. However, each teleportation will cost you nutrition so use it wisely.;Fontos, hogy bölcsen használd ezt a készséget, mivel minden egyes teleportálás csökkenti a tápanyagszintedet.
+. To access teleport-at-will you need to long press/right click on your character.;Az önkéntes teleportáláshoz tartsd ujjad hosszan/használd a jobb klikket a karaktereden.
+
+# Dual wielding;Kétkezes harc
+. Dual wielding allows the character to hold two single handed weapons.;A kétkezes harc lehetővé teszi a karaktered számára, hogy két egykezes fegyvert tartson egyszerre magánál.
+. This allows for two attacks instead of one but the chance of hitting is reduced.;Ez egy helyett kettő támadást tesz lehetővé, de a találat esélyét csökkenti.
+. If you are skilled then it is only a -2 to attack on the offhand.;Gyakorlottként ez csak -2-t jelent a másodlagos fegyvernél.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.;Egyéb esetben ez a szám -2 az elsődleges fegyvernél, és -4 a másodlagos fegyver esetében.
+
+# Crafting;Barkácsolás
+. Items can be scrapped into their raw essence and base material on a workbench.;A tárgyakat a munkapadon a nyers esszenciájukra és az őket alkotó alapanyagukra lehet szétbontani.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.;Az esszencia az alkotás lényegi összetevője, mely mind hétköznapi, mind mágikus tárgyakból kivonható.
+. New items can be crafted on a workbench using enough of the base material and essence.;Új tárgyakat a munkapadon lehet készíteni, elegendő alapanyag és esszencia felhasználásával.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).;A munkapadok maradék anyagokból generálódnak (0 - 10 esszencia és 6 véletlenszerű anyag 10 - 200).
+. Materials are not transferable between workbenches.;Az anyagok nem helyezhetők át egyik munkapadról a másikra.
+/
+. The crafting skill influences how much material you gain when scrapping.;A barkácsolási képesség befolyásolja, hogy mennyi anyagot nyersz a szétszedés során.
+. That is, when unskilled you recover only 50% of the scrapped material.;Amennyiben gyakorlatlan vagy, szétszedéskor az anyagok csupán 50%-át nyered ki.
+/
+` Unskilled  =  50%;Gyakorlatlan =  50%
+` Proficient =  60%;Jártas       =  60%
+` Specialist =  70%;Specialista  =  70%
+` Expert     =  80%;Szakértő     =  80%
+` Master     =  90%;Mester       =  90%
+` Champion   = 100%;Bajnok       = 100%
+/
+. The crafting skill influences how much material you need when crafting.;A barkácsolási képesség azt is befolyásolja, hogy barkácsoláskor mennyi anyagra van szükséged.
+. That is, when unskilled you need 150% of the required material to craft an item.;Amennyiben gyakorlatlan vagy, a kívánt anyagok 150%-ával kell rendelkezned, hogy létrehozhasd a tárgyat.
+/
+` Unskilled  = 150%;Gyakorlatlan = 150%
+` Proficient = 140%;Jártas       = 140%
+` Specialist = 130%;Specialista  = 130%
+` Expert     = 120%;Szakértő     = 120%
+` Master     = 110%;Mester       = 110%
+` Champion   = 100%;Bajnok       = 100%
+
+# Enchantment;Igézés
+. Weapons and armour have a modifier that can be changed with enchantment magic.;A fegyverek és páncélok rendelkeznek egy módosítóval, amelyet igézőmágiával lehet megváltoztatni.
+. The modifier is limited to between {Min} and {Max}.;A módosító a {Min} és {Max} közötti értékre korlátozódik.
+. A modifier of +0 is a normal, mundane item.;A +0-ás módosítóval rendelkező tárgy hétköznapinak számít.
+. Modifiers on armour apply to your defence score.;A páncélzatra vonatkozó módosítók a védekezési pontszámot befolyásolják.
+. Modifiers on weapons apply to your attack and damage scores.;A fegyverekre vonatkozó módosítók a támadási és sebzési pontszámot befolyásolják.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.;A tárgy megsemmisül, ha a módosítót a {Min} vagy {Max} értéken túl próbálod módosítani.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;Az ereklyéket {Modifier}-ig lehet igézni. Ez a szám nullára áll vissza, ha túlléped.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;A tárgyakat is lehet igézéssel fejleszteni (például egy bádogsípot mágikus síppá).
+
+# Punishments;Büntetések
+. This severe curse can be gained by magical means or misconduct.;Ezeket a súlyos átkokat mágikus eszközökkel vagy helytelen cselekedetekkel tudod magad ellen fordítani.
+. There is a chance of being punished each time your karma dips below zero.;Esélyes, hogy minden olyan alkalommal, amikor a karmád nulla alá megy, büntetést kapsz.
+. Only one punishment can be active at one time.;Egyszerre csak egy büntetés lehet aktív.
+. A punishment can be released with any remove curse magic.;A büntetésektől átoklevétel-mágiával szabadulhatsz meg.
+
+# Charming & taming;Elbűvölés és szelidítés
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.;A szinted és a kívánt entitás szintje közötti különbség százalékos arányban növeli/csökkenti a hűség időtartamát.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.;Ha például 10-es szintű vagy, és egy 20-as szintű lényt bűvölsz el, hűségének időtartama csupán fele annyi ideig fog tartani.
+. The charisma bonus for you and the target entity also modifies this relative percentage.;Kettőtök karizmabónusza is módosítja ezt a relatív százalékot.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.;Például 4-es szintűként 18-as karizmával (+4) úgy tudsz bűvölni, mintha 8-as szintű lennél.
+
+# Death;Halál
+. There are seven mechanics for death:;Hétféleképpen érhet el a vég:
+/
+* life points reaches zero;az életerőd nullára csökken
+* any ability score reaches zero;bármely adottságpontod nullára csökken
+* starvation;éhezés
+* death effect (eg. wand of death);halálhatás (pl. halál pálcája)
+* genocide;népirtás
+* incarceration (eg. turned into a statue);bebörtönzés (pl. kővé válás)
+* decapitation (eg. vorpal attacks);lefejezés (pl. vorpal-támadás)
+
+# Revenants;Kísértetek
+. Upon your death there is a 50% chance of creating a revenant on the current level.;Halálod után 50% esély van arra, hogy az aktuális szinten egy kísértet keljen életre.
+. When you go down stairs there is a 50% chance of encountering this revenant.;Amint lefelé haladsz a kazamatában, 50% az esélye, hogy találkozol ezzel a kísérettel.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.;A kísértet a korábbi éned újjáéledt, ellenséges változata, amely még mindig fel van szerelve az összes fegyvereddel és páncéloddal.
+. They will be as tough as you were at full health and may be quite challenging at times.;A kísértetek ugyanolyan erősek lesznek, mint amilyen te voltál teljes életerővel a halálod előtt, így időnként nehéz lesz megbirkózni velük.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.;Előfordulhat, hogy meghalsz egy kísértetszinten, és a következő karakterednek két kísértettel is meg kell majd küzdenie.
+. Level 1 will never create a revenant.;Az 1. szinten soha nem kelnek életre kísértetek.
+
+# Fame;Hírnév
+. Fame is calculated by the following formula.;A hírnév a következő képlet alapján kerül kiszámításra.
+/
+` = Maximum Depth x {Multiplier};= Maximum mélység x {Multiplier}
+` + Explored Maps x {Multiplier};+ Szintek térképei x {Multiplier}
+` + Visited Locations x {Multiplier};+ Bejárt helyek x {Multiplier}
+` + Discovered Items x {Multiplier};+ Felfedezett tárgyak x {Multiplier}
+` + Encountered Entities x {Multiplier};+ Fellelt entitások x {Multiplier}
+` + Possessed Artifacts x {Multiplier};+ Birtokolt ereklyék x {Multiplier}
+` + Earned Experience (capped to {Cap});+ Megszerzett tapasztalat (felső határ: {Cap})
+` + Development Level x {Multiplier};+ Fejlődési szint x {Multiplier}
+` + Practised Skills x {Multiplier};+ Begyakorolt képességek x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level);+ Megtanult varázslatok x {Multiplier} (alap-manakövetelmény összege x elsajátítási szint)
+` + Increased Life x {Multiplier};+ Életerő növekedése x {Multiplier}
+` + Increased Mana x {Multiplier};+ Mana növekedése x {Multiplier}
+` + Adjusted Attributes x {Multiplier};+ Tulajdonságok alakulása x {Multiplier}
+` + Acquired Talents x {Multiplier};+ Megszerzett készségek x {Multiplier}
+` + Gained Resistances x {Multiplier};+ Megszerzett ellenállások x {Multiplier}
+` + Total Inventory Worth (in gold);+ Teljes leltár értéke (aranyban)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.;A leltár teljes értékének van egy felső határa, így nem haladja meg a többi pontszámot.
+
+# Resurrect and continue;Feltámasztás és folytatás
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.;Ez a választható lehetőség akkor hasznos, ha a karakteredet látszólag igazságtalanul vagy szerencsétlenül érte utol a vég.
+. You may learn that your character was not viable and death comes quick again.;Lehet, a karakteredről kiderül, hogy nem volt életrevaló, így a halál ismét gyorsan eljön érte.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.;Akárhányszor feltámaszthatod karakteredet, azonban az addig megszerzett összes hírneved nullázódni fog.
+. Fame achieved subsequent to your resurrection will contribute to your score.;A feltámasztás után elért hírnév hozzáadódik a pontszámodhoz.
+. This is similar to the 'explorer mode' from the original Nethack.;Ez hasonlít az eredeti Nethack "felfedezőmódjához".
+
+# Multiplayer;Többjátékos mód
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;A többjátékos mód az Invention platform "grafikus telnet" (graphical telnet) technológiáján alapul.
+. This means the game is executed on the server and the user interface is projected to each of the clients.;Ez azt jelenti, hogy a játékot a szerveren hajtják végre, a felhasználói felületet pedig minden egyes kliensre kivetítik.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.;A játék WIFI-n, LAN-on és az interneten keresztül is megtörténhet, mivel a kommunikáció TCP/IP-alapú.
+. This technology only works well with low latency (less than 30ms ping should be playable).;Ez a technológia csak alacsony látencia esetén működik jól (a 30 ms-nál kisebb pingnek már játszhatónak kell lennie).
+/
+. One player needs to be the server and HOST the game.;Egy játékosnak szerverként a játék LÉTREHOZÓJÁNAK (host) kell lennie.
+. All other players are clients and JOIN the game.;Az összes többi játékos CSATLAKOZIK a játékhoz.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.;A "host-játékosnak" meg kell keresnie az IP-címét az eszköz hálózati beállításaiban, és meg kell osztania a csatlakozó játékosokkal.
+. Firewall settings and port forwarding may be required when playing over the internet.;Az interneten keresztül történő játékhoz tűzfalbeállításokra és porttovábbításra is szükség lehet.
+/
+. The HOST can use 3717 and tap CONNECT.;A HOST mondjuk a 3717-es portot használva a CONNECT gombbal elindítja a játékot.
+. The other players JOIN by typing in the host's IP Address and the port.;A többi játékos pedig CSATLAKOZIK a host IP-címének és a portnak a beírásával.
+. For example: 192.168.1.5:3717;Például: 192.168.1.5:3717
+
+# Translations;Játékfordítások
+. The language translations have been contributed by a number of dedicated players.;A játékban található fordításokhoz számos elkötelezett játékos járult hozzá.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.;Egy fordítás elkészítése hatalmas munka eredménye, és a későbbiekben is folyamatos karbantartást igényel.
+. The percentage on the language selection indicates the current completeness of the translation.;A nyelvek mellett található százalékok mutatják, hogy az adott fordítás mekkora arányban van kész.
+. You can also browse the individual translations in the Diagnostics screen.;A Diagnosztika fülön tudod megtekinteni a konkrét fordításokat, eredeti forrásuk mellett.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.;Amennyiben egy új fordítás létrehozásában, egy már meglévő fordítás karbantartásában szeretnél részt venni vagy egy hibát szeretnél kijavítani, kérlek, vedd fel a kapcsolatot a játék fejlesztőjével.
+
+# Master mode;Mestermód
+. This is a cheat mode for more quickly learning the secrets of Pathos.;Ebben a "csalómódban" gyorsabban elsajátíthatod a Pathos titkait.
+. Any adventures in this mode will not be tracked in the hall of fame.;Az ebben a játékmódban játszott kalandok eredményei nem kerülnek be a Dicsőség Csarnokába.
+/
+- ` | open master console (more commands); ` | mestermódkonzol megnyitása (még több parancs)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | zóna elsötétítése
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | egy véletlenszerű entitás lerakása, amely elnyeli a karaktert
+- shift + F | all adjacent enemies are charmed; shift + F | összes közeli ellenség elbűvölése
+- shift + G | gain 1000 gold; shift + G | +1000 arany
+- shift + I | identify all items on the floor; shift + I | a padlón lévő összes tárgy azonosítása
+- shift + W | jump at will; shift + W | önkéntes ugrás
+- shift + D | light this zone; shift + D | zóna megvilágítása
+- shift + M | reveal the entire map; shift + M | egész térkép feltárása
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | összes szint térképének feltárása
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | kazamata átalakítása (a végjáték térképe megváltozik)
+- shift + P | polymorph into any entity; shift + P | átváltozás bármilyen entitássá
+- shift + T | teleport to a target zone; shift + T | teleportálás kívánt helyre
+- shift + Z | learn all spells; shift + Z | összes varázslat megtanulása
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | automatikus használat bekapcsolása (ha rálépsz egy négyzetre, az összes rajta lévő tárgyat használni fogod)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | visszatérés a kazamata előző szintjére (akkor is, ha nem lépcsőn állsz)
+- > | descend to the next dungeon level (even when not on a staircase); > | leereszkedés a kazamata következő szintjére (akkor is, ha nem lépcsőn állsz)
+- F5 | refresh the screen; F5 | képernyő frissítése
+- F9 | quick load; F9 | gyorsbetöltés
+/
+. There are additional manipulations built into the character panel and contextual help.; A karakterpanel és a kontextuális segítség további lehetőségeket tartalmaz.

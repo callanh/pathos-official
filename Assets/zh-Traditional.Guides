@@ -1,0 +1,447 @@
+# Commands; 命令
+. Single tap/left click or arrow keys to move and attack.; 輕按，左鍵或者方向鍵來移動和攻擊。
+. Long press/right click to operate doors/traps.; 長按或者右鍵來操作門/陷阱以及裝備/使用背包或者地板上的道具。
+. Double tap to pick up items, traverse stairs or wait one move.; 雙擊來撿起地上的道具，在樓層間移動或者等待一個回合。
+/
+- . | wait one turn (also double tap on self); . | 等待一回合（也可以雙擊自身來完成）
+- , | pick up the top item on the floor; , | 撿起地上的第一個道具
+- A | toggle log (click the log to expand/collapse); A | 打開/或關閉日誌 (點擊日誌來展開/隱藏)
+- B | move down-left; B | 向左下移動
+- C | toggle character; C | 切換玩家
+- D | re-use last item; D | 重新使用上一個道具
+- E | mount or dismount your steed; E | 騎乘或離開你的坐騎
+- F | toggle floor; F | 調整樓層
+- G | re-equip last item; G | 重新裝備最後一個物品
+- H | move left; H | 向左移動
+- I | toggle inventory; I | 打開/關閉背包
+- J | move down; J | 向下移動
+- K | move up; K | 向上移動
+- L | move right; L | 向右移動
+- M | toggle map; M | 打開/關閉地圖
+- N | move down-right; N | 向右下方移動
+- O | hide from view; O | 躲藏進陰影（需要隱藏天賦）
+- P | polymorph at will; P | 自由變身（如果你能那麼做）
+- Q | save or quit this game; Q | 保存或者放棄遊戲
+- R | for rest mode to recover life and mana; R | 進入休息模式來恢復生命和魔法
+- S | for search mode for secret doors and traps; S | 進入搜索模式來搜索暗門和陷阱
+- T | teleport at will; T | 自由傳送（如果你能那麼做）
+- U | move up-right; U | 向右上移動
+- V | kick in a direction; V | 朝某個方向踢
+- W | jump in a direction (if you have the talent); W | 朝某個方向跳躍（如果你有跳躍天賦）
+- X | re-cast last spell; X | 重新施放上一個法術
+- Y | move up-left; Y | 向左上移動
+- Z | toggle cast spells (read books to learn spells); Z | 打開/關閉施法菜單（通過讀魔法書來學習魔法）
+- ' | blink in a direction; ' | 向某方向閃現
+- ;; | telekinesis in a direction; ;; | 念力控制一直線上的單位
+- > | descend stairs; > | 下樓
+- < | ascend stairs; < | 上樓
+- / | toggle chat in multiplayer; / | 顯示/隱藏多人遊戲中的聊天功能
+- \ | view knowledge panel; \ | 瀏覽知識面板
+- + | zoom in; + | 放大
+- - | zoom out; - | 縮小
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | 左側快捷動作(使用shift+數字 切換動作)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | 右側快捷動作(使用shift+數字 切換動作)
+- INSERT | toggle tunnelling mode; INSERT | 切換至創造通道模式
+- SHIFT + arrow | fire a missile without moving; SHIFT + 方向鍵 | 原地進行遠程攻擊
+- CTRL + arrow | interact with the target without moving; Ctrl + 方向鍵 | 原地與目標進行交互
+- ENTER | select the top item on the floor; ENTER | 選擇地板上的第一個道具
+- ESCAPE | hides open panels and clears your target; ESCAPE | 關閉菜單面板，取消目標選擇
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 關閉打開的對話窗口並解除目標選中
+- SPACE | toggle real-time or turn-based; SPACE | 切換實時模式
+- PgUp | switch to previous character; PgUp | 切換上一個角色
+- PgDown | switch to next character; PgDown | 切換下一個角色
+- ALT | show labels; ALT | 顯示對像標籤
+- F1 | show this help; F1 | 顯示幫助
+- F6 | quick save; F6 | 快速存檔
+- F10 | open side menu; F10 | 打開側邊欄
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | 切換全屏和窗口模式（Window桌面版有效）
+
+# General mechanics; 一般機制
+. You will die.; 你會死。
+. But don't despair, you will learn something new each time.; 但是不要害怕，你每次都會學到些新東西。
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos的遊戲目標是活到40層，然後逃回1層。
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos是回合制的，所以當事情變得麻煩起來的時候你可以慢慢思考該怎麼辦。
+. Each class starts with different items, skills and abilities.; 每個職業的初始道具，專精和天賦都不一樣。
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 藥劑、卷軸、戒指和部分防具的效果（外形）會在遊戲開始時隨機設置。這意味著不同遊戲之間的知識並不通用。
+. For example, the orange potion will not have a consistent effect across different adventures.; 比如說，橙色藥劑的效果在不同的冒險中會不一樣。
+
+# Combat; 戰鬥
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; 當攻擊目標時，會進行一次d20的判定，得到一個1-20之間的隨機數。
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; 如果投出了1，代表嚴重的失誤，如果投出了20，代表暴擊。
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; 嚴重的失誤會導致本回合內任何接下來的攻擊都不會發生（如果你能攻擊多次）
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; 暴擊必定命中，會導致武器基礎傷害翻倍。注意附魔和力量屬性修正不會翻倍。
+. The strength bonus to damage is doubled when using a two handed weapon.; 當使用雙手武器的時候，力量屬性修正翻倍。使用弓箭時，會額外獲得基於敏捷的修正。
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; 如果暴擊是唯一能夠命中的方式，此次攻擊會變成普通攻擊（無額外傷害）
+. Otherwise, this number is added to the attack score and compared to the defence score.; 否則，這個數字加上你的攻擊會和目標的防禦進行比較。
+/
+` (Attack + d20) >= Defence; (攻擊 + d20) >= 防禦
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; 你的攻擊力和防禦力會被你的天賦，專精以及附魔影響。
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; 武器附魔直接影響你的攻擊力，以及你造成的傷害值。
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; 你的等級攻擊力獎勵是基於你的等級，且以下公式適用於所有職業：
+/
+` Skill Bonus = (Level / 4) + 1; 等級獎勵 = (等級 / 4) + 1
+/
+. Your defence is also affected by your circumstances:; 你的防禦力會被你的狀態所影響：
+/
+` {Mod} defence when blind; 當致盲時{Mod} 防禦
+` {Mod} defence when invisible; 當隱身時{Mod} 防禦
+` {Mod} defence when displaced; 當錯位時{Mod} 防禦
+` {Mod} defence when paralysed or sleeping; 當麻痺或者睡眠時{Mod} 防禦
+` {Mod} defence when stuck; 當卡住時{Mod} 防禦
+` {Mod} defence when punished; 當被懲罰時{Mod} 防禦
+` {Mod} defence when attacked from concealment; 當被偷襲時{Mod} 防禦
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; 如果你的重甲技能是生疏的，重甲會讓你的速度-{UnskilledPenalty}，如果是熟練以上則改為-{SkilledPenalty}。
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; 如果你的中甲技能是生疏的，中甲會讓你的速度-{UnskilledPenalty}，如果是熟練以上則改為不受影響。
+. Light armour has no speed penalty if you are unskilled.; 輕甲無論何時都不會降低你的速度。
+. Unskilled use of armour also attracts a one point defence penalty.; 不擅長的盔甲（技能是生疏的）會讓你的防禦-1。
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; 當你穿著所有的防具都是擅長的（技能熟練以上）時，你會獲得敏捷帶來的防禦修正。
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; 當穿有重甲時，防禦修正值最高為+2；當穿有中甲時，修正值最高為+4。
+
+# Skills; 技能
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; 每個技能會有一個-1000到2000的熟練度，如果<0則代表不擅長該技能（生疏）。否則根據熟練度會分為5個等級：
+/
+` (0) Proficient =    0..199; (0) 熟練     =    0..199
+` (1) Specialist =  200..499; (1) 精通     =  200..499
+` (2) Expert     =  500..999; (2) 專家     =  500..999
+` (3) Master     = 1000..1999; (3) 大師     = 1000..1999
+` (4) Champion   = 2000; (4) 冠軍     = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; 技能熟練度是通過技能來提升的，比如拿著武器打人或者穿著盔甲被打。
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; 武器技能會為你的攻擊帶來額外的攻擊力加成和傷害加成。
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; 比如說，大師級重刃技能會在你使用雙手劍的時候給你帶來+3攻擊力和+3傷害的獎勵。
+. This bonus to damage is doubled on a critical hit.; 這個傷害獎勵在暴擊時會翻倍。
+/
+. Armour skill gives you the competency level as a defence bonus.; 防具技能會給你帶來額外的防禦加成。
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; 比如說，專家級重甲技能會在你穿著板甲的時候給你帶來+2防禦力獎勵。
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; 防禦獎勵由身上所有的裝備的平均技能等級決定。
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; 比如說，你的重甲技能是專家級（2點獎勵），但你的輕甲是熟練級（0點獎勵），且你裝備了一個板甲（重甲）和一個小盾（輕甲），那麼你得到的防禦獎勵是+1。
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; 魔法類的技能會給你帶來施法距離和施法效果的提升。
+. These skills are practised by learning and casting spells.; 這些技能通過學習法術和釋放法術來提升。.
+
+# Life; 生命值
+. {LifeDefinition};{LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.;您的初始生命值由兩部分相加而成，種族和職業決定的基礎數值，和您的體質修正值。
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.;當您升級之後，您的最大生命值會產生變化，變化數值是隨機的，其值為種族、職業決定的基礎數值與體質修正值之和。
+. There are also magical means to increase your life potential.;您可以通過一些神奇的方法增加自己的基礎生命值。
+. However, life cannot be increased past the maximum potential plus your constitution score.;但是，您的最大生命值不能超過基礎生命值上限與您體質之和。
+/
+` Initial = Class base + Race base + {CON} modifier;初始生命值 = 職業基礎數值 + 種族基礎數值 + {CON} 修正值
+` Advancement = Class roll + Race roll + {CON} modifier;升級獲得最大生命值 = 職業決定的隨機數 + 種族決定的隨機數 + {CON} 修正值
+` Limit = Initial + max(Advancement) x Level + {CON} score;最大生命值上限 = 初始生命值 +  通過升級獲得的生命值中的最大值 x 等級 + {CON} 修正值
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.;生命值每過({LevelCap} - 等級 - {CON} 修正值)個回合可以自動回復一點。
+. Sleeping improves recovery by halving the number of turns.;睡覺可以讓自動回復所需的回合數減半，從而加快恢復。
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.;極度飢餓會使您每過{StarvationRecoveryRate}個回合損失一點生命值。
+. Life regeneration guarantees the recovery at one point per turn.;生命恢復天賦可以使您每回合回復一點生命。
+. The {inediate} diet slows recovery of life by doubling the number of turns.;{inediate}食物會讓自動回復所需的回合數翻倍，從而減慢恢復。
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;當一個{inediate}食性的角色擁有{hunger}狀態或天賦時，生命值將不再自動回復。但是如果你有{life regeneration}天賦或狀態時，生命回復會和正常情況一樣緩慢增長
+. Active {phasing} prevents the natural recovery of life.;激活{phasing}時會抑制生命值的自然回復。
+
+# Mana; 法力值
+. {ManaDefinition};{ManaDefinition}
+. There are no adverse effects for exhausting your mana.;耗盡您的法力不會產生負面影響
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.;當您升級之後，您的最大法力值會產生變化，變化數值是隨機的，其值為種族、職業決定的基礎數值與智力修正值之和。
+. There are also magical means to increase your mana potential.;您可以通過一些神奇的方法增加自己的基礎法力值。
+. However, mana cannot be increased past the maximum potential plus your wisdom score.;但是，您的最大法力值不能超過基礎法力值上限與您智力之和。
+/
+` Initial = Class base + Race base + {WIS} modifier;初始法力值 = 職業基礎數值 + 種族基礎數值 + {WIS} 修正值
+` Advancement = Class roll + Race roll + {WIS} modifier;升級獲得最大法力值 = 職業決定的隨機數 + 種族決定的隨機數 + {WIS} 修正值
+` Limit = Initial + max(Advancement) x Level + {WIS} score;最大法力值上限 = 初始法力值 +  通過升級獲得的法力值中的最大值 x 等級 + {WIS} 修正值
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.;法力值每過({LevelCap} - 等級 - {WIS} 修正值)個回合可以自動回復一點。
+. Sleeping improves recovery by halving the number of turns.;睡覺可以讓自動回復所需的回合數減半，從而加快恢復。
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.;極度飢餓會使您每過{StarvationRecoveryRate}個回合損失一點法力值。
+. Mana regeneration guarantees the recovery at one point per turn.;魔力恢復天賦可以使您每回合回復一點法力。
+. The {inediate} diet slows recovery of mana by doubling the number of turns;{inediate}食物會讓自動回復所需的回合數翻倍，從而減慢恢復。
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;當一個{inediate}食性的角色擁有{hunger}狀態或天賦時，魔法值將不再自動回復。但是如果你有{mana regeneration}天賦或狀態時，魔法回復會和正常情況一樣緩慢增長
+. Active {phasing} prevents the natural recovery of mana.;激活{phasing}時會抑製法力的自然回復。
+
+# Nutrition; 營養
+. Maintaining a food supply is important to avoid starving to death.; 保持食物供給是很重要的，這樣你才不會餓死。
+. In desperate or pragmatic times you can eat corpses.; 有些時候你可以吃掉屍體。
+
+# Corpses; 屍體
+. The bodies of your enemies and allies can be a source of nutrition.; 敵人和盟友的屍體都可以被吃掉。
+. Many corpses also convey harm and illness but some may impart beneficial talents.; 很多屍體會造成負面效果，但是有些也會帶給你正面的天賦。
+. Be aware that cannibalism is considered a bad idea even in desperate times.; 注意食人就算在絕境中也是不被推崇的。
+
+# Encumbrance; 負重
+. Everything you pick up adds to your encumbrance and you may become burdened.; 任何你撿起的東西會增加你的負重，你最終可能會負擔過重。
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; 這會導致你的動作變慢，使你變成地下城的居民的獵物。
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); 負重上限 = (力量 - 營養懲罰) x {WeightMultiplier} + ({WeightPercentage} 角色體重)
+
+# Resting; 休息
+. The camp-fire action button toggles resting.; 營火圖標可以打開/關閉休息模式。
+. While resting your life and mana recover at a faster rate.; 當處於休息模式時你的生命和魔法恢復得更快。
+. Companions will rest when you rest.; 你的同伴會和你一起休息。
+. Resting will be interrupted if there is a hostile in your zone.; 如果有敵對角色出現在視野內，你的休息會被打斷。
+
+# Searching; 搜索
+. The eye action button toggles searching.; 眼睛圖標可以打開/關閉搜索模式。
+. Searching will find secret doors and concealed traps.; 搜索模式可以讓你更快地找到隱藏的陷阱和暗門。
+. Companions will search when you search to help find secrets.; 你的同伴會和你一起搜索。
+. Searching will be interrupted if there is a hostile in your zone.; 如果有敵對角色出現在視野內，搜索會被打斷。
+
+# Abilities; 能力
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; 你有六項能力，分別是力量，敏捷，體質，智力，感知和魅力。
+. Your starting ability scores is determined by rolling 4d6 six times.; 你的起始屬性是由6次4d6擲骰子決定的。
+. The lowest roll from each set is dropped giving a score between 3 and 18.; 每次4次投點的最低的數值會被無視，剩下三項之和就是3到18之間的一個值。
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; 最高的值會隨機分配到你的主屬性上，可以在幫助 > 職業裡確認各職業的主屬性。
+. Racial limits are then applied as shown in help > races.; 不同種族屬性上限不同，可以在幫助 > 種族裡確認。
+. Any points that are reduced by racial limits are transferred to another ability.; 任何因為種族屬性上限而被降低的屬性會轉移到一項別的屬性中去。
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma; 運程
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; 當你殺死怪物時，你會獲得運程；當你祈求神恩的時候，你會消耗運程（比如祈禱和在祭壇邊請求恩惠）。在無人的祭壇用屍體祭祀，在大多數情況下也可以獲得運程。
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; 當你殺死中立生物（背景色是藍色）或者盟友（背景色是淺藍色）的時候，你也會失去運程。
+. You can gain additional karma by donating gold to a priest at a shrine.; 你可以通過給牧師捐贈金錢來獲得額外的運程。
+. You can pray at any time by long press/right click on your character.; 你可以在任何時候長按或者右鍵點擊你的角色來祈禱。
+. This will cost {Number} karma and has the following effects:; 祈禱會消耗250運程，獲得以下效果：
+/
+` karma >= hopeful; 運程 >= 充滿希望
+`   gain {Number} nutrition when hungry;   當處於飢餓狀態時，獲得250營養。
+`   unafflict;  治癒感染。
+`   unpolymorph;   取消變形。
+`   escape from being stuck;   從卡住的狀態中脫出。
+`   remove punishment;   移除懲罰
+/
+` karma >= good; 運程 >= 良好
+`   fully healed if less than half life;   如果生命值低於一半，將其回滿。
+`   fully restored if less than half mana;   如果魔法值低於一半，將其回滿。
+/
+` karma >= glorious; 運程 >= 充滿榮耀
+`   remove blindness;   移除 致盲
+`   remove hallucination;   移除 幻覺
+`   remove rage;   移除 狂暴
+`   remove sickness;   移除 疾病
+/
+` karma >= exalted; 運程 >= 聲名顯赫
+`   remove one curse;   移除 一個詛咒
+`   raise dead for one loyal companion;復活一位忠誠的夥伴
+
+# Diets; 食性
+. Entities have different diets that allow them to eat specific materials.; 不同單位有不同的食性，這使得他們可以吃掉不同的東西。
+/
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
+
+# Spells; 咒語
+. Spells are learned by studying from magical books found in the dungeon.; 咒語是通過在地下城中找到的法術書來學習的。
+. Any class can learn spells but only the skilled will use their mana efficiently.; 任何職業都可以學習咒語，但是只有熟練以上的專精才可以有效率地使用它們。沒有熟練以上的專精使用咒語時，消耗的魔法值翻倍。
+
+# Gold; 金幣
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; 金幣不計算在你的負重之內，在地下城裡有許多用途。
+. Gold can be traded for items from merchants or donated to priests for karma.; 金幣可以用來和商人交易，也可以捐贈給牧師換取運程。
+
+# Companions; 同伴
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; 可馴化的動物可以通過給它們餵食來馴化它們。（但是它們不會餓死）
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; 如果貓和狗踩到了一件被詛咒的道具或者設施（比如噴泉）上，它們會叫一聲。
+. You can mount some types of companions and ride around the dungeon.; 你可以騎到某些同伴身上，在地下城裡馳騁。
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; 你的坐騎有時候會替你攻擊，有時候也會替你成為攻擊的目標。
+. Your steed will be the first into any traps so take good care of their well-being.; 你的坐騎會比你先踩到陷阱裡，所以注意保持它們的血量。
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 熟練以上的騎手專精會帶給坐騎額外的攻擊力和防禦力。
+. A steed is useful when you are burdened and it is strong enough to take your load.; 當你負擔過重，你的坐騎可以為你分擔一部分負重。
+. To dismount your steed you need to long press/right click on your character.; 如果想從你的坐騎上下來，你可以右鍵單擊或者長按你的角色來選擇下馬。
+
+# Engulfing; 吞噬
+. Some entities can swallow or engulf other entities.; 有些單位可以吞噬別的單位。
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; 當被吞下去的時候，你每回合會受到傷害，但是可以一直掙扎，直到你從吞噬狀態下解脫出來。
+. Alternatively, there are many mechanisms which can be used to escape.; 除此以外，也有很多別的方法可以令你脫身。
+. It is impossible to fight with your equipped weapons when swallowed.; 被吞下去時，你無法用你的武器進行攻擊。
+. If you cast when engulfed the spell will hit your engulfer.; 如果你在被吞下去的時候施法，法術會擊中把你吞下去的單位。
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; 但是，魔法射線還是可能會在吞噬者體內反彈，並打到你的身上。
+
+# Spawning; 怪物生成
+. Monsters will randomly spawn into areas outside your current zone.; 怪物會在你所在區域外隨機生成。
+. The rate of spawning increases as you descend deeper into the dungeon.; 你的深度越深，怪物生成的速度就越快。
+. The talent of aggravation also increases the spawn rates for monsters.; 好鬥天賦也會加速怪物的產生。
+
+# Polymorph; 變形
+. Transform into another entity with all the advantages or disadvantages that brings.; 變成另一種單位，獲得它的一切優點和缺陷。
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; 比如說，一條龍沒有手，但是可以飛，並且有致命的吐息。
+. When you perish in your polymorphed form you will often revert to your original form.; 當你在你的變身形態下死亡時，你一般會回到你的初始狀態。
+. You can transform into the entity of your choice when you have polymorph control.; 當你擁有變形控制天賦時，你可以決定你要變成的對象。
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; 你只能選擇變成你已經殺死或者變化過的對象，每次變形都會消耗一定的營養
+. To access polymorph-at-will you need to long press/right click on your character.; 如果想要進入變形菜單，右鍵或者長按你的角色，然後選擇變形。
+
+# Locks; 鎖
+. Doors and containers can be locked and possibly trapped.; 門和容器有時候會上鎖，還可能帶有陷阱。
+. You can kick locks to break them but this will trigger any trap.; 你可以選擇把鎖踢開，但是那樣會觸發上面的陷阱。
+. Items such as skeleton keys and lock picks can be used to unlock.; 骷髏鑰匙和開鎖器可以用來開鎖。
+. These items can break and the chance is influenced by your competency with locks.; 這些道具會損壞，幾率由你的開鎖專精決定。
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; 另外，被詛咒的道具的損壞概率加倍，被祝福的道具損壞概率減半。
+. There are other magical items and spells that can be used to unlock.; 你也可以用別的魔法道具和咒語來解開鎖。
+
+# Traps; 陷阱
+. Traps have a difficulty rating that reflects the lethality of the device.; 陷阱有一個難度評價，反映的是它的危險性。
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; 難度評價也等於能生成該陷阱的最低樓層數。
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 拆除陷阱的幾率是從該陷阱的難度，你的陷阱專精等級已經敏捷值計算出來的。
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; 如果你有任何短期狀態，比如笨拙，致盲，眩暈，混亂或者幻覺，你會更難以拆除陷阱。
+. Untrapping requires you to move into the square.; 你必須移動到陷阱所在的位置才能拆除它。。
+. A failure to untrap will cause it to be triggered.; 如果拆除失敗，陷阱就會被觸發，但是還是會消失。
+
+# Teleport; 傳送
+. Teleportation transports your character around the current dungeon level.; 傳送會讓你的角色移動到地下城的一個別的位置。
+. When uncontrolled, this is a random event that may help or hinder your journey.; 當不受控制的時候，這可能加速你的旅途，或者加速你的死亡。
+. Controlled teleportation allows you to select on the map your destination location.; 當你擁有傳送控制的天賦時，你可以在地圖上選擇你想傳送到的位置。注意，某些情況下你將無法使用傳送。
+. However, each teleportation will cost you nutrition so use it wisely.; 但是，每次傳送都會消耗你的營養，所以謹慎地使用它。
+. To access teleport-at-will you need to long press/right click on your character.; 想要進行可控傳送，你可以長按或者右鍵單擊你的角色，然後選擇傳送。
+
+# Dual wielding; 雙持武器
+. Dual wielding allows the character to hold two single handed weapons.; 雙持武器允許你的角色同時使用兩把武器。
+. This allows for two attacks instead of one but the chance of hitting is reduced.; 這將允許你在一回合內進行兩次攻擊，但是命中率會下降。
+. If you are skilled then it is only a -2 to attack on the offhand.; 如果你擁有熟練以上的副手武器專精，你的副手武器只會受到-2的攻擊懲罰。
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; 否則你的主手武器會獲得-2的攻擊懲罰，副手武器會獲得-4的攻擊懲罰。
+
+# Crafting; 製造
+. Items can be scrapped into their raw essence and base material on a workbench.; 在工作台上你可以將道具分解為精華和原料。
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; 精華是製造道具的必需品，可以通過分解普通道具和魔法道具得到。
+. New items can be crafted on a workbench using enough of the base material and essence.; 如果擁有足夠多的精華和原料，你可以製造新的道具。但是，你只能製造出你找到過的道具。
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 工作台在被創建時會附帶一些原料和精華。
+. Materials are not transferable between workbenches.; 原料無法在工作台之間轉移。
+/
+. The crafting skill influences how much material you gain when scrapping.; 製作專精會影響你分解道具時獲得的原料和精華。
+. That is, when unskilled you recover only 50% of the scrapped material.; 當你的製作專精在熟練以下（<0）的時候，你只會得到50%的原料。
+/
+` Unskilled  =  50%; 生疏  =  50%
+` Proficient =  60%; 熟練  =  60%
+` Specialist =  70%; 精通  =  70%
+` Expert     =  80%; 專家  =  80%
+` Master     =  90%; 大師  =  90%
+` Champion   = 100%; 冠軍  = 100%
+/
+. The crafting skill influences how much material you need when crafting.; 製作專精也會影響你在製作道具時消耗的原料的量。
+. That is, when unskilled you need 150% of the required material to craft an item.; 當你的製作專精在熟練以下（<0）的時候，你需要消耗150%的原料。
+/
+` Unskilled  = 150%; 生疏  = 150%
+` Proficient = 140%; 熟練  = 140%
+` Specialist = 130%; 精通  = 130%
+` Expert     = 120%; 專家  = 120%
+` Master     = 110%; 大師  = 110%
+` Champion   = 100%; 冠軍  = 100%
+
+# Enchantment; 附魔
+. Weapons and armour have a modifier that can be changed with enchantment magic.; 武器和防具有一個+x的前綴，來表示當前附魔的等級。
+. The modifier is limited to between {Min} and {Max}.; 附魔的等級只能是{Min}到{Max}。
+. A modifier of +0 is a normal, mundane item.; +0的附魔表示普通的道具。
+. Modifiers on armour apply to your defence score.; 防具上的附魔會加到你的防禦力裡。
+. Modifiers on weapons apply to your attack and damage scores.; 武器上的附魔會加到你的攻擊力和傷害裡。
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; 如果你試圖將附魔提高或者降低到{Min}到{Max}以外，這個道具會爆炸。
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 神器可以被最高附魔到{Modifier}，如果超過則會被重置為0
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 有些道具也可以升級，比如錫制口哨可以升級到魔法哨。
+
+# Punishments; 懲罰
+. This severe curse can be gained by magical means or misconduct.; 因為某些不當的行為或者魔法的關係，單位會獲得懲罰。
+. There is a chance of being punished each time your karma dips below zero.; 當每次你的運程降低到0以下的時候，你有可能會遭到懲罰。
+. Only one punishment can be active at one time.; 任何時候只會有一個懲罰生效。
+. A punishment can be released with any remove curse magic.; 懲罰可以用任何詛咒移除法術來解除。
+
+# Charming & taming; 魅惑 & 馴化
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; 你和目標之間的等級差決定了魅惑持續時間的修正。
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; 比如說，當你10級而目標20級的時候，魅惑持續時間只有原來的一半。
+. The charisma bonus for you and the target entity also modifies this relative percentage.; 你和目標的魅力值也會影響這個修正量。
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; 比如說，你4級的時候，魅力值為18（+4）意味著你在計算等級來決定修正量時就像你有8級一樣。
+
+# Death; 死亡
+. There are seven mechanics for death:; 有7種死亡的判定方式:
+/
+* life points reaches zero; 生命值變成0
+* any ability score reaches zero; 任何一項能力值降到0
+* starvation; 餓死
+* death effect (eg. wand of death); 即死效果（比如死亡之杖）
+* genocide; 滅絕效果（比如滅絕卷軸）
+* incarceration (eg. turned into a statue); 禁錮效果 （比如變成雕像）
+* decapitation (eg. vorpal attacks);斬殺 (比如 斷頭炸脖龍的攻擊)
+
+# Revenants; 復仇者
+. Upon your death there is a 50% chance of creating a revenant on the current level.; 在你死亡的時候，有50%的幾率會在當前層生成一個復仇者。
+. When you go down stairs there is a 50% chance of encountering this revenant.; 當你下樓的時候你有50%的幾率遇到這個復仇者。
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; 這個復仇者會是你之前的形態，有著同樣的裝備，但是是敵對的。
+. They will be as tough as you were at full health and may be quite challenging at times.; 他們會和你滿血的時候一樣強，而且有時候還是很有挑戰性的。
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; 因為可以在復仇者那層再次死亡，下一次你的角色就會有幾率遭遇兩個復仇者。
+. Level 1 will never create a revenant.; 第一層不會產生復仇者。
+
+# Fame; 聲望
+. Fame is calculated by the following formula.; 聲望由下面的公式決定
+/
+` = Maximum Depth x {Multiplier}; = 探索地下城深度 x {Multiplier}
+` + Explored Maps x {Multiplier}; + 已探索地圖數 x {Multiplier}
+` + Visited Locations x {Multiplier}; + 已拜訪地點數 x {Multiplier}
+` + Discovered Items x {Multiplier}; + 已發現物品數 x {Multiplier}
+` + Encountered Entities x {Multiplier}; + 已遭遇實體數 x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + 攜帶神器數 x {Multiplier}
+` + Earned Experience (capped to {Cap}); + 已獲得的經驗值 (到限制 {Cap})
+` + Development Level x {Multiplier}; + 已獲得等級數 x {Multiplier}
+` + Practised Skills x {Multiplier}; + 已練習技能數 x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + 學會的咒語 x {Multiplier} (咒語魔法消耗 x 咒語專精等級 之和)
+` + Increased Life x {Multiplier}; + 額外生命 x {Multiplier}
+` + Increased Mana x {Multiplier}; + 額外魔法 x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + 屬性調整值 x {Multiplier}
+` + Acquired Talents x {Multiplier}; + 已獲得天賦數 x {Multiplier}
+` + Gained Resistances x {Multiplier}; + 已獲得抵抗數 x {Multiplier}
+` + Total Inventory Worth (in gold); + 總背包價值 (以金幣為單位)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; 總背包價值受到限制，最高不會超過其他得分總和。
+
+# Resurrect and continue; 復活和繼續
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; 這個可選的功能是為了讓你的角色在一個看起來不該死掉或者不走運而死的時候能夠復活。
+. You may learn that your character was not viable and death comes quick again.; 你可能會發現你的角色並不能脫身，很快又會死掉。
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; 你可以無限復活，但是你得到的聲望會被清零。
+. Fame achieved subsequent to your resurrection will contribute to your score.; 在你角色復活之後得到的聲望會計入你的分數。
+. This is similar to the 'explorer mode' from the original Nethack.; 這個功能和原版Nethack中的探索者模式很像。
+
+# Multiplayer; 多人模式
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;多人模式由Invention平台的圖像telnet技術開發。
+. This means the game is executed on the server and the user interface is projected to each of the clients.;這意味著遊戲在服務器上運行，然後用戶界面在各個客戶端上顯示。
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.;你可以在WIFI\LAN（局域網）或者互聯網（需要公網IP）下聯機，因為通信是基於TCP/IP協議的。
+. This technology only works well with low latency (less than 30ms ping should be playable).;該聯機方法僅在低延遲下有效（延遲<30ms）
+/
+. One player needs to be the server and HOST the game.;一名玩家需要成為服務器（主機），並且HOST遊戲
+. All other players are clients and JOIN the game.;別的玩家需要JOIN（加入）遊戲。
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.;主機玩家需要確認自己的IP地址並告訴其他玩家。
+. Firewall settings and port forwarding may be required when playing over the internet.;當使用互聯網聯機時，可能需要調整防火牆和端口轉發。
+/
+. The HOST can use 3717 and tap CONNECT.;主機玩家可以使用3717端口，然後選連接。
+. The other players JOIN by typing in the host's IP Address and the port.;其他玩家需要輸入主機玩家的IP和端口然後點擊JOIN。
+. For example: 192.168.1.5:3717;比如：192.168.1.5:3717（局域網\同一個WIFI下的內網網址）
+
+# Translations; 翻譯
+. The language translations have been contributed by a number of dedicated players.;翻譯由部分熱心的玩家貢獻。
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.;完成翻譯是一種巨大的成就，並且需要持續的更新。
+. The percentage on the language selection indicates the current completeness of the translation.;在語言選擇部分的百分比顯示了當前某種語言的完成度。
+. You can also browse the individual translations in the Diagnostics screen.;你可以在調試窗口裡確認每條單獨的翻譯內容。
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.;如果你想貢獻新翻譯，維護已有的翻譯，或者提交修正，請聯繫作者。
+
+# Master mode; 大師模式
+. This is a cheat mode for more quickly learning the secrets of Pathos.; 這是一個作弊模式，目的是讓你更快瞭解Pathos的秘密。
+. Any adventures in this mode will not be tracked in the hall of fame.; 任何在該模式下的冒險不會進入名人堂。
+/
+- ` | open master console (more commands); ` | 打開大師模式控制台 (更多命令)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 在區域內製造黑暗
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | 產生一個隨機的吞噬者並被吞入
+- shift + F | all adjacent enemies are charmed; shift + F | 魅惑所有相鄰的敵人
+- shift + G | gain 1000 gold; shift + G | 獲得1000金幣
+- shift + I | identify all items on the floor; shift + I | 鑒定地上的所有道具
+- shift + W | jump at will; shift + W | 隨意跳躍
+- shift + D | light this zone; shift + D | 點亮該區域
+- shift + M | reveal the entire map; shift + M | 揭示完整地圖
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 揭示所有樓層的完整地圖
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | 改變地圖（脫離時的地圖變化）
+- shift + P | polymorph into any entity; shift + P | 變成任何單位
+- shift + T | teleport to a target zone; shift + T | 傳送到目標區域
+- shift + Z | learn all spells; shift + Z | 學會所有咒語
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | 關閉/開啟自動使用模式 (當你走到一個格子上時，你會使用那裡的所有道具)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | 前進到上一層（就算不在樓梯上也可以用）
+- > | descend to the next dungeon level (even when not on a staircase); > | 前進到下一層（就算不在樓梯上也可以用）
+- F5 | refresh the screen; F5 | 刷新屏幕
+- F9 | quick load; F9 | 快速讀檔
+/
+. There are additional manipulations built into the character panel and contextual help.; 在角色面板和別的地方還有一些提示。

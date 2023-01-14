@@ -1,0 +1,447 @@
+# Commands; Cẩu lệnh
+. Single tap/left click or arrow keys to move and attack.; Nhấn một lần / nhấp chuột trái hoặc các phím mũi tên để di chuyển và tấn công.
+. Long press/right click to operate doors/traps.; Nhấn lâu / nhấp chuột phải để vận hành cửa / bẫy.
+. Double tap to pick up items, traverse stairs or wait one move.; Nhấn hai lần để nhặt các vật phẩm, đi qua cầu thang hoặc đợi một lần di chuyển.
+/
+- . | wait one turn (also double tap on self); . | chờ một lượt (cũng nhấn hai lần vào bản thân)
+- , | pick up the top item on the floor; , | nhặt vật phẩm hàng đầu trên sàn
+- A | toggle log (click the log to expand/collapse); A | bật nhật ký (nhấp vào nhật ký để mở rộng / thu gọn)
+- B | move down-left; B | di chuyển xuống bên trái
+- C | toggle character; C | bật bảng chỉ số nhân vật
+- D | re-use last item; D | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
+- E | mount or dismount your steed; E | cưỡi hoặc xuống chiến mã của bạn
+- F | toggle floor; F | Bật sàn
+- G | re-equip last item; G | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
+- H | move left; H | di chuyển sang trái
+- I | toggle inventory; I | Bật túi đồ
+- J | move down; J | di chuyển xuống
+- K | move up; K | di chuyển lên
+- L | move right; L | di chuyển sang phải
+- M | toggle map; M | Bật bản đồ
+- N | move down-right; N | di chuyển xuống bên phải
+- O | hide from view; O | trốn khỏi tầm nhìn
+- P | polymorph at will; P | đa hình theo ý muốn
+- Q | save or quit this game; Q | Lưu game hoặc thoát khỏi trò chơi
+- R | for rest mode to recover life and mana; R | sang chế độ nghỉ ngơi để phục hồi cuộc sống và năng lượng
+- S | for search mode for secret doors and traps; S | sang chế độ dò tìm các cửa và bẫy bí mật
+- T | teleport at will; T | dịch chuyển theo ý muốn
+- U | move up-right; U | di chuyển lên bên phải
+- V | kick in a direction; V | đá theo một hướng nào đấy
+- W | jump in a direction (if you have the talent); W | nhảy theo một hướng (nếu bạn có tài năng)
+- X | re-cast last spell; X | sử dụng lại phép thuật lần cuối bạn đã sử dụng
+- Y | move up-left; Y | di chuyển lên bên trái
+- Z | toggle cast spells (read books to learn spells); Z | bật chế độ phép thuật (đọc sách để học phép thuật)
+- ' | blink in a direction; ' | chớp mắt theo một hướng
+- ;; | telekinesis in a direction; ;; | Siêu Năng Ngoại Cảm theo một hướng
+- > | descend stairs; > | đi xuống cầu thang
+- < | ascend stairs; < | đi lên cầu thang
+- / | toggle chat in multiplayer; / | bật khung trò chuyện trong chế độ nhiều người chơi
+- \ | view knowledge panel; \ | xem bảng tri thức
+- + | zoom in; + | phóng to
+- - | zoom out; - | thu nhỏ
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | hành động nhanh bên trái (thay đổi hành động bằng cách bấm shift + số)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | hành động nhanh bên phải (thay đổi hành động bằng cách bấm shift + số)
+- INSERT | toggle tunnelling mode; INSERT | bật chế độ đào hầm
+- SHIFT + arrow | fire a missile without moving; SHIFT + mũi tên | bắn tên lửa nhưng không cần di chuyển
+- CTRL + arrow | interact with the target without moving; CTRL + mũi tên | tương tác với mục tiêu mà không cần di chuyển
+- ENTER | select the top item on the floor; ENTER | chọn vật phẩm hàng đầu trên sàn
+- ESCAPE | hides open panels and clears your target; ESCAPE | ẩn các bảng đang mở và xóa mục tiêu của bạn
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | hủy hộp thoại đang mở và xóa tiêu điểm bàn phím
+- SPACE | toggle real-time or turn-based; SPACE | bật thời gian thực hoặc đánh theo lượt
+- PgUp | switch to previous character; PgUp | chuyển sang nhân vật trước đó
+- PgDown | switch to next character; PgDown | chuyển sang nhân vật kế tiếp
+- ALT | show labels; ALT | hiển thị nhãn mác
+- F1 | show this help; F1 | hiển thị sự giúp đỡ
+- F6 | quick save; F6 | Lưu nhanh
+- F10 | open side menu; F10 | mở menu bên
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | để chuyển từ chế độ toàn màn hình sang chế độ cửa sổ (Windows Desktop)
+
+# General mechanics; Cơ chế tổng quát
+. You will die.; | Bạn sẽ chết.
+. But don't despair, you will learn something new each time.; Nhưng đừng tuyệt vọng, bạn sẽ học được điều gì đó mới mỗi lần chết.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Mục tiêu của trò chơi Pathos là sống sót đến cấp 40 trước khi trốn thoát trở lại cấp 1.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathos là một trò chơi chiến đấu theo lượt vì vậy hãy dành thời gian và cân nhắc các lựa chọn của bạn khi mọi thứ trở nên nghiêm trọng.
+. Each class starts with different items, skills and abilities.; | Mỗi vai trò của nhân vật sẽ bắt đầu với các vật phẩm, kỹ năng và khả năng khác nhau.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; Những hiệu ứng của bình thuốc, cuộn, nhẫn, đũa phép và một số áo giáp được xáo trộn khi bắt đầu mỗi cuộc phiêu lưu mới.
+. For example, the orange potion will not have a consistent effect across different adventures.; Để ví dụ, lọ thuốc màu cam sẽ không còn hiệu quả nhất quán trong các chuyến phiêu lưu khác nhau.
+
+# Combat; Chiến đấu
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; Khi tấn công một con d20 (xúc xắc) sẽ được tung ra, cho một số ngẫu nhiên từ 1 đến 20.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; Khi lăn ra 1 thì là một chí mạng hụt và nếu lăn ra 20 là một cú chí mạng hiểm độc.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; Một cú chí mạng hụt sẽ ngăn chặn bất kỳ cuộc tấn công nào tiếp theo trong lượt đó (nếu bạn có nhiều đòn tấn công).
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Một đòn chí mạng sẽ khiến sát thương của vũ khí cơ bản tăng lên gấp đôi. Hãy nhớ rằng bùa lợi và bổ trợ sức mạnh không được cộng dồn.
+. The strength bonus to damage is doubled when using a two handed weapon.; Điểm sức mạnh sẽ cộng thêm cho sát thương và sẽ được nhân đôi khi sử dụng vũ khí hai tay.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Nếu một đòn chí mạng là cách duy nhất để đánh trúng hoặc bắn trượt thì nó sẽ bị hạ cấp thành một đòn đánh thường hoặc đánh trượt.
+. Otherwise, this number is added to the attack score and compared to the defence score.; Còn không, thì con số này được cộng vào điểm tấn công và so với điểm phòng thủ.
+/
+` (Attack + d20) >= Defence; (Tấn công + d20)> = Phòng thủ
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Điểm số tấn công và phòng thủ của bạn sẽ bị ảnh hưởng bởi khả năng, kỹ năng và bùa phép của bạn.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Phép thuật phù phép cho vũ khí của bạn sẽ ảnh hưởng trực tiếp đến điểm tấn công của bạn và cũng như sẽ được cộng vào điểm sát thương.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; Phần thưởng kỹ năng của bạn sẽ dựa trên cấp độ của bạn và là công thức giống nhau cho tất cả các lớp vai trò
+/
+` Skill Bonus = (Level / 4) + 1; Phần thưởng kỹ năng = (Cấp độ / 4) + 1
+/
+. Your defence is also affected by your circumstances:; Phòng thủ của bạn cũng sẽ bị ảnh hưởng bởi hoàn cảnh hiện tại của bạn:
+/
+` {Mod} defence when blind; {Mod} phòng thủ khi bị mù
+` {Mod} defence when invisible; {Mod} phòng thủ khi vô hình
+` {Mod} defence when displaced; {Mod} phòng thủ khi bị dịch chuyển
+` {Mod} defence when paralysed or sleeping; {Mod} phòng thủ khi bị tê liệt hoặc đang ngủ
+` {Mod} defence when stuck; {Mod} phòng thủ khi bị mắc kẹt
+` {Mod} defence when punished; {Mod} phòng thủ khi bị trừng phạt
+` {Mod} defence when attacked from concealment; {Mod} phòng thủ khi bị tấn công từ chỗ ẩn nấp
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Áo giáp nặng sẽ làm bạn chậm hơn {Hình phạt không có kỹ năng} nếu bạn không có điểm kỹ năng và {Hình phạt lành nghề} điểm sẽ chậm hơn nếu bạn có kỹ năng.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Giáp trung bình sẽ chậm hơn {Hình phạt không có kỹ năng} nếu bạn không có điểm kỹ năng, còn không thì không cần điều chỉnh tốc độ.
+. Light armour has no speed penalty if you are unskilled.; Áo giáp nhẹ thì không có hình phạt tốc độ nếu bạn không có kỹ năng.
+. Unskilled use of armour also attracts a one point defence penalty.; Sử dụng áo giáp không có kỹ năng cũng bị phạt trừ một điểm phòng thủ.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Công cụ sửa đổi độ khéo léo sẽ được áp dụng cho việc phòng thủ của bạn khi bạn đã thành thạo tất cả các mảnh áo giáp.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Điều này được sẽ giới hạn ở mức tối đa +4 khi mặc bất kỳ bộ giáp hạng trung nào và +2 khi mặc bất kỳ bộ giáp hạng nặng nào.
+
+# Skills; Kỹ năng
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; Mỗi kỹ năng sẽ có xếp hạng từ 0 đến 2000 và chia đều thành năm cấp độ năng lực.
+/
+` (0) Proficient =    0..199; (0) Thành thạo = 0~199
+` (1) Specialist =  200..499; (1) Chuyên gia = 200~499
+` (2) Expert     =  500..999; (2) Lão luyện =  500~999
+` (3) Master     = 1000..1999; (3) Bậc thầy = 1000~1999
+` (4) Champion   = 2000; (4) Vô địch = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; Xếp hạng kỹ năng sẽ được cải thiện khi thực hành chẳng hạn như đánh bằng vũ khí và không bị đánh khi đang mặc áo giáp.
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; Kỹ năng vũ khí cung cấp cho bạn cấp độ năng lực cũng như một phần thưởng tấn công và sát thương.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; Ví dụ, một bậc thầy của vũ khí trọng kiếm nhận được +3 tấn công và +3 sát thương khi sử dụng kiếm bằng hai tay.
+. This bonus to damage is doubled on a critical hit.; Phần thưởng cho sát thương này được nhân đôi với một đòn chí mạng.
+/
+. Armour skill gives you the competency level as a defence bonus.; Kỹ năng của áo giáp sẽ cung cấp cho bạn cấp độ năng lực như một phần thưởng phòng thủ.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; Ví dụ, một lão luyện về áo giáp hạng nặng sẽ nhận được +2 phòng thủ khi đeo tấm thư.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; Phần thưởng phòng thủ là mức trung bình của các cấp độ kỹ năng trên mỗi mảnh áo giáp được trang bị.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; Ví dụ: một lão luyện (2) về áo giáp hạng nặng, người chỉ thành thạo (0) về áo giáp hạng nhẹ đang đeo tấm chắn thư (hạng nặng) và một chiếc khiên nhỏ (hạng nhẹ), do đó sẽ có phần thưởng phòng thủ là +1.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; Kỹ năng trong trường học phép thuật sẽ cải thiện phạm vi sử dụng và có hiệu ứng tốt hơn ở mỗi cấp độ năng lực.
+. These skills are practised by learning and casting spells.; Những kỹ năng này sẽ được bạn thực hành bằng cách học và làm phép.
+
+# Life; Sinh mạng
+. {LifeDefinition}; Định nghĩa cuộc sống
+. Your starting life is determined by your race and class plus your constitution modifier.; Cuộc sống của bạn được bắt đầu và xác định các chủng tộc và cũng như các lớp vài trò nhân vật của bạn.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Khi bạn tăng cấp độ kinh nghiệm, Sinh mệnh của bạn sẽ tăng lên một lượng ngẫu nhiên được xác định bởi chủng tộc và vai trò nhân vật của bạn đang sử dụng.
+. There are also magical means to increase your life potential.; Ngoài ra còn có những điều kỳ diệu để mở rộng tiềm năng sống sót của bạn.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Tuy nhiên, Sinh mệnh không thể được tăng quá mức tiềm năng tối đa cộng với điểm hiến pháp của bạn.
+/
+` Initial = Class base + Race base + {CON} modifier; Ban đầu = Vai trò ban đầu + Chủng tộc ban đầu + sửa đổi {CON}
+` Advancement = Class roll + Race roll + {CON} modifier; Nâng cao = Quay vai trò + Quay chủng tộc + sửa đổi {CON}
+` Limit = Initial + max(Advancement) x Level + {CON} score; Giới hạn = Ban đầu + tối đa (Nâng cao) x Cấp + {CON} điểm
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; Sinh mệnh được phục hồi tự nhiên tại một điểm mỗi lượt ({Level Cap} - Level - {CON} modifier).
+. Sleeping improves recovery by halving the number of turns.; Ngủ sẽ giúp cải thiện khả năng hồi phục bằng cách giảm một nửa số lượt.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; Đói khiến sinh mạng hồi phục tại một điểm cho mỗi lượt {StarvationRecoveryRate}.
+. Life regeneration guarantees the recovery at one point per turn.; Tái tạo sinh mệnh đảm bảo sự phục hồi tại một điểm trong mỗi lượt.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; Chế độ ăn kiêng {inediate} làm chậm quá trình hồi phục sự sống bằng cách tăng gấp đôi số lượt.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; Khi thuộc tính {hunger} xuất hiện kết hợp với chế độ ăn kiêng {inediate}, sinh mệnh sẽ không còn hồi phục một cách tự nhiên nữa. Tuy nhiên, với việc bổ sung {Life regeneration}, sinh mệnh sẽ phục hồi với một tốc độ chậm hơn mức bình thường.
+. Active {phasing} prevents the natural recovery of life.; Kích hoạt {phasing} sẽ ngăn cản sự phục hồi một cách tự nhiên của sinh mệnh.
+
+# Mana; Năng lượng
+. {ManaDefinition}; Định nghĩa năng lượng
+. There are no adverse effects for exhausting your mana.; Không có hiệu ứng bất lợi nào cho việc cạn kiệt năng lượng của bạn.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Khi bạn tăng cấp độ kinh nghiệm, năng lượng của bạn cũng sẽ tăng lên một lượng ngẫu nhiên được xác định bởi chủng tộc và vai trò của bạn cộng với công cụ điều chỉnh trí tuệ của bạn.
+. There are also magical means to increase your mana potential.; Ngoài ra còn có các vật phẩm phép thuật để tăng tiềm năng năng lượng của bạn.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Tuy nhiên, bạn không thể tăng năng lượng quá mức tiềm năng tối đa cộng với điểm thông thái của bạn.
+/
+` Initial = Class base + Race base + {WIS} modifier; Ban đầu = Vai trò ban đầu + Chủng tộc ban đầu + công cụ sửa đổi {Trí tuệ}
+` Advancement = Class roll + Race roll + {WIS} modifier; Nâng cao = Quay vai trò +  Quay chủng tộc + công cụ sửa đổi {Trí tuệ}
+` Limit = Initial + max(Advancement) x Level + {WIS} score; Giới hạn = Ban đầu + tối đa(Nâng cao) x Cấp độ + Điểm {Trí tuệ}
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Năng lượng tự động hồi phục lại một điểm mỗi lượt ({Giới hạn cấp độ} - cấp độ - công cụ chỉnh sửa {Trí tuệ}).
+. Sleeping improves recovery by halving the number of turns.; Ngủ giúp cải thiện khả năng hồi phục bằng cách giảm một nửa số lượt.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; Đói khiến năng lượng hồi lại một điểm mỗi lượt {Tỷ lệ phục hồi khi đói}.
+. Mana regeneration guarantees the recovery at one point per turn.; Năng lượng hồi phục sẽ đảm bảo phục hồi tại một điểm mỗi lượt.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; Chế độ ăn kiêng {inediate} làm chậm quá trình phục hồi năng lượng bằng cách tăng gấp đôi số lượt
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; Khi thuộc tính {đói} xuất hiện kết hợp với chế độ ăn kiêng {inediate}, thì năng lượng sẽ không còn hồi phục một cách tự nhiên. Tuy nhiên, với việc bổ sung {năng lượng hồi phục}, thì năng lượng sẽ phục hồi với tốc độ chậm hơn bình thường.
+. Active {phasing} prevents the natural recovery of mana.; Khi kích hoạt {phasing} sẽ ngăn cản sự phục hồi tự nhiên của năng lượng.
+
+# Nutrition; Dinh dưỡng
+. Maintaining a food supply is important to avoid starving to death.; Duy trì nguồn cung cấp lương thực, thực phẩm là cực kỳ quan trọng để tránh bị chết đói.
+. In desperate or pragmatic times you can eat corpses.; Trong lúc tuyệt vọng hoặc thực dụng, bạn có thể ăn xác chết.
+
+# Corpses; Xác chết
+. The bodies of your enemies and allies can be a source of nutrition.; Những cơ thể của kẻ thù và đồng minh của bạn có thể là một nguồn dinh dưỡng tốt.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; Nhiều xác chết cũng mang lại tai hại và bệnh tật nhưng một số có thể mang lại những tài năng có lợi.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; Hãy coi chừng nếu bạn ăn thịt đồng loại thì nó được coi là một ý tưởng tồi ngay cả trong thời điểm bạn tuyệt vọng nhất.
+
+# Encumbrance; Trọng lượng
+. Everything you pick up adds to your encumbrance and you may become burdened.; Mọi thứ bạn nhặt được sẽ làm gia tăng thêm trọng lượng của bạn và nó có thể trở thành gánh nặng.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; Điều này sẽ làm chậm quá trình di chuyển của bạn và khiến bạn dễ dàng trở thành một miếng mồi thơm ngọn cho những người DÂN hoặc quái vật trong ngục tối.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); Khả năng vận chuyển = (Điểm sức bền - Chế độ dinh dưỡng) x {Hiệu ứng số nhân trọng lượng} + ({Phần trăm trọng lượng} Trọng lượng cơ thể)
+
+# Resting; Nghỉ ngơi
+. The camp-fire action button toggles resting.; Nút hành động đốt lửa trại sẽ để bạn chuyển sang trạng thái nghỉ ngơi.
+. While resting your life and mana recover at a faster rate.; Trong khi nghỉ ngơi thì sinh mệnh của bạn và năng lượng sẽ phục hồi với một tốc độ nhanh hơn.
+. Companions will rest when you rest.; Bạn đồng hành sẽ nghỉ ngơi khi bạn nghỉ ngơi.
+. Resting will be interrupted if there is a hostile in your zone.; Việc nghỉ ngơi sẽ bị gián đoạn nếu có kẻ thù trong khu vực của bạn.
+
+# Searching; Lục soát
+. The eye action button toggles searching.; Bấm hành động hình con mắt sẽ chuyển đổi bạn sang chế độ lục soát.
+. Searching will find secret doors and concealed traps.; Lục soát sẽ giúp bạn tìm thấy những cánh cửa bí mật và những cái bẫy được giấu kín.
+. Companions will search when you search to help find secrets.; Bạn đồng hành sẽ giúp bạn lục soát khi bạn trong chế độ lục soát để giúp bạn tìm ra bí mật.
+. Searching will be interrupted if there is a hostile in your zone.; Việc lục soát của bạn sẽ bị gián đoạn nếu có kẻ thù trong khu vực của bạn.
+
+# Abilities; Khả năng
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; Bạn có sáu điểm khả năng - sức mạnh, khéo léo, thể chất, thông minh, thông thái và quyến rũ.
+. Your starting ability scores is determined by rolling 4d6 six times.; Điểm khả năng bắt đầu của bạn sẽ được xác định bằng cách lăn 4d6 sáu lần.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; Lăn thấp nhất từ mỗi bộ sẽ bị loại bỏ cho điểm từ 3 đến 18.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; Điểm cao nhất được phân bổ ngẫu nhiên cho các khả năng chính của bạn, được hiển thị trong trợ giúp> vai trò.
+. Racial limits are then applied as shown in help > races.; Giới hạn chủng tộc sau đó sẽ được áp dụng như được hiển thị trong trợ giúp> chủng tộc.
+. Any points that are reduced by racial limits are transferred to another ability.; Bất kỳ điểm nào bị giảm bởi giới hạn chủng tộc sẽ được chuyển sang khả năng khác.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {Mã thuộc tính} ({Tên thuộc tính}): {Mô tả thuộc tính}
+
+# Karma; Nghiệp chướng
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; Nghiệp chướng sẽ nhận được khi bạn giết quái vật và chỉ được khi bạn cầu xin sự ưu ái của thần linh (cầu nguyện và xin ơn tại một ngôi đền).
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; Nghiệp chướng có thể bị mất đi khi bạn trở thành một người xấu trong hầm ngục chẳng hạn như tấn công một quái vật trung lập hoặc giết đồng minh của bạn.
+. You can gain additional karma by donating gold to a priest at a shrine.; Bạn có thể đạt được thêm nghiệp chướng bằng cách tặng vàng cho một thầy tu tại một ngôi đền.
+. You can pray at any time by long press/right click on your character.; Bạn có thể cầu nguyện bất cứ lúc nào bằng cách nhấn và giữ chuột phải vào nhân vật của bạn.
+. This will cost {Number} karma and has the following effects:; Điều này sẽ tốn {số} nghiệp chướng và sẽ có những tác động sau:
+/
+` karma >= hopeful; nghiệp chướng> = hy vọng
+`   gain {Number} nutrition when hungry; tăng {số} dinh dưỡng khi đói
+`   unafflict; không đau đớn
+`   unpolymorph; không biến hình
+`   escape from being stuck; thoát khỏi việc bị mắc kẹt
+`   remove punishment; xóa bỏ hình phạt
+/
+` karma >= good; nghiệp chướng> = tốt
+`   fully healed if less than half life; được chữa trị hoàn toàn nếu ít hơn nửa sinh mệnh
+`   fully restored if less than half mana; phục hồi năng lượng hoàn toàn nếu ít hơn một nửa năng lượng
+/
+` karma >= glorious; nghiệp chướng> = vinh quang
+`   remove blindness; loại bổ mù quáng
+`   remove hallucination; loại bỏ ảo giác
+`   remove rage; loại bỏ cơn thịnh nộ
+`   remove sickness; loại bỏ bệnh tật
+/
+` karma >= exalted; nghiệp chướng> = Cao quý
+`   remove one curse; xóa bỏ một lời nguyền
+`   raise dead for one loyal companion; hồi sinh cho một người bạn đồng hành trung thành
+
+# Diets; Ăn kiêng
+. Entities have different diets that allow them to eat specific materials.; Các thực thể có những chế độ ăn khác nhau cho phép chúng ăn các vật liệu cụ thể.
+/
+` {DietName}: {MaterialNames}; {Tên chế độ ăn}: {Tên nguyên liệu}
+
+# Spells; Phép thuật
+. Spells are learned by studying from magical books found in the dungeon.; Phép thuật có thể được học thông qua nghiên cứu từ những cuốn sách ma thuật được tìm thấy trong hầm ngục.
+. Any class can learn spells but only the skilled will use their mana efficiently.; Bất kỳ vai trò nào cũng có thể học phép thuật nhưng chỉ những người có kỹ năng mới sử dụng năng lượng của họ một cách hiệu quả.
+
+# Gold; Vàng
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; Vàng không được coi là một phần của sự trở ngại cho bạn và nó chỉ có thể sử dụng một số mục đích trong hầm ngục.
+. Gold can be traded for items from merchants or donated to priests for karma.; Vàng có thể được trao đổi để lấy các vật phẩm từ các thương gia hoặc tặng cho các linh mục để tăng nghiệp chướng.
+
+# Companions; Vật nuôi
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; Động vật có thể được thuần hóa bằng cách cho chúng ăn thứ chúng thích ăn (nhưng ngược lại chúng sẽ không thấy đói).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; Mèo sẽ kêu meo meo và chó sẽ kêu gâu gâu khi chúng dẫm phải vật dụng hoặc vật cố định bị nguyền rủa (chẳng hạn như đài phun nước).
+. You can mount some types of companions and ride around the dungeon.; Bạn có thể cưỡi một số loại động vật đồng hành và đi vòng quanh hầm ngục.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; Vật nuôi của bạn đôi khi sẽ làm chủ cuộc tấn công và đôi khi sẽ là mục tiêu hàng đầu của một cuộc tấn công.
+. Your steed will be the first into any traps so take good care of their well-being.; Vật nuôi của bạn sẽ là con đầu tiên mắc bẫy vì vậy hãy chăm sóc sức khỏe của chúng thật tốt.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; Một người cưỡi có kỹ năng sẽ nhận thêm phần thưởng kỹ năng của nó vào xếp hạng tấn công và phòng thủ của vật nuội.
+. A steed is useful when you are burdened and it is strong enough to take your load.; Một con vật nuôi sẽ rất hữu ích khi bạn đang có một gánh nặng trên và nó sẽ đủ mạnh để gánh vác bạn.
+. To dismount your steed you need to long press/right click on your character.; Để xuống vật nuôi, bạn cần nhấn và giữ chuột phải vào nhân vật của mình.
+
+# Engulfing; Nhấn chìm
+. Some entities can swallow or engulf other entities.; Một số thực thể có thể nuốt hoặc nhấn chìm các thực thể khác.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; Khi bạn bị nuốt phải bạn sẽ bị sát thương trong mỗi lượt và bạn có thể rắng sức vật lộn với nó cho đến khi nó trục xuất bạn ra khỏi nó.
+. Alternatively, there are many mechanisms which can be used to escape.; Ngoài ra, có rất nhiều cơ chế có thể được sử dụng để trốn thoát.
+. It is impossible to fight with your equipped weapons when swallowed.; Nó sẽ là điều bất khả thi nếu bạn cố gắng đánh với vũ khí của bạn được trang bị khi đang bị nuốt chửng.
+. If you cast when engulfed the spell will hit your engulfer.; Nếu bạn sử dụng phép thuật khi bị nhấn chìm, câu thần chú sẽ đánh trúng người bạn.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; Tuy nhiên, chùm tia vẫn có thể bật ra khỏi tường và xuyên qua hiệu ứng nhấn chìm của bạn và thậm chí cũng có thể va vào bạn.
+
+# Spawning; Sinh sản
+. Monsters will randomly spawn into areas outside your current zone.; Quái vật sẽ xuất hiện ngẫu nhiên vào các khu vực bên ngoài khu vực hiện tại của bạn.
+. The rate of spawning increases as you descend deeper into the dungeon.; Tỷ lệ sinh sản tăng lên khi bạn xuống những tầng sâu hơn trong hầm ngục.
+. The talent of aggravation also increases the spawn rates for monsters.; Tài năng của sự tồi tệ cũng sẽ làm tăng tỷ lệ xuất hiện cho quái vật.
+
+# Polymorph; Biến hình
+. Transform into another entity with all the advantages or disadvantages that brings.; Bạn sẽ chuyển đổi thành một thực thể khác với tất cả những lợi thế hoặc bất lợi mang lại.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; Ví dụ, biến hình thành một con rồng không có tay nhưng có thể bay và thở ra những tia năng lượng chết người.
+. When you perish in your polymorphed form you will often revert to your original form.; Khi bạn chết ở dạng biến hình, bạn thường sẽ trở lại hình dạng ban đầu.
+. You can transform into the entity of your choice when you have polymorph control.; Bạn có thể chuyển đổi thành thực thể mà bạn chọn khi bạn có quyền kiểm soát biến hình.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; Việc biến hình này chỉ giới hạn ở các thực thể mà bạn đã giết được và mỗi lần biến đổi sẽ tiêu tốn dinh dưỡng của bạn.
+. To access polymorph-at-will you need to long press/right click on your character.; Để truy cập dạng biến hình, bạn cần phải nhấn và nhấp chuột phải vào nhân vật của mình.
+
+# Locks; Ổ khóa
+. Doors and containers can be locked and possibly trapped.; Cửa và thùng chứa có thể bị khóa và có thể bị mắc kẹt.
+. You can kick locks to break them but this will trigger any trap.; Bạn có thể đá vào ổ khóa để phá vỡ chúng nhưng điều này sẽ kích hoạt bất kỳ cái bẫy nào.
+. Items such as skeleton keys and lock picks can be used to unlock.; Các vật phẩm như chìa khóa xương và dụng cụ bẻ khóa có thể được sử dụng để mở khóa.
+. These items can break and the chance is influenced by your competency with locks.; Những vật phẩm này có thể bị vỡ và sẽ cơ hội bị ảnh hưởng bởi các khả năng của bạn đối với các ổ khóa.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; Ngoài ra, các vật phẩm bị nguyền rủa có khả năng bị vỡ cao gấp đôi và vật phẩm được ban phước có khả năng bị vỡ một nửa.
+. There are other magical items and spells that can be used to unlock.; Có những vật phẩm và phép thuật có thể được sử dụng cho việc mở khóa.
+
+# Traps; Cạm bẩy
+. Traps have a difficulty rating that reflects the lethality of the device.; Bẫy có các xếp hạng độ khó phản ánh khả năng gây chết người của thiết bị.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; Mức độ khó này cũng là mức độ hầm ngục tối thiểu mà cái bẫy có thể được tạo ra.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; Cơ hội để gỡ bẩy được tính từ độ khó của thiết bị so với các chỉ số kỹ năng và sự khéo léo của bạn.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; Nếu bạn có bất kỳ hiện tượng bất lợi nào như lóng ngóng, mù, choáng váng, nhầm lẫn hoặc ảo giác, bạn sẽ gặp khó khăn trong việc gỡ bẩy hơn.
+. Untrapping requires you to move into the square.; gỡ bỏ cạm bẩy yêu cầu bạn phải di chuyển vào các ô hình vuông.
+. A failure to untrap will cause it to be triggered.; Việc thất bại trọng việc gỡ bẩy sẽ khiến nó kích hoạt một lần nữa.
+
+# Teleport; Dịch chuyển
+. Teleportation transports your character around the current dungeon level.; Phép dịch chuyển sẽ giúp cho nhân vật của bạn dịch chuyển xung quanh cấp độ hầm ngục hiện tại.
+. When uncontrolled, this is a random event that may help or hinder your journey.; Sẽ có cơ hội bạn sẽ không kiểm soát được dịch chuyển, đây là một sự kiện ngẫu nhiên có thể giúp ích hoặc cản trở chuyến hành trình của bạn.
+. Controlled teleportation allows you to select on the map your destination location.; Việc kiểm soát dịch chuyển cho phép bạn chọn vị trí điểm đến của mình trên bản đồ.
+. However, each teleportation will cost you nutrition so use it wisely.; Tuy nhiên, mỗi lần dịch chuyển sẽ khiến bạn tốn dinh dưỡng vì vậy hãy sử dụng nó một cách khôn ngoan.
+. To access teleport-at-will you need to long press/right click on your character.; Để truy cập dịch chuyển theo ý muốn, bạn cần phải nhấn và giữ chuột phải vào nhân vật của mình.
+
+# Dual wielding; Song vũ khí
+. Dual wielding allows the character to hold two single handed weapons.; Sử dụng song vũ khí cho phép nhân vật cầm hai vũ khí khác nhau bằng hai tay.
+. This allows for two attacks instead of one but the chance of hitting is reduced.; Điều này cho phép thực hiện hai cú tấn công thay vì một cú tấn công nhưng cơ hội đánh trúng bị giảm.
+. If you are skilled then it is only a -2 to attack on the offhand.; Nếu bạn thành thạo thì việc tấn công thuận tay chỉ là -2.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; Nếu ngược lại, thì nó là -2 để tấn công trên tay chính và -4 để tấn công trên tay phụ.
+
+# Crafting; Chế tạo
+. Items can be scrapped into their raw essence and base material on a workbench.; Các vật phẩm có thể được loại bỏ để trở thành nguyên liệu thô và nguyên liệu cơ bản của chúng trên bàn chế tạo.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; Bản chất là nền tảng của sự sáng tạo và có thể được chiết xuất từ cả vật phẩm trần tục và phép thuật.
+. New items can be crafted on a workbench using enough of the base material and essence.; Các vật phẩm mới có thể được chế tạo trên bàn làm việc bằng cách sử dụng đủ vật liệu cơ bản và bản chất.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; Bàn chế tạo được tạo bằng vật liệu còn sót lại (0 - 10 bản chất và sáu vật liệu ngẫu nhiên 10 - 200)
+. Materials are not transferable between workbenches.; Vật liệu không được chuyển đổi giữa các bàn chế tạo.
+/
+. The crafting skill influences how much material you gain when scrapping.; Kỹ năng chế tạo ảnh hưởng đến lượng nguyên liệu bạn thu được khi thu thập.
+. That is, when unskilled you recover only 50% of the scrapped material.; Điều đó có nghĩa là, khi không có kỹ năng, bạn chỉ thu hồi được 50% số vật liệu bị loại bỏ.
+/
+` Unskilled  =  50%; Không có kỹ năng = 50%
+` Proficient =  60%; Thành thạo = 60%
+` Specialist =  70%; Chuyên gia = 70%
+` Expert     =  80%; Bậc thầy = 80%
+` Master     =  90%; Lão luyện = 90%
+` Champion   = 100%; Vô địch = 100%
+/
+. The crafting skill influences how much material you need when crafting.; Kỹ năng chế tạo cũng sẽ ảnh hưởng đến lượng nguyên liệu bạn cần khi chế tạo.
+. That is, when unskilled you need 150% of the required material to craft an item.; Có nghĩa là, khi chưa có kỹ năng, bạn cần 150% số nguyên liệu cần thiết để chế tạo một món đồ.
+/
+` Unskilled  = 150%; Không có kỹ năng = 150%
+` Proficient = 140%; Thành thạo = 140%
+` Specialist = 130%; Chuyên gia = 130%
+` Expert     = 120%; Bậc thầy = 120%
+` Master     = 110%; Lão luyện = 110%
+` Champion   = 100%; Vô địch = 100%
+
+# Enchantment; Cường hóa
+. Weapons and armour have a modifier that can be changed with enchantment magic.; Vũ khí và áo giáp sẽ có một công cụ thay đổi chỉ số bằng phép thuật cường hóa.
+. The modifier is limited to between {Min} and {Max}.; Chỉ số sẽ được giới hạn trong khoảng từ {Thấp nhất} đến {Cao nhất}.
+. A modifier of +0 is a normal, mundane item.; chỉ số +0 có nghĩa là một vật phẩm bình thường,thuộc về thế gian.
+. Modifiers on armour apply to your defence score.; Các chỉ số trên áo giáp sẽ áp dụng cho điểm phòng thủ của bạn.
+. Modifiers on weapons apply to your attack and damage scores.; Các chỉ số trên vũ khí áp dụng cho điểm tấn công và sát thương của bạn.
+. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Vật phẩm sẽ bị phá hủy nếu bạn cố gắng thay đổi chỉ số ngoài {Thấp nhất} hoặc {Cao nhất}.
+. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Các vật phẩm cổ vật có thể được nâng cấp lên đến {Chỉ số} và sẽ đặt lại về 0 nếu vượt quá mức chỉ số đó.
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Các vật phẩm cũng có thể được cường hóa như phù phép một chiếc còi thiếc thành một chiếc còi ma thuật.
+
+# Punishments; Hình phạt
+. This severe curse can be gained by magical means or misconduct.; Lời nguyền nghiêm trọng này có thể đạt được bằng các ma thuật hoặc các hành vi sai trái.
+. There is a chance of being punished each time your karma dips below zero.; Có một hội bạn sẽ bị trừng phạt mỗi khi nghiệp chướng của bạn giảm xuống dưới 0.
+. Only one punishment can be active at one time.; Chỉ duy nhất một hình phạt được kích hoạt tại một thời điểm.
+. A punishment can be released with any remove curse magic.; Một hình phạt có thể được giải với phép thuật loại bỏ lời nguyền.
+
+# Charming & taming; Quyến rũ & thuần phục
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; Sự khác biệt giữa cấp độ của bạn và cấp thực thể mục tiêu được sử dụng theo tỷ lệ phần trăm để tăng / giảm thời gian trung thành.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; Ví dụ: nếu bạn đang ở cấp 10 và quyến rũ một thực thể cấp 20, thì lòng trung thành chỉ bằng một nửa thời hạn được liệt kê.
+. The charisma bonus for you and the target entity also modifies this relative percentage.; Phần thưởng sức hút cho bạn và đối tượng mục tiêu cũng điều chỉnh tỷ lệ phần trăm tương đối này.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; Ví dụ, cấp độ 4 với sức hút 18 (+4) có nghĩa là bạn sử dụng sức hút như thể bạn đang ở cấp độ 8.
+
+# Death; Cái chết
+. There are seven mechanics for death:; Có bảy cách cơ bản cho cái chết:
+/
+* life points reaches zero; điểm sinh mệnh bằng không
+* any ability score reaches zero; bất kỳ điểm khả năng nào đều đạt không
+* starvation; chết đói
+* death effect (eg. wand of death); hiệu ứng chết chóc (ví dụ: cây đũa phép của cái chết)
+* genocide; lối đi diệt chủng
+* incarceration (eg. turned into a statue); giam giữ (ví dụ: biến thành một bức tượng)
+* decapitation (eg. vorpal attacks); chặt đầu (ví dụ: tấn công vorpal)
+
+# Revenants; Hồn ma
+. Upon your death there is a 50% chance of creating a revenant on the current level.; Khi bạn chết, sẽ có 50% cơ hội tạo ra một hồn ma của bạn có y chang cấp độ hiện tại của bạn.
+. When you go down stairs there is a 50% chance of encountering this revenant.; Khi bạn đi xuống cầu thang, sẽ có 50% khả năng bạn sẽ gặp phải Hồn ma này.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; Hồn ma là một phiên bản khác ma nhưng thay vì là ma thì nó sẽ trở thành bản thân trước đây của bạn khi bạn còn sống nhưng nó vẫn được trang bị tất cả vũ khí và áo giáp của bạn.
+. They will be as tough as you were at full health and may be quite challenging at times.; Họ sẽ cứng rắn như khi bạn còn khỏe mạnh và đôi khi nó có thể là một thử thách khó khăn.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; Bạn có thể chết ở cấp độ tôn kính và nhân vật tiếp theo của bạn có thể sẽ có hai cấp độ tôn kính để đối phó.
+. Level 1 will never create a revenant.; Cấp độ 1 sẽ không bao giờ tạo ra một người tôn kính.
+
+# Fame; Danh vọng
+. Fame is calculated by the following formula.; Danh vọng được tính theo các công thức sau, Hiệu ứng số nhân (Ví dụ nhân x1 khi tăng cấp sẽ nhân x2).
+/
+` = Maximum Depth x {Multiplier}; = Độ sâu tối đa x {Hiệu ứng số nhân}
+` + Explored Maps x {Multiplier}; + Bản đồ đã khám phá x {Hiệu ứng số nhân}
+` + Visited Locations x {Multiplier}; + Vị trí đã truy cập x {Hiệu ứng số nhân}
+` + Discovered Items x {Multiplier}; + Các vật phẩm đã khám phá x {Hiệu ứng số nhân}
+` + Encountered Entities x {Multiplier}; + Thực thể đã gặp phải x {Hiệu ứng số nhân}
+` + Possessed Artifacts x {Multiplier}; + Hiện vật đã sở hữu x {Hiệu ứng số nhân}
+` + Earned Experience (capped to {Cap}); + Kinh nghiệm đã nhận được (giới hạn đến {giới hạn})
+` + Development Level x {Multiplier}; + Mức độ phát triển x {Hiệu ứng số nhân}
+` + Practised Skills x {Multiplier}; + Kỹ năng đã được Thực hành x {Hiệu ứng số nhân}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + Phép thuật đã học x {Hiệu ứng số nhân} (tổng tiêu hao năng lượng cơ bản x ở mức thông thạo)
+` + Increased Life x {Multiplier}; + Tăng Sinh mệnh x {Hiệu ứng số nhân}
+` + Increased Mana x {Multiplier}; + Tăng Năng lượng x {Hiệu ứng số nhân}
+` + Adjusted Attributes x {Multiplier}; + Các thuộc tính được điều chỉnh x {Hiệu ứng số nhân}
+` + Acquired Talents x {Multiplier}; + Tài năng có được x {Hiệu ứng số nhân}
+` + Gained Resistances x {Multiplier}; + Tăng kháng cự x {Hiệu ứng số nhân} (Ví dụ nhân x1 khi tăng cấp sẽ nhân x2)
+` + Total Inventory Worth (in gold); + Tổng giá trị túi đồ trong kho (bằng vàng)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; Tổng giá trị của túi đồ trong kho được giới hạn nên không thể vượt quá phần còn lại của điểm số.
+
+# Resurrect and continue; Hồi sinh và tiếp tục
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; Tính năng tùy chọn này rất hữu ích khi nhân vật của bạn chết bởi một cái chết có vẻ không công bằng hoặc không may mắn.
+. You may learn that your character was not viable and death comes quick again.; Bạn sẽ học được rằng nhân vật của bạn không thể tồn tại được lâu và cái chết lại ập đến một cách nhanh chóng.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; Bạn có thể hồi sinh vô hạn lần nhưng tất cả danh vọng bạn đạt được sẽ bị đặt lại về con số 0.
+. Fame achieved subsequent to your resurrection will contribute to your score.; Danh vọng sẽ đạt được sau khi bạn sống lại sẽ đóng góp vào điểm số của bạn.
+. This is similar to the 'explorer mode' from the original Nethack.; Điều này tương tự như 'chế độ thám hiểm' từ Nethack gốc.
+
+# Multiplayer; Chế độ nhiều người chơi
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; chế độ nhiều người chơi được dựa trên công nghệ 'mạng viễn thông đồ họa' từ nền tảng Invention.
+. This means the game is executed on the server and the user interface is projected to each of the clients.; Điều này có nghĩa là trò chơi sẽ được kết nối trên máy chủ và giao diện người dùng được chiếu tới từng thiết bị.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; Bạn chỉ có thể chơi thông qua WIFI / LAN và internet vì chỉ được kết nối dựa trên TCP / IP.
+. This technology only works well with low latency (less than 30ms ping should be playable).; Chế độ nhiều người chơi này chỉ hoạt động tốt với mạng mạnh (ping dưới 30ms thì có thể chơi được).
+/
+. One player needs to be the server and HOST the game.; Một người chơi cần trở thành chủ phòng và tạo phòng trò chơi.
+. All other players are clients and JOIN the game.; Tất cả những người chơi khác đều là thành viên và THAM GIA trò chơi.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.; Người chơi máy chủ sẽ cần tra cứu địa chỉ IP của họ trong cài đặt mạng thiết bị và chia sẻ với các thành viên.
+. Firewall settings and port forwarding may be required when playing over the internet.; Cài đặt tường lửa và chuyển tiếp cổng có thể được yêu cầu khi phát qua internet.
+/
+. The HOST can use 3717 and tap CONNECT.; Chủ phòng có thể sử dụng cổng 3717 và nhấn KẾT NỐI.
+. The other players JOIN by typing in the host's IP Address and the port.; Những người chơi khác THAM GIA bằng cách nhập Địa chỉ IP của máy chủ và cổng.
+. For example: 192.168.1.5:3717; Ví dụ: 192.168.1.5:3717 (Địa chỉ IP là 192.168.1.5 , cổng là 3717)
+
+# Translations; Bản dịch
+. The language translations have been contributed by a number of dedicated players.; Các bản dịch ngôn ngữ được đóng góp bởi một số người chơi tận tâm.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; Việc hoàn thành bản dịch là một thành tựu rất quan trọng và đòi hỏi sự bảo trì liên tục.
+. The percentage on the language selection indicates the current completeness of the translation.; Số phần trăm ở kế bên ngôn ngữ cho biết mức độ hoàn chỉnh hiện tại của bản dịch.
+. You can also browse the individual translations in the Diagnostics screen.; Bạn cũng có thể duyệt từng bản dịch trong màn hình Chẩn đoán.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; Vui lòng liên hệ với nhà phát triển nếu bạn muốn đóng góp một bản dịch mới, duy trì một bản dịch hiện có hoặc thậm chí bạn có thể gửi bản sửa chữa từ vựng.
+
+# Master mode; Chế độ tự do
+. This is a cheat mode for more quickly learning the secrets of Pathos.; Đây là một chế độ ăn gian để có thể giúp bạn học nhanh hơn những bị mật trong Pathos.
+. Any adventures in this mode will not be tracked in the hall of fame.; Bất kỳ chuyến phiêu lưu nào trong chế độ này sẽ không được ghi nhận lại trong đại sảnh danh vọng
+/
+- ` | open master console (more commands); ` | Để mở bảng điều khiển chính (Thêm những câu lệnh khác)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | Để xóa bóng tối trong khu vực này
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | Để triệu hồi và bị nuốt chửng bởi một con thú ngẫu nhiên
+- shift + F | all adjacent enemies are charmed; shift + F | Tất cả kẻ thù lân cận đều bị quyến rũ
+- shift + G | gain 1000 gold; Shift + G | Để nhận được 1000 vàng
+- shift + I | identify all items on the floor; shift + I | Để xác định tất cả các vật phẩm ở trên sàn
+- shift + W | jump at will; shift + W | Để nhảy theo ý muốn
+- shift + D | light this zone; shift + D | Thắp sáng khu vực này
+- shift + M | reveal the entire map; shift + M | Để tiết lộ toàn bộ bản đồ
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | Tiết lộ bản đồ cho tất cả các cấp
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | Be cong dungeon đại loại là thế .-. (bản đồ endgame biến đổi)
+- shift + P | polymorph into any entity; shift + P | Biến hình thành bất kỳ thực thể nào trong trò chơi
+- shift + T | teleport to a target zone; shift + T | Dịch chuyển đến một khu vực tự chọn trong hầm ngục
+- shift + Z | learn all spells; shift + Z | Học hết tất cả phép thuật
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | Bật chế độ tự động (bước lên hình vuông và bạn sẽ sử dụng tất cả các vật phẩm)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | Nhảy xuống cấp độ hầm ngục trước đó (ngay cả khi không ở trên cầu thang)
+- > | descend to the next dungeon level (even when not on a staircase); > | Nhảy đến cấp độ hầm ngục tiếp theo (ngay cả khi không ở trên cầu thang)
+- F5 | refresh the screen; F5 | làm mới màn hình
+- F9 | quick load; F9 | tải nhanh
+/
+. There are additional manipulations built into the character panel and contextual help.; Có các thao tác bổ sung được tích hợp trong bảng ký tự và trợ giúp theo ngữ cảnh. (Người dịch: 🖤𝕯𝖊𝖆𝖙𝖍 ( 𝕿𝖍𝖊 𝕿𝖗𝖚𝖊 𝕯𝖊𝖆𝖙𝖍 )🖤#0813)
