@@ -23,18 +23,18 @@ namespace Pathos
         });
       }
 
-      Proficient = AddQualification("p", "proficient", 0);
-      Specialist = AddQualification("s", "specialist", 200); // +200
-      Expert = AddQualification("e", "expert", 500);         // +300
-      Master = AddQualification("m", "master", 1000);        // +500
-      Champion = AddQualification("c", "champion", 2000);    // +1000
+      proficient = AddQualification("p", "proficient", 0);
+      specialist = AddQualification("s", "specialist", 200); // +200
+      expert = AddQualification("e", "expert", 500);         // +300
+      master = AddQualification("m", "master", 1000);        // +500
+      champion = AddQualification("c", "champion", 2000);    // +1000
     }
 #endif
 
-    public readonly Qualification Proficient;
-    public readonly Qualification Specialist;
-    public readonly Qualification Expert;
-    public readonly Qualification Master;
-    public readonly Qualification Champion;
+    public readonly Qualification proficient;
+    public readonly Qualification specialist;
+    public readonly Qualification expert;
+    public readonly Qualification master;
+    public readonly Qualification champion;
   }
 }

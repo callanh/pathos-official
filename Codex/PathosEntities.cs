@@ -32,6 +32,7 @@ namespace Pathos
       var Sanctities = Codex.Sanctities;
       var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
+      var AttackTypes = Codex.AttackTypes;
 
       CodexStocks Stocks = null;
       CodexItems Items = null;
@@ -188,7 +189,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -229,7 +230,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -269,7 +270,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(15);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -310,7 +311,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -350,7 +351,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -389,7 +390,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -429,7 +430,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -468,7 +469,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -508,7 +509,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -547,7 +548,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6500);
@@ -586,7 +587,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -625,7 +626,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // strong natural skin
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -651,7 +652,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 22, DEX: 18, CON: 24, INT: 16, WIS: 16, CHA: 16);
         E.SetGender(Genders.male, Genders.female);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
         E.SetCorpse(Chance.Always);
@@ -667,7 +668,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -693,7 +694,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 25, DEX: 18, CON: 25, INT: 18, WIS: 18, CHA: 16);
         E.SetGender(Genders.male, Genders.female);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
@@ -709,7 +710,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -749,7 +750,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // tough natural skin.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -791,7 +792,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -818,18 +819,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.iron);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.evocation, Skills.abjuration, Skills.clerical, Skills.conjuration, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.evocation, Skills.abjuration, Skills.clerical, Skills.conjuration, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.heavy_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.beatitude);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.light);
         E.Startup.AddGrimoire(Dice.One, Spells.shocking_sphere);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Spell, Elements.magical, 2.d6(), A => A.Apply.Disarm());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.spell, Elements.magical, 2.d6(), A => A.Apply.Disarm());
         E.SetCorpse(Chance.Never);
       });
 
@@ -843,7 +844,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +5 from dex = 26.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -870,13 +871,13 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.iron);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.clerical, Skills.enchantment, Skills.evocation, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.clerical, Skills.enchantment, Skills.evocation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.heavy_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.beatitude, Properties.displacement);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.stunned, 1.d4());
         });
@@ -894,7 +895,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex = 24.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -921,14 +922,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.iron);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.clerical, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.clerical, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.reflection, Properties.beatitude, Properties.displacement);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.Fixed(3), Spells.magic_missile, Spells.sleep, Spells.force_bolt);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Never);
       });
 
@@ -942,7 +943,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -969,13 +970,13 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.iron);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.clerical, Skills.enchantment, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.clerical, Skills.enchantment, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.reflection, Properties.beatitude, Properties.displacement);
         E.Startup.AddGrimoire(Dice.Fixed(2), Spells.magic_missile, Spells.sleep);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.fire, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.fire, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.fire, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.fire, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Never);
       });
 
@@ -989,7 +990,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +5 from dex = 27.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -1016,21 +1017,21 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(); // transcended angel is not vulnerable to iron.
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.evocation, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.evocation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.heavy_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.displacement);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.blindness, 2.d6());
           K.Apply.ApplyTransient(Properties.stunned, 2.d6());
         });
-        E.AddAttack(AttackType.Spell, Elements.physical, 1.d8(), A => A.Apply.Disarm());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 1.d8(), A => A.Apply.Disarm());
         E.SetCorpse(Chance.Never);
       });
 
@@ -1044,7 +1045,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +5 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -1071,15 +1072,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight, Properties.clairvoyance);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4(), K => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4(), K => // +3 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d4(), A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -1098,7 +1099,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +5 from dex = 23.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(10);
+        E.Speed = Speed.S6_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(140000);
@@ -1125,15 +1126,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.evocation, Skills.enchantment, Skills.clerical);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.evocation, Skills.enchantment, Skills.clerical);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.AddGrimoire(Dice.One, Spells.magic_missile);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.Startup.AddGrimoire(Dice.One, Spells.healing);
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Butt, Elements.physical, 2.d6(), A =>
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.butt, Elements.physical, 2.d6(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
@@ -1151,7 +1152,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(10);
+        E.Speed = Speed.S6_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -1178,12 +1179,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.heavy_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.beatitude, Properties.displacement, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d10(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d10(), A =>
         {
           A.Apply.Impersonate();
         });
@@ -1200,7 +1201,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +5 from dex = 35.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(10);
+        E.Speed = Speed.S6_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -1227,7 +1228,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.master, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy, Skills.transmutation);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.reflection, Properties.beatitude, Properties.displacement, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
@@ -1235,15 +1236,15 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.acid_stream);
         E.Startup.AddGrimoire(Dice.One, Spells.toxic_spray);
         E.Startup.AddGrimoire(Dice.One, Spells.cone_of_cold);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +7 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +7 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.blindness, 3.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8());
         E.SetCorpse(Chance.Never);
       });
 
@@ -1257,7 +1258,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex = 36.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -1284,7 +1285,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy, Skills.transmutation, Skills.clerical, Skills.abjuration);
+        E.Startup.SetSkill(Qualifications.master, Skills.evocation, Skills.heavy_blade, Skills.heavy_armour, Skills.literacy, Skills.transmutation, Skills.clerical, Skills.abjuration);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.reflection, Properties.beatitude, Properties.displacement, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
@@ -1294,15 +1295,15 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.cone_of_cold);
         E.Startup.AddGrimoire(Dice.One, Spells.light);
         E.Startup.AddGrimoire(Dice.One, Spells.turn_undead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4()); // +8 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4()); // +8 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.blindness, 5.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d8());
         E.SetCorpse(Chance.Never);
       });
       #endregion
@@ -1318,7 +1319,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -1345,10 +1346,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -1367,7 +1368,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -1394,14 +1395,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -1420,7 +1421,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -1447,11 +1448,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.fire, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.fire, 3.d5());
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn4);
       });
@@ -1466,7 +1467,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -1493,9 +1494,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2()); // +2 from str.
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -1509,7 +1510,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19500);
@@ -1536,10 +1537,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d5()); // +4 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -1555,7 +1556,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150);
@@ -1582,9 +1583,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.shock, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.One);
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.One);
         E.SetCorpse(Chance.Never);
       });
 
@@ -1598,7 +1599,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 14.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50);
@@ -1625,10 +1626,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.jumping);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -1642,7 +1643,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3 from dex = 14.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -1669,13 +1670,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(); // lice don't jump.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3(), A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.nits));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3(), A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.nits));
         });
@@ -1693,7 +1694,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50);
@@ -1720,9 +1721,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(); // ticks don't jump.
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.One);
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.One);
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -1736,7 +1737,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.xylophagy);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50);
@@ -1763,13 +1764,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(); // termites actually fly, but maybe giant ones can't?
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.WhenChance(Chance.OneIn3, T => T.DestroyEquippedAsset(Dice.One, StockArray: null, SanctityArray: null, E.Diet.Materials.ToArray()));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -1783,7 +1784,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -1810,14 +1811,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d8(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d8(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d8(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d8(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -1836,7 +1837,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +2 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10);
@@ -1863,10 +1864,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3(), K => // +1 from str.
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K => // +1 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -1885,7 +1886,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -1912,11 +1913,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d7()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d7());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7());
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -1932,7 +1933,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -2 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(15000);
@@ -1959,10 +1960,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -1981,7 +1982,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +1 from dex = 23.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -2008,10 +2009,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, A =>
           {
@@ -2019,8 +2020,8 @@ namespace Pathos
             A.Amnesia(Range.Sq15);
           }));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d8()); // +3 from str.
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d8()); // +3 from str.
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4(), migo_drone);
@@ -2040,7 +2041,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1 from dex = 23.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -2067,14 +2068,14 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -2090,7 +2091,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10);
@@ -2117,14 +2118,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d12(), K => // +4 from str.
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d12(), K => // +4 from str.
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d3(), killer_bee);
@@ -2145,7 +2146,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -2172,10 +2173,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d5()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.cold, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.cold, 3.d5());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn4);
       });
@@ -2190,7 +2191,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -2217,10 +2218,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3()); // +2 from str.
-        E.AddAttack(AttackType.Sting, Elements.physical, 3.d3(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.sting, Elements.physical, 3.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -2239,7 +2240,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex = 28.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -2266,10 +2267,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6()); // +3 from str.
-        E.AddAttack(AttackType.Spit, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 4.d6());
@@ -2290,7 +2291,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 20.
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10);
@@ -2317,11 +2318,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
         {
           // African trypanosomiasis, also known as African sleeping sickness or simply sleeping sickness, is an insect-borne parasitic infection of humans and other animals.
           // This is usually transmitted by the bite of an infected tsetse fly.
@@ -2348,7 +2349,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -2375,14 +2376,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d9() + 1, K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d9() + 1, K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d9() + 1, K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d9() + 1, K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -2404,7 +2405,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from DEX.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -2431,10 +2432,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3()); // +2 from STR.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3()); // +2 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -2448,7 +2449,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 12.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -2475,9 +2476,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4() + 3); // -3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4() + 3); // -3 from str.
         E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+30));
         E.SetCorpse(Chance.OneIn4);
       });
@@ -2492,7 +2493,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(16000);
@@ -2519,13 +2520,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration); // TODO: shouldn't byakhee have teleport too?
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Sting, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.sting, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.stunned, 3.d2());
         });
@@ -2544,7 +2545,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(300);
@@ -2571,9 +2572,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // -2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // -2 from str.
         E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+60));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -2588,7 +2589,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(10000);
@@ -2615,14 +2616,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d15()); // +1 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4(), A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d15()); // +1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d6());
         });
@@ -2640,7 +2641,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +3 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(10000);
@@ -2667,10 +2668,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.fire, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.fire, 1.d10()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn4);
       });
@@ -2685,7 +2686,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +5 from dex
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(3000);
@@ -2712,10 +2713,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +3 from str.
-        E.AddAttack(AttackType.Shriek, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +3 from str.
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
@@ -2735,7 +2736,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +4 from DEX.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(12000);
@@ -2762,10 +2763,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());// +2 from STR.
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());// +2 from STR.
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset(Stocks.food);
         });
@@ -2782,7 +2783,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(13000);
@@ -2809,12 +2810,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d15()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d15());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.paralysis, 1.d2() + 2);
         });
@@ -2833,7 +2834,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from DEX.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -2860,10 +2861,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6()); // +3 from STR.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6()); // +3 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -2877,7 +2878,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from DEX = 21.
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -2904,11 +2905,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +2 from STR.
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +2 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d6());
@@ -2929,7 +2930,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(400);
@@ -2956,10 +2957,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5() + 2); // -2 from STR
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5() + 2);
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5() + 2); // -2 from STR
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5() + 2);
         E.SetCorpse(Chance.Always);
       });
 
@@ -2973,7 +2974,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(400);
@@ -3000,10 +3001,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6() + 1); // -1 from STR
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6() + 1);
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6() + 1); // -1 from STR
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6() + 1);
         E.SetCorpse(Chance.Always);
       });
 
@@ -3017,7 +3018,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(400);
@@ -3044,10 +3045,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.searching);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -3061,7 +3062,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -3088,15 +3089,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5()); // -3 damage from strength gives 1d2 damage.
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K => // touch attacks are not influenced by strength modifier.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // -3 damage from strength gives 1d2 damage.
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => // touch attacks are not influenced by strength modifier.
         {
           K.Apply.ApplyTransient(Properties.petrifying, 4.d4());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.petrifying, 4.d4());
@@ -3116,7 +3117,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(1000);
@@ -3143,9 +3144,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.SetCorpse(Chance.Always);
       });
 
@@ -3159,7 +3160,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(750);
@@ -3186,9 +3187,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -3202,7 +3203,7 @@ namespace Pathos
         E.Frequency = 6;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -3229,15 +3230,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.petrify, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5()); // -2 from strength gives 1d3 damage
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // -2 from strength gives 1d3 damage
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 4.d8());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.petrifying, 4.d8());
@@ -3259,7 +3260,7 @@ namespace Pathos
         E.Immitation = true; // imitate other monsters.
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(750);
@@ -3286,9 +3287,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -3302,7 +3303,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -3329,15 +3330,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.fire, Elements.poison);
-        E.AddAttack(AttackType.Gaze, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.flame, 2.d4() + 4);
           K.Apply.Harm(Elements.fire, 4.d5());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 4.d5());
@@ -3365,7 +3366,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = NewBlobDefence(14); // -2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(300);
@@ -3392,10 +3393,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 1.d8());
@@ -3415,7 +3416,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(2000);
@@ -3442,11 +3443,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d14()); // +2 from str.
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d14()); // +2 from str.
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 5.d4());
@@ -3465,7 +3466,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = NewBlobDefence(12);
         E.SetDiet(Diets.organivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -3492,14 +3493,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(Stocks.List.ToArray());
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.fire, Elements.petrify, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d4());
         });
-        E.AddRetaliation(Chance.OneIn3, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.ApplyTransient(Properties.paralysis, 1.d4());
@@ -3525,7 +3526,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(2000);
@@ -3552,10 +3553,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d15()); // +1 from str.
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d15()); // +1 from str.
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 2.d4());
@@ -3575,7 +3576,7 @@ namespace Pathos
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(2000);
@@ -3602,11 +3603,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.fire, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.fire, 2.d7()); // +2 from str.
-        E.AddRetaliation(Chance.OneIn3, AttackType.Splash, R =>
+        E.AddAttack(AttackTypes.touch, Elements.fire, 2.d7()); // +2 from str.
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 2.d6());
@@ -3625,7 +3626,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = NewBlobDefence(14); // -2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(2000);
@@ -3652,10 +3653,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d7()); // +1 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d7()); // +1 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -3670,7 +3671,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(2000);
@@ -3697,10 +3698,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.shock, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Touch, Elements.shock, 2.d11());// +2 from str.
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddAttack(AttackTypes.touch, Elements.shock, 2.d11());// +2 from str.
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.energy, Dice.One);
           R.Apply.Harm(Elements.shock, 3.d5());
@@ -3724,7 +3725,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(65500);
@@ -3751,11 +3752,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_armour);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, 3.d3(), Items.javelin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d2()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
@@ -3771,7 +3772,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(75500);
@@ -3798,11 +3799,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, 3.d3(), Items.javelin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
           A.Apply.WhenChance(Chance.ThreeIn4, T => T.ApplyTransient(Properties.stunned, 1.d4() + 2));
         });
@@ -3818,7 +3819,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(85500);
@@ -3845,15 +3846,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, 3.d3(), Items.javelin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
           A.Apply.ApplyTransient(Properties.stunned, 1.d4() + 4);
         });
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2(), A =>
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
           A.Apply.ApplyTransient(Properties.stunned, 1.d4() + 4);
         });
@@ -3872,7 +3873,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(44000);
@@ -3899,14 +3900,14 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.evocation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.evocation, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.drain, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.ice_storm);
         E.Startup.AddGrimoire(Dice.One, Spells.cone_of_cold);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());// +7 from str.
-        E.AddAttack(AttackType.Spell, Elements.cold, 3.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());// +7 from str.
+        E.AddAttack(AttackTypes.spell, Elements.cold, 3.d9());
         E.Conveyance.MajorProperty(Properties.rage);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -3922,7 +3923,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(28000);
@@ -3949,20 +3950,20 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.drain, Elements.fire, Elements.poison, Elements.magical);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3(), K => // +6 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3(), K => // +6 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.stunned, 2.d6());
         });
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(2.d3(), Kinds.insect.Entities.ToArray()); // 'Lord of the Flyers / Flies' .
@@ -3983,7 +3984,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -4010,19 +4011,19 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.stealth, Properties.telepathy);
         E.Startup.SetResistance(Elements.drain, Elements.fire, Elements.poison, Elements.shock);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());// +4 from str.
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());// +4 from str.
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.magic, 2.d4() + 4);
           K.Apply.Harm(Elements.physical, 1.d8());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 3.d4());
@@ -4042,7 +4043,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(32000);
@@ -4069,16 +4070,16 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.heavy_blade, Skills.whip, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.expert, Skills.heavy_blade, Skills.whip, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.drain, Elements.fire, Elements.poison);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Weapon, Elements.fire, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.fire, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.fire, 4.d4());
-        E.AddRetaliation(Chance.OneIn2, AttackType.Touch, R =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.fire, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.fire, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.fire, 4.d4());
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 10.d3());
@@ -4098,7 +4099,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -4125,13 +4126,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Sting, Elements.physical, 4.d3());
-        E.AddAttack(AttackType.Sting, Elements.physical, 4.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 4.d3());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 4.d3());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -4147,7 +4148,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -4174,14 +4175,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d12()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12()); // +6 from str.
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -4197,7 +4198,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2 from dex = 26.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -4224,12 +4225,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -4245,7 +4246,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -4272,14 +4273,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -4298,7 +4299,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -4325,14 +4326,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.gas, 2.d4() + 4);
           K.Apply.ApplyTransient(Properties.sleeping, 1.d6());
@@ -4352,7 +4353,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +13 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000000);
@@ -4379,21 +4380,21 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.acid, Elements.disintegrate, Elements.poison, Elements.sleep, Elements.magical, Elements.drain, Elements.petrify);
-        E.AddAttack(AttackType.Spell, Elements.physical, 1.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d9());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d10()); // +13 from str.
-        E.AddAttack(AttackType.Grapple, Elements.physical, 3.d7(), A =>
+        E.AddAttack(AttackTypes.spell, Elements.physical, 1.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d9());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10()); // +13 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 3.d7(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, A => A.DecreaseAbility(Attributes.intelligence, Dice.One)));
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
@@ -4414,7 +4415,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -4441,10 +4442,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.phasing);
         E.Startup.SetResistance(Elements.petrify, Elements.poison);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -4457,7 +4458,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -4484,23 +4485,23 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.master, Skills.polearm);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.drain, Elements.petrify, Elements.poison, Elements.sleep);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, Items.scythe);
-        E.AddAttack(AttackType.Touch, Elements.physical, 4.d6(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 4.d6(), K =>
         {
           K.SetCast().Strike(Strikes.death, Dice.One);
           K.Apply.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
           K.Apply.DrainLife(Elements.drain, 4.d6());
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, 4.d6(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 4.d6(), K =>
         {
           K.SetCast().Strike(Strikes.death, Dice.One);
           K.Apply.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
           K.Apply.DrainLife(Elements.drain, 4.d6());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4);
           K.Apply.DrainLife(Elements.drain, 4.d6());
@@ -4519,7 +4520,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +12 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300000);
@@ -4546,18 +4547,18 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.necromancy, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.necromancy, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d5()); // +5 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d5());
-        E.AddAttack(AttackType.Sting, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d5()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d5());
+        E.AddAttack(AttackTypes.sting, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 10.d4());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.boost, 2.d4() + 4)
            .SetBeholds();
@@ -4578,7 +4579,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -4605,13 +4606,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.medium_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.medium_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.scimitar);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -4625,7 +4626,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 36, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19500);
@@ -4652,11 +4653,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.necromancy, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.necromancy, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +4 from str.
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -4671,7 +4672,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(14000);
@@ -4698,11 +4699,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.phasing, Properties.free_action, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -4717,7 +4718,7 @@ namespace Pathos
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetTerrain(Materials.fire, Materials.air);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -4744,11 +4745,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +6 from str.
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 4.d2());
@@ -4767,7 +4768,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +6 from dex = 30.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -4794,12 +4795,12 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6(), K => // +7 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6(), K => // +7 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -4817,7 +4818,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -4844,14 +4845,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.drain, Elements.petrify, Elements.poison, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5()); // +9 from str.
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5()); // +9 from str.
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4);
           K.Apply.Malnutrition(80.d3());
@@ -4870,7 +4871,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 36, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1400000);
@@ -4897,12 +4898,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d14()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d14());
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d5(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d14()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d14());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -4921,7 +4922,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -4948,13 +4949,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8()); // +7 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8()); // +7 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -4970,7 +4971,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -4997,13 +4998,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3());
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d3());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5019,7 +5020,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +2 from dex = 24.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(35000);
@@ -5046,13 +5047,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2()); // +5 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Sting, Elements.cold, 2.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.sting, Elements.cold, 2.d3());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5068,7 +5069,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -5095,16 +5096,16 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
         {
           A.Apply.Disarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 5.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3() + 1, A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.Disarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
@@ -5126,7 +5127,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(66600);
@@ -5153,17 +5154,17 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.acid, Elements.fire, Elements.poison, Elements.drain, Elements.petrify, Elements.magical);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 4.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 4.d7(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d7(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 4.d2());
           K.Apply.ApplyTransient(Properties.sickness, 2.d40());
           K.Apply.Afflict(Codex.Afflictions.poisoning);
         });
-        E.AddAttack(AttackType.Spit, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 6.d6());
@@ -5186,9 +5187,9 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(256);
+        E.Speed = Speed.S0_5;
         E.Size = Size.Gargantuan;
-        E.Strategy = Strategy.Attack;
+        E.Strategy = Strategy.Attack; // TODO: make living walls into a resident?
         E.Weight = Weight.FromUnits(200000);
         E.Figure.Set
         (
@@ -5214,10 +5215,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.SetConcealment(Mimicry: true);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.blindness);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d12()); // +8 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d12()); // +8 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Dice.One, Chance.Always, Items.huge_chunk_of_meat);
       });
@@ -5232,7 +5233,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -5259,11 +5260,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 7.d3()); // +6 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 7.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3());
         E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5279,7 +5280,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +5 from dex = 28.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -5306,15 +5307,15 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.heavy_blade, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.master, Skills.heavy_blade, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +6 from str.
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5329,7 +5330,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -5356,12 +5357,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d7()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d7()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -5377,7 +5378,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -5404,12 +5405,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d7());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4(), K =>
         {
           K.Apply.PlaceCurse(Dice.One, Sanctities.Cursed);
         });
@@ -5428,7 +5429,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(23000);
@@ -5455,19 +5456,19 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.necromancy);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6()); // +2 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 3.d4());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d5());
@@ -5487,7 +5488,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -5514,15 +5515,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.necromancy, Skills.conjuration);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.necromancy, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4()); // +5 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5537,7 +5538,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -5564,14 +5565,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.necromancy);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.petrify, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d7()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d4());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -5586,7 +5587,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(600000);
@@ -5613,17 +5614,17 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.enchantment, Skills.necromancy, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.enchantment, Skills.necromancy, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d13()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d13()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -5641,7 +5642,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -5668,14 +5669,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical, Elements.drain, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Touch, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4);
           K.Apply.ApplyTransient(Properties.sickness, 10.d4());
@@ -5695,7 +5696,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -5722,20 +5723,20 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d2()); // +8 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d4(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2()); // +8 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d4(), A =>
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Grapple, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.grapple, Elements.physical, Dice.Zero, A =>
         {
           A.Apply.ApplyTransient(Properties.stunned, 2.d2());
         });
@@ -5754,7 +5755,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -5781,11 +5782,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.Conveyance.Polymorph();
         E.SetCorpse(Chance.OneIn4);
       });
@@ -5800,7 +5801,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +2 from dex = 24.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -5827,14 +5828,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Sting, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 3.d4());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5850,7 +5851,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -5877,16 +5878,16 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
         {
           A.Apply.Disarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 5.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3() + 1, A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.Disarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
@@ -5907,7 +5908,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +2 from dex = 27.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -5934,14 +5935,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -5958,7 +5959,7 @@ namespace Pathos
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -5985,12 +5986,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
@@ -6005,7 +6006,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -6032,19 +6033,19 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d7());
-        E.AddAttack(AttackType.Weapon, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d7());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.confusion, 2.d8());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 1.d6());
         });
-        E.AddAttack(AttackType.Spell, Elements.magical, 2.d6());
+        E.AddAttack(AttackTypes.spell, Elements.magical, 2.d6());
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -6061,7 +6062,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -6088,13 +6089,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4(), K => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4(), K => // +2 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Disenchant(Dice.One));
         });
-        E.AddRetaliation(Chance.OneIn4, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn4, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because it may not target the correct asset?
           R.Apply.Disenchant(Dice.One);
@@ -6112,7 +6113,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -6139,18 +6140,18 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.tunnelling, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.disintegrate);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Harm(Elements.disintegrate, Dice.Zero));
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Harm(Elements.disintegrate, Dice.Zero));
         });
-        E.AddRetaliation(Chance.OneIn4, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn4, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because it may not target the correct asset?
           R.Apply.Harm(Elements.disintegrate, Dice.Zero);
@@ -6169,7 +6170,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.metalivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -6196,17 +6197,17 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DestroyEquippedAsset(Dice.One, StockArray: null, SanctityArray: null, Materials.RustMetals.ToArray()));
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DestroyEquippedAsset(Dice.One, StockArray: null, SanctityArray: null, Materials.RustMetals.ToArray()));
         });
-        E.AddRetaliation(Chance.OneIn4, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn4, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because it may not target the correct asset?
           R.Apply.DestroyEquippedAsset(Dice.One, null, null, Materials.RustMetals.ToArray());
@@ -6226,7 +6227,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -6253,13 +6254,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.disintegrate, Elements.fire, Elements.poison, Elements.sleep, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d12());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d12());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d12()); // +5 from str.
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d12());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d12());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d12()); // +5 from str.
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 3.d8());
@@ -6278,7 +6279,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from DEX = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -6305,9 +6306,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -6321,7 +6322,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -6348,10 +6349,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +3 from str.
-        E.AddAttack(AttackType.Grapple, Elements.physical, 2.d8(), A => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +3 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d8(), A => // +3 from str.
         {
           A.Apply.Grapple(2.d6());
         });
@@ -6368,7 +6369,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from DEX = 15.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -6395,9 +6396,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -6411,7 +6412,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from DEX = 14.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1500);
@@ -6438,9 +6439,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6() + 3); // -3 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6() + 3); // -3 from STR.
         E.SetCorpse(Chance.OneIn3);
       });
       //scaled from 3rd Ed.
@@ -6455,7 +6456,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -6482,9 +6483,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -6498,7 +6499,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -6525,9 +6526,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -6542,7 +6543,7 @@ namespace Pathos
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -6569,12 +6570,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +3 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 5.d6());
@@ -6594,7 +6595,7 @@ namespace Pathos
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -6621,12 +6622,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 3.d6());
@@ -6645,7 +6646,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -6672,9 +6673,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3()); // -1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3()); // -1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -6688,7 +6689,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -6715,10 +6716,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
       // Now using Mastiff for here
@@ -6732,7 +6733,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from DEX = 16.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -6759,9 +6760,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.beatitude, Properties.searching);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +3 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +3 from STR.
         E.SetCorpse(Chance.Always);
       });
 
@@ -6775,7 +6776,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1500);
@@ -6802,9 +6803,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6() + 1); // -1 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6() + 1); // -1 from STR.
         E.SetCorpse(Chance.Always);
       });
 
@@ -6818,7 +6819,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8500);
@@ -6845,19 +6846,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.cold, 2.d8(), K => // -2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.cold, 2.d8(), K => // -2 from str.
         {
           K.Apply.ApplyTransient(Properties.slowness, 3.d3());
         });
-        E.AddAttack(AttackType.Bite, Elements.cold, 2.d8(), K => // -2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.cold, 2.d8(), K => // -2 from str.
         {
           K.Apply.ApplyTransient(Properties.slowness, 3.d3());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -6871,7 +6872,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8000);
@@ -6898,9 +6899,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d13()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d13()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -6914,7 +6915,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from DEX = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -6941,13 +6942,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.cannibalism);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8(), K => // +2 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8(), K => // +2 from STR.
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.rabies));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8(), K => // +2 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8(), K => // +2 from STR.
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.rabies));
         });
@@ -6965,7 +6966,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from DEX = 23.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5500);
@@ -6992,12 +6993,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.invisibility);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4()); // +1 from STR.
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4()); // +1 from STR.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -7011,7 +7012,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -7038,10 +7039,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -7055,7 +7056,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex = 23.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -7082,11 +7083,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 6.d6());
@@ -7105,7 +7106,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // + 1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -7132,11 +7133,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 3.d6());
@@ -7155,7 +7156,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -7182,9 +7183,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -7198,7 +7199,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from DEX = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8500);
@@ -7225,11 +7226,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -7242,7 +7243,7 @@ namespace Pathos
 
       var BabyDragonSize = Size.Medium;
       var BabyDragonWeight = Weight.FromUnits(50000);
-      var BabyDragonSpeed = Speed.FromTurns(12);
+      var BabyDragonSpeed = Speed.S5_0;
       var BabyDragonSonic = Sonics.squall;
       var BabyDragonLevel = 4;
       var BabyDragonDefence = NewDragonDefence(18);
@@ -7254,7 +7255,7 @@ namespace Pathos
 
       var YoungDragonSize = Size.Large;
       var YoungDragonWeight = Weight.FromUnits(100000);
-      var YoungDragonSpeed = Speed.FromTurns(12);
+      var YoungDragonSpeed = Speed.S5_0;
       var YoungDragonSonic = Sonics.squall;
       var YoungDragonLifeBase = 36;
       var YoungDragonLifeDice = 1.d4();
@@ -7263,7 +7264,7 @@ namespace Pathos
 
       var AdultDragonSize = Size.Huge;
       var AdultDragonWeight = Weight.FromUnits(200000);
-      var AdultDragonSpeed = Speed.FromTurns(12);
+      var AdultDragonSpeed = Speed.S5_0;
       var AdultDragonSonic = Sonics.roar;
       var AdultDragonLifeBase = 72;
       var AdultDragonLifeDice = 1.d4();
@@ -7271,7 +7272,7 @@ namespace Pathos
       var AdultDragonManaDice = 1.d2();
       var AdultDragonDropScalesChance = Chance.OneIn3;
 
-      var AncientDragonSpeed = Speed.FromTurns(12);
+      var AncientDragonSpeed = Speed.S5_0;
       var AncientDragonSize = Size.Gargantuan;
       var AncientDragonWeight = Weight.FromUnits(300000);
       var AncientDragonSonic = Sonics.roar;
@@ -7319,11 +7320,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.acid);
         E.Conveyance.MinorResistance(Elements.acid);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7364,11 +7365,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.shock);
         E.Conveyance.MinorResistance(Elements.shock);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7409,11 +7410,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.drain, Elements.poison);
         E.Conveyance.MinorResistance(Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d9(), K => // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d9(), K => // +2 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -7458,11 +7459,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.magical, Elements.petrify);
         E.Conveyance.MinorResistance(Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8()); // +4 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7503,10 +7504,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
         E.Conveyance.MinorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -7549,11 +7550,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.sleep);
         E.Conveyance.MinorResistance(Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7594,11 +7595,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire);
         E.Conveyance.MinorResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +4 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7639,11 +7640,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.magical);
         //E.Conveyance.MinorResistance(Elements.Magical);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7685,11 +7686,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.sleep);
         E.Conveyance.MinorResistance(Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +4 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7730,11 +7731,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.cold);
         E.Conveyance.MinorResistance(Elements.cold);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -7775,11 +7776,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.disintegrate, Elements.petrify);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.MinorResistance(Elements.petrify), F => F.MinorResistance(Elements.disintegrate));
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -7821,12 +7822,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.acid);
         E.Conveyance.MinorResistance(Elements.acid);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 3.d10());
@@ -7871,12 +7872,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.shock);
         E.Conveyance.MinorResistance(Elements.shock);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.shock, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d4() + 4);
           K.Apply.Harm(Elements.shock, 3.d6());
@@ -7921,15 +7922,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.drain, Elements.poison);
         E.Conveyance.MinorResistance(Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d9(), K => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d9(), K => // +3 from str.
         {
           K.Apply.WhenChance(Chance.OneIn6, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
           K.Apply.Harm(Elements.poison, 3.d10());
@@ -7976,12 +7977,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.magical, Elements.petrify);
         E.Conveyance.MinorResistance(Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8()); // +4 from str.
-        E.AddAttack(AttackType.Breath, Elements.petrify, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8()); // +4 from str.
+        E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
           K.Apply.Harm(Elements.petrify, 4.d6());
@@ -8026,11 +8027,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
           K.Apply.Harm(Elements.poison, 4.d6());
@@ -8078,12 +8079,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.sleep);
         E.Conveyance.MinorResistance(Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.sleep, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.sleep, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.sleep, 1.d4() + 4);
           K.Apply.ApplyTransient(Properties.sleeping, 3.d15());
@@ -8128,12 +8129,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire);
         E.Conveyance.MinorResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +4 from str.
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d4() + 4);
           K.Apply.Harm(Elements.fire, 4.d6());
@@ -8178,12 +8179,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.magical);
         //E.Conveyance.MinorResistance(Elements.Magical);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d4() + 4);
           K.Apply.Harm(Elements.magical, 4.d6());
@@ -8229,12 +8230,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.sleep);
         E.Conveyance.MinorResistance(Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +5 from str.
-        E.AddAttack(AttackType.Breath, Elements.force, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.breath, Elements.force, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.force, 1.d4() + 4)
            .SetObjects()
@@ -8283,12 +8284,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.cold);
         E.Conveyance.MinorResistance(Elements.cold);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d4() + 4);
           K.Apply.Harm(Elements.cold, 3.d6());
@@ -8333,12 +8334,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.disintegrate, Elements.petrify);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.MinorResistance(Elements.petrify), F => F.MinorResistance(Elements.disintegrate));
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Breath, Elements.disintegrate, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d4() + 4);
           K.Apply.Harm(Elements.disintegrate, 3.d6());
@@ -8384,18 +8385,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.acid);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Breath, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d5() + 5);  //Not sure if this works
           K.Apply.Harm(Elements.acid, 4.d10());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.black_dragon_scales);
         E.Conveyance.MajorResistance(Elements.acid);
@@ -8438,20 +8439,20 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.clerical);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.expert, Skills.clerical);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
-        E.AddAttack(AttackType.Breath, Elements.shock, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
           K.Apply.Harm(Elements.shock, 4.d6());
         });
         // +7 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());  // +7 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());  // +7 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.shock);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.blue_dragon_scales);
@@ -8494,25 +8495,25 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.expert, Skills.transmutation);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.Startup.AddGrimoire(Dice.One, Spells.toxic_spray);
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.poison, 4.d10());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 8.d4());
           K.Apply.ApplyTransient(Properties.silence, 4.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +6 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.poison));
@@ -8561,19 +8562,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.magical, Elements.petrify);
         E.Startup.AddGrimoire(Dice.One, Spells.deflection);
-        E.AddAttack(AttackType.Breath, Elements.petrify, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.petrify, 5.d6());
           K.Apply.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.petrifying, 4.d4()));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8()); // +7 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +7 from str.
         E.Conveyance.MajorResistance(Elements.petrify);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.gold_dragon_scales);
@@ -8616,20 +8617,20 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.poison, 5.d6());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4()); // +7 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4()); // +7 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -8673,19 +8674,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Breath, Elements.sleep, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.sleep, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.sleep, 1.d5() + 5);
           K.Apply.ApplyTransient(Properties.sleeping, 4.d25());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +6 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +6 from str.
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.orange_dragon_scales);
@@ -8728,19 +8729,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 6.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.red_dragon_scales);
@@ -8783,18 +8784,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight, Properties.displacement);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
           K.Apply.Harm(Elements.magical, 6.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +5 from str.
         //E.Conveyance.MajorResistance(Elements.Magical);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.shimmering_dragon_scales);
@@ -8838,11 +8839,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible, Properties.flight, Properties.reflection);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.haste);
-        E.AddAttack(AttackType.Breath, Elements.force, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.force, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.force, 1.d5() + 5)
            .SetObjects()
@@ -8851,9 +8852,9 @@ namespace Pathos
           K.Apply.Harm(Elements.force, 6.d6());
           K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.silver_dragon_scales);
@@ -8896,19 +8897,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 4.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.white_dragon_scales);
@@ -8951,19 +8952,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.disintegrate, Elements.petrify);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
-        E.AddAttack(AttackType.Breath, Elements.disintegrate, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d5() + 5);
           K.Apply.Harm(Elements.disintegrate, 4.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d18());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d18());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +5 from str.
         E.Conveyance.MajorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AdultDragonDropScalesChance, Dice.One, Items.yellow_dragon_scales);
@@ -9007,18 +9008,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.jumping, Properties.dark_vision, Properties.see_invisible);
         E.Startup.SetResistance(Elements.acid);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Breath, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d5() + 5);  //Not sure if this works
           K.Apply.Harm(Elements.acid, 8.d10());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.black_dragon_scales);
         E.Conveyance.MajorResistance(Elements.acid);
@@ -9061,20 +9062,20 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.clerical);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.expert, Skills.clerical);
         E.Startup.SetTalent(Properties.jumping, Properties.dark_vision, Properties.see_invisible);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
-        E.AddAttack(AttackType.Breath, Elements.shock, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
           K.Apply.Harm(Elements.shock, 8.d6());
         });
         // +7 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());  // +7 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());  // +7 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.shock);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.blue_dragon_scales);
@@ -9117,25 +9118,25 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.expert, Skills.transmutation);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.Startup.AddGrimoire(Dice.One, Spells.toxic_spray);
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.poison, 8.d10());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 8.d4());
           K.Apply.ApplyTransient(Properties.silence, 4.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +6 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.poison));
@@ -9184,20 +9185,20 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible);
         E.Startup.SetResistance(Elements.magical, Elements.petrify);
         E.Startup.AddGrimoire(Dice.One, Spells.deflection);
-        E.AddAttack(AttackType.Breath, Elements.petrify, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.petrify, 10.d6());
           K.Apply.ApplyTransient(Properties.petrifying, 4.d4());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Incarcerate(Elements.petrify, Codex.Blocks.statue));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8()); // +7 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +7 from str.
         E.Conveyance.MajorResistance(Elements.petrify);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.gold_dragon_scales);
@@ -9240,20 +9241,20 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.poison, 10.d6());
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4()); // +7 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4()); // +7 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -9297,19 +9298,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.enchantment);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Breath, Elements.sleep, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.sleep, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.sleep, 1.d5() + 5);
           K.Apply.ApplyTransient(Properties.sleeping, 8.d25());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +6 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +6 from str.
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.orange_dragon_scales);
@@ -9352,19 +9353,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 12.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.red_dragon_scales);
@@ -9407,18 +9408,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible, Properties.displacement);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
           K.Apply.Harm(Elements.magical, 12.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +5 from str.
         //E.Conveyance.MajorResistance(Elements.Magical);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.shimmering_dragon_scales);
@@ -9462,11 +9463,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.jumping, Properties.dark_vision, Properties.see_invisible, Properties.reflection);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.haste);
-        E.AddAttack(AttackType.Breath, Elements.force, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.force, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.force, 1.d5() + 5)
            .SetObjects()
@@ -9475,9 +9476,9 @@ namespace Pathos
           K.Apply.Harm(Elements.force, 12.d6());
           K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 12.d6() + 12));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.silver_dragon_scales);
@@ -9520,19 +9521,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent(Properties.jumping, Properties.dark_vision, Properties.see_invisible);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 8.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.white_dragon_scales);
@@ -9575,19 +9576,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetSkill(Qualifications.Master, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.master, Skills.enchantment);
         E.Startup.SetTalent(Properties.jumping, Properties.see_invisible);
         E.Startup.SetResistance(Elements.disintegrate, Elements.petrify);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
-        E.AddAttack(AttackType.Breath, Elements.disintegrate, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d5() + 5);
           K.Apply.Harm(Elements.disintegrate, 8.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d18());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d18());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +5 from str.
         E.Conveyance.MajorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(AncientDragonDropScalesChance, Dice.One, Items.yellow_dragon_scales);
@@ -9604,7 +9605,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewDragonDefence(27);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(140000);
@@ -9631,19 +9632,19 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.disintegrate, Elements.petrify, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
           K.Apply.Harm(Elements.magical, 6.d8());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8()); // +8 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8()); // +8 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -9668,7 +9669,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewDragonDefence(30); // +2 from str = 32.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits((long)(AdultDragonWeight.GetUnits() * 1.5F));
@@ -9695,23 +9696,23 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.flight, Properties.polymorph_control);
         E.Startup.SetResistance(Elements.fire, Elements.magical);
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 6.d8());
         });
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 3.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +10 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +10 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           // 0..1 of each.
@@ -9735,7 +9736,7 @@ namespace Pathos
           E.Frequency = 0;
               E.Defence = NewDragonDefence(30);
           E.SetDiet(Diets.Carnivore);
-          E.Speed = Speed.FromTurns(12);
+          E.Speed = Speed.S12;
           E.Size = Size.Large;
           E.Strategy = Strategy.Attack;
               E.Weight = Weight.FromUnits(20000);
@@ -9773,14 +9774,14 @@ namespace Pathos
       E.Startup.AddGrimoire(Dice.One, Spells.acid_stream);
       E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
       E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-          E.AddAttack(AttackType.Breath, Elements.Cold, Dice.Zero, K =>
+          E.AddAttack(AttackTypes.Breath, Elements.Cold, Dice.Zero, K =>
           {
             K.SetCast().Beam(Beams.cold, 1.d5() + 5);
             K.Apply.Harm(Elements.Cold, 4.d6());
           });
-          E.AddAttack(AttackType.Bite, Elements.Physical, 3.d8());
-          E.AddAttack(AttackType.Claw, Elements.Physical, 1.d4());
-          E.AddAttack(AttackType.Claw, Elements.Physical, 1.d4());
+          E.AddAttack(AttackTypes.Bite, Elements.Physical, 3.d8());
+          E.AddAttack(AttackTypes.Claw, Elements.Physical, 1.d4());
+          E.AddAttack(AttackTypes.Claw, Elements.Physical, 1.d4());
           E.SetCorpseChance(Chance.Always);
           E.DropLoot.AddKit(Chance.OneIn3, Dice.One, Items.silver_dragon_scales);
         }); */
@@ -9795,7 +9796,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +1 from dex = 28.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1200000);
@@ -9822,15 +9823,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.see_invisible, Properties.life_regeneration, Properties.polymorph_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +9 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +9 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.MinorProperty(Properties.life_regeneration);
         E.SetCorpse(Chance.Always);
@@ -9846,7 +9847,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1400000);
@@ -9873,17 +9874,17 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 8.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d9());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d9());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6()); // +5 from str.
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.Always);
       });
@@ -9898,7 +9899,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(70000);
@@ -9925,10 +9926,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Sting, Elements.physical, 4.d5(), K => // +4 from str.
+        E.AddAttack(AttackTypes.sting, Elements.physical, 4.d5(), K => // +4 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T =>
           {
@@ -9936,7 +9937,7 @@ namespace Pathos
             T.Afflict(Codex.Afflictions.poisoning);
           });
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
       });
@@ -9952,7 +9953,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -9979,7 +9980,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_blade, Skills.light_armour, Skills.heavy_armour, Skills.medium_armour, Skills.axe, Skills.pick);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_blade, Skills.light_armour, Skills.heavy_armour, Skills.medium_armour, Skills.axe, Skills.pick);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.iron_shoes);
@@ -9989,8 +9990,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.dwarvish_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_roundshield);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_mattock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -10003,7 +10004,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex = 16.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -10030,7 +10031,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching);
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.iron_shoes);
@@ -10040,9 +10041,9 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.Always, Items.dwarvish_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_roundshield);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_mattock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +3 from str.
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +3 from str.
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2(), dwarf_warrior);
@@ -10060,7 +10061,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1 from dex = 12.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15500);
@@ -10087,7 +10088,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.iron_shoes);
@@ -10097,8 +10098,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.dwarvish_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_roundshield);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_mattock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -10111,7 +10112,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +3 from dex = 13.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -10138,14 +10139,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_short_sword);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_roundshield);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -10161,7 +10162,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -10188,7 +10189,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.iron_shoes);
@@ -10198,8 +10199,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.dwarvish_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_roundshield);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_mattock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -10212,7 +10213,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -10239,7 +10240,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.dwarvish_cloak);
@@ -10250,7 +10251,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn4, Items.dwarvish_short_sword);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_roundshield);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dwarvish_mattock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d9()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d9()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -10267,7 +10268,7 @@ namespace Pathos
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex = 17.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -10294,12 +10295,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -10316,7 +10317,7 @@ namespace Pathos
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -10343,12 +10344,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6()); // +4 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -10365,7 +10366,7 @@ namespace Pathos
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -10392,12 +10393,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d13());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d13());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d12()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d13());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d13());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d12()); // +5 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -10414,7 +10415,7 @@ namespace Pathos
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -10441,10 +10442,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.shock, 3.d8()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.shock, 3.d8()); // +1 from str.
         E.Conveyance.MajorResistance(Elements.shock);
         E.SetCorpse(Chance.Always);
       });
@@ -10459,7 +10460,7 @@ namespace Pathos
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex = 22.
         E.SetDiet(Diets.omnivore);
         E.SetTerrain(Materials.water, Materials.air);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(70000);
@@ -10486,10 +10487,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +4 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -10503,7 +10504,7 @@ namespace Pathos
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -10530,10 +10531,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +3 from str.
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d3(), A => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d3(), A => // +3 from str.
         {
           A.Apply.Grapple(1.d6());
         });
@@ -10550,7 +10551,7 @@ namespace Pathos
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.SetTerrain(Materials.water, Materials.air);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -10577,10 +10578,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery, Properties.jumping);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 1.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 1.d6(), K => // +1 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d6(), K => // +1 from str.
         {
           K.SetCast().Strike(Strikes.venom, Dice.Fixed(2));
           K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 1);
@@ -10598,7 +10599,7 @@ namespace Pathos
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(800);
@@ -10626,10 +10627,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 3.d4(), K => // -1 from str.
+        E.AddAttack(AttackTypes.sting, Elements.physical, 3.d4(), K => // -1 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -10648,7 +10649,7 @@ namespace Pathos
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300000);
@@ -10676,15 +10677,15 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d9(), A => // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d9(), A => // +3 from str.
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -10698,7 +10699,7 @@ namespace Pathos
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(600);
@@ -10725,9 +10726,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d11()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d11()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -10741,7 +10742,7 @@ namespace Pathos
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -10768,9 +10769,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 6.d5()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 6.d5()); // +5 from str.
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -10786,7 +10787,7 @@ namespace Pathos
         E.IsAnimate = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -10813,7 +10814,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.SetCorpse(Chance.Never);
       });
@@ -10828,7 +10829,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewEyeDefence(11); // +1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -10855,10 +10856,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
         //E.Startup.SetResistance(Elements.water);
-        E.AddAttack(AttackType.Blast, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.watery, Dice.Zero);
           K.Apply.Harm(Elements.water, 2.d6());
@@ -10879,7 +10880,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewEyeDefence(11); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -10906,10 +10907,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Blast, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.fiery, Dice.Zero);
           K.Apply.Harm(Elements.fire, 3.d6());
@@ -10929,7 +10930,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -10956,10 +10957,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation);
         E.Startup.SetResistance(Elements.cold, Elements.sleep);
-        E.AddAttack(AttackType.Blast, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.frosty, Dice.Zero);
           K.Apply.Harm(Elements.cold, 3.d9());
@@ -10980,7 +10981,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewEyeDefence(21); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(45000);
@@ -11007,10 +11008,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.drain);
-        E.AddAttack(AttackType.Blast, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.muddy, Dice.Zero); // TODO: 'water crash' is probably not the right sfx.
           K.Apply.Harm(Elements.physical, 4.d6());
@@ -11033,7 +11034,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewEyeDefence(15); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -11060,10 +11061,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation);
         E.Startup.SetResistance(Elements.shock);
-        E.AddAttack(AttackType.Blast, Elements.shock, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.electric, Dice.Zero);
           K.Apply.Harm(Elements.shock, 5.d6());
@@ -11082,7 +11083,7 @@ namespace Pathos
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // 5+ from dex = 22
         E.SetDiet(Diets.inediate);
         E.SetTerrain(Materials.air);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -11109,15 +11110,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
         E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 1.d12()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 1.d12(), K => // +2 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d12(), K => // +2 from str.
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
         });
-        E.AddAttack(AttackType.Engulf, Elements.physical, 1.d12(), K => // +2 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d12(), K => // +2 from str.
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
         });
@@ -11135,7 +11136,7 @@ namespace Pathos
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21
         E.SetTerrain(Materials.air, Materials.ice, Materials.water);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(120000);
@@ -11162,12 +11163,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.free_action, Properties.slippery, Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.cold, 5.d5());
-        E.AddAttack(AttackType.Claw, Elements.cold, 5.d5());
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddAttack(AttackTypes.claw, Elements.cold, 5.d5());
+        E.AddAttack(AttackTypes.claw, Elements.cold, 5.d5());
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 10.d4());
@@ -11187,7 +11188,7 @@ namespace Pathos
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex = 20
         E.SetTerrain(Materials.air);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(90000);
@@ -11214,10 +11215,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration, Properties.phasing);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Punch, Elements.physical, 6.d6()); // +5 from strength.
+        E.AddAttack(AttackTypes.punch, Elements.physical, 6.d6()); // +5 from strength.
         E.SetCorpse(Chance.Never);
       });
 
@@ -11232,7 +11233,7 @@ namespace Pathos
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -11259,12 +11260,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.fire, 5.d4());
-        E.AddAttack(AttackType.Claw, Elements.fire, 5.d4());
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddAttack(AttackTypes.claw, Elements.fire, 5.d4());
+        E.AddAttack(AttackTypes.claw, Elements.fire, 5.d4());
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 10.d4());
@@ -11282,7 +11283,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +4 from dex = 17
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(9000);
@@ -11309,9 +11310,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.invisibility);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4()); // +3 from strength.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +3 from strength.
         E.Conveyance.ApplyTransient(Properties.invisibility, 1.d100() + 50);
         E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+60));
         E.SetCorpse(Chance.Always);
@@ -11328,7 +11329,7 @@ namespace Pathos
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -11355,10 +11356,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d6(), A => A.Apply.Disarm()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6(), A => A.Apply.Disarm()); // +4 from str.
         E.AddReaction(Chance.Always, Elements.water, A => A.Heal(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
@@ -11374,7 +11375,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -11401,7 +11402,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.bow, Skills.light_armour, Skills.light_blade, Skills.medium_blade, Skills.necromancy, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.bow, Skills.light_armour, Skills.light_blade, Skills.medium_blade, Skills.necromancy, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible); // drow do not have darkvision in Nethack lore, but it doesn't make sense.
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.darkness);
@@ -11410,8 +11411,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dark_elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dark_elven_short_sword);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.dark_elven_dagger);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.sleeping, 2.d4());
         });
@@ -11428,7 +11429,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -11455,11 +11456,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
       });
@@ -11473,7 +11474,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -11500,15 +11501,15 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.elven_spear });
         E.Startup.Loot.AddKit(Chance.Always, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn5, Dice.One, Stocks.wand);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() - 1, green_elf);
@@ -11529,7 +11530,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -11556,14 +11557,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.heavy_blade, Skills.light_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.heavy_blade, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.Loot.AddKit(Modifier.Plus0to3, Items.elven_broadsword);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +3 from str.
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11577,7 +11578,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -11604,11 +11605,11 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.Always);
       });
@@ -11622,7 +11623,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -11649,7 +11650,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.light_armour, Skills.light_blade, Skills.heavy_blade, Skills.literacy, Skills.bow);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.light_armour, Skills.light_blade, Skills.heavy_blade, Skills.literacy, Skills.bow);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.Loot.AddKit(Chance.Always, Items.elven_bow);
@@ -11660,8 +11661,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_leather_helm);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_dagger);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_cloak);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8()); // +1 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11675,7 +11676,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex = 14.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -11702,7 +11703,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.light_armour, Skills.medium_blade, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_blade, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.sleep);
@@ -11710,8 +11711,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, 2.d4(), Items.elven_dagger);
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, 5.d100(), Items.gold_coin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +1 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11725,7 +11726,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -11752,7 +11753,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.spear, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.spear, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn5, Items.elven_shield);
@@ -11761,9 +11762,9 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_leather_helm);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_boots);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d3()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d3());
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d16());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d16());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11777,7 +11778,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -11804,7 +11805,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.bow, Skills.light_armour, Skills.light_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.bow, Skills.light_armour, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.Loot.AddKit(Chance.Always, Items.elven_bow);
@@ -11812,7 +11813,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_dagger);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_boots);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d7()); // +1 from dex.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7()); // +1 from dex.
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11830,7 +11831,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewEyeDefence(26); // +1 from dex=27.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -11857,34 +11858,34 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration, Properties.clarity);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +2 from str.
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.magic, 2.d4() + 4)
            .SetReflects();
           K.Apply.Harm(Elements.physical, 4.d9());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetReflects();
           K.Apply.ApplyTransient(Properties.stunned, 3.d3());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetReflects();
           K.Apply.ApplyTransient(Properties.confusion, 3.d3());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.gas, 2.d4() + 4)
            .SetReflects();
           K.Apply.ApplyTransient(Properties.sleeping, 5.d4());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.death, 2.d4() + 4)
            .SetReflects();
@@ -11903,7 +11904,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewEyeDefence(16); // +2 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -11930,9 +11931,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.blinking, Properties.levitation, Properties.life_regeneration);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.boost, 2.d4() + 4)
            .SetObjects()
@@ -11955,7 +11956,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -11982,9 +11983,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetReflects()
@@ -12005,7 +12006,7 @@ namespace Pathos
         E.Frequency = 6;
         E.Defence = NewEyeDefence(8); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -12032,9 +12033,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
-        E.AddLivingRetaliation(Chance.OneIn3, AttackType.Gaze, R =>
+        E.AddLivingRetaliation(Chance.OneIn3, AttackTypes.gaze, R =>
         {
           R.SetCast().Strike(Strikes.spirit, Dice.One)
            .SetReflects()
@@ -12054,7 +12055,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewEyeDefence(15); // -5 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -12081,10 +12082,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation);
         E.Startup.SetResistance(Elements.sleep);
-        E.AddDyingRetaliation(Chance.Always, AttackType.Blast, R =>
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.acid, Dice.Zero);
           R.Apply.Harm(Elements.physical, 4.d6());
@@ -12101,7 +12102,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -12128,23 +12129,23 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.flash, 2.d4() + 4)
            .SetReflects()
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.blindness, 3.d4());
         });
-        E.AddLivingRetaliation(Chance.OneIn3, AttackType.Gaze, R =>
+        E.AddLivingRetaliation(Chance.OneIn3, AttackTypes.gaze, R =>
         {
           R.SetCast().Strike(Strikes.flash, Dice.One)
            .SetReflects()
            .SetBeholds();
           R.Apply.ApplyTransient(Properties.blindness, 3.d70());
         });
-        E.AddDyingRetaliation(Chance.Always, AttackType.Blast, R =>
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.light, Dice.Zero);
           R.Apply.Light(true);
@@ -12165,7 +12166,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -12192,11 +12193,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -12210,7 +12211,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex, +2 from displacement = 30.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(23000);
@@ -12237,11 +12238,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.displacement);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.SetCorpse(Chance.Always);
         E.Conveyance.MinorProperty(Properties.displacement);
       });
@@ -12256,7 +12257,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -12283,12 +12284,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d3());
-        E.AddAttack(AttackType.Bite, Elements.fire, 6.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.bite, Elements.fire, 6.d5());
         E.SetCorpse(Chance.Always);
       });
 
@@ -12302,7 +12303,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -12329,9 +12330,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.AddReaction(Chance.OneIn2, Elements.water, A => A.ApplyTransient(Properties.fear, 2.d6() + 2));
         E.SetCorpse(Chance.Always);
       });
@@ -12346,7 +12347,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9500);
@@ -12373,11 +12374,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d3()); // +2 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d2());
         E.SetCorpse(Chance.Always);
       });
 
@@ -12391,7 +12392,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -12418,13 +12419,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5()); // +4 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5());
-        //E.AddAttack(AttackType.Bite, Elements.Physical, 1.d3());
-        E.AddAttack(AttackType.Breath, Elements.sleep, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5());
+        //E.AddAttack(AttackTypes.Bite, Elements.Physical, 1.d3());
+        E.AddAttack(AttackTypes.breath, Elements.sleep, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.sleep, 1.d5() + 5);
           K.Apply.ApplyTransient(Properties.sleeping, 1.d6());
@@ -12443,7 +12444,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(1500);
@@ -12470,9 +12471,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.AddReaction(Chance.Always, Elements.water, A => A.ApplyTransient(Properties.fear, 2.d6() + 2));
         E.SetCorpse(Chance.Always);
       });
@@ -12487,7 +12488,7 @@ namespace Pathos
         E.Frequency = 7;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -12514,11 +12515,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.beatitude, Properties.searching);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.AddReaction(Chance.OneIn4, Elements.water, A => A.ApplyTransient(Properties.fear, 2.d6() + 2));
         E.SetCorpse(Chance.Always);
       });
@@ -12533,7 +12534,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -12560,11 +12561,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +1 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d7());
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d7());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d3());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -12578,7 +12579,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -12605,11 +12606,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2()); // +2 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
         E.SetCorpse(Chance.Always);
       });
 
@@ -12623,7 +12624,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -12650,12 +12651,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 7.d3()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 6.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 7.d3()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 6.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d7());
         E.SetCorpse(Chance.Always);
       });
 
@@ -12669,7 +12670,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50000);
@@ -12696,11 +12697,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.beatitude);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d2()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d2()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d3());
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -12716,7 +12717,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -12743,15 +12744,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddRetaliation(Chance.Always, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.venom, Dice.One);
           R.Apply.Harm(Elements.poison, 7.d4());
           R.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddRetaliation(Chance.OneIn2, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 1.d8());
@@ -12770,7 +12771,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -12802,9 +12803,9 @@ namespace Pathos
           A.Heal(6.d6(), Modifier.Zero);
           A.CloneTargetCharacter(Dice.One);
         });
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddRetaliation(Chance.OneIn3, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 2.d6());
@@ -12827,7 +12828,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -12854,15 +12855,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddRetaliation(Chance.Always, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.venom, Dice.One);
           R.Apply.Harm(Elements.poison, 1.d8());
           R.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddRetaliation(Chance.OneIn2, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 2.d4());
@@ -12881,7 +12882,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -12908,10 +12909,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.AddRetaliation(Chance.OneIn2, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 2.d4());
@@ -12930,7 +12931,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -12958,7 +12959,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetCorpse(Chance.OneIn3);
       });
@@ -12973,7 +12974,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -13000,9 +13001,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire, Elements.poison);
-        E.AddRetaliation(Chance.OneIn3, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 2.d4());
@@ -13025,7 +13026,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -13052,11 +13053,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
-        E.AddAttack(AttackType.Shriek, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
@@ -13075,7 +13076,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -13102,9 +13103,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d4());
         E.Conveyance.ApplyTransient(Properties.hallucination, Dice.Fixed(+200));
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
@@ -13120,7 +13121,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -13147,9 +13148,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddRetaliation(Chance.OneIn3, AttackType.Spore, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.stunned, 2.d4());
@@ -13172,7 +13173,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(0);
@@ -13200,11 +13201,11 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight, Properties.vitality, Properties.phasing);
         E.Startup.SetResistance(Elements.cold, Elements.disintegrate, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Shriek, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
@@ -13224,7 +13225,7 @@ namespace Pathos
         E.Frequency = 0; // graveyard zoo.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +1 from dex = 25.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -13251,10 +13252,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight, Properties.vitality, Properties.phasing);
         E.Startup.SetResistance(Elements.cold, Elements.disintegrate, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.One);
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.One);
         E.SetCorpse(Chance.Never);
       });
 
@@ -13268,7 +13269,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(14500);
@@ -13295,14 +13296,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.vitality, Properties.phasing);
         E.Startup.SetResistance(Elements.cold, Elements.disintegrate, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d6());
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, 3.d3(), K => // -2 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, 3.d3(), K => // -2 from str.
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d6());
         });
@@ -13319,7 +13320,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex = 16.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(14500);
@@ -13346,14 +13347,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.disintegrate, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Touch, Elements.cold, 1.d4());
+        E.AddAttack(AttackTypes.touch, Elements.cold, 1.d4());
         E.SetCorpse(Chance.Never);
       });
       #endregion
@@ -13371,7 +13372,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -13398,11 +13399,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.club);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.club);
         E.Startup.SetTalent(Properties.dark_vision, Properties.clarity, Properties.free_action);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 12.d5()); // +6 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 8.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 12.d5()); // +6 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 8.d4());
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
       });
@@ -13417,7 +13418,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // -1 from dex = 25.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(93000);
@@ -13444,12 +13445,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.club, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.club, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.dark_vision);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d5()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d5());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d8());
         E.SetCorpse(Chance.Always);
       });
 
@@ -13463,7 +13464,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000000);
@@ -13490,12 +13491,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d11());
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d11());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d12()); // +10 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d11());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d11());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d12()); // +10 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -13512,7 +13513,7 @@ namespace Pathos
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = GiantWeight;
@@ -13539,11 +13540,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5()); // +7 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5()); // +7 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5());
         E.Conveyance.MajorResistance(Elements.fire);
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
@@ -13559,7 +13560,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = GiantWeight;
@@ -13586,11 +13587,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4()); // +6 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.cold);
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
@@ -13606,7 +13607,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits((long)(GiantWeight.GetUnits() * 1.5F));
@@ -13633,12 +13634,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +10 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +10 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           // 0..1 of each.
@@ -13663,7 +13664,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from dex = 14.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = GiantWeight;
@@ -13690,9 +13691,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4()); // +5 from str.
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
       });
@@ -13707,7 +13708,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(130000);
@@ -13734,12 +13735,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.fire, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2()); // +8 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +8 from str.
         E.Conveyance.MajorResistance(Elements.fire);
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
@@ -13755,7 +13756,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000000);
@@ -13782,12 +13783,12 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d16());
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d11());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d12()); // +10 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d16());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d11());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d12()); // +10 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -13803,7 +13804,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex = 17.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = GiantWeight;
@@ -13830,12 +13831,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.club, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.club, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.stone_club);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.stone_club);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +6 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
         E.Conveyance.MajorResistance(Elements.petrify);
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
@@ -13851,7 +13852,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex = 22.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = GiantWeight;
@@ -13878,11 +13879,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.shock);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5()); // +9 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5()); // +9 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d5());
         E.Conveyance.MajorResistance(Elements.shock);
         E.Conveyance.TradeoffAbility(Attributes.strength, Attributes.intelligence);
         E.SetCorpse(Chance.Always);
@@ -13898,7 +13899,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex = 29.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(180000);
@@ -13925,13 +13926,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.Startup.AddGrimoire(Dice.One, Spells.poison_blast);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d6()); // +10 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d6()); // +10 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d6());
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -13948,7 +13949,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -13976,10 +13977,10 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +2 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
       });
@@ -13994,7 +13995,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -14022,11 +14023,11 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() - 1, gnoll_warrior);
@@ -14046,7 +14047,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -14074,13 +14075,13 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d2() + 1, Spells.fear, Spells.fireball, Spells.confusion, Spells.cone_of_cold, Spells.polymorph, Spells.animate_object);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5(), A => A.Apply.ApplyTransient(Properties.rage, 3.d6())); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5(), A => A.Apply.ApplyTransient(Properties.rage, 3.d6())); // +2 from str.
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
       });
@@ -14095,7 +14096,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -14123,11 +14124,11 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         // TODO: crossbows.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
       });
@@ -14143,7 +14144,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 8, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6500);
@@ -14170,15 +14171,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.light_blade, Skills.whip);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade, Skills.whip);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.bullwhip);
         E.Startup.Loot.AddKit(Chance.OneIn5, 2.d6(), new[] { Items.dagger, Items.silver_dagger, Items.mithril_dagger });
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.leather_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.leather_armour);
         E.Startup.Loot.AddKit(Chance.OneIn5, 10.d6(), Items.gold_coin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +1 from str.
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -14194,7 +14195,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7000);
@@ -14221,14 +14222,14 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.Loot.AddKit(Chance.OneIn8, Items.silver_short_sword);
         E.Startup.Loot.AddKit(Chance.OneIn4, Items.short_sword);
         E.Startup.Loot.AddKit(Chance.OneIn8, Items.small_shield);
         E.Startup.Loot.AddKit(Chance.OneIn8, Items.helmet);
         E.Startup.Loot.AddKit(Chance.OneIn8, Items.scale_mail);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -14241,7 +14242,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7500);
@@ -14268,13 +14269,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.Loot.AddKit(Chance.OneIn5, new[] { Items.axe, Items.silver_axe });
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.small_shield);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.helmet);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.scale_mail);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -14287,7 +14288,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7500);
@@ -14314,11 +14315,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10()); // +2 from str.
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() - 1, gnome_lord);
@@ -14338,7 +14339,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7000);
@@ -14365,13 +14366,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.Loot.AddKit(Chance.OneIn5, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -14384,7 +14385,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7500);
@@ -14411,14 +14412,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.pick, Skills.sling, Skills.crossbow);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.sling, Skills.crossbow);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn5, Items.pickaxe);
         E.Startup.Loot.AddKit(Chance.Always, Items.crossbow);
         E.Startup.Loot.AddKit(Chance.OneIn20, 2.d6(), Items.silver_crossbow_bolt);
         E.Startup.Loot.AddKit(Chance.Always, 3.d6(), Items.crossbow_bolt);
         E.Startup.Loot.AddKit(Chance.OneIn10, 1.d3(), Stocks.gem);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d11()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d11()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -14433,7 +14434,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -14460,10 +14461,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d6()); // +5 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, 5.d5(), Items.rock);
         E.DropLoot.AddKit(Chance.OneIn4, Items.magic_figurine);
@@ -14478,7 +14479,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -14505,11 +14506,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 6.d14()); // +8 from str.
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 6.d14()); // +8 from str.
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
           K.Apply.Harm(Elements.magical, 6.d8());
@@ -14527,7 +14528,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(110000);
@@ -14554,11 +14555,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d10());
-        E.AddAttack(AttackType.Breath, Elements.magical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
           K.Apply.Harm(Elements.magical, 5.d6());
@@ -14576,7 +14577,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex = 16.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50000);
@@ -14604,11 +14605,11 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.shock, A => A.Heal(4.d6(), Modifier.Zero));
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -14630,7 +14631,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -14657,11 +14658,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d9());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d9());
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.cold));
@@ -14682,7 +14683,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(90000);
@@ -14709,11 +14710,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.reflection, Properties.vitality);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d7()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d7()); // +6 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.OneIn2, 1.d3() - 1, Items.black_glass_bauble);
         E.DropLoot.AddKit(Chance.OneIn2, 1.d3() - 1, Items.blue_glass_bauble);
@@ -14735,7 +14736,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(140000);
@@ -14762,11 +14763,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d7());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d7()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d7());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d7()); // +3 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, 20.d6(), Items.gold_coin);
       });
@@ -14780,7 +14781,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(120000);
@@ -14810,11 +14811,11 @@ namespace Pathos
         E.AddReaction(Chance.Always, Elements.water, A => A.Harm(Elements.physical, 8.d6()));
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(8.d6(), Modifier.Zero));
         E.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.slowness, 4.d6()));
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d8()); // +7 from str.
-        E.AddAttack(AttackType.Breath, Elements.poison, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +7 from str.
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.poison, 4.d8());
@@ -14833,7 +14834,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -14860,11 +14861,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +2 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.leather_cloak);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.leather_gloves);
@@ -14882,7 +14883,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -14910,10 +14911,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.Chemistry.SetWeakness(Elements.fire);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +2 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(1.d3() + 2, Chance.Always, Items.scroll_of_blank_paper);
       });
@@ -14927,7 +14928,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(120000);
@@ -14957,11 +14958,11 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.water, A => A.ApplyTransient(Properties.invisibility, 4.d6()));
         E.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.confusion, 4.d6()));
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.vitality, Properties.slippery);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d8()); // +8 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
         E.SetCorpse(Chance.Never);
         //E.DropLoot.AddKit(1.d3(), Chance.Always, Items.pearl);
       });
@@ -14975,7 +14976,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(95000);
@@ -15002,11 +15003,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Never);
       });
 
@@ -15019,7 +15020,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -15046,12 +15047,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2()); // +4 from str.
-        E.AddAttack(AttackType.Grapple, Elements.physical, Dice.Fixed(+6), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +4 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, Dice.Fixed(+6), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -15067,7 +15068,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -15094,11 +15095,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d14()); // +8 from str.
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d14()); // +8 from str.
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 5.d6());
@@ -15116,7 +15117,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(110000);
@@ -15143,11 +15144,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 6.d9()); // +8 from str.
-        E.AddAttack(AttackType.Breath, Elements.shock, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 6.d9()); // +8 from str.
+        E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
           K.Apply.Harm(Elements.shock, 7.d7());
@@ -15165,7 +15166,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -15192,12 +15193,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.cold);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d3()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d3() + 3)
            .SetReflects(false);
@@ -15219,7 +15220,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(120000);
@@ -15246,16 +15247,16 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 6.d8());
-        E.AddAttack(AttackType.Breath, Elements.cold, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 6.d8());
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 5.d8());
         });
-        E.AddRetaliation(Chance.OneIn2, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because strikes do not correctly target the source asset.
           //R.SetCast().Strike(Strikes.magic, Dice.One);
@@ -15274,7 +15275,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(120000);
@@ -15301,11 +15302,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.sling);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.sling);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8());
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, 1.d8() + 4, Items.flint);
       });
@@ -15319,7 +15320,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -15346,11 +15347,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2()); // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2()); // -1 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -15363,7 +15364,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(28000);
@@ -15390,11 +15391,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2()); // +2 from str.
-        E.AddAttack(AttackType.Touch, Elements.fire, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2()); // +2 from str.
+        E.AddAttack(AttackTypes.touch, Elements.fire, 1.d4());
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(1.d4(), Chance.Always, Items.wax_candle);
         E.DropLoot.AddKit(1.d2() - 1, Chance.Always, Items.magic_candle);
@@ -15409,7 +15410,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -15436,11 +15437,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4()); // +2 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(2.d4(), Chance.Always, Items.quarterstaff);
       });
@@ -15457,7 +15458,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -15484,12 +15485,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -15503,7 +15504,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -15531,11 +15532,11 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.water, A => A.CloneTargetCharacter(1.d3()));
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // -1 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2(), K =>
         {
           K.Apply.PlaceCurse(Dice.One, Sanctities.Cursed);
         });
@@ -15554,7 +15555,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -15581,11 +15582,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d3()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d3());
         E.SetCorpse(Chance.Never);
       });
 
@@ -15599,7 +15600,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +1 from dex = 24.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -15626,12 +15627,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6()); // +6 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +6 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -15646,7 +15647,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -15673,18 +15674,18 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient); // TODO: bartering?
+        E.Startup.SetSkill(Qualifications.proficient); // TODO: bartering?
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(30.d100() + 1000, Items.gold_coin);
         E.Startup.Loot.AddKit(Chance.Always, Items.skeleton_key);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d3(), guard);
         });
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.wanted);
@@ -15701,7 +15702,7 @@ namespace Pathos
         E.Frequency = 0; // shrine cleric.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -15728,7 +15729,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.clerical, Skills.conjuration, Skills.necromancy, Skills.mace, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.necromancy, Skills.mace, Skills.light_armour, Skills.literacy);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -15737,9 +15738,9 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.raise_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.shunning);
@@ -15756,7 +15757,7 @@ namespace Pathos
         E.Frequency = 0; // shrine cleric.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -15783,7 +15784,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.light_armour, Skills.literacy, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.light_armour, Skills.literacy, Skills.necromancy);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -15792,9 +15793,9 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.malignant_aura);
@@ -15811,7 +15812,7 @@ namespace Pathos
         E.Frequency = 0; // shrine artisan.
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -15838,7 +15839,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.hammer, Skills.light_armour, Skills.transmutation, Skills.literacy, Skills.divination, Skills.abjuration, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.hammer, Skills.light_armour, Skills.transmutation, Skills.literacy, Skills.divination, Skills.abjuration, Skills.enchantment);
         E.Startup.SetResistance(Elements.shock);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_heavy_hammer, Items.heavy_hammer });
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.alchemy_smock);
@@ -15849,8 +15850,8 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
         E.Startup.AddGrimoire(Dice.One, Spells.phasing);
         E.Startup.AddGrimoire(Dice.One, Spells.identify);
-        E.AddAttack(AttackType.Punch, Elements.physical, 2.d10());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddAttack(AttackTypes.punch, Elements.physical, 2.d10());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.ignoramus);
@@ -15867,7 +15868,7 @@ namespace Pathos
         E.Frequency = 0; // shrine witch.
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -15894,7 +15895,7 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.necromancy, Skills.abjuration, Skills.enchantment, Skills.transmutation, Skills.clerical, Skills.conjuration, Skills.light_blade, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.necromancy, Skills.abjuration, Skills.enchantment, Skills.transmutation, Skills.clerical, Skills.conjuration, Skills.light_blade, Skills.light_armour, Skills.literacy);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.athame);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -15908,8 +15909,8 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.AddReaction(Chance.Always, Elements.water, A => A.Harm(Elements.physical, 10.d10())); // TODO: I'm melting!
-        E.AddAttack(AttackType.Touch, Elements.physical, 2.d10());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 2.d10());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.gluttony);
@@ -15926,7 +15927,7 @@ namespace Pathos
         E.Frequency = 0; // shrine dryad.
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -15953,7 +15954,7 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.transmutation, Skills.abjuration, Skills.enchantment, Skills.evocation, Skills.clerical, Skills.conjuration, Skills.staff, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.transmutation, Skills.abjuration, Skills.enchantment, Skills.evocation, Skills.clerical, Skills.conjuration, Skills.staff, Skills.light_armour, Skills.literacy);
         E.Startup.SetResistance(Elements.acid);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -15967,8 +15968,8 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.haste);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d10());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Spell, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d10());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
           A.Apply.Punish(Codex.Punishments.thirst);
@@ -15985,7 +15986,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -16012,7 +16013,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.clerical, Skills.conjuration, Skills.evocation, Skills.literacy, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.evocation, Skills.literacy, Skills.necromancy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
@@ -16020,10 +16021,10 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.raise_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d4()); // +6 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16036,7 +16037,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -16063,18 +16064,18 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.quickness, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4(), D =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
           D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
         });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4(), D =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
           D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
         });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4(), D =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
           D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
         });
@@ -16090,7 +16091,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16117,11 +16118,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +3 from str.
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 1.d8());
         });
@@ -16137,7 +16138,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -16164,11 +16165,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d7());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d7()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d7());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d7()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16181,7 +16182,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -16208,10 +16209,10 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d11()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d11()); // +6 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16224,7 +16225,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -16251,7 +16252,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
@@ -16260,7 +16261,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16273,7 +16274,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -16300,8 +16301,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
-        E.Startup.SetSkill(Qualifications.Master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
@@ -16310,9 +16311,9 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +2 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -16325,7 +16326,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16352,11 +16353,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.shock, Elements.poison, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d11()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d11()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2(), K =>
         {
           K.Apply.TeleportCharacter(Properties.teleportation);
         });
@@ -16376,7 +16377,7 @@ namespace Pathos
         E.Immitation = true; // imitate other monsters when bored.
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16403,10 +16404,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12(), A =>
         {
           A.Apply.Impersonate();
         });
@@ -16423,7 +16424,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16450,10 +16451,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
         {
           K.Apply.Polymorph();
         }); // +1 from str.
@@ -16471,7 +16472,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -16498,13 +16499,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.unarmed_combat);
+        E.Startup.SetSkill(Qualifications.master, Skills.unarmed_combat);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.deflection, Properties.teleport_control);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Punch, Elements.physical, 4.d8());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d5()); // +6 from str.
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Spell, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.punch, Elements.physical, 4.d8());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d5()); // +6 from str.
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d8());
         E.SetCorpse(Chance.Always);
       });
 
@@ -16519,7 +16520,7 @@ namespace Pathos
         E.IsMercenary = false; // cannot be hired.
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16546,13 +16547,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(GuardianGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_blade, Skills.heavy_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_blade, Skills.heavy_armour, Skills.heavy_blade);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.plate_mail);
         E.Startup.Loot.AddKit(Chance.Always, Items.large_shield);
         E.Startup.Loot.AddKit(Chance.Always, new[] { Items.long_sword, Items.silver_long_sword });
         E.Startup.Loot.AddKit(Chance.OneIn2, 2.d4(), new[] { Items.dagger, Items.silver_dagger });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d7()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7()); // +6 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -16565,7 +16566,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -16592,12 +16593,12 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.conjuration, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.conjuration, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.teleportation, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d8(), K => // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8(), K => // +3 from str.
         {
           K.Apply.PlaceCurse(Dice.One, Sanctities.Cursed);
         });
@@ -16615,7 +16616,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16642,7 +16643,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.fire, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
@@ -16650,8 +16651,8 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.magical);
         E.SetCorpse(Chance.Always);
       });
@@ -16665,7 +16666,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16692,7 +16693,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.cold, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.cone_of_cold);
@@ -16701,8 +16702,8 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.magical);
         E.SetCorpse(Chance.Always);
       });
@@ -16716,7 +16717,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 dex = 23.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -16743,13 +16744,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() - 1, werejackal);
@@ -16773,7 +16774,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16800,11 +16801,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16817,7 +16818,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18 (plus plate mail).
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -16844,7 +16845,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.spear, Skills.light_blade, Skills.light_armour, Skills.heavy_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_blade, Skills.light_armour, Skills.heavy_armour, Skills.heavy_blade);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.plate_mail);
         E.Startup.Loot.AddKit(Chance.Always, Items.mithril_long_sword);
@@ -16852,9 +16853,9 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, GoodAmuletItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, Stocks.ring);
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, Stocks.ring);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4(), guard);
@@ -16871,7 +16872,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -16898,11 +16899,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d14()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d14(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d14()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d14(), K =>
         {
           K.Apply.ApplyTransient(Properties.sleeping, 2.d5());
         });
@@ -16919,7 +16920,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -16946,12 +16947,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d7());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16964,7 +16965,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16991,12 +16992,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d7());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17009,7 +17010,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +8 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -17036,16 +17037,16 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17058,7 +17059,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17085,13 +17086,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.light_armour, Skills.unarmed_combat);
+        E.Startup.SetSkill(Qualifications.master, Skills.light_armour, Skills.unarmed_combat);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.deflection, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackType.Punch, Elements.physical, 13.d2());
-        E.AddAttack(AttackType.Punch, Elements.physical, 13.d2());
-        E.AddAttack(AttackType.Punch, Elements.physical, 1.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.punch, Elements.physical, 13.d2());
+        E.AddAttack(AttackTypes.punch, Elements.physical, 13.d2());
+        E.AddAttack(AttackTypes.punch, Elements.physical, 1.d4()); // +5 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
       });
@@ -17105,7 +17106,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -17132,15 +17133,15 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.locks, Skills.traps, Skills.light_armour, Skills.light_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.locks, Skills.traps, Skills.light_armour, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, 4.d4(), Items.silver_dagger);
         E.Startup.Loot.AddKit(3.d4(), Items.scroll_of_teleportation);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17153,7 +17154,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17180,11 +17181,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17197,7 +17198,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -17224,33 +17225,33 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4)
            .SetReflects()
            .SetBeholds();
           K.Apply.Incarcerate(Elements.petrify, Codex.Blocks.statue);
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 6.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 6.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 6.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 6.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +2 from str.
@@ -17270,7 +17271,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17297,10 +17298,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17313,7 +17314,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17340,11 +17341,11 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.clairvoyance, Properties.polymorph, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d2()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d2()); // +6 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17357,7 +17358,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -17384,13 +17385,13 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.clerical);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.clerical);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.healing);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.restoration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
         E.Conveyance.Heal(Dice.Fixed(+500), Modifier.Zero);
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
@@ -17405,7 +17406,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -17432,7 +17433,7 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.clarity, Properties.telepathy, Properties.clairvoyance, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.SetCorpse(Chance.Always);
@@ -17447,7 +17448,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17474,10 +17475,10 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17490,7 +17491,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -17517,10 +17518,10 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17533,7 +17534,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17560,14 +17561,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.blinking, Properties.displacement);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.Apply.TeleportInventoryAsset();
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.Apply.TeleportCharacter(Properties.teleportation);
         }); // +1 from str.
@@ -17586,7 +17587,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -17613,11 +17614,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.AddGrimoire(1.d2() + 1, Spells.fear, Spells.fireball, Spells.confusion, Spells.cone_of_cold, Spells.polymorph, Spells.animate_object);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17630,7 +17631,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17657,12 +17658,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17675,7 +17676,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -17702,11 +17703,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17719,7 +17720,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // 'lucky' protection and +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17746,7 +17747,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.light_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, Items.hawaiian_shirt);
@@ -17754,8 +17755,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Items.expensive_camera);
         E.Startup.Loot.AddKit(Items.spectacles);
         E.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(5), Sanctities.Blessed, Items.potion_of_full_healing);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17768,7 +17769,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -17795,7 +17796,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.clarity, Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical, Elements.fire);
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.leather_armour });
@@ -17806,8 +17807,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.silver_bullet });
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, 4.d4(), Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.silver_crossbow_bolt });
         E.Startup.Loot.AddKit(Dice.One, Items.wooden_stake);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -17820,7 +17821,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -17847,7 +17848,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.enchantment, Skills.necromancy, Skills.abjuration, Skills.clerical, Skills.conjuration, Skills.transmutation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.enchantment, Skills.necromancy, Skills.abjuration, Skills.clerical, Skills.conjuration, Skills.transmutation, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.teleportation, Properties.teleport_control, Properties.flight, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
@@ -17866,7 +17867,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_object);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d10()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10()); // +3 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -17888,7 +17889,7 @@ namespace Pathos
         E.IsMercenary = false;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -17915,12 +17916,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(GuardianGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.medium_blade, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.medium_blade, Skills.medium_armour);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.silver_sabre);
         E.Startup.Loot.AddKit(Chance.Always, Items.chain_mail);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -17935,7 +17936,7 @@ namespace Pathos
         E.IsMercenary = false;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17962,11 +17963,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(GuardianGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm, Skills.medium_blade);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.halberd);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.short_sword, Items.silver_short_sword });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d7()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -17980,7 +17981,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -18007,11 +18008,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +1 from str.
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +1 from str.
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(2.d3(), jackal);
@@ -18030,7 +18031,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -18057,10 +18058,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18075,7 +18076,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -18102,12 +18103,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(3.d2() - 1, panther);
@@ -18126,7 +18127,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 22.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -18153,12 +18154,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18173,7 +18174,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18200,11 +18201,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(2.d3(), giant_rat);
@@ -18223,7 +18224,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18250,10 +18251,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18268,7 +18269,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18295,12 +18296,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4(), snake);
@@ -18319,7 +18320,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +5 from dex = 23.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18346,11 +18347,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6(), A => A.Apply.Macro(MajorPoison(Attributes.strength)));
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6(), A => A.Apply.Macro(MajorPoison(Attributes.strength)));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18365,7 +18366,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18392,12 +18393,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3()); // +1 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4(), giant_spider);
@@ -18416,7 +18417,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -18443,11 +18444,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4()); // +1 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4(), A => A.Apply.Macro(MajorPoison(Attributes.constitution)));
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4(), A => A.Apply.Macro(MajorPoison(Attributes.constitution)));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18462,7 +18463,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 22.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -18489,12 +18490,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(3.d2(), tiger);
@@ -18513,7 +18514,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +4 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -18540,12 +18541,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8()); // +5 from str.
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18560,7 +18561,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 12.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -18587,11 +18588,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(2.d3(), wolf);
@@ -18610,7 +18611,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -18637,11 +18638,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -18655,7 +18656,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18682,7 +18683,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms, Skills.light_armour);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.tshirt);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.low_boots);
@@ -18693,7 +18694,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(8.d6(), Items.bullet);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.frag_grenade);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.gas_grenade);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -18706,7 +18707,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -18733,7 +18734,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.shotgun);
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.submachine_gun);
@@ -18741,7 +18742,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(4.d6(), Items.shotgun_shell);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.frag_grenade);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.gas_grenade);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -18754,7 +18755,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18781,7 +18782,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.grenade_launcher);
         E.Startup.Loot.AddKit(2.d10(), Items.frag_grenade);
@@ -18792,8 +18793,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, 8.d6(), Items.silver_bullet);
         E.Startup.Loot.AddKit(8.d6(), Items.bullet);
         E.Startup.Loot.AddKit(4.d6(), Items.shotgun_shell);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d3()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d3());
         E.SetCorpse(Chance.Always);
       });
 
@@ -18806,7 +18807,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18833,7 +18834,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.rocket_launcher);
         E.Startup.Loot.AddKit(2.d2(), Items.rocket);
@@ -18844,8 +18845,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.Always, Items.pistol);
         E.Startup.Loot.AddKit(8.d20(), Items.mithril_bullet);
         E.Startup.Loot.AddKit(4.d10(), Items.shotgun_shell);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -18858,7 +18859,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18885,12 +18886,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.whip, Skills.club);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.whip, Skills.club);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(1.d2(), Items.cream_pie);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.rubber_hose);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.club);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -18903,7 +18904,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18930,12 +18931,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.whip, Skills.club, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.whip, Skills.club, Skills.dual_wielding);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(1.d2(), Items.cream_pie);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.rubber_hose);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.club);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -18948,7 +18949,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -18975,13 +18976,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.whip, Skills.club, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.whip, Skills.club, Skills.dual_wielding);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(1.d2(), Items.cream_pie);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.rubber_hose);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.club);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d3()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Always);
       });
 
@@ -18994,7 +18995,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -19021,13 +19022,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.whip, Skills.club, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.whip, Skills.club, Skills.dual_wielding);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(1.d2(), Items.cream_pie);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.rubber_hose);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.club);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -19042,7 +19043,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -19069,25 +19070,25 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
           K.Apply.WhenChance(Chance.OneIn8, T => T.Amnesia(Range.Sq15));
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
           K.Apply.WhenChance(Chance.OneIn8, T => T.Amnesia(Range.Sq15));
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
           K.Apply.WhenChance(Chance.OneIn8, T => T.Amnesia(Range.Sq15));
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
           K.Apply.WhenChance(Chance.OneIn8, T => T.Amnesia(Range.Sq15));
@@ -19106,7 +19107,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -19133,18 +19134,18 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Fixed(+2), K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DecreaseAbility(Attributes.intelligence, Dice.One));
         });
@@ -19165,7 +19166,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -19192,13 +19193,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d3(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 6.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 6.d3());
         E.SetCorpse(Chance.Always);
         E.Conveyance.MinorProperty(Properties.life_regeneration);
       });
@@ -19213,7 +19214,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -19240,9 +19241,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -19256,7 +19257,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3500);
@@ -19283,9 +19284,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -19299,7 +19300,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -19326,9 +19327,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -19342,7 +19343,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(600);
@@ -19369,10 +19370,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.flight);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3() + 3, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3() + 3, K =>
         {
           K.Apply.ApplyTransient(Properties.sleeping, 1.d3() + 3);
         });
@@ -19395,7 +19396,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -19422,10 +19423,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4() + 4); // -3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4() + 4);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4() + 4); // -3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4() + 4);
         E.SetCorpse(Chance.Always);
       });
 
@@ -19439,7 +19440,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -3 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(14000);
@@ -19466,10 +19467,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
@@ -19485,7 +19486,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -1 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -19512,12 +19513,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
       });
@@ -19532,7 +19533,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -19559,9 +19560,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4(), K => // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4(), K => // -1 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -19578,7 +19579,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -19605,18 +19606,18 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, A => A.DecreaseAbility(Attributes.dexterity, Dice.One)));
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, A => A.DecreaseAbility(Attributes.dexterity, Dice.One)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -19631,7 +19632,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(200);
@@ -19658,9 +19659,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d3(), K => // -2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d3(), K => // -2 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -19677,7 +19678,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -19704,12 +19705,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.teleportation, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5());
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.poison));
@@ -19733,7 +19734,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewJellyDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -19765,9 +19766,9 @@ namespace Pathos
           A.Heal(6.d6(), Modifier.Zero);
           A.CloneTargetCharacter(Dice.One);
         });
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 5.d6());
@@ -19790,7 +19791,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewJellyDefence(20); // -3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -19818,10 +19819,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.cold, Elements.poison);
-        E.AddAttack(AttackType.Touch, Elements.acid, 5.d6());
+        E.AddAttack(AttackTypes.touch, Elements.acid, 5.d6());
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.cold));
@@ -19840,7 +19841,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = NewJellyDefence(18); // -3 from dex = 15.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -19867,14 +19868,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 2.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.acid, 3.d6(), K => // -1 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 3.d6(), K => // -1 from str.
         {
           K.Apply.Engulf(Engulfments.engulfed, 3.d2() + 2);
         });
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 3.d6());
@@ -19893,7 +19894,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewJellyDefence(15); // -3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -19920,14 +19921,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 2.d4()));
-        E.AddAttack(AttackType.Engulf, Elements.acid, 2.d8(), K => // -1 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 2.d8(), K => // -1 from str.
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
         });
-        E.AddRetaliation(Chance.Always, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.gas, Dice.One);
           R.Apply.ApplyTransient(Properties.sleeping, 2.d6());
@@ -19946,7 +19947,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewJellyDefence(19); // -3 from dex = 16.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -19973,14 +19974,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 3.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.acid, 4.d6(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 3.d2() + 2);
         });
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 3.d6());
@@ -19999,7 +20000,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewJellyDefence(15); // -3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -20026,9 +20027,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.AddRetaliation(Chance.OneIn2, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 6.d6());
@@ -20047,7 +20048,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewJellyDefence(20); // -3 from dex = 17.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -20074,14 +20075,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 4.d4()));
-        E.AddAttack(AttackType.Engulf, Elements.acid, 4.d6(), K => // -1 from str.
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K => // -1 from str.
         {
           K.Apply.Engulf(Engulfments.engulfed, 3.d3() + 2);
         });
-        E.AddRetaliation(Chance.OneIn3, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.stunned, 4.d3());
@@ -20103,7 +20104,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -20130,12 +20131,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 3.d6(), Items.dart);
         E.Startup.Loot.AddKit(Chance.OneIn2, 1.d3(), Items.gold_coin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // -2 from strength.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // -2 from strength.
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20150,7 +20151,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5500);
@@ -20177,13 +20178,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
         E.Startup.Loot.AddKit(Chance.OneIn4, 3.d6(), Items.poison_dart);
         E.Startup.Loot.AddKit(Chance.Always, 3.d8(), Items.gold_coin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d7()); // +1 from STR
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d7()); // +1 from STR
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4() + 1, kobold);
@@ -20202,7 +20203,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -20229,12 +20230,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 2.d4(), Items.poison_dart);
         E.Startup.Loot.AddKit(Chance.OneIn2, 3.d6(), Items.dart);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4() + 4); // -1 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4() + 4); // -1 from STR
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20249,7 +20250,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4500);
@@ -20276,7 +20277,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.dart, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.dart, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn8, 1.d4(), Items.poison_dart);
@@ -20285,7 +20286,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(Dice.One, Spells.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // -3 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -3 from STR
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20300,7 +20301,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4500);
@@ -20327,11 +20328,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 1.d6(), Items.poison_dart);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8() + 3); // -1 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8() + 3); // -1 from STR
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20346,7 +20347,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4500);
@@ -20373,11 +20374,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 3.d6(), Items.dart);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6() + 1); // -1 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6() + 1); // -1 from STR
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20392,7 +20393,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from DEX
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4500);
@@ -20419,12 +20420,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 3.d6(), Items.dart);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // -2 from STR
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // -2 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20439,7 +20440,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4500);
@@ -20466,11 +20467,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn4, 2.d4(), Items.poison_dart);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10() + 2); // -2 from STR
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10() + 2); // -2 from STR
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20487,7 +20488,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(600);
@@ -20514,10 +20515,10 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.blinking);
         E.Startup.SetAcquisition(Properties.sleeping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2(), K => // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2(), K => // -1 from str.
         {
           K.Apply.StealAsset(Items.gold_coin);
         });
@@ -20535,7 +20536,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(600);
@@ -20562,7 +20563,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.teleportation, Properties.teleport_control, Properties.blinking);
         E.Startup.SetAcquisition(Properties.sleeping);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -20572,7 +20573,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_object);
         E.Startup.AddGrimoire(Dice.One, Spells.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4(), K => // -1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), K => // -1 from str.
         {
           K.Apply.StealAsset(Items.gold_coin);
         });
@@ -20593,7 +20594,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(24); // +2 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -20620,7 +20621,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.AddGrimoire(1.d4() + 1, Spells.lightning_bolt, Spells.acid_stream, Spells.toxic_spray, Spells.poison_blast, Spells.cone_of_cold, Spells.animate_object);
@@ -20629,7 +20630,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, GoodAmuletItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Stocks.ring);
-        E.AddAttack(AttackType.Touch, Elements.cold, 2.d12()); // +5 from str.
+        E.AddAttack(AttackTypes.touch, Elements.cold, 2.d12()); // +5 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -20643,7 +20644,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(21); // +1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -20670,7 +20671,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.AddGrimoire(1.d2() + 1, Spells.lightning_bolt, Spells.acid_stream, Spells.toxic_spray, Spells.poison_blast, Spells.cone_of_cold, Spells.animate_object);
@@ -20679,7 +20680,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.Loot.AddKit(Chance.OneIn8, Dice.One, GoodAmuletItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn8, Dice.One, Stocks.ring);
-        E.AddAttack(AttackType.Touch, Elements.cold, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.touch, Elements.cold, 2.d4()); // +3 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -20693,7 +20694,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(19); // +1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -20720,7 +20721,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt, Spells.acid_stream, Spells.toxic_spray, Spells.poison_blast, Spells.cone_of_cold, Spells.animate_object);
@@ -20729,7 +20730,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, GoodAmuletItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.ring);
-        E.AddAttack(AttackType.Touch, Elements.cold, 1.d9()); // +1 from str.
+        E.AddAttack(AttackTypes.touch, Elements.cold, 1.d9()); // +1 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -20743,7 +20744,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(23); // +1 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -20770,7 +20771,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
         E.Startup.SetTalent(Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.AddGrimoire(1.d3() + 1, Spells.lightning_bolt, Spells.acid_stream, Spells.toxic_spray, Spells.poison_blast, Spells.cone_of_cold, Spells.animate_object);
@@ -20779,7 +20780,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.Loot.AddKit(Chance.OneIn5, Dice.One, GoodAmuletItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn5, Dice.One, Stocks.ring);
-        E.AddAttack(AttackType.Touch, Elements.cold, 1.d12()); // +4 from str.
+        E.AddAttack(AttackTypes.touch, Elements.cold, 1.d12()); // +4 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -20793,7 +20794,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(28); // +2 from dex = 30.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(67500);
@@ -20820,7 +20821,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.necromancy, Skills.abjuration, Skills.evocation, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.necromancy, Skills.abjuration, Skills.evocation, Skills.literacy, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible, Properties.flight, Properties.vitality, Properties.clarity, Properties.polymorph_control, Properties.life_regeneration, Properties.mana_regeneration);
         E.Startup.SetResistance(Elements.magical, Elements.poison, Elements.sleep, Elements.cold, Elements.shock, Elements.petrify, Elements.drain);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
@@ -20829,23 +20830,23 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.haste);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
-        E.AddAttack(AttackType.Breath, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.death, 1.d5() + 5);
           K.Apply.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.boost, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.paralysis, 2.d4());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8(), K => // +6 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8(), K => // +6 from str.
         {
           K.Apply.ApplyTransient(Properties.paralysis, 4.d4());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Never);
       });
 
@@ -20859,7 +20860,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = NewBoneDefence(25); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -20886,14 +20887,14 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.conjuration, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.enchantment, Skills.necromancy);
         E.Startup.SetTalent(Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep, Elements.magical, Elements.drain, Elements.petrify);
         E.Startup.AddGrimoire(Dice.Fixed(4), Spells.lightning_bolt, Spells.acid_stream, Spells.toxic_spray, Spells.poison_blast, Spells.cone_of_cold, Spells.animate_object);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
-        E.AddAttack(AttackType.Touch, Elements.cold, 3.d16()); // +6 from str.
+        E.AddAttack(AttackTypes.touch, Elements.cold, 3.d16()); // +6 from str.
         E.SetCorpse(Chance.Never);
       });
       #endregion
@@ -20908,7 +20909,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -20935,10 +20936,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.flight, Properties.invisibility);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.disintegrate, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Blast, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.dark, Dice.Zero);
           K.Apply.Light(false); // always darken the room.
@@ -20960,7 +20961,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -20987,10 +20988,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.disintegrate, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Blast, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.light, Dice.Zero);
           K.Apply.Light(true); // always light the room up.
@@ -21016,7 +21017,7 @@ namespace Pathos
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -21043,9 +21044,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -21059,7 +21060,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -21086,17 +21087,17 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5(), K => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5(), K => // +3 from str.
         {
           K.Apply.ApplyTransient(Properties.petrifying, 4.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5(), K => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5(), K => // +3 from str.
         {
           K.Apply.ApplyTransient(Properties.petrifying, 4.d6());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Gaze, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.gaze, R =>
         {
           R.SetCast().Strike(Strikes.spirit, Dice.One)
            .SetReflects()
@@ -21119,7 +21120,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -21147,10 +21148,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3());
         E.Conveyance.Polymorph();
         E.SetCorpse(Chance.OneIn4);
       });
@@ -21165,7 +21166,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -21192,11 +21193,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +2 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -21210,7 +21211,7 @@ namespace Pathos
         E.Frequency = 5;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -21237,9 +21238,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -21252,7 +21253,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -21279,9 +21280,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d11(), K => // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d11(), K => // +1 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -21297,7 +21298,7 @@ namespace Pathos
         E.Frequency = 5;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -21324,9 +21325,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d2()); // -3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d2()); // -3 from str.
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -21339,7 +21340,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -21366,14 +21367,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.constitution)));
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +4 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -21386,7 +21387,7 @@ namespace Pathos
         E.Frequency = 5;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -21413,9 +21414,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
         E.Conveyance.RemoveTransient(Properties.confusion, Properties.stunned, Properties.petrifying);
         E.SetCorpse(Chance.Always);
       });
@@ -21429,7 +21430,7 @@ namespace Pathos
         E.Frequency = 5;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -21456,9 +21457,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
         E.Conveyance.Energise(1.d3(), Modifier.Zero);
         E.SetCorpse(Chance.Always);
       });
@@ -21473,7 +21474,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -21500,9 +21501,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.boost, 2.d4() + 4)
            .SetReflects()
@@ -21523,7 +21524,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -21550,15 +21551,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +5 from str.
-        E.AddAttack(AttackType.Touch, Elements.fire, 2.d8());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 2.d5(), A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.touch, Elements.fire, 2.d8());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d5(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Grapple, Elements.fire, 3.d5(), A =>
+        E.AddAttack(AttackTypes.grapple, Elements.fire, 3.d5(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -21577,7 +21578,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -21604,11 +21605,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.Conveyance.Macro(Poisoned(Attributes.constitution));
         E.SetCorpse(Chance.Always);
       });
@@ -21623,7 +21624,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(26000);
@@ -21650,13 +21651,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming, Skills.light_armour);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, GoodCloakItemArray);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() - 1, lizardman_berserker);
@@ -21676,7 +21677,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -21703,14 +21704,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.literacy);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d2() + 1, Spells.cone_of_cold, Spells.acid_stream, Spells.magic_missile, Spells.poison_blast);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5(), A => A.Apply.ApplyTransient(Properties.paralysis, 2.d3())); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5(), A => A.Apply.ApplyTransient(Properties.paralysis, 2.d3())); // +2 from str.
         E.Conveyance.Macro(Poisoned(Attributes.constitution));
         E.SetCorpse(Chance.Always);
       });
@@ -21725,7 +21726,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -21752,14 +21753,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.conjuration, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming, Skills.evocation, Skills.enchantment, Skills.transmutation, Skills.conjuration, Skills.literacy);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d2() + 1, Spells.fear, Spells.confusion, Spells.summoning, Spells.slow, Spells.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5(), A => A.Apply.ApplyTransient(Properties.paralysis, 2.d3())); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5(), A => A.Apply.ApplyTransient(Properties.paralysis, 2.d3())); // +2 from str.
         E.Conveyance.Macro(Poisoned(Attributes.constitution));
         E.SetCorpse(Chance.Always);
       });
@@ -21774,7 +21775,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -21801,11 +21802,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.vitality, Properties.jumping);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +2 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8());
         E.Conveyance.Macro(Poisoned(Attributes.constitution));
         E.SetCorpse(Chance.Always);
       });
@@ -21823,7 +21824,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 24.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -21850,13 +21851,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.crushing_sphere);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_earth);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.Conveyance.MinorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -21872,7 +21873,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 24.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -21899,8 +21900,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.crushing_sphere);
@@ -21908,7 +21909,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(GoodCloakItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_earth);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.Conveyance.MinorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -21924,7 +21925,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex = 24.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -21951,8 +21952,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.evocation, Skills.clerical, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.crushing_sphere);
@@ -21962,8 +21963,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_earth);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -21979,7 +21980,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22006,12 +22007,12 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.light_armour, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_ice);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // -1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -1 from str.
         E.Conveyance.MinorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22027,7 +22028,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22054,8 +22055,8 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.medium_armour, Skills.light_armour, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.medium_armour, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
         E.Startup.AddGrimoire(Dice.One, Spells.cone_of_cold);
@@ -22063,7 +22064,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, GoodCloakItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_cold);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_ice);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // -1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // -1 from str.
         E.Conveyance.MinorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22079,7 +22080,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22106,8 +22107,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.cold, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
@@ -22117,8 +22118,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_paralysis);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22134,7 +22135,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22161,12 +22162,12 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.light_armour, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_fire);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // -1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -1 from str.
         E.Conveyance.MinorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22182,7 +22183,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22209,8 +22210,8 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.medium_armour, Skills.light_armour, Skills.literacy);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.medium_armour, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
@@ -22219,7 +22220,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_fire);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_fire);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4()); // -1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // -1 from str.
         E.Conveyance.MinorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22235,7 +22236,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22262,8 +22263,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.abjuration, Skills.literacy, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetResistance(Elements.poison, Elements.fire, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
@@ -22272,8 +22273,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_fire);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22289,7 +22290,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22316,13 +22317,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.shocking_sphere);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_air);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.Conveyance.MinorResistance(Elements.shock);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22338,7 +22339,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22365,8 +22366,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.shocking_sphere);
@@ -22375,7 +22376,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, GoodCloakItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_air);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.Conveyance.MinorResistance(Elements.shock);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22391,7 +22392,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22418,8 +22419,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.shocking_sphere);
@@ -22429,8 +22430,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_air);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.shock);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22446,7 +22447,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22473,13 +22474,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_water);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.Conveyance.MinorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22495,7 +22496,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22522,8 +22523,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.medium_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.medium_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
@@ -22532,7 +22533,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, GoodCloakItemArray);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_water);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.Conveyance.MinorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22548,7 +22549,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22575,8 +22576,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.Master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
@@ -22586,8 +22587,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.quarterstaff);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_water);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22603,7 +22604,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -22630,15 +22631,15 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.conjuration, Skills.enchantment, Skills.unarmed_combat, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.conjuration, Skills.enchantment, Skills.unarmed_combat, Skills.light_armour, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.deflection);
         E.Startup.SetResistance(Elements.sleep, Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.robe);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_magic_mapping);
-        E.AddAttack(AttackType.Punch, Elements.physical, 2.d7()); // +2 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 3.d6(), K =>
+        E.AddAttack(AttackTypes.punch, Elements.physical, 2.d7()); // +2 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.stunned, 3.d2());
         });
@@ -22657,7 +22658,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -22684,11 +22685,11 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.clerical, Skills.conjuration, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent();
         E.Startup.AddGrimoire(Dice.One, Spells.slow, Spells.summoning, Spells.healing);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_remove_curse);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -22703,7 +22704,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -22730,13 +22731,13 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.abjuration, Skills.enchantment, Skills.transmutation, Skills.light_blade, Skills.light_armour, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.abjuration, Skills.enchantment, Skills.transmutation, Skills.light_blade, Skills.light_armour, Skills.literacy);
         E.Startup.SetTalent();
         E.Startup.AddGrimoire(Dice.One, Spells.magic_missile);
         E.Startup.Loot.AddKit(Items.leather_cloak);
         E.Startup.Loot.AddKit(Items.athame);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_summoning);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -22751,7 +22752,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -22778,14 +22779,14 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_sickness);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_healing);
         E.Startup.Loot.AddKit(Chance.OneIn4, Items.potion_of_extra_healing);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_healing);
         E.Startup.Loot.AddKit(Chance.OneIn4, Items.wand_of_extra_healing);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -22800,7 +22801,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +3 from dex =31.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -22827,7 +22828,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.sling, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.sling, Skills.axe);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.sleep, Elements.petrify);
         E.Startup.SetTalent(Properties.quickness);
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, 3.d4(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.hatchet });
@@ -22840,7 +22841,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(2.d3(), Chance.Always, Stocks.food); // 2..6
         E.Startup.Loot.AddKit(2.d4(), Chance.Always, Stocks.gem); // 2..8 
         //E.Startup.Loot.AddKit(2.d2(), Chance.Always, Stocks.weapon.ItemList.Where(I => !I.Artifact && I.IsFirearm()).ToArray()); // 2..4 firearms
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d10());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -22856,7 +22857,7 @@ namespace Pathos
         E.IsGuardian = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +4 from dex, avg = 27
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -22883,7 +22884,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.clarity);
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.leather_armour });
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.leather_cloak });
@@ -22893,8 +22894,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.silver_bullet });
         E.Startup.Loot.AddKit(Dice.One, Chance.Always, 6.d4(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.silver_crossbow_bolt });
         E.Startup.Loot.AddKit(Dice.One, Items.wooden_stake);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 5.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -22909,7 +22910,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -22936,13 +22937,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.polearm);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Items.fauchard);
         E.Startup.Loot.AddKit(Items.studded_leather_armour);
         E.Startup.Loot.AddKit(Items.low_boots);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -22957,7 +22958,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -22984,12 +22985,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.polearm);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Items.ranseur);
         E.Startup.Loot.AddKit(Items.chain_mail);
         E.Startup.Loot.AddKit(Items.high_boots);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23004,7 +23005,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -23031,12 +23032,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.heavy_armour, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.heavy_armour, Skills.polearm);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Items.halberd);
         E.Startup.Loot.AddKit(Items.plate_mail);
         E.Startup.Loot.AddKit(Items.iron_shoes);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d10()); // +4 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23051,7 +23052,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -23078,14 +23079,14 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.heavy_armour, Skills.medium_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.heavy_armour, Skills.medium_armour, Skills.heavy_blade);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Items.broadsword);
         E.Startup.Loot.AddKit(Items.large_shield);
         E.Startup.Loot.AddKit(Items.chain_mail);
         E.Startup.Loot.AddKit(Items.iron_shoes);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_teleportation);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d8()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d8()); // +6 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23100,7 +23101,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -23127,13 +23128,13 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.literacy);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.drain);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_draining);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_sickness);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23148,7 +23149,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23175,7 +23176,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent(Properties.dark_vision, Properties.jumping);
         E.Startup.Loot.AddKit(Items.sawnoff_shotgun);
         E.Startup.Loot.AddKit(Items.pistol);
@@ -23183,7 +23184,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(4.d8(), Items.bullet);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_sleeping);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.fly_swatter);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23198,7 +23199,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -23225,13 +23226,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Items.potion_of_paralysis);
         E.Startup.Loot.AddKit(Items.trident);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -23247,7 +23248,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23274,12 +23275,12 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.riding, Skills.whip);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.riding, Skills.whip);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.bullwhip);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_object_detection);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_monster_detection);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23294,7 +23295,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -23321,7 +23322,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.literacy, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.literacy, Skills.necromancy);
         E.Startup.SetTalent(Properties.see_invisible);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
@@ -23332,10 +23333,10 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.raise_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d10()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Spell, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Spell, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 3.d5());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23350,7 +23351,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23377,7 +23378,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.bow, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.bow, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.stealth);
         E.Startup.Loot.AddKit(Chance.Always, Items.bow);
         E.Startup.Loot.AddKit(Chance.OneIn4, 2.d6(), Items.silver_arrow);
@@ -23387,7 +23388,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_monster_detection);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_magic_mapping);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_food_detection);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23402,7 +23403,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -23429,12 +23430,12 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_acid);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_booze);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_hallucination);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -23450,7 +23451,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23477,13 +23478,13 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.hunting_rifle);
         E.Startup.Loot.AddKit(Chance.Always, 8.d8(), Sanctities.Blessed, Items.bullet);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_confusion);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +2 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23498,7 +23499,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -23525,12 +23526,12 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.club, Skills.sling);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.club, Skills.sling);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Items.war_club);
         E.Startup.Loot.AddKit(4.d6(), Items.rock);
         E.Startup.Loot.AddKit(Items.huge_chunk_of_meat);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +5 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23545,7 +23546,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -23572,7 +23573,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible, Properties.vitality);
         E.Startup.Loot.AddKit(Items.skeleton_key);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
@@ -23585,7 +23586,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_fear);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_animation);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scroll_of_raise_dead);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -23600,7 +23601,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13500);
@@ -23628,14 +23629,14 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.dual_wielding, Skills.light_blade, Skills.disc, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.dual_wielding, Skills.light_blade, Skills.disc, Skills.medium_blade);
         E.Startup.SetTalent(Properties.jumping, Properties.warning, Properties.quickness);
         E.Startup.Loot.AddKit(Items.wakizashi);
         E.Startup.Loot.AddKit(Items.wakizashi);
         E.Startup.Loot.AddKit(4.d6(), Items.shuriken);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_clairvoyance);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d8()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d8()); // +4 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23650,7 +23651,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 7, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23677,7 +23678,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.crossbow);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.crossbow);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Items.studded_leather_armour);
         E.Startup.Loot.AddKit(Items.leather_cloak);
@@ -23685,8 +23686,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn4, 2.d6(), Items.silver_crossbow_bolt);
         E.Startup.Loot.AddKit(4.d6(), Items.crossbow_bolt);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_fruit_juice);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23701,7 +23702,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -23728,14 +23729,14 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.heavy_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.heavy_blade, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.jumping);
         E.Startup.Loot.AddKit(Items.helmet);
         E.Startup.Loot.AddKit(Items.splint_mail);
         E.Startup.Loot.AddKit(Items.katana);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_monster_detection);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +3 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23750,7 +23751,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -23777,13 +23778,13 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.transmutation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.transmutation, Skills.literacy);
         E.Startup.SetTalent(Properties.displacement);
         E.Startup.AddGrimoire(Dice.One, Spells.polymorph);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_polymorph);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_speed);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23798,7 +23799,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -23825,7 +23826,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.divination, Skills.pick, Skills.literacy, Skills.disc, Skills.whip, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.divination, Skills.pick, Skills.literacy, Skills.disc, Skills.whip, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.searching);
         E.Startup.AddGrimoire(Dice.One, Spells.detect_unseen);
         E.Startup.Loot.AddKit(Chance.Always, Items.leather_jacket);
@@ -23833,7 +23834,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.Always, Items.pickaxe);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.bullwhip);
         E.Startup.Loot.AddKit(Chance.Always, Items.boomerang);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23848,7 +23849,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -23875,13 +23876,13 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.firearms);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.firearms);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.pistol);
         E.Startup.Loot.AddKit(Chance.Always, 8.d6(), Sanctities.Blessed, Items.bullet);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_blindness);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +3 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -23896,7 +23897,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -23923,7 +23924,7 @@ namespace Pathos
         E.SetGender(Genders.female, Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.unarmed_combat, Skills.light_armour, Skills.evocation, Skills.transmutation, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.unarmed_combat, Skills.light_armour, Skills.evocation, Skills.transmutation, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.see_invisible);
         E.Startup.SetResistance(Elements.cold, Elements.disintegrate, Elements.shock, Elements.fire, Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.cancellation);
@@ -23938,9 +23939,9 @@ namespace Pathos
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.robe);
         E.Startup.Loot.AddKit(Chance.Always, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_digging);
-        E.AddAttack(AttackType.Punch, Elements.physical, 1.d11());
-        E.AddAttack(AttackType.Punch, Elements.physical, 1.d11());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d9()); // +4 from str.
+        E.AddAttack(AttackTypes.punch, Elements.physical, 1.d11());
+        E.AddAttack(AttackTypes.punch, Elements.physical, 1.d11());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d9()); // +4 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -23962,7 +23963,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17500);
@@ -23989,14 +23990,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.heavy_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.heavy_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.berserking, Properties.vitality);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.plate_mail);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.mithril_twohanded_sword, Items.silver_twohanded_sword, Items.twohanded_sword });
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_healing);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_extra_healing);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -24011,7 +24012,7 @@ namespace Pathos
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8500);
@@ -24039,14 +24040,14 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.light_blade, Skills.sling, Skills.locks, Skills.traps, Skills.dart);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade, Skills.sling, Skills.locks, Skills.traps, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision, Properties.stealth);
         E.Startup.Loot.AddKit(Chance.OneIn3, new[] { Items.silver_dagger, Items.dagger, Items.elven_dagger });
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.sling);
         E.Startup.Loot.AddKit(Chance.OneIn3, 3.d4(), Items.rock);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.dwarvish_cloak);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -24062,7 +24063,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50);
@@ -24090,9 +24091,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Items.egg);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d7()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d7()); // +1 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24106,7 +24107,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -24134,13 +24135,13 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: true);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d15(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d15(), A => // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15(), A => // +3 from str.
         {
           A.Apply.Grapple(2.d6());
         });
@@ -24157,7 +24158,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -24185,9 +24186,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Items.food_ration);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d8()); // +5 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d8()); // +5 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24201,7 +24202,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -24229,9 +24230,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Items.iron_ration);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d7()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7()); // +4 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24245,7 +24246,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +0 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -24273,9 +24274,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Items.tripe_ration);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6()); // +2 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24289,7 +24290,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(23000);
@@ -24317,9 +24318,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: true);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d12(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d12(), A => // +2 from str.
         {
           A.Apply.Grapple(2.d6());
         });
@@ -24336,7 +24337,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex=13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13600);
@@ -24363,10 +24364,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetConcealment(Items.gold_coin);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
         E.SetCorpse(Chance.Never);
       });
 
@@ -24380,7 +24381,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex=21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14600);
@@ -24407,10 +24408,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetConcealment(Items.gold_coin);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +2 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24424,7 +24425,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex=28.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15600);
@@ -24452,9 +24453,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Items.gold_coin);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d12()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d12()); // +2 from str.
         E.SetCorpse(Chance.Never);
       });
 
@@ -24468,7 +24469,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -24496,9 +24497,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: true);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5(), A => // +1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5(), A => // +1 from str.
         {
           A.Apply.Grapple(2.d6());
         });
@@ -24517,7 +24518,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(10000);
@@ -24544,11 +24545,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
@@ -24565,7 +24566,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -24592,11 +24593,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d4(), A => // +1 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d4(), A => // +1 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 5.d10());
         });
@@ -24613,7 +24614,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -1 from dex = 21.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -24640,15 +24641,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4(), A => // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4(), A => // +3 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 6.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 6.d10());
         });
@@ -24665,7 +24666,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -2 from dex = 22.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -24692,15 +24693,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 6.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 6.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 6.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 6.d10()); // +4 from str.
         });
@@ -24717,7 +24718,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6500);
@@ -24744,11 +24745,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
@@ -24765,7 +24766,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -24792,15 +24793,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
@@ -24817,7 +24818,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -24844,11 +24845,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
@@ -24865,7 +24866,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex = 19.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8500);
@@ -24892,11 +24893,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 4.d10());
         });
@@ -24914,7 +24915,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // -2 from dex = 23.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -24941,15 +24942,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.mummy_wrapping);
-        E.AddAttack(AttackType.Claw, Elements.physical, 7.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 7.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.sickness, 7.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 7.d4(), A => // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 7.d4(), A => // +5 from str.
         {
           A.Apply.ApplyTransient(Properties.sickness, 7.d10());
         });
@@ -24968,7 +24969,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 30, P: +2, S: -2, B: +2);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -24997,11 +24998,11 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.slippery);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep, Elements.fire);
-        E.AddAttack(AttackType.Claw, Elements.physical, 9.d4(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 9.d4(), A =>
         {
           A.Apply.ApplyTransient(Properties.fumbling, 4.d10());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 9.d4(), A => // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 9.d4(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.fumbling, 4.d10());
         });
@@ -25034,7 +25035,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = AdultNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = AdultNagaWeight;
@@ -25061,10 +25062,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +3 from str.
-        E.AddAttack(AttackType.Spit, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +3 from str.
+        E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 5.d2() + 1);
@@ -25085,7 +25086,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = HatchlingNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = HatchlingNagaWeight;
@@ -25112,9 +25113,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3()); // +1 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Acidic);
         E.SetCorpse(Chance.Always);
@@ -25130,7 +25131,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = AdultNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = AdultNagaWeight;
@@ -25157,10 +25158,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.poison_blast, Spells.acid_stream);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d5()); // +3 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
       });
@@ -25175,7 +25176,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = HatchlingNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = HatchlingNagaWeight;
@@ -25202,9 +25203,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +1 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
       });
@@ -25219,7 +25220,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = AdultNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = AdultNagaWeight;
@@ -25246,19 +25247,19 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4(), K => // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4(), K => // +4 from str.
         {
           K.Apply.ApplyTransient(Properties.paralysis, 3.d3());
         });
-        E.AddAttack(AttackType.Spit, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
           K.Apply.Harm(Elements.physical, 4.d5());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Grapple, Elements.physical, 4.d4(), A =>
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 4.d4(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -25277,7 +25278,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = HatchlingNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = HatchlingNagaWeight;
@@ -25304,9 +25305,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
       });
@@ -25321,7 +25322,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = AdultNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = AdultNagaWeight;
@@ -25348,10 +25349,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3 from str.
-        E.AddAttack(AttackType.Breath, Elements.fire, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3 from str.
+        E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 6.d4());
@@ -25374,7 +25375,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = HatchlingNagaSize;
         E.Strategy = Strategy.Attack;
         E.Weight = HatchlingNagaWeight;
@@ -25401,9 +25402,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4()); // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4()); // +1 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -25424,7 +25425,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(13000);
@@ -25451,10 +25452,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -25472,7 +25473,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(600);
@@ -25499,12 +25500,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.abjuration, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.abjuration, Skills.literacy);
         E.Startup.SetTalent(Properties.teleportation, Properties.blinking);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -25523,7 +25524,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(600);
@@ -25550,9 +25551,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.blinking);
-        E.AddAttack(AttackType.Touch, Elements.physical, 2.d2(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 2.d2(), K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -25570,7 +25571,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 6, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(600);
@@ -25597,10 +25598,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.blinking);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // -2 from str.
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -2 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -25619,7 +25620,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -25646,14 +25647,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetAcquisition(Properties.sleeping);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
@@ -25673,7 +25674,7 @@ namespace Pathos
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.herbivore);
         E.SetTerrain(Materials.air, Materials.fire);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -25700,15 +25701,15 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.SetAcquisition(Properties.sleeping);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
@@ -25728,7 +25729,7 @@ namespace Pathos
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -25755,10 +25756,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetAcquisition(Properties.sleeping);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
@@ -25777,7 +25778,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(6000);
@@ -25804,10 +25805,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetAcquisition(Properties.sleeping);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealEquippedAsset();
         });
@@ -25828,7 +25829,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -25855,11 +25856,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.axe);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn12, Items.battleaxe);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5()); // +4 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.SetCorpse(Chance.Always);
       });
 
@@ -25873,7 +25874,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(26000);
@@ -25900,13 +25901,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.axe);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.battleaxe);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2(), ogre);
@@ -25924,7 +25925,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -25951,11 +25952,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.axe);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn6, Items.battleaxe);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6()); // +5 from str.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -25969,7 +25970,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -25996,14 +25997,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.enchantment, Skills.evocation, Skills.transmutation, Skills.axe, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.enchantment, Skills.evocation, Skills.transmutation, Skills.axe, Skills.literacy);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.Always, Items.battleaxe);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d3() + 2, Spells.acid_stream, Spells.toxic_spray, Spells.confusion, Spells.fireball, Spells.polymorph);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12()); // +3 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12()); // +3 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -26017,7 +26018,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -26044,12 +26045,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.axe);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn12, Items.battleaxe);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12()); // +3
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 3.d8());
@@ -26069,7 +26070,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -26096,11 +26097,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, 1.d5(), Items.gold_coin);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26114,7 +26115,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(7500);
@@ -26141,15 +26142,15 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.medium_blade, Skills.sling);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade, Skills.sling);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.Always, 5.d10(), Items.gold_coin);
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, Stocks.gem);
         E.Startup.Loot.AddKit(Chance.OneIn4, Dice.One, Stocks.gem);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4()); // +2
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4()); // +2
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d4() + 1, goblin);
@@ -26167,7 +26168,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(21000);
@@ -26194,10 +26195,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d13()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d13()); // +3
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26211,7 +26212,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex = 11.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -26238,10 +26239,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5()); // +1 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26255,7 +26256,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -26282,10 +26283,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4()); // +2
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26299,7 +26300,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19500);
@@ -26326,14 +26327,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.axe);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.axe);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism, Properties.berserking);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_ring_mail);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.battleaxe);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26347,7 +26348,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18500);
@@ -26374,7 +26375,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.light_armour, Skills.medium_blade, Skills.light_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.light_armour, Skills.medium_blade, Skills.light_blade);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.orcish_helm);
@@ -26383,8 +26384,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.orcish_shield);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.orcish_short_sword);
         E.Startup.Loot.AddKit(Chance.Always, 3.d6(), Items.orcish_dagger);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d3()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3()); // +4
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26398,7 +26399,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -26425,14 +26426,14 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_blade, Skills.heavy_blade, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.heavy_blade, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.scimitar);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.orcish_shield);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.orcish_chain_mail);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d3()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3()); // +3
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26446,7 +26447,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -26473,7 +26474,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.light_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.light_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
@@ -26481,8 +26482,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.orcish_cloak);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.scimitar);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Stocks.wand);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6()); // +5
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6()); // +5
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d2() + 1, orc_grunt);
@@ -26503,7 +26504,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -26530,7 +26531,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.literacy, Skills.medium_armour, Skills.medium_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy, Skills.medium_armour, Skills.medium_blade);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
@@ -26538,7 +26539,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(Dice.One, Spells.force_bolt);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6(), A => A.Apply.ApplyTransient(Properties.aggravation, 3.d6())); // +2
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6(), A => A.Apply.ApplyTransient(Properties.aggravation, 3.d6())); // +2
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26552,7 +26553,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -26579,7 +26580,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_blade, Skills.heavy_blade, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour, Skills.bow);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_blade, Skills.heavy_blade, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour, Skills.bow);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.orcish_cloak);
@@ -26591,7 +26592,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_ring_mail);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d4()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +4
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -26605,7 +26606,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -26632,13 +26633,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.cold, Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_ring_mail);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // +3
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -26653,7 +26654,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -26680,7 +26681,7 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.medium_armour, Skills.heavy_blade);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_ring_mail);
@@ -26688,8 +26689,8 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_shield);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.broadsword);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8()); // +4
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -26707,7 +26708,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(22); // -3 from dex = 19.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -26734,18 +26735,18 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6(), K => // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6(), K => // +3 from str.
         {
           K.Apply.Harm(Elements.acid, 4.d8());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 4.d8());
         });
-        E.AddLivingRetaliation(Chance.Always, AttackType.Spore, R =>
+        E.AddLivingRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.gas, Dice.One);
           R.Apply.WhenTargetHasMaterial(Materials.iron, T => T.CloneSourceCharacter(Dice.One));
@@ -26771,7 +26772,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.fabrivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -26798,13 +26799,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.WhenChance(Chance.OneIn3, T => T.DestroyEquippedAsset(Dice.One, StockArray: null, SanctityArray: null, E.Diet.Materials.ToArray()));
         });
-        E.AddLivingRetaliation(Chance.Always, AttackType.Spore, R =>
+        E.AddLivingRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.gas, Dice.One);
           R.Apply.WhenTargetHasMaterial(Materials.iron, T => T.CloneSourceCharacter(Dice.One));
@@ -26829,7 +26830,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(33); // -3
         E.SetDiet(Diets.metalivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -26857,25 +26858,25 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.teleportation, Properties.teleport_control, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
         E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 4.d8()));
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d8()); // +7
-        E.AddAttack(AttackType.Touch, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d8()); // +7
+        E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
           K.Apply.Harm(Elements.acid, 2.d6() + 2);
         });
-        E.AddAttack(AttackType.Touch, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
           K.Apply.Harm(Elements.acid, 2.d6() + 2);
         });
-        E.AddAttack(AttackType.Engulf, Elements.acid, 8.d9(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 8.d9(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 1.d6() + 2);
         });
-        E.AddRetaliation(Chance.Always, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 2.d6() + 2);
@@ -26902,7 +26903,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = NewPuddingDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.metalivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -26929,9 +26930,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8(), K => // +1 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8(), K => // +1 from str.
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.DestroyEquippedAsset(Dice.One, null, null, Materials.RustMetals.ToArray()));
         });
@@ -26955,7 +26956,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(17); // -3
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -26982,14 +26983,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
         E.Startup.SetTalent(Properties.slippery, Properties.vitality); // green slime can't get sliming because of vitality.
-        E.AddAttack(AttackType.Touch, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 2.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.sliming));
         }); // +3
-        E.AddRetaliation(Chance.Always, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 4.d4() + 4);
@@ -27012,7 +27013,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(17); // -3 from dex = 14.
         E.SetDiet(Diets.fabrivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -27039,10 +27040,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
         E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 2.d4()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 4.d4(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d4(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
           K.Apply.WhenChance(Chance.OneIn3, T => T.DestroyEquippedAsset(Dice.One, StockArray: null, SanctityArray: null, E.Diet.Materials.ToArray()));
@@ -27067,7 +27068,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewPuddingDefence(28); // -3 from dex.
         E.SetDiet(Diets.metalivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -27095,20 +27096,20 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
         E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 3.d6()));
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Touch, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
           K.Apply.Harm(Elements.acid, 3.d6() + 3);
         });
-        E.AddAttack(AttackType.Engulf, Elements.acid, 4.d6(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 2.d6() + 4);
         }); // +5
-        E.AddRetaliation(Chance.Always, AttackType.Splash, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
           R.Apply.Harm(Elements.acid, 3.d6() + 3);
@@ -27135,7 +27136,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(800000);
@@ -27162,10 +27163,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 5.d6()); // +4
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 5.d6()); // +4
         E.SetCorpse(Chance.Always);
       });
 
@@ -27179,7 +27180,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -27206,16 +27207,16 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.flash, 2.d6())
            .SetBeholds()
            .SetReflects();
           K.Apply.ApplyTransient(Properties.petrifying, 10.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
         E.SetCorpse(Chance.Always);
       });
@@ -27230,7 +27231,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(150000);
@@ -27257,11 +27258,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +5
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +5
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d6()); // +5
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +5
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +5
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6()); // +5
         E.SetCorpse(Chance.Always);
       });
 
@@ -27276,7 +27277,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(150000);
@@ -27303,13 +27304,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Horn, Elements.physical, 3.d6(), A =>
+        E.AddAttack(AttackTypes.horn, Elements.physical, 3.d6(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
-        E.AddAttack(AttackType.Kick, Elements.physical, 3.d4()); // +5
+        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d4()); // +5
         E.SetCorpse(Chance.Always);
       });
 
@@ -27323,7 +27324,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(140000);
@@ -27350,10 +27351,10 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d3()); // +2
+        E.AddAttack(AttackTypes.butt, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d3()); // +2
         E.SetCorpse(Chance.Always);
       });
 
@@ -27367,7 +27368,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1100000);
@@ -27394,13 +27395,13 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Butt, Elements.physical, 6.d6(), A =>
+        E.AddAttack(AttackTypes.butt, Elements.physical, 6.d6(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
-        E.AddAttack(AttackType.Butt, Elements.physical, 6.d6(), A => // TODO: change to AttackType.Tusk?
+        E.AddAttack(AttackTypes.butt, Elements.physical, 6.d6(), A => // TODO: change to AttackTypes.Tusk?
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
@@ -27416,7 +27417,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -27443,11 +27444,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3()); // +1
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3()); // +1
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -27461,7 +27462,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(7000);
@@ -27488,11 +27489,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 2.d2());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2()); // +2
+        E.AddAttack(AttackTypes.butt, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2()); // +2
         E.SetCorpse(Chance.Always);
       });
 
@@ -27507,7 +27508,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1200000);
@@ -27534,9 +27535,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 8.d8(), A =>
+        E.AddAttack(AttackTypes.butt, Elements.physical, 8.d8(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
@@ -27553,7 +27554,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(2000);
@@ -27580,10 +27581,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 2.d2());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d2()); // -1
+        E.AddAttack(AttackTypes.butt, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d2()); // -1
         E.SetCorpse(Chance.Always);
       });
 
@@ -27597,7 +27598,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -27624,11 +27625,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4()); // +4
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4()); // +4
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -27642,7 +27643,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -27669,11 +27670,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +3
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +3
         E.SetCorpse(Chance.Always);
       });
 
@@ -27687,7 +27688,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1400000);
@@ -27714,13 +27715,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 4.d8(), A =>
+        E.AddAttack(AttackTypes.butt, Elements.physical, 4.d8(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
-        E.AddAttack(AttackType.Butt, Elements.physical, 4.d8(), A =>
+        E.AddAttack(AttackTypes.butt, Elements.physical, 4.d8(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +6
@@ -27737,7 +27738,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex = 20.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000000);
@@ -27764,13 +27765,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 4.d4(), A =>
+        E.AddAttack(AttackTypes.butt, Elements.physical, 4.d4(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -27784,7 +27785,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -27811,11 +27812,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d7()); // +1
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d7()); // +1
         E.SetCorpse(Chance.Always);
       });
 
@@ -27829,7 +27830,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -27856,12 +27857,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d6());
         });
@@ -27879,7 +27880,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(10000);
@@ -27906,9 +27907,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.cannibalism);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -27922,7 +27923,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(9000);
@@ -27949,10 +27950,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Butt, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2()); // +1
+        E.AddAttack(AttackTypes.butt, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2()); // +1
         E.SetCorpse(Chance.Always);
       });
 
@@ -27966,7 +27967,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -27993,16 +27994,16 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d8());
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d6());
         });
-        E.AddAttack(AttackType.Shriek, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
@@ -28023,7 +28024,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300000);
@@ -28050,10 +28051,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6()); // +4
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6()); // +4
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -28067,7 +28068,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -28094,9 +28095,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8()); // +2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8()); // +2
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -28112,7 +28113,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(400);
@@ -28139,9 +28140,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d2()); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -2
         E.SetCorpse(Chance.Always);
       });
 
@@ -28155,7 +28156,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 40, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.Omnivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S6;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -28186,8 +28187,8 @@ namespace Pathos
         E.Startup.SetTalent(Elements.Magical, Properties.SeeInvisible, Properties.DarkVision, Elements.Acid, Elements.Disintegrate, Elements.Poison, Elements.Drain, Elements.Sleep, Elements.Petrify, Properties.teleport_control);
         E.Startup.AddGrimoire(Dice.One, Spells.haste);
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
-        E.AddAttack(AttackType.Bite, Elements.Physical, 1.d100());
-        E.AddAttack(AttackType.Claw, Elements.Physical, 1.d100());
+        E.AddAttack(AttackTypes.Bite, Elements.Physical, 1.d100());
+        E.AddAttack(AttackTypes.Claw, Elements.Physical, 1.d100());
         E.SetCorpseChance(Chance.Always);
       });*/
 
@@ -28201,7 +28202,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -28228,9 +28229,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2()); // -1
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -28244,7 +28245,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -28271,9 +28272,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.fire);
-        E.AddAttack(AttackType.Bite, Elements.fire, 2.d4()); // +1
+        E.AddAttack(AttackTypes.bite, Elements.fire, 2.d4()); // +1
         E.Conveyance.MinorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn4);
       });
@@ -28288,7 +28289,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(600);
@@ -28315,10 +28316,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d2()); // -1
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.One, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -1
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.One, K =>
         {
           K.Apply.StealCarriedAsset();
         });
@@ -28335,7 +28336,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(400);
@@ -28362,9 +28363,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.jumping);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d2()); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -2
         E.SetCorpse(Chance.Always);
       });
 
@@ -28378,7 +28379,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(400);
@@ -28405,9 +28406,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.jumping, Properties.cannibalism);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2(), K =>
         {
           K.Apply.WhenChance(Chance.ThreeIn20, T => T.Afflict(Codex.Afflictions.rabies));
         }); // -1 from str.
@@ -28425,7 +28426,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -28452,10 +28453,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.SetTalent(Properties.cannibalism);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn5, T => T.Afflict(Codex.Afflictions.rabies));
         }); // -1
@@ -28473,7 +28474,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -28500,12 +28501,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d3() - 1, giant_rat);
@@ -28526,7 +28527,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.lithivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -28553,9 +28554,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.tunnelling);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3()); // -1
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -28569,7 +28570,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200);
@@ -28596,9 +28597,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2()); // -1
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -28612,7 +28613,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(300);
@@ -28639,9 +28640,9 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.tunnelling);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3()); // -1
         E.SetCorpse(Chance.OneIn3);
       });
       #endregion
@@ -28657,7 +28658,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -28684,14 +28685,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Expert, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.petrifying, 10.d6());
         });
-        E.AddRetaliation(Chance.Always, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.petrifying, 10.d4());
@@ -28713,7 +28714,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2500);
@@ -28740,14 +28741,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4(), K =>
         {
           K.Apply.Macro(MinorPoison(Attributes.strength));
         });
-        E.AddAttack(AttackType.Spit, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
           K.Apply.ApplyTransient(Properties.blindness, 3.d6());
@@ -28767,7 +28768,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -28794,9 +28795,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2()); // -1
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -28810,7 +28811,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -28837,14 +28838,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8(), K =>
         {
           K.Apply.Macro(MajorPoison(Attributes.strength));
         });
-        E.AddAttack(AttackType.Spit, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
           K.Apply.ApplyTransient(Properties.blindness, 6.d6());
@@ -28865,7 +28866,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -28892,10 +28893,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slippery);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d3(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3(), K =>
         {
           K.Apply.Macro(MinorPoison(Attributes.strength));
         });
@@ -28914,7 +28915,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -28941,15 +28942,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slippery);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d2(), A =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d2(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
-        E.AddAttack(AttackType.Grapple, Elements.physical, 2.d2(), A =>
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d2(), A =>
         {
           A.Apply.Grapple(2.d6());
         }); // +3
@@ -28967,7 +28968,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -28994,10 +28995,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -29017,7 +29018,7 @@ namespace Pathos
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetTerrain(Materials.air, Materials.water);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1500);
@@ -29044,10 +29045,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetResistance(Elements.poison);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -29068,7 +29069,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -29095,9 +29096,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d2()); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -2
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -29115,7 +29116,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(80000);
@@ -29142,10 +29143,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
 
-        void AddTentacle() => E.AddAttack(AttackType.Touch, Elements.physical, Dice.One, K => K.Apply.ApplyTransient(Properties.paralysis, Dice.One));
+        void AddTentacle() => E.AddAttack(AttackTypes.touch, Elements.physical, Dice.One, K => K.Apply.ApplyTransient(Properties.paralysis, Dice.One));
 
         // 6 tentacles.
         AddTentacle();
@@ -29169,7 +29170,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -29196,9 +29197,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2() + 3); // -3
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2() + 3); // -3
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn4);
       });
@@ -29213,7 +29214,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -29240,9 +29241,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3() + 3, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3() + 3, K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // -3
@@ -29260,7 +29261,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -29287,11 +29288,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Sting, Elements.physical, 5.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 5.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -29310,7 +29311,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -29337,9 +29338,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // -1
@@ -29358,7 +29359,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -29385,12 +29386,12 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6());
-        E.AddAttack(AttackType.Sting, Elements.physical, 3.d7(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 3.d7(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +2
@@ -29409,7 +29410,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -29436,7 +29437,7 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.literacy, Skills.necromancy, Skills.evocation, Skills.abjuration, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.necromancy, Skills.evocation, Skills.abjuration, Skills.transmutation);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.darkness);
@@ -29445,11 +29446,11 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.toxic_spray);
         E.Startup.AddGrimoire(Dice.One, Spells.poison_blast);
         E.Startup.AddGrimoire(Dice.One, Spells.deflection);
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d6(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d6(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +4
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
@@ -29469,7 +29470,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex = 19.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -29496,9 +29497,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 6.d3(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 6.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // -1
@@ -29516,7 +29517,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9000);
@@ -29543,10 +29544,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.phasing);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d5(), K => // +1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d5(), K => // +1
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -29569,7 +29570,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -29597,10 +29598,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 8.d4(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 8.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, F => F.ApplyTransient(Properties.fainting, 1.d3())));
         });
@@ -29618,7 +29619,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -29645,11 +29646,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d2());
-        E.AddAttack(AttackType.Sting, Elements.physical, 2.d2(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d2(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // -1
@@ -29668,7 +29669,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(32000);
@@ -29695,12 +29696,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.dark_vision, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d6()); // +6 from STR
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Sting, Elements.physical, 4.d10(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6()); // +6 from STR
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 4.d10(), A =>
         {
           A.Apply.Macro(MajorPoison(Attributes.strength));
           A.Apply.Afflict(Codex.Afflictions.poisoning);
@@ -29720,7 +29721,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(32000);
@@ -29747,14 +29748,14 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d9());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d7(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d9());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d7(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +7
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d3(), cave_spider); // lvl1 = 1..3
@@ -29778,7 +29779,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -29806,10 +29807,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 3.d3()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 3.d5(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 3.d5(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 2.d3() + 2);
         });
@@ -29826,7 +29827,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -29854,10 +29855,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.acid);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d10()); // +3
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10()); // +3
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -29871,7 +29872,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -29899,9 +29900,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d8()); // +2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8()); // +2
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -29915,7 +29916,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(2000);
@@ -29943,9 +29944,9 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10()); // +2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10()); // +2
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -29959,7 +29960,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -29987,10 +29988,10 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.SetConcealment(Mimicry: false);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 4.d4()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 3.d7(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 3.d7(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 3.d2() + 4);
         });
@@ -30009,7 +30010,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3 from dex = 25.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(45000);
@@ -30036,12 +30037,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d7());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d4()); // +5
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4()); // +5
         E.SetCorpse(Chance.Always);
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.Conveyance.MinorProperty(Properties.life_regeneration);
@@ -30058,7 +30059,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -30085,13 +30086,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.cold, 4.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.cold, 4.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5()); // +3
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.Always);
@@ -30108,7 +30109,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +3 from dex = 31.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(45000);
@@ -30135,12 +30136,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d8());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +4
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.SetCorpse(Chance.Always);
         TrollWeakness(E);
@@ -30156,7 +30157,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(50000);
@@ -30183,12 +30184,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d3()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3()); // +3
         E.SetCorpse(Chance.Always);
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.Conveyance.MinorProperty(Properties.slow_digestion);
@@ -30205,7 +30206,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -30232,12 +30233,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.SetCorpse(Chance.Always);
         TrollWeakness(E);
@@ -30253,7 +30254,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -30280,13 +30281,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8()); // +2
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +2
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.SetCorpse(Chance.Always);
         TrollWeakness(E);
@@ -30303,7 +30304,7 @@ namespace Pathos
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(36000);
@@ -30330,12 +30331,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming, Skills.polearm);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5()); // +4
         E.Conveyance.TradeoffAbility(Attributes.constitution, Attributes.wisdom);
         E.SetCorpse(Chance.Always);
         TrollWeakness(E);
@@ -30353,7 +30354,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.lithivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(25000);
@@ -30380,12 +30381,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.tunnelling);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d9());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d9());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d7()); // +3
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d7()); // +3
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetReflects()
@@ -30406,7 +30407,7 @@ namespace Pathos
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(24000);
@@ -30433,12 +30434,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Master, Skills.swimming);
+        E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.tunnelling);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d9());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d9());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d7()); // +3
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d7()); // +3
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetReflects()
@@ -30460,7 +30461,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(80000);
@@ -30487,11 +30488,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.clarity);
         E.Startup.SetResistance(Elements.poison);         // +4 from str 
-        E.AddAttack(AttackType.Horn, Elements.physical, 1.d6()); // = 5-10
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d2()); // = 5-6
+        E.AddAttack(AttackTypes.horn, Elements.physical, 1.d6()); // = 5-10
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2()); // = 5-6
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.unicorn_horn);
@@ -30507,7 +30508,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(120000);
@@ -30534,11 +30535,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.clarity);
         E.Startup.SetResistance(Elements.poison);         // +4 from str
-        E.AddAttack(AttackType.Horn, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d2());
+        E.AddAttack(AttackTypes.horn, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d2());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.unicorn_horn);
@@ -30554,7 +30555,7 @@ namespace Pathos
         E.Frequency = 4;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(100000);
@@ -30581,11 +30582,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.clarity);
         E.Startup.SetResistance(Elements.poison);         // +6 from str
-        E.AddAttack(AttackType.Horn, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Kick, Elements.physical, 3.d2());
+        E.AddAttack(AttackTypes.horn, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d2());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
         E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.unicorn_horn);
@@ -30601,7 +30602,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(10);
+        E.Speed = Speed.S6_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(90000);
@@ -30628,10 +30629,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d5()); // +3 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.SetCorpse(Chance.Always);
       });
 
@@ -30645,7 +30646,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(120000);
@@ -30672,11 +30673,11 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison);
-        E.AddAttack(AttackType.Butt, Elements.physical, 3.d10()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Kick, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.butt, Elements.physical, 3.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d4());
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -30697,7 +30698,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(6);
+        E.Speed = Speed.S7_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(75000);
@@ -30724,11 +30725,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d8()); // +4 from str.
-        E.AddAttack(AttackType.Kick, Elements.physical, 2.d8());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d8()); // +4 from str.
+        E.AddAttack(AttackTypes.kick, Elements.physical, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -30742,7 +30743,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(40000);
@@ -30769,10 +30770,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d4()); // +2 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.SetCorpse(Chance.Always);
       });
 
@@ -30786,7 +30787,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(8);
+        E.Speed = Speed.S6_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(140000);
@@ -30813,10 +30814,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Kick, Elements.physical, 1.d6()); // +4 from str.
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -30831,7 +30832,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +5
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -30858,12 +30859,12 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d9());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d9()); // +3
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d9()); // +3
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d6());
@@ -30881,7 +30882,7 @@ namespace Pathos
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -30908,23 +30909,23 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.evocation, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.fire, 2.d8()); // +2 from STR.
-        E.AddAttack(AttackType.Claw, Elements.fire, 2.d8());
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
+        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d4());
         });
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.magic, Dice.One);
           K.Apply.DrainMana(Elements.drain, 2.d4());
         });
-        E.AddAttack(AttackType.Spell, Elements.fire, 6.d6());
+        E.AddAttack(AttackTypes.spell, Elements.fire, 6.d6());
         E.SetCorpse(Chance.Never);
       });
 
@@ -30937,7 +30938,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(30000);
@@ -30964,23 +30965,23 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Tentacle, Elements.physical, 2.d6()); // +3
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6()); // +3
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d6());
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, 2.d6());
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d6());
         });
-        E.AddAttack(AttackType.Tentacle, Elements.physical, 1.d12());
-        E.AddAttack(AttackType.Tentacle, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d6());
@@ -30997,7 +30998,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from DEX = 20.
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -31024,17 +31025,17 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4()); // +1
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +1
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d4());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d5());
@@ -31051,7 +31052,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex=30
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);
@@ -31078,23 +31079,23 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10()); // +3
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 3.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10()); // +3
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d10());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d10());
         });
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           K.Apply.SummonEntity(1.d3(), vampire_bat);
@@ -31113,7 +31114,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from DEX = 23.
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -31140,12 +31141,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d3()); // +2
-        E.AddAttack(AttackType.Weapon, Elements.physical, 4.d6());
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d3()); // +2
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d10());
@@ -31162,7 +31163,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -31189,19 +31190,19 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.evocation, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.evocation, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d4() + 1, Spells.drain_life, Spells.animate_dead, Spells.magic_missile, Spells.poison_blast, Spells.slow, Spells.cone_of_cold);
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d8());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d8());
@@ -31221,7 +31222,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31248,11 +31249,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 1.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 2);
           K.Apply.ApplyTransient(Properties.blindness, 3.d7());
@@ -31270,7 +31271,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +3 from dex = 26.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31297,20 +31298,20 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.disintegrate, Elements.shock, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.flash, A => A.Harm(Elements.shock, 4.d5()));
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.energy, Dice.One);
           K.Apply.DrainMana(Elements.drain, 9.d3() + 1);
         });
-        E.AddAttack(AttackType.Engulf, Elements.shock, 1.d6(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.shock, 1.d6(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 2);
         });
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.energy, Dice.One);
           R.Apply.Harm(Elements.shock, 7.d4());
@@ -31329,7 +31330,7 @@ namespace Pathos
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3 from dex = 25.
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31356,15 +31357,15 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.flash, A => A.Harm(Elements.fire, 4.d4()));
-        E.AddAttack(AttackType.Engulf, Elements.fire, 4.d4(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.fire, 4.d4(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 2);
         });
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 9.d4());
@@ -31382,7 +31383,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(48);
+        E.Speed = Speed.S1_5;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31409,11 +31410,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 1.d6()));
-        E.AddAttack(AttackType.Engulf, Elements.physical, 4.d2(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d2(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d3() + 2);
         }); // -3
@@ -31430,7 +31431,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31457,7 +31458,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.frost, A =>
@@ -31465,11 +31466,11 @@ namespace Pathos
           A.Harm(Elements.cold, 2.d8());
           A.ApplyTransient(Properties.slowness, 2.d3());
         });
-        E.AddAttack(AttackType.Engulf, Elements.cold, 2.d5(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.cold, 2.d5(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 2);
         });
-        E.AddRetaliation(Chance.OneIn3, AttackType.Touch, R =>
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 4.d4());
@@ -31487,7 +31488,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from dex = 23.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -31514,7 +31515,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.gas, A =>
@@ -31522,7 +31523,7 @@ namespace Pathos
           A.Harm(Elements.fire, 3.d4());
           A.ApplyTransient(Properties.blindness, 2.d3());
         });
-        E.AddAttack(AttackType.Engulf, Elements.fire, 3.d4(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.fire, 3.d4(), K =>
         {
           K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 1);
         });
@@ -31541,7 +31542,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -31568,16 +31569,16 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Spit, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 3.d7());
           K.Apply.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d10(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
@@ -31595,7 +31596,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -31622,9 +31623,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4() + 2); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4() + 2); // -2
         E.SetCorpse(Chance.Always);
       });
 
@@ -31638,7 +31639,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -31665,9 +31666,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5() + 2); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5() + 2); // -2
         E.SetCorpse(Chance.Always);
       });
 
@@ -31681,7 +31682,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(300);
@@ -31708,14 +31709,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d5(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d4() + 2);
@@ -31733,7 +31734,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -31760,9 +31761,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -31776,7 +31777,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.SetTail(long_worm_tail, 2.d3() + 2); // 4-8
@@ -31804,9 +31805,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d20()); // +2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d20()); // +2
         E.SetCorpse(Chance.Always);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.worms));
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.worm_tooth);
@@ -31822,7 +31823,7 @@ namespace Pathos
         E.IsTail = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -31849,7 +31850,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetCorpse(Chance.Never);
       });
@@ -31864,7 +31865,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(300);
@@ -31891,10 +31892,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration, Properties.slippery);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2() + 3); // -3
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2() + 3); // -3
         E.Conveyance.MajorResistance(Elements.sleep);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -31910,7 +31911,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(500);
@@ -31937,9 +31938,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d2()); // -1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2()); // -1
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -31953,7 +31954,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.SetTail(bile_worm_tail, 1.d6()); // 1-6
@@ -31981,10 +31982,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d7()); // +1
-        E.AddAttack(AttackType.Spit, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d7()); // +1
+        E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
           K.Apply.Harm(Elements.physical, 1.d6());
@@ -32004,7 +32005,7 @@ namespace Pathos
         E.IsTail = true;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(170000);
@@ -32031,7 +32032,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetCorpse(Chance.Never);
       });
@@ -32046,7 +32047,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(250000);
@@ -32073,7 +32074,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery, Properties.free_action, Properties.phasing, Properties.blinking, Properties.teleportation);
         E.Startup.SetResistance(Elements.poison, Elements.disintegrate);
         E.SetEngulf(Strikes.psychic, A =>
@@ -32081,11 +32082,11 @@ namespace Pathos
           A.Harm(Elements.physical, 1.d20());
           A.ApplyTransient(Properties.phasing, 4.d6());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 5.d5(), K => // +6
+        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d5(), K => // +6
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.constitution)));
         });
-        E.AddAttack(AttackType.Engulf, Elements.physical, 2.d8(), K =>
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 2.d8(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 1.d8() + 2);
         });
@@ -32108,7 +32109,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -1 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.SetTail(purple_worm_tail, 1.d3()); // 1-3
@@ -32136,11 +32137,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
         E.SetEngulf(Strikes.venom, A => A.Harm(Elements.physical, 1.d10()));
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d6()); // +2
-        E.AddAttack(AttackType.Engulf, Elements.physical, 2.d8(), K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +2
+        E.AddAttack(AttackTypes.engulf, Elements.physical, 2.d8(), K =>
         {
           K.Apply.Engulf(Engulfments.swallowed, 1.d8() + 2);
         });
@@ -32157,7 +32158,7 @@ namespace Pathos
         E.IsTail = true;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(200000);
@@ -32184,7 +32185,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.SetCorpse(Chance.Never);
       });
@@ -32199,7 +32200,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100);
@@ -32226,9 +32227,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2() + 2); // -2
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2() + 2); // -2
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -32242,7 +32243,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -32269,10 +32270,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
         E.Startup.SetTalent(Properties.tunnelling, Properties.slippery);
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d4()); // +1
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4()); // +1
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -32286,7 +32287,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(20);
+        E.Speed = Speed.S3_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(5000);
@@ -32313,10 +32314,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid);
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.One);
-        E.AddAttack(AttackType.Spit, Elements.acid, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.One);
+        E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, Dice.Fixed(3));
           K.Apply.Harm(Elements.acid, Dice.One);
@@ -32338,7 +32339,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -32365,12 +32366,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.enchantment, Skills.literacy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackType.Touch, Elements.physical, 2.d4(), K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, 2.d4(), K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 3.d4());
@@ -32388,7 +32389,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +4 from dex = 26.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -32415,21 +32416,21 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Weapon, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 4.d4());
         });
-        E.AddAttack(AttackType.Gaze, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
           K.Apply.ApplyTransient(Properties.fear, 3.d4(), Kinds.Living.ToArray());
         });
-        E.AddAttack(AttackType.Shriek, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
@@ -32449,7 +32450,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +2 from dex = 21.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -32476,20 +32477,20 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d4());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 2.d4());
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Never);
       });
 
@@ -32503,7 +32504,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(0);
@@ -32530,10 +32531,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackType.Touch, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d6());
@@ -32569,7 +32570,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150);
@@ -32596,10 +32597,10 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.shock, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.shock, 1.d10());
-        E.AddDyingRetaliation(Chance.Always, AttackType.Blast, R =>
+        E.AddAttack(AttackTypes.bite, Elements.shock, 1.d10());
+        E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.electric, Dice.Zero);
           R.Apply.Harm(Elements.shock, 6.d6());
@@ -32617,7 +32618,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150);
@@ -32644,13 +32645,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.shock, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.shock, 2.d10(), A => // +2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.shock, 2.d10(), A => // +2 from str.
         {
           A.Apply.ApplyTransient(Properties.blindness, 4.d6());
         });
-        E.AddLivingRetaliation(Chance.Always, AttackType.Bite, R =>
+        E.AddLivingRetaliation(Chance.Always, AttackTypes.bite, R =>
         {
           R.SetCast().Explosion(Explosions.electric, Dice.Zero);
           R.Apply.Harm(Elements.shock, 6.d6());
@@ -32668,7 +32669,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150);
@@ -32695,9 +32696,9 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.shock, Elements.poison);
-        E.AddAttack(AttackType.Bite, Elements.physical, 3.d10(), A => // +4 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d10(), A => // +4 from str.
         {
           A.SetCast().Explosion(Explosions.electric, Dice.Zero);
           A.Apply.Harm(Elements.shock, 6.d6());
@@ -32715,7 +32716,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(3000);
@@ -32742,14 +32743,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d4());
         });
-        E.AddAttack(AttackType.Sting, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d4());
         });
@@ -32770,7 +32771,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(1000);
@@ -32797,13 +32798,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.StealCarriedAsset(Stocks.food);
         });
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Always);
       });
 
@@ -32817,7 +32818,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(11000);
@@ -32844,11 +32845,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d5()); // +1 from STR.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // +1 from STR.
         E.SetCorpse(Chance.Always);
       });
 
@@ -32862,7 +32863,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(40000);
@@ -32889,11 +32890,11 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +3 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +3 from str.
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d5(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +3 from str.
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d5(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -32910,7 +32911,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(45000);
@@ -32937,11 +32938,11 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.berserking);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d10()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d10());
-        E.AddAttack(AttackType.Butt, Elements.physical, 1.d8(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10());
+        E.AddAttack(AttackTypes.butt, Elements.physical, 1.d8(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
@@ -32957,7 +32958,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150000);
@@ -32984,12 +32985,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d10()); // +7 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +7 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -33002,7 +33003,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(250000);
@@ -33029,11 +33030,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d7()); // +5 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d7());
-        E.AddAttack(AttackType.Bite, Elements.physical, 4.d7(), D =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7(), D =>
         {
           D.Apply.WhenChance(Chance.OneIn4, T => T.Decapitate(Strikes.sever));
         });
@@ -33050,7 +33051,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(60000);
@@ -33077,11 +33078,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2()); // +5 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Grapple, Elements.physical, 1.d8(), A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +5 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d8(), A =>
         {
           A.Apply.Grapple(2.d6());
         });
@@ -33098,7 +33099,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex = 14.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(70000);
@@ -33125,11 +33126,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d7()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d7());
-        E.AddAttack(AttackType.Kick, Elements.physical, 5.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d7()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d7());
+        E.AddAttack(AttackTypes.kick, Elements.physical, 5.d4());
         E.SetCorpse(Chance.Always);
       });
 
@@ -33143,7 +33144,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(42000);
@@ -33170,11 +33171,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.cold);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3()); // +4 from str.
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d3());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.Always);
       });
@@ -33189,7 +33190,7 @@ namespace Pathos
         E.Frequency = 2;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
@@ -33216,11 +33217,11 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5());
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 2.d8());// +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());// +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -33234,7 +33235,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(22000);
@@ -33261,13 +33262,13 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.chain_mail);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.leather_cloak);
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6()); // +4 from STR.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
-        E.AddAttack(AttackType.Weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +4 from STR.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -33281,7 +33282,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +4, S: +0, B: +4);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(150000);
@@ -33308,14 +33309,14 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetWeakness(Elements.fire);
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.sling);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.sling);
         E.Startup.SetTalent(Properties.searching, Properties.see_invisible);
         //E.Startup.Loot.AddKit(Chance.Always, 5.d5() + 5, Items.rock);
-        E.AddAttack(AttackType.Punch, Elements.physical, 3.d4(), A =>
+        E.AddAttack(AttackTypes.punch, Elements.physical, 3.d4(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +5
-        E.AddAttack(AttackType.Punch, Elements.physical, 3.d4(), A =>
+        E.AddAttack(AttackTypes.punch, Elements.physical, 3.d4(), A =>
         {
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +5
@@ -33332,7 +33333,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.lithivore);
-        E.Speed = Speed.FromTurns(24);
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -33359,13 +33360,13 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.phasing);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.petrify);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d2());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d17());// +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d17());// +3 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -33386,7 +33387,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -33413,10 +33414,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 4.d4()); // +2
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4()); // +2
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33431,7 +33432,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(9500);
@@ -33458,10 +33459,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6()); // +3
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6()); // +3
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33476,7 +33477,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(90000);
@@ -33503,10 +33504,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 10.d3()); // +3
+        E.AddAttack(AttackTypes.claw, Elements.physical, 10.d3()); // +3
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33521,7 +33522,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(18);
+        E.Speed = Speed.S3_3;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -33548,15 +33549,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 1.d2());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33571,7 +33572,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(14);
+        E.Speed = Speed.S4_5;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(9000);
@@ -33598,15 +33599,15 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d3());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33621,7 +33622,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(8000);
@@ -33648,18 +33649,18 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.enchantment, Skills.evocation, Skills.literacy, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.enchantment, Skills.evocation, Skills.literacy, Skills.transmutation);
         E.Startup.SetTalent(Properties.dark_vision, Properties.tunnelling, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
         E.Startup.AddGrimoire(1.d4(), Spells.drain_life, Spells.sleep, Spells.slow, Spells.acid_stream, Spells.toxic_spray);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d3());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d3());
         });
@@ -33677,7 +33678,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(16);
+        E.Speed = Speed.S3_7;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(10000);
@@ -33704,15 +33705,15 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient, Skills.necromancy, Skills.enchantment, Skills.evocation, Skills.literacy, Skills.transmutation);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.enchantment, Skills.evocation, Skills.literacy, Skills.transmutation);
         E.Startup.SetTalent(Properties.dark_vision, Properties.tunnelling, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 1.d3());
         });
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackType.Summon, Elements.physical, Dice.Zero, A =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
           A.Apply.SummonEntity(1.d3(), ghoul);
@@ -33732,7 +33733,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -33759,10 +33760,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 12.d3()); // +3
+        E.AddAttack(AttackTypes.claw, Elements.physical, 12.d3()); // +3
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33777,7 +33778,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6000);
@@ -33804,10 +33805,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 2.d5()); // +2
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33822,7 +33823,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.FromTurns(12);
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(18000);
@@ -33849,12 +33850,12 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.tunnelling, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 7.d3());
-        E.AddAttack(AttackType.Claw, Elements.physical, 7.d3()); // +2
-        E.AddAttack(AttackType.Bite, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 7.d3());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 7.d3()); // +2
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 3.d6());
         });
@@ -33872,7 +33873,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -33899,10 +33900,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d5()); // +1
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5()); // +1
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33917,7 +33918,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(4000);
@@ -33944,10 +33945,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -33962,7 +33963,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(8500);
@@ -33989,10 +33990,10 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackType.Claw, Elements.physical, 3.d6()); // +2
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6()); // +2
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -34006,7 +34007,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = NewBoneDefence(20);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.FromTurns(32);
+        E.Speed = Speed.S2_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Defend;
         E.Weight = Weight.FromUnits(3000);
@@ -34033,12 +34034,12 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.Proficient);
+        E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep, Elements.petrify);
         E.Startup.Loot.AddKit(Chance.OneIn100, Items.brass_bugle); // doot doot.
-        E.AddAttack(AttackType.Weapon, Elements.physical, 2.d10()); // +3 from str.
-        E.AddAttack(AttackType.Touch, Elements.physical, 1.d6(), K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d10()); // +3 from str.
+        E.AddAttack(AttackTypes.touch, Elements.physical, 1.d6(), K =>
         {
           K.Apply.ApplyTransient(Properties.slowness, 1.d6());
         });

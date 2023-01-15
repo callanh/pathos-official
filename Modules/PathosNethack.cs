@@ -842,7 +842,8 @@ namespace Pathos
             case 2:
             case 3:
             case 4:
-              Generator.PlaceRoom(NetherRoom, NetherBarrier, NetherGround);
+              Generator.PlaceFloorFill(NetherMap, NetherGround, NetherRoom.Region); // replace the cavern floor under the hell brick walls with obsidian. 
+              Generator.PlaceSolidWallFrame(NetherMap, NetherBarrier, NetherRoom.Region);
 
               switch (1.d5().Roll())
               {
@@ -3536,7 +3537,7 @@ namespace Pathos
                     KingCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
                     KingCharacter.SetResistance(Elements.magical, 100);
 
-                    Generator.AcquireArtifact(MinesSquare, KingCharacter, Codex.Qualifications.Master);
+                    Generator.AcquireArtifact(MinesSquare, KingCharacter, Codex.Qualifications.master);
 
                     // gnome with a wand of death!
                     KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(MinesSquare, Codex.Items.wand_of_death));
@@ -3705,7 +3706,7 @@ namespace Pathos
                 UnderCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
                 UnderCharacter.SetResistance(Elements.magical, 100);
 
-                Generator.AcquireArtifact(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.Master);
+                Generator.AcquireArtifact(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
 
                 UnderCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(UnderCharacter.Square, Codex.Items.potion_of_full_healing));
               }
@@ -3959,9 +3960,9 @@ namespace Pathos
 
           // master competency in all skills.
           foreach (var Competency in BossCharacter.Competencies)
-            Competency.Set(Codex.Qualifications.Master);
+            Competency.Set(Codex.Qualifications.master);
 
-          Generator.AcquireArtifact(BossCharacter.Square, BossCharacter, Codex.Qualifications.Master);
+          Generator.AcquireArtifact(BossCharacter.Square, BossCharacter, Codex.Qualifications.master);
         }
       }
 
@@ -4123,7 +4124,7 @@ namespace Pathos
 
         // master competency in all skills.
         foreach (var Competency in BossCharacter.Competencies)
-          Competency.Set(Codex.Qualifications.Master);
+          Competency.Set(Codex.Qualifications.master);
 
         var ArtifactAsset = Generator.NewSpecificAsset(BossCharacter.Square, Codex.Items.wand_of_digging);
         BossCharacter.Inventory.Carried.Add(ArtifactAsset);
@@ -4153,7 +4154,7 @@ namespace Pathos
       else if (BossCharacter != null)
       {
         // carrying the artifact instead.
-        Generator.AcquireArtifact(CurrentSquare, BossCharacter, Codex.Qualifications.Master);
+        Generator.AcquireArtifact(CurrentSquare, BossCharacter, Codex.Qualifications.master);
       }
 
       return true;
@@ -5018,16 +5019,16 @@ namespace Pathos
             }
             else if (UpgradeCharacter.Entity == Codex.Entities.orc_captain)
             {
-              UpgradeCharacter.ForceCompetency(Skills.light_blade).Set(Qualifications.Master);
-              UpgradeCharacter.ForceCompetency(Skills.medium_blade).Set(Qualifications.Master);
-              UpgradeCharacter.ForceCompetency(Skills.heavy_blade).Set(Qualifications.Master);
-              UpgradeCharacter.ForceCompetency(Skills.light_armour).Set(Qualifications.Master);
-              UpgradeCharacter.ForceCompetency(Skills.medium_armour).Set(Qualifications.Master);
-              UpgradeCharacter.ForceCompetency(Skills.heavy_armour).Set(Qualifications.Master);
+              UpgradeCharacter.ForceCompetency(Skills.light_blade).Set(Qualifications.master);
+              UpgradeCharacter.ForceCompetency(Skills.medium_blade).Set(Qualifications.master);
+              UpgradeCharacter.ForceCompetency(Skills.heavy_blade).Set(Qualifications.master);
+              UpgradeCharacter.ForceCompetency(Skills.light_armour).Set(Qualifications.master);
+              UpgradeCharacter.ForceCompetency(Skills.medium_armour).Set(Qualifications.master);
+              UpgradeCharacter.ForceCompetency(Skills.heavy_armour).Set(Qualifications.master);
             }
             else if (UpgradeCharacter.Entity == Codex.Entities.orc_shaman)
             {
-              UpgradeCharacter.ForceCompetency(Skills.evocation).Set(Qualifications.Specialist);
+              UpgradeCharacter.ForceCompetency(Skills.evocation).Set(Qualifications.specialist);
             }
           }
 
@@ -5070,14 +5071,14 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in KingCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.Master);
+              Competency.Set(Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(KingCharacter.Competencies.Select(C => C.Skill)))
-              KingCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.Master);
+              KingCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
             if (!StandardGeneration)
-              Generator.AcquireArtifact(KingdomSquare, KingCharacter, Codex.Qualifications.Master);
+              Generator.AcquireArtifact(KingdomSquare, KingCharacter, Codex.Qualifications.master);
           }
 
           if (IsTown && KingdomSquare.Character != null && KingdomSquare.Character.Neutral)
@@ -5293,11 +5294,11 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in LairCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.Master);
+              Competency.Set(Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(LairCharacter.Competencies.Select(C => C.Skill)))
-              LairCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.Master);
+              LairCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
             var ArtifactItem = Generator.GetArtifactItem();
 
@@ -5534,14 +5535,14 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in TowerCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.Master);
+              Competency.Set(Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(TowerCharacter.Competencies.Select(C => C.Skill)))
-              TowerCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.Master);
+              TowerCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
             // downgrade enchantment to specialist.
-            TowerCharacter.GetCompetency(Codex.Skills.enchantment).Set(Codex.Qualifications.Specialist);
+            TowerCharacter.GetCompetency(Codex.Skills.enchantment).Set(Codex.Qualifications.specialist);
 
             var ArtifactItem = Generator.GetArtifactItem();
 
@@ -5677,7 +5678,7 @@ namespace Pathos
                 AbyssCharacter.Inventory.Carried.Add(NewAsset(Codex.Items.potion_of_full_healing, 2, Codex.Sanctities.Blessed));
                 AbyssCharacter.Inventory.Carried.Add(NewAsset(Codex.Items.potion_of_sickness, 1, Codex.Sanctities.Cursed));
 
-                Generator.AcquireArtifact(AbyssSquare, AbyssCharacter, Codex.Qualifications.Master);
+                Generator.AcquireArtifact(AbyssSquare, AbyssCharacter, Codex.Qualifications.master);
               }
             }
           }

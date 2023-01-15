@@ -16,7 +16,7 @@ namespace Pathos.Official
   {
     public ResourcesQuests() { }
 
-    ///<Summary>(.quest) ~ (121.5KB)</Summary>
+    ///<Summary>(.quest) ~ (121.6KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Abyss;
     ///<Summary>(.quest) ~ (210.0KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Chambers;

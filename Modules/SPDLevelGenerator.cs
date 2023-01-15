@@ -425,7 +425,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.Master);
+                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script5 = boss.InsertScript();
                         script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[32, 20]);
                         script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[4, 4]);
@@ -452,7 +452,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.Master);
+                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script10 = boss.InsertScript();
                         script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 5]);
                         script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 23]);
@@ -477,7 +477,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.Master);
+                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script15 = boss.InsertScript();
                         script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 11]);
                         script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 2]);
@@ -502,7 +502,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.Master);
+                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
                         var boss20killedscript = boss.InsertScript();
                         boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 23]);
                         boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 2]);
@@ -1057,7 +1057,7 @@ namespace Pathos
             shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1); // override to start with 1 gold coin.
             shopkeeper.SetResidentShop(Square, shop);
             shopkeeper.SetNeutral(true);
-            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.Champion);
+            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
             shopkeeper.SetName(SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
             Asset StallAdd(Item StallItem, int? Quantity = null)
@@ -1150,7 +1150,7 @@ namespace Pathos
             shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1);
             shopkeeper.SetResidentShop(square, shop);
             shopkeeper.SetNeutral(true);
-            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.Champion);
+            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
             shopkeeper.SetName(SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
             void StallAdd(Item StallItem) => stall.Stash.Add(SPDDebug.generator.NewSpecificAsset(square, StallItem));

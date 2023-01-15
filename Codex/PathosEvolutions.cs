@@ -81,7 +81,7 @@ namespace Pathos
           Debug.Assert(Ancient.Challenge > Adult.Challenge, Ancient.Name);
 
           // young needs a breath attack.
-          Debug.Assert(Young.Attacks.Any(A => A.Type == AttackType.Breath), Young.Name);
+          Debug.Assert(Young.Attacks.Any(A => A.Type == Codex.AttackTypes.breath), Young.Name);
 
           // ancient can no longer fly but can jump.
           Debug.Assert(!Ancient.Startup.Talents.Contains(Codex.Properties.flight), Ancient.Name);

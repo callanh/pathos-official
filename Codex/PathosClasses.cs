@@ -106,7 +106,7 @@ namespace Pathos
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.quickness);
         C.AddFeat(14, Properties.stealth);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding, Skills.swimming,
           Skills.evocation,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
@@ -136,7 +136,7 @@ namespace Pathos
         C.AddFeat(2, Properties.jumping);
         C.AddFeat(8, Properties.deflection);
         C.AddFeat(14, Properties.vitality);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.riding, Skills.swimming,
           Skills.light_armour, Skills.medium_armour,
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
@@ -169,7 +169,7 @@ namespace Pathos
         C.AddFeat(2, Properties.free_action);
         C.AddFeat(8, Properties.appraisal);
         C.AddFeat(14, Properties.clarity);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.dual_wielding, Skills.literacy, Skills.locks, Skills.music, Skills.riding, Skills.swimming,
           Skills.abjuration, Skills.clerical, Skills.divination, Skills.enchantment,
           Skills.light_armour, Skills.medium_armour,
@@ -214,7 +214,7 @@ namespace Pathos
         C.AddFeat(8, Properties.quickness);
         C.AddFeat(14, Properties.warning);
         C.AddFeat(20, Properties.slow_digestion);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.transmutation,
           Skills.light_armour, Skills.medium_armour,
           Skills.light_blade, Skills.medium_blade,
@@ -270,7 +270,7 @@ namespace Pathos
         C.AddFeat(2, Properties.stealth);
         C.AddFeat(5, Properties.quickness);
         C.AddFeat(11, Properties.searching);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy, Skills.riding, Skills.swimming,
           Skills.divination,
           Skills.light_armour, Skills.medium_armour,
@@ -302,7 +302,7 @@ namespace Pathos
         C.AddFeat(1, Properties.searching);
         C.AddFeat(5, Properties.vitality);
         C.AddFeat(10, Properties.appraisal);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy, Skills.traps,
           Skills.abjuration, Skills.transmutation,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
@@ -346,7 +346,7 @@ namespace Pathos
         C.AddFeat(10, Elements.sleep);
         C.AddFeat(15, Properties.appraisal);
         C.AddFeat(20, Properties.quickness);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.dual_wielding, Skills.riding,
           Skills.light_armour,
           Skills.light_blade,
@@ -383,7 +383,7 @@ namespace Pathos
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.warning);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy,
           Skills.abjuration, Skills.enchantment, Skills.clerical, Skills.necromancy,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
@@ -418,7 +418,7 @@ namespace Pathos
         C.AddFeat(10, Elements.cold);
         C.AddFeat(15, Properties.clarity);
         C.AddFeat(20, Properties.free_action);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.dual_wielding, Skills.music, Skills.riding, Skills.swimming, Skills.traps, Skills.literacy,
           Skills.light_armour,
           Skills.firearms);
@@ -457,7 +457,7 @@ namespace Pathos
         C.AddFeat(8, Properties.free_action);
         C.AddFeat(12, Elements.shock);
         C.AddFeat(16, Elements.drain);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.literacy, Skills.music, Skills.swimming,
           Skills.abjuration, Skills.enchantment, Skills.divination,
           Skills.light_armour,
@@ -501,7 +501,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_knight);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_knight);
         C.AddFeat(8, Properties.quickness);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding,
           Skills.evocation,
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
@@ -542,7 +542,7 @@ namespace Pathos
         C.AddFeat(18, Elements.shock);
         C.AddFeat(20, Properties.teleport_control);
         C.AddFeat(22, Properties.telekinesis);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.crafting, Skills.literacy,
           Skills.clerical, Skills.conjuration,
           Skills.light_armour,
@@ -584,7 +584,7 @@ namespace Pathos
         C.AddFeat(16, Elements.petrify);
         C.AddFeat(18, Properties.teleport_control);
         C.AddFeat(20, Elements.drain);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.dual_wielding, Skills.literacy, Skills.music, Skills.riding, Skills.swimming,
           Skills.divination, Skills.enchantment, Skills.evocation, Skills.transmutation,
           Skills.light_armour,
@@ -632,7 +632,7 @@ namespace Pathos
         C.AddFeat(10, Properties.quickness);
         C.AddFeat(15, Properties.see_invisible);
         C.AddFeat(20, Properties.warning);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.locks, Skills.literacy, Skills.traps,
           Skills.enchantment,
           Skills.light_armour, Skills.medium_blade,
@@ -664,7 +664,7 @@ namespace Pathos
         C.AddFeat(5, Properties.beatitude);
         C.AddFeat(10, Properties.quickness);
         C.AddFeat(15, Properties.warning);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.riding, Skills.literacy,
           Skills.clerical,
           Skills.medium_armour, Skills.heavy_armour,
@@ -697,7 +697,7 @@ namespace Pathos
         C.AddFeat(10, Properties.vitality);
         C.AddFeat(15, Properties.appraisal);
         C.AddFeat(20, Properties.cannibalism);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.dual_wielding, Skills.locks, Skills.music, Skills.swimming,
           Skills.light_armour, Skills.medium_armour,
           Skills.light_blade, Skills.medium_blade,
@@ -737,7 +737,7 @@ namespace Pathos
         C.AddFeat(1, Properties.beatitude);
         C.AddFeat(8, Properties.warning);
         C.AddFeat(14, Elements.fire);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.crafting, Skills.literacy,
           Skills.clerical, Skills.conjuration, Skills.divination, Skills.necromancy,
           Skills.light_armour, Skills.medium_armour,
@@ -771,7 +771,7 @@ namespace Pathos
         C.AddFeat(12, Properties.free_action);
         C.AddFeat(16, Elements.drain); // frees up amulet slot.
         C.AddFeat(20, Properties.beatitude);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.crafting, Skills.literacy, Skills.riding, Skills.swimming,
           Skills.clerical, 
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
@@ -833,7 +833,7 @@ namespace Pathos
         C.AddFeat(12, Elements.petrify);
         C.AddFeat(16, Properties.cannibalism);
         C.AddFeat(20, Elements.drain);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy,
           Skills.necromancy,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
@@ -873,7 +873,7 @@ namespace Pathos
         C.AddFeat(2, Properties.searching);
         C.AddFeat(8, Properties.stealth);
         C.AddFeat(14, Properties.see_invisible);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.crafting, Skills.dual_wielding, Skills.literacy, Skills.riding, Skills.swimming, Skills.traps,
           Skills.divination,
           Skills.light_armour, Skills.medium_armour,
@@ -912,7 +912,7 @@ namespace Pathos
         C.AddFeat(10, Properties.appraisal);
         C.AddFeat(14, Properties.see_invisible);
         C.AddFeat(18, Properties.deflection);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.dual_wielding, Skills.literacy, Skills.locks, Skills.swimming, Skills.traps,
           Skills.abjuration, Skills.divination, Skills.transmutation,
           Skills.light_armour,
@@ -953,7 +953,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.female, Glyphs.troll_female_samurai);
         C.AddFeat(2, Properties.quickness);
         C.AddFeat(16, Properties.stealth);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding,
           Skills.clerical, Skills.evocation,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
@@ -992,7 +992,7 @@ namespace Pathos
         C.AddFeat(10, Properties.polymorph_control);
         C.AddFeat(14, Properties.telekinesis);
         C.AddFeat(18, Properties.clairvoyance);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy,
           Skills.abjuration, Skills.divination, Skills.enchantment, Skills.evocation, Skills.necromancy,
           Skills.light_armour,
@@ -1029,7 +1029,7 @@ namespace Pathos
         C.AddFeat(4, Properties.warning);
         C.AddFeat(8, Properties.teleport_control);
         C.AddFeat(16, Properties.polymorph_control);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy, Skills.riding, Skills.swimming, Skills.traps,
           Skills.abjuration, Skills.divination, Skills.enchantment, Skills.transmutation, Skills.conjuration, 
           Skills.light_armour,
@@ -1063,7 +1063,7 @@ namespace Pathos
         C.AddFeat(2, Properties.searching);
         C.AddFeat(10, Properties.appraisal);
         C.AddFeat(20, Properties.vitality);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.literacy, Skills.locks, Skills.traps, Skills.crafting,
           Skills.abjuration, Skills.divination, Skills.transmutation, Skills.enchantment, Skills.evocation,
           Skills.light_armour, Skills.medium_armour,
@@ -1103,7 +1103,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_tourist);
         C.AddFeat(8, Properties.searching);
         C.AddFeat(14, Elements.poison);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.literacy, Skills.swimming,
           Skills.abjuration,
           Skills.light_armour,
@@ -1149,7 +1149,7 @@ namespace Pathos
         C.AddFeat(8, Properties.quickness);
         C.AddFeat(12, Elements.shock);
         C.AddFeat(16, Properties.vitality);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding, Skills.swimming,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
@@ -1190,7 +1190,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_wizard);
         C.AddFeat(8, Properties.warning);
         C.AddFeat(14, Properties.teleport_control);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.bartering, Skills.crafting, Skills.literacy,
           Skills.abjuration, Skills.divination, Skills.enchantment, Skills.evocation, Skills.necromancy, Skills.transmutation,
           Skills.light_armour,
@@ -1227,7 +1227,7 @@ namespace Pathos
         C.SetDistribution(Attributes.intelligence, Attributes.constitution, Attributes.dexterity, Attributes.wisdom, Attributes.strength, Attributes.charisma);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.clairvoyance);
-        C.Startup.SetSkill(Qualifications.Proficient,
+        C.Startup.SetSkill(Qualifications.proficient,
           Skills.crafting, Skills.literacy,
           Skills.abjuration, Skills.conjuration, Skills.divination, Skills.enchantment, Skills.necromancy, Skills.transmutation,
           Skills.light_armour,

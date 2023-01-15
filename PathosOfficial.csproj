@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Codex\PathosAfflictions.cs" />
     <Compile Include="Codex\PathosAtmospheres.cs" />
+    <Compile Include="Codex\PathosAttackTypes.cs" />
     <Compile Include="Codex\PathosAttributes.cs" />
     <Compile Include="Codex\PathosBarriers.cs" />
     <Compile Include="Codex\PathosBeams.cs" />

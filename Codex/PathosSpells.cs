@@ -51,11 +51,11 @@ namespace Pathos
 
       void SetAdept(SpellEditor Spell, Action<AdeptEditor> Unskilled, Action<AdeptEditor> Proficient, Action<AdeptEditor> Specialist, Action<AdeptEditor> Expert, Action<AdeptEditor> Master, Action<AdeptEditor> Champion)
       {
-        Champion?.Invoke(Spell.SetAdept(Qualifications.Champion));
-        Master?.Invoke(Spell.SetAdept(Qualifications.Master));
-        Expert?.Invoke(Spell.SetAdept(Qualifications.Expert));
-        Specialist?.Invoke(Spell.SetAdept(Qualifications.Specialist));
-        Proficient?.Invoke(Spell.SetAdept(Qualifications.Proficient));
+        Champion?.Invoke(Spell.SetAdept(Qualifications.champion));
+        Master?.Invoke(Spell.SetAdept(Qualifications.master));
+        Expert?.Invoke(Spell.SetAdept(Qualifications.expert));
+        Specialist?.Invoke(Spell.SetAdept(Qualifications.specialist));
+        Proficient?.Invoke(Spell.SetAdept(Qualifications.proficient));
         Unskilled?.Invoke(Spell.SetAdept(Qualification: null));
       }
 

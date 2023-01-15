@@ -28,6 +28,7 @@ namespace Pathos
         this.Sanctities = new CodexSanctities(this);
         this.Encumbrances = new CodexEncumbrances(this);
         this.Qualifications = new CodexQualifications(this);
+        this.AttackTypes = new CodexAttackTypes(this);
         this.Genders = new CodexGenders(this);
         this.Skills = new CodexSkills(this);
         this.Slots = new CodexSlots(this);
@@ -141,6 +142,7 @@ namespace Pathos
     public Manifest Manifest { get; }
     public CodexAfflictions Afflictions { get; }
     public CodexAtmospheres Atmospheres { get; }
+    public CodexAttackTypes AttackTypes { get; }
     public CodexAttributes Attributes { get; }
     public CodexBarriers Barriers { get; }
     public CodexBeams Beams { get; }
@@ -201,10 +203,10 @@ namespace Pathos
     where TEditor : Editor<TRecord>
     where TRecord : class
   {
-    internal CodexPage() { }
+    protected CodexPage() { }
     internal CodexPage(TRegister Register)
     {
-      this.Register = Register;
+      this.RegisterField = Register;
     }
     
     /// <summary>
@@ -215,7 +217,18 @@ namespace Pathos
     public TRecord Add(Action<TEditor> EditorAction) => Register.Add(EditorAction);
     public TEditor Edit(TRecord Record) => Register.Edit(Record);
 
-    protected readonly TRegister Register;
+    protected TRegister Register
+    {
+      get
+      {
+        if (Inv.Assert.IsEnabled)
+          Inv.Assert.Check(RegisterField != null, "CodexPage must be constructed with a register.");
+
+        return RegisterField;
+      }
+    }
+
+    private readonly TRegister RegisterField;
   }
 
 #if MASTER_CODEX
@@ -580,7 +593,7 @@ namespace Pathos
           //if (Attack.Cast != null && Attack.DamageDice != Dice.Zero)
           //  Record($"Entity {Entity.Name} attack[{AttackIndex}] cast must not have damage specified");
 
-          if (Attack.Type.IsCasting() && Attack.Cast == null)
+          if (Attack.Type.IsCasting && Attack.Cast == null)
             Record($"Entity {Entity.Name} attack[{AttackIndex}] {Attack.Type.ToString().ToLower()} must have a cast.");
 
           if (Attack.DamageDice == Dice.Zero && !Attack.Apply.HasEffects())
@@ -609,9 +622,9 @@ namespace Pathos
           AttackIndex++;
         }
 
-        if (Entity.Engulf == null && Entity.Attacks.Any(A => A.Type == AttackType.Engulf))
+        if (Entity.Engulf == null && Entity.Attacks.Any(A => A.Type == Codex.AttackTypes.engulf))
           Record($"Entity {Entity.Name} must have an engulf specified if it has an engulfing attack.");
-        else if (Entity.Engulf != null && !Entity.Attacks.Any(A => A.Type == AttackType.Engulf))
+        else if (Entity.Engulf != null && !Entity.Attacks.Any(A => A.Type == Codex.AttackTypes.engulf))
           Record($"Entity {Entity.Name} must have an engulfing attack if it has an engulf specified.");
 
         foreach (var Retaliation in Entity.Retaliations)
@@ -1067,6 +1080,7 @@ namespace Pathos
 
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
       RegisterRecord<ManifestAtmospheres, AtmosphereEditor, Atmosphere>();
+      RegisterRecord<ManifestAttackTypes, AttackTypeEditor, AttackType>();
       RegisterRecord<ManifestAttributes, AttributeEditor, Attribute>();
       RegisterRecord<ManifestBarriers, BarrierEditor, Barrier>();
       RegisterRecord<ManifestBeams, BeamEditor, Beam>();
@@ -1121,6 +1135,7 @@ namespace Pathos
 
       Base.Register<CodexAfflictions>();
       Base.Register<CodexAtmospheres>();
+      Base.Register<CodexAttackTypes>();
       Base.Register<CodexAttributes>();
       Base.Register<CodexBarriers>();
       Base.Register<CodexBeams>();
@@ -1183,6 +1198,7 @@ namespace Pathos
       Base.Register<AssetFilter>();
       Base.Register<Atmosphere>();
       Base.Register<Attack>();
+      Base.Register<AttackType>();
       Base.Register<Attribute>();
       Base.Register<Avatar>();
       Base.Register<Barrier>();
@@ -1267,7 +1283,7 @@ namespace Pathos
       Base.Register<Sunken>();
       Base.Register<Symptom>();
       Base.Register<Tail>();
-      Base.Register<Track>();
+      Base.Register<Track>().Ignore("Music"); // expected to be null.
       Base.Register<Trick>();
       Base.Register<Use>();
       Base.Register<Utility>();
