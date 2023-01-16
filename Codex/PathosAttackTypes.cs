@@ -13,58 +13,125 @@ namespace Pathos
     internal CodexAttackTypes(Codex Codex)
       : base(Codex.Manifest.AttackTypes)
     {
-      AttackType Add(string Name, DamageType? DamageType, Action<AttackTypeEditor> EditorAction = null)
+      AttackType Add(string Name, DamageType? DamageType, Action<AttackTypeEditor> EditorAction)
       {
         return Register.Add(A =>
         {
           A.Name = Name;
           A.DamageType = DamageType;
 
-          EditorAction?.Invoke(A);
+          EditorAction(A);
         });
       }
 
-      bite = Add("bite", DamageType.Pierce);
+      bite = Add("bite", DamageType.Pierce, E =>
+      {
+      });
 
-      blast = Add("blast", DamageType: null, E => E.Indirect().Casting().Exploding());
+      blast = Add("blast", DamageType: null, E =>
+      {
+        E.IsIndirect = true;
+        E.IsCasting = true;
+        E.IsExploding = true;
+      });
 
-      breath = Add("breath", DamageType: null, E => E.Indirect().Casting());
+      breath = Add("breath", DamageType: null, E =>
+      {
+        E.IsIndirect = true;
+        E.IsCasting = true;
+      });
 
-      butt = Add("butt", DamageType.Bludgeon);
+      butt = Add("butt", DamageType.Bludgeon, E =>
+      {
+      });
 
-      claw = Add("claw", DamageType.Slash, E => E.OpenWielding());
+      claw = Add("claw", DamageType.Slash, E =>
+      {
+        E.IsOpenWielding = true;
+      });
 
-      engulf = Add("engulf", DamageType: null);
+      engulf = Add("engulf", DamageType: null, E =>
+      {
+      });
 
-      gaze = Add("gaze", DamageType: null, E => E.Vision().Indirect().StrengthIgnored().Casting());
+      gaze = Add("gaze", DamageType: null, E =>
+      {
+        E.IsVision = true;
+        E.IsStrengthIgnored = true;
+        E.IsIndirect = true;
+        E.IsCasting = true;
+      });
 
-      grapple = Add("grapple", DamageType: null);
+      grapple = Add("grapple", DamageType: null, E =>
+      {
+      });
 
-      horn = Add("horn", DamageType.Pierce);
+      horn = Add("horn", DamageType.Pierce, E =>
+      {
+      });
 
-      kick = Add("kick", DamageType.Bludgeon);
+      kick = Add("kick", DamageType.Bludgeon, E =>
+      {
+      });
 
-      punch = Add("punch", DamageType.Bludgeon, E => E.OpenWielding());
+      punch = Add("punch", DamageType.Bludgeon, E =>
+      {
+        E.IsOpenWielding = true;
+      });
 
-      shriek = Add("shriek", DamageType: null, E => E.Voice().Indirect().StrengthIgnored().Casting());
+      shriek = Add("shriek", DamageType: null, E =>
+      {
+        E.IsVoice = true;
+        E.IsIndirect = true;
+        E.IsStrengthIgnored = true;
+        E.IsCasting = true;
+      });
 
-      spell = Add("spell", DamageType: null);
+      spell = Add("spell", DamageType: null, E =>
+      {
+      });
 
-      spit = Add("spit", DamageType: null, E => E.Indirect().Casting());
+      spit = Add("spit", DamageType: null, E =>
+      {
+        E.IsIndirect = true;
+        E.IsCasting = true;
+      }); 
 
-      splash = Add("splash", DamageType: null, E => E.Indirect().StrengthIgnored());
+      splash = Add("splash", DamageType: null, E =>
+      {
+        E.IsIndirect = true;
+        E.IsStrengthIgnored = true;
+      });
 
-      spore = Add("spore", DamageType: null, E => E.Indirect().StrengthIgnored());
+      spore = Add("spore", DamageType: null, E =>
+      {
+        E.IsIndirect = true;
+        E.IsStrengthIgnored = true;
+      });
 
-      sting = Add("sting", DamageType.Pierce);
+      sting = Add("sting", DamageType.Pierce, E =>
+      {
+      });
 
-      summon = Add("summon", DamageType: null, E => E.Summoning());
+      summon = Add("summon", DamageType: null, E =>
+      {
+        E.IsSummoning = true;
+      });
 
-      tentacle = Add("tentacle", DamageType: null);
+      tentacle = Add("tentacle", DamageType: null, E =>
+      {
+      });
 
-      touch = Add("touch", DamageType: null, E => E.StrengthIgnored().OpenWielding());
+      touch = Add("touch", DamageType: null, E =>
+      {
+        E.IsStrengthIgnored = true;
+        E.IsOpenWielding = true;
+      });
 
-      weapon = Add("weapon", DamageType.Slash, E => E.OpenWielding());
+      weapon = Add("weapon", DamageType.Slash, E =>
+      {
+        E.IsOpenWielding = true;
+      });
     }
 #endif
 

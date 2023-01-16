@@ -22,7 +22,7 @@
     <PathosInstallation>C:\Games\Pathos</PathosInstallation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(PathosDeveloper)' != 'OpenSource' or '$(Username)' == 'callanh' ">
-    <PathosInstallation>C:\Development\Notlame\Pathos\PathosGameW\bin\x86\Debug\net48</PathosInstallation>
+    <PathosInstallation>C:\Development\Notlame\Pathos\PathosGameW\bin\Debug\net48</PathosInstallation>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -134,12 +134,15 @@
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />
 
   <!-- Automatically regenerates the Resources files -->
-  <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
+  <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds" Condition=" '$(Username)' != 'callanh' ">
     <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
+  </Target>
+  <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds" Condition=" '$(Username)' == 'callanh' ">
+    <Exec Command="&quot;$(ProjectDir)..\..\..\Forge\Inv\InvGen\bin\Debug\net48\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
 
   <!-- Make the Atlases and Albums -->
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)' == 'net48' ">
-    <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net48|OpenSource' ">
+    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
   </Target>
 </Project>

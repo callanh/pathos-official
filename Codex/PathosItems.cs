@@ -13894,7 +13894,7 @@ namespace Pathos
         I.Essence = WeaponEssence0;
         I.Price = Gold.FromCoins(20);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.dart, Sonics.throw_object, Elements.physical, DamageType.Bludgeon, Dice.One);
+        I.SetOneHandedWeapon(Skills.dart, Sonics.throw_object, Elements.physical, DamageType.Bludgeon, Dice.One).AttackModifier = Modifier.Plus2;
         I.AddObviousIngestUse(Motions.eat, 3, Delay.FromTurns(10), Sonics.weapon);
       });
 

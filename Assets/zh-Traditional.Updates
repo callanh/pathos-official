@@ -1,3 +1,11 @@
+2023-01-16
+- blowguns now get a +2 attack modifier.
+- Windows Desktop version has been changed from x86 to Any CPU, which means it now runs as 32 bit process or 64 bit process, depending on your machine.
+
+2023-01-15
+- official repository published to GitHub for creating variants (https://github.com/callanh/pathos-official).
+- extended and replaced Module API with the Expansion API for modding content and modules.
+
 2023-01-13
 - pirate now starts with the firearms skill (unless firearms are abolished).
 - miner can now start with sticks of dynamite and firearms skill (unless firearms are abolished).
