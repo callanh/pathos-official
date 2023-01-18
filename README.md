@@ -12,16 +12,31 @@ The content definitions and module generations are declared as C# code. This cod
 
 ## Installation steps
 
-1. Install **Microsoft Visual Studio 2022** or Microsoft Visual Code.
-2. Download **Pathos for Windows Desktop** from the [Official Website](https://pathos.azurewebsites.net/).
-3. Install Pathos to `C:\Games\Pathos`**.
-4. Fork this public repository: <https://github.com/callanh/pathos-official.git>.
-5. Open **PathosOfficial.sln.**
-6. Run **PathosOfficial** project.
+1. Download [**Pathos for Windows Desktop**](https://pathos.azurewebsites.net/).
+2. Install Pathos to `C:\Games\Pathos` **.
+3. Fork the [**Official public repository**](https://github.com/callanh/pathos-official.git).
+4. Install **Microsoft Visual Studio 2022** _or_ **Microsoft Visual Code** plus build tools.
 
 ** _you will need to edit the paths in PathosOfficial.csproj if you don't use this default location._
 
-If these steps are successful, the Pathos game will launch, running the forked code. Exit the game and make a minor change to the code before running again to see the difference in the game.
+### Visual Studio 2022
+
+1. Install [**Visual Studio Community**](https://visualstudio.microsoft.com/) with the **.NET Desktop Development** workload.
+2. Open `PathosOfficial.sln.`.
+3. Run **PathosOfficial** project.
+
+### Visual Studio Code and Build Tools
+
+1. Install [**Visual Studio Code**](https://code.visualstudio.com).
+2. Install [**Visual Studio Build Tools**](https://aka.ms/vs/17/release/vs_BuildTools.exe) with the **.NET Desktop Development** workload.
+3. Install Visual Studio Code extension **C# for Visual Studio Code (powered by OmniSharp)**.
+4. Open `PathosOfficial.code-workspace`.
+5. Press `Ctrl+Shift+B` to build.
+6. Press `F5` to run **PathosOfficial** project.
+
+If these steps are successful, the Pathos game will launch, running the forked code. Exit the game and make a minor change to the code before building and running again to see the difference in the game.
+
+> NOTE: when the Pathos game self-updates you need to pull the latest commits from the Official repository and vice versa.
 
 ## Project overview
 
