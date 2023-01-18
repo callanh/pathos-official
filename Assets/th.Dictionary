@@ -2035,6 +2035,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,
 FormatText,{StrikeName} strike,โจมตี{StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName}ขโมย{AssetName}จาก{Victim:CharacterName}
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits}  กิโลกรัม
 FormatText,{WeightUnits} lbs,{WeightUnits} ปอนต์
 FormatText,after reaching dungeon level {RecordDepth},หลังจากไปถึงดันเจี้ยนชั้นที่ {RecordDepth}

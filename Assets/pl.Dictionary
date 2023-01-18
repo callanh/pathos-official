@@ -2035,6 +2035,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,trawienie {StrikeName}
 FormatText,{StrikeName} strike,atak {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} ukradł {AssetName} z {Victim:CharacterName}
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} funtów
 FormatText,after reaching dungeon level {RecordDepth},po osiągnięciu poziomu lochu {RecordDepth}

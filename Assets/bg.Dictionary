@@ -2035,6 +2035,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},
 FormatText,{StrikeName} digestion,
 FormatText,{StrikeName} strike,{StrikeName} удар
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} крадёт {AssetName} у {Victim:CharacterName}
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} кг
 FormatText,{WeightUnits} lbs,{WeightUnits} фунтов
 FormatText,after reaching dungeon level {RecordDepth},после достижения {RecordDepth} уровня подземелья

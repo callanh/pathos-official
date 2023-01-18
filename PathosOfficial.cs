@@ -47,17 +47,20 @@ namespace Pathos
 
     public Codex Codex { get; }
 
-    public override void Make(System.IO.Stream CodexStream)
+    public override void Make(CampaignMake Make)
     {
       // only save the Codex when it has been declared in this execution.
-#if MASTER_CODEX
-      Debug.Assert(CodexStream != null, "CodexStream must be provided.");
+      if (Inv.Assert.IsEnabled)
+        Inv.Assert.Check(Make.CodexStream != null, "CodexStream must be provided.");
 
-      if (CodexStream != null)
-        new CodexGovernor().Save(Codex, CodexStream);
+      var Sanity = new CodexSanity();
+      Sanity.Check(Codex);
+      Make.SanityMessages = Sanity.Messages;
+
+      if (Make.CodexStream != null)
+        new CodexGovernor().Save(Codex, Make.CodexStream);
 
       // TODO: Codex Reports?
-#endif
     }
   }
 }

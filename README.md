@@ -28,7 +28,7 @@ The content definitions and module generations are declared as C# code. This cod
 ### Visual Studio Code and Build Tools
 
 1. Install [**Visual Studio Code**](https://code.visualstudio.com).
-2. Install [**Visual Studio Build Tools**](https://aka.ms/vs/17/release/vs_BuildTools.exe) with the **.NET Desktop Development** workload.
+2. Install [**Visual Studio Build Tools**](https://aka.ms/vs/17/release/vs_BuildTools.exe) with the **.NET desktop build tools** workload.
 3. Install Visual Studio Code extension **C# for Visual Studio Code (powered by OmniSharp)**.
 4. Open `PathosOfficial.code-workspace`.
 5. Press `Ctrl+Shift+B` to build.

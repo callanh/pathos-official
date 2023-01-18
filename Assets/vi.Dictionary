@@ -2035,6 +2035,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} nuốt
 FormatText,{StrikeName} strike,{StrikeName} tấn công
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} đã trộm {AssetName} từ {Victim:CharacterName}
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},sau khi tới được tầng {RecordDepth}

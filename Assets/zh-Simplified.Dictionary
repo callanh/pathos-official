@@ -2035,6 +2035,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} 消化
 FormatText,{StrikeName} strike,{StrikeName} 攻击
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} 从 {Victim:CharacterName} 身上偷取了 {AssetName}
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} 公斤
 FormatText,{WeightUnits} lbs,{WeightUnits} 斤
 FormatText,after reaching dungeon level {RecordDepth},最深到达过 {RecordDepth} 层

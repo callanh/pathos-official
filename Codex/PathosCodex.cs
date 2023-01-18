@@ -130,12 +130,6 @@ namespace Pathos
       Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
 
       Manifest.Complete();
-
-#if DEBUG
-      var Sanity = new CodexSanity();
-      Sanity.Check(this);
-      Sanity.Throw();
-#endif
     }
 #endif
 
@@ -208,7 +202,11 @@ namespace Pathos
     {
       this.RegisterField = Register;
     }
-    
+
+    /// <summary>
+    /// Name of this register.
+    /// </summary>
+    public string Name => Register.Name;    
     /// <summary>
     /// A list of everything registered.
     /// </summary>
@@ -316,6 +314,8 @@ namespace Pathos
     {
       this.Base = new Sanity();
     }
+
+    public IReadOnlyList<string> Messages => Base.Messages;
 
     public void Check(Codex Codex)
     {
@@ -1017,10 +1017,6 @@ namespace Pathos
       foreach (var UnusedSonic in Manifest.Sonics.List.Except(UsedSonicSet))
         Record($"Sonic {UnusedSonic.Name} is not used");
       #endregion
-    }
-    public void Throw()
-    {
-      Base.Throw();
     }
 
     private void CheckApply(Apply Apply, Func<string> Function)
