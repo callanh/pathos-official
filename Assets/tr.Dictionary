@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},
 FormatText,Equip {CharacterName},{CharacterName} 'i kuşan
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} şan ve {RecordKills} leş
 FormatText,Feed which item to {CharacterName}?,Hangi eşyayı {CharacterName}'e yedir?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,
 FormatText,gain {TalentName} talent,{TalentName} kazan
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Hoşgeldin {CharacterName}!, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Elf kasabası
 LiteralText,Elf Town Trove,Elf kasaba hazinesi
 LiteralText,else,başka
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,BOŞ
 LiteralText,Enable auto save,Otomatik kaydetmeyi aç
 LiteralText,Enable master mode,Usta modunu aç
 LiteralText,enchanted items,efsunlanmış eşyalar

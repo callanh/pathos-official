@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},energizálás {ManaDice}
 FormatText,Equip {CharacterName},{CharacterName} felszerelése
 FormatText,fame {RecordFame} and {RecordKills} kills,"hírnév: {RecordFame}, ölések: {RecordKills}"
 FormatText,Feed which item to {CharacterName}?,{CharacterName} melyik tárgyat fogyassza el?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,{Percent}% {ElementName}ellenállást szerez
 FormatText,gain {TalentName} talent,{TalentName} készség megszerzése
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Üdv, {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Elfváros
 LiteralText,Elf Town Trove,Elfvárosi lelet
 LiteralText,else,vagy
 LiteralText,EMAIL,E-MAIL
-LiteralText,EMPTY,ÜRES
 LiteralText,Enable auto save,Automatikus mentés engedélyezése
 LiteralText,Enable master mode,Mestermód engedélyezése
 LiteralText,enchanted items,megigézett tárgyak

@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},energia {ManaDice}
 FormatText,Equip {CharacterName},Wyposaż {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,sława {RecordFame} i {RecordKills} zabójstwa
 FormatText,Feed which item to {CharacterName}?,Który element dać do {CharacterName}?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,wzmocnienie {Percent}% {ElementName} odporności
 FormatText,gain {TalentName} talent,zdobyty talent {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Witaj {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Elfie miasto
 LiteralText,Elf Town Trove,Elfi Skarbiec Miejski
 LiteralText,else,else
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,PUSTY
 LiteralText,Enable auto save,włącz auto save
 LiteralText,Enable master mode,Włącz tryb developerski
 LiteralText,enchanted items,zaklęte przedmioty

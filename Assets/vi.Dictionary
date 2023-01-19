@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},hồi phục {ManaDice}
 FormatText,Equip {CharacterName},Trang bị {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,danh dự {RecordFame} và giết {RecordKills} mạng
 FormatText,Feed which item to {CharacterName}?,Cho {CharacterName} ăn vật phẩm nào?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,tăng kháng {ElementName} lên {Percent}%
 FormatText,gain {TalentName} talent,nhận được tài {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Kính chào {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Thi trấn Elf
 LiteralText,Elf Town Trove,Kho báu của thi trấn Elf
 LiteralText,else,nếu khác
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,TRỐNG
 LiteralText,Enable auto save,Bật tụ động lưu
 LiteralText,Enable master mode,Bật chế độ tự do
 LiteralText,enchanted items,vật phẩm được cường hóa

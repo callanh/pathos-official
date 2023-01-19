@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},マナ回復 {ManaDice}
 FormatText,Equip {CharacterName},{CharacterName}を装備する
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame}の栄誉と{RecordKills}の殺害
 FormatText,Feed which item to {CharacterName}?,どのアイテムを{CharacterName}に与えますか？
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,{Percent}％{ElementName}の抵抗を獲得
 FormatText,gain {TalentName} talent,{TalentName}の才能を獲得
 FormatText,"Hail {CharacterName}, {CharacterDescription}",ようこそ{CharacterName}、{CharacterDescription}
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,エルフタウン
 LiteralText,Elf Town Trove,エルフタウン・所有者不明の財宝
 LiteralText,else,それ以外
 LiteralText,EMAIL,Eメール
-LiteralText,EMPTY,空にする
 LiteralText,Enable auto save,自動保存を有効にする
 LiteralText,Enable master mode,マスターモードを有効にする
 LiteralText,enchanted items,魔力付与されているアイテム

@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},{ManaDice} 마나 증가
 FormatText,Equip {CharacterName},장비 {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,"명성치 {RecordFame}, {RecordKills} 처치"
 FormatText,Feed which item to {CharacterName}?,어느 아이템을 {CharacterName}에게 먹입니까?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,{ElementName}속성 저항 {Percent}% 획득
 FormatText,gain {TalentName} talent,{TalentName} 재능 획득
 FormatText,"Hail {CharacterName}, {CharacterDescription}","{CharacterDescription} - {CharacterName}님, 환영합니다"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,엘프 마을
 LiteralText,Elf Town Trove,엘프 마을 창고
 LiteralText,else,아닐경우
 LiteralText,EMAIL,이메일
-LiteralText,EMPTY,비우기
 LiteralText,Enable auto save,자동 저장 켜기
 LiteralText,Enable master mode,마스터 모드 켜기
 LiteralText,enchanted items,강화된 아이템

@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},energizza {ManaDice}
 FormatText,Equip {CharacterName},Equipaggia {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} punti fama e {RecordKills} uccisioni
 FormatText,Feed which item to {CharacterName}?,Con quale oggetto desideri sfamare {CharacterName}?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,ottieni resistenza a {ElementName} del {Percent}%
 FormatText,gain {TalentName} talent,ottieni il talento di {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Ave {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Città Elfica
 LiteralText,Elf Town Trove,Segrete elfiche
 LiteralText,else,altrimenti
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,VUOTO
 LiteralText,Enable auto save,Abilita salvataggio automatico
 LiteralText,Enable master mode,Attiva la modalità sviluppatore
 LiteralText,enchanted items,oggetti incantati

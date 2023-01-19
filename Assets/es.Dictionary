@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},aumentar {ManaDice}
 FormatText,Equip {CharacterName},Equipar {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} fama y {RecordKills} víctimas
 FormatText,Feed which item to {CharacterName}?,¿Alimentar a {CharacterName} con qué objeto?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,ganar {Percent}% de resistencia al {ElementName}
 FormatText,gain {TalentName} talent,ganar talento {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Saludos {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Ciudad de los Elfos
 LiteralText,Elf Town Trove,Tesoro de la Ciudad de los Elfos
 LiteralText,else,de otro modo
 LiteralText,EMAIL,CORREO
-LiteralText,EMPTY,VACÍO
 LiteralText,Enable auto save,Activar auto guardado
 LiteralText,Enable master mode,Activar modo maestro
 LiteralText,enchanted items,ítems encantados

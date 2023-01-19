@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},獲得mp{ManaDice}
 FormatText,Equip {CharacterName},裝備 {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,一共獲得 {RecordFame} 點名望，殺死 {RecordKills} 個怪物
 FormatText,Feed which item to {CharacterName}?,給 {CharacterName} 餵食什麼？
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,獲得 {Percent}% 的 {ElementName}抗性
 FormatText,gain {TalentName} talent,獲得 {TalentName} 天賦
 FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{CharacterName} ，{CharacterDescription}
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,精靈城鎮
 LiteralText,Elf Town Trove,精靈城地窖
 LiteralText,else,其他
 LiteralText,EMAIL,電郵
-LiteralText,EMPTY,清空
 LiteralText,Enable auto save,開啟自動存檔
 LiteralText,Enable master mode,啟動大師模式
 LiteralText,enchanted items,強化物品

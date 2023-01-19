@@ -277,6 +277,7 @@ namespace Pathos
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
         Storage.TrappedExplosion = null;
+        Storage.DumpMotion = Motions.empty;
       });
 
       Stamped_Letter = AddItem(Stocks.scroll, ItemType.Letter, "Stamped Letter", I =>
@@ -9183,6 +9184,7 @@ namespace Pathos
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
         Storage.TrappedExplosion = null;
+        Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(20), Sonics.tool);
       });
@@ -9260,6 +9262,7 @@ namespace Pathos
         Storage.TrappedExplosion = null;
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
+        Storage.DumpMotion = Motions.empty;
       });
 
       bag_of_tricks = AddBagItem("bag of tricks", I =>
@@ -9636,6 +9639,7 @@ namespace Pathos
         Storage.TrappedExplosion = Explosions.fiery;
         Storage.TrappedElement = Elements.physical;
         Storage.TrappedProperty = Properties.stunned;
+        Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 600, Delay.FromTurns(60), Sonics.tool);
       });
@@ -9974,6 +9978,7 @@ namespace Pathos
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
         Storage.TrappedExplosion = null;
+        Storage.DumpMotion = Motions.empty;
 
         //I.AddEat(900, Delay.FromTurns(50), Sonics.tool); // nothing can eat plastic.
       });
@@ -10050,6 +10055,7 @@ namespace Pathos
         Storage.TrappedExplosion = Explosions.fiery;
         Storage.TrappedElement = Elements.physical;
         Storage.TrappedProperty = Properties.stunned;
+        Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 350, Delay.FromTurns(30), Sonics.tool);
       });
@@ -11223,7 +11229,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.psychic, Dice.Zero);
           Use.Apply.WithSourceSanctity
           (
-            B => B.AreaTransient(Properties.fear, 4.d6(), Kinds.List.ToArray()),
+            B => B.AreaTransient(Properties.fear, 4.d6()),
             U => U.AreaTransient(Properties.fear, 3.d6(), Kinds.Living.ToArray()),
             C => C.AreaTransient(Properties.fear, 1.d6(), Kinds.Living.ToArray())
           );

@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},
 FormatText,Equip {CharacterName},
 FormatText,fame {RecordFame} and {RecordKills} kills,
 FormatText,Feed which item to {CharacterName}?,จะเอาไอเท็มไหนให้{CharacterName}กิน?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,ได้รับการต้านทาน{ElementName}{Percent}%
 FormatText,gain {TalentName} talent,ได้รับพรสวรรค์{TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}",
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,เมืองเอลฟ์
 LiteralText,Elf Town Trove,ขุมทรัพย์เมืองเอลฟ์
 LiteralText,else,อย่างอื่น
 LiteralText,EMAIL,
-LiteralText,EMPTY,ว่างเปล่า
 LiteralText,Enable auto save,เปิดใช้งานการบันทึกอัตโนมัติ
 LiteralText,Enable master mode,เปิดใช้งานมาสเตอร์โหมด
 LiteralText,enchanted items,

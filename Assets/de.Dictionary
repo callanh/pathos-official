@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},
 FormatText,Equip {CharacterName},Ausgerüstet {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,Bekanntheit {RecordFame} und {RecordKills} Opfer
 FormatText,Feed which item to {CharacterName}?,Welchser Gegenstand soll verwütert werden an {CharacterName} ?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,Gewinnt {Percent}% Resistenz {ElementName}
 FormatText,gain {TalentName} talent,Erlangt Effekt {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Grüße {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Elfen Stadt
 LiteralText,Elf Town Trove,Schatz der Stadt der Elfen
 LiteralText,else,sonst
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,LEER
 LiteralText,Enable auto save,Automastisches speichern aktivieren
 LiteralText,Enable master mode,Meister Modus aktivieren
 LiteralText,enchanted items,verzauberte Gegenstände

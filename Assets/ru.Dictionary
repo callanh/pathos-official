@@ -2052,6 +2052,7 @@ FormatText,energise {ManaDice},питает энергией {ManaDice}
 FormatText,Equip {CharacterName},Снарядить {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,слава {RecordFame} и {RecordKills} убийств
 FormatText,Feed which item to {CharacterName}?,Чем накормить {CharacterName}?
+FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,получаете {Percent}% сопротивляемости к {ElementName}
 FormatText,gain {TalentName} talent,получаете {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветствуем {CharacterName}, {CharacterDescription}"
@@ -3276,7 +3277,6 @@ LiteralText,Elf Town,Город эльфов
 LiteralText,Elf Town Trove,Сокровищница в городе эльфов
 LiteralText,else,или
 LiteralText,EMAIL,EMAIL
-LiteralText,EMPTY,ПУСТОЙ
 LiteralText,Enable auto save,Авто сохранение
 LiteralText,Enable master mode,Включить режим мастера
 LiteralText,enchanted items,зачарованные вещи

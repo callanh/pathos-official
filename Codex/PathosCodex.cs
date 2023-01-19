@@ -129,6 +129,8 @@ namespace Pathos
 
       Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
 
+      Manifest.Praying.Set(Motions.pray);
+
       Manifest.Complete();
     }
 #endif
@@ -385,24 +387,24 @@ namespace Pathos
 
         foreach (var Use in Item.Uses)
         {
-          if (Use.Motion == Manifest.Motions.eat && !EatMaterialArray.Contains(Item.Material))
+          if (Use.Motion == Codex.Motions.eat && !EatMaterialArray.Contains(Item.Material))
             Record($"Item {Item.Name} is {Item.Material.Name} material which cannot be eaten by any diet.");
 
           if (Use.Apply.HasEffects())
           {
-            if (Use.Motion == Manifest.Motions.zap && Use.Cast == null)
+            if (Use.Motion == Codex.Motions.zap && Use.Cast == null)
               Record($"Item {Item.Name} must have a cast specified for the zap motion.");
           }
           else
           {
-            if (Use.Motion != Manifest.Motions.eat || (Item.Type != ItemType.Tin && Item.Type != ItemType.Egg))
+            if (Use.Motion != Codex.Motions.eat || (Item.Type != ItemType.Tin && Item.Type != ItemType.Egg))
               Record($"Item {Item.Name} Use {Use.Motion} must have some effect.");
           }
 
-          if (Use.Motion != Manifest.Motions.eat && Use.Motion != Manifest.Motions.empty && Use.Consumed && Item.HasCharges())
+          if (Use.Motion != Codex.Motions.eat && Use.Motion != Codex.Motions.empty && Use.Consumed && Item.HasCharges())
             Record($"Item {Item.Name} Use {Use.Motion} should not consume an item that has charges.");
 
-          if (!Use.Consumed && (Use.Motion == Manifest.Motions.quaff/* || Use.Motion == Manifest.Motions.Read || Use.Motion == Manifest.Motions.Study*/))
+          if (!Use.Consumed && (Use.Motion == Codex.Motions.quaff/* || Use.Motion == Codex.Motions.Read || Use.Motion == Codex.Motions.Study*/))
             Record($"Item {Item.Name} Use {Use.Motion} should consume the item.");
 
           CheckApply(Use.Apply, () => $"Item {Item.Name} Use {Use.Motion}.");
@@ -422,7 +424,7 @@ namespace Pathos
         if ((Item.IsMeleeWeapon() || Item.IsRangedWeapon()) && Item.Size < Size.Small)
           Record($"Item {Item.Name} cannot be a tiny weapon.");
 
-        if (Item.IsWeapon() && Item.Weapon.Skill == Manifest.Skills.polearm && Item.Appearance == null && !Item.Artifact)
+        if (Item.IsWeapon() && Item.Weapon.Skill == Codex.Skills.polearm && Item.Appearance == null && !Item.Artifact)
           Record($"Item {Item.Name} must have an appearance because it is a polearm.");
 
         if (Item.DerivativeEntities != null && Item.DerivativeEntities.Count == 0)
@@ -810,6 +812,10 @@ namespace Pathos
       }
       #endregion
 
+      Base.UniqueCheck("Element", Manifest.Elements.List, I => I.Name);
+
+      Base.UniqueCheck("Property", Manifest.Properties.List, I => I.Name);
+
       Base.UniqueCheck("Barrier", Manifest.Barriers.List, I => I.Name);
 
       Base.UniqueCheck("Block", Manifest.Blocks.List, I => I.Name);
@@ -1066,8 +1072,9 @@ namespace Pathos
 
       Base.Register<Codex>();
       Base.Register<Manifest>();
-      Base.Register<ManifestTunnelling>();
       Base.Register<ManifestLevelling>();
+      Base.Register<ManifestPraying>();
+      Base.Register<ManifestTunnelling>();
       Base.Register<ManifestAbolitionReplacement>();
       Base.Register<ManifestIcons>();
       Base.Register<Icon>();
