@@ -28,6 +28,7 @@ namespace Pathos
       var Strikes = Codex.Strikes;
       var Glyphs = Codex.Glyphs; 
       var Sonics = Codex.Sonics;
+      var Skills = Codex.Skills;
 
       Feature AddFeature(string Name, Material Material, Chance RoomChance, Glyph Glyph, Action<FeatureEditor> Action)
       {
@@ -320,9 +321,6 @@ namespace Pathos
         Storage.Locking = true;
         Storage.Preservation = true;
         Storage.ContainedDice = Dice.Zero;
-        Storage.TrappedExplosion = Codex.Explosions.fiery;
-        Storage.TrappedElement = Elements.physical;
-        Storage.TrappedProperty = Properties.stunned;
         Storage.LockSonic = Codex.Sonics.locked;
         Storage.BreakSonic = Codex.Sonics.broken_lock;
       });
@@ -377,6 +375,8 @@ namespace Pathos
         F.Sonic = Sonics.craft;
 
         var Workbench = F.SetWorkbench();
+        Workbench.CraftSkill = Skills.crafting;
+        Workbench.ScrapSkill = Skills.crafting;
 
         /*01*/
         Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false));

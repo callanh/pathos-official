@@ -19,6 +19,7 @@ namespace Pathos
       var Elements = Codex.Elements;
       var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
+      var Skills = Codex.Skills;
 
       Ground AddGround(string Name, Material Substance, Glyph Glyph, Action<GroundEditor> Action)
       {
@@ -37,7 +38,7 @@ namespace Pathos
       {
         G.Description = null;
 
-        G.SetSunken(Inv.Colour.Black.Opacity(0.50F), Element: null, Sonics.thump,
+        G.SetSunken(Inv.Colour.Black.Opacity(0.50F), Element: null, Sonics.thump, Skill: null,
           Enter =>
           {
             Enter.TransitionDescend(Teleport: null, Fixed: true, AdjustmentDice: Dice.One);
@@ -137,7 +138,7 @@ namespace Pathos
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, 
+        G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, Skills.swimming,
           Enter => Enter.Harm(Elements.fire, 100.d10()),
           Drop => Drop.DestroyTargetAsset(CountDice: null)); // TODO: fire resistant items should not be destroyed?
 
@@ -153,7 +154,7 @@ namespace Pathos
         G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertFloor(FromGround: null, ToGround: ice, Locality.Square));
         G.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.stunned, 3.d6()));
 
-        G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact,
+        G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact, Skills.swimming,
           Enter =>
           {
             Enter.Harm(Elements.water, Dice.Zero);

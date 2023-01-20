@@ -14,6 +14,7 @@ namespace Pathos
       : base(Codex.Manifest.Tricks)
     {
       var Strikes = Codex.Strikes;
+      var Skills = Codex.Skills;
 
       Trick AddTrick(string Name, Action<ApplyEditor> Action)
       {
@@ -32,7 +33,7 @@ namespace Pathos
 
       whispered_rumour = AddTrick("whispered rumour", A =>
       {
-        A.Rumour(true, true);
+        A.Rumour(Skills.literacy, Truth: true, Lies: true);
       });
 
       arriving_bats = AddTrick("arriving bats", A =>

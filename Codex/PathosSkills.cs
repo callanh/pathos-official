@@ -47,6 +47,7 @@ namespace Pathos
       literacy = AddSkill(SkillCategory.Utility, "literacy", S =>
       {
         S.Description = null;
+        S.IlliteracyBlocked = true;
       });
 
       locks = AddSkill(SkillCategory.Utility, "locks", S =>
@@ -175,16 +176,7 @@ namespace Pathos
       Register.Alias(disc, "boomerang");
 
       // TODO: skills requiring further abstraction in the engine.
-      Register.bartering = bartering;
-      Register.crafting = crafting;
       Register.dual_wielding = dual_wielding;
-      Register.literacy = literacy;
-      Register.locks = locks;
-      Register.music = music;
-      Register.riding = riding;
-      Register.swimming = swimming;
-      Register.traps = traps;
-      Register.unarmed_combat = unarmed_combat;
     }
 #endif
 

@@ -276,7 +276,6 @@ namespace Pathos
         Storage.ContainedDice = Dice.Zero;
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
-        Storage.TrappedExplosion = null;
         Storage.DumpMotion = Motions.empty;
       });
 
@@ -665,7 +664,7 @@ namespace Pathos
             B =>
             {
               B.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the box.
-              B.Rumour(true, false);
+              B.Rumour(Skills.literacy, Truth: true, Lies: false);
               B.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -709,7 +708,7 @@ namespace Pathos
             U =>
             {
               U.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed));  // curse the box.
-              U.Rumour(true, true);
+              U.Rumour(Skills.literacy, Truth: true, Lies: true);
               U.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -739,7 +738,7 @@ namespace Pathos
             },
             C =>
             {
-              C.Rumour(false, true);
+              C.Rumour(Skills.literacy, Truth: false, Lies: true);
               C.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -3620,7 +3619,7 @@ namespace Pathos
           Item.SetWeakness();
         else
           Item.SetWeakness(BookWeakness);
-        Item.AddLearnSpellUse(Motions.study, Delay.FromTurns(Spell.Level * 10), Sonics.magic, Spell);
+        Item.AddLearnSpellUse(Motions.study, Delay.FromTurns(Spell.Level * 10), Sonics.magic, Attributes.intelligence, Skills.literacy, Spell);
       }
 
       book_of_blank_paper = AddBook("book of blank paper", I =>
@@ -4622,9 +4621,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.Rumour(Truth: true, Lies: false),
-            U => U.Rumour(Truth: true, Lies: true),
-            C => C.Rumour(Truth: false, Lies: true)
+            B => B.Rumour(Skills.literacy, Truth: true, Lies: false),
+            U => U.Rumour(Skills.literacy, Truth: true, Lies: true),
+            C => C.Rumour(Skills.literacy, Truth: false, Lies: true)
           );
           SugarRush(I, A);
         });
@@ -4633,9 +4632,9 @@ namespace Pathos
           A.Consume();
           A.Apply.WithSourceSanctity
           (
-            B => B.Rumour(Truth: true, Lies: false),
-            U => U.Rumour(Truth: true, Lies: true),
-            C => C.Rumour(Truth: false, Lies: true)
+            B => B.Rumour(Skills.literacy, Truth: true, Lies: false),
+            U => U.Rumour(Skills.literacy, Truth: true, Lies: true),
+            C => C.Rumour(Skills.literacy, Truth: false, Lies: true)
           );
         });
       });
@@ -7874,7 +7873,7 @@ namespace Pathos
              .SetTerminates(false); // NOTE: also affects your steed so that they will 'forget' that you are allied.
           Use.Apply.WhenConfused
           (
-            T => T.LearnSpell(Codex.Spells.confusion),
+            T => T.LearnSpell(Attributes.intelligence, Skills.literacy, Codex.Spells.confusion),
             F => F.WithSourceSanctity
             (
               B => B.Amnesia(Range.Sq10),
@@ -9183,7 +9182,6 @@ namespace Pathos
         Storage.ContainedDice = Dice.Zero;
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
-        Storage.TrappedExplosion = null;
         Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(20), Sonics.tool);
@@ -9259,7 +9257,6 @@ namespace Pathos
         Storage.Preservation = false;
         Storage.ContainedDice = Dice.Zero;
         Storage.Compression = 0.5F;
-        Storage.TrappedExplosion = null;
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
         Storage.DumpMotion = Motions.empty;
@@ -9627,6 +9624,7 @@ namespace Pathos
         
         var Storage = I.SetStorage();
         Storage.Locking = true;
+        Storage.Trapping = true;
         Storage.Preservation = false;
         Storage.Compression = 1.0F;
         Storage.ContainedDice = 1.d5();
@@ -9636,9 +9634,6 @@ namespace Pathos
         Storage.BrokenGlyph = Glyphs.chest_broken;
         Storage.BreakSonic = Sonics.broken_lock;
         Storage.EmptyGlyph = Glyphs.chest_empty;
-        Storage.TrappedExplosion = Explosions.fiery;
-        Storage.TrappedElement = Elements.physical;
-        Storage.TrappedProperty = Properties.stunned;
         Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 600, Delay.FromTurns(60), Sonics.tool);
@@ -9817,7 +9812,7 @@ namespace Pathos
             Table.Add(5, T => T.Harm(Elements.magical, 1.d50()));
             Table.Add(5, T => T.ApplyTransient(Properties.petrifying, 3.d100()));
             Table.Add(2, T => T.ConsumeResistance(Elements.petrify));
-            Table.Add(1, T => T.Rumour(true, true));
+            Table.Add(1, T => T.Rumour(Skills.literacy, Truth: true, Lies: true));
             Table.Add(1, T => T.ApplyTransient(Properties.conflict, 3.d20()));
             Table.Add(1, T => T.ApplyTransient(Properties.slow_digestion, 6.d100()));
             Table.Add(1, T => T.ApplyTransient(Properties.warning, 3.d100()));
@@ -9977,7 +9972,6 @@ namespace Pathos
         Storage.ContainedDice = 1.d4();
         Storage.LockSonic = null;
         Storage.BreakSonic = null;
-        Storage.TrappedExplosion = null;
         Storage.DumpMotion = Motions.empty;
 
         //I.AddEat(900, Delay.FromTurns(50), Sonics.tool); // nothing can eat plastic.
@@ -10043,6 +10037,7 @@ namespace Pathos
 
         var Storage = I.SetStorage();
         Storage.Locking = true;
+        Storage.Trapping = true;
         Storage.Preservation = false;
         Storage.Compression = 1.0F;
         Storage.ContainedDice = 1.d3();
@@ -10052,9 +10047,6 @@ namespace Pathos
         Storage.BrokenGlyph = Glyphs.large_box_broken;
         Storage.BreakSonic = Sonics.broken_lock;
         Storage.EmptyGlyph = Glyphs.large_box_empty;
-        Storage.TrappedExplosion = Explosions.fiery;
-        Storage.TrappedElement = Elements.physical;
-        Storage.TrappedProperty = Properties.stunned;
         Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 350, Delay.FromTurns(30), Sonics.tool);

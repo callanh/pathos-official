@@ -68,6 +68,12 @@ namespace Pathos
           {
             EnrolAction(E);
 
+            if (E.IsBase || E.IsAnimate)
+              E.Figure.CombatSkill = Skills.unarmed_combat;
+
+            if (E.Figure.Mountable)
+              E.Figure.MountSkill = Skills.riding;
+
             if (E.CorpseChance != Chance.Never && E.CorpseItem == null)
               E.SetCorpse(E.CorpseChance, E.Figure.Material == Codex.Materials.vegetable ? Codex.Items.vegetable_corpse : Codex.Items.animal_corpse);
 
@@ -117,7 +123,7 @@ namespace Pathos
             if (E.Kind == Kinds.mimic && (E.Concealment == null || !E.Concealment.Mimicry))
               Debug.Fail($"Entity {E.Name} is expected to have mimicry.");
 
-            if ((E.Kind == Kinds.demon || E.Kind == Kinds.vampire || E.Kind == Kinds.lycanthrope) && !E.Chemistry.HasVulnerability(Materials.silver))
+            if ((E.Kind == Kinds.demon || E.Kind == Kinds.vampire || E.Kind == Kinds.lycanthrope) && !E.Chemistry.Vulnerabilities.Contains(Materials.silver))
               Debug.Fail($"Entity {E.Name} is a {E.Kind.Name} and is expected to be marked as vulnerable to silver.");
           });
         });
@@ -10814,7 +10820,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.unarmed_combat); // animate objects do not have any declared attacks, so we need at least unarmed combat skill to attack competently.
         E.Startup.SetTalent(Properties.flight);
         E.SetCorpse(Chance.Never);
       });

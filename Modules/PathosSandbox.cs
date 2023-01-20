@@ -79,7 +79,7 @@ namespace Pathos
       var ContainerAsset = Generator.NewSpecificAsset(ContainerSquare, Generator.ContainerItems.GetRandomOrNull());
       ContainerSquare.PlaceAsset(ContainerAsset);
       ContainerAsset.Container.Locked = true;
-      ContainerAsset.Container.Trapped = true;
+      ContainerAsset.Container.Trap = Generator.NewTrap(Generator.RandomContainerDevice(ContainerSquare));
 
       Generator.PlaceShop(SandboxMap[13, 4], Codex.Shops.List.GetRandom(), 12);
       Generator.PlaceShop(SandboxMap[14, 4], Codex.Shops.List.GetRandom(), 12);

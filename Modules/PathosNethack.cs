@@ -2363,7 +2363,7 @@ namespace Pathos
 
       var Result = Generator.NewSpecificAsset(Square, Item);
       Result.Container.Locked = Item.Storage.Locking && Locked;
-      Result.Container.Trapped = Item.Storage.Trapping && Trapped;
+      Result.Container.Trap = Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
       return Result;
     }
     private void PlaceContainer(Square Square, bool Locked, bool Trapped)
@@ -2383,7 +2383,7 @@ namespace Pathos
     private void StockContainer(Square Square, Storage Storage, Container Container, bool Locked, bool Trapped)
     {
       Container.Locked = Storage.Locking && Locked;
-      Container.Trapped = Storage.Trapping && Trapped;
+      Container.Trap = Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
       StockContainer(Square, Storage, Container);
     }
     private void StockContainer(Square Square, Storage Storage, Container Container)

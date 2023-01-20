@@ -127,9 +127,15 @@ namespace Pathos
         /* 40 */ 2000000
       });
 
-      Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
+      Manifest.Kicking.Set(Attributes.strength, Elements.physical);
 
       Manifest.Praying.Set(Motions.pray);
+
+      Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
+
+      Manifest.Trading.Set(Attributes.charisma, Skills.bartering);
+
+      Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
 
       Manifest.Complete();
     }
@@ -208,7 +214,7 @@ namespace Pathos
     /// <summary>
     /// Name of this register.
     /// </summary>
-    public string Name => Register.Name;    
+    public string Name => Register.Name;
     /// <summary>
     /// A list of everything registered.
     /// </summary>
@@ -538,8 +544,15 @@ namespace Pathos
         if (!Entity.Figure.Limbs && Entity.Startup.Talents.Contains(Codex.Properties.jumping))
           Record($"Entity {Entity.Name} without limbs should not be able to jump.");
 
-        //if (Entity.Figure.Mountable && Entity.Startup.Talents.Contains(Codex.Properties.Jumping))
-        //  Record($"Entity {Entity.Name} that can be mounted is not expected to be able to jump.");
+        if (Entity.Figure.Mountable && Entity.Figure.MountSkill == null)
+          Record($"Entity {Entity.Name} that can be mounted is expected to have a mount skill.");
+        else if (!Entity.Figure.Mountable && Entity.Figure.MountSkill != null)
+          Record($"Entity {Entity.Name} that cannot be mounted is not expected to have a mount skill.");
+
+        if ((Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill == null)
+          Record($"Entity {Entity.Name} is expected to have a combat skill.");
+        else if (!(Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill != null)
+          Record($"Entity {Entity.Name} is not expected to have a combat skill.");
 
         if (Entity.GreaterEntity() != null)
         {
@@ -666,11 +679,11 @@ namespace Pathos
 
         if (Entity.Terrains == null)
           Record($"Entity {Entity.Name} must have a terrain set");
-        else if ((Entity.HasOnlyTerrain(Codex.Materials.water) || Entity.HasOnlyTerrain(Codex.Materials.lava)) && !Entity.Startup.HasSkill(Manifest.Skills.swimming))
+        else if ((Entity.HasOnlyTerrain(Codex.Materials.water) || Entity.HasOnlyTerrain(Codex.Materials.lava)) && !Entity.Startup.HasSkill(Codex.Skills.swimming))
           Record($"Entity {Entity.Name} with water terrain must have skill in swimming.");
 
-        if (!Entity.IsBase && Entity.Startup.Grimoires.Count > 0 && !Entity.Startup.HasSkill(Manifest.Skills.literacy))
-          Record($"Entity {Entity.Name} has grimoire spells but not skilled in {Manifest.Skills.literacy.Name}.");
+        if (!Entity.IsBase && Entity.Startup.Grimoires.Count > 0 && !Entity.Startup.HasSkill(Codex.Skills.literacy))
+          Record($"Entity {Entity.Name} has grimoire spells but not skilled in {Codex.Skills.literacy.Name}.");
 
         var SpellIndex = 0;
         foreach (var Grimoire in Entity.Startup.Grimoires)
@@ -1073,7 +1086,10 @@ namespace Pathos
       Base.Register<Codex>();
       Base.Register<Manifest>();
       Base.Register<ManifestLevelling>();
+      Base.Register<ManifestKicking>();
       Base.Register<ManifestPraying>();
+      Base.Register<ManifestSearching>();
+      Base.Register<ManifestTrading>();
       Base.Register<ManifestTunnelling>();
       Base.Register<ManifestAbolitionReplacement>();
       Base.Register<ManifestIcons>();

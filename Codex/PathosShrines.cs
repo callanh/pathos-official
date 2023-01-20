@@ -23,6 +23,8 @@ namespace Pathos
       var Elements = Codex.Elements;
       var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
+      var Skills = Codex.Skills;
+      var Attributes = Codex.Attributes;
 
       var MaleNameArray = new string[]
       {
@@ -320,7 +322,7 @@ namespace Pathos
           B.Description = "Learn how to cast a random spell.";
           B.Cost = 750;
           B.SetCast().Plain(Dice.One);
-          B.Apply.LearnSpell(null);
+          B.Apply.LearnSpell(Attributes.intelligence, Skills.literacy, Spell: null);
         });
 
         //S.AddBoon("life insurance", B =>
