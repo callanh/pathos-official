@@ -935,7 +935,6 @@ EffectProperty,expansive,genişleyici
 EffectProperty,fixed,
 EffectProperty,floor,zemin
 EffectProperty,hordes,ordular
-EffectProperty,is lit,ateşlendi
 EffectProperty,items,eşyalar
 EffectProperty,kinds,türler
 EffectProperty,lies,yalanlar
@@ -993,7 +992,6 @@ EffectType,create horde,ordu yarat
 EffectType,create nook,kuytu köşe yarat
 EffectType,create trap,tuzak yarat
 EffectType,create wall,duvar yarat
-EffectType,death,ölüm
 EffectType,decapitate,uzuv kaybet
 EffectType,decrease ability,kabiliyeti azalt
 EffectType,degrade,indirge
@@ -1023,14 +1021,12 @@ EffectType,increase ability,kabiliyeti yükselt
 EffectType,karma,karma
 EffectType,learn spell,büyü öğren
 EffectType,liberate,özgürleştir
-EffectType,light,ışık
 EffectType,locking,kilitle
 EffectType,lose skill,beceri kaybet
 EffectType,lose talent,yetenek kaybet
 EffectType,malnutrition,yetersiz beslenme
 EffectType,mapping,haritalamak
 EffectType,murder,katlet
-EffectType,nothing,hiçbir şey
 EffectType,nutrition,beslenme
 EffectType,opening,açıklık
 EffectType,pacify,sakinleştir
@@ -1064,6 +1060,7 @@ EffectType,unpunish,ceza kaldır
 EffectType,visit shop,dükkana git
 EffectType,visit shrine,tapınağa git
 EffectType,visit zoo,habitata git
+EffectType,vomit,
 EffectType,warping,ışınlan
 EggName,black dragon,siyah ejderha
 EggName,blue dragon,mavi ejderha

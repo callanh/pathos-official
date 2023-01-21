@@ -935,7 +935,6 @@ EffectProperty,expansive,大型生物
 EffectProperty,fixed,被抓住
 EffectProperty,floor,樓層
 EffectProperty,hordes,群
-EffectProperty,is lit,被照亮
 EffectProperty,items,物品
 EffectProperty,kinds,種類
 EffectProperty,lies,假流言
@@ -993,7 +992,6 @@ EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
 EffectType,create trap,製造陷阱
 EffectType,create wall,製造牆壁
-EffectType,death,殺死
 EffectType,decapitate,斬首
 EffectType,decrease ability,能力降低
 EffectType,degrade,降級
@@ -1023,14 +1021,12 @@ EffectType,increase ability,提高能力
 EffectType,karma,運氣
 EffectType,learn spell,習得咒語
 EffectType,liberate,解放
-EffectType,light,光明
 EffectType,locking,鎖住
 EffectType,lose skill,失去技能
 EffectType,lose talent,失去天賦
 EffectType,malnutrition,降低營養
 EffectType,mapping,地圖繪製
 EffectType,murder,秒殺
-EffectType,nothing,無特殊效果
 EffectType,nutrition,營養
 EffectType,opening,開啟
 EffectType,pacify,平靜
@@ -1064,6 +1060,7 @@ EffectType,unpunish,取消懲罰
 EffectType,visit shop,訪問商店
 EffectType,visit shrine,訪問神龕
 EffectType,visit zoo,訪問動物園
+EffectType,vomit,
 EffectType,warping,傳送
 EggName,black dragon,黑龍
 EggName,blue dragon,藍龍

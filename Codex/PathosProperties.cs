@@ -56,7 +56,7 @@ namespace Pathos
       {
         P.Description = "This impairment of vision means you can only see things in a very close proximity.";
         P.Unwanted = true;
-        P.Visionless = true;
+        P.VisionPrevented = true;
         P.PickupInterfering = true;
         P.ComplicateUntrapping = true;
         P.VisionImpairing = true;
@@ -110,6 +110,7 @@ namespace Pathos
         P.Description = "This profound hearing impairment has cut you off from the audible world.";
         P.Unwanted = true;
         P.ComplicateUntrapping = true;
+        P.HearingPrevented = true;
       });
 
       deflection = AddProperty("deflection", P =>
@@ -131,7 +132,7 @@ namespace Pathos
         P.Unwanted = true;
         P.Motionless = true;
         P.Unconscious = true;
-        P.Visionless = true;
+        P.VisionPrevented = true;
       });
 
       fear = AddProperty("fear", P =>
@@ -294,6 +295,19 @@ namespace Pathos
       {
         P.Description = "You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.";
         P.Unwanted = true;
+        P.SetSymptom(Chance.OneIn10, A =>
+        {
+          A.WhenProbability(Table =>
+          {
+            Table.Add(15, T => T.Vomit(5.d10()));
+            Table.Add(15, T => T.ApplyTransient(fainting, 2.d5()));
+            Table.Add(15, T => T.ApplyTransient(confusion, 3.d5()));
+            Table.Add(15, T => T.ApplyTransient(fumbling, 3.d10()));
+            Table.Add(15, T => T.ApplyTransient(blindness, 3.d5()));
+            Table.Add(15, T => T.ApplyTransient(deafness, 3.d10()));
+            Table.Add(10, T => T.ApplyTransient(hallucination, 3.d5()));
+          });
+        });
       });
 
       silence = AddProperty("silence", P =>
@@ -311,7 +325,7 @@ namespace Pathos
         P.Unwanted = true;
         P.Motionless = true;
         P.Unconscious = true;
-        P.Visionless = true;
+        P.VisionPrevented = true;
         P.DecreasedMetabolism = true;
       });
 

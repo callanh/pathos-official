@@ -935,7 +935,6 @@ EffectProperty,expansive,большого
 EffectProperty,fixed,фиксированный
 EffectProperty,floor,пол
 EffectProperty,hordes,орды
-EffectProperty,is lit,зажжён
 EffectProperty,items,вещи
 EffectProperty,kinds,виды
 EffectProperty,lies,враньё
@@ -993,7 +992,6 @@ EffectType,create horde,создаёт орду
 EffectType,create nook,создаёт тайную
 EffectType,create trap,создаёт ловушку
 EffectType,create wall,создаёт стену
-EffectType,death,смерть
 EffectType,decapitate,отрубает голову
 EffectType,decrease ability,уменьшает значение характеристики
 EffectType,degrade,понижает
@@ -1023,14 +1021,12 @@ EffectType,increase ability,увеличивает значение характ
 EffectType,karma,карма
 EffectType,learn spell,учит заклинание
 EffectType,liberate,освобождает
-EffectType,light,свет
 EffectType,locking,запирает
 EffectType,lose skill,теряет навык
 EffectType,lose talent,теряет талант
 EffectType,malnutrition,недоедание
 EffectType,mapping,карта
 EffectType,murder,убивает
-EffectType,nothing,ничего не происходит
 EffectType,nutrition,питание
 EffectType,opening,открытие
 EffectType,pacify,усмирён
@@ -1064,6 +1060,7 @@ EffectType,unpunish,снятие наказания
 EffectType,visit shop,посещение магазина
 EffectType,visit shrine,посещение храма
 EffectType,visit zoo,посещение зоопарка
+EffectType,vomit,
 EffectType,warping,искривление
 EggName,black dragon,чёрный дракон
 EggName,blue dragon,синий дракон

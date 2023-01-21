@@ -935,7 +935,6 @@ EffectProperty,expansive,nở ra
 EffectProperty,fixed,gắn chặt
 EffectProperty,floor,sàn
 EffectProperty,hordes,đám
-EffectProperty,is lit,được thắp sáng
 EffectProperty,items,các vật phẩm
 EffectProperty,kinds,các loại
 EffectProperty,lies,nằm trên
@@ -993,7 +992,6 @@ EffectType,create horde,tạo bầy đám
 EffectType,create nook,tạo nắm cửa
 EffectType,create trap,tạo bẫy
 EffectType,create wall,tạo tường
-EffectType,death,chết
 EffectType,decapitate,chặt đầu
 EffectType,decrease ability,giảm chỉ số
 EffectType,degrade,xuống cấp
@@ -1023,14 +1021,12 @@ EffectType,increase ability,tăng chỉ số
 EffectType,karma,nghiệp
 EffectType,learn spell,học phép thuật
 EffectType,liberate,thả ra
-EffectType,light,ánh sáng
 EffectType,locking,khóa
 EffectType,lose skill,mất kĩ năng
 EffectType,lose talent,mất tài năng
 EffectType,malnutrition,suy dinh dưỡng
 EffectType,mapping,lập bản đồ
 EffectType,murder,giết
-EffectType,nothing,không gì cả
 EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
 EffectType,pacify,thỏa hiệp
@@ -1064,6 +1060,7 @@ EffectType,unpunish,loại bỏ trừng phạt
 EffectType,visit shop,ghé cửa hàng
 EffectType,visit shrine,ghé điện thờ
 EffectType,visit zoo,ghé vườn thú
+EffectType,vomit,
 EffectType,warping,cong vênh
 EggName,black dragon,rồng đen
 EggName,blue dragon,rồng xanh dương

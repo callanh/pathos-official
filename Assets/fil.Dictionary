@@ -935,7 +935,6 @@ EffectProperty,expansive,
 EffectProperty,fixed,
 EffectProperty,floor,
 EffectProperty,hordes,
-EffectProperty,is lit,
 EffectProperty,items,
 EffectProperty,kinds,
 EffectProperty,lies,
@@ -993,7 +992,6 @@ EffectType,create horde,paggawa ng horde
 EffectType,create nook,paggawa ng nook
 EffectType,create trap,paggawa ng trap
 EffectType,create wall,paggawa ng pader
-EffectType,death,kamatayan
 EffectType,decapitate,
 EffectType,decrease ability,pagkabawas ng ability
 EffectType,degrade,pag-degrade
@@ -1023,14 +1021,12 @@ EffectType,increase ability,pagdagdag ng ability
 EffectType,karma,
 EffectType,learn spell,pagkatuto sa skill
 EffectType,liberate,pag-liberate
-EffectType,light,pag-ilaw
 EffectType,locking,pag-lock
 EffectType,lose skill,pagkawala ng skill
 EffectType,lose talent,pagkawala ng talent
 EffectType,malnutrition,
 EffectType,mapping,pagmamap
 EffectType,murder,pag-murder
-EffectType,nothing,
 EffectType,nutrition,
 EffectType,opening,pagbukas
 EffectType,pacify,pag-pacify
@@ -1064,6 +1060,7 @@ EffectType,unpunish,
 EffectType,visit shop,pagbisita sa shop
 EffectType,visit shrine,pagbisita sa shrine
 EffectType,visit zoo,pagbisita sa zoo
+EffectType,vomit,
 EffectType,warping,
 EggName,black dragon,item na dragon
 EggName,blue dragon,bughaw na dragon

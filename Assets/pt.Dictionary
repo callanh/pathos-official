@@ -935,7 +935,6 @@ EffectProperty,expansive,expansivo
 EffectProperty,fixed,consertado
 EffectProperty,floor,piso
 EffectProperty,hordes,hordas
-EffectProperty,is lit,está aceso
 EffectProperty,items,itens
 EffectProperty,kinds,tipos
 EffectProperty,lies,mentiras
@@ -993,7 +992,6 @@ EffectType,create horde,criar horda
 EffectType,create nook,criar recanto
 EffectType,create trap,criar armadilha
 EffectType,create wall,criar parede
-EffectType,death,morte
 EffectType,decapitate,decapitar
 EffectType,decrease ability,diminuir atributo
 EffectType,degrade,degradar
@@ -1023,14 +1021,12 @@ EffectType,increase ability,aumentar atributo
 EffectType,karma,carma
 EffectType,learn spell,aprender magia
 EffectType,liberate,liberar
-EffectType,light,luz
 EffectType,locking,travamento
 EffectType,lose skill,perder habilidade
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrição
 EffectType,mapping,mapeamento
 EffectType,murder,assassinar
-EffectType,nothing,nada
 EffectType,nutrition,nutrição
 EffectType,opening,abertura
 EffectType,pacify,pacificar
@@ -1064,6 +1060,7 @@ EffectType,unpunish,purgar punição
 EffectType,visit shop,visitar loja
 EffectType,visit shrine,visitar santuário
 EffectType,visit zoo,visitar zoologico
+EffectType,vomit,
 EffectType,warping,deformar
 EggName,black dragon,dragão negro
 EggName,blue dragon,dragão azul

@@ -935,7 +935,6 @@ EffectProperty,expansive,拡張性
 EffectProperty,fixed,固定位置
 EffectProperty,floor,床
 EffectProperty,hordes,大群
-EffectProperty,is lit,点灯している
 EffectProperty,items,アイテム
 EffectProperty,kinds,種類
 EffectProperty,lies,うそをつく
@@ -993,7 +992,6 @@ EffectType,create horde,大群を作成する
 EffectType,create nook,隠し小路を作成
 EffectType,create trap,罠を作成する
 EffectType,create wall,壁を作成
-EffectType,death,死
 EffectType,decapitate,首はね
 EffectType,decrease ability,能力を下げる
 EffectType,degrade,劣化する
@@ -1023,14 +1021,12 @@ EffectType,increase ability,能力を上げる
 EffectType,karma,カルマ
 EffectType,learn spell,呪文を学ぶ
 EffectType,liberate,解放する
-EffectType,light,灯り
 EffectType,locking,施錠
 EffectType,lose skill,スキルを失う
 EffectType,lose talent,才能を失う
 EffectType,malnutrition,栄養失調
 EffectType,mapping,地図作製
 EffectType,murder,殺人
-EffectType,nothing,何もない
 EffectType,nutrition,栄養
 EffectType,opening,開錠
 EffectType,pacify,鎮める
@@ -1064,6 +1060,7 @@ EffectType,unpunish,罰する
 EffectType,visit shop,お店を訪問
 EffectType,visit shrine,お宮参り
 EffectType,visit zoo,動物園を訪問
+EffectType,vomit,
 EffectType,warping,折り返し
 EggName,black dragon,ブラックドラゴン
 EggName,blue dragon,ブルードラゴン

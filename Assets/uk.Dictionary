@@ -935,7 +935,6 @@ EffectProperty,expansive,просторний
 EffectProperty,fixed,
 EffectProperty,floor,підлога
 EffectProperty,hordes,орди
-EffectProperty,is lit,запалено
 EffectProperty,items,речі
 EffectProperty,kinds,види
 EffectProperty,lies,брехня
@@ -993,7 +992,6 @@ EffectType,create horde,створює орду
 EffectType,create nook,створити затишне містечко
 EffectType,create trap,створює пастку
 EffectType,create wall,створити стіну
-EffectType,death,смерть
 EffectType,decapitate,
 EffectType,decrease ability,зменшує значення характеристики
 EffectType,degrade,погіршитися
@@ -1023,14 +1021,12 @@ EffectType,increase ability,збільшує характеристику
 EffectType,karma,карма
 EffectType,learn spell,вчить заклинання
 EffectType,liberate,звільняє
-EffectType,light,світло
 EffectType,locking,замикає
 EffectType,lose skill,віднімає навичку
 EffectType,lose talent,віднімає талант
 EffectType,malnutrition,недоїдання
 EffectType,mapping,картографує
 EffectType,murder,вбиває:
-EffectType,nothing,нічого не відбувається
 EffectType,nutrition,харчування
 EffectType,opening,відкривання
 EffectType,pacify,вмиротворює
@@ -1064,6 +1060,7 @@ EffectType,unpunish,відмінити покарання
 EffectType,visit shop,відвідати крамницю
 EffectType,visit shrine,відвідати святилище
 EffectType,visit zoo,відвідати зоопарк
+EffectType,vomit,
 EffectType,warping,скручує
 EggName,black dragon,чорний дракон
 EggName,blue dragon,синій дракон

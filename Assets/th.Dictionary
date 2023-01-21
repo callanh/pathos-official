@@ -935,7 +935,6 @@ EffectProperty,expansive,
 EffectProperty,fixed,
 EffectProperty,floor,ฟื้น
 EffectProperty,hordes,กลุ่ม
-EffectProperty,is lit,
 EffectProperty,items,ไอเท็ม
 EffectProperty,kinds,
 EffectProperty,lies,
@@ -993,7 +992,6 @@ EffectType,create horde,สร้างกลุ่ม
 EffectType,create nook,
 EffectType,create trap,สร้างกับดัก
 EffectType,create wall,
-EffectType,death,ความตาย
 EffectType,decapitate,
 EffectType,decrease ability,ลดความสามารถ
 EffectType,degrade,ลดคุณภาพ
@@ -1023,14 +1021,12 @@ EffectType,increase ability,เพิ่มความสามารถ
 EffectType,karma,กรรม
 EffectType,learn spell,เรียนเวท
 EffectType,liberate,
-EffectType,light,แสง
 EffectType,locking,
 EffectType,lose skill,สูญเสียทักษะ
 EffectType,lose talent,สูญเสียพรสวรรค์
 EffectType,malnutrition,
 EffectType,mapping,แผนที่
 EffectType,murder,ฆาตกรรม
-EffectType,nothing,ไม่มีอะไร
 EffectType,nutrition,โภชนาการ
 EffectType,opening,เปิด
 EffectType,pacify,
@@ -1064,6 +1060,7 @@ EffectType,unpunish,
 EffectType,visit shop,เยี่ยมร้านค้า
 EffectType,visit shrine,เยี่ยมสถานที่บูชา
 EffectType,visit zoo,เยี่ยมสวยสัตว์
+EffectType,vomit,
 EffectType,warping,
 EggName,black dragon,มังกรดำ
 EggName,blue dragon,มังกรฟ้า

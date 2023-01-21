@@ -1273,7 +1273,6 @@ namespace Pathos
       Base.Register<Portal>();
       Base.Register<Precept>();
       Base.Register<Property>();
-      Base.Register<PropertyImmunity>();
       Base.Register<Punishment>();
       Base.Register<Qualification>();
       Base.Register<Race>();

@@ -935,7 +935,6 @@ EffectProperty,expansive,값비싼
 EffectProperty,fixed,수리됨
 EffectProperty,floor,바닥
 EffectProperty,hordes,군단
-EffectProperty,is lit,밝혀짐
 EffectProperty,items,아이템
 EffectProperty,kinds,종류
 EffectProperty,lies,거짓
@@ -993,7 +992,6 @@ EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
 EffectType,create trap,함정 생성
 EffectType,create wall,벽 생성
-EffectType,death,죽음
 EffectType,decapitate,참수
 EffectType,decrease ability,능력치 감소
 EffectType,degrade,약화
@@ -1023,14 +1021,12 @@ EffectType,increase ability,능력치 향상
 EffectType,karma,카르마
 EffectType,learn spell,주문 학습
 EffectType,liberate,해방
-EffectType,light,빛
 EffectType,locking,잠금
 EffectType,lose skill,스킬 손실
 EffectType,lose talent,재능 손실
 EffectType,malnutrition,영양 손실
 EffectType,mapping,매핑
 EffectType,murder,살해
-EffectType,nothing,효과 없음
 EffectType,nutrition,영양 섭취
 EffectType,opening,개방
 EffectType,pacify,진정
@@ -1064,6 +1060,7 @@ EffectType,unpunish,형벌 해제
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
+EffectType,vomit,
 EffectType,warping,워프
 EggName,black dragon,블랙 드래곤
 EggName,blue dragon,블루 드래곤

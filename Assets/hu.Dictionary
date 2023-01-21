@@ -935,7 +935,6 @@ EffectProperty,expansive,terjedő
 EffectProperty,fixed,fixált
 EffectProperty,floor,padló
 EffectProperty,hordes,hordák
-EffectProperty,is lit,ég
 EffectProperty,items,tárgyak
 EffectProperty,kinds,fajták
 EffectProperty,lies,hazugságok
@@ -993,7 +992,6 @@ EffectType,create horde,hordát hoz létre
 EffectType,create nook,bemélyedést hoz létre:
 EffectType,create trap,csapdát hoz létre
 EffectType,create wall,falat hoz létre
-EffectType,death,halál
 EffectType,decapitate,lefejezés
 EffectType,decrease ability,adottság csökkenése:
 EffectType,degrade,gyengítés
@@ -1023,14 +1021,12 @@ EffectType,increase ability,adottságnövelés
 EffectType,karma,karma
 EffectType,learn spell,megtanult varázslat:
 EffectType,liberate,felszabadítás
-EffectType,light,fény
 EffectType,locking,zárás
 EffectType,lose skill,képesség elvesztése
 EffectType,lose talent,készség elvesztése
 EffectType,malnutrition,alultápláltság
 EffectType,mapping,feltérképezés
 EffectType,murder,gyilkosság
-EffectType,nothing,semmi
 EffectType,nutrition,táplálás
 EffectType,opening,kinyitás
 EffectType,pacify,nyugtatás
@@ -1064,6 +1060,7 @@ EffectType,unpunish,büntetlenség
 EffectType,visit shop,bolt meglátogatása
 EffectType,visit shrine,szentély meglátogatása
 EffectType,visit zoo,terem meglátogatása
+EffectType,vomit,
 EffectType,warping,eltévelyedés
 EggName,black dragon,feketesárkány
 EggName,blue dragon,kéksárkány
