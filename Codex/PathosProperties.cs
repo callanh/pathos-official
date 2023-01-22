@@ -50,6 +50,13 @@ namespace Pathos
       berserking = AddProperty("berserking", P =>
       {
         P.Description = "You feel unstable like you could be consumed with rage at any time.";
+        P.SetSymptom(Chance.OneIn85, S =>
+        {
+          S.UnlessTargetHasProperty(rage, U =>
+          {
+            U.ApplyTransient(rage, 1.d20() + 5);
+          });
+        });
       });
 
       blindness = AddProperty("blindness", P =>
@@ -97,6 +104,7 @@ namespace Pathos
         P.PreventCasting = true;
         P.ComplicateUntrapping = true;
         P.ConcentrationImpairing = true;
+        P.StaggerChance = Chance.OneIn5;
       });
 
       dark_vision = AddProperty("dark vision", P =>
@@ -219,6 +227,22 @@ namespace Pathos
       {
         P.Description = "Suddenly you will fall asleep until you wake or are woken.";
         P.Unwanted = true;
+        P.SetSymptom(Chance.OneIn85, A =>
+        {
+          A.UnlessTargetHasProperty(sleeping, S =>
+          {
+            // slowness will be applied instead if sleep is resisted.
+
+            S.WhenTargetResistant(Elements.sleep, T =>
+            {
+              T.IntentionalTransient(slowness, 1.d20() + 5);
+            },
+            E =>
+            {
+              E.IntentionalTransient(sleeping, 1.d20() + 5);
+            });            
+          });
+        });
       });
 
       paralysis = AddProperty("paralysis", P =>
@@ -297,16 +321,18 @@ namespace Pathos
         P.Unwanted = true;
         P.SetSymptom(Chance.OneIn10, A =>
         {
-          A.WhenProbability(Table =>
-          {
-            Table.Add(15, T => T.Vomit(5.d10()));
-            Table.Add(15, T => T.ApplyTransient(fainting, 2.d5()));
-            Table.Add(15, T => T.ApplyTransient(confusion, 3.d5()));
-            Table.Add(15, T => T.ApplyTransient(fumbling, 3.d10()));
-            Table.Add(15, T => T.ApplyTransient(blindness, 3.d5()));
-            Table.Add(15, T => T.ApplyTransient(deafness, 3.d10()));
-            Table.Add(10, T => T.ApplyTransient(hallucination, 3.d5()));
-          });
+          A.WhenSourceNotHasProperty(fainting,
+            T => T.WhenProbability(Table =>
+            {
+              Table.Add(15, P => P.Vomit(5.d10()));
+              Table.Add(15, P => P.ApplyTransient(fainting, 2.d5()));
+              Table.Add(15, P => P.ApplyTransient(confusion, 3.d5()));
+              Table.Add(15, P => P.ApplyTransient(fumbling, 3.d10()));
+              Table.Add(15, P => P.ApplyTransient(blindness, 3.d5()));
+              Table.Add(15, P => P.ApplyTransient(deafness, 3.d10()));
+              Table.Add(10, P => P.ApplyTransient(hallucination, 3.d5()));
+            })
+          );
         });
       });
 
@@ -366,6 +392,7 @@ namespace Pathos
         P.ComplicateUntrapping = true;
         P.VisionImpairing = true; // can't see straight.
         P.ConcentrationImpairing = true;
+        P.StaggerChance = Chance.Always;
       });
 
       sustain_ability = AddProperty("sustain ability", P =>
@@ -434,8 +461,6 @@ namespace Pathos
 
       // TODO: properties requiring further abstraction in the engine.
       Register.aggravation = aggravation;
-      Register.berserking = berserking;
-      Register.blindness = blindness;
       Register.blinking = blinking;
       Register.cannibalism = cannibalism;
       Register.clairvoyance = clairvoyance;
@@ -443,7 +468,6 @@ namespace Pathos
       Register.conflict = conflict;
       Register.confusion = confusion;
       Register.dark_vision = dark_vision;
-      Register.deafness = deafness;
       Register.displacement = displacement;
       Register.fainting = fainting;
       Register.fear = fear;
@@ -456,22 +480,17 @@ namespace Pathos
       Register.jumping = jumping;
       Register.levitation = levitation;
       Register.lifesaving = lifesaving;
-      Register.narcolepsy = narcolepsy;
       Register.paralysis = paralysis;
       Register.petrifying = petrifying;
       Register.phasing = phasing;
       Register.rage = rage;
       Register.reflection = reflection;
       Register.see_invisible = see_invisible;
-      Register.sickness = sickness;
       Register.sleeping = sleeping;
-      Register.slowness = slowness;
       Register.stunned = stunned;
       Register.sustain_ability = sustain_ability;
       Register.telekinesis = telekinesis;
       Register.telepathy = telepathy;
-      Register.teleportation = teleportation;
-      Register.teleport_control = teleport_control;
       Register.warning = warning;
     }
 #endif

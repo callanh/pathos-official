@@ -938,6 +938,7 @@ EffectProperty,hordes,군단
 EffectProperty,items,아이템
 EffectProperty,kinds,종류
 EffectProperty,lies,거짓
+EffectProperty,loyal only,
 EffectProperty,material,재질
 EffectProperty,materials,물질
 EffectProperty,objects,사물
@@ -1018,6 +1019,7 @@ EffectType,identify,식별
 EffectType,impersonate,사칭
 EffectType,incarcerate,투옥
 EffectType,increase ability,능력치 향상
+EffectType,intentional transient,
 EffectType,karma,카르마
 EffectType,learn spell,주문 학습
 EffectType,liberate,해방
@@ -1038,6 +1040,7 @@ EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
 EffectType,remove transient,일시적인 효과 제거
+EffectType,replenish,
 EffectType,replicate asset,아이템 복제
 EffectType,restock,재충전
 EffectType,restore ability,능력치 복구
@@ -1045,7 +1048,6 @@ EffectType,rumour,루머
 EffectType,sacrifice,희생
 EffectType,sanctify,신성화
 EffectType,searching,수색
-EffectType,sleep,수면
 EffectType,spawn character,캐릭터 생성
 EffectType,steal,훔치기
 EffectType,summon entity,개체 소환
@@ -1057,6 +1059,7 @@ EffectType,transition,층 이동
 EffectType,unafflict,감염 해제
 EffectType,unpolymorph,폴리모프 해제
 EffectType,unpunish,형벌 해제
+EffectType,unstuck,
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},잠겨진 {GATENAME}
 FormatText,not {EffectProperty},{EffectProperty}가 아님
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName}, {CharacterDescription}이(가) 부활했다."
 FormatText,retaliate {Chance} {AttackType},"{AttackType}일 시, {Chance}(으)로 되돌려줌"
 FormatText,retaliate {Chance} on death {AttackType},{AttackType}로 사망 시 {Chance}(으)로 되돌려줌
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME} 재질일 때
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} 상태일 때
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} 상태일 때
 FormatText,when {Something},{Something} 경우
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,이 문은 단단한 결정체로 이루어져있어서 쉽게 부서지지 않는다.
 GateName,crystal door,크리스탈 문
 GateName,wooden door,나무 문
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,목이 졸렸다
 LiteralText,weakness to,약점 :
 LiteralText,weight,무게
 LiteralText,when afflicted,감염 받을 시
+LiteralText,when confused,
 LiteralText,when dropped,떨어뜨릴 시
 LiteralText,when entered,들어갔을 때
 LiteralText,when exhausted,발동횟수 소진시

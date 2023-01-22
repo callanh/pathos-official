@@ -938,6 +938,7 @@ EffectProperty,hordes,орды
 EffectProperty,items,вещи
 EffectProperty,kinds,виды
 EffectProperty,lies,враньё
+EffectProperty,loyal only,
 EffectProperty,material,материал
 EffectProperty,materials,материалы
 EffectProperty,objects,предметы
@@ -1018,6 +1019,7 @@ EffectType,identify,опознаёт
 EffectType,impersonate,имитирует
 EffectType,incarcerate,заточает
 EffectType,increase ability,увеличивает значение характеристики
+EffectType,intentional transient,
 EffectType,karma,карма
 EffectType,learn spell,учит заклинание
 EffectType,liberate,освобождает
@@ -1038,6 +1040,7 @@ EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
 EffectType,remove transient,снимает временное
+EffectType,replenish,
 EffectType,replicate asset,копирует ценность
 EffectType,restock,пополняет запасы
 EffectType,restore ability,восстанавливает значение характеристики
@@ -1045,7 +1048,6 @@ EffectType,rumour,слухи
 EffectType,sacrifice,приносит в жертву
 EffectType,sanctify,наделяет
 EffectType,searching,ищет
-EffectType,sleep,спать
 EffectType,spawn character,порождает персонажа
 EffectType,steal,ворует
 EffectType,summon entity,призывает существо
@@ -1057,6 +1059,7 @@ EffectType,transition,переход
 EffectType,unafflict,исцеляет от заражения
 EffectType,unpolymorph,возвращает истинную форму
 EffectType,unpunish,снятие наказания
+EffectType,unstuck,
 EffectType,visit shop,посещение магазина
 EffectType,visit shrine,посещение храма
 EffectType,visit zoo,посещение зоопарка
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},ЗАПЕРТЫЙ {GATENAME}
 FormatText,not {EffectProperty},не {EffectProperty}
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Воскрешён {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},мстит {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},мстит {Chance} о смерти {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},когда {MATERIALNAME}
 FormatText,when {PROPERTYNAME},когда {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},когда {SANCTITYNAME}
 FormatText,when {Something},когда {Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Эта тяжёлая дверь создана из кристальных образований и поэтому её будет не просто сломать.
 GateName,crystal door,кристальная дверь
 GateName,wooden door,деревянная дверь
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,был задушен
 LiteralText,weakness to,слабость к
 LiteralText,weight,вес
 LiteralText,when afflicted,когда поражён
+LiteralText,when confused,
 LiteralText,when dropped,при сбрасывании
 LiteralText,when entered,когда вошли
 LiteralText,when exhausted,когда израсходована

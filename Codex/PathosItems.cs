@@ -776,7 +776,7 @@ namespace Pathos
                 Table.Add(10, A =>
                 {
                   A.CreateFixture(Codex.Features.pentagram);
-                  A.RaiseDead(Percent: 100, Corrupt: true);
+                  A.RaiseDead(Percent: 100, Corrupt: true, LoyalOnly: false);
                   A.CreateEntity(1.d3(), Entities.ghost);
                 });
                 Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
@@ -5205,12 +5205,11 @@ namespace Pathos
           (
             B =>
             {
-              B.Heal(Dice.Fixed(1000), Modifier.Zero);
-              B.Energise(Dice.Fixed(1000), Modifier.Zero);
+              B.Replenish(0F, 0F); // full life and mana.
             },
             U =>
             {
-              U.Heal(Dice.Fixed(1000), Modifier.Zero);
+              U.Replenish(0F, 100F); // full life.
             },
             C =>
             {
@@ -8802,9 +8801,9 @@ namespace Pathos
             T => T.CreateEntity(1.d4(), Kinds.Undead.ToArray()),
             F => F.WithSourceSanctity
             (
-              B => B.RaiseDead(Percent: 100, Corrupt: false),
-              U => U.RaiseDead(Percent: 50, Corrupt: false),
-              C => C.RaiseDead(Percent: 100, Corrupt: true)
+              B => B.RaiseDead(Percent: 100, Corrupt: false, LoyalOnly: false),
+              U => U.RaiseDead(Percent: 50, Corrupt: false, LoyalOnly: false),
+              C => C.RaiseDead(Percent: 100, Corrupt: true, LoyalOnly: false)
             )
           );
         });

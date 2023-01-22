@@ -938,6 +938,7 @@ EffectProperty,hordes,群
 EffectProperty,items,物品
 EffectProperty,kinds,種類
 EffectProperty,lies,假流言
+EffectProperty,loyal only,
 EffectProperty,material,材料
 EffectProperty,materials,材料
 EffectProperty,objects,物品
@@ -1018,6 +1019,7 @@ EffectType,identify,鑒定
 EffectType,impersonate,模仿
 EffectType,incarcerate,禁錮
 EffectType,increase ability,提高能力
+EffectType,intentional transient,
 EffectType,karma,運氣
 EffectType,learn spell,習得咒語
 EffectType,liberate,解放
@@ -1038,6 +1040,7 @@ EffectType,recall,喚回隊友
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
 EffectType,remove transient,去除短期狀態
+EffectType,replenish,
 EffectType,replicate asset,複製物件
 EffectType,restock,重新進貨
 EffectType,restore ability,復原能力
@@ -1045,7 +1048,6 @@ EffectType,rumour,流言
 EffectType,sacrifice,獻祭
 EffectType,sanctify,神聖化
 EffectType,searching,搜索
-EffectType,sleep,睡覺
 EffectType,spawn character,產生角色
 EffectType,steal,偷取
 EffectType,summon entity,召喚盟友
@@ -1057,6 +1059,7 @@ EffectType,transition,轉變
 EffectType,unafflict,治癒感染
 EffectType,unpolymorph,取消變形
 EffectType,unpunish,取消懲罰
+EffectType,unstuck,
 EffectType,visit shop,訪問商店
 EffectType,visit shrine,訪問神龕
 EffectType,visit zoo,訪問動物園
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},上鎖的 {GATENAME}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
 FormatText,range {Dice},範圍 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","復活了 {CharacterName} , {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},復仇 {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},復仇 {Chance} 死亡時 {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},當 {MATERIALNAME}
 FormatText,when {PROPERTYNAME},當 {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},當 {SANCTITYNAME}
 FormatText,when {Something},為{Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,這扇門是用水晶造成的，很難損壞。
 GateName,crystal door,水晶門
 GateName,wooden door,木製門
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,被勒住了
 LiteralText,weakness to,弱點
 LiteralText,weight,重量
 LiteralText,when afflicted,當被感染
+LiteralText,when confused,
 LiteralText,when dropped,當丟棄時
 LiteralText,when entered,當進入時
 LiteralText,when exhausted,當耗盡時

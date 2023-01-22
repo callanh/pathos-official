@@ -104,19 +104,19 @@ namespace Pathos
         (
           B =>
           {
-            B.Sleep(1.d50() + 50);
+            B.IntentionalTransient(Properties.sleeping, 1.d50() + 50);
             B.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.life_regeneration, 1.d50() + 50));
             B.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.mana_regeneration, 1.d50() + 50));
           },
           U =>
           {
-            U.Sleep(1.d50() + 50);
+            U.IntentionalTransient(Properties.sleeping, 1.d50() + 50);
           },
           C =>
           {
             C.WhenProbability(Table =>
             {
-              Table.Add(50, A => A.Sleep(1.d100() + 100)); // extra long sleep
+              Table.Add(50, A => A.IntentionalTransient(Properties.sleeping, 1.d100() + 100)); // extra long sleep
               Table.Add(20, A => A.ApplyTransient(Properties.paralysis, 2.d10() + 10));
               Table.Add(20, A => A.ApplyTransient(Properties.hallucination, 2.d10() + 10));
               Table.Add(5, A => A.ApplyTransient(Properties.narcolepsy, 2.d200() + 200));

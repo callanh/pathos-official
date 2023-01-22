@@ -25,7 +25,7 @@ namespace Pathos
         {
           A.Name = Name;
           A.Description = Description;
-          A.Glyph = Glyph;  
+          A.Glyph = Glyph;
           A.Sonic = Sonic;
 
           Action(A);
@@ -36,7 +36,7 @@ namespace Pathos
       {
         A.Severe = true;
         A.Taint = Inv.Colour.DarkSalmon.Opacity(0.50F);
-        A.AddSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.giant_crab));
+        A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.giant_crab));
         //A.RemoveLoot.AddKit(Dice.One, Codex.Items.egg); // TODO: drop crab egg.
       });
       /*
@@ -52,7 +52,7 @@ namespace Pathos
       {
         A.Taint = Inv.Colour.LightPink.Opacity(0.50F);
 
-        A.AddSymptom(Chance.OneIn100, P =>
+        A.SetSymptom(Chance.OneIn100, P =>
         {
           P.WhenChance(Chance.OneIn2, T => T.DecreaseAbility(Attributes.Charisma, Dice.One));
           P.WhenProbability(R =>
@@ -82,7 +82,7 @@ namespace Pathos
       nits = AddAffliction("nits", "You feel unclean and everything itches.", Glyphs.nits_affliction, Sonics.polymorph, A =>
       {
         A.Taint = Inv.Colour.Brown.Opacity(0.50F);
-        A.AddSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.giant_louse));
+        A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.giant_louse));
         //A.RemoveLoot.AddKit(Dice.One, Codex.Items.egg); // TODO: drop louse egg.
       });
 
@@ -91,14 +91,14 @@ namespace Pathos
         A.Severe = true;
         A.Taint = Inv.Colour.Red.Opacity(0.50F);
         A.SetResistance(Elements.poison);
-        A.AddSymptom(Chance.OneIn2, P => P.Harm(Elements.poison, 1.d3()));
+        A.SetSymptom(Chance.OneIn2, P => P.Harm(Elements.poison, 1.d3()));
       });
 
       rabies = AddAffliction("rabies", "This viral disease causes inflammation of the brain and is spread by infected animals.", Glyphs.rabies_affliction, Sonics.polymorph, A =>
       {
         A.Taint = Inv.Colour.HotPink.Opacity(0.50F);
         A.SetImmunity(Properties.vitality);
-        A.AddSymptom(Chance.OneIn100, P =>
+        A.SetSymptom(Chance.OneIn100, P =>
         {
           P.WhenProbability(R =>
           {
@@ -121,7 +121,7 @@ namespace Pathos
       {
         A.Taint = Inv.Colour.LightPink.Opacity(0.50F);
         A.SetResistance(Elements.acid);
-        A.AddSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.acid_blob));
+        A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.acid_blob));
       });
 
       sliming = AddAffliction("sliming", "Your skin is sickly green and something is very wrong inside your stomach.", Glyphs.sliming_affliction, Sonics.polymorph, A =>
@@ -129,15 +129,15 @@ namespace Pathos
         A.Severe = true;
         A.Taint = Inv.Colour.LightGreen.Opacity(0.50F);
         A.SetImmunity(Properties.vitality);
-        A.AddSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.green_slime));
+        A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.green_slime));
       });
 
       worms = AddAffliction("worms", "There is a gnawing sensation from deep inside your stomach.", Glyphs.worms_affliction, Sonics.polymorph, A =>
       {
         A.Severe = true;
         A.Taint = Inv.Colour.Tan.Opacity(0.50F);
-        A.AddSymptom(Chance.OneIn100, P => P.ApplyTransient(Properties.hunger, 5.d10()));
-        A.AddSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.baby_long_worm));
+        A.SetSymptom(Chance.OneIn100, P => P.ApplyTransient(Properties.hunger, 5.d10()));
+        A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.baby_long_worm));
       });
     }
 #endif

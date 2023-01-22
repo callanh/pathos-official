@@ -130,6 +130,45 @@ namespace Pathos
       Manifest.Kicking.Set(Attributes.strength, Elements.physical);
 
       Manifest.Praying.Set(Motions.pray);
+      Manifest.Praying.AddPrayer(KarmaStatus.Hopeful, A =>
+      {
+        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.Unstuck();
+        A.Unpunish();
+        A.Unafflict();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+      });
+      Manifest.Praying.AddPrayer(KarmaStatus.Good, A =>
+      {
+        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.Unstuck();
+        A.Unpunish();
+        A.Unafflict();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+      });
+      Manifest.Praying.AddPrayer(KarmaStatus.Glorious, A =>
+      {
+        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.Unstuck();
+        A.Unpunish();
+        A.Unafflict();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+        A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
+      });
+      Manifest.Praying.AddPrayer(KarmaStatus.Exalted, A =>
+      {
+        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.Unstuck();
+        A.Unpunish();
+        A.Unafflict();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+        A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
+        A.RemoveCurse(Dice.One); // remove one curse.
+        A.RaiseDead(100, Corrupt: false, LoyalOnly: true); // raise one loyal companion from the dead.
+      });
 
       Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
 
@@ -1271,6 +1310,7 @@ namespace Pathos
       Base.Register<Pet>();
       Base.Register<Platform>();
       Base.Register<Portal>();
+      Base.Register<Prayer>();
       Base.Register<Precept>();
       Base.Register<Property>();
       Base.Register<Punishment>();
@@ -1314,6 +1354,8 @@ namespace Pathos
       Base.Register<Effect>().AsPolymorph();
       Base.Register<WhenProbabilityCheck>();
 
+      Base.Register<KarmaStatus>().AsCustom((S, R) => S.WriteInt32(R.Index), (L) => KarmaStatus.List[L.ReadInt32()]);
+      Base.Register<NutritionStatus>().AsCustom((S, R) => S.WriteInt32(R.Index), (L) => NutritionStatus.List[L.ReadInt32()]);
       Base.RegisterGold();
       Base.RegisterWeight();
       Base.RegisterEssence();

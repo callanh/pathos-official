@@ -938,6 +938,7 @@ EffectProperty,hordes,大群
 EffectProperty,items,アイテム
 EffectProperty,kinds,種類
 EffectProperty,lies,うそをつく
+EffectProperty,loyal only,
 EffectProperty,material,素材
 EffectProperty,materials,材料
 EffectProperty,objects,物
@@ -1018,6 +1019,7 @@ EffectType,identify,識別する
 EffectType,impersonate,なりすまし
 EffectType,incarcerate,収監する
 EffectType,increase ability,能力を上げる
+EffectType,intentional transient,
 EffectType,karma,カルマ
 EffectType,learn spell,呪文を学ぶ
 EffectType,liberate,解放する
@@ -1038,6 +1040,7 @@ EffectType,recall,思い出す
 EffectType,release,解放する
 EffectType,remove curse,解呪
 EffectType,remove transient,一時的な症状の解除
+EffectType,replenish,
 EffectType,replicate asset,アイテムを複製する
 EffectType,restock,補充
 EffectType,restore ability,能力回復
@@ -1045,7 +1048,6 @@ EffectType,rumour,噂
 EffectType,sacrifice,犠牲
 EffectType,sanctify,聖別する
 EffectType,searching,探す
-EffectType,sleep,寝る
 EffectType,spawn character,キャラクターを生み出す
 EffectType,steal,盗む
 EffectType,summon entity,召喚
@@ -1057,6 +1059,7 @@ EffectType,transition,変化
 EffectType,unafflict,争わない
 EffectType,unpolymorph,不変
 EffectType,unpunish,罰する
+EffectType,unstuck,
 EffectType,visit shop,お店を訪問
 EffectType,visit shrine,お宮参り
 EffectType,visit zoo,動物園を訪問
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},{GATENAME}が施錠されています
 FormatText,not {EffectProperty},{EffectProperty}ではない
 FormatText,range {Dice},{Dice}範囲
 FormatText,RANKED #{RankNumber},ランク＃{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName}、{CharacterDescription}が復活しました
 FormatText,retaliate {Chance} {AttackType},{AttackType}で{Chance}に反撃
 FormatText,retaliate {Chance} on death {AttackType},死後に{AttackType}で{Chance}に反撃
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}の場合
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}の場合
 FormatText,when {Something},{Something}の場合
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,この重い扉は硬い結晶層でできており、簡単には破損しません。
 GateName,crystal door,クリスタルドア
 GateName,wooden door,木製扉
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,首を絞められた
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,苦しんだとき
+LiteralText,when confused,
 LiteralText,when dropped,落としたとき
 LiteralText,when entered,入力時
 LiteralText,when exhausted,消耗したとき

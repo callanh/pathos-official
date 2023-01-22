@@ -938,6 +938,7 @@ EffectProperty,hordes,Horden
 EffectProperty,items,Gegenstände
 EffectProperty,kinds,Arten
 EffectProperty,lies,Lügen
+EffectProperty,loyal only,
 EffectProperty,material,Material
 EffectProperty,materials,Materialien
 EffectProperty,objects,Objekte
@@ -1018,6 +1019,7 @@ EffectType,identify,identifizieren
 EffectType,impersonate,imitieren
 EffectType,incarcerate,inhaftieren
 EffectType,increase ability,Fähigkeit erhöhen
+EffectType,intentional transient,
 EffectType,karma,Karma
 EffectType,learn spell,Zauber lernen
 EffectType,liberate,befreien
@@ -1038,6 +1040,7 @@ EffectType,recall,erinnern
 EffectType,release,freilassen
 EffectType,remove curse,Fluch entfernen
 EffectType,remove transient,temporäre Effekte entfernen
+EffectType,replenish,
 EffectType,replicate asset,Asset Nachbilden
 EffectType,restock,Nachschub
 EffectType,restore ability,Fähigkeit wiederherstellen
@@ -1045,7 +1048,6 @@ EffectType,rumour,Gerücht
 EffectType,sacrifice,Opfern
 EffectType,sanctify,heiligen
 EffectType,searching,suchen
-EffectType,sleep,schlafen
 EffectType,spawn character,Erstelle einen Charakter
 EffectType,steal,stiehlt
 EffectType,summon entity,Entität beschwören
@@ -1057,6 +1059,7 @@ EffectType,transition,Überleitung
 EffectType,unafflict,nicht betroffen
 EffectType,unpolymorph,De-Polymorph
 EffectType,unpunish,ungestraft
+EffectType,unstuck,
 EffectType,visit shop,Laden besuchen
 EffectType,visit shrine,Schrein besuchen
 EffectType,visit zoo,Zoo besuchen
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},VERSCHLOSSEN {GATENAME}
 FormatText,not {EffectProperty},nicht {EffectProperty}
 FormatText,range {Dice},Reichweite {Dice}
 FormatText,RANKED #{RankNumber},PLATZIERUNG #{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Auferstanden {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},Vergeltung {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},Vergeltung {Chance} zum Tode {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},wenn {MATERIALNAME}
 FormatText,when {PROPERTYNAME},wenn {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},wenn {SANCTITYNAME}
 FormatText,when {Something},wann {Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Die schwere Tür besteht aus harten Kristallformationen und kann nicht leicht beschädigt werden
 GateName,crystal door,Kristalltüre
 GateName,wooden door,Holztüre
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,wurde stranguliert
 LiteralText,weakness to,schwäche auf
 LiteralText,weight,Gewicht
 LiteralText,when afflicted,wenn betroffen
+LiteralText,when confused,
 LiteralText,when dropped,wenn fallen gelassen
 LiteralText,when entered,einmal eingegeben
 LiteralText,when exhausted,wenn erschöpft

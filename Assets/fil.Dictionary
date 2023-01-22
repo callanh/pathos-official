@@ -938,6 +938,7 @@ EffectProperty,hordes,
 EffectProperty,items,
 EffectProperty,kinds,
 EffectProperty,lies,
+EffectProperty,loyal only,
 EffectProperty,material,
 EffectProperty,materials,
 EffectProperty,objects,
@@ -1018,6 +1019,7 @@ EffectType,identify,pag-identify
 EffectType,impersonate,pag-impersonate
 EffectType,incarcerate,pag-incarcerate
 EffectType,increase ability,pagdagdag ng ability
+EffectType,intentional transient,
 EffectType,karma,
 EffectType,learn spell,pagkatuto sa skill
 EffectType,liberate,pag-liberate
@@ -1038,6 +1040,7 @@ EffectType,recall,pag-recall
 EffectType,release,pag-release
 EffectType,remove curse,pagtanggal ng sumpa
 EffectType,remove transient,pagkawala ng transient
+EffectType,replenish,
 EffectType,replicate asset,pagka-replicate ng asset
 EffectType,restock,pag-restock
 EffectType,restore ability,pag-restore ng ability
@@ -1045,7 +1048,6 @@ EffectType,rumour,pag-rumour
 EffectType,sacrifice,pag-sacrifice
 EffectType,sanctify,pag-sanctify
 EffectType,searching,pag-search
-EffectType,sleep,pag-tulog
 EffectType,spawn character,pag-spawn ng character
 EffectType,steal,pag-steal
 EffectType,summon entity,pag-summon ng entity
@@ -1057,6 +1059,7 @@ EffectType,transition,pag-transition
 EffectType,unafflict,
 EffectType,unpolymorph,
 EffectType,unpunish,
+EffectType,unstuck,
 EffectType,visit shop,pagbisita sa shop
 EffectType,visit shrine,pagbisita sa shrine
 EffectType,visit zoo,pagbisita sa zoo
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},
 FormatText,not {EffectProperty},
 FormatText,range {Dice},
 FormatText,RANKED #{RankNumber},
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",
 FormatText,retaliate {Chance} {AttackType},
 FormatText,retaliate {Chance} on death {AttackType},
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},
 FormatText,when {PROPERTYNAME},
 FormatText,when {SANCTITYNAME},
 FormatText,when {Something},
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,
 GateName,crystal door,
 GateName,wooden door,
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,
 LiteralText,weakness to,
 LiteralText,weight,
 LiteralText,when afflicted,
+LiteralText,when confused,
 LiteralText,when dropped,
 LiteralText,when entered,
 LiteralText,when exhausted,

@@ -17398,7 +17398,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.restoration);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
-        E.Conveyance.Heal(Dice.Fixed(+500), Modifier.Zero);
+        E.Conveyance.Replenish(0F, 100F); // replenish full life.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });

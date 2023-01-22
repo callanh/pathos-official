@@ -938,6 +938,7 @@ EffectProperty,hordes,đám
 EffectProperty,items,các vật phẩm
 EffectProperty,kinds,các loại
 EffectProperty,lies,nằm trên
+EffectProperty,loyal only,
 EffectProperty,material,vật liệu
 EffectProperty,materials,các vật liệu
 EffectProperty,objects,các vật thể
@@ -1018,6 +1019,7 @@ EffectType,identify,định danh
 EffectType,impersonate,diễn theo
 EffectType,incarcerate,nhốt
 EffectType,increase ability,tăng chỉ số
+EffectType,intentional transient,
 EffectType,karma,nghiệp
 EffectType,learn spell,học phép thuật
 EffectType,liberate,thả ra
@@ -1038,6 +1040,7 @@ EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
+EffectType,replenish,
 EffectType,replicate asset,tạo bản sao của vật
 EffectType,restock,bổ sung
 EffectType,restore ability,khôi phục chỉ số
@@ -1045,7 +1048,6 @@ EffectType,rumour,lời đồn
 EffectType,sacrifice,cúng tế
 EffectType,sanctify,thánh hóa
 EffectType,searching,tìm kiếm
-EffectType,sleep,ngủ
 EffectType,spawn character,tạo ra nhân vật
 EffectType,steal,cướp
 EffectType,summon entity,triệu hồi thực thể
@@ -1057,6 +1059,7 @@ EffectType,transition,di chuyển
 EffectType,unafflict,không ảnh hưởng
 EffectType,unpolymorph,trở về dạng cũ
 EffectType,unpunish,loại bỏ trừng phạt
+EffectType,unstuck,
 EffectType,visit shop,ghé cửa hàng
 EffectType,visit shrine,ghé điện thờ
 EffectType,visit zoo,ghé vườn thú
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},{GATENAME} bị khóa
 FormatText,not {EffectProperty},không {EffectProperty}
 FormatText,range {Dice},tầm xa {Dice}
 FormatText,RANKED #{RankNumber},XẾP HẠNG #{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Đã hồi sinh {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} khả năng {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},{Chance} khả năng khi chết {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
 FormatText,when {PROPERTYNAME},nếu là {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},khi {SANCTITYNAME}
 FormatText,when {Something},khi {Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cái cửa này được làm từ kim loại cứng. Không dễ gì phá hủy đâu.
 GateName,crystal door,cửa pha lê
 GateName,wooden door,cửa gỗ
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,bị bóp nghẹt
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
+LiteralText,when confused,
 LiteralText,when dropped,khi thả xuống
 LiteralText,when entered,khi đi vào
 LiteralText,when exhausted,khi mệt

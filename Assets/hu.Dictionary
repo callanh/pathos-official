@@ -938,6 +938,7 @@ EffectProperty,hordes,hordák
 EffectProperty,items,tárgyak
 EffectProperty,kinds,fajták
 EffectProperty,lies,hazugságok
+EffectProperty,loyal only,
 EffectProperty,material,anyag
 EffectProperty,materials,anyagok
 EffectProperty,objects,tárgyak
@@ -1018,6 +1019,7 @@ EffectType,identify,azonosítás
 EffectType,impersonate,utánzás
 EffectType,incarcerate,bebörtönzés
 EffectType,increase ability,adottságnövelés
+EffectType,intentional transient,
 EffectType,karma,karma
 EffectType,learn spell,megtanult varázslat:
 EffectType,liberate,felszabadítás
@@ -1038,6 +1040,7 @@ EffectType,recall,visszahívás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
 EffectType,remove transient,átmeneti hatás eltávolítása
+EffectType,replenish,
 EffectType,replicate asset,eszköz lemásolása
 EffectType,restock,feltöltés
 EffectType,restore ability,adottság-visszaállítás
@@ -1045,7 +1048,6 @@ EffectType,rumour,híresztelés
 EffectType,sacrifice,áldozat
 EffectType,sanctify,felszentelés
 EffectType,searching,keresés
-EffectType,sleep,alvás
 EffectType,spawn character,karakter lerakás
 EffectType,steal,lopás
 EffectType,summon entity,entitás megidézése:
@@ -1057,6 +1059,7 @@ EffectType,transition,átalakulás
 EffectType,unafflict,megtisztítás
 EffectType,unpolymorph,visszaváltozás
 EffectType,unpunish,büntetlenség
+EffectType,unstuck,
 EffectType,visit shop,bolt meglátogatása
 EffectType,visit shrine,szentély meglátogatása
 EffectType,visit zoo,terem meglátogatása
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},ZÁRT {GATENAME}
 FormatText,not {EffectProperty},nincsen/nem {EffectProperty}
 FormatText,range {Dice},hatótávolság {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}. helyezett
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Feltámasztott {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} esély visszaütésre {AttackType}támadás esetén
 FormatText,retaliate {Chance} on death {AttackType},{Chance} esély visszaütésre {AttackType}támadás általi halál esetén
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME} esetén
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} esetén
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} esetén
 FormatText,when {Something},{Something} esetén
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Ez a nehéz ajtó kemény kristályformákból áll és nehezen sérül.
 GateName,crystal door,kristályajtó
 GateName,wooden door,faajtó
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,megfojtották
 LiteralText,weakness to,gyenge a következővel szemben:
 LiteralText,weight,súly
 LiteralText,when afflicted,lesújtva
+LiteralText,when confused,
 LiteralText,when dropped,beleejtve
 LiteralText,when entered,belelépve
 LiteralText,when exhausted,kifáradva

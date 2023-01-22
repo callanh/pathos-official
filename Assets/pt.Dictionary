@@ -938,6 +938,7 @@ EffectProperty,hordes,hordas
 EffectProperty,items,itens
 EffectProperty,kinds,tipos
 EffectProperty,lies,mentiras
+EffectProperty,loyal only,
 EffectProperty,material,material
 EffectProperty,materials,materiais
 EffectProperty,objects,objetos
@@ -1018,6 +1019,7 @@ EffectType,identify,identificar
 EffectType,impersonate,personificar
 EffectType,incarcerate,encarcerar
 EffectType,increase ability,aumentar atributo
+EffectType,intentional transient,
 EffectType,karma,carma
 EffectType,learn spell,aprender magia
 EffectType,liberate,liberar
@@ -1038,6 +1040,7 @@ EffectType,recall,trazer aliados
 EffectType,release,liberar
 EffectType,remove curse,remover maldição
 EffectType,remove transient,remover efeito transitório
+EffectType,replenish,
 EffectType,replicate asset,replicar espólio
 EffectType,restock,reabastecer
 EffectType,restore ability,restaurar atributo
@@ -1045,7 +1048,6 @@ EffectType,rumour,espalhar
 EffectType,sacrifice,sacrificar
 EffectType,sanctify,santificar
 EffectType,searching,procurar
-EffectType,sleep,dormir
 EffectType,spawn character,gerar personagem
 EffectType,steal,roubar
 EffectType,summon entity,convocar entidade
@@ -1057,6 +1059,7 @@ EffectType,transition,transicionar
 EffectType,unafflict,desafligir
 EffectType,unpolymorph,despolimorfizar
 EffectType,unpunish,purgar punição
+EffectType,unstuck,
 EffectType,visit shop,visitar loja
 EffectType,visit shrine,visitar santuário
 EffectType,visit zoo,visitar zoologico
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},{GATENAME} TRANCADA
 FormatText,not {EffectProperty},não {EffectProperty}
 FormatText,range {Dice},alcance {Dice}
 FormatText,RANKED #{RankNumber},RANQUEOU #{RankNumber}
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","<{CharacterName} foi ressuscitado>, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},retaliar {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},retaliar {Chance} quando morre {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},quando {MATERIALNAME}
 FormatText,when {PROPERTYNAME},quando {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},quando {SANCTITYNAME}
 FormatText,when {Something},quando {Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Essa porta pesada é feita de formações de cristais sólidos e não pode ser facilmente danificada.
 GateName,crystal door,porta de cristal
 GateName,wooden door,porta de madeira
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,foi estrangulado
 LiteralText,weakness to,fraco contra
 LiteralText,weight,peso
 LiteralText,when afflicted,quando afligido
+LiteralText,when confused,
 LiteralText,when dropped,quando derrubado
 LiteralText,when entered,quando dentro
 LiteralText,when exhausted,quando exausto

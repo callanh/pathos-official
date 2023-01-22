@@ -159,7 +159,7 @@ namespace Pathos
           B.Description = "Return a corpse back to life.";
           B.Cost = 750;
           B.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-          B.Apply.RaiseDead(Percent: 50, Corrupt: false);
+          B.Apply.RaiseDead(Percent: 50, Corrupt: false, LoyalOnly: false);
         });
       });
 

@@ -938,6 +938,7 @@ EffectProperty,hordes,กลุ่ม
 EffectProperty,items,ไอเท็ม
 EffectProperty,kinds,
 EffectProperty,lies,
+EffectProperty,loyal only,
 EffectProperty,material,วัสดุ
 EffectProperty,materials,วัสดุ
 EffectProperty,objects,วัตถุ
@@ -1018,6 +1019,7 @@ EffectType,identify,ระบุ
 EffectType,impersonate,
 EffectType,incarcerate,
 EffectType,increase ability,เพิ่มความสามารถ
+EffectType,intentional transient,
 EffectType,karma,กรรม
 EffectType,learn spell,เรียนเวท
 EffectType,liberate,
@@ -1038,6 +1040,7 @@ EffectType,recall,
 EffectType,release,
 EffectType,remove curse,ถอนคำสาป
 EffectType,remove transient,ถอนสถานะชั่วคราว
+EffectType,replenish,
 EffectType,replicate asset,
 EffectType,restock,เปลี่ยนสินค้า
 EffectType,restore ability,คืนค่าความสามารถ
@@ -1045,7 +1048,6 @@ EffectType,rumour,ข่าวลือ
 EffectType,sacrifice,
 EffectType,sanctify,
 EffectType,searching,ค้นหา
-EffectType,sleep,
 EffectType,spawn character,
 EffectType,steal,ขโมย
 EffectType,summon entity,อัญเชิญสิ่งมีตัวตน
@@ -1057,6 +1059,7 @@ EffectType,transition,
 EffectType,unafflict,
 EffectType,unpolymorph,
 EffectType,unpunish,
+EffectType,unstuck,
 EffectType,visit shop,เยี่ยมร้านค้า
 EffectType,visit shrine,เยี่ยมสถานที่บูชา
 EffectType,visit zoo,เยี่ยมสวยสัตว์
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},{GATENAME}ถูกล็อค
 FormatText,not {EffectProperty},
 FormatText,range {Dice},ระยะ{Dice}
 FormatText,RANKED #{RankNumber},
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName},{CharacterDescription}คืนชีพแล้ว"
 FormatText,retaliate {Chance} {AttackType},
 FormatText,retaliate {Chance} on death {AttackType},
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},
 FormatText,when {PROPERTYNAME},
 FormatText,when {SANCTITYNAME},
 FormatText,when {Something},
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,ประตูใหญ่นี้ถูกทำขึ้นมาจากผลึกแข็งอย่างเป็นระเบียบและทำลายไม่ได้ง่ายๆ
 GateName,crystal door,ประตูผลึก
 GateName,wooden door,ประตูไม้
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,
 LiteralText,weakness to,
 LiteralText,weight,น้ำหนัก
 LiteralText,when afflicted,
+LiteralText,when confused,
 LiteralText,when dropped,
 LiteralText,when entered,
 LiteralText,when exhausted,

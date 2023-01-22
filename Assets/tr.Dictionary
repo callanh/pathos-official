@@ -938,6 +938,7 @@ EffectProperty,hordes,ordular
 EffectProperty,items,eşyalar
 EffectProperty,kinds,türler
 EffectProperty,lies,yalanlar
+EffectProperty,loyal only,
 EffectProperty,material,malzeme
 EffectProperty,materials,malzemeler
 EffectProperty,objects,objeler
@@ -1018,6 +1019,7 @@ EffectType,identify,tanımla
 EffectType,impersonate,taklit et
 EffectType,incarcerate,hapset
 EffectType,increase ability,kabiliyeti yükselt
+EffectType,intentional transient,
 EffectType,karma,karma
 EffectType,learn spell,büyü öğren
 EffectType,liberate,özgürleştir
@@ -1038,6 +1040,7 @@ EffectType,recall,geri çağır
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
 EffectType,remove transient,geçici etkileri kaldır
+EffectType,replenish,
 EffectType,replicate asset,varlığı kopyala
 EffectType,restock,tekrar doldur
 EffectType,restore ability,kabiliyeti geri kazan
@@ -1045,7 +1048,6 @@ EffectType,rumour,dedikodu
 EffectType,sacrifice,kurban et
 EffectType,sanctify,kutsallaştır
 EffectType,searching,ara
-EffectType,sleep,uyu
 EffectType,spawn character,karakter yarat
 EffectType,steal,çal
 EffectType,summon entity,canlı çağır
@@ -1057,6 +1059,7 @@ EffectType,transition,değişme
 EffectType,unafflict,bela kaldır
 EffectType,unpolymorph,asıl şekline geri dön
 EffectType,unpunish,ceza kaldır
+EffectType,unstuck,
 EffectType,visit shop,dükkana git
 EffectType,visit shrine,tapınağa git
 EffectType,visit zoo,habitata git
@@ -2064,6 +2067,8 @@ FormatText,LOCKED {GATENAME},{GATENAME} Kilitli
 FormatText,not {EffectProperty},olmamış {EffectProperty}
 FormatText,range {Dice},menzil {Dice}
 FormatText,RANKED #{RankNumber},#{RankNumber} DERECESİNE ULAŞTIN
+FormatText,replenish life from {Percent}%,
+FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName} tekrar canlandırıldı, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},öç al {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},öç al {Chance} ölümde {AttackType}
@@ -2087,6 +2092,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}olduğunda
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}olduğunda
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}olduğunda
 FormatText,when {Something},ne zaman {Something}
+FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Bu kapı sert kristallerden yapıldığından dolayı çok dayanıklı.
 GateName,crystal door,kristal kapı
 GateName,wooden door,tahta kapı
@@ -3812,6 +3818,7 @@ LiteralText,was strangled,boğuldu
 LiteralText,weakness to,
 LiteralText,weight,ağırlık
 LiteralText,when afflicted,belalanmışken
+LiteralText,when confused,
 LiteralText,when dropped,düşürüldüğünde
 LiteralText,when entered,
 LiteralText,when exhausted,yorulduğunda
