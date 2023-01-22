@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,SAKLA
 LiteralText,CONCEALED,SAKLI
 LiteralText,CONDUCT,EYLEM
 LiteralText,CONFIRM,ONAYLA
-LiteralText,CONFUSE,KAFASINI KARIŞTIR
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Tebrikler! son seviyeye ulaşıp ezeli düşmanını yendin.
 LiteralText,Connect to game hosted by another player.,Başka oyuncu tarafından kurulmuş bir oyuna katıl.
 LiteralText,CONSOLE,KONSOL
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,boğuldu
 LiteralText,weakness to,
 LiteralText,weight,ağırlık
 LiteralText,when afflicted,belalanmışken
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,düşürüldüğünde
 LiteralText,when entered,
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Bakış ve ışın saldırıları kaynağına yansıtılır.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Yakındaki canavarlar ve ortalama tehlike seviyeleri hakkında önceden uyarı verir.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Dehşet düşerek saldırma yetini kaybedersin ve kaçmalısın.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Zindanda sessizce gezerek uyuyan canavarlara gizlice yaklaşabilirsin.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Hem şekil değiştirmeni hem de eski haline dönmeni engeller.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Yavaşlatıcı, felç edici ya da hareketini kısıtlayabilecek güçlerden seni korur."
@@ -4042,6 +4043,7 @@ PropertyName,free action,serbest hareket
 PropertyName,fumbling,sakarlık
 PropertyName,hallucination,varsanı
 PropertyName,hunger,açlık
+PropertyName,inebriation,
 PropertyName,invisibility,görünmezlik
 PropertyName,jumping,sıçrama
 PropertyName,levitation,yerden yükselme

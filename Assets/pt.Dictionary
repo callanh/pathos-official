@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,ESCONDER
 LiteralText,CONCEALED,ESCONDIDO
 LiteralText,CONDUCT,CONDUZIR
 LiteralText,CONFIRM,CONFIRMAR
-LiteralText,CONFUSE,CONFUSO
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Parabéns por chegar no nível final e derrotar seu nêmesis.
 LiteralText,Connect to game hosted by another player.,Conectar a uma partida hospedada por outro jogador.
 LiteralText,CONSOLE,CONSOLE
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,foi estrangulado
 LiteralText,weakness to,fraco contra
 LiteralText,weight,peso
 LiteralText,when afflicted,quando afligido
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,quando derrubado
 LiteralText,when entered,quando dentro
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Feixes e encarões são refletidos de volta ao arremessador.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Lhe avisa com antecedência da presença de monstros e seus níveis de ameaça.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Dominado pelo terror você não consegue atacar e portanto deve fugir.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Movendo-se quietamente pela masmorra você pode se esgueirar por monstros adormecidos.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Lhe impede de ser polimorfizado mas também lhe impede de voltar a sua forma natural.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Lhe protege de efeitos que causam lentidão, paralisia ou restrição de movimento."
@@ -4042,6 +4043,7 @@ PropertyName,free action,movimento livre
 PropertyName,fumbling,atrapalhamento
 PropertyName,hallucination,alucinação
 PropertyName,hunger,fome
+PropertyName,inebriation,
 PropertyName,invisibility,invisibilidade
 PropertyName,jumping,salto
 PropertyName,levitation,levitação

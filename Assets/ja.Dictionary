@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,隠す
 LiteralText,CONCEALED,隠した
 LiteralText,CONDUCT,行為
 LiteralText,CONFIRM,確認
-LiteralText,CONFUSE,混乱
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,最終レベルに到達し、あなたの宿敵を破っておめでとうございます。
 LiteralText,Connect to game hosted by another player.,他のプレイヤーがホストしているゲームに接続
 LiteralText,CONSOLE,コンソール
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,首を絞められた
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,苦しんだとき
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,落としたとき
 LiteralText,when entered,入力時
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,視線とビームの攻撃は術者に反射されます。
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,近くのモンスターとそのおおよその脅威レベルについて事前に警告を与えます。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,恐怖に駆られてあなたは攻撃することができないので逃げるべきである。
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,ダンジョンの中を静かに移動することによって、眠っているモンスターに近づくことができます。
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,あなたが変化させられるのを防ぎますが、あなたが元の形に戻ることも防ぎます。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",動きを遅くしたり、麻痺させたり、その他の方法で抑制したりする効果からあなたを保護します。
@@ -4042,6 +4043,7 @@ PropertyName,free action,自由行動
 PropertyName,fumbling,不器用
 PropertyName,hallucination,幻覚
 PropertyName,hunger,飢餓
+PropertyName,inebriation,
 PropertyName,invisibility,不可視
 PropertyName,jumping,跳躍
 PropertyName,levitation,浮遊

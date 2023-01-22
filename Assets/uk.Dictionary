@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,ЗАХОВАТИ
 LiteralText,CONCEALED,ЗАХОВАНІ
 LiteralText,CONDUCT,СУПРОВОДЖУЄ
 LiteralText,CONFIRM,ПІДТВЕРДИТИ
-LiteralText,CONFUSE,СУМ’ЯТТЯ
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Вітаємо вас із досягненням фінального рівня і перемогою над головним ворогом.
 LiteralText,Connect to game hosted by another player.,Під’єднатися до гри створеної іншим гравцем.
 LiteralText,CONSOLE,КОНСОЛЬ
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,було задушено
 LiteralText,weakness to,слабкий до
 LiteralText,weight,вага
 LiteralText,when afflicted,коли пороблено
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,при скиданні
 LiteralText,when entered,при вході
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Променеві атаки і Погляд відбиваються назад в заклинателя.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Дає своєчасне попередження про наближення монстрів і їх рівень загрози.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Охоплені жахом ви не можете атакувати і повинні бігти.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,"Ви скрадаєтеся підземеллями так тихо, що можете підкрастися до монстрів, поки вони сплять."
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Запобігає ваше перетворення, але так само не дозволяє повернутися в справжню форму."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Захищає вас від ефектів уповільнення, паралічу та інших обмежень вашого руху."
@@ -4042,6 +4043,7 @@ PropertyName,free action,свобода дій
 PropertyName,fumbling,незручність
 PropertyName,hallucination,галюцинації
 PropertyName,hunger,голод
+PropertyName,inebriation,
 PropertyName,invisibility,невидимість
 PropertyName,jumping,стрибки
 PropertyName,levitation,левітація

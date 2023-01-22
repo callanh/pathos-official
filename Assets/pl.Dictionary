@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,UKRYJ
 LiteralText,CONCEALED,UKRYTY
 LiteralText,CONDUCT,KONDYCJA
 LiteralText,CONFIRM,POTWIERDŹ
-LiteralText,CONFUSE,KONFUZJA
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Gratulacje za przejście do ostatniego poziomu i pokonanie swojego nemezis.
 LiteralText,Connect to game hosted by another player.,Połącz się z grą prowadzoną przez innego gracza.
 LiteralText,CONSOLE,KONSOLA
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,został uduszony
 LiteralText,weakness to,osłabienie
 LiteralText,weight,waga
 LiteralText,when afflicted,gdy dotknięty
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,gdy upuszczony
 LiteralText,when entered,gdy otwarty
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Spojrzenia i ataki wiązką promieni są odbijane z powrotem w stronę mistrza.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Ostrzega Cię z wyprzedzeniem o pobliskich potworach i ich przybliżonym poziomie zagrożenia.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Ogarnięty przerażeniem nie możesz atakować i powinieneś uciekać.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Poruszając się po cichu po lochu możesz podkradać się do śpiących potworów.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Zapobiega polimorfii, ale również nie pozwala na powrót do swojej naturalnej postaci."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Chroni cię przed efektami, które spowalniają, paraliżują lub w inny sposób ograniczają twój ruch."
@@ -4042,6 +4043,7 @@ PropertyName,free action,swobodne działanie
 PropertyName,fumbling,dymiący
 PropertyName,hallucination,halucynacje
 PropertyName,hunger,głód
+PropertyName,inebriation,
 PropertyName,invisibility,niewidzialność
 PropertyName,jumping,skok
 PropertyName,levitation,lewitacja

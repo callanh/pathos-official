@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,СПРЯТАТЬ
 LiteralText,CONCEALED,СПРЯТАНО
 LiteralText,CONDUCT,
 LiteralText,CONFIRM,
-LiteralText,CONFUSE,В СМЕТЕНИИ
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
 LiteralText,Connect to game hosted by another player.,
 LiteralText,CONSOLE,КОНСОЛЬ
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,был задушен
 LiteralText,weakness to,
 LiteralText,weight,вес
 LiteralText,when afflicted,
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,при сбрасывании
 LiteralText,when entered,
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Лучевые атаки и Взгляд отражаются обратно в заклинателя.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Даёт своевременное предупреждение о приближающихся монстрах и их уровне угрозы.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Охваченные ужасом Вие не можете атаковать и должны бежать.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Тихое движение по подземелью позволяет Вам подкрасться к спящим монстрам.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Предотвращает ваше превращение, но так же не позволяет вернуться в истинную форму."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Защищает вас от эффектов замедления, паралича и прочих Шреканичений Вашего движения."
@@ -4042,6 +4043,7 @@ PropertyName,free action,свобода действий
 PropertyName,fumbling,неловкость
 PropertyName,hallucination,галлюцинации
 PropertyName,hunger,голод
+PropertyName,inebriation,
 PropertyName,invisibility,невидимость
 PropertyName,jumping,прыжки
 PropertyName,levitation,левитация

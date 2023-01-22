@@ -552,42 +552,42 @@ namespace Pathos
           U =>
           {
             U.SetCast().Strike(Strikes.spirit, Dice.One);
-            U.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness);
+            U.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
             P.Apply.Unafflict();
-            P.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness);
+            P.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
             S.Apply.Unafflict();
-            S.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness, Properties.hallucination);
+            S.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
             E.Apply.Unafflict();
-            E.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned);
+            E.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
             M.Apply.Unafflict();
-            M.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage);
+            M.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
             C.Apply.Unafflict();
-            C.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage, Properties.fear);
+            C.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage, Properties.fear);
           }
         );
       });

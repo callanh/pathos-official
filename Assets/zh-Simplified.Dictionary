@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,隐藏
 LiteralText,CONCEALED,隐藏
 LiteralText,CONDUCT,计数
 LiteralText,CONFIRM,确认
-LiteralText,CONFUSE,混乱
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,恭喜你通过了最后一层并且消灭了你的宿敌。
 LiteralText,Connect to game hosted by another player.,连接其他玩家创建的游戏
 LiteralText,CONSOLE,控制台
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,被勒住了
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,当被感染
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,当丢弃时
 LiteralText,when entered,当进入时
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,凝视与射线被反射回施加者身上。
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,给予你对于附近怪物以及他们危险程度的预先警告。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,你被恐惧攫住，无法攻击，应该逃离。
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,你在地牢中的脚步沉静无声，可以让你从睡眠中的怪物身边潜行而过。
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,阻止你变形，同时也阻止你变回你原来的形态。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",使你得以避免缓慢、麻痹以及其他束缚你行动的状态。
@@ -4042,6 +4043,7 @@ PropertyName,free action,自由行动
 PropertyName,fumbling,笨拙
 PropertyName,hallucination,幻觉
 PropertyName,hunger,饥饿
+PropertyName,inebriation,
 PropertyName,invisibility,隐身
 PropertyName,jumping,跳跃
 PropertyName,levitation,漂浮

@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,NASCONDI
 LiteralText,CONCEALED,NASCOSTO
 LiteralText,CONDUCT,CONDOTTA
 LiteralText,CONFIRM,CONFERMA
-LiteralText,CONFUSE,CONFONDI
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Congratulazioni per aver raggiunto il livello finale e aver sconfitto i tuoi nemici.
 LiteralText,Connect to game hosted by another player.,Unisciti a una partita creata da un altro giocatore.
 LiteralText,CONSOLE,CONSOLE
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,è stato strangolato
 LiteralText,weakness to,debolezza a
 LiteralText,weight,peso
 LiteralText,when afflicted,quando afflitto
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,quando lasciato cadere
 LiteralText,when entered,quando entrato
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Alcuni attacchi come raggi laser e pietrificazione alla vista sono rimandati al mittente.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Ti accorgi in anticipo dei nemici vicino a te e capisci quanto siano pericolosi.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Preso dal terrore e dallo sconforto non riesci ad attaccare e vuoi solo fuggire.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Muovendoti silenziosamente riesci a prendere alla sprovvista chiunque stia dormendo.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Previeni la metamorfosi in altre creature ma allo stesso tempo di impedisce di tornare alla tua forma originaria se già trasformato.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Ti protegge da qualunque effetto concernente la tua possibilità di muoverti come paralisi, rallentamento e ragnatele."
@@ -4042,6 +4043,7 @@ PropertyName,free action,libertà d'azione
 PropertyName,fumbling,mani di burro
 PropertyName,hallucination,allucinazione
 PropertyName,hunger,fame
+PropertyName,inebriation,
 PropertyName,invisibility,invisibilità
 PropertyName,jumping,salto
 PropertyName,levitation,levitazione

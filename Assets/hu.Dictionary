@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,ELREJT
 LiteralText,CONCEALED,ELREJTVE
 LiteralText,CONDUCT,TETTEK
 LiteralText,CONFIRM,✓
-LiteralText,CONFUSE,ÖSSZEZAVAR
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,"Gratulálok, hogy elérted az utolsó szintet és legyőzted az ősellenséged!"
 LiteralText,Connect to game hosted by another player.,Csatlakozz egy másik játékos által létrehozott játékhoz.
 LiteralText,CONSOLE,KONZOL
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,megfojtották
 LiteralText,weakness to,gyenge a következővel szemben:
 LiteralText,weight,súly
 LiteralText,when afflicted,lesújtva
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,beleejtve
 LiteralText,when entered,belelépve
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,A sugár- és a tekintettel indított támadások visszaverődnek a támadóra.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,"Előzetes figyelmeztetést ad a közelben leselkedő szörnyekről, és azok hozzávetőleges veszélyességi szintjéről."
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"A rémület szorításában képtelen vagy támadni, így hát menekülőre kell fognod."
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,A kazamatában csendesen haladva az alvó szörnyek mögé lopózhatsz.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Megakadályozza, hogy átváltozz, de természetes alakod felvételében is meggátol."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Megvéd a mozgásodat lassító, bénító, vagy bárhogyan hátráltató hatásoktól."
@@ -4042,6 +4043,7 @@ PropertyName,free action,szabad cselekvés
 PropertyName,fumbling,ügyetlenség
 PropertyName,hallucination,hallucináció
 PropertyName,hunger,éhség
+PropertyName,inebriation,
 PropertyName,invisibility,láthatatlanság
 PropertyName,jumping,ugrás
 PropertyName,levitation,lebegés

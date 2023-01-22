@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,VERBERGEN
 LiteralText,CONCEALED,VERDECKT
 LiteralText,CONDUCT,VERHALTEN
 LiteralText,CONFIRM,BESTÄTIGEN
-LiteralText,CONFUSE,Verwirrungen
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Herzlichen Glückwunsch zum Erreichen des letzten Levels und zum Sieg über deinen Erzfeind.
 LiteralText,Connect to game hosted by another player.,Stellen Sie eine Verbindung zu einem Spiel her das von einem anderen Spieler gehostet wird
 LiteralText,CONSOLE,CONSOLE
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,wurde stranguliert
 LiteralText,weakness to,schwäche auf
 LiteralText,weight,Gewicht
 LiteralText,when afflicted,wenn betroffen
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,wenn fallen gelassen
 LiteralText,when entered,einmal eingegeben
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Blick- und Strahlangriffe werden zurück zum Zaubernden reflektiert.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Gibt dir eine Vorwarnung vor Monstern in der Nähe und ihrer ungefähren Bedrohungsstufe.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Vom Terror gepackt kann man nicht angreifen und sollte fliehen.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Wenn du dich leise durch den Kerker bewegst kannst du dich an schlafende Monster anschleichen.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Verhindert dass Sie polymorph werden verhindert aber auch dass Sie wieder in Ihre natürliche Form zurückkehren.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",Schützt Sie vor Effekten die Ihre Bewegung verlangsamen lähmen oder auf andere Weise einschränken.
@@ -4042,6 +4043,7 @@ PropertyName,free action,Freie Bewegung
 PropertyName,fumbling,Ungeschicklichkeit
 PropertyName,hallucination,Halluzination
 PropertyName,hunger,Hunger
+PropertyName,inebriation,
 PropertyName,invisibility,Unsichtbarkeit
 PropertyName,jumping,Springen
 PropertyName,levitation,Levitation

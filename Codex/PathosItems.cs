@@ -919,7 +919,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.leather);
         I.SetOneHandedWeapon(Skills.whip, null, Elements.physical, DamageType.Slash, 1.d6(), D =>
         {
-          D.Disarm();
+          D.SpecialDisarm();
           D.WhenChance(Chance.OneIn10, T =>
           {
             T.WithSourceSanctity
@@ -5986,18 +5986,19 @@ namespace Pathos
             {
               B.Nutrition(Dice.Fixed(30));
               B.RemoveTransient(Properties.fear);
+              B.ApplyTransient(Properties.inebriation, Dice.One); // briefly drunk
             },
             U =>
             {
               U.Nutrition(Dice.Fixed(20));
               U.RemoveTransient(Properties.fear);
-              U.ApplyTransient(Properties.confusion, 5.d10()); // a bit drunk.
+              U.ApplyTransient(Properties.inebriation, 5.d10()); // a bit drunk.
             },
             C =>
             {
               C.Nutrition(Dice.Fixed(10));
-              C.ApplyTransient(Properties.confusion, 5.d10());
-              C.ApplyTransient(Properties.fainting, 3.d6()); // pass out.
+              C.ApplyTransient(Properties.inebriation, 10.d10()); // a lot drunk
+              C.ApplyTransient(Properties.fainting, 3.d6()); // black out.
             }
           );
           Use.Apply.WhenTargetKind(new[] { Kinds.dwarf }, T =>
@@ -6760,7 +6761,7 @@ namespace Pathos
               B.RestoreAbility();
               B.Unafflict();
               B.Unpolymorph();
-              B.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.confusion, Properties.stunned, Properties.petrifying);
+              B.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.inebriation, Properties.confusion, Properties.stunned, Properties.petrifying);
             },
             U =>
             {
@@ -10723,11 +10724,11 @@ namespace Pathos
           (
             B =>
             {
-              B.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.confusion, Properties.stunned, Properties.petrifying);
+              B.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.hallucination, Properties.confusion, Properties.sickness, Properties.stunned, Properties.petrifying);
             },
             U =>
             {
-              U.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.confusion);
+              U.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.hallucination, Properties.confusion);
             },
             C =>
             {
@@ -11896,11 +11897,11 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.force, 1.d6() + 2)
              .SetObjects()
              .SetAudibility(1);
-          Use.Apply.StealAsset();
+          Use.Apply.StealAsset(Properties.fear);
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.StealAsset();
+          A.StealAsset(Properties.fear);
         });
       });
 
@@ -11968,7 +11969,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.tool);
         I.SetOneHandedWeapon(Skills.whip, null, Elements.physical, DamageType.Bludgeon, 1.d2(), A =>
         {
-          A.Disarm();
+          A.SpecialDisarm();
         });
       });
 
@@ -11988,7 +11989,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.tool);
         I.SetOneHandedWeapon(Skills.whip, null, Elements.physical, DamageType.Bludgeon, 1.d3(), A =>
         {
-          A.Disarm();
+          A.SpecialDisarm();
         });
       });
 
@@ -12298,7 +12299,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.leather);
         I.SetOneHandedWeapon(Skills.whip, null, Elements.physical, DamageType.Slash, 1.d4(), A =>
         {
-          A.Disarm();
+          A.SpecialDisarm();
         });
       });
 
@@ -12318,7 +12319,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.leather);
         I.SetOneHandedWeapon(Skills.whip, null, Elements.physical, DamageType.Slash, 1.d4() + 1, A =>
         {
-          A.Disarm();
+          A.SpecialDisarm();
         });
       });
 
@@ -13034,7 +13035,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         var W = I.SetOneHandedWeapon(Skills.flail, null, Elements.physical, DamageType.Bludgeon, 1.d3() + 1, A =>
         {
-          A.Disarm();
+          A.SpecialDisarm();
         });
         W.AttackModifier = Modifier.Plus1;
       });

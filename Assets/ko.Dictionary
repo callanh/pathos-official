@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,숨기기
 LiteralText,CONCEALED,숨겨짐
 LiteralText,CONDUCT,행위
 LiteralText,CONFIRM,확인
-LiteralText,CONFUSE,혼란
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,마지막 레벨에 도달하여 당신의 숙적을 물리친것을 축하합니다.
 LiteralText,Connect to game hosted by another player.,다른 플레이어가 호스트한 게임에 연결
 LiteralText,CONSOLE,콘솔
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,목이 졸렸다
 LiteralText,weakness to,약점 :
 LiteralText,weight,무게
 LiteralText,when afflicted,감염 받을 시
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,떨어뜨릴 시
 LiteralText,when entered,들어갔을 때
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,응시와 광선 공격이 시전자에게 반사된다.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,사전에 몬스터의 위치와 위험도를 경고한다.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,공포에 질려 공격할 수 없고 도망쳐야만한다.
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,던전을 조용히 다니며 잠자는 몬스터에게 몰래 다가갈 수 있다.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"폴리모프를 방지하지만, 원래 모습으로 돌아오는 것 또한 방지한다."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",느려지거나 마비 또는 그 외의 움직임을 제한하는 효과로부터 보호받는다.
@@ -4042,6 +4043,7 @@ PropertyName,free action,자유 행동
 PropertyName,fumbling,실수
 PropertyName,hallucination,환각
 PropertyName,hunger,굶주림
+PropertyName,inebriation,
 PropertyName,invisibility,투명화
 PropertyName,jumping,점프
 PropertyName,levitation,공중부양

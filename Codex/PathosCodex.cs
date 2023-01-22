@@ -350,6 +350,19 @@ namespace Pathos
       });
     }
 
+    /// <summary>
+    /// Special disarming has a 50% chance of stunning animate objects. Use normal disarm effect for everyone else.
+    /// </summary>
+    /// <param name="Apply"></param>
+    internal static void SpecialDisarm(this ApplyEditor Apply)
+    {
+      Apply.WhenTargetAnimated
+      (
+        T => T.WhenChance(Chance.OneIn2, D => D.ApplyTransient(Codex.Properties.stunned, 3.d6())), // animate objects have a 50% chance of being stunned by a 'disarming' effect.
+        E => E.Disarm(Codex.Attributes.dexterity)
+      );
+    }
+
     private static readonly Inv.DistinctList<Action> RecruitList;
     private static bool IsRecruiting;
   }

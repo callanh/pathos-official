@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,OCULTAR
 LiteralText,CONCEALED,OCULTADO
 LiteralText,CONDUCT,CONDUCTA
 LiteralText,CONFIRM,CONFIRMA PARA
-LiteralText,CONFUSE,CONFUNDIR
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Felicitaciones por haber llegado al nivel final y haber derrotado a tu némesis.
 LiteralText,Connect to game hosted by another player.,Conéctate al juego hosteado por otro jugador.
 LiteralText,CONSOLE,CONSOLA
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,fue estrangulado
 LiteralText,weakness to,debilidad a
 LiteralText,weight,peso
 LiteralText,when afflicted,cuando está afligido
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,cuando se deja caer
 LiteralText,when entered,al entrar
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Los ataques de mirada y rayo son reflejados de vuelta hacia el lanzador.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Te da una advertencia previa de los monstruos cercanos y su nivel aproximado de amenaza.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Atenazado por el terror, no puedes atacar y debes huir."
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Moviéndote silenciosamente por la mazmorra puedes acercarte a los monstruos dormidos.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Evita que seas objeto del polimorfismo pero también evita que vuelvas a tu forma natural.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Te protege de los efectos que disminuyen la velocidad, paralizan o restringen tu movimiento."
@@ -4042,6 +4043,7 @@ PropertyName,free action,acción libre
 PropertyName,fumbling,revuelto
 PropertyName,hallucination,alucinación
 PropertyName,hunger,hambre
+PropertyName,inebriation,
 PropertyName,invisibility,invisivilidad
 PropertyName,jumping,salto
 PropertyName,levitation,levitación

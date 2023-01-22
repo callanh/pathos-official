@@ -836,7 +836,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
-        E.AddAttack(AttackTypes.spell, Elements.magical, 2.d6(), A => A.Apply.Disarm());
+        E.AddAttack(AttackTypes.spell, Elements.magical, 2.d6(), A => A.Apply.SpecialDisarm());
         E.SetCorpse(Chance.Never);
       });
 
@@ -1037,7 +1037,7 @@ namespace Pathos
           K.Apply.ApplyTransient(Properties.blindness, 2.d6());
           K.Apply.ApplyTransient(Properties.stunned, 2.d6());
         });
-        E.AddAttack(AttackTypes.spell, Elements.physical, 1.d8(), A => A.Apply.Disarm());
+        E.AddAttack(AttackTypes.spell, Elements.physical, 1.d8(), A => A.Apply.SpecialDisarm());
         E.SetCorpse(Chance.Never);
       });
 
@@ -2774,7 +2774,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());// +2 from STR.
         E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset(Stocks.food);
+          K.Apply.StealCarriedAsset(Properties.fear, Stocks.food);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -5107,13 +5107,13 @@ namespace Pathos
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
         {
-          A.Apply.Disarm();
+          A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
-          A.Apply.Disarm();
+          A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 10.d10());
           //A.Apply.WhenChance(Chance.OneIn100, Z => Z.Afflict(Codex.Afflictions.crabs)); // funny but doesn't make sense.
@@ -5889,13 +5889,13 @@ namespace Pathos
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A => // -1 from str.
         {
-          A.Apply.Disarm();
+          A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
-          A.Apply.Disarm();
+          A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
           A.Apply.Karma(ChangeType.Decrease, 10.d10());
         });
@@ -10154,7 +10154,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -11365,7 +11365,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.master, Skills.swimming);
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6(), A => A.Apply.Disarm()); // +4 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6(), A => A.Apply.SpecialDisarm()); // +4 from str.
         E.AddReaction(Chance.Always, Elements.water, A => A.Heal(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
@@ -14187,7 +14187,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20526,7 +20526,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2(), K => // -1 from str.
         {
-          K.Apply.StealAsset(Items.gold_coin);
+          K.Apply.StealAsset(Properties.fear, Items.gold_coin);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.OneIn4);
@@ -20581,7 +20581,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), K => // -1 from str.
         {
-          K.Apply.StealAsset(Items.gold_coin);
+          K.Apply.StealAsset(Properties.fear, Items.gold_coin);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25463,7 +25463,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.magical);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.Always);
@@ -25513,7 +25513,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25561,7 +25561,7 @@ namespace Pathos
         E.Startup.SetTalent(Properties.see_invisible, Properties.blinking);
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d2(), K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
         E.SetCorpse(Chance.OneIn4);
@@ -25609,7 +25609,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -2 from str.
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.SetCorpse(Chance.OneIn4);
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
@@ -25658,11 +25658,11 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25713,11 +25713,11 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25767,7 +25767,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25816,7 +25816,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedAsset();
+          K.Apply.StealEquippedAsset(Properties.fear);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -28327,7 +28327,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -1
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.One, K =>
         {
-          K.Apply.StealCarriedAsset();
+          K.Apply.StealCarriedAsset(Properties.fear);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -32808,7 +32808,7 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedAsset(Stocks.food);
+          K.Apply.StealCarriedAsset(Properties.fear, Stocks.food);
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Always);

@@ -3163,7 +3163,6 @@ LiteralText,CONCEAL,GIẤU
 LiteralText,CONCEALED,ĐÃ GIẤU
 LiteralText,CONDUCT,HẠNH KIỂM
 LiteralText,CONFIRM,XÁC NHẬN
-LiteralText,CONFUSE,BỐI RỐI
 LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Chúc mừng bạn đã đạt đến cấp độ cuối cùng và đánh bại kẻ thù của bạn.
 LiteralText,Connect to game hosted by another player.,Kết nối vào trò chơi từ người chơi khác
 LiteralText,CONSOLE,BẢNG ĐIỀU KHIỂN
@@ -3818,6 +3817,7 @@ LiteralText,was strangled,bị bóp nghẹt
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
+LiteralText,when animated,
 LiteralText,when confused,
 LiteralText,when dropped,khi thả xuống
 LiteralText,when entered,khi đi vào
@@ -3975,6 +3975,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Tia phép và phép lườm bị phản lại về phía người niệm phép.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Cảnh báo bạn về những quái vật ở gần và ước tính độ nguy hiểm của chúng.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Co rúm lại vì hoảng sợ, bạn không thể tấn công và chạy trốn khỏi đó."
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Di chuyển lặng lẽ trong hầm ngục giúp bạn có thể lén gần đến những con quái vật ngủ say.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Bảo vệ bạn khỏi việc bị biến hình nhưng cũng khiến bạn không thể quay trở lại hình dạng ban đầu nữa.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Bảo vệ bạn khỏi mọi hiệu ứng làm chậm, choáng hoặc tê liệt."
@@ -4042,6 +4043,7 @@ PropertyName,free action,tự do
 PropertyName,fumbling,hậu đậu
 PropertyName,hallucination,hoang tưởng
 PropertyName,hunger,đói
+PropertyName,inebriation,
 PropertyName,invisibility,tàng hình
 PropertyName,jumping,nhảy
 PropertyName,levitation,lơ lửng

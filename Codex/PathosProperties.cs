@@ -148,6 +148,7 @@ namespace Pathos
         P.Description = "Gripped by terror you cannot attack and should flee.";
         P.Unwanted = true;
         P.PickupInterfering = true;
+        P.AttackPrevented = true;
       });
 
       flight = AddProperty("flight", P =>
@@ -185,6 +186,16 @@ namespace Pathos
         P.IncreasedMetabolism = true;
       });
 
+      inebriation = AddProperty("inebriation", P => // or intoxication?
+      {
+        P.Description = "In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.";
+        P.SetImmunityProperty(fear);
+        P.Unwanted = true;
+        P.ComplicateUntrapping = true;
+        P.ConcentrationImpairing = true;
+        P.StaggerChance = Chance.OneIn10;
+      });
+
       invisibility = AddProperty("invisibility", P =>
       {
         P.Description = "This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.";
@@ -214,6 +225,7 @@ namespace Pathos
       lifesaving = AddProperty("lifesaving", P =>
       {
         P.Description = "Revives you to half-health when you die at the cost of one point of constitution.";
+        P.Revival = true;
       });
 
       mana_regeneration = AddProperty("mana regeneration", P =>
@@ -227,9 +239,9 @@ namespace Pathos
       {
         P.Description = "Suddenly you will fall asleep until you wake or are woken.";
         P.Unwanted = true;
-        P.SetSymptom(Chance.OneIn85, A =>
+        P.SetSymptom(Chance.OneIn85, S =>
         {
-          A.UnlessTargetHasProperty(sleeping, S =>
+          S.UnlessTargetHasProperty(sleeping, S =>
           {
             // slowness will be applied instead if sleep is resisted.
 
@@ -258,6 +270,8 @@ namespace Pathos
         P.ParityElement = Elements.petrify;
         P.Unwanted = true;
         P.SpeedMultiplier = 0.25F;
+        //P.DamageMultiplier = 2.0F;
+        //P.DefenderModifier = Modifier.FromRank(-8);
       });
 
       phasing = AddProperty("phasing", P =>
@@ -319,9 +333,9 @@ namespace Pathos
       {
         P.Description = "You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.";
         P.Unwanted = true;
-        P.SetSymptom(Chance.OneIn10, A =>
+        P.SetSymptom(Chance.OneIn10, S =>
         {
-          A.WhenSourceNotHasProperty(fainting,
+          S.WhenSourceNotHasProperty(fainting,
             T => T.WhenProbability(Table =>
             {
               Table.Add(15, P => P.Vomit(5.d10()));
@@ -466,11 +480,9 @@ namespace Pathos
       Register.clairvoyance = clairvoyance;
       Register.clarity = clarity;
       Register.conflict = conflict;
-      Register.confusion = confusion;
       Register.dark_vision = dark_vision;
       Register.displacement = displacement;
       Register.fainting = fainting;
-      Register.fear = fear;
       Register.flight = flight;
       Register.free_action = free_action;
       Register.fumbling = fumbling;
@@ -479,7 +491,6 @@ namespace Pathos
       Register.invisibility = invisibility;
       Register.jumping = jumping;
       Register.levitation = levitation;
-      Register.lifesaving = lifesaving;
       Register.paralysis = paralysis;
       Register.petrifying = petrifying;
       Register.phasing = phasing;
@@ -487,7 +498,6 @@ namespace Pathos
       Register.reflection = reflection;
       Register.see_invisible = see_invisible;
       Register.sleeping = sleeping;
-      Register.stunned = stunned;
       Register.sustain_ability = sustain_ability;
       Register.telekinesis = telekinesis;
       Register.telepathy = telepathy;
@@ -518,6 +528,7 @@ namespace Pathos
     public readonly Property fumbling;
     public readonly Property hallucination;
     public readonly Property hunger;
+    public readonly Property inebriation;
     public readonly Property invisibility;
     public readonly Property jumping;
     public readonly Property levitation;

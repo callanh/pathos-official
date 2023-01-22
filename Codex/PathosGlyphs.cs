@@ -2248,6 +2248,7 @@ namespace Pathos
     public readonly Glyph fumbling_property;
     public readonly Glyph hallucination_property;
     public readonly Glyph hunger_property;
+    public readonly Glyph inebriation_property;
     public readonly Glyph invisibility_property;
     public readonly Glyph jumping_property;
     public readonly Glyph levitation_property;
@@ -2474,7 +2475,6 @@ namespace Pathos
     public readonly Glyph quick_attack;
     public readonly Glyph quick_blink;
     public readonly Glyph quick_choose;
-    public readonly Glyph quick_confuse;
     public readonly Glyph quick_console;
     public readonly Glyph quick_hide;
     public readonly Glyph quick_item;
