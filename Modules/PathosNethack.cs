@@ -22,6 +22,9 @@ namespace Pathos
           RequiresMasterMode: false, IsPublished: true)
     {
       this.Codex = Codex;
+
+      SetIntroduction(Codex.Sonics.introduction);
+      SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.outside);
       AddTerms(NethackNames.All);
     }
@@ -1035,7 +1038,7 @@ namespace Pathos
 
               case 2:
                 // gems.
-                var GemProbability = Codex.Items.List.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One && !I.Artifact).ToProbability(I => I.Rarity);
+                var GemProbability = Codex.Items.List.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One && !I.Grade.Unique).ToProbability(I => I.Rarity);
 
                 foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
                 {
@@ -1831,7 +1834,7 @@ namespace Pathos
         case 1:
           // wine cellar.
           var PotionDice = 1.d(CellarWidth) + (CellarHeight / 2);
-          var PotionProbability = Codex.Items.List.Where(I => I.Type == ItemType.Potion && !I.Artifact).ToProbability(P => P.Rarity);
+          var PotionProbability = Codex.Items.List.Where(I => I.Type == ItemType.Potion && !I.Grade.Unique).ToProbability(P => P.Rarity);
 
           foreach (var Index in PotionDice.Roll().NumberSeries())
           {
@@ -2397,7 +2400,7 @@ namespace Pathos
         while ((ContainedAsset == null || ContainedAsset.Container != null) && Attempt < 10)
         {
           // just in case of a generated artifact container, it can't just be discarded, so place it on the ground.
-          if (ContainedAsset != null && ContainedAsset.Item.Artifact)
+          if (ContainedAsset != null && ContainedAsset.Item.Grade.Unique)
             Square.PlaceAsset(ContainedAsset);
 
           ContainedAsset = Generator.NewRandomAsset(Square, Stock: null);
@@ -2408,7 +2411,7 @@ namespace Pathos
         {
           if (ContainedAsset.Container == null)
             Container.Stash.Add(ContainedAsset);
-          else if (ContainedAsset.Item.Artifact)
+          else if (ContainedAsset.Item.Grade.Unique)
             Square.PlaceAsset(ContainedAsset);
         }
       }
@@ -3537,7 +3540,7 @@ namespace Pathos
                     KingCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
                     KingCharacter.SetResistance(Elements.magical, 100);
 
-                    Generator.AcquireArtifact(MinesSquare, KingCharacter, Codex.Qualifications.master);
+                    Generator.AcquireUnique(MinesSquare, KingCharacter, Codex.Qualifications.master);
 
                     // gnome with a wand of death!
                     KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(MinesSquare, Codex.Items.wand_of_death));
@@ -3706,7 +3709,7 @@ namespace Pathos
                 UnderCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
                 UnderCharacter.SetResistance(Elements.magical, 100);
 
-                Generator.AcquireArtifact(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
+                Generator.AcquireUnique(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
 
                 UnderCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(UnderCharacter.Square, Codex.Items.potion_of_full_healing));
               }
@@ -3962,7 +3965,7 @@ namespace Pathos
           foreach (var Competency in BossCharacter.Competencies)
             Competency.Set(Codex.Qualifications.master);
 
-          Generator.AcquireArtifact(BossCharacter.Square, BossCharacter, Codex.Qualifications.master);
+          Generator.AcquireUnique(BossCharacter.Square, BossCharacter, Codex.Qualifications.master);
         }
       }
 
@@ -4136,7 +4139,7 @@ namespace Pathos
       var JammedSquare = GetJammedSquare();
       if (JammedSquare != null)
       {
-        var ArtifactItem = Generator.GetArtifactItem();
+        var ArtifactItem = Generator.GetUniqueItem();
         if (ArtifactItem != null)
           JammedSquare.PlaceAsset(Generator.NewSpecificAsset(JammedSquare, ArtifactItem));
 
@@ -4154,7 +4157,7 @@ namespace Pathos
       else if (BossCharacter != null)
       {
         // carrying the artifact instead.
-        Generator.AcquireArtifact(CurrentSquare, BossCharacter, Codex.Qualifications.master);
+        Generator.AcquireUnique(CurrentSquare, BossCharacter, Codex.Qualifications.master);
       }
 
       return true;
@@ -4376,7 +4379,7 @@ namespace Pathos
           var Cursed = Codex.Sanctities.Cursed;
 
           var BagSquare = TreasureSquareList.GetRandomOrNull();
-          var BagItem = Codex.Items.List.Where(I => I.Type == ItemType.Bag).Where(I => I.DefaultSanctity != Cursed && !I.Artifact && I.DowngradeItem != null).ToProbability(I => I.Rarity).GetRandomOrNull();
+          var BagItem = Codex.Items.List.Where(I => I.Type == ItemType.Bag).Where(I => I.DefaultSanctity != Cursed && !I.Grade.Unique && I.DowngradeItem != null).ToProbability(I => I.Rarity).GetRandomOrNull();
           if (BagSquare != null && BagItem != null)
           {
             Generator.PlaceSpecificAsset(BagSquare, BagItem);
@@ -4384,7 +4387,7 @@ namespace Pathos
           }
 
           var CloakSquare = TreasureSquareList.GetRandomOrNull();
-          var CloakItem = Codex.Items.List.Where(I => I.Type == ItemType.Cloak).Where(I => I.DefaultSanctity != Cursed && !I.Artifact && I.Equip.HasEffects()).ToProbability(I => I.Rarity).GetRandomOrNull();
+          var CloakItem = Codex.Items.List.Where(I => I.Type == ItemType.Cloak).Where(I => I.DefaultSanctity != Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToProbability(I => I.Rarity).GetRandomOrNull();
           if (CloakSquare != null && CloakItem != null)
           {
             Generator.PlaceSpecificAsset(CloakSquare, CloakItem);
@@ -4392,7 +4395,7 @@ namespace Pathos
           }
 
           var AmuletSquare = TreasureSquareList.GetRandomOrNull();
-          var AmuletItem = Codex.Items.List.Where(I => I.Type == ItemType.Amulet).Where(I => I.DefaultSanctity != Cursed && !I.Artifact && I.Equip.HasEffects()).ToProbability(I => I.Rarity).GetRandomOrNull();
+          var AmuletItem = Codex.Items.List.Where(I => I.Type == ItemType.Amulet).Where(I => I.DefaultSanctity != Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToProbability(I => I.Rarity).GetRandomOrNull();
           if (AmuletSquare != null && AmuletItem != null)
           {
             Generator.PlaceSpecificAsset(AmuletSquare, AmuletItem);
@@ -4404,7 +4407,7 @@ namespace Pathos
 
         // 1 x ring.
         var RingSquare = FloorSquareList.GetRandomOrNull();
-        var RingItem = Codex.Items.List.Where(I => I.Type == ItemType.Ring && !I.Artifact).ToProbability(I => I.Rarity).GetRandomOrNull();
+        var RingItem = Codex.Items.List.Where(I => I.Type == ItemType.Ring && !I.Grade.Unique).ToProbability(I => I.Rarity).GetRandomOrNull();
         if (RingSquare != null && RingItem != null)
         {
           Generator.PlaceSpecificAsset(RingSquare, RingItem);
@@ -4413,7 +4416,7 @@ namespace Pathos
 
         // 1 x wand.
         var WandSquare = FloorSquareList.GetRandomOrNull();
-        var WandItem = Codex.Items.List.Where(I => I.Type == ItemType.Wand && !I.Artifact).ToProbability(I => I.Rarity).GetRandomOrNull();
+        var WandItem = Codex.Items.List.Where(I => I.Type == ItemType.Wand && !I.Grade.Unique).ToProbability(I => I.Rarity).GetRandomOrNull();
         if (WandSquare != null && WandItem != null)
         {
           Generator.PlaceSpecificAsset(WandSquare, WandItem);
@@ -4421,7 +4424,7 @@ namespace Pathos
         }
 
         // 5 x comestible + one huge chunk of meat.
-        var FoodProbability = Codex.Items.List.Where(I => I.Type == ItemType.Food && !I.Artifact).ToProbability(I => I.Rarity);
+        var FoodProbability = Codex.Items.List.Where(I => I.Type == ItemType.Food && !I.Grade.Unique).ToProbability(I => I.Rarity);
 
         for (var FoodIndex = 0; FoodIndex < 6; FoodIndex++)
         {
@@ -4463,7 +4466,7 @@ namespace Pathos
       // possible from level 8 onwards (soldier is level 8).
       Debug.Assert(FortSoldierArray.Length > 0 && FortSoldierArray.Min(E => E.Difficulty) <= VaultRoom.Map.Difficulty);
 
-      var FortFirearmArray = FortItems.List.Where(I => I.Weapon != null && I.IsAbolitionCandidate() && !I.Artifact && I.Price > Gold.One).ToArray();
+      var FortFirearmArray = FortItems.List.Where(I => I.Weapon != null && I.IsAbolitionCandidate() && !I.Grade.Unique && I.Price > Gold.One).ToArray();
 
       var VaultMap = VaultRoom.Map;
 
@@ -4498,7 +4501,7 @@ namespace Pathos
 
       // NOTE: deliberately zero probability for the highest level soldier to be generated.
       var FortSoldierProbability = FortSoldierArray.ToProbability(E => FortSoldierMaxChallenge - E.Challenge);
-      var FortGemProbability = FortItems.List.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One && !I.Artifact).ToProbability(I => I.Rarity);
+      var FortGemProbability = FortItems.List.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One && !I.Grade.Unique).ToProbability(I => I.Rarity);
       var FortFirearmProbability = FortFirearmArray.ToProbability(I => (FortFirearmMaxEssence - I.Essence).GetUnits() + 1);
       var FortDogProbability = new[] { FortEntities.pit_bull, FortEntities.large_dog, FortEntities.dog, FortEntities.death_dog, FortEntities.hell_hound }.ToProbability(I => I.Frequency);
       var FortFoodProbability = new[] { FortItems.cration, FortItems.kration }.ToProbability(I => I.Rarity);
@@ -5078,7 +5081,7 @@ namespace Pathos
               KingCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
             if (!StandardGeneration)
-              Generator.AcquireArtifact(KingdomSquare, KingCharacter, Codex.Qualifications.master);
+              Generator.AcquireUnique(KingdomSquare, KingCharacter, Codex.Qualifications.master);
           }
 
           if (IsTown && KingdomSquare.Character != null && KingdomSquare.Character.Neutral)
@@ -5102,7 +5105,7 @@ namespace Pathos
 
               if (StandardGeneration)
               {
-                var KingItem = Generator.GetArtifactItem();
+                var KingItem = Generator.GetUniqueItem();
                 if (KingItem != null)
                   Generator.PlaceSpecificAsset(KingdomSquare, KingItem);
               }
@@ -5300,7 +5303,7 @@ namespace Pathos
             foreach (var SchoolSkill in SchoolSkillArray.Except(LairCharacter.Competencies.Select(C => C.Skill)))
               LairCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
-            var ArtifactItem = Generator.GetArtifactItem();
+            var ArtifactItem = Generator.GetUniqueItem();
 
             if (ArtifactItem != null)
             {
@@ -5544,7 +5547,7 @@ namespace Pathos
             // downgrade enchantment to specialist.
             TowerCharacter.GetCompetency(Codex.Skills.enchantment).Set(Codex.Qualifications.specialist);
 
-            var ArtifactItem = Generator.GetArtifactItem();
+            var ArtifactItem = Generator.GetUniqueItem();
 
             if (ArtifactItem != null)
             {
@@ -5678,7 +5681,7 @@ namespace Pathos
                 AbyssCharacter.Inventory.Carried.Add(NewAsset(Codex.Items.potion_of_full_healing, 2, Codex.Sanctities.Blessed));
                 AbyssCharacter.Inventory.Carried.Add(NewAsset(Codex.Items.potion_of_sickness, 1, Codex.Sanctities.Cursed));
 
-                Generator.AcquireArtifact(AbyssSquare, AbyssCharacter, Codex.Qualifications.master);
+                Generator.AcquireUnique(AbyssSquare, AbyssCharacter, Codex.Qualifications.master);
               }
             }
           }

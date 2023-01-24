@@ -13,7 +13,23 @@ namespace Pathos
     internal CodexKinds(Codex Codex)
       : base(Codex.Manifest.Kinds)
     {
-      Kind AddKind(string Name)
+      Kind AddLivingKind(string Name)
+      {
+        return Register.Add(K =>
+        {
+          K.Name = Name;
+          K.Living = true;
+        });
+      }
+      Kind AddUndeadKind(string Name)
+      {
+        return Register.Add(K =>
+        {
+          K.Name = Name;
+          K.Undead = true;
+        });
+      }
+      Kind AddOtherKind(string Name)
       {
         return Register.Add(K =>
         {
@@ -21,72 +37,68 @@ namespace Pathos
         });
       }
 
-      angel = AddKind("angel");
-      insect = AddKind("insect");
-      bat = AddKind("bat");
-      beast = AddKind("beast");
-      bird = AddKind("bird");
-      blob = AddKind("blob");
-      cat = AddKind("cat");
-      changeling = AddKind("changeling");
-      centaur = AddKind("centaur");
-      demon = AddKind("demon");
-      devourer = AddKind("devourer");
-      dog = AddKind("dog");
-      dragon = AddKind("dragon");
-      dwarf = AddKind("dwarf");
-      echo = AddKind("echo");
-      elemental = AddKind("elemental");
-      elf = AddKind("elf");
-      eye = AddKind("eye");
-      fairy = AddKind("fairy");
-      flayer = AddKind("flayer");
-      fungus = AddKind("fungus");
-      ghost = AddKind("ghost");
-      giant = AddKind("giant");
-      gnoll = AddKind("gnoll");
-      gnome = AddKind("gnome");
-      golem = AddKind("golem");
-      gremlin = AddKind("gremlin");
-      halfling = AddKind("halfling");
-      horse = AddKind("horse");
-      human = AddKind("human");
-      imp = AddKind("imp");
-      jelly = AddKind("jelly");
-      kobold = AddKind("kobold");
-      lich = AddKind("lich");
-      light = AddKind("light");
-      lizard = AddKind("lizard");
-      lycanthrope = AddKind("lycanthrope");
-      marine = AddKind("marine");
-      mercenary = AddKind("mercenary");
-      mimic = AddKind("mimic");
-      mummy = AddKind("mummy");
-      naga = AddKind("naga");
-      ogre = AddKind("ogre");
-      orc = AddKind("orc");
-      pudding = AddKind("pudding");
-      quadruped = AddKind("quadruped");
-      rodent = AddKind("rodent");
-      snake = AddKind("snake");
-      military = AddKind("military");
-      spider = AddKind("spider");
-      trapper = AddKind("trapper");
-      troll = AddKind("troll");
-      umber = AddKind("umber");
-      vampire = AddKind("vampire");
-      vortex = AddKind("vortex");
-      worm = AddKind("worm");
-      wraith = AddKind("wraith");
-      xan = AddKind("xan");
-      zombie = AddKind("zombie");
+      angel = AddLivingKind("angel");
+      insect = AddLivingKind("insect");
+      bat = AddLivingKind("bat");
+      beast = AddLivingKind("beast");
+      bird = AddLivingKind("bird");
+      blob = AddLivingKind("blob");
+      cat = AddLivingKind("cat");
+      changeling = AddLivingKind("changeling");
+      centaur = AddLivingKind("centaur");
+      demon = AddOtherKind("demon");
+      devourer = AddLivingKind("devourer");
+      dog = AddLivingKind("dog");
+      dragon = AddLivingKind("dragon");
+      dwarf = AddLivingKind("dwarf");
+      echo = AddOtherKind("echo");
+      elemental = AddOtherKind("elemental");
+      elf = AddLivingKind("elf");
+      eye = AddLivingKind("eye");
+      fairy = AddLivingKind("fairy");
+      flayer = AddLivingKind("flayer");
+      fungus = AddLivingKind("fungus");
+      ghost = AddUndeadKind("ghost");
+      giant = AddLivingKind("giant");
+      gnoll = AddLivingKind("gnoll");
+      gnome = AddLivingKind("gnome");
+      golem = AddOtherKind("golem");
+      gremlin = AddLivingKind("gremlin");
+      halfling = AddLivingKind("halfling");
+      horse = AddLivingKind("horse");
+      human = AddLivingKind("human");
+      imp = AddLivingKind("imp");
+      jelly = AddLivingKind("jelly");
+      kobold = AddLivingKind("kobold");
+      lich = AddLivingKind("lich");
+      light = AddLivingKind("light");
+      lizard = AddLivingKind("lizard");
+      lycanthrope = AddLivingKind("lycanthrope");
+      marine = AddLivingKind("marine");
+      mercenary = AddLivingKind("mercenary");
+      mimic = AddLivingKind("mimic");
+      mummy = AddUndeadKind("mummy");
+      naga = AddLivingKind("naga");
+      ogre = AddLivingKind("ogre");
+      orc = AddLivingKind("orc");
+      pudding = AddLivingKind("pudding");
+      quadruped = AddLivingKind("quadruped");
+      rodent = AddLivingKind("rodent");
+      snake = AddLivingKind("snake");
+      military = AddLivingKind("military");
+      spider = AddLivingKind("spider");
+      trapper = AddLivingKind("trapper");
+      troll = AddLivingKind("troll");
+      umber = AddLivingKind("umber");
+      vampire = AddUndeadKind("vampire");
+      vortex = AddOtherKind("vortex");
+      worm = AddLivingKind("worm");
+      wraith = AddUndeadKind("wraith");
+      xan = AddLivingKind("xan");
+      zombie = AddUndeadKind("zombie");
 
-      this.UndeadArray = new[] { ghost, lich, mummy, vampire, wraith, zombie };
-      this.LivingArray = Register.List.Except(UndeadArray).Except(new[] { demon, elemental, golem, vortex }).ToArray();
-
-      var Kinds = Codex.Manifest.Kinds;
-      Kinds.Undead.Set(UndeadArray);
-      Kinds.Living.Set(LivingArray);
+      this.UndeadArray = List.Where(K => K.Undead).ToArray();
+      this.LivingArray = List.Where(K => K.Living).ToArray();
     }
 #endif
 

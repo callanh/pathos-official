@@ -67,13 +67,13 @@ namespace Pathos
 
             this.devices = SPDDebug.codex.Devices.List.ToDistinctList();
 
-            this.realGems = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.Gem).Where(i => !i.Artifact && i.Material == SPDDebug.codex.Materials.gemstone).ToDistinctList();
+            this.realGems = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.Gem).Where(i => !i.Grade.Unique && i.Material == SPDDebug.codex.Materials.gemstone).ToDistinctList();
 
             this.tools = SPDDebug.codex.Items.List
               .Where(i => i.Type == ItemType.Device || i.Type == ItemType.Eyewear || i.Type == ItemType.Instrument || i.Type == ItemType.Light || i.Type == ItemType.SkeletonKey || i.Type == ItemType.Tool)
-              .Where(i => !i.Artifact && i.Rarity > 0 && i != SPDDebug.codex.Items.porter).ToDistinctList();
+              .Where(i => !i.Grade.Unique && i.Rarity > 0 && i != SPDDebug.codex.Items.porter).ToDistinctList();
 
-            this.thrownWeapons = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.ThrownWeapon).Where(i => !i.Artifact && !i.IsAbolitionCandidate()).ToDistinctList();
+            this.thrownWeapons = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.ThrownWeapon).Where(i => !i.Grade.Unique && !i.IsAbolitionCandidate()).ToDistinctList();
 
             this.thrownFirearms = new Inv.DistinctList<Item>()
             {
@@ -120,19 +120,19 @@ namespace Pathos
             this.randomArmour = SPDDebug.codex.Items.List.Where(armour =>
                 (armour.Type == ItemType.Boots || armour.Type == ItemType.Cloak ||
                 armour.Type == ItemType.Gloves || armour.Type == ItemType.Helmet || armour.Type == ItemType.Shield ||
-                armour.Type == ItemType.Shirt || armour.Type == ItemType.Suit) && !armour.Artifact && armour.Rarity > 0).ToDistinctList();
+                armour.Type == ItemType.Shirt || armour.Type == ItemType.Suit) && !armour.Grade.Unique && armour.Rarity > 0).ToDistinctList();
 
             this.amulets = SPDDebug.codex.Items.List.Where(
-                amulet => amulet.Type == ItemType.Amulet && !amulet.Artifact && amulet.Rarity > 0 && amulet != SPDDebug.codex.Items.amulet_of_change).ToDistinctList();
+                amulet => amulet.Type == ItemType.Amulet && !amulet.Grade.Unique && amulet.Rarity > 0 && amulet != SPDDebug.codex.Items.amulet_of_change).ToDistinctList();
 
             this.randomWeapon = SPDDebug.codex.Items.List.Where(
-                weapon => (weapon.Type == ItemType.MeleeWeapon || weapon.Type == ItemType.ReachWeapon || weapon.Type == ItemType.RangedWeapon) && !weapon.Artifact && weapon.Rarity > 0).ToDistinctList();
+                weapon => (weapon.Type == ItemType.MeleeWeapon || weapon.Type == ItemType.ReachWeapon || weapon.Type == ItemType.RangedWeapon) && !weapon.Grade.Unique && weapon.Rarity > 0).ToDistinctList();
 
             this.books = SPDDebug.codex.Items.List.Where(book => book.Type == ItemType.Book && !ItemForbidden(book)).ToDistinctList();
 
-            this.potions = SPDDebug.codex.Stocks.potion.Items.Where(I => !I.Artifact && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
+            this.potions = SPDDebug.codex.Stocks.potion.Items.Where(I => !I.Grade.Unique && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
             
-            this.scrolls = SPDDebug.codex.Stocks.scroll.Items.Where(I => !I.Artifact && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
+            this.scrolls = SPDDebug.codex.Stocks.scroll.Items.Where(I => !I.Grade.Unique && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
 
             this.unleveledRing = new Inv.DistinctList<Item>()
             {
@@ -160,10 +160,10 @@ namespace Pathos
             };
 
             this.wands = SPDDebug.codex.Items.List.Where(
-              wand => wand.Type == ItemType.Wand && !wand.Artifact && wand.Rarity > 0 && !ItemForbidden(wand)).ToDistinctList();
+              wand => wand.Type == ItemType.Wand && !wand.Grade.Unique && wand.Rarity > 0 && !ItemForbidden(wand)).ToDistinctList();
 
             this.randRing = SPDDebug.codex.Items.List.Where(
-              ring => ring.Type == ItemType.Ring && !ring.Artifact && ring.Rarity > 0 && ring != SPDDebug.codex.Items.ring_of_polymorph && ring != SPDDebug.codex.Items.ring_of_polymorph_control).ToDistinctList();
+              ring => ring.Type == ItemType.Ring && !ring.Grade.Unique && ring.Rarity > 0 && ring != SPDDebug.codex.Items.ring_of_polymorph && ring != SPDDebug.codex.Items.ring_of_polymorph_control).ToDistinctList();
 
             this.leveledRing = new Inv.DistinctList<Item>()
             {
@@ -193,13 +193,13 @@ namespace Pathos
                 Items.fleet_robe,
             };
             goodArmour.AddRange(Items.List.Where(
-                    Armour => Armour.Type == ItemType.Cloak).Where(Armour => !Armour.Artifact && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
+                    Armour => Armour.Type == ItemType.Cloak).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
             goodArmour.AddRange(Items.List.Where(
-                    Armour => Armour.Type == ItemType.Boots).Where(Armour => !Armour.Artifact && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
+                    Armour => Armour.Type == ItemType.Boots).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
             goodArmour.AddRange(Items.List.Where(
-                    Armour => Armour.Type == ItemType.Gloves).Where(Armour => !Armour.Artifact && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
+                    Armour => Armour.Type == ItemType.Gloves).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
             goodArmour.AddRange(Items.List.Where(
-                    Armour => Armour.Type == ItemType.Helmet).Where(Armour => !Armour.Artifact && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
+                    Armour => Armour.Type == ItemType.Helmet).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
 
             this.magicFood = new Inv.DistinctList<Item>()
             {
@@ -413,7 +413,7 @@ namespace Pathos
         }
         private Item MaybeArtifact(int ArtifactChance)
         {
-            return SPDRandom.Int(ArtifactChance) == 0 ? SPDDebug.generator.GetArtifactItem(I => !ItemForbidden(I)) : null;
+            return SPDRandom.Int(ArtifactChance) == 0 ? SPDDebug.generator.GetUniqueItem(I => !ItemForbidden(I)) : null;
         }
         
         private readonly Inv.DistinctList<Item> randomArmour;

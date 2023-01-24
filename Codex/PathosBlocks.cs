@@ -134,8 +134,8 @@ namespace Pathos
         B.DamageDice = 1.d20();
         B.SetWeakness(Elements.physical, Elements.digging, Elements.force, Elements.disintegrate, Elements.fire);
         B.BreakLoot.AddKit(1.d3(), Chance.OneIn3); // any item.
-        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Items.List.Where(I => !I.Artifact && I.Rarity > 0 && I.Size < B.Size).ToArray()); // any item fully specified?
-        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Stocks.food.ItemList.Where(I => !I.Artifact && I.Rarity > 0 && I.Size < B.Size).ToArray()); // food only?
+        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Items.List.Where(I => !I.Grade.Unique && I.Rarity > 0 && I.Size < B.Size).ToArray()); // any item fully specified?
+        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Stocks.food.ItemList.Where(I => !I.Grade.Unique && I.Rarity > 0 && I.Size < B.Size).ToArray()); // food only?
 
         B.AddBreak(55, Codex.Sonics.broken_barrel, null, K =>
         {

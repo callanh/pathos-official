@@ -68,7 +68,7 @@ namespace Pathos
           CodexRecruiter.Enrol(() =>
           {
             S.SetBuyStocks(BuyStockFunc().ToArray());
-            S.SetSellItems(SellItemFunc().Where(I => !I.Artifact).ToArray());
+            S.SetSellItems(SellItemFunc().Where(I => !I.Grade.Unique).ToArray());
           });
         });
       }
@@ -81,7 +81,7 @@ namespace Pathos
 
       general_store = AddShop("general store", Glyphs.general_stock, Rarity: 44,
         () => Stocks.List,
-        () => Items.List.Where(I => I.Rarity > 0 || (!I.Artifact && I.IsAbolitionCandidate())));
+        () => Items.List.Where(I => I.Rarity > 0 || (!I.Grade.Unique && I.IsAbolitionCandidate())));
 
       gun_mart = AddShop("gun mart", Glyphs.firearm_stock, Rarity: 2,
         () => new[] { Stocks.weapon, Stocks.gem },

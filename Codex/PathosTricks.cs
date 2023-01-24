@@ -15,6 +15,7 @@ namespace Pathos
     {
       var Strikes = Codex.Strikes;
       var Skills = Codex.Skills;
+      var Sonics = Codex.Sonics;
 
       Trick AddTrick(string Name, Action<ApplyEditor> Action)
       {
@@ -109,12 +110,12 @@ namespace Pathos
 
       increase_difficulty = AddTrick("increase difficulty", A =>
       {
-        A.AdjustDifficulty(+1);
+        A.AdjustDifficulty(+1, Sonics.foreboding);
       });
 
       overwhelm_difficulty = AddTrick("overwhelm difficulty", A =>
       {
-        A.AdjustDifficulty(+5);
+        A.AdjustDifficulty(+5, Sonics.foreboding);
       });
 
       sudden_hellscape = AddTrick("sudden hellscape", A =>

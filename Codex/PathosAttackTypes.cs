@@ -79,6 +79,11 @@ namespace Pathos
         E.IsOpenWielding = true;
       });
 
+      slap = Add("slap", DamageType.Bludgeon, E =>
+      {
+        E.IsOpenWielding = true;
+      });
+
       shriek = Add("shriek", DamageType: null, E =>
       {
         E.IsVoice = true;
@@ -147,6 +152,7 @@ namespace Pathos
     public readonly AttackType kick;
     public readonly AttackType punch;
     public readonly AttackType shriek;
+    public readonly AttackType slap;
     public readonly AttackType spell;
     public readonly AttackType spit;
     public readonly AttackType splash;

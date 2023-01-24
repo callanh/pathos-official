@@ -50,8 +50,8 @@ namespace Pathos
         SentientGreed = new[] { Stocks.book, Stocks.potion, Stocks.scroll, Stocks.wand, Stocks.ring, Stocks.amulet, Stocks.gem };
         GuardianGreed = new[] { Stocks.gem };
 
-        GoodCloakItemArray = Stocks.armour.Items.Where(I => I.Type == ItemType.Cloak && I.DefaultSanctity != Sanctities.Cursed && !I.Artifact && I.Equip.HasEffects()).ToArray();
-        GoodAmuletItemArray = Stocks.amulet.Items.Where(I => I.Type == ItemType.Amulet && I.DefaultSanctity != Sanctities.Cursed && !I.Artifact && I.Equip.HasEffects()).ToArray();
+        GoodCloakItemArray = Stocks.armour.Items.Where(I => I.Type == ItemType.Cloak && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
+        GoodAmuletItemArray = Stocks.amulet.Items.Where(I => I.Type == ItemType.Amulet && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
       });
 
       Entity RegisterEntity(Kind Kind, Race Race, string Name, Action<EntityEditor> InitiateAction, Action<EntityEditor> EnrolAction)
@@ -5188,7 +5188,7 @@ namespace Pathos
         E.Glyph = Glyphs.living_wall;
         E.Sonic = Sonics.slime;
         E.Level = 10;
-        E.Challenge = 22;
+        E.Challenge = 82;
         E.Difficulty = 12;
         E.Frequency = 1;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -2 from dex.
@@ -10738,6 +10738,53 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
+      seal = AddDomesticEntity(Kinds.marine, null, "seal", E =>
+      {
+        E.Glyph = Glyphs.seal;
+        E.Sonic = Sonics.arf;
+        E.Level = 10;
+        E.Challenge = 125;
+        E.Difficulty = 12;
+        E.Frequency = 10;
+        E.Defence = new Defence(D: 18, P: +2, S: +2, B: -2);
+        E.SetTerrain(Materials.water, Materials.air);
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S4_0;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Escape;
+        E.Weight = Weight.FromUnits(88000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: false,
+          Limbs: false,
+          Feet: false,
+          Warm: true,
+          Blood: true,
+          Mountable: true,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(16, 1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 20, DEX: 5, CON: 20, INT: 5, WIS: 5, CHA: 14);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.male, Genders.female);
+        E.SetGreed(Stocks.food);
+        E.Chemistry.SetWeakness(Elements.fire);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
+        E.Startup.SetResistance(Elements.cold);
+        E.Startup.SetTalent(Properties.slippery, Properties.free_action);
+        E.AddAttack(AttackTypes.slap, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.slap, Elements.physical, 1.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
+        E.SetCorpse(Chance.Always);
+      });
+
       shark = AddEntity(Kinds.marine, null, "shark", E =>
       {
         E.Glyph = Glyphs.shark;
@@ -13216,7 +13263,9 @@ namespace Pathos
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.WhenTargetHasProperty(Properties.fear, T => T.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, DeathSupport.fright), F => F.ApplyTransient(Properties.fear, 3.d4() + 3, Kinds.Living.ToArray())));
+          K.Apply.Shout(A => A.WhenTargetHasProperty(Properties.fear, 
+            T => T.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, DeathSupport.fright), 
+            F => F.WhenTargetKind(Kinds.Living, W => W.ApplyTransient(Properties.fear, 3.d4() + 3))));
         });
         E.SetCorpse(Chance.Never);
       });
@@ -15849,7 +15898,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.shock);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_heavy_hammer, Items.heavy_hammer });
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.alchemy_smock);
-        E.Startup.Loot.AddKit(Chance.Always, Stocks.tool.Items.Where(T => !T.Artifact && T.Type == ItemType.Eyewear && T.DefaultSanctity != Sanctities.Cursed).ToArray());
+        E.Startup.Loot.AddKit(Chance.Always, Stocks.tool.Items.Where(T => !T.Grade.Unique && T.Type == ItemType.Eyewear && T.DefaultSanctity != Sanctities.Cursed).ToArray());
         E.Startup.Loot.AddKit(Chance.OneIn2, 1.d2(), Stocks.potion);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);
         E.Startup.AddGrimoire(Dice.One, Spells.polymorph);
@@ -22846,7 +22895,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(1.d2(), Chance.Always, Stocks.book); // 1..2
         E.Startup.Loot.AddKit(2.d3(), Chance.Always, Stocks.food); // 2..6
         E.Startup.Loot.AddKit(2.d4(), Chance.Always, Stocks.gem); // 2..8 
-        //E.Startup.Loot.AddKit(2.d2(), Chance.Always, Stocks.weapon.ItemList.Where(I => !I.Artifact && I.IsFirearm()).ToArray()); // 2..4 firearms
+        //E.Startup.Loot.AddKit(2.d2(), Chance.Always, Stocks.weapon.ItemList.Where(I => !I.Grade.Unique && I.IsFirearm()).ToArray()); // 2..4 firearms
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
         E.Conveyance.MajorResistance(Elements.sleep);
         E.SetCorpse(Chance.OneIn3);
@@ -32434,14 +32483,14 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.psychic, 2.d4() + 4)
            .SetBeholds();
-          K.Apply.ApplyTransient(Properties.fear, 3.d4(), Kinds.Living.ToArray());
+          K.Apply.WhenTargetKind(Kinds.Living, T => T.ApplyTransient(Properties.fear, 3.d4()));
         });
         E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.ApplyTransient(Properties.silence, 6.d4() + 6, Kinds.Living.ToArray()));
+          K.Apply.Shout(A => A.WhenTargetKind(Kinds.Living, T => T.ApplyTransient(Properties.silence, 6.d4() + 6)));
         });
         E.SetCorpse(Chance.Never);
       });
@@ -34695,6 +34744,7 @@ namespace Pathos
     public readonly Entity shadow_ogre;
     public readonly Entity shadow_wolf;
     public readonly Entity Shaman_Karnov;
+    public readonly Entity seal;
     public readonly Entity shark;
     public readonly Entity sheep;
     public readonly Entity shifter;

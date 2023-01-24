@@ -16,34 +16,21 @@ namespace Pathos
       foreach (var SonicField in typeof(CodexSonics).GetReflectionInfo().GetReflectionFields().Where(T => T.FieldType == typeof(Sonic)).OrderBy(T => T.Name, StringComparer.Ordinal))
         SonicField.SetValue(this, Register.Add(SonicField.Name.Replace('_', ' ')));
 
-      Register.ShortTap.Set(short_tap);
-      Register.LongTap.Set(long_tap);
-      Register.Introduction.Set(introduction);
-      Register.Conclusion.Set(conclusion);
-      Register.Switch.Set(@switch);
-      Register.Realtime.Set(realtime);
-      Register.Turnbased.Set(turnbased);
-      Register.Reroll.Set(dice);
-      Register.Jump.Set(jump);
-      Register.Teleport.Set(teleport);
-      Register.Polymorph.Set(polymorph);
-      Register.Fizzle.Set(fizzle);
-      Register.Foreboding.Set(foreboding);
-      Register.Death.Set(death);
-      Register.LowHealth.Set(low_health);
-      Register.Scrap.Set(scrap);
-      Register.Craft.Set(craft);
-      Register.Kick.Set(kick);
-      Register.Blink.Set(blink);
-      Register.Warp.Set(warping);
-      Register.Slime.Set(slime);
-      Register.Slip.Set(slip);
-      Register.Hit.Set(hit);
-      Register.Miss.Set(miss);
-      Register.GainLevel.Set(gain_level);
-      Register.LoseLevel.Set(lose_level);
-      Register.GainKarma.Set(gain_karma);
-      Register.LoseKarma.Set(lose_karma);
+      Register.ShortTap = short_tap;
+      Register.LongTap = long_tap;
+      Register.Switch = @switch;
+      Register.Realtime = realtime;
+      Register.Turnbased = turnbased;
+      Register.Reroll = dice;
+      Register.Teleport = teleport;
+      Register.Polymorph = polymorph;
+      Register.Fizzle = fizzle;
+      Register.Death = death;
+      Register.LowHealth = low_health;
+      Register.Warp = warping;
+      Register.Slip = slip;
+      Register.Hit = hit;
+      Register.Miss = miss;
     }
 
     internal Sonic GetSonicOrNull(string Name)
@@ -57,6 +44,7 @@ namespace Pathos
     public readonly Sonic kick;
     public readonly Sonic polymorph;
     public readonly Sonic teleport;
+    public readonly Sonic arf;
     public readonly Sonic bleat;
     public readonly Sonic blink;
     public readonly Sonic bow_fire;

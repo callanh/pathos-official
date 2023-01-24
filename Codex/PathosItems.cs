@@ -17,6 +17,7 @@ namespace Pathos
       this.DragonScalesArmourList = new Inv.DistinctList<Item>();
 
       var Stocks = Codex.Stocks;
+      var Grades = Codex.Grades;
       var Kinds = Codex.Kinds;
       var Motions = Codex.Motions;
       var Beams = Codex.Beams;
@@ -62,7 +63,9 @@ namespace Pathos
           {
             DeclareAction(I);
 
-            Debug.Assert(I.Artifact || I.Impact != null || I.Material != Materials.glass);
+            I.Grade ??= Grades.standard;
+
+            Debug.Assert(I.Grade.Indestructable || I.Impact != null || I.Material != Materials.glass);
           });
         });
       }
@@ -260,7 +263,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Backpack;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Small;
@@ -284,7 +287,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Stamped_Letter;
         I.Sonic = Sonics.scroll;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Small;
@@ -299,7 +302,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Gold_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Tiny;
@@ -315,7 +318,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Ruby_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Tiny;
@@ -331,7 +334,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Shadow_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Tiny;
@@ -347,7 +350,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Silver_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Tiny;
@@ -363,7 +366,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Jade_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Tiny;
@@ -379,7 +382,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Master_Key;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Tiny;
@@ -397,7 +400,7 @@ namespace Pathos
         I.Description = "This ancient artifact is a marvel to behold with exquisite craftsmanship and unbridled digging power.";
         I.Glyph = Glyphs.Colossal_Excavator;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -424,7 +427,7 @@ namespace Pathos
         I.Description = null;// "Magical rays and beams bounce right off this gleaming shield. The surface shines images of the real world, heedless of the trickery enemies might employ.";
         I.Glyph = Glyphs.Mirrorbright;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -442,7 +445,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Escapist;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -463,7 +466,7 @@ namespace Pathos
         I.Description = "Gazing into its crimson depths you can see the concentrated life essence of countless victims swirling inside of it. The artifact was completed in the moment of the creators' death, as his soul was claimed by his creation. Now residing among the souls of his former victims, his essence as an alchemist provides the stone with ultimate transmutative powers.";
         I.Glyph = Glyphs.Philosophers_Stone;
         I.Sonic = Sonics.amulet;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -490,7 +493,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Eye_of_Aethiopica;
         I.Sonic = Sonics.amulet;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -507,7 +510,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Eyes_of_Ra;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -525,7 +528,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Rosenthral;
         I.Sonic = Sonics.wand;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -551,7 +554,7 @@ namespace Pathos
         I.Description = "This withered hand is the last remnant of an ancient and powerful lich.";
         I.Glyph = Glyphs.Witherloch;
         I.Sonic = Sonics.wand;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -594,7 +597,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Illuminare;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -647,7 +650,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Pandoras_Box;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -799,7 +802,7 @@ namespace Pathos
         I.Description = "This glowing looking glass reveals glimpses of the future and corrupts your soul.";
         I.Glyph = Glyphs.Prudentia;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -829,7 +832,7 @@ namespace Pathos
         I.Description = "A surviving portion of the legendary wall of Verimurus, an ancient elven city said to have lasted since time immemorial. However, not even the mightiest walls could withstand the endless onslaught of the dragons. Now the enchanted walls stand alone over the land that once held them.";
         I.Glyph = Glyphs.Verimurus;
         I.Sonic = Sonics.tool;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -861,7 +864,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Talaria;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -879,7 +882,7 @@ namespace Pathos
         I.Description = "Forged deep underground by dwarven hands, this blade was made to slay the scaled beasts who sought to steal their treasures. Throughout the long years this blade has bathed in the blood of its winged prey. Now almost forgotten, it yearns again for the taste of dragon flesh.";
         I.Glyph = Glyphs.Dragonbane;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -908,7 +911,7 @@ namespace Pathos
         I.Description = "This curious artifact somehow chastens those it strikes and submits them to your will.";
         I.Glyph = Glyphs.Lashing_Tongue;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -937,7 +940,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Cleaver;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -955,7 +958,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Magistrator;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -981,7 +984,7 @@ namespace Pathos
         I.Description = "This powerful artifact blade glows with a holy fury that lights the area.";
         I.Glyph = Glyphs.Sunsword;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1008,7 +1011,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Vorpal_Blade;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1034,7 +1037,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Grimtooth;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -1074,7 +1077,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Giantslayer;
         I.Sonic = Sonics.leather;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Weight = Weight.FromUnits(30);
@@ -1095,7 +1098,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Carapace;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1115,7 +1118,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Chaoshammer;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.BundleDice = Dice.One;
         I.Series = null;
         I.Rarity = 1;
@@ -1159,7 +1162,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Aurigage;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -1191,7 +1194,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Blinderag;
         I.Sonic = Sonics.armour;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.DefaultSanctity = Sanctities.Cursed;
@@ -1213,7 +1216,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Maulfrost;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1238,7 +1241,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Voltaic;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1263,7 +1266,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Deadwood;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1290,7 +1293,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Dire_Needle;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -1315,7 +1318,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Chasm_Edge;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1351,7 +1354,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.Deagle;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -1372,7 +1375,7 @@ namespace Pathos
         I.Description = "A wonder of dwarven ingenuity and craftsmanship, stolen and repurposed by orcs. Mounted on a long shaft, this tool is a formidable weapon on horseback or warg-back. The electrical current that powers its drill will occasionally discharge on whomever is willing to stand in the way of this monstrosity.";
         I.Glyph = Glyphs.Drilanze;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -1410,7 +1413,7 @@ namespace Pathos
         I.Glyph = Glyphs.Runesword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Rarity = 1;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(400);
@@ -1428,7 +1431,7 @@ namespace Pathos
         I.Description = "This old katana has been battered and broken through a million battles. Hardly more than a scrap of metal and wood and yet it flickers with a strange power.";
         I.Glyph = Glyphs.Ancient_Katana;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Medium;
@@ -1445,7 +1448,7 @@ namespace Pathos
         I.Description = "A righteous sword forged by a revered blacksmith many years ago who set out to hone his craft and to create the ultimate blade. The noble intent of its creator lingers in this weapon to cut down the wicked and protect the innocent.";
         I.Glyph = Glyphs.Masamune;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Large;
@@ -1466,7 +1469,7 @@ namespace Pathos
         I.Description = "The final sword forged by a once respected blacksmith who lost himself in the depths of the dungeon. His warped soul now inhabits this blade and lusts for blood. It is said that the one who wields this sword is coerced into cutting down friend and foe alike.";
         I.Glyph = Glyphs.Muramasa;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 0;
         I.Size = Size.Medium;
@@ -1768,7 +1771,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Amulet in Stocks.amulet.Items.Where(R => R != amulet_of_nada && !R.Artifact))
+        foreach (var Amulet in Stocks.amulet.Items.Where(R => R != amulet_of_nada && !R.Grade.Unique))
           Register.Edit(Amulet).SetDowngradeItem(amulet_of_nada);
       });
       #endregion
@@ -4194,7 +4197,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Book in Stocks.book.Items.Where(B => B != book_of_blank_paper && !B.Artifact))
+        foreach (var Book in Stocks.book.Items.Where(B => B != book_of_blank_paper && !B.Grade.Unique))
           Register.Edit(Book).SetDowngradeItem(book_of_blank_paper);
       });
       #endregion
@@ -5189,7 +5192,7 @@ namespace Pathos
         I.Description = null;
         I.Glyph = Glyphs.The_Hero;
         I.Sonic = Sonics.food;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Small;
@@ -6952,7 +6955,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Potion in Stocks.potion.Items.Where(P => P != potion_of_water && !P.Artifact && P.DowngradeItem == null))
+        foreach (var Potion in Stocks.potion.Items.Where(P => P != potion_of_water && !P.Grade.Unique && P.DowngradeItem == null))
           Register.Edit(Potion).SetDowngradeItem(potion_of_water);
       });
       #endregion
@@ -7762,7 +7765,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Ring in Stocks.ring.Items.Where(R => R.Type == ItemType.Ring && R != ring_of_naught && !R.Artifact))
+        foreach (var Ring in Stocks.ring.Items.Where(R => R.Type == ItemType.Ring && R != ring_of_naught && !R.Grade.Unique))
           Register.Edit(Ring).SetDowngradeItem(ring_of_naught);
       });
       #endregion
@@ -7836,7 +7839,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Earring in Stocks.ring.Items.Where(R => R.Type == ItemType.Earwear && R != costume_earrings && !R.Artifact))
+        foreach (var Earring in Stocks.ring.Items.Where(R => R.Type == ItemType.Earwear && R != costume_earrings && !R.Grade.Unique))
           Register.Edit(Earring).SetDowngradeItem(costume_earrings);
       });
       #endregion
@@ -9137,7 +9140,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Scroll in Stocks.scroll.Items.Where(B => B != scroll_of_blank_paper && !B.Artifact))
+        foreach (var Scroll in Stocks.scroll.Items.Where(B => B != scroll_of_blank_paper && !B.Grade.Unique))
           Register.Edit(Scroll).SetDowngradeItem(scroll_of_blank_paper);
       });
       #endregion
@@ -10376,8 +10379,8 @@ namespace Pathos
         {
           Use.SetCast().FilterItem(scroll_of_blank_paper, book_of_blank_paper)
              .SetAssetIndividualised();
-          Use.Apply.ConvertAsset(Stocks.scroll, WholeStack: false, Stocks.scroll.Items.Where(S => S != scroll_of_blank_paper && !S.Artifact && S.Rarity > 0).ToArray());
-          Use.Apply.ConvertAsset(Stocks.book, WholeStack: false, Stocks.book.Items.Where(S => S != book_of_blank_paper && !S.Artifact && S.Rarity > 0).ToArray());
+          Use.Apply.ConvertAsset(Stocks.scroll, WholeStack: false, Stocks.scroll.Items.Where(S => S != scroll_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
+          Use.Apply.ConvertAsset(Stocks.book, WholeStack: false, Stocks.book.Items.Where(S => S != book_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
         });
         I.AddDiscoverUse(Motions.rename, Delay.FromTurns(50), Sonics.write, Use =>
         {
@@ -11940,7 +11943,7 @@ namespace Pathos
 
       CodexRecruiter.Enrol(() =>
       {
-        foreach (var Wand in Stocks.wand.Items.Where(W => W != wand_of_nothing && W.DowngradeItem == null && !W.Artifact))
+        foreach (var Wand in Stocks.wand.Items.Where(W => W != wand_of_nothing && W.DowngradeItem == null && !W.Grade.Unique))
           Register.Edit(Wand).SetDowngradeItem(wand_of_nothing);
       });
       #endregion
@@ -14150,7 +14153,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Harbalest;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -14172,7 +14175,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Ravenbow;
         I.Sonic = Sonics.weapon;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.Series = null;
         I.Rarity = 1;
         I.Size = Size.Large;
@@ -14192,7 +14195,7 @@ namespace Pathos
         I.Appearance = null;
         I.Glyph = Glyphs.Creeping_Sprout;
         I.Sonic = Sonics.ammo;
-        I.Artifact = true;
+        I.Grade = Grades.artifact;
         I.BundleDice = Dice.One;
         I.Series = null;
         I.InfiniteQuantity = true; // infinite ammo.
@@ -14735,7 +14738,7 @@ namespace Pathos
         Register.AddAbolitionReplacement(silver_bullet, silver_arrow);
         Register.AddAbolitionReplacement(mithril_bullet, mithril_arrow);
 
-        var MissingAbolitionReplacementArray = List.Where(I => I.IsAbolitionCandidate() && !I.Artifact).Except(Register.AbolitionReplacements.Select(R => R.AbolitionItem)).ToArray();
+        var MissingAbolitionReplacementArray = List.Where(I => I.IsAbolitionCandidate() && !I.Grade.Unique).Except(Register.AbolitionReplacements.Select(R => R.AbolitionItem)).ToArray();
         if (MissingAbolitionReplacementArray.Length > 0)
           throw new Exception("Abolition replacement not implemented:" + Environment.NewLine + MissingAbolitionReplacementArray.Select(I => I.Name).AsSeparatedText(Environment.NewLine));
       });
@@ -14745,7 +14748,7 @@ namespace Pathos
       Register.Alias(gold_dragon_scales, "grey dragon scales");
       Register.Alias(gold_dragon_scale_mail, "grey dragon scale mail");
 
-      // all artifacts need capitalised naming.
+      // all unique items need capitalised naming.
       Register.Alias(Stamped_Letter, "stamped letter");
       Register.Alias(Backpack, "backpack");
       Register.Alias(Silver_Key, "silver key");

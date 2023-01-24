@@ -296,7 +296,7 @@ namespace Pathos
           B.Cost = 250;
           B.SetCast().FilterItem(Items.scroll_of_blank_paper)
            .SetAssetIndividualised();
-          B.Apply.ConvertAsset(Codex.Stocks.scroll, WholeStack: false, Codex.Stocks.scroll.Items.Where(I => I != Items.scroll_of_blank_paper && !I.Artifact && I.Rarity > 0).ToArray());
+          B.Apply.ConvertAsset(Codex.Stocks.scroll, WholeStack: false, Codex.Stocks.scroll.Items.Where(I => I != Items.scroll_of_blank_paper && !I.Grade.Unique && I.Rarity > 0).ToArray());
         });
 
         S.AddBoon("brew", B =>
@@ -305,7 +305,7 @@ namespace Pathos
           B.Cost = 250;
           B.SetCast().FilterItem(Items.potion_of_water)
            .SetAssetIndividualised();
-          B.Apply.ConvertAsset(Codex.Stocks.potion, WholeStack: false, Codex.Stocks.potion.Items.Where(I => I != Items.potion_of_water && !I.Artifact && I.Rarity > 0).ToArray());
+          B.Apply.ConvertAsset(Codex.Stocks.potion, WholeStack: false, Codex.Stocks.potion.Items.Where(I => I != Items.potion_of_water && !I.Grade.Unique && I.Rarity > 0).ToArray());
         });
 
         S.AddBoon("polymorph", B =>
@@ -396,7 +396,7 @@ namespace Pathos
           B.Cost = 500;
           B.SetCast().FilterAnyItem()
            .FilterEquipped(false) // otherwise can reforge an equipped one-handed weapon into a two-handed weapon.
-           .FilterArtifacts(false)
+           .FilterUniques(false)
            .FilterCoins(false);
           B.Apply.Polymorph();
         });

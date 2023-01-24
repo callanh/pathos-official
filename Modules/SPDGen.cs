@@ -15,6 +15,9 @@ namespace Pathos
               RequiresMasterMode: false, IsPublished: true)
         {
             this.Codex = Codex;
+
+            SetIntroduction(Codex.Sonics.introduction);
+            SetConclusion(Codex.Sonics.conclusion);
             SetTrack(Codex.Tracks.outside);
         }
         public override void Execute(Generator Generator)

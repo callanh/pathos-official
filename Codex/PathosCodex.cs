@@ -49,6 +49,7 @@ namespace Pathos
         this.Strikes = new CodexStrikes(this);
         this.Explosions = new CodexExplosions(this);
         this.Stocks = new CodexStocks(this);
+        this.Grades = new CodexGrades(this);
         this.Items = new CodexItems(this);
         this.Entities = new CodexEntities(this);
         this.Evolutions = new CodexEvolutions(this);
@@ -83,7 +84,7 @@ namespace Pathos
         CodexRecruiter.Codex = null;
       }
 
-      Manifest.Levelling.SetExperienceTable(new int[Rules.LevelCap]
+      Manifest.Levelling.Set(Sonics.gain_level, Sonics.lose_level, new int[40]
       {
         /* 01 */ 0,
         /* 02 */ 25,
@@ -127,9 +128,15 @@ namespace Pathos
         /* 40 */ 2000000
       });
 
-      Manifest.Kicking.Set(Attributes.strength, Elements.physical);
+      Manifest.Blinking.Set(Properties.blinking, Attributes.intelligence, Sonics.blink, NutritionCost: 5);
 
-      Manifest.Praying.Set(Motions.pray);
+      Manifest.Jumping.Set(Properties.jumping, Attributes.strength, Sonics.jump, NutritionCost: 5);
+
+      Manifest.Sliding.Set(Attributes.constitution, Sonics.slime, NutritionCost: 5);
+
+      Manifest.Kicking.Set(Attributes.strength, Elements.physical, Sonics.kick, NutritionCost: 1);
+
+      Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250);
       Manifest.Praying.AddPrayer(KarmaStatus.Hopeful, A =>
       {
         A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
@@ -172,11 +179,11 @@ namespace Pathos
 
       Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
 
+      Manifest.Telekinesis.Set(Properties.telekinesis, Attributes.intelligence);
+
       Manifest.Trading.Set(Attributes.charisma, Skills.bartering);
 
       Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
-
-      Manifest.Complete();
     }
 #endif
 
@@ -203,6 +210,7 @@ namespace Pathos
     public CodexGates Gates { get; }
     public CodexGenders Genders { get; }
     public CodexGlyphs Glyphs { get; }
+    public CodexGrades Grades { get; }
     public CodexGrounds Grounds { get; }
     public CodexHeroes Heroes { get; }
     public CodexHordes Hordes { get; }
@@ -242,7 +250,7 @@ namespace Pathos
   public abstract class CodexPage<TRegister, TEditor, TRecord>
     where TRegister : ManifestRegister<TEditor, TRecord>
     where TEditor : Editor<TRecord>
-    where TRecord : class
+    where TRecord : ManifestRecord
   {
     protected CodexPage() { }
     internal CodexPage(TRegister Register)
@@ -342,11 +350,11 @@ namespace Pathos
 
         Effect.Initialise(Sanctities.List);
 
-        BlessedAction(new ApplyEditor(Effect.GetApply(Sanctities.Blessed)));
+        BlessedAction(new ApplyEditor(Codex.Manifest, Effect.GetApply(Sanctities.Blessed)));
 
-        UncursedAction(new ApplyEditor(Effect.GetApply(Sanctities.Uncursed)));
+        UncursedAction(new ApplyEditor(Codex.Manifest, Effect.GetApply(Sanctities.Uncursed)));
 
-        CursedAction(new ApplyEditor(Effect.GetApply(Sanctities.Cursed)));
+        CursedAction(new ApplyEditor(Codex.Manifest, Effect.GetApply(Sanctities.Cursed)));
       });
     }
 
@@ -400,38 +408,38 @@ namespace Pathos
         if (Item.Weight <= Weight.Zero && Item.Type != ItemType.Coin && Item.Type != ItemType.Corpse && Item.Type != ItemType.Tin && Item.Type != ItemType.Egg)
           Record($"Item {Item.Name} must have a weight.");
 
-        if (Item.Essence <= Essence.Zero && !Item.Artifact)
-          Record($"Item {Item.Name} must have an essence.");
-        else if (Item.Essence != Essence.Zero && Item.Artifact)
-          Record($"Item {Item.Name} artifact must have zero essence.");
+        if (Item.Essence <= Essence.Zero && !Item.Grade.Unique)
+          Record($"Item {Item.Name} is not unique so must have essence.");
+        else if (Item.Essence != Essence.Zero && Item.Grade.Unique)
+          Record($"Item {Item.Name} is unique so must have zero essence.");
 
-        if (Item.Artifact && !char.IsUpper(Item.Name[0]))
-          Record($"Item {Item.Name} artifact must have a proper name.");
-        else if (!Item.Artifact && char.IsUpper(Item.Name[0]))
-          Record($"Item {Item.Name} must have a common name.");
+        if (Item.Grade.Unique && !char.IsUpper(Item.Name[0]))
+          Record($"Item {Item.Name} is unique so must have a proper name.");
+        else if (!Item.Grade.Unique && char.IsUpper(Item.Name[0]))
+          Record($"Item {Item.Name} is not unique so must have a common name.");
 
         if (Item.Rarity < 0)
           Record($"Item {Item.Name} must not have a negative rarity.");
 
-        if (Item.Artifact)
+        if (Item.Grade.Unique)
         {
           //if (Item.Description == null)
-          //  Record($"Item {Item.Name} artifact must have a description.");
+          //  Record($"Item {Item.Name} unique must have a description.");
 
           if (Item.Appearance != null)
-            Record($"Item {Item.Name} artifact must not have an appearance.");
+            Record($"Item {Item.Name} unique must not have an appearance.");
 
-          if (Item.DowngradeItem != null && !Item.DowngradeItem.Artifact)
-            Record($"Item {Item.Name} artifact must not have a non-artifact downgrade item.");
+          if (Item.DowngradeItem != null && !Item.DowngradeItem.Grade.Unique)
+            Record($"Item {Item.Name} unique must not have a non-unique downgrade item.");
 
-          if (Item.UpgradeItem != null && !Item.UpgradeItem.Artifact)
-            Record($"Item {Item.Name} artifact must not have a non-artifact upgrade item.");
+          if (Item.UpgradeItem != null && !Item.UpgradeItem.Grade.Unique)
+            Record($"Item {Item.Name} unique must not have a non-unique upgrade item.");
 
           if (Item.Rarity > 1)
-            Record($"Item {Item.Name} artifact must not have a rarity greater than one.");
+            Record($"Item {Item.Name} unique must not have a rarity greater than one.");
 
           if (Item.Weaknesses.Count > 0)
-            Record($"Item {Item.Name} artifact must not have any weaknesses.");
+            Record($"Item {Item.Name} unique must not have any weaknesses.");
         }
 
         if (Item.Series != null && Item.Appearance == null)
@@ -440,7 +448,7 @@ namespace Pathos
         //if (Item.Appearance != null && Item.Glyph.Name != Item.Appearance.Name && Item.Shuffled && Item.Type != ItemType.Scroll)
         //  Record($"Item '{Item.Name}' appearance name '{Item.Appearance.Name}' and glyph name '{Item.Glyph.Name}' should match.");
 
-        if (Item.Uses.Count == 0 && Item.Equip == null && Item.Storage == null && Item.Type != ItemType.Coin && Item.Type != ItemType.SpecificKey && !Item.Artifact)
+        if (Item.Uses.Count == 0 && Item.Equip == null && Item.Storage == null && Item.Type != ItemType.Coin && Item.Type != ItemType.SpecificKey && !Item.Grade.Unique)
           Record($"Item {Item.Name} must have at least one use or can be equipped.");
 
         foreach (var Use in Item.Uses)
@@ -482,7 +490,7 @@ namespace Pathos
         if ((Item.IsMeleeWeapon() || Item.IsRangedWeapon()) && Item.Size < Size.Small)
           Record($"Item {Item.Name} cannot be a tiny weapon.");
 
-        if (Item.IsWeapon() && Item.Weapon.Skill == Codex.Skills.polearm && Item.Appearance == null && !Item.Artifact)
+        if (Item.IsWeapon() && Item.Weapon.Skill == Codex.Skills.polearm && Item.Appearance == null && !Item.Grade.Unique)
           Record($"Item {Item.Name} must have an appearance because it is a polearm.");
 
         if (Item.DerivativeEntities != null && Item.DerivativeEntities.Count == 0)
@@ -721,8 +729,8 @@ namespace Pathos
               else if (Item.Armour != null && !Entity.Startup.HasSkill(Item.Armour.Skill))
                 Record($"Entity {Entity.Name} can have kit armour {Item.Name} but does not have skill in {Item.Armour.Skill}.");
 
-              if (Item.Artifact)
-                Record($"Entity {Entity.Name} must not start with an artifact {Item.Name}.");
+              if (Item.Grade.Unique)
+                Record($"Entity {Entity.Name} must not start with a unique {Item.Name}.");
             }
           }
 
@@ -946,8 +954,8 @@ namespace Pathos
 
       foreach (var Shop in Manifest.Shops.List)
       {
-        if (Shop.SellItems.Any(I => I.Artifact))
-          Record($"Shop {Shop.Name} should not sell any artifacts");
+        if (Shop.SellItems.Any(I => I.Grade.Unique))
+          Record($"Shop {Shop.Name} should not explicitly sell any unique items");
       }
       #endregion
 
@@ -1046,8 +1054,9 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Glyphs.Quicks.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Warnings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
-      foreach (var Individual in Manifest.Glyphs.Selections)
-        UsedGlyphSet.Add(Individual.Reference);
+      UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
+      UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
+      UsedGlyphSet.Add(Manifest.Glyphs.StatueBase);
 
       foreach (var UnusedGlyph in Manifest.Glyphs.List.Except(UsedGlyphSet))
         Record($"Glyph {UnusedGlyph.Name} is not used");
@@ -1082,8 +1091,33 @@ namespace Pathos
       UsedSonicSet.AddRange(Manifest.Atmospheres.List.SelectMany(E => E.Ambients).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Attributes.List.SelectMany(E => new[] { E.GainSonic, E.LoseSonic }).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Skills.List.SelectMany(E => new[] { E.GainSonic, E.LoseSonic }).ExceptNull());
-      foreach (var Selection in Manifest.Sonics.Selections)
-        UsedSonicSet.Add(Selection.Reference);
+      UsedSonicSet.Add(Manifest.Kicking.Sonic);
+      UsedSonicSet.Add(Manifest.Blinking.Sonic);
+      UsedSonicSet.Add(Manifest.Jumping.Sonic);
+      UsedSonicSet.Add(Manifest.Sliding.Sonic);
+      UsedSonicSet.Add(Manifest.Levelling.GainLevelSonic);
+      UsedSonicSet.Add(Manifest.Levelling.LoseLevelSonic);
+      UsedSonicSet.Add(Manifest.Praying.GainKarmaSonic);
+      UsedSonicSet.Add(Manifest.Praying.LoseKarmaSonic);
+      UsedSonicSet.Add(Manifest.Sonics.ShortTap);
+      UsedSonicSet.Add(Manifest.Sonics.LongTap);
+      UsedSonicSet.Add(Manifest.Sonics.Switch);
+      UsedSonicSet.Add(Manifest.Sonics.Realtime);
+      UsedSonicSet.Add(Manifest.Sonics.Turnbased);
+      UsedSonicSet.Add(Manifest.Sonics.Reroll);
+      UsedSonicSet.Add(Manifest.Sonics.Teleport);
+      UsedSonicSet.Add(Manifest.Sonics.Polymorph);
+      UsedSonicSet.Add(Manifest.Sonics.Fizzle);
+      UsedSonicSet.Add(Manifest.Sonics.Death);
+      UsedSonicSet.Add(Manifest.Sonics.LowHealth);
+      UsedSonicSet.Add(Manifest.Sonics.Warp);
+      UsedSonicSet.Add(Manifest.Sonics.Slip);
+      UsedSonicSet.Add(Manifest.Sonics.Hit);
+      UsedSonicSet.Add(Manifest.Sonics.Miss);
+
+      UsedSonicSet.Add(Codex.Sonics.foreboding); // used in AdjustDifficultyEffects
+      UsedSonicSet.Add(Codex.Sonics.introduction); // used in modules.
+      UsedSonicSet.Add(Codex.Sonics.conclusion); // used in modules.
 
       foreach (var UnusedSonic in Manifest.Sonics.List.Except(UsedSonicSet))
         Record($"Sonic {UnusedSonic.Name} is not used");
@@ -1125,11 +1159,9 @@ namespace Pathos
       void RegisterRecord<TRegister, TEditor, TRecord>()
         where TRegister : ManifestRegister<TEditor, TRecord>
         where TEditor : Editor<TRecord>
-        where TRecord : class
+        where TRecord : ManifestRecord
       {
         Base.Register<TRegister>();
-        Base.Register<ManifestNomination<TRecord>>();
-        Base.Register<ManifestSelection<TRecord>>();
         Base.Register<ManifestAlias<TRecord>>();
       }
 
@@ -1138,15 +1170,19 @@ namespace Pathos
       Base.Register<Codex>();
       Base.Register<Manifest>();
       Base.Register<ManifestLevelling>();
+      Base.Register<ManifestBlinking>();
+      Base.Register<ManifestJumping>();
       Base.Register<ManifestKicking>();
       Base.Register<ManifestPraying>();
       Base.Register<ManifestSearching>();
+      Base.Register<ManifestSliding>();
+      Base.Register<ManifestTelekinesis>();
       Base.Register<ManifestTrading>();
       Base.Register<ManifestTunnelling>();
       Base.Register<ManifestAbolitionReplacement>();
-      Base.Register<ManifestIcons>();
+      Base.Register<Icons>();
       Base.Register<Icon>();
-      Base.Register<ManifestQuicks>();
+      Base.Register<Quicks>();
       Base.Register<Quick>();
 
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
@@ -1171,6 +1207,7 @@ namespace Pathos
       RegisterRecord<ManifestGates, GateEditor, Gate>();
       RegisterRecord<ManifestGenders, GenderEditor, Gender>();
       RegisterRecord<ManifestGlyphs, GlyphEditor, Glyph>();
+      RegisterRecord<ManifestGrades, GradeEditor, Grade>();
       RegisterRecord<ManifestGrounds, GroundEditor, Ground>();
       RegisterRecord<ManifestHeroes, HeroEditor, Hero>();
       RegisterRecord<ManifestHordes, HordeEditor, Horde>();
@@ -1226,6 +1263,7 @@ namespace Pathos
       Base.Register<CodexGates>();
       Base.Register<CodexGenders>();
       Base.Register<CodexGlyphs>();
+      Base.Register<CodexGrades>();
       Base.Register<CodexGrounds>();
       Base.Register<CodexHeroes>();
       Base.Register<CodexHordes>();
@@ -1305,6 +1343,7 @@ namespace Pathos
       Base.Register<Gate>();
       Base.Register<Gender>();
       Base.Register<Glyph>().Ignore("Sprite"); // expected to be null.
+      Base.Register<Grade>();
       Base.Register<Graduation>();
       Base.Register<Grimoire>();
       Base.Register<Ground>();

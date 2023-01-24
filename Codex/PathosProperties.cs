@@ -66,7 +66,6 @@ namespace Pathos
         P.VisionPrevented = true;
         P.PickupInterfering = true;
         P.ComplicateUntrapping = true;
-        P.VisionImpairing = true;
       });
 
       blinking = AddProperty("blinking", P =>
@@ -88,12 +87,15 @@ namespace Pathos
       {
         P.Description = "Your mind is protected against deception, trickery and falsehoods.";
         P.SetImmunityProperty(hallucination, confusion, fear);
+        P.AmnesiaPrevented = true;
+        P.IllusionNegation = true;
       });
 
       conflict = AddProperty("conflict", P =>
       {
         P.Description = "You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.";
         P.IncreasedMetabolism = true;
+        P.InspireHostility = true;
       });
 
       confusion = AddProperty("confusion", P =>
@@ -110,7 +112,7 @@ namespace Pathos
       dark_vision = AddProperty("dark vision", P =>
       {
         P.Description = "This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.";
-        //P.DarkViewing = true;
+        P.ThermalVision = true;
       });
 
       deafness = AddProperty("deafness", P =>
@@ -124,7 +126,7 @@ namespace Pathos
       deflection = AddProperty("deflection", P =>
       {
         P.Description = "A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.";
-        P.DefenceModifier = 2;
+        P.DefenceModifier = Modifier.Plus2;
         P.DodgeChance = Chance.OneIn2;
       });
 
@@ -132,6 +134,8 @@ namespace Pathos
       {
         P.Description = "This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.";
         P.Incompatible = true;
+        P.IllusionBeamDodgeChance = Chance.OneIn2;
+        P.IllusionAttackModifier = Rules.DefenderDisplacementPenalty;
       });
 
       fainting = AddProperty("fainting", P =>
@@ -155,12 +159,14 @@ namespace Pathos
       {
         P.Description = "Fly above the ground to avoid many types of traps.";
         P.Incompatible = true;
+        P.AirborneSteering = true;
       });
 
       free_action = AddProperty("free action", P =>
       {
         P.Description = "Protects you from effects that slow, paralyse or otherwise restrain your movement.";
         P.SetImmunityProperty(paralysis, stunned, slowness);
+        P.IncarcerationPrevented = true;
       });
 
       fumbling = AddProperty("fumbling", P =>
@@ -169,6 +175,9 @@ namespace Pathos
         P.Unwanted = true;
         P.PickupInterfering = true;
         P.ComplicateUntrapping = true;
+        P.AttackFailChance = Chance.OneIn3;
+        P.MountFailChance = Chance.ThreeIn4;
+        P.TraverseFailChance = Chance.OneIn4;
       });
 
       hallucination = AddProperty("hallucination", P =>
@@ -177,6 +186,9 @@ namespace Pathos
         P.Unwanted = true;
         P.PickupInterfering = true;
         P.ComplicateUntrapping = true;
+        P.DeathPrevented = true;
+        P.VisionImpairing = true; // seeing imaginary things.
+        P.DistortPerception = true;
       });
       
       hunger = AddProperty("hunger", P =>
@@ -201,6 +213,7 @@ namespace Pathos
         P.Description = "This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.";
         P.Incompatible = true;
         P.IncreasedMetabolism = true;
+        P.UnseenNegationProperty = see_invisible;
       });
 
       jumping = AddProperty("jumping", P =>
@@ -213,6 +226,7 @@ namespace Pathos
       {
         P.Description = "This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.";
         P.Incompatible = true;
+        P.AirborneLifting = true;
       });
 
       life_regeneration = AddProperty("life regeneration", P =>
@@ -270,8 +284,8 @@ namespace Pathos
         P.ParityElement = Elements.petrify;
         P.Unwanted = true;
         P.SpeedMultiplier = 0.25F;
-        //P.DamageMultiplier = 2.0F;
-        //P.DefenderModifier = Modifier.FromRank(-8);
+        P.DamageMultiplier = 2.0F;
+        P.DefenceModifier = Modifier.FromRank(-8);
       });
 
       phasing = AddProperty("phasing", P =>
@@ -279,6 +293,7 @@ namespace Pathos
         P.Description = "Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.";
         P.Incompatible = true;
         P.IncreasedMetabolism = true;
+        P.Passthrough = true;
       });
 
       polymorph = AddProperty("polymorph", P =>
@@ -316,6 +331,7 @@ namespace Pathos
       reflection = AddProperty("reflection", P =>
       {
         P.Description = "Gaze and beam attacks are reflected back at the caster.";
+        P.Reflective = true;
       });
 
       searching = AddProperty("searching", P =>
@@ -367,6 +383,8 @@ namespace Pathos
         P.Unconscious = true;
         P.VisionPrevented = true;
         P.DecreasedMetabolism = true;
+        P.LifeRecoveryDoubling = true;
+        P.ManaRecoveryDoubling = true;
       });
 
       slippery = AddProperty("slippery", P =>
@@ -412,6 +430,7 @@ namespace Pathos
       sustain_ability = AddProperty("sustain ability", P =>
       {
         P.Description = "Your ability scores are fixed so they cannot degrade but also cannot improve.";
+        P.FreezeAbilities = true;
       });
 
       telekinesis = AddProperty("telekinesis", P =>
@@ -475,31 +494,13 @@ namespace Pathos
 
       // TODO: properties requiring further abstraction in the engine.
       Register.aggravation = aggravation;
-      Register.blinking = blinking;
       Register.cannibalism = cannibalism;
       Register.clairvoyance = clairvoyance;
-      Register.clarity = clarity;
-      Register.conflict = conflict;
-      Register.dark_vision = dark_vision;
-      Register.displacement = displacement;
       Register.fainting = fainting;
-      Register.flight = flight;
-      Register.free_action = free_action;
-      Register.fumbling = fumbling;
-      Register.hallucination = hallucination;
       Register.hunger = hunger;
-      Register.invisibility = invisibility;
-      Register.jumping = jumping;
-      Register.levitation = levitation;
       Register.paralysis = paralysis;
-      Register.petrifying = petrifying;
-      Register.phasing = phasing;
       Register.rage = rage;
-      Register.reflection = reflection;
-      Register.see_invisible = see_invisible;
       Register.sleeping = sleeping;
-      Register.sustain_ability = sustain_ability;
-      Register.telekinesis = telekinesis;
       Register.telepathy = telepathy;
       Register.warning = warning;
     }
@@ -563,6 +564,6 @@ namespace Pathos
     public readonly Property tunnelling;
     public readonly Property unchanging;
     public readonly Property warning;
-    // NOTE: total 55/64 properties.
+    // NOTE: total 56/64 properties.
   }
 }

@@ -383,6 +383,7 @@ AttackType,horn,顶撞
 AttackType,kick,踢
 AttackType,punch,拳打
 AttackType,shriek,尖啸
+AttackType,slap,
 AttackType,spell,魔咒
 AttackType,spit,喷射
 AttackType,splash,溅射
@@ -970,7 +971,6 @@ EffectType,afflict,感染
 EffectType,alert,警觉
 EffectType,amnesia,失忆
 EffectType,animate,活化
-EffectType,apply transient,施加短期状态
 EffectType,area transient,范围短期状态
 EffectType,assess,评估
 EffectType,blinking,闪现
@@ -1019,7 +1019,6 @@ EffectType,identify,鉴定
 EffectType,impersonate,模仿
 EffectType,incarcerate,禁锢
 EffectType,increase ability,提高能力
-EffectType,intentional transient,
 EffectType,karma,运气
 EffectType,learn spell,习得咒语
 EffectType,liberate,解放
@@ -1040,7 +1039,6 @@ EffectType,recall,唤回队友
 EffectType,release,释放
 EffectType,remove curse,去除诅咒
 EffectType,remove transient,去除短期状态
-EffectType,replenish,
 EffectType,replicate asset,复制物件
 EffectType,restock,重新进货
 EffectType,restore ability,复原能力
@@ -1674,6 +1672,7 @@ EntityName,satyr,山羊人
 EntityName,scorpion,蝎子
 EntityName,Scorpius,天蝎座
 EntityName,scramper,多面者
+EntityName,seal,
 EntityName,sergeant,中士
 EntityName,sewer rat,褐鼠
 EntityName,shade,阴影
@@ -2080,6 +2079,7 @@ FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{F
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,这种黑魔法会消耗你的角色到此为之获得的所有名望，你确定要复活{CharacterName}吗?
 FormatText,Throw {AssetName} which direction?,将 {AssetName} 扔向哪个方向？
 FormatText,TOO {AttributeBad},过于 {AttributeBad}
+FormatText,transient {PropertyName} {DurationDice},施加短期状态 {PropertyName} {DurationDice}
 FormatText,transmute items to {MaterialName},转化物品至 {MaterialName}
 FormatText,trigger {Dice} times,发动 {Dice} 次
 FormatText,unless resists {ElementName},除非对 {ElementName} 有抗性
@@ -4344,6 +4344,7 @@ SkillName,unarmed combat,徒手格斗
 SkillName,whip,鞭
 SonicName,ammo,弹药
 SonicName,amulet,护符
+SonicName,arf,
 SonicName,armour,装甲
 SonicName,baa,嚎叫
 SonicName,bell,响铃铛

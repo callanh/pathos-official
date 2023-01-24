@@ -30,9 +30,9 @@ namespace Pathos
         Register.CustomPortraitArray[Index] = new CustomPortrait(HeroGlyph, CompanionGlyph);
       }
 
-      Register.Interrupt.Set(interrupt);
-      Register.Shroud.Set(shroud);
-      Register.StatueBase.Set(statue_base);
+      Register.Interrupt = interrupt;
+      Register.Shroud = shroud;
+      Register.StatueBase = statue_base;
 
       foreach (var Icon in Register.Icons.List)
       {
@@ -1654,6 +1654,7 @@ namespace Pathos
     public readonly Glyph shadow_ogre;
     public readonly Glyph shadow_wolf;
     public readonly Glyph Shaman_Karnov;
+    public readonly Glyph seal;
     public readonly Glyph shark;
     public readonly Glyph sheep;
     public readonly Glyph shield_of_reflection;

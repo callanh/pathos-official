@@ -95,7 +95,7 @@ demon,,horned devil,,29,2,32,1114,medium,animal,18000,2.5,24,attack,,22,17,21,12
 demon,,ice devil,,11,2,14,296,large,animal,35000,2.5,22,attack,,21,14,18,18,15,18
 demon,,incubus,,13,2,15,220,medium,animal,18000,4.0,17,attack,,8,17,13,15,12,20
 demon,,Juiblex,,50,0,40,3135,large,animal,66600,2.0,23,attack,UNIQUE,22,18,26,8,14,7
-demon,,living wall,,10,1,12,22,gargantuan,animal,200000,0.5,20,attack,,26,6,16,1,1,1
+demon,,living wall,,10,1,12,82,gargantuan,animal,200000,0.5,20,attack,,26,6,16,1,1,1
 demon,,marid,,27,1,28,979,medium,animal,15000,4.0,21,attack,,22,18,26,18,17,18
 demon,,marilith,,28,1,35,1075,large,animal,60000,4.0,23,attack,,22,20,20,18,16,20
 demon,,Maugneshaagar,,54,0,40,1437,large,animal,21000,2.5,30,attack,UNIQUE,18,20,18,14,16,15
@@ -449,6 +449,7 @@ marine,,giant frog,,9,10,11,105,huge,animal,40000,5.0,13,attack,,12,13,11,2,10,3
 marine,,jellyfish,,5,10,7,49,small,animal,800,2.0,14,attack,,8,11,9,1,3,3
 marine,,kraken,,20,10,22,447,huge,animal,300000,2.0,13,attack,,17,13,18,8,11,15
 marine,,piranha,,7,10,8,46,small,animal,600,3.7,16,attack,,13,15,13,3,1,5
+marine,,seal,,10,10,12,125,large,animal,88000,4.0,18,escape,DOMESTIC,20,5,20,5,5,14
 marine,,shark,,18,10,20,482,large,animal,200000,3.7,20,attack,,21,13,18,3,5,5
 mercenary,human,abbot,,23,1,18,812,medium,animal,15000,5.0,14,attack,MERCENARY,14,16,15,12,18,10
 mercenary,human,acolyte,,4,1,2,46,medium,animal,15000,3.7,10,attack,MERCENARY,14,11,12,13,15,14

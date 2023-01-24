@@ -19,6 +19,9 @@ namespace Pathos
           RequiresMasterMode: true, IsPublished: true)
     {
       this.Codex = Codex;
+
+      SetIntroduction(Codex.Sonics.introduction);
+      SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.outside);
     }
 
@@ -131,7 +134,7 @@ namespace Pathos
         Generator.PlaceFloor(SandboxMap[GroundIndex++, 4], Ground);
 
       var EggSquare = SandboxMap[13, 1];
-      var EggItem = Codex.Items.List.Where(I => I.Type == ItemType.Egg && !I.Artifact).Single();
+      var EggItem = Codex.Items.List.Where(I => I.Type == ItemType.Egg && !I.Grade.Unique).Single();
 
       foreach (var Egg in Codex.Eggs.List.OrderBy(E => E.Layer.Name))
       {
@@ -196,7 +199,7 @@ namespace Pathos
 
       var ThankYouGrid = Generator.LoadSpecialGrid(ThankYouText);
 
-      var PotionArray = Codex.Items.List.Where(I => I.Type == ItemType.Potion && !I.Artifact).ToArray();
+      var PotionArray = Codex.Items.List.Where(I => I.Type == ItemType.Potion && !I.Grade.Unique).ToArray();
       var EntityDictionary = Codex.Entities.List.GroupBy(E => char.ToLower(E.Kind.Name[0])).ToDictionary(K => K.Key, V => V.Where(A => A.IsEncounter && !A.IsHiding()).ToDistinctList());
 
       for (var Column = 0; Column < ThankYouGrid.Width; Column++)

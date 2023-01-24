@@ -168,7 +168,7 @@ namespace Pathos
         Z.Loot.AddKit(Chance.OneIn20, Dice.One, Items.alchemy_smock);
         Z.Loot.AddKit(Chance.OneIn20, Dice.One, Items.lab_coat);
 
-        var EyewearArray = Items.List.Where(I => I.Type == ItemType.Eyewear && !I.Artifact).ToArray();
+        var EyewearArray = Items.List.Where(I => I.Type == ItemType.Eyewear && !I.Grade.Unique).ToArray();
         foreach (var Item in EyewearArray)
           Z.Loot.AddKit(Chance.OneIn(20 * EyewearArray.Length), Dice.One, Item);
 

@@ -383,6 +383,7 @@ AttackType,horn,Horn
 AttackType,kick,fußtritt
 AttackType,punch,schlagen
 AttackType,shriek,schreien
+AttackType,slap,
 AttackType,spell,buchstabieren
 AttackType,spit,spucken
 AttackType,splash,spritzen
@@ -970,7 +971,6 @@ EffectType,afflict,leiden
 EffectType,alert,Wachsam
 EffectType,amnesia,Amnesie
 EffectType,animate,animieren
-EffectType,apply transient,bringt temporären Effekte
 EffectType,area transient,zone vorübergehend
 EffectType,assess,beurteilen
 EffectType,blinking,blinkend
@@ -1019,7 +1019,6 @@ EffectType,identify,identifizieren
 EffectType,impersonate,imitieren
 EffectType,incarcerate,inhaftieren
 EffectType,increase ability,Fähigkeit erhöhen
-EffectType,intentional transient,
 EffectType,karma,Karma
 EffectType,learn spell,Zauber lernen
 EffectType,liberate,befreien
@@ -1040,7 +1039,6 @@ EffectType,recall,erinnern
 EffectType,release,freilassen
 EffectType,remove curse,Fluch entfernen
 EffectType,remove transient,temporäre Effekte entfernen
-EffectType,replenish,
 EffectType,replicate asset,Asset Nachbilden
 EffectType,restock,Nachschub
 EffectType,restore ability,Fähigkeit wiederherstellen
@@ -1674,6 +1672,7 @@ EntityName,satyr,Satyr
 EntityName,scorpion,Skorpion
 EntityName,Scorpius,Scorpius
 EntityName,scramper,Scramper
+EntityName,seal,
 EntityName,sergeant,Feldwebel
 EntityName,sewer rat,Kanalratte
 EntityName,shade,Schattenwesen
@@ -2080,6 +2079,7 @@ FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{F
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,Dieser niederträchtige Akt kostet Sie Ihren ganzen Ruf. Bist du sicher dass du wieder auferstehen willst? {CharacterName} ?
 FormatText,Throw {AssetName} which direction?,Jeter {AssetName} welche Richtung?
 FormatText,TOO {AttributeBad},AUCH {AttributeBad}
+FormatText,transient {PropertyName} {DurationDice},bringt temporären Effekte {PropertyName} {DurationDice}
 FormatText,transmute items to {MaterialName},Gegenstände umwandeln in {MaterialName}
 FormatText,trigger {Dice} times,auslösen {Dice} mal
 FormatText,unless resists {ElementName},Ausser bei Ressitenz von {ElementName}
@@ -4344,6 +4344,7 @@ SkillName,unarmed combat,unbewaffneter Kampf
 SkillName,whip,Peitsche
 SonicName,ammo,Munition
 SonicName,amulet,Amulett
+SonicName,arf,
 SonicName,armour,Rüstung
 SonicName,baa,baa
 SonicName,bell,Glocke

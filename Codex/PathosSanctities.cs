@@ -34,7 +34,7 @@ namespace Pathos
       // ⛨⛧⛉ ⒞⒝⒰
       // ᛔ ⁇
 
-      Register.Mundane.Set(Uncursed);
+      Register.Mundane = Uncursed;
     }
 #endif
 

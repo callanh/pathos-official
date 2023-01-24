@@ -383,6 +383,7 @@ AttackType,horn,뿔
 AttackType,kick,발차기
 AttackType,punch,주먹질
 AttackType,shriek,비명
+AttackType,slap,
 AttackType,spell,마법
 AttackType,spit,침뱉기
 AttackType,splash,튀기기
@@ -970,7 +971,6 @@ EffectType,afflict,감염
 EffectType,alert,경계
 EffectType,amnesia,망각
 EffectType,animate,생동화
-EffectType,apply transient,효과 적용
 EffectType,area transient,범위 효과
 EffectType,assess,평가
 EffectType,blinking,점멸
@@ -1019,7 +1019,6 @@ EffectType,identify,식별
 EffectType,impersonate,사칭
 EffectType,incarcerate,투옥
 EffectType,increase ability,능력치 향상
-EffectType,intentional transient,
 EffectType,karma,카르마
 EffectType,learn spell,주문 학습
 EffectType,liberate,해방
@@ -1040,7 +1039,6 @@ EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
 EffectType,remove transient,일시적인 효과 제거
-EffectType,replenish,
 EffectType,replicate asset,아이템 복제
 EffectType,restock,재충전
 EffectType,restore ability,능력치 복구
@@ -1674,6 +1672,7 @@ EntityName,satyr,사티로스
 EntityName,scorpion,전갈
 EntityName,Scorpius,스콜피우스
 EntityName,scramper,스크램퍼
+EntityName,seal,
 EntityName,sergeant,병장
 EntityName,sewer rat,시궁쥐
 EntityName,shade,그늘
@@ -2080,6 +2079,7 @@ FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{F
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,이 사악한 행위는 현재까지 얻은 모든 명성치를 소모합니다. 정말로 {CharacterName}을(를) 부활 시키겠습니까?
 FormatText,Throw {AssetName} which direction?,{AssetName} 아이템을 어느 방향으로 던집니까?
 FormatText,TOO {AttributeBad},너무 {AttributeBad}
+FormatText,transient {PropertyName} {DurationDice},효과 적용 {PropertyName} {DurationDice}
 FormatText,transmute items to {MaterialName},아이템을 {MaterialName}로 변화시켰다.
 FormatText,trigger {Dice} times,발동 {Dice} 회
 FormatText,unless resists {ElementName},{ElementName}속성 저항이 없을 시
@@ -4344,6 +4344,7 @@ SkillName,unarmed combat,맨손 격투
 SkillName,whip,채찍
 SonicName,ammo,탄환
 SonicName,amulet,아뮬렛
+SonicName,arf,
 SonicName,armour,방어구
 SonicName,baa,메에
 SonicName,bell,종 소리

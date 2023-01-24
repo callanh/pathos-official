@@ -425,7 +425,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
+                        SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script5 = boss.InsertScript();
                         script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[32, 20]);
                         script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[4, 4]);
@@ -452,7 +452,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
+                        SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script10 = boss.InsertScript();
                         script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 5]);
                         script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 23]);
@@ -477,7 +477,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
+                        SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script15 = boss.InsertScript();
                         script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 11]);
                         script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 2]);
@@ -502,7 +502,7 @@ namespace Pathos
                                 }
                             default: boss = null; break;
                         }
-                        SPDDebug.generator.AcquireArtifact(Square, boss, SPDDebug.codex.Qualifications.master);
+                        SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var boss20killedscript = boss.InsertScript();
                         boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 23]);
                         boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 2]);
@@ -984,7 +984,7 @@ namespace Pathos
 
                 if (ItemDelayed.Item == null)
                 {
-                    if (SPDRandom.Int(40) == 0) SPDDebug.generator.PlaceSpecificAsset(square, SPDDebug.generator.GetArtifactItem());
+                    if (SPDRandom.Int(40) == 0) SPDDebug.generator.PlaceSpecificAsset(square, SPDDebug.generator.GetUniqueItem());
                     else square.PlaceAsset(SPDGameList.RandomAsset(square));
                 }
                 else

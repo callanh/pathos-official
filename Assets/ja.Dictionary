@@ -383,6 +383,7 @@ AttackType,horn,角
 AttackType,kick,キック
 AttackType,punch,パンチ
 AttackType,shriek,悲鳴
+AttackType,slap,
 AttackType,spell,呪文
 AttackType,spit,唾を吐く
 AttackType,splash,しぶき
@@ -970,7 +971,6 @@ EffectType,afflict,苦しめる
 EffectType,alert,警戒
 EffectType,amnesia,記憶喪失
 EffectType,animate,生命付与
-EffectType,apply transient,一時的な適用
 EffectType,area transient,一過性のエリア
 EffectType,assess,評価する
 EffectType,blinking,転位
@@ -1019,7 +1019,6 @@ EffectType,identify,識別する
 EffectType,impersonate,なりすまし
 EffectType,incarcerate,収監する
 EffectType,increase ability,能力を上げる
-EffectType,intentional transient,
 EffectType,karma,カルマ
 EffectType,learn spell,呪文を学ぶ
 EffectType,liberate,解放する
@@ -1040,7 +1039,6 @@ EffectType,recall,思い出す
 EffectType,release,解放する
 EffectType,remove curse,解呪
 EffectType,remove transient,一時的な症状の解除
-EffectType,replenish,
 EffectType,replicate asset,アイテムを複製する
 EffectType,restock,補充
 EffectType,restore ability,能力回復
@@ -1674,6 +1672,7 @@ EntityName,satyr,サテュロス
 EntityName,scorpion,さそり
 EntityName,Scorpius,スコルピウス
 EntityName,scramper,スクランパー
+EntityName,seal,
 EntityName,sergeant,軍曹
 EntityName,sewer rat,下水道ねずみ
 EntityName,shade,影
@@ -2080,6 +2079,7 @@ FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{F
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,この暗黒の行為は、これまでのあなたの名声をすべて犠牲にするでしょう。 {CharacterName}を復活させてよろしいですか？
 FormatText,Throw {AssetName} which direction?,{AssetName}をどの方向に投げますか？
 FormatText,TOO {AttributeBad},TOO {AttributeBad}
+FormatText,transient {PropertyName} {DurationDice},一時的な適用 {PropertyName} {DurationDice}
 FormatText,transmute items to {MaterialName},{MaterialName}に変換します。
 FormatText,trigger {Dice} times,{Dice}回誘発する
 FormatText,unless resists {ElementName},{ElementName}に抵抗できない場合
@@ -4344,6 +4344,7 @@ SkillName,unarmed combat,武装していない戦闘
 SkillName,whip,鞭
 SonicName,ammo,弾
 SonicName,amulet,お守り
+SonicName,arf,
 SonicName,armour,鎧
 SonicName,baa,メェー
 SonicName,bell,ベル

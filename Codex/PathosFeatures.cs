@@ -376,7 +376,9 @@ namespace Pathos
 
         var Workbench = F.SetWorkbench();
         Workbench.CraftSkill = Skills.crafting;
+        Workbench.CraftSonic = Sonics.craft;
         Workbench.ScrapSkill = Skills.crafting;
+        Workbench.ScrapSonic = Sonics.scrap;
 
         /*01*/
         Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false));

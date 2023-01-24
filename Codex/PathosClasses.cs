@@ -70,7 +70,7 @@ namespace Pathos
 
       Item[] DesirableItemArray(ClassEditor Class, Stock Stock)
       {
-        return Stock.Items.Except(UndesireableItemArray).Where(I => !I.Artifact && I.Rarity > 0).ToArray();
+        return Stock.Items.Except(UndesireableItemArray).Where(I => !I.Grade.Unique && I.Rarity > 0).ToArray();
       }
       Spell[] DesireableSpellArray(ClassEditor Class)
       {
