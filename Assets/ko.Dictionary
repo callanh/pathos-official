@@ -12,6 +12,35 @@ AfflictionName,rabies,광견병
 AfflictionName,reflux,역류
 AfflictionName,sliming,슬라임화
 AfflictionName,worms,기생충
+AnatomyAbsenceText,MINDLESS,이성없음
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,소리 없음
+AnatomyAbsenceText,NO EYES,눈 없음
+AnatomyAbsenceText,NO FEET,발 없음
+AnatomyAbsenceText,NO HANDS,손 없음
+AnatomyAbsenceText,NO HEAD,머리 없음
+AnatomyAbsenceText,NO LIMBS,사지 없음
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,목소리를 잃음
+AnatomyName,amorphous,무정형
+AnatomyName,blood,피
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,승마가능
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,만족함
+ApetiteName,hungry,배고픔
+ApetiteName,satiated,배부름
+ApetiteName,starving,굶주림
+ApetiteName,weak,약함
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,앞이 열려있고 가슴에서 걸쇠로 조이는 긴 망토이다.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,짧지만 튼튼해 보이는 미스릴 갑옷이다.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,날렵하고 섬세해 보이는 미스릴 갑옷이다.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName}�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName}은(는) 서투르게 {AssetName}을 {MotionPastName}했지만 아무 일도 일어나지 않았다
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}는 서투르게 {With:AssetName}에 {Use:AssetName}을 {MotionPastName}했다
 FormatText,{CharacterName} Inventory,{CharacterName}의 인벤토리
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName}은(는) {NutritionStatus} 상태이다
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName}은(는) {KarmaStatus} 기분을 느낀다
+FormatText,{CharacterName} is {ApetiteName},{CharacterName}은(는) {ApetiteName} 상태이다
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName}은(는) {StandingName} 기분을 느낀다
 FormatText,{CharacterName} is no longer stuck,{CharacterName}은(는) 더 이상 끼어있지 않다
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName}은(는) {SkillName} 스킬에 {QualificationName}이(가) 되었다
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName}은(는) 자살했다//{GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},{CharacterName}은(는) {BoonName} 은혜를 받았다
 FormatText,{CharacterName} was granted the service of {ServiceName},{CharacterName}은(는) {ServiceName} 서비스를 받았다
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName}은(는) {LiteralText}에 의해 사망했다
-FormatText,{CharacterName} was lifesaved!,{CharacterName}은(는) 목숨을 건졌다!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName}은(는) {PunishmentName}의 형벌을 받았다
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName}은(는) {PunishmentName}의 형벌에서 풀려났다
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName}은(는) {AfflictionName}(으)로부터 해방되었다
+FormatText,{CharacterName} was revived!,{CharacterName}은(는) 목숨을 건졌다!
 FormatText,{CharacterName} woke up,{CharacterName}이(가) 깨어났다
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName}은(는) 한번 더 {AssetName}의 힘을 쥐어 짜내었다
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,투척 무기
 ItemType,tin,통조림
 ItemType,tool,도구
 ItemType,wand,마법봉
-KarmaStatus,damned,저주받은
-KarmaStatus,doomed,불운한
-KarmaStatus,doubtful,의심스러운
-KarmaStatus,evil,악한
-KarmaStatus,exalted,숭고한
-KarmaStatus,glorious,영광스러운
-KarmaStatus,good,좋은
-KarmaStatus,hopeful,희망찬
-KarmaStatus,reconciled,화해한
-KarmaStatus,strayed,방황하는
 KindName,angel,천사
 KindName,bat,박쥐
 KindName,beast,야수
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,앰비언트 사운드
 LiteralText,AMMO,탄환
 LiteralText,amnesia,망각
 LiteralText,AMNESIA,망각
-LiteralText,amorphous,무정형
 LiteralText,anatomy,해부학
 LiteralText,ANONYMOUS,익명
 LiteralText,anticlockwise 90 degrees,반시계 방향으로 90도
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,어느 방향으로 점멸하시겠습니까?
 LiteralText,block,막다
 LiteralText,BLOCKED,막힘
 LiteralText,BLOCKS,블록
-LiteralText,blood,피
 LiteralText,BOONS,은혜
 LiteralText,boost attack by enchantment,강화에 비례해 명중률 향상
 LiteralText,boost damage by enchantment,강화에 비례해 피해 향상
@@ -3465,14 +3482,12 @@ LiteralText,MENU,메뉴
 LiteralText,mercenary,용병
 LiteralText,MIMIC,변장
 LiteralText,mimicking,따라하기
-LiteralText,MINDLESS,이성없음
 LiteralText,Mines,광산
 LiteralText,Minetown,광산마을
 LiteralText,missile,투사체
 LiteralText,modifier,보정치
 LiteralText,MOUNT,승마
 LiteralText,Mount which direction?,어느 방향으로 올라탑니까?
-LiteralText,mounted,승마가능
 LiteralText,MOUNTED,승마함
 LiteralText,MOVE,이동
 LiteralText,move down one level,한 층 내려가기
@@ -3493,23 +3508,9 @@ LiteralText,no allies,동료 없음
 LiteralText,no ambient sounds,앰비언트 사운드 없음
 LiteralText,No appropriate items available,적합한 아이템이 없음
 LiteralText,no available knowledge,사용할 수 있는 지식이 없음
-LiteralText,NO EARS,소리 없음
-LiteralText,NO EYES,눈 없음
-LiteralText,NO FEET,발 없음
-LiteralText,NO HANDS,손 없음
-LiteralText,NO HEAD,머리 없음
-LiteralText,NO LIMBS,사지 없음
 LiteralText,no resistances,저항 없음
 LiteralText,no talents,재능 없음
 LiteralText,no transient effects,상태이상 없음
-LiteralText,no-blood,피 없음
-LiteralText,no-ears,귀 없음
-LiteralText,no-eyes,눈 없음
-LiteralText,no-feet,발 없음
-LiteralText,no-hands,손 없음
-LiteralText,no-head,머리 없음
-LiteralText,no-limbs,사지 없음
-LiteralText,no-mind,이성 없음
 LiteralText,non charged items,충전되지 않은 아이템
 LiteralText,non divined items,점치지 않은 아이템
 LiteralText,non edible items,식품 없음
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,아무것도 일어나지 않음
 LiteralText,Nothing of interest,아무것도 없음
 LiteralText,nothing to give,줄 것이 없음
 LiteralText,nothing to take,받을 것이 없음
-LiteralText,no-voice,목소리를 낼 수 없음
 LiteralText,nutrition,영양
 LiteralText,NUTRITION,영양
 LiteralText,OBSTRUCTED,가로막힘
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
-LiteralText,VOICELESS,목소리를 잃음
 LiteralText,VOID SPACE,공허
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,발동
 MurderTypeName,Allied,동맹
 MurderTypeName,Every,모든
 MurderTypeName,Hostile,적대
-NutritionStatus,content,만족함
-NutritionStatus,hungry,배고픔
-NutritionStatus,satiated,배부름
-NutritionStatus,starving,굶주림
-NutritionStatus,weak,약함
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,이 나무 다리는 만들어진지 오랜 세월이 지났음에도 튼튼함을 유지하고 있다.
 PlatformName,crystal bridge,수정 다리
 PlatformName,wooden bridge,나무 다리
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,산성 분출
 SpellName,turn undead,언데드 퇴치
 SpellName,walling,벽 건설
 SpellName,wizard lock,위저드 락
+StandingName,damned,저주받은
+StandingName,doomed,불운한
+StandingName,doubtful,의심스러운
+StandingName,evil,악한
+StandingName,exalted,숭고한
+StandingName,glorious,영광스러운
+StandingName,good,좋은
+StandingName,hopeful,희망찬
+StandingName,reconciled,화해한
+StandingName,strayed,방황하는
 StockName,amulet,아뮬렛
 StockName,armour,방어구
 StockName,book,책

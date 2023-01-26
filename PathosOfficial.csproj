@@ -51,6 +51,8 @@
 
   <ItemGroup>
     <Compile Include="Codex\PathosAfflictions.cs" />
+    <Compile Include="Codex\PathosAnatomies.cs" />
+    <Compile Include="Codex\PathosApetites.cs" />
     <Compile Include="Codex\PathosAtmospheres.cs" />
     <Compile Include="Codex\PathosAttackTypes.cs" />
     <Compile Include="Codex\PathosAttributes.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Codex\PathosSonics.cs" />
     <Compile Include="Codex\PathosSpecials.cs" />
     <Compile Include="Codex\PathosSpells.cs" />
+    <Compile Include="Codex\PathosStandings.cs" />
     <Compile Include="Codex\PathosStocks.cs" />
     <Compile Include="Codex\PathosStrikes.cs" />
     <Compile Include="Codex\PathosTracks.cs" />

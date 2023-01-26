@@ -12,6 +12,35 @@ AfflictionName,rabies,
 AfflictionName,reflux,
 AfflictionName,sliming,превращение в слизня
 AfflictionName,worms,
+AnatomyAbsenceText,MINDLESS,НЕМЫСЛЯЩИЙ
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,
+AnatomyAbsenceText,NO EYES,БЕЗ ГЛАЗ
+AnatomyAbsenceText,NO FEET,БЕЗ НОГ
+AnatomyAbsenceText,NO HANDS,БЕЗ РУК
+AnatomyAbsenceText,NO HEAD,БЕЗ ГОЛОВЫ
+AnatomyAbsenceText,NO LIMBS,БЕЗ КОНЕЧНОСТЕЙ
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,
+AnatomyName,amorphous,бесформенный
+AnatomyName,blood,кровь
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,верховой
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,удовлеткрадецённый
+ApetiteName,hungry,голодный
+ApetiteName,satiated,сытый
+ApetiteName,starving,истощённый
+ApetiteName,weak,ослабленный
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Длинный плащ, открытый спереди и с застёжкой на груди."
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Короткий, но выглядящий крепким митрилни доспехи."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Тонкий изящный митрилни доспехи.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,список вещей {CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} теперь {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} чувствует себя {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} теперь {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} чувствует себя {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} освобождается
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} теперь {QualificationName} в {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} совершает убийство {GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},
 FormatText,{CharacterName} was granted the boon of {BoonName},было даровано {BoonName} для {CharacterName}
 FormatText,{CharacterName} was granted the service of {ServiceName},оказана услуга {ServiceName} для {CharacterName}
 FormatText,{CharacterName} was killed by {LiteralText},{LiteralText} убивает {CharacterName}
-FormatText,{CharacterName} was lifesaved!,жизнь {CharacterName} спасена!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} получи наказание с помощью {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} освобождается от {PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},
+FormatText,{CharacterName} was revived!,жизнь {CharacterName} спасена!
 FormatText,{CharacterName} woke up,{CharacterName} просыпается
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} вырывает на одно использование больше из {AssetName}
 FormatText,"{CharacterName}, {ShopName}",
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,Метательное оружие
 ItemType,tin,консервная банка
 ItemType,tool,Инструмент
 ItemType,wand,Палочка
-KarmaStatus,damned,проклятый
-KarmaStatus,doomed,обречённый
-KarmaStatus,doubtful,сомневающийся
-KarmaStatus,evil,злой
-KarmaStatus,exalted,возвышенный
-KarmaStatus,glorious,прославленный
-KarmaStatus,good,добрый
-KarmaStatus,hopeful,многообещающий
-KarmaStatus,reconciled,умироткрадецённый
-KarmaStatus,strayed,заблудший
 KindName,angel,ангелы
 KindName,bat,рукокрылые
 KindName,beast,звери
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,
 LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
-LiteralText,amorphous,бесформенный
 LiteralText,anatomy,
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,
 LiteralText,block,
 LiteralText,BLOCKED,БЛОКИРОВАН
 LiteralText,BLOCKS,
-LiteralText,blood,кровь
 LiteralText,BOONS,ДАРЫ
 LiteralText,boost attack by enchantment,усиление атаки
 LiteralText,boost damage by enchantment,увеличение урона
@@ -3465,14 +3482,12 @@ LiteralText,MENU,
 LiteralText,mercenary,наёмник
 LiteralText,MIMIC,МИМИК
 LiteralText,mimicking,
-LiteralText,MINDLESS,НЕМЫСЛЯЩИЙ
 LiteralText,Mines,Копи
 LiteralText,Minetown,Шахтный город
 LiteralText,missile,спанеряд
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,
-LiteralText,mounted,верховой
 LiteralText,MOUNTED,ВЕРХОВОЙ
 LiteralText,MOVE,ДВИЖЕНИЕ
 LiteralText,move down one level,
@@ -3493,23 +3508,9 @@ LiteralText,no allies,без союзников
 LiteralText,no ambient sounds,
 LiteralText,No appropriate items available,Нет соответствующих доступных вещей
 LiteralText,no available knowledge,без доступных знаний
-LiteralText,NO EARS,
-LiteralText,NO EYES,БЕЗ ГЛАЗ
-LiteralText,NO FEET,БЕЗ НОГ
-LiteralText,NO HANDS,БЕЗ РУК
-LiteralText,NO HEAD,БЕЗ ГОЛОВЫ
-LiteralText,NO LIMBS,БЕЗ КОНЕЧНОСТЕЙ
 LiteralText,no resistances,
 LiteralText,no talents,без талантов
 LiteralText,no transient effects,без временных эффектов
-LiteralText,no-blood,без крови
-LiteralText,no-ears,
-LiteralText,no-eyes,
-LiteralText,no-feet,без ног
-LiteralText,no-hands,без рук
-LiteralText,no-head,без головы
-LiteralText,no-limbs,без конечностей
-LiteralText,no-mind,без разума
 LiteralText,non charged items,незаряженные вещи
 LiteralText,non divined items,вещи с неопределённой духовностью
 LiteralText,non edible items,
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,ничего не произошло
 LiteralText,Nothing of interest,Ничего интересного
 LiteralText,nothing to give,нищо даване
 LiteralText,nothing to take,нищо взимане
-LiteralText,no-voice,
 LiteralText,nutrition,сытость
 LiteralText,NUTRITION,СЫТОСТЬ
 LiteralText,OBSTRUCTED,ЗАТРУДНЕНИЯ
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,Посетить сайт
-LiteralText,VOICELESS,
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,махнуть
 MurderTypeName,Allied,Союзников
 MurderTypeName,Every,Всех
 MurderTypeName,Hostile,Врагов
-NutritionStatus,content,удовлеткрадецённый
-NutritionStatus,hungry,голодный
-NutritionStatus,satiated,сытый
-NutritionStatus,starving,истощённый
-NutritionStatus,weak,ослабленный
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Това ет деревянный мост очень прочен несмотря на многолетнее использование.
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,деревянный мост
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,
 SpellName,turn undead,отпугивание нежити
 SpellName,walling,
 SpellName,wizard lock,магически замок
+StandingName,damned,проклятый
+StandingName,doomed,обречённый
+StandingName,doubtful,сомневающийся
+StandingName,evil,злой
+StandingName,exalted,возвышенный
+StandingName,glorious,прославленный
+StandingName,good,добрый
+StandingName,hopeful,многообещающий
+StandingName,reconciled,умироткрадецённый
+StandingName,strayed,заблудший
 StockName,amulet,амулеты
 StockName,armour,доспехии
 StockName,book,книги

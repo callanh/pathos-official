@@ -64,6 +64,7 @@ namespace Pathos
         P.Description = "This impairment of vision means you can only see things in a very close proximity.";
         P.Unwanted = true;
         P.VisionPrevented = true;
+        P.VisionImpairing = true;
         P.PickupInterfering = true;
         P.ComplicateUntrapping = true;
       });
@@ -143,8 +144,9 @@ namespace Pathos
         P.Description = "Fainting from lack of food.";
         P.Unwanted = true;
         P.Motionless = true;
-        P.Unconscious = true;
+        P.UnconsciousIndicationText = "oOo";
         P.VisionPrevented = true;
+        P.VisionImpairing = true;
       });
 
       fear = AddProperty("fear", P =>
@@ -380,8 +382,9 @@ namespace Pathos
         P.ParityElement = Elements.sleep;
         P.Unwanted = true;
         P.Motionless = true;
-        P.Unconscious = true;
+        P.UnconsciousIndicationText = "zZz";
         P.VisionPrevented = true;
+        P.VisionImpairing = true;
         P.DecreasedMetabolism = true;
         P.LifeRecoveryDoubling = true;
         P.ManaRecoveryDoubling = true;
@@ -496,11 +499,9 @@ namespace Pathos
       Register.aggravation = aggravation;
       Register.cannibalism = cannibalism;
       Register.clairvoyance = clairvoyance;
-      Register.fainting = fainting;
       Register.hunger = hunger;
       Register.paralysis = paralysis;
       Register.rage = rage;
-      Register.sleeping = sleeping;
       Register.telepathy = telepathy;
       Register.warning = warning;
     }

@@ -12,6 +12,35 @@ AfflictionName,rabies,พิษสุนัขบ้า
 AfflictionName,reflux,กรดไหลย้อน
 AfflictionName,sliming,เป็นเมือก
 AfflictionName,worms,หนอนในท้อง
+AnatomyAbsenceText,MINDLESS,ไร้ความคิด
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,
+AnatomyAbsenceText,NO EYES,ไม่มีตา
+AnatomyAbsenceText,NO FEET,ไม่มีเท้า
+AnatomyAbsenceText,NO HANDS,ไม่มีมือ
+AnatomyAbsenceText,NO HEAD,ไม่มีหัว
+AnatomyAbsenceText,NO LIMBS,ไม่มีข้อต่อ
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,ไร้เสียง
+AnatomyName,amorphous,
+AnatomyName,blood,เลือด
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,ขี่ได้
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,อิ่ม
+ApetiteName,hungry,หิวโหย
+ApetiteName,satiated,อิ่มแปล้
+ApetiteName,starving,กำลังอดตาย
+ApetiteName,weak,อ่อนแอ
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,ช่องเก็บของ{CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName}{NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName}รู้สึก{KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName}{ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName}รู้สึก{StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName}ไม่ติดอีกต่อไป
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},ตอนนี้{CharacterName}{QualificationName}ทักษะ{SkillName}แล้ว
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName}ฆ่าตัวตาย//{GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},
 FormatText,{CharacterName} was granted the boon of {BoonName},
 FormatText,{CharacterName} was granted the service of {ServiceName},
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName}ถูกฆ่าโดย{LiteralText}
-FormatText,{CharacterName} was lifesaved!,{CharacterName}ถูกช่วยชีวิตไว้!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName}ถูกลงโทษด้วย{PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName}เป็นอิสระจาก{PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},
+FormatText,{CharacterName} was revived!,{CharacterName}ถูกช่วยชีวิตไว้!
 FormatText,{CharacterName} woke up,{CharacterName}ตื่นแล้ว
 FormatText,{CharacterName} wrested one more use from the {AssetName},
 FormatText,"{CharacterName}, {ShopName}",
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,อาวุธขว้าง
 ItemType,tin,ดีบุก
 ItemType,tool,เครื่องมือ
 ItemType,wand,คทา
-KarmaStatus,damned,ถูกสาปแช่ง
-KarmaStatus,doomed,มีเคราะห์
-KarmaStatus,doubtful,รู้สึกผิด
-KarmaStatus,evil,ชั่วช้า
-KarmaStatus,exalted,น่ายกย่อง
-KarmaStatus,glorious,เปล่งรัศมี
-KarmaStatus,good,เป็นคนดี
-KarmaStatus,hopeful,เต็มไปด้วยความหวัง
-KarmaStatus,reconciled,ปรับความเข้าใจ
-KarmaStatus,strayed,เร่ร่อน
 KindName,angel,เทวดา
 KindName,bat,ค้างคาว
 KindName,beast,อสูร
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,
 LiteralText,AMMO,กระสุน
 LiteralText,amnesia,ความจำเสื่อม
 LiteralText,AMNESIA,ความจำเสื่อม
-LiteralText,amorphous,
 LiteralText,anatomy,
 LiteralText,ANONYMOUS,
 LiteralText,anticlockwise 90 degrees,
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,กระพริบไปทางไหน
 LiteralText,block,ป้องกัน
 LiteralText,BLOCKED,ป้องกัน
 LiteralText,BLOCKS,ป้องกัน
-LiteralText,blood,เลือด
 LiteralText,BOONS,สวัสดิการ
 LiteralText,boost attack by enchantment,
 LiteralText,boost damage by enchantment,
@@ -3465,14 +3482,12 @@ LiteralText,MENU,
 LiteralText,mercenary,ทหารรับจ้าง
 LiteralText,MIMIC,เลียนแบบ
 LiteralText,mimicking,
-LiteralText,MINDLESS,ไร้ความคิด
 LiteralText,Mines,เหมือง
 LiteralText,Minetown,เมืองเหมือง
 LiteralText,missile,
 LiteralText,modifier,
 LiteralText,MOUNT,ขี่
 LiteralText,Mount which direction?,
-LiteralText,mounted,ขี่ได้
 LiteralText,MOUNTED,ขี่แล้ว
 LiteralText,MOVE,
 LiteralText,move down one level,
@@ -3493,23 +3508,9 @@ LiteralText,no allies,ไม่มีพรรคพวก
 LiteralText,no ambient sounds,
 LiteralText,No appropriate items available,
 LiteralText,no available knowledge,
-LiteralText,NO EARS,
-LiteralText,NO EYES,ไม่มีตา
-LiteralText,NO FEET,ไม่มีเท้า
-LiteralText,NO HANDS,ไม่มีมือ
-LiteralText,NO HEAD,ไม่มีหัว
-LiteralText,NO LIMBS,ไม่มีข้อต่อ
 LiteralText,no resistances,ไม่มีการต้านทาน
 LiteralText,no talents,ไม่มีพรสวรรค์
 LiteralText,no transient effects,
-LiteralText,no-blood,ไม่มีเลือด
-LiteralText,no-ears,
-LiteralText,no-eyes,
-LiteralText,no-feet,ไม่มีเท้า
-LiteralText,no-hands,ไม่มีมือ
-LiteralText,no-head,ไม่มีหัว
-LiteralText,no-limbs,ไม่มีข้อต่อ
-LiteralText,no-mind,ไม่มีความคิด
 LiteralText,non charged items,
 LiteralText,non divined items,
 LiteralText,non edible items,
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,ไม่มีอะไรเกิดขึ้น
 LiteralText,Nothing of interest,ไม่มีอะไรน่าสนใจ
 LiteralText,nothing to give,ไม่มีอะไรจะให้
 LiteralText,nothing to take,ไม่มีอะไรจะเอา
-LiteralText,no-voice,ไม่มีเสียง
 LiteralText,nutrition,โภชนาการ
 LiteralText,NUTRITION,โภชนาการ
 LiteralText,OBSTRUCTED,
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
-LiteralText,VOICELESS,ไร้เสียง
 LiteralText,VOID SPACE,
 LiteralText,vulnerable to,มีค่าสำหรับ
 LiteralText,WAIT,รอ
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,ยิง
 MurderTypeName,Allied,พรรคพวก
 MurderTypeName,Every,ทุกๆอย่าง
 MurderTypeName,Hostile,ศัตรู
-NutritionStatus,content,อิ่ม
-NutritionStatus,hungry,หิวโหย
-NutritionStatus,satiated,อิ่มแปล้
-NutritionStatus,starving,กำลังอดตาย
-NutritionStatus,weak,อ่อนแอ
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,
 SpellName,turn undead,
 SpellName,walling,
 SpellName,wizard lock,
+StandingName,damned,ถูกสาปแช่ง
+StandingName,doomed,มีเคราะห์
+StandingName,doubtful,รู้สึกผิด
+StandingName,evil,ชั่วช้า
+StandingName,exalted,น่ายกย่อง
+StandingName,glorious,เปล่งรัศมี
+StandingName,good,เป็นคนดี
+StandingName,hopeful,เต็มไปด้วยความหวัง
+StandingName,reconciled,ปรับความเข้าใจ
+StandingName,strayed,เร่ร่อน
 StockName,amulet,เครื่องราง
 StockName,armour,เกราะ
 StockName,book,หนังสือ

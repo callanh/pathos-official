@@ -14,6 +14,7 @@ namespace Pathos
       : base(Codex.Manifest.Diets)
     {
       var Materials = Codex.Materials;
+      var Anatomies = Codex.Anatomies;
 
       Diet AddDiet(string Name, params Material[] MaterialArray)
       {
@@ -30,7 +31,7 @@ namespace Pathos
       fabrivore = AddDiet("fabrivore", Materials.fruit, Materials.vegetable, Materials.wax, Materials.leather, Materials.hide, Materials.cloth, /*Materials.straw,*/ Materials.bone);
       geophagy = AddDiet("geophagy", Materials.stone, Materials.animal, Materials.hide, Materials.leather, Materials.gemstone, Materials.glass, Materials.bone);
       hematophagy = AddDiet("hematophagy");
-      Register.Edit(hematophagy).Blood = true;
+      Register.Edit(hematophagy).SpecificAnatomy = Anatomies.blood;
       herbivore = AddDiet("herbivore", Materials.fruit, Materials.vegetable, /*Materials.straw,*/ Materials.paper);
       lithivore = AddDiet("lithivore", Materials.stone, Materials.sand, Materials.glass, Materials.clay, Materials.crystal, Materials.gemstone);
       metalivore = AddDiet("metalivore", Materials.tin, Materials.iron, Materials.copper, Materials.silver, Materials.gold, Materials.platinum, Materials.mithril);

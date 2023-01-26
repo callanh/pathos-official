@@ -149,9 +149,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         S.LifeAdvancement.Set(Dice.Zero - 1); // -1 per level.
@@ -180,9 +180,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
 

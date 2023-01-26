@@ -12,6 +12,35 @@ AfflictionName,rabies,rabbia
 AfflictionName,reflux,reflusso
 AfflictionName,sliming,slime-ificazione
 AfflictionName,worms,vermi
+AnatomyAbsenceText,MINDLESS,SENZA MENTE
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,SENZA ORECCHIE
+AnatomyAbsenceText,NO EYES,SENZA OCCHI
+AnatomyAbsenceText,NO FEET,SENZA PIEDI
+AnatomyAbsenceText,NO HANDS,SENZA MANI
+AnatomyAbsenceText,NO HEAD,SENZA TESTA
+AnatomyAbsenceText,NO LIMBS,SENZA ARTI
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,SENZA VOCE
+AnatomyName,amorphous,amorfo
+AnatomyName,blood,sangue
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,montato
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,soddisfatto
+ApetiteName,hungry,affamato
+ApetiteName,satiated,sazio
+ApetiteName,starving,morto di fame
+ApetiteName,weak,debole
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Un lungo mantello aperto sul davanti e fissato al petto con una fermaglio.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un cappotto di armatura di mithril corto ma dall'aspetto robusto.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Un cappotto di armatura di mithril dall'aspetto sottile e delicato.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} ha inettamente {MotionPastName} {AssetName} ma non è successo nulla
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} inettamente {MotionPastName} {Use:AssetName} con {With:AssetName}
 FormatText,{CharacterName} Inventory,Inventario di {CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} è {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} si sente {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} è {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} si sente {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} non è più bloccato
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} è ora {QualificationName} in {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} si è suicidato//{GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},a {CharacterName} è stato garantito il dono di {BoonName}
 FormatText,{CharacterName} was granted the service of {ServiceName},a {CharacterName} è stato offerto il servizio di {ServiceName}
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName} è stato ucciso da {LiteralText}
-FormatText,{CharacterName} was lifesaved!,A {CharacterName} è stata salvata la vita!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} è stato punito tramite {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} è stato liberato da {PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} non è più afflitto da {AfflictionName}
+FormatText,{CharacterName} was revived!,A {CharacterName} è stata salvata la vita!
 FormatText,{CharacterName} woke up,{CharacterName} si è svegliato
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} è riuscito a usare per un'altra volta {AssetName}
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,arma da lancio
 ItemType,tin,lattina
 ItemType,tool,attrezzo
 ItemType,wand,bacchetta
-KarmaStatus,damned,rinnegato
-KarmaStatus,doomed,condannato
-KarmaStatus,doubtful,dubbioso
-KarmaStatus,evil,malvagio
-KarmaStatus,exalted,eccelso
-KarmaStatus,glorious,glorificato
-KarmaStatus,good,buono
-KarmaStatus,hopeful,speranzoso
-KarmaStatus,reconciled,riconciliato
-KarmaStatus,strayed,smarrito
 KindName,angel,angelo
 KindName,bat,pipistrello
 KindName,beast,animale
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,SUONI AMBIENTALI
 LiteralText,AMMO,MUNIZIONI
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
-LiteralText,amorphous,amorfo
 LiteralText,anatomy,anatomia
 LiteralText,ANONYMOUS,ANONIMO
 LiteralText,anticlockwise 90 degrees,in senso antiorario di 90 gradi
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,In quale direzione vuoi teletrasportarti?
 LiteralText,block,blocca
 LiteralText,BLOCKED,BLOCCATO
 LiteralText,BLOCKS,BLOCCHI
-LiteralText,blood,sangue
 LiteralText,BOONS,DONI
 LiteralText,boost attack by enchantment,aumenta attacco per incantamento
 LiteralText,boost damage by enchantment,aumenta danno per incantamento
@@ -3465,14 +3482,12 @@ LiteralText,MENU,MENU
 LiteralText,mercenary,mercenario
 LiteralText,MIMIC,IMITA
 LiteralText,mimicking,imitando
-LiteralText,MINDLESS,SENZA MENTE
 LiteralText,Mines,Profondità minerarie
 LiteralText,Minetown,Sottomonte
 LiteralText,missile,missile
 LiteralText,modifier,modificatore
 LiteralText,MOUNT,MONTA
 LiteralText,Mount which direction?,In quale direzione vuoi montare?
-LiteralText,mounted,montato
 LiteralText,MOUNTED,MONTATO
 LiteralText,MOVE,MUOVI
 LiteralText,move down one level,scendi di un piano
@@ -3493,23 +3508,9 @@ LiteralText,no allies,nessun alleato
 LiteralText,no ambient sounds,no suoni ambientali
 LiteralText,No appropriate items available,Nessun oggetto appropriato disponibile
 LiteralText,no available knowledge,nessuna conoscenza disponibile
-LiteralText,NO EARS,SENZA ORECCHIE
-LiteralText,NO EYES,SENZA OCCHI
-LiteralText,NO FEET,SENZA PIEDI
-LiteralText,NO HANDS,SENZA MANI
-LiteralText,NO HEAD,SENZA TESTA
-LiteralText,NO LIMBS,SENZA ARTI
 LiteralText,no resistances,senza resistenze
 LiteralText,no talents,senza abilità
 LiteralText,no transient effects,nessun effetto transitorio
-LiteralText,no-blood,senza-sangue
-LiteralText,no-ears,senza-orecchie
-LiteralText,no-eyes,senza-occhi
-LiteralText,no-feet,senza-piedi
-LiteralText,no-hands,senza-mani
-LiteralText,no-head,senza-testa
-LiteralText,no-limbs,senza-arti
-LiteralText,no-mind,senza-cervello
 LiteralText,non charged items,oggetti non caricati
 LiteralText,non divined items,oggetti non divinati
 LiteralText,non edible items,oggetti non commestibili
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,non succede nulla
 LiteralText,Nothing of interest,Nulla di interessante
 LiteralText,nothing to give,niente da dare
 LiteralText,nothing to take,niente da prendere
-LiteralText,no-voice,senza-voce
 LiteralText,nutrition,nutrizione
 LiteralText,NUTRITION,NUTRIZIONE
 LiteralText,OBSTRUCTED,OSTRUITO
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,Vanità
 LiteralText,VIEW,VISUALIZZA
 LiteralText,Visit the website,Visita il sito web
-LiteralText,VOICELESS,SENZA VOCE
 LiteralText,VOID SPACE,SPAZIO VUOTO
 LiteralText,vulnerable to,vulnerabile a
 LiteralText,WAIT,ASPETTA
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,lancia
 MurderTypeName,Allied,Alleato
 MurderTypeName,Every,Tutti
 MurderTypeName,Hostile,Ostile
-NutritionStatus,content,soddisfatto
-NutritionStatus,hungry,affamato
-NutritionStatus,satiated,sazio
-NutritionStatus,starving,morto di fame
-NutritionStatus,weak,debole
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Questo ponte di solido legno è integro nonostante molti anni di utilizzo.
 PlatformName,crystal bridge,ponte di cristallo
 PlatformName,wooden bridge,ponte di legno
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,spruzzo acido
 SpellName,turn undead,scacciare i non morti
 SpellName,walling,crea muro
 SpellName,wizard lock,cassaforte magica
+StandingName,damned,rinnegato
+StandingName,doomed,condannato
+StandingName,doubtful,dubbioso
+StandingName,evil,malvagio
+StandingName,exalted,eccelso
+StandingName,glorious,glorificato
+StandingName,good,buono
+StandingName,hopeful,speranzoso
+StandingName,reconciled,riconciliato
+StandingName,strayed,smarrito
 StockName,amulet,amuleto
 StockName,armour,armatura
 StockName,book,libro

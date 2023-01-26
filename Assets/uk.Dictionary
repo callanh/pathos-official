@@ -12,6 +12,35 @@ AfflictionName,rabies,сказ
 AfflictionName,reflux,рефлюкс
 AfflictionName,sliming,сходить слизом
 AfflictionName,worms,глисти
+AnatomyAbsenceText,MINDLESS,немислящей
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,БЕЗ ВУХ
+AnatomyAbsenceText,NO EYES,БЕЗ ОЧЕЙ
+AnatomyAbsenceText,NO FEET,БЕЗ НІГ
+AnatomyAbsenceText,NO HANDS,БЕЗ РУК
+AnatomyAbsenceText,NO HEAD,БЕЗ ГОЛОВИ
+AnatomyAbsenceText,NO LIMBS,БЕЗ КІНЦІВОК
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,БЕЗГОЛОСИЙ
+AnatomyName,amorphous,безформний
+AnatomyName,blood,кров
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,верховий
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,ситий
+ApetiteName,hungry,голодний
+ApetiteName,satiated,об’ївся
+ApetiteName,starving,виснажений
+ApetiteName,weak,заслаблий
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Довгий плащ, відкритий спереду, із застібкою на грудях"
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Короткий, але міцний міфріловий обладунок."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Тонкий і делікатний міфріловий обладунок.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} незграбно {MotionPastName} {AssetName} і нічого не відбулося
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} незграбно {MotionPastName} {Use:AssetName} за допомогою {With:AssetName}
 FormatText,{CharacterName} Inventory,список речей {CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} тепер {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} відчуває себе {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} тепер {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} відчуває себе {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} звільняється
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} тепер {QualificationName} в {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} здійснює вбивство {GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},було даровано {BoonName} для {CharacterName}
 FormatText,{CharacterName} was granted the service of {ServiceName},надана послуга {ServiceName} для {CharacterName}
 FormatText,{CharacterName} was killed by {LiteralText},{LiteralText} вбиває {CharacterName}
-FormatText,{CharacterName} was lifesaved!,Життя {CharacterName} врятована!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} отримує покарання за допомогою {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} звільняється від {PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} позбавлено від {AfflictionName}
+FormatText,{CharacterName} was revived!,Життя {CharacterName} врятована!
 FormatText,{CharacterName} woke up,{CharacterName} прокидається
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} вимучив ще один заряд з {AssetName}
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,метальна зброя
 ItemType,tin,консервна банка
 ItemType,tool,інструмент
 ItemType,wand,паличка
-KarmaStatus,damned,проклятий
-KarmaStatus,doomed,приречений
-KarmaStatus,doubtful,сумнівний
-KarmaStatus,evil,злий
-KarmaStatus,exalted,піднесений
-KarmaStatus,glorious,прославлений
-KarmaStatus,good,добрий
-KarmaStatus,hopeful,небезнадійний
-KarmaStatus,reconciled,смиренний
-KarmaStatus,strayed,заблудший
 KindName,angel,ангели
 KindName,bat,рукокрилі
 KindName,beast,звірі
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,НАВКОЛИШНІ ЗВУКИ
 LiteralText,AMMO,БОЄЗАПАС
 LiteralText,amnesia,амнезія
 LiteralText,AMNESIA,АМНЕЗІЯ
-LiteralText,amorphous,безформний
 LiteralText,anatomy,анатомія
 LiteralText,ANONYMOUS,АНОНІМ
 LiteralText,anticlockwise 90 degrees,на 90 градусів anticlockwise
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,Куди телепортуватися?
 LiteralText,block,клітина
 LiteralText,BLOCKED,заблоковано
 LiteralText,BLOCKS,БЛОКИ
-LiteralText,blood,кров
 LiteralText,BOONS,ДАРИ
 LiteralText,boost attack by enchantment,магічне посилення атаки
 LiteralText,boost damage by enchantment,магічне збільшення ушкоджень
@@ -3465,14 +3482,12 @@ LiteralText,MENU,МЕНЮ
 LiteralText,mercenary,найманці
 LiteralText,MIMIC,МІМІКРУЙ
 LiteralText,mimicking,мімікувати
-LiteralText,MINDLESS,немислящей
 LiteralText,Mines,Копальні
 LiteralText,Minetown,Шахтне містечко
 LiteralText,missile,снаряд
 LiteralText,modifier,модифікатор
 LiteralText,MOUNT,СІСТИ ВЕРХИ
 LiteralText,Mount which direction?,Влізти в якому напрямку?
-LiteralText,mounted,верховий
 LiteralText,MOUNTED,ВЕРХОВИЙ
 LiteralText,MOVE,ЗАЙТИ
 LiteralText,move down one level,спустися вниз на один рівень
@@ -3493,23 +3508,9 @@ LiteralText,no allies,нема отряду
 LiteralText,no ambient sounds,без навколишніх звуків
 LiteralText,No appropriate items available,Немає відповідних доступних речей
 LiteralText,no available knowledge,немає доступних знань
-LiteralText,NO EARS,БЕЗ ВУХ
-LiteralText,NO EYES,БЕЗ ОЧЕЙ
-LiteralText,NO FEET,БЕЗ НІГ
-LiteralText,NO HANDS,БЕЗ РУК
-LiteralText,NO HEAD,БЕЗ ГОЛОВИ
-LiteralText,NO LIMBS,БЕЗ КІНЦІВОК
 LiteralText,no resistances,нема стійкості
 LiteralText,no talents,немає талантів
 LiteralText,no transient effects,немає тимчасових ефектів
-LiteralText,no-blood,без крові
-LiteralText,no-ears,
-LiteralText,no-eyes,без очей
-LiteralText,no-feet,без ніг
-LiteralText,no-hands,без рук
-LiteralText,no-head,без голови
-LiteralText,no-limbs,без кінцівок
-LiteralText,no-mind,без розуму
 LiteralText,non charged items,незаряджені речі
 LiteralText,non divined items,речі з невизначеною духовністю
 LiteralText,non edible items,неїстівні предмети
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,нічого не станеться
 LiteralText,Nothing of interest,Нічого цікавого
 LiteralText,nothing to give,нічого дати
 LiteralText,nothing to take,нема чого взяти
-LiteralText,no-voice,мовчазний
 LiteralText,nutrition,ситість
 LiteralText,NUTRITION,СИТІСТЬ
 LiteralText,OBSTRUCTED,УТРУДНЕНЕ
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,Марнославство
 LiteralText,VIEW,ОГЛЯД
 LiteralText,Visit the website,Відвідайте вебсайт
-LiteralText,VOICELESS,БЕЗГОЛОСИЙ
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,махнути
 MurderTypeName,Allied,Друзів
 MurderTypeName,Every,Всіх
 MurderTypeName,Hostile,Ворогів
-NutritionStatus,content,ситий
-NutritionStatus,hungry,голодний
-NutritionStatus,satiated,об’ївся
-NutritionStatus,starving,виснажений
-NutritionStatus,weak,заслаблий
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Цей дерев'яний міст дуже міцний незважаючи на багаторічне використання.
 PlatformName,crystal bridge,кришталевий міст
 PlatformName,wooden bridge,дерев'яний міст
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,токсічний виприск
 SpellName,turn undead,відлякування нежиті
 SpellName,walling,будування стін
 SpellName,wizard lock,чарівний замок
+StandingName,damned,проклятий
+StandingName,doomed,приречений
+StandingName,doubtful,сумнівний
+StandingName,evil,злий
+StandingName,exalted,піднесений
+StandingName,glorious,прославлений
+StandingName,good,добрий
+StandingName,hopeful,небезнадійний
+StandingName,reconciled,смиренний
+StandingName,strayed,заблудший
 StockName,amulet,амулети
 StockName,armour,обладунки
 StockName,book,книжки

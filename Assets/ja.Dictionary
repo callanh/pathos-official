@@ -12,6 +12,35 @@ AfflictionName,rabies,狂犬病
 AfflictionName,reflux,胃酸の逆流
 AfflictionName,sliming,スライムまみれ
 AfflictionName,worms,寄生虫
+AnatomyAbsenceText,MINDLESS,思慮のない
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,耳はない
+AnatomyAbsenceText,NO EYES,目はない
+AnatomyAbsenceText,NO FEET,足はない
+AnatomyAbsenceText,NO HANDS,手はない
+AnatomyAbsenceText,NO HEAD,頭がない
+AnatomyAbsenceText,NO LIMBS,手足がない
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,無声
+AnatomyName,amorphous,形の無い
+AnatomyName,blood,血液
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,騎乗できる
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,満足
+ApetiteName,hungry,空腹
+ApetiteName,satiated,満腹
+ApetiteName,starving,飢餓
+ApetiteName,weak,弱っている
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,前部が開いていて、留め金で胸に固定されている長いマント。
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,ミスリルで作られた、短くて丈夫なコート。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,ミスリルで作られた、細身で繊細に見えるコート。
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName}�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName}は出たら目に{AssetName}を{MotionPastName}が何も起こらなかった
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は出たら目に{Use:AssetName}で{With:AssetName}を{MotionPastName}
 FormatText,{CharacterName} Inventory,{CharacterName}の持ち物
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName}は{NutritionStatus}です
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName}は{KarmaStatus}と感じています
+FormatText,{CharacterName} is {ApetiteName},{CharacterName}は{ApetiteName}です
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName}は{StandingName}と感じています
 FormatText,{CharacterName} is no longer stuck,{CharacterName}はもはや動けない。
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName}は{SkillName}の{QualificationName}になりました
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName}が{GenderHimself}を殺害しました
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},{CharacterName}に{BoonName}の恩恵が与えられました
 FormatText,{CharacterName} was granted the service of {ServiceName},{CharacterName}に{ServiceName}のサービスを受けることができました。
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName}は{LiteralText}によって殺されました
-FormatText,{CharacterName} was lifesaved!,{CharacterName}は命を守りました！
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName}は{PunishmentName}で処罰されました
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName}は{PunishmentName}から解放されました
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName}は{AfflictionName}から解放されました
+FormatText,{CharacterName} was revived!,{CharacterName}は命を守りました！
 FormatText,{CharacterName} woke up,{CharacterName}は目が覚めた
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName}は{AssetName}からもう1つの使用法を奪いました
 FormatText,"{CharacterName}, {ShopName}",{CharacterName}（{ShopName}）
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,投擲武器
 ItemType,tin,錫（すず）
 ItemType,tool,ツール
 ItemType,wand,杖
-KarmaStatus,damned,忌々しい
-KarmaStatus,doomed,運が尽きた
-KarmaStatus,doubtful,疑いを抱いている
-KarmaStatus,evil,邪悪な
-KarmaStatus,exalted,高貴である
-KarmaStatus,glorious,栄光を持つ
-KarmaStatus,good,徳がある
-KarmaStatus,hopeful,希望が持てる
-KarmaStatus,reconciled,和解した
-KarmaStatus,strayed,さまよっている
 KindName,angel,天使
 KindName,bat,コウモリ
 KindName,beast,獣
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,AMMO,弾薬攻撃
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
-LiteralText,amorphous,形の無い
 LiteralText,anatomy,形態
 LiteralText,ANONYMOUS,形の無い
 LiteralText,anticlockwise 90 degrees,反時計回りに90度
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,どちらの方向を明滅させる？
 LiteralText,block,防ぐ
 LiteralText,BLOCKED,防がれされました
 LiteralText,BLOCKS,防ぐ
-LiteralText,blood,血液
 LiteralText,BOONS,恩恵
 LiteralText,boost attack by enchantment,魔力付与による攻撃を強化する
 LiteralText,boost damage by enchantment,魔力付与によるダメージを増やす
@@ -3465,14 +3482,12 @@ LiteralText,MENU,メニュー
 LiteralText,mercenary,傭兵
 LiteralText,MIMIC,ミミック
 LiteralText,mimicking,擬態中の
-LiteralText,MINDLESS,思慮のない
 LiteralText,Mines,鉱山
 LiteralText,Minetown,本拠地
 LiteralText,missile,ミサイル
 LiteralText,modifier,修正値
 LiteralText,MOUNT,乗る
 LiteralText,Mount which direction?,どちらの方向？
-LiteralText,mounted,騎乗できる
 LiteralText,MOUNTED,騎乗
 LiteralText,MOVE,動く
 LiteralText,move down one level,階層を1つ下げる
@@ -3493,23 +3508,9 @@ LiteralText,no allies,仲間でない
 LiteralText,no ambient sounds,環境音無し
 LiteralText,No appropriate items available,該当するアイテムはありません
 LiteralText,no available knowledge,利用可能な知識なし
-LiteralText,NO EARS,耳はない
-LiteralText,NO EYES,目はない
-LiteralText,NO FEET,足はない
-LiteralText,NO HANDS,手はない
-LiteralText,NO HEAD,頭がない
-LiteralText,NO LIMBS,手足がない
 LiteralText,no resistances,抵抗がない
 LiteralText,no talents,才能がない
 LiteralText,no transient effects,一時的な影響はない
-LiteralText,no-blood,血が流れていない
-LiteralText,no-ears,耳は無い
-LiteralText,no-eyes,眼は無い
-LiteralText,no-feet,足はない
-LiteralText,no-hands,手はない
-LiteralText,no-head,頭はない
-LiteralText,no-limbs,手足がない
-LiteralText,no-mind,自意識がない
 LiteralText,non charged items,充電されていないアイテム
 LiteralText,non divined items,判別されていないアイテム
 LiteralText,non edible items,非食用アイテム
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,何も起こりません
 LiteralText,Nothing of interest,興味がない
 LiteralText,nothing to give,与えるものは何もない
 LiteralText,nothing to take,取るものは何もない
-LiteralText,no-voice,声が出ない
 LiteralText,nutrition,栄養
 LiteralText,NUTRITION,栄養
 LiteralText,OBSTRUCTED,閉塞した
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
-LiteralText,VOICELESS,無声
 LiteralText,VOID SPACE,ボイドスペース
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,強く振る
 MurderTypeName,Allied,仲間になった
 MurderTypeName,Every,すべての
 MurderTypeName,Hostile,敵対的
-NutritionStatus,content,満足
-NutritionStatus,hungry,空腹
-NutritionStatus,satiated,満腹
-NutritionStatus,starving,飢餓
-NutritionStatus,weak,弱っている
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,この堅材橋は長年の使用にもかかわらず堅実な完全性を持っています。
 PlatformName,crystal bridge,水晶の橋
 PlatformName,wooden bridge,木の橋
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,酸の矢
 SpellName,turn undead,死霊鎮魂
 SpellName,walling,造壁
 SpellName,wizard lock,施錠
+StandingName,damned,忌々しい
+StandingName,doomed,運が尽きた
+StandingName,doubtful,疑いを抱いている
+StandingName,evil,邪悪な
+StandingName,exalted,高貴である
+StandingName,glorious,栄光を持つ
+StandingName,good,徳がある
+StandingName,hopeful,希望が持てる
+StandingName,reconciled,和解した
+StandingName,strayed,さまよっている
 StockName,amulet,お守り
 StockName,armour,鎧
 StockName,book,本

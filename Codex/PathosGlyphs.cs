@@ -2330,6 +2330,9 @@ namespace Pathos
     public readonly Glyph thirst_punishment;
     public readonly Glyph wanted_punishment;
 
+    public readonly Glyph apetite;
+    public readonly Glyph standing;
+
     public readonly Glyph artifact_icon;
     public readonly Glyph attack_icon;
     public readonly Glyph barrier_icon;
@@ -2345,10 +2348,8 @@ namespace Pathos
     public readonly Glyph fixture_icon;
     public readonly Glyph floor_icon;
     public readonly Glyph gate_icon;
-    public readonly Glyph hunger_icon;
     public readonly Glyph inventory_icon;
     public readonly Glyph journal_icon;
-    public readonly Glyph karma_icon;
     public readonly Glyph light_icon;
     public readonly Glyph map_icon;
     public readonly Glyph party_icon;
@@ -2357,7 +2358,6 @@ namespace Pathos
     public readonly Glyph quiver_icon;
     public readonly Glyph rest_icon;
     public readonly Glyph search_icon;
-    public readonly Glyph skill_icon;
     public readonly Glyph speed_icon;
     public readonly Glyph spell_icon;
     public readonly Glyph stash_icon;

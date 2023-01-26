@@ -12,6 +12,35 @@ AfflictionName,rabies,veszettség
 AfflictionName,reflux,reflux
 AfflictionName,sliming,nyálkásodás
 AfflictionName,worms,férgesedés
+AnatomyAbsenceText,MINDLESS,ESZETLEN
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,FÜL NÉLKÜLI
+AnatomyAbsenceText,NO EYES,SZEM NÉLKÜLI
+AnatomyAbsenceText,NO FEET,LÁBFEJ NÉLKÜLI
+AnatomyAbsenceText,NO HANDS,KÉZ NÉLKÜLI
+AnatomyAbsenceText,NO HEAD,FEJ NÉLKÜLI
+AnatomyAbsenceText,NO LIMBS,VÉGTAG NÉLKÜLI
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,NÉMA
+AnatomyName,amorphous,amorf
+AnatomyName,blood,vér
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,hátason
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,elégedett
+ApetiteName,hungry,éhes
+ApetiteName,satiated,megcsömörlött
+ApetiteName,starving,éhező
+ApetiteName,weak,gyenge
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Egy hosszú, elöl nyitott köpönye, melyet a mellrésznél kapoccsal rögzítenek."
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Egy rövid, de erős kinézetű mithrilpáncélzat."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Egy karcsú és kényesnek tűnő mithrilpáncélzat.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,"{CharacterName} ügyetlenül {MotionPastName}: {AssetName}, és semmi nem történt"
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} ügyetlenül {MotionPastName} a(z) {Use:AssetName} tárgyat, ezzel: {With:AssetName}"
 FormatText,{CharacterName} Inventory,{CharacterName} leltára
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} így érzi magát: {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} így érzi magát: {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} többé nincs beragadva
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} most már {QualificationName} a következőben: {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} megölte: {GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},"{Ch
 FormatText,{CharacterName} was granted the boon of {BoonName},{CharacterName} a következő áldást kapta: {BoonName}
 FormatText,{CharacterName} was granted the service of {ServiceName},{CharacterName} megkapta a(z) {ServiceName} szolgáltatást
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName} elesett {LiteralText} által
-FormatText,{CharacterName} was lifesaved!,{CharacterName} életét megmentették!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} a következő büntetést kapta: {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} mentesült a(z) {PunishmentName} büntetés alól
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} megszabadult a {AfflictionName} csapástól
+FormatText,{CharacterName} was revived!,{CharacterName} életét megmentették!
 FormatText,{CharacterName} woke up,{CharacterName} felkelt
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} még egyszer használni tudta a(z) {AssetName} tárgyat
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,dobófegyver
 ItemType,tin,konzerv
 ItemType,tool,szerszám
 ItemType,wand,pálca
-KarmaStatus,damned,átkozott
-KarmaStatus,doomed,kudarcra ítélt
-KarmaStatus,doubtful,bizonytalan
-KarmaStatus,evil,gonosz
-KarmaStatus,exalted,fennkölt
-KarmaStatus,glorious,dicsőséges
-KarmaStatus,good,jó
-KarmaStatus,hopeful,reményteljes
-KarmaStatus,reconciled,megbékélt
-KarmaStatus,strayed,eltévedt
 KindName,angel,angyal
 KindName,bat,denevér
 KindName,beast,fenevad
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
 LiteralText,AMMO,LŐSZER
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
-LiteralText,amorphous,amorf
 LiteralText,anatomy,anatómia
 LiteralText,ANONYMOUS,NÉVTELEN
 LiteralText,anticlockwise 90 degrees,az óramutató járásával ellentétesen 90 fokban
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
 LiteralText,block,akadály
 LiteralText,BLOCKED,EL VAN ZÁRVA
 LiteralText,BLOCKS,AKADÁLYOK
-LiteralText,blood,vér
 LiteralText,BOONS,ÁLDÁSOK
 LiteralText,boost attack by enchantment,támadás fokozása igézéssel
 LiteralText,boost damage by enchantment,sebzés fokozása igézéssel
@@ -3465,14 +3482,12 @@ LiteralText,MENU,MENÜ
 LiteralText,mercenary,zsoldos
 LiteralText,MIMIC,MÍMEL
 LiteralText,mimicking,mímelés
-LiteralText,MINDLESS,ESZETLEN
 LiteralText,Mines,Bányák
 LiteralText,Minetown,Bányászváros
 LiteralText,missile,lövedék
 LiteralText,modifier,módosító
 LiteralText,MOUNT,FELSZÁLL
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
-LiteralText,mounted,hátason
 LiteralText,MOUNTED,HÁTASON
 LiteralText,MOVE,RÁLÉP
 LiteralText,move down one level,menj lejjebb egy szinttel
@@ -3493,23 +3508,9 @@ LiteralText,no allies,nincsenek szövetségesek
 LiteralText,no ambient sounds,nincsenek környezeti hangok
 LiteralText,No appropriate items available,Nem érhető el megfelelő tárgy
 LiteralText,no available knowledge,nincs elérhető tudás
-LiteralText,NO EARS,FÜL NÉLKÜLI
-LiteralText,NO EYES,SZEM NÉLKÜLI
-LiteralText,NO FEET,LÁBFEJ NÉLKÜLI
-LiteralText,NO HANDS,KÉZ NÉLKÜLI
-LiteralText,NO HEAD,FEJ NÉLKÜLI
-LiteralText,NO LIMBS,VÉGTAG NÉLKÜLI
 LiteralText,no resistances,nincsenek ellenállások
 LiteralText,no talents,nincsenek készségek
 LiteralText,no transient effects,nincsenek átmeneti hatások
-LiteralText,no-blood,vértelen
-LiteralText,no-ears,fületlen
-LiteralText,no-eyes,szemtelen
-LiteralText,no-feet,lábatlan
-LiteralText,no-hands,kezetlen
-LiteralText,no-head,fejetlen
-LiteralText,no-limbs,végtagok nélküli
-LiteralText,no-mind,értelem nélküli
 LiteralText,non charged items,nem feltöltött tárgyak
 LiteralText,non divined items,nem megfejtett tárgyak
 LiteralText,non edible items,nem ehető tárgyak
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,semmi sem történik
 LiteralText,Nothing of interest,Semmi érdekes
 LiteralText,nothing to give,nincs mit adni
 LiteralText,nothing to take,nincs mit elvenni
-LiteralText,no-voice,hangtalan
 LiteralText,nutrition,tápanyag
 LiteralText,NUTRITION,TÁPANYAGSZINT
 LiteralText,OBSTRUCTED,AKADÁLYOZOTT
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
-LiteralText,VOICELESS,NÉMA
 LiteralText,VOID SPACE,ÜRES TÉR
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,bűvölés
 MurderTypeName,Allied,Szövetséges
 MurderTypeName,Every,Összes
 MurderTypeName,Hostile,Ellenséges
-NutritionStatus,content,elégedett
-NutritionStatus,hungry,éhes
-NutritionStatus,satiated,megcsömörlött
-NutritionStatus,starving,éhező
-NutritionStatus,weak,gyenge
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Ez a keményfa híd derekasan kiállta hosszú évek használatát.
 PlatformName,crystal bridge,kristályhíd
 PlatformName,wooden bridge,fahíd
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,méregpermet
 SpellName,turn undead,élőholttá változtatás
 SpellName,walling,falazás
 SpellName,wizard lock,mágikus zárás
+StandingName,damned,átkozott
+StandingName,doomed,kudarcra ítélt
+StandingName,doubtful,bizonytalan
+StandingName,evil,gonosz
+StandingName,exalted,fennkölt
+StandingName,glorious,dicsőséges
+StandingName,good,jó
+StandingName,hopeful,reményteljes
+StandingName,reconciled,megbékélt
+StandingName,strayed,eltévedt
 StockName,amulet,amulett
 StockName,armour,páncélzat
 StockName,book,könyv

@@ -12,6 +12,35 @@ AfflictionName,rabies,kuduz
 AfflictionName,reflux,mide yanması
 AfflictionName,sliming,çamurlu
 AfflictionName,worms,solucanlı
+AnatomyAbsenceText,MINDLESS,ZİHİNSİZ
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,
+AnatomyAbsenceText,NO EYES,GÖZSÜZ
+AnatomyAbsenceText,NO FEET,AYAKSIZ
+AnatomyAbsenceText,NO HANDS,ELSİZ
+AnatomyAbsenceText,NO HEAD,BAŞSIZ
+AnatomyAbsenceText,NO LIMBS,UZUVSUZ
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,SESSİZ
+AnatomyName,amorphous,şekilsiz
+AnatomyName,blood,kan
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,binildi
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,memnun
+ApetiteName,hungry,aç
+ApetiteName,satiated,tok
+ApetiteName,starving,açlıktan ölüyor
+ApetiteName,weak,zayıf
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Önü açık ve göğüsten toka ile bağlanan uzun bir pelerin.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Kısa ama dayanıklı gözüken mitril bir zırh.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Dar ve zarif gözüken mitril bir zırh.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,{CharacterName} envanteri
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} {KarmaStatus} hissediyor
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} {StandingName} hissediyor
 FormatText,{CharacterName} is no longer stuck,{CharacterName} artık sıkışık değil
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} artık {SkillName} dalında {QualificationName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} kendini öldürdü//{GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},{CharacterName} 'ın {BoonName} isteği kabul edildi
 FormatText,{CharacterName} was granted the service of {ServiceName},{CharacterName} {ServiceName} isteği kabul edildi
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName} {LiteralText} tarafından öldürüldü
-FormatText,{CharacterName} was lifesaved!,{CharacterName} 'ın hayatı kurtarıldı
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} {PunishmentName} cezasına çarptırıldı
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} 'ın {PunishmentName} cezası sonlandı
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} {AfflictionName} belasından kurtuldu
+FormatText,{CharacterName} was revived!,{CharacterName} 'ın hayatı kurtarıldı
 FormatText,{CharacterName} woke up,{CharacterName} uyandı
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} {AssetName} 'ın bir kullanışını daha boşa harcadı
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,fırlatma silahı
 ItemType,tin,teneke
 ItemType,tool,alet
 ItemType,wand,asa
-KarmaStatus,damned,lanetli
-KarmaStatus,doomed,cehennemlik
-KarmaStatus,doubtful,şüpheli
-KarmaStatus,evil,kötü
-KarmaStatus,exalted,yüce
-KarmaStatus,glorious,şanlı
-KarmaStatus,good,iyi
-KarmaStatus,hopeful,umutlu
-KarmaStatus,reconciled,barışık
-KarmaStatus,strayed,yoldan sapmış
 KindName,angel,melek
 KindName,bat,yarasa
 KindName,beast,yaratık
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
 LiteralText,AMMO,CEPHANE
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
-LiteralText,amorphous,şekilsiz
 LiteralText,anatomy,anatomi
 LiteralText,ANONYMOUS,İSİMSİZ
 LiteralText,anticlockwise 90 degrees,saatin tersinde 90 derece
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,Hangi yöne sıçra?
 LiteralText,block,blok
 LiteralText,BLOCKED,ENGELLENMİŞ
 LiteralText,BLOCKS,BLOKLAR
-LiteralText,blood,kan
 LiteralText,BOONS,KUTSAMALAR
 LiteralText,boost attack by enchantment,saldırıyı geliştir
 LiteralText,boost damage by enchantment,hasarı geliştir
@@ -3465,14 +3482,12 @@ LiteralText,MENU,
 LiteralText,mercenary,paralı asker
 LiteralText,MIMIC,MİMİK
 LiteralText,mimicking,
-LiteralText,MINDLESS,ZİHİNSİZ
 LiteralText,Mines,Madenler
 LiteralText,Minetown,Maden Şehri
 LiteralText,missile,ışın
 LiteralText,modifier,düzenleyici
 LiteralText,MOUNT,BİN
 LiteralText,Mount which direction?,
-LiteralText,mounted,binildi
 LiteralText,MOUNTED,BİNİLDİ
 LiteralText,MOVE,YÜRÜ
 LiteralText,move down one level,
@@ -3493,23 +3508,9 @@ LiteralText,no allies,yoldaş yok
 LiteralText,no ambient sounds,
 LiteralText,No appropriate items available,uygun bir eşya yok
 LiteralText,no available knowledge,bilgi yok
-LiteralText,NO EARS,
-LiteralText,NO EYES,GÖZSÜZ
-LiteralText,NO FEET,AYAKSIZ
-LiteralText,NO HANDS,ELSİZ
-LiteralText,NO HEAD,BAŞSIZ
-LiteralText,NO LIMBS,UZUVSUZ
 LiteralText,no resistances,
 LiteralText,no talents,yeteneksiz
 LiteralText,no transient effects,geçici etkisiz
-LiteralText,no-blood,kansız
-LiteralText,no-ears,
-LiteralText,no-eyes,
-LiteralText,no-feet,ayaksız
-LiteralText,no-hands,elsiz
-LiteralText,no-head,başsız
-LiteralText,no-limbs,uzuvsuz
-LiteralText,no-mind,zihinsiz
 LiteralText,non charged items,şarj edilmemiş eşyalar
 LiteralText,non divined items,ilahileştirilmemiş eşyalar
 LiteralText,non edible items,
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,hiçbir şey olmadı
 LiteralText,Nothing of interest,İlgi çekici birşey yok
 LiteralText,nothing to give,vermek için birşey yok
 LiteralText,nothing to take,almak için birşey yok
-LiteralText,no-voice,sessiz
 LiteralText,nutrition,besin
 LiteralText,NUTRITION,BESİN
 LiteralText,OBSTRUCTED,ENGELLENMİŞ
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
-LiteralText,VOICELESS,SESSİZ
 LiteralText,VOID SPACE,BOŞLUK
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,şokla
 MurderTypeName,Allied,Yandaşlar
 MurderTypeName,Every,Herkes
 MurderTypeName,Hostile,Düşmanlar
-NutritionStatus,content,memnun
-NutritionStatus,hungry,aç
-NutritionStatus,satiated,tok
-NutritionStatus,starving,açlıktan ölüyor
-NutritionStatus,weak,zayıf
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Bu ahşap köprü yıllarca kullanılmış olmasına rağmen sağlam.
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,tahta köprü
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,zehir püskürtme
 SpellName,turn undead,zombileştirme
 SpellName,walling,duvar yaratma
 SpellName,wizard lock,büyü kilidi
+StandingName,damned,lanetli
+StandingName,doomed,cehennemlik
+StandingName,doubtful,şüpheli
+StandingName,evil,kötü
+StandingName,exalted,yüce
+StandingName,glorious,şanlı
+StandingName,good,iyi
+StandingName,hopeful,umutlu
+StandingName,reconciled,barışık
+StandingName,strayed,yoldan sapmış
 StockName,amulet,tılsım
 StockName,armour,zırh
 StockName,book,kitap

@@ -12,6 +12,35 @@ AfflictionName,rabies,狂犬病
 AfflictionName,reflux,噁心
 AfflictionName,sliming,史萊姆化
 AfflictionName,worms,蠕蟲
+AnatomyAbsenceText,MINDLESS,無意志的
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,沒有耳朵
+AnatomyAbsenceText,NO EYES,沒有眼睛
+AnatomyAbsenceText,NO FEET,沒有腳
+AnatomyAbsenceText,NO HANDS,沒有手
+AnatomyAbsenceText,NO HEAD,沒有頭
+AnatomyAbsenceText,NO LIMBS,沒有肢體
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,無聲
+AnatomyName,amorphous,無定形
+AnatomyName,blood,血
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,騎乘
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,滿足
+ApetiteName,hungry,飢餓
+ApetiteName,satiated,飽食
+ApetiteName,starving,極餓
+ApetiteName,weak,虛弱
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,一件正面敞開的長斗篷，被用一枚扣子繫住。
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,一件短而堅硬的秘銀夾克。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,一件薄而精妙的秘銀夾克。
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} 笨拙地 {MotionPastName} {AssetName} 但什麼也沒有發生
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 笨拙地用 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} Inventory,{CharacterName} 的攜帶物品
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} 感到 {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} 感到 {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} 感到 {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} 感到 {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} 不再被卡住
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} 在 {SkillName} 上到達了 {QualificationName} 水平。
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} 殺死了 {GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},{CharacterName} 領受了 {BoonName}
 FormatText,{CharacterName} was granted the service of {ServiceName},{CharacterName} 領受了 {ServiceName}
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName}被 {LiteralText} 殺死了
-FormatText,{CharacterName} was lifesaved!,{CharacterName} 被拯救了!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} 被 {PunishmentName} 所懲罰
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} 被 {PunishmentName} 所釋放
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} 從 {AfflictionName} 中恢復
+FormatText,{CharacterName} was revived!,{CharacterName} 被拯救了!
 FormatText,{CharacterName} woke up,{CharacterName} 醒來了
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} 設法使用並摧毀了 {AssetName}
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,投擲武器
 ItemType,tin,罐頭
 ItemType,tool,工具
 ItemType,wand,魔杖
-KarmaStatus,damned,受詛咒
-KarmaStatus,doomed,厄運纏身
-KarmaStatus,doubtful,充滿懷疑
-KarmaStatus,evil,邪惡
-KarmaStatus,exalted,聲名顯赫
-KarmaStatus,glorious,充滿榮耀
-KarmaStatus,good,良好
-KarmaStatus,hopeful,充滿希望
-KarmaStatus,reconciled,平衡
-KarmaStatus,strayed,迷失
 KindName,angel,天使
 KindName,bat,蝙蝠
 KindName,beast,野獸
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,周圍聲音
 LiteralText,AMMO,彈藥
 LiteralText,amnesia,失憶
 LiteralText,AMNESIA,失憶
-LiteralText,amorphous,無定形
 LiteralText,anatomy,解剖學
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,逆時針旋轉90度
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,朝哪個方向閃現？
 LiteralText,block,堵住
 LiteralText,BLOCKED,堵住的
 LiteralText,BLOCKS,阻擋
-LiteralText,blood,血
 LiteralText,BOONS,福利
 LiteralText,boost attack by enchantment,攻擊加成
 LiteralText,boost damage by enchantment,傷害加成
@@ -3465,14 +3482,12 @@ LiteralText,MENU,菜單
 LiteralText,mercenary,僱傭軍
 LiteralText,MIMIC,擬態
 LiteralText,mimicking,擬態中的
-LiteralText,MINDLESS,無意志的
 LiteralText,Mines,礦洞
 LiteralText,Minetown,礦鎮
 LiteralText,missile,彈藥
 LiteralText,modifier,調整
 LiteralText,MOUNT,騎乘
 LiteralText,Mount which direction?,向哪個方向騎乘？
-LiteralText,mounted,騎乘
 LiteralText,MOUNTED,騎乘中
 LiteralText,MOVE,前往
 LiteralText,move down one level,下移一層
@@ -3493,23 +3508,9 @@ LiteralText,no allies,沒有盟友
 LiteralText,no ambient sounds,無背景音樂
 LiteralText,No appropriate items available,沒有合適的物品
 LiteralText,no available knowledge,無可用知識
-LiteralText,NO EARS,沒有耳朵
-LiteralText,NO EYES,沒有眼睛
-LiteralText,NO FEET,沒有腳
-LiteralText,NO HANDS,沒有手
-LiteralText,NO HEAD,沒有頭
-LiteralText,NO LIMBS,沒有肢體
 LiteralText,no resistances,無抗性
 LiteralText,no talents,無天賦
 LiteralText,no transient effects,無短期效果
-LiteralText,no-blood,沒有血液
-LiteralText,no-ears,沒有耳朵
-LiteralText,no-eyes,沒有眼睛
-LiteralText,no-feet,沒有腳
-LiteralText,no-hands,沒有手
-LiteralText,no-head,沒有頭部
-LiteralText,no-limbs,沒有肢體
-LiteralText,no-mind,沒有意志
 LiteralText,non charged items,未充能物品
 LiteralText,non divined items,未鑒定祝福/詛咒物品
 LiteralText,non edible items,不可食用物品
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,什麼也不發生
 LiteralText,Nothing of interest,沒有值得關注的東西
 LiteralText,nothing to give,無可給予物品
 LiteralText,nothing to take,無可拿取物品
-LiteralText,no-voice,無聲
 LiteralText,nutrition,營養值
 LiteralText,NUTRITION,營養值
 LiteralText,OBSTRUCTED,阻塞的
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,自戀，請
 LiteralText,VIEW,查看
 LiteralText,Visit the website,訪問官網
-LiteralText,VOICELESS,無聲
 LiteralText,VOID SPACE,虛空
 LiteralText,vulnerable to,易受傷害
 LiteralText,WAIT,等待
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,發射
 MurderTypeName,Allied,盟友
 MurderTypeName,Every,一切
 MurderTypeName,Hostile,敵對
-NutritionStatus,content,滿足
-NutritionStatus,hungry,飢餓
-NutritionStatus,satiated,飽食
-NutritionStatus,starving,極餓
-NutritionStatus,weak,虛弱
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,歷經多年使用，這座橋依然完整而堅實。
 PlatformName,crystal bridge,水晶橋
 PlatformName,wooden bridge,木橋
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,毒液噴射
 SpellName,turn undead,死靈驅散
 SpellName,walling,造牆術
 SpellName,wizard lock,法師之鎖
+StandingName,damned,受詛咒
+StandingName,doomed,厄運纏身
+StandingName,doubtful,充滿懷疑
+StandingName,evil,邪惡
+StandingName,exalted,聲名顯赫
+StandingName,glorious,充滿榮耀
+StandingName,good,良好
+StandingName,hopeful,充滿希望
+StandingName,reconciled,平衡
+StandingName,strayed,迷失
 StockName,amulet,護符
 StockName,armour,裝甲
 StockName,book,書

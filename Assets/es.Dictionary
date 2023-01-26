@@ -12,6 +12,35 @@ AfflictionName,rabies,rabia
 AfflictionName,reflux,reflujo
 AfflictionName,sliming,babosidad
 AfflictionName,worms,lombrices
+AnatomyAbsenceText,MINDLESS,SIN SENTIDO
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,SIN OREJAS
+AnatomyAbsenceText,NO EYES,SIN OJOS
+AnatomyAbsenceText,NO FEET,SIN PIES
+AnatomyAbsenceText,NO HANDS,SIN MANOS
+AnatomyAbsenceText,NO HEAD,SIN CABEZA
+AnatomyAbsenceText,NO LIMBS,SIN EXTREMIDADES
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,MUDO
+AnatomyName,amorphous,amorfo
+AnatomyName,blood,sangre
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,montado
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,satisfecho
+ApetiteName,hungry,hambriento
+ApetiteName,satiated,saciado
+ApetiteName,starving,muriendo de hambre
+ApetiteName,weak,débil
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Una larga capa abierta en la parte del frente y ajustada al pecho con un broche.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un pequeño pero resistente armadura de mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Una fina y delicada armadura de mithril.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} torpemente {MotionPastName} al objeto {AssetName} y nada ocurrió
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} torpemente {MotionPastName} {Use:AssetName} con {With:AssetName}
 FormatText,{CharacterName} Inventory,Inventario de {CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} está {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} se está sintiendo {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} está {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} se está sintiendo {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} ya no está atrapado
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} ahora es {QualificationName} en {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} se suicidó//{GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},La bendición de {BoonName} le fue concedida a {CharacterName}
 FormatText,{CharacterName} was granted the service of {ServiceName},El servicio {ServiceName} le fue concedido a {CharacterName}
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName} fue asesinado por {LiteralText}
-FormatText,{CharacterName} was lifesaved!,La vida de {CharacterName} fue salvada!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} fue castigado con {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} fue liberado de {PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} fue curado de {AfflictionName}
+FormatText,{CharacterName} was revived!,La vida de {CharacterName} fue salvada!
 FormatText,{CharacterName} woke up,{CharacterName} despertó
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} luchó por un último uso del {AssetName}
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,arma arrojadiza
 ItemType,tin,estaño
 ItemType,tool,herramienta
 ItemType,wand,varita
-KarmaStatus,damned,maldito
-KarmaStatus,doomed,condenado
-KarmaStatus,doubtful,dudoso
-KarmaStatus,evil,maligno
-KarmaStatus,exalted,exaltado
-KarmaStatus,glorious,glorioso
-KarmaStatus,good,bueno
-KarmaStatus,hopeful,esperanzado
-KarmaStatus,reconciled,reconciliado
-KarmaStatus,strayed,extraviado
 KindName,angel,ángel
 KindName,bat,murciélago
 KindName,beast,bestia
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,SONIDOS AMBIENTALES
 LiteralText,AMMO,MUNICIÓN
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
-LiteralText,amorphous,amorfo
 LiteralText,anatomy,anatomía
 LiteralText,ANONYMOUS,ANÓNIMO
 LiteralText,anticlockwise 90 degrees,giro de noventa grados contrarreloj
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,¿Saltar hacia qué dirección?
 LiteralText,block,bloquear
 LiteralText,BLOCKED,BLOQUEADO
 LiteralText,BLOCKS,OBSTRUIR
-LiteralText,blood,sangre
 LiteralText,BOONS,BENDICIONES
 LiteralText,boost attack by enchantment,ataque aumentado por encantamiento
 LiteralText,boost damage by enchantment,daño aumentado por encantamiento
@@ -3465,14 +3482,12 @@ LiteralText,MENU,MENU
 LiteralText,mercenary,mercenario
 LiteralText,MIMIC,MÍMICO
 LiteralText,mimicking,imitador
-LiteralText,MINDLESS,SIN SENTIDO
 LiteralText,Mines,Minas
 LiteralText,Minetown,Ciudad Minera
 LiteralText,missile,misil
 LiteralText,modifier,modificador
 LiteralText,MOUNT,MONTAR
 LiteralText,Mount which direction?,¿Montar en qué dirección?
-LiteralText,mounted,montado
 LiteralText,MOUNTED,MONTADO
 LiteralText,MOVE,MOVER
 LiteralText,move down one level,bajar un nivel
@@ -3493,23 +3508,9 @@ LiteralText,no allies,sin aliados
 LiteralText,no ambient sounds,sin sonidos ambientales
 LiteralText,No appropriate items available,No hay ítems apropiados disponibles
 LiteralText,no available knowledge,sin conocimiento disponible
-LiteralText,NO EARS,SIN OREJAS
-LiteralText,NO EYES,SIN OJOS
-LiteralText,NO FEET,SIN PIES
-LiteralText,NO HANDS,SIN MANOS
-LiteralText,NO HEAD,SIN CABEZA
-LiteralText,NO LIMBS,SIN EXTREMIDADES
 LiteralText,no resistances,sin resistencias
 LiteralText,no talents,sin talentos
 LiteralText,no transient effects,sin efectos transitorios
-LiteralText,no-blood,sin-sangre
-LiteralText,no-ears,sin-orejas
-LiteralText,no-eyes,sin-ojos
-LiteralText,no-feet,sin-pies
-LiteralText,no-hands,sin-manos
-LiteralText,no-head,sin-cabeza
-LiteralText,no-limbs,sin-extremidades
-LiteralText,no-mind,sin-mente
 LiteralText,non charged items,objetos no cargados
 LiteralText,non divined items,objetos no adivinados
 LiteralText,non edible items,objetos no comestibles
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,nada sucede
 LiteralText,Nothing of interest,Nada de interés
 LiteralText,nothing to give,nada para entregar
 LiteralText,nothing to take,nada para tomar
-LiteralText,no-voice,sin-voz
 LiteralText,nutrition,nutrición
 LiteralText,NUTRITION,NUTRICIÓN
 LiteralText,OBSTRUCTED,OBSTRUÍDO
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,Vanidad
 LiteralText,VIEW,VER
 LiteralText,Visit the website,Visitar la web
-LiteralText,VOICELESS,MUDO
 LiteralText,VOID SPACE,ESPACIO VACÍO
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,destellar
 MurderTypeName,Allied,Aliado
 MurderTypeName,Every,Todos
 MurderTypeName,Hostile,Hostil
-NutritionStatus,content,satisfecho
-NutritionStatus,hungry,hambriento
-NutritionStatus,satiated,saciado
-NutritionStatus,starving,muriendo de hambre
-NutritionStatus,weak,débil
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Este puente de madera dura tiene una integridad sólida a pesar de muchos años de uso.
 PlatformName,crystal bridge,puente de cristal
 PlatformName,wooden bridge,puente de madera
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,spray tóxico
 SpellName,turn undead,convertir en muertos vivientes
 SpellName,walling,muros
 SpellName,wizard lock,cerradura mágica
+StandingName,damned,maldito
+StandingName,doomed,condenado
+StandingName,doubtful,dudoso
+StandingName,evil,maligno
+StandingName,exalted,exaltado
+StandingName,glorious,glorioso
+StandingName,good,bueno
+StandingName,hopeful,esperanzado
+StandingName,reconciled,reconciliado
+StandingName,strayed,extraviado
 StockName,amulet,amuleto
 StockName,armour,armadura
 StockName,book,libro

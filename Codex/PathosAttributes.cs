@@ -15,7 +15,7 @@ namespace Pathos
     {
       Attribute AddAttribute(string Code, string Name, string Description, string Good, string Bad)
       {
-        return Add(A =>
+        return Register.Add(A =>
         {
           A.Code = Code;
           A.Name = Name;

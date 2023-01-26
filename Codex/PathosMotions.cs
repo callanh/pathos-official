@@ -15,132 +15,218 @@ namespace Pathos
     {
       var Attributes = Codex.Attributes;
       var Skills = Codex.Skills;
+      var Anatomies = Codex.Anatomies;
 
-      Motion AddMotion(string PresentName, string PastName, Attribute InfluencingAttribute, bool UseVision, bool UseHands, bool UseConcentration, bool UseVoice, Skill PractisingSkill, Action<MotionEditor> EditorAction)
+      Motion AddMotion(string PresentName, string PastName, Attribute InfluencingAttribute, Action<MotionEditor> EditorAction)
       {
-        return Add(M =>
+        return Register.Add(M =>
         {
           M.PresentName = PresentName;
           M.PastName = PastName;
           M.InfluencingAttribute = InfluencingAttribute;
-          M.UseVision = UseVision;
-          M.UseHands = UseHands;
-          M.UseConcentration = UseConcentration;
-          M.UseVoice = UseVoice;
-          M.PractisingSkill = PractisingSkill;
 
           EditorAction(M);
         });
       }
 
-      anoint = AddMotion("anoint", "anointed", Attributes.wisdom, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+      anoint = AddMotion("anoint", "anointed", Attributes.wisdom, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
-      capture = AddMotion("capture", "captured", Attributes.dexterity, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: true, PractisingSkill: null, M =>
+
+      capture = AddMotion("capture", "captured", Attributes.dexterity, M =>
       {
-        M.RequiresCharacter = false;
+        M.UseAnatomy(Anatomies.hands);
       });
-      chant = AddMotion("chant", "chanted", Attributes.charisma, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: true, PractisingSkill: null, M =>
+
+      chant = AddMotion("chant", "chanted", Attributes.charisma, M =>
       {
+        M.UseVoice = true;
+        M.UseAnatomy(Anatomies.voice);
       });
-      construct = AddMotion("construct", "constructed", Attributes.dexterity, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      construct = AddMotion("construct", "constructed", Attributes.dexterity, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      dig = AddMotion("dig", "dug", Attributes.strength, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      dig = AddMotion("dig", "dug", Attributes.strength, M =>
       {
         M.Digging = true;
+        M.UseAnatomy(Anatomies.hands);
       });
-      dip = AddMotion("dip", "dipped", Attributes.dexterity, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      dip = AddMotion("dip", "dipped", Attributes.dexterity, M =>
+      {
+        M.UseAnatomy(Anatomies.hands);
+      });
+
+      divine = AddMotion("divine", "divined", Attributes.wisdom, M =>
       {
       });
-      divine = AddMotion("divine", "divined", Attributes.wisdom, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      drink = AddMotion("drink", "drank", Attributes.constitution, M =>
       {
       });
-      drink = AddMotion("drink", "drank", Attributes.constitution, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
-      {
-      });
-      eat = AddMotion("eat", "ate", Attributes.constitution, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      eat = AddMotion("eat", "ate", Attributes.constitution, M =>
       {
         M.Ingesting = true;
       });
-      empty = AddMotion("empty", "emptied", Attributes.strength, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      empty = AddMotion("empty", "emptied", Attributes.strength, M =>
       {
       });
-      exchange = AddMotion("exchange", "exchanged", Attributes.charisma, UseVision: true, UseHands: false, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      exchange = AddMotion("exchange", "exchanged", Attributes.charisma, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.eyes, Anatomies.mind);
       });
-      flash = AddMotion("flash", "flashed", Attributes.dexterity, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      flash = AddMotion("flash", "flashed", Attributes.dexterity, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
-      open = AddMotion("open", "opened", Attributes.strength, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      open = AddMotion("open", "opened", Attributes.strength, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
-      pack = AddMotion("pack", "packed", Attributes.dexterity, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      pack = AddMotion("pack", "packed", Attributes.dexterity, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      play = AddMotion("play", "played", Attributes.charisma, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: true, PractisingSkill: Skills.music, M =>
+
+      play = AddMotion("play", "played", Attributes.charisma, M =>
       {
+        M.UseVoice = true;
+        M.PractisingSkill = Skills.music;
+        M.UseAnatomy(Anatomies.hands, Anatomies.voice);
       });
-      pray = AddMotion("pray", "prayed", Attributes.charisma, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: true, PractisingSkill: null, M =>
+
+      pray = AddMotion("pray", "prayed", Attributes.charisma, M =>
       {
+        M.UseVoice = true;
+        M.UseAnatomy(Anatomies.voice);
       });
-      quaff = AddMotion("quaff", "quaffed", Attributes.constitution, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      quaff = AddMotion("quaff", "quaffed", Attributes.constitution, M =>
       {
         M.Impacting = true;
+        M.UseAnatomy(Anatomies.hands);
       });
-      read = AddMotion("read", "read", Attributes.intelligence, UseVision: true, UseHands: false, UseConcentration: false, UseVoice: true, PractisingSkill: Skills.literacy, M =>
+
+      read = AddMotion("read", "read", Attributes.intelligence, M =>
       {
+        M.UseVision = true;
+        M.UseVoice = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.eyes, Anatomies.voice);
       });
-      refill = AddMotion("refill", "refilled", Attributes.wisdom, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      refill = AddMotion("refill", "refilled", Attributes.wisdom, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
-      release = AddMotion("release", "released", Attributes.dexterity, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: true, PractisingSkill: null, M =>
+
+      release = AddMotion("release", "released", Attributes.dexterity, M =>
       {
+        M.UseVoice = true;
         M.RequiresCharacter = true;
+        M.UseAnatomy(Anatomies.hands, Anatomies.voice);
       });
-      rename = AddMotion("rename", "renamed", Attributes.wisdom, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: Skills.literacy, M =>
+
+      rename = AddMotion("rename", "renamed", Attributes.wisdom, M =>
       {
         M.Aliasing = true;
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      inscribe = AddMotion("inscribe", "inscribed", Attributes.wisdom, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: Skills.literacy, M =>
+
+      inscribe = AddMotion("inscribe", "inscribed", Attributes.wisdom, M =>
       {
         M.Inscribing = true;
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      rub = AddMotion("rub", "rubbed", Attributes.strength, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      rub = AddMotion("rub", "rubbed", Attributes.strength, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
-      sacrifice = AddMotion("sacrifice", "sacrificed", Attributes.charisma, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      sacrifice = AddMotion("sacrifice", "sacrificed", Attributes.charisma, M =>
       {
         M.Repeating = true;
       });
-      scry = AddMotion("scry", "scried", Attributes.wisdom, UseVision: true, UseHands: false, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      scry = AddMotion("scry", "scried", Attributes.wisdom, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.eyes, Anatomies.mind);
       });
-      set = AddMotion("set", "set", Attributes.dexterity, UseVision: false, UseHands: true, true, UseVoice: false, PractisingSkill: Skills.traps, M =>
+
+      set = AddMotion("set", "set", Attributes.dexterity, M =>
       {
         M.Landing = true;
+        M.UseConcentration = true;
+        M.PractisingSkill = Skills.traps;
+        M.UseAnatomy(Anatomies.hands, Anatomies.mind);
       });
-      sit = AddMotion("sit", "sat", Attributes.dexterity, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      sit = AddMotion("sit", "sat", Attributes.dexterity, M =>
       {
         M.Grounding = true;
       });
-      recline = AddMotion("recline", "reclined", Attributes.constitution, UseVision: false, UseHands: false, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      recline = AddMotion("recline", "reclined", Attributes.constitution, M =>
       {
       });
-      stake = AddMotion("stake", "staked", Attributes.strength, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      stake = AddMotion("stake", "staked", Attributes.strength, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      study = AddMotion("study", "studied", Attributes.intelligence, UseVision: true, UseHands: false, UseConcentration: true, UseVoice: false, PractisingSkill: Skills.literacy, M =>
+
+      study = AddMotion("study", "studied", Attributes.intelligence, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.eyes, Anatomies.mind);
       });
-      swat = AddMotion("swat", "swatted", Attributes.dexterity, UseVision: true, UseHands: true, UseConcentration: true, UseVoice: false, PractisingSkill: null, M =>
+
+      swat = AddMotion("swat", "swatted", Attributes.dexterity, M =>
       {
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
-      write = AddMotion("write", "wrote", Attributes.intelligence, UseVision: true, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: Skills.literacy, M =>
+
+      write = AddMotion("write", "wrote", Attributes.intelligence, M =>
       {
+        M.UseVision = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes);
       });
-      zap = AddMotion("zap", "zapped", Attributes.wisdom, UseVision: false, UseHands: true, UseConcentration: false, UseVoice: false, PractisingSkill: null, M =>
+
+      zap = AddMotion("zap", "zapped", Attributes.wisdom, M =>
       {
+        M.UseAnatomy(Anatomies.hands);
       });
     }
 #endif

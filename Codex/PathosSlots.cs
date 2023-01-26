@@ -14,9 +14,11 @@ namespace Pathos
     internal CodexSlots(Codex Codex)
       : base(Codex.Manifest.Slots)
     {
+      var Anatomies = Codex.Anatomies;
+
       Slot AddSlot(string Name, Action<SlotEditor> Action)
       {
-        return Add(S =>
+        return Register.Add(S =>
         {
           S.Name = Name;
           S.Glyph = Codex.Glyphs.GetGlyphOrNull("equip " + S.Name);
@@ -29,111 +31,105 @@ namespace Pathos
       both_hands = AddSlot("both hands", S =>
       {
         S.Held = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       main_hand = AddSlot("main hand", S =>
       {
         S.Held = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       offhand = AddSlot("offhand", S =>
       {
         S.Held = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       quiver = AddSlot("quiver", S =>
       {
         S.Autostack = true;
         S.Held = true;
-        S.RequiresLimbs = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.limbs, Anatomies.hands);
       });
 
       light = AddSlot("light", S =>
       {
         S.Held = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       gloves = AddSlot("gloves", S =>
       {
         S.Held = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       helmet = AddSlot("helmet", S =>
       {
-        S.RequiresHead = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.head, Anatomies.hands);
       });
 
       eyewear = AddSlot("eyewear", S =>
       {
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       earwear = AddSlot("earwear", S =>
       {
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       amulet = AddSlot("amulet", S =>
       {
-        S.RequiresHead = true;
+        S.RequiresAnatomy(Anatomies.head);
       });
 
       cloak = AddSlot("cloak", S =>
       {
-        S.RequiresLimbs = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.limbs, Anatomies.hands);
       });
 
       shirt = AddSlot("shirt", S =>
       {
-        S.RequiresLimbs = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.limbs, Anatomies.hands);
       });
 
       suit = AddSlot("suit", S =>
       {
-        S.RequiresLimbs = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.limbs, Anatomies.hands);
       });
 
       barding = AddSlot("barding", S =>
       {
-        S.RequiresMountable = true;
+        S.RequiresAnatomy(Anatomies.mounted);
       });
 
       keys = AddSlot("keys", S =>
       {
         S.Autostack = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       left_ring = AddSlot("left ring", S =>
       {
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       right_ring = AddSlot("right ring", S =>
       {
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       boots = AddSlot("boots", S =>
       {
-        S.RequiresHands = true;
-        S.RequiresFeet = true;
+        S.RequiresAnatomy(Anatomies.hands, Anatomies.feet);
       });
 
       purse = AddSlot("purse", S =>
       {
         S.Autostack = true;
-        S.RequiresHands = true;
+        S.RequiresAnatomy(Anatomies.hands);
       });
 
       Register.ItemTypeSlotArray = new Inv.EnumArray<ItemType, Slot>()

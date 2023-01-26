@@ -12,6 +12,35 @@ AfflictionName,rabies,Bệnh dại
 AfflictionName,reflux,Trào ngược dịch dạ dày
 AfflictionName,sliming,Hóa nhờn
 AfflictionName,worms,Hóa sâu
+AnatomyAbsenceText,MINDLESS,VÔ TRI
+AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO EARS,KHÔNG TAI
+AnatomyAbsenceText,NO EYES,KHÔNG MẮT
+AnatomyAbsenceText,NO FEET,KHÔNG CHÂN
+AnatomyAbsenceText,NO HANDS,KHÔNG BÀN TAY
+AnatomyAbsenceText,NO HEAD,KHÔNG ĐẦU
+AnatomyAbsenceText,NO LIMBS,KHÔNG CÓ CHÂN TAY
+AnatomyAbsenceText,NOT AMORPHOUS,
+AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,VOICELESS,VÔ THANH
+AnatomyName,amorphous,chất rắn vô định hình
+AnatomyName,blood,máu
+AnatomyName,ears,
+AnatomyName,eyes,
+AnatomyName,feet,
+AnatomyName,hands,
+AnatomyName,head,
+AnatomyName,limbs,
+AnatomyName,mind,
+AnatomyName,mounted,cưỡi
+AnatomyName,thermal,
+AnatomyName,voice,
+ApetiteName,content,bình thường
+ApetiteName,hungry,đói
+ApetiteName,satiated,no
+ApetiteName,starving,đang chết đói
+ApetiteName,weak,yếu
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Một chiếc áo choàng dài hở phía trước và được thắt ở ngực bằng móc gài.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Một chiếc áo giáp ngắn và cứng làm từ mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Một chiếc áo dài thun và tinh tế làm từ mithril.
@@ -1946,8 +1975,8 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} {MotionPastName} {AssetName} một cách vụng về và không có gì xảy ra
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} {With:AssetName} một cách vụng về
 FormatText,{CharacterName} Inventory,Hành trang của {CharacterName}
-FormatText,{CharacterName} is {NutritionStatus},{CharacterName} đang {NutritionStatus}
-FormatText,{CharacterName} is feeling {KarmaStatus},{CharacterName} đang cảm thấy {KarmaStatus}
+FormatText,{CharacterName} is {ApetiteName},{CharacterName} đang {ApetiteName}
+FormatText,{CharacterName} is feeling {StandingName},{CharacterName} đang cảm thấy {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} không còn bị kẹt
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} đạt được cấp {QualificationName} trong {SkillName}
 FormatText,{CharacterName} killed {GenderHimself},{CharacterName} tự giết chính {GenderHimself}
@@ -1988,10 +2017,10 @@ FormatText,{CharacterName} was disarmed and dropped {GenderHis} {AssetName},{Cha
 FormatText,{CharacterName} was granted the boon of {BoonName},Lời cầu xin được {BoonName} của {CharacterName} được chấp thuận
 FormatText,{CharacterName} was granted the service of {ServiceName},Dịch vụ {ServiceName} của {CharacterName} được chấp thuận
 FormatText,{CharacterName} was killed by {LiteralText},{CharacterName} đã bị giết bởi {LiteralText}
-FormatText,{CharacterName} was lifesaved!,{CharacterName} vừa được cứu sống!
 FormatText,{CharacterName} was punished with {PunishmentName},{CharacterName} bị trừng phạt với {PunishmentName}
 FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} được ân xá khỏi {PunishmentName}
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} đã khỏi bệnh {AfflictionName}
+FormatText,{CharacterName} was revived!,{CharacterName} vừa được cứu sống!
 FormatText,{CharacterName} woke up,{CharacterName} tỉnh dậy
 FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} vắt thêm 1 lần dùng nữa từ {AssetName}
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
@@ -2958,16 +2987,6 @@ ItemType,thrown weapon,vũ khí ném
 ItemType,tin,thiếc
 ItemType,tool,dụng cụ
 ItemType,wand,gậy phép
-KarmaStatus,damned,ác nhân
-KarmaStatus,doomed,quái nhân
-KarmaStatus,doubtful,ngờ đạo
-KarmaStatus,evil,độc ác
-KarmaStatus,exalted,cao quý
-KarmaStatus,glorious,vinh quang
-KarmaStatus,good,tốt
-KarmaStatus,hopeful,hy vọng
-KarmaStatus,reconciled,hòa giải
-KarmaStatus,strayed,lạc lối
 KindName,angel,thiên thần
 KindName,bat,dơi
 KindName,beast,quái thú
@@ -3055,7 +3074,6 @@ LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
 LiteralText,AMMO,ĐẠN
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
-LiteralText,amorphous,chất rắn vô định hình
 LiteralText,anatomy,giải phẫu
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
@@ -3101,7 +3119,6 @@ LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
 LiteralText,block,khối
 LiteralText,BLOCKED,BỊ CHẶN
 LiteralText,BLOCKS,CÁC KHỐI
-LiteralText,blood,máu
 LiteralText,BOONS,CẦU XIN
 LiteralText,boost attack by enchantment,tăng tốc đánh do cường hóa
 LiteralText,boost damage by enchantment,tăng sát thương do cường hóa
@@ -3465,14 +3482,12 @@ LiteralText,MENU,MENU
 LiteralText,mercenary,lính đánh thuê
 LiteralText,MIMIC,GIẢ DẠNG
 LiteralText,mimicking,đang giả dạng
-LiteralText,MINDLESS,VÔ TRI
 LiteralText,Mines,mìn
 LiteralText,Minetown,thi trấn Mine
 LiteralText,missile,tên lửa
 LiteralText,modifier,cấp số nhân
 LiteralText,MOUNT,CƯỠI
 LiteralText,Mount which direction?,Cưỡi hướng nào?
-LiteralText,mounted,cưỡi
 LiteralText,MOUNTED,ĐÃ CƯỠI
 LiteralText,MOVE,DI CHUYỂN
 LiteralText,move down one level,Đi xuống 1 tầng
@@ -3493,23 +3508,9 @@ LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
 LiteralText,No appropriate items available,không có vật phẩm nào phù hợp
 LiteralText,no available knowledge,không có kiến thức nào
-LiteralText,NO EARS,KHÔNG TAI
-LiteralText,NO EYES,KHÔNG MẮT
-LiteralText,NO FEET,KHÔNG CHÂN
-LiteralText,NO HANDS,KHÔNG BÀN TAY
-LiteralText,NO HEAD,KHÔNG ĐẦU
-LiteralText,NO LIMBS,KHÔNG CÓ CHÂN TAY
 LiteralText,no resistances,không đề kháng
 LiteralText,no talents,không tài năng
 LiteralText,no transient effects,không có hiệu ứng tạm thời
-LiteralText,no-blood,không máu
-LiteralText,no-ears,không tai
-LiteralText,no-eyes,không mắt
-LiteralText,no-feet,không bàn chân
-LiteralText,no-hands,không bàn tay
-LiteralText,no-head,không đầu
-LiteralText,no-limbs,không chân tay
-LiteralText,no-mind,vô tri
 LiteralText,non charged items,vật phẩm không nạp đầy
 LiteralText,non divined items,vật phẩm không thánh hóa
 LiteralText,non edible items,vật phẩm không ăn được
@@ -3520,7 +3521,6 @@ LiteralText,nothing happens,không có gì xảy ra
 LiteralText,Nothing of interest,Không có gì đáng chú ý
 LiteralText,nothing to give,không có gì để đưa
 LiteralText,nothing to take,không có gì để lấy
-LiteralText,no-voice,không giọng nói
 LiteralText,nutrition,dinh dưỡng
 LiteralText,NUTRITION,DINH DƯỠNG
 LiteralText,OBSTRUCTED,BỊ CHẶN
@@ -3805,7 +3805,6 @@ LiteralText,Using a seed means that you will not be eligible for the Hall of Fam
 LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
-LiteralText,VOICELESS,VÔ THANH
 LiteralText,VOID SPACE,HƯ VÔ
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
@@ -3944,11 +3943,6 @@ MotionPresentName,zap,vụt
 MurderTypeName,Allied,Đồng minh
 MurderTypeName,Every,Tất cả
 MurderTypeName,Hostile,Kẻ thù
-NutritionStatus,content,bình thường
-NutritionStatus,hungry,đói
-NutritionStatus,satiated,no
-NutritionStatus,starving,đang chết đói
-NutritionStatus,weak,yếu
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Cây cầu gỗ cứng này vẫn còn nguyên vẹn mặc dù được sử dụng suốt bao nhiêu năm rồi.
 PlatformName,crystal bridge,cầu pha lê
 PlatformName,wooden bridge,cầu gỗ
@@ -4581,6 +4575,16 @@ SpellName,toxic spray,phun độc
 SpellName,turn undead,hóa thây ma
 SpellName,walling,tạo tường
 SpellName,wizard lock,khóa ma thuật
+StandingName,damned,ác nhân
+StandingName,doomed,quái nhân
+StandingName,doubtful,ngờ đạo
+StandingName,evil,độc ác
+StandingName,exalted,cao quý
+StandingName,glorious,vinh quang
+StandingName,good,tốt
+StandingName,hopeful,hy vọng
+StandingName,reconciled,hòa giải
+StandingName,strayed,lạc lối
 StockName,amulet,bùa phép
 StockName,armour,áo giáp
 StockName,book,sách

@@ -16,7 +16,7 @@ namespace Pathos
     {
       Skill AddSkill(SkillCategory Category, string Name, Action<SkillEditor> EditorAction)
       {
-        return Add(S =>
+        return Register.Add(S =>
         {
           S.Category = Category;
           S.Name = Name;

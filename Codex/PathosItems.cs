@@ -29,6 +29,7 @@ namespace Pathos
       var Elements = Codex.Elements;
       var Attributes = Codex.Attributes;
       var Sanctities = Codex.Sanctities;
+      var Anatomies = Codex.Anatomies;
       var Skills = Codex.Skills;
       var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
@@ -1022,12 +1023,12 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8(), D =>
         {
-          D.WhenTargetEntity(new[] { Entities.jabberwock, Entities.vorpal_jabberwock }, T => T.Decapitate(Strikes.sever));
+          D.WhenTargetEntity(new[] { Entities.jabberwock, Entities.vorpal_jabberwock }, T => T.Decapitate(Anatomies.head, Strikes.sever));
           D.WithSourceSanctity
           (
-            B => B.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever)),
-            U => U.WhenChance(Chance.OneIn20, T => T.Decapitate(Strikes.sever)),
-            C => C.Backfire(F => F.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever)))
+            B => B.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever)),
+            U => U.WhenChance(Chance.OneIn20, T => T.Decapitate(Anatomies.head, Strikes.sever)),
+            C => C.Backfire(F => F.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever)))
           );
         });
       });

@@ -33,6 +33,7 @@ namespace Pathos
       var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
       var AttackTypes = Codex.AttackTypes;
+      var Anatomies = Codex.Anatomies;
 
       CodexStocks Stocks = null;
       CodexItems Items = null;
@@ -71,7 +72,7 @@ namespace Pathos
             if (E.IsBase || E.IsAnimate)
               E.Figure.CombatSkill = Skills.unarmed_combat;
 
-            if (E.Figure.Mountable)
+            if (E.Figure.Has(Codex.Anatomies.mounted))
               E.Figure.MountSkill = Skills.riding;
 
             if (E.CorpseChance != Chance.Never && E.CorpseItem == null)
@@ -210,9 +211,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(2, Dice.Fixed(+1));
@@ -251,9 +252,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.Zero);
@@ -291,9 +292,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(2, Dice.Fixed(+2));
@@ -332,9 +333,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(4, 1.d3());
@@ -372,9 +373,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.One);
@@ -411,9 +412,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.One);
@@ -451,9 +452,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(0, Dice.Zero);
@@ -490,9 +491,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(0, Dice.Zero);
@@ -530,9 +531,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(10, 1.d4());
@@ -569,9 +570,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.One);
@@ -608,9 +609,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(2, 1.d2());
@@ -647,9 +648,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.One);
@@ -689,9 +690,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, Dice.One);
@@ -731,9 +732,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: false, // can't wear boots due to hooves
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, 1.d2());
@@ -771,9 +772,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(4, 1.d3());
@@ -813,9 +814,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -865,9 +866,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -916,9 +917,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -964,9 +965,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1011,9 +1012,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1066,9 +1067,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1120,9 +1121,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1173,9 +1174,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1222,9 +1223,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1279,9 +1280,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1340,9 +1341,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1389,9 +1390,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1442,9 +1443,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1488,9 +1489,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1531,9 +1532,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1577,9 +1578,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -1620,9 +1621,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1664,9 +1665,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1715,9 +1716,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1758,9 +1759,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1805,9 +1806,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1858,9 +1859,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1907,9 +1908,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -1954,9 +1955,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2003,9 +2004,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2062,9 +2063,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2112,9 +2113,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2167,9 +2168,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2212,9 +2213,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2261,9 +2262,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2312,9 +2313,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2370,9 +2371,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2426,9 +2427,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2470,9 +2471,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -2514,9 +2515,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -2566,9 +2567,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2610,9 +2611,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2662,9 +2663,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2707,9 +2708,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2757,9 +2758,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2804,9 +2805,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -2855,9 +2856,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2899,9 +2900,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2951,9 +2952,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -2995,9 +2996,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3039,9 +3040,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3083,9 +3084,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3138,9 +3139,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3181,9 +3182,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3224,9 +3225,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3281,9 +3282,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3324,9 +3325,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3387,9 +3388,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3437,10 +3438,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3487,10 +3488,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3547,10 +3548,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3597,10 +3598,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3647,10 +3648,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3692,10 +3693,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
-          Amorphous: false
+          Mounted: false,
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -3746,9 +3747,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3793,9 +3794,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3840,9 +3841,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3894,9 +3895,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -3944,9 +3945,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4005,9 +4006,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4064,9 +4065,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -4120,9 +4121,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -4169,9 +4170,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -4219,9 +4220,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -4267,9 +4268,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4320,9 +4321,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4374,9 +4375,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4435,10 +4436,10 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
-          Warm: false,
+          Feet: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4479,9 +4480,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4541,9 +4542,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4600,9 +4601,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4647,9 +4648,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4692,10 +4693,10 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
-          Warm: true,
+          Feet: false,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4739,9 +4740,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4789,9 +4790,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -4839,9 +4840,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4892,9 +4893,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4943,9 +4944,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -4992,9 +4993,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -5041,9 +5042,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5090,9 +5091,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5148,9 +5149,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5208,9 +5209,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(24, 2.d8());
@@ -5254,9 +5255,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5301,9 +5302,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -5351,9 +5352,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5399,9 +5400,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5450,9 +5451,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5509,9 +5510,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -5559,9 +5560,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5608,9 +5609,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5663,9 +5664,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5717,9 +5718,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -5776,9 +5777,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5822,9 +5823,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -5872,9 +5873,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5929,9 +5930,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -5980,9 +5981,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6027,9 +6028,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6083,9 +6084,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6134,9 +6135,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -6191,9 +6192,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6248,9 +6249,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6300,9 +6301,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6343,9 +6344,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6390,9 +6391,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6433,9 +6434,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6477,9 +6478,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6520,9 +6521,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -6564,9 +6565,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6616,9 +6617,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6667,9 +6668,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -6710,9 +6711,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6754,9 +6755,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6797,9 +6798,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6840,9 +6841,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6893,9 +6894,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6936,9 +6937,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -6987,9 +6988,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7033,9 +7034,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7077,9 +7078,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7127,9 +7128,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7177,9 +7178,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7220,9 +7221,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -7314,9 +7315,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7359,9 +7360,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7404,9 +7405,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7453,9 +7454,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7498,9 +7499,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7544,9 +7545,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7589,9 +7590,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7634,9 +7635,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7680,9 +7681,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7725,9 +7726,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7770,9 +7771,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(BabyDragonLifeDice);
@@ -7816,9 +7817,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -7866,9 +7867,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -7916,9 +7917,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -7971,9 +7972,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8021,9 +8022,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8073,9 +8074,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8123,9 +8124,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8173,9 +8174,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8224,9 +8225,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8278,9 +8279,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8328,9 +8329,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(YoungDragonLifeBase, YoungDragonLifeDice);
@@ -8379,9 +8380,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8433,9 +8434,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8489,9 +8490,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8556,9 +8557,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8611,9 +8612,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8668,9 +8669,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8723,9 +8724,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8778,9 +8779,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8833,9 +8834,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8891,9 +8892,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -8946,9 +8947,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AdultDragonLifeBase, AdultDragonLifeDice);
@@ -9002,9 +9003,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9056,9 +9057,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9112,9 +9113,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9179,9 +9180,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9235,9 +9236,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9292,9 +9293,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9347,9 +9348,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9402,9 +9403,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9457,9 +9458,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9515,9 +9516,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9570,9 +9571,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(AncientDragonLifeBase, AncientDragonLifeDice);
@@ -9626,9 +9627,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -9690,9 +9691,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(96, 1.d8());
@@ -9817,9 +9818,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(52, 1.d12());
@@ -9868,9 +9869,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(60, 15.d4());
@@ -9920,9 +9921,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(72, 1.d4());
@@ -9974,9 +9975,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10025,9 +10026,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10082,9 +10083,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10133,9 +10134,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10183,9 +10184,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10234,9 +10235,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10289,9 +10290,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10338,9 +10339,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10387,9 +10388,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10436,9 +10437,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10481,9 +10482,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10525,9 +10526,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10572,9 +10573,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10620,9 +10621,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10670,9 +10671,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10720,9 +10721,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10764,9 +10765,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8());
@@ -10810,9 +10811,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10855,9 +10856,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10897,9 +10898,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10948,9 +10949,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -10998,9 +10999,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11049,9 +11050,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11102,9 +11103,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11151,9 +11152,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11204,9 +11205,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11256,9 +11257,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11301,9 +11302,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11351,9 +11352,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11397,9 +11398,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11443,9 +11444,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false, // drow are not infravisible.
+          Thermal: false, // drow are not infravisible.
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11497,9 +11498,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11542,9 +11543,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11598,9 +11599,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11646,9 +11647,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11691,9 +11692,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11744,9 +11745,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11794,9 +11795,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11846,9 +11847,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11899,9 +11900,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -11972,9 +11973,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12024,9 +12025,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12074,9 +12075,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12123,9 +12124,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12170,9 +12171,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12234,9 +12235,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12279,9 +12280,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12325,9 +12326,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12371,9 +12372,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12415,9 +12416,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12460,9 +12461,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12512,9 +12513,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12556,9 +12557,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12602,9 +12603,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12647,9 +12648,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12692,9 +12693,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12738,9 +12739,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12785,9 +12786,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12839,9 +12840,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12896,9 +12897,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12950,9 +12951,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -12999,10 +13000,10 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
 
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -13042,9 +13043,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13094,9 +13095,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13144,9 +13145,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13189,9 +13190,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13241,9 +13242,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13295,9 +13296,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13339,9 +13340,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13390,9 +13391,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13442,9 +13443,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d10());
@@ -13488,9 +13489,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13534,9 +13535,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13583,9 +13584,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13630,9 +13631,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13677,9 +13678,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -13734,9 +13735,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13778,9 +13779,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13826,9 +13827,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13874,9 +13875,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13922,9 +13923,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -13969,9 +13970,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14019,9 +14020,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14065,9 +14066,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14117,9 +14118,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14166,9 +14167,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14214,9 +14215,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14265,9 +14266,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14312,9 +14313,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14358,9 +14359,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14409,9 +14410,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14455,9 +14456,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -14504,9 +14505,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(50, Dice.Zero);
@@ -14549,9 +14550,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(200, Dice.Zero);
@@ -14598,9 +14599,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(170, Dice.Zero);
@@ -14647,9 +14648,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(80, Dice.Zero);
@@ -14701,9 +14702,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(300, Dice.Zero);
@@ -14753,9 +14754,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(100, Dice.Zero);
@@ -14806,9 +14807,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(30, Dice.Zero);
@@ -14851,9 +14852,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(140, Dice.Zero);
@@ -14904,9 +14905,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(40, Dice.Zero);
@@ -14953,9 +14954,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(18, Dice.Zero);
@@ -14999,9 +15000,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(145, Dice.Zero);
@@ -15046,9 +15047,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(30, Dice.Zero);
@@ -15090,9 +15091,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(40, Dice.Zero);
@@ -15138,9 +15139,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(150, Dice.Zero);
@@ -15187,9 +15188,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(180, Dice.Zero);
@@ -15236,9 +15237,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(50, Dice.Zero);
@@ -15290,9 +15291,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(190, Dice.Zero);
@@ -15345,9 +15346,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(90, Dice.Zero);
@@ -15390,9 +15391,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(25, Dice.Zero);
@@ -15434,9 +15435,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(25, Dice.Zero);
@@ -15480,9 +15481,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(70, Dice.Zero);
@@ -15528,9 +15529,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15574,9 +15575,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15625,9 +15626,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15670,9 +15671,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15717,9 +15718,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15772,9 +15773,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15827,9 +15828,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15882,9 +15883,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15938,9 +15939,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -15997,9 +15998,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16056,9 +16057,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16107,9 +16108,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16124,15 +16125,15 @@ namespace Pathos
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
         });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
         });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16161,9 +16162,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16208,9 +16209,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16252,9 +16253,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16295,9 +16296,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16344,9 +16345,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16396,9 +16397,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16447,9 +16448,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16494,9 +16495,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16542,9 +16543,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16590,9 +16591,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16636,9 +16637,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16686,9 +16687,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16736,9 +16737,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16787,9 +16788,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16844,9 +16845,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16888,9 +16889,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16942,9 +16943,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -16990,9 +16991,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17035,9 +17036,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17080,9 +17081,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17129,9 +17130,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17176,9 +17177,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17224,9 +17225,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17268,9 +17269,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -17341,9 +17342,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17384,9 +17385,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17428,9 +17429,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17476,9 +17477,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17518,9 +17519,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17561,9 +17562,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17604,9 +17605,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17657,9 +17658,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17701,9 +17702,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17746,9 +17747,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17790,9 +17791,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17839,9 +17840,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17891,9 +17892,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -17959,9 +17960,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18006,9 +18007,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18051,9 +18052,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18101,9 +18102,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18146,9 +18147,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18197,9 +18198,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18244,9 +18245,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18294,9 +18295,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18339,9 +18340,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18390,9 +18391,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18436,9 +18437,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18487,9 +18488,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18533,9 +18534,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18584,9 +18585,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18631,9 +18632,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18681,9 +18682,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18726,9 +18727,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18777,9 +18778,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18825,9 +18826,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18877,9 +18878,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18929,9 +18930,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -18974,9 +18975,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19019,9 +19020,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19065,9 +19066,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19113,9 +19114,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19177,9 +19178,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19236,9 +19237,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19284,9 +19285,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19327,9 +19328,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19370,9 +19371,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19413,9 +19414,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19466,9 +19467,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19510,9 +19511,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19556,9 +19557,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19603,9 +19604,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19649,9 +19650,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19702,9 +19703,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19748,9 +19749,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19804,9 +19805,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19861,9 +19862,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19911,9 +19912,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -19964,9 +19965,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20017,9 +20018,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20070,9 +20071,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20118,9 +20119,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20174,9 +20175,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(3.d2()); // -1 from con.
@@ -20221,9 +20222,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20273,9 +20274,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20320,9 +20321,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8()); // -2 from CON
@@ -20371,9 +20372,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20417,9 +20418,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20463,9 +20464,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8()); // +1 from CON
@@ -20510,9 +20511,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8()); // -1 from CON.
@@ -20558,9 +20559,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20606,9 +20607,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20664,9 +20665,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20714,9 +20715,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20764,9 +20765,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20814,9 +20815,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20864,9 +20865,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(72, 1.d4());
@@ -20930,9 +20931,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -20979,9 +20980,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21031,9 +21032,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21087,9 +21088,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21130,9 +21131,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21190,9 +21191,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21236,9 +21237,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21281,9 +21282,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21323,9 +21324,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21368,9 +21369,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21410,9 +21411,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21457,9 +21458,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21500,9 +21501,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -21544,9 +21545,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21594,9 +21595,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21648,9 +21649,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21694,9 +21695,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21747,9 +21748,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21796,9 +21797,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21845,9 +21846,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -21894,9 +21895,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(8, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -21943,9 +21944,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -21995,9 +21996,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22050,9 +22051,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(8, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22098,9 +22099,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22150,9 +22151,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22205,9 +22206,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(8, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22253,9 +22254,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22306,9 +22307,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22360,9 +22361,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(8, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22409,9 +22410,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22462,9 +22463,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22517,9 +22518,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(8, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22566,9 +22567,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22619,9 +22620,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8()); // Added HP in order to let them stronger than current level.
@@ -22674,9 +22675,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22728,9 +22729,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22774,9 +22775,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22822,9 +22823,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22871,9 +22872,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22927,9 +22928,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -22980,9 +22981,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23028,9 +23029,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23075,9 +23076,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23122,9 +23123,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23171,9 +23172,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23219,9 +23220,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23269,9 +23270,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23318,9 +23319,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23365,9 +23366,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23421,9 +23422,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23473,9 +23474,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23521,9 +23522,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23569,9 +23570,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23616,9 +23617,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23671,9 +23672,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23721,9 +23722,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23772,9 +23773,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23821,9 +23822,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23869,9 +23870,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23919,9 +23920,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -23967,9 +23968,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24033,9 +24034,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24082,9 +24083,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24133,9 +24134,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24177,9 +24178,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24228,9 +24229,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24272,9 +24273,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24316,9 +24317,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24360,9 +24361,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24407,9 +24408,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24451,9 +24452,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24495,9 +24496,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24539,9 +24540,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24588,9 +24589,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24636,9 +24637,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24684,9 +24685,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24736,9 +24737,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24788,9 +24789,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24836,9 +24837,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24888,9 +24889,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24936,9 +24937,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -24985,9 +24986,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25039,9 +25040,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25105,9 +25106,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25156,9 +25157,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25201,9 +25202,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25246,9 +25247,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25290,9 +25291,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25348,9 +25349,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25392,9 +25393,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25445,9 +25446,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25495,9 +25496,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25543,9 +25544,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25594,9 +25595,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25641,9 +25642,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25690,9 +25691,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25744,9 +25745,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25799,9 +25800,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25848,9 +25849,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25899,9 +25900,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25944,9 +25945,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -25995,9 +25996,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26040,9 +26041,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26088,9 +26089,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26140,9 +26141,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -26185,9 +26186,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26238,9 +26239,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(28, 1.d8());
@@ -26282,9 +26283,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26326,9 +26327,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26370,9 +26371,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26418,9 +26419,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26469,9 +26470,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26517,9 +26518,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26574,9 +26575,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26623,9 +26624,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26676,9 +26677,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26724,9 +26725,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26778,9 +26779,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26842,9 +26843,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26900,9 +26901,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -26973,9 +26974,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27026,9 +27027,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27083,9 +27084,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27138,9 +27139,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27206,9 +27207,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(48, 1.d8());
@@ -27250,9 +27251,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27301,9 +27302,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8());
@@ -27347,9 +27348,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8());
@@ -27394,9 +27395,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27438,9 +27439,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -27487,9 +27488,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27532,9 +27533,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27578,9 +27579,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -27624,9 +27625,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27668,9 +27669,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27713,9 +27714,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27758,9 +27759,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(48, 1.d8());
@@ -27808,9 +27809,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(16, 1.d8());
@@ -27855,9 +27856,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27900,9 +27901,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27950,9 +27951,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -27993,9 +27994,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28037,9 +28038,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28094,9 +28095,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(48, 1.d8());
@@ -28138,9 +28139,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -28183,9 +28184,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28272,9 +28273,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28315,9 +28316,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28359,9 +28360,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28406,9 +28407,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -28449,9 +28450,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28496,9 +28497,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28544,9 +28545,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28597,9 +28598,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28640,9 +28641,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -28683,9 +28684,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28728,9 +28729,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28784,9 +28785,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28838,9 +28839,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28881,9 +28882,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28936,9 +28937,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -28985,9 +28986,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29038,9 +29039,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29088,9 +29089,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29139,9 +29140,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29186,9 +29187,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29240,9 +29241,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29284,9 +29285,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29331,9 +29332,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29381,9 +29382,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29429,9 +29430,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29480,9 +29481,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29540,9 +29541,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29587,9 +29588,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29640,9 +29641,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29689,9 +29690,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29739,9 +29740,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29791,9 +29792,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29849,9 +29850,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29897,9 +29898,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29942,9 +29943,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -29986,9 +29987,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30030,9 +30031,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30080,9 +30081,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -30129,9 +30130,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30179,9 +30180,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(48, 1.d8());
@@ -30227,9 +30228,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30276,9 +30277,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30324,9 +30325,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30374,9 +30375,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30424,9 +30425,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30477,9 +30478,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30531,9 +30532,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30578,9 +30579,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30625,9 +30626,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30672,9 +30673,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30716,9 +30717,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30768,9 +30769,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30813,9 +30814,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30857,9 +30858,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30902,9 +30903,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -30952,9 +30953,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -31008,9 +31009,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -31068,9 +31069,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31122,9 +31123,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -31184,9 +31185,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31233,9 +31234,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31292,9 +31293,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31341,9 +31342,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31400,9 +31401,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31453,9 +31454,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31501,9 +31502,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31558,9 +31559,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31612,9 +31613,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31666,9 +31667,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31709,9 +31710,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31752,9 +31753,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31804,9 +31805,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31848,9 +31849,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -31893,9 +31894,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31935,9 +31936,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -31981,9 +31982,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32025,9 +32026,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32075,9 +32076,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32117,9 +32118,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32180,9 +32181,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -32228,9 +32229,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32270,9 +32271,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32313,9 +32314,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32357,9 +32358,9 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: true,
+          Mounted: true,
           Amorphous: true
         );
         E.LifeAdvancement.Set(1.d4());
@@ -32409,9 +32410,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32459,9 +32460,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32520,9 +32521,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32574,9 +32575,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32640,9 +32641,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32688,9 +32689,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32739,9 +32740,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32786,9 +32787,9 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32841,9 +32842,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32888,9 +32889,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32933,9 +32934,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -32981,9 +32982,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33028,9 +33029,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -33073,9 +33074,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: true,
+          Mounted: true,
           Amorphous: false
         );
         E.LifeAdvancement.Set(64, 1.d8());
@@ -33091,7 +33092,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7());
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn4, T => T.Decapitate(Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn4, T => T.Decapitate(Anatomies.head, Strikes.sever));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -33121,9 +33122,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33169,9 +33170,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33214,9 +33215,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33260,9 +33261,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33305,9 +33306,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33352,9 +33353,9 @@ namespace Pathos
           Hands: true, // for throwing rocks.
           Limbs: true,
           Feet: false,
-          Warm: true,
+          Thermal: true,
           Blood: true,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, 1.d8());
@@ -33403,9 +33404,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33457,9 +33458,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33502,9 +33503,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33547,9 +33548,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -33592,9 +33593,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33642,9 +33643,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33692,9 +33693,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33748,9 +33749,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33803,9 +33804,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(32, 1.d8());
@@ -33848,9 +33849,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33893,9 +33894,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33943,9 +33944,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -33988,9 +33989,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d4());
@@ -34033,9 +34034,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
@@ -34077,9 +34078,9 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Warm: false,
+          Thermal: false,
           Blood: false,
-          Mountable: false,
+          Mounted: false,
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());

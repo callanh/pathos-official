@@ -31,9 +31,12 @@ namespace Pathos
         this.AttackTypes = new CodexAttackTypes(this);
         this.Genders = new CodexGenders(this);
         this.Skills = new CodexSkills(this);
+        this.Anatomies = new CodexAnatomies(this);
         this.Slots = new CodexSlots(this);
         this.Elements = new CodexElements(this);
         this.Properties = new CodexProperties(this);
+        this.Apetites = new CodexApetites(this);
+        this.Standings = new CodexStandings(this);
         this.Warnings = new CodexWarnings(this);
         this.Materials = new CodexMaterials(this);
         this.Diets = new CodexDiets(this);
@@ -130,33 +133,35 @@ namespace Pathos
 
       Manifest.Blinking.Set(Properties.blinking, Attributes.intelligence, Sonics.blink, NutritionCost: 5);
 
+      Manifest.Casting.Set(Attributes.intelligence, new[] { Anatomies.mind, Anatomies.voice });
+
       Manifest.Jumping.Set(Properties.jumping, Attributes.strength, Sonics.jump, NutritionCost: 5);
 
-      Manifest.Sliding.Set(Attributes.constitution, Sonics.slime, NutritionCost: 5);
+      Manifest.Sliding.Set(Anatomies.amorphous, Attributes.constitution, Sonics.slime, NutritionCost: 5);
 
       Manifest.Kicking.Set(Attributes.strength, Elements.physical, Sonics.kick, NutritionCost: 1);
 
-      Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250);
-      Manifest.Praying.AddPrayer(KarmaStatus.Hopeful, A =>
+      Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
+      Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
-        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
       });
-      Manifest.Praying.AddPrayer(KarmaStatus.Good, A =>
+      Manifest.Praying.AddPrayer(Standings.good, A =>
       {
-        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
       });
-      Manifest.Praying.AddPrayer(KarmaStatus.Glorious, A =>
+      Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
-        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -164,9 +169,9 @@ namespace Pathos
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
       });
-      Manifest.Praying.AddPrayer(KarmaStatus.Exalted, A =>
+      Manifest.Praying.AddPrayer(Standings.exalted, A =>
       {
-        A.WhenSourceIsHungry(T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -189,6 +194,8 @@ namespace Pathos
 
     public Manifest Manifest { get; }
     public CodexAfflictions Afflictions { get; }
+    public CodexAnatomies Anatomies { get; }
+    public CodexApetites Apetites { get; }
     public CodexAtmospheres Atmospheres { get; }
     public CodexAttackTypes AttackTypes { get; }
     public CodexAttributes Attributes { get; }
@@ -237,6 +244,7 @@ namespace Pathos
     public CodexSonics Sonics { get; }
     public CodexSpecials Specials { get; }
     public CodexSpells Spells { get; }
+    public CodexStandings Standings { get; }
     public CodexStocks Stocks { get; }
     public CodexStrikes Strikes { get; }
     public CodexTracks Tracks { get; }
@@ -341,6 +349,25 @@ namespace Pathos
       Form.SetScore(Attributes.intelligence, INT);
       Form.SetScore(Attributes.wisdom, WIS);
       Form.SetScore(Attributes.charisma, CHA);
+    }
+
+    internal static void Set(this FigureEditor Figure, Material Material, bool Head, bool Mind, bool Eyes, bool Ears, bool Hands, bool Limbs, bool Feet, bool Thermal, bool Blood, bool Mounted, bool Amorphous, bool Voice)
+    {
+      var Anatomy = Codex.Anatomies;
+
+      Figure.Material = Material;
+      if (Head) Figure.Set(Anatomy.head);
+      if (Mind) Figure.Set(Anatomy.mind);
+      if (Eyes) Figure.Set(Anatomy.eyes);
+      if (Ears) Figure.Set(Anatomy.ears);
+      if (Voice) Figure.Set(Anatomy.voice);
+      if (Hands) Figure.Set(Anatomy.hands);
+      if (Limbs) Figure.Set(Anatomy.limbs);
+      if (Feet) Figure.Set(Anatomy.feet);
+      if (Thermal) Figure.Set(Anatomy.thermal);
+      if (Blood) Figure.Set(Anatomy.blood);
+      if (Mounted) Figure.Set(Anatomy.mounted);
+      if (Amorphous) Figure.Set(Anatomy.amorphous);
     }
     internal static void WithSourceSanctity(this ApplyEditor Apply, Action<ApplyEditor> BlessedAction, Action<ApplyEditor> UncursedAction, Action<ApplyEditor> CursedAction)
     {
@@ -579,6 +606,9 @@ namespace Pathos
         if (Entity.CorpseChance != Chance.Never && Entity.Figure.Material != Codex.Materials.animal && Entity.Figure.Material != Codex.Materials.vegetable)
           Record($"Entity {Entity.Name} has a corpse so must be animal or vegetable material.");
 
+        if (Entity.Immitation && !Entity.Figure.Has(Codex.Anatomies.voice))
+          Record($"Entity {Entity.Name} has immitation so it must have a voice.");
+
         if (Entity.IsUnique && !Entity.Startup.Resistances.Contains(Codex.Elements.magical))
           Record($"Entity {Entity.Name} must have magic resistance when it is marked as unique.");
 
@@ -601,12 +631,12 @@ namespace Pathos
         if (Entity.IsMercenary && !Entity.IsGuardian)
           Record($"Entity {Entity.Name} must be a guardian if they are a mercenary.");
 
-        if (!Entity.Figure.Limbs && Entity.Startup.Talents.Contains(Codex.Properties.jumping))
+        if (!Entity.Figure.Has(Codex.Anatomies.limbs) && Entity.Startup.Talents.Contains(Codex.Properties.jumping))
           Record($"Entity {Entity.Name} without limbs should not be able to jump.");
 
-        if (Entity.Figure.Mountable && Entity.Figure.MountSkill == null)
+        if (Entity.Figure.Has(Manifest.Anatomies.mounted) && Entity.Figure.MountSkill == null)
           Record($"Entity {Entity.Name} that can be mounted is expected to have a mount skill.");
-        else if (!Entity.Figure.Mountable && Entity.Figure.MountSkill != null)
+        else if (!Entity.Figure.Has(Manifest.Anatomies.mounted) && Entity.Figure.MountSkill != null)
           Record($"Entity {Entity.Name} that cannot be mounted is not expected to have a mount skill.");
 
         if ((Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill == null)
@@ -635,10 +665,10 @@ namespace Pathos
         if (Entity.IsHead && !Entity.Tail.Entity.IsTail)
           Record($"Entity head {Entity.Name} must have their tail {Entity.Tail.Entity.Name} declared as a tail.");
 
-        if (Entity.IsHead && Entity.Figure.Mountable)
+        if (Entity.IsHead && Entity.Figure.Has(Manifest.Anatomies.mounted))
           Record($"Entity {Entity.Name} is mountable but heads are not yet implemented in the engine as mounts (the tail gets detached).");
 
-        if (Entity.IsTail && Entity.Figure.Mountable)
+        if (Entity.IsTail && Entity.Figure.Has(Manifest.Anatomies.mounted))
           Record($"Entity {Entity.Name} is a tail and must not be set as mountable (riding a tail cannot be implemented).");
 
         if (Entity.IsTail && Entity.MayDropCorpse())
@@ -779,7 +809,7 @@ namespace Pathos
           if (Cavalry.RiderEntity.Size >= Cavalry.SteedEntity.Size)
             Record($"Horde {Horde.Name} cavalry rider size must be less than the steed size");
 
-          if (!Cavalry.SteedEntity.Figure.Mountable)
+          if (!Cavalry.SteedEntity.Figure.Has(Manifest.Anatomies.mounted))
             Record($"Horde {Horde.Name} cavalry steed {Cavalry.SteedEntity.Name} must be mountable");
         }
       }
@@ -1054,6 +1084,8 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Glyphs.Quicks.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Warnings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Apetites.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
       UsedGlyphSet.Add(Manifest.Glyphs.StatueBase);
@@ -1171,6 +1203,7 @@ namespace Pathos
       Base.Register<Manifest>();
       Base.Register<ManifestLevelling>();
       Base.Register<ManifestBlinking>();
+      Base.Register<ManifestCasting>();
       Base.Register<ManifestJumping>();
       Base.Register<ManifestKicking>();
       Base.Register<ManifestPraying>();
@@ -1186,6 +1219,8 @@ namespace Pathos
       Base.Register<Quick>();
 
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
+      RegisterRecord<ManifestAnatomies, AnatomyEditor, Anatomy>();
+      RegisterRecord<ManifestApetites, ApetiteEditor, Apetite>();
       RegisterRecord<ManifestAtmospheres, AtmosphereEditor, Atmosphere>();
       RegisterRecord<ManifestAttackTypes, AttackTypeEditor, AttackType>();
       RegisterRecord<ManifestAttributes, AttributeEditor, Attribute>();
@@ -1234,6 +1269,7 @@ namespace Pathos
       RegisterRecord<ManifestSonics, SonicEditor, Sonic>();
       RegisterRecord<ManifestSpecials, SpecialEditor, Special>();
       RegisterRecord<ManifestSpells, SpellEditor, Spell>();
+      RegisterRecord<ManifestStandings, StandingEditor, Standing>();
       RegisterRecord<ManifestStocks, StockEditor, Stock>();
       RegisterRecord<ManifestStrikes, StrikeEditor, Strike>();
       RegisterRecord<ManifestTracks, TrackEditor, Track>();
@@ -1242,6 +1278,8 @@ namespace Pathos
       RegisterRecord<ManifestZoos, ZooEditor, Zoo>();
 
       Base.Register<CodexAfflictions>();
+      Base.Register<CodexAnatomies>();
+      Base.Register<CodexApetites>();
       Base.Register<CodexAtmospheres>();
       Base.Register<CodexAttackTypes>();
       Base.Register<CodexAttributes>();
@@ -1290,6 +1328,7 @@ namespace Pathos
       Base.Register<CodexSonics>();
       Base.Register<CodexSpecials>();
       Base.Register<CodexSpells>();
+      Base.Register<CodexStandings>();
       Base.Register<CodexStocks>();
       Base.Register<CodexStrikes>();
       Base.Register<CodexTracks>();
@@ -1301,7 +1340,10 @@ namespace Pathos
       Base.Register<Adept>();
       Base.Register<Advancement>();
       Base.Register<Affliction>();
+      Base.Register<Anatomy>();
+      Base.Register<AnatomySet>();
       Base.Register<Appearance>();
+      Base.Register<Apetite>();
       Base.Register<Apply>();
       Base.Register<Armour>();
       Base.Register<AssetFilter>();
@@ -1386,6 +1428,7 @@ namespace Pathos
       Base.Register<Spawn>();
       Base.Register<Special>();
       Base.Register<Spell>();
+      Base.Register<Standing>();
       Base.Register<Startup>();
       Base.Register<Stock>();
       Base.Register<Storage>();
@@ -1405,9 +1448,6 @@ namespace Pathos
       Base.Register<Zoo>();
       Base.Register<Effect>().AsPolymorph();
       Base.Register<WhenProbabilityCheck>();
-
-      Base.Register<KarmaStatus>().AsCustom((S, R) => S.WriteInt32(R.Index), (L) => KarmaStatus.List[L.ReadInt32()]);
-      Base.Register<NutritionStatus>().AsCustom((S, R) => S.WriteInt32(R.Index), (L) => NutritionStatus.List[L.ReadInt32()]);
       Base.RegisterGold();
       Base.RegisterWeight();
       Base.RegisterEssence();
