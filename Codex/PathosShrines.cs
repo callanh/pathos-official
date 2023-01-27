@@ -159,7 +159,7 @@ namespace Pathos
           B.Description = "Return a corpse back to life.";
           B.Cost = 750;
           B.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-          B.Apply.RaiseDead(Percent: 50, Corrupt: false, LoyalOnly: false);
+          B.Apply.RaiseDead(Percent: 50, Corrupt: null, LoyalOnly: false);
         });
       });
 
@@ -194,7 +194,7 @@ namespace Pathos
           B.Description = "Reanimate a corpse as a loyal revenant.";
           B.Cost = 500;
           B.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-          B.Apply.AnimateRevenants(Corrupt: false);
+          B.Apply.AnimateRevenants(Corrupt: null);
         });
 
         S.AddBoon("undead army", B =>

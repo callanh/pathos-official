@@ -23,7 +23,8 @@ namespace Pathos
         });
       }
 
-      proficient = AddQualification("p", "proficient", 0);
+      // TODO: unskilled = AddQualification("u", "unskilled", -1000);
+      proficient = AddQualification("p", "proficient", 0);   // +1000
       specialist = AddQualification("s", "specialist", 200); // +200
       expert = AddQualification("e", "expert", 500);         // +300
       master = AddQualification("m", "master", 1000);        // +500

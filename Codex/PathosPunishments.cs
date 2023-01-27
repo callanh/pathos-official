@@ -34,7 +34,7 @@ namespace Pathos
 
       ball__chain = AddPunishment("ball & chain", "A heavy iron ball is attached to you by a chain.", Glyphs.ball_and_chain_punishment, Sonics.shackle, P =>
       {
-        P.Impediment = true;
+        P.SetImpediment(SpeedMultiplier: 0.8F, AttackModifier: Modifier.Minus2, DefenceModifier: Modifier.Minus2);
         P.ReleaseLoot.AddKit(Chance.Always, Dice.Fixed(1), Items.heavy_iron_ball);
         P.ReleaseLoot.AddKit(Chance.Always, Dice.Fixed(1), Items.iron_chain);
       });

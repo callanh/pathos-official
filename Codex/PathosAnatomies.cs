@@ -35,18 +35,12 @@ namespace Pathos
       amorphous = AddAnatomy("amorphous", "NOT AMORPHOUS");
       mounted = AddAnatomy("mounted", "NOT MOUNTED");
 
-      Register.head = head;
       Register.mind = mind;
       Register.eyes = eyes;
       Register.ears = ears;
-      Register.voice = voice;
       Register.hands = hands;
       Register.limbs = limbs;
-      Register.feet = feet;
-      Register.thermal = thermal;
-      Register.blood = blood;
       Register.mounted = mounted;
-      Register.amorphous = amorphous;
     }
 #endif
 

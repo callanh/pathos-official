@@ -80,24 +80,20 @@ namespace Pathos
       {
         S.Description = null;
         S.ArmourCapDexterityModifier = 2;
-        S.ArmourSkilledSpeedPenalty = Rules.HeavyArmourSkilledSpeedPenalty;
-        S.ArmourUnskilledSpeedPenalty = Rules.HeavyArmourUnskilledSpeedPenalty;
+        S.ArmourSkilledSpeedPenalty = 0.25F;
+        S.ArmourUnskilledSpeedPenalty = 0.50F;
       });
 
       medium_armour = AddSkill(SkillCategory.Defensive, "medium armour", S =>
       {
         S.Description = null;
         S.ArmourCapDexterityModifier = 4;
-        S.ArmourSkilledSpeedPenalty = Rules.MediumArmourSkilledSpeedPenalty;
-        S.ArmourUnskilledSpeedPenalty = Rules.MediumArmourUnskilledSpeedPenalty;
+        S.ArmourUnskilledSpeedPenalty = 0.25F;
       });
 
       light_armour = AddSkill(SkillCategory.Defensive, "light armour", S =>
       {
         S.Description = null;
-        S.ArmourCapDexterityModifier = int.MaxValue;
-        S.ArmourSkilledSpeedPenalty = 0.0F;
-        S.ArmourUnskilledSpeedPenalty = 0.0F;
       });
 
       // offensive.

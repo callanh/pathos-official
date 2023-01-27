@@ -360,7 +360,7 @@ namespace Pathos
           Table.Add(1, A => A.Identify(All: true, Sanctity: null)); // identify all items in inventory.
           Table.Add(1, A => A.ApplyTransient(Properties.stunned, 1.d7() + 16));
           Table.Add(1, A => A.GainSkill(RandomPoints: false, Codex.Skills.heavy_armour));
-          Table.Add(1, A => A.AnimateObjects(Corrupt: false));
+          Table.Add(1, A => A.AnimateObjects(Corrupt: null));
           Table.Add(1, A => A.EnchantUp(Dice.One)); // enchant a random item.
           Table.Add(1, A => A.Energise(Dice.Zero, Modifier.FromRank(4))); // increase maximum mana.
           Table.Add(1, A => A.Heal(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.

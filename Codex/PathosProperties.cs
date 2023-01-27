@@ -16,6 +16,7 @@ namespace Pathos
     {
       var Glyphs = Codex.Glyphs;
       var Elements = Codex.Elements;
+      var Anatomies = Codex.Anatomies;
 
       Property AddProperty(string Name, Action<PropertyEditor> EditorAction)
       {
@@ -33,6 +34,7 @@ namespace Pathos
       {
         P.Description = "Your mere presence aggravates everyone in the dungeon.";
         P.Unwanted = true;
+        P.InspireAggression = true;
       });
 
       appraisal = AddProperty("appraisal", P =>
@@ -77,11 +79,13 @@ namespace Pathos
       cannibalism = AddProperty("cannibalism", P =>
       {
         P.Description = "The guilt-free practice of eating the flesh and organs of beings from your own race.";
+        P.IgnoreAffinity = true;
       });
 
       clairvoyance = AddProperty("clairvoyance", P =>
       {
         P.Description = "You have an awareness of other entities elsewhere in the dungeon.";
+        P.AlertingVision = true;
       });
 
       clarity = AddProperty("clarity", P =>
@@ -113,7 +117,7 @@ namespace Pathos
       dark_vision = AddProperty("dark vision", P =>
       {
         P.Description = "This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.";
-        P.ThermalVision = true;
+        P.NightVision = new Vision(Anatomies.thermal, Inv.Colour.Red.Opacity(0.50F));
       });
 
       deafness = AddProperty("deafness", P =>
@@ -143,7 +147,7 @@ namespace Pathos
       {
         P.Description = "Fainting from lack of food.";
         P.Unwanted = true;
-        P.Motionless = true;
+        P.MotionlessIndicationGlyph = Glyphs.fainting_property;
         P.UnconsciousIndicationText = "oOo";
         P.VisionPrevented = true;
         P.VisionImpairing = true;
@@ -198,6 +202,9 @@ namespace Pathos
         P.Description = "You are consumed by the urge to eat and know that you will never be fully satisfied.";
         P.Unwanted = true;
         P.IncreasedMetabolism = true;
+        P.CompromisedMetabolism = true;
+        P.TradeMultiplier = 2; // double buy price and half sell price.
+        P.AtWillNutritionCostMultiplier = 2; // double nutrition cost for at-will actions.
       });
 
       inebriation = AddProperty("inebriation", P => // or intoxication?
@@ -277,7 +284,7 @@ namespace Pathos
       {
         P.Description = "Your muscles are seized in position leaving you motionless and defenceless.";
         P.Unwanted = true;
-        P.Motionless = true;
+        P.MotionlessIndicationGlyph = Glyphs.paralysis_property;
       });
 
       petrifying = AddProperty("petrifying", P =>
@@ -328,6 +335,7 @@ namespace Pathos
         P.SetImmunityProperty(fear);
         P.Unwanted = true;
         P.VisionImpairing = true; // blinded by rage.
+        P.UncontrolledFury = true;
       });
 
       reflection = AddProperty("reflection", P =>
@@ -381,7 +389,7 @@ namespace Pathos
         P.Description = "You are asleep, resting peacefully. In a dungeon full of monsters.";
         P.ParityElement = Elements.sleep;
         P.Unwanted = true;
-        P.Motionless = true;
+        P.MotionlessIndicationGlyph = Glyphs.sleeping_property;
         P.UnconsciousIndicationText = "zZz";
         P.VisionPrevented = true;
         P.VisionImpairing = true;
@@ -444,6 +452,7 @@ namespace Pathos
       telepathy = AddProperty("telepathy", P =>
       {
         P.Description = "This allows you to detect the presence and location of minds but only when you cannot see.";
+        P.BlindVision = new Vision(Anatomies.mind, Inv.Colour.Blue.Opacity(0.50F));
       });
 
       teleportation = AddProperty("teleportation", P =>
@@ -479,6 +488,7 @@ namespace Pathos
       warning = AddProperty("warning", P =>
       {
         P.Description = "Gives you advance warning of nearby monsters and their approximate threat level.";
+        P.WarningVision = true;
       });
 
 #if DEBUG
@@ -494,16 +504,6 @@ namespace Pathos
 
       Register.Alias(vitality, "sickness resistance");
       Register.Alias(deflection, "protection");
-
-      // TODO: properties requiring further abstraction in the engine.
-      Register.aggravation = aggravation;
-      Register.cannibalism = cannibalism;
-      Register.clairvoyance = clairvoyance;
-      Register.hunger = hunger;
-      Register.paralysis = paralysis;
-      Register.rage = rage;
-      Register.telepathy = telepathy;
-      Register.warning = warning;
     }
 #endif
 

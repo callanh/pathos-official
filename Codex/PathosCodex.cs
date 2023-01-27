@@ -179,12 +179,12 @@ namespace Pathos
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
         A.RemoveCurse(Dice.One); // remove one curse.
-        A.RaiseDead(100, Corrupt: false, LoyalOnly: true); // raise one loyal companion from the dead.
+        A.RaiseDead(100, Corrupt: null, LoyalOnly: true); // raise one loyal companion from the dead.
       });
 
       Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
 
-      Manifest.Telekinesis.Set(Properties.telekinesis, Attributes.intelligence);
+      Manifest.Telekinesis.Set(Properties.telekinesis, Attributes.intelligence, NutritionCost: 5);
 
       Manifest.Trading.Set(Attributes.charisma, Skills.bartering);
 
@@ -634,9 +634,9 @@ namespace Pathos
         if (!Entity.Figure.Has(Codex.Anatomies.limbs) && Entity.Startup.Talents.Contains(Codex.Properties.jumping))
           Record($"Entity {Entity.Name} without limbs should not be able to jump.");
 
-        if (Entity.Figure.Has(Manifest.Anatomies.mounted) && Entity.Figure.MountSkill == null)
+        if (Entity.Figure.Has(Codex.Anatomies.mounted) && Entity.Figure.MountSkill == null)
           Record($"Entity {Entity.Name} that can be mounted is expected to have a mount skill.");
-        else if (!Entity.Figure.Has(Manifest.Anatomies.mounted) && Entity.Figure.MountSkill != null)
+        else if (!Entity.Figure.Has(Codex.Anatomies.mounted) && Entity.Figure.MountSkill != null)
           Record($"Entity {Entity.Name} that cannot be mounted is not expected to have a mount skill.");
 
         if ((Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill == null)
@@ -665,10 +665,10 @@ namespace Pathos
         if (Entity.IsHead && !Entity.Tail.Entity.IsTail)
           Record($"Entity head {Entity.Name} must have their tail {Entity.Tail.Entity.Name} declared as a tail.");
 
-        if (Entity.IsHead && Entity.Figure.Has(Manifest.Anatomies.mounted))
+        if (Entity.IsHead && Entity.Figure.Has(Codex.Anatomies.mounted))
           Record($"Entity {Entity.Name} is mountable but heads are not yet implemented in the engine as mounts (the tail gets detached).");
 
-        if (Entity.IsTail && Entity.Figure.Has(Manifest.Anatomies.mounted))
+        if (Entity.IsTail && Entity.Figure.Has(Codex.Anatomies.mounted))
           Record($"Entity {Entity.Name} is a tail and must not be set as mountable (riding a tail cannot be implemented).");
 
         if (Entity.IsTail && Entity.MayDropCorpse())
@@ -809,7 +809,7 @@ namespace Pathos
           if (Cavalry.RiderEntity.Size >= Cavalry.SteedEntity.Size)
             Record($"Horde {Horde.Name} cavalry rider size must be less than the steed size");
 
-          if (!Cavalry.SteedEntity.Figure.Has(Manifest.Anatomies.mounted))
+          if (!Cavalry.SteedEntity.Figure.Has(Codex.Anatomies.mounted))
             Record($"Horde {Horde.Name} cavalry steed {Cavalry.SteedEntity.Name} must be mountable");
         }
       }
@@ -1393,6 +1393,7 @@ namespace Pathos
       Base.Register<Horde>();
       Base.Register<Illumination>();
       Base.Register<Impact>();
+      Base.Register<Impediment>();
       Base.Register<Item>();
       Base.Register<Kind>();
       Base.Register<Kit>();
@@ -1441,6 +1442,7 @@ namespace Pathos
       Base.Register<Use>();
       Base.Register<Utility>();
       Base.Register<Versus>();
+      Base.Register<Vision>();
       Base.Register<Warning>();
       Base.Register<Weapon>();
       Base.Register<Workbench>();

@@ -571,8 +571,8 @@ namespace Pathos
           Use.Apply.Karma(ChangeType.Decrease, 1.d50() + 100); // costs 101-150 karma
           Use.Apply.WithSourceSanctity
           (
-            B => B.AnimateRevenants(Corrupt: false),
-            U => U.AnimateRevenants(Corrupt: true),
+            B => B.AnimateRevenants(Corrupt: null),
+            U => U.AnimateRevenants(Corrupt: Properties.rage),
             C => C.Backfire(F => F.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: null))
           );
           Use.Apply.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the wand.
@@ -780,7 +780,7 @@ namespace Pathos
                 Table.Add(10, A =>
                 {
                   A.CreateFixture(Codex.Features.pentagram);
-                  A.RaiseDead(Percent: 100, Corrupt: true, LoyalOnly: false);
+                  A.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false);
                   A.CreateEntity(1.d3(), Entities.ghost);
                 });
                 Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
@@ -8806,9 +8806,9 @@ namespace Pathos
             T => T.CreateEntity(1.d4(), Kinds.Undead.ToArray()),
             F => F.WithSourceSanctity
             (
-              B => B.RaiseDead(Percent: 100, Corrupt: false, LoyalOnly: false),
-              U => U.RaiseDead(Percent: 50, Corrupt: false, LoyalOnly: false),
-              C => C.RaiseDead(Percent: 100, Corrupt: true, LoyalOnly: false)
+              B => B.RaiseDead(Percent: 100, Corrupt: null, LoyalOnly: false),
+              U => U.RaiseDead(Percent: 50, Corrupt: null, LoyalOnly: false),
+              C => C.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false)
             )
           );
         });
@@ -9209,9 +9209,9 @@ namespace Pathos
         {
           Apply.WithSourceSanctity
           (
-            B => B.Capture(Polite: true, Expansive: true),
-            U => U.Capture(Polite: false, Expansive: true),
-            C => C.Capture(Polite: false, Expansive: false)
+            B => B.Capture(Polite: true, Expansive: true, Property: null),
+            U => U.Capture(Polite: false, Expansive: true, Properties.rage),
+            C => C.Capture(Polite: false, Expansive: false, Properties.rage)
           );
         }
 
@@ -9547,7 +9547,7 @@ namespace Pathos
               C =>
               {
                 C.Murder(MurderType.Allied, Strikes.death, Kinds.Living.ToArray());
-                C.AnimateRevenants(Corrupt: true);
+                C.AnimateRevenants(Corrupt: Properties.rage);
               }
             )
           );
@@ -10911,18 +10911,18 @@ namespace Pathos
           .SetAudibility(1);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Animate(Corrupt: false),
-            U => U.Animate(Corrupt: false),
-            C => C.Animate(Corrupt: true)
+            B => B.Animate(Corrupt: null),
+            U => U.Animate(Corrupt: null),
+            C => C.Animate(Corrupt: Properties.rage)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.AnimateObjects(Corrupt: false);
-          A.AnimateObjects(Corrupt: false);
-          A.AnimateObjects(Corrupt: false);
-          A.AnimateObjects(Corrupt: false);
-          A.AnimateObjects(Corrupt: false);
+          A.AnimateObjects(Corrupt: null);
+          A.AnimateObjects(Corrupt: null);
+          A.AnimateObjects(Corrupt: null);
+          A.AnimateObjects(Corrupt: null);
+          A.AnimateObjects(Corrupt: null);
         });
       });
 

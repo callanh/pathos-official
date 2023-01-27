@@ -3598,7 +3598,7 @@ namespace Pathos
           Hands: false,
           Limbs: false,
           Feet: false,
-          Thermal: false,
+          Thermal: true,
           Blood: false,
           Mounted: false,
           Amorphous: true
@@ -4740,7 +4740,7 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Thermal: false,
+          Thermal: true,
           Blood: false,
           Mounted: false,
           Amorphous: false
@@ -9691,7 +9691,7 @@ namespace Pathos
           Hands: false,
           Limbs: true,
           Feet: false,
-          Thermal: false,
+          Thermal: true,
           Blood: true,
           Mounted: true,
           Amorphous: false
@@ -14648,7 +14648,7 @@ namespace Pathos
           Hands: true,
           Limbs: true,
           Feet: true,
-          Thermal: false,
+          Thermal: true,
           Blood: false,
           Mounted: false,
           Amorphous: false

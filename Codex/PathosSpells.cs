@@ -112,33 +112,33 @@ namespace Pathos
           U =>
           {
             U.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            U.Apply.AnimateRevenants(Corrupt: true);
+            U.Apply.AnimateRevenants(Corrupt: Properties.rage);
           },
           // TODO: adept scaling of effects.
           P =>
           {
             P.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            P.Apply.AnimateRevenants(Corrupt: false);
+            P.Apply.AnimateRevenants(Corrupt: null);
           },
           S =>
           {
             S.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            S.Apply.AnimateRevenants(Corrupt: false);
+            S.Apply.AnimateRevenants(Corrupt: null);
           },
           E =>
           {
             E.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            E.Apply.AnimateRevenants(Corrupt: false);
+            E.Apply.AnimateRevenants(Corrupt: null);
           },
           M =>
           {
             M.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            M.Apply.AnimateRevenants(Corrupt: false);
+            M.Apply.AnimateRevenants(Corrupt: null);
           },
           C =>
           {
             C.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            C.Apply.AnimateRevenants(Corrupt: false);
+            C.Apply.AnimateRevenants(Corrupt: null);
           }
         );
       });
@@ -153,37 +153,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.magic, 1.d4() + 1)
              .SetObjects();
-            U.Apply.AnimateObjects(Corrupt: true);
+            U.Apply.AnimateObjects(Corrupt: Properties.rage);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.magic, 1.d4() + 3)
              .SetObjects();
-            P.Apply.AnimateObjects(Corrupt: false);
+            P.Apply.AnimateObjects(Corrupt: null);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.magic, 1.d4() + 5)
              .SetObjects();
-            S.Apply.AnimateObjects(Corrupt: false);
+            S.Apply.AnimateObjects(Corrupt: null);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.magic, 1.d4() + 7)
              .SetObjects();
-            E.Apply.AnimateObjects(Corrupt: false);
+            E.Apply.AnimateObjects(Corrupt: null);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.magic, 1.d4() + 9)
              .SetObjects();
-            M.Apply.AnimateObjects(Corrupt: false);
+            M.Apply.AnimateObjects(Corrupt: null);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.magic, 1.d4() + 11)
              .SetObjects();
-            C.Apply.AnimateObjects(Corrupt: false);
+            C.Apply.AnimateObjects(Corrupt: null);
           }
         );
       });
@@ -2284,32 +2284,32 @@ namespace Pathos
           U =>
           {
             U.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            U.Apply.RaiseDead(Percent: 50, Corrupt: true, LoyalOnly: false);
+            U.Apply.RaiseDead(Percent: 50, Corrupt: Properties.rage, LoyalOnly: false);
           },
           P =>
           {
             P.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            P.Apply.RaiseDead(Percent: 20, Corrupt: false, LoyalOnly: false);
+            P.Apply.RaiseDead(Percent: 20, Corrupt: null, LoyalOnly: false);
           },
           S =>
           {
             S.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            S.Apply.RaiseDead(Percent: 40, Corrupt: false, LoyalOnly: false);
+            S.Apply.RaiseDead(Percent: 40, Corrupt: null, LoyalOnly: false);
           },
           E =>
           {
             E.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            E.Apply.RaiseDead(Percent: 60, Corrupt: false, LoyalOnly: false);
+            E.Apply.RaiseDead(Percent: 60, Corrupt: null, LoyalOnly: false);
           },
           M =>
           {
             M.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            M.Apply.RaiseDead(Percent: 80, Corrupt: false, LoyalOnly: false);
+            M.Apply.RaiseDead(Percent: 80, Corrupt: null, LoyalOnly: false);
           },
           C =>
           {
             C.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-            C.Apply.RaiseDead(Percent: 100, Corrupt: false, LoyalOnly: false);
+            C.Apply.RaiseDead(Percent: 100, Corrupt: null, LoyalOnly: false);
           }
         );
       });
