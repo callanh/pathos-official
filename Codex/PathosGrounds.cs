@@ -126,7 +126,7 @@ namespace Pathos
 
       ice = AddGround("ice", Materials.ice, Glyphs.ice, G =>
       {
-        G.Slippery = true;
+        G.SetSlippery(Codex.Anatomies.limbs, Codex.Attributes.dexterity, Sonics.slip);
         G.SetBlock(Codex.Blocks.stone_boulder);
 
         G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: null, ToGround: water, Locality.Square));

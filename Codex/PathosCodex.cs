@@ -1115,7 +1115,7 @@ namespace Pathos
       UsedSonicSet.AddRange(Manifest.Features.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Features.List.SelectMany(E => E.Uses.Select(U => U.Sonic)).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Portals.List.Select(E => E.Sonic).ExceptNull());
-      UsedSonicSet.AddRange(Manifest.Grounds.List.Select(E => E.Sunken?.Sonic).ExceptNull());
+      UsedSonicSet.AddRange(Manifest.Grounds.List.SelectMany(E => new[] { E.Slippery?.Sonic, E.Sunken?.Sonic }).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Punishments.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Afflictions.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Blocks.List.Select(E => E.MoveSonic).Union(Manifest.Blocks.List.SelectMany(B => B.Breaks).Select(B => B.Sonic)).ExceptNull());
@@ -1143,7 +1143,6 @@ namespace Pathos
       UsedSonicSet.Add(Manifest.Sonics.Death);
       UsedSonicSet.Add(Manifest.Sonics.LowHealth);
       UsedSonicSet.Add(Manifest.Sonics.Warp);
-      UsedSonicSet.Add(Manifest.Sonics.Slip);
       UsedSonicSet.Add(Manifest.Sonics.Hit);
       UsedSonicSet.Add(Manifest.Sonics.Miss);
 
@@ -1424,7 +1423,9 @@ namespace Pathos
       Base.Register<Shrine>();
       Base.Register<Size>();
       Base.Register<Skill>();
+      Base.Register<Slippery>();
       Base.Register<Slot>();
+      Base.Register<SlotRow>();
       Base.Register<Sonic>().Ignore("Battery"); // expected to be null.
       Base.Register<Spawn>();
       Base.Register<Special>();

@@ -3,7 +3,7 @@
     <AssemblyName>PathosOfficial</AssemblyName>
     <RootNamespace>Pathos</RootNamespace>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net48;netstandard20</TargetFrameworks>
+    <TargetFrameworks>netstandard20;net48;net60</TargetFrameworks>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 

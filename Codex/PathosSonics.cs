@@ -28,7 +28,6 @@ namespace Pathos
       Register.Death = death;
       Register.LowHealth = low_health;
       Register.Warp = warping;
-      Register.Slip = slip;
       Register.Hit = hit;
       Register.Miss = miss;
     }

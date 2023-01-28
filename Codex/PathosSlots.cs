@@ -156,32 +156,30 @@ namespace Pathos
         { ItemType.Rock, quiver },
       };
 
-      // TODO: Vanity Slot Grid declaration.
+      Register.VanitySlotRowArray = new SlotRow[6]
+      {
+        new SlotRow(eyewear, helmet, earwear),
+        new SlotRow(cloak, shirt, amulet),
+        new SlotRow(quiver, suit, light),
+        new SlotRow(main_hand, barding, left_ring),
+        new SlotRow(offhand, gloves, right_ring),
+        new SlotRow(purse, boots, keys),
+      };
 
       // TODO: slots requiring further abstraction in the engine.
       Register.both_hands = both_hands;
       Register.main_hand = main_hand;
       Register.offhand = offhand;
       Register.quiver = quiver;
-      Register.light = light;
-      Register.helmet = helmet;
-      Register.eyewear = eyewear;
-      Register.earwear = earwear;
-      Register.amulet = amulet;
-      Register.cloak = cloak;
-      Register.shirt = shirt;
-      Register.suit = suit;
-      Register.barding = barding;
       Register.gloves = gloves;
       Register.keys = keys;
       Register.left_ring = left_ring;
       Register.right_ring = right_ring;
-      Register.boots = boots;
       Register.purse = purse;
     }
 #endif
 
-  public readonly Slot both_hands;
+    public readonly Slot both_hands;
     public readonly Slot main_hand;
     public readonly Slot offhand;
     public readonly Slot quiver;

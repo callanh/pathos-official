@@ -48,7 +48,7 @@ namespace Pathos
         A.Interrupt = true;
       });
 
-      weak = AddStatus("weak", Inv.Colour.DarkOrange, 0, A =>
+      weak = AddStatus("weak", Inv.Colour.DarkOrange, 1, A =>
       {
         A.StrengthModifier = -1;
         A.AbleAtWill = false;
@@ -56,7 +56,7 @@ namespace Pathos
         A.Interrupt = true;
       });
 
-      starving = AddStatus("starving", Inv.Colour.DarkRed, -1, A =>
+      starving = AddStatus("starving", Inv.Colour.DarkRed, 0, A =>
       {
         A.StrengthModifier = -1;
         A.SpeedModifier = +0.25F; // starving is slight speed bonus.
