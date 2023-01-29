@@ -43,7 +43,7 @@ namespace Pathos
 
       hungry = AddStatus("hungry", Inv.Colour.DarkYellow, 50, A =>
       {
-        A.AbleAtWill = false;
+        A.UnableAtWill = true;
         A.PriceMultiplier = 2;
         A.Interrupt = true;
       });
@@ -51,7 +51,7 @@ namespace Pathos
       weak = AddStatus("weak", Inv.Colour.DarkOrange, 1, A =>
       {
         A.StrengthModifier = -1;
-        A.AbleAtWill = false;
+        A.UnableAtWill = true;
         A.PriceMultiplier = 3;
         A.Interrupt = true;
       });
@@ -60,7 +60,7 @@ namespace Pathos
       {
         A.StrengthModifier = -1;
         A.SpeedModifier = +0.25F; // starving is slight speed bonus.
-        A.AbleAtWill = false;
+        A.UnableAtWill = true;
         A.RecoveryRateOverride = Rules.StarvationRecoveryRate;
         A.PriceMultiplier = 4;
         A.Interrupt = true;
