@@ -70,6 +70,43 @@ namespace Pathos
         S.DefenceModifier = Modifier.Plus1;
       });
 
+      this.drunkard = AddSpecial("drunkard", S =>
+      {
+        S.Description = "The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.";
+        S.Glyph = Glyphs.potion_stock;
+
+        S.Startup.SetTalent(Properties.inebriation);
+        S.Startup.SetPunishment(Codex.Punishments.thirst);
+      });
+
+      this.glass = AddSpecial("glass", S =>
+      {
+        S.Description = "Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.";
+        S.Glyph = Glyphs.glass_golem;
+
+        S.Diet = Diets.geophagy;
+        S.LifeAdvancement.Set(Dice.Zero - 2);
+        S.ManaAdvancement.Set(Dice.Zero + 2);
+        S.DefenceModifier = Modifier.Minus2;
+        S.Startup.SetTalent(Properties.reflection);
+        S.SetMaskFigure().Set
+        (
+          Material: Materials.glass,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+      });
+
       this.midget = AddSpecial("midget", S =>
       {
         S.Description = "Being unusually short and slight for your kind, you are more nimble but are not as effective in combat.";
@@ -115,6 +152,14 @@ namespace Pathos
         S.Startup.SetTalent(Properties.telepathy, Properties.telekinesis, Properties.clairvoyance, Properties.hunger);
       });
 
+      this.quantum = AddSpecial("quantum", S =>
+      {
+        S.Description = "Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.";
+        S.Glyph = Glyphs.quantum_mechanic;
+
+        S.Startup.SetTalent(Properties.teleportation);
+      });
+
       this.scholar = AddSpecial("scholar", S =>
       {
         S.Description = "Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.";
@@ -132,7 +177,6 @@ namespace Pathos
         S.Description = "Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.";
         S.Glyph = Glyphs.skeleton;
 
-        S.Material = Materials.bone;
         S.Diet = Diets.inediate;
         S.DefenceBias.Bludgeon = Modifier.Minus2;
         S.DefenceBias.Pierce = Modifier.Plus2;
@@ -212,7 +256,6 @@ namespace Pathos
       // deaf/blind/mute (massive challenge mode, but would it be fun for _anyone_?)
       // imbued (+mana, -life?)
       // mutant: pig, cat, frog, turtle, rat, bird.
-      // psychic: clairvoyance, hunger? 
       // shapeshifter (doppelganger power at will)
       // astral (too close to Echo?)
       // zealot: +karma, beatitude, -what?
@@ -220,11 +263,14 @@ namespace Pathos
 #endif
 
     public readonly Special colossus;
+    public readonly Special drunkard;
     public readonly Special fugitive;
+    public readonly Special glass;
     public readonly Special midget;
     public readonly Special noble;
     public readonly Special protagonist;
     public readonly Special psychic;
+    public readonly Special quantum;
     public readonly Special scholar;
     public readonly Special skeleton;
     public readonly Special vampire;
