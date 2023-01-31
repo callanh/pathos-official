@@ -164,7 +164,7 @@ namespace Pathos
         H.AddMinion(Entities.kobold_lord, Dice.One);
         H.AddMinion(Entities.kobold_shaman, Dice.One);
         H.AddMinion(Entities.large_kobold, Dice.One);
-        H.AddMinion(Entities.kobold, 1.d3());
+        H.AddMinion(Entities.kobold_scout, 1.d3());
         // NOTE: rock_kobold, swamp_kobold are outside of kobold 'society' and would have their own hordes?
       });
 

@@ -391,9 +391,10 @@ jelly,,orange jelly,,8,1,10,100,medium,vegetable,2500,2.0,15,attack,,8,4,12,1,2,
 jelly,,rancid jelly,,17,1,19,338,medium,vegetable,2500,2.0,19,attack,,10,4,13,1,2,1
 jelly,,spotted jelly,,6,1,7,42,medium,vegetable,500,1.5,15,attack,,6,4,11,1,2,1
 jelly,,yellow jelly,,19,1,21,510,medium,vegetable,2500,2.0,20,attack,,8,4,12,1,2,1
-kobold,kobold,kobold,,0,1,1,2,small,animal,4000,3.7,10,attack,,7,15,9,8,7,8
+kobold,kobold,kobold,,0,0,0,0,small,animal,4000,4.0,10,attack,BASE,10,10,10,10,10,10
 kobold,kobold,kobold king,,16,1,17,394,small,animal,5500,3.3,13,attack,,12,16,12,13,11,12
 kobold,kobold,kobold lord,,12,1,13,190,small,animal,5000,3.7,12,attack,,9,16,10,9,8,9
+kobold,kobold,kobold scout,,0,1,1,2,small,animal,4000,3.7,10,attack,,7,15,9,8,7,8
 kobold,kobold,kobold shaman,,2,1,4,17,small,animal,4500,3.7,13,attack,,4,15,7,14,14,10
 kobold,kobold,kobold warrior,,13,1,14,205,small,animal,4500,3.0,11,attack,,8,16,10,8,7,8
 kobold,kobold,large kobold,,1,1,2,7,small,animal,4500,3.0,10,attack,,9,15,10,7,7,6
@@ -552,6 +553,7 @@ orc,orc,orc shaman,,3,1,5,23,medium,animal,15000,3.0,13,attack,,14,15,13,12,12,8
 orc,orc,orc warrior,,12,1,14,641,medium,animal,17000,3.3,9,attack,,18,12,16,7,8,6
 orc,orc,snow orc,,11,1,13,183,medium,animal,16000,3.7,11,attack,,17,12,16,8,8,10
 orc,orc,war orc,,16,1,18,726,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
+plasmoid,plasmoid,plasmoid,,0,0,0,0,medium,animal,12000,4.5,10,attack,BASE,10,10,10,10,10,10
 pudding,,black pudding,,20,1,23,674,large,vegetable,9000,2.0,22,attack,,16,5,16,1,6,1
 pudding,,brown pudding,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",6,1,7,45,medium,vegetable,5000,2.0,15,attack,,14,5,14,1,5,1
 pudding,,giant shoggoth,,36,1,38,1935,huge,vegetable,200000,5.0,33,attack,,24,4,22,4,8,3

@@ -131,15 +131,15 @@ namespace Pathos
         /* 40 */ 2000000
       });
 
-      Manifest.Blinking.Set(Properties.blinking, Attributes.intelligence, Sonics.blink, NutritionCost: 5);
+      Manifest.Blinking.Set(Properties.blinking, new Requirement(Attributes.intelligence, 3), Sonics.blink, NutritionCost: 5);
 
       Manifest.Casting.Set(Attributes.intelligence, new[] { Anatomies.mind, Anatomies.voice });
 
-      Manifest.Jumping.Set(Properties.jumping, Attributes.strength, Sonics.jump, NutritionCost: 5);
+      Manifest.Jumping.Set(Properties.jumping, new Requirement(Attributes.strength, 3), Sonics.jump, NutritionCost: 5);
 
-      Manifest.Sliding.Set(Anatomies.amorphous, Attributes.constitution, Sonics.slime, NutritionCost: 5);
+      Manifest.Sliding.Set(Anatomies.amorphous, new Requirement(Attributes.constitution, 3), Sonics.slime, NutritionCost: 5);
 
-      Manifest.Kicking.Set(Attributes.strength, Elements.physical, Sonics.kick, NutritionCost: 1);
+      Manifest.Kicking.Set(new Requirement(Attributes.strength, 3), Elements.physical, Sonics.kick, NutritionCost: 1);
 
       Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
@@ -184,7 +184,7 @@ namespace Pathos
 
       Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
 
-      Manifest.Telekinesis.Set(Properties.telekinesis, Attributes.intelligence, NutritionCost: 5);
+      Manifest.Telekinesis.Set(Properties.telekinesis, new Requirement(Attributes.intelligence, 3), NutritionCost: 5);
 
       Manifest.Trading.Set(Attributes.charisma, Skills.bartering);
 
@@ -1414,6 +1414,7 @@ namespace Pathos
       Base.Register<Recipe>();
       Base.Register<Recruitment>();
       Base.Register<Retaliation>();
+      Base.Register<Requirement>();
       Base.Register<Rumour>();
       Base.Register<Sanctity>();
       Base.Register<School>();

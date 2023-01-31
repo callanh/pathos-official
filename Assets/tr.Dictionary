@@ -1525,6 +1525,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,kobold kralı
 EntityName,kobold lord,kobold lordu
 EntityName,kobold mummy,kobold mumya
+EntityName,kobold scout,
 EntityName,kobold shaman,kobold şaman
 EntityName,kobold warrior,kobold savaşçı
 EntityName,kobold zombie,kobold zombi
@@ -1655,6 +1656,7 @@ EntityName,pit viper,çukur engereği
 EntityName,pixie,peri
 EntityName,plains centaur,vadi sentoru
 EntityName,Planetar,Gezegencil
+EntityName,plasmoid,
 EntityName,plastic golem,plastik golem
 EntityName,pony,midilli
 EntityName,proudfoot,sağlambasan
@@ -3031,6 +3033,7 @@ KindName,mummy,mumya
 KindName,naga,naga
 KindName,ogre,ogre
 KindName,orc,ork
+KindName,plasmoid,
 KindName,pudding,puding
 KindName,quadruped,dört bacaklı
 KindName,rodent,kemirgen
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,
 RaceName,orc//female,ork
 RaceName,orc//male,ork
 RaceName,orc//non-binary,ork
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,
 RaceName,satyr//male,
 RaceName,satyr//non-binary,

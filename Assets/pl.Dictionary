@@ -1525,6 +1525,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,król koboldów
 EntityName,kobold lord,lord koboldów
 EntityName,kobold mummy,mumia kobolda
+EntityName,kobold scout,
 EntityName,kobold shaman,kobold szaman
 EntityName,kobold warrior,kobold wojownik
 EntityName,kobold zombie,kobold zombie
@@ -1655,6 +1656,7 @@ EntityName,pit viper,żmija
 EntityName,pixie,pixie
 EntityName,plains centaur,centaur nizinny
 EntityName,Planetar,planetar
+EntityName,plasmoid,
 EntityName,plastic golem,plastikowy golem
 EntityName,pony,kucyk
 EntityName,proudfoot,dumna stopa
@@ -3031,6 +3033,7 @@ KindName,mummy,mumia
 KindName,naga,naga
 KindName,ogre,ogr
 KindName,orc,ork
+KindName,plasmoid,
 KindName,pudding,pudding
 KindName,quadruped,czworonóg
 KindName,rodent,gryzoń
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,ogr
 RaceName,orc//female,ork
 RaceName,orc//male,ork
 RaceName,orc//non-binary,ork
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,satyr
 RaceName,satyr//male,satyr
 RaceName,satyr//non-binary,satyr

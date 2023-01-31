@@ -1525,6 +1525,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,koboldkirály
 EntityName,kobold lord,koboldlord
 EntityName,kobold mummy,koboldmúmia
+EntityName,kobold scout,
 EntityName,kobold shaman,koboldsámán
 EntityName,kobold warrior,koboldharcos
 EntityName,kobold zombie,zombikobold
@@ -1655,6 +1656,7 @@ EntityName,pit viper,mangrovevipera
 EntityName,pixie,manó
 EntityName,plains centaur,alföldi kentaur
 EntityName,Planetar,Plantear
+EntityName,plasmoid,
 EntityName,plastic golem,műanyaggólem
 EntityName,pony,póni
 EntityName,proudfoot,büszkeláb
@@ -3031,6 +3033,7 @@ KindName,mummy,múmia
 KindName,naga,naga
 KindName,ogre,ogre
 KindName,orc,ork
+KindName,plasmoid,
 KindName,pudding,puding
 KindName,quadruped,négylábú
 KindName,rodent,rágcsáló
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,ogre
 RaceName,orc//female,ork
 RaceName,orc//male,ork
 RaceName,orc//non-binary,ork
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,szatír
 RaceName,satyr//male,szatír
 RaceName,satyr//non-binary,szatír

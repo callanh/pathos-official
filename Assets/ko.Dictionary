@@ -1525,6 +1525,7 @@ EntityName,kobold,코볼트
 EntityName,kobold king,코볼트 왕
 EntityName,kobold lord,코볼트 군주
 EntityName,kobold mummy,코볼트 미라
+EntityName,kobold scout,
 EntityName,kobold shaman,코볼트 주술사
 EntityName,kobold warrior,코볼트 전사
 EntityName,kobold zombie,코볼트 좀비
@@ -1655,6 +1656,7 @@ EntityName,pit viper,구덩이 살모사
 EntityName,pixie,픽시
 EntityName,plains centaur,평원 켄타우로스
 EntityName,Planetar,플레네타
+EntityName,plasmoid,
 EntityName,plastic golem,플라스틱 골렘
 EntityName,pony,조랑말
 EntityName,proudfoot,프라우드풋
@@ -3031,6 +3033,7 @@ KindName,mummy,미라
 KindName,naga,나가
 KindName,ogre,오우거
 KindName,orc,오크
+KindName,plasmoid,
 KindName,pudding,푸딩
 KindName,quadruped,네발짐승
 KindName,rodent,설치류
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,오우거
 RaceName,orc//female,오크
 RaceName,orc//male,오크
 RaceName,orc//non-binary,오크
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,사티로스
 RaceName,satyr//male,사티로스
 RaceName,satyr//non-binary,사티로스

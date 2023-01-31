@@ -1525,6 +1525,7 @@ EntityName,kobold,コボルト
 EntityName,kobold king,コボルトの王
 EntityName,kobold lord,コボルトの貴族
 EntityName,kobold mummy,コボルトのミイラ
+EntityName,kobold scout,
 EntityName,kobold shaman,コボルトの呪術師
 EntityName,kobold warrior,コボルトの戦士
 EntityName,kobold zombie,コボルトのゾンビ
@@ -1655,6 +1656,7 @@ EntityName,pit viper,ピットバイパー
 EntityName,pixie,ピクシー
 EntityName,plains centaur,平原のケンタウルス
 EntityName,Planetar,プラネター
+EntityName,plasmoid,
 EntityName,plastic golem,プラスチックのゴーレム
 EntityName,pony,仔馬
 EntityName,proudfoot,ホビット
@@ -3031,6 +3033,7 @@ KindName,mummy,ミイラ
 KindName,naga,ナーガ
 KindName,ogre,オーガ
 KindName,orc,オーク
+KindName,plasmoid,
 KindName,pudding,プリン
 KindName,quadruped,四足獣
 KindName,rodent,齧歯類
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,オーガ
 RaceName,orc//female,オーク
 RaceName,orc//male,オーク
 RaceName,orc//non-binary,オーク
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,サテュロス
 RaceName,satyr//male,サテュロス
 RaceName,satyr//non-binary,サテュロス

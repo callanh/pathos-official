@@ -1525,6 +1525,7 @@ EntityName,kobold,coboldo
 EntityName,kobold king,re coboldo
 EntityName,kobold lord,signore coboldo
 EntityName,kobold mummy,mummmia coboldo
+EntityName,kobold scout,
 EntityName,kobold shaman,sciamano coboldo
 EntityName,kobold warrior,guerriero coboldo
 EntityName,kobold zombie,zombi coboldo
@@ -1655,6 +1656,7 @@ EntityName,pit viper,vipera
 EntityName,pixie,folletto
 EntityName,plains centaur,centauro delle pianure
 EntityName,Planetar,Planetar
+EntityName,plasmoid,
 EntityName,plastic golem,golem di plastica
 EntityName,pony,pony
 EntityName,proudfoot,piede orgoglioso
@@ -3031,6 +3033,7 @@ KindName,mummy,mummia
 KindName,naga,naga
 KindName,ogre,ogre
 KindName,orc,orco
+KindName,plasmoid,
 KindName,pudding,melma
 KindName,quadruped,quadrupede
 KindName,rodent,roditore
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,ogre
 RaceName,orc//female,orchessa
 RaceName,orc//male,orco
 RaceName,orc//non-binary,orco
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,satira
 RaceName,satyr//male,satiro
 RaceName,satyr//non-binary,satiro

@@ -1525,6 +1525,7 @@ EntityName,kobold,狗头人
 EntityName,kobold king,狗头人之王
 EntityName,kobold lord,狗头人君主
 EntityName,kobold mummy,狗头人木乃伊
+EntityName,kobold scout,
 EntityName,kobold shaman,狗头人萨满
 EntityName,kobold warrior,狗头人战士
 EntityName,kobold zombie,狗头人僵尸
@@ -1655,6 +1656,7 @@ EntityName,pit viper,颊窝毒蛇
 EntityName,pixie,仙子
 EntityName,plains centaur,平原半人马
 EntityName,Planetar,异界神侍
+EntityName,plasmoid,
 EntityName,plastic golem,塑料傀儡
 EntityName,pony,小马
 EntityName,proudfoot,普劳德富特
@@ -3031,6 +3033,7 @@ KindName,mummy,木乃伊
 KindName,naga,娜迦
 KindName,ogre,食人魔
 KindName,orc,兽人
+KindName,plasmoid,
 KindName,pudding,凝胶
 KindName,quadruped,四足动物
 KindName,rodent,啮齿动物
@@ -4161,6 +4164,9 @@ RaceName,ogre//non-binary,食人魔
 RaceName,orc//female,兽人
 RaceName,orc//male,兽人
 RaceName,orc//non-binary,兽人
+RaceName,plasmoid//female,
+RaceName,plasmoid//male,
+RaceName,plasmoid//non-binary,
 RaceName,satyr//female,山羊人
 RaceName,satyr//male,山羊人
 RaceName,satyr//non-binary,山羊人

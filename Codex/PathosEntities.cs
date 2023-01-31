@@ -623,6 +623,48 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
+      kobold = AddBaseEntity(Kinds.kobold, Races.kobold, "kobold", E =>
+      {
+        E.Description = null;
+        E.Glyph = Glyphs.kobold;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S4_0;
+        E.Size = Size.Small;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(4000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1, Dice.One);
+        E.ManaAdvancement.Set(1, Dice.One);
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 18, DEX: 24, CON: 18, INT: 20, WIS: 20, CHA: 18);
+        E.SetGender(Genders.male, Genders.female);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetTalent(Properties.dark_vision);
+        E.Startup.SetResistance(Elements.poison);
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.Always);
+      });
+
       lizardman = AddBaseEntity(Kinds.lizard, Races.lizardman, "lizardman", E =>
       {
         E.Description = "Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.";
@@ -653,7 +695,7 @@ namespace Pathos
           Mounted: false,
           Amorphous: false
         );
-        E.LifeAdvancement.Set(1, Dice.One);
+        E.LifeAdvancement.Set(2, Dice.One);
         E.ManaAdvancement.Set(1, Dice.Zero);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 22, DEX: 18, CON: 24, INT: 16, WIS: 16, CHA: 16);
@@ -695,7 +737,7 @@ namespace Pathos
           Mounted: false,
           Amorphous: false
         );
-        E.LifeAdvancement.Set(1, Dice.One);
+        E.LifeAdvancement.Set(2, 1.d2());
         E.ManaAdvancement.Set(1, Dice.One);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 25, DEX: 18, CON: 25, INT: 18, WIS: 18, CHA: 16);
@@ -704,6 +746,47 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.poison);
+        E.SetCorpse(Chance.Always);
+      });
+
+      plasmoid = AddBaseEntity(Kinds.plasmoid, Races.plasmoid, "plasmoid", E =>
+      {
+        E.Description = null;
+        E.Glyph = Glyphs.plasmoid;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 10, P: +1, S: +1, B: -1);
+        E.SetDiet(Diets.organivore);
+        E.Speed = Speed.S4_5;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(12000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: true
+        );
+        E.LifeAdvancement.Set(4, 1.d2());
+        E.ManaAdvancement.Set(1, Dice.One);
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 15, DEX: 15, CON: 25, INT: 25, WIS: 20, CHA: 20);
+        E.SetGender(Genders.male, Genders.female);
+        E.Chemistry.SetWeakness(Elements.cold, Elements.fire, Elements.shock);
+        E.Startup.SetTalent(Properties.slippery);
+        E.Startup.SetResistance(Elements.acid, Elements.poison);
         E.SetCorpse(Chance.Always);
       });
 
@@ -738,7 +821,7 @@ namespace Pathos
           Amorphous: false
         );
         E.LifeAdvancement.Set(1, 1.d2());
-        E.ManaAdvancement.Set(1, 1.d2());
+        E.ManaAdvancement.Set(2, 1.d2());
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 18, DEX: 18, CON: 18, INT: 22, WIS: 20, CHA: 24);
         E.SetGender(Genders.male, Genders.female);
@@ -20150,9 +20233,9 @@ namespace Pathos
       #endregion
 
       #region kobold.
-      kobold = AddEntity(Kinds.kobold, Races.kobold, "kobold", E =>
+      kobold_scout = AddEntity(Kinds.kobold, Races.kobold, "kobold scout", E =>
       {
-        E.Glyph = Glyphs.kobold;
+        E.Glyph = Glyphs.kobold_scout;
         E.Sonic = Sonics.cackle;
         E.Level = 0;
         E.Challenge = 2;
@@ -20243,7 +20326,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
           A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
-          A.Apply.SummonEntity(1.d4() + 1, kobold);
+          A.Apply.SummonEntity(1.d4() + 1, kobold_scout);
         });
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -34557,6 +34640,7 @@ namespace Pathos
     public readonly Entity kirin;
     public readonly Entity kitten;
     public readonly Entity kobold;
+    public readonly Entity kobold_scout;
     public readonly Entity kobold_king;
     public readonly Entity kobold_lord;
     public readonly Entity kobold_mummy;
@@ -34680,6 +34764,7 @@ namespace Pathos
     public readonly Entity Pestilence;
     public readonly Entity phase_spider;
     public readonly Entity phase_worm;
+    public readonly Entity plasmoid;
     public readonly Entity pig;
     public readonly Entity pile_of_killer_coins;
     public readonly Entity piranha;

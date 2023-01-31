@@ -81,6 +81,7 @@ namespace Pathos
       naga = AddLivingKind("naga");
       ogre = AddLivingKind("ogre");
       orc = AddLivingKind("orc");
+      plasmoid = AddLivingKind("plasmoid");
       pudding = AddLivingKind("pudding");
       quadruped = AddLivingKind("quadruped");
       rodent = AddLivingKind("rodent");
@@ -149,6 +150,7 @@ namespace Pathos
     public readonly Kind naga;
     public readonly Kind ogre;
     public readonly Kind orc;
+    public readonly Kind plasmoid;
     public readonly Kind pudding;
     public readonly Kind quadruped;
     public readonly Kind rodent;

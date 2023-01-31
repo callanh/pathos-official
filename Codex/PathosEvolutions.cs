@@ -160,7 +160,7 @@ namespace Pathos
 
       AddEvolution(Entities.imp, Entities.blood_imp);
 
-      AddEvolution(Entities.kobold, Entities.large_kobold, Entities.kobold_lord, Entities.kobold_king);
+      AddEvolution(Entities.kobold_scout, Entities.large_kobold, Entities.kobold_lord, Entities.kobold_king);
 
       AddEvolution(Entities.lich, Entities.demilich, Entities.master_lich, Entities.archlich);
 

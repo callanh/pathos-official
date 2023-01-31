@@ -41,6 +41,7 @@ namespace Pathos
       nymph = AddRace("nymph");
       ogre = AddRace("ogre");
       orc = AddRace("orc");
+      plasmoid = AddRace("plasmoid");
       satyr = AddRace("satyr");
       troll = AddRace("troll");
       unicorn = AddRace("unicorn");
@@ -67,6 +68,7 @@ namespace Pathos
     public readonly Race nymph;
     public readonly Race ogre;
     public readonly Race orc;
+    public readonly Race plasmoid;
     public readonly Race satyr;
     public readonly Race troll;
     public readonly Race unicorn;

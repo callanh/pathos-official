@@ -1294,6 +1294,7 @@ namespace Pathos
     public readonly Glyph knife;
     public readonly Glyph knock_spell;
     public readonly Glyph kobold;
+    public readonly Glyph kobold_scout;
     public readonly Glyph kobold_king;
     public readonly Glyph kobold_lord;
     public readonly Glyph kobold_mummy;
@@ -1553,6 +1554,7 @@ namespace Pathos
     public readonly Glyph pixie;
     public readonly Glyph plains_centaur;
     public readonly Glyph Planetar;
+    public readonly Glyph plasmoid;
     public readonly Glyph plastic_golem;
     public readonly Glyph plate_mail;
     public readonly Glyph poison_beam_backward_slant;
