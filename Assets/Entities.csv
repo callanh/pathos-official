@@ -188,13 +188,13 @@ dragon,,young shimmering dragon,,17,2,19,409,large,animal,100000,5.0,23,attack,,
 dragon,,young silver dragon,,17,2,20,564,large,animal,100000,5.0,21,attack,GUARDIAN,21,12,19,14,13,17
 dragon,,young white dragon,,12,2,13,198,large,animal,100000,5.0,20,attack,,16,12,16,7,12,13
 dragon,,young yellow dragon,,12,2,15,310,large,animal,100000,5.0,20,attack,,17,12,16,16,14,17
-dwarf,dwarf,duergar,,11,1,13,224,medium,animal,16000,2.5,12,attack,,12,12,11,12,11,11
-dwarf,dwarf,dwarf,"Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.",0,0,0,0,medium,animal,15000,3.7,10,attack,BASE,10,10,10,10,10,10
-dwarf,dwarf,dwarf king,,20,1,21,668,medium,animal,16000,2.5,13,attack,,18,16,14,12,12,16
-dwarf,dwarf,dwarf lord,,14,3,16,257,medium,animal,15500,3.0,11,attack,,16,12,11,12,11,13
-dwarf,dwarf,dwarf thief,,8,1,10,78,medium,animal,13000,3.7,10,attack,,14,16,8,11,8,10
-dwarf,dwarf,dwarf warrior,,11,1,13,204,medium,animal,15000,3.3,12,attack,,16,11,12,8,10,9
-dwarf,dwarf,Thorin,,48,0,22,3263,medium,animal,17000,3.7,32,attack,UNIQUE,16,14,15,13,11,14
+dwarf,dwarf,duergar,,11,1,13,224,medium,animal,16000,4.2,12,attack,,12,12,11,12,11,11
+dwarf,dwarf,dwarf,"Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.",0,0,0,0,medium,animal,15000,4.2,10,attack,BASE,10,10,10,10,10,10
+dwarf,dwarf,dwarf king,,20,1,21,668,medium,animal,16000,4.0,13,attack,,18,16,14,12,12,16
+dwarf,dwarf,dwarf lord,,14,3,16,257,medium,animal,15500,4.0,11,attack,,16,12,11,12,11,13
+dwarf,dwarf,dwarf thief,,8,1,10,78,medium,animal,13000,4.2,10,attack,,14,16,8,11,8,10
+dwarf,dwarf,dwarf warrior,,11,1,13,204,medium,animal,15000,4.2,12,attack,,16,11,12,8,10,9
+dwarf,dwarf,Thorin,,48,0,22,3263,medium,animal,17000,4.2,32,attack,UNIQUE,16,14,15,13,11,14
 echo,echo,echo,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",0,0,0,0,medium,animal,10000,5.0,10,attack,BASE,10,10,10,10,10,10
 elemental,,air elemental,,18,2,20,505,huge,air,0,7.5,17,attack,,14,20,14,6,10,6
 elemental,,animate object,,0,0,0,0,small,ether,0,5.0,10,attack,ANIMATE,11,11,11,11,11,11
@@ -254,7 +254,7 @@ giant,ettin,ettin,,22,1,25,658,huge,animal,93000,3.7,26,attack,,21,8,17,6,10,8
 giant,giant,Father Dagon,,100,0,51,10388,gargantuan,animal,2000000,5.0,27,attack,UNIQUE,30,16,30,16,18,24
 giant,giant,fire giant,,15,2,17,414,huge,animal,110000,3.0,16,attack,,25,9,23,10,14,13
 giant,giant,frost giant,,17,1,20,441,huge,animal,110000,3.0,18,attack,,23,9,21,9,10,12
-giant,giant,giant,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",0,0,0,0,huge,animal,100000,3.0,10,attack,BASE,10,10,10,10,10,10
+giant,giant,giant,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",0,0,0,0,huge,animal,100000,3.3,10,attack,BASE,10,10,10,10,10,10
 giant,giant,giant king,,30,1,32,1300,huge,animal,165000,3.7,20,attack,,30,15,27,15,13,24
 giant,giant,hill giant,,12,2,14,229,huge,animal,110000,3.0,15,attack,,21,8,19,5,9,6
 giant,giant,Lord Surtur,,57,0,19,4611,huge,animal,130000,3.7,39,attack,UNIQUE,27,11,25,11,11,14
@@ -267,7 +267,7 @@ gnoll,gnoll,gnoll chieftain,,28,1,31,956,large,animal,20000,5.0,23,attack,,16,14
 gnoll,gnoll,gnoll shaman,,18,1,22,441,large,animal,16000,5.0,19,attack,,14,12,11,6,14,7
 gnoll,gnoll,gnoll warrior,,24,1,26,647,large,animal,18000,5.0,18,attack,,18,14,15,6,10,7
 gnome,gnome,deep gnome,,10,1,12,151,small,animal,7500,2.5,14,attack,,12,12,10,11,11,10
-gnome,gnome,gnome,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",0,0,0,0,small,animal,6500,3.7,10,attack,BASE,10,10,10,10,10,10
+gnome,gnome,gnome,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",0,0,0,0,small,animal,6500,4.0,10,attack,BASE,10,10,10,10,10,10
 gnome,gnome,gnome king,,17,1,20,524,small,animal,7500,3.0,12,attack,,15,13,16,12,13,18
 gnome,gnome,gnome lord,,3,2,4,15,small,animal,7000,3.0,10,attack,,13,12,11,11,10,13
 gnome,gnome,gnome thief,,1,1,3,11,small,animal,6500,3.7,8,attack,,12,14,8,11,8,11
@@ -553,7 +553,7 @@ orc,orc,orc shaman,,3,1,5,23,medium,animal,15000,3.0,13,attack,,14,15,13,12,12,8
 orc,orc,orc warrior,,12,1,14,641,medium,animal,17000,3.3,9,attack,,18,12,16,7,8,6
 orc,orc,snow orc,,11,1,13,183,medium,animal,16000,3.7,11,attack,,17,12,16,8,8,10
 orc,orc,war orc,,16,1,18,726,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
-plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,12000,4.5,10,attack,BASE,10,10,10,10,10,10
+plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,9000,4.0,10,attack,BASE,10,10,10,10,10,10
 pudding,,black pudding,,20,1,23,674,large,vegetable,9000,2.0,22,attack,,16,5,16,1,6,1
 pudding,,brown pudding,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",6,1,7,45,medium,vegetable,5000,2.0,15,attack,,14,5,14,1,5,1
 pudding,,giant shoggoth,,36,1,38,1935,huge,vegetable,200000,5.0,33,attack,,24,4,22,4,8,3

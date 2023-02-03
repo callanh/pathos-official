@@ -874,7 +874,8 @@ namespace Pathos
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(900);
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(20), Sonics.armour)
-         .SetTalent(Properties.quickness, Properties.flight, Properties.stealth);
+         .SetTalent(Properties.quickness, Properties.flight, Properties.stealth)
+         .SetSpeedBoost();
         I.SetArmour(Skills.light_armour, 1);
       });
 
@@ -1366,7 +1367,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.free_action)
          .SetDamageBoost();
-        var W = I.SetTwoHandedWeapon(Skills.firearms, Sonics.pistol_fire, Elements.physical, DamageType.Bludgeon, 1.d6());
+        var W = I.SetOneHandedWeapon(Skills.firearms, Sonics.pistol_fire, Elements.physical, DamageType.Bludgeon, 1.d6());
         W.AttackModifier = Modifier.Plus5;
         W.FixedRange = 20;
       });
@@ -3181,6 +3182,7 @@ namespace Pathos
         I.Essence = ArmourEssence6;
         I.Price = Gold.FromCoins(50);
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(20), Sonics.armour) 
+         .SetTalent(Properties.quickness)
          .SetSpeedBoost();
         I.SetArmour(Skills.medium_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 20, Delay.FromTurns(20), Sonics.armour, A =>
@@ -8273,7 +8275,7 @@ namespace Pathos
              .SetTerminates();
           Use.Apply.WhenConfused
           (
-            T => T.CreateEntity(4.d2(), Entities.trapper), // 4-8 trappers.
+            T => T.CreateEntity(1.d3(), Entities.trapper), // 1-3 trappers.
             E => E.WithSourceSanctity
             (
               B =>

@@ -318,7 +318,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -516,7 +516,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
-        E.Speed = Speed.S3_0;
+        E.Speed = Speed.S3_3;
         E.Size = Size.Huge;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(100000);
@@ -555,7 +555,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(6500);
@@ -757,12 +757,12 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 10, P: +1, S: +1, B: -1);
+        E.Defence = new Defence(D: 10, P: +1, S: +1, B: -2);
         E.SetDiet(Diets.organivore);
-        E.Speed = Speed.S4_5;
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(12000);
+        E.Weight = Weight.FromUnits(9000);
         E.Figure.Set
         (
           Material: Materials.animal, // TODO: plastic?
@@ -779,8 +779,8 @@ namespace Pathos
           Mounted: false,
           Amorphous: true
         );
-        E.LifeAdvancement.Set(4, 1.d2());
-        E.ManaAdvancement.Set(1, Dice.One);
+        E.LifeAdvancement.Set(1, Dice.Zero);
+        E.ManaAdvancement.Set(1, Dice.Zero);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 15, DEX: 15, CON: 25, INT: 25, WIS: 20, CHA: 20);
         E.SetGender(Genders.male, Genders.female);
@@ -10087,7 +10087,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S2_5;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -10138,7 +10138,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex = 16.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S2_5;
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -10195,7 +10195,7 @@ namespace Pathos
         E.Frequency = 3;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1 from dex = 12.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_0;
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15500);
@@ -10246,7 +10246,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +3 from dex = 13.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -10296,7 +10296,7 @@ namespace Pathos
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_3;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -10347,7 +10347,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(17000);

@@ -89,6 +89,7 @@ namespace Pathos
         S.ManaAdvancement.Set(Dice.Zero + 2);
         S.DefenceModifier = Modifier.Minus2;
         S.Startup.SetTalent(Properties.reflection);
+        S.Chemistry.SetWeakness(Elements.force);
         S.SetMaskFigure().Set
         (
           Material: Materials.glass,
@@ -102,8 +103,8 @@ namespace Pathos
           Feet: true,
           Thermal: false,
           Blood: false,
-          Mounted: false,
-          Amorphous: false
+          Mounted: true,
+          Amorphous: true
         );
       });
 
@@ -195,8 +196,8 @@ namespace Pathos
           Feet: true,
           Thermal: false,
           Blood: false,
-          Mounted: false,
-          Amorphous: false
+          Mounted: true,
+          Amorphous: true
         );
         S.LifeAdvancement.Set(Dice.Zero - 1); // -1 per level.
         S.ManaAdvancement.Set(Dice.Zero - 1); // -1 per level.
@@ -226,8 +227,8 @@ namespace Pathos
           Feet: true,
           Thermal: false,
           Blood: true,
-          Mounted: false,
-          Amorphous: false
+          Mounted: true,
+          Amorphous: true
         );
 
         S.Startup.SetTalent(Properties.dark_vision);

@@ -353,13 +353,13 @@ namespace Pathos
           Skills.firearms, Skills.whip);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.pistol);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.pistol);
-        C.Startup.Loot.AddKit(Chance.Always, 1.d60() + 66, Modifier.Plus0, Items.bullet);
+        C.Startup.Loot.AddKit(Chance.Always, 1.d80() + 86, Modifier.Plus0, Items.bullet);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.fedora);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.leather_jacket);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.low_boots);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.shotgun);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.knife);
-        C.Startup.Loot.AddKit(Chance.Always, 1.d16() + 16, Modifier.Plus0, Items.shotgun_shell);
+        C.Startup.Loot.AddKit(Chance.Always, 1.d20() + 24, Modifier.Plus0, Items.shotgun_shell);
         C.Startup.Loot.AddKit(Chance.Always, 1.d3(), Modifier.Plus0, Items.stick_of_dynamite);
       });
 

@@ -147,7 +147,7 @@ namespace Pathos
       foreach (var Zoo in Codex.Zoos.List)
         VisitZooArray[Zoo.Index] = AddTrick("visited " + Zoo.Name, A => A.VisitZoo(Zoo));
 
-      this.visited_bazaar = AddTrick("visited bazaar", A => A.VisitShop(null));
+      this.visited_bazaar = AddTrick("visited bazaar", A => A.VisitBazaar(Sonics.chime));
 
       this.VisitShopArray = new Trick[Codex.Shops.List.Count];
       foreach (var Shop in Codex.Shops.List)
