@@ -500,6 +500,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_knight);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_knight);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_knight);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_knight);
         C.AddFeat(8, Properties.quickness);
         C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding,
@@ -870,6 +871,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_ranger);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_ranger);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_ranger);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ranger);
         C.AddFeat(2, Properties.searching);
         C.AddFeat(8, Properties.stealth);
         C.AddFeat(14, Properties.see_invisible);
@@ -1224,6 +1226,7 @@ namespace Pathos
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_necromancer);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_necromancer);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_necromancer);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_necromancer);
         C.SetDistribution(Attributes.intelligence, Attributes.constitution, Attributes.dexterity, Attributes.wisdom, Attributes.strength, Attributes.charisma);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.clairvoyance);

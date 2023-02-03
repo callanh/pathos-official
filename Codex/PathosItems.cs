@@ -10242,10 +10242,10 @@ namespace Pathos
             (
               B =>
               {
-                B.CreateEntity(1.d2(), Kinds.rodent);
+                B.SummonEntity(1.d2(), Kinds.rodent.Entities.ToArray());
                 B.AreaTransient(Properties.sleeping, 2.d20(), Kinds.rodent);
               },
-              U => U.CreateEntity(1.d4(), Kinds.rodent),
+              U => U.WhenChance(Chance.OneIn2, T => T.SummonEntity(1.d2(), Kinds.rodent.Entities.ToArray()), E => E.CreateEntity(1.d4(), Kinds.rodent)),
               C => C.CreateEntity(1.d8(), Kinds.rodent)
             )
           );

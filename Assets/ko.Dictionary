@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,지장없음
 EngulfmentName,engulfed,사로잡힘
 EngulfmentName,swallowed,삼켜짐
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"야망이 큰 중간 크기의 생명체. 수명은 짧으나, 어디서나 볼 수 있다. 절대 과소평가해서는 안 된다."
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",은둔한 고대의 거대 종족. 고기와 광물을 게걸스럽게 먹어치우며 엄청난 힘의 원천인 압도적인 덩치를 유지한다.
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","스러진 모험가의 불굴의 영혼을 담는 영적인 그릇. 스스로는 움직이지 않으며, 모험가의 영혼에게 기꺼이 몸을 내어 복수 또는 속죄를 위한 두 번째 기회를 준다. 영적 물질로 만들어진 자그마한 몸은 투명하며 물리적 장애물을 통과할 수 있다."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",빛나는 후광과 깃털난 날개가 특징인 아름다운 초월적 존재. 선과 악의 대결에 단련된 그들은 손에 쥐는 모든 것들에서 성스러움을 느낀다.
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,이 시계테엽으로 �
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","자연의 강력한 정령과 이어져 있는 익살스러운 장난꾼. 다부진 하반신은 털로 덮여 있고, 염소의 발굽과 양의 뿔을 가졌다. 상스럽고 영리한 이들은 마시고, 춤추고, 싸우며 경쾌하게 향락을 즐긴다."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","거대한 육식 도마뱀. 그들의 흉포한 조상은 문명이 탄생하기 훨씬 전에 세상을 지배했었다. 무시무시한 포식자인 그들은, 상당한 거리를 도약할 수 있고 두꺼운 비늘로 수많은 공격을 막을 수 있다."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",핏빛 피부와 뿔이 달린 매우 기괴하고 뒤틀린 생명체. 존재 만으로도 타인을 가장 어둡고 폭력적인 욕망에 따라 움직이게 만든다.
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","팔이 땅에 끌릴 정도로 등이 굽은 거대한 종족. 굶주린 포식자인 이들은 기괴한 외형에도 불구하고 강인하며, 고무같은 가죽에 난 어떤 상처도 금세 회복하는 능력으로 악명높다."
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","팔이 땅에 끌릴 정도로 등이 굽은 거대한 종족. 굶주린 포식자인 이들은 기괴한 외형에도 불구하고 강인하며, 고무같은 가죽에 난 어떤 상처도 금세 회복하는 능력으로 악명높다."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",모습을 바꾸는 변이체. 그들은 능력을 이용해 타인을 속이는 것을 즐긴다.
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.","소박한 삶을 추구하는 작은 친구들. 그들은 사교적이고, 그들의 작은 체격은 적은 노력으로도 잘 살 수 있게 해준다."
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","자연과 마법을 좋아하는 영적인 존재들. 인간과 신체적으로는 유사하지만, 조금 더 작고 민첩하다."
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,이 살아있는 산성 액체 방울들은 공격 능력이 전혀 없는것으로 보인다.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","매우 신비롭고 아름답게 태어난, 작은 날개가 달린 영혼들. 위협을 받으면 공간을 왜곡시켜 도망갈 수 있다."
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",식인의 습성을 가진 못생기고 야만적인 생명체들. 이 전쟁에 미친 종족들은 인상적인 힘과 수준낮은 지능으로 유명하다.
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,수도원장
 EntityName,acid blob,산성 방울
 EntityName,acid worm,산성 벌레
@@ -1758,6 +1761,7 @@ EntityName,tiger,호랑이
 EntityName,tigerwere,인간호랑이
 EntityName,titan,타이탄
 EntityName,titanothere,티타노테레
+EntityName,tortle,
 EntityName,tracker,사냥꾼
 EntityName,transmuter,변환술사
 EntityName,trapper,트래퍼
@@ -3039,6 +3043,7 @@ KindName,quadruped,네발짐승
 KindName,rodent,설치류
 KindName,snake,뱀
 KindName,spider,거미
+KindName,tortle,
 KindName,trapper,트래퍼
 KindName,troll,트롤
 KindName,umber,움버
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,사티로스
 RaceName,satyr//male,사티로스
 RaceName,satyr//non-binary,사티로스
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,트롤
 RaceName,troll//male,트롤
 RaceName,troll//non-binary,트롤

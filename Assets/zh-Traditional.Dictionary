@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,無負擔
 EngulfmentName,engulfed,吞入
 EngulfmentName,swallowed,吞嚥
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,有遠大理想的中體型生物。短命而常見，不要低估它們。
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",軀體龐大的遠古種族。他們可怖的體型給他們帶來無比的力量，需要靠進食大量肉類與岩石支撐。
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",已故冒險者殘留在世間的靈魂。他們已經沒有了那種世俗的慾望，因此很樂意與他人分享。對於這些已故的冒險者來說，這是他們的第二次機會，讓他們能夠繼續自己的復仇或是尋求救贖。作為一種靈體，他們體型較大，呈半透明狀，並且可以在牆壁中穿梭。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",美麗且與俗世隔絕的生物，謠傳他們帶有標誌型的光圈與帶羽毛的翅膀。 他們能在善惡分辨中從容自如，並且能在一切所持的物品中感覺到神性。
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,當心這個發條控制
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",受到自然之靈祝福的異族生物，擁有魁梧的身軀，毛茸茸的下半身，山羊的蹄子和公羊的角。他們野蠻而又聰明，過著每天喝酒跳舞打架的快樂生活。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",大型食肉爬行動物其祖先在文明出現前就已統治世界許久。他們是令人恐懼的掠食者，可以跳躍很遠、用厚皮抵擋許多攻擊。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",雖然是所有邪惡生物的簡稱，但總長著赤紅的皮膚以及長角。 僅僅是迫使他人就能使他們展現出最黑暗且殘暴的慾望。
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",貪婪、喜歡劫掠且體型魁梧的類人種族，通常有很嚴重的駝背，因此他們總是把手拖在地上。雖然體型笨拙，但是他們有著強壯的體質，以及極強的自愈能力。
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",貪婪、喜歡劫掠且體型魁梧的類人種族，通常有很嚴重的駝背，因此他們總是把手拖在地上。雖然體型笨拙，但是他們有著強壯的體質，以及極強的自愈能力。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",能變形的惡魔，以欺騙為生。
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.",喜歡簡單生活的小生物。他們尤其喜好社交，天賦常讓他們有不軌企圖。
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",喜好自然與魔法的物種。他們與人類相近，但更小、更靈敏。
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",這款木乃伊甜點是將人類屍體浸泡在蜂蜜中製成的。不知何故，一種鮮為人知的僧侶崇拜使它復活了，它既致命又美味。
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,這個奇怪的腐蝕性液體泡泡看起來沒有任何進攻性。
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",長翅膀的小精靈，天生具有魔力和美貌。在受威脅時，他們可以通過扭曲空間逃脫。
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",醜陋而殘暴的食人物種，好戰、強力但愚蠢。
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,修道院長
 EntityName,acid blob,強酸污斑
 EntityName,acid worm,強酸蠕蟲
@@ -1758,6 +1761,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,虎狼人
 EntityName,titan,泰坦巨人
 EntityName,titanothere,雷獸
+EntityName,tortle,
 EntityName,tracker,獵人
 EntityName,transmuter,變形術士
 EntityName,trapper,陷阱魔
@@ -3039,6 +3043,7 @@ KindName,quadruped,四足動物
 KindName,rodent,齧齒動物
 KindName,snake,蛇
 KindName,spider,蜘蛛
+KindName,tortle,
 KindName,trapper,陷阱魔
 KindName,troll,巨魔
 KindName,umber,巨怪
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,山羊人
 RaceName,satyr//male,山羊人
 RaceName,satyr//non-binary,山羊人
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,巨魔
 RaceName,troll//male,巨魔
 RaceName,troll//non-binary,奧利給

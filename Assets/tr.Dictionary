@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,tüy gibi yük
 EngulfmentName,engulfed,yutulmuş
 EngulfmentName,swallowed,yutuldu
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Yanıltıcı yeteneklerine güvenen, şekil değiştirici asiler."
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Bu garip aşındırıcı sıvı yığınının herhangi bir saldırı yetisi yok gibi gözüküyor.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,başrahip
 EntityName,acid blob,asit birikintisi
 EntityName,acid worm,asit solucan
@@ -1758,6 +1761,7 @@ EntityName,tiger,kaplan
 EntityName,tigerwere,kaplanımsı
 EntityName,titan,titan
 EntityName,titanothere,titanothere
+EntityName,tortle,
 EntityName,tracker,avcı
 EntityName,transmuter,dönüştürücü
 EntityName,trapper,tuzakçı
@@ -3039,6 +3043,7 @@ KindName,quadruped,dört bacaklı
 KindName,rodent,kemirgen
 KindName,snake,yılan
 KindName,spider,örümcek
+KindName,tortle,
 KindName,trapper,tuzakçı
 KindName,troll,troll
 KindName,umber,dev
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,
 RaceName,satyr//male,
 RaceName,satyr//non-binary,
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,
 RaceName,troll//male,
 RaceName,troll//non-binary,

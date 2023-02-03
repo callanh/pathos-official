@@ -67,17 +67,17 @@ namespace Pathos
 
       helmet = AddSlot("helmet", S =>
       {
-        S.RequiresAnatomy(Anatomies.head, Anatomies.hands);
+        S.RequiresAnatomy(Anatomies.head, Anatomies.hands); // hands means they are likely to be humanoid.
       });
 
       eyewear = AddSlot("eyewear", S =>
       {
-        S.RequiresAnatomy(Anatomies.hands);
+        S.RequiresAnatomy(Anatomies.eyes);
       });
 
       earwear = AddSlot("earwear", S =>
       {
-        S.RequiresAnatomy(Anatomies.hands);
+        S.RequiresAnatomy(Anatomies.ears);
       });
 
       amulet = AddSlot("amulet", S =>
@@ -123,7 +123,7 @@ namespace Pathos
 
       boots = AddSlot("boots", S =>
       {
-        S.RequiresAnatomy(Anatomies.hands, Anatomies.feet);
+        S.RequiresAnatomy(Anatomies.feet, Anatomies.hands); // hands means they are likely to be humanoid.
       });
 
       purse = AddSlot("purse", S =>

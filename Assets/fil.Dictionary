@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,
 EngulfmentName,engulfed,
 EngulfmentName,swallowed,
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,Decente ang kanilang laki at hindi maiiwasan ang kanilang hilig sa ambisyon. Hindi lang sila basta-bastang minamaliit.
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Isa sa mga sinaunang lahi na umiiwas sa mga lahing hindi sakanila. Sa kanilang laki, nakakapagbigay ito ng labis na lakas, pero sa kapalit, kailangan nilang kumain ng maraming karne at mga mineral."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Mga taong hindi natatalo ang kanilang mga ispirito. Galing sila sa astral na matter, translucent sila at pwede silang mag-blink palayo sa iba't ibang obstacles."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Magagandang mga beings, na may halo at may pakpak. May magandang consensiya paukol sa kaibahan sa mabuti at masama. Kaya nilang maramdaman ang divinity ng isang bagay."
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Mga fey creatures na nakalink sa makapangyarihan na espiritong kalikasan para ma-fuel ang kanilang paguugali. Puno sila ng mabalahibo sa ibabang bahagi ng katawan, mga sibol na kuko ng isang kambing at mga kulot na sungay na parang ram. Ma-chick magnet at medyo matalino, mahilig din silang uminom, sumayaw, at lumaban."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Malaki, karnivorous na mga reptilian na ang mga ninuno ng hayop ay nangingibabaw sa buong mundo bago pa ang kapanganakan ng sibilisasyon. Ang mga ito ay nakakatakot na mandaragit, na may kakayahang lumukso ng kamangha-manghang distansya at dahil sa kanilang scaly na balat, medyo matitibay silang patumbahin."
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Mga species na madaling magutom at mapa-predator, sila ang mga higanteng humanoid na medyo may pagka-hunch at dahil doon, napapakaladkad nila ang kanilang mga kamay sa sahig. Kahit awkward ang kanilang itsura, ginawa silang malakas ang meron silang kakayahang na magpagaling sa sarili nilang sugat ng kaybilis-bilis."
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Mga species na madaling magutom at mapa-predator, sila ang mga higanteng humanoid na medyo may pagka-hunch at dahil doon, napapakaladkad nila ang kanilang mga kamay sa sahig. Kahit awkward ang kanilang itsura, ginawa silang malakas ang meron silang kakayahang na magpagaling sa sarili nilang sugat ng kaybilis-bilis."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Mga deviants na pwede mag-shapeshift, umaasa sila sa mga talentong mapanlinlang."
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.","Maliit na katutubong na ginusto mabuhay ng masimple-simple. Kapansin-pansin ang kanilang pagiging social, at dahil sa kanilang kaliitan, mas bagay sila sa paggawa ng mga bagay na hindi kanais-nais."
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Ang mga spirirtual na being na may hilig sa kalikasan at mahika. Pwede silang ipagkumpara sa mga tao, ngunit madals na mas maliit at mas mabilis."
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Ang buhay na bubble na ito na medyo corrosive ay wala masiyadong offensive na kakayahan.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Maliliit na mga diwang may pakpak, likas na mahiwagang at labis na maganda. Kapag nanganganib, maaari silang makatakas sa pamamagitan ng mga pagbaluktot sa spatial reality."
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Pangit at mabangis na mga nilalang na may hilig na kumakain ng sarili nilang lahi; ang lahi na ito sa digmaan ay kilala sa kanilang kamangha-manghang lakas at kakayahang intelektwal.
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,
 EntityName,acid blob,
 EntityName,acid worm,
@@ -1758,6 +1761,7 @@ EntityName,tiger,
 EntityName,tigerwere,
 EntityName,titan,
 EntityName,titanothere,
+EntityName,tortle,
 EntityName,tracker,
 EntityName,transmuter,
 EntityName,trapper,
@@ -3039,6 +3043,7 @@ KindName,quadruped,
 KindName,rodent,
 KindName,snake,
 KindName,spider,
+KindName,tortle,
 KindName,trapper,
 KindName,troll,
 KindName,umber,
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,
 RaceName,satyr//male,
 RaceName,satyr//non-binary,
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,
 RaceName,troll//male,
 RaceName,troll//non-binary,

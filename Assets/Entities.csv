@@ -172,7 +172,7 @@ dragon,,baby shimmering dragon,,4,2,6,24,medium,animal,50000,5.0,18,attack,,15,1
 dragon,,baby silver dragon,,4,2,6,24,medium,animal,50000,5.0,18,attack,GUARDIAN,19,10,17,12,11,15
 dragon,,baby white dragon,,4,2,5,22,medium,animal,50000,5.0,18,attack,,14,10,14,5,10,11
 dragon,,baby yellow dragon,,4,2,5,22,medium,animal,50000,5.0,18,attack,,15,10,14,14,12,15
-dragon,,chromatic dragon,,32,1,33,1446,gargantuan,animal,140000,5.0,27,attack,,27,10,30,26,26,28
+dragon,,chromatic dragon,,32,1,33,1446,gargantuan,animal,450000,5.0,27,attack,,27,10,30,26,26,28
 dragon,,dragon king,,39,1,38,1713,gargantuan,animal,300000,5.0,30,attack,,30,14,26,18,16,28
 dragon,,hydra,,34,1,36,1350,gargantuan,animal,1200000,5.0,27,attack,,28,12,24,2,10,7
 dragon,,Ixoth,,51,0,22,4100,gargantuan,animal,1400000,3.7,38,attack,UNIQUE,20,12,25,10,11,11
@@ -391,7 +391,7 @@ jelly,,orange jelly,,8,1,10,100,medium,vegetable,2500,2.0,15,attack,,8,4,12,1,2,
 jelly,,rancid jelly,,17,1,19,338,medium,vegetable,2500,2.0,19,attack,,10,4,13,1,2,1
 jelly,,spotted jelly,,6,1,7,42,medium,vegetable,500,1.5,15,attack,,6,4,11,1,2,1
 jelly,,yellow jelly,,19,1,21,510,medium,vegetable,2500,2.0,20,attack,,8,4,12,1,2,1
-kobold,kobold,kobold,,0,0,0,0,small,animal,4000,4.0,10,attack,BASE,10,10,10,10,10,10
+kobold,kobold,kobold,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",0,0,0,0,small,animal,4000,4.0,10,attack,BASE,10,10,10,10,10,10
 kobold,kobold,kobold king,,16,1,17,394,small,animal,5500,3.3,13,attack,,12,16,12,13,11,12
 kobold,kobold,kobold lord,,12,1,13,190,small,animal,5000,3.7,12,attack,,9,16,10,9,8,9
 kobold,kobold,kobold scout,,0,1,1,2,small,animal,4000,3.7,10,attack,,7,15,9,8,7,8
@@ -553,7 +553,7 @@ orc,orc,orc shaman,,3,1,5,23,medium,animal,15000,3.0,13,attack,,14,15,13,12,12,8
 orc,orc,orc warrior,,12,1,14,641,medium,animal,17000,3.3,9,attack,,18,12,16,7,8,6
 orc,orc,snow orc,,11,1,13,183,medium,animal,16000,3.7,11,attack,,17,12,16,8,8,10
 orc,orc,war orc,,16,1,18,726,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
-plasmoid,plasmoid,plasmoid,,0,0,0,0,medium,animal,12000,4.5,10,attack,BASE,10,10,10,10,10,10
+plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,12000,4.5,10,attack,BASE,10,10,10,10,10,10
 pudding,,black pudding,,20,1,23,674,large,vegetable,9000,2.0,22,attack,,16,5,16,1,6,1
 pudding,,brown pudding,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",6,1,7,45,medium,vegetable,5000,2.0,15,attack,,14,5,14,1,5,1
 pudding,,giant shoggoth,,36,1,38,1935,huge,vegetable,200000,5.0,33,attack,,24,4,22,4,8,3
@@ -615,6 +615,7 @@ spider,,recluse spider,,21,1,23,676,tiny,animal,500,3.7,16,attack,,11,12,10,2,6,
 spider,,scorpion,,5,1,8,42,small,animal,500,5.0,17,attack,,8,10,11,2,6,4
 spider,,Scorpius,,53,0,17,4214,large,animal,32000,5.0,39,attack,UNIQUE,24,24,24,10,10,6
 spider,,spider queen,,26,1,29,990,large,animal,32000,5.0,15,attack,,21,14,21,6,10,18
+tortle,tortle,tortle,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",0,0,0,0,large,animal,45000,3.5,15,attack,BASE,10,10,10,10,10,10
 trapper,,glass piercer,,8,1,9,64,medium,animal,4000,1.5,16,attack,,16,16,11,6,7,6
 trapper,,iron piercer,,17,2,17,395,medium,animal,4000,1.5,19,attack,,15,16,11,6,7,6
 trapper,,lurker above,,22,2,24,649,huge,animal,60000,2.0,23,attack,,16,15,15,6,8,6
@@ -625,7 +626,7 @@ troll,troll,cave troll,,7,2,9,55,large,animal,30000,3.7,15,attack,,16,12,15,7,10
 troll,,ice troll,,20,1,21,560,large,animal,40000,2.5,20,attack,,16,12,17,7,11,9
 troll,,olog-hai,,31,1,34,1247,large,animal,45000,3.7,28,attack,,18,16,17,7,12,9
 troll,,rock troll,,14,1,16,354,large,animal,50000,3.7,20,attack,,16,12,17,7,11,9
-troll,troll,troll,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",0,0,0,0,large,animal,30000,4.5,11,attack,BASE,10,10,10,10,10,10
+troll,troll,troll,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",0,0,0,0,large,animal,30000,4.5,11,attack,BASE,10,10,10,10,10,10
 troll,,two-headed troll,,23,1,25,781,large,animal,40000,3.7,22,attack,,15,11,16,7,10,8
 troll,,water troll,,11,1,13,180,large,animal,36000,3.7,15,attack,,18,13,17,7,11,9
 umber,,umber hulk,,9,2,12,149,large,animal,25000,2.0,16,attack,,17,14,16,6,11,8

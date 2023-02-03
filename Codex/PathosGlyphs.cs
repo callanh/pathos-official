@@ -978,6 +978,9 @@ namespace Pathos
     public readonly Glyph satyr_male_convict;
     public readonly Glyph satyr_male_druid;
     public readonly Glyph satyr_male_gladiator;
+    public readonly Glyph satyr_male_necromancer;
+    public readonly Glyph satyr_male_knight;
+    public readonly Glyph satyr_male_ranger;
     public readonly Glyph satyr_male_reaver;
     public readonly Glyph satyr_male_shaman;
     public readonly Glyph satyr_male_wizard;
@@ -1803,6 +1806,7 @@ namespace Pathos
     public readonly Glyph tooled_horn;
     public readonly Glyph torch;
     public readonly Glyph tortilla;
+    public readonly Glyph tortle;
     //public readonly Glyph touchstone;
     //public readonly Glyph towel;
     public readonly Glyph transmuter;

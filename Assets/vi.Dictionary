@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,thoải mái
 EngulfmentName,engulfed,bị dìm
 EngulfmentName,swallowed,bị nuốt chửng
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Một loài sinh vật cỡ vừa với dã tâm lớn, tuổi thọ ngắn nhưng có ở khắp nơi; đừng đánh giá thấp chúng."
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Một chủng tộc cổ xưa ở ẩn ở nơi cao chót vót. Kích thước khủng bố giúp chúng có sức mạnh rất lớn, được bổ sung với chế độ ăn toàn thịt và khoáng chất."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Những thực thể thần thánh, là vỏ bọc cho những linh hồn bất khuất của những nhà thám hiểm. Chúng không có mục tiêu, luôn sẵn lòng cho mượn lấy cơ thể của mình; đối với những nhà thám hiểm đã chết, đây chính là cơ hội thứ hai để trả thù hoặc chuộc lỗi. Được tạo ra từ vật chất thiên thạch, chúng rất mỏng, trong suốt và có thể bay lượn tự do xuyên qua vật chất."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Xinh đẹp, những thực thể siêu nhiên này nổi bật với đặc điểm như vầng hào quang hay cánh lông vũ. Rất hòa hợp với cuộc chiến giữa cái thiện và cái ác, họ có thể cảm nhận được tính thánh hóa của mọi vật họ chạm vào."
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,Hãy coi chừng cỗ m�
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Những sinh vật thần tiên, được kết nối bởi linh hồn thiên nhiên mạnh mẽ để tiếp nối những trò hề của họ. Cơ thể chắc nịch, phần dưới có lông, có móng vuốt giống loài dê và sừng xoắn ốc giống loài cừu. Dâm tục và thông minh, họ vui vẻ dẫn dắt những tù nhân của sự khoái lạc vào việc uống, nhảy múa và đánh nhau."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","To lớn, những người bò sát ăn thịt mà tổ tiên của họ đã từng thống trị thế giới trước khi nền văn minh ra đời. Họ là những sát thủ ăn thịt đáng sợ, có thể nhảy vọt với khoảng cách rất xa và chống lại rất nhiều đòn tấn công với vảy cứng của họ."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Những sinh vật biến thái lầm lạc nhưng luôn có màu da đỏ thắm và mọc sừng. Sự xuất hiện của chúng khiến tất cả bộc lộ những tham vọng, trụy lạc đen tối và bạo lực nhất."
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Giống loài người khổng lồ ăn thịt đói khát, với cục bướu to khiến cho bàn tay của họ bị kéo lê trên mặt đất. Mặc dù ngoại hình kì lạ, họ cực kỉ khỏe mạnh và nổi tiếng nhờ khả năng hồi phục mọi vết thương vào da dẻo dai của họ."
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Giống loài người khổng lồ ăn thịt đói khát, với cục bướu to khiến cho bàn tay của họ bị kéo lê trên mặt đất. Mặc dù ngoại hình kì lạ, họ cực kỉ khỏe mạnh và nổi tiếng nhờ khả năng hồi phục mọi vết thương vào da dẻo dai của họ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Giống loài biến hình lệch lạc, sống nhờ vào tài năng lừa dối của chúng."
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.","Những cư dân nhỏ bé, những người ưa chuộng cuộc sống đơn giản. Họ thường sống theo cộng đồng, và sự đoàn kết của họ rất hiệu quả trong việc chống lại những hành vi xấu xa."
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Những sinh vật siêu nhiên yêu chuộng thiên thiên và ma thuật. Họ rất giống với con người về vẻ ngoài, nhưng thường nhỏ bé và nhanh hơn."
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Xác ướp này được tạo ra bằng cách nhúng xác người chết vào trong mật ong. Bằng cách nào đó được tái sinh bởi một hội nhóm nhà sư kín, con quái vật này vừa nguy hiểm, song cũng thật ngon."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Khối cầu dung dịch ăn mòn kì lạ này trông có vẻ vô hại.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Những linh hồn có cánh nhỏ bé, được truyền ma thuật từ cha mẹ và vô cùng xinh đẹp. Khi gặp nguy hiểm, chúng có thể chạy trốn qua sự méo mó của không gian thực."
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Những sinh vật xấu xí, thú tính với tập tính ăn thịt đồng loại; Chủng tộc hiếu chiến này được biết đến với sức mạnh phi thường và trí thông minh ngu dốt đến đần độn của chúng."
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,trụ trì
 EntityName,acid blob,bãi axít
 EntityName,acid worm,giun axít
@@ -1758,6 +1761,7 @@ EntityName,tiger,hổ
 EntityName,tigerwere,ma cọp
 EntityName,titan,titan
 EntityName,titanothere,titanothere
+EntityName,tortle,
 EntityName,tracker,kẻ theo dõi
 EntityName,transmuter,người biến đổi
 EntityName,trapper,người gài bẫy
@@ -3039,6 +3043,7 @@ KindName,quadruped,động vật 4 chân
 KindName,rodent,bộ gặm nhấm
 KindName,snake,rắn
 KindName,spider,nhện
+KindName,tortle,
 KindName,trapper,người gài bẫy
 KindName,troll,troll
 KindName,umber,khổng lồ đào đá
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,thần dê nữ
 RaceName,satyr//male,thần dê nam
 RaceName,satyr//non-binary,thần dê lưỡng tính
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,troll độc ác nữ
 RaceName,troll//male,troll độc ác nam
 RaceName,troll//non-binary,troll độc ác lưỡng tính

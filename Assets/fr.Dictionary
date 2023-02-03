@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,non encombré
 EngulfmentName,engulfed,englouti
 EngulfmentName,swallowed,avalé
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,Une créature de taille moyenne sujette à de grandes ambitions. Avec une courte durée de vie mais omniprésents; ils ne doivent pas être sous-estimés.
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Une ancienne race d'être imposants et reclus. Leur taille terrifiante leur donne une force immense, complétée par un régime vorace de viandes et de minéraux."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Des êtres astraux qui sont le vaisseau de l'esprit indomptable d'un aventurier vaincu. N'ayant aucune motivation propre, ils sont ravis de permettre une possession; pour l'aventurier décédé, c'est une seconde chance de vengeance ou de rédemption. Né de la matière astrale , ils sont légèrement construits, translucides et peuvent se déplacer librement à travers des obstacles physiques."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","De beaux êtres d'un autre monde caractérisés par leur halo caractéristique et leurs ailes à plumes. Fortement en phase avec la lutte entre le bien et le mal, ils ressentent l'origine divine de tout ce qu'ils détiennent."
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,Méfiez-vous de cette ma
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Créatures féeriques liées par de puissants esprits de la nature alimentant leurs farces. Elles sont trapues avec le bas du corps velu, les sabots fendus d'une chèvre et les cornes enroulées d'un bélier. Paillards et intelligents, ils mènent joyeusement des escapades hédonistes où l'on boit, danse et se bat."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grands reptiliens carnivores dont les ancêtres bestiaux dominaient le monde bien avant la naissance de la civilisation. Ce sont des prédateurs redoutables, capables de franchir des distances impressionnantes et de parer de nombreuses attaques avec leur épaisse peau écailleuse."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",Des créatures perverses aux nombreuses aberrations mais toujours à la peau et aux cornes cramoisies. Leur simple présence oblige les autres à réaliser leurs désirs les plus sombres et les plus violents.
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espèce ravageuse et prédatrice d'humanoïde géant avec une cyphose sévère dont la bosse fait glisser le dos de leurs mains sur le sol. Malgré leur apparence physique maladroite, ils sont puissamment construits et sont tristement célèbres pour leur capacité à se remettre rapidement de toute blessure porter à leur caoutchouteuse peau."
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espèce ravageuse et prédatrice d'humanoïde géant avec une cyphose sévère dont la bosse fait glisser le dos de leurs mains sur le sol. Malgré leur apparence physique maladroite, ils sont puissamment construits et sont tristement célèbres pour leur capacité à se remettre rapidement de toute blessure porter à leur caoutchouteuse peau."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",Des déviants qui changent de forme et qui prospèrent grâce à leurs talents trompeurs.
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.","Du petit peuple qui préfèrent une vie simple. Ils sont particulièrement grégaires, et leur carrure les prête bien à des efforts peut nobles."
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Des êtres spirituels friands de nature et de magie. Ils sont physiquement similaires aux humains, mais souvent plus petits et plus agiles."
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Cette momie a été créée en trempant un cadavre humain dans du miel. Réanimée par un culte ténébreux de moines, elle est à la fois mortelle et délicieuse."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Cette étrange boule vivante constituée de fluide corrosif ne semble pas avoir de capacité offensive.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","De minuscules esprits ailés, intrinsèquement magiques et extraordinairement beaux. Lorsqu'ils sont menacés, ils peuvent s'échapper par des distorsions de la réalité."
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Créatures laides et brutales avec des tendances cannibales; cette race guerrière est connue pour sa force impressionnante et ses incapacités intellectuelles.
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,abbé
 EntityName,acid blob,blob d'acide
 EntityName,acid worm,ver d'acide
@@ -1758,6 +1761,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigridé
 EntityName,titan,titan
 EntityName,titanothere,titanothere
+EntityName,tortle,
 EntityName,tracker,chasseur
 EntityName,transmuter,transmuteur
 EntityName,trapper,trappeur
@@ -3039,6 +3043,7 @@ KindName,quadruped,quadrupède
 KindName,rodent,rongeur
 KindName,snake,serpent
 KindName,spider,araignée
+KindName,tortle,
 KindName,trapper,trappeur
 KindName,troll,troll
 KindName,umber,ombre
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,satyre
 RaceName,satyr//male,satyre
 RaceName,satyr//non-binary,satyre
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll

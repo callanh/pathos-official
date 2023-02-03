@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,необтяжений
 EngulfmentName,engulfed,охоплений
 EngulfmentName,swallowed,проглочений
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Істота середнього розміру, великоамбіційна. Не довго живе, але всюдисуща. Її не варто недооцінювати."
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Давня раса жорстоких затворників. Їх страхітливий розмір надає їм величезної сили, доповненої рясною дієтою м'яса та мінеральних речовин."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Прекрасні, потойбічні істоти характеризуються ореолом підпису та пернатих крил. Сильно налаштовані на боротьбі між добром і злом, вони відчувають божественність у всьому, що їм належить."
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Великі хижі рептилії, чиї предки-звірі панували у світі задовго до народження цивілізації. Вони є страхітливими хижаками, що здатні стрибати на довжелезні відстані і відштовхуватися від атак своїми густими лускатими шкурами."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Перекручені істоти багатьох аберацій, але завжди з малиновою шкірою та рогами. Сама їх присутність змушує інших виконувати свої найтемніші, найжорстокіші бажання."
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Девіанти, що змінюють форму, процвітають у своїх оманливих талантах."
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.","Маленькі люди, які віддають перевагу простому життю. Вони помітно вразливі, і їхній настрій піддає їм менш ніж благородні починання."
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Духовні істоти, які люблять природу та магію. Вони фізично схожі на людину, але часто менші та спритніші."
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,"Цей дивний живий міхур, наповнений їдкою рідиною, не проявляє агресії."
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Крихітні крилаті духи, за своєю суттю магічні та надзвичайно красиві. Загрожуючи, вони можуть вирватися через спотворення в просторовій реальності."
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Некрасиві, брутальні істоти зі схильністю до канібалізма; ця войовнича раса відома своєю силою, що вражає, та інтелектуальною нездатністю."
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,абат
 EntityName,acid blob,кислотний міхур
 EntityName,acid worm,кислотний черв'як
@@ -1758,6 +1761,7 @@ EntityName,tiger,тигр
 EntityName,tigerwere,тигр-перевертень
 EntityName,titan,титан
 EntityName,titanothere,тітанотеріі
+EntityName,tortle,
 EntityName,tracker,мисливець
 EntityName,transmuter,трансмутер
 EntityName,trapper,ловець
@@ -3039,6 +3043,7 @@ KindName,quadruped,чотириногі
 KindName,rodent,гризуни
 KindName,snake,змії
 KindName,spider,павуки
+KindName,tortle,
 KindName,trapper,ловці
 KindName,troll,тролі
 KindName,umber,умбра
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,сатирка
 RaceName,satyr//male,сатир
 RaceName,satyr//non-binary,сатир
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,тролиха
 RaceName,troll//male,троль
 RaceName,troll//non-binary,троль

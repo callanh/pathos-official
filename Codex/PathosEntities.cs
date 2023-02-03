@@ -625,7 +625,7 @@ namespace Pathos
 
       kobold = AddBaseEntity(Kinds.kobold, Races.kobold, "kobold", E =>
       {
-        E.Description = null;
+        E.Description = "Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.";
         E.Glyph = Glyphs.kobold;
         E.Level = 0;
         E.Challenge = 0;
@@ -751,7 +751,7 @@ namespace Pathos
 
       plasmoid = AddBaseEntity(Kinds.plasmoid, Races.plasmoid, "plasmoid", E =>
       {
-        E.Description = null;
+        E.Description = "Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.";
         E.Glyph = Glyphs.plasmoid;
         E.Level = 0;
         E.Challenge = 0;
@@ -765,7 +765,7 @@ namespace Pathos
         E.Weight = Weight.FromUnits(12000);
         E.Figure.Set
         (
-          Material: Materials.animal,
+          Material: Materials.animal, // TODO: plastic?
           Head: true,
           Mind: true,
           Voice: true,
@@ -830,9 +830,53 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
+      tortle = AddBaseEntity(Kinds.tortle, Races.tortle, "tortle", E =>
+      {
+        E.Description = "Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.";
+        E.Glyph = Glyphs.tortle;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S3_5;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(45000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(2, 1.d3());
+        E.ManaAdvancement.Set(2, 1.d3());
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 24, DEX: 16, CON: 24, INT: 16, WIS: 24, CHA: 16);
+        E.SetGender(Genders.male, Genders.female);
+        E.Startup.SetTalent(Properties.deflection);
+        E.Startup.SetResistance(Elements.cold);
+        E.SetCorpse(Chance.Always);
+        //E.AddReaction(Chance.Always, Elements.water, A =>
+        //{
+        //  A.WhenChance(Chance.OneIn2, T => T.Heal(1.d6(), Modifier.Zero), E => E.Energise(1.d6(), Modifier.Zero));
+        //});
+      });
+
       troll = AddBaseEntity(Kinds.troll, Races.troll, "troll", E =>
       {
-        E.Description = "Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.";
+        E.Description = "Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.";
         E.Glyph = Glyphs.troll;
         E.Level = 0;
         E.Challenge = 0;
@@ -9698,7 +9742,7 @@ namespace Pathos
         E.Speed = Speed.S5_0;
         E.Size = Size.Gargantuan;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(140000);
+        E.Weight = Weight.FromUnits((long)(AncientDragonWeight.GetUnits() * 1.5F));
         E.Figure.Set
         (
           Material: Materials.animal,
@@ -34874,6 +34918,7 @@ namespace Pathos
     public readonly Entity titanothere;
     public readonly Entity transmuter;
     public readonly Entity trapper;
+    public readonly Entity tortle;
     public readonly Entity troll;
     public readonly Entity cave_troll;
     public readonly Entity troll_mummy;

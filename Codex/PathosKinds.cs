@@ -88,6 +88,7 @@ namespace Pathos
       snake = AddLivingKind("snake");
       military = AddLivingKind("military");
       spider = AddLivingKind("spider");
+      tortle = AddLivingKind("tortle");
       trapper = AddLivingKind("trapper");
       troll = AddLivingKind("troll");
       umber = AddLivingKind("umber");
@@ -156,6 +157,7 @@ namespace Pathos
     public readonly Kind rodent;
     public readonly Kind snake;
     public readonly Kind spider;
+    public readonly Kind tortle;
     public readonly Kind trapper;
     public readonly Kind troll;
     public readonly Kind umber;

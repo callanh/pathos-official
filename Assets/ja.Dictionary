@@ -1142,6 +1142,7 @@ EncumbranceName,unencumbered,邪魔にならない
 EngulfmentName,engulfed,吸い込んだ
 EngulfmentName,swallowed,飲み込んだ
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,大きな野心を抱きやすい中型のクリーチャー。短命だがどこにでもある。過小評価されることはありません。
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",そびえ立つ古代の人種は後退します。彼らの恐ろしいサイズは彼らに肉とミネラルの貪欲な食事療法によって補われて彼らに莫大な強さを与えます。
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",「特徴的な円光と羽がを持つ、美しい異世界の存在。善と悪の闘争に強く順応し、彼らは自分の中に神性を感じています
@@ -1149,7 +1150,7 @@ EntityDescription,Beware this clockwork machine of war.,この殺戮マシーン
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",その祖先の先祖が文明が誕生するずっと前から世界を支配していた、大きくて肉食的な爬虫類。彼らは恐ろしい捕食者であり、印象的な距離を飛び越え、その厚い鱗状の皮で多くの攻撃を防ぐことができます。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",「多くの異常を伴うが、常に深紅色の皮と角を持つ邪悪な生き物。彼らのちょっとした影響力は、最も暗い、最も暴力的な欲望から振舞うように他人を強いる。」
-EntityDescription,"Ravenous, predatory species of giant humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、特にどんな傷を付けようとも見る間に元に戻ってしまうゴムのような厚皮の厄介さは世に広く知られるところである。
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、特にどんな傷を付けようとも見る間に元に戻ってしまうゴムのような厚皮の厄介さは世に広く知られるところである。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",詐欺的な才能で繁栄する、形を変える悪魔。
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.",単純な生活を好む小人。彼らは特に大雑把であり、そして彼らの造りは彼らを貴族以下の努力に向いているものにしています。
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",霊的存在は自然と魔法が好きです。それらは物理的には人間に似ていますが、しばしば小さくて軽快です。
@@ -1159,7 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,腐食性の液体のこの奇妙な生きている泡はどんな攻撃的な能力も持っていないようです。
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",小さな翼のあるスピリット、本質的に魔法のようなそして非常に美しい。脅かされると、彼らは空間的現実の歪みを通して逃げることができます。
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",共食い的な傾向を持つ醜い、荒々しい生き物。この好戦的な競争は彼らの印象的な強さと知的無能力で知られています。
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
 EntityName,abbot,アボット
 EntityName,acid blob,酸のブロッブ
 EntityName,acid worm,酸性のワーム
@@ -1758,6 +1761,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,人間だった虎
 EntityName,titan,タイタン
 EntityName,titanothere,タイタノフィーアー
+EntityName,tortle,
 EntityName,tracker,ハンター
 EntityName,transmuter,トランスミューター
 EntityName,trapper,トラッパー
@@ -3039,6 +3043,7 @@ KindName,quadruped,四足獣
 KindName,rodent,齧歯類
 KindName,snake,ヘビ
 KindName,spider,クモ・さそり・ムカデ
+KindName,tortle,
 KindName,trapper,トラッパー
 KindName,troll,トロル
 KindName,umber,アンバー
@@ -4170,6 +4175,9 @@ RaceName,plasmoid//non-binary,
 RaceName,satyr//female,サテュロス
 RaceName,satyr//male,サテュロス
 RaceName,satyr//non-binary,サテュロス
+RaceName,tortle//female,
+RaceName,tortle//male,
+RaceName,tortle//non-binary,
 RaceName,troll//female,トロル
 RaceName,troll//male,トロル
 RaceName,troll//non-binary,トロル
