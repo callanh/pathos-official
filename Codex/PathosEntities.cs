@@ -625,7 +625,7 @@ namespace Pathos
 
       kobold = AddBaseEntity(Kinds.kobold, Races.kobold, "kobold", E =>
       {
-        E.Description = "Unfairly characterised as cowardly and weak, these diminuitive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.";
+        E.Description = "Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.";
         E.Glyph = Glyphs.kobold;
         E.Level = 0;
         E.Challenge = 0;
