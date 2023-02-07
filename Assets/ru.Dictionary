@@ -13,29 +13,29 @@ AfflictionName,reflux,изжога
 AfflictionName,sliming,ослизнение
 AfflictionName,worms,черви
 AnatomyAbsenceText,MINDLESS,НЕМЫСЛЯЩИЙ
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,НЕТ КРОВИ
 AnatomyAbsenceText,NO EARS,НЕТ УШЕЙ
 AnatomyAbsenceText,NO EYES,НЕТ ГЛАЗ
 AnatomyAbsenceText,NO FEET,НЕТ СТУПНЕЙ
 AnatomyAbsenceText,NO HANDS,НЕТ РУК
 AnatomyAbsenceText,NO HEAD,НЕТ ГОЛОВЫ
 AnatomyAbsenceText,NO LIMBS,НЕТ КОНЕЧНОСТЕЙ
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,НЕ БЕСФОРМЕННЫЙ
+AnatomyAbsenceText,NOT MOUNTED,НЕ ВЕРХОВОЙ
+AnatomyAbsenceText,NOT WARM,НЕ ТЁПЛЫЙ
 AnatomyAbsenceText,VOICELESS,НЕМОЙ
 AnatomyName,amorphous,бесформенный
 AnatomyName,blood,кровь
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,уши
+AnatomyName,eyes,глаза
+AnatomyName,feet,ступни
+AnatomyName,hands,руки
+AnatomyName,head,голова
+AnatomyName,limbs,конечности
+AnatomyName,mind,разум
 AnatomyName,mounted,верховой
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,thermal,тёплый
+AnatomyName,voice,голос
 ApetiteName,content,удовлетворённый
 ApetiteName,hungry,голодный
 ApetiteName,satiated,сытый
@@ -412,7 +412,7 @@ AttackType,horn,горн
 AttackType,kick,брыкание
 AttackType,punch,удар
 AttackType,shriek,визг
-AttackType,slap,
+AttackType,slap,шлепок
 AttackType,spell,заклинание
 AttackType,spit,плевок
 AttackType,splash,брызги
@@ -967,7 +967,7 @@ EffectProperty,hordes,орды
 EffectProperty,items,вещи
 EffectProperty,kinds,виды
 EffectProperty,lies,враньё
-EffectProperty,loyal only,
+EffectProperty,loyal only,только лояльный
 EffectProperty,material,материал
 EffectProperty,materials,материалы
 EffectProperty,objects,предметы
@@ -1085,7 +1085,7 @@ EffectType,transition,переход
 EffectType,unafflict,исцеляет от заражения
 EffectType,unpolymorph,возвращает истинную форму
 EffectType,unpunish,снятие наказания
-EffectType,unstuck,
+EffectType,unstuck,не застревает
 EffectType,visit shop,посещение магазина
 EffectType,visit shrine,посещение храма
 EffectType,visit zoo,посещение зоопарка
@@ -1142,7 +1142,7 @@ EncumbranceName,unencumbered,налегке
 EngulfmentName,engulfed,охвачен
 EngulfmentName,swallowed,проглочен
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Существо средних размеров, склонное к огромным амбициям. Живут недолго, но многочисленны. Их нельзя недооценивать."
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Аморфные существа, которые не имеют характерной формы, но часто принимают полупрозрачную гуманоидную форму. Несмотря на то, что его нельзя спутать ни с чем, кроме плазмоподобной жижи, эта форма позволяет использовать одежду и инструменты."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",Древняя раса исполинских отшельников. Их ужасающий размер даёт им огромную силу и дополняет ненасытной диетой из мяса и минералов.
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Астральные существа, которые являются сосудом для неукротимого духа побеждённого приключенца. Не имея собственных мотивов, они рады разрешить овладеть собой. Для умершего приключенца это второй шанс отомстить или искупить свою вину. Рождённые из астральной материи, они слабо сложены, полупрозрачны и могут свободно перемещаться через физические препятствия."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Прекрасные, потусторонние существа, отличающиеся своим характерным ореолом и оперёнными крыльями. Будучи твёрдо приверженными борьбе между добром и злом, они чувствуют божественность внутри всего, что они держат."
@@ -1160,9 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Эта сладкая мумия была создана путём вымачивания человеческого трупа в меду. Неким образом оживлённая таинственным культом монахов, она смертельна настолько же, насколько и вкусна."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,"Этот странный живой пузырь, наполненный едкой жидкостью, не проявляет агрессии."
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Крошечные крылатые духи, по сути своей волшебные и необычайно красивые. Когда им угрожает опасность, они могут убежать через искажения в пространственной реальности."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Черепахоподобные кочевники-выживальщики, которые покидают место своего рождения с того момента, как научились ходить, чтобы путешествовать по миру с комфортом и надёжным домом на спине."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Уродливые, жестокие существа с людоедскими наклонностями. Эта воинственная раса известна своей впечатляющей силой и отсутствующим умственным потенциалом."
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Несправедливо считающиеся трусливыми и слабыми, эти маленькие рептилоидные существа преодолевают свои физические ограничения, используя злобные и хитрые тактики."
 EntityName,abbot,аббат
 EntityName,acid blob,кислотный пузырь
 EntityName,acid worm,кислотный червь
@@ -1528,7 +1528,7 @@ EntityName,kobold,кобольд
 EntityName,kobold king,кобольд-король
 EntityName,kobold lord,кобольд-лорд
 EntityName,kobold mummy,мумия-кобольд
-EntityName,kobold scout,
+EntityName,kobold scout,кобольд-разведчик
 EntityName,kobold shaman,кобольд-шаман
 EntityName,kobold warrior,кобольд-воин
 EntityName,kobold zombie,зомби-кобольд
@@ -1659,7 +1659,7 @@ EntityName,pit viper,гремучая змея
 EntityName,pixie,пикси
 EntityName,plains centaur,равнинный кентавр
 EntityName,Planetar,Планетар
-EntityName,plasmoid,
+EntityName,plasmoid,плазмоид
 EntityName,plastic golem,пластиковый голем
 EntityName,pony,пони
 EntityName,proudfoot,большеног
@@ -1705,7 +1705,7 @@ EntityName,satyr,сатир
 EntityName,scorpion,скорпион
 EntityName,Scorpius,Скорпиус
 EntityName,scramper,скрампер
-EntityName,seal,
+EntityName,seal,тюлень
 EntityName,sergeant,сержант
 EntityName,sewer rat,канализационная крыса
 EntityName,shade,сумрак
@@ -1761,7 +1761,7 @@ EntityName,tiger,тигр
 EntityName,tigerwere,тигр-оборотень
 EntityName,titan,титан
 EntityName,titanothere,титанотерий
-EntityName,tortle,
+EntityName,tortle,тортл
 EntityName,tracker,преследователь
 EntityName,transmuter,превращатель
 EntityName,trapper,ловец
@@ -2085,7 +2085,7 @@ FormatText,energise {ManaDice},питает энергией {ManaDice}
 FormatText,Equip {CharacterName},Снарядить {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,слава {RecordFame} и {RecordKills} убийств
 FormatText,Feed which item to {CharacterName}?,Чем накормить {CharacterName}?
-FormatText,from {Cause},
+FormatText,from {Cause},из-за {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,получаете {Percent}% сопротивляемости к {ElementName}
 FormatText,gain {TalentName} talent,получаете {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветствуем {CharacterName}, {CharacterDescription}"
@@ -2100,8 +2100,8 @@ FormatText,LOCKED {GATENAME},ЗАПЕРТЫЙ {GATENAME}
 FormatText,not {EffectProperty},не {EffectProperty}
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,восполнение здоровья на {Percent}%
+FormatText,replenish mana from {Percent}%,восполнение маны на {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Воскрешён {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},мстит {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},мстит {Chance} о смерти {AttackType}
@@ -3037,13 +3037,13 @@ KindName,mummy,мумии
 KindName,naga,наги
 KindName,ogre,огры
 KindName,orc,орки
-KindName,plasmoid,
+KindName,plasmoid,плазмоиды
 KindName,pudding,масса
 KindName,quadruped,четвероногие
 KindName,rodent,грызуны
 KindName,snake,змеи
 KindName,spider,пауки
-KindName,tortle,
+KindName,tortle,тортлы
 KindName,trapper,ловцы
 KindName,troll,тролли
 KindName,umber,громилы
@@ -4169,15 +4169,15 @@ RaceName,ogre//non-binary,огр
 RaceName,orc//female,орк
 RaceName,orc//male,орк
 RaceName,orc//non-binary,орк
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,плазмоид
+RaceName,plasmoid//male,плазмоид
+RaceName,plasmoid//non-binary,плазмоид
 RaceName,satyr//female,сатир
 RaceName,satyr//male,сатир
 RaceName,satyr//non-binary,сатир
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,тортл
+RaceName,tortle//male,тортл
+RaceName,tortle//non-binary,тортл
 RaceName,troll//female,тролль
 RaceName,troll//male,тролль
 RaceName,troll//non-binary,тролль
@@ -4351,11 +4351,11 @@ SkillName,unarmed combat,рукопашный бой
 SkillName,whip,кнуты
 SonicName,ammo,боеприпасы
 SonicName,amulet,амулет
-SonicName,arf,
+SonicName,arf,лаяние
 SonicName,armour,броня
 SonicName,baa,меканье
 SonicName,bell,колокольчик
-SonicName,birds,
+SonicName,birds,птицы
 SonicName,bleat,блеяние
 SonicName,blink,мерцание
 SonicName,book,книга
@@ -4370,7 +4370,7 @@ SonicName,burble,бульканье
 SonicName,burn,горение
 SonicName,buzz,жужжание
 SonicName,cackle,хохотание
-SonicName,chains,
+SonicName,chains,гремят
 SonicName,chant,пение
 SonicName,chime,звон
 SonicName,chirp,чириканье
@@ -4384,7 +4384,7 @@ SonicName,creak,скрежет
 SonicName,crumble,разрушается
 SonicName,death,смерть
 SonicName,dice,кость
-SonicName,drips,
+SonicName,drips,капли
 SonicName,drum,барабан
 SonicName,eat,поедание
 SonicName,electricity,электрически
@@ -4420,7 +4420,7 @@ SonicName,kick,пинок
 SonicName,launch grenade,запуск гранаты
 SonicName,launch rocket,запуск ракеты
 SonicName,leather,кожа
-SonicName,leaves,
+SonicName,leaves,листва
 SonicName,lit fuse,перегорание света
 SonicName,locked,запирание
 SonicName,long tap,долгое нажатие
@@ -4449,10 +4449,10 @@ SonicName,rifle burst,огонь из винтовки
 SonicName,rifle shot,выстрел из винтовки
 SonicName,ring,кольцо
 SonicName,roar,рёв
-SonicName,roars,
+SonicName,roars,ревут
 SonicName,scrap,разбор
 SonicName,scrape,шарканье
-SonicName,scrapes,
+SonicName,scrapes,шаркают
 SonicName,scroll,свиток
 SonicName,scuttle,шелестение
 SonicName,sever,отрубание
@@ -4471,11 +4471,11 @@ SonicName,splat,всплеск
 SonicName,squall,верещание
 SonicName,squawk,клёкот
 SonicName,squeak,пищание
-SonicName,squeaks,
+SonicName,squeaks,пищат
 SonicName,squeal,свистение
 SonicName,swallow,глотание
 SonicName,switch,переключение
-SonicName,taps,
+SonicName,taps,стучат
 SonicName,teleport,телепортация
 SonicName,throne,трон
 SonicName,throw grenade,бросание гранаты
@@ -4509,23 +4509,23 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии воды, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,Во время учёбы вы сосредоточились на изучении книг в ущерб другим увлечениям и физической форме.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Синдром главного героя привёл к тому, что он полагается на сюжетную броню, но ему суждено пройти серьёзную проверку реальностью."
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","Созданный из живого стекла, отражающего энергию и свет, вы представляете собой идеальную, но хрупкую копию на себя настоящего."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Каким-то образом всё ещё живое, хотя и без плоти, необходимой для того, чтобы жить по-настоящему, это своеобразное существование имеет некоторые преимущества."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Из пьяниц получаются дерзкие, но слегка неустойчивые авантюристы; только не просите их прочесть алфавит наоборот."
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","Без чёткого ощущения себя в пространстве, вы привыкли ощущать себя везде и всюду одновременно."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Независимо от того, невиновны они или виновны в совершении своих преступлений, эти личности отчаянно пытаются избежать заключения под стражу."
 SpecialName,colossus,гигант
-SpecialName,drunkard,
+SpecialName,drunkard,пьяница
 SpecialName,earth,почва
 SpecialName,flame,пламя
 SpecialName,frost,мороз
 SpecialName,fugitive,беглец
-SpecialName,glass,
+SpecialName,glass,стекло
 SpecialName,midget,карлик
 SpecialName,noble,знатный
 SpecialName,protagonist,протагонист
 SpecialName,psychic,медиум
-SpecialName,quantum,
+SpecialName,quantum,квант
 SpecialName,scholar,учёный
 SpecialName,shock,разряд
 SpecialName,skeleton,скелет

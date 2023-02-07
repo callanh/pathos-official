@@ -13,29 +13,29 @@ AfflictionName,reflux,恶心
 AfflictionName,sliming,史莱姆化
 AfflictionName,worms,蠕虫
 AnatomyAbsenceText,MINDLESS,无意志的
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,没有血
 AnatomyAbsenceText,NO EARS,没有耳朵
 AnatomyAbsenceText,NO EYES,没有眼睛
 AnatomyAbsenceText,NO FEET,没有脚
 AnatomyAbsenceText,NO HANDS,没有手
 AnatomyAbsenceText,NO HEAD,没有头
 AnatomyAbsenceText,NO LIMBS,没有肢体
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,无定形
+AnatomyAbsenceText,NOT MOUNTED,不可骑乘
+AnatomyAbsenceText,NOT WARM,变温
 AnatomyAbsenceText,VOICELESS,无声
 AnatomyName,amorphous,无定形
 AnatomyName,blood,血
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,耳朵
+AnatomyName,eyes,眼睛
+AnatomyName,feet,脚
+AnatomyName,hands,手
+AnatomyName,head,头
+AnatomyName,limbs,肢体
+AnatomyName,mind,有意志
 AnatomyName,mounted,骑乘
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,thermal,恒温
+AnatomyName,voice,有声
 ApetiteName,content,满足
 ApetiteName,hungry,饥饿
 ApetiteName,satiated,饱食
@@ -412,7 +412,7 @@ AttackType,horn,顶撞
 AttackType,kick,踢
 AttackType,punch,拳打
 AttackType,shriek,尖啸
-AttackType,slap,
+AttackType,slap,拍打
 AttackType,spell,魔咒
 AttackType,spit,喷射
 AttackType,splash,溅射
@@ -967,7 +967,7 @@ EffectProperty,hordes,群
 EffectProperty,items,物品
 EffectProperty,kinds,种类
 EffectProperty,lies,假流言
-EffectProperty,loyal only,
+EffectProperty,loyal only,保留盟友关系
 EffectProperty,material,材料
 EffectProperty,materials,材料
 EffectProperty,objects,物品
@@ -1085,11 +1085,11 @@ EffectType,transition,转变
 EffectType,unafflict,治愈感染
 EffectType,unpolymorph,取消变形
 EffectType,unpunish,取消惩罚
-EffectType,unstuck,
+EffectType,unstuck,不再被卡住
 EffectType,visit shop,访问商店
 EffectType,visit shrine,访问神龛
 EffectType,visit zoo,访问动物园
-EffectType,vomit,
+EffectType,vomit,呕吐
 EffectType,warping,传送
 EggName,black dragon,黑龙
 EggName,blue dragon,蓝龙
@@ -1142,7 +1142,7 @@ EncumbranceName,unencumbered,无负担
 EngulfmentName,engulfed,吞入
 EngulfmentName,swallowed,吞咽
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,有远大理想的中体型生物。短命而常见，不要低估它们。
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",可以随意变形的奇妙存在，没有固定的形状，常常被描述为等离子体一样的软泥怪。不过它们经常呈现为半透明的人形，这样就可以使用工具和衣物。
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",躯体庞大的远古种族。他们可怖的体型给他们带来无比的力量，需要靠进食大量肉类与岩石支撑。
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",已故冒险者残留在世间的灵魂。他们已经没有了那种世俗的欲望，因此很乐意与他人分享。对于这些已故的冒险者来说，这是他们的第二次机会，让他们能够继续自己的复仇或是寻求救赎。作为一种灵体，他们体型较大，呈半透明状，并且可以在墙壁中穿梭。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",美丽且与俗世隔绝的生物，谣传他们带有标志型的光圈与带羽毛的翅膀。 他们能在善恶分辨中从容自如，并且能在一切所持的物品中感觉到神性。
@@ -1160,9 +1160,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",这款木乃伊甜点是将人类尸体浸泡在蜂蜜中制成的。不知何故，一种鲜为人知的僧侣崇拜使它复活了，它既致命又美味。
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,这个奇怪的腐蚀性液体泡泡看起来没有任何进攻性。
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",长翅膀的小精灵，天生具有魔力和美貌。在受威胁时，他们可以通过扭曲空间逃脱。
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",他们和乌龟一样背着大大的壳，是天生的游牧生存主义者。从学会走路的那一刻起，他们就会离开家乡去环游世界。无论走到哪里，他们的背后都有家的舒适与庇护。
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",丑陋而残暴的食人物种，好战、强力但愚蠢。
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",大家常常以貌取人，觉得这种矮小的爬行动物软弱而无能。他们用邪恶而狡猾的策略来面对难题，以克服自己身体上的限制。
 EntityName,abbot,修道院长
 EntityName,acid blob,强酸污斑
 EntityName,acid worm,强酸蠕虫
@@ -1528,7 +1528,7 @@ EntityName,kobold,狗头人
 EntityName,kobold king,狗头人之王
 EntityName,kobold lord,狗头人君主
 EntityName,kobold mummy,狗头人木乃伊
-EntityName,kobold scout,
+EntityName,kobold scout,狗头人侦察兵
 EntityName,kobold shaman,狗头人萨满
 EntityName,kobold warrior,狗头人战士
 EntityName,kobold zombie,狗头人僵尸
@@ -1644,7 +1644,7 @@ EntityName,panther,黑豹
 EntityName,pantherwere,豹狼人
 EntityName,paper golem,纸制傀儡
 EntityName,parrot,鹦鹉
-EntityName,pearl golem,
+EntityName,pearl golem,珍珠傀儡
 EntityName,pegasus,天马
 EntityName,Pelias,珀利阿斯
 EntityName,Pestilence,瘟疫
@@ -1659,7 +1659,7 @@ EntityName,pit viper,颊窝毒蛇
 EntityName,pixie,仙子
 EntityName,plains centaur,平原半人马
 EntityName,Planetar,异界神侍
-EntityName,plasmoid,等离子体
+EntityName,plasmoid,凝质体
 EntityName,plastic golem,塑料傀儡
 EntityName,pony,小马
 EntityName,proudfoot,普劳德富特
@@ -1705,7 +1705,7 @@ EntityName,satyr,山羊人
 EntityName,scorpion,蝎子
 EntityName,Scorpius,天蝎座
 EntityName,scramper,多面者
-EntityName,seal,
+EntityName,seal,海豹
 EntityName,sergeant,中士
 EntityName,sewer rat,褐鼠
 EntityName,shade,阴影
@@ -1761,7 +1761,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,虎狼人
 EntityName,titan,泰坦巨人
 EntityName,titanothere,雷兽
-EntityName,tortle,
+EntityName,tortle,龟行者
 EntityName,tracker,猎人
 EntityName,transmuter,变形术士
 EntityName,trapper,陷阱魔
@@ -2027,10 +2027,10 @@ FormatText,{CharacterName} was released from {PunishmentName},{CharacterName} �
 FormatText,{CharacterName} was relieved from {AfflictionName},{CharacterName} 从 {AfflictionName} 中恢复
 FormatText,{CharacterName} was revived!,{CharacterName} 被拯救了!
 FormatText,{CharacterName} woke up,{CharacterName} 醒来了
-FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} 设法使用并摧毁了 {AssetName}
+FormatText,{CharacterName} wrested one more use from the {AssetName},{CharacterName} 在试图使用 {AssetName} 时不慎将其摧毁
 FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
 FormatText,"{CharacterName}, {ShrineName}","{CharacterName}, {ShrineName}"
-FormatText,{Defender:CharacterName} condemns the desecration by {Attacker:CharacterName},{Defender:CharacterName} 谴责了 {Attacker:CharacterName} 的亵渎行为。
+FormatText,{Defender:CharacterName} condemns the desecration by {Attacker:CharacterName},{Defender:CharacterName} 谴责了 {Attacker:CharacterName} 的亵渎行为
 FormatText,{Defender:CharacterName} was {EngulfmentName} by {Attacker:CharacterName},{Defender:CharacterName} 被 {Attacker:CharacterName} {EngulfmentName}
 FormatText,{Defender:CharacterName} was decapitated by {Attacker:CharacterName},{Defender:CharacterName} 被 {Attacker:CharacterName} 斩首
 FormatText,{Defender:CharacterName} was expelled by {Attacker:CharacterName},{Defender:CharacterName} 被 {Attacker:CharacterName} 吐出
@@ -2068,7 +2068,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} 消化
 FormatText,{StrikeName} strike,{StrikeName} 攻击
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} 从 {Victim:CharacterName} 身上偷取了 {AssetName}
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} 从 {Victim:CharacterName} 身上偷走了所有物品
 FormatText,{WeightUnits} kg,{WeightUnits} 公斤
 FormatText,{WeightUnits} lbs,{WeightUnits} 斤
 FormatText,after reaching dungeon level {RecordDepth},最深到达过 {RecordDepth} 层
@@ -2085,7 +2085,7 @@ FormatText,energise {ManaDice},获得mp{ManaDice}
 FormatText,Equip {CharacterName},装备 {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,一共获得 {RecordFame} 点名望，杀死 {RecordKills} 个怪物
 FormatText,Feed which item to {CharacterName}?,给 {CharacterName} 喂食什么？
-FormatText,from {Cause},
+FormatText,from {Cause},由于 {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,获得 {Percent}% 的 {ElementName}抗性
 FormatText,gain {TalentName} talent,获得 {TalentName} 天赋
 FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{CharacterName} ，{CharacterDescription}
@@ -2100,8 +2100,8 @@ FormatText,LOCKED {GATENAME},上锁的 {GATENAME}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
 FormatText,range {Dice},范围 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,从{Percent}%起补满生命值
+FormatText,replenish mana from {Percent}%,从{Percent}%起补满魔法值
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","复活了 {CharacterName} , {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},复仇 {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},复仇 {Chance} 死亡时 {AttackType}
@@ -2126,7 +2126,7 @@ FormatText,when {MATERIALNAME},当 {MATERIALNAME}
 FormatText,when {PROPERTYNAME},当 {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},当 {SANCTITYNAME}
 FormatText,when {Something},为{Something}
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},当对 {ElementName} 免疫时
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,这扇门是用水晶造成的，很难损坏。
 GateName,crystal door,水晶门
 GateName,wooden door,木制门
@@ -3037,13 +3037,13 @@ KindName,mummy,木乃伊
 KindName,naga,娜迦
 KindName,ogre,食人魔
 KindName,orc,兽人
-KindName,plasmoid,
+KindName,plasmoid,凝质体
 KindName,pudding,凝胶
 KindName,quadruped,四足动物
 KindName,rodent,啮齿动物
 KindName,snake,蛇
 KindName,spider,蜘蛛
-KindName,tortle,
+KindName,tortle,乌龟人
 KindName,trapper,陷阱魔
 KindName,troll,巨魔
 KindName,umber,巨怪
@@ -3640,7 +3640,7 @@ LiteralText,RETURN,返回
 LiteralText,RE-USE,重新使用
 LiteralText,REVEAL,揭露
 LiteralText,REVEAL ALL MAPS,对所有楼层使用魔法地图
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,对本楼层使用魔法地图
 LiteralText,revealed,不隐藏
 LiteralText,REVERT,复原
 LiteralText,RIGHT RING,右手戒指
@@ -3823,8 +3823,8 @@ LiteralText,was strangled,被勒住了
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,当被感染
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,为活物时
+LiteralText,when confused,当混乱时
 LiteralText,when dropped,当丢弃时
 LiteralText,when entered,当进入时
 LiteralText,when exhausted,当耗尽时
@@ -3976,7 +3976,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,凝视与射线被反射回施加者身上。
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,给予你对于附近怪物以及他们危险程度的预先警告。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,你被恐惧攫住，无法攻击，应该逃离。
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",在这种醉醺醺的状态下，你大大增强的自信心无法掩盖判断力严重受损的事实。
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,你在地牢中的脚步沉静无声，可以让你从睡眠中的怪物身边潜行而过。
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,阻止你变形，同时也阻止你变回你原来的形态。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",使你得以避免缓慢、麻痹以及其他束缚你行动的状态。
@@ -4169,15 +4169,15 @@ RaceName,ogre//non-binary,食人魔
 RaceName,orc//female,兽人
 RaceName,orc//male,兽人
 RaceName,orc//non-binary,兽人
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,凝质体
+RaceName,plasmoid//male,凝质体
+RaceName,plasmoid//non-binary,凝质体
 RaceName,satyr//female,山羊人
 RaceName,satyr//male,山羊人
 RaceName,satyr//non-binary,山羊人
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,龟行者
+RaceName,tortle//male,龟行者
+RaceName,tortle//non-binary,龟行者
 RaceName,troll//female,巨魔
 RaceName,troll//male,巨魔
 RaceName,troll//non-binary,奥利给
@@ -4351,11 +4351,11 @@ SkillName,unarmed combat,徒手格斗
 SkillName,whip,鞭
 SonicName,ammo,弹药
 SonicName,amulet,护符
-SonicName,arf,
+SonicName,arf,海豹叫
 SonicName,armour,装甲
 SonicName,baa,嚎叫
 SonicName,bell,响铃铛
-SonicName,birds,
+SonicName,birds,鸟叫
 SonicName,bleat,咩咩地叫
 SonicName,blink,闪现
 SonicName,book,书籍
@@ -4370,7 +4370,7 @@ SonicName,burble,发出咕噜声
 SonicName,burn,火焰灼烧
 SonicName,buzz,发出嗡嗡声
 SonicName,cackle,咯咯地叫
-SonicName,chains,
+SonicName,chains,锁链声
 SonicName,chant,吟唱
 SonicName,chime,鸣响
 SonicName,chirp,叽叽喳喳地叫
@@ -4384,7 +4384,7 @@ SonicName,creak,发声板
 SonicName,crumble,悉悉索索
 SonicName,death,死亡
 SonicName,dice,骰子
-SonicName,drips,
+SonicName,drips,滴答声
 SonicName,drum,击鼓
 SonicName,eat,食用食物
 SonicName,electricity,电击
@@ -4420,7 +4420,7 @@ SonicName,kick,踢
 SonicName,launch grenade,发射榴弹
 SonicName,launch rocket,发射火箭
 SonicName,leather,皮革
-SonicName,leaves,
+SonicName,leaves,沙沙声
 SonicName,lit fuse,点燃引线
 SonicName,locked,上锁
 SonicName,long tap,长按
@@ -4449,10 +4449,10 @@ SonicName,rifle burst,来福枪开火
 SonicName,rifle shot,来福枪射击
 SonicName,ring,戒指
 SonicName,roar,咆哮
-SonicName,roars,
+SonicName,roars,咆哮
 SonicName,scrap,分解
 SonicName,scrape,刮擦
-SonicName,scrapes,
+SonicName,scrapes,刮擦声
 SonicName,scroll,卷轴
 SonicName,scuttle,疾行
 SonicName,sever,切割声
@@ -4471,11 +4471,11 @@ SonicName,splat,飞溅
 SonicName,squall,吐息
 SonicName,squawk,发牢骚
 SonicName,squeak,吱吱地叫
-SonicName,squeaks,
+SonicName,squeaks,吱吱响
 SonicName,squeal,尖叫
 SonicName,swallow,吞咽
 SonicName,switch,开关
-SonicName,taps,
+SonicName,taps,点击
 SonicName,teleport,传送
 SonicName,throne,王座
 SonicName,throw grenade,丢雷
@@ -4509,10 +4509,10 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",与水球侍灵高度契合，他们可以召唤水球侍灵为他们而战。
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,毕生的研习让你把精力都放在了书本上，忽视了其他爱好以及身体锻炼。
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,主角综合征让你坚信自己拥有主角光环，只是你的主角光环必须得通过一次现实的检验。
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",你的身体由活玻璃雕刻而成，完美地再现了你同族的模样，能够将光线与能量折射回去。
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.",虽然身上一块肉都没有，但从某种意义上来说还算是活着。这种奇特的体质会为你带来一些优势。
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,你是一位经常喝醉的冒险家，厚脸皮掩盖不住脚下的不稳；在你看来，你只是没办法倒背字母表而已。
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",你无法确定自己的位置，已经适应了同时存在于任何地方的生活。
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.",无论自己是不是无辜的，这些囚犯们都会想方设法越狱。
 SpecialName,colossus,高大魁梧
 SpecialName,drunkard,踉跄酒鬼
