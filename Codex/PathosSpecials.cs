@@ -65,7 +65,7 @@ namespace Pathos
         S.Glyph = Glyphs.colossus;
 
         S.LifeAdvancement.Set(Dice.Zero + 2);
-        S.SpeedRateDelta = -0.5F;
+        S.SpeedRateDelta = -0.25F;
         S.WeightMultiplier = 1.50F;
         S.DefenceModifier = Modifier.Plus1;
       });
@@ -114,7 +114,7 @@ namespace Pathos
         S.Glyph = Glyphs.midget;
 
         S.LifeAdvancement.Set(Dice.Zero - 1);
-        S.SpeedRateDelta = +0.5F;
+        S.SpeedRateDelta = +0.25F;
         S.WeightMultiplier = 0.75F;
         S.AttackModifier = Modifier.Minus1;
       });
