@@ -1022,7 +1022,6 @@ EffectType,create nook,tạo nắm cửa
 EffectType,create trap,tạo bẫy
 EffectType,create wall,tạo tường
 EffectType,decapitate,chặt đầu
-EffectType,decrease ability,giảm chỉ số
 EffectType,degrade,xuống cấp
 EffectType,destroy asset,phá hủy vật
 EffectType,destroy wall,phá hủy tường
@@ -1046,7 +1045,6 @@ EffectType,hatch,nở
 EffectType,identify,định danh
 EffectType,impersonate,diễn theo
 EffectType,incarcerate,nhốt
-EffectType,increase ability,tăng chỉ số
 EffectType,karma,nghiệp
 EffectType,learn spell,học phép thuật
 EffectType,liberate,thả ra
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật p
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Chúc mừng bạn đã hoàn thành nhiệm vụ {QuestName}!
 FormatText,cripple {AttributeName},suy giảm {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},tan biến {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},rơi {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},hồi phục {ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Kính chào {Characte
 FormatText,Hail {PlayerHandle}!,Kính chào {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},gây sát thương {ElementName} {DamageDice}
 FormatText,heal {LifeDice},hồi {LifeDice} sinh lực
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},tầng {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},cấp {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},từ tầng {From} đến {To}

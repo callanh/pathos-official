@@ -1,3 +1,8 @@
+2023-02-10
+- eating a scroll of enchantment now uses BUC to determine effects (blessed: increase all attributes, uncursed: 50% chance to increase one ability, otherwise will decrease one ability, cursed: decrease all attributes).
+- eating non-food items now has a CONFIRM phase (to help prevent your plasmoid from accidentally eating the shirt off their own back, etc).
+- studio can now set any talent on a character (no longer just 'sleeping').
+
 2023-02-08
 - colossus special speed penalty reduced from -0.50 to -0.25.
 - midget special speed bonus reduced from +0.50 to +0.25.

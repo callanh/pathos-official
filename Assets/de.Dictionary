@@ -1022,7 +1022,6 @@ EffectType,create nook,eine Ecke erstellen
 EffectType,create trap,Falle erstellen
 EffectType,create wall,Wand erstellen
 EffectType,decapitate,
-EffectType,decrease ability,Fähigkeit verringern
 EffectType,degrade,degradieren
 EffectType,destroy asset,Vermögen zerstören
 EffectType,destroy wall,Wand zerstören
@@ -1046,7 +1045,6 @@ EffectType,hatch,Luke
 EffectType,identify,identifizieren
 EffectType,impersonate,imitieren
 EffectType,incarcerate,inhaftieren
-EffectType,increase ability,Fähigkeit erhöhen
 EffectType,karma,Karma
 EffectType,learn spell,Zauber lernen
 EffectType,liberate,befreien
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,zaubern {SpellName} mit welchem Gegen
 FormatText,Cast {SpellName} which direction?,zaubern {SpellName} in welche Richtung?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Herzlichen Glückwunsch zum Ende des {QuestName} !
 FormatText,cripple {AttributeName},verkrüppelt {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
 FormatText,drop {BlockName} {ElementName} {DamageDice},fallengelassen {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Grüße {CharacterNam
 FormatText,Hail {PlayerHandle}!,Grüße {PlayerHandle} !
 FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},Ebene {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},Ebene {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},

@@ -1022,7 +1022,6 @@ EffectType,create nook,kuytu köşe yarat
 EffectType,create trap,tuzak yarat
 EffectType,create wall,duvar yarat
 EffectType,decapitate,uzuv kaybet
-EffectType,decrease ability,kabiliyeti azalt
 EffectType,degrade,indirge
 EffectType,destroy asset,varlığı yoket
 EffectType,destroy wall,duvarı yok et
@@ -1046,7 +1045,6 @@ EffectType,hatch,kabuğu kır
 EffectType,identify,tanımla
 EffectType,impersonate,taklit et
 EffectType,incarcerate,hapset
-EffectType,increase ability,kabiliyeti yükselt
 EffectType,karma,karma
 EffectType,learn spell,büyü öğren
 EffectType,liberate,özgürleştir
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Tebrikler! {QuestName} 'in sonuna ulaştın!
 FormatText,cripple {AttributeName},{AttributeName}'i zayıflat
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
 FormatText,drop {BlockName} {ElementName} {DamageDice},bırak {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Hoşgeldin {Character
 FormatText,Hail {PlayerHandle}!,Hoşgeldin {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},seviye {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},seviye {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},

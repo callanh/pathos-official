@@ -1022,7 +1022,6 @@ EffectType,create nook,створити затишне містечко
 EffectType,create trap,створює пастку
 EffectType,create wall,створити стіну
 EffectType,decapitate,
-EffectType,decrease ability,зменшує значення характеристики
 EffectType,degrade,погіршитися
 EffectType,destroy asset,знищує цінність
 EffectType,destroy wall,знищує стіну
@@ -1046,7 +1045,6 @@ EffectType,hatch,вилупляється
 EffectType,identify,пізнає
 EffectType,impersonate,імітує
 EffectType,incarcerate,ув’язнює
-EffectType,increase ability,збільшує характеристику
 EffectType,karma,карма
 EffectType,learn spell,вчить заклинання
 EffectType,liberate,звільняє
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} н
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Вітаємо із завершенням {QuestName}!
 FormatText,cripple {AttributeName},скалічило {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
 FormatText,drop {BlockName} {ElementName} {DamageDice},викинути {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Вітаємо {Chara
 FormatText,Hail {PlayerHandle}!,"Вітаємо, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},рівень {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},рівень {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},

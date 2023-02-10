@@ -1022,7 +1022,6 @@ EffectType,create nook,
 EffectType,create trap,създай ловушку
 EffectType,create wall,
 EffectType,decapitate,
-EffectType,decrease ability,уменьшает значение характеристики
 EffectType,degrade,
 EffectType,destroy asset,уничтожает ценность
 EffectType,destroy wall,
@@ -1046,7 +1045,6 @@ EffectType,hatch,
 EffectType,identify,опознаёт
 EffectType,impersonate,имитирует
 EffectType,incarcerate,
-EffectType,increase ability,увеличивает значение характеристики
 EffectType,karma,карма
 EffectType,learn spell,учит заклинание
 EffectType,liberate,
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Применить {SpellName} на �
 FormatText,Cast {SpellName} which direction?,Применить {SpellName} в каком направлении?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
 FormatText,drop {BlockName} {ElementName} {DamageDice},выкинуть {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветству�
 FormatText,Hail {PlayerHandle}!,Приветствуем {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},
 FormatText,levels {From}-{To},

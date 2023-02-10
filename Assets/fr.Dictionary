@@ -1022,7 +1022,6 @@ EffectType,create nook,créer un coin
 EffectType,create trap,crée un piège
 EffectType,create wall,crée un mur
 EffectType,decapitate,décapitation
-EffectType,decrease ability,diminution de la capacité
 EffectType,degrade,dégradation
 EffectType,destroy asset,détruit une possession
 EffectType,destroy wall,détruire mur
@@ -1046,7 +1045,6 @@ EffectType,hatch,couver
 EffectType,identify,identifie
 EffectType,impersonate,usurpe l'identité
 EffectType,incarcerate,emprisonne
-EffectType,increase ability,augmenter la capacité
 EffectType,karma,karma
 EffectType,learn spell,apprend le sortilège
 EffectType,liberate,libère
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Félicitations pour avoir atteint la fin du {QuestName} !
 FormatText,cripple {AttributeName},handicape {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},diminue {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},déposer {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},énergise {ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Salutations {Characte
 FormatText,Hail {PlayerHandle}!,Salutations {PlayerHandle} !
 FormatText,harm {ElementName} {DamageDice},endommage {ElementName} {DamageDice}
 FormatText,heal {LifeDice},guérit {LifeDice}
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},niveau {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},niveau {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},niveaux {From}-{To}

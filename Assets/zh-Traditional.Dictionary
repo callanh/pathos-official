@@ -1022,7 +1022,6 @@ EffectType,create nook,製造角落
 EffectType,create trap,製造陷阱
 EffectType,create wall,製造牆壁
 EffectType,decapitate,斬首
-EffectType,decrease ability,能力降低
 EffectType,degrade,降級
 EffectType,destroy asset,摧毀物件
 EffectType,destroy wall,摧毀牆壁
@@ -1046,7 +1045,6 @@ EffectType,hatch,孵化
 EffectType,identify,鑒定
 EffectType,impersonate,模仿
 EffectType,incarcerate,禁錮
-EffectType,increase ability,提高能力
 EffectType,karma,運氣
 EffectType,learn spell,習得咒語
 EffectType,liberate,解放
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,對哪個物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪個方向使用 {SpellName} ？
 FormatText,Congratulations on reaching the end of the {QuestName}!,恭喜，您已通關冒險 {QuestName}！
 FormatText,cripple {AttributeName},損害{AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},扣除mp {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},掉落 {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},獲得mp{ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{Charac
 FormatText,Hail {PlayerHandle}!,向你致敬，{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},傷害{ElementName}{DamageDice}
 FormatText,heal {LifeDice},治療 {LifeDice}
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},樓層 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Level} 級 {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},等級{From}-{To}

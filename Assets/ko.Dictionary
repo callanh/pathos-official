@@ -1022,7 +1022,6 @@ EffectType,create nook,구석 생성
 EffectType,create trap,함정 생성
 EffectType,create wall,벽 생성
 EffectType,decapitate,참수
-EffectType,decrease ability,능력치 감소
 EffectType,degrade,약화
 EffectType,destroy asset,아이템 파괴
 EffectType,destroy wall,벽 파괴
@@ -1046,7 +1045,6 @@ EffectType,hatch,부화
 EffectType,identify,식별
 EffectType,impersonate,사칭
 EffectType,incarcerate,투옥
-EffectType,increase ability,능력치 향상
 EffectType,karma,카르마
 EffectType,learn spell,주문 학습
 EffectType,liberate,해방
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
 FormatText,Congratulations on reaching the end of the {QuestName}!,{QuestName} 퀘스트의 끝에 도달하신 것을 축하드립니다!
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},{ManaDice} 마나 감소
 FormatText,drop {BlockName} {ElementName} {DamageDice},{BlockName}가 떨어져 {ElementName}속성 {DamageDice}피해를 입음
 FormatText,energise {ManaDice},{ManaDice} 마나 증가
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","{CharacterDescription
 FormatText,Hail {PlayerHandle}!,{PlayerHandle}님 환영합니다!
 FormatText,harm {ElementName} {DamageDice},{ElementName}속성 피해 {DamageDice}
 FormatText,heal {LifeDice},{LifeDice} 회복
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},레벨 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},레벨 {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},레벨 {From}-{To}

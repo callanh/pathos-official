@@ -1022,7 +1022,6 @@ EffectType,create nook,
 EffectType,create trap,สร้างกับดัก
 EffectType,create wall,
 EffectType,decapitate,
-EffectType,decrease ability,ลดความสามารถ
 EffectType,degrade,ลดคุณภาพ
 EffectType,destroy asset,
 EffectType,destroy wall,
@@ -1046,7 +1045,6 @@ EffectType,hatch,ฟัก
 EffectType,identify,ระบุ
 EffectType,impersonate,
 EffectType,incarcerate,
-EffectType,increase ability,เพิ่มความสามารถ
 EffectType,karma,กรรม
 EffectType,learn spell,เรียนเวท
 EffectType,liberate,
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไ�
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
 FormatText,Congratulations on reaching the end of the {QuestName}!,
 FormatText,cripple {AttributeName},
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
 FormatText,drop {BlockName} {ElementName} {DamageDice},
 FormatText,energise {ManaDice},
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",
 FormatText,Hail {PlayerHandle}!,
 FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},นที่ {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{EntityName}{SpecialName}{GenderName}อาชีพ{ClassName}เลเวล {Level}
 FormatText,levels {From}-{To},

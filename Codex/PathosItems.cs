@@ -6273,7 +6273,7 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.IncreaseAbilities(Attributes.List, Dice.One),
+            B => B.IncreaseAllAbilities(Dice.One),
             U => U.IncreaseOneAbility(Dice.One),
             C => C.DecreaseOneAbility(Dice.One)
           );
@@ -8194,9 +8194,15 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.WhenChance(Chance.OneIn2,
-            T => T.IncreaseAbilities(Attributes.List, Dice.One),
-            E => E.IncreaseOneAbility(Dice.One));
+          A.WithSourceSanctity
+          (
+            B => B.IncreaseAllAbilities(Dice.One),
+            U => U.WhenChance(Chance.OneIn2,
+              T => T.IncreaseOneAbility(Dice.One),
+              E => E.DecreaseOneAbility(Dice.One)
+            ),
+            C => C.DecreaseAllAbilities(Dice.One)
+          );          
         });
       });
 

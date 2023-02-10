@@ -1022,7 +1022,6 @@ EffectType,create nook,隠し小路を作成
 EffectType,create trap,罠を作成する
 EffectType,create wall,壁を作成
 EffectType,decapitate,首はね
-EffectType,decrease ability,能力を下げる
 EffectType,degrade,劣化する
 EffectType,destroy asset,持ち物が壊れる
 EffectType,destroy wall,壁を破壊
@@ -1046,7 +1045,6 @@ EffectType,hatch,孵化
 EffectType,identify,識別する
 EffectType,impersonate,なりすまし
 EffectType,incarcerate,収監する
-EffectType,increase ability,能力を上げる
 EffectType,karma,カルマ
 EffectType,learn spell,呪文を学ぶ
 EffectType,liberate,解放する
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}を�
 FormatText,Cast {SpellName} which direction?,{SpellName}をどの方向に魔法を使いますか？
 FormatText,Congratulations on reaching the end of the {QuestName}!,{QuestName}が終わりました。おめでとうございます。
 FormatText,cripple {AttributeName},{AttributeName}を無効にする
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},マナ消費 {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},ドロップ{BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},マナ回復 {ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",ようこそ{Character
 FormatText,Hail {PlayerHandle}!,ようこそ{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice}
 FormatText,heal {LifeDice},ライフ回復 {LifeDice}
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},階層 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レベル{Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},レベルの差 {From} から {To}

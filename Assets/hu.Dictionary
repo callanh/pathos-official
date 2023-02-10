@@ -1022,7 +1022,6 @@ EffectType,create nook,bemélyedést hoz létre:
 EffectType,create trap,csapdát hoz létre
 EffectType,create wall,falat hoz létre
 EffectType,decapitate,lefejezés
-EffectType,decrease ability,adottság csökkenése:
 EffectType,degrade,gyengítés
 EffectType,destroy asset,eszköz elpusztítása
 EffectType,destroy wall,fal elpusztítása
@@ -1046,7 +1045,6 @@ EffectType,hatch,kikeltés
 EffectType,identify,azonosítás
 EffectType,impersonate,utánzás
 EffectType,incarcerate,bebörtönzés
-EffectType,increase ability,adottságnövelés
 EffectType,karma,karma
 EffectType,learn spell,megtanult varázslat:
 EffectType,liberate,felszabadítás
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {S
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
 FormatText,Congratulations on reaching the end of the {QuestName}!,"Gratulálok, hogy elérted a(z) {QuestName} kaland végét!"
 FormatText,cripple {AttributeName},megbénítja a következőt: {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},csökkentés {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},ledob: {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},energizálás {ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Üdv, {CharacterName}
 FormatText,Hail {PlayerHandle}!,"Üdv, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},sebzés {ElementName} {DamageDice}
 FormatText,heal {LifeDice},gyógyítás {LifeDice}
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},{Depth}. szint
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Level}. szintű {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},{From}.-{To}. szint

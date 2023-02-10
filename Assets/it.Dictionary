@@ -1022,7 +1022,6 @@ EffectType,create nook,creare un angolo
 EffectType,create trap,creare trappola
 EffectType,create wall,creare muro
 EffectType,decapitate,decapita
-EffectType,decrease ability,diminuire la capacità
 EffectType,degrade,degradare
 EffectType,destroy asset,distruggere la risorsa
 EffectType,destroy wall,distruggere il muro
@@ -1046,7 +1045,6 @@ EffectType,hatch,schiudere
 EffectType,identify,identificare
 EffectType,impersonate,impersonare
 EffectType,incarcerate,incarcerare
-EffectType,increase ability,aumentare la capacità
 EffectType,karma,karma
 EffectType,learn spell,impara l'incantesimo
 EffectType,liberate,liberare
@@ -2079,6 +2077,9 @@ FormatText,Cast {SpellName} on which item?,Lancia {SpellName} su quale oggetto?
 FormatText,Cast {SpellName} which direction?,Lancia {SpellName} in quale direzione?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Congratulazioni per aver terminato {QuestName}!
 FormatText,cripple {AttributeName},peggiora {AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},
+FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},diminuisci {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},fai cadere {BlockName} {DamageDice} {ElementName}
 FormatText,energise {ManaDice},energizza {ManaDice}
@@ -2092,6 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Ave {CharacterName}, 
 FormatText,Hail {PlayerHandle}!,Ave {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},danneggia {DamageDice} {ElementName}
 FormatText,heal {LifeDice},cura {LifeDice}
+FormatText,increase {AttributeName} by {AdjustmentDice},
+FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},
 FormatText,level {Depth},{Depth}° piano
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},livello {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},livelli {From}-{To}
