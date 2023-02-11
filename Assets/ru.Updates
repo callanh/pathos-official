@@ -1,3 +1,7 @@
+2023-02-11
+- searching talent is no longer active when you are motionless (paralysed, sleeping, fainting).
+- body weight, damage and defence is now scaled when you are polymorphed into an entity that is of a higher/lower level (eg. level 1 character polymorphed into an adult red dragon: weight 125 lbs, defence 5, -19 damage to each claw/bite attack).
+
 2023-02-10
 - eating a scroll of enchantment now uses BUC to determine effects (blessed: increase all attributes, uncursed: 50% chance to increase one ability, otherwise will decrease one ability, cursed: decrease all attributes).
 - eating non-food items now has a CONFIRM phase (to help prevent your plasmoid from accidentally eating the shirt off their own back, etc).

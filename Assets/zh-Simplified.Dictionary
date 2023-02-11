@@ -2077,9 +2077,9 @@ FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
 FormatText,Congratulations on reaching the end of the {QuestName}!,恭喜，您已通关冒险 {QuestName}！
 FormatText,cripple {AttributeName},损害{AttributeName}
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
+FormatText,decrease one ability by {AdjustmentDice},一项能力降低 {AdjustmentDice}
 FormatText,diminish {ManaDice},扣除mp {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},掉落 {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},获得mp{ManaDice}
@@ -2093,9 +2093,9 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{Charac
 FormatText,Hail {PlayerHandle}!,向你致敬，{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},伤害{ElementName}{DamageDice}
 FormatText,heal {LifeDice},治疗 {LifeDice}
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}提升 {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},所有能力提升 {AdjustmentDice}
+FormatText,increase one ability by {AdjustmentDice},一项能力提升 {AdjustmentDice}
 FormatText,level {Depth},楼层 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Level} 级 {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},等级{From}-{To}
