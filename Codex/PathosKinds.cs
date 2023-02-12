@@ -70,7 +70,7 @@ namespace Pathos
       imp = AddLivingKind("imp");
       jelly = AddLivingKind("jelly");
       kobold = AddLivingKind("kobold");
-      lich = AddLivingKind("lich");
+      lich = AddUndeadKind("lich");
       light = AddLivingKind("light");
       lizard = AddLivingKind("lizard");
       lycanthrope = AddLivingKind("lycanthrope");
