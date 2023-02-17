@@ -19,17 +19,18 @@ namespace Pathos
         G.Name = "standard";
         G.Unique = false;
         G.Indestructable = false;
-        G.MinimumEnchantment = Rules.MinimumEnchantmentModifier;
-        G.MaximumEnchantment = Rules.MaximumEnchantmentModifier;
+        G.MinimumEnchantment = Modifier.Minus5;
+        G.MaximumEnchantment = Modifier.Plus5;
       });
+
 
       artifact = Register.Add(G =>
       {
         G.Name = "artifact";
         G.Unique = true;
         G.Indestructable = true;
-        G.MinimumEnchantment = Rules.MinimumArtifactModifier;
-        G.MaximumEnchantment = Rules.MaximumArtifactModifier;
+        G.MinimumEnchantment = Modifier.FromRank(-10);
+        G.MaximumEnchantment = Modifier.FromRank(+10);
       });
     }
 #endif
@@ -38,4 +39,3 @@ namespace Pathos
     public readonly Grade artifact;
   }
 }
-

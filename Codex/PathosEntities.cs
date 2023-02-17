@@ -16091,7 +16091,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddReaction(Chance.Always, Elements.water, A => A.Harm(Elements.physical, 10.d10())); // TODO: I'm melting!
+        E.AddReaction(Chance.Always, Elements.water, A => A.Death(Elements.water, new Kind[] { }, Strikes.death, DeathSupport.melting));
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d10());
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
