@@ -13,29 +13,29 @@ AfflictionName,reflux,胃酸の逆流
 AfflictionName,sliming,スライムまみれ
 AfflictionName,worms,寄生虫
 AnatomyAbsenceText,MINDLESS,思慮のない
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,血が流れていない
 AnatomyAbsenceText,NO EARS,耳はない
 AnatomyAbsenceText,NO EYES,目はない
 AnatomyAbsenceText,NO FEET,足はない
 AnatomyAbsenceText,NO HANDS,手はない
 AnatomyAbsenceText,NO HEAD,頭がない
 AnatomyAbsenceText,NO LIMBS,手足がない
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,不定形ではない
+AnatomyAbsenceText,NOT MOUNTED,騎乗できない
+AnatomyAbsenceText,NOT WARM,恒温ではない
 AnatomyAbsenceText,VOICELESS,無声
 AnatomyName,amorphous,形の無い
 AnatomyName,blood,血液
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,耳
+AnatomyName,eyes,眼
+AnatomyName,feet,足
+AnatomyName,hands,手
+AnatomyName,head,頭
+AnatomyName,limbs,手足
+AnatomyName,mind,意識
 AnatomyName,mounted,騎乗できる
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,thermal,恒温
+AnatomyName,voice,声
 ApetiteName,content,満足
 ApetiteName,hungry,空腹
 ApetiteName,satiated,満腹
@@ -362,7 +362,7 @@ AppearanceName,thin cake,薄いケーキ
 AppearanceName,thonged club,トーンクラブ
 AppearanceName,three-pointed polearm,三つ又の長い武器
 AppearanceName,throwing axe,投げ斧
-AppearanceName,throwing disc,
+AppearanceName,throwing disc,投げやすい円盤
 AppearanceName,throwing spear,投げ槍
 AppearanceName,throwing star,星状の投げもの
 AppearanceName,throwing stick,投げ棒
@@ -412,7 +412,7 @@ AttackType,horn,角
 AttackType,kick,キック
 AttackType,punch,パンチ
 AttackType,shriek,悲鳴
-AttackType,slap,
+AttackType,slap,はたく
 AttackType,spell,呪文
 AttackType,spit,唾を吐く
 AttackType,splash,しぶき
@@ -967,7 +967,7 @@ EffectProperty,hordes,大群
 EffectProperty,items,アイテム
 EffectProperty,kinds,種類
 EffectProperty,lies,うそをつく
-EffectProperty,loyal only,
+EffectProperty,loyal only,味方だけ
 EffectProperty,material,素材
 EffectProperty,materials,材料
 EffectProperty,objects,物
@@ -1083,12 +1083,12 @@ EffectType,transition,変化
 EffectType,unafflict,争わない
 EffectType,unpolymorph,不変
 EffectType,unpunish,罰する
-EffectType,unstuck,
+EffectType,unstuck,抜け出す
 EffectType,visit shop,お店を訪問
 EffectType,visit shrine,お宮参り
 EffectType,visit zoo,動物園を訪問
-EffectType,vomit,
-EffectType,warping,折り返し
+EffectType,vomit,おう吐
+EffectType,warping,ダンジョン変容
 EggName,black dragon,ブラックドラゴン
 EggName,blue dragon,ブルードラゴン
 EggName,deep dragon,ディープドラゴン
@@ -1140,7 +1140,7 @@ EncumbranceName,unencumbered,邪魔にならない
 EngulfmentName,engulfed,吸い込んだ
 EngulfmentName,swallowed,飲み込んだ
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,大きな野心を抱きやすい中型のクリーチャー。短命だがどこにでもある。過小評価されることはありません。
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",ほぼ透明かつ不定形の存在。しばしば人型の形状をとることで、どう見てもべちゃっとした血しょうのような物体でしかないその体に衣服をまとったり道具を使用したりすることを可能にしている。
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",そびえ立つ古代の人種は後退します。彼らの恐ろしいサイズは彼らに肉とミネラルの貪欲な食事療法によって補われて彼らに莫大な強さを与えます。
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",「特徴的な円光と羽がを持つ、美しい異世界の存在。善と悪の闘争に強く順応し、彼らは自分の中に神性を感じています
@@ -1148,19 +1148,19 @@ EntityDescription,Beware this clockwork machine of war.,この殺戮マシーン
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",その祖先の先祖が文明が誕生するずっと前から世界を支配していた、大きくて肉食的な爬虫類。彼らは恐ろしい捕食者であり、印象的な距離を飛び越え、その厚い鱗状の皮で多くの攻撃を防ぐことができます。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",「多くの異常を伴うが、常に深紅色の皮と角を持つ邪悪な生き物。彼らのちょっとした影響力は、最も暗い、最も暴力的な欲望から振舞うように他人を強いる。」
-EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、特にどんな傷を付けようとも見る間に元に戻ってしまうゴムのような厚皮の厄介さは世に広く知られるところである。
+EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、肉体を覆うゴムのような厚皮はどんな傷を付けられようとも見る間に元に戻ってしまうことで特に厄介がられている。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",詐欺的な才能で繁栄する、形を変える悪魔。
 EntityDescription,"Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.",単純な生活を好む小人。彼らは特に大雑把であり、そして彼らの造りは彼らを貴族以下の努力に向いているものにしています。
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",霊的存在は自然と魔法が好きです。それらは物理的には人間に似ていますが、しばしば小さくて軽快です。
 EntityDescription,"Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.",頑丈で、短く、そして丈夫な人々。彼らは頑固さ、金属加工、そしてアルコールへの愛情で知られています。
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",ちょっとした身長、いじりや魔法が好きな地下の人々。自給自足の生活のために進化した、彼らの代謝は食べ物が乏しい長い冒険に適しています。
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",2つのフェロ接合プリンのうち小さいほうが、茶色のプリンはチョコレートデザートよりも腐ったミルクに近い味がすると言われています。プディング自体は、あらゆる種類の布や皮を餌にしますが、その最も知られている能力は、その独特の生殖方法です。鉄と接触すると、腐った粘液の二成分分裂の奇跡が起こり、2人の貪欲な子孫が生まれます。冒険者によって振り回される腕の中にはいたるところに存在する鉄があるため、この生物の人口は時間の経過とともに増加しています。
-EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
+EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",人間の死体をハチミツに浸して作られた極甘のミイラ。それを知られざる秘教の僧達が未知の技法で復活させた、非常に危険かつ美味なる怪物。
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,腐食性の液体のこの奇妙な生きている泡はどんな攻撃的な能力も持っていないようです。
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",小さな翼のあるスピリット、本質的に魔法のようなそして非常に美しい。脅かされると、彼らは空間的現実の歪みを通して逃げることができます。
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",亀の様な放浪者で、歩けるようになったその時から生地を離れ、頑丈で快適な背中の家と共に世界を旅する。
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",共食い的な傾向を持つ醜い、荒々しい生き物。この好戦的な競争は彼らの印象的な強さと知的無能力で知られています。
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",臆病で弱々しい連中と見なされながらも、この小柄な爬虫類は残忍かつ狡猾な手口をもってその肉体的な弱みを補っている。
 EntityName,abbot,アボット
 EntityName,acid blob,酸のブロッブ
 EntityName,acid worm,酸性のワーム
@@ -1526,7 +1526,7 @@ EntityName,kobold,コボルト
 EntityName,kobold king,コボルトの王
 EntityName,kobold lord,コボルトの貴族
 EntityName,kobold mummy,コボルトのミイラ
-EntityName,kobold scout,
+EntityName,kobold scout,コボルトの斥候
 EntityName,kobold shaman,コボルトの呪術師
 EntityName,kobold warrior,コボルトの戦士
 EntityName,kobold zombie,コボルトのゾンビ
@@ -1580,7 +1580,7 @@ EntityName,master mind flayer,マスターマインドフレア
 EntityName,mastodon,マストドン
 EntityName,Maugneshaagar,モーネシャガル
 EntityName,medusa,メデューサ
-EntityName,mellified man,
+EntityName,mellified man,蜜漬けミイラ
 EntityName,merchant,商人
 EntityName,Metamorphius,変身の達人
 EntityName,migo drone,ミゴドローン
@@ -1642,7 +1642,7 @@ EntityName,panther,豹
 EntityName,pantherwere,人間だった豹
 EntityName,paper golem,紙のゴーレム
 EntityName,parrot,オウム
-EntityName,pearl golem,
+EntityName,pearl golem,真珠のゴーレム
 EntityName,pegasus,ペガサス
 EntityName,Pelias,ペリアス
 EntityName,Pestilence,ペスティレンス
@@ -1657,7 +1657,7 @@ EntityName,pit viper,ピットバイパー
 EntityName,pixie,ピクシー
 EntityName,plains centaur,平原のケンタウルス
 EntityName,Planetar,プラネター
-EntityName,plasmoid,
+EntityName,plasmoid,プラズモイド
 EntityName,plastic golem,プラスチックのゴーレム
 EntityName,pony,仔馬
 EntityName,proudfoot,ホビット
@@ -1703,7 +1703,7 @@ EntityName,satyr,サテュロス
 EntityName,scorpion,さそり
 EntityName,Scorpius,スコルピウス
 EntityName,scramper,スクランパー
-EntityName,seal,
+EntityName,seal,アザラシ
 EntityName,sergeant,軍曹
 EntityName,sewer rat,下水道ねずみ
 EntityName,shade,影
@@ -1759,7 +1759,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,人間だった虎
 EntityName,titan,タイタン
 EntityName,titanothere,タイタノフィーアー
-EntityName,tortle,
+EntityName,tortle,トートル
 EntityName,tracker,ハンター
 EntityName,transmuter,トランスミューター
 EntityName,trapper,トラッパー
@@ -1929,10 +1929,10 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}は{Le
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName}は{SpellName}を使用して既に最大の効率を達成
 FormatText,{CharacterName} animated {AssetName},{CharacterName}は{AssetName}に命を与えた
 FormatText,{CharacterName} broke {AssetName},{CharacterName}が{AssetName}を壊した
-FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName}は飛び道具に{AssetName}しか持つことができない//{GenderHis}
+FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName}は{AssetName}以外の飛び道具を装備できない//{GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName}はこれ以上食べることはできず、貴重な栄養を無駄にしています
 FormatText,{CharacterName} cannot grow up,{CharacterName}は成長できません
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}は{DietName}のため{AssetName}を摂取することができない。
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}は{DietName}のため{AssetName}を摂取することができない
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName}は宙に浮かんでいて{ObjectName}に届かない
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},{CharacterName}は{AssetName}を外すことができない//{GenderHis}
 FormatText,{CharacterName} cast {QualificationName} {SpellName},{CharacterName}は{QualificationName}の{SpellName}を唱えた
@@ -1952,8 +1952,8 @@ FormatText,{CharacterName} enters {ZooName},{CharacterName}は{ZooName}に入り
 FormatText,{CharacterName} equipped {AssetName},{CharacterName}は{AssetName}を装備した
 FormatText,{CharacterName} exploded!,{CharacterName}は爆発しました！
 FormatText,{CharacterName} fainted from lack of food,{CharacterName}は食料不足から気を失いました
-FormatText,{CharacterName} feels this area is becoming less dangerous,{CharacterName} は周辺の危険が弱まっていると感じた
-FormatText,{CharacterName} feels this area is becoming more dangerous,{CharacterName} は周辺の危険が高まっていると感じた
+FormatText,{CharacterName} feels this area is becoming less dangerous,{CharacterName} は周辺の危険が弱まったと感じた
+FormatText,{CharacterName} feels this area is becoming more dangerous,{CharacterName} は周辺の危険が高まるのを感じた
 FormatText,{CharacterName} fell asleep,{CharacterName}は眠りについた
 FormatText,{CharacterName} filled {DeviceName} with {BlockName},{CharacterName}は{BlockName}で{DeviceName}を塞いだ
 FormatText,{CharacterName} fumbled and dropped {GenderHis} {AssetName},{CharacterName}が{GenderHis} {AssetName}をミスして落としてしました
@@ -1963,7 +1963,7 @@ FormatText,{CharacterName} had already identified all items,{CharacterName}は�
 FormatText,{CharacterName} had an out of body experience,{CharacterName}は幽体離脱したような気がした
 FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterName}は{Percent}％で{ElementName}の耐性を得ます
 FormatText,{CharacterName} has {PropertyName},{CharacterName}は{PropertyName}を手にいれます
-FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName}は既に{GenderHis}至ることができる最も高いカルマに達している
+FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName}は既にカルマの上限に至っている//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName}は{AttributeName}を{ModifierNumber}減らしました
 FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName}は、生命力が{ModifierNumber}減少しました
 FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName}は、魔力が{ModifierNumber}減少しました
@@ -2066,7 +2066,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName}消化
 FormatText,{StrikeName} strike,{StrikeName}の一撃
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName}が{Victim:CharacterName}から{AssetName}を盗みました
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName}は{Victim:CharacterName}から持ち物を盗んだ
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits}ポンド
 FormatText,after reaching dungeon level {RecordDepth},ダンジョンレベルに到達した後{RecordDepth}
@@ -2077,25 +2077,25 @@ FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}を�
 FormatText,Cast {SpellName} which direction?,{SpellName}をどの方向に魔法を使いますか？
 FormatText,Congratulations on reaching the end of the {QuestName}!,{QuestName}が終わりました。おめでとうございます。
 FormatText,cripple {AttributeName},{AttributeName}を無効にする
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
-FormatText,diminish {ManaDice},マナ消費 {ManaDice}
+FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
+FormatText,decrease all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}減少
+FormatText,decrease one ability by {AdjustmentDice},いずれかの能力値一つが{AdjustmentDice}減少
+FormatText,diminish {ManaDice},マナ減少 {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},ドロップ{BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},マナ回復 {ManaDice}
 FormatText,Equip {CharacterName},{CharacterName}を装備する
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame}の栄誉と{RecordKills}の殺害
 FormatText,Feed which item to {CharacterName}?,どのアイテムを{CharacterName}に与えますか？
-FormatText,from {Cause},
+FormatText,from {Cause},{Cause}により
 FormatText,gain {Percent}% {ElementName} resistance,{Percent}％{ElementName}の抵抗を獲得
 FormatText,gain {TalentName} talent,{TalentName}の才能を獲得
 FormatText,"Hail {CharacterName}, {CharacterDescription}",ようこそ{CharacterName}、{CharacterDescription}
 FormatText,Hail {PlayerHandle}!,ようこそ{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice}
 FormatText,heal {LifeDice},ライフ回復 {LifeDice}
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
+FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
+FormatText,increase one ability by {AdjustmentDice},いずれかの能力値一つが{AdjustmentDice}増加
 FormatText,level {Depth},階層 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レベル{Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},レベルの差 {From} から {To}
@@ -2104,8 +2104,8 @@ FormatText,LOCKED {GATENAME},{GATENAME}が施錠されています
 FormatText,not {EffectProperty},{EffectProperty}ではない
 FormatText,range {Dice},{Dice}範囲
 FormatText,RANKED #{RankNumber},ランク＃{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,ライフを{Percent}%以上回復
+FormatText,replenish mana from {Percent}%,マナを{Percent}%以上回復
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName}、{CharacterDescription}が復活しました
 FormatText,retaliate {Chance} {AttackType},{AttackType}で{Chance}に反撃
 FormatText,retaliate {Chance} on death {AttackType},死後に{AttackType}で{Chance}に反撃
@@ -2130,7 +2130,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}の場合
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}の場合
 FormatText,when {Something},{Something}の場合
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},{ElementName}に抵抗した場合
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,この重い扉は硬い結晶層でできており、簡単には破損しません。
 GateName,crystal door,クリスタルドア
 GateName,wooden door,木製扉
@@ -2157,7 +2157,7 @@ GroundName,ice,氷
 GroundName,lava,溶岩
 GroundName,marble floor,大理石の床
 GroundName,metal floor,金属の床
-GroundName,moss,コケ
+GroundName,moss,苔むした床
 GroundName,obsidian floor,黒曜石の床
 GroundName,sand,砂地
 GroundName,stone corridor,石の廊下
@@ -2174,7 +2174,7 @@ HordeName,coyote,コヨーテ
 HordeName,demon,悪魔
 HordeName,drow,ドロウ
 HordeName,dwarf,ドワーフ
-HordeName,electric bug,
+HordeName,electric bug,電気虫
 HordeName,elf,エルフ
 HordeName,flea,ノミ
 HordeName,garter snake,ガーターヘビ
@@ -2468,7 +2468,7 @@ ItemName,Carapace,キャラペイス
 ItemName,carrot,にんじん
 ItemName,chain barding,鎖製の馬鎧
 ItemName,chain mail,チェーンメイル
-ItemName,chakram,
+ItemName,chakram,チャクラム
 ItemName,Chaoshammer,カオスハンマー
 ItemName,Chasm Edge,シャムエッジ
 ItemName,cheese,チーズ
@@ -2663,7 +2663,7 @@ ItemName,mithril battle-axe,ミスリルのバトルアックス
 ItemName,mithril bullet,ミスリルの弾丸
 ItemName,mithril crossbow bolt,ミスリルのクロスボウボルト
 ItemName,mithril dagger,ミスリルのダガー
-ItemName,mithril dart,
+ItemName,mithril dart,ミスリルのダーツ
 ItemName,mithril helmet,ミスリルの兜
 ItemName,mithril katar,ミスリルのカタール
 ItemName,mithril lance,ミスリルのランス
@@ -3041,13 +3041,13 @@ KindName,mummy,ミイラ
 KindName,naga,ナーガ
 KindName,ogre,オーガ
 KindName,orc,オーク
-KindName,plasmoid,
+KindName,plasmoid,プラズモイド
 KindName,pudding,プリン
 KindName,quadruped,四足獣
 KindName,rodent,齧歯類
 KindName,snake,ヘビ
 KindName,spider,クモ・さそり・ムカデ
-KindName,tortle,
+KindName,tortle,トートル
 KindName,trapper,トラッパー
 KindName,troll,トロル
 KindName,umber,アンバー
@@ -3489,7 +3489,7 @@ LiteralText,Map,地図
 LiteralText,MAP,地図
 LiteralText,material,素材
 LiteralText,Medusa Lair,メデューサの隠れ家
-LiteralText,melting,
+LiteralText,melting,溶解
 LiteralText,MENU,メニュー
 LiteralText,mercenary,傭兵
 LiteralText,MIMIC,ミミック
@@ -3645,7 +3645,7 @@ LiteralText,RETURN,戻る
 LiteralText,RE-USE,同じものを使う
 LiteralText,REVEAL,明らかに
 LiteralText,REVEAL ALL MAPS,すべての地図を公開
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,この階層のマップを表示
 LiteralText,revealed,見えている
 LiteralText,REVERT,戻る
 LiteralText,RIGHT RING,右手の指輪
@@ -3828,8 +3828,8 @@ LiteralText,was strangled,首を絞められた
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,苦しんだとき
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,生命付与物の場合
+LiteralText,when confused,混乱している場合
 LiteralText,when dropped,落としたとき
 LiteralText,when entered,入力時
 LiteralText,when exhausted,消耗したとき
@@ -3981,7 +3981,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,視線とビームの攻撃は術者に反射されます。
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,近くのモンスターとそのおおよその脅威レベルについて事前に警告を与えます。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,恐怖に駆られてあなたは攻撃することができないので逃げるべきである。
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",こんなに酔っぱらった状態では、酒の勢いなんて著しく低下した判断力の足しにはならない。
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,ダンジョンの中を静かに移動することによって、眠っているモンスターに近づくことができます。
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,あなたが変化させられるのを防ぎますが、あなたが元の形に戻ることも防ぎます。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",動きを遅くしたり、麻痺させたり、その他の方法で抑制したりする効果からあなたを保護します。
@@ -4049,7 +4049,7 @@ PropertyName,free action,自由行動
 PropertyName,fumbling,不器用
 PropertyName,hallucination,幻覚
 PropertyName,hunger,飢餓
-PropertyName,inebriation,
+PropertyName,inebriation,酩酊
 PropertyName,invisibility,不可視
 PropertyName,jumping,跳躍
 PropertyName,levitation,浮遊
@@ -4174,15 +4174,15 @@ RaceName,ogre//non-binary,オーガ
 RaceName,orc//female,オーク
 RaceName,orc//male,オーク
 RaceName,orc//non-binary,オーク
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,プラズモイド
+RaceName,plasmoid//male,プラズモイド
+RaceName,plasmoid//non-binary,プラズモイド
 RaceName,satyr//female,サテュロス
 RaceName,satyr//male,サテュロス
 RaceName,satyr//non-binary,サテュロス
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,トートル
+RaceName,tortle//male,トートル
+RaceName,tortle//non-binary,トートル
 RaceName,troll//female,トロル
 RaceName,troll//male,トロル
 RaceName,troll//non-binary,トロル
@@ -4323,7 +4323,7 @@ SkillName,conjuration,召喚魔法
 SkillName,crafting,製作
 SkillName,crossbow,クロスボウ
 SkillName,dart,ダーツ
-SkillName,disc,
+SkillName,disc,盤上武具
 SkillName,divination,予知魔法
 SkillName,dual wielding,二刀流
 SkillName,enchantment,補助魔法
@@ -4356,11 +4356,11 @@ SkillName,unarmed combat,武装していない戦闘
 SkillName,whip,鞭
 SonicName,ammo,弾
 SonicName,amulet,お守り
-SonicName,arf,
+SonicName,arf,オゥッオゥッ
 SonicName,armour,鎧
 SonicName,baa,メェー
 SonicName,bell,ベル
-SonicName,birds,
+SonicName,birds,さえずり
 SonicName,bleat,漂う
 SonicName,blink,明滅
 SonicName,book,本
@@ -4375,7 +4375,7 @@ SonicName,burble,げっぷ
 SonicName,burn,燃やす
 SonicName,buzz,ブンブン
 SonicName,cackle,おしゃべり
-SonicName,chains,
+SonicName,chains,鎖
 SonicName,chant,聖歌
 SonicName,chime,チャイム
 SonicName,chirp,鳴く
@@ -4389,7 +4389,7 @@ SonicName,creak,ギーギー
 SonicName,crumble,砕く
 SonicName,death,死
 SonicName,dice,サイコロ
-SonicName,drips,
+SonicName,drips,水滴
 SonicName,drum,ドラム
 SonicName,eat,ムシャムシャ
 SonicName,electricity,ビリビリ
@@ -4425,7 +4425,7 @@ SonicName,kick,キック
 SonicName,launch grenade,手榴弾
 SonicName,launch rocket,ロケットランチャー
 SonicName,leather,レザー
-SonicName,leaves,
+SonicName,leaves,葉
 SonicName,lit fuse,点灯
 SonicName,locked,施錠されている
 SonicName,long tap,長押し
@@ -4454,10 +4454,10 @@ SonicName,rifle burst,ライフルバースト
 SonicName,rifle shot,ライフルショット
 SonicName,ring,指輪
 SonicName,roar,轟音
-SonicName,roars,
+SonicName,roars,うなり声の物音
 SonicName,scrap,スクラップ
 SonicName,scrape,こする
-SonicName,scrapes,
+SonicName,scrapes,引きずる物音
 SonicName,scroll,巻物
 SonicName,scuttle,乱れる
 SonicName,sever,切断
@@ -4476,11 +4476,11 @@ SonicName,splat,!!
 SonicName,squall,悲鳴（squall）
 SonicName,squawk,ガーガー（squawk）
 SonicName,squeak,きしむ
-SonicName,squeaks,
+SonicName,squeaks,きしんだ物音
 SonicName,squeal,鳴き声
 SonicName,swallow,飲み込む
 SonicName,switch,スイッチ
-SonicName,taps,
+SonicName,taps,叩く物音
 SonicName,teleport,瞬間移動
 SonicName,throne,玉座
 SonicName,throw grenade,手榴弾を投げる
@@ -4507,30 +4507,30 @@ SpecialDescription,"Being unusually tall and heavy for your kind, you move a bit
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",永久なる獣人の呪いをかけられた者たちで、恐るべき狼の姿に変化することができる。
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,生き血をすすり命を永らえている、忌み嫌われた生き物。
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,天性の超人的な感覚で通常知覚できないモンスターを見出すことができるが、代償として満たされることのない食欲に苦しんでいる。
-SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.",地の精霊に付き従い、敵を破壊するために爆発する球を召喚することができる。
-SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.",炎の精霊に付き従い、敵を破壊するために爆発する球を召喚することができる。
-SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.",氷の精霊に付き従い、敵を破壊するために爆発する球を召喚することができる。
-SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.",電撃の精霊に付き従い、敵を破壊するために爆発する球を召喚することができる。
-SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",水の精霊に付き従い、敵を破壊するために爆発する球を召喚することができる。
+SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.",地の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
+SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.",炎の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
+SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.",氷の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
+SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.",電撃の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
+SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",水の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,ほかの道楽や運動なんてそっちのけ、人生を学問に捧げてきた本の虫。
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,こじらせた主人公補正に頼って生きてきたが、その運命は厳しい現実にさらされることになる。
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",エネルギーを反射し光を屈折させる生きたガラスから削りだされた。オリジナルのモンスターを完璧に模倣しているが、繊細である。
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.",本来なくてはならない血肉を持たずしてなぜか生きている、この奇怪な存在には幾分かの長所がある。
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,常習的な飲酒は冒険者を厚かましく、やや不用心にさせる。アルファベットを逆順に言うなんてできないだろう。
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",位置が不安定で、同時にどこへでも存在することが普通になっている。
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.",無実かそうでないかに関わらず、その罪から逃れるのに必死だ。
 SpecialName,colossus,巨体
-SpecialName,drunkard,
+SpecialName,drunkard,酔っぱらい
 SpecialName,earth,地属性
 SpecialName,flame,火属性
 SpecialName,frost,氷属性
 SpecialName,fugitive,逃亡者
-SpecialName,glass,
+SpecialName,glass,ガラス
 SpecialName,midget,小人
 SpecialName,noble,貴族
 SpecialName,protagonist,主人公
 SpecialName,psychic,サイキック
-SpecialName,quantum,
+SpecialName,quantum,量子化
 SpecialName,scholar,学生
 SpecialName,shock,電撃属性
 SpecialName,skeleton,スケルトン
