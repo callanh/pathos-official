@@ -13,29 +13,29 @@ AfflictionName,reflux,Trào ngược dịch dạ dày
 AfflictionName,sliming,Hóa nhờn
 AfflictionName,worms,Hóa sâu
 AnatomyAbsenceText,MINDLESS,VÔ TRI
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,KHÔNG CÓ MÁU
 AnatomyAbsenceText,NO EARS,KHÔNG TAI
 AnatomyAbsenceText,NO EYES,KHÔNG MẮT
 AnatomyAbsenceText,NO FEET,KHÔNG CHÂN
 AnatomyAbsenceText,NO HANDS,KHÔNG BÀN TAY
 AnatomyAbsenceText,NO HEAD,KHÔNG ĐẦU
-AnatomyAbsenceText,NO LIMBS,KHÔNG CÓ CHÂN TAY
+AnatomyAbsenceText,NO LIMBS,KHÔNG CÓ CÁNH TAY
 AnatomyAbsenceText,NOT AMORPHOUS,
 AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT WARM,KHÔNG ẤM
 AnatomyAbsenceText,VOICELESS,VÔ THANH
 AnatomyName,amorphous,chất rắn vô định hình
 AnatomyName,blood,máu
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,tai
+AnatomyName,eyes,mắt
+AnatomyName,feet,chân
+AnatomyName,hands,tay
+AnatomyName,head,đầu
+AnatomyName,limbs,cánh tay
+AnatomyName,mind,tâm trí
 AnatomyName,mounted,cưỡi
 AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,voice,giọng nói
 ApetiteName,content,bình thường
 ApetiteName,hungry,đói
 ApetiteName,satiated,no
@@ -412,7 +412,7 @@ AttackType,horn,húc sừng
 AttackType,kick,đá
 AttackType,punch,đấm
 AttackType,shriek,hét
-AttackType,slap,
+AttackType,slap,tát
 AttackType,spell,phép
 AttackType,spit,khạc
 AttackType,splash,tạt
@@ -967,7 +967,7 @@ EffectProperty,hordes,đám
 EffectProperty,items,các vật phẩm
 EffectProperty,kinds,các loại
 EffectProperty,lies,nằm trên
-EffectProperty,loyal only,
+EffectProperty,loyal only,chỉ trung thành
 EffectProperty,material,vật liệu
 EffectProperty,materials,các vật liệu
 EffectProperty,objects,các vật thể
@@ -1083,11 +1083,11 @@ EffectType,transition,di chuyển
 EffectType,unafflict,không ảnh hưởng
 EffectType,unpolymorph,trở về dạng cũ
 EffectType,unpunish,loại bỏ trừng phạt
-EffectType,unstuck,
+EffectType,unstuck,tháo gỡ
 EffectType,visit shop,ghé cửa hàng
 EffectType,visit shrine,ghé điện thờ
 EffectType,visit zoo,ghé vườn thú
-EffectType,vomit,
+EffectType,vomit,nôn mửa
 EffectType,warping,cong vênh
 EggName,black dragon,rồng đen
 EggName,blue dragon,rồng xanh dương
@@ -1140,7 +1140,7 @@ EncumbranceName,unencumbered,thoải mái
 EngulfmentName,engulfed,bị dìm
 EngulfmentName,swallowed,bị nuốt chửng
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Một loài sinh vật cỡ vừa với dã tâm lớn, tuổi thọ ngắn nhưng có ở khắp nơi; đừng đánh giá thấp chúng."
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Những sinh vật vô định hình không có hình dạng điển hình nhưng thường có dạng hình người nhìn mờ nhạt. Mặc dù không thể nhầm lẫn với bất kỳ thứ gì khác ngoài các chất lỏng plasma giống như huyết tương, nhưng dạng này cho phép sử dụng quần áo và dụng cụ."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Một chủng tộc cổ xưa ở ẩn ở nơi cao chót vót. Kích thước khủng bố giúp chúng có sức mạnh rất lớn, được bổ sung với chế độ ăn toàn thịt và khoáng chất."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Những thực thể thần thánh, là vỏ bọc cho những linh hồn bất khuất của những nhà thám hiểm. Chúng không có mục tiêu, luôn sẵn lòng cho mượn lấy cơ thể của mình; đối với những nhà thám hiểm đã chết, đây chính là cơ hội thứ hai để trả thù hoặc chuộc lỗi. Được tạo ra từ vật chất thiên thạch, chúng rất mỏng, trong suốt và có thể bay lượn tự do xuyên qua vật chất."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Xinh đẹp, những thực thể siêu nhiên này nổi bật với đặc điểm như vầng hào quang hay cánh lông vũ. Rất hòa hợp với cuộc chiến giữa cái thiện và cái ác, họ có thể cảm nhận được tính thánh hóa của mọi vật họ chạm vào."
@@ -1158,9 +1158,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Xác ướp này được tạo ra bằng cách nhúng xác người chết vào trong mật ong. Bằng cách nào đó được tái sinh bởi một hội nhóm nhà sư kín, con quái vật này vừa nguy hiểm, song cũng thật ngon."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Khối cầu dung dịch ăn mòn kì lạ này trông có vẻ vô hại.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Những linh hồn có cánh nhỏ bé, được truyền ma thuật từ cha mẹ và vô cùng xinh đẹp. Khi gặp nguy hiểm, chúng có thể chạy trốn qua sự méo mó của không gian thực."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Những người sống sót du mục giống như những con rùa rời khỏi nơi sinh của họ, ngay từ khi họ có thể đi bộ, để đi du lịch khắp thế giới với sự thoải mái và bảo vệ của ngôi nhà trên lưng."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Những sinh vật xấu xí, thú tính với tập tính ăn thịt đồng loại; Chủng tộc hiếu chiến này được biết đến với sức mạnh phi thường và trí thông minh ngu dốt đến đần độn của chúng."
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Được các đặc tính một cách bất công là hèn nhát và yếu đuối, những sinh vật bò sát nhỏ bé này vượt qua những hạn chế về thể chất của chúng bằng cách sử dụng các chiến lược xấu xa và xảo quyệt."
 EntityName,abbot,trụ trì
 EntityName,acid blob,bãi axít
 EntityName,acid worm,giun axít
@@ -1526,7 +1526,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,vua kobold
 EntityName,kobold lord,lãnh chúa kobold
 EntityName,kobold mummy,xác ướp kobold
-EntityName,kobold scout,
+EntityName,kobold scout,trinh xác kobold
 EntityName,kobold shaman,thầy cúng kobold
 EntityName,kobold warrior,chiến binh kobold
 EntityName,kobold zombie,thây ma kobold
@@ -1642,7 +1642,7 @@ EntityName,panther,báo
 EntityName,pantherwere,ma báo
 EntityName,paper golem,golem giấy
 EntityName,parrot,vẹt
-EntityName,pearl golem,
+EntityName,pearl golem,golem mgọc trai
 EntityName,pegasus,thiên mã
 EntityName,Pelias,Pelias
 EntityName,Pestilence,Bệnh Dịch
@@ -1657,7 +1657,7 @@ EntityName,pit viper,pit viper
 EntityName,pixie,pixie
 EntityName,plains centaur,nhân ngưu đồng bằng
 EntityName,Planetar,Planetar
-EntityName,plasmoid,
+EntityName,plasmoid,plasmoid
 EntityName,plastic golem,golem nhựa
 EntityName,pony,ngựa con
 EntityName,proudfoot,proudfoot
@@ -1703,7 +1703,7 @@ EntityName,satyr,thần dê
 EntityName,scorpion,bọ cạp
 EntityName,Scorpius,Scorpius
 EntityName,scramper,scramper
-EntityName,seal,
+EntityName,seal,Sư tử biển
 EntityName,sergeant,trung sĩ
 EntityName,sewer rat,chuột cống
 EntityName,shade,bóng ma tê dại
@@ -1759,7 +1759,7 @@ EntityName,tiger,hổ
 EntityName,tigerwere,ma cọp
 EntityName,titan,titan
 EntityName,titanothere,titanothere
-EntityName,tortle,
+EntityName,tortle,rùa
 EntityName,tracker,kẻ theo dõi
 EntityName,transmuter,người biến đổi
 EntityName,trapper,người gài bẫy
@@ -2066,7 +2066,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} nuốt
 FormatText,{StrikeName} strike,{StrikeName} tấn công
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} đã trộm {AssetName} từ {Victim:CharacterName}
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} đã trộm vật phẩm từ {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},sau khi tới được tầng {RecordDepth}
@@ -2077,25 +2077,25 @@ FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật p
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Chúc mừng bạn đã hoàn thành nhiệm vụ {QuestName}!
 FormatText,cripple {AttributeName},suy giảm {AttributeName}
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},giảm {AttributeName} bởi {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},giảm tất cả kỹ năng bởi {AdjustmentDice}
+FormatText,decrease one ability by {AdjustmentDice},giảm một kỹ năng bởi {AdjustmentDice}
 FormatText,diminish {ManaDice},tan biến {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},rơi {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},hồi phục {ManaDice}
 FormatText,Equip {CharacterName},Trang bị {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,danh dự {RecordFame} và giết {RecordKills} mạng
 FormatText,Feed which item to {CharacterName}?,Cho {CharacterName} ăn vật phẩm nào?
-FormatText,from {Cause},
+FormatText,from {Cause},Từ {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,tăng kháng {ElementName} lên {Percent}%
 FormatText,gain {TalentName} talent,nhận được tài {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Kính chào {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Kính chào {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},gây sát thương {ElementName} {DamageDice}
 FormatText,heal {LifeDice},hồi {LifeDice} sinh lực
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},tăng {AttributeName} bởi {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},tăng tất cả kỹ năng bởi {AdjustmentDice}
+FormatText,increase one ability by {AdjustmentDice},tăng một kỹ năng bởi {AdjustmentDice}
 FormatText,level {Depth},tầng {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},cấp {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},từ tầng {From} đến {To}
@@ -2104,8 +2104,8 @@ FormatText,LOCKED {GATENAME},{GATENAME} bị khóa
 FormatText,not {EffectProperty},không {EffectProperty}
 FormatText,range {Dice},tầm xa {Dice}
 FormatText,RANKED #{RankNumber},XẾP HẠNG #{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,bổ sung máu từ {Percent}%
+FormatText,replenish mana from {Percent}%,bổ sung mana từ {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Đã hồi sinh {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} khả năng {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},{Chance} khả năng khi chết {AttackType}
@@ -2130,7 +2130,7 @@ FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
 FormatText,when {PROPERTYNAME},nếu là {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},khi {SANCTITYNAME}
 FormatText,when {Something},khi {Something}
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},khi kháng lại {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cái cửa này được làm từ kim loại cứng. Không dễ gì phá hủy đâu.
 GateName,crystal door,cửa pha lê
 GateName,wooden door,cửa gỗ
@@ -2469,13 +2469,13 @@ ItemName,carrot,cà rốt
 ItemName,chain barding,giáp ngựa xích
 ItemName,chain mail,giáp xích
 ItemName,chakram,chakram
-ItemName,Chaoshammer,Chaoshammer
+ItemName,Chaoshammer,Búa hỗn loạn
 ItemName,Chasm Edge,Chasm Edge
 ItemName,cheese,phô mai
 ItemName,chest,rương
 ItemName,chrysoberyl,chrysoberyl
 ItemName,citrine,thạch anh vàng
-ItemName,Cleaver,Cleaver
+ItemName,Cleaver,Dao phay
 ItemName,cloak of blinking,áo choàng nhấp nháy
 ItemName,cloak of deflection,áo choàng lệch hướng
 ItemName,cloak of displacement,áo choàng hoán vị
@@ -2483,16 +2483,16 @@ ItemName,cloak of invisibility,áo choàng tàng hình
 ItemName,cloak of magic resistance,áo choàng kháng ma thuật
 ItemName,clove of garlic,củ tỏi
 ItemName,club,dùi cui
-ItemName,Colossal Excavator,Colossal Excavator
+ItemName,Colossal Excavator,Máy xúc khổng lồ
 ItemName,cornuthaum,cornuthaum
 ItemName,costume earrings,khuyên tai thời trang
 ItemName,cram ration,thực phẩm chay
 ItemName,c-ration,khẩu phần tác chiến
 ItemName,cream pie,bánh kem
-ItemName,Creeping Sprout,Creeping Sprout
+ItemName,Creeping Sprout,Mầm leo
 ItemName,crossbow,nỏ
 ItemName,crossbow bolt,tên nỏ
-ItemName,crysknife,crysknife
+ItemName,crysknife,dao pha lê
 ItemName,crystal ball,khối cầu pha lê
 ItemName,crystal plate mail,giáp tấm pha lê
 ItemName,dagger,dao găm
@@ -2502,7 +2502,7 @@ ItemName,dark elven dagger,dao găm elf sẫm màu
 ItemName,dark elven mithril-coat,áo choàng mithril elf sẫm màu
 ItemName,dark elven short sword,kiếm ngắn elf sẫm màu
 ItemName,dart,phi tiêu
-ItemName,Deadwood,Deadwood
+ItemName,Deadwood,Gỗ chết
 ItemName,Deagle,Deagle
 ItemName,deep dragon scale mail,giáp vảy rồng xanh đậm
 ItemName,deep dragon scales,vảy rồng xanh đậm
@@ -2540,7 +2540,7 @@ ItemName,elven shield,khiên tộc elf
 ItemName,elven short sword,kiếm ngắn tộc elf
 ItemName,elven spear,thương tộc elf
 ItemName,emerald,ngọc lục bảo
-ItemName,Escapist,Escapist
+ItemName,Escapist,Kẻ trốn thoát
 ItemName,eucalyptus leaf,lá bạch đàn
 ItemName,expensive camera,máy ảnh đắt tiền
 ItemName,Eye of Aethiopica,Mắt của Aethiopica
@@ -2881,10 +2881,10 @@ ItemName,stick of dynamite,thanh thuốc nổ
 ItemName,stiletto,dao cá kiếm
 ItemName,stone club,dùi cui đá
 ItemName,studded leather armour,giáp da độn cứng
-ItemName,submachine gun,súngtiểu liên
-ItemName,Sunsword,Sunsword
+ItemName,submachine gun,súng tiểu liên
+ItemName,Sunsword,Kiếm mặt trời
 ItemName,Talaria,Talaria
-ItemName,The Hero,The Hero
+ItemName,The Hero,Anh Hùng
 ItemName,thunder staff,gậy sấm
 ItemName,tin,thiếc
 ItemName,tin whistle,còi thiếc
@@ -3041,7 +3041,7 @@ KindName,mummy,xác ướp
 KindName,naga,xà nhân
 KindName,ogre,ogre
 KindName,orc,orc
-KindName,plasmoid,
+KindName,plasmoid,plasmoid
 KindName,pudding,pudding
 KindName,quadruped,động vật 4 chân
 KindName,rodent,bộ gặm nhấm
@@ -3489,7 +3489,7 @@ LiteralText,Map,Bản đồ
 LiteralText,MAP,BẢN ĐỒ
 LiteralText,material,vật liệu
 LiteralText,Medusa Lair,Hang ổ Medusa
-LiteralText,melting,
+LiteralText,melting,tan chảy
 LiteralText,MENU,MENU
 LiteralText,mercenary,lính đánh thuê
 LiteralText,MIMIC,GIẢ DẠNG
@@ -3645,7 +3645,7 @@ LiteralText,RETURN,QUAY VỀ
 LiteralText,RE-USE,TÁI SỬ DỤNG
 LiteralText,REVEAL,LỘ DIỆN
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY
 LiteralText,revealed,đã lộ diện
 LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
@@ -3829,7 +3829,7 @@ LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
 LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when confused,khi bối rối
 LiteralText,when dropped,khi thả xuống
 LiteralText,when entered,khi đi vào
 LiteralText,when exhausted,khi mệt
@@ -3981,7 +3981,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Tia phép và phép lườm bị phản lại về phía người niệm phép.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Cảnh báo bạn về những quái vật ở gần và ước tính độ nguy hiểm của chúng.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Co rúm lại vì hoảng sợ, bạn không thể tấn công và chạy trốn khỏi đó."
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Trong trạng thái say khướt này, sự tự tin ngày càng tăng cao của bạn sẽ chỉ được bù đắp bằng khả năng phán đoán bị suy giảm nghiêm trọng của bạn."
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Di chuyển lặng lẽ trong hầm ngục giúp bạn có thể lén gần đến những con quái vật ngủ say.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Bảo vệ bạn khỏi việc bị biến hình nhưng cũng khiến bạn không thể quay trở lại hình dạng ban đầu nữa.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Bảo vệ bạn khỏi mọi hiệu ứng làm chậm, choáng hoặc tê liệt."
@@ -4049,7 +4049,7 @@ PropertyName,free action,tự do
 PropertyName,fumbling,hậu đậu
 PropertyName,hallucination,hoang tưởng
 PropertyName,hunger,đói
-PropertyName,inebriation,
+PropertyName,inebriation,say rượu
 PropertyName,invisibility,tàng hình
 PropertyName,jumping,nhảy
 PropertyName,levitation,lơ lửng
@@ -4174,9 +4174,9 @@ RaceName,ogre//non-binary,ogre lưỡng tính
 RaceName,orc//female,orc nữ
 RaceName,orc//male,orc nam
 RaceName,orc//non-binary,orc lưỡng tính
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plasmoid nữ
+RaceName,plasmoid//male,plasmoid nam
+RaceName,plasmoid//non-binary,plasmoid lưỡng tính
 RaceName,satyr//female,thần dê nữ
 RaceName,satyr//male,thần dê nam
 RaceName,satyr//non-binary,thần dê lưỡng tính
@@ -4360,7 +4360,7 @@ SonicName,arf,
 SonicName,armour,mặc giáp
 SonicName,baa,cừu kêu
 SonicName,bell,chuông kêu
-SonicName,birds,
+SonicName,birds,chim kêu
 SonicName,bleat,dê non kêu
 SonicName,blink,nhấp nháy
 SonicName,book,nhặt sách
@@ -4389,7 +4389,7 @@ SonicName,creak,tiếng cót két
 SonicName,crumble,tiếng ăn nhai
 SonicName,death,tiếng chết - bạn đã chết
 SonicName,dice,xúc xắc
-SonicName,drips,
+SonicName,drips,tiếng nhỏ giọt
 SonicName,drum,tiếng trống
 SonicName,eat,tiếng ăn
 SonicName,electricity,tiếng điện giật
@@ -4418,14 +4418,14 @@ SonicName,harp,tiếng đàn hạc cầm
 SonicName,hiss,hiss
 SonicName,hit,tiếng đánh trúng
 SonicName,horn,tiếng tù và
-SonicName,howl,howl
+SonicName,howl,tiếng hú
 SonicName,introduction,tiếng giới thiệu
 SonicName,jump,tiếng nhảy
 SonicName,kick,tiếng đá
 SonicName,launch grenade,tiếng súng phóng lựu
 SonicName,launch rocket,tiếng súng chống tăng rpg
 SonicName,leather,tiếng da
-SonicName,leaves,
+SonicName,leaves,tiếng lá rơi
 SonicName,lit fuse,tiếng châm ngòi
 SonicName,locked,tiếng khóa
 SonicName,long tap,long tap
@@ -4435,12 +4435,12 @@ SonicName,lose level,tiếng giảm cấp độ
 SonicName,lose skill,tiếng mất kĩ năng
 SonicName,low health,tiếng cảnh báo HP thấp
 SonicName,magic,tiếng ma thuật
-SonicName,meow,meow
+SonicName,meow,tiếng mèo kêu
 SonicName,miss,tiếng đánh trượt
 SonicName,moan,moan
-SonicName,moo,moo
+SonicName,moo,tiếng bò kêu
 SonicName,neigh,neigh
-SonicName,oink,oink
+SonicName,oink,tiếng lợn kêu
 SonicName,open door,tiếng mở cửa
 SonicName,pick axe,tiếng cuốc chim
 SonicName,pistol fire,tiếng súng ngắn bắn
@@ -4453,7 +4453,7 @@ SonicName,realtime,tiếng chế độ thời gian thực
 SonicName,rifle burst,tiếng súng trường bắn 3 viên
 SonicName,rifle shot,tiếng súng trường bắn
 SonicName,ring,ring
-SonicName,roar,roar
+SonicName,roar,tiếng rầm
 SonicName,roars,
 SonicName,scrap,scrap
 SonicName,scrape,scrape
@@ -4461,16 +4461,16 @@ SonicName,scrapes,
 SonicName,scroll,scroll
 SonicName,scuttle,scuttle
 SonicName,sever,sever
-SonicName,shackle,shackle
+SonicName,shackle,tiếng xiềng xích
 SonicName,short tap,short tap
 SonicName,shotgun blast,tiếng súng shotgun nổ
 SonicName,shotgun burst,tiếng súng shotgun nổ liên tục
 SonicName,shriek,shriek
-SonicName,sigh,sigh
+SonicName,sigh,tiếng thở dài
 SonicName,sizzle,sizzle
-SonicName,slime,slime
+SonicName,slime,tiếng slime
 SonicName,sling shot,tiếng dây quăng đá
-SonicName,slip,slip
+SonicName,slip,tiếng trượt
 SonicName,snarl,snarl
 SonicName,splat,splat
 SonicName,squall,squall
@@ -4486,21 +4486,21 @@ SonicName,throne,throne
 SonicName,throw grenade,tiếng ném lựu đạn
 SonicName,throw object,tiếng ném đồ vật
 SonicName,thump,thump
-SonicName,tool,tool
-SonicName,trumpet,trumpet
-SonicName,tunnelling,tunnelling
+SonicName,tool,tiếng dụng cụ
+SonicName,trumpet,tiếng kèn
+SonicName,tunnelling,tiếng đào bới
 SonicName,turnbased,tiếng chế độ theo lượt
 SonicName,wailing,wailing
 SonicName,wand,wand
 SonicName,warping,warping
 SonicName,water crash,water crash
-SonicName,water fountain,water fountain
+SonicName,water fountain,tiếng đài phun nước
 SonicName,water impact,water impact
-SonicName,water splash,water splash
-SonicName,weapon,weapon
-SonicName,whistle,whistle
-SonicName,woof,woof
-SonicName,write,write
+SonicName,water splash,tiếng nước tóe bắn
+SonicName,weapon,tiếng vũ khí
+SonicName,whistle,tiếng thổi còi
+SonicName,woof,tiếng chó sủa
+SonicName,write,tiếng viết
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,Những quý tộc luôn thường thức những đặc quyền dành riêng cho họ tự hỏi vì sao mọi người đều ghét họ.
 SpecialDescription,"Being unusually short and slight for your kind, you are more nimble but are not as effective in combat.","Bạn thấp và nhẹ hơn so với những người khác trong loài, điều này khiến bạn nhanh nhẹn hơn nhưng kém hiệu quả trong giao tranh."
 SpecialDescription,"Being unusually tall and heavy for your kind, you move a bit slower but are more resilient.","Bạn cao và nặng hơn so với những người khác trong loài, điều này khiến bạn chậm chạp hơn nhưng vô cùng cứng cáp trong giao tranh."
@@ -4514,23 +4514,23 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Những đầy tớ chung thành của nguyên tố thủy, họ có thể tạo ra những khối cầu phát nổ để tiêu diệt kẻ thù."
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,Việc dành cả đời để học khiến bạn không đoái hoài gì đến tập thể dục hay những thói quen khác.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Những kẻ mắc hội chứng nhân vật chính luôn tưởng tượng rằng mình bất tử với 'plot armour', nhưng họ sớm muộn sẽ ăn trái đắng của thực tế thôi."
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","Được điêu khắc từ thủy tinh sống phản chiếu năng lượng và khúc xạ ánh sáng, bạn là sự mô phỏng hoàn hảo nhưng tinh tế của đối tác tự nhiên của bạn."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Dù không có thịt nhưng vẫn còn sống, con quái vật kì dị này có những lợi thế kiên cường."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Thói quen say xỉn tạo nên những nhà thám hiểm trơ trẽn nhưng hơi loạng choạng; chỉ cần không yêu cầu họ đọc ngược bảng chữ cái.
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","Không chắc chắn về vị trí của mình, bạn đã quen với việc có mặt ở mọi nơi và mọi nơi cùng một lúc."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Dù vô tội hay tội lỗi chăng nữa, những kẻ này cố gắng đến tuyệt vọng để thoát khỏi cuộc sống tù đày."
 SpecialName,colossus,khổng lồ
-SpecialName,drunkard,
+SpecialName,drunkard,người say rượu
 SpecialName,earth,đất
 SpecialName,flame,lửa
 SpecialName,frost,băng
 SpecialName,fugitive,kẻ đào tẩu
-SpecialName,glass,
+SpecialName,glass,kính
 SpecialName,midget,người tí hon
 SpecialName,noble,quý tộc
 SpecialName,protagonist,nhân vật chính
 SpecialName,psychic,thuật tâm linh
-SpecialName,quantum,
+SpecialName,quantum,lượng tử
 SpecialName,scholar,học sinh
 SpecialName,shock,điện
 SpecialName,skeleton,bộ xương
