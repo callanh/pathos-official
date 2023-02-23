@@ -30183,7 +30183,7 @@ namespace Pathos
       #endregion
 
       #region troll.
-      black_troll = AddEntity(Kinds.troll, null, "black troll", E =>
+      black_troll = AddEntity(Kinds.troll, Races.troll, "black troll", E =>
       {
         E.Glyph = Glyphs.black_troll;
         E.Sonic = Sonics.grunt;
@@ -30217,7 +30217,7 @@ namespace Pathos
         E.ManaAdvancement.Set(1.d4());
         E.DefaultForm.Set(STR: 20, DEX: 16, CON: 18, INT: 7, WIS: 12, CHA: 9);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
+        E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
@@ -30232,7 +30232,7 @@ namespace Pathos
         TrollWeakness(E);
       });
 
-      ice_troll = AddEntity(Kinds.troll, null, "ice troll", E =>
+      ice_troll = AddEntity(Kinds.troll, Races.troll, "ice troll", E =>
       {
         E.Glyph = Glyphs.ice_troll;
         E.Sonic = Sonics.grunt;
@@ -30266,7 +30266,7 @@ namespace Pathos
         E.ManaAdvancement.Set(1.d4());
         E.DefaultForm.Set(STR: 16, DEX: 12, CON: 17, INT: 7, WIS: 11, CHA: 9);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
+        E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
@@ -30282,7 +30282,7 @@ namespace Pathos
         TrollWeakness(E);
       });
 
-      ologhai = AddEntity(Kinds.troll, null, "olog-hai", E =>
+      ologhai = AddEntity(Kinds.troll, Races.troll, "olog-hai", E =>
       {
         E.Glyph = Glyphs.ologhai;
         E.Sonic = Sonics.grunt;
@@ -30316,7 +30316,7 @@ namespace Pathos
         E.ManaAdvancement.Set(1.d4());
         E.DefaultForm.Set(STR: 18, DEX: 16, CON: 17, INT: 7, WIS: 12, CHA: 9);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
+        E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
@@ -30330,7 +30330,7 @@ namespace Pathos
         TrollWeakness(E);
       });
 
-      rock_troll = AddEntity(Kinds.troll, null, "rock troll", E =>
+      rock_troll = AddEntity(Kinds.troll, Races.troll, "rock troll", E =>
       {
         E.Glyph = Glyphs.rock_troll;
         E.Sonic = Sonics.grunt;
@@ -30364,7 +30364,7 @@ namespace Pathos
         E.ManaAdvancement.Set(1.d4());
         E.DefaultForm.Set(STR: 16, DEX: 12, CON: 17, INT: 7, WIS: 11, CHA: 9);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
+        E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
@@ -30427,7 +30427,7 @@ namespace Pathos
         TrollWeakness(E);
       });
 
-      twoheaded_troll = AddEntity(Kinds.troll, null, "two-headed troll", E =>
+      twoheaded_troll = AddEntity(Kinds.troll, Races.troll, "two-headed troll", E =>
       {
         E.Glyph = Glyphs.twoheaded_troll;
         E.Sonic = Sonics.grunt;
@@ -30476,7 +30476,7 @@ namespace Pathos
         TrollWeakness(E);
       });
 
-      water_troll = AddEntity(Kinds.troll, null, "water troll", E =>
+      water_troll = AddEntity(Kinds.troll, Races.troll, "water troll", E =>
       {
         E.Glyph = Glyphs.water_troll;
         E.Sonic = Sonics.grunt;
