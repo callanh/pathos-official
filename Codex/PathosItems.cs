@@ -9093,7 +9093,12 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, bag_of_tricks);
+          A.WithSourceSanctity
+          (
+            B => B.ConsumeResistance(Element: null),
+            U => U.MajorResistance(Element: null),
+            C => C.MinorResistance(Element: null)
+          );
         });
       });
 
