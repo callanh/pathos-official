@@ -1323,7 +1323,7 @@ EntityName,displacer beast,幻象兽
 EntityName,djinni,灯神
 EntityName,Doctor Frankenstein,弗兰肯斯坦博士
 EntityName,dog,狗
-EntityName,doppelgänger,双生行者
+EntityName,doppelgänger,变形怪
 EntityName,dracolich,龙巫妖
 EntityName,dragon king,龙王
 EntityName,dretch,怯魔
@@ -1580,7 +1580,7 @@ EntityName,master mind flayer,夺心魔大师
 EntityName,mastodon,乳齿象
 EntityName,Maugneshaagar,玛纳什格
 EntityName,medusa,美杜莎
-EntityName,mellified man,活化蜜渍人
+EntityName,mellified man,蜜渍木乃伊
 EntityName,merchant,商人
 EntityName,Metamorphius,位移者大师
 EntityName,migo drone,米戈工蜂
@@ -1907,7 +1907,7 @@ FormatText,{Attacker:CharacterName} regrets what happened to {Defender:Character
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} 迫使 {Defender:CharacterName} 发起攻击！
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} 转为敌对 {Defender:CharacterName}！
 FormatText,{Base} in {Range},{Base} {Range}
-FormatText,{BeamName} beam,{BeamName} 产生效果
+FormatText,{BeamName} beam,{BeamName} 射线
 FormatText,{BlockName} was disintegrated,{BlockName} 被解离了
 FormatText,{BoonName} which direction?,{BoonName} 哪个方向？
 FormatText,{BoonName} which item?,{BoonName} 哪个物品？
@@ -1932,7 +1932,7 @@ FormatText,{CharacterName} broke {AssetName},{CharacterName} 击毁了 {AssetNam
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} 只能持握 {GenderHis} 中的 {AssetName}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} 已经很饱足了，浪费了珍贵的营养
 FormatText,{CharacterName} cannot grow up,{CharacterName} 无法成长
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName} 不能夠消化 {AssetName}，因為該角色為 {DietName}
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}为{DietName}，无法消化{AssetName}
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName} 在漂浮时无法接触 {ObjectName}
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},{CharacterName} 无法移动 {GenderHis} {AssetName}
 FormatText,{CharacterName} cast {QualificationName} {SpellName},{CharacterName} 施放了 {QualificationName} {SpellName}
@@ -3269,6 +3269,7 @@ LiteralText,Disable continue button,关闭继续按钮
 LiteralText,disable haptic feedback,关闭震动反馈
 LiteralText,Disable idle animations,关闭闲置动画
 LiteralText,Disable introduction boom,关闭开场音效
+LiteralText,Disable mask animations,
 LiteralText,Disable online services,禁用联网功能
 LiteralText,Disable pitch shifting,禁止随机音效音量
 LiteralText,Disable spacebar real-time toggle,禁用通过空格开关实时游戏
@@ -3913,7 +3914,7 @@ MotionPastName,rubbed,摩擦了
 MotionPastName,sacrificed,祭祀了
 MotionPastName,sat,坐了
 MotionPastName,scried,占卜了
-MotionPastName,set,落入了陷阱
+MotionPastName,set,安放了
 MotionPastName,staked,穿刺了
 MotionPastName,studied,学习了
 MotionPastName,swatted,拍了
