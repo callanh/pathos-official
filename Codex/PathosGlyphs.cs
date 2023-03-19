@@ -975,11 +975,16 @@ namespace Pathos
     public readonly Glyph orc_female_wizard;
 
     // satyr.
+    public readonly Glyph satyr_male_bard;
     public readonly Glyph satyr_male_convict;
     public readonly Glyph satyr_male_druid;
+    public readonly Glyph satyr_male_explorer;
     public readonly Glyph satyr_male_gladiator;
+    public readonly Glyph satyr_male_jester;
     public readonly Glyph satyr_male_necromancer;
     public readonly Glyph satyr_male_knight;
+    public readonly Glyph satyr_male_paladin;
+    public readonly Glyph satyr_male_pirate;
     public readonly Glyph satyr_male_ranger;
     public readonly Glyph satyr_male_reaver;
     public readonly Glyph satyr_male_shaman;

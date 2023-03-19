@@ -166,6 +166,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_bard);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_bard);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_bard);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_bard);
         C.AddFeat(2, Properties.free_action);
         C.AddFeat(8, Properties.appraisal);
         C.AddFeat(14, Properties.clarity);
@@ -266,6 +267,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_explorer);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_explorer);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_explorer);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_explorer);
         C.AddFeat(1, Properties.appraisal);
         C.AddFeat(2, Properties.stealth);
         C.AddFeat(5, Properties.quickness);
@@ -452,6 +454,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_jester);
         C.AddAvatar(Races.orc, Genders.male, Glyphs.orc_male_jester);
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_jester);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_jester);
         C.AddFeat(2, Properties.see_invisible);
         C.AddFeat(4, Properties.quickness);
         C.AddFeat(8, Properties.free_action);
@@ -661,6 +664,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_paladin);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_paladin);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_paladin);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_paladin);
         C.AddFeat(1, Properties.clarity);
         C.AddFeat(5, Properties.beatitude);
         C.AddFeat(10, Properties.quickness);
@@ -693,6 +697,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_pirate);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_pirate);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_pirate);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_pirate);
         C.AddFeat(1, Properties.searching);
         C.AddFeat(5, Properties.stealth);
         C.AddFeat(10, Properties.vitality);
