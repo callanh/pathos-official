@@ -362,7 +362,10 @@ namespace Pathos
         );
       });
 
-      confusion = AddSpell(Schools.enchantment, "confusion", 2, new Precept(Purpose.Blast, Properties.confusion), Glyphs.confusion_spell, Z =>
+      var ConfusionPrecept = new Precept(Purpose.Blast, Properties.confusion);
+      var StunnedPrecept = new Precept(Purpose.Blast, Properties.stunned);
+
+      confusion = AddSpell(Schools.enchantment, "confusion", 2, Precept: null, Glyphs.confusion_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -370,33 +373,39 @@ namespace Pathos
           Z,
           U =>
           {
+            U.Precept = ConfusionPrecept;
             U.SetCast().Strike(Strikes.psychic, Dice.One);
             U.Apply.ApplyTransient(Properties.confusion, 2.d6());
           },
           P =>
           {
+            P.Precept = ConfusionPrecept;
             P.SetCast().Strike(Strikes.psychic, Dice.One);
             P.Apply.ApplyTransient(Properties.confusion, 4.d6());
           },
           S =>
           {
+            S.Precept = ConfusionPrecept;
             S.SetCast().Strike(Strikes.psychic, Dice.Fixed(2));
             S.Apply.ApplyTransient(Properties.confusion, 6.d6());
           },
           E =>
           {
+            E.Precept = StunnedPrecept;
             E.SetCast().Strike(Strikes.psychic, Dice.Fixed(3));
             E.Apply.ApplyTransient(Properties.confusion, 8.d6());
             E.Apply.ApplyTransient(Properties.stunned, 1.d6());
           },
           M =>
           {
+            M.Precept = StunnedPrecept;
             M.SetCast().Strike(Strikes.psychic, Dice.Fixed(4));
             M.Apply.ApplyTransient(Properties.confusion, 10.d6());
             M.Apply.ApplyTransient(Properties.stunned, 2.d6());
           },
           C =>
           {
+            C.Precept = StunnedPrecept;
             C.SetCast().Strike(Strikes.psychic, Dice.Fixed(5));
             C.Apply.ApplyTransient(Properties.confusion, 12.d6());
             C.Apply.ApplyTransient(Properties.stunned, 3.d6());
@@ -1743,7 +1752,7 @@ namespace Pathos
         );
       });
 
-      knock = AddSpell(Schools.transmutation, "knock", 1, null, Glyphs.knock_spell, Z =>
+      knock = AddSpell(Schools.transmutation, "knock", 1, Precept: null, Glyphs.knock_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -1790,7 +1799,10 @@ namespace Pathos
         );
       });
 
-      levitation = AddSpell(Schools.abjuration, "levitation", 4, new Precept(Purpose.Blast, Properties.levitation), Glyphs.levitation_spell, Z =>
+      var LevitationPrecept = new Precept(Purpose.Blast, Properties.levitation);
+      var FlightPrecept = new Precept(Purpose.Buff, Properties.flight);
+
+      levitation = AddSpell(Schools.abjuration, "levitation", 4, Precept: null, Glyphs.levitation_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -1798,31 +1810,37 @@ namespace Pathos
           Z,
           U =>
           {
+            U.Precept = LevitationPrecept;
             U.SetCast().Strike(Strikes.spirit, Dice.Zero);
             U.Apply.ApplyTransient(Properties.levitation, 1.d140() + 10);
           },
           P =>
           {
+            P.Precept = LevitationPrecept;
             P.SetCast().Strike(Strikes.spirit, Dice.One);
             P.Apply.ApplyTransient(Properties.levitation, 1.d140() + 100);
           },
           S =>
           {
+            S.Precept = LevitationPrecept;
             S.SetCast().Strike(Strikes.spirit, Dice.One);
             S.Apply.ApplyTransient(Properties.levitation, 1.d140() + 200);
           },
           E =>
           {
+            E.Precept = FlightPrecept;
             E.SetCast().Strike(Strikes.spirit, Dice.One);
             E.Apply.ApplyTransient(Properties.flight, 1.d140() + 100); // this is flight now!
           },
           M =>
           {
+            M.Precept = FlightPrecept;
             M.SetCast().Strike(Strikes.spirit, Dice.One);
             M.Apply.ApplyTransient(Properties.flight, 1.d140() + 200);
           },
           C =>
           {
+            C.Precept = FlightPrecept;
             C.SetCast().Strike(Strikes.spirit, Dice.One);
             C.Apply.ApplyTransient(Properties.flight, 1.d140() + 300);
           }

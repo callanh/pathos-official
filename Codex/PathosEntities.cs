@@ -28450,7 +28450,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 12, DEX: 14, CON: 11, INT: 4, WIS: 9, CHA: 6);
+        E.DefaultForm.Set(STR: 12, DEX: 14, CON: 11, INT: 6, WIS: 9, CHA: 6);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
@@ -28494,7 +28494,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(Dice.Zero);
-        E.DefaultForm.Set(STR: 9, DEX: 15, CON: 5, INT: 4, WIS: 7, CHA: 5);
+        E.DefaultForm.Set(STR: 9, DEX: 15, CON: 5, INT: 3, WIS: 7, CHA: 5);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
