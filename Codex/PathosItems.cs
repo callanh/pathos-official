@@ -8144,7 +8144,7 @@ namespace Pathos
            .SetAudibility(10);
           Use.Apply.WhenConfused
           (
-            T => T.CreateAsset(5.d6(), rock), // 5d6 x (1d6 + 6) can be a lot of rocks.
+            T => T.CreateAsset(5.d6(), QuantityDice: null, rock), // 5d6 x (1d6 + 6) can be a lot of rocks.
             E => E.WithSourceSanctity
             (
               B => B.CreateBoulder(Dice.One),
@@ -8155,8 +8155,8 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(1.d3(), rock); // poop rocks (quantity is more than this)!
-          A.CreateAsset(1.d2() - 1, diamond); // maybe something valuable comes out.
+          A.CreateAsset(1.d3(), QuantityDice: null, rock); // poop rocks (quantity is more than this)!
+          A.CreateAsset(1.d2() - 1, QuantityDice: null, diamond); // maybe something valuable comes out.
           A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.earth_elemental), E => E.Polymorph(Entities.dust_vortex));
         });
       });
@@ -8297,9 +8297,9 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, Codex.Items.beartrap);
-          A.CreateAsset(Dice.One, Codex.Items.caltrops);
-          A.CreateAsset(Dice.One, Codex.Items.land_mine);
+          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.beartrap);
+          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.caltrops);
+          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.land_mine);
         });
       });
 
@@ -8572,7 +8572,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(10.d100(), gold_coin);
+          A.CreateAsset(Dice.One, QuantityDice: 10.d100(), gold_coin);
         });
       });
 
@@ -8940,7 +8940,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, bag_of_tricks);
+          A.CreateAsset(Dice.One, QuantityDice: null, bag_of_tricks);
         });
       });
 

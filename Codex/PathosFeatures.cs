@@ -248,8 +248,8 @@ namespace Pathos
         OpenUse.Apply.WhenProbability(Table =>
         {
           Table.Add(30, A => A.CreateEntity(Dice.One, Kinds.mummy));
-          Table.Add(20, A => A.CreateAsset(Dice.One, new[] { Items.animal_corpse, Items.vegetable_corpse }));
-          Table.Add(15, A => A.CreateAsset(10.d100(), Items.gold_coin));
+          Table.Add(20, A => A.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse }));
+          Table.Add(15, A => A.CreateAsset(Dice.One, 10.d100(), Items.gold_coin));
           Table.Add(10, A => A.CreateAsset(2.d3() + 1, new[] { Stocks.ring, Stocks.amulet, Stocks.gem, Stocks.wand, Stocks.scroll, Stocks.potion, Stocks.book }));
           Table.Add(5, A => A.PlaceCurse(1.d4() + 1, Sanctities.Cursed));
           Table.Add(5, A => A.ApplyTransient(Properties.hunger, 10.d100() + 100));

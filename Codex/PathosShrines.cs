@@ -178,7 +178,7 @@ namespace Pathos
         {
           B.Description = "Request a fresh corpse with no questions asked.";
           B.Cost = 100;
-          B.Apply.CreateAsset(Dice.One, new[] { Items.animal_corpse, Items.vegetable_corpse });
+          B.Apply.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse });
         });
 
         S.AddBoon("tinned meat", B =>
