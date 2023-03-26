@@ -455,6 +455,8 @@ namespace Pathos
         C.AddAvatar(Races.orc, Genders.male, Glyphs.orc_male_jester);
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_jester);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_jester);
+        C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_jester);
+        C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_jester);
         C.AddFeat(2, Properties.see_invisible);
         C.AddFeat(4, Properties.quickness);
         C.AddFeat(8, Properties.free_action);
