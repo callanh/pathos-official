@@ -2393,7 +2393,7 @@ ItemName,blue glass bauble,blauer Klunker
 ItemName,book of acid stream,Buch des Säurestroms
 ItemName,book of animate dead,Buch der animierten Toten
 ItemName,book of animate object,Buch des animierten Objekts
-ItemName,book of bind undead,Buch des Zähmen der Untoten
+ItemName,book of bind undead,Buch des Zähmens von Untoten
 ItemName,book of blank paper,Leeres Buch
 ItemName,book of blinking,Blinzelndes Buch
 ItemName,book of cancellation,Buch des Abbruchs
@@ -2821,7 +2821,7 @@ ItemName,scroll of fire,Schriftrolle des Feuers
 ItemName,scroll of food detection,Schriftrolle der Lebensmittelerkennung
 ItemName,scroll of gathering,Schriftrolle der Sammlung
 ItemName,scroll of genocide,Schriftrolle des Genozid
-ItemName,scroll of gold detection,Schriftrolle der Golderkennung
+ItemName,scroll of gold detection,Schriftrolle der Goldsuche
 ItemName,scroll of ice,Schriftrolle des Eis
 ItemName,scroll of identify,Schriftrolle der Identifikation
 ItemName,scroll of light,Schriftrolle des Lichtes
@@ -2924,14 +2924,14 @@ ItemName,wand of iceball,Zauberstab des Eisballes
 ItemName,wand of light,Zauberstab des Lichtes
 ItemName,wand of lightning,Zauberstab des Blitzes
 ItemName,wand of locking,Zauberstab der Verriegelung
-ItemName,wand of magic missile,Zauberstab der magischen Rakete
-ItemName,wand of make invisible,Zauberstab des unsichtbar machens
+ItemName,wand of magic missile,Zauberstab des magischen Geschosses
+ItemName,wand of make invisible,Zauberstab des Unsichtbarmachens
 ItemName,wand of nothing,Zauberstab des Nichts
 ItemName,wand of opening,Zauberstab der Öffnung
 ItemName,wand of phase,Zauberstab der Phase
 ItemName,wand of polymorph,Zauberstab des Verwandlung
 ItemName,wand of punishment,Zauberstab der Bestrafung
-ItemName,wand of secret detection,Zauberstab der geheimen Entdeckung
+ItemName,wand of secret detection,Zauberstab des Geheimnisselüftens
 ItemName,wand of sleep,Zauberstab des Schlafes
 ItemName,wand of slow,Zauberstab der Verlangsamung
 ItemName,wand of striking,Zauberstab des Schlages
@@ -4295,10 +4295,10 @@ ShopName,hardware store,Eisenwarenladen
 ShopName,jewellers,Juwelier
 ShopName,lighting store,Beleuchtungsgeschäft
 ShopName,liquor emporium,Spirituosenmarkt
-ShopName,quality apparel and accessories,Hochwertige Bekleidung und Accessoires
+ShopName,quality apparel and accessories,Modische Accessoires
 ShopName,rare books,Seltene Bücher
 ShopName,second-hand stationery store,Antiquariat
-ShopName,used armour dealership,Händler für gebrauchte Rüstungen
+ShopName,used armour dealership,Rüstungs-Gebrauchthandel
 ShrineName,craft station,Werkstatt
 ShrineName,dark sepulchre,Dunkle Grabstätte
 ShrineName,holy shrine,Heiliger Schrein
@@ -4415,7 +4415,7 @@ SonicName,giggle,kichern
 SonicName,groan,stöhnen
 SonicName,growl,fauchen
 SonicName,grumble,murren
-SonicName,grunt,grummeln
+SonicName,grunt,grunzen
 SonicName,harp,Harfenspiel
 SonicName,hiss,zischen
 SonicName,hit,treffer
@@ -4439,10 +4439,10 @@ SonicName,low health,wenig Leben
 SonicName,magic,Magie
 SonicName,meow,miauen
 SonicName,miss,verfehlen
-SonicName,moan,stöhnen
+SonicName,moan,klagen
 SonicName,moo,muhen
 SonicName,neigh,wiehern
-SonicName,oink,grunzen
+SonicName,oink,quieken
 SonicName,open door,Tür öffnen
 SonicName,pick axe,Spitzhacke
 SonicName,pistol fire,Pistolenfeuer
@@ -4492,7 +4492,7 @@ SonicName,tool,Werkzeug
 SonicName,trumpet,Trompete
 SonicName,tunnelling,tunnelgraben
 SonicName,turnbased,rundenbasiert
-SonicName,wailing,Klagen
+SonicName,wailing,jammern
 SonicName,wand,Zauberstab
 SonicName,warping,verzerrend
 SonicName,water crash,Platscher ins Wasser
@@ -4555,10 +4555,10 @@ SpellName,crushing sphere,erdrückende Sphäre
 SpellName,curing,Krankheiten kurieren
 SpellName,darkness,Dunkelheit
 SpellName,deflection,Ablenkung
-SpellName,detect food,Lebensmittel erkennen
+SpellName,detect food,Lebensmittel entdecken
 SpellName,detect monsters,Monster entdecken
 SpellName,detect treasure,Schätze entdecken
-SpellName,detect unseen,Unsichtbares erkennen
+SpellName,detect unseen,Unsichtbares entdecken
 SpellName,dig,Graben
 SpellName,disintegrate,Zerfallen
 SpellName,drain life,Leben ablassen
@@ -4640,7 +4640,7 @@ StrikeName,shriek,Schrei
 StrikeName,spirit,Geist
 StrikeName,tunnel,Tunnel
 StrikeName,venom,Gift
-StrikeName,wail,Klagen
+StrikeName,wail,Gejammer
 TraversalPastName,ascended,Emporgestiegen
 TraversalPastName,descended,stieg ab
 TraversalPastName,travelled,gereist

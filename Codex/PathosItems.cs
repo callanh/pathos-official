@@ -5188,6 +5188,10 @@ namespace Pathos
             C => C.ApplyTransient(Properties.sickness, 2.d6() + 8)
           );
         });
+        I.SetImpact(Sonics.splat, A =>
+        {
+          A.WhenTargetEntity(new[] { Entities.seal }, T => T.Charm(Elements.physical, Delay.Zero));
+        });
       });
 
       The_Hero = AddFood("The Hero", I =>
