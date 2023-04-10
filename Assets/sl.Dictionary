@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,
-ApetiteName,hungry,
-ApetiteName,satiated,
-ApetiteName,starving,
-ApetiteName,weak,
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Dolgo ogrinjalo ki je spredaj odprto in se na prsih zapenja z zaponko.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Kratko temveč čvrsto ogrinjalo iz mitrilnega oklepa.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Tanek in nežen plašč iz mitrilnega oklepa.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,rumen dragulj
 AppearanceName,yellow potion,rumen napoj
 AppearanceName,yellowish brown gem,rumeno rjav dragulj
 AppearanceName,zinc wand,cinkova čarobna palica
+AppetiteName,content,
+AppetiteName,hungry,
+AppetiteName,satiated,
+AppetiteName,starving,
+AppetiteName,weak,
 AttackType,bite,ugriz
 AttackType,blast,raztreliti
 AttackType,breath,dih
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,
-FormatText,{CharacterName} is {ApetiteName},
+FormatText,{CharacterName} is {AppetiteName},
 FormatText,{CharacterName} is feeling {StandingName},
 FormatText,{CharacterName} is no longer stuck,
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},

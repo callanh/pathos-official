@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,ขี่ได้
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,อิ่ม
-ApetiteName,hungry,หิวโหย
-ApetiteName,satiated,อิ่มแปล้
-ApetiteName,starving,กำลังอดตาย
-ApetiteName,weak,อ่อนแอ
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,
 AppearanceName,yellow potion,โพชั่นสีเหลือง
 AppearanceName,yellowish brown gem,
 AppearanceName,zinc wand,
+AppetiteName,content,อิ่ม
+AppetiteName,hungry,หิวโหย
+AppetiteName,satiated,อิ่มแปล้
+AppetiteName,starving,กำลังอดตาย
+AppetiteName,weak,อ่อนแอ
 AttackType,bite,กัด
 AttackType,blast,ระเบิด
 AttackType,breath,ลมหายใจ
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,ช่องเก็บของ{CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName}{ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName}{AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName}รู้สึก{StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName}ไม่ติดอีกต่อไป
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},ตอนนี้{CharacterName}{QualificationName}ทักษะ{SkillName}แล้ว

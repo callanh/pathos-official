@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,mounted
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,treść
-ApetiteName,hungry,głodny
-ApetiteName,satiated,nasycony
-ApetiteName,starving,głodujący
-ApetiteName,weak,słaba
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Długi płaszcz który jest otwarty z przodu i zapinany na piersi klamrą.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Krótka ale mocna zbroja z mithrilu.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Wysmukła i delikatna zbroja z mithrilu.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,żółty klejnot
 AppearanceName,yellow potion,żółta mikstura
 AppearanceName,yellowish brown gem,żółtobrązowy klejnot
 AppearanceName,zinc wand,cynkowa różdżka
+AppetiteName,content,treść
+AppetiteName,hungry,głodny
+AppetiteName,satiated,nasycony
+AppetiteName,starving,głodujący
+AppetiteName,weak,słaba
 AttackType,bite,ugryzienie
 AttackType,blast,eksplozja
 AttackType,breath,oddech
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} nieudolnie {MotionPastName} {AssetName} i nic się nie stało
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} nieudolnie {MotionPastName} {Use:AssetName} z {With:AssetName}
 FormatText,{CharacterName} Inventory,{CharacterName} Ekwipunek
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} jest {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} jest {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} czuje się {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} nie jest już zablokowany
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} jest teraz {QualificationName} w {SkillName}

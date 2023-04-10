@@ -36,11 +36,6 @@ AnatomyName,mind,有意志
 AnatomyName,mounted,騎乘
 AnatomyName,thermal,恆溫
 AnatomyName,voice,有聲
-ApetiteName,content,滿足
-ApetiteName,hungry,飢餓
-ApetiteName,satiated,飽食
-ApetiteName,starving,極餓
-ApetiteName,weak,虛弱
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,一件正面敞開的長斗篷，被用一枚扣子繫住。
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,一件短而堅硬的秘銀夾克。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,一件薄而精妙的秘銀夾克。
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,黃色寶石
 AppearanceName,yellow potion,黃色藥水
 AppearanceName,yellowish brown gem,黃褐寶石
 AppearanceName,zinc wand,鋅制魔杖
+AppetiteName,content,滿足
+AppetiteName,hungry,飢餓
+AppetiteName,satiated,飽食
+AppetiteName,starving,極餓
+AppetiteName,weak,虛弱
 AttackType,bite,咬
 AttackType,blast,震爆
 AttackType,breath,吐息
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} 笨拙地 {MotionPastName} {AssetName} 但什麼也沒有發生
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 笨拙地用 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} Inventory,{CharacterName} 的攜帶物品
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} 感到 {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} 感到 {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} 感到 {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} 不再被卡住
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} 在 {SkillName} 上到達了 {QualificationName} 水平。

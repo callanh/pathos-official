@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,верховой
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,удовлеткрадецённый
-ApetiteName,hungry,голодный
-ApetiteName,satiated,сытый
-ApetiteName,starving,истощённый
-ApetiteName,weak,ослабленный
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Длинный плащ, открытый спереди и с застёжкой на груди."
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Короткий, но выглядящий крепким митрилни доспехи."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Тонкий изящный митрилни доспехи.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,жёлтый скъпоценен камък
 AppearanceName,yellow potion,жёлтое отвара
 AppearanceName,yellowish brown gem,желтовато-коричневый скъпоценен камък
 AppearanceName,zinc wand,цинковая пръчка
+AppetiteName,content,удовлеткрадецённый
+AppetiteName,hungry,голодный
+AppetiteName,satiated,сытый
+AppetiteName,starving,истощённый
+AppetiteName,weak,ослабленный
 AttackType,bite,укус
 AttackType,blast,взрив
 AttackType,breath,дыхание
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,список вещей {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} теперь {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} теперь {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} чувствует себя {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} освобождается
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} теперь {QualificationName} в {SkillName}

@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,верховий
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,ситий
-ApetiteName,hungry,голодний
-ApetiteName,satiated,об’ївся
-ApetiteName,starving,виснажений
-ApetiteName,weak,заслаблий
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Довгий плащ, відкритий спереду, із застібкою на грудях"
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Короткий, але міцний міфріловий обладунок."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Тонкий і делікатний міфріловий обладунок.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,жовтий самоцвіт
 AppearanceName,yellow potion,жовте зілля
 AppearanceName,yellowish brown gem,жовтувато-коричневий самоцвіт
 AppearanceName,zinc wand,цинкова паличка
+AppetiteName,content,ситий
+AppetiteName,hungry,голодний
+AppetiteName,satiated,об’ївся
+AppetiteName,starving,виснажений
+AppetiteName,weak,заслаблий
 AttackType,bite,укус
 AttackType,blast,вибух
 AttackType,breath,дихання
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} незграбно {MotionPastName} {AssetName} і нічого не відбулося
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} незграбно {MotionPastName} {Use:AssetName} за допомогою {With:AssetName}
 FormatText,{CharacterName} Inventory,список речей {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} тепер {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} тепер {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} відчуває себе {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} звільняється
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} тепер {QualificationName} в {SkillName}

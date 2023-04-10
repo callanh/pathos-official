@@ -35,7 +35,7 @@ namespace Pathos
         this.Slots = new CodexSlots(this);
         this.Elements = new CodexElements(this);
         this.Properties = new CodexProperties(this);
-        this.Apetites = new CodexApetites(this);
+        this.Appetites = new CodexAppetites(this);
         this.Standings = new CodexStandings(this);
         this.Warnings = new CodexWarnings(this);
         this.Materials = new CodexMaterials(this);
@@ -144,7 +144,7 @@ namespace Pathos
       Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -152,7 +152,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.good, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -161,7 +161,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -171,7 +171,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -195,7 +195,7 @@ namespace Pathos
     public Manifest Manifest { get; }
     public CodexAfflictions Afflictions { get; }
     public CodexAnatomies Anatomies { get; }
-    public CodexApetites Apetites { get; }
+    public CodexAppetites Appetites { get; }
     public CodexAtmospheres Atmospheres { get; }
     public CodexAttackTypes AttackTypes { get; }
     public CodexAttributes Attributes { get; }
@@ -1084,7 +1084,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Glyphs.Quicks.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Warnings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Apetites.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Appetites.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
@@ -1219,7 +1219,7 @@ namespace Pathos
 
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
       RegisterRecord<ManifestAnatomies, AnatomyEditor, Anatomy>();
-      RegisterRecord<ManifestApetites, ApetiteEditor, Apetite>();
+      RegisterRecord<ManifestAppetites, AppetiteEditor, Appetite>();
       RegisterRecord<ManifestAtmospheres, AtmosphereEditor, Atmosphere>();
       RegisterRecord<ManifestAttackTypes, AttackTypeEditor, AttackType>();
       RegisterRecord<ManifestAttributes, AttributeEditor, Attribute>();
@@ -1278,7 +1278,7 @@ namespace Pathos
 
       Base.Register<CodexAfflictions>();
       Base.Register<CodexAnatomies>();
-      Base.Register<CodexApetites>();
+      Base.Register<CodexAppetites>();
       Base.Register<CodexAtmospheres>();
       Base.Register<CodexAttackTypes>();
       Base.Register<CodexAttributes>();
@@ -1342,7 +1342,7 @@ namespace Pathos
       Base.Register<Anatomy>();
       Base.Register<AnatomySet>();
       Base.Register<Appearance>();
-      Base.Register<Apetite>();
+      Base.Register<Appetite>();
       Base.Register<Apply>();
       Base.Register<Armour>();
       Base.Register<AssetFilter>();

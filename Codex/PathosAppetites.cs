@@ -6,24 +6,24 @@ using Inv.Support;
 
 namespace Pathos
 {
-  public sealed class CodexApetites : CodexPage<ManifestApetites, ApetiteEditor, Apetite>
+  public sealed class CodexAppetites : CodexPage<ManifestAppetites, AppetiteEditor, Appetite>
   {
-    private CodexApetites() { }
+    private CodexAppetites() { }
 #if MASTER_CODEX
-    internal CodexApetites(Codex Codex)
-      : base(Codex.Manifest.Apetites)
+    internal CodexAppetites(Codex Codex)
+      : base(Codex.Manifest.Appetites)
     {
       var Properties = Codex.Properties;
       var Glyphs = Codex.Glyphs;
 
-      Apetite AddStatus(string Name, Inv.Colour Colour, int Threshold, Action<ApetiteEditor> EditorAction)
+      Appetite AddStatus(string Name, Inv.Colour Colour, int Threshold, Action<AppetiteEditor> EditorAction)
       {
         return Register.Add(E =>
         {
           E.Name = Name;
           E.Colour = Colour;
           E.Threshold = Threshold;
-          E.Glyph = Glyphs.apetite;
+          E.Glyph = Glyphs.appetite;
 
           CodexRecruiter.Enrol(() => EditorAction(E));
         });
@@ -87,10 +87,10 @@ namespace Pathos
     }
 #endif
 
-    public readonly Apetite satiated;
-    public readonly Apetite content;
-    public readonly Apetite hungry;
-    public readonly Apetite weak;
-    public readonly Apetite starving;
+    public readonly Appetite satiated;
+    public readonly Appetite content;
+    public readonly Appetite hungry;
+    public readonly Appetite weak;
+    public readonly Appetite starving;
   }
 }

@@ -2343,7 +2343,7 @@ namespace Pathos
     public readonly Glyph thirst_punishment;
     public readonly Glyph wanted_punishment;
 
-    public readonly Glyph apetite;
+    public readonly Glyph appetite;
     public readonly Glyph standing;
 
     public readonly Glyph artifact_icon;

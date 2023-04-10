@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,binildi
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,memnun
-ApetiteName,hungry,aç
-ApetiteName,satiated,tok
-ApetiteName,starving,açlıktan ölüyor
-ApetiteName,weak,zayıf
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Önü açık ve göğüsten toka ile bağlanan uzun bir pelerin.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Kısa ama dayanıklı gözüken mitril bir zırh.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Dar ve zarif gözüken mitril bir zırh.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,sarı mücevher
 AppearanceName,yellow potion,sarı iksir
 AppearanceName,yellowish brown gem,sarımsı kahverengi mücevher
 AppearanceName,zinc wand,çinko asa
+AppetiteName,content,memnun
+AppetiteName,hungry,aç
+AppetiteName,satiated,tok
+AppetiteName,starving,açlıktan ölüyor
+AppetiteName,weak,zayıf
 AttackType,bite,ısır
 AttackType,blast,patlat
 AttackType,breath,nefes
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,{CharacterName} envanteri
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} {StandingName} hissediyor
 FormatText,{CharacterName} is no longer stuck,{CharacterName} artık sıkışık değil
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} artık {SkillName} dalında {QualificationName}

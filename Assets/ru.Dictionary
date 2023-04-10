@@ -36,11 +36,6 @@ AnatomyName,mind,разум
 AnatomyName,mounted,верховой
 AnatomyName,thermal,тёплый
 AnatomyName,voice,голос
-ApetiteName,content,удовлетворённый
-ApetiteName,hungry,голодный
-ApetiteName,satiated,сытый
-ApetiteName,starving,истощённый
-ApetiteName,weak,ослабленный
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Открытый спереди длинный плащ с застёжкой на груди.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Мифрильный доспех, короткий в длину, но выглядящий крепким."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Мифрильный доспех с тонким и изящным покрытием.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,жёлтый самоцвет
 AppearanceName,yellow potion,жёлтое зелье
 AppearanceName,yellowish brown gem,желтовато-коричневый самоцвет
 AppearanceName,zinc wand,цинковая палочка
+AppetiteName,content,удовлетворённый
+AppetiteName,hungry,голодный
+AppetiteName,satiated,сытый
+AppetiteName,starving,истощённый
+AppetiteName,weak,ослабленный
 AttackType,bite,укус
 AttackType,blast,взрыв
 AttackType,breath,дыхание
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} неуклюже {MotionPastName} {AssetName} и ничего не произошло
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} неуклюже {MotionPastName} {Use:AssetName} используя {With:AssetName}
 FormatText,{CharacterName} Inventory,Список вещей {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} теперь {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} теперь {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} чувствует себя {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} освобождается
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} теперь {QualificationName} в {SkillName}

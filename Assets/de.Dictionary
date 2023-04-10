@@ -36,11 +36,6 @@ AnatomyName,mind,Verstand
 AnatomyName,mounted,bestiegen
 AnatomyName,thermal,warmblütig
 AnatomyName,voice,Stimme
-ApetiteName,content,zufrieden
-ApetiteName,hungry,hungrig
-ApetiteName,satiated,gesättigt
-ApetiteName,starving,verhungernd
-ApetiteName,weak,schwach
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Ein langer Umhang der vorne offen ist und an der Brust mit einem Verschluss befestigt wird.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Ein kurzer aber stabil aussehender Mantel der Mithril Rüstung.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Ein schlanker und zart aussehender Mantel der Mithril-Rüstung.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,gelber Edelstein
 AppearanceName,yellow potion,gelber Trank
 AppearanceName,yellowish brown gem,gelb-bräunlicher Edelstein
 AppearanceName,zinc wand,Zauberstab aus Zink
+AppetiteName,content,zufrieden
+AppetiteName,hungry,hungrig
+AppetiteName,satiated,gesättigt
+AppetiteName,starving,verhungernd
+AppetiteName,weak,schwach
 AttackType,bite,Beißen
 AttackType,blast,Explosion
 AttackType,breath,Atem
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} {MotionPastName} {AssetName} ungeschickt und nichts geschah
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} ungeschickt mit {With:AssetName}
 FormatText,{CharacterName} Inventory,Inventar von {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} ist {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} ist {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} fühlt sich {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} steckt nicht mehr fest
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} ist jetzt {QualificationName} im {SkillName}

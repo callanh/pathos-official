@@ -36,11 +36,6 @@ AnatomyName,mind,정신
 AnatomyName,mounted,승마가능
 AnatomyName,thermal,열이 있음
 AnatomyName,voice,목소리
-ApetiteName,content,만족함
-ApetiteName,hungry,배고픔
-ApetiteName,satiated,배부름
-ApetiteName,starving,굶주림
-ApetiteName,weak,약함
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,앞이 열려있고 가슴에서 걸쇠로 조이는 긴 망토이다.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,짧지만 튼튼해 보이는 미스릴 갑옷이다.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,날렵하고 섬세해 보이는 미스릴 갑옷이다.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,노란색 보석
 AppearanceName,yellow potion,노란색 물약
 AppearanceName,yellowish brown gem,황갈색 보석
 AppearanceName,zinc wand,아연 마법봉
+AppetiteName,content,만족함
+AppetiteName,hungry,배고픔
+AppetiteName,satiated,배부름
+AppetiteName,starving,굶주림
+AppetiteName,weak,약함
 AttackType,bite,물기
 AttackType,blast,분사
 AttackType,breath,숨결
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName}�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName}은(는) 서투르게 {AssetName}을 {MotionPastName}했지만 아무 일도 일어나지 않았다
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}는 서투르게 {With:AssetName}에 {Use:AssetName}을 {MotionPastName}했다
 FormatText,{CharacterName} Inventory,{CharacterName}의 인벤토리
-FormatText,{CharacterName} is {ApetiteName},{CharacterName}은(는) {ApetiteName} 상태이다
+FormatText,{CharacterName} is {AppetiteName},{CharacterName}은(는) {AppetiteName} 상태이다
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName}은(는) {StandingName} 기분을 느낀다
 FormatText,{CharacterName} is no longer stuck,{CharacterName}은(는) 더 이상 끼어있지 않다
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName}은(는) {SkillName} 스킬에 {QualificationName}이(가) 되었다

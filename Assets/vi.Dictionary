@@ -36,11 +36,6 @@ AnatomyName,mind,tâm trí
 AnatomyName,mounted,cưỡi
 AnatomyName,thermal,
 AnatomyName,voice,giọng nói
-ApetiteName,content,bình thường
-ApetiteName,hungry,đói
-ApetiteName,satiated,no
-ApetiteName,starving,đang chết đói
-ApetiteName,weak,yếu
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Một chiếc áo choàng dài hở phía trước và được thắt ở ngực bằng móc gài.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Một chiếc áo giáp ngắn và cứng làm từ mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Một chiếc áo dài thun và tinh tế làm từ mithril.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,Viên ngọc màu vàng
 AppearanceName,yellow potion,Lọ thuốc màu vàng
 AppearanceName,yellowish brown gem,Viên ngọc màu vàng nâu
 AppearanceName,zinc wand,Đũa phép kẽm
+AppetiteName,content,bình thường
+AppetiteName,hungry,đói
+AppetiteName,satiated,no
+AppetiteName,starving,đang chết đói
+AppetiteName,weak,yếu
 AttackType,bite,cắn
 AttackType,blast,nổ
 AttackType,breath,gầm
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} {MotionPastName} {AssetName} một cách vụng về và không có gì xảy ra
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} {With:AssetName} một cách vụng về
 FormatText,{CharacterName} Inventory,Hành trang của {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} đang {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} đang {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} đang cảm thấy {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} không còn bị kẹt
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} đạt được cấp {QualificationName} trong {SkillName}

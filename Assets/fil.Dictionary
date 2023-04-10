@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,
-ApetiteName,hungry,
-ApetiteName,satiated,
-ApetiteName,starving,
-ApetiteName,weak,
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,May maikli pero matibay na itsurang coat of mithril armour.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,May payat pero magandang itsura na coat of mithril armour.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,hiyas na dilaw
 AppearanceName,yellow potion,gayumang dilaw
 AppearanceName,yellowish brown gem,kayumangging hiyas na may pagka dilaw
 AppearanceName,zinc wand,wand na gawa sa zinc
+AppetiteName,content,
+AppetiteName,hungry,
+AppetiteName,satiated,
+AppetiteName,starving,
+AppetiteName,weak,
 AttackType,bite,kagat
 AttackType,blast,pagsabog
 AttackType,breath,paghinga
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,
-FormatText,{CharacterName} is {ApetiteName},
+FormatText,{CharacterName} is {AppetiteName},
 FormatText,{CharacterName} is feeling {StandingName},
 FormatText,{CharacterName} is no longer stuck,
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},

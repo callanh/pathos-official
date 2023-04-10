@@ -36,11 +36,6 @@ AnatomyName,mind,mente
 AnatomyName,mounted,montado
 AnatomyName,thermal,térmico
 AnatomyName,voice,voz
-ApetiteName,content,satisfeito
-ApetiteName,hungry,faminto
-ApetiteName,satiated,saciado
-ApetiteName,starving,morrendo de fome
-ApetiteName,weak,fraco
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Uma manta longa aberta na parte da frente e presa ao peito por um fecho.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Uma pequena porém robusta vestimenta de mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Uma vestimenta de mithril esguia e delicada.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,gema amarela
 AppearanceName,yellow potion,poção amarela
 AppearanceName,yellowish brown gem,gema marrom amarelada
 AppearanceName,zinc wand,varinha de zinco
+AppetiteName,content,satisfeito
+AppetiteName,hungry,faminto
+AppetiteName,satiated,saciado
+AppetiteName,starving,morrendo de fome
+AppetiteName,weak,fraco
 AttackType,bite,morder
 AttackType,blast,explodir
 AttackType,breath,soprar
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,<{CharacterName} ineptamente {MotionPastName}> {AssetName} e nada aconteceu
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} ineptamente {MotionPastName} {Use:AssetName} com {With:AssetName}
 FormatText,{CharacterName} Inventory,{CharacterName} Inventário
-FormatText,{CharacterName} is {ApetiteName},<{CharacterName} está {ApetiteName}>
+FormatText,{CharacterName} is {AppetiteName},<{CharacterName} está {AppetiteName}>
 FormatText,{CharacterName} is feeling {StandingName},<{CharacterName} está se sentindo {StandingName}>
 FormatText,{CharacterName} is no longer stuck,<{CharacterName} não está mais preso>
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} agora é {QualificationName} em {SkillName}

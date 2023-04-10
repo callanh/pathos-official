@@ -36,11 +36,6 @@ AnatomyName,mind,意識
 AnatomyName,mounted,騎乗可能
 AnatomyName,thermal,恒温
 AnatomyName,voice,声
-ApetiteName,content,満足
-ApetiteName,hungry,空腹
-ApetiteName,satiated,満腹
-ApetiteName,starving,飢餓
-ApetiteName,weak,疲弊
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,胸の留め金で締める、前開きの長いマント。
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,ミスリル製の、短いが頑丈そうな鎖帷子。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,ミスリル製の、細身で精巧に作られていそうな鎖帷子。
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,黄色の宝石
 AppearanceName,yellow potion,黄色い液体の入った小瓶
 AppearanceName,yellowish brown gem,黄褐色の宝石
 AppearanceName,zinc wand,亜鉛の棒
+AppetiteName,content,満足
+AppetiteName,hungry,空腹
+AppetiteName,satiated,満腹
+AppetiteName,starving,飢餓
+AppetiteName,weak,疲弊
 AttackType,bite,咬みつき
 AttackType,blast,爆風
 AttackType,breath,ブレス
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName}�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName}は出たら目に{AssetName}{MotionPastName}が何も起こらなかった
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は出たら目に{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} Inventory,{CharacterName}の持ち物
-FormatText,{CharacterName} is {ApetiteName},{CharacterName}は{ApetiteName}感を感じた
+FormatText,{CharacterName} is {AppetiteName},{CharacterName}は{AppetiteName}感を感じた
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName}は{StandingName}であると感じている
 FormatText,{CharacterName} is no longer stuck,{CharacterName}は動けるようになった
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName}は{SkillName}の{QualificationName}になった

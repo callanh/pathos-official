@@ -36,11 +36,6 @@ AnatomyName,mind,
 AnatomyName,mounted,hátason
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,elégedett
-ApetiteName,hungry,éhes
-ApetiteName,satiated,megcsömörlött
-ApetiteName,starving,éhező
-ApetiteName,weak,gyenge
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Egy hosszú, elöl nyitott köpönye, melyet a mellrésznél kapoccsal rögzítenek."
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Egy rövid, de erős kinézetű mithrilpáncélzat."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Egy karcsú és kényesnek tűnő mithrilpáncélzat.
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,sárga drágakő
 AppearanceName,yellow potion,sárga főzet
 AppearanceName,yellowish brown gem,sárgásbarna drágakő
 AppearanceName,zinc wand,cinkpálca
+AppetiteName,content,elégedett
+AppetiteName,hungry,éhes
+AppetiteName,satiated,megcsömörlött
+AppetiteName,starving,éhező
+AppetiteName,weak,gyenge
 AttackType,bite,harapás
 AttackType,blast,robbantás
 AttackType,breath,lehelés
@@ -1978,7 +1978,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,"{CharacterName} ügyetlenül {MotionPastName}: {AssetName}, és semmi nem történt"
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} ügyetlenül {MotionPastName} a(z) {Use:AssetName} tárgyat, ezzel: {With:AssetName}"
 FormatText,{CharacterName} Inventory,{CharacterName} leltára
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} így érzi magát: {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} többé nincs beragadva
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} most már {QualificationName} a következőben: {SkillName}
