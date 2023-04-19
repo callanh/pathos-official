@@ -1501,8 +1501,8 @@ EntityName,iron golem,铁傀儡
 EntityName,iron piercer,钢铁洞穿者
 EntityName,Ixoth,伊戈索斯
 EntityName,jabberwock,炸脖龙
-EntityName,jackal,豺
-EntityName,jackalwere,人豺
+EntityName,jackal,胡狼
+EntityName,jackalwere,胡狼人
 EntityName,jaguar,美洲虎
 EntityName,jellyfish,水母
 EntityName,jiggling blob,轻摇污斑
@@ -1800,7 +1800,7 @@ EntityName,water seeker,水源侍徒
 EntityName,water sphere,水球
 EntityName,water troll,水巨魔
 EntityName,wax golem,蜡傀儡
-EntityName,werejackal,豺人
+EntityName,werejackal,人豺
 EntityName,werepanther,豹人
 EntityName,wererat,鼠人
 EntityName,weresnake,蛇人
@@ -1932,7 +1932,7 @@ FormatText,{CharacterName} broke {AssetName},{CharacterName} 击毁了 {AssetNam
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} 只能持握 {GenderHis} 中的 {AssetName}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} 已经很饱足了，浪费了珍贵的营养
 FormatText,{CharacterName} cannot grow up,{CharacterName} 无法成长
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}为{DietName}，无法消化{AssetName}
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName} 不能够消化 {AssetName}，因为该角色为 {DietName}
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName} 在漂浮时无法接触 {ObjectName}
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},{CharacterName} 无法移动 {GenderHis} {AssetName}
 FormatText,{CharacterName} cast {QualificationName} {SpellName},{CharacterName} 施放了 {QualificationName} {SpellName}
@@ -2182,7 +2182,7 @@ HordeName,gnome,侏儒
 HordeName,goblin,地精
 HordeName,harpy,鹰身女妖
 HordeName,hell hound,地狱犬
-HordeName,jackal,豺
+HordeName,jackal,胡狼
 HordeName,keystone,假警察
 HordeName,kobold,狗头人
 HordeName,lemure,狐猴
@@ -3655,7 +3655,7 @@ LiteralText,rigid,坚硬
 LiteralText,ROTATE,旋转
 LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
 LiteralText,Sandbox Play,沙盒游戏
-LiteralText,SANITY CHECK,信仰检测
+LiteralText,SANITY CHECK,兼容性测试
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存与退出
 LiteralText,Saved adventure files are intended to be compatible across updates.,已储存的冒险文件在各版本间应当能够兼容。

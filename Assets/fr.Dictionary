@@ -1,12 +1,12 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Un venin mortel coule dans vos veines.
-AfflictionDescription,Something deeply unsettling is happening... down there.,Quelque chose de très troublant se produit... juste en bas.
+﻿AfflictionDescription,Deadly venom courses through your veins.,Un poison mortel circule dans vos veines.
+AfflictionDescription,Something deeply unsettling is happening... down there.,Quelque chose de très inquiétant se produit... juste en bas.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Une douleur lancinante vous vrille l'estomac.
-AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,"Cette maladie virale entraine une inflammation du cerveau, elle est transmise par des animaux infectés."
+AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,"Cette maladie virale entraîne une inflammation du cerveau, elle est transmise par des animaux infectés."
 AfflictionDescription,You feel unclean and everything itches.,Vous vous sentez sale et ça vous démange.
-AfflictionDescription,You have a dreadful case of stomach acid.,Vous avez un reflux gastrique très douloureux.
+AfflictionDescription,You have a dreadful case of stomach acid.,Vous souffrez de reflux gastriques très douloureux.
 AfflictionDescription,Your skin is sickly green and something is very wrong inside your stomach.,Votre peau est d'un vert maladif et quelque chose de mauvais est dans votre estomac.
 AfflictionName,crabs,des morpions
-AfflictionName,nits,des pous
+AfflictionName,nits,des poux
 AfflictionName,poisoning,de l'empoisonnement
 AfflictionName,rabies,rage
 AfflictionName,reflux,reflux
@@ -20,9 +20,9 @@ AnatomyAbsenceText,NO FEET,PAS DE PIEDS
 AnatomyAbsenceText,NO HANDS,PAS DE MAINS
 AnatomyAbsenceText,NO HEAD,PAS DE TÊTE
 AnatomyAbsenceText,NO LIMBS,PAS DE MEMBRES
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,NON AMORPHE
+AnatomyAbsenceText,NOT MOUNTED,NON ÉQUIPÉ
+AnatomyAbsenceText,NOT WARM,REFROIDIT
 AnatomyAbsenceText,VOICELESS,SANS VOIX
 AnatomyName,amorphous,amorphe
 AnatomyName,blood,sang
@@ -34,7 +34,7 @@ AnatomyName,head,tête
 AnatomyName,limbs,membres
 AnatomyName,mind,esprit
 AnatomyName,mounted,monté
-AnatomyName,thermal,
+AnatomyName,thermal,thermique
 AnatomyName,voice,voix
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Une longue cape ouverte sur le devant et attachée à la poitrine par un fermoir.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un manteau d'armure de mithril court mais d'apparence robuste.
@@ -172,7 +172,7 @@ AppearanceName,hilted polearm,arme d'hast avec poignée
 AppearanceName,hooded cloak,cape à capuche
 AppearanceName,hooked polearm,arme d'hast crochue
 AppearanceName,horn,corne
-AppearanceName,horseshoe,fer a cheval
+AppearanceName,horseshoe,fer à cheval
 AppearanceName,humongous book,livre énorme
 AppearanceName,icy potion,potion gelée
 AppearanceName,indigo book,livre indigo
@@ -183,11 +183,11 @@ AppearanceName,iron wand,baguette de fer
 AppearanceName,ivory ring,anneau d'ivoire
 AppearanceName,jackboots,bottes d'écuyer
 AppearanceName,jade ring,anneau de jade
-AppearanceName,jewelled wand,baguette certie de bijoux
+AppearanceName,jewelled wand,baguette sertie de bijoux
 AppearanceName,jungle boots,bottes de jungle
 AppearanceName,key,clé
 AppearanceName,lamp,lampe
-AppearanceName,large gun,grandearme à feu
+AppearanceName,large gun,grande arme à feu
 AppearanceName,large round shield,large bouclier rond
 AppearanceName,leather apron,tablier
 AppearanceName,leather book,livre de cuir
@@ -215,14 +215,14 @@ AppearanceName,metal slug,fusil semi-automatique
 AppearanceName,milky potion,potion laiteuse
 AppearanceName,mithril ring,anneau en mithril
 AppearanceName,mithril slug,projectile en mithril
-AppearanceName,mithril staff,baton en mithril
+AppearanceName,mithril staff,bâton en mithril
 AppearanceName,mood ring,anneau d'humeur
 AppearanceName,moonstone ring,anneau de pierre de lune
 AppearanceName,mortar gun,mortier
 AppearanceName,mottled book,livre tacheté
 AppearanceName,mud boots,bottes de vase
 AppearanceName,muddy potion,potion boueuse
-AppearanceName,murky potion,potion troube
+AppearanceName,murky potion,potion trouble
 AppearanceName,mysterious gadget,gadget mystérieux
 AppearanceName,oak wand,baguette de chêne
 AppearanceName,obsidian ring,anneau d'obsidienne
@@ -254,7 +254,7 @@ AppearanceName,plastic slug,munitions pour fusils semi-automatiques
 AppearanceName,plastic stick,bâton de plastique
 AppearanceName,platinum wand,baguette de platine
 AppearanceName,plumed helmet,casque empanaché
-AppearanceName,pole cleaver,voulge
+AppearanceName,pole cleaver,hachoir de boucher en corne
 AppearanceName,pole sickle,faucille
 AppearanceName,polished silver shield,bouclier d'argent poli
 AppearanceName,pronged polearm,arme d'hast à volets
@@ -319,7 +319,7 @@ AppearanceName,shadow book,livre d'ombre
 AppearanceName,shining book,livre brillant
 AppearanceName,shiny ring,anneau brillant
 AppearanceName,short barrelled gun,fusil à canon long
-AppearanceName,short samurai sword,épée courte de samourai
+AppearanceName,short samurai sword,épée courte de samouraï
 AppearanceName,short wand,baguette courte
 AppearanceName,shoulder gun,pistolet à épauler
 AppearanceName,silver book,livre d'argent
@@ -351,7 +351,7 @@ AppearanceName,swirly potion,potion tourbillonnante
 AppearanceName,tan book,livre brun
 AppearanceName,tattered book,livre déchirée
 AppearanceName,tattered cape,cape déchirée
-AppearanceName,thick book,livre epais
+AppearanceName,thick book,livre épais
 AppearanceName,thin book,livre fin
 AppearanceName,thin cake,gâteau mince
 AppearanceName,thonged club,gourdin à lanières
@@ -360,7 +360,7 @@ AppearanceName,throwing axe,hache de jet
 AppearanceName,throwing disc,disque de jet
 AppearanceName,throwing spear,lance de jet
 AppearanceName,throwing star,étoile de jet
-AppearanceName,throwing stick,baton de jet
+AppearanceName,throwing stick,bâton de jet
 AppearanceName,tiger eye ring,anneau oeil de tigre
 AppearanceName,tin wand,baguette en étain
 AppearanceName,tiny book,tout petit livre
@@ -412,12 +412,12 @@ AttackType,horn,corne
 AttackType,kick,coup de pied
 AttackType,punch,frapper
 AttackType,shriek,cri
-AttackType,slap,
+AttackType,slap,gifler
 AttackType,spell,sort
 AttackType,spit,crachat
 AttackType,splash,éclaboussure
 AttackType,spore,spore
-AttackType,sting,piqure
+AttackType,sting,piqûre
 AttackType,summon,invoquer
 AttackType,tentacle,tentacule
 AttackType,touch,touché
@@ -472,7 +472,7 @@ BeamName,poison,de poison
 BeamName,sleep,de sommeil
 BlockDescription,This hefty barrel is made from hardwood and can only be pushed short distances with a lot of effort.,Ce tonneau est fait de bois dur et ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
 BlockDescription,This huge block of clay can only be pushed short distances with a lot of effort.,Cet énorme bloc d'argile ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
-BlockDescription,This huge block of crystal can only be pushed short distances with a lot of effort.,Cet énorme bloc de crystal ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
+BlockDescription,This huge block of crystal can only be pushed short distances with a lot of effort.,Cet énorme bloc de cristal ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
 BlockDescription,This huge block of gold ore can only be pushed short distances with a lot of effort.,Cet énorme bloc d'or ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
 BlockDescription,This huge block of stone can only be pushed short distances with a lot of effort.,Cet énorme bloc de pierre ne peut être poussé que sur de courtes distances et au prix d'un grand effort.
 BlockName,clay boulder,rocher en argile
@@ -484,8 +484,8 @@ BlockName,wooden barrel,tonneau en bois
 BoonDescription,Ask for a unicorn to join your party.,Demander à une licorne de rejoindre votre groupe.
 BoonDescription,Bless one item in your inventory or on the ground.,Bénissez un objet dans votre inventaire ou sur le sol.
 BoonDescription,Brew a random potion into your bottle of water.,Infusez une potion au hasard dans votre bouteille d'eau.
-BoonDescription,Butcher a corpse into an easy to carry container.,Equarrir un corps en une conserve facile a transporter
-BoonDescription,Call upon the undead to fight for you.,Appelez les morts vivants pour combatre pour vous
+BoonDescription,Butcher a corpse into an easy to carry container.,Équarrir un corps en une conserve facile a transporter
+BoonDescription,Call upon the undead to fight for you.,Appelez les morts vivants pour combattre pour vous
 BoonDescription,Convert one item into a random alternative of the same type.,Convertir un objet en une alternative aléatoire de la même famille
 BoonDescription,Determine the enchantment and charges of all carried items.,Détermine les enchantements et les charges de tous les objets portés
 BoonDescription,"Erase the magic from a potion, scroll or book.","Supprimez la magie d'une potion, d'un parchemin ou d'un livre."
@@ -493,7 +493,7 @@ BoonDescription,Hatch an egg and become a parent.,Eclot un oeuf et devenez son p
 BoonDescription,Heal damage and recover mana for yourself and your steed if mounted.,Guérissez vos blessures et celle de votre monture.
 BoonDescription,Learn how to cast a random spell.,Apprenez à lancer un sort aléatoire.
 BoonDescription,Learn the divine status of all carried items.,Apprenez l'alignement de tous vos objets.
-BoonDescription,Learn the name of one random unknown item.,Aprenez le nom d'un objet inconnu aléatoire
+BoonDescription,Learn the name of one random unknown item.,Apprenez le nom d'un objet inconnu aléatoire
 BoonDescription,Make an imitation copy of an item.,Fait une imitation d'un objet
 BoonDescription,Partially recharge a spent item.,Recharge partiellement un objet dépensé
 BoonDescription,Place a curse on one equipped or carried item.,Placez une malédiction sur un objet équipé ou transporté.
@@ -698,7 +698,7 @@ CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
 CharacterName,Zultry,Zultry
-ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Après des années de réflexion intenses ces devins sont près à explorer le monde, ils sont capable requirant une volonté formidable."
+ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Après des années de réflexion intenses ces devins sont près à explorer le monde, ils sont capable requérant une volonté formidable."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Des gardiens bienveillants, toujours prêts à donner un coup de main aux faibles. Habitués à faire face à la maladie, ils sont des parangons d'hygiène et de propreté, voués à aider. En tant que tels, ils doivent compter sur une compagnie constante pour survivre."
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.","Champions des royaumes hivernaux, féroces et fiers. Robustes et forts, ils affronteront hardiment n'importe quel challenger jusqu'à ce qu'ils rencontrent une mort glorieuse."
 ClassDescription,"Charming minstrels, making their way through the world with their songs and stories. They are jacks-of-all-trades; alongside their troubadour talents, they dabble in both martial skills and spellcraft.","De charmants ménestrels, qui se frayent un chemin à travers le monde avec leurs chansons et leurs histoires. Ce sont des hommes à tout faire; à côté de leurs talents de troubadours, ils se mêlent à la fois aux compétences martiales et à la magie."
@@ -829,7 +829,7 @@ CompanionName,monkey,singe
 CompanionName,rat,rat
 CounterName,afflictions,maladies
 CounterName,animations,animations
-CounterName,anoints,oints
+CounterName,anoints,onctions
 CounterName,blinks,clignotements
 CounterName,boons,bénédictions
 CounterName,captures,capturés
@@ -837,7 +837,7 @@ CounterName,casts,sort lancés
 CounterName,chants,chants
 CounterName,constructs,constructions
 CounterName,crafts,fabrications
-CounterName,decapitations,decapitations
+CounterName,decapitations,décapitations
 CounterName,digs,creusés
 CounterName,dips,trempés
 CounterName,disarms,désarmés
@@ -895,7 +895,7 @@ CounterName,waits,arrêts
 CounterName,writes,écrits
 CounterName,zaps,zappés
 DamageTypeName,bludgeon,contondant
-DamageTypeName,pierce,percants
+DamageTypeName,pierce,perçants
 DamageTypeName,slash,tranchants
 DeviceDescription,This square-cut hole is deep enough to hurt and hard to escape.,Ce trou carré est assez profond pour blesser suite à une chute et pour qu'il soit difficile de s'en échapper.
 DeviceName,acid trap,piège d'acide
@@ -976,7 +976,7 @@ EffectProperty,properties,propriétés
 EffectProperty,punishments,sanctions
 EffectProperty,random experience,expérience aléatoire
 EffectProperty,random points,points aléatoires
-EffectProperty,remove random resistance,enlève une resistance aléatoire
+EffectProperty,remove random resistance,enlève une résistance aléatoire
 EffectProperty,remove random talent,supprime un talent aléatoire
 EffectProperty,removes all transients,supprime tous les effets temporaires
 EffectProperty,reset random equipment,réinitialise un équipement aléatoire
@@ -1083,11 +1083,11 @@ EffectType,transition,transition
 EffectType,unafflict,enlève la maladie
 EffectType,unpolymorph,dé-polymorphe
 EffectType,unpunish,dé-punit
-EffectType,unstuck,
+EffectType,unstuck,débloque
 EffectType,visit shop,visite un magasin
 EffectType,visit shrine,visite un sanctuaire
 EffectType,visit zoo,visite un zoo
-EffectType,vomit,
+EffectType,vomit,vomir
 EffectType,warping,déforme
 EggName,black dragon,dragon noir
 EggName,blue dragon,dragon bleu
@@ -1181,7 +1181,7 @@ EntityName,air elemental,élémentaire d'air
 EntityName,Aleax,Aleax
 EntityName,ancient black dragon,dragon noir ancien
 EntityName,ancient blue dragon,dragon bleu ancien
-EntityName,ancient deep dragon,dragon des pronfondeurs ancien
+EntityName,ancient deep dragon,dragon des profondeurs ancien
 EntityName,ancient gold dragon,dragon d'or ancien
 EntityName,ancient green dragon,dragon vert ancien
 EntityName,ancient orange dragon,dragon orange ancien
@@ -1280,7 +1280,7 @@ EntityName,Charon,Charon
 EntityName,chasme,chasme
 EntityName,chickatrice,bébé basilic
 EntityName,chicken,poulet
-EntityName,chief yeoman warder,chef des gardes geoliers
+EntityName,chief yeoman warder,chef des gardes geôliers
 EntityName,chieftain,chef de clan
 EntityName,chromatic dragon,dragon chromatique
 EntityName,clay golem,golem d'argile
@@ -1316,7 +1316,7 @@ EntityName,diamond golem,golem de diamant
 EntityName,dingo,dingo
 EntityName,dingo puppy,chiot fou
 EntityName,disenchanter,désenchanteur
-EntityName,disgusting mould,moisissure dégoutante
+EntityName,disgusting mould,moisissure dégoûtante
 EntityName,disintegrator,désintégrateur
 EntityName,Dispater,Dispater
 EntityName,displacer beast,bête déplaceuse
@@ -1500,7 +1500,7 @@ EntityName,intern,interne
 EntityName,iron golem,golem de fer
 EntityName,iron piercer,perceur de fer
 EntityName,Ixoth,Ixoth
-EntityName,jabberwock,raconteur de balivairne
+EntityName,jabberwock,raconteur de baliverne
 EntityName,jackal,chacal
 EntityName,jackalwere,chacalidé
 EntityName,jaguar,jaguar
@@ -1564,7 +1564,7 @@ EntityName,Lolth,Lolth
 EntityName,long worm,long ver
 EntityName,long worm tail,queue de ver long
 EntityName,Lord Carnarvon,Seigneur Carnarvon
-EntityName,Lord Sato,Seigneur sato
+EntityName,Lord Sato,Seigneur Sato
 EntityName,Lord Surtur,Seigneur Surtur
 EntityName,lurker above,rodeur du dessus
 EntityName,Lycaon,Haut Lycanthrope
@@ -1716,7 +1716,7 @@ EntityName,sheep,mouton
 EntityName,shifter,changeur
 EntityName,shinobi,shinobi
 EntityName,shock binder,lieur d'éclair
-EntityName,shock maker,faiseur d'eclair
+EntityName,shock maker,faiseur d’éclair
 EntityName,shock seeker,chercheur d'éclair
 EntityName,shock sphere,sphère d'éclair
 EntityName,shoggoth,shoggoth
@@ -1766,7 +1766,7 @@ EntityName,trapper,trappeur
 EntityName,treant,tréant
 EntityName,troll,troll
 EntityName,troll mummy,momie troll
-EntityName,tsetse fly,mouche tsétsé
+EntityName,tsetse fly,mouche tsé-tsé
 EntityName,tunnel worm,ver des tunnels
 EntityName,Twoflower,Deuxfleurs
 EntityName,two-headed troll,troll à deux têtes
@@ -1831,7 +1831,7 @@ EntityName,yellow jelly,gelée jaune
 EntityName,yellow light,lumière jaune
 EntityName,yellow mould,moisissure jaune
 EntityName,yeoman,cavalier
-EntityName,yeoman warder,franc-tenancier geolier
+EntityName,yeoman warder,franc-tenancier geôlier
 EntityName,yeti,yeti
 EntityName,young black dragon,jeune dragon noir
 EntityName,young blue dragon,jeune dragon bleu
@@ -1891,10 +1891,10 @@ FeatureName,throne,trône
 FeatureName,workbench,établi
 FormatText,{ActionCount} action,{ActionCount} action
 FormatText,{ActionCount} actions,{ActionCount} actes
-FormatText,{AssetName} glowed black,{AssetName} a brillé en noir
-FormatText,{AssetName} glowed green,{AssetName} a brillé en vert
-FormatText,{AssetName} glowed violently black and exploded,{AssetName} a violemment brillé en noir et a explosé
-FormatText,{AssetName} glowed violently green and exploded,{AssetName} a violemment brillé en vert et a explosé
+FormatText,{AssetName} glowed black,{AssetName} s'est coloré en noir
+FormatText,{AssetName} glowed green,{AssetName} s'est coloré en vert
+FormatText,{AssetName} glowed violently black and exploded,{AssetName} s'est violemment coloré en noir et a explosé
+FormatText,{AssetName} glowed violently green and exploded,{AssetName} s'est violemment coloré en vert et a explosé
 FormatText,{AssetName} suddenly disappeared!,{AssetName} a soudainement disparu !
 FormatText,{AssetName} was cancelled,{AssetName} a été annulé
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} a été endommagé par {ElementName}
@@ -2087,7 +2087,7 @@ FormatText,Equip {CharacterName},Équipe {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,réputation {RecordFame} et {RecordKills} victimes
 FormatText,Feed which item to {CharacterName}?,Quelle nourriture donner à {CharacterName} ?
 FormatText,from {Cause},
-FormatText,gain {Percent}% {ElementName} resistance,a gagné {Percent}% de resistance à {ElementName}
+FormatText,gain {Percent}% {ElementName} resistance,a gagné {Percent}% de résistance à {ElementName}
 FormatText,gain {TalentName} talent,a gagné {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Salutations {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Salutations {PlayerHandle} !
@@ -2114,7 +2114,7 @@ FormatText,revenant {CharacterName},revenant {CharacterName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},tirer {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},coincé {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} a explosé en {ExplosionName} d'énergie !
-FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,Cet acte noir vous coutera toute votre réputation. Etes-vous sûr de vouloir ressusciter {CharacterName} ?
+FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,Cet acte noir vous coûtera toute votre réputation. Etes-vous sûr de vouloir ressusciter {CharacterName} ?
 FormatText,Throw {AssetName} which direction?,Jeter {AssetName} dans quelle direction ?
 FormatText,TOO {AttributeBad},TROP {AttributeBad}
 FormatText,transient {PropertyName} {DurationDice},applique temporaire {PropertyName} {DurationDice}
@@ -2183,7 +2183,7 @@ HordeName,goblin,gobelin
 HordeName,harpy,harpie
 HordeName,hell hound,chien des enfers
 HordeName,jackal,chacal
-HordeName,keystone,clef de voute
+HordeName,keystone,clé de voûte
 HordeName,kobold,kobold
 HordeName,lemure,lémurien
 HordeName,lizardman,homme-lézard
@@ -2200,7 +2200,7 @@ HordeName,spider,araignée
 HordeName,spore,champignon
 HordeName,termite,termite
 HordeName,tick,tique
-HordeName,tsetse fly,mouche tsétsé
+HordeName,tsetse fly,mouche tsé-tsé
 HordeName,warg,warg
 HordeName,wasp,guêpe
 HordeName,water moccasin,mocassin d'eau
@@ -2344,9 +2344,9 @@ ItemName,alchemy smock,blouse d'alchimie
 ItemName,amber,ambre
 ItemName,amethyst,améthyste
 ItemName,amulet of change,amulette de changement
-ItemName,amulet of drain resistance,amulette de drainage de la résistance
+ItemName,amulet of drain resistance,amulette résistance au drainage
 ItemName,amulet of ESP,amulette de télépathie
-ItemName,amulet of flying,amulette de vol
+ItemName,amulet of flying,amulette de lévitation
 ItemName,amulet of life saving,amulette de vie sauvée
 ItemName,amulet of nada,amulette de nada
 ItemName,amulet of reflection,amulette de réflexion
@@ -2354,7 +2354,7 @@ ItemName,amulet of restful sleep,amulette de sommeil réparateur
 ItemName,amulet of unchanging,amulette d'immuabilité
 ItemName,amulet of vitality,amulette de vitalité
 ItemName,amulet versus poison,amulette contre le poison
-ItemName,amulet versus stone,Amulette contre le pierre
+ItemName,amulet versus stone,amulette contre la pétrification
 ItemName,Ancient Katana,Katana Ancien
 ItemName,animal corpse,cadavre animal
 ItemName,apple,pomme
@@ -2507,10 +2507,10 @@ ItemName,Deagle,Deagle
 ItemName,deep dragon scale mail,armure d'écailles de dragon des profondeurs
 ItemName,deep dragon scales,écailles de dragon des profondeurs
 ItemName,dented pot,marmite cabossée
-ItemName,detonation key,clef a détonation
+ItemName,detonation key,clé à détonation
 ItemName,diamond,diamant
 ItemName,dilithium crystal,cristal de dilithium
-ItemName,dimension key,clef dimensionelle
+ItemName,dimension key,clé dimensionnelle
 ItemName,Dire Needle,Aiguille Sinistre
 ItemName,disencumbrance boots,Bottes de charge augmentée
 ItemName,Dragonbane,Fléau des dragons
@@ -2704,7 +2704,7 @@ ItemName,Pandora's Box,La boite de Pandore
 ItemName,panic boots,bottes de panique
 ItemName,partisan,partisan
 ItemName,pear,poire
-ItemName,phantom key,clef fantome
+ItemName,phantom key,clé fantôme
 ItemName,Philosophers Stone,Pierre Philosophale
 ItemName,pick-axe,pioche
 ItemName,pistol,pistolet
@@ -2830,7 +2830,7 @@ ItemName,scroll of murder,parchemin de meurtre
 ItemName,scroll of punishment,parchemin de châtiment
 ItemName,scroll of raise dead,parchemin de résurrection des morts
 ItemName,scroll of remove curse,parchemin de suppression de malédiction
-ItemName,scroll of replication,parchemin de replication
+ItemName,scroll of replication,parchemin de réplication
 ItemName,scroll of summoning,parchemin d'invocation
 ItemName,scroll of taming,parchemin de domptage
 ItemName,scroll of teleportation,parchemin de téléportation
@@ -2905,7 +2905,7 @@ ItemName,Verimurus,Verimurus
 ItemName,violet glass bauble,babiole de verre violet
 ItemName,Voltaic,Voltaïque
 ItemName,Vorpal Blade,Épée Vorpaline
-ItemName,voulge,voulge
+ItemName,voulge,vouge
 ItemName,wakizashi,wakizashi
 ItemName,wand of animation,baguette d'animation
 ItemName,wand of cancellation,baguette d'annulation
@@ -2926,7 +2926,7 @@ ItemName,wand of lightning,baguette de foudre
 ItemName,wand of locking,baguette de verrouillage
 ItemName,wand of magic missile,baguette de missile magique
 ItemName,wand of make invisible,baguette d'invisibilité
-ItemName,wand of nothing,baguette sans effect
+ItemName,wand of nothing,baguette sans effet
 ItemName,wand of opening,baguette d'ouverture
 ItemName,wand of phase,baguette de phase
 ItemName,wand of polymorph,baguette de polymorphisme
@@ -2938,7 +2938,7 @@ ItemName,wand of striking,baguette de frappe
 ItemName,wand of summoning,baguette d'invocation
 ItemName,wand of teleportation,baguette de téléportation
 ItemName,wand of theft,baguette de vol
-ItemName,wand of undead turning,baguette de banissement des morts-vivants
+ItemName,wand of undead turning,baguette de bannissement des morts-vivants
 ItemName,war club,gourdin de guerre
 ItemName,war hammer,marteau de guerre
 ItemName,wax candle,bougie de cire
@@ -2978,7 +2978,7 @@ ItemType,instrument,instrument
 ItemType,letter,lettre
 ItemType,light,lumière
 ItemType,lockpick,crochet
-ItemType,melee weapon,arme de mélée
+ItemType,melee weapon,arme de mêlée
 ItemType,potion,potion
 ItemType,ranged missile,missile à distance
 ItemType,ranged weapon,arme à distance
@@ -2989,7 +2989,7 @@ ItemType,scroll,parchemin
 ItemType,shield,bouclier
 ItemType,shirt,chemise
 ItemType,skeleton key,passe-partout
-ItemType,specific key,clef spécifique
+ItemType,specific key,clé spécifique
 ItemType,statue,statue
 ItemType,suit,armure
 ItemType,thrown weapon,arme de jet
@@ -3062,7 +3062,7 @@ LiteralText,(2d6 instead of 2-12),(2d6 au lieu de 2-12)
 LiteralText,(game information status text),(information d'état du jeu)
 LiteralText,(not eligible for hall of fame),(non admissible au Temple de la Renommée)
 LiteralText,(recommended for AMOLED screens),(recommandé pour les écrans AMOLED)
-LiteralText,(SUPPRESSED),(SUPPRIME)
+LiteralText,(SUPPRESSED),(SUPPRIMÉ)
 LiteralText,[MASTER],[MAITRE]
 LiteralText,abolition of firearms,abolition des armes à feu
 LiteralText,ABOUT,A PROPOS
@@ -3237,7 +3237,7 @@ LiteralText,DEATH,MORT
 LiteralText,deathray,rayon mortel
 LiteralText,decapitation,décapiter
 LiteralText,DECEASED,DÉCÉDÉ
-LiteralText,decelerated real-time,déccéléré en temps réel
+LiteralText,decelerated real-time,décéléré en temps réel
 LiteralText,DECREASE,RÉDUIRE
 LiteralText,Deephall,Salles profondes
 LiteralText,Deepruins,Ruines profondes
@@ -3464,7 +3464,7 @@ LiteralText,light,lumière
 LiteralText,LIGHT,LUMIÈRE
 LiteralText,light radius,rayon de lumière
 LiteralText,limits,limites
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Liens vers les plateformes supportées dont iOS, Android et Windows."
+LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Liens vers les plate-formes supportées dont iOS, Android et Windows."
 LiteralText,LIST,LISTE
 LiteralText,lit,allumé
 LiteralText,LIVING,VIVANT
@@ -3601,7 +3601,7 @@ LiteralText,RANDOM,ALÉATOIRE
 LiteralText,random dungeon seed,seed aléatoire pour les donjons
 LiteralText,rank,rang
 LiteralText,rarity,rareté
-LiteralText,rate & review on the app store,notes et critiques sur l'appstore
+LiteralText,rate & review on the app store,notes et critiques sur l'AppStore
 LiteralText,RE-ACT,RE-AGIR
 LiteralText,Read books to learn spells,Lisez des livres pour apprendre des sortilèges
 LiteralText,READ!,LIRE!
@@ -3641,7 +3641,7 @@ LiteralText,RESTING,EN REPOS
 LiteralText,RESTORED,RÉTABLIT
 LiteralText,RESURRECT,RESSUSCITER
 LiteralText,Resurrect and continue,Ressusciter et continuer
-LiteralText,resurrections,resurrections
+LiteralText,resurrections,résurrections
 LiteralText,retaliations,ripostes
 LiteralText,RETURN,revenir
 LiteralText,RE-USE,RÉ-UTILISER
@@ -3689,11 +3689,11 @@ LiteralText,SET DIFFICULTY,CHOISIR LA DIFFICULTÉ
 LiteralText,set starting location,choisir le point de départ
 LiteralText,SETTINGS,PARAMÈTRES
 LiteralText,sfx volume,volume des sfx
-LiteralText,Share your tragic and heroic stories with other players.,Partagez vos histoires héroiques ou tragiques avec les autres joueurs.
+LiteralText,Share your tragic and heroic stories with other players.,Partagez vos histoires héroïques ou tragiques avec les autres joueurs.
 LiteralText,SHARE//exchange,PARTAGER
 LiteralText,SHARE//publish,PARTAGER
 LiteralText,SHOPS,BOUTIQUES
-LiteralText,Show debugging information,Afficher les information de debug
+LiteralText,Show debugging information,Afficher les informations de debug
 LiteralText,Show time clock,Montrer l'horloge
 LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Montrez votre appréciation en initiant d'autres joueurs à Pathos.
 LiteralText,SHRINES,SANCTUAIRES
@@ -3942,7 +3942,7 @@ MotionPresentName,quaff,ingurgiter
 MotionPresentName,read,lire
 MotionPresentName,recline,s'allonger
 MotionPresentName,refill,remplir
-MotionPresentName,release,relacher
+MotionPresentName,release,relâcher
 MotionPresentName,rename,rebaptiser
 MotionPresentName,rub,frotter
 MotionPresentName,sacrifice,sacrifier
@@ -4205,8 +4205,8 @@ RumourFalseMessage,Donations are 100% tax deductible.,Les donations sont déduct
 RumourFalseMessage,Eat a flea and save a dog.,Mangez une puce et sauvez un chien.
 RumourFalseMessage,Eat a giant ant and you may be surprised.,Mangez une fourmi géante et vous pourriez être surpris.
 RumourFalseMessage,Eat a leprechaun and gain teleport control.,Mangez un farfadet et gagnez le contrôle de la téléportation.
-RumourFalseMessage,Gain the powers of Indiana Jones by wearing a fedora.,Gagnez les pouvoirs d'Idiana Jones en portant un fedora.
-RumourFalseMessage,Give the lamp a caress and the djinni will undress.,Donnez une caresse à la lampe et le gènie se déshabillera.
+RumourFalseMessage,Gain the powers of Indiana Jones by wearing a fedora.,Gagnez les pouvoirs d’Indiana Jones en portant un fedora.
+RumourFalseMessage,Give the lamp a caress and the djinni will undress.,Donnez une caresse à la lampe et le génie se déshabillera.
 RumourFalseMessage,Give your lamp a rub.,Frottez votre lampe.
 RumourFalseMessage,Gnomes weapons are often enchanted.,Les armes des gnomes sont souvent enchantés.
 RumourFalseMessage,Gnomish weapons are always cursed.,Les armes Gnomes sont toujours maudites.
@@ -4257,7 +4257,7 @@ RumourTrueMessage,Lost your pet? Try whistling for it.,Vous avez perdu votre ani
 RumourTrueMessage,Never trust a Nymph.,Ne faites jamais confiance à une Nymphe.
 RumourTrueMessage,Never turn a blind eye to carrots.,Ne tournez jamais l'œil à une carotte.
 RumourTrueMessage,Not all moulds are created equal.,Toutes les moisissures ne sont pas créés égales.
-RumourTrueMessage,Phase spiders can be trippy.,Les araignées phasiques peuvent être psychèdèliques.
+RumourTrueMessage,Phase spiders can be trippy.,Les araignées phasiques peuvent être psychédéliques.
 RumourTrueMessage,Pyrolisk are fire eaters.,Les pyrolisk sont des mangeurs de feu.
 RumourTrueMessage,Sacrificing a priest on his own altar is a very bad idea.,Sacrifier un prêtre sur son propre autel est une très mauvaise idée.
 RumourTrueMessage,See the priest to cure what ails you.,Voyez un prêtre pour guérir tous vos maux.
@@ -4410,7 +4410,7 @@ SonicName,gain level,gain de niveau
 SonicName,gain skill,gain de compétence
 SonicName,gas,gaz
 SonicName,gem,gemme
-SonicName,gibber,bégayement
+SonicName,gibber,bégaiement
 SonicName,giggle,ricanement
 SonicName,groan,gémissement
 SonicName,growl,grondement
@@ -4484,7 +4484,7 @@ SonicName,swallow,avaler
 SonicName,switch,changement
 SonicName,taps,
 SonicName,teleport,téléporte
-SonicName,throne,throne
+SonicName,throne,trône
 SonicName,throw grenade,jeter grenade
 SonicName,throw object,jeter objet
 SonicName,thump,cogner
@@ -4590,7 +4590,7 @@ SpellName,raise dead,réanimation des morts
 SpellName,regenerate,régénérer
 SpellName,remove curse,suppression de malédiction
 SpellName,restoration,rétablir compétence
-SpellName,shocking sphere,sphére d'éclair
+SpellName,shocking sphere,sphère d'éclair
 SpellName,sleep,sommeil
 SpellName,slow,lenteur
 SpellName,soaking sphere,sphère immergeante
