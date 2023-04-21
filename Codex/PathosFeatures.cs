@@ -46,6 +46,7 @@ namespace Pathos
       altar = AddFeature("altar", Materials.stone, Chance.OneIn60, Glyphs.altar, F =>
       {
         F.Sonic = Sonics.prayer;
+        F.Weight = Weight.FromUnits(200000);
 
         // TODO: can't use the altar at all, when shunned.
 
@@ -95,6 +96,7 @@ namespace Pathos
       bed = AddFeature("bed", Materials.wood, Chance.OneIn120, Glyphs.bed, F =>
       {
         F.Sonic = Sonics.scrape; // TODO: Sonics.snore?
+        F.Weight = Weight.FromUnits(18000);
 
         F.DestroyApply.ConvertFixture(bed, Devices.squeaky_board);
         F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
@@ -130,6 +132,7 @@ namespace Pathos
       fountain = AddFeature("fountain", Materials.stone, Chance.OneIn10, Glyphs.fountain, F =>
       {
         F.Sonic = Sonics.water_splash;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyExplosion = Codex.Explosions.watery;
         F.DestroyApply.Harm(Elements.water, Dice.Zero);
@@ -220,6 +223,7 @@ namespace Pathos
       grave = AddFeature("grave", Materials.stone, Chance.OneIn60, Glyphs.grave, F =>
       {
         F.Sonic = Sonics.groan;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(grave, Devices.pit);
         F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
@@ -236,6 +240,7 @@ namespace Pathos
       sarcophagus = AddFeature("sarcophagus", Materials.stone, Chance.OneIn120, Glyphs.sarcophagus, F =>
       {
         F.Sonic = Sonics.scrape;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(sarcophagus, Devices.hole);
         F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
@@ -262,6 +267,7 @@ namespace Pathos
       pentagram = AddFeature("pentagram", Materials.wax, Chance.OneIn90, Glyphs.pentagram, F =>
       {
         F.Sonic = Sonics.chant;
+        F.Weight = Weight.FromUnits(10000);
 
         F.DestroyExplosion = Codex.Explosions.fiery;
         F.DestroyApply.Harm(Elements.fire, Dice.Zero);
@@ -314,6 +320,7 @@ namespace Pathos
       stall = AddFeature("stall", Materials.wood, Chance.Never, Glyphs.stall, F =>
       {
         F.Sonic = Sonics.creak; // NOTE: stalls don't make a chime SFX when they are unoccupied (rely on Shop.Sonic).
+        F.Weight = Weight.FromUnits(25000);
 
         F.DestroyApply.ConvertFixture(stall, Devices.entropy_trap);
 
@@ -329,6 +336,7 @@ namespace Pathos
       {
         F.Sonic = Sonics.throne;
         F.Mountable = true;
+        F.Weight = Weight.FromUnits(35000);
 
         F.DestroyApply.ConvertFixture(throne, Devices.trapdoor);
 
@@ -373,6 +381,7 @@ namespace Pathos
       {
         F.Description = "This well-worn table is imbued with the ancient magics of creation and destruction.";
         F.Sonic = Sonics.craft;
+        F.Weight = Weight.FromUnits(50000);
 
         var Workbench = F.SetWorkbench();
         Workbench.CraftSkill = Skills.crafting;

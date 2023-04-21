@@ -837,6 +837,9 @@ namespace Pathos
         if (Feature.Sonic == null)
           Record($"Feature {Feature.Name} must have a sonic");
 
+        if (Feature.Weight <= Weight.Zero)
+          Record($"Feature {Feature.Name} must have a weight");
+
         foreach (var Use in Feature.Uses)
         {
           if (Use.Motion.PractisingSkill != null)
@@ -907,6 +910,9 @@ namespace Pathos
         if (Device.MissileBlock != null && Device.Missiles.Count > 0)
           Record($"Device {Device.Name} with missile block must not have any missile items");
 
+        if (Device.Weight <= Weight.Zero)
+          Record($"Device {Device.Name} must have a weight");
+
         foreach (var UntrapLoot in Device.UntrapLoot.Kits)
         {
           //if (UntrapLoot.QuantityDice != Dice.One && !UntrapLoot.Item.Stacked)
@@ -915,13 +921,21 @@ namespace Pathos
       }
       #endregion
 
+      #region Blocks.
+      Base.UniqueCheck("Block", Manifest.Blocks.List, I => I.Name);
+
+      foreach (var Block in Manifest.Blocks.List)
+      {
+        if (Block.Weight <= Weight.Zero)
+          Record($"Block {Block.Name} must have a weight");
+      }
+      #endregion
+
       Base.UniqueCheck("Element", Manifest.Elements.List, I => I.Name);
 
       Base.UniqueCheck("Property", Manifest.Properties.List, I => I.Name);
 
       Base.UniqueCheck("Barrier", Manifest.Barriers.List, I => I.Name);
-
-      Base.UniqueCheck("Block", Manifest.Blocks.List, I => I.Name);
 
       Base.UniqueCheck("Platform", Manifest.Platforms.List, I => I.Name);
 

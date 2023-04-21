@@ -13,17 +13,17 @@ AfflictionName,reflux,reflux
 AfflictionName,sliming,amincissement
 AfflictionName,worms,des vers
 AnatomyAbsenceText,MINDLESS,STUPIDE
-AnatomyAbsenceText,NO BLOOD,PAS SANG
+AnatomyAbsenceText,NO BLOOD,PAS DE SANG
 AnatomyAbsenceText,NO EARS,PAS D'OREILLES
 AnatomyAbsenceText,NO EYES,PAS D'YEUX
 AnatomyAbsenceText,NO FEET,PAS DE PIEDS
 AnatomyAbsenceText,NO HANDS,PAS DE MAINS
 AnatomyAbsenceText,NO HEAD,PAS DE TÊTE
 AnatomyAbsenceText,NO LIMBS,PAS DE MEMBRES
-AnatomyAbsenceText,NOT AMORPHOUS,NON AMORPHE
-AnatomyAbsenceText,NOT MOUNTED,NON ÉQUIPÉ
-AnatomyAbsenceText,NOT WARM,REFROIDIT
-AnatomyAbsenceText,VOICELESS,SANS VOIX
+AnatomyAbsenceText,NOT AMORPHOUS,PAS AMORPHE
+AnatomyAbsenceText,NOT MOUNTED,PAS MONTÉ
+AnatomyAbsenceText,NOT WARM,FROID
+AnatomyAbsenceText,VOICELESS,MUET
 AnatomyName,amorphous,amorphe
 AnatomyName,blood,sang
 AnatomyName,ears,oreilles
@@ -32,9 +32,9 @@ AnatomyName,feet,pieds
 AnatomyName,hands,mains
 AnatomyName,head,tête
 AnatomyName,limbs,membres
-AnatomyName,mind,esprit
+AnatomyName,mind,intelligent
 AnatomyName,mounted,monté
-AnatomyName,thermal,thermique
+AnatomyName,thermal,chaud
 AnatomyName,voice,voix
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Une longue cape ouverte sur le devant et attachée à la poitrine par un fermoir.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un manteau d'armure de mithril court mais d'apparence robuste.
@@ -481,7 +481,7 @@ BlockName,gold boulder,rocher d'or
 BlockName,statue,statue
 BlockName,stone boulder,rocher de pierre
 BlockName,wooden barrel,tonneau en bois
-BoonDescription,Ask for a unicorn to join your party.,Demander à une licorne de rejoindre votre groupe.
+BoonDescription,Ask for a unicorn to join your party.,Demandez à une licorne de rejoindre votre groupe.
 BoonDescription,Bless one item in your inventory or on the ground.,Bénissez un objet dans votre inventaire ou sur le sol.
 BoonDescription,Brew a random potion into your bottle of water.,Infusez une potion au hasard dans votre bouteille d'eau.
 BoonDescription,Butcher a corpse into an easy to carry container.,Équarrir un corps en une conserve facile a transporter
@@ -489,7 +489,7 @@ BoonDescription,Call upon the undead to fight for you.,Appelez les morts vivants
 BoonDescription,Convert one item into a random alternative of the same type.,Convertir un objet en une alternative aléatoire de la même famille
 BoonDescription,Determine the enchantment and charges of all carried items.,Détermine les enchantements et les charges de tous les objets portés
 BoonDescription,"Erase the magic from a potion, scroll or book.","Supprimez la magie d'une potion, d'un parchemin ou d'un livre."
-BoonDescription,Hatch an egg and become a parent.,Eclot un oeuf et devenez son parent
+BoonDescription,Hatch an egg and become a parent.,Faites éclore un oeuf et devenez son parent
 BoonDescription,Heal damage and recover mana for yourself and your steed if mounted.,Guérissez vos blessures et celle de votre monture.
 BoonDescription,Learn how to cast a random spell.,Apprenez à lancer un sort aléatoire.
 BoonDescription,Learn the divine status of all carried items.,Apprenez l'alignement de tous vos objets.
@@ -714,7 +714,7 @@ ClassDescription,"Honourable warriors, who have dedicated their lives to an anci
 ClassDescription,"Keepers of cosmic secrets, who derive their sacred powers from the spirit realms hidden from mortal eyes. They are compelled by dark forces and are adept at bending the material world to their will.","Gardiens de secrets cosmiques, qui détiennent leurs pouvoirs sacrés des royaumes spirituels cachés aux yeux des mortels. Ils sont contraints par des forces obscures et sont capables de plier le monde matériel à leur volonté."
 ClassDescription,"Noble savages, hardened to battle by generations of survival in the unforgiving wilderness. They are not strangers to death's call; legends tell of their incredible strength and battle prowess with heavy weapons.","Nobles sauvages, endurcis pour combattre par générations de survivants dans le désert impitoyable. Ils ne sont pas étrangers à l'appel de la mort; les légendes racontent leur incroyable force et leurs prouesses au combat à l'arme lourde."
 ClassDescription,"Obsessed with blurring the line between life and death, these meddlers of dark forces prefer to associate with cadavers over the living. To some, the rituals are grotesque, but they see pure majesty in the manipulation of the natural order.","Obsédés par le brouillage de la ligne entre la vie et la mort, ces intrus des forces obscures préfèrent s'associer aux cadavres plutôt qu'aux vivants. Pour certains, leurs rituels sont grotesques, mais ils voient de la pure majesté dans la manipulation de l'ordre naturel."
-ClassDescription,"Pious scholars, oath-bound to their scripture. Although altruistic and good-natured, they are trained in martial arts so as to protect themselves and the canon they live by.","Des savants pieux, liés par serment à leurs Écritures. Bien qu'altruistes et de bonne humeur, ils sont formés aux arts martiaux afin de se protéger eux-mêmes et les règle selon lequels ils vivent."
+ClassDescription,"Pious scholars, oath-bound to their scripture. Although altruistic and good-natured, they are trained in martial arts so as to protect themselves and the canon they live by.","Des érudits pieux, liés par serment à leurs écritures sacrées. Bien qu'altruistes et bienveillants, ils sont formés aux arts martiaux afin de se protéger et de protéger leur mode de vie."
 ClassDescription,"Powerful sorcerers, lords of arcane knowledge, and vanguards of psychic warfare. They are unrivalled in their mastery of nearly all schools of magic, augmented by a wide array of mystical devices.","De puissants sorciers, seigneurs de la connaissance obscure et avant-gardistes de la guerre psychique. Ils sont sans égal dans leur maîtrise de presque toutes les écoles de magie, augmentée par un large éventail de dispositifs mystiques."
 ClassDescription,"Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators, and this fervour is matched in their loyalty to their kin.","Survivalistes primitifs mais redoutables qui n'agissent que par instinct, libres de tout fardeau social et de moralité civilisée. Ils sont considérés comme des prédateurs vicieux, et cette ferveur va de pair avec leur loyauté envers leurs proches."
 ClassDescription,Professional marksmen who are obsessed with hunting the biggest game. Heavily equipped with firearms and the desire to build the most fantastical trophy collection.,Tireurs d'élite professionnels obsédés par la chasse au plus gros gibier. Fortement équipé d'armes à feu et le désir de construire la collection de trophées la plus fantastique.
@@ -864,7 +864,7 @@ CounterName,prays,prières
 CounterName,punishments,punitions
 CounterName,quaffs,bus
 CounterName,reads,lus
-CounterName,reclines,repos
+CounterName,reclines,s'allonge
 CounterName,refills,rechargés
 CounterName,releases,libérés
 CounterName,renames,renommés
@@ -967,7 +967,7 @@ EffectProperty,hordes,hordes
 EffectProperty,items,objets
 EffectProperty,kinds,types
 EffectProperty,lies,repose
-EffectProperty,loyal only,
+EffectProperty,loyal only,loyal uniquement
 EffectProperty,material,matériau
 EffectProperty,materials,matériaux
 EffectProperty,objects,objets
@@ -1140,7 +1140,7 @@ EncumbranceName,unencumbered,non encombré
 EngulfmentName,engulfed,englouti
 EngulfmentName,swallowed,avalé
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,Une créature de taille moyenne sujette à de grandes ambitions. Avec une courte durée de vie mais omniprésents; ils ne doivent pas être sous-estimés.
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Des êtres amorphes qui ressemble ?des humanoïdes translucides. Bien qu'il soit impossible de distinguer autre chose qu'un suintement plasmatique, cette forme permet l'utilisation de vêtements et d'outils."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Une ancienne race d'être imposants et reclus. Leur taille terrifiante leur donne une force immense, complétée par un régime vorace de viandes et de minéraux."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Des êtres astraux qui sont le vaisseau de l'esprit indomptable d'un aventurier vaincu. N'ayant aucune motivation propre, ils sont ravis de permettre une possession; pour l'aventurier décédé, c'est une seconde chance de vengeance ou de rédemption. Né de la matière astrale , ils sont légèrement construits, translucides et peuvent se déplacer librement à travers des obstacles physiques."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","De beaux êtres d'un autre monde caractérisés par leur halo caractéristique et leurs ailes à plumes. Fortement en phase avec la lutte entre le bien et le mal, ils ressentent l'origine divine de tout ce qu'ils détiennent."
@@ -1158,9 +1158,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Cette momie a été créée en trempant un cadavre humain dans du miel. Réanimée par un culte ténébreux de moines, elle est à la fois mortelle et délicieuse."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Cette étrange boule vivante constituée de fluide corrosif ne semble pas avoir de capacité offensive.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","De minuscules esprits ailés, intrinsèquement magiques et extraordinairement beaux. Lorsqu'ils sont menacés, ils peuvent s'échapper par des distorsions de la réalité."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Des survivants nomades ressemblant à des tortues qui quittent leur lieu de naissance, dès qu'ils peuvent marcher, pour parcourir le monde avec le confort et la protection de leur maison sur le dos."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Créatures laides et brutales avec des tendances cannibales; cette race guerrière est connue pour sa force impressionnante et ses incapacités intellectuelles.
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Injustement qualifiées de lâches et de faibles, ces petites créatures reptiliennes surmontent leurs limites physiques en employant des stratégies vicieuses et rusées."
 EntityName,abbot,abbé
 EntityName,acid blob,blob d'acide
 EntityName,acid worm,ver d'acide
@@ -1526,7 +1526,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,roi kobold
 EntityName,kobold lord,seigneur kobold
 EntityName,kobold mummy,momie kobold
-EntityName,kobold scout,
+EntityName,kobold scout,éclaireur kobold
 EntityName,kobold shaman,chaman kobold
 EntityName,kobold warrior,guerrier kobold
 EntityName,kobold zombie,zombie kobold
@@ -1639,10 +1639,10 @@ EntityName,owlbear,hibours
 EntityName,pack rat,rat de meute
 EntityName,page,page
 EntityName,panther,panthère
-EntityName,pantherwere,panthère-garou
+EntityName,pantherwere,panthérinés
 EntityName,paper golem,golem de papier
 EntityName,parrot,perroquet
-EntityName,pearl golem,
+EntityName,pearl golem,golem de perle
 EntityName,pegasus,pégase
 EntityName,Pelias,Pelias
 EntityName,Pestilence,Peste
@@ -1657,7 +1657,7 @@ EntityName,pit viper,vipère de la fosse
 EntityName,pixie,minuscule fée
 EntityName,plains centaur,centaure des plaines
 EntityName,Planetar,Planétaire
-EntityName,plasmoid,
+EntityName,plasmoid,plasmoïd
 EntityName,plastic golem,golem de plastique
 EntityName,pony,poney
 EntityName,proudfoot,fierpied
@@ -1703,7 +1703,7 @@ EntityName,satyr,satyre
 EntityName,scorpion,scorpion
 EntityName,Scorpius,Scorpius
 EntityName,scramper,scramper
-EntityName,seal,
+EntityName,seal,joint
 EntityName,sergeant,sergent
 EntityName,sewer rat,rat des égouts
 EntityName,shade,obscurité
@@ -1716,7 +1716,7 @@ EntityName,sheep,mouton
 EntityName,shifter,changeur
 EntityName,shinobi,shinobi
 EntityName,shock binder,lieur d'éclair
-EntityName,shock maker,faiseur d’éclair
+EntityName,shock maker,faiseur d'éclair
 EntityName,shock seeker,chercheur d'éclair
 EntityName,shock sphere,sphère d'éclair
 EntityName,shoggoth,shoggoth
@@ -1725,7 +1725,7 @@ EntityName,Sir Lorimar,Sir Lorimar
 EntityName,skeleton,squelette
 EntityName,small mimic,petit mimique
 EntityName,snake,serpent
-EntityName,snakewere,serpent-garou
+EntityName,snakewere,squamates
 EntityName,snow ant,fourmi des neiges
 EntityName,snow golem,golem de neige
 EntityName,snow orc,orc des neiges
@@ -1759,7 +1759,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigridé
 EntityName,titan,titan
 EntityName,titanothere,titanothere
-EntityName,tortle,
+EntityName,tortle,tortue
 EntityName,tracker,chasseur
 EntityName,transmuter,transmuteur
 EntityName,trapper,trappeur
@@ -2066,7 +2066,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} digestion
 FormatText,{StrikeName} strike,coup {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} a volé {AssetName} à {Victim:CharacterName}
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} a volé des objets à {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} livres
 FormatText,after reaching dungeon level {RecordDepth},après avoir atteint la profondeur {RecordDepth}
@@ -2077,25 +2077,25 @@ FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Félicitations pour avoir atteint la fin du {QuestName} !
 FormatText,cripple {AttributeName},handicape {AttributeName}
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},diminue {AttributeName} de {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},diminue toutes les compétences de {AdjustmentDice}
+FormatText,decrease one ability by {AdjustmentDice},diminue une compétence de {AdjustmentDice}
 FormatText,diminish {ManaDice},diminue {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},déposer {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},énergise {ManaDice}
 FormatText,Equip {CharacterName},Équipe {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,réputation {RecordFame} et {RecordKills} victimes
 FormatText,Feed which item to {CharacterName}?,Quelle nourriture donner à {CharacterName} ?
-FormatText,from {Cause},
+FormatText,from {Cause},de {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,a gagné {Percent}% de résistance à {ElementName}
 FormatText,gain {TalentName} talent,a gagné {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Salutations {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Salutations {PlayerHandle} !
 FormatText,harm {ElementName} {DamageDice},endommage {ElementName} {DamageDice}
 FormatText,heal {LifeDice},guérit {LifeDice}
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},augmente {AttributeName} de {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},augmente toutes les compétences de {AdjustmentDice}
+FormatText,increase one ability by {AdjustmentDice},augmente une compétence de {AdjustmentDice}
 FormatText,level {Depth},niveau {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},niveau {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},niveaux {From}-{To}
@@ -2104,8 +2104,8 @@ FormatText,LOCKED {GATENAME},{GATENAME} VERROUILLÉE
 FormatText,not {EffectProperty},pas {EffectProperty}
 FormatText,range {Dice},portée {Dice}
 FormatText,RANKED #{RankNumber},RANG #{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,reconstituer la vie de {Percent}%
+FormatText,replenish mana from {Percent}%,reconstituer le mana de {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Ressuscité {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},répliquer {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},répliquer {Chance} à la mort {AttackType}
@@ -2130,7 +2130,7 @@ FormatText,when {MATERIALNAME},quand {MATERIALNAME}
 FormatText,when {PROPERTYNAME},quand {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},quand {SANCTITYNAME}
 FormatText,when {Something},lorsque {Something}
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},quand résiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cette lourde porte est faite de formations de cristaux dures et ne sera pas endommagée facilement
 GateName,crystal door,porte de cristal
 GateName,wooden door,porte en bois
@@ -2485,7 +2485,7 @@ ItemName,clove of garlic,gousse d'ail
 ItemName,club,gourdin
 ItemName,Colossal Excavator,Marteau-Piqueur
 ItemName,cornuthaum,cornuthaum
-ItemName,costume earrings,boucles d’oreilles fantaisie
+ItemName,costume earrings,boucles d'oreilles fantaisie
 ItemName,cram ration,ration fourrée
 ItemName,c-ration,ration-c
 ItemName,cream pie,tarte à la crème
@@ -2580,7 +2580,7 @@ ItemName,grenade launcher,lance-grenades
 ItemName,Grimtooth,Grimtooth
 ItemName,guisarme,guisarme
 ItemName,halberd,hallebarde
-ItemName,Harbalest,arbalète
+ItemName,Harbalest,Arbalétal
 ItemName,hatchet,hachette
 ItemName,hawaiian shirt,chemise hawaïenne
 ItemName,heavy hammer,marteau lourd
@@ -2679,7 +2679,7 @@ ItemName,morning star,étoile du matin
 ItemName,mummy wrapping,bandelettes de momie
 ItemName,Muramasa,Muramasa
 ItemName,mushroom,champignon
-ItemName,mute earrings,boucles d’oreilles muettes
+ItemName,mute earrings,boucles d'oreilles muettes
 ItemName,nunchaku,nunchaku
 ItemName,obsidian,obsidienne
 ItemName,oil lamp,lampe à huile
@@ -3041,13 +3041,13 @@ KindName,mummy,momie
 KindName,naga,naga
 KindName,ogre,ogre
 KindName,orc,orc
-KindName,plasmoid,
+KindName,plasmoid,plasmoïd
 KindName,pudding,pudding
 KindName,quadruped,quadrupède
 KindName,rodent,rongeur
 KindName,snake,serpent
 KindName,spider,araignée
-KindName,tortle,
+KindName,tortle,tortue
 KindName,trapper,trappeur
 KindName,troll,troll
 KindName,umber,ombre
@@ -3263,17 +3263,17 @@ LiteralText,diet,régime alimentaire
 LiteralText,difficulty,difficulté
 LiteralText,disable ambient sounds,désactiver les sons ambiants
 LiteralText,Disable auto save on transition,Désactiver l'enregistrement automatique lors de la transition
-LiteralText,Disable button tap sounds,Bouton de désactivation des sons
+LiteralText,Disable button tap sounds,Désactiver les sons d'appui sur les boutons
 LiteralText,Disable conclusion boom,Désactiver le boom de conclusion
 LiteralText,Disable continue button,Désactiver le bouton continuer
 LiteralText,disable haptic feedback,Désactiver le retour haptique
 LiteralText,Disable idle animations,Désactiver les animations sans intérêt
 LiteralText,Disable introduction boom,Désactiver le boom d'introduction
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,Désactiver les masques d'animation
 LiteralText,Disable online services,Désactiver les services en ligne
-LiteralText,Disable pitch shifting,désactiver le décalage audio
+LiteralText,Disable pitch shifting,Désactiver le décalage audio
 LiteralText,Disable spacebar real-time toggle,Désactiver le basculement en temps réel de la barre d'espace
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,Désactiver les gestes de balayage
 LiteralText,DISCONNECT,DÉCONNECTER
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Déconnecté : assurez-vous que vous avez une connection réseau fiable et que tous vos appareils utilisent la même version de Pathos.
 LiteralText,Discuss on Reddit,Discuter sur Reddit
@@ -3491,7 +3491,7 @@ LiteralText,Map,Carte
 LiteralText,MAP,CARTE
 LiteralText,material,matériel
 LiteralText,Medusa Lair,Antre de Méduse
-LiteralText,melting,
+LiteralText,melting,fusion
 LiteralText,MENU,MENU
 LiteralText,mercenary,mercenaire
 LiteralText,MIMIC,IMITER
@@ -3647,7 +3647,7 @@ LiteralText,RETURN,revenir
 LiteralText,RE-USE,RÉ-UTILISER
 LiteralText,REVEAL,RÉVÉLER
 LiteralText,REVEAL ALL MAPS,RÉVÉLER TOUTES LES CARTES
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,RÉVÉLER CETTE CARTE
 LiteralText,revealed,révéler
 LiteralText,REVERT,REVENIR
 LiteralText,RIGHT RING,BAGUE DROITE
@@ -3830,8 +3830,8 @@ LiteralText,was strangled,a été étranglé
 LiteralText,weakness to,faible à
 LiteralText,weight,poids
 LiteralText,when afflicted,quand infecté
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,quand animé
+LiteralText,when confused,quand désorienté
 LiteralText,when dropped,quand déposé
 LiteralText,when entered,une fois entré
 LiteralText,when exhausted,quand fatigué
@@ -3983,7 +3983,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Les attaques de regard et de faisceau sont réfléchies vers le lanceur.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Vous averti de la présence de monstres proches et de leur niveau de menace.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Paralysé par la peur vous ne pouvez attaquer et devriez fuir.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Dans cet état d'ébriété, votre confiance est considérablement accrue, tout autant que votre jugement s'est altéré."
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,En vous déplaçant silencieusement dans le donjon vous pouvez éviter les monstres endormis.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Vous protège de la polymorphie mais vous empêche également de revenir à votre forme originelle.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Vous protège contre les effets de ralentissement, paralysie et de toutes restrictions de mouvement."
@@ -4051,7 +4051,7 @@ PropertyName,free action,action libre
 PropertyName,fumbling,maladresse
 PropertyName,hallucination,hallucination
 PropertyName,hunger,faim
-PropertyName,inebriation,
+PropertyName,inebriation,enivrement
 PropertyName,invisibility,invisibilité
 PropertyName,jumping,saut
 PropertyName,levitation,lévitation
@@ -4176,15 +4176,15 @@ RaceName,ogre//non-binary,ogre
 RaceName,orc//female,orc
 RaceName,orc//male,orc
 RaceName,orc//non-binary,orc
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plasmoïd
+RaceName,plasmoid//male,plasmoïd
+RaceName,plasmoid//non-binary,plasmoïd
 RaceName,satyr//female,satyre
 RaceName,satyr//male,satyre
 RaceName,satyr//non-binary,satyre
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,tortue
+RaceName,tortle//male,tortue
+RaceName,tortle//non-binary,tortue
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll
@@ -4205,7 +4205,7 @@ RumourFalseMessage,Donations are 100% tax deductible.,Les donations sont déduct
 RumourFalseMessage,Eat a flea and save a dog.,Mangez une puce et sauvez un chien.
 RumourFalseMessage,Eat a giant ant and you may be surprised.,Mangez une fourmi géante et vous pourriez être surpris.
 RumourFalseMessage,Eat a leprechaun and gain teleport control.,Mangez un farfadet et gagnez le contrôle de la téléportation.
-RumourFalseMessage,Gain the powers of Indiana Jones by wearing a fedora.,Gagnez les pouvoirs d’Indiana Jones en portant un fedora.
+RumourFalseMessage,Gain the powers of Indiana Jones by wearing a fedora.,Gagnez les pouvoirs d'Indiana Jones en portant un fedora.
 RumourFalseMessage,Give the lamp a caress and the djinni will undress.,Donnez une caresse à la lampe et le génie se déshabillera.
 RumourFalseMessage,Give your lamp a rub.,Frottez votre lampe.
 RumourFalseMessage,Gnomes weapons are often enchanted.,Les armes des gnomes sont souvent enchantés.
@@ -4335,7 +4335,7 @@ SkillName,flail,fléau
 SkillName,hammer,marteau
 SkillName,heavy armour,armure lourde
 SkillName,heavy blade,lame lourde
-SkillName,lance,lance
+SkillName,lance,pique
 SkillName,light armour,armure légère
 SkillName,light blade,lame légère
 SkillName,literacy,alphabétisation
@@ -4358,11 +4358,11 @@ SkillName,unarmed combat,combat à mains nues
 SkillName,whip,fouet
 SonicName,ammo,munition
 SonicName,amulet,amulette
-SonicName,arf,
+SonicName,arf,wouaf
 SonicName,armour,armure
 SonicName,baa,bêê
 SonicName,bell,cloche
-SonicName,birds,
+SonicName,birds,oiseaux
 SonicName,bleat,bêle
 SonicName,blink,cligne
 SonicName,book,livre
@@ -4377,7 +4377,7 @@ SonicName,burble,bourgeonnement
 SonicName,burn,brûle
 SonicName,buzz,bourdonnement
 SonicName,cackle,caquetage
-SonicName,chains,
+SonicName,chains,chaînes
 SonicName,chant,chant
 SonicName,chime,carillon
 SonicName,chirp,gazouillis
@@ -4391,7 +4391,7 @@ SonicName,creak,craquement
 SonicName,crumble,émiettement
 SonicName,death,mort
 SonicName,dice,dé
-SonicName,drips,
+SonicName,drips,gouttes
 SonicName,drum,tambour
 SonicName,eat,manger
 SonicName,electricity,arc électrique
@@ -4427,7 +4427,7 @@ SonicName,kick,coup de pied
 SonicName,launch grenade,lance la grenade
 SonicName,launch rocket,lance la fusée
 SonicName,leather,cuir
-SonicName,leaves,
+SonicName,leaves,feuilles
 SonicName,lit fuse,fusible éclairé
 SonicName,locked,verrouillé
 SonicName,long tap,appui long
@@ -4439,10 +4439,10 @@ SonicName,low health,santé basse
 SonicName,magic,magie
 SonicName,meow,miaou
 SonicName,miss,raté
-SonicName,moan,gémissement
+SonicName,moan,ronchonnement
 SonicName,moo,meuglement
 SonicName,neigh,hennissement
-SonicName,oink,grognement animal
+SonicName,oink,groin
 SonicName,open door,porte ouverte
 SonicName,pick axe,pioche
 SonicName,pistol fire,feu de pistolet
@@ -4456,10 +4456,10 @@ SonicName,rifle burst,éclatement de fusil
 SonicName,rifle shot,coup de fusil
 SonicName,ring,anneau
 SonicName,roar,rugissement
-SonicName,roars,
+SonicName,roars,rugit
 SonicName,scrap,démanteler
-SonicName,scrape,gratte
-SonicName,scrapes,
+SonicName,scrape,gratter
+SonicName,scrapes,gratte
 SonicName,scroll,parchemin
 SonicName,scuttle,saborder
 SonicName,sever,trancher
@@ -4473,16 +4473,16 @@ SonicName,sizzle,grésillement
 SonicName,slime,vase
 SonicName,sling shot,lance-pierres
 SonicName,slip,glisser
-SonicName,snarl,grondement
+SonicName,snarl,grognement
 SonicName,splat,splash
 SonicName,squall,bourrasque
-SonicName,squawk,cri
+SonicName,squawk,croassement
 SonicName,squeak,grincement
-SonicName,squeaks,
+SonicName,squeaks,grince
 SonicName,squeal,hurler
 SonicName,swallow,avaler
 SonicName,switch,changement
-SonicName,taps,
+SonicName,taps,robinets
 SonicName,teleport,téléporte
 SonicName,throne,trône
 SonicName,throw grenade,jeter grenade
@@ -4508,7 +4508,7 @@ SpecialDescription,"Being unusually short and slight for your kind, you are more
 SpecialDescription,"Being unusually tall and heavy for your kind, you move a bit slower but are more resilient.","Étant inhabituellement grand et lourd pour votre race, vous vous déplacez un peu plus lentement mais vous êtes plus résistant."
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","À jamais maudits par la lycantropie, ces êtres peuvent se transformer en des formes monstrueuses de loup."
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,Créatures damnées qui subsistent en se nourrissant de l'essence vitale des vivants.
-SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Doué d’une perception extrasensorielle pour identifier des entités autrement cachées des sens normaux, mais au prix d’une faim dévorante."
+SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Doué d'une perception extrasensorielle pour identifier des entités autrement cachées des sens normaux, mais au prix d'une faim dévorante."
 SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.","Serviteurs de la terre élémentaire, ils peuvent invoquer des sphères explosives pour détruire leurs ennemis."
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.","Serviteurs de la flamme élémentaire, ils peuvent invoquer des sphères explosives pour détruire leurs ennemis."
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Serviteurs du gel élémentaire, ils peuvent invoquer des sphères explosives pour détruire leurs ennemis."
@@ -4516,23 +4516,23 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Serviteurs de l'eau élémentaire, ils peuvent invoquer des sphères explosives pour détruire leurs ennemis."
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,Une vie d'études a concentré votre apprentissage sur les livres au détriment d'autres occupations comme l'exercice physique.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Un vrai héros ne peut pas mourir, n'est-ce pas ? mais il devrait quand même être prudent ..."
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","Sculptée dans du verre vivant qui reflète l'énergie et réfracte la lumière, tu es une copie parfaite mais délicate de ton homologue naturel.."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Toujours en vie d'une certaine manière, bien que sans la chair requise pour être vraiment vivant, cette existence particulière a certains avantages."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Les personnes habituellement ivres font des aventuriers effrontés mais un peu instables ; ne leur demandez pas de réciter l'alphabet à l'envers.
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","Incertain de votre position, vous avez l'habitude d'être à la fois n'importe où et partout en même temps."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Qu'ils soient innocents ou coupables des crimes dont on les accuse, ces individus tentent désespérément d'échapper à l'emprisonnement."
 SpecialName,colossus,colosse
-SpecialName,drunkard,
+SpecialName,drunkard,ivrogne
 SpecialName,earth,terre
 SpecialName,flame,flamme
 SpecialName,frost,gel
 SpecialName,fugitive,fugitif
-SpecialName,glass,
+SpecialName,glass,verre
 SpecialName,midget,chétif
 SpecialName,noble,noble
 SpecialName,protagonist,avatar
 SpecialName,psychic,psychique
-SpecialName,quantum,
+SpecialName,quantum,quantique
 SpecialName,scholar,érudit
 SpecialName,shock,choc
 SpecialName,skeleton,squelette
@@ -4541,7 +4541,7 @@ SpecialName,water,eau
 SpecialName,werewolf,loup-garou
 SpellDescription,Projects a ball of energy that impacts on both monsters and objects.,Projette une boule d'énergie qui influe sur les monstres et les objets.
 SpellName,acid stream,flux d'acide
-SpellName,animate dead,aniation des morts
+SpellName,animate dead,animation des morts
 SpellName,animate object,objet animé
 SpellName,bind undead,lier morts-vivants
 SpellName,blinking,clignement
