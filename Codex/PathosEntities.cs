@@ -12379,6 +12379,13 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.shriek, 4.d2() + 1)
+           .SetTerminates();
+          K.Apply.Alert(2.d6() + 2);
+          K.Apply.Shout(A => A.Harm(Elements.physical, 1.d4() + 1));
+        });
         E.SetCorpse(Chance.OneIn3);
       });
 
