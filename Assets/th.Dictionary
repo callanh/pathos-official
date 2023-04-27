@@ -354,7 +354,7 @@ AppearanceName,tattered cape,ผ้าคลุมขาดรุ่งริ่
 AppearanceName,thick book,หนังสือเล่มหน้า
 AppearanceName,thin book,หนังสือเล่มบาง
 AppearanceName,thin cake,เค้กชิ้นบางๆ
-AppearanceName,thonged club,กระบองพันลวด
+AppearanceName,thonged club,ไม้พันด้วยสายหนัง
 AppearanceName,three-pointed polearm,หอกปลายสามแหลม
 AppearanceName,throwing axe,ขวานขว้าง
 AppearanceName,throwing disc,แผ่นขว้าง
@@ -470,18 +470,18 @@ BeamName,lightning,สายฟ้า
 BeamName,magic missile,ลูกศรเวทมนตร์
 BeamName,poison,พิษ
 BeamName,sleep,หลับ
-BlockDescription,This hefty barrel is made from hardwood and can only be pushed short distances with a lot of effort.,
-BlockDescription,This huge block of clay can only be pushed short distances with a lot of effort.,
-BlockDescription,This huge block of crystal can only be pushed short distances with a lot of effort.,
-BlockDescription,This huge block of gold ore can only be pushed short distances with a lot of effort.,
-BlockDescription,This huge block of stone can only be pushed short distances with a lot of effort.,
+BlockDescription,This hefty barrel is made from hardwood and can only be pushed short distances with a lot of effort.,ถังไม้อันใหญ่มากนี้ทำจากไม้เนื้อแข็งและถึงแม้จะใช้ความพยายามอย่างมากก็สามารถผลักมันไปได้แค่ระยะทางสั้น ๆ เท่านั้น
+BlockDescription,This huge block of clay can only be pushed short distances with a lot of effort.,ก้อนดินเหนียวขนาดใหญ่นี้ถึงแม้จะใช้ความพยายามอย่างมากก็สามารถผลักมันไปได้แค่ระยะทางสั้น ๆ เท่านั้น
+BlockDescription,This huge block of crystal can only be pushed short distances with a lot of effort.,ก้อนผลึกขนาดใหญ่นี้ถึงแม้จะใช้ความพยายามอย่างมากก็สามารถผลักมันไปได้แค่ระยะทางสั้น ๆ เท่านั้น
+BlockDescription,This huge block of gold ore can only be pushed short distances with a lot of effort.,ก้อนทองขนาดใหญ่นี้ถึงแม้จะใช้ความพยายามอย่างมากก็สามารถผลักมันไปได้แค่ระยะทางสั้น ๆ เท่านั้น
+BlockDescription,This huge block of stone can only be pushed short distances with a lot of effort.,ก้อนหินขนาดใหญ่นี้ถึงแม้จะใช้ความพยายามอย่างมากก็สามารถผลักมันไปได้แค่ระยะทางสั้น ๆ เท่านั้น
 BlockName,clay boulder,ดินเหนียวก้อนเบ้อเริ่ม
 BlockName,crystal boulder,ผลึกก้อนเบ้อเริ่ม
 BlockName,gold boulder,ทองก้อนเบ้อเริ่ม
 BlockName,statue,รูปปั้น
 BlockName,stone boulder,หินก้อนเบ้อเริ่ม
 BlockName,wooden barrel,ถังไม้
-BoonDescription,Ask for a unicorn to join your party.,
+BoonDescription,Ask for a unicorn to join your party.,ขอให้ยูนิคอร์นเข้าร่วมปาร์ตี้
 BoonDescription,Bless one item in your inventory or on the ground.,
 BoonDescription,Brew a random potion into your bottle of water.,
 BoonDescription,Butcher a corpse into an easy to carry container.,
@@ -516,8 +516,8 @@ BoonName,bless,
 BoonName,brew,
 BoonName,cancel,
 BoonName,corpse wish,
-BoonName,divine,
-BoonName,enchant,
+BoonName,divine,ทำนาย
+BoonName,enchant,ลงอาคม
 BoonName,enlighten,
 BoonName,erase,ลบ
 BoonName,fantastical beast,
@@ -539,165 +539,165 @@ BoonName,teach spell,สอนเวท
 BoonName,tinned meat,
 BoonName,undead army,กองทัพอันเด๊ด
 BoonName,unicorn friend,เป็นเพื่อนกับยูนิคอร์น
-CalendarText,d MMMM yyyy,d MMMM yyyy
+CalendarText,d MMMM yyyy,dd/MM/yyyy
 ChangeType,decrease,ลดลง
 ChangeType,increase,เพิ่มขึ้น
-CharacterName,Adebesi,Adebesi
-CharacterName,Alista,Alista
-CharacterName,Amaya,Amaya
-CharacterName,Arnoken,Arnoken
-CharacterName,Arrom,Arrom
-CharacterName,Atral,Atral
-CharacterName,Atrya,Atrya
-CharacterName,Bartist,Bartist
-CharacterName,Bason,Bason
-CharacterName,Belietha,Belietha
-CharacterName,Bok,Bok
-CharacterName,Bolan,Bolan
-CharacterName,Brouwer,Brouwer
-CharacterName,Cailie,Cailie
-CharacterName,Capo,Capo
-CharacterName,Carthyre,Cartyre
-CharacterName,Cazedda,Cazedda
-CharacterName,Chemron,Chemron
-CharacterName,Cheyne,Cheyne
-CharacterName,Choung,Choung
-CharacterName,Crepsal,Crepsal
-CharacterName,Damano,Damano
-CharacterName,Daracy,Daracy
-CharacterName,Davicohr,Davicohr
-CharacterName,Donneller,Donneller
-CharacterName,D'rey,D'rey
-CharacterName,Dug,Dug
-CharacterName,Elishmeli,Elishmeli
-CharacterName,Ellent,Ellent
-CharacterName,Emina,Emina
-CharacterName,Enlan,Enlan
-CharacterName,Ericendrick,Ericendrick
-CharacterName,Eybrinde,Eybrinde
-CharacterName,Faraze,Faraze
-CharacterName,Fenlas,Fenlas
-CharacterName,Fenraymond,Fenraymond
-CharacterName,Floki,Floki
-CharacterName,Forro,Forro
-CharacterName,Franzia,Franzia
-CharacterName,Galday,Galday
-CharacterName,Gasberg,Gasberg
-CharacterName,Gleichman,Gleichman
-CharacterName,Gmima,Gmima
-CharacterName,Gohu,Gohu
-CharacterName,Gomack,Gomack
-CharacterName,Grytt,Grytt
-CharacterName,Haelom,Haelom
-CharacterName,Haique,Haique
-CharacterName,Haquian,Haquian
-CharacterName,Hendrick,Hendrick
-CharacterName,Hough,Hough
-CharacterName,Illitasha,Illitasha
-CharacterName,Ishgood,Ishgood
-CharacterName,Istophe,Istophe
-CharacterName,Isylav,Isylav
-CharacterName,Izamiller,Izamiller
-CharacterName,Javarl,Javarl
-CharacterName,Jayenason,Jayenason
-CharacterName,Jeem,Jeem
-CharacterName,Jessera,Jessera
-CharacterName,Jonat,Jonat
-CharacterName,Karbri,Karbri
-CharacterName,Kennold,Kennold
-CharacterName,Kevugo,Kevugo
-CharacterName,Kierantha,Kierantha
-CharacterName,Kira,Kira
-CharacterName,Kneller,Kneller
-CharacterName,Lagratha,Lagratha
-CharacterName,Lanetwalz,Lanetwalz
-CharacterName,Lant,Lant
-CharacterName,Lesha,Lesha
-CharacterName,Luickean,Luickean
-CharacterName,Lzay,Lzay
-CharacterName,Malasuth,Malasuth
-CharacterName,Marisa,Marisa
-CharacterName,Melchai,Melchai
-CharacterName,Meloty,Meloty
-CharacterName,Miller,Miller
-CharacterName,Misteph,Misteph
-CharacterName,Nichaeltoy,Nichaeltoy
-CharacterName,Ninerma,Ninerma
-CharacterName,Ninhart,Ninhart
-CharacterName,Ninny,Ninny
-CharacterName,Nodin,Nodin
-CharacterName,Norbant,Norbant
-CharacterName,Okennwood,Okennwood
-CharacterName,Ollac,Ollac
-CharacterName,Omdarro,Omdarro
-CharacterName,Orankin,Orankin
-CharacterName,Oscae,Oscae
-CharacterName,Paltrick,Paltrick
-CharacterName,Pauwinner,Pauwinner
-CharacterName,Penevieve,Penevieve
-CharacterName,Perceval,Perceval
-CharacterName,Pinkerton,Pinkerton
-CharacterName,Plegg,Plegg
-CharacterName,Pleyson,Pleyson
-CharacterName,Pnerfa,Pnerfa
-CharacterName,Poe,Poe
-CharacterName,Quamma,Quamma
-CharacterName,Quandon,Quandon
-CharacterName,Quarah,Quarah
-CharacterName,Quibb,Quibb
-CharacterName,Quizchak,Quizchak
-CharacterName,Quohnrupley,Quohnrupley
-CharacterName,Rambrant,Rambrant
-CharacterName,Raugarr,Raugarr
-CharacterName,Razz,Razz
-CharacterName,Rebenna,Rebenna
-CharacterName,Renorber,Renorber
-CharacterName,Rokiju,Rokiju
-CharacterName,Rupley,Rupley
-CharacterName,Sarlia,Sarlia
-CharacterName,Shinaas,Shinaas
-CharacterName,Smither,Smither
-CharacterName,Stevere,Stevere
-CharacterName,Stewite,Stewite
-CharacterName,Sully,Sully
-CharacterName,Talon,Talon
-CharacterName,Tanyacka,Tanyacka
-CharacterName,Thakuline,Thakuline
-CharacterName,Threepo,Threepo
-CharacterName,Timonen,Timonen
-CharacterName,Trank,Trank
-CharacterName,Udfoot,Udfoot
-CharacterName,Uffle,Uffle
-CharacterName,Ujopayne,Ujopayne
-CharacterName,Umazi,Umazi
-CharacterName,Urenval,Urenval
-CharacterName,Valorn,Valorn
-CharacterName,Vekincarc,Vekincarc
-CharacterName,Vidar,Vidar
-CharacterName,Vikethome,Vikethome
-CharacterName,Viophie,Viophie
-CharacterName,Vorzian,Vorzian
-CharacterName,Wallison,Wallison
-CharacterName,Waltis,Waltis
-CharacterName,Walzen,Walzen
-CharacterName,Wendry,Wendry
-CharacterName,Wollet,Wollet
-CharacterName,Xamarin,Xamarin
-CharacterName,Xandries,Xandries
-CharacterName,Xank,Xank
-CharacterName,Xantari,Xantari
-CharacterName,Xarrung,Xarrung
-CharacterName,Xiolet,Xiolet
-CharacterName,Yarromdee,Yarromdee
-CharacterName,Yassage,Yassage
-CharacterName,Yorque,Yorque
-CharacterName,Yral,Yral
-CharacterName,Yuvaloren,Yuvaloren
-CharacterName,Zean,Zean
-CharacterName,Zerbarry,Zerbarry
-CharacterName,Zimn,Zimn
-CharacterName,Zonagan,Zonagan
-CharacterName,Zultry,Zultry
+CharacterName,Adebesi,อเดบีซี
+CharacterName,Alista,อลิสต้า
+CharacterName,Amaya,อมายา
+CharacterName,Arnoken,อาร์โนเคน
+CharacterName,Arrom,อาร่อม
+CharacterName,Atral,แอททราล
+CharacterName,Atrya,อาทรียา
+CharacterName,Bartist,บาร์ติสท์
+CharacterName,Bason,บาซอน
+CharacterName,Belietha,เบลิเอธา
+CharacterName,Bok,บ๊อค
+CharacterName,Bolan,โบลัน
+CharacterName,Brouwer,บราวเวอร์
+CharacterName,Cailie,เคลี่
+CharacterName,Capo,คาโป
+CharacterName,Carthyre,คาร์ไทร์
+CharacterName,Cazedda,คาเซดด้า
+CharacterName,Chemron,เชมรอน
+CharacterName,Cheyne,ไชน์
+CharacterName,Choung,ชุง
+CharacterName,Crepsal,เครปซอล
+CharacterName,Damano,ดามาโน
+CharacterName,Daracy,ดาร์ซี่
+CharacterName,Davicohr,ดาวิกา
+CharacterName,Donneller,ดอนเนลเลอร์
+CharacterName,D'rey,เดรย์
+CharacterName,Dug,ดั๊ก
+CharacterName,Elishmeli,เอลิชเมลิ
+CharacterName,Ellent,เอลเลนท์
+CharacterName,Emina,เอมิน่า
+CharacterName,Enlan,เอนลาน
+CharacterName,Ericendrick,เอริคเอนดริค
+CharacterName,Eybrinde,เอย์บรินเด้
+CharacterName,Faraze,ฟาเรค
+CharacterName,Fenlas,เฟนลาส
+CharacterName,Fenraymond,เฟนเรย์มอนด์
+CharacterName,Floki,โฟลกิ
+CharacterName,Forro,ฟอร์โร
+CharacterName,Franzia,ฟรานเซีย
+CharacterName,Galday,กัลเดย์
+CharacterName,Gasberg,แกสเบิร์ก
+CharacterName,Gleichman,กลีชแมน
+CharacterName,Gmima,กมิมา
+CharacterName,Gohu,โก
+CharacterName,Gomack,โกแมค
+CharacterName,Grytt,กรีตต์
+CharacterName,Haelom,เฮลอม
+CharacterName,Haique,ไฮคิว
+CharacterName,Haquian,ฮาเกียน
+CharacterName,Hendrick,เฮนดริก
+CharacterName,Hough,โฮ
+CharacterName,Illitasha,อิลลิตาชา
+CharacterName,Ishgood,อิชกูด
+CharacterName,Istophe,อิสโทฟี
+CharacterName,Isylav,อิซิลลาฟ
+CharacterName,Izamiller,อิซามิลเลอร์
+CharacterName,Javarl,จาวาล
+CharacterName,Jayenason,เจย์นาสัน
+CharacterName,Jeem,จีม
+CharacterName,Jessera,เจสเซรา
+CharacterName,Jonat,โจนัท
+CharacterName,Karbri,คาร์บรี
+CharacterName,Kennold,เคนโนลด์
+CharacterName,Kevugo,เควูโก้
+CharacterName,Kierantha,เคียรันทา
+CharacterName,Kira,คิระ
+CharacterName,Kneller,เนลเลอร์
+CharacterName,Lagratha,ลากราธา
+CharacterName,Lanetwalz,ลาเน็ตวาลซ์
+CharacterName,Lant,แลนท์
+CharacterName,Lesha,เลชา
+CharacterName,Luickean,ลูเคียน
+CharacterName,Lzay,ลูเซ
+CharacterName,Malasuth,มาลาสุทธิ์
+CharacterName,Marisa,มาริสา
+CharacterName,Melchai,เมลไช
+CharacterName,Meloty,เมโลตี
+CharacterName,Miller,มิลเลอร์
+CharacterName,Misteph,มิสเสต็ป
+CharacterName,Nichaeltoy,ไนเคิลทอย
+CharacterName,Ninerma,ไนเนอร์มา
+CharacterName,Ninhart,นินฮาร์ท
+CharacterName,Ninny,นินนี่
+CharacterName,Nodin,โนดิน
+CharacterName,Norbant,นอร์บันท์
+CharacterName,Okennwood,โอเคนน์วูด
+CharacterName,Ollac,โอแลค
+CharacterName,Omdarro,ออมดาร์โร
+CharacterName,Orankin,ออแรนคิน
+CharacterName,Oscae,ออสกี้
+CharacterName,Paltrick,พัลทริก
+CharacterName,Pauwinner,เพาวินเนอร์
+CharacterName,Penevieve,เพเนวีฟ
+CharacterName,Perceval,เพอร์ซีวอล
+CharacterName,Pinkerton,พินเคอร์ตัน
+CharacterName,Plegg,เพล็ก
+CharacterName,Pleyson,เพลย์สัน
+CharacterName,Pnerfa,เนอร์ฟา
+CharacterName,Poe,โพ
+CharacterName,Quamma,ควอมา
+CharacterName,Quandon,ควอนดอน
+CharacterName,Quarah,ควอราห์
+CharacterName,Quibb,ควิบบ์
+CharacterName,Quizchak,ควิซชาค
+CharacterName,Quohnrupley,ควอห์นรูปลีย์
+CharacterName,Rambrant,แรมแบรนดท์
+CharacterName,Raugarr,เราการ์
+CharacterName,Razz,ราซ
+CharacterName,Rebenna,รีเบนน่า
+CharacterName,Renorber,รีนอร์เบอร์
+CharacterName,Rokiju,โรคิจู
+CharacterName,Rupley,รูลี่ย์
+CharacterName,Sarlia,ซาร์เลีย
+CharacterName,Shinaas,ชินาส
+CharacterName,Smither,สมิธเทอร์
+CharacterName,Stevere,สตีเวเร่
+CharacterName,Stewite,สตีไวท์
+CharacterName,Sully,ซัลลี่
+CharacterName,Talon,ทาล่อน
+CharacterName,Tanyacka,ธัญญ่า
+CharacterName,Thakuline,ทาคูลีน
+CharacterName,Threepo,ทรีโพ
+CharacterName,Timonen,ทิโมเนน
+CharacterName,Trank,ทรังค์
+CharacterName,Udfoot,อุดฟุต
+CharacterName,Uffle,อัฟเฟิล
+CharacterName,Ujopayne,อูโจเพย์น
+CharacterName,Umazi,อุมาซี่
+CharacterName,Urenval,ยูเรนวาล
+CharacterName,Valorn,วาลอร
+CharacterName,Vekincarc,เวคินคาร์
+CharacterName,Vidar,วิดาร์
+CharacterName,Vikethome,วิเกตโฮม
+CharacterName,Viophie,ไวโอฟี
+CharacterName,Vorzian,วอร์เซียน
+CharacterName,Wallison,วอลลิสัน
+CharacterName,Waltis,วอลติส
+CharacterName,Walzen,วอลเซน
+CharacterName,Wendry,เวนดรี
+CharacterName,Wollet,วอเล็ต
+CharacterName,Xamarin,ซามาริน
+CharacterName,Xandries,แซนดรีส
+CharacterName,Xank,แซงค์
+CharacterName,Xantari,ซานทารี
+CharacterName,Xarrung,ซาร์รุง
+CharacterName,Xiolet,ซิโอเล็ต
+CharacterName,Yarromdee,ยาร์รมเด
+CharacterName,Yassage,ยาสเซจ
+CharacterName,Yorque,ยอร์ค
+CharacterName,Yral,วายรอล
+CharacterName,Yuvaloren,ยูวาโลเรน
+CharacterName,Zean,ซาน
+CharacterName,Zerbarry,เซอร์แบรี่
+CharacterName,Zimn,ซิมน์
+CharacterName,Zonagan,โซนากัน
+CharacterName,Zultry,ซัลทรี
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.",
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.",
@@ -806,9 +806,9 @@ ClassName,shaman//non-binary,หมอผี
 ClassName,templar//female,นักรบแห่งศาสนา
 ClassName,templar//male,นักรบแห่งศาสนา
 ClassName,templar//non-binary,นักรบแห่งศาสนา
-ClassName,tinker//female,คนจรจัด
-ClassName,tinker//male,คนจรจัด
-ClassName,tinker//non-binary,คนจรจัด
+ClassName,tinker//female,ช่างบัดกรี
+ClassName,tinker//male,ช่างบัดกรี
+ClassName,tinker//non-binary,ช่างบัดกรี
 ClassName,tourist//female,นักท่องเที่ยว
 ClassName,tourist//male,นักท่องเที่ยว
 ClassName,tourist//non-binary,นักท่องเที่ยว
@@ -824,29 +824,29 @@ CompanionName,dog,สุนัข
 CompanionName,egg,ไข่
 CompanionName,ghoul,ปอบ
 CompanionName,horse,ม้า
-CompanionName,imp,
+CompanionName,imp,ปีศาจน้อย
 CompanionName,monkey,ลิง
 CompanionName,rat,หนู
 CounterName,afflictions,ความทุกข์
 CounterName,animations,
 CounterName,anoints,
 CounterName,blinks,เคลื่อนที่พริบตา
-CounterName,boons,สวัสดิการ
-CounterName,captures,
+CounterName,boons,ผลประโยชน์
+CounterName,captures,จับ
 CounterName,casts,ร่าย
-CounterName,chants,
+CounterName,chants,ท่อง
 CounterName,constructs,สร้าง
 CounterName,crafts,งานฝีมือ
-CounterName,decapitations,
+CounterName,decapitations,ประหาร
 CounterName,digs,ขุด
 CounterName,dips,
 CounterName,disarms,ปลด
-CounterName,divines,
+CounterName,divines,ทำนาย
 CounterName,drinks,ดื่ม
 CounterName,eats,กิน
 CounterName,empties,ว่างเปล่า
-CounterName,exchanges,
-CounterName,flashes,
+CounterName,exchanges,แลกเปลี่ยน
+CounterName,flashes,กระพริบ
 CounterName,hatches,ฟัก
 CounterName,hides,ซ่อน
 CounterName,inscribes,
@@ -854,10 +854,10 @@ CounterName,jumps,โดด
 CounterName,kicks,ถีบ
 CounterName,lifesaves,ช่วยชีวิต
 CounterName,mimics,เลียนแบบ
-CounterName,moves,
+CounterName,moves,เคลื่อนไหว
 CounterName,opens,เปิด
 CounterName,packs,
-CounterName,plays,
+CounterName,plays,เล่น
 CounterName,polymorphs,กลายร่าง
 CounterName,polypiles,
 CounterName,prays,อธิษฐาน
@@ -865,8 +865,8 @@ CounterName,punishments,
 CounterName,quaffs,กลืน
 CounterName,reads,อ่าน
 CounterName,reclines,
-CounterName,refills,
-CounterName,releases,
+CounterName,refills,เติม
+CounterName,releases,ปลดปล่อย
 CounterName,renames,เปลี่ยนชื่อ
 CounterName,replications,
 CounterName,rests,พักผ่อน
@@ -876,7 +876,7 @@ CounterName,scraps,
 CounterName,scries,
 CounterName,searches,ค้นหา
 CounterName,services,บริการ
-CounterName,sets,
+CounterName,sets,ติดตั้ง
 CounterName,sits,นั่ง
 CounterName,slides,
 CounterName,stakes,
@@ -897,7 +897,7 @@ CounterName,zaps,ยิง
 DamageTypeName,bludgeon,ทุบ
 DamageTypeName,pierce,แทง
 DamageTypeName,slash,ฟัน
-DeviceDescription,This square-cut hole is deep enough to hurt and hard to escape.,
+DeviceDescription,This square-cut hole is deep enough to hurt and hard to escape.,หลุมสี่เหลี่ยมจัตุรัสนี้ทั้งลึกและขึ้นมาได้ยาก
 DeviceName,acid trap,กับดักกรด
 DeviceName,alarm trap,กับดักสัญญาณเตือนภัย
 DeviceName,amnesia trap,กับดักความจำเสื่อม
@@ -914,7 +914,7 @@ DeviceName,explosive trap,กับดักระเบิด
 DeviceName,falling boulder trap,กับดักหินก้อนใหญ่ตกลงมา
 DeviceName,falling rock trap,กับดักหินตกลงมา
 DeviceName,fire trap,กับดักไฟ
-DeviceName,grease trap,
+DeviceName,grease trap,กับดักจารบี
 DeviceName,hallucination trap,กับดักประสาทหลอน
 DeviceName,hole,รู
 DeviceName,hunger trap,กับดักหิวโหย
@@ -925,48 +925,48 @@ DeviceName,noxious pool,อ่างพิษ
 DeviceName,pit,หลุมพราง
 DeviceName,poison gas trap,กับดักแก๊สพิษ
 DeviceName,polymorph trap,กับดักกลายร่าง
-DeviceName,scything blade trap,
+DeviceName,scything blade trap,กับดักดาบเคียว
 DeviceName,shock trap,กับดักไฟฟ้า
 DeviceName,silence trap,กับดักไบ้
 DeviceName,sleeping gas trap,กับดักแก๊สยาสลบ
 DeviceName,spear trap,กับดักหอก
 DeviceName,spiked pit,หลุมพรางเหล็กแหลม
-DeviceName,squeaky board,
+DeviceName,squeaky board,ไม้กระดานมีเสียงเอี๊ยดๆ
 DeviceName,teleporter,เคลื่อนย้ายมวลสาร
 DeviceName,toxic trap,กับดักพิษ
 DeviceName,trapdoor,ประตูกับดัก
 DeviceName,water trap,กับดักน้ำ
 DeviceName,web,ใย
 DietName,carnivore,สัตว์กินเนื้อ
-DietName,fabrivore,
+DietName,fabrivore,สัตว์กินผ้า
 DietName,geophagy,สัตว์กินดิน
-DietName,hematophagy,
+DietName,hematophagy,สัตว์ดื่มเลือด
 DietName,herbivore,สัตว์กินพืช
-DietName,inediate,
-DietName,lithivore,
-DietName,metalivore,
+DietName,inediate,ไม่สามารถกินอะไรได้
+DietName,lithivore,สัตว์กินหิน
+DietName,metalivore,สัตว์กินเหล็ก
 DietName,omnivore,กินทั้งพืชและสัตว์
-DietName,organivore,
-DietName,xylophagy,
+DietName,organivore,กินเฉพาะอาหารไร้สารเคมี
+DietName,xylophagy,สัตว์กินไม้
 EffectProperty,afflictions,ความทุกข์
 EffectProperty,all kind,ทุกเหล่า
 EffectProperty,blocks,ป้องกัน
-EffectProperty,break ally loyalty,
+EffectProperty,break ally loyalty,ทำลายพันธมิตร
 EffectProperty,carried,แบกแล้ว
 EffectProperty,constructed,สร้างแล้ว
-EffectProperty,destruction,การทำลาย
+EffectProperty,destruction,ทำลาย
 EffectProperty,devices,อุปกรณ์
-EffectProperty,disenchant,
+EffectProperty,disenchant,ถอนเสน่ห์
 EffectProperty,entities,สิ่งมีตัวตน
 EffectProperty,equipment,อุปกรณ์
 EffectProperty,equipped,สวมใส่แล้ว
-EffectProperty,expansive,
+EffectProperty,expansive,แผ่ขยาย
 EffectProperty,fixed,ซ่อมแล้ว
 EffectProperty,floor,ฟื้น
 EffectProperty,hordes,กลุ่ม
 EffectProperty,items,ไอเท็ม
 EffectProperty,kinds,
-EffectProperty,lies,
+EffectProperty,lies,โกหก
 EffectProperty,loyal only,
 EffectProperty,material,วัสดุ
 EffectProperty,materials,วัสดุ
@@ -976,17 +976,17 @@ EffectProperty,properties,สรรพคุณ
 EffectProperty,punishments,บทลงโทษ
 EffectProperty,random experience,สุ่มค่าประสบการณ์
 EffectProperty,random points,สุ่มแต้ม
-EffectProperty,remove random resistance,
-EffectProperty,remove random talent,
-EffectProperty,removes all transients,
-EffectProperty,reset random equipment,
+EffectProperty,remove random resistance,สุ่มล้างการต้านทาน
+EffectProperty,remove random talent,สุ่มล้างพรสวรรค์
+EffectProperty,removes all transients,ล้างสถานะชั่วคราวทั้งหมด
+EffectProperty,reset random equipment,สุ่มคืนค่าอุปกรณ์
 EffectProperty,reveal,เปิดเผย
 EffectProperty,revenants,
 EffectProperty,sanctity,
 EffectProperty,skills,ความชำนาญ
 EffectProperty,source,
-EffectProperty,stock,
-EffectProperty,stocks,
+EffectProperty,stock,คลัง
+EffectProperty,stocks,คลัง
 EffectProperty,target,เป้าหมาย
 EffectProperty,targeted,เป็นเป้าหมาย
 EffectProperty,this level,ชั้นนี้
@@ -994,7 +994,7 @@ EffectProperty,truth,ความจริง
 EffectProperty,unafflicts,
 EffectProperty,unpolymorphs,หายจากการกลายร่าง
 EffectProperty,unpunishes,
-EffectProperty,whole stack,
+EffectProperty,whole stack,ทั้งหมด
 EffectType,afflict,
 EffectType,alert,แตกตื่น
 EffectType,amnesia,ความจำเสื่อม
@@ -1003,39 +1003,39 @@ EffectType,area transient,
 EffectType,assess,
 EffectType,blinking,เคลื่อนที่พริบตา
 EffectType,cancellation,การยกเลิก
-EffectType,capture,
+EffectType,capture,จับ
 EffectType,charging,
-EffectType,charm,
+EffectType,charm,ลุ่มหลง
 EffectType,clone character,
 EffectType,concealing,อำพราง
-EffectType,convert asset,
-EffectType,convert boulder,
-EffectType,convert door,
-EffectType,convert fixture,
-EffectType,convert floor,
-EffectType,convert wall,
-EffectType,create boulder,
-EffectType,create fixture,
+EffectType,convert asset,เปลี่ยนทรัพย์สิน
+EffectType,convert boulder,เปลี่ยนหินก้อนใหญ่
+EffectType,convert door,เปลี่ยนประตู
+EffectType,convert fixture,เปลี่ยนของประจำที่
+EffectType,convert floor,เปลี่ยนพื้น
+EffectType,convert wall,เปลี่ยนกำแพง
+EffectType,create boulder,สร้างหินก้อนใหญ่
+EffectType,create fixture,สร้างของประจำที่
 EffectType,create golem,สร้างโกเล็ม
 EffectType,create horde,สร้างฝูง
-EffectType,create nook,
+EffectType,create nook,สร้างของซ่อน
 EffectType,create trap,สร้างกับดัก
 EffectType,create wall,สร้างกำแพง
-EffectType,decapitate,
+EffectType,decapitate,ประหาร
 EffectType,degrade,ลดคุณภาพ
-EffectType,destroy asset,
+EffectType,destroy asset,ทำลายทรัพย์สิน
 EffectType,destroy wall,ทำลายกำแพง
 EffectType,detect,ตรวจสอบ
-EffectType,devour asset,
+EffectType,devour asset,กลืนกินทรัพย์สิน
 EffectType,digging,ขุด
 EffectType,disarm,ปลด
-EffectType,divine,
+EffectType,divine,ทำนาย
 EffectType,drain life,สูบพลังชีวิต
 EffectType,drain mana,สูบมานา
-EffectType,enchant asset,
-EffectType,engulf,
+EffectType,enchant asset,ลงอาคมทรัพย์สิน
+EffectType,engulf,เขมือบ
 EffectType,enlightenment,
-EffectType,exchange,
+EffectType,exchange,แปลเปลี่ยน
 EffectType,gain level,ได้รับเลเวล
 EffectType,gain skill,ได้รับทักษะ
 EffectType,genocide,ล้างเผ่าพันธุ์
@@ -1043,15 +1043,15 @@ EffectType,grapple,คว้า
 EffectType,growth,โตขึ้น
 EffectType,hatch,ฟัก
 EffectType,identify,ระบุ
-EffectType,impersonate,
-EffectType,incarcerate,
+EffectType,impersonate,ปลอมตัว
+EffectType,incarcerate,กักขัง
 EffectType,karma,กรรม
 EffectType,learn spell,เรียนเวท
-EffectType,liberate,
+EffectType,liberate,ปลดแอก
 EffectType,locking,สะเดาะล็อค
 EffectType,lose skill,สูญเสียทักษะ
 EffectType,lose talent,สูญเสียพรสวรรค์
-EffectType,malnutrition,
+EffectType,malnutrition,ขาดสารอาหาร
 EffectType,mapping,แผนที่
 EffectType,murder,ฆาตกรรม
 EffectType,nutrition,โภชนาการ
@@ -1061,7 +1061,7 @@ EffectType,place curse,ลงคำสาป
 EffectType,polymorph,กลายร่าง
 EffectType,punish,ลงโทษ
 EffectType,raise dead,คืนชีพคนตาย
-EffectType,recall,
+EffectType,recall,เรียกคืน
 EffectType,release,ปลดปล่อย
 EffectType,remove curse,ถอนคำสาป
 EffectType,remove transient,ถอนสถานะชั่วคราว
@@ -1072,22 +1072,22 @@ EffectType,rumour,ข่าวลือ
 EffectType,sacrifice,สังเวย
 EffectType,sanctify,
 EffectType,searching,ค้นหา
-EffectType,spawn character,
+EffectType,spawn character,เสกตัวละคร
 EffectType,steal,ขโมย
 EffectType,summon entity,อัญเชิญสิ่งมีตัวตน
-EffectType,teleport asset,
-EffectType,teleport away,
-EffectType,teleport character,
+EffectType,teleport asset,เทเลพอร์ตทรัพย์สิน
+EffectType,teleport away,เทเลพอร์ตหนี
+EffectType,teleport character,เทเลพอร์ตตัวละคร
 EffectType,tinning,
 EffectType,transition,
 EffectType,unafflict,
 EffectType,unpolymorph,หายจากการกลายร่าง
 EffectType,unpunish,
-EffectType,unstuck,
+EffectType,unstuck,แก้ติด
 EffectType,visit shop,เยี่ยมร้านค้า
 EffectType,visit shrine,เยี่ยมสถานที่บูชา
 EffectType,visit zoo,เยี่ยมสวยสัตว์
-EffectType,vomit,
+EffectType,vomit,อ้วก
 EffectType,warping,
 EggName,black dragon,มังกรดำ
 EggName,blue dragon,มังกรฟ้า
@@ -1100,16 +1100,16 @@ EggName,shimmering dragon,มังกรเปล่งแสง
 EggName,silver dragon,มังกรเงิน
 EggName,white dragon,มังกรขาว
 EggName,yellow dragon,มังกรเหลือง
-ElementDescription,Complete resistance to acid and corrosive damage.,
-ElementDescription,Complete resistance to cold and ice damage.,
-ElementDescription,Complete resistance to disintegration damage.,
-ElementDescription,Complete resistance to electric and shock damage.,
-ElementDescription,Complete resistance to fire and heat damage.,
-ElementDescription,Complete resistance to life and mana draining effects.,
-ElementDescription,Complete resistance to petrification effects.,
-ElementDescription,Complete resistance to poison damage.,
-ElementDescription,Protects you against pure magical effects.,
-ElementDescription,You resist attempts to render you into a magical slumber.,
+ElementDescription,Complete resistance to acid and corrosive damage.,ต้านทานกรดและซึ่งกร่อนโดยสิ้นเชิง
+ElementDescription,Complete resistance to cold and ice damage.,ต้านทานความเย็นและน้ำแข็งโดยสิ้นเชิง
+ElementDescription,Complete resistance to disintegration damage.,ต้านทานการสลายโดยสิ้นเชิง
+ElementDescription,Complete resistance to electric and shock damage.,ต้านทานไฟฟ้าโดยสิ้นเชิง
+ElementDescription,Complete resistance to fire and heat damage.,ต้านทานไฟและความร้อนโดยสิ้นเชิง
+ElementDescription,Complete resistance to life and mana draining effects.,ต้านทานการดูดพลังชีวิตและมานาโดยสิ้นเชิง
+ElementDescription,Complete resistance to petrification effects.,ต้านทานการเสกเป็นหินโดยสิ้นเชิง
+ElementDescription,Complete resistance to poison damage.,ต้านทานพิษโดยสิ้นเชิง
+ElementDescription,Protects you against pure magical effects.,ป้องกันจากผลของเวทมนตร์
+ElementDescription,You resist attempts to render you into a magical slumber.,คุณต่อต้านผลของเวทมนตร์ที่ทำให้หลับไหล
 ElementName,acid,กรด
 ElementName,cold,ความเย็น
 ElementName,digging,การขุด
@@ -1126,8 +1126,8 @@ ElementName,shock,อาการช็อค
 ElementName,sleep,การหลับ
 ElementName,water,น้ำ
 EncumbranceDescription,You can barely move with this load.,ด้วยน้ำหนักขนาดนี้คุณแทบจะขยับไม่ได้เลย
-EncumbranceDescription,You collapse under your load.,
-EncumbranceDescription,You rebalance your load but movement is difficult.,
+EncumbranceDescription,You collapse under your load.,คุณถูกน้ำหนักที่คุณแบกมาทับ
+EncumbranceDescription,You rebalance your load but movement is difficult.,คุณพยายามจัดสมดุลใหม่แต่การเคลื่อนไหวก็ยังคงยากอยู่ดี
 EncumbranceDescription,You stagger under your load.,เพราะน้ำหนักของคุณทำให้คุณเดินโซเซ
 EncumbranceDescription,Your movements are slightly slowed because of your load.,เพราะน้ำหนักทำให้การเคลื่อนที่ของคุณช้าลงเล็กน้อย
 EncumbranceDescription,Your movements are unencumbered.,คุณเคลื่อนไหวได้ปกติไม่มีภาระใดๆ
@@ -1161,46 +1161,46 @@ EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily b
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",
 EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
-EntityName,abbot,
-EntityName,acid blob,
+EntityName,abbot,อธิการ
+EntityName,acid blob,ก้อนกรด
 EntityName,acid worm,หนอนกรด
 EntityName,acolyte,สาวก
 EntityName,adult black dragon,มังกรดำ
 EntityName,adult blue dragon,มังกรฟ้า
 EntityName,adult deep dragon,มังกรลึกลับ
-EntityName,adult gold dragon,
+EntityName,adult gold dragon,มังกรทอง
 EntityName,adult green dragon,มังกรเขียว
 EntityName,adult orange dragon,มังกรส้ม
 EntityName,adult raven,นกกาเหว่าโตเต็มวัย
 EntityName,adult red dragon,มังกรแดง
-EntityName,adult shimmering dragon,
+EntityName,adult shimmering dragon,มังกรหลากสี
 EntityName,adult silver dragon,มังกรเงิน
 EntityName,adult white dragon,มังกรขาว
 EntityName,adult yellow dragon,มังกรเหลือง
 EntityName,air elemental,ธาตุลม
-EntityName,Aleax,
-EntityName,ancient black dragon,
-EntityName,ancient blue dragon,
-EntityName,ancient deep dragon,
-EntityName,ancient gold dragon,
-EntityName,ancient green dragon,
-EntityName,ancient orange dragon,
-EntityName,ancient red dragon,
-EntityName,ancient shimmering dragon,
-EntityName,ancient silver dragon,
-EntityName,ancient white dragon,
-EntityName,ancient yellow dragon,
-EntityName,angel,เทพ
+EntityName,Aleax,อเล็กซ์
+EntityName,ancient black dragon,มังกรดำโบราณ
+EntityName,ancient blue dragon,มังกรฟ้าโบราณ
+EntityName,ancient deep dragon,มังกรลึกลับโบราณ
+EntityName,ancient gold dragon,มังกรทองโบราณ
+EntityName,ancient green dragon,มังกรเขียวโบราณ
+EntityName,ancient orange dragon,มังกรส้มโบราณ
+EntityName,ancient red dragon,มังกรแดงโบราณ
+EntityName,ancient shimmering dragon,มังกรหลากสีโบราณ
+EntityName,ancient silver dragon,มังกรเงินโบราณ
+EntityName,ancient white dragon,มังกรขาวโบราณ
+EntityName,ancient yellow dragon,มังกรเหลืองโบราณ
+EntityName,angel,ทูตสวรรค์
 EntityName,animate object,วัตถุมีชีวิต
 EntityName,ape,วานร
-EntityName,Aphrodite,
-EntityName,apprentice,
+EntityName,Aphrodite,อาโฟรไดตี้
+EntityName,apprentice,ลูกศิษย์
 EntityName,arc bug,
-EntityName,archangel,
-EntityName,arch-lich,
+EntityName,archangel,ทูตสวรรค์ชั้นสูง
+EntityName,arch-lich,ลิชชั้นสูง
 EntityName,Archmage Dirachi,จอมเวทน้ำแข็งชั้นสูง
 EntityName,Archmage Flaynn,จอมเวทเพลิงชั้นสูง
-EntityName,archon,
+EntityName,archon,อาร์คอน
 EntityName,Archpriest Avvakrum,
 EntityName,artisan,
 EntityName,Ashikaga Takauji,
@@ -1243,7 +1243,7 @@ EntityName,bile worm,
 EntityName,bile worm tail,
 EntityName,black light,แสงสีดำ
 EntityName,black marketeer,
-EntityName,black mould,
+EntityName,black mould,เชื้อราสีดำ
 EntityName,black naga,นากาดำ
 EntityName,black naga hatchling,
 EntityName,black pudding,
@@ -1257,7 +1257,7 @@ EntityName,bloodshot eye,
 EntityName,bloodworm,
 EntityName,blue jelly,
 EntityName,bone devil,ปีศาจกระดูก
-EntityName,brown mould,
+EntityName,brown mould,เชื้อราสีน้ำตาล
 EntityName,brown pudding,
 EntityName,brownie,
 EntityName,bugbear,
@@ -1295,7 +1295,7 @@ EntityName,cow,วัว
 EntityName,coyote,โคโยตี้
 EntityName,crocodile,จรเข้
 EntityName,Croesus,
-EntityName,crystal golem,
+EntityName,crystal golem,โกเล็มผลึก
 EntityName,Cthulhu,
 EntityName,cyclops,
 EntityName,dao,
@@ -1308,15 +1308,15 @@ EntityName,deep gnome,
 EntityName,deep one,
 EntityName,deeper one,
 EntityName,deepest one,
-EntityName,demilich,
-EntityName,Demogorgon,
+EntityName,demilich,กึ่งลิช
+EntityName,Demogorgon,เดโมกอร์ก้อน
 EntityName,demon,ปีศาจ
 EntityName,demon orc,ออร์คปีศาจ
 EntityName,diamond golem,โกเล็มเพชร
 EntityName,dingo,
 EntityName,dingo puppy,
 EntityName,disenchanter,
-EntityName,disgusting mould,
+EntityName,disgusting mould,เชื้อราน่าขยะแขยง
 EntityName,disintegrator,
 EntityName,Dispater,
 EntityName,displacer beast,
@@ -1377,7 +1377,7 @@ EntityName,flame maker,จอมเวทเพลิง
 EntityName,flame seeker,
 EntityName,flame sphere,
 EntityName,fledgling raven,
-EntityName,flesh golem,
+EntityName,flesh golem,โกเล็มเนื้อ
 EntityName,floating eye,ดวงตาลอยได้
 EntityName,fog cloud,
 EntityName,forest centaur,
@@ -1400,7 +1400,7 @@ EntityName,ghost,ผี
 EntityName,ghoul,ปอบ
 EntityName,ghoul mage,ปอบจอมเวท
 EntityName,ghoul queen,ราชินีปอบ
-EntityName,giant,ยักษ์
+EntityName,giant,ยักษ์ใหญ่
 EntityName,giant ant,มดยักษ์
 EntityName,giant badger,
 EntityName,giant bat,ค้างคาวยักษ์
@@ -1410,7 +1410,7 @@ EntityName,giant crab,ปูยักษ์
 EntityName,giant eel,ปลาไหลยักษ์
 EntityName,giant flea,
 EntityName,giant frog,
-EntityName,giant king,ราชายักษ์
+EntityName,giant king,ราชายักษ์ใหญ่
 EntityName,giant louse,
 EntityName,giant mimic,ตัวเลียนแบบยักษ์
 EntityName,giant mummy,มัมมี่ยักษ์
@@ -1426,7 +1426,7 @@ EntityName,giant zombie,ผีดิบยักษ์
 EntityName,gibberling,
 EntityName,gila monster,
 EntityName,Girtab,
-EntityName,glass golem,
+EntityName,glass golem,โกเล็มแก้ว
 EntityName,glass piercer,
 EntityName,glowing eye,
 EntityName,gnoll,
@@ -1449,7 +1449,7 @@ EntityName,golden naga,
 EntityName,golden naga hatchling,
 EntityName,great orc,สุดยอดออร์ค
 EntityName,green elf,เอลฟ์เขียว
-EntityName,green mould,
+EntityName,green mould,เชื้อราสีเขียว
 EntityName,green slime,สไลม์สีเขียว
 EntityName,gremlin,
 EntityName,grey elf,เอลฟ์เทา
@@ -1542,12 +1542,12 @@ EntityName,large mimic,ตัวเลียนแบบตัวใหญ่
 EntityName,large pile of killer coins,
 EntityName,larva,ดักแด้
 EntityName,lava blob,
-EntityName,leather golem,
-EntityName,lemure,วิญญาณร้าย
+EntityName,leather golem,โกเล็มหนัง
+EntityName,lemure,ผีตายโหง
 EntityName,leocrotta,
 EntityName,leprechaun,
 EntityName,leprechaun wizard,
-EntityName,lich,
+EntityName,lich,ลิช
 EntityName,lichen,
 EntityName,lieutenant,
 EntityName,lightning bug,
@@ -1575,7 +1575,7 @@ EntityName,mangler,
 EntityName,marid,
 EntityName,marilith,
 EntityName,Master Kaen,
-EntityName,master lich,
+EntityName,master lich,จ้าวแห่งลิช
 EntityName,master mind flayer,
 EntityName,mastodon,
 EntityName,Maugneshaagar,
@@ -1588,7 +1588,7 @@ EntityName,migo queen,
 EntityName,migo warrior,
 EntityName,mind flayer,
 EntityName,Minion of Huhetotl,
-EntityName,minotaur,
+EntityName,minotaur,มิโนทอร์
 EntityName,mist wolf,
 EntityName,mithril golem,โกเล็มมิธริล
 EntityName,mobat,
@@ -1596,7 +1596,7 @@ EntityName,monadic deva,
 EntityName,mongbat,
 EntityName,monkey,ลิง
 EntityName,Mother Hydra,มารดาไฮดร้า
-EntityName,mouldy pudding,
+EntityName,mouldy pudding,พุดดิ้งขึ้นรา
 EntityName,mountain centaur,
 EntityName,mountain nymph,
 EntityName,movanic deva,
@@ -1617,17 +1617,17 @@ EntityName,nupperibo,
 EntityName,nurse,นางพยาบาล
 EntityName,occultist,หมอผี
 EntityName,ochre jelly,
-EntityName,ogre,
-EntityName,ogre king,
-EntityName,ogre lord,
-EntityName,ogre mage,
+EntityName,ogre,ยักษ์
+EntityName,ogre king,ราชายักษ์
+EntityName,ogre lord,ยักษ์ลอร์ด
+EntityName,ogre mage,ยักษ์จอมเวท
 EntityName,olog-hai,
 EntityName,Oracle,
 EntityName,orange jelly,
 EntityName,orc,ออร์ค
 EntityName,orc berserker,ออร์คคลั่ง
 EntityName,orc captain,กัปตันออร์ค
-EntityName,orc grunt,
+EntityName,orc grunt,ทหารออร์ค
 EntityName,orc king,ราชาออร์ค
 EntityName,orc mummy,มัมมี่ออร์ค
 EntityName,orc shaman,หมอผีออร์ค
@@ -1638,17 +1638,17 @@ EntityName,Orion,
 EntityName,owlbear,
 EntityName,pack rat,
 EntityName,page,
-EntityName,panther,
-EntityName,pantherwere,
+EntityName,panther,เสือดำ
+EntityName,pantherwere,เสือดำมนุษย์
 EntityName,paper golem,โกเล็มกระดาษ
-EntityName,parrot,
-EntityName,pearl golem,
+EntityName,parrot,นกแก้ว
+EntityName,pearl golem,โกเล็มไข่มุก
 EntityName,pegasus,เพกาซัส
 EntityName,Pelias,
 EntityName,Pestilence,
 EntityName,phase spider,
 EntityName,phase worm,
-EntityName,pig,
+EntityName,pig,หมู
 EntityName,pile of killer coins,
 EntityName,piranha,
 EntityName,pit bull,
@@ -1678,7 +1678,7 @@ EntityName,rancid jelly,
 EntityName,rat king,ราชาหนู
 EntityName,ratwere,
 EntityName,recluse spider,
-EntityName,red mould,
+EntityName,red mould,เชื้อราสีแดง
 EntityName,red naga,
 EntityName,red naga hatchling,
 EntityName,rhaumbusun,
@@ -1691,13 +1691,13 @@ EntityName,rope golem,โกเล็มเชือก
 EntityName,roshi,
 EntityName,rot worm,
 EntityName,rothé,
-EntityName,ruby golem,
+EntityName,ruby golem,โกเล็มทับทิม
 EntityName,rust monster,
 EntityName,rutterkin,
 EntityName,sabre-toothed cat,
 EntityName,salamander,
 EntityName,sandestin,
-EntityName,sapphire golem,
+EntityName,sapphire golem,โกเล็มไพลิน
 EntityName,sasquatch,
 EntityName,satyr,
 EntityName,scorpion,แมงป่อง
@@ -1727,7 +1727,7 @@ EntityName,small mimic,ตัวเลียนแบบตัวน้อย
 EntityName,snake,งู
 EntityName,snakewere,
 EntityName,snow ant,มดหิมะ
-EntityName,snow golem,
+EntityName,snow golem,โกเล็มหิมะ
 EntityName,snow orc,ออร์คหิมะ
 EntityName,Solar,
 EntityName,soldier,มหาร
@@ -1783,7 +1783,7 @@ EntityName,violet fungus,
 EntityName,vorpal jabberwock,
 EntityName,vrock,
 EntityName,war orc,ออร์คสงคราม
-EntityName,warg,
+EntityName,warg,วาร์ก
 EntityName,warhorse,ม้าสงคราม
 EntityName,warlock,ผู้มีเวทมนตร์
 EntityName,warrior,นักรบ
@@ -1799,7 +1799,7 @@ EntityName,water nymph,
 EntityName,water seeker,
 EntityName,water sphere,
 EntityName,water troll,โทรลน้ำ
-EntityName,wax golem,
+EntityName,wax golem,โกเล็มขี้ผึ้ง
 EntityName,werejackal,มนุษย์หมาไน
 EntityName,werepanther,มนุษย์เสือดำ
 EntityName,wererat,มนุษย์หนู
@@ -1814,22 +1814,22 @@ EntityName,winter wolf,หมาป่าเหมันต์
 EntityName,winter wolf cub,ลูกหมาป่าเหมันต์
 EntityName,witch,แม่มด
 EntityName,wolf,หมาป่า
-EntityName,wolfwere,
-EntityName,wolverine,
-EntityName,wood golem,
+EntityName,wolfwere,หมาป่ามนุษย์
+EntityName,wolverine,วูล์ฟเวอรีน
+EntityName,wood golem,โกเล็มไม้
 EntityName,wood nymph,
 EntityName,woodchuck,
 EntityName,woodland elf,
-EntityName,wraith,
+EntityName,wraith,วิญญาณร้าย
 EntityName,wumpus,
-EntityName,wyvern,
+EntityName,wyvern,ไวเวิร์น
 EntityName,xan,
 EntityName,xorn,
 EntityName,Yeenoghu,
 EntityName,yellow jacket,
 EntityName,yellow jelly,
 EntityName,yellow light,แสงสีเหลือง
-EntityName,yellow mould,
+EntityName,yellow mould,เชื้อราสีเหลือง
 EntityName,yeoman,
 EntityName,yeoman warder,
 EntityName,yeti,เยติ
@@ -1900,21 +1900,21 @@ FormatText,{AssetName} was cancelled,{AssetName}ถูกยกเลิกแ�
 FormatText,{AssetName} was damaged by {ElementName},{AssetName}ถูกความเสียหายจาก{ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName}ถูกทำลายโดย{ElementName}
 FormatText,{AssetName} was disintegrated,{AssetName}สลายไป
-FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},
-FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},
+FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} ประหาร {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} หลอก {Defender:CharacterName} จนตาย
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} สังหาร {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} รู้สึกเสียใจกับสิ่งที่เกิดขึ้นกับ {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} ทำให้ {Defender:CharacterName} เกลียดชัง!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} กลายเป็นศัตรูกับ {Defender:CharacterName}
-FormatText,{Base} in {Range},
-FormatText,{BeamName} beam,ลำแสง{BeamName}
+FormatText,{Base} in {Range},{Base}ในระยะ {Range}
+FormatText,{BeamName} beam,ยิงลำแสง{BeamName}
 FormatText,{BlockName} was disintegrated,{BlockName}สลายไป
 FormatText,{BoonName} which direction?,{BoonName}ไปทิศทางไหน?
 FormatText,{BoonName} which item?,{BoonName}ไอเท็มชิ้นไหน?
 FormatText,{Chance} {Count} {Entities},
-FormatText,{Chance} leaves corpse,{Chance}ทิ้งศพ
-FormatText,{Chance} per room,{Chance}ต่อหนึ่งห้อง
-FormatText,{Chance} react to {ElementName},
+FormatText,{Chance} leaves corpse,มีโอกาส{Chance}ที่จะทิ้งศพ
+FormatText,{Chance} per room,มีโอกาส{Chance}ต่อหนึ่งห้อง
+FormatText,{Chance} react to {ElementName},มีโอกาส{Chance}ที่จะมีปฏิกิริยากับ{ElementName}
 FormatText,{CharacterName} {EndType},
 FormatText,{CharacterName} {EndType} by {EndCause},
 FormatText,{CharacterName} {MotionPastName} {AssetName},{CharacterName} {MotionPastName}{AssetName}แล้ว
@@ -1925,15 +1925,15 @@ FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetNa
 FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName}สู่{MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},
-FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} เลเวลเพิ่มขึ้นเป็น เลเวล {LevelNumber}
-FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} เพิ่มผลของ{SpellName}สูงสุดแล้ว
-FormatText,{CharacterName} animated {AssetName},{CharacterName} คืนชีพ {AssetName} แล้ว
+FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} เลเวลเพิ่มขึ้นเป็นเลเวล {LevelNumber}
+FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} เพิ่มผลของเวท{SpellName}ถึงระดับสูงสุดแล้ว
+FormatText,{CharacterName} animated {AssetName},{CharacterName} ทำให้{AssetName}มีชีวิต
 FormatText,{CharacterName} broke {AssetName},{CharacterName} ทำ{AssetName}พัง
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} กินมากกว่านี้ไม่ไหวแล้ว และผลาญโภชนาการที่มีค่าไป
 FormatText,{CharacterName} cannot grow up,{CharacterName} ไม่สามารถเติบโตขึ้นได้
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,
-FormatText,{CharacterName} cannot reach {ObjectName} while levitating,
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName} ไม่สามารถย่อย{AssetName}ได้เพราะเป็น{DietName}
+FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName} ไม่สามารถเอื้อมถึง{ObjectName}ขณะที่ลอยอยู่
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},
 FormatText,{CharacterName} cast {QualificationName} {SpellName},
 FormatText,{CharacterName} could not read the rumour,{CharacterName} อ่านข่าวลือไม่ออก
@@ -1952,10 +1952,10 @@ FormatText,{CharacterName} enters {ZooName},{CharacterName} ได้เข้�
 FormatText,{CharacterName} equipped {AssetName},{CharacterName} สวมใส่{AssetName}แล้ว
 FormatText,{CharacterName} exploded!,{CharacterName} ระเบิด!
 FormatText,{CharacterName} fainted from lack of food,{CharacterName} สลบไปเพราะขาดอาหาร
-FormatText,{CharacterName} feels this area is becoming less dangerous,
-FormatText,{CharacterName} feels this area is becoming more dangerous,
+FormatText,{CharacterName} feels this area is becoming less dangerous,{CharacterName} รู้สึกว่าพื้นที่นี้อันตรายน้อยลง
+FormatText,{CharacterName} feels this area is becoming more dangerous,{CharacterName} รู้สึกว่าพื้นที่นี้อันตรายขึ้น
 FormatText,{CharacterName} fell asleep,{CharacterName} หลับไปแล้ว
-FormatText,{CharacterName} filled {DeviceName} with {BlockName},
+FormatText,{CharacterName} filled {DeviceName} with {BlockName},{CharacterName} เติม{DeviceName}ด้วย{BlockName}
 FormatText,{CharacterName} fumbled and dropped {GenderHis} {AssetName},
 FormatText,{CharacterName} gained skill in {SkillName},{CharacterName} ได้รับทักษะ{SkillName}
 FormatText,{CharacterName} gained the talent of {PropertyName},{CharacterName} ได้รับพรสวรรค์แห่ง{PropertyName}
@@ -2052,15 +2052,15 @@ FormatText,{MaterialName} material,วัสดุเป็น{MaterialName}
 FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName}{AssetName}ไปทางไหน?
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName}{AssetName}กับไอเท็มไหน?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName}{FeatureName}ไปทางไหน?
-FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName}จะใช้ไอเท็มไหนกับ{FeatureName}?
-FormatText,{Prisoner:CharacterName} {BlockName},{BlockName}{Prisoner:CharacterName}
+FormatText,{MotionPresentName} which item on {FeatureName}?,จะ{MotionPresentName}ไอเท็มไหนกับ{FeatureName}?
+FormatText,{Prisoner:CharacterName} {BlockName},{BlockName} {Prisoner:CharacterName}
 FormatText,{QualificationName} cast,ร่าย{QualificationName}
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{ItemName}{CharacterName}{Enchantment}{SanctityName}{ContainerQualifier}{Charges}{Quantity}
 FormatText,{Repeat} {Chance} {Quantity} {SanctityName} {Enchantment} {Items},
 FormatText,{SanctityName} {FeatureName},{FeatureName}{SanctityName}
 FormatText,{ServiceName} which direction?,{ServiceName}ไปทางไหน?
 FormatText,{ServiceName} which item?,{ServiceName}กับไอเท็มไหน?
-FormatText,{SizeName} {MaterialName} {AnatomyFlags},
+FormatText,{SizeName} {MaterialName} {AnatomyFlags},{AnatomyFlags}{MaterialName}ขนาด{SizeName}
 FormatText,{SkillName} [{QualificationCode}],
 FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetName}ถูกเปลี่ยนเป็น{Target:AssetName}
 FormatText,{StrikeName} digestion,
@@ -2075,50 +2075,50 @@ FormatText,boost {AttributeName} by enchantment,เสริม{AttributeName}�
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
-FormatText,Congratulations on reaching the end of the {QuestName}!,
-FormatText,cripple {AttributeName},
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},ลดทุกความสามารถลง{AdjustmentDice}
-FormatText,decrease one ability by {AdjustmentDice},ลดหนึ่งความสามารถลง{AdjustmentDice}
-FormatText,diminish {ManaDice},
+FormatText,Congratulations on reaching the end of the {QuestName}!,ยินดีด้วยคุณได้มาถึงจุดสิ้นสุดของ {QuestName} แล้ว!
+FormatText,cripple {AttributeName},พิการด้าน{AttributeName}
+FormatText,decrease {AttributeName} by {AdjustmentDice},ลด{AttributeName}ลง {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},ลดทุกทักษะลง {AdjustmentDice}
+FormatText,decrease one ability by {AdjustmentDice},ลดหนึ่งทักษะลง {AdjustmentDice}
+FormatText,diminish {ManaDice},มานาลดลง {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},
-FormatText,energise {ManaDice},
-FormatText,Equip {CharacterName},
+FormatText,energise {ManaDice},ฟื้นฟู {ManaDice} มานา
+FormatText,Equip {CharacterName},สวมใส่ {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,
-FormatText,Feed which item to {CharacterName}?,จะเอาไอเท็มไหนให้{CharacterName}กิน?
-FormatText,from {Cause},
+FormatText,Feed which item to {CharacterName}?,จะเอาไอเท็มไหนให้ {CharacterName} กิน?
+FormatText,from {Cause},จาก{Cause}
 FormatText,gain {Percent}% {ElementName} resistance,ได้รับการต้านทาน{ElementName}{Percent}%
 FormatText,gain {TalentName} talent,ได้รับพรสวรรค์{TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}",
-FormatText,Hail {PlayerHandle}!,
+FormatText,Hail {PlayerHandle}!,จงสรรเสริญ {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
-FormatText,heal {LifeDice},
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,heal {LifeDice},รักษา {LifeDice} พลังชีวิต
+FormatText,increase {AttributeName} by {AdjustmentDice},เพิ่ม{AttributeName}ขึ้น {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},เพิ่มทุกทักษะขึ้น {AdjustmentDice}
+FormatText,increase one ability by {AdjustmentDice},เพิ่มหนึ่งทักษะขึ้น {AdjustmentDice}
 FormatText,level {Depth},นที่ {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{EntityName}{SpecialName}{GenderName}อาชีพ{ClassName}เลเวล {Level}
-FormatText,levels {From}-{To},
-FormatText,levels {Number}+,
+FormatText,levels {From}-{To},จากชั้น{From}ถึง{To}
+FormatText,levels {Number}+,เพิ่ม {Number} เลเวล
 FormatText,LOCKED {GATENAME},{GATENAME}ถูกล็อค
-FormatText,not {EffectProperty},
+FormatText,not {EffectProperty},ไม่{EffectProperty}
 FormatText,range {Dice},ระยะ{Dice}
-FormatText,RANKED #{RankNumber},
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
-FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName},{CharacterDescription}คืนชีพแล้ว"
+FormatText,RANKED #{RankNumber},อันดับที่ {RankNumber}
+FormatText,replenish life from {Percent}%,ฟื้นฟูพลังชีวิต {Percent}%
+FormatText,replenish mana from {Percent}%,ฟื้นฟูพลังมานา {Percent}%
+FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName} {CharacterDescription}คืนชีพแล้ว
 FormatText,retaliate {Chance} {AttackType},
 FormatText,retaliate {Chance} on death {AttackType},
 FormatText,retaliate {Chance} on hit {AttackType},
 FormatText,revenant {CharacterName},
 FormatText,shoot {ItemName} {ElementName} {DamageDice},ยิง{ItemName}เป็น{ElementName}ความเสียหาย{DamageDice}
-FormatText,stuck {DurationDice},ติด{DurationDice}เทิร์น
+FormatText,stuck {DurationDice},ติด {DurationDice} เทิร์น
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName}ระเบิดพลัง{ExplosionName}!
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,การกระทำอันชั่วร้ายนี้จะทำให้คุณสูญเสียชื่อเสียงทั้งหมด คุณแน่ใจรึเปล่าว่าต้องการจะคืนชีพ{CharacterName}?
 FormatText,Throw {AssetName} which direction?,ขว้าง{AssetName}ไปทางไหน?
 FormatText,TOO {AttributeBad},{AttributeBad}เกินไป
-FormatText,transient {PropertyName} {DurationDice},สถานะชั่วคราว{PropertyName} {DurationDice}
-FormatText,transmute items to {MaterialName},
+FormatText,transient {PropertyName} {DurationDice},เป็นสถานะชั่วคราว{PropertyName} {DurationDice} เทิร์น
+FormatText,transmute items to {MaterialName},แปรธาตุไอเท็มเป็น{MaterialName}
 FormatText,trigger {Dice} times,กระตุ้นได้{Dice}ครั้ง
 FormatText,unless resists {ElementName},เว้นแต่จะต้านทาน{ElementName}ได้
 FormatText,unless target has {PropertyName},เว้นแต่เป้าหมายจะมี{PropertyName}
@@ -2146,24 +2146,24 @@ GenderName,female,เพศหญิง
 GenderName,male,เพศชาย
 GenderName,neuter,ไม่มีเพศ
 GenderName,non-binary,อื่นๆ
-GenerationType,module,เกณฑ์
+GenerationType,module,โหมด
 GenerationType,quest,ภารกิจ
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,
-GroundName,chasm,
+GroundName,chasm,รอยแยก
 GroundName,dirt floor,พื้นดิน
 GroundName,grass,หญ้า
 GroundName,hive floor,ฟื้นรวงผึ้ง
 GroundName,ice,น้ำแข็ง
 GroundName,lava,ลาวา
 GroundName,marble floor,ฟื้นหินอ่อน
-GroundName,metal floor,
-GroundName,moss,
+GroundName,metal floor,พื้นเหล็ก
+GroundName,moss,ตะไคร่
 GroundName,obsidian floor,พื้นอ๊อบซีเดี้ยน
-GroundName,sand,
+GroundName,sand,ทราย
 GroundName,stone corridor,ระเบียงหิน
 GroundName,stone floor,พื้นหิน
 GroundName,water,น้ำ
-GroundName,wooden floor,
+GroundName,wooden floor,พื้นไม้
 HordeName,ant,มด
 HordeName,ape,วานร
 HordeName,bat,ค้างคาว
@@ -2191,7 +2191,7 @@ HordeName,louse,เหา
 HordeName,mane,วิญญาณ
 HordeName,mangler,
 HordeName,migo,
-HordeName,mould,
+HordeName,mould,เชื้อรา
 HordeName,ogre,ยักษ์
 HordeName,orc,ออร์ค
 HordeName,rat,หนู
@@ -2339,13 +2339,13 @@ ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,
 ItemDescription,Zapping it at a wall creates a big tunnel.,
 ItemName,agate,หินโมรา
-ItemName,aklys,
+ItemName,aklys,อาคลิส
 ItemName,alchemy smock,ผ้ากันเปื้อนวิทยา
 ItemName,amber,อำพัน
 ItemName,amethyst,ไพลิน
 ItemName,amulet of change,เครื่องรางแห่งการเปลี่ยนแปลง
 ItemName,amulet of drain resistance,เครื่องรางต้านทานการดูดซับ
-ItemName,amulet of ESP,
+ItemName,amulet of ESP,เครื่องรางแห่งการมองทะลุ
 ItemName,amulet of flying,เครื่องรางแห่งการบิน
 ItemName,amulet of life saving,เครื่องรางแห่งการช่วยชีวิต
 ItemName,amulet of nada,เครื่องรางเปล่าๆ
@@ -2355,41 +2355,41 @@ ItemName,amulet of unchanging,เครื่องรางแห่งคว�
 ItemName,amulet of vitality,เครื่องรางแห่งกำลังวังชา
 ItemName,amulet versus poison,เครื่องรางต้านพิษ
 ItemName,amulet versus stone,เครื่องรางต้านหิน
-ItemName,Ancient Katana,
-ItemName,animal corpse,
+ItemName,Ancient Katana,ดาบคาตานะโบราณ
+ItemName,animal corpse,ศพของสัตว์
 ItemName,apple,แอปเปิ้ล
 ItemName,aquamarine,อะความารีน
 ItemName,arrow,ลูกธนู
 ItemName,assault rifle,ปืนไรเฟิลจู่โจม
-ItemName,athame,
-ItemName,Aurigage,
+ItemName,athame,มีดสั้นสองคม
+ItemName,Aurigage,Aurigage
 ItemName,auto shotgun,ปืนลูกซองอัตโนมัติ
 ItemName,axe,ขวาน
 ItemName,Backpack,กระเป๋าสะพายหลัง
-ItemName,bag of holding,
-ItemName,bag of tricks,
+ItemName,bag of holding,ถุงแห่งการครอบครอง
+ItemName,bag of tricks,ถุงแห่งกลลับ
 ItemName,banana,กล้วย
 ItemName,banded mail,เกราะรัด
-ItemName,bardiche,
-ItemName,battle robe,
+ItemName,bardiche,ขวานด้ามยาว
+ItemName,battle robe,ผ้าคลุมออกรบ
 ItemName,battle-axe,ขวานรบ
 ItemName,beartrap,กับดักหมี
 ItemName,bec de corbin,
-ItemName,bell of harmony,
+ItemName,bell of harmony,ระฆังแห่งความสมานฉันท์
 ItemName,bell of resources,ระฆังแห่งทรัพยากร
 ItemName,bell of secrets,ระฆังแห่งความลับ
-ItemName,bell of strife,
-ItemName,bill-guisarme,
+ItemName,bell of strife,ระฆังแห่งความขัดแย้ง
+ItemName,bill-guisarme,หอกปลายขวาน
 ItemName,black dragon scale mail,เกราะเกล็ดมังกรดำ
 ItemName,black dragon scales,เกล็ดมังกรดำ
-ItemName,black glass bauble,
+ItemName,black glass bauble,เครื่องประดับแก้วสีดำ
 ItemName,black opal,มุกดาสีดำ
 ItemName,Blinderäg,
 ItemName,blindfold,ที่ปิดตา
 ItemName,blowgun,หลอดเป่าแล่
-ItemName,blue dragon scale mail,
+ItemName,blue dragon scale mail,เกราะเกล็ดมังกรฟ้า
 ItemName,blue dragon scales,เกล็ดมังกรฟ้า
-ItemName,blue glass bauble,
+ItemName,blue glass bauble,เครื่องประดับแก้วสีน้ำเงิน
 ItemName,book of acid stream,หนังสือแห่งไอกรด
 ItemName,book of animate dead,หนังสือแห่งการคืนชีพสิ่งไม่มีชีวิต
 ItemName,book of animate object,หนังสือแห่งการควบคุมวัตถุ
@@ -2397,12 +2397,12 @@ ItemName,book of bind undead,
 ItemName,book of blank paper,หนังสือกระดาษเปล่า
 ItemName,book of blinking,หนังสือแห่งการเคลื่อนที่พริบตา
 ItemName,book of cancellation,หนังสือแห่งการยกเลิก
-ItemName,book of charm,
-ItemName,book of clairvoyance,
-ItemName,book of cone of cold,
+ItemName,book of charm,หนังสือแห่งความลุ่มหลง
+ItemName,book of clairvoyance,หนังสือแห่งตาทิพย์
+ItemName,book of cone of cold,หนังสือแห่งคลื่นความเย็น
 ItemName,book of confusion,หนังสือแห่งความสับสน
-ItemName,book of create familiar,
-ItemName,book of crushing sphere,
+ItemName,book of create familiar,หนังสือแห่งการเสกสัตว์เลี้ยง
+ItemName,book of crushing sphere,หนังสือแห่งก้อนพลังแรงบด
 ItemName,book of curing,หนังสือแห่งการรักษา
 ItemName,book of darkness,หนังสือแห่งความมืด
 ItemName,book of deflection,หนังสือแห่งการตรวจสอบ
@@ -2411,51 +2411,51 @@ ItemName,book of detect monsters,หนังสือแห่งการต�
 ItemName,book of detect treasure,หนังแห่งการตรวจหาสมบัติ
 ItemName,book of detect unseen,หนังสือแห่งการตรวจหาสิ่งที่มองไม่เห็น
 ItemName,book of dig,หนังสือแห่งการขุด
-ItemName,book of disintegrate,
+ItemName,book of disintegrate,หนังสือแห่งการย่อยสลาย
 ItemName,book of drain life,หนังสือแห่งการสูบชีวิต
 ItemName,book of extra healing,หนังสือแห่งการฟื้นฟูพิเศษ
 ItemName,book of fear,หนังสือแห่งความกลัว
 ItemName,book of finger of death,หนังสือแห่งนิ้วแห่งความตาย
 ItemName,book of fireball,หนังสือแห่งลูกบอลเพลิง
-ItemName,book of flaming sphere,
+ItemName,book of flaming sphere,หนังสือแห่งก้อนเพลิง
 ItemName,book of force bolt,
-ItemName,book of freezing sphere,
+ItemName,book of freezing sphere,หนังสือแห่งก้อนความเย็น
 ItemName,book of full healing,หนังสือแห่งการฟื้นฟูเต็ม
 ItemName,book of haste,หนังสือแห่งความรวดเร็ว
 ItemName,book of healing,หนังสือแห่งการฟื้นฟู
-ItemName,book of ice storm,
+ItemName,book of ice storm,หนังสือแห่งพายุน้ำแข็ง
 ItemName,book of identify,หนังสือแห่งการระบุ
 ItemName,book of invisibility,หนังสือแห่งการล่องหน
 ItemName,book of jumping,หนังสือแห่งการกระโดด
-ItemName,book of knock,
+ItemName,book of knock,หนังสือแห่งการเคาะ
 ItemName,book of levitation,หนังสือแห่งการลอย
 ItemName,book of light,หนังสือแห่งแสงสว่าง
 ItemName,book of lightning bolt,หนังสือแห่งสายฟ้า
 ItemName,book of living wall,หนังสือแห่งกำแพงมีชีวิต
 ItemName,book of magic mapping,หนังสือแห่งเวททำแผนที่
 ItemName,book of magic missile,หนังสือแห่งลูกศรเวทมนตร์
-ItemName,book of phasing,
-ItemName,book of poison blast,
-ItemName,book of polymorph,กลายร่าง
+ItemName,book of phasing,หนังสือแห่งการทะลุ
+ItemName,book of poison blast,หนังสือแห่งระเบิดพิษ
+ItemName,book of polymorph,หนังสือแห่งการกลายร่าง
 ItemName,book of raise dead,หนังสือแห่งการคืนชีพคนตาย
 ItemName,book of regenerate,หนังสือแห่งการฟื้นฟูพลังชีวิต
 ItemName,book of remove curse,หนังสือแห่งการถอนคำสาป
 ItemName,book of restoration,หนังสือแห่งการฟื้นฟูความสามารถ
-ItemName,book of shocking sphere,
+ItemName,book of shocking sphere,หนังสือแห่งก้อนไฟฟ้า
 ItemName,book of sleep,หนังสือแห่งการนอนหลับ
 ItemName,book of slow,หนังสือแห่งความเชื่องช้า
 ItemName,book of soaking sphere,
 ItemName,book of summoning,หนังสือแห่งการอัญเชิญ
-ItemName,book of telekinesis,
+ItemName,book of telekinesis,หนังสือแห่งพลังโทรจิต
 ItemName,book of teleport away,หนังสือแห่งการเทเลพอร์ตไป
-ItemName,book of toxic spray,
+ItemName,book of toxic spray,หนังสือแห่งการฉีดพิษ
 ItemName,book of turn undead,
-ItemName,book of walling,
-ItemName,book of wizard lock,
+ItemName,book of walling,หนังสือแห่งการสร้างกำแพง
+ItemName,book of wizard lock,หนังสือแห่งการล็อคเวทมนตร์
 ItemName,boomerang,บูมเมอแรง
 ItemName,bow,ธนู
-ItemName,brass bugle,
-ItemName,brass knuckles,
+ItemName,brass bugle,แตรเดี่ยวทองเหลือง
+ItemName,brass knuckles,สนับมือทองเหลือง
 ItemName,broadsword,ดาบใหญ่
 ItemName,bronze bell,ระฆังสำริด
 ItemName,bronze plate mail,
@@ -2463,7 +2463,7 @@ ItemName,bullet,ลูกกระสุน
 ItemName,bullwhip,
 ItemName,caltrops,ขวาก
 ItemName,can of grease,
-ItemName,candy bar,
+ItemName,candy bar,ขนมแท่ง
 ItemName,Carapace,
 ItemName,carrot,แครอท
 ItemName,chain barding,
@@ -2504,7 +2504,7 @@ ItemName,dark elven short sword,ดาบสั้นดาร์คเอลฟ
 ItemName,dart,ลูกดอก
 ItemName,Deadwood,
 ItemName,Deagle,
-ItemName,deep dragon scale mail,
+ItemName,deep dragon scale mail,เกราะเกล็ดมังกรลึกลับ
 ItemName,deep dragon scales,เกล็ดมังกรลึกลับ
 ItemName,dented pot,
 ItemName,detonation key,
@@ -2575,7 +2575,7 @@ ItemName,Gold Key,กุญแจทอง
 ItemName,great dagger,สุดยอดมีดสั้น
 ItemName,green dragon scale mail,เกราะเกล็ดมังกรเขียว
 ItemName,green dragon scales,เกล็ดมังกรเขียว
-ItemName,green glass bauble,
+ItemName,green glass bauble,เครื่องประดับแก้วสีเขียว
 ItemName,grenade launcher,เครื่องยิงระเบิด
 ItemName,Grimtooth,
 ItemName,guisarme,
@@ -2594,7 +2594,7 @@ ItemName,hermit robe,
 ItemName,high boots,
 ItemName,holy wafer,
 ItemName,horn of plenty,
-ItemName,horseshoe,
+ItemName,horseshoe,เกือกม้า
 ItemName,huge chunk of meat,
 ItemName,hunting rifle,ไรเฟิลล่าสัตว์
 ItemName,ice box,
@@ -2616,8 +2616,8 @@ ItemName,katar,
 ItemName,kelp frond,
 ItemName,knife,มีด
 ItemName,k-ration,
-ItemName,lab coat,
-ItemName,lance,
+ItemName,lab coat,เสื้อกาวน์
+ItemName,lance,หอกยาว
 ItemName,land mine,ระเบิดวาง
 ItemName,lantern,ตะเกียง
 ItemName,large box,กล่องใหญ่
@@ -2630,29 +2630,29 @@ ItemName,leather drum,
 ItemName,leather gloves,
 ItemName,leather jacket,
 ItemName,lembas wafer,
-ItemName,lenses,
-ItemName,levitation boots,
-ItemName,lock pick,
+ItemName,lenses,เลนส์
+ItemName,levitation boots,รองเท้าลอยได้
+ItemName,lock pick,ที่สะเดาะ
 ItemName,long sword,ดาบยาว
 ItemName,low boots,
 ItemName,lucern hammer,
 ItemName,lump of royal jelly,
-ItemName,mace,
-ItemName,magic bugle,
+ItemName,mace,ขวานหนาม
+ItemName,magic bugle,แตรเวทมนตร์
 ItemName,magic candle,เทียนเวทมนตร์
-ItemName,magic figurine,
-ItemName,magic flute,
-ItemName,magic harp,
-ItemName,magic horseshoe,
-ItemName,magic lamp,
-ItemName,magic marker,
-ItemName,magic whistle,
+ItemName,magic figurine,หุ่นสลักเวทมนตร์
+ItemName,magic flute,ขุ่ยเวทมนตร์
+ItemName,magic harp,พิณเวทมนตร์
+ItemName,magic horseshoe,เกือกม้าเวทมนตร์
+ItemName,magic lamp,ตะเกียงเวทมนตร์
+ItemName,magic marker,ที่ทำเครื่องหมายเวทมนตร์
+ItemName,magic whistle,นกหวีดเวทมนตร์
 ItemName,Magistrator,
 ItemName,main gauche,
-ItemName,Masamune,
-ItemName,Master Key,กุญแจผี
+ItemName,Masamune,มาซามุเนะ
+ItemName,Master Key,กุญแจหลัก
 ItemName,Maulfrost,
-ItemName,meat ring,
+ItemName,meat ring,แหวนเนื้อ
 ItemName,meat stick,เนื้อแท่ง
 ItemName,meatball,ลูกชิ้น
 ItemName,melon,เมล่อน
@@ -2677,14 +2677,14 @@ ItemName,mithril two-handed sword,ดาบมิธริลถือสอง�
 ItemName,mithril whip,แส้มิธริล
 ItemName,morning star,
 ItemName,mummy wrapping,
-ItemName,Muramasa,
+ItemName,Muramasa,มุรามาสะ
 ItemName,mushroom,เห็ด
 ItemName,mute earrings,
 ItemName,nunchaku,
-ItemName,obsidian,
+ItemName,obsidian,ออบซิเดียน
 ItemName,oil lamp,ตะเกียงใช้น้ำมัน
-ItemName,oilskin cloak,
-ItemName,opal,
+ItemName,oilskin cloak,ผ้าคลุมเคลือบมัน
+ItemName,opal,โอปอล
 ItemName,orange,ส้ม
 ItemName,orange dragon scale mail,เสื้อเกราะเกล็ดมังกรส้ม
 ItemName,orange dragon scales,เกล็ดมังกรส้ม
@@ -2699,18 +2699,18 @@ ItemName,orcish ring mail,เสื้อเกราะออร์ค
 ItemName,orcish shield,โล่ออร์ค
 ItemName,orcish short sword,ดาบสั้นออร์ค
 ItemName,orcish spear,หอกออร์ค
-ItemName,pancake,
-ItemName,Pandora's Box,
+ItemName,pancake,แพนเค้ก
+ItemName,Pandora's Box,กล่องแพนดอร่า
 ItemName,panic boots,
 ItemName,partisan,
-ItemName,pear,
-ItemName,phantom key,
+ItemName,pear,ลูกแพร์
+ItemName,phantom key,กุญแจผี
 ItemName,Philosophers Stone,
-ItemName,pick-axe,
-ItemName,pistol,
+ItemName,pick-axe,ที่ขุดเหมือง
+ItemName,pistol,ปืนพก
 ItemName,plate barding,
 ItemName,plate mail,
-ItemName,poison dart,
+ItemName,poison dart,ลูกดอกยาพิษ
 ItemName,porter,
 ItemName,potion of acid,โพชั่นกรด
 ItemName,potion of affliction,โพชั่นความทุกข์
@@ -2751,39 +2751,39 @@ ItemName,ranseur,
 ItemName,rapier,กระบี่
 ItemName,Ravenbow,
 ItemName,red dragon scale mail,เกราะเล็ดมังกรแดง
-ItemName,red dragon scales,เกล็ดมังกร
+ItemName,red dragon scales,เกล็ดมังกรแดง
 ItemName,red glass bauble,เครื่องประดับแก้วสีแดง
 ItemName,ring mail,เสื้อเกราะ
 ItemName,ring of accuracy,แหวนแห่งความแม่นยำ
-ItemName,ring of adornment,
-ItemName,ring of aggravation,
+ItemName,ring of adornment,แหวนประดับ
+ItemName,ring of aggravation,แหวนแห่งความก้าวร้าว
 ItemName,ring of berserking,แหวนแห่งความบ้าคลั่ง
 ItemName,ring of cold resistance,แหวนต้านทานความเย็น
 ItemName,ring of conflict,แหวนแห่งความขัดแย้ง
-ItemName,ring of constitution,
-ItemName,ring of dexterity,
-ItemName,ring of fire resistance,
+ItemName,ring of constitution,แหวนแห่งกำลังกาย
+ItemName,ring of dexterity,แหวนแห่งความคล่องแคล่ว
+ItemName,ring of fire resistance,แหวนแห่งการต้านทานไฟ
 ItemName,ring of free action,แหวนแห่งความอิสระ
 ItemName,ring of hunger,แหวนแห่งความหิวโหย
-ItemName,ring of impact,
-ItemName,ring of intelligence,
-ItemName,ring of invisibility,
+ItemName,ring of impact,แหวนแห่งแรงกระแทก
+ItemName,ring of intelligence,แหวนแห่งสติปัญญา
+ItemName,ring of invisibility,แหวนแห่งการล่องหน
 ItemName,ring of levitation,แหวนแห่งการล่องลอย
-ItemName,ring of naught,
-ItemName,ring of poison resistance,
+ItemName,ring of naught,แหวนเปล่าๆ
+ItemName,ring of poison resistance,แหวนแห่งการต้านทานพิษ
 ItemName,ring of polymorph,แหวนแห่งการกลายร่าง
 ItemName,ring of polymorph control,แหวนควบคุมการกลายร่าง
-ItemName,ring of protection,
+ItemName,ring of protection,แหวนแห่งการป้องกัน
 ItemName,ring of regeneration,แหวนแห่งการฟื้นฟู
 ItemName,ring of searching,แหวนแห่งการค้นพบ
-ItemName,ring of see invisible,
-ItemName,ring of shock resistance,
+ItemName,ring of see invisible,แหวนแห่งการมองสิ่งที่มองไม่เห็น
+ItemName,ring of shock resistance,แหวนแห่งการต้านทานไฟฟ้า
 ItemName,ring of sleeping,แหวนแห่งการหลับไหล
 ItemName,ring of slow digestion,แหวนแห่งการย่อยอาหารช้า
-ItemName,ring of stealth,
-ItemName,ring of strength,
-ItemName,ring of sustain ability,
-ItemName,ring of telekinesis,
+ItemName,ring of stealth,แหวนแห่งการหลบซ่อน
+ItemName,ring of strength,แหวนแห่งความแข็งแกร่ง
+ItemName,ring of sustain ability,แหวนแห่งการคงความสามารถ
+ItemName,ring of telekinesis,แหวนแห่งพลังโทรจิต
 ItemName,ring of teleport control,แหวนควบคุมการเทเลพอร์ต
 ItemName,ring of teleportation,แหวนแห่งการเทเลพอร์ต
 ItemName,ring of warning,แหวนแห่งการเตือน
@@ -2806,86 +2806,86 @@ ItemName,sawn-off shotgun,
 ItemName,scale mail,
 ItemName,scalpel,
 ItemName,scimitar,
-ItemName,scroll of air,
-ItemName,scroll of amnesia,
-ItemName,scroll of blank paper,
+ItemName,scroll of air,คัมภีร์แห่งอากาศ
+ItemName,scroll of amnesia,คัมภีร์แห่งความหลงลืม
+ItemName,scroll of blank paper,คัมภีร์แห่งกระดาษเปล่า
 ItemName,scroll of charging,
-ItemName,scroll of confusion,
-ItemName,scroll of destruction,
-ItemName,scroll of devouring,
-ItemName,scroll of earth,
-ItemName,scroll of enchantment,
-ItemName,scroll of enlightenment,
-ItemName,scroll of entrapment,
-ItemName,scroll of fire,
-ItemName,scroll of food detection,
-ItemName,scroll of gathering,
-ItemName,scroll of genocide,
-ItemName,scroll of gold detection,
-ItemName,scroll of ice,
-ItemName,scroll of identify,
-ItemName,scroll of light,
-ItemName,scroll of magic mapping,
-ItemName,scroll of murder,
-ItemName,scroll of punishment,
-ItemName,scroll of raise dead,
-ItemName,scroll of remove curse,
-ItemName,scroll of replication,
-ItemName,scroll of summoning,
-ItemName,scroll of taming,
-ItemName,scroll of teleportation,
-ItemName,scroll of terror,
-ItemName,scroll of training,
-ItemName,scroll of tranquillity,
-ItemName,scroll of water,
-ItemName,scythe,
+ItemName,scroll of confusion,คัมภีร์แห่งความสับสน
+ItemName,scroll of destruction,คัมภีร์แห่งการทำลาย
+ItemName,scroll of devouring,คัมภีร์แห่งการกลืนกิน
+ItemName,scroll of earth,คัมภีร์แห่งดิน
+ItemName,scroll of enchantment,คัมภีร์แห่งอาคม
+ItemName,scroll of enlightenment,คัมภีร์แห่งความหยั่งรู้
+ItemName,scroll of entrapment,คัมภีร์แห่งการกักขัง
+ItemName,scroll of fire,คัมภีร์แห่งไฟ
+ItemName,scroll of food detection,คัมภีร์แห่งการค้นหาอาหาร
+ItemName,scroll of gathering,คัมภีร์แห่งการรวบรวม
+ItemName,scroll of genocide,คัมภีร์แห่งการล้างเผ่าพันธุ์
+ItemName,scroll of gold detection,คัมภีร์แห่งการค้นหาทอง
+ItemName,scroll of ice,คัมภีร์แห่งน้ำแข็ง
+ItemName,scroll of identify,คัมภีร์แห่งการระบุ
+ItemName,scroll of light,คัมภีร์แห่งแสง
+ItemName,scroll of magic mapping,คัมภีร์แห่งแผนที่เวทมนตร์
+ItemName,scroll of murder,คัมภีร์แห่งการฆาตกรรม
+ItemName,scroll of punishment,คัมภีร์แห่งการลงทัณฑ์
+ItemName,scroll of raise dead,คัมภีร์แห่งการคืนชีพ
+ItemName,scroll of remove curse,คัมภีร์แห่งการถอนคำสาป
+ItemName,scroll of replication,คัมภีร์แห่งการทำสำเนา
+ItemName,scroll of summoning,คัมภีร์แห่งการอัญเชิญ
+ItemName,scroll of taming,คัมภีร์แห่งการเชื่อฟัง
+ItemName,scroll of teleportation,คัมภีร์แห่งการเทเลพอร์ต
+ItemName,scroll of terror,คัมภีร์แห่งการความสยองขวัญ
+ItemName,scroll of training,คัมภีร์แห่งการฝึกฝน
+ItemName,scroll of tranquillity,คัมภีร์แห่งสันติสุข
+ItemName,scroll of water,คัมภีร์แห่งน้ำ
+ItemName,scythe,เคียว
 ItemName,shades,
-ItemName,Shadow Key,
+ItemName,Shadow Key,กุญแจเงา
 ItemName,shield of reflection,
-ItemName,shimmering dragon scale mail,
-ItemName,shimmering dragon scales,
+ItemName,shimmering dragon scale mail,เกราะเกล็ดมังกรหลากสี
+ItemName,shimmering dragon scales,เกล็ดมังกรหลากสี
 ItemName,short sword,
 ItemName,shotgun,
 ItemName,shotgun shell,
 ItemName,shuriken,
 ItemName,sickle,
-ItemName,silver arrow,
-ItemName,silver axe,
-ItemName,silver bullet,
-ItemName,silver crossbow bolt,
-ItemName,silver dagger,
-ItemName,silver dragon scale mail,
-ItemName,silver dragon scales,
-ItemName,silver heavy hammer,
-ItemName,Silver Key,
-ItemName,silver lance,
-ItemName,silver long sword,
-ItemName,silver mace,
-ItemName,silver sabre,
-ItemName,silver short sword,
-ItemName,silver spear,
-ItemName,silver two-handed sword,
-ItemName,skeleton key,
-ItemName,slime mould,
+ItemName,silver arrow,ลูกธนูเงิน
+ItemName,silver axe,ขวานเงิน
+ItemName,silver bullet,กระสุนเงิน
+ItemName,silver crossbow bolt,ลูกหน้าไม้เงิน
+ItemName,silver dagger,มีดสั้นเงิน
+ItemName,silver dragon scale mail,เกราะเกล็ดมังกรเงิน
+ItemName,silver dragon scales,เกล็ดมังกรเงิน
+ItemName,silver heavy hammer,ค้อนหนักเงิน
+ItemName,Silver Key,กุญแจเงิน
+ItemName,silver lance,หอกยาวเงิน
+ItemName,silver long sword,ดาบยาวเงิน
+ItemName,silver mace,ขวานหนามเงิน
+ItemName,silver sabre,ดาบเงิน
+ItemName,silver short sword,ดาบสั้นเงิน
+ItemName,silver spear,หอกเงิน
+ItemName,silver two-handed sword,ดาบถือสองมือเงืน
+ItemName,skeleton key,กุญแจกระดูก
+ItemName,slime mould,เมือกเชื้อรา
 ItemName,sling,หนังสติ๊ก
 ItemName,small shield,
-ItemName,sniper rifle,
+ItemName,sniper rifle,ปืนสไนเปอร์
 ItemName,spear,หอก
 ItemName,spectacles,
-ItemName,speed boots,
+ItemName,speed boots,รองเท้าวิ่ง
 ItemName,spetum,
 ItemName,splint mail,เกราะเผือกไม้
 ItemName,sprig of wolfsbane,
 ItemName,Stamped Letter,
 ItemName,stick of dynamite,
 ItemName,stiletto,
-ItemName,stone club,
-ItemName,studded leather armour,
+ItemName,stone club,กระบองหิน
+ItemName,studded leather armour,เกราะหนังติดกระดุม
 ItemName,submachine gun,ปืนอัตโนมัติ
 ItemName,Sunsword,
 ItemName,Talaria,
 ItemName,The Hero,วีรบุรุษ
-ItemName,thunder staff,
+ItemName,thunder staff,ไม้เท้าสายฟ้า
 ItemName,tin,ดีบุก
 ItemName,tin whistle,
 ItemName,tinning kit,
@@ -2902,7 +2902,7 @@ ItemName,two-handed sword,ดาบสองมือ
 ItemName,unicorn horn,เขายูนิคอร์น
 ItemName,vegetable corpse,
 ItemName,Verimurus,
-ItemName,violet glass bauble,
+ItemName,violet glass bauble,เครื่องประดับแก้วสีม่วง
 ItemName,Voltaic,
 ItemName,Vorpal Blade,
 ItemName,voulge,
@@ -2942,9 +2942,9 @@ ItemName,wand of undead turning,
 ItemName,war club,กระบองสงคราม
 ItemName,war hammer,ค้อนสงคราม
 ItemName,wax candle,
-ItemName,white dragon scale mail,
-ItemName,white dragon scales,
-ItemName,white glass bauble,
+ItemName,white dragon scale mail,เกราะเกล็ดมังกรขาว
+ItemName,white dragon scales,เกล้ดมังกรขาว
+ItemName,white glass bauble,เครื่องประดับแก้วสีขาว
 ItemName,winged boots,
 ItemName,Witherloch,
 ItemName,wooden flute,
@@ -2952,10 +2952,10 @@ ItemName,wooden harp,
 ItemName,wooden stake,
 ItemName,worm tooth,
 ItemName,ya,ลูกธนูญี่ปุ่น
-ItemName,yellow dragon scale mail,
-ItemName,yellow dragon scales,
-ItemName,yellow glass bauble,
-ItemName,yellowish brown glass bauble,
+ItemName,yellow dragon scale mail,เกราะเกล็ดมังกรเหลือง
+ItemName,yellow dragon scales,เกล็ดมังกรเหลือง
+ItemName,yellow glass bauble,เครื่องประดับแก้วสีเหลือง
+ItemName,yellowish brown glass bauble,เครื่องประดับแก้วสีน้ำตาลอมเหลือง
 ItemName,yumi,
 ItemType,amulet,เครื่องราง
 ItemType,bag,กระเป๋า
@@ -2996,7 +2996,7 @@ ItemType,thrown weapon,อาวุธขว้าง
 ItemType,tin,ดีบุก
 ItemType,tool,เครื่องมือ
 ItemType,wand,คทา
-KindName,angel,เทพ
+KindName,angel,ทูตสวรรค์
 KindName,bat,ค้างคาว
 KindName,beast,อสูร
 KindName,bird,นก
@@ -3017,7 +3017,7 @@ KindName,fairy,
 KindName,flayer,
 KindName,fungus,
 KindName,ghost,ผี
-KindName,giant,ยักษ์
+KindName,giant,ยักษ์ใหญ่
 KindName,gnoll,
 KindName,gnome,มนุษย์แคระ
 KindName,golem,โกเล็ม
@@ -3039,7 +3039,7 @@ KindName,military,ทหาร
 KindName,mimic,ตัวเลียนแบบ
 KindName,mummy,มัมมี่
 KindName,naga,
-KindName,ogre,
+KindName,ogre,ยักษ์
 KindName,orc,ออร์ค
 KindName,plasmoid,
 KindName,pudding,
@@ -3054,12 +3054,12 @@ KindName,umber,
 KindName,vampire,แวมไพร์
 KindName,vortex,
 KindName,worm,หนอน
-KindName,wraith,
+KindName,wraith,วิญญาณร้าย
 KindName,xan,
 KindName,zombie,ผีดิบ
 LiteralText,!MASTER MODE!,!โหมดแอดมิน!
 LiteralText,(2d6 instead of 2-12),
-LiteralText,(game information status text),
+LiteralText,(game information status text),(ข้อความสถานะของเกม)
 LiteralText,(not eligible for hall of fame),
 LiteralText,(recommended for AMOLED screens),
 LiteralText,(SUPPRESSED),
@@ -3080,8 +3080,8 @@ LiteralText,AFFLICTIONS,ความทุกข์
 LiteralText,alias?,
 LiteralText,ALL,ทั้งหมด
 LiteralText,ALL AT ONCE,ทั้งหมดในครั้งเดียว
-LiteralText,always,เสมอ
-LiteralText,AMBIENT SOUNDS,
+LiteralText,always,ทุกครั้ง
+LiteralText,AMBIENT SOUNDS,เสียงบรรยากาศ
 LiteralText,AMMO,กระสุน
 LiteralText,amnesia,ความจำเสื่อม
 LiteralText,AMNESIA,ความจำเสื่อม
@@ -3130,13 +3130,13 @@ LiteralText,Blink which direction?,เคลื่อนที่พริบต
 LiteralText,block,ป้องกัน
 LiteralText,BLOCKED,ป้องกัน
 LiteralText,BLOCKS,ป้องกัน
-LiteralText,BOONS,สวัสดิการ
-LiteralText,boost attack by enchantment,
-LiteralText,boost damage by enchantment,
-LiteralText,boost defence by enchantment,
-LiteralText,boost encumbrance by enchantment,
-LiteralText,boost speed by enchantment,
-LiteralText,boulders,
+LiteralText,BOONS,ผลประโยชน์
+LiteralText,boost attack by enchantment,เสริมพลังโจมตีด้วยอาคม
+LiteralText,boost damage by enchantment,เสริมความเสียหายด้วยอาคม
+LiteralText,boost defence by enchantment,เสริมพลังป้องกันด้วยอาคม
+LiteralText,boost encumbrance by enchantment,เสริมน้ำหนักที่แบกได้ด้วยอาคม
+LiteralText,boost speed by enchantment,เสริมความเร็วด้วยอาคม
+LiteralText,boulders,หินก้อนใหญ่
 LiteralText,bounces,กระดอน
 LiteralText,broken,พัง
 LiteralText,BROKEN,พัง
@@ -3154,8 +3154,8 @@ LiteralText,CAN'T MIMIC,เลียนแบบไม่ได้
 LiteralText,CAN'T MOUNT,ขี่ไม่ได้
 LiteralText,CAN'T REACH,ไปไม่ถึง
 LiteralText,CAN'T SEE,มองไม่เห็น
-LiteralText,CAN'T SLIDE,
-LiteralText,CAN'T TELEKINESIS,
+LiteralText,CAN'T SLIDE,ไม่สามารถไถลได้
+LiteralText,CAN'T TELEKINESIS,ไม่สามารถใช้พลังโทรจิตได้
 LiteralText,CAN'T THROW,ขว้างไม่ได้
 LiteralText,Cast,ร่าย
 LiteralText,CAST SPELLS,ร่ายเวท
@@ -3167,8 +3167,8 @@ LiteralText,Character,ตัวละคร
 LiteralText,CHARACTER,ตัวละคร
 LiteralText,characters,ตัวละคร
 LiteralText,charged items,
-LiteralText,charm,ทำเสน่ห์
-LiteralText,CHARMED,หลงเสน่ห์แล้ว
+LiteralText,charm,ลุ่มหลง
+LiteralText,CHARMED,หลงเสน่ห์
 LiteralText,Chat on Discord,พูดคุยกันใน Discord
 LiteralText,check for updates?,ตรวจหาการอัพเดตไหม?
 LiteralText,checking for updates,กำลังตรวจหาการอัพเดต
@@ -3176,14 +3176,14 @@ LiteralText,CHOOSE,เลือก
 LiteralText,Choose your quick action,เลือกทางลัดการกระทำ
 LiteralText,class,อาชีพ
 LiteralText,CLASSES,สายอาชีพ
-LiteralText,CLEAR,
+LiteralText,CLEAR,เคลียร์
 LiteralText,click to download,กดเพื่อดาวน์โหลด
 LiteralText,click to retry,กดเพื่อลองใหม่
 LiteralText,Click to send detected issues to the author,กดเพื่อส่งปัญหาที่พบให้ผู้สร้าง
 LiteralText,CLOSE,ปิด
-LiteralText,closed,
+LiteralText,closed,ปิดแล้ว
 LiteralText,CLOSED,ปิดแล้ว
-LiteralText,Coding on Medium,
+LiteralText,Coding on Medium,เขียนโปรแกรมบน Medium
 LiteralText,coins,เหรียญ
 LiteralText,companion,พรรคพวก
 LiteralText,compression,
@@ -3191,15 +3191,15 @@ LiteralText,CONCEAL,อำพราง
 LiteralText,CONCEALED,อำพรางแล้ว
 LiteralText,CONDUCT,การปฏิบัติ
 LiteralText,CONFIRM,ยืนยัน
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,
-LiteralText,Connect to game hosted by another player.,
+LiteralText,Congratulations on making it to the final level and defeating your nemesis.,ยินดีด้วยที่คุณสามารถมาถึงชั้นสุดท้ายและพิชิตศัตรูตัวฉกาจของคุณได้
+LiteralText,Connect to game hosted by another player.,เชื่อมต่อกับห้องของผู้เล่นคนอื่น
 LiteralText,CONSOLE,แผงควบคุม
 LiteralText,CONTACT,ติดต่อ
 LiteralText,Continue,เล่นต่อ
 LiteralText,CONTINUE,เล่นต่อ
 LiteralText,CONTROLLED,ควบคุมแล้ว
 LiteralText,conveyance,
-LiteralText,COPY,
+LiteralText,COPY,คัดลอก
 LiteralText,corpse,ศพ
 LiteralText,CRACK!,แตก!
 LiteralText,craft,งานฝีมือ
@@ -3210,7 +3210,7 @@ LiteralText,CRASH!,พัง!
 LiteralText,create,สร้าง
 LiteralText,CREATE BOULDER,สร้างหินก้อนใหญ่
 LiteralText,CREATE BRIDGE,สร้างสะพาน
-LiteralText,CREATE DOOR,
+LiteralText,CREATE DOOR,สร้างประตู
 LiteralText,CREATE ENTITY,สร้างสิ่งมีตัวตน
 LiteralText,CREATE FIXTURE,สร้างของประจำที่
 LiteralText,CREATE FLOOR,สร้างพื้น
@@ -3220,10 +3220,10 @@ LiteralText,CREATE SHOP,สร้างร้านค้า
 LiteralText,CREATE SHRINE,สร้างสถานที่บูชา
 LiteralText,CREATE TRAP,สร้างกับดัก
 LiteralText,CREATE WALL,สร้างกำแพง
-LiteralText,Create which direction?,สร้างไว้ทางไหน
+LiteralText,Create which direction?,สร้างไว้ทิศไหน
 LiteralText,CREDITS,เครดิต
 LiteralText,CROP,
-LiteralText,cursed,
+LiteralText,cursed,ต้องสาป
 LiteralText,CURSED,ต้องสาป
 LiteralText,CUSTOM,สร้างเอง
 LiteralText,CUSTOM HERO,วีรบุรุษที่ปรับแต่งเอง
@@ -3259,9 +3259,9 @@ LiteralText,DEVICES,อุปกรณ์
 LiteralText,Dhak Legacy,Dhak Legacy
 LiteralText,DIAGNOSTICS,การวินิจฉัย
 LiteralText,DID NOT RANK,ไม่ขึ้นแรงค์
-LiteralText,diet,
+LiteralText,diet,สิ่งที่กิน
 LiteralText,difficulty,ความยาก
-LiteralText,disable ambient sounds,
+LiteralText,disable ambient sounds,ปิดเสียงบรรยากาศ
 LiteralText,Disable auto save on transition,
 LiteralText,Disable button tap sounds,
 LiteralText,Disable conclusion boom,
@@ -3282,8 +3282,8 @@ LiteralText,DISMISS,เฉดหัวทิ้ง
 LiteralText,DISMOUNT,เลิกขี่
 LiteralText,Dismount which direction?,ลงทางไหน?
 LiteralText,Display dice rolls in the help,
-LiteralText,DIVINED,
-LiteralText,divined items,
+LiteralText,DIVINED,ศักดิ์สิทธิ์
+LiteralText,divined items,ไอเท็มศักดิ์สิทธิ์
 LiteralText,Do you want to save or quit this adventure?,คุณต้องการบันทึกหรือออกจากการผจญภัยหรือไม่?
 LiteralText,domestic,
 LiteralText,DONATE,บริจาค
@@ -3387,8 +3387,8 @@ LiteralText,HALL of FAME,โถงแห่งเกียรติยศ
 LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
 LiteralText,hatched by,ฟักโดย
 LiteralText,Having trouble finding the stairs down to the next level?,ทางบันไดลงไปชั้นล่างไม่เจอเหรอ?
-LiteralText,Help,
-LiteralText,HELP,ช่วยด้วย
+LiteralText,Help,ข้อมูลเพิ่มเติม
+LiteralText,HELP,ข้อมูลเพิ่มเติม
 LiteralText,HIDDEN,ซ่อนเร้น
 LiteralText,HIDE,ซ่อน
 LiteralText,hiding,ซ่อนตัว
@@ -3409,7 +3409,7 @@ LiteralText,immune to,ต้านทานต่อ
 LiteralText,immunities,ภูมิต้านทาน
 LiteralText,impact,
 LiteralText,IMPORT,นำเข้า
-LiteralText,Import a file,
+LiteralText,Import a file,นำเข้าข้อมูล
 LiteralText,IMPOSSIBLE,เป็นไปไม่ได้
 LiteralText,in both hands,สองมือ
 LiteralText,incarceration,
@@ -3456,15 +3456,15 @@ LiteralText,LEFT RING,แหวนข้างซ้าย
 LiteralText,LEVEL CHART,
 LiteralText,level//depth,ชั้นที่
 LiteralText,level//rank,เลเวล
-LiteralText,Lich Tower,
+LiteralText,Lich Tower,หอคอยแห่งลิช
 LiteralText,life,ชีวิต
 LiteralText,LIFE,ชีวิต
-LiteralText,Life represents your physical health and death occurs at zero.,
+LiteralText,Life represents your physical health and death occurs at zero.,พลังชีวิตหมายถึงสุขภาพร่างกายหากเหลือศูนย์เท่ากับตาย
 LiteralText,light,แสง
 LiteralText,LIGHT,แสง
 LiteralText,light radius,
 LiteralText,limits,ขีดจำกัด
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.",
+LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","เชื่อมต่อไปยังอุปกรณ์อื่นๆที่รองรับรวมไปถึง iOS, Android และ Windows"
 LiteralText,LIST,รายชื่อ
 LiteralText,lit,รายชื่อ
 LiteralText,LIVING,
@@ -3478,7 +3478,7 @@ LiteralText,LOOT,ของที่ปล้นมาได้
 LiteralText,LOSE KARMA,สูญเสียกรรม
 LiteralText,LOSE LEVEL,สูญเสียเลเวล
 LiteralText,LOSE NUTRITION,สูญเสียโภชนาการ
-LiteralText,lose skill,
+LiteralText,lose skill,สูญเสียทักษะ
 LiteralText,Lost Chambers,
 LiteralText,LOW MANA,มานาเหลือน้อย
 LiteralText,Ludios Cache,
@@ -3486,12 +3486,12 @@ LiteralText,MAIN,หลัก
 LiteralText,MAIN WIELD,ถือเป็นหลัก
 LiteralText,mana,มานา
 LiteralText,MANA,มานา
-LiteralText,Mana represents your energy supply for casting spells.,
+LiteralText,Mana represents your energy supply for casting spells.,มานาหมายถึงค่าพลังสำหรับการร่ายเวทมนตร์
 LiteralText,Map,แผนที่
 LiteralText,MAP,แผนที่
 LiteralText,material,วัสดุ
-LiteralText,Medusa Lair,
-LiteralText,melting,
+LiteralText,Medusa Lair,รังเมดูซ่า
+LiteralText,melting,ละลาย
 LiteralText,MENU,เมนู
 LiteralText,mercenary,ทหารรับจ้าง
 LiteralText,MIMIC,เลียนแบบ
@@ -3501,7 +3501,7 @@ LiteralText,Minetown,เมืองเหมือง
 LiteralText,missile,
 LiteralText,modifier,
 LiteralText,MOUNT,ขี่
-LiteralText,Mount which direction?,
+LiteralText,Mount which direction?,ขี่ทิศไหน?
 LiteralText,MOUNTED,ขี่แล้ว
 LiteralText,MOVE,ขยับเข้าไป
 LiteralText,move down one level,ลงไปหนึ่งชั้น
@@ -3526,9 +3526,9 @@ LiteralText,no resistances,ไม่มีการต้านทาน
 LiteralText,no talents,ไม่มีพรสวรรค์
 LiteralText,no transient effects,ไม่มีสถานะชั่วคราว
 LiteralText,non charged items,
-LiteralText,non divined items,
-LiteralText,non edible items,
-LiteralText,non enchanted items,
+LiteralText,non divined items,ไอเท็มทำให้ศักดิ์สิทธิ์ไม่ได้
+LiteralText,non edible items,ไอเท็มกินไม่ได้
+LiteralText,non enchanted items,ไอเท็มลงอาคมไม่ได้
 LiteralText,normal animations,อนิเมชั่นปกติ
 LiteralText,Nothing equipped or carried,ไม่ได้ใส่อะไรหรือไม่ได้ถืออะไร
 LiteralText,nothing happens,ไม่มีอะไรเกิดขึ้น
@@ -3556,18 +3556,18 @@ LiteralText,Pathos can be played in split-screen cooperative mode with up to fou
 LiteralText,pathos development @ paypal or stripe,
 LiteralText,Pathos is free to play and developed for the love of the game.,
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,
-LiteralText,Pathos might be the next evolution of Nethack.,
-LiteralText,penalty,
-LiteralText,penetrates,
+LiteralText,Pathos might be the next evolution of Nethack.,Pathos อาจเป็นนวัตกรรมของเกม Nethack
+LiteralText,penalty,โทษทัณฑ์
+LiteralText,penetrates,เจาะทะลุ
 LiteralText,per level,ต่อเลเวล
-LiteralText,permanent,
-LiteralText,PERSONAL,
+LiteralText,permanent,ถาวร
+LiteralText,PERSONAL,ส่วนตัว
 LiteralText,Pixel Sojourn,
 LiteralText,PLACE,ใส่
 LiteralText,PLACE ALL,ใส่ทั้งหมด
 LiteralText,platform,
-LiteralText,Play,
-LiteralText,Play a sound effect?,เปิดเสียงเอฟเฟ็กไหม?
+LiteralText,Play,เล่น
+LiteralText,Play a sound effect?,เปิดเสียงเอฟเฟคไหม?
 LiteralText,PLAYER,ผู้เล่น
 LiteralText,Please offer any clarification,
 LiteralText,Please provide your feedback,
@@ -3581,16 +3581,16 @@ LiteralText,PRAY,อธิษฐาน
 LiteralText,PRAYING,กำลังอธิษฐาน
 LiteralText,preservation,
 LiteralText,prevent revenant levels,
-LiteralText,prisoner,
+LiteralText,prisoner,นักโทษ
 LiteralText,probability,
 LiteralText,PROMOTE,
 LiteralText,PROPERTIES,
-LiteralText,PUNISHED,
-LiteralText,punishment?,
+LiteralText,PUNISHED,โดนลงโทษ
+LiteralText,punishment?,บทลงโทษไหน?
 LiteralText,PUNISHMENTS,บทลงโทษ
 LiteralText,QUANTITY,จำนวน
-LiteralText,QUICK LOAD,โหลดแบบเร็ว
-LiteralText,QUICK SAVE,บันทึกแบบเร็ว
+LiteralText,QUICK LOAD,โหลดบันทึกทันที
+LiteralText,QUICK SAVE,บันทึกทันที
 LiteralText,quit,ออก
 LiteralText,QUIT,ออก
 LiteralText,R//replica symbol,
@@ -3598,10 +3598,10 @@ LiteralText,race,เผ่า
 LiteralText,RACES,เผ่า
 LiteralText,random,สุ่ม
 LiteralText,RANDOM,สุ่ม
-LiteralText,random dungeon seed,
+LiteralText,random dungeon seed,สุ่มโลก
 LiteralText,rank,แรงค์
 LiteralText,rarity,ความหายาก
-LiteralText,rate & review on the app store,
+LiteralText,rate & review on the app store,ให้คะแนนและความคิดเห็นบนหน้าร้านค้า
 LiteralText,RE-ACT,กระทำอีกครั้ง
 LiteralText,Read books to learn spells,อ่านหนังสือเพื่อเรียนเวท
 LiteralText,READ!,อ่าน!
@@ -3609,23 +3609,23 @@ LiteralText,REALLY CRASH?,
 LiteralText,REAL-TIME,เวลาจริง
 LiteralText,RE-CAST,ร่ายอีกครั้ง
 LiteralText,Recommend Pathos,แนะนำ Pathos
-LiteralText,Redo,
+LiteralText,Redo,ย้อนกลับ
 LiteralText,RE-EQUIP,สวมใส่อีกครั้ง
 LiteralText,reflects,สะท้อน
 LiteralText,REGISTER,สมัครสมาชิก
-LiteralText,REGISTER PLAYER HANDLE,
-LiteralText,reinforced,
+LiteralText,REGISTER PLAYER HANDLE,ตั้งชื่อผู้เล่น
+LiteralText,reinforced,เสริมกำลัง
 LiteralText,REINFORCED,เสริมกำลัง
 LiteralText,REMOVE CURSE,ถอนคำสาป
 LiteralText,remove with,
 LiteralText,remove with boulder,
-LiteralText,REMOVE//container,เอาออก
-LiteralText,REMOVE//equipment,ถอด
+LiteralText,REMOVE//container,เอาออกจากที่ใส่ของ
+LiteralText,REMOVE//equipment,ถอดอุปกรณ์
 LiteralText,RENAME,เปลี่ยนชื่อ
 LiteralText,RENAME CHARACTER,เปลี่ยนชื่อตัวละคร
 LiteralText,RENAME ITEM,เปลี่ยนชื่อไอเท็ม
 LiteralText,RENAME MAP,เปลี่ยนชื่อแผนที่
-LiteralText,repel,
+LiteralText,repel,ต้านทาน
 LiteralText,replica,สำเนา
 LiteralText,requires the skill to pick locks,
 LiteralText,Re-roll,สุ่มใหม่
@@ -3635,7 +3635,7 @@ LiteralText,resistances,ต้านทาน
 LiteralText,RESISTS,ต้านทาน
 LiteralText,Rest,พักผ่อน
 LiteralText,REST,พักผ่อน
-LiteralText,Rest how many turns?,
+LiteralText,Rest how many turns?,พักกี่เทิร์น?
 LiteralText,restarting to update,รีสตาร์ตเพื่ออัพเดต
 LiteralText,RESTING,กำลังพักผ่อน
 LiteralText,RESTORED,เปลี่ยนสินค้าแล้ว
@@ -3647,34 +3647,34 @@ LiteralText,RETURN,กลับไป
 LiteralText,RE-USE,ใช้อีกครั้ง
 LiteralText,REVEAL,เปิดเผย
 LiteralText,REVEAL ALL MAPS,เปิดเผยแผนที่ทั้งหมด
-LiteralText,REVEAL THIS MAP,
-LiteralText,revealed,
+LiteralText,REVEAL THIS MAP,เปิดเผยแผนที่ชั้นนี้
+LiteralText,revealed,เปิดเผย
 LiteralText,REVERT,กลับสู่สภาพเดิม
 LiteralText,RIGHT RING,แหวนข้างขวา
 LiteralText,rigid,
-LiteralText,ROTATE,
+LiteralText,ROTATE,หมุน
 LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
 LiteralText,Sandbox Play,
-LiteralText,SANITY CHECK,
+LiteralText,SANITY CHECK,เช็คค่าสติ
 LiteralText,SAVE,บันทึก
 LiteralText,SAVE & QUIT,บันทึกและออก
 LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,นักผจญภัยที่บันทึกไว้
 LiteralText,SAVED BONES,
-LiteralText,school,
+LiteralText,school,ศาสตร์
 LiteralText,scrap,เศษ
 LiteralText,SCRAP,เศษ
-LiteralText,SEALED,
+LiteralText,SEALED,ผนึก
 LiteralText,Search,ค้นหา
-LiteralText,Search how many turns?,
+LiteralText,Search how many turns?,ค้นหากี่เทิร์น?
 LiteralText,SEARCHING,กำลังค้นหา
-LiteralText,secret,
+LiteralText,secret,ความลับ
 LiteralText,SECRET,ความลับ
-LiteralText,seed,
-LiteralText,SELECT ATMOSPHERE,
-LiteralText,SELECT ITEM,
+LiteralText,seed,เมล็ด
+LiteralText,SELECT ATMOSPHERE,เลือกบรรยากาศ
+LiteralText,SELECT ITEM,เลือกไอเท็ม
 LiteralText,SELECT LANGUAGE,เลือกภาษา
-LiteralText,SELECT MAP,
+LiteralText,SELECT MAP,เลือกแผนที่
 LiteralText,SELECT PORTRAIT,เลือกภาพบุคคล
 LiteralText,SELECT RESIDENT,
 LiteralText,SELECT SQUARE,
@@ -3685,8 +3685,8 @@ LiteralText,SELL ALL,ขายทั้งหมด
 LiteralText,SEND,ส่ง
 LiteralText,Send me an email,ส่งเมล์มาหาฉัน
 LiteralText,SERVICES,บริการ
-LiteralText,SET DIFFICULTY,
-LiteralText,set starting location,
+LiteralText,SET DIFFICULTY,เลือกความยาก
+LiteralText,set starting location,เลือกจุดเริ่มต้น
 LiteralText,SETTINGS,ตั้งค่า
 LiteralText,sfx volume,ระดับเสียงเอฟเฟค
 LiteralText,Share your tragic and heroic stories with other players.,
@@ -3694,34 +3694,34 @@ LiteralText,SHARE//exchange,แบ่งปัน
 LiteralText,SHARE//publish,แบ่งปัน
 LiteralText,SHOPS,ร้านค้า
 LiteralText,Show debugging information,
-LiteralText,Show time clock,
+LiteralText,Show time clock,แสดงนาฬิกา
 LiteralText,Show your appreciation by helping to introduce more players to Pathos.,
 LiteralText,SHRINES,สถานที่บูชา
 LiteralText,SIGN-IN,เข้าสู่ระบบ
 LiteralText,size,ขนาด
 LiteralText,skills,ความชำนาญ
 LiteralText,SKILLS,ความชำนาญ
-LiteralText,SLIDE,
-LiteralText,Slide which direction?,
-LiteralText,slower animations,
+LiteralText,SLIDE,ไถล
+LiteralText,Slide which direction?,ไถลไปทิศทางไหน
+LiteralText,slower animations,อนิเมชั่นช้าลง
 LiteralText,Sokoban,
 LiteralText,SONICS,เสียงเอฟเฟค
 LiteralText,"Sorry, this device is a bit too small :-(",ขออภัยด้วยอุปกรณ์นี้เล็กเกินไป :-(
-LiteralText,SOUND BOARD,
+LiteralText,SOUND BOARD,เสียงเอฟเฟค
 LiteralText,Sound on/off,เปิด/ปิด เสียง
 LiteralText,spare materials can be formed into new items using the essence of creation,
 LiteralText,spawn,ให้กำเนิด
 LiteralText,SPAWN ENTITIES EVERYWHERE,ให้กำเนิดสิ่งมีตัวตนทุกที่
-LiteralText,special,
-LiteralText,SPECIALS,
+LiteralText,special,พิเศษ
+LiteralText,SPECIALS,พิเศษ
 LiteralText,speed,ความเร็ว
 LiteralText,SPEED,ความเร็ว
 LiteralText,SPELL,เวท
 LiteralText,SPELLS,เวท
 LiteralText,Square,
 LiteralText,START,เริ่ม
-LiteralText,Start a game to be joined by other players.,
-LiteralText,Start new adventure,เริ่มการผจญภัยครั้งหใม่
+LiteralText,Start a game to be joined by other players.,เริ่มเกมเพื่อให้คนอื่นเข้าร่วมได้
+LiteralText,Start new adventure,เริ่มการผจญภัยครั้งใหม่
 LiteralText,start without companion,เริ่มโดยไม่มีเพื่อนร่วมทาง
 LiteralText,starvation,อดตาย
 LiteralText,starved,อดตาย
@@ -3731,7 +3731,7 @@ LiteralText,storage,คลังเก็บของ
 LiteralText,STUCK,ติด
 LiteralText,STUDIO,สตูดิโอ
 LiteralText,STUDIO QUESTS,ภารกิจของสตูดิโอ
-LiteralText,SUBMIT,ยอมจำนน
+LiteralText,SUBMIT,ตกลง
 LiteralText,SUSTAINED,ถูกค้ำจุน
 LiteralText,SWAP,สลับที่
 LiteralText,SWITCH,สลับกัน
@@ -3741,33 +3741,33 @@ LiteralText,TAKE,เก็บ
 LiteralText,TAKE ALL,เก็บทั้งหมด
 LiteralText,talents,พรสวรรค์
 LiteralText,TALENTS,พรสวรรค์
-LiteralText,TELEKINESIS,
-LiteralText,Telekinesis which direction?,
-LiteralText,Telekinesis which object?,
+LiteralText,TELEKINESIS,พลังโทรจิต
+LiteralText,Telekinesis which direction?,ใช้พลังโทรจิตไปทิศทางไหน
+LiteralText,Telekinesis which object?,ใช้พลังโทรจิตกับวัสถุไหน?
 LiteralText,TELEPORT,เทเลพอร์ต
 LiteralText,Teleport to where?,เทเลพอร์ตไปที่?
-LiteralText,TERMINAL,
+LiteralText,TERMINAL,เทอร์มิเนอล
 LiteralText,terrain,ภูมิภาค
-LiteralText,The attack score is your aptitude for hitting an opponent.,
+LiteralText,The attack score is your aptitude for hitting an opponent.,แต้มการโจมตีคือศักยภาพในการโจมตีศัตรู
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,
-LiteralText,The defence score is how protected you are from being hit by an opponent.,
+LiteralText,The defence score is how protected you are from being hit by an opponent.,แต้มป้องกันคือป้องกันจากการโจมตีของศัตรู
 LiteralText,There are no known polymorphs,ไม่พบสิ่งที่สามารถกลายร่างเป็นได้
-LiteralText,There is a new update available!,
-LiteralText,there is nothing to place here,
-LiteralText,there is nothing to remove here,
-LiteralText,there is nothing to trade with this merchant,
+LiteralText,There is a new update available!,มีเวอร์ชั่นใหม่พร้อมอัพเดต!
+LiteralText,there is nothing to place here,ไม่มีอะไรจะวางตรงนี้
+LiteralText,there is nothing to remove here,ไม่มีอะไรจะเอาออกจากตรงนี้
+LiteralText,there is nothing to trade with this merchant,ไม่มีอะไรจะแลกกับพ่อค้า
 LiteralText,this merchant has no stock to trade,พ่อค้าคนนี้ไม่มีอะไรจะแลกเปลี่ยนด้วย
-LiteralText,This name is used to record your achievements in the Hall of Fame.,
+LiteralText,This name is used to record your achievements in the Hall of Fame.,ชื่อนี้จะถูกใช้เพื่อบันทึกความสำเร็จของคุณในโถงแห่งเกียรติยศ
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,
 LiteralText,threw,ขว้าง
 LiteralText,THROW,ขว้าง
 LiteralText,tin,ดีบุก
 LiteralText,To complete this game you need to escape the dungeon on the first level.,
 LiteralText,To complete this game you need to escape through the final transportal.,
-LiteralText,TOO BIG,ใหญ่เกินไป
-LiteralText,TOO HEAVY,หนักเกินไป
+LiteralText,TOO BIG,ตัวใหญ่เกินไป
+LiteralText,TOO HEAVY,ตัวหนักเกินไป
 LiteralText,TOO HUNGRY,หิวเกินไป
-LiteralText,TOO SMALL,เล็กเกินไป
+LiteralText,TOO SMALL,ตัวเล็กเกินไป
 LiteralText,TOO WEAK,อ่อนแอเกินไป
 LiteralText,touch,สัมผัส
 LiteralText,TRACKS,เพลง
@@ -3797,7 +3797,7 @@ LiteralText,Underbarracks,
 LiteralText,Underlimits,
 LiteralText,Underpeaks,
 LiteralText,Undertown,
-LiteralText,Undo,
+LiteralText,Undo,ย้อนกลับ
 LiteralText,unidentified items,ไอเท็มที่ยังไม่ได้ระบุ
 LiteralText,unique,พิเศษ
 LiteralText,UNIQUES,พิเศษ
@@ -3815,7 +3815,7 @@ LiteralText,update not found,ไม่พบการอัพเดต
 LiteralText,UPDATE NOW,อัพเดตเดี๋ยวนี้
 LiteralText,UPDATES,อัพเดต
 LiteralText,upgrade to,พัฒนาเป็น
-LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,
+LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,หากสร้างโลกแบบตายตัวจะไม่สามารถบันทึกความสำเร็จในโถงแห่งเกียรติยศได้
 LiteralText,Vanity,
 LiteralText,VIEW,ดู
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
@@ -3888,39 +3888,39 @@ MaterialName,wax,ขี้ผึ้ง
 MaterialName,wood,ไม้
 MeasurementSystemName,imperial,อิมพีเรียล
 MeasurementSystemName,metric,เมตริก
-MotionPastName,anointed,ชโลมแล้ว
-MotionPastName,ate,กินแล้ว
-MotionPastName,captured,ถูกจับแล้ว
-MotionPastName,chanted,ร่ายแล้ว
-MotionPastName,constructed,สร้างแล้ว
-MotionPastName,dipped,จุ่มแล้ว
-MotionPastName,divined,ทำนายแล้ว
-MotionPastName,drank,ดื่มแล้ว
-MotionPastName,dug,ขุดแล้ว
-MotionPastName,emptied,ว่างเปล่าแล้ว
-MotionPastName,exchanged,แลกแล้ว
-MotionPastName,flashed,
+MotionPastName,anointed,ชโลม
+MotionPastName,ate,กิน
+MotionPastName,captured,ถูกจับ
+MotionPastName,chanted,ร่าย
+MotionPastName,constructed,สร้าง
+MotionPastName,dipped,จุ่ม
+MotionPastName,divined,ทำนาย
+MotionPastName,drank,ดื่ม
+MotionPastName,dug,ขุด
+MotionPastName,emptied,ว่างเปล่า
+MotionPastName,exchanged,แลก
+MotionPastName,flashed,กระพริบ
 MotionPastName,inscribed,
-MotionPastName,opened,เปิดแล้ว
-MotionPastName,packed,บรรจุแล้ว
-MotionPastName,played,เล่นแล้ว
-MotionPastName,prayed,อธิษฐานแล้ว
-MotionPastName,quaffed,กลืนแล้ว
-MotionPastName,read,อ่านแล้ว
+MotionPastName,opened,เปิด
+MotionPastName,packed,บรรจุ
+MotionPastName,played,เล่น
+MotionPastName,prayed,อธิษฐาน
+MotionPastName,quaffed,กลืน
+MotionPastName,read,อ่าน
 MotionPastName,reclined,
-MotionPastName,refilled,เติมใหม่แล้ว
-MotionPastName,released,ปลดปล่อยแล้ว
-MotionPastName,renamed,เปลี่ยนชื่อแล้ว
-MotionPastName,rubbed,ถูแล้ว
-MotionPastName,sacrificed,บูชายัญแล้ว
-MotionPastName,sat,ได้นั่ง
+MotionPastName,refilled,เติมใหม่
+MotionPastName,released,ปลดปล่อย
+MotionPastName,renamed,เปลี่ยนชื่อ
+MotionPastName,rubbed,ถู
+MotionPastName,sacrificed,บูชายัญ
+MotionPastName,sat,นั่ง
 MotionPastName,scried,กรีดร้อง
-MotionPastName,set,วางแล้ว
-MotionPastName,staked,เดิมพันแล้ว
-MotionPastName,studied,เรียนรู้แล้ว
-MotionPastName,swatted,สลับที่แล้ว
-MotionPastName,wrote,เขียนแล้ว
-MotionPastName,zapped,ยิงแล้ว
+MotionPastName,set,วาง
+MotionPastName,staked,เดิมพัน
+MotionPastName,studied,เรียนรู้
+MotionPastName,swatted,สลับที่
+MotionPastName,wrote,เขียน
+MotionPastName,zapped,ยิง
 MotionPresentName,anoint,ชโลม
 MotionPresentName,capture,จับ
 MotionPresentName,chant,ร่าย
@@ -3932,7 +3932,7 @@ MotionPresentName,drink,ดื่ม
 MotionPresentName,eat,กิน
 MotionPresentName,empty,ว่างเปล่า
 MotionPresentName,exchange,แลกเปลี่ยน
-MotionPresentName,flash,
+MotionPresentName,flash,กระพริบ
 MotionPresentName,inscribe,
 MotionPresentName,open,เปิด
 MotionPresentName,pack,บรรจุ
@@ -4029,7 +4029,7 @@ PropertyDescription,"Your mind is protected against deception, trickery and fals
 PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,
 PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,
 PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,
-PropertyName,aggravation,ดุดันขึ้น
+PropertyName,aggravation,ก้าวร้าว
 PropertyName,appraisal,ประเมินค่า
 PropertyName,beatitude,มีความาสุข
 PropertyName,berserking,บ้าคลั่ง
@@ -4116,9 +4116,9 @@ QualificationName,expert,ผู้เชี่ยวชาญ
 QualificationName,master,ปรมาจารย์
 QualificationName,proficient,ชำนาญ
 QualificationName,specialist,ผู้ชำนาญพิเศษ
-RaceName,angel//female,เทพธิดา
-RaceName,angel//male,เทพ
-RaceName,angel//non-binary,เทพ
+RaceName,angel//female,ทูตสวรรค์
+RaceName,angel//male,ทูตสวรรค์
+RaceName,angel//non-binary,ทูตสวรรค์
 RaceName,changeling//female,เชนจลิง
 RaceName,changeling//male,เชนจลิง
 RaceName,changeling//non-binary,เชนจลิง
@@ -4230,7 +4230,7 @@ RumourFalseMessage,"When in doubt, refrain from reply all.",
 RumourFalseMessage,"When in trouble, when in doubt; run in circles, scream and shout.",
 RumourFalseMessage,"When reading a scroll of amnesia, remember the golden rule.",
 RumourFalseMessage,"When you crave ice cream, your body is telling you that it needs water.",
-RumourFalseMessage,Yellow mould brings you gold.,
+RumourFalseMessage,Yellow mould brings you gold.,เชื้อราสีเหลืองจะนำเงินมาให้
 RumourFalseMessage,You can be charmed to death.,
 RumourFalseMessage,Zap your enemy with a unicorn horn.,ยิงศัตรูด้วยเขายูนิคอร์น
 RumourTrueMessage,A pick-axe has many uses - be creative.,
@@ -4269,12 +4269,12 @@ SanctityCode,U,U
 SanctityName,blessed,ศักดิ์สิทธิ์
 SanctityName,cursed,ต้องสาป
 SanctityName,uncursed,ไม่ถูกสาป
-SchoolName,abjuration,การสละ
+SchoolName,abjuration,การถอน
 SchoolName,clerical,บาทหลวง
 SchoolName,conjuration,
 SchoolName,divination,การพยากรณ์
-SchoolName,enchantment,การสาป
-SchoolName,evocation,การเรียก
+SchoolName,enchantment,อาคม
+SchoolName,evocation,การปลุกเรียก
 SchoolName,necromancy,มนตร์ดำ
 SchoolName,transmutation,การเปลี่ยนสภาพ
 ServiceDescription,detect traps in the surrounding area.,ตรวจจับกับดักในพื้นที่รอบๆ
@@ -4328,7 +4328,7 @@ SkillName,dart,ลูกดอก
 SkillName,disc,แผ่น
 SkillName,divination,การพยากรณ์
 SkillName,dual wielding,การถือคู่
-SkillName,enchantment,การทำให้ลุ่มหลง
+SkillName,enchantment,อาคม
 SkillName,evocation,การเรียก
 SkillName,firearms,อาวุธปืน
 SkillName,flail,สาก
@@ -4595,15 +4595,15 @@ SpellName,sleep,นอนหลับ
 SpellName,slow,เชี่ยงช้า
 SpellName,soaking sphere,
 SpellName,summoning,การอัญเชิญ
-SpellName,telekinesis,พลังจิต
+SpellName,telekinesis,พลังโทรจิต
 SpellName,teleport away,เทเลพอร์ตหนี
 SpellName,toxic spray,ฉีดพิษ
 SpellName,turn undead,
-SpellName,walling,กำแพง
+SpellName,walling,สร้างกำแพง
 SpellName,wizard lock,ล็อคเวทมนตร์
 StandingName,damned,ถูกสาปแช่ง
 StandingName,doomed,มีเคราะห์
-StandingName,doubtful,รู้สึกผิด
+StandingName,doubtful,ผิด
 StandingName,evil,ชั่วช้า
 StandingName,exalted,น่ายกย่อง
 StandingName,glorious,เปล่งรัศมี

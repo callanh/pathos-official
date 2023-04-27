@@ -4907,7 +4907,7 @@ namespace Pathos
         I.Series = null;
         I.Rarity = 6;
         I.Size = Size.Tiny;
-        I.Weight = Weight.FromUnits(50);
+        I.Weight = Weight.FromUnits(10);
         I.Material = Materials.vegetable;
         I.Essence = FoodEssence1;
         I.Price = Gold.FromCoins(9);
