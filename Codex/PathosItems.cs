@@ -847,7 +847,8 @@ namespace Pathos
         I.AddObviousUse(Motions.exchange, Delay.FromTurns(20), Sonics.scrape, Use =>
         {
           Use.SetCast().Strike(Strikes.magic, Dice.Fixed(10))
-             .SetAudibility(1);
+             .SetAudibility(1)
+             .SetTargetSelf(false);
           Use.Apply.Exchange();
           Use.Apply.Repel(Range.Sq3, Items: true, Characters: true, Boulders: true);
           Use.Apply.WithSourceSanctity
@@ -12529,7 +12530,7 @@ namespace Pathos
         I.Rarity = 13;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(10);
-        I.Material = Materials.wood;
+        I.Material = Materials.mithril;
         I.Essence = AmmoEssence1;
         I.Price = Gold.FromCoins(2);
         I.AddObviousIngestUse(Motions.eat, 1, Delay.FromTurns(10), Sonics.ammo);
@@ -12553,7 +12554,7 @@ namespace Pathos
         I.Rarity = 6;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(300);
-        I.Material = Materials.wood;
+        I.Material = Materials.mithril;
         I.Essence = WeaponEssence1;
         I.Price = Gold.FromCoins(60);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(30), Sonics.weapon);
@@ -12576,7 +12577,7 @@ namespace Pathos
         I.Rarity = 4;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(100);
-        I.Material = Materials.wood;
+        I.Material = Materials.mithril;
         I.Essence = WeaponEssence1;
         I.Price = Gold.FromCoins(4);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
@@ -12598,7 +12599,7 @@ namespace Pathos
         I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(300);
-        I.Material = Materials.wood;
+        I.Material = Materials.mithril;
         I.Essence = WeaponEssence1;
         I.Price = Gold.FromCoins(10);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);

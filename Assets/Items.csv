@@ -467,7 +467,7 @@ weapon,melee weapon,Cleaver,,,,axe: 3d6,iron,0,1200,1400,1,FALSE,,ARTIFACT|WEAPO
 weapon,melee weapon,club,,"A thick wooden bludgeon. What it lacks in style, it makes up for in function.",,club: 1d6,wood,5,300,3,22,FALSE,,WEAPON
 weapon,melee weapon,Colossal Excavator,,This ancient artifact is a marvel to behold with exquisite craftsmanship and unbridled digging power.,,pick: 1d12+6,iron,0,1200,1400,1,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,crysknife,,,,light blade: 1d10,stone,50,200,100,0,FALSE,,WEAPON
-weapon,melee weapon,dark elven short sword,black runed short sword,,,medium blade: 1d8,wood,10,300,10,2,FALSE,,WEAPON
+weapon,melee weapon,dark elven short sword,black runed short sword,,,medium blade: 1d8,mithril,10,300,10,2,FALSE,,WEAPON
 weapon,melee weapon,Dire Needle,,,,medium blade: 1d10,iron,0,250,1100,1,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,Dragonbane,,"Forged deep underground by dwarven hands, this blade was made to slay the scaled beasts who sought to steal their treasures. Throughout the long years this blade has bathed in the blood of its winged prey. Now almost forgotten, it yearns again for the taste of dragon flesh.",,heavy blade: 2d5,iron,0,700,1000,1,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,dread staff,bone staff,,,staff: 1d5,bone,50,300,500,4,FALSE,,WEAPON
@@ -531,7 +531,7 @@ weapon,ranged missile,arrow,,A projectile consisting of a wooden shaft with a sh
 weapon,ranged missile,bullet,metal slug,A pointed metal cylinder meant to be discharged from a firearm.,,firearms: 1d20,iron,2,5,5,0,TRUE,,WEAPON
 weapon,ranged missile,Creeping Sprout,,,,bow: 1d6,wood,0,15,600,1,TRUE,,ARTIFACT|WEAPON
 weapon,ranged missile,crossbow bolt,,An iron projectile made up of a shaft with a sharpened square-pyramid tip.,,crossbow: 1d4+1,iron,1,10,2,45,TRUE,,WEAPON
-weapon,ranged missile,dark elven arrow,black runed arrow,,,bow: 1d7,wood,2,10,2,13,TRUE,,WEAPON
+weapon,ranged missile,dark elven arrow,black runed arrow,,,bow: 1d7,mithril,2,10,2,13,TRUE,,WEAPON
 weapon,ranged missile,elven arrow,runed arrow,,,bow: 1d7,wood,2,10,2,25,TRUE,,WEAPON
 weapon,ranged missile,mithril arrow,,,,bow: 1d6+1,mithril,3,5,20,1,TRUE,,WEAPON
 weapon,ranged missile,mithril bullet,mithril slug,,,firearms: 1d25,mithril,4,3,45,0,TRUE,,WEAPON
@@ -548,7 +548,7 @@ weapon,ranged weapon,auto shotgun,heavy barrelled gun,,,firearms: 1d4,iron,25,35
 weapon,ranged weapon,blowgun,,A long pipe meant for shooting darts through force of breath.,,dart: +1,wood,5,30,20,20,FALSE,,WEAPON
 weapon,ranged weapon,bow,,"A semi-rigid weapon made up of a notched wooden shaft with a drawstring attached to both ends, used to launch arrows.",,bow: +1,wood,5,300,60,24,FALSE,,WEAPON
 weapon,ranged weapon,crossbow,,"A horizontal, mechanically-aided bow and arrow with a shoulder stock.",,crossbow: +1,wood,5,500,40,45,FALSE,,WEAPON
-weapon,ranged weapon,dark elven bow,black runed bow,,,bow: +1,wood,10,300,60,6,FALSE,,WEAPON
+weapon,ranged weapon,dark elven bow,black runed bow,,,bow: +1,mithril,10,300,60,6,FALSE,,WEAPON
 weapon,ranged weapon,Deagle,,,,firearms: 1d6,gold,0,500,1500,1,FALSE,,ARTIFACT|WEAPON
 weapon,ranged weapon,elven bow,runed bow,,,bow: +1,wood,10,300,60,12,FALSE,,WEAPON
 weapon,ranged weapon,Giantslayer,,,,sling: +1,wood,0,30,1000,1,FALSE,,ARTIFACT|WEAPON
@@ -602,7 +602,7 @@ weapon,thrown weapon,boomerang,throwing stick,"A flat throwing weapon made of wo
 weapon,thrown weapon,chakram,throwing disc,,,disc: 1d8,iron,5,50,10,15,TRUE,,WEAPON
 weapon,thrown weapon,Chaoshammer,,,,hammer: 2d4,iron,0,1000,1200,1,TRUE,,ARTIFACT|WEAPON
 weapon,thrown weapon,dagger,,"A long iron knife with a sharp tip, weighted for throwing.",,light blade: 1d4,iron,5,100,4,25,TRUE,,WEAPON
-weapon,thrown weapon,dark elven dagger,black runed dagger,,,light blade: 1d5,wood,10,100,4,4,TRUE,,WEAPON
+weapon,thrown weapon,dark elven dagger,black runed dagger,,,light blade: 1d5,mithril,10,100,4,4,TRUE,,WEAPON
 weapon,thrown weapon,dart,,A small missile with a pointed tip meant for throwing.,,dart: 1d3,iron,1,10,2,55,TRUE,,WEAPON
 weapon,thrown weapon,elven dagger,runed dagger,This high-quality elven manufactured dagger is perfectly weighted for throwing.,,light blade: 1d5,wood,10,100,4,8,TRUE,,WEAPON
 weapon,thrown weapon,frag grenade,metal pineapple,,,firearms: 0,iron,15,50,100,0,TRUE,,WEAPON
