@@ -13779,7 +13779,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(150);
         I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 2);
+        I.SetOneHandedMomentumWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 2);
       });
 
       silver_arrow = AddRangedMissile(Ammunition.Arrow, "silver arrow", I =>

@@ -85,6 +85,18 @@ namespace Pathos
 
             this.goodWeapon = new Inv.DistinctList<Item>()
             {
+                Items.adamantine_arrow,
+                Items.adamantine_axe,
+                Items.adamantine_bow,
+                Items.adamantine_dagger,
+                Items.adamantine_greataxe,
+                Items.adamantine_greatsword,
+                Items.adamantine_long_sword,
+                Items.adamantine_rapier,
+                Items.adamantine_sabre,
+                Items.adamantine_short_sword,
+                Items.adamantine_spear,
+                Items.adamantine_twohanded_sword,
                 Items.mithril_battleaxe,
                 Items.mithril_katar,
                 Items.mithril_long_sword,
@@ -180,6 +192,7 @@ namespace Pathos
 
             this.goodArmour = new Inv.DistinctList<Item>()
             { 
+                Items.adamantine_plate_mail,
                 Items.mithril_barding,
                 Items.mithril_shield,
                 Items.dark_elven_mithrilcoat,
