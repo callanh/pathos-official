@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Un m
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Une collection d'ustensiles, y compris des boîtes vides et des outils de boucherie, pour emballer les cadavres afin de les condenser."
 ItemDescription,A compact hand-held firearm.,Une arme à feu compacte et portative
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Une lame incurvée à un tranchant souvent utilisée par la cavalerie, particulièrement efficace contre les créatures du monde souterrain."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",Un fruit jaune incurvé et une bonne source de fibre
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Une arme de lancer plate en bois, souvent utilisée pour la chasse."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Un gâteau plat et rond. Cuit dans une moule, comme vous pourriez le supposer."
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,De minuscules pointes métalliques jetées au sol pour entraver la mobilité.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Sandales ailées en or impérissable qui font s'envoler le porteur rapidement et silencieusement.
 ItemDescription,Zapping it at a wall creates a big tunnel.,Zapper en direction d'un mur crée un gros tunnel.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,agate
 ItemName,aklys,aklys
 ItemName,alchemy smock,blouse d'alchimie
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,tuyau en caoutchouc
 ItemName,ruby,rubis
 ItemName,Ruby Key,Clé de Rubis
 ItemName,Runesword,épée runique
+ItemName,sabre,
 ItemName,sack,sac
 ItemName,saddle,selle
 ItemName,sai,sai
@@ -3855,6 +3870,7 @@ LocalityName,Site,Site
 LocalityName,Square,Case
 LocalityName,World,Monde
 LocalityName,Zone,Zone
+MaterialName,adamantine,
 MaterialName,air,air
 MaterialName,animal,animal
 MaterialName,bone,os

@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,着�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",死体を缶に詰め込むための、空の缶や精肉用具などのキット。
 ItemDescription,A compact hand-held firearm.,コンパクトで持ち運びしやすい銃器。
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",騎兵がよく使う片刃の曲剣。地獄から来た怪物共に対し特に有効である。
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",食物繊維豊富な、黄色くて曲がった果物。
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",狩りの道具としてよく使われる、平たい木製の投擲武器。
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",平たく丸いケーキ。もちろんフライパンで焼いてるよ。
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,動きを阻害するために地面にばら撒かれるトゲトゲの小さな金属片。
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,身に着けた者を音もたてずに軽々と運んでくれる、空飛ぶ黄金のサンダル。
 ItemDescription,Zapping it at a wall creates a big tunnel.,一振りで壁に大きなトンネルを作り出す杖。
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,めのう
 ItemName,aklys,アキリス
 ItemName,alchemy smock,錬金術師の前掛け
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,ゴムホース
 ItemName,ruby,ルビー
 ItemName,Ruby Key,『ルビーの鍵』
 ItemName,Runesword,『ルーンソード』
+ItemName,sabre,
 ItemName,sack,布袋
 ItemName,saddle,鞍
 ItemName,sai,サイ
@@ -3855,6 +3870,7 @@ LocalityName,Site,敷地
 LocalityName,Square,マス
 LocalityName,World,世界
 LocalityName,Zone,区域
+MaterialName,adamantine,
 MaterialName,air,空気
 MaterialName,animal,肉
 MaterialName,bone,骨

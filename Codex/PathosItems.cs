@@ -66,7 +66,7 @@ namespace Pathos
 
             I.Grade ??= Grades.standard;
 
-            Debug.Assert(I.Grade.Indestructable || I.Impact != null || I.Material != Materials.glass);
+            Debug.Assert(I.Grade.Indestructible || I.Impact != null || I.Material != Materials.glass);
           });
         });
       }
@@ -256,7 +256,10 @@ namespace Pathos
           Register.Edit(UpperItem).SetDowngradeItem(LowerItem);
       }
 
+      var MithrilRarity = 2;
+
       #region artifact.
+      var ArtifactRarity = 1;
       var ArtifactEssence = Essence.FromUnits(0); // artifacts cannot be scrapped into essence.
 
       Backpack = AddItem(Stocks.tool, ItemType.Bag, "Backpack", I =>
@@ -385,7 +388,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Tiny;
         I.BundleDice = Dice.One;
         I.Weight = Weight.FromUnits(40);
@@ -403,7 +406,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(1200);
         I.Material = Materials.iron;
@@ -430,7 +433,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(500);
         I.Material = Materials.silver;
@@ -448,7 +451,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.cloth;
@@ -469,7 +472,7 @@ namespace Pathos
         I.Sonic = Sonics.amulet;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.gemstone;
@@ -496,7 +499,7 @@ namespace Pathos
         I.Sonic = Sonics.amulet;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.iron;
@@ -513,7 +516,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(30);
         I.Material = Materials.glass;
@@ -531,7 +534,7 @@ namespace Pathos
         I.Sonic = Sonics.wand;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(50);
         I.Material = Materials.vegetable;
@@ -557,7 +560,7 @@ namespace Pathos
         I.Sonic = Sonics.wand;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.DefaultSanctity = Sanctities.Cursed;
         I.Weight = Weight.FromUnits(100);
@@ -600,7 +603,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(30);
         I.Material = Materials.iron;
@@ -653,7 +656,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(2000);
         I.Material = Materials.wood;
@@ -805,7 +808,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(30);
         I.Material = Materials.iron;
@@ -835,7 +838,7 @@ namespace Pathos
         I.Sonic = Sonics.tool;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(5000);
         I.Material = Materials.stone;
@@ -868,7 +871,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.gold;
@@ -887,7 +890,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(700);
         I.Material = Materials.iron;
@@ -916,7 +919,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.leather;
@@ -945,7 +948,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(1200);
         I.Material = Materials.iron;
@@ -963,7 +966,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(600);
         I.Material = Materials.gold;
@@ -989,7 +992,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.iron;
@@ -1016,10 +1019,10 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(400);
-        I.Material = Materials.mithril;
+        I.Material = Materials.adamantine;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1800);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
@@ -1042,7 +1045,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(50);
         I.Material = Materials.iron;
@@ -1082,7 +1085,7 @@ namespace Pathos
         I.Sonic = Sonics.leather;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Weight = Weight.FromUnits(30);
         I.Size = Size.Small;
         I.Material = Materials.wood;
@@ -1103,7 +1106,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(6000);
         I.Material = Materials.animal;
@@ -1124,7 +1127,7 @@ namespace Pathos
         I.Grade = Grades.artifact;
         I.BundleDice = Dice.One;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(1000);
         I.Material = Materials.iron;
@@ -1167,7 +1170,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(1000);
         I.Material = Materials.gold;
@@ -1199,7 +1202,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.DefaultSanctity = Sanctities.Cursed;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(800);
@@ -1221,7 +1224,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(1200);
         I.Material = Materials.iron;
@@ -1246,7 +1249,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(600);
         I.Material = Materials.platinum;
@@ -1271,7 +1274,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(750);
         I.Material = Materials.iron;
@@ -1298,7 +1301,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(250);
         I.Material = Materials.iron;
@@ -1323,7 +1326,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(1500);
         I.Material = Materials.iron;
@@ -1359,7 +1362,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(500);
         I.Material = Materials.gold;
@@ -1380,7 +1383,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(3600);
         I.Material = Materials.iron;
@@ -1417,7 +1420,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Series = null;
         I.Grade = Grades.artifact;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.iron;
@@ -1436,7 +1439,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.iron;
@@ -2070,7 +2073,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_plate_mail;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(3500);
         I.Material = Materials.mithril;
@@ -2520,7 +2523,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_helmet;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.mithril;
@@ -2697,7 +2700,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_shield;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(500);
         I.Material = Materials.mithril;
@@ -2972,7 +2975,7 @@ namespace Pathos
         I.Glyph = Glyphs.plain_robe;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.cloth;
@@ -2990,7 +2993,7 @@ namespace Pathos
         I.Glyph = Glyphs.red_robe;
         I.Sonic = Sonics.armour;
         I.Series = RobesSeries;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.cloth;
@@ -3018,7 +3021,7 @@ namespace Pathos
         I.Glyph = Glyphs.blue_robe;
         I.Sonic = Sonics.armour;
         I.Series = RobesSeries;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.cloth;
@@ -3045,7 +3048,7 @@ namespace Pathos
         I.Glyph = Glyphs.green_robe;
         I.Sonic = Sonics.armour;
         I.Series = RobesSeries;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.cloth;
@@ -3073,7 +3076,7 @@ namespace Pathos
         I.Glyph = Glyphs.orange_robe;
         I.Sonic = Sonics.armour;
         I.Series = RobesSeries;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.cloth;
@@ -3302,7 +3305,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_barding;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 3;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(3500);
         I.Material = Materials.mithril;
@@ -4693,7 +4696,7 @@ namespace Pathos
         I.Glyph = Glyphs.huge_chunk_of_meat;
         I.Sonic = Sonics.food;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(4000);
         I.Material = Materials.animal;
@@ -4789,7 +4792,7 @@ namespace Pathos
         I.Glyph = Glyphs.lump_of_royal_jelly;
         I.Sonic = Sonics.food;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Tiny;
         I.Weight = Weight.FromUnits(20);
         I.Material = Materials.animal;
@@ -5202,7 +5205,7 @@ namespace Pathos
         I.Sonic = Sonics.food;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.animal;
@@ -9430,7 +9433,7 @@ namespace Pathos
         I.Glyph = Glyphs.bell_of_secrets;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Material = Materials.silver;
         I.Essence = ToolEssence3;
@@ -9462,7 +9465,7 @@ namespace Pathos
         I.Glyph = Glyphs.bell_of_resources;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Material = Materials.silver;
         I.Essence = ToolEssence3;
@@ -9494,7 +9497,7 @@ namespace Pathos
         I.Glyph = Glyphs.bell_of_harmony;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Material = Materials.silver;
         I.Essence = ToolEssence3;
@@ -9540,7 +9543,7 @@ namespace Pathos
         I.Glyph = Glyphs.bell_of_strife;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Material = Materials.silver;
         I.Essence = ToolEssence3;
@@ -9697,7 +9700,7 @@ namespace Pathos
         I.Glyph = Glyphs.drum_of_earthquake;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(250);
         I.Material = Materials.leather;
@@ -9853,7 +9856,7 @@ namespace Pathos
         I.Glyph = Glyphs.fire_horn;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(180);
         I.Material = Materials.bone;
@@ -9888,7 +9891,7 @@ namespace Pathos
         I.Glyph = Glyphs.frost_horn;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(180);
         I.Material = Materials.bone;
@@ -9938,7 +9941,7 @@ namespace Pathos
         I.Glyph = Glyphs.horn_of_plenty;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(180);
         I.Material = Materials.bone;
@@ -10214,7 +10217,7 @@ namespace Pathos
         I.Glyph = Glyphs.magic_bugle;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.copper;
@@ -10244,7 +10247,7 @@ namespace Pathos
         I.Glyph = Glyphs.magic_flute;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(50);
         I.Material = Materials.wood;
@@ -10311,7 +10314,7 @@ namespace Pathos
         I.Glyph = Glyphs.magic_harp;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.wood;
@@ -10785,7 +10788,7 @@ namespace Pathos
         I.Glyph = Glyphs.magic_candle;
         I.Sonic = Sonics.tool;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(50);
         I.Material = Materials.wax;
@@ -12331,7 +12334,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_whip;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.mithril;
@@ -12440,7 +12443,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_crossbow_bolt;
         I.Sonic = Sonics.ammo;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(5);
         I.Material = Materials.mithril;
@@ -12635,7 +12638,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_dart;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 5;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(5);
         I.Material = Materials.mithril;
@@ -13012,7 +13015,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_katar;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(125);
         I.Material = Materials.mithril;
@@ -13502,6 +13505,23 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6());
       });
 
+      sabre = AddMeleeWeapon("sabre", I =>
+      {
+        I.Description = "A curved single-edged blade often used by cavalry.";
+        I.Glyph = Glyphs.sabre;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Rarity = 17;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(400);
+        I.Material = Materials.iron;
+        I.Essence = WeaponEssence0;
+        I.Price = Gold.FromCoins(20);
+        I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedMomentumWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 1);
+      });
+
       scalpel = AddMeleeWeapon("scalpel", I =>
       {
         I.Description = "An extremely sharp little blade used for precise incisions.";
@@ -13641,7 +13661,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_arrow;
         I.Sonic = Sonics.ammo;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(5);
         I.Material = Materials.mithril;
@@ -13662,7 +13682,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.BundleDice = Dice.One;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(50);
         I.Material = Materials.mithril;
@@ -13680,7 +13700,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_long_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.mithril;
@@ -13698,7 +13718,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_short_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(150);
         I.Material = Materials.mithril;
@@ -13716,7 +13736,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_battleaxe;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(600);
         I.Material = Materials.mithril;
@@ -13734,7 +13754,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_lance;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(900);
         I.Material = Materials.mithril;
@@ -13751,7 +13771,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_sabre;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(200);
         I.Material = Materials.mithril;
@@ -13839,7 +13859,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_sabre;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 27;
+        I.Rarity = 2;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.silver;
@@ -13847,7 +13867,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(75);
         I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 1);
+        I.SetOneHandedMomentumWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 1);
       });
 
       silver_short_sword = AddMeleeWeapon("silver short sword", I =>
@@ -13958,7 +13978,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_spear;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(175);
         I.Material = Materials.mithril;
@@ -14063,7 +14083,7 @@ namespace Pathos
         I.Glyph = Glyphs.mithril_twohanded_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.mithril;
@@ -14154,7 +14174,7 @@ namespace Pathos
         I.Glyph = Glyphs.yumi;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = 2;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.wood;
@@ -14174,7 +14194,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(350);
         I.Material = Materials.mithril;
@@ -14196,7 +14216,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.Grade = Grades.artifact;
         I.Series = null;
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.wood;
@@ -14218,7 +14238,7 @@ namespace Pathos
         I.BundleDice = Dice.One;
         I.Series = null;
         I.InfiniteQuantity = true; // infinite ammo.
-        I.Rarity = 1;
+        I.Rarity = ArtifactRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(15);
         I.Material = Materials.wood;
@@ -14673,6 +14693,220 @@ namespace Pathos
       //rocket_launcher.SetDowngradeItem(grenade_launcher;
       #endregion
 
+      #region adamantine.
+      void AdamantineEquivalent(ItemEditor I, Item Source)
+      {
+        I.Grade = Grades.exotic;
+        I.Rarity = 2;
+        I.Weight = Source.Weight; // adamantine weighs same as steel.
+        I.Material = Materials.adamantine;
+        I.Essence = WeaponEssence2;
+        I.Price = Source.Price * 20; // adamantine variants cost x20 gold.
+
+        // TODO: can anyone eat adamantine? rust monsters? what about mithril??
+      }
+
+      adamantine_bow = AddRangedWeapon(Ammunition.Arrow, "adamantine bow", I =>
+      {
+        AdamantineEquivalent(I, bow);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_bow;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetTwoHandedWeapon(Skills.bow, Sonics.bow_fire, Elements.physical, DamageType.Bludgeon, 1.d4());
+      });
+
+      adamantine_arrow = AddRangedMissile(Ammunition.Arrow, "adamantine arrow", I =>
+      {
+        AdamantineEquivalent(I, arrow);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_arrow;
+        I.Sonic = Sonics.ammo;
+        I.Series = null;
+        I.Size = Size.Small;
+        //I.AddObviousIngestUse(Motions.eat, 1, Delay.FromTurns(10), Sonics.ammo);
+        I.SetWeakness(); // won't break
+        I.BundleDice = 1.d3() + 3;
+        I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.ammo);
+        I.SetOneHandedWeapon(Skills.bow, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+      });
+
+      adamantine_axe = AddMeleeWeapon("adamantine axe", I =>
+      {
+        AdamantineEquivalent(I, axe);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_axe;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Medium;
+        //I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 1.d7() + 1);
+      });
+
+      adamantine_greataxe = AddMeleeWeapon("adamantine greataxe", I =>
+      {
+        AdamantineEquivalent(I, battleaxe);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_greataxe;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 120, Delay.FromTurns(40), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetTwoHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 2.d6() + 2);
+      });
+
+      adamantine_dagger = AddThrownWeapon("adamantine dagger", I =>
+      {
+        AdamantineEquivalent(I, dagger);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_dagger;
+        I.Sonic = Sonics.weapon;
+        I.BundleDice = Dice.One;
+        I.Series = null;
+        I.Size = Size.Small;
+        //I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
+        I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d4() + 1);
+      });
+
+      adamantine_long_sword = AddMeleeWeapon("adamantine long sword", I =>
+      {
+        AdamantineEquivalent(I, long_sword);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_long_sword;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8());
+      });
+
+      adamantine_greatsword = AddMeleeWeapon("adamantine greatsword", I =>
+      {
+        AdamantineEquivalent(I, broadsword);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_greatsword;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d10());
+      });
+
+      adamantine_twohanded_sword = AddMeleeWeapon("adamantine two-handed sword", I =>
+      {
+        AdamantineEquivalent(I, twohanded_sword);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_twohanded_sword;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d12() + 2);
+      });
+
+      adamantine_rapier = AddMeleeWeapon("adamantine rapier", I =>
+      {
+        AdamantineEquivalent(I, rapier);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_rapier;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Medium;
+        //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+      });
+
+      adamantine_sabre = AddMeleeWeapon("adamantine sabre", I =>
+      {
+        AdamantineEquivalent(I, sabre);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_sabre;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Medium;
+        //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedMomentumWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 2);
+      });
+
+      adamantine_short_sword = AddMeleeWeapon("adamantine short sword", I =>
+      {
+        AdamantineEquivalent(I, short_sword);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_short_sword;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Small;
+        //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6());
+      });
+
+      adamantine_spear = AddReachWeapon("adamantine spear", I =>
+      {
+        AdamantineEquivalent(I, spear);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_spear;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Medium;
+        //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+      });
+      /*
+      adamantine_bident = AddReachWeapon("adamantine bident", I =>
+      {
+        AdamantineEquivalent(I, trident);
+
+        I.Description = null;
+        I.SetAppearance("exotic two-pointed polearm", null); // TODO: required only for the polearms require appearance sanity check.
+        I.Glyph = Glyphs.adamantine_bident;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 25, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedMomentumWeapon(Skills.polearm, null, Elements.physical, DamageType.Pierce, 1.d6() + 2);
+      });
+      */
+      adamantine_plate_mail = AddArmour(ItemType.Suit, "adamantine plate mail", I =>
+      {
+        AdamantineEquivalent(I, plate_mail);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_plate_mail;
+        I.Sonic = Sonics.armour;
+        I.Series = null;
+        I.Size = Size.Large;
+        //I.AddObviousIngestUse(Motions.eat, 450, Delay.FromTurns(50), Sonics.armour);
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(50), Sonics.armour);
+        I.SetArmour(Skills.heavy_armour, D: 8, P: +0, S: +0, B: +0);
+      });
+      #endregion
+
       CodexRecruiter.Enrol(() =>
       {
         void CheckWeaponVariant(Item Iron, Item Silver, Item Mithril)
@@ -14705,7 +14939,7 @@ namespace Pathos
           {
             Debug.Assert(Mithril.Name == "mithril " + Iron.Name, Mithril.Name);
             Debug.Assert(Mithril.Material == Materials.mithril, Mithril.Name);
-            Debug.Assert(Mithril.Rarity == 1, Mithril.Name);
+            Debug.Assert(Mithril.Rarity == MithrilRarity, Mithril.Name);
             Debug.Assert(Mithril.Weight < Iron.Weight, Mithril.Name);
 
             if (Mithril.IsRangedMissile())
@@ -14904,7 +15138,6 @@ namespace Pathos
     public readonly Item arrow;
     public readonly Item athame;
     public readonly Item axe;
-    public readonly Item silver_axe;
     public readonly Item bardiche;
     public readonly Item battleaxe;
     public readonly Item bec_de_corbin;
@@ -14924,7 +15157,6 @@ namespace Pathos
     public readonly Item crysknife;
     public readonly Item dagger;
     public readonly Item dart;
-    public readonly Item mithril_dart;
     public readonly Item poison_dart;
     public readonly Item fauchard;
     public readonly Item flail;
@@ -14947,6 +15179,7 @@ namespace Pathos
     public readonly Item partisan;
     public readonly Item ranseur;
     public readonly Item rapier;
+    public readonly Item sabre;
     public readonly Item rubber_hose;
     public readonly Item scalpel;
     public readonly Item scimitar;
@@ -14964,7 +15197,7 @@ namespace Pathos
     public readonly Item worm_tooth;
     public readonly Item chakram;
 
-    // japanese.
+    // oriental.
     public readonly Item kanabo;
     public readonly Item nunchaku;
     public readonly Item sai;
@@ -15024,6 +15257,7 @@ namespace Pathos
 
     // silver.
     public readonly Item silver_arrow;
+    public readonly Item silver_axe;
     public readonly Item silver_crossbow_bolt;
     public readonly Item silver_dagger;
     public readonly Item silver_dragon_scale_mail;
@@ -15041,6 +15275,7 @@ namespace Pathos
     public readonly Item mithril_arrow;
     public readonly Item mithril_crossbow_bolt;
     public readonly Item mithril_dagger;
+    public readonly Item mithril_dart;
     public readonly Item mithril_long_sword;
     public readonly Item mithril_short_sword;
     public readonly Item mithril_battleaxe;
@@ -15050,6 +15285,22 @@ namespace Pathos
     public readonly Item mithril_spear;
     public readonly Item mithril_twohanded_sword;
     public readonly Item mithril_whip;
+
+    // adamantine.
+    public readonly Item adamantine_arrow;
+    public readonly Item adamantine_bow;
+    public readonly Item adamantine_axe;
+    //public readonly Item adamantine_bident;
+    public readonly Item adamantine_greataxe;
+    public readonly Item adamantine_dagger;
+    public readonly Item adamantine_long_sword;
+    public readonly Item adamantine_greatsword;
+    public readonly Item adamantine_twohanded_sword;
+    public readonly Item adamantine_plate_mail;
+    public readonly Item adamantine_rapier;
+    public readonly Item adamantine_sabre;
+    public readonly Item adamantine_short_sword;
+    public readonly Item adamantine_spear;
 
     // dragon scales.
     public readonly Item black_dragon_scale_mail;

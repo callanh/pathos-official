@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Т�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Набор предметов для консервирования и упаковки трупов, состоящий из пустых банок и инструментов для разделки."
 ItemDescription,A compact hand-held firearm.,Компактное огнестрельное оружие.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Изогнутый однолезвийный клинок, нередко используемый кавалерией, особенно эффективен против существ из преисподней."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",Изогнутый жёлтый фрукт является отличным источником клетчатки.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Плоское метательное оружие из дерева, часто используемое для охоты."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",Плоский круглый торт. Представьте себе — готовится на сковороде.
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Крохотные металлические шипы, брошенные на землю препятствуют передвижению."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Крылатые сандалии из нерушимого золота, которые летают быстро и бесшумно."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах этим в сторону стены создаст большой тоннель.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,агат
 ItemName,aklys,аклис
 ItemName,alchemy smock,алхимический халат
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,резиновый шланг
 ItemName,ruby,рубин
 ItemName,Ruby Key,Рубиновый ключ
 ItemName,Runesword,Рунный меч
+ItemName,sabre,
 ItemName,sack,мешок
 ItemName,saddle,седло
 ItemName,sai,сай
@@ -3855,6 +3870,7 @@ LocalityName,Site,Место
 LocalityName,Square,Площадь
 LocalityName,World,Мир
 LocalityName,Zone,Зона
+MaterialName,adamantine,
 MaterialName,air,воздух
 MaterialName,animal,существо
 MaterialName,bone,кость

@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,착�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",시체를 압축해서 담기 위한 빈 통과 정육 도구등의 식기 모음.
 ItemDescription,A compact hand-held firearm.,휴대용 소형 화기.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",기병들이 주로 사용하는 구부러진 외날검. 지하세계의 존재들에게 특히 효과적이다.
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",훌륭한 섬유질 공급원인 구부러진 노란 과일.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",나무로 만든 납작한 투척 무기. 주로 사냥에 사용된다.
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","납작하고 동그란 케이크. 알고 있었겠지만, 팬으로 요리해서 만들었다."
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,바닥에 뿌려서 이동을 방해하도록 만들어진 작은 금속 가시.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,착용자를 빠르고 조용히 날게 하는 불변의 황금으로 만들어진 날개달린 샌들.
 ItemDescription,Zapping it at a wall creates a big tunnel.,벽에 사용하면 큰 터널이 생긴다.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,마노
 ItemName,aklys,아클리스
 ItemName,alchemy smock,연금술 작업복
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,고무 호스
 ItemName,ruby,루비
 ItemName,Ruby Key,루비 열쇠
 ItemName,Runesword,룬소드
+ItemName,sabre,
 ItemName,sack,자루
 ItemName,saddle,안장
 ItemName,sai,쌍차도
@@ -3855,6 +3870,7 @@ LocalityName,Site,지역
 LocalityName,Square,칸
 LocalityName,World,월드
 LocalityName,Zone,구역
+MaterialName,adamantine,
 MaterialName,air,공기
 MaterialName,animal,동물
 MaterialName,bone,뼈

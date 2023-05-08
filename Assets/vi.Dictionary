@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Mặ
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","1 bộ dụng cụ bao gồm những lọ rỗng và dụng cụ giết mổ, để đóng gói xác và đông đặc chúng."
 ItemDescription,A compact hand-held firearm.,1 khẩu súng nòng ngắn nhỏ gọn
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","1 cây kiếm lưỡi liềm thường dùng bởi kỵ binh, chúng rất hiệu quả với quái vật từ địa ngục."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",1 loại quả có hình cong và là 1 nguồn cung cấp chất xơ tốt.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","1 loại vũ khí thẳng làm từ gỗ, thường dùng để đi săn bắn."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",1 cái bánh hình tròn. Chắc chắn là rán trong chảo rồi.
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Những mảnh gai kim loại nhỏ bé này được ném xuống mặt đất để cản trở việc di chuyển.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Đôi dép quai hậu mọc cánh này được làm từ loại vàng siêu bền khiến người đeo nó bay một cách nhanh nhẹn và lặng lẽ.
 ItemDescription,Zapping it at a wall creates a big tunnel.,Vụt nó vào bức tường sẽ tạo nên 1 đường hầm.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,mã não
 ItemName,aklys,gậy gỗ
 ItemName,alchemy smock,áo sơ mi hóa học
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,ống dẫn nhựa
 ItemName,ruby,hồng ngọc
 ItemName,Ruby Key,Chìa Khóa Hồng Ngọc
 ItemName,Runesword,Runesword
+ItemName,sabre,
 ItemName,sack,túi
 ItemName,saddle,yên thú
 ItemName,sai,kiếm sai
@@ -3855,6 +3870,7 @@ LocalityName,Site,Site
 LocalityName,Square,Ô
 LocalityName,World,Thế giới
 LocalityName,Zone,Khu vực
+MaterialName,adamantine,
 MaterialName,air,không khí
 MaterialName,animal,động vật
 MaterialName,bone,xương

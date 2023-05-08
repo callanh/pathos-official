@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Egy
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","A tetemek tömörítéséhez használt eszközök gyűjteménye, ideértve az üres konzervdobozokat és a henteseszközöket."
 ItemDescription,A compact hand-held firearm.,Egy kompakt kézi lőfegyver.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Egy, a lovasság által gyakran használt, ívelt, egyélű penge, amely különösen hatékony az alvilág lényei ellen."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Egy ívelt alakú, rostokban gazdag sárga gyümölcs."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Fából készült, lapos dobófegyver, amelyet gyakran vadászatra használnak."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Egy lapos, kerek étel, amit - magától értetődően - serpenyőben készítenek."
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Apró, a mozgás akadályozására szolgáló, földre szórt fémtüskék."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Elpusztíthatatlan aranyból készült szárnyas szandál, amely gyorsan és csendesen repíti viselőjét."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Falon használva nagy alagutat hoz létre.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,agátkő
 ItemName,aklys,aklys
 ItemName,alchemy smock,alkimista köpeny
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,gumislag
 ItemName,ruby,rubint
 ItemName,Ruby Key,rubintkulcs
 ItemName,Runesword,Rúnakard
+ItemName,sabre,
 ItemName,sack,zsák
 ItemName,saddle,nyereg
 ItemName,sai,
@@ -3855,6 +3870,7 @@ LocalityName,Site,Helyszín
 LocalityName,Square,Tér
 LocalityName,World,Világ
 LocalityName,Zone,Zóna
+MaterialName,adamantine,
 MaterialName,air,levegő
 MaterialName,animal,állat
 MaterialName,bone,csont

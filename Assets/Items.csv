@@ -15,7 +15,7 @@ amulet,amulet,Eye of Aethiopica,,,,,iron,0,200,2000,1,FALSE,,ARTIFACT
 amulet,amulet,Philosophers Stone,,"Gazing into its crimson depths you can see the concentrated life essence of countless victims swirling inside of it. The artifact was completed in the moment of the creators' death, as his soul was claimed by his creation. Now residing among the souls of his former victims, his essence as an alchemist provides the stone with ultimate transmutative powers.",,,gemstone,0,200,5000,1,FALSE,,ARTIFACT
 armour,barding,chain barding,,,medium armour:5,,iron,10,6000,300,10,FALSE,,ARMOUR
 armour,barding,leather barding,,,light armour:3,,leather,10,2500,150,15,FALSE,,ARMOUR
-armour,barding,mithril barding,,,light armour:5,,mithril,10,3500,500,3,FALSE,,ARMOUR
+armour,barding,mithril barding,,,light armour:5,,mithril,10,3500,500,2,FALSE,,ARMOUR
 armour,barding,plate barding,,,heavy armour:7,,iron,10,9000,700,5,FALSE,,ARMOUR
 armour,barding,saddle,,,light armour:1,,leather,10,1500,50,20,FALSE,,ARMOUR
 armour,boots,disencumbrance boots,fur boots,,medium armour:1,,leather,100,200,50,15,FALSE,,ARMOUR
@@ -73,8 +73,9 @@ armour,shield,shield of reflection,polished silver shield,,heavy armour:2,,silve
 armour,shield,small shield,,"A lightweight protective panel strapped to the forearm, made from wood with metal reinforcement.",light armour:1,,wood,5,300,3,6,FALSE,,ARMOUR
 armour,shirt,hawaiian shirt,,"Bold, or just tacky?",light armour:0,,cloth,5,50,3,8,FALSE,,ARMOUR
 armour,shirt,t-shirt,,,light armour:0,,cloth,5,50,2,2,FALSE,,ARMOUR
+armour,suit,adamantine plate mail,,,heavy armour:8,,adamantine,15,4500,12000,2,FALSE,,ARMOUR
 armour,suit,banded mail,,,heavy armour:6,,iron,10,3500,90,45,FALSE,,ARMOUR
-armour,suit,battle robe,red robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,1,FALSE,,ARMOUR
+armour,suit,battle robe,red robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,2,FALSE,,ARMOUR
 armour,suit,black dragon scale mail,,,light armour:6,,hide,100,600,1200,0,FALSE,,ARMOUR
 armour,suit,black dragon scales,,,light armour:3,,hide,50,400,700,0,FALSE,,ARMOUR
 armour,suit,blue dragon scale mail,,,light armour:6,,hide,100,600,900,0,FALSE,,ARMOUR
@@ -87,14 +88,14 @@ armour,suit,dark elven mithril-coat,glossy mithril-coat,,light armour:5,,mithril
 armour,suit,deep dragon scale mail,,,light armour:6,,hide,100,600,1200,0,FALSE,,ARMOUR
 armour,suit,deep dragon scales,,,light armour:3,,hide,50,400,500,0,FALSE,,ARMOUR
 armour,suit,dwarvish mithril-coat,stout mithril-coat,,medium armour:6,,mithril,20,2500,240,3,FALSE,,ARMOUR
-armour,suit,elemental robe,green robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,1,FALSE,,ARMOUR
+armour,suit,elemental robe,green robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,2,FALSE,,ARMOUR
 armour,suit,elven mithril-coat,fine mithril-coat,,light armour:5,,mithril,20,1500,240,4,FALSE,,ARMOUR
-armour,suit,fleet robe,blue robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,1,FALSE,,ARMOUR
+armour,suit,fleet robe,blue robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,250,2,FALSE,,ARMOUR
 armour,suit,gold dragon scale mail,,,light armour:6,,hide,100,600,1200,0,FALSE,,ARMOUR
 armour,suit,gold dragon scales,,,light armour:3,,hide,50,400,700,0,FALSE,,ARMOUR
 armour,suit,green dragon scale mail,,,light armour:6,,hide,100,600,900,0,FALSE,,ARMOUR
 armour,suit,green dragon scales,,,light armour:3,,hide,50,400,500,0,FALSE,,ARMOUR
-armour,suit,hermit robe,orange robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,50,1,FALSE,,ARMOUR
+armour,suit,hermit robe,orange robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,50,400,50,2,FALSE,,ARMOUR
 armour,suit,leather armour,,"Boiled leather, moulded into a bodily shape to be donned as light armour.",light armour:2,,leather,10,1500,5,45,FALSE,,ARMOUR
 armour,suit,leather jacket,,"A thick leather coat, constructed to withstand weather and wear.",light armour:1,,leather,5,300,10,11,FALSE,,ARMOUR
 armour,suit,mithril plate mail,,,medium armour:7,,mithril,20,3500,920,2,FALSE,,ARMOUR
@@ -106,7 +107,7 @@ armour,suit,plate mail,,,heavy armour:7,,iron,10,4500,600,30,FALSE,,ARMOUR
 armour,suit,red dragon scale mail,,,light armour:6,,hide,100,600,900,0,FALSE,,ARMOUR
 armour,suit,red dragon scales,,,light armour:3,,hide,50,400,500,0,FALSE,,ARMOUR
 armour,suit,ring mail,,A suit of armour made from metal rings sewn onto a foundation of leather or cloth.,medium armour:3,,iron,10,2500,60,40,FALSE,,ARMOUR
-armour,suit,robe,plain robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,5,400,25,1,FALSE,,ARMOUR
+armour,suit,robe,plain robe,"A long, flowing garment, with long sleeves and a hood.",light armour:1,,cloth,5,400,25,2,FALSE,,ARMOUR
 armour,suit,scale mail,,,medium armour:4,,iron,10,2500,65,40,FALSE,,ARMOUR
 armour,suit,shimmering dragon scale mail,,,light armour:6,,hide,100,600,1200,0,FALSE,,ARMOUR
 armour,suit,shimmering dragon scales,,,light armour:3,,hide,50,400,700,0,FALSE,,ARMOUR
@@ -197,12 +198,12 @@ food,food,fish,,"A slimy, scaly sea creature, in its entirety. Good for a meal."
 food,food,food ration,,"A hearty, multi-portioned and nutritious vegetarian meal.",,,vegetable,5,200,45,380,FALSE,,
 food,food,fortune cookie,,An inconspicuous snack that tells deep secrets.,,,vegetable,10,10,7,55,FALSE,,
 food,food,holy wafer,,"A sanctimonious biscuit. A miracle to the meek, a scourge to the undead.",,,vegetable,10,10,12,7,FALSE,,
-food,food,huge chunk of meat,,,,,animal,5,4000,105,1,FALSE,,
+food,food,huge chunk of meat,,,,,animal,5,4000,105,2,FALSE,,
 food,food,iron ration,,"A package of preserved meats, all dried and chewy.",,,animal,5,200,35,71,FALSE,,
 food,food,kelp frond,,,,,vegetable,5,10,6,0,FALSE,,
 food,food,k-ration,,,,,vegetable,5,100,25,13,FALSE,,
 food,food,lembas wafer,thin cake,An elven travel food. It is incredibly satiating.,,,vegetable,25,50,45,20,FALSE,,
-food,food,lump of royal jelly,sticky glob,,,,animal,50,20,15,1,FALSE,,
+food,food,lump of royal jelly,sticky glob,,,,animal,50,20,15,2,FALSE,,
 food,food,meat ring,,,,,animal,5,50,1,4,FALSE,,
 food,food,meat stick,,A stick of cured meat.,,,animal,5,50,5,4,FALSE,,
 food,food,meatball,,,,,animal,5,25,5,4,FALSE,,
@@ -372,20 +373,20 @@ tool,eyewear,kaleidoscope glasses,glasses,,,,glass,40,30,20,5,FALSE,,
 tool,eyewear,lenses,glasses,,,,glass,40,30,160,5,FALSE,,
 tool,eyewear,shades,glasses,,,,glass,40,30,160,5,FALSE,,
 tool,eyewear,spectacles,glasses,,,,glass,100,30,350,5,FALSE,,
-tool,instrument,bell of harmony,bell,,,,silver,40,300,250,1,FALSE,,
-tool,instrument,bell of resources,bell,,,,silver,40,300,300,1,FALSE,,
-tool,instrument,bell of secrets,bell,,,,silver,40,300,200,1,FALSE,,
-tool,instrument,bell of strife,bell,,,,silver,40,300,150,1,FALSE,,
+tool,instrument,bell of harmony,bell,,,,silver,40,300,250,2,FALSE,,
+tool,instrument,bell of resources,bell,,,,silver,40,300,300,2,FALSE,,
+tool,instrument,bell of secrets,bell,,,,silver,40,300,200,2,FALSE,,
+tool,instrument,bell of strife,bell,,,,silver,40,300,150,2,FALSE,,
 tool,instrument,brass bugle,bugle,A hand-held brass horn.,,,copper,5,100,15,4,FALSE,,
 tool,instrument,bronze bell,bell,,,,copper,5,300,10,10,FALSE,,
-tool,instrument,drum of earthquake,drum,,,,leather,100,250,25,1,FALSE,,
-tool,instrument,fire horn,horn,,,,bone,50,180,50,1,FALSE,,
-tool,instrument,frost horn,horn,,,,bone,50,180,50,1,FALSE,,
-tool,instrument,horn of plenty,horn,,,,bone,100,180,50,1,FALSE,,
+tool,instrument,drum of earthquake,drum,,,,leather,100,250,25,2,FALSE,,
+tool,instrument,fire horn,horn,,,,bone,50,180,50,2,FALSE,,
+tool,instrument,frost horn,horn,,,,bone,50,180,50,2,FALSE,,
+tool,instrument,horn of plenty,horn,,,,bone,100,180,50,2,FALSE,,
 tool,instrument,leather drum,drum,,,,leather,5,250,25,2,FALSE,,
-tool,instrument,magic bugle,bugle,,,,copper,50,100,35,1,FALSE,,
-tool,instrument,magic flute,flute,,,,wood,50,50,36,1,FALSE,,
-tool,instrument,magic harp,harp,,,,wood,50,300,150,1,FALSE,,
+tool,instrument,magic bugle,bugle,,,,copper,50,100,35,2,FALSE,,
+tool,instrument,magic flute,flute,,,,wood,50,50,36,2,FALSE,,
+tool,instrument,magic harp,harp,,,,wood,50,300,150,2,FALSE,,
 tool,instrument,magic whistle,whistle,,,,tin,50,30,100,25,FALSE,,
 tool,instrument,tin whistle,whistle,,,,tin,5,30,10,63,FALSE,,
 tool,instrument,tooled horn,horn,,,,bone,5,180,15,4,FALSE,,
@@ -393,7 +394,7 @@ tool,instrument,wooden flute,flute,,,,wood,5,50,12,4,FALSE,,
 tool,instrument,wooden harp,harp,,,,wood,5,300,50,4,FALSE,,
 tool,light,Illuminare,,,,,iron,0,30,1200,1,FALSE,zap:AreaOfEffect:fear|/:0,ARTIFACT|LIGHT
 tool,light,lantern,,,,,copper,10,300,12,15,FALSE,,LIGHT
-tool,light,magic candle,candle,,,,wax,50,50,100,1,FALSE,,LIGHT
+tool,light,magic candle,candle,,,,wax,50,50,100,2,FALSE,,LIGHT
 tool,light,magic lamp,lamp,,,,copper,50,200,1000,10,FALSE,,LIGHT
 tool,light,oil lamp,lamp,A portable source of light fashioned out of copper and fuelled by oil.,,,copper,10,200,10,25,FALSE,,LIGHT
 tool,light,Prudentia,,This glowing looking glass reveals glimpses of the future and corrupts your soul.,,,iron,0,30,1000,1,FALSE,,ARTIFACT|LIGHT
@@ -456,6 +457,14 @@ wand,wand,wand of teleportation,iridium wand,,,,platinum,50,70,200,45,FALSE,zap:
 wand,wand,wand of theft,gold wand,,,,gold,50,70,175,45,FALSE,zap:Blast:|/:0,
 wand,wand,wand of undead turning,copper wand,,,,copper,40,70,150,45,FALSE,,
 wand,wand,Witherloch,,This withered hand is the last remnant of an ancient and powerful lich.,,,animal,0,100,900,1,FALSE,,ARTIFACT
+weapon,melee weapon,adamantine axe,,,,axe: 1d7+1,adamantine,15,600,160,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine greataxe,,,,axe: 2d6+2,adamantine,15,1200,800,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine greatsword,,,,heavy blade: 1d10,adamantine,15,700,200,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine long sword,,,,heavy blade: 1d8,adamantine,15,400,300,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine rapier,,,,medium blade: 1d6+1,adamantine,15,300,800,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine sabre,,,,medium blade: 1d6+2,adamantine,15,400,400,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine short sword,,,,medium blade: 1d6,adamantine,15,300,200,2,FALSE,,WEAPON
+weapon,melee weapon,adamantine two-handed sword,,,,heavy blade: 1d12+2,adamantine,15,800,1000,2,FALSE,,WEAPON
 weapon,melee weapon,Ancient Katana,,This old katana has been battered and broken through a million battles. Hardly more than a scrap of metal and wood and yet it flickers with a strange power.,,medium blade: 1d5,iron,0,200,50,1,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,athame,,,,light blade: 1d4,iron,10,100,4,10,FALSE,,WEAPON
 weapon,melee weapon,axe,,A sharp iron wedge fashioned to a sturdy handle.,,axe: 1d7,iron,5,600,8,35,FALSE,,WEAPON
@@ -490,12 +499,12 @@ weapon,melee weapon,Magistrator,,,,mace: 2d6+2,gold,0,600,1500,1,FALSE,,ARTIFACT
 weapon,melee weapon,main gauche,,,light armour:1,light blade: 1d2,iron,10,50,4,10,FALSE,,WEAPON|ARMOUR
 weapon,melee weapon,Masamune,,A righteous sword forged by a revered blacksmith many years ago who set out to hone his craft and to create the ultimate blade. The noble intent of its creator lingers in this weapon to cut down the wicked and protect the innocent.,,heavy blade: 4d4,iron,0,320,1500,0,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,Maulfrost,,,,hammer: 2d8+2,iron,0,1200,1400,1,FALSE,,ARTIFACT|WEAPON
-weapon,melee weapon,mithril battle-axe,,,,axe: 2d6+1,mithril,25,600,400,1,FALSE,,WEAPON
-weapon,melee weapon,mithril katar,,,,unarmed combat: 1d5+1,mithril,25,125,80,1,FALSE,,WEAPON
-weapon,melee weapon,mithril long sword,,,,heavy blade: 1d8+1,mithril,25,200,150,1,FALSE,,WEAPON
-weapon,melee weapon,mithril sabre,,,,medium blade: 1d6+2,mithril,25,200,150,1,FALSE,,WEAPON
-weapon,melee weapon,mithril short sword,,,,medium blade: 1d6+1,mithril,25,150,100,1,FALSE,,WEAPON
-weapon,melee weapon,mithril two-handed sword,,,,heavy blade: 1d12+1,mithril,25,400,500,1,FALSE,,WEAPON
+weapon,melee weapon,mithril battle-axe,,,,axe: 2d6+1,mithril,25,600,400,2,FALSE,,WEAPON
+weapon,melee weapon,mithril katar,,,,unarmed combat: 1d5+1,mithril,25,125,80,2,FALSE,,WEAPON
+weapon,melee weapon,mithril long sword,,,,heavy blade: 1d8+1,mithril,25,200,150,2,FALSE,,WEAPON
+weapon,melee weapon,mithril sabre,,,,medium blade: 1d6+2,mithril,25,200,150,2,FALSE,,WEAPON
+weapon,melee weapon,mithril short sword,,,,medium blade: 1d6+1,mithril,25,150,100,2,FALSE,,WEAPON
+weapon,melee weapon,mithril two-handed sword,,,,heavy blade: 1d12+1,mithril,25,400,500,2,FALSE,,WEAPON
 weapon,melee weapon,morning star,,A mace that is spiked on its head.,,mace: 2d4,iron,5,1200,10,12,FALSE,,WEAPON
 weapon,melee weapon,Muramasa,,The final sword forged by a once respected blacksmith who lost himself in the depths of the dungeon. His warped soul now inhabits this blade and lusts for blood. It is said that the one who wields this sword is coerced into cutting down friend and foe alike.,,medium blade: 2d4,iron,0,240,1000,0,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,nunchaku,,,,flail: 1d3+1,wood,10,150,20,4,FALSE,,WEAPON
@@ -503,6 +512,7 @@ weapon,melee weapon,orcish short sword,crude short sword,,,medium blade: 1d5,iro
 weapon,melee weapon,quarterstaff,staff,A hardwood pole. It is an unassuming but formidable weapon in trained hands.,,staff: 1d6,wood,5,400,5,11,FALSE,,WEAPON
 weapon,melee weapon,rapier,,A thin and agile sword meant almost exclusively for thrusting.,,medium blade: 1d6,iron,5,300,40,10,FALSE,,WEAPON
 weapon,melee weapon,Runesword,,,,heavy blade: 1d6,iron,0,400,950,1,FALSE,,ARTIFACT|WEAPON
+weapon,melee weapon,sabre,,A curved single-edged blade often used by cavalry.,,medium blade: 1d6+1,iron,5,400,20,17,FALSE,,WEAPON
 weapon,melee weapon,sai,,,light armour:1,light blade: 1d3,iron,10,60,15,4,FALSE,,WEAPON|ARMOUR
 weapon,melee weapon,scalpel,,An extremely sharp little blade used for precise incisions.,,light blade: 1d3,iron,5,50,4,10,FALSE,,WEAPON
 weapon,melee weapon,scimitar,curved sword,This is a sword weapon with a long curved design.,,heavy blade: 1d8,iron,5,400,15,15,FALSE,,WEAPON
@@ -512,7 +522,7 @@ weapon,melee weapon,silver axe,,,,axe: 1d7,silver,15,720,40,2,FALSE,,WEAPON
 weapon,melee weapon,silver heavy hammer,,,,hammer: 2d4+1,silver,15,720,50,2,FALSE,,WEAPON
 weapon,melee weapon,silver long sword,,,,heavy blade: 1d8,silver,15,480,75,2,FALSE,,WEAPON
 weapon,melee weapon,silver mace,,,,mace: 1d6,silver,15,360,25,2,FALSE,,WEAPON
-weapon,melee weapon,silver sabre,,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",,medium blade: 1d6+1,silver,15,400,75,27,FALSE,,WEAPON
+weapon,melee weapon,silver sabre,,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",,medium blade: 1d6+1,silver,15,400,75,2,FALSE,,WEAPON
 weapon,melee weapon,silver short sword,,,,medium blade: 1d6,silver,15,360,50,2,FALSE,,WEAPON
 weapon,melee weapon,silver two-handed sword,,,,heavy blade: 1d12,silver,15,960,250,2,FALSE,,WEAPON
 weapon,melee weapon,stiletto,,,,light blade: 1d3,iron,5,50,4,5,FALSE,,WEAPON
@@ -522,20 +532,21 @@ weapon,melee weapon,thunder staff,crystal staff,,,staff: 1d7,crystal,50,800,500,
 weapon,melee weapon,tsurugi,long samurai sword,,,heavy blade: 1d16,iron,10,600,100,2,FALSE,,WEAPON
 weapon,melee weapon,two-handed sword,,"A heavy and long double-edged blade. Similar to a long sword, scaled-up specifically for two-handed usage.",,heavy blade: 1d12,iron,5,800,50,25,FALSE,,WEAPON
 weapon,melee weapon,Verimurus,,"A surviving portion of the legendary wall of Verimurus, an ancient elven city said to have lasted since time immemorial. However, not even the mightiest walls could withstand the endless onslaught of the dragons. Now the enchanted walls stand alone over the land that once held them.",heavy armour:8,hammer: 2d4,stone,0,5000,1350,1,FALSE,,ARTIFACT|WEAPON|ARMOUR
-weapon,melee weapon,Vorpal Blade,,,,heavy blade: 1d8,mithril,0,400,1800,1,FALSE,,ARTIFACT|WEAPON
+weapon,melee weapon,Vorpal Blade,,,,heavy blade: 1d8,adamantine,0,400,1800,1,FALSE,,ARTIFACT|WEAPON
 weapon,melee weapon,wakizashi,short samurai sword,"Like a smaller variant of the katana, often used as a side-arm.",,medium blade: 1d7,iron,10,300,40,4,FALSE,,WEAPON
 weapon,melee weapon,war club,,,,club: 2d5,wood,5,600,60,11,FALSE,,WEAPON
 weapon,melee weapon,war hammer,,A heavy iron hammer designed specifically for use in melee combat.,,hammer: 1d4+1,iron,5,500,5,25,FALSE,,WEAPON
 weapon,melee weapon,worm tooth,,,,light blade: 1d2,bone,10,200,2,0,FALSE,,WEAPON
+weapon,ranged missile,adamantine arrow,,,,bow: 1d6+1,adamantine,15,10,40,2,TRUE,,WEAPON
 weapon,ranged missile,arrow,,A projectile consisting of a wooden shaft with a sharp metal tip at its front and stabilising fins at its rear.,,bow: 1d6,iron,1,10,2,50,TRUE,,WEAPON
 weapon,ranged missile,bullet,metal slug,A pointed metal cylinder meant to be discharged from a firearm.,,firearms: 1d20,iron,2,5,5,0,TRUE,,WEAPON
 weapon,ranged missile,Creeping Sprout,,,,bow: 1d6,wood,0,15,600,1,TRUE,,ARTIFACT|WEAPON
 weapon,ranged missile,crossbow bolt,,An iron projectile made up of a shaft with a sharpened square-pyramid tip.,,crossbow: 1d4+1,iron,1,10,2,45,TRUE,,WEAPON
 weapon,ranged missile,dark elven arrow,black runed arrow,,,bow: 1d7,mithril,2,10,2,13,TRUE,,WEAPON
 weapon,ranged missile,elven arrow,runed arrow,,,bow: 1d7,wood,2,10,2,25,TRUE,,WEAPON
-weapon,ranged missile,mithril arrow,,,,bow: 1d6+1,mithril,3,5,20,1,TRUE,,WEAPON
+weapon,ranged missile,mithril arrow,,,,bow: 1d6+1,mithril,3,5,20,2,TRUE,,WEAPON
 weapon,ranged missile,mithril bullet,mithril slug,,,firearms: 1d25,mithril,4,3,45,0,TRUE,,WEAPON
-weapon,ranged missile,mithril crossbow bolt,,,,crossbow: 1d4+2,mithril,3,5,20,1,TRUE,,WEAPON
+weapon,ranged missile,mithril crossbow bolt,,,,crossbow: 1d4+2,mithril,3,5,20,2,TRUE,,WEAPON
 weapon,ranged missile,orcish arrow,crude arrow,,,bow: 1d5,iron,1,10,2,15,TRUE,,WEAPON
 weapon,ranged missile,rocket,winged missile,,,firearms: 0,iron,15,500,200,0,TRUE,,WEAPON
 weapon,ranged missile,shotgun shell,plastic slug,,,firearms: 1d30,plastic,2,10,5,0,TRUE,,WEAPON
@@ -543,6 +554,7 @@ weapon,ranged missile,silver arrow,,,,bow: 1d6,silver,2,12,10,2,TRUE,,WEAPON
 weapon,ranged missile,silver bullet,silver slug,,,firearms: 1d20,silver,3,5,15,0,TRUE,,WEAPON
 weapon,ranged missile,silver crossbow bolt,,,,crossbow: 1d4+1,silver,2,12,10,2,TRUE,,WEAPON
 weapon,ranged missile,ya,bamboo arrow,A long-shafted arrow with a distinctive tip.,,bow: 1d7,iron,1,10,4,10,TRUE,,WEAPON
+weapon,ranged weapon,adamantine bow,,,,bow: 1d4,adamantine,15,300,1200,2,FALSE,,WEAPON
 weapon,ranged weapon,assault rifle,large gun,,,firearms: 1d4,iron,25,400,350,0,FALSE,,WEAPON
 weapon,ranged weapon,auto shotgun,heavy barrelled gun,,,firearms: 1d4,iron,25,350,350,0,FALSE,,WEAPON
 weapon,ranged weapon,blowgun,,A long pipe meant for shooting darts through force of breath.,,dart: +1,wood,5,30,20,20,FALSE,,WEAPON
@@ -565,7 +577,8 @@ weapon,ranged weapon,shotgun,long barrelled gun,"A two-handed firearm, steadied 
 weapon,ranged weapon,sling,,"A leather pouch set between two cords, meant for launching small projectiles.",,sling: +1,leather,5,30,20,40,FALSE,,WEAPON
 weapon,ranged weapon,sniper rifle,scoped long gun,,,firearms: 1d4,iron,25,500,800,0,FALSE,,WEAPON
 weapon,ranged weapon,submachine gun,compact gun,,,firearms: 1d4,iron,25,250,200,0,FALSE,,WEAPON
-weapon,ranged weapon,yumi,long bow,"A tall, asymmetric bow.",,bow: +1,wood,5,300,60,1,FALSE,,WEAPON
+weapon,ranged weapon,yumi,long bow,"A tall, asymmetric bow.",,bow: +1,wood,5,300,60,2,FALSE,,WEAPON
+weapon,reach weapon,adamantine spear,,,,spear: 1d6+1,adamantine,15,350,60,2,FALSE,,WEAPON
 weapon,reach weapon,bardiche,long poleaxe,"This is a pole weapon with a long, cleaver type blade.",,polearm: 2d4,iron,5,1200,7,2,FALSE,,WEAPON
 weapon,reach weapon,bec de corbin,beaked polearm,This is a pole weapon consisting of a modified hammer head and spike mounted atop a long pole.,,polearm: 1d8,iron,5,1000,8,2,FALSE,,WEAPON
 weapon,reach weapon,bill-guisarme,hooked polearm,"This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head, and also a hook or spike mounted on the reverse side of the blade.",,polearm: 2d4,iron,5,1200,7,2,FALSE,,WEAPON
@@ -582,8 +595,8 @@ weapon,reach weapon,iron chain,,,,whip: 1d3,iron,10,1200,10,0,FALSE,,WEAPON
 weapon,reach weapon,lance,,A long thrusting polearm best suited to mounted combat.,,lance: 1d6,iron,5,1800,10,3,FALSE,,WEAPON
 weapon,reach weapon,Lashing Tongue,,This curious artifact somehow chastens those it strikes and submits them to your will.,,whip: 1d6,leather,0,200,1000,1,FALSE,,ARTIFACT|WEAPON
 weapon,reach weapon,lucern hammer,pronged polearm,This hammer is a four-pronged head mounted atop a long polearm stick. It bears a long spike on its reverse and an even longer spike extending from the very top. It proves effective at puncturing or smashing armour as well as dismounting riders.,,polearm: 2d4,iron,5,1500,7,3,FALSE,,WEAPON
-weapon,reach weapon,mithril lance,,,,lance: 1d6+1,mithril,25,900,100,1,FALSE,,WEAPON
-weapon,reach weapon,mithril spear,,,,spear: 1d6+1,mithril,25,175,30,1,FALSE,,WEAPON
+weapon,reach weapon,mithril lance,,,,lance: 1d6+1,mithril,25,900,100,2,FALSE,,WEAPON
+weapon,reach weapon,mithril spear,,,,spear: 1d6+1,mithril,25,175,30,2,FALSE,,WEAPON
 weapon,reach weapon,mithril whip,,,,whip: 1d4+1,mithril,25,100,40,2,FALSE,,WEAPON
 weapon,reach weapon,orcish spear,crude spear,,,spear: 1d5,iron,10,350,3,13,FALSE,,WEAPON
 weapon,reach weapon,partisan,vulgar polearm,This weapon consists of a spearhead mounted on a long wooden shaft with protrusions on the sides which aided in parrying sword thrusts.,,polearm: 1d6,iron,5,800,10,3,FALSE,,WEAPON
@@ -597,6 +610,7 @@ weapon,reach weapon,spetum,forked polearm,This weapon consists of a long pole wi
 weapon,reach weapon,trident,three-pointed polearm,,,polearm: 1d6+1,iron,5,250,5,2,FALSE,,WEAPON
 weapon,reach weapon,Voltaic,,,,spear: 2d6+2,platinum,0,600,1200,1,FALSE,,ARTIFACT|WEAPON
 weapon,reach weapon,voulge,pole cleaver,"This weapon is a curved blade attached to a pole by binding the lower two-thirds of the blade to the side of the pole, to form a sort of axe.",,polearm: 2d4,iron,5,1250,5,2,FALSE,,WEAPON
+weapon,thrown weapon,adamantine dagger,,,,light blade: 1d4+1,adamantine,15,100,80,2,TRUE,,WEAPON
 weapon,thrown weapon,aklys,thonged club,,,club: 1d6,wood,5,150,4,16,TRUE,,WEAPON
 weapon,thrown weapon,boomerang,throwing stick,"A flat throwing weapon made of wood, often used for hunting.",,disc: 1d7,wood,10,50,20,15,TRUE,,WEAPON
 weapon,thrown weapon,chakram,throwing disc,,,disc: 1d8,iron,5,50,10,15,TRUE,,WEAPON
@@ -611,8 +625,8 @@ weapon,thrown weapon,hatchet,throwing axe,,,axe: 1d6,iron,5,350,6,15,TRUE,,WEAPO
 weapon,thrown weapon,horseshoe,,,,disc: 1d5,iron,10,250,5,15,TRUE,,WEAPON
 weapon,thrown weapon,javelin,throwing spear,This is a light spear designed to be thrown by hand.,,spear: 1d6,iron,5,200,3,10,TRUE,,WEAPON
 weapon,thrown weapon,magic horseshoe,horseshoe,,,disc: 1d10,iron,50,250,50,2,TRUE,,WEAPON
-weapon,thrown weapon,mithril dagger,,,,light blade: 1d4+1,mithril,25,50,40,1,TRUE,,WEAPON
-weapon,thrown weapon,mithril dart,,,,dart: 1d3+1,mithril,2,5,10,5,TRUE,,WEAPON
+weapon,thrown weapon,mithril dagger,,,,light blade: 1d4+1,mithril,25,50,40,2,TRUE,,WEAPON
+weapon,thrown weapon,mithril dart,,,,dart: 1d3+1,mithril,2,5,10,2,TRUE,,WEAPON
 weapon,thrown weapon,orcish dagger,crude dagger,This crudely made blade is still an effective throwing weapon.,,light blade: 1d3,iron,10,100,4,10,TRUE,,WEAPON
 weapon,thrown weapon,poison dart,,A small missile with a reservoir of liquid delivered through a hollow pointed tip.,,dart: 1d2,iron,2,15,4,15,TRUE,,WEAPON
 weapon,thrown weapon,shuriken,throwing star,"A sharp metal throwing weapon, smaller than a hand and shaped like a star.",,disc: 1d6,iron,5,10,5,35,TRUE,,WEAPON

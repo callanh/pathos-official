@@ -28,6 +28,7 @@ namespace Pathos
         });
       }
 
+      adamantine = AddMaterial("adamantine", Elements.physical, Corporeal: true);
       air = AddMaterial("air", Elements.physical, Corporeal: false);
       animal = AddMaterial("animal", Elements.physical, Corporeal: true);
       bone = AddMaterial("bone", Elements.physical, Corporeal: true);
@@ -76,6 +77,7 @@ namespace Pathos
     }
 #endif
 
+    public readonly Material adamantine;
     public readonly Material air;
     public readonly Material animal;
     public readonly Material bone;

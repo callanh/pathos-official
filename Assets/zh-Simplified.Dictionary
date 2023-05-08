@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,阻�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",一组家什，包括空罐头和屠宰工具，用来打包尸体使其防腐。
 ItemDescription,A compact hand-held firearm.,小型手持火器。
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",常被骑兵使用的弯单刃，对下界生物尤其有效。
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",弯曲的黄色水果，提供大量纤维。
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",扁平的木制投掷武器，常用于狩猎。
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",一块又圆又扁的饼。用煎锅做的，你可能已经猜到了。
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,用来扔在地上延缓移动的小金属刺。
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,用不朽之金制成的带翼凉鞋，可以使穿戴者迅捷且无声地飞行。
 ItemDescription,Zapping it at a wall creates a big tunnel.,对着墙壁使用可以制造一个巨大的隧道。
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,玛瑙
 ItemName,aklys,飞钩杖
 ItemName,alchemy smock,炼金工作衫
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,橡胶管
 ItemName,ruby,红宝石
 ItemName,Ruby Key,红宝石钥匙
 ItemName,Runesword,符文剑
+ItemName,sabre,
 ItemName,sack,口袋
 ItemName,saddle,马鞍
 ItemName,sai,十手
@@ -3855,6 +3870,7 @@ LocalityName,Site,站点
 LocalityName,Square,广场
 LocalityName,World,世界
 LocalityName,Zone,区域
+MaterialName,adamantine,
 MaterialName,air,空气
 MaterialName,animal,动物
 MaterialName,bone,骨头

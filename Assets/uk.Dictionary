@@ -2215,6 +2215,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"М�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",
 ItemDescription,A compact hand-held firearm.,Компактна ручна вогнепальна зброя.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Округлий фрукт, чудове джерело клітчатки."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Пласка дерев’яна метальна зброя, зазвичай використовується на полюванні."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Плаский круглий пиріг. Випікається у сковорідці, як ви, напевно, здогадалися."
@@ -2338,6 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах цим в сторону стіни створить великий тунель.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,агат
 ItemName,aklys,акліс
 ItemName,alchemy smock,алхімічний халат
@@ -2797,6 +2811,7 @@ ItemName,rubber hose,гумовий шланг
 ItemName,ruby,рубін
 ItemName,Ruby Key,рубіновий ключ
 ItemName,Runesword,рунічний меч
+ItemName,sabre,
 ItemName,sack,торба
 ItemName,saddle,сідло
 ItemName,sai,
@@ -3855,6 +3870,7 @@ LocalityName,Site,Місце
 LocalityName,Square,Площа
 LocalityName,World,Світ
 LocalityName,Zone,Зона
+MaterialName,adamantine,
 MaterialName,air,повітря
 MaterialName,animal,тварина
 MaterialName,bone,кістка
