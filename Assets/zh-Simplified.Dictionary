@@ -2214,8 +2214,8 @@ IdentifyTypeName,One,一个
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,阻挡穿戴者视野的布面具。
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",一组家什，包括空罐头和屠宰工具，用来打包尸体使其防腐。
 ItemDescription,A compact hand-held firearm.,小型手持火器。
-ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",常被骑兵使用的弯单刃，对下界生物尤其有效。
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",一把单刃的弯刀，常由骑兵使用。对下界生物尤其有效。
+ItemDescription,A curved single-edged blade often used by cavalry.,一把单刃的弯刀，常由骑兵使用。
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",弯曲的黄色水果，提供大量纤维。
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",扁平的木制投掷武器，常用于狩猎。
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",一块又圆又扁的饼。用煎锅做的，你可能已经猜到了。
@@ -2339,19 +2339,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,用来扔在地上延缓移动的小金属刺。
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,用不朽之金制成的带翼凉鞋，可以使穿戴者迅捷且无声地飞行。
 ItemDescription,Zapping it at a wall creates a big tunnel.,对着墙壁使用可以制造一个巨大的隧道。
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine arrow,精金箭
+ItemName,adamantine axe,精金斧
+ItemName,adamantine bow,精金弓
+ItemName,adamantine dagger,精金匕首
+ItemName,adamantine greataxe,精金战斧
+ItemName,adamantine greatsword,精金大剑
+ItemName,adamantine long sword,精金长剑
+ItemName,adamantine plate mail,精金板甲
+ItemName,adamantine rapier,精金细剑
+ItemName,adamantine sabre,精金马刀
+ItemName,adamantine short sword,精金短剑
+ItemName,adamantine spear,精金矛
+ItemName,adamantine two-handed sword,精金双手剑
 ItemName,agate,玛瑙
 ItemName,aklys,飞钩杖
 ItemName,alchemy smock,炼金工作衫
@@ -2811,7 +2811,7 @@ ItemName,rubber hose,橡胶管
 ItemName,ruby,红宝石
 ItemName,Ruby Key,红宝石钥匙
 ItemName,Runesword,符文剑
-ItemName,sabre,
+ItemName,sabre,马刀
 ItemName,sack,口袋
 ItemName,saddle,马鞍
 ItemName,sai,十手
@@ -3284,11 +3284,11 @@ LiteralText,Disable continue button,关闭继续按钮
 LiteralText,disable haptic feedback,关闭震动反馈
 LiteralText,Disable idle animations,关闭闲置动画
 LiteralText,Disable introduction boom,关闭开场音效
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,禁用屏幕遮罩效果
 LiteralText,Disable online services,禁用联网功能
 LiteralText,Disable pitch shifting,禁止随机音效音量
 LiteralText,Disable spacebar real-time toggle,禁用通过空格开关实时游戏
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,禁用平滑转场效果
 LiteralText,DISCONNECT,断开连接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,無法連接網絡，請檢查網絡連線和所有裝置的pathos的版本為相同版本
 LiteralText,Discuss on Reddit,在Reddit上讨论
@@ -3870,7 +3870,7 @@ LocalityName,Site,站点
 LocalityName,Square,广场
 LocalityName,World,世界
 LocalityName,Zone,区域
-MaterialName,adamantine,
+MaterialName,adamantine,精金
 MaterialName,air,空气
 MaterialName,animal,动物
 MaterialName,bone,骨头
