@@ -193,9 +193,9 @@ namespace Pathos
         DipUse.Apply.ConvertAsset(Stocks.book, WholeStack: true, Items.book_of_blank_paper);
         DipUse.Apply.WithSourceSanctity
         (
-          B => B.Sanctify(null, Sanctities.Blessed),
+          B => B.Sanctify(Item: null, Sanctities.Blessed),
           U => U.Nothing(),
-          C => C.Sanctify(null, Sanctities.Cursed)
+          C => C.Sanctify(Item: null, Sanctities.Cursed)
         );
         Abuse(DipUse.Apply);
 
@@ -204,9 +204,9 @@ namespace Pathos
         AnointUse.Apply.Harm(Elements.water, Dice.Zero);
         AnointUse.Apply.WithSourceSanctity
         (
-          B => B.Sanctify(null, Sanctities.Blessed),
+          B => B.Sanctify(Item: null, Sanctities.Blessed),
           U => U.Nothing(),
-          C => C.Sanctify(null, Sanctities.Cursed)
+          C => C.Sanctify(Item: null, Sanctities.Cursed)
         );
         Abuse(AnointUse.Apply);
 
@@ -365,7 +365,7 @@ namespace Pathos
           Table.Add(1, A =>
           {
             A.ApplyTransient(Properties.blindness, 1.d100() + 250);
-            A.Sanctify(null, Sanctities.Cursed);
+            A.PlaceCurse(Dice.One, Sanctities.Cursed);
           });
           Table.Add(1, A => A.Mapping(Range.Sq30, Chance.Always));
           Table.Add(1, A => A.GainTalent(Properties.see_invisible));

@@ -27,7 +27,7 @@ namespace Pathos
       {
         G.Name = "exotic";
         G.Unique = false;
-        G.Indestructible = true;
+        G.Indestructible = false;
         G.MinimumEnchantment = Modifier.Minus3;
         G.MaximumEnchantment = Modifier.Plus7;
       });

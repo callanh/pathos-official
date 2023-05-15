@@ -1009,7 +1009,7 @@ namespace Pathos
           Skills.axe, Skills.club, Skills.dart, Skills.sling, Skills.staff);
         C.Startup.AddGrimoire(Dice.One, Spells.magic_missile);
         C.Startup.AddGrimoire(Dice.One, DesireableSpellArray(C));
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, new[] { Items.dread_staff, Items.flash_staff, Items.thunder_staff });
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, new[] { Items.dread_staff, Items.flash_staff, Items.thunder_staff, Items.battle_staff });
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, Items.blowgun);
         C.Startup.Loot.AddKit(Chance.Always, 1.d10() + 11, Modifier.Plus1, Items.dart); // 12-21
         C.Startup.Loot.AddKit(Chance.Always, 1.d5() + 5, Modifier.Plus0, Items.poison_dart); // 6-10

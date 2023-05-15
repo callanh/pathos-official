@@ -139,7 +139,7 @@ namespace Pathos
           B.Description = "Bless one item in your inventory or on the ground.";
           B.Cost = 250;
           B.SetCast().FilterSanctity(Sanctities.Uncursed);
-          B.Apply.Sanctify(null, Sanctities.Blessed);
+          B.Apply.Sanctify(Item: null, Sanctities.Blessed);
         });
 
         S.AddBoon("purify", B =>
@@ -249,7 +249,7 @@ namespace Pathos
           B.Description = "Bless one item in your inventory or on the ground.";
           B.Cost = 250;
           B.SetCast().FilterSanctity(Sanctities.Uncursed);
-          B.Apply.Sanctify(null, Sanctities.Blessed);
+          B.Apply.Sanctify(Item: null, Sanctities.Blessed);
         });
 
         S.AddBoon("unicorn friend", B =>

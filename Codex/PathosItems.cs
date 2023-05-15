@@ -277,12 +277,6 @@ namespace Pathos
         I.Price = Gold.FromCoins(25);
 
         var Storage = I.SetStorage();
-        Storage.Locking = false;
-        Storage.Preservation = false;
-        Storage.Compression = 1.0F;
-        Storage.ContainedDice = Dice.Zero;
-        Storage.LockSonic = null;
-        Storage.BreakSonic = null;
         Storage.DumpMotion = Motions.empty;
       });
 
@@ -796,7 +790,7 @@ namespace Pathos
         I.AddObviousUse(Motions.sacrifice, Delay.FromTurns(60), Sonics.prayer, Use =>
         {
           Use.SetCast().FilterItem(Codex.Items.animal_corpse, Codex.Items.vegetable_corpse);
-          Use.Apply.Backfire(F => F.Sanctify(null, Sanctities.Blessed));
+          Use.Apply.Backfire(F => F.Sanctify(Item: null, Sanctities.Blessed));
           Use.Apply.Sacrifice();
         });
       });
@@ -6955,9 +6949,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Sanctify(null, Sanctities.Blessed),
+            B => B.Sanctify(Item: null, Sanctities.Blessed),
             U => U.Nothing(),
-            C => C.Sanctify(null, Sanctities.Cursed)
+            C => C.Sanctify(Item: null, Sanctities.Cursed)
           );
         });
       });
@@ -8867,7 +8861,11 @@ namespace Pathos
               F.Unpunish();
               F.WithSourceSanctity
               (
-                B => B.RemoveCurse(3.d6()),
+                B =>
+                {
+                  B.RemoveCurse(Dice.One); // remove the curse.
+                  B.Sanctify(Item: null, Sanctities.Blessed); // then bless it (only if targeted).
+                },
                 U => U.RemoveCurse(Dice.One),
                 C => C.RemoveCurse(Dice.Zero)
               );
@@ -9201,12 +9199,6 @@ namespace Pathos
         I.Price = Gold.FromCoins(2);
 
         var Storage = I.SetStorage();
-        Storage.Locking = false;
-        Storage.Preservation = false;
-        Storage.Compression = 1.0F;
-        Storage.ContainedDice = Dice.Zero;
-        Storage.LockSonic = null;
-        Storage.BreakSonic = null;
         Storage.DumpMotion = Motions.empty;
 
         I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(20), Sonics.tool);
@@ -9278,12 +9270,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 1500, Delay.FromTurns(50), Sonics.tool); // TODO: what?
 
         var Storage = I.SetStorage();
-        Storage.Locking = false;
-        Storage.Preservation = false;
-        Storage.ContainedDice = Dice.Zero;
         Storage.Compression = 0.5F;
-        Storage.LockSonic = null;
-        Storage.BreakSonic = null;
         Storage.DumpMotion = Motions.empty;
       });
 
@@ -9651,7 +9638,6 @@ namespace Pathos
         Storage.Locking = true;
         Storage.Trapping = true;
         Storage.Preservation = false;
-        Storage.Compression = 1.0F;
         Storage.ContainedDice = 1.d5();
         Storage.TrappedGlyph = Glyphs.chest_trapped;
         Storage.LockedGlyph = Glyphs.chest_locked;
@@ -9991,12 +9977,8 @@ namespace Pathos
         I.SetWeakness(ContainerWeakness);
 
         var Storage = I.SetStorage();
-        Storage.Locking = false;
         Storage.Preservation = true;
-        Storage.Compression = 1.0F;
         Storage.ContainedDice = 1.d4();
-        Storage.LockSonic = null;
-        Storage.BreakSonic = null;
         Storage.DumpMotion = Motions.empty;
 
         //I.AddEat(900, Delay.FromTurns(50), Sonics.tool); // nothing can eat plastic.
@@ -10063,8 +10045,6 @@ namespace Pathos
         var Storage = I.SetStorage();
         Storage.Locking = true;
         Storage.Trapping = true;
-        Storage.Preservation = false;
-        Storage.Compression = 1.0F;
         Storage.ContainedDice = 1.d3();
         Storage.TrappedGlyph = Glyphs.large_box_trapped;
         Storage.LockedGlyph = Glyphs.large_box_locked;
@@ -10411,9 +10391,9 @@ namespace Pathos
              .FilterCoins(false);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Sanctify(null, Sanctities.Blessed),
+            B => B.Sanctify(Item: null, Sanctities.Blessed),
             U => U.Nothing(),
-            C => C.Sanctify(null, Sanctities.Cursed)
+            C => C.Sanctify(Item: null, Sanctities.Cursed)
           );
         });
         // NOTE: inscribe is not particularly useful, except for Studio quests.
@@ -13387,9 +13367,30 @@ namespace Pathos
         I.Material = Materials.wood;
         I.Essence = WeaponEssence0;
         I.Price = Gold.FromCoins(5);
+        I.SetArmour(Skills.light_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d6());
+      });
+
+      battle_staff = AddMeleeWeapon("battle staff", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("adamantine staff", null);
+        I.Grade = Grades.exotic;
+        I.Glyph = Glyphs.adamantine_staff;
+        I.Sonic = Sonics.weapon;
+        I.Series = StaffSeries;
+        I.Rarity = 4;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(400);
+        I.Material = Materials.adamantine;
+        I.Essence = WeaponEssence4;
+        I.Price = Gold.FromCoins(500);
+        I.SetArmour(Skills.light_armour, 2);
+        //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d10());
       });
 
       dread_staff = AddMeleeWeapon("dread staff", I =>
@@ -13405,6 +13406,7 @@ namespace Pathos
         I.Material = Materials.bone;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
+        I.SetArmour(Skills.light_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d5(), A =>
@@ -13431,6 +13433,7 @@ namespace Pathos
         I.Material = Materials.mithril;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
+        I.SetArmour(Skills.light_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 160, Delay.FromTurns(40), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d6() + 1, A =>
@@ -13457,6 +13460,7 @@ namespace Pathos
         I.Material = Materials.crystal;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
+        I.SetArmour(Skills.light_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 80, Delay.FromTurns(40), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d7(), A =>
@@ -14697,7 +14701,7 @@ namespace Pathos
       void AdamantineEquivalent(ItemEditor I, Item Source)
       {
         I.Grade = Grades.exotic;
-        I.Rarity = 2;
+        I.Rarity = 1; // deliberately on par with generating an artifact; adamantine is a straight upgrade as compared to the equivalent weapon/armour.
         I.Weight = Source.Weight; // adamantine weighs same as steel.
         I.Material = Materials.adamantine;
         I.Essence = WeaponEssence2;
@@ -14790,7 +14794,7 @@ namespace Pathos
         I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8());
+        I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8() + 1);
       });
 
       adamantine_greatsword = AddMeleeWeapon("adamantine greatsword", I =>
@@ -14818,7 +14822,7 @@ namespace Pathos
         I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d12() + 2);
+        I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d12() + 1);
       });
 
       adamantine_rapier = AddMeleeWeapon("adamantine rapier", I =>
@@ -14860,7 +14864,7 @@ namespace Pathos
         I.Size = Size.Small;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6());
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
       });
 
       adamantine_spear = AddReachWeapon("adamantine spear", I =>
@@ -15210,6 +15214,7 @@ namespace Pathos
 
     // staves.
     public readonly Item quarterstaff;
+    public readonly Item battle_staff;
     public readonly Item dread_staff;
     public readonly Item flash_staff;
     public readonly Item thunder_staff;
