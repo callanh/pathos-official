@@ -15495,7 +15495,7 @@ namespace Pathos
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.vitality, Properties.free_action);
+        E.Startup.SetTalent(Properties.vitality, Properties.free_action, Properties.clarity);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.acid, Elements.poison, Elements.sleep, Elements.magical, Elements.force);
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.adamantine_long_sword);

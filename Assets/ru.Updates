@@ -1,3 +1,6 @@
+2023-05-17
+- display 'no records found' instead of 'unable to load' in the Hall of Fame, when there's nothing returned from the server (to distinguish between zero records and a server error).
+
 2023-05-15
 - new entity: adamantine golem (huge defence and life points but no attacks - it just follows you around to obstruct your path).
 

@@ -36,6 +36,9 @@ namespace Pathos
         });
       }
 
+      AddRecipe(Entities.adamantine_golem, Materials.adamantine, 
+        Items.adamantine_long_sword, Items.adamantine_axe, Items.adamantine_greataxe, Items.adamantine_greatsword, Items.adamantine_plate_mail, Items.adamantine_twohanded_sword, Items.adamantine_sabre);
+
       AddRecipe(Entities.clay_golem, Materials.clay, Items.rock);
       
       AddRecipe(Entities.crystal_golem, Materials.crystal, Items.crystal_plate_mail, Items.crystal_ball, Items.dilithium_crystal);
@@ -48,14 +51,14 @@ namespace Pathos
       
       AddRecipe(Entities.gold_golem, Materials.gold, Items.gold_coin);
       
-      AddRecipe(Entities.iron_golem, Materials.iron, Items.iron_chain, Items.plate_mail, Items.iron_shoes, Items.long_sword, Items.twohanded_sword);
+      AddRecipe(Entities.iron_golem, Materials.iron, Items.iron_chain, Items.plate_mail, Items.iron_shoes, Items.long_sword, Items.twohanded_sword, Items.sabre);
       
       AddRecipe(Entities.leather_golem, Materials.leather, Items.leather_armour, Items.leather_cloak, Items.leather_jacket, Items.leather_gloves);
       
       AddRecipe(Entities.mithril_golem, Materials.mithril, 
         Items.elven_mithrilcoat, Items.dwarvish_mithrilcoat, Items.dark_elven_mithrilcoat, Items.mithril_shield, Items.mithril_barding,
-        Items.mithril_long_sword, Items.mithril_twohanded_sword, Items.mithril_battleaxe,
-        Items.mithril_spear, Items.mithril_lance, Items.mithril_sabre, Items.mithril_katar);
+        Items.mithril_long_sword, Items.mithril_twohanded_sword, Items.mithril_battleaxe, Items.mithril_helmet, Items.mithril_plate_mail,
+        Items.mithril_lance, Items.mithril_sabre, Items.mithril_katar);
 
       AddRecipe(Entities.paper_golem, Materials.paper, Items.scroll_of_blank_paper, Items.book_of_blank_paper);
       
@@ -66,7 +69,9 @@ namespace Pathos
       AddRecipe(Entities.ruby_golem, Materials.gemstone, Items.ruby);
       
       AddRecipe(Entities.sapphire_golem, Materials.gemstone, Items.sapphire);
-      
+
+      //TODO: AddRecipe(Entities.silver_golem, Materials.silver, Items.silver_long_sword, etc);
+
       AddRecipe(Entities.snow_golem, Materials.ice, Items.carrot);
       
       AddRecipe(Entities.stone_golem, Materials.stone, Items.amulet_versus_stone, Items.flint, Items.stone_club);
