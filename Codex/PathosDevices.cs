@@ -90,7 +90,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.magic;
         D.Material = Materials.iron;
-        D.TriggerApply.Animate(Corrupt: Properties.rage);
+        D.TriggerApply.Animate(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
       });
 
       antimagic_field = AddDevice("anti-magic field", Difficulty: 12, RepeatDice: null, Glyphs.antimagic_field, Sonics.magic, D =>
@@ -243,7 +243,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.AnimateObjects(Corrupt: Properties.rage);
+            A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
           });
           Table.Add(1, A =>
           {

@@ -153,37 +153,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.magic, 1.d4() + 1)
              .SetObjects();
-            U.Apply.AnimateObjects(Corrupt: Properties.rage);
+            U.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.magic, 1.d4() + 3)
              .SetObjects();
-            P.Apply.AnimateObjects(Corrupt: null);
+            P.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.magic, 1.d4() + 5)
              .SetObjects();
-            S.Apply.AnimateObjects(Corrupt: null);
+            S.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.magic, 1.d4() + 7)
              .SetObjects();
-            E.Apply.AnimateObjects(Corrupt: null);
+            E.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.magic, 1.d4() + 9)
              .SetObjects();
-            M.Apply.AnimateObjects(Corrupt: null);
+            M.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.magic, 1.d4() + 11)
              .SetObjects();
-            C.Apply.AnimateObjects(Corrupt: null);
+            C.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           }
         );
       });

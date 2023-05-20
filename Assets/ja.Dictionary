@@ -837,6 +837,7 @@ CounterName,captures,捕獲した回数
 CounterName,casts,呪文を使った回数
 CounterName,chants,詠唱した回数
 CounterName,constructs,組み立てた回数
+CounterName,copies,
 CounterName,crafts,制作した回数
 CounterName,decapitations,首をはねた回数
 CounterName,digs,掘削した回数
@@ -855,6 +856,7 @@ CounterName,jumps,ジャンプした回数
 CounterName,kicks,ドアを蹴り開けた回数
 CounterName,lifesaves,lifesaveされた回数
 CounterName,mimics,擬態した回数
+CounterName,mounts,
 CounterName,moves,移動した回数
 CounterName,opens,開ける
 CounterName,packs,缶詰にした数
@@ -971,7 +973,6 @@ EffectProperty,lies,ウソ
 EffectProperty,loyal only,味方だけ
 EffectProperty,material,素材
 EffectProperty,materials,材料
-EffectProperty,objects,アイテム
 EffectProperty,polite,丁寧に扱う
 EffectProperty,properties,状態
 EffectProperty,punishments,天罰
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,ランダムな性質を失う
 EffectProperty,removes all transients,全ての一時的な状態を解消
 EffectProperty,reset random equipment,ランダムな装備の修正値を0にする
 EffectProperty,reveal,明らかに
-EffectProperty,revenants,黄泉帰り
 EffectProperty,sanctity,尊厳
 EffectProperty,skills,スキル
 EffectProperty,source,それ自体
@@ -999,7 +999,6 @@ EffectProperty,whole stack,スタック全体
 EffectType,afflict,災難
 EffectType,alert,警戒
 EffectType,amnesia,記憶喪失
-EffectType,animate,生命付与
 EffectType,area transient,範囲に一時的効果
 EffectType,assess,査定
 EffectType,blinking,転位
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,ブラスナックル
 ItemName,broadsword,ブロードソード
 ItemName,bronze bell,銅の鐘
 ItemName,bronze plate mail,銅のプレートメイル
+ItemName,Brumstyk,
 ItemName,bullet,弾丸
 ItemName,bullwhip,一本鞭
 ItemName,caltrops,撒き菱
@@ -2674,6 +2674,7 @@ ItemName,meat stick,ミートスティック
 ItemName,meatball,ミートボール
 ItemName,melon,スイカ
 ItemName,Mirrorbright,『ミラーブライト』
+ItemName,Miserus,
 ItemName,mithril arrow,ミスリルの矢
 ItemName,mithril barding,ミスリルの馬鎧
 ItemName,mithril battle-axe,ミスリルのバトルアックス
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,弾薬
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
 LiteralText,anatomy,形態
+LiteralText,animate mount,
+LiteralText,animate revenant,生命付与黄泉帰り
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,反時計回りに90度
 LiteralText,any item,あらゆるアイテム
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,姿を現す
 LiteralText,REVEAL ALL MAPS,全てのマップを表示
 LiteralText,REVEAL THIS MAP,この階層のマップを表示
 LiteralText,revealed,見えている
+LiteralText,revenant,
 LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
@@ -3913,6 +3917,7 @@ MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた
 MotionPastName,chanted,で詠唱した
 MotionPastName,constructed,を組み立てた
+MotionPastName,copied,
 MotionPastName,dipped,を浸した
 MotionPastName,divined,を判別した
 MotionPastName,drank,の水を飲んだ
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,を空にした
 MotionPastName,exchanged,で交換した
 MotionPastName,flashed,を灯した
 MotionPastName,inscribed,に書き込んだ
+MotionPastName,mounted,
 MotionPastName,opened,を開いた
 MotionPastName,packed,の缶詰を作った
 MotionPastName,played,を演奏した
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,注ぐ
 MotionPresentName,capture,捕まえる
 MotionPresentName,chant,詠唱する
 MotionPresentName,construct,組み立てる
+MotionPresentName,copy,
 MotionPresentName,dig,掘削する
 MotionPresentName,dip,浸す
 MotionPresentName,divine,判別する
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,空にする
 MotionPresentName,exchange,交換する
 MotionPresentName,flash,灯す
 MotionPresentName,inscribe,書き込む
+MotionPresentName,mount,
 MotionPresentName,open,開く
 MotionPresentName,pack,缶詰を作る
 MotionPresentName,play,演奏する

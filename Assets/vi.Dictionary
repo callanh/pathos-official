@@ -837,6 +837,7 @@ CounterName,captures,số lần bắt giữ
 CounterName,casts,số phép đã niệm
 CounterName,chants,số phép đã tụng
 CounterName,constructs,số
+CounterName,copies,
 CounterName,crafts,số vật phẩm chế tạo
 CounterName,decapitations,số quái đã chặt đầu
 CounterName,digs,số lần đào
@@ -855,6 +856,7 @@ CounterName,jumps,số lần nhảy
 CounterName,kicks,số lần đá
 CounterName,lifesaves,số lần thoát chết
 CounterName,mimics,số lần giả dạng
+CounterName,mounts,
 CounterName,moves,tổng lượt đi
 CounterName,opens,số lần mở
 CounterName,packs,số lần đóng gói
@@ -971,7 +973,6 @@ EffectProperty,lies,nằm trên
 EffectProperty,loyal only,chỉ trung thành
 EffectProperty,material,vật liệu
 EffectProperty,materials,các vật liệu
-EffectProperty,objects,các vật thể
 EffectProperty,polite,lịch sự
 EffectProperty,properties,các chỉ số
 EffectProperty,punishments,các trừng phạt
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
 EffectProperty,removes all transients,loại bỏ tất cả hiệu ứng tạm thời
 EffectProperty,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
 EffectProperty,reveal,phát giác
-EffectProperty,revenants,những vong hồn
 EffectProperty,sanctity,thiêng liêng
 EffectProperty,skills,các kĩ năng
 EffectProperty,source,nguồn
@@ -999,7 +999,6 @@ EffectProperty,whole stack,cả xập
 EffectType,afflict,ảnh hưởng
 EffectType,alert,báo động
 EffectType,amnesia,lãng quên
-EffectType,animate,tái sinh
 EffectType,area transient,hiệu ứng tạm thời diện rộng
 EffectType,assess,đánh giá
 EffectType,blinking,nhấp nháy
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,nắm đấm gấu
 ItemName,broadsword,kiếm lưỡi rộng
 ItemName,bronze bell,chuông đồng
 ItemName,bronze plate mail,giáp tấm đồng
+ItemName,Brumstyk,
 ItemName,bullet,viên đạn
 ItemName,bullwhip,roi dây
 ItemName,caltrops,chông
@@ -2674,6 +2674,7 @@ ItemName,meat stick,que thịt
 ItemName,meatball,viên thịt
 ItemName,melon,dưa hấu
 ItemName,Mirrorbright,Mirrorbright
+ItemName,Miserus,
 ItemName,mithril arrow,mũi tên mithril
 ItemName,mithril barding,giáp ngựa mithril
 ItemName,mithril battle-axe,rìu chiến mithril
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,ĐẠN
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
+LiteralText,animate mount,
+LiteralText,animate revenant,tái sinh những vong hồn
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
 LiteralText,any item,mọi vật phẩm
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,LỘ DIỆN
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
 LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY
 LiteralText,revealed,đã lộ diện
+LiteralText,revenant,
 LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
@@ -3913,6 +3917,7 @@ MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt
 MotionPastName,chanted,đã niệm
 MotionPastName,constructed,đã xây
+MotionPastName,copied,
 MotionPastName,dipped,đã nhúng
 MotionPastName,divined,đã thánh hóa
 MotionPastName,drank,đã uống
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,đã lấy hết
 MotionPastName,exchanged,đã trao đổi
 MotionPastName,flashed,đã phát sáng
 MotionPastName,inscribed,đã ghi
+MotionPastName,mounted,
 MotionPastName,opened,đã mở
 MotionPastName,packed,đã đóng gói
 MotionPastName,played,đã chơi
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,bôi
 MotionPresentName,capture,bắt
 MotionPresentName,chant,niệm
 MotionPresentName,construct,xây
+MotionPresentName,copy,
 MotionPresentName,dig,đào
 MotionPresentName,dip,nhúng
 MotionPresentName,divine,thánh hóa
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,lấy
 MotionPresentName,exchange,trao đổi
 MotionPresentName,flash,phát sáng
 MotionPresentName,inscribe,ghi
+MotionPresentName,mount,
 MotionPresentName,open,mở
 MotionPresentName,pack,đóng gói
 MotionPresentName,play,chơi

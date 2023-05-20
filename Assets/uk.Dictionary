@@ -837,6 +837,7 @@ CounterName,captures,захоплює
 CounterName,casts,підраховує
 CounterName,chants,співає
 CounterName,constructs,зконструювує
+CounterName,copies,
 CounterName,crafts,створює
 CounterName,decapitations,
 CounterName,digs,закопує
@@ -855,6 +856,7 @@ CounterName,jumps,стрибає
 CounterName,kicks,ударяє
 CounterName,lifesaves,зберігає життя
 CounterName,mimics,передражнює
+CounterName,mounts,
 CounterName,moves,рухається
 CounterName,opens,відчиняє
 CounterName,packs,запаковує
@@ -971,7 +973,6 @@ EffectProperty,lies,брехня
 EffectProperty,loyal only,
 EffectProperty,material,матеріал
 EffectProperty,materials,матеріали
-EffectProperty,objects,речі
 EffectProperty,polite,ввічливе
 EffectProperty,properties,властивості
 EffectProperty,punishments,покарання
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,прибирає випадковий тал
 EffectProperty,removes all transients,знімає всі тимчасові
 EffectProperty,reset random equipment,обнулює випадкове спорядження
 EffectProperty,reveal,розкрити
-EffectProperty,revenants,повсталі
 EffectProperty,sanctity,недоторканість
 EffectProperty,skills,навички
 EffectProperty,source,джерело
@@ -999,7 +999,6 @@ EffectProperty,whole stack,заповнити повністю
 EffectType,afflict,пороблено
 EffectType,alert,тривога
 EffectType,amnesia,амнезія
-EffectType,animate,анімувати
 EffectType,area transient,область тимчасово
 EffectType,assess,оцінити
 EffectType,blinking,телепротувати
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,кастет
 ItemName,broadsword,палаш
 ItemName,bronze bell,бронзовий дзвіночок
 ItemName,bronze plate mail,бронзові лати
+ItemName,Brumstyk,
 ItemName,bullet,куля
 ItemName,bullwhip,батіг
 ItemName,caltrops,шипи
@@ -2674,6 +2674,7 @@ ItemName,meat stick,м'ясна паличка
 ItemName,meatball,м'ясна кулька
 ItemName,melon,диня
 ItemName,Mirrorbright,Дзеркальний Блиск
+ItemName,Miserus,
 ItemName,mithril arrow,митрилова стріла
 ItemName,mithril barding,кінські міфрильні лати
 ItemName,mithril battle-axe,митриловий бойовий топор
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,БОЄЗАПАС
 LiteralText,amnesia,амнезія
 LiteralText,AMNESIA,АМНЕЗІЯ
 LiteralText,anatomy,анатомія
+LiteralText,animate mount,
+LiteralText,animate revenant,анімувати повсталі
 LiteralText,ANONYMOUS,АНОНІМ
 LiteralText,anticlockwise 90 degrees,на 90 градусів anticlockwise
 LiteralText,any item,будь-яка річ
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,РОЗКРИТИ
 LiteralText,REVEAL ALL MAPS,ВІДКРИТИ ВСІ КАРТИ
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,виявлено
+LiteralText,revenant,
 LiteralText,REVERT,ВЕРНУТИ НАЗАД
 LiteralText,RIGHT RING,ПРАВИЙ ПЕРСТЕНЬ
 LiteralText,rigid,жорсткий
@@ -3913,6 +3917,7 @@ MotionPastName,ate,з'їв
 MotionPastName,captured,захоплено
 MotionPastName,chanted,виспівав
 MotionPastName,constructed,побудований
+MotionPastName,copied,
 MotionPastName,dipped,занурив
 MotionPastName,divined,визначив духовність
 MotionPastName,drank,випив
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,спустошив
 MotionPastName,exchanged,обміняв
 MotionPastName,flashed,блиснув
 MotionPastName,inscribed,підписано
+MotionPastName,mounted,
 MotionPastName,opened,відкрив
 MotionPastName,packed,упаковано
 MotionPastName,played,зіграв
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,помазання
 MotionPresentName,capture,захопити
 MotionPresentName,chant,виспівати
 MotionPresentName,construct,будувати
+MotionPresentName,copy,
 MotionPresentName,dig,копати
 MotionPresentName,dip,занурити
 MotionPresentName,divine,визначити духовність
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,спустошити
 MotionPresentName,exchange,обміняти
 MotionPresentName,flash,блиснути
 MotionPresentName,inscribe,підписати
+MotionPresentName,mount,
 MotionPresentName,open,відкрити
 MotionPresentName,pack,пакувати
 MotionPresentName,play,зіграти

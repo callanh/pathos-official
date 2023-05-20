@@ -837,6 +837,7 @@ CounterName,captures,captures
 CounterName,casts,odlewy
 CounterName,chants,śpiewy
 CounterName,constructs,konstrukcje
+CounterName,copies,
 CounterName,crafts,rzemiosła
 CounterName,decapitations,
 CounterName,digs,wykopaliska
@@ -855,6 +856,7 @@ CounterName,jumps,skacze
 CounterName,kicks,kopie
 CounterName,lifesaves,ratuje życie
 CounterName,mimics,naśladuje
+CounterName,mounts,
 CounterName,moves,chodzi
 CounterName,opens,otwiera
 CounterName,packs,pakuje
@@ -971,7 +973,6 @@ EffectProperty,lies,kłamstwa
 EffectProperty,loyal only,
 EffectProperty,material,materiał
 EffectProperty,materials,materiały
-EffectProperty,objects,objekty
 EffectProperty,polite,polite
 EffectProperty,properties,właściwości
 EffectProperty,punishments,kara
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,usuń losowy talent
 EffectProperty,removes all transients,usuwa wszystkie napięcia przejściowe
 EffectProperty,reset random equipment,resetuje losowy przedmiot
 EffectProperty,reveal,ujawnij
-EffectProperty,revenants,zemsta
 EffectProperty,sanctity,świętość
 EffectProperty,skills,zdolności
 EffectProperty,source,źródło
@@ -999,7 +999,6 @@ EffectProperty,whole stack,całość
 EffectType,afflict,dolega
 EffectType,alert,alarmuje
 EffectType,amnesia,amnezja
-EffectType,animate,animuje
 EffectType,area transient,obszar napięcia przejściowego
 EffectType,assess,oceń
 EffectType,blinking,błyskanie
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,mosiężne kastety
 ItemName,broadsword,pałasz
 ItemName,bronze bell,dzwonek z brązu
 ItemName,bronze plate mail,brązowa zbroja płytowa
+ItemName,Brumstyk,
 ItemName,bullet,pocisk
 ItemName,bullwhip,bicz
 ItemName,caltrops,kolce
@@ -2674,6 +2674,7 @@ ItemName,meat stick,kij z mięsa
 ItemName,meatball,kula mięsa
 ItemName,melon,melon
 ItemName,Mirrorbright,Lustrzane odbicie
+ItemName,Miserus,
 ItemName,mithril arrow,mithrilowa strzała
 ItemName,mithril barding,mithrilowy pancerz
 ItemName,mithril battle-axe,mithrilowy topór bitewny
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,POCISKÓW
 LiteralText,amnesia,amnezja
 LiteralText,AMNESIA,AMNESJA
 LiteralText,anatomy,anatomia
+LiteralText,animate mount,
+LiteralText,animate revenant,animuje zemsta
 LiteralText,ANONYMOUS,ANONIMOWY
 LiteralText,anticlockwise 90 degrees,przeciwnie do ruchu wskazówek zegara 90 stopni
 LiteralText,any item,dowolny przedmiot
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,UJAWNIJ
 LiteralText,REVEAL ALL MAPS,POKAŻ WSZYSTKIE MAPY
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,ujawnił
+LiteralText,revenant,
 LiteralText,REVERT,REVERT
 LiteralText,RIGHT RING,PRAWY PIERŚCIEŃ
 LiteralText,rigid,sztywny
@@ -3913,6 +3917,7 @@ MotionPastName,ate,zjadł
 MotionPastName,captured,złapany
 MotionPastName,chanted,skandował
 MotionPastName,constructed,zbudował
+MotionPastName,copied,
 MotionPastName,dipped,zanurzony
 MotionPastName,divined,wynaleziono
 MotionPastName,drank,pił z
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,opróżniony
 MotionPastName,exchanged,wymieniono
 MotionPastName,flashed,błysnął
 MotionPastName,inscribed,z napisem
+MotionPastName,mounted,
 MotionPastName,opened,otwarty
 MotionPastName,packed,pakowane
 MotionPastName,played,grał
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,namaścić
 MotionPresentName,capture,przechwytywanie
 MotionPresentName,chant,chorał
 MotionPresentName,construct,zbudować
+MotionPresentName,copy,
 MotionPresentName,dig,rozkop
 MotionPresentName,dip,wrzuć
 MotionPresentName,divine,złóż w ofierze
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,pusty
 MotionPresentName,exchange,wymiana
 MotionPresentName,flash,błysk
 MotionPresentName,inscribe,napisać
+MotionPresentName,mount,
 MotionPresentName,open,otwórz
 MotionPresentName,pack,opakowanie
 MotionPresentName,play,odtwórz

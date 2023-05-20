@@ -837,6 +837,7 @@ CounterName,captures,пойманный
 CounterName,casts,заклинания
 CounterName,chants,распевания
 CounterName,constructs,создания
+CounterName,copies,
 CounterName,crafts,мастерить
 CounterName,decapitations,обезглавливания
 CounterName,digs,копания
@@ -855,6 +856,7 @@ CounterName,jumps,прыжки
 CounterName,kicks,удары
 CounterName,lifesaves,спасение жизни
 CounterName,mimics,мимикрирования
+CounterName,mounts,
 CounterName,moves,движения
 CounterName,opens,открытия
 CounterName,packs,консервирования
@@ -971,7 +973,6 @@ EffectProperty,lies,враньё
 EffectProperty,loyal only,только лояльный
 EffectProperty,material,материал
 EffectProperty,materials,материалы
-EffectProperty,objects,предметы
 EffectProperty,polite,дружелюбно
 EffectProperty,properties,свойства
 EffectProperty,punishments,наказания
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,удалить случайный талан
 EffectProperty,removes all transients,снимает все временные эффекты
 EffectProperty,reset random equipment,устанавливает случайное снаряжение
 EffectProperty,reveal,раскрыться
-EffectProperty,revenants,восставшие
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,навыки
 EffectProperty,source,источник
@@ -999,7 +999,6 @@ EffectProperty,whole stack,вся стопка
 EffectType,afflict,заражает
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
-EffectType,animate,оживление
 EffectType,area transient,область временного эффекта
 EffectType,assess,определение
 EffectType,blinking,мерцание
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,кастет
 ItemName,broadsword,палаш
 ItemName,bronze bell,бронзовый колокольчик
 ItemName,bronze plate mail,бронзовые латы
+ItemName,Brumstyk,
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
 ItemName,caltrops,шипы
@@ -2674,6 +2674,7 @@ ItemName,meat stick,мясная палочка
 ItemName,meatball,мясной шарик
 ItemName,melon,дыня
 ItemName,Mirrorbright,Зеркальный Блеск
+ItemName,Miserus,
 ItemName,mithril arrow,мифрильная стрела
 ItemName,mithril barding,мифрильный бард
 ItemName,mithril battle-axe,мифрильный боевой топор
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
 LiteralText,anatomy,анатомия
+LiteralText,animate mount,
+LiteralText,animate revenant,оживление восставшие
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,против часовой стрелки на 90 градусов
 LiteralText,any item,любая вещь
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,РАСКРЫТЬСЯ
 LiteralText,REVEAL ALL MAPS,ОТКРЫТЬ ВСЕ КАРТЫ
 LiteralText,REVEAL THIS MAP,ОТКРЫТЬ ЭТУ КАРТУ
 LiteralText,revealed,обнаруженная
+LiteralText,revenant,
 LiteralText,REVERT,ВЕРНУТЬ
 LiteralText,RIGHT RING,НА ПРАВУЮ РУКУ
 LiteralText,rigid,неподвижный
@@ -3913,6 +3917,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
 MotionPastName,constructed,создал
+MotionPastName,copied,
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,испил
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,опустошил
 MotionPastName,exchanged,заменил
 MotionPastName,flashed,ослепил
 MotionPastName,inscribed,нанёс
+MotionPastName,mounted,
 MotionPastName,opened,открыл
 MotionPastName,packed,заполнил
 MotionPastName,played,сыграл
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,помазание
 MotionPresentName,capture,поймать
 MotionPresentName,chant,распевать
 MotionPresentName,construct,создать
+MotionPresentName,copy,
 MotionPresentName,dig,копать
 MotionPresentName,dip,окунуть
 MotionPresentName,divine,определить духовность
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,опустошить
 MotionPresentName,exchange,заменить
 MotionPresentName,flash,вспышка
 MotionPresentName,inscribe,нанести
+MotionPresentName,mount,
 MotionPresentName,open,открыть
 MotionPresentName,pack,заполнить
 MotionPresentName,play,играть

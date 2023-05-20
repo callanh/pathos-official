@@ -484,6 +484,8 @@ namespace Pathos
     public readonly Glyph cold_beam_forward_slant;
     public readonly Glyph cold_beam_horizontal;
     public readonly Glyph cold_beam_vertical;
+    public readonly Glyph Brumstyk;
+    public readonly Glyph Miserus;
     public readonly Glyph Colossal_Excavator;
     public readonly Glyph Colonel_Blood;
     public readonly Glyph cone_of_cold_spell;

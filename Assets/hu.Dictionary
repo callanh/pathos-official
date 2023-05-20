@@ -837,6 +837,7 @@ CounterName,captures,elfogások
 CounterName,casts,varázslások
 CounterName,chants,kántálások
 CounterName,constructs,építések
+CounterName,copies,
 CounterName,crafts,barkácsolások
 CounterName,decapitations,
 CounterName,digs,ásások
@@ -855,6 +856,7 @@ CounterName,jumps,ugrások
 CounterName,kicks,rúgások
 CounterName,lifesaves,életmentések
 CounterName,mimics,mímelések
+CounterName,mounts,
 CounterName,moves,mozgások
 CounterName,opens,kinyitások
 CounterName,packs,elrakások
@@ -971,7 +973,6 @@ EffectProperty,lies,hazugságok
 EffectProperty,loyal only,
 EffectProperty,material,anyag
 EffectProperty,materials,anyagok
-EffectProperty,objects,tárgyak
 EffectProperty,polite,illedelmes
 EffectProperty,properties,tulajdonságok
 EffectProperty,punishments,büntetések
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,véletlenszerű készség eltávolítása
 EffectProperty,removes all transients,összes átmeneti hatás eltávolítása
 EffectProperty,reset random equipment,véletlenszerű felszerelés visszaállítása
 EffectProperty,reveal,felfed
-EffectProperty,revenants,kísértetek
 EffectProperty,sanctity,szentség
 EffectProperty,skills,képességek
 EffectProperty,source,forrás
@@ -999,7 +999,6 @@ EffectProperty,whole stack,egész halom
 EffectType,afflict,lesújtás
 EffectType,alert,riasztás
 EffectType,amnesia,amnézia
-EffectType,animate,élesztés
 EffectType,area transient,területi hatás
 EffectType,assess,értékelés
 EffectType,blinking,elillanás
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,boxer
 ItemName,broadsword,széleskard
 ItemName,bronze bell,bronzcsengő
 ItemName,bronze plate mail,bronzpáncél
+ItemName,Brumstyk,
 ItemName,bullet,golyó
 ItemName,bullwhip,korbács
 ItemName,caltrops,vassulyom
@@ -2674,6 +2674,7 @@ ItemName,meat stick,húsrúd
 ItemName,meatball,húsgolyó
 ItemName,melon,dinnye
 ItemName,Mirrorbright,Tükörfény
+ItemName,Miserus,
 ItemName,mithril arrow,mithrilnyílvessző
 ItemName,mithril barding,mithrillópáncél
 ItemName,mithril battle-axe,mithril csatafejsze
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,LŐSZER
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
 LiteralText,anatomy,anatómia
+LiteralText,animate mount,
+LiteralText,animate revenant,élesztés kísértetek
 LiteralText,ANONYMOUS,NÉVTELEN
 LiteralText,anticlockwise 90 degrees,az óramutató járásával ellentétesen 90 fokban
 LiteralText,any item,bármelyik tárgy
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,FELFED
 LiteralText,REVEAL ALL MAPS,EGÉSZ TÉRKÉP FELFEDÉSE
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,felfedve
+LiteralText,revenant,
 LiteralText,REVERT,VISSZAÁLLÍTÁS
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
@@ -3913,6 +3917,7 @@ MotionPastName,ate,elfogyasztotta
 MotionPastName,captured,elfogta
 MotionPastName,chanted,kántálta
 MotionPastName,constructed,építette
+MotionPastName,copied,
 MotionPastName,dipped,belemártotta
 MotionPastName,divined,megfejtette
 MotionPastName,drank,megitta
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,kiürítette
 MotionPastName,exchanged,kicserélte
 MotionPastName,flashed,villantotta
 MotionPastName,inscribed,beleírta
+MotionPastName,mounted,
 MotionPastName,opened,kinyitotta
 MotionPastName,packed,bepakolta
 MotionPastName,played,játszotta
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,felszentelés
 MotionPresentName,capture,elfogás
 MotionPresentName,chant,kántálás
 MotionPresentName,construct,építés
+MotionPresentName,copy,
 MotionPresentName,dig,ásás
 MotionPresentName,dip,belemártás
 MotionPresentName,divine,megfejtés
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,kiürítés
 MotionPresentName,exchange,kicserélés
 MotionPresentName,flash,villantás
 MotionPresentName,inscribe,beleírás
+MotionPresentName,mount,
 MotionPresentName,open,kinyitás
 MotionPresentName,pack,csomagolás
 MotionPresentName,play,játszás

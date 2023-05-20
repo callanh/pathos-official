@@ -837,6 +837,7 @@ CounterName,captures,captura
 CounterName,casts,lança
 CounterName,chants,canta
 CounterName,constructs,constrói
+CounterName,copies,
 CounterName,crafts,manufatura
 CounterName,decapitations,decapitações
 CounterName,digs,escava
@@ -855,6 +856,7 @@ CounterName,jumps,pula
 CounterName,kicks,chuta
 CounterName,lifesaves,salva-vidas
 CounterName,mimics,imita
+CounterName,mounts,
 CounterName,moves,move
 CounterName,opens,abre
 CounterName,packs,empacota
@@ -971,7 +973,6 @@ EffectProperty,lies,mentiras
 EffectProperty,loyal only,apenas leal
 EffectProperty,material,material
 EffectProperty,materials,materiais
-EffectProperty,objects,objetos
 EffectProperty,polite,polido
 EffectProperty,properties,propriedades
 EffectProperty,punishments,punições
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,remove talento aleatório
 EffectProperty,removes all transients,remove todos os efeitos transitórios
 EffectProperty,reset random equipment,reestabelece equipamentos aleatórios
 EffectProperty,reveal,revelar
-EffectProperty,revenants,fantasmas
 EffectProperty,sanctity,santidade
 EffectProperty,skills,habilidades
 EffectProperty,source,fonte
@@ -999,7 +999,6 @@ EffectProperty,whole stack,toda a pilha
 EffectType,afflict,afligir
 EffectType,alert,alerta
 EffectType,amnesia,amnésia
-EffectType,animate,animar
 EffectType,area transient,transitório em área
 EffectType,assess,estimar
 EffectType,blinking,lampejante
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,soco inglês de bronze
 ItemName,broadsword,espada larga
 ItemName,bronze bell,sino de bronze
 ItemName,bronze plate mail,armadura de bronze
+ItemName,Brumstyk,
 ItemName,bullet,bala
 ItemName,bullwhip,chicote
 ItemName,caltrops,estrepes
@@ -2674,6 +2674,7 @@ ItemName,meat stick,bastão de carne
 ItemName,meatball,almôndega
 ItemName,melon,melancia
 ItemName,Mirrorbright,Brilhodeespelho
+ItemName,Miserus,
 ItemName,mithril arrow,flecha de mithril
 ItemName,mithril barding,bardos de mithril
 ItemName,mithril battle-axe,machado de batalha de mithril
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,MUNIÇÃO
 LiteralText,amnesia,amnésia
 LiteralText,AMNESIA,AMNÉSIA
 LiteralText,anatomy,anatomia
+LiteralText,animate mount,
+LiteralText,animate revenant,animar fantasmas
 LiteralText,ANONYMOUS,ANÔNIMO
 LiteralText,anticlockwise 90 degrees,90 graus anti-horário
 LiteralText,any item,qualquer item
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,REVELAR
 LiteralText,REVEAL ALL MAPS,REVELAR MAPAS
 LiteralText,REVEAL THIS MAP,REVELAR ESSE MAPA
 LiteralText,revealed,revelado
+LiteralText,revenant,
 LiteralText,REVERT,REVERTER
 LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
@@ -3913,6 +3917,7 @@ MotionPastName,ate,comeu
 MotionPastName,captured,capturou
 MotionPastName,chanted,cantou
 MotionPastName,constructed,contruiu
+MotionPastName,copied,
 MotionPastName,dipped,afundou
 MotionPastName,divined,predisse
 MotionPastName,drank,bebeu
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,esvaziou
 MotionPastName,exchanged,trocou
 MotionPastName,flashed,clareou
 MotionPastName,inscribed,inscreveu
+MotionPastName,mounted,
 MotionPastName,opened,abriu
 MotionPastName,packed,empacotou
 MotionPastName,played,tocou
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,ungir
 MotionPresentName,capture,capturar
 MotionPresentName,chant,cantar
 MotionPresentName,construct,construir
+MotionPresentName,copy,
 MotionPresentName,dig,escavar
 MotionPresentName,dip,afundar
 MotionPresentName,divine,predizer
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,esvaziar
 MotionPresentName,exchange,trocar
 MotionPresentName,flash,flash
 MotionPresentName,inscribe,inscrever
+MotionPresentName,mount,
 MotionPresentName,open,abrir
 MotionPresentName,pack,empacotar
 MotionPresentName,play,tocar

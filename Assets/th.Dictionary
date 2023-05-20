@@ -837,6 +837,7 @@ CounterName,captures,จับ
 CounterName,casts,ร่าย
 CounterName,chants,ท่อง
 CounterName,constructs,สร้าง
+CounterName,copies,
 CounterName,crafts,งานฝีมือ
 CounterName,decapitations,ประหาร
 CounterName,digs,ขุด
@@ -855,6 +856,7 @@ CounterName,jumps,โดด
 CounterName,kicks,ถีบ
 CounterName,lifesaves,ช่วยชีวิต
 CounterName,mimics,เลียนแบบ
+CounterName,mounts,
 CounterName,moves,เคลื่อนไหว
 CounterName,opens,เปิด
 CounterName,packs,
@@ -971,7 +973,6 @@ EffectProperty,lies,โกหก
 EffectProperty,loyal only,
 EffectProperty,material,วัสดุ
 EffectProperty,materials,วัสดุ
-EffectProperty,objects,วัตถุ
 EffectProperty,polite,
 EffectProperty,properties,สรรพคุณ
 EffectProperty,punishments,บทลงโทษ
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,สุ่มล้างพรสวรร�
 EffectProperty,removes all transients,ล้างสถานะชั่วคราวทั้งหมด
 EffectProperty,reset random equipment,สุ่มคืนค่าอุปกรณ์
 EffectProperty,reveal,เปิดเผย
-EffectProperty,revenants,
 EffectProperty,sanctity,
 EffectProperty,skills,ความชำนาญ
 EffectProperty,source,
@@ -999,7 +999,6 @@ EffectProperty,whole stack,ทั้งหมด
 EffectType,afflict,
 EffectType,alert,แตกตื่น
 EffectType,amnesia,ความจำเสื่อม
-EffectType,animate,คืนชีพ
 EffectType,area transient,
 EffectType,assess,
 EffectType,blinking,เคลื่อนที่พริบตา
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,สนับมือทองเหลือง
 ItemName,broadsword,ดาบใหญ่
 ItemName,bronze bell,ระฆังสำริด
 ItemName,bronze plate mail,
+ItemName,Brumstyk,
 ItemName,bullet,ลูกกระสุน
 ItemName,bullwhip,
 ItemName,caltrops,ขวาก
@@ -2674,6 +2674,7 @@ ItemName,meat stick,เนื้อแท่ง
 ItemName,meatball,ลูกชิ้น
 ItemName,melon,เมล่อน
 ItemName,Mirrorbright,
+ItemName,Miserus,
 ItemName,mithril arrow,ลูกธนูมิธริล
 ItemName,mithril barding,
 ItemName,mithril battle-axe,ขวานมิธริล
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,กระสุน
 LiteralText,amnesia,ความจำเสื่อม
 LiteralText,AMNESIA,ความจำเสื่อม
 LiteralText,anatomy,ร่างกาย
+LiteralText,animate mount,
+LiteralText,animate revenant,
 LiteralText,ANONYMOUS,นิรนาม
 LiteralText,anticlockwise 90 degrees,
 LiteralText,any item,ไอเท็มไหนก็ได้
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,เปิดเผย
 LiteralText,REVEAL ALL MAPS,เปิดเผยแผนที่ทั้งหมด
 LiteralText,REVEAL THIS MAP,เปิดเผยแผนที่ชั้นนี้
 LiteralText,revealed,เปิดเผย
+LiteralText,revenant,
 LiteralText,REVERT,กลับสู่สภาพเดิม
 LiteralText,RIGHT RING,แหวนข้างขวา
 LiteralText,rigid,
@@ -3913,6 +3917,7 @@ MotionPastName,ate,กิน
 MotionPastName,captured,ถูกจับ
 MotionPastName,chanted,ร่าย
 MotionPastName,constructed,สร้าง
+MotionPastName,copied,
 MotionPastName,dipped,จุ่ม
 MotionPastName,divined,ทำนาย
 MotionPastName,drank,ดื่ม
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,ว่างเปล่า
 MotionPastName,exchanged,แลก
 MotionPastName,flashed,กระพริบ
 MotionPastName,inscribed,
+MotionPastName,mounted,
 MotionPastName,opened,เปิด
 MotionPastName,packed,บรรจุ
 MotionPastName,played,เล่น
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,ชโลม
 MotionPresentName,capture,จับ
 MotionPresentName,chant,ร่าย
 MotionPresentName,construct,สร้าง
+MotionPresentName,copy,
 MotionPresentName,dig,ขุด
 MotionPresentName,dip,จุ่ม
 MotionPresentName,divine,ทำนาย
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,ว่างเปล่า
 MotionPresentName,exchange,แลกเปลี่ยน
 MotionPresentName,flash,กระพริบ
 MotionPresentName,inscribe,
+MotionPresentName,mount,
 MotionPresentName,open,เปิด
 MotionPresentName,pack,บรรจุ
 MotionPresentName,play,เล่น

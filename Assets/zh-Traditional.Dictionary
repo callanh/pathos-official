@@ -837,6 +837,7 @@ CounterName,captures,捕捉
 CounterName,casts,施法
 CounterName,chants,吟唱
 CounterName,constructs,製造
+CounterName,copies,
 CounterName,crafts,製作
 CounterName,decapitations,斬首
 CounterName,digs,挖掘
@@ -855,6 +856,7 @@ CounterName,jumps,跳躍
 CounterName,kicks,踢
 CounterName,lifesaves,被拯救
 CounterName,mimics,模仿
+CounterName,mounts,
 CounterName,moves,移動
 CounterName,opens,開啟
 CounterName,packs,罐裝
@@ -971,7 +973,6 @@ EffectProperty,lies,假流言
 EffectProperty,loyal only,保留盟友關係
 EffectProperty,material,材料
 EffectProperty,materials,材料
-EffectProperty,objects,物品
 EffectProperty,polite,友善
 EffectProperty,properties,狀態
 EffectProperty,punishments,懲罰
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,移除隨機天賦
 EffectProperty,removes all transients,去除所有短期狀態
 EffectProperty,reset random equipment,重設隨機裝備
 EffectProperty,reveal,揭露
-EffectProperty,revenants,復仇者
 EffectProperty,sanctity,神聖性
 EffectProperty,skills,專精
 EffectProperty,source,來源
@@ -999,7 +999,6 @@ EffectProperty,whole stack,整堆
 EffectType,afflict,感染
 EffectType,alert,警覺
 EffectType,amnesia,失憶
-EffectType,animate,活化
 EffectType,area transient,範圍短期狀態
 EffectType,assess,評估
 EffectType,blinking,閃現
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,黃銅指虎
 ItemName,broadsword,寬刃劍
 ItemName,bronze bell,青銅鈴
 ItemName,bronze plate mail,青銅板甲
+ItemName,Brumstyk,
 ItemName,bullet,子彈
 ItemName,bullwhip,鞭子
 ItemName,caltrops,鐵蒺藜
@@ -2674,6 +2674,7 @@ ItemName,meat stick,肉棒
 ItemName,meatball,肉球
 ItemName,melon,蜜瓜
 ItemName,Mirrorbright,明鏡
+ItemName,Miserus,
 ItemName,mithril arrow,秘銀箭
 ItemName,mithril barding,秘銀馬甲
 ItemName,mithril battle-axe,秘銀戰斧
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,彈藥
 LiteralText,amnesia,失憶
 LiteralText,AMNESIA,失憶
 LiteralText,anatomy,解剖學
+LiteralText,animate mount,
+LiteralText,animate revenant,活化復仇者
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,逆時針旋轉90度
 LiteralText,any item,任何物品
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,揭露
 LiteralText,REVEAL ALL MAPS,對所有樓層使用魔法地圖
 LiteralText,REVEAL THIS MAP,對本樓層使用魔法地圖
 LiteralText,revealed,不隱藏
+LiteralText,revenant,
 LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
@@ -3913,6 +3917,7 @@ MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了
 MotionPastName,chanted,吟唱了
 MotionPastName,constructed,創造了
+MotionPastName,copied,
 MotionPastName,dipped,浸泡了
 MotionPastName,divined,預言了
 MotionPastName,drank,飲用了
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,清空了
 MotionPastName,exchanged,交換了
 MotionPastName,flashed,閃光了
 MotionPastName,inscribed,刻寫了
+MotionPastName,mounted,
 MotionPastName,opened,打開了
 MotionPastName,packed,罐裝了
 MotionPastName,played,演奏了
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,洗滌
 MotionPresentName,capture,捕捉
 MotionPresentName,chant,吟唱
 MotionPresentName,construct,創造
+MotionPresentName,copy,
 MotionPresentName,dig,挖掘
 MotionPresentName,dip,浸泡
 MotionPresentName,divine,預言
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,清空
 MotionPresentName,exchange,交換
 MotionPresentName,flash,閃光
 MotionPresentName,inscribe,刻寫
+MotionPresentName,mount,
 MotionPresentName,open,打開
 MotionPresentName,pack,罐裝
 MotionPresentName,play,演奏

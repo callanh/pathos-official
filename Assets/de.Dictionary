@@ -837,6 +837,7 @@ CounterName,captures,Erfassen
 CounterName,casts,Wirken
 CounterName,chants,Gesänge
 CounterName,constructs,Konstrukte
+CounterName,copies,
 CounterName,crafts,Handwerken
 CounterName,decapitations,Enthaupten
 CounterName,digs,Graben
@@ -855,6 +856,7 @@ CounterName,jumps,Springen
 CounterName,kicks,Treten
 CounterName,lifesaves,Lebensretter
 CounterName,mimics,Mimics
+CounterName,mounts,
 CounterName,moves,Bewegen
 CounterName,opens,Öffnen
 CounterName,packs,Packen
@@ -971,7 +973,6 @@ EffectProperty,lies,Lügen
 EffectProperty,loyal only,nur loyal
 EffectProperty,material,Material
 EffectProperty,materials,Materialien
-EffectProperty,objects,Objekte
 EffectProperty,polite,höflich
 EffectProperty,properties,Eigenschaften
 EffectProperty,punishments,Strafen
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,entfernt zufälliges Talent
 EffectProperty,removes all transients,Entfernt alle temporären Effekte
 EffectProperty,reset random equipment,zufällige Ausrüstung zurücksetzen
 EffectProperty,reveal,verraten
-EffectProperty,revenants,Wiedergänger
 EffectProperty,sanctity,Heiligkeit
 EffectProperty,skills,Fertigkeiten
 EffectProperty,source,Quelle
@@ -999,7 +999,6 @@ EffectProperty,whole stack,ganzer Stapel
 EffectType,afflict,Krankheit
 EffectType,alert,Wachsam
 EffectType,amnesia,Amnesie
-EffectType,animate,animieren
 EffectType,area transient,bereichsabhängig
 EffectType,assess,beurteilen
 EffectType,blinking,blinzeln
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,Schlagring aus Messing
 ItemName,broadsword,Breitschwert
 ItemName,bronze bell,Bronzeglocke
 ItemName,bronze plate mail,Broze Plattenrüstung
+ItemName,Brumstyk,
 ItemName,bullet,Patrone
 ItemName,bullwhip,Peitsche
 ItemName,caltrops,Krähenfüße
@@ -2674,6 +2674,7 @@ ItemName,meat stick,Fleischstock
 ItemName,meatball,Fleischbällchen
 ItemName,melon,Melone
 ItemName,Mirrorbright,Spiegelglanz
+ItemName,Miserus,
 ItemName,mithril arrow,Mithrilpfeil
 ItemName,mithril barding,Mithrilharnisch
 ItemName,mithril battle-axe,Kampfaxt aus Mithril
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,MUNITION
 LiteralText,amnesia,Amnesie
 LiteralText,AMNESIA,AMNESIE
 LiteralText,anatomy,Anatomie
+LiteralText,animate mount,
+LiteralText,animate revenant,Animieren Wiedergänger
 LiteralText,ANONYMOUS,ANONYM
 LiteralText,anticlockwise 90 degrees,90 Grad gegen den Uhrzeigersinn
 LiteralText,any item,jeder Gegenstand
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,VERRATEN
 LiteralText,REVEAL ALL MAPS,ALLE KARTEN AUFDECKEN
 LiteralText,REVEAL THIS MAP,DIESE KARTE AUFDECKEN
 LiteralText,revealed,aufgedeckt
+LiteralText,revenant,
 LiteralText,REVERT,RÜCKGÄNGIG
 LiteralText,RIGHT RING,RECHTER RING
 LiteralText,rigid,starr
@@ -3913,6 +3917,7 @@ MotionPastName,ate,aß
 MotionPastName,captured,fing
 MotionPastName,chanted,sang
 MotionPastName,constructed,baute
+MotionPastName,copied,
 MotionPastName,dipped,tauchte
 MotionPastName,divined,deutete
 MotionPastName,drank,trank
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,leerte
 MotionPastName,exchanged,tauschte
 MotionPastName,flashed,blitzte
 MotionPastName,inscribed,eingraviert
+MotionPastName,mounted,
 MotionPastName,opened,öffnete
 MotionPastName,packed,packte
 MotionPastName,played,spielte
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,salben
 MotionPresentName,capture,gefangen
 MotionPresentName,chant,singen
 MotionPresentName,construct,errichten
+MotionPresentName,copy,
 MotionPresentName,dig,graben
 MotionPresentName,dip,tunken
 MotionPresentName,divine,deuten
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,leeren
 MotionPresentName,exchange,tauschen
 MotionPresentName,flash,blitzen
 MotionPresentName,inscribe,eingrvieren
+MotionPresentName,mount,
 MotionPresentName,open,öffnen
 MotionPresentName,pack,packen
 MotionPresentName,play,spielen

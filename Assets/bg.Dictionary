@@ -837,6 +837,7 @@ CounterName,captures,
 CounterName,casts,
 CounterName,chants,
 CounterName,constructs,
+CounterName,copies,
 CounterName,crafts,
 CounterName,decapitations,
 CounterName,digs,
@@ -855,6 +856,7 @@ CounterName,jumps,
 CounterName,kicks,
 CounterName,lifesaves,
 CounterName,mimics,
+CounterName,mounts,
 CounterName,moves,
 CounterName,opens,
 CounterName,packs,
@@ -971,7 +973,6 @@ EffectProperty,lies,вранье
 EffectProperty,loyal only,
 EffectProperty,material,материал
 EffectProperty,materials,материалы
-EffectProperty,objects,
 EffectProperty,polite,
 EffectProperty,properties,свойства
 EffectProperty,punishments,наказания
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,
 EffectProperty,removes all transients,премахване все временные
 EffectProperty,reset random equipment,устанавливает случайное спанеряжение
 EffectProperty,reveal,
-EffectProperty,revenants,
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,умениеи
 EffectProperty,source,
@@ -999,7 +999,6 @@ EffectProperty,whole stack,
 EffectType,afflict,
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
-EffectType,animate,
 EffectType,area transient,область временно
 EffectType,assess,
 EffectType,blinking,
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,
 ItemName,broadsword,палаш
 ItemName,bronze bell,бронзовый колокольчик
 ItemName,bronze plate mail,бронзовые латы
+ItemName,Brumstyk,
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
 ItemName,caltrops,шипы
@@ -2674,6 +2674,7 @@ ItemName,meat stick,мяспанея пръчка
 ItemName,meatball,мясной шарик
 ItemName,melon,дыня
 ItemName,Mirrorbright,Зеркальный Блеск
+ItemName,Miserus,
 ItemName,mithril arrow,
 ItemName,mithril barding,
 ItemName,mithril battle-axe,
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
 LiteralText,anatomy,
+LiteralText,animate mount,
+LiteralText,animate revenant,
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,
 LiteralText,any item,любая вещь
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,
+LiteralText,revenant,
 LiteralText,REVERT,
 LiteralText,RIGHT RING,
 LiteralText,rigid,
@@ -3913,6 +3917,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,
 MotionPastName,chanted,
 MotionPastName,constructed,
+MotionPastName,copied,
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,выпил
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,опустошил
 MotionPastName,exchanged,
 MotionPastName,flashed,сверкнул
 MotionPastName,inscribed,
+MotionPastName,mounted,
 MotionPastName,opened,открыл
 MotionPastName,packed,
 MotionPastName,played,сыграл
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,помазание
 MotionPresentName,capture,
 MotionPresentName,chant,
 MotionPresentName,construct,
+MotionPresentName,copy,
 MotionPresentName,dig,копать
 MotionPresentName,dip,окунуть
 MotionPresentName,divine,определить духовность
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,опустошить
 MotionPresentName,exchange,
 MotionPresentName,flash,сверкнуть
 MotionPresentName,inscribe,
+MotionPresentName,mount,
 MotionPresentName,open,отвори
 MotionPresentName,pack,
 MotionPresentName,play,сыграть

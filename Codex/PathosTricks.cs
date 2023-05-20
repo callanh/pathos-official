@@ -17,6 +17,7 @@ namespace Pathos
       var Skills = Codex.Skills;
       var Sonics = Codex.Sonics;
       var Properties = Codex.Properties;
+      var Entities = Codex.Entities;
 
       Trick AddTrick(string Name, Action<ApplyEditor> Action)
       {
@@ -106,7 +107,7 @@ namespace Pathos
       animated_objects = AddTrick("animated objects", A =>
       {
         A.Strike(Strikes.magic);
-        A.AnimateObjects(Corrupt: Properties.rage);
+        A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
       });
 
       increase_difficulty = AddTrick("increase difficulty", A =>

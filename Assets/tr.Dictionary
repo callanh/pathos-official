@@ -837,6 +837,7 @@ CounterName,captures,yakalar
 CounterName,casts,kullanır
 CounterName,chants,ilahi
 CounterName,constructs,inşa
+CounterName,copies,
 CounterName,crafts,üretir
 CounterName,decapitations,
 CounterName,digs,kazar
@@ -855,6 +856,7 @@ CounterName,jumps,
 CounterName,kicks,
 CounterName,lifesaves,
 CounterName,mimics,
+CounterName,mounts,
 CounterName,moves,
 CounterName,opens,
 CounterName,packs,
@@ -971,7 +973,6 @@ EffectProperty,lies,yalanlar
 EffectProperty,loyal only,
 EffectProperty,material,malzeme
 EffectProperty,materials,malzemeler
-EffectProperty,objects,objeler
 EffectProperty,polite,nazik
 EffectProperty,properties,nitelikler
 EffectProperty,punishments,cezalar
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,rastgele yeteneği kaldır
 EffectProperty,removes all transients,geçici olan her şeyi kaldırır
 EffectProperty,reset random equipment,rastgele bir teçhizatı yenile
 EffectProperty,reveal,açiğa kavuştur
-EffectProperty,revenants,hortlaklar
 EffectProperty,sanctity,kutsallık
 EffectProperty,skills,beceriler
 EffectProperty,source,kaynak
@@ -999,7 +999,6 @@ EffectProperty,whole stack,
 EffectType,afflict,bela et
 EffectType,alert,dikkat çek
 EffectType,amnesia,hafızayı kaybet
-EffectType,animate,hareketlendir
 EffectType,area transient,alan geçici
 EffectType,assess,değer biç
 EffectType,blinking,sıçramak
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,
 ItemName,broadsword,geniş kılıç
 ItemName,bronze bell,tunç çan
 ItemName,bronze plate mail,tunç plaka zırh
+ItemName,Brumstyk,
 ItemName,bullet,mermi
 ItemName,bullwhip,kırbaç
 ItemName,caltrops,boğadikeni
@@ -2674,6 +2674,7 @@ ItemName,meat stick,etten çubuk
 ItemName,meatball,köfte
 ItemName,melon,kavun
 ItemName,Mirrorbright,Aynaparlağı
+ItemName,Miserus,
 ItemName,mithril arrow,
 ItemName,mithril barding,
 ItemName,mithril battle-axe,
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,CEPHANE
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
 LiteralText,anatomy,anatomi
+LiteralText,animate mount,
+LiteralText,animate revenant,hortlaklar hareketlendir
 LiteralText,ANONYMOUS,İSİMSİZ
 LiteralText,anticlockwise 90 degrees,saatin tersinde 90 derece
 LiteralText,any item,herhangi bir eşya
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,AÇIĞA KAVUŞTUR
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,
+LiteralText,revenant,
 LiteralText,REVERT,GERİ AL
 LiteralText,RIGHT RING,
 LiteralText,rigid,
@@ -3913,6 +3917,7 @@ MotionPastName,ate,yedi
 MotionPastName,captured,
 MotionPastName,chanted,büyüle
 MotionPastName,constructed,
+MotionPastName,copied,
 MotionPastName,dipped,bandırdı
 MotionPastName,divined,ilahileştirdi
 MotionPastName,drank,içti
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,boşalttı
 MotionPastName,exchanged,
 MotionPastName,flashed,parlattı
 MotionPastName,inscribed,
+MotionPastName,mounted,
 MotionPastName,opened,açtı
 MotionPastName,packed,
 MotionPastName,played,oynadı
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,yağla
 MotionPresentName,capture,
 MotionPresentName,chant,kutsa
 MotionPresentName,construct,
+MotionPresentName,copy,
 MotionPresentName,dig,kaz
 MotionPresentName,dip,bandır
 MotionPresentName,divine,ilahileştir
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,boşalt
 MotionPresentName,exchange,
 MotionPresentName,flash,parla
 MotionPresentName,inscribe,
+MotionPresentName,mount,
 MotionPresentName,open,aç
 MotionPresentName,pack,
 MotionPresentName,play,oyna

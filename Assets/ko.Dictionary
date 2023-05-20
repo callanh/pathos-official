@@ -837,6 +837,7 @@ CounterName,captures,붙잡음
 CounterName,casts,주문 시전
 CounterName,chants,찬송
 CounterName,constructs,구조물
+CounterName,copies,
 CounterName,crafts,제작
 CounterName,decapitations,참수
 CounterName,digs,굴착
@@ -855,6 +856,7 @@ CounterName,jumps,점프
 CounterName,kicks,발차기
 CounterName,lifesaves,구명
 CounterName,mimics,모방
+CounterName,mounts,
 CounterName,moves,이동
 CounterName,opens,열기
 CounterName,packs,포장
@@ -971,7 +973,6 @@ EffectProperty,lies,거짓
 EffectProperty,loyal only,동료관계만
 EffectProperty,material,재질
 EffectProperty,materials,물질
-EffectProperty,objects,사물
 EffectProperty,polite,공손한
 EffectProperty,properties,특성들
 EffectProperty,punishments,형벌
@@ -982,7 +983,6 @@ EffectProperty,remove random talent,무작위 재능 제거
 EffectProperty,removes all transients,모든 일시적인 효과 해제
 EffectProperty,reset random equipment,무작위 장비 초기화
 EffectProperty,reveal,밝힘
-EffectProperty,revenants,망령
 EffectProperty,sanctity,신성함
 EffectProperty,skills,숙련도
 EffectProperty,source,재료
@@ -999,7 +999,6 @@ EffectProperty,whole stack,전체 아이템
 EffectType,afflict,감염
 EffectType,alert,경계
 EffectType,amnesia,망각
-EffectType,animate,생동화
 EffectType,area transient,범위 효과
 EffectType,assess,평가
 EffectType,blinking,점멸
@@ -2476,6 +2475,7 @@ ItemName,brass knuckles,황동 너클
 ItemName,broadsword,브로드소드
 ItemName,bronze bell,청동 종
 ItemName,bronze plate mail,청동 판금 갑옷
+ItemName,Brumstyk,
 ItemName,bullet,총알
 ItemName,bullwhip,가죽 채찍
 ItemName,caltrops,마름쇠
@@ -2674,6 +2674,7 @@ ItemName,meat stick,고기 막대
 ItemName,meatball,미트볼
 ItemName,melon,멜론
 ItemName,Mirrorbright,미러브라이트
+ItemName,Miserus,
 ItemName,mithril arrow,미스릴 화살
 ItemName,mithril barding,미스릴 마갑
 ItemName,mithril battle-axe,미스릴 전투 도끼
@@ -3104,6 +3105,8 @@ LiteralText,AMMO,탄환
 LiteralText,amnesia,망각
 LiteralText,AMNESIA,망각
 LiteralText,anatomy,해부학
+LiteralText,animate mount,
+LiteralText,animate revenant,생동화 망령
 LiteralText,ANONYMOUS,익명
 LiteralText,anticlockwise 90 degrees,반시계 방향으로 90도
 LiteralText,any item,모든 아이템
@@ -3668,6 +3671,7 @@ LiteralText,REVEAL,밝힘
 LiteralText,REVEAL ALL MAPS,모든 지도를 밝힘
 LiteralText,REVEAL THIS MAP,이 지도를 밝힘
 LiteralText,revealed,드러남
+LiteralText,revenant,
 LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
@@ -3913,6 +3917,7 @@ MotionPastName,ate,먹었다
 MotionPastName,captured,붙잡은
 MotionPastName,chanted,낭송했다
 MotionPastName,constructed,만들었다
+MotionPastName,copied,
 MotionPastName,dipped,담궜다
 MotionPastName,divined,신성확인 했다
 MotionPastName,drank,마셨다
@@ -3921,6 +3926,7 @@ MotionPastName,emptied,비웠다
 MotionPastName,exchanged,교환했다
 MotionPastName,flashed,플래시를 켰다
 MotionPastName,inscribed,필경했다
+MotionPastName,mounted,
 MotionPastName,opened,열었다
 MotionPastName,packed,포장했다
 MotionPastName,played,연주했다
@@ -3945,6 +3951,7 @@ MotionPresentName,anoint,바르기
 MotionPresentName,capture,붙잡기
 MotionPresentName,chant,찬송하기
 MotionPresentName,construct,만들었다
+MotionPresentName,copy,
 MotionPresentName,dig,땅파기
 MotionPresentName,dip,담그기
 MotionPresentName,divine,신성확인
@@ -3954,6 +3961,7 @@ MotionPresentName,empty,비우기
 MotionPresentName,exchange,교환
 MotionPresentName,flash,플래시 켜기
 MotionPresentName,inscribe,필경하기
+MotionPresentName,mount,
 MotionPresentName,open,열기
 MotionPresentName,pack,포장한다
 MotionPresentName,play,연주하기

@@ -152,6 +152,15 @@ namespace Pathos
           DeclareAction(I);
         });
       }
+      Item AddBarding(string Name, Action<ItemEditor> DeclareAction)
+      {
+        return AddItem(Stocks.armour, ItemType.Barding, Name, I =>
+        {
+          I.Mountable = true;
+
+          DeclareAction(I);
+        });
+      }
       Item AddLight(string Name, Action<ItemEditor> DeclareAction)
       {
         return AddItem(Stocks.tool, ItemType.Light, Name, I =>
@@ -391,6 +400,69 @@ namespace Pathos
         I.Price = Gold.FromCoins(1100);
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.tool)
          .SetTalent(Properties.stealth, Properties.quickness, Properties.dark_vision);
+      });
+      
+      Miserus = AddItem(Stocks.scroll, ItemType.Scroll, "Miserus", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.Miserus;
+        I.Sonic = Sonics.scroll;
+        I.Grade = Grades.artifact;
+        I.Series = null;
+        I.Rarity = ArtifactRarity;
+        I.Size = Size.Small;
+        I.Weight = Weight.FromUnits(50);
+        I.Material = Materials.paper;
+        I.Essence = ArtifactEssence;
+        I.Price = Gold.FromCoins(1000);
+        I.AddObviousUse(Motions.read, Delay.FromTurns(15), Sonics.read, Use =>
+        {
+          Use.SetCast()
+             .Strike(Strikes.boost, Dice.Zero)
+             .SetTerminates();
+          Use.Apply.WithSourceSanctity
+          (
+            B => B.DetectAsset(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
+            U => U.DetectAsset(Range.Sq15, Materials.gold, Materials.gemstone),
+            C => C.DetectAsset(Range.Sq10, Materials.gold)
+          );
+        });
+        I.AddObviousUse(Motions.copy, Delay.FromTurns(30), Sonics.magic, Use =>
+        {
+          Use.SetCast()
+             .FilterItem(Stocks.scroll.Items.Except(Miserus, scroll_of_blank_paper, scroll_of_replication).Where(I => I.Type == ItemType.Scroll).ToArray())
+             .SetTerminates();
+          Use.Apply.Karma(ChangeType.Decrease, Dice.Fixed(500)); // shrine boon costs 1000 to replicate any item.
+          Use.Apply.WhenConfused
+          (
+            T => T.CreateAsset(Dice.One, Dice.One, scroll_of_blank_paper),
+            F => F.ReplicateAsset()
+          );
+        });
+      });
+
+      Brumstyk = AddMeleeWeapon("Brumstyk", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.Brumstyk;
+        I.Sonic = Sonics.weapon;
+        I.Grade = Grades.artifact;
+        I.Series = null;
+        I.Rarity = ArtifactRarity;
+        I.Size = Size.Medium;
+        I.Mountable = true;
+        I.Weight = Weight.FromUnits(400);
+        I.Material = Materials.wood;
+        I.Essence = ArtifactEssence;
+        I.Price = Gold.FromCoins(1250);
+        I.SetArmour(Skills.light_armour, 1);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
+         .SetTalent(Properties.quickness, Properties.see_invisible);
+        I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 2.d6());
+        I.AddObviousUse(Motions.mount, Delay.FromTurns(10), Sonics.magic, Use =>
+        {
+          Use.Apply.AnimateMount(ObjectEntity: Entities.animate_object);
+        });
       });
 
       Colossal_Excavator = AddMeleeWeapon("Colossal Excavator", I =>
@@ -3241,7 +3313,7 @@ namespace Pathos
       });
 
       // barding.
-      saddle = AddArmour(ItemType.Barding, "saddle", I =>
+      saddle = AddBarding("saddle", I =>
       {
         I.Description = null;
         I.Glyph = Glyphs.saddle;
@@ -3258,7 +3330,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(20), Sonics.armour);
       });
 
-      leather_barding = AddArmour(ItemType.Barding, "leather barding", I =>
+      leather_barding = AddBarding("leather barding", I =>
       {
         I.Description = null;
         I.Glyph = Glyphs.leather_barding;
@@ -3275,7 +3347,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 250, Delay.FromTurns(30), Sonics.armour);
       });
 
-      chain_barding = AddArmour(ItemType.Barding, "chain barding", I =>
+      chain_barding = AddBarding("chain barding", I =>
       {
         I.Description = null;
         I.Glyph = Glyphs.chain_barding;
@@ -3292,7 +3364,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 600, Delay.FromTurns(40), Sonics.armour);
       });
 
-      mithril_barding = AddArmour(ItemType.Barding, "mithril barding", I =>
+      mithril_barding = AddBarding("mithril barding", I =>
       {
         I.Description = null;
         //I.SetAppearance("", null);
@@ -3310,7 +3382,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 700, Delay.FromTurns(40), Sonics.armour);
       });
 
-      plate_barding = AddArmour(ItemType.Barding, "plate barding", I =>
+      plate_barding = AddBarding("plate barding", I =>
       {
         I.Description = null;
         I.Glyph = Glyphs.plate_barding;
@@ -10388,7 +10460,8 @@ namespace Pathos
         {
           Use.SetCast().FilterAnyItem()
              .SetAssetIndividualised(false)
-             .FilterCoins(false);
+             .FilterCoins(false)/*
+             .FilterUniques(false)*/; // TODO: should we allow renaming of artifacts?
           Use.Apply.WithSourceSanctity
           (
             B => B.Sanctify(Item: null, Sanctities.Blessed),
@@ -10912,18 +10985,18 @@ namespace Pathos
           .SetAudibility(1);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Animate(Corrupt: null),
-            U => U.Animate(Corrupt: null),
-            C => C.Animate(Corrupt: Properties.rage)
+            B => B.Animate(ObjectEntity: Entities.animate_object, Corrupt: null),
+            U => U.Animate(ObjectEntity: Entities.animate_object, Corrupt: null),
+            C => C.Animate(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.AnimateObjects(Corrupt: null);
-          A.AnimateObjects(Corrupt: null);
-          A.AnimateObjects(Corrupt: null);
-          A.AnimateObjects(Corrupt: null);
-          A.AnimateObjects(Corrupt: null);
+          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
+          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
+          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
+          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
+          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
         });
       });
 
@@ -15747,6 +15820,8 @@ namespace Pathos
     public readonly Item Carapace;
     public readonly Item Chaoshammer;
     public readonly Item The_Hero;
+    public readonly Item Brumstyk;
+    public readonly Item Miserus;
     public readonly Item Colossal_Excavator;
     public readonly Item Grimtooth;
     public readonly Item Giantslayer;
