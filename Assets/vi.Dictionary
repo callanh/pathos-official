@@ -1013,12 +1013,14 @@ EffectType,convert boulder,chuyển đổi tảng
 EffectType,convert door,chuyển đổi cửa
 EffectType,convert fixture,chuyển đổi vật cố
 EffectType,convert floor,chuyển đổi sàn
+EffectType,convert spill,
 EffectType,convert wall,chuyển đổi tường
 EffectType,create boulder,tạo tảng
 EffectType,create fixture,tạo vật cố
 EffectType,create golem,tạo quái vật golem
 EffectType,create horde,tạo bầy đám
 EffectType,create nook,tạo nắm cửa
+EffectType,create spill,
 EffectType,create trap,tạo bẫy
 EffectType,create wall,tạo tường
 EffectType,decapitate,chặt đầu
@@ -1064,6 +1066,7 @@ EffectType,raise dead,tái sinh
 EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
+EffectType,remove spill,
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
 EffectType,replicate asset,tạo bản sao của vật
 EffectType,restock,bổ sung
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} với vật phẩm nào?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} ở hướng nào?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} vật phẩm nào lên {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} niệm phép
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},trừ khi kháng {ElementName}
 FormatText,unless target has {PropertyName},trừ khi mục tiêu {PropertyName}
 FormatText,versus {Something},đối đầu với {Something}
 FormatText,when {Chance},tỉ lệ {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},nếu {ITEMNAME}
 FormatText,when {KINDNAMES},là {KINDNAMES}
 FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,TẠO RA BẦY ĐÀN
 LiteralText,CREATE ITEM,TẠO RA VẬT PHẨM
 LiteralText,CREATE SHOP,TẠO RA CỬA HÀNG
 LiteralText,CREATE SHRINE,TẠO RA ĐỀN THỜ
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,TẠO RA BẪY
 LiteralText,CREATE WALL,TẠO RA TƯỜNG
 LiteralText,Create which direction?,Tạo ở hướng nào?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,PHÓNG TO
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz
-LocalityName,Level,Tầng
-LocalityName,Map,Bản đồ
-LocalityName,Site,Site
-LocalityName,Square,Ô
-LocalityName,World,Thế giới
-LocalityName,Zone,Khu vực
+LocalityName,area,
+LocalityName,level,tầng
+LocalityName,map,bản đồ
+LocalityName,site,site
+LocalityName,square,ô
+LocalityName,world,thế giới
+LocalityName,zone,khu vực
 MaterialName,adamantine,
 MaterialName,air,không khí
 MaterialName,animal,động vật
@@ -3982,9 +3989,9 @@ MotionPresentName,study,học
 MotionPresentName,swat,vảy
 MotionPresentName,write,viết
 MotionPresentName,zap,vụt
-MurderTypeName,Allied,Đồng minh
-MurderTypeName,Every,Tất cả
-MurderTypeName,Hostile,Kẻ thù
+MurderTypeName,allied,đồng minh
+MurderTypeName,every,tất cả
+MurderTypeName,hostile,kẻ thù
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Cây cầu gỗ cứng này vẫn còn nguyên vẹn mặc dù được sử dụng suốt bao nhiêu năm rồi.
 PlatformName,crystal bridge,cầu pha lê
 PlatformName,wooden bridge,cầu gỗ
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,đã đi đến
 TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,ảo ảnh
 WallStructureName,permanent,thật vĩnh viễn
 WallStructureName,solid,cứng

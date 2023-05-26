@@ -1013,12 +1013,14 @@ EffectType,convert boulder,convertit en roc
 EffectType,convert door,convertir porte
 EffectType,convert fixture,converti mobilier
 EffectType,convert floor,converti le sol
+EffectType,convert spill,
 EffectType,convert wall,converti le mur
 EffectType,create boulder,crée un rocher
 EffectType,create fixture,crée un élément de mobilier
 EffectType,create golem,crée un golem
 EffectType,create horde,crée une horde
 EffectType,create nook,créer un coin
+EffectType,create spill,
 EffectType,create trap,crée un piège
 EffectType,create wall,crée un mur
 EffectType,decapitate,décapitation
@@ -1064,6 +1066,7 @@ EffectType,raise dead,réveille les morts
 EffectType,recall,rappelle
 EffectType,release,libere
 EffectType,remove curse,lève la malédiction
+EffectType,remove spill,
 EffectType,remove transient,supprime le temporaire
 EffectType,replicate asset,reproduit la possession
 EffectType,restock,réapprovisionner
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} sur quel objet ?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} dans quelle direction ?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} quel objet sur {FeatureName} ?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lancer
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {CharacterName} {Enchantment} {ItemName} {ContainerQualifier} {SanctityName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},sauf s'il résiste à {ElementName}
 FormatText,unless target has {PropertyName},à moins que la cible ait {PropertyName}
 FormatText,versus {Something},contre {Something}
 FormatText,when {Chance},quand {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},quand {ITEMNAME}
 FormatText,when {KINDNAMES},quand {KINDNAMES}
 FormatText,when {MATERIALNAME},quand {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,CRÉER UNE HORDE
 LiteralText,CREATE ITEM,CRÉER UN OBJET
 LiteralText,CREATE SHOP,CRÉER UNE BOUTIQUE
 LiteralText,CREATE SHRINE,CRÉER UN MAUSOLÉE
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CRÉER UN PIÈGE
 LiteralText,CREATE WALL,CRÉER UN MUR
 LiteralText,Create which direction?,Créer dans quelle direction ?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Niveau
-LocalityName,Map,Marte
-LocalityName,Site,Site
-LocalityName,Square,Case
-LocalityName,World,Monde
-LocalityName,Zone,Zone
+LocalityName,area,
+LocalityName,level,niveau
+LocalityName,map,marte
+LocalityName,site,site
+LocalityName,square,case
+LocalityName,world,monde
+LocalityName,zone,zone
 MaterialName,adamantine,
 MaterialName,air,air
 MaterialName,animal,animal
@@ -3982,9 +3989,9 @@ MotionPresentName,study,étudier
 MotionPresentName,swat,taper
 MotionPresentName,write,écrire
 MotionPresentName,zap,zapper
-MurderTypeName,Allied,Allies
-MurderTypeName,Every,Tous
-MurderTypeName,Hostile,Hostile
+MurderTypeName,allied,allies
+MurderTypeName,every,tous
+MurderTypeName,hostile,hostile
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,ce pont en bois dur est solide malgré des années d'usage.
 PlatformName,crystal bridge,pont de cristal
 PlatformName,wooden bridge,pont de bois
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,a voyagé
 TraversalPresentName,ascend,monte
 TraversalPresentName,descend,descend
 TraversalPresentName,travel,voyage
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,illusion
 WallStructureName,permanent,permanent
 WallStructureName,solid,solide

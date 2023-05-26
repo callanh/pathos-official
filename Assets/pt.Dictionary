@@ -1013,12 +1013,14 @@ EffectType,convert boulder,converter pedregulho
 EffectType,convert door,converter porta
 EffectType,convert fixture,converter estrutura
 EffectType,convert floor,converter piso
+EffectType,convert spill,
 EffectType,convert wall,converter´parede
 EffectType,create boulder,criar pedregulho
 EffectType,create fixture,criar estrutura
 EffectType,create golem,criar golem
 EffectType,create horde,criar horda
 EffectType,create nook,criar recanto
+EffectType,create spill,
 EffectType,create trap,criar armadilha
 EffectType,create wall,criar parede
 EffectType,decapitate,decapitar
@@ -1064,6 +1066,7 @@ EffectType,raise dead,ressuscitar morto
 EffectType,recall,trazer aliados
 EffectType,release,liberar
 EffectType,remove curse,remover maldição
+EffectType,remove spill,
 EffectType,remove transient,remover efeito transitório
 EffectType,replicate asset,replicar espólio
 EffectType,restock,reabastecer
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} com que item?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} em que direção?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} que item no {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lançar
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} <{ItemName}|{CharacterName} {SanctityName} {ContainerQualifier}> {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},a menos que resista a {ElementName}
 FormatText,unless target has {PropertyName},a menos que o alvo tenha {PropertyName}
 FormatText,versus {Something},versus {Something}
 FormatText,when {Chance},quando {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},quando {ITEMNAME}
 FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,CRIAR HORDA
 LiteralText,CREATE ITEM,CRIAR ITEM
 LiteralText,CREATE SHOP,CRIAR LOJA
 LiteralText,CREATE SHRINE,CRIAR SANTUÁRIO
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CRIAR ARMADILHA
 LiteralText,CREATE WALL,CRIAR PAREDE
 LiteralText,Create which direction?,Criar em que direção?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Nível
-LocalityName,Map,Mapa
-LocalityName,Site,Sítio
-LocalityName,Square,Quadrado
-LocalityName,World,Mundo
-LocalityName,Zone,Zona
+LocalityName,area,
+LocalityName,level,nível
+LocalityName,map,mapa
+LocalityName,site,sítio
+LocalityName,square,quadrado
+LocalityName,world,mundo
+LocalityName,zone,zona
 MaterialName,adamantine,
 MaterialName,air,ar
 MaterialName,animal,animal
@@ -3982,9 +3989,9 @@ MotionPresentName,study,estudar
 MotionPresentName,swat,golpear
 MotionPresentName,write,escrever
 MotionPresentName,zap,atirar
-MurderTypeName,Allied,Aliado
-MurderTypeName,Every,Cada
-MurderTypeName,Hostile,Hostil
+MurderTypeName,allied,aliado
+MurderTypeName,every,cada
+MurderTypeName,hostile,hostil
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Essa ponte de madeira tem sua integridade sólida apesar de vários anos de uso.
 PlatformName,crystal bridge,ponte de crystal
 PlatformName,wooden bridge,ponte de madeira
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,viajou
 TraversalPresentName,ascend,subir
 TraversalPresentName,descend,descer
 TraversalPresentName,travel,viajar
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,ilusória
 WallStructureName,permanent,permanente
 WallStructureName,solid,sólida

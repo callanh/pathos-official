@@ -27,6 +27,7 @@ namespace Pathos
       var Materials = Codex.Materials;
       var Sanctities = Codex.Sanctities;
       var Skills = Codex.Skills;
+      var Volatiles = Codex.Volatiles;
 
       Device AddDevice(string Name, int Difficulty, Dice? RepeatDice, Glyph Glyph, Sonic TriggerSonic, Action<DeviceEditor> CompileAction)
       {
@@ -295,6 +296,7 @@ namespace Pathos
         D.Audibility = 30;
         D.Material = Materials.iron;
         D.TriggerApply.Harm(Elements.fire, 2.d6() + 2);
+        D.TriggerApply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
       });
 
       grease_trap = AddDevice("grease trap", Difficulty: 1, RepeatDice: 1.d4() + 2, Glyphs.grease_trap, Sonics.splat, D =>

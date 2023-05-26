@@ -38,6 +38,7 @@ namespace Pathos
       CodexStocks Stocks = null;
       CodexItems Items = null;
       CodexSpells Spells = null;
+      CodexVolatiles Volatiles = null;
       Stock[] SentientGreed = null;
       Stock[] GolemGreed = null;
       Stock[] GuardianGreed = null;
@@ -49,6 +50,7 @@ namespace Pathos
         Stocks = Codex.Stocks;
         Items = Codex.Items;
         Spells = Codex.Spells;
+        Volatiles = Codex.Volatiles;
         SentientGreed = new[] { Stocks.book, Stocks.potion, Stocks.scroll, Stocks.wand, Stocks.ring, Stocks.amulet, Stocks.gem };
         GuardianGreed = new[] { Stocks.gem };
         GolemGreed = Array.Empty<Stock>();
@@ -3473,6 +3475,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.flame, 2.d4() + 4);
           K.Apply.Harm(Elements.fire, 4.d5());
+          K.Apply.WhenChance(Chance.OneIn2, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 50));
         });
         E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
@@ -9498,6 +9501,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 12.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -12331,7 +12335,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.light, Dice.Zero);
-          R.Apply.Light(true);
+          R.Apply.Light(true, Locality.Area);
         });
         E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.strength);
         E.SetCorpse(Chance.OneIn3);
@@ -21177,7 +21181,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.dark, Dice.Zero);
-          K.Apply.Light(false); // always darken the room.
+          K.Apply.Light(false, Locality.Area); // always darken the room.
           K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
           {
             // should only hallucinate if the black light is not invisible.
@@ -21229,7 +21233,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.light, Dice.Zero);
-          K.Apply.Light(true); // always light the room up.
+          K.Apply.Light(true, Locality.Area); // always light the room up.
           K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
           {
             // should only blind if the yellow light is not invisible.
@@ -31757,6 +31761,7 @@ namespace Pathos
         {
           A.Harm(Elements.fire, 3.d4());
           A.ApplyTransient(Properties.blindness, 2.d3());
+          A.CreateSpill(Volatiles.steam, 1.d100() + 100);
         });
         E.AddAttack(AttackTypes.engulf, Elements.fire, 3.d4(), K =>
         {

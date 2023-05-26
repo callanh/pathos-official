@@ -1013,12 +1013,14 @@ EffectType,convert boulder,바위 변환
 EffectType,convert door,문 변환
 EffectType,convert fixture,시설 변환
 EffectType,convert floor,바닥 변환
+EffectType,convert spill,
 EffectType,convert wall,벽 변환
 EffectType,create boulder,바위 생성
 EffectType,create fixture,시설 생성
 EffectType,create golem,골렘 생성
 EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
+EffectType,create spill,
 EffectType,create trap,함정 생성
 EffectType,create wall,벽 생성
 EffectType,decapitate,참수
@@ -1064,6 +1066,7 @@ EffectType,raise dead,부활
 EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
+EffectType,remove spill,
 EffectType,remove transient,일시적인 효과 제거
 EffectType,replicate asset,아이템 복제
 EffectType,restock,재충전
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName}을(를) 
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName}을(를) 어느 아이템에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} {FeatureName} which direction?,어느 방향의 {FeatureName}에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} which item on {FeatureName}?,무엇으로 {FeatureName}에 {MotionPresentName}을(를) 합니까?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName}(으)로 된 {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 시전
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},{ElementName}속성 저항이 없을 시
 FormatText,unless target has {PropertyName},대상이 {PropertyName}이 아닐 시
 FormatText,versus {Something},{Something} 대
 FormatText,when {Chance},{Chance}일 때
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME} 일 때
 FormatText,when {KINDNAMES},{KINDNAMES} 일 때
 FormatText,when {MATERIALNAME},{MATERIALNAME} 재질일 때
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,군단 생성
 LiteralText,CREATE ITEM,아이템 생성
 LiteralText,CREATE SHOP,상점 생성
 LiteralText,CREATE SHRINE,신전 생성
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,함정 생성
 LiteralText,CREATE WALL,벽 생성
 LiteralText,Create which direction?,어느 방향에 생성합니까?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,줌
 LiteralText,ZOOS,서식지
 LiteralText,zZz,쿨쿨쿨
-LocalityName,Level,층
-LocalityName,Map,지도
-LocalityName,Site,지역
-LocalityName,Square,칸
-LocalityName,World,월드
-LocalityName,Zone,구역
+LocalityName,area,
+LocalityName,level,층
+LocalityName,map,지도
+LocalityName,site,지역
+LocalityName,square,칸
+LocalityName,world,월드
+LocalityName,zone,구역
 MaterialName,adamantine,
 MaterialName,air,공기
 MaterialName,animal,동물
@@ -3982,9 +3989,9 @@ MotionPresentName,study,학습하기
 MotionPresentName,swat,후려치기
 MotionPresentName,write,쓰기
 MotionPresentName,zap,발동
-MurderTypeName,Allied,동맹
-MurderTypeName,Every,모든
-MurderTypeName,Hostile,적대
+MurderTypeName,allied,동맹
+MurderTypeName,every,모든
+MurderTypeName,hostile,적대
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,이 나무 다리는 만들어진지 오랜 세월이 지났음에도 튼튼함을 유지하고 있다.
 PlatformName,crystal bridge,수정 다리
 PlatformName,wooden bridge,나무 다리
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,이동했다
 TraversalPresentName,ascend,오르기
 TraversalPresentName,descend,내려가기
 TraversalPresentName,travel,이동하기
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,환상
 WallStructureName,permanent,영구
 WallStructureName,solid,견고

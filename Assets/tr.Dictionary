@@ -1013,12 +1013,14 @@ EffectType,convert boulder,kayayı dönüştür
 EffectType,convert door,kapıyı dönüştür
 EffectType,convert fixture,möble dönüştür
 EffectType,convert floor,zemini dönüştür
+EffectType,convert spill,
 EffectType,convert wall,duvarı dönüştür
 EffectType,create boulder,kaya oluştur
 EffectType,create fixture,möble yarat
 EffectType,create golem,golem oluştur
 EffectType,create horde,ordu yarat
 EffectType,create nook,kuytu köşe yarat
+EffectType,create spill,
 EffectType,create trap,tuzak yarat
 EffectType,create wall,duvar yarat
 EffectType,decapitate,uzuv kaybet
@@ -1064,6 +1066,7 @@ EffectType,raise dead,ölüyü canlandırma
 EffectType,recall,geri çağır
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
+EffectType,remove spill,
 EffectType,remove transient,geçici etkileri kaldır
 EffectType,replicate asset,varlığı kopyala
 EffectType,restock,tekrar doldur
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName} 'ı hang
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName} 'ı hangi eşyayla {MotionPresentName} ?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{FeatureName} hangi yöne {MotionPresentName} ?
 FormatText,{MotionPresentName} which item on {FeatureName}?,Hangi eşyayı {FeatureName} üzerinde {MotionPresentName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} kullan
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},{ElementName} 'a dayanmazsa
 FormatText,unless target has {PropertyName},
 FormatText,versus {Something},düello {Something}
 FormatText,when {Chance},{Chance} olduğunda
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME}olduğunda
 FormatText,when {KINDNAMES},{KINDNAMES}olduğunda
 FormatText,when {MATERIALNAME},{MATERIALNAME}olduğunda
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,ORDU OLUŞTUR
 LiteralText,CREATE ITEM,EŞYA OLUŞTUR
 LiteralText,CREATE SHOP,DÜKKAN OLUŞTUR
 LiteralText,CREATE SHRINE,TAPINAK OLUŞTUR
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,TUZAK OLUŞTUR
 LiteralText,CREATE WALL,DUVAR YARAT
 LiteralText,Create which direction?,Hangi yöne oluştur?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,YAKINLAŞTIR
 LiteralText,ZOOS,YAŞAM ALANLARI
 LiteralText,zZz,
-LocalityName,Level,
-LocalityName,Map,
-LocalityName,Site,
-LocalityName,Square,
-LocalityName,World,
-LocalityName,Zone,
+LocalityName,area,
+LocalityName,level,
+LocalityName,map,
+LocalityName,site,
+LocalityName,square,
+LocalityName,world,
+LocalityName,zone,
 MaterialName,adamantine,
 MaterialName,air,hava
 MaterialName,animal,hayvan
@@ -3982,9 +3989,9 @@ MotionPresentName,study,öğren
 MotionPresentName,swat,ez
 MotionPresentName,write,yaz
 MotionPresentName,zap,şokla
-MurderTypeName,Allied,Yandaşlar
-MurderTypeName,Every,Herkes
-MurderTypeName,Hostile,Düşmanlar
+MurderTypeName,allied,yandaşlar
+MurderTypeName,every,herkes
+MurderTypeName,hostile,düşmanlar
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Bu ahşap köprü yıllarca kullanılmış olmasına rağmen sağlam.
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,tahta köprü
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,yol katetti
 TraversalPresentName,ascend,yukarı çık
 TraversalPresentName,descend,aşağı in
 TraversalPresentName,travel,yol katet
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,
 WallStructureName,permanent,
 WallStructureName,solid,

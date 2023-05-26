@@ -1013,12 +1013,14 @@ EffectType,convert boulder,zmień głaz
 EffectType,convert door,zmień drzwi
 EffectType,convert fixture,zmień armaturę
 EffectType,convert floor,zmień podłogę
+EffectType,convert spill,
 EffectType,convert wall,zmień ściany
 EffectType,create boulder,stwórz głaz
 EffectType,create fixture,stwórz armaturę
 EffectType,create golem,stwórz golema
 EffectType,create horde,stwórz hordę
 EffectType,create nook,stworzyć zakątek
+EffectType,create spill,
 EffectType,create trap,stwórz pułapkę
 EffectType,create wall,stwórz ścianę
 EffectType,decapitate,ściąć głowę
@@ -1064,6 +1066,7 @@ EffectType,raise dead,wskrzeszać zmarłych
 EffectType,recall,wycofanie
 EffectType,release,wydanie
 EffectType,remove curse,zdjąć klątwę
+EffectType,remove spill,
 EffectType,remove transient,usunąć stan przejściowy
 EffectType,replicate asset,replikować majątek
 EffectType,restock,uzupełnić zapasy
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} z jakim elementem?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} w którą stronę?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} który element na {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} cast
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},chyba że opiera się {ElementName}
 FormatText,unless target has {PropertyName},chyba że cel posiada {PropertyName}
 FormatText,versus {Something},kontra {Something}
 FormatText,when {Chance},kiedy {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},gdy {ITEMNAME}
 FormatText,when {KINDNAMES},gdy {KINDNAMES}
 FormatText,when {MATERIALNAME},gdy {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,STWÓRZ HORDE
 LiteralText,CREATE ITEM,STWÓRZ PRZEDMIOT
 LiteralText,CREATE SHOP,STWÓRZ SKLEP
 LiteralText,CREATE SHRINE,STWÓRZ KAPLICĘ
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,STWÓRZ PUŁAPKĘ
 LiteralText,CREATE WALL,STWÓRZ ŚCIANE
 LiteralText,Create which direction?,Tworzyć w którym kierunku?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ZBLIŻENIE
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Poziom
-LocalityName,Map,Mapa
-LocalityName,Site,Strona
-LocalityName,Square,Kwadrat
-LocalityName,World,Świat
-LocalityName,Zone,Strefa
+LocalityName,area,
+LocalityName,level,poziom
+LocalityName,map,mapa
+LocalityName,site,strona
+LocalityName,square,kwadrat
+LocalityName,world,świat
+LocalityName,zone,strefa
 MaterialName,adamantine,
 MaterialName,air,powietrze
 MaterialName,animal,zwierzęcy
@@ -3982,9 +3989,9 @@ MotionPresentName,study,badanie
 MotionPresentName,swat,swat
 MotionPresentName,write,pisać
 MotionPresentName,zap,zap
-MurderTypeName,Allied,Sprzymierzeni
-MurderTypeName,Every,Każdy
-MurderTypeName,Hostile,Wrogie
+MurderTypeName,allied,sprzymierzeni
+MurderTypeName,every,każdy
+MurderTypeName,hostile,wrogie
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Ten mostek z twardego drewna jest solidny mimo wielu lat użytkowania.
 PlatformName,crystal bridge,kryształowy most
 PlatformName,wooden bridge,drewniany most
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,udał się
 TraversalPresentName,ascend,wejdź na stronę
 TraversalPresentName,descend,schodzić
 TraversalPresentName,travel,podróż
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,iluzja
 WallStructureName,permanent,stała
 WallStructureName,solid,solidna

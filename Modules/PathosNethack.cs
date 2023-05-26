@@ -2913,7 +2913,7 @@ namespace Pathos
       }
 
       foreach (var FixSquare in EntranceRoom.GetFloorSquares().Where(S => S.Floor != null))
-        FixSquare.Floor.SetGround(MinesGround);
+        Generator.PlaceFloor(FixSquare, MinesGround);
 
       // generate the town.
       var TownBarrier = Codex.Barriers.stone_wall;
@@ -3979,7 +3979,7 @@ namespace Pathos
       foreach (var AdjacentSquare in EntranceSquare.GetAroundSquares())
       {
         if (AdjacentSquare.Floor != null)
-          AdjacentSquare.Floor.SetGround(Codex.Grounds.obsidian_floor);
+          Generator.PlaceFloor(AdjacentSquare, Codex.Grounds.obsidian_floor);
 
         // TODO: this causes the wall repair algorithm to use undesirable segments, in this particular case.
         //if (AdjacentSquare.Wall != null)
@@ -4033,7 +4033,7 @@ namespace Pathos
       }
 
       foreach (var FixSquare in EntranceRoom.GetFloorSquares().Where(S => S.Floor != null))
-        FixSquare.Floor.SetGround(LabyrinthGround);
+        Generator.PlaceFloor(FixSquare, LabyrinthGround);
 
       // three maze levels, 10x10 -> 20x20 -> 30x30.
       var LabyrinthSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Labyrinth));

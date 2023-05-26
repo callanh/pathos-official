@@ -1013,12 +1013,14 @@ EffectType,convert boulder,เปลี่ยนหินก้อนใหญ�
 EffectType,convert door,เปลี่ยนประตู
 EffectType,convert fixture,เปลี่ยนของประจำที่
 EffectType,convert floor,เปลี่ยนพื้น
+EffectType,convert spill,
 EffectType,convert wall,เปลี่ยนกำแพง
 EffectType,create boulder,สร้างหินก้อนใหญ่
 EffectType,create fixture,สร้างของประจำที่
 EffectType,create golem,สร้างโกเล็ม
 EffectType,create horde,สร้างฝูง
 EffectType,create nook,สร้างของซ่อน
+EffectType,create spill,
 EffectType,create trap,สร้างกับดัก
 EffectType,create wall,สร้างกำแพง
 EffectType,decapitate,ประหาร
@@ -1064,6 +1066,7 @@ EffectType,raise dead,คืนชีพคนตาย
 EffectType,recall,เรียกคืน
 EffectType,release,ปลดปล่อย
 EffectType,remove curse,ถอนคำสาป
+EffectType,remove spill,
 EffectType,remove transient,ถอนสถานะชั่วคราว
 EffectType,replicate asset,
 EffectType,restock,เปลี่ยนสินค้า
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName}{
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName}{AssetName}กับไอเท็มไหน?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName}{FeatureName}ไปทางไหน?
 FormatText,{MotionPresentName} which item on {FeatureName}?,จะ{MotionPresentName}ไอเท็มไหนกับ{FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{BlockName} {Prisoner:CharacterName}
 FormatText,{QualificationName} cast,ร่าย{QualificationName}
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{ItemName}{CharacterName}{Enchantment}{SanctityName}{ContainerQualifier}{Charges}{Quantity}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},เว้นแต่จะต้าน�
 FormatText,unless target has {PropertyName},เว้นแต่เป้าหมายจะมี{PropertyName}
 FormatText,versus {Something},ปะทะ {Something}
 FormatText,when {Chance},มีโอกาส {Chance} ที่จะ
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},เมื่อ {ITEMNAME}
 FormatText,when {KINDNAMES},เมื่อ {KINDNAMES}
 FormatText,when {MATERIALNAME},เมื่อ {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,สร้างฝูง
 LiteralText,CREATE ITEM,สร้างไอเท็ม
 LiteralText,CREATE SHOP,สร้างร้านค้า
 LiteralText,CREATE SHRINE,สร้างสถานที่บูชา
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,สร้างกับดัก
 LiteralText,CREATE WALL,สร้างกำแพง
 LiteralText,Create which direction?,สร้างไว้ทิศไหน
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ซูม
 LiteralText,ZOOS,สวนสัตว์
 LiteralText,zZz,zZz
-LocalityName,Level,ชั้น
-LocalityName,Map,แผ่นที่
-LocalityName,Site,สถานที่
-LocalityName,Square,ลานกว้าง
-LocalityName,World,โลก
-LocalityName,Zone,โซน
+LocalityName,area,
+LocalityName,level,ชั้น
+LocalityName,map,แผ่นที่
+LocalityName,site,สถานที่
+LocalityName,square,ลานกว้าง
+LocalityName,world,โลก
+LocalityName,zone,โซน
 MaterialName,adamantine,
 MaterialName,air,อากาศ
 MaterialName,animal,สัตว์
@@ -3982,9 +3989,9 @@ MotionPresentName,study,เรียน
 MotionPresentName,swat,สลับที่
 MotionPresentName,write,เขียน
 MotionPresentName,zap,ยิง
-MurderTypeName,Allied,พรรคพวก
-MurderTypeName,Every,ทุกๆอย่าง
-MurderTypeName,Hostile,ศัตรู
+MurderTypeName,allied,พรรคพวก
+MurderTypeName,every,ทุกๆอย่าง
+MurderTypeName,hostile,ศัตรู
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,เดินทางไป
 TraversalPresentName,ascend,ขึ้นไป
 TraversalPresentName,descend,ลงไป
 TraversalPresentName,travel,เดินทางไป
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,ภาพลวงตา
 WallStructureName,permanent,คงทนถาวร
 WallStructureName,solid,แข็ง

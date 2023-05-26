@@ -1013,12 +1013,14 @@ EffectType,convert boulder,convertir roca
 EffectType,convert door,convertir puerta
 EffectType,convert fixture,convertir accesorio
 EffectType,convert floor,convertir suelo
+EffectType,convert spill,
 EffectType,convert wall,convertir muro
 EffectType,create boulder,crear roca
 EffectType,create fixture,crear accesorio
 EffectType,create golem,crear golem
 EffectType,create horde,crear horda
 EffectType,create nook,crear estructura
+EffectType,create spill,
 EffectType,create trap,crear trampa
 EffectType,create wall,crear pared
 EffectType,decapitate,decapitar
@@ -1064,6 +1066,7 @@ EffectType,raise dead,levantar muertos
 EffectType,recall,retirar
 EffectType,release,liberar
 EffectType,remove curse,remover maldición
+EffectType,remove spill,
 EffectType,remove transient,remover efecto transitorio
 EffectType,replicate asset,replicar recurso
 EffectType,restock,reaprovisionar
@@ -1140,7 +1143,7 @@ EncumbranceName,unencumbered,sin carga
 EngulfmentName,engulfed,tragado
 EngulfmentName,swallowed,engullido
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,Una criatura mediana propensa a grandes ambiciones. Corta vida pero ubicua; no deben ser subestimados.
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Seres amorfos que carecen de una forma típica, pero a menudo adoptan una forma translúcida similar a la de un humanoide. Aunque son inconfundibles por cualquier cosa que no sea una masa similar al plasma, esta forma les permite usar ropa y herramientas."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Una antigua raza de imponentes reclusos. Su tamaño aterrador les da una fuerza inmensa, complementada por una dieta voraz de carnes y minerales."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Entidades astrales que contienen el indomable espiritu de aventureros derrotados. Al no tener motivaciones propias, se alegran de permitir la posesión. Para el aventurero fallecido, es una segunda oportunidad de venganza o redención. Nacidos de materia astral, están ligeramente armados fisicamente, son translúcidos y pueden moverse libremente a través de obstáculos físicos."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Hermosos seres de otro mundo caracterizados por su peculiar halo y sus alas emplumadas. Fuertemente adaptados al conflicto entre el bien y el mal, sienten la divinidad dentro de todo lo que poseen."
@@ -1158,9 +1161,9 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Esta extraña burbuja viviente de fluidos corrosivos no parece tener ninguna capacidad ofensiva.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Pequeños espíritus alados, intrínsecamente mágicos y extraordinariamente bellos. Cuando se sienten amenazados, pueden escapar a través de distorsiones en la realidad espacial."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Supervivientes nómadas similares a tortugas que, desde el momento en que pueden caminar, recorren el mundo llevando consigo la comodidad y protección de su hogar en sus espaldas, que es el lugar donde nacieron."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Criaturas feas y brutales con tendencias caníbales; esta raza guerrera es conocida por su impresionante fuerza e incapacidades intelectuales.
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Injustamente caracterizadas como cobardes y débiles, estas diminutas criaturas reptilianas superan sus limitaciones físicas mediante el empleo de estrategias viciosas y astutas."
 EntityName,abbot,abad
 EntityName,acid blob,masa amorfa ácida
 EntityName,acid worm,gusano ácido
@@ -1658,7 +1661,7 @@ EntityName,pit viper,víbora de pozo
 EntityName,pixie,duendecillo
 EntityName,plains centaur,centauro de las llanuras
 EntityName,Planetar,Planetar
-EntityName,plasmoid,
+EntityName,plasmoid,plasmóide
 EntityName,plastic golem,golem de plástico
 EntityName,pony,poni
 EntityName,proudfoot,proudfoot
@@ -1760,7 +1763,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigre monstruoso
 EntityName,titan,titán
 EntityName,titanothere,titanotérido
-EntityName,tortle,
+EntityName,tortle,tortuga
 EntityName,tracker,cazador
 EntityName,transmuter,transmutador
 EntityName,trapper,trampero
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,¿{MotionPresentName
 FormatText,{MotionPresentName} {AssetName} with which item?,¿{MotionPresentName} {AssetName} con qué objeto?
 FormatText,{MotionPresentName} {FeatureName} which direction?,¿{MotionPresentName} {FeatureName} en qué dirección?
 FormatText,{MotionPresentName} which item on {FeatureName}?,¿{MotionPresentName} qué objeto en {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lanzar
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} {ItemName} {CharacterName} {SanctityName} {ContainerQualifier} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},a menos que resista {ElementName}
 FormatText,unless target has {PropertyName},a menos que el objetivo tenga {PropertyName}
 FormatText,versus {Something},versus {Something}
 FormatText,when {Chance},cuando {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},cuando {ITEMNAME}
 FormatText,when {KINDNAMES},cuando {KINDNAMES}
 FormatText,when {MATERIALNAME},cuando {MATERIALNAME}
@@ -3060,13 +3065,13 @@ KindName,mummy,momia
 KindName,naga,naga
 KindName,ogre,ogro
 KindName,orc,orco
-KindName,plasmoid,
+KindName,plasmoid,plasmóide
 KindName,pudding,pudín
 KindName,quadruped,cuadrúpedo
 KindName,rodent,roedor
 KindName,snake,serpiente
 KindName,spider,araña
-KindName,tortle,
+KindName,tortle,tortuga
 KindName,trapper,trampero
 KindName,troll,troll
 KindName,umber,umber
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,CREAR HORDA
 LiteralText,CREATE ITEM,CREAR ÍTEM
 LiteralText,CREATE SHOP,CREAR TIENDA
 LiteralText,CREATE SHRINE,CREAR SANTUARIO
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CREAR TRAMPA
 LiteralText,CREATE WALL,CREAR PARED
 LiteralText,Create which direction?,¿Crear en qué dirección?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOLÓGICOS
 LiteralText,zZz,zZz
-LocalityName,Level,Nivel
-LocalityName,Map,Mapa
-LocalityName,Site,Sitio
-LocalityName,Square,Cuadra
-LocalityName,World,Mundo
-LocalityName,Zone,Zona
+LocalityName,area,
+LocalityName,level,nivel
+LocalityName,map,mapa
+LocalityName,site,sitio
+LocalityName,square,cuadra
+LocalityName,world,mundo
+LocalityName,zone,zona
 MaterialName,adamantine,
 MaterialName,air,aire
 MaterialName,animal,animal
@@ -3982,9 +3989,9 @@ MotionPresentName,study,estudiar
 MotionPresentName,swat,aplastar
 MotionPresentName,write,escribir
 MotionPresentName,zap,destellar
-MurderTypeName,Allied,Aliado
-MurderTypeName,Every,Todos
-MurderTypeName,Hostile,Hostil
+MurderTypeName,allied,aliado
+MurderTypeName,every,todos
+MurderTypeName,hostile,hostil
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Este puente de madera dura tiene una integridad sólida a pesar de muchos años de uso.
 PlatformName,crystal bridge,puente de cristal
 PlatformName,wooden bridge,puente de madera
@@ -4204,15 +4211,15 @@ RaceName,ogre//non-binary,ogro
 RaceName,orc//female,orca
 RaceName,orc//male,orco
 RaceName,orc//non-binary,orco
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plasmóide
+RaceName,plasmoid//male,plasmóide
+RaceName,plasmoid//non-binary,plasmóide
 RaceName,satyr//female,satira
 RaceName,satyr//male,satiro
 RaceName,satyr//non-binary,satiro
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,tortuga
+RaceName,tortle//male,tortuga
+RaceName,tortle//non-binary,tortuga
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,viajó
 TraversalPresentName,ascend,asciende
 TraversalPresentName,descend,desciende
 TraversalPresentName,travel,viaja
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,ilusionaria
 WallStructureName,permanent,permanente
 WallStructureName,solid,sólida

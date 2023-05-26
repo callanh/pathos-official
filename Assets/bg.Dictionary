@@ -1013,12 +1013,14 @@ EffectType,convert boulder,
 EffectType,convert door,
 EffectType,convert fixture,переводит приспособление
 EffectType,convert floor,
+EffectType,convert spill,
 EffectType,convert wall,
 EffectType,create boulder,създай скала
 EffectType,create fixture,създай приспособление
 EffectType,create golem,създай голема
 EffectType,create horde,създай орду
 EffectType,create nook,
+EffectType,create spill,
 EffectType,create trap,създай ловушку
 EffectType,create wall,
 EffectType,decapitate,
@@ -1064,6 +1066,7 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,
 EffectType,remove curse,премахване проклятье
+EffectType,remove spill,
 EffectType,remove transient,премахване временное
 EffectType,replicate asset,копирует ценность
 EffectType,restock,
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} с какой вещью?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} в какую сторону?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} какую вещь на {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},
 FormatText,{QualificationName} cast,{QualificationName} применяет
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},если не сопротивляетс
 FormatText,unless target has {PropertyName},
 FormatText,versus {Something},против {Something}
 FormatText,when {Chance},при {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},когато {ITEMNAME}
 FormatText,when {KINDNAMES},когато {KINDNAMES}
 FormatText,when {MATERIALNAME},когато {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,СЪЗДАЙ ОРДУ
 LiteralText,CREATE ITEM,СЪЗДАЙ ПРЕДМЕТ
 LiteralText,CREATE SHOP,СЪЗДАЙ МАГАЗИН
 LiteralText,CREATE SHRINE,СЪЗДАЙ ХРАМ
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,СЪЗДАЙ ЛОВУШКУ
 LiteralText,CREATE WALL,
 LiteralText,Create which direction?,Создаване в каком направлении?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,УВЕЛИЧЕНИЕ
 LiteralText,ZOOS,ЗООПАРКИ
 LiteralText,zZz,
-LocalityName,Level,
-LocalityName,Map,
-LocalityName,Site,
-LocalityName,Square,
-LocalityName,World,
-LocalityName,Zone,
+LocalityName,area,
+LocalityName,level,
+LocalityName,map,
+LocalityName,site,
+LocalityName,square,
+LocalityName,world,
+LocalityName,zone,
 MaterialName,adamantine,
 MaterialName,air,воздух
 MaterialName,animal,животное
@@ -3982,9 +3989,9 @@ MotionPresentName,study,изучить
 MotionPresentName,swat,прихлопнуть
 MotionPresentName,write,написать
 MotionPresentName,zap,махнуть
-MurderTypeName,Allied,Союзников
-MurderTypeName,Every,Всех
-MurderTypeName,Hostile,Врагов
+MurderTypeName,allied,союзников
+MurderTypeName,every,всех
+MurderTypeName,hostile,врагов
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Това ет деревянный мост очень прочен несмотря на многолетнее использование.
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,деревянный мост
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,путешествовал
 TraversalPresentName,ascend,поднимается
 TraversalPresentName,descend,спускается
 TraversalPresentName,travel,путешествует
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,
 WallStructureName,permanent,
 WallStructureName,solid,

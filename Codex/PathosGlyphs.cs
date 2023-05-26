@@ -2382,6 +2382,7 @@ namespace Pathos
     public readonly Glyph fixture_icon;
     public readonly Glyph floor_icon;
     public readonly Glyph gate_icon;
+    public readonly Glyph volatile_icon;
     public readonly Glyph inventory_icon;
     public readonly Glyph journal_icon;
     public readonly Glyph light_icon;
@@ -2537,6 +2538,12 @@ namespace Pathos
     public readonly Glyph interrupt;
     public readonly Glyph shroud;
     public readonly Glyph statue_base;
+
+    public readonly Glyph blaze;
+    public readonly Glyph scorch;
+    //public readonly Glyph blizzard;
+    //public readonly Glyph frost;
+    public readonly Glyph steam;
 #pragma warning restore 0649
 
     public Glyph Add(string Name) => Register.Add(Name);

@@ -280,7 +280,7 @@ namespace Pathos
         F.DestroyApply.ConvertFixture(pentagram, Devices.fire_trap);
 
         var ChantUse = F.AddUse(Codex.Motions.chant, null, Delay.FromTurns(20), Sonics.chant, Audibility: 5);
-        ChantUse.Apply.Light(IsLit: false);
+        ChantUse.Apply.Light(IsLit: false, Locality.Area);
         //ChantUse.Apply.WhenTargetKind(new[] { Kinds.echo }, T => T.Energise(Dice.Fixed(50), Modifier.Zero)); // TODO: good or bad idea?
         ChantUse.Apply.WithSourceSanctity
         (
@@ -398,10 +398,10 @@ namespace Pathos
         Workbench.ScrapSonic = Sonics.scrap;
 
         /*01*/
-        Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false));
+        Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false, Locality.Area));
         /*02*/Workbench.AddAccident(Codex.Explosions.light, A =>
         {
-          A.Light(true);
+          A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 3.d100());
         });
         /*03*/Workbench.AddAccident(Codex.Explosions.watery, A =>
@@ -421,12 +421,12 @@ namespace Pathos
 
         /*11*/Workbench.AddAccident(Codex.Explosions.dark, A => 
         {
-          A.Light(false);
+          A.Light(false, Locality.Area);
           A.CreateHorde(Dice.One, Targeted: true);
         });
         /*12*/Workbench.AddAccident(Codex.Explosions.light, A => 
         {
-          A.Light(true);
+          A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 4.d100());
           A.CreateHorde(Dice.One, Targeted: true);
         });

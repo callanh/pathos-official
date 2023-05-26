@@ -1946,27 +1946,27 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            U.Apply.Light(false);
+            U.Apply.Light(false, Locality.Area);
             U.Apply.ApplyTransient(Properties.deafness, 1.d3() + 3);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            P.Apply.Light(false);
+            P.Apply.Light(false, Locality.Area);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            S.Apply.Light(false);
+            S.Apply.Light(false, Locality.Area);
             S.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.angel, Kinds.human);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            E.Apply.Light(false);
+            E.Apply.Light(false, Locality.Area);
             E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.angel, Kinds.human);
             E.Apply.AreaTransient(Properties.silence, 4.d6() + 4);
           },
@@ -1974,7 +1974,7 @@ namespace Pathos
           {
             M.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            M.Apply.Light(false);
+            M.Apply.Light(false, Locality.Area);
             M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Living.ToArray());
             M.Apply.AreaTransient(Properties.silence, 4.d6() + 4);
           },
@@ -1982,7 +1982,7 @@ namespace Pathos
           {
             C.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            C.Apply.Light(false);
+            C.Apply.Light(false, Locality.Area);
             C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Living.ToArray());
             C.Apply.AreaTransient(Properties.silence, 5.d6() + 5);
           }
@@ -1999,27 +1999,27 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            U.Apply.Light(true);
+            U.Apply.Light(true, Locality.Area);
             U.Apply.ApplyTransient(Properties.blindness, 1.d3() + 3);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            P.Apply.Light(true);
+            P.Apply.Light(true, Locality.Area);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            S.Apply.Light(true);
+            S.Apply.Light(true, Locality.Area);
             S.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            E.Apply.Light(true);
+            E.Apply.Light(true, Locality.Area);
             E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
             E.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
           },
@@ -2027,7 +2027,7 @@ namespace Pathos
           {
             M.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            M.Apply.Light(true);
+            M.Apply.Light(true, Locality.Area);
             M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             M.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
           },
@@ -2035,7 +2035,7 @@ namespace Pathos
           {
             C.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            C.Apply.Light(true);
+            C.Apply.Light(true, Locality.Area);
             C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             C.Apply.AreaTransient(Properties.blindness, 5.d6() + 5);
           }

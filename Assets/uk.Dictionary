@@ -1013,12 +1013,14 @@ EffectType,convert boulder,перетворює брилу
 EffectType,convert door,перетворює двері
 EffectType,convert fixture,перетворює механізм
 EffectType,convert floor,перетворює підлогу
+EffectType,convert spill,
 EffectType,convert wall,перетворює стіну
 EffectType,create boulder,створює брилу
 EffectType,create fixture,створити механізм
 EffectType,create golem,створює голема
 EffectType,create horde,створює орду
 EffectType,create nook,створити затишне містечко
+EffectType,create spill,
 EffectType,create trap,створює пастку
 EffectType,create wall,створити стіну
 EffectType,decapitate,
@@ -1064,6 +1066,7 @@ EffectType,raise dead,підіймає мерця
 EffectType,recall,відкликає
 EffectType,release,випустити
 EffectType,remove curse,знімає прокляття
+EffectType,remove spill,
 EffectType,remove transient,знімає тимчасове
 EffectType,replicate asset,копіює цінність
 EffectType,restock,поновлює асортимент
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} з якою річчю?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} в який бік?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} яку річ на {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} застосовує
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {ContainerQualifier} {ItemName} {Enchantment} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},якщо не стійкий до: {Elem
 FormatText,unless target has {PropertyName},якщо у цілі нема: {PropertyName}
 FormatText,versus {Something},проти {Something}
 FormatText,when {Chance},імовірність {Chance} що:
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},коли {ITEMNAME}
 FormatText,when {KINDNAMES},коли {KINDNAMES}
 FormatText,when {MATERIALNAME},коли {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,СТВОРИТИ ОРДУ
 LiteralText,CREATE ITEM,СТВОРИТИ ПРЕДМЕТ
 LiteralText,CREATE SHOP,СТВОРИТИ МАГАЗИН
 LiteralText,CREATE SHRINE,СТВОРИТИ ХРАМ
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,СТВОРИТИ ПАСТКУ
 LiteralText,CREATE WALL,СТВОРИТИ СТІНУ
 LiteralText,Create which direction?,Створити в якому напрямку?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ЗБІЛЬШЕННЯ
 LiteralText,ZOOS,ЗООПАРК
 LiteralText,zZz,Хр-р-р
-LocalityName,Level,Рівень
-LocalityName,Map,Мапа
-LocalityName,Site,Місце
-LocalityName,Square,Площа
-LocalityName,World,Світ
-LocalityName,Zone,Зона
+LocalityName,area,
+LocalityName,level,рівень
+LocalityName,map,мапа
+LocalityName,site,місце
+LocalityName,square,площа
+LocalityName,world,світ
+LocalityName,zone,зона
 MaterialName,adamantine,
 MaterialName,air,повітря
 MaterialName,animal,тварина
@@ -3982,9 +3989,9 @@ MotionPresentName,study,вивчити
 MotionPresentName,swat,зачинити
 MotionPresentName,write,написати
 MotionPresentName,zap,махнути
-MurderTypeName,Allied,Друзів
-MurderTypeName,Every,Всіх
-MurderTypeName,Hostile,Ворогів
+MurderTypeName,allied,друзів
+MurderTypeName,every,всіх
+MurderTypeName,hostile,ворогів
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Цей дерев'яний міст дуже міцний незважаючи на багаторічне використання.
 PlatformName,crystal bridge,кришталевий міст
 PlatformName,wooden bridge,дерев'яний міст
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,подорожував
 TraversalPresentName,ascend,підіймається
 TraversalPresentName,descend,спускається
 TraversalPresentName,travel,подорожує
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,ілюзорна
 WallStructureName,permanent,постійна
 WallStructureName,solid,міцна

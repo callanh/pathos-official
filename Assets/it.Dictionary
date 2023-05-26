@@ -1013,12 +1013,14 @@ EffectType,convert boulder,convertire masso
 EffectType,convert door,convertire la porta
 EffectType,convert fixture,convertire trappola
 EffectType,convert floor,convertire piano
+EffectType,convert spill,
 EffectType,convert wall,convertire muro
 EffectType,create boulder,creare un masso
 EffectType,create fixture,creare una trappola
 EffectType,create golem,creare golem
 EffectType,create horde,creare un'orda
 EffectType,create nook,creare un angolo
+EffectType,create spill,
 EffectType,create trap,creare trappola
 EffectType,create wall,creare muro
 EffectType,decapitate,decapita
@@ -1064,6 +1066,7 @@ EffectType,raise dead,resuscitare morti
 EffectType,recall,richiamare
 EffectType,release,pubblicazione
 EffectType,remove curse,rimuovi la maledizione
+EffectType,remove spill,
 EffectType,remove transient,rimuovi transitorio
 EffectType,replicate asset,replicare risorsa
 EffectType,restock,rifornire
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} con quale oggetto?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} in quale direzione?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} quale oggetto nel {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lancia
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} {ItemName} {CharacterName} {SanctityName} {ContainerQualifier} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},a meno che non resista {ElementName}
 FormatText,unless target has {PropertyName},a meno che bersaglio ha {PropertyName}
 FormatText,versus {Something},contro {Something}
 FormatText,when {Chance},quando {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},quando {ITEMNAME}
 FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,CREA ORDA
 LiteralText,CREATE ITEM,CREA OGGETTO
 LiteralText,CREATE SHOP,CREA NEGOZIO
 LiteralText,CREATE SHRINE,CREA SANTUARIO
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CREA TRAPPOLA
 LiteralText,CREATE WALL,CREA MURO
 LiteralText,Create which direction?,In quale direzione creare?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,INGRANDISCI
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Livello
-LocalityName,Map,Carta geografica
-LocalityName,Site,Luogo
-LocalityName,Square,Piazza
-LocalityName,World,Mondo
-LocalityName,Zone,Zona
+LocalityName,area,
+LocalityName,level,livello
+LocalityName,map,carta geografica
+LocalityName,site,luogo
+LocalityName,square,piazza
+LocalityName,world,mondo
+LocalityName,zone,zona
 MaterialName,adamantine,
 MaterialName,air,aria
 MaterialName,animal,animale
@@ -3982,9 +3989,9 @@ MotionPresentName,study,studia
 MotionPresentName,swat,schiaccia
 MotionPresentName,write,scrive
 MotionPresentName,zap,lancia
-MurderTypeName,Allied,Alleato
-MurderTypeName,Every,Tutti
-MurderTypeName,Hostile,Ostile
+MurderTypeName,allied,alleato
+MurderTypeName,every,tutti
+MurderTypeName,hostile,ostile
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Questo ponte di solido legno è integro nonostante molti anni di utilizzo.
 PlatformName,crystal bridge,ponte di cristallo
 PlatformName,wooden bridge,ponte di legno
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,viaggiato
 TraversalPresentName,ascend,ascendere
 TraversalPresentName,descend,discendere
 TraversalPresentName,travel,viaggiare
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,illusorio
 WallStructureName,permanent,permanente
 WallStructureName,solid,solido

@@ -1013,12 +1013,14 @@ EffectType,convert boulder,Felsbrocken umwandeln
 EffectType,convert door,Tür umwandeln
 EffectType,convert fixture,Einrichtung umwandeln
 EffectType,convert floor,Boden umwandeln
+EffectType,convert spill,
 EffectType,convert wall,Wand umwandeln
 EffectType,create boulder,Felsbrocken erstellen
 EffectType,create fixture,Einrichtung erstellen
 EffectType,create golem,Golem erschaffen
 EffectType,create horde,Horde erschaffen
 EffectType,create nook,Ecke erstellen
+EffectType,create spill,
 EffectType,create trap,Falle erstellen
 EffectType,create wall,Wand erstellen
 EffectType,decapitate,enthaupten
@@ -1064,6 +1066,7 @@ EffectType,raise dead,Tote erwecken
 EffectType,recall,erinnern
 EffectType,release,freilassen
 EffectType,remove curse,Fluch entfernen
+EffectType,remove spill,
 EffectType,remove transient,temporäre Effekte entfernen
 EffectType,replicate asset,Gegenstand Nachbilden
 EffectType,restock,Nachschub
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} mit welchem Gegenstand?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} welche Richtung?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} welcher Gegenstand {FeatureName} ?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} zaubern
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ItemName} {ContainerQualifier} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},Ausser bei Widerstand gegen {ElementName
 FormatText,unless target has {PropertyName},es sei denn das Ziel hat {PropertyName}
 FormatText,versus {Something},gegen {Something}
 FormatText,when {Chance},falls {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},falls {ITEMNAME}
 FormatText,when {KINDNAMES},falls {KINDNAMES}
 FormatText,when {MATERIALNAME},falls {MATERIALNAME}
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,HORDE ERSTELLEN
 LiteralText,CREATE ITEM,GEGENSTAND ERSTELLEN
 LiteralText,CREATE SHOP,GESCHÄFT ERSTELLEN
 LiteralText,CREATE SHRINE,SCHREIN ERSTELLEN
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,FALLE ERSTELLEN
 LiteralText,CREATE WALL,WAND ERSTELLEN
 LiteralText,Create which direction?,In welcher Richtung erstellen?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Ebene
-LocalityName,Map,Karte
-LocalityName,Site,Site
-LocalityName,Square,Quadrat
-LocalityName,World,Welt
-LocalityName,Zone,Zone
+LocalityName,area,
+LocalityName,level,ebene
+LocalityName,map,karte
+LocalityName,site,site
+LocalityName,square,quadrat
+LocalityName,world,welt
+LocalityName,zone,zone
 MaterialName,adamantine,
 MaterialName,air,Luft
 MaterialName,animal,Tier
@@ -3982,9 +3989,9 @@ MotionPresentName,study,studieren
 MotionPresentName,swat,schlagen
 MotionPresentName,write,schreiben
 MotionPresentName,zap,zappen
-MurderTypeName,Allied,Verbündet
-MurderTypeName,Every,Jeder
-MurderTypeName,Hostile,Feindselig
+MurderTypeName,allied,verbündet
+MurderTypeName,every,jeder
+MurderTypeName,hostile,feindselig
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Diese Hartholzbrücke hat trotz langjähriger Nutzung eine solide Integrität.
 PlatformName,crystal bridge,Kristallbrücke
 PlatformName,wooden bridge,Holzbrücke
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,gereist
 TraversalPresentName,ascend,Emporsteigen
 TraversalPresentName,descend,steibt ab
 TraversalPresentName,travel,Reisen
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,illusionär
 WallStructureName,permanent,Dauerhaft
 WallStructureName,solid,solide

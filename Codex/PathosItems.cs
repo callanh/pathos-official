@@ -36,11 +36,13 @@ namespace Pathos
 
       CodexEntities Entities = null;
       CodexRaces Races = null;
+      CodexVolatiles Volatiles = null;
 
       CodexRecruiter.Enrol(() =>
       {
         Races = Codex.Races;
         Entities = Codex.Entities;
+        Volatiles = Codex.Volatiles;
       });
 
       Item AddItem(Stock Stock, ItemType ItemType, string Name, Action<ItemEditor> DeclareAction)
@@ -695,7 +697,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetAudibility(5);
           Use.Apply.Malnutrition(Dice.Fixed(100));
-          Use.Apply.Light(true);
+          Use.Apply.Light(true, Locality.Area);
           Use.Apply.WithSourceSanctity
           (
             B => B.AreaTransient(Properties.fear, 6.d6(), Kinds.Undead.ToArray()),
@@ -742,7 +744,7 @@ namespace Pathos
               {
                 Table.Add(10, A =>
                 {
-                  A.Light(true);
+                  A.Light(true, Locality.Area);
                   A.Mapping(Range.Sq20, Chance.Always);
                   A.Searching(Range.Sq20);
                   A.DetectTrap(Range.Sq20);
@@ -786,12 +788,12 @@ namespace Pathos
               {
                 Table.Add(10, A =>
                 {
-                  A.Light(true);
+                  A.Light(true, Locality.Area);
                   A.DetectTrap(Range.Sq20);
                 });
                 Table.Add(10, A =>
                 {
-                  A.Light(false);
+                  A.Light(false, Locality.Area);
                   A.Concealing(Range.Sq20);
                 });
                 Table.Add(10, A =>
@@ -816,7 +818,7 @@ namespace Pathos
               {
                 Table.Add(10, A =>
                 {
-                  A.Light(false);
+                  A.Light(false, Locality.Area);
                   A.Amnesia(Range.Sq30);
                   A.Concealing(Range.Sq30);
                 });
@@ -8398,12 +8400,16 @@ namespace Pathos
           Use.Apply.WhenConfused
           (
             T => T.CreateTrap(Codex.Devices.fire_trap, Destruction: false),
-            E => E.WithSourceSanctity
-            (
-              B => B.Harm(Elements.fire, 3.d3()),
-              U => U.Harm(Elements.fire, 4.d3()),
-              C => C.Harm(Elements.fire, 5.d3())
-            )
+            E =>
+            {
+              E.WithSourceSanctity
+              (
+                B => B.Harm(Elements.fire, 3.d3()),
+                U => U.Harm(Elements.fire, 4.d3()),
+                C => C.Harm(Elements.fire, 5.d3())
+              );
+              E.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+            }
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
@@ -8715,11 +8721,11 @@ namespace Pathos
             (
               B =>
               {
-                B.Light(true);
+                B.Light(true, Locality.Area);
                 B.Heal(1.d4() + 1, Modifier.Zero);
               },
-              U => U.Light(true),
-              C => C.Light(false)
+              U => U.Light(true, Locality.Area),
+              C => C.Light(false, Locality.Area)
             )
           );
         });
@@ -9219,7 +9225,7 @@ namespace Pathos
               {
                 C.ApplyTransient(Properties.aggravation, 10.d6());
                 C.ApplyTransient(Properties.fear, 10.d6());
-                C.Light(false);
+                C.Light(false, Locality.Area);
               }
             )
           );
@@ -9585,7 +9591,7 @@ namespace Pathos
               {
                 C.ApplyTransient(Properties.aggravation, 10.d6());
                 C.ApplyTransient(Properties.fear, 10.d6());
-                C.Light(false);
+                C.Light(false, Locality.Area);
               }
             )
           );
@@ -11367,6 +11373,7 @@ namespace Pathos
             U => U.Harm(Elements.fire, 6.d6()),
             C => C.Harm(Elements.fire, 4.d6())
           );
+          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
@@ -11477,14 +11484,14 @@ namespace Pathos
              .SetTerminates();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Light(true),
-            U => U.Light(true),
-            C => C.Light(false)
+            B => B.Light(true, Locality.Area),
+            U => U.Light(true, Locality.Area),
+            C => C.Light(false, Locality.Area)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Light(true);
+          A.Light(true, Locality.Area);
           A.MajorProperty(Properties.flight);
         });
       });

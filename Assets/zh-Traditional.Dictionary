@@ -1013,12 +1013,14 @@ EffectType,convert boulder,轉換巨石
 EffectType,convert door,轉換門
 EffectType,convert fixture,轉換固定物
 EffectType,convert floor,轉換地面
+EffectType,convert spill,
 EffectType,convert wall,轉換牆壁
 EffectType,create boulder,製造巨石
 EffectType,create fixture,製造固定物
 EffectType,create golem,製造魔像
 EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
+EffectType,create spill,
 EffectType,create trap,製造陷阱
 EffectType,create wall,製造牆壁
 EffectType,decapitate,斬首
@@ -1064,6 +1066,7 @@ EffectType,raise dead,復活死屍
 EffectType,recall,喚回隊友
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
+EffectType,remove spill,
 EffectType,remove transient,去除短期狀態
 EffectType,replicate asset,複製物件
 EffectType,restock,重新進貨
@@ -1165,7 +1168,7 @@ EntityName,abbot,修道院長
 EntityName,acid blob,強酸污斑
 EntityName,acid worm,強酸蠕蟲
 EntityName,acolyte,侍僧
-EntityName,adamantine golem,
+EntityName,adamantine golem,精金傀儡
 EntityName,adult black dragon,黑龍
 EntityName,adult blue dragon,藍龍
 EntityName,adult deep dragon,深淵龍
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} 與哪個物品?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} 哪個方向？
 FormatText,{MotionPresentName} which item on {FeatureName}?,以 {FeatureName} {MotionPresentName} 哪個物品?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 施咒
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},除非對 {ElementName} 有抗性
 FormatText,unless target has {PropertyName},除非目標擁有 {PropertyName}
 FormatText,versus {Something},克制{Something}
 FormatText,when {Chance},{Chance} 機率
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},當 {ITEMNAME}
 FormatText,when {KINDNAMES},當 {KINDNAMES}
 FormatText,when {MATERIALNAME},當 {MATERIALNAME}
@@ -2475,7 +2480,7 @@ ItemName,brass knuckles,黃銅指虎
 ItemName,broadsword,寬刃劍
 ItemName,bronze bell,青銅鈴
 ItemName,bronze plate mail,青銅板甲
-ItemName,Brumstyk,
+ItemName,Brumstyk,女巫掃帚
 ItemName,bullet,子彈
 ItemName,bullwhip,鞭子
 ItemName,caltrops,鐵蒺藜
@@ -2674,7 +2679,7 @@ ItemName,meat stick,肉棒
 ItemName,meatball,肉球
 ItemName,melon,蜜瓜
 ItemName,Mirrorbright,明鏡
-ItemName,Miserus,
+ItemName,Miserus,貪婪法典
 ItemName,mithril arrow,秘銀箭
 ItemName,mithril barding,秘銀馬甲
 ItemName,mithril battle-axe,秘銀戰斧
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
 LiteralText,CREATE SHOP,創造商店
 LiteralText,CREATE SHRINE,創造遺跡
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,創造陷阱
 LiteralText,CREATE WALL,創造牆壁
 LiteralText,Create which direction?,向哪個方向創造？
@@ -3543,7 +3549,7 @@ LiteralText,no allies,沒有盟友
 LiteralText,no ambient sounds,無背景音樂
 LiteralText,No appropriate items available,沒有合適的物品
 LiteralText,no available knowledge,無可用知識
-LiteralText,no records found,
+LiteralText,no records found,未找到記錄
 LiteralText,no resistances,無抗性
 LiteralText,no talents,無天賦
 LiteralText,no transient effects,無短期效果
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,縮放
 LiteralText,ZOOS,動物園
 LiteralText,zZz,zZz
-LocalityName,Level,樓層
-LocalityName,Map,地圖
-LocalityName,Site,站點
-LocalityName,Square,廣場
-LocalityName,World,世界
-LocalityName,Zone,區域
+LocalityName,area,
+LocalityName,level,樓層
+LocalityName,map,地圖
+LocalityName,site,站點
+LocalityName,square,廣場
+LocalityName,world,世界
+LocalityName,zone,區域
 MaterialName,adamantine,精金
 MaterialName,air,空氣
 MaterialName,animal,動物
@@ -3917,7 +3924,7 @@ MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了
 MotionPastName,chanted,吟唱了
 MotionPastName,constructed,創造了
-MotionPastName,copied,
+MotionPastName,copied,複製了
 MotionPastName,dipped,浸泡了
 MotionPastName,divined,預言了
 MotionPastName,drank,飲用了
@@ -3926,7 +3933,7 @@ MotionPastName,emptied,清空了
 MotionPastName,exchanged,交換了
 MotionPastName,flashed,閃光了
 MotionPastName,inscribed,刻寫了
-MotionPastName,mounted,
+MotionPastName,mounted,騎乘了
 MotionPastName,opened,打開了
 MotionPastName,packed,罐裝了
 MotionPastName,played,演奏了
@@ -3951,7 +3958,7 @@ MotionPresentName,anoint,洗滌
 MotionPresentName,capture,捕捉
 MotionPresentName,chant,吟唱
 MotionPresentName,construct,創造
-MotionPresentName,copy,
+MotionPresentName,copy,複製
 MotionPresentName,dig,挖掘
 MotionPresentName,dip,浸泡
 MotionPresentName,divine,預言
@@ -3961,7 +3968,7 @@ MotionPresentName,empty,清空
 MotionPresentName,exchange,交換
 MotionPresentName,flash,閃光
 MotionPresentName,inscribe,刻寫
-MotionPresentName,mount,
+MotionPresentName,mount,騎乘
 MotionPresentName,open,打開
 MotionPresentName,pack,罐裝
 MotionPresentName,play,演奏
@@ -3982,9 +3989,9 @@ MotionPresentName,study,學習
 MotionPresentName,swat,拍
 MotionPresentName,write,書寫
 MotionPresentName,zap,發射
-MurderTypeName,Allied,盟友
-MurderTypeName,Every,一切
-MurderTypeName,Hostile,敵對
+MurderTypeName,allied,盟友
+MurderTypeName,every,一切
+MurderTypeName,hostile,敵對
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,歷經多年使用，這座橋依然完整而堅實。
 PlatformName,crystal bridge,水晶橋
 PlatformName,wooden bridge,木橋
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,行進到
 TraversalPresentName,ascend,向上移動
 TraversalPresentName,descend,向下移動
 TraversalPresentName,travel,行進
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,幻象
 WallStructureName,permanent,永久
 WallStructureName,solid,堅固

@@ -1013,12 +1013,14 @@ EffectType,convert boulder,巨塊を変換
 EffectType,convert door,扉を変換
 EffectType,convert fixture,設備を変換
 EffectType,convert floor,床を変換
+EffectType,convert spill,
 EffectType,convert wall,壁を変換
 EffectType,create boulder,巨塊を生成
 EffectType,create fixture,設備を作成
 EffectType,create golem,ゴーレムを作成
 EffectType,create horde,群れを作成
 EffectType,create nook,隠し小路を作成
+EffectType,create spill,
 EffectType,create trap,罠を生成
 EffectType,create wall,壁を作成
 EffectType,decapitate,首はね
@@ -1064,6 +1066,7 @@ EffectType,raise dead,蘇生
 EffectType,recall,仲間を呼び戻す
 EffectType,release,解放
 EffectType,remove curse,解呪
+EffectType,remove spill,
 EffectType,remove transient,一時的な状態の解除
 EffectType,replicate asset,アイテムを複製
 EffectType,restock,補充
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,どの方向に{Asse
 FormatText,{MotionPresentName} {AssetName} with which item?,どのアイテムに{AssetName}を使う？//{MotionPresentName}
 FormatText,{MotionPresentName} {FeatureName} which direction?,どの方向に{FeatureName}を{MotionPresentName}？
 FormatText,{MotionPresentName} which item on {FeatureName}?,どのアイテムを{FeatureName}で{MotionPresentName}？
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName}の{BlockName}
 FormatText,{QualificationName} cast,{QualificationName}による使用
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},{ElementName}への抵抗に失敗した
 FormatText,unless target has {PropertyName},対象が{PropertyName}の状態ではない場合
 FormatText,versus {Something},{Something}に対して
 FormatText,when {Chance},{Chance}の確率
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME}の場合
 FormatText,when {KINDNAMES},{KINDNAMES}の場合
 FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,群れを作成
 LiteralText,CREATE ITEM,アイテムを作成
 LiteralText,CREATE SHOP,店を作成
 LiteralText,CREATE SHRINE,社を作成
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,罠を作成
 LiteralText,CREATE WALL,壁を作成
 LiteralText,Create which direction?,どの方向に作成する？
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,ズーム
 LiteralText,ZOOS,モンスター部屋
 LiteralText,zZz,zzz
-LocalityName,Level,階層
-LocalityName,Map,地図
-LocalityName,Site,敷地
-LocalityName,Square,マス
-LocalityName,World,世界
-LocalityName,Zone,区域
+LocalityName,area,
+LocalityName,level,階層
+LocalityName,map,地図
+LocalityName,site,敷地
+LocalityName,square,マス
+LocalityName,world,世界
+LocalityName,zone,区域
 MaterialName,adamantine,
 MaterialName,air,空気
 MaterialName,animal,肉
@@ -3982,9 +3989,9 @@ MotionPresentName,study,学ぶ
 MotionPresentName,swat,叩く
 MotionPresentName,write,書く
 MotionPresentName,zap,振る
-MurderTypeName,Allied,仲間
-MurderTypeName,Every,全て
-MurderTypeName,Hostile,仲間以外
+MurderTypeName,allied,仲間
+MurderTypeName,every,全て
+MurderTypeName,hostile,仲間以外
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,この堅い木で出来た橋は、長年使われているにも関わらず頑丈さを保っている。
 PlatformName,crystal bridge,水晶の橋
 PlatformName,wooden bridge,木の橋
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,ワープした
 TraversalPresentName,ascend,昇る
 TraversalPresentName,descend,降りる
 TraversalPresentName,travel,ワープする
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,幻影
 WallStructureName,permanent,破壊不能
 WallStructureName,solid,普通の壁

@@ -51,7 +51,7 @@ namespace Pathos
 
       cleared_way = AddTrick("cleared way", A =>
       {
-        A.DestroyWall(WallStructure.Permanent, Codex.Barriers.iron_bars);
+        A.RemoveWall(WallStructure.Permanent, Codex.Barriers.iron_bars);
       });
 
       emerging_blobs = AddTrick("emerging blobs", A =>

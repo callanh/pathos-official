@@ -56,6 +56,7 @@ namespace Pathos
         this.Items = new CodexItems(this);
         this.Entities = new CodexEntities(this);
         this.Evolutions = new CodexEvolutions(this);
+        this.Volatiles = new CodexVolatiles(this);
         this.Blocks = new CodexBlocks(this);
         this.Devices = new CodexDevices(this);
         this.Gates = new CodexGates(this);
@@ -249,6 +250,7 @@ namespace Pathos
     public CodexStrikes Strikes { get; }
     public CodexTracks Tracks { get; }
     public CodexTricks Tricks { get; }
+    public CodexVolatiles Volatiles { get; }
     public CodexWarnings Warnings { get; }
     public CodexZoos Zoos { get; }
 
@@ -1100,6 +1102,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Appetites.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new[] { E.ActiveGlyph, E.HoldGlyph }));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
       UsedGlyphSet.Add(Manifest.Glyphs.StatueBase);
@@ -1282,6 +1285,7 @@ namespace Pathos
       RegisterRecord<ManifestSonics, SonicEditor, Sonic>();
       RegisterRecord<ManifestSpecials, SpecialEditor, Special>();
       RegisterRecord<ManifestSpells, SpellEditor, Spell>();
+      RegisterRecord<ManifestVolatiles, VolatileEditor, Volatile>();
       RegisterRecord<ManifestStandings, StandingEditor, Standing>();
       RegisterRecord<ManifestStocks, StockEditor, Stock>();
       RegisterRecord<ManifestStrikes, StrikeEditor, Strike>();
@@ -1341,6 +1345,7 @@ namespace Pathos
       Base.Register<CodexSonics>();
       Base.Register<CodexSpecials>();
       Base.Register<CodexSpells>();
+      Base.Register<CodexVolatiles>();
       Base.Register<CodexStandings>();
       Base.Register<CodexStocks>();
       Base.Register<CodexStrikes>();
@@ -1445,6 +1450,7 @@ namespace Pathos
       Base.Register<Spawn>();
       Base.Register<Special>();
       Base.Register<Spell>();
+      Base.Register<Volatile>();
       Base.Register<Standing>();
       Base.Register<Startup>();
       Base.Register<Stock>();

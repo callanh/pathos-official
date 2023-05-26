@@ -1013,12 +1013,14 @@ EffectType,convert boulder,következővé alakul:
 EffectType,convert door,következővé alakul:
 EffectType,convert fixture,következővé alakul:
 EffectType,convert floor,következővé alakul:
+EffectType,convert spill,
 EffectType,convert wall,következővé alakul:
 EffectType,create boulder,akadályt hoz létre
 EffectType,create fixture,tereptárgyat hoz létre
 EffectType,create golem,gólemet hoz létre
 EffectType,create horde,hordát hoz létre
 EffectType,create nook,bemélyedést hoz létre:
+EffectType,create spill,
 EffectType,create trap,csapdát hoz létre
 EffectType,create wall,falat hoz létre
 EffectType,decapitate,lefejezés
@@ -1064,6 +1066,7 @@ EffectType,raise dead,halott-támasztás
 EffectType,recall,visszahívás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
+EffectType,remove spill,
 EffectType,remove transient,átmeneti hatás eltávolítása
 EffectType,replicate asset,eszköz lemásolása
 EffectType,restock,feltöltés
@@ -2054,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName} {MotionP
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName} {MotionPresentName} melyik tárggyal?
 FormatText,{MotionPresentName} {FeatureName} which direction?,Melyik irányba történjen {MotionPresentName} a(z) {FeatureName} tereptárgyon?
 FormatText,{MotionPresentName} which item on {FeatureName}?,Melyik eszközzel történjen {MotionPresentName} a(z) {FeatureName} tereptárgyon?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} esetén
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2125,6 +2129,7 @@ FormatText,unless resists {ElementName},"kivéve, ha ellenáll a következőnek:
 FormatText,unless target has {PropertyName},"kivéve, ha a célpont rendelkezik a következővel: {PropertyName}"
 FormatText,versus {Something},{Something} ellen
 FormatText,when {Chance},{Chance} esetben
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME} esetén
 FormatText,when {KINDNAMES},{KINDNAMES} esetén
 FormatText,when {MATERIALNAME},{MATERIALNAME} esetén
@@ -3239,6 +3244,7 @@ LiteralText,CREATE HORDE,HORDA LÉTREHOZÁSA
 LiteralText,CREATE ITEM,TÁRGY LÉTREHOZÁSA
 LiteralText,CREATE SHOP,BOLT LÉTREHOZÁSA
 LiteralText,CREATE SHRINE,SZENTÉLY LÉTREHOZÁSA
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CSAPDA LÉTREHOZÁSA
 LiteralText,CREATE WALL,FAL LÉTREHOZÁSA
 LiteralText,Create which direction?,Melyik irányba szeretnéd létrehozni?
@@ -3872,12 +3878,13 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,NAGYÍTÁS
 LiteralText,ZOOS,TERMEK
 LiteralText,zZz,zZz
-LocalityName,Level,Szint
-LocalityName,Map,Pálya
-LocalityName,Site,Helyszín
-LocalityName,Square,Tér
-LocalityName,World,Világ
-LocalityName,Zone,Zóna
+LocalityName,area,
+LocalityName,level,szint
+LocalityName,map,pálya
+LocalityName,site,helyszín
+LocalityName,square,tér
+LocalityName,world,világ
+LocalityName,zone,zóna
 MaterialName,adamantine,
 MaterialName,air,levegő
 MaterialName,animal,állat
@@ -3982,9 +3989,9 @@ MotionPresentName,study,tanulmányozás
 MotionPresentName,swat,csapás
 MotionPresentName,write,írás
 MotionPresentName,zap,bűvölés
-MurderTypeName,Allied,Szövetséges
-MurderTypeName,Every,Összes
-MurderTypeName,Hostile,Ellenséges
+MurderTypeName,allied,szövetséges
+MurderTypeName,every,összes
+MurderTypeName,hostile,ellenséges
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Ez a keményfa híd derekasan kiállta hosszú évek használatát.
 PlatformName,crystal bridge,kristályhíd
 PlatformName,wooden bridge,fahíd
@@ -4675,6 +4682,8 @@ TraversalPastName,travelled,átutazott
 TraversalPresentName,ascend,felmegy
 TraversalPresentName,descend,leereszkedik
 TraversalPresentName,travel,utazik
+VolatileName,blaze,
+VolatileName,steam,
 WallStructureName,illusionary,illúzió
 WallStructureName,permanent,állandó
 WallStructureName,solid,szilárd
