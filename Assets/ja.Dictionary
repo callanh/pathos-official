@@ -1038,6 +1038,7 @@ EffectType,enchant asset,アイテムの修正値
 EffectType,engulf,丸呑み
 EffectType,enlightenment,アイテムの知識を得る
 EffectType,exchange,交換する
+EffectType,extinguish spill,
 EffectType,gain level,レベルアップ
 EffectType,gain skill,スキルレベル上昇
 EffectType,genocide,根絶
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,VOID SPACE,ボイドスペース
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,昇る
 TraversalPresentName,descend,降りる
 TraversalPresentName,travel,ワープする
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,幻影
 WallStructureName,permanent,破壊不能

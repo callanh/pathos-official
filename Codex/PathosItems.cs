@@ -8441,12 +8441,16 @@ namespace Pathos
           Use.Apply.WhenConfused
           (
             T => T.CreateTrap(Codex.Devices.ice_trap, Destruction: false),
-            E => E.WithSourceSanctity
-            (
-              B => B.Harm(Elements.cold, 3.d3()),
-              U => U.Harm(Elements.cold, 4.d3()),
-              C => C.Harm(Elements.cold, 5.d3())
-            )
+            E =>
+            {
+              E.WithSourceSanctity
+              (
+                B => B.Harm(Elements.cold, 3.d3()),
+                U => U.Harm(Elements.cold, 4.d3()),
+                C => C.Harm(Elements.cold, 5.d3())
+              );
+              E.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+            }
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
@@ -11406,6 +11410,7 @@ namespace Pathos
             U => U.Harm(Elements.cold, 6.d6()),
             C => C.Harm(Elements.cold, 4.d6())
           );
+          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
@@ -11413,6 +11418,8 @@ namespace Pathos
           A.ConsumeResistance(Elements.cold);
         });
       });
+
+      // TODO: wand of lightningball?
 
       wand_of_healing = AddWand("wand of healing", I =>
       {

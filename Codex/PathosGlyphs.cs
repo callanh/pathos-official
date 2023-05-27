@@ -115,6 +115,9 @@ namespace Pathos
       Register.Alias(crystal_door_closed_horizontal, "crystal door closed");
       Register.Alias(crystal_door_locked_horizontal, "crystal door locked");
       Register.Alias(crystal_door_trapped_horizontal, "crystal door trapped");
+
+      // Icons.
+      Register.Alias(appetite, "apetite");
     }
 
     internal Glyph GetGlyph(string Name)
@@ -998,10 +1001,12 @@ namespace Pathos
 
     // satyr.
     public readonly Glyph satyr_male_bard;
+    public readonly Glyph satyr_male_caveman;
     public readonly Glyph satyr_male_convict;
     public readonly Glyph satyr_male_druid;
     public readonly Glyph satyr_male_explorer;
     public readonly Glyph satyr_male_gladiator;
+    public readonly Glyph satyr_male_gunslinger;
     public readonly Glyph satyr_male_jester;
     public readonly Glyph satyr_male_necromancer;
     public readonly Glyph satyr_male_knight;
@@ -1010,6 +1015,7 @@ namespace Pathos
     public readonly Glyph satyr_male_ranger;
     public readonly Glyph satyr_male_reaver;
     public readonly Glyph satyr_male_shaman;
+    public readonly Glyph satyr_male_tinker;
     public readonly Glyph satyr_male_wizard;
 
     public readonly Glyph satyr_female_convict;
@@ -2541,8 +2547,8 @@ namespace Pathos
 
     public readonly Glyph blaze;
     public readonly Glyph scorch;
-    //public readonly Glyph blizzard;
-    //public readonly Glyph frost;
+    public readonly Glyph freeze;
+    public readonly Glyph electricity;
     public readonly Glyph steam;
 #pragma warning restore 0649
 

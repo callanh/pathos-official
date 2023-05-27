@@ -1038,6 +1038,7 @@ EffectType,enchant asset,encantar recurso
 EffectType,engulf,engullir
 EffectType,enlightenment,iluminación
 EffectType,exchange,intercambiar
+EffectType,extinguish spill,
 EffectType,gain level,ganar nivel
 EffectType,gain skill,ganar habilidad
 EffectType,genocide,genocidio
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,Vanidad
 LiteralText,VIEW,VER
 LiteralText,Visit the website,Visitar la web
 LiteralText,VOID SPACE,ESPACIO VACÍO
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,asciende
 TraversalPresentName,descend,desciende
 TraversalPresentName,travel,viaja
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,ilusionaria
 WallStructureName,permanent,permanente

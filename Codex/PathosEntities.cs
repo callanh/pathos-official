@@ -9210,6 +9210,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
           K.Apply.Harm(Elements.shock, 8.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.electricity, 1.d100() + 150));
         });
         // +7 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());  // +7 from str.
@@ -9670,6 +9671,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 8.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -11101,6 +11103,7 @@ namespace Pathos
         {
           K.SetCast().Explosion(Explosions.fiery, Dice.Zero);
           K.Apply.Harm(Elements.fire, 3.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.cold, Elements.water);
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d6(), Modifier.Zero));
@@ -11152,6 +11155,7 @@ namespace Pathos
           K.SetCast().Explosion(Explosions.frosty, Dice.Zero);
           K.Apply.Harm(Elements.cold, 3.d9());
           K.Apply.UnlessTargetResistant(Elements.cold, T => T.ApplyTransient(Properties.paralysis, 1.d3() + 3));
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.fire);
         E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d6(), Modifier.Zero));
@@ -11255,6 +11259,7 @@ namespace Pathos
         {
           K.SetCast().Explosion(Explosions.electric, Dice.Zero);
           K.Apply.Harm(Elements.shock, 5.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.electricity, 1.d50() + 50));
         });
         E.SetCorpse(Chance.Never);
       });
@@ -11359,6 +11364,7 @@ namespace Pathos
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 10.d4());
+          R.Apply.WhenChance(Chance.OneIn4, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
         });
         E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
@@ -11456,6 +11462,7 @@ namespace Pathos
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 10.d4());
+          R.Apply.WhenChance(Chance.OneIn4, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
         });
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);

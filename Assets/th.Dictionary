@@ -1038,6 +1038,7 @@ EffectType,enchant asset,ลงอาคมทรัพย์สิน
 EffectType,engulf,เขมือบ
 EffectType,enlightenment,
 EffectType,exchange,แปลเปลี่ยน
+EffectType,extinguish spill,
 EffectType,gain level,ได้รับเลเวล
 EffectType,gain skill,ได้รับทักษะ
 EffectType,genocide,ล้างเผ่าพันธุ์
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,
 LiteralText,VIEW,ดู
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
 LiteralText,VOID SPACE,
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,แพ้ทางต่อ
 LiteralText,WAIT,รอ
 LiteralText,Wait how many turns?,รอกี่เทิร์น?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,ขึ้นไป
 TraversalPresentName,descend,ลงไป
 TraversalPresentName,travel,เดินทางไป
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,ภาพลวงตา
 WallStructureName,permanent,คงทนถาวร

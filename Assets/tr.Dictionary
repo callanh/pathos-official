@@ -1038,6 +1038,7 @@ EffectType,enchant asset,varlığı efsunla
 EffectType,engulf,yut
 EffectType,enlightenment,aydınlat
 EffectType,exchange,değiş
+EffectType,extinguish spill,
 EffectType,gain level,seviye kazan
 EffectType,gain skill,beceri kazan
 EffectType,genocide,soykırım
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,VOID SPACE,BOŞLUK
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,yukarı çık
 TraversalPresentName,descend,aşağı in
 TraversalPresentName,travel,yol katet
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,
 WallStructureName,permanent,

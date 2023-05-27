@@ -1038,6 +1038,7 @@ EffectType,enchant asset,заклинає цінність
 EffectType,engulf,проковтує
 EffectType,enlightenment,просвітлює
 EffectType,exchange,обміняти
+EffectType,extinguish spill,
 EffectType,gain level,отримує рівень
 EffectType,gain skill,отримує вміння:
 EffectType,genocide,винищує
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,Марнославство
 LiteralText,VIEW,ОГЛЯД
 LiteralText,Visit the website,Відвідайте вебсайт
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
 LiteralText,Wait how many turns?,Чекати скільки ходів?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,підіймається
 TraversalPresentName,descend,спускається
 TraversalPresentName,travel,подорожує
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,ілюзорна
 WallStructureName,permanent,постійна

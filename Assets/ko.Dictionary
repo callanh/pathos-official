@@ -1038,6 +1038,7 @@ EffectType,enchant asset,아이템 강화
 EffectType,engulf,삼키기
 EffectType,enlightenment,깨달음
 EffectType,exchange,교환
+EffectType,extinguish spill,
 EffectType,gain level,레벨 증가
 EffectType,gain skill,숙련도 획득
 EffectType,genocide,몰살
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,오르기
 TraversalPresentName,descend,내려가기
 TraversalPresentName,travel,이동하기
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,환상
 WallStructureName,permanent,영구

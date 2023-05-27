@@ -1038,6 +1038,7 @@ EffectType,enchant asset,eszköz igézése
 EffectType,engulf,elnyelés
 EffectType,enlightenment,felvilágosodás
 EffectType,exchange,kicserél
+EffectType,extinguish spill,
 EffectType,gain level,szint megszerzése
 EffectType,gain skill,képesség megszerzése
 EffectType,genocide,népirtás
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,felmegy
 TraversalPresentName,descend,leereszkedik
 TraversalPresentName,travel,utazik
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,illúzió
 WallStructureName,permanent,állandó

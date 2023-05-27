@@ -209,6 +209,7 @@ namespace Pathos
         C.AddAvatar(Races.fairy, Genders.male, Glyphs.fairy_male_caveman);
         C.AddAvatar(Races.fairy, Genders.female, Glyphs.fairy_female_caveman);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_caveman);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_caveman);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_caveman);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_caveman);
         C.AddFeat(1, Properties.cannibalism);
@@ -344,6 +345,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_gunslinger);
         C.AddAvatar(Races.orc, Genders.male, Glyphs.orc_male_gunslinger);
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_gunslinger);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_gunslinger);
         C.AddFeat(5, Properties.warning);
         C.AddFeat(10, Elements.sleep);
         C.AddFeat(15, Properties.appraisal);
@@ -1069,6 +1071,7 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_tinker);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_tinker);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_tinker);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_tinker);
         C.AddFeat(2, Properties.searching);
         C.AddFeat(10, Properties.appraisal);
         C.AddFeat(20, Properties.vitality);

@@ -1038,6 +1038,7 @@ EffectType,enchant asset,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
+EffectType,extinguish spill,
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,поднимается
 TraversalPresentName,descend,спускается
 TraversalPresentName,travel,перемещается
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,иллюзия
 WallStructureName,permanent,не рушимая

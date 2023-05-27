@@ -1038,6 +1038,7 @@ EffectType,enchant asset,phù phép vật
 EffectType,engulf,nuốt chửng
 EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
+EffectType,extinguish spill,
 EffectType,gain level,lên cấp
 EffectType,gain skill,mở kĩ năng
 EffectType,genocide,diệt chủng
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,ảo ảnh
 WallStructureName,permanent,thật vĩnh viễn

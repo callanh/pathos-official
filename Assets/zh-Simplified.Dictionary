@@ -1038,6 +1038,7 @@ EffectType,enchant asset,附魔物件
 EffectType,engulf,吞咽
 EffectType,enlightenment,启蒙
 EffectType,exchange,交换
+EffectType,extinguish spill,
 EffectType,gain level,升级
 EffectType,gain skill,获得技能
 EffectType,genocide,灭绝
@@ -3849,6 +3850,7 @@ LiteralText,Vanity,自恋，请
 LiteralText,VIEW,查看
 LiteralText,Visit the website,访问官网
 LiteralText,VOID SPACE,虚空
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,易受伤害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
@@ -4683,6 +4685,8 @@ TraversalPresentName,ascend,向上移动
 TraversalPresentName,descend,向下移动
 TraversalPresentName,travel,行进
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,幻象
 WallStructureName,permanent,永久
