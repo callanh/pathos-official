@@ -837,7 +837,7 @@ CounterName,captures,捕捉
 CounterName,casts,施法
 CounterName,chants,吟唱
 CounterName,constructs,製造
-CounterName,copies,
+CounterName,copies,複製
 CounterName,crafts,製作
 CounterName,decapitations,斬首
 CounterName,digs,挖掘
@@ -856,7 +856,7 @@ CounterName,jumps,跳躍
 CounterName,kicks,踢
 CounterName,lifesaves,被拯救
 CounterName,mimics,模仿
-CounterName,mounts,
+CounterName,mounts,騎乘
 CounterName,moves,移動
 CounterName,opens,開啟
 CounterName,packs,罐裝
@@ -871,7 +871,7 @@ CounterName,reclines,躺在上面
 CounterName,refills,充滿
 CounterName,releases,釋放
 CounterName,renames,改名
-CounterName,replications,複製
+CounterName,replications,產生複製品
 CounterName,rests,休息
 CounterName,rubs,摩擦
 CounterName,sacrifices,獻祭
@@ -1013,14 +1013,14 @@ EffectType,convert boulder,轉換巨石
 EffectType,convert door,轉換門
 EffectType,convert fixture,轉換固定物
 EffectType,convert floor,轉換地面
-EffectType,convert spill,
+EffectType,convert spill,轉換元素場
 EffectType,convert wall,轉換牆壁
 EffectType,create boulder,製造巨石
 EffectType,create fixture,製造固定物
 EffectType,create golem,製造魔像
 EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
-EffectType,create spill,
+EffectType,create spill,製造元素場
 EffectType,create trap,製造陷阱
 EffectType,create wall,製造牆壁
 EffectType,decapitate,斬首
@@ -1038,7 +1038,7 @@ EffectType,enchant asset,附魔物件
 EffectType,engulf,吞嚥
 EffectType,enlightenment,啟蒙
 EffectType,exchange,交換
-EffectType,extinguish spill,
+EffectType,extinguish spill,撲滅元素場
 EffectType,gain level,升級
 EffectType,gain skill,獲得技能
 EffectType,genocide,滅絕
@@ -1067,7 +1067,7 @@ EffectType,raise dead,復活死屍
 EffectType,recall,喚回隊友
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
-EffectType,remove spill,
+EffectType,remove spill,移除元素場
 EffectType,remove transient,去除短期狀態
 EffectType,replicate asset,複製物件
 EffectType,restock,重新進貨
@@ -2058,7 +2058,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} 與哪個物品?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} 哪個方向？
 FormatText,{MotionPresentName} which item on {FeatureName}?,以 {FeatureName} {MotionPresentName} 哪個物品?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} 騎上了 {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 施咒
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2130,7 +2130,7 @@ FormatText,unless resists {ElementName},除非對 {ElementName} 有抗性
 FormatText,unless target has {PropertyName},除非目標擁有 {PropertyName}
 FormatText,versus {Something},克制{Something}
 FormatText,when {Chance},{Chance} 機率
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},若地面為 {GROUNDNAME}
 FormatText,when {ITEMNAME},當 {ITEMNAME}
 FormatText,when {KINDNAMES},當 {KINDNAMES}
 FormatText,when {MATERIALNAME},當 {MATERIALNAME}
@@ -3111,8 +3111,8 @@ LiteralText,AMMO,彈藥
 LiteralText,amnesia,失憶
 LiteralText,AMNESIA,失憶
 LiteralText,anatomy,解剖學
-LiteralText,animate mount,
-LiteralText,animate revenant,活化復仇者
+LiteralText,animate mount,活化 騎乘
+LiteralText,animate revenant,活化 復仇者
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,逆時針旋轉90度
 LiteralText,any item,任何物品
@@ -3245,7 +3245,7 @@ LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
 LiteralText,CREATE SHOP,創造商店
 LiteralText,CREATE SHRINE,創造遺跡
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,創造元素場
 LiteralText,CREATE TRAP,創造陷阱
 LiteralText,CREATE WALL,創造牆壁
 LiteralText,Create which direction?,向哪個方向創造？
@@ -3678,7 +3678,7 @@ LiteralText,REVEAL,揭露
 LiteralText,REVEAL ALL MAPS,對所有樓層使用魔法地圖
 LiteralText,REVEAL THIS MAP,對本樓層使用魔法地圖
 LiteralText,revealed,不隱藏
-LiteralText,revenant,
+LiteralText,revenant,活化為復仇者
 LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
@@ -3850,7 +3850,7 @@ LiteralText,Vanity,自戀，請
 LiteralText,VIEW,查看
 LiteralText,Visit the website,訪問官網
 LiteralText,VOID SPACE,虛空
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,元素場
 LiteralText,vulnerable to,易受傷害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
@@ -3880,7 +3880,7 @@ LiteralText,Your feedback is appreciated and will influence my development plans
 LiteralText,ZOOM,縮放
 LiteralText,ZOOS,動物園
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,範圍
 LocalityName,level,樓層
 LocalityName,map,地圖
 LocalityName,site,站點
@@ -4684,10 +4684,10 @@ TraversalPastName,travelled,行進到
 TraversalPresentName,ascend,向上移動
 TraversalPresentName,descend,向下移動
 TraversalPresentName,travel,行進
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,火焰
+VolatileName,electricity,感電
+VolatileName,freeze,冰霧
+VolatileName,steam,蒸汽
 WallStructureName,illusionary,幻象
 WallStructureName,permanent,永久
 WallStructureName,solid,堅固

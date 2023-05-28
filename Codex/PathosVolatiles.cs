@@ -41,12 +41,15 @@ namespace Pathos
       blaze = AddVolatile("blaze", Glyphs.blaze, Glyphs.scorch, Sonics.burn, S => // TODO: rename 'flames'?
       {
         S.Apply.Harm(Elements.fire, 2.d6());
+
         S.Apply.WhenTargetFloor(Grounds.water, T => T.ConvertSpill(blaze, steam, Locality.Square));
-        S.Apply.WhenTargetFloor(Grounds.ice, T =>
-        {
-          T.ConvertFloor(Grounds.ice, Grounds.water, Locality.Square);
-          T.RemoveSpill(blaze);
-        });
+
+        // NOTE: ice ground already reacts to fire and turns to water.
+        //S.Apply.WhenTargetFloor(Grounds.ice, T =>
+        //{
+        //  T.ConvertFloor(Grounds.ice, Grounds.water, Locality.Square);
+        //  T.RemoveSpill(blaze);
+        //});
 
         S.AddReaction(Chance.Always, Elements.water, T =>
         {

@@ -864,10 +864,11 @@ namespace Pathos
         {
           foreach (var Item in Kit.Items)
           {
-            var Skill = Item.GetSkill();
-
-            if (Skill != null && !Class.Startup.HasSkill(Skill))
-              Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            foreach (var Skill in Item.GetSkills())
+            {
+              if (Skill != null && !Class.Startup.HasSkill(Skill))
+                Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            }
           }
         }
 
