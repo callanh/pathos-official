@@ -30,39 +30,44 @@ namespace Pathos
 
       damned = AddStatus("damned", -1000, S =>
       {
-        S.SpawnModifier = -5;
+        S.SpawnModifier = -4;
       });
       doomed = AddStatus("doomed", -750, S =>
       {
-        S.SpawnModifier = -4;
+        S.SpawnModifier = -3;
       });
       evil = AddStatus("evil", -500, S =>
       {
-        S.SpawnModifier = -3;
+        S.SpawnModifier = -2;
       });
       doubtful = AddStatus("doubtful", -250, S =>
       {
-        S.SpawnModifier = -2;
+        S.SpawnModifier = -1;
       });
       strayed = AddStatus("strayed", -1, S =>
       {
-        S.SpawnModifier = -1;
+        S.SpawnModifier = +0;
       });
 
       reconciled = AddStatus("reconciled", +0, S =>
       {
+        S.SpawnModifier = +0;
       });
       hopeful = AddStatus("hopeful", +250, S =>
       {
+        S.SpawnModifier = +1;
       });
       good = AddStatus("good", +500, S =>
       {
+        S.SpawnModifier = +2;
       });
       glorious = AddStatus("glorious", +750, S =>
       {
+        S.SpawnModifier = +3;
       });
       exalted = AddStatus("exalted", +1000, S =>
       {
+        S.SpawnModifier = +4;
       });
     }
 #endif
