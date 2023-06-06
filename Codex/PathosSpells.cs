@@ -74,31 +74,31 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.acid, 1.d4() + 3);
             P.Apply.Harm(Elements.acid, 6.d6());
-            P.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 2.d4() + 2)));
+            P.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 2.d4() + 2)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.acid, 1.d4() + 5);
             S.Apply.Harm(Elements.acid, 8.d6());
-            S.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 3.d4() + 3)));
+            S.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 3.d4() + 3)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.acid, 1.d4() + 7);
             E.Apply.Harm(Elements.acid, 10.d6());
-            E.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 4.d4() + 4)));
+            E.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 4.d4() + 4)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.acid, 1.d4() + 9);
             M.Apply.Harm(Elements.acid, 12.d6());
-            M.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 5.d4() + 5)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 5.d4() + 5)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.acid, 1.d4() + 11);
             C.Apply.Harm(Elements.acid, 14.d6());
-            C.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 6.d4() + 6)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 6.d4() + 6)));
           }
         );
       });
@@ -333,31 +333,31 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.cold, 1.d4() + 3);
             P.Apply.Harm(Elements.cold, 6.d4() + 6);
-            P.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn8, T => T.ApplyTransient(Properties.paralysis, 1.d2() + 1)));
+            P.Apply.WhenChance(Chance.OneIn8, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d2() + 1)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.cold, 1.d4() + 5);
             S.Apply.Harm(Elements.cold, 8.d4() + 8);
-            S.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn6, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 2)));
+            S.Apply.WhenChance(Chance.OneIn6, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 2)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.cold, 1.d4() + 7);
             E.Apply.Harm(Elements.cold, 10.d4() + 10);
-            E.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 3)));
+            E.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 3)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.cold, 1.d4() + 9);
             M.Apply.Harm(Elements.cold, 12.d4() + 12);
-            M.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 4)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 4)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.cold, 1.d4() + 11);
             C.Apply.Harm(Elements.cold, 14.d4() + 14);
-            C.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 5)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 5)));
           }
         );
       });
@@ -2141,31 +2141,31 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.poison, 1.d4() + 3);
             P.Apply.Harm(Elements.poison, 6.d6());
-            P.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 1.d4() + 1)));
+            P.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 1.d4() + 1)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.poison, 1.d4() + 5);
             S.Apply.Harm(Elements.poison, 8.d6());
-            S.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 2.d4() + 2)));
+            S.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 2.d4() + 2)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.poison, 1.d4() + 7);
             E.Apply.Harm(Elements.poison, 10.d6());
-            E.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 3.d4() + 3)));
+            E.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 3.d4() + 3)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.poison, 1.d4() + 9);
             M.Apply.Harm(Elements.poison, 12.d6());
-            M.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 4.d4() + 4)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 4.d4() + 4)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.poison, 1.d4() + 11);
             C.Apply.Harm(Elements.poison, 14.d6());
-            C.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 5.d4() + 5)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 5.d4() + 5)));
           }
         );
       });

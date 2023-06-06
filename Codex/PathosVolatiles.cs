@@ -64,11 +64,13 @@ namespace Pathos
       electricity = AddVolatile("electricity", Glyphs.electricity, null, Sonics.electricity, S =>
       {
         S.Apply.Harm(Elements.shock, 4.d4());
+        S.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.shock, R => R.ApplyTransient(Properties.confusion, 1.d4() + 1)));
       });
 
       freeze = AddVolatile("freeze", Glyphs.freeze, null, Sonics.freeze, S =>
       {
         S.Apply.Harm(Elements.cold, 3.d4());
+        S.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.slowness, 1.d4() + 1)));
 
         // NOTE: water ground already reacts to cold and turns to ice.
         //S.Apply.WhenTargetFloor(Grounds.water, T =>

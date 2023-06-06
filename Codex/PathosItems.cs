@@ -1206,27 +1206,27 @@ namespace Pathos
         W.AddDetonation(Explosions.fiery, A =>
         {
           A.Harm(Elements.fire, 1.d12());
-          A.UnlessTargetResistant(Elements.fire, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.blindness, 1.d4() + 1)));
+          A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.fire, R => R.ApplyTransient(Properties.blindness, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.frosty, A =>
         {
           A.Harm(Elements.cold, 1.d14());
-          A.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
+          A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.electric, A =>
         {
           A.Harm(Elements.shock, 1.d16());
-          A.UnlessTargetResistant(Elements.shock, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1)));
+          A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.shock, R => R.ApplyTransient(Properties.stunned, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.acid, A =>
         {
           A.Harm(Elements.acid, 1.d18());
-          A.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.confusion, 1.d4() + 1)));
+          A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.confusion, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.magical, A =>
         {
           A.Harm(Elements.magical, 1.d20());
-          A.UnlessTargetResistant(Elements.magical, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sleeping, 1.d4() + 1)));
+          A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.magical, R => R.ApplyTransient(Properties.sleeping, 1.d4() + 1)));
         });
       });
 
@@ -11072,7 +11072,7 @@ namespace Pathos
             U => U.Harm(Elements.cold, 6.d6()),
             C => C.Harm(Elements.cold, 5.d6())
           );
-          Use.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
+          Use.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
