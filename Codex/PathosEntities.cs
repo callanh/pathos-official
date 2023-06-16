@@ -5242,13 +5242,13 @@ namespace Pathos
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 5.d10());
+          A.Apply.DecreaseKarma(5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 10.d10());
+          A.Apply.DecreaseKarma(10.d10());
           //A.Apply.WhenChance(Chance.OneIn100, Z => Z.Afflict(Codex.Afflictions.crabs)); // funny but doesn't make sense.
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.constitution);
@@ -6024,13 +6024,13 @@ namespace Pathos
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 5.d10());
+          A.Apply.DecreaseKarma(5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 10.d10());
+          A.Apply.DecreaseKarma(10.d10());
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.constitution);
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());

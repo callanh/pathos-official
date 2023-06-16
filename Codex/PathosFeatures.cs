@@ -51,7 +51,7 @@ namespace Pathos
 
         // TODO: can't use the altar at all, when shunned.
 
-        F.DropApply.Karma(ChangeType.Decrease, Dice.Fixed(5));
+        F.DropApply.DecreaseKarma(Dice.Fixed(5));
         F.DropApply.Divine();
 
         F.DestroyStrike = Strikes.holy;
@@ -63,11 +63,11 @@ namespace Pathos
 
         var DivineUse = F.AddUse(Codex.Motions.divine, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
         DivineUse.SetCast().FilterDivined(false);
-        DivineUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(5));
+        DivineUse.Apply.DecreaseKarma(Dice.Fixed(5));
         DivineUse.Apply.Divine();
 
         var PrayUse = F.AddUse(Codex.Motions.pray, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
-        PrayUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(200));
+        PrayUse.Apply.DecreaseKarma(Dice.Fixed(200));
         PrayUse.Apply.WithSourceSanctity
         (
           B =>
@@ -101,7 +101,7 @@ namespace Pathos
         F.Weight = Weight.FromUnits(18000);
 
         F.DestroyApply.ConvertFixture(bed, Devices.squeaky_board);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var ReclineUse = F.AddUse(Codex.Motions.recline, Utility: null, Delay.FromTurns(20), Sonics.magic, Audibility: 1); // springs creak softly.
         ReclineUse.Apply.WithSourceSanctity
@@ -230,12 +230,12 @@ namespace Pathos
         F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(grave, Devices.pit);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var DigUse = F.AddUse(Codex.Motions.dig, null, Delay.FromTurns(50), Sonics.pick_axe, Audibility: 10);
         DigUse.SetCast().FilterItem(Items.pickaxe, Items.dwarvish_mattock, Items.Colossal_Excavator, Items.wand_of_digging).SetAssetIndividualised(); // use a charge for the wand of digging.
         DigUse.Apply.ConvertFixture(grave, Devices.pit);
-        DigUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        DigUse.Apply.DecreaseKarma(Dice.Fixed(50));
 
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateEntity(1.d3(), Kinds.Undead.ToArray()));
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateAsset(1.d2()));
@@ -248,7 +248,7 @@ namespace Pathos
         F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(sarcophagus, Devices.hole);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var OpenUse = F.AddUse(Codex.Motions.open, null, Delay.FromTurns(20), Sonics.scrape, Audibility: 10);
         OpenUse.Apply.ConvertFixture(sarcophagus, Device: null);

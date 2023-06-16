@@ -434,7 +434,7 @@ namespace Pathos
           Use.SetCast()
              .FilterItem(Stocks.scroll.Items.Except(Miserus, scroll_of_blank_paper, scroll_of_replication).Where(I => I.Type == ItemType.Scroll).ToArray())
              .SetTerminates();
-          Use.Apply.Karma(ChangeType.Decrease, Dice.Fixed(500)); // shrine boon costs 1000 to replicate any item.
+          Use.Apply.DecreaseKarma(Dice.Fixed(500)); // shrine boon costs 1000 to replicate any item.
           Use.Apply.WhenConfused
           (
             T => T.CreateAsset(Dice.One, Dice.One, scroll_of_blank_paper),
@@ -639,7 +639,7 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.magic, Dice.One)
              .SetAudibility(1);
-          Use.Apply.Karma(ChangeType.Decrease, 1.d50() + 100); // costs 101-150 karma
+          Use.Apply.DecreaseKarma(1.d50() + 100); // costs 101-150 karma
           Use.Apply.WithSourceSanctity
           (
             B => B.AnimateRevenants(Corrupt: null),
@@ -653,7 +653,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.death, Dice.One)
              .SetAudibility(5);
           Use.Apply.Harm(Elements.physical, Dice.Zero);
-          Use.Apply.Karma(ChangeType.Decrease, 1.d50() + 200); // costs 201-250 karma
+          Use.Apply.DecreaseKarma(1.d50() + 200); // costs 201-250 karma
           Use.Apply.WhenTargetKind(Kinds.Living, T =>
           {
             T.DrainLife(Elements.drain, 6.d6() + 6);
@@ -733,7 +733,7 @@ namespace Pathos
         I.DefaultSanctity = Sanctities.Cursed;
         I.AddObviousUse(Motions.open, Delay.FromTurns(30), Sonics.magic, Use =>
         {
-          Use.Apply.Karma(ChangeType.Decrease, 1.d100() + 50); // costs 51-150 karma
+          Use.Apply.DecreaseKarma(1.d100() + 50); // costs 51-150 karma
           Use.Apply.WithSourceSanctity
           (
             B =>
@@ -887,7 +887,7 @@ namespace Pathos
          .SetTalent(Properties.reflection, Properties.warning);
         I.AddObviousUse(Motions.scry, Delay.FromTurns(30), Sonics.magic, Use =>
         {
-          Use.Apply.Karma(ChangeType.Decrease, Dice.Fixed(100));
+          Use.Apply.DecreaseKarma(Dice.Fixed(100));
           Use.Apply.DetectTrap(Range.Sq10);
           Use.Apply.Searching(Range.Sq10);
           Use.Apply.WithSourceSanctity
@@ -1404,7 +1404,7 @@ namespace Pathos
         I.AddBlastUse(Motions.zap, Delay.FromTurns(20), Sonics.explosion, A =>
         {
           A.SetCast().Strike(Strikes.force, Dice.One);
-          A.Apply.Karma(ChangeType.Decrease, Dice.Fixed(Codex.Devices.spiked_pit.KarmaCost));
+          A.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.spiked_pit.KarmaCost));
           A.Apply.WithSourceSanctity
           (
             B => B.CreateTrap(Codex.Devices.spiked_pit, Destruction: false),
@@ -1462,7 +1462,7 @@ namespace Pathos
         I.AddObviousUse(Motions.dig, Delay.FromTurns(20), Sonics.electricity, Use =>
         {
           Use.SetCast().Strike(Strikes.tunnel, Dice.One);
-          Use.Apply.Karma(ChangeType.Decrease, Dice.Fixed(Codex.Devices.hole.KarmaCost));
+          Use.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.hole.KarmaCost));
           Use.Apply.WithSourceSanctity
           (
             B => B.CreateTrap(Codex.Devices.hole, Destruction: true),
@@ -8811,7 +8811,7 @@ namespace Pathos
             T => T.AreaTransient(Properties.lifesaving, 10.d100(), Kinds.Living.ToArray()),
             F =>
             {
-              F.Karma(ChangeType.Decrease, Dice.Fixed(250));
+              F.DecreaseKarma(Dice.Fixed(250));
               F.WithSourceSanctity
               (
                 B => B.Murder(MurderType.Hostile, Strikes.death, Kinds.Living.ToArray()),
@@ -8852,9 +8852,9 @@ namespace Pathos
             {
               T.WithSourceSanctity
               (
-                B => B.Karma(ChangeType.Increase, 6.d50()),
-                U => U.Karma(ChangeType.Increase, 3.d50()),
-                C => C.Karma(ChangeType.Increase, 1.d50())
+                B => B.IncreaseKarma(6.d50()),
+                U => U.IncreaseKarma(3.d50()),
+                C => C.IncreaseKarma(1.d50())
               );
             },
             F =>
