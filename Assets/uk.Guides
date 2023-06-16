@@ -328,12 +328,14 @@
 
 # Enchantment; Зачаровування
 . Weapons and armour have a modifier that can be changed with enchantment magic.; Зброя та обладунки мають модифікатор, який можна змінити чарівною магією.
-. The modifier is limited to between {Min} and {Max}.; Модифікатор обмежений на {Min} і {Max}.
 . A modifier of +0 is a normal, mundane item.; Модифікатор +0 - це звичайний мирський елемент.
 . Modifiers on armour apply to your defence score.; Модифікатори броні застосовуються до вашої оцінки захисту.
 . Modifiers on weapons apply to your attack and damage scores.; Модифікатори зброї застосовуються до вашої оцінки атаки та шкоди.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Предмет буде знищений, якщо ви спробуєте змінити модифікатор за межами {Min} або {Max}.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+/
+. The {grade} items are limited to between {Min} and {Max}.; Модифікатор {grade} обмежений на {Min} і {Max}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Предмет {grade} буде знищений, якщо ви спробуєте змінити модифікатор за межами за його межі
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Предмети також можна поліпшити, наприклад, зачаровувати олов'яний свист у чарівний свист.
 
 # Punishments; Покарання

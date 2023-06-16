@@ -2155,6 +2155,9 @@ GenderName,neuter,semleges
 GenderName,non-binary,nem bináris
 GenerationType,module,modul
 GenerationType,quest,kaland
+GradeName,artifact,ereklye
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Ez a kőfelület igazi, makulátlan mestermunka, annak ellenére, hogy az idő vasfogának nyomát hordozza magán."
 GroundName,chasm,üresség
 GroundName,dirt floor,földpadló
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,lőfegyverek nem használhatóak
 LiteralText,ABOUT,A JÁTÉKRÓL
 LiteralText,About Pathos,A Pathosról
 LiteralText,Abyss,Mélység
-LiteralText,accelerated animations,gyorsított animációk
 LiteralText,accelerated resting,gyorsított pihenés
 LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
@@ -3107,7 +3109,6 @@ LiteralText,ALL,ÖSSZES
 LiteralText,ALL AT ONCE,MINDET EGYSZERRE
 LiteralText,always,mindig
 LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
-LiteralText,AMMO,LŐSZER
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
 LiteralText,anatomy,anatómia
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Biztos be szeretnéd fejezni ezt a kalandot? Ez a karakter elvesztésével jár...
 LiteralText,ARE YOU SURE?,BIZTOS VAGY BENNE?
 LiteralText,area of effect,hatásterület
-LiteralText,artifact,ereklye
 LiteralText,ARTIFACTS,EREKLYÉK
 LiteralText,ASCEND TO PREVIOUS LEVEL,LÉPÉS AZ ELŐZŐ SZINTRE
-LiteralText,asleep,alvó
 LiteralText,assets,vagyon
 LiteralText,ATMOSPHERE,ATMOSZFÉRA
 LiteralText,attack modifier,támadásmódosító
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,értekezések a bétaverzióról
 LiteralText,Black background,Fekete háttér
 LiteralText,Black Market,Fekete Piac
 LiteralText,blasphemy,istenkáromlás
-LiteralText,blessed,áldott
-LiteralText,BLESSED,ÁLDOTT
 LiteralText,BLINK,ELILLANÁS
 LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
 LiteralText,block,akadály
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,TÖRÖTT
 LiteralText,burst rate,sorozatlövés mértéke
 LiteralText,BUY,MEGVÁSÁROL
 LiteralText,BUY ALL,ÖSSZES MEGVÁSÁRLÁSA
-LiteralText,by Callan Hodgskin,készítette: Callan Hodgskin
 LiteralText,CANCEL,MÉGSE
 LiteralText,cancellation,érvénytelenítés
 LiteralText,CANCELLED,ÉRVÉNYTELENÍTVE
@@ -3194,8 +3190,6 @@ LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,characters,karakterek
 LiteralText,charged items,feltöltött tárgyak
-LiteralText,charm,báj
-LiteralText,CHARMED,ELBŰVÖLT
 LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
 LiteralText,checking for updates,frissítések keresése
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,kattints az újrapróbáláshoz
 LiteralText,Click to send detected issues to the author,problémák bejelentése
 LiteralText,CLOSE,BEZÁRÁS
 LiteralText,closed,becsukott
-LiteralText,CLOSED,BECSUKOTT
 LiteralText,Coding on Medium,Kódolás a Mediumon
 LiteralText,coins,érmék
 LiteralText,companion,társ
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,FAL LÉTREHOZÁSA
 LiteralText,Create which direction?,Melyik irányba szeretnéd létrehozni?
 LiteralText,CREDITS,KÖZREMŰKÖDŐK
 LiteralText,CROP,LEVÁG
-LiteralText,cursed,átkozott
 LiteralText,CURSED,ÁTKOZOTT
 LiteralText,CUSTOM,EGYÉNI
 LiteralText,CUSTOM HERO,EGYÉNI HŐS
 LiteralText,CUSTOM MODULES,EGYÉNI MODULOK
-LiteralText,DAMAGE,SEBZÉS
 LiteralText,dark,sötét
-LiteralText,dark-hidden,sötétben rejtőző
 LiteralText,DEAD END,ZSÁKUTCA
 LiteralText,death,halál
-LiteralText,DEATH,HALÁL
 LiteralText,deathray,halálsugár
 LiteralText,decapitation,lefejezés
 LiteralText,DECEASED,ELHUNYT
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,használat után
 LiteralText,downloading update,frissítés letöltése
 LiteralText,drop,elejt
 LiteralText,DROP,ELEJT
-LiteralText,DUAL,KETTŐS
 LiteralText,DUAL WIELD,KÉTKEZES
 LiteralText,Dungeon,Kazamata
 LiteralText,duration,idő
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,ELMENEKÜLÉS
 LiteralText,escape traps,csapdákból való kijutás
 LiteralText,escape with,kijutás
 LiteralText,escaped,kijutott
-LiteralText,ESCAPED,KIJUTOTT
 LiteralText,ESSENCE,ESSZENCIA
 LiteralText,evolution,fejlődés
 LiteralText,Examine which object?,Melyik objektumon szeretnéd megvizsgálni?
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,KIBŐVÍT
 LiteralText,EXPEL,KIUTASÍT
 LiteralText,experience,tapasztalat
 LiteralText,EXPERIENCE,TAPASZTALAT
-LiteralText,EXPLODED,FELROBBANT
 LiteralText,explosion,robbanás
 LiteralText,EXPORT,EXPORTÁL
 LiteralText,extinctions,kiirtások
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,TEREPTÁRGYAK
 LiteralText,FEED,MEGETET
 LiteralText,FEEDBACK,VISSZAJELZÉS
 LiteralText,FILES,FÁJLOK
-LiteralText,Find out what is coming in the next update.,"Tudd meg, mi várható a következő frissítésben."
 LiteralText,fixed range,állandó hatótávolság
 LiteralText,FIZZLE,PEZSGÉS
 LiteralText,Floor,Padló
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,FELBÉREL
 LiteralText,HORDES,HORDÁK
 LiteralText,HOST,LÉTREHOZÁS
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
-LiteralText,HUH?,HUH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Remélem élvezed a kalandokat! Bármilyen visszajelzéssel vagy javaslattal fordulj hozzám bizalommal.
 LiteralText,identified items,azonosított tárgyak
-LiteralText,IDENTIFY,AZONOSÍTÁS
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,A PADLÓN LÉVŐ ÖSSZES TÁRGY AZONOSÍTÁSA
 LiteralText,ILLITERATE,ÍRÁSTUDATLAN
 LiteralText,illusion,illúzió
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,LEHETETLEN
 LiteralText,in both hands,mindkét kézben
 LiteralText,incarceration,BEBÖRTÖNZÉS
-LiteralText,increase,növel
 LiteralText,INCREASE,NÖVEL
 LiteralText,INDEX,NÉVMUTATÓ
 LiteralText,individual crafting,egyéni barkácsolás
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,befolyásolt cselekedetek
 LiteralText,INSCRIBE,BELEÍR
 LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
-LiteralText,INSTRUCT,UTASÍT
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
 LiteralText,insulation,szigetelés
@@ -3493,7 +3474,6 @@ LiteralText,light,fény
 LiteralText,LIGHT,FÉNY
 LiteralText,light radius,fény hatósugara
 LiteralText,limits,határértékek
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Az összes támogatott platformhoz kapcsolódik, ideértve az iOS-t, az Androidot és a Windowst."
 LiteralText,LIST,LISTA
 LiteralText,lit,meggyújt
 LiteralText,LIVING,ÉLŐ
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,képesség elvesztése
 LiteralText,Lost Chambers,Elveszett Kamrák
 LiteralText,LOW MANA,ALACSONY MANA
 LiteralText,Ludios Cache,Ludios Rejtekhely
-LiteralText,MAIN,FŐ
 LiteralText,MAIN WIELD,ELSŐDLEGES
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,MÍMEL
 LiteralText,mimicking,mímelés
 LiteralText,Mines,Bányák
 LiteralText,Minetown,Bányászváros
-LiteralText,missile,lövedék
 LiteralText,modifier,módosító
 LiteralText,MOUNT,FELSZÁLL
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
@@ -3577,14 +3555,12 @@ LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
 LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
-LiteralText,PACIFIED,MEGBÉKÍTETT
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
 LiteralText,passage,átjáró
 LiteralText,passive (no attacking),passzív (nincs támadás)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,"A Pathost osztott képernyőn, 4 játékos kooperatív módban is lehet játszani."
 LiteralText,pathos development @ paypal,Pathos-támogatás @ PayPal
-LiteralText,Pathos is free to play and developed for the love of the game.,"A Pathos ingyenes, és a játék szeretetéért lett fejlesztve."
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"A Pathos nem tudja betölteni a kalandot. Kérlek, küldd el a mentési fájlodat, hogy megtalálhassam a probléma forrását. Előfordulhat, hogy sikerül magát a fájlproblémát kijavítanom, vagy egy frissítéssel orvosolni a hibát. Megértésedet köszönöm."
 LiteralText,Pathos might be the next evolution of Nethack.,A Pathos lehet a Nethack fejlődésének következő szintje.
 LiteralText,penalty,büntetés
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,ÁTVÁLTOZOTT
 LiteralText,portal,portál
 LiteralText,porter,hordár
 LiteralText,PRAY,IMA
-LiteralText,PRAYING,IMÁDKOZIK
 LiteralText,preservation,konzerválás
 LiteralText,prevent revenant levels,kísértetszintek meggátolása
 LiteralText,prisoner,fogoly
@@ -3664,10 +3639,8 @@ LiteralText,resident?,ott tartózkodó?
 LiteralText,resistances,ellenállások
 LiteralText,RESISTS,ELLENÁLL
 LiteralText,Rest,Pihenés
-LiteralText,REST,PIHENÉS
 LiteralText,Rest how many turns?,Hány körön át tartson a pihenés?
 LiteralText,restarting to update,újraindítás a frissítés befejezéséhez
-LiteralText,RESTING,PIHEN
 LiteralText,RESTORED,VISSZAÁLLÍTOTT
 LiteralText,RESURRECT,FELTÁMASZT
 LiteralText,Resurrect and continue,Feltámasztás és folytatás
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,SZÉTSZEDÉS
 LiteralText,SEALED,CSUKOTT
 LiteralText,Search,Keresés
 LiteralText,Search how many turns?,Hány kör keresés?
-LiteralText,SEARCHING,KERESÉS
 LiteralText,secret,titok
 LiteralText,SECRET,TITOK
 LiteralText,seed,seed
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,NEHÉZSÉG BEÁLLÍTÁSA
 LiteralText,set starting location,kezdőpont beállítása
 LiteralText,SETTINGS,BEÁLLÍTÁSOK
 LiteralText,sfx volume,sfx hangerő
-LiteralText,Share your tragic and heroic stories with other players.,"Oszd meg mind tragikus, mind hősies történeteidet másokkal."
 LiteralText,SHARE//exchange,MEGOSZTÁS
 LiteralText,SHARE//publish,MEGOSZTÁS
 LiteralText,SHOPS,BOLTOK
 LiteralText,Show debugging information,Hibakeresési adatok mutatása
 LiteralText,Show time clock,Óra mutatása
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Kifejezheted a háládat azzal, ha másoknak is megmutatod a Pathost."
 LiteralText,SHRINES,SZENTÉLYEK
 LiteralText,SIGN-IN,BEJELENTKEZÉS
 LiteralText,size,méret
@@ -3782,7 +3752,6 @@ LiteralText,terrain,terep
 LiteralText,The attack score is your aptitude for hitting an opponent.,"A támadási pontszám megmutatja, hogy mekkora eséllyel tudod ellefeleidet eltalálni."
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"A kihívás a mechanika fejlesztése anélkül, hogy a játék elveszítse azon mivoltát, ami minden idők egyik legnagyobbjává tette."
 LiteralText,The defence score is how protected you are from being hit by an opponent.,"A védekezési pontszám megmutatja, hogy milyen mértékben vagy védett az ellenséges találatok ellen."
-LiteralText,There are no known polymorphs,Nincsenek észlelt többalakúak
 LiteralText,There is a new update available!,Elérhető egy új frissítés!
 LiteralText,there is nothing to place here,ide semmit nem lehet rakni
 LiteralText,there is nothing to remove here,innen semmit nem lehet eltávolítani
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,TÚL NEHÉZ
 LiteralText,TOO HUNGRY,TÚL ÉHES
 LiteralText,TOO SMALL,TÚL KICSI
 LiteralText,TOO WEAK,TÚL GYENGE
-LiteralText,touch,érintés
 LiteralText,TRACKS,ZENE
 LiteralText,TRADE,KERESKEDÉS
 LiteralText,transform to,átalakul:
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
-LiteralText,WAITING,VÁRAKOZÁS
 LiteralText,WARPING,ELTÉVELYEDÉS
 LiteralText,was killed,elesett
-LiteralText,was strangled,megfojtották
 LiteralText,weakness to,gyenge a következővel szemben:
 LiteralText,weight,súly
 LiteralText,when afflicted,lesújtva
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,ROSSZ IRÁNY
 LiteralText,"You are playing as anonymous, please register!","Jelenleg név nélkül játszol, regisztrálj, kérlek!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Keress titkos ajtókat a SZEM gomb segítségével.
 LiteralText,Your current movement and action speed in squares per second.,Jelenlegi mozgási és cselekvési időd négyzet/másodpercben.
-LiteralText,Your feedback is appreciated and will influence my development plans.,"A visszajelzésed fontos számomra, és befolyásolhatja a jövőbeli fejlesztéseket."
 LiteralText,ZOOM,NAGYÍTÁS
 LiteralText,ZOOS,TERMEK
 LiteralText,zZz,zZz

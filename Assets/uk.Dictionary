@@ -2155,6 +2155,9 @@ GenderName,neuter,безстатевий
 GenderName,non-binary,небінарний
 GenerationType,module,модуль
 GenerationType,quest,завдання (квест)
+GradeName,artifact,артефакт
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"У прохолодною кам'яній поверхні бездоганне майстерність, але відзначена ушкодженнями і часом."
 GroundName,chasm,
 GroundName,dirt floor,земляна долівка
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,без вогнепальної зброї
 LiteralText,ABOUT,ПРО ГРУ
 LiteralText,About Pathos,Про Pathos
 LiteralText,Abyss,Безодня
-LiteralText,accelerated animations,прискорена анімація
 LiteralText,accelerated resting,прискорений відпочинок
 LiteralText,actions,дії
 LiteralText,ADD LEVEL,ДОДАТИ РІВЕНЬ
@@ -3107,7 +3109,6 @@ LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЕ РАЗОМ
 LiteralText,always,завжди
 LiteralText,AMBIENT SOUNDS,НАВКОЛИШНІ ЗВУКИ
-LiteralText,AMMO,БОЄЗАПАС
 LiteralText,amnesia,амнезія
 LiteralText,AMNESIA,АМНЕЗІЯ
 LiteralText,anatomy,анатомія
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,"Ви впевнені, що хочете втратити цього персонажа і закінчити вашу пригоду?"
 LiteralText,ARE YOU SURE?,ВИ ВПЕВНЕНІ?
 LiteralText,area of effect,область ефекту
-LiteralText,artifact,артефакт
 LiteralText,ARTIFACTS,АРТЕФАКТИ
 LiteralText,ASCEND TO PREVIOUS LEVEL,ПІДЙОМ НА ПОПЕРЕДНІЙ РІВЕНЬ
-LiteralText,asleep,спить
 LiteralText,assets,предмети
 LiteralText,ATMOSPHERE,АТМОСФЕРА
 LiteralText,attack modifier,модифікатор атаки
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,Саме тут можна обговорити г�
 LiteralText,Black background,Чорний фон
 LiteralText,Black Market,Чорний ринок
 LiteralText,blasphemy,богохульство
-LiteralText,blessed,освячений
-LiteralText,BLESSED,ОСВЯЧЕНИЙ
 LiteralText,BLINK,ТЕЛЕПОРТУ
 LiteralText,Blink which direction?,Куди телепортуватися?
 LiteralText,block,клітина
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,ЗЛАМАНО
 LiteralText,burst rate,скорострільність
 LiteralText,BUY,КУПИТИ
 LiteralText,BUY ALL,КУПУЮ ВСЕ
-LiteralText,by Callan Hodgskin,автор: Каллан Годскін
 LiteralText,CANCEL,СКАСУВАТИ
 LiteralText,cancellation,скасування
 LiteralText,CANCELLED,СКАСОВАНО
@@ -3194,8 +3190,6 @@ LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,characters,персонажі
 LiteralText,charged items,заряджає предмети
-LiteralText,charm,причарувати
-LiteralText,CHARMED,ЗАЧАРОВАНИЙ
 LiteralText,Chat on Discord,Сервер в Discord
 LiteralText,check for updates?,Перевірити наявність оновлень?
 LiteralText,checking for updates,перевірка оновлень
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,"Натисніть, щоб повторити спр
 LiteralText,Click to send detected issues to the author,"Натисніть, щоб надіслати звіт про помилки"
 LiteralText,CLOSE,ЗАКРИТИ
 LiteralText,closed,закрито
-LiteralText,CLOSED,ЗАКРИТО
 LiteralText,Coding on Medium,Нотатки щодо програмування на Medium
 LiteralText,coins,монети
 LiteralText,companion,компаньйон
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,СТВОРИТИ СТІНУ
 LiteralText,Create which direction?,Створити в якому напрямку?
 LiteralText,CREDITS,ПОДЯКИ
 LiteralText,CROP,УРОЖАЙ
-LiteralText,cursed,проклято
 LiteralText,CURSED,ПРОКЛЯТИЙ
 LiteralText,CUSTOM,СВОЄ
 LiteralText,CUSTOM HERO,СВІЙ ГЕРОЙ
 LiteralText,CUSTOM MODULES,СВОЇ МОДУЛІ
-LiteralText,DAMAGE,ШКОДА
 LiteralText,dark,темний
-LiteralText,dark-hidden,прихований в темряві
 LiteralText,DEAD END,ТУПІК
 LiteralText,death,смерть
-LiteralText,DEATH,СМЕРТЬ
 LiteralText,deathray,промінь смерті
 LiteralText,decapitation,
 LiteralText,DECEASED,ЗАГИБЛИЙ
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,погіршується до
 LiteralText,downloading update,завантаження оновлення
 LiteralText,drop,викинути
 LiteralText,DROP,ВИКИНУТИ
-LiteralText,DUAL,У ДРУГУ РУКУ
 LiteralText,DUAL WIELD,В ДРУГУ РУКУ
 LiteralText,Dungeon,Підземелля
 LiteralText,duration,термін дії
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,ЗАЛИШИТИ
 LiteralText,escape traps,уникнути пасток
 LiteralText,escape with,уникнути за допомогою
 LiteralText,escaped,вийшов
-LiteralText,ESCAPED,ВИЙШОВ
 LiteralText,ESSENCE,ЕСЕНЦІЯ
 LiteralText,evolution,еволюція
 LiteralText,Examine which object?,
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,РОЗШИРИТИ
 LiteralText,EXPEL,ВИГНАТИ
 LiteralText,experience,досвід
 LiteralText,EXPERIENCE,ДОСВІД
-LiteralText,EXPLODED,ВИБУХАЄ
 LiteralText,explosion,вибух
 LiteralText,EXPORT,ЕКСПОРТ
 LiteralText,extinctions,гасіння
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,ОСОБЛИВІ ОБ'ЄКТИ
 LiteralText,FEED,ГОДУВАТИ
 LiteralText,FEEDBACK,Зворотній зв'язок
 LiteralText,FILES,ФАЙЛИ
-LiteralText,Find out what is coming in the next update.,"Дізнайтеся, що буде в наступному оновленні."
 LiteralText,fixed range,фіксовану відстань
 LiteralText,FIZZLE,ФІАСКО
 LiteralText,Floor,Підлога
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,НАЙНЯТИ
 LiteralText,HORDES,ОРДИ
 LiteralText,HOST,СТВОРИТИ СЕРВЕР
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однак, можливо, ви захочете дограти свою пригоду, перш ніж оновити гру."
-LiteralText,HUH?,ГА?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я сподіваюся, ви насолоджуєтеся пригоди, і будь ласка, не соромтеся відправляти мені ваші відгуки і пропозиції."
 LiteralText,identified items,розпізнав речі
-LiteralText,IDENTIFY,УПІЗНАННЯ
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,УПІЗНАНО ВСІ ПРЕДМЕТИ НА ПІДЛОЗІ
 LiteralText,ILLITERATE,НЕГРАМОТНІСТЬ
 LiteralText,illusion,ілюзія
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,НЕМОЖЛИВО
 LiteralText,in both hands,в обидві руки
 LiteralText,incarceration,ув’язнення
-LiteralText,increase,збільшити
 LiteralText,INCREASE,ЗБІЛЬШИТИ
 LiteralText,INDEX,АЛФАВІТНИЙ ВКАЗІВНИК
 LiteralText,individual crafting,індивідуальне виробництво
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,вплив на дії
 LiteralText,INSCRIBE,ПІДПИСАТИ
 LiteralText,INSCRIBE ITEM,ПІДПИСАТИ ПРЕДМЕТ
 LiteralText,inscription?,підпис?
-LiteralText,INSTRUCT,НАКАЗАТИ
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТНЬО ЗОЛОТA
 LiteralText,insulation,ізоляція
@@ -3493,7 +3474,6 @@ LiteralText,light,світло
 LiteralText,LIGHT,СВІТЛО
 LiteralText,light radius,радіус освітлення
 LiteralText,limits,межі
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Посилання на всі підтримувані платформи, в тому числі iOS, Android і Windows."
 LiteralText,LIST,СПИСОК
 LiteralText,lit,засвітлений
 LiteralText,LIVING,ЖИВИЙ
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,втратити вміння
 LiteralText,Lost Chambers,Втрачені палати
 LiteralText,LOW MANA,МАЛО мани
 LiteralText,Ludios Cache,Тайник Лудіоса
-LiteralText,MAIN,В ОСНОВНУ РУКУ
 LiteralText,MAIN WIELD,В ОСНОВНУ РУКУ
 LiteralText,mana,мана
 LiteralText,MANA,МАНА
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,МІМІКРУЙ
 LiteralText,mimicking,мімікувати
 LiteralText,Mines,Копальні
 LiteralText,Minetown,Шахтне містечко
-LiteralText,missile,снаряд
 LiteralText,modifier,модифікатор
 LiteralText,MOUNT,СІСТИ ВЕРХИ
 LiteralText,Mount which direction?,Влізти в якому напрямку?
@@ -3577,14 +3555,12 @@ LiteralText,OR,ЧИ
 LiteralText,ORIGINAL,ОРИГІНАЛЬНИЙ
 LiteralText,OVERRIDE,ЗАМІСТИТИ
 LiteralText,OVERVIEW,ОГЛЯД
-LiteralText,PACIFIED,МИРНИЙ
 LiteralText,Palette,Палітра
 LiteralText,PARTY,ГРУПА
 LiteralText,passage,прохід
 LiteralText,passive (no attacking),пасивний (не нападає)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,У грі є режим розділеного екрану. Підтримується до чотирьох гравців включно.
 LiteralText,pathos development @ paypal,Підтримайте Pathos у Paypal
-LiteralText,Pathos is free to play and developed for the love of the game.,"Pathos є безкоштовною грою, і розробка йде тільки заради любові до цієї гри."
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"Pathos не в змозі завантажити вашу пригоду. Будь ласка, надішліть мені файл збереження, щоб я зміг дослідити проблему. Я також, мабуть, зможу відновити файл або оновити застосунок з виправленням."
 LiteralText,Pathos might be the next evolution of Nethack.,"Можливо, Pathos — це наступний сходинка еволюції NetHack."
 LiteralText,penalty,покарання
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,ПЕРЕТВОРЕНИЙ НА
 LiteralText,portal,портал
 LiteralText,porter,портер
 LiteralText,PRAY,МОЛИТИСЯ
-LiteralText,PRAYING,МОЛІННЯ
 LiteralText,preservation,збереження
 LiteralText,prevent revenant levels,заборонити набір рівнів повсталими
 LiteralText,prisoner,в'язень
@@ -3664,10 +3639,8 @@ LiteralText,resident?,ОБИВАТЕЛЬ
 LiteralText,resistances,стійкість
 LiteralText,RESISTS,СТІЙКІСТЬ
 LiteralText,Rest,Відпочинок
-LiteralText,REST,ВІДПОЧИТИ
 LiteralText,Rest how many turns?,ВІдвочивати скільки ходів?
 LiteralText,restarting to update,перезавантаження для оновлення
-LiteralText,RESTING,ВІДПОЧИВАЄ
 LiteralText,RESTORED,ВІДНОВЛЕНО
 LiteralText,RESURRECT,ВОСКРЕСИТИ
 LiteralText,Resurrect and continue,Воскресити і продовжити
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,РОЗІБРАТИ
 LiteralText,SEALED,ЗАКОРКОВАНО
 LiteralText,Search,Шукати
 LiteralText,Search how many turns?,Шукати скільки ходів?
-LiteralText,SEARCHING,ПОШУК
 LiteralText,secret,секрет
 LiteralText,SECRET,СЕКРЕТ
 LiteralText,seed,насіння
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,УСТАНОВИТИ СКЛАДКІСТЬ
 LiteralText,set starting location,встановити стартову локацію
 LiteralText,SETTINGS,НАЛАШТУВАННЯ
 LiteralText,sfx volume,гучн. звук. ефектів
-LiteralText,Share your tragic and heroic stories with other players.,Поділіться вашими трагічними і героїчними історіями з іншими гравцями.
 LiteralText,SHARE//exchange,ДІЛИТИСЯ
 LiteralText,SHARE//publish,ДІЛИТИСЯ
 LiteralText,SHOPS,МАГАЗИНИ
 LiteralText,Show debugging information,Показати дані відладки
 LiteralText,Show time clock,Показати годинника
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Покажіть свою вдячність, допомагаючи все більшій кількості гравців освоїтися в Pathos."
 LiteralText,SHRINES,СВЯТИЛИЩА
 LiteralText,SIGN-IN,ЛОГІН
 LiteralText,size,розмір
@@ -3782,7 +3752,6 @@ LiteralText,terrain,земля
 LiteralText,The attack score is your aptitude for hitting an opponent.,Індекс атаки - це ваша спроможність влучити по супротивникові.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"Виклик полягає в тому, щоб поліпшити механіку, зберігши душу того, що є найкращою грою всіх часів."
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Індекс захисту - це наскільки ви захищені від влучення суперником.
-LiteralText,There are no known polymorphs,Нема відомих форм для поліморфа
 LiteralText,There is a new update available!,Є оновлення!
 LiteralText,there is nothing to place here,тут не можна нічого покласти в контейнер
 LiteralText,there is nothing to remove here,тут нема чого витягати з контейнера
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ЗАНАДТО ГОЛОДНИЙ
 LiteralText,TOO SMALL,ЗАНАДТО МАЛИЙ
 LiteralText,TOO WEAK,ЗАНАДТО СЛАБКИЙ
-LiteralText,touch,дотик
 LiteralText,TRACKS,СЛІДИ
 LiteralText,TRADE,ТОРГ
 LiteralText,transform to,трансформувати на
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
 LiteralText,Wait how many turns?,Чекати скільки ходів?
-LiteralText,WAITING,ОЧІКУЮ
 LiteralText,WARPING,УВАГА
 LiteralText,was killed,було вбито
-LiteralText,was strangled,було задушено
 LiteralText,weakness to,слабкий до
 LiteralText,weight,вага
 LiteralText,when afflicted,коли пороблено
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,НЕ В ТОЙ БІК
 LiteralText,"You are playing as anonymous, please register!","Ви граєте анонімно, будь ласка, зареєструйтеся"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,"Коли вам знадобиться ВІДШУКАТИ секретні двері, використовуйте кнопку з ОКОМ."
 LiteralText,Your current movement and action speed in squares per second.,Ваша поточна швидкість руху і дій у клітинах на секунду.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Ваша думка дуже цінується і буде впливати на мої плани по розробці.
 LiteralText,ZOOM,ЗБІЛЬШЕННЯ
 LiteralText,ZOOS,ЗООПАРК
 LiteralText,zZz,Хр-р-р

@@ -2155,6 +2155,9 @@ GenderName,neuter,cinsiyetsiz
 GenderName,non-binary,
 GenerationType,module,
 GenerationType,quest,
+GradeName,artifact,eser
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Soğuk taş yüzeyi usta eller tarafından kazılmış ama zamanla hasar görmüş.
 GroundName,chasm,
 GroundName,dirt floor,toprak zemin
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,ateşli silah yasağı
 LiteralText,ABOUT,HAKKINDA
 LiteralText,About Pathos,Pathos hakkında
 LiteralText,Abyss,boşluk
-LiteralText,accelerated animations,hızlandırılmış animasyonlar
 LiteralText,accelerated resting,hızlandırılmış dinlenme
 LiteralText,actions,aksiyon
 LiteralText,ADD LEVEL,SEVİYE EKLE
@@ -3107,7 +3109,6 @@ LiteralText,ALL,HEPSİ
 LiteralText,ALL AT ONCE,HEPSİ BİRDEN
 LiteralText,always,her zaman
 LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
-LiteralText,AMMO,CEPHANE
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
 LiteralText,anatomy,anatomi
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Bu karakteri kaybedip maceranı bitirmek istediğine emin misin?
 LiteralText,ARE YOU SURE?,EMİN MİSİN?
 LiteralText,area of effect,alan etkisi
-LiteralText,artifact,eser
 LiteralText,ARTIFACTS,ESERLER
 LiteralText,ASCEND TO PREVIOUS LEVEL,BİR ÖNCEKİ SEVİYEYE YÜKSEL
-LiteralText,asleep,uyuyakalmak
 LiteralText,assets,teçhizatlar
 LiteralText,ATMOSPHERE,ATMOSFER
 LiteralText,attack modifier,saldırı düzenleyici
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,beta muhabbeti
 LiteralText,Black background,Siyah arkaplan
 LiteralText,Black Market,kara borsa
 LiteralText,blasphemy,kafirlik
-LiteralText,blessed,kutsanmış
-LiteralText,BLESSED,KUTSANMIŞ
 LiteralText,BLINK,SIÇRA
 LiteralText,Blink which direction?,Hangi yöne sıçra?
 LiteralText,block,blok
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,KIRIK
 LiteralText,burst rate,patlama oranı
 LiteralText,BUY,SATIN AL
 LiteralText,BUY ALL,HEPSİNİ SATIN AL
-LiteralText,by Callan Hodgskin,Callan Hodskin tarafından
 LiteralText,CANCEL,İPTAL
 LiteralText,cancellation,iptalleme
 LiteralText,CANCELLED,İPTAL EDİLDİ
@@ -3194,8 +3190,6 @@ LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,characters,karakterler
 LiteralText,charged items,şarjlı itemler
-LiteralText,charm,cezbetme
-LiteralText,CHARMED,CEZBEDİLDİ
 LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
 LiteralText,checking for updates,güncellemeler kontrol ediliyor
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,tekrar denemek için tıkla
 LiteralText,Click to send detected issues to the author,Saptanan sorunları geliştiriciye yollamak için tıkla
 LiteralText,CLOSE,KAPAT
 LiteralText,closed,kapalı
-LiteralText,CLOSED,KAPALI
 LiteralText,Coding on Medium,Kodlama Medium'umda
 LiteralText,coins,para
 LiteralText,companion,dost
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,DUVAR YARAT
 LiteralText,Create which direction?,Hangi yöne oluştur?
 LiteralText,CREDITS,KATKIDA BULUNANLAR
 LiteralText,CROP,KIRP
-LiteralText,cursed,lanetli
 LiteralText,CURSED,LANETLİ
 LiteralText,CUSTOM,ÖZEL YAPIM
 LiteralText,CUSTOM HERO,ÖZEL YAPIM KAHRAMAN
 LiteralText,CUSTOM MODULES,ÖZEL MODÜL
-LiteralText,DAMAGE,HASAR
 LiteralText,dark,karanlık
-LiteralText,dark-hidden,karanlığa saklı
 LiteralText,DEAD END,ÇIKMAZ
 LiteralText,death,ölüm
-LiteralText,DEATH,ÖLÜM
 LiteralText,deathray,ölüm ışını
 LiteralText,decapitation,uzuv kaybı
 LiteralText,DECEASED,ÖLÜ
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,derevesini düşür
 LiteralText,downloading update,güncelleme indiriliyor
 LiteralText,drop,bırak
 LiteralText,DROP,BIRAK
-LiteralText,DUAL,ÇİFT
 LiteralText,DUAL WIELD,ÇİFT ELLE KULLAN
 LiteralText,Dungeon,Zindan
 LiteralText,duration,Süre
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,KAÇ
 LiteralText,escape traps,tuzaklardan kaç
 LiteralText,escape with,birşey kullanarak kaç
 LiteralText,escaped,kaçtı
-LiteralText,ESCAPED,KAÇTI
 LiteralText,ESSENCE,ESANS
 LiteralText,evolution,evrim
 LiteralText,Examine which object?,Hangi eşyayı incele?
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,GENİŞLE
 LiteralText,EXPEL,TÜKÜR
 LiteralText,experience,tecrübe
 LiteralText,EXPERIENCE,TECRÜBE
-LiteralText,EXPLODED,PATLADI
 LiteralText,explosion,patlama
 LiteralText,EXPORT,ÇIKAR
 LiteralText,extinctions,soyu tükenmiş
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,ÖZELLİKLER
 LiteralText,FEED,BESLE
 LiteralText,FEEDBACK,GERİ BİLDİRİ
 LiteralText,FILES,DOSYALAR
-LiteralText,Find out what is coming in the next update.,Gelecek güncellemede nelerin geleceğini öğren
 LiteralText,fixed range,sabit mezil
 LiteralText,FIZZLE,KÖPÜRME
 LiteralText,Floor,Zemin
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,İŞE AL
 LiteralText,HORDES,ORDULAR
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
-LiteralText,HUH?,NE?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Umarım maceralarından keyif alıyorsundur. Bana ulaşıp fikirlerini beyan etmekten lütfen çekinme.
 LiteralText,identified items,tanımlanmış eşyalar
-LiteralText,IDENTIFY,TANIMLA
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,YERDEKİ BÜTÜN EŞYALARI TANIMLA
 LiteralText,ILLITERATE,OKUMA YAZMA BİLEN
 LiteralText,illusion,
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,İMKANSIZ
 LiteralText,in both hands,iki elle
 LiteralText,incarceration,hapsetme
-LiteralText,increase,artır
 LiteralText,INCREASE,ARTIR
 LiteralText,INDEX,INDEKS
 LiteralText,individual crafting,tekli oluştur
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,destekli hareketler
 LiteralText,INSCRIBE,
 LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
-LiteralText,INSTRUCT,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
 LiteralText,insulation,yalıtım
@@ -3493,7 +3474,6 @@ LiteralText,light,
 LiteralText,LIGHT,IŞIK
 LiteralText,light radius,Işık alanı
 LiteralText,limits,Sınırlar
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Windows, Android ve iOS dahil desteklenen bütün platformlara linkler."
 LiteralText,LIST,LİSTE
 LiteralText,lit,
 LiteralText,LIVING,YAŞARKEN
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,
 LiteralText,Lost Chambers,
 LiteralText,LOW MANA,DÜŞÜK MANA
 LiteralText,Ludios Cache,Ludios Kayıtı
-LiteralText,MAIN,ANA
 LiteralText,MAIN WIELD,ANA SİLAH OLARAK KULLAN
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,MİMİK
 LiteralText,mimicking,
 LiteralText,Mines,Madenler
 LiteralText,Minetown,Maden Şehri
-LiteralText,missile,ışın
 LiteralText,modifier,düzenleyici
 LiteralText,MOUNT,BİN
 LiteralText,Mount which direction?,
@@ -3577,14 +3555,12 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
-LiteralText,PACIFIED,SAKİNLEŞTİRİLDİ
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
 LiteralText,passage,
 LiteralText,passive (no attacking),pasif (saldırgan değil)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,Pathos'un gelişimine Paypal'dan
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos bedavadır ve sevgi ile güncellenir.
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos Nethack'in bir sonraki evrimi olabilir.
 LiteralText,penalty,
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,ŞEKİL DEĞİŞTİRDİ
 LiteralText,portal,
 LiteralText,porter,
 LiteralText,PRAY,DUA ET
-LiteralText,PRAYING,DUA EDİYOR
 LiteralText,preservation,korunma
 LiteralText,prevent revenant levels,mezar kaçkını seviyelerini engelle
 LiteralText,prisoner,
@@ -3664,10 +3639,8 @@ LiteralText,resident?,
 LiteralText,resistances,dayanıklılıklar
 LiteralText,RESISTS,DAYANDI
 LiteralText,Rest,
-LiteralText,REST,DİNLEN
 LiteralText,Rest how many turns?,
 LiteralText,restarting to update,güncellemek için tekrar başlatılıyor
-LiteralText,RESTING,DİNLENİYORSUN
 LiteralText,RESTORED,GERİ KAZANILDI
 LiteralText,RESURRECT,TEKRAR CANLANDIR
 LiteralText,Resurrect and continue,Tekrar canlan ve devam et
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,PARÇALARA AYIR
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
-LiteralText,SEARCHING,ARIYOR
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,tohum
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,
 LiteralText,set starting location,
 LiteralText,SETTINGS,AYARLAR
 LiteralText,sfx volume,
-LiteralText,Share your tragic and heroic stories with other players.,Trajik ve kahramansı hikayelerini diğer oyuncularla paylaş.
 LiteralText,SHARE//exchange,PAYLAŞ
 LiteralText,SHARE//publish,PAYLAŞ
 LiteralText,SHOPS,DÜKKANLAR
 LiteralText,Show debugging information,Onarma bilgilerini göster
 LiteralText,Show time clock,
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Takdirini göstermek için arkadaşlarına Pathosu göster.
 LiteralText,SHRINES,TAPINAKLAR
 LiteralText,SIGN-IN,
 LiteralText,size,boyut
@@ -3782,7 +3752,6 @@ LiteralText,terrain,arazi
 LiteralText,The attack score is your aptitude for hitting an opponent.,Saldırı puanın rakibe vurma becerindir.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Zorluğu mekanikleri geliştirirken onu en iyi oyun yapan hissiyatı kaybetmemek
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Savunma puanın rakibin vuruşlarından ne kadar korunduğunu gösterir.
-LiteralText,There are no known polymorphs,Bilinen bir şekil değiştirme yok
 LiteralText,There is a new update available!,Yeni bir güncelleme mevcut!
 LiteralText,there is nothing to place here,buraya yerleştirilebileek bir şeyin yok
 LiteralText,there is nothing to remove here,buradan kaldırılabilecek bir şey yok
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ÇOK AÇ
 LiteralText,TOO SMALL,ÇOK KÜÇÜK
 LiteralText,TOO WEAK,ÇOK ZAYIF
-LiteralText,touch,dokun
 LiteralText,TRACKS,
 LiteralText,TRADE,ALIŞVERİŞ
 LiteralText,transform to,
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,
-LiteralText,WAITING,BEKLİYOR
 LiteralText,WARPING,EĞRİLME
 LiteralText,was killed,öldürüldü
-LiteralText,was strangled,boğuldu
 LiteralText,weakness to,
 LiteralText,weight,ağırlık
 LiteralText,when afflicted,belalanmışken
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,YANLIŞ YÖN
 LiteralText,"You are playing as anonymous, please register!","Kimliksiz oynuyorsun, lütfen kayıt ol!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Gizli kapıları ARAMAK için GÖZ tuşuna bas.
 LiteralText,Your current movement and action speed in squares per second.,Saniyede kare cinsinde şu anki hareket ve saldırı hızın.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Geri bildiriniz için minnettarım ve geliştirme planlarımı etkileyecek.
 LiteralText,ZOOM,YAKINLAŞTIR
 LiteralText,ZOOS,YAŞAM ALANLARI
 LiteralText,zZz,

@@ -10106,7 +10106,7 @@ namespace Pathos
         I.SetWeakness(LightWeakness);
         I.ChargesDice = 1.d500() + 1000;
         I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool);
-        I.SetIllumination(3);
+        I.SetIllumination(4);
         I.AddObviousIngestUse(Motions.eat, 300, Delay.FromTurns(20), Sonics.tool);
       });
 
@@ -10416,7 +10416,7 @@ namespace Pathos
         I.Essence = ToolEssence4;
         I.Price = Gold.FromCoins(1000);
         I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool);
-        I.SetIllumination(2);
+        I.SetIllumination(3);
         I.ChargesDice = null;
         I.AddObviousUse(Motions.rub, Delay.FromTurns(10), Sonics.magic, Use =>
         {
@@ -10555,7 +10555,7 @@ namespace Pathos
         I.ChargesDice = 1.d500() + 1000;
         I.SetWeakness(LightWeakness);
         I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool);
-        I.SetIllumination(2);
+        I.SetIllumination(3);
         I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(20), Sonics.tool);
       });
 

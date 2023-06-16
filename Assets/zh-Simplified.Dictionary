@@ -2155,6 +2155,9 @@ GenderName,neuter,中性
 GenderName,non-binary,其他性别
 GenerationType,module,模组
 GenerationType,quest,探索
+GradeName,artifact,神器
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,冰冷的石头地面的制作手艺并不精良，但是上面刻满了时间的痕迹。
 GroundName,chasm,裂隙
 GroundName,dirt floor,泥土地面
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,关闭火器
 LiteralText,ABOUT,关于
 LiteralText,About Pathos,关于Pathos
 LiteralText,Abyss,深渊
-LiteralText,accelerated animations,动画加速
 LiteralText,accelerated resting,休息时加速
 LiteralText,actions,行动
 LiteralText,ADD LEVEL,添加楼层
@@ -3107,7 +3109,6 @@ LiteralText,ALL,所有
 LiteralText,ALL AT ONCE,所有同时
 LiteralText,always,100%
 LiteralText,AMBIENT SOUNDS,周围声音
-LiteralText,AMMO,弹药
 LiteralText,amnesia,失忆
 LiteralText,AMNESIA,失忆
 LiteralText,anatomy,解剖学
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,您确定要放弃这名角色并结束本次冒险吗？
 LiteralText,ARE YOU SURE?,你确定？
 LiteralText,area of effect,范围效果
-LiteralText,artifact,神器
 LiteralText,ARTIFACTS,神器
 LiteralText,ASCEND TO PREVIOUS LEVEL,回到之前的楼层
-LiteralText,asleep,沉睡
 LiteralText,assets,物品
 LiteralText,ATMOSPHERE,氛围
 LiteralText,attack modifier,攻击调整
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,测试版讨论
 LiteralText,Black background,黑色背景
 LiteralText,Black Market,黑市
 LiteralText,blasphemy,亵渎
-LiteralText,blessed,祝福的
-LiteralText,BLESSED,祝福的
 LiteralText,BLINK,闪现
 LiteralText,Blink which direction?,朝哪个方向闪现？
 LiteralText,block,堵住
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,破裂
 LiteralText,burst rate,开火速率
 LiteralText,BUY,购买
 LiteralText,BUY ALL,购买全部
-LiteralText,by Callan Hodgskin,by Callan Hodgskin
 LiteralText,CANCEL,取消
 LiteralText,cancellation,撤销
 LiteralText,CANCELLED,取消的
@@ -3194,8 +3190,6 @@ LiteralText,Character,角色
 LiteralText,CHARACTER,角色
 LiteralText,characters,角色
 LiteralText,charged items,已充能物品
-LiteralText,charm,魅惑
-LiteralText,CHARMED,被魅惑的
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,检查更新吗？
 LiteralText,checking for updates,检测更新
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,点击重试
 LiteralText,Click to send detected issues to the author,点击将出现的问题发送给作者
 LiteralText,CLOSE,关闭
 LiteralText,closed,关闭
-LiteralText,CLOSED,关闭
 LiteralText,Coding on Medium,在Medium上的代码
 LiteralText,coins,硬币
 LiteralText,companion,队友
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,创造墙壁
 LiteralText,Create which direction?,向哪个方向创造？
 LiteralText,CREDITS,制作者
 LiteralText,CROP,重置楼层面积
-LiteralText,cursed,诅咒的
 LiteralText,CURSED,物品受诅咒
 LiteralText,CUSTOM,自定义
 LiteralText,CUSTOM HERO,自定义英雄
 LiteralText,CUSTOM MODULES,自定义模组
-LiteralText,DAMAGE,伤害
 LiteralText,dark,黑暗
-LiteralText,dark-hidden,藏匿于暗处
 LiteralText,DEAD END,死胡同
 LiteralText,death,死亡
-LiteralText,DEATH,死亡
 LiteralText,deathray,死亡射线
 LiteralText,decapitation,斩首
 LiteralText,DECEASED,已故冒
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,降级成了
 LiteralText,downloading update,更新下载中
 LiteralText,drop,掉落
 LiteralText,DROP,丢弃
-LiteralText,DUAL,副手
 LiteralText,DUAL WIELD,双持
 LiteralText,Dungeon,地牢
 LiteralText,duration,持续时间
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,逃脱
 LiteralText,escape traps,挣脱陷阱
 LiteralText,escape with,挣脱与
 LiteralText,escaped,逃脱了
-LiteralText,ESCAPED,逃脱
 LiteralText,ESSENCE,精华
 LiteralText,evolution,进化
 LiteralText,Examine which object?,检查哪一项
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,扩展楼层面积
 LiteralText,EXPEL,吐出
 LiteralText,experience,经验
 LiteralText,EXPERIENCE,经验
-LiteralText,EXPLODED,爆炸
 LiteralText,explosion,爆炸
 LiteralText,EXPORT,导出
 LiteralText,extinctions,灭绝
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,特殊
 LiteralText,FEED,喂养
 LiteralText,FEEDBACK,反馈
 LiteralText,FILES,文件
-LiteralText,Find out what is coming in the next update.,看看下一次更新有些什么。
 LiteralText,fixed range,固定射程
 LiteralText,FIZZLE,发嘶嘶声
 LiteralText,Floor,层
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,雇佣
 LiteralText,HORDES,怪物群
 LiteralText,HOST,创建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也许您更希望在接受更新之前完成正在进行的冒险。
-LiteralText,HUH?,呃？
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,开发者希望您的冒险愉快，并且请随意与开发者交谈，给予反馈与建议。
 LiteralText,identified items,已鉴定的物品
-LiteralText,IDENTIFY,鉴定
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,鉴定地上所有物品
 LiteralText,ILLITERATE,文盲
 LiteralText,illusion,幻象
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,請輸入文件
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,双手持
 LiteralText,incarceration,禁锢
-LiteralText,increase,上升
 LiteralText,INCREASE,增加
 LiteralText,INDEX,索引
 LiteralText,individual crafting,分次制作
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,受影响的动作
 LiteralText,INSCRIBE,刻写
 LiteralText,INSCRIBE ITEM,刻写物品
 LiteralText,inscription?,刻写内容
-LiteralText,INSTRUCT,教程
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,金币不足
 LiteralText,insulation,隔离
@@ -3493,7 +3474,6 @@ LiteralText,light,点亮
 LiteralText,LIGHT,点亮
 LiteralText,light radius,光亮半径
 LiteralText,limits,限制
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.",所有支持的平台互通，包括iOS、安卓和Windows
 LiteralText,LIST,列表
 LiteralText,lit,点亮的
 LiteralText,LIVING,活物时
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,失去专精
 LiteralText,Lost Chambers,迷失之庭
 LiteralText,LOW MANA,魔法值低下
 LiteralText,Ludios Cache,卢底人藏宝室
-LiteralText,MAIN,主手
 LiteralText,MAIN WIELD,主手武器
 LiteralText,mana,魔法值
 LiteralText,MANA,魔法值
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,拟态
 LiteralText,mimicking,拟态中的
 LiteralText,Mines,矿洞
 LiteralText,Minetown,矿镇
-LiteralText,missile,弹药
 LiteralText,modifier,调整
 LiteralText,MOUNT,骑乘
 LiteralText,Mount which direction?,向哪个方向骑乘？
@@ -3577,14 +3555,12 @@ LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆写
 LiteralText,OVERVIEW,总览
-LiteralText,PACIFIED,抚慰的
 LiteralText,Palette,调色板
 LiteralText,PARTY,队伍
 LiteralText,passage,通道
 LiteralText,passive (no attacking),被动（无攻击）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos可以以分屏合作模式为最多四名玩家游玩。
 LiteralText,pathos development @ paypal,pathos development @ paypal
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos是免费游戏，出于对Nethack的热爱而开发。
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos无法加载您的冒险文件。请发送您的存档给我来调查错误。我也许可以通过修复来修复您的文件甚至更新游戏。感谢您的理解。
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos 也许是Nethack的进化。
 LiteralText,penalty,惩罚
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,已变形
 LiteralText,portal,传送门
 LiteralText,porter,捕捉袋
 LiteralText,PRAY,祈祷
-LiteralText,PRAYING,祈祷中
 LiteralText,preservation,维护
 LiteralText,prevent revenant levels,禁止复仇者楼层
 LiteralText,prisoner,雕像
@@ -3664,10 +3639,8 @@ LiteralText,resident?,NPC
 LiteralText,resistances,抗性
 LiteralText,RESISTS,抗性
 LiteralText,Rest,休息
-LiteralText,REST,休息
 LiteralText,Rest how many turns?,要休息多少回合呢？
 LiteralText,restarting to update,重启游戏后更新……
-LiteralText,RESTING,休息中
 LiteralText,RESTORED,恢复
 LiteralText,RESURRECT,复活
 LiteralText,Resurrect and continue,复活并继续
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,分解
 LiteralText,SEALED,密封
 LiteralText,Search,搜索
 LiteralText,Search how many turns?,要搜索多少回合呢？
-LiteralText,SEARCHING,搜索
 LiteralText,secret,暗门
 LiteralText,SECRET,秘密
 LiteralText,seed,种子
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,设置难度
 LiteralText,set starting location,设置出生点
 LiteralText,SETTINGS,设置
 LiteralText,sfx volume,音效音量
-LiteralText,Share your tragic and heroic stories with other players.,将您或喜或悲的故事与其他玩家分享。
 LiteralText,SHARE//exchange,分享
 LiteralText,SHARE//publish,分享
 LiteralText,SHOPS,商店
 LiteralText,Show debugging information,展示BUG去除进程相关
 LiteralText,Show time clock,显示时钟
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,您对其他玩家的邀请是对本游戏很大的支持。
 LiteralText,SHRINES,神殿
 LiteralText,SIGN-IN,登录
 LiteralText,size,大小
@@ -3782,7 +3752,6 @@ LiteralText,terrain,地形
 LiteralText,The attack score is your aptitude for hitting an opponent.,攻击力是你击中敌人的能力。
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,真正的挑战在于改变表现手法的同时保持使这个游戏得以成为有史以来最好游戏的精髓。
 LiteralText,The defence score is how protected you are from being hit by an opponent.,防御力是你保护自己不受敌人攻击的能力。
-LiteralText,There are no known polymorphs,没有已知的可转变形态
 LiteralText,There is a new update available!,新版本可用！
 LiteralText,there is nothing to place here,你没有任何物品可以被放置在这个容器中
 LiteralText,there is nothing to remove here,没有任何物品可以被从这个容器移除
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,超重
 LiteralText,TOO HUNGRY,过于饥饿
 LiteralText,TOO SMALL,过小
 LiteralText,TOO WEAK,太弱
-LiteralText,touch,触摸
 LiteralText,TRACKS,音轨
 LiteralText,TRADE,交易
 LiteralText,transform to,变形为
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,元素场
 LiteralText,vulnerable to,易受伤害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
-LiteralText,WAITING,等待中
 LiteralText,WARPING,开启返程模式
 LiteralText,was killed,被杀死了
-LiteralText,was strangled,被勒住了
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,当被感染
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,错误路线
 LiteralText,"You are playing as anonymous, please register!",你正以匿名进行游戏！请登记！
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,你可能需要用眼睛图标对暗门进行搜索。
 LiteralText,Your current movement and action speed in squares per second.,每秒中你能移动的格数和动作数量。
-LiteralText,Your feedback is appreciated and will influence my development plans.,您的反馈是极其重要的，并且会影响开发者的开发计划，多谢！
 LiteralText,ZOOM,缩放
 LiteralText,ZOOS,动物园
 LiteralText,zZz,zZz

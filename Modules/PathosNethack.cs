@@ -918,7 +918,7 @@ namespace Pathos
                 if (BossSquare != null)
                   CreateMazeBoss(BossSquare);
                 else
-                  Debug.Assert(false, "Why no boss?");
+                  Debug.Fail("Why no boss?");
                 break;
 
               case AttractionType.Attic:
@@ -939,7 +939,7 @@ namespace Pathos
                 if (TroveSquare != null)
                   CreateTroveNook(TroveSquare, NetherBarrier, NetherGround);
                 else
-                  Debug.Assert(false, "Why no trove?");
+                  Debug.Fail("Why no trove?");
 
                 CreateRoomDetails(NetherMap, NetherBlock, NetherRoom.GetFloorSquares().ToDistinctList());
                 break;
@@ -1079,7 +1079,7 @@ namespace Pathos
                 break;
 
               default:
-                Debug.Assert(false, "Final vault not handled.");
+                Debug.Fail("Final vault not handled.");
                 break;
             }
           }
@@ -1126,7 +1126,7 @@ namespace Pathos
           }
           else
           {
-            Debug.Assert(false, "Unique entity was not created!");
+            Debug.Fail("Unique entity was not created!");
           }
         }
       }
@@ -1160,7 +1160,7 @@ namespace Pathos
 
       if (SelectShrine == null)
       {
-        Debug.Assert(false, "Why no shrine?");
+        Debug.Fail("Why no shrine?");
       }
       else
       {
@@ -1233,7 +1233,7 @@ namespace Pathos
 
         if (ShopSquare == null)
         {
-          Debug.Assert(false, "Why no shop?");
+          Debug.Fail("Why no shop?");
         }
         else
         {
@@ -1241,7 +1241,7 @@ namespace Pathos
 
           if (SelectShop == null)
           {
-            Debug.Assert(false, "Why no shop?");
+            Debug.Fail("Why no shop?");
           }
           else
           {
@@ -1496,7 +1496,7 @@ namespace Pathos
           break;
 
         default:
-          Debug.Assert(false, "Failed to create a trick room.");
+          Debug.Fail("Failed to create a trick room.");
           break;
       }
     }
@@ -1510,7 +1510,7 @@ namespace Pathos
 
       if (SelectZoo == null)
       {
-        Debug.Assert(false, "Why no zoo?");
+        Debug.Fail("Why no zoo?");
       }
       else
       {
@@ -1581,7 +1581,7 @@ namespace Pathos
 
       if (SourceSquare == null)
       {
-        Debug.Assert(false, "Why no attic?");
+        Debug.Fail("Why no attic?");
       }
       else
       {
@@ -1643,7 +1643,7 @@ namespace Pathos
                   break;
 
                 default:
-                  Debug.Assert(false, "Symbol not handled: " + AtticSymbol);
+                  Debug.Fail($"Symbol not handled: {AtticSymbol} {(int)AtticSymbol}");
 
                   Generator.PlaceFloor(AtticSquare, SourceGround);
                   break;
@@ -3336,7 +3336,7 @@ namespace Pathos
           var LevelMapName = Generator.EscapeTranslatedName(SiteName) + " " + Level.Number;
           if (Generator.Adventure.World.HasMap(LevelMapName))
           {
-            Debug.Assert(false, "How is there a duplicate mines level?");
+            Debug.Fail("How is there a duplicate mines level?");
             return false;
           }
 
@@ -3613,7 +3613,7 @@ namespace Pathos
                   break;
 
                 default:
-                  Debug.Assert(false, "Symbol not handled: " + MinesSymbol);
+                  Debug.Fail($"Symbol not handled: {MinesSymbol} {(int)MinesSymbol}");
 
                   Generator.PlaceFloor(MinesSquare, MinesGround);
                   break;
@@ -4220,11 +4220,11 @@ namespace Pathos
         {
           for (var Row = 0; Row < Grid.Height; Row++)
           {
-            var Symbol = Grid[Column, Row];
+            var SokobanSymbol = Grid[Column, Row];
 
             var SokobanSquare = SokobanMap[Column, Row];
 
-            switch (Symbol)
+            switch (SokobanSymbol)
             {
               case '.':
                 // floor.
@@ -4354,7 +4354,7 @@ namespace Pathos
                 break;
 
               default:
-                Debug.Assert(false, "Symbol not handled: " + Symbol);
+                Debug.Fail($"Symbol not handled: {SokobanSymbol} {(int)SokobanSymbol}");
 
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
                 break;
@@ -4722,7 +4722,7 @@ namespace Pathos
               break;
 
             default:
-              Debug.Assert(false, "Symbol not handled: " + FortSymbol);
+              Debug.Fail($"Symbol not handled: {FortSymbol} {(int)FortSymbol}");
 
               Generator.PlaceFloor(FortSquare, FortRoomGround);
               break;
@@ -4846,7 +4846,7 @@ namespace Pathos
               break;
 
             default:
-              Debug.Assert(false, "Symbol not handled: " + CacheSymbol);
+              Debug.Fail($"Symbol not handled: {CacheSymbol} {(int)CacheSymbol}");
 
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
               break;

@@ -2155,6 +2155,9 @@ GenderName,neuter,ไม่มีเพศ
 GenderName,non-binary,อื่นๆ
 GenerationType,module,โหมด
 GenerationType,quest,ภารกิจ
+GradeName,artifact,ศิลปวัตถุ
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,
 GroundName,chasm,รอยแยก
 GroundName,dirt floor,พื้นดิน
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,
 LiteralText,ABOUT,เกี่ยวกับ
 LiteralText,About Pathos,เกี่ยวกับ Pathos
 LiteralText,Abyss,อบีส
-LiteralText,accelerated animations,เพิ่มความเร็วอนิเมชั่น
 LiteralText,accelerated resting,เพิ่มความเร็วระหว่างพักผ่อน
 LiteralText,actions,การกระทำ
 LiteralText,ADD LEVEL,เพิ่มเลเวล
@@ -3107,7 +3109,6 @@ LiteralText,ALL,ทั้งหมด
 LiteralText,ALL AT ONCE,ทั้งหมดในครั้งเดียว
 LiteralText,always,ทุกครั้ง
 LiteralText,AMBIENT SOUNDS,เสียงบรรยากาศ
-LiteralText,AMMO,กระสุน
 LiteralText,amnesia,ความจำเสื่อม
 LiteralText,AMNESIA,ความจำเสื่อม
 LiteralText,anatomy,ร่างกาย
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,คุณแน่ใจไหม? ว่าคุณต้องการจะเสียตัวละครนี้และจบการผจญภัยของคุณ
 LiteralText,ARE YOU SURE?,คุณแน่ใจไหม?
 LiteralText,area of effect,ระยะของเอฟเฟค
-LiteralText,artifact,ศิลปวัตถุ
 LiteralText,ARTIFACTS,ศิลปวัตถุ
 LiteralText,ASCEND TO PREVIOUS LEVEL,ขึ้นไปชั้นก่อน
-LiteralText,asleep,นอนหลับ
 LiteralText,assets,สินทรัพย์
 LiteralText,ATMOSPHERE,บรรยากาศ
 LiteralText,attack modifier,ดัดแปลงการโจมตี
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,
 LiteralText,Black background,พื้นหลังสีดำ
 LiteralText,Black Market,ตลาดมืด
 LiteralText,blasphemy,
-LiteralText,blessed,ศักดิ์สิทธิ์
-LiteralText,BLESSED,ศักดิ์สิทธิ์
 LiteralText,BLINK,เคลื่อนที่พริบตา
 LiteralText,Blink which direction?,เคลื่อนที่พริบตาไปทางไหน?
 LiteralText,block,ป้องกัน
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,พัง
 LiteralText,burst rate,
 LiteralText,BUY,ซื้อ
 LiteralText,BUY ALL,ซื้อทั้งหมด
-LiteralText,by Callan Hodgskin,โดย Callan Hodgskin
 LiteralText,CANCEL,ยกเลิก
 LiteralText,cancellation,การยกเลิก
 LiteralText,CANCELLED,ยกเลิกแล้ว
@@ -3194,8 +3190,6 @@ LiteralText,Character,ตัวละคร
 LiteralText,CHARACTER,ตัวละคร
 LiteralText,characters,ตัวละคร
 LiteralText,charged items,
-LiteralText,charm,ลุ่มหลง
-LiteralText,CHARMED,หลงเสน่ห์
 LiteralText,Chat on Discord,พูดคุยกันใน Discord
 LiteralText,check for updates?,ตรวจหาการอัพเดตไหม?
 LiteralText,checking for updates,กำลังตรวจหาการอัพเดต
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,กดเพื่อลองใหม่
 LiteralText,Click to send detected issues to the author,กดเพื่อส่งปัญหาที่พบให้ผู้สร้าง
 LiteralText,CLOSE,ปิด
 LiteralText,closed,ปิดแล้ว
-LiteralText,CLOSED,ปิดแล้ว
 LiteralText,Coding on Medium,เขียนโปรแกรมบน Medium
 LiteralText,coins,เหรียญ
 LiteralText,companion,พรรคพวก
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,สร้างกำแพง
 LiteralText,Create which direction?,สร้างไว้ทิศไหน
 LiteralText,CREDITS,เครดิต
 LiteralText,CROP,
-LiteralText,cursed,ต้องสาป
 LiteralText,CURSED,ต้องสาป
 LiteralText,CUSTOM,สร้างเอง
 LiteralText,CUSTOM HERO,วีรบุรุษที่ปรับแต่งเอง
 LiteralText,CUSTOM MODULES,
-LiteralText,DAMAGE,ความเสียหาย
 LiteralText,dark,ความมืด
-LiteralText,dark-hidden,ซ่อนความมืด
 LiteralText,DEAD END,
 LiteralText,death,ความตาย
-LiteralText,DEATH,ความตาย
 LiteralText,deathray,ลำแสงแห่งความตาย
 LiteralText,decapitation,
 LiteralText,DECEASED,
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,ลดขั้นเป็น
 LiteralText,downloading update,ดาวน์โหลดอัพเดต
 LiteralText,drop,ทิ้งลง
 LiteralText,DROP,ทิ้งลง
-LiteralText,DUAL,คู่
 LiteralText,DUAL WIELD,ถือคู่
 LiteralText,Dungeon,ดันเจี้ยน
 LiteralText,duration,เวลาที่มีชีวิต
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,หนี
 LiteralText,escape traps,หนีออกจากกับดัก
 LiteralText,escape with,หนีด้วย
 LiteralText,escaped,หนีรอดแล้ว
-LiteralText,ESCAPED,หนีรอดแล้ว
 LiteralText,ESSENCE,เนื้อแท้
 LiteralText,evolution,การวิวัฒนาการ
 LiteralText,Examine which object?,จะตรวจสอบวัตถุชิ้นไหน
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,ขยาย
 LiteralText,EXPEL,ไล่ออก
 LiteralText,experience,ค่าประสบการณ์
 LiteralText,EXPERIENCE,ค่าประสบการณ์
-LiteralText,EXPLODED,ระเบิด
 LiteralText,explosion,ระเบิด
 LiteralText,EXPORT,ส่งออก
 LiteralText,extinctions,การสูญพันธุ์
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,
 LiteralText,FEED,ให้อาหาร
 LiteralText,FEEDBACK,การตอบกลับ
 LiteralText,FILES,ไฟล์
-LiteralText,Find out what is coming in the next update.,
 LiteralText,fixed range,
 LiteralText,FIZZLE,
 LiteralText,Floor,บนพื้น
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,จ้าง
 LiteralText,HORDES,กลุ่ม
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.",
-LiteralText,HUH?,หือ?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,
 LiteralText,identified items,ระบุไอเท็ม
-LiteralText,IDENTIFY,ระบุ
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ระบุไอเท็มทั้งหมดที่อยู่บนพื้น
 LiteralText,ILLITERATE,
 LiteralText,illusion,
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,นำเข้าข้อมูล
 LiteralText,IMPOSSIBLE,เป็นไปไม่ได้
 LiteralText,in both hands,สองมือ
 LiteralText,incarceration,
-LiteralText,increase,เพิ่ม
 LiteralText,INCREASE,เพิ่ม
 LiteralText,INDEX,สารบัญ
 LiteralText,individual crafting,
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,ส่งผลต่อ
 LiteralText,INSCRIBE,
 LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
-LiteralText,INSTRUCT,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,
 LiteralText,insulation,
@@ -3493,7 +3474,6 @@ LiteralText,light,แสง
 LiteralText,LIGHT,แสง
 LiteralText,light radius,
 LiteralText,limits,ขีดจำกัด
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","เชื่อมต่อไปยังอุปกรณ์อื่นๆที่รองรับรวมไปถึง iOS, Android และ Windows"
 LiteralText,LIST,รายชื่อ
 LiteralText,lit,รายชื่อ
 LiteralText,LIVING,
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,สูญเสียทักษะ
 LiteralText,Lost Chambers,
 LiteralText,LOW MANA,มานาเหลือน้อย
 LiteralText,Ludios Cache,
-LiteralText,MAIN,หลัก
 LiteralText,MAIN WIELD,ถือเป็นหลัก
 LiteralText,mana,มานา
 LiteralText,MANA,มานา
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,เลียนแบบ
 LiteralText,mimicking,
 LiteralText,Mines,เหมือง
 LiteralText,Minetown,เมืองเหมือง
-LiteralText,missile,
 LiteralText,modifier,
 LiteralText,MOUNT,ขี่
 LiteralText,Mount which direction?,ขี่ทิศไหน?
@@ -3577,14 +3555,12 @@ LiteralText,OR,หรือ
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,
-LiteralText,PACIFIED,
 LiteralText,Palette,
 LiteralText,PARTY,ปาร์ตี้
 LiteralText,passage,
 LiteralText,passive (no attacking),
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,
-LiteralText,Pathos is free to play and developed for the love of the game.,
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos อาจเป็นนวัตกรรมของเกม Nethack
 LiteralText,penalty,โทษทัณฑ์
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,กลายร่างแล้ว
 LiteralText,portal,ประตูมิติ
 LiteralText,porter,
 LiteralText,PRAY,อธิษฐาน
-LiteralText,PRAYING,กำลังอธิษฐาน
 LiteralText,preservation,
 LiteralText,prevent revenant levels,
 LiteralText,prisoner,นักโทษ
@@ -3664,10 +3639,8 @@ LiteralText,resident?,
 LiteralText,resistances,ต้านทาน
 LiteralText,RESISTS,ต้านทาน
 LiteralText,Rest,พักผ่อน
-LiteralText,REST,พักผ่อน
 LiteralText,Rest how many turns?,พักกี่เทิร์น?
 LiteralText,restarting to update,รีสตาร์ตเพื่ออัพเดต
-LiteralText,RESTING,กำลังพักผ่อน
 LiteralText,RESTORED,เปลี่ยนสินค้าแล้ว
 LiteralText,RESURRECT,คืนชีพ
 LiteralText,Resurrect and continue,คืนชีพและเล่นต่อ
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,เศษ
 LiteralText,SEALED,ผนึก
 LiteralText,Search,ค้นหา
 LiteralText,Search how many turns?,ค้นหากี่เทิร์น?
-LiteralText,SEARCHING,กำลังค้นหา
 LiteralText,secret,ความลับ
 LiteralText,SECRET,ความลับ
 LiteralText,seed,เมล็ด
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,เลือกความยาก
 LiteralText,set starting location,เลือกจุดเริ่มต้น
 LiteralText,SETTINGS,ตั้งค่า
 LiteralText,sfx volume,ระดับเสียงเอฟเฟค
-LiteralText,Share your tragic and heroic stories with other players.,
 LiteralText,SHARE//exchange,แบ่งปัน
 LiteralText,SHARE//publish,แบ่งปัน
 LiteralText,SHOPS,ร้านค้า
 LiteralText,Show debugging information,
 LiteralText,Show time clock,แสดงนาฬิกา
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,
 LiteralText,SHRINES,สถานที่บูชา
 LiteralText,SIGN-IN,เข้าสู่ระบบ
 LiteralText,size,ขนาด
@@ -3782,7 +3752,6 @@ LiteralText,terrain,ภูมิภาค
 LiteralText,The attack score is your aptitude for hitting an opponent.,แต้มการโจมตีคือศักยภาพในการโจมตีศัตรู
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,แต้มป้องกันคือป้องกันจากการโจมตีของศัตรู
-LiteralText,There are no known polymorphs,ไม่พบสิ่งที่สามารถกลายร่างเป็นได้
 LiteralText,There is a new update available!,มีเวอร์ชั่นใหม่พร้อมอัพเดต!
 LiteralText,there is nothing to place here,ไม่มีอะไรจะวางตรงนี้
 LiteralText,there is nothing to remove here,ไม่มีอะไรจะเอาออกจากตรงนี้
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,ตัวหนักเกินไป
 LiteralText,TOO HUNGRY,หิวเกินไป
 LiteralText,TOO SMALL,ตัวเล็กเกินไป
 LiteralText,TOO WEAK,อ่อนแอเกินไป
-LiteralText,touch,สัมผัส
 LiteralText,TRACKS,เพลง
 LiteralText,TRADE,แลกเปลี่ยน
 LiteralText,transform to,แปลงร่างเป็น
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,แพ้ทางต่อ
 LiteralText,WAIT,รอ
 LiteralText,Wait how many turns?,รอกี่เทิร์น?
-LiteralText,WAITING,กำลังรอ
 LiteralText,WARPING,
 LiteralText,was killed,ถูกฆ่า
-LiteralText,was strangled,
 LiteralText,weakness to,แพ้ทางให้กับ
 LiteralText,weight,น้ำหนัก
 LiteralText,when afflicted,
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,ผิดทาง
 LiteralText,"You are playing as anonymous, please register!",คุณกำลังเล่นเป็นบุคคลนิรนาม โปรดสมัครสมาชิก
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,คุณอาจต้องค้นหาประตูลับโดยการกดปุ่มรูปดวงตา
 LiteralText,Your current movement and action speed in squares per second.,
-LiteralText,Your feedback is appreciated and will influence my development plans.,
 LiteralText,ZOOM,ซูม
 LiteralText,ZOOS,สวนสัตว์
 LiteralText,zZz,zZz

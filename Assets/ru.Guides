@@ -328,12 +328,14 @@
 
 # Enchantment; Зачаровывание
 . Weapons and armour have a modifier that can be changed with enchantment magic.; Оружие и доспехи имеют модификатор, который может быть изменён магией зачаровывания.
-. The modifier is limited to between {Min} and {Max}.; Модификатор может иметь значения от {Min} до {Max}.
 . A modifier of +0 is a normal, mundane item.; Модификатор +0 представляет собой обычную земную вещь.
 . Modifiers on armour apply to your defence score.; Модификатор на доспехах применяется к вашей защите.
 . Modifiers on weapons apply to your attack and damage scores.; Модификатор на оружии применяется к вашим показателям атаки и урона.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; При попытке зачаровывания ниже {Min} или выше {Max} предмет разрушается.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Артефакты могут быть зачарованы до {Modifier} и при превышении лимита зачаровывания откатится до нуля.
+/
+. The {grade} items are limited to between {Min} and {Max}.; Модификатор {grade} может иметь значения от {Min} до {Max}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Модификатор {grade} могут быть зачарованы до {Modifier} и при превышении лимита зачаровывания откатится до нуля.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Модификатор {grade} вы попытаетесь зачаровать ниже или выше его предела, предмет будет уничтожен.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Некоторые другие вещи также могут быть зачарованы, например оловянный свисток может быть улучшен в волшебный свисток.
 
 # Punishments; Наказания

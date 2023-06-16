@@ -328,12 +328,14 @@
 
 # Enchantment;Efsunlama
 . Weapons and armour have a modifier that can be changed with enchantment magic.;Silahların ve zırhların efsun büyüsüyle değiştirilebilecek düzenleyicileri vardır.
-. The modifier is limited to between {Min} and {Max}.;Düzenleyici {Min} ile {Max} arası değişebilir.
 . A modifier of +0 is a normal, mundane item.;Normal bir eşyanın düzenleyicisi +0 olur.
 . Modifiers on armour apply to your defence score.;Zırhlardaki düzenleyiciler savunma dereceni etkiler.
 . Modifiers on weapons apply to your attack and damage scores.;Silahlardaki düzenleyiciler saldırı ve hasar dereceni etkiler.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.;Eğer düzenleyiciyi {Min} in altına veya {Max}in üstüne çıkarmaya çalışırsan eşyan yok olur.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Eser eşyaları {Modifier} seviyesine kadar yükseltilebilir, fazladan yapılan yükseltmeler eşyayı sıfır seviyesine geri döndürür.
+/
+. The {grade} items are limited to between {Min} and {Max}.; {grade} düzenleyici {Min} ile {Max} arası değişebilir.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; {grade} eşyaları {Modifier} seviyesine kadar yükseltilebilir, fazladan yapılan yükseltmeler eşyayı sıfır seviyesine geri döndürür.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Eğer {grade} düzenleyiciyi in altına veya in üstüne çıkarmaya çalışırsan eşyan yok olur.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;Aletler de efsunlanabilir. Mesela teneke bir düdük büyülü bir düdüğe dönüşebilir.
 
 # Punishments;Cezalar

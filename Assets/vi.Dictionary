@@ -2155,6 +2155,9 @@ GenderName,neuter,trung tính
 GenderName,non-binary,lưỡng tính
 GenerationType,module,phụ
 GenerationType,quest,nhiệm vụ
+GradeName,artifact,báu vật
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
 GroundName,chasm,hang sâu
 GroundName,dirt floor,sàn đất
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,sự loại bỏ các loại súng
 LiteralText,ABOUT,GIỚI THIỆU
 LiteralText,About Pathos,Giới thiệu về Pathos
 LiteralText,Abyss,Vực thẳm
-LiteralText,accelerated animations,tăng tốc hoạt ảnh
 LiteralText,accelerated resting,tăng tốc thời gian nghỉ
 LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
@@ -3107,7 +3109,6 @@ LiteralText,ALL,TẤT CẢ
 LiteralText,ALL AT ONCE,TẤT CẢ 1 LÚC
 LiteralText,always,luôn luôn
 LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
-LiteralText,AMMO,ĐẠN
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Bạn có muốn mất đi nhân vật này và kết thúc chuyến phiêu lưu này?
 LiteralText,ARE YOU SURE?,BẠN CHẮC CHỨ?
 LiteralText,area of effect,vùng ảnh hưởng
-LiteralText,artifact,báu vật
 LiteralText,ARTIFACTS,BÁU VẬT
 LiteralText,ASCEND TO PREVIOUS LEVEL,ĐI LÊN TẦNG TRƯỚC
-LiteralText,asleep,đang ngủ
 LiteralText,assets,hành trang
 LiteralText,ATMOSPHERE,KHÍ QUYỂN
 LiteralText,attack modifier,cấp số nhân sát thương
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,thảo luận về bản beta
 LiteralText,Black background,Hình nền màu đen
 LiteralText,Black Market,Chợ đen
 LiteralText,blasphemy,phỉ báng
-LiteralText,blessed,phước lành
-LiteralText,BLESSED,PHƯỚC LÀNH
 LiteralText,BLINK,NHẤP NHÁY
 LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
 LiteralText,block,khối
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,BỊ HỎNG
 LiteralText,burst rate,số đạn mỗi phát bắn
 LiteralText,BUY,MUA
 LiteralText,BUY ALL,MUA TẤT CẢ
-LiteralText,by Callan Hodgskin,bởi Callan Hodgskin
 LiteralText,CANCEL,HỦY BỎ
 LiteralText,cancellation,phép loại bỏ
 LiteralText,CANCELLED,BỊ LOẠI BỎ
@@ -3194,8 +3190,6 @@ LiteralText,Character,Nhân vật
 LiteralText,CHARACTER,NHÂN VẬT
 LiteralText,characters,nhân vật
 LiteralText,charged items,vật phẩm nạp đầy
-LiteralText,charm,quyến rũ
-LiteralText,CHARMED,QUYẾN RŨ
 LiteralText,Chat on Discord,Nói chuyện trên Discord
 LiteralText,check for updates?,tìm các cập nhật?
 LiteralText,checking for updates,đang kiểm tra các bản cập nhật
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,bấm để thử lại
 LiteralText,Click to send detected issues to the author,Nhấp để gửi các vấn đề đã phát hiện cho tác giả
 LiteralText,CLOSE,ĐÓNG
 LiteralText,closed,đóng cửa
-LiteralText,CLOSED,ĐÓNG CỬA
 LiteralText,Coding on Medium,viết code trên Medium
 LiteralText,coins,đồng xu
 LiteralText,companion,vật nuôi
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,TẠO RA TƯỜNG
 LiteralText,Create which direction?,Tạo ở hướng nào?
 LiteralText,CREDITS,TÍN DỤNG
 LiteralText,CROP,THU NHỎ
-LiteralText,cursed,nguyền rủa
 LiteralText,CURSED,BỊ NGUYỀN RỦA
 LiteralText,CUSTOM,TÙY CHỌN
 LiteralText,CUSTOM HERO,ANH HÙNG TỤ CHỌN
 LiteralText,CUSTOM MODULES,MÔ ĐUN TỰ CHỌN
-LiteralText,DAMAGE,SÁT THƯƠNG
 LiteralText,dark,tối
-LiteralText,dark-hidden,ẩn trong bóng tối
 LiteralText,DEAD END,NGÕ CỤT
 LiteralText,death,chết
-LiteralText,DEATH,CHẾT
 LiteralText,deathray,tia tử thần
 LiteralText,decapitation,chặt đầu
 LiteralText,DECEASED,NGƯỜI CHẾT
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,hạ cấp xuống
 LiteralText,downloading update,đang tải bản cập nhật
 LiteralText,drop,thả
 LiteralText,DROP,THẢ
-LiteralText,DUAL,SONG
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
 LiteralText,Dungeon,Hầm ngục
 LiteralText,duration,thời lượng
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,TRỐN THOÁT
 LiteralText,escape traps,thoát khỏi bẫy
 LiteralText,escape with,thoái bằng
 LiteralText,escaped,đã trốn thoát
-LiteralText,ESCAPED,ĐÃ THOÁT
 LiteralText,ESSENCE,NGUYÊN LIỆU THÔ
 LiteralText,evolution,tiến hóa
 LiteralText,Examine which object?,Khám xét vật phẩm nào?
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,MỞ RỘNG
 LiteralText,EXPEL,LOẠI TRỪ
 LiteralText,experience,kinh nghiệm
 LiteralText,EXPERIENCE,KINH NGHIỆM
-LiteralText,EXPLODED,PHÁT NỔ
 LiteralText,explosion,vụ nổ
 LiteralText,EXPORT,XUÂT RA
 LiteralText,extinctions,tuyệt chủng
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,TÍNH NĂNG
 LiteralText,FEED,CHO ĂN
 LiteralText,FEEDBACK,PHẢN HỒI
 LiteralText,FILES,TỆP
-LiteralText,Find out what is coming in the next update.,Khám phá xem bản cập nhật mới có gì
 LiteralText,fixed range,tầm đánh cố định
 LiteralText,FIZZLE,SỦI BỌT
 LiteralText,Floor,Sàn nhà
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,THUÊ
 LiteralText,HORDES,BẦY ĐÀN
 LiteralText,HOST,CHỦ PHÒNG
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
-LiteralText,HUH?,HUH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Chúng tôi hy vọng rằng bạn đang tận hưởng những chuyến phiêu lưu của bạn. Đừng ngần ngại góp ý cải thiện cho chúng tôi nhé.
 LiteralText,identified items,vật phẩm được đinh danh
-LiteralText,IDENTIFY,ĐỊNH DANH
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ĐỊNH DANH MỌI VẬT PHẨM TRÊN SÀN NHÀ
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,Nhập một file
 LiteralText,IMPOSSIBLE,BẤT KHẢ THI
 LiteralText,in both hands,trong cả 2 tay
 LiteralText,incarceration,nhốt
-LiteralText,increase,tăng
 LiteralText,INCREASE,TĂNG
 LiteralText,INDEX,TỪ ĐIỂN
 LiteralText,individual crafting,chế tạo lẻ
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,những hành động liên quan
 LiteralText,INSCRIBE,GHI
 LiteralText,INSCRIBE ITEM,GHI VẬT PHẨM
 LiteralText,inscription?,khắc chữ gì?
-LiteralText,INSTRUCT,HƯỚNG DẪN
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
 LiteralText,insulation,cô lập
@@ -3493,7 +3474,6 @@ LiteralText,light,ánh sáng
 LiteralText,LIGHT,SÁNG
 LiteralText,light radius,vùng được thắp sáng
 LiteralText,limits,giới hạn
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Đường link dẫn vào các nền tảng được hỗ trợ, bao gồm iOS, Android và Windows."
 LiteralText,LIST,DANH SÁCH
 LiteralText,lit,khi thắp sáng
 LiteralText,LIVING,CÒN SỐNG
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,mất kĩ năng
 LiteralText,Lost Chambers,Căn phòng lãng quên
 LiteralText,LOW MANA,năng lượng thấp
 LiteralText,Ludios Cache,Hầm trữ Ludios
-LiteralText,MAIN,CHÍNH
 LiteralText,MAIN WIELD,VŨ KHÍ CHÍNH
 LiteralText,mana,năng lượng
 LiteralText,MANA,NĂNG LƯỢNG
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,GIẢ DẠNG
 LiteralText,mimicking,đang giả dạng
 LiteralText,Mines,mìn
 LiteralText,Minetown,thi trấn Mine
-LiteralText,missile,tên lửa
 LiteralText,modifier,cấp số nhân
 LiteralText,MOUNT,CƯỠI
 LiteralText,Mount which direction?,Cưỡi hướng nào?
@@ -3577,14 +3555,12 @@ LiteralText,OR,HOẶC
 LiteralText,ORIGINAL,GỐC
 LiteralText,OVERRIDE,GHI ĐÈ
 LiteralText,OVERVIEW,TỔNG QUÁT
-LiteralText,PACIFIED,YÊN LÒNG
 LiteralText,Palette,Palette
 LiteralText,PARTY,TỔ ĐỘI
 LiteralText,passage,lối đi
 LiteralText,passive (no attacking),hiền lành (không tấn công)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos có thể được chơi ở chế độ chia đôi màn hình với tối đa lên đến bốn người chơi.
 LiteralText,pathos development @ paypal,ủng hộ việc phát triển Pathos qua Paypal
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos là một trò chơi miễn phí và được phát triển vì tình yêu đối với trò chơi.
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos không thể tải chuyến phiêu lưu của bạn. Vui lòng gửi cho tôi tệp lưu của bạn để tôi có thể điều tra vấn đề. Tôi thậm chí có thể sửa chữa tệp hoặc cập nhật ứng dụng bằng bản sửa lỗi. Sự thông cảm của bạn được đánh giá cao.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos có thể là sự phát triển tiếp theo của Nethack.
 LiteralText,penalty,điểm phạt
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
 LiteralText,porter,túi
 LiteralText,PRAY,CẦU NGUYỆN
-LiteralText,PRAYING,CẦU NGUYỆN
 LiteralText,preservation,quan sát
 LiteralText,prevent revenant levels,loại bỏ những tầng có bóng ma cũ
 LiteralText,prisoner,tù nhân
@@ -3664,10 +3639,8 @@ LiteralText,resident?,là dân cư?
 LiteralText,resistances,các đề kháng
 LiteralText,RESISTS,KHÁNG
 LiteralText,Rest,Nghỉ ngơi
-LiteralText,REST,NGHỈ NGƠI
 LiteralText,Rest how many turns?,Nghỉ ngơi trong bao nhiêu lượt?
 LiteralText,restarting to update,khởi động lại để cập nhật
-LiteralText,RESTING,ĐANG NGHỈ NGƠI
 LiteralText,RESTORED,HỒI PHỤC
 LiteralText,RESURRECT,HỒI SINH
 LiteralText,Resurrect and continue,Hồi sinh và tiếp tục
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,TÁI CHẾ
 LiteralText,SEALED,PHONG ẤN
 LiteralText,Search,Lục soát
 LiteralText,Search how many turns?,Lục soát trong bao nhiêu lượt?
-LiteralText,SEARCHING,LỤC SOÁT
 LiteralText,secret,bí mật
 LiteralText,SECRET,BÍ MẬT
 LiteralText,seed,hạt giống
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,CHỌN ĐỘ KHÓ
 LiteralText,set starting location,CHỌN NƠI BẮT ĐẦU
 LiteralText,SETTINGS,CÀI ĐẶT
 LiteralText,sfx volume,âm thanh hiệu ứng
-LiteralText,Share your tragic and heroic stories with other players.,Cùng chia sẻ những câu chuyện về anh hùng của bạn với những người chơi khác.
 LiteralText,SHARE//exchange,CHIA SẺ
 LiteralText,SHARE//publish,CHIA SẺ
 LiteralText,SHOPS,CỬA HÀNG
 LiteralText,Show debugging information,Hiện thông tin debug
 LiteralText,Show time clock,Hiện thời gian của máy
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Ủng hộ Pathos bằng cách giới thiệu nó với người khác nhé.
 LiteralText,SHRINES,ĐỀN THỜ
 LiteralText,SIGN-IN,ĐĂNG NHẬP
 LiteralText,size,kích thước
@@ -3782,7 +3752,6 @@ LiteralText,terrain,địa hình
 LiteralText,The attack score is your aptitude for hitting an opponent.,Điểm tấn công quyết định khả năng đánh trúng đôi thủ của bạn.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Thử thách ở đây là cải thiện những thiếu sót mà không làm mất đi những tinh túy biến Nethack thành trò chơi tuyệt nhất mọi thời đại.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Điểm phòng thủ quyết định sát thương bạn nhận khi bị đánh bởi đối thủ.
-LiteralText,There are no known polymorphs,Không biết thực thể nào để biến hình.
 LiteralText,There is a new update available!,Có một bản cập nhật mới!
 LiteralText,there is nothing to place here,Không có gì để đặt vào đây
 LiteralText,there is nothing to remove here,không có gì để lấy
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,QUÁ NẶNG
 LiteralText,TOO HUNGRY,QUÁ ĐÓI
 LiteralText,TOO SMALL,QUÁ NHỎ
 LiteralText,TOO WEAK,QUÁ YẾU
-LiteralText,touch,chạm
 LiteralText,TRACKS,THEO DÕI
 LiteralText,TRADE,TRAO ĐỔI
 LiteralText,transform to,biến hình thành
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
-LiteralText,WAITING,ĐANG CHỜ
 LiteralText,WARPING,ĐANG DỊCH CHUYỂN
 LiteralText,was killed,bị giết
-LiteralText,was strangled,bị bóp nghẹt
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,NHẦM HƯỚNG
 LiteralText,"You are playing as anonymous, please register!","Bạn đang chơi với tư cách là ẩn danh, xin vui lòng đăng ký!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Bạn có thể cần LỤC SOÁT để tìm những cánh cửa bí mật bằng nút hình con mắt.
 LiteralText,Your current movement and action speed in squares per second.,Tốc độ di chuyển và hành động hiện tại của bạn tính bằng ô vuông trên giây.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Phản hồi của bạn sẽ được đánh giá cao và sẽ ảnh hưởng đến kế hoạch phát triển của tôi.
 LiteralText,ZOOM,PHÓNG TO
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz

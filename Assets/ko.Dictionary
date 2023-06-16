@@ -2155,6 +2155,9 @@ GenderName,neuter,중성
 GenderName,non-binary,논바이너리
 GenerationType,module,모듈
 GenerationType,quest,퀘스트
+GradeName,artifact,유물
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,이 차가운 돌 표면은 뛰어난 솜씨로 만들어졌지만 세월이 지나면서 손상되었다.
 GroundName,chasm,갈라진 틈
 GroundName,dirt floor,흙 바닥
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,총기 규제
 LiteralText,ABOUT,Pathos에 관하여
 LiteralText,About Pathos,Pathos에 관하여
 LiteralText,Abyss,심연
-LiteralText,accelerated animations,애니메이션 가속
 LiteralText,accelerated resting,빠른 휴식
 LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
@@ -3107,7 +3109,6 @@ LiteralText,ALL,전체
 LiteralText,ALL AT ONCE,한 번에 전부
 LiteralText,always,항상
 LiteralText,AMBIENT SOUNDS,앰비언트 사운드
-LiteralText,AMMO,탄환
 LiteralText,amnesia,망각
 LiteralText,AMNESIA,망각
 LiteralText,anatomy,해부학
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,정말로 이 캐릭터를 잃고 모험을 끝내시겠습니까?
 LiteralText,ARE YOU SURE?,정말입니까?
 LiteralText,area of effect,효과 범위
-LiteralText,artifact,유물
 LiteralText,ARTIFACTS,유물
 LiteralText,ASCEND TO PREVIOUS LEVEL,이전 레벨로 올라감
-LiteralText,asleep,잠든
 LiteralText,assets,물건들
 LiteralText,ATMOSPHERE,장소
 LiteralText,attack modifier,명중 보정치
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,베타 버전에 대한 토론
 LiteralText,Black background,검은 배경
 LiteralText,Black Market,암시장
 LiteralText,blasphemy,신성모독
-LiteralText,blessed,축복받은
-LiteralText,BLESSED,축복
 LiteralText,BLINK,점멸
 LiteralText,Blink which direction?,어느 방향으로 점멸하시겠습니까?
 LiteralText,block,막다
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,부서짐
 LiteralText,burst rate,연발
 LiteralText,BUY,구매
 LiteralText,BUY ALL,전부 구매
-LiteralText,by Callan Hodgskin,Callan Hodgskin 개발
 LiteralText,CANCEL,취소
 LiteralText,cancellation,무효화
 LiteralText,CANCELLED,무효화됨
@@ -3194,8 +3190,6 @@ LiteralText,Character,캐릭터
 LiteralText,CHARACTER,캐릭터
 LiteralText,characters,캐릭터들
 LiteralText,charged items,충전된 아이템
-LiteralText,charm,매혹
-LiteralText,CHARMED,매료됨
 LiteralText,Chat on Discord,Discord에서 이야기하세요
 LiteralText,check for updates?,업데이트를 확인할까요?
 LiteralText,checking for updates,업데이트 확인중
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,클릭하여 재시도
 LiteralText,Click to send detected issues to the author,클릭하여 제작자에게 문제점을 보고합니다
 LiteralText,CLOSE,닫기
 LiteralText,closed,닫힘
-LiteralText,CLOSED,담힘
 LiteralText,Coding on Medium,Medium에서 코딩
 LiteralText,coins,코인
 LiteralText,companion,동료
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,벽 생성
 LiteralText,Create which direction?,어느 방향에 생성합니까?
 LiteralText,CREDITS,크레딧
 LiteralText,CROP,자르기
-LiteralText,cursed,저주받음
 LiteralText,CURSED,저주받음
 LiteralText,CUSTOM,커스텀
 LiteralText,CUSTOM HERO,커스텀 영웅
 LiteralText,CUSTOM MODULES,커스텀 모듈
-LiteralText,DAMAGE,데미지
 LiteralText,dark,어둠
-LiteralText,dark-hidden,비발광성
 LiteralText,DEAD END,막다른길
 LiteralText,death,죽음
-LiteralText,DEATH,죽음
 LiteralText,deathray,즉사 광선
 LiteralText,decapitation,참수
 LiteralText,DECEASED,사망함
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,다운그레이드:
 LiteralText,downloading update,업데이트 다운로드중
 LiteralText,drop,떨어트림
 LiteralText,DROP,떨어뜨리기
-LiteralText,DUAL,쌍수
 LiteralText,DUAL WIELD,쌍수 장비
 LiteralText,Dungeon,던전
 LiteralText,duration,지속 시간
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,탈출
 LiteralText,escape traps,함정 탈출
 LiteralText,escape with,탈출 방법
 LiteralText,escaped,탈출
-LiteralText,ESCAPED,탈출함
 LiteralText,ESSENCE,정수
 LiteralText,evolution,진화
 LiteralText,Examine which object?,어떤 아이템을 관찰합니까?
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,확장
 LiteralText,EXPEL,방출
 LiteralText,experience,경험치
 LiteralText,EXPERIENCE,경험치
-LiteralText,EXPLODED,폭발함
 LiteralText,explosion,폭발
 LiteralText,EXPORT,내보내기
 LiteralText,extinctions,멸종
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,시설
 LiteralText,FEED,먹이기
 LiteralText,FEEDBACK,피드백
 LiteralText,FILES,파일
-LiteralText,Find out what is coming in the next update.,다음 업데이트 내용을 확인 하세요!
 LiteralText,fixed range,고정 사거리
 LiteralText,FIZZLE,쉬익!
 LiteralText,Floor,층
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,고용
 LiteralText,HORDES,군단
 LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
-LiteralText,HUH?,응?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,모험을 재미있게 즐기셨으면 좋겠고 피드백이나 건의사항이 있다면 얼마든지 저에게 보내주세요.
 LiteralText,identified items,식별된 아이템
-LiteralText,IDENTIFY,식별
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,땅에 떨어진 모든 아이템을 식별함
 LiteralText,ILLITERATE,문맹
 LiteralText,illusion,환영
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,파일 불러오기
 LiteralText,IMPOSSIBLE,불가능
 LiteralText,in both hands,양손
 LiteralText,incarceration,투옥
-LiteralText,increase,증가
 LiteralText,INCREASE,증가
 LiteralText,INDEX,검색
 LiteralText,individual crafting,개별 제작
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,영향받는 행동
 LiteralText,INSCRIBE,필경
 LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
-LiteralText,INSTRUCT,지시
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,골드 부족
 LiteralText,insulation,절연
@@ -3493,7 +3474,6 @@ LiteralText,light,빛
 LiteralText,LIGHT,빛
 LiteralText,light radius,광원 범위
 LiteralText,limits,한계치
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","iOS,안드로이드, 그리고 윈도우가 포함된 모든 플랫폼을 위한 링크"
 LiteralText,LIST,재료 목록
 LiteralText,lit,켜짐
 LiteralText,LIVING,살아있는
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,숙련도 손실
 LiteralText,Lost Chambers,잃어버린 방
 LiteralText,LOW MANA,마나 부족
 LiteralText,Ludios Cache,Ludios 비밀 창고
-LiteralText,MAIN,주무장
 LiteralText,MAIN WIELD,주무장
 LiteralText,mana,마나
 LiteralText,MANA,마나
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,변장
 LiteralText,mimicking,따라하기
 LiteralText,Mines,광산
 LiteralText,Minetown,광산마을
-LiteralText,missile,투사체
 LiteralText,modifier,보정치
 LiteralText,MOUNT,승마
 LiteralText,Mount which direction?,어느 방향으로 올라탑니까?
@@ -3577,14 +3555,12 @@ LiteralText,OR,또는
 LiteralText,ORIGINAL,오리지널
 LiteralText,OVERRIDE,덮어쓰기
 LiteralText,OVERVIEW,훑어보기
-LiteralText,PACIFIED,진정됨
 LiteralText,Palette,팔레트
 LiteralText,PARTY,파티
 LiteralText,passage,통로
 LiteralText,passive (no attacking),패시브 - 공격 비활성화
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos는 최대 4명의 플레이어가 분할 스크린에서 협동 모드로 같이 플레이할 수 있습니다.
 LiteralText,pathos development @ paypal,Pathos 개발자의 paypal
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos는 무료로 플레이 할 수 있고 순수히 게임을 좋아서 개발되었습니다.
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,당신의 모험을 불러올 수 없습니다. 원인 분석을 위해 제게 세이브 파일을 전송해 주십시오. 앱을 업데이트해서 문제 해결이 가능할지도 모르니 양해 부탁드립니다.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos는 넷핵의 다음 단계가 될지도 모릅니다.
 LiteralText,penalty,패널티
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,폴리모프됨
 LiteralText,portal,포탈
 LiteralText,porter,운송기
 LiteralText,PRAY,기도
-LiteralText,PRAYING,기도중
 LiteralText,preservation,보존
 LiteralText,prevent revenant levels,망령 레벨 방지
 LiteralText,prisoner,죄수
@@ -3664,10 +3639,8 @@ LiteralText,resident?,주민?
 LiteralText,resistances,저항
 LiteralText,RESISTS,저항함
 LiteralText,Rest,초기화
-LiteralText,REST,휴식
 LiteralText,Rest how many turns?,몇 턴을 쉴까요?
 LiteralText,restarting to update,업데이트를 위해 재실행
-LiteralText,RESTING,휴식중
 LiteralText,RESTORED,복구됨
 LiteralText,RESURRECT,부활
 LiteralText,Resurrect and continue,부활 및 게임 재개
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,분해
 LiteralText,SEALED,봉인됨
 LiteralText,Search,탐색
 LiteralText,Search how many turns?,몇 턴 동안 탐색할까요?
-LiteralText,SEARCHING,탐색중
 LiteralText,secret,비밀
 LiteralText,SECRET,비밀
 LiteralText,seed,시드
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,난이도 설정
 LiteralText,set starting location,시작 지점 설정
 LiteralText,SETTINGS,설정
 LiteralText,sfx volume,효과음
-LiteralText,Share your tragic and heroic stories with other players.,다른 플레이어들과 비극적인 영웅담을 나눠보세요.
 LiteralText,SHARE//exchange,공유
 LiteralText,SHARE//publish,공유
 LiteralText,SHOPS,상점
 LiteralText,Show debugging information,디버깅 정보 표시
 LiteralText,Show time clock,시계 표시
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Pathos가 마음에 드신가요? 이 게임을 다른사람들 에게 소개해주세요!
 LiteralText,SHRINES,제단
 LiteralText,SIGN-IN,로그인
 LiteralText,size,크기
@@ -3782,7 +3752,6 @@ LiteralText,terrain,지형
 LiteralText,The attack score is your aptitude for hitting an opponent.,공격 점수는 당신이 적을 공격한 가능성이다.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,이 게임 개발의 목적은 역대 최고의 게임이 될 수 있었던 근본을 유지하면서 게임 시스템을 개선하는 것입니다.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,방어 점수는 당신이 적의 공격에서 얼마나 방어했는지이다.
-LiteralText,There are no known polymorphs,알고있는 폴리모프 형태가 없음.
 LiteralText,There is a new update available!,새로운 업데이트가 있습니다!
 LiteralText,there is nothing to place here,컨테이너에 넣을 것이 없다.
 LiteralText,there is nothing to remove here,비어 있음
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,너무 무거움
 LiteralText,TOO HUNGRY,너무 배고픔
 LiteralText,TOO SMALL,너무 작음
 LiteralText,TOO WEAK,너무 약함
-LiteralText,touch,접촉
 LiteralText,TRACKS,음악
 LiteralText,TRADE,거래
 LiteralText,transform to,변신하다
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
-LiteralText,WAITING,대기중
 LiteralText,WARPING,워프증
 LiteralText,was killed,죽었다
-LiteralText,was strangled,목이 졸렸다
 LiteralText,weakness to,약점 :
 LiteralText,weight,무게
 LiteralText,when afflicted,감염 받을 시
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,옳지 않은 길
 LiteralText,"You are playing as anonymous, please register!",익명으로 플레이중입니다. 등록해주세요!
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,눈 버튼을 눌러 비밀 문을 찾아야 할 수 도 있습니다.
 LiteralText,Your current movement and action speed in squares per second.,현재 당신의 이동 및 행동 속도.
-LiteralText,Your feedback is appreciated and will influence my development plans.,피드백을 보내주시면 감사하겠습니다. 또한 피드백을 따라 개발 계획이 조정됩니다.
 LiteralText,ZOOM,줌
 LiteralText,ZOOS,서식지
 LiteralText,zZz,쿨쿨쿨

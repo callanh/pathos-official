@@ -2155,6 +2155,9 @@ GenderName,neuter,neutral
 GenderName,non-binary,no-binario
 GenerationType,module,módulo
 GenerationType,quest,mision
+GradeName,artifact,artefacto
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La fría piedra fue inmaculadamente elaborada pero está marcada por el daño y el tiempo.
 GroundName,chasm,abismo
 GroundName,dirt floor,suelo de tierra
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,abolición de las armas de fuego
 LiteralText,ABOUT,ACERCA DE
 LiteralText,About Pathos,Acerca de Pathos
 LiteralText,Abyss,Abismo
-LiteralText,accelerated animations,animaciones aceleradas
 LiteralText,accelerated resting,descanso acelerado
 LiteralText,actions,acciones
 LiteralText,ADD LEVEL,AÑADIR NIVEL
@@ -3107,7 +3109,6 @@ LiteralText,ALL,TODO
 LiteralText,ALL AT ONCE,TODO DE UNA VEZ
 LiteralText,always,siempre
 LiteralText,AMBIENT SOUNDS,SONIDOS AMBIENTALES
-LiteralText,AMMO,MUNICIÓN
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
 LiteralText,anatomy,anatomía
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,¿Estás seguro de que quieres perder este personaje y terminar tu aventura?
 LiteralText,ARE YOU SURE?,¿ESTÁS SEGURO?
 LiteralText,area of effect,área de efecto
-LiteralText,artifact,artefacto
 LiteralText,ARTIFACTS,ARTEFACTOS
 LiteralText,ASCEND TO PREVIOUS LEVEL,ASCENDER AL NIVEL ANTERIOR
-LiteralText,asleep,dormido
 LiteralText,assets,bienes
 LiteralText,ATMOSPHERE,ATMÓSFERA
 LiteralText,attack modifier,modificador de ataque
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,discusiones beta
 LiteralText,Black background,fondo negro
 LiteralText,Black Market,Mercado Negro
 LiteralText,blasphemy,blasfemia
-LiteralText,blessed,bendito
-LiteralText,BLESSED,BENDITO
 LiteralText,BLINK,SALTO
 LiteralText,Blink which direction?,¿Saltar hacia qué dirección?
 LiteralText,block,bloquear
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,ROTO
 LiteralText,burst rate,tasa de ráfaga
 LiteralText,BUY,COMPRAR
 LiteralText,BUY ALL,COMPRAR TODO
-LiteralText,by Callan Hodgskin,por Callan Hodgskin
 LiteralText,CANCEL,CANCELAR
 LiteralText,cancellation,cancelación
 LiteralText,CANCELLED,CANCELADO
@@ -3194,8 +3190,6 @@ LiteralText,Character,Personaje
 LiteralText,CHARACTER,PERSONAJE
 LiteralText,characters,personajes
 LiteralText,charged items,ítems cargados
-LiteralText,charm,encantamiento
-LiteralText,CHARMED,ENCANTADO
 LiteralText,Chat on Discord,chatear en Discord
 LiteralText,check for updates?,¿buscar actualizaciones?
 LiteralText,checking for updates,buscando actualizaciones
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,click aquí para reintentar
 LiteralText,Click to send detected issues to the author,click aquí para enviar los problemas detectados al autor
 LiteralText,CLOSE,CERRAR
 LiteralText,closed,cerrado
-LiteralText,CLOSED,CERRADO
 LiteralText,Coding on Medium,Programación en Medium
 LiteralText,coins,monedas
 LiteralText,companion,compañero
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,CREAR PARED
 LiteralText,Create which direction?,¿Crear en qué dirección?
 LiteralText,CREDITS,CRÉDITOS
 LiteralText,CROP,CAPA
-LiteralText,cursed,maldito
 LiteralText,CURSED,MALDITO
 LiteralText,CUSTOM,PERSONALIZADO
 LiteralText,CUSTOM HERO,HÉROE PERSONALIZADO
 LiteralText,CUSTOM MODULES,MODULOS PERSONALIZADOS
-LiteralText,DAMAGE,DAÑO
 LiteralText,dark,oscuro
-LiteralText,dark-hidden,oscuro-oculto
 LiteralText,DEAD END,CAMINO SIN SALIDA
 LiteralText,death,muerte
-LiteralText,DEATH,MUERTE
 LiteralText,deathray,rayo mortal
 LiteralText,decapitation,decapitar
 LiteralText,DECEASED,FALLECIDO
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,rebajar a
 LiteralText,downloading update,descargando actualización
 LiteralText,drop,soltar
 LiteralText,DROP,SOLTAR
-LiteralText,DUAL,DUAL
 LiteralText,DUAL WIELD,DOBLE EMPUÑADURA
 LiteralText,Dungeon,Mazmorra
 LiteralText,duration,duración
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,ESCAPE
 LiteralText,escape traps,escapar trampa
 LiteralText,escape with,escapar con
 LiteralText,escaped,escapado
-LiteralText,ESCAPED,ESCAPADO
 LiteralText,ESSENCE,ESENCIA
 LiteralText,evolution,evolucion
 LiteralText,Examine which object?,¿Examinar qué objeto?
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,EXPANDIR
 LiteralText,EXPEL,EXPULSAR
 LiteralText,experience,experiencia
 LiteralText,EXPERIENCE,EXPERIENCIA
-LiteralText,EXPLODED,EXPLOTADO
 LiteralText,explosion,explosión
 LiteralText,EXPORT,EXPORTAR
 LiteralText,extinctions,extinciones
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,CARACTERÍSTICAS
 LiteralText,FEED,ALIMENTAR
 LiteralText,FEEDBACK,RETROALIMENTACIÓN
 LiteralText,FILES,ARCHIVOS
-LiteralText,Find out what is coming in the next update.,Descubre qué incluirá la próxima actualización.
 LiteralText,fixed range,rango fijo
 LiteralText,FIZZLE,EFERVESCENCIA
 LiteralText,Floor,Piso
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,CONTRATAR
 LiteralText,HORDES,HORDAS
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Sin embargo, quizás quieras completar tus aventuras antes de actualizar."
-LiteralText,HUH?,¿UH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Espero que estés disfrutando de tus aventuras. No dudes en contactarme con tus comentarios y sugerencias.
 LiteralText,identified items,ítems identificados
-LiteralText,IDENTIFY,IDENTIFICAR
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICAR TODOS LOS ÍTEMS DEL SUELO
 LiteralText,ILLITERATE,ANALFABETO
 LiteralText,illusion,ilusión
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,Importa un archivo
 LiteralText,IMPOSSIBLE,IMPOSIBLE
 LiteralText,in both hands,en ambas manos
 LiteralText,incarceration,encarcelamiento
-LiteralText,increase,incrementar
 LiteralText,INCREASE,INCREMENTAR
 LiteralText,INDEX,ÍNDICE
 LiteralText,individual crafting,elaboración individual
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,acciones influenciadas
 LiteralText,INSCRIBE,INSCRIBIR
 LiteralText,INSCRIBE ITEM,INSCRIBIR ÍTEM
 LiteralText,inscription?,inscripción?
-LiteralText,INSTRUCT,ORDENAR
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,ORO INSUFICIENTE
 LiteralText,insulation,aislamiento
@@ -3493,7 +3474,6 @@ LiteralText,light,luz
 LiteralText,LIGHT,ILUMINACIÓN
 LiteralText,light radius,radio de luz
 LiteralText,limits,límites
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Enlaces a todas las plataformas soportadas, incluyendo iOS, Android y Windows."
 LiteralText,LIST,LISTA
 LiteralText,lit,iluminado
 LiteralText,LIVING,VIVO
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,perder habilidad
 LiteralText,Lost Chambers,Cámaras Perdidas
 LiteralText,LOW MANA,MANÁ ESCASO
 LiteralText,Ludios Cache,Caché de Ludios
-LiteralText,MAIN,PRINCIPAL
 LiteralText,MAIN WIELD,EMPUÑADURA PRINCIPAL
 LiteralText,mana,maná
 LiteralText,MANA,MANÁ
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,MÍMICO
 LiteralText,mimicking,imitador
 LiteralText,Mines,Minas
 LiteralText,Minetown,Ciudad Minera
-LiteralText,missile,misil
 LiteralText,modifier,modificador
 LiteralText,MOUNT,MONTAR
 LiteralText,Mount which direction?,¿Montar en qué dirección?
@@ -3577,14 +3555,12 @@ LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,ANULAR
 LiteralText,OVERVIEW,RESUMEN
-LiteralText,PACIFIED,PACIFICADO
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPO
 LiteralText,passage,pasaje
 LiteralText,passive (no attacking),pasivo (sin atacar)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos puede jugarse en modo cooperativo en pantalla dividida con hasta cuatro jugadores
 LiteralText,pathos development @ paypal,desarrollo de pathos en paypal
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos es un juego gratuito y está desarrollado por amor al juego.
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos no puede cargar tu aventura. Envíeme su archivo guardado para que pueda investigar el problema. Incluso puedo reparar el archivo o actualizar la aplicación con una solución. Su comprensión es apreciada.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos podría ser la siguiente evolución de Nethack.
 LiteralText,penalty,penalización
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
 LiteralText,porter,portador de
 LiteralText,PRAY,ORAR
-LiteralText,PRAYING,ORANDO
 LiteralText,preservation,preservación
 LiteralText,prevent revenant levels,prevenir niveles de renacidos
 LiteralText,prisoner,prisionero
@@ -3664,10 +3639,8 @@ LiteralText,resident?,residente?
 LiteralText,resistances,resistencias
 LiteralText,RESISTS,RESISTE
 LiteralText,Rest,Descansar
-LiteralText,REST,DESCANSAR
 LiteralText,Rest how many turns?,¿Descansar por cuántos turnos?
 LiteralText,restarting to update,reiniciando para actualizar
-LiteralText,RESTING,DESCANSANDO
 LiteralText,RESTORED,RESTAURADO
 LiteralText,RESURRECT,RESUCITAR
 LiteralText,Resurrect and continue,Resucitar y continuar
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,CHATARRA
 LiteralText,SEALED,SELLADO
 LiteralText,Search,BUSCAR
 LiteralText,Search how many turns?,¿Buscar durante cuántos turnos?
-LiteralText,SEARCHING,BUSCANDO
 LiteralText,secret,secreto
 LiteralText,SECRET,SECRETO
 LiteralText,seed,semilla
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,ESCOGER DIFICULTAD
 LiteralText,set starting location,escoge ubicación de inicio
 LiteralText,SETTINGS,CONFIGURACIONES
 LiteralText,sfx volume,volumen sfx
-LiteralText,Share your tragic and heroic stories with other players.,Comparte tus historias trágicas y heroicas con otros jugadores.
 LiteralText,SHARE//exchange,COMPARTIR
 LiteralText,SHARE//publish,COMPARTIR
 LiteralText,SHOPS,COMERCIOS
 LiteralText,Show debugging information,Mostrar información de debug.
 LiteralText,Show time clock,Mostrar hora del rejoj
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Muestra tu aprecio ayudando a dar a conocer Pathos, invitando a otros jugadores."
 LiteralText,SHRINES,SANTUARIO
 LiteralText,SIGN-IN,REGISTRARSE
 LiteralText,size,tamaño
@@ -3782,7 +3752,6 @@ LiteralText,terrain,terreno
 LiteralText,The attack score is your aptitude for hitting an opponent.,Los puntos de ataque son tu aptitud para golpear a un oponente.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,El desafío es mejorar las mecánicas mientras se mantiene la esencia de lo que lo hace el mejor juego de todos los tiempos.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Los puntos de defensa representan cuán protegido estás de ser golpeado por un oponente.
-LiteralText,There are no known polymorphs,No hay polimorfos conocidos
 LiteralText,There is a new update available!,¡Hay una nueva actualización disponible!
 LiteralText,there is nothing to place here,no hay nada para colocar aquí
 LiteralText,there is nothing to remove here,no hay nada para quitar aquí
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,DEMASIADO PESADO
 LiteralText,TOO HUNGRY,MUY HAMBRIENTO
 LiteralText,TOO SMALL,MUY PEQUEÑO
 LiteralText,TOO WEAK,MUY DÉBIL
-LiteralText,touch,tocar
 LiteralText,TRACKS,CANCIONES
 LiteralText,TRADE,COMERCIO
 LiteralText,transform to,transformar en
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?
-LiteralText,WAITING,ESPERANDO
 LiteralText,WARPING,DEFORMAR
 LiteralText,was killed,fue asesinado
-LiteralText,was strangled,fue estrangulado
 LiteralText,weakness to,debilidad a
 LiteralText,weight,peso
 LiteralText,when afflicted,cuando está afligido
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,SENTIDO INCORRECTO
 LiteralText,"You are playing as anonymous, please register!","Estás jugando de manera anónima, ¡por favor regístrate!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Puedes BUSCAR puertas secretas usando el botón del OJO.
 LiteralText,Your current movement and action speed in squares per second.,Tu velocidad de movimiento actual en número de cuadrados por segundo.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Tus opiniones son valoradas e influencian mis planes de desarrollos futuros.
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOLÓGICOS
 LiteralText,zZz,zZz

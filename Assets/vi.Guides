@@ -328,12 +328,14 @@
 
 # Enchantment; Cường hóa
 . Weapons and armour have a modifier that can be changed with enchantment magic.; Vũ khí và áo giáp sẽ có một công cụ thay đổi chỉ số bằng phép thuật cường hóa.
-. The modifier is limited to between {Min} and {Max}.; Chỉ số sẽ được giới hạn trong khoảng từ {Thấp nhất} đến {Cao nhất}.
 . A modifier of +0 is a normal, mundane item.; chỉ số +0 có nghĩa là một vật phẩm bình thường,thuộc về thế gian.
 . Modifiers on armour apply to your defence score.; Các chỉ số trên áo giáp sẽ áp dụng cho điểm phòng thủ của bạn.
 . Modifiers on weapons apply to your attack and damage scores.; Các chỉ số trên vũ khí áp dụng cho điểm tấn công và sát thương của bạn.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Vật phẩm sẽ bị phá hủy nếu bạn cố gắng thay đổi chỉ số ngoài {Thấp nhất} hoặc {Cao nhất}.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Các vật phẩm cổ vật có thể được nâng cấp lên đến {Chỉ số} và sẽ đặt lại về 0 nếu vượt quá mức chỉ số đó.
+/
+. The {grade} items are limited to between {Min} and {Max}.; Chỉ số {grade} sẽ được giới hạn trong khoảng từ {Thấp nhất} đến {Cao nhất}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Chỉ số {grade} vật có thể được nâng cấp lên đến {Chỉ số} và sẽ đặt lại về 0 nếu vượt quá mức chỉ số đó.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Vật {grade} phẩm sẽ bị phá hủy nếu bạn cố gắng thay đổi chỉ số ngoài quá giới hạn của nó.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Các vật phẩm cũng có thể được cường hóa như phù phép một chiếc còi thiếc thành một chiếc còi ma thuật.
 
 # Punishments; Hình phạt

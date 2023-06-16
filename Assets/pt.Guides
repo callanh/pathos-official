@@ -328,12 +328,14 @@
 
 # Enchantment; Encantamento
 . Weapons and armour have a modifier that can be changed with enchantment magic.; Armas e armaduras têm um modificador que pode ser alterado com magia de encantamento.
-. The modifier is limited to between {Min} and {Max}.; O modificador é limitado entre {Min} e {Max}.
 . A modifier of +0 is a normal, mundane item.; Um modificador de +0 é um item mundano, normal.
 . Modifiers on armour apply to your defence score.; Modificadores em armaduras são aplicados no valor de defesa.
 . Modifiers on weapons apply to your attack and damage scores.; Modificadores em armas são aplicados nos valores de ataque e dano.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Um item será destruído se você tentar mudar seu modificador além de {Min} ou {Max}.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Artefatos podem ser encantados até {Modifier} e vão resetar para 0+ quando esse valor for excedido.
+/
+. The {grade} items are limited to between {Min} and {Max}.; O {grade} modificador é limitado entre {Min} e {Max}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; O {grade} podem ser encantados até {Modifier} e vão resetar para 0+ quando esse valor for excedido.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; O {grade} item será destruído se você tentar mudar seu modificador além.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Itens também podem ser melhorados como ao se encantar um apito de lata em um apito mágico.
 
 # Punishments; Punições

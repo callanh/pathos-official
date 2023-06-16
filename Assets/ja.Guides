@@ -328,12 +328,14 @@
 
 # Enchantment; 魔法付与
 . Weapons and armour have a modifier that can be changed with enchantment magic.; 武器と防具には修正値があり、魔力付与の巻物や恩恵によって増減します。
-. The modifier is limited to between {Min} and {Max}.; 修正値は{Min}から{Max}に制限されています。（アーティファクトを除く）
 . A modifier of +0 is a normal, mundane item.; 修正値が+0のアイテムは、通常の強化されていない状態を指します。
 . Modifiers on armour apply to your defence score.; 防具の修正値は防御値に影響します。
 . Modifiers on weapons apply to your attack and damage scores.; 武器の修正値は攻撃値とダメージに影響します。
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; 修正値が{Min}未満または{Max}を超えるように強化しようとすると、アイテムは破壊されてしまいます。
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; アーティファクトは{Modifier}まで強化することができ、それを超えて強化しようとすると修正値が0に戻ります。
+/
+. The {grade} items are limited to between {Min} and {Max}.;
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.;
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 錫のホイッスルを魔法のホイッスルにするなど、アイテムをアップグレードすることもできます。
 
 # Punishments; 天罰

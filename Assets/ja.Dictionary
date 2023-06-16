@@ -2155,6 +2155,9 @@ GenderName,neuter,中性
 GenderName,non-binary,その他
 GenerationType,module,カスタムMOD
 GenerationType,quest,クエストスタジオ
+GradeName,artifact,アーティファクト
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,ひんやりとした石の表面は見事に加工されているが、傷と時の流れははっきりと刻み込まれている。
 GroundName,chasm,がけ穴
 GroundName,dirt floor,土の床
@@ -3093,7 +3096,6 @@ LiteralText,abolition of firearms,銃器排除令！
 LiteralText,ABOUT,Pathosについて
 LiteralText,About Pathos,Pathosについて
 LiteralText,Abyss,地獄の深淵
-LiteralText,accelerated animations,アニメーションを加速する
 LiteralText,accelerated resting,休憩中に加速する
 LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
@@ -3107,7 +3109,6 @@ LiteralText,ALL,すべて
 LiteralText,ALL AT ONCE,一斉に
 LiteralText,always,常に
 LiteralText,AMBIENT SOUNDS,環境音
-LiteralText,AMMO,弾薬
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
 LiteralText,anatomy,形態
@@ -3121,10 +3122,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,このキャラクターの冒険を諦めますか？
 LiteralText,ARE YOU SURE?,本当によろしいですか？
 LiteralText,area of effect,効果範囲
-LiteralText,artifact,アーティファクト
 LiteralText,ARTIFACTS,アーティファクト
 LiteralText,ASCEND TO PREVIOUS LEVEL,1つ上の階へ昇る
-LiteralText,asleep,睡眠状態
 LiteralText,assets,アイテム
 LiteralText,ATMOSPHERE,環境音
 LiteralText,attack modifier,攻撃値修正
@@ -3150,8 +3149,6 @@ LiteralText,beta discussions,ベータ版に関する意見交換
 LiteralText,Black background,背景を黒くする
 LiteralText,Black Market,闇市場
 LiteralText,blasphemy,冒涜
-LiteralText,blessed,祝福された
-LiteralText,BLESSED,祝福された
 LiteralText,BLINK,転位
 LiteralText,Blink which direction?,どの方向に転位する？
 LiteralText,block,障害物
@@ -3170,7 +3167,6 @@ LiteralText,BROKEN,壊れた
 LiteralText,burst rate,連射
 LiteralText,BUY,買う
 LiteralText,BUY ALL,全て買う
-LiteralText,by Callan Hodgskin,Callan Hodgskinより
 LiteralText,CANCEL,取消
 LiteralText,cancellation,魔法除去
 LiteralText,CANCELLED,取り消した
@@ -3194,8 +3190,6 @@ LiteralText,Character,キャラクター
 LiteralText,CHARACTER,キャラクター
 LiteralText,characters,キャラクター
 LiteralText,charged items,使用回数があるアイテム
-LiteralText,charm,魅了
-LiteralText,CHARMED,魅了された
 LiteralText,Chat on Discord,Discordでチャット
 LiteralText,check for updates?,アップデートかあるか確認しますか？
 LiteralText,checking for updates,アップデートの確認中
@@ -3209,7 +3203,6 @@ LiteralText,click to retry,クリックして再試行
 LiteralText,Click to send detected issues to the author,検出された問題をメールします
 LiteralText,CLOSE,閉じる
 LiteralText,closed,閉じている
-LiteralText,CLOSED,閉まっている
 LiteralText,Coding on Medium,Mediumの記事を読む
 LiteralText,coins,コイン
 LiteralText,companion,仲間
@@ -3251,17 +3244,13 @@ LiteralText,CREATE WALL,壁を作成
 LiteralText,Create which direction?,どの方向に作成する？
 LiteralText,CREDITS,クレジット
 LiteralText,CROP,トリミング
-LiteralText,cursed,呪われた
 LiteralText,CURSED,呪われている
 LiteralText,CUSTOM,カスタム
 LiteralText,CUSTOM HERO,冒険者をカスタマイズ
 LiteralText,CUSTOM MODULES,MODファイル
-LiteralText,DAMAGE,損傷
 LiteralText,dark,暗闇
-LiteralText,dark-hidden,目以外で認識している
 LiteralText,DEAD END,死に終わり
 LiteralText,death,死
-LiteralText,DEATH,死
 LiteralText,deathray,殺人光線
 LiteralText,decapitation,首はね
 LiteralText,DECEASED,死亡
@@ -3322,7 +3311,6 @@ LiteralText,downgrade to,ダウングレード
 LiteralText,downloading update,アップデートをダウンロード中
 LiteralText,drop,ドロップ
 LiteralText,DROP,床に置く
-LiteralText,DUAL,両手
 LiteralText,DUAL WIELD,二刀流
 LiteralText,Dungeon,ダンジョン
 LiteralText,duration,プレー時間
@@ -3353,7 +3341,6 @@ LiteralText,ESCAPE,脱出する
 LiteralText,escape traps,罠から逃れる
 LiteralText,escape with,回避方法
 LiteralText,escaped,脱出した
-LiteralText,ESCAPED,脱出した
 LiteralText,ESSENCE,エッセンス
 LiteralText,evolution,成長
 LiteralText,Examine which object?,どのアイテムを調べる？
@@ -3364,7 +3351,6 @@ LiteralText,EXPAND,拡張
 LiteralText,EXPEL,吐き出す
 LiteralText,experience,経験
 LiteralText,EXPERIENCE,経験
-LiteralText,EXPLODED,爆発した
 LiteralText,explosion,爆発
 LiteralText,EXPORT,エクスポート
 LiteralText,extinctions,根絶されたモンスター
@@ -3380,7 +3366,6 @@ LiteralText,FEATURES,設備
 LiteralText,FEED,餌付け
 LiteralText,FEEDBACK,フィードバック
 LiteralText,FILES,ファイル
-LiteralText,Find out what is coming in the next update.,次のアップデートで何が起きているのか調べてください。
 LiteralText,fixed range,射程距離
 LiteralText,FIZZLE,失敗
 LiteralText,Floor,床
@@ -3425,10 +3410,8 @@ LiteralText,HIRE,雇う
 LiteralText,HORDES,群れ
 LiteralText,HOST,ホスト
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
-LiteralText,HUH?,え？
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,冒険を楽しんで頂けたでしょうか。どうぞ感想や提案をお寄せください。
 LiteralText,identified items,識別されたアイテム
-LiteralText,IDENTIFY,識別
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,床の上のすべてのアイテムを識別
 LiteralText,ILLITERATE,読めない
 LiteralText,illusion,幻影
@@ -3441,7 +3424,6 @@ LiteralText,Import a file,ファイル読み込み
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,両手で
 LiteralText,incarceration,硬直化
-LiteralText,increase,増加する
 LiteralText,INCREASE,増加する
 LiteralText,INDEX,索引
 LiteralText,individual crafting,1つずつ制作する
@@ -3454,7 +3436,6 @@ LiteralText,influenced actions,能力値が必要になる行動
 LiteralText,INSCRIBE,書き込む
 LiteralText,INSCRIBE ITEM,アイテムに書き込む
 LiteralText,inscription?,メッセージ?
-LiteralText,INSTRUCT,指示する
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
 LiteralText,insulation,絶縁
@@ -3493,7 +3474,6 @@ LiteralText,light,灯り
 LiteralText,LIGHT,灯り
 LiteralText,light radius,照明範囲
 LiteralText,limits,上限
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.",iOS、Android、Windowsなど、サポートされているすべてのプラットフォームへのリンク。
 LiteralText,LIST,リスト
 LiteralText,lit,点灯
 LiteralText,LIVING,生者
@@ -3511,7 +3491,6 @@ LiteralText,lose skill,スキル減少
 LiteralText,Lost Chambers,古の実験室
 LiteralText,LOW MANA,マナが足りない
 LiteralText,Ludios Cache,ローディウスの金庫室
-LiteralText,MAIN,主に
 LiteralText,MAIN WIELD,利き手に装備
 LiteralText,mana,マナ
 LiteralText,MANA,マナ
@@ -3527,7 +3506,6 @@ LiteralText,MIMIC,ミミック
 LiteralText,mimicking,擬態中の
 LiteralText,Mines,鉱山
 LiteralText,Minetown,鉱山の街
-LiteralText,missile,ミサイル
 LiteralText,modifier,修正値
 LiteralText,MOUNT,騎乗
 LiteralText,Mount which direction?,どれに騎乗する？
@@ -3577,14 +3555,12 @@ LiteralText,OR,もしくは
 LiteralText,ORIGINAL,オリジナル
 LiteralText,OVERRIDE,変更後
 LiteralText,OVERVIEW,全階層
-LiteralText,PACIFIED,静めた
 LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
 LiteralText,passage,通路
 LiteralText,passive (no attacking),受動的（攻撃しない）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathosは最大4人までのプレーヤーとの分割スクリーン共同モードで遊ぶことができます。
 LiteralText,pathos development @ paypal,Pathos開発の為に、PayPal
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathosは無料です。有志が愛情を込めて開発しています。
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathosは冒険の読み込みに失敗しました。問題の調査のため、開発者へセーブデータを送信して頂けませんでしょうか。場合によってはデータを修復したり、アプリの不具合を改修できるかもしれません。ご理解とご協力をお願いします。
 LiteralText,Pathos might be the next evolution of Nethack.,PathosはNethackの新たな発展形だと言えるかもしれません。
 LiteralText,penalty,ペナルティ
@@ -3608,7 +3584,6 @@ LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
 LiteralText,porter,の入った捕獲袋
 LiteralText,PRAY,祈る
-LiteralText,PRAYING,祈っている
 LiteralText,preservation,保存
 LiteralText,prevent revenant levels,黄泉帰りのプレーヤーを出さない
 LiteralText,prisoner,囚人
@@ -3664,10 +3639,8 @@ LiteralText,resident?,住人?
 LiteralText,resistances,耐性
 LiteralText,RESISTS,抵抗した
 LiteralText,Rest,休憩
-LiteralText,REST,休憩
 LiteralText,Rest how many turns?,何ターン休憩する？
 LiteralText,restarting to update,アップデートのために再起動しています
-LiteralText,RESTING,休む
 LiteralText,RESTORED,復元済み
 LiteralText,RESURRECT,復活させる
 LiteralText,Resurrect and continue,復活して冒険を続ける
@@ -3698,7 +3671,6 @@ LiteralText,SCRAP,分解
 LiteralText,SEALED,モンスターを生成しない
 LiteralText,Search,周囲を調査
 LiteralText,Search how many turns?,何ターン調査しますか？
-LiteralText,SEARCHING,調査
 LiteralText,secret,隠し扉
 LiteralText,SECRET,秘密の
 LiteralText,seed,シード
@@ -3720,13 +3692,11 @@ LiteralText,SET DIFFICULTY,難易度を設定
 LiteralText,set starting location,開始地点を選択
 LiteralText,SETTINGS,設定
 LiteralText,sfx volume,効果音のボリューム
-LiteralText,Share your tragic and heroic stories with other players.,あなたの悲劇と英雄譚を他のプレイヤーと分かち合いましょう。
 LiteralText,SHARE//exchange,交換
 LiteralText,SHARE//publish,シェア
 LiteralText,SHOPS,店
 LiteralText,Show debugging information,デバッグ情報を表示する
 LiteralText,Show time clock,時計を表示する
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,いろんな人たちにPathosを紹介してくださるととてもありがたいです。
 LiteralText,SHRINES,社
 LiteralText,SIGN-IN,サインイン
 LiteralText,size,サイズ
@@ -3782,7 +3752,6 @@ LiteralText,terrain,地形
 LiteralText,The attack score is your aptitude for hitting an opponent.,攻撃値は相手に対し有効打を与える能力を示す。
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,史上最高のゲームを形作る要素を留めつつ、ゲームメカニズムの向上に挑戦しています。
 LiteralText,The defence score is how protected you are from being hit by an opponent.,防御値は相手の攻撃に対しどれだけ守りを固めているかを示す。
-LiteralText,There are no known polymorphs,変化できる対象が無い
 LiteralText,There is a new update available!,新しいアップデートがあります！
 LiteralText,there is nothing to place here,置けるものは無い
 LiteralText,there is nothing to remove here,取る物は無い
@@ -3800,7 +3769,6 @@ LiteralText,TOO HEAVY,重すぎる
 LiteralText,TOO HUNGRY,空腹すぎる
 LiteralText,TOO SMALL,小さすぎる
 LiteralText,TOO WEAK,弱すぎる
-LiteralText,touch,触る
 LiteralText,TRACKS,音楽
 LiteralText,TRADE,売買
 LiteralText,transform to,変身可能
@@ -3855,10 +3823,8 @@ LiteralText,VOLATILES,
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
-LiteralText,WAITING,待っています
 LiteralText,WARPING,ダンジョン変容
 LiteralText,was killed,殺された
-LiteralText,was strangled,首を絞められた
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
 LiteralText,when afflicted,災難に苛まれている時
@@ -3877,7 +3843,6 @@ LiteralText,WRONG WAY,逆方向
 LiteralText,"You are playing as anonymous, please register!",あなたの名前を登録し、名誉の殿堂にその名を刻みましょう！
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,目のマークのボタン（調査モードのオン・オフ）を使って隠し扉を探してみることをおすすめします。
 LiteralText,Your current movement and action speed in squares per second.,移動と動作の速度（1マス/秒）
-LiteralText,Your feedback is appreciated and will influence my development plans.,いただいた貴重なご意見は、このゲームの開発にとって大きな指針となります。
 LiteralText,ZOOM,ズーム
 LiteralText,ZOOS,モンスター部屋
 LiteralText,zZz,zzz

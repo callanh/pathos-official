@@ -328,12 +328,14 @@
 
 # Enchantment; Zaklinanie
 . Weapons and armour have a modifier that can be changed with enchantment magic.; Broń i zbroja mają modyfikator, który można zmienić za pomocą magii zaklęć .
-. The modifier is limited to between {Min} and {Max}.; Modyfikator jest ograniczony do od {Min} do {Max} .
 . A modifier of +0 is a normal, mundane item.; Modyfikator +0 jest normalnym, przyziemnym przedmiotem .
 . Modifiers on armour apply to your defence score.; Modyfikatory na zbroi odnoszą się do twojego wyniku obrony .
 . Modifiers on weapons apply to your attack and damage scores.; Modyfikatory broni odnoszą się do twoich ataków i obrażeń .
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; Przedmiot zostanie zniszczony, jeśli spróbujesz zmienić modyfikator powyżej {Min} lub {Max} .
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;Artefakty mogą być zaczarowane do {Modifier} i zostaną zresetowane do zera, jeśli zostanie on przekroczony .
+/
+. The {grade} items are limited to between {Min} and {Max}.; Modyfikator {grade} jest ograniczony do od {Min} do {Max} .
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Przedmiot {grade} mogą być zaczarowane do {Modifier} i zostaną zresetowane do zera, jeśli zostanie on przekroczony .
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Przedmiot {grade} zostanie zniszczony, jeśli spróbujesz zmienić modyfikator powyżej jego limitu .
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Przedmioty można również ulepszyć, takie jak urozmaicenie gwizdkiem cyny w magiczny gwizdek .
 
 # Punishments; Kary
