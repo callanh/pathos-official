@@ -1643,7 +1643,7 @@ namespace Pathos
                   break;
 
                 default:
-                  Debug.Fail($"Symbol not handled: {AtticSymbol} {(int)AtticSymbol}");
+                  Debug.Fail($"Attic symbol not handled: {AtticSymbol} {(int)AtticSymbol}");
 
                   Generator.PlaceFloor(AtticSquare, SourceGround);
                   break;
@@ -2785,7 +2785,7 @@ namespace Pathos
             {
               if (AtticBuilder.Length > 0)
               {
-                var AtticGrid = Generator.LoadSpecialGrid(AtticBuilder.ToString().Replace(Environment.NewLine, "\r\n")); // NOTE: Android newlines need to be converted to watch LoadSpecialGrid expects.
+                var AtticGrid = Generator.LoadSpecialGrid(AtticBuilder.ToString());
                 AtticTemplateList.Add(new AtticTemplate(AtticGrid));
 
                 AtticBuilder.Clear();
@@ -3613,7 +3613,7 @@ namespace Pathos
                   break;
 
                 default:
-                  Debug.Fail($"Symbol not handled: {MinesSymbol} {(int)MinesSymbol}");
+                  Debug.Fail($"Mines symbol not handled: {MinesSymbol} {(int)MinesSymbol}");
 
                   Generator.PlaceFloor(MinesSquare, MinesGround);
                   break;
@@ -4354,7 +4354,7 @@ namespace Pathos
                 break;
 
               default:
-                Debug.Fail($"Symbol not handled: {SokobanSymbol} {(int)SokobanSymbol}");
+                Debug.Fail($"Sokoban symbol not handled: {SokobanSymbol} {(int)SokobanSymbol}");
 
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
                 break;
@@ -4722,7 +4722,7 @@ namespace Pathos
               break;
 
             default:
-              Debug.Fail($"Symbol not handled: {FortSymbol} {(int)FortSymbol}");
+              Debug.Fail($"Fort symbol not handled: {FortSymbol} {(int)FortSymbol}");
 
               Generator.PlaceFloor(FortSquare, FortRoomGround);
               break;
@@ -4846,7 +4846,7 @@ namespace Pathos
               break;
 
             default:
-              Debug.Fail($"Symbol not handled: {CacheSymbol} {(int)CacheSymbol}");
+              Debug.Fail($"Cache symbol not handled: {CacheSymbol} {(int)CacheSymbol}");
 
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
               break;

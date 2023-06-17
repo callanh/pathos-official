@@ -141,8 +141,7 @@
 
   <!-- Automatically regenerates the Resources files -->
   <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
-    <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
-    <Exec Condition=" '$(PathosDeveloper)' != 'OpenSource' " Command="&quot;$(ProjectDir)..\..\..\Forge\Inv\InvGen\bin\Debug\net48\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
+    <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
   
   <!-- Make the Atlases and Albums -->

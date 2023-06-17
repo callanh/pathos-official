@@ -17,13 +17,16 @@ namespace Pathos
     {
       void AddRumours(bool Truth, string MessageText)
       {
-        foreach (var Message in MessageText.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries))
+        foreach (var Message in MessageText.SplitLines())
         {
-          Register.Add(R =>
+          if (!string.IsNullOrWhiteSpace(Message))
           {
-            R.Truth = Truth;
-            R.Message = Message;
-          });
+            Register.Add(R =>
+            {
+              R.Truth = Truth;
+              R.Message = Message;
+            });
+          }
         }
       }
 
