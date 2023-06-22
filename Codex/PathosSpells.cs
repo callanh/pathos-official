@@ -2770,6 +2770,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             S.Apply.Locking();
+            S.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, Dice.One));
           },
           E =>
           {
@@ -2777,6 +2778,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             E.Apply.Locking();
+            E.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d2()));
           },
           M =>
           {
@@ -2784,6 +2786,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             M.Apply.Locking();
+            M.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d4()));
           },
           C =>
           {
@@ -2791,6 +2794,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             C.Apply.Locking();
+            C.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 2.d4()));
           }
         );
       });

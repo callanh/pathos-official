@@ -11558,6 +11558,12 @@ namespace Pathos
              .SetObjects()
              .SetAudibility(1);
           Use.Apply.Locking();
+          Use.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.WithSourceSanctity
+          (
+            B => B.ApplyTransient(Properties.paralysis, 3.d6()),
+            U => U.ApplyTransient(Properties.paralysis, 2.d6()),
+            C => C.ApplyTransient(Properties.quickness, 6.d6())
+          ));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
