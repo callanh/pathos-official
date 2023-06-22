@@ -332,9 +332,9 @@
 . Modifiers on armour apply to your defence score.; 防具上的附魔會加到你的防禦力裡。
 . Modifiers on weapons apply to your attack and damage scores.; 武器上的附魔會加到你的攻擊力和傷害裡。
 /
-. The {grade} items are limited to between {Min} and {Max}.; 附{grade}魔的等級只能是{Min}到{Max}。
-. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 如果你試圖將附魔提高或者降低到以外，這個{grade}道具會爆炸。
-. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 附{grade}可以被最高附魔到{Modifier}，如果超過則會被重置為0
+. The {grade} items are limited to between {Min} and {Max}.; 「{grade}」級別的物品，附魔等級的限制範圍是從{Min}到{Max}。
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; {grade}物品的最高附魔等級為{Modifier}，再試圖強化它會將附魔重置為+0。
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 如果你試圖將{grade}物品的附魔提高或者降低到限制以外，這個物品會爆炸。
 /
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 有些道具也可以升級，比如錫制口哨可以升級到魔法哨。
 
