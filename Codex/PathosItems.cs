@@ -6753,6 +6753,10 @@ namespace Pathos
             C => C.ApplyTransient(Properties.paralysis, 1.d10() + 160)
           );
         });
+        I.SetImpact(Sonics.broken_glass, A =>
+        {
+          A.ApplyTransient(Properties.paralysis, 1.d10() + 20);
+        });
       });
 
       potion_of_polymorph = AddPotion("potion of polymorph", I =>

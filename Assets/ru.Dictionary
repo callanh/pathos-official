@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Миф
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Мифрильный доспех с тонким и изящным покрытием.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Мифрильный доспех с тонким и блестящим покрытием.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Эта классическая часть наряда волшебника — остроконечная шляпа украшенная луной и звёздами.
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,адамантитовый посох
 AppearanceName,agate ring,агатовое кольцо
 AppearanceName,aluminium wand,алюминиевая палочка
 AppearanceName,angled poleaxe,выпуклая секира
@@ -837,7 +837,7 @@ CounterName,captures,пойманный
 CounterName,casts,заклинания
 CounterName,chants,распевания
 CounterName,constructs,создания
-CounterName,copies,
+CounterName,copies,копий сделано
 CounterName,crafts,мастерить
 CounterName,decapitations,обезглавливания
 CounterName,digs,копания
@@ -856,7 +856,7 @@ CounterName,jumps,прыжки
 CounterName,kicks,удары
 CounterName,lifesaves,спасение жизни
 CounterName,mimics,мимикрирования
-CounterName,mounts,
+CounterName,mounts,существ осёдлано
 CounterName,moves,движения
 CounterName,opens,открытия
 CounterName,packs,консервирования
@@ -1013,14 +1013,14 @@ EffectType,convert boulder,превращает валун
 EffectType,convert door,переводит дверь
 EffectType,convert fixture,переводит приспособление
 EffectType,convert floor,переводит пол в
-EffectType,convert spill,
+EffectType,convert spill,переводит завесу
 EffectType,convert wall,переводит стену
 EffectType,create boulder,создаёт валун
 EffectType,create fixture,создаёт приспособление
 EffectType,create golem,создаёт голема
 EffectType,create horde,создаёт орду
 EffectType,create nook,создаёт тайную
-EffectType,create spill,
+EffectType,create spill,создаёт завесу
 EffectType,create trap,создаёт ловушку
 EffectType,create wall,создаёт стену
 EffectType,decapitate,отрубает голову
@@ -1038,7 +1038,7 @@ EffectType,enchant asset,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
-EffectType,extinguish spill,
+EffectType,extinguish spill,потушить завесу
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -1067,7 +1067,7 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
-EffectType,remove spill,
+EffectType,remove spill,убирает завесу
 EffectType,remove transient,снимает временное
 EffectType,replicate asset,копирует ценность
 EffectType,restock,пополняет запасы
@@ -1169,7 +1169,7 @@ EntityName,abbot,аббат
 EntityName,acid blob,кислотный пузырь
 EntityName,acid worm,кислотный червь
 EntityName,acolyte,прислужник
-EntityName,adamantine golem,
+EntityName,adamantine golem,адамантитовый голем
 EntityName,adult black dragon,взрослый чёрный дракон
 EntityName,adult blue dragon,взрослый синий дракон
 EntityName,adult deep dragon,взрослый глубинный дракон
@@ -2058,7 +2058,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} на чём?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} в каком направлении?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} {FeatureName} какой предмет?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} осёдлан {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} накладывает
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2130,7 +2130,7 @@ FormatText,unless resists {ElementName},если не сопротивляетс
 FormatText,unless target has {PropertyName},если цель не имеет {PropertyName}
 FormatText,versus {Something},против {Something}
 FormatText,when {Chance},при {Chance}
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},когда {GROUNDNAME}
 FormatText,when {ITEMNAME},когда {ITEMNAME}
 FormatText,when {KINDNAMES},когда {KINDNAMES}
 FormatText,when {MATERIALNAME},когда {MATERIALNAME}
@@ -2156,8 +2156,8 @@ GenderName,non-binary,небинарный пол
 GenerationType,module,модуль
 GenerationType,quest,квест
 GradeName,artifact,артефакт
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,необычный
+GradeName,standard,обычный
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Прохладная каменная поверхность создана с безукоризненным мастерством, но изувечена разными повреждениями и временем."
 GroundName,chasm,пропасть
 GroundName,dirt floor,земляной пол
@@ -2225,7 +2225,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Т�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Набор предметов для консервирования и упаковки трупов, состоящий из пустых банок и инструментов для разделки."
 ItemDescription,A compact hand-held firearm.,Компактное огнестрельное оружие.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Изогнутый однолезвийный клинок, нередко используемый кавалерией, особенно эффективен против существ из преисподней."
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,A curved single-edged blade often used by cavalry.,"Изогнутый однолезвийный клинок, нередко используемый кавалерией."
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",Изогнутый жёлтый фрукт является отличным источником клетчатки.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Плоское метательное оружие из дерева, часто используемое для охоты."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",Плоский круглый торт. Представьте себе — готовится на сковороде.
@@ -2349,19 +2349,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Крохотные металлические шипы, брошенные на землю препятствуют передвижению."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Крылатые сандалии из нерушимого золота, которые летают быстро и бесшумно."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах этим в сторону стены создаст большой тоннель.
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine arrow,адамантитовая стрела
+ItemName,adamantine axe,адамантитовый топор
+ItemName,adamantine bow,адамантитовый лук
+ItemName,adamantine dagger,адамантитовый кинжал
+ItemName,adamantine greataxe,адамантитовый боевой топор
+ItemName,adamantine greatsword,адамантитовый большой двуручный меч
+ItemName,adamantine long sword,адамантитовый длинный меч
+ItemName,adamantine plate mail,адамантитовые латы
+ItemName,adamantine rapier,адамантитовая рапира
+ItemName,adamantine sabre,адамантитовая сабля
+ItemName,adamantine short sword,адамантитовый короткий меч
+ItemName,adamantine spear,адамантитовое копье
+ItemName,adamantine two-handed sword,адамантитовый двуручный меч
 ItemName,agate,агат
 ItemName,aklys,аклис
 ItemName,alchemy smock,алхимический халат
@@ -2484,7 +2484,7 @@ ItemName,brass knuckles,кастет
 ItemName,broadsword,палаш
 ItemName,bronze bell,бронзовый колокольчик
 ItemName,bronze plate mail,бронзовые латы
-ItemName,Brumstyk,
+ItemName,Brumstyk,Брумстик
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
 ItemName,caltrops,шипы
@@ -2683,7 +2683,7 @@ ItemName,meat stick,мясная палочка
 ItemName,meatball,мясной шарик
 ItemName,melon,дыня
 ItemName,Mirrorbright,Зеркальный Блеск
-ItemName,Miserus,
+ItemName,Miserus,Мизерус
 ItemName,mithril arrow,мифрильная стрела
 ItemName,mithril barding,мифрильный бард
 ItemName,mithril battle-axe,мифрильный боевой топор
@@ -2824,7 +2824,7 @@ ItemName,rubber hose,резиновый шланг
 ItemName,ruby,рубин
 ItemName,Ruby Key,Рубиновый ключ
 ItemName,Runesword,Рунный меч
-ItemName,sabre,
+ItemName,sabre,сабля
 ItemName,sack,мешок
 ItemName,saddle,седло
 ItemName,sai,сай
@@ -3112,7 +3112,7 @@ LiteralText,AMBIENT SOUNDS,ЗВУКИ ОКРУЖЕНИЯ
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
 LiteralText,anatomy,анатомия
-LiteralText,animate mount,
+LiteralText,animate mount,оживление ездовым существом
 LiteralText,animate revenant,оживление восставшие
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,против часовой стрелки на 90 градусов
@@ -3238,7 +3238,7 @@ LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
 LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
 LiteralText,CREATE SHRINE,СОЗДАТЬ ХРАМ
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,СОЗДАТЬ ЗАВЕСУ
 LiteralText,CREATE TRAP,СОЗДАТЬ ЛОВУШКУ
 LiteralText,CREATE WALL,СОЗДАТЬ СТЕНУ
 LiteralText,Create which direction?,В каком направлении создать?
@@ -3286,11 +3286,11 @@ LiteralText,Disable continue button,Отключить кнопку 'продо�
 LiteralText,disable haptic feedback,отключить вибрацию
 LiteralText,Disable idle animations,Отключить анимацию ожидания
 LiteralText,Disable introduction boom,Отключить звуковой эффект при входе игры
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,отключить фильтры экрана
 LiteralText,Disable online services,Отключить онлайн-сервисы
 LiteralText,Disable pitch shifting,Отключить изменение тона звука
 LiteralText,Disable spacebar real-time toggle,Отключить клавишу пробел для реального времени
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,Отключить жесты свайпа
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
@@ -3436,7 +3436,7 @@ LiteralText,influenced actions,влияние на действия
 LiteralText,INSCRIBE,НАНЕСЕНИЕ
 LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
-LiteralText,instruct each character,
+LiteralText,instruct each character,Приказы отдельным персонажам
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,insulation,изоляция
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
@@ -3529,7 +3529,7 @@ LiteralText,no allies,нет союзников
 LiteralText,no ambient sounds,нет окружающих звуков
 LiteralText,No appropriate items available,Нет соответствующих доступных вещей
 LiteralText,no available knowledge,нет доступных знаний
-LiteralText,no records found,
+LiteralText,no records found,Данных не найдено
 LiteralText,no resistances,нет сопротивляемости
 LiteralText,no talents,нет талантов
 LiteralText,no transient effects,нет временных эффектов
@@ -3652,7 +3652,7 @@ LiteralText,REVEAL,РАСКРЫТЬСЯ
 LiteralText,REVEAL ALL MAPS,ОТКРЫТЬ ВСЕ КАРТЫ
 LiteralText,REVEAL THIS MAP,ОТКРЫТЬ ЭТУ КАРТУ
 LiteralText,revealed,обнаруженная
-LiteralText,revenant,
+LiteralText,revenant,восставший
 LiteralText,REVERT,ВЕРНУТЬ
 LiteralText,RIGHT RING,НА ПРАВУЮ РУКУ
 LiteralText,rigid,неподвижный
@@ -3819,7 +3819,7 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,ПРЕПЯТСТВИЯ
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
@@ -3846,14 +3846,14 @@ LiteralText,Your current movement and action speed in squares per second.,Ваш
 LiteralText,ZOOM,МАСШТАБ
 LiteralText,ZOOS,ЗООПАРКИ
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,местность
 LocalityName,level,уровень
 LocalityName,map,карта
 LocalityName,site,место
 LocalityName,square,площадь
 LocalityName,world,мир
 LocalityName,zone,зона
-MaterialName,adamantine,
+MaterialName,adamantine,адамантит
 MaterialName,air,воздух
 MaterialName,animal,существо
 MaterialName,bone,кость
@@ -3892,7 +3892,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
 MotionPastName,constructed,создал
-MotionPastName,copied,
+MotionPastName,copied,скопировано
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,испил
@@ -3901,7 +3901,7 @@ MotionPastName,emptied,опустошил
 MotionPastName,exchanged,заменил
 MotionPastName,flashed,ослепил
 MotionPastName,inscribed,нанёс
-MotionPastName,mounted,
+MotionPastName,mounted,оседлал
 MotionPastName,opened,открыл
 MotionPastName,packed,заполнил
 MotionPastName,played,сыграл
@@ -3926,7 +3926,7 @@ MotionPresentName,anoint,помазание
 MotionPresentName,capture,поймать
 MotionPresentName,chant,распевать
 MotionPresentName,construct,создать
-MotionPresentName,copy,
+MotionPresentName,copy,скопировать
 MotionPresentName,dig,копать
 MotionPresentName,dip,окунуть
 MotionPresentName,divine,определить духовность
@@ -3936,7 +3936,7 @@ MotionPresentName,empty,опустошить
 MotionPresentName,exchange,заменить
 MotionPresentName,flash,вспышка
 MotionPresentName,inscribe,нанести
-MotionPresentName,mount,
+MotionPresentName,mount,оседлать
 MotionPresentName,open,открыть
 MotionPresentName,pack,заполнить
 MotionPresentName,play,играть
@@ -4650,10 +4650,10 @@ TraversalPastName,travelled,переместился
 TraversalPresentName,ascend,поднимается
 TraversalPresentName,descend,спускается
 TraversalPresentName,travel,перемещается
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,пламя
+VolatileName,electricity,электричество
+VolatileName,freeze,мороз
+VolatileName,steam,пар
 WallStructureName,illusionary,иллюзия
 WallStructureName,permanent,не рушимая
 WallStructureName,solid,твёрдая

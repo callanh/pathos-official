@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,ミス�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,ミスリル製の、細身で精巧に作られていそうな鎖帷子。
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,ミスリル製の、細身で光沢のある鎖帷子。
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,典型的な魔法使いのとんがり帽子。月と星の飾りがついている。
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,アダマンタインの竿
 AppearanceName,agate ring,めのうの指輪
 AppearanceName,aluminium wand,アルミの棒
 AppearanceName,angled poleaxe,角度のついた長斧
@@ -482,7 +482,7 @@ BlockName,gold boulder,金鉱石の巨塊
 BlockName,statue,石像
 BlockName,stone boulder,巨石
 BlockName,wooden barrel,木樽
-BoonDescription,Ask for a unicorn to join your party.,ユニコーンに仲間になるよう頼んでもらう。
+BoonDescription,Ask for a unicorn to join your party.,ユニコーンが仲間になるよう頼んでもらう。
 BoonDescription,Bless one item in your inventory or on the ground.,所持品または足元のアイテム1つを祝福してもらう。
 BoonDescription,Brew a random potion into your bottle of water.,水の小瓶を何かの小瓶にしてもらう。
 BoonDescription,Butcher a corpse into an easy to carry container.,死体を缶詰にしてもらう。
@@ -837,7 +837,7 @@ CounterName,captures,捕獲した回数
 CounterName,casts,呪文を使った回数
 CounterName,chants,詠唱した回数
 CounterName,constructs,組み立てた回数
-CounterName,copies,
+CounterName,copies,複写した回数
 CounterName,crafts,制作した回数
 CounterName,decapitations,首をはねた回数
 CounterName,digs,掘削した回数
@@ -856,7 +856,7 @@ CounterName,jumps,ジャンプした回数
 CounterName,kicks,ドアを蹴り開けた回数
 CounterName,lifesaves,lifesaveされた回数
 CounterName,mimics,擬態した回数
-CounterName,mounts,
+CounterName,mounts,騎乗した回数
 CounterName,moves,移動した回数
 CounterName,opens,開ける
 CounterName,packs,缶詰にした数
@@ -1013,14 +1013,14 @@ EffectType,convert boulder,巨塊を変換
 EffectType,convert door,扉を変換
 EffectType,convert fixture,設備を変換
 EffectType,convert floor,床を変換
-EffectType,convert spill,
+EffectType,convert spill,地形効果を変換
 EffectType,convert wall,壁を変換
 EffectType,create boulder,巨塊を生成
 EffectType,create fixture,設備を作成
 EffectType,create golem,ゴーレムを作成
 EffectType,create horde,群れを作成
 EffectType,create nook,隠し小路を作成
-EffectType,create spill,
+EffectType,create spill,地形効果が発生
 EffectType,create trap,罠を生成
 EffectType,create wall,壁を作成
 EffectType,decapitate,首はね
@@ -1038,7 +1038,7 @@ EffectType,enchant asset,アイテムの修正値
 EffectType,engulf,丸呑み
 EffectType,enlightenment,アイテムの知識を得る
 EffectType,exchange,交換する
-EffectType,extinguish spill,
+EffectType,extinguish spill,地形効果が霧散
 EffectType,gain level,レベルアップ
 EffectType,gain skill,スキルレベル上昇
 EffectType,genocide,根絶
@@ -1067,7 +1067,7 @@ EffectType,raise dead,蘇生
 EffectType,recall,仲間を呼び戻す
 EffectType,release,解放
 EffectType,remove curse,解呪
-EffectType,remove spill,
+EffectType,remove spill,地形効果が消滅
 EffectType,remove transient,一時的な状態の解除
 EffectType,replicate asset,アイテムを複製
 EffectType,restock,補充
@@ -1143,7 +1143,7 @@ EncumbranceName,stressed,重圧
 EncumbranceName,unencumbered,適正
 EngulfmentName,engulfed,呑み込み
 EngulfmentName,swallowed,丸呑み
-EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,短命ではあるがそこら中に住んでいる、大それた野心を抱きがちな中型の生き物。これといった特長はないがなめてかかると痛い目を見ることになる。
+EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,短命ではあるがそこら中に住んでいる、大それた野心を抱きがちな中型の生き物。これといった長所はないが、なめてかかると痛い目を見ることになる。
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",ほぼ透明かつ不定形の存在。しばしば人型の形状をとることで、どう見てもべちゃっとした血しょうのような物体でしかないその体に衣服をまとったり道具を使用したりすることを可能にしている。
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",世に交わることを極端に嫌う、はるか昔から存在する種族。彼らの恐るべき体格と筋力は、大量の肉と鉱物の食事で支えられている。
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
@@ -1169,7 +1169,7 @@ EntityName,abbot,僧院長
 EntityName,acid blob,酸のブロブ
 EntityName,acid worm,酸のワーム
 EntityName,acolyte,侍祭
-EntityName,adamantine golem,
+EntityName,adamantine golem,アダマンタインのゴーレム
 EntityName,adult black dragon,ブラックドラゴン
 EntityName,adult blue dragon,ブルードラゴン
 EntityName,adult deep dragon,ディープドラゴン
@@ -1196,7 +1196,7 @@ EntityName,ancient silver dragon,古代シルバードラゴン
 EntityName,ancient white dragon,古代ホワイトドラゴン
 EntityName,ancient yellow dragon,古代イエロードラゴン
 EntityName,angel,天使
-EntityName,animate object,生命を吹き込まれた物
+EntityName,animate object,生命付与 物体
 EntityName,ape,猿
 EntityName,Aphrodite,『アフロディーテ』
 EntityName,apprentice,見習い
@@ -1483,7 +1483,7 @@ EntityName,hill giant,丘の巨人
 EntityName,hill orc,丘のオーク
 EntityName,Hippocrates,『ヒポクラテス』
 EntityName,hobgoblin,ホブゴブリン
-EntityName,holy cleric,聖職者
+EntityName,holy cleric,神父
 EntityName,homunculus,ホムンクルス
 EntityName,horned devil,角の悪魔
 EntityName,horse,馬
@@ -1937,7 +1937,7 @@ FormatText,{CharacterName} broke {AssetName},{CharacterName}が{AssetName}を壊
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName}は{AssetName}以外の飛び道具を装備できない//{GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName}は腹一杯で食べきれず、貴重な栄養を無駄にした
 FormatText,{CharacterName} cannot grow up,{CharacterName}はこれ以上成長できない
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}は{DietName}のため{AssetName}を摂取することができない
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName}は{DietName}のため{AssetName}を摂取できない
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName}は宙に浮かんでいて{ObjectName}に届かない
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},{CharacterName}は{AssetName}を外すことができない//{GenderHis}
 FormatText,{CharacterName} cast {QualificationName} {SpellName},{CharacterName}は{QualificationName}の{SpellName}を唱えた
@@ -2058,7 +2058,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,どの方向に{Asse
 FormatText,{MotionPresentName} {AssetName} with which item?,どのアイテムに{AssetName}を使う？//{MotionPresentName}
 FormatText,{MotionPresentName} {FeatureName} which direction?,どの方向に{FeatureName}を{MotionPresentName}？
 FormatText,{MotionPresentName} which item on {FeatureName}?,どのアイテムを{FeatureName}で{MotionPresentName}？
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName}は{Steed:CharacterName}に騎乗した
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName}の{BlockName}
 FormatText,{QualificationName} cast,{QualificationName}による使用
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2069,7 +2069,7 @@ FormatText,{ServiceName} which item?,どのアイテムを{ServiceName}しても
 FormatText,{SizeName} {MaterialName} {AnatomyFlags},{SizeName} {MaterialName} {AnatomyFlags}
 FormatText,{SkillName} [{QualificationCode}],{SkillName} [{QualificationCode}]
 FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetName}は{Target:AssetName}に変換された
-FormatText,{StrikeName} digestion,{StrikeName} 消化
+FormatText,{StrikeName} digestion,{StrikeName}による消化
 FormatText,{StrikeName} strike,{StrikeName}投射
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName}は{Victim:CharacterName}から{AssetName}を盗んだ
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName}は{Victim:CharacterName}から持ち物を盗んだ
@@ -2085,7 +2085,7 @@ FormatText,Congratulations on reaching the end of the {QuestName}!,あなたは{
 FormatText,cripple {AttributeName},{AttributeName}が激減
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
 FormatText,decrease all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}減少
-FormatText,decrease one ability by {AdjustmentDice},いずれかの能力値一つが{AdjustmentDice}減少
+FormatText,decrease one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}減少
 FormatText,diminish {ManaDice},マナ減少 {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},{ElementName}ダメージ{DamageDice}の{BlockName}を落とす
 FormatText,energise {ManaDice},マナ回復 {ManaDice}
@@ -2101,7 +2101,7 @@ FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice
 FormatText,heal {LifeDice},ライフ回復 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
 FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
-FormatText,increase one ability by {AdjustmentDice},いずれかの能力値一つが{AdjustmentDice}増加
+FormatText,increase one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}増加
 FormatText,level {Depth},地下{Depth}階
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レベル{Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},レベルの差 {From} から {To}
@@ -2130,7 +2130,7 @@ FormatText,unless resists {ElementName},{ElementName}への抵抗に失敗した
 FormatText,unless target has {PropertyName},対象が{PropertyName}の状態ではない場合
 FormatText,versus {Something},{Something}に対して
 FormatText,when {Chance},{Chance}の確率
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},{GROUNDNAME}の場合
 FormatText,when {ITEMNAME},{ITEMNAME}の場合
 FormatText,when {KINDNAMES},{KINDNAMES}の場合
 FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
@@ -2156,8 +2156,8 @@ GenderName,non-binary,その他
 GenerationType,module,カスタムMOD
 GenerationType,quest,クエストスタジオ
 GradeName,artifact,アーティファクト
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,秀逸
+GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,ひんやりとした石の表面は見事に加工されているが、傷と時の流れははっきりと刻み込まれている。
 GroundName,chasm,がけ穴
 GroundName,dirt floor,土の床
@@ -2225,7 +2225,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,着�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",死体を缶に詰め込むための、空の缶や精肉用具などのキット。
 ItemDescription,A compact hand-held firearm.,コンパクトで持ち運びしやすい銃器。
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",騎兵がよく使う片刃の曲剣。地獄から来た怪物共に対し特に有効である。
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,A curved single-edged blade often used by cavalry.,騎兵がよく使う片刃の曲剣。
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",食物繊維豊富な、黄色くて曲がった果物。
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",狩りの道具としてよく使われる、平たい木製の投擲武器。
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",平たく丸いケーキ。もちろんフライパンで焼いてるよ。
@@ -2240,7 +2240,7 @@ ItemDescription,A heavy suit of armour made up of many strips of metal.,鉄片�
 ItemDescription,"A horizontal, mechanically-aided bow and arrow with a shoulder stock.",肩で支える、機械式の水平にしならせる弓。
 ItemDescription,A key designed to open all mundane locks.,よほど凝ったものでもなければこれ一本であらゆる錠前を開けることができるように設計された鍵。
 ItemDescription,"A leather pouch set between two cords, meant for launching small projectiles.",二本のひもの間に革の受け皿がついた道具。小型の弾を撃ち出すのに使われる。
-ItemDescription,"A lightweight protective panel strapped to the forearm, made from wood with metal reinforcement.",木と鉄製の補強具でできた、前腕部に取りつける防護用の板。
+ItemDescription,"A lightweight protective panel strapped to the forearm, made from wood with metal reinforcement.",木と鉄製の補強具でできた、前腕部に取り付ける防護用の板。
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",先端を尖らせた鉄製の長いナイフ。投げることを想定した重量バランスに作られている。
 ItemDescription,A long pipe meant for shooting darts through force of breath.,息でダーツを撃ち出すための、長いパイプ。
 ItemDescription,A long thrusting polearm best suited to mounted combat.,非常に長い刺突用の槍。騎乗した状態での戦闘に最適である。
@@ -2260,7 +2260,7 @@ ItemDescription,A righteous sword forged by a revered blacksmith many years ago 
 ItemDescription,"A sanctimonious biscuit. A miracle to the meek, a scourge to the undead.",宗教くさいビスケット。神の従僕にとっては奇蹟の産物、アンデッドにとっては神の鞭。
 ItemDescription,"A semi-rigid weapon made up of a notched wooden shaft with a drawstring attached to both ends, used to launch arrows.",しなる木製の軸棒の両端に切り込みを入れ紐で引き締めた武器。矢を飛ばすのに使われる。
 ItemDescription,A sharp iron wedge fashioned to a sturdy handle.,頑丈な持ち手に鉄製の鋭い刃を持つくさび状の頭部を取り付けたもの。
-ItemDescription,"A sharp metal throwing weapon, smaller than a hand and shaped like a star.",手中に収まる大きさの、星形の鋭利な金属の投擲武器。
+ItemDescription,"A sharp metal throwing weapon, smaller than a hand and shaped like a star.",手の中に収まる大きさの、星形の鋭利な金属の投擲武器。
 ItemDescription,A short and light double-edged blade.,短く軽量な両刃の剣。
 ItemDescription,"A slimy, scaly sea creature, in its entirety. Good for a meal.",全身がぬめぬめとしていて、鱗に覆われている海の生き物。申し分のない食糧である。
 ItemDescription,A small cutting utensil made of metal with a wooden handle.,木製の取っ手の付いた、物を切るための金属製の道具。
@@ -2319,10 +2319,10 @@ ItemDescription,This crudely made blade is still an effective throwing weapon.,�
 ItemDescription,This curious artifact somehow chastens those it strikes and submits them to your will.,この奇妙なアーティファクトは、何かしらの作用で叩きつけた相手を意のままに服従させることができる。
 ItemDescription,This dwarvish manufactured sword is sturdy and suited to being wielded in the offhand.,利き手でない方に持つのに適した、ドワーフ製の頑丈な剣。
 ItemDescription,This gemstone is made from hardened tree sap.,樹液が固まってできた宝石。
-ItemDescription,This glowing looking glass reveals glimpses of the future and corrupts your soul.,この手鏡は未来を垣間見せ、見る者の魂を蝕む。
+ItemDescription,This glowing looking glass reveals glimpses of the future and corrupts your soul.,この手鏡は未来を垣間見せ、覗き込んだ者の魂を蝕む。
 ItemDescription,This hammer is a four-pronged head mounted atop a long polearm stick. It bears a long spike on its reverse and an even longer spike extending from the very top. It proves effective at puncturing or smashing armour as well as dismounting riders.,長い柄の先に打撃点と二つの刺突点の付いたハンマー。ハンマーの背に長いスパイク、先端により長いスパイクが付き、鎧を貫通、破砕するのみならず騎乗者を引きずりおろす用途にも秀でる。
 ItemDescription,This handy canister of oil can be used to refuel your lamps and lanterns.,使いやすい容器に入った油。ランプやランタンの補充に使うことが出来る。
-ItemDescription,This high-quality elven manufactured dagger is perfectly weighted for throwing.,投擲に最適な重量バランスに仕上げられた、エルフの手による質の良いなダガー。
+ItemDescription,This high-quality elven manufactured dagger is perfectly weighted for throwing.,投擲に最適な重量バランスに仕上げられた、エルフの手による質の良いダガー。
 ItemDescription,This is a curved blade put atop a long pole. The blade is moderately curved along its length with the cutting edge only on the concave side.,長い柄の先に曲がった刃が取り付けられた武器。適度に湾曲した頭部の内側に刃がついている。
 ItemDescription,This is a light spear designed to be thrown by hand.,手で投げることを念頭に作られた軽量の槍。
 ItemDescription,This is a pole weapon consisting of a modified hammer head and spike mounted atop a long pole.,独自の形状のハンマーと先端に取り付けられたスパイクからなる長柄武器。
@@ -2349,19 +2349,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,動きを阻害するために地面にばら撒かれるトゲトゲの小さな金属片。
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,身に着けた者を音もたてずに軽々と運んでくれる、空飛ぶ黄金のサンダル。
 ItemDescription,Zapping it at a wall creates a big tunnel.,一振りで壁に大きなトンネルを作り出す杖。
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine arrow,アダマンタインの矢
+ItemName,adamantine axe,アダマンタインの斧
+ItemName,adamantine bow,アダマンタインの弓
+ItemName,adamantine dagger,アダマンタインのダガー
+ItemName,adamantine greataxe,アダマンタインのグレートアックス
+ItemName,adamantine greatsword,アダマンタインのグレートソード
+ItemName,adamantine long sword,アダマンタインのロングソード
+ItemName,adamantine plate mail,アダマンタインのプレートメイル
+ItemName,adamantine rapier,アダマンタインのレイピア
+ItemName,adamantine sabre,アダマンタインのサーベル
+ItemName,adamantine short sword,アダマンタインのショートソード
+ItemName,adamantine spear,アダマンタインの槍
+ItemName,adamantine two-handed sword,アダマンタインの両手剣
 ItemName,agate,めのう
 ItemName,aklys,アキリス
 ItemName,alchemy smock,錬金術師の前掛け
@@ -2396,7 +2396,7 @@ ItemName,banana,バナナ
 ItemName,banded mail,バンデッドメイル
 ItemName,bardiche,バルディッシュ
 ItemName,battle robe,バトルローブ
-ItemName,battle staff,
+ItemName,battle staff,バトルスタッフ
 ItemName,battle-axe,バトルアックス
 ItemName,beartrap,トラバサミ
 ItemName,bec de corbin,ベク・ド・コルバン
@@ -2404,7 +2404,7 @@ ItemName,bell of harmony,調和の鐘
 ItemName,bell of resources,供給源の鐘
 ItemName,bell of secrets,秘密の鐘
 ItemName,bell of strife,闘争の鐘
-ItemName,bill-guisarme,ビル-ギサルム
+ItemName,bill-guisarme,ビル・ギサルム
 ItemName,black dragon scale mail,ブラックドラゴンの鱗鎧
 ItemName,black dragon scales,ブラックドラゴンの鱗
 ItemName,black glass bauble,黒い安物ガラス
@@ -2484,7 +2484,7 @@ ItemName,brass knuckles,ブラスナックル
 ItemName,broadsword,ブロードソード
 ItemName,bronze bell,銅の鐘
 ItemName,bronze plate mail,銅のプレートメイル
-ItemName,Brumstyk,
+ItemName,Brumstyk,『ブラムスティック』
 ItemName,bullet,弾丸
 ItemName,bullwhip,一本鞭
 ItemName,caltrops,撒き菱
@@ -2511,7 +2511,7 @@ ItemName,clove of garlic,ニンニク
 ItemName,club,棍棒
 ItemName,Colossal Excavator,『コロッサル・エクスカヴェーター』
 ItemName,cornuthaum,魔法使いの帽子
-ItemName,costume earrings,装飾用耳飾り
+ItemName,costume earrings,ただの耳飾り
 ItemName,cram ration,圧縮携行食
 ItemName,c-ration,C型携行食
 ItemName,cream pie,クリームパイ
@@ -2683,7 +2683,7 @@ ItemName,meat stick,ミートスティック
 ItemName,meatball,ミートボール
 ItemName,melon,スイカ
 ItemName,Mirrorbright,『ミラーブライト』
-ItemName,Miserus,
+ItemName,Miserus,『ミゼラス』
 ItemName,mithril arrow,ミスリルの矢
 ItemName,mithril barding,ミスリルの馬鎧
 ItemName,mithril battle-axe,ミスリルのバトルアックス
@@ -2824,7 +2824,7 @@ ItemName,rubber hose,ゴムホース
 ItemName,ruby,ルビー
 ItemName,Ruby Key,『ルビーの鍵』
 ItemName,Runesword,『ルーンソード』
-ItemName,sabre,
+ItemName,sabre,サーベル
 ItemName,sack,布袋
 ItemName,saddle,鞍
 ItemName,sai,サイ
@@ -3027,14 +3027,14 @@ ItemType,wand,魔法棒
 KindName,angel,天使
 KindName,bat,コウモリ
 KindName,beast,獣
-KindName,bird,鳥
+KindName,bird,鳥類
 KindName,blob,ブロブ
-KindName,cat,猫科
+KindName,cat,ネコ科
 KindName,centaur,ケンタウロス
 KindName,changeling,チェンジリング
 KindName,demon,悪魔
 KindName,devourer,悪食
-KindName,dog,犬・オオカミなど
+KindName,dog,イヌ科
 KindName,dragon,ドラゴン
 KindName,dwarf,ドワーフ
 KindName,echo,エーコー
@@ -3112,8 +3112,8 @@ LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
 LiteralText,anatomy,形態
-LiteralText,animate mount,
-LiteralText,animate revenant,生命付与黄泉帰り
+LiteralText,animate mount,生命を与えて乗る
+LiteralText,animate revenant,死体を黄泉帰りにする
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,反時計回りに90度
 LiteralText,any item,あらゆるアイテム
@@ -3138,7 +3138,7 @@ LiteralText,attributes,能力値
 LiteralText,AUTO,自動
 LiteralText,auto saving,セーブ中
 LiteralText,AWAKE,目覚めた
-LiteralText,BACK,バック
+LiteralText,BACK,戻る
 LiteralText,backfire,暴発
 LiteralText,barrier,壁
 LiteralText,BARRIERS,壁
@@ -3191,7 +3191,7 @@ LiteralText,CHARACTER,キャラクター
 LiteralText,characters,キャラクター
 LiteralText,charged items,使用回数があるアイテム
 LiteralText,Chat on Discord,Discordでチャット
-LiteralText,check for updates?,アップデートかあるか確認しますか？
+LiteralText,check for updates?,アップデートを確認しますか？
 LiteralText,checking for updates,アップデートの確認中
 LiteralText,CHOOSE,選択
 LiteralText,Choose your quick action,クイックアクションを選択
@@ -3238,7 +3238,7 @@ LiteralText,CREATE HORDE,群れを作成
 LiteralText,CREATE ITEM,アイテムを作成
 LiteralText,CREATE SHOP,店を作成
 LiteralText,CREATE SHRINE,社を作成
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,地形効果が発生
 LiteralText,CREATE TRAP,罠を作成
 LiteralText,CREATE WALL,壁を作成
 LiteralText,Create which direction?,どの方向に作成する？
@@ -3290,7 +3290,7 @@ LiteralText,Disable mask animations,色覚アニメーションを無効化
 LiteralText,Disable online services,オンライン要素を無効化
 LiteralText,Disable pitch shifting,効果音の音程変化を無効にする
 LiteralText,Disable spacebar real-time toggle,スペースキーでのリアルタイムモード切替を無効化
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,スワイプ操作を無効化
 LiteralText,DISCONNECT,切断
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,切断されました。ネットワーク接続に問題がないこと、およびゲームに参加する全てのデバイスでPathosのバージョンが等しいことを確認してください。
 LiteralText,Discuss on Reddit,Redditで話し合う
@@ -3372,7 +3372,7 @@ LiteralText,Floor,床
 LiteralText,FOLLOW,追従
 LiteralText,Follow me on Twitter,Twitterでフォローする
 LiteralText,Fort Ludios,ルディオス砦
-LiteralText,free panning mode,プレーヤーを中央に表示しない
+LiteralText,free panning mode,プレイヤーを中央に表示しない
 LiteralText,fright,戦慄
 LiteralText,fumbling,滑り
 LiteralText,GAIN KARMA,カルマを増やす
@@ -3436,7 +3436,7 @@ LiteralText,influenced actions,能力値が必要になる行動
 LiteralText,INSCRIBE,書き込む
 LiteralText,INSCRIBE ITEM,アイテムに書き込む
 LiteralText,inscription?,メッセージ?
-LiteralText,instruct each character,
+LiteralText,instruct each character,キャラクターごとに指示
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
 LiteralText,insulation,絶縁
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
@@ -3529,7 +3529,7 @@ LiteralText,no allies,仲間がいない
 LiteralText,no ambient sounds,環境音無し
 LiteralText,No appropriate items available,適したアイテムが無い
 LiteralText,no available knowledge,利用可能な知識なし
-LiteralText,no records found,
+LiteralText,no records found,記録がありません
 LiteralText,no resistances,耐性がない
 LiteralText,no talents,性質がない
 LiteralText,no transient effects,一時的な状態は無い
@@ -3559,8 +3559,8 @@ LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
 LiteralText,passage,通路
 LiteralText,passive (no attacking),受動的（攻撃しない）
-LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathosは最大4人までのプレーヤーとの分割スクリーン共同モードで遊ぶことができます。
-LiteralText,pathos development @ paypal,Pathos開発の為に、PayPal
+LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathosは最大4人までのプレイヤーとの分割スクリーン共同モードで遊ぶことができます。
+LiteralText,pathos development @ paypal,Pathos開発の為に、PayPalで
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathosは冒険の読み込みに失敗しました。問題の調査のため、開発者へセーブデータを送信して頂けませんでしょうか。場合によってはデータを修復したり、アプリの不具合を改修できるかもしれません。ご理解とご協力をお願いします。
 LiteralText,Pathos might be the next evolution of Nethack.,PathosはNethackの新たな発展形だと言えるかもしれません。
 LiteralText,penalty,ペナルティ
@@ -3574,7 +3574,7 @@ LiteralText,PLACE ALL,全部入れる
 LiteralText,platform,橋
 LiteralText,Play,プレーする
 LiteralText,Play a sound effect?,効果音を再生しますか？
-LiteralText,PLAYER,プレーヤー
+LiteralText,PLAYER,プレイヤー
 LiteralText,Please offer any clarification,どんな状況かお知らせください。
 LiteralText,Please provide your feedback,ご意見をお寄せください
 LiteralText,Please rotate your device to landscape :-),デバイスを横向きにしてください:-)
@@ -3585,7 +3585,7 @@ LiteralText,portal,階段など
 LiteralText,porter,の入った捕獲袋
 LiteralText,PRAY,祈る
 LiteralText,preservation,保存
-LiteralText,prevent revenant levels,黄泉帰りのプレーヤーを出さない
+LiteralText,prevent revenant levels,黄泉帰りのプレイヤーを出さない
 LiteralText,prisoner,囚人
 LiteralText,probability,確率
 LiteralText,PROMOTE,昇格
@@ -3618,7 +3618,7 @@ LiteralText,Redo,やり直し
 LiteralText,RE-EQUIP,再装備
 LiteralText,reflects,反射可能
 LiteralText,REGISTER,登録
-LiteralText,REGISTER PLAYER HANDLE,プレーヤーハンドルの登録
+LiteralText,REGISTER PLAYER HANDLE,プレイヤーハンドルの登録
 LiteralText,reinforced,強化扉
 LiteralText,REINFORCED,蹴破れない
 LiteralText,REMOVE CURSE,解呪
@@ -3652,7 +3652,7 @@ LiteralText,REVEAL,姿を現す
 LiteralText,REVEAL ALL MAPS,全てのマップを表示
 LiteralText,REVEAL THIS MAP,この階層のマップを表示
 LiteralText,revealed,見えている
-LiteralText,revenant,
+LiteralText,revenant,黄泉帰り
 LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
@@ -3819,7 +3819,7 @@ LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,VOID SPACE,ボイドスペース
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,地形効果
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
@@ -3846,14 +3846,14 @@ LiteralText,Your current movement and action speed in squares per second.,移動
 LiteralText,ZOOM,ズーム
 LiteralText,ZOOS,モンスター部屋
 LiteralText,zZz,zzz
-LocalityName,area,
+LocalityName,area,周辺
 LocalityName,level,階層
 LocalityName,map,地図
 LocalityName,site,敷地
 LocalityName,square,マス
 LocalityName,world,世界
 LocalityName,zone,区域
-MaterialName,adamantine,
+MaterialName,adamantine,アダマンタイン
 MaterialName,air,空気
 MaterialName,animal,肉
 MaterialName,bone,骨
@@ -3892,7 +3892,7 @@ MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた
 MotionPastName,chanted,で詠唱した
 MotionPastName,constructed,を組み立てた
-MotionPastName,copied,
+MotionPastName,copied,を複写した
 MotionPastName,dipped,を浸した
 MotionPastName,divined,を判別した
 MotionPastName,drank,の水を飲んだ
@@ -3901,7 +3901,7 @@ MotionPastName,emptied,を空にした
 MotionPastName,exchanged,で交換した
 MotionPastName,flashed,を灯した
 MotionPastName,inscribed,に書き込んだ
-MotionPastName,mounted,
+MotionPastName,mounted,にまたがった
 MotionPastName,opened,を開いた
 MotionPastName,packed,の缶詰を作った
 MotionPastName,played,を演奏した
@@ -3926,7 +3926,7 @@ MotionPresentName,anoint,注ぐ
 MotionPresentName,capture,捕まえる
 MotionPresentName,chant,詠唱する
 MotionPresentName,construct,組み立てる
-MotionPresentName,copy,
+MotionPresentName,copy,複写する
 MotionPresentName,dig,掘削する
 MotionPresentName,dip,浸す
 MotionPresentName,divine,判別する
@@ -3936,7 +3936,7 @@ MotionPresentName,empty,空にする
 MotionPresentName,exchange,交換する
 MotionPresentName,flash,灯す
 MotionPresentName,inscribe,書き込む
-MotionPresentName,mount,
+MotionPresentName,mount,またがる
 MotionPresentName,open,開く
 MotionPresentName,pack,缶詰を作る
 MotionPresentName,play,演奏する
@@ -4232,7 +4232,7 @@ RumourFalseMessage,Wearing solid metal gear and eating rations will recover heal
 RumourFalseMessage,"When in doubt, refrain from reply all.",迷ったら全返信はやめておこう。
 RumourFalseMessage,"When in trouble, when in doubt; run in circles, scream and shout.",困ったり悩んだときは、輪になって走って、わめいて、叫んじまおう。
 RumourFalseMessage,"When reading a scroll of amnesia, remember the golden rule.",記憶喪失の巻物を読むときは、あの名言を心に刻みながら。
-RumourFalseMessage,"When you crave ice cream, your body is telling you that it needs water.",アイスクリームがすごい食べたいとき、身体は水分を欲している。
+RumourFalseMessage,"When you crave ice cream, your body is telling you that it needs water.",アイスクリームをすごく食べたくなる時、身体は水分を欲している。
 RumourFalseMessage,Yellow mould brings you gold.,黄色いカビは金運の象徴！
 RumourFalseMessage,You can be charmed to death.,魅了されて死ぬこともある。
 RumourFalseMessage,Zap your enemy with a unicorn horn.,ユニコーンの角を敵に向かって振ってみよう。
@@ -4650,10 +4650,10 @@ TraversalPastName,travelled,ワープした
 TraversalPresentName,ascend,昇る
 TraversalPresentName,descend,降りる
 TraversalPresentName,travel,ワープする
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,燃焼
+VolatileName,electricity,漏電
+VolatileName,freeze,凍結
+VolatileName,steam,蒸気
 WallStructureName,illusionary,幻影
 WallStructureName,permanent,破壊不能
 WallStructureName,solid,普通の壁
