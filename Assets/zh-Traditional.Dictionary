@@ -1872,8 +1872,8 @@ EquipSlot,offhand,副手武器
 EquipSlot,purse,錢包
 EquipSlot,quiver,箭袋
 EquipSlot,right ring,右手戒指
-EquipSlot,shirt,襯衫
-EquipSlot,suit,套裝
+EquipSlot,shirt,內襯甲
+EquipSlot,suit,全身護甲
 ExplosionName,acid,強酸
 ExplosionName,dark,黑暗
 ExplosionName,death,死亡
@@ -3436,7 +3436,7 @@ LiteralText,influenced actions,受影響的動作
 LiteralText,INSCRIBE,刻寫
 LiteralText,INSCRIBE ITEM,刻寫物品
 LiteralText,inscription?,刻寫內容
-LiteralText,instruct each character,自動指示角色
+LiteralText,instruct each character,指引每個角色
 LiteralText,INSUFFICIENT GOLD,金幣不足
 LiteralText,insulation,隔離
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房間和無盡的秘密等著你去探索，但是不要沉溺在其中，長時間停留在某一層會招致死亡。基於《破碎像素地牢》生成的地圖。
@@ -4642,7 +4642,7 @@ StrikeName,shield,防護性
 StrikeName,shriek,尖嘯性
 StrikeName,spirit,靈魂性
 StrikeName,tunnel,挖掘性
-StrikeName,venom,毒液性
+StrikeName,venom,劇毒性
 StrikeName,wail,哀號
 TraversalPastName,ascended,向上移動
 TraversalPastName,descended,向下移動
@@ -4668,7 +4668,7 @@ ZooName,gremlin pit,妖精坑
 ZooName,leprechaun hall,小矮妖大廳
 ZooName,salty pool,鹹水池
 ZooName,science lab,科學實驗室
-ZooName,slumber party,睡覺派對
+ZooName,slumber party,睡衣派對
 ZooName,spider nest,蜘蛛巢穴
 ZooName,tavern,酒館
 ZooName,treasure zoo,財寶動物園

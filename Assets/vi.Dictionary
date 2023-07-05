@@ -20,8 +20,8 @@ AnatomyAbsenceText,NO FEET,KHÔNG CHÂN
 AnatomyAbsenceText,NO HANDS,KHÔNG BÀN TAY
 AnatomyAbsenceText,NO HEAD,KHÔNG ĐẦU
 AnatomyAbsenceText,NO LIMBS,KHÔNG CÓ CÁNH TAY
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT AMORPHOUS,KHÔNG PHẢI CHẤT RẮN VÔ ĐỊNH HÌNH
+AnatomyAbsenceText,NOT MOUNTED,KHÔNG CƯỠI
 AnatomyAbsenceText,NOT WARM,KHÔNG ẤM
 AnatomyAbsenceText,VOICELESS,VÔ THANH
 AnatomyName,amorphous,chất rắn vô định hình
@@ -34,14 +34,14 @@ AnatomyName,head,đầu
 AnatomyName,limbs,cánh tay
 AnatomyName,mind,tâm trí
 AnatomyName,mounted,cưỡi
-AnatomyName,thermal,
+AnatomyName,thermal,thân nhiệt
 AnatomyName,voice,giọng nói
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Một chiếc áo choàng dài hở phía trước và được thắt ở ngực bằng móc gài.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Một chiếc áo giáp ngắn và cứng làm từ mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Một chiếc áo dài thun và tinh tế làm từ mithril.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Một chiếc áo thun dài và bóng láng làm từ mithril.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Chiếc mũ nhọn đầu trang trí với mặt trăng và những ngôi sao này là phụ kiện thường thấy của phù thủy.
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,gậy adamantine
 AppearanceName,agate ring,Nhẫn mã não
 AppearanceName,aluminium wand,Gậy nhôm
 AppearanceName,angled poleaxe,Cây sào nghiêng
@@ -837,7 +837,7 @@ CounterName,captures,số lần bắt giữ
 CounterName,casts,số phép đã niệm
 CounterName,chants,số phép đã tụng
 CounterName,constructs,số
-CounterName,copies,
+CounterName,copies,bản sao
 CounterName,crafts,số vật phẩm chế tạo
 CounterName,decapitations,số quái đã chặt đầu
 CounterName,digs,số lần đào
@@ -856,7 +856,7 @@ CounterName,jumps,số lần nhảy
 CounterName,kicks,số lần đá
 CounterName,lifesaves,số lần thoát chết
 CounterName,mimics,số lần giả dạng
-CounterName,mounts,
+CounterName,mounts,số lần cưỡi
 CounterName,moves,tổng lượt đi
 CounterName,opens,số lần mở
 CounterName,packs,số lần đóng gói
@@ -1013,14 +1013,14 @@ EffectType,convert boulder,chuyển đổi tảng
 EffectType,convert door,chuyển đổi cửa
 EffectType,convert fixture,chuyển đổi vật cố
 EffectType,convert floor,chuyển đổi sàn
-EffectType,convert spill,
+EffectType,convert spill,chuyển đổi vũng
 EffectType,convert wall,chuyển đổi tường
 EffectType,create boulder,tạo tảng
 EffectType,create fixture,tạo vật cố
 EffectType,create golem,tạo quái vật golem
 EffectType,create horde,tạo bầy đám
 EffectType,create nook,tạo nắm cửa
-EffectType,create spill,
+EffectType,create spill,tạo vũng
 EffectType,create trap,tạo bẫy
 EffectType,create wall,tạo tường
 EffectType,decapitate,chặt đầu
@@ -1038,7 +1038,7 @@ EffectType,enchant asset,phù phép vật
 EffectType,engulf,nuốt chửng
 EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
-EffectType,extinguish spill,
+EffectType,extinguish spill,dập vũng
 EffectType,gain level,lên cấp
 EffectType,gain skill,mở kĩ năng
 EffectType,genocide,diệt chủng
@@ -1067,7 +1067,7 @@ EffectType,raise dead,tái sinh
 EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
-EffectType,remove spill,
+EffectType,remove spill,loại bỏ vũng
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
 EffectType,replicate asset,tạo bản sao của vật
 EffectType,restock,bổ sung
@@ -1169,7 +1169,7 @@ EntityName,abbot,trụ trì
 EntityName,acid blob,bãi axít
 EntityName,acid worm,giun axít
 EntityName,acolyte,thầy dòng
-EntityName,adamantine golem,
+EntityName,adamantine golem,golem adamantine
 EntityName,adult black dragon,rồng đen trưởng thành
 EntityName,adult blue dragon,rồng xanh dương trưởng thành
 EntityName,adult deep dragon,rồng xanh đậm trưởng thành
@@ -2058,7 +2058,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} với vật phẩm nào?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} ở hướng nào?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} vật phẩm nào lên {FeatureName}?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} đã cưỡi {Steed:CharacterName}}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} niệm phép
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2130,7 +2130,7 @@ FormatText,unless resists {ElementName},trừ khi kháng {ElementName}
 FormatText,unless target has {PropertyName},trừ khi mục tiêu {PropertyName}
 FormatText,versus {Something},đối đầu với {Something}
 FormatText,when {Chance},tỉ lệ {Chance}
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},nếu {GROUNDNAME}
 FormatText,when {ITEMNAME},nếu {ITEMNAME}
 FormatText,when {KINDNAMES},là {KINDNAMES}
 FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
@@ -2156,8 +2156,8 @@ GenderName,non-binary,lưỡng tính
 GenerationType,module,phụ
 GenerationType,quest,nhiệm vụ
 GradeName,artifact,báu vật
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,thiên phẩm
+GradeName,standard,thông thường
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
 GroundName,chasm,hang sâu
 GroundName,dirt floor,sàn đất
@@ -2349,19 +2349,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Những mảnh gai kim loại nhỏ bé này được ném xuống mặt đất để cản trở việc di chuyển.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Đôi dép quai hậu mọc cánh này được làm từ loại vàng siêu bền khiến người đeo nó bay một cách nhanh nhẹn và lặng lẽ.
 ItemDescription,Zapping it at a wall creates a big tunnel.,Vụt nó vào bức tường sẽ tạo nên 1 đường hầm.
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine arrow,mũi tên adamantine
+ItemName,adamantine axe,rìu adamantine
+ItemName,adamantine bow,cung adamantine
+ItemName,adamantine dagger,dao găm adamantine
+ItemName,adamantine greataxe,rìu lớn adamantine
+ItemName,adamantine greatsword,đại kiếm adamantine
+ItemName,adamantine long sword,trường kiếm adamantine
+ItemName,adamantine plate mail,giáp tấm adamantine
+ItemName,adamantine rapier,kiếm mảnh adamantine
+ItemName,adamantine sabre,kiếm lưỡi cong adamantine
+ItemName,adamantine short sword,kiếm ngắn adamantine
+ItemName,adamantine spear,thương adamantine
+ItemName,adamantine two-handed sword,kiếm song thủ adamantine
 ItemName,agate,mã não
 ItemName,aklys,gậy gỗ
 ItemName,alchemy smock,áo sơ mi hóa học
@@ -2396,7 +2396,7 @@ ItemName,banana,chuối
 ItemName,banded mail,giáp buộc kim loại
 ItemName,bardiche,thương bardiche
 ItemName,battle robe,áo choàng chiến đấu
-ItemName,battle staff,
+ItemName,battle staff,gậy chiến
 ItemName,battle-axe,rìu chiến
 ItemName,beartrap,bẫy gấu
 ItemName,bec de corbin,thương bec de corbin
@@ -2484,7 +2484,7 @@ ItemName,brass knuckles,nắm đấm gấu
 ItemName,broadsword,kiếm lưỡi rộng
 ItemName,bronze bell,chuông đồng
 ItemName,bronze plate mail,giáp tấm đồng
-ItemName,Brumstyk,
+ItemName,Brumstyk,Cây Chủi
 ItemName,bullet,viên đạn
 ItemName,bullwhip,roi dây
 ItemName,caltrops,chông
@@ -2683,7 +2683,7 @@ ItemName,meat stick,que thịt
 ItemName,meatball,viên thịt
 ItemName,melon,dưa hấu
 ItemName,Mirrorbright,Mirrorbright
-ItemName,Miserus,
+ItemName,Miserus,Miserus
 ItemName,mithril arrow,mũi tên mithril
 ItemName,mithril barding,giáp ngựa mithril
 ItemName,mithril battle-axe,rìu chiến mithril
@@ -2824,7 +2824,7 @@ ItemName,rubber hose,ống dẫn nhựa
 ItemName,ruby,hồng ngọc
 ItemName,Ruby Key,Chìa Khóa Hồng Ngọc
 ItemName,Runesword,Runesword
-ItemName,sabre,
+ItemName,sabre,kiếm lưỡi cong
 ItemName,sack,túi
 ItemName,saddle,yên thú
 ItemName,sai,kiếm sai
@@ -3075,7 +3075,7 @@ KindName,quadruped,động vật 4 chân
 KindName,rodent,bộ gặm nhấm
 KindName,snake,rắn
 KindName,spider,nhện
-KindName,tortle,
+KindName,tortle,người lai rùa
 KindName,trapper,người gài bẫy
 KindName,troll,troll
 KindName,umber,khổng lồ đào đá
@@ -3112,7 +3112,7 @@ LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
-LiteralText,animate mount,
+LiteralText,animate mount,tái sinh vật cưỡi
 LiteralText,animate revenant,tái sinh những vong hồn
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
@@ -3238,7 +3238,7 @@ LiteralText,CREATE HORDE,TẠO RA BẦY ĐÀN
 LiteralText,CREATE ITEM,TẠO RA VẬT PHẨM
 LiteralText,CREATE SHOP,TẠO RA CỬA HÀNG
 LiteralText,CREATE SHRINE,TẠO RA ĐỀN THỜ
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,TẠO RA VŨNG
 LiteralText,CREATE TRAP,TẠO RA BẪY
 LiteralText,CREATE WALL,TẠO RA TƯỜNG
 LiteralText,Create which direction?,Tạo ở hướng nào?
@@ -3286,11 +3286,11 @@ LiteralText,Disable continue button,tắt nút tiếp tục
 LiteralText,disable haptic feedback,tắt phản hồi xúc giác
 LiteralText,Disable idle animations,tắt hoạt ảnh trong trạng thái nghỉ
 LiteralText,Disable introduction boom,tắt âm nổ khi vào game
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,tắt hoạt ảnh che phủ
 LiteralText,Disable online services,tắt dịch vụ online (sảnh danh vọng và tự động cập nhật)
 LiteralText,Disable pitch shifting,tắt dịch cao độ
 LiteralText,Disable spacebar real-time toggle,bật tắt chế độ thời gian thực bằng nút cách
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,tắt cử chỉ vuốt
 LiteralText,DISCONNECT,NGẮT KẾT NỐI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
 LiteralText,Discuss on Reddit,Thảo luận trên Reddit
@@ -3436,7 +3436,7 @@ LiteralText,influenced actions,những hành động liên quan
 LiteralText,INSCRIBE,GHI
 LiteralText,INSCRIBE ITEM,GHI VẬT PHẨM
 LiteralText,inscription?,khắc chữ gì?
-LiteralText,instruct each character,
+LiteralText,instruct each character,hướng dẫn từng nhân vật
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
 LiteralText,insulation,cô lập
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
@@ -3529,7 +3529,7 @@ LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
 LiteralText,No appropriate items available,không có vật phẩm nào phù hợp
 LiteralText,no available knowledge,không có kiến thức nào
-LiteralText,no records found,
+LiteralText,no records found,không tìm thấy kết quả
 LiteralText,no resistances,không đề kháng
 LiteralText,no talents,không tài năng
 LiteralText,no transient effects,không có hiệu ứng tạm thời
@@ -3652,7 +3652,7 @@ LiteralText,REVEAL,LỘ DIỆN
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
 LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY
 LiteralText,revealed,đã lộ diện
-LiteralText,revenant,
+LiteralText,revenant,bóng ma cũ
 LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
@@ -3819,7 +3819,7 @@ LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,CÁC PHẢN ỨNG
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
@@ -3828,7 +3828,7 @@ LiteralText,was killed,bị giết
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
-LiteralText,when animated,
+LiteralText,when animated,khi được tái sinh
 LiteralText,when confused,khi bối rối
 LiteralText,when dropped,khi thả xuống
 LiteralText,when entered,khi đi vào
@@ -3846,14 +3846,14 @@ LiteralText,Your current movement and action speed in squares per second.,Tốc 
 LiteralText,ZOOM,PHÓNG TO
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,khu vực
 LocalityName,level,tầng
 LocalityName,map,bản đồ
-LocalityName,site,site
+LocalityName,site,hiện trường
 LocalityName,square,ô
 LocalityName,world,thế giới
-LocalityName,zone,khu vực
-MaterialName,adamantine,
+LocalityName,zone,vùng
+MaterialName,adamantine,adamantine
 MaterialName,air,không khí
 MaterialName,animal,động vật
 MaterialName,bone,xương
@@ -3892,7 +3892,7 @@ MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt
 MotionPastName,chanted,đã niệm
 MotionPastName,constructed,đã xây
-MotionPastName,copied,
+MotionPastName,copied,đã sao chép
 MotionPastName,dipped,đã nhúng
 MotionPastName,divined,đã thánh hóa
 MotionPastName,drank,đã uống
@@ -3901,7 +3901,7 @@ MotionPastName,emptied,đã lấy hết
 MotionPastName,exchanged,đã trao đổi
 MotionPastName,flashed,đã phát sáng
 MotionPastName,inscribed,đã ghi
-MotionPastName,mounted,
+MotionPastName,mounted,đã cưỡi
 MotionPastName,opened,đã mở
 MotionPastName,packed,đã đóng gói
 MotionPastName,played,đã chơi
@@ -3926,7 +3926,7 @@ MotionPresentName,anoint,bôi
 MotionPresentName,capture,bắt
 MotionPresentName,chant,niệm
 MotionPresentName,construct,xây
-MotionPresentName,copy,
+MotionPresentName,copy,sao chép
 MotionPresentName,dig,đào
 MotionPresentName,dip,nhúng
 MotionPresentName,divine,thánh hóa
@@ -3936,7 +3936,7 @@ MotionPresentName,empty,lấy
 MotionPresentName,exchange,trao đổi
 MotionPresentName,flash,phát sáng
 MotionPresentName,inscribe,ghi
-MotionPresentName,mount,
+MotionPresentName,mount,cưỡi
 MotionPresentName,open,mở
 MotionPresentName,pack,đóng gói
 MotionPresentName,play,chơi
@@ -4185,9 +4185,9 @@ RaceName,plasmoid//non-binary,plasmoid lưỡng tính
 RaceName,satyr//female,thần dê nữ
 RaceName,satyr//male,thần dê nam
 RaceName,satyr//non-binary,thần dê lưỡng tính
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,người lai rùa nữ
+RaceName,tortle//male,người lai rùa nam
+RaceName,tortle//non-binary,người lai rùa lưỡng tính
 RaceName,troll//female,troll độc ác nữ
 RaceName,troll//male,troll độc ác nam
 RaceName,troll//non-binary,troll độc ác lưỡng tính
@@ -4361,7 +4361,7 @@ SkillName,unarmed combat,chiến đấu tay không
 SkillName,whip,roi
 SonicName,ammo,đạn bắn
 SonicName,amulet,đeo bùa phép
-SonicName,arf,
+SonicName,arf,arf
 SonicName,armour,mặc giáp
 SonicName,baa,cừu kêu
 SonicName,bell,chuông kêu
@@ -4380,7 +4380,7 @@ SonicName,burble,tiếng thuốc sủi bọt
 SonicName,burn,tiếng lửa bỏng
 SonicName,buzz,tiếng bọ kêu
 SonicName,cackle,cackle
-SonicName,chains,
+SonicName,chains,tiếng xích
 SonicName,chant,tiếng niệm phép
 SonicName,chime,tiếng kêu của cửa hàng
 SonicName,chirp,tiếng chim hót
@@ -4458,14 +4458,14 @@ SonicName,realtime,tiếng chế độ thời gian thực
 SonicName,rifle burst,tiếng súng trường bắn 3 viên
 SonicName,rifle shot,tiếng súng trường bắn
 SonicName,ring,ring
-SonicName,roar,tiếng rầm
-SonicName,roars,
+SonicName,roar,tiếng gầm
+SonicName,roars,tiếng gầm
 SonicName,scrap,scrap
-SonicName,scrape,scrape
-SonicName,scrapes,
+SonicName,scrape,tiếng cào
+SonicName,scrapes,tiếng cào
 SonicName,scroll,scroll
 SonicName,scuttle,scuttle
-SonicName,sever,sever
+SonicName,sever,tiếng chém đứt
 SonicName,shackle,tiếng xiềng xích
 SonicName,short tap,short tap
 SonicName,shotgun blast,tiếng súng shotgun nổ
@@ -4481,11 +4481,11 @@ SonicName,splat,splat
 SonicName,squall,squall
 SonicName,squawk,squawk
 SonicName,squeak,squeak
-SonicName,squeaks,
+SonicName,squeaks,squeaks
 SonicName,squeal,squeal
 SonicName,swallow,swallow
 SonicName,switch,switch
-SonicName,taps,
+SonicName,taps,tiếng gõ
 SonicName,teleport,tiếng dịch chuyển
 SonicName,throne,throne
 SonicName,throw grenade,tiếng ném lựu đạn
@@ -4650,10 +4650,10 @@ TraversalPastName,travelled,đã đi đến
 TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,cháy
+VolatileName,electricity,phóng điện
+VolatileName,freeze,đóng băng
+VolatileName,steam,bay hơi
 WallStructureName,illusionary,ảo ảnh
 WallStructureName,permanent,thật vĩnh viễn
 WallStructureName,solid,cứng
