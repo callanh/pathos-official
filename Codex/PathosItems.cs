@@ -14802,7 +14802,13 @@ namespace Pathos
         I.Weight = Source.Weight; // adamantine weighs same as steel.
         I.Material = Materials.adamantine;
         I.Essence = WeaponEssence2;
+        
         I.Price = Source.Price * 20; // adamantine variants cost x20 gold.
+        // however, this needs to be calmed down for the more expensive items such as plate mail.
+        if (I.Price > Gold.FromCoins(1000))
+          I.Price /= 10;
+        else if (I.Price > Gold.FromCoins(500))
+          I.Price /= 2;
 
         // TODO: can anyone eat adamantine? rust monsters? what about mithril??
       }

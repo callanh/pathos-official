@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,Uma peq
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Uma vestimenta de mithril esguia e delicada.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Uma vestimenta de mithril esguia e lustrosa.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Este clássico acessório para feiticeiros é um chapéu pontudo decorado com estrelas e luas.
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,cajado de adamantina
 AppearanceName,agate ring,anel de ágata
 AppearanceName,aluminium wand,varinha de alumínio
 AppearanceName,angled poleaxe,alabarda angular
@@ -837,7 +837,7 @@ CounterName,captures,captura
 CounterName,casts,lança
 CounterName,chants,canta
 CounterName,constructs,constrói
-CounterName,copies,
+CounterName,copies,copia
 CounterName,crafts,manufatura
 CounterName,decapitations,decapitações
 CounterName,digs,escava
@@ -856,7 +856,7 @@ CounterName,jumps,pula
 CounterName,kicks,chuta
 CounterName,lifesaves,salva-vidas
 CounterName,mimics,imita
-CounterName,mounts,
+CounterName,mounts,monta
 CounterName,moves,move
 CounterName,opens,abre
 CounterName,packs,empacota
@@ -1013,14 +1013,14 @@ EffectType,convert boulder,converter pedregulho
 EffectType,convert door,converter porta
 EffectType,convert fixture,converter estrutura
 EffectType,convert floor,converter piso
-EffectType,convert spill,
-EffectType,convert wall,converter´parede
+EffectType,convert spill,converter cachoeira
+EffectType,convert wall,converter parede
 EffectType,create boulder,criar pedregulho
 EffectType,create fixture,criar estrutura
 EffectType,create golem,criar golem
 EffectType,create horde,criar horda
 EffectType,create nook,criar recanto
-EffectType,create spill,
+EffectType,create spill,criar cachoeira
 EffectType,create trap,criar armadilha
 EffectType,create wall,criar parede
 EffectType,decapitate,decapitar
@@ -1038,7 +1038,7 @@ EffectType,enchant asset,encantar espólio
 EffectType,engulf,engolfar
 EffectType,enlightenment,iluminação
 EffectType,exchange,trocar
-EffectType,extinguish spill,
+EffectType,extinguish spill,extinguir cachoeira
 EffectType,gain level,ganhar nível
 EffectType,gain skill,ganhar habilidade
 EffectType,genocide,genocidar
@@ -1067,7 +1067,7 @@ EffectType,raise dead,ressuscitar morto
 EffectType,recall,trazer aliados
 EffectType,release,liberar
 EffectType,remove curse,remover maldição
-EffectType,remove spill,
+EffectType,remove spill,remover cachoeira
 EffectType,remove transient,remover efeito transitório
 EffectType,replicate asset,replicar espólio
 EffectType,restock,reabastecer
@@ -1169,7 +1169,7 @@ EntityName,abbot,abade
 EntityName,acid blob,bolha de ácido
 EntityName,acid worm,minhoca de ácido
 EntityName,acolyte,acólito
-EntityName,adamantine golem,
+EntityName,adamantine golem,golem de adamantina
 EntityName,adult black dragon,dragão negro
 EntityName,adult blue dragon,dragão azul
 EntityName,adult deep dragon,dragão roxo
@@ -2058,7 +2058,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} com que item?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} em que direção?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} que item no {FeatureName}?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} montou em {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lançar
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} <{ItemName}|{CharacterName} {SanctityName} {ContainerQualifier}> {Charges}
@@ -2130,7 +2130,7 @@ FormatText,unless resists {ElementName},a menos que resista a {ElementName}
 FormatText,unless target has {PropertyName},a menos que o alvo tenha {PropertyName}
 FormatText,versus {Something},versus {Something}
 FormatText,when {Chance},quando {Chance}
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},quando {GROUNDNAME}
 FormatText,when {ITEMNAME},quando {ITEMNAME}
 FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
@@ -2156,8 +2156,8 @@ GenderName,non-binary,não-binario
 GenerationType,module,módulo
 GenerationType,quest,jornada
 GradeName,artifact,artefato
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,exótico
+GradeName,standard,padrão
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,A superfície de pedra gelada tem um artesanato imaculado mas está marcada pelo tempo e um pouco danificada.
 GroundName,chasm,abismo
 GroundName,dirt floor,piso de terra
@@ -2225,7 +2225,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Uma 
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Uma coleção de utensílios, incluindo latas vazias e ferramentas de açougueiro, para embalar cadáveres para condensá-los."
 ItemDescription,A compact hand-held firearm.,Uma arma de fogo compacta.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Uma lâmina curva de um único gume frequentemente usada pela cavalaria, especialmente eficaz contra criaturas do mundo dos mortos."
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,A curved single-edged blade often used by cavalry.,"Uma lâmina curva de um gume, é frequentemente usada pela cavalaria."
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Um fruto amarelo curvo, e uma grande fonte de fibra."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Uma arma de arremesso plana feita de madeira, geralmente usada para caçar."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Um bolo redondo e plano. Cozido em uma panela, como você pode presumir."
@@ -2349,19 +2349,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Pequenas pontas de metal jogadas no chão para impedir a mobilidade.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Sandálias aladas feitas de ouro perene, fazem voar rápida e silenciosamente quem as veste."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Atirar com ela numa parede cria um grande túnel.
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine arrow,flecha de adamantina
+ItemName,adamantine axe,machado de adamantina
+ItemName,adamantine bow,arco de adamantina
+ItemName,adamantine dagger,adaga de adamantina
+ItemName,adamantine greataxe,grande machado de adamantina
+ItemName,adamantine greatsword,grande espada de adamantina
+ItemName,adamantine long sword,espada longa de adamantina
+ItemName,adamantine plate mail,armadura de placas de adamantina
+ItemName,adamantine rapier,rapieira de adamantina
+ItemName,adamantine sabre,sabre de adamantina
+ItemName,adamantine short sword,espada curta de adamantina
+ItemName,adamantine spear,lança de adamantina
+ItemName,adamantine two-handed sword,espada de duas mãos de adamantina
 ItemName,agate,ágata
 ItemName,aklys,aklys
 ItemName,alchemy smock,avental de alquimia
@@ -2396,7 +2396,7 @@ ItemName,banana,banana
 ItemName,banded mail,armadura atada
 ItemName,bardiche,bardiche
 ItemName,battle robe,robe de batalha
-ItemName,battle staff,
+ItemName,battle staff,cajado de batalha
 ItemName,battle-axe,machado de batalha
 ItemName,beartrap,armadilha de urso
 ItemName,bec de corbin,bec de corbin
@@ -2484,7 +2484,7 @@ ItemName,brass knuckles,soco inglês de bronze
 ItemName,broadsword,espada larga
 ItemName,bronze bell,sino de bronze
 ItemName,bronze plate mail,armadura de bronze
-ItemName,Brumstyk,
+ItemName,Brumstyk,cajado da bruxa
 ItemName,bullet,bala
 ItemName,bullwhip,chicote
 ItemName,caltrops,estrepes
@@ -2683,7 +2683,7 @@ ItemName,meat stick,bastão de carne
 ItemName,meatball,almôndega
 ItemName,melon,melancia
 ItemName,Mirrorbright,Brilhodeespelho
-ItemName,Miserus,
+ItemName,Miserus,pergaminho d'fortuna
 ItemName,mithril arrow,flecha de mithril
 ItemName,mithril barding,bardos de mithril
 ItemName,mithril battle-axe,machado de batalha de mithril
@@ -2824,7 +2824,7 @@ ItemName,rubber hose,mangueira de borracha
 ItemName,ruby,rubi
 ItemName,Ruby Key,chave de rubi
 ItemName,Runesword,espada rúnica
-ItemName,sabre,
+ItemName,sabre,sabre
 ItemName,sack,saco
 ItemName,saddle,sela
 ItemName,sai,sai
@@ -3112,7 +3112,7 @@ LiteralText,AMBIENT SOUNDS,SONS AMBIENTES
 LiteralText,amnesia,amnésia
 LiteralText,AMNESIA,AMNÉSIA
 LiteralText,anatomy,anatomia
-LiteralText,animate mount,
+LiteralText,animate mount,animar montaria
 LiteralText,animate revenant,animar fantasmas
 LiteralText,ANONYMOUS,ANÔNIMO
 LiteralText,anticlockwise 90 degrees,90 graus anti-horário
@@ -3238,7 +3238,7 @@ LiteralText,CREATE HORDE,CRIAR HORDA
 LiteralText,CREATE ITEM,CRIAR ITEM
 LiteralText,CREATE SHOP,CRIAR LOJA
 LiteralText,CREATE SHRINE,CRIAR SANTUÁRIO
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,CRIAR CACHOEIRA
 LiteralText,CREATE TRAP,CRIAR ARMADILHA
 LiteralText,CREATE WALL,CRIAR PAREDE
 LiteralText,Create which direction?,Criar em que direção?
@@ -3286,11 +3286,11 @@ LiteralText,Disable continue button,desabilitar o botão de continuar
 LiteralText,disable haptic feedback,desabilitar vibração de feedback
 LiteralText,Disable idle animations,desabilitar animações ociosas
 LiteralText,Disable introduction boom,desabilitar boom de introdução
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,desabilitar animações de máscara
 LiteralText,Disable online services,Desabilitar serviços online
 LiteralText,Disable pitch shifting,desabilitar mudança de tom
 LiteralText,Disable spacebar real-time toggle,Desabilitar tempo real ao apertar espaço
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,desabilitar deslize para agir
 LiteralText,DISCONNECT,DESCONECTAR
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Desconexão detectada. Por favor certifique-se de que você está conectado à internet e que todos os aparelhos estão na mesma versão do Pathos.
 LiteralText,Discuss on Reddit,Discuta no Reddit
@@ -3436,7 +3436,7 @@ LiteralText,influenced actions,ações influenciadas
 LiteralText,INSCRIBE,INSCREVER
 LiteralText,INSCRIBE ITEM,INSCREVER ITEM
 LiteralText,inscription?,inscrição?
-LiteralText,instruct each character,
+LiteralText,instruct each character,instruir cada personagem
 LiteralText,INSUFFICIENT GOLD,OURO INSUFICIENTE
 LiteralText,insulation,isolamento
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
@@ -3529,7 +3529,7 @@ LiteralText,no allies,sem aliados
 LiteralText,no ambient sounds,sem sons ambientes
 LiteralText,No appropriate items available,Sem itens apropriados disponíveis
 LiteralText,no available knowledge,sem conhecimento disponível
-LiteralText,no records found,
+LiteralText,no records found,nenhum registro encontrado
 LiteralText,no resistances,sem resistências
 LiteralText,no talents,sem talentos
 LiteralText,no transient effects,sem efeitos transitórios
@@ -3652,7 +3652,7 @@ LiteralText,REVEAL,REVELAR
 LiteralText,REVEAL ALL MAPS,REVELAR MAPAS
 LiteralText,REVEAL THIS MAP,REVELAR ESSE MAPA
 LiteralText,revealed,revelado
-LiteralText,revenant,
+LiteralText,revenant,revenante
 LiteralText,REVERT,REVERTER
 LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
@@ -3819,7 +3819,7 @@ LiteralText,Vanity,Vaidade
 LiteralText,VIEW,VER
 LiteralText,Visit the website,Visite o website
 LiteralText,VOID SPACE,ESPAÇO VAZIO
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,VOLÁTEIS
 LiteralText,vulnerable to,vulnerável a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,Esperar quantos turnos?
@@ -3846,14 +3846,14 @@ LiteralText,Your current movement and action speed in squares per second.,Sua ve
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,área
 LocalityName,level,nível
 LocalityName,map,mapa
 LocalityName,site,sítio
 LocalityName,square,quadrado
 LocalityName,world,mundo
 LocalityName,zone,zona
-MaterialName,adamantine,
+MaterialName,adamantine,adamantina
 MaterialName,air,ar
 MaterialName,animal,animal
 MaterialName,bone,osso
@@ -3892,7 +3892,7 @@ MotionPastName,ate,comeu
 MotionPastName,captured,capturou
 MotionPastName,chanted,cantou
 MotionPastName,constructed,contruiu
-MotionPastName,copied,
+MotionPastName,copied,copiou
 MotionPastName,dipped,afundou
 MotionPastName,divined,predisse
 MotionPastName,drank,bebeu
@@ -3901,7 +3901,7 @@ MotionPastName,emptied,esvaziou
 MotionPastName,exchanged,trocou
 MotionPastName,flashed,clareou
 MotionPastName,inscribed,inscreveu
-MotionPastName,mounted,
+MotionPastName,mounted,montou
 MotionPastName,opened,abriu
 MotionPastName,packed,empacotou
 MotionPastName,played,tocou
@@ -3926,7 +3926,7 @@ MotionPresentName,anoint,ungir
 MotionPresentName,capture,capturar
 MotionPresentName,chant,cantar
 MotionPresentName,construct,construir
-MotionPresentName,copy,
+MotionPresentName,copy,copiar
 MotionPresentName,dig,escavar
 MotionPresentName,dip,afundar
 MotionPresentName,divine,predizer
@@ -3936,7 +3936,7 @@ MotionPresentName,empty,esvaziar
 MotionPresentName,exchange,trocar
 MotionPresentName,flash,flash
 MotionPresentName,inscribe,inscrever
-MotionPresentName,mount,
+MotionPresentName,mount,montar
 MotionPresentName,open,abrir
 MotionPresentName,pack,empacotar
 MotionPresentName,play,tocar
@@ -4650,10 +4650,10 @@ TraversalPastName,travelled,viajou
 TraversalPresentName,ascend,subir
 TraversalPresentName,descend,descer
 TraversalPresentName,travel,viajar
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,chama
+VolatileName,electricity,eletricidade
+VolatileName,freeze,gelo
+VolatileName,steam,vapor
 WallStructureName,illusionary,ilusória
 WallStructureName,permanent,permanente
 WallStructureName,solid,sólida
