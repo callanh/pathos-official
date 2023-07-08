@@ -12660,7 +12660,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.mithril;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(4);
+        I.Price = Gold.FromCoins(5);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d5(), A =>
@@ -12787,7 +12787,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(350);
         I.Material = Materials.iron;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(3);
+        I.Price = Gold.FromCoins(8);
         I.AddObviousIngestUse(Motions.eat, 35, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d8());
@@ -12845,9 +12845,9 @@ namespace Pathos
         I.Rarity = 4;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(700);
-        I.Material = Materials.iron;
+        I.Material = Materials.wood;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(10);
+        I.Price = Gold.FromCoins(20);
         I.AddObviousIngestUse(Motions.eat, 70, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 2.d5());
@@ -12867,7 +12867,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.wood;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(4);
+        I.Price = Gold.FromCoins(5);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d5());
@@ -12886,7 +12886,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(300);
         I.Material = Materials.wood;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(10);
+        I.Price = Gold.FromCoins(15);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d8());
@@ -12905,7 +12905,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(350);
         I.Material = Materials.wood;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(3);
+        I.Price = Gold.FromCoins(7);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d7());
@@ -13390,7 +13390,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(100);
         I.Material = Materials.iron;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(4);
+        I.Price = Gold.FromCoins(3);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d3());
@@ -13428,7 +13428,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(350);
         I.Material = Materials.iron;
         I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(3);
+        I.Price = Gold.FromCoins(5);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d5());
@@ -14000,7 +14000,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(420);
         I.Material = Materials.silver;
         I.Essence = WeaponEssence2;
-        I.Price = Gold.FromCoins(15);
+        I.Price = Gold.FromCoins(30);
         I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6());
@@ -14068,7 +14068,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(350);
         I.Material = Materials.iron;
         I.Essence = WeaponEssence0;
-        I.Price = Gold.FromCoins(3);
+        I.Price = Gold.FromCoins(6);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6());
@@ -14085,7 +14085,7 @@ namespace Pathos
         I.Weight = Weight.FromUnits(175);
         I.Material = Materials.mithril;
         I.Essence = WeaponEssence3;
-        I.Price = Gold.FromCoins(30);
+        I.Price = Gold.FromCoins(60);
         I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
