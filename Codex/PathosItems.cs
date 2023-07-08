@@ -422,6 +422,7 @@ namespace Pathos
           Use.SetCast()
              .Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
+          Use.Apply.DecreaseKarma(Dice.Fixed(25));
           Use.Apply.WithSourceSanctity
           (
             B => B.DetectAsset(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
