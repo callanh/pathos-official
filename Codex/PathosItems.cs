@@ -8731,7 +8731,7 @@ namespace Pathos
               B =>
               {
                 B.Light(true, Locality.Area);
-                B.Heal(1.d4() + 1, Modifier.Zero);
+                B.AreaTransient(Properties.fear, 4.d6(), Kinds.Undead.ToArray());
               },
               U => U.Light(true, Locality.Area),
               C => C.Light(false, Locality.Area)
@@ -13455,7 +13455,6 @@ namespace Pathos
       quarterstaff = AddMeleeWeapon("quarterstaff", I =>
       {
         I.Description = "A hardwood pole. It is an unassuming but formidable weapon in trained hands.";
-        I.SetAppearance("staff", null);
         I.Glyph = Glyphs.quarterstaff;
         I.Sonic = Sonics.weapon;
         I.Series = null;
