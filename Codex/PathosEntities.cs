@@ -18675,7 +18675,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +5 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
