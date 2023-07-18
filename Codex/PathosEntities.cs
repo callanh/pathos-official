@@ -9878,7 +9878,7 @@ namespace Pathos
           (
             Material: Materials.animal,
             Head: true,
-            Mind: true,    
+            Mind: true,
           Voice: true,
             Eyes: true,
             Hands: true,
@@ -13391,8 +13391,8 @@ namespace Pathos
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.WhenTargetHasProperty(Properties.fear, 
-            T => T.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, DeathSupport.fright), 
+          K.Apply.Shout(A => A.WhenTargetHasProperty(Properties.fear,
+            T => T.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, DeathSupport.fright),
             F => F.WhenTargetKind(Kinds.Living, W => W.ApplyTransient(Properties.fear, 3.d4() + 3))));
         });
         E.SetCorpse(Chance.Never);
@@ -18193,7 +18193,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +1 from str.
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
@@ -18243,7 +18242,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -18288,7 +18286,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +4 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
@@ -18339,7 +18336,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +4 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10());
@@ -18386,7 +18382,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
+        E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
@@ -18394,6 +18390,7 @@ namespace Pathos
           A.Apply.SummonEntity(2.d3(), giant_rat);
         });
         E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 4.d10));
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -18436,9 +18433,9 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 4.d10));
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -18481,7 +18478,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
+        E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
@@ -18578,7 +18575,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
+        E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3()); // +1 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
@@ -18629,7 +18626,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
+        E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4()); // +1 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4(), A => A.Apply.Macro(MajorPoison(Attributes.constitution)));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -18725,7 +18722,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8()); // +5 from str.
@@ -18772,7 +18768,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
@@ -18822,7 +18817,6 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +2 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -23021,7 +23015,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(1.d2() - 1, Chance.Always, Stocks.amulet); // 0..1
         E.Startup.Loot.AddKit(1.d2(), Chance.Always, Stocks.book); // 1..2
         E.Startup.Loot.AddKit(2.d3(), Chance.Always, Stocks.food); // 2..6
-        E.Startup.Loot.AddKit(2.d4(), Chance.Always, Stocks.gem); // 2..8 
+        E.Startup.Loot.AddKit(2.d4(), Chance.Always, Stocks.gem); // 2..8
         //E.Startup.Loot.AddKit(2.d2(), Chance.Always, Stocks.weapon.ItemList.Where(I => !I.Grade.Unique && I.IsFirearm()).ToArray()); // 2..4 firearms
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
         E.Conveyance.MajorResistance(Elements.sleep);
@@ -28346,7 +28340,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
-          Mind: true,    
+          Mind: true,
           Voice: true,
           Eyes: true,
           Ears: true,
@@ -30672,7 +30666,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour);
         E.Startup.SetTalent(Properties.clarity);
-        E.Startup.SetResistance(Elements.poison);         // +4 from str 
+        E.Startup.SetResistance(Elements.poison);         // +4 from str
         E.AddAttack(AttackTypes.horn, Elements.physical, 1.d6()); // = 5-10
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2()); // = 5-6
         E.Conveyance.MajorResistance(Elements.poison);
