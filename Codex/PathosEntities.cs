@@ -12343,6 +12343,7 @@ namespace Pathos
         {
           R.SetCast().Explosion(Explosions.light, Dice.Zero);
           R.Apply.Light(true, Locality.Area);
+          R.Apply.ApplyTransient(Properties.blindness, 3.d70());
         });
         E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.strength);
         E.SetCorpse(Chance.OneIn3);

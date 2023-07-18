@@ -22,7 +22,7 @@ namespace Pathos
 
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
-      SetTrack(Codex.Tracks.outside);
+      SetTrack(Codex.Tracks.nethack_title);
     }
 
     public override void Execute(Generator Generator)

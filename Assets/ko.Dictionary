@@ -836,7 +836,7 @@ CounterName,captures,붙잡음
 CounterName,casts,주문 시전
 CounterName,chants,찬송
 CounterName,constructs,구조물
-CounterName,copies,
+CounterName,copies,복제품들
 CounterName,crafts,제작
 CounterName,decapitations,참수
 CounterName,digs,굴착
@@ -1012,14 +1012,14 @@ EffectType,convert boulder,바위 변환
 EffectType,convert door,문 변환
 EffectType,convert fixture,시설 변환
 EffectType,convert floor,바닥 변환
-EffectType,convert spill,
+EffectType,convert spill,휘발성 물질 변환
 EffectType,convert wall,벽 변환
 EffectType,create boulder,바위 생성
 EffectType,create fixture,시설 생성
 EffectType,create golem,골렘 생성
 EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
-EffectType,create spill,
+EffectType,create spill,휘발성 물질 생성
 EffectType,create trap,함정 생성
 EffectType,create wall,벽 생성
 EffectType,decapitate,참수
@@ -1037,7 +1037,7 @@ EffectType,enchant asset,아이템 강화
 EffectType,engulf,삼키기
 EffectType,enlightenment,깨달음
 EffectType,exchange,교환
-EffectType,extinguish spill,
+EffectType,extinguish spill,휘발성 물질 증발
 EffectType,gain level,레벨 증가
 EffectType,gain skill,숙련도 획득
 EffectType,genocide,몰살
@@ -1066,7 +1066,7 @@ EffectType,raise dead,부활
 EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
-EffectType,remove spill,
+EffectType,remove spill,휘발성 물질 제거
 EffectType,remove transient,일시적인 효과 제거
 EffectType,replicate asset,아이템 복제
 EffectType,restock,재충전
@@ -2057,7 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName}을(를) 
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName}을(를) 어느 아이템에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} {FeatureName} which direction?,어느 방향의 {FeatureName}에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} which item on {FeatureName}?,무엇으로 {FeatureName}에 {MotionPresentName}을(를) 합니까?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName}이(가) {Steed:CharacterName}위에 탔다.
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName}(으)로 된 {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 시전
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2129,7 +2129,7 @@ FormatText,unless resists {ElementName},{ElementName}속성 저항이 없을 시
 FormatText,unless target has {PropertyName},대상이 {PropertyName}이 아닐 시
 FormatText,versus {Something},{Something} 대
 FormatText,when {Chance},{Chance}일 때
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},{GROUNDNAME}땅 일 때
 FormatText,when {ITEMNAME},{ITEMNAME} 일 때
 FormatText,when {KINDNAMES},{KINDNAMES} 일 때
 FormatText,when {MATERIALNAME},{MATERIALNAME} 재질일 때
@@ -2153,10 +2153,10 @@ GenderName,male,남성
 GenderName,neuter,중성
 GenderName,non-binary,논바이너리
 GenerationType,module,모듈
-GenerationType,quest,퀘스트
+GenerationType,quest,퀘스트r
 GradeName,artifact,유물
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,특별한
+GradeName,standard,일반
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,이 차가운 돌 표면은 뛰어난 솜씨로 만들어졌지만 세월이 지나면서 손상되었다.
 GroundName,chasm,갈라진 틈
 GroundName,dirt floor,흙 바닥
@@ -2224,7 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,착�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",시체를 압축해서 담기 위한 빈 통과 정육 도구등의 식기 모음.
 ItemDescription,A compact hand-held firearm.,휴대용 소형 화기.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",기병들이 주로 사용하는 구부러진 외날검. 지하세계의 존재들에게 특히 효과적이다.
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,A curved single-edged blade often used by cavalry.,기병들이 주로 사용하는 구부러진 외날검
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",훌륭한 섬유질 공급원인 구부러진 노란 과일.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",나무로 만든 납작한 투척 무기. 주로 사냥에 사용된다.
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","납작하고 동그란 케이크. 알고 있었겠지만, 팬으로 요리해서 만들었다."
@@ -2395,7 +2395,7 @@ ItemName,banana,바나나
 ItemName,banded mail,띠 갑옷
 ItemName,bardiche,바디시
 ItemName,battle robe,전투 로브
-ItemName,battle staff,
+ItemName,battle staff,전투 지팡이
 ItemName,battle-axe,전투 도끼
 ItemName,beartrap,곰덫
 ItemName,bec de corbin,베크드코르벵
@@ -3111,7 +3111,7 @@ LiteralText,AMBIENT SOUNDS,앰비언트 사운드
 LiteralText,amnesia,망각
 LiteralText,AMNESIA,망각
 LiteralText,anatomy,해부학
-LiteralText,animate mount,
+LiteralText,animate mount,생동화 탈것
 LiteralText,animate revenant,생동화 망령
 LiteralText,ANONYMOUS,익명
 LiteralText,anticlockwise 90 degrees,반시계 방향으로 90도
@@ -3237,7 +3237,7 @@ LiteralText,CREATE HORDE,군단 생성
 LiteralText,CREATE ITEM,아이템 생성
 LiteralText,CREATE SHOP,상점 생성
 LiteralText,CREATE SHRINE,신전 생성
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,휘발성 물질 생성
 LiteralText,CREATE TRAP,함정 생성
 LiteralText,CREATE WALL,벽 생성
 LiteralText,Create which direction?,어느 방향에 생성합니까?
@@ -3435,7 +3435,7 @@ LiteralText,influenced actions,영향받는 행동
 LiteralText,INSCRIBE,필경
 LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
-LiteralText,instruct each character,
+LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
 LiteralText,insulation,절연
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
@@ -3528,7 +3528,7 @@ LiteralText,no allies,동료 없음
 LiteralText,no ambient sounds,앰비언트 사운드 없음
 LiteralText,No appropriate items available,적합한 아이템이 없음
 LiteralText,no available knowledge,사용할 수 있는 지식이 없음
-LiteralText,no records found,
+LiteralText,no records found,기록이 없음
 LiteralText,no resistances,저항 없음
 LiteralText,no talents,재능 없음
 LiteralText,no transient effects,상태이상 없음
@@ -3651,7 +3651,7 @@ LiteralText,REVEAL,밝힘
 LiteralText,REVEAL ALL MAPS,모든 지도를 밝힘
 LiteralText,REVEAL THIS MAP,이 지도를 밝힘
 LiteralText,revealed,드러남
-LiteralText,revenant,
+LiteralText,revenant,레버넌트
 LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
@@ -3818,7 +3818,7 @@ LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,휘발성 물질
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
@@ -3845,7 +3845,7 @@ LiteralText,Your current movement and action speed in squares per second.,현재
 LiteralText,ZOOM,줌
 LiteralText,ZOOS,서식지
 LiteralText,zZz,쿨쿨쿨
-LocalityName,area,
+LocalityName,area,영역
 LocalityName,level,층
 LocalityName,map,지도
 LocalityName,site,지역
@@ -3891,7 +3891,7 @@ MotionPastName,ate,먹었다
 MotionPastName,captured,붙잡은
 MotionPastName,chanted,낭송했다
 MotionPastName,constructed,만들었다
-MotionPastName,copied,
+MotionPastName,copied,복사했다
 MotionPastName,dipped,담궜다
 MotionPastName,divined,신성확인 했다
 MotionPastName,drank,마셨다
@@ -3900,7 +3900,7 @@ MotionPastName,emptied,비웠다
 MotionPastName,exchanged,교환했다
 MotionPastName,flashed,플래시를 켰다
 MotionPastName,inscribed,필경했다
-MotionPastName,mounted,
+MotionPastName,mounted,위에 올라탔다
 MotionPastName,opened,열었다
 MotionPastName,packed,포장했다
 MotionPastName,played,연주했다
@@ -3925,7 +3925,7 @@ MotionPresentName,anoint,바르기
 MotionPresentName,capture,붙잡기
 MotionPresentName,chant,찬송하기
 MotionPresentName,construct,만들었다
-MotionPresentName,copy,
+MotionPresentName,copy,복사하기
 MotionPresentName,dig,땅파기
 MotionPresentName,dip,담그기
 MotionPresentName,divine,신성확인
@@ -3935,7 +3935,7 @@ MotionPresentName,empty,비우기
 MotionPresentName,exchange,교환
 MotionPresentName,flash,플래시 켜기
 MotionPresentName,inscribe,필경하기
-MotionPresentName,mount,
+MotionPresentName,mount,타기
 MotionPresentName,open,열기
 MotionPresentName,pack,포장한다
 MotionPresentName,play,연주하기
@@ -4649,10 +4649,10 @@ TraversalPastName,travelled,이동했다
 TraversalPresentName,ascend,오르기
 TraversalPresentName,descend,내려가기
 TraversalPresentName,travel,이동하기
-VolatileName,blaze,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,불
+VolatileName,electricity,전기
+VolatileName,freeze,얼음
+VolatileName,steam,증기
 WallStructureName,illusionary,환상
 WallStructureName,permanent,영구
 WallStructureName,solid,견고
