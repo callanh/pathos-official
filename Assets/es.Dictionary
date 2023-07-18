@@ -36,16 +36,12 @@ AnatomyName,mind,
 AnatomyName,mounted,montado
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,satisfecho
-ApetiteName,hungry,hambriento
-ApetiteName,satiated,saciado
-ApetiteName,starving,muriendo de hambre
-ApetiteName,weak,débil
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Una larga capa abierta en la parte del frente y ajustada al pecho con un broche.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un pequeño pero resistente armadura de mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Una fina y delicada armadura de mithril.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Una fina y brillante armadura de mithril.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Este clásico accesorio de mago es un gorro puntiagudo decorado con lunas y estrellas.
+AppearanceName,adamantine staff,
 AppearanceName,agate ring,anillo de ágata
 AppearanceName,aluminium wand,varita de aluminio
 AppearanceName,angled poleaxe,alabarda curvada
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,amuleto esférico
 AppearanceName,spiked wand,varita puntiaguda
 AppearanceName,spotted book,libro moteado
 AppearanceName,square amulet,amuleto cuadrado
-AppearanceName,staff,bastón
 AppearanceName,stained book,libro manchado
 AppearanceName,steel boots,botas de acero
 AppearanceName,steel ring,anillo de acero
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,gema amarilla
 AppearanceName,yellow potion,poción amarilla
 AppearanceName,yellowish brown gem,gema marrón amarillenta
 AppearanceName,zinc wand,varita de zinc
+AppetiteName,content,satisfecho
+AppetiteName,hungry,hambriento
+AppetiteName,satiated,saciado
+AppetiteName,starving,muriendo de hambre
+AppetiteName,weak,débil
 AttackType,bite,mordisco
 AttackType,blast,explosión
 AttackType,breath,aliento
@@ -836,6 +836,7 @@ CounterName,captures,capturas
 CounterName,casts,hechizos
 CounterName,chants,cantos
 CounterName,constructs,construcciones
+CounterName,copies,
 CounterName,crafts,artesanías
 CounterName,decapitations,decapitaciones
 CounterName,digs,excavaciones
@@ -854,6 +855,7 @@ CounterName,jumps,saltos
 CounterName,kicks,patadas
 CounterName,lifesaves,salvavidas
 CounterName,mimics,imitaciones
+CounterName,mounts,
 CounterName,moves,movimientos
 CounterName,opens,aperturas
 CounterName,packs,empaquetados
@@ -970,7 +972,6 @@ EffectProperty,lies,mentiras
 EffectProperty,loyal only,
 EffectProperty,material,material
 EffectProperty,materials,materiales
-EffectProperty,objects,objetos
 EffectProperty,polite,cortés
 EffectProperty,properties,propiedades
 EffectProperty,punishments,castigos
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,eliminar talento aleatorio
 EffectProperty,removes all transients,remueve todos los estados transitorios
 EffectProperty,reset random equipment,restablecer equipamiento al azar
 EffectProperty,reveal,revelar
-EffectProperty,revenants,renacidos
 EffectProperty,sanctity,santidad
 EffectProperty,skills,habilidades
 EffectProperty,source,fuente
@@ -998,7 +998,6 @@ EffectProperty,whole stack,pila entera
 EffectType,afflict,afligir
 EffectType,alert,alertar
 EffectType,amnesia,amnesia
-EffectType,animate,animar
 EffectType,area transient,area efecto transitorio
 EffectType,assess,evaluar
 EffectType,blinking,salto
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,convertir roca
 EffectType,convert door,convertir puerta
 EffectType,convert fixture,convertir accesorio
 EffectType,convert floor,convertir suelo
+EffectType,convert spill,
 EffectType,convert wall,convertir muro
 EffectType,create boulder,crear roca
 EffectType,create fixture,crear accesorio
 EffectType,create golem,crear golem
 EffectType,create horde,crear horda
 EffectType,create nook,crear estructura
+EffectType,create spill,
 EffectType,create trap,crear trampa
 EffectType,create wall,crear pared
 EffectType,decapitate,decapitar
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,encantar recurso
 EffectType,engulf,engullir
 EffectType,enlightenment,iluminación
 EffectType,exchange,intercambiar
+EffectType,extinguish spill,
 EffectType,gain level,ganar nivel
 EffectType,gain skill,ganar habilidad
 EffectType,genocide,genocidio
@@ -1064,6 +1066,7 @@ EffectType,raise dead,levantar muertos
 EffectType,recall,retirar
 EffectType,release,liberar
 EffectType,remove curse,remover maldición
+EffectType,remove spill,
 EffectType,remove transient,remover efecto transitorio
 EffectType,replicate asset,replicar recurso
 EffectType,restock,reaprovisionar
@@ -1140,7 +1143,7 @@ EncumbranceName,unencumbered,sin carga
 EngulfmentName,engulfed,tragado
 EngulfmentName,swallowed,engullido
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,Una criatura mediana propensa a grandes ambiciones. Corta vida pero ubicua; no deben ser subestimados.
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Seres amorfos que carecen de una forma típica, pero a menudo adoptan una forma translúcida similar a la de un humanoide. Aunque son inconfundibles por cualquier cosa que no sea una masa similar al plasma, esta forma les permite usar ropa y herramientas."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Una antigua raza de imponentes reclusos. Su tamaño aterrador les da una fuerza inmensa, complementada por una dieta voraz de carnes y minerales."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Entidades astrales que contienen el indomable espiritu de aventureros derrotados. Al no tener motivaciones propias, se alegran de permitir la posesión. Para el aventurero fallecido, es una segunda oportunidad de venganza o redención. Nacidos de materia astral, están ligeramente armados fisicamente, son translúcidos y pueden moverse libremente a través de obstáculos físicos."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Hermosos seres de otro mundo caracterizados por su peculiar halo y sus alas emplumadas. Fuertemente adaptados al conflicto entre el bien y el mal, sienten la divinidad dentro de todo lo que poseen."
@@ -1158,13 +1161,14 @@ EntityDescription,"The lesser of the two ferrozygotic puddings, the brown puddin
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Esta extraña burbuja viviente de fluidos corrosivos no parece tener ninguna capacidad ofensiva.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Pequeños espíritus alados, intrínsecamente mágicos y extraordinariamente bellos. Cuando se sienten amenazados, pueden escapar a través de distorsiones en la realidad espacial."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Supervivientes nómadas similares a tortugas que, desde el momento en que pueden caminar, recorren el mundo llevando consigo la comodidad y protección de su hogar en sus espaldas, que es el lugar donde nacieron."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Criaturas feas y brutales con tendencias caníbales; esta raza guerrera es conocida por su impresionante fuerza e incapacidades intelectuales.
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Injustamente caracterizadas como cobardes y débiles, estas diminutas criaturas reptilianas superan sus limitaciones físicas mediante el empleo de estrategias viciosas y astutas."
 EntityName,abbot,abad
 EntityName,acid blob,masa amorfa ácida
 EntityName,acid worm,gusano ácido
 EntityName,acolyte,acólito
+EntityName,adamantine golem,
 EntityName,adult black dragon,dragón negro adulto
 EntityName,adult blue dragon,dragón azul adulto
 EntityName,adult deep dragon,dragón oscuro adulto
@@ -1657,7 +1661,7 @@ EntityName,pit viper,víbora de pozo
 EntityName,pixie,duendecillo
 EntityName,plains centaur,centauro de las llanuras
 EntityName,Planetar,Planetar
-EntityName,plasmoid,
+EntityName,plasmoid,plasmóide
 EntityName,plastic golem,golem de plástico
 EntityName,pony,poni
 EntityName,proudfoot,proudfoot
@@ -1759,7 +1763,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigre monstruoso
 EntityName,titan,titán
 EntityName,titanothere,titanotérido
-EntityName,tortle,
+EntityName,tortle,tortuga
 EntityName,tracker,cazador
 EntityName,transmuter,transmutador
 EntityName,trapper,trampero
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} torpemente {MotionPastName} al objeto {AssetName} y nada ocurrió
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} torpemente {MotionPastName} {Use:AssetName} con {With:AssetName}
 FormatText,{CharacterName} Inventory,Inventario de {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} está {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} está {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} se está sintiendo {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} ya no está atrapado
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} ahora es {QualificationName} en {SkillName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,¿{MotionPresentName
 FormatText,{MotionPresentName} {AssetName} with which item?,¿{MotionPresentName} {AssetName} con qué objeto?
 FormatText,{MotionPresentName} {FeatureName} which direction?,¿{MotionPresentName} {FeatureName} en qué dirección?
 FormatText,{MotionPresentName} which item on {FeatureName}?,¿{MotionPresentName} qué objeto en {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lanzar
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} {ItemName} {CharacterName} {SanctityName} {ContainerQualifier} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},a menos que resista {ElementName}
 FormatText,unless target has {PropertyName},a menos que el objetivo tenga {PropertyName}
 FormatText,versus {Something},versus {Something}
 FormatText,when {Chance},cuando {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},cuando {ITEMNAME}
 FormatText,when {KINDNAMES},cuando {KINDNAMES}
 FormatText,when {MATERIALNAME},cuando {MATERIALNAME}
@@ -2148,6 +2154,9 @@ GenderName,neuter,neutral
 GenderName,non-binary,no-binario
 GenerationType,module,módulo
 GenerationType,quest,mision
+GradeName,artifact,artefacto
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La fría piedra fue inmaculadamente elaborada pero está marcada por el daño y el tiempo.
 GroundName,chasm,abismo
 GroundName,dirt floor,suelo de tierra
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Una 
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Una colección de utensilios, incluidas latas vacías y herramientas de despiece, para empaquetar cadáveres."
 ItemDescription,A compact hand-held firearm.,Un arma de mano compacta.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Una hoja curvada de un solo filo, utilizada a menudo por la caballería, especialmente efectiva contra las criaturas del inframundo."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Una fruta amarilla curvada, y una gran fuente de fibra."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Un arma arrojadiza plana hecha de madera, a menudo utilizada para la caza."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Un pastel plano y redondo. Cocinado en una sartén, como puedes suponer."
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Pequeñas puntas de metal arrojadas al suelo para dificultar la movilidad.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Sandalias aladas hechas de oro imperecedero que hacen volar al usuario rápida y silenciosamente.
 ItemDescription,Zapping it at a wall creates a big tunnel.,Utilizarla en una pared crea un gran túnel.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,ágata
 ItemName,aklys,aklys
 ItemName,alchemy smock,bata de alquimia
@@ -2372,6 +2395,7 @@ ItemName,banana,banana
 ItemName,banded mail,malla de bandas
 ItemName,bardiche,bardiche
 ItemName,battle robe,tunica de combate
+ItemName,battle staff,
 ItemName,battle-axe,hacha de guerra
 ItemName,beartrap,trampa para osos
 ItemName,bec de corbin,bec de corbin
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,nudillos de latón
 ItemName,broadsword,espada ancha
 ItemName,bronze bell,campana de bronce
 ItemName,bronze plate mail,malla de placas de bronce
+ItemName,Brumstyk,
 ItemName,bullet,bala
 ItemName,bullwhip,látigo
 ItemName,caltrops,abrojo
@@ -2657,6 +2682,7 @@ ItemName,meat stick,palo de carne
 ItemName,meatball,albóndiga
 ItemName,melon,melón
 ItemName,Mirrorbright,Espejo Reluciente.
+ItemName,Miserus,
 ItemName,mithril arrow,flecha de mithril
 ItemName,mithril barding,barda de mithril
 ItemName,mithril battle-axe,hacha de batalla de mithril
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,manguera de goma
 ItemName,ruby,rubí
 ItemName,Ruby Key,llave de rubí
 ItemName,Runesword,Espada Rúnica
+ItemName,sabre,
 ItemName,sack,saco
 ItemName,saddle,montura
 ItemName,sai,sai
@@ -3041,13 +3068,13 @@ KindName,mummy,momia
 KindName,naga,naga
 KindName,ogre,ogro
 KindName,orc,orco
-KindName,plasmoid,
+KindName,plasmoid,plasmóide
 KindName,pudding,pudín
 KindName,quadruped,cuadrúpedo
 KindName,rodent,roedor
 KindName,snake,serpiente
 KindName,spider,araña
-KindName,tortle,
+KindName,tortle,tortuga
 KindName,trapper,trampero
 KindName,troll,troll
 KindName,umber,umber
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,abolición de las armas de fuego
 LiteralText,ABOUT,ACERCA DE
 LiteralText,About Pathos,Acerca de Pathos
 LiteralText,Abyss,Abismo
-LiteralText,accelerated animations,animaciones aceleradas
 LiteralText,accelerated resting,descanso acelerado
 LiteralText,actions,acciones
 LiteralText,ADD LEVEL,AÑADIR NIVEL
@@ -3082,10 +3108,11 @@ LiteralText,ALL,TODO
 LiteralText,ALL AT ONCE,TODO DE UNA VEZ
 LiteralText,always,siempre
 LiteralText,AMBIENT SOUNDS,SONIDOS AMBIENTALES
-LiteralText,AMMO,MUNICIÓN
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
 LiteralText,anatomy,anatomía
+LiteralText,animate mount,
+LiteralText,animate revenant,animar renacido
 LiteralText,ANONYMOUS,ANÓNIMO
 LiteralText,anticlockwise 90 degrees,giro de noventa grados contrarreloj
 LiteralText,any item,cualquier ítem
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,¿Estás seguro de que quieres perder este personaje y terminar tu aventura?
 LiteralText,ARE YOU SURE?,¿ESTÁS SEGURO?
 LiteralText,area of effect,área de efecto
-LiteralText,artifact,artefacto
 LiteralText,ARTIFACTS,ARTEFACTOS
 LiteralText,ASCEND TO PREVIOUS LEVEL,ASCENDER AL NIVEL ANTERIOR
-LiteralText,asleep,dormido
 LiteralText,assets,bienes
 LiteralText,ATMOSPHERE,ATMÓSFERA
 LiteralText,attack modifier,modificador de ataque
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,discusiones beta
 LiteralText,Black background,fondo negro
 LiteralText,Black Market,Mercado Negro
 LiteralText,blasphemy,blasfemia
-LiteralText,blessed,bendito
-LiteralText,BLESSED,BENDITO
 LiteralText,BLINK,SALTO
 LiteralText,Blink which direction?,¿Saltar hacia qué dirección?
 LiteralText,block,bloquear
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,ROTO
 LiteralText,burst rate,tasa de ráfaga
 LiteralText,BUY,COMPRAR
 LiteralText,BUY ALL,COMPRAR TODO
-LiteralText,by Callan Hodgskin,por Callan Hodgskin
 LiteralText,CANCEL,CANCELAR
 LiteralText,cancellation,cancelación
 LiteralText,CANCELLED,CANCELADO
@@ -3167,8 +3189,6 @@ LiteralText,Character,Personaje
 LiteralText,CHARACTER,PERSONAJE
 LiteralText,characters,personajes
 LiteralText,charged items,ítems cargados
-LiteralText,charm,encantamiento
-LiteralText,CHARMED,ENCANTADO
 LiteralText,Chat on Discord,chatear en Discord
 LiteralText,check for updates?,¿buscar actualizaciones?
 LiteralText,checking for updates,buscando actualizaciones
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,click aquí para reintentar
 LiteralText,Click to send detected issues to the author,click aquí para enviar los problemas detectados al autor
 LiteralText,CLOSE,CERRAR
 LiteralText,closed,cerrado
-LiteralText,CLOSED,CERRADO
 LiteralText,Coding on Medium,Programación en Medium
 LiteralText,coins,monedas
 LiteralText,companion,compañero
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,CREAR HORDA
 LiteralText,CREATE ITEM,CREAR ÍTEM
 LiteralText,CREATE SHOP,CREAR TIENDA
 LiteralText,CREATE SHRINE,CREAR SANTUARIO
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CREAR TRAMPA
 LiteralText,CREATE WALL,CREAR PARED
 LiteralText,Create which direction?,¿Crear en qué dirección?
 LiteralText,CREDITS,CRÉDITOS
 LiteralText,CROP,CAPA
-LiteralText,cursed,maldito
 LiteralText,CURSED,MALDITO
 LiteralText,CUSTOM,PERSONALIZADO
 LiteralText,CUSTOM HERO,HÉROE PERSONALIZADO
 LiteralText,CUSTOM MODULES,MODULOS PERSONALIZADOS
-LiteralText,DAMAGE,DAÑO
 LiteralText,dark,oscuro
-LiteralText,dark-hidden,oscuro-oculto
 LiteralText,DEAD END,CAMINO SIN SALIDA
 LiteralText,death,muerte
-LiteralText,DEATH,MUERTE
 LiteralText,deathray,rayo mortal
 LiteralText,decapitation,decapitar
 LiteralText,DECEASED,FALLECIDO
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,Desactivar botón de continuar
 LiteralText,disable haptic feedback,Deshabilitar la retroalimentación háptica
 LiteralText,Disable idle animations,Deshabilitar animaciones estaticas
 LiteralText,Disable introduction boom,Desactivar estruendo de introducción
+LiteralText,Disable mask animations,
 LiteralText,Disable online services,Desactivar servicios online
 LiteralText,Disable pitch shifting,desactivar cambio de tono
 LiteralText,Disable spacebar real-time toggle,desactivar barra espaciadora para tiempo real.
+LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,DESCONECTAR
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Se detectó un error en la conexión . Asegúrate que tengas una conexión estable y que todos los dispositivos tengan la misma versión de Pathos.
 LiteralText,Discuss on Reddit,Discutir en Reddit
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,rebajar a
 LiteralText,downloading update,descargando actualización
 LiteralText,drop,soltar
 LiteralText,DROP,SOLTAR
-LiteralText,DUAL,DUAL
 LiteralText,DUAL WIELD,DOBLE EMPUÑADURA
 LiteralText,Dungeon,Mazmorra
 LiteralText,duration,duración
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,ESCAPE
 LiteralText,escape traps,escapar trampa
 LiteralText,escape with,escapar con
 LiteralText,escaped,escapado
-LiteralText,ESCAPED,ESCAPADO
 LiteralText,ESSENCE,ESENCIA
 LiteralText,evolution,evolucion
 LiteralText,Examine which object?,¿Examinar qué objeto?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,EXPANDIR
 LiteralText,EXPEL,EXPULSAR
 LiteralText,experience,experiencia
 LiteralText,EXPERIENCE,EXPERIENCIA
-LiteralText,EXPLODED,EXPLOTADO
 LiteralText,explosion,explosión
 LiteralText,EXPORT,EXPORTAR
 LiteralText,extinctions,extinciones
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,CARACTERÍSTICAS
 LiteralText,FEED,ALIMENTAR
 LiteralText,FEEDBACK,RETROALIMENTACIÓN
 LiteralText,FILES,ARCHIVOS
-LiteralText,Find out what is coming in the next update.,Descubre qué incluirá la próxima actualización.
 LiteralText,fixed range,rango fijo
 LiteralText,FIZZLE,EFERVESCENCIA
 LiteralText,Floor,Piso
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,CONTRATAR
 LiteralText,HORDES,HORDAS
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Sin embargo, quizás quieras completar tus aventuras antes de actualizar."
-LiteralText,HUH?,¿UH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Espero que estés disfrutando de tus aventuras. No dudes en contactarme con tus comentarios y sugerencias.
 LiteralText,identified items,ítems identificados
-LiteralText,IDENTIFY,IDENTIFICAR
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICAR TODOS LOS ÍTEMS DEL SUELO
 LiteralText,ILLITERATE,ANALFABETO
 LiteralText,illusion,ilusión
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,Importa un archivo
 LiteralText,IMPOSSIBLE,IMPOSIBLE
 LiteralText,in both hands,en ambas manos
 LiteralText,incarceration,encarcelamiento
-LiteralText,increase,incrementar
 LiteralText,INCREASE,INCREMENTAR
 LiteralText,INDEX,ÍNDICE
 LiteralText,individual crafting,elaboración individual
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,acciones influenciadas
 LiteralText,INSCRIBE,INSCRIBIR
 LiteralText,INSCRIBE ITEM,INSCRIBIR ÍTEM
 LiteralText,inscription?,inscripción?
-LiteralText,INSTRUCT,ORDENAR
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,ORO INSUFICIENTE
 LiteralText,insulation,aislamiento
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Interesantes habitaciones y secretos esperan pero no te detengas; debes descender o moriras. Basado en la generacion de mapas de Shattered Pixel Dungeon.
@@ -3462,7 +3473,6 @@ LiteralText,light,luz
 LiteralText,LIGHT,ILUMINACIÓN
 LiteralText,light radius,radio de luz
 LiteralText,limits,límites
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Enlaces a todas las plataformas soportadas, incluyendo iOS, Android y Windows."
 LiteralText,LIST,LISTA
 LiteralText,lit,iluminado
 LiteralText,LIVING,VIVO
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,perder habilidad
 LiteralText,Lost Chambers,Cámaras Perdidas
 LiteralText,LOW MANA,MANÁ ESCASO
 LiteralText,Ludios Cache,Caché de Ludios
-LiteralText,MAIN,PRINCIPAL
 LiteralText,MAIN WIELD,EMPUÑADURA PRINCIPAL
 LiteralText,mana,maná
 LiteralText,MANA,MANÁ
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,MÍMICO
 LiteralText,mimicking,imitador
 LiteralText,Mines,Minas
 LiteralText,Minetown,Ciudad Minera
-LiteralText,missile,misil
 LiteralText,modifier,modificador
 LiteralText,MOUNT,MONTAR
 LiteralText,Mount which direction?,¿Montar en qué dirección?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,sin aliados
 LiteralText,no ambient sounds,sin sonidos ambientales
 LiteralText,No appropriate items available,No hay ítems apropiados disponibles
 LiteralText,no available knowledge,sin conocimiento disponible
+LiteralText,no records found,
 LiteralText,no resistances,sin resistencias
 LiteralText,no talents,sin talentos
 LiteralText,no transient effects,sin efectos transitorios
@@ -3545,14 +3554,12 @@ LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,ANULAR
 LiteralText,OVERVIEW,RESUMEN
-LiteralText,PACIFIED,PACIFICADO
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPO
 LiteralText,passage,pasaje
 LiteralText,passive (no attacking),pasivo (sin atacar)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos puede jugarse en modo cooperativo en pantalla dividida con hasta cuatro jugadores
-LiteralText,pathos development @ paypal or stripe,desarrollo de pathos en paypal o stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos es un juego gratuito y está desarrollado por amor al juego.
+LiteralText,pathos development @ paypal,desarrollo de pathos en paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos no puede cargar tu aventura. Envíeme su archivo guardado para que pueda investigar el problema. Incluso puedo reparar el archivo o actualizar la aplicación con una solución. Su comprensión es apreciada.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos podría ser la siguiente evolución de Nethack.
 LiteralText,penalty,penalización
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
 LiteralText,porter,portador de
 LiteralText,PRAY,ORAR
-LiteralText,PRAYING,ORANDO
 LiteralText,preservation,preservación
 LiteralText,prevent revenant levels,prevenir niveles de renacidos
 LiteralText,prisoner,prisionero
@@ -3632,10 +3638,8 @@ LiteralText,resident?,residente?
 LiteralText,resistances,resistencias
 LiteralText,RESISTS,RESISTE
 LiteralText,Rest,Descansar
-LiteralText,REST,DESCANSAR
 LiteralText,Rest how many turns?,¿Descansar por cuántos turnos?
 LiteralText,restarting to update,reiniciando para actualizar
-LiteralText,RESTING,DESCANSANDO
 LiteralText,RESTORED,RESTAURADO
 LiteralText,RESURRECT,RESUCITAR
 LiteralText,Resurrect and continue,Resucitar y continuar
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,REVELAR
 LiteralText,REVEAL ALL MAPS,REVELAR TODOS LOS MAPAS
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,revelado
+LiteralText,revenant,
 LiteralText,REVERT,REVERTIR
 LiteralText,RIGHT RING,ANILLO DERECHO
 LiteralText,rigid,rígido
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,CHATARRA
 LiteralText,SEALED,SELLADO
 LiteralText,Search,BUSCAR
 LiteralText,Search how many turns?,¿Buscar durante cuántos turnos?
-LiteralText,SEARCHING,BUSCANDO
 LiteralText,secret,secreto
 LiteralText,SECRET,SECRETO
 LiteralText,seed,semilla
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,ESCOGER DIFICULTAD
 LiteralText,set starting location,escoge ubicación de inicio
 LiteralText,SETTINGS,CONFIGURACIONES
 LiteralText,sfx volume,volumen sfx
-LiteralText,Share your tragic and heroic stories with other players.,Comparte tus historias trágicas y heroicas con otros jugadores.
 LiteralText,SHARE//exchange,COMPARTIR
 LiteralText,SHARE//publish,COMPARTIR
 LiteralText,SHOPS,COMERCIOS
 LiteralText,Show debugging information,Mostrar información de debug.
 LiteralText,Show time clock,Mostrar hora del rejoj
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Muestra tu aprecio ayudando a dar a conocer Pathos, invitando a otros jugadores."
 LiteralText,SHRINES,SANTUARIO
 LiteralText,SIGN-IN,REGISTRARSE
 LiteralText,size,tamaño
@@ -3749,7 +3751,6 @@ LiteralText,terrain,terreno
 LiteralText,The attack score is your aptitude for hitting an opponent.,Los puntos de ataque son tu aptitud para golpear a un oponente.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,El desafío es mejorar las mecánicas mientras se mantiene la esencia de lo que lo hace el mejor juego de todos los tiempos.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Los puntos de defensa representan cuán protegido estás de ser golpeado por un oponente.
-LiteralText,There are no known polymorphs,No hay polimorfos conocidos
 LiteralText,There is a new update available!,¡Hay una nueva actualización disponible!
 LiteralText,there is nothing to place here,no hay nada para colocar aquí
 LiteralText,there is nothing to remove here,no hay nada para quitar aquí
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,DEMASIADO PESADO
 LiteralText,TOO HUNGRY,MUY HAMBRIENTO
 LiteralText,TOO SMALL,MUY PEQUEÑO
 LiteralText,TOO WEAK,MUY DÉBIL
-LiteralText,touch,tocar
 LiteralText,TRACKS,CANCIONES
 LiteralText,TRADE,COMERCIO
 LiteralText,transform to,transformar en
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,Vanidad
 LiteralText,VIEW,VER
 LiteralText,Visit the website,Visitar la web
 LiteralText,VOID SPACE,ESPACIO VACÍO
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?
-LiteralText,WAITING,ESPERANDO
 LiteralText,WARPING,DEFORMAR
 LiteralText,was killed,fue asesinado
-LiteralText,was strangled,fue estrangulado
 LiteralText,weakness to,debilidad a
 LiteralText,weight,peso
 LiteralText,when afflicted,cuando está afligido
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,SENTIDO INCORRECTO
 LiteralText,"You are playing as anonymous, please register!","Estás jugando de manera anónima, ¡por favor regístrate!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Puedes BUSCAR puertas secretas usando el botón del OJO.
 LiteralText,Your current movement and action speed in squares per second.,Tu velocidad de movimiento actual en número de cuadrados por segundo.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Tus opiniones son valoradas e influencian mis planes de desarrollos futuros.
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOLÓGICOS
 LiteralText,zZz,zZz
-LocalityName,Level,Nivel
-LocalityName,Map,Mapa
-LocalityName,Site,Sitio
-LocalityName,Square,Cuadra
-LocalityName,World,Mundo
-LocalityName,Zone,Zona
+LocalityName,area,
+LocalityName,level,nivel
+LocalityName,map,mapa
+LocalityName,site,sitio
+LocalityName,square,cuadra
+LocalityName,world,mundo
+LocalityName,zone,zona
+MaterialName,adamantine,
 MaterialName,air,aire
 MaterialName,animal,animal
 MaterialName,bone,hueso
@@ -3891,6 +3891,7 @@ MotionPastName,ate,comió
 MotionPastName,captured,capturó
 MotionPastName,chanted,cantó
 MotionPastName,constructed,construyó
+MotionPastName,copied,
 MotionPastName,dipped,sumergió
 MotionPastName,divined,adivinó
 MotionPastName,drank,bebió
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,vació
 MotionPastName,exchanged,intercambiado
 MotionPastName,flashed,flasheos
 MotionPastName,inscribed,inscribió
+MotionPastName,mounted,
 MotionPastName,opened,abrió
 MotionPastName,packed,empacó
 MotionPastName,played,tocó
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,ungir
 MotionPresentName,capture,capturar
 MotionPresentName,chant,cantar
 MotionPresentName,construct,construir
+MotionPresentName,copy,
 MotionPresentName,dig,excavar
 MotionPresentName,dip,sumergir
 MotionPresentName,divine,adivinar
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,vaciar
 MotionPresentName,exchange,intercambio
 MotionPresentName,flash,flashear
 MotionPresentName,inscribe,inscribir
+MotionPresentName,mount,
 MotionPresentName,open,abrir
 MotionPresentName,pack,empacar
 MotionPresentName,play,tocar
@@ -3952,9 +3956,9 @@ MotionPresentName,study,estudiar
 MotionPresentName,swat,aplastar
 MotionPresentName,write,escribir
 MotionPresentName,zap,destellar
-MurderTypeName,Allied,Aliado
-MurderTypeName,Every,Todos
-MurderTypeName,Hostile,Hostil
+MurderTypeName,allied,aliado
+MurderTypeName,every,todos
+MurderTypeName,hostile,hostil
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Este puente de madera dura tiene una integridad sólida a pesar de muchos años de uso.
 PlatformName,crystal bridge,puente de cristal
 PlatformName,wooden bridge,puente de madera
@@ -4174,15 +4178,15 @@ RaceName,ogre//non-binary,ogro
 RaceName,orc//female,orca
 RaceName,orc//male,orco
 RaceName,orc//non-binary,orco
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plasmóide
+RaceName,plasmoid//male,plasmóide
+RaceName,plasmoid//non-binary,plasmóide
 RaceName,satyr//female,satira
 RaceName,satyr//male,satiro
 RaceName,satyr//non-binary,satiro
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,tortuga
+RaceName,tortle//male,tortuga
+RaceName,tortle//non-binary,tortuga
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,viajó
 TraversalPresentName,ascend,asciende
 TraversalPresentName,descend,desciende
 TraversalPresentName,travel,viaja
+VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
+VolatileName,steam,
 WallStructureName,illusionary,ilusionaria
 WallStructureName,permanent,permanente
 WallStructureName,solid,sólida

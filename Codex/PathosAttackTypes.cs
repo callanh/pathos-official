@@ -125,6 +125,7 @@ namespace Pathos
 
       tentacle = Add("tentacle", DamageType: null, E =>
       {
+        E.IsOpenWielding = true;
       });
 
       touch = Add("touch", DamageType: null, E =>

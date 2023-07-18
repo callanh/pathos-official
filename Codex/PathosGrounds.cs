@@ -21,6 +21,13 @@ namespace Pathos
       var Sonics = Codex.Sonics;
       var Skills = Codex.Skills;
 
+      CodexVolatiles Volatiles = null;
+
+      CodexRecruiter.Enrol(() =>
+      {
+        Volatiles = Codex.Volatiles;
+      });
+
       Ground AddGround(string Name, Material Substance, Glyph Glyph, Action<GroundEditor> Action)
       {
         return Register.Add(G =>
@@ -64,6 +71,8 @@ namespace Pathos
       wooden_floor = AddGround("wooden floor", Materials.wood, Glyphs.wooden_floor, G =>
       {
         G.Description = null;
+
+        G.AddReaction(Chance.OneIn10, Elements.fire, A => A.CreateSpill(Volatiles.blaze, 1.d100() + 100));
 
         G.SetBlock(Codex.Blocks.wooden_barrel);
       });
@@ -121,6 +130,8 @@ namespace Pathos
       {
         G.Description = null;
 
+        G.AddReaction(Chance.OneIn10, Elements.shock, A => A.CreateSpill(Volatiles.electricity, 1.d100() + 100));
+
         G.SetBlock(Codex.Blocks.wooden_barrel);
       });
 
@@ -129,7 +140,8 @@ namespace Pathos
         G.SetSlippery(Codex.Anatomies.limbs, Codex.Attributes.dexterity, Sonics.slip);
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: null, ToGround: water, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: ice, ToGround: water, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.cold, A => A.CreateSpill(Volatiles.freeze, 1.d100() + 100));
       });
 
       lava = AddGround("lava", Materials.lava, Glyphs.lava, G =>
@@ -137,6 +149,8 @@ namespace Pathos
         G.Description = null;
 
         G.SetBlock(Codex.Blocks.stone_boulder);
+
+        G.AddReaction(Chance.Always, Elements.water, A => A.CreateSpill(Volatiles.steam, 1.d100() + 100));
 
         G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, Skills.swimming,
           Enter => Enter.Harm(Elements.fire, 100.d10()),
@@ -151,8 +165,9 @@ namespace Pathos
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertFloor(FromGround: null, ToGround: ice, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertFloor(FromGround: water, ToGround: ice, Locality.Square));
         G.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.stunned, 3.d6()));
+        G.AddReaction(Chance.Always, Elements.fire, A => A.CreateSpill(Volatiles.steam, 1.d100() + 100));
 
         G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact, Skills.swimming,
           Enter =>

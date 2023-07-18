@@ -36,16 +36,12 @@ AnatomyName,mind,
 AnatomyName,mounted,hátason
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,elégedett
-ApetiteName,hungry,éhes
-ApetiteName,satiated,megcsömörlött
-ApetiteName,starving,éhező
-ApetiteName,weak,gyenge
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,"Egy hosszú, elöl nyitott köpönye, melyet a mellrésznél kapoccsal rögzítenek."
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Egy rövid, de erős kinézetű mithrilpáncélzat."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Egy karcsú és kényesnek tűnő mithrilpáncélzat.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Egy keskeny és fényes mithrilpáncélzat.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,"Ez a csúcsos, holdakkal és csillagokkal dekorált sapka klasszikus varázslókelléknek számít."
+AppearanceName,adamantine staff,
 AppearanceName,agate ring,achátgyűrű
 AppearanceName,aluminium wand,alumíniumpálca
 AppearanceName,angled poleaxe,hajlított csatabárd
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,gömbölyű amulett
 AppearanceName,spiked wand,hegyes pálca
 AppearanceName,spotted book,pöttyös könyv
 AppearanceName,square amulet,négyszögletű amulett
-AppearanceName,staff,bot
 AppearanceName,stained book,foltos könyv
 AppearanceName,steel boots,acélcsizma
 AppearanceName,steel ring,acélgyűrű
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,sárga drágakő
 AppearanceName,yellow potion,sárga főzet
 AppearanceName,yellowish brown gem,sárgásbarna drágakő
 AppearanceName,zinc wand,cinkpálca
+AppetiteName,content,elégedett
+AppetiteName,hungry,éhes
+AppetiteName,satiated,megcsömörlött
+AppetiteName,starving,éhező
+AppetiteName,weak,gyenge
 AttackType,bite,harapás
 AttackType,blast,robbantás
 AttackType,breath,lehelés
@@ -836,6 +836,7 @@ CounterName,captures,elfogások
 CounterName,casts,varázslások
 CounterName,chants,kántálások
 CounterName,constructs,építések
+CounterName,copies,
 CounterName,crafts,barkácsolások
 CounterName,decapitations,
 CounterName,digs,ásások
@@ -854,6 +855,7 @@ CounterName,jumps,ugrások
 CounterName,kicks,rúgások
 CounterName,lifesaves,életmentések
 CounterName,mimics,mímelések
+CounterName,mounts,
 CounterName,moves,mozgások
 CounterName,opens,kinyitások
 CounterName,packs,elrakások
@@ -970,7 +972,6 @@ EffectProperty,lies,hazugságok
 EffectProperty,loyal only,
 EffectProperty,material,anyag
 EffectProperty,materials,anyagok
-EffectProperty,objects,tárgyak
 EffectProperty,polite,illedelmes
 EffectProperty,properties,tulajdonságok
 EffectProperty,punishments,büntetések
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,véletlenszerű készség eltávolítása
 EffectProperty,removes all transients,összes átmeneti hatás eltávolítása
 EffectProperty,reset random equipment,véletlenszerű felszerelés visszaállítása
 EffectProperty,reveal,felfed
-EffectProperty,revenants,kísértetek
 EffectProperty,sanctity,szentség
 EffectProperty,skills,képességek
 EffectProperty,source,forrás
@@ -998,7 +998,6 @@ EffectProperty,whole stack,egész halom
 EffectType,afflict,lesújtás
 EffectType,alert,riasztás
 EffectType,amnesia,amnézia
-EffectType,animate,élesztés
 EffectType,area transient,területi hatás
 EffectType,assess,értékelés
 EffectType,blinking,elillanás
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,következővé alakul:
 EffectType,convert door,következővé alakul:
 EffectType,convert fixture,következővé alakul:
 EffectType,convert floor,következővé alakul:
+EffectType,convert spill,
 EffectType,convert wall,következővé alakul:
 EffectType,create boulder,akadályt hoz létre
 EffectType,create fixture,tereptárgyat hoz létre
 EffectType,create golem,gólemet hoz létre
 EffectType,create horde,hordát hoz létre
 EffectType,create nook,bemélyedést hoz létre:
+EffectType,create spill,
 EffectType,create trap,csapdát hoz létre
 EffectType,create wall,falat hoz létre
 EffectType,decapitate,lefejezés
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,eszköz igézése
 EffectType,engulf,elnyelés
 EffectType,enlightenment,felvilágosodás
 EffectType,exchange,kicserél
+EffectType,extinguish spill,
 EffectType,gain level,szint megszerzése
 EffectType,gain skill,képesség megszerzése
 EffectType,genocide,népirtás
@@ -1064,6 +1066,7 @@ EffectType,raise dead,halott-támasztás
 EffectType,recall,visszahívás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
+EffectType,remove spill,
 EffectType,remove transient,átmeneti hatás eltávolítása
 EffectType,replicate asset,eszköz lemásolása
 EffectType,restock,feltöltés
@@ -1165,6 +1168,7 @@ EntityName,abbot,apát
 EntityName,acid blob,savas paca
 EntityName,acid worm,savas féreg
 EntityName,acolyte,ministráns
+EntityName,adamantine golem,
 EntityName,adult black dragon,kifejlett feketesárkány
 EntityName,adult blue dragon,kifejlett kéksárkány
 EntityName,adult deep dragon,kifejlett lilasárkány
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,"{CharacterName} ügyetlenül {MotionPastName}: {AssetName}, és semmi nem történt"
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} ügyetlenül {MotionPastName} a(z) {Use:AssetName} tárgyat, ezzel: {With:AssetName}"
 FormatText,{CharacterName} Inventory,{CharacterName} leltára
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} így érzi magát: {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} többé nincs beragadva
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} most már {QualificationName} a következőben: {SkillName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName} {MotionP
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName} {MotionPresentName} melyik tárggyal?
 FormatText,{MotionPresentName} {FeatureName} which direction?,Melyik irányba történjen {MotionPresentName} a(z) {FeatureName} tereptárgyon?
 FormatText,{MotionPresentName} which item on {FeatureName}?,Melyik eszközzel történjen {MotionPresentName} a(z) {FeatureName} tereptárgyon?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} esetén
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},"kivéve, ha ellenáll a következőnek:
 FormatText,unless target has {PropertyName},"kivéve, ha a célpont rendelkezik a következővel: {PropertyName}"
 FormatText,versus {Something},{Something} ellen
 FormatText,when {Chance},{Chance} esetben
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME} esetén
 FormatText,when {KINDNAMES},{KINDNAMES} esetén
 FormatText,when {MATERIALNAME},{MATERIALNAME} esetén
@@ -2148,6 +2154,9 @@ GenderName,neuter,semleges
 GenderName,non-binary,nem bináris
 GenerationType,module,modul
 GenerationType,quest,kaland
+GradeName,artifact,ereklye
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Ez a kőfelület igazi, makulátlan mestermunka, annak ellenére, hogy az idő vasfogának nyomát hordozza magán."
 GroundName,chasm,üresség
 GroundName,dirt floor,földpadló
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Egy
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","A tetemek tömörítéséhez használt eszközök gyűjteménye, ideértve az üres konzervdobozokat és a henteseszközöket."
 ItemDescription,A compact hand-held firearm.,Egy kompakt kézi lőfegyver.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Egy, a lovasság által gyakran használt, ívelt, egyélű penge, amely különösen hatékony az alvilág lényei ellen."
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Egy ívelt alakú, rostokban gazdag sárga gyümölcs."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Fából készült, lapos dobófegyver, amelyet gyakran vadászatra használnak."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Egy lapos, kerek étel, amit - magától értetődően - serpenyőben készítenek."
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Apró, a mozgás akadályozására szolgáló, földre szórt fémtüskék."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Elpusztíthatatlan aranyból készült szárnyas szandál, amely gyorsan és csendesen repíti viselőjét."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Falon használva nagy alagutat hoz létre.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,agátkő
 ItemName,aklys,aklys
 ItemName,alchemy smock,alkimista köpeny
@@ -2372,6 +2395,7 @@ ItemName,banana,banán
 ItemName,banded mail,pántos vért
 ItemName,bardiche,bardiche
 ItemName,battle robe,csataköpeny
+ItemName,battle staff,
 ItemName,battle-axe,csatafejsze
 ItemName,beartrap,medvecsapda
 ItemName,bec de corbin,harci csákány
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,boxer
 ItemName,broadsword,széleskard
 ItemName,bronze bell,bronzcsengő
 ItemName,bronze plate mail,bronzpáncél
+ItemName,Brumstyk,
 ItemName,bullet,golyó
 ItemName,bullwhip,korbács
 ItemName,caltrops,vassulyom
@@ -2657,6 +2682,7 @@ ItemName,meat stick,húsrúd
 ItemName,meatball,húsgolyó
 ItemName,melon,dinnye
 ItemName,Mirrorbright,Tükörfény
+ItemName,Miserus,
 ItemName,mithril arrow,mithrilnyílvessző
 ItemName,mithril barding,mithrillópáncél
 ItemName,mithril battle-axe,mithril csatafejsze
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,gumislag
 ItemName,ruby,rubint
 ItemName,Ruby Key,rubintkulcs
 ItemName,Runesword,Rúnakard
+ItemName,sabre,
 ItemName,sack,zsák
 ItemName,saddle,nyereg
 ItemName,sai,
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,lőfegyverek nem használhatóak
 LiteralText,ABOUT,A JÁTÉKRÓL
 LiteralText,About Pathos,A Pathosról
 LiteralText,Abyss,Mélység
-LiteralText,accelerated animations,gyorsított animációk
 LiteralText,accelerated resting,gyorsított pihenés
 LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
@@ -3082,10 +3108,11 @@ LiteralText,ALL,ÖSSZES
 LiteralText,ALL AT ONCE,MINDET EGYSZERRE
 LiteralText,always,mindig
 LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
-LiteralText,AMMO,LŐSZER
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
 LiteralText,anatomy,anatómia
+LiteralText,animate mount,
+LiteralText,animate revenant,élesztés kísértetek
 LiteralText,ANONYMOUS,NÉVTELEN
 LiteralText,anticlockwise 90 degrees,az óramutató járásával ellentétesen 90 fokban
 LiteralText,any item,bármelyik tárgy
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Biztos be szeretnéd fejezni ezt a kalandot? Ez a karakter elvesztésével jár...
 LiteralText,ARE YOU SURE?,BIZTOS VAGY BENNE?
 LiteralText,area of effect,hatásterület
-LiteralText,artifact,ereklye
 LiteralText,ARTIFACTS,EREKLYÉK
 LiteralText,ASCEND TO PREVIOUS LEVEL,LÉPÉS AZ ELŐZŐ SZINTRE
-LiteralText,asleep,alvó
 LiteralText,assets,vagyon
 LiteralText,ATMOSPHERE,ATMOSZFÉRA
 LiteralText,attack modifier,támadásmódosító
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,értekezések a bétaverzióról
 LiteralText,Black background,Fekete háttér
 LiteralText,Black Market,Fekete Piac
 LiteralText,blasphemy,istenkáromlás
-LiteralText,blessed,áldott
-LiteralText,BLESSED,ÁLDOTT
 LiteralText,BLINK,ELILLANÁS
 LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
 LiteralText,block,akadály
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,TÖRÖTT
 LiteralText,burst rate,sorozatlövés mértéke
 LiteralText,BUY,MEGVÁSÁROL
 LiteralText,BUY ALL,ÖSSZES MEGVÁSÁRLÁSA
-LiteralText,by Callan Hodgskin,készítette: Callan Hodgskin
 LiteralText,CANCEL,MÉGSE
 LiteralText,cancellation,érvénytelenítés
 LiteralText,CANCELLED,ÉRVÉNYTELENÍTVE
@@ -3167,8 +3189,6 @@ LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,characters,karakterek
 LiteralText,charged items,feltöltött tárgyak
-LiteralText,charm,báj
-LiteralText,CHARMED,ELBŰVÖLT
 LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
 LiteralText,checking for updates,frissítések keresése
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,kattints az újrapróbáláshoz
 LiteralText,Click to send detected issues to the author,problémák bejelentése
 LiteralText,CLOSE,BEZÁRÁS
 LiteralText,closed,becsukott
-LiteralText,CLOSED,BECSUKOTT
 LiteralText,Coding on Medium,Kódolás a Mediumon
 LiteralText,coins,érmék
 LiteralText,companion,társ
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,HORDA LÉTREHOZÁSA
 LiteralText,CREATE ITEM,TÁRGY LÉTREHOZÁSA
 LiteralText,CREATE SHOP,BOLT LÉTREHOZÁSA
 LiteralText,CREATE SHRINE,SZENTÉLY LÉTREHOZÁSA
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CSAPDA LÉTREHOZÁSA
 LiteralText,CREATE WALL,FAL LÉTREHOZÁSA
 LiteralText,Create which direction?,Melyik irányba szeretnéd létrehozni?
 LiteralText,CREDITS,KÖZREMŰKÖDŐK
 LiteralText,CROP,LEVÁG
-LiteralText,cursed,átkozott
 LiteralText,CURSED,ÁTKOZOTT
 LiteralText,CUSTOM,EGYÉNI
 LiteralText,CUSTOM HERO,EGYÉNI HŐS
 LiteralText,CUSTOM MODULES,EGYÉNI MODULOK
-LiteralText,DAMAGE,SEBZÉS
 LiteralText,dark,sötét
-LiteralText,dark-hidden,sötétben rejtőző
 LiteralText,DEAD END,ZSÁKUTCA
 LiteralText,death,halál
-LiteralText,DEATH,HALÁL
 LiteralText,deathray,halálsugár
 LiteralText,decapitation,lefejezés
 LiteralText,DECEASED,ELHUNYT
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,Folytatás gomb kikapcsolása
 LiteralText,disable haptic feedback,Haptikus visszajelzés kikapcsolása
 LiteralText,Disable idle animations,Idle animációk kikapcsolása
 LiteralText,Disable introduction boom,Kezdő moraj kikapcsolása
+LiteralText,Disable mask animations,
 LiteralText,Disable online services,Online szolgáltatások kikapcsolása
 LiteralText,Disable pitch shifting,Hangmagasság-eltolás kikapcsolása
 LiteralText,Disable spacebar real-time toggle,A szóköz billentyűvel történő időváltás kikapcsolása
+LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,SZÉTKAPCSOL
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,Discuss on Reddit,Beszélgess a Redditen
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,használat után
 LiteralText,downloading update,frissítés letöltése
 LiteralText,drop,elejt
 LiteralText,DROP,ELEJT
-LiteralText,DUAL,KETTŐS
 LiteralText,DUAL WIELD,KÉTKEZES
 LiteralText,Dungeon,Kazamata
 LiteralText,duration,idő
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,ELMENEKÜLÉS
 LiteralText,escape traps,csapdákból való kijutás
 LiteralText,escape with,kijutás
 LiteralText,escaped,kijutott
-LiteralText,ESCAPED,KIJUTOTT
 LiteralText,ESSENCE,ESSZENCIA
 LiteralText,evolution,fejlődés
 LiteralText,Examine which object?,Melyik objektumon szeretnéd megvizsgálni?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,KIBŐVÍT
 LiteralText,EXPEL,KIUTASÍT
 LiteralText,experience,tapasztalat
 LiteralText,EXPERIENCE,TAPASZTALAT
-LiteralText,EXPLODED,FELROBBANT
 LiteralText,explosion,robbanás
 LiteralText,EXPORT,EXPORTÁL
 LiteralText,extinctions,kiirtások
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,TEREPTÁRGYAK
 LiteralText,FEED,MEGETET
 LiteralText,FEEDBACK,VISSZAJELZÉS
 LiteralText,FILES,FÁJLOK
-LiteralText,Find out what is coming in the next update.,"Tudd meg, mi várható a következő frissítésben."
 LiteralText,fixed range,állandó hatótávolság
 LiteralText,FIZZLE,PEZSGÉS
 LiteralText,Floor,Padló
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,FELBÉREL
 LiteralText,HORDES,HORDÁK
 LiteralText,HOST,LÉTREHOZÁS
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
-LiteralText,HUH?,HUH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Remélem élvezed a kalandokat! Bármilyen visszajelzéssel vagy javaslattal fordulj hozzám bizalommal.
 LiteralText,identified items,azonosított tárgyak
-LiteralText,IDENTIFY,AZONOSÍTÁS
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,A PADLÓN LÉVŐ ÖSSZES TÁRGY AZONOSÍTÁSA
 LiteralText,ILLITERATE,ÍRÁSTUDATLAN
 LiteralText,illusion,illúzió
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,LEHETETLEN
 LiteralText,in both hands,mindkét kézben
 LiteralText,incarceration,BEBÖRTÖNZÉS
-LiteralText,increase,növel
 LiteralText,INCREASE,NÖVEL
 LiteralText,INDEX,NÉVMUTATÓ
 LiteralText,individual crafting,egyéni barkácsolás
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,befolyásolt cselekedetek
 LiteralText,INSCRIBE,BELEÍR
 LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
-LiteralText,INSTRUCT,UTASÍT
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
 LiteralText,insulation,szigetelés
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
@@ -3462,7 +3473,6 @@ LiteralText,light,fény
 LiteralText,LIGHT,FÉNY
 LiteralText,light radius,fény hatósugara
 LiteralText,limits,határértékek
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Az összes támogatott platformhoz kapcsolódik, ideértve az iOS-t, az Androidot és a Windowst."
 LiteralText,LIST,LISTA
 LiteralText,lit,meggyújt
 LiteralText,LIVING,ÉLŐ
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,képesség elvesztése
 LiteralText,Lost Chambers,Elveszett Kamrák
 LiteralText,LOW MANA,ALACSONY MANA
 LiteralText,Ludios Cache,Ludios Rejtekhely
-LiteralText,MAIN,FŐ
 LiteralText,MAIN WIELD,ELSŐDLEGES
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,MÍMEL
 LiteralText,mimicking,mímelés
 LiteralText,Mines,Bányák
 LiteralText,Minetown,Bányászváros
-LiteralText,missile,lövedék
 LiteralText,modifier,módosító
 LiteralText,MOUNT,FELSZÁLL
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,nincsenek szövetségesek
 LiteralText,no ambient sounds,nincsenek környezeti hangok
 LiteralText,No appropriate items available,Nem érhető el megfelelő tárgy
 LiteralText,no available knowledge,nincs elérhető tudás
+LiteralText,no records found,
 LiteralText,no resistances,nincsenek ellenállások
 LiteralText,no talents,nincsenek készségek
 LiteralText,no transient effects,nincsenek átmeneti hatások
@@ -3545,14 +3554,12 @@ LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
 LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
-LiteralText,PACIFIED,MEGBÉKÍTETT
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
 LiteralText,passage,átjáró
 LiteralText,passive (no attacking),passzív (nincs támadás)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,"A Pathost osztott képernyőn, 4 játékos kooperatív módban is lehet játszani."
-LiteralText,pathos development @ paypal or stripe,Pathos-támogatás @ PayPal vagy Stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,"A Pathos ingyenes, és a játék szeretetéért lett fejlesztve."
+LiteralText,pathos development @ paypal,Pathos-támogatás @ PayPal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"A Pathos nem tudja betölteni a kalandot. Kérlek, küldd el a mentési fájlodat, hogy megtalálhassam a probléma forrását. Előfordulhat, hogy sikerül magát a fájlproblémát kijavítanom, vagy egy frissítéssel orvosolni a hibát. Megértésedet köszönöm."
 LiteralText,Pathos might be the next evolution of Nethack.,A Pathos lehet a Nethack fejlődésének következő szintje.
 LiteralText,penalty,büntetés
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,ÁTVÁLTOZOTT
 LiteralText,portal,portál
 LiteralText,porter,hordár
 LiteralText,PRAY,IMA
-LiteralText,PRAYING,IMÁDKOZIK
 LiteralText,preservation,konzerválás
 LiteralText,prevent revenant levels,kísértetszintek meggátolása
 LiteralText,prisoner,fogoly
@@ -3632,10 +3638,8 @@ LiteralText,resident?,ott tartózkodó?
 LiteralText,resistances,ellenállások
 LiteralText,RESISTS,ELLENÁLL
 LiteralText,Rest,Pihenés
-LiteralText,REST,PIHENÉS
 LiteralText,Rest how many turns?,Hány körön át tartson a pihenés?
 LiteralText,restarting to update,újraindítás a frissítés befejezéséhez
-LiteralText,RESTING,PIHEN
 LiteralText,RESTORED,VISSZAÁLLÍTOTT
 LiteralText,RESURRECT,FELTÁMASZT
 LiteralText,Resurrect and continue,Feltámasztás és folytatás
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,FELFED
 LiteralText,REVEAL ALL MAPS,EGÉSZ TÉRKÉP FELFEDÉSE
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,felfedve
+LiteralText,revenant,
 LiteralText,REVERT,VISSZAÁLLÍTÁS
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,SZÉTSZEDÉS
 LiteralText,SEALED,CSUKOTT
 LiteralText,Search,Keresés
 LiteralText,Search how many turns?,Hány kör keresés?
-LiteralText,SEARCHING,KERESÉS
 LiteralText,secret,titok
 LiteralText,SECRET,TITOK
 LiteralText,seed,seed
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,NEHÉZSÉG BEÁLLÍTÁSA
 LiteralText,set starting location,kezdőpont beállítása
 LiteralText,SETTINGS,BEÁLLÍTÁSOK
 LiteralText,sfx volume,sfx hangerő
-LiteralText,Share your tragic and heroic stories with other players.,"Oszd meg mind tragikus, mind hősies történeteidet másokkal."
 LiteralText,SHARE//exchange,MEGOSZTÁS
 LiteralText,SHARE//publish,MEGOSZTÁS
 LiteralText,SHOPS,BOLTOK
 LiteralText,Show debugging information,Hibakeresési adatok mutatása
 LiteralText,Show time clock,Óra mutatása
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Kifejezheted a háládat azzal, ha másoknak is megmutatod a Pathost."
 LiteralText,SHRINES,SZENTÉLYEK
 LiteralText,SIGN-IN,BEJELENTKEZÉS
 LiteralText,size,méret
@@ -3749,7 +3751,6 @@ LiteralText,terrain,terep
 LiteralText,The attack score is your aptitude for hitting an opponent.,"A támadási pontszám megmutatja, hogy mekkora eséllyel tudod ellefeleidet eltalálni."
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"A kihívás a mechanika fejlesztése anélkül, hogy a játék elveszítse azon mivoltát, ami minden idők egyik legnagyobbjává tette."
 LiteralText,The defence score is how protected you are from being hit by an opponent.,"A védekezési pontszám megmutatja, hogy milyen mértékben vagy védett az ellenséges találatok ellen."
-LiteralText,There are no known polymorphs,Nincsenek észlelt többalakúak
 LiteralText,There is a new update available!,Elérhető egy új frissítés!
 LiteralText,there is nothing to place here,ide semmit nem lehet rakni
 LiteralText,there is nothing to remove here,innen semmit nem lehet eltávolítani
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,TÚL NEHÉZ
 LiteralText,TOO HUNGRY,TÚL ÉHES
 LiteralText,TOO SMALL,TÚL KICSI
 LiteralText,TOO WEAK,TÚL GYENGE
-LiteralText,touch,érintés
 LiteralText,TRACKS,ZENE
 LiteralText,TRADE,KERESKEDÉS
 LiteralText,transform to,átalakul:
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
-LiteralText,WAITING,VÁRAKOZÁS
 LiteralText,WARPING,ELTÉVELYEDÉS
 LiteralText,was killed,elesett
-LiteralText,was strangled,megfojtották
 LiteralText,weakness to,gyenge a következővel szemben:
 LiteralText,weight,súly
 LiteralText,when afflicted,lesújtva
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,ROSSZ IRÁNY
 LiteralText,"You are playing as anonymous, please register!","Jelenleg név nélkül játszol, regisztrálj, kérlek!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Keress titkos ajtókat a SZEM gomb segítségével.
 LiteralText,Your current movement and action speed in squares per second.,Jelenlegi mozgási és cselekvési időd négyzet/másodpercben.
-LiteralText,Your feedback is appreciated and will influence my development plans.,"A visszajelzésed fontos számomra, és befolyásolhatja a jövőbeli fejlesztéseket."
 LiteralText,ZOOM,NAGYÍTÁS
 LiteralText,ZOOS,TERMEK
 LiteralText,zZz,zZz
-LocalityName,Level,Szint
-LocalityName,Map,Pálya
-LocalityName,Site,Helyszín
-LocalityName,Square,Tér
-LocalityName,World,Világ
-LocalityName,Zone,Zóna
+LocalityName,area,
+LocalityName,level,szint
+LocalityName,map,pálya
+LocalityName,site,helyszín
+LocalityName,square,tér
+LocalityName,world,világ
+LocalityName,zone,zóna
+MaterialName,adamantine,
 MaterialName,air,levegő
 MaterialName,animal,állat
 MaterialName,bone,csont
@@ -3891,6 +3891,7 @@ MotionPastName,ate,elfogyasztotta
 MotionPastName,captured,elfogta
 MotionPastName,chanted,kántálta
 MotionPastName,constructed,építette
+MotionPastName,copied,
 MotionPastName,dipped,belemártotta
 MotionPastName,divined,megfejtette
 MotionPastName,drank,megitta
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,kiürítette
 MotionPastName,exchanged,kicserélte
 MotionPastName,flashed,villantotta
 MotionPastName,inscribed,beleírta
+MotionPastName,mounted,
 MotionPastName,opened,kinyitotta
 MotionPastName,packed,bepakolta
 MotionPastName,played,játszotta
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,felszentelés
 MotionPresentName,capture,elfogás
 MotionPresentName,chant,kántálás
 MotionPresentName,construct,építés
+MotionPresentName,copy,
 MotionPresentName,dig,ásás
 MotionPresentName,dip,belemártás
 MotionPresentName,divine,megfejtés
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,kiürítés
 MotionPresentName,exchange,kicserélés
 MotionPresentName,flash,villantás
 MotionPresentName,inscribe,beleírás
+MotionPresentName,mount,
 MotionPresentName,open,kinyitás
 MotionPresentName,pack,csomagolás
 MotionPresentName,play,játszás
@@ -3952,9 +3956,9 @@ MotionPresentName,study,tanulmányozás
 MotionPresentName,swat,csapás
 MotionPresentName,write,írás
 MotionPresentName,zap,bűvölés
-MurderTypeName,Allied,Szövetséges
-MurderTypeName,Every,Összes
-MurderTypeName,Hostile,Ellenséges
+MurderTypeName,allied,szövetséges
+MurderTypeName,every,összes
+MurderTypeName,hostile,ellenséges
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Ez a keményfa híd derekasan kiállta hosszú évek használatát.
 PlatformName,crystal bridge,kristályhíd
 PlatformName,wooden bridge,fahíd
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,átutazott
 TraversalPresentName,ascend,felmegy
 TraversalPresentName,descend,leereszkedik
 TraversalPresentName,travel,utazik
+VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
+VolatileName,steam,
 WallStructureName,illusionary,illúzió
 WallStructureName,permanent,állandó
 WallStructureName,solid,szilárd

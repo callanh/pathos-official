@@ -20,8 +20,8 @@ AnatomyAbsenceText,NO FEET,KHÔNG CHÂN
 AnatomyAbsenceText,NO HANDS,KHÔNG BÀN TAY
 AnatomyAbsenceText,NO HEAD,KHÔNG ĐẦU
 AnatomyAbsenceText,NO LIMBS,KHÔNG CÓ CÁNH TAY
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
+AnatomyAbsenceText,NOT AMORPHOUS,KHÔNG PHẢI CHẤT RẮN VÔ ĐỊNH HÌNH
+AnatomyAbsenceText,NOT MOUNTED,KHÔNG CƯỠI
 AnatomyAbsenceText,NOT WARM,KHÔNG ẤM
 AnatomyAbsenceText,VOICELESS,VÔ THANH
 AnatomyName,amorphous,chất rắn vô định hình
@@ -34,18 +34,14 @@ AnatomyName,head,đầu
 AnatomyName,limbs,cánh tay
 AnatomyName,mind,tâm trí
 AnatomyName,mounted,cưỡi
-AnatomyName,thermal,
+AnatomyName,thermal,thân nhiệt
 AnatomyName,voice,giọng nói
-ApetiteName,content,bình thường
-ApetiteName,hungry,đói
-ApetiteName,satiated,no
-ApetiteName,starving,đang chết đói
-ApetiteName,weak,yếu
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Một chiếc áo choàng dài hở phía trước và được thắt ở ngực bằng móc gài.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Một chiếc áo giáp ngắn và cứng làm từ mithril.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Một chiếc áo dài thun và tinh tế làm từ mithril.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Một chiếc áo thun dài và bóng láng làm từ mithril.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Chiếc mũ nhọn đầu trang trí với mặt trăng và những ngôi sao này là phụ kiện thường thấy của phù thủy.
+AppearanceName,adamantine staff,gậy adamantine
 AppearanceName,agate ring,Nhẫn mã não
 AppearanceName,aluminium wand,Gậy nhôm
 AppearanceName,angled poleaxe,Cây sào nghiêng
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,Bùa hình cầu
 AppearanceName,spiked wand,Đũa phép nhọn
 AppearanceName,spotted book,Quyển sách lốm đốm
 AppearanceName,square amulet,Bùa hình vuông
-AppearanceName,staff,Gậy
 AppearanceName,stained book,Quyển sách nhơ nhuốc
 AppearanceName,steel boots,Ủng thép
 AppearanceName,steel ring,Nhẫn thép
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,Viên ngọc màu vàng
 AppearanceName,yellow potion,Lọ thuốc màu vàng
 AppearanceName,yellowish brown gem,Viên ngọc màu vàng nâu
 AppearanceName,zinc wand,Đũa phép kẽm
+AppetiteName,content,bình thường
+AppetiteName,hungry,đói
+AppetiteName,satiated,no
+AppetiteName,starving,đang chết đói
+AppetiteName,weak,yếu
 AttackType,bite,cắn
 AttackType,blast,nổ
 AttackType,breath,gầm
@@ -539,7 +539,7 @@ BoonName,teach spell,dạy ma pháp
 BoonName,tinned meat,thịt đóng hộp
 BoonName,undead army,đội quân thây ma
 BoonName,unicorn friend,bạn kỳ lân
-CalendarText,d MMMM yyyy,ngày tháng năm
+CalendarText,d MMMM yyyy,d MMMM yyyy
 ChangeType,decrease,giảm
 ChangeType,increase,tăng
 CharacterName,Adebesi,Adebesi
@@ -836,6 +836,7 @@ CounterName,captures,số lần bắt giữ
 CounterName,casts,số phép đã niệm
 CounterName,chants,số phép đã tụng
 CounterName,constructs,số
+CounterName,copies,bản sao
 CounterName,crafts,số vật phẩm chế tạo
 CounterName,decapitations,số quái đã chặt đầu
 CounterName,digs,số lần đào
@@ -854,6 +855,7 @@ CounterName,jumps,số lần nhảy
 CounterName,kicks,số lần đá
 CounterName,lifesaves,số lần thoát chết
 CounterName,mimics,số lần giả dạng
+CounterName,mounts,số lần cưỡi
 CounterName,moves,tổng lượt đi
 CounterName,opens,số lần mở
 CounterName,packs,số lần đóng gói
@@ -970,7 +972,6 @@ EffectProperty,lies,nằm trên
 EffectProperty,loyal only,chỉ trung thành
 EffectProperty,material,vật liệu
 EffectProperty,materials,các vật liệu
-EffectProperty,objects,các vật thể
 EffectProperty,polite,lịch sự
 EffectProperty,properties,các chỉ số
 EffectProperty,punishments,các trừng phạt
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
 EffectProperty,removes all transients,loại bỏ tất cả hiệu ứng tạm thời
 EffectProperty,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
 EffectProperty,reveal,phát giác
-EffectProperty,revenants,những vong hồn
 EffectProperty,sanctity,thiêng liêng
 EffectProperty,skills,các kĩ năng
 EffectProperty,source,nguồn
@@ -998,7 +998,6 @@ EffectProperty,whole stack,cả xập
 EffectType,afflict,ảnh hưởng
 EffectType,alert,báo động
 EffectType,amnesia,lãng quên
-EffectType,animate,tái sinh
 EffectType,area transient,hiệu ứng tạm thời diện rộng
 EffectType,assess,đánh giá
 EffectType,blinking,nhấp nháy
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,chuyển đổi tảng
 EffectType,convert door,chuyển đổi cửa
 EffectType,convert fixture,chuyển đổi vật cố
 EffectType,convert floor,chuyển đổi sàn
+EffectType,convert spill,chuyển đổi vũng
 EffectType,convert wall,chuyển đổi tường
 EffectType,create boulder,tạo tảng
 EffectType,create fixture,tạo vật cố
 EffectType,create golem,tạo quái vật golem
 EffectType,create horde,tạo bầy đám
 EffectType,create nook,tạo nắm cửa
+EffectType,create spill,tạo vũng
 EffectType,create trap,tạo bẫy
 EffectType,create wall,tạo tường
 EffectType,decapitate,chặt đầu
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,phù phép vật
 EffectType,engulf,nuốt chửng
 EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
+EffectType,extinguish spill,dập vũng
 EffectType,gain level,lên cấp
 EffectType,gain skill,mở kĩ năng
 EffectType,genocide,diệt chủng
@@ -1064,6 +1066,7 @@ EffectType,raise dead,tái sinh
 EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
+EffectType,remove spill,loại bỏ vũng
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
 EffectType,replicate asset,tạo bản sao của vật
 EffectType,restock,bổ sung
@@ -1165,6 +1168,7 @@ EntityName,abbot,trụ trì
 EntityName,acid blob,bãi axít
 EntityName,acid worm,giun axít
 EntityName,acolyte,thầy dòng
+EntityName,adamantine golem,golem adamantine
 EntityName,adult black dragon,rồng đen trưởng thành
 EntityName,adult blue dragon,rồng xanh dương trưởng thành
 EntityName,adult deep dragon,rồng xanh đậm trưởng thành
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} {MotionPastName} {AssetName} một cách vụng về và không có gì xảy ra
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} {With:AssetName} một cách vụng về
 FormatText,{CharacterName} Inventory,Hành trang của {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} đang {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} đang {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} đang cảm thấy {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} không còn bị kẹt
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} đạt được cấp {QualificationName} trong {SkillName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} với vật phẩm nào?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} ở hướng nào?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} vật phẩm nào lên {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} đã cưỡi {Steed:CharacterName}}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} niệm phép
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},trừ khi kháng {ElementName}
 FormatText,unless target has {PropertyName},trừ khi mục tiêu {PropertyName}
 FormatText,versus {Something},đối đầu với {Something}
 FormatText,when {Chance},tỉ lệ {Chance}
+FormatText,when {GROUNDNAME},nếu {GROUNDNAME}
 FormatText,when {ITEMNAME},nếu {ITEMNAME}
 FormatText,when {KINDNAMES},là {KINDNAMES}
 FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
@@ -2148,6 +2154,9 @@ GenderName,neuter,trung tính
 GenderName,non-binary,lưỡng tính
 GenerationType,module,phụ
 GenerationType,quest,nhiệm vụ
+GradeName,artifact,báu vật
+GradeName,exotic,thiên phẩm
+GradeName,standard,thông thường
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
 GroundName,chasm,hang sâu
 GroundName,dirt floor,sàn đất
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Mặ
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","1 bộ dụng cụ bao gồm những lọ rỗng và dụng cụ giết mổ, để đóng gói xác và đông đặc chúng."
 ItemDescription,A compact hand-held firearm.,1 khẩu súng nòng ngắn nhỏ gọn
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","1 cây kiếm lưỡi liềm thường dùng bởi kỵ binh, chúng rất hiệu quả với quái vật từ địa ngục."
+ItemDescription,A curved single-edged blade often used by cavalry.,Một thanh kiếm lưỡi liềm thường được dùng bởi các kỵ sĩ.
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",1 loại quả có hình cong và là 1 nguồn cung cấp chất xơ tốt.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","1 loại vũ khí thẳng làm từ gỗ, thường dùng để đi săn bắn."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",1 cái bánh hình tròn. Chắc chắn là rán trong chảo rồi.
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Những mảnh gai kim loại nhỏ bé này được ném xuống mặt đất để cản trở việc di chuyển.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Đôi dép quai hậu mọc cánh này được làm từ loại vàng siêu bền khiến người đeo nó bay một cách nhanh nhẹn và lặng lẽ.
 ItemDescription,Zapping it at a wall creates a big tunnel.,Vụt nó vào bức tường sẽ tạo nên 1 đường hầm.
+ItemName,adamantine arrow,mũi tên adamantine
+ItemName,adamantine axe,rìu adamantine
+ItemName,adamantine bow,cung adamantine
+ItemName,adamantine dagger,dao găm adamantine
+ItemName,adamantine greataxe,rìu lớn adamantine
+ItemName,adamantine greatsword,đại kiếm adamantine
+ItemName,adamantine long sword,trường kiếm adamantine
+ItemName,adamantine plate mail,giáp tấm adamantine
+ItemName,adamantine rapier,kiếm mảnh adamantine
+ItemName,adamantine sabre,kiếm lưỡi cong adamantine
+ItemName,adamantine short sword,kiếm ngắn adamantine
+ItemName,adamantine spear,thương adamantine
+ItemName,adamantine two-handed sword,kiếm song thủ adamantine
 ItemName,agate,mã não
 ItemName,aklys,gậy gỗ
 ItemName,alchemy smock,áo sơ mi hóa học
@@ -2372,6 +2395,7 @@ ItemName,banana,chuối
 ItemName,banded mail,giáp buộc kim loại
 ItemName,bardiche,thương bardiche
 ItemName,battle robe,áo choàng chiến đấu
+ItemName,battle staff,gậy chiến
 ItemName,battle-axe,rìu chiến
 ItemName,beartrap,bẫy gấu
 ItemName,bec de corbin,thương bec de corbin
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,nắm đấm gấu
 ItemName,broadsword,kiếm lưỡi rộng
 ItemName,bronze bell,chuông đồng
 ItemName,bronze plate mail,giáp tấm đồng
+ItemName,Brumstyk,Cây Chủi
 ItemName,bullet,viên đạn
 ItemName,bullwhip,roi dây
 ItemName,caltrops,chông
@@ -2657,6 +2682,7 @@ ItemName,meat stick,que thịt
 ItemName,meatball,viên thịt
 ItemName,melon,dưa hấu
 ItemName,Mirrorbright,Mirrorbright
+ItemName,Miserus,Miserus
 ItemName,mithril arrow,mũi tên mithril
 ItemName,mithril barding,giáp ngựa mithril
 ItemName,mithril battle-axe,rìu chiến mithril
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,ống dẫn nhựa
 ItemName,ruby,hồng ngọc
 ItemName,Ruby Key,Chìa Khóa Hồng Ngọc
 ItemName,Runesword,Runesword
+ItemName,sabre,kiếm lưỡi cong
 ItemName,sack,túi
 ItemName,saddle,yên thú
 ItemName,sai,kiếm sai
@@ -3047,7 +3074,7 @@ KindName,quadruped,động vật 4 chân
 KindName,rodent,bộ gặm nhấm
 KindName,snake,rắn
 KindName,spider,nhện
-KindName,tortle,
+KindName,tortle,người lai rùa
 KindName,trapper,người gài bẫy
 KindName,troll,troll
 KindName,umber,khổng lồ đào đá
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,sự loại bỏ các loại súng
 LiteralText,ABOUT,GIỚI THIỆU
 LiteralText,About Pathos,Giới thiệu về Pathos
 LiteralText,Abyss,Vực thẳm
-LiteralText,accelerated animations,tăng tốc hoạt ảnh
 LiteralText,accelerated resting,tăng tốc thời gian nghỉ
 LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
@@ -3082,10 +3108,11 @@ LiteralText,ALL,TẤT CẢ
 LiteralText,ALL AT ONCE,TẤT CẢ 1 LÚC
 LiteralText,always,luôn luôn
 LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
-LiteralText,AMMO,ĐẠN
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
+LiteralText,animate mount,tái sinh vật cưỡi
+LiteralText,animate revenant,tái sinh những vong hồn
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
 LiteralText,any item,mọi vật phẩm
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Bạn có muốn mất đi nhân vật này và kết thúc chuyến phiêu lưu này?
 LiteralText,ARE YOU SURE?,BẠN CHẮC CHỨ?
 LiteralText,area of effect,vùng ảnh hưởng
-LiteralText,artifact,báu vật
 LiteralText,ARTIFACTS,BÁU VẬT
 LiteralText,ASCEND TO PREVIOUS LEVEL,ĐI LÊN TẦNG TRƯỚC
-LiteralText,asleep,đang ngủ
 LiteralText,assets,hành trang
 LiteralText,ATMOSPHERE,KHÍ QUYỂN
 LiteralText,attack modifier,cấp số nhân sát thương
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,thảo luận về bản beta
 LiteralText,Black background,Hình nền màu đen
 LiteralText,Black Market,Chợ đen
 LiteralText,blasphemy,phỉ báng
-LiteralText,blessed,phước lành
-LiteralText,BLESSED,PHƯỚC LÀNH
 LiteralText,BLINK,NHẤP NHÁY
 LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
 LiteralText,block,khối
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,BỊ HỎNG
 LiteralText,burst rate,số đạn mỗi phát bắn
 LiteralText,BUY,MUA
 LiteralText,BUY ALL,MUA TẤT CẢ
-LiteralText,by Callan Hodgskin,bởi Callan Hodgskin
 LiteralText,CANCEL,HỦY BỎ
 LiteralText,cancellation,phép loại bỏ
 LiteralText,CANCELLED,BỊ LOẠI BỎ
@@ -3167,8 +3189,6 @@ LiteralText,Character,Nhân vật
 LiteralText,CHARACTER,NHÂN VẬT
 LiteralText,characters,nhân vật
 LiteralText,charged items,vật phẩm nạp đầy
-LiteralText,charm,quyến rũ
-LiteralText,CHARMED,QUYẾN RŨ
 LiteralText,Chat on Discord,Nói chuyện trên Discord
 LiteralText,check for updates?,tìm các cập nhật?
 LiteralText,checking for updates,đang kiểm tra các bản cập nhật
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,bấm để thử lại
 LiteralText,Click to send detected issues to the author,Nhấp để gửi các vấn đề đã phát hiện cho tác giả
 LiteralText,CLOSE,ĐÓNG
 LiteralText,closed,đóng cửa
-LiteralText,CLOSED,ĐÓNG CỬA
 LiteralText,Coding on Medium,viết code trên Medium
 LiteralText,coins,đồng xu
 LiteralText,companion,vật nuôi
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,TẠO RA BẦY ĐÀN
 LiteralText,CREATE ITEM,TẠO RA VẬT PHẨM
 LiteralText,CREATE SHOP,TẠO RA CỬA HÀNG
 LiteralText,CREATE SHRINE,TẠO RA ĐỀN THỜ
+LiteralText,CREATE SPILL,TẠO RA VŨNG
 LiteralText,CREATE TRAP,TẠO RA BẪY
 LiteralText,CREATE WALL,TẠO RA TƯỜNG
 LiteralText,Create which direction?,Tạo ở hướng nào?
 LiteralText,CREDITS,TÍN DỤNG
 LiteralText,CROP,THU NHỎ
-LiteralText,cursed,nguyền rủa
 LiteralText,CURSED,BỊ NGUYỀN RỦA
 LiteralText,CUSTOM,TÙY CHỌN
 LiteralText,CUSTOM HERO,ANH HÙNG TỤ CHỌN
 LiteralText,CUSTOM MODULES,MÔ ĐUN TỰ CHỌN
-LiteralText,DAMAGE,SÁT THƯƠNG
 LiteralText,dark,tối
-LiteralText,dark-hidden,ẩn trong bóng tối
 LiteralText,DEAD END,NGÕ CỤT
 LiteralText,death,chết
-LiteralText,DEATH,CHẾT
 LiteralText,deathray,tia tử thần
 LiteralText,decapitation,chặt đầu
 LiteralText,DECEASED,NGƯỜI CHẾT
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,tắt nút tiếp tục
 LiteralText,disable haptic feedback,tắt phản hồi xúc giác
 LiteralText,Disable idle animations,tắt hoạt ảnh trong trạng thái nghỉ
 LiteralText,Disable introduction boom,tắt âm nổ khi vào game
+LiteralText,Disable mask animations,tắt hoạt ảnh che phủ
 LiteralText,Disable online services,tắt dịch vụ online (sảnh danh vọng và tự động cập nhật)
 LiteralText,Disable pitch shifting,tắt dịch cao độ
 LiteralText,Disable spacebar real-time toggle,bật tắt chế độ thời gian thực bằng nút cách
+LiteralText,Disable swipe gestures,tắt cử chỉ vuốt
 LiteralText,DISCONNECT,NGẮT KẾT NỐI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
 LiteralText,Discuss on Reddit,Thảo luận trên Reddit
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,hạ cấp xuống
 LiteralText,downloading update,đang tải bản cập nhật
 LiteralText,drop,thả
 LiteralText,DROP,THẢ
-LiteralText,DUAL,SONG
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
 LiteralText,Dungeon,Hầm ngục
 LiteralText,duration,thời lượng
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,TRỐN THOÁT
 LiteralText,escape traps,thoát khỏi bẫy
 LiteralText,escape with,thoái bằng
 LiteralText,escaped,đã trốn thoát
-LiteralText,ESCAPED,ĐÃ THOÁT
 LiteralText,ESSENCE,NGUYÊN LIỆU THÔ
 LiteralText,evolution,tiến hóa
 LiteralText,Examine which object?,Khám xét vật phẩm nào?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,MỞ RỘNG
 LiteralText,EXPEL,LOẠI TRỪ
 LiteralText,experience,kinh nghiệm
 LiteralText,EXPERIENCE,KINH NGHIỆM
-LiteralText,EXPLODED,PHÁT NỔ
 LiteralText,explosion,vụ nổ
 LiteralText,EXPORT,XUÂT RA
 LiteralText,extinctions,tuyệt chủng
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,TÍNH NĂNG
 LiteralText,FEED,CHO ĂN
 LiteralText,FEEDBACK,PHẢN HỒI
 LiteralText,FILES,TỆP
-LiteralText,Find out what is coming in the next update.,Khám phá xem bản cập nhật mới có gì
 LiteralText,fixed range,tầm đánh cố định
 LiteralText,FIZZLE,SỦI BỌT
 LiteralText,Floor,Sàn nhà
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,THUÊ
 LiteralText,HORDES,BẦY ĐÀN
 LiteralText,HOST,CHỦ PHÒNG
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
-LiteralText,HUH?,HUH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Chúng tôi hy vọng rằng bạn đang tận hưởng những chuyến phiêu lưu của bạn. Đừng ngần ngại góp ý cải thiện cho chúng tôi nhé.
 LiteralText,identified items,vật phẩm được đinh danh
-LiteralText,IDENTIFY,ĐỊNH DANH
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ĐỊNH DANH MỌI VẬT PHẨM TRÊN SÀN NHÀ
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,Nhập một file
 LiteralText,IMPOSSIBLE,BẤT KHẢ THI
 LiteralText,in both hands,trong cả 2 tay
 LiteralText,incarceration,nhốt
-LiteralText,increase,tăng
 LiteralText,INCREASE,TĂNG
 LiteralText,INDEX,TỪ ĐIỂN
 LiteralText,individual crafting,chế tạo lẻ
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,những hành động liên quan
 LiteralText,INSCRIBE,GHI
 LiteralText,INSCRIBE ITEM,GHI VẬT PHẨM
 LiteralText,inscription?,khắc chữ gì?
-LiteralText,INSTRUCT,HƯỚNG DẪN
+LiteralText,instruct each character,hướng dẫn từng nhân vật
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
 LiteralText,insulation,cô lập
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
@@ -3462,7 +3473,6 @@ LiteralText,light,ánh sáng
 LiteralText,LIGHT,SÁNG
 LiteralText,light radius,vùng được thắp sáng
 LiteralText,limits,giới hạn
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Đường link dẫn vào các nền tảng được hỗ trợ, bao gồm iOS, Android và Windows."
 LiteralText,LIST,DANH SÁCH
 LiteralText,lit,khi thắp sáng
 LiteralText,LIVING,CÒN SỐNG
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,mất kĩ năng
 LiteralText,Lost Chambers,Căn phòng lãng quên
 LiteralText,LOW MANA,năng lượng thấp
 LiteralText,Ludios Cache,Hầm trữ Ludios
-LiteralText,MAIN,CHÍNH
 LiteralText,MAIN WIELD,VŨ KHÍ CHÍNH
 LiteralText,mana,năng lượng
 LiteralText,MANA,NĂNG LƯỢNG
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,GIẢ DẠNG
 LiteralText,mimicking,đang giả dạng
 LiteralText,Mines,mìn
 LiteralText,Minetown,thi trấn Mine
-LiteralText,missile,tên lửa
 LiteralText,modifier,cấp số nhân
 LiteralText,MOUNT,CƯỠI
 LiteralText,Mount which direction?,Cưỡi hướng nào?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
 LiteralText,No appropriate items available,không có vật phẩm nào phù hợp
 LiteralText,no available knowledge,không có kiến thức nào
+LiteralText,no records found,không tìm thấy kết quả
 LiteralText,no resistances,không đề kháng
 LiteralText,no talents,không tài năng
 LiteralText,no transient effects,không có hiệu ứng tạm thời
@@ -3545,14 +3554,12 @@ LiteralText,OR,HOẶC
 LiteralText,ORIGINAL,GỐC
 LiteralText,OVERRIDE,GHI ĐÈ
 LiteralText,OVERVIEW,TỔNG QUÁT
-LiteralText,PACIFIED,YÊN LÒNG
 LiteralText,Palette,Palette
 LiteralText,PARTY,TỔ ĐỘI
 LiteralText,passage,lối đi
 LiteralText,passive (no attacking),hiền lành (không tấn công)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos có thể được chơi ở chế độ chia đôi màn hình với tối đa lên đến bốn người chơi.
-LiteralText,pathos development @ paypal or stripe,ủng hộ việc phát triển Pathos qua Paypal hoặc Stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos là một trò chơi miễn phí và được phát triển vì tình yêu đối với trò chơi.
+LiteralText,pathos development @ paypal,ủng hộ việc phát triển Pathos qua Paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos không thể tải chuyến phiêu lưu của bạn. Vui lòng gửi cho tôi tệp lưu của bạn để tôi có thể điều tra vấn đề. Tôi thậm chí có thể sửa chữa tệp hoặc cập nhật ứng dụng bằng bản sửa lỗi. Sự thông cảm của bạn được đánh giá cao.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos có thể là sự phát triển tiếp theo của Nethack.
 LiteralText,penalty,điểm phạt
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
 LiteralText,porter,túi
 LiteralText,PRAY,CẦU NGUYỆN
-LiteralText,PRAYING,CẦU NGUYỆN
 LiteralText,preservation,quan sát
 LiteralText,prevent revenant levels,loại bỏ những tầng có bóng ma cũ
 LiteralText,prisoner,tù nhân
@@ -3632,10 +3638,8 @@ LiteralText,resident?,là dân cư?
 LiteralText,resistances,các đề kháng
 LiteralText,RESISTS,KHÁNG
 LiteralText,Rest,Nghỉ ngơi
-LiteralText,REST,NGHỈ NGƠI
 LiteralText,Rest how many turns?,Nghỉ ngơi trong bao nhiêu lượt?
 LiteralText,restarting to update,khởi động lại để cập nhật
-LiteralText,RESTING,ĐANG NGHỈ NGƠI
 LiteralText,RESTORED,HỒI PHỤC
 LiteralText,RESURRECT,HỒI SINH
 LiteralText,Resurrect and continue,Hồi sinh và tiếp tục
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,LỘ DIỆN
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
 LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY
 LiteralText,revealed,đã lộ diện
+LiteralText,revenant,bóng ma cũ
 LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,TÁI CHẾ
 LiteralText,SEALED,PHONG ẤN
 LiteralText,Search,Lục soát
 LiteralText,Search how many turns?,Lục soát trong bao nhiêu lượt?
-LiteralText,SEARCHING,LỤC SOÁT
 LiteralText,secret,bí mật
 LiteralText,SECRET,BÍ MẬT
 LiteralText,seed,hạt giống
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,CHỌN ĐỘ KHÓ
 LiteralText,set starting location,CHỌN NƠI BẮT ĐẦU
 LiteralText,SETTINGS,CÀI ĐẶT
 LiteralText,sfx volume,âm thanh hiệu ứng
-LiteralText,Share your tragic and heroic stories with other players.,Cùng chia sẻ những câu chuyện về anh hùng của bạn với những người chơi khác.
 LiteralText,SHARE//exchange,CHIA SẺ
 LiteralText,SHARE//publish,CHIA SẺ
 LiteralText,SHOPS,CỬA HÀNG
 LiteralText,Show debugging information,Hiện thông tin debug
 LiteralText,Show time clock,Hiện thời gian của máy
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Ủng hộ Pathos bằng cách giới thiệu nó với người khác nhé.
 LiteralText,SHRINES,ĐỀN THỜ
 LiteralText,SIGN-IN,ĐĂNG NHẬP
 LiteralText,size,kích thước
@@ -3749,7 +3751,6 @@ LiteralText,terrain,địa hình
 LiteralText,The attack score is your aptitude for hitting an opponent.,Điểm tấn công quyết định khả năng đánh trúng đôi thủ của bạn.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Thử thách ở đây là cải thiện những thiếu sót mà không làm mất đi những tinh túy biến Nethack thành trò chơi tuyệt nhất mọi thời đại.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Điểm phòng thủ quyết định sát thương bạn nhận khi bị đánh bởi đối thủ.
-LiteralText,There are no known polymorphs,Không biết thực thể nào để biến hình.
 LiteralText,There is a new update available!,Có một bản cập nhật mới!
 LiteralText,there is nothing to place here,Không có gì để đặt vào đây
 LiteralText,there is nothing to remove here,không có gì để lấy
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,QUÁ NẶNG
 LiteralText,TOO HUNGRY,QUÁ ĐÓI
 LiteralText,TOO SMALL,QUÁ NHỎ
 LiteralText,TOO WEAK,QUÁ YẾU
-LiteralText,touch,chạm
 LiteralText,TRACKS,THEO DÕI
 LiteralText,TRADE,TRAO ĐỔI
 LiteralText,transform to,biến hình thành
@@ -3818,17 +3818,16 @@ LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
+LiteralText,VOLATILES,CÁC PHẢN ỨNG
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
-LiteralText,WAITING,ĐANG CHỜ
 LiteralText,WARPING,ĐANG DỊCH CHUYỂN
 LiteralText,was killed,bị giết
-LiteralText,was strangled,bị bóp nghẹt
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
 LiteralText,when afflicted,khi nhiễm bệnh
-LiteralText,when animated,
+LiteralText,when animated,khi được tái sinh
 LiteralText,when confused,khi bối rối
 LiteralText,when dropped,khi thả xuống
 LiteralText,when entered,khi đi vào
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,NHẦM HƯỚNG
 LiteralText,"You are playing as anonymous, please register!","Bạn đang chơi với tư cách là ẩn danh, xin vui lòng đăng ký!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Bạn có thể cần LỤC SOÁT để tìm những cánh cửa bí mật bằng nút hình con mắt.
 LiteralText,Your current movement and action speed in squares per second.,Tốc độ di chuyển và hành động hiện tại của bạn tính bằng ô vuông trên giây.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Phản hồi của bạn sẽ được đánh giá cao và sẽ ảnh hưởng đến kế hoạch phát triển của tôi.
 LiteralText,ZOOM,PHÓNG TO
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz
-LocalityName,Level,Tầng
-LocalityName,Map,Bản đồ
-LocalityName,Site,Site
-LocalityName,Square,Ô
-LocalityName,World,Thế giới
-LocalityName,Zone,Khu vực
+LocalityName,area,khu vực
+LocalityName,level,tầng
+LocalityName,map,bản đồ
+LocalityName,site,hiện trường
+LocalityName,square,ô
+LocalityName,world,thế giới
+LocalityName,zone,vùng
+MaterialName,adamantine,adamantine
 MaterialName,air,không khí
 MaterialName,animal,động vật
 MaterialName,bone,xương
@@ -3891,6 +3891,7 @@ MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt
 MotionPastName,chanted,đã niệm
 MotionPastName,constructed,đã xây
+MotionPastName,copied,đã sao chép
 MotionPastName,dipped,đã nhúng
 MotionPastName,divined,đã thánh hóa
 MotionPastName,drank,đã uống
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,đã lấy hết
 MotionPastName,exchanged,đã trao đổi
 MotionPastName,flashed,đã phát sáng
 MotionPastName,inscribed,đã ghi
+MotionPastName,mounted,đã cưỡi
 MotionPastName,opened,đã mở
 MotionPastName,packed,đã đóng gói
 MotionPastName,played,đã chơi
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,bôi
 MotionPresentName,capture,bắt
 MotionPresentName,chant,niệm
 MotionPresentName,construct,xây
+MotionPresentName,copy,sao chép
 MotionPresentName,dig,đào
 MotionPresentName,dip,nhúng
 MotionPresentName,divine,thánh hóa
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,lấy
 MotionPresentName,exchange,trao đổi
 MotionPresentName,flash,phát sáng
 MotionPresentName,inscribe,ghi
+MotionPresentName,mount,cưỡi
 MotionPresentName,open,mở
 MotionPresentName,pack,đóng gói
 MotionPresentName,play,chơi
@@ -3952,9 +3956,9 @@ MotionPresentName,study,học
 MotionPresentName,swat,vảy
 MotionPresentName,write,viết
 MotionPresentName,zap,vụt
-MurderTypeName,Allied,Đồng minh
-MurderTypeName,Every,Tất cả
-MurderTypeName,Hostile,Kẻ thù
+MurderTypeName,allied,đồng minh
+MurderTypeName,every,tất cả
+MurderTypeName,hostile,kẻ thù
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Cây cầu gỗ cứng này vẫn còn nguyên vẹn mặc dù được sử dụng suốt bao nhiêu năm rồi.
 PlatformName,crystal bridge,cầu pha lê
 PlatformName,wooden bridge,cầu gỗ
@@ -4180,9 +4184,9 @@ RaceName,plasmoid//non-binary,plasmoid lưỡng tính
 RaceName,satyr//female,thần dê nữ
 RaceName,satyr//male,thần dê nam
 RaceName,satyr//non-binary,thần dê lưỡng tính
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,người lai rùa nữ
+RaceName,tortle//male,người lai rùa nam
+RaceName,tortle//non-binary,người lai rùa lưỡng tính
 RaceName,troll//female,troll độc ác nữ
 RaceName,troll//male,troll độc ác nam
 RaceName,troll//non-binary,troll độc ác lưỡng tính
@@ -4356,7 +4360,7 @@ SkillName,unarmed combat,chiến đấu tay không
 SkillName,whip,roi
 SonicName,ammo,đạn bắn
 SonicName,amulet,đeo bùa phép
-SonicName,arf,
+SonicName,arf,arf
 SonicName,armour,mặc giáp
 SonicName,baa,cừu kêu
 SonicName,bell,chuông kêu
@@ -4375,7 +4379,7 @@ SonicName,burble,tiếng thuốc sủi bọt
 SonicName,burn,tiếng lửa bỏng
 SonicName,buzz,tiếng bọ kêu
 SonicName,cackle,cackle
-SonicName,chains,
+SonicName,chains,tiếng xích
 SonicName,chant,tiếng niệm phép
 SonicName,chime,tiếng kêu của cửa hàng
 SonicName,chirp,tiếng chim hót
@@ -4453,14 +4457,14 @@ SonicName,realtime,tiếng chế độ thời gian thực
 SonicName,rifle burst,tiếng súng trường bắn 3 viên
 SonicName,rifle shot,tiếng súng trường bắn
 SonicName,ring,ring
-SonicName,roar,tiếng rầm
-SonicName,roars,
+SonicName,roar,tiếng gầm
+SonicName,roars,tiếng gầm
 SonicName,scrap,scrap
-SonicName,scrape,scrape
-SonicName,scrapes,
+SonicName,scrape,tiếng cào
+SonicName,scrapes,tiếng cào
 SonicName,scroll,scroll
 SonicName,scuttle,scuttle
-SonicName,sever,sever
+SonicName,sever,tiếng chém đứt
 SonicName,shackle,tiếng xiềng xích
 SonicName,short tap,short tap
 SonicName,shotgun blast,tiếng súng shotgun nổ
@@ -4476,11 +4480,11 @@ SonicName,splat,splat
 SonicName,squall,squall
 SonicName,squawk,squawk
 SonicName,squeak,squeak
-SonicName,squeaks,
+SonicName,squeaks,squeaks
 SonicName,squeal,squeal
 SonicName,swallow,swallow
 SonicName,switch,switch
-SonicName,taps,
+SonicName,taps,tiếng gõ
 SonicName,teleport,tiếng dịch chuyển
 SonicName,throne,throne
 SonicName,throw grenade,tiếng ném lựu đạn
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,đã đi đến
 TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
+VolatileName,blaze,cháy
+VolatileName,electricity,phóng điện
+VolatileName,freeze,đóng băng
+VolatileName,steam,bay hơi
 WallStructureName,illusionary,ảo ảnh
 WallStructureName,permanent,thật vĩnh viễn
 WallStructureName,solid,cứng

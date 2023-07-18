@@ -1,4 +1,5 @@
 A	C	G	S	#	File
+X	X	X	X	4	adamantine bident.png
 X	X	X	X	4	adult grey dragon.png
 X	X	X	X	4	ancient grey dragon.png
 X	X	X	X	4	baby grey dragon.png
@@ -11,15 +12,7 @@ X	X	X	X	4	mithril axe.png
 X	X	X	X	4	mithril trident.png
 X	X	X	X	4	naginata.png
 X	X	X	X	4	Tempter.png
- 	X	X	X	3	adamantine arrow.png
-X	X	 	X	3	adamantine axe.png
-X	X	 	X	3	adamantine bident.png
- 	X	X	X	3	adamantine bow.png
-X	X	 	X	3	adamantine greataxe.png
-X	X	 	X	3	adamantine plate mail.png
-X	X	 	X	3	adamantine sabre.png
-X	X	 	X	3	adamantine short sword.png
-X	X	 	X	3	adamantine spear.png
+X	X	X	 	3	adamantine hatchet.png
 X	X	 	X	3	burgundy book.png
 X	X	 	X	3	froster.png
 X	X	 	X	3	healthstone.png
@@ -34,11 +27,11 @@ X	X	 	X	3	railgun.png
 X	X	 	X	3	shredded book.png
 X	X	 	X	3	whetstone.png
 X	 	X	X	3	young grey dragon.png
- 	X	 	X	2	adamantine claymore.png
-X	 	 	X	2	adamantine dagger.png
- 	X	 	X	2	adamantine greatsword.png
- 	X	 	X	2	adamantine long sword.png
-X	 	 	X	2	adamantine rapier.png
+ 	X	X	 	2	adamantine bullet.png
+ 	X	X	 	2	adamantine crossbow bolt.png
+ 	X	X	 	2	adamantine dart.png
+ 	X	X	 	2	adamantine greatmace.png
+ 	X	X	 	2	adamantine lance.png
  	X	 	X	2	Al-Mi'raj.png
 X	 	 	X	2	astral dragon.png
 X	X	 	 	2	bandage.png
@@ -65,12 +58,19 @@ X	 	X	 	2	wood panel pillar.png
  	 	 	X	1	acid elemental.png
  	 	 	X	1	acid sphere.png
  	 	 	X	1	acid spore.png
-X	 	 	 	1	adamantine hatchet.png
- 	X	 	 	1	adamantite dagger.png
- 	X	 	 	1	adamantite rapier.png
+ 	 	X	 	1	adamantine helm.png
+ 	X	 	 	1	adamantine helmet.png
+ 	X	 	 	1	adamantine katana.png
+ 	 	 	X	1	adamantine poleaxe.png
+ 	X	 	 	1	adamantine quarterstaff.png
+ 	X	 	 	1	adamantine shuriken.png
 X	 	 	 	1	air.png
 X	 	 	 	1	angel warrior.png
 X	 	 	 	1	archeologist.png
+ 	 	 	X	1	army captain.png
+ 	 	 	X	1	army lieutenant.png
+ 	 	 	X	1	army sergeant.png
+ 	 	 	X	1	army soldier.png
  	 	 	X	1	ash elemental.png
 X	 	 	 	1	assassin.png
  	 	 	X	1	astral dog.png
@@ -98,6 +98,7 @@ X	 	 	 	1	cloud.png
  	 	 	X	1	deep water.png
  	 	 	X	1	Demiurge.png
 X	 	 	 	1	demon male valyrie.png
+ 	X	 	 	1	dirt corridor.png
  	X	 	 	1	doublet.png
  	 	 	X	1	dragon horn.png
  	 	 	X	1	drow mage.png
@@ -110,6 +111,8 @@ X	 	 	 	1	demon male valyrie.png
  	X	 	 	1	dwarf male monk.png
  	X	 	 	1	dwarf male samurai.png
  	X	 	 	1	earth mage.png
+ 	X	 	 	1	elf female explorer.png
+ 	X	 	 	1	elf male explorer.png
  	 	 	X	1	elven chakram.png
  	 	 	X	1	elven hand crossbow.png
  	 	 	X	1	energy elemental.png
@@ -127,18 +130,37 @@ X	 	 	 	1	forked wand.png
  	 	 	X	1	General Breetai.png
 X	 	 	 	1	giant hamster.png
  	 	 	X	1	glossy potion.png
+ 	 	 	X	1	gold axe.png
+ 	 	 	X	1	gold chakram.png
 X	 	 	 	1	gold coin 1.png
 X	 	 	 	1	gold coin 2.png
 X	 	 	 	1	gold coin 3.png
 X	 	 	 	1	gold coin 4.png
 X	 	 	 	1	gold coin 5.png
 X	 	 	 	1	gold coin 6.png
+ 	 	 	X	1	gold dagger.png
+ 	 	 	X	1	gold double vajra.png
+ 	 	 	X	1	gold flail.png
+ 	 	 	X	1	gold khanda.png
+ 	 	 	X	1	gold labrys.png
+ 	 	 	X	1	gold longsword.png
+ 	 	 	X	1	gold plate mail.png
+ 	 	 	X	1	gold single vajra.png
+ 	 	 	X	1	gold spade.png
+ 	 	 	X	1	gold trident.png
+ 	 	 	X	1	gold twohanded sword.png
+ 	 	 	X	1	gold urumi.png
  	 	 	X	1	gold whistle.png
+ 	X	 	 	1	grand stairs down.png
+ 	X	 	 	1	grand stairs up.png
  	 	 	X	1	grave mimic.png
  	 	 	X	1	green jelly.png
  	 	 	X	1	Gungir.png
  	 	 	X	1	hag.png
+ 	X	 	 	1	halfling female caveman.png
+ 	X	 	 	1	halfling male caveman.png
  	 	 	X	1	humantrap.png
+ 	 	 	X	1	ice giant.png
  	X	 	 	1	ice mage.png
  	 	 	X	1	ink pool.png
  	 	 	X	1	ink strike.png
@@ -156,6 +178,7 @@ X	 	 	 	1	gold coin 6.png
  	 	 	X	1	khopesh.png
  	X	 	 	1	Krull.png
 X	 	 	 	1	large box.png
+ 	X	 	 	1	lattice floor.png
 X	 	 	 	1	lefthanded book.png
 X	 	 	 	1	mail daemon.png
  	 	 	X	1	male alchemist.png
@@ -231,6 +254,7 @@ X	 	 	 	1	traveller.png
  	 	 	X	1	treant 2.png
  	 	 	X	1	triplesword.png
  	 	 	X	1	Vajra.png
+ 	X	 	 	1	war maul.png
  	X	 	 	1	water mage.png
  	 	 	X	1	wind sphere.png
 X	 	 	 	1	wood panel bottom left corner.png
@@ -262,5 +286,6 @@ X	 	 	 	1	wood panel vertical.png
  	X	 	 	1	wooden wall top left corner.png
  	X	 	 	1	wooden wall top right corner.png
  	X	 	 	1	wooden wall vertical.png
+ 	 	 	X	1	yoyo.png
  	 	 	X	1	zombietree.png
  	X	 	 	1	Zweihander.png

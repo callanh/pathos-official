@@ -328,12 +328,14 @@
 
 # Enchantment; 附魔
 . Weapons and armour have a modifier that can be changed with enchantment magic.; 武器和防具有一个+x的前缀，来表示当前附魔的等级。
-. The modifier is limited to between {Min} and {Max}.; 附魔的等级只能是{Min}到{Max}。
 . A modifier of +0 is a normal, mundane item.; +0的附魔表示普通的道具。
 . Modifiers on armour apply to your defence score.; 防具上的附魔会加到你的防御力里。
 . Modifiers on weapons apply to your attack and damage scores.; 武器上的附魔会加到你的攻击力和伤害里。
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; 如果你试图将附魔提高或者降低到{Min}到{Max}以外，这个道具会爆炸。
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 神器可以被最高附魔到{Modifier}，如果超过则会被重置为0
+/
+. The {grade} items are limited to between {Min} and {Max}.; “{grade}”级别的物品，附魔等级的限制范围是从{Min}到{Max}。
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; {grade}物品的最高附魔等级为{Modifier}，再试图强化它会将附魔重置为+0。
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 如果你试图将{grade}物品的附魔提高或者降低到限制以外，这个物品会爆炸。
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 有些道具也可以升级，比如锡制口哨可以升级到魔法哨。
 
 # Punishments; 惩罚

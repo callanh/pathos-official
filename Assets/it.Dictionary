@@ -36,16 +36,12 @@ AnatomyName,mind,
 AnatomyName,mounted,montato
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,soddisfatto
-ApetiteName,hungry,affamato
-ApetiteName,satiated,sazio
-ApetiteName,starving,morto di fame
-ApetiteName,weak,debole
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Un lungo mantello aperto sul davanti e fissato al petto con una fermaglio.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un cappotto di armatura di mithril corto ma dall'aspetto robusto.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Un cappotto di armatura di mithril dall'aspetto sottile e delicato.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Un cappotto di armatura di mithril slanciato e lucido.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Questo classico accessorio da mago è un cappello a punta decorato con lune e stelle.
+AppearanceName,adamantine staff,
 AppearanceName,agate ring,anello di agata
 AppearanceName,aluminium wand,bacchetta di alluminio
 AppearanceName,angled poleaxe,ascia con asta inclinata
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,amuleto sferico
 AppearanceName,spiked wand,bacchetta chiodata
 AppearanceName,spotted book,libro maculato
 AppearanceName,square amulet,amuleto quadrato
-AppearanceName,staff,verga
 AppearanceName,stained book,libro macchiato
 AppearanceName,steel boots,stivali di acciaio
 AppearanceName,steel ring,anello di acciaio
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,gemma gialla
 AppearanceName,yellow potion,pozione gialla
 AppearanceName,yellowish brown gem,gemma marrone giallastra
 AppearanceName,zinc wand,bacchetta di zinco
+AppetiteName,content,soddisfatto
+AppetiteName,hungry,affamato
+AppetiteName,satiated,sazio
+AppetiteName,starving,morto di fame
+AppetiteName,weak,debole
 AttackType,bite,morso
 AttackType,blast,esplosione
 AttackType,breath,alito
@@ -836,6 +836,7 @@ CounterName,captures,cattura
 CounterName,casts,lancia
 CounterName,chants,canta
 CounterName,constructs,costruisce
+CounterName,copies,
 CounterName,crafts,crea
 CounterName,decapitations,decapitazioni
 CounterName,digs,scava
@@ -854,6 +855,7 @@ CounterName,jumps,salta
 CounterName,kicks,calci
 CounterName,lifesaves,salvavita
 CounterName,mimics,imita
+CounterName,mounts,
 CounterName,moves,si muove
 CounterName,opens,si apre
 CounterName,packs,confezioni
@@ -970,7 +972,6 @@ EffectProperty,lies,bugie
 EffectProperty,loyal only,
 EffectProperty,material,materiale
 EffectProperty,materials,materiali
-EffectProperty,objects,oggetti
 EffectProperty,polite,educato
 EffectProperty,properties,proprietà
 EffectProperty,punishments,punizioni
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,rimuovere talenti casuali
 EffectProperty,removes all transients,rimuove tutti i transitori
 EffectProperty,reset random equipment,resettare l'equipaggiamento casuale
 EffectProperty,reveal,rivela
-EffectProperty,revenants,non-morti
 EffectProperty,sanctity,santità
 EffectProperty,skills,abilità
 EffectProperty,source,fonte
@@ -998,7 +998,6 @@ EffectProperty,whole stack,tutta la pila
 EffectType,afflict,affliggere
 EffectType,alert,mettere in guardia
 EffectType,amnesia,amnesia
-EffectType,animate,animare
 EffectType,area transient,area transitoria
 EffectType,assess,valutare
 EffectType,blinking,lampeggiante
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,convertire masso
 EffectType,convert door,convertire la porta
 EffectType,convert fixture,convertire trappola
 EffectType,convert floor,convertire piano
+EffectType,convert spill,
 EffectType,convert wall,convertire muro
 EffectType,create boulder,creare un masso
 EffectType,create fixture,creare una trappola
 EffectType,create golem,creare golem
 EffectType,create horde,creare un'orda
 EffectType,create nook,creare un angolo
+EffectType,create spill,
 EffectType,create trap,creare trappola
 EffectType,create wall,creare muro
 EffectType,decapitate,decapita
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,incanta risorsa
 EffectType,engulf,inghiottire
 EffectType,enlightenment,illuminazione
 EffectType,exchange,scambio
+EffectType,extinguish spill,
 EffectType,gain level,guadagnare livello
 EffectType,gain skill,acquisire abilità
 EffectType,genocide,genocidio
@@ -1064,6 +1066,7 @@ EffectType,raise dead,resuscitare morti
 EffectType,recall,richiamare
 EffectType,release,pubblicazione
 EffectType,remove curse,rimuovi la maledizione
+EffectType,remove spill,
 EffectType,remove transient,rimuovi transitorio
 EffectType,replicate asset,replicare risorsa
 EffectType,restock,rifornire
@@ -1165,6 +1168,7 @@ EntityName,abbot,abate
 EntityName,acid blob,chiazza di acido
 EntityName,acid worm,verme acido
 EntityName,acolyte,accolito
+EntityName,adamantine golem,
 EntityName,adult black dragon,drago nero adulto
 EntityName,adult blue dragon,drago blu adulto
 EntityName,adult deep dragon,drago profondo adulto
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} ha inettamente {MotionPastName} {AssetName} ma non è successo nulla
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} inettamente {MotionPastName} {Use:AssetName} con {With:AssetName}
 FormatText,{CharacterName} Inventory,Inventario di {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} è {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} è {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} si sente {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} non è più bloccato
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} è ora {QualificationName} in {SkillName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} con quale oggetto?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} in quale direzione?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} quale oggetto nel {FeatureName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lancia
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} {ItemName} {CharacterName} {SanctityName} {ContainerQualifier} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},a meno che non resista {ElementName}
 FormatText,unless target has {PropertyName},a meno che bersaglio ha {PropertyName}
 FormatText,versus {Something},contro {Something}
 FormatText,when {Chance},quando {Chance}
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},quando {ITEMNAME}
 FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
@@ -2148,6 +2154,9 @@ GenderName,neuter,neutro
 GenderName,non-binary,non binario
 GenerationType,module,modulo
 GenerationType,quest,quest
+GradeName,artifact,artefatto
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La superfice di pietra fresca ha fattezze immacolate ma è seganta da danni e dal tempo.
 GroundName,chasm,voragine
 GroundName,dirt floor,pavimeno sporco
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Una 
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Tantissimi utensili per il condensamento dei corpi, inclusi lattine vuote e attrezzi da macellaio."
 ItemDescription,A compact hand-held firearm.,Un'arma da fuoco compatta.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,
 ItemDescription,Zapping it at a wall creates a big tunnel.,
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,agata
 ItemName,aklys,giavellotto romano
 ItemName,alchemy smock,grembiule da alchimista
@@ -2372,6 +2395,7 @@ ItemName,banana,banana
 ItemName,banded mail,corazza a strisce
 ItemName,bardiche,berdica
 ItemName,battle robe,tunica da battaglia
+ItemName,battle staff,
 ItemName,battle-axe,ascia da battaglia
 ItemName,beartrap,tagliola
 ItemName,bec de corbin,mazzapicchio
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,tirapugni d'ottone
 ItemName,broadsword,spadone
 ItemName,bronze bell,campana di bronzo
 ItemName,bronze plate mail,armatura a piastre di bronzo
+ItemName,Brumstyk,
 ItemName,bullet,proiettile
 ItemName,bullwhip,frusta
 ItemName,caltrops,piedi di corvo
@@ -2657,6 +2682,7 @@ ItemName,meat stick,bastone di carne
 ItemName,meatball,polpetta della nonna
 ItemName,melon,melone
 ItemName,Mirrorbright,Specchio di Perseo
+ItemName,Miserus,
 ItemName,mithril arrow,freccia di mithril
 ItemName,mithril barding,bardatura di mithril
 ItemName,mithril battle-axe,ascia da battaglia di mithril
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,tubo di gomma
 ItemName,ruby,rubino
 ItemName,Ruby Key,chiave rubino
 ItemName,Runesword,Spada Runica
+ItemName,sabre,
 ItemName,sack,sacca
 ItemName,saddle,sella
 ItemName,sai,sai
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,abolisci le armi da fuoco
 LiteralText,ABOUT,SU PATHOS
 LiteralText,About Pathos,Su Pathos
 LiteralText,Abyss,Abisso
-LiteralText,accelerated animations,animazioni accelerate
 LiteralText,accelerated resting,riposo accelerato
 LiteralText,actions,azioni
 LiteralText,ADD LEVEL,AGGIUNGI LIVELLO
@@ -3082,10 +3108,11 @@ LiteralText,ALL,TUTTI
 LiteralText,ALL AT ONCE,TUTTI INSIEME
 LiteralText,always,sempre
 LiteralText,AMBIENT SOUNDS,SUONI AMBIENTALI
-LiteralText,AMMO,MUNIZIONI
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
 LiteralText,anatomy,anatomia
+LiteralText,animate mount,
+LiteralText,animate revenant,animare non-morti
 LiteralText,ANONYMOUS,ANONIMO
 LiteralText,anticlockwise 90 degrees,in senso antiorario di 90 gradi
 LiteralText,any item,qualsiasi oggetto
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Sei sicuro di voler uccidere il tuo personaggio e terminare l'avventura?
 LiteralText,ARE YOU SURE?,NE SEI SICURO?
 LiteralText,area of effect,area d'effetto
-LiteralText,artifact,artefatto
 LiteralText,ARTIFACTS,ARTEFATTI
 LiteralText,ASCEND TO PREVIOUS LEVEL,ASCENDI AL PIANO PRECEDENTE
-LiteralText,asleep,addormentato
 LiteralText,assets,asset
 LiteralText,ATMOSPHERE,ATMOSFERA
 LiteralText,attack modifier,modificatore d'attacco
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,discussioni sulla beta
 LiteralText,Black background,Sfondo nero
 LiteralText,Black Market,Mercato Nero
 LiteralText,blasphemy,blasfemia
-LiteralText,blessed,benedetto
-LiteralText,BLESSED,BENEDETTO
 LiteralText,BLINK,TELETRASPORTATI
 LiteralText,Blink which direction?,In quale direzione vuoi teletrasportarti?
 LiteralText,block,blocca
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,ROTTO
 LiteralText,burst rate,rateo di fuoco
 LiteralText,BUY,COMPRA
 LiteralText,BUY ALL,COMPRA TUTTO
-LiteralText,by Callan Hodgskin,by Callan Hodgskin
 LiteralText,CANCEL,ANNULLA
 LiteralText,cancellation,cancellazione
 LiteralText,CANCELLED,ANNULLATO
@@ -3167,8 +3189,6 @@ LiteralText,Character,Personaggio
 LiteralText,CHARACTER,PERSONAGGIO
 LiteralText,characters,personaggi
 LiteralText,charged items,oggetti caricati
-LiteralText,charm,affascina
-LiteralText,CHARMED,AFFASCINATO
 LiteralText,Chat on Discord,Chatta su Discord (solo in inglese)
 LiteralText,check for updates?,controlla disponibilità aggiornamenti?
 LiteralText,checking for updates,controllo per aggiornamenti...
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,premi per riprovare
 LiteralText,Click to send detected issues to the author,Premi per segnalare i problemi rilevati all'autore (apre Outlook / Gmail)
 LiteralText,CLOSE,CHIUDI
 LiteralText,closed,chiuso
-LiteralText,CLOSED,CHIUSO
 LiteralText,Coding on Medium,Programmando su Medium
 LiteralText,coins,monete
 LiteralText,companion,compagno
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,CREA ORDA
 LiteralText,CREATE ITEM,CREA OGGETTO
 LiteralText,CREATE SHOP,CREA NEGOZIO
 LiteralText,CREATE SHRINE,CREA SANTUARIO
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,CREA TRAPPOLA
 LiteralText,CREATE WALL,CREA MURO
 LiteralText,Create which direction?,In quale direzione creare?
 LiteralText,CREDITS,CREDITI
 LiteralText,CROP,TAGLIA
-LiteralText,cursed,maledetto
 LiteralText,CURSED,MALEDETTO
 LiteralText,CUSTOM,PERSONALIZZATO
 LiteralText,CUSTOM HERO,EROE PERSONALIZZATO
 LiteralText,CUSTOM MODULES,MODULI PERSONALIZZATI
-LiteralText,DAMAGE,DANNO
 LiteralText,dark,buio
-LiteralText,dark-hidden,nascosto-buio
 LiteralText,DEAD END,SENZA USCITA
 LiteralText,death,morte
-LiteralText,DEATH,MORTE
 LiteralText,deathray,raggio della morte
 LiteralText,decapitation,decapitazione
 LiteralText,DECEASED,DECEDUTO
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,Disabilita bottone continua
 LiteralText,disable haptic feedback,disabilita il feedback aptico
 LiteralText,Disable idle animations,Disabilita animazioni ozio
 LiteralText,Disable introduction boom,Disabilita il 'boom' iniziale
+LiteralText,Disable mask animations,
 LiteralText,Disable online services,Disabilita servizi online
 LiteralText,Disable pitch shifting,Disabilita il pitch shifting per i suoni
 LiteralText,Disable spacebar real-time toggle,Disabilita la possibilità di alternare la modalità in tempo reale con la barra spaziatrice
+LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,DISCONNETTI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Collegamento interrotto. Assicurati di avere una condizione stabile e che tutti i giocatori utilizzino la stessa versione di Pathos.
 LiteralText,Discuss on Reddit,Discutine su Reddit
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,peggiora a
 LiteralText,downloading update,scaricamento aggiornamento
 LiteralText,drop,lascia cadere
 LiteralText,DROP,LASCIA CADERE
-LiteralText,DUAL,DOPPIA
 LiteralText,DUAL WIELD,DOPPIA IMPUGNATURA
 LiteralText,Dungeon,Dungeon
 LiteralText,duration,durata
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,SCAPPA
 LiteralText,escape traps,scansa trappole
 LiteralText,escape with,scappa con
 LiteralText,escaped,è fuggito
-LiteralText,ESCAPED,FUGGITO
 LiteralText,ESSENCE,ESSENZA
 LiteralText,evolution,evoluzione
 LiteralText,Examine which object?,Esamina quale oggetto?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,ESPANDI
 LiteralText,EXPEL,ESPELLI
 LiteralText,experience,esperienza
 LiteralText,EXPERIENCE,ESPERIENZA
-LiteralText,EXPLODED,ESPLOSO
 LiteralText,explosion,esplosione
 LiteralText,EXPORT,ESPORTA
 LiteralText,extinctions,estinzioni
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,CARATTERISTICHE
 LiteralText,FEED,NUTRI
 LiteralText,FEEDBACK,FEEDBACK
 LiteralText,FILES,FILE
-LiteralText,Find out what is coming in the next update.,Scopri cosa verrà aggiunto nel prossimo aggiornamento.
 LiteralText,fixed range,gittata fissa
 LiteralText,FIZZLE,SIBILIO
 LiteralText,Floor,Piano
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,ASSUMI
 LiteralText,HORDES,ORDE
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Nonostante ciò, sarebbe saggio finire le seguenti avventure prima di scaricare l'aggiornamento."
-LiteralText,HUH?,HUH?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Spero che le tue avventure ti stiano divertendo. Se vuoi puoi contattami per farmi sapere le tue impressioni e suggerimenti.
 LiteralText,identified items,ha identificato oggetti
-LiteralText,IDENTIFY,IDENTIFICA
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICA TUTTI GLI OGGETTI SUL TERRENO
 LiteralText,ILLITERATE,ILLETTERATO
 LiteralText,illusion,illusione
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,Importa un file
 LiteralText,IMPOSSIBLE,IMPOSSIBILE
 LiteralText,in both hands,in entrambe le mani
 LiteralText,incarceration,incarcerazione
-LiteralText,increase,aumenta
 LiteralText,INCREASE,AUMENTA
 LiteralText,INDEX,INDICE
 LiteralText,individual crafting,fabbricazione singola
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,azioni influenzate
 LiteralText,INSCRIBE,INCIDI
 LiteralText,INSCRIBE ITEM,INCIDI OGGETTO
 LiteralText,inscription?,iscrizione?
-LiteralText,INSTRUCT,ISTRUISCI
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,ORO INSUFFICIENTE
 LiteralText,insulation,insolazione termica
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Stanze barocche e segreti misteriosi ti attendono ma non indugiare; dovrai scendere o morire. Basato sulla mappa di Shattered Pixel Dungeon.
@@ -3462,7 +3473,6 @@ LiteralText,light,luce
 LiteralText,LIGHT,LUCE
 LiteralText,light radius,raggio coperto da luce
 LiteralText,limits,limiti
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Link a tutte le piattaforme supportate incluso iOS, Android e Windows."
 LiteralText,LIST,LISTA
 LiteralText,lit,acceso
 LiteralText,LIVING,VIVENTE
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,perdi abilità
 LiteralText,Lost Chambers,Camere Dimenticate
 LiteralText,LOW MANA,MANA BASSA
 LiteralText,Ludios Cache,Segrete della fortezza
-LiteralText,MAIN,PRINCIPALE
 LiteralText,MAIN WIELD,MANO PRIMARIA
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,IMITA
 LiteralText,mimicking,imitando
 LiteralText,Mines,Profondità minerarie
 LiteralText,Minetown,Sottomonte
-LiteralText,missile,missile
 LiteralText,modifier,modificatore
 LiteralText,MOUNT,MONTA
 LiteralText,Mount which direction?,In quale direzione vuoi montare?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,nessun alleato
 LiteralText,no ambient sounds,no suoni ambientali
 LiteralText,No appropriate items available,Nessun oggetto appropriato disponibile
 LiteralText,no available knowledge,nessuna conoscenza disponibile
+LiteralText,no records found,
 LiteralText,no resistances,senza resistenze
 LiteralText,no talents,senza abilità
 LiteralText,no transient effects,nessun effetto transitorio
@@ -3545,14 +3554,12 @@ LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINALE
 LiteralText,OVERRIDE,RIMPIAZZA
 LiteralText,OVERVIEW,PANORAMICA
-LiteralText,PACIFIED,PACIFICATO
 LiteralText,Palette,Palette
 LiteralText,PARTY,SQUADRA
 LiteralText,passage,passaggio
 LiteralText,passive (no attacking),passivo (non sta attaccando)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos può essere giocato in split-screen con massimo 4 giocatori sullo stesso dispositivo.
-LiteralText,pathos development @ paypal or stripe,Pathos su Paypal e Stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos è gratis e viene sviluppato per passione.
+LiteralText,pathos development @ paypal,Pathos su Paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos non è in grado di caricare la tua avventura. Inviami il tuo file di salvataggio in modo che possa indagare sul problema. Potrei anche essere in grado di riparare il file o aggiornare l'app con una correzione. La tua comprensione è apprezzata.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos potrebbe essere la possima evoluzione di Nethack.
 LiteralText,penalty,penalità
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,TRASFORMATO
 LiteralText,portal,portale
 LiteralText,porter,portabagagli
 LiteralText,PRAY,PREGA
-LiteralText,PRAYING,PREGANDO
 LiteralText,preservation,preservazione
 LiteralText,prevent revenant levels,previeni personaggi non-morti
 LiteralText,prisoner,prigioniero
@@ -3632,10 +3638,8 @@ LiteralText,resident?,residente?
 LiteralText,resistances,resistenze
 LiteralText,RESISTS,RESISTE
 LiteralText,Rest,Riposa
-LiteralText,REST,RIPOSO
 LiteralText,Rest how many turns?,Riposi per quanti turni?
 LiteralText,restarting to update,riavvio per aggiornare
-LiteralText,RESTING,RIPOSA
 LiteralText,RESTORED,RISTORATO
 LiteralText,RESURRECT,RESUSCITA
 LiteralText,Resurrect and continue,Resuscita e continua
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,RIVELA
 LiteralText,REVEAL ALL MAPS,RIVELA TUTTE LE MAPPE
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,rivelato
+LiteralText,revenant,
 LiteralText,REVERT,RITORNA
 LiteralText,RIGHT RING,ANELLO DESTRO
 LiteralText,rigid,rigido
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,ROTTAMA
 LiteralText,SEALED,CHIUSO
 LiteralText,Search,Cerca
 LiteralText,Search how many turns?,Cerca per quanti turni?
-LiteralText,SEARCHING,IN RICERCA
 LiteralText,secret,segreto
 LiteralText,SECRET,SEGRETO
 LiteralText,seed,seme
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,IMPOSTA DIFFICOLTÀ
 LiteralText,set starting location,imposta la posizione di partenza
 LiteralText,SETTINGS,IMPOSTAZIONI
 LiteralText,sfx volume,volume sfx
-LiteralText,Share your tragic and heroic stories with other players.,Condividi le tue storie tragiche ed eroiche con altri giocatori.
 LiteralText,SHARE//exchange,CONDIVIDI
 LiteralText,SHARE//publish,CONDIVIDI
 LiteralText,SHOPS,NEGOZI
 LiteralText,Show debugging information,Mostra informazioni di debug
 LiteralText,Show time clock,Mostra orologio
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Mostra il tuo sostegno aiutando altri giocatori a scoprire Pathos.
 LiteralText,SHRINES,SANTUARI
 LiteralText,SIGN-IN,REGISTRAZIONE
 LiteralText,size,taglia
@@ -3749,7 +3751,6 @@ LiteralText,terrain,terreno
 LiteralText,The attack score is your aptitude for hitting an opponent.,Il punteggio di attacco è la tua attitudine a colpire un avversario.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,La sfida è migliorare la meccanica mantenendo l'essenza di ciò che lo rende il più grande gioco di tutti i tempi.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Il punteggio di difesa è quanto sei protetto dall'essere colpito da un avversario.
-LiteralText,There are no known polymorphs,Non sono note metamorfosi
 LiteralText,There is a new update available!,C'è un nuovo aggiornamento disponibile!
 LiteralText,there is nothing to place here,non c'è niente da mettere qui
 LiteralText,there is nothing to remove here,non c'è niente da togliere qui
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,TROPPO PESANTE
 LiteralText,TOO HUNGRY,TROPPO AFFAMATO
 LiteralText,TOO SMALL,TROPPO PICCOLO
 LiteralText,TOO WEAK,TROPPO DEBOLE
-LiteralText,touch,tocco
 LiteralText,TRACKS,COLONNE SONORE
 LiteralText,TRADE,COMMERCIO
 LiteralText,transform to,trasformare in
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,Vanità
 LiteralText,VIEW,VISUALIZZA
 LiteralText,Visit the website,Visita il sito web
 LiteralText,VOID SPACE,SPAZIO VUOTO
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,vulnerabile a
 LiteralText,WAIT,ASPETTA
 LiteralText,Wait how many turns?,Aspetti per quanti turni?
-LiteralText,WAITING,IN ATTESA
 LiteralText,WARPING,TELETRASPORTO
 LiteralText,was killed,è stato ucciso
-LiteralText,was strangled,è stato strangolato
 LiteralText,weakness to,debolezza a
 LiteralText,weight,peso
 LiteralText,when afflicted,quando afflitto
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,DIREZIONE SBAGLIATA
 LiteralText,"You are playing as anonymous, please register!","Stai giocando come anonimo, per favore registrati!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Potresti aver bisogno di CERCARE porte segrete usando l'icona OCCHIO..
 LiteralText,Your current movement and action speed in squares per second.,Il tuo movimento attuale e la velocità di azione in quadrati al secondo.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Il tuo feedback è apprezzato e influenzerà i miei piani di sviluppo.
 LiteralText,ZOOM,INGRANDISCI
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,Level,Livello
-LocalityName,Map,Carta geografica
-LocalityName,Site,Luogo
-LocalityName,Square,Piazza
-LocalityName,World,Mondo
-LocalityName,Zone,Zona
+LocalityName,area,
+LocalityName,level,livello
+LocalityName,map,carta geografica
+LocalityName,site,luogo
+LocalityName,square,piazza
+LocalityName,world,mondo
+LocalityName,zone,zona
+MaterialName,adamantine,
 MaterialName,air,aria
 MaterialName,animal,animale
 MaterialName,bone,osso
@@ -3891,6 +3891,7 @@ MotionPastName,ate,ha mangiato
 MotionPastName,captured,ha catturato
 MotionPastName,chanted,ha salmodiato
 MotionPastName,constructed,ha costruito
+MotionPastName,copied,
 MotionPastName,dipped,ha immerso
 MotionPastName,divined,ha divinato
 MotionPastName,drank,ha bevuto
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,ha svuotato
 MotionPastName,exchanged,ha scambiato
 MotionPastName,flashed,ha lampeggiato
 MotionPastName,inscribed,ha inciso
+MotionPastName,mounted,
 MotionPastName,opened,ha aperto
 MotionPastName,packed,ha confezionato
 MotionPastName,played,ha suonato
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,ungi
 MotionPresentName,capture,cattura
 MotionPresentName,chant,salmodia
 MotionPresentName,construct,costruisci
+MotionPresentName,copy,
 MotionPresentName,dig,scava
 MotionPresentName,dip,immergi
 MotionPresentName,divine,divina
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,svuota
 MotionPresentName,exchange,scambia
 MotionPresentName,flash,lampeggia
 MotionPresentName,inscribe,incidi
+MotionPresentName,mount,
 MotionPresentName,open,apri
 MotionPresentName,pack,confeziona
 MotionPresentName,play,suona
@@ -3952,9 +3956,9 @@ MotionPresentName,study,studia
 MotionPresentName,swat,schiaccia
 MotionPresentName,write,scrive
 MotionPresentName,zap,lancia
-MurderTypeName,Allied,Alleato
-MurderTypeName,Every,Tutti
-MurderTypeName,Hostile,Ostile
+MurderTypeName,allied,alleato
+MurderTypeName,every,tutti
+MurderTypeName,hostile,ostile
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Questo ponte di solido legno è integro nonostante molti anni di utilizzo.
 PlatformName,crystal bridge,ponte di cristallo
 PlatformName,wooden bridge,ponte di legno
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,viaggiato
 TraversalPresentName,ascend,ascendere
 TraversalPresentName,descend,discendere
 TraversalPresentName,travel,viaggiare
+VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
+VolatileName,steam,
 WallStructureName,illusionary,illusorio
 WallStructureName,permanent,permanente
 WallStructureName,solid,solido

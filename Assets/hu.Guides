@@ -328,12 +328,14 @@
 
 # Enchantment;Igézés
 . Weapons and armour have a modifier that can be changed with enchantment magic.;A fegyverek és páncélok rendelkeznek egy módosítóval, amelyet igézőmágiával lehet megváltoztatni.
-. The modifier is limited to between {Min} and {Max}.;A módosító a {Min} és {Max} közötti értékre korlátozódik.
 . A modifier of +0 is a normal, mundane item.;A +0-ás módosítóval rendelkező tárgy hétköznapinak számít.
 . Modifiers on armour apply to your defence score.;A páncélzatra vonatkozó módosítók a védekezési pontszámot befolyásolják.
 . Modifiers on weapons apply to your attack and damage scores.;A fegyverekre vonatkozó módosítók a támadási és sebzési pontszámot befolyásolják.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.;A tárgy megsemmisül, ha a módosítót a {Min} vagy {Max} értéken túl próbálod módosítani.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;Az ereklyéket {Modifier}-ig lehet igézni. Ez a szám nullára áll vissza, ha túlléped.
+/
+. The {grade} items are limited to between {Min} and {Max}.; Az {grade} módosító a {Min} és {Max} közötti értékre korlátozódik.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Az {grade} lehet igézni. Ez a szám nullára áll vissza, ha túlléped.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Az {grade} elem megsemmisül, ha megpróbálja módosítani a módosítót a határon túl.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;A tárgyakat is lehet igézéssel fejleszteni (például egy bádogsípot mágikus síppá).
 
 # Punishments;Büntetések

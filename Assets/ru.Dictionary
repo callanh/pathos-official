@@ -36,16 +36,12 @@ AnatomyName,mind,разум
 AnatomyName,mounted,верховой
 AnatomyName,thermal,тёплый
 AnatomyName,voice,голос
-ApetiteName,content,удовлетворённый
-ApetiteName,hungry,голодный
-ApetiteName,satiated,сытый
-ApetiteName,starving,истощённый
-ApetiteName,weak,ослабленный
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Открытый спереди длинный плащ с застёжкой на груди.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Мифрильный доспех, короткий в длину, но выглядящий крепким."
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Мифрильный доспех с тонким и изящным покрытием.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Мифрильный доспех с тонким и блестящим покрытием.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Эта классическая часть наряда волшебника — остроконечная шляпа украшенная луной и звёздами.
+AppearanceName,adamantine staff,адамантитовый посох
 AppearanceName,agate ring,агатовое кольцо
 AppearanceName,aluminium wand,алюминиевая палочка
 AppearanceName,angled poleaxe,выпуклая секира
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,сферический амулет
 AppearanceName,spiked wand,шипастая палочка
 AppearanceName,spotted book,крапчатая книга
 AppearanceName,square amulet,квадратный амулет
-AppearanceName,staff,посох
 AppearanceName,stained book,запятнанная книга
 AppearanceName,steel boots,стальные ботинки
 AppearanceName,steel ring,стальное кольцо
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,жёлтый самоцвет
 AppearanceName,yellow potion,жёлтое зелье
 AppearanceName,yellowish brown gem,желтовато-коричневый самоцвет
 AppearanceName,zinc wand,цинковая палочка
+AppetiteName,content,удовлетворённый
+AppetiteName,hungry,голодный
+AppetiteName,satiated,сытый
+AppetiteName,starving,истощённый
+AppetiteName,weak,ослабленный
 AttackType,bite,укус
 AttackType,blast,взрыв
 AttackType,breath,дыхание
@@ -836,6 +836,7 @@ CounterName,captures,пойманный
 CounterName,casts,заклинания
 CounterName,chants,распевания
 CounterName,constructs,создания
+CounterName,copies,копий сделано
 CounterName,crafts,мастерить
 CounterName,decapitations,обезглавливания
 CounterName,digs,копания
@@ -854,6 +855,7 @@ CounterName,jumps,прыжки
 CounterName,kicks,удары
 CounterName,lifesaves,спасение жизни
 CounterName,mimics,мимикрирования
+CounterName,mounts,существ осёдлано
 CounterName,moves,движения
 CounterName,opens,открытия
 CounterName,packs,консервирования
@@ -970,7 +972,6 @@ EffectProperty,lies,враньё
 EffectProperty,loyal only,только лояльный
 EffectProperty,material,материал
 EffectProperty,materials,материалы
-EffectProperty,objects,предметы
 EffectProperty,polite,дружелюбно
 EffectProperty,properties,свойства
 EffectProperty,punishments,наказания
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,удалить случайный талан
 EffectProperty,removes all transients,снимает все временные эффекты
 EffectProperty,reset random equipment,устанавливает случайное снаряжение
 EffectProperty,reveal,раскрыться
-EffectProperty,revenants,восставшие
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,навыки
 EffectProperty,source,источник
@@ -998,7 +998,6 @@ EffectProperty,whole stack,вся стопка
 EffectType,afflict,заражает
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
-EffectType,animate,оживление
 EffectType,area transient,область временного эффекта
 EffectType,assess,определение
 EffectType,blinking,мерцание
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,превращает валун
 EffectType,convert door,переводит дверь
 EffectType,convert fixture,переводит приспособление
 EffectType,convert floor,переводит пол в
+EffectType,convert spill,переводит завесу
 EffectType,convert wall,переводит стену
 EffectType,create boulder,создаёт валун
 EffectType,create fixture,создаёт приспособление
 EffectType,create golem,создаёт голема
 EffectType,create horde,создаёт орду
 EffectType,create nook,создаёт тайную
+EffectType,create spill,создаёт завесу
 EffectType,create trap,создаёт ловушку
 EffectType,create wall,создаёт стену
 EffectType,decapitate,отрубает голову
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
+EffectType,extinguish spill,потушить завесу
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -1064,6 +1066,7 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
+EffectType,remove spill,убирает завесу
 EffectType,remove transient,снимает временное
 EffectType,replicate asset,копирует ценность
 EffectType,restock,пополняет запасы
@@ -1165,6 +1168,7 @@ EntityName,abbot,аббат
 EntityName,acid blob,кислотный пузырь
 EntityName,acid worm,кислотный червь
 EntityName,acolyte,прислужник
+EntityName,adamantine golem,адамантитовый голем
 EntityName,adult black dragon,взрослый чёрный дракон
 EntityName,adult blue dragon,взрослый синий дракон
 EntityName,adult deep dragon,взрослый глубинный дракон
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} неуклюже {MotionPastName} {AssetName} и ничего не произошло
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} неуклюже {MotionPastName} {Use:AssetName} используя {With:AssetName}
 FormatText,{CharacterName} Inventory,Список вещей {CharacterName}
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} теперь {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} теперь {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} чувствует себя {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} освобождается
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} теперь {QualificationName} в {SkillName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} на чём?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} в каком направлении?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} {FeatureName} какой предмет?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} осёдлан {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} накладывает
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},если не сопротивляетс
 FormatText,unless target has {PropertyName},если цель не имеет {PropertyName}
 FormatText,versus {Something},против {Something}
 FormatText,when {Chance},при {Chance}
+FormatText,when {GROUNDNAME},когда {GROUNDNAME}
 FormatText,when {ITEMNAME},когда {ITEMNAME}
 FormatText,when {KINDNAMES},когда {KINDNAMES}
 FormatText,when {MATERIALNAME},когда {MATERIALNAME}
@@ -2148,6 +2154,9 @@ GenderName,neuter,бесполый
 GenderName,non-binary,небинарный пол
 GenerationType,module,модуль
 GenerationType,quest,квест
+GradeName,artifact,артефакт
+GradeName,exotic,необычный
+GradeName,standard,обычный
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Прохладная каменная поверхность создана с безукоризненным мастерством, но изувечена разными повреждениями и временем."
 GroundName,chasm,пропасть
 GroundName,dirt floor,земляной пол
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Т�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Набор предметов для консервирования и упаковки трупов, состоящий из пустых банок и инструментов для разделки."
 ItemDescription,A compact hand-held firearm.,Компактное огнестрельное оружие.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Изогнутый однолезвийный клинок, нередко используемый кавалерией, особенно эффективен против существ из преисподней."
+ItemDescription,A curved single-edged blade often used by cavalry.,"Изогнутый однолезвийный клинок, нередко используемый кавалерией."
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",Изогнутый жёлтый фрукт является отличным источником клетчатки.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Плоское метательное оружие из дерева, часто используемое для охоты."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",Плоский круглый торт. Представьте себе — готовится на сковороде.
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Крохотные металлические шипы, брошенные на землю препятствуют передвижению."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Крылатые сандалии из нерушимого золота, которые летают быстро и бесшумно."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах этим в сторону стены создаст большой тоннель.
+ItemName,adamantine arrow,адамантитовая стрела
+ItemName,adamantine axe,адамантитовый топор
+ItemName,adamantine bow,адамантитовый лук
+ItemName,adamantine dagger,адамантитовый кинжал
+ItemName,adamantine greataxe,адамантитовый боевой топор
+ItemName,adamantine greatsword,адамантитовый большой двуручный меч
+ItemName,adamantine long sword,адамантитовый длинный меч
+ItemName,adamantine plate mail,адамантитовые латы
+ItemName,adamantine rapier,адамантитовая рапира
+ItemName,adamantine sabre,адамантитовая сабля
+ItemName,adamantine short sword,адамантитовый короткий меч
+ItemName,adamantine spear,адамантитовое копье
+ItemName,adamantine two-handed sword,адамантитовый двуручный меч
 ItemName,agate,агат
 ItemName,aklys,аклис
 ItemName,alchemy smock,алхимический халат
@@ -2372,6 +2395,7 @@ ItemName,banana,банан
 ItemName,banded mail,ламеллярный доспех
 ItemName,bardiche,бердыш
 ItemName,battle robe,боевая роба
+ItemName,battle staff,боевой посох
 ItemName,battle-axe,боевой топор
 ItemName,beartrap,медвежий капкан
 ItemName,bec de corbin,клевец
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,кастет
 ItemName,broadsword,палаш
 ItemName,bronze bell,бронзовый колокольчик
 ItemName,bronze plate mail,бронзовые латы
+ItemName,Brumstyk,Брумстик
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
 ItemName,caltrops,шипы
@@ -2657,6 +2682,7 @@ ItemName,meat stick,мясная палочка
 ItemName,meatball,мясной шарик
 ItemName,melon,дыня
 ItemName,Mirrorbright,Зеркальный Блеск
+ItemName,Miserus,Мизерус
 ItemName,mithril arrow,мифрильная стрела
 ItemName,mithril barding,мифрильный бард
 ItemName,mithril battle-axe,мифрильный боевой топор
@@ -2746,7 +2772,7 @@ ItemName,potion of speed,зелье скорости
 ItemName,potion of water,зелье воды
 ItemName,proof earrings,серьги оценки
 ItemName,Prudentia,Пруденция
-ItemName,quarterstaff,боевой посох
+ItemName,quarterstaff,посох
 ItemName,ranseur,рунка
 ItemName,rapier,рапира
 ItemName,Ravenbow,Лук Ворона
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,резиновый шланг
 ItemName,ruby,рубин
 ItemName,Ruby Key,Рубиновый ключ
 ItemName,Runesword,Рунный меч
+ItemName,sabre,сабля
 ItemName,sack,мешок
 ItemName,saddle,седло
 ItemName,sai,сай
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,без огнестрельного оружи
 LiteralText,ABOUT,ОБ ИГРЕ
 LiteralText,About Pathos,О Pathos
 LiteralText,Abyss,Бездна
-LiteralText,accelerated animations,ускорение анимации
 LiteralText,accelerated resting,ускорение отдыха
 LiteralText,actions,действия
 LiteralText,ADD LEVEL,ДОБАВИТЬ
@@ -3082,10 +3108,11 @@ LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЁ ВМЕСТЕ
 LiteralText,always,всегда
 LiteralText,AMBIENT SOUNDS,ЗВУКИ ОКРУЖЕНИЯ
-LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
 LiteralText,anatomy,анатомия
+LiteralText,animate mount,оживление ездовым существом
+LiteralText,animate revenant,оживление восставшие
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,против часовой стрелки на 90 градусов
 LiteralText,any item,любая вещь
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,"Вы уверены, что хотите потерять этого персонажа и закончить Ваше приключение?"
 LiteralText,ARE YOU SURE?,ВЫ УВЕРЕНЫ?
 LiteralText,area of effect,область действия
-LiteralText,artifact,артефакт
 LiteralText,ARTIFACTS,АРТЕФАКТЫ
 LiteralText,ASCEND TO PREVIOUS LEVEL,ПОДЪЁМ НА ПРЕДЫДУЩИЙ УРОВЕНЬ
-LiteralText,asleep,спящий
 LiteralText,assets,имущество
 LiteralText,ATMOSPHERE,АТМОСФЕРА
 LiteralText,attack modifier,модификатор атаки
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,обсуждение бета-версий
 LiteralText,Black background,Чёрный фон
 LiteralText,Black Market,Чёрный рынок
 LiteralText,blasphemy,богохульство
-LiteralText,blessed,благословлённый
-LiteralText,BLESSED,БЛАГОСЛОВЛЁННЫЙ
 LiteralText,BLINK,МЕРЦАНИЕ
 LiteralText,Blink which direction?,В каком направлении применить мерцание?
 LiteralText,block,препятствие
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,СЛОМАН
 LiteralText,burst rate,скорострельность
 LiteralText,BUY,КУПИТЬ
 LiteralText,BUY ALL,КУПИТЬ ВСЁ
-LiteralText,by Callan Hodgskin,Калланом Годскином
 LiteralText,CANCEL,ОТМЕНА
 LiteralText,cancellation,очищение
 LiteralText,CANCELLED,ОЧИЩЕНО
@@ -3167,8 +3189,6 @@ LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,characters,существ
 LiteralText,charged items,заряжает предметы
-LiteralText,charm,очарование
-LiteralText,CHARMED,ОЧАРОВАН
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
 LiteralText,checking for updates,проверка обновлений
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,"нажмите, чтобы повторить поп
 LiteralText,Click to send detected issues to the author,"Нажмите, чтобы отправить отчёт об ошибках"
 LiteralText,CLOSE,ЗАКРЫТЬ
 LiteralText,closed,закрытая
-LiteralText,CLOSED,ЗАКРЫТО
 LiteralText,Coding on Medium,Кодинг на medium'е
 LiteralText,coins,монеты
 LiteralText,companion,компаньон
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
 LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
 LiteralText,CREATE SHRINE,СОЗДАТЬ ХРАМ
+LiteralText,CREATE SPILL,СОЗДАТЬ ЗАВЕСУ
 LiteralText,CREATE TRAP,СОЗДАТЬ ЛОВУШКУ
 LiteralText,CREATE WALL,СОЗДАТЬ СТЕНУ
 LiteralText,Create which direction?,В каком направлении создать?
 LiteralText,CREDITS,БЛАГОДАРНОСТИ
 LiteralText,CROP,ОБРЕЗАТЬ
-LiteralText,cursed,проклятый
 LiteralText,CURSED,ПРОКЛЯТО
 LiteralText,CUSTOM,СВОЙ ГЕРОЙ
 LiteralText,CUSTOM HERO,СВОЙ ГЕРОЙ
 LiteralText,CUSTOM MODULES,СВОИ МОДУЛИ
-LiteralText,DAMAGE,УРОН
 LiteralText,dark,тьма
-LiteralText,dark-hidden,скрытый во тьме
 LiteralText,DEAD END,ТУПИК
 LiteralText,death,смерть
-LiteralText,DEATH,СМЕРТЬ
 LiteralText,deathray,смертельный луч
 LiteralText,decapitation,обезглавливание
 LiteralText,DECEASED,УМЕРШИЙ
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,Отключить кнопку 'продо�
 LiteralText,disable haptic feedback,отключить вибрацию
 LiteralText,Disable idle animations,Отключить анимацию ожидания
 LiteralText,Disable introduction boom,Отключить звуковой эффект при входе игры
+LiteralText,Disable mask animations,отключить фильтры экрана
 LiteralText,Disable online services,Отключить онлайн-сервисы
 LiteralText,Disable pitch shifting,Отключить изменение тона звука
 LiteralText,Disable spacebar real-time toggle,Отключить клавишу пробел для реального времени
+LiteralText,Disable swipe gestures,Отключить жесты свайпа
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,понижение до
 LiteralText,downloading update,загрузка обновления
 LiteralText,drop,выкинуть
 LiteralText,DROP,ВЫКИНУТЬ
-LiteralText,DUAL,ВО ВТОРУЮ РУКУ
 LiteralText,DUAL WIELD,ДВА ОРУЖИЯ
 LiteralText,Dungeon,Подземелье
 LiteralText,duration,длительность
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,ПОКИНУТЬ
 LiteralText,escape traps,избежать ловушек
 LiteralText,escape with,избежать с помощью
 LiteralText,escaped,вырвался из подземелья
-LiteralText,ESCAPED,ВЫРВАЛСЯ
 LiteralText,ESSENCE,ЭССЕНЦИЯ
 LiteralText,evolution,развитие
 LiteralText,Examine which object?,Какой предмет осмотреть?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,РАСШИРИТЬ
 LiteralText,EXPEL,ВЫГНАТЬ
 LiteralText,experience,опыт
 LiteralText,EXPERIENCE,ОПЫТ
-LiteralText,EXPLODED,ВЗОРВАЛСЯ
 LiteralText,explosion,взрыв
 LiteralText,EXPORT,ЭКСПОРТ
 LiteralText,extinctions,истребления
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,ОСОБЫЕ ОБЪЕКТЫ
 LiteralText,FEED,КОРМИТЬ
 LiteralText,FEEDBACK,ОБРАТНАЯ СВЯЗЬ
 LiteralText,FILES,ФАЙЛЫ
-LiteralText,Find out what is coming in the next update.,"Узнайте, что будет в следующем обновлении."
 LiteralText,fixed range,фиксированное расстояние
 LiteralText,FIZZLE,ФИАСКО
 LiteralText,Floor,Пол
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,НАНЯТЬ
 LiteralText,HORDES,ОРДЫ
 LiteralText,HOST,СОЗДАТЬ
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однако, вы можете завершить своё приключение прежде чем обновить игру."
-LiteralText,HUH?,ХАХ?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я надеюсь, вы наслаждаетесь приключениями, и пожалуйста, не стесняйтесь отправлять мне ваши отзывы и предложения."
 LiteralText,identified items,распознал вещи
-LiteralText,IDENTIFY,ОПОЗНАНИЕ
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ОПОЗНАТЬ ВСЕ ПРЕДМЕТЫ НА ПОЛУ
 LiteralText,ILLITERATE,НЕГРАМОТНОСТЬ
 LiteralText,illusion,иллюзия
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,Импорт файла
 LiteralText,IMPOSSIBLE,НЕВОЗМОЖНО
 LiteralText,in both hands,в обе руки
 LiteralText,incarceration,заточение
-LiteralText,increase,увеличить
 LiteralText,INCREASE,УВЕЛИЧИТЬ
 LiteralText,INDEX,УКАЗАТЕЛЬ
 LiteralText,individual crafting,одиночное ремесло
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,влияние на действия
 LiteralText,INSCRIBE,НАНЕСЕНИЕ
 LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
-LiteralText,INSTRUCT,ПРИКАЗЫ
+LiteralText,instruct each character,Приказы отдельным персонажам
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,insulation,изоляция
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
@@ -3462,7 +3473,6 @@ LiteralText,light,свет
 LiteralText,LIGHT,СВЕТ
 LiteralText,light radius,радиус освещения
 LiteralText,limits,пределы
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Ссылки на все поддерживаемые платформы, в том числе iOS, Android и Windows."
 LiteralText,LIST,СПИСОК
 LiteralText,lit,освещение
 LiteralText,LIVING,ЖИЗНЬ
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,понижение навыка
 LiteralText,Lost Chambers,Затерянные Залы
 LiteralText,LOW MANA,МАЛО МАНЫ
 LiteralText,Ludios Cache,Тайник Лудиоса
-LiteralText,MAIN,В ОСНОВНУЮ РУКУ
 LiteralText,MAIN WIELD,ОСНОВНОЕ ОРУЖИЕ
 LiteralText,mana,мана
 LiteralText,MANA,МАНА
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,МИМИК
 LiteralText,mimicking,подражание
 LiteralText,Mines,Копи
 LiteralText,Minetown,Шахтный город
-LiteralText,missile,снаряд
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,В каком направлении оседлать?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,нет союзников
 LiteralText,no ambient sounds,нет окружающих звуков
 LiteralText,No appropriate items available,Нет соответствующих доступных вещей
 LiteralText,no available knowledge,нет доступных знаний
+LiteralText,no records found,Данных не найдено
 LiteralText,no resistances,нет сопротивляемости
 LiteralText,no talents,нет талантов
 LiteralText,no transient effects,нет временных эффектов
@@ -3545,14 +3554,12 @@ LiteralText,OR,ИЛИ
 LiteralText,ORIGINAL,ОРИГИНАЛЬНЫЙ
 LiteralText,OVERRIDE,ПОЛЬЗОВАТЕЛЬСКИЙ
 LiteralText,OVERVIEW,ОБЩИЙ ОБЗОР
-LiteralText,PACIFIED,МИРНЫЙ
 LiteralText,Palette,Панель инструментов
 LiteralText,PARTY,ОТРЯД
 LiteralText,passage,переход
 LiteralText,passive (no attacking),пассивный (не атакует)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,В Pathos можно играть в кооперативном режиме с разделением экрана до четырёх игроков.
-LiteralText,pathos development @ paypal or stripe,разработка pathos @ paypal или stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos является free-to-play игрой и разработка идёт только с целью создать любимую игру.
+LiteralText,pathos development @ paypal,разработка pathos @ paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"Pathos не может загрузить ваше приключение. Пожалуйста, пришлите мне ваш файл сохранения, чтобы я мог изучить проблему. Возможно, я смогу восстановить файл или обновить игру включив исправление. Ваша отзывчивость ценится."
 LiteralText,Pathos might be the next evolution of Nethack.,"Возможно, Pathos это следующая ступень эволюции NetHack'a."
 LiteralText,penalty,штраф
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,ПРЕВРАЩЕНИЕ
 LiteralText,portal,портал
 LiteralText,porter,сумка-носильщик
 LiteralText,PRAY,МОЛИТЬСЯ
-LiteralText,PRAYING,МОЛЕНИЕ
 LiteralText,preservation,сохранение
 LiteralText,prevent revenant levels,без восставших героев
 LiteralText,prisoner,узник
@@ -3632,10 +3638,8 @@ LiteralText,resident?,обыватель?
 LiteralText,resistances,сопротивления
 LiteralText,RESISTS,СОПРОТИВЛЯЕТСЯ
 LiteralText,Rest,Отдых
-LiteralText,REST,ОТДЫХ
 LiteralText,Rest how many turns?,Отдыхать сколько ходов?
 LiteralText,restarting to update,перезагрузка для обновления
-LiteralText,RESTING,ОТДЫХАТЬ
 LiteralText,RESTORED,ВОССТАНОВИЛСЯ
 LiteralText,RESURRECT,ВОСКРЕСИТЬ
 LiteralText,Resurrect and continue,Воскресить и продолжить
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,РАСКРЫТЬСЯ
 LiteralText,REVEAL ALL MAPS,ОТКРЫТЬ ВСЕ КАРТЫ
 LiteralText,REVEAL THIS MAP,ОТКРЫТЬ ЭТУ КАРТУ
 LiteralText,revealed,обнаруженная
+LiteralText,revenant,восставший
 LiteralText,REVERT,ВЕРНУТЬ
 LiteralText,RIGHT RING,НА ПРАВУЮ РУКУ
 LiteralText,rigid,неподвижный
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,РАЗОБРАТЬ
 LiteralText,SEALED,БЕЗ СПАВНА
 LiteralText,Search,Поиск
 LiteralText,Search how many turns?,Искать сколько ходов?
-LiteralText,SEARCHING,ПОИСК
 LiteralText,secret,скрытая
 LiteralText,SECRET,СКРЫТАЯ
 LiteralText,seed,семя
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,УСТАНОВИТЬ СЛОЖНОСТЬ
 LiteralText,set starting location,установить начальную точку
 LiteralText,SETTINGS,НАСТРОЙКИ
 LiteralText,sfx volume,эффекты
-LiteralText,Share your tragic and heroic stories with other players.,Поделитесь вашими трагичными и героическими историями с другими игроками.
 LiteralText,SHARE//exchange,ОБМЕНЯТЬСЯ
 LiteralText,SHARE//publish,ПОДЕЛИТЬСЯ
 LiteralText,SHOPS,МАГАЗИНЫ
 LiteralText,Show debugging information,Посмотреть отладочную информацию
 LiteralText,Show time clock,Показать таймер
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,"Покажите свою признательность, помогая всё большему числу игроков освоиться в Pathos."
 LiteralText,SHRINES,ХРАМЫ
 LiteralText,SIGN-IN,ВОЙТИ
 LiteralText,size,размер
@@ -3749,7 +3751,6 @@ LiteralText,terrain,земля
 LiteralText,The attack score is your aptitude for hitting an opponent.,"Значение атаки — число, означающее способность нанести удары по противнику."
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"Задача состоит в том, чтобы улучшить механику, сохранив то, что делает игру величайшей на все времена."
 LiteralText,The defence score is how protected you are from being hit by an opponent.,"Значение защиты — число, означающее степень вашей защиты от ударов противника."
-LiteralText,There are no known polymorphs,Эта форма неизвестна для превращения
 LiteralText,There is a new update available!,Доступно новое обновление!
 LiteralText,there is nothing to place here,здесь нельзя ничего положить в контейнер
 LiteralText,there is nothing to remove here,здесь нечего извлекать из контейнера
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,СЛИШКОМ ТЯЖЁЛ
 LiteralText,TOO HUNGRY,СЛИШКОМ ГОЛОДЕН
 LiteralText,TOO SMALL,СЛИШКОМ МАЛ
 LiteralText,TOO WEAK,СЛИШКОМ СЛАБ
-LiteralText,touch,касание
 LiteralText,TRACKS,МУЗЫКА
 LiteralText,TRADE,ТОРГОВЛЯ
 LiteralText,transform to,превращение в
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
+LiteralText,VOLATILES,ПРЕПЯТСТВИЯ
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
-LiteralText,WAITING,ОЖИДАНИЕ
 LiteralText,WARPING,ИСКРИВЛЕНИЕ
 LiteralText,was killed,был убит
-LiteralText,was strangled,был задушен
 LiteralText,weakness to,слабость к
 LiteralText,weight,вес
 LiteralText,when afflicted,когда поражён
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,ОШИБОЧНЫЙ ПУТЬ
 LiteralText,"You are playing as anonymous, please register!","Вы играете анонимно, пожалуйста, зарегистрируйтесь!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,"Когда вам понадобится ОТЫСКАТЬ секретные двери, используйте кнопку с глазом."
 LiteralText,Your current movement and action speed in squares per second.,Ваша текущая скорость движения и действий.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Ваше мнение очень ценится и будет влиять на мои планы по разработке.
 LiteralText,ZOOM,МАСШТАБ
 LiteralText,ZOOS,ЗООПАРКИ
 LiteralText,zZz,zZz
-LocalityName,Level,Уровень
-LocalityName,Map,Карта
-LocalityName,Site,Место
-LocalityName,Square,Площадь
-LocalityName,World,Мир
-LocalityName,Zone,Зона
+LocalityName,area,местность
+LocalityName,level,уровень
+LocalityName,map,карта
+LocalityName,site,место
+LocalityName,square,площадь
+LocalityName,world,мир
+LocalityName,zone,зона
+MaterialName,adamantine,адамантит
 MaterialName,air,воздух
 MaterialName,animal,существо
 MaterialName,bone,кость
@@ -3891,6 +3891,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
 MotionPastName,constructed,создал
+MotionPastName,copied,скопировано
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,испил
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,опустошил
 MotionPastName,exchanged,заменил
 MotionPastName,flashed,ослепил
 MotionPastName,inscribed,нанёс
+MotionPastName,mounted,оседлал
 MotionPastName,opened,открыл
 MotionPastName,packed,заполнил
 MotionPastName,played,сыграл
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,помазание
 MotionPresentName,capture,поймать
 MotionPresentName,chant,распевать
 MotionPresentName,construct,создать
+MotionPresentName,copy,скопировать
 MotionPresentName,dig,копать
 MotionPresentName,dip,окунуть
 MotionPresentName,divine,определить духовность
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,опустошить
 MotionPresentName,exchange,заменить
 MotionPresentName,flash,вспышка
 MotionPresentName,inscribe,нанести
+MotionPresentName,mount,оседлать
 MotionPresentName,open,открыть
 MotionPresentName,pack,заполнить
 MotionPresentName,play,играть
@@ -3952,9 +3956,9 @@ MotionPresentName,study,изучить
 MotionPresentName,swat,прихлопнуть
 MotionPresentName,write,написать
 MotionPresentName,zap,махнуть
-MurderTypeName,Allied,Союзников
-MurderTypeName,Every,Всех
-MurderTypeName,Hostile,Врагов
+MurderTypeName,allied,союзников
+MurderTypeName,every,всех
+MurderTypeName,hostile,врагов
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Этот деревянный мост очень прочен несмотря на многолетнее использование.
 PlatformName,crystal bridge,кристальный мост
 PlatformName,wooden bridge,деревянный мост
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,переместился
 TraversalPresentName,ascend,поднимается
 TraversalPresentName,descend,спускается
 TraversalPresentName,travel,перемещается
+VolatileName,blaze,пламя
+VolatileName,electricity,электричество
+VolatileName,freeze,мороз
+VolatileName,steam,пар
 WallStructureName,illusionary,иллюзия
 WallStructureName,permanent,не рушимая
 WallStructureName,solid,твёрдая

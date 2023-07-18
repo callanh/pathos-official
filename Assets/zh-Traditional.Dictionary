@@ -36,16 +36,12 @@ AnatomyName,mind,有意志
 AnatomyName,mounted,騎乘
 AnatomyName,thermal,恆溫
 AnatomyName,voice,有聲
-ApetiteName,content,滿足
-ApetiteName,hungry,飢餓
-ApetiteName,satiated,飽食
-ApetiteName,starving,極餓
-ApetiteName,weak,虛弱
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,一件正面敞開的長斗篷，被用一枚扣子繫住。
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,一件短而堅硬的秘銀夾克。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,一件薄而精妙的秘銀夾克。
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,一件薄而光亮的秘銀夾克。
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,這件經典的法師裝備——裝點著星月花紋的尖頂帽。
+AppearanceName,adamantine staff,精金手杖
 AppearanceName,agate ring,瑪瑙戒指
 AppearanceName,aluminium wand,鋁制魔杖
 AppearanceName,angled poleaxe,有角長柄斧
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,球狀護符
 AppearanceName,spiked wand,尖刺法杖
 AppearanceName,spotted book,帶點的書
 AppearanceName,square amulet,方形護符
-AppearanceName,staff,手杖
 AppearanceName,stained book,骯髒的書
 AppearanceName,steel boots,鋼鐵靴
 AppearanceName,steel ring,鋼製戒指
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,黃色寶石
 AppearanceName,yellow potion,黃色藥水
 AppearanceName,yellowish brown gem,黃褐寶石
 AppearanceName,zinc wand,鋅制魔杖
+AppetiteName,content,滿足
+AppetiteName,hungry,飢餓
+AppetiteName,satiated,飽食
+AppetiteName,starving,極餓
+AppetiteName,weak,虛弱
 AttackType,bite,咬
 AttackType,blast,震爆
 AttackType,breath,吐息
@@ -836,6 +836,7 @@ CounterName,captures,捕捉
 CounterName,casts,施法
 CounterName,chants,吟唱
 CounterName,constructs,製造
+CounterName,copies,複製
 CounterName,crafts,製作
 CounterName,decapitations,斬首
 CounterName,digs,挖掘
@@ -854,6 +855,7 @@ CounterName,jumps,跳躍
 CounterName,kicks,踢
 CounterName,lifesaves,被拯救
 CounterName,mimics,模仿
+CounterName,mounts,騎乘
 CounterName,moves,移動
 CounterName,opens,開啟
 CounterName,packs,罐裝
@@ -868,7 +870,7 @@ CounterName,reclines,躺在上面
 CounterName,refills,充滿
 CounterName,releases,釋放
 CounterName,renames,改名
-CounterName,replications,複製
+CounterName,replications,產生複製品
 CounterName,rests,休息
 CounterName,rubs,摩擦
 CounterName,sacrifices,獻祭
@@ -970,7 +972,6 @@ EffectProperty,lies,假流言
 EffectProperty,loyal only,保留盟友關係
 EffectProperty,material,材料
 EffectProperty,materials,材料
-EffectProperty,objects,物品
 EffectProperty,polite,友善
 EffectProperty,properties,狀態
 EffectProperty,punishments,懲罰
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,移除隨機天賦
 EffectProperty,removes all transients,去除所有短期狀態
 EffectProperty,reset random equipment,重設隨機裝備
 EffectProperty,reveal,揭露
-EffectProperty,revenants,復仇者
 EffectProperty,sanctity,神聖性
 EffectProperty,skills,專精
 EffectProperty,source,來源
@@ -998,7 +998,6 @@ EffectProperty,whole stack,整堆
 EffectType,afflict,感染
 EffectType,alert,警覺
 EffectType,amnesia,失憶
-EffectType,animate,活化
 EffectType,area transient,範圍短期狀態
 EffectType,assess,評估
 EffectType,blinking,閃現
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,轉換巨石
 EffectType,convert door,轉換門
 EffectType,convert fixture,轉換固定物
 EffectType,convert floor,轉換地面
+EffectType,convert spill,轉換元素場
 EffectType,convert wall,轉換牆壁
 EffectType,create boulder,製造巨石
 EffectType,create fixture,製造固定物
 EffectType,create golem,製造魔像
 EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
+EffectType,create spill,製造元素場
 EffectType,create trap,製造陷阱
 EffectType,create wall,製造牆壁
 EffectType,decapitate,斬首
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,附魔物件
 EffectType,engulf,吞嚥
 EffectType,enlightenment,啟蒙
 EffectType,exchange,交換
+EffectType,extinguish spill,撲滅元素場
 EffectType,gain level,升級
 EffectType,gain skill,獲得技能
 EffectType,genocide,滅絕
@@ -1064,6 +1066,7 @@ EffectType,raise dead,復活死屍
 EffectType,recall,喚回隊友
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
+EffectType,remove spill,移除元素場
 EffectType,remove transient,去除短期狀態
 EffectType,replicate asset,複製物件
 EffectType,restock,重新進貨
@@ -1165,6 +1168,7 @@ EntityName,abbot,修道院長
 EntityName,acid blob,強酸污斑
 EntityName,acid worm,強酸蠕蟲
 EntityName,acolyte,侍僧
+EntityName,adamantine golem,精金傀儡
 EntityName,adult black dragon,黑龍
 EntityName,adult blue dragon,藍龍
 EntityName,adult deep dragon,深淵龍
@@ -1323,7 +1327,7 @@ EntityName,displacer beast,幻象獸
 EntityName,djinni,燈神
 EntityName,Doctor Frankenstein,弗蘭肯斯坦博士
 EntityName,dog,狗
-EntityName,doppelgänger,雙生行者
+EntityName,doppelgänger,變形怪
 EntityName,dracolich,龍巫妖
 EntityName,dragon king,龍王
 EntityName,dretch,怯魔
@@ -1501,8 +1505,8 @@ EntityName,iron golem,鐵傀儡
 EntityName,iron piercer,鋼鐵洞穿者
 EntityName,Ixoth,伊戈索斯
 EntityName,jabberwock,炸脖龍
-EntityName,jackal,豺
-EntityName,jackalwere,人豺
+EntityName,jackal,胡狼
+EntityName,jackalwere,胡狼人
 EntityName,jaguar,美洲虎
 EntityName,jellyfish,水母
 EntityName,jiggling blob,輕搖污斑
@@ -1580,7 +1584,7 @@ EntityName,master mind flayer,奪心魔大師
 EntityName,mastodon,乳齒象
 EntityName,Maugneshaagar,瑪納什格
 EntityName,medusa,美杜莎
-EntityName,mellified man,活化蜜漬人
+EntityName,mellified man,蜜漬木乃伊
 EntityName,merchant,商人
 EntityName,Metamorphius,位移者大師
 EntityName,migo drone,米戈工蜂
@@ -1800,7 +1804,7 @@ EntityName,water seeker,水源侍徒
 EntityName,water sphere,水球
 EntityName,water troll,水巨魔
 EntityName,wax golem,蠟傀儡
-EntityName,werejackal,豺人
+EntityName,werejackal,人豺
 EntityName,werepanther,豹人
 EntityName,wererat,鼠人
 EntityName,weresnake,蛇人
@@ -1867,8 +1871,8 @@ EquipSlot,offhand,副手武器
 EquipSlot,purse,錢包
 EquipSlot,quiver,箭袋
 EquipSlot,right ring,右手戒指
-EquipSlot,shirt,襯衫
-EquipSlot,suit,套裝
+EquipSlot,shirt,內襯甲
+EquipSlot,suit,全身護甲
 ExplosionName,acid,強酸
 ExplosionName,dark,黑暗
 ExplosionName,death,死亡
@@ -1907,7 +1911,7 @@ FormatText,{Attacker:CharacterName} regrets what happened to {Defender:Character
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} 迫使 {Defender:CharacterName} 發起攻擊！
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} 轉為敵對 {Defender:CharacterName}！
 FormatText,{Base} in {Range},{Base} {Range}
-FormatText,{BeamName} beam,{BeamName} 產生效果
+FormatText,{BeamName} beam,{BeamName} 射線
 FormatText,{BlockName} was disintegrated,{BlockName} 被解離了
 FormatText,{BoonName} which direction?,{BoonName} 哪個方向？
 FormatText,{BoonName} which item?,{BoonName} 哪個物品？
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName} 
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName} 笨拙地 {MotionPastName} {AssetName} 但什麼也沒有發生
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 笨拙地用 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} Inventory,{CharacterName} 的攜帶物品
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} 感到 {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} 感到 {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} 感到 {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} 不再被卡住
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} 在 {SkillName} 上到達了 {QualificationName} 水平。
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} 與哪個物品?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} 哪個方向？
 FormatText,{MotionPresentName} which item on {FeatureName}?,以 {FeatureName} {MotionPresentName} 哪個物品?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} 騎上了 {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 施咒
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},除非對 {ElementName} 有抗性
 FormatText,unless target has {PropertyName},除非目標擁有 {PropertyName}
 FormatText,versus {Something},克制{Something}
 FormatText,when {Chance},{Chance} 機率
+FormatText,when {GROUNDNAME},若地面為 {GROUNDNAME}
 FormatText,when {ITEMNAME},當 {ITEMNAME}
 FormatText,when {KINDNAMES},當 {KINDNAMES}
 FormatText,when {MATERIALNAME},當 {MATERIALNAME}
@@ -2148,6 +2154,9 @@ GenderName,neuter,中性
 GenderName,non-binary,其他性別
 GenerationType,module,模組
 GenerationType,quest,探索
+GradeName,artifact,神器
+GradeName,exotic,超凡
+GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,冰冷的石頭地面的製作手藝並不精良，但是上面刻滿了時間的痕跡。
 GroundName,chasm,裂隙
 GroundName,dirt floor,泥土地面
@@ -2182,7 +2191,7 @@ HordeName,gnome,侏儒
 HordeName,goblin,地精
 HordeName,harpy,鷹身女妖
 HordeName,hell hound,地獄犬
-HordeName,jackal,豺
+HordeName,jackal,胡狼
 HordeName,keystone,假警察
 HordeName,kobold,狗頭人
 HordeName,lemure,狐猴
@@ -2214,7 +2223,8 @@ IdentifyTypeName,One,一個
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,阻擋穿戴者視野的布面具。
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",一組家什，包括空罐頭和屠宰工具，用來打包屍體使其防腐。
 ItemDescription,A compact hand-held firearm.,小型手持火器。
-ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",常被騎兵使用的彎單刃，對下界生物尤其有效。
+ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",一把單刃的彎刀，常由騎兵使用。對下界生物尤其有效。
+ItemDescription,A curved single-edged blade often used by cavalry.,一把單刃的彎刀，常由騎兵使用。
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",彎曲的黃色水果，提供大量纖維。
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",扁平的木製投擲武器，常用於狩獵。
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",一塊又圓又扁的餅。用煎鍋做的，你可能已經猜到了。
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,用來扔在地上延緩移動的小金屬刺。
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,用不朽之金製成的帶翼涼鞋，可以使穿戴者迅捷且無聲地飛行。
 ItemDescription,Zapping it at a wall creates a big tunnel.,對著牆壁使用可以製造一個巨大的隧道。
+ItemName,adamantine arrow,精金箭
+ItemName,adamantine axe,精金斧
+ItemName,adamantine bow,精金弓
+ItemName,adamantine dagger,精金匕首
+ItemName,adamantine greataxe,精金戰斧
+ItemName,adamantine greatsword,精金大劍
+ItemName,adamantine long sword,精金長劍
+ItemName,adamantine plate mail,精金板甲
+ItemName,adamantine rapier,精金細劍
+ItemName,adamantine sabre,精金馬刀
+ItemName,adamantine short sword,精金短劍
+ItemName,adamantine spear,精金矛
+ItemName,adamantine two-handed sword,精金雙手劍
 ItemName,agate,瑪瑙
 ItemName,aklys,飛鉤杖
 ItemName,alchemy smock,煉金工作衫
@@ -2372,6 +2395,7 @@ ItemName,banana,香蕉
 ItemName,banded mail,帶鏈甲
 ItemName,bardiche,月刃斧
 ItemName,battle robe,戰袍
+ItemName,battle staff,戰杖
 ItemName,battle-axe,戰斧
 ItemName,beartrap,捕熊夾
 ItemName,bec de corbin,長柄戰錘
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,黃銅指虎
 ItemName,broadsword,寬刃劍
 ItemName,bronze bell,青銅鈴
 ItemName,bronze plate mail,青銅板甲
+ItemName,Brumstyk,女巫掃帚
 ItemName,bullet,子彈
 ItemName,bullwhip,鞭子
 ItemName,caltrops,鐵蒺藜
@@ -2503,7 +2528,7 @@ ItemName,dark elven mithril-coat,黑暗精靈族秘銀夾克
 ItemName,dark elven short sword,黑暗精靈短劍
 ItemName,dart,飛鏢
 ItemName,Deadwood,枯枝
-ItemName,Deagle,沙鷹
+ItemName,Deagle,沙漠之鷹
 ItemName,deep dragon scale mail,深淵龍鱗甲
 ItemName,deep dragon scales,深淵龍鱗
 ItemName,dented pot,凹損之罐
@@ -2657,6 +2682,7 @@ ItemName,meat stick,肉棒
 ItemName,meatball,肉球
 ItemName,melon,蜜瓜
 ItemName,Mirrorbright,明鏡
+ItemName,Miserus,貪婪法典
 ItemName,mithril arrow,秘銀箭
 ItemName,mithril barding,秘銀馬甲
 ItemName,mithril battle-axe,秘銀戰斧
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,橡膠管
 ItemName,ruby,紅寶石
 ItemName,Ruby Key,紅寶石鑰匙
 ItemName,Runesword,符文劍
+ItemName,sabre,馬刀
 ItemName,sack,口袋
 ItemName,saddle,馬鞍
 ItemName,sai,十手
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,關閉火器
 LiteralText,ABOUT,關於
 LiteralText,About Pathos,關於Pathos
 LiteralText,Abyss,深淵
-LiteralText,accelerated animations,動畫加速
 LiteralText,accelerated resting,休息時加速
 LiteralText,actions,行動
 LiteralText,ADD LEVEL,添加樓層
@@ -3082,10 +3108,11 @@ LiteralText,ALL,所有
 LiteralText,ALL AT ONCE,所有同時
 LiteralText,always,100%
 LiteralText,AMBIENT SOUNDS,周圍聲音
-LiteralText,AMMO,彈藥
 LiteralText,amnesia,失憶
 LiteralText,AMNESIA,失憶
 LiteralText,anatomy,解剖學
+LiteralText,animate mount,活化 騎乘
+LiteralText,animate revenant,活化 復仇者
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,逆時針旋轉90度
 LiteralText,any item,任何物品
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,您確定要放棄這名角色並結束本次冒險嗎？
 LiteralText,ARE YOU SURE?,你確定？
 LiteralText,area of effect,範圍效果
-LiteralText,artifact,神器
 LiteralText,ARTIFACTS,神器
 LiteralText,ASCEND TO PREVIOUS LEVEL,回到之前的樓層
-LiteralText,asleep,沉睡
 LiteralText,assets,物品
 LiteralText,ATMOSPHERE,氛圍
 LiteralText,attack modifier,攻擊調整
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,測試版討論
 LiteralText,Black background,黑色背景
 LiteralText,Black Market,黑市
 LiteralText,blasphemy,褻瀆
-LiteralText,blessed,祝福的
-LiteralText,BLESSED,祝福的
 LiteralText,BLINK,閃現
 LiteralText,Blink which direction?,朝哪個方向閃現？
 LiteralText,block,堵住
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,破裂
 LiteralText,burst rate,開火速率
 LiteralText,BUY,購買
 LiteralText,BUY ALL,購買全部
-LiteralText,by Callan Hodgskin,by Callan Hodgskin
 LiteralText,CANCEL,取消
 LiteralText,cancellation,撤銷
 LiteralText,CANCELLED,取消的
@@ -3167,8 +3189,6 @@ LiteralText,Character,角色
 LiteralText,CHARACTER,角色
 LiteralText,characters,角色
 LiteralText,charged items,已充能物品
-LiteralText,charm,魅惑
-LiteralText,CHARMED,被魅惑的
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,檢查更新嗎？
 LiteralText,checking for updates,檢測更新
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,點擊重試
 LiteralText,Click to send detected issues to the author,點擊將出現的問題發送給作者
 LiteralText,CLOSE,關閉
 LiteralText,closed,關閉
-LiteralText,CLOSED,關閉
 LiteralText,Coding on Medium,在Medium上的代碼
 LiteralText,coins,硬幣
 LiteralText,companion,隊友
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
 LiteralText,CREATE SHOP,創造商店
 LiteralText,CREATE SHRINE,創造遺跡
+LiteralText,CREATE SPILL,創造元素場
 LiteralText,CREATE TRAP,創造陷阱
 LiteralText,CREATE WALL,創造牆壁
 LiteralText,Create which direction?,向哪個方向創造？
 LiteralText,CREDITS,製作者
 LiteralText,CROP,重置樓層面積
-LiteralText,cursed,詛咒的
 LiteralText,CURSED,物品受詛咒
 LiteralText,CUSTOM,自定義
 LiteralText,CUSTOM HERO,自定義英雄
 LiteralText,CUSTOM MODULES,自定義模組
-LiteralText,DAMAGE,傷害
 LiteralText,dark,黑暗
-LiteralText,dark-hidden,藏匿於暗處
 LiteralText,DEAD END,死胡同
 LiteralText,death,死亡
-LiteralText,DEATH,死亡
 LiteralText,deathray,死亡射線
 LiteralText,decapitation,斬首
 LiteralText,DECEASED,已故冒
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,關閉繼續按鈕
 LiteralText,disable haptic feedback,關閉震動反饋
 LiteralText,Disable idle animations,關閉閒置動畫
 LiteralText,Disable introduction boom,關閉開場音效
+LiteralText,Disable mask animations,禁用屏幕遮罩效果
 LiteralText,Disable online services,禁用聯網功能
 LiteralText,Disable pitch shifting,禁止隨機音效音量
 LiteralText,Disable spacebar real-time toggle,禁用通過空格開關實時遊戲
+LiteralText,Disable swipe gestures,禁用平滑轉場效果
 LiteralText,DISCONNECT,斷開連接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,無法連接網絡，請檢查網絡連線和所有裝置的pathos的版本為相同版本
 LiteralText,Discuss on Reddit,在Reddit上討論
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,降級成了
 LiteralText,downloading update,更新下載中
 LiteralText,drop,掉落
 LiteralText,DROP,丟棄
-LiteralText,DUAL,副手
 LiteralText,DUAL WIELD,雙持
 LiteralText,Dungeon,地牢
 LiteralText,duration,持續時間
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,逃脫
 LiteralText,escape traps,掙脫陷阱
 LiteralText,escape with,掙脫與
 LiteralText,escaped,逃脫了
-LiteralText,ESCAPED,逃脫
 LiteralText,ESSENCE,精華
 LiteralText,evolution,進化
 LiteralText,Examine which object?,檢查哪一項
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,擴展樓層面積
 LiteralText,EXPEL,吐出
 LiteralText,experience,經驗
 LiteralText,EXPERIENCE,經驗
-LiteralText,EXPLODED,爆炸
 LiteralText,explosion,爆炸
 LiteralText,EXPORT,導出
 LiteralText,extinctions,滅絕
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,特殊
 LiteralText,FEED,餵養
 LiteralText,FEEDBACK,反饋
 LiteralText,FILES,文件
-LiteralText,Find out what is coming in the next update.,看看下一次更新有些什麼。
 LiteralText,fixed range,固定射程
 LiteralText,FIZZLE,發嘶嘶聲
 LiteralText,Floor,層
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,僱傭
 LiteralText,HORDES,怪物群
 LiteralText,HOST,創建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也許您更希望在接受更新之前完成正在進行的冒險。
-LiteralText,HUH?,呃？
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,開發者希望您的冒險愉快，並且請隨意與開發者交談，給予反饋與建議。
 LiteralText,identified items,已鑒定的物品
-LiteralText,IDENTIFY,鑒定
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,鑒定地上所有物品
 LiteralText,ILLITERATE,文盲
 LiteralText,illusion,幻象
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,請輸入文件
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,雙手持
 LiteralText,incarceration,禁錮
-LiteralText,increase,上升
 LiteralText,INCREASE,增加
 LiteralText,INDEX,索引
 LiteralText,individual crafting,分次製作
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,受影響的動作
 LiteralText,INSCRIBE,刻寫
 LiteralText,INSCRIBE ITEM,刻寫物品
 LiteralText,inscription?,刻寫內容
-LiteralText,INSTRUCT,教程
+LiteralText,instruct each character,指引每個角色
 LiteralText,INSUFFICIENT GOLD,金幣不足
 LiteralText,insulation,隔離
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房間和無盡的秘密等著你去探索，但是不要沉溺在其中，長時間停留在某一層會招致死亡。基於《破碎像素地牢》生成的地圖。
@@ -3462,7 +3473,6 @@ LiteralText,light,點亮
 LiteralText,LIGHT,點亮
 LiteralText,light radius,光亮半徑
 LiteralText,limits,限制
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.",所有支持的平台互通，包括iOS、安卓和Windows
 LiteralText,LIST,列表
 LiteralText,lit,點亮的
 LiteralText,LIVING,活物時
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,失去專精
 LiteralText,Lost Chambers,迷失之庭
 LiteralText,LOW MANA,魔法值低下
 LiteralText,Ludios Cache,盧底人藏寶室
-LiteralText,MAIN,主手
 LiteralText,MAIN WIELD,主手武器
 LiteralText,mana,魔法值
 LiteralText,MANA,魔法值
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,擬態
 LiteralText,mimicking,擬態中的
 LiteralText,Mines,礦洞
 LiteralText,Minetown,礦鎮
-LiteralText,missile,彈藥
 LiteralText,modifier,調整
 LiteralText,MOUNT,騎乘
 LiteralText,Mount which direction?,向哪個方向騎乘？
@@ -3520,6 +3528,7 @@ LiteralText,no allies,沒有盟友
 LiteralText,no ambient sounds,無背景音樂
 LiteralText,No appropriate items available,沒有合適的物品
 LiteralText,no available knowledge,無可用知識
+LiteralText,no records found,未找到記錄
 LiteralText,no resistances,無抗性
 LiteralText,no talents,無天賦
 LiteralText,no transient effects,無短期效果
@@ -3545,14 +3554,12 @@ LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆寫
 LiteralText,OVERVIEW,總覽
-LiteralText,PACIFIED,撫慰的
 LiteralText,Palette,調色板
 LiteralText,PARTY,隊伍
 LiteralText,passage,通道
 LiteralText,passive (no attacking),被動（無攻擊）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos可以以分屏合作模式為最多四名玩家遊玩。
-LiteralText,pathos development @ paypal or stripe,pathos development @ paypal 或 stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos是免費遊戲，出於對Nethack的熱愛而開發。
+LiteralText,pathos development @ paypal,pathos development @ paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos無法加載您的冒險文件。請發送您的存檔給我來調查錯誤。我也許可以通過修復來修復您的文件甚至更新遊戲。感謝您的理解。
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos 也許是Nethack的進化。
 LiteralText,penalty,懲罰
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,已變形
 LiteralText,portal,傳送門
 LiteralText,porter,捕捉袋
 LiteralText,PRAY,祈禱
-LiteralText,PRAYING,祈禱中
 LiteralText,preservation,維護
 LiteralText,prevent revenant levels,禁止復仇者樓層
 LiteralText,prisoner,雕像
@@ -3632,10 +3638,8 @@ LiteralText,resident?,NPC
 LiteralText,resistances,抗性
 LiteralText,RESISTS,抗性
 LiteralText,Rest,休息
-LiteralText,REST,休息
 LiteralText,Rest how many turns?,要休息多少回合呢？
 LiteralText,restarting to update,重啟遊戲後更新……
-LiteralText,RESTING,休息中
 LiteralText,RESTORED,恢復
 LiteralText,RESURRECT,復活
 LiteralText,Resurrect and continue,復活並繼續
@@ -3647,13 +3651,14 @@ LiteralText,REVEAL,揭露
 LiteralText,REVEAL ALL MAPS,對所有樓層使用魔法地圖
 LiteralText,REVEAL THIS MAP,對本樓層使用魔法地圖
 LiteralText,revealed,不隱藏
+LiteralText,revenant,活化為復仇者
 LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
 LiteralText,ROTATE,旋轉
 LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用來實驗Pathos的機制。您可以在兩個房間的簡易地圖內試驗所有物品、陷阱與地牢機關。
 LiteralText,Sandbox Play,沙盒遊戲
-LiteralText,SANITY CHECK,信仰檢測
+LiteralText,SANITY CHECK,兼容性測試
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存與退出
 LiteralText,Saved adventure files are intended to be compatible across updates.,已儲存的冒險文件在各版本間應當能夠兼容。
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,分解
 LiteralText,SEALED,密封
 LiteralText,Search,搜索
 LiteralText,Search how many turns?,要搜索多少回合呢？
-LiteralText,SEARCHING,搜索
 LiteralText,secret,暗門
 LiteralText,SECRET,秘密
 LiteralText,seed,種子
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,設置難度
 LiteralText,set starting location,設置出生點
 LiteralText,SETTINGS,設置
 LiteralText,sfx volume,音效音量
-LiteralText,Share your tragic and heroic stories with other players.,將您或喜或悲的故事與其他玩家分享。
 LiteralText,SHARE//exchange,分享
 LiteralText,SHARE//publish,分享
 LiteralText,SHOPS,商店
 LiteralText,Show debugging information,展示BUG去除進程相關
 LiteralText,Show time clock,顯示時鐘
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,您對其他玩家的邀請是對本遊戲很大的支持。
 LiteralText,SHRINES,神殿
 LiteralText,SIGN-IN,登錄
 LiteralText,size,大小
@@ -3749,7 +3751,6 @@ LiteralText,terrain,地形
 LiteralText,The attack score is your aptitude for hitting an opponent.,攻擊力是你擊中敵人的能力。
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,真正的挑戰在於改變表現手法的同時保持使這個遊戲得以成為有史以來最好遊戲的精髓。
 LiteralText,The defence score is how protected you are from being hit by an opponent.,防禦力是你保護自己不受敵人攻擊的能力。
-LiteralText,There are no known polymorphs,沒有已知的可轉變形態
 LiteralText,There is a new update available!,新版本可用！
 LiteralText,there is nothing to place here,你沒有任何物品可以被放置在這個容器中
 LiteralText,there is nothing to remove here,沒有任何物品可以被從這個容器移除
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,超重
 LiteralText,TOO HUNGRY,過於飢餓
 LiteralText,TOO SMALL,過小
 LiteralText,TOO WEAK,太弱
-LiteralText,touch,觸摸
 LiteralText,TRACKS,音軌
 LiteralText,TRADE,交易
 LiteralText,transform to,變形為
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,自戀，請
 LiteralText,VIEW,查看
 LiteralText,Visit the website,訪問官網
 LiteralText,VOID SPACE,虛空
+LiteralText,VOLATILES,元素場
 LiteralText,vulnerable to,易受傷害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
-LiteralText,WAITING,等待中
 LiteralText,WARPING,開啟返程模式
 LiteralText,was killed,被殺死了
-LiteralText,was strangled,被勒住了
 LiteralText,weakness to,弱點
 LiteralText,weight,重量
 LiteralText,when afflicted,當被感染
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,錯誤路線
 LiteralText,"You are playing as anonymous, please register!",你正以匿名進行遊戲！請登記！
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,你可能需要用眼睛圖標對暗門進行搜索。
 LiteralText,Your current movement and action speed in squares per second.,每秒中你能移動的格數和動作數量。
-LiteralText,Your feedback is appreciated and will influence my development plans.,您的反饋是極其重要的，並且會影響開發者的開發計劃，多謝！
 LiteralText,ZOOM,縮放
 LiteralText,ZOOS,動物園
 LiteralText,zZz,zZz
-LocalityName,Level,樓層
-LocalityName,Map,地圖
-LocalityName,Site,站點
-LocalityName,Square,廣場
-LocalityName,World,世界
-LocalityName,Zone,區域
+LocalityName,area,範圍
+LocalityName,level,樓層
+LocalityName,map,地圖
+LocalityName,site,站點
+LocalityName,square,廣場
+LocalityName,world,世界
+LocalityName,zone,區域
+MaterialName,adamantine,精金
 MaterialName,air,空氣
 MaterialName,animal,動物
 MaterialName,bone,骨頭
@@ -3891,6 +3891,7 @@ MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了
 MotionPastName,chanted,吟唱了
 MotionPastName,constructed,創造了
+MotionPastName,copied,複製了
 MotionPastName,dipped,浸泡了
 MotionPastName,divined,預言了
 MotionPastName,drank,飲用了
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,清空了
 MotionPastName,exchanged,交換了
 MotionPastName,flashed,閃光了
 MotionPastName,inscribed,刻寫了
+MotionPastName,mounted,騎乘了
 MotionPastName,opened,打開了
 MotionPastName,packed,罐裝了
 MotionPastName,played,演奏了
@@ -3913,7 +3915,7 @@ MotionPastName,rubbed,摩擦了
 MotionPastName,sacrificed,祭祀了
 MotionPastName,sat,坐了
 MotionPastName,scried,占卜了
-MotionPastName,set,落入了陷阱
+MotionPastName,set,安放了
 MotionPastName,staked,穿刺了
 MotionPastName,studied,學習了
 MotionPastName,swatted,拍了
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,洗滌
 MotionPresentName,capture,捕捉
 MotionPresentName,chant,吟唱
 MotionPresentName,construct,創造
+MotionPresentName,copy,複製
 MotionPresentName,dig,挖掘
 MotionPresentName,dip,浸泡
 MotionPresentName,divine,預言
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,清空
 MotionPresentName,exchange,交換
 MotionPresentName,flash,閃光
 MotionPresentName,inscribe,刻寫
+MotionPresentName,mount,騎乘
 MotionPresentName,open,打開
 MotionPresentName,pack,罐裝
 MotionPresentName,play,演奏
@@ -3952,9 +3956,9 @@ MotionPresentName,study,學習
 MotionPresentName,swat,拍
 MotionPresentName,write,書寫
 MotionPresentName,zap,發射
-MurderTypeName,Allied,盟友
-MurderTypeName,Every,一切
-MurderTypeName,Hostile,敵對
+MurderTypeName,allied,盟友
+MurderTypeName,every,一切
+MurderTypeName,hostile,敵對
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,歷經多年使用，這座橋依然完整而堅實。
 PlatformName,crystal bridge,水晶橋
 PlatformName,wooden bridge,木橋
@@ -4637,7 +4641,7 @@ StrikeName,shield,防護性
 StrikeName,shriek,尖嘯性
 StrikeName,spirit,靈魂性
 StrikeName,tunnel,挖掘性
-StrikeName,venom,毒液性
+StrikeName,venom,劇毒性
 StrikeName,wail,哀號
 TraversalPastName,ascended,向上移動
 TraversalPastName,descended,向下移動
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,行進到
 TraversalPresentName,ascend,向上移動
 TraversalPresentName,descend,向下移動
 TraversalPresentName,travel,行進
+VolatileName,blaze,火焰
+VolatileName,electricity,感電
+VolatileName,freeze,冰霧
+VolatileName,steam,蒸汽
 WallStructureName,illusionary,幻象
 WallStructureName,permanent,永久
 WallStructureName,solid,堅固
@@ -4659,7 +4667,7 @@ ZooName,gremlin pit,妖精坑
 ZooName,leprechaun hall,小矮妖大廳
 ZooName,salty pool,鹹水池
 ZooName,science lab,科學實驗室
-ZooName,slumber party,睡覺派對
+ZooName,slumber party,睡衣派對
 ZooName,spider nest,蜘蛛巢穴
 ZooName,tavern,酒館
 ZooName,treasure zoo,財寶動物園

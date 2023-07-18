@@ -74,31 +74,31 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.acid, 1.d4() + 3);
             P.Apply.Harm(Elements.acid, 6.d6());
-            P.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 2.d4() + 2)));
+            P.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 2.d4() + 2)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.acid, 1.d4() + 5);
             S.Apply.Harm(Elements.acid, 8.d6());
-            S.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 3.d4() + 3)));
+            S.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 3.d4() + 3)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.acid, 1.d4() + 7);
             E.Apply.Harm(Elements.acid, 10.d6());
-            E.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 4.d4() + 4)));
+            E.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 4.d4() + 4)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.acid, 1.d4() + 9);
             M.Apply.Harm(Elements.acid, 12.d6());
-            M.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 5.d4() + 5)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 5.d4() + 5)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.acid, 1.d4() + 11);
             C.Apply.Harm(Elements.acid, 14.d6());
-            C.Apply.UnlessTargetResistant(Elements.acid, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.rage, 6.d4() + 6)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.rage, 6.d4() + 6)));
           }
         );
       });
@@ -153,37 +153,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.magic, 1.d4() + 1)
              .SetObjects();
-            U.Apply.AnimateObjects(Corrupt: Properties.rage);
+            U.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.magic, 1.d4() + 3)
              .SetObjects();
-            P.Apply.AnimateObjects(Corrupt: null);
+            P.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.magic, 1.d4() + 5)
              .SetObjects();
-            S.Apply.AnimateObjects(Corrupt: null);
+            S.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.magic, 1.d4() + 7)
              .SetObjects();
-            E.Apply.AnimateObjects(Corrupt: null);
+            E.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.magic, 1.d4() + 9)
              .SetObjects();
-            M.Apply.AnimateObjects(Corrupt: null);
+            M.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.magic, 1.d4() + 11)
              .SetObjects();
-            C.Apply.AnimateObjects(Corrupt: null);
+            C.Apply.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
           }
         );
       });
@@ -333,36 +333,39 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.cold, 1.d4() + 3);
             P.Apply.Harm(Elements.cold, 6.d4() + 6);
-            P.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn8, T => T.ApplyTransient(Properties.paralysis, 1.d2() + 1)));
+            P.Apply.WhenChance(Chance.OneIn8, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d2() + 1)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.cold, 1.d4() + 5);
             S.Apply.Harm(Elements.cold, 8.d4() + 8);
-            S.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn6, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 2)));
+            S.Apply.WhenChance(Chance.OneIn6, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 2)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.cold, 1.d4() + 7);
             E.Apply.Harm(Elements.cold, 10.d4() + 10);
-            E.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 3)));
+            E.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 3)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.cold, 1.d4() + 9);
             M.Apply.Harm(Elements.cold, 12.d4() + 12);
-            M.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 4)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 4)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.cold, 1.d4() + 11);
             C.Apply.Harm(Elements.cold, 14.d4() + 14);
-            C.Apply.UnlessTargetResistant(Elements.cold, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.paralysis, 1.d4() + 5)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 5)));
           }
         );
       });
 
-      confusion = AddSpell(Schools.enchantment, "confusion", 2, new Precept(Purpose.Blast, Properties.confusion), Glyphs.confusion_spell, Z =>
+      var ConfusionPrecept = new Precept(Purpose.Blast, Properties.confusion);
+      var StunnedPrecept = new Precept(Purpose.Blast, Properties.stunned);
+
+      confusion = AddSpell(Schools.enchantment, "confusion", 2, Precept: null, Glyphs.confusion_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -370,33 +373,39 @@ namespace Pathos
           Z,
           U =>
           {
+            U.Precept = ConfusionPrecept;
             U.SetCast().Strike(Strikes.psychic, Dice.One);
             U.Apply.ApplyTransient(Properties.confusion, 2.d6());
           },
           P =>
           {
+            P.Precept = ConfusionPrecept;
             P.SetCast().Strike(Strikes.psychic, Dice.One);
             P.Apply.ApplyTransient(Properties.confusion, 4.d6());
           },
           S =>
           {
+            S.Precept = ConfusionPrecept;
             S.SetCast().Strike(Strikes.psychic, Dice.Fixed(2));
             S.Apply.ApplyTransient(Properties.confusion, 6.d6());
           },
           E =>
           {
+            E.Precept = StunnedPrecept;
             E.SetCast().Strike(Strikes.psychic, Dice.Fixed(3));
             E.Apply.ApplyTransient(Properties.confusion, 8.d6());
             E.Apply.ApplyTransient(Properties.stunned, 1.d6());
           },
           M =>
           {
+            M.Precept = StunnedPrecept;
             M.SetCast().Strike(Strikes.psychic, Dice.Fixed(4));
             M.Apply.ApplyTransient(Properties.confusion, 10.d6());
             M.Apply.ApplyTransient(Properties.stunned, 2.d6());
           },
           C =>
           {
+            C.Precept = StunnedPrecept;
             C.SetCast().Strike(Strikes.psychic, Dice.Fixed(5));
             C.Apply.ApplyTransient(Properties.confusion, 12.d6());
             C.Apply.ApplyTransient(Properties.stunned, 3.d6());
@@ -1743,7 +1752,7 @@ namespace Pathos
         );
       });
 
-      knock = AddSpell(Schools.transmutation, "knock", 1, null, Glyphs.knock_spell, Z =>
+      knock = AddSpell(Schools.transmutation, "knock", 1, Precept: null, Glyphs.knock_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -1790,7 +1799,10 @@ namespace Pathos
         );
       });
 
-      levitation = AddSpell(Schools.abjuration, "levitation", 4, new Precept(Purpose.Blast, Properties.levitation), Glyphs.levitation_spell, Z =>
+      var LevitationPrecept = new Precept(Purpose.Blast, Properties.levitation);
+      var FlightPrecept = new Precept(Purpose.Buff, Properties.flight);
+
+      levitation = AddSpell(Schools.abjuration, "levitation", 4, Precept: null, Glyphs.levitation_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -1798,31 +1810,37 @@ namespace Pathos
           Z,
           U =>
           {
+            U.Precept = LevitationPrecept;
             U.SetCast().Strike(Strikes.spirit, Dice.Zero);
             U.Apply.ApplyTransient(Properties.levitation, 1.d140() + 10);
           },
           P =>
           {
+            P.Precept = LevitationPrecept;
             P.SetCast().Strike(Strikes.spirit, Dice.One);
             P.Apply.ApplyTransient(Properties.levitation, 1.d140() + 100);
           },
           S =>
           {
+            S.Precept = LevitationPrecept;
             S.SetCast().Strike(Strikes.spirit, Dice.One);
             S.Apply.ApplyTransient(Properties.levitation, 1.d140() + 200);
           },
           E =>
           {
+            E.Precept = FlightPrecept;
             E.SetCast().Strike(Strikes.spirit, Dice.One);
             E.Apply.ApplyTransient(Properties.flight, 1.d140() + 100); // this is flight now!
           },
           M =>
           {
+            M.Precept = FlightPrecept;
             M.SetCast().Strike(Strikes.spirit, Dice.One);
             M.Apply.ApplyTransient(Properties.flight, 1.d140() + 200);
           },
           C =>
           {
+            C.Precept = FlightPrecept;
             C.SetCast().Strike(Strikes.spirit, Dice.One);
             C.Apply.ApplyTransient(Properties.flight, 1.d140() + 300);
           }
@@ -1928,27 +1946,27 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            U.Apply.Light(false);
+            U.Apply.Light(false, Locality.Area);
             U.Apply.ApplyTransient(Properties.deafness, 1.d3() + 3);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            P.Apply.Light(false);
+            P.Apply.Light(false, Locality.Area);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            S.Apply.Light(false);
+            S.Apply.Light(false, Locality.Area);
             S.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.angel, Kinds.human);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            E.Apply.Light(false);
+            E.Apply.Light(false, Locality.Area);
             E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.angel, Kinds.human);
             E.Apply.AreaTransient(Properties.silence, 4.d6() + 4);
           },
@@ -1956,7 +1974,7 @@ namespace Pathos
           {
             M.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            M.Apply.Light(false);
+            M.Apply.Light(false, Locality.Area);
             M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Living.ToArray());
             M.Apply.AreaTransient(Properties.silence, 4.d6() + 4);
           },
@@ -1964,7 +1982,7 @@ namespace Pathos
           {
             C.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            C.Apply.Light(false);
+            C.Apply.Light(false, Locality.Area);
             C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Living.ToArray());
             C.Apply.AreaTransient(Properties.silence, 5.d6() + 5);
           }
@@ -1981,27 +1999,27 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            U.Apply.Light(true);
+            U.Apply.Light(true, Locality.Area);
             U.Apply.ApplyTransient(Properties.blindness, 1.d3() + 3);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            P.Apply.Light(true);
+            P.Apply.Light(true, Locality.Area);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            S.Apply.Light(true);
+            S.Apply.Light(true, Locality.Area);
             S.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            E.Apply.Light(true);
+            E.Apply.Light(true, Locality.Area);
             E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
             E.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
           },
@@ -2009,7 +2027,7 @@ namespace Pathos
           {
             M.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            M.Apply.Light(true);
+            M.Apply.Light(true, Locality.Area);
             M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             M.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
           },
@@ -2017,7 +2035,7 @@ namespace Pathos
           {
             C.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
-            C.Apply.Light(true);
+            C.Apply.Light(true, Locality.Area);
             C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             C.Apply.AreaTransient(Properties.blindness, 5.d6() + 5);
           }
@@ -2123,31 +2141,31 @@ namespace Pathos
           {
             P.SetCast().Beam(Beams.poison, 1.d4() + 3);
             P.Apply.Harm(Elements.poison, 6.d6());
-            P.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 1.d4() + 1)));
+            P.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 1.d4() + 1)));
           },
           S =>
           {
             S.SetCast().Beam(Beams.poison, 1.d4() + 5);
             S.Apply.Harm(Elements.poison, 8.d6());
-            S.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 2.d4() + 2)));
+            S.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 2.d4() + 2)));
           },
           E =>
           {
             E.SetCast().Beam(Beams.poison, 1.d4() + 7);
             E.Apply.Harm(Elements.poison, 10.d6());
-            E.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 3.d4() + 3)));
+            E.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 3.d4() + 3)));
           },
           M =>
           {
             M.SetCast().Beam(Beams.poison, 1.d4() + 9);
             M.Apply.Harm(Elements.poison, 12.d6());
-            M.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 4.d4() + 4)));
+            M.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 4.d4() + 4)));
           },
           C =>
           {
             C.SetCast().Beam(Beams.poison, 1.d4() + 11);
             C.Apply.Harm(Elements.poison, 14.d6());
-            C.Apply.UnlessTargetResistant(Elements.poison, R => R.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.sickness, 5.d4() + 5)));
+            C.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.poison, R => R.ApplyTransient(Properties.sickness, 5.d4() + 5)));
           }
         );
       });
@@ -2752,6 +2770,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             S.Apply.Locking();
+            S.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, Dice.One));
           },
           E =>
           {
@@ -2759,6 +2778,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             E.Apply.Locking();
+            E.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d2()));
           },
           M =>
           {
@@ -2766,6 +2786,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             M.Apply.Locking();
+            M.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d4()));
           },
           C =>
           {
@@ -2773,6 +2794,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             C.Apply.Locking();
+            C.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 2.d4()));
           }
         );
       });

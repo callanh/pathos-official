@@ -35,7 +35,7 @@ namespace Pathos
         this.Slots = new CodexSlots(this);
         this.Elements = new CodexElements(this);
         this.Properties = new CodexProperties(this);
-        this.Apetites = new CodexApetites(this);
+        this.Appetites = new CodexAppetites(this);
         this.Standings = new CodexStandings(this);
         this.Warnings = new CodexWarnings(this);
         this.Materials = new CodexMaterials(this);
@@ -56,6 +56,7 @@ namespace Pathos
         this.Items = new CodexItems(this);
         this.Entities = new CodexEntities(this);
         this.Evolutions = new CodexEvolutions(this);
+        this.Volatiles = new CodexVolatiles(this);
         this.Blocks = new CodexBlocks(this);
         this.Devices = new CodexDevices(this);
         this.Gates = new CodexGates(this);
@@ -144,7 +145,7 @@ namespace Pathos
       Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -152,7 +153,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.good, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -161,7 +162,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -171,7 +172,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
       {
-        A.WhenSourceBelowApetite(Apetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -195,7 +196,7 @@ namespace Pathos
     public Manifest Manifest { get; }
     public CodexAfflictions Afflictions { get; }
     public CodexAnatomies Anatomies { get; }
-    public CodexApetites Apetites { get; }
+    public CodexAppetites Appetites { get; }
     public CodexAtmospheres Atmospheres { get; }
     public CodexAttackTypes AttackTypes { get; }
     public CodexAttributes Attributes { get; }
@@ -249,6 +250,7 @@ namespace Pathos
     public CodexStrikes Strikes { get; }
     public CodexTracks Tracks { get; }
     public CodexTricks Tricks { get; }
+    public CodexVolatiles Volatiles { get; }
     public CodexWarnings Warnings { get; }
     public CodexZoos Zoos { get; }
 
@@ -712,17 +714,7 @@ namespace Pathos
           else if (!Entity.IsUnique && char.IsUpper(Entity.Name[0]))
             Record($"Entity {Entity.Name} name must have a common name when marked as non-unique.");
 
-          if (Entity.HasReactions())
-          {
-            foreach (var Reaction in Entity.GetReactions())
-            {
-              foreach (var Effect in Reaction.Apply.GetEffects())
-              {
-                if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
-                  Record($"Entity {Entity.Name} reaction to {Reaction.Element} should not harm with the same element.");
-              }
-            }
-          }
+          CheckReactions(Entity.Reactions, () => $"Entity {Entity.Name}");
 
           AttackIndex++;
         }
@@ -837,6 +829,9 @@ namespace Pathos
         if (Feature.Sonic == null)
           Record($"Feature {Feature.Name} must have a sonic");
 
+        if (Feature.Weight <= Weight.Zero)
+          Record($"Feature {Feature.Name} must have a weight");
+
         foreach (var Use in Feature.Uses)
         {
           if (Use.Motion.PractisingSkill != null)
@@ -869,10 +864,11 @@ namespace Pathos
         {
           foreach (var Item in Kit.Items)
           {
-            var Skill = Item.GetSkill();
-
-            if (Skill != null && !Class.Startup.HasSkill(Skill))
-              Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            foreach (var Skill in Item.GetSkills())
+            {
+              if (Skill != null && !Class.Startup.HasSkill(Skill))
+                Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            }
           }
         }
 
@@ -907,6 +903,9 @@ namespace Pathos
         if (Device.MissileBlock != null && Device.Missiles.Count > 0)
           Record($"Device {Device.Name} with missile block must not have any missile items");
 
+        if (Device.Weight <= Weight.Zero)
+          Record($"Device {Device.Name} must have a weight");
+
         foreach (var UntrapLoot in Device.UntrapLoot.Kits)
         {
           //if (UntrapLoot.QuantityDice != Dice.One && !UntrapLoot.Item.Stacked)
@@ -915,13 +914,21 @@ namespace Pathos
       }
       #endregion
 
+      #region Blocks.
+      Base.UniqueCheck("Block", Manifest.Blocks.List, I => I.Name);
+
+      foreach (var Block in Manifest.Blocks.List)
+      {
+        if (Block.Weight <= Weight.Zero)
+          Record($"Block {Block.Name} must have a weight");
+      }
+      #endregion
+
       Base.UniqueCheck("Element", Manifest.Elements.List, I => I.Name);
 
       Base.UniqueCheck("Property", Manifest.Properties.List, I => I.Name);
 
       Base.UniqueCheck("Barrier", Manifest.Barriers.List, I => I.Name);
-
-      Base.UniqueCheck("Block", Manifest.Blocks.List, I => I.Name);
 
       Base.UniqueCheck("Platform", Manifest.Platforms.List, I => I.Name);
 
@@ -937,7 +944,23 @@ namespace Pathos
           Record($"Trick {Trick.Name} must have apply effects");
       }
 
+      #region Grounds
       Base.UniqueCheck("Ground", Manifest.Grounds.List, I => I.Name);
+
+      foreach (var Ground in Manifest.Grounds.List)
+      {
+        CheckReactions(Ground.Reactions, () => $"Ground {Ground.Name}");
+      }
+      #endregion
+
+      #region Volatiles
+      Base.UniqueCheck("Volatile", Manifest.Volatiles.List, I => I.Name);
+
+      foreach (var Volatile in Manifest.Volatiles.List)
+      {
+        CheckReactions(Volatile.Reactions, () => $"Volatile {Volatile.Name}");
+      }
+      #endregion
 
       Base.UniqueCheck("Motion", Manifest.Motions.List, I => I.PastName);
       Base.UniqueCheck("Motion", Manifest.Motions.List, I => I.PresentName);
@@ -1084,8 +1107,9 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Glyphs.Quicks.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Warnings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Apetites.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Appetites.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new[] { E.ActiveGlyph, E.HoldGlyph }));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
       UsedGlyphSet.Add(Manifest.Glyphs.StatueBase);
@@ -1155,6 +1179,21 @@ namespace Pathos
       #endregion
     }
 
+    private void CheckReactions(IReadOnlyList<Reaction> ReactionList, Func<string> Function)
+    {
+      var Title = Function();
+
+      Base.UniqueCheck(Title + "Reactions", ReactionList, I => I.Element);
+
+      foreach (var Reaction in ReactionList)
+      {
+        foreach (var Effect in Reaction.Apply.GetEffects())
+        {
+          if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
+            Record($"{Title} reaction to {Reaction.Element} should not harm with the same element to prevent endless cycles of 'harm'.");
+        }
+      }
+    }
     private void CheckApply(Apply Apply, Func<string> Function)
     {
       foreach (var Effect in Apply.GetEffects())
@@ -1219,7 +1258,7 @@ namespace Pathos
 
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
       RegisterRecord<ManifestAnatomies, AnatomyEditor, Anatomy>();
-      RegisterRecord<ManifestApetites, ApetiteEditor, Apetite>();
+      RegisterRecord<ManifestAppetites, AppetiteEditor, Appetite>();
       RegisterRecord<ManifestAtmospheres, AtmosphereEditor, Atmosphere>();
       RegisterRecord<ManifestAttackTypes, AttackTypeEditor, AttackType>();
       RegisterRecord<ManifestAttributes, AttributeEditor, Attribute>();
@@ -1268,6 +1307,7 @@ namespace Pathos
       RegisterRecord<ManifestSonics, SonicEditor, Sonic>();
       RegisterRecord<ManifestSpecials, SpecialEditor, Special>();
       RegisterRecord<ManifestSpells, SpellEditor, Spell>();
+      RegisterRecord<ManifestVolatiles, VolatileEditor, Volatile>();
       RegisterRecord<ManifestStandings, StandingEditor, Standing>();
       RegisterRecord<ManifestStocks, StockEditor, Stock>();
       RegisterRecord<ManifestStrikes, StrikeEditor, Strike>();
@@ -1278,7 +1318,7 @@ namespace Pathos
 
       Base.Register<CodexAfflictions>();
       Base.Register<CodexAnatomies>();
-      Base.Register<CodexApetites>();
+      Base.Register<CodexAppetites>();
       Base.Register<CodexAtmospheres>();
       Base.Register<CodexAttackTypes>();
       Base.Register<CodexAttributes>();
@@ -1327,6 +1367,7 @@ namespace Pathos
       Base.Register<CodexSonics>();
       Base.Register<CodexSpecials>();
       Base.Register<CodexSpells>();
+      Base.Register<CodexVolatiles>();
       Base.Register<CodexStandings>();
       Base.Register<CodexStocks>();
       Base.Register<CodexStrikes>();
@@ -1342,7 +1383,7 @@ namespace Pathos
       Base.Register<Anatomy>();
       Base.Register<AnatomySet>();
       Base.Register<Appearance>();
-      Base.Register<Apetite>();
+      Base.Register<Appetite>();
       Base.Register<Apply>();
       Base.Register<Armour>();
       Base.Register<AssetFilter>();
@@ -1431,6 +1472,7 @@ namespace Pathos
       Base.Register<Spawn>();
       Base.Register<Special>();
       Base.Register<Spell>();
+      Base.Register<Volatile>();
       Base.Register<Standing>();
       Base.Register<Startup>();
       Base.Register<Stock>();

@@ -328,12 +328,14 @@
 
 # Enchantment;
 . Weapons and armour have a modifier that can be changed with enchantment magic.;Weapons and armor have a modifier that can be changed with enchantment magic.
-. The modifier is limited to between {Min} and {Max}.;
 . A modifier of +0 is a normal, mundane item.;
 . Modifiers on armour apply to your defence score.;Modifiers on armor apply to your defense score.
 . Modifiers on weapons apply to your attack and damage scores.;
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.;
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+/
+. The {grade} items are limited to between {Min} and {Max}.;
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.;
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;
 
 # Punishments;

@@ -273,6 +273,7 @@ gnome,gnome,gnome lord,,3,2,4,15,small,animal,7000,3.0,10,attack,,13,12,11,11,10
 gnome,gnome,gnome thief,,1,1,3,11,small,animal,6500,3.7,8,attack,,12,14,8,11,8,11
 gnome,gnome,gnome warrior,,5,1,6,31,small,animal,7500,3.0,10,attack,,14,11,13,9,9,11
 gnome,gnome,gnomish wizard,,3,2,5,23,small,animal,7000,3.0,15,attack,,11,12,10,13,16,12
+golem,,adamantine golem,,36,1,38,1212,large,adamantine,120000,5.0,35,attack,,29,9,29,3,9,2
 golem,,clay golem,,17,1,18,425,large,clay,80000,2.0,18,attack,,20,9,18,3,8,1
 golem,,crystal golem,,32,1,36,1182,large,crystal,100000,5.0,20,attack,,26,9,22,3,9,1
 golem,,diamond golem,,28,1,30,839,large,gemstone,110000,3.7,18,attack,,26,9,22,3,9,1
@@ -584,8 +585,8 @@ quadruped,,titanothere,,26,2,27,935,huge,animal,300000,3.7,15,attack,,18,9,18,3,
 quadruped,,wumpus,,16,1,18,370,large,animal,25000,2.0,18,attack,,14,10,14,3,7,5
 rodent,,black rat,,2,1,3,8,tiny,animal,400,5.0,11,attack,DOMESTIC,7,14,5,3,7,5
 rodent,,giant rat,,1,2,2,2,tiny,animal,300,2.5,11,attack,,8,14,6,3,7,5
-rodent,,hellrat,,5,1,7,39,tiny,animal,200,5.0,11,attack,,12,14,11,4,9,6
-rodent,,pack rat,,4,1,3,20,tiny,animal,600,5.0,11,defend,DOMESTIC,9,15,5,4,7,5
+rodent,,hellrat,,5,1,7,39,tiny,animal,200,5.0,11,attack,,12,14,11,6,9,6
+rodent,,pack rat,,4,1,3,20,tiny,animal,600,5.0,11,defend,DOMESTIC,9,15,5,3,7,5
 rodent,,rabbit,,0,2,1,4,tiny,animal,400,5.0,12,escape,DOMESTIC,7,12,5,3,7,5
 rodent,,rabid rabbit,,2,1,2,7,tiny,animal,400,3.7,12,defend,,8,10,4,2,5,4
 rodent,,rabid rat,,3,1,3,12,tiny,animal,300,5.0,13,attack,,9,11,4,2,5,4

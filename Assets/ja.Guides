@@ -1,132 +1,132 @@
-# Commands; コマンド
-. Single tap/left click or arrow keys to move and attack.; シングルタップや左クリックまたは矢印キーで、移動したり攻撃したりします。
-. Long press/right click to operate doors/traps.; 押し続けたり右クリックしたりすると、ドアやトラップを操作したり、持ち物や床のアイテムを装備したり使用したりできます。
-. Double tap to pick up items, traverse stairs or wait one move.; ダブルタップすると、アイテムを拾い上げたり、階段を移動したり、または1ターン待ちます。
+# Commands; コマンド一覧（主にキーボード用）
+. Single tap/left click or arrow keys to move and attack.; シングルタップ、左クリック、矢印キーで指定した場所に移動、もしくは対象に攻撃します。
+. Long press/right click to operate doors/traps.; 長押しまたは右クリックで、ドアの開け閉め、罠の解除や、わざと罠のある場所へ移動するなどのコマンドを選択するメニューが表示されます。
+. Double tap to pick up items, traverse stairs or wait one move.; ダブルタップ（クリック）で、アイテムを拾ったり、階段を昇り降りしたり、または1ターンその場で待機できます。
 /
-- . | wait one turn (also double tap on self); . | 一ターン待つ（自分をダブルタップでも）
-- , | pick up the top item on the floor; , | 床の上の一番上のアイテムを拾う
-- A | toggle log (click the log to expand/collapse); A | ログを切り替えます（ログをクリックして展開/折りたたみ）
+- . | wait one turn (also double tap on self); . | その場で1ターン待機（キャラクターをダブルタップでも）
+- , | pick up the top item on the floor; , | 床の一番上にあるアイテムを拾う
+- A | toggle log (click the log to expand/collapse); A | メッセージを表示/隠す（メッセージをクリックすると展開/折りたたみ）
 - B | move down-left; B | 左下へ移動または攻撃
-- C | toggle character; C | キャラクターステータスの表示を切り替え
-- D | re-use last item; D | 最後に使ったアイテムを使う
-- E | mount or dismount your steed; E | 騎獣からの乗り降りを切り替え
-- F | toggle floor; F | 床の情報画面を切り替え
-- G | re-equip last item; G | 最後のアイテムを再装備する
+- C | toggle character; C | キャラクターパネルを表示/隠す
+- D | re-use last item; D | 最後に使ったアイテムをもう一度使用
+- E | mount or dismount your steed; E | 騎乗可能なモンスターに乗る / 騎乗中にモンスターから降りる
+- F | toggle floor; F | 床情報パネルを表示/隠す
+- G | re-equip last item; G | 最後に外したアイテムを再装備
 - H | move left; H | 左へ移動または攻撃
-- I | toggle inventory; I | アイテム欄の表示を切り替え
+- I | toggle inventory; I | 持ち物パネルを表示/隠す
 - J | move down; J | 下へ移動または攻撃
 - K | move up; K | 上へ移動または攻撃
 - L | move right; L | 右へ移動または攻撃
-- M | toggle map; M | 全体マップの表示を切り替え
+- M | toggle map; M | マップを表示/隠す
 - N | move down-right; N | 右下へ移動または攻撃
-- O | hide from view; O | 影で隠れます（可能な時のみ）
-- P | polymorph at will; P | 変化します（可能な時のみ）
-- Q | save or quit this game; Q | このゲームを保存または終了する
-- R | for rest mode to recover life and mana; R | 生命と魔力を回復するための休憩モードを切り替え
-- S | for search mode for secret doors and traps; S | 秘密の扉や罠を探す調査モードの切り替え
-- T | teleport at will; T | テレポートする（可能な時のみ）
+- O | hide from view; O | 隠れる（能力を持つモンスターに変化している場合のみ）
+- P | polymorph at will; P | 任意で変化（可能な時のみ）
+- Q | save or quit this game; Q | 進行中のゲームを保存または終了する
+- R | for rest mode to recover life and mana; R | ライフとマナをより早く回復する休憩モードのオン・オフ
+- S | for search mode for secret doors and traps; S | 秘密の扉や罠を見つけやすくなる調査モードのオン・オフ
+- T | teleport at will; T | 任意でテレポートする（可能な時のみ）
 - U | move up-right; U | 右上へ移動または攻撃
-- V | kick in a direction; V | ある方向を蹴る
-- W | jump in a direction (if you have the talent); W | 好き方向にジャンプできる（可能な時のみ）
-- X | re-cast last spell; X | 最後の呪文をもう一度唱える
+- V | kick in a direction; V | 任意の方向へ蹴る
+- W | jump in a direction (if you have the talent); W | 任意の方向にジャンプする（可能な時のみ）
+- X | re-cast last spell; X | 最後に唱えた呪文をもう一度使用する
 - Y | move up-left; Y | 左上へ移動または攻撃
-- Z | toggle cast spells (read books to learn spells); Z | 学習した魔法の表示画面の切り替え
-- ' | blink in a direction; ' | 好きな方向に明滅する（可能な時のみ）
-- ;; | telekinesis in a direction; ;; | ある方向に念動力を使う
-- > | descend stairs; > | 階段を下る
-- < | ascend stairs; < | 階段を上る
-- / | toggle chat in multiplayer; / | マルチプレイヤー時にチャットを切り替えます
-- \ | view knowledge panel; \ | 知識パネルを見る
+- Z | toggle cast spells (read books to learn spells); Z | 呪文パネルを表示/隠す（魔法書で学習した呪文を表示）
+- ' | blink in a direction; ' | 任意の方向に転位する（可能な時のみ）
+- ;; | telekinesis in a direction; ;; | 任意の方向に念動力を使う
+- > | descend stairs; > | 階段を降りる
+- < | ascend stairs; < | 階段を昇る
+- / | toggle chat in multiplayer; / | チャット入力欄を表示（マルチプレイヤー時）
+- \ | view knowledge panel; \ | 知識パネルを表示
 - + | zoom in; + | 表示を拡大
 - - | zoom out; - | 表示を縮小
 - 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | クイックアクション（左側、Shift+数字で行動を変更）
 - 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | クイックアクション（右側、Shift+数字で行動を変更）
 - INSERT | toggle tunnelling mode; INSERT | 掘削モードに切り替え
-- SHIFT + arrow | fire a missile without moving; SHIFT+矢印 | 動かずに準備している矢筒から矢などを発射する
+- SHIFT + arrow | fire a missile without moving; SHIFT + 方向 | 動かずに指定した方向へ攻撃または飛び道具を発射
 - CTRL + arrow | interact with the target without moving; CTRL + 方向 | 動かずに指定した方向の対象を操作
-- ENTER | select the top item on the floor; ENTER | 床の一番上にあるアイテムを選択する
-- ESCAPE | hides open panels and clears your target; ESCAPE | 開いているパネルを消して画面をクリアにする
-- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 表示中のダイアログを消してキーボードの選択を解除
-- SPACE | toggle real-time or turn-based; スペース | リアルタイムとターンベースの切り替え
+- ENTER | select the top item on the floor; ENTER | 床の一番上にあるアイテムを選択
+- ESCAPE | hides open panels and clears your target; ESCAPE | 表示中のパネルを非表示にする
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 表示中のパネルを消してキーボードの選択を解除
+- SPACE | toggle real-time or turn-based; スペース | リアルタイムモードとターンベースモードの切り替え
 - PgUp | switch to previous character; PgUp | 前のキャラクターに操作を切り替える
 - PgDown | switch to next character; PgDown | 次のキャラクターに操作を切り替える
-- ALT | show labels; ALT | ラベルを表示する
-- F1 | show this help; F1 | HELP画面を表示する
+- ALT | show labels; ALT | キャラクター名などのラベルを表示
+- F1 | show this help; F1 | ヘルプ画面を表示
 - F6 | quick save; F6 | クイックセーブ
 - F10 | open side menu; F10 | サイドメニューを表示
-- ALT + ENTER | toggle full screen to window mode (Windows Desktop); Alt + Enter | 全画面表示をウィンドウモードに切り替えます（Windowsデスクトップ時）
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); Alt + Enter | 全画面とウィンドウ表示の切り替え（Windowsデスクトップ）
 
 # General mechanics; はじめに
-. You will die.; あなたは死んでしまうでしょう。
-. But don't despair, you will learn something new each time.; しかし、絶望しないでください。毎回、何か新しいことを学びます。
-. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos（パトス）の目的は、地下40階まで降りてから1階に戻るまで生き残ることです。
-. Pathos is turn-based so take your time and consider your options when things get serious.; パトスはターン制ですので時間をかけて選択し、事態が深刻になったらhelp（ヘルプ）を参照して下さい。
-. Each class starts with different items, skills and abilities.; 各職種は、異なるアイテム、スキル、能力から始まります。
-. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; ポーション、巻物、指輪、杖、鎧などの効果は、各冒険の開始時にシャッフルされます。
-. For example, the orange potion will not have a consistent effect across different adventures.; 例えば、オレンジポーションは、さまざまな冒険で同じ効果を発揮しません。（違う冒険では種類が変わる）
+. You will die.; あなたはいずれ死にます。
+. But don't despair, you will learn something new each time.; しかし絶望することはありません。毎回、何か新しい発見を得るでしょう。
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos（パトス、またはペイソス。悲哀や情念を意味します。）におけるメインの目的は、地下40階まで降りてあることを成し遂げ、そして地下1階からダンジョンを脱出することです。
+. Pathos is turn-based so take your time and consider your options when things get serious.; Pathosはターン制ですので、ピンチに追い込まれたらじっくり時間をかけて選択肢を検討しましょう。アイテムやモンスターなどのヘルプに打開のヒントがあるかも知れません。
+. Each class starts with different items, skills and abilities.; 各クラスごとに異なるアイテム、スキル、能力値を持って開始します。（クラスによってはランダムな呪文を覚えた状態で始まります）
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 冒険を始める度に、薬の小瓶、巻物、指輪、杖、鎧などの見かけの色・形はシャッフルされ、実際に効果を発揮するか識別されるまで正体は分かりません。
+. For example, the orange potion will not have a consistent effect across different adventures.; 例えば、ある冒険でオレンジ色の液体の入った小瓶が回復の薬の小瓶だったとしても、別な冒険でも回復の薬の小瓶であるとは限りません。
 
 # Combat; 戦闘
-. When attacking a d20 is rolled which gives a random number between 1 and 20.; 20面ダイス（サイコロ）で攻撃する時、1〜20の乱数が発生します。
-. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; 1の数字はクリティカルミスであり、20の数字はクリティカルヒットです。
-. A critical miss stops any further attacks in that turn (if you have multiple attacks).; クリティカルミスは、そのターンにそれ以上の攻撃を停止します（複数の攻撃がある場合）。
-. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; クリティカルヒットは、基本武器のダメージを2倍にします。魔力付与と力の修正値は2倍にならないことに注意してください。
-. The strength bonus to damage is doubled when using a two handed weapon.; 両手武器を使用すると、ダメージに対する力の値のボーナスが2倍になります。
-. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; クリティカルがヒットまたはミスするしかない場合、クリティカルヒットは通常のヒットまたはミスにダウングレードされます。
-. Otherwise, this number is added to the attack score and compared to the defence score.; それ以外の場合、この数値は攻撃値に追加され、防御値と比較されます。
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; 攻撃する際、まずは攻撃の成否を判定するために（仮想の）d20（20面サイコロ）を振り、1~20のランダムな値を得ます。
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; 1が出るとクリティカルミスに、20が出るとクリティカルヒットになります。
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; クリティカルミスが発生すると、その攻撃は下記の式を無視して失敗として扱われ、さらにそのターンに行われるはずであった残りの攻撃の機会を失います。（二刀流などで複数回の攻撃が可能な場合。例えば右手での攻撃でクリティカルミスが発生すると、左手での攻撃は行われません。）
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; クリティカルヒットが発生すると、その攻撃は下記の式を無視して成功として扱われ、武器の基本ダメージ（小剣なら1~6）を2倍にしてダメージを算出します。武器の修正値と筋力によるダメージの変動は基本的に2倍になりません。
+. The strength bonus to damage is doubled when using a two handed weapon.; 両手武器で攻撃した場合のみ、筋力による追加ダメージも2倍になります。
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; 相手の防御値とプレイヤーの攻撃値の差が20を上回り20を出すことでしか攻撃が当たらない場合、20が出たとしてもクリティカルヒットではなく通常のヒットとして扱われ、相手の防御値とプレイヤーの攻撃値の差が2以下で1を出すことでしか攻撃をミスしない場合、1が出たとしてもクリティカルミスではなく通常のミスとして扱われます。
+. Otherwise, this number is added to the attack score and compared to the defence score.; それ以外の場合、この数値は攻撃値に追加され、相手の防御値と比較されます。以下の式が成立する場合、攻撃は成功した（通常のヒット）ということになります。
 /
-` (Attack + d20) >= Defence; （攻撃値+ d20） >= 防御値
+` (Attack + d20) >= Defence; (攻撃値 + d20) >= 防御値
 /
-. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; 攻撃と防御の値は、能力、スキル、魔力付与に影響されます。
-. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; 武器に対する魔力付与は攻撃値に直接影響し、ダメージ値にも追加されます。
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; 攻撃値、防御値は能力値、武器や防具のスキルおよび修正値に影響されます。
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; 武器の修正値は攻撃値およびダメージにそれぞれ影響します。
 /
-. Your skill bonus is based on your level and is the same formula for all classes:; スキルボーナスはレベルに基づいており、すべてのクラスで同じ式です。
+. Your skill bonus is based on your level and is the same formula for all classes:; スキルボーナスはキャラクターのレベルに基づいた、以下に示す式が全てのクラスで使用されます。
 /
 ` Skill Bonus = (Level / 4) + 1; スキルボーナス = (レベル / 4) + 1
 /
-. Your defence is also affected by your circumstances:; あなたの防御も状況に影響されます。
+. Your defence is also affected by your circumstances:; 防御値は以下の様に状況にも影響されます。
 /
-` {Mod} defence when blind; {Mod} 盲目時の防御
-` {Mod} defence when invisible; {Mod} 不可視の時の防御
-` {Mod} defence when displaced; {Mod} 変位している時の防御
-` {Mod} defence when paralysed or sleeping; {Mod} 麻痺または睡眠時の防御
-` {Mod} defence when stuck; {Mod} 立ち往生している時の防御
-` {Mod} defence when attacked from concealment; {Mod} 隠蔽から攻撃されたときの防御
+` {Mod} defence when blind; 盲目の場合: 防御値に {Mod}
+` {Mod} defence when invisible; 透明化している場合: 防御値に {Mod}
+` {Mod} defence when displaced; 変位している場合: 防御値に {Mod}
+` {Mod} defence when paralysed or sleeping; 麻痺または寝ている場合: 防御値に {Mod}
+` {Mod} defence when stuck; 立ち往生している場合: 防御値に {Mod}
+` {Mod} defence when attacked from concealment; 隠れた敵から攻撃された場合: 防御値に {Mod}
 /
-. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; 重鎧を使用すると、熟練していない場合は{UnskilledPenalty}ポイント遅くなり、熟練している場合は{SkilledPenalty}ポイント遅くなります。
-. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; 中鎧は、未熟な場合は{UnskilledPenalty}ポイント遅くなります。そうでない場合、速度調整は行われません。
-. Light armour has no speed penalty if you are unskilled.; あなたが未熟でも、軽鎧には速度のペナルティはありません。
-. Unskilled use of armour also attracts a one point defence penalty.; 未熟な時の鎧の使用も、1ポイントの防御ペナルティを引き付けます。
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; 重装防具を装備すると、スキルを持たない初心者の場合は速度が{UnskilledPenalty}ポイント遅くなり、熟練者以上の場合は{SkilledPenalty}ポイントだけ遅くなります。
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; 中装防具を装備すると、初心者の場合は速度が{UnskilledPenalty}ポイント遅くなり、熟練者以上の場合は速度は遅くなりません。
+. Light armour has no speed penalty if you are unskilled.; 軽装防具を初心者の場合に装備しても、速度は遅くなりません。
+. Unskilled use of armour also attracts a one point defence penalty.; 装備している防具のスキルが初心者だった場合、防御に1ポイントのペナルティが付きます。
 /
-. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; 器用さの修正値は、すべての鎧で熟練している場合に防御値に適用されます。
-. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; これは、中鎧を着ている場合は最大+4、重鎧を着ている場合は+2に制限されています。
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; 装備している防具全てのスキルが技能者以上の場合、技巧によるボーナスが防御値に追加されます。
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; 追加される防御値の上限は、中装防具の場合4まで、重装防具の場合2までになります。
 
 # Skills; スキル
-. Each skill has a rating between 0 and 2000 and there are five competency levels.; 各スキルの評価は0〜2000で、5つの能力レベルがあります。
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; 各スキルは0～2000の値で評価され、5段階の熟練度レベルがあります。（スキルがない場合は初心者として-1000から開始し、修練で0まで上げることで技能者となります）
 /
-` (0) Proficient =    0..199; （0）熟練者 = 0～199
-` (1) Specialist =  200..499; （1）スペシャリスト = 200～499
-` (2) Expert     =  500..999; （2）専門家 = 500～999
-` (3) Master     = 1000..1999; （3）マスター = 1000～1999
-` (4) Champion   = 2000; （4）チャンピオン = 2000
+` (0) Proficient =    0..199; (0) 技能者　 = 0～199
+` (1) Specialist =  200..499; (1) 専門家　 = 200～499
+` (2) Expert     =  500..999; (2) 熟練者　 = 500～999
+` (3) Master     = 1000..1999; (3) 達人　　 = 1000～1999
+` (4) Champion   = 2000; (4) 天下第一 = 2000
 /
-. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; スキルの熟練度は、武器で攻撃したり、鎧を着て攻撃されたりするなどの練習で高まっていきます。
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; スキルの熟練度は、武器で攻撃したり（命中した場合）、防具を着て攻撃されたり（ミスになった場合）といった修練により向上します。
 /
-. Weapon skill gives you the competency level as an attack bonus and to damage.; 武器のスキルは、攻撃ボーナスおよびダメージとしての能力レベルを提供します。
-. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; たとえば、両刃の剣を使用すると、重い刃のマスターは+3の攻撃と+3のダメージを与えます。
-. This bonus to damage is doubled on a critical hit.; ダメージに対するこのボーナスは、クリティカルヒットで2倍になります。
+. Weapon skill gives you the competency level as an attack bonus and to damage.; 武器のスキルはそれぞれの武器を扱う能力を表し、熟練によりより高い攻撃値（命中性能）やダメージを与えることができます。
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; 例えば、大剣の達人で両手剣を装備している場合、攻撃値とダメージにそれぞれ+3のボーナスが与えられます。
+. This bonus to damage is doubled on a critical hit.; ダメージのボーナスはクリティカルヒットの場合2倍になります。
 /
-. Armour skill gives you the competency level as a defence bonus.; 鎧のスキルは、防御ボーナスとして能力レベルを提供します。
-. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; たとえば、重鎧の専門家は、プレートメールを着ているときに+2の防御力を受け取ります。
-. The defence bonus is the average of the skill levels on each piece of equipped armour.; 防御ボーナスは、装備された各鎧のスキルレベルの平均です。
-. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; 例えば、重鎧の専門家（2）で軽鎧の熟練者（0）の場合、プレートメール（重鎧）と小さな盾（軽鎧）を着用している時は、（2+0）/2で、防御ボーナスは+1になります。
+. Armour skill gives you the competency level as a defence bonus.; 防具のスキルはそれぞれの防具を扱う能力を表し、熟練により強固な防御をもたらします。
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; 例えば、重装防具の熟練者でプレートメイルを装備している場合、防御値に+2のボーナスが与えられます。
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; 防御値のボーナスは、装備している防具に対するスキルレベルの平均値になります。
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; 例えば、重装防具の熟練者（2）で軽装防具の技能者（0）の場合に重装防具のプレートメイルと軽装防具の小さい盾を装備すると、防御値のボーナスは (2+0) / 2 = +1 となります。
 /
-. Skill in schools of magic improves the casting range and has better effects at each competency level.; 鍛えられた魔法のスキルは効果範囲を改善し、それぞれのスキルレベルでより良い効果をもたらします。
-. These skills are practised by learning and casting spells.; これらの魔法スキルは、呪文を学び、唱えることで熟練していきます。
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; 呪文に対応する魔術領域のスキルが上昇すると、呪文の射程が伸びたり、より良い効果を発揮したりできるようになります。
+. These skills are practised by learning and casting spells.; 魔術領域のスキルは魔法書を読んだり呪文を唱えることで向上します。
 
 # Life; ライフ
 . {LifeDefinition}; {LifeDefinition}
-. Your starting life is determined by your race and class plus your constitution modifier.; プレーヤーのライフは、種族とクラスに加えて体力による修正値によって決まります。
-. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; レベルアップすると、プレイヤーのライフは種族、クラスごとのランダムな値に、体力による修正値を加えた値で上昇します。
+. Your starting life is determined by your race and class plus your constitution modifier.; プレイヤーのライフは、種族とクラスに加えて体力による修正値によって決まります。
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; レベルアップすると、プレイヤーのライフは種族とクラスによって決められた範囲内のランダムな値に、体力による修正値を加えた値で上昇します。
 . There are also magical means to increase your life potential.; 魔法のアイテムによってライフの最大値を上げる方法もあります。
 . However, life cannot be increased past the maximum potential plus your constitution score.; しかしながら、ライフは種族とクラスごとに決まった上限と体力による加算以上には成長しません。
 /
@@ -137,7 +137,7 @@
 . Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; ライフは ({LevelCap} - レベル - {CON}による修正値) ターンにつき1ポイント自然回復します。
 . Sleeping improves recovery by halving the number of turns.; 眠っていると、回復に必要なターン数が半分になります。
 . Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; 飢えた状態ではライフの回復量が{StarvationRecoveryRate}ターンにつき1ポイントになってしまいます。
-. Life regeneration guarantees the recovery at one point per turn.; ライフ回復の才能があると、1ターンに1ポイント自然回復します。
+. Life regeneration guarantees the recovery at one point per turn.; ライフ回復の性質があると、1ターンに1ポイント自然回復します。
 . The {inediate} diet slows recovery of life by doubling the number of turns.; 食性が{inediate}の場合、ライフの回復速度は半分になります。
 . When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; 食性が{inediate}かつ{hunger}の性質を持っている場合、ライフは自然回復しません。しかし、この状態でも{life regeneration}があれば通常の食性で性質がない場合と同じ速度で回復します。
 . Active {phasing} prevents the natural recovery of life.; {phasing}の性質を持っている場合、ライフは自然回復しません。
@@ -145,7 +145,7 @@
 # Mana; マナ
 . {ManaDefinition}; {ManaDefinition}
 . There are no adverse effects for exhausting your mana.; マナを使い切った場合、悪影響はありません。
-. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; レベルアップすると、プレイヤーのマナは種族とクラスごとのランダムの値に、見識に応じた修正値を加えた値で上昇します。
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; レベルアップすると、プレイヤーのマナは種族とクラスごとに決められた範囲内のランダムな値に、見識に応じた修正値を加えた値で上昇します。
 . There are also magical means to increase your mana potential.; 魔法のアイテムによってマナの最大値を上げる方法もあります。
 . However, mana cannot be increased past the maximum potential plus your wisdom score.; しかしながら、マナは種族とクラスごとに決まった上限と見識による加算以上には成長しません。
 /
@@ -156,221 +156,223 @@
 . Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; マナは ({LevelCap} - レベル - {WIS}による修正値) ターンにつき1ポイント自然回復します。
 . Sleeping improves recovery by halving the number of turns.; 眠っていると、回復に必要なターン数が半分になります。
 . Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; 飢えた状態ではマナの回復量が{StarvationRecoveryRate}ターンにつき1ポイントになってしまいます。
-. Mana regeneration guarantees the recovery at one point per turn.; マナ回復の才能があると、1ターンに1ポイント自然回復します。
+. Mana regeneration guarantees the recovery at one point per turn.; マナ回復の性質があると、1ターンに1ポイント自然回復します。
 . The {inediate} diet slows recovery of mana by doubling the number of turns; 食性が{inediate}の場合、マナの回復速度は半分になります。
 . When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; 食性が{inediate}かつ{hunger}の性質を持っている場合、マナは自然回復しません。しかし、この状態でも{mana regeneration}があれば通常の食性で性質がない場合と同じ速度で回復します。
 . Active {phasing} prevents the natural recovery of mana.; {phasing}の性質を持っている場合、マナは自然回復しません。
 
-# Nutrition; 栄養
-. Maintaining a food supply is important to avoid starving to death.; 飢え死を避けるためには、食料の供給を維持することが重要です。
-. In desperate or pragmatic times you can eat corpses.; 絶望的または実用的な時は、死体を食べることができます。
+# Nutrition; 食料
+. Maintaining a food supply is important to avoid starving to death.; 餓死しないためには、食料の管理が重要です。
+. In desperate or pragmatic times you can eat corpses.; 他に食べるものが無いとき、食べることで効果を得たい場合はモンスターの死体を食べることもできます。
 
 # Corpses; 死体
-. The bodies of your enemies and allies can be a source of nutrition.; 敵と仲間の体は栄養源になることができます。
-. Many corpses also convey harm and illness but some may impart beneficial talents.; 多くの死体もまた危害と病気を伝えますが、有益な才能を与える死体もあります。
-. Be aware that cannibalism is considered a bad idea even in desperate times.; 共食いは、絶望的な時であっても悪い考えと見なされることに注意してください。
+. The bodies of your enemies and allies can be a source of nutrition.; モンスターや仲間の死体は貴重な栄養源です。
+. Many corpses also convey harm and illness but some may impart beneficial talents.; 死体の多くは食べると病気などの危害を被りますが、中には有益な効果をもたらすものもあります。
+. Be aware that cannibalism is considered a bad idea even in desperate times.; 例え飢えている時であっても、共食いは冒涜的な行いと見なされるので注意してください。
 
-# Encumbrance; 重量
-. Everything you pick up adds to your encumbrance and you may become burdened.; あなたが拾うすべて物があなたの重量に追加され、あなたは負担になるかもしれません。
-. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; これにより動きが遅くなり、ダンジョンの住人の餌食になりやすくなります。
+# Encumbrance; 持てる荷物の重さ
+. Everything you pick up adds to your encumbrance and you may become burdened.; 拾ったアイテムは（ゴールドを除き）荷物の重さとして追加され、持ち過ぎると負担になります。
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; この場合プレイヤーの動きは遅くなり、ダンジョンの住人にとって手頃な獲物になってしまいます。
 /
-` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); 収容能力 = （力の値によって決められた値 - 栄養ペナルティ） x {WeightMultiplier} + ({WeightPercentage} Body Weight)
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); 持てる重さの限界 = (筋力 - 空腹によるペナルティ) x {WeightMultiplier} + (体重の{WeightPercentege})
 
 # Resting; 休憩
-. The camp-fire action button toggles resting.; キャンプファイヤーの形をしたアクションボタンは休憩モードを切り替えます。
-. While resting your life and mana recover at a faster rate.; あなたの生命力と魔力は休ませている間、より速い速度で回復します。
-. Companions will rest when you rest.; 仲間はあなたが休憩すると休憩します。
-. Resting will be interrupted if there is a hostile in your zone.; 認識している空間に敵がいる場合、休憩は中断されます。
+. The camp-fire action button toggles resting.; たき火のアイコンで休憩モードを切り替えます。
+. While resting your life and mana recover at a faster rate.; 休憩している間、キャラクターのライフとマナは素早く回復します。
+. Companions will rest when you rest.; 仲間はあなたが休憩しているとキャラクターの隣のマスまで移動して休憩に入ります。
+. Resting will be interrupted if there is a hostile in your zone.; 視界内に敵が現れた場合、休憩モードは解除されます。
 
 # Searching; 調査
-. The eye action button toggles searching.; 目の形をしたアクションボタンで調査モードを切り替えます。
-. Searching will find secret doors and concealed traps.; 調査すると、秘密のドアと隠された罠が見つかります。（才能がないと時間がかかるかもしれません）
-. Companions will search when you search to help find secrets.; あなたが調査する時、仲間も捜してくれるでしょう。（仲間がいれば）
-. Searching will be interrupted if there is a hostile in your zone.; 認識できる空間に敵がいる場合、調査は中断されます。
+. The eye action button toggles searching.; 目の形をしたアイコンで調査モードを切り替えます。
+. Searching will find secret doors and concealed traps.; 調査していると、秘密の扉や隠された罠が見つかる場合があります。（調査の性質があると見つけやすくなります）
+. Companions will search when you search to help find secrets.; 仲間がいる場合、調査モードに入ると仲間も近くで調査の手伝いをします。
+. Searching will be interrupted if there is a hostile in your zone.; 視界内に敵が現れた場合、調査モードは解除されます。
 
-# Abilities; 能力
-. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; 能力値は6つあります (力、器用さ、体力、知性、知恵、魅力)
-. Your starting ability scores is determined by rolling 4d6 six times.; 開始時の能力値は、各能力で4d6（6面ダイスを4回振る）を６回行います。
-. The lowest roll from each set is dropped giving a score between 3 and 18.; 各能力の最低だった値で、3〜18の値が得られます。
-. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; 最高値は、ヘルプ>職業に表示される初期能力にランダムに割り当てられます。
-. Racial limits are then applied as shown in help > races.; 次に、ヘルプ>種属に示されているように、種属制限が適用されます。
-. Any points that are reduced by racial limits are transferred to another ability.; 種属の制限によって減らされたポイントは、別の能力に移されます。
+# Abilities; 能力値
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; キャラクターには、筋力、技巧、体力、知性、見識、魅力の6つの能力値があります。
+. Your starting ability scores is determined by rolling 4d6 six times.; ゲーム開始時の能力値を決める際、まずd6（6面ダイス）を4つ振り、その中から最も出目の低かった1つを取り除き、残りの3つの出目を合計して3~18の値を得ます。
+. The lowest roll from each set is dropped giving a score between 3 and 18.; これを6回繰り返して6つの値を用意し、それぞれの能力値に割り当てていきます。
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; 各クラスには主要能力値が設定されており、6つの値の内高いものから順にランダムな主要能力値に割り当てられていきます。その後、残った値を残りの能力値にランダムに割り当て、ゲーム開始時の能力値6つが決定されます。
+. Racial limits are then applied as shown in help > races.; 次に種族上限を適用します。（クラスの優先能力値、種族上限はヘルプで確認できます）
+. Any points that are reduced by racial limits are transferred to another ability.; 種族上限を上回る値が能力値に割り当てられた場合、種族上限の数値が適用され、超過分は他の能力値に割り当てられます。
 /
-` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} （{AttributeName}）： {AttributeDescription}
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeName}: {AttributeDescription}
 
 # Karma; カルマ
-. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; カルマは、モンスターを殺すと得られ、神の恩恵を求めたときに費やされます（神社で祈って恩恵を求める）。
-. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; カルマは、中立のモンスターを攻撃したり、味方を殺したりするなど、ダンジョンの悪の住人になることで失われます。
-. You can gain additional karma by donating gold to a priest at a shrine.; 神社の司祭に金を寄付することで、カルマを得ることができます。
-. You can pray at any time by long press/right click on your character.; キャラクターを長押しまたは右クリックすることでいつでも祈ることができます。
-. This will cost {Number} karma and has the following effects:; 祈りには{Number}カルマがかかり、次の効果があります。
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; カルマは、モンスターを殺すことで上昇し、神からご利益を授かる代わりに消費されます。（祈るか、杜で恩恵を受ける）
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; 中立のモンスターを攻撃したり味方を殺したりするなど、ダンジョンにおいてすら咎められる悪い行いをするとカルマが下がります。
+. You can gain additional karma by donating gold to a priest at a shrine.; 杜の司祭にゴールドを寄付することで、カルマが上昇します。
+. You can pray at any time by long press/right click on your character.; キャラクターを長押し、または右クリックで表示されるメニューから祈ることができます。
+. This will cost {Number} karma and has the following effects:; 祈るとカルマを{Number}消費し、以下の効果を得ることができます。
 /
-` karma >= hopeful; カルマ >= 希望が持てる
-`   gain {Number} nutrition when hungry; 空腹時に{Number}の栄養を得る。
-`   unafflict; 争わない。
-`   unpolymorph; 変化しない。
-`   escape from being stuck; 立ち往生からの脱出。
-`   remove punishment; 罰を取り除く。
+` karma >= hopeful; カルマ >= 光明
+`   gain {Number} nutrition when hungry; 空腹の場合満腹度が{Number}回復
+`   unafflict; 災難からの解放
+`   unpolymorph; 変化した姿から元に戻る
+`   escape from being stuck; 立ち往生からの脱出
+`   remove punishment; 天罰からの解放
 /
-` karma >= good; カルマ >= 徳がある
-`   fully healed if less than half life; 生命力が半分未満の場合、完全に回復します。
-`   fully restored if less than half mana; 魔力が半分未満の場合、完全に回復します。
+` karma >= good; カルマ >= 善良
+`   fully healed if less than half life; ライフが半分より下回っていた場合、完全に回復
+`   fully restored if less than half mana; マナが半分より下回っていた場合、完全に回復
 /
-` karma >= glorious; カルマ >= 栄光を持つ
-`   remove blindness; 失明を取り除く。
-`   remove hallucination; 幻覚を取り除く。
-`   remove rage; 怒りを取り除く。
-`   remove sickness; 病気を取り除く。
+` karma >= glorious; カルマ >= 高潔
+`   remove blindness; 失明を取り除く
+`   remove hallucination; 幻覚を取り除く
+`   remove rage; 怒りを取り除く
+`   remove sickness; 病気を取り除く
 /
-` karma >= exalted; カルマ >= 高貴である
-`   remove one curse; 1つの呪いを取り除く。
+` karma >= exalted; カルマ >= 神聖
+`   remove one curse; 呪われたアイテム1つを解呪
 `   raise dead for one loyal companion; 仲間1体を死体から復活させる
 
 # Diets; 食事
-. Entities have different diets that allow them to eat specific materials.; 生物によって食べるものが違い、特定の材料を食べるというさまざまな事情があります。
+. Entities have different diets that allow them to eat specific materials.; プレイヤーやモンスターは種族によって異なる消化系を持ち、特定の素材でできたものしか食べられません。
 /
-` {DietName}: {MaterialNames}; {DietName}： {MaterialNames}
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
 
 # Spells; 呪文
-. Spells are learned by studying from magical books found in the dungeon.; 呪文は、ダンジョンで見つかった魔法の本から学ぶことによって学習されます。
-. Any class can learn spells but only the skilled will use their mana efficiently.; どの職業でも呪文を学ぶことができますが、魔力を効率的に使用できるのは熟練者（スキルを持つ者）からです。
+. Spells are learned by studying from magical books found in the dungeon.; 呪文は、ダンジョンで見つかる魔法書を読むことで覚えることができます。
+. Any class can learn spells but only the skilled will use their mana efficiently.; どのクラスでも呪文を覚えることはできますが、呪文の魔術領域に対するスキルが初心者の場合、呪文を唱えるのにより多くのマナが必要となります。
 
-# Gold; お金
-. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; お金に重さはなく、ダンジョンではいくつかの目的があります。
-. Gold can be traded for items from merchants or donated to priests for karma.; お金は商人とアイテムを交換したり、司祭に寄付することでカルマを増やすことができます。
+# Gold; ゴールド
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; ゴールドは荷物の重量に影響せず、ダンジョンの中ではいくつかの使い道があります。
+. Gold can be traded for items from merchants or donated to priests for karma.; ゴールドは商人とアイテムの売買に使ったり、カルマを得るために司祭等に寄付することができます。
 
 # Companions; 仲間
-. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; 家庭向きの動物は、好きなものを食べさせることで飼いならすことができます（しかし、空腹になりません）。
-. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; 呪われたアイテムや備品（噴水など）を踏むと、猫はニャーと鳴き、犬はウーと鳴きます。
-. You can mount some types of companions and ride around the dungeon.; いくつかのタイプの仲間を騎乗して、ダンジョンを移動することができます。
-. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; あなたの騎獣が時々攻撃を引き継ぎ、時には攻撃の標的になります。
-. Your steed will be the first into any traps so take good care of their well-being.; あなたの騎獣は最初に様々な罠に掛かるので、彼らの幸福に十分注意してください。
-. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 熟練した騎乗者は、騎獣の攻撃と防御の値にスキルボーナスを追加します。
-. A steed is useful when you are burdened and it is strong enough to take your load.; （重さで）負担がかかりそうな時、騎獣に十分な体格があると重量が増えても安心です。
-. To dismount your steed you need to long press/right click on your character.; 騎獣から降りるには、キャラクターを長押しするか、右クリックする必要があります。
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; 中立の動物は、食べられる食料を与えることで仲間にすることができます。（仲間は食料を食べますが、空腹になることはありません）
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; 猫や犬が呪われたアイテムや設備（噴水など）のあるマスに入ると鳴きます。
+. You can mount some types of companions and ride around the dungeon.; いくつかの種類の仲間は騎乗してダンジョンを乗り回すことができます。
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; 騎獣（騎乗されているモンスター）は、時々敵の攻撃を肩代わりしたり、攻撃の目標にされたりします。
+. Your steed will be the first into any traps so take good care of their well-being.; 騎獣は罠の効果を受けることになるため、ライフや耐性などに気を付ける必要があります。
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 騎乗のスキルが技能者以上の場合、騎獣の攻撃・防御が増加します。
+. A steed is useful when you are burdened and it is strong enough to take your load.; 騎獣に十分な筋力と体格があれば、プレイヤーだけで持つには重い持ち物があっても、楽に運ぶことができます。
+. To dismount your steed you need to long press/right click on your character.; 騎獣から降りるには、プレイヤーを長押しするか右クリックします。
 
 # Engulfing; 飲み込み
-. Some entities can swallow or engulf other entities.; 一部の生物は、他の生物を飲み込んだり飲み込んだりできます。
-. When swallowed you will suffer damage each turn and can struggle until you are expelled.; 飲み込むと毎ターンダメージを受け、吐き出されるまで苦労することがあります。
-. Alternatively, there are many mechanisms which can be used to escape.; また、脱出するためにできることが多くあります。
-. It is impossible to fight with your equipped weapons when swallowed.; 飲み込まれた時に装備した武器で戦うことは不可能です。
-. If you cast when engulfed the spell will hit your engulfer.; 飲み込まれた時に魔法を唱えると、呪文に巻き込まれます。
-. However, beams may still bounce off walls and back through your engulfer and also hit you.; ただし、ビームが壁から跳ね返り、飲み込んだ人を通り抜け、またあなたにぶつかることもあります。
+. Some entities can swallow or engulf other entities.; 一部のモンスターは、他のモンスターを飲み込んだり取り込んだりできます。
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; 飲み込まれるとターン毎にダメージを受け、吐き出されるまでもがき続けることになります。
+. Alternatively, there are many mechanisms which can be used to escape.; あるいは、逃れるため多くの手段が用意されています。
+. It is impossible to fight with your equipped weapons when swallowed.; 飲み込まれている時に武器での攻撃はできません。
+. If you cast when engulfed the spell will hit your engulfer.; 飲み込まれている時に唱えた呪文は、飲み込んでいる敵に命中するようになります。
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; ただし、飲み込んだ敵を突き抜けた呪文のビームが壁で跳ね返りまたその的に当たる場合、プレイヤーにも命中します。
 
-# Spawning; 生物の出現について
-. Monsters will randomly spawn into areas outside your current zone.; モンスターは、現在の認識した空間の外側の領域にランダムに出現します。
-. The rate of spawning increases as you descend deeper into the dungeon.; ダンジョンの奥深くになると、出現の割合が増加します。
-. The talent of aggravation also increases the spawn rates for monsters.; 悪化の才能は、モンスターの出現率も増加させます。
+# Spawning; モンスターの生成
+. Monsters will randomly spawn into areas outside your current zone.; モンスターはプレイヤーがいるマス以外の場所にランダムに出現します。
+. The rate of spawning increases as you descend deeper into the dungeon.; ダンジョンの奥深くに行くにつれて、モンスターの出現率が増加します。
+. The talent of aggravation also increases the spawn rates for monsters.; 反感の性質を持っていると、モンスターの出現率が増加します。
 
 # Polymorph; 変化について
-. Transform into another entity with all the advantages or disadvantages that brings.; すべての利点または欠点を備えた別の生物に変化します。
-. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; たとえば、ドラゴンには手がありませんが、飛ぶことができ、致命的なエネルギーのビームを呼吸できます。
-. When you perish in your polymorphed form you will often revert to your original form.; 変化したフォームで消滅すると、多くの場合、元のフォームに戻ります。
-. You can transform into the entity of your choice when you have polymorph control.; 変化制御がある場合、選択した生物に変化できます。
-. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; この制御は、すでに殺すことができた生物に限定され、栄養を消費します。
-. To access polymorph-at-will you need to long press/right click on your character.; 変化するためには、キャラクターを長押しするか、右クリックする必要があります。（変化できる状態で）
+. Transform into another entity with all the advantages or disadvantages that brings.; 他のモンスターに変化すると、そのモンスターの長所と短所がもたらされます。
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; 例えば、ドラゴンには手がない（剣や盾を装備できない）ですが、飛行でき、強力なビームを吐くことができます。
+. When you perish in your polymorphed form you will often revert to your original form.; 変化した姿で死ぬと、多くの場合は元の姿に戻ります。
+. You can transform into the entity of your choice when you have polymorph control.; 変化および変化制御がある場合、自らの意思で任意のモンスターに変化できます。
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; 変化するには満腹度を消費し、既に殺したか食べたことのあるモンスターの姿に限って変化することができます。
+. To access polymorph-at-will you need to long press/right click on your character.; 条件を満たした上で任意で変化するには、キャラクターを長押しするか右クリックします。
 
-# Locks; 施錠
-. Doors and containers can be locked and possibly trapped.; ドアと箱類は施錠され、罠がある可能性があります。
-. You can kick locks to break them but this will trigger any trap.; 蹴ることでそれらを解除することができますが、それにより罠が発動します。
-. Items such as skeleton keys and lock picks can be used to unlock.; スケルトンキーやロックピックなどのアイテムを使用して施錠されているものを解除できます。
-. These items can break and the chance is influenced by your competency with locks.; これらのアイテムは壊れる可能性があり、チャンスは閉開錠の能力に影響されます。
-. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; さらに、呪われたアイテムは壊れる可能性が2倍、祝福されたアイテムは壊れる可能性が半分になります。
-. There are other magical items and spells that can be used to unlock.; 施錠されたものを解除するために、他にも魔法のアイテムと魔法があります。
+# Locks; 錠前
+. Doors and containers can be locked and possibly trapped.; ドアや箱には鍵が掛かっていたり、罠が仕掛けられているかもしれません。
+. You can kick locks to break them but this will trigger any trap.; 蹴ることで錠前ごと破壊することができますが、仕掛けられていた罠が必ず起動します。
+. Items such as skeleton keys and lock picks can be used to unlock.; 万能鍵やピッキング道具などのアイテムを使うことで鍵を解錠できます。（罠付きの箱の解錠に失敗すると、仕掛けられていた罠が起動します）
+. These items can break and the chance is influenced by your competency with locks.; これらの道具は使用すると壊れる可能性があり、その確率は錠前のスキルに影響されます。
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; 加えて、壊れる可能性は呪われた道具では2倍に、祝福された道具では半分になります。
+. There are other magical items and spells that can be used to unlock.; 他にも解錠することができる魔法のアイテムや呪文があります。
 
 # Traps; 罠
-. Traps have a difficulty rating that reflects the lethality of the device.; 罠の難易度は、罠の致命性を反映しています。
-. This difficulty rating is also the minimum dungeon level the trap can be generated.; この難易度は、罠を生成できるダンジョンの最下層でもあります。
-. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 罠を解除するチャンスは、スキルと器用さの修正値に対する罠の難易度から計算されます。
-. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; 手探り、失明、ふらつき、混乱、幻覚などの一時的なものがある場合、罠を解除するのが難しくなります。
-. Untrapping requires you to move into the square.; 罠の武装を解除するには、罠の場所に移動する必要があります。
-. A failure to untrap will cause it to be triggered.; 罠の武装解除に失敗すると、罠が発動されます。
+. Traps have a difficulty rating that reflects the lethality of the device.; 罠にはその危険性を反映した難易度があります。
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; この難易度は、その罠が生成される最も低い階に相当します。
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 罠解除の成功率は、罠の難易度と対するスキルの技能値および技巧による修正値により計算されます。
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; 不器用、盲目、ふらつき、混乱、幻覚などの状態になっている場合、罠の解除がより困難になります。
+. Untrapping requires you to move into the square.; 罠を解除するには、罠のあるマスに移動する必要があります。
+. A failure to untrap will cause it to be triggered.; 罠の解除に失敗すると、その罠が起動します。
 
 # Teleport; 瞬間移動
-. Teleportation transports your character around the current dungeon level.; 瞬間移動は、キャラクターを現在のダンジョン階層のどこかに運びます。
-. When uncontrolled, this is a random event that may help or hinder your journey.; 制御されていない場合、これはあなたの旅を助けるか、または妨げる可能性のあるランダムなイベントです。
-. Controlled teleportation allows you to select on the map your destination location.; 制御された瞬間移動であれば、マップ上で目的地の場所を選択できます。
-. However, each teleportation will cost you nutrition so use it wisely.; ただし、瞬間移動するごとに栄養が必要になるため、賢明に使用してください。
-. To access teleport-at-will you need to long press/right click on your character.; 瞬間移動するには、キャラクターを長押しor右クリックする必要があります。（瞬間移動できる時に）
+. Teleportation transports your character around the current dungeon level.; 瞬間移動の状態は、キャラクターを現在の階層のどこかへ転送します。
+. When uncontrolled, this is a random event that may help or hinder your journey.; 制御できない場合は瞬間移動がランダムに発生し、冒険を助けるか妨げになるでしょう。
+. Controlled teleportation allows you to select on the map your destination location.; 瞬間移動制御の性質を持っていると、マップから任意のタイミングで目的地を選んで瞬間移動できるようになります。
+. However, each teleportation will cost you nutrition so use it wisely.; ただし瞬間移動するたびに満腹度を消費するので、使いどころを考えましょう。
+. To access teleport-at-will you need to long press/right click on your character.; 任意で瞬間移動するには、キャラクターを長押しか右クリックします。
 
 # Dual wielding; 二刀流
-. Dual wielding allows the character to hold two single handed weapons.; 2つ装備することにより、キャラクターは2つの片手武器を保持できます。
-. This allows for two attacks instead of one but the chance of hitting is reduced.; これにより、1回ではなく2回の攻撃が可能になりますが、ヒットする可能性は低くなります。
-. If you are skilled then it is only a -2 to attack on the offhand.; 熟練している場合、利き手ではない方で攻撃するのは-2だけの影響です。
-. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; それ以外の場合（未熟者の場合）、利き手で攻撃する場合は-2、利き手じゃない方で攻撃する場合は-4の影響です。
+. Dual wielding allows the character to hold two single handed weapons.; 二刀流は2つの片手武器を同時に扱うスキルです。
+. This allows for two attacks instead of one but the chance of hitting is reduced.; 1度の攻撃で片方ずつではなく2つの武器で同時に攻撃できるようになりますが、攻撃値は低くなります。
+. If you are skilled then it is only a -2 to attack on the offhand.; スキルが技能者以上の場合、利き手と反対の手に持った武器の攻撃値は2ポイントだけ低下します。
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; スキルを持たない初心者の場合、利き手に持った武器の攻撃値は2ポイント、利き手と反対の手に持った武器の攻撃値は4ポイント低下します。
 
 # Crafting; 製作
-. Items can be scrapped into their raw essence and base material on a workbench.; アイテムは、作業台で未加工のエッセンスと原材料に分解することができます。
-. Essence is the building block of creation and can be extracted from both mundane and magical items.; エッセンスは創造の構成要素であり、ありふれたアイテムと魔法のアイテムの両方から抽出できます。
-. New items can be crafted on a workbench using enough of the base material and essence.; 十分な原材料とエッセンスを使用して、作業台で新しいアイテムを作成できます。
-. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 作業台は、使われていない材料（0 〜 10 のエッセンスと6つのランダムマテリアル 10 〜 200）でと一緒に生成されます。
-. Materials are not transferable between workbenches.; 材料は作業台の間で移動させることができません。
+. Items can be scrapped into their raw essence and base material on a workbench.; アイテムは、作業台でエッセンスと原材料に分解することができます。
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; エッセンスとは万物の見えない基礎のようなもので、物によって得られる量はさまざまですがあらゆるアイテムから抽出することができます。
+. New items can be crafted on a workbench using enough of the base material and essence.; アイテムの制作は、作業台で必要な材料とエッセンスを用いて行います。
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 作業台は、エッセンス（0から10）とランダムな6種類までの材料（10から200）を収めた状態でダンジョンに生成されます。
+. Materials are not transferable between workbenches.; 作業台にある材料を、そのまま別の作業台へ移動させることはできません。
 /
-. The crafting skill influences how much material you gain when scrapping.; 製作スキルは、スクラップする（素材にする）ときに獲得する材料の量に影響します。
-. That is, when unskilled you recover only 50% of the scrapped material.; つまり、熟練していない場合、廃棄された材料の50％しか回収できません。
+. The crafting skill influences how much material you gain when scrapping.; 制作のスキルレベルによって、アイテムを分解した時に得られる材料の量が変わります。
+. That is, when unskilled you recover only 50% of the scrapped material.; スキルを持たない初心者の場合、アイテムが本来持つ材料のうち50%の量しか回収できません。
 /
-` Unskilled  =  50%; 未熟者     =  50％
-` Proficient =  60%; 熟練者     =  60％
-` Specialist =  70%; スペシャリスト =  70％
-` Expert     =  80%; 専門家     =  80％
-` Master     =  90%; マスター     =  90％
-` Champion   = 100%; チャンピオン  = 100％
+` Unskilled  =  50%; 初心者　 = 50%
+` Proficient =  60%; 技能者　 = 60%
+` Specialist =  70%; 専門家　 = 70%
+` Expert     =  80%; 熟練者　 = 80%
+` Master     =  90%; 達人　　 = 90%
+` Champion   = 100%; 天下第一 = 100%
 /
-. The crafting skill influences how much material you need when crafting.; 製作スキルは、製作時に必要な材料の量に影響します。
-. That is, when unskilled you need 150% of the required material to craft an item.; つまり、熟練していない場合、アイテムを製作するために必要な材料の150％が必要です。
+. The crafting skill influences how much material you need when crafting.; 制作のスキルレベルによって、アイテムの制作に必要となる材料の量が変わります。
+. That is, when unskilled you need 150% of the required material to craft an item.; 初心者の場合、アイテムを制作するために150%の材料が必要になります。
 /
-` Unskilled  = 150%; 未熟者     = 150％
-` Proficient = 140%; 熟練者     = 140％
-` Specialist = 130%; スペシャリスト = 130％
-` Expert     = 120%; 専門家     = 120％
-` Master     = 110%; マスター     = 110％
-` Champion   = 100%; チャンピオン  = 100％
+` Unskilled  = 150%; 初心者　 = 150%
+` Proficient = 140%; 技能者　 = 140%
+` Specialist = 130%; 専門家　 = 130%
+` Expert     = 120%; 熟練者　 = 120%
+` Master     = 110%; 達人　　 = 110%
+` Champion   = 100%; 天下第一 = 100%
 
-# Enchantment; 魔法付与
-. Weapons and armour have a modifier that can be changed with enchantment magic.; 武器と防具には、魔力付与の魔法で変更できる修正値があります。
-. The modifier is limited to between {Min} and {Max}.; 修正値は{Min}〜{Max}に制限されています。
-. A modifier of +0 is a normal, mundane item.; +0 の修正値ということは、通常のありふれたアイテムということです。
-. Modifiers on armour apply to your defence score.; 防具の修正値は防御値に適用されます。
-. Modifiers on weapons apply to your attack and damage scores.; 武器の修正値は、攻撃とダメージの値に適用されます。
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; {Min}または{Max}を超えて魔力付与しようとすると、アイテムが破壊されます。
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; アーティファクトは{Modifier}まで強化することができ、それを超えて強化しようとすると修正値が0に戻ります。
-. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 錫の笛を魔法の笛にするなど、アイテムをアップグレードすることもできます。
+# Enchantment; 魔力付与
+. Weapons and armour have a modifier that can be changed with enchantment magic.; 武器と防具には修正値があり、魔力付与の巻物や恩恵によって増減します。
+. A modifier of +0 is a normal, mundane item.; 修正値が+0のアイテムは、通常の強化されていない状態を指します。
+. Modifiers on armour apply to your defence score.; 防具の修正値は防御値に影響します。
+. Modifiers on weapons apply to your attack and damage scores.; 武器の修正値は攻撃値とダメージに影響します。
+/
+. The {grade} items are limited to between {Min} and {Max}.; 階級が「{grade}」のアイテムは、修正値が{Min}から{Max}に制限されています。
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 階級が「{grade}」のアイテムは、{Modifier}まで強化することができ、それを超えて強化しようとすると修正値が0に戻ります。
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 制限を超えて{grade}のアイテムを魔力付与しようとすると、アイテムが破壊されてしまいます。
+/
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 錫のホイッスルを魔法のホイッスルにするなど、アイテムをアップグレードすることもできます。
 
-# Punishments; 罰
-. This severe curse can be gained by magical means or misconduct.; この厳しい呪いは、魔法の手段または品行の悪い行為によって獲得できます。
-. There is a chance of being punished each time your karma dips below zero.; カルマが0未満になるたびに処罰される可能性があります。
-. Only one punishment can be active at one time.; 一度に効果を発揮する罰は1つだけです。
-. A punishment can be released with any remove curse magic.; 罰は、呪いを解く魔法で解放できます。
+# Punishments; 天罰
+. This severe curse can be gained by magical means or misconduct.; この容赦のない呪いは、魔法の効果や（共食いなどの）冒涜的な行いによってもたらされます。
+. There is a chance of being punished each time your karma dips below zero.; カルマが0未満になるたびに天罰を受ける可能性があります。
+. Only one punishment can be active at one time.; 同時に複数の天罰を受けることはありません。
+. A punishment can be released with any remove curse magic.; 解呪の呪文や巻物などによって天罰から解放されることができます。
 
-# Charming & taming; 魅了＆仲間にする
-. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; 自分のレベルとターゲット生物レベルの差は、忠誠を持つ期間を増減する割合として使用されます。
-. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; たとえば、レベル10でレベル20の生物を魅力している場合、忠誠はリストされている期間の半分にすぎません。
-. The charisma bonus for you and the target entity also modifies this relative percentage.; あなたと対象の生物の魅力ボーナスもこの相対的な割合を変更します。
-. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; 例えば、魅力18（+4）のレベル4は、レベル8で使う魅了の魔法のようなを意味を持ちます。
+# Charming & taming; 魅了して仲間にする
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; キャラクターとモンスターのレベルの比は、仲間になる期間が割合で増減されるよう影響します。
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; 例えば、レベル10でレベル20のモンスターを魅了する場合、（呪文などのヘルプに）表示されている半分の期間しか仲間になりません。
+. The charisma bonus for you and the target entity also modifies this relative percentage.; あなたと相手のモンスターの魅力ボーナスも、この割合に影響します。
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; 例えば、レベル4で魅力が18（+4）の時に魅了の呪文を唱えると、レベル8で魅力が10（+0）の時に唱えた場合と同じ効果があります。
 
 # Death; 死
-. There are seven mechanics for death:; 死ぬきっかけの要素は7つあります。
+. There are seven mechanics for death:; 死に至る要素は7つあります。
 /
-* life points reaches zero; 生命力が0になる。
-* any ability score reaches zero; どれかの能力値が0になる
-* starvation; 飢える
-* death effect (eg. wand of death); 死の影響（例：死の杖）
+* life points reaches zero; ライフが0以下になる
+* any ability score reaches zero; 能力値のいずれかが0になる
+* starvation; 餓死
+* death effect (eg. wand of death); 死の効果（例: 死の杖）
 * genocide; 虐殺される
 * incarceration (eg. turned into a statue); 石に閉じ込められる（例：石像にされる）
 * decapitation (eg. vorpal attacks); 首を切り落とされる（例：ヴォーパル・ブレードでの攻撃）
 
-# Revenants; レヴナント
-. Upon your death there is a 50% chance of creating a revenant on the current level.; 死亡すると、その死亡した階層で50％の確率でレヴナントが作成されます。
-. When you go down stairs there is a 50% chance of encountering this revenant.; 階段を降りると、このレヴナントに遭遇する可能性は50％です。
-. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; レヴナントは、武器と防具をすべて装備した、かつての自己の生き返った敵対的なバージョンです。
-. They will be as tough as you were at full health and may be quite challenging at times.; 彼らはあなたが完全な健康状態にあるのと同じくらいタフであり、時には非常に挑戦的かもしれません。
-. It is possible to die on a revenant level and your next character may have two revenants to deal with.; レヴナントが発生している階層で死ぬことは可能であり、あなたの次のキャラクターは2人のレヴナントがいる場合があります。
-. Level 1 will never create a revenant.; 1階では決してレヴナントは発生しません。
+# Revenants; プレイヤーの黄泉帰り
+. Upon your death there is a 50% chance of creating a revenant on the current level.; プレイヤーが死亡すると、50%の確率でその階層に黄泉帰りが作成されます。
+. When you go down stairs there is a 50% chance of encountering this revenant.; 階段を降りたとき、50%の確率でこの黄泉帰りが配置されます。
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; プレイヤーの黄泉帰りとは、死亡時と同じ武器と防具を全て装備し、死後の世界から敵として帰ってきた姿です。
+. They will be as tough as you were at full health and may be quite challenging at times.; 彼らは生前と同じライフや能力を持ち、強敵となる場合があります。
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; 黄泉帰りがいる階層で死んでしまい、別なキャラクターの冒険では2体の黄泉帰りを相手しないといけない可能性もあります。
+. Level 1 will never create a revenant.; ダンジョンの地下1階では決してプレイヤーの黄泉帰りは出現しません。
 
 # Fame; 名声
 . Fame is calculated by the following formula.; 名声は次の式で計算されます。
 /
-` = Maximum Depth x {Multiplier}; = 探索されたダンジョンの階層 x {Multiplier}
+` = Maximum Depth x {Multiplier}; = 到達階数 x {Multiplier}
 ` + Explored Maps x {Multiplier}; + 訪れたマップの数 x {Multiplier}
 ` + Visited Locations x {Multiplier}; + 訪れた場所の数 x {Multiplier}（洞窟や屋根裏など）
 ` + Discovered Items x {Multiplier}; + 発見したアイテムの数 x {Multiplier}
@@ -379,38 +381,38 @@
 ` + Earned Experience (capped to {Cap}); + 獲得経験値（上限{Cap}）
 ` + Development Level x {Multiplier}; + キャラクターのレベル x {Multiplier}
 ` + Practised Skills x {Multiplier}; + スキルの技能値 x {Multiplier}
-` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + 学習した魔法 x {Multiplier} （基礎消費魔力の合計 x 習熟レベル）
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + 学んだ呪文 x {Multiplier}（呪文の基本マナ消費量の合計 x 呪文の技能とefficiencyから成る習熟レベル）
 ` + Increased Life x {Multiplier}; + 成長したライフの値 x {Multiplier}
 ` + Increased Mana x {Multiplier}; + 成長したマナの値 x {Multiplier}
 ` + Adjusted Attributes x {Multiplier}; + 上昇した能力値 x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + 保有している性質の数 x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + 獲得した耐性 (%) x {Multiplier}
-` + Total Inventory Worth (in gold); + 持ち物全ての価値（お金も）
+` + Total Inventory Worth (in gold); + 獲得したアイテムとゴールドの価値
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; 持ち物全ての価値は、その他要素からなる名声の値を超えないよう制限されます。
 
-# Resurrect and continue; 復活して続行します。
-. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; このオプション機能は、キャラクターが一見不公平または不運な死をしたときに役立ちます。
-. You may learn that your character was not viable and death comes quick again.; あなたのキャラクターが実行可能ではなく、死がまた早く来ることを知るかもしれません。
-. You can resurrect infinitely but all your achieved fame will be reset to zero.; あなたは無限に復活させることができますが、達成されたすべての名声はゼロにリセットされます。
-. Fame achieved subsequent to your resurrection will contribute to your score.; 復活後に達成された名声はあなたのスコアに貢献します。
-. This is similar to the 'explorer mode' from the original Nethack.; これは、オリジナルのNethackの「エクスプローラモード」に似ています。
+# Resurrect and continue; 死からの復活と続行
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; この要素は、キャラクターが一見不公平または不運な死に見舞われた場合の救済措置です。
+. You may learn that your character was not viable and death comes quick again.; 復活しても強敵がすぐ近くにいるなどの状況から生き残れず、またすぐに死んでしまうこともあります。
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; 何度でも復活することができますが、復活すると獲得してきた名声が0に戻ってしまいます。
+. Fame achieved subsequent to your resurrection will contribute to your score.; 復活した後に得た名声はスコアとして集計されます。
+. This is similar to the 'explorer mode' from the original Nethack.; これはオリジナルのNethackにおける「エクスプローラーモード」の様なものです。
 
 # Multiplayer; マルチプレイヤー
-. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; マルチプレイヤーは、作られたプラットフォームの「graphical telnet」テクノロジーに基づいています。
-. This means the game is executed on the server and the user interface is projected to each of the clients.; これは、ゲームがサーバーで実行され、ユーザーインターフェイスが各クライアントに投影されることを意味します。
-. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; 通信はTCP / IPに基づいているため、WIFI / LANおよびインターネットでプレイできます。
-. This technology only works well with low latency (less than 30ms ping should be playable).; このテクノロジーは、低レイテンシーでのみ機能します（30ms未満のpingが再生可能である必要があります）。
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; マルチプレイヤーは、Inventionプラットフォームの「graphical telnet」テクノロジーを基にしています。
+. This means the game is executed on the server and the user interface is projected to each of the clients.; これは、ゲームがサーバー上で実行され、それぞれのクライアントにユーザーインターフェースが映し出される仕組みです。
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; TCP/IP通信に基づいているため、同じWIFI/LAN内や、インターネットを通じてプレーすることができます。
+. This technology only works well with low latency (less than 30ms ping should be playable).; この技術は低遅延でのみ快適に動作します。（通信の応答速度が30ミリ秒未満である必要があります）
 /
-. One player needs to be the server and HOST the game.; 1人のプレイヤーがサーバーになり、ゲームをホストする必要があります。
-. All other players are clients and JOIN the game.; 他のすべてのプレーヤーはクライアントであり、ゲームに参加します。
+. One player needs to be the server and HOST the game.; 参加するプレイヤーのうち1人が「ホスト」を選択して、サーバー役になる必要があります。（ホストもゲームをプレーすることができます）
+. All other players are clients and JOIN the game.; 他の全てのプレイヤーは、「参加」を選択してクライアントとしてゲームに参加します。（ゲームのバージョンがサーバーと同じである必要があります）
 /
-. The server player will need to look up their IP address in device network settings and share with the client players.; サーバープレーヤーは、デバイスネットワーク設定でIPアドレスを検索し、クライアントプレーヤーと共有する必要があります。
-. Firewall settings and port forwarding may be required when playing over the internet.; インターネットでプレイする場合、ファイアウォール設定とポート転送が必要になる場合があります。
+. The server player will need to look up their IP address in device network settings and share with the client players.; サーバー役のプレイヤーは（PCやルーターなど）通信機器の設定から自分のIPアドレスを確認し、クライアントとして接続するプレイヤーに伝える必要があります。
+. Firewall settings and port forwarding may be required when playing over the internet.; インターネットを通じてプレーする場合、（ルーターなどで）ファイアウォールおよびポートフォワーディングの設定が必要になる場合があります。
 /
-. The HOST can use 3717 and tap CONNECT.; ホストは3717を使用して[接続]をタップできます。
-. The other players JOIN by typing in the host's IP Address and the port.; 他のプレイヤーは、ホストのIPアドレスとポートを入力して参加します。
-. For example: 192.168.1.5:3717; 例： 192.168.1.5:3717
+. The HOST can use 3717 and tap CONNECT.; 「ホスト」を選択してサーバー役になる場合、ポート番号（既定値3717）を入力して「CONNECT」を選択します。
+. The other players JOIN by typing in the host's IP Address and the port.; 「参加」を選択してクライアントとして接続する場合、ホストのIPアドレスとポート番号を入力して「CONNECT」を選択します。
+. For example: 192.168.1.5:3717; 例：192.168.1.5:3717
 
 # Translations; 翻訳
 . The language translations have been contributed by a number of dedicated players.; 言語翻訳は、多くの熱心なプレイヤーによって提供されています。
@@ -420,27 +422,27 @@
 . Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; 新しい翻訳の提供、既存の翻訳の維持、または修正の提出を希望する場合は、開発者に連絡してください。
 
 # Master mode; マスターモード
-. This is a cheat mode for more quickly learning the secrets of Pathos.; これは、パトスの秘密をより素早く学ぶためのチートモードです。
-. Any adventures in this mode will not be tracked in the hall of fame.; このモードでの冒険は、殿堂では追跡されません。
+. This is a cheat mode for more quickly learning the secrets of Pathos.; これは、Pathosの仕組みを自由に試すことができるチートモードです。
+. Any adventures in this mode will not be tracked in the hall of fame.; このモードを有効にした場合、冒険の足跡は名誉の殿堂に記されません。
 /
-- ` | open master console (more commands); ` | マスターコンソールを開く（その他のコマンド）
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | このゾーンの暗闇
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | 出現し、ランダムな飲み込みに飲み込まれる
-- shift + F | all adjacent enemies are charmed; shift + F | 隣接するすべての敵は魅力的です
+- ` | open master console (more commands); @ | マスターコンソールを開く（追加のコマンドメニューを表示）
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 周囲を暗闇にする
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | 飲み込みを行うランダムなモンスターを生成し、飲み込まれる
+- shift + F | all adjacent enemies are charmed; shift + F | 隣接する全ての敵を魅了する
 - shift + G | gain 1000 gold; shift + G | 1000ゴールドを獲得
-- shift + I | identify all items on the floor; shift + I | フロア上のすべてのアイテムを識別します
+- shift + I | identify all items on the floor; shift + I | 床の上のすべてのアイテムを識別
 - shift + W | jump at will; shift + W | 意のままにジャンプします
-- shift + D | light this zone; shift + D | このゾーンを点灯します
-- shift + M | reveal the entire map; shift + M | マップ全体を明らかにします
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | すべてのレベルのマップを明らかにします
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | ダンジョンをワープします（エンドゲームマップが変換されます）
-- shift + P | polymorph into any entity; shift + P | 任意の生物への多形
-- shift + T | teleport to a target zone; shift + T | ターゲットゾーンにテレポートします
+- shift + D | light this zone; shift + D | 周囲を明るくする
+- shift + M | reveal the entire map; shift + M | 現在いる階層のマップを公開
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 全てのマップを公開
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | ダンジョンを変容
+- shift + P | polymorph into any entity; shift + P | 任意のモンスターへ変化
+- shift + T | teleport to a target zone; shift + T | 指定した領域へ瞬間移動
 - shift + Z | learn all spells; shift + Z | すべての呪文を学ぶ
-- ! | toggle auto-use mode (step on a square and you will use all items); ！ | 自動使用モードを切り替えます（そのマス目に足を踏み入れると、すべてのアイテムが使用されます）
-- < | ascend to the previous dungeon level (even when not on a staircase); < | 前のダンジョンレベルまで上昇します（階段上にない場合でも）
-- > | descend to the next dungeon level (even when not on a staircase); > | 次のダンジョンレベルに下ります（階段上にない場合でも）
-- F5 | refresh the screen; F5 | 画面を更新します
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | 自動使用モードのオン・オフ（あるマスに進むと、マス上の全てのアイテムを使用します）
+- < | ascend to the previous dungeon level (even when not on a staircase); < | 1つ上の階層へ昇る（階段の上にいない場合も可能）
+- > | descend to the next dungeon level (even when not on a staircase); > | 1つ下の階層へ降りる（階段の上にいない場合も可能）
+- F5 | refresh the screen; F5 | 画面表示を更新
 - F9 | quick load; F9 | クイックロード
 /
-. There are additional manipulations built into the character panel and contextual help.; キャラクターパネルとコンテキストヘルプには、追加の操作が組み込まれています。
+. There are additional manipulations built into the character panel and contextual help.; キャラクターパネルとアイテムやモンスターなどのヘルプには、マスターモード専用のコマンドが追加されています。

@@ -115,6 +115,9 @@ namespace Pathos
       Register.Alias(crystal_door_closed_horizontal, "crystal door closed");
       Register.Alias(crystal_door_locked_horizontal, "crystal door locked");
       Register.Alias(crystal_door_trapped_horizontal, "crystal door trapped");
+
+      // Icons.
+      Register.Alias(appetite, "apetite");
     }
 
     internal Glyph GetGlyph(string Name)
@@ -149,6 +152,24 @@ namespace Pathos
     public readonly Glyph acid_explosion_top_left;
     public readonly Glyph acid_explosion_top_right;
     public readonly Glyph acid_trap;
+
+    public readonly Glyph adamantine_golem;
+    public readonly Glyph adamantine_bow;
+    public readonly Glyph adamantine_arrow;
+    public readonly Glyph adamantine_axe;
+    //public readonly Glyph adamantine_bident;
+    public readonly Glyph adamantine_greataxe;
+    public readonly Glyph adamantine_greatsword;
+    public readonly Glyph adamantine_dagger;
+    public readonly Glyph adamantine_long_sword;
+    public readonly Glyph adamantine_plate_mail;
+    public readonly Glyph adamantine_rapier;
+    public readonly Glyph adamantine_sabre;
+    public readonly Glyph adamantine_short_sword;
+    public readonly Glyph adamantine_spear;
+    public readonly Glyph adamantine_staff;
+    public readonly Glyph adamantine_twohanded_sword;
+
     public readonly Glyph toxic_trap;
     public readonly Glyph acid_worm;
     public readonly Glyph acolyte;
@@ -466,6 +487,8 @@ namespace Pathos
     public readonly Glyph cold_beam_forward_slant;
     public readonly Glyph cold_beam_horizontal;
     public readonly Glyph cold_beam_vertical;
+    public readonly Glyph Brumstyk;
+    public readonly Glyph Miserus;
     public readonly Glyph Colossal_Excavator;
     public readonly Glyph Colonel_Blood;
     public readonly Glyph cone_of_cold_spell;
@@ -926,6 +949,7 @@ namespace Pathos
     public readonly Glyph lizardman_male_bard;
     public readonly Glyph lizardman_male_caveman;
     public readonly Glyph lizardman_male_gladiator;
+    public readonly Glyph lizardman_male_jester;
     public readonly Glyph lizardman_male_knight;
     public readonly Glyph lizardman_male_ninja;
     public readonly Glyph lizardman_male_pirate;
@@ -939,6 +963,7 @@ namespace Pathos
 
     public readonly Glyph lizardman_female_barbarian;
     public readonly Glyph lizardman_female_caveman;
+    public readonly Glyph lizardman_female_jester;
     public readonly Glyph lizardman_female_knight;
     public readonly Glyph lizardman_female_ninja;
     public readonly Glyph lizardman_female_priest;
@@ -975,14 +1000,22 @@ namespace Pathos
     public readonly Glyph orc_female_wizard;
 
     // satyr.
+    public readonly Glyph satyr_male_bard;
+    public readonly Glyph satyr_male_caveman;
     public readonly Glyph satyr_male_convict;
     public readonly Glyph satyr_male_druid;
+    public readonly Glyph satyr_male_explorer;
     public readonly Glyph satyr_male_gladiator;
+    public readonly Glyph satyr_male_gunslinger;
+    public readonly Glyph satyr_male_jester;
     public readonly Glyph satyr_male_necromancer;
     public readonly Glyph satyr_male_knight;
+    public readonly Glyph satyr_male_paladin;
+    public readonly Glyph satyr_male_pirate;
     public readonly Glyph satyr_male_ranger;
     public readonly Glyph satyr_male_reaver;
     public readonly Glyph satyr_male_shaman;
+    public readonly Glyph satyr_male_tinker;
     public readonly Glyph satyr_male_wizard;
 
     public readonly Glyph satyr_female_convict;
@@ -1594,6 +1627,7 @@ namespace Pathos
     public readonly Glyph rancid_jelly;
     public readonly Glyph ranseur;
     public readonly Glyph rapier;
+    public readonly Glyph sabre;
     public readonly Glyph rat_king;
     public readonly Glyph Ravenbow;
     public readonly Glyph fledgling_raven;
@@ -2336,7 +2370,7 @@ namespace Pathos
     public readonly Glyph thirst_punishment;
     public readonly Glyph wanted_punishment;
 
-    public readonly Glyph apetite;
+    public readonly Glyph appetite;
     public readonly Glyph standing;
 
     public readonly Glyph artifact_icon;
@@ -2354,6 +2388,7 @@ namespace Pathos
     public readonly Glyph fixture_icon;
     public readonly Glyph floor_icon;
     public readonly Glyph gate_icon;
+    public readonly Glyph volatile_icon;
     public readonly Glyph inventory_icon;
     public readonly Glyph journal_icon;
     public readonly Glyph light_icon;
@@ -2509,6 +2544,12 @@ namespace Pathos
     public readonly Glyph interrupt;
     public readonly Glyph shroud;
     public readonly Glyph statue_base;
+
+    public readonly Glyph blaze;
+    public readonly Glyph scorch;
+    public readonly Glyph freeze;
+    public readonly Glyph electricity;
+    public readonly Glyph steam;
 #pragma warning restore 0649
 
     public Glyph Add(string Name) => Register.Add(Name);

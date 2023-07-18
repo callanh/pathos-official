@@ -36,16 +36,12 @@ AnatomyName,mind,
 AnatomyName,mounted,binildi
 AnatomyName,thermal,
 AnatomyName,voice,
-ApetiteName,content,memnun
-ApetiteName,hungry,aç
-ApetiteName,satiated,tok
-ApetiteName,starving,açlıktan ölüyor
-ApetiteName,weak,zayıf
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Önü açık ve göğüsten toka ile bağlanan uzun bir pelerin.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Kısa ama dayanıklı gözüken mitril bir zırh.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Dar ve zarif gözüken mitril bir zırh.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Dar ve cilalı gözüken mitril bir zırh.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Ay ve yıldızlarla dekore edilmiş klasik bir büyücü şapkası.
+AppearanceName,adamantine staff,
 AppearanceName,agate ring,akik yüzük
 AppearanceName,aluminium wand,alüminyum asa
 AppearanceName,angled poleaxe,kargılı balta
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,küre tılsım
 AppearanceName,spiked wand,dikenli asa
 AppearanceName,spotted book,benekli kitap
 AppearanceName,square amulet,kare tılsım
-AppearanceName,staff,değnek
 AppearanceName,stained book,lekeli kitap
 AppearanceName,steel boots,çelik ayakkabı
 AppearanceName,steel ring,çelik yüzük
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,sarı mücevher
 AppearanceName,yellow potion,sarı iksir
 AppearanceName,yellowish brown gem,sarımsı kahverengi mücevher
 AppearanceName,zinc wand,çinko asa
+AppetiteName,content,memnun
+AppetiteName,hungry,aç
+AppetiteName,satiated,tok
+AppetiteName,starving,açlıktan ölüyor
+AppetiteName,weak,zayıf
 AttackType,bite,ısır
 AttackType,blast,patlat
 AttackType,breath,nefes
@@ -836,6 +836,7 @@ CounterName,captures,yakalar
 CounterName,casts,kullanır
 CounterName,chants,ilahi
 CounterName,constructs,inşa
+CounterName,copies,
 CounterName,crafts,üretir
 CounterName,decapitations,
 CounterName,digs,kazar
@@ -854,6 +855,7 @@ CounterName,jumps,
 CounterName,kicks,
 CounterName,lifesaves,
 CounterName,mimics,
+CounterName,mounts,
 CounterName,moves,
 CounterName,opens,
 CounterName,packs,
@@ -970,7 +972,6 @@ EffectProperty,lies,yalanlar
 EffectProperty,loyal only,
 EffectProperty,material,malzeme
 EffectProperty,materials,malzemeler
-EffectProperty,objects,objeler
 EffectProperty,polite,nazik
 EffectProperty,properties,nitelikler
 EffectProperty,punishments,cezalar
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,rastgele yeteneği kaldır
 EffectProperty,removes all transients,geçici olan her şeyi kaldırır
 EffectProperty,reset random equipment,rastgele bir teçhizatı yenile
 EffectProperty,reveal,açiğa kavuştur
-EffectProperty,revenants,hortlaklar
 EffectProperty,sanctity,kutsallık
 EffectProperty,skills,beceriler
 EffectProperty,source,kaynak
@@ -998,7 +998,6 @@ EffectProperty,whole stack,
 EffectType,afflict,bela et
 EffectType,alert,dikkat çek
 EffectType,amnesia,hafızayı kaybet
-EffectType,animate,hareketlendir
 EffectType,area transient,alan geçici
 EffectType,assess,değer biç
 EffectType,blinking,sıçramak
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,kayayı dönüştür
 EffectType,convert door,kapıyı dönüştür
 EffectType,convert fixture,möble dönüştür
 EffectType,convert floor,zemini dönüştür
+EffectType,convert spill,
 EffectType,convert wall,duvarı dönüştür
 EffectType,create boulder,kaya oluştur
 EffectType,create fixture,möble yarat
 EffectType,create golem,golem oluştur
 EffectType,create horde,ordu yarat
 EffectType,create nook,kuytu köşe yarat
+EffectType,create spill,
 EffectType,create trap,tuzak yarat
 EffectType,create wall,duvar yarat
 EffectType,decapitate,uzuv kaybet
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,varlığı efsunla
 EffectType,engulf,yut
 EffectType,enlightenment,aydınlat
 EffectType,exchange,değiş
+EffectType,extinguish spill,
 EffectType,gain level,seviye kazan
 EffectType,gain skill,beceri kazan
 EffectType,genocide,soykırım
@@ -1064,6 +1066,7 @@ EffectType,raise dead,ölüyü canlandırma
 EffectType,recall,geri çağır
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
+EffectType,remove spill,
 EffectType,remove transient,geçici etkileri kaldır
 EffectType,replicate asset,varlığı kopyala
 EffectType,restock,tekrar doldur
@@ -1165,6 +1168,7 @@ EntityName,abbot,başrahip
 EntityName,acid blob,asit birikintisi
 EntityName,acid worm,asit solucan
 EntityName,acolyte,rahip yardımcısı
+EntityName,adamantine golem,
 EntityName,adult black dragon,yetişkin siyah ejderha
 EntityName,adult blue dragon,yetişkin mavi ejderha
 EntityName,adult deep dragon,yetişkin koyu ejderi
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} Inventory,{CharacterName} envanteri
-FormatText,{CharacterName} is {ApetiteName},{CharacterName} {ApetiteName}
+FormatText,{CharacterName} is {AppetiteName},{CharacterName} {AppetiteName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} {StandingName} hissediyor
 FormatText,{CharacterName} is no longer stuck,{CharacterName} artık sıkışık değil
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} artık {SkillName} dalında {QualificationName}
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName} 'ı hang
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName} 'ı hangi eşyayla {MotionPresentName} ?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{FeatureName} hangi yöne {MotionPresentName} ?
 FormatText,{MotionPresentName} which item on {FeatureName}?,Hangi eşyayı {FeatureName} üzerinde {MotionPresentName}?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} kullan
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2124,6 +2129,7 @@ FormatText,unless resists {ElementName},{ElementName} 'a dayanmazsa
 FormatText,unless target has {PropertyName},
 FormatText,versus {Something},düello {Something}
 FormatText,when {Chance},{Chance} olduğunda
+FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME}olduğunda
 FormatText,when {KINDNAMES},{KINDNAMES}olduğunda
 FormatText,when {MATERIALNAME},{MATERIALNAME}olduğunda
@@ -2148,6 +2154,9 @@ GenderName,neuter,cinsiyetsiz
 GenderName,non-binary,
 GenerationType,module,
 GenerationType,quest,
+GradeName,artifact,eser
+GradeName,exotic,
+GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Soğuk taş yüzeyi usta eller tarafından kazılmış ama zamanla hasar görmüş.
 GroundName,chasm,
 GroundName,dirt floor,toprak zemin
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",
 ItemDescription,A compact hand-held firearm.,
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",
+ItemDescription,A curved single-edged blade often used by cavalry.,
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,
 ItemDescription,Zapping it at a wall creates a big tunnel.,Bir duvara karşı kullanmak büyük bir tünel açar.
+ItemName,adamantine arrow,
+ItemName,adamantine axe,
+ItemName,adamantine bow,
+ItemName,adamantine dagger,
+ItemName,adamantine greataxe,
+ItemName,adamantine greatsword,
+ItemName,adamantine long sword,
+ItemName,adamantine plate mail,
+ItemName,adamantine rapier,
+ItemName,adamantine sabre,
+ItemName,adamantine short sword,
+ItemName,adamantine spear,
+ItemName,adamantine two-handed sword,
 ItemName,agate,akik
 ItemName,aklys,aklis
 ItemName,alchemy smock,simyacı önlüğü
@@ -2372,6 +2395,7 @@ ItemName,banana,muz
 ItemName,banded mail,bağlı zırh
 ItemName,bardiche,bardiche
 ItemName,battle robe,
+ItemName,battle staff,
 ItemName,battle-axe,savaş baltası
 ItemName,beartrap,ayı tuzağı
 ItemName,bec de corbin,bec de corbin
@@ -2459,6 +2483,7 @@ ItemName,brass knuckles,
 ItemName,broadsword,geniş kılıç
 ItemName,bronze bell,tunç çan
 ItemName,bronze plate mail,tunç plaka zırh
+ItemName,Brumstyk,
 ItemName,bullet,mermi
 ItemName,bullwhip,kırbaç
 ItemName,caltrops,boğadikeni
@@ -2657,6 +2682,7 @@ ItemName,meat stick,etten çubuk
 ItemName,meatball,köfte
 ItemName,melon,kavun
 ItemName,Mirrorbright,Aynaparlağı
+ItemName,Miserus,
 ItemName,mithril arrow,
 ItemName,mithril barding,
 ItemName,mithril battle-axe,
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,
 ItemName,ruby,yakut
 ItemName,Ruby Key,yakut yüzük
 ItemName,Runesword,rünlü kılıç
+ItemName,sabre,
 ItemName,sack,torba
 ItemName,saddle,eyer
 ItemName,sai,
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,ateşli silah yasağı
 LiteralText,ABOUT,HAKKINDA
 LiteralText,About Pathos,Pathos hakkında
 LiteralText,Abyss,boşluk
-LiteralText,accelerated animations,hızlandırılmış animasyonlar
 LiteralText,accelerated resting,hızlandırılmış dinlenme
 LiteralText,actions,aksiyon
 LiteralText,ADD LEVEL,SEVİYE EKLE
@@ -3082,10 +3108,11 @@ LiteralText,ALL,HEPSİ
 LiteralText,ALL AT ONCE,HEPSİ BİRDEN
 LiteralText,always,her zaman
 LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
-LiteralText,AMMO,CEPHANE
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
 LiteralText,anatomy,anatomi
+LiteralText,animate mount,
+LiteralText,animate revenant,hortlaklar hareketlendir
 LiteralText,ANONYMOUS,İSİMSİZ
 LiteralText,anticlockwise 90 degrees,saatin tersinde 90 derece
 LiteralText,any item,herhangi bir eşya
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,Bu karakteri kaybedip maceranı bitirmek istediğine emin misin?
 LiteralText,ARE YOU SURE?,EMİN MİSİN?
 LiteralText,area of effect,alan etkisi
-LiteralText,artifact,eser
 LiteralText,ARTIFACTS,ESERLER
 LiteralText,ASCEND TO PREVIOUS LEVEL,BİR ÖNCEKİ SEVİYEYE YÜKSEL
-LiteralText,asleep,uyuyakalmak
 LiteralText,assets,teçhizatlar
 LiteralText,ATMOSPHERE,ATMOSFER
 LiteralText,attack modifier,saldırı düzenleyici
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,beta muhabbeti
 LiteralText,Black background,Siyah arkaplan
 LiteralText,Black Market,kara borsa
 LiteralText,blasphemy,kafirlik
-LiteralText,blessed,kutsanmış
-LiteralText,BLESSED,KUTSANMIŞ
 LiteralText,BLINK,SIÇRA
 LiteralText,Blink which direction?,Hangi yöne sıçra?
 LiteralText,block,blok
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,KIRIK
 LiteralText,burst rate,patlama oranı
 LiteralText,BUY,SATIN AL
 LiteralText,BUY ALL,HEPSİNİ SATIN AL
-LiteralText,by Callan Hodgskin,Callan Hodskin tarafından
 LiteralText,CANCEL,İPTAL
 LiteralText,cancellation,iptalleme
 LiteralText,CANCELLED,İPTAL EDİLDİ
@@ -3167,8 +3189,6 @@ LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,characters,karakterler
 LiteralText,charged items,şarjlı itemler
-LiteralText,charm,cezbetme
-LiteralText,CHARMED,CEZBEDİLDİ
 LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
 LiteralText,checking for updates,güncellemeler kontrol ediliyor
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,tekrar denemek için tıkla
 LiteralText,Click to send detected issues to the author,Saptanan sorunları geliştiriciye yollamak için tıkla
 LiteralText,CLOSE,KAPAT
 LiteralText,closed,kapalı
-LiteralText,CLOSED,KAPALI
 LiteralText,Coding on Medium,Kodlama Medium'umda
 LiteralText,coins,para
 LiteralText,companion,dost
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,ORDU OLUŞTUR
 LiteralText,CREATE ITEM,EŞYA OLUŞTUR
 LiteralText,CREATE SHOP,DÜKKAN OLUŞTUR
 LiteralText,CREATE SHRINE,TAPINAK OLUŞTUR
+LiteralText,CREATE SPILL,
 LiteralText,CREATE TRAP,TUZAK OLUŞTUR
 LiteralText,CREATE WALL,DUVAR YARAT
 LiteralText,Create which direction?,Hangi yöne oluştur?
 LiteralText,CREDITS,KATKIDA BULUNANLAR
 LiteralText,CROP,KIRP
-LiteralText,cursed,lanetli
 LiteralText,CURSED,LANETLİ
 LiteralText,CUSTOM,ÖZEL YAPIM
 LiteralText,CUSTOM HERO,ÖZEL YAPIM KAHRAMAN
 LiteralText,CUSTOM MODULES,ÖZEL MODÜL
-LiteralText,DAMAGE,HASAR
 LiteralText,dark,karanlık
-LiteralText,dark-hidden,karanlığa saklı
 LiteralText,DEAD END,ÇIKMAZ
 LiteralText,death,ölüm
-LiteralText,DEATH,ÖLÜM
 LiteralText,deathray,ölüm ışını
 LiteralText,decapitation,uzuv kaybı
 LiteralText,DECEASED,ÖLÜ
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,
 LiteralText,disable haptic feedback,haptic geri bildirimini kapat
 LiteralText,Disable idle animations,durağan animasyonları kapat
 LiteralText,Disable introduction boom,tanıtım patlamasını kapat
+LiteralText,Disable mask animations,
 LiteralText,Disable online services,online servisleri kapat
 LiteralText,Disable pitch shifting,tizlik rastgeleyiciyi kapat
 LiteralText,Disable spacebar real-time toggle,gerçek zamanlı ve sıra tabanlı değişim tuşunu kapat
+LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,BAĞLANTINI KOPART
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,Discuss on Reddit,Reddit'te muhabbet et
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,derevesini düşür
 LiteralText,downloading update,güncelleme indiriliyor
 LiteralText,drop,bırak
 LiteralText,DROP,BIRAK
-LiteralText,DUAL,ÇİFT
 LiteralText,DUAL WIELD,ÇİFT ELLE KULLAN
 LiteralText,Dungeon,Zindan
 LiteralText,duration,Süre
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,KAÇ
 LiteralText,escape traps,tuzaklardan kaç
 LiteralText,escape with,birşey kullanarak kaç
 LiteralText,escaped,kaçtı
-LiteralText,ESCAPED,KAÇTI
 LiteralText,ESSENCE,ESANS
 LiteralText,evolution,evrim
 LiteralText,Examine which object?,Hangi eşyayı incele?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,GENİŞLE
 LiteralText,EXPEL,TÜKÜR
 LiteralText,experience,tecrübe
 LiteralText,EXPERIENCE,TECRÜBE
-LiteralText,EXPLODED,PATLADI
 LiteralText,explosion,patlama
 LiteralText,EXPORT,ÇIKAR
 LiteralText,extinctions,soyu tükenmiş
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,ÖZELLİKLER
 LiteralText,FEED,BESLE
 LiteralText,FEEDBACK,GERİ BİLDİRİ
 LiteralText,FILES,DOSYALAR
-LiteralText,Find out what is coming in the next update.,Gelecek güncellemede nelerin geleceğini öğren
 LiteralText,fixed range,sabit mezil
 LiteralText,FIZZLE,KÖPÜRME
 LiteralText,Floor,Zemin
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,İŞE AL
 LiteralText,HORDES,ORDULAR
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
-LiteralText,HUH?,NE?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Umarım maceralarından keyif alıyorsundur. Bana ulaşıp fikirlerini beyan etmekten lütfen çekinme.
 LiteralText,identified items,tanımlanmış eşyalar
-LiteralText,IDENTIFY,TANIMLA
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,YERDEKİ BÜTÜN EŞYALARI TANIMLA
 LiteralText,ILLITERATE,OKUMA YAZMA BİLEN
 LiteralText,illusion,
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,İMKANSIZ
 LiteralText,in both hands,iki elle
 LiteralText,incarceration,hapsetme
-LiteralText,increase,artır
 LiteralText,INCREASE,ARTIR
 LiteralText,INDEX,INDEKS
 LiteralText,individual crafting,tekli oluştur
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,destekli hareketler
 LiteralText,INSCRIBE,
 LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
-LiteralText,INSTRUCT,
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
 LiteralText,insulation,yalıtım
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
@@ -3462,7 +3473,6 @@ LiteralText,light,
 LiteralText,LIGHT,IŞIK
 LiteralText,light radius,Işık alanı
 LiteralText,limits,Sınırlar
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","Windows, Android ve iOS dahil desteklenen bütün platformlara linkler."
 LiteralText,LIST,LİSTE
 LiteralText,lit,
 LiteralText,LIVING,YAŞARKEN
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,
 LiteralText,Lost Chambers,
 LiteralText,LOW MANA,DÜŞÜK MANA
 LiteralText,Ludios Cache,Ludios Kayıtı
-LiteralText,MAIN,ANA
 LiteralText,MAIN WIELD,ANA SİLAH OLARAK KULLAN
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3496,7 +3505,6 @@ LiteralText,MIMIC,MİMİK
 LiteralText,mimicking,
 LiteralText,Mines,Madenler
 LiteralText,Minetown,Maden Şehri
-LiteralText,missile,ışın
 LiteralText,modifier,düzenleyici
 LiteralText,MOUNT,BİN
 LiteralText,Mount which direction?,
@@ -3520,6 +3528,7 @@ LiteralText,no allies,yoldaş yok
 LiteralText,no ambient sounds,
 LiteralText,No appropriate items available,uygun bir eşya yok
 LiteralText,no available knowledge,bilgi yok
+LiteralText,no records found,
 LiteralText,no resistances,
 LiteralText,no talents,yeteneksiz
 LiteralText,no transient effects,geçici etkisiz
@@ -3545,14 +3554,12 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
-LiteralText,PACIFIED,SAKİNLEŞTİRİLDİ
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
 LiteralText,passage,
 LiteralText,passive (no attacking),pasif (saldırgan değil)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
-LiteralText,pathos development @ paypal or stripe,Pathos'un gelişimine Paypal'dan veya Stripe'dan
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos bedavadır ve sevgi ile güncellenir.
+LiteralText,pathos development @ paypal,Pathos'un gelişimine Paypal'dan
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos Nethack'in bir sonraki evrimi olabilir.
 LiteralText,penalty,
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,ŞEKİL DEĞİŞTİRDİ
 LiteralText,portal,
 LiteralText,porter,
 LiteralText,PRAY,DUA ET
-LiteralText,PRAYING,DUA EDİYOR
 LiteralText,preservation,korunma
 LiteralText,prevent revenant levels,mezar kaçkını seviyelerini engelle
 LiteralText,prisoner,
@@ -3632,10 +3638,8 @@ LiteralText,resident?,
 LiteralText,resistances,dayanıklılıklar
 LiteralText,RESISTS,DAYANDI
 LiteralText,Rest,
-LiteralText,REST,DİNLEN
 LiteralText,Rest how many turns?,
 LiteralText,restarting to update,güncellemek için tekrar başlatılıyor
-LiteralText,RESTING,DİNLENİYORSUN
 LiteralText,RESTORED,GERİ KAZANILDI
 LiteralText,RESURRECT,TEKRAR CANLANDIR
 LiteralText,Resurrect and continue,Tekrar canlan ve devam et
@@ -3647,6 +3651,7 @@ LiteralText,REVEAL,AÇIĞA KAVUŞTUR
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,
+LiteralText,revenant,
 LiteralText,REVERT,GERİ AL
 LiteralText,RIGHT RING,
 LiteralText,rigid,
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,PARÇALARA AYIR
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
-LiteralText,SEARCHING,ARIYOR
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,tohum
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,
 LiteralText,set starting location,
 LiteralText,SETTINGS,AYARLAR
 LiteralText,sfx volume,
-LiteralText,Share your tragic and heroic stories with other players.,Trajik ve kahramansı hikayelerini diğer oyuncularla paylaş.
 LiteralText,SHARE//exchange,PAYLAŞ
 LiteralText,SHARE//publish,PAYLAŞ
 LiteralText,SHOPS,DÜKKANLAR
 LiteralText,Show debugging information,Onarma bilgilerini göster
 LiteralText,Show time clock,
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Takdirini göstermek için arkadaşlarına Pathosu göster.
 LiteralText,SHRINES,TAPINAKLAR
 LiteralText,SIGN-IN,
 LiteralText,size,boyut
@@ -3749,7 +3751,6 @@ LiteralText,terrain,arazi
 LiteralText,The attack score is your aptitude for hitting an opponent.,Saldırı puanın rakibe vurma becerindir.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Zorluğu mekanikleri geliştirirken onu en iyi oyun yapan hissiyatı kaybetmemek
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Savunma puanın rakibin vuruşlarından ne kadar korunduğunu gösterir.
-LiteralText,There are no known polymorphs,Bilinen bir şekil değiştirme yok
 LiteralText,There is a new update available!,Yeni bir güncelleme mevcut!
 LiteralText,there is nothing to place here,buraya yerleştirilebileek bir şeyin yok
 LiteralText,there is nothing to remove here,buradan kaldırılabilecek bir şey yok
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ÇOK AÇ
 LiteralText,TOO SMALL,ÇOK KÜÇÜK
 LiteralText,TOO WEAK,ÇOK ZAYIF
-LiteralText,touch,dokun
 LiteralText,TRACKS,
 LiteralText,TRADE,ALIŞVERİŞ
 LiteralText,transform to,
@@ -3818,13 +3818,12 @@ LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,VOID SPACE,BOŞLUK
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,
-LiteralText,WAITING,BEKLİYOR
 LiteralText,WARPING,EĞRİLME
 LiteralText,was killed,öldürüldü
-LiteralText,was strangled,boğuldu
 LiteralText,weakness to,
 LiteralText,weight,ağırlık
 LiteralText,when afflicted,belalanmışken
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,YANLIŞ YÖN
 LiteralText,"You are playing as anonymous, please register!","Kimliksiz oynuyorsun, lütfen kayıt ol!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Gizli kapıları ARAMAK için GÖZ tuşuna bas.
 LiteralText,Your current movement and action speed in squares per second.,Saniyede kare cinsinde şu anki hareket ve saldırı hızın.
-LiteralText,Your feedback is appreciated and will influence my development plans.,Geri bildiriniz için minnettarım ve geliştirme planlarımı etkileyecek.
 LiteralText,ZOOM,YAKINLAŞTIR
 LiteralText,ZOOS,YAŞAM ALANLARI
 LiteralText,zZz,
-LocalityName,Level,
-LocalityName,Map,
-LocalityName,Site,
-LocalityName,Square,
-LocalityName,World,
-LocalityName,Zone,
+LocalityName,area,
+LocalityName,level,
+LocalityName,map,
+LocalityName,site,
+LocalityName,square,
+LocalityName,world,
+LocalityName,zone,
+MaterialName,adamantine,
 MaterialName,air,hava
 MaterialName,animal,hayvan
 MaterialName,bone,kemik
@@ -3891,6 +3891,7 @@ MotionPastName,ate,yedi
 MotionPastName,captured,
 MotionPastName,chanted,büyüle
 MotionPastName,constructed,
+MotionPastName,copied,
 MotionPastName,dipped,bandırdı
 MotionPastName,divined,ilahileştirdi
 MotionPastName,drank,içti
@@ -3899,6 +3900,7 @@ MotionPastName,emptied,boşalttı
 MotionPastName,exchanged,
 MotionPastName,flashed,parlattı
 MotionPastName,inscribed,
+MotionPastName,mounted,
 MotionPastName,opened,açtı
 MotionPastName,packed,
 MotionPastName,played,oynadı
@@ -3923,6 +3925,7 @@ MotionPresentName,anoint,yağla
 MotionPresentName,capture,
 MotionPresentName,chant,kutsa
 MotionPresentName,construct,
+MotionPresentName,copy,
 MotionPresentName,dig,kaz
 MotionPresentName,dip,bandır
 MotionPresentName,divine,ilahileştir
@@ -3932,6 +3935,7 @@ MotionPresentName,empty,boşalt
 MotionPresentName,exchange,
 MotionPresentName,flash,parla
 MotionPresentName,inscribe,
+MotionPresentName,mount,
 MotionPresentName,open,aç
 MotionPresentName,pack,
 MotionPresentName,play,oyna
@@ -3952,9 +3956,9 @@ MotionPresentName,study,öğren
 MotionPresentName,swat,ez
 MotionPresentName,write,yaz
 MotionPresentName,zap,şokla
-MurderTypeName,Allied,Yandaşlar
-MurderTypeName,Every,Herkes
-MurderTypeName,Hostile,Düşmanlar
+MurderTypeName,allied,yandaşlar
+MurderTypeName,every,herkes
+MurderTypeName,hostile,düşmanlar
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,Bu ahşap köprü yıllarca kullanılmış olmasına rağmen sağlam.
 PlatformName,crystal bridge,
 PlatformName,wooden bridge,tahta köprü
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,yol katetti
 TraversalPresentName,ascend,yukarı çık
 TraversalPresentName,descend,aşağı in
 TraversalPresentName,travel,yol katet
+VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
+VolatileName,steam,
 WallStructureName,illusionary,
 WallStructureName,permanent,
 WallStructureName,solid,

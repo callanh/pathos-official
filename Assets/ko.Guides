@@ -328,12 +328,14 @@
 
 # Enchantment; 강화
 . Weapons and armour have a modifier that can be changed with enchantment magic.; 무기와 방어구는 강화 마법을 통해 달라지는 보정치를 가질 수 있습니다.
-. The modifier is limited to between {Min} and {Max}.; 이 보정치는 {Min}에서 {Max} 사이의 값으로 제한됩니다.
 . A modifier of +0 is a normal, mundane item.; 일반적인 아이템의 보청치는 +0 입니다.
 . Modifiers on armour apply to your defence score.; 방어구의 보정치는 방어 수치에 영향을 줍니다.
 . Modifiers on weapons apply to your attack and damage scores.; 무기의 보정치는 공격 수치와 피해량에 영향을 줍니다.
-. An item will be destroyed if you try to change a modifier beyond {Min} or {Max}.; 만약 보정치의 {Min}이나 {Max}를 넘어서 변경하려고 하면, 아이템은 파괴됩니다.
-. Artifact items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 유물의 경우 {Modifier}까지 강화되고 이를 초과할 경우 보정치가 0으로 초기화됩니다.
+/
+. The {grade} items are limited to between {Min} and {Max}.; 이 {grade} 보정치는 {Min}에서 {Max} 사이의 값으로 제한됩니다.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 만약 {grade} 경우 {Modifier}까지 강화되고 이를 초과할 경우 보정치가 0으로 초기화됩니다.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 만약 {grade} 보정치의 를 넘어서 변경하려고 하면, 아이템은 파괴됩니다.
+/
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 또한, 주석 호루라기를 강화하면 마법 호루라기가 되는 식으로 아이템을 업그레이드 할 수 있습니다.
 
 # Punishments; 형벌

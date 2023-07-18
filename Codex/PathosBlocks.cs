@@ -17,6 +17,7 @@ namespace Pathos
       var Materials = Codex.Materials;
       var Properties = Codex.Properties;
       var Elements = Codex.Elements;
+      var Volatiles = Codex.Volatiles;
 
       Block AddBlock(string Name, Glyph Glyph, Sonic MoveSonic, Material Material, Size Size, Weight Weight, Action<BlockEditor> Action)
       {
@@ -132,35 +133,43 @@ namespace Pathos
 
         B.DamageElement = Elements.physical;
         B.DamageDice = 1.d20();
-        B.SetWeakness(Elements.physical, Elements.digging, Elements.force, Elements.disintegrate, Elements.fire);
+        B.SetWeakness(Elements.physical, Elements.digging, Elements.force, Elements.disintegrate, Elements.fire, Elements.acid, Elements.shock, Elements.cold);
         B.BreakLoot.AddKit(1.d3(), Chance.OneIn3); // any item.
-        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Items.List.Where(I => !I.Grade.Unique && I.Rarity > 0 && I.Size < B.Size).ToArray()); // any item fully specified?
-        //B.BreakLoot.AddKit(1.d3(), Chance.OneIn3, Codex.Stocks.food.ItemList.Where(I => !I.Grade.Unique && I.Rarity > 0 && I.Size < B.Size).ToArray()); // food only?
 
         B.AddBreak(55, Codex.Sonics.broken_barrel, null, K =>
         {
         });
-        B.AddBreak(20, Codex.Sonics.broken_barrel, Codex.Explosions.watery, K =>
+        B.AddBreak(15, Codex.Sonics.broken_barrel, Codex.Explosions.watery, K =>
         {
           K.Harm(Elements.water, Dice.Zero);
           K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
           K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
           K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
         });
-        B.AddBreak(15, Codex.Sonics.broken_barrel, Codex.Explosions.muddy, K =>
+        B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.muddy, K =>
         {
-          K.ApplyTransient(Properties.confusion, 2.d6());
+          K.ApplyTransient(Properties.fumbling, 2.d60());
           K.ApplyTransient(Properties.blindness, 2.d60());
         });
-        B.AddBreak(10, Codex.Sonics.broken_barrel, Codex.Explosions.fiery, K =>
+        B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.fiery, K =>
         {
           K.Harm(Elements.fire, 3.d6() + 3);
-          //K.DestroyCarriedAsset(Dice.One, null, null, new Material[] { Materials.Paper });
+          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+        });
+        B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.frosty, K =>
+        {
+          K.Harm(Elements.cold, 3.d6() + 3);
+          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+        });
+        B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.electric, K =>
+        {
+          K.Harm(Elements.shock, 3.d6() + 3);
+          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.electricity, 1.d100() + 100));
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.acid, K =>
         {
-          K.Harm(Elements.acid, 6.d6() + 6);
-          //K.DestroyCarriedAsset(Dice.One, null, null, new Material[] { Materials.Glass });
+          K.Harm(Elements.acid, 3.d6() + 3);
+          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.steam, 1.d100() + 100)); // TODO: acid cloud?
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, null, K =>
         {

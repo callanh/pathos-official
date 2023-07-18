@@ -1,3 +1,96 @@
+2023-07-18
+- original title music for Dhak Legacy module by Lucas Kneipp (https://www.lucaskneipp.com).
+
+2023-07-17
+- equip menu now has the item filter.
+
+2023-07-10
+- blessed scroll of light causes fear to undead.
+
+2023-06-28
+- reduced the duration of the potion of paralysis when it's thrown to 1d10+20.
+
+2023-06-22
+- wand of locking and wizard lock spell now applies transient paralysis to golems.
+
+2023-06-15
+- item grade (standard/exotic/artifact) is now included in armor/weapon help and explained in the Enchantment guide.
+- lamp and magic lamp light radius increased from 2 to 3 squares.
+- lantern light radius increased from 3 to 4 squares.
+
+2023-06-09
+- wooden barrel explosions now have a chance to spill volatile effects.
+- companions, that have previously been named, can be re-tamed/charmed even if they have magical resistance.
+
+2023-06-08
+- updated classic stone wall tiles.
+- updated classic hell brick tiles.
+- updated classic key tiles.
+
+2023-05-29
+- new setting: instruct each character for when you have multiple characters and wish to make every decision without relying on the AI (replaces the INSTRUCT/FOLLOW button because it was confusing players).
+- updated classic firearm tiles.
+- updated classic crystal door, bridge and item tiles. 
+
+2023-05-27
+- wooden floors have 10% chance to create blaze spills when applied with fire element effects (eg. wand of fire).
+- metal floors have 10% chance to create electricity spills when applied with shock element effects (eg. wand of lightning).
+- water floors will create steam spills when applied with fire element effects (eg. wand of fire).
+- lava floors will create steam spills when applied with water element effects (eg. scroll of water).
+- new volatile: freeze.
+
+2023-05-26
+- new volatile: electricity.
+
+2023-05-23
+- new mechanic: spills of a volatile effect.
+- new volatiles: blaze, steam.
+- fire trap now has a chance to start blazes.
+- pyrolisk can now start a blaze with their gaze.
+- wand of fireballs and scroll of fire now has a chance to start a blaze.
+
+2023-05-19
+- new artifact: Miserus, scroll ('read' for precious material detection, 'copy' costs 500 karma and can replicate a scroll).
+- new artifact: Brumstyk, two-handed staff weapon, gain quickness and see invisible ('mount' to animate and ride it as a flying steed).
+
+2023-05-17
+- display 'no records found' instead of 'unable to load' in the Hall of Fame, when there's nothing returned from the server (to distinguish between zero records and a server error).
+
+2023-05-15
+- new entity: adamantine golem (huge defense and life points but no attacks - it just follows you around to obstruct your path).
+
+2023-05-13
+- blessed scroll of remove curse will now change the item from cursed to blessed.
+
+2023-05-10
+- staff weapons are now defensive (1 base defense, increases with weapon enchantment).
+- new item: battle staff with adamantine staff appearance (1d10 damage and 2 base defense).
+
+2023-05-08
+- new item: saber.
+- sabers now deal double damage while mounted (since they are a traditional cavalry weapon).
+- new material: adamantine (items are x20 more expensive but allows enchantment up to +7).
+- new adamantine weapons: bow, arrow, dagger, short sword, rapier, saber, long sword, greatsword, two-handed sword, ax, greataxe, spear.
+- new adamantine armor: plate mail.
+
+2023-05-02
+- all dark elven weapons are now made from mithril, instead of wood.
+
+2023-04-29
+- all animated features are now mountable (eg. bed, fountain, etc).
+
+2023-04-24
+- caterwaul can now shriek at you for physical damage.
+
+2023-04-05
+- throwing a fish at a seal (hostile or neutral) will charm them.
+
+2023-03-07
+- new setting: disable swipe gestures (left swipe opens the side menu; right swipe toggles between actors).
+
+2023-03-02
+- new setting: disable mask animations (turn off hallucination and rage screen color masking).
+
 2023-02-27
 - now drawing the shroud tile to indicate when there are more squares to explore.
 - eating the scroll of training will now increase a random resistance.

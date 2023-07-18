@@ -85,6 +85,18 @@ namespace Pathos
 
             this.goodWeapon = new Inv.DistinctList<Item>()
             {
+                Items.adamantine_arrow,
+                Items.adamantine_axe,
+                Items.adamantine_bow,
+                Items.adamantine_dagger,
+                Items.adamantine_greataxe,
+                Items.adamantine_greatsword,
+                Items.adamantine_long_sword,
+                Items.adamantine_rapier,
+                Items.adamantine_sabre,
+                Items.adamantine_short_sword,
+                Items.adamantine_spear,
+                Items.adamantine_twohanded_sword,
                 Items.mithril_battleaxe,
                 Items.mithril_katar,
                 Items.mithril_long_sword,
@@ -93,28 +105,30 @@ namespace Pathos
                 Items.mithril_twohanded_sword,
                 Items.mithril_arrow,
                 Items.mithril_crossbow_bolt,
-                Items.yumi,
-                Items.mithril_lance,
-                Items.magic_horseshoe,
                 Items.mithril_dagger,
-                Items.flash_staff,
+                Items.mithril_whip,
+                Items.mithril_lance,
                 Items.silver_heavy_hammer,
                 Items.silver_long_sword,
                 Items.silver_mace,
+                Items.silver_sabre,
                 Items.silver_short_sword,
                 Items.silver_twohanded_sword,
-                Items.tsurugi,
                 Items.silver_arrow,
                 Items.silver_crossbow_bolt,
-                Items.mithril_whip,
                 Items.silver_lance,
                 Items.silver_spear,
-                Items.trident,
                 Items.silver_dagger,
+                Items.magic_horseshoe,
+                Items.flash_staff,
                 Items.dread_staff,
-                Items.katana,
+                Items.battle_staff,
                 Items.thunder_staff,
-                Items.wakizashi
+                Items.trident,
+                Items.tsurugi,
+                Items.katana,
+                Items.wakizashi,
+                Items.yumi
             };
 
             this.randomArmour = SPDDebug.codex.Items.List.Where(armour =>
@@ -180,8 +194,11 @@ namespace Pathos
 
             this.goodArmour = new Inv.DistinctList<Item>()
             { 
+                Items.adamantine_plate_mail,
                 Items.mithril_barding,
                 Items.mithril_shield,
+                Items.mithril_plate_mail,
+                Items.mithril_helmet,
                 Items.dark_elven_mithrilcoat,
                 Items.dwarvish_mithrilcoat,
                 Items.elven_mithrilcoat,

@@ -13,39 +13,35 @@ AfflictionName,reflux,역류
 AfflictionName,sliming,슬라임화
 AfflictionName,worms,기생충
 AnatomyAbsenceText,MINDLESS,이성없음
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,피 없음
 AnatomyAbsenceText,NO EARS,소리 없음
 AnatomyAbsenceText,NO EYES,눈 없음
 AnatomyAbsenceText,NO FEET,발 없음
 AnatomyAbsenceText,NO HANDS,손 없음
 AnatomyAbsenceText,NO HEAD,머리 없음
 AnatomyAbsenceText,NO LIMBS,사지 없음
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
-AnatomyAbsenceText,VOICELESS,목소리를 잃음
+AnatomyAbsenceText,NOT AMORPHOUS,무정형 아님
+AnatomyAbsenceText,NOT MOUNTED,승마 불가능
+AnatomyAbsenceText,NOT WARM,냉혈임
+AnatomyAbsenceText,VOICELESS,목소리 없음
 AnatomyName,amorphous,무정형
 AnatomyName,blood,피
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,귀
+AnatomyName,eyes,눈
+AnatomyName,feet,발
+AnatomyName,hands,손
+AnatomyName,head,머리
+AnatomyName,limbs,사지
+AnatomyName,mind,정신
 AnatomyName,mounted,승마가능
-AnatomyName,thermal,
-AnatomyName,voice,
-ApetiteName,content,만족함
-ApetiteName,hungry,배고픔
-ApetiteName,satiated,배부름
-ApetiteName,starving,굶주림
-ApetiteName,weak,약함
+AnatomyName,thermal,열이 있음
+AnatomyName,voice,목소리
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,앞이 열려있고 가슴에서 걸쇠로 조이는 긴 망토이다.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,짧지만 튼튼해 보이는 미스릴 갑옷이다.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,날렵하고 섬세해 보이는 미스릴 갑옷이다.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,날렵하고 광택이 나는 미스릴 갑옷이다.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,이 고전적인 마법사 모자는 달과 별 무늬로 장식되어 있다.
+AppearanceName,adamantine staff,아다만티움 지팡이
 AppearanceName,agate ring,마노 반지
 AppearanceName,aluminium wand,알루미늄 마법봉
 AppearanceName,angled poleaxe,모난 폴액스
@@ -342,7 +338,6 @@ AppearanceName,spherical amulet,구형 아뮬렛
 AppearanceName,spiked wand,가시 박힌 마법봉
 AppearanceName,spotted book,점무늬 책
 AppearanceName,square amulet,사각형 아뮬렛
-AppearanceName,staff,지팡이
 AppearanceName,stained book,얼룩진 책
 AppearanceName,steel boots,강철 신발
 AppearanceName,steel ring,강철 반지
@@ -362,7 +357,7 @@ AppearanceName,thin cake,얇은 케이크
 AppearanceName,thonged club,가죽끈 달린 곤봉
 AppearanceName,three-pointed polearm,세 갈래 폴암
 AppearanceName,throwing axe,투척용 도끼
-AppearanceName,throwing disc,
+AppearanceName,throwing disc,투척용 디스크
 AppearanceName,throwing spear,투척용 창
 AppearanceName,throwing star,표창
 AppearanceName,throwing stick,투척용 막대
@@ -400,6 +395,11 @@ AppearanceName,yellow gem,노란색 보석
 AppearanceName,yellow potion,노란색 물약
 AppearanceName,yellowish brown gem,황갈색 보석
 AppearanceName,zinc wand,아연 마법봉
+AppetiteName,content,만족함
+AppetiteName,hungry,배고픔
+AppetiteName,satiated,배부름
+AppetiteName,starving,굶주림
+AppetiteName,weak,약함
 AttackType,bite,물기
 AttackType,blast,분사
 AttackType,breath,숨결
@@ -412,7 +412,7 @@ AttackType,horn,뿔
 AttackType,kick,발차기
 AttackType,punch,주먹질
 AttackType,shriek,비명
-AttackType,slap,
+AttackType,slap,타격
 AttackType,spell,마법
 AttackType,spit,침뱉기
 AttackType,splash,튀기기
@@ -836,6 +836,7 @@ CounterName,captures,붙잡음
 CounterName,casts,주문 시전
 CounterName,chants,찬송
 CounterName,constructs,구조물
+CounterName,copies,복제품들
 CounterName,crafts,제작
 CounterName,decapitations,참수
 CounterName,digs,굴착
@@ -854,6 +855,7 @@ CounterName,jumps,점프
 CounterName,kicks,발차기
 CounterName,lifesaves,구명
 CounterName,mimics,모방
+CounterName,mounts,탈것
 CounterName,moves,이동
 CounterName,opens,열기
 CounterName,packs,포장
@@ -862,7 +864,7 @@ CounterName,polymorphs,폴리모프
 CounterName,polypiles,더미 폴리모프
 CounterName,prays,기도
 CounterName,punishments,형벌
-CounterName,quaffs,마시기
+CounterName,quaffs,홀짝이기
 CounterName,reads,읽기
 CounterName,reclines,기대기
 CounterName,refills,리필
@@ -967,10 +969,9 @@ EffectProperty,hordes,군단
 EffectProperty,items,아이템
 EffectProperty,kinds,종류
 EffectProperty,lies,거짓
-EffectProperty,loyal only,
+EffectProperty,loyal only,동료관계만
 EffectProperty,material,재질
 EffectProperty,materials,물질
-EffectProperty,objects,사물
 EffectProperty,polite,공손한
 EffectProperty,properties,특성들
 EffectProperty,punishments,형벌
@@ -981,7 +982,6 @@ EffectProperty,remove random talent,무작위 재능 제거
 EffectProperty,removes all transients,모든 일시적인 효과 해제
 EffectProperty,reset random equipment,무작위 장비 초기화
 EffectProperty,reveal,밝힘
-EffectProperty,revenants,망령
 EffectProperty,sanctity,신성함
 EffectProperty,skills,숙련도
 EffectProperty,source,재료
@@ -998,12 +998,11 @@ EffectProperty,whole stack,전체 아이템
 EffectType,afflict,감염
 EffectType,alert,경계
 EffectType,amnesia,망각
-EffectType,animate,생동화
 EffectType,area transient,범위 효과
 EffectType,assess,평가
 EffectType,blinking,점멸
 EffectType,cancellation,무효화
-EffectType,capture,붙잡기
+EffectType,capture,포획하기
 EffectType,charging,충전
 EffectType,charm,매혹
 EffectType,clone character,캐릭터 복제
@@ -1013,12 +1012,14 @@ EffectType,convert boulder,바위 변환
 EffectType,convert door,문 변환
 EffectType,convert fixture,시설 변환
 EffectType,convert floor,바닥 변환
+EffectType,convert spill,휘발성 물질 변환
 EffectType,convert wall,벽 변환
 EffectType,create boulder,바위 생성
 EffectType,create fixture,시설 생성
 EffectType,create golem,골렘 생성
 EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
+EffectType,create spill,휘발성 물질 생성
 EffectType,create trap,함정 생성
 EffectType,create wall,벽 생성
 EffectType,decapitate,참수
@@ -1036,6 +1037,7 @@ EffectType,enchant asset,아이템 강화
 EffectType,engulf,삼키기
 EffectType,enlightenment,깨달음
 EffectType,exchange,교환
+EffectType,extinguish spill,휘발성 물질 증발
 EffectType,gain level,레벨 증가
 EffectType,gain skill,숙련도 획득
 EffectType,genocide,몰살
@@ -1064,6 +1066,7 @@ EffectType,raise dead,부활
 EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
+EffectType,remove spill,휘발성 물질 제거
 EffectType,remove transient,일시적인 효과 제거
 EffectType,replicate asset,아이템 복제
 EffectType,restock,재충전
@@ -1083,11 +1086,11 @@ EffectType,transition,층 이동
 EffectType,unafflict,감염 해제
 EffectType,unpolymorph,폴리모프 해제
 EffectType,unpunish,형벌 해제
-EffectType,unstuck,
+EffectType,unstuck,탈출
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
-EffectType,vomit,
+EffectType,vomit,구토
 EffectType,warping,워프
 EggName,black dragon,블랙 드래곤
 EggName,blue dragon,블루 드래곤
@@ -1140,7 +1143,7 @@ EncumbranceName,unencumbered,지장없음
 EngulfmentName,engulfed,사로잡힘
 EngulfmentName,swallowed,삼켜짐
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"야망이 큰 중간 크기의 생명체. 수명은 짧으나, 어디서나 볼 수 있다. 절대 과소평가해서는 안 된다."
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",무정형 생물체들은 딱히 정해진 모양은 없지만 대게 투명한 인간의 모습을 하고있다. 물론 이것은 여전히 플라스마 비슷한 액체처럼 보이지만 이런 모습은 옷을 입는것과 장비를 쓰는것을 가능하게한다.
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",은둔한 고대의 거대 종족. 고기와 광물을 게걸스럽게 먹어치우며 엄청난 힘의 원천인 압도적인 덩치를 유지한다.
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","스러진 모험가의 불굴의 영혼을 담는 영적인 그릇. 스스로는 움직이지 않으며, 모험가의 영혼에게 기꺼이 몸을 내어 복수 또는 속죄를 위한 두 번째 기회를 준다. 영적 물질로 만들어진 자그마한 몸은 투명하며 물리적 장애물을 통과할 수 있다."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",빛나는 후광과 깃털난 날개가 특징인 아름다운 초월적 존재. 선과 악의 대결에 단련된 그들은 손에 쥐는 모든 것들에서 성스러움을 느낀다.
@@ -1155,16 +1158,17 @@ EntityDescription,"Spiritual beings fond of nature and magic. They are physicall
 EntityDescription,"Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.","건장하고, 단단하고, 작은 친구들. 고집이 세고, 금속 세공과 술을 좋아하는 것으로 알려져 있다."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","땜질과 마법을 좋아하는 조그마한 지하인들. 살아남기 위해서, 기나긴 모험에 적합하도록 신진대사가 진화했다."
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","초콜릿 디저트보다는 썩은 우유에 가까운 맛이 난다는 갈색 푸딩. 푸딩은 모든 종류의 옷감과 가죽을 먹고 사는데, 이것들의 가장 잘 알려진 능력은 독특한 생식 방법이다. 이 썩은 푸딩이 철에 닿게되면, 기적처럼 분열하면서 두 마리의 탐욕스런 자손을 만들어낸다. 모험가들의 무기는 상당수가 철로 되어있어서, 시간이 지날수록 이것들의 개체수는 계속 증가하기만 한다."
-EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
+EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","이 당제미라는 사람의 시체를 꿀에담가 만들졌다. 어쩌다 수도승들에 의해 다시 움직여졌다, 이 미라는 당신에게 달콤한 죽음을 주기에는 충분하다."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,이 살아있는 산성 액체 방울들은 공격 능력이 전혀 없는것으로 보인다.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","매우 신비롭고 아름답게 태어난, 작은 날개가 달린 영혼들. 위협을 받으면 공간을 왜곡시켜 도망갈 수 있다."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","태어나고 걷기 시작하자마자 고향을 떠난 거북이의 형체를 가진 유목민 생존자, 그들은 등뒤에 안전하고 포근한 집을달고 어디로든 모험을 떠난다."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",식인의 습성을 가진 못생기고 야만적인 생명체들. 이 전쟁에 미친 종족들은 인상적인 힘과 수준낮은 지능으로 유명하다.
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","엄청나게 겁이 많은데다 매우 약한 종족이다, 이 작은 파충류는 자신의 신체적인 약점을 사악하고 교활한 전략으로 극복한다."
 EntityName,abbot,수도원장
 EntityName,acid blob,산성 방울
 EntityName,acid worm,산성 벌레
 EntityName,acolyte,수행사제
+EntityName,adamantine golem,아다만티움 골렘
 EntityName,adult black dragon,성체 블랙 드래곤
 EntityName,adult blue dragon,성체 블루 드래곤
 EntityName,adult deep dragon,성체 딥 드래곤
@@ -1179,17 +1183,17 @@ EntityName,adult white dragon,성체 화이트 드래곤
 EntityName,adult yellow dragon,성체 옐로 드래곤
 EntityName,air elemental,공기 정령
 EntityName,Aleax,알릭스
-EntityName,ancient black dragon,에인션트 블랙 드래곤
-EntityName,ancient blue dragon,에인션트 블루 드래곤
-EntityName,ancient deep dragon,에인션트 딥 드래곤
-EntityName,ancient gold dragon,에인션트 골드 드래곤
-EntityName,ancient green dragon,에인션트 그린 드래곤
-EntityName,ancient orange dragon,에인션트 오렌지 드래곤
-EntityName,ancient red dragon,에인션트 레드 드래곤
-EntityName,ancient shimmering dragon,에인션트 쉬머링 드래곤
-EntityName,ancient silver dragon,에인션트 실버 드래곤
-EntityName,ancient white dragon,에인션트 화이트 드래곤
-EntityName,ancient yellow dragon,에인션트 옐로 드래곤
+EntityName,ancient black dragon,고대 블랙 드래곤
+EntityName,ancient blue dragon,고대 블루 드래곤
+EntityName,ancient deep dragon,고대 딥 드래곤
+EntityName,ancient gold dragon,고대 골드 드래곤
+EntityName,ancient green dragon,고대 그린 드래곤
+EntityName,ancient orange dragon,고대 오렌지 드래곤
+EntityName,ancient red dragon,고대 레드 드래곤
+EntityName,ancient shimmering dragon,고대 쉬머링 드래곤
+EntityName,ancient silver dragon,고대 실버 드래곤
+EntityName,ancient white dragon,고대 화이트 드래곤
+EntityName,ancient yellow dragon,고대 옐로 드래곤
 EntityName,angel,천사
 EntityName,animate object,생동화 사물
 EntityName,ape,유인원
@@ -1526,7 +1530,7 @@ EntityName,kobold,코볼트
 EntityName,kobold king,코볼트 왕
 EntityName,kobold lord,코볼트 군주
 EntityName,kobold mummy,코볼트 미라
-EntityName,kobold scout,
+EntityName,kobold scout,코볼트 정찰가
 EntityName,kobold shaman,코볼트 주술사
 EntityName,kobold warrior,코볼트 전사
 EntityName,kobold zombie,코볼트 좀비
@@ -1580,7 +1584,7 @@ EntityName,master mind flayer,마스터 마인드 플레이어
 EntityName,mastodon,마스토돈
 EntityName,Maugneshaagar,마우그네샤가
 EntityName,medusa,메두사
-EntityName,mellified man,
+EntityName,mellified man,꿀발린 미라
 EntityName,merchant,상인
 EntityName,Metamorphius,메타모르피우스
 EntityName,migo drone,미고
@@ -1642,7 +1646,7 @@ EntityName,panther,표범
 EntityName,pantherwere,인간표범
 EntityName,paper golem,종이 골렘
 EntityName,parrot,앵무새
-EntityName,pearl golem,
+EntityName,pearl golem,진주 골렘
 EntityName,pegasus,페가수스
 EntityName,Pelias,펠리아스
 EntityName,Pestilence,역병
@@ -1657,7 +1661,7 @@ EntityName,pit viper,구덩이 살모사
 EntityName,pixie,픽시
 EntityName,plains centaur,평원 켄타우로스
 EntityName,Planetar,플레네타
-EntityName,plasmoid,
+EntityName,plasmoid,플라스마이드
 EntityName,plastic golem,플라스틱 골렘
 EntityName,pony,조랑말
 EntityName,proudfoot,프라우드풋
@@ -1703,7 +1707,7 @@ EntityName,satyr,사티로스
 EntityName,scorpion,전갈
 EntityName,Scorpius,스콜피우스
 EntityName,scramper,스크램퍼
-EntityName,seal,
+EntityName,seal,물개
 EntityName,sergeant,병장
 EntityName,sewer rat,시궁쥐
 EntityName,shade,그늘
@@ -1759,7 +1763,7 @@ EntityName,tiger,호랑이
 EntityName,tigerwere,인간호랑이
 EntityName,titan,타이탄
 EntityName,titanothere,티타노테레
-EntityName,tortle,
+EntityName,tortle,토틀
 EntityName,tracker,사냥꾼
 EntityName,transmuter,변환술사
 EntityName,trapper,트래퍼
@@ -1978,7 +1982,7 @@ FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{CharacterName}�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{CharacterName}은(는) 서투르게 {AssetName}을 {MotionPastName}했지만 아무 일도 일어나지 않았다
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}는 서투르게 {With:AssetName}에 {Use:AssetName}을 {MotionPastName}했다
 FormatText,{CharacterName} Inventory,{CharacterName}의 인벤토리
-FormatText,{CharacterName} is {ApetiteName},{CharacterName}은(는) {ApetiteName} 상태이다
+FormatText,{CharacterName} is {AppetiteName},{CharacterName}은(는) {AppetiteName} 상태이다
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName}은(는) {StandingName} 기분을 느낀다
 FormatText,{CharacterName} is no longer stuck,{CharacterName}은(는) 더 이상 끼어있지 않다
 FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName}은(는) {SkillName} 스킬에 {QualificationName}이(가) 되었다
@@ -2053,6 +2057,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName}을(를) 
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName}을(를) 어느 아이템에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} {FeatureName} which direction?,어느 방향의 {FeatureName}에 {MotionPresentName}할까요?
 FormatText,{MotionPresentName} which item on {FeatureName}?,무엇으로 {FeatureName}에 {MotionPresentName}을(를) 합니까?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName}이(가) {Steed:CharacterName}위에 탔다.
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName}(으)로 된 {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} 시전
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -2066,7 +2071,7 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} 소화
 FormatText,{StrikeName} strike,{StrikeName} 타격
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName}은(는) {Victim:CharacterName}에게서 {AssetName}을(를) 훔쳤다
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName}은(는) {Victim:CharacterName}에게서 물건들을 훔쳤다
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},레벨 {RecordDepth}에 도달한 후
@@ -2077,25 +2082,25 @@ FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
 FormatText,Congratulations on reaching the end of the {QuestName}!,{QuestName} 퀘스트의 끝에 도달하신 것을 축하드립니다!
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
+FormatText,decrease all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 감소시킨다
+FormatText,decrease one ability by {AdjustmentDice},{AdjustmentDice}만큼 한 능력치를 감소시킨다
 FormatText,diminish {ManaDice},{ManaDice} 마나 감소
 FormatText,drop {BlockName} {ElementName} {DamageDice},{BlockName}가 떨어져 {ElementName}속성 {DamageDice}피해를 입음
 FormatText,energise {ManaDice},{ManaDice} 마나 증가
 FormatText,Equip {CharacterName},장비 {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,"명성치 {RecordFame}, {RecordKills} 처치"
 FormatText,Feed which item to {CharacterName}?,어느 아이템을 {CharacterName}에게 먹입니까?
-FormatText,from {Cause},
+FormatText,from {Cause},{Cause}으로부터
 FormatText,gain {Percent}% {ElementName} resistance,{ElementName}속성 저항 {Percent}% 획득
 FormatText,gain {TalentName} talent,{TalentName} 재능 획득
 FormatText,"Hail {CharacterName}, {CharacterDescription}","{CharacterDescription} - {CharacterName}님, 환영합니다"
 FormatText,Hail {PlayerHandle}!,{PlayerHandle}님 환영합니다!
 FormatText,harm {ElementName} {DamageDice},{ElementName}속성 피해 {DamageDice}
 FormatText,heal {LifeDice},{LifeDice} 회복
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 증가시킨다
+FormatText,increase all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 증가시킨다
+FormatText,increase one ability by {AdjustmentDice},{AdjustmentDice}만큼 한 능력치를 증가시킨다
 FormatText,level {Depth},레벨 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},레벨 {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},레벨 {From}-{To}
@@ -2104,8 +2109,8 @@ FormatText,LOCKED {GATENAME},잠겨진 {GATENAME}
 FormatText,not {EffectProperty},{EffectProperty}가 아님
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,{Percent}%만큼 체력 회복
+FormatText,replenish mana from {Percent}%,{Percent}%만큼 마나 회복
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName}, {CharacterDescription}이(가) 부활했다."
 FormatText,retaliate {Chance} {AttackType},"{AttackType}일 시, {Chance}(으)로 되돌려줌"
 FormatText,retaliate {Chance} on death {AttackType},{AttackType}로 사망 시 {Chance}(으)로 되돌려줌
@@ -2124,13 +2129,14 @@ FormatText,unless resists {ElementName},{ElementName}속성 저항이 없을 시
 FormatText,unless target has {PropertyName},대상이 {PropertyName}이 아닐 시
 FormatText,versus {Something},{Something} 대
 FormatText,when {Chance},{Chance}일 때
+FormatText,when {GROUNDNAME},{GROUNDNAME}땅 일 때
 FormatText,when {ITEMNAME},{ITEMNAME} 일 때
 FormatText,when {KINDNAMES},{KINDNAMES} 일 때
 FormatText,when {MATERIALNAME},{MATERIALNAME} 재질일 때
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} 상태일 때
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} 상태일 때
 FormatText,when {Something},{Something} 경우
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},{ElementName}을(를) 저항할때
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,이 문은 단단한 결정체로 이루어져있어서 쉽게 부서지지 않는다.
 GateName,crystal door,크리스탈 문
 GateName,wooden door,나무 문
@@ -2147,7 +2153,10 @@ GenderName,male,남성
 GenderName,neuter,중성
 GenderName,non-binary,논바이너리
 GenerationType,module,모듈
-GenerationType,quest,퀘스트
+GenerationType,quest,퀘스트r
+GradeName,artifact,유물
+GradeName,exotic,특별한
+GradeName,standard,일반
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,이 차가운 돌 표면은 뛰어난 솜씨로 만들어졌지만 세월이 지나면서 손상되었다.
 GroundName,chasm,갈라진 틈
 GroundName,dirt floor,흙 바닥
@@ -2215,6 +2224,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,착�
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",시체를 압축해서 담기 위한 빈 통과 정육 도구등의 식기 모음.
 ItemDescription,A compact hand-held firearm.,휴대용 소형 화기.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",기병들이 주로 사용하는 구부러진 외날검. 지하세계의 존재들에게 특히 효과적이다.
+ItemDescription,A curved single-edged blade often used by cavalry.,기병들이 주로 사용하는 구부러진 외날검
 ItemDescription,"A curved yellow fruit, and a great source of fibre.",훌륭한 섬유질 공급원인 구부러진 노란 과일.
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",나무로 만든 납작한 투척 무기. 주로 사냥에 사용된다.
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","납작하고 동그란 케이크. 알고 있었겠지만, 팬으로 요리해서 만들었다."
@@ -2338,6 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,바닥에 뿌려서 이동을 방해하도록 만들어진 작은 금속 가시.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,착용자를 빠르고 조용히 날게 하는 불변의 황금으로 만들어진 날개달린 샌들.
 ItemDescription,Zapping it at a wall creates a big tunnel.,벽에 사용하면 큰 터널이 생긴다.
+ItemName,adamantine arrow,아다만티움 화살
+ItemName,adamantine axe,아다만티움 도끼
+ItemName,adamantine bow,아다만티움 활
+ItemName,adamantine dagger,아다만티움 단검
+ItemName,adamantine greataxe,아다만티움 전투도끼
+ItemName,adamantine greatsword,아다만티움 대검
+ItemName,adamantine long sword,아다만티움 롱소드
+ItemName,adamantine plate mail,아다만티움 판금 갑옷
+ItemName,adamantine rapier,아다만티움 레이피어
+ItemName,adamantine sabre,아다만티움 세이버
+ItemName,adamantine short sword,아다만티움 숏소드
+ItemName,adamantine spear,아다만티움 창
+ItemName,adamantine two-handed sword,아다만티움 양손검
 ItemName,agate,마노
 ItemName,aklys,아클리스
 ItemName,alchemy smock,연금술 작업복
@@ -2372,6 +2395,7 @@ ItemName,banana,바나나
 ItemName,banded mail,띠 갑옷
 ItemName,bardiche,바디시
 ItemName,battle robe,전투 로브
+ItemName,battle staff,전투 지팡이
 ItemName,battle-axe,전투 도끼
 ItemName,beartrap,곰덫
 ItemName,bec de corbin,베크드코르벵
@@ -2459,16 +2483,17 @@ ItemName,brass knuckles,황동 너클
 ItemName,broadsword,브로드소드
 ItemName,bronze bell,청동 종
 ItemName,bronze plate mail,청동 판금 갑옷
+ItemName,Brumstyk,빗자루우
 ItemName,bullet,총알
 ItemName,bullwhip,가죽 채찍
 ItemName,caltrops,마름쇠
 ItemName,can of grease,윤활유 통
 ItemName,candy bar,초콜릿
-ItemName,Carapace,갑피
+ItemName,Carapace,등껍질 갑옷
 ItemName,carrot,당근
 ItemName,chain barding,사슬 마갑
 ItemName,chain mail,체인메일
-ItemName,chakram,
+ItemName,chakram,차크람
 ItemName,Chaoshammer,혼돈의 망치
 ItemName,Chasm Edge,나락의 칼날
 ItemName,cheese,치즈
@@ -2547,7 +2572,7 @@ ItemName,Eye of Aethiopica,에티오피카의 눈
 ItemName,Eyes of Ra,라의 눈
 ItemName,fauchard,포샤르
 ItemName,fedora,중절모
-ItemName,fire horn,화염 뿔
+ItemName,fire horn,화염의 뿔
 ItemName,fish,생선
 ItemName,flail,도리깨
 ItemName,flash staff,섬광의 지팡이
@@ -2558,7 +2583,7 @@ ItemName,fly swatter,파리채
 ItemName,food ration,전투식량
 ItemName,fortune cookie,포춘 쿠키
 ItemName,frag grenade,파쇄 수류탄
-ItemName,frost horn,냉기 뿔
+ItemName,frost horn,냉기의 뿔
 ItemName,fumble boots,실수의 장화
 ItemName,garnet,석류석
 ItemName,gas grenade,가스 수류탄
@@ -2571,14 +2596,14 @@ ItemName,glaive,글레이브
 ItemName,gold coin,금화
 ItemName,gold dragon scale mail,금색 용비늘 갑옷
 ItemName,gold dragon scales,금색 용비늘 가죽
-ItemName,Gold Key,금 열쇠
-ItemName,great dagger,위대한 단검
+ItemName,Gold Key,황금 열쇠
+ItemName,great dagger,그레이트 대거
 ItemName,green dragon scale mail,녹색 용비늘 갑옷
 ItemName,green dragon scales,녹색 용비늘 가죽
 ItemName,green glass bauble,초록색 싸구려 유리보석
 ItemName,grenade launcher,유탄 발사기
 ItemName,Grimtooth,그림투스
-ItemName,guisarme,귀자름
+ItemName,guisarme,귀사르메
 ItemName,halberd,할버드
 ItemName,Harbalest,하발레스트
 ItemName,hatchet,손도끼
@@ -2657,13 +2682,14 @@ ItemName,meat stick,고기 막대
 ItemName,meatball,미트볼
 ItemName,melon,멜론
 ItemName,Mirrorbright,미러브라이트
+ItemName,Miserus,미세루스
 ItemName,mithril arrow,미스릴 화살
 ItemName,mithril barding,미스릴 마갑
 ItemName,mithril battle-axe,미스릴 전투 도끼
 ItemName,mithril bullet,미스릴 총알
 ItemName,mithril crossbow bolt,미스릴 석궁 화살
 ItemName,mithril dagger,미스릴 단검
-ItemName,mithril dart,
+ItemName,mithril dart,미스릴 다트
 ItemName,mithril helmet,미스릴 헬멧
 ItemName,mithril katar,미스릴 카타르
 ItemName,mithril lance,미스릴 랜스
@@ -2797,6 +2823,7 @@ ItemName,rubber hose,고무 호스
 ItemName,ruby,루비
 ItemName,Ruby Key,루비 열쇠
 ItemName,Runesword,룬소드
+ItemName,sabre,세이버
 ItemName,sack,자루
 ItemName,saddle,안장
 ItemName,sai,쌍차도
@@ -3041,13 +3068,13 @@ KindName,mummy,미라
 KindName,naga,나가
 KindName,ogre,오우거
 KindName,orc,오크
-KindName,plasmoid,
+KindName,plasmoid,플라스마이드
 KindName,pudding,푸딩
 KindName,quadruped,네발짐승
 KindName,rodent,설치류
 KindName,snake,뱀
 KindName,spider,거미
-KindName,tortle,
+KindName,tortle,토틀
 KindName,trapper,트래퍼
 KindName,troll,트롤
 KindName,umber,움버
@@ -3068,7 +3095,6 @@ LiteralText,abolition of firearms,총기 규제
 LiteralText,ABOUT,Pathos에 관하여
 LiteralText,About Pathos,Pathos에 관하여
 LiteralText,Abyss,심연
-LiteralText,accelerated animations,애니메이션 가속
 LiteralText,accelerated resting,빠른 휴식
 LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
@@ -3082,10 +3108,11 @@ LiteralText,ALL,전체
 LiteralText,ALL AT ONCE,한 번에 전부
 LiteralText,always,항상
 LiteralText,AMBIENT SOUNDS,앰비언트 사운드
-LiteralText,AMMO,탄환
 LiteralText,amnesia,망각
 LiteralText,AMNESIA,망각
 LiteralText,anatomy,해부학
+LiteralText,animate mount,생동화 탈것
+LiteralText,animate revenant,생동화 망령
 LiteralText,ANONYMOUS,익명
 LiteralText,anticlockwise 90 degrees,반시계 방향으로 90도
 LiteralText,any item,모든 아이템
@@ -3094,10 +3121,8 @@ LiteralText,Are you sure you want to escape the dungeon and end your adventure?,
 LiteralText,Are you sure you want to lose this character and end your adventure?,정말로 이 캐릭터를 잃고 모험을 끝내시겠습니까?
 LiteralText,ARE YOU SURE?,정말입니까?
 LiteralText,area of effect,효과 범위
-LiteralText,artifact,유물
 LiteralText,ARTIFACTS,유물
 LiteralText,ASCEND TO PREVIOUS LEVEL,이전 레벨로 올라감
-LiteralText,asleep,잠든
 LiteralText,assets,물건들
 LiteralText,ATMOSPHERE,장소
 LiteralText,attack modifier,명중 보정치
@@ -3123,8 +3148,6 @@ LiteralText,beta discussions,베타 버전에 대한 토론
 LiteralText,Black background,검은 배경
 LiteralText,Black Market,암시장
 LiteralText,blasphemy,신성모독
-LiteralText,blessed,축복받은
-LiteralText,BLESSED,축복
 LiteralText,BLINK,점멸
 LiteralText,Blink which direction?,어느 방향으로 점멸하시겠습니까?
 LiteralText,block,막다
@@ -3143,7 +3166,6 @@ LiteralText,BROKEN,부서짐
 LiteralText,burst rate,연발
 LiteralText,BUY,구매
 LiteralText,BUY ALL,전부 구매
-LiteralText,by Callan Hodgskin,Callan Hodgskin 개발
 LiteralText,CANCEL,취소
 LiteralText,cancellation,무효화
 LiteralText,CANCELLED,무효화됨
@@ -3167,8 +3189,6 @@ LiteralText,Character,캐릭터
 LiteralText,CHARACTER,캐릭터
 LiteralText,characters,캐릭터들
 LiteralText,charged items,충전된 아이템
-LiteralText,charm,매혹
-LiteralText,CHARMED,매료됨
 LiteralText,Chat on Discord,Discord에서 이야기하세요
 LiteralText,check for updates?,업데이트를 확인할까요?
 LiteralText,checking for updates,업데이트 확인중
@@ -3182,7 +3202,6 @@ LiteralText,click to retry,클릭하여 재시도
 LiteralText,Click to send detected issues to the author,클릭하여 제작자에게 문제점을 보고합니다
 LiteralText,CLOSE,닫기
 LiteralText,closed,닫힘
-LiteralText,CLOSED,담힘
 LiteralText,Coding on Medium,Medium에서 코딩
 LiteralText,coins,코인
 LiteralText,companion,동료
@@ -3218,22 +3237,19 @@ LiteralText,CREATE HORDE,군단 생성
 LiteralText,CREATE ITEM,아이템 생성
 LiteralText,CREATE SHOP,상점 생성
 LiteralText,CREATE SHRINE,신전 생성
+LiteralText,CREATE SPILL,휘발성 물질 생성
 LiteralText,CREATE TRAP,함정 생성
 LiteralText,CREATE WALL,벽 생성
 LiteralText,Create which direction?,어느 방향에 생성합니까?
 LiteralText,CREDITS,크레딧
 LiteralText,CROP,자르기
-LiteralText,cursed,저주받음
 LiteralText,CURSED,저주받음
 LiteralText,CUSTOM,커스텀
 LiteralText,CUSTOM HERO,커스텀 영웅
 LiteralText,CUSTOM MODULES,커스텀 모듈
-LiteralText,DAMAGE,데미지
 LiteralText,dark,어둠
-LiteralText,dark-hidden,비발광성
 LiteralText,DEAD END,막다른길
 LiteralText,death,죽음
-LiteralText,DEATH,죽음
 LiteralText,deathray,즉사 광선
 LiteralText,decapitation,참수
 LiteralText,DECEASED,사망함
@@ -3269,9 +3285,11 @@ LiteralText,Disable continue button,계속 버튼 비활성화
 LiteralText,disable haptic feedback,햅틱 피드백 비활성화
 LiteralText,Disable idle animations,유휴 애니메이션 비활성화
 LiteralText,Disable introduction boom,시작 폭발음 비활성화
+LiteralText,Disable mask animations,특수 배경 애니메이션 비활성화
 LiteralText,Disable online services,온라인 서비스 비활성화
 LiteralText,Disable pitch shifting,음색 변화 비활성화
 LiteralText,Disable spacebar real-time toggle,스페이스바 실시간 토글 비활성화
+LiteralText,Disable swipe gestures,스와이프 비활성화
 LiteralText,DISCONNECT,연결해제
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,연결이 끊겼습니다. 네트워크에 연결되어 있는지 확인하시고 모든 기기에 동일한 버전의 Pathos가 설치되어 있는지 확인하세요.
 LiteralText,Discuss on Reddit,레딧에서 의논하기.
@@ -3292,7 +3310,6 @@ LiteralText,downgrade to,다운그레이드:
 LiteralText,downloading update,업데이트 다운로드중
 LiteralText,drop,떨어트림
 LiteralText,DROP,떨어뜨리기
-LiteralText,DUAL,쌍수
 LiteralText,DUAL WIELD,쌍수 장비
 LiteralText,Dungeon,던전
 LiteralText,duration,지속 시간
@@ -3323,7 +3340,6 @@ LiteralText,ESCAPE,탈출
 LiteralText,escape traps,함정 탈출
 LiteralText,escape with,탈출 방법
 LiteralText,escaped,탈출
-LiteralText,ESCAPED,탈출함
 LiteralText,ESSENCE,정수
 LiteralText,evolution,진화
 LiteralText,Examine which object?,어떤 아이템을 관찰합니까?
@@ -3334,7 +3350,6 @@ LiteralText,EXPAND,확장
 LiteralText,EXPEL,방출
 LiteralText,experience,경험치
 LiteralText,EXPERIENCE,경험치
-LiteralText,EXPLODED,폭발함
 LiteralText,explosion,폭발
 LiteralText,EXPORT,내보내기
 LiteralText,extinctions,멸종
@@ -3350,7 +3365,6 @@ LiteralText,FEATURES,시설
 LiteralText,FEED,먹이기
 LiteralText,FEEDBACK,피드백
 LiteralText,FILES,파일
-LiteralText,Find out what is coming in the next update.,다음 업데이트 내용을 확인 하세요!
 LiteralText,fixed range,고정 사거리
 LiteralText,FIZZLE,쉬익!
 LiteralText,Floor,층
@@ -3395,10 +3409,8 @@ LiteralText,HIRE,고용
 LiteralText,HORDES,군단
 LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
-LiteralText,HUH?,응?
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,모험을 재미있게 즐기셨으면 좋겠고 피드백이나 건의사항이 있다면 얼마든지 저에게 보내주세요.
 LiteralText,identified items,식별된 아이템
-LiteralText,IDENTIFY,식별
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,땅에 떨어진 모든 아이템을 식별함
 LiteralText,ILLITERATE,문맹
 LiteralText,illusion,환영
@@ -3411,7 +3423,6 @@ LiteralText,Import a file,파일 불러오기
 LiteralText,IMPOSSIBLE,불가능
 LiteralText,in both hands,양손
 LiteralText,incarceration,투옥
-LiteralText,increase,증가
 LiteralText,INCREASE,증가
 LiteralText,INDEX,검색
 LiteralText,individual crafting,개별 제작
@@ -3424,7 +3435,7 @@ LiteralText,influenced actions,영향받는 행동
 LiteralText,INSCRIBE,필경
 LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
-LiteralText,INSTRUCT,지시
+LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
 LiteralText,insulation,절연
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
@@ -3462,7 +3473,6 @@ LiteralText,light,빛
 LiteralText,LIGHT,빛
 LiteralText,light radius,광원 범위
 LiteralText,limits,한계치
-LiteralText,"Links to all the supported platforms including iOS, Android and Windows.","iOS,안드로이드, 그리고 윈도우가 포함된 모든 플랫폼을 위한 링크"
 LiteralText,LIST,재료 목록
 LiteralText,lit,켜짐
 LiteralText,LIVING,살아있는
@@ -3480,7 +3490,6 @@ LiteralText,lose skill,숙련도 손실
 LiteralText,Lost Chambers,잃어버린 방
 LiteralText,LOW MANA,마나 부족
 LiteralText,Ludios Cache,Ludios 비밀 창고
-LiteralText,MAIN,주무장
 LiteralText,MAIN WIELD,주무장
 LiteralText,mana,마나
 LiteralText,MANA,마나
@@ -3489,14 +3498,13 @@ LiteralText,Map,지도
 LiteralText,MAP,지도
 LiteralText,material,물질
 LiteralText,Medusa Lair,메두사의 굴
-LiteralText,melting,
+LiteralText,melting,녹고있는
 LiteralText,MENU,메뉴
 LiteralText,mercenary,용병
 LiteralText,MIMIC,변장
 LiteralText,mimicking,따라하기
 LiteralText,Mines,광산
 LiteralText,Minetown,광산마을
-LiteralText,missile,투사체
 LiteralText,modifier,보정치
 LiteralText,MOUNT,승마
 LiteralText,Mount which direction?,어느 방향으로 올라탑니까?
@@ -3520,6 +3528,7 @@ LiteralText,no allies,동료 없음
 LiteralText,no ambient sounds,앰비언트 사운드 없음
 LiteralText,No appropriate items available,적합한 아이템이 없음
 LiteralText,no available knowledge,사용할 수 있는 지식이 없음
+LiteralText,no records found,기록이 없음
 LiteralText,no resistances,저항 없음
 LiteralText,no talents,재능 없음
 LiteralText,no transient effects,상태이상 없음
@@ -3545,14 +3554,12 @@ LiteralText,OR,또는
 LiteralText,ORIGINAL,오리지널
 LiteralText,OVERRIDE,덮어쓰기
 LiteralText,OVERVIEW,훑어보기
-LiteralText,PACIFIED,진정됨
 LiteralText,Palette,팔레트
 LiteralText,PARTY,파티
 LiteralText,passage,통로
 LiteralText,passive (no attacking),패시브 - 공격 비활성화
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos는 최대 4명의 플레이어가 분할 스크린에서 협동 모드로 같이 플레이할 수 있습니다.
-LiteralText,pathos development @ paypal or stripe,Pathos 개발자의 paypal 또는 stripe
-LiteralText,Pathos is free to play and developed for the love of the game.,Pathos는 무료로 플레이 할 수 있고 순수히 게임을 좋아서 개발되었습니다.
+LiteralText,pathos development @ paypal,Pathos 개발자의 paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,당신의 모험을 불러올 수 없습니다. 원인 분석을 위해 제게 세이브 파일을 전송해 주십시오. 앱을 업데이트해서 문제 해결이 가능할지도 모르니 양해 부탁드립니다.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos는 넷핵의 다음 단계가 될지도 모릅니다.
 LiteralText,penalty,패널티
@@ -3576,7 +3583,6 @@ LiteralText,POLYMORPHED,폴리모프됨
 LiteralText,portal,포탈
 LiteralText,porter,운송기
 LiteralText,PRAY,기도
-LiteralText,PRAYING,기도중
 LiteralText,preservation,보존
 LiteralText,prevent revenant levels,망령 레벨 방지
 LiteralText,prisoner,죄수
@@ -3632,10 +3638,8 @@ LiteralText,resident?,주민?
 LiteralText,resistances,저항
 LiteralText,RESISTS,저항함
 LiteralText,Rest,초기화
-LiteralText,REST,휴식
 LiteralText,Rest how many turns?,몇 턴을 쉴까요?
 LiteralText,restarting to update,업데이트를 위해 재실행
-LiteralText,RESTING,휴식중
 LiteralText,RESTORED,복구됨
 LiteralText,RESURRECT,부활
 LiteralText,Resurrect and continue,부활 및 게임 재개
@@ -3645,8 +3649,9 @@ LiteralText,RETURN,돌아오기
 LiteralText,RE-USE,재사용
 LiteralText,REVEAL,밝힘
 LiteralText,REVEAL ALL MAPS,모든 지도를 밝힘
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,이 지도를 밝힘
 LiteralText,revealed,드러남
+LiteralText,revenant,레버넌트
 LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
@@ -3665,7 +3670,6 @@ LiteralText,SCRAP,분해
 LiteralText,SEALED,봉인됨
 LiteralText,Search,탐색
 LiteralText,Search how many turns?,몇 턴 동안 탐색할까요?
-LiteralText,SEARCHING,탐색중
 LiteralText,secret,비밀
 LiteralText,SECRET,비밀
 LiteralText,seed,시드
@@ -3687,13 +3691,11 @@ LiteralText,SET DIFFICULTY,난이도 설정
 LiteralText,set starting location,시작 지점 설정
 LiteralText,SETTINGS,설정
 LiteralText,sfx volume,효과음
-LiteralText,Share your tragic and heroic stories with other players.,다른 플레이어들과 비극적인 영웅담을 나눠보세요.
 LiteralText,SHARE//exchange,공유
 LiteralText,SHARE//publish,공유
 LiteralText,SHOPS,상점
 LiteralText,Show debugging information,디버깅 정보 표시
 LiteralText,Show time clock,시계 표시
-LiteralText,Show your appreciation by helping to introduce more players to Pathos.,Pathos가 마음에 드신가요? 이 게임을 다른사람들 에게 소개해주세요!
 LiteralText,SHRINES,제단
 LiteralText,SIGN-IN,로그인
 LiteralText,size,크기
@@ -3749,7 +3751,6 @@ LiteralText,terrain,지형
 LiteralText,The attack score is your aptitude for hitting an opponent.,공격 점수는 당신이 적을 공격한 가능성이다.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,이 게임 개발의 목적은 역대 최고의 게임이 될 수 있었던 근본을 유지하면서 게임 시스템을 개선하는 것입니다.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,방어 점수는 당신이 적의 공격에서 얼마나 방어했는지이다.
-LiteralText,There are no known polymorphs,알고있는 폴리모프 형태가 없음.
 LiteralText,There is a new update available!,새로운 업데이트가 있습니다!
 LiteralText,there is nothing to place here,컨테이너에 넣을 것이 없다.
 LiteralText,there is nothing to remove here,비어 있음
@@ -3767,7 +3768,6 @@ LiteralText,TOO HEAVY,너무 무거움
 LiteralText,TOO HUNGRY,너무 배고픔
 LiteralText,TOO SMALL,너무 작음
 LiteralText,TOO WEAK,너무 약함
-LiteralText,touch,접촉
 LiteralText,TRACKS,음악
 LiteralText,TRADE,거래
 LiteralText,transform to,변신하다
@@ -3818,18 +3818,17 @@ LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
+LiteralText,VOLATILES,휘발성 물질
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
-LiteralText,WAITING,대기중
 LiteralText,WARPING,워프증
 LiteralText,was killed,죽었다
-LiteralText,was strangled,목이 졸렸다
 LiteralText,weakness to,약점 :
 LiteralText,weight,무게
 LiteralText,when afflicted,감염 받을 시
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,애니메이션 됐을때
+LiteralText,when confused,혼란일때
 LiteralText,when dropped,떨어뜨릴 시
 LiteralText,when entered,들어갔을 때
 LiteralText,when exhausted,발동횟수 소진시
@@ -3843,16 +3842,17 @@ LiteralText,WRONG WAY,옳지 않은 길
 LiteralText,"You are playing as anonymous, please register!",익명으로 플레이중입니다. 등록해주세요!
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,눈 버튼을 눌러 비밀 문을 찾아야 할 수 도 있습니다.
 LiteralText,Your current movement and action speed in squares per second.,현재 당신의 이동 및 행동 속도.
-LiteralText,Your feedback is appreciated and will influence my development plans.,피드백을 보내주시면 감사하겠습니다. 또한 피드백을 따라 개발 계획이 조정됩니다.
 LiteralText,ZOOM,줌
 LiteralText,ZOOS,서식지
 LiteralText,zZz,쿨쿨쿨
-LocalityName,Level,층
-LocalityName,Map,지도
-LocalityName,Site,지역
-LocalityName,Square,칸
-LocalityName,World,월드
-LocalityName,Zone,구역
+LocalityName,area,영역
+LocalityName,level,층
+LocalityName,map,지도
+LocalityName,site,지역
+LocalityName,square,칸
+LocalityName,world,월드
+LocalityName,zone,구역
+MaterialName,adamantine,아다만티움
 MaterialName,air,공기
 MaterialName,animal,동물
 MaterialName,bone,뼈
@@ -3891,19 +3891,21 @@ MotionPastName,ate,먹었다
 MotionPastName,captured,붙잡은
 MotionPastName,chanted,낭송했다
 MotionPastName,constructed,만들었다
+MotionPastName,copied,복사했다
 MotionPastName,dipped,담궜다
-MotionPastName,divined,점쳤다
+MotionPastName,divined,신성확인 했다
 MotionPastName,drank,마셨다
 MotionPastName,dug,팠다
 MotionPastName,emptied,비웠다
 MotionPastName,exchanged,교환했다
 MotionPastName,flashed,플래시를 켰다
 MotionPastName,inscribed,필경했다
+MotionPastName,mounted,위에 올라탔다
 MotionPastName,opened,열었다
 MotionPastName,packed,포장했다
 MotionPastName,played,연주했다
 MotionPastName,prayed,기도했다
-MotionPastName,quaffed,마셨다
+MotionPastName,quaffed,홀짝였다
 MotionPastName,read,읽었다
 MotionPastName,reclined,기울였다
 MotionPastName,refilled,채웠다
@@ -3923,22 +3925,24 @@ MotionPresentName,anoint,바르기
 MotionPresentName,capture,붙잡기
 MotionPresentName,chant,찬송하기
 MotionPresentName,construct,만들었다
+MotionPresentName,copy,복사하기
 MotionPresentName,dig,땅파기
 MotionPresentName,dip,담그기
-MotionPresentName,divine,점치기
+MotionPresentName,divine,신성확인
 MotionPresentName,drink,마시기
 MotionPresentName,eat,먹기
 MotionPresentName,empty,비우기
 MotionPresentName,exchange,교환
 MotionPresentName,flash,플래시 켜기
 MotionPresentName,inscribe,필경하기
+MotionPresentName,mount,타기
 MotionPresentName,open,열기
 MotionPresentName,pack,포장한다
 MotionPresentName,play,연주하기
 MotionPresentName,pray,기도하기
-MotionPresentName,quaff,마시기
+MotionPresentName,quaff,홀짝이기
 MotionPresentName,read,읽기
-MotionPresentName,recline,기울이기
+MotionPresentName,recline,자기
 MotionPresentName,refill,채우기
 MotionPresentName,release,놓아주기
 MotionPresentName,rename,이름 변경
@@ -3952,9 +3956,9 @@ MotionPresentName,study,학습하기
 MotionPresentName,swat,후려치기
 MotionPresentName,write,쓰기
 MotionPresentName,zap,발동
-MurderTypeName,Allied,동맹
-MurderTypeName,Every,모든
-MurderTypeName,Hostile,적대
+MurderTypeName,allied,동맹
+MurderTypeName,every,모든
+MurderTypeName,hostile,적대
 PlatformDescription,This hardwood bridge has a solid integrity despite many years of use.,이 나무 다리는 만들어진지 오랜 세월이 지났음에도 튼튼함을 유지하고 있다.
 PlatformName,crystal bridge,수정 다리
 PlatformName,wooden bridge,나무 다리
@@ -3981,7 +3985,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,응시와 광선 공격이 시전자에게 반사된다.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,사전에 몬스터의 위치와 위험도를 경고한다.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,공포에 질려 공격할 수 없고 도망쳐야만한다.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","술에 열광적으로 취한 상태, 당신의 야만적인 용기는 최악의 선택과 동행하게된다."
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,던전을 조용히 다니며 잠자는 몬스터에게 몰래 다가갈 수 있다.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"폴리모프를 방지하지만, 원래 모습으로 돌아오는 것 또한 방지한다."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",느려지거나 마비 또는 그 외의 움직임을 제한하는 효과로부터 보호받는다.
@@ -4049,7 +4053,7 @@ PropertyName,free action,자유 행동
 PropertyName,fumbling,실수
 PropertyName,hallucination,환각
 PropertyName,hunger,굶주림
-PropertyName,inebriation,
+PropertyName,inebriation,술취함
 PropertyName,invisibility,투명화
 PropertyName,jumping,점프
 PropertyName,levitation,공중부양
@@ -4174,15 +4178,15 @@ RaceName,ogre//non-binary,오우거
 RaceName,orc//female,오크
 RaceName,orc//male,오크
 RaceName,orc//non-binary,오크
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,플라스마이드
+RaceName,plasmoid//male,플라스마이드
+RaceName,plasmoid//non-binary,플라스마이드
 RaceName,satyr//female,사티로스
 RaceName,satyr//male,사티로스
 RaceName,satyr//non-binary,사티로스
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,토틀
+RaceName,tortle//male,토틀
+RaceName,tortle//non-binary,토틀
 RaceName,troll//female,트롤
 RaceName,troll//male,트롤
 RaceName,troll//non-binary,트롤
@@ -4323,7 +4327,7 @@ SkillName,conjuration,소환술
 SkillName,crafting,제작
 SkillName,crossbow,쇠뇌
 SkillName,dart,다트
-SkillName,disc,
+SkillName,disc,디스크
 SkillName,divination,점성술
 SkillName,dual wielding,쌍수 무기
 SkillName,enchantment,부여술
@@ -4356,11 +4360,11 @@ SkillName,unarmed combat,맨손 격투
 SkillName,whip,채찍
 SonicName,ammo,탄환
 SonicName,amulet,아뮬렛
-SonicName,arf,
+SonicName,arf,멍멍
 SonicName,armour,방어구
 SonicName,baa,메에
 SonicName,bell,종 소리
-SonicName,birds,
+SonicName,birds,새
 SonicName,bleat,음메에에
 SonicName,blink,점멸
 SonicName,book,책
@@ -4368,14 +4372,14 @@ SonicName,bow fire,활 발사
 SonicName,broken barrel,부서진 통
 SonicName,broken boulder,부서진 바위
 SonicName,broken door,부서진 문
-SonicName,broken glass,부서진 유리
+SonicName,broken glass,깨진 유리
 SonicName,broken lock,자물쇠 부서짐
 SonicName,bugle,나팔
 SonicName,burble,발버둥
 SonicName,burn,불 탐
 SonicName,buzz,웅웅거림
 SonicName,cackle,재잘거림
-SonicName,chains,
+SonicName,chains,철컹거림
 SonicName,chant,찬송
 SonicName,chime,알림 소리
 SonicName,chirp,지저귐
@@ -4389,7 +4393,7 @@ SonicName,creak,삐걱이는 판자
 SonicName,crumble,부스럭
 SonicName,death,죽음
 SonicName,dice,주사위
-SonicName,drips,
+SonicName,drips,뚝뚝 떨어짐
 SonicName,drum,드럼
 SonicName,eat,섭취
 SonicName,electricity,전기 충격
@@ -4410,7 +4414,7 @@ SonicName,gas,가스
 SonicName,gem,보석
 SonicName,gibber,횡설수설함
 SonicName,giggle,낄낄거림
-SonicName,groan,신음
+SonicName,groan,끄응거림
 SonicName,growl,으르렁거림
 SonicName,grumble,투덜거림
 SonicName,grunt,끙끙거림
@@ -4425,7 +4429,7 @@ SonicName,kick,발차기
 SonicName,launch grenade,유탄 발사
 SonicName,launch rocket,로켓 발사
 SonicName,leather,깃털
-SonicName,leaves,
+SonicName,leaves,떠남
 SonicName,lit fuse,신관 점화
 SonicName,locked,잠김
 SonicName,long tap,토옥톡
@@ -4447,17 +4451,17 @@ SonicName,pistol fire,권총 발사
 SonicName,polymorph,폴리모프
 SonicName,potion,물약
 SonicName,prayer,기도
-SonicName,quaff,마시기
+SonicName,quaff,홀짝이기
 SonicName,read,읽기
 SonicName,realtime,실시간
 SonicName,rifle burst,돌격소총 연발
 SonicName,rifle shot,장총 발사
 SonicName,ring,반지
 SonicName,roar,으르렁
-SonicName,roars,
+SonicName,roars,크아앙
 SonicName,scrap,분해
 SonicName,scrape,긁힘
-SonicName,scrapes,
+SonicName,scrapes,긁음
 SonicName,scroll,주문서
 SonicName,scuttle,종종걸음
 SonicName,sever,절단
@@ -4476,11 +4480,11 @@ SonicName,splat,튐
 SonicName,squall,돌풍
 SonicName,squawk,꽥꽥거림
 SonicName,squeak,끼익
-SonicName,squeaks,
+SonicName,squeaks,찍찍
 SonicName,squeal,꽤액거림
 SonicName,swallow,삼킴
 SonicName,switch,깜빡
-SonicName,taps,
+SonicName,taps,툭
 SonicName,teleport,텔레포트
 SonicName,throne,왕좌
 SonicName,throw grenade,수류탄 투척
@@ -4514,23 +4518,23 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","고도로 숙련된 수분 원소의 종복, 적을 분쇄하는 폭발성 구체를 소환할 수 있다."
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,평생에 걸친 공부 덕에 신체능력을 대가로 책에 더 집중할 수 있었다.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,플롯 아머에 의존하는 주인공 증후군 환자. 현실의 벽을 마주할 운명이다.
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","당신은 살아있는 유리로 재작되어 에너지를 반사하고 빛을 반사한다, 당신은 완벽하지만 깨지기쉬운 태생이 당신의 선천적인 약점이다."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.",살이 없어서 진정한 삶이라고는 할 수 없지만 나름의 장점을 가지고 어떻게든 살아 있는 존재.
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"습관적으로 항상 술에 취해 뻔뻔하고 불안한 모험가다,일단 그들에게 알파벳을 거꾸로 말하라고는 하면 안됄것같다."
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","당신의 위치가 불확실해지며, 당신은 어디에나 항상 존재하고 있는것이 당연하게 된다."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.",죄의 유무와 무관하게 억류에서 벗어나고자 하는 이들.
 SpecialName,colossus,초거대
-SpecialName,drunkard,
+SpecialName,drunkard,주정뱅이
 SpecialName,earth,대지
 SpecialName,flame,화염
 SpecialName,frost,서리
 SpecialName,fugitive,도망자
-SpecialName,glass,
+SpecialName,glass,유리
 SpecialName,midget,난쟁이
 SpecialName,noble,귀족
 SpecialName,protagonist,주인공
 SpecialName,psychic,초능력자
-SpecialName,quantum,
+SpecialName,quantum,양자
 SpecialName,scholar,학자
 SpecialName,shock,전격
 SpecialName,skeleton,해골
@@ -4645,6 +4649,10 @@ TraversalPastName,travelled,이동했다
 TraversalPresentName,ascend,오르기
 TraversalPresentName,descend,내려가기
 TraversalPresentName,travel,이동하기
+VolatileName,blaze,불
+VolatileName,electricity,전기
+VolatileName,freeze,얼음
+VolatileName,steam,증기
 WallStructureName,illusionary,환상
 WallStructureName,permanent,영구
 WallStructureName,solid,견고

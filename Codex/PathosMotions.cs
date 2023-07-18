@@ -52,6 +52,11 @@ namespace Pathos
         M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
 
+      copy = AddMotion("copy", "copied", Attributes.intelligence, M =>
+      {
+        M.UseAnatomy(Anatomies.hands);
+      });
+
       dig = AddMotion("dig", "dug", Attributes.strength, M =>
       {
         M.Digging = true;
@@ -87,9 +92,23 @@ namespace Pathos
         M.UseAnatomy(Anatomies.eyes, Anatomies.mind);
       });
 
+      inscribe = AddMotion("inscribe", "inscribed", Attributes.wisdom, M =>
+      {
+        M.Inscribing = true;
+        M.UseVision = true;
+        M.UseConcentration = true;
+        M.PractisingSkill = Skills.literacy;
+        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
+      });
+
       flash = AddMotion("flash", "flashed", Attributes.dexterity, M =>
       {
         M.UseAnatomy(Anatomies.hands);
+      });
+
+      mount = AddMotion("mount", "mounted", Attributes.dexterity, M =>
+      {
+        M.Grounding = true;
       });
 
       open = AddMotion("open", "opened", Attributes.strength, M =>
@@ -152,15 +171,6 @@ namespace Pathos
         M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
       });
 
-      inscribe = AddMotion("inscribe", "inscribed", Attributes.wisdom, M =>
-      {
-        M.Inscribing = true;
-        M.UseVision = true;
-        M.UseConcentration = true;
-        M.PractisingSkill = Skills.literacy;
-        M.UseAnatomy(Anatomies.hands, Anatomies.eyes, Anatomies.mind);
-      });
-
       rub = AddMotion("rub", "rubbed", Attributes.strength, M =>
       {
         M.UseAnatomy(Anatomies.hands);
@@ -186,13 +196,13 @@ namespace Pathos
         M.UseAnatomy(Anatomies.hands, Anatomies.mind);
       });
 
+      recline = AddMotion("recline", "reclined", Attributes.constitution, M =>
+      {
+      });
+
       sit = AddMotion("sit", "sat", Attributes.dexterity, M =>
       {
         M.Grounding = true;
-      });
-
-      recline = AddMotion("recline", "reclined", Attributes.constitution, M =>
-      {
       });
 
       stake = AddMotion("stake", "staked", Attributes.strength, M =>
@@ -235,6 +245,7 @@ namespace Pathos
     public readonly Motion capture;
     public readonly Motion chant;
     public readonly Motion construct;
+    public readonly Motion copy;
     public readonly Motion dig;
     public readonly Motion dip;
     public readonly Motion divine;
@@ -243,22 +254,23 @@ namespace Pathos
     public readonly Motion empty;
     public readonly Motion exchange;
     public readonly Motion flash;
+    public readonly Motion inscribe;
+    public readonly Motion mount;
     public readonly Motion open;
     public readonly Motion pack;
     public readonly Motion play;
     public readonly Motion pray;
     public readonly Motion quaff;
     public readonly Motion read;
+    public readonly Motion recline;
     public readonly Motion refill;
     public readonly Motion release;
     public readonly Motion rename;
-    public readonly Motion inscribe;
     public readonly Motion rub;
     public readonly Motion sacrifice;
     public readonly Motion scry;
     public readonly Motion set;
     public readonly Motion sit;
-    public readonly Motion recline;
     public readonly Motion stake;
     public readonly Motion study;
     public readonly Motion swat;

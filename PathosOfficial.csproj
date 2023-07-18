@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="Codex\PathosAfflictions.cs" />
     <Compile Include="Codex\PathosAnatomies.cs" />
-    <Compile Include="Codex\PathosApetites.cs" />
+    <Compile Include="Codex\PathosAppetites.cs" />
     <Compile Include="Codex\PathosAtmospheres.cs" />
     <Compile Include="Codex\PathosAttackTypes.cs" />
     <Compile Include="Codex\PathosAttributes.cs" />
@@ -108,6 +108,7 @@
     <Compile Include="Codex\PathosStrikes.cs" />
     <Compile Include="Codex\PathosTracks.cs" />
     <Compile Include="Codex\PathosTricks.cs" />
+    <Compile Include="Codex\PathosVolatiles.cs" />
     <Compile Include="Codex\PathosWarnings.cs" />
     <Compile Include="Codex\PathosZoos.cs" />
     <Compile Include="Modules\PathosDhak.cs" />
@@ -140,8 +141,7 @@
 
   <!-- Automatically regenerates the Resources files -->
   <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
-    <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
-    <Exec Condition=" '$(PathosDeveloper)' != 'OpenSource' " Command="&quot;$(ProjectDir)..\..\..\Forge\Inv\InvGen\bin\Debug\net48\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
+    <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
   
   <!-- Make the Atlases and Albums -->

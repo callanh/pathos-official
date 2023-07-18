@@ -46,10 +46,12 @@ namespace Pathos
       altar = AddFeature("altar", Materials.stone, Chance.OneIn60, Glyphs.altar, F =>
       {
         F.Sonic = Sonics.prayer;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(200000);
 
         // TODO: can't use the altar at all, when shunned.
 
-        F.DropApply.Karma(ChangeType.Decrease, Dice.Fixed(5));
+        F.DropApply.DecreaseKarma(Dice.Fixed(5));
         F.DropApply.Divine();
 
         F.DestroyStrike = Strikes.holy;
@@ -61,11 +63,11 @@ namespace Pathos
 
         var DivineUse = F.AddUse(Codex.Motions.divine, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
         DivineUse.SetCast().FilterDivined(false);
-        DivineUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(5));
+        DivineUse.Apply.DecreaseKarma(Dice.Fixed(5));
         DivineUse.Apply.Divine();
 
         var PrayUse = F.AddUse(Codex.Motions.pray, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
-        PrayUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(200));
+        PrayUse.Apply.DecreaseKarma(Dice.Fixed(200));
         PrayUse.Apply.WithSourceSanctity
         (
           B =>
@@ -95,9 +97,11 @@ namespace Pathos
       bed = AddFeature("bed", Materials.wood, Chance.OneIn120, Glyphs.bed, F =>
       {
         F.Sonic = Sonics.scrape; // TODO: Sonics.snore?
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(18000);
 
         F.DestroyApply.ConvertFixture(bed, Devices.squeaky_board);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var ReclineUse = F.AddUse(Codex.Motions.recline, Utility: null, Delay.FromTurns(20), Sonics.magic, Audibility: 1); // springs creak softly.
         ReclineUse.Apply.WithSourceSanctity
@@ -130,6 +134,8 @@ namespace Pathos
       fountain = AddFeature("fountain", Materials.stone, Chance.OneIn10, Glyphs.fountain, F =>
       {
         F.Sonic = Sonics.water_splash;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyExplosion = Codex.Explosions.watery;
         F.DestroyApply.Harm(Elements.water, Dice.Zero);
@@ -187,9 +193,9 @@ namespace Pathos
         DipUse.Apply.ConvertAsset(Stocks.book, WholeStack: true, Items.book_of_blank_paper);
         DipUse.Apply.WithSourceSanctity
         (
-          B => B.Sanctify(null, Sanctities.Blessed),
+          B => B.Sanctify(Item: null, Sanctities.Blessed),
           U => U.Nothing(),
-          C => C.Sanctify(null, Sanctities.Cursed)
+          C => C.Sanctify(Item: null, Sanctities.Cursed)
         );
         Abuse(DipUse.Apply);
 
@@ -198,9 +204,9 @@ namespace Pathos
         AnointUse.Apply.Harm(Elements.water, Dice.Zero);
         AnointUse.Apply.WithSourceSanctity
         (
-          B => B.Sanctify(null, Sanctities.Blessed),
+          B => B.Sanctify(Item: null, Sanctities.Blessed),
           U => U.Nothing(),
-          C => C.Sanctify(null, Sanctities.Cursed)
+          C => C.Sanctify(Item: null, Sanctities.Cursed)
         );
         Abuse(AnointUse.Apply);
 
@@ -220,14 +226,16 @@ namespace Pathos
       grave = AddFeature("grave", Materials.stone, Chance.OneIn60, Glyphs.grave, F =>
       {
         F.Sonic = Sonics.groan;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(grave, Devices.pit);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var DigUse = F.AddUse(Codex.Motions.dig, null, Delay.FromTurns(50), Sonics.pick_axe, Audibility: 10);
         DigUse.SetCast().FilterItem(Items.pickaxe, Items.dwarvish_mattock, Items.Colossal_Excavator, Items.wand_of_digging).SetAssetIndividualised(); // use a charge for the wand of digging.
         DigUse.Apply.ConvertFixture(grave, Devices.pit);
-        DigUse.Apply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        DigUse.Apply.DecreaseKarma(Dice.Fixed(50));
 
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateEntity(1.d3(), Kinds.Undead.ToArray()));
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateAsset(1.d2()));
@@ -236,9 +244,11 @@ namespace Pathos
       sarcophagus = AddFeature("sarcophagus", Materials.stone, Chance.OneIn120, Glyphs.sarcophagus, F =>
       {
         F.Sonic = Sonics.scrape;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(200000);
 
         F.DestroyApply.ConvertFixture(sarcophagus, Devices.hole);
-        F.DestroyApply.Karma(ChangeType.Decrease, Dice.Fixed(50));
+        F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var OpenUse = F.AddUse(Codex.Motions.open, null, Delay.FromTurns(20), Sonics.scrape, Audibility: 10);
         OpenUse.Apply.ConvertFixture(sarcophagus, Device: null);
@@ -248,8 +258,8 @@ namespace Pathos
         OpenUse.Apply.WhenProbability(Table =>
         {
           Table.Add(30, A => A.CreateEntity(Dice.One, Kinds.mummy));
-          Table.Add(20, A => A.CreateAsset(Dice.One, new[] { Items.animal_corpse, Items.vegetable_corpse }));
-          Table.Add(15, A => A.CreateAsset(10.d100(), Items.gold_coin));
+          Table.Add(20, A => A.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse }));
+          Table.Add(15, A => A.CreateAsset(Dice.One, 10.d100(), Items.gold_coin));
           Table.Add(10, A => A.CreateAsset(2.d3() + 1, new[] { Stocks.ring, Stocks.amulet, Stocks.gem, Stocks.wand, Stocks.scroll, Stocks.potion, Stocks.book }));
           Table.Add(5, A => A.PlaceCurse(1.d4() + 1, Sanctities.Cursed));
           Table.Add(5, A => A.ApplyTransient(Properties.hunger, 10.d100() + 100));
@@ -262,13 +272,15 @@ namespace Pathos
       pentagram = AddFeature("pentagram", Materials.wax, Chance.OneIn90, Glyphs.pentagram, F =>
       {
         F.Sonic = Sonics.chant;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(10000);
 
         F.DestroyExplosion = Codex.Explosions.fiery;
         F.DestroyApply.Harm(Elements.fire, Dice.Zero);
         F.DestroyApply.ConvertFixture(pentagram, Devices.fire_trap);
 
         var ChantUse = F.AddUse(Codex.Motions.chant, null, Delay.FromTurns(20), Sonics.chant, Audibility: 5);
-        ChantUse.Apply.Light(IsLit: false);
+        ChantUse.Apply.Light(IsLit: false, Locality.Area);
         //ChantUse.Apply.WhenTargetKind(new[] { Kinds.echo }, T => T.Energise(Dice.Fixed(50), Modifier.Zero)); // TODO: good or bad idea?
         ChantUse.Apply.WithSourceSanctity
         (
@@ -314,6 +326,8 @@ namespace Pathos
       stall = AddFeature("stall", Materials.wood, Chance.Never, Glyphs.stall, F =>
       {
         F.Sonic = Sonics.creak; // NOTE: stalls don't make a chime SFX when they are unoccupied (rely on Shop.Sonic).
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(25000);
 
         F.DestroyApply.ConvertFixture(stall, Devices.entropy_trap);
 
@@ -329,6 +343,7 @@ namespace Pathos
       {
         F.Sonic = Sonics.throne;
         F.Mountable = true;
+        F.Weight = Weight.FromUnits(35000);
 
         F.DestroyApply.ConvertFixture(throne, Devices.trapdoor);
 
@@ -350,7 +365,7 @@ namespace Pathos
           Table.Add(1, A =>
           {
             A.ApplyTransient(Properties.blindness, 1.d100() + 250);
-            A.Sanctify(null, Sanctities.Cursed);
+            A.PlaceCurse(Dice.One, Sanctities.Cursed);
           });
           Table.Add(1, A => A.Mapping(Range.Sq30, Chance.Always));
           Table.Add(1, A => A.GainTalent(Properties.see_invisible));
@@ -360,7 +375,7 @@ namespace Pathos
           Table.Add(1, A => A.Identify(All: true, Sanctity: null)); // identify all items in inventory.
           Table.Add(1, A => A.ApplyTransient(Properties.stunned, 1.d7() + 16));
           Table.Add(1, A => A.GainSkill(RandomPoints: false, Codex.Skills.heavy_armour));
-          Table.Add(1, A => A.AnimateObjects(Corrupt: null));
+          Table.Add(1, A => A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null));
           Table.Add(1, A => A.EnchantUp(Dice.One)); // enchant a random item.
           Table.Add(1, A => A.Energise(Dice.Zero, Modifier.FromRank(4))); // increase maximum mana.
           Table.Add(1, A => A.Heal(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.
@@ -373,6 +388,8 @@ namespace Pathos
       {
         F.Description = "This well-worn table is imbued with the ancient magics of creation and destruction.";
         F.Sonic = Sonics.craft;
+        F.Mountable = true;
+        F.Weight = Weight.FromUnits(50000);
 
         var Workbench = F.SetWorkbench();
         Workbench.CraftSkill = Skills.crafting;
@@ -381,10 +398,10 @@ namespace Pathos
         Workbench.ScrapSonic = Sonics.scrap;
 
         /*01*/
-        Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false));
+        Workbench.AddAccident(Codex.Explosions.dark, A => A.Light(false, Locality.Area));
         /*02*/Workbench.AddAccident(Codex.Explosions.light, A =>
         {
-          A.Light(true);
+          A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 3.d100());
         });
         /*03*/Workbench.AddAccident(Codex.Explosions.watery, A =>
@@ -404,12 +421,12 @@ namespace Pathos
 
         /*11*/Workbench.AddAccident(Codex.Explosions.dark, A => 
         {
-          A.Light(false);
+          A.Light(false, Locality.Area);
           A.CreateHorde(Dice.One, Targeted: true);
         });
         /*12*/Workbench.AddAccident(Codex.Explosions.light, A => 
         {
-          A.Light(true);
+          A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 4.d100());
           A.CreateHorde(Dice.One, Targeted: true);
         });

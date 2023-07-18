@@ -139,7 +139,7 @@ namespace Pathos
           B.Description = "Bless one item in your inventory or on the ground.";
           B.Cost = 250;
           B.SetCast().FilterSanctity(Sanctities.Uncursed);
-          B.Apply.Sanctify(null, Sanctities.Blessed);
+          B.Apply.Sanctify(Item: null, Sanctities.Blessed);
         });
 
         S.AddBoon("purify", B =>
@@ -178,7 +178,7 @@ namespace Pathos
         {
           B.Description = "Request a fresh corpse with no questions asked.";
           B.Cost = 100;
-          B.Apply.CreateAsset(Dice.One, new[] { Items.animal_corpse, Items.vegetable_corpse });
+          B.Apply.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse });
         });
 
         S.AddBoon("tinned meat", B =>
@@ -249,7 +249,7 @@ namespace Pathos
           B.Description = "Bless one item in your inventory or on the ground.";
           B.Cost = 250;
           B.SetCast().FilterSanctity(Sanctities.Uncursed);
-          B.Apply.Sanctify(null, Sanctities.Blessed);
+          B.Apply.Sanctify(Item: null, Sanctities.Blessed);
         });
 
         S.AddBoon("unicorn friend", B =>

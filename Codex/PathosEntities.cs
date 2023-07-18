@@ -38,7 +38,9 @@ namespace Pathos
       CodexStocks Stocks = null;
       CodexItems Items = null;
       CodexSpells Spells = null;
+      CodexVolatiles Volatiles = null;
       Stock[] SentientGreed = null;
+      Stock[] GolemGreed = null;
       Stock[] GuardianGreed = null;
       Item[] GoodCloakItemArray = null;
       Item[] GoodAmuletItemArray = null;
@@ -48,8 +50,10 @@ namespace Pathos
         Stocks = Codex.Stocks;
         Items = Codex.Items;
         Spells = Codex.Spells;
+        Volatiles = Codex.Volatiles;
         SentientGreed = new[] { Stocks.book, Stocks.potion, Stocks.scroll, Stocks.wand, Stocks.ring, Stocks.amulet, Stocks.gem };
         GuardianGreed = new[] { Stocks.gem };
+        GolemGreed = Array.Empty<Stock>();
 
         GoodCloakItemArray = Stocks.armour.Items.Where(I => I.Type == ItemType.Cloak && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
         GoodAmuletItemArray = Stocks.amulet.Items.Where(I => I.Type == ItemType.Amulet && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
@@ -3471,6 +3475,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.flame, 2.d4() + 4);
           K.Apply.Harm(Elements.fire, 4.d5());
+          K.Apply.WhenChance(Chance.OneIn2, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 50));
         });
         E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
@@ -5237,13 +5242,13 @@ namespace Pathos
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 5.d10());
+          A.Apply.DecreaseKarma(5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 10.d10());
+          A.Apply.DecreaseKarma(10.d10());
           //A.Apply.WhenChance(Chance.OneIn100, Z => Z.Afflict(Codex.Afflictions.crabs)); // funny but doesn't make sense.
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.constitution);
@@ -6019,13 +6024,13 @@ namespace Pathos
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 5.d10());
+          A.Apply.DecreaseKarma(5.d10());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3() + 1, A =>
         {
           A.Apply.SpecialDisarm();
           A.Apply.ApplyTransient(Properties.silence, 4.d6() + 4);
-          A.Apply.Karma(ChangeType.Decrease, 10.d10());
+          A.Apply.DecreaseKarma(10.d10());
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.constitution);
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
@@ -9205,6 +9210,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
           K.Apply.Harm(Elements.shock, 8.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.electricity, 1.d100() + 150));
         });
         // +7 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());  // +7 from str.
@@ -9496,6 +9502,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
           K.Apply.Harm(Elements.fire, 12.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -9664,6 +9671,7 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
           K.Apply.Harm(Elements.cold, 8.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -11095,6 +11103,7 @@ namespace Pathos
         {
           K.SetCast().Explosion(Explosions.fiery, Dice.Zero);
           K.Apply.Harm(Elements.fire, 3.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.cold, Elements.water);
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d6(), Modifier.Zero));
@@ -11146,6 +11155,7 @@ namespace Pathos
           K.SetCast().Explosion(Explosions.frosty, Dice.Zero);
           K.Apply.Harm(Elements.cold, 3.d9());
           K.Apply.UnlessTargetResistant(Elements.cold, T => T.ApplyTransient(Properties.paralysis, 1.d3() + 3));
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.fire);
         E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d6(), Modifier.Zero));
@@ -11249,6 +11259,7 @@ namespace Pathos
         {
           K.SetCast().Explosion(Explosions.electric, Dice.Zero);
           K.Apply.Harm(Elements.shock, 5.d6());
+          K.Apply.WhenChance(Chance.OneIn5, T => T.CreateSpill(Volatiles.electricity, 1.d50() + 50));
         });
         E.SetCorpse(Chance.Never);
       });
@@ -11353,6 +11364,7 @@ namespace Pathos
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
           R.Apply.Harm(Elements.cold, 10.d4());
+          R.Apply.WhenChance(Chance.OneIn4, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
         });
         E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
@@ -11450,6 +11462,7 @@ namespace Pathos
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
           R.Apply.Harm(Elements.fire, 10.d4());
+          R.Apply.WhenChance(Chance.OneIn4, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
         });
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
@@ -12329,7 +12342,8 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.light, Dice.Zero);
-          R.Apply.Light(true);
+          R.Apply.Light(true, Locality.Area);
+          R.Apply.ApplyTransient(Properties.blindness, 3.d70());
         });
         E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.strength);
         E.SetCorpse(Chance.OneIn3);
@@ -12379,6 +12393,13 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.shriek, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.shriek, 4.d2() + 1)
+           .SetTerminates();
+          K.Apply.Alert(2.d6() + 2);
+          K.Apply.Shout(A => A.Harm(Elements.physical, 1.d4() + 1));
+        });
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -14642,7 +14663,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 20, DEX: 9, CON: 18, INT: 3, WIS: 8, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14687,7 +14708,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14736,7 +14757,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14785,7 +14806,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 19, DEX: 9, CON: 18, INT: 6, WIS: 10, CHA: 5);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.shock, A => A.Heal(4.d6(), Modifier.Zero));
         E.Startup.SetSkill(Qualifications.proficient);
@@ -14839,7 +14860,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 18, DEX: 15, CON: 25, INT: 7, WIS: 5, CHA: 7);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
-        E.SetGreed();
+        E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.polymorph_control, Properties.teleport_control);
@@ -14891,7 +14912,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 22, DEX: 9, CON: 18, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.reflection, Properties.vitality);
@@ -14944,7 +14965,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 16, DEX: 10, CON: 13, INT: 3, WIS: 8, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14989,7 +15010,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 24, DEX: 9, CON: 20, INT: 3, WIS: 11, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.water, A => A.Harm(Elements.physical, 8.d6()));
         E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(8.d6(), Modifier.Zero));
@@ -15042,7 +15063,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 15, DEX: 9, CON: 12, INT: 3, WIS: 11, CHA: 3);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15091,7 +15112,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 14, DEX: 9, CON: 12, INT: 3, WIS: 9, CHA: 2);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Chemistry.SetWeakness(Elements.fire);
         E.Startup.SetSkill(Qualifications.proficient);
@@ -15137,7 +15158,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 26, DEX: 9, CON: 18, INT: 3, WIS: 15, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.water, A => A.ApplyTransient(Properties.invisibility, 4.d6()));
         E.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.confusion, 4.d6()));
@@ -15184,7 +15205,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 16, DEX: 9, CON: 14, INT: 3, WIS: 11, CHA: 3);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15228,7 +15249,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 18, DEX: 8, CON: 14, INT: 3, WIS: 10, CHA: 3);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15276,7 +15297,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15325,7 +15346,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15374,7 +15395,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 16, DEX: 9, CON: 12, INT: 3, WIS: 11, CHA: 3);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
@@ -15428,7 +15449,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 27, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 2);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15447,6 +15468,49 @@ namespace Pathos
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.mithril_long_sword);
+      });
+
+      adamantine_golem = AddEntity(Kinds.golem, null, "adamantine golem", E =>
+      {
+        E.Glyph = Glyphs.adamantine_golem;
+        E.Level = 36;
+        E.Challenge = 1212;
+        E.Difficulty = 38;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 35, P: +0, S: +0, B: +0); // -1 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(120000);
+        E.Figure.Set
+        (
+          Material: Materials.adamantine,
+          Head: true,
+          Mind: false,
+          Voice: false,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(500, Dice.Zero);
+        E.ManaAdvancement.Set(Dice.Zero);
+        E.DefaultForm.Set(STR: 29, DEX: 9, CON: 29, INT: 3, WIS: 9, CHA: 2);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(GolemGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.vitality, Properties.free_action, Properties.clarity);
+        E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.acid, Elements.poison, Elements.sleep, Elements.magical, Elements.force);
+        E.SetCorpse(Chance.Never);
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.adamantine_long_sword);
       });
 
       stone_golem = AddEntity(Kinds.golem, null, "stone golem", E =>
@@ -15483,7 +15547,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 22, DEX: 9, CON: 20, INT: 3, WIS: 11, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.sling);
         E.Startup.SetTalent(Properties.vitality);
@@ -15528,7 +15592,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 8, DEX: 8, CON: 10, INT: 3, WIS: 13, CHA: 2);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15572,7 +15636,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 14, DEX: 10, CON: 16, INT: 3, WIS: 10, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -15618,7 +15682,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 14, DEX: 9, CON: 12, INT: 3, WIS: 9, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
-        E.SetGreed();
+        E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -21118,7 +21182,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.dark, Dice.Zero);
-          K.Apply.Light(false); // always darken the room.
+          K.Apply.Light(false, Locality.Area); // always darken the room.
           K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
           {
             // should only hallucinate if the black light is not invisible.
@@ -21170,7 +21234,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.light, Dice.Zero);
-          K.Apply.Light(true); // always light the room up.
+          K.Apply.Light(true, Locality.Area); // always light the room up.
           K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
           {
             // should only blind if the yellow light is not invisible.
@@ -28443,7 +28507,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 12, DEX: 14, CON: 11, INT: 4, WIS: 9, CHA: 6);
+        E.DefaultForm.Set(STR: 12, DEX: 14, CON: 11, INT: 6, WIS: 9, CHA: 6);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
@@ -28487,7 +28551,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(Dice.Zero);
-        E.DefaultForm.Set(STR: 9, DEX: 15, CON: 5, INT: 4, WIS: 7, CHA: 5);
+        E.DefaultForm.Set(STR: 9, DEX: 15, CON: 5, INT: 3, WIS: 7, CHA: 5);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
@@ -31698,6 +31762,7 @@ namespace Pathos
         {
           A.Harm(Elements.fire, 3.d4());
           A.ApplyTransient(Properties.blindness, 2.d3());
+          A.CreateSpill(Volatiles.steam, 1.d100() + 100);
         });
         E.AddAttack(AttackTypes.engulf, Elements.fire, 3.d4(), K =>
         {
@@ -34896,6 +34961,7 @@ namespace Pathos
     public readonly Entity mithril_golem;
     public readonly Entity snow_golem;
     public readonly Entity stone_giant;
+    public readonly Entity adamantine_golem;
     public readonly Entity stone_golem;
     public readonly Entity storm_giant;
     public readonly Entity straw_golem;
