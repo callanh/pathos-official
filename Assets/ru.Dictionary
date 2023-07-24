@@ -21,7 +21,7 @@ AnatomyAbsenceText,NO HANDS,НЕТ РУК
 AnatomyAbsenceText,NO HEAD,НЕТ ГОЛОВЫ
 AnatomyAbsenceText,NO LIMBS,НЕТ КОНЕЧНОСТЕЙ
 AnatomyAbsenceText,NOT AMORPHOUS,НЕ БЕСФОРМЕННЫЙ
-AnatomyAbsenceText,NOT MOUNTED,НЕ ВЕРХОВОЙ
+AnatomyAbsenceText,NOT MOUNTED,НЕ ЕЗДОВОЙ
 AnatomyAbsenceText,NOT WARM,НЕ ТЁПЛЫЙ
 AnatomyAbsenceText,VOICELESS,НЕМОЙ
 AnatomyName,amorphous,бесформенный
@@ -33,7 +33,7 @@ AnatomyName,hands,руки
 AnatomyName,head,голова
 AnatomyName,limbs,конечности
 AnatomyName,mind,разум
-AnatomyName,mounted,верховой
+AnatomyName,mounted,ездовой
 AnatomyName,thermal,тёплый
 AnatomyName,voice,голос
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Открытый спереди длинный плащ с застёжкой на груди.
@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Миф
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Мифрильный доспех с тонким и изящным покрытием.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Мифрильный доспех с тонким и блестящим покрытием.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Эта классическая часть наряда волшебника — остроконечная шляпа украшенная луной и звёздами.
-AppearanceName,adamantine staff,адамантитовый посох
+AppearanceName,adamantine staff,адамантиновый посох
 AppearanceName,agate ring,агатовое кольцо
 AppearanceName,aluminium wand,алюминиевая палочка
 AppearanceName,angled poleaxe,выпуклая секира
@@ -855,7 +855,7 @@ CounterName,jumps,прыжки
 CounterName,kicks,удары
 CounterName,lifesaves,спасение жизни
 CounterName,mimics,мимикрирования
-CounterName,mounts,существ осёдлано
+CounterName,mounts,осёдлано
 CounterName,moves,движения
 CounterName,opens,открытия
 CounterName,packs,консервирования
@@ -1168,7 +1168,7 @@ EntityName,abbot,аббат
 EntityName,acid blob,кислотный пузырь
 EntityName,acid worm,кислотный червь
 EntityName,acolyte,прислужник
-EntityName,adamantine golem,адамантитовый голем
+EntityName,adamantine golem,адамантиновый голем
 EntityName,adult black dragon,взрослый чёрный дракон
 EntityName,adult blue dragon,взрослый синий дракон
 EntityName,adult deep dragon,взрослый глубинный дракон
@@ -2242,7 +2242,7 @@ ItemDescription,"A leather pouch set between two cords, meant for launching smal
 ItemDescription,"A lightweight protective panel strapped to the forearm, made from wood with metal reinforcement.","Лёгкий оборонительный щит, крепящаяся к предплечью, сделан из дерева и укреплён металлом."
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Длинный железный нож, хорошо сбалансированный для метания."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,"Длинная трубка, предназначенная для стрельбы дротиками, приводимая в движение выдуваемым воздухом."
-ItemDescription,A long thrusting polearm best suited to mounted combat.,"Копьё с длинным древком, наиболее пригодное для борьбы в устойчивой позиции."
+ItemDescription,A long thrusting polearm best suited to mounted combat.,"Копьё с длинным древком, наиболее пригодное для боя верхом."
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",Длинный плетёный кожаный ремень. Неожиданно быстрый.
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",Длинная струящаяся одежда с длинными рукавами и капюшоном.
 ItemDescription,A long-shafted arrow with a distinctive tip.,Стрела с длинным древком и характерным наконечником.
@@ -2348,19 +2348,19 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,"Крохотные металлические шипы, брошенные на землю препятствуют передвижению."
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Крылатые сандалии из нерушимого золота, которые летают быстро и бесшумно."
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах этим в сторону стены создаст большой тоннель.
-ItemName,adamantine arrow,адамантитовая стрела
-ItemName,adamantine axe,адамантитовый топор
-ItemName,adamantine bow,адамантитовый лук
-ItemName,adamantine dagger,адамантитовый кинжал
-ItemName,adamantine greataxe,адамантитовый боевой топор
-ItemName,adamantine greatsword,адамантитовый большой двуручный меч
-ItemName,adamantine long sword,адамантитовый длинный меч
-ItemName,adamantine plate mail,адамантитовые латы
-ItemName,adamantine rapier,адамантитовая рапира
-ItemName,adamantine sabre,адамантитовая сабля
-ItemName,adamantine short sword,адамантитовый короткий меч
-ItemName,adamantine spear,адамантитовое копье
-ItemName,adamantine two-handed sword,адамантитовый двуручный меч
+ItemName,adamantine arrow,адамантиновая стрела
+ItemName,adamantine axe,адамантиновый топор
+ItemName,adamantine bow,адамантиновый лук
+ItemName,adamantine dagger,адамантиновый кинжал
+ItemName,adamantine greataxe,адамантиновая секира
+ItemName,adamantine greatsword,адамантиновый большой меч
+ItemName,adamantine long sword,адамантиновый длинный меч
+ItemName,adamantine plate mail,адамантиновые латы
+ItemName,adamantine rapier,адамантиновая рапира
+ItemName,adamantine sabre,адамантиновая сабля
+ItemName,adamantine short sword,адамантиновый короткий меч
+ItemName,adamantine spear,адамантиновое копьё
+ItemName,adamantine two-handed sword,адамантиновый двуручный меч
 ItemName,agate,агат
 ItemName,aklys,аклис
 ItemName,alchemy smock,алхимический халат
@@ -3017,7 +3017,6 @@ ItemType,shield,щит
 ItemType,shirt,рубашка
 ItemType,skeleton key,скелетный ключ
 ItemType,specific key,особый ключ
-ItemType,statue,статуя
 ItemType,suit,костюм
 ItemType,thrown weapon,метательное оружие
 ItemType,tin,консервная банка
@@ -3289,7 +3288,7 @@ LiteralText,Disable mask animations,отключить фильтры экран
 LiteralText,Disable online services,Отключить онлайн-сервисы
 LiteralText,Disable pitch shifting,Отключить изменение тона звука
 LiteralText,Disable spacebar real-time toggle,Отключить клавишу пробел для реального времени
-LiteralText,Disable swipe gestures,Отключить жесты свайпа
+LiteralText,Disable swipe gestures,отключить жесты свайпа
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
@@ -3435,7 +3434,7 @@ LiteralText,influenced actions,влияние на действия
 LiteralText,INSCRIBE,НАНЕСЕНИЕ
 LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
-LiteralText,instruct each character,Приказы отдельным персонажам
+LiteralText,instruct each character,приказы отдельным персонажам
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,insulation,изоляция
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
@@ -3508,7 +3507,7 @@ LiteralText,Minetown,Шахтный город
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,В каком направлении оседлать?
-LiteralText,MOUNTED,ВЕРХОВОЙ
+LiteralText,MOUNTED,ЕЗДОВОЙ
 LiteralText,MOVE,ДВИЖЕНИЕ
 LiteralText,move down one level,спустить на один уровень
 LiteralText,move up one level,поднять на один уровень
@@ -3528,7 +3527,7 @@ LiteralText,no allies,нет союзников
 LiteralText,no ambient sounds,нет окружающих звуков
 LiteralText,No appropriate items available,Нет соответствующих доступных вещей
 LiteralText,no available knowledge,нет доступных знаний
-LiteralText,no records found,Данных не найдено
+LiteralText,no records found,записей не найдено
 LiteralText,no resistances,нет сопротивляемости
 LiteralText,no talents,нет талантов
 LiteralText,no transient effects,нет временных эффектов
@@ -3818,7 +3817,7 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
-LiteralText,VOLATILES,ПРЕПЯТСТВИЯ
+LiteralText,VOLATILES,ЛЕТУЧИЕ ПРЕГРАДЫ
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
@@ -3845,14 +3844,14 @@ LiteralText,Your current movement and action speed in squares per second.,Ваш
 LiteralText,ZOOM,МАСШТАБ
 LiteralText,ZOOS,ЗООПАРКИ
 LiteralText,zZz,zZz
-LocalityName,area,местность
+LocalityName,area,область
 LocalityName,level,уровень
 LocalityName,map,карта
 LocalityName,site,место
 LocalityName,square,площадь
 LocalityName,world,мир
 LocalityName,zone,зона
-MaterialName,adamantine,адамантит
+MaterialName,adamantine,адамантин
 MaterialName,air,воздух
 MaterialName,animal,существо
 MaterialName,bone,кость
@@ -3891,7 +3890,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
 MotionPastName,constructed,создал
-MotionPastName,copied,скопировано
+MotionPastName,copied,скопировал
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,испил

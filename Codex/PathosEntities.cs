@@ -10987,7 +10987,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
