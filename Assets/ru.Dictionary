@@ -836,7 +836,7 @@ CounterName,captures,пойманный
 CounterName,casts,заклинания
 CounterName,chants,распевания
 CounterName,constructs,создания
-CounterName,copies,копий сделано
+CounterName,copies,дубликаты
 CounterName,crafts,мастерить
 CounterName,decapitations,обезглавливания
 CounterName,digs,копания
@@ -1012,14 +1012,14 @@ EffectType,convert boulder,превращает валун
 EffectType,convert door,переводит дверь
 EffectType,convert fixture,переводит приспособление
 EffectType,convert floor,переводит пол в
-EffectType,convert spill,переводит завесу
+EffectType,convert spill,переводит барьер
 EffectType,convert wall,переводит стену
 EffectType,create boulder,создаёт валун
 EffectType,create fixture,создаёт приспособление
 EffectType,create golem,создаёт голема
 EffectType,create horde,создаёт орду
 EffectType,create nook,создаёт тайную
-EffectType,create spill,создаёт завесу
+EffectType,create spill,создаёт барьер
 EffectType,create trap,создаёт ловушку
 EffectType,create wall,создаёт стену
 EffectType,decapitate,отрубает голову
@@ -1037,7 +1037,7 @@ EffectType,enchant asset,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
-EffectType,extinguish spill,потушить завесу
+EffectType,extinguish spill,убрать барьер
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -1066,7 +1066,7 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
-EffectType,remove spill,убирает завесу
+EffectType,remove spill,убирает барьер
 EffectType,remove transient,снимает временное
 EffectType,replicate asset,копирует ценность
 EffectType,restock,пополняет запасы
@@ -3110,8 +3110,8 @@ LiteralText,AMBIENT SOUNDS,ЗВУКИ ОКРУЖЕНИЯ
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
 LiteralText,anatomy,анатомия
-LiteralText,animate mount,оживление ездовым существом
-LiteralText,animate revenant,оживление восставшие
+LiteralText,animate mount,оживление артефакта
+LiteralText,animate revenant,оживление восставших
 LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,против часовой стрелки на 90 градусов
 LiteralText,any item,любая вещь
@@ -3236,7 +3236,7 @@ LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
 LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
 LiteralText,CREATE SHRINE,СОЗДАТЬ ХРАМ
-LiteralText,CREATE SPILL,СОЗДАТЬ ЗАВЕСУ
+LiteralText,CREATE SPILL,СОЗДАТЬ БАРЬЕР
 LiteralText,CREATE TRAP,СОЗДАТЬ ЛОВУШКУ
 LiteralText,CREATE WALL,СОЗДАТЬ СТЕНУ
 LiteralText,Create which direction?,В каком направлении создать?
@@ -3284,11 +3284,11 @@ LiteralText,Disable continue button,Отключить кнопку 'продо�
 LiteralText,disable haptic feedback,отключить вибрацию
 LiteralText,Disable idle animations,Отключить анимацию ожидания
 LiteralText,Disable introduction boom,Отключить звуковой эффект при входе игры
-LiteralText,Disable mask animations,отключить фильтры экрана
+LiteralText,Disable mask animations,Отключить замаскированную анимацию
 LiteralText,Disable online services,Отключить онлайн-сервисы
 LiteralText,Disable pitch shifting,Отключить изменение тона звука
 LiteralText,Disable spacebar real-time toggle,Отключить клавишу пробел для реального времени
-LiteralText,Disable swipe gestures,отключить жесты свайпа
+LiteralText,Disable swipe gestures,Отключить жесты смахивания
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
@@ -3817,7 +3817,7 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
-LiteralText,VOLATILES,ЛЕТУЧИЕ ПРЕГРАДЫ
+LiteralText,VOLATILES,БАРЬЕРЫ
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
@@ -3890,7 +3890,7 @@ MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
 MotionPastName,constructed,создал
-MotionPastName,copied,скопировал
+MotionPastName,copied,создал дубликат
 MotionPastName,dipped,окунул
 MotionPastName,divined,определил духовность
 MotionPastName,drank,испил
@@ -3924,7 +3924,7 @@ MotionPresentName,anoint,помазание
 MotionPresentName,capture,поймать
 MotionPresentName,chant,распевать
 MotionPresentName,construct,создать
-MotionPresentName,copy,скопировать
+MotionPresentName,copy,создать дубликат
 MotionPresentName,dig,копать
 MotionPresentName,dip,окунуть
 MotionPresentName,divine,определить духовность

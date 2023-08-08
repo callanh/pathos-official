@@ -915,7 +915,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(1350);
         I.SetArmour(Skills.heavy_armour, 8);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(20), Sonics.weapon);
-        I.SetTwoHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d4()).AttackModifier = Modifier.Minus2;
+        I.SetTwoHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d4());
         I.AddObviousUse(Motions.exchange, Delay.FromTurns(20), Sonics.scrape, Use =>
         {
           Use.SetCast().Strike(Strikes.magic, Dice.Fixed(10))
@@ -972,13 +972,26 @@ namespace Pathos
           {
             A.WithSourceSanctity
             (
-              B => B.ApplyTransient(Properties.fear, 2.d4()),
-              U => U.ApplyTransient(Properties.fear, 2.d3()),
-              C => C.Backfire(F => F.ApplyTransient(Properties.fear, 1.d3()))
+              B => B.ApplyTransient(Properties.petrifying, 2.d4()),
+              U => U.ApplyTransient(Properties.petrifying, 2.d3()),
+              C => C.Backfire(F => F.ApplyTransient(Properties.petrifying, 1.d3()))
             );
           }));
         });
         W.AddVersus(new[] { Kinds.dragon }, Elements.physical, 2.d4());
+        I.AddPropertyAreaUse(Motions.zap, Properties.fear, Delay.FromTurns(20), Sonics.magic, Use =>
+        {
+          Use.SetCast().Strike(Strikes.flash, Dice.Zero)
+             .SetAudibility(5);
+          Use.Apply.DecreaseKarma(Dice.Fixed(100));
+          Use.Apply.Light(true, Locality.Area);
+          Use.Apply.WithSourceSanctity
+          (
+            B => B.AreaTransient(Properties.fear, 6.d6(), Kinds.dragon),
+            U => U.AreaTransient(Properties.fear, 4.d6(), Kinds.dragon),
+            C => C.AreaTransient(Properties.rage, 4.d6(), Kinds.dragon)
+          );
+        });
       });
 
       Lashing_Tongue = AddReachWeapon("Lashing Tongue", I =>
@@ -1067,7 +1080,8 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1500);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
+         .SetResistance(Elements.fire);
         I.SetIllumination(2);
         var W = I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8(), D => D.WhenChance(Chance.OneIn4, T =>
         {
@@ -1299,7 +1313,8 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1400);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
+         .SetResistance(Elements.cold);
         I.SetTwoHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d8() + 2, A => A.WhenChance(Chance.OneIn4, T =>
         {
           T.WithSourceSanctity
@@ -1324,14 +1339,15 @@ namespace Pathos
         I.Material = Materials.platinum;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1200);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
+         .SetResistance(Elements.shock);
         I.SetTwoHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 2.d6() + 2, A => A.WhenChance(Chance.OneIn4, T =>
         {
           T.WithSourceSanctity
           (
-            B => B.ApplyTransient(Properties.stunned, 1.d6() + 5),
-            U => U.ApplyTransient(Properties.stunned, 1.d6() + 3),
-            C => C.Backfire(F => F.ApplyTransient(Properties.stunned, 1.d6() + 1))
+            B => B.ApplyTransient(Properties.stunned, 1.d4() + 3),
+            U => U.ApplyTransient(Properties.stunned, 1.d4() + 1),
+            C => C.Backfire(F => F.ApplyTransient(Properties.stunned, 1.d4() + 1))
           );
         }));
       });
@@ -1385,7 +1401,7 @@ namespace Pathos
             U => U.DrainLife(Elements.drain, 1.d6()),
             C => C.Backfire(F => F.DrainLife(Elements.drain, 1.d4()))
           );
-        }));
+        })).AttackModifier = Modifier.Plus2;
       });
 
       Chasm_Edge = AddMeleeWeapon("Chasm Edge", I =>
@@ -13603,7 +13619,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(40);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6());
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6()).AttackModifier = Modifier.Plus2;
       });
 
       sabre = AddMeleeWeapon("sabre", I =>
@@ -14939,7 +14955,7 @@ namespace Pathos
         I.Size = Size.Medium;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1).AttackModifier = Modifier.Plus2;
       });
 
       adamantine_sabre = AddMeleeWeapon("adamantine sabre", I =>
