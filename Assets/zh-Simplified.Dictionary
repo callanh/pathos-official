@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,{Entropy} 混乱度
 FormatText,{ExplosionName} explosion,{ExplosionName} 爆炸
 FormatText,{ItemCount} item,{ItemCount} 件物品
 FormatText,{ItemCount} items,{ItemCount} 件物品
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay}秒
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} 和 {Follower:CharacterName} 成为了盟友
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} 和 {Follower:CharacterName} 不再是盟友了
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},当 {MATERIALNAME}
 FormatText,when {PROPERTYNAME},当 {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},当 {SANCTITYNAME}
 FormatText,when {Something},为{Something}
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},当对 {ElementName} 免疫时
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,这扇门是用水晶造成的，很难损坏。
 GateName,crystal door,水晶门

@@ -2393,6 +2393,7 @@ namespace Pathos
     public readonly Glyph journal_icon;
     public readonly Glyph light_icon;
     public readonly Glyph map_icon;
+    public readonly Glyph more_icon;
     public readonly Glyph party_icon;
     public readonly Glyph platform_icon;
     public readonly Glyph portal_icon;

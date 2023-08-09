@@ -423,11 +423,14 @@ namespace Pathos
              .Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
           Use.Apply.DecreaseKarma(Dice.Fixed(25));
-          Use.Apply.WithSourceSanctity
-          (
-            B => B.DetectAsset(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
-            U => U.DetectAsset(Range.Sq15, Materials.gold, Materials.gemstone),
-            C => C.DetectAsset(Range.Sq10, Materials.gold)
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WithSourceSanctity
+            (
+              B => B.DetectAsset(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
+              U => U.DetectAsset(Range.Sq15, Materials.gold, Materials.gemstone),
+              C => C.DetectAsset(Range.Sq10, Materials.gold)
+            ),
+            S => S.DestroyCarriedAsset(Dice.One, null, null, new[] { Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine })
           );
         });
         I.AddObviousUse(Motions.copy, Delay.FromTurns(30), Sonics.magic, Use =>
@@ -436,10 +439,13 @@ namespace Pathos
              .FilterItem(Stocks.scroll.Items.Except(Miserus, scroll_of_blank_paper, scroll_of_replication).Where(I => I.Type == ItemType.Scroll).ToArray())
              .SetTerminates();
           Use.Apply.DecreaseKarma(Dice.Fixed(500)); // shrine boon costs 1000 to replicate any item.
-          Use.Apply.WhenConfused
-          (
-            T => T.CreateAsset(Dice.One, Dice.One, scroll_of_blank_paper),
-            F => F.ReplicateAsset()
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WhenConfused
+            (
+              T => T.CreateAsset(Dice.One, Dice.One, scroll_of_blank_paper),
+              F => F.ReplicateAsset()
+            ),
+            S => S.DestroyTargetAsset(Dice.One)
           );
         });
       });
@@ -640,12 +646,15 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.magic, Dice.One)
              .SetAudibility(1);
-          Use.Apply.DecreaseKarma(1.d50() + 100); // costs 101-150 karma
-          Use.Apply.WithSourceSanctity
-          (
-            B => B.AnimateRevenants(Corrupt: null),
-            U => U.AnimateRevenants(Corrupt: Properties.rage),
-            C => C.Backfire(F => F.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: null))
+          Use.Apply.DecreaseKarma(Dice.Fixed(150));
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WithSourceSanctity
+            (
+              B => B.AnimateRevenants(Corrupt: null),
+              U => U.AnimateRevenants(Corrupt: Properties.rage),
+              C => C.Backfire(F => F.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: null))
+            ),
+            S => S.Harm(Elements.necrotic, 4.d6() + 4)
           );
           Use.Apply.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the wand.
         });
@@ -654,14 +663,14 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.death, Dice.One)
              .SetAudibility(5);
           Use.Apply.Harm(Elements.physical, Dice.Zero);
-          Use.Apply.DecreaseKarma(1.d50() + 200); // costs 201-250 karma
-          Use.Apply.WhenTargetKind(Kinds.Living, T =>
-          {
-            T.DrainLife(Elements.drain, 6.d6() + 6);
-          }, F =>
-          {
-            F.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray()); // bind undead.
-          });
+          Use.Apply.DecreaseKarma(Dice.Fixed(250));
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WhenTargetKind(Kinds.Living, 
+              T => T.DrainLife(Elements.drain, 6.d6() + 6), 
+              F => F.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray()) // bind undead.
+            ),
+            S => S.Backfire(F => F.DrainLife(Elements.drain, 6.d6() + 6))
+          );
         });
       });
 
@@ -734,7 +743,7 @@ namespace Pathos
         I.DefaultSanctity = Sanctities.Cursed;
         I.AddObviousUse(Motions.open, Delay.FromTurns(30), Sonics.magic, Use =>
         {
-          Use.Apply.DecreaseKarma(1.d100() + 50); // costs 51-150 karma
+          Use.Apply.DecreaseKarma(Dice.Fixed(100));
           Use.Apply.WithSourceSanctity
           (
             B =>
@@ -889,13 +898,19 @@ namespace Pathos
         I.AddObviousUse(Motions.scry, Delay.FromTurns(30), Sonics.magic, Use =>
         {
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.DetectTrap(Range.Sq10);
-          Use.Apply.Searching(Range.Sq10);
-          Use.Apply.WithSourceSanctity
-          (
-            B => B.DetectAsset(Range.Sq20),
-            U => U.DetectAsset(Range.Sq15),
-            C => C.DetectAsset(Range.Sq10)
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R =>
+            {
+              R.DetectTrap(Range.Sq10);
+              R.Searching(Range.Sq10);
+              R.WithSourceSanctity
+              (
+                B => B.DetectAsset(Range.Sq20),
+                U => U.DetectAsset(Range.Sq15),
+                C => C.DetectAsset(Range.Sq10)
+              );
+            },
+            S => S.Amnesia(Range.Sq10)
           );
         });
       });
@@ -984,12 +999,18 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetAudibility(5);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.Light(true, Locality.Area);
-          Use.Apply.WithSourceSanctity
-          (
-            B => B.AreaTransient(Properties.fear, 6.d6(), Kinds.dragon),
-            U => U.AreaTransient(Properties.fear, 4.d6(), Kinds.dragon),
-            C => C.AreaTransient(Properties.rage, 4.d6(), Kinds.dragon)
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R =>
+            {
+              R.Light(true, Locality.Area);
+              R.WithSourceSanctity
+              (
+                B => B.AreaTransient(Properties.fear, 6.d6(), Kinds.dragon),
+                U => U.AreaTransient(Properties.fear, 4.d6(), Kinds.dragon),
+                C => C.AreaTransient(Properties.rage, 4.d6(), Kinds.dragon)
+              );
+            },
+            S => S.Light(false, Locality.Area)
           );
         });
       });
@@ -1422,11 +1443,14 @@ namespace Pathos
         {
           A.SetCast().Strike(Strikes.force, Dice.One);
           A.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.spiked_pit.KarmaCost));
-          A.Apply.WithSourceSanctity
-          (
-            B => B.CreateTrap(Codex.Devices.spiked_pit, Destruction: false),
-            U => U.CreateTrap(Codex.Devices.pit, Destruction: false),
-            C => C.Backfire(F => F.CreateTrap(Codex.Devices.pit, Destruction: false))
+          A.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WithSourceSanctity
+            (
+              B => B.CreateTrap(Codex.Devices.spiked_pit, Destruction: false),
+              U => U.CreateTrap(Codex.Devices.pit, Destruction: false),
+              C => C.Backfire(F => F.CreateTrap(Codex.Devices.pit, Destruction: false))
+            ),
+            S => S.Backfire(F => F.CreateTrap(Codex.Devices.spiked_pit, Destruction: false))
           );
         });
         I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 4.d4(), A => A.WhenChance(Chance.OneIn4, T =>
@@ -1480,11 +1504,14 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.tunnel, Dice.One);
           Use.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.hole.KarmaCost));
-          Use.Apply.WithSourceSanctity
-          (
-            B => B.CreateTrap(Codex.Devices.hole, Destruction: true),
-            U => U.CreateTrap(Codex.Devices.hole, Destruction: false),
-            C => C.Backfire(F => F.CreateTrap(Codex.Devices.hole, Destruction: false))
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+            R => R.WithSourceSanctity
+            (
+              B => B.CreateTrap(Codex.Devices.hole, Destruction: true),
+              U => U.CreateTrap(Codex.Devices.hole, Destruction: false),
+              C => C.Backfire(F => F.CreateTrap(Codex.Devices.hole, Destruction: false))
+            ),
+            S => S.Backfire(F => F.CreateTrap(Codex.Devices.hole, Destruction: false))
           );
         });
         I.SetTwoHandedMomentumWeapon(Skills.lance, null, Elements.physical, DamageType.Pierce, 2.d6(), A => A.WhenChance(Chance.OneIn4, T =>

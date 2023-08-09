@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,{Entropy} entropia
 FormatText,{ExplosionName} explosion,esplosione {ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} oggetto
 FormatText,{ItemCount} items,{ItemCount} oggetti
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay} sec
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} e {Follower:CharacterName} sono ora alleati
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} e {Follower:CharacterName} non sono più alleati
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},quando {MATERIALNAME}
 FormatText,when {PROPERTYNAME},quando {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},quando {SANCTITYNAME}
 FormatText,when {Something},quando {Something}
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Questa pesante porta è fatta di dure formazioni cristalline e non è facilmente danneggiabile.
 GateName,crystal door,porta di cristallo

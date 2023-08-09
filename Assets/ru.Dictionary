@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,{Entropy} энтропия
 FormatText,{ExplosionName} explosion,{ExplosionName} взрыв
 FormatText,{ItemCount} item,{ItemCount} вещь
 FormatText,{ItemCount} items,{ItemCount} вещи
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay} сек
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} и {Follower:CharacterName} теперь союзники
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} и {Follower:CharacterName} больше не союзники
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},когда {MATERIALNAME}
 FormatText,when {PROPERTYNAME},когда {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},когда {SANCTITYNAME}
 FormatText,when {Something},когда {Something}
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},когда сопротивляется {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Эта тяжёлая дверь создана из кристальных образований и поэтому её будет не просто сломать.
 GateName,crystal door,кристальная дверь

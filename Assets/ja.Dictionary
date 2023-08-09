@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,エントロピー {Entropy}
 FormatText,{ExplosionName} explosion,{ExplosionName}の爆発
 FormatText,{ItemCount} item,{ItemCount}アイテム
 FormatText,{ItemCount} items,{ItemCount}個のアイテム
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay}秒
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName}と{Follower:CharacterName}は仲間になった
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName}と{Follower:CharacterName}は仲間ではなくなった
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}の場合
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}場合
 FormatText,when {Something},{Something}の場合
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},{ElementName}に抵抗した場合
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,硬い結晶で構成された、簡単には壊れない重厚な扉。
 GateName,crystal door,水晶の扉

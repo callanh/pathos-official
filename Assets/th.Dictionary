@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,
 FormatText,{ExplosionName} explosion,ระเบิด{ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} ไอเท็ม
 FormatText,{ItemCount} items,{ItemCount} ไอเท็ม
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay} วินาที
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} และ {Follower:CharacterName} เป็นพวกเดียวกันแล้ว
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} และ {Follower:CharacterName} ไม่ได้เป็นพวกเดียวกันอีกต่อไป
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},เมื่อ {MATERIALNAME}
 FormatText,when {PROPERTYNAME},เมื่อ {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},เมื่อ {SANCTITYNAME}
 FormatText,when {Something},เมื่อ {Something}
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},เมื่อ {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,ประตูใหญ่นี้ถูกทำขึ้นมาจากผลึกแข็งอย่างเป็นระเบียบและทำลายไม่ได้ง่ายๆ
 GateName,crystal door,ประตูผลึก

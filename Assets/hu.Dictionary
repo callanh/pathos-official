@@ -2048,6 +2048,7 @@ FormatText,{Entropy} entropy,{Entropy} entrópia
 FormatText,{ExplosionName} explosion,{ExplosionName} robbanás
 FormatText,{ItemCount} item,{ItemCount} tárgy
 FormatText,{ItemCount} items,{ItemCount} tárgy
+FormatText,{ItemCount} more items,
 FormatText,{JournalDelay} sec,{JournalDelay} másodperc
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} és {Follower:CharacterName} egymás szövetségesei
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} és {Follower:CharacterName} többé nincsenek szövetségben
@@ -2136,6 +2137,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME} esetén
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} esetén
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} esetén
 FormatText,when {Something},{Something} esetén
+FormatText,when {STANDING},
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Ez a nehéz ajtó kemény kristályformákból áll és nehezen sérül.
 GateName,crystal door,kristályajtó
