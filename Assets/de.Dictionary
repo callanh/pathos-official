@@ -2137,7 +2137,7 @@ FormatText,when {MATERIALNAME},falls {MATERIALNAME}
 FormatText,when {PROPERTYNAME},falls {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},falls {SANCTITYNAME}
 FormatText,when {Something},falls {Something}
-FormatText,when {STANDING},
+FormatText,when {STANDINGNAME},falls {STANDINGNAME}
 FormatText,when resists {ElementName},falls Widerstand gegen {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Diese schwere Tür besteht aus harten Kristallformationen und kann nicht ohne weiteres beschädigt werden.
 GateName,crystal door,Kristalltür

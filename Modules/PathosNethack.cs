@@ -4403,7 +4403,7 @@ namespace Pathos
           }
         }
 
-        var FloorSquareList = SokobanMap.GetSquares().Where(S => Generator.CanPlaceAsset(S)).ToDistinctList();
+        var FloorSquareList = SokobanMap.GetSquares().Where(S => Generator.CanPlaceAsset(S) && S.Trap == null).ToDistinctList();
 
         // 1 x ring.
         var RingSquare = FloorSquareList.GetRandomOrNull();

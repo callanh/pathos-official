@@ -2137,7 +2137,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}の場合
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}場合
 FormatText,when {Something},{Something}の場合
-FormatText,when {STANDING},
+FormatText,when {STANDINGNAME},{STANDINGNAME}の場合
 FormatText,when resists {ElementName},{ElementName}に抵抗した場合
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,硬い結晶で構成された、簡単には壊れない重厚な扉。
 GateName,crystal door,水晶の扉

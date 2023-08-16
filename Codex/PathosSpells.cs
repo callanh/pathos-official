@@ -1535,7 +1535,7 @@ namespace Pathos
           Z,
           U =>
           {
-            U.SetCast().Strike(Strikes.magic, Dice.One);
+            U.SetCast().Strike(Strikes.magic, Dice.Zero);
             U.Apply.ApplyTransient(Properties.quickness, 1.d10() + 50);
           },
           P =>

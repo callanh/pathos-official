@@ -2137,7 +2137,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME} 재질일 때
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} 상태일 때
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} 상태일 때
 FormatText,when {Something},{Something} 경우
-FormatText,when {STANDING},
+FormatText,when {STANDINGNAME},{STANDINGNAME} 상태일 때
 FormatText,when resists {ElementName},{ElementName}을(를) 저항할때
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,이 문은 단단한 결정체로 이루어져있어서 쉽게 부서지지 않는다.
 GateName,crystal door,크리스탈 문

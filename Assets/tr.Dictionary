@@ -2137,7 +2137,7 @@ FormatText,when {MATERIALNAME},{MATERIALNAME}olduğunda
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}olduğunda
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}olduğunda
 FormatText,when {Something},ne zaman {Something}
-FormatText,when {STANDING},
+FormatText,when {STANDINGNAME},{STANDINGNAME}olduğunda
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Bu kapı sert kristallerden yapıldığından dolayı çok dayanıklı.
 GateName,crystal door,kristal kapı
