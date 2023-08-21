@@ -191,7 +191,7 @@ namespace Pathos
           });
           Table.Add(2, A =>
           {
-            A.Rumour(Skills.literacy, Truth: true, Lies: true);
+            A.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true);
           });
           Table.Add(1, A =>
           {

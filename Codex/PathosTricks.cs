@@ -18,6 +18,7 @@ namespace Pathos
       var Sonics = Codex.Sonics;
       var Properties = Codex.Properties;
       var Entities = Codex.Entities;
+      var Attributes = Codex.Attributes;
 
       Trick AddTrick(string Name, Action<ApplyEditor> Action)
       {
@@ -36,7 +37,7 @@ namespace Pathos
 
       whispered_rumour = AddTrick("whispered rumour", A =>
       {
-        A.Rumour(Skills.literacy, Truth: true, Lies: true);
+        A.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true);
       });
 
       arriving_bats = AddTrick("arriving bats", A =>

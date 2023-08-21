@@ -749,7 +749,7 @@ namespace Pathos
             B =>
             {
               B.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the box.
-              B.Rumour(Skills.literacy, Truth: true, Lies: false);
+              B.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: false);
               B.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -793,7 +793,7 @@ namespace Pathos
             U =>
             {
               U.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed));  // curse the box.
-              U.Rumour(Skills.literacy, Truth: true, Lies: true);
+              U.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true);
               U.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -823,7 +823,7 @@ namespace Pathos
             },
             C =>
             {
-              C.Rumour(Skills.literacy, Truth: false, Lies: true);
+              C.Rumour(Attributes.wisdom, Skills.literacy, Truth: false, Lies: true);
               C.WhenProbability(Table =>
               {
                 Table.Add(10, A =>
@@ -4743,9 +4743,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.Rumour(Skills.literacy, Truth: true, Lies: false),
-            U => U.Rumour(Skills.literacy, Truth: true, Lies: true),
-            C => C.Rumour(Skills.literacy, Truth: false, Lies: true)
+            B => B.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: false),
+            U => U.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true),
+            C => C.Rumour(Attributes.wisdom, Skills.literacy, Truth: false, Lies: true)
           );
           SugarRush(I, A);
         });
@@ -4754,9 +4754,9 @@ namespace Pathos
           A.Consume();
           A.Apply.WithSourceSanctity
           (
-            B => B.Rumour(Skills.literacy, Truth: true, Lies: false),
-            U => U.Rumour(Skills.literacy, Truth: true, Lies: true),
-            C => C.Rumour(Skills.literacy, Truth: false, Lies: true)
+            B => B.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: false),
+            U => U.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true),
+            C => C.Rumour(Attributes.wisdom, Skills.literacy, Truth: false, Lies: true)
           );
         });
       });
@@ -9953,7 +9953,7 @@ namespace Pathos
             Table.Add(5, T => T.Harm(Elements.magical, 1.d50()));
             Table.Add(5, T => T.ApplyTransient(Properties.petrifying, 3.d100()));
             Table.Add(2, T => T.ConsumeResistance(Elements.petrify));
-            Table.Add(1, T => T.Rumour(Skills.literacy, Truth: true, Lies: true));
+            Table.Add(1, T => T.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true));
             Table.Add(1, T => T.ApplyTransient(Properties.conflict, 3.d20()));
             Table.Add(1, T => T.ApplyTransient(Properties.slow_digestion, 6.d100()));
             Table.Add(1, T => T.ApplyTransient(Properties.warning, 3.d100()));
