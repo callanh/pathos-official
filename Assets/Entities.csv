@@ -77,18 +77,14 @@ demon,,bearded devil,,29,1,31,1088,medium,animal,14500,5.0,24,attack,,18,15,15,9
 demon,,bone devil,,29,2,33,1435,large,animal,19000,5.0,24,attack,,18,16,18,13,14,16
 demon,,chasme,,22,1,27,959,medium,animal,12000,5.0,27,attack,,16,10,19,18,12,13
 demon,,Cthulhu,,106,0,59,12837,gargantuan,animal,11000000,5.0,22,attack,UNIQUE,27,27,28,24,26,27
-demon,,dao,,7,1,8,55,medium,stone,19000,4.0,15,attack,,23,12,24,12,13,14
 demon,,Death,,49,0,34,3911,medium,animal,10000,4.0,27,attack,UNIQUE,6,24,26,25,25,18
 demon,,Demogorgon,,106,0,57,12549,huge,animal,300000,5.0,26,attack,UNIQUE,21,24,28,25,27,27
 demon,demon,demon,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",0,0,0,0,large,animal,25000,4.0,10,attack,BASE,10,10,10,10,10,10
 demon,orc,demon orc,,19,1,21,606,medium,animal,22000,4.0,13,attack,,18,14,19,8,8,7
 demon,,Dispater,,78,0,40,6951,medium,animal,19500,5.0,36,attack,UNIQUE,19,23,27,22,22,25
-demon,,djinni,,17,0,18,455,medium,animal,14000,4.5,18,defend,,21,15,22,15,16,20
 demon,,doppelgänger,,8,1,10,129,medium,animal,14500,3.7,13,attack,,11,14,14,14,15,13
-demon,,efreeti,,7,0,8,55,medium,fire,18000,4.0,15,attack,,22,12,24,16,15,16
 demon,,erinys,,34,1,37,1305,medium,animal,14000,4.0,24,attack,,24,23,24,21,20,18
 demon,,Famine,,45,0,34,1311,medium,animal,12000,4.0,28,attack,UNIQUE,28,24,26,16,16,18
-demon,,genetic engineer,,11,1,12,199,medium,animal,14500,3.7,14,attack,,12,16,14,18,15,12
 demon,,Geryon,,72,0,36,5906,huge,animal,1400000,4.0,36,attack,UNIQUE,17,24,26,22,21,25
 demon,,hezrou,,28,2,31,1334,large,animal,30000,2.5,21,attack,,24,17,20,5,12,13
 demon,,horned devil,,29,2,32,1114,medium,animal,18000,2.5,24,attack,,22,17,21,12,16,17
@@ -96,7 +92,6 @@ demon,,ice devil,,11,2,14,296,large,animal,35000,2.5,22,attack,,21,14,18,18,15,1
 demon,,incubus,,13,2,15,220,medium,animal,18000,4.0,17,attack,,8,17,13,15,12,20
 demon,,Juiblex,,50,0,40,3135,large,animal,66600,2.0,23,attack,UNIQUE,22,18,26,8,14,7
 demon,,living wall,,10,1,12,82,gargantuan,animal,200000,0.5,20,attack,,26,6,16,1,1,1
-demon,,marid,,27,1,28,979,medium,animal,15000,4.0,21,attack,,22,18,26,18,17,18
 demon,,marilith,,28,1,35,1075,large,animal,60000,4.0,23,attack,,22,20,20,18,16,20
 demon,,Maugneshaagar,,54,0,40,1437,large,animal,21000,2.5,30,attack,UNIQUE,18,20,18,14,16,15
 demon,,medusa,,32,1,34,1000,large,animal,24000,3.7,28,attack,,14,13,14,16,12,16
@@ -107,7 +102,6 @@ demon,,Nalzok,,49,0,40,1621,large,animal,14500,4.0,26,attack,UNIQUE,18,18,18,14,
 demon,,Orcus,,66,0,40,5177,huge,animal,600000,2.5,25,attack,UNIQUE,24,21,26,28,28,18
 demon,,Pestilence,,43,0,34,1311,medium,animal,11000,4.0,28,attack,UNIQUE,28,24,26,16,16,18
 demon,,pit fiend,,33,2,36,1421,large,animal,30000,2.5,23,attack,,26,14,24,22,18,24
-demon,,quantum mechanic,,7,2,9,57,medium,animal,14500,3.7,14,attack,,12,16,12,18,13,12
 demon,,sandestin,,21,1,23,702,medium,animal,15000,4.0,18,attack,,13,15,15,14,11,13
 demon,,spined devil,,26,2,29,1244,medium,animal,15000,5.0,22,attack,,18,15,12,11,14,8
 demon,,succubus,,13,2,15,220,medium,animal,13000,4.0,17,attack,,8,17,13,15,12,20
@@ -198,12 +192,16 @@ dwarf,dwarf,Thorin,,48,0,22,3263,medium,animal,17000,4.2,32,attack,UNIQUE,16,14,
 echo,echo,echo,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",0,0,0,0,medium,animal,10000,5.0,10,attack,BASE,10,10,10,10,10,10
 elemental,,air elemental,,18,2,20,505,huge,air,0,7.5,17,attack,,14,20,14,6,10,6
 elemental,,animate object,,0,0,0,0,small,ether,0,5.0,10,attack,ANIMATE,11,11,11,11,11,11
+elemental,,dao,,7,1,8,55,medium,stone,19000,4.0,15,attack,,23,12,24,12,13,14
+elemental,,djinni,,17,0,18,455,medium,animal,14000,4.5,18,defend,,21,15,22,15,16,20
 elemental,,earth elemental,,16,2,18,405,huge,stone,90000,2.0,21,attack,,20,8,20,5,10,5
 elemental,,earth sphere,,9,2,11,54,small,stone,45000,3.7,21,attack,,6,8,16,7,8,12
+elemental,,efreeti,,7,0,8,55,medium,fire,18000,4.0,15,attack,,22,12,24,16,15,16
 elemental,,fire elemental,,14,2,16,327,huge,fire,0,3.7,15,attack,,10,17,16,6,10,7
 elemental,,flame sphere,,5,2,7,54,small,fire,0,3.7,11,attack,,6,16,8,7,8,12
 elemental,,frost sphere,,7,2,9,80,small,ice,100,3.7,13,attack,,6,16,8,7,8,12
 elemental,,ice elemental,,20,2,22,605,huge,ice,120000,3.7,20,attack,,18,12,16,6,10,6
+elemental,,marid,,27,1,28,979,medium,animal,15000,4.0,21,attack,,22,18,26,18,17,18
 elemental,,shock sphere,,11,2,13,156,small,electricity,0,3.7,15,attack,,6,16,8,7,8,12
 elemental,,stalker,,8,3,9,65,large,animal,9000,3.7,13,defend,,16,19,14,10,15,11
 elemental,,water elemental,,12,2,14,226,huge,water,200000,2.0,16,attack,,18,14,18,5,10,8
@@ -321,6 +319,7 @@ human,human,dark cleric,,12,0,15,234,medium,animal,14000,5.0,24,attack,,18,12,18
 human,human,Dark Lord,,51,0,22,3563,medium,animal,16000,3.7,35,attack,UNIQUE,14,18,18,16,15,15
 human,human,Dark One,,59,0,20,4838,medium,animal,14000,3.7,42,attack,UNIQUE,14,18,16,15,17,15
 human,human,Doctor Frankenstein,,47,0,23,3210,medium,animal,14500,3.7,37,attack,UNIQUE,16,22,17,21,18,17
+human,human,genetic engineer,,11,1,12,199,medium,animal,14500,3.7,14,attack,,12,16,14,18,15,12
 human,human,guard,,12,0,14,212,medium,animal,14500,3.7,10,attack,,22,11,17,11,9,12
 human,human,Guildmaster Vaughn,,48,0,24,3288,medium,animal,14000,3.7,31,attack,UNIQUE,13,17,16,17,16,19
 human,human,Guru Quilion,,60,0,30,4453,medium,animal,12000,3.7,34,attack,UNIQUE,22,16,21,19,22,20
@@ -342,6 +341,7 @@ human,human,nurse,,11,3,13,190,medium,animal,12000,3.3,17,attack,,14,16,14,15,13
 human,human,Oracle,,47,0,13,3726,medium,animal,12000,1.5,34,attack,UNIQUE,8,16,12,25,27,24
 human,human,Orion,,43,0,22,2763,medium,animal,14500,3.7,28,attack,UNIQUE,14,16,16,14,15,17
 human,human,Pelias,,46,0,22,3063,medium,animal,18000,3.7,30,attack,UNIQUE,14,16,16,20,15,17
+human,human,quantum mechanic,,7,2,9,57,medium,animal,14500,3.7,14,attack,,12,16,12,18,13,12
 human,human,Shaman Karnov,,43,0,22,2763,medium,animal,13000,3.7,28,attack,UNIQUE,16,16,16,20,24,15
 human,human,Sir Lorimar,,60,0,29,4423,medium,animal,14500,5.0,43,attack,UNIQUE,17,18,19,17,15,18
 human,human,Thoth Amon,,59,0,22,4799,medium,animal,19000,3.7,38,attack,UNIQUE,14,16,15,17,17,15

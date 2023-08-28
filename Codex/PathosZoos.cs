@@ -221,7 +221,7 @@ namespace Pathos
         Z.Difficulty = 1;
         Z.Rarity = 8;
         Z.Loot.AddKit(Chance.ThreeIn4, Dice.Zero, Items.gold_coin);
-        Z.AddSpawn(Chance.Always, Count: null, new Entity[] { });
+        Z.AddSpawn(Chance.Always, Count: null, Array.Empty<Entity>());
       });
 
       // TODO: swamp.

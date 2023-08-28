@@ -652,7 +652,7 @@ namespace Pathos
             (
               B => B.AnimateRevenants(Corrupt: null),
               U => U.AnimateRevenants(Corrupt: Properties.rage),
-              C => C.Backfire(F => F.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: null))
+              C => C.Backfire(F => F.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null))
             ),
             S => S.Harm(Elements.necrotic, 4.d6() + 4)
           );
@@ -866,7 +866,7 @@ namespace Pathos
                 });
                 Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
                 Table.Add(10, A => A.Polymorph(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray(), Items: false));
-                Table.Add(5, A => A.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: null));
+                Table.Add(5, A => A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null));
               });
             }
           );
@@ -8668,7 +8668,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Death(Elements.magical, new Kind[] { }, Strikes.death, Cause: DeathSupport.genocide);
+          A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: DeathSupport.genocide);
         });
       });
 

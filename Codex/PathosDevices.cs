@@ -552,6 +552,7 @@ namespace Pathos
         D.Audibility = 30;
         D.Material = Materials.iron;
         D.TriggerApply.Harm(Elements.water, Dice.Zero);
+        D.TriggerApply.RemoveTransient(Properties.slippery, Properties.fumbling);
         D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water));
         D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper));
         D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper));

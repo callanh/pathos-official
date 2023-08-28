@@ -3897,7 +3897,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
+          A.Apply.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -3944,7 +3944,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.WhenChance(Chance.ThreeIn4, T => T.ApplyTransient(Properties.stunned, 1.d4() + 2));
+          A.Apply.WhenChance(Chance.OneIn3, T => T.ApplyTransient(Properties.stunned, 1.d4() + 2));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -3991,11 +3991,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.ApplyTransient(Properties.stunned, 1.d4() + 4);
+          A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 4));
         });
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.ApplyTransient(Properties.stunned, 1.d4() + 4);
+          A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 4));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -4544,50 +4544,6 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      dao = AddEntity(Kinds.demon, null, "dao", E =>
-      {
-        E.Glyph = Glyphs.dao;
-        E.Sonic = Sonics.chant;
-        E.Level = 7;
-        E.Challenge = 55;
-        E.Difficulty = 8;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S4_0;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(19000);
-        E.Figure.Set
-        (
-          Material: Materials.stone,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: false,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 23, DEX: 12, CON: 24, INT: 12, WIS: 13, CHA: 14);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.phasing);
-        E.Startup.SetResistance(Elements.petrify, Elements.poison);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
-        E.SetCorpse(Chance.Never);
-      });
-
       Death = AddUniqueEntity(Kinds.demon, null, "Death", E =>
       {
         E.Glyph = Glyphs.Death;
@@ -4800,101 +4756,6 @@ namespace Pathos
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
-      });
-
-      djinni = AddEntity(Kinds.demon, null, "djinni", E =>
-      {
-        E.Glyph = Glyphs.djinni;
-        E.Level = 17;
-        E.Challenge = 455;
-        E.Difficulty = 18;
-        E.Frequency = 0;
-        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
-        E.SetDiet(Diets.inediate);
-        E.Speed = Speed.S4_5;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Defend;
-        E.Weight = Weight.FromUnits(14000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: false,
-          Thermal: true,
-          Blood: true,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 21, DEX: 15, CON: 22, INT: 15, WIS: 16, CHA: 20);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.phasing, Properties.free_action, Properties.vitality);
-        E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
-        E.SetCorpse(Chance.Never);
-      });
-
-      efreeti = AddEntity(Kinds.demon, null, "efreeti", E =>
-      {
-        E.Glyph = Glyphs.efreeti;
-        E.Sonic = Sonics.burn;
-        E.Level = 7;
-        E.Challenge = 55;
-        E.Difficulty = 8;
-        E.Frequency = 0;
-        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
-        E.SetTerrain(Materials.fire, Materials.air);
-        E.SetDiet(Diets.inediate);
-        E.Speed = Speed.S4_0;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(18000);
-        E.Figure.Set
-        (
-          Material: Materials.fire,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 22, DEX: 12, CON: 24, INT: 16, WIS: 15, CHA: 16);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight);
-        E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
-        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
-        {
-          R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 4.d2());
-        });
-        E.Chemistry.SetWeakness(Elements.cold, Elements.water);
-        E.SetCorpse(Chance.Never);
       });
 
       erinys = AddEntity(Kinds.demon, null, "erinys", E =>
@@ -5360,53 +5221,6 @@ namespace Pathos
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d12()); // +8 from str.
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Dice.One, Chance.Always, Items.huge_chunk_of_meat);
-      });
-
-      marid = AddEntity(Kinds.demon, null, "marid", E =>
-      {
-        E.Glyph = Glyphs.marid;
-        E.Sonic = Sonics.chant;
-        E.Level = 27;
-        E.Challenge = 979;
-        E.Difficulty = 28;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S4_0;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(15000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 22, DEX: 18, CON: 26, INT: 18, WIS: 17, CHA: 18);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight);
-        E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3()); // +6 from str.
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3());
-        E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.OneIn4);
       });
 
       marilith = AddEntity(Kinds.demon, null, "marilith", E =>
@@ -11557,6 +11371,192 @@ namespace Pathos
         E.AddReaction(Chance.Always, Elements.water, A => A.Heal(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
+
+      dao = AddEntity(Kinds.elemental, null, "dao", E =>
+      {
+        E.Glyph = Glyphs.dao;
+        E.Sonic = Sonics.chant;
+        E.Level = 7;
+        E.Challenge = 55;
+        E.Difficulty = 8;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S4_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(19000);
+        E.Figure.Set
+        (
+          Material: Materials.stone,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: false,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 23, DEX: 12, CON: 24, INT: 12, WIS: 13, CHA: 14);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight, Properties.phasing);
+        E.Startup.SetResistance(Elements.petrify, Elements.poison);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
+        E.SetCorpse(Chance.Never);
+      });
+
+      djinni = AddEntity(Kinds.elemental, null, "djinni", E =>
+      {
+        E.Glyph = Glyphs.djinni;
+        E.Level = 17;
+        E.Challenge = 455;
+        E.Difficulty = 18;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S4_5;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Defend;
+        E.Weight = Weight.FromUnits(14000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: false,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 21, DEX: 15, CON: 22, INT: 15, WIS: 16, CHA: 20);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight, Properties.phasing, Properties.free_action, Properties.vitality);
+        E.Startup.SetResistance(Elements.poison, Elements.petrify);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +5 from str.
+        E.SetCorpse(Chance.Never);
+      });
+
+      efreeti = AddEntity(Kinds.elemental, null, "efreeti", E =>
+      {
+        E.Glyph = Glyphs.efreeti;
+        E.Sonic = Sonics.burn;
+        E.Level = 7;
+        E.Challenge = 55;
+        E.Difficulty = 8;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
+        E.SetTerrain(Materials.fire, Materials.air);
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S4_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(18000);
+        E.Figure.Set
+        (
+          Material: Materials.fire,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 22, DEX: 12, CON: 24, INT: 16, WIS: 15, CHA: 16);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight);
+        E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.petrify);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
+        {
+          R.SetCast().Strike(Strikes.flame, Dice.One);
+          R.Apply.Harm(Elements.fire, 4.d2());
+        });
+        E.Chemistry.SetWeakness(Elements.cold, Elements.water);
+        E.SetCorpse(Chance.Never);
+      });
+
+      marid = AddEntity(Kinds.elemental, null, "marid", E =>
+      {
+        E.Glyph = Glyphs.marid;
+        E.Sonic = Sonics.chant;
+        E.Level = 27;
+        E.Challenge = 979;
+        E.Difficulty = 28;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S4_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(15000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 22, DEX: 18, CON: 26, INT: 18, WIS: 17, CHA: 18);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight);
+        E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3());
+        E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.OneIn4);
+      });
       #endregion
 
       #region elf.
@@ -16155,7 +16155,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
         E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddReaction(Chance.Always, Elements.water, A => A.Death(Elements.water, new Kind[] { }, Strikes.death, DeathSupport.melting));
+        E.AddReaction(Chance.Always, Elements.water, A => A.Death(Elements.water, Array.Empty<Kind>(), Strikes.death, DeathSupport.melting));
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d10());
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
@@ -16659,54 +16659,6 @@ namespace Pathos
           A.Apply.Impersonate();
         });
         E.Conveyance.Polymorph();
-        E.SetCorpse(Chance.OneIn3);
-      });
-
-      genetic_engineer = AddEntity(Kinds.demon, null, "genetic engineer", E =>
-      {
-        E.Glyph = Glyphs.genetic_engineer;
-        E.Level = 11;
-        E.Challenge = 199;
-        E.Difficulty = 12;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
-        E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(14500);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: true,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 12, DEX: 16, CON: 14, INT: 18, WIS: 15, CHA: 12);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.teleportation);
-        E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
-        {
-          K.Apply.Polymorph();
-        }); // +1 from str.
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.polymorph, 1.d500() + 750));
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -17644,6 +17596,107 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
+      genetic_engineer = AddEntity(Kinds.human, Races.human, "genetic engineer", E =>
+      {
+        E.Glyph = Glyphs.genetic_engineer;
+        E.Level = 11;
+        E.Challenge = 199;
+        E.Difficulty = 12;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(14500);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 12, DEX: 16, CON: 14, INT: 18, WIS: 15, CHA: 12);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.male, Genders.female);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.teleportation);
+        E.Startup.SetResistance(Elements.poison);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
+        {
+          K.Apply.Polymorph();
+        }); // +1 from str.
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.polymorph, 1.d500() + 750));
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.OneIn3);
+      });
+
+      quantum_mechanic = AddEntity(Kinds.human, Races.human, "quantum mechanic", E =>
+      {
+        E.Glyph = Glyphs.quantum_mechanic;
+        E.Level = 7;
+        E.Challenge = 57;
+        E.Difficulty = 9;
+        E.Frequency = 2;
+        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(14500);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 12, DEX: 16, CON: 12, INT: 18, WIS: 13, CHA: 12);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.male, Genders.female);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.teleportation, Properties.blinking, Properties.displacement);
+        E.Startup.SetResistance(Elements.poison);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
+        {
+          K.Apply.TeleportInventoryAsset();
+        });
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
+        {
+          K.Apply.TeleportCharacter(Properties.teleportation);
+        }); // +1 from str.
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.quickness, 4.d6() + 4), F => F.ApplyTransient(Properties.slowness, 4.d6() + 4));
+        E.Conveyance.MajorProperty(Properties.teleportation);
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.OneIn3);
+      });
+
       Oracle = AddUniqueEntity(Kinds.human, Races.human, "Oracle", E =>
       {
         E.Glyph = Glyphs.Oracle;
@@ -17770,59 +17823,6 @@ namespace Pathos
         E.Startup.SetResistance(Elements.poison, Elements.magical);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
-      });
-
-      quantum_mechanic = AddEntity(Kinds.demon, null, "quantum mechanic", E =>
-      {
-        E.Glyph = Glyphs.quantum_mechanic;
-        E.Level = 7;
-        E.Challenge = 57;
-        E.Difficulty = 9;
-        E.Frequency = 2;
-        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
-        E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(14500);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: true,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 12, DEX: 16, CON: 12, INT: 18, WIS: 13, CHA: 12);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.teleportation, Properties.blinking, Properties.displacement);
-        E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
-        {
-          K.Apply.TeleportInventoryAsset();
-        });
-        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4(), K =>
-        {
-          K.Apply.TeleportCharacter(Properties.teleportation);
-        }); // +1 from str.
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.quickness, 4.d6() + 4), F => F.ApplyTransient(Properties.slowness, 4.d6() + 4));
-        E.Conveyance.MajorProperty(Properties.teleportation);
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.OneIn3);
       });
 
       Shaman_Karnov = AddUniqueEntity(Kinds.human, Races.human, "Shaman Karnov", E =>
