@@ -20,7 +20,7 @@ namespace Pathos.Official
     public readonly global::Inv.Resource.BinaryReference Abyss;
     ///<Summary>(.quest) ~ (210.0KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Chambers;
-    ///<Summary>(.quest) ~ (323.3KB)</Summary>
+    ///<Summary>(.quest) ~ (323.4KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Dhak;
     ///<Summary>(.quest) ~ (385.7KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Eobi;
