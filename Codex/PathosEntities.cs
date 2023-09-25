@@ -128,8 +128,15 @@ namespace Pathos
             if (E.Kind == Kinds.mimic && (E.Concealment == null || !E.Concealment.Mimicry))
               Debug.Fail($"Entity {E.Name} is expected to have mimicry.");
 
-            if ((E.Kind == Kinds.demon || E.Kind == Kinds.vampire || E.Kind == Kinds.lycanthrope) && !E.Chemistry.Vulnerabilities.Contains(Materials.silver))
-              Debug.Fail($"Entity {E.Name} is a {E.Kind.Name} and is expected to be marked as vulnerable to silver.");
+            if (E.Kind == Kinds.demon || E.Kind == Kinds.vampire || E.Kind == Kinds.lycanthrope || E.Kind == Kinds.imp || E.Kind == Kinds.changeling)
+            {
+              if (!E.Chemistry.Vulnerabilities.Contains(Materials.silver))
+                Debug.Fail($"Entity {E.Name} is a {E.Kind.Name} and is expected to be marked as vulnerable to silver.");
+            }
+            else if (E.Chemistry.Vulnerabilities.Contains(Materials.silver))
+            {
+              //Debug.Fail($"Entity {E.Name} is a {E.Kind.Name} which is NOT expected to be marked as vulnerable to silver.");
+            }
           });
         });
       }
@@ -11408,7 +11415,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.phasing);
         E.Startup.SetResistance(Elements.petrify, Elements.poison);
@@ -11451,7 +11458,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.phasing, Properties.free_action, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
@@ -11497,7 +11504,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.petrify);
@@ -11547,7 +11554,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
@@ -17631,7 +17638,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation);
         E.Startup.SetResistance(Elements.poison);
@@ -17679,7 +17686,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.blinking, Properties.displacement);
         E.Startup.SetResistance(Elements.poison);
@@ -19530,7 +19537,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
@@ -19573,7 +19580,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +3 from str.
@@ -19951,7 +19958,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.teleportation, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison);
@@ -20761,7 +20768,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.teleportation, Properties.blinking);
         E.Startup.SetAcquisition(Properties.sleeping);
@@ -20809,7 +20816,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.enchantment, Skills.literacy);
         E.Startup.SetTalent(Properties.teleportation, Properties.teleport_control, Properties.blinking);
         E.Startup.SetAcquisition(Properties.sleeping);
