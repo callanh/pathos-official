@@ -464,7 +464,7 @@ namespace Pathos
         I.Material = Materials.wood;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1250);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.staff, 1);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.quickness, Properties.see_invisible);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 2.d6());
@@ -928,7 +928,7 @@ namespace Pathos
         I.Material = Materials.stone;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1350);
-        I.SetArmour(Skills.heavy_armour, 8);
+        I.SetArmour(Skills.hammer, 8);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(20), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d4());
         I.AddObviousUse(Motions.exchange, Delay.FromTurns(20), Sonics.scrape, Use =>
@@ -13198,7 +13198,7 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = WeaponEssence1;
         I.Price = Gold.FromCoins(15);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.light_blade, 1);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, null, Elements.physical, DamageType.Pierce, 1.d3());
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.weapon);
@@ -13287,7 +13287,7 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = WeaponEssence1;
         I.Price = Gold.FromCoins(4);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.light_blade, 1);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, null, Elements.physical, DamageType.Pierce, 1.d2());
         I.AddObviousIngestUse(Motions.eat, 5, Delay.FromTurns(10), Sonics.weapon);
@@ -13507,7 +13507,7 @@ namespace Pathos
         I.Material = Materials.wood;
         I.Essence = WeaponEssence0;
         I.Price = Gold.FromCoins(5);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.staff, 1);
         I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d6());
@@ -13527,7 +13527,7 @@ namespace Pathos
         I.Material = Materials.adamantine;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
-        I.SetArmour(Skills.light_armour, 2);
+        I.SetArmour(Skills.staff, 2);
         //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d10());
@@ -13546,7 +13546,7 @@ namespace Pathos
         I.Material = Materials.bone;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.staff, 1);
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d5(), A =>
@@ -13573,7 +13573,7 @@ namespace Pathos
         I.Material = Materials.mithril;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.staff, 1);
         I.AddObviousIngestUse(Motions.eat, 160, Delay.FromTurns(40), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d6() + 1, A =>
@@ -13600,7 +13600,7 @@ namespace Pathos
         I.Material = Materials.crystal;
         I.Essence = WeaponEssence4;
         I.Price = Gold.FromCoins(500);
-        I.SetArmour(Skills.light_armour, 1);
+        I.SetArmour(Skills.staff, 1);
         I.AddObviousIngestUse(Motions.eat, 80, Delay.FromTurns(40), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.staff, null, Elements.physical, DamageType.Bludgeon, 1.d7(), A =>

@@ -522,6 +522,9 @@ namespace Pathos
         if (Item.IsWeapon() && Item.Weapon.Skill == Codex.Skills.polearm && Item.Appearance == null && !Item.Grade.Unique)
           Record($"Item {Item.Name} must have an appearance because it is a polearm.");
 
+        if (Item.Weapon != null && Item.Armour != null && Item.Weapon.Skill != Item.Armour.Skill)
+          Record($"Item {Item.Name} must use the same skill for both weapon and armour.");
+
         if (Item.DerivativeEntities != null && Item.DerivativeEntities.Count == 0)
           Record($"Item {Item.Name} with derivative entity array must specified at least one entity.");
 
