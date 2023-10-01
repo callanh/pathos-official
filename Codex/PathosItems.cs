@@ -693,6 +693,7 @@ namespace Pathos
         I.AddObviousUse(Motions.flash, Delay.FromTurns(10), Sonics.flash, Use =>
         {
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
+             .SetTerminates()
              .SetAudibility(5);
           Use.Apply.Malnutrition(Dice.Fixed(100));
           Use.Apply.WithSourceSanctity
@@ -705,6 +706,7 @@ namespace Pathos
         I.AddPropertyAreaUse(Motions.zap, Properties.fear, Delay.FromTurns(20), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
+             .SetTerminates()
              .SetAudibility(5);
           Use.Apply.Malnutrition(Dice.Fixed(100));
           Use.Apply.Light(true, Locality.Area);
@@ -717,6 +719,9 @@ namespace Pathos
         });
         I.AddObviousUse(Motions.scry, Delay.FromTurns(30), Sonics.magic, Use =>
         {
+          Use.SetCast().Strike(Strikes.flash, Dice.Zero)
+             .SetTerminates()
+             .SetAudibility(1);
           Use.Apply.Malnutrition(Dice.Fixed(100));
           Use.Apply.WithSourceSanctity
           (
@@ -743,133 +748,139 @@ namespace Pathos
         I.DefaultSanctity = Sanctities.Cursed;
         I.AddObviousUse(Motions.open, Delay.FromTurns(30), Sonics.magic, Use =>
         {
+          Use.SetCast().Strike(Strikes.magic, Dice.Zero)
+             .SetTerminates()
+             .SetAudibility(1);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.WithSourceSanctity
-          (
-            B =>
-            {
-              B.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the box.
-              B.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: false);
-              B.WhenProbability(Table =>
+          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled, R =>
+          {
+            R.WithSourceSanctity
+            (
+              B =>
               {
-                Table.Add(10, A =>
+                B.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the box.
+                B.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: false);
+                B.WhenProbability(Table =>
                 {
-                  A.Light(true, Locality.Area);
-                  A.Mapping(Range.Sq20, Chance.Always);
-                  A.Searching(Range.Sq20);
-                  A.DetectTrap(Range.Sq20);
+                  Table.Add(10, A =>
+                  {
+                    A.Light(true, Locality.Area);
+                    A.Mapping(Range.Sq20, Chance.Always);
+                    A.Searching(Range.Sq20);
+                    A.DetectTrap(Range.Sq20);
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Pacify(Elements.magical, Kinds.Living.ToArray());
+                    A.AreaTransient(Properties.fear, 4.d10(), Kinds.Undead.ToArray());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Heal(5.d20(), Modifier.Zero);
+                    A.Energise(5.d20(), Modifier.Zero);
+                    A.RestoreAbility();
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Nutrition(5.d100());
+                    A.ApplyTransient(Properties.slow_digestion, 5.d100());
+                    A.ApplyTransient(Properties.life_regeneration, 5.d100());
+                    A.ApplyTransient(Properties.mana_regeneration, 5.d100());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Unafflict();
+                    A.Unpunish();
+                    A.Unpolymorph();
+                    A.RemoveCurse(Dice.One);
+                    A.Charging(Dice.One, Dice.Fixed(100)); // 100%
+                  });
+                  Table.Add(10, A => A.CreateAsset(Dice.One));
+                  Table.Add(10, A => A.SummonEntity(Dice.One, Entities.List.Where(E => E.IsEncounter && E.IsDomestic).ToArray()));
+                  Table.Add(5, A => A.CreateFixture(Codex.Features.fountain));
                 });
-                Table.Add(10, A =>
-                {
-                  A.Pacify(Elements.magical, Kinds.Living.ToArray());
-                  A.AreaTransient(Properties.fear, 4.d10(), Kinds.Undead.ToArray());
-                });
-                Table.Add(10, A =>
-                {
-                  A.Heal(5.d20(), Modifier.Zero);
-                  A.Energise(5.d20(), Modifier.Zero);
-                  A.RestoreAbility();
-                });
-                Table.Add(10, A =>
-                {
-                  A.Nutrition(5.d100());
-                  A.ApplyTransient(Properties.slow_digestion, 5.d100());
-                  A.ApplyTransient(Properties.life_regeneration, 5.d100());
-                  A.ApplyTransient(Properties.mana_regeneration, 5.d100());
-                });
-                Table.Add(10, A =>
-                {
-                  A.Unafflict();
-                  A.Unpunish();
-                  A.Unpolymorph();
-                  A.RemoveCurse(Dice.One);
-                  A.Charging(Dice.One, Dice.Fixed(100)); // 100%
-                });
-                Table.Add(10, A => A.CreateAsset(Dice.One));
-                Table.Add(10, A => A.SummonEntity(Dice.One, Entities.List.Where(E => E.IsEncounter && E.IsDomestic).ToArray()));
-                Table.Add(5, A => A.CreateFixture(Codex.Features.fountain));
-              });
-            },
-            U =>
-            {
-              U.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed));  // curse the box.
-              U.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true);
-              U.WhenProbability(Table =>
+              },
+              U =>
               {
-                Table.Add(10, A =>
+                U.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed));  // curse the box.
+                U.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true);
+                U.WhenProbability(Table =>
                 {
-                  A.Light(true, Locality.Area);
-                  A.DetectTrap(Range.Sq20);
+                  Table.Add(10, A =>
+                  {
+                    A.Light(true, Locality.Area);
+                    A.DetectTrap(Range.Sq20);
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Light(false, Locality.Area);
+                    A.Concealing(Range.Sq20);
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.CreateHorde(Dice.One);
+                    A.AreaTransient(Properties.slowness, 4.d10());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.CreateHorde(Dice.One);
+                    A.AreaTransient(Properties.quickness, 4.d10());
+                  });
+                  Table.Add(10, A => A.TeleportInventoryAsset());
+                  Table.Add(10, A => A.TransitionRandom(Teleport: null, 1.d2()));
+                  Table.Add(5, A => A.CreateFixture(Codex.Features.altar));
                 });
-                Table.Add(10, A =>
-                {
-                  A.Light(false, Locality.Area);
-                  A.Concealing(Range.Sq20);
-                });
-                Table.Add(10, A =>
-                {
-                  A.CreateHorde(Dice.One);
-                  A.AreaTransient(Properties.slowness, 4.d10());
-                });
-                Table.Add(10, A =>
-                {
-                  A.CreateHorde(Dice.One);
-                  A.AreaTransient(Properties.quickness, 4.d10());
-                });
-                Table.Add(10, A => A.TeleportInventoryAsset());
-                Table.Add(10, A => A.TransitionRandom(Teleport: null, 1.d2()));
-                Table.Add(5, A => A.CreateFixture(Codex.Features.altar));
-              });
-            },
-            C =>
-            {
-              C.Rumour(Attributes.wisdom, Skills.literacy, Truth: false, Lies: true);
-              C.WhenProbability(Table =>
+              },
+              C =>
               {
-                Table.Add(10, A =>
+                C.Rumour(Attributes.wisdom, Skills.literacy, Truth: false, Lies: true);
+                C.WhenProbability(Table =>
                 {
-                  A.Light(false, Locality.Area);
-                  A.Amnesia(Range.Sq30);
-                  A.Concealing(Range.Sq30);
+                  Table.Add(10, A =>
+                  {
+                    A.Light(false, Locality.Area);
+                    A.Amnesia(Range.Sq30);
+                    A.Concealing(Range.Sq30);
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.ApplyTransient(Properties.paralysis, 3.d6());
+                    A.Murder(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.ApplyTransient(Properties.petrifying, 3.d6());
+                    A.CreateHorde(Dice.One);
+                    A.AreaTransient(Properties.rage, 10.d10());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.Afflict(Codex.Afflictions.List.ToArray());
+                    A.Punish(Codex.Punishments.List.ToArray());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.TeleportInventoryAsset();
+                    A.CreateEntity(1.d3(), Kinds.golem.Entities.Where(E => E.IsEncounter).ToArray());
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.CreateBoulder(2.d3());
+                    A.CreateHorde(Dice.One);
+                  });
+                  Table.Add(10, A =>
+                  {
+                    A.CreateFixture(Codex.Features.pentagram);
+                    A.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false);
+                    A.CreateEntity(1.d3(), Entities.ghost);
+                  });
+                  Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
+                  Table.Add(10, A => A.Polymorph(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray(), Items: false));
+                  Table.Add(5, A => A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null));
                 });
-                Table.Add(10, A =>
-                {
-                  A.ApplyTransient(Properties.paralysis, 3.d6());
-                  A.Murder(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
-                });
-                Table.Add(10, A =>
-                {
-                  A.ApplyTransient(Properties.petrifying, 3.d6());
-                  A.CreateHorde(Dice.One);
-                  A.AreaTransient(Properties.rage, 10.d10());
-                });
-                Table.Add(10, A =>
-                {
-                  A.Afflict(Codex.Afflictions.List.ToArray());
-                  A.Punish(Codex.Punishments.List.ToArray());
-                });
-                Table.Add(10, A =>
-                {
-                  A.TeleportInventoryAsset();
-                  A.CreateEntity(1.d3(), Kinds.golem.Entities.Where(E => E.IsEncounter).ToArray());
-                });
-                Table.Add(10, A =>
-                {
-                  A.CreateBoulder(2.d3());
-                  A.CreateHorde(Dice.One);
-                });
-                Table.Add(10, A =>
-                {
-                  A.CreateFixture(Codex.Features.pentagram);
-                  A.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false);
-                  A.CreateEntity(1.d3(), Entities.ghost);
-                });
-                Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
-                Table.Add(10, A => A.Polymorph(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray(), Items: false));
-                Table.Add(5, A => A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null));
-              });
-            }
-          );
+              }
+            );
+          });
         });
         I.AddObviousUse(Motions.sacrifice, Delay.FromTurns(60), Sonics.prayer, Use =>
         {
@@ -897,6 +908,9 @@ namespace Pathos
          .SetTalent(Properties.reflection, Properties.warning);
         I.AddObviousUse(Motions.scry, Delay.FromTurns(30), Sonics.magic, Use =>
         {
+          Use.SetCast().Strike(Strikes.magic, Dice.Zero)
+             .SetTerminates()
+             .SetAudibility(1);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R =>
@@ -997,6 +1011,7 @@ namespace Pathos
         I.AddPropertyAreaUse(Motions.zap, Properties.fear, Delay.FromTurns(20), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
+             .SetTerminates()
              .SetAudibility(5);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
