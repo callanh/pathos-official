@@ -5346,11 +5346,11 @@ namespace Pathos
           (
             B =>
             {
-              B.Replenish(0F, 0F); // full life and mana.
+              B.Replenish(LifeThreshold: 100F, ManaThreshold: 100F); // full life and mana.
             },
             U =>
             {
-              U.Replenish(0F, 100F); // full life.
+              U.Replenish(LifeThreshold: 100F, ManaThreshold: 0F); // full life.
             },
             C =>
             {
