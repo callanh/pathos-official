@@ -8188,7 +8188,7 @@ namespace Pathos
         I.AddObviousUse(Motions.read, Delay.FromTurns(15), Sonics.read, Use =>
         {
           Use.Consume();
-          Use.SetCast().FilterEdibleItem(false);
+          Use.SetCast().FilterDigestedItem(false);
           Use.Apply.WhenConfused
           (
             T => T.Polymorph(Entities.killer_food_ration),
