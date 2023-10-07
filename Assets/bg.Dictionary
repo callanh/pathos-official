@@ -1048,7 +1048,6 @@ EffectType,identify,опознаёт
 EffectType,impersonate,имитирует
 EffectType,incarcerate,
 EffectType,karma,карма
-EffectType,learn spell,учит заклинание
 EffectType,liberate,
 EffectType,locking,запирает
 EffectType,lose skill,загуби умение
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
 FormatText,increase one ability by {AdjustmentDice},
+FormatText,learn spell {SpellName},учит заклинание {SpellName}
 FormatText,level {Depth},
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},
 FormatText,levels {From}-{To},

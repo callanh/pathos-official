@@ -1048,7 +1048,6 @@ EffectType,identify,identifie
 EffectType,impersonate,usurpe l'identité
 EffectType,incarcerate,emprisonne
 EffectType,karma,karma
-EffectType,learn spell,apprend le sortilège
 EffectType,liberate,libère
 EffectType,locking,verrouille
 EffectType,lose skill,perd la compétence
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},guérit {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},augmente {AttributeName} de {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},augmente toutes les compétences de {AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},augmente une compétence de {AdjustmentDice}
+FormatText,learn spell {SpellName},apprend le sortilège {SpellName}
 FormatText,level {Depth},niveau {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},niveau {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},niveaux {From}-{To}

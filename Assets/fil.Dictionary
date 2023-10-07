@@ -1048,7 +1048,6 @@ EffectType,identify,pag-identify
 EffectType,impersonate,pag-impersonate
 EffectType,incarcerate,pag-incarcerate
 EffectType,karma,
-EffectType,learn spell,pagkatuto sa skill
 EffectType,liberate,pag-liberate
 EffectType,locking,pag-lock
 EffectType,lose skill,pagkawala ng skill
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
 FormatText,increase one ability by {AdjustmentDice},
+FormatText,learn spell {SpellName},pagkatuto sa skill {SpellName}
 FormatText,level {Depth},
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},
 FormatText,levels {From}-{To},

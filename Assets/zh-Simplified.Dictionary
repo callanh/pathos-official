@@ -1048,7 +1048,6 @@ EffectType,identify,鉴定
 EffectType,impersonate,模仿
 EffectType,incarcerate,禁锢
 EffectType,karma,运气
-EffectType,learn spell,习得咒语
 EffectType,liberate,解放
 EffectType,locking,锁住
 EffectType,lose skill,失去技能
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},治疗 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}提升 {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},所有能力提升 {AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},一项能力提升 {AdjustmentDice}
+FormatText,learn spell {SpellName},习得咒语 {SpellName}
 FormatText,level {Depth},楼层 {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Level} 级 {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},等级{From}-{To}

@@ -1048,7 +1048,6 @@ EffectType,identify,định danh
 EffectType,impersonate,diễn theo
 EffectType,incarcerate,nhốt
 EffectType,karma,nghiệp
-EffectType,learn spell,học phép thuật
 EffectType,liberate,thả ra
 EffectType,locking,khóa
 EffectType,lose skill,mất kĩ năng
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},hồi {LifeDice} sinh lực
 FormatText,increase {AttributeName} by {AdjustmentDice},tăng {AttributeName} bởi {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},tăng tất cả kỹ năng bởi {AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},tăng một kỹ năng bởi {AdjustmentDice}
+FormatText,learn spell {SpellName},học phép thuật {SpellName}
 FormatText,level {Depth},tầng {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},cấp {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},từ tầng {From} đến {To}

@@ -1048,7 +1048,6 @@ EffectType,identify,tanımla
 EffectType,impersonate,taklit et
 EffectType,incarcerate,hapset
 EffectType,karma,karma
-EffectType,learn spell,büyü öğren
 EffectType,liberate,özgürleştir
 EffectType,locking,kilitle
 EffectType,lose skill,beceri kaybet
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
 FormatText,increase one ability by {AdjustmentDice},
+FormatText,learn spell {SpellName},büyü öğren {SpellName}
 FormatText,level {Depth},seviye {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},seviye {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},

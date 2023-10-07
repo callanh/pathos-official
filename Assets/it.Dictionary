@@ -1048,7 +1048,6 @@ EffectType,identify,identificare
 EffectType,impersonate,impersonare
 EffectType,incarcerate,incarcerare
 EffectType,karma,karma
-EffectType,learn spell,impara l'incantesimo
 EffectType,liberate,liberare
 EffectType,locking,chiusura
 EffectType,lose skill,perdere abilità
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},cura {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
 FormatText,increase one ability by {AdjustmentDice},
+FormatText,learn spell {SpellName},impara l'incantesimo {SpellName}
 FormatText,level {Depth},{Depth}° piano
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},livello {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},livelli {From}-{To}

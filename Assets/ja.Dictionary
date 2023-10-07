@@ -1048,7 +1048,6 @@ EffectType,identify,識別
 EffectType,impersonate,対象をコピー
 EffectType,incarcerate,石像化
 EffectType,karma,カルマ
-EffectType,learn spell,呪文を学ぶ
 EffectType,liberate,解放する
 EffectType,locking,施錠
 EffectType,lose skill,スキルレベル低下
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},ライフ回復 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
 FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
 FormatText,increase one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}増加
+FormatText,learn spell {SpellName},呪文を学ぶ {SpellName}
 FormatText,level {Depth},地下{Depth}階
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レベル{Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},レベルの差 {From} から {To}

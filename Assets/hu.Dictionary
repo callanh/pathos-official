@@ -1048,7 +1048,6 @@ EffectType,identify,azonosítás
 EffectType,impersonate,utánzás
 EffectType,incarcerate,bebörtönzés
 EffectType,karma,karma
-EffectType,learn spell,megtanult varázslat:
 EffectType,liberate,felszabadítás
 EffectType,locking,zárás
 EffectType,lose skill,képesség elvesztése
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},gyógyítás {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
 FormatText,increase one ability by {AdjustmentDice},
+FormatText,learn spell {SpellName},megtanult varázslat: {SpellName}
 FormatText,level {Depth},{Depth}. szint
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Level}. szintű {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},{From}.-{To}. szint

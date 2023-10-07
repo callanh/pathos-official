@@ -1048,7 +1048,6 @@ EffectType,identify,identifizieren
 EffectType,impersonate,imitieren
 EffectType,incarcerate,inhaftieren
 EffectType,karma,Karma
-EffectType,learn spell,Zauber lernen
 EffectType,liberate,befreien
 EffectType,locking,verriegeln
 EffectType,lose skill,Fertigkeit verlieren
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},heilt {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},erhöht {AttributeName} um {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},erhöht alle Fähigkeiten um {AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},erhöht eine Fähigkeit um {AdjustmentDice}
+FormatText,learn spell {SpellName},Zauber lernen {SpellName}
 FormatText,level {Depth},Ebene {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},Stufe {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},Stufe {From}-{To}

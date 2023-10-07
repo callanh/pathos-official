@@ -1048,7 +1048,6 @@ EffectType,identify,ระบุ
 EffectType,impersonate,ปลอมตัว
 EffectType,incarcerate,กักขัง
 EffectType,karma,กรรม
-EffectType,learn spell,เรียนเวท
 EffectType,liberate,ปลดแอก
 EffectType,locking,สะเดาะล็อค
 EffectType,lose skill,สูญเสียทักษะ
@@ -2102,6 +2101,7 @@ FormatText,heal {LifeDice},รักษา {LifeDice} พลังชีวิ�
 FormatText,increase {AttributeName} by {AdjustmentDice},เพิ่ม{AttributeName}ขึ้น {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},เพิ่มทุกทักษะขึ้น {AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},เพิ่มหนึ่งทักษะขึ้น {AdjustmentDice}
+FormatText,learn spell {SpellName},เรียนเวท {SpellName}
 FormatText,level {Depth},นที่ {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{EntityName}{SpecialName}{GenderName}อาชีพ{ClassName}เลเวล {Level}
 FormatText,levels {From}-{To},จากชั้น{From}ถึง{To}
