@@ -18648,7 +18648,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.free_action);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3()); // +1 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d3());
@@ -18699,7 +18699,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.free_action);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4()); // +1 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d4(), A => A.Apply.Macro(MajorPoison(Attributes.constitution)));
@@ -29352,6 +29352,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
+        E.Startup.SetTalent(Properties.slippery);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -2
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -29453,6 +29454,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
+        E.Startup.SetTalent(Properties.slippery);
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2() + 3); // -3
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn4);
@@ -29594,6 +29596,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
+        E.Startup.SetTalent(Properties.slippery);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
@@ -29641,7 +29644,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control, Properties.free_action);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
@@ -29692,7 +29695,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.necromancy, Skills.evocation, Skills.abjuration, Skills.transmutation);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control, Properties.free_action);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.darkness);
         E.Startup.AddGrimoire(Dice.One, Spells.disintegrate);
@@ -29799,7 +29802,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.phasing);
+        E.Startup.SetTalent(Properties.phasing, Properties.free_action);
         E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d5(), K => // +1
         {
@@ -29855,6 +29858,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison);
+        E.Startup.SetTalent(Properties.free_action);
         E.AddAttack(AttackTypes.bite, Elements.physical, 8.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.poison, F => F.ApplyTransient(Properties.fainting, 1.d3())));
@@ -30004,6 +30008,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
+        E.Startup.SetTalent(Properties.free_action);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d9());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d7(), K =>
         {
