@@ -940,7 +940,7 @@ namespace Pathos
             SPDDebug.adventure = null;
             SPDDebug.codex = null;
             SPDDebug.mainSite = null;
-            SPDDebug.startRegion = new Region(0, 0, 0, 0);
+            SPDDebug.startRegion = Region.Zero;
             SPDDebug.startZone = null;
             SPDDebug.maps = null;
             SPDDebug.currentmap = null;

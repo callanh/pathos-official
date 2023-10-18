@@ -96,8 +96,8 @@ namespace Pathos
       this.Codex = Codex;
       this.Generator = Generator;
 
-      this.ShopProbability = GetShops().ToProbability(M => M.Rarity);
-      this.ShrineProbability = Codex.Shrines.List.ToProbability(M => M.Rarity);
+      this.ShopProbability = Generator.GetShops().ToProbability(M => M.Rarity);
+      this.ShrineProbability = Generator.GetShrines().ToProbability(M => M.Rarity);
 
       this.AttractionProbability = new Probability<Attraction>();
       AttractionProbability.Add(1, new Attraction(AttractionType.Prison));
@@ -1016,7 +1016,7 @@ namespace Pathos
 
           Generator.PlaceRoom(FinaleMap, FinaleBarrier, FinaleGround, FinalVaultRegion);
 
-          RegionEdge(FinaleMap, FinalVaultRegion.Expand(), S =>
+          RegionEdge(FinaleMap, FinalVaultRegion.Expand(1), S =>
           {
             S.SetWall(null);
             Generator.PlaceFloor(S, FinaleGround);
@@ -1032,7 +1032,7 @@ namespace Pathos
             {
               case 1:
                 // coins.
-                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
+                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
                   DropCoins(FinalSquare, Generator.RandomCoinQuantity(FinalSquare) * 1.d10().Roll());
                 break;
 
@@ -1040,7 +1040,7 @@ namespace Pathos
                 // gems.
                 var GemProbability = Codex.Items.List.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One && !I.Grade.Unique).ToProbability(I => I.Rarity);
 
-                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
+                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
                 {
                   // 1..3 gems per square.
                   foreach (var Item in 1.d5().Roll().NumberSeries())
@@ -1050,7 +1050,7 @@ namespace Pathos
 
               case 3:
                 // items.
-                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
+                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
                 {
                   // 1..3 items per square.
                   foreach (var Item in 1.d3().Roll().NumberSeries())
@@ -1060,13 +1060,13 @@ namespace Pathos
 
               case 4:
                 // traps.
-                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
+                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
                   Generator.PlaceTrap(FinalSquare);
                 break;
 
               case 5:
                 // boulders.
-                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Contract()))
+                foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
                   Generator.PlaceBoulder(FinalSquare, FinaleBlock, IsRigid: false);
                 break;
 
@@ -1074,7 +1074,7 @@ namespace Pathos
                 // TODO: attach punishment to the prisoner (ball&chain).
 
                 // prison.
-                var PrisonSquare = FinaleMap.GetSquares(FinalVaultRegion.Contract()).ToArray().GetRandom();
+                var PrisonSquare = FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)).ToArray().GetRandom();
                 Generator.PlaceCharacter(PrisonSquare, FinaleMap.Difficulty, FinaleMap.Difficulty + 5);
                 break;
 
@@ -2448,7 +2448,7 @@ namespace Pathos
 
       while (SquareStack.Count > 0)
       {
-        var NeighbourArray = NextSquare.GetNeighbourSquares().Where(S => S.Wall != null && !S.IsEdge(Region)).ToArray();
+        var NeighbourArray = NextSquare.GetNeighbourSquares(2).Where(S => S.Wall != null && !S.IsEdge(Region)).ToArray();
         if (NeighbourArray.Length > 0)
         {
           var Neighbour = NeighbourArray.GetRandom();
@@ -2863,10 +2863,6 @@ namespace Pathos
       }
 
       return CaveTemplateList;
-    }
-    private IEnumerable<Shop> GetShops()
-    {
-      return Codex.Shops.List.Where(S => !Generator.Adventure.Abolition || !S.SellsOnlyAbolitionCandidates());
     }
     private IEnumerable<Zoo> GetZoos(Map Map)
     {
@@ -4078,7 +4074,7 @@ namespace Pathos
         if (LabyrinthMap.Terminal)
         {
           // replace some walls with lava.
-          foreach (var InnerSquare in LabyrinthMap.GetSquares(LabyrinthRegion.Contract()))
+          foreach (var InnerSquare in LabyrinthMap.GetSquares(LabyrinthRegion.Reduce(1)))
           {
             if (InnerSquare.Wall != null && Chance.OneIn10.Hit())
             {
@@ -5352,12 +5348,13 @@ namespace Pathos
 
       var MercenaryProbability = Codex.Entities.List.Where(E => E.IsMercenary && E.IsEncounter).ToProbability(E => E.Level); // higher level ones are preferred.
 
-      var ShopList = GetShops().ToDistinctList();
+      // ignore probability for the black market, we want all the shops equally.
+      var ShopList = Generator.GetShops().ToDistinctList();
 
       Shop GetShop()
       {
         if (ShopList.Count == 0)
-          ShopList.AddRange(GetShops());
+          ShopList.AddRange(Generator.GetShops());
 
         var Result = ShopList.GetRandom();
         ShopList.Remove(Result);
