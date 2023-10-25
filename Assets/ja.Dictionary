@@ -982,6 +982,7 @@ EffectProperty,remove random talent,ランダムな性質を失う
 EffectProperty,removes all transients,全ての一時的な状態を解消
 EffectProperty,reset random equipment,ランダムな装備の修正値を0にする
 EffectProperty,reveal,明らかに
+EffectProperty,rigid,固まった
 EffectProperty,sanctity,尊厳
 EffectProperty,skills,スキル
 EffectProperty,source,それ自体
@@ -1054,6 +1055,7 @@ EffectType,lose skill,スキルレベル低下
 EffectType,lose talent,性質を失う
 EffectType,malnutrition,満腹度減少
 EffectType,mapping,地図作製
+EffectType,mobilise boulder,
 EffectType,murder,殺人
 EffectType,nutrition,満腹度上昇
 EffectType,opening,開錠
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},{STANDINGNAME}の場合
 FormatText,when resists {ElementName},{ElementName}に抵抗した場合
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,硬い結晶で構成された、簡単には壊れない重厚な扉。
 GateName,crystal door,水晶の扉
+GateName,gold door,
 GateName,wooden door,木製扉
 GenderHimself,herself,彼女自身
 GenderHimself,himself,彼自身
@@ -2160,8 +2163,11 @@ GradeName,artifact,アーティファクト
 GradeName,exotic,秀逸
 GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,ひんやりとした石の表面は見事に加工されているが、傷と時の流れははっきりと刻み込まれている。
+GroundName,cave floor,
 GroundName,chasm,がけ穴
-GroundName,dirt floor,土の床
+GroundName,dirt,土の床
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,草
 GroundName,hive floor,巣の床
 GroundName,ice,氷の床
@@ -3060,6 +3066,7 @@ KindName,kobold,コボルト
 KindName,lich,リッチ
 KindName,light,光球
 KindName,lizard,トカゲ
+KindName,lizardman,トカゲ族
 KindName,lycanthrope,獣人
 KindName,marine,水生生物
 KindName,mercenary,傭兵

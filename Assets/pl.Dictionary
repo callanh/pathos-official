@@ -982,6 +982,7 @@ EffectProperty,remove random talent,usuń losowy talent
 EffectProperty,removes all transients,usuwa wszystkie napięcia przejściowe
 EffectProperty,reset random equipment,resetuje losowy przedmiot
 EffectProperty,reveal,ujawnij
+EffectProperty,rigid,sztywny
 EffectProperty,sanctity,świętość
 EffectProperty,skills,zdolności
 EffectProperty,source,źródło
@@ -1054,6 +1055,7 @@ EffectType,lose skill,tracić umiejętność
 EffectType,lose talent,tracić talent
 EffectType,malnutrition,niedożywienie
 EffectType,mapping,odwzorowanie
+EffectType,mobilise boulder,
 EffectType,murder,morderstwo
 EffectType,nutrition,odżywianie
 EffectType,opening,otwarcie
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},gdy {STANDINGNAME}
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Te ciężkie drzwi są wykonane z twardych kryształowych formacji i niełatwo je uszkodzić.
 GateName,crystal door,kryształowe drzwi
+GateName,gold door,
 GateName,wooden door,drewniane drzwi
 GenderHimself,herself,się
 GenderHimself,himself,sam
@@ -2160,8 +2163,11 @@ GradeName,artifact,artefakt
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Chłodna powierzchnia kamienia ma nieskazitelny kunszt ale jest naznaczona uszkodzeniami i czasem.
+GroundName,cave floor,
 GroundName,chasm,Przepaść
-GroundName,dirt floor,klepisko
+GroundName,dirt,klepisko
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,trawa
 GroundName,hive floor,posadzka ula
 GroundName,ice,lód
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,licz
 KindName,light,światło
 KindName,lizard,jaszczurka
+KindName,lizardman,jaszczurolud
 KindName,lycanthrope,likantrop
 KindName,marine,morski
 KindName,mercenary,najemnik

@@ -982,6 +982,7 @@ EffectProperty,remove random talent,удалить случайный талан
 EffectProperty,removes all transients,снимает все временные эффекты
 EffectProperty,reset random equipment,устанавливает случайное снаряжение
 EffectProperty,reveal,раскрыться
+EffectProperty,rigid,неподвижный
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,навыки
 EffectProperty,source,источник
@@ -1054,6 +1055,7 @@ EffectType,lose skill,теряет навык
 EffectType,lose talent,теряет талант
 EffectType,malnutrition,недоедание
 EffectType,mapping,карта
+EffectType,mobilise boulder,
 EffectType,murder,убивает
 EffectType,nutrition,питание
 EffectType,opening,открытие
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},когда {STANDINGNAME}
 FormatText,when resists {ElementName},когда сопротивляется {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Эта тяжёлая дверь создана из кристальных образований и поэтому её будет не просто сломать.
 GateName,crystal door,кристальная дверь
+GateName,gold door,
 GateName,wooden door,деревянная дверь
 GenderHimself,herself,саму себя
 GenderHimself,himself,себя самого
@@ -2160,8 +2163,11 @@ GradeName,artifact,артефакт
 GradeName,exotic,необычный
 GradeName,standard,обычный
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Прохладная каменная поверхность создана с безукоризненным мастерством, но изувечена разными повреждениями и временем."
+GroundName,cave floor,
 GroundName,chasm,пропасть
-GroundName,dirt floor,земляной пол
+GroundName,dirt,земляной пол
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,трава
 GroundName,hive floor,пол улья
 GroundName,ice,лёд
@@ -3060,6 +3066,7 @@ KindName,kobold,кобольды
 KindName,lich,личи
 KindName,light,свет
 KindName,lizard,ящеры
+KindName,lizardman,людоящер
 KindName,lycanthrope,ликантропы
 KindName,marine,морские
 KindName,mercenary,наёмники

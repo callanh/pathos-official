@@ -982,6 +982,7 @@ EffectProperty,remove random talent,véletlenszerű készség eltávolítása
 EffectProperty,removes all transients,összes átmeneti hatás eltávolítása
 EffectProperty,reset random equipment,véletlenszerű felszerelés visszaállítása
 EffectProperty,reveal,felfed
+EffectProperty,rigid,szilárd
 EffectProperty,sanctity,szentség
 EffectProperty,skills,képességek
 EffectProperty,source,forrás
@@ -1054,6 +1055,7 @@ EffectType,lose skill,képesség elvesztése
 EffectType,lose talent,készség elvesztése
 EffectType,malnutrition,alultápláltság
 EffectType,mapping,feltérképezés
+EffectType,mobilise boulder,
 EffectType,murder,gyilkosság
 EffectType,nutrition,táplálás
 EffectType,opening,kinyitás
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},{STANDINGNAME} esetén
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Ez a nehéz ajtó kemény kristályformákból áll és nehezen sérül.
 GateName,crystal door,kristályajtó
+GateName,gold door,
 GateName,wooden door,faajtó
 GenderHimself,herself,magát
 GenderHimself,himself,magát
@@ -2160,8 +2163,11 @@ GradeName,artifact,ereklye
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Ez a kőfelület igazi, makulátlan mestermunka, annak ellenére, hogy az idő vasfogának nyomát hordozza magán."
+GroundName,cave floor,
 GroundName,chasm,üresség
-GroundName,dirt floor,földpadló
+GroundName,dirt,földpadló
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,fű
 GroundName,hive floor,kaptárpadló
 GroundName,ice,jég
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,lícs
 KindName,light,fény
 KindName,lizard,gyík
+KindName,lizardman,gyíkember
 KindName,lycanthrope,likantróp
 KindName,marine,tengeri entitás
 KindName,mercenary,zsoldos

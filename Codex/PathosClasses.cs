@@ -1237,6 +1237,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_necromancer);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_necromancer);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_necromancer);
+        C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_necromancer);
         C.SetDistribution(Attributes.intelligence, Attributes.constitution, Attributes.dexterity, Attributes.wisdom, Attributes.strength, Attributes.charisma);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.clairvoyance);

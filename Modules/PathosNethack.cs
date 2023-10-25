@@ -643,7 +643,7 @@ namespace Pathos
     {
       var CavernBlock = Codex.Blocks.clay_boulder;
       var CavernBarrier = Codex.Barriers.cave_wall;
-      var CavernGround = Codex.Grounds.dirt_floor;
+      var CavernGround = Codex.Grounds.cave_floor;
       var CavernGate = (Gate)null;
 
       var CavernMap = CavernLevel.Map;
@@ -666,7 +666,7 @@ namespace Pathos
 
       var CavernShopProbability = ShopProbability.Clone();
       var CavernShrineProbability = ShrineProbability.Clone();
-      var CavernZooProbability = GetZoos(CavernMap).ToProbability(Z => Z.Rarity);
+      var CavernZooProbability = GetZooProbability(CavernMap);
 
       for (var AttractionIndex = 0; AttractionIndex < AttractionCount; AttractionIndex++)
       {
@@ -767,7 +767,7 @@ namespace Pathos
       var NetherBarrier = Codex.Barriers.hell_brick;
       var NetherGround = Codex.Grounds.obsidian_floor;
 
-      var CavernGround = Codex.Grounds.dirt_floor;
+      var CavernGround = Codex.Grounds.dirt;
       var CavernBarrier = Codex.Barriers.cave_wall;
 
       var NetherMap = NetherLevel.Map;
@@ -822,7 +822,7 @@ namespace Pathos
 
       var NetherShopProbability = ShopProbability.Clone();
       var NetherShrineProbability = ShrineProbability.Clone();
-      var NetherZooProbability = GetZoos(NetherMap).ToProbability(Z => Z.Rarity);
+      var NetherZooProbability = GetZooProbability(NetherMap);
 
       foreach (var BSPPartition in BSPMap.PartitionList)
       {
@@ -1502,7 +1502,7 @@ namespace Pathos
     }
     private void CreateZooRoom(Zone ZooZone, Room ZooRoom, Zoo Zoo)
     {
-      var SelectZoo = Zoo ?? GetZoos(ZooRoom.Map).ToProbability(M => M.Rarity).GetRandomOrNull();
+      var SelectZoo = Zoo ?? GetZooProbability(ZooRoom.Map).GetRandomOrNull();
 
 #if DEBUG
       //SelectZoo = Codex.Zoos.spider_nest;
@@ -1518,55 +1518,7 @@ namespace Pathos
 
         ZooZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitZooArray[SelectZoo.Index]);
 
-        //var LeadSquare = !ZooRoom.Midpoint.IsObstructed() ? ZooRoom.Midpoint : ZooRoom.GetFloorSquares().Where(S => Generator.CanCreateCharacter(S)).GetRandomOrNull();
-
-        var ZooSquareList = ZooRoom.GetFloorSquares().Where(S => !S.IsObstructed()).ToDistinctList();
-
-        foreach (var ZooSquare in ZooSquareList)
-        {
-          if (SelectZoo.Ground != null)
-            Generator.PlaceFloor(ZooSquare, SelectZoo.Ground);
-
-          if (SelectZoo.Feature != null && Chance.OneIn3.Hit())
-            Generator.PlaceFixture(ZooSquare, SelectZoo.Feature);
-
-          if (SelectZoo.Device != null && Chance.OneIn3.Hit())
-            Generator.PlaceTrap(ZooSquare, SelectZoo.Device); // not revealed.
-
-          Generator.PlaceLoot(ZooSquare, SelectZoo.Loot);
-        }
-
-        foreach (var Spawn in SelectZoo.Spawns)
-        {
-          var SpawnProbability = Spawn.Entities.ToProbability(E => E.Frequency);
-          var SpawnNumber = Spawn.Count != null ? Spawn.Count.Value.Roll() : (int?)null;
-
-          while (ZooSquareList.Count > 0 && (SpawnNumber == null || SpawnNumber.Value > 0))
-          {
-            var ZooSquare = ZooSquareList.GetRandom();
-
-            // NOTE: check ZooSquare.Character == null because wormtails may end up in the list.
-            if (ZooSquare.Character == null && Spawn.Chance.Hit())
-            {
-              var SpawnEntity = Spawn.Entities.Count == 1 ? Spawn.Entities[0] : SpawnProbability.GetRandomOrNull();
-
-              if (SpawnProbability.CheckCount() == 0 || SpawnEntity != null)
-              {
-                if (SpawnEntity == null)
-                  Generator.PlaceCharacter(ZooSquare);
-                else
-                  Generator.PlaceCharacter(ZooSquare, SpawnEntity);
-
-                if (ZooSquare.Character != null)
-                  SnoozeCharacter(ZooSquare.Character);
-              }
-            }
-
-            ZooSquareList.Remove(ZooSquare);
-
-            SpawnNumber--;
-          }
-        }
+        Generator.PlaceZoo(ZooZone.Squares, SelectZoo);
       }
     }
     private void CreateAtticRoom(Room SourceRoom, Barrier SourceBarrier, Ground SourceGround)
@@ -2032,8 +1984,11 @@ namespace Pathos
         Generator.PlaceFloor(NookSquare, AccessGround);
 
         // restricted means you cannot teleport into it.
-        NookZone.SetRestricted(Chance.OneIn10.Hit());
-        if (NookZone.Restricted)
+        var NookRestricted = Chance.OneIn10.Hit();
+        NookZone.SetAccessRestricted(NookRestricted);
+        NookZone.SetSpawnRestricted(NookRestricted);
+
+        if (NookRestricted)
         {
           Generator.PlaceRandomAsset(NookSquare); // occasionally no door, but a treasure is here.
         }
@@ -2188,11 +2143,7 @@ namespace Pathos
     /// <param name="Character"></param>
     public void SnoozeCharacter(Character Character)
     {
-      if (Inv.Assert.IsEnabled)
-        Inv.Assert.CheckNotNull(Character, nameof(Character));
-
-      if (!Character.HasCompleteResistance(Codex.Elements.sleep))
-        Character.AcquireTalent(Codex.Properties.sleeping);
+      Generator.AcquireCharacterTalent(Character, Codex.Properties.sleeping);
     }
     private void RecruitParty(Square Square, Party Party)
     {
@@ -2271,7 +2222,7 @@ namespace Pathos
 
       if (Chance.OneIn15.Hit() && FloorSquareList.Count > 0)
       {
-        PlaceHorde(FloorSquareList);
+        PlaceRandomHorde(FloorSquareList);
         //if (Party != null) DebugWrite("; horde(" + Party.Name + ")");
       }
 
@@ -2333,7 +2284,7 @@ namespace Pathos
         }
       }
     }
-    private void PlaceHorde(IReadOnlyList<Square> SquareList)
+    private void PlaceRandomHorde(IReadOnlyList<Square> SquareList)
     {
       if (Inv.Assert.IsEnabled)
       {
@@ -2348,9 +2299,7 @@ namespace Pathos
         var MaximumDifficulty = HordeSquare.MaximumDifficulty(null);
 
         // Hordes can start from the level after the race is first introduced.
-        var HordeProbability = Codex.Hordes.List.Where(H => H.IsGenerated && H.MinimumDifficulty >= MinimumDifficulty && H.MaximumDifficulty <= MaximumDifficulty).ToProbability(R => 1);
-
-        var Horde = HordeProbability.GetRandomOrNull();
+        var Horde = Generator.RandomHorde(MinimumDifficulty, MaximumDifficulty);
 
 #if DEBUG
         //Horde = Engine.Codex.Hordes.piranha;
@@ -2374,7 +2323,7 @@ namespace Pathos
       var ContainerAsset = CreateContainer(Square, Locked, Trapped);
       Square.PlaceAsset(ContainerAsset);
 
-      StockContainer(Square, ContainerAsset.Item.Storage, ContainerAsset.Container, Locked, Trapped);
+      StockContainer(Square, ContainerAsset, Locked, Trapped);
     }
     private void PlaceContainer(Square Square)
     {
@@ -2383,40 +2332,11 @@ namespace Pathos
 
       PlaceContainer(Square, Locked, Trapped);
     }
-    private void StockContainer(Square Square, Storage Storage, Container Container, bool Locked, bool Trapped)
+    private void StockContainer(Square Square, Asset Asset, bool Locked, bool Trapped)
     {
-      Container.Locked = Storage.Locking && Locked;
-      Container.Trap = Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
-      StockContainer(Square, Storage, Container);
-    }
-    private void StockContainer(Square Square, Storage Storage, Container Container)
-    {
-      foreach (var _ in Storage.ContainedDice.Roll().NumberSeries())
-      {
-        var ContainedAsset = Generator.NewRandomAsset(Square, Stock: null);
-
-        // don't allow container inside container.
-        var Attempt = 0;
-        while ((ContainedAsset == null || ContainedAsset.Container != null) && Attempt < 10)
-        {
-          // just in case of a generated artifact container, it can't just be discarded, so place it on the ground.
-          if (ContainedAsset != null && ContainedAsset.Item.Grade.Unique)
-            Square.PlaceAsset(ContainedAsset);
-
-          ContainedAsset = Generator.NewRandomAsset(Square, Stock: null);
-          Attempt++;
-        }
-
-        if (ContainedAsset != null)
-        {
-          if (ContainedAsset.Container == null)
-            Container.Stash.Add(ContainedAsset);
-          else if (ContainedAsset.Item.Grade.Unique)
-            Square.PlaceAsset(ContainedAsset);
-        }
-      }
-
-      Debug.Assert(Container.Stash.Count > 0);
+      Asset.Container.Locked = Asset.Item.Storage.Locking && Locked;
+      Asset.Container.Trap = Asset.Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
+      Generator.StockContainer(Square, Asset);
     }
     private void RegionFill(Map Map, Region Region, Action<Square> Action)
     {
@@ -2526,7 +2446,7 @@ namespace Pathos
       MazeStack.Push(NextNode);
 
       var CavernBarrier = Codex.Barriers.cave_wall;
-      var CavernGround = Codex.Grounds.dirt_floor;
+      var CavernGround = Codex.Grounds.cave_floor;
 
       while (MazeStack.Count > 0)
       {
@@ -2864,9 +2784,9 @@ namespace Pathos
 
       return CaveTemplateList;
     }
-    private IEnumerable<Zoo> GetZoos(Map Map)
+    private Probability<Zoo> GetZooProbability(Map Map)
     {
-      return Codex.Zoos.List.Where(Z => Map.Difficulty >= Z.Difficulty);
+      return Generator.GetZooProbability(Map.Difficulty);
     }
     private bool CreateMinesBranch(Level CastleLevel)
     {
@@ -2885,7 +2805,7 @@ namespace Pathos
 
       var MinesBarrier = Codex.Barriers.cave_wall;
       var MinesBlock = Codex.Blocks.clay_boulder;
-      var MinesGround = Codex.Grounds.dirt_floor;
+      var MinesGround = Codex.Grounds.cave_floor;
       var MinesLevelDownPortal = Codex.Portals.clay_staircase_down;
       var MinesLevelUpPortal = Codex.Portals.clay_staircase_up;
       var PreciousGemProbability = Codex.Stocks.gem.Items.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One).ToProbability(I => I.Rarity);
@@ -2913,8 +2833,9 @@ namespace Pathos
 
       // generate the town.
       var TownBarrier = Codex.Barriers.stone_wall;
-      var TownGround = Codex.Grounds.stone_floor;
+      var TownBuildingGround = Codex.Grounds.stone_floor;
       var TownGate = Codex.Gates.wooden_door;
+      var TownOutskirtGround = Codex.Grounds.dirt;
 
       var GridArray = new[]
       {
@@ -3001,7 +2922,7 @@ namespace Pathos
           }
           else if (Chance.OneIn3.Hit())
           {
-            PlaceHorde(TownZone.Squares);
+            PlaceRandomHorde(TownZone.Squares);
           }
         }
 
@@ -3023,7 +2944,7 @@ namespace Pathos
             switch (TownSymbol)
             {
               case '<':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlacePassage(EntranceSquare, MinesLevelDownPortal, TownSquare);
@@ -3034,13 +2955,13 @@ namespace Pathos
 
               case '.':
                 // room floor.
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
                 break;
 
               case '#':
                 // corridor floor.
-                Generator.PlaceFloor(TownSquare, MinesGround);
+                Generator.PlaceFloor(TownSquare, TownOutskirtGround);
                 TownSquare.SetLit(true);
                 break;
 
@@ -3053,7 +2974,7 @@ namespace Pathos
 
               case '+':
                 // door.
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 if (TownGate == null)
@@ -3076,7 +2997,7 @@ namespace Pathos
 
               case '=':
                 // workbench.
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceFixture(TownSquare, Codex.Features.workbench);
@@ -3084,7 +3005,7 @@ namespace Pathos
 
               case '{':
                 // fountain.
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceFixture(TownSquare, Codex.Features.fountain);
@@ -3092,13 +3013,13 @@ namespace Pathos
 
               case '}':
                 // tree.
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 Generator.PlaceSolidWall(TownSquare, Codex.Barriers.tree, WallSegment.Pillar);
                 TownSquare.SetLit(true);
                 break;
 
               case '_':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 var TownShrine = ShrineProbability.GetRandom();
@@ -3143,7 +3064,7 @@ namespace Pathos
 
               case '@':
               case '%':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 var TownShop = TownShopProbability.RemoveRandomOrNull();
@@ -3179,7 +3100,7 @@ namespace Pathos
                 break;
 
               case '&':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceShrine(TownSquare, ShrineProbability.GetRandom());
@@ -3194,49 +3115,49 @@ namespace Pathos
                 break;
 
               case 'f':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.housecat);
                 break;
 
               case 'k':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.kobold_shaman);
                 break;
 
               case 'l':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.gnome_lord);
                 break;
 
               case 'n':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.water_nymph);
                 break;
 
               case 'w':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.gnomish_wizard);
                 break;
 
               case 'y':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.monkey);
                 break;
 
               case 'G':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.watch_captain);
@@ -3244,7 +3165,7 @@ namespace Pathos
                 break;
 
               case '\\':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 Generator.PlaceFixture(TownSquare, Codex.Features.bed);
@@ -3259,7 +3180,7 @@ namespace Pathos
               case '7':
               case '8':
               case '9':
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
                 var GuardNumber = (int)TownSymbol - (int)'0' - 1;
@@ -3291,7 +3212,7 @@ namespace Pathos
                 break;
 
               default:
-                Generator.PlaceFloor(TownSquare, TownGround);
+                Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
                 Debug.WriteLine(TownSymbol);
                 break;
@@ -3721,7 +3642,7 @@ namespace Pathos
               {
                 // random container loot.
                 if (UnderAsset.Item.Type == ItemType.Chest && UnderAsset.Container.Stash.Count == 0)
-                  StockContainer(UnderSquare, UnderAsset.Item.Storage, UnderAsset.Container, Locked: true, Trapped: true);
+                  StockContainer(UnderSquare, UnderAsset, Locked: true, Trapped: true);
               }
               else if (UnderAsset.Item.Type == ItemType.Gem || UnderAsset.Item.Type == ItemType.Book || UnderAsset.Item.Type == ItemType.Rock)
               {
@@ -3967,7 +3888,10 @@ namespace Pathos
 
       // no-teleport.
       foreach (var ChamberZone in ChamberMap.Zones)
-        ChamberZone.SetRestricted(true);
+      {
+        ChamberZone.SetAccessRestricted(true);
+        ChamberZone.SetSpawnRestricted(true);
+      }
 
       var ChamberStart = ConversionDictionary[QuestStart];
 
@@ -4182,7 +4106,7 @@ namespace Pathos
 
       var SokobanBarrier = Codex.Barriers.jade_wall;
       var SokobanGround = Codex.Grounds.marble_floor;
-      var SokobanGate = Codex.Gates.wooden_door;
+      var SokobanGate = Codex.Gates.gold_door;
       var SokobanBlock = Codex.Blocks.gold_boulder;
       var SokobanUpPortal = Codex.Portals.jade_ladder_up;
       var SokobanDownPortal = Codex.Portals.jade_ladder_down;
@@ -4364,7 +4288,10 @@ namespace Pathos
         Generator.RepairZones(SokobanMap, SokobanMap.Region);
 
         foreach (var Zone in SokobanMap.Zones)
-          Zone.SetRestricted(true);
+        {
+          Zone.SetAccessRestricted(true);
+          Zone.SetSpawnRestricted(true);
+        }
 
         if (TreasureSquareList.Count > 0)
         {
@@ -4732,7 +4659,10 @@ namespace Pathos
       Generator.RepairZones(FortMap, FortMap.Region);
 
       foreach (var Zone in FortMap.Zones)
-        Zone.SetRestricted(true);
+      {
+        Zone.SetAccessRestricted(true);
+        Zone.SetSpawnRestricted(true);
+      }
 
       var CacheGate = Codex.Gates.wooden_door;
 
@@ -4861,7 +4791,10 @@ namespace Pathos
       Generator.RepairZones(CacheMap, CacheMap.Region);
 
       foreach (var Zone in CacheMap.Zones.Except(CacheZone))
-        Zone.SetRestricted(true);
+      {
+        Zone.SetAccessRestricted(true);
+        Zone.SetSpawnRestricted(true);
+      }
 
       return true;
     }
@@ -5110,7 +5043,7 @@ namespace Pathos
             {
               // random container loot.
               if (Asset.Item.Type == ItemType.Chest && Asset.Container.Stash.Count == 0)
-                StockContainer(KingdomSquare, Asset.Item.Storage, Asset.Container, Locked: true, Trapped: true);
+                StockContainer(KingdomSquare, Asset, Locked: true, Trapped: true);
             }
             else if (Asset.Item != Codex.Items.skeleton_key && Asset.Item.Type != ItemType.Corpse)
             {
@@ -5164,7 +5097,7 @@ namespace Pathos
       {
         if (Generator.CanPlaceBoulder(TreeSquare))
         {
-          Generator.PlaceFloor(TreeSquare, Codex.Grounds.dirt_floor);
+          Generator.PlaceFloor(TreeSquare, Codex.Grounds.dirt);
           Generator.PlaceSolidWall(TreeSquare, Codex.Barriers.tree, WallSegment.Cross);
         }
       }
@@ -5230,7 +5163,10 @@ namespace Pathos
         foreach (var LairSquare in LairMap.GetSquares())
         {
           if (LairSquare.Zone != null)
-            LairSquare.Zone.SetRestricted(true);
+          {
+            LairSquare.Zone.SetAccessRestricted(true);
+            LairSquare.Zone.SetSpawnRestricted(true);
+          }
 
           if (LairSquare.Wall != null && LairSquare.Wall.IsPhysical())
             LairSquare.Wall.SetStructure(WallStructure.Permanent);
@@ -5248,7 +5184,7 @@ namespace Pathos
               // random container loot.
               if (Asset.Item.Type == ItemType.Chest && Asset.Container.Stash.Count == 0)
               {
-                StockContainer(LairSquare, Asset.Item.Storage, Asset.Container, Locked: true, Trapped: true);
+                StockContainer(LairSquare, Asset, Locked: true, Trapped: true);
 
                 if (QuestLevel == QuestSite.LastLevel)
                   Asset.Container.Stash.Add(Generator.NewSpecificAsset(LairSquare, GetTreasureItem()));
@@ -5386,7 +5322,10 @@ namespace Pathos
 
         // no teleport.
         if (MarketSquare.Zone != null)
-          MarketSquare.Zone.SetRestricted(true);
+        {
+          MarketSquare.Zone.SetAccessRestricted(true);
+          MarketSquare.Zone.SetSpawnRestricted(true);
+        }
 
         // permanent walls.
         if (MarketSquare.Wall != null)
@@ -5423,7 +5362,7 @@ namespace Pathos
             // random container loot.
             if (Asset.Item.Type == ItemType.Chest && Asset.Container.Stash.Count == 0)
             {
-              StockContainer(MarketSquare, Asset.Item.Storage, Asset.Container, Locked: true, Trapped: true);
+              StockContainer(MarketSquare, Asset, Locked: true, Trapped: true);
 
               Asset.Container.Stash.Add(CreateCoins(MarketSquare, 1000.d10().Roll())); // 1000-10,000 gold.
             }
@@ -5476,7 +5415,10 @@ namespace Pathos
         foreach (var TowerSquare in TowerMap.GetSquares())
         {
           if (TowerSquare.Zone != null)
-            TowerSquare.Zone.SetRestricted(true);
+          {
+            TowerSquare.Zone.SetAccessRestricted(true);
+            TowerSquare.Zone.SetSpawnRestricted(true);
+          }
 
           if (TowerSquare.Wall != null && TowerSquare.Wall.IsPhysical())
             TowerSquare.Wall.SetStructure(WallStructure.Permanent);
@@ -5491,7 +5433,7 @@ namespace Pathos
               // random container loot.
               if (Asset.Item.Type == ItemType.Chest && Asset.Container.Stash.Count == 0)
               {
-                StockContainer(TowerSquare, Asset.Item.Storage, Asset.Container, Locked: true, Trapped: true);
+                StockContainer(TowerSquare, Asset, Locked: true, Trapped: true);
 
                 // every chest contains a book - magical knowledge and power is the treasure.
                 Asset.Container.Stash.Add(Generator.NewRandomAsset(TowerSquare, Codex.Stocks.book));
@@ -5614,11 +5556,11 @@ namespace Pathos
 
                 var Trapped = Chance.OneIn3.Hit(); // 1 in 3 chests are trapped.
                 var Locked = Trapped || !Chance.OneIn3.Hit(); // all trapped chests are locked, 2 in 3 untrapped chests are also locked.
-                StockContainer(AbyssSquare, Asset.Item.Storage, Asset.Container, Locked, Trapped);
+                StockContainer(AbyssSquare, Asset, Locked, Trapped);
 
                 // chests are considered 'rich' and are double-stocked with items.
                 if (ContainerItem == Codex.Items.chest)
-                  StockContainer(AbyssSquare, Asset.Item.Storage, Asset.Container);
+                  Generator.StockContainer(AbyssSquare, Asset);
               }
             }
             else

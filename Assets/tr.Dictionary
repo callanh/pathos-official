@@ -982,6 +982,7 @@ EffectProperty,remove random talent,rastgele yeteneği kaldır
 EffectProperty,removes all transients,geçici olan her şeyi kaldırır
 EffectProperty,reset random equipment,rastgele bir teçhizatı yenile
 EffectProperty,reveal,açiğa kavuştur
+EffectProperty,rigid,
 EffectProperty,sanctity,kutsallık
 EffectProperty,skills,beceriler
 EffectProperty,source,kaynak
@@ -1054,6 +1055,7 @@ EffectType,lose skill,beceri kaybet
 EffectType,lose talent,yetenek kaybet
 EffectType,malnutrition,yetersiz beslenme
 EffectType,mapping,haritalamak
+EffectType,mobilise boulder,
 EffectType,murder,katlet
 EffectType,nutrition,beslenme
 EffectType,opening,açıklık
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},{STANDINGNAME}olduğunda
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Bu kapı sert kristallerden yapıldığından dolayı çok dayanıklı.
 GateName,crystal door,kristal kapı
+GateName,gold door,
 GateName,wooden door,tahta kapı
 GenderHimself,herself,kendisi
 GenderHimself,himself,kendisi
@@ -2160,8 +2163,11 @@ GradeName,artifact,eser
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Soğuk taş yüzeyi usta eller tarafından kazılmış ama zamanla hasar görmüş.
+GroundName,cave floor,
 GroundName,chasm,
-GroundName,dirt floor,toprak zemin
+GroundName,dirt,toprak zemin
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,
 GroundName,hive floor,kovan zemin
 GroundName,ice,buz
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,Liş
 KindName,light,ışık
 KindName,lizard,kertenkele
+KindName,lizardman,kertenkele adam
 KindName,lycanthrope,kurtadam
 KindName,marine,deniz canlısı
 KindName,mercenary,paralı asker

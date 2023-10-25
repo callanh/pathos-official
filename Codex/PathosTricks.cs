@@ -18,7 +18,13 @@ namespace Pathos
       var Sonics = Codex.Sonics;
       var Properties = Codex.Properties;
       var Entities = Codex.Entities;
+      var Kinds = Codex.Kinds;
+      var Barriers = Codex.Barriers;
+      var Grounds = Codex.Grounds;
       var Attributes = Codex.Attributes;
+      var Zoos = Codex.Zoos;
+      var Shrines = Codex.Shrines;
+      var Shops = Codex.Shops;
 
       Trick AddTrick(string Name, Action<ApplyEditor> Action)
       {
@@ -29,6 +35,11 @@ namespace Pathos
           Action(T.Apply);
         });
       }
+
+      awake_character = AddTrick("awake character", A =>
+      {
+        A.LoseTalent(Properties.sleeping);
+      });
 
       living_statue = AddTrick("living statue", A =>
       {
@@ -42,42 +53,47 @@ namespace Pathos
 
       arriving_bats = AddTrick("arriving bats", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.chirp, Codex.Kinds.bat);
+        A.ArriveEntity(Dice.One, Sonics.chirp, Kinds.bat);
       });
 
       barred_way = AddTrick("barred way", A =>
       {
-        A.CreateWall(WallStructure.Permanent, Codex.Barriers.iron_bars);
+        A.CreateWall(WallStructure.Permanent, Barriers.iron_bars);
       });
 
       cleared_way = AddTrick("cleared way", A =>
       {
-        A.RemoveWall(WallStructure.Permanent, Codex.Barriers.iron_bars);
+        A.RemoveWall(WallStructure.Permanent, Barriers.iron_bars);
+      });
+
+      dismissed_illusion = AddTrick("dismissed illusion", A =>
+      {
+        A.RemoveWall(WallStructure.Illusionary);
       });
 
       emerging_blobs = AddTrick("emerging blobs", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.burble, Codex.Kinds.blob);
+        A.ArriveEntity(Dice.One, Sonics.burble, Kinds.blob);
       });
 
       scuttling_insects = AddTrick("scuttling insects", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.scuttle, Codex.Kinds.insect);
+        A.ArriveEntity(Dice.One, Sonics.scuttle, Kinds.insect);
       });
 
       summoning_demons = AddTrick("summoning demons", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.chant, Codex.Kinds.demon);
+        A.ArriveEntity(Dice.One, Sonics.chant, Kinds.demon);
       });
 
       escaping_mummies = AddTrick("escaping mummies", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.moan, Codex.Kinds.mummy);
+        A.ArriveEntity(Dice.One, Sonics.moan, Kinds.mummy);
       });
 
       leaking_gas = AddTrick("leaking gas", A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.gas, new[] { Codex.Entities.gas_spore });
+        A.ArriveEntity(Dice.One, Sonics.gas, new[] { Entities.gas_spore });
       });
 
       surrounding_horde = AddTrick("surrounding horde", A =>
@@ -87,12 +103,22 @@ namespace Pathos
 
       returning_undead = AddTrick("returning undead",  A =>
       {
-        A.ArriveEntity(Dice.One, Codex.Sonics.tunnelling, Codex.Kinds.Undead.ToArray());
+        A.ArriveEntity(Dice.One, Sonics.tunnelling, Kinds.Undead.ToArray());
+      });
+
+      watery_noodles = AddTrick("watery noodles", A =>
+      {
+        A.ArriveEntity(1.d3(), Sonics.water_splash, new[] { Entities.water_moccasin, Entities.electric_eel, Entities.giant_eel });
+      });
+
+      pinching_crabs = AddTrick("pinching crabs", A =>
+      {
+        A.ArriveEntity(1.d3(), Sonic: null, new[] { Entities.giant_crab });
       });
 
       calling_guard = AddTrick("calling guard", A =>
       {
-        A.CreateEntity(Dice.One, Codex.Sonics.whistle, Codex.Entities.guard);
+        A.CreateEntity(Dice.One, Sonics.whistle, Entities.guard);
       });
 
       random_spawning = AddTrick("random spawning", A =>
@@ -123,14 +149,19 @@ namespace Pathos
 
       sudden_hellscape = AddTrick("sudden hellscape", A =>
       {
-        A.ConvertWall(Codex.Barriers.hell_brick, Locality.Map);
-        //A.ConvertFloor(Codex.Grounds.obsidian_floor, Locality.Map);
-        //A.ConvertDoor(Codex.Gates.crystal_door, Locality.Map);
+        A.ConvertWall(Barriers.hell_brick, Locality.Map);
+        //A.ConvertFloor(Grounds.obsidian_floor, Locality.Map);
+        //A.ConvertDoor(Gates.crystal_door, Locality.Map);
       });
 
       marble_paving = AddTrick("marble paving", A =>
       {
-        A.ConvertFloor(FromGround: null, ToGround: Codex.Grounds.marble_floor, Locality.Square);
+        A.ConvertFloor(FromGround: null, ToGround: Grounds.marble_floor, Locality.Square);
+      });
+
+      mobilise_boulder = AddTrick("mobile boulder", A =>
+      {
+        A.MobiliseBoulder(Rigid: false);
       });
 
       complete_mapping = AddTrick("complete mapping", A =>
@@ -145,24 +176,26 @@ namespace Pathos
         A.Warping();
       });
 
-      this.VisitZooArray = new Trick[Codex.Zoos.List.Count];
-      foreach (var Zoo in Codex.Zoos.List)
+      this.VisitZooArray = new Trick[Zoos.List.Count];
+      foreach (var Zoo in Zoos.List)
         VisitZooArray[Zoo.Index] = AddTrick("visited " + Zoo.Name, A => A.VisitZoo(Zoo));
 
       this.visited_bazaar = AddTrick("visited bazaar", A => A.VisitBazaar(Sonics.chime));
 
-      this.VisitShopArray = new Trick[Codex.Shops.List.Count];
-      foreach (var Shop in Codex.Shops.List)
+      this.VisitShopArray = new Trick[Shops.List.Count];
+      foreach (var Shop in Shops.List)
         VisitShopArray[Shop.Index] = AddTrick("visited " + Shop.Name, A => A.VisitShop(Shop));
       
-      this.VisitShrineArray = new Trick[Codex.Shrines.List.Count];
-      foreach (var Shrine in Codex.Shrines.List)
+      this.VisitShrineArray = new Trick[Shrines.List.Count];
+      foreach (var Shrine in Shrines.List)
         VisitShrineArray[Shrine.Index] = AddTrick("visited " + Shrine.Name, A => A.VisitShrine(Shrine));
     }
 #endif
 
+    public readonly Trick awake_character;
     public readonly Trick barred_way;
     public readonly Trick cleared_way;
+    public readonly Trick dismissed_illusion;
     public readonly Trick increase_difficulty;
     public readonly Trick overwhelm_difficulty;
     public readonly Trick animated_objects;
@@ -173,12 +206,15 @@ namespace Pathos
     public readonly Trick emerging_blobs;
     public readonly Trick scuttling_insects;
     public readonly Trick marble_paving;
+    public readonly Trick mobilise_boulder;
     public readonly Trick surrounding_horde;
     public readonly Trick random_spawning;
     public readonly Trick returning_undead;
     public readonly Trick summoning_demons;
     public readonly Trick living_statue;
     public readonly Trick automatic_locking;
+    public readonly Trick pinching_crabs;
+    public readonly Trick watery_noodles;
     public readonly Trick sudden_hellscape;
     public readonly Trick complete_mapping;
     public readonly Trick warping;

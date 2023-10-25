@@ -852,7 +852,7 @@ namespace Pathos
                 }
                 else if (point.value == SPDMapPoint.DIRT)
                 {
-                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.dirt_floor);
+                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.dirt);
                 }
                 else if (point.value == SPDMapPoint.TERRSUMMTRAP)
                 {

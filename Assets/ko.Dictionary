@@ -539,7 +539,7 @@ BoonName,teach spell,마법 가르치기
 BoonName,tinned meat,통조림 고기
 BoonName,undead army,언데드 군대
 BoonName,unicorn friend,유니콘 친구
-CalendarText,d MMMM yyyy,yyyy년 MMMM월 d일
+CalendarText,d MMMM yyyy,yyyy년 MMMM d일
 ChangeType,decrease,감소
 ChangeType,increase,증가
 CharacterName,Adebesi,아데베시
@@ -982,6 +982,7 @@ EffectProperty,remove random talent,무작위 재능 제거
 EffectProperty,removes all transients,모든 일시적인 효과 해제
 EffectProperty,reset random equipment,무작위 장비 초기화
 EffectProperty,reveal,밝힘
+EffectProperty,rigid,단단한
 EffectProperty,sanctity,신성함
 EffectProperty,skills,숙련도
 EffectProperty,source,재료
@@ -1054,6 +1055,7 @@ EffectType,lose skill,스킬 손실
 EffectType,lose talent,재능 손실
 EffectType,malnutrition,영양 손실
 EffectType,mapping,매핑
+EffectType,mobilise boulder,
 EffectType,murder,살해
 EffectType,nutrition,영양 섭취
 EffectType,opening,개방
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},{STANDINGNAME} 상태일 때
 FormatText,when resists {ElementName},{ElementName}을(를) 저항할때
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,이 문은 단단한 결정체로 이루어져있어서 쉽게 부서지지 않는다.
 GateName,crystal door,크리스탈 문
+GateName,gold door,
 GateName,wooden door,나무 문
 GenderHimself,herself,그녀 스스로
 GenderHimself,himself,그 스스로
@@ -2160,8 +2163,11 @@ GradeName,artifact,유물
 GradeName,exotic,특별한
 GradeName,standard,일반
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,이 차가운 돌 표면은 뛰어난 솜씨로 만들어졌지만 세월이 지나면서 손상되었다.
+GroundName,cave floor,
 GroundName,chasm,갈라진 틈
-GroundName,dirt floor,흙 바닥
+GroundName,dirt,흙 바닥
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,풀밭
 GroundName,hive floor,벌집 바닥
 GroundName,ice,얼음
@@ -3060,6 +3066,7 @@ KindName,kobold,코볼트
 KindName,lich,리치
 KindName,light,빛
 KindName,lizard,도마뱀
+KindName,lizardman,리자드맨
 KindName,lycanthrope,라이칸스로프
 KindName,marine,해양생물
 KindName,mercenary,용병

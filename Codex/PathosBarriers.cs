@@ -46,17 +46,17 @@ namespace Pathos
         B.Description = null;
       });
 
-      shroom = AddBarrier("shroom", Materials.vegetable, Grounds.dirt_floor, Glyphs.shroom, Opaque: true, B =>
+      shroom = AddBarrier("shroom", Materials.vegetable, Grounds.dirt, Glyphs.shroom, Opaque: true, B =>
       {
         B.Description = null;
       });
 
-      tree = AddBarrier("tree", Materials.wood, Grounds.dirt_floor, Glyphs.tree, Opaque: true, B =>
+      tree = AddBarrier("tree", Materials.wood, Grounds.dirt, Glyphs.tree, Opaque: true, B =>
       {
         B.Description = null;
       });
 
-      cave_wall = AddBarrier("cave wall", Materials.clay, Grounds.dirt_floor, Glyph: null, Opaque: true, B =>
+      cave_wall = AddBarrier("cave wall", Materials.clay, Grounds.dirt, Glyph: null, Opaque: true, B =>
       {
         B.Description = null;
       });

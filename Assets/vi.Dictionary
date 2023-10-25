@@ -982,6 +982,7 @@ EffectProperty,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
 EffectProperty,removes all transients,loại bỏ tất cả hiệu ứng tạm thời
 EffectProperty,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
 EffectProperty,reveal,phát giác
+EffectProperty,rigid,thô
 EffectProperty,sanctity,thiêng liêng
 EffectProperty,skills,các kĩ năng
 EffectProperty,source,nguồn
@@ -1054,6 +1055,7 @@ EffectType,lose skill,mất kĩ năng
 EffectType,lose talent,mất tài năng
 EffectType,malnutrition,suy dinh dưỡng
 EffectType,mapping,lập bản đồ
+EffectType,mobilise boulder,
 EffectType,murder,giết
 EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},nếu là {STANDINGNAME}
 FormatText,when resists {ElementName},khi kháng lại {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cái cửa này được làm từ kim loại cứng. Không dễ gì phá hủy đâu.
 GateName,crystal door,cửa pha lê
+GateName,gold door,
 GateName,wooden door,cửa gỗ
 GenderHimself,herself,cô ấy
 GenderHimself,himself,anh ấy
@@ -2160,8 +2163,11 @@ GradeName,artifact,báu vật
 GradeName,exotic,thiên phẩm
 GradeName,standard,thông thường
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
+GroundName,cave floor,
 GroundName,chasm,hang sâu
-GroundName,dirt floor,sàn đất
+GroundName,dirt,sàn đất
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,cỏ
 GroundName,hive floor,sàn tổ ong
 GroundName,ice,băng
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,vu yêu
 KindName,light,ánh sáng
 KindName,lizard,thằn lằn
+KindName,lizardman,người thằn lằn
 KindName,lycanthrope,ma sói
 KindName,marine,hải thú
 KindName,mercenary,lính đánh thuê

@@ -982,6 +982,7 @@ EffectProperty,remove random talent,eliminar talento aleatorio
 EffectProperty,removes all transients,remueve todos los estados transitorios
 EffectProperty,reset random equipment,restablecer equipamiento al azar
 EffectProperty,reveal,revelar
+EffectProperty,rigid,rígido
 EffectProperty,sanctity,santidad
 EffectProperty,skills,habilidades
 EffectProperty,source,fuente
@@ -1054,6 +1055,7 @@ EffectType,lose skill,perder habilidad
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrición
 EffectType,mapping,mapear
+EffectType,mobilise boulder,
 EffectType,murder,asesinar
 EffectType,nutrition,nutrición
 EffectType,opening,apertura
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},cuando {STANDINGNAME}
 FormatText,when resists {ElementName},cuando resiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Esta pesada puerta está construida con formaciones de cristal duro y no se daña fácilmente
 GateName,crystal door,puerta de cristal
+GateName,gold door,
 GateName,wooden door,puerta de madera
 GenderHimself,herself,se
 GenderHimself,himself,se
@@ -2160,8 +2163,11 @@ GradeName,artifact,artefacto
 GradeName,exotic,exótico
 GradeName,standard,estándard
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La fría piedra fue inmaculadamente elaborada pero está marcada por el daño y el tiempo.
+GroundName,cave floor,
 GroundName,chasm,abismo
-GroundName,dirt floor,suelo de tierra
+GroundName,dirt,suelo de tierra
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,hierba
 GroundName,hive floor,suelo de colmena
 GroundName,ice,hielo
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,lich
 KindName,light,iluminación
 KindName,lizard,lagarto
+KindName,lizardman,hombre lagarto
 KindName,lycanthrope,licántropo
 KindName,marine,marino
 KindName,mercenary,mercenario

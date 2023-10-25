@@ -982,6 +982,7 @@ EffectProperty,remove random talent,移除随机天赋
 EffectProperty,removes all transients,去除所有短期状态
 EffectProperty,reset random equipment,重设随机装备
 EffectProperty,reveal,揭露
+EffectProperty,rigid,坚硬
 EffectProperty,sanctity,神圣性
 EffectProperty,skills,专精
 EffectProperty,source,来源
@@ -1054,6 +1055,7 @@ EffectType,lose skill,失去技能
 EffectType,lose talent,失去天赋
 EffectType,malnutrition,降低营养
 EffectType,mapping,地图绘制
+EffectType,mobilise boulder,
 EffectType,murder,秒杀
 EffectType,nutrition,营养
 EffectType,opening,开启
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},当 {STANDINGNAME}
 FormatText,when resists {ElementName},当对 {ElementName} 免疫时
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,这扇门是用水晶造成的，很难损坏。
 GateName,crystal door,水晶门
+GateName,gold door,
 GateName,wooden door,木制门
 GenderHimself,herself,她自己
 GenderHimself,himself,他自己
@@ -2160,8 +2163,11 @@ GradeName,artifact,神器
 GradeName,exotic,超凡
 GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,冰冷的石头地面的制作手艺并不精良，但是上面刻满了时间的痕迹。
+GroundName,cave floor,
 GroundName,chasm,裂隙
-GroundName,dirt floor,泥土地面
+GroundName,dirt,泥土地面
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,草地
 GroundName,hive floor,巢穴地面
 GroundName,ice,坚冰
@@ -3060,6 +3066,7 @@ KindName,kobold,狗头人
 KindName,lich,巫妖
 KindName,light,光团
 KindName,lizard,蜥蜴
+KindName,lizardman,蜥蜴人
 KindName,lycanthrope,兽化人
 KindName,marine,海生生物
 KindName,mercenary,雇佣军

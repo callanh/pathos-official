@@ -22,6 +22,7 @@ namespace Pathos
       var Materials = Codex.Materials;
       var Grounds = Codex.Grounds;
       var Sonics = Codex.Sonics;
+      var Properties = Codex.Properties;
 
       Zoo AddZoo(string Name, Sonic Sonic, Action<ZooEditor> Action)
       {
@@ -29,6 +30,7 @@ namespace Pathos
         {
           Z.Name = Name;
           Z.Sonic = Sonic;
+          Z.AcquireTalent = Properties.sleeping;
 
           CodexRecruiter.Enrol(() => Action(Z));
         });
@@ -40,7 +42,7 @@ namespace Pathos
         Z.Rarity = 2;
         Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.sandwich);
         Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.cheese);
-        Z.Ground = Grounds.dirt_floor;
+        Z.Ground = Grounds.dirt;
         Z.Device = Devices.ant_hole;
         Z.AddSpawn(Chance.Always, 1.d4(), new[] { Entities.giant_ant });
       });
@@ -73,7 +75,7 @@ namespace Pathos
       {
         Z.Difficulty = Entities.cockatrice.Difficulty + 1;
         Z.Rarity = 2;
-        Z.Ground = Grounds.dirt_floor;
+        Z.Ground = Grounds.cave_floor;
         Z.Loot.AddKit(Chance.OneIn5, Dice.One, Items.egg);
         Z.AddSpawn(Chance.OneIn2, Count: null, new[] { Entities.cockatrice, Entities.pyrolisk, Entities.chickatrice, Entities.chicken, Entities.cockatoo });
       });
@@ -121,7 +123,7 @@ namespace Pathos
       {
         Z.Difficulty = 1;
         Z.Rarity = 2;
-        Z.Ground = Grounds.dirt_floor;
+        Z.Ground = Grounds.dirt;
         Z.Feature = Features.grave;
         Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.ghost });
       });
@@ -181,7 +183,7 @@ namespace Pathos
         Z.Difficulty = Entities.spider_queen.Difficulty + 1;
         Z.Rarity = 2;
         //Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.egg); // TODO: spider egg?
-        Z.Ground = Grounds.dirt_floor;
+        Z.Ground = Grounds.dirt;
         Z.Device = Devices.web;
         Z.AddSpawn(Chance.Always, 1.d4(), new[] { Entities.recluse_spider });
         Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.spider_queen });

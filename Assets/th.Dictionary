@@ -982,6 +982,7 @@ EffectProperty,remove random talent,สุ่มล้างพรสวรร�
 EffectProperty,removes all transients,ล้างสถานะชั่วคราวทั้งหมด
 EffectProperty,reset random equipment,สุ่มคืนค่าอุปกรณ์
 EffectProperty,reveal,เปิดเผย
+EffectProperty,rigid,
 EffectProperty,sanctity,
 EffectProperty,skills,ความชำนาญ
 EffectProperty,source,
@@ -1054,6 +1055,7 @@ EffectType,lose skill,สูญเสียทักษะ
 EffectType,lose talent,สูญเสียพรสวรรค์
 EffectType,malnutrition,ขาดสารอาหาร
 EffectType,mapping,แผนที่
+EffectType,mobilise boulder,
 EffectType,murder,ฆาตกรรม
 EffectType,nutrition,โภชนาการ
 EffectType,opening,เปิด
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},เมื่อ {STANDINGNAME}
 FormatText,when resists {ElementName},เมื่อ {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,ประตูใหญ่นี้ถูกทำขึ้นมาจากผลึกแข็งอย่างเป็นระเบียบและทำลายไม่ได้ง่ายๆ
 GateName,crystal door,ประตูผลึก
+GateName,gold door,
 GateName,wooden door,ประตูไม้
 GenderHimself,herself,ตัวเธอเอง
 GenderHimself,himself,ตัวเขาเอง
@@ -2160,8 +2163,11 @@ GradeName,artifact,ศิลปวัตถุ
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,
+GroundName,cave floor,
 GroundName,chasm,รอยแยก
-GroundName,dirt floor,พื้นดิน
+GroundName,dirt,พื้นดิน
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,หญ้า
 GroundName,hive floor,ฟื้นรวงผึ้ง
 GroundName,ice,น้ำแข็ง
@@ -3060,6 +3066,7 @@ KindName,kobold,โคโบลด์
 KindName,lich,ลิช
 KindName,light,แสง
 KindName,lizard,กิ้งก่า
+KindName,lizardman,มนุษย์กิ้งก่า
 KindName,lycanthrope,
 KindName,marine,นาวิกโยธิน
 KindName,mercenary,ทหารรับจ้าง

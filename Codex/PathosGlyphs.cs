@@ -116,23 +116,15 @@ namespace Pathos
       Register.Alias(crystal_door_locked_horizontal, "crystal door locked");
       Register.Alias(crystal_door_trapped_horizontal, "crystal door trapped");
 
+      // Grounds.
+      Register.Alias(dirt, "dirt floor"); // dirt is dirt, not a manufactured floor, you don't say 'grass floor'.
+
       // Icons.
-      Register.Alias(appetite, "apetite");
+      Register.Alias(appetite, "apetite"); // typo fix.
     }
 
-    internal Glyph GetGlyph(string Name)
-    {
-      var Result = GetGlyphOrNull(Name);
-
-      if (Result == null)
-        throw new Exception("Glyph not found: " + Name);
-
-      return Result;
-    }
-    internal Glyph GetGlyphOrNull(string Name)
-    {
-      return List.Find(G => G.Name.Equals(Name, StringComparison.OrdinalIgnoreCase));
-    }
+    internal Glyph GetGlyph(string Name) => GetGlyphOrNull(Name) ?? throw new Exception("Glyph not found: " + Name);
+    internal Glyph GetGlyphOrNull(string Name) => List.Find(G => G.Name.Equals(Name, StringComparison.OrdinalIgnoreCase));
 #endif
 
 #pragma warning disable 0649
@@ -436,6 +428,7 @@ namespace Pathos
     public readonly Glyph cave_bear;
     public readonly Glyph fear_spell;
     public readonly Glyph cave_spider;
+    public readonly Glyph cave_floor;
     public readonly Glyph cave_wall_bottom_left_corner;
     public readonly Glyph cave_wall_bottom_right_corner;
     public readonly Glyph cave_wall_cross;
@@ -587,7 +580,7 @@ namespace Pathos
     public readonly Glyph digging_beam;
     public readonly Glyph dingo;
     public readonly Glyph dingo_puppy;
-    public readonly Glyph dirt_floor;
+    public readonly Glyph dirt;
     public readonly Glyph disenchanter;
     public readonly Glyph disintegrator;
     public readonly Glyph disgusting_mould;
@@ -951,6 +944,7 @@ namespace Pathos
     public readonly Glyph lizardman_male_gladiator;
     public readonly Glyph lizardman_male_jester;
     public readonly Glyph lizardman_male_knight;
+    public readonly Glyph lizardman_male_necromancer;
     public readonly Glyph lizardman_male_ninja;
     public readonly Glyph lizardman_male_pirate;
     public readonly Glyph lizardman_male_priest;
@@ -1167,6 +1161,17 @@ namespace Pathos
     public readonly Glyph goblin_king;
     public readonly Glyph gold_coin;
     public readonly Glyph gold_golem;
+    public readonly Glyph gold_floor;
+    public readonly Glyph gold_door_broken;
+    public readonly Glyph gold_door_closed_horizontal;
+    public readonly Glyph gold_door_closed_vertical;
+    public readonly Glyph gold_door_open_horizontal;
+    public readonly Glyph gold_door_open_vertical;
+    public readonly Glyph gold_door_locked_horizontal;
+    public readonly Glyph gold_door_locked_vertical;
+    public readonly Glyph gold_door_trapped_horizontal;
+    public readonly Glyph gold_door_trapped_vertical;
+    public readonly Glyph granite_floor;
     public readonly Glyph golden_naga;
     public readonly Glyph golden_naga_hatchling;
     public readonly Glyph Guru_Quilion;

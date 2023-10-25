@@ -54,14 +54,35 @@ namespace Pathos
           Drop => Drop.TransitionDescend(Teleport: null, Fixed: true, AdjustmentDice: Dice.One));
       });
 
-      dirt_floor = AddGround("dirt floor", Materials.sand, Glyphs.dirt_floor, G =>
+      dirt = AddGround("dirt", Materials.sand, Glyphs.dirt, G =>
       {
         G.Description = null;
 
         G.SetBlock(Codex.Blocks.clay_boulder);
       });
 
+      cave_floor = AddGround("cave floor", Materials.stone, Glyphs.cave_floor, G =>
+      {
+        G.Description = null;
+      
+        G.SetBlock(Codex.Blocks.clay_boulder);
+      });
+
       stone_floor = AddGround("stone floor", Materials.stone, Glyphs.stone_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      gold_floor = AddGround("gold floor", Materials.gold, Glyphs.gold_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetBlock(Codex.Blocks.gold_boulder);
+      });
+
+      granite_floor = AddGround("granite floor", Materials.stone, Glyphs.granite_floor, G =>
       {
         G.Description = null;
 
@@ -185,11 +206,17 @@ namespace Pathos
           }
         );
       });
+
+      // renames.
+      Register.Alias(dirt, "dirt floor");
+      //Register.Alias(stone_path, "stone corridor"); // TODO: rename?
     }
 #endif
 
     public readonly Ground chasm;
-    public readonly Ground dirt_floor;
+    public readonly Ground dirt;
+    public readonly Ground gold_floor;
+    public readonly Ground granite_floor;
     public readonly Ground grass;
     public readonly Ground hive_floor;
     public readonly Ground ice;
@@ -198,6 +225,7 @@ namespace Pathos
     public readonly Ground metal_floor;
     public readonly Ground moss;
     public readonly Ground obsidian_floor;
+    public readonly Ground cave_floor;
     public readonly Ground stone_floor;
     public readonly Ground stone_corridor;
     public readonly Ground sand;

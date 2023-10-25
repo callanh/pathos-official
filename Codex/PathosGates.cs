@@ -14,7 +14,7 @@ namespace Pathos
     internal CodexGates(Codex Codex)
       : base(Codex.Manifest.Gates)
     {
-      var Glyphs = Codex.Glyphs; 
+      var Glyphs = Codex.Glyphs;
       var Sonics = Codex.Sonics;
       var Materials = Codex.Materials;
       var Elements = Codex.Elements;
@@ -30,7 +30,7 @@ namespace Pathos
         });
       }
 
-      var GateWeakness = new[] { Elements.force, Elements.digging }; 
+      var GateWeakness = new[] { Elements.force, Elements.digging };
 
       crystal_door = AddGate("crystal door", Materials.crystal, G =>
       {
@@ -48,6 +48,24 @@ namespace Pathos
         G.CloseSonic = Sonics.close_door;
         G.BreakSonic = Sonics.broken_door;
         G.DefaultSecretBarrier = Codex.Barriers.hell_brick;
+        G.SetWeakness(GateWeakness);
+      });
+
+      gold_door = AddGate("gold door", Materials.gold, G =>
+      {
+        G.OpenHorizontalGlyph = Glyphs.gold_door_open_horizontal;
+        G.OpenVerticalGlyph = Glyphs.gold_door_open_vertical;
+        G.ClosedHorizontalGlyph = Glyphs.gold_door_closed_horizontal;
+        G.ClosedVerticalGlyph = Glyphs.gold_door_closed_vertical;
+        G.BrokenGlyph = Glyphs.gold_door_broken;
+        G.LockedHorizontalGlyph = Glyphs.gold_door_locked_horizontal;
+        G.LockedVerticalGlyph = Glyphs.gold_door_locked_vertical;
+        G.TrappedHorizontalGlyph = Glyphs.gold_door_trapped_horizontal;
+        G.TrappedVerticalGlyph = Glyphs.gold_door_trapped_vertical;
+        G.OpenSonic = Sonics.open_door;
+        G.CloseSonic = Sonics.close_door;
+        G.BreakSonic = Sonics.broken_door;
+        G.DefaultSecretBarrier = Codex.Barriers.jade_wall;
         G.SetWeakness(GateWeakness);
       });
 
@@ -71,7 +89,8 @@ namespace Pathos
     }
 #endif
 
-    public readonly Gate wooden_door;
+    public readonly Gate gold_door;
     public readonly Gate crystal_door;
+    public readonly Gate wooden_door;
   }
 }

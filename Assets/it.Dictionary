@@ -982,6 +982,7 @@ EffectProperty,remove random talent,rimuovere talenti casuali
 EffectProperty,removes all transients,rimuove tutti i transitori
 EffectProperty,reset random equipment,resettare l'equipaggiamento casuale
 EffectProperty,reveal,rivela
+EffectProperty,rigid,rigido
 EffectProperty,sanctity,santità
 EffectProperty,skills,abilità
 EffectProperty,source,fonte
@@ -1054,6 +1055,7 @@ EffectType,lose skill,perdere abilità
 EffectType,lose talent,perdere talento
 EffectType,malnutrition,malnutrizione
 EffectType,mapping,mappatura
+EffectType,mobilise boulder,
 EffectType,murder,omicidio
 EffectType,nutrition,nutrizione
 EffectType,opening,apertura
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},quando {STANDINGNAME}
 FormatText,when resists {ElementName},
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Questa pesante porta è fatta di dure formazioni cristalline e non è facilmente danneggiabile.
 GateName,crystal door,porta di cristallo
+GateName,gold door,
 GateName,wooden door,porta di legno
 GenderHimself,herself,lei stessa
 GenderHimself,himself,lui stesso
@@ -2160,8 +2163,11 @@ GradeName,artifact,artefatto
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La superfice di pietra fresca ha fattezze immacolate ma è seganta da danni e dal tempo.
+GroundName,cave floor,
 GroundName,chasm,voragine
-GroundName,dirt floor,pavimeno sporco
+GroundName,dirt,pavimeno sporco
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,erba
 GroundName,hive floor,pavimento ad alveare
 GroundName,ice,ghiaccio
@@ -3060,6 +3066,7 @@ KindName,kobold,coboldo
 KindName,lich,lich
 KindName,light,luce
 KindName,lizard,lucertola
+KindName,lizardman,uomo-lucertola
 KindName,lycanthrope,licantropo
 KindName,marine,marine
 KindName,mercenary,mercenario

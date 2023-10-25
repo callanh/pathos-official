@@ -73,6 +73,7 @@ namespace Pathos
       lich = AddUndeadKind("lich");
       light = AddLivingKind("light");
       lizard = AddLivingKind("lizard");
+      lizardman = AddLivingKind("lizardman");
       lycanthrope = AddLivingKind("lycanthrope");
       marine = AddLivingKind("marine");
       mercenary = AddLivingKind("mercenary");
@@ -142,6 +143,7 @@ namespace Pathos
     public readonly Kind lich;
     public readonly Kind light;
     public readonly Kind lizard;
+    public readonly Kind lizardman;
     public readonly Kind lycanthrope;
     public readonly Kind marine;
     public readonly Kind mercenary;

@@ -982,6 +982,7 @@ EffectProperty,remove random talent,supprime un talent aléatoire
 EffectProperty,removes all transients,supprime tous les effets temporaires
 EffectProperty,reset random equipment,réinitialise un équipement aléatoire
 EffectProperty,reveal,révéler
+EffectProperty,rigid,rigide
 EffectProperty,sanctity,sainteté
 EffectProperty,skills,compétences
 EffectProperty,source,source
@@ -1054,6 +1055,7 @@ EffectType,lose skill,perd la compétence
 EffectType,lose talent,perd le talent
 EffectType,malnutrition,malnutrition
 EffectType,mapping,cartographie
+EffectType,mobilise boulder,
 EffectType,murder,meurtre
 EffectType,nutrition,nutrition
 EffectType,opening,ouverture
@@ -2141,6 +2143,7 @@ FormatText,when {STANDINGNAME},quand {STANDINGNAME}
 FormatText,when resists {ElementName},quand résiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cette lourde porte est faite de formations de cristaux dures et ne sera pas endommagée facilement
 GateName,crystal door,porte de cristal
+GateName,gold door,
 GateName,wooden door,porte en bois
 GenderHimself,herself,elle-même
 GenderHimself,himself,lui-même
@@ -2160,8 +2163,11 @@ GradeName,artifact,artefact
 GradeName,exotic,
 GradeName,standard,
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La surface immaculée et froide de la pierre est de fabrication artisanale bien que marquée par les dommages du temps
+GroundName,cave floor,
 GroundName,chasm,gouffre
-GroundName,dirt floor,sol boueux
+GroundName,dirt,sol boueux
+GroundName,gold floor,
+GroundName,granite floor,
 GroundName,grass,herbe
 GroundName,hive floor,sol de ruche
 GroundName,ice,glace
@@ -3060,6 +3066,7 @@ KindName,kobold,kobold
 KindName,lich,liche
 KindName,light,lumière
 KindName,lizard,lézard
+KindName,lizardman,homme-lézard
 KindName,lycanthrope,lycanthrope
 KindName,marine,marin
 KindName,mercenary,mercenaire

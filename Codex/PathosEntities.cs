@@ -676,7 +676,7 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      lizardman = AddBaseEntity(Kinds.lizard, Races.lizardman, "lizardman", E =>
+      lizardman = AddBaseEntity(Kinds.lizardman, Races.lizardman, "lizardman", E =>
       {
         E.Description = "Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.";
         E.Glyph = Glyphs.lizardman;
@@ -11028,7 +11028,7 @@ namespace Pathos
           K.SetCast().Explosion(Explosions.muddy, Dice.Zero); // TODO: 'water crash' is probably not the right sfx.
           K.Apply.Harm(Elements.physical, 4.d6());
           K.Apply.Digging(Elements.digging);
-          K.Apply.WhenChance(Chance.OneIn2, T => T.ConvertFloor(FromGround: Codex.Grounds.water, ToGround: Codex.Grounds.dirt_floor, Locality.Square)); // TODO: would prefer this only happened on one square instead of 9?
+          K.Apply.WhenChance(Chance.OneIn2, T => T.ConvertFloor(FromGround: Codex.Grounds.water, ToGround: Codex.Grounds.dirt, Locality.Square)); // TODO: would prefer this only happened on one square instead of 9?
         });
         E.Chemistry.SetWeakness(Elements.disintegrate, Elements.digging);
         E.AddReaction(Chance.Always, Elements.petrify, A => A.Heal(4.d6(), Modifier.Zero));
@@ -21822,7 +21822,7 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      lizardman_berserker = AddEntity(Kinds.lizard, Races.lizardman, "lizardman berserker", E =>
+      lizardman_berserker = AddEntity(Kinds.lizardman, Races.lizardman, "lizardman berserker", E =>
       {
         E.Glyph = Glyphs.lizardman_berserker;
         E.Sonic = Sonics.grunt;
@@ -21868,7 +21868,7 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      lizardman_chieftain = AddEntity(Kinds.lizard, Races.lizardman, "lizardman chieftain", E =>
+      lizardman_chieftain = AddEntity(Kinds.lizardman, Races.lizardman, "lizardman chieftain", E =>
       {
         E.Glyph = Glyphs.lizardman_chieftain;
         E.Sonic = Sonics.grunt;
@@ -21921,7 +21921,7 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      lizardman_mage = AddEntity(Kinds.lizard, Races.lizardman, "lizardman mage", E =>
+      lizardman_mage = AddEntity(Kinds.lizardman, Races.lizardman, "lizardman mage", E =>
       {
         E.Glyph = Glyphs.lizardman_mage;
         E.Sonic = Sonics.grunt;
@@ -21970,7 +21970,7 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      lizardman_shaman = AddEntity(Kinds.lizard, Races.lizardman, "lizardman shaman", E =>
+      lizardman_shaman = AddEntity(Kinds.lizardman, Races.lizardman, "lizardman shaman", E =>
       {
         E.Glyph = Glyphs.lizardman_shaman;
         E.Sonic = Sonics.grunt;
@@ -22019,7 +22019,7 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      lizardman_warrior = AddEntity(Kinds.lizard, Races.lizardman, "lizardman warrior", E =>
+      lizardman_warrior = AddEntity(Kinds.lizardman, Races.lizardman, "lizardman warrior", E =>
       {
         E.Glyph = Glyphs.lizardman_warrior;
         E.Sonic = Sonics.grunt;
@@ -29270,7 +29270,7 @@ namespace Pathos
         E.Difficulty = 7;
         E.Frequency = 1; // water fountain.
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
-        E.SetTerrain(Materials.air, Materials.water);
+        E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
         E.Size = Size.Small;
