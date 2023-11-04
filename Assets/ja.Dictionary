@@ -460,6 +460,7 @@ BarrierName,jade wall,ひすいの壁
 BarrierName,shroom,キノコ
 BarrierName,stone wall,石の壁
 BarrierName,tree,木
+BarrierName,wooden wall,
 BeamName,acid,酸
 BeamName,cold,冷気
 BeamName,death,死
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName}は{FixtureName}{MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName}は{Use:FixtureName}で{With:AssetName}{MotionPastName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName}は{MapName}へ{TraversalPastName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}は{MapName}へ{TraversalPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName}は巧みに{AssetName}{MotionPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は巧みに{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}はレベル{LevelNumber}に到達した
@@ -2177,8 +2178,9 @@ GroundName,metal floor,金属の床
 GroundName,moss,苔むした床
 GroundName,obsidian floor,黒曜石の床
 GroundName,sand,砂地
-GroundName,stone corridor,石の廊下
+GroundName,snow,
 GroundName,stone floor,石の床
+GroundName,stone path,石の廊下
 GroundName,water,水
 GroundName,wooden floor,木の床
 HordeName,ant,アリ
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[マスター]
 LiteralText,abolition of firearms,銃器排除令！
 LiteralText,ABOUT,Pathosについて
 LiteralText,About Pathos,Pathosについて
-LiteralText,Abyss,地獄の深淵
 LiteralText,accelerated resting,休憩中に加速する
 LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,攻撃
 LiteralText,attack//verb,攻撃する
 LiteralText,ATTACK//verb,攻撃する
 LiteralText,attacks,攻撃
-LiteralText,attic,屋根裏
 LiteralText,attributes,能力値
 LiteralText,AUTO,自動
 LiteralText,auto saving,セーブ中
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,冒険を始める
 LiteralText,beholds,見つめる
 LiteralText,beta discussions,ベータ版に関する意見交換
 LiteralText,Black background,背景を黒くする
-LiteralText,Black Market,闇市場
 LiteralText,blasphemy,冒涜
 LiteralText,BLINK,転位
 LiteralText,Blink which direction?,どの方向に転位する？
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
 LiteralText,Cast,呪文
 LiteralText,CAST SPELLS,呪文
-LiteralText,caves,洞窟
-LiteralText,cellar,地下室
 LiteralText,challenge,チャレンジ
 LiteralText,CHAMPION,チャンピオン
 LiteralText,Character,キャラクター
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,首はね
 LiteralText,DECEASED,死亡
 LiteralText,decelerated real-time,リアルタイムモードを遅くする
 LiteralText,DECREASE,減少
-LiteralText,Deephall,深層王の間
-LiteralText,Deepruins,深層の旧跡
-LiteralText,Deepwilds,深層の荒野
 LiteralText,defence,防御値
 LiteralText,DEFENCE,防御値
 LiteralText,degrade quality,品質を下げる
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,削除
 LiteralText,delete this level,この階層を消去
 LiteralText,DEMOTE,降格
 LiteralText,depth,到達階数
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
 LiteralText,DESCEND TO NEXT LEVEL,1つ下の階に降りる
 LiteralText,destination,目的地
 LiteralText,DESTROY,破壊する
 LiteralText,determined by player level,プレイヤーのレベルによって決定
 LiteralText,device,罠
 LiteralText,DEVICES,罠
-LiteralText,Dhak Legacy,Dhak Legacy
 LiteralText,DIAGNOSTICS,詳細設定/ファイル管理
 LiteralText,DID NOT RANK,ランク入りしていません
 LiteralText,diet,食性
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,アップデートをダウンロード中
 LiteralText,drop,ドロップ
 LiteralText,DROP,床に置く
 LiteralText,DUAL WIELD,二刀流
-LiteralText,Dungeon,ダンジョン
 LiteralText,duration,プレー時間
 LiteralText,edible items,可食アイテム
 LiteralText,egg,の卵
-LiteralText,Elf Forest,エルフの森
-LiteralText,Elf Kingdom,エルフの王国
-LiteralText,Elf Palace 1,エルフの城 1階
-LiteralText,Elf Palace 2,エルフの城 2階
-LiteralText,Elf Palace Vault,エルフの城・地下庫
-LiteralText,Elf Town,エルフの街
-LiteralText,Elf Town Trove,エルフの街・宝物庫
 LiteralText,else,それ以外
 LiteralText,EMAIL,Eメール
 LiteralText,Enable auto save,オートセーブを有効にする
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,失敗
 LiteralText,Floor,床
 LiteralText,FOLLOW,追従
 LiteralText,Follow me on Twitter,Twitterでフォローする
-LiteralText,Fort Ludios,ルディオス砦
 LiteralText,free panning mode,プレイヤーを中央に表示しない
 LiteralText,fright,戦慄
 LiteralText,fumbling,滑り
@@ -3404,7 +3387,6 @@ LiteralText,ground,地面
 LiteralText,GROUNDS,地面
 LiteralText,GUIDES,ガイド
 LiteralText,HALL of FAME,名誉の殿堂
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 LiteralText,hatched by,孵化条件
 LiteralText,Having trouble finding the stairs down to the next level?,階段が見つからなくて先に進めませんか？
 LiteralText,Help,ヘルプ
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,硬直化
 LiteralText,INCREASE,増加する
 LiteralText,INDEX,索引
 LiteralText,individual crafting,1つずつ制作する
-LiteralText,Infernal Cage,地獄の収容所
-LiteralText,Infernal Fields,地獄の荒野
-LiteralText,Infernal Keep,地獄の城塞
-LiteralText,Infernal Spire,地獄の尖塔
 LiteralText,infinite quantity,数量無限
 LiteralText,influenced actions,能力値が必要になる行動
 LiteralText,INSCRIBE,書き込む
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,メッセージ?
 LiteralText,instruct each character,キャラクターごとに指示
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
 LiteralText,insulation,絶縁
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 LiteralText,Inventory,持ち物
 LiteralText,INVENTORY,持ち物
 LiteralText,ITEM,アイテム
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,キック！
 LiteralText,kills,殺害数
 LiteralText,kit,所持品
 LiteralText,KNOWLEDGE,知識
-LiteralText,Labyrinth,迷宮
 LiteralText,LANGUAGE,言語/LANGUAGE
 LiteralText,LEARN ALL SPELLS,すべての呪文を学ぶ
 LiteralText,learn spells,呪文を学ぶ
 LiteralText,LEFT RING,左手にはめる
 LiteralText,LEVEL CHART,必要経験値表
-LiteralText,level//depth,階層
 LiteralText,level//rank,レベル
-LiteralText,Lich Tower,リッチの塔
 LiteralText,life,ライフ
 LiteralText,LIFE,ライフ
 LiteralText,Life represents your physical health and death occurs at zero.,ライフはあなたの身体の健康を表し、0になると死亡します。
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,カルマを減らす
 LiteralText,LOSE LEVEL,レベルダウン
 LiteralText,LOSE NUTRITION,満腹度減少
 LiteralText,lose skill,スキル減少
-LiteralText,Lost Chambers,古の実験室
 LiteralText,LOW MANA,マナが足りない
-LiteralText,Ludios Cache,ローディウスの金庫室
 LiteralText,MAIN WIELD,利き手に装備
 LiteralText,mana,マナ
 LiteralText,MANA,マナ
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,マナは呪�
 LiteralText,Map,地図
 LiteralText,MAP,地図
 LiteralText,material,素材
-LiteralText,Medusa Lair,メデューサの棲み家
 LiteralText,melting,溶解
 LiteralText,MENU,メニュー
 LiteralText,mercenary,傭兵
 LiteralText,MIMIC,ミミック
 LiteralText,mimicking,擬態中の
-LiteralText,Mines,鉱山
-LiteralText,Minetown,鉱山の街
 LiteralText,modifier,修正値
 LiteralText,MOUNT,騎乗
 LiteralText,Mount which direction?,どれに騎乗する？
@@ -3528,7 +3497,6 @@ LiteralText,N/A,なし
 LiteralText,name,名前
 LiteralText,NAME,名付ける
 LiteralText,name?,名前?
-LiteralText,Nethack Codex,Nethack Codex
 LiteralText,neutral,中立
 LiteralText,never,0％
 LiteralText,no additional effects,追加効果なし
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,貫通する
 LiteralText,per level,レベル毎に上昇
 LiteralText,permanent,破壊不能
 LiteralText,PERSONAL,個人
-LiteralText,Pixel Sojourn,Pixel Sojourn
 LiteralText,PLACE,入れる
 LiteralText,PLACE ALL,全部入れる
 LiteralText,platform,橋
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
-LiteralText,Sandbox Play,サンドボックスプレイ
 LiteralText,SANITY CHECK,SANチェック
 LiteralText,SAVE,セーブ
 LiteralText,SAVE & QUIT,セーブと終了
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,スキル
 LiteralText,SLIDE,すり抜ける
 LiteralText,Slide which direction?,どの方向にすり抜ける？
 LiteralText,slower animations,描画の速さ：遅い
-LiteralText,Sokoban,大倉庫
 LiteralText,SONICS,効果音
 LiteralText,"Sorry, this device is a bit too small :-(",すみませんが、このデバイスはちょっと小さすぎます:-(
 LiteralText,SOUND BOARD,効果音を再生
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,罠のかかった扉
 LiteralText,TRIGGER,罠起動
 LiteralText,trigger once,一回だけ起動
 LiteralText,trigger unlimited times,無制限に起動
-LiteralText,trove,地下蔵
 LiteralText,TUNNEL,トンネル
 LiteralText,Tunnel which direction?,どの方向にトンネルを通す？
 LiteralText,TURN-BASED,ターンベース
@@ -3799,10 +3762,6 @@ LiteralText,turns,ターン
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
 LiteralText,unable to load,読み込みに失敗しました
 LiteralText,UNDEAD,アンデッド
-LiteralText,Underbarracks,地下砦
-LiteralText,Underlimits,地下の尾根
-LiteralText,Underpeaks,地下の頂
-LiteralText,Undertown,地下の街
 LiteralText,Undo,元に戻す
 LiteralText,unidentified items,未識別アイテム
 LiteralText,unique,ユニーク
@@ -3894,6 +3853,50 @@ MaterialName,wax,ろう
 MaterialName,wood,木
 MeasurementSystemName,imperial,ヤードポンド法
 MeasurementSystemName,metric,メートル法
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
+ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Nethack Codex,Nethack Codex
+ModuleName,Pixel Sojourn,Pixel Sojourn
+ModuleName,Sandbox Play,サンドボックスプレイ
+ModuleTerm,Abyss,地獄の深淵
+ModuleTerm,attic,屋根裏
+ModuleTerm,Black Market,闇市場
+ModuleTerm,caves,洞窟
+ModuleTerm,cellar,地下室
+ModuleTerm,Deephall,深層王の間
+ModuleTerm,Deepruins,深層の旧跡
+ModuleTerm,Deepwilds,深層の荒野
+ModuleTerm,Dungeon,ダンジョン
+ModuleTerm,Elf Forest,エルフの森
+ModuleTerm,Elf Kingdom,エルフの王国
+ModuleTerm,Elf Palace 1,エルフの城 1階
+ModuleTerm,Elf Palace 2,エルフの城 2階
+ModuleTerm,Elf Palace Vault,エルフの城・地下庫
+ModuleTerm,Elf Town,エルフの街
+ModuleTerm,Elf Town Trove,エルフの街・宝物庫
+ModuleTerm,Fort Ludios,ルディオス砦
+ModuleTerm,Infernal Cage,地獄の収容所
+ModuleTerm,Infernal Fields,地獄の荒野
+ModuleTerm,Infernal Keep,地獄の城塞
+ModuleTerm,Infernal Spire,地獄の尖塔
+ModuleTerm,Labyrinth,迷宮
+ModuleTerm,level//depth,階層
+ModuleTerm,Lich Tower,リッチの塔
+ModuleTerm,Lost Chambers,古の実験室
+ModuleTerm,Ludios Cache,ローディウスの金庫室
+ModuleTerm,Medusa Lair,メデューサの棲み家
+ModuleTerm,Mines,鉱山
+ModuleTerm,Minetown,鉱山の街
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,大倉庫
+ModuleTerm,trove,地下蔵
+ModuleTerm,Underbarracks,地下砦
+ModuleTerm,Underlimits,地下の尾根
+ModuleTerm,Underpeaks,地下の頂
+ModuleTerm,Undertown,地下の街
 MotionPastName,anointed,を注いだ
 MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた

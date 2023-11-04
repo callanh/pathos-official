@@ -19,11 +19,10 @@ namespace Pathos
             SetIntroduction(Codex.Sonics.introduction);
             SetConclusion(Codex.Sonics.conclusion);
             SetTrack(Codex.Tracks.pixel_title);
+            AddTerms(new[] { SPDDebug.level_depth });
         }
-        public override void Execute(Generator Generator)
-        {
-            SPDLevelGenerator.Run(Codex, Generator);
-        }
+
+        public override void Execute(Generator Generator) => SPDLevelGenerator.Run(Codex, Generator);
 
         private readonly Codex Codex;
   }

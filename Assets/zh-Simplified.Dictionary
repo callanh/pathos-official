@@ -460,6 +460,7 @@ BarrierName,jade wall,玉墙
 BarrierName,shroom,蘑菇墙
 BarrierName,stone wall,石墙
 BarrierName,tree,树
+BarrierName,wooden wall,
 BeamName,acid,强酸
 BeamName,cold,寒冷
 BeamName,death,死亡
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName} {FixtureName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 用 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} 用 {With:AssetName} {MotionPastName} {Use:FixtureName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName} 地牢 {MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} 地牢 {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} 熟练地 {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 熟练地用 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} 升到了 {LevelNumber} 级
@@ -2177,8 +2178,9 @@ GroundName,metal floor,金属地板
 GroundName,moss,苔藓丛
 GroundName,obsidian floor,黑曜石地面
 GroundName,sand,沙地
-GroundName,stone corridor,岩石走廊
+GroundName,snow,
 GroundName,stone floor,岩石地面
+GroundName,stone path,岩石走廊
 GroundName,water,水
 GroundName,wooden floor,木制地板
 HordeName,ant,蚁
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[大师]
 LiteralText,abolition of firearms,关闭火器
 LiteralText,ABOUT,关于
 LiteralText,About Pathos,关于Pathos
-LiteralText,Abyss,深渊
 LiteralText,accelerated resting,休息时加速
 LiteralText,actions,行动
 LiteralText,ADD LEVEL,添加楼层
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,攻击
 LiteralText,attack//verb,攻击
 LiteralText,ATTACK//verb,攻击
 LiteralText,attacks,攻击
-LiteralText,attic,阁楼
 LiteralText,attributes,能力加成
 LiteralText,AUTO,自动
 LiteralText,auto saving,自动存档
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,开始冒险
 LiteralText,beholds,观察
 LiteralText,beta discussions,测试版讨论
 LiteralText,Black background,黑色背景
-LiteralText,Black Market,黑市
 LiteralText,blasphemy,亵渎
 LiteralText,BLINK,闪现
 LiteralText,Blink which direction?,朝哪个方向闪现？
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,无法投掷
 LiteralText,Cast,施咒
 LiteralText,CAST SPELLS,施咒
-LiteralText,caves,洞穴
-LiteralText,cellar,地窖
 LiteralText,challenge,挑战性
 LiteralText,CHAMPION,冠军
 LiteralText,Character,角色
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,斩首
 LiteralText,DECEASED,已故冒
 LiteralText,decelerated real-time,降低即时模式速度
 LiteralText,DECREASE,降低
-LiteralText,Deephall,地下大厅
-LiteralText,Deepruins,地下废墟
-LiteralText,Deepwilds,地下荒野
 LiteralText,defence,防御
 LiteralText,DEFENCE,防御
 LiteralText,degrade quality,降低质量
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,删除
 LiteralText,delete this level,删除此层
 LiteralText,DEMOTE,上移
 LiteralText,depth,深度
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,层层深入程序生成的地牢与洞穴，无限可重玩性——同时也易于Pathos的新玩家上手。
 LiteralText,DESCEND TO NEXT LEVEL,去往之后的楼层
 LiteralText,destination,通往
 LiteralText,DESTROY,催毁
 LiteralText,determined by player level,由玩家等级决定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱
-LiteralText,Dhak Legacy,Dhak Legacy
 LiteralText,DIAGNOSTICS,调试
 LiteralText,DID NOT RANK,未录入
 LiteralText,diet,食性
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,更新下载中
 LiteralText,drop,掉落
 LiteralText,DROP,丢弃
 LiteralText,DUAL WIELD,双持
-LiteralText,Dungeon,地牢
 LiteralText,duration,持续时间
 LiteralText,edible items,可食用物品
 LiteralText,egg,蛋
-LiteralText,Elf Forest,精灵森林
-LiteralText,Elf Kingdom,精灵王国
-LiteralText,Elf Palace 1,精灵宫殿1
-LiteralText,Elf Palace 2,精灵宫殿2
-LiteralText,Elf Palace Vault,精灵宫殿顶
-LiteralText,Elf Town,精灵城镇
-LiteralText,Elf Town Trove,精灵城地窖
 LiteralText,else,其他
 LiteralText,EMAIL,电邮
 LiteralText,Enable auto save,开启自动存档
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,发嘶嘶声
 LiteralText,Floor,层
 LiteralText,FOLLOW,跟随
 LiteralText,Follow me on Twitter,在推特上关注开发者
-LiteralText,Fort Ludios,卢底人堡垒
 LiteralText,free panning mode,自由平移画面
 LiteralText,fright,惊吓
 LiteralText,fumbling,笨拙
@@ -3404,7 +3387,6 @@ LiteralText,ground,地面
 LiteralText,GROUNDS,地面
 LiteralText,GUIDES,指南
 LiteralText,HALL of FAME,名人堂
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工设计的地图，地表世界的传奇冒险。脱离幽深禁闭的地牢，进行更具挑战的冒险。
 LiteralText,hatched by,由……孵化
 LiteralText,Having trouble finding the stairs down to the next level?,难以找到下楼楼梯？
 LiteralText,Help,帮助
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,禁锢
 LiteralText,INCREASE,增加
 LiteralText,INDEX,索引
 LiteralText,individual crafting,分次制作
-LiteralText,Infernal Cage,地狱笼子
-LiteralText,Infernal Fields,地狱场地
-LiteralText,Infernal Keep,地狱看守
-LiteralText,Infernal Spire,地狱尖塔
 LiteralText,infinite quantity,可以使用无数次
 LiteralText,influenced actions,受影响的动作
 LiteralText,INSCRIBE,刻写
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,刻写内容
 LiteralText,instruct each character,指引每个角色
 LiteralText,INSUFFICIENT GOLD,金币不足
 LiteralText,insulation,隔离
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房间和无尽的秘密等着你去探索，但是不要沉溺在其中，长时间停留在某一层会招致死亡。基于《破碎像素地牢》生成的地图。
 LiteralText,Inventory,背包
 LiteralText,INVENTORY,背包
 LiteralText,ITEM,道具
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,踢！
 LiteralText,kills,杀死
 LiteralText,kit,开局持有物品
 LiteralText,KNOWLEDGE,知识
-LiteralText,Labyrinth,迷宫
 LiteralText,LANGUAGE,语言
 LiteralText,LEARN ALL SPELLS,学习所有咒语
 LiteralText,learn spells,学习法术
 LiteralText,LEFT RING,左手戒指
 LiteralText,LEVEL CHART,等级-经验值
-LiteralText,level//depth,楼层
 LiteralText,level//rank,等级
-LiteralText,Lich Tower,巫妖之塔
 LiteralText,life,生命值
 LiteralText,LIFE,生命值
 LiteralText,Life represents your physical health and death occurs at zero.,生命值代表你的健康，当生命值为0时将会死亡。
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,失去运程
 LiteralText,LOSE LEVEL,失去等级
 LiteralText,LOSE NUTRITION,失去营养
 LiteralText,lose skill,失去专精
-LiteralText,Lost Chambers,迷失之庭
 LiteralText,LOW MANA,魔法值低下
-LiteralText,Ludios Cache,卢底人藏宝室
 LiteralText,MAIN WIELD,主手武器
 LiteralText,mana,魔法值
 LiteralText,MANA,魔法值
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,魔法值代�
 LiteralText,Map,地图
 LiteralText,MAP,地图
 LiteralText,material,素材
-LiteralText,Medusa Lair,美杜莎领地
 LiteralText,melting,融化
 LiteralText,MENU,菜单
 LiteralText,mercenary,雇佣军
 LiteralText,MIMIC,拟态
 LiteralText,mimicking,拟态中的
-LiteralText,Mines,矿洞
-LiteralText,Minetown,矿镇
 LiteralText,modifier,调整
 LiteralText,MOUNT,骑乘
 LiteralText,Mount which direction?,向哪个方向骑乘？
@@ -3528,7 +3497,6 @@ LiteralText,N/A,不可用
 LiteralText,name,命名
 LiteralText,NAME,命名
 LiteralText,name?,命名
-LiteralText,Nethack Codex,Nethack Codex
 LiteralText,neutral,中立
 LiteralText,never,0%
 LiteralText,no additional effects,无特殊效果
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,穿透
 LiteralText,per level,每升一级
 LiteralText,permanent,无法破坏
 LiteralText,PERSONAL,个人的
-LiteralText,Pixel Sojourn,像素之旅
 LiteralText,PLACE,放置
 LiteralText,PLACE ALL,放置全部
 LiteralText,platform,平台
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,复原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,坚硬
 LiteralText,ROTATE,旋转
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
-LiteralText,Sandbox Play,沙盒游戏
 LiteralText,SANITY CHECK,兼容性测试
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存与退出
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,专精
 LiteralText,SLIDE,滑动
 LiteralText,Slide which direction?,朝哪个方向滑动？
 LiteralText,slower animations,慢速动画
-LiteralText,Sokoban,仓库番
 LiteralText,SONICS,音源
 LiteralText,"Sorry, this device is a bit too small :-(",抱歉，这个设备太小了:-(
 LiteralText,SOUND BOARD,声板
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,陷阱门
 LiteralText,TRIGGER,发动
 LiteralText,trigger once,可发动一次
 LiteralText,trigger unlimited times,可发动无限次数
-LiteralText,trove,贵重物
 LiteralText,TUNNEL,创造通道
 LiteralText,Tunnel which direction?,向哪个方向创造过道？
 LiteralText,TURN-BASED,回合制
@@ -3799,10 +3762,6 @@ LiteralText,turns,回合
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,输入任何英文字母或短句来创造一个地牢种子
 LiteralText,unable to load,无法读取
 LiteralText,UNDEAD,不死生物时
-LiteralText,Underbarracks,地城兵营
-LiteralText,Underlimits,地城边境
-LiteralText,Underpeaks,地城通路
-LiteralText,Undertown,地下城
 LiteralText,Undo,撤销
 LiteralText,unidentified items,未经辨认的物品
 LiteralText,unique,独特
@@ -3894,6 +3853,50 @@ MaterialName,wax,蜡
 MaterialName,wood,木头
 MeasurementSystemName,imperial,斤
 MeasurementSystemName,metric,公斤
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,层层深入程序生成的地牢与洞穴，无限可重玩性——同时也易于Pathos的新玩家上手。
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工设计的地图，地表世界的传奇冒险。脱离幽深禁闭的地牢，进行更具挑战的冒险。
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房间和无尽的秘密等着你去探索，但是不要沉溺在其中，长时间停留在某一层会招致死亡。基于《破碎像素地牢》生成的地图。
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
+ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Nethack Codex,Nethack Codex
+ModuleName,Pixel Sojourn,像素之旅
+ModuleName,Sandbox Play,沙盒游戏
+ModuleTerm,Abyss,深渊
+ModuleTerm,attic,阁楼
+ModuleTerm,Black Market,黑市
+ModuleTerm,caves,洞穴
+ModuleTerm,cellar,地窖
+ModuleTerm,Deephall,地下大厅
+ModuleTerm,Deepruins,地下废墟
+ModuleTerm,Deepwilds,地下荒野
+ModuleTerm,Dungeon,地牢
+ModuleTerm,Elf Forest,精灵森林
+ModuleTerm,Elf Kingdom,精灵王国
+ModuleTerm,Elf Palace 1,精灵宫殿1
+ModuleTerm,Elf Palace 2,精灵宫殿2
+ModuleTerm,Elf Palace Vault,精灵宫殿顶
+ModuleTerm,Elf Town,精灵城镇
+ModuleTerm,Elf Town Trove,精灵城地窖
+ModuleTerm,Fort Ludios,卢底人堡垒
+ModuleTerm,Infernal Cage,地狱笼子
+ModuleTerm,Infernal Fields,地狱场地
+ModuleTerm,Infernal Keep,地狱看守
+ModuleTerm,Infernal Spire,地狱尖塔
+ModuleTerm,Labyrinth,迷宫
+ModuleTerm,level//depth,楼层
+ModuleTerm,Lich Tower,巫妖之塔
+ModuleTerm,Lost Chambers,迷失之庭
+ModuleTerm,Ludios Cache,卢底人藏宝室
+ModuleTerm,Medusa Lair,美杜莎领地
+ModuleTerm,Mines,矿洞
+ModuleTerm,Minetown,矿镇
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,仓库番
+ModuleTerm,trove,贵重物
+ModuleTerm,Underbarracks,地城兵营
+ModuleTerm,Underlimits,地城边境
+ModuleTerm,Underpeaks,地城通路
+ModuleTerm,Undertown,地下城
 MotionPastName,anointed,洗涤了
 MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了

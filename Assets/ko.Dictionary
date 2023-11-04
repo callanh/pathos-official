@@ -460,6 +460,7 @@ BarrierName,jade wall,옥 벽
 BarrierName,shroom,버섯
 BarrierName,stone wall,돌 벽
 BarrierName,tree,나무
+BarrierName,wooden wall,
 BeamName,acid,산성
 BeamName,cold,냉기
 BeamName,death,죽음
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName}은(는) {FixtureName}을(를) {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}은(는) {With:AssetName}에 {Use:AssetName}을(를) {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName}은(는) {Use:FixtureName}에 {With:AssetName}을(를) {MotionPastName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName}은(는) {MapName} 던전으로 {TraversalPastName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}은(는) {MapName} 던전으로 {TraversalPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} 능숙하게 {AssetName}을(를) {MotionPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 능숙하게 {With:AssetName}에 {Use:AssetName}을(를) {MotionPastName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}의 레벨이 {LevelNumber}(으)로 올랐다
@@ -2177,8 +2178,9 @@ GroundName,metal floor,금속 바닥
 GroundName,moss,이끼
 GroundName,obsidian floor,흑요석 바닥
 GroundName,sand,모래
-GroundName,stone corridor,석재 복도
+GroundName,snow,
 GroundName,stone floor,석재 바닥
+GroundName,stone path,석재 복도
 GroundName,water,물
 GroundName,wooden floor,나무 바닥
 HordeName,ant,개미
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[마스터]
 LiteralText,abolition of firearms,총기 규제
 LiteralText,ABOUT,Pathos에 관하여
 LiteralText,About Pathos,Pathos에 관하여
-LiteralText,Abyss,심연
 LiteralText,accelerated resting,빠른 휴식
 LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,공격력
 LiteralText,attack//verb,공격하기
 LiteralText,ATTACK//verb,공격하기
 LiteralText,attacks,공격
-LiteralText,attic,다락방
 LiteralText,attributes,주요 능력치
 LiteralText,AUTO,자동
 LiteralText,auto saving,자동 저장
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,모험 시작하기
 LiteralText,beholds,응시
 LiteralText,beta discussions,베타 버전에 대한 토론
 LiteralText,Black background,검은 배경
-LiteralText,Black Market,암시장
 LiteralText,blasphemy,신성모독
 LiteralText,BLINK,점멸
 LiteralText,Blink which direction?,어느 방향으로 점멸하시겠습니까?
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,염동력 사용 불가
 LiteralText,CAN'T THROW,투척 불가
 LiteralText,Cast,시전
 LiteralText,CAST SPELLS,마법 시전
-LiteralText,caves,동굴
-LiteralText,cellar,지하실
 LiteralText,challenge,도전지수
 LiteralText,CHAMPION,챔피언
 LiteralText,Character,캐릭터
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,참수
 LiteralText,DECEASED,사망함
 LiteralText,decelerated real-time,실시간모드 감속
 LiteralText,DECREASE,감소
-LiteralText,Deephall,깊은 전당
-LiteralText,Deepruins,깊은 폐허
-LiteralText,Deepwilds,깊은 야생지
 LiteralText,defence,방어력
 LiteralText,DEFENCE,방어력
 LiteralText,degrade quality,품질 하락
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,삭제
 LiteralText,delete this level,레벨 삭제
 LiteralText,DEMOTE,강등
 LiteralText,depth,층
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,절차적으로 생성된 던전과 동굴을 탐험 해보세요. 무한한 재 플레이 가치를 지니고 있고 Pathos를 처음 시작하는 분들께 권장됩니다.
 LiteralText,DESCEND TO NEXT LEVEL,다음 층으로 내려감
 LiteralText,destination,목적지
 LiteralText,DESTROY,파괴
 LiteralText,determined by player level,플레이어 레벨에 따라 정해짐
 LiteralText,device,장치
 LiteralText,DEVICES,장치
-LiteralText,Dhak Legacy,다크 레거시
 LiteralText,DIAGNOSTICS,진단 도구
 LiteralText,DID NOT RANK,순위 안에 들지 못함
 LiteralText,diet,식성
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,업데이트 다운로드중
 LiteralText,drop,떨어트림
 LiteralText,DROP,떨어뜨리기
 LiteralText,DUAL WIELD,쌍수 장비
-LiteralText,Dungeon,던전
 LiteralText,duration,지속 시간
 LiteralText,edible items,식용품
 LiteralText,egg,알
-LiteralText,Elf Forest,엘프 숲
-LiteralText,Elf Kingdom,엘프 왕국
-LiteralText,Elf Palace 1,엘프 궁전 1
-LiteralText,Elf Palace 2,엘프 궁전 2
-LiteralText,Elf Palace Vault,엘프 궁전 보물창고
-LiteralText,Elf Town,엘프 마을
-LiteralText,Elf Town Trove,엘프 마을 창고
 LiteralText,else,아닐경우
 LiteralText,EMAIL,이메일
 LiteralText,Enable auto save,자동 저장 켜기
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,쉬익!
 LiteralText,Floor,층
 LiteralText,FOLLOW,따르기
 LiteralText,Follow me on Twitter,트위터에서 팔로우 하세요.
-LiteralText,Fort Ludios,Ludios 요새
 LiteralText,free panning mode,자유 카메라 이동 모드
 LiteralText,fright,공포
 LiteralText,fumbling,실수
@@ -3404,7 +3387,6 @@ LiteralText,ground,땅
 LiteralText,GROUNDS,바닥
 LiteralText,GUIDES,가이드
 LiteralText,HALL of FAME,명예의 전당
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,손수 제작된 맵에서 위대한 모험을 떠납니다. 답답한 던전을 벗어나 도전정신을 자극하는 퀘스트를 시작해보세요!
 LiteralText,hatched by,부화되었다
 LiteralText,Having trouble finding the stairs down to the next level?,다음 레벨로 가는 계단을 찾기 곤란합니까?
 LiteralText,Help,도움말
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,투옥
 LiteralText,INCREASE,증가
 LiteralText,INDEX,검색
 LiteralText,individual crafting,개별 제작
-LiteralText,Infernal Cage,지옥의 우리
-LiteralText,Infernal Fields,지옥의 들판
-LiteralText,Infernal Keep,지옥의 둥지
-LiteralText,Infernal Spire,지옥의 탑
 LiteralText,infinite quantity,무한 수량
 LiteralText,influenced actions,영향받는 행동
 LiteralText,INSCRIBE,필경
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,작성문?
 LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
 LiteralText,insulation,절연
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
 LiteralText,Inventory,인벤토리
 LiteralText,INVENTORY,인벤토리
 LiteralText,ITEM,아이템
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,발차기!
 LiteralText,kills,처치 횟수
 LiteralText,kit,시작 아이템
 LiteralText,KNOWLEDGE,지식
-LiteralText,Labyrinth,미궁
 LiteralText,LANGUAGE,언어
 LiteralText,LEARN ALL SPELLS,모든 마법 학습
 LiteralText,learn spells,마법 학습
 LiteralText,LEFT RING,왼쪽 반지
 LiteralText,LEVEL CHART,레벨 표
-LiteralText,level//depth,레벨
 LiteralText,level//rank,레벨
-LiteralText,Lich Tower,리치의 탑
 LiteralText,life,체력
 LiteralText,LIFE,체력
 LiteralText,Life represents your physical health and death occurs at zero.,"생명력은 당신의 육체적인 건강을 뜻하며, 수치가 0이 되면 죽음에 이른다."
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,카르마 손실
 LiteralText,LOSE LEVEL,레벨 손실
 LiteralText,LOSE NUTRITION,영앙분 손실
 LiteralText,lose skill,숙련도 손실
-LiteralText,Lost Chambers,잃어버린 방
 LiteralText,LOW MANA,마나 부족
-LiteralText,Ludios Cache,Ludios 비밀 창고
 LiteralText,MAIN WIELD,주무장
 LiteralText,mana,마나
 LiteralText,MANA,마나
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,마나는 당
 LiteralText,Map,지도
 LiteralText,MAP,지도
 LiteralText,material,물질
-LiteralText,Medusa Lair,메두사의 굴
 LiteralText,melting,녹고있는
 LiteralText,MENU,메뉴
 LiteralText,mercenary,용병
 LiteralText,MIMIC,변장
 LiteralText,mimicking,따라하기
-LiteralText,Mines,광산
-LiteralText,Minetown,광산마을
 LiteralText,modifier,보정치
 LiteralText,MOUNT,승마
 LiteralText,Mount which direction?,어느 방향으로 올라탑니까?
@@ -3528,7 +3497,6 @@ LiteralText,N/A,없음
 LiteralText,name,이름
 LiteralText,NAME,이름짓기
 LiteralText,name?,이름?
-LiteralText,Nethack Codex,넷핵 코덱스
 LiteralText,neutral,중립
 LiteralText,never,절대 불가
 LiteralText,no additional effects,추가 효과 없음
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,관통함
 LiteralText,per level,레벨 당
 LiteralText,permanent,영구
 LiteralText,PERSONAL,개인
-LiteralText,Pixel Sojourn,Pixel Sojourn
 LiteralText,PLACE,넣기
 LiteralText,PLACE ALL,전부 넣기
 LiteralText,platform,플랫폼
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
 LiteralText,ROTATE,회전
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos의 메카닉을 실험하기위한 샌드박스 입니다. 두개의 방으로 이루어진 맵에서 모든 아이템, 함정, 던전 시설을 마음껏 다룰 수 있습니다."
-LiteralText,Sandbox Play,샌드박스 모드
 LiteralText,SANITY CHECK,정신 진단
 LiteralText,SAVE,저장
 LiteralText,SAVE & QUIT,저장 및 종료
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,스킬
 LiteralText,SLIDE,미끄러짐
 LiteralText,Slide which direction?,어느 방향으로 미끄러집니까?
 LiteralText,slower animations,느린 애니메이션
-LiteralText,Sokoban,소코반
 LiteralText,SONICS,효과음
 LiteralText,"Sorry, this device is a bit too small :-(","죄송합니다, 이 기기는 너무 작아요 :-("
 LiteralText,SOUND BOARD,사운드 보드
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,덫쳐진 문
 LiteralText,TRIGGER,발동
 LiteralText,trigger once,발동 1회
 LiteralText,trigger unlimited times,발동 횟수 무제한
-LiteralText,trove,보물 창고
 LiteralText,TUNNEL,터널
 LiteralText,Tunnel which direction?,어느 방향으로 터널을 팝니까?
 LiteralText,TURN-BASED,턴제
@@ -3799,10 +3762,6 @@ LiteralText,turns,턴
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,아무런 단어나 구를 입력하여 랜덤 던전 시드를 생성합니다.
 LiteralText,unable to load,불러오기 불가능
 LiteralText,UNDEAD,언데드인
-LiteralText,Underbarracks,지하 병영
-LiteralText,Underlimits,지하 경계
-LiteralText,Underpeaks,지하 정점
-LiteralText,Undertown,지하 마을
 LiteralText,Undo,실행 취소
 LiteralText,unidentified items,식별되지 않은 아이템들
 LiteralText,unique,유니크
@@ -3894,6 +3853,50 @@ MaterialName,wax,양초
 MaterialName,wood,나무
 MeasurementSystemName,imperial,야드파운드법
 MeasurementSystemName,metric,미터법
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,절차적으로 생성된 던전과 동굴을 탐험 해보세요. 무한한 재 플레이 가치를 지니고 있고 Pathos를 처음 시작하는 분들께 권장됩니다.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,손수 제작된 맵에서 위대한 모험을 떠납니다. 답답한 던전을 벗어나 도전정신을 자극하는 퀘스트를 시작해보세요!
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos의 메카닉을 실험하기위한 샌드박스 입니다. 두개의 방으로 이루어진 맵에서 모든 아이템, 함정, 던전 시설을 마음껏 다룰 수 있습니다."
+ModuleName,Dhak Legacy,다크 레거시
+ModuleName,Nethack Codex,넷핵 코덱스
+ModuleName,Pixel Sojourn,Pixel Sojourn
+ModuleName,Sandbox Play,샌드박스 모드
+ModuleTerm,Abyss,심연
+ModuleTerm,attic,다락방
+ModuleTerm,Black Market,암시장
+ModuleTerm,caves,동굴
+ModuleTerm,cellar,지하실
+ModuleTerm,Deephall,깊은 전당
+ModuleTerm,Deepruins,깊은 폐허
+ModuleTerm,Deepwilds,깊은 야생지
+ModuleTerm,Dungeon,던전
+ModuleTerm,Elf Forest,엘프 숲
+ModuleTerm,Elf Kingdom,엘프 왕국
+ModuleTerm,Elf Palace 1,엘프 궁전 1
+ModuleTerm,Elf Palace 2,엘프 궁전 2
+ModuleTerm,Elf Palace Vault,엘프 궁전 보물창고
+ModuleTerm,Elf Town,엘프 마을
+ModuleTerm,Elf Town Trove,엘프 마을 창고
+ModuleTerm,Fort Ludios,Ludios 요새
+ModuleTerm,Infernal Cage,지옥의 우리
+ModuleTerm,Infernal Fields,지옥의 들판
+ModuleTerm,Infernal Keep,지옥의 둥지
+ModuleTerm,Infernal Spire,지옥의 탑
+ModuleTerm,Labyrinth,미궁
+ModuleTerm,level//depth,레벨
+ModuleTerm,Lich Tower,리치의 탑
+ModuleTerm,Lost Chambers,잃어버린 방
+ModuleTerm,Ludios Cache,Ludios 비밀 창고
+ModuleTerm,Medusa Lair,메두사의 굴
+ModuleTerm,Mines,광산
+ModuleTerm,Minetown,광산마을
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,소코반
+ModuleTerm,trove,보물 창고
+ModuleTerm,Underbarracks,지하 병영
+ModuleTerm,Underlimits,지하 경계
+ModuleTerm,Underpeaks,지하 정점
+ModuleTerm,Undertown,지하 마을
 MotionPastName,anointed,발랐다
 MotionPastName,ate,먹었다
 MotionPastName,captured,붙잡은

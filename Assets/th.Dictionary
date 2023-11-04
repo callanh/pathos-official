@@ -460,6 +460,7 @@ BarrierName,jade wall,กำแพงหยก
 BarrierName,shroom,เห็ด
 BarrierName,stone wall,กำแพงหิน
 BarrierName,tree,ต้นไม้
+BarrierName,wooden wall,
 BeamName,acid,กรด
 BeamName,cold,ความเย็น
 BeamName,death,ความตาย
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName}{FixtureName}แล้ว
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName}{Use:AssetName}กับ{With:AssetName}แล้ว
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName}กับ{With:AssetName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName}สู่{MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName}สู่{MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} เลเวลเพิ่มขึ้นเป็นเลเวล {LevelNumber}
@@ -2177,8 +2178,9 @@ GroundName,metal floor,พื้นเหล็ก
 GroundName,moss,ตะไคร่
 GroundName,obsidian floor,พื้นอ๊อบซีเดี้ยน
 GroundName,sand,ทราย
-GroundName,stone corridor,ระเบียงหิน
+GroundName,snow,
 GroundName,stone floor,พื้นหิน
+GroundName,stone path,ระเบียงหิน
 GroundName,water,น้ำ
 GroundName,wooden floor,พื้นไม้
 HordeName,ant,มด
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[แอดมิน]
 LiteralText,abolition of firearms,
 LiteralText,ABOUT,เกี่ยวกับ
 LiteralText,About Pathos,เกี่ยวกับ Pathos
-LiteralText,Abyss,อบีส
 LiteralText,accelerated resting,เพิ่มความเร็วระหว่างพักผ่อน
 LiteralText,actions,การกระทำ
 LiteralText,ADD LEVEL,เพิ่มเลเวล
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,การโจมตี
 LiteralText,attack//verb,โจมตี
 LiteralText,ATTACK//verb,โจมตี
 LiteralText,attacks,โจมตี
-LiteralText,attic,ห้องใต้หลังคา
 LiteralText,attributes,คุณสมบัติ
 LiteralText,AUTO,อัตโนมัติ
 LiteralText,auto saving,บันทึกอัตโนมัติ
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,เริ่มการผจญภัย
 LiteralText,beholds,
 LiteralText,beta discussions,
 LiteralText,Black background,พื้นหลังสีดำ
-LiteralText,Black Market,ตลาดมืด
 LiteralText,blasphemy,
 LiteralText,BLINK,เคลื่อนที่พริบตา
 LiteralText,Blink which direction?,เคลื่อนที่พริบตาไปทางไหน?
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,ไม่สามารถใช้พลัง�
 LiteralText,CAN'T THROW,ขว้างไม่ได้
 LiteralText,Cast,ร่าย
 LiteralText,CAST SPELLS,ร่ายเวท
-LiteralText,caves,ถ้ำ
-LiteralText,cellar,ห้องใต้ดิน
 LiteralText,challenge,ความท้าทาย
 LiteralText,CHAMPION,แชมป์เปี้ยน
 LiteralText,Character,ตัวละคร
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,
 LiteralText,DECEASED,
 LiteralText,decelerated real-time,ลดความเร็วโหมดเวลาจริง
 LiteralText,DECREASE,ลดลง
-LiteralText,Deephall,
-LiteralText,Deepruins,
-LiteralText,Deepwilds,
 LiteralText,defence,การป้องกัน
 LiteralText,DEFENCE,การป้องกัน
 LiteralText,degrade quality,ลดคุณภาพลง
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,ลบ
 LiteralText,delete this level,
 LiteralText,DEMOTE,
 LiteralText,depth,ส่วนลึก
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,
 LiteralText,DESCEND TO NEXT LEVEL,ลงไปสู่ชั้นต่อไป
 LiteralText,destination,
 LiteralText,DESTROY,ทำลาย
 LiteralText,determined by player level,
 LiteralText,device,อุปกรณ์
 LiteralText,DEVICES,อุปกรณ์
-LiteralText,Dhak Legacy,Dhak Legacy
 LiteralText,DIAGNOSTICS,การวินิจฉัย
 LiteralText,DID NOT RANK,ไม่ขึ้นแรงค์
 LiteralText,diet,สิ่งที่กิน
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,ดาวน์โหลดอัพเดต
 LiteralText,drop,ทิ้งลง
 LiteralText,DROP,ทิ้งลง
 LiteralText,DUAL WIELD,ถือคู่
-LiteralText,Dungeon,ดันเจี้ยน
 LiteralText,duration,เวลาที่มีชีวิต
 LiteralText,edible items,ไอเท็มที่กินได้
 LiteralText,egg,ไข่
-LiteralText,Elf Forest,เอลฟ์ป่า
-LiteralText,Elf Kingdom,อาณาจักรเอลฟ์
-LiteralText,Elf Palace 1,พระราชวังเอลฟ์ 1
-LiteralText,Elf Palace 2,พระราชวังเอลฟ์ 2
-LiteralText,Elf Palace Vault,
-LiteralText,Elf Town,เมืองเอลฟ์
-LiteralText,Elf Town Trove,ขุมทรัพย์เมืองเอลฟ์
 LiteralText,else,อย่างอื่น
 LiteralText,EMAIL,อีเมล์
 LiteralText,Enable auto save,เปิดใช้งานการบันทึกอัตโนมัติ
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,
 LiteralText,Floor,บนพื้น
 LiteralText,FOLLOW,ติดตาม
 LiteralText,Follow me on Twitter,ติดตามฉันบน Twitter
-LiteralText,Fort Ludios,
 LiteralText,free panning mode,โหมดมุมกล่องอิสระ
 LiteralText,fright,
 LiteralText,fumbling,
@@ -3404,7 +3387,6 @@ LiteralText,ground,พื้น
 LiteralText,GROUNDS,พื้น
 LiteralText,GUIDES,แนะนำ
 LiteralText,HALL of FAME,โถงแห่งเกียรติยศ
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
 LiteralText,hatched by,ฟักโดย
 LiteralText,Having trouble finding the stairs down to the next level?,ทางบันไดลงไปชั้นล่างไม่เจอเหรอ?
 LiteralText,Help,ข้อมูลเพิ่มเติม
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,
 LiteralText,INCREASE,เพิ่ม
 LiteralText,INDEX,สารบัญ
 LiteralText,individual crafting,
-LiteralText,Infernal Cage,
-LiteralText,Infernal Fields,
-LiteralText,Infernal Keep,
-LiteralText,Infernal Spire,
 LiteralText,infinite quantity,จำนวนไม่จำกัด
 LiteralText,influenced actions,ส่งผลต่อ
 LiteralText,INSCRIBE,
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,
 LiteralText,insulation,
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 LiteralText,Inventory,ช่องเก็บของ
 LiteralText,INVENTORY,ช่องเก็บของ
 LiteralText,ITEM,ไอเท็ม
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,ถีบ!
 LiteralText,kills,ฆ่า
 LiteralText,kit,ชุด
 LiteralText,KNOWLEDGE,ภูมิปัญญา
-LiteralText,Labyrinth,
 LiteralText,LANGUAGE,ภาษา
 LiteralText,LEARN ALL SPELLS,เรียนรู้ทุกเวทมนตร์
 LiteralText,learn spells,
 LiteralText,LEFT RING,แหวนข้างซ้าย
 LiteralText,LEVEL CHART,
-LiteralText,level//depth,ชั้นที่
 LiteralText,level//rank,เลเวล
-LiteralText,Lich Tower,หอคอยแห่งลิช
 LiteralText,life,ชีวิต
 LiteralText,LIFE,ชีวิต
 LiteralText,Life represents your physical health and death occurs at zero.,พลังชีวิตหมายถึงสุขภาพร่างกายหากเหลือศูนย์เท่ากับตาย
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,สูญเสียกรรม
 LiteralText,LOSE LEVEL,สูญเสียเลเวล
 LiteralText,LOSE NUTRITION,สูญเสียโภชนาการ
 LiteralText,lose skill,สูญเสียทักษะ
-LiteralText,Lost Chambers,
 LiteralText,LOW MANA,มานาเหลือน้อย
-LiteralText,Ludios Cache,
 LiteralText,MAIN WIELD,ถือเป็นหลัก
 LiteralText,mana,มานา
 LiteralText,MANA,มานา
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,มานา�
 LiteralText,Map,แผนที่
 LiteralText,MAP,แผนที่
 LiteralText,material,วัสดุ
-LiteralText,Medusa Lair,รังเมดูซ่า
 LiteralText,melting,ละลาย
 LiteralText,MENU,เมนู
 LiteralText,mercenary,ทหารรับจ้าง
 LiteralText,MIMIC,เลียนแบบ
 LiteralText,mimicking,
-LiteralText,Mines,เหมือง
-LiteralText,Minetown,เมืองเหมือง
 LiteralText,modifier,
 LiteralText,MOUNT,ขี่
 LiteralText,Mount which direction?,ขี่ทิศไหน?
@@ -3528,7 +3497,6 @@ LiteralText,N/A,
 LiteralText,name,ชื่อ
 LiteralText,NAME,ชื่อ
 LiteralText,name?,ชื่อ?
-LiteralText,Nethack Codex,Nethack Codex
 LiteralText,neutral,
 LiteralText,never,ไม่เคย
 LiteralText,no additional effects,ไม่มีผลเพิ่มเติม
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,เจาะทะลุ
 LiteralText,per level,ต่อเลเวล
 LiteralText,permanent,ถาวร
 LiteralText,PERSONAL,ส่วนตัว
-LiteralText,Pixel Sojourn,
 LiteralText,PLACE,ใส่
 LiteralText,PLACE ALL,ใส่ทั้งหมด
 LiteralText,platform,
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,กลับสู่สภาพเดิม
 LiteralText,RIGHT RING,แหวนข้างขวา
 LiteralText,rigid,
 LiteralText,ROTATE,หมุน
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
-LiteralText,Sandbox Play,
 LiteralText,SANITY CHECK,เช็คค่าสติ
 LiteralText,SAVE,บันทึก
 LiteralText,SAVE & QUIT,บันทึกและออก
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,ความชำนาญ
 LiteralText,SLIDE,ไถล
 LiteralText,Slide which direction?,ไถลไปทิศทางไหน
 LiteralText,slower animations,อนิเมชั่นช้าลง
-LiteralText,Sokoban,
 LiteralText,SONICS,เสียงเอฟเฟค
 LiteralText,"Sorry, this device is a bit too small :-(",ขออภัยด้วยอุปกรณ์นี้เล็กเกินไป :-(
 LiteralText,SOUND BOARD,เสียงเอฟเฟค
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,ประตูติดกับดัก
 LiteralText,TRIGGER,กระตุ้น
 LiteralText,trigger once,กระตุ้นครั้งเดียว
 LiteralText,trigger unlimited times,กระตุ้นไม่จำกัดจำนวนครั้ง
-LiteralText,trove,ขุมทรัพย์
 LiteralText,TUNNEL,ขุดอุโมงค์
 LiteralText,Tunnel which direction?,ขุดอุโมงค์ไปทางไหน?
 LiteralText,TURN-BASED,เป็นเทิร์น
@@ -3799,10 +3762,6 @@ LiteralText,turns,เทิร์น
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,พิมพ์ตัวอักษรหรือคำพูดเพื่อสุ่มสร้างโลก
 LiteralText,unable to load,ไม่สามารถโหลดได้
 LiteralText,UNDEAD,อันเด๊ด
-LiteralText,Underbarracks,
-LiteralText,Underlimits,
-LiteralText,Underpeaks,
-LiteralText,Undertown,
 LiteralText,Undo,ย้อนกลับ
 LiteralText,unidentified items,ไอเท็มที่ยังไม่ได้ระบุ
 LiteralText,unique,พิเศษ
@@ -3894,6 +3853,50 @@ MaterialName,wax,ขี้ผึ้ง
 MaterialName,wood,ไม้
 MeasurementSystemName,imperial,อิมพีเรียล
 MeasurementSystemName,metric,เมตริก
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
+ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Nethack Codex,Nethack Codex
+ModuleName,Pixel Sojourn,
+ModuleName,Sandbox Play,
+ModuleTerm,Abyss,อบีส
+ModuleTerm,attic,ห้องใต้หลังคา
+ModuleTerm,Black Market,ตลาดมืด
+ModuleTerm,caves,ถ้ำ
+ModuleTerm,cellar,ห้องใต้ดิน
+ModuleTerm,Deephall,
+ModuleTerm,Deepruins,
+ModuleTerm,Deepwilds,
+ModuleTerm,Dungeon,ดันเจี้ยน
+ModuleTerm,Elf Forest,เอลฟ์ป่า
+ModuleTerm,Elf Kingdom,อาณาจักรเอลฟ์
+ModuleTerm,Elf Palace 1,พระราชวังเอลฟ์ 1
+ModuleTerm,Elf Palace 2,พระราชวังเอลฟ์ 2
+ModuleTerm,Elf Palace Vault,
+ModuleTerm,Elf Town,เมืองเอลฟ์
+ModuleTerm,Elf Town Trove,ขุมทรัพย์เมืองเอลฟ์
+ModuleTerm,Fort Ludios,
+ModuleTerm,Infernal Cage,
+ModuleTerm,Infernal Fields,
+ModuleTerm,Infernal Keep,
+ModuleTerm,Infernal Spire,
+ModuleTerm,Labyrinth,
+ModuleTerm,level//depth,ชั้นที่
+ModuleTerm,Lich Tower,หอคอยแห่งลิช
+ModuleTerm,Lost Chambers,
+ModuleTerm,Ludios Cache,
+ModuleTerm,Medusa Lair,รังเมดูซ่า
+ModuleTerm,Mines,เหมือง
+ModuleTerm,Minetown,เมืองเหมือง
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,
+ModuleTerm,trove,ขุมทรัพย์
+ModuleTerm,Underbarracks,
+ModuleTerm,Underlimits,
+ModuleTerm,Underpeaks,
+ModuleTerm,Undertown,
 MotionPastName,anointed,ชโลม
 MotionPastName,ate,กิน
 MotionPastName,captured,ถูกจับ

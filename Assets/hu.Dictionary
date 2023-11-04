@@ -460,6 +460,7 @@ BarrierName,jade wall,jádefal
 BarrierName,shroom,gomba
 BarrierName,stone wall,kőfal
 BarrierName,tree,fa
+BarrierName,wooden wall,
 BeamName,acid,sav
 BeamName,cold,hideg
 BeamName,death,halál
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,"{C
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName}: {FixtureName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} {MotionPastName} a következőt: {Use:AssetName}, ezzel: {With:AssetName}"
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} a(z) {Use:FixtureName} tereptárgyat {With:AssetName} tárggyal {MotionPastName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName} a kazamata következő szintjére: {MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} a kazamata következő szintjére: {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} ügyesen {MotionPastName} a(z) {AssetName} tárgyat
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} ügyesen {MotionPastName} a(z) {Use:AssetName} tárgyat, ezzel: {With:AssetName}"
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} elérte a {LevelNumber}. szintet
@@ -2177,8 +2178,9 @@ GroundName,metal floor,fémpadló
 GroundName,moss,moha
 GroundName,obsidian floor,obszidiánpadló
 GroundName,sand,homok
-GroundName,stone corridor,kőfolyosó
+GroundName,snow,
 GroundName,stone floor,kőpadló
+GroundName,stone path,kőfolyosó
 GroundName,water,víz
 GroundName,wooden floor,fapadló
 HordeName,ant,hangya
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[MESTER]
 LiteralText,abolition of firearms,lőfegyverek nem használhatóak
 LiteralText,ABOUT,A JÁTÉKRÓL
 LiteralText,About Pathos,A Pathosról
-LiteralText,Abyss,Mélység
 LiteralText,accelerated resting,gyorsított pihenés
 LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,TÁMADÁS
 LiteralText,attack//verb,támadás
 LiteralText,ATTACK//verb,TÁMADÁS
 LiteralText,attacks,támadások
-LiteralText,attic,padlás
 LiteralText,attributes,tulajdonságok
 LiteralText,AUTO,AUTO
 LiteralText,auto saving,automatikus mentés
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,Kaland elkezdése
 LiteralText,beholds,észrevesz
 LiteralText,beta discussions,értekezések a bétaverzióról
 LiteralText,Black background,Fekete háttér
-LiteralText,Black Market,Fekete Piac
 LiteralText,blasphemy,istenkáromlás
 LiteralText,BLINK,ELILLANÁS
 LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,NEM MEHET VÉGBE TELEKINÉZIS
 LiteralText,CAN'T THROW,NEM LEHET ELDOBNI
 LiteralText,Cast,Varázslatok
 LiteralText,CAST SPELLS,varázslás
-LiteralText,caves,barlangok
-LiteralText,cellar,pince
 LiteralText,challenge,kihívás
 LiteralText,CHAMPION,BAJNOK
 LiteralText,Character,Karakter
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,lefejezés
 LiteralText,DECEASED,ELHUNYT
 LiteralText,decelerated real-time,valós idő lassítása
 LiteralText,DECREASE,CSÖKKENÉS
-LiteralText,Deephall,Deephall
-LiteralText,Deepruins,Deepruins
-LiteralText,Deepwilds,Deepwilds
 LiteralText,defence,védekezés
 LiteralText,DEFENCE,VÉDEKEZÉS
 LiteralText,degrade quality,minőség rontása
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,TÖRLÉS
 LiteralText,delete this level,szint törlése
 LiteralText,DEMOTE,LEFOKOZÁS
 LiteralText,depth,mélység
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Fedezz fel procedurálisan generált kazamatákat és barlangokat végtelen újrajátszhatóság mellett. A Pathosszal ismerkedők számára ajánlott.
 LiteralText,DESCEND TO NEXT LEVEL,LEERESZKEDÉS A KÖVETKEZŐ SZINTRE
 LiteralText,destination,úti cél
 LiteralText,DESTROY,ELPUSZTÍTÁS
 LiteralText,determined by player level,a játékos szintje határozza meg
 LiteralText,device,eszköz
 LiteralText,DEVICES,ESZKÖZÖK
-LiteralText,Dhak Legacy,Dhak örökség
 LiteralText,DIAGNOSTICS,DIAGNOSZTIKA
 LiteralText,DID NOT RANK,NEM ÉRT EL HELYEZÉST ITT:
 LiteralText,diet,étrend
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,frissítés letöltése
 LiteralText,drop,elejt
 LiteralText,DROP,ELEJT
 LiteralText,DUAL WIELD,KÉTKEZES
-LiteralText,Dungeon,Kazamata
 LiteralText,duration,idő
 LiteralText,edible items,ehető tárgyak
 LiteralText,egg,tojás
-LiteralText,Elf Forest,Elferdő
-LiteralText,Elf Kingdom,Elfkirályság
-LiteralText,Elf Palace 1,Elfpalota 1
-LiteralText,Elf Palace 2,Elfpalota 2
-LiteralText,Elf Palace Vault,Elfpalota pincéje
-LiteralText,Elf Town,Elfváros
-LiteralText,Elf Town Trove,Elfvárosi lelet
 LiteralText,else,vagy
 LiteralText,EMAIL,E-MAIL
 LiteralText,Enable auto save,Automatikus mentés engedélyezése
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,PEZSGÉS
 LiteralText,Floor,Padló
 LiteralText,FOLLOW,KÖVET
 LiteralText,Follow me on Twitter,Kövess Twitteren
-LiteralText,Fort Ludios,Ludios Erőd
 LiteralText,free panning mode,szabadon pásztázómód
 LiteralText,fright,rémület
 LiteralText,fumbling,ügyetlenség
@@ -3404,7 +3387,6 @@ LiteralText,ground,talaj
 LiteralText,GROUNDS,TALAJFAJTÁK
 LiteralText,GUIDES,ÚTMUTATÓ
 LiteralText,HALL of FAME,DICSŐSÉG CSARNOKA
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
 LiteralText,hatched by,kikelti:
 LiteralText,Having trouble finding the stairs down to the next level?,Nem találod a következő szintre vezető lépcsősort?
 LiteralText,Help,Súgó
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,BEBÖRTÖNZÉS
 LiteralText,INCREASE,NÖVEL
 LiteralText,INDEX,NÉVMUTATÓ
 LiteralText,individual crafting,egyéni barkácsolás
-LiteralText,Infernal Cage,Alvilági ketrec
-LiteralText,Infernal Fields,Alvilági mező
-LiteralText,Infernal Keep,Alvilági erőd
-LiteralText,Infernal Spire,Alvilági torony
 LiteralText,infinite quantity,végtelen mennyiség
 LiteralText,influenced actions,befolyásolt cselekedetek
 LiteralText,INSCRIBE,BELEÍR
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,beleírás?
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
 LiteralText,insulation,szigetelés
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
 LiteralText,Inventory,Leltár
 LiteralText,INVENTORY,LELTÁR
 LiteralText,ITEM,TÁRGY
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,RÚGÁS!
 LiteralText,kills,ölések
 LiteralText,kit,felszerelés
 LiteralText,KNOWLEDGE,ISMERETEK
-LiteralText,Labyrinth,Labirintus
 LiteralText,LANGUAGE,NYELV
 LiteralText,LEARN ALL SPELLS,ÖSSZES VARÁZSLAT MEGTANULÁSA
 LiteralText,learn spells,varázslatok megtanulása
 LiteralText,LEFT RING,BAL GYŰRŰ
 LiteralText,LEVEL CHART,SZINT TÁBLÁZAT
-LiteralText,level//depth,szint
 LiteralText,level//rank,szint
-LiteralText,Lich Tower,Lícs torony
 LiteralText,life,életerő
 LiteralText,LIFE,ÉLETERŐ
 LiteralText,Life represents your physical health and death occurs at zero.,"Az életerő a testi egészségedet mutatja, így mikor eléri a 0-t, meghalsz."
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,KARMA ELVESZTÉSE
 LiteralText,LOSE LEVEL,SZINT ELVESZTÉSE
 LiteralText,LOSE NUTRITION,TÁPANYAG ELVESZTÉSE
 LiteralText,lose skill,képesség elvesztése
-LiteralText,Lost Chambers,Elveszett Kamrák
 LiteralText,LOW MANA,ALACSONY MANA
-LiteralText,Ludios Cache,Ludios Rejtekhely
 LiteralText,MAIN WIELD,ELSŐDLEGES
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,A mana a var�
 LiteralText,Map,Térkép
 LiteralText,MAP,TÉRKÉP
 LiteralText,material,anyag
-LiteralText,Medusa Lair,Medúza-verem
 LiteralText,melting,
 LiteralText,MENU,MENÜ
 LiteralText,mercenary,zsoldos
 LiteralText,MIMIC,MÍMEL
 LiteralText,mimicking,mímelés
-LiteralText,Mines,Bányák
-LiteralText,Minetown,Bányászváros
 LiteralText,modifier,módosító
 LiteralText,MOUNT,FELSZÁLL
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
@@ -3528,7 +3497,6 @@ LiteralText,N/A,nincs adat
 LiteralText,name,név
 LiteralText,NAME,ELNEVEZÉS
 LiteralText,name?,átnevez?
-LiteralText,Nethack Codex,Nethack-Kódex
 LiteralText,neutral,semleges
 LiteralText,never,soha sem
 LiteralText,no additional effects,nincs további hatás
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,behatol
 LiteralText,per level,/szint
 LiteralText,permanent,állandó
 LiteralText,PERSONAL,SZEMÉLYES
-LiteralText,Pixel Sojourn,Pixelkaland
 LiteralText,PLACE,ELHELYEZ
 LiteralText,PLACE ALL,ÖSSZES ELHELYEZÉSE
 LiteralText,platform,platform
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,VISSZAÁLLÍTÁS
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
 LiteralText,ROTATE,FORGAT
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
-LiteralText,Sandbox Play,Sandbox játék
 LiteralText,SANITY CHECK,HITELESSÉG ELLENŐRZÉSE
 LiteralText,SAVE,MENTÉS
 LiteralText,SAVE & QUIT,MENTÉS ÉS KILÉPÉS
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,KÉPESSÉGEK
 LiteralText,SLIDE,CSÚSZÁS
 LiteralText,Slide which direction?,Melyik irányba szeretnél csúszni?
 LiteralText,slower animations,lassabb animációk
-LiteralText,Sokoban,Sokoban
 LiteralText,SONICS,HANGOK
 LiteralText,"Sorry, this device is a bit too small :-(","Sajnálom, de ez az eszköz túl kicsi :-("
 LiteralText,SOUND BOARD,HANGEFFEKTEK
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,beragadt ajtó
 LiteralText,TRIGGER,AKTIVÁLÁS
 LiteralText,trigger once,egyszeri aktiválás
 LiteralText,trigger unlimited times,aktiválás végtelenszer
-LiteralText,trove,lelet
 LiteralText,TUNNEL,ALAGÚT
 LiteralText,Tunnel which direction?,Melyik irányba szeretnél ásni?
 LiteralText,TURN-BASED,KÖRÖKRE OSZTOTT
@@ -3799,10 +3762,6 @@ LiteralText,turns,kör
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Írj be bármilyen szót vagy kifejezést ahhoz, hogy random kazamata seedet generálj."
 LiteralText,unable to load,nem lehet betölteni
 LiteralText,UNDEAD,ÉLŐHOLT
-LiteralText,Underbarracks,Underbarracks
-LiteralText,Underlimits,Underlimits
-LiteralText,Underpeaks,Underpeaks
-LiteralText,Undertown,Undertown
 LiteralText,Undo,Visszavon
 LiteralText,unidentified items,azonosítatlan tárgyak
 LiteralText,unique,kivételes
@@ -3894,6 +3853,50 @@ MaterialName,wax,viasz
 MaterialName,wood,fa
 MeasurementSystemName,imperial,fenséges
 MeasurementSystemName,metric,metrikus
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Fedezz fel procedurálisan generált kazamatákat és barlangokat végtelen újrajátszhatóság mellett. A Pathosszal ismerkedők számára ajánlott.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
+ModuleName,Dhak Legacy,Dhak örökség
+ModuleName,Nethack Codex,Nethack-Kódex
+ModuleName,Pixel Sojourn,Pixelkaland
+ModuleName,Sandbox Play,Sandbox játék
+ModuleTerm,Abyss,Mélység
+ModuleTerm,attic,padlás
+ModuleTerm,Black Market,Fekete Piac
+ModuleTerm,caves,barlangok
+ModuleTerm,cellar,pince
+ModuleTerm,Deephall,Deephall
+ModuleTerm,Deepruins,Deepruins
+ModuleTerm,Deepwilds,Deepwilds
+ModuleTerm,Dungeon,Kazamata
+ModuleTerm,Elf Forest,Elferdő
+ModuleTerm,Elf Kingdom,Elfkirályság
+ModuleTerm,Elf Palace 1,Elfpalota 1
+ModuleTerm,Elf Palace 2,Elfpalota 2
+ModuleTerm,Elf Palace Vault,Elfpalota pincéje
+ModuleTerm,Elf Town,Elfváros
+ModuleTerm,Elf Town Trove,Elfvárosi lelet
+ModuleTerm,Fort Ludios,Ludios Erőd
+ModuleTerm,Infernal Cage,Alvilági ketrec
+ModuleTerm,Infernal Fields,Alvilági mező
+ModuleTerm,Infernal Keep,Alvilági erőd
+ModuleTerm,Infernal Spire,Alvilági torony
+ModuleTerm,Labyrinth,Labirintus
+ModuleTerm,level//depth,szint
+ModuleTerm,Lich Tower,Lícs torony
+ModuleTerm,Lost Chambers,Elveszett Kamrák
+ModuleTerm,Ludios Cache,Ludios Rejtekhely
+ModuleTerm,Medusa Lair,Medúza-verem
+ModuleTerm,Mines,Bányák
+ModuleTerm,Minetown,Bányászváros
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,Sokoban
+ModuleTerm,trove,lelet
+ModuleTerm,Underbarracks,Underbarracks
+ModuleTerm,Underlimits,Underlimits
+ModuleTerm,Underpeaks,Underpeaks
+ModuleTerm,Undertown,Undertown
 MotionPastName,anointed,felszentelte
 MotionPastName,ate,elfogyasztotta
 MotionPastName,captured,elfogta

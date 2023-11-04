@@ -460,6 +460,7 @@ BarrierName,jade wall,нефритовая стена
 BarrierName,shroom,
 BarrierName,stone wall,каменная стена
 BarrierName,tree,дърво
+BarrierName,wooden wall,
 BeamName,acid,кислоты
 BeamName,cold,холода
 BeamName,death,смерти
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,"{C
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName} {FixtureName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} на {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} на {With:AssetName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName} в подземелье {MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} в подземелье {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} поднимает уровень до {LevelNumber}
@@ -2177,8 +2178,9 @@ GroundName,metal floor,
 GroundName,moss,
 GroundName,obsidian floor,обсидиановый пол
 GroundName,sand,
-GroundName,stone corridor,каменный коридор
+GroundName,snow,
 GroundName,stone floor,каменный пол
+GroundName,stone path,каменный коридор
 GroundName,water,вода
 GroundName,wooden floor,
 HordeName,ant,муравей
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[МАСТЕР]
 LiteralText,abolition of firearms,без огнестрельного оружия
 LiteralText,ABOUT,ОБ ИГРЕ
 LiteralText,About Pathos,О Pathos
-LiteralText,Abyss,
 LiteralText,accelerated resting,ускоренный отдых
 LiteralText,actions,
 LiteralText,ADD LEVEL,
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,АТАКА
 LiteralText,attack//verb,атаковать
 LiteralText,ATTACK//verb,АТАКОВАТЬ
 LiteralText,attacks,
-LiteralText,attic,чердак
 LiteralText,attributes,атрибуты
 LiteralText,AUTO,АВТО
 LiteralText,auto saving,автоматическое сохранение
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,Начать приключение
 LiteralText,beholds,смотреть
 LiteralText,beta discussions,обсуждение бета-версий
 LiteralText,Black background,Чёрный фон
-LiteralText,Black Market,
 LiteralText,blasphemy,богохульство
 LiteralText,BLINK,
 LiteralText,Blink which direction?,
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
 LiteralText,Cast,Применяет
 LiteralText,CAST SPELLS,ЧИТАТЬ ЗАКЛИНАНИЯ
-LiteralText,caves,пещеры
-LiteralText,cellar,пШрекеб
 LiteralText,challenge,вызов
 LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,
 LiteralText,DECEASED,
 LiteralText,decelerated real-time,
 LiteralText,DECREASE,СНИЗИТЬ
-LiteralText,Deephall,
-LiteralText,Deepruins,
-LiteralText,Deepwilds,
 LiteralText,defence,защита
 LiteralText,DEFENCE,ЗАЩИТА
 LiteralText,degrade quality,
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,УДАЛИТЬ
 LiteralText,delete this level,
 LiteralText,DEMOTE,
 LiteralText,depth,
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Спуститесь в процедурно-сгенерированные подземелья и пещеры. Бесконечная реиграбельность, рекомендуется для новичков в Pathos."
 LiteralText,DESCEND TO NEXT LEVEL,СПУСК НА СЛЕДУЮЩИЙ УРОВЕНЬ
 LiteralText,destination,
 LiteralText,DESTROY,УНИЧТОЖИТЬ
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,МЕХАНИЗМЫ
-LiteralText,Dhak Legacy,Dhak Legacy
 LiteralText,DIAGNOSTICS,ДИАГНОСТИКА
 LiteralText,DID NOT RANK,НЕ РАНЖИРУЕТСЯ
 LiteralText,diet,питание
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,загрузка обновления
 LiteralText,drop,выкинуть
 LiteralText,DROP,ВЫКИНУТЬ
 LiteralText,DUAL WIELD,
-LiteralText,Dungeon,
 LiteralText,duration,
 LiteralText,edible items,
 LiteralText,egg,яйцо
-LiteralText,Elf Forest,
-LiteralText,Elf Kingdom,
-LiteralText,Elf Palace 1,
-LiteralText,Elf Palace 2,
-LiteralText,Elf Palace Vault,
-LiteralText,Elf Town,
-LiteralText,Elf Town Trove,
 LiteralText,else,или
 LiteralText,EMAIL,
 LiteralText,Enable auto save,Авто сохранение
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,ФИАСКО
 LiteralText,Floor,
 LiteralText,FOLLOW,
 LiteralText,Follow me on Twitter,Подписывайтесь на Twitter
-LiteralText,Fort Ludios,Форт Лудиос
 LiteralText,free panning mode,свободная прокрутка
 LiteralText,fright,
 LiteralText,fumbling,неловкость
@@ -3404,7 +3387,6 @@ LiteralText,ground,
 LiteralText,GROUNDS,
 LiteralText,GUIDES,РУКОВОДСТВО
 LiteralText,HALL of FAME,ЗАЛ СЛАВЫ
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Виейдите за границы подземелий и приступайте к выполнению Квеста.
 LiteralText,hatched by,высижено
 LiteralText,Having trouble finding the stairs down to the next level?,Есть проблемы с поиском лестницы на следующий уровень?
 LiteralText,Help,
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,
 LiteralText,INCREASE,УВЕЛИЧИТЬ
 LiteralText,INDEX,УКАЗАТЕЛЬ
 LiteralText,individual crafting,
-LiteralText,Infernal Cage,
-LiteralText,Infernal Fields,
-LiteralText,Infernal Keep,
-LiteralText,Infernal Spire,
 LiteralText,infinite quantity,
 LiteralText,influenced actions,влияние на действия
 LiteralText,INSCRIBE,
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,insulation,изоляция
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 LiteralText,Inventory,
 LiteralText,INVENTORY,ИНВЕНТАРЬ
 LiteralText,ITEM,
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,ПНУТЬ!
 LiteralText,kills,убийства
 LiteralText,kit,спанеряжение
 LiteralText,KNOWLEDGE,ЗНАНИЯ
-LiteralText,Labyrinth,
 LiteralText,LANGUAGE,
 LiteralText,LEARN ALL SPELLS,
 LiteralText,learn spells,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,ТАБЛИЦА УРОВНЕЙ
-LiteralText,level//depth,
 LiteralText,level//rank,
-LiteralText,Lich Tower,Башня Личей
 LiteralText,life,здоровье
 LiteralText,LIFE,ЗДОРОВЬЕ
 LiteralText,Life represents your physical health and death occurs at zero.,
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,
 LiteralText,LOSE LEVEL,ПОНИЗИТЬ УРОВЕНЬ
 LiteralText,LOSE NUTRITION,ПОНИЗИТЬ СЫТНОСТЬ
 LiteralText,lose skill,
-LiteralText,Lost Chambers,
 LiteralText,LOW MANA,МАЛО МАНЫ
-LiteralText,Ludios Cache,Тайник Лудиоса
 LiteralText,MAIN WIELD,
 LiteralText,mana,мана
 LiteralText,MANA,МАНА
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,КАРТА
 LiteralText,material,
-LiteralText,Medusa Lair,
 LiteralText,melting,
 LiteralText,MENU,
 LiteralText,mercenary,наёмник
 LiteralText,MIMIC,МИМИК
 LiteralText,mimicking,
-LiteralText,Mines,Копи
-LiteralText,Minetown,Шахтный город
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,
@@ -3528,7 +3497,6 @@ LiteralText,N/A,
 LiteralText,name,
 LiteralText,NAME,ИМЯ
 LiteralText,name?,
-LiteralText,Nethack Codex,Nethack Codex
 LiteralText,neutral,
 LiteralText,never,никогато
 LiteralText,no additional effects,без дополнительных эффектов
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,пронизывает
 LiteralText,per level,каждый уровень
 LiteralText,permanent,
 LiteralText,PERSONAL,ПЕРСОНАЛЬНЫЙ
-LiteralText,Pixel Sojourn,
 LiteralText,PLACE,ОТДАТЬ
 LiteralText,PLACE ALL,ОТДАТЬ ВСЁ
 LiteralText,platform,
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, капанми и подземными механизмами на простой двухкомнатной карте."
-LiteralText,Sandbox Play,Песочница
 LiteralText,SANITY CHECK,
 LiteralText,SAVE,ЗАПАЗИ
 LiteralText,SAVE & QUIT,ЗАПАЗИ И ВЫЙТИ
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,НАВЫКИ
 LiteralText,SLIDE,
 LiteralText,Slide which direction?,
 LiteralText,slower animations,
-LiteralText,Sokoban,Сокобан
 LiteralText,SONICS,
 LiteralText,"Sorry, this device is a bit too small :-(",
 LiteralText,SOUND BOARD,УПРАВЛЕНИЕ ЗВУКОМ
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,дверь с ловушкой
 LiteralText,TRIGGER,СРАБАТЫВАНИЕ
 LiteralText,trigger once,срабатывание один раз
 LiteralText,trigger unlimited times,срабатывание неШреканиченное количество раз
-LiteralText,trove,клад
 LiteralText,TUNNEL,ТОННЕЛЬ
 LiteralText,Tunnel which direction?,В каком направлении проложить тоннель?
 LiteralText,TURN-BASED,ПОШАГОВЫЙ
@@ -3799,10 +3762,6 @@ LiteralText,turns,ходы
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Введите любое слово или фразу, чтобы сгенерировать случайное семя подземелья."
 LiteralText,unable to load,не в состоянии загрузить
 LiteralText,UNDEAD,МЁРТВЫЙ
-LiteralText,Underbarracks,
-LiteralText,Underlimits,
-LiteralText,Underpeaks,
-LiteralText,Undertown,
 LiteralText,Undo,
 LiteralText,unidentified items,неопознанные вещи
 LiteralText,unique,уникальный
@@ -3894,6 +3853,50 @@ MaterialName,wax,воск
 MaterialName,wood,древесина
 MeasurementSystemName,imperial,имперская
 MeasurementSystemName,metric,метрическая
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Спуститесь в процедурно-сгенерированные подземелья и пещеры. Бесконечная реиграбельность, рекомендуется для новичков в Pathos."
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Виейдите за границы подземелий и приступайте к выполнению Квеста.
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, капанми и подземными механизмами на простой двухкомнатной карте."
+ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Nethack Codex,Nethack Codex
+ModuleName,Pixel Sojourn,
+ModuleName,Sandbox Play,Песочница
+ModuleTerm,Abyss,
+ModuleTerm,attic,чердак
+ModuleTerm,Black Market,
+ModuleTerm,caves,пещеры
+ModuleTerm,cellar,пШрекеб
+ModuleTerm,Deephall,
+ModuleTerm,Deepruins,
+ModuleTerm,Deepwilds,
+ModuleTerm,Dungeon,
+ModuleTerm,Elf Forest,
+ModuleTerm,Elf Kingdom,
+ModuleTerm,Elf Palace 1,
+ModuleTerm,Elf Palace 2,
+ModuleTerm,Elf Palace Vault,
+ModuleTerm,Elf Town,
+ModuleTerm,Elf Town Trove,
+ModuleTerm,Fort Ludios,Форт Лудиос
+ModuleTerm,Infernal Cage,
+ModuleTerm,Infernal Fields,
+ModuleTerm,Infernal Keep,
+ModuleTerm,Infernal Spire,
+ModuleTerm,Labyrinth,
+ModuleTerm,level//depth,
+ModuleTerm,Lich Tower,Башня Личей
+ModuleTerm,Lost Chambers,
+ModuleTerm,Ludios Cache,Тайник Лудиоса
+ModuleTerm,Medusa Lair,
+ModuleTerm,Mines,Копи
+ModuleTerm,Minetown,Шахтный город
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,Сокобан
+ModuleTerm,trove,клад
+ModuleTerm,Underbarracks,
+ModuleTerm,Underlimits,
+ModuleTerm,Underpeaks,
+ModuleTerm,Undertown,
 MotionPastName,anointed,помазал
 MotionPastName,ate,съел
 MotionPastName,captured,

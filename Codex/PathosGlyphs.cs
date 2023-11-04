@@ -118,6 +118,7 @@ namespace Pathos
 
       // Grounds.
       Register.Alias(dirt, "dirt floor"); // dirt is dirt, not a manufactured floor, you don't say 'grass floor'.
+      Register.Alias(stone_path, "stone corridor"); // renamed so it can be used outside of dungeon corridors.
 
       // Icons.
       Register.Alias(appetite, "apetite"); // typo fix.
@@ -852,6 +853,9 @@ namespace Pathos
     public readonly Glyph fairy_female_valkyrie;
     public readonly Glyph fairy_female_wizard;
 
+    // kobold.
+    public readonly Glyph kobold_male_knight;
+
     // giant.
     public readonly Glyph giant_male_barbarian;
     public readonly Glyph giant_male_bard;
@@ -994,6 +998,7 @@ namespace Pathos
     public readonly Glyph orc_female_wizard;
 
     // satyr.
+    public readonly Glyph satyr_male_barbarian;
     public readonly Glyph satyr_male_bard;
     public readonly Glyph satyr_male_caveman;
     public readonly Glyph satyr_male_convict;
@@ -1006,8 +1011,10 @@ namespace Pathos
     public readonly Glyph satyr_male_knight;
     public readonly Glyph satyr_male_paladin;
     public readonly Glyph satyr_male_pirate;
+    public readonly Glyph satyr_male_priest;
     public readonly Glyph satyr_male_ranger;
     public readonly Glyph satyr_male_reaver;
+    public readonly Glyph satyr_male_rogue;
     public readonly Glyph satyr_male_shaman;
     public readonly Glyph satyr_male_tinker;
     public readonly Glyph satyr_male_wizard;
@@ -1179,6 +1186,7 @@ namespace Pathos
     public readonly Glyph grass;
     public readonly Glyph moss;
     public readonly Glyph sand;
+    public readonly Glyph snow;
     public readonly Glyph grave;
     public readonly Glyph gold_dragon_scale_mail;
     public readonly Glyph gold_dragon_scales;
@@ -1790,7 +1798,7 @@ namespace Pathos
     public readonly Glyph mithril_golem;
     //public readonly Glyph stethoscope;
     public readonly Glyph stiletto;
-    public readonly Glyph stone_corridor;
+    public readonly Glyph stone_path;
     public readonly Glyph stone_floor;
     public readonly Glyph stone_giant;
     public readonly Glyph stone_golem;
@@ -2002,22 +2010,22 @@ namespace Pathos
     public readonly Glyph wolverine;
     public readonly Glyph wood_golem;
     public readonly Glyph wood_nymph;
-    //public readonly Glyph wood_panel_bottom_left_corner;
-    //public readonly Glyph wood_panel_bottom_right_corner;
-    //public readonly Glyph wood_panel_cross;
-    //public readonly Glyph wood_panel_end_down;
-    //public readonly Glyph wood_panel_end_left;
-    //public readonly Glyph wood_panel_end_right;
-    //public readonly Glyph wood_panel_end_up;
-    //public readonly Glyph wood_panel_horizontal;
-    //public readonly Glyph wood_panel_pillar;
-    //public readonly Glyph wood_panel_tee_down;
-    //public readonly Glyph wood_panel_tee_left;
-    //public readonly Glyph wood_panel_tee_right;
-    //public readonly Glyph wood_panel_tee_up;
-    //public readonly Glyph wood_panel_top_left_corner;
-    //public readonly Glyph wood_panel_top_right_corner;
-    //public readonly Glyph wood_panel_vertical;
+    public readonly Glyph wooden_wall_bottom_left_corner;
+    public readonly Glyph wooden_wall_bottom_right_corner;
+    public readonly Glyph wooden_wall_cross;
+    public readonly Glyph wooden_wall_end_down;
+    public readonly Glyph wooden_wall_end_left;
+    public readonly Glyph wooden_wall_end_right;
+    public readonly Glyph wooden_wall_end_up;
+    public readonly Glyph wooden_wall_horizontal;
+    public readonly Glyph wooden_wall_pillar;
+    public readonly Glyph wooden_wall_tee_down;
+    public readonly Glyph wooden_wall_tee_left;
+    public readonly Glyph wooden_wall_tee_right;
+    public readonly Glyph wooden_wall_tee_up;
+    public readonly Glyph wooden_wall_top_left_corner;
+    public readonly Glyph wooden_wall_top_right_corner;
+    public readonly Glyph wooden_wall_vertical;
     public readonly Glyph woodchuck;
     public readonly Glyph wooden_bridge_horizontal;
     public readonly Glyph wooden_bridge_vertical;

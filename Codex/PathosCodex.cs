@@ -535,6 +535,9 @@ namespace Pathos
           Record($"Item {Item.Name} is not a missile so must not be bundled.");
       }
 
+      if (!Manifest.Items.List.Any(I => I.Type == ItemType.Coin))
+        Record("At least one coin item must be declared.");
+
       foreach (var ItemGroup in Manifest.Items.List.Where(I => I.Series != null).GroupBy(I => I.Series))
       {
         var ItemTypeArray = ItemGroup.Select(I => I.Type).Distinct().ToArray();
@@ -611,8 +614,8 @@ namespace Pathos
         if (Entity.CorpseChance != Chance.Never && Entity.Figure.Material != Codex.Materials.animal && Entity.Figure.Material != Codex.Materials.vegetable)
           Record($"Entity {Entity.Name} has a corpse so must be animal or vegetable material.");
 
-        if (Entity.Immitation && !Entity.Figure.Has(Codex.Anatomies.voice))
-          Record($"Entity {Entity.Name} has immitation so it must have a voice.");
+        if (Entity.Imitation && !Entity.Figure.Has(Codex.Anatomies.voice))
+          Record($"Entity {Entity.Name} has imitation so it must have a voice.");
 
         if (Entity.IsUnique && !Entity.Startup.Resistances.Contains(Codex.Elements.magical))
           Record($"Entity {Entity.Name} must have magic resistance when it is marked as unique.");
@@ -785,6 +788,9 @@ namespace Pathos
 
         CheckLoot("Entity " + Entity.Name + " Drop Loot", Entity.DropLoot);
       }
+
+      if (!Manifest.Entities.List.Any(E => E.IsAnimate))
+        Record("At least one entity must be for animate objects.");
       #endregion
 
       #region Hordes.
@@ -1414,6 +1420,7 @@ namespace Pathos
       Base.Register<Diet>();
       Base.Register<Egg>();
       Base.Register<Element>();
+      Base.Register<Enchantment>();
       Base.Register<Encumbrance>();
       Base.Register<Engulf>();
       Base.Register<Engulfment>();

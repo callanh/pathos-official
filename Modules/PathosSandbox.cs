@@ -23,7 +23,10 @@ namespace Pathos
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.nethack_title);
+      AddTerms(new[] { Dungeon });
     }
+
+    public const string Dungeon = "Dungeon";
 
     public override void Execute(Generator Generator)
     {
@@ -40,10 +43,10 @@ namespace Pathos
       var SandboxGate = Codex.Gates.wooden_door;
       var SandboxBarrier = Codex.Barriers.stone_wall;
       var SandboxRoomGround = Codex.Grounds.stone_floor;
-      var SandboxCorridorGround = Codex.Grounds.stone_corridor;
+      var SandboxCorridorGround = Codex.Grounds.stone_path;
 
-      var SandboxSite = Adventure.World.AddSite("sandbox");
-      var SandboxMap = Adventure.World.AddMap("sandbox", SandboxWidth, SandboxHeight);
+      var SandboxSite = Adventure.World.AddSite(Generator.TranslatedModuleTerm(Dungeon));
+      var SandboxMap = Adventure.World.AddMap(Generator.TranslatedModuleTerm(Dungeon), SandboxWidth, SandboxHeight);
       SandboxMap.SetAtmosphere(Codex.Atmospheres.dungeon);
       SandboxMap.SetTerminal(true);
 
@@ -66,7 +69,7 @@ namespace Pathos
       foreach (var Stock in Codex.Stocks.List)
       {
         var StockSquare = SandboxMap[StockX, StockY];
-        foreach (var Item in Stock.Items.OrderByDescending(I => I.Name))
+        foreach (var Item in Stock.Items.OrderByDescending(I => I.Name).Where(I => !Generator.Adventure.Abolition || !I.IsAbolitionCandidate()))
           Generator.PlaceSpecificAsset(StockSquare, Item);
 
         StockX++;

@@ -52,6 +52,7 @@ namespace Pathos
       berserking = AddProperty("berserking", P =>
       {
         P.Description = "You feel unstable like you could be consumed with rage at any time.";
+        P.Unwanted = true;
         P.SetSymptom(Chance.OneIn85, S =>
         {
           S.UnlessTargetHasProperty(rage, U =>

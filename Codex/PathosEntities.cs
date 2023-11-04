@@ -3402,7 +3402,7 @@ namespace Pathos
         E.Challenge = 53;
         E.Difficulty = 9;
         E.Frequency = 1;
-        E.Immitation = true; // imitate other monsters.
+        E.Imitation = true; // imitate other monsters.
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -16628,7 +16628,7 @@ namespace Pathos
         E.Challenge = 129;
         E.Difficulty = 10;
         E.Frequency = 1;
-        E.Immitation = true; // imitate other monsters when bored.
+        E.Imitation = true; // imitate other monsters when bored.
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -33568,6 +33568,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();
+        E.SetConcealment(Codex.Barriers.tree);
         E.Chemistry.SetWeakness(Elements.fire);
         E.Startup.SetSkill(Qualifications.proficient, Skills.sling);
         E.Startup.SetTalent(Properties.searching, Properties.see_invisible);

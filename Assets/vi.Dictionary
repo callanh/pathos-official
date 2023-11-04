@@ -460,6 +460,7 @@ BarrierName,jade wall,tường lục bảo
 BarrierName,shroom,nấm
 BarrierName,stone wall,tường đá
 BarrierName,tree,cây
+BarrierName,wooden wall,
 BeamName,acid,axít
 BeamName,cold,lạnh
 BeamName,death,cái chết
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName} {FixtureName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} với {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} với {With:AssetName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName} đến hầm ngục {MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} đến hầm ngục {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} {MotionPastName} {AssetName} một cách khéo léo
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} dùng {Use:AssetName} với {With:AssetName} một cách khéo léo
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} lên cấp {LevelNumber}
@@ -2177,8 +2178,9 @@ GroundName,metal floor,sàn kim loại
 GroundName,moss,mốc
 GroundName,obsidian floor,sàn hắc diện thạch
 GroundName,sand,cát
-GroundName,stone corridor,hành lang đá
+GroundName,snow,
 GroundName,stone floor,sàn đá
+GroundName,stone path,hành lang đá
 GroundName,water,nước
 GroundName,wooden floor,sàn gỗ
 HordeName,ant,bầy kiến
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[TỰ DO]
 LiteralText,abolition of firearms,sự loại bỏ các loại súng
 LiteralText,ABOUT,GIỚI THIỆU
 LiteralText,About Pathos,Giới thiệu về Pathos
-LiteralText,Abyss,Vực thẳm
 LiteralText,accelerated resting,tăng tốc thời gian nghỉ
 LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,ĐÒN ĐÁNH
 LiteralText,attack//verb,tấn công
 LiteralText,ATTACK//verb,TẤN CÔNG
 LiteralText,attacks,các đòn đánh
-LiteralText,attic,gác xép
 LiteralText,attributes,các thuộc tính
 LiteralText,AUTO,TỰ ĐỘNG
 LiteralText,auto saving,TỰ ĐỘNG SAO LƯU
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,Bắt đầu chuyến phiêu lưu
 LiteralText,beholds,hãy nhìn đây
 LiteralText,beta discussions,thảo luận về bản beta
 LiteralText,Black background,Hình nền màu đen
-LiteralText,Black Market,Chợ đen
 LiteralText,blasphemy,phỉ báng
 LiteralText,BLINK,NHẤP NHÁY
 LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,KHÔNG THỂ CHUYỂN ĐỘNG TỪ XA
 LiteralText,CAN'T THROW,KHÔNG THỂ NÉM
 LiteralText,Cast,Niệm phép
 LiteralText,CAST SPELLS,NIỆM PHÉP
-LiteralText,caves,hang
-LiteralText,cellar,trần nhà
 LiteralText,challenge,thử thách
 LiteralText,CHAMPION,NHÀ VÔ ĐỊCH
 LiteralText,Character,Nhân vật
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,chặt đầu
 LiteralText,DECEASED,NGƯỜI CHẾT
 LiteralText,decelerated real-time,giảm tốc độ thời gian thực
 LiteralText,DECREASE,GIẢM
-LiteralText,Deephall,sảnh sâu
-LiteralText,Deepruins,tàn tích sâu
-LiteralText,Deepwilds,rừng hoang dã sâu
 LiteralText,defence,phòng thủ
 LiteralText,DEFENCE,PHÒNG THỦ
 LiteralText,degrade quality,chất lượng xuống cấp
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,XÓA
 LiteralText,delete this level,xóa cấp độ này
 LiteralText,DEMOTE,GIÁNG CẤP
 LiteralText,depth,tầng
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Đi sâu vào những hầm ngục và hang động được tạo ngẫu nhiên. Cho bạn trải nghiệm chơi lại vô hạn và được đề xuất cho những người mới chơi Pathos.
 LiteralText,DESCEND TO NEXT LEVEL,ĐI XUỐNG TẦNG TIẾP THEO
 LiteralText,destination,đích đến
 LiteralText,DESTROY,PHÁ HỦY
 LiteralText,determined by player level,được đánh giá bởi cấp độ người chơi
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY
-LiteralText,Dhak Legacy,Di sản nhà Dhak
 LiteralText,DIAGNOSTICS,BỘ CHẨN ĐOÁN
 LiteralText,DID NOT RANK,KHÔNG XẾP HẠNG
 LiteralText,diet,chế độ ăn
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,đang tải bản cập nhật
 LiteralText,drop,thả
 LiteralText,DROP,THẢ
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
-LiteralText,Dungeon,Hầm ngục
 LiteralText,duration,thời lượng
 LiteralText,edible items,vật phẩm ăn được
 LiteralText,egg,trứng
-LiteralText,Elf Forest,Rừng Elf
-LiteralText,Elf Kingdom,Vương quốc Elf
-LiteralText,Elf Palace 1,Dinh thự Elf số 1
-LiteralText,Elf Palace 2,Dinh thự Elf số 2
-LiteralText,Elf Palace Vault,Hầm dinh thự Elf
-LiteralText,Elf Town,Thi trấn Elf
-LiteralText,Elf Town Trove,Kho báu của thi trấn Elf
 LiteralText,else,nếu khác
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Bật tụ động lưu
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,SỦI BỌT
 LiteralText,Floor,Sàn nhà
 LiteralText,FOLLOW,ĐI THEO
 LiteralText,Follow me on Twitter,Theo dõi tôi trên twitter
-LiteralText,Fort Ludios,Pháo đài Ludios
 LiteralText,free panning mode,chế độ lia máy tự do
 LiteralText,fright,sợ hãi
 LiteralText,fumbling,hậu đậu
@@ -3404,7 +3387,6 @@ LiteralText,ground,sàn
 LiteralText,GROUNDS,SÀN
 LiteralText,GUIDES,HƯỚNG DẪN
 LiteralText,HALL of FAME,SẢNH DANH VỌNG
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 LiteralText,hatched by,được ấp bởi
 LiteralText,Having trouble finding the stairs down to the next level?,Bạn đang gặp khó khăn trong việc tìm đường xuống tầng tiếp theo?
 LiteralText,Help,trợ giúp
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,nhốt
 LiteralText,INCREASE,TĂNG
 LiteralText,INDEX,TỪ ĐIỂN
 LiteralText,individual crafting,chế tạo lẻ
-LiteralText,Infernal Cage,Lồng Infernal
-LiteralText,Infernal Fields,Sàn Infernal
-LiteralText,Infernal Keep,Nông trại Infernal
-LiteralText,Infernal Spire,Tháp ngọn Infernal
 LiteralText,infinite quantity,số lượng vô hạn
 LiteralText,influenced actions,những hành động liên quan
 LiteralText,INSCRIBE,GHI
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,khắc chữ gì?
 LiteralText,instruct each character,hướng dẫn từng nhân vật
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
 LiteralText,insulation,cô lập
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 LiteralText,Inventory,Túi đồ
 LiteralText,INVENTORY,TÚI ĐỒ
 LiteralText,ITEM,VẬT PHẨM
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,ĐÁ!
 LiteralText,kills,số mạng đã giết
 LiteralText,kit,trang bị
 LiteralText,KNOWLEDGE,KIẾN THỨC ĐÃ HỌC
-LiteralText,Labyrinth,Mê cung
 LiteralText,LANGUAGE,NGÔN NGỮ
 LiteralText,LEARN ALL SPELLS,HỌC TẤT CẢ PHÉP THUẬT
 LiteralText,learn spells,học phép thuật
 LiteralText,LEFT RING,NHẪN TRÁI
 LiteralText,LEVEL CHART,BẢNG CẤP ĐỘ
-LiteralText,level//depth,tầng
 LiteralText,level//rank,cấp độ
-LiteralText,Lich Tower,Tòa tháp Vu Yêu
 LiteralText,life,sinh mệnh
 LiteralText,LIFE,SINH MỆNH
 LiteralText,Life represents your physical health and death occurs at zero.,Sinh mệnh đại diện cho HP của bạn và bạn sẽ chết khi nó xuống 0.
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,GIẢM NGHIỆP CHƯỚNG
 LiteralText,LOSE LEVEL,GIẨM CẤP ĐỘ
 LiteralText,LOSE NUTRITION,GIẢM DINH DƯỠNG
 LiteralText,lose skill,mất kĩ năng
-LiteralText,Lost Chambers,Căn phòng lãng quên
 LiteralText,LOW MANA,năng lượng thấp
-LiteralText,Ludios Cache,Hầm trữ Ludios
 LiteralText,MAIN WIELD,VŨ KHÍ CHÍNH
 LiteralText,mana,năng lượng
 LiteralText,MANA,NĂNG LƯỢNG
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,Năng lượn
 LiteralText,Map,Bản đồ
 LiteralText,MAP,BẢN ĐỒ
 LiteralText,material,vật liệu
-LiteralText,Medusa Lair,Hang ổ Medusa
 LiteralText,melting,tan chảy
 LiteralText,MENU,MENU
 LiteralText,mercenary,lính đánh thuê
 LiteralText,MIMIC,GIẢ DẠNG
 LiteralText,mimicking,đang giả dạng
-LiteralText,Mines,mìn
-LiteralText,Minetown,thi trấn Mine
 LiteralText,modifier,cấp số nhân
 LiteralText,MOUNT,CƯỠI
 LiteralText,Mount which direction?,Cưỡi hướng nào?
@@ -3528,7 +3497,6 @@ LiteralText,N/A,N/A
 LiteralText,name,tên
 LiteralText,NAME,TÊN
 LiteralText,name?,tên?
-LiteralText,Nethack Codex,Nethack Codex
 LiteralText,neutral,trung lập
 LiteralText,never,không bao giờ
 LiteralText,no additional effects,không có hiệu ứng phụ
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,xuyên giáp
 LiteralText,per level,mỗi cấp độ
 LiteralText,permanent,vĩnh viễn
 LiteralText,PERSONAL,CÁ NHÂN
-LiteralText,Pixel Sojourn,Pixel Sojourn
 LiteralText,PLACE,ĐẶT
 LiteralText,PLACE ALL,ĐẶT TẤT CẢ
 LiteralText,platform,nền tảng
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
 LiteralText,ROTATE,XOAY
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
-LiteralText,Sandbox Play,Chế độ sáng tạo
 LiteralText,SANITY CHECK,ĐIỂM MINH MẪN
 LiteralText,SAVE,LƯU
 LiteralText,SAVE & QUIT,LƯU & THOÁT
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,KỸ NĂNG
 LiteralText,SLIDE,TRƯỢT
 LiteralText,Slide which direction?,Trượt về hướng nào
 LiteralText,slower animations,hoạt ảnh chậm hơn
-LiteralText,Sokoban,Sokoban
 LiteralText,SONICS,ÂM THANH
 LiteralText,"Sorry, this device is a bit too small :-(","Xin lỗi, hình như thiết bị này có vẻ hơi nhỏ để chơi nhiều người .-."
 LiteralText,SOUND BOARD,BẢNG ÂM THANH
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,cửa gài bẫy
 LiteralText,TRIGGER,KÍCH HOẠT
 LiteralText,trigger once,kích hoạt 1 lần
 LiteralText,trigger unlimited times,kích hoạt vô hạn lần
-LiteralText,trove,kho báu
 LiteralText,TUNNEL,ĐÀO ĐƯỜNG
 LiteralText,Tunnel which direction?,Đào hướng nào?
 LiteralText,TURN-BASED,THEO LƯỢT
@@ -3799,10 +3762,6 @@ LiteralText,turns,lượt
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Điền từ hoặc câu nào đó để tạo hạt giống ngẫu nhiên.
 LiteralText,unable to load,không thể tải
 LiteralText,UNDEAD,THÂY MA
-LiteralText,Underbarracks,Underbarracks
-LiteralText,Underlimits,Underlimits
-LiteralText,Underpeaks,Underpeaks
-LiteralText,Undertown,Undertown
 LiteralText,Undo,Hoàn tác
 LiteralText,unidentified items,vật phẩm chưa định danh
 LiteralText,unique,độc nhất
@@ -3894,6 +3853,50 @@ MaterialName,wax,sáp
 MaterialName,wood,gỗ
 MeasurementSystemName,imperial,hệ đo lường Anh
 MeasurementSystemName,metric,hệ đo lường mét
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Đi sâu vào những hầm ngục và hang động được tạo ngẫu nhiên. Cho bạn trải nghiệm chơi lại vô hạn và được đề xuất cho những người mới chơi Pathos.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
+ModuleName,Dhak Legacy,Di sản nhà Dhak
+ModuleName,Nethack Codex,Nethack Codex
+ModuleName,Pixel Sojourn,Pixel Sojourn
+ModuleName,Sandbox Play,Chế độ sáng tạo
+ModuleTerm,Abyss,Vực thẳm
+ModuleTerm,attic,gác xép
+ModuleTerm,Black Market,Chợ đen
+ModuleTerm,caves,hang
+ModuleTerm,cellar,trần nhà
+ModuleTerm,Deephall,sảnh sâu
+ModuleTerm,Deepruins,tàn tích sâu
+ModuleTerm,Deepwilds,rừng hoang dã sâu
+ModuleTerm,Dungeon,Hầm ngục
+ModuleTerm,Elf Forest,Rừng Elf
+ModuleTerm,Elf Kingdom,Vương quốc Elf
+ModuleTerm,Elf Palace 1,Dinh thự Elf số 1
+ModuleTerm,Elf Palace 2,Dinh thự Elf số 2
+ModuleTerm,Elf Palace Vault,Hầm dinh thự Elf
+ModuleTerm,Elf Town,Thi trấn Elf
+ModuleTerm,Elf Town Trove,Kho báu của thi trấn Elf
+ModuleTerm,Fort Ludios,Pháo đài Ludios
+ModuleTerm,Infernal Cage,Lồng Infernal
+ModuleTerm,Infernal Fields,Sàn Infernal
+ModuleTerm,Infernal Keep,Nông trại Infernal
+ModuleTerm,Infernal Spire,Tháp ngọn Infernal
+ModuleTerm,Labyrinth,Mê cung
+ModuleTerm,level//depth,tầng
+ModuleTerm,Lich Tower,Tòa tháp Vu Yêu
+ModuleTerm,Lost Chambers,Căn phòng lãng quên
+ModuleTerm,Ludios Cache,Hầm trữ Ludios
+ModuleTerm,Medusa Lair,Hang ổ Medusa
+ModuleTerm,Mines,mìn
+ModuleTerm,Minetown,thi trấn Mine
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,Sokoban
+ModuleTerm,trove,kho báu
+ModuleTerm,Underbarracks,Underbarracks
+ModuleTerm,Underlimits,Underlimits
+ModuleTerm,Underpeaks,Underpeaks
+ModuleTerm,Undertown,Undertown
 MotionPastName,anointed,đã bôi
 MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt

@@ -460,6 +460,7 @@ BarrierName,jade wall,yeşimtaşı duvar
 BarrierName,shroom,
 BarrierName,stone wall,taş duvar
 BarrierName,tree,ağaç
+BarrierName,wooden wall,
 BeamName,acid,asit
 BeamName,cold,soğuk
 BeamName,death,ölüm
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {FixtureName} 'ı {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {Use:AssetName} ile {With:AssetName} {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {Use:FixtureName} ile {With:AssetName} 'ı {MotionPastName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {MapName} zindanına {TraversalPastName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {MapName} zindanına {TraversalPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} seviye {LevelNumber} oldu
@@ -2177,8 +2178,9 @@ GroundName,metal floor,
 GroundName,moss,
 GroundName,obsidian floor,obsidyen zemin
 GroundName,sand,
-GroundName,stone corridor,taş koridor
+GroundName,snow,
 GroundName,stone floor,taş zemin
+GroundName,stone path,taş koridor
 GroundName,water,su
 GroundName,wooden floor,
 HordeName,ant,karınca
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[USTA]
 LiteralText,abolition of firearms,ateşli silah yasağı
 LiteralText,ABOUT,HAKKINDA
 LiteralText,About Pathos,Pathos hakkında
-LiteralText,Abyss,boşluk
 LiteralText,accelerated resting,hızlandırılmış dinlenme
 LiteralText,actions,aksiyon
 LiteralText,ADD LEVEL,SEVİYE EKLE
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,SALDIR
 LiteralText,attack//verb,saldır
 LiteralText,ATTACK//verb,SALDIR
 LiteralText,attacks,saldırılar
-LiteralText,attic,tavanarası
 LiteralText,attributes,özellikler
 LiteralText,AUTO,OTOMATİK
 LiteralText,auto saving,otomatik kayıt
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,Macerayı başlat
 LiteralText,beholds,baktı
 LiteralText,beta discussions,beta muhabbeti
 LiteralText,Black background,Siyah arkaplan
-LiteralText,Black Market,kara borsa
 LiteralText,blasphemy,kafirlik
 LiteralText,BLINK,SIÇRA
 LiteralText,Blink which direction?,Hangi yöne sıçra?
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,FIRLATILAMAZ
 LiteralText,Cast,Kullan
 LiteralText,CAST SPELLS,büyü kullan
-LiteralText,caves,mağaralar
-LiteralText,cellar,bodrum
 LiteralText,challenge,meydan okuma
 LiteralText,CHAMPION,ŞAMPİYON
 LiteralText,Character,Karakter
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,uzuv kaybı
 LiteralText,DECEASED,ÖLÜ
 LiteralText,decelerated real-time,gerçek zamana yavaşlatıldı
 LiteralText,DECREASE,AZALT
-LiteralText,Deephall,
-LiteralText,Deepruins,
-LiteralText,Deepwilds,
 LiteralText,defence,savunma
 LiteralText,DEFENCE,SAVUNMA
 LiteralText,degrade quality,kalitesini düşür
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,SİL
 LiteralText,delete this level,bu katı sil
 LiteralText,DEMOTE,PATLAT
 LiteralText,depth,derinlik
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Prosedürlerle oluşturulan zindanlara ve mağaralara in. sonsuz tekrar oynama potansiyeline sahip ve Pathosun acemi oyunularına önerilir.
 LiteralText,DESCEND TO NEXT LEVEL,BİR SONRAKİ SEVİYEYE İN
 LiteralText,destination,hedef
 LiteralText,DESTROY,YOK ET
 LiteralText,determined by player level,oyuncu tarafından belirlenmiş
 LiteralText,device,cihaz
 LiteralText,DEVICES,ALETLER
-LiteralText,Dhak Legacy,Dhak Mirası
 LiteralText,DIAGNOSTICS,TEŞHİS
 LiteralText,DID NOT RANK,SIRAYA ALINMADI
 LiteralText,diet,diyet
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,güncelleme indiriliyor
 LiteralText,drop,bırak
 LiteralText,DROP,BIRAK
 LiteralText,DUAL WIELD,ÇİFT ELLE KULLAN
-LiteralText,Dungeon,Zindan
 LiteralText,duration,Süre
 LiteralText,edible items,Yiyilebilir eşyalar
 LiteralText,egg,yumurta
-LiteralText,Elf Forest,Elf ormanı
-LiteralText,Elf Kingdom,Elf krallığı
-LiteralText,Elf Palace 1,Elf sarayı 1
-LiteralText,Elf Palace 2,Elf sarayı 2
-LiteralText,Elf Palace Vault,Elf saray mahzeni
-LiteralText,Elf Town,Elf kasabası
-LiteralText,Elf Town Trove,Elf kasaba hazinesi
 LiteralText,else,başka
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Otomatik kaydetmeyi aç
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,KÖPÜRME
 LiteralText,Floor,Zemin
 LiteralText,FOLLOW,TAKİP ET
 LiteralText,Follow me on Twitter,Twitter'da beni takip et
-LiteralText,Fort Ludios,Ludios Kalesi
 LiteralText,free panning mode,serbest kamera modu
 LiteralText,fright,korkut
 LiteralText,fumbling,sakarlık
@@ -3404,7 +3387,6 @@ LiteralText,ground,yer
 LiteralText,GROUNDS,YER
 LiteralText,GUIDES,REHBERLER
 LiteralText,HALL of FAME,ŞAN SALONU
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Dağlardan ovalardan geçen el yapımı bir macera. Zindanın limitlerinden kurtul ve zorlayıcı bir maceraya atıl.
 LiteralText,hatched by,yumurtadan çıkaran
 LiteralText,Having trouble finding the stairs down to the next level?,Bir sonraki seviyeye ulaşmakta zorluk mu çekiyorsun?
 LiteralText,Help,Yardım
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,hapsetme
 LiteralText,INCREASE,ARTIR
 LiteralText,INDEX,INDEKS
 LiteralText,individual crafting,tekli oluştur
-LiteralText,Infernal Cage,
-LiteralText,Infernal Fields,
-LiteralText,Infernal Keep,
-LiteralText,Infernal Spire,
 LiteralText,infinite quantity,
 LiteralText,influenced actions,destekli hareketler
 LiteralText,INSCRIBE,
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
 LiteralText,insulation,yalıtım
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 LiteralText,Inventory,
 LiteralText,INVENTORY,ENVANTER
 LiteralText,ITEM,
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,TEKMELE!
 LiteralText,kills,leşler
 LiteralText,kit,malzeme
 LiteralText,KNOWLEDGE,BİLGİ
-LiteralText,Labyrinth,
 LiteralText,LANGUAGE,
 LiteralText,LEARN ALL SPELLS,
 LiteralText,learn spells,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,SEVİYE TAHTASI
-LiteralText,level//depth,seviye
 LiteralText,level//rank,seviye
-LiteralText,Lich Tower,Liş Kulesi
 LiteralText,life,hayat
 LiteralText,LIFE,HAYAT
 LiteralText,Life represents your physical health and death occurs at zero.,
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,KARMA KAYBET
 LiteralText,LOSE LEVEL,SEVİYE KAYBET
 LiteralText,LOSE NUTRITION,BESİN KAYBET
 LiteralText,lose skill,
-LiteralText,Lost Chambers,
 LiteralText,LOW MANA,DÜŞÜK MANA
-LiteralText,Ludios Cache,Ludios Kayıtı
 LiteralText,MAIN WIELD,ANA SİLAH OLARAK KULLAN
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,HARİTA
 LiteralText,material,
-LiteralText,Medusa Lair,Medusanın ini
 LiteralText,melting,
 LiteralText,MENU,
 LiteralText,mercenary,paralı asker
 LiteralText,MIMIC,MİMİK
 LiteralText,mimicking,
-LiteralText,Mines,Madenler
-LiteralText,Minetown,Maden Şehri
 LiteralText,modifier,düzenleyici
 LiteralText,MOUNT,BİN
 LiteralText,Mount which direction?,
@@ -3528,7 +3497,6 @@ LiteralText,N/A,BİLİNMEYEN
 LiteralText,name,
 LiteralText,NAME,İSİMLENDİR
 LiteralText,name?,
-LiteralText,Nethack Codex,Nethack Kodeksi
 LiteralText,neutral,
 LiteralText,never,asla
 LiteralText,no additional effects,yan etki yok
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,delip geçer
 LiteralText,per level,seviye başına
 LiteralText,permanent,
 LiteralText,PERSONAL,KİŞİSEL
-LiteralText,Pixel Sojourn,
 LiteralText,PLACE,YERLEŞTİR
 LiteralText,PLACE ALL,HEPSİNİ YERLEŞTİR
 LiteralText,platform,
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,GERİ AL
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
-LiteralText,Sandbox Play,Kum Havuzu
 LiteralText,SANITY CHECK,RUH SAĞLIĞI KONTROLÜ
 LiteralText,SAVE,KAYDET
 LiteralText,SAVE & QUIT,KAYDET & ÇIK
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,BECERİLER
 LiteralText,SLIDE,
 LiteralText,Slide which direction?,
 LiteralText,slower animations,
-LiteralText,Sokoban,Sokoban
 LiteralText,SONICS,
 LiteralText,"Sorry, this device is a bit too small :-(",
 LiteralText,SOUND BOARD,SES TAHTASI
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,tuzaklı kapı
 LiteralText,TRIGGER,TETİK
 LiteralText,trigger once,tetik bir kere
 LiteralText,trigger unlimited times,tetik sınırsız eşyalar
-LiteralText,trove,define
 LiteralText,TUNNEL,TÜNEL
 LiteralText,Tunnel which direction?,Hangi yöne kaz?
 LiteralText,TURN-BASED,SIRA-BAZLI
@@ -3799,10 +3762,6 @@ LiteralText,turns,sıralar
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Rastgele bir zindan tohum kodu oluşturmak için istediğin bir kelime yada cümleyi gir.
 LiteralText,unable to load,yüklenemiyor
 LiteralText,UNDEAD,YÜRÜYEN ÖLÜYKEN
-LiteralText,Underbarracks,
-LiteralText,Underlimits,
-LiteralText,Underpeaks,
-LiteralText,Undertown,
 LiteralText,Undo,
 LiteralText,unidentified items,tanımlanamayan eşyalar
 LiteralText,unique,eşsiz
@@ -3894,6 +3853,50 @@ MaterialName,wax,balmumu
 MaterialName,wood,tahta
 MeasurementSystemName,imperial,emperyal
 MeasurementSystemName,metric,metrik
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Prosedürlerle oluşturulan zindanlara ve mağaralara in. sonsuz tekrar oynama potansiyeline sahip ve Pathosun acemi oyunularına önerilir.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Dağlardan ovalardan geçen el yapımı bir macera. Zindanın limitlerinden kurtul ve zorlayıcı bir maceraya atıl.
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
+ModuleName,Dhak Legacy,Dhak Mirası
+ModuleName,Nethack Codex,Nethack Kodeksi
+ModuleName,Pixel Sojourn,
+ModuleName,Sandbox Play,Kum Havuzu
+ModuleTerm,Abyss,boşluk
+ModuleTerm,attic,tavanarası
+ModuleTerm,Black Market,kara borsa
+ModuleTerm,caves,mağaralar
+ModuleTerm,cellar,bodrum
+ModuleTerm,Deephall,
+ModuleTerm,Deepruins,
+ModuleTerm,Deepwilds,
+ModuleTerm,Dungeon,Zindan
+ModuleTerm,Elf Forest,Elf ormanı
+ModuleTerm,Elf Kingdom,Elf krallığı
+ModuleTerm,Elf Palace 1,Elf sarayı 1
+ModuleTerm,Elf Palace 2,Elf sarayı 2
+ModuleTerm,Elf Palace Vault,Elf saray mahzeni
+ModuleTerm,Elf Town,Elf kasabası
+ModuleTerm,Elf Town Trove,Elf kasaba hazinesi
+ModuleTerm,Fort Ludios,Ludios Kalesi
+ModuleTerm,Infernal Cage,
+ModuleTerm,Infernal Fields,
+ModuleTerm,Infernal Keep,
+ModuleTerm,Infernal Spire,
+ModuleTerm,Labyrinth,
+ModuleTerm,level//depth,seviye
+ModuleTerm,Lich Tower,Liş Kulesi
+ModuleTerm,Lost Chambers,
+ModuleTerm,Ludios Cache,Ludios Kayıtı
+ModuleTerm,Medusa Lair,Medusanın ini
+ModuleTerm,Mines,Madenler
+ModuleTerm,Minetown,Maden Şehri
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,Sokoban
+ModuleTerm,trove,define
+ModuleTerm,Underbarracks,
+ModuleTerm,Underlimits,
+ModuleTerm,Underpeaks,
+ModuleTerm,Undertown,
 MotionPastName,anointed,yağladı
 MotionPastName,ate,yedi
 MotionPastName,captured,

@@ -79,6 +79,8 @@ namespace Pathos
       {
         G.Description = null;
 
+        G.AddReaction(Chance.OneIn5, Elements.shock, A => A.CreateSpill(Volatiles.electricity, 1.d100() + 100)); // gold is highly conductive.
+
         G.SetBlock(Codex.Blocks.gold_boulder);
       });
 
@@ -98,7 +100,7 @@ namespace Pathos
         G.SetBlock(Codex.Blocks.wooden_barrel);
       });
 
-      stone_corridor = AddGround("stone corridor", Materials.stone, Glyphs.stone_corridor, G =>
+      stone_path = AddGround("stone path", Materials.stone, Glyphs.stone_path, G =>
       {
         G.Description = null;
 
@@ -124,6 +126,15 @@ namespace Pathos
         G.Description = null;
 
         G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      snow = AddGround("snow", Materials.ice, Glyphs.snow, G =>
+      {
+        G.Description = null;
+
+        G.SetBlock(Codex.Blocks.stone_boulder);
+
+        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: snow, ToGround: dirt, Locality.Square));
       });
 
       hive_floor = AddGround("hive floor", Materials.stone, Glyphs.hive_floor, G =>
@@ -209,7 +220,7 @@ namespace Pathos
 
       // renames.
       Register.Alias(dirt, "dirt floor");
-      //Register.Alias(stone_path, "stone corridor"); // TODO: rename?
+      Register.Alias(stone_path, "stone corridor");
     }
 #endif
 
@@ -227,8 +238,9 @@ namespace Pathos
     public readonly Ground obsidian_floor;
     public readonly Ground cave_floor;
     public readonly Ground stone_floor;
-    public readonly Ground stone_corridor;
+    public readonly Ground stone_path;
     public readonly Ground sand;
+    public readonly Ground snow;
     public readonly Ground water;
     public readonly Ground wooden_floor;
   }

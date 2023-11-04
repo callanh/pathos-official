@@ -56,7 +56,7 @@ namespace Pathos
         B.Description = null;
       });
 
-      cave_wall = AddBarrier("cave wall", Materials.clay, Grounds.dirt, Glyph: null, Opaque: true, B =>
+      cave_wall = AddBarrier("cave wall", Materials.clay, Grounds.cave_floor, Glyph: null, Opaque: true, B =>
       {
         B.Description = null;
       });
@@ -76,10 +76,10 @@ namespace Pathos
         B.Description = null;
       });
 
-      //wood_panel = AddBarrier("wood panel", Materials.Wood, Grounds.stone_floor, Glyph: null, B =>
-      //{
-      //  B.Description = null;
-      //});
+      wooden_wall = AddBarrier("wooden wall", Materials.wood, Grounds.wooden_floor, Glyph: null, Opaque: true, B =>
+      {
+        B.Description = null;
+      });
     }
 #endif
 
@@ -90,6 +90,6 @@ namespace Pathos
     public readonly Barrier jade_wall;
     public readonly Barrier hell_brick;
     public readonly Barrier stone_wall;
-  //public readonly Barrier wood_panel;
+    public readonly Barrier wooden_wall;
   }
 }

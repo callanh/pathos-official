@@ -20,6 +20,10 @@ namespace Pathos
         public static Inv.DistinctList<SPDMap> maps;
         public static SPDMap currentmap;
         public static SPDMap previousmap;
+
+        public const string level_depth = "level//depth";
+
+        public static string CurrentLevelName() => generator.TranslatedModuleTerm(level_depth) + " " + currentmap.depth;
         
         private static string FilePath = "";
         private static string DebugContent = "";

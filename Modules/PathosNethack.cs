@@ -26,7 +26,7 @@ namespace Pathos
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.nethack_title);
-      AddTerms(NethackNames.All);
+      AddTerms(NethackTerms.List);
     }
 
     public override void Execute(Generator Generator)
@@ -37,20 +37,24 @@ namespace Pathos
     private readonly Codex Codex;
   }
 
-  internal static class NethackNames
+  internal static class NethackTerms
   {
-    static NethackNames()
+    static NethackTerms()
     {
-      var NethackNamesType = typeof(NethackNames);
+      var NethackNamesType = typeof(NethackTerms);
+
+      var NethackNamesList = new Inv.DistinctList<string>();
 
       foreach (var FieldInfo in NethackNamesType.GetReflectionFields())
       {
         if (FieldInfo.IsStatic && FieldInfo.IsPublic && FieldInfo.FieldType == typeof(string))
-          All.Add((string)FieldInfo.GetValue(NethackNamesType));
+          NethackNamesList.Add((string)FieldInfo.GetValue(NethackNamesType));
       }
+
+      List = NethackNamesList;
     }
 
-    public static readonly Inv.DistinctList<string> All = new Inv.DistinctList<string>();
+    public static readonly IReadOnlyList<string> List;
     public const string Dungeon = "Dungeon";
     public const string Minetown = "Minetown";
     public const string Mines = "Mines";
@@ -127,7 +131,7 @@ namespace Pathos
       const int FinaleWidth = 60;
       const int FinaleHeight = 60;
 
-      var Site = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Dungeon));
+      var Site = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Dungeon));
 
       var Portals = Codex.Portals;
 
@@ -195,7 +199,7 @@ namespace Pathos
         DebugStart();
         DebugWrite("Level " + LevelIndex.ToString("00"));
 
-        var LevelName = Generator.EscapeTranslatedName(NethackNames.level) + " " + LevelIndex;
+        var LevelName = Generator.TranslatedModuleTerm(NethackTerms.level) + " " + LevelIndex;
 
         Level Level;
         DungeonPlan Plan;
@@ -289,7 +293,7 @@ namespace Pathos
       var CastleBarrier = Codex.Barriers.stone_wall;
       var CastleGate = Codex.Gates.wooden_door;
       var CastleRoomGround = Codex.Grounds.stone_floor;
-      var CastleCorridorGround = Codex.Grounds.stone_corridor;
+      var CastleCorridorGround = Codex.Grounds.stone_path;
 
       var CastleMap = CastleLevel.Map;
       CastleMap.SetAtmosphere(Codex.Atmospheres.dungeon);
@@ -630,7 +634,7 @@ namespace Pathos
       {
         var FloorSquareList = Room.GetFloorSquares().ToDistinctList();
 
-        CreateRoomFeatures(FloorSquareList);
+        Generator.PlaceRoomFixtures(FloorSquareList);
 
         CreateRoomDetails(CastleMap, CastleBlock, FloorSquareList);
       }
@@ -752,7 +756,7 @@ namespace Pathos
         var FloorSquareList = CavernRoom.GetFloorSquares().ToDistinctList();
 
         if (FeaturesChance.Hit())
-          CreateRoomFeatures(FloorSquareList);
+          Generator.PlaceRoomFixtures(FloorSquareList);
 
         CreateRoomDetails(CavernMap, CavernBlock, FloorSquareList);
       }
@@ -972,7 +976,7 @@ namespace Pathos
         var FloorSquareList = NetherZone.Squares.ToDistinctList();
 
         if (Chance.OneIn10.Hit())
-          CreateRoomFeatures(FloorSquareList);
+          Generator.PlaceRoomFixtures(FloorSquareList);
 
         if (Chance.OneIn2.Hit())
           CreateRoomDetails(NetherMap, NetherBlock, FloorSquareList);
@@ -1033,7 +1037,7 @@ namespace Pathos
               case 1:
                 // coins.
                 foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
-                  DropCoins(FinalSquare, Generator.RandomCoinQuantity(FinalSquare) * 1.d10().Roll());
+                  Generator.DropCoins(FinalSquare, Generator.RandomCoinQuantity(FinalSquare) * 1.d10().Roll());
                 break;
 
               case 2:
@@ -1525,7 +1529,7 @@ namespace Pathos
     {
       var SourceMap = SourceRoom.Map;
 
-      var AtticMapName = SourceMap.Name + " " + Generator.EscapeTranslatedName(NethackNames.attic);
+      var AtticMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.attic);
       if (Generator.Adventure.World.HasMap(AtticMapName))
         return;
 
@@ -1675,7 +1679,7 @@ namespace Pathos
           if (Chance.OneIn5.Hit())
             Generator.PlaceRandomAsset(TrapSquare);
           else
-            DropCoins(TrapSquare, Generator.RandomCoinQuantity(TrapSquare));
+            Generator.DropCoins(TrapSquare, Generator.RandomCoinQuantity(TrapSquare));
         }
       }
       else
@@ -1747,7 +1751,7 @@ namespace Pathos
     {
       var SourceMap = SourceSquare.Map;
 
-      var CellarMapName = SourceMap.Name + " " + Generator.EscapeTranslatedName(NethackNames.cellar);
+      var CellarMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.cellar);
       if (Generator.Adventure.World.HasMap(CellarMapName))
         return;
 
@@ -1852,7 +1856,7 @@ namespace Pathos
 
       var SourceMap = SourceSquare.Map;
 
-      var CavesMapName = SourceMap.Name + " " + Generator.EscapeTranslatedName(NethackNames.caves);
+      var CavesMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.caves);
       if (Generator.Adventure.World.HasMap(CavesMapName))
         return;
 
@@ -1881,7 +1885,7 @@ namespace Pathos
     {
       var SourceMap = SourceSquare.Map;
 
-      var TroveMapName = SourceMap.Name + " " + Generator.EscapeTranslatedName(NethackNames.trove);
+      var TroveMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.trove);
       if (Generator.Adventure.World.HasMap(TroveMapName))
         return;
 
@@ -1925,7 +1929,7 @@ namespace Pathos
     }
     private void DropVaultCoins(Square Square)
     {
-      DropCoins(Square, Generator.RandomCoinQuantity(Square) * 1.d5().Roll());
+      Generator.DropCoins(Square, Generator.RandomCoinQuantity(Square) * 1.d5().Roll());
     }
     private void CreateCastleNooks(Map Map)
     {
@@ -2015,7 +2019,7 @@ namespace Pathos
           Generator.PlaceFixture(NookSquare, CastleBed);
         else if (Chance.OneIn7.Hit())
         {
-          DropCoins(NookSquare, Generator.RandomCoinQuantity(NookSquare));
+          Generator.DropCoins(NookSquare, Generator.RandomCoinQuantity(NookSquare));
           if (Chance.OneIn3.Hit())
             Generator.PlaceTrap(NookSquare);
         }
@@ -2132,7 +2136,7 @@ namespace Pathos
     private void CreateMazeBoss(Square MazeSquare)
     {
       Generator.PlaceRandomAsset(MazeSquare);
-      DropCoins(MazeSquare, Generator.RandomCoinQuantity(MazeSquare) * 1.d5().Roll());
+      Generator.DropCoins(MazeSquare, Generator.RandomCoinQuantity(MazeSquare) * 1.d5().Roll());
       Generator.PlaceCharacter(MazeSquare, MazeSquare.Map.Difficulty + 1, MazeSquare.Map.Difficulty + 3);
       if (MazeSquare.Character != null)
         SnoozeCharacter(MazeSquare.Character);
@@ -2156,33 +2160,15 @@ namespace Pathos
         Party.AddAlly(Character, Clock.Zero, Delay.Zero);
       }
     }
-    private Asset CreateCoins(Square Square, int Quantity)
-    {
-      Debug.Assert(Quantity > 0);
-
-      return Generator.NewSpecificAsset(Square, Codex.Items.gold_coin, Quantity);
-    }
-    private void DropCoins(Square Square, int Quantity)
-    {
-      Square.PlaceAsset(CreateCoins(Square, Quantity));
-    }
     private void CreateRoomDetails(Map Map, Block Block, IReadOnlyList<Square> FloorSquareList)
     {
-      var AssetSquareList = FloorSquareList.Where(Generator.CanPlaceTrap).ToDistinctList();
+      var DetailSquareList = FloorSquareList.Where(Generator.CanPlaceTrap).ToDistinctList();
 
-      while (TrapChance(Map).Hit())
-      {
-        var Square = AssetSquareList.GetRandomOrNull();
-        if (Square != null)
-          Generator.PlaceTrap(Square);
-      }
+      // traps.
+      Generator.PlaceRoomTraps(DetailSquareList, Map.Difficulty);
 
-      if (Chance.OneIn3.Hit())
-      {
-        var Square = AssetSquareList.GetRandomOrNull();
-        if (Square != null)
-          DropCoins(Square, Generator.RandomCoinQuantity(Square));
-      }
+      // coins.
+      Generator.PlaceRoomCoins(DetailSquareList);
 
       // estimated number of containers per area.
       var ContainerIndex = Map.RoomCount();
@@ -2200,43 +2186,20 @@ namespace Pathos
       {
         // 40% chance for at least 1 box, regardless of number of rooms; about 5 - 7.5% for 2 boxes, least likely when few rooms; chance for 3 or more is negligible.
 
-        var Square = AssetSquareList.GetRandomOrNull();
+        var Square = DetailSquareList.GetRandomOrNull();
         if (Square != null)
           PlaceContainer(Square);
       }
 
-      if (Chance.OneIn3.Hit())
-      {
-        var CreateCount = 0;
+      Generator.PlaceRoomAssets(DetailSquareList);
 
-        do
-        {
-          var Square = AssetSquareList.GetRandomOrNull();
-          if (Square != null)
-            Generator.PlaceRandomAsset(Square);
+      Generator.PlaceRoomHorde(FloorSquareList);
 
-          CreateCount++;
-        }
-        while (Chance.OneIn5.Hit() && CreateCount <= 10); // cap to 10 items in the room (very unlikely).
-      }
-
-      if (Chance.OneIn15.Hit() && FloorSquareList.Count > 0)
-      {
-        PlaceRandomHorde(FloorSquareList);
-        //if (Party != null) DebugWrite("; horde(" + Party.Name + ")");
-      }
-
-      if (Chance.OneIn3.Hit())
-      {
-        var Square = FloorSquareList.Where(Generator.CanPlaceCharacter).ToArray().GetRandomOrNull();
-
-        if (Square != null)
-          Generator.PlaceCharacter(Square);
-      }
+      Generator.PlaceRoomCharacter(FloorSquareList);
 
       if (Block != null && Chance.OneIn25.Hit())
       {
-        var Square = FloorSquareList.Where(Generator.CanPlaceBoulder).ToArray().GetRandomOrNull();
+        var Square = FloorSquareList.Where(Generator.CanPlaceBoulder).GetRandomOrNull();
 
         // NOTE: don't place boulders in front of doors to ensure we don't generate maps that are unplayable.
         if (Square != null && !Square.GetCompassSquares().Any(S => S.Door != null))
@@ -2269,44 +2232,6 @@ namespace Pathos
             }
           }
         }
-      }
-    }
-    private void CreateRoomFeatures(IReadOnlyList<Square> FloorSquareList)
-    {
-      foreach (var Feature in Codex.Features.List)
-      {
-        if (Feature.RoomChance.Hit())
-        {
-          var Square = FloorSquareList.Where(Generator.CanPlaceFeature).GetRandomOrNull();
-
-          if (Square != null)
-            Generator.PlaceFixture(Square, Feature);
-        }
-      }
-    }
-    private void PlaceRandomHorde(IReadOnlyList<Square> SquareList)
-    {
-      if (Inv.Assert.IsEnabled)
-      {
-        Inv.Assert.CheckNotNull(SquareList, nameof(SquareList));
-        Inv.Assert.Check(SquareList.Count > 0, "Must have at least one square to place a horde.");
-      }
-
-      if (SquareList.Count > 0)
-      {
-        var HordeSquare = SquareList[0];
-        var MinimumDifficulty = HordeSquare.MinimumDifficulty(null);
-        var MaximumDifficulty = HordeSquare.MaximumDifficulty(null);
-
-        // Hordes can start from the level after the race is first introduced.
-        var Horde = Generator.RandomHorde(MinimumDifficulty, MaximumDifficulty);
-
-#if DEBUG
-        //Horde = Engine.Codex.Hordes.piranha;
-#endif
-
-        if (Horde != null)
-          Generator.PlaceHorde(Horde, MinimumDifficulty, MaximumDifficulty, () => SquareList.Where(Generator.CanPlaceCharacter).GetRandomOrNull());
       }
     }
     private Asset CreateContainer(Square Square, bool Locked, bool Trapped)
@@ -2679,15 +2604,6 @@ namespace Pathos
 
       Generator.PlaceIllusionaryWalls(Map, CavernBarrier, Region);
     }
-    private Chance TrapChance(Map Map)
-    {
-      var Result = 8 - (Map.Difficulty / 6);
-
-      if (Result <= 1)
-        Result = 2;
-
-      return Chance.OneIn(Result);
-    }
     private Inv.DistinctList<AtticTemplate> LoadAtticTemplateList()
     {
       if (AtticTemplateList == null)
@@ -2790,7 +2706,7 @@ namespace Pathos
     }
     private bool CreateMinesBranch(Level CastleLevel)
     {
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Mines)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Mines)))
         return false;
 
       var EntranceMap = CastleLevel.Map;
@@ -2857,8 +2773,8 @@ namespace Pathos
 #endif
       foreach (var Town in TownArray)
       {
-        var SiteName = TownArray[0] == Town ? NethackNames.Mines : Town.Name; // NOTE: Town Names are not translated, this is just for debugging.
-        var MinesSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(SiteName));
+        var SiteName = TownArray[0] == Town ? NethackTerms.Mines : Town.Name; // NOTE: Town Names are not translated, this is just for debugging.
+        var MinesSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(SiteName));
 
         var TownGrid = Generator.LoadSpecialGrid(Town.Text);
 
@@ -2874,9 +2790,9 @@ namespace Pathos
         var TownHeight = TownGrid.Height + (DoubleCavern * 2);
         TownHeight -= TownHeight % CavernSize;
 
-        var TownName = TownArray[0] == Town ? NethackNames.Minetown : Town.Name;
+        var TownName = TownArray[0] == Town ? NethackTerms.Minetown : Town.Name;
 
-        var TownMap = Generator.Adventure.World.AddMap(Generator.EscapeTranslatedName(TownName), TownWidth, TownHeight);
+        var TownMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(TownName), TownWidth, TownHeight);
         TownMap.SetDifficulty(EntranceMap.Difficulty + 1);
         TownMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
@@ -2916,13 +2832,13 @@ namespace Pathos
           if (Chance.OneIn3.Hit())
           {
             if (Chance.OneIn3.Hit())
-              CreateRoomFeatures(TownZone.Squares);
+              Generator.PlaceRoomFixtures(TownZone.Squares);
 
             CreateRoomDetails(TownMap, MinesBlock, TownZone.Squares);
           }
           else if (Chance.OneIn3.Hit())
           {
-            PlaceRandomHorde(TownZone.Squares);
+            Generator.PlaceHorde(TownZone.Squares);
           }
         }
 
@@ -3250,7 +3166,7 @@ namespace Pathos
 
         foreach (var Level in LevelArray)
         {
-          var LevelMapName = Generator.EscapeTranslatedName(SiteName) + " " + Level.Number;
+          var LevelMapName = Generator.TranslatedModuleTerm(SiteName) + " " + Level.Number;
           if (Generator.Adventure.World.HasMap(LevelMapName))
           {
             Debug.Fail("How is there a duplicate mines level?");
@@ -3432,7 +3348,7 @@ namespace Pathos
                 case 'Z':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
                   Generator.PlaceCharacter(MinesSquare); // this is a zoo.
-                  DropCoins(MinesSquare, Generator.RandomCoinQuantity(MinesSquare));
+                  Generator.DropCoins(MinesSquare, Generator.RandomCoinQuantity(MinesSquare));
 
                   var ZooCharacter = MinesSquare.Character;
                   if (ZooCharacter != null)
@@ -3570,7 +3486,7 @@ namespace Pathos
         {
           var UnderParty = Generator.NewParty(Leader: null);
 
-          UnderMap.SetName(Generator.EscapeTranslatedName(UnderMap.Name));
+          UnderMap.SetName(Generator.TranslatedModuleTerm(UnderMap.Name));
 
           Generator.BuildMap(UnderMap);
 
@@ -3713,10 +3629,10 @@ namespace Pathos
       if (EntranceSquare == null)
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Lost_Chambers)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers)))
         return false;
 
-      var ChambersSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Lost_Chambers));
+      var ChambersSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers));
 
       var ResourceFile = Official.Resources.Quests.Chambers;
 
@@ -3758,7 +3674,7 @@ namespace Pathos
 
       Debug.Assert(QuestSite.Levels.Count == PointList.Count);
 
-      var ChamberMap = Generator.Adventure.World.AddMap(Generator.EscapeTranslatedName(NethackNames.Lost_Chambers), TotalWidth, TotalHeight);
+      var ChamberMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers), TotalWidth, TotalHeight);
       ChamberMap.SetDifficulty(QuestDifficulty);
       ChamberMap.SetAtmosphere(Codex.Atmospheres.nether);
       ChamberMap.SetTerminal(true);
@@ -3913,7 +3829,7 @@ namespace Pathos
     }
     private bool CreateLabyrinthBranch(Level CastleLevel)
     {
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Labyrinth)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth)))
         return false;
 
       var EntranceMap = CastleLevel.Map;
@@ -3956,7 +3872,7 @@ namespace Pathos
         Generator.PlaceFloor(FixSquare, LabyrinthGround);
 
       // three maze levels, 10x10 -> 20x20 -> 30x30.
-      var LabyrinthSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Labyrinth));
+      var LabyrinthSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth));
 
       var BaseSize = 11;
       var BoxSize = 5;
@@ -3965,7 +3881,7 @@ namespace Pathos
       for (var LevelIndex = 1; LevelIndex <= LevelCount; LevelIndex++)
       {
         var LabyrinthSize = BaseSize * LevelIndex;
-        var LabyrinthMap = Generator.Adventure.World.AddMap(Generator.EscapeTranslatedName(NethackNames.Labyrinth) + " " + LevelIndex, LabyrinthSize, LabyrinthSize);
+        var LabyrinthMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth) + " " + LevelIndex, LabyrinthSize, LabyrinthSize);
         LabyrinthMap.SetDifficulty(EntranceMap.Difficulty + 1);
         LabyrinthMap.SetAtmosphere(Codex.Atmospheres.nether);
         LabyrinthMap.SetTerminal(LevelIndex == LevelCount);
@@ -4087,12 +4003,12 @@ namespace Pathos
       if (!Generator.CanPlacePortal(MazeSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Sokoban)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Sokoban)))
         return false;
 
       var MazeMap = MazeSquare.Map;
 
-      var SokobanSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Sokoban));
+      var SokobanSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Sokoban));
 
       var Specials = Official.Resources.Specials;
 
@@ -4119,7 +4035,7 @@ namespace Pathos
 
         var Grid = Generator.LoadSpecialGrid(Map);
 
-        var LevelMapName = Generator.EscapeTranslatedName(NethackNames.Sokoban) + " " + Level.Number;
+        var LevelMapName = Generator.TranslatedModuleTerm(NethackTerms.Sokoban) + " " + Level.Number;
         if (Generator.Adventure.World.HasMap(LevelMapName))
           return false;
 
@@ -4264,7 +4180,7 @@ namespace Pathos
               case 'z':
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
                 Generator.PlaceCharacter(SokobanSquare); // this is a zoo.
-                DropCoins(SokobanSquare, Generator.RandomCoinQuantity(SokobanSquare));
+                Generator.DropCoins(SokobanSquare, Generator.RandomCoinQuantity(SokobanSquare));
 
                 var ZooCharacter = SokobanSquare.Character;
                 if (ZooCharacter != null)
@@ -4379,7 +4295,7 @@ namespace Pathos
       if (PortalSquare == null)
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Fort_Ludios)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios)))
         return false;
 
       var FortItems = Codex.Items;
@@ -4393,7 +4309,7 @@ namespace Pathos
 
       var VaultMap = VaultRoom.Map;
 
-      var FortSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Fort_Ludios));
+      var FortSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios));
 
       var FortArray = new[]
       {
@@ -4407,7 +4323,7 @@ namespace Pathos
       var FortGrid = Generator.LoadSpecialGrid(FortArray.GetRandom());
       var FortWidth = FortGrid.Width;
       var FortHeight = FortGrid.Height;
-      var FortMap = Generator.Adventure.World.AddMap(Generator.EscapeTranslatedName(NethackNames.Fort_Ludios), FortWidth, FortHeight);
+      var FortMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios), FortWidth, FortHeight);
       FortMap.SetDifficulty(VaultMap.Difficulty);
       FortMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
@@ -4416,7 +4332,7 @@ namespace Pathos
       var FortGate = Codex.Gates.wooden_door;
       var FortBarrier = Codex.Barriers.stone_wall;
       var FortRoomGround = Codex.Grounds.stone_floor;
-      var FortPathGround = Codex.Grounds.stone_corridor;
+      var FortPathGround = Codex.Grounds.stone_path;
       var FortWaterGround = Codex.Grounds.water;
 
       var FortSoldierMaxChallenge = FortSoldierArray.Max(E => E.Challenge);
@@ -4510,7 +4426,7 @@ namespace Pathos
               var ChestAsset = Generator.NewSpecificAsset(FortSquare, Codex.Items.chest);
               FortSquare.PlaceAsset(ChestAsset);
 
-              ChestAsset.Container.Stash.Add(CreateCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare) * 1.d3().Roll()));
+              ChestAsset.Container.Stash.Add(Generator.CreateCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare) * 1.d3().Roll()));
               ChestAsset.Container.Stash.Add(Generator.NewSpecificAsset(FortSquare, FortGemProbability.GetRandomOrNull()));
 
               FortSquare.SetLit(true);
@@ -4541,7 +4457,7 @@ namespace Pathos
             case '$':
               // coins and traps.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              DropCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare) * 4.d4().Roll());
+              Generator.DropCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare) * 4.d4().Roll());
               FortSquare.SetLit(true);
 
               if (Chance.OneIn3.Hit())
@@ -4635,7 +4551,7 @@ namespace Pathos
             case 'z':
               Generator.PlaceFloor(FortSquare, FortRoomGround);
               Generator.PlaceCharacter(FortSquare); // this is a zoo.
-              DropCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare));
+              Generator.DropCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare));
 
               var ZooCharacter = FortSquare.Character;
               if (ZooCharacter != null)
@@ -4668,7 +4584,7 @@ namespace Pathos
 
       var CacheWidth = 12;
       var CacheHeight = 12;
-      var CacheMap = Generator.Adventure.World.AddMap(Generator.EscapeTranslatedName(NethackNames.Fort_Ludios_Cache), CacheWidth, CacheHeight);
+      var CacheMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios_Cache), CacheWidth, CacheHeight);
       CacheMap.SetDifficulty(VaultMap.Difficulty);
       CacheMap.SetTerminal(true);
       CacheMap.SetAtmosphere(Codex.Atmospheres.civilisation);
@@ -4746,7 +4662,7 @@ namespace Pathos
             case 'z':
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
               Generator.PlaceCharacter(CacheSquare); // this is a zoo.
-              DropCoins(CacheSquare, Generator.RandomCoinQuantity(CacheSquare) * 4.d4().Roll());
+              Generator.DropCoins(CacheSquare, Generator.RandomCoinQuantity(CacheSquare) * 4.d4().Roll());
 
               var ZooCharacter = CacheSquare.Character;
               if (ZooCharacter != null)
@@ -4807,7 +4723,7 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Elf_Kingdom)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Elf_Kingdom)))
         return false;
 
       var StandardGeneration = Chance.ThreeIn4.Hit(); // 75% normal, 25% massacre.
@@ -4821,7 +4737,7 @@ namespace Pathos
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var KingdomSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Elf_Kingdom));
+      var KingdomSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Elf_Kingdom));
 
       var KingdomDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -4834,7 +4750,7 @@ namespace Pathos
         var IsTown = KingdomMap.Name == "Elf Town";
         var IsPalace1 = KingdomMap.Name.StartsWith("Elf Palace 1");
 
-        KingdomMap.SetName(Generator.EscapeTranslatedName(KingdomMap.Name));
+        KingdomMap.SetName(Generator.TranslatedModuleTerm(KingdomMap.Name));
 
         if (IsPalace1)
         {
@@ -5113,14 +5029,14 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Medusa_Lair)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Lair.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var LairSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Medusa_Lair));
+      var LairSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair));
 
       var LairDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -5148,7 +5064,7 @@ namespace Pathos
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var LairMap = QuestLevel.Map;
-        LairMap.SetName(Generator.EscapeTranslatedName(NethackNames.Medusa_Lair) + " " + QuestLevel.Index);
+        LairMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair) + " " + QuestLevel.Index);
         LairMap.SetDifficulty(LairDifficulty + QuestLevel.Index);
         LairMap.SetAtmosphere(Codex.Atmospheres.forest);
         LairMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
@@ -5268,7 +5184,7 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Black_Market)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Black_Market)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Market.GetBuffer());
@@ -5278,7 +5194,7 @@ namespace Pathos
       //PortalSquare.SetFixture(new Fixture(Codex.Features.stall, Sanctity.Uncursed));
       Generator.PlacePassage(PortalSquare, Codex.Portals.transportal, QuestStart);
 
-      var MarketSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Black_Market));
+      var MarketSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Black_Market));
 
       var MarketDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -5302,7 +5218,7 @@ namespace Pathos
       var QuestLevel = QuestSite.Levels.Single();
 
       var MarketMap = QuestLevel.Map;
-      MarketMap.SetName(Generator.EscapeTranslatedName(NethackNames.Black_Market));
+      MarketMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Black_Market));
       MarketMap.SetDifficulty(MarketDifficulty + QuestLevel.Index);
       MarketMap.SetAtmosphere(Codex.Atmospheres.civilisation);
       MarketMap.SetTerminal(true);
@@ -5364,7 +5280,7 @@ namespace Pathos
             {
               StockContainer(MarketSquare, Asset, Locked: true, Trapped: true);
 
-              Asset.Container.Stash.Add(CreateCoins(MarketSquare, 1000.d10().Roll())); // 1000-10,000 gold.
+              Asset.Container.Stash.Add(Generator.CreateCoins(MarketSquare, 1000.d10().Roll())); // 1000-10,000 gold.
             }
           }
           else
@@ -5387,21 +5303,21 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Lich_Tower)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Tower.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var TowerSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Lich_Tower));
+      var TowerSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower));
 
       var TowerDifficulty = AtticRoom.Map.Difficulty;
 
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var TowerMap = QuestLevel.Map;
-        TowerMap.SetName(Generator.EscapeTranslatedName(NethackNames.Lich_Tower) + " " + QuestLevel.Index);
+        TowerMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower) + " " + QuestLevel.Index);
         TowerMap.SetDifficulty(TowerDifficulty + (QuestSite.Levels.Count - QuestLevel.Index));
         TowerMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
@@ -5509,14 +5425,14 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.EscapeTranslatedName(NethackNames.Abyss)))
+      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Abyss)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Abyss.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var AbyssSite = Generator.Adventure.World.AddSite(Generator.EscapeTranslatedName(NethackNames.Abyss));
+      var AbyssSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Abyss));
       AbyssSite.SetWarped(true); // prevent this site from being warped.
 
       var AbyssDifficulty = PortalSquare.Map.Difficulty + 1;
@@ -5630,7 +5546,7 @@ namespace Pathos
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var AbyssMap = QuestLevel.Map;
-        AbyssMap.SetName(Generator.EscapeTranslatedName(AbyssMap.Name));
+        AbyssMap.SetName(Generator.TranslatedModuleTerm(AbyssMap.Name));
         AbyssMap.SetDifficulty(AbyssDifficulty + (QuestSite.Levels.Count - QuestLevel.Index));
         AbyssMap.SetAtmosphere(Codex.Atmospheres.nether);
         AbyssMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
@@ -5644,7 +5560,7 @@ namespace Pathos
 
         foreach (var QuestMap in QuestLevel.GetMaps().Except(AbyssMap))
         {
-          QuestMap.SetName(Generator.EscapeTranslatedName(QuestMap.Name));
+          QuestMap.SetName(Generator.TranslatedModuleTerm(QuestMap.Name));
           QuestMap.SetDifficulty(AbyssMap.Difficulty);
           QuestMap.SetAtmosphere(AbyssMap.Atmosphere);
           QuestMap.SetTerminal(AbyssMap.Terminal);

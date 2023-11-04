@@ -460,6 +460,7 @@ BarrierName,jade wall,mur de jade
 BarrierName,shroom,champignons
 BarrierName,stone wall,mur de pierre
 BarrierName,tree,arbre
+BarrierName,wooden wall,
 BeamName,acid,acide
 BeamName,cold,de froid
 BeamName,death,de mort
@@ -1927,7 +1928,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName} {FixtureName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} avec {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} avec {With:AssetName}
-FormatText,{CharacterName} {TraversalPastName} to dungeon {MapName},{CharacterName} {TraversalPastName} à l'étage {MapName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} à l'étage {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} adroitement {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} adroitement {MotionPastName} {Use:AssetName} avec {With:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} a atteint le niveau {LevelNumber}
@@ -2177,8 +2178,9 @@ GroundName,metal floor,sol en métal
 GroundName,moss,mousse
 GroundName,obsidian floor,sol en obsidienne
 GroundName,sand,sable
-GroundName,stone corridor,couloir en pierre
+GroundName,snow,
 GroundName,stone floor,sol en pierre
+GroundName,stone path,couloir en pierre
 GroundName,water,eau
 GroundName,wooden floor,plancher
 HordeName,ant,fourmi
@@ -3102,7 +3104,6 @@ LiteralText,[MASTER],[MAITRE]
 LiteralText,abolition of firearms,abolition des armes à feu
 LiteralText,ABOUT,A PROPOS
 LiteralText,About Pathos,A propos de Pathos
-LiteralText,Abyss,abysse
 LiteralText,accelerated resting,accélération du repos
 LiteralText,actions,actions
 LiteralText,ADD LEVEL,AJOUTER UN NIVEAU
@@ -3140,7 +3141,6 @@ LiteralText,ATTACK//noun,ATTAQUE
 LiteralText,attack//verb,attaque
 LiteralText,ATTACK//verb,ATTAQUE
 LiteralText,attacks,attaques
-LiteralText,attic,grenier
 LiteralText,attributes,attributs
 LiteralText,AUTO,AUTO
 LiteralText,auto saving,sauvegarde automatique
@@ -3154,7 +3154,6 @@ LiteralText,Begin the adventure,Commencer l'aventure
 LiteralText,beholds,regarde
 LiteralText,beta discussions,discussions bêta
 LiteralText,Black background,Fond noir
-LiteralText,Black Market,Marché noir
 LiteralText,blasphemy,blasphème
 LiteralText,BLINK,CLIGNER
 LiteralText,Blink which direction?,Cligner dans quelle direction ?
@@ -3189,8 +3188,6 @@ LiteralText,CAN'T TELEKINESIS,NE PEUT PAS TÉLÉKINÉSIER
 LiteralText,CAN'T THROW,NE PEUT PAS JETER
 LiteralText,Cast,Lancer
 LiteralText,CAST SPELLS,LANCER SORTILÈGES
-LiteralText,caves,grottes
-LiteralText,cellar,cave
 LiteralText,challenge,défi
 LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Personnage
@@ -3263,9 +3260,6 @@ LiteralText,decapitation,décapiter
 LiteralText,DECEASED,DÉCÉDÉ
 LiteralText,decelerated real-time,décéléré en temps réel
 LiteralText,DECREASE,RÉDUIRE
-LiteralText,Deephall,Salles profondes
-LiteralText,Deepruins,Ruines profondes
-LiteralText,Deepwilds,Contrées sauvages
 LiteralText,defence,défense
 LiteralText,DEFENCE,DÉFENSE
 LiteralText,degrade quality,dégrade la qualité
@@ -3273,14 +3267,12 @@ LiteralText,DELETE,SUPPRIMER
 LiteralText,delete this level,supprimer ce niveau
 LiteralText,DEMOTE,RÉTROGRADER
 LiteralText,depth,profondeur
-LiteralText,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Descendez dans des donjons et dans des cavernes générés par procédure aléatoire. Rejouabilité infinie et recommandé pour les nouveaux joueurs de Pathos.
 LiteralText,DESCEND TO NEXT LEVEL,DESCENDRE AU NIVEAU SUIVANT
 LiteralText,destination,destination
 LiteralText,DESTROY,DÉTRUIRE
 LiteralText,determined by player level,déterminé par le niveau du joueur
 LiteralText,device,mécanisme
 LiteralText,DEVICES,MÉCANISMES
-LiteralText,Dhak Legacy,Héritage de Dhak
 LiteralText,DIAGNOSTICS,DIAGNOSTICS
 LiteralText,DID NOT RANK,NON CLASSÉ
 LiteralText,diet,régime alimentaire
@@ -3319,17 +3311,9 @@ LiteralText,downloading update,téléchargement des mises à jour
 LiteralText,drop,déposer
 LiteralText,DROP,DÉPOSER
 LiteralText,DUAL WIELD,ARMEMENT DOUBLE
-LiteralText,Dungeon,Cachot
 LiteralText,duration,durée
 LiteralText,edible items,articles comestibles
 LiteralText,egg,oeuf
-LiteralText,Elf Forest,Forêt elfique
-LiteralText,Elf Kingdom,Royaume elfique
-LiteralText,Elf Palace 1,Palais elfique 1
-LiteralText,Elf Palace 2,Palais elfique 2
-LiteralText,Elf Palace Vault,Caveau du palais elfique
-LiteralText,Elf Town,Ville des Elfes
-LiteralText,Elf Town Trove,Trésor de la ville des Elfes
 LiteralText,else,sinon
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Activer la sauvegarde automatique
@@ -3378,7 +3362,6 @@ LiteralText,FIZZLE,PÉTILLER
 LiteralText,Floor,Sol
 LiteralText,FOLLOW,SUIVRE
 LiteralText,Follow me on Twitter,Suivez-moi sur Twitter
-LiteralText,Fort Ludios,Fort Ludios
 LiteralText,free panning mode,mode panoramique libre
 LiteralText,fright,peur
 LiteralText,fumbling,maladroit
@@ -3404,7 +3387,6 @@ LiteralText,ground,par terre
 LiteralText,GROUNDS,LA TERRE
 LiteralText,GUIDES,GUIDES
 LiteralText,HALL of FAME,TEMPLE de la RENOMMÉE
-LiteralText,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Des cartes conçues à la main pour une aventure épique à la surface. Oubliez les donjons confinés pour un temps et embarquez-vous dans une quête palpitante et difficile.
 LiteralText,hatched by,éclore par
 LiteralText,Having trouble finding the stairs down to the next level?,Avoir des difficultés pour trouver les escaliers vers le prochain niveau ?
 LiteralText,Help,Aide
@@ -3434,10 +3416,6 @@ LiteralText,incarceration,emprisonnement
 LiteralText,INCREASE,AUGMENTE
 LiteralText,INDEX,CATALOGUE
 LiteralText,individual crafting,artisanat individuel
-LiteralText,Infernal Cage,Cage infernale
-LiteralText,Infernal Fields,Champ infernal
-LiteralText,Infernal Keep,Donjon infernal
-LiteralText,Infernal Spire,flèche infernale
 LiteralText,infinite quantity,quantité infini
 LiteralText,influenced actions,actions influencées
 LiteralText,INSCRIBE,INSCRIRE
@@ -3446,7 +3424,6 @@ LiteralText,inscription?,inscription?
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,OR INSUFFISANT
 LiteralText,insulation,isolation
-LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Des salles intéressantes et des secrets vous attendent, mais ne traînez pas: vous devez descendre ou mourir. Basé sur la génération de carte de Shattered Pixel Dungeon."
 LiteralText,Inventory,inventaire
 LiteralText,INVENTORY,INVENTAIRE
 LiteralText,ITEM,OBJET
@@ -3465,15 +3442,12 @@ LiteralText,KICK!,COUP DE PIED !
 LiteralText,kills,morts
 LiteralText,kit,trousse
 LiteralText,KNOWLEDGE,CONNAISSANCES
-LiteralText,Labyrinth,Labyrinthe
 LiteralText,LANGUAGE,LANGUE
 LiteralText,LEARN ALL SPELLS,APPRENEZ TOUS LES SORT
 LiteralText,learn spells,apprendre des sorts
 LiteralText,LEFT RING,BAGUE GAUCHE
 LiteralText,LEVEL CHART,DIAGRAMME DES NIVEAUX
-LiteralText,level//depth,niveau
 LiteralText,level//rank,niveau
-LiteralText,Lich Tower,Tour de la Liche
 LiteralText,life,vie
 LiteralText,LIFE,VIE
 LiteralText,Life represents your physical health and death occurs at zero.,La vie représente votre santé physique et la mort survient à zéro.
@@ -3495,9 +3469,7 @@ LiteralText,LOSE KARMA,PERTE DE KARMA
 LiteralText,LOSE LEVEL,PERTE DE NIVEAU
 LiteralText,LOSE NUTRITION,PERTE DE NOURRITURE
 LiteralText,lose skill,perdre compétence
-LiteralText,Lost Chambers,Chambre perdue
 LiteralText,LOW MANA,MANA FAIBLE
-LiteralText,Ludios Cache,Cache Ludios
 LiteralText,MAIN WIELD,MAIN PRINCIPALE
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3505,14 +3477,11 @@ LiteralText,Mana represents your energy supply for casting spells.,Le mana repr�
 LiteralText,Map,Carte
 LiteralText,MAP,CARTE
 LiteralText,material,matériel
-LiteralText,Medusa Lair,Antre de Méduse
 LiteralText,melting,fusion
 LiteralText,MENU,MENU
 LiteralText,mercenary,mercenaire
 LiteralText,MIMIC,IMITER
 LiteralText,mimicking,mimétisme
-LiteralText,Mines,Mines
-LiteralText,Minetown,Minetown
 LiteralText,modifier,modificateur
 LiteralText,MOUNT,MONTURE
 LiteralText,Mount which direction?,Monté vers quelle direction?
@@ -3528,7 +3497,6 @@ LiteralText,N/A,N/A
 LiteralText,name,nom
 LiteralText,NAME,NOM
 LiteralText,name?,nom?
-LiteralText,Nethack Codex,Manuscrit de Nethack
 LiteralText,neutral,neutre
 LiteralText,never,jamais
 LiteralText,no additional effects,pas d'effets supplémentaires
@@ -3575,7 +3543,6 @@ LiteralText,penetrates,pénètre
 LiteralText,per level,par niveau
 LiteralText,permanent,permanent
 LiteralText,PERSONAL,PERSONNEL
-LiteralText,Pixel Sojourn,Pixel Sojourn
 LiteralText,PLACE,PLACER
 LiteralText,PLACE ALL,PLACER TOUT
 LiteralText,platform,platforme
@@ -3664,8 +3631,6 @@ LiteralText,REVERT,REVENIR
 LiteralText,RIGHT RING,BAGUE DROITE
 LiteralText,rigid,rigide
 LiteralText,ROTATE,TOURNÉ
-LiteralText,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Bac à Sable pour expérimenter les mécaniques de Pathos. Jouez avec chaque objet, piège et donjon dans une carte simple réduite à deux chambres."
-LiteralText,Sandbox Play,jouer dans le Bac à Sable
 LiteralText,SANITY CHECK,VERIFICATION DE SANTÉ MENTALE
 LiteralText,SAVE,SAUVEGARDER
 LiteralText,SAVE & QUIT,SAUVEGARDER & QUITTER
@@ -3712,7 +3677,6 @@ LiteralText,SKILLS,COMPÉTENCES
 LiteralText,SLIDE,GLISSER
 LiteralText,Slide which direction?,Glisser dans quelle direction ?
 LiteralText,slower animations,animations lentes
-LiteralText,Sokoban,Sokoban
 LiteralText,SONICS,EFFETS SONORES
 LiteralText,"Sorry, this device is a bit too small :-(","Désolé, cet appareil est un peu trop petit :-("
 LiteralText,SOUND BOARD,PLANCHE DE SON
@@ -3791,7 +3755,6 @@ LiteralText,trapped door,porte piégée
 LiteralText,TRIGGER,DÉCLENCHEUR
 LiteralText,trigger once,déclencheur une fois
 LiteralText,trigger unlimited times,déclencheur nombre illimité de fois
-LiteralText,trove,trésor
 LiteralText,TUNNEL,TUNNEL
 LiteralText,Tunnel which direction?,Creuser un tunnel dans quelle direction ?
 LiteralText,TURN-BASED,TOUR PAR TOUR
@@ -3799,10 +3762,6 @@ LiteralText,turns,tours
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Saisir n'importe quel mot ou phrase pour générer une seed de donjon aléatoire.
 LiteralText,unable to load,impossible de charger
 LiteralText,UNDEAD,MORT-VIVANT
-LiteralText,Underbarracks,Casernes du dessous
-LiteralText,Underlimits,Frontières du dessous
-LiteralText,Underpeaks,Pics du dessous
-LiteralText,Undertown,Ville du dessous
 LiteralText,Undo,Annuler
 LiteralText,unidentified items,objets non identifiés
 LiteralText,unique,unique
@@ -3894,6 +3853,50 @@ MaterialName,wax,cire
 MaterialName,wood,bois
 MeasurementSystemName,imperial,impérial
 MeasurementSystemName,metric,métrique
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Descendez dans des donjons et dans des cavernes générés par procédure aléatoire. Rejouabilité infinie et recommandé pour les nouveaux joueurs de Pathos.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Des cartes conçues à la main pour une aventure épique à la surface. Oubliez les donjons confinés pour un temps et embarquez-vous dans une quête palpitante et difficile.
+ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Des salles intéressantes et des secrets vous attendent, mais ne traînez pas: vous devez descendre ou mourir. Basé sur la génération de carte de Shattered Pixel Dungeon."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Bac à Sable pour expérimenter les mécaniques de Pathos. Jouez avec chaque objet, piège et donjon dans une carte simple réduite à deux chambres."
+ModuleName,Dhak Legacy,Héritage de Dhak
+ModuleName,Nethack Codex,Manuscrit de Nethack
+ModuleName,Pixel Sojourn,Pixel Sojourn
+ModuleName,Sandbox Play,jouer dans le Bac à Sable
+ModuleTerm,Abyss,abysse
+ModuleTerm,attic,grenier
+ModuleTerm,Black Market,Marché noir
+ModuleTerm,caves,grottes
+ModuleTerm,cellar,cave
+ModuleTerm,Deephall,Salles profondes
+ModuleTerm,Deepruins,Ruines profondes
+ModuleTerm,Deepwilds,Contrées sauvages
+ModuleTerm,Dungeon,Cachot
+ModuleTerm,Elf Forest,Forêt elfique
+ModuleTerm,Elf Kingdom,Royaume elfique
+ModuleTerm,Elf Palace 1,Palais elfique 1
+ModuleTerm,Elf Palace 2,Palais elfique 2
+ModuleTerm,Elf Palace Vault,Caveau du palais elfique
+ModuleTerm,Elf Town,Ville des Elfes
+ModuleTerm,Elf Town Trove,Trésor de la ville des Elfes
+ModuleTerm,Fort Ludios,Fort Ludios
+ModuleTerm,Infernal Cage,Cage infernale
+ModuleTerm,Infernal Fields,Champ infernal
+ModuleTerm,Infernal Keep,Donjon infernal
+ModuleTerm,Infernal Spire,flèche infernale
+ModuleTerm,Labyrinth,Labyrinthe
+ModuleTerm,level//depth,niveau
+ModuleTerm,Lich Tower,Tour de la Liche
+ModuleTerm,Lost Chambers,Chambre perdue
+ModuleTerm,Ludios Cache,Cache Ludios
+ModuleTerm,Medusa Lair,Antre de Méduse
+ModuleTerm,Mines,Mines
+ModuleTerm,Minetown,Minetown
+ModuleTerm,Overland,
+ModuleTerm,Sokoban,Sokoban
+ModuleTerm,trove,trésor
+ModuleTerm,Underbarracks,Casernes du dessous
+ModuleTerm,Underlimits,Frontières du dessous
+ModuleTerm,Underpeaks,Pics du dessous
+ModuleTerm,Undertown,Ville du dessous
 MotionPastName,anointed,a oint
 MotionPastName,ate,a mangé
 MotionPastName,captured,capturé

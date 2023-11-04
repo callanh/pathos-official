@@ -93,8 +93,7 @@ namespace Pathos
                     for (var j = 0; j < width; j++)
                         SPDDebug.currentmap.map.Add(new SPDMapPoint(j, i, map[i * width + j]));
                 }
-                var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, width, height);
+                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), width, height);
                 SPDDebug.currentmap.entrance = new SPDPoint(32, 20);
                 SPDDebug.currentmap.exit = new SPDPoint(4, 4);
                 ConvertMap();
@@ -174,8 +173,7 @@ namespace Pathos
                     for (var j = 0; j < width; j++)
                         SPDDebug.currentmap.map.Add(new SPDMapPoint(j, i, map[i * width + j]));
                 }
-                var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, width, height);
+                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), width, height);
                 SPDDebug.currentmap.entrance = new SPDPoint(14, 5);
                 SPDDebug.currentmap.exit = new SPDPoint(14, 23);
                 ConvertMap();
@@ -240,8 +238,7 @@ namespace Pathos
                     for (var j = 0; j < width; j++)
                         SPDDebug.currentmap.map.Add(new SPDMapPoint(j, i, map[i * width + j]));
                 }
-                var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, width, height);
+                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), width, height);
                 SPDDebug.currentmap.entrance = new SPDPoint(11, 11);
                 SPDDebug.currentmap.exit = new SPDPoint(11, 2);
                 ConvertMap();
@@ -309,8 +306,7 @@ namespace Pathos
                     for (var j = 0; j < width; j++)
                         SPDDebug.currentmap.map.Add(new SPDMapPoint(j, i, map[i * width + j]));
                 }
-                var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, width, height);
+                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), width, height);
                 SPDDebug.currentmap.entrance = new SPDPoint(6, 23);
                 SPDDebug.currentmap.exit = new SPDPoint(6, 2);
                 ConvertMap();
@@ -365,8 +361,7 @@ namespace Pathos
                     for (var j = 0; j < width; j++)
                         SPDDebug.currentmap.map.Add(new SPDMapPoint(j, i, map[i * width + j]));
                 }
-                var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, width, height);
+                SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), width, height);
                 SPDDebug.currentmap.entrance = new SPDPoint(9, 1);
                 SPDDebug.currentmap.exit = new SPDPoint(0,0);
                 ConvertMap();
@@ -709,8 +704,7 @@ namespace Pathos
         }
         private void Final()
         {
-            var LevelName = SPDDebug.generator.EscapeTranslatedName("level//depth") + " " + SPDDebug.currentmap.depth;
-            SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(LevelName, Width: SPDDebug.currentmap.width, Height: SPDDebug.currentmap.height);
+            SPDDebug.currentmap.pathosMap = SPDDebug.adventure.World.AddMap(SPDDebug.CurrentLevelName(), Width: SPDDebug.currentmap.width, Height: SPDDebug.currentmap.height);
             ConvertMap();
             SPDDebug.currentmap.pathosMap.SetAtmosphere(SPDDebug.codex.Atmospheres.dungeon);
             if (SPDDebug.currentmap.depth < 25) SPDDebug.currentmap.pathosMap.SetTerminal(false);
@@ -820,7 +814,7 @@ namespace Pathos
                 }
                 else if (point.value == SPDMapPoint.CORRIDOR)
                 {
-                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_corridor);
+                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_path);
                 }
                 else if (point.value == SPDMapPoint.LAVA)
                 {
@@ -838,7 +832,7 @@ namespace Pathos
                 }
                 else if (point.value == SPDMapPoint.TERRTRAP)
                 {
-                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_corridor);
+                    SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_path);
                     SPDPainter.AddTrap(new SPDPoint(point.x, point.y), SPDMapPoint.TRAP);
                 }
                 else if (point.value == SPDMapPoint.TERRTRAPSP)
