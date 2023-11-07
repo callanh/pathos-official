@@ -14860,6 +14860,8 @@ namespace Pathos
         I.Weight = Source.Weight; // adamantine weighs same as steel.
         I.Material = Materials.adamantine;
         I.Essence = WeaponEssence2;
+        I.Size = Source.Size;
+        I.Sonic = Source.Sonic;
         
         I.Price = Source.Price * 20; // adamantine variants cost x20 gold.
         // however, this needs to be calmed down for the more expensive items such as plate mail.
@@ -14877,9 +14879,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_bow;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.bow, Sonics.bow_fire, Elements.physical, DamageType.Bludgeon, 1.d4());
@@ -14891,9 +14891,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_arrow;
-        I.Sonic = Sonics.ammo;
         I.Series = null;
-        I.Size = Size.Small;
         //I.AddObviousIngestUse(Motions.eat, 1, Delay.FromTurns(10), Sonics.ammo);
         I.SetWeakness(); // won't break
         I.BundleDice = 1.d3() + 3;
@@ -14907,9 +14905,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_axe;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Medium;
         //I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 1.d7() + 1);
@@ -14921,9 +14917,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_greataxe;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 120, Delay.FromTurns(40), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 2.d6() + 2);
@@ -14938,7 +14932,6 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.BundleDice = Dice.One;
         I.Series = null;
-        I.Size = Size.Small;
         //I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.weapon);
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d4() + 1);
@@ -14950,9 +14943,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_long_sword;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8() + 1);
@@ -14964,9 +14955,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_greatsword;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d10());
@@ -14978,9 +14967,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_twohanded_sword;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d12() + 1);
@@ -14992,9 +14979,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_rapier;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Medium;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1).AttackModifier = Modifier.Plus2;
@@ -15006,9 +14991,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_sabre;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Medium;
         //I.AddObviousIngestUse(Motions.eat, 40, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedMomentumWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 1.d6() + 2);
@@ -15020,9 +15003,7 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_short_sword;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Small;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
@@ -15034,14 +15015,12 @@ namespace Pathos
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_spear;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Medium;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
       });
-      /*
+
       adamantine_bident = AddReachWeapon("adamantine bident", I =>
       {
         AdamantineEquivalent(I, trident);
@@ -15049,23 +15028,19 @@ namespace Pathos
         I.Description = null;
         I.SetAppearance("exotic two-pointed polearm", null); // TODO: required only for the polearms require appearance sanity check.
         I.Glyph = Glyphs.adamantine_bident;
-        I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 25, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedMomentumWeapon(Skills.polearm, null, Elements.physical, DamageType.Pierce, 1.d6() + 2);
       });
-      */
+
       adamantine_plate_mail = AddArmour(ItemType.Suit, "adamantine plate mail", I =>
       {
         AdamantineEquivalent(I, plate_mail);
 
         I.Description = null;
         I.Glyph = Glyphs.adamantine_plate_mail;
-        I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Size = Size.Large;
         //I.AddObviousIngestUse(Motions.eat, 450, Delay.FromTurns(50), Sonics.armour);
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(50), Sonics.armour);
         I.SetArmour(Skills.heavy_armour, D: 8, P: +0, S: +0, B: +0);
@@ -15456,7 +15431,7 @@ namespace Pathos
     public readonly Item adamantine_arrow;
     public readonly Item adamantine_bow;
     public readonly Item adamantine_axe;
-    //public readonly Item adamantine_bident;
+    public readonly Item adamantine_bident;
     public readonly Item adamantine_greataxe;
     public readonly Item adamantine_dagger;
     public readonly Item adamantine_long_sword;

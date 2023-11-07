@@ -133,6 +133,7 @@ AppearanceName,emerald potion,エメラルド色の液体の入った小瓶
 AppearanceName,emerald ring,エメラルドの指輪
 AppearanceName,engagement ring,婚約指輪
 AppearanceName,etched helmet,模様の刻まれた兜
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,色褪せた本
 AppearanceName,faded pall,色褪せた外套
 AppearanceName,fencing gloves,フェンシンググローブ
@@ -1009,6 +1010,7 @@ EffectType,charging,充填
 EffectType,charm,魅了
 EffectType,clone character,分裂
 EffectType,concealing,隠す
+EffectType,connect passage,
 EffectType,convert asset,アイテムを変換
 EffectType,convert boulder,巨塊を変換
 EffectType,convert door,扉を変換
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}はレ
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName}は既にを最大効率で{SpellName}を使っている
 FormatText,{CharacterName} animated {AssetName},{CharacterName}は{AssetName}に命を与えた
 FormatText,{CharacterName} broke {AssetName},{CharacterName}が{AssetName}を壊した
+FormatText,{CharacterName} broke {FixtureName},{CharacterName}が{FixtureName}を壊した
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName}は{AssetName}以外の飛び道具を装備できない//{GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName}は腹一杯で食べきれず、貴重な栄養を無駄にした
 FormatText,{CharacterName} cannot grow up,{CharacterName}はこれ以上成長できない
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits}ポンド
 FormatText,after reaching dungeon level {RecordDepth},ダンジョンレベル{RecordDepth}に到達した後
 FormatText,animate {CharacterName},生命を吹き込まれた{CharacterName}
 FormatText,boost {AttributeName} by enchantment,修正値に応じて{AttributeName}を強化
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,一振りで壁に大きなトンネルを作り出す杖。
 ItemName,adamantine arrow,アダマンタインの矢
 ItemName,adamantine axe,アダマンタインの斧
+ItemName,adamantine bident,
 ItemName,adamantine bow,アダマンタインの弓
 ItemName,adamantine dagger,アダマンタインのダガー
 ItemName,adamantine greataxe,アダマンタインのグレートアックス

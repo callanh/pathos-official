@@ -23,12 +23,23 @@ namespace Pathos
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.dhak_title);
-      AddTerms(new[] { "Overland" });
+      AddTerms(new[] { Overland });
     }
+
+    public const string Overland = "Overland";
 
     public override void Execute(Generator Generator)
     {
       Generator.BuildWorld(Generator.ImportQuest(Official.Resources.Quests.Dhak.GetBuffer()).World);
+
+      if (Inv.Assert.IsEnabled)
+      {
+        var OverlandSite = Generator.Adventure.World.Sites.Single();
+        var OverlandText = Generator.TranslatedModuleTerm(Overland);
+
+        Inv.Assert.Check(OverlandSite.Name == OverlandText, "Site name mismatch.");
+        Inv.Assert.Check(OverlandSite.GetMaps().Single().Name == OverlandText, "Map name mismatch.");
+      }
     }
 
     private readonly Codex Codex;

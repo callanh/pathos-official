@@ -133,6 +133,7 @@ AppearanceName,emerald potion,Lọ thuốc màu lục bảo
 AppearanceName,emerald ring,Nhẫn ngọc lục bảo
 AppearanceName,engagement ring,Nhẫn đính hôn
 AppearanceName,etched helmet,Giáp mũ khắc
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,Quyển sách lu mờ
 AppearanceName,faded pall,Áo khoác lu mờ
 AppearanceName,fencing gloves,Đôi găng tay đấu kiếm
@@ -1009,6 +1010,7 @@ EffectType,charging,nạp lại
 EffectType,charm,quyến rũ
 EffectType,clone character,tạo bản sao của nhân vật
 EffectType,concealing,ẩn nấp
+EffectType,connect passage,
 EffectType,convert asset,chuyển đổi xập đồ
 EffectType,convert boulder,chuyển đổi tảng
 EffectType,convert door,chuyển đổi cửa
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} lên 
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} đã đạt cấp độ tối đa với {SpellName}
 FormatText,{CharacterName} animated {AssetName},{CharacterName} tái sinh {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} làm hỏng {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} làm hỏng {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} chỉ có thể đặt {AssetName} trong bao đựng tên của {GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} không thể ăn được nữa và đã lãng phí dinh dưỡng thừa
 FormatText,{CharacterName} cannot grow up,{CharacterName} không thể lớn hơn được
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},sau khi tới được tầng {RecordDepth}
 FormatText,animate {CharacterName},tái sinh {CharacterName}
 FormatText,boost {AttributeName} by enchantment,tăng điểm thuộc tính {AttributeName} từ sự cường hóa
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,giới hạn {Percent}%
 FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật phẩm nào?
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Vụt nó vào bức tường sẽ tạo nên 1 đường hầm.
 ItemName,adamantine arrow,mũi tên adamantine
 ItemName,adamantine axe,rìu adamantine
+ItemName,adamantine bident,
 ItemName,adamantine bow,cung adamantine
 ItemName,adamantine dagger,dao găm adamantine
 ItemName,adamantine greataxe,rìu lớn adamantine

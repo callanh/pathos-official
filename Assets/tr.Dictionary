@@ -133,6 +133,7 @@ AppearanceName,emerald potion,zümrüt yeşili iksir
 AppearanceName,emerald ring,zümrüt yeşili yüzük
 AppearanceName,engagement ring,nişan yüzüğü
 AppearanceName,etched helmet,çentikli miğfer
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,soluk kitap
 AppearanceName,faded pall,soluk pardesü
 AppearanceName,fencing gloves,eskrim eldiveni
@@ -1009,6 +1010,7 @@ EffectType,charging,şarj ediyor
 EffectType,charm,cezbet
 EffectType,clone character,karakteri klonla
 EffectType,concealing,gizle
+EffectType,connect passage,
 EffectType,convert asset,varlığı dönüştür
 EffectType,convert boulder,kayayı dönüştür
 EffectType,convert door,kapıyı dönüştür
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} seviy
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} {SpellName} büyüsünde azami gelişmeye ulaştı
 FormatText,{CharacterName} animated {AssetName},{AssetName} {CharacterName} tarafından hareket ettirildi
 FormatText,{CharacterName} broke {AssetName},{AssetName} {CharacterName} tarafından kırıldı
+FormatText,{CharacterName} broke {FixtureName},{FixtureName} {CharacterName} tarafından kırıldı
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} daha fazla doyamaz ve değerli besinleri ziyan etti
 FormatText,{CharacterName} cannot grow up,{CharacterName} büyüyemez
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs ağırlık
 FormatText,after reaching dungeon level {RecordDepth},{RecordDepth} derinliğine ulaştıktan sonra
 FormatText,animate {CharacterName},
 FormatText,boost {AttributeName} by enchantment,Efsunla {AttributeName} özelliğini yükselt
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Bir duvara karşı kullanmak büyük bir tünel açar.
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

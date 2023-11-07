@@ -835,6 +835,12 @@ namespace Pathos
 
       foreach (var Feature in Manifest.Features.List)
       {
+        if (Feature.RegularGlyph == null)
+          Record($"Feature {Feature.Name} must have a regular glyph");
+
+        if (Feature.BrokenGlyph == null)
+          Record($"Feature {Feature.Name} must have a broken glyph");
+
         if (Feature.Sonic == null)
           Record($"Feature {Feature.Name} must have a sonic");
 
@@ -1089,7 +1095,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Items.List.Select(E => E.Storage).ExceptNull().SelectMany(E => new[] { E.LockedGlyph, E.TrappedGlyph, E.BrokenGlyph, E.EmptyGlyph }));
       UsedGlyphSet.AddRange(Manifest.Items.List.Select(E => E.Appearance?.Glyph).ExceptNull());
       UsedGlyphSet.AddRange(Manifest.Devices.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Features.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Features.List.SelectMany(E => new[] { E.RegularGlyph, E.BrokenGlyph }));
       UsedGlyphSet.AddRange(Manifest.Gates.List.SelectMany(E => new[] { E.OpenHorizontalGlyph, E.OpenVerticalGlyph, E.ClosedHorizontalGlyph, E.ClosedVerticalGlyph, E.LockedHorizontalGlyph, E.LockedVerticalGlyph, E.TrappedHorizontalGlyph, E.TrappedVerticalGlyph, E.BrokenGlyph }));
       UsedGlyphSet.AddRange(Manifest.Platforms.List.SelectMany(E => new[] { E.VerticalGlyph, E.HorizontalGlyph }));
       UsedGlyphSet.AddRange(Manifest.Afflictions.List.Select(E => E.Glyph));

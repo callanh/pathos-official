@@ -133,6 +133,7 @@ AppearanceName,emerald potion,смарагдове зілля
 AppearanceName,emerald ring,каблучка зі смарагдом
 AppearanceName,engagement ring,обручка
 AppearanceName,etched helmet,гравійований шолом
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,вицвіла книга
 AppearanceName,faded pall,вицвіла мантія
 AppearanceName,fencing gloves,фехтувальні рукавиці
@@ -1009,6 +1010,7 @@ EffectType,charging,заряджає
 EffectType,charm,причарування
 EffectType,clone character,клонує персонажа
 EffectType,concealing,приховує
+EffectType,connect passage,
 EffectType,convert asset,перетворює цінність
 EffectType,convert boulder,перетворює брилу
 EffectType,convert door,перетворює двері
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} пі�
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} вже володіє заклинанням {SpellName} з максимальною майстерністю
 FormatText,{CharacterName} animated {AssetName},{CharacterName} анімує {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} ламає {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} ламає {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} не може бути ще ситішим і даремно витрачає з'їдене
 FormatText,{CharacterName} cannot grow up,{CharacterName} не може вирости
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} фунтів
 FormatText,after reaching dungeon level {RecordDepth},після досягнення {RecordDepth} рівня підземелля
 FormatText,animate {CharacterName},анімований {CharacterName}
 FormatText,boost {AttributeName} by enchantment,збільшення {AttributeName} через чари
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,максимум {Percent}%
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Взмах цим в сторону стіни створить великий тунель.
 ItemName,adamantine arrow,адамантитова стріла
 ItemName,adamantine axe,адамантитова сокира
+ItemName,adamantine bident,
 ItemName,adamantine bow,адамантитовий лук
 ItemName,adamantine dagger,адамантитовий кинжал
 ItemName,adamantine greataxe,адамантитова бойова сокира

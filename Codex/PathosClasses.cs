@@ -263,6 +263,8 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_explorer);
         C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_explorer);
         C.AddAvatar(Races.dwarf, Genders.female, Glyphs.dwarf_female_explorer);
+        C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_explorer);
+        C.AddAvatar(Races.elf, Genders.female, Glyphs.elf_female_explorer);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_explorer);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_explorer);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_explorer);

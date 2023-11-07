@@ -133,6 +133,7 @@ AppearanceName,emerald potion,翠绿药水
 AppearanceName,emerald ring,绿宝石戒指
 AppearanceName,engagement ring,结婚戒指
 AppearanceName,etched helmet,蚀锈头盔
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,褪色的书
 AppearanceName,faded pall,褪色斗篷
 AppearanceName,fencing gloves,剑术手套
@@ -1009,6 +1010,7 @@ EffectType,charging,充能
 EffectType,charm,魅力
 EffectType,clone character,克隆角色
 EffectType,concealing,隐匿
+EffectType,connect passage,
 EffectType,convert asset,转换物件
 EffectType,convert boulder,转换巨石
 EffectType,convert door,转换门
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} 升�
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} 的 {SpellName} 的熟练程度已经到达了最大值
 FormatText,{CharacterName} animated {AssetName},{CharacterName} 使 {AssetName} 活化
 FormatText,{CharacterName} broke {AssetName},{CharacterName} 击毁了 {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} 击毁了 {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} 只能持握 {GenderHis} 中的 {AssetName}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} 已经很饱足了，浪费了珍贵的营养
 FormatText,{CharacterName} cannot grow up,{CharacterName} 无法成长
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} 斤
 FormatText,after reaching dungeon level {RecordDepth},最深到达过 {RecordDepth} 层
 FormatText,animate {CharacterName},活化 {CharacterName}
 FormatText,boost {AttributeName} by enchantment,根据附魔改变{AttributeName}
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,{Percent}% 封顶
 FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,对着墙壁使用可以制造一个巨大的隧道。
 ItemName,adamantine arrow,精金箭
 ItemName,adamantine axe,精金斧
+ItemName,adamantine bident,
 ItemName,adamantine bow,精金弓
 ItemName,adamantine dagger,精金匕首
 ItemName,adamantine greataxe,精金战斧

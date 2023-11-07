@@ -133,6 +133,7 @@ AppearanceName,emerald potion,smaragdový lektvar
 AppearanceName,emerald ring,smaragdový prsten
 AppearanceName,engagement ring,snubní prsten
 AppearanceName,etched helmet,#
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,vybledlá kniha
 AppearanceName,faded pall,#
 AppearanceName,fencing gloves,rukavice na šerm
@@ -1009,6 +1010,7 @@ EffectType,charging,
 EffectType,charm,
 EffectType,clone character,
 EffectType,concealing,
+EffectType,connect passage,
 EffectType,convert asset,
 EffectType,convert boulder,
 EffectType,convert door,
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},
 FormatText,{CharacterName} animated {AssetName},
 FormatText,{CharacterName} broke {AssetName},
+FormatText,{CharacterName} broke {FixtureName},
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,
 FormatText,{CharacterName} cannot grow up,
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,
 FormatText,after reaching dungeon level {RecordDepth},
 FormatText,animate {CharacterName},
 FormatText,boost {AttributeName} by enchantment,
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,
 FormatText,Cast {SpellName} which direction?,
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

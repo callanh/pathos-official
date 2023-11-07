@@ -150,7 +150,7 @@ namespace Pathos
     public readonly Glyph adamantine_bow;
     public readonly Glyph adamantine_arrow;
     public readonly Glyph adamantine_axe;
-    //public readonly Glyph adamantine_bident;
+    public readonly Glyph adamantine_bident;
     public readonly Glyph adamantine_greataxe;
     public readonly Glyph adamantine_greatsword;
     public readonly Glyph adamantine_dagger;
@@ -179,6 +179,7 @@ namespace Pathos
     public readonly Glyph dryad;
     public readonly Glyph alarm_trap;
     public readonly Glyph altar;
+    public readonly Glyph altar_broken;
     public readonly Glyph amnesia_trap;
     public readonly Glyph Escapist;
     public readonly Glyph Eye_of_Aethiopica;
@@ -810,6 +811,7 @@ namespace Pathos
 
     // elf.
     public readonly Glyph elf_male_bard;
+    public readonly Glyph elf_male_explorer;
     public readonly Glyph elf_male_paladin;
     public readonly Glyph elf_male_priest;
     public readonly Glyph elf_male_ranger;
@@ -817,6 +819,7 @@ namespace Pathos
     public readonly Glyph elf_male_templar;
     public readonly Glyph elf_male_wizard;
 
+    public readonly Glyph elf_female_explorer;
     public readonly Glyph elf_female_priest;
     public readonly Glyph elf_female_ranger;
     public readonly Glyph elf_female_reaver;
@@ -1092,6 +1095,7 @@ namespace Pathos
     public readonly Glyph forest_centaur;
     public readonly Glyph fortune_cookie;
     public readonly Glyph fountain;
+    public readonly Glyph fountain_broken;
     public readonly Glyph fox;
     public readonly Glyph Frankensteins_Monster;
     public readonly Glyph frost_sphere;
@@ -1188,6 +1192,7 @@ namespace Pathos
     public readonly Glyph sand;
     public readonly Glyph snow;
     public readonly Glyph grave;
+    public readonly Glyph grave_broken;
     public readonly Glyph gold_dragon_scale_mail;
     public readonly Glyph gold_dragon_scales;
     public readonly Glyph grey_ooze;
@@ -1588,6 +1593,7 @@ namespace Pathos
     public readonly Glyph pegasus;
     public readonly Glyph Pelias;
     public readonly Glyph pentagram;
+    public readonly Glyph pentagram_broken;
     public readonly Glyph Pestilence;
     public readonly Glyph phase_spider;
     public readonly Glyph phase_worm;
@@ -1755,7 +1761,9 @@ namespace Pathos
     public readonly Glyph phantom_key;
     public readonly Glyph Master_Key;
     public readonly Glyph bed;
+    public readonly Glyph bed_broken;
     public readonly Glyph sarcophagus;
+    public readonly Glyph sarcophagus_broken;
     public readonly Glyph sleep_beam_backward_slant;
     public readonly Glyph sleep_beam_forward_slant;
     public readonly Glyph sleep_beam_horizontal;
@@ -1789,6 +1797,7 @@ namespace Pathos
     public readonly Glyph squealer;
     public readonly Glyph stalker;
     public readonly Glyph stall;
+    public readonly Glyph stall_broken;
     public readonly Glyph Stamped_Letter;
     public readonly Glyph star_vampire;
     public readonly Glyph static_blob;
@@ -1842,6 +1851,7 @@ namespace Pathos
     public readonly Glyph Thorin;
     public readonly Glyph Thoth_Amon;
     public readonly Glyph throne;
+    public readonly Glyph throne_broken;
     public readonly Glyph thug;
     public readonly Glyph tiger;
     public readonly Glyph tin;
@@ -2045,6 +2055,7 @@ namespace Pathos
     public readonly Glyph wooden_ladder_up;
     public readonly Glyph woodland_elf;
     public readonly Glyph workbench;
+    public readonly Glyph workbench_broken;
     public readonly Glyph worm_tooth;
     public readonly Glyph wraith;
     public readonly Glyph wumpus;

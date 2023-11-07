@@ -3261,7 +3261,7 @@ namespace Pathos
         E.Difficulty = 1;
         E.Frequency = 1;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
-        E.SetDiet(Diets.herbivore);
+        E.SetDiet(Diets.herbivore); // TODO: should chicken be omnivore?
         E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Defend;

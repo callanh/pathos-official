@@ -133,6 +133,7 @@ AppearanceName,emerald potion,smaragdzöld főzet
 AppearanceName,emerald ring,smaragdgyűrű
 AppearanceName,engagement ring,eljegyzési gyűrű
 AppearanceName,etched helmet,mart sisak
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,kifakult könyv
 AppearanceName,faded pall,kifakult lepel
 AppearanceName,fencing gloves,vívókesztyű
@@ -1009,6 +1010,7 @@ EffectType,charging,töltés
 EffectType,charm,elbűvölés
 EffectType,clone character,karakterklón
 EffectType,concealing,eltitkolás
+EffectType,connect passage,
 EffectType,convert asset,következővé alakul:
 EffectType,convert boulder,következővé alakul:
 EffectType,convert door,következővé alakul:
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} elér
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} elérte a(z) {SpellName} maximális hatékonysági szintjét
 FormatText,{CharacterName} animated {AssetName},{CharacterName} életre keltette: {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} eltörte: {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} eltörte: {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} csak {AssetName} tárgyat tarthat a tegezében//{GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,"{CharacterName} már jóllakott, és épp értékes táplálékot pazarolt el"
 FormatText,{CharacterName} cannot grow up,{CharacterName} nem tud felnőni
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},miután elérte a kazamata {RecordDepth}. szintjét
 FormatText,animate {CharacterName},élő {CharacterName}
 FormatText,boost {AttributeName} by enchantment,{AttributeName} fokozása igézéssel
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,{Percent}%-ot fed
 FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {SpellName} varázslat?
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Falon használva nagy alagutat hoz létre.
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

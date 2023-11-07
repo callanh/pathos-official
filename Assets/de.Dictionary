@@ -133,6 +133,7 @@ AppearanceName,emerald potion,Smaragdtrank
 AppearanceName,emerald ring,Smaragdring
 AppearanceName,engagement ring,Verlobungsring
 AppearanceName,etched helmet,gravierter Helm
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,verblasstes Buch
 AppearanceName,faded pall,verblasstes Sargtuch
 AppearanceName,fencing gloves,Fechthandschuhe
@@ -1009,6 +1010,7 @@ EffectType,charging,aufladen
 EffectType,charm,betören
 EffectType,clone character,Charakter klonen
 EffectType,concealing,Tarnung
+EffectType,connect passage,
 EffectType,convert asset,Gegenstand umwandeln
 EffectType,convert boulder,Felsbrocken umwandeln
 EffectType,convert door,Tür umwandeln
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} errei
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} beherrscht bereits maximale Effizienz von {SpellName}
 FormatText,{CharacterName} animated {AssetName},{CharacterName} animiert {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} zerbrach {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} zerbrach {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} kann nur {AssetName} in {GenderHis} Köcher führen
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} kann nicht gesättigter sein und hat wertvolle Nahrung verschwendet
 FormatText,{CharacterName} cannot grow up,{CharacterName} kann nicht erwachsen werden
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} Pfund
 FormatText,after reaching dungeon level {RecordDepth},nachdem erreichen der Kerker Ebene  {RecordDepth}
 FormatText,animate {CharacterName},{CharacterName} animieren
 FormatText,boost {AttributeName} by enchantment,erhöht {AttributeName} durch Verzauberung
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,Max {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} mit welchem Gegenstand zaubern?
 FormatText,Cast {SpellName} which direction?,{SpellName} in welche Richtung zaubern?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Auf eine Wand angewendet entsteht ein geräumiger Tunnel.
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

@@ -133,6 +133,7 @@ AppearanceName,emerald potion,에메랄드빛 물약
 AppearanceName,emerald ring,에메랄드 반지
 AppearanceName,engagement ring,약혼 반지
 AppearanceName,etched helmet,음각된 투구
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,빛바랜 책
 AppearanceName,faded pall,빛바랜 천
 AppearanceName,fencing gloves,펜싱 장갑
@@ -1009,6 +1010,7 @@ EffectType,charging,충전
 EffectType,charm,매혹
 EffectType,clone character,캐릭터 복제
 EffectType,concealing,숨기기
+EffectType,connect passage,
 EffectType,convert asset,아이템 변환
 EffectType,convert boulder,바위 변환
 EffectType,convert door,문 변환
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}의 �
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName}은(는) 이미 {SpellName}의 마나 효율이 최대치다
 FormatText,{CharacterName} animated {AssetName},{CharacterName}이(가) {AssetName}를 살아움직이게 했다
 FormatText,{CharacterName} broke {AssetName},{CharacterName}은(는) {AssetName}을(를) 망가뜨렸다
+FormatText,{CharacterName} broke {FixtureName},{CharacterName}은(는) {FixtureName}을(를) 망가뜨렸다
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName}은 {GenderHis} 화살통에 {AssetName}만 담을 수 있다
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName}은(는) 더 이상 배를 채울 수 없어 귀중한 영양분을 낭비했다
 FormatText,{CharacterName} cannot grow up,{CharacterName}은(는) 성장할 수 없다
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},레벨 {RecordDepth}에 도달한 후
 FormatText,animate {CharacterName},{CharacterName}를 살아움직이게 함
 FormatText,boost {AttributeName} by enchantment,강화에 비례해 {AttributeName} 향상
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,벽에 사용하면 큰 터널이 생긴다.
 ItemName,adamantine arrow,아다만티움 화살
 ItemName,adamantine axe,아다만티움 도끼
+ItemName,adamantine bident,
 ItemName,adamantine bow,아다만티움 활
 ItemName,adamantine dagger,아다만티움 단검
 ItemName,adamantine greataxe,아다만티움 전투도끼

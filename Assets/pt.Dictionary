@@ -133,6 +133,7 @@ AppearanceName,emerald potion,poção esmeralda
 AppearanceName,emerald ring,anel de esmeralda
 AppearanceName,engagement ring,anel de noivado
 AppearanceName,etched helmet,elmo esculpido
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,livro desvanecido
 AppearanceName,faded pall,pano mortuário desvanecido
 AppearanceName,fencing gloves,luvas de esgrima
@@ -1009,6 +1010,7 @@ EffectType,charging,carregando
 EffectType,charm,encanto
 EffectType,clone character,clonar personagem
 EffectType,concealing,escondendo
+EffectType,connect passage,
 EffectType,convert asset,converter item
 EffectType,convert boulder,converter pedregulho
 EffectType,convert door,converter porta
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} avan�
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} já tem nível de eficiência máximo com {SpellName}
 FormatText,{CharacterName} animated {AssetName},{CharacterName} animou {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} quebrou {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} quebrou {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} só pode carregar {AssetName} em {GenderHis} aljava
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} não pode ficar ainda mais saciado e perdeu nutrição valiosa
 FormatText,{CharacterName} cannot grow up,{CharacterName} não pode crescer
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},após alcançar o nivel {RecordDepth} da masmorra
 FormatText,animate {CharacterName},animar {CharacterName}
 FormatText,boost {AttributeName} by enchantment,aumenta {AttributeName} através de encantamento
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,limite {Percent}%
 FormatText,Cast {SpellName} on which item?,Lançar {SpellName} em que item?
 FormatText,Cast {SpellName} which direction?,Lançar {SpellName} em que direção?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Atirar com ela numa parede cria um grande túnel.
 ItemName,adamantine arrow,flecha de adamantina
 ItemName,adamantine axe,machado de adamantina
+ItemName,adamantine bident,
 ItemName,adamantine bow,arco de adamantina
 ItemName,adamantine dagger,adaga de adamantina
 ItemName,adamantine greataxe,grande machado de adamantina

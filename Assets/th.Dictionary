@@ -133,6 +133,7 @@ AppearanceName,emerald potion,โพชั่นสีเขียวมรก�
 AppearanceName,emerald ring,แหวนมรกต
 AppearanceName,engagement ring,แหวนหมั้น
 AppearanceName,etched helmet,หมวกเกราะถูกสลัก
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,หนังสือสีซีด
 AppearanceName,faded pall,ผ้าห่อศพสีซีด
 AppearanceName,fencing gloves,ถุงมือฟันดาบ
@@ -1009,6 +1010,7 @@ EffectType,charging,
 EffectType,charm,ลุ่มหลง
 EffectType,clone character,
 EffectType,concealing,อำพราง
+EffectType,connect passage,
 EffectType,convert asset,เปลี่ยนทรัพย์สิน
 EffectType,convert boulder,เปลี่ยนหินก้อนใหญ่
 EffectType,convert door,เปลี่ยนประตู
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} เ�
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} เพิ่มผลของเวท{SpellName}ถึงระดับสูงสุดแล้ว
 FormatText,{CharacterName} animated {AssetName},{CharacterName} ทำให้{AssetName}มีชีวิต
 FormatText,{CharacterName} broke {AssetName},{CharacterName} ทำ{AssetName}พัง
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} ทำ{FixtureName}พัง
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} กินมากกว่านี้ไม่ไหวแล้ว และผลาญโภชนาการที่มีค่าไป
 FormatText,{CharacterName} cannot grow up,{CharacterName} ไม่สามารถเติบโตขึ้นได้
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} ปอนต์
 FormatText,after reaching dungeon level {RecordDepth},หลังจากไปถึงดันเจี้ยนชั้นที่ {RecordDepth}
 FormatText,animate {CharacterName},คืนชีพ {CharacterName}
 FormatText,boost {AttributeName} by enchantment,เสริม{AttributeName}ด้วยอาคม
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

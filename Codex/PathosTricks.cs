@@ -66,6 +66,11 @@ namespace Pathos
         A.RemoveWall(WallStructure.Permanent, Barriers.iron_bars);
       });
 
+      connecting_portal = AddTrick("connecting portal", A =>
+      {
+        A.ConnectPassage(Codex.Portals.transportal);
+      });
+
       dismissed_illusion = AddTrick("dismissed illusion", A =>
       {
         A.RemoveWall(WallStructure.Illusionary);
@@ -195,6 +200,7 @@ namespace Pathos
     public readonly Trick awake_character;
     public readonly Trick barred_way;
     public readonly Trick cleared_way;
+    public readonly Trick connecting_portal;
     public readonly Trick dismissed_illusion;
     public readonly Trick increase_difficulty;
     public readonly Trick overwhelm_difficulty;

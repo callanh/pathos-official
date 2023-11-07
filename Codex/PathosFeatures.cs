@@ -30,20 +30,21 @@ namespace Pathos
       var Sonics = Codex.Sonics;
       var Skills = Codex.Skills;
 
-      Feature AddFeature(string Name, Material Material, Chance RoomChance, Glyph Glyph, Action<FeatureEditor> Action)
+      Feature AddFeature(string Name, Material Material, Chance RoomChance, Glyph RegularGlyph, Glyph BrokenGlyph, Action<FeatureEditor> Action)
       {
         return Register.Add(F =>
         {
           F.Name = Name;
           F.Material = Material;
           F.RoomChance = RoomChance;
-          F.Glyph = Glyph;
+          F.RegularGlyph = RegularGlyph;
+          F.BrokenGlyph = BrokenGlyph;
 
           CodexRecruiter.Enrol(() => Action(F));
         });
       }
 
-      altar = AddFeature("altar", Materials.stone, Chance.OneIn60, Glyphs.altar, F =>
+      altar = AddFeature("altar", Materials.stone, Chance.OneIn60, Glyphs.altar, Glyphs.altar_broken, F =>
       {
         F.Sonic = Sonics.prayer;
         F.Mountable = true;
@@ -56,7 +57,7 @@ namespace Pathos
 
         F.DestroyStrike = Strikes.holy;
         F.DestroyApply.Harm(Elements.shock, 6.d6() + 6);
-        F.DestroyApply.ConvertFixture(altar, Devices.spiked_pit);
+        F.DestroyApply.BreakFixture(altar);
         F.DestroyApply.CreateHorde(Dice.One, Hordes.jackal);
         F.DestroyApply.CreateHorde(Dice.One, Hordes.hell_hound);
         F.DestroyApply.CreateHorde(Dice.One, Hordes.demon);
@@ -94,7 +95,7 @@ namespace Pathos
         SacrificeUse.Apply.Sacrifice();
       });
 
-      bed = AddFeature("bed", Materials.wood, Chance.OneIn120, Glyphs.bed, F =>
+      bed = AddFeature("bed", Materials.wood, Chance.OneIn120, Glyphs.bed, Glyphs.bed_broken, F =>
       {
         F.Sonic = Sonics.scrape; // TODO: Sonics.snore?
         F.Mountable = true;
@@ -131,7 +132,7 @@ namespace Pathos
         );
       });
 
-      fountain = AddFeature("fountain", Materials.stone, Chance.OneIn10, Glyphs.fountain, F =>
+      fountain = AddFeature("fountain", Materials.stone, Chance.OneIn10, Glyphs.fountain, Glyphs.fountain_broken, F =>
       {
         F.Sonic = Sonics.water_splash;
         F.Mountable = true;
@@ -139,7 +140,7 @@ namespace Pathos
 
         F.DestroyExplosion = Codex.Explosions.watery;
         F.DestroyApply.Harm(Elements.water, Dice.Zero);
-        F.DestroyApply.ConvertFixture(fountain, Devices.water_trap);
+        F.DestroyApply.BreakFixture(fountain);
 
         F.DropApply.Harm(Elements.water, Dice.Zero);
         F.DropApply.ConvertAsset(Stocks.potion, WholeStack: true, Items.potion_of_water);
@@ -166,7 +167,8 @@ namespace Pathos
           Table.Add(50, A => { });
           Table.Add(10, A => A.CreateAsset(Dice.One, Stocks.gem));
           Table.Add(10, A => A.CreateHorde(Dice.One, Hordes.water_moccasin));
-          Table.Add(10, A => A.ConvertFixture(fountain, Devices.water_trap)); // destroy 10%
+          Table.Add(5, A => A.ConvertFixture(fountain, Devices.water_trap)); // destroy 5%
+          Table.Add(5, A => A.BreakFixture(fountain)); // destroy 5%
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.water_demon));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.water_nymph));
           Table.Add(1, A => A.CreateEntity(Dice.One, Entities.water_elemental));
@@ -223,7 +225,7 @@ namespace Pathos
         }
       });
 
-      grave = AddFeature("grave", Materials.stone, Chance.OneIn60, Glyphs.grave, F =>
+      grave = AddFeature("grave", Materials.stone, Chance.OneIn60, Glyphs.grave, Glyphs.grave_broken, F =>
       {
         F.Sonic = Sonics.groan;
         F.Mountable = true;
@@ -241,17 +243,17 @@ namespace Pathos
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateAsset(1.d2()));
       });
 
-      sarcophagus = AddFeature("sarcophagus", Materials.stone, Chance.OneIn120, Glyphs.sarcophagus, F =>
+      sarcophagus = AddFeature("sarcophagus", Materials.stone, Chance.OneIn120, Glyphs.sarcophagus, Glyphs.sarcophagus_broken, F =>
       {
         F.Sonic = Sonics.scrape;
         F.Mountable = true;
         F.Weight = Weight.FromUnits(200000);
 
-        F.DestroyApply.ConvertFixture(sarcophagus, Devices.hole);
+        F.DestroyApply.BreakFixture(sarcophagus);
         F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var OpenUse = F.AddUse(Codex.Motions.open, null, Delay.FromTurns(20), Sonics.scrape, Audibility: 10);
-        OpenUse.Apply.ConvertFixture(sarcophagus, Device: null);
+        OpenUse.Apply.BreakFixture(sarcophagus);
 
         // BUC doesn't really matter because it's removed the first time you use it?
 
@@ -269,7 +271,7 @@ namespace Pathos
         });
       });
 
-      pentagram = AddFeature("pentagram", Materials.wax, Chance.OneIn90, Glyphs.pentagram, F =>
+      pentagram = AddFeature("pentagram", Materials.wax, Chance.OneIn90, Glyphs.pentagram, Glyphs.pentagram_broken, F =>
       {
         F.Sonic = Sonics.chant;
         F.Mountable = true;
@@ -323,13 +325,13 @@ namespace Pathos
         });
       });
 
-      stall = AddFeature("stall", Materials.wood, Chance.Never, Glyphs.stall, F =>
+      stall = AddFeature("stall", Materials.wood, Chance.Never, Glyphs.stall, Glyphs.stall_broken, F =>
       {
         F.Sonic = Sonics.creak; // NOTE: stalls don't make a chime SFX when they are unoccupied (rely on Shop.Sonic).
         F.Mountable = true;
         F.Weight = Weight.FromUnits(25000);
 
-        F.DestroyApply.ConvertFixture(stall, Devices.entropy_trap);
+        F.DestroyApply.BreakFixture(stall);
 
         var Storage = F.SetStorage();
         Storage.Locking = true;
@@ -339,7 +341,7 @@ namespace Pathos
         Storage.BreakSonic = Codex.Sonics.broken_lock;
       });
 
-      throne = AddFeature("throne", Materials.stone, Chance.OneIn120, Glyphs.throne, F =>
+      throne = AddFeature("throne", Materials.stone, Chance.OneIn120, Glyphs.throne, Glyphs.throne_broken, F =>
       {
         F.Sonic = Sonics.throne;
         F.Mountable = true;
@@ -384,7 +386,7 @@ namespace Pathos
         SitUse.Apply.WhenChance(Chance.OneIn2, A => A.ConvertFixture(throne, Devices.trapdoor));
       });
 
-      workbench = AddFeature("workbench", Materials.wood, Chance.OneIn80, Glyphs.workbench, F =>
+      workbench = AddFeature("workbench", Materials.wood, Chance.OneIn80, Glyphs.workbench, Glyphs.workbench_broken, F =>
       {
         F.Description = "This well-worn table is imbued with the ancient magics of creation and destruction.";
         F.Sonic = Sonics.craft;

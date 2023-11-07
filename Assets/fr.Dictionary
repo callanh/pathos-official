@@ -133,6 +133,7 @@ AppearanceName,emerald potion,potion émeraude
 AppearanceName,emerald ring,anneau d'émeraude
 AppearanceName,engagement ring,anneau de fiançailles
 AppearanceName,etched helmet,casque gravé
+AppearanceName,exotic two-pointed polearm,
 AppearanceName,faded book,livre délavé
 AppearanceName,faded pall,voile délavé
 AppearanceName,fencing gloves,gants d'escrime
@@ -1009,6 +1010,7 @@ EffectType,charging,charge
 EffectType,charm,charme
 EffectType,clone character,clone de personnage
 EffectType,concealing,camouflage
+EffectType,connect passage,
 EffectType,convert asset,convertit une possession
 EffectType,convert boulder,convertit en roc
 EffectType,convert door,convertir porte
@@ -1935,6 +1937,7 @@ FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} a att
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} avait déjà l'efficacité maximum en {SpellName}
 FormatText,{CharacterName} animated {AssetName},{CharacterName} animée {AssetName}
 FormatText,{CharacterName} broke {AssetName},{CharacterName} a cassé {AssetName}
+FormatText,{CharacterName} broke {FixtureName},{CharacterName} a cassé {FixtureName}
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} peut seulement contenir {AssetName} dans {GenderHis} carquois
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} est rassasié et a gâché de précieux aliments
 FormatText,{CharacterName} cannot grow up,{CharacterName} ne peut pas grandir
@@ -2080,6 +2083,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} livres
 FormatText,after reaching dungeon level {RecordDepth},après avoir atteint la profondeur {RecordDepth}
 FormatText,animate {CharacterName},{CharacterName} animée
 FormatText,boost {AttributeName} by enchantment,augmente {AttributeName} par enchantement
+FormatText,break {FeatureName},
 FormatText,cap {Percent}%,plafond {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
@@ -2360,6 +2364,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Zapper en direction d'un mur crée un gros tunnel.
 ItemName,adamantine arrow,
 ItemName,adamantine axe,
+ItemName,adamantine bident,
 ItemName,adamantine bow,
 ItemName,adamantine dagger,
 ItemName,adamantine greataxe,

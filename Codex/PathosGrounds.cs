@@ -22,13 +22,12 @@ namespace Pathos
       var Skills = Codex.Skills;
 
       CodexVolatiles Volatiles = null;
-
       CodexRecruiter.Enrol(() =>
       {
         Volatiles = Codex.Volatiles;
       });
 
-      Ground AddGround(string Name, Material Substance, Glyph Glyph, Action<GroundEditor> Action)
+      Ground AddGround(string Name, Material Substance, Glyph Glyph, Action<GroundEditor> EditorAction)
       {
         return Register.Add(G =>
         {
@@ -37,7 +36,7 @@ namespace Pathos
           G.Terrain = Materials.air;
           G.Glyph = Glyph;
 
-          CodexRecruiter.Enrol(() => Action(G));
+          CodexRecruiter.Enrol(() => EditorAction(G));
         });
       }
       
@@ -131,6 +130,8 @@ namespace Pathos
       snow = AddGround("snow", Materials.ice, Glyphs.snow, G =>
       {
         G.Description = null;
+
+        G.SpeedMultiplier = 0.80F; // 80% speed when moving through snow.
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
