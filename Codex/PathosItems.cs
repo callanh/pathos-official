@@ -1299,7 +1299,7 @@ namespace Pathos
          .SetTalent(Properties.warning, Properties.deflection);
         I.SetImpact(Codex.Sonics.coins, A =>
         {
-          A.Repel(Range.Sq1, Items: false, Characters: true, Boulders: false);
+          A.Knockback();
           A.WhenChance(Chance.OneIn4, T =>
           {
             T.WithSourceSanctity

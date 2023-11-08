@@ -1281,6 +1281,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d4());
         E.AddAttack(AttackTypes.butt, Elements.physical, 2.d6(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.strength);
@@ -3904,6 +3905,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.SetCorpse(Chance.Always);
@@ -3951,6 +3953,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn3, T => T.ApplyTransient(Properties.stunned, 1.d4() + 2));
         });
         E.SetCorpse(Chance.Always);
@@ -3996,12 +3999,10 @@ namespace Pathos
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, 3.d3(), Items.javelin);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +4 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6()); // +4 from str.
         E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 4));
-        });
-        E.AddAttack(AttackTypes.kick, Elements.physical, 1.d2(), A =>
-        {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 4));
         });
         E.SetCorpse(Chance.Always);
@@ -27560,11 +27561,12 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent();
-        E.AddAttack(AttackTypes.horn, Elements.physical, 3.d6(), A =>
+        E.AddAttack(AttackTypes.horn, Elements.physical, 3.d6()); // +5 from strength, gored by horns.
+        E.AddAttack(AttackTypes.butt, Elements.physical, 3.d4(), A => // +5 from strength, butt by head.
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
-        E.AddAttack(AttackTypes.kick, Elements.physical, 3.d4()); // +5
         E.SetCorpse(Chance.Always);
       });
 
@@ -27653,10 +27655,12 @@ namespace Pathos
         E.Startup.SetResistance(Elements.petrify);
         E.AddAttack(AttackTypes.butt, Elements.physical, 6.d6(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.AddAttack(AttackTypes.butt, Elements.physical, 6.d6(), A => // TODO: change to AttackTypes.Tusk?
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
         E.SetCorpse(Chance.Always);
@@ -27793,6 +27797,7 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.butt, Elements.physical, 8.d8(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
         E.SetCorpse(Chance.Never);
@@ -27973,10 +27978,12 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.butt, Elements.physical, 4.d8(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.AddAttack(AttackTypes.butt, Elements.physical, 4.d8(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +6
         E.SetCorpse(Chance.Always);
@@ -28023,6 +28030,7 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.butt, Elements.physical, 4.d4(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         }); // +7
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
@@ -33204,6 +33212,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10());
         E.AddAttack(AttackTypes.butt, Elements.physical, 1.d8(), A =>
         {
+          A.Apply.Knockback();
           A.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.stunned, 1.d4() + 1));
         });
         E.SetCorpse(Chance.Always);
