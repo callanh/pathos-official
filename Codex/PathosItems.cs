@@ -9552,9 +9552,11 @@ namespace Pathos
         I.Material = Materials.copper;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(10);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.bell, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.bell, Use =>
         {
           Use.Apply.Alert(Dice.Fixed(10));
+
+          // TODO: blessed/cursed effect?
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(10), Sonics.bell);
       });
@@ -9758,9 +9760,11 @@ namespace Pathos
         I.Material = Materials.copper;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(15);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.bugle, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.bugle, Use =>
         {
           Use.Apply.Alert(Dice.Fixed(10));
+
+          // TODO: blessed/cursed effect?
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(20), Sonics.tool);
       });
@@ -9838,7 +9842,7 @@ namespace Pathos
         I.Essence = ToolEssence5;
         I.Price = Gold.FromCoins(25);
         I.ChargesDice = 1.d5() + 4;
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.drum, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.AreaOfEffect, Property: Properties.deafness), Delay.FromTurns(10), Sonics.drum, Use =>
         {
           Use.SetCast().Explosion(Explosions.light, Dice.Zero);
           Use.Apply.Alert(Dice.Fixed(10));
@@ -9850,7 +9854,11 @@ namespace Pathos
               F.CreateTrap(Codex.Devices.pit, Destruction: true);
               F.WithSourceSanctity
               (
-                B => B.Shout(A => A.ApplyTransient(Properties.stunned, 1.d5() + 5)),
+                B => B.Shout(A =>
+                {
+                  A.ApplyTransient(Properties.deafness, 1.d20() + 20);
+                  A.ApplyTransient(Properties.stunned, 1.d5() + 5);
+                }),
                 U => U.Shout(A => A.ApplyTransient(Properties.deafness, 1.d10() + 10)),
                 C => C.ApplyTransient(Properties.deafness, 2.d10() + 10) // deafen yourself
               );
@@ -10215,9 +10223,11 @@ namespace Pathos
         I.Material = Materials.leather;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(25);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.drum, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.drum, Use =>
         {
-          Use.Apply.Alert(Dice.Fixed(20));
+          Use.Apply.Alert(Dice.Fixed(10));
+
+          // TODO: blessed/cursed effect?
         });
         I.AddObviousIngestUse(Motions.eat, 250, Delay.FromTurns(20), Sonics.tool);
       });
@@ -10417,16 +10427,14 @@ namespace Pathos
         I.Material = Materials.wood;
         I.Essence = ToolEssence0;
         I.Price = WoodenHarpPrice;
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.harp, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.harp, Use =>
         {
-          Use.Apply.WhenConfused
+          Use.Apply.Alert(Dice.Fixed(10));
+          Use.Apply.WithSourceSanctity
           (
-            T => T.Alert(Dice.Fixed(10)),
-            F =>
-            {
-              F.Alert(Dice.Fixed(5));
-              F.Pacify(Elements.magical, Kinds.fairy);
-            }
+            B => B.Pacify(Elements.magical, Kinds.fairy),
+            U => U.Nothing(),
+            C => C.AreaTransient(Properties.aggravation, 10.d10(), Kinds.fairy)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 300, Delay.FromTurns(20), Sonics.tool);
@@ -10578,23 +10586,15 @@ namespace Pathos
         I.Price = Gold.FromCoins(100);
         I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.whistle, Use =>
         {
-          Use.Apply.Alert(1.d6() + 1);
-          Use.Apply.WhenConfused
+          Use.Apply.Recall();
+          /*
+          Use.Apply.WithSourceSanctity
           (
-            T => T.Alert(Dice.Fixed(10)),
-            F =>
-            {
-              F.Recall();
-              /*
-              F.WithSourceSanctity
-              (
-                B => B.Recall(), // TODO: mild area healing?
-                U => U.Recall(),
-                C => C.Gather(Range.Sq15, Items: false, Characters: true, Boulders: false)
-              );
-              */
-            }
+            B => B.Recall(), // TODO: mild area healing?
+            U => U.Recall(),
+            C => C.Gather(Range.Sq15, Items: false, Characters: true, Boulders: false)
           );
+          */
         });
         I.AddObviousIngestUse(Motions.eat, 50, Delay.FromTurns(10), Sonics.tool, A =>
         {
@@ -10807,9 +10807,15 @@ namespace Pathos
         I.Material = Materials.tin;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(10);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.whistle, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.whistle, Use =>
         {
-          Use.Apply.Alert(2.d6() + 6);
+          Use.Apply.Alert(Dice.Fixed(10));
+          Use.Apply.WithSourceSanctity
+          (
+            B => B.Pacify(Elements.magical, Kinds.dog),
+            U => U.Nothing(),
+            C => C.AreaTransient(Properties.aggravation, 3.d6() + 3, Kinds.dog)
+          );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.tool);
       });
@@ -10846,9 +10852,11 @@ namespace Pathos
         I.Material = Materials.bone;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(15);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.horn, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.horn, Use =>
         {
           Use.Apply.Alert(Dice.Fixed(10));
+
+          // TODO: blessed/cursed effect?
         });
         I.AddObviousIngestUse(Motions.eat, 180, Delay.FromTurns(20), Sonics.tool);
       });
@@ -10979,30 +10987,15 @@ namespace Pathos
         I.Material = Materials.wood;
         I.Essence = ToolEssence0;
         I.Price = Gold.FromCoins(12);
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.flute, Use =>
+        I.AddObviousUse(Motions.play, new Utility(Purpose.Debuff, Property: Properties.sleeping), Delay.FromTurns(10), Sonics.flute, Use =>
         {
-          Use.Apply.WhenConfused
+          Use.Apply.Alert(Dice.Fixed(10));
+          Use.Apply.WithSourceSanctity
           (
-            T => T.Alert(Dice.Fixed(10)),
-            F =>
-            {
-              F.Alert(Dice.Fixed(5));
-              F.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.snake);
-            }
+            B => B.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.snake),
+            U => U.Nothing(),
+            C => C.AreaTransient(Properties.aggravation, 3.d6() + 3, Kinds.snake, Kinds.naga)
           );
-
-          // NOTE: wooden flute is not meant to be strongly magical, so the below powers are probably too much:
-          /*
-          Use.Apply.WhenConfused
-          (
-            T => T.Polymorph(Entities.king_cobra),
-            F => F.WithSourceSanctity
-            (
-              B => B.Charm(Elements.magical, Delay.FromTurns(40000), Kinds.snake, Kinds.naga),
-              U => U.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.snake),
-              C => C.CreateEntity(1.d3(), Kinds.snake)
-            )
-          );*/
         });
         I.AddObviousIngestUse(Motions.eat, 50, Delay.FromTurns(10), Sonics.tool);
       });

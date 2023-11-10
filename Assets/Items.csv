@@ -378,21 +378,21 @@ tool,instrument,bell of harmony,bell,,,,,,silver,40,300,250,2,standard,FALSE,
 tool,instrument,bell of resources,bell,,,,,,silver,40,300,300,2,standard,FALSE,
 tool,instrument,bell of secrets,bell,,,,,,silver,40,300,200,2,standard,FALSE,
 tool,instrument,bell of strife,bell,,,,,,silver,40,300,150,2,standard,FALSE,
-tool,instrument,brass bugle,bugle,A hand-held brass horn.,,,,,copper,5,100,15,4,standard,FALSE,
-tool,instrument,bronze bell,bell,,,,,,copper,5,300,10,10,standard,FALSE,
-tool,instrument,drum of earthquake,drum,,,,,,leather,100,250,25,2,standard,FALSE,
+tool,instrument,brass bugle,bugle,A hand-held brass horn.,,,,,copper,5,100,15,4,standard,FALSE,play:Debuff:sleeping|/:0
+tool,instrument,bronze bell,bell,,,,,,copper,5,300,10,10,standard,FALSE,play:Debuff:sleeping|/:0
+tool,instrument,drum of earthquake,drum,,,,,,leather,100,250,25,2,standard,FALSE,play:AreaOfEffect:deafness|/:0
 tool,instrument,fire horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,
 tool,instrument,frost horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,
 tool,instrument,horn of plenty,horn,,,,,,bone,100,180,50,2,standard,FALSE,
-tool,instrument,leather drum,drum,,,,,,leather,5,250,25,2,standard,FALSE,
+tool,instrument,leather drum,drum,,,,,,leather,5,250,25,2,standard,FALSE,play:Debuff:sleeping|/:0
 tool,instrument,magic bugle,bugle,,,,,,copper,50,100,35,2,standard,FALSE,
 tool,instrument,magic flute,flute,,,,,,wood,50,50,36,2,standard,FALSE,
 tool,instrument,magic harp,harp,,,,,,wood,50,300,150,2,standard,FALSE,
 tool,instrument,magic whistle,whistle,,,,,,tin,50,30,100,25,standard,FALSE,
-tool,instrument,tin whistle,whistle,,,,,,tin,5,30,10,63,standard,FALSE,
-tool,instrument,tooled horn,horn,,,,,,bone,5,180,15,4,standard,FALSE,
-tool,instrument,wooden flute,flute,,,,,,wood,5,50,12,4,standard,FALSE,
-tool,instrument,wooden harp,harp,,,,,,wood,5,300,50,4,standard,FALSE,
+tool,instrument,tin whistle,whistle,,,,,,tin,5,30,10,63,standard,FALSE,play:Debuff:sleeping|/:0
+tool,instrument,tooled horn,horn,,,,,,bone,5,180,15,4,standard,FALSE,play:Debuff:sleeping|/:0
+tool,instrument,wooden flute,flute,,,,,,wood,5,50,12,4,standard,FALSE,play:Debuff:sleeping|/:0
+tool,instrument,wooden harp,harp,,,,,,wood,5,300,50,4,standard,FALSE,play:Debuff:sleeping|/:0
 tool,light,Illuminare,,,,,3,,iron,0,30,1200,1,artifact,FALSE,zap:AreaOfEffect:fear|/:0
 tool,light,lantern,,,,,4,,copper,10,300,12,15,standard,FALSE,
 tool,light,magic candle,candle,,,,2,,wax,50,50,100,2,standard,FALSE,
