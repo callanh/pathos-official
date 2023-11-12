@@ -13766,6 +13766,24 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d6());
       });
 
+      plastic_sword = AddMeleeWeapon("plastic sword", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("toy sword", null);
+        I.Glyph = Glyphs.plastic_sword;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Rarity = 0;
+        I.Size = Size.Small;
+        I.Weight = Weight.FromUnits(100);
+        I.Material = Materials.plastic;
+        I.Essence = WeaponEssence2;
+        I.Price = Gold.FromCoins(5);
+        //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d4());
+      });
+
       shuriken = AddThrownWeapon("shuriken", I =>
       {
         I.Description = "A sharp metal throwing weapon, smaller than a hand and shaped like a star.";
@@ -15329,6 +15347,9 @@ namespace Pathos
     public readonly Item war_hammer;
     public readonly Item worm_tooth;
     public readonly Item chakram;
+
+    // toy.
+    public readonly Item plastic_sword;
 
     // oriental.
     public readonly Item kanabo;

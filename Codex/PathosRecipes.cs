@@ -62,7 +62,7 @@ namespace Pathos
 
       AddRecipe(Entities.paper_golem, Materials.paper, Items.scroll_of_blank_paper, Items.book_of_blank_paper);
       
-      AddRecipe(Entities.plastic_golem, Materials.plastic, Items.expensive_camera, Items.fly_swatter, Items.rubber_hose, Items.ice_box);
+      AddRecipe(Entities.plastic_golem, Materials.plastic, Items.expensive_camera, Items.fly_swatter, Items.rubber_hose, Items.ice_box, Items.plastic_sword);
       
       AddRecipe(Entities.rope_golem, Materials.cloth, Items.sack);
       

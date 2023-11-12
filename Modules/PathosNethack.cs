@@ -2768,7 +2768,7 @@ namespace Pathos
 
       var TownArray = new[] { GridArray.ToProbability(T => T.Frequency).GetRandom() }; // generate a single town.
 #if DEBUG
-      //TownArray = new[] { GridArray[7] }; // test a specific town.
+      //TownArray = new[] { GridArray[6] }; // test a specific town.
       //TownArray = GridArray; // test all towns.
 #endif
       foreach (var Town in TownArray)
@@ -3004,6 +3004,9 @@ namespace Pathos
                     Generator.PlaceShop(TownSquare, TownShop, 1.d4().Roll());
                     Generator.CorpseSquare(TownSquare);
 
+                    if (TownSquare.Fixture != null)
+                      TownSquare.Fixture.SetBroken(true);
+
                     // murdered by orcs.
                     DeferList.Add(() =>
                     {
@@ -3021,6 +3024,9 @@ namespace Pathos
 
                 Generator.PlaceShrine(TownSquare, ShrineProbability.GetRandom());
                 Generator.CorpseSquare(TownSquare);
+
+                //if (TownSquare.Fixture != null)
+                //  TownSquare.Fixture.SetBroken(true);
 
                 DeferList.Add(() =>
                 {

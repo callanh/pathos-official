@@ -98,7 +98,7 @@ namespace Pathos
       {
         B.Description = null;
 
-        B.Prison = true;
+        B.PrisonGlyph = Codex.Glyphs.statue_base;
 
         B.DamageElement = Elements.physical;
         B.DamageDice = 1.d30();

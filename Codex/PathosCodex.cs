@@ -1103,7 +1103,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Barriers.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Grounds.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Portals.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Blocks.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Blocks.List.SelectMany(E => new[] { E.Glyph, E.PrisonGlyph }.ExceptNull()));
       UsedGlyphSet.AddRange(Manifest.Beams.List.SelectMany(E => new[] { E.HorizontalGlyph, E.VerticalGlyph, E.BackwardSlantGlyph, E.ForwardSlantGlyph }));
       UsedGlyphSet.AddRange(Manifest.Explosions.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Strikes.List.Select(E => E.Glyph));
@@ -1127,7 +1127,6 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new[] { E.ActiveGlyph, E.HoldGlyph }));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
-      UsedGlyphSet.Add(Manifest.Glyphs.StatueBase);
 
       foreach (var UnusedGlyph in Manifest.Glyphs.List.Except(UsedGlyphSet))
         Record($"Glyph {UnusedGlyph.Name} is not used");

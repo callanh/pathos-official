@@ -15034,7 +15034,8 @@ namespace Pathos
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.SetCorpse(Chance.Never);
-        E.DropLoot.AddKit(1.d3(), Chance.Always, Items.iron_chain);
+        E.DropLoot.AddKit(1.d3(), Chance.Always, Items.iron_chain); 
+        //E.DropLoot.AddKit(1.d3(), Chance.Always, Items.iron_rod); // TODO: iron rod.
       });
 
       leather_golem = AddEntity(Kinds.golem, null, "leather golem", E =>
@@ -15079,11 +15080,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +2 from str.
         E.SetCorpse(Chance.Never);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.leather_cloak);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.leather_gloves);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.leather_armour);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.alchemy_smock);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.elven_leather_helm);
+        E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.leather_cloak);
+        E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.leather_gloves);
+        E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.leather_armour);
+        E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.alchemy_smock);
+        E.DropLoot.AddKit(Chance.OneIn2, Dice.One, Items.elven_leather_helm);
       });
 
       paper_golem = AddEntity(Kinds.golem, null, "paper golem", E =>
@@ -15176,7 +15177,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
         E.SetCorpse(Chance.Never);
-        //E.DropLoot.AddKit(1.d3(), Chance.Always, Items.pearl);
+        //E.DropLoot.AddKit(1.d3(), Chance.Always, Items.pearl); // TODO: need to add 'pearl'.
       });
 
       plastic_golem = AddEntity(Kinds.golem, null, "plastic golem", E =>
@@ -15221,6 +15222,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +3 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Never);
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.plastic_sword);
       });
 
       rope_golem = AddEntity(Kinds.golem, null, "rope golem", E =>
