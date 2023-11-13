@@ -19,7 +19,7 @@ namespace Pathos
           Description: "Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.", 
           Colour: Inv.Colour.MediumVioletRed, 
           Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com", 
-          RequiresMasterMode: false, IsPublished: true)
+          RequiresMasterMode: false)
     {
       this.Codex = Codex;
 

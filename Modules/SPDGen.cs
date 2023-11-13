@@ -12,7 +12,7 @@ namespace Pathos
               "Interesting rooms and secrets await but do not linger; "
               + "you must descend or die. Based on the map generation from Shattered Pixel Dungeon.", 
               Colour: Inv.Colour.SeaGreen, Author: "KW", Email: "2159687@gmail.com", 
-              RequiresMasterMode: false, IsPublished: true)
+              RequiresMasterMode: false)
         {
             this.Codex = Codex;
 

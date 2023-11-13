@@ -16,7 +16,7 @@ namespace Pathos
           Description: "Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.", 
           Colour: Inv.Colour.DarkGoldenrod, 
           Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com", 
-          RequiresMasterMode: true, IsPublished: true)
+          RequiresMasterMode: true)
     {
       this.Codex = Codex;
 

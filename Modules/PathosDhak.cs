@@ -16,7 +16,7 @@ namespace Pathos
           Description: "Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.", 
           Colour: Inv.Colour.DarkCyan, 
           Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com", 
-          RequiresMasterMode: false, IsPublished: true)
+          RequiresMasterMode: false)
     {
       this.Codex = Codex;
 
