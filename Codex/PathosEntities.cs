@@ -25704,19 +25704,19 @@ namespace Pathos
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 5, DEX: 18, CON: 12, INT: 16, WIS: 16, CHA: 18);
+        E.ManaAdvancement.Set(1.d8());
+        E.DefaultForm.Set(STR: 5, DEX: 18, CON: 12, INT: 16, WIS: 24, CHA: 30);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.champion, Skills.conjuration, Skills.literacy, Skills.music);
         E.Startup.SetTalent(Properties.teleportation, Properties.polymorph_control, Properties.teleport_control);
-        E.Startup.SetResistance(Elements.magical);
-        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
-        {
-          K.Apply.StealCarriedAsset(Properties.fear);
-        });
+        E.Startup.SetResistance(Elements.magical, Elements.drain, Elements.poison);
+        E.Startup.AddGrimoire(Dice.One, Spells.summoning);
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedAsset(Properties.fear));
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedAsset(Properties.fear));
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedAsset(Properties.fear));
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.Always);
       });
