@@ -165,6 +165,7 @@ namespace Pathos
         C.AddAvatar(Races.fairy, Genders.male, Glyphs.fairy_male_bard);
         C.AddAvatar(Races.fairy, Genders.female, Glyphs.fairy_female_bard);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_bard);
+        C.AddAvatar(Races.troll, Genders.female, Glyphs.troll_female_bard);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_bard);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_bard);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_bard);

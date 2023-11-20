@@ -930,6 +930,7 @@ DeviceName,noxious pool,tehlikeli havuz
 DeviceName,pit,çukur
 DeviceName,poison gas trap,zehirli gaz tuzağı
 DeviceName,polymorph trap,şekil değiştirme tuzağı
+DeviceName,pressure plate,
 DeviceName,scything blade trap,tırpan tuzağı
 DeviceName,shock trap,şok tuzağı
 DeviceName,silence trap,sessizlik tuzağı
@@ -1751,7 +1752,6 @@ EntityName,squealer,sahyal
 EntityName,stalker,takipçi
 EntityName,star vampire,yıldız vampiri
 EntityName,static blob,hareketsiz birikinti
-EntityName,statue gargoyle,heykel gargoy
 EntityName,steam vortex,buhar fırtınası
 EntityName,stone giant,taş dev
 EntityName,stone golem,taş golem
@@ -4404,6 +4404,7 @@ SonicName,chirp,cıvıltı
 SonicName,clank,şıkırtı
 SonicName,close door,kapıyı kapat
 SonicName,cluck,gıdak
+SonicName,clunk,
 SonicName,coins,coin
 SonicName,conclusion,
 SonicName,craft,oluşturuldu

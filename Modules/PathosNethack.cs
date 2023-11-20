@@ -1122,7 +1122,7 @@ namespace Pathos
             Debug.WriteLine(UniqueEntity.Name);
 
             var Script = UniqueCharacter.InsertScript();
-            Script.Killed.Add(Codex.Tricks.warping, Target: null);
+            Script.Killed.Sequence.Add(Codex.Tricks.warping, Target: null);
 
             // has the endgame letter.
             var LetterAsset = Generator.NewSpecificAsset(UniqueSquare, Codex.Items.Stamped_Letter);
@@ -5093,7 +5093,7 @@ namespace Pathos
           if (LairSquare.Wall != null && LairSquare.Wall.IsPhysical())
             LairSquare.Wall.SetStructure(WallStructure.Permanent);
 
-          if (LairSquare.Boulder != null && LairSquare.Boulder.Block.Prison)
+          if (LairSquare.Boulder != null && LairSquare.Boulder.Block.Prison != null)
             LairSquare.Boulder.SetPrisoner(Generator.NewCharacter(LairSquare, MercenaryProbability.GetRandom()));
 
           if (LairSquare.Passage != null && LairSquare.Passage.Destination == null)
@@ -5258,7 +5258,7 @@ namespace Pathos
           Generator.PlacePassage(MarketSquare, Codex.Portals.transportal, PortalSquare);
 
         // statues are black marketeers as well.
-        if (MarketSquare.Boulder != null && MarketSquare.Boulder.Block.Prison)
+        if (MarketSquare.Boulder != null && MarketSquare.Boulder.Block.Prison != null)
           MarketSquare.Boulder.SetPrisoner(Generator.NewCharacter(MarketSquare, MercenaryProbability.GetRandomOrNull()));
 
         // create a shop.

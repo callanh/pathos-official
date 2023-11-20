@@ -930,6 +930,7 @@ DeviceName,noxious pool,veszedelmes pocsolya
 DeviceName,pit,verem
 DeviceName,poison gas trap,mérgesgáz-csapda
 DeviceName,polymorph trap,átváltozáscsapda
+DeviceName,pressure plate,
 DeviceName,scything blade trap,kaszálópenge-csapda
 DeviceName,shock trap,sokkcsapda
 DeviceName,silence trap,némaságcsapda
@@ -1751,7 +1752,6 @@ EntityName,squealer,sikoltó
 EntityName,stalker,osonó
 EntityName,star vampire,csillagvámpír
 EntityName,static blob,statikus paca
-EntityName,statue gargoyle,vízköpő szobor
 EntityName,steam vortex,gőzörvény
 EntityName,stone giant,kőóriás
 EntityName,stone golem,kőgólem
@@ -4404,6 +4404,7 @@ SonicName,chirp,csiripelés
 SonicName,clank,ütés
 SonicName,close door,ajtó csukás
 SonicName,cluck,kotkodácsolás
+SonicName,clunk,
 SonicName,coins,érmecsörgés
 SonicName,conclusion,befejezés
 SonicName,craft,barkácsolás

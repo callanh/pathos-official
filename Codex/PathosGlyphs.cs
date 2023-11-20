@@ -90,6 +90,7 @@ namespace Pathos
       Register.Alias(disgusting_mould, "disgusting mold");
       Register.Alias(green_mould, "green mold");
       Register.Alias(yellow_mould, "yellow mold");
+      Register.Alias(gargoyle, "statue gargoyle");
 
       // Items.
       Register.Alias(green_gem, "jade");
@@ -1041,6 +1042,7 @@ namespace Pathos
     public readonly Glyph troll_male_samurai;
     public readonly Glyph troll_male_wizard;
 
+    public readonly Glyph troll_female_bard;
     public readonly Glyph troll_female_reaver;
     public readonly Glyph troll_female_samurai;
 
@@ -1705,6 +1707,7 @@ namespace Pathos
     public readonly Glyph scroll_of_labelled_paper;
     public readonly Glyph scroll_of_blank_paper;
     public readonly Glyph scything_blade_trap;
+    public readonly Glyph pressure_plate;
     //public readonly Glyph severed_hand;
     public readonly Glyph sewer_rat;
     public readonly Glyph shade;
@@ -1802,7 +1805,9 @@ namespace Pathos
     public readonly Glyph star_vampire;
     public readonly Glyph static_blob;
     public readonly Glyph statue;
-    public readonly Glyph statue_gargoyle;
+    public readonly Glyph statue_base;
+    //public readonly Glyph trophy;
+    //public readonly Glyph trophy_base;
     public readonly Glyph steam_vortex;
     public readonly Glyph mithril_golem;
     //public readonly Glyph stethoscope;
@@ -2568,7 +2573,6 @@ namespace Pathos
 
     public readonly Glyph interrupt;
     public readonly Glyph shroud;
-    public readonly Glyph statue_base;
 
     public readonly Glyph blaze;
     public readonly Glyph scorch;

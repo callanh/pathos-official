@@ -424,7 +424,16 @@ namespace Pathos
         D.TriggerApply.UnlessTargetResistant(Elements.poison, B => B.DecreaseAbility(Attributes.strength, Dice.One));
       });
 
-      scything_blade_trap = AddDevice("scything blade trap", Difficulty: 19, 2.d6(), Glyphs.scything_blade_trap, Sonics.weapon, D =>
+      pressure_plate = AddDevice("pressure plate", Difficulty: 0, RepeatDice: null, Glyphs.pressure_plate, Sonics.clunk, D =>
+      {
+        D.Frequency = 0; // never randomly generated because it needs generated sequences.
+        D.UntrapSkill = Skills.traps;
+        D.UntrapAttribute = Attributes.dexterity;
+        D.Material = Materials.stone;
+        D.SetEscapeProperty(Properties.levitation, Properties.flight);
+      });
+
+      scything_blade_trap = AddDevice("scything blade trap", Difficulty: 19, RepeatDice: 2.d6(), Glyphs.scything_blade_trap, Sonics.weapon, D =>
       {
         D.Frequency = 10;
         D.UntrapSkill = Skills.traps;
@@ -600,6 +609,7 @@ namespace Pathos
     public readonly Device pit;
     public readonly Device polymorph_trap;
     public readonly Device poison_gas_trap;
+    public readonly Device pressure_plate;
     public readonly Device scything_blade_trap;
     public readonly Device shock_trap;
     public readonly Device silence_trap;

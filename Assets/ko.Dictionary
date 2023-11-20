@@ -930,6 +930,7 @@ DeviceName,noxious pool,유독성 웅덩이
 DeviceName,pit,구덩이
 DeviceName,poison gas trap,독가스 함정
 DeviceName,polymorph trap,폴리모프 함정
+DeviceName,pressure plate,
 DeviceName,scything blade trap,낫모양 칼날 함정
 DeviceName,shock trap,쇼크 함정
 DeviceName,silence trap,침묵 함정
@@ -1751,7 +1752,6 @@ EntityName,squealer,스퀼러
 EntityName,stalker,스토커
 EntityName,star vampire,스타 뱀파이어
 EntityName,static blob,정전기 방울
-EntityName,statue gargoyle,석상 가고일
 EntityName,steam vortex,증기 소용돌이
 EntityName,stone giant,암석 거인
 EntityName,stone golem,암석 골렘
@@ -4404,6 +4404,7 @@ SonicName,chirp,지저귐
 SonicName,clank,철컥거림
 SonicName,close door,문 닫힘
 SonicName,cluck,꼬꼬댁거림
+SonicName,clunk,
 SonicName,coins,동전
 SonicName,conclusion,결말
 SonicName,craft,제작

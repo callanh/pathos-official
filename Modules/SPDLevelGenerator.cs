@@ -422,8 +422,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script5 = boss.InsertScript();
-                        script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[32, 20]);
-                        script5.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[4, 4]);
+                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[32, 20]);
+                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[4, 4]);
                         break;
                     }
                 case 10:
@@ -449,8 +449,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script10 = boss.InsertScript();
-                        script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 5]);
-                        script10.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 23]);
+                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 5]);
+                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 23]);
                         break;
                     }
                 case 15:
@@ -474,8 +474,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script15 = boss.InsertScript();
-                        script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 11]);
-                        script15.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 2]);
+                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 11]);
+                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 2]);
                         break;
                     }
                 case 20:
@@ -499,8 +499,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var boss20killedscript = boss.InsertScript();
-                        boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 23]);
-                        boss20killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 2]);
+                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 23]);
+                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 2]);
                         break;
                     }
                 case 25:
@@ -508,8 +508,8 @@ namespace Pathos
                         boss = SPDDebug.generator.NewCharacter(Square, SPDGameList.RandomUniqueBoss());
                         SPDDebug.generator.OutfitCharacter(boss);
                         var boss25killedscript = boss.InsertScript();
-                        boss25killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 1]);
-                        boss25killedscript.Killed.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 9]);
+                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 1]);
+                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 9]);
                         break;
                     }
                 default: boss = null; break;

@@ -930,6 +930,7 @@ DeviceName,noxious pool,酸のプール
 DeviceName,pit,落とし穴
 DeviceName,poison gas trap,毒ガスの罠
 DeviceName,polymorph trap,変化の罠
+DeviceName,pressure plate,
 DeviceName,scything blade trap,刃の罠
 DeviceName,shock trap,電流の罠
 DeviceName,silence trap,沈黙の罠
@@ -1751,7 +1752,6 @@ EntityName,squealer,スクイーラー
 EntityName,stalker,忍び寄るもの
 EntityName,star vampire,星から訪れたもの
 EntityName,static blob,帯電ブロブ
-EntityName,statue gargoyle,石のガーゴイル
 EntityName,steam vortex,蒸気の渦
 EntityName,stone giant,石の巨人
 EntityName,stone golem,石のゴーレム
@@ -4404,6 +4404,7 @@ SonicName,chirp,鳴く
 SonicName,clank,ガチャン
 SonicName,close door,扉を閉めた
 SonicName,cluck,コケッコー
+SonicName,clunk,
 SonicName,coins,コイン
 SonicName,conclusion,ゲームオーバー
 SonicName,craft,トンテンカン

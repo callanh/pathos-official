@@ -15705,52 +15705,6 @@ namespace Pathos
       #endregion
 
       #region gremlin.
-      gargoyle = AddEntity(Kinds.gremlin, null, "gargoyle", E =>
-      {
-        E.Glyph = Glyphs.gargoyle;
-        E.Sonic = Sonics.cackle;
-        E.Level = 16;
-        E.Challenge = 398;
-        E.Difficulty = 18;
-        E.Frequency = 2;
-        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S2_5;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(22000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 16, DEX: 11, CON: 16, INT: 6, WIS: 11, CHA: 7);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent();
-        E.Startup.SetResistance(Elements.petrify);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5()); // +3 from str.
-        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
-        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3());
-        E.SetCorpse(Chance.OneIn3);
-      });
-
       gremlin = AddEntity(Kinds.gremlin, null, "gremlin", E =>
       {
         E.Glyph = Glyphs.gremlin;
@@ -15802,15 +15756,15 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      statue_gargoyle = AddEntity(Kinds.gremlin, null, "statue gargoyle", E =>
+      gargoyle = AddEntity(Kinds.gremlin, null, "gargoyle", E =>
       {
-        E.Glyph = Glyphs.statue_gargoyle;
+        E.Glyph = Glyphs.gargoyle;
         E.Sonic = Sonics.cackle;
-        E.Level = 10;
-        E.Challenge = 183;
-        E.Difficulty = 10;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
+        E.Level = 16;
+        E.Challenge = 398;
+        E.Difficulty = 18;
+        E.Frequency = 2;
+        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
@@ -15818,10 +15772,10 @@ namespace Pathos
         E.Weight = Weight.FromUnits(22000);
         E.Figure.Set
         (
-          Material: Materials.stone,
+          Material: Materials.animal,
           Head: true,
-          Mind: false,
-          Voice: false,
+          Mind: true,
+          Voice: true,
           Eyes: true,
           Ears: true,
           Hands: true,
@@ -15834,7 +15788,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 17, DEX: 11, CON: 18, INT: 6, WIS: 11, CHA: 7);
+        E.DefaultForm.Set(STR: 16, DEX: 11, CON: 16, INT: 6, WIS: 11, CHA: 7);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();
@@ -15843,9 +15797,10 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d3()); // +3 from str.
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d3());
-        E.SetCorpse(Chance.Never);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3());
+        E.SetCorpse(Chance.OneIn3);
       });
 
       winged_gargoyle = AddEntity(Kinds.gremlin, null, "winged gargoyle", E =>
@@ -15884,10 +15839,11 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();
+        E.SetConcealment(Codex.Blocks.statue);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.Startup.SetResistance(Elements.petrify);
+        E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4());
@@ -29363,7 +29319,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.Startup.SetTalent(Properties.slippery);
+        E.Startup.SetTalent(Properties.free_action);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -2
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -29465,7 +29421,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.Startup.SetTalent(Properties.slippery);
+        E.Startup.SetTalent(Properties.free_action);
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2() + 3); // -3
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn4);
@@ -29607,7 +29563,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.poison);
-        E.Startup.SetTalent(Properties.slippery);
+        E.Startup.SetTalent(Properties.free_action);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
@@ -34398,6 +34354,9 @@ namespace Pathos
 
       // replaced because having an iron golem is enough.
       Register.Alias(mithril_golem, "steel golem");
+
+      // statue gargoyle tiles were not distinct enough and showing 'statue gargoyle status' when concealed was a bit bad.
+      Register.Alias(gargoyle, "statue gargoyle");
       #endregion
     }
 #endif
@@ -34988,7 +34947,6 @@ namespace Pathos
     public readonly Entity stalker;
     public readonly Entity star_vampire;
     public readonly Entity static_blob;
-    public readonly Entity statue_gargoyle;
     public readonly Entity steam_vortex;
     public readonly Entity mithril_golem;
     public readonly Entity snow_golem;

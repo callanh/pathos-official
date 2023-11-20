@@ -930,6 +930,7 @@ DeviceName,noxious pool,piscina nociva
 DeviceName,pit,fossa
 DeviceName,poison gas trap,trappola per gas velenosi
 DeviceName,polymorph trap,trappola metamorfosi
+DeviceName,pressure plate,
 DeviceName,scything blade trap,trappola della lama falciante
 DeviceName,shock trap,trappola elettrica
 DeviceName,silence trap,trappola del silenzio
@@ -1751,7 +1752,6 @@ EntityName,squealer,strillone
 EntityName,stalker,molestatore
 EntityName,star vampire,vampiro stella
 EntityName,static blob,blob statico
-EntityName,statue gargoyle,statua gargoyle
 EntityName,steam vortex,vortice di vapore
 EntityName,stone giant,gigante di pietra
 EntityName,stone golem,golem di pietra
@@ -4404,6 +4404,7 @@ SonicName,chirp,cinguettio
 SonicName,clank,sferragliamento
 SonicName,close door,chiudi porta
 SonicName,cluck,chiocciare
+SonicName,clunk,
 SonicName,coins,monete
 SonicName,conclusion,conclusione
 SonicName,craft,creazione

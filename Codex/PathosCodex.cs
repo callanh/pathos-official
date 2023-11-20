@@ -1103,7 +1103,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Barriers.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Grounds.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Portals.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Blocks.List.SelectMany(E => new[] { E.Glyph, E.PrisonGlyph }.ExceptNull()));
+      UsedGlyphSet.AddRange(Manifest.Blocks.List.SelectMany(E => new[] { E.Glyph, E.Prison?.Glyph }.ExceptNull()));
       UsedGlyphSet.AddRange(Manifest.Beams.List.SelectMany(E => new[] { E.HorizontalGlyph, E.VerticalGlyph, E.BackwardSlantGlyph, E.ForwardSlantGlyph }));
       UsedGlyphSet.AddRange(Manifest.Explosions.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Strikes.List.Select(E => E.Glyph));
@@ -1409,6 +1409,7 @@ namespace Pathos
       Base.Register<Barrier>();
       Base.Register<Beam>();
       Base.Register<Block>();
+      Base.Register<Prison>();
       Base.Register<Boon>();
       Base.Register<Break>();
       Base.Register<Cast>();

@@ -930,6 +930,7 @@ DeviceName,noxious pool,ядовитая лужа
 DeviceName,pit,яма
 DeviceName,poison gas trap,ловушка с отравляющим газом
 DeviceName,polymorph trap,превращающая ловушка
+DeviceName,pressure plate,
 DeviceName,scything blade trap,ловушка с лезвиями
 DeviceName,shock trap,шоковая ловушка
 DeviceName,silence trap,ловушка тишины
@@ -1751,7 +1752,6 @@ EntityName,squealer,визгун
 EntityName,stalker,незримый охотник
 EntityName,star vampire,звёздный вампир
 EntityName,static blob,статичный пузырь
-EntityName,statue gargoyle,горгулья-статуя
 EntityName,steam vortex,паровой вихрь
 EntityName,stone giant,каменный великан
 EntityName,stone golem,каменный голем
@@ -4404,6 +4404,7 @@ SonicName,chirp,чириканье
 SonicName,clank,лязг
 SonicName,close door,закрывшаяся дверь
 SonicName,cluck,кудахтанье
+SonicName,clunk,
 SonicName,coins,монеты
 SonicName,conclusion,вхождение
 SonicName,craft,создание

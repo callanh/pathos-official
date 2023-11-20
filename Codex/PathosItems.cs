@@ -12825,25 +12825,6 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d7());
       });
 
-      dwarvish_spear = AddReachWeapon("dwarvish spear", I =>
-      {
-        I.Description = "This compact, dwarvish manufactured spear is ideal for close quarters combat.";
-        I.SetAppearance("stout spear", null);
-        I.Glyph = Glyphs.dwarvish_spear;
-        I.Sonic = Sonics.weapon;
-        I.OriginRace = Races.dwarf;
-        I.Series = null;
-        I.Rarity = 12;
-        I.Size = Size.Medium;
-        I.Weight = Weight.FromUnits(350);
-        I.Material = Materials.iron;
-        I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(8);
-        I.AddObviousIngestUse(Motions.eat, 35, Delay.FromTurns(30), Sonics.weapon);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d8());
-      });
-
       elven_arrow = AddRangedMissile(Ammunition.Arrow, "elven arrow", I =>
       {
         I.Description = null;
@@ -12941,25 +12922,6 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d8());
-      });
-
-      elven_spear = AddReachWeapon("elven spear", I =>
-      {
-        I.Description = "Its high-quality elvish manufacture makes for an effective close combat weapon.";
-        I.SetAppearance("runed spear", null);
-        I.Glyph = Glyphs.elven_spear;
-        I.Sonic = Sonics.weapon;
-        I.OriginRace = Races.elf;
-        I.Series = null;
-        I.Rarity = 10;
-        I.Size = Size.Medium;
-        I.Weight = Weight.FromUnits(350);
-        I.Material = Materials.wood;
-        I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(7);
-        I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d7());
       });
 
       fauchard = AddReachWeapon("fauchard", I =>
@@ -13464,25 +13426,6 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Pierce, 1.d5());
-      });
-
-      orcish_spear = AddReachWeapon("orcish spear", I =>
-      {
-        I.Description = null;
-        I.SetAppearance("crude spear", null);
-        I.Glyph = Glyphs.orcish_spear;
-        I.Sonic = Sonics.weapon;
-        I.OriginRace = Races.orc;
-        I.Series = null;
-        I.Rarity = 13;
-        I.Size = Size.Medium;
-        I.Weight = Weight.FromUnits(350);
-        I.Material = Materials.iron;
-        I.Essence = WeaponEssence1;
-        I.Price = Gold.FromCoins(5);
-        I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d5());
       });
 
       partisan = AddReachWeapon("partisan", I =>
@@ -14142,6 +14085,63 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6());
       });
 
+      orcish_spear = AddReachWeapon("orcish spear", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("crude spear", null);
+        I.Glyph = Glyphs.orcish_spear;
+        I.Sonic = Sonics.weapon;
+        I.OriginRace = Races.orc;
+        I.Series = null;
+        I.Rarity = 13;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(350);
+        I.Material = Materials.iron;
+        I.Essence = WeaponEssence1;
+        I.Price = Gold.FromCoins(5);
+        I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d5());
+      });
+
+      dwarvish_spear = AddReachWeapon("dwarvish spear", I =>
+      {
+        I.Description = "This compact, dwarvish manufactured spear is ideal for close quarters combat.";
+        I.SetAppearance("stout spear", null);
+        I.Glyph = Glyphs.dwarvish_spear;
+        I.Sonic = Sonics.weapon;
+        I.OriginRace = Races.dwarf;
+        I.Series = null;
+        I.Rarity = 12;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(350);
+        I.Material = Materials.iron;
+        I.Essence = WeaponEssence1;
+        I.Price = Gold.FromCoins(8);
+        I.AddObviousIngestUse(Motions.eat, 35, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+      });
+
+      elven_spear = AddReachWeapon("elven spear", I =>
+      {
+        I.Description = "Its high-quality elvish manufacture makes for an effective close combat weapon.";
+        I.SetAppearance("runed spear", null);
+        I.Glyph = Glyphs.elven_spear;
+        I.Sonic = Sonics.weapon;
+        I.OriginRace = Races.elf;
+        I.Series = null;
+        I.Rarity = 10;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(350);
+        I.Material = Materials.wood;
+        I.Essence = WeaponEssence1;
+        I.Price = Gold.FromCoins(7);
+        I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d7());
+      });
+
       mithril_spear = AddReachWeapon("mithril spear", I =>
       {
         I.Description = null;
@@ -14156,7 +14156,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(60);
         I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d7() + 1);
       });
 
       spetum = AddReachWeapon("spetum", I =>

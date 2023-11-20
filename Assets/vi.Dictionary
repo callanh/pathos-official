@@ -930,6 +930,7 @@ DeviceName,noxious pool,hố axit
 DeviceName,pit,hố
 DeviceName,poison gas trap,bẫy khí ga
 DeviceName,polymorph trap,bẫy biến đổi hình dạng
+DeviceName,pressure plate,
 DeviceName,scything blade trap,bẫy chém
 DeviceName,shock trap,bẫy sốc
 DeviceName,silence trap,bẫy câm lặng
@@ -1751,7 +1752,6 @@ EntityName,squealer,squealer
 EntityName,stalker,quái rình mò
 EntityName,star vampire,ma cà rồng sao
 EntityName,static blob,bãi điện
-EntityName,statue gargoyle,tượng gargoyle
 EntityName,steam vortex,cuộn xoáy hơi nước
 EntityName,stone giant,người khổng lồ đá
 EntityName,stone golem,golem đá
@@ -4404,6 +4404,7 @@ SonicName,chirp,tiếng chim hót
 SonicName,clank,tiếng kim loại
 SonicName,close door,tiếng đóng cửa
 SonicName,cluck,tiếng gà kêu
+SonicName,clunk,
 SonicName,coins,tiếng xu vàng
 SonicName,conclusion,tiếng kết thúc
 SonicName,craft,tiếng chế tạo
