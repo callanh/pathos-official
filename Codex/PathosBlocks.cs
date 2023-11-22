@@ -111,25 +111,22 @@ namespace Pathos
         });
       });
 
-      /*
-      // TODO: unable to colourise the glyphs as gold coloured and location doesn't passthrough prison tint.
       trophy = AddBlock("trophy", Codex.Glyphs.trophy, Codex.Sonics.scrape, Materials.gold, Size.Large, Weight.FromUnits(400000), B =>
       {
         B.Description = null;
 
-        B.SetPrison(Codex.Glyphs.trophy_base, Inv.Colour.Gold.Opacity(0.75F));
+        B.SetPrison(Codex.Glyphs.trophy_base, Inv.Colour.DarkGoldenrod);
 
         B.DamageElement = Elements.physical;
-        B.DamageDice = 1.d30();
+        B.DamageDice = 1.d60();
         B.SetWeakness(Elements.physical, Elements.digging, Elements.force, Elements.disintegrate);
 
-        B.BreakLoot.AddKit(Chance.Always, 3.d50(), Codex.Items.gold_coin);
+        B.BreakLoot.AddKit(Chance.Always, 5.d50(), Codex.Items.gold_coin);
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
         });
       });
-      */
 
       stone_boulder = AddBlock("stone boulder", Codex.Glyphs.stone_boulder, Codex.Sonics.scrape, Materials.stone, Size.Huge, Weight.FromUnits(200000), B =>
       {
@@ -205,7 +202,7 @@ namespace Pathos
     public readonly Block crystal_boulder;
     public readonly Block gold_boulder;
     public readonly Block statue;
-    //public readonly Block trophy;
+    public readonly Block trophy;
     public readonly Block stone_boulder;
     public readonly Block wooden_barrel;
   }

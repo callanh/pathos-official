@@ -306,6 +306,7 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_miner);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_miner);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_miner);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_miner);
         C.AddFeat(1, Properties.searching);
         C.AddFeat(5, Properties.vitality);
         C.AddFeat(10, Properties.appraisal);
@@ -422,6 +423,7 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_hunter);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_hunter);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_hunter);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_hunter);
         C.AddFeat(5, Properties.searching);
         C.AddFeat(10, Elements.cold);
         C.AddFeat(15, Properties.clarity);
@@ -969,6 +971,7 @@ namespace Pathos
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_samurai);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_samurai);
         C.AddAvatar(Races.troll, Genders.female, Glyphs.troll_female_samurai);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_samurai);
         C.AddFeat(2, Properties.quickness);
         C.AddFeat(16, Properties.stealth);
         C.Startup.SetSkill(Qualifications.proficient,
