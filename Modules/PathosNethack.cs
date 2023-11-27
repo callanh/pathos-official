@@ -3981,9 +3981,9 @@ namespace Pathos
       var JammedSquare = GetJammedSquare();
       if (JammedSquare != null)
       {
-        var ArtifactItem = Generator.GetUniqueItem();
-        if (ArtifactItem != null)
-          JammedSquare.PlaceAsset(Generator.NewSpecificAsset(JammedSquare, ArtifactItem));
+        var ArtifactAsset = Generator.GenerateUniqueAsset(JammedSquare);
+        if (ArtifactAsset != null)
+          JammedSquare.PlaceAsset(ArtifactAsset);
 
         Generator.PlaceBoulder(JammedSquare, LabyrinthBlock, IsRigid: true); // rigid so monsters don't move it around.
 
@@ -4956,9 +4956,9 @@ namespace Pathos
 
               if (StandardGeneration)
               {
-                var KingItem = Generator.GetUniqueItem();
-                if (KingItem != null)
-                  Generator.PlaceSpecificAsset(KingdomSquare, KingItem);
+                var KingAsset = Generator.GenerateUniqueAsset(KingdomSquare);
+                if (KingAsset != null)
+                  KingdomSquare.PlaceAsset(KingAsset);
               }
             }
             else if (Asset.Container != null)
@@ -5157,13 +5157,13 @@ namespace Pathos
             foreach (var SchoolSkill in SchoolSkillArray.Except(LairCharacter.Competencies.Select(C => C.Skill)))
               LairCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
 
-            var ArtifactItem = Generator.GetUniqueItem();
+            var ArtifactAsset = Generator.GenerateUniqueAsset(LairSquare);
 
-            if (ArtifactItem != null)
+            if (ArtifactAsset != null)
             {
-              LairCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(LairSquare, ArtifactItem));
+              LairCharacter.Inventory.Carried.Add(ArtifactAsset);
 
-              // medusa will not use the artifact.
+              // medusa will not use the artifact because her attacks are better.
               //Generator.OutfitCharacter(LairCharacter);
             }
           }
@@ -5408,11 +5408,11 @@ namespace Pathos
             // downgrade enchantment to specialist.
             TowerCharacter.GetCompetency(Codex.Skills.enchantment).Set(Codex.Qualifications.specialist);
 
-            var ArtifactItem = Generator.GetUniqueItem();
+            var ArtifactAsset = Generator.GenerateUniqueAsset(TowerSquare);
 
-            if (ArtifactItem != null)
+            if (ArtifactAsset != null)
             {
-              TowerCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(TowerSquare, ArtifactItem));
+              TowerCharacter.Inventory.Carried.Add(ArtifactAsset);
 
               // dracolich will not use the artifact.
               //Generator.OutfitCharacter(LairCharacter);

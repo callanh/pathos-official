@@ -978,7 +978,7 @@ namespace Pathos
 
                 if (ItemDelayed.Item == null)
                 {
-                    if (SPDRandom.Int(40) == 0) SPDDebug.generator.PlaceSpecificAsset(square, SPDDebug.generator.GetUniqueItem());
+                    if (SPDRandom.Int(40) == 0) SPDDebug.generator.PlaceSpecificAsset(square, SPDDebug.generator.RandomUniqueItem());
                     else square.PlaceAsset(SPDGameList.RandomAsset(square));
                 }
                 else

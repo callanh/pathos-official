@@ -430,7 +430,7 @@ namespace Pathos
         }
         private Item MaybeArtifact(int ArtifactChance)
         {
-            return SPDRandom.Int(ArtifactChance) == 0 ? SPDDebug.generator.GetUniqueItem(I => !ItemForbidden(I)) : null;
+            return SPDRandom.Int(ArtifactChance) == 0 ? SPDDebug.generator.RandomUniqueItem(I => !ItemForbidden(I)) : null;
         }
         
         private readonly Inv.DistinctList<Item> randomArmour;
