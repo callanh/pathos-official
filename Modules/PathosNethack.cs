@@ -1065,7 +1065,7 @@ namespace Pathos
               case 4:
                 // traps.
                 foreach (var FinalSquare in FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)))
-                  Generator.PlaceTrap(FinalSquare);
+                  Generator.PlaceTrap(FinalSquare, Revealed: false);
                 break;
 
               case 5:
@@ -1334,7 +1334,7 @@ namespace Pathos
 
           if (HoleSquare != null)
           {
-            Generator.PlaceTrap(HoleSquare, Codex.Devices.hole);
+            Generator.PlaceTrap(HoleSquare, Codex.Devices.hole, Revealed: false);
             var HoleTrap = HoleSquare.Trap;
             if (HoleTrap != null && HoleTrap.Device == Codex.Devices.hole)
             {
@@ -1381,7 +1381,7 @@ namespace Pathos
 
           if (PoolSquare != null)
           {
-            Generator.PlaceTrap(PoolSquare, Codex.Devices.noxious_pool);
+            Generator.PlaceTrap(PoolSquare, Codex.Devices.noxious_pool, Revealed: false);
 
             var PoolTrap = PoolSquare.Trap;
             if (PoolTrap != null && PoolTrap.Device == Codex.Devices.noxious_pool)
@@ -1420,7 +1420,7 @@ namespace Pathos
 
           if (LeakSquare != null)
           {
-            Generator.PlaceTrap(LeakSquare, Codex.Devices.sleeping_gas_trap);
+            Generator.PlaceTrap(LeakSquare, Codex.Devices.sleeping_gas_trap, Revealed: false);
             var LeakTrap = LeakSquare.Trap;
             if (LeakTrap != null && LeakTrap.Device == Codex.Devices.sleeping_gas_trap)
             {
@@ -1485,7 +1485,7 @@ namespace Pathos
 
           if (GreaseSquare != null)
           {
-            Generator.PlaceTrap(GreaseSquare, Codex.Devices.grease_trap);
+            Generator.PlaceTrap(GreaseSquare, Codex.Devices.grease_trap, Revealed: false);
 
             var GreaseTrap = GreaseSquare.Trap;
             if (GreaseTrap != null && GreaseTrap.Device == Codex.Devices.grease_trap)
@@ -1674,7 +1674,7 @@ namespace Pathos
         foreach (var TrapSquare in PrisonRoom.GetFloorSquares().Where(Generator.CanPlaceTrap))
         {
           if (Chance.OneIn2.Hit())
-            Generator.PlaceTrap(TrapSquare);
+            Generator.PlaceTrap(TrapSquare, Revealed: false);
 
           if (Chance.OneIn5.Hit())
             Generator.PlaceRandomAsset(TrapSquare);
@@ -1919,7 +1919,7 @@ namespace Pathos
           }
           else
           {
-            Generator.PlaceTrap(Square);
+            Generator.PlaceTrap(Square, Revealed: false);
 
             if (!Chance.OneIn3.Hit())
               PlaceContainer(Square, Locked: true, Trapped: true);
@@ -2021,12 +2021,12 @@ namespace Pathos
         {
           Generator.DropCoins(NookSquare, Generator.RandomCoinQuantity(NookSquare));
           if (Chance.OneIn3.Hit())
-            Generator.PlaceTrap(NookSquare);
+            Generator.PlaceTrap(NookSquare, Revealed: false);
         }
         else if (Chance.OneIn7.Hit())
           PlaceContainer(NookSquare);
         else if (Chance.OneIn7.Hit())
-          Generator.PlaceTrap(NookSquare);
+          Generator.PlaceTrap(NookSquare, Revealed: false);
         else if (Chance.OneIn7.Hit())
           Generator.PlaceCharacter(NookSquare, AccessMap.Difficulty, AccessMap.Difficulty);
         else if (Chance.OneIn7.Hit())
@@ -2240,7 +2240,7 @@ namespace Pathos
 
       var Result = Generator.NewSpecificAsset(Square, Item);
       Result.Container.Locked = Item.Storage.Locking && Locked;
-      Result.Container.Trap = Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
+      Result.Container.Trap = Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square), Revealed: false) : null;
       return Result;
     }
     private void PlaceContainer(Square Square, bool Locked, bool Trapped)
@@ -2260,7 +2260,7 @@ namespace Pathos
     private void StockContainer(Square Square, Asset Asset, bool Locked, bool Trapped)
     {
       Asset.Container.Locked = Asset.Item.Storage.Locking && Locked;
-      Asset.Container.Trap = Asset.Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square)) : null;
+      Asset.Container.Trap = Asset.Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square), Revealed: false) : null;
       Generator.StockContainer(Square, Asset);
     }
     private void RegionFill(Map Map, Region Region, Action<Square> Action)
@@ -3010,7 +3010,7 @@ namespace Pathos
                     // murdered by orcs.
                     DeferList.Add(() =>
                     {
-                      var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ConcentricFindSquare(TownSquare, 3));
+                      var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                       if (ShopParty == null)
                         Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
                     });
@@ -3030,7 +3030,7 @@ namespace Pathos
 
                 DeferList.Add(() =>
                 {
-                  var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ConcentricFindSquare(TownSquare, 3));
+                  var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                   if (ShrineParty == null)
                     Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
                 });
@@ -4099,7 +4099,7 @@ namespace Pathos
                   if (Door != null)
                   {
                     Door.SetState(DoorState.Locked);
-                    Door.SetTrap(Generator.NewTrap(Codex.Devices.fire_trap));
+                    Door.SetTrap(Generator.NewTrap(Codex.Devices.fire_trap, Revealed: false));
                   }
                 }
                 SokobanSquare.SetLit(true);
@@ -4141,14 +4141,7 @@ namespace Pathos
 
               case '^':
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
-                if (PreviousLevelSquare == null)
-                  Generator.PlaceTrap(SokobanSquare, Codex.Devices.pit);
-                else
-                  Generator.PlaceTrap(SokobanSquare, Codex.Devices.hole);
-
-                var Trap = SokobanSquare.Trap;
-                if (Trap != null)
-                  Trap.SetRevealed(true);
+                Generator.PlaceTrap(SokobanSquare, PreviousLevelSquare == null ? Codex.Devices.pit : Codex.Devices.hole, Revealed: true);
 
                 SokobanSquare.SetLit(true);
                 break;
@@ -4467,12 +4460,7 @@ namespace Pathos
               FortSquare.SetLit(true);
 
               if (Chance.OneIn3.Hit())
-              {
-                if (Chance.OneIn3.Hit())
-                  Generator.PlaceTrap(FortSquare, Codex.Devices.spiked_pit);
-                else
-                  Generator.PlaceTrap(FortSquare, Codex.Devices.explosive_trap);
-              }
+                Generator.PlaceTrap(FortSquare, Chance.OneIn3.Hit() ? Codex.Devices.spiked_pit : Codex.Devices.explosive_trap, Revealed: false);
               break;
 
             case '@':

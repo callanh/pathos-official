@@ -118,7 +118,7 @@ namespace Pathos
 
       watery_noodles = AddTrick("watery noodles", A =>
       {
-        A.ArriveEntity(1.d3(), Sonics.water_splash, new[] { Entities.water_moccasin, Entities.electric_eel, Entities.giant_eel });
+        A.ArriveEntity(1.d3(), Sonics.water_splash, new[] { Entities.water_moccasin, Entities.electric_eel, Entities.giant_eel, Entities.pearl_golem });
       });
 
       pinching_crabs = AddTrick("pinching crabs", A =>

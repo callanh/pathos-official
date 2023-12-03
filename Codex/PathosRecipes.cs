@@ -44,7 +44,9 @@ namespace Pathos
       AddRecipe(Entities.crystal_golem, Materials.crystal, Items.crystal_plate_mail, Items.crystal_ball, Items.dilithium_crystal);
       
       AddRecipe(Entities.diamond_golem, Materials.gemstone, Items.diamond);
-      
+
+      AddRecipe(Entities.emerald_golem, Materials.gemstone, Items.emerald);
+
       AddRecipe(Entities.flesh_golem, Materials.animal, Items.huge_chunk_of_meat);
       
       AddRecipe(Entities.glass_golem, Materials.glass, Items.black_glass_bauble, Items.blue_glass_bauble, Items.green_glass_bauble, Items.orange_glass_bauble, Items.red_glass_bauble, Items.violet_glass_bauble, Items.white_glass_bauble, Items.yellow_glass_bauble, Items.yellowish_brown_glass_bauble);
@@ -77,7 +79,9 @@ namespace Pathos
       AddRecipe(Entities.stone_golem, Materials.stone, Items.amulet_versus_stone, Items.flint, Items.stone_club);
       
       AddRecipe(Entities.straw_golem, Materials.vegetable, Items.pancake, Items.holy_wafer, Items.food_ration, Items.fortune_cookie, Items.lembas_wafer, Items.sandwich, Items.tortilla);
-      
+
+      AddRecipe(Entities.topaz_golem, Materials.gemstone, Items.topaz);
+
       AddRecipe(Entities.wax_golem, Materials.wax, Items.wax_candle, Items.magic_candle);
       
       AddRecipe(Entities.wood_golem, Materials.wood, Items.quarterstaff, Items.chest);

@@ -5389,7 +5389,7 @@ namespace Pathos
       Item AddVioletGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("violet gem", null, Price: Gold.FromCoins(60)).Indiscriminate(); EditorAction(I); }); // 600, 400, 1
       Item AddBlackGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("black gem", null, Price: Gold.FromCoins(250)).Indiscriminate(); EditorAction(I); }); // 2500, 850, 200, 1.
       Item AddGreenGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("green gem", null, Price: Gold.FromCoins(250)).Indiscriminate(); EditorAction(I); }); // 2500, 2000, 1500, 300, 1
-      Item AddBlueGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("blue gem", null, Price: Gold.FromCoins(300)).Indiscriminate(); EditorAction(I); }); // 3000, 1
+      Item AddBlueGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("blue gem", null, Price: Gold.FromCoins(300)).Indiscriminate(); EditorAction(I); }); // 3000, 1200, 1
       Item AddRedGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("red gem", null, Price: Gold.FromCoins(350)).Indiscriminate(); EditorAction(I); }); // 3500, 700, 500, 1
       Item AddYellowGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("yellow gem", null, Price: Gold.FromCoins(150)).Indiscriminate(); EditorAction(I); }); // 1500, 700, 1
 
@@ -5899,6 +5899,23 @@ namespace Pathos
         I.Essence = Essence.FromUnits(45);
         I.Price = Gold.FromCoins(2000);
         I.AddObviousIngestUse(Motions.eat, 2000, Delay.FromTurns(10), Sonics.gem);
+
+        EquipPellet(I, 1.d6());
+      });
+
+      zircon = AddBlueGem("zircon", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.blue_gem;
+        I.Sonic = Sonics.gem;
+        I.Series = null;
+        I.Rarity = 8;
+        I.Size = GemSize;
+        I.Weight = GemWeight;
+        I.Material = Materials.gemstone;
+        I.Essence = Essence.FromUnits(35);
+        I.Price = Gold.FromCoins(1200);
+        I.AddObviousIngestUse(Motions.eat, 3000, Delay.FromTurns(10), Sonics.gem);
 
         EquipPellet(I, 1.d6());
       });
@@ -15550,6 +15567,7 @@ namespace Pathos
     public readonly Item sapphire;
     public readonly Item topaz;
     public readonly Item turquoise;
+    public readonly Item zircon;
 
     // baubles.
     public readonly Item black_glass_bauble;

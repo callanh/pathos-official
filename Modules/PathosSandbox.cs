@@ -85,7 +85,7 @@ namespace Pathos
       var ContainerAsset = Generator.NewSpecificAsset(ContainerSquare, Generator.ContainerItems.GetRandomOrNull());
       ContainerSquare.PlaceAsset(ContainerAsset);
       ContainerAsset.Container.Locked = true;
-      ContainerAsset.Container.Trap = Generator.NewTrap(Generator.RandomContainerDevice(ContainerSquare));
+      ContainerAsset.Container.Trap = Generator.NewTrap(Generator.RandomContainerDevice(ContainerSquare), Revealed: false);
 
       Generator.PlaceShop(SandboxMap[13, 4], Codex.Shops.List.GetRandom(), 12);
       Generator.PlaceShop(SandboxMap[14, 4], Codex.Shops.List.GetRandom(), 12);
@@ -120,7 +120,7 @@ namespace Pathos
       foreach (var Device in Codex.Devices.List.Where(D => !D.Descent)) // TODO: create a basement level.
       {
         var Square = SandboxMap[DeviceX, DeviceY];
-        Generator.PlaceTrap(Square, Device);
+        Generator.PlaceTrap(Square, Device, Revealed: false);
         Square.Trap.SetRevealed(true);
 
         DeviceX++;
@@ -169,7 +169,7 @@ namespace Pathos
       Generator.PlaceClosedVerticalDoor(SandboxMap[10, 2], SandboxGate, SandboxBarrier);
       SandboxMap[10, 2].Door.SetState(DoorState.Locked);
       SandboxMap[10, 2].Door.SetSecret(true);
-      SandboxMap[10, 2].Door.SetTrap(Generator.NewTrap(Codex.Devices.arrow_trap));
+      SandboxMap[10, 2].Door.SetTrap(Generator.NewTrap(Codex.Devices.arrow_trap, Revealed: false));
       Generator.PlaceCorridor(SandboxMap, SandboxCorridorGround, new Region(0, 2, 9, 2));
       SandboxMap.Zones.Last().SetLit(false);
 

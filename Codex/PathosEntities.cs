@@ -9156,7 +9156,7 @@ namespace Pathos
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
           K.Apply.Harm(Elements.petrify, 10.d6());
           K.Apply.ApplyTransient(Properties.petrifying, 4.d4());
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Incarcerate(Elements.petrify, Codex.Blocks.statue));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.Incarcerate(Elements.petrify, Codex.Blocks.trophy));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
@@ -13378,7 +13378,7 @@ namespace Pathos
         E.Glyph = Glyphs.banshee;
         E.Sonic = Sonics.moan;
         E.Level = 21;
-        E.Challenge = 178;
+        E.Challenge = 678;
         E.Difficulty = 24;
         E.Frequency = 1;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
@@ -14672,6 +14672,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
+        E.SetConcealment(Codex.Blocks.clay_boulder);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14718,6 +14719,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
+        E.SetConcealment(Codex.Blocks.crystal_boulder);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.poison, Elements.sleep);
@@ -14729,55 +14731,6 @@ namespace Pathos
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.crystal_ball);
-      });
-
-      diamond_golem = AddEntity(Kinds.golem, null, "diamond golem", E =>
-      {
-        E.Glyph = Glyphs.diamond_golem;
-        E.Level = 28;
-        E.Challenge = 839;
-        E.Difficulty = 30;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
-        E.SetDiet(Diets.inediate);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Large;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(110000);
-        E.Figure.Set
-        (
-          Material: Materials.gemstone,
-          Head: true,
-          Mind: false,
-          Voice: false,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(170, Dice.Zero);
-        E.ManaAdvancement.Set(Dice.Zero);
-        E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed(GolemGreed);
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.vitality);
-        E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
-        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
-        {
-          K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 5.d6());
-        });
-        E.SetCorpse(Chance.Never);
-        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.diamond);
       });
 
       flesh_golem = AddEntity(Kinds.golem, null, "flesh golem", E =>
@@ -14975,6 +14928,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
+        E.SetConcealment(Codex.Blocks.gold_boulder);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.acid, Elements.poison, Elements.sleep);
@@ -15273,6 +15227,104 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
+      diamond_golem = AddEntity(Kinds.golem, null, "diamond golem", E =>
+      {
+        E.Glyph = Glyphs.diamond_golem;
+        E.Level = 28;
+        E.Challenge = 839;
+        E.Difficulty = 30;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(110000);
+        E.Figure.Set
+        (
+          Material: Materials.gemstone,
+          Head: true,
+          Mind: false,
+          Voice: false,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(170, Dice.Zero);
+        E.ManaAdvancement.Set(Dice.Zero);
+        E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(GolemGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.vitality);
+        E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.poison, Elements.sleep);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d10());
+        E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
+        {
+          K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
+          K.Apply.Harm(Elements.magical, 8.d8());
+        });
+        E.SetCorpse(Chance.Never);
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.diamond);
+      });
+
+      emerald_golem = AddEntity(Kinds.golem, null, "emerald golem", E =>
+      {
+        E.Glyph = Glyphs.emerald_golem;
+        E.Level = 23;
+        E.Challenge = 601;
+        E.Difficulty = 25;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(110000);
+        E.Figure.Set
+        (
+          Material: Materials.gemstone,
+          Head: true,
+          Mind: false,
+          Voice: false,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(160, Dice.Zero);
+        E.ManaAdvancement.Set(Dice.Zero);
+        E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(GolemGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.vitality);
+        E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 6.d6()); // +8 from str.
+        E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
+        {
+          K.SetCast().Beam(Beams.poison, 1.d5() + 5);
+          K.Apply.Harm(Elements.poison, 7.d7());
+        });
+        E.SetCorpse(Chance.Never);
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.emerald);
+      });
+
       ruby_golem = AddEntity(Kinds.golem, null, "ruby golem", E =>
       {
         E.Glyph = Glyphs.ruby_golem;
@@ -15369,6 +15421,55 @@ namespace Pathos
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.sapphire);
+      });
+
+      topaz_golem = AddEntity(Kinds.golem, null, "topaz golem", E =>
+      {
+        E.Glyph = Glyphs.topaz_golem;
+        E.Level = 21;
+        E.Challenge = 501;
+        E.Difficulty = 23;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(100000);
+        E.Figure.Set
+        (
+          Material: Materials.gemstone,
+          Head: true,
+          Mind: false,
+          Voice: false,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(150, Dice.Zero);
+        E.ManaAdvancement.Set(Dice.Zero);
+        E.DefaultForm.Set(STR: 26, DEX: 9, CON: 22, INT: 3, WIS: 9, CHA: 1);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed(GolemGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.vitality);
+        E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d12()); // +8 from str.
+        E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
+        {
+          K.SetCast().Beam(Beams.cold, 1.d5() + 5);
+          K.Apply.Harm(Elements.cold, 5.d5());
+        });
+        E.SetCorpse(Chance.Never);
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.topaz);
       });
 
       snow_golem = AddEntity(Kinds.golem, null, "snow golem", E =>
@@ -15559,6 +15660,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
+        E.SetConcealment(Codex.Blocks.stone_boulder);
         E.Startup.SetSkill(Qualifications.proficient, Skills.sling);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
@@ -34905,7 +35007,9 @@ namespace Pathos
     public readonly Entity roshi;
     public readonly Entity rot_worm;
     public readonly Entity rothe;
+    public readonly Entity emerald_golem;
     public readonly Entity ruby_golem;
+    public readonly Entity topaz_golem;
     public readonly Entity rust_monster;
     public readonly Entity rutterkin;
     public readonly Entity sabretoothed_cat;

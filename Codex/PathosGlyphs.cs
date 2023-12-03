@@ -1696,7 +1696,9 @@ namespace Pathos
     public readonly Glyph salamander;
     public readonly Glyph sandestin;
     public readonly Glyph sandwich;
+    public readonly Glyph emerald_golem;
     public readonly Glyph sapphire_golem;
+    public readonly Glyph topaz_golem;
     public readonly Glyph sasquatch;
     public readonly Glyph satyr;
     public readonly Glyph scale_mail;

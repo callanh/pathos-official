@@ -872,7 +872,7 @@ namespace Pathos
                     pointSquare.Door.SetState(DoorState.Closed);
                     pointSquare.Door.SetState(DoorState.Locked);
                     pointSquare.Door.SetSecret(false);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice()));
+                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
                     var trap = pointSquare.Trap;
                     if (trap != null && SPDRandom.Int(2) == 0) trap.SetRevealed(true);
                 }
@@ -889,7 +889,7 @@ namespace Pathos
                     SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Horizontal, SPDDebug.codex.Barriers.stone_wall);
                     pointSquare.Door.SetState(DoorState.Closed);
                     pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice()));
+                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
                     pointSquare.Door.SetSecret(true);
                 }
                 else if (point.value == SPDMapPoint.DOORSECL)
@@ -898,7 +898,7 @@ namespace Pathos
                     SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Vertical, SPDDebug.codex.Barriers.stone_wall);
                     pointSquare.Door.SetState(DoorState.Closed);
                     pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice()));
+                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
                     pointSquare.Door.SetSecret(true);
                 }
                 else if (point.value == SPDMapPoint.DOORSUPER)
@@ -1023,7 +1023,7 @@ namespace Pathos
 
                 if (square.Trap == null)
                 {
-                    SPDDebug.generator.PlaceTrap(square, RandomDevice());
+                    SPDDebug.generator.PlaceTrap(square, RandomDevice(), Revealed: false);
                 }
             }
         }
@@ -1313,9 +1313,9 @@ namespace Pathos
                 var trapSquare = SPDDebug.currentmap.pathosMap[trap.x, trap.y];
                 switch (trap.value)
                 {
-                    case 0: SPDDebug.generator.PlaceTrap(trapSquare, RandomDevice()); break;
+                    case 0: SPDDebug.generator.PlaceTrap(trapSquare, RandomDevice(), Revealed: false); break;
                     case 1:
-                        SPDDebug.generator.PlaceTrap(trapSquare, deviceType);
+                        SPDDebug.generator.PlaceTrap(trapSquare, deviceType, Revealed: false);
                         var strap = trapSquare.Trap;
                         if (strap != null)
                         {
@@ -1324,7 +1324,7 @@ namespace Pathos
                         break;
                         
                     case 2:
-                        SPDDebug.generator.PlaceTrap(trapSquare, SPDDebug.codex.Devices.alarm_trap);
+                        SPDDebug.generator.PlaceTrap(trapSquare, SPDDebug.codex.Devices.alarm_trap, Revealed: false);
                         var summonTrap = trapSquare.Trap;
                         if (summonTrap != null)
                         {
