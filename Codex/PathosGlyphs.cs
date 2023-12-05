@@ -2080,6 +2080,8 @@ namespace Pathos
     public readonly Glyph yellow_jacket;
     public readonly Glyph yellow_jelly;
     public readonly Glyph yellow_light;
+    public readonly Glyph blue_light;
+    public readonly Glyph red_light;
     public readonly Glyph yellow_mould;
     public readonly Glyph yellowish_brown_gem;
     public readonly Glyph yeoman;

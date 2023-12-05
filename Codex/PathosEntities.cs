@@ -21319,6 +21319,110 @@ namespace Pathos
         });
         E.SetCorpse(Chance.Never);
       });
+
+      blue_light = AddEntity(Kinds.light, null, "blue light", E =>
+      {
+        E.Glyph = Glyphs.blue_light;
+        E.Level = 5;
+        E.Challenge = 49;
+        E.Difficulty = 5;
+        E.Frequency = 4;
+        E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Small;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(0);
+        E.Figure.Set
+        (
+          Material: Materials.ether,
+          Head: false,
+          Mind: false,
+          Voice: false,
+          Eyes: false,
+          Ears: true,
+          Hands: false,
+          Limbs: false,
+          Feet: false,
+          Thermal: true,
+          Blood: false,
+          Mounted: false,
+          Amorphous: true
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 4, DEX: 18, CON: 9, INT: 1, WIS: 2, CHA: 6);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight);
+        E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.disintegrate, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
+        E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Explosion(Explosions.light, Dice.Zero);
+          K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
+          {
+            // should only apply if the blue light is not invisible.
+            A.Malnutrition(1.d100() + 100);
+            A.ApplyTransient(Properties.hunger, 10.d15());
+            A.DestroyCarriedAsset(Dice.One, new[] { Stocks.food }, SanctityArray: null, MaterialArray: null);
+          });
+        });
+        E.SetCorpse(Chance.Never);
+      });
+
+      red_light = AddEntity(Kinds.light, null, "red light", E =>
+      {
+        E.Glyph = Glyphs.red_light;
+        E.Level = 7;
+        E.Challenge = 79;
+        E.Difficulty = 7;
+        E.Frequency = 4;
+        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex.
+        E.SetDiet(Diets.inediate);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Small;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(0);
+        E.Figure.Set
+        (
+          Material: Materials.ether,
+          Head: false,
+          Mind: false,
+          Voice: false,
+          Eyes: false,
+          Ears: true,
+          Hands: false,
+          Limbs: false,
+          Feet: false,
+          Thermal: true,
+          Blood: false,
+          Mounted: false,
+          Amorphous: true
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 4, DEX: 18, CON: 9, INT: 1, WIS: 2, CHA: 6);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight);
+        E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.disintegrate, Elements.shock, Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
+        E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Explosion(Explosions.light, Dice.Zero);
+          K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
+          {
+            // should only enrage if the red light is not invisible.
+            A.ApplyTransient(Properties.rage, 10.d15());
+          });
+        });
+        E.SetCorpse(Chance.Never);
+      });
       #endregion
 
       #region lizard.
@@ -35142,6 +35246,8 @@ namespace Pathos
     public readonly Entity yellow_jacket;
     public readonly Entity yellow_jelly;
     public readonly Entity yellow_light;
+    public readonly Entity red_light;
+    public readonly Entity blue_light;
     public readonly Entity yellow_mould;
     public readonly Entity yeoman;
     public readonly Entity yeoman_warder;
