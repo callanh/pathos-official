@@ -52,6 +52,11 @@ namespace Pathos
         H.AddMinion(Entities.killer_bee, 1.d10());
       });
 
+      beetle = AddHorde("beetle", null, H =>
+      {
+        H.AddMinion(Entities.giant_beetle, 1.d2() + 1);
+      });
+
       cockroach = AddHorde("cockroach", null, H =>
       {
         H.AddMinion(Entities.giant_cockroach, 1.d3());
@@ -243,6 +248,12 @@ namespace Pathos
         H.AddMinion(Entities.rothe, 1.d2() + 1);
       });
 
+      scorpion = AddHorde("scorpion", null, H =>
+      {
+        H.AddMinion(Entities.scorpion, 1.d2() + 1); // 2-3
+        H.AddMinion(Entities.giant_scorpion, Dice.One); // 1
+      });
+
       spider = AddHorde("spider", null, H =>
       {
         H.AddMinion(Entities.cave_spider, 1.d2() + 1);
@@ -329,6 +340,7 @@ namespace Pathos
     public readonly Horde ape;
     public readonly Horde bat;
     public readonly Horde bee;
+    public readonly Horde beetle;
     public readonly Horde cockroach;
     public readonly Horde couatl;
     public readonly Horde coyote;
@@ -358,6 +370,7 @@ namespace Pathos
     //public readonly Horde piranha;
     public readonly Horde rat;
     public readonly Horde rothe;
+    public readonly Horde scorpion;
     public readonly Horde spider;
     public readonly Horde spore;
     public readonly Horde termite;

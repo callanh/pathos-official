@@ -87,40 +87,18 @@ namespace Pathos
 
             if (E.IsUnique)
             {
-              //Debug.WriteLine($"UNIQUE: {Result.Name}");
-
+              Debug.Assert(E.Frequency == 0, $"{E.Name} must have frequency of zero");
               Debug.Assert(E.Startup.Talents.Contains(Properties.polymorph_control), $"{E.Name} must have polymorph control");
               Debug.Assert(E.Startup.Talents.Contains(Properties.teleport_control), $"{E.Name} must have teleport control");
               Debug.Assert(E.Startup.Resistances.Contains(Elements.magical), $"{E.Name} must have magical resistance");
 
-              // perfection already achieved.
+              // perfection already achieved for unique ability scores.
               foreach (var DefaultAbility in E.DefaultForm.Abilities)
                 E.LimitForm.SetScore(DefaultAbility.Attribute, DefaultAbility.Score);
-
-              if (E.Level <= 40)
-              {
-                var Boost = 0;
-
-                if (E.Level < 10)
-                  Boost += 40;
-                else if (E.Level < 20)
-                  Boost += 30;
-                else if (E.Level < 30)
-                  Boost += 20;
-                else if (E.Level <= 40)
-                  Boost += 10;
-
-                // TODO: this is meant to be a static but randomish level boost (However, string.GetHashCode() is not actually deterministic across .NET versions and x86/x64!).
-                Boost += Math.Abs(E.Name.GetHashCode() % 10) + (E.Level / 10) + (E.Level % 10);
-
-                E.Challenge += 100 * Boost;
-                E.Defence = new Defence(E.Defence.Baseline + (Boost / 2), E.Defence.Bias);
-
-                E.Level += Boost;
-              }
             }
             else if (E.LimitForm.IsAllAssigned(30))
             {
+              // infer ability limits if they have not been manually determined (NOTE: this is legacy once all entities have their limits manually entered).
               foreach (var Ability in E.DefaultForm.Abilities)
                 E.LimitForm.SetScore(Ability.Attribute, Math.Min(Math.Max(30, Ability.Score), Ability.Score + (Ability.Score / 4)));
             }
@@ -1295,7 +1273,7 @@ namespace Pathos
         E.Level = 44;
         E.Challenge = 1808;
         E.Difficulty = 40;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S6_0;
@@ -1344,7 +1322,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 1642;
         E.Difficulty = 40;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +5 from dex = 35.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S6_0;
@@ -1401,7 +1379,7 @@ namespace Pathos
         E.Level = 58;
         E.Challenge = 2100;
         E.Difficulty = 40;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex = 36.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -6185,7 +6163,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 453;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -16302,7 +16280,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -16353,7 +16331,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(15000);
@@ -16454,7 +16432,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S2_5;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -16541,7 +16519,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -16590,7 +16568,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -16642,7 +16620,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -16740,7 +16718,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -16985,7 +16963,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 dex = 23.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -17042,7 +17020,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17188,7 +17166,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(16000);
@@ -17233,7 +17211,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17278,7 +17256,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +8 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S6_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -17327,7 +17305,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.herbivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17374,7 +17352,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14000);
@@ -17422,7 +17400,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -25842,7 +25820,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 268;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -29680,56 +29658,6 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn4);
       });
 
-      giant_scorpion = AddEntity(Kinds.spider, null, "giant scorpion", E =>
-      {
-        E.Glyph = Glyphs.giant_scorpion;
-        E.Sonic = Sonics.scuttle;
-        E.Level = 25;
-        E.Challenge = 914;
-        E.Difficulty = 28;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S5_0;
-        E.Size = Size.Large;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(16000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: false,
-          Limbs: true,
-          Feet: false,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 11, DEX: 9, CON: 13, INT: 2, WIS: 7, CHA: 4);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
-        E.AddAttack(AttackTypes.sting, Elements.physical, 5.d4(), K =>
-        {
-          K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
-        });
-        E.Conveyance.MajorResistance(Elements.poison);
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.Always);
-      });
-
       giant_spider = AddEntity(Kinds.spider, null, "giant spider", E =>
       {
         E.Glyph = Glyphs.giant_spider;
@@ -29779,14 +29707,14 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Girtab = AddUniqueEntity(Kinds.spider, null, "Girtab", E =>
+      Girtab = AddUniqueEntity(Kinds.insect, null, "Girtab", E =>
       {
         E.Glyph = Glyphs.Girtab;
         E.Sonic = Sonics.scuttle;
         E.Level = 22;
         E.Challenge = 761;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = 0;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29811,7 +29739,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 14, DEX: 14, CON: 13, INT: 3, WIS: 7, CHA: 4);
+        E.DefaultForm.Set(STR: 18, DEX: 14, CON: 13, INT: 13, WIS: 17, CHA: 14);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.female);
         E.SetGreed();
@@ -29819,12 +29747,12 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control, Properties.free_action);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
-        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d6());
-        E.AddAttack(AttackTypes.sting, Elements.physical, 3.d7(), K =>
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d7(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
-        }); // +2
+        }); // +4
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -29834,9 +29762,9 @@ namespace Pathos
       {
         E.Glyph = Glyphs.Lolth;
         E.Sonic = Sonics.scuttle;
-        E.Level = 20;
+        E.Level = 22;
         E.Challenge = 521;
-        E.Difficulty = 22;
+        E.Difficulty = 25;
         E.Frequency = 0;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
@@ -30090,13 +30018,63 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
+      giant_scorpion = AddEntity(Kinds.spider, null, "giant scorpion", E =>
+      {
+        E.Glyph = Glyphs.giant_scorpion;
+        E.Sonic = Sonics.scuttle;
+        E.Level = 19;
+        E.Challenge = 914;
+        E.Difficulty = 22;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(16000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: false,
+          Limbs: true,
+          Feet: false,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 11, DEX: 9, CON: 13, INT: 2, WIS: 7, CHA: 4);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetResistance(Elements.poison);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 5.d4(), K =>
+        {
+          K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
+        });
+        E.Conveyance.MajorResistance(Elements.poison);
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.Always);
+      });
+
       Scorpius = AddUniqueEntity(Kinds.spider, null, "Scorpius", E =>
       {
         E.Glyph = Glyphs.Scorpius;
         E.Sonic = Sonics.scuttle;
-        E.Level = 15;
+        E.Level = 22;
         E.Challenge = 414;
-        E.Difficulty = 17;
+        E.Difficulty = 25;
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
@@ -30122,13 +30100,13 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 24, DEX: 24, CON: 24, INT: 10, WIS: 10, CHA: 6);
+        E.DefaultForm.Set(STR: 24, DEX: 24, CON: 24, INT: 10, WIS: 10, CHA: 16);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.dark_vision, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.dark_vision, Properties.teleport_control, Properties.jumping);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6()); // +6 from STR
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6());
@@ -34572,7 +34550,6 @@ namespace Pathos
     public readonly Entity acid_worm;
     public readonly Entity acolyte;
     public readonly Entity air_elemental;
-    public readonly Entity Aleax;
     public readonly Entity animate_object;
     public readonly Entity artisan;
     public readonly Entity holy_cleric;
@@ -34582,20 +34559,15 @@ namespace Pathos
     public readonly Entity angel;
     public readonly Entity archangel;
     public readonly Entity ape;
-    public readonly Entity Aphrodite;
     public readonly Entity apprentice;
     public readonly Entity arc_bug;
-    public readonly Entity Archpriest_Avvakrum;
     public readonly Entity archlich;
     public readonly Entity archon;
-    public readonly Entity Ashikaga_Takauji;
-    public readonly Entity Asmodeus;
     public readonly Entity asphynx;
     public readonly Entity assassin_bug;
     public readonly Entity astral_deva;
     public readonly Entity athol;
     public readonly Entity attendant;
-    public readonly Entity Baalzebub;
     public readonly Entity babau;
     public readonly Entity baby_crocodile;
     public readonly Entity baby_long_worm;
@@ -34690,9 +34662,7 @@ namespace Pathos
     public readonly Entity cave_bear;
     public readonly Entity cave_spider;
     public readonly Entity centipede;
-    public readonly Entity Cerberus;
     public readonly Entity chameleon;
-    public readonly Entity Charon;
     public readonly Entity chasme;
     public readonly Entity chickatrice;
     public readonly Entity chicken;
@@ -34704,27 +34674,19 @@ namespace Pathos
     public readonly Entity cobra;
     public readonly Entity cockatoo;
     public readonly Entity cockatrice;
-    public readonly Entity Colonel_Blood;
     public readonly Entity couatl;
-    public readonly Entity Count_Dracula;
     public readonly Entity cow;
     public readonly Entity coyote;
     public readonly Entity crocodile;
-    public readonly Entity Croesus;
     public readonly Entity crystal_golem;
-    public readonly Entity Cthulhu;
     public readonly Entity cyclops;
     public readonly Entity dao;
-    public readonly Entity Dark_Lord;
-    public readonly Entity Dark_One;
-    public readonly Entity Death;
     public readonly Entity death_dog;
     public readonly Entity deep_gnome;
     public readonly Entity deep_one;
     public readonly Entity deeper_one;
     public readonly Entity deepest_one;
     public readonly Entity demilich;
-    public readonly Entity Demogorgon;
     public readonly Entity demon;
     public readonly Entity demon_orc;
     public readonly Entity diamond_golem;
@@ -34733,10 +34695,8 @@ namespace Pathos
     public readonly Entity disenchanter;
     public readonly Entity disintegrator;
     public readonly Entity disgusting_mould;
-    public readonly Entity Dispater;
     public readonly Entity displacer_beast;
     public readonly Entity djinni;
-    public readonly Entity Doctor_Frankenstein;
     public readonly Entity dog;
     public readonly Entity doppelganger;
     public readonly Entity dragon_king;
@@ -34752,7 +34712,6 @@ namespace Pathos
     public readonly Entity dwarf_thief;
     public readonly Entity dwarf_warrior;
     public readonly Entity dwarf_zombie;
-    public readonly Entity Earendil;
     public readonly Entity earth_elemental;
     public readonly Entity echo;
     public readonly Entity efreeti;
@@ -34763,7 +34722,6 @@ namespace Pathos
     public readonly Entity elf_lord;
     public readonly Entity elf_mummy;
     public readonly Entity elf_zombie;
-    public readonly Entity Elwing;
     public readonly Entity embalmer;
     public readonly Entity energy_vortex;
     public readonly Entity erinys;
@@ -34771,8 +34729,6 @@ namespace Pathos
     public readonly Entity ettin_mummy;
     public readonly Entity ettin_zombie;
     public readonly Entity exterminator;
-    public readonly Entity Famine;
-    public readonly Entity Father_Dagon;
     public readonly Entity fiend;
     public readonly Entity fire_ant;
     public readonly Entity fire_elemental;
@@ -34788,7 +34744,6 @@ namespace Pathos
     public readonly Entity fog_cloud;
     public readonly Entity forest_centaur;
     public readonly Entity fox;
-    public readonly Entity Frankensteins_Monster;
     public readonly Entity frost_sphere;
     public readonly Entity frost_giant;
     public readonly Entity gargoyle;
@@ -34797,7 +34752,6 @@ namespace Pathos
     public readonly Entity gecko;
     public readonly Entity gelatinous_cube;
     public readonly Entity genetic_engineer;
-    public readonly Entity Geryon;
     public readonly Entity banshee;
     public readonly Entity ghast;
     public readonly Entity ghost;
@@ -34827,7 +34781,6 @@ namespace Pathos
     public readonly Entity giant_zombie;
     public readonly Entity gibberling;
     public readonly Entity gila_monster;
-    public readonly Entity Girtab;
     public readonly Entity glass_golem;
     public readonly Entity glass_piercer;
     public readonly Entity glowing_eye;
@@ -34849,7 +34802,6 @@ namespace Pathos
     public readonly Entity gold_golem;
     public readonly Entity golden_naga;
     public readonly Entity golden_naga_hatchling;
-    public readonly Entity Guru_Quilion;
     public readonly Entity grey_ooze;
     public readonly Entity grey_unicorn;
     public readonly Entity great_orc;
@@ -34873,13 +34825,9 @@ namespace Pathos
     public readonly Entity hellrat;
     public readonly Entity hezrou;
     public readonly Entity high_elf;
-    public readonly Entity Archmage_Flaynn;
-    public readonly Entity Archmage_Dirachi;
-    public readonly Entity Lycaon;
     public readonly Entity high_priest;
     public readonly Entity hill_giant;
     public readonly Entity hill_orc;
-    public readonly Entity Hippocrates;
     public readonly Entity changeling;
     public readonly Entity halfling;
     public readonly Entity hobgoblin;
@@ -34921,14 +34869,12 @@ namespace Pathos
     public readonly Entity intern;
     public readonly Entity iron_golem;
     public readonly Entity iron_piercer;
-    public readonly Entity Ixoth;
     public readonly Entity jabberwock;
     public readonly Entity jackal;
     public readonly Entity jaguar;
     public readonly Entity jellyfish;
     public readonly Entity jiggling_blob;
     public readonly Entity juggernaut;
-    public readonly Entity Juiblex;
     public readonly Entity kamadan;
     public readonly Entity killer_bee;
     public readonly Entity killer_beetle;
@@ -34949,7 +34895,6 @@ namespace Pathos
     public readonly Entity komodo_dragon;
     public readonly Entity kraken;
     public readonly Entity lamb;
-    public readonly Entity Lareth;
     public readonly Entity large_cat;
     public readonly Entity large_dingo;
     public readonly Entity large_dog;
@@ -34974,12 +34919,8 @@ namespace Pathos
     public readonly Entity lizardman_mage;
     public readonly Entity lizardman_shaman;
     public readonly Entity lizardman_warrior;
-    public readonly Entity Lolth;
     public readonly Entity long_worm;
     public readonly Entity long_worm_tail;
-    public readonly Entity Lord_Carnarvon;
-    public readonly Entity Lord_Sato;
-    public readonly Entity Lord_Surtur;
     public readonly Entity living_wall;
     public readonly Entity lurker_above;
     public readonly Entity lynx;
@@ -34988,15 +34929,10 @@ namespace Pathos
     public readonly Entity mangler;
     public readonly Entity marid;
     public readonly Entity marilith;
-    public readonly Entity Assassin_Mortimer;
-    public readonly Entity Master_Kaen;
     public readonly Entity master_lich;
     public readonly Entity dracolich;
     public readonly Entity master_mind_flayer;
-    public readonly Entity Guildmaster_Vaughn;
-    public readonly Entity Metamorphius;
     public readonly Entity mastodon;
-    public readonly Entity Maugneshaagar;
     public readonly Entity medusa;
     public readonly Entity mellified_man;
     public readonly Entity merchant;
@@ -35004,7 +34940,6 @@ namespace Pathos
     public readonly Entity migo_queen;
     public readonly Entity migo_warrior;
     public readonly Entity mind_flayer;
-    public readonly Entity Minion_of_Huhetotl;
     public readonly Entity minotaur;
     public readonly Entity mist_wolf;
     public readonly Entity mobat;
@@ -35012,7 +34947,6 @@ namespace Pathos
     public readonly Entity monadic_deva;
     public readonly Entity mongbat;
     public readonly Entity monkey;
-    public readonly Entity Mother_Hydra;
     public readonly Entity mountain_centaur;
     public readonly Entity mountain_nymph;
     public readonly Entity movanic_deva;
@@ -35020,17 +34954,14 @@ namespace Pathos
     public readonly Entity mumak;
     public readonly Entity nabassu;
     public readonly Entity nalfeshnee;
-    public readonly Entity Nalzok;
     public readonly Entity nazgul;
     public readonly Entity neanderthal;
     public readonly Entity occultist;
-    public readonly Entity Neferet_the_Green;
     public readonly Entity newt;
     public readonly Entity nickelpede;
     public readonly Entity nightgaunt;
     public readonly Entity nightmare;
     public readonly Entity shinobi;
-    public readonly Entity Norn;
     public readonly Entity nupperibo;
     public readonly Entity nurse;
     public readonly Entity ochre_jelly;
@@ -35039,7 +34970,6 @@ namespace Pathos
     public readonly Entity ogre_lord;
     public readonly Entity ogre_mage;
     public readonly Entity ologhai;
-    public readonly Entity Oracle;
     public readonly Entity orange_jelly;
     public readonly Entity orc;
     public readonly Entity orc_berserker;
@@ -35050,8 +34980,6 @@ namespace Pathos
     public readonly Entity orc_shaman;
     public readonly Entity orc_warrior;
     public readonly Entity orc_zombie;
-    public readonly Entity Orcus;
-    public readonly Entity Orion;
     public readonly Entity owlbear;
     public readonly Entity pack_rat;
     public readonly Entity page;
@@ -35059,8 +34987,6 @@ namespace Pathos
     public readonly Entity paper_golem;
     public readonly Entity parrot;
     public readonly Entity pegasus;
-    public readonly Entity Pelias;
-    public readonly Entity Pestilence;
     public readonly Entity phase_spider;
     public readonly Entity phase_worm;
     public readonly Entity plasmoid;
@@ -35072,7 +34998,6 @@ namespace Pathos
     public readonly Entity pit_viper;
     public readonly Entity pixie;
     public readonly Entity plains_centaur;
-    public readonly Entity Planetar;
     public readonly Entity pearl_golem;
     public readonly Entity plastic_golem;
     public readonly Entity pony;
@@ -35123,14 +35048,12 @@ namespace Pathos
     public readonly Entity sasquatch;
     public readonly Entity satyr;
     public readonly Entity scorpion;
-    public readonly Entity Scorpius;
     public readonly Entity scramper;
     public readonly Entity sewer_rat;
     public readonly Entity shade;
     public readonly Entity shadow;
     public readonly Entity shadow_ogre;
     public readonly Entity shadow_wolf;
-    public readonly Entity Shaman_Karnov;
     public readonly Entity seal;
     public readonly Entity shark;
     public readonly Entity sheep;
@@ -35138,13 +35061,11 @@ namespace Pathos
     public readonly Entity shock_sphere;
     public readonly Entity shoggoth;
     public readonly Entity shrieker;
-    public readonly Entity Sir_Lorimar;
     public readonly Entity skeleton;
     public readonly Entity small_mimic;
     public readonly Entity snake;
     public readonly Entity snow_ant;
     public readonly Entity snow_orc;
-    public readonly Entity Solar;
     public readonly Entity soldier_ant;
     public readonly Entity spark_bug;
     public readonly Entity spider_queen;
@@ -35167,8 +35088,6 @@ namespace Pathos
     public readonly Entity succubus;
     public readonly Entity swamp_kobold;
     public readonly Entity tengu;
-    public readonly Entity Thorin;
-    public readonly Entity Thoth_Amon;
     public readonly Entity thug;
     public readonly Entity tiger;
     public readonly Entity titan;
@@ -35183,7 +35102,6 @@ namespace Pathos
     public readonly Entity tunnel_worm;
     public readonly Entity giant_slug;
     public readonly Entity giant_frog;
-    public readonly Entity Twoflower;
     public readonly Entity twoheaded_troll;
     public readonly Entity umber_hulk;
     public readonly Entity vampire;
@@ -35192,8 +35110,6 @@ namespace Pathos
     public readonly Entity vampire_lord;
     public readonly Entity vampire_mage;
     public readonly Entity undead_slayer;
-    public readonly Entity Van_Helsing;
-    public readonly Entity Vecna;
     public readonly Entity violet_fungus;
     public readonly Entity vorpal_jabberwock;
     public readonly Entity vrock;
@@ -35242,7 +35158,6 @@ namespace Pathos
     public readonly Entity xan;
     public readonly Entity treant;
     public readonly Entity xorn;
-    public readonly Entity Yeenoghu;
     public readonly Entity yellow_jacket;
     public readonly Entity yellow_jelly;
     public readonly Entity yellow_light;
@@ -35262,5 +35177,70 @@ namespace Pathos
     public readonly Entity keystone_sergeant;
     public readonly Entity keystone_lieutenant;
     public readonly Entity keystone_captain;
+
+    // Uniques.
+    public readonly Entity Aleax;
+    public readonly Entity Aphrodite;
+    public readonly Entity Archmage_Dirachi;
+    public readonly Entity Archmage_Flaynn;
+    public readonly Entity Archpriest_Avvakrum;
+    public readonly Entity Ashikaga_Takauji;
+    public readonly Entity Asmodeus;
+    public readonly Entity Assassin_Mortimer;
+    public readonly Entity Baalzebub;
+    public readonly Entity Cerberus;
+    public readonly Entity Charon;
+    public readonly Entity Colonel_Blood;
+    public readonly Entity Count_Dracula;
+    public readonly Entity Croesus;
+    public readonly Entity Cthulhu;
+    public readonly Entity Dark_Lord;
+    public readonly Entity Dark_One;
+    public readonly Entity Death;
+    public readonly Entity Demogorgon;
+    public readonly Entity Dispater;
+    public readonly Entity Doctor_Frankenstein;
+    public readonly Entity Earendil;
+    public readonly Entity Elwing;
+    public readonly Entity Famine;
+    public readonly Entity Father_Dagon;
+    public readonly Entity Frankensteins_Monster;
+    public readonly Entity Geryon;
+    public readonly Entity Girtab;
+    public readonly Entity Guildmaster_Vaughn;
+    public readonly Entity Guru_Quilion;
+    public readonly Entity Hippocrates;
+    public readonly Entity Ixoth;
+    public readonly Entity Juiblex;
+    public readonly Entity Lareth;
+    public readonly Entity Lolth;
+    public readonly Entity Lord_Carnarvon;
+    public readonly Entity Lord_Sato;
+    public readonly Entity Lord_Surtur;
+    public readonly Entity Lycaon;
+    public readonly Entity Master_Kaen;
+    public readonly Entity Maugneshaagar;
+    public readonly Entity Metamorphius;
+    public readonly Entity Minion_of_Huhetotl;
+    public readonly Entity Mother_Hydra;
+    public readonly Entity Nalzok;
+    public readonly Entity Neferet_the_Green;
+    public readonly Entity Norn;
+    public readonly Entity Oracle;
+    public readonly Entity Orcus;
+    public readonly Entity Orion;
+    public readonly Entity Pelias;
+    public readonly Entity Pestilence;
+    public readonly Entity Planetar;
+    public readonly Entity Scorpius;
+    public readonly Entity Shaman_Karnov;
+    public readonly Entity Sir_Lorimar;
+    public readonly Entity Solar;
+    public readonly Entity Thorin;
+    public readonly Entity Thoth_Amon;
+    public readonly Entity Twoflower;
+    public readonly Entity Van_Helsing;
+    public readonly Entity Vecna;
+    public readonly Entity Yeenoghu;
   }
 }

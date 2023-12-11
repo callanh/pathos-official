@@ -86,6 +86,11 @@ namespace Pathos
         A.ArriveEntity(Dice.One, Sonics.burble, Kinds.blob);
       });
 
+      hatching_eggs = AddTrick("hatching eggs", A =>
+      {
+        A.Hatch();
+      });
+
       scuttling_insects = AddTrick("scuttling insects", A =>
       {
         A.ArriveEntity(Dice.One, Sonics.scuttle, Kinds.insect);
@@ -216,6 +221,7 @@ namespace Pathos
     public readonly Trick leaking_gas;
     public readonly Trick escaping_mummies;
     public readonly Trick emerging_blobs;
+    public readonly Trick hatching_eggs;
     public readonly Trick scuttling_insects;
     public readonly Trick marble_paving;
     public readonly Trick mobilise_boulder;

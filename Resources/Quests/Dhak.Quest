@@ -839,7 +839,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (27,023)  |[stone wall]
 (28,023)  |[stone wall]
 (29,023)  |[stone wall]
-(30,023)  .[dirt] @[000050] ?[animal corpse] weight 23000
+(30,023)  .[dirt] @[000050] ?[animal corpse] weight 4500 character [000751]
 (31,023)  |[stone wall]
 (32,023)  .[dirt] ^[ant hole] 0
 (33,023)  |[stone wall]
@@ -908,10 +908,10 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (24,024)  |[stone wall] .[dirt]
 (25,024)  |[stone wall]
 (26,024)  |[stone wall]
-(27,024)  .[dirt] @[000051] ?[animal corpse] weight 28000
-(28,024)  .[dirt] @[000052] ?[animal corpse] weight 21000
-(29,024)  .[dirt] @[000053] ?[animal corpse] weight 29000
-(30,024)  .[dirt] @[000054] ?[animal corpse] weight 22000
+(27,024)  .[dirt] @[000051] ?[animal corpse] weight 4000 character [000752]
+(28,024)  .[dirt] @[000052] ?[animal corpse] weight 4000 character [000753]
+(29,024)  .[dirt] @[000053] ?[animal corpse] weight 4000 character [000754]
+(30,024)  .[dirt] @[000054] ?[animal corpse] weight 4000 character [000755]
 (31,024)  .[dirt]
 (32,024)  .[dirt]
 (33,024)  .[dirt]
@@ -978,12 +978,12 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (94,024)! .[stone floor] @[000266] ?+3 [leather armour]
 (95,024)! |[stone wall]
 (24,025)  |[stone wall]
-(25,025)  .[dirt] @[000056] ?[animal corpse] weight 21000
-(26,025)  .[dirt] @[000057] ?[animal corpse] weight 15000
-(27,025)  .[dirt] @[000058] ?[animal corpse] weight 24000
-(28,025)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 18000
-(29,025)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 27000
-(30,025)  .[dirt] @[000059] ?[animal corpse] weight 21000
+(25,025)  .[dirt] @[000056] ?[animal corpse] weight 4500 character [000756]
+(26,025)  .[dirt] @[000057] ?[animal corpse] weight 4500 character [000757]
+(27,025)  .[dirt] @[000058] ?[animal corpse] weight 4500 character [000758]
+(28,025)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 200 character [000759]
+(29,025)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 2000 character [000760]
+(30,025)  .[dirt] @[000059] ?[animal corpse] weight 4500 character [000761]
 (31,025)  .[dirt]
 (32,025)  .[dirt] @[000060]
 (33,025)  .[dirt]
@@ -1050,12 +1050,12 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (94,025)! |[stone wall]
 (95,025)! |[stone wall]
 (24,026)  |[stone wall]
-(25,026)  .[dirt] @[000064] ?[animal corpse] weight 15000
-(26,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 25000
-(27,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 20000
-(28,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 15000
+(25,026)  .[dirt] @[000064] ?[animal corpse] weight 4500 character [000762]
+(26,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000763]
+(27,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000764]
+(28,026)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000765]
 (29,026)  .[dirt] @[000065]
-(30,026)  .[dirt] @[000066] ?[animal corpse] weight 20000
+(30,026)  .[dirt] @[000066] ?[animal corpse] weight 4000 character [000766]
 (31,026)  .[dirt]
 (32,026)  .[dirt]
 (33,026)  .[dirt]
@@ -1122,9 +1122,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (94,026)! .[stone floor] @[000272] ?+3 [splint mail]
 (95,026)! |[stone wall]
 (24,027)  |[stone wall]
-(25,027)  .[dirt] @[000071] ?[animal corpse] weight 24000
-(26,027)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 20000
-(27,027)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 16000
+(25,027)  .[dirt] @[000071] ?[animal corpse] weight 4500 character [000767]
+(26,027)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000768]
+(27,027)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000769]
 (28,027)  .[dirt] @[000072]
 (29,027)  .[dirt] @[000073]
 (30,027)  .[dirt]
@@ -1194,10 +1194,10 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (94,027)! |[stone wall]
 (95,027)! |[stone wall]
 (24,028)  |[stone wall]
-(25,028)  .[dirt] @[000085] ?[animal corpse] weight 18000
-(26,028)  .[dirt] @[000086] ?[animal corpse] weight 15000
-(27,028)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 27000
-(28,028)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 24000
+(25,028)  .[dirt] @[000085] ?[animal corpse] weight 4000 character [000770]
+(26,028)  .[dirt] @[000086] ?[animal corpse] weight 4000 character [000771]
+(27,028)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000772]
+(28,028)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000773]
 (29,028)  .[dirt] @[000087]
 (30,028)  .[dirt] @[000088]
 (31,028)  .[dirt]
@@ -1267,9 +1267,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (95,028)! |[stone wall]
 (24,029)  |[stone wall]
 (25,029)  |[stone wall]
-(26,029)  .[dirt] @[000104] ?[animal corpse] weight 25000
-(27,029)  .[dirt] @[000105] ?[animal corpse] weight 23000
-(28,029)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 21000
+(26,029)  .[dirt] @[000104] ?[animal corpse] weight 4500 character [000774]
+(27,029)  .[dirt] @[000105] ?[animal corpse] weight 4500 character [000775]
+(28,029)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 200 character [000776]
 (29,029)  .[dirt]
 (30,029)  .[dirt] @[000106]
 (31,029)  .[dirt]
@@ -1340,9 +1340,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (24,030)  |[stone wall]
 (25,030)  |[stone wall]
 (26,030)  |[stone wall]
-(27,030)  .[dirt] @[000116] ?[animal corpse] weight 19000
-(28,030)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 18000
-(29,030)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 17000
+(27,030)  .[dirt] @[000116] ?[animal corpse] weight 4500 character [000777]
+(28,030)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 600 character [000778]
+(29,030)  .[dirt] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000779]
 (30,030)  .[dirt] @[000117]
 (31,030)  .[dirt]
 (32,030)  .[dirt] _[grave] [cursed]
@@ -4494,9 +4494,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (34,073)! .[dirt] @[000374]
 (35,073)! .[dirt]
 (36,073)! |[stone wall]
-(37,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 15000
-(38,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 15000
-(39,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 15000
+(37,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 2000 character [000780]
+(38,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000781]
+(39,073)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000782]
 (40,073)! |[stone wall]
 (41,073)! .[dirt]
 (42,073)! .[dirt]
@@ -4566,9 +4566,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (34,074)! .[dirt] @[000375]
 (35,074)! .[dirt]
 (36,074)! +[wooden door] horizontal secret closed .[stone floor]
-(37,074)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 21000
+(37,074)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000783]
 (38,074)! .[stone floor] _[pentagram] @[000376]
-(39,074)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 23000
+(39,074)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000784]
 (40,074)! +[wooden door] horizontal secret closed .[stone floor]
 (41,074)! .[dirt]
 (42,074)! .[dirt] @[000377]
@@ -4638,9 +4638,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (34,075)! .[dirt]
 (35,075)! .[dirt]
 (36,075)! |[stone wall]
-(37,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 27000
-(38,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 29000
-(39,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 16000
+(37,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000785]
+(38,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 400 character [000786]
+(39,075)! .[stone floor] ^[pit] 0 revealed ?[animal corpse] weight 300 character [000787]
 (40,075)! |[stone wall]
 (41,075)! .[dirt]
 (42,075)! .[dirt] @[000379]
@@ -5327,7 +5327,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (03,085)! |[tree] .[dirt]
 (04,085)! |[stone wall]
 (05,085)! |[stone wall]
-(06,085)! .[dirt] ?[animal corpse] weight 21000
+(06,085)! .[dirt] ?[animal corpse] weight 4500 character [000788]
 (07,085)! |[stone wall]
 (08,085)! |[stone wall]
 (09,085)! |[tree] .[dirt]
@@ -5338,8 +5338,8 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (14,085)! |[tree] .[dirt]
 (15,085)! |[stone wall]
 (16,085)! |[stone wall]
-(17,085)! .[dirt] ?[animal corpse] weight 18000
-(18,085)! .[dirt] ?[animal corpse] weight 15000
+(17,085)! .[dirt] ?[animal corpse] weight 4000 character [000789]
+(18,085)! .[dirt] ?[animal corpse] weight 4500 character [000790]
 (19,085)! |[stone wall]
 (20,085)! |[stone wall]
 (21,085)! |[tree] .[dirt]
@@ -5435,7 +5435,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (39,086)! .[dirt]
 (40,086)! .[dirt]
 (41,086)! .[dirt]
-(42,086)! .[dirt] ?[animal corpse] weight 23000
+(42,086)! .[dirt] ?[animal corpse] weight 4000 character [000791]
 (43,086)! .[dirt]
 (44,086)! .[dirt]
 (45,086)! |[tree] .[dirt]
@@ -7687,11 +7687,11 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (59,111)! |[tree] .[dirt]
 (60,111)! .[dirt]
 (61,111)! .[dirt]
-(62,111)! .[dirt] ?[animal corpse] weight 28000
+(62,111)! .[dirt] ?[animal corpse] weight 4500 character [000792]
 (63,111)! .[dirt]
 (64,111)! .[water]
 (65,111)! .[dirt]
-(66,111)! .[dirt] ?[animal corpse] weight 27000
+(66,111)! .[dirt] ?[animal corpse] weight 4500 character [000793]
 (67,111)! .[dirt]
 (68,111)! |[tree] .[dirt]
 (69,111)! |[tree] .[dirt]
@@ -7709,7 +7709,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (57,112)! |[tree] .[dirt]
 (58,112)! |[tree] .[dirt]
 (59,112)! .[dirt]
-(60,112)! .[dirt] ?[animal corpse] weight 27000
+(60,112)! .[dirt] ?[animal corpse] weight 4000 character [000794]
 (61,112)! .[dirt]
 (62,112)! .[dirt]
 (63,112)! .[dirt]
@@ -7717,7 +7717,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (65,112)! .[dirt]
 (66,112)! .[dirt]
 (67,112)! .[dirt]
-(68,112)! .[dirt] ?[animal corpse] weight 18000
+(68,112)! .[dirt] ?[animal corpse] weight 4000 character [000795]
 (69,112)! .[dirt]
 (70,112)! |[tree] .[dirt]
 (71,112)! |[tree] .[dirt]
@@ -7731,14 +7731,14 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (55,113)! .[dirt]
 (56,113)! .[dirt]
 (57,113)! .[dirt]
-(58,113)! .[dirt] ?[animal corpse] weight 22000
+(58,113)! .[dirt] ?[animal corpse] weight 4500 character [000796]
 (59,113)! .[dirt]
 (60,113)! .[dirt]
-(61,113)! .[dirt] ?[animal corpse] weight 16000
+(61,113)! .[dirt] ?[animal corpse] weight 4500 character [000797]
 (62,113)! .[water]
 (63,113)! .[water]
 (64,113)! .[water]
-(65,113)! .[dirt] ?[animal corpse] weight 23000
+(65,113)! .[dirt] ?[animal corpse] weight 4500 character [000798]
 (66,113)! |[tree] .[dirt]
 (67,113)! |[tree] .[dirt]
 (68,113)! .[dirt]
@@ -7767,7 +7767,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (67,114)! |[tree] .[dirt]
 (68,114)! |[tree] .[dirt]
 (69,114)! .[dirt]
-(70,114)! .[dirt] ?[animal corpse] weight 29000
+(70,114)! .[dirt] ?[animal corpse] weight 4500 character [000799]
 (71,114)! |[tree] .[dirt]
 (48,115)! |[tree] .[dirt]
 (49,115)! |[tree] .[dirt]
@@ -7780,7 +7780,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (56,115)! .[dirt]
 (57,115)! .[dirt]
 (58,115)! .[dirt]
-(59,115)! .[dirt] ?[animal corpse] weight 15000
+(59,115)! .[dirt] ?[animal corpse] weight 4000 character [000800]
 (60,115)! .[dirt]
 (61,115)! .[water]
 (62,115)! .[dirt]
@@ -8220,403 +8220,403 @@ level [_Overland_];
 
 artifacts [Shadow Key] [Chasm Edge] [Jade Key] [Silver Key] [Sunsword] [Ruby Key] [Dire Needle] [Gold Key] [Stamped Letter];
 
-character @[000001] [male] [orc grunt] noclass square map [_Overland_] (76,003);
-character @[000002] [male] [orc grunt] noclass square map [_Overland_] (77,003);
-character @[000003] [male] [orc grunt] noclass square map [_Overland_] (91,003);
-character @[000004] [male] [orc grunt] noclass square map [_Overland_] (92,003);
-character @[000005] [male] [orc grunt] noclass square map [_Overland_] (76,004);
-character @[000006] [male] [guard] noclass neutral resident map [_Overland_] (77,004) square map [_Overland_] (77,004);
-character @[000007] [male] [guard] noclass neutral resident map [_Overland_] (91,004) square map [_Overland_] (91,004);
-character @[000008] [male] [orc grunt] noclass square map [_Overland_] (92,004);
-character @[000009] [male] [orc grunt] noclass square map [_Overland_] (83,005);
-character @[000010] [male] [orc grunt] noclass square map [_Overland_] (84,005);
-character @[000011] [male] [orc grunt] noclass square map [_Overland_] (85,005);
-character @[000012] [male] [orc grunt] noclass square map [_Overland_] (81,008);
-character @[000013] [male] [orc grunt] noclass square map [_Overland_] (82,008);
-character @[000014] [male] [orc grunt] noclass square map [_Overland_] (83,008);
-character @[000015] [male] [orc grunt] noclass square map [_Overland_] (85,008);
-character @[000016] [male] [orc grunt] noclass square map [_Overland_] (86,008);
-character @[000017] [male] [orc grunt] noclass square map [_Overland_] (87,008);
-character @[000018] [male] [orc grunt] noclass square map [_Overland_] (81,009);
-character @[000019] [male] [orc grunt] noclass square map [_Overland_] (87,009);
-character @[000020] [male] [orc grunt] noclass square map [_Overland_] (78,010);
-character @[000021] [male] [orc grunt] noclass square map [_Overland_] (81,010);
-character @[000022] [male] [orc grunt] noclass square map [_Overland_] (87,010);
-character @[000023] [male] [orc grunt] noclass square map [_Overland_] (90,010);
-character @[000024] [male] [orc grunt] noclass square map [_Overland_] (78,011);
-character @[000025] [male] [orc grunt] noclass square map [_Overland_] (90,011);
-character @[000026] [male] [orc grunt] noclass square map [_Overland_] (78,012);
-character @[000027] [male] [orc grunt] noclass square map [_Overland_] (81,012);
-character @[000028] [male] [orc grunt] noclass square map [_Overland_] (87,012);
-character @[000029] [male] [orc grunt] noclass square map [_Overland_] (90,012);
-character @[000030] [male] [orc grunt] noclass square map [_Overland_] (81,013);
-character @[000031] [neuter] [arch-lich] noclass square map [_Overland_] (84,013);
-character @[000032] [male] [orc grunt] noclass square map [_Overland_] (87,013);
-character @[000033] [male] [orc grunt] noclass square map [_Overland_] (81,014);
-character @[000034] [male] [orc grunt] noclass square map [_Overland_] (82,014);
-character @[000035] [male] [orc grunt] noclass square map [_Overland_] (83,014);
-character @[000036] [male] [orc grunt] noclass square map [_Overland_] (85,014);
-character @[000037] [male] [orc grunt] noclass square map [_Overland_] (86,014);
-character @[000038] [male] [orc grunt] noclass square map [_Overland_] (87,014);
-character @[000039] [male] [orc grunt] noclass square map [_Overland_] (83,017);
-character @[000040] [male] [orc grunt] noclass square map [_Overland_] (84,017);
-character @[000041] [male] [orc grunt] noclass square map [_Overland_] (85,017);
-character @[000042] [male] [orc grunt] noclass square map [_Overland_] (76,018);
-character @[000043] [male] [guard] noclass neutral resident map [_Overland_] (77,018) square map [_Overland_] (77,018);
-character @[000044] [male] [guard] noclass neutral resident map [_Overland_] (91,018) square map [_Overland_] (91,018);
-character @[000045] [male] [orc grunt] noclass square map [_Overland_] (92,018);
-character @[000046] [male] [orc grunt] noclass square map [_Overland_] (76,019);
-character @[000047] [male] [orc grunt] noclass square map [_Overland_] (77,019);
-character @[000048] [male] [orc grunt] noclass square map [_Overland_] (91,019);
-character @[000049] [male] [orc grunt] noclass square map [_Overland_] (92,019);
-character @[000050] [neuter] [living wall] noclass square map [_Overland_] (30,023);
-character @[000051] [neuter] [living wall] noclass square map [_Overland_] (27,024);
-character @[000052] [neuter] [living wall] noclass square map [_Overland_] (28,024);
-character @[000053] [neuter] [living wall] noclass square map [_Overland_] (29,024);
-character @[000054] [neuter] [living wall] noclass square map [_Overland_] (30,024);
-character @[000055] [neuter] [living wall] noclass square map [_Overland_] (35,024);
-character @[000056] [neuter] [living wall] noclass square map [_Overland_] (25,025);
-character @[000057] [neuter] [living wall] noclass square map [_Overland_] (26,025);
-character @[000058] [neuter] [living wall] noclass square map [_Overland_] (27,025);
-character @[000059] [neuter] [living wall] noclass square map [_Overland_] (30,025);
-character @[000060] [neuter] [stalker] noclass square map [_Overland_] (32,025);
-character @[000061] [neuter] [living wall] noclass square map [_Overland_] (35,025);
-character @[000062] [neuter] [living wall] noclass square map [_Overland_] (45,025);
-character @[000063] [neuter] [living wall] noclass square map [_Overland_] (46,025);
-character @[000064] [neuter] [living wall] noclass square map [_Overland_] (25,026);
-character @[000065] [male] [skeleton] noclass square map [_Overland_] (29,026);
-character @[000066] [neuter] [living wall] noclass square map [_Overland_] (30,026);
-character @[000067] [neuter] [living wall] noclass square map [_Overland_] (35,026);
-character @[000068] [male] [giant rat] noclass square map [_Overland_] (36,026);
-character @[000069] [neuter] [living wall] noclass square map [_Overland_] (44,026);
-character @[000070] [neuter] [living wall] noclass square map [_Overland_] (45,026);
-character @[000071] [neuter] [living wall] noclass square map [_Overland_] (25,027);
-character @[000072] [male] [skeleton] noclass square map [_Overland_] (28,027);
-character @[000073] [male] [skeleton] noclass square map [_Overland_] (29,027);
-character @[000074] [neuter] [living wall] noclass square map [_Overland_] (34,027);
-character @[000075] [neuter] [living wall] noclass square map [_Overland_] (35,027);
-character @[000076] [male] [giant rat] noclass square map [_Overland_] (36,027);
-character @[000077] [male] [giant rat] noclass square map [_Overland_] (37,027);
-character @[000078] [male] [giant rat] noclass square map [_Overland_] (39,027);
-character @[000079] [neuter] [living wall] noclass square map [_Overland_] (41,027);
-character @[000080] [neuter] [living wall] noclass square map [_Overland_] (42,027);
-character @[000081] [neuter] [living wall] noclass square map [_Overland_] (43,027);
-character @[000082] [neuter] [living wall] noclass square map [_Overland_] (44,027);
-character @[000083] [male] [giant rat] noclass square map [_Overland_] (45,027);
-character @[000084] [male] [giant rat] noclass square map [_Overland_] (46,027);
-character @[000085] [neuter] [living wall] noclass square map [_Overland_] (25,028);
-character @[000086] [neuter] [living wall] noclass square map [_Overland_] (26,028);
-character @[000087] [male] [skeleton] noclass square map [_Overland_] (29,028);
-character @[000088] [neuter] [living wall] noclass square map [_Overland_] (30,028);
-character @[000089] [neuter] [living wall] noclass square map [_Overland_] (32,028);
-character @[000090] [neuter] [living wall] noclass square map [_Overland_] (33,028);
-character @[000091] [neuter] [living wall] noclass square map [_Overland_] (34,028);
-character @[000092] [neuter] [living wall] noclass square map [_Overland_] (35,028);
-character @[000093] [neuter] [living wall] noclass square map [_Overland_] (36,028);
-character @[000094] [neuter] [living wall] noclass square map [_Overland_] (37,028);
-character @[000095] [male] [giant rat] noclass square map [_Overland_] (38,028);
-character @[000096] [male] [giant rat] noclass square map [_Overland_] (39,028);
-character @[000097] [male] [giant rat] noclass square map [_Overland_] (40,028);
-character @[000098] [neuter] [living wall] noclass square map [_Overland_] (41,028);
-character @[000099] [male] [giant rat] noclass square map [_Overland_] (42,028);
-character @[000100] [male] [giant rat] noclass square map [_Overland_] (43,028);
-character @[000101] [male] [giant rat] noclass square map [_Overland_] (44,028);
-character @[000102] [male] [giant rat] noclass square map [_Overland_] (45,028);
-character @[000103] [male] [giant rat] noclass square map [_Overland_] (46,028);
-character @[000104] [neuter] [living wall] noclass square map [_Overland_] (26,029);
-character @[000105] [neuter] [living wall] noclass square map [_Overland_] (27,029);
-character @[000106] [neuter] [living wall] noclass square map [_Overland_] (30,029);
-character @[000107] [neuter] [living wall] noclass square map [_Overland_] (37,029);
-character @[000108] [neuter] [living wall] noclass square map [_Overland_] (38,029);
-character @[000109] [neuter] [living wall] noclass square map [_Overland_] (39,029);
-character @[000110] [neuter] [living wall] noclass square map [_Overland_] (40,029);
-character @[000111] [neuter] [living wall] noclass square map [_Overland_] (41,029);
-character @[000112] [male] [giant rat] noclass square map [_Overland_] (42,029);
-character @[000113] [male] [giant rat] noclass square map [_Overland_] (43,029);
-character @[000114] [male] [giant rat] noclass square map [_Overland_] (44,029);
-character @[000115] [male] [giant rat] noclass square map [_Overland_] (45,029);
-character @[000116] [neuter] [living wall] noclass square map [_Overland_] (27,030);
-character @[000117] [neuter] [living wall] noclass square map [_Overland_] (30,030);
-character @[000118] [neuter] [living wall] noclass square map [_Overland_] (39,030);
-character @[000119] [neuter] [living wall] noclass square map [_Overland_] (40,030);
-character @[000120] [male] [giant rat] noclass square map [_Overland_] (41,030);
-character @[000121] [male] [giant rat] noclass square map [_Overland_] (42,030);
-character @[000122] [male] [giant rat] noclass square map [_Overland_] (43,030);
-character @[000123] [neuter] [living wall] noclass square map [_Overland_] (44,030);
-character @[000124] [neuter] [living wall] noclass square map [_Overland_] (45,030);
-character @[000125] [neuter] [living wall] noclass square map [_Overland_] (46,030);
-character @[000126] [neuter] [living wall] noclass square map [_Overland_] (25,031);
-character @[000127] [neuter] [living wall] noclass square map [_Overland_] (26,031);
-character @[000128] [neuter] [living wall] noclass square map [_Overland_] (27,031);
-character @[000129] [neuter] [living wall] noclass square map [_Overland_] (28,031);
-character @[000130] [neuter] [living wall] noclass square map [_Overland_] (29,031);
-character @[000131] [neuter] [living wall] noclass square map [_Overland_] (30,031);
-character @[000132] [neuter] [living wall] noclass square map [_Overland_] (40,031);
-character @[000133] [neuter] [living wall] noclass square map [_Overland_] (41,031);
-character @[000134] [neuter] [living wall] noclass square map [_Overland_] (42,031);
-character @[000135] [neuter] [living wall] noclass square map [_Overland_] (43,031);
-character @[000136] [neuter] [living wall] noclass square map [_Overland_] (44,031);
-character @[000137] [neuter] [living wall] noclass square map [_Overland_] (30,032);
-character @[000138] [male] [giant rat] noclass square map [_Overland_] (27,033);
-character @[000139] [neuter] [living wall] noclass square map [_Overland_] (30,033);
-character @[000140] [neuter] [stalker] noclass square map [_Overland_] (40,033);
-character @[000141] [neuter] [living wall] noclass square map [_Overland_] (42,033);
-character @[000142] [neuter] [living wall] noclass square map [_Overland_] (43,033);
-character @[000143] [neuter] [living wall] noclass square map [_Overland_] (44,033);
-character @[000144] [neuter] [living wall] noclass square map [_Overland_] (45,033);
-character @[000145] [neuter] [living wall] noclass square map [_Overland_] (46,033);
-character @[000146] [male] [giant rat] noclass square map [_Overland_] (28,034);
-character @[000147] [neuter] [living wall] noclass square map [_Overland_] (30,034);
-character @[000148] [neuter] [living wall] noclass square map [_Overland_] (40,034);
-character @[000149] [neuter] [living wall] noclass square map [_Overland_] (42,034);
-character @[000150] [neuter] [living wall] noclass square map [_Overland_] (46,034);
-character @[000151] [neuter] [living wall] noclass square map [_Overland_] (25,035);
-character @[000152] [neuter] [living wall] noclass square map [_Overland_] (29,035);
-character @[000153] [neuter] [living wall] noclass square map [_Overland_] (30,035);
-character @[000154] [neuter] [living wall] noclass square map [_Overland_] (39,035);
-character @[000155] [neuter] [living wall] noclass square map [_Overland_] (40,035);
-character @[000156] [neuter] [living wall] noclass square map [_Overland_] (41,035);
-character @[000157] [neuter] [living wall] noclass square map [_Overland_] (42,035);
-character @[000158] [female] [harpy] noclass square map [_Overland_] (46,035);
-character @[000159] [neuter] [living wall] noclass square map [_Overland_] (25,036);
-character @[000160] [neuter] [living wall] noclass square map [_Overland_] (27,036);
-character @[000161] [neuter] [living wall] noclass square map [_Overland_] (28,036);
-character @[000162] [neuter] [living wall] noclass square map [_Overland_] (29,036);
-character @[000163] [neuter] [living wall] noclass square map [_Overland_] (30,036);
-character @[000164] [neuter] [living wall] noclass square map [_Overland_] (31,036);
-character @[000165] [neuter] [living wall] noclass square map [_Overland_] (34,036);
-character @[000166] [neuter] [living wall] noclass square map [_Overland_] (35,036);
-character @[000167] [neuter] [living wall] noclass square map [_Overland_] (37,036);
-character @[000168] [neuter] [living wall] noclass square map [_Overland_] (38,036);
-character @[000169] [neuter] [living wall] noclass square map [_Overland_] (39,036);
-character @[000170] [neuter] [living wall] noclass square map [_Overland_] (40,036);
-character @[000171] [neuter] [living wall] noclass square map [_Overland_] (41,036);
-character @[000172] [neuter] [living wall] noclass square map [_Overland_] (42,036);
-character @[000173] [female] [harpy] noclass square map [_Overland_] (46,036);
-character @[000174] [neuter] [living wall] noclass square map [_Overland_] (25,037);
-character @[000175] [male] [skeleton] noclass square map [_Overland_] (26,037);
-character @[000176] [neuter] [living wall] noclass square map [_Overland_] (27,037);
-character @[000177] [male] [skeleton] noclass square map [_Overland_] (30,037);
-character @[000178] [neuter] [living wall] noclass square map [_Overland_] (31,037);
-character @[000179] [neuter] [living wall] noclass square map [_Overland_] (35,037);
-character @[000180] [neuter] [living wall] noclass square map [_Overland_] (36,037);
-character @[000181] [neuter] [living wall] noclass square map [_Overland_] (37,037);
-character @[000182] [neuter] [stalker] noclass square map [_Overland_] (38,037);
-character @[000183] [neuter] [stalker] noclass square map [_Overland_] (39,037);
-character @[000184] [neuter] [living wall] noclass square map [_Overland_] (40,037);
-character @[000185] [neuter] [living wall] noclass square map [_Overland_] (41,037);
-character @[000186] [neuter] [living wall] noclass square map [_Overland_] (42,037);
-character @[000187] [female] [harpy] noclass square map [_Overland_] (46,037);
-character @[000188] [neuter] [living wall] noclass square map [_Overland_] (25,038);
-character @[000189] [neuter] [living wall] noclass square map [_Overland_] (27,038);
-character @[000190] [male] [skeleton] noclass square map [_Overland_] (30,038);
-character @[000191] [neuter] [living wall] noclass square map [_Overland_] (36,038);
-character @[000192] [neuter] [living wall] noclass square map [_Overland_] (37,038);
-character @[000193] [neuter] [living wall] noclass square map [_Overland_] (38,038);
-character @[000194] [neuter] [living wall] noclass square map [_Overland_] (39,038);
-character @[000195] [neuter] [living wall] noclass square map [_Overland_] (40,038);
-character @[000196] [neuter] [living wall] noclass square map [_Overland_] (41,038);
-character @[000197] [neuter] [living wall] noclass square map [_Overland_] (42,038);
-character @[000198] [neuter] [living wall] noclass square map [_Overland_] (45,038);
-character @[000199] [female] [harpy] noclass square map [_Overland_] (46,038);
-character @[000200] [neuter] [living wall] noclass square map [_Overland_] (27,039);
-character @[000201] [male] [skeleton] noclass square map [_Overland_] (30,039);
-character @[000202] [neuter] [living wall] noclass square map [_Overland_] (31,039);
-character @[000203] [neuter] [living wall] noclass square map [_Overland_] (41,039);
-character @[000204] [neuter] [living wall] noclass square map [_Overland_] (42,039);
-character @[000205] [neuter] [living wall] noclass square map [_Overland_] (43,039);
-character @[000206] [neuter] [living wall] noclass square map [_Overland_] (44,039);
-character @[000207] [neuter] [living wall] noclass square map [_Overland_] (45,039);
-character @[000208] [male] [skeleton] noclass square map [_Overland_] (25,040);
-character @[000209] [neuter] [living wall] noclass square map [_Overland_] (27,040);
-character @[000210] [neuter] [living wall] noclass square map [_Overland_] (30,040);
-character @[000211] [neuter] [living wall] noclass square map [_Overland_] (31,040);
-character @[000212] [neuter] [living wall] noclass square map [_Overland_] (32,040);
-character @[000213] [male] [guard] noclass neutral resident map [_Overland_] (33,040) square map [_Overland_] (33,040);
-character @[000214] [neuter] [living wall] noclass square map [_Overland_] (34,040);
-character @[000215] [neuter] [living wall] noclass square map [_Overland_] (35,040);
-character @[000216] [neuter] [living wall] noclass square map [_Overland_] (36,040);
-character @[000217] [neuter] [living wall] noclass square map [_Overland_] (37,040);
-character @[000218] [neuter] [living wall] noclass square map [_Overland_] (38,040);
-character @[000219] [neuter] [living wall] noclass square map [_Overland_] (39,040);
-character @[000220] [male] [giant rat] noclass square map [_Overland_] (45,040);
-character @[000221] [neuter] [living wall] noclass square map [_Overland_] (27,041);
-character @[000222] [neuter] [stalker] noclass square map [_Overland_] (28,041);
-character @[000223] [neuter] [stalker] noclass square map [_Overland_] (29,041);
-character @[000224] [neuter] [living wall] noclass square map [_Overland_] (30,041);
-character @[000225] [neuter] [living wall] noclass square map [_Overland_] (31,041);
-character @[000226] [neuter] [living wall] noclass square map [_Overland_] (34,041);
-character @[000227] [male] [guard] noclass neutral resident map [_Overland_] (39,041) square map [_Overland_] (39,041);
-character @[000228] [neuter] [living wall] noclass square map [_Overland_] (42,041);
-character @[000229] [male] [giant rat] noclass square map [_Overland_] (44,041);
-character @[000230] [neuter] [living wall] noclass square map [_Overland_] (25,042);
-character @[000231] [neuter] [living wall] noclass square map [_Overland_] (26,042);
-character @[000232] [neuter] [living wall] noclass square map [_Overland_] (27,042);
-character @[000233] [neuter] [living wall] noclass square map [_Overland_] (28,042);
-character @[000234] [neuter] [living wall] noclass square map [_Overland_] (29,042);
-character @[000235] [neuter] [living wall] noclass square map [_Overland_] (30,042);
-character @[000236] [neuter] [living wall] noclass square map [_Overland_] (31,042);
-character @[000237] [neuter] [living wall] noclass square map [_Overland_] (34,042);
-character @[000238] [neuter] [living wall] noclass square map [_Overland_] (39,042);
-character @[000239] [neuter] [living wall] noclass square map [_Overland_] (42,042);
-character @[000240] [neuter] [small mimic] noclass square map [_Overland_] (53,023);
-character @[000241] [neuter] [stalker] noclass square map [_Overland_] (49,024);
-character @[000242] [neuter] [stalker] noclass square map [_Overland_] (50,024);
-character @[000243] [male] [guard] noclass neutral resident map [_Overland_] (51,024) square map [_Overland_] (51,024);
-character @[000244] [neuter] [small mimic] noclass square map [_Overland_] (53,024);
-character @[000245] [neuter] [stalker] noclass square map [_Overland_] (64,024);
-character @[000246] [male] [guard] noclass neutral resident map [_Overland_] (56,025) square map [_Overland_] (56,025);
-character @[000247] [male] [guard] noclass neutral resident map [_Overland_] (62,025) square map [_Overland_] (62,025);
-character @[000248] [male] [guard] noclass neutral resident map [_Overland_] (56,028) square map [_Overland_] (56,028);
-character @[000249] [male] [guard] noclass neutral resident map [_Overland_] (62,028) square map [_Overland_] (62,028);
-character @[000250] [neuter] [stalker] noclass square map [_Overland_] (49,029);
-character @[000251] [neuter] [stalker] noclass square map [_Overland_] (50,029);
-character @[000252] [male] [guard] noclass neutral resident map [_Overland_] (51,029) square map [_Overland_] (51,029);
-character @[000253] [neuter] [small mimic] noclass square map [_Overland_] (53,029);
-character @[000254] [neuter] [small mimic] noclass square map [_Overland_] (53,030);
-character @[000255] [neuter] [small mimic] noclass square map [_Overland_] (54,030);
-character @[000256] [neuter] [mind flayer] noclass square map [_Overland_] (68,031);
-character @[000257] [neuter] [mind flayer] noclass square map [_Overland_] (68,032);
-character @[000258] [neuter] [stalker] noclass square map [_Overland_] (68,033);
-character @[000259] [neuter] [stalker] noclass square map [_Overland_] (69,033);
-character @[000260] [neuter] [stalker] noclass square map [_Overland_] (70,033);
-character @[000261] [neuter] [stalker] noclass square map [_Overland_] (68,034);
-character @[000262] [neuter] [stalker] noclass square map [_Overland_] (69,034);
-character @[000263] [neuter] [stalker] noclass square map [_Overland_] (70,034);
-character @[000264] [male] [dwarf warrior] noclass square map [_Overland_] (91,024);
-character @[000265] [male] [dwarf warrior] noclass square map [_Overland_] (92,024);
-character @[000266] [male] [dwarf warrior] noclass square map [_Overland_] (94,024);
-character @[000267] [male] [dwarf warrior] noclass square map [_Overland_] (85,025);
-character @[000268] [male] [dwarf warrior] noclass square map [_Overland_] (92,025);
-character @[000269] [male] [dwarf warrior] noclass square map [_Overland_] (86,026);
-character @[000270] [male] [guard] noclass neutral resident map [_Overland_] (89,026) square map [_Overland_] (89,026);
-character @[000271] [male] [dwarf warrior] noclass square map [_Overland_] (91,026);
-character @[000272] [male] [dwarf warrior] noclass square map [_Overland_] (94,026);
-character @[000273] [male] [dwarf warrior] noclass square map [_Overland_] (86,027);
-character @[000274] [male] [dwarf warrior] noclass square map [_Overland_] (87,027);
-character @[000275] [male] [dwarf warrior] noclass square map [_Overland_] (92,027);
-character @[000276] [male] [dwarf warrior] noclass square map [_Overland_] (91,028);
-character @[000277] [male] [dwarf warrior] noclass square map [_Overland_] (92,028);
-character @[000278] [male] [dwarf warrior] noclass square map [_Overland_] (94,028);
-character @[000279] [male] [dwarf warrior] noclass square map [_Overland_] (80,029);
-character @[000280] [male] [dwarf warrior] noclass square map [_Overland_] (81,029);
-character @[000281] [male] [dwarf warrior] noclass square map [_Overland_] (81,030);
-character @[000282] [male] [dwarf warrior] noclass square map [_Overland_] (83,032);
-character @[000283] [male] [dwarf warrior] noclass square map [_Overland_] (84,032);
-character @[000284] [male] [dwarf warrior] noclass square map [_Overland_] (84,033);
-character @[000285] [male] [dwarf warrior] noclass square map [_Overland_] (83,034);
-character @[000286] [male] [dwarf warrior] noclass square map [_Overland_] (84,034);
-character @[000287] [male] [dwarf warrior] noclass square map [_Overland_] (84,035);
-character @[000288] [male] [dwarf warrior] noclass square map [_Overland_] (84,036);
-character @[000289] [male] [dwarf warrior] noclass square map [_Overland_] (85,036);
-character @[000290] [male] [dwarf warrior] noclass square map [_Overland_] (01,045);
-character @[000291] [male] [dwarf warrior] noclass square map [_Overland_] (12,045);
-character @[000292] [male] [dwarf warrior] noclass square map [_Overland_] (07,047);
-character @[000293] [male] [dwarf warrior] noclass square map [_Overland_] (19,047);
-character @[000294] [male] [dwarf warrior] noclass square map [_Overland_] (19,048);
-character @[000295] [male] [dwarf warrior] noclass square map [_Overland_] (12,052);
-character @[000296] [male] [dwarf warrior] noclass square map [_Overland_] (19,052);
-character @[000297] [male] [dwarf warrior] noclass square map [_Overland_] (03,053);
-character @[000298] [male] [dwarf warrior] noclass square map [_Overland_] (22,053);
-character @[000299] [male] [dwarf warrior] noclass square map [_Overland_] (01,055);
-character @[000300] [male] [dwarf warrior] noclass square map [_Overland_] (07,055);
-character @[000301] [male] [dwarf warrior] noclass square map [_Overland_] (11,055);
-character @[000302] [male] [dwarf warrior] noclass square map [_Overland_] (15,055);
-character @[000303] [male] [dwarf warrior] noclass square map [_Overland_] (07,056);
-character @[000304] [male] [dwarf warrior] noclass square map [_Overland_] (08,056);
-character @[000305] [male] [dwarf warrior] noclass square map [_Overland_] (20,058);
-character @[000306] [neuter] [small mimic] noclass square map [_Overland_] (03,061);
-character @[000307] [neuter] [small mimic] noclass square map [_Overland_] (04,061);
-character @[000308] [male] [dwarf warrior] noclass square map [_Overland_] (20,061);
-character @[000309] [neuter] [small mimic] noclass square map [_Overland_] (05,062);
-character @[000310] [male] [dwarf warrior] noclass square map [_Overland_] (10,062);
-character @[000311] [male] [dwarf warrior] noclass square map [_Overland_] (20,062);
-character @[000312] [male] [dwarf warrior] noclass square map [_Overland_] (10,064);
-character @[000313] [male] [dwarf warrior] noclass square map [_Overland_] (16,064);
-character @[000314] [neuter] [living wall] noclass square map [_Overland_] (32,044);
-character @[000315] [neuter] [living wall] noclass square map [_Overland_] (33,044);
-character @[000316] [neuter] [living wall] noclass square map [_Overland_] (34,044);
-character @[000317] [neuter] [small mimic] noclass square map [_Overland_] (46,045);
-character @[000318] [neuter] [small mimic] noclass square map [_Overland_] (46,046);
-character @[000319] [male] [guard] noclass neutral resident map [_Overland_] (32,047) square map [_Overland_] (32,047);
-character @[000320] [male] [guard] noclass neutral resident map [_Overland_] (34,047) square map [_Overland_] (34,047);
-character @[000321] [male] [orc grunt] noclass square map [_Overland_] (26,049);
-character @[000322] [male] [orc grunt] noclass square map [_Overland_] (25,052);
-character @[000323] [male] [orc grunt] noclass square map [_Overland_] (42,053);
-character @[000324] [male] [orc grunt] noclass square map [_Overland_] (43,053);
-character @[000325] [male] [orc grunt] noclass square map [_Overland_] (42,054);
-character @[000326] [male] [orc grunt] noclass square map [_Overland_] (43,054);
-character @[000327] [male] [orc grunt] noclass square map [_Overland_] (26,055);
-character @[000328] [male] [orc grunt] noclass square map [_Overland_] (42,055);
-character @[000329] [male] [orc grunt] noclass square map [_Overland_] (43,055);
-character @[000330] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (25,060);
-character @[000331] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (26,060);
-character @[000332] [male] [guard] noclass neutral resident map [_Overland_] (44,060) square map [_Overland_] (44,060);
-character @[000333] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,060);
-character @[000334] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (39,061);
-character @[000335] [male] [guard] noclass neutral resident map [_Overland_] (44,061) square map [_Overland_] (44,061);
-character @[000336] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,061);
-character @[000337] [male] [guard] noclass neutral resident map [_Overland_] (44,062) square map [_Overland_] (44,062);
-character @[000338] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,062);
-character @[000339] [male] [orc grunt] noclass square map [_Overland_] (60,045);
-character @[000340] [neuter] [small mimic] noclass square map [_Overland_] (70,045);
-character @[000341] [male] [orc grunt] noclass square map [_Overland_] (52,046);
-character @[000342] [male] [orc grunt] noclass square map [_Overland_] (65,047);
-character @[000343] [male] [orc grunt] noclass square map [_Overland_] (55,050);
-character @[000344] [male] [orc grunt] noclass square map [_Overland_] (58,050);
-character @[000345] [male] [orc grunt] noclass square map [_Overland_] (66,050);
-character @[000346] [male] [orc grunt] noclass square map [_Overland_] (69,053);
-character @[000347] [male] [guard] noclass neutral resident map [_Overland_] (59,055) square map [_Overland_] (59,055);
-character @[000348] [male] [guard] noclass neutral resident map [_Overland_] (61,055) square map [_Overland_] (61,055);
-character @[000349] [male] [orc grunt] noclass square map [_Overland_] (68,056);
-character @[000350] [male] [orc grunt] noclass square map [_Overland_] (52,058);
-character @[000351] [male] [orc grunt] noclass square map [_Overland_] (54,058);
-character @[000352] [male] [orc grunt] noclass square map [_Overland_] (51,060);
-character @[000353] [male] [orc grunt] noclass square map [_Overland_] (60,061);
-character @[000354] [neuter] [small mimic] noclass square map [_Overland_] (68,063);
-character @[000355] [neuter] [small mimic] noclass square map [_Overland_] (69,063);
-character @[000356] [neuter] [small mimic] noclass square map [_Overland_] (70,063);
-character @[000357] [male] [orc grunt] noclass square map [_Overland_] (52,064);
-character @[000358] [neuter] [small mimic] noclass square map [_Overland_] (56,064);
-character @[000359] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,064);
-character @[000360] [neuter] [small mimic] noclass square map [_Overland_] (10,078);
-character @[000361] [neuter] [small mimic] noclass square map [_Overland_] (11,078);
-character @[000362] [neuter] [small mimic] noclass square map [_Overland_] (12,078);
-character @[000363] [neuter] [small mimic] noclass square map [_Overland_] (13,078);
-character @[000364] [male] [guard] noclass neutral resident map [_Overland_] (11,080) square map [_Overland_] (11,080);
-character @[000365] [male] [guard] noclass neutral resident map [_Overland_] (12,080) square map [_Overland_] (12,080);
-character @[000366] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (38,068);
-character @[000367] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (39,069);
-character @[000368] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (40,069);
-character @[000369] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (26,070);
-character @[000370] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (29,070);
-character @[000371] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (26,071);
-character @[000372] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (29,071);
-character @[000373] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (30,071);
-character @[000374] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (34,073);
-character @[000375] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (34,074);
-character @[000376] [neuter] [small mimic] noclass square map [_Overland_] (38,074);
-character @[000377] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (42,074);
-character @[000378] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (43,074);
-character @[000379] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (42,075);
+character @[000001] level 3 [male] [orc grunt] noclass square map [_Overland_] (76,003);
+character @[000002] level 3 [male] [orc grunt] noclass square map [_Overland_] (77,003);
+character @[000003] level 3 [male] [orc grunt] noclass square map [_Overland_] (91,003);
+character @[000004] level 3 [male] [orc grunt] noclass square map [_Overland_] (92,003);
+character @[000005] level 3 [male] [orc grunt] noclass square map [_Overland_] (76,004);
+character @[000006] level 12 [male] [guard] noclass neutral resident map [_Overland_] (77,004) square map [_Overland_] (77,004);
+character @[000007] level 12 [male] [guard] noclass neutral resident map [_Overland_] (91,004) square map [_Overland_] (91,004);
+character @[000008] level 3 [male] [orc grunt] noclass square map [_Overland_] (92,004);
+character @[000009] level 3 [male] [orc grunt] noclass square map [_Overland_] (83,005);
+character @[000010] level 3 [male] [orc grunt] noclass square map [_Overland_] (84,005);
+character @[000011] level 3 [male] [orc grunt] noclass square map [_Overland_] (85,005);
+character @[000012] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,008);
+character @[000013] level 3 [male] [orc grunt] noclass square map [_Overland_] (82,008);
+character @[000014] level 3 [male] [orc grunt] noclass square map [_Overland_] (83,008);
+character @[000015] level 3 [male] [orc grunt] noclass square map [_Overland_] (85,008);
+character @[000016] level 3 [male] [orc grunt] noclass square map [_Overland_] (86,008);
+character @[000017] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,008);
+character @[000018] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,009);
+character @[000019] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,009);
+character @[000020] level 3 [male] [orc grunt] noclass square map [_Overland_] (78,010);
+character @[000021] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,010);
+character @[000022] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,010);
+character @[000023] level 3 [male] [orc grunt] noclass square map [_Overland_] (90,010);
+character @[000024] level 3 [male] [orc grunt] noclass square map [_Overland_] (78,011);
+character @[000025] level 3 [male] [orc grunt] noclass square map [_Overland_] (90,011);
+character @[000026] level 3 [male] [orc grunt] noclass square map [_Overland_] (78,012);
+character @[000027] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,012);
+character @[000028] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,012);
+character @[000029] level 3 [male] [orc grunt] noclass square map [_Overland_] (90,012);
+character @[000030] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,013);
+character @[000031] level 25 [neuter] [arch-lich] noclass square map [_Overland_] (84,013);
+character @[000032] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,013);
+character @[000033] level 3 [male] [orc grunt] noclass square map [_Overland_] (81,014);
+character @[000034] level 3 [male] [orc grunt] noclass square map [_Overland_] (82,014);
+character @[000035] level 3 [male] [orc grunt] noclass square map [_Overland_] (83,014);
+character @[000036] level 3 [male] [orc grunt] noclass square map [_Overland_] (85,014);
+character @[000037] level 3 [male] [orc grunt] noclass square map [_Overland_] (86,014);
+character @[000038] level 3 [male] [orc grunt] noclass square map [_Overland_] (87,014);
+character @[000039] level 3 [male] [orc grunt] noclass square map [_Overland_] (83,017);
+character @[000040] level 3 [male] [orc grunt] noclass square map [_Overland_] (84,017);
+character @[000041] level 3 [male] [orc grunt] noclass square map [_Overland_] (85,017);
+character @[000042] level 3 [male] [orc grunt] noclass square map [_Overland_] (76,018);
+character @[000043] level 12 [male] [guard] noclass neutral resident map [_Overland_] (77,018) square map [_Overland_] (77,018);
+character @[000044] level 12 [male] [guard] noclass neutral resident map [_Overland_] (91,018) square map [_Overland_] (91,018);
+character @[000045] level 3 [male] [orc grunt] noclass square map [_Overland_] (92,018);
+character @[000046] level 3 [male] [orc grunt] noclass square map [_Overland_] (76,019);
+character @[000047] level 3 [male] [orc grunt] noclass square map [_Overland_] (77,019);
+character @[000048] level 3 [male] [orc grunt] noclass square map [_Overland_] (91,019);
+character @[000049] level 3 [male] [orc grunt] noclass square map [_Overland_] (92,019);
+character @[000050] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,023);
+character @[000051] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,024);
+character @[000052] level 10 [neuter] [living wall] noclass square map [_Overland_] (28,024);
+character @[000053] level 10 [neuter] [living wall] noclass square map [_Overland_] (29,024);
+character @[000054] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,024);
+character @[000055] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,024);
+character @[000056] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,025);
+character @[000057] level 10 [neuter] [living wall] noclass square map [_Overland_] (26,025);
+character @[000058] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,025);
+character @[000059] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,025);
+character @[000060] level 8 [neuter] [stalker] noclass square map [_Overland_] (32,025);
+character @[000061] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,025);
+character @[000062] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,025);
+character @[000063] level 10 [neuter] [living wall] noclass square map [_Overland_] (46,025);
+character @[000064] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,026);
+character @[000065] level 24 [male] [skeleton] noclass square map [_Overland_] (29,026);
+character @[000066] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,026);
+character @[000067] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,026);
+character @[000068] level 1 [male] [giant rat] noclass square map [_Overland_] (36,026);
+character @[000069] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,026);
+character @[000070] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,026);
+character @[000071] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,027);
+character @[000072] level 24 [male] [skeleton] noclass square map [_Overland_] (28,027);
+character @[000073] level 24 [male] [skeleton] noclass square map [_Overland_] (29,027);
+character @[000074] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,027);
+character @[000075] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,027);
+character @[000076] level 1 [male] [giant rat] noclass square map [_Overland_] (36,027);
+character @[000077] level 1 [male] [giant rat] noclass square map [_Overland_] (37,027);
+character @[000078] level 1 [male] [giant rat] noclass square map [_Overland_] (39,027);
+character @[000079] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,027);
+character @[000080] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,027);
+character @[000081] level 10 [neuter] [living wall] noclass square map [_Overland_] (43,027);
+character @[000082] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,027);
+character @[000083] level 1 [male] [giant rat] noclass square map [_Overland_] (45,027);
+character @[000084] level 1 [male] [giant rat] noclass square map [_Overland_] (46,027);
+character @[000085] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,028);
+character @[000086] level 10 [neuter] [living wall] noclass square map [_Overland_] (26,028);
+character @[000087] level 24 [male] [skeleton] noclass square map [_Overland_] (29,028);
+character @[000088] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,028);
+character @[000089] level 10 [neuter] [living wall] noclass square map [_Overland_] (32,028);
+character @[000090] level 10 [neuter] [living wall] noclass square map [_Overland_] (33,028);
+character @[000091] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,028);
+character @[000092] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,028);
+character @[000093] level 10 [neuter] [living wall] noclass square map [_Overland_] (36,028);
+character @[000094] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,028);
+character @[000095] level 1 [male] [giant rat] noclass square map [_Overland_] (38,028);
+character @[000096] level 1 [male] [giant rat] noclass square map [_Overland_] (39,028);
+character @[000097] level 1 [male] [giant rat] noclass square map [_Overland_] (40,028);
+character @[000098] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,028);
+character @[000099] level 1 [male] [giant rat] noclass square map [_Overland_] (42,028);
+character @[000100] level 1 [male] [giant rat] noclass square map [_Overland_] (43,028);
+character @[000101] level 1 [male] [giant rat] noclass square map [_Overland_] (44,028);
+character @[000102] level 1 [male] [giant rat] noclass square map [_Overland_] (45,028);
+character @[000103] level 1 [male] [giant rat] noclass square map [_Overland_] (46,028);
+character @[000104] level 10 [neuter] [living wall] noclass square map [_Overland_] (26,029);
+character @[000105] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,029);
+character @[000106] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,029);
+character @[000107] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,029);
+character @[000108] level 10 [neuter] [living wall] noclass square map [_Overland_] (38,029);
+character @[000109] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,029);
+character @[000110] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,029);
+character @[000111] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,029);
+character @[000112] level 1 [male] [giant rat] noclass square map [_Overland_] (42,029);
+character @[000113] level 1 [male] [giant rat] noclass square map [_Overland_] (43,029);
+character @[000114] level 1 [male] [giant rat] noclass square map [_Overland_] (44,029);
+character @[000115] level 1 [male] [giant rat] noclass square map [_Overland_] (45,029);
+character @[000116] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,030);
+character @[000117] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,030);
+character @[000118] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,030);
+character @[000119] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,030);
+character @[000120] level 1 [male] [giant rat] noclass square map [_Overland_] (41,030);
+character @[000121] level 1 [male] [giant rat] noclass square map [_Overland_] (42,030);
+character @[000122] level 1 [male] [giant rat] noclass square map [_Overland_] (43,030);
+character @[000123] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,030);
+character @[000124] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,030);
+character @[000125] level 10 [neuter] [living wall] noclass square map [_Overland_] (46,030);
+character @[000126] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,031);
+character @[000127] level 10 [neuter] [living wall] noclass square map [_Overland_] (26,031);
+character @[000128] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,031);
+character @[000129] level 10 [neuter] [living wall] noclass square map [_Overland_] (28,031);
+character @[000130] level 10 [neuter] [living wall] noclass square map [_Overland_] (29,031);
+character @[000131] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,031);
+character @[000132] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,031);
+character @[000133] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,031);
+character @[000134] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,031);
+character @[000135] level 10 [neuter] [living wall] noclass square map [_Overland_] (43,031);
+character @[000136] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,031);
+character @[000137] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,032);
+character @[000138] level 1 [male] [giant rat] noclass square map [_Overland_] (27,033);
+character @[000139] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,033);
+character @[000140] level 8 [neuter] [stalker] noclass square map [_Overland_] (40,033);
+character @[000141] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,033);
+character @[000142] level 10 [neuter] [living wall] noclass square map [_Overland_] (43,033);
+character @[000143] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,033);
+character @[000144] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,033);
+character @[000145] level 10 [neuter] [living wall] noclass square map [_Overland_] (46,033);
+character @[000146] level 1 [male] [giant rat] noclass square map [_Overland_] (28,034);
+character @[000147] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,034);
+character @[000148] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,034);
+character @[000149] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,034);
+character @[000150] level 10 [neuter] [living wall] noclass square map [_Overland_] (46,034);
+character @[000151] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,035);
+character @[000152] level 10 [neuter] [living wall] noclass square map [_Overland_] (29,035);
+character @[000153] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,035);
+character @[000154] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,035);
+character @[000155] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,035);
+character @[000156] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,035);
+character @[000157] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,035);
+character @[000158] level 16 [female] [harpy] noclass square map [_Overland_] (46,035);
+character @[000159] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,036);
+character @[000160] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,036);
+character @[000161] level 10 [neuter] [living wall] noclass square map [_Overland_] (28,036);
+character @[000162] level 10 [neuter] [living wall] noclass square map [_Overland_] (29,036);
+character @[000163] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,036);
+character @[000164] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,036);
+character @[000165] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,036);
+character @[000166] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,036);
+character @[000167] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,036);
+character @[000168] level 10 [neuter] [living wall] noclass square map [_Overland_] (38,036);
+character @[000169] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,036);
+character @[000170] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,036);
+character @[000171] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,036);
+character @[000172] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,036);
+character @[000173] level 16 [female] [harpy] noclass square map [_Overland_] (46,036);
+character @[000174] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,037);
+character @[000175] level 24 [male] [skeleton] noclass square map [_Overland_] (26,037);
+character @[000176] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,037);
+character @[000177] level 24 [male] [skeleton] noclass square map [_Overland_] (30,037);
+character @[000178] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,037);
+character @[000179] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,037);
+character @[000180] level 10 [neuter] [living wall] noclass square map [_Overland_] (36,037);
+character @[000181] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,037);
+character @[000182] level 8 [neuter] [stalker] noclass square map [_Overland_] (38,037);
+character @[000183] level 8 [neuter] [stalker] noclass square map [_Overland_] (39,037);
+character @[000184] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,037);
+character @[000185] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,037);
+character @[000186] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,037);
+character @[000187] level 16 [female] [harpy] noclass square map [_Overland_] (46,037);
+character @[000188] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,038);
+character @[000189] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,038);
+character @[000190] level 24 [male] [skeleton] noclass square map [_Overland_] (30,038);
+character @[000191] level 10 [neuter] [living wall] noclass square map [_Overland_] (36,038);
+character @[000192] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,038);
+character @[000193] level 10 [neuter] [living wall] noclass square map [_Overland_] (38,038);
+character @[000194] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,038);
+character @[000195] level 10 [neuter] [living wall] noclass square map [_Overland_] (40,038);
+character @[000196] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,038);
+character @[000197] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,038);
+character @[000198] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,038);
+character @[000199] level 16 [female] [harpy] noclass square map [_Overland_] (46,038);
+character @[000200] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,039);
+character @[000201] level 24 [male] [skeleton] noclass square map [_Overland_] (30,039);
+character @[000202] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,039);
+character @[000203] level 10 [neuter] [living wall] noclass square map [_Overland_] (41,039);
+character @[000204] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,039);
+character @[000205] level 10 [neuter] [living wall] noclass square map [_Overland_] (43,039);
+character @[000206] level 10 [neuter] [living wall] noclass square map [_Overland_] (44,039);
+character @[000207] level 10 [neuter] [living wall] noclass square map [_Overland_] (45,039);
+character @[000208] level 24 [male] [skeleton] noclass square map [_Overland_] (25,040);
+character @[000209] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,040);
+character @[000210] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,040);
+character @[000211] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,040);
+character @[000212] level 10 [neuter] [living wall] noclass square map [_Overland_] (32,040);
+character @[000213] level 12 [male] [guard] noclass neutral resident map [_Overland_] (33,040) square map [_Overland_] (33,040);
+character @[000214] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,040);
+character @[000215] level 10 [neuter] [living wall] noclass square map [_Overland_] (35,040);
+character @[000216] level 10 [neuter] [living wall] noclass square map [_Overland_] (36,040);
+character @[000217] level 10 [neuter] [living wall] noclass square map [_Overland_] (37,040);
+character @[000218] level 10 [neuter] [living wall] noclass square map [_Overland_] (38,040);
+character @[000219] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,040);
+character @[000220] level 1 [male] [giant rat] noclass square map [_Overland_] (45,040);
+character @[000221] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,041);
+character @[000222] level 8 [neuter] [stalker] noclass square map [_Overland_] (28,041);
+character @[000223] level 8 [neuter] [stalker] noclass square map [_Overland_] (29,041);
+character @[000224] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,041);
+character @[000225] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,041);
+character @[000226] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,041);
+character @[000227] level 12 [male] [guard] noclass neutral resident map [_Overland_] (39,041) square map [_Overland_] (39,041);
+character @[000228] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,041);
+character @[000229] level 1 [male] [giant rat] noclass square map [_Overland_] (44,041);
+character @[000230] level 10 [neuter] [living wall] noclass square map [_Overland_] (25,042);
+character @[000231] level 10 [neuter] [living wall] noclass square map [_Overland_] (26,042);
+character @[000232] level 10 [neuter] [living wall] noclass square map [_Overland_] (27,042);
+character @[000233] level 10 [neuter] [living wall] noclass square map [_Overland_] (28,042);
+character @[000234] level 10 [neuter] [living wall] noclass square map [_Overland_] (29,042);
+character @[000235] level 10 [neuter] [living wall] noclass square map [_Overland_] (30,042);
+character @[000236] level 10 [neuter] [living wall] noclass square map [_Overland_] (31,042);
+character @[000237] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,042);
+character @[000238] level 10 [neuter] [living wall] noclass square map [_Overland_] (39,042);
+character @[000239] level 10 [neuter] [living wall] noclass square map [_Overland_] (42,042);
+character @[000240] level 6 [neuter] [small mimic] noclass square map [_Overland_] (53,023);
+character @[000241] level 8 [neuter] [stalker] noclass square map [_Overland_] (49,024);
+character @[000242] level 8 [neuter] [stalker] noclass square map [_Overland_] (50,024);
+character @[000243] level 12 [male] [guard] noclass neutral resident map [_Overland_] (51,024) square map [_Overland_] (51,024);
+character @[000244] level 6 [neuter] [small mimic] noclass square map [_Overland_] (53,024);
+character @[000245] level 8 [neuter] [stalker] noclass square map [_Overland_] (64,024);
+character @[000246] level 12 [male] [guard] noclass neutral resident map [_Overland_] (56,025) square map [_Overland_] (56,025);
+character @[000247] level 12 [male] [guard] noclass neutral resident map [_Overland_] (62,025) square map [_Overland_] (62,025);
+character @[000248] level 12 [male] [guard] noclass neutral resident map [_Overland_] (56,028) square map [_Overland_] (56,028);
+character @[000249] level 12 [male] [guard] noclass neutral resident map [_Overland_] (62,028) square map [_Overland_] (62,028);
+character @[000250] level 8 [neuter] [stalker] noclass square map [_Overland_] (49,029);
+character @[000251] level 8 [neuter] [stalker] noclass square map [_Overland_] (50,029);
+character @[000252] level 12 [male] [guard] noclass neutral resident map [_Overland_] (51,029) square map [_Overland_] (51,029);
+character @[000253] level 6 [neuter] [small mimic] noclass square map [_Overland_] (53,029);
+character @[000254] level 6 [neuter] [small mimic] noclass square map [_Overland_] (53,030);
+character @[000255] level 6 [neuter] [small mimic] noclass square map [_Overland_] (54,030);
+character @[000256] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (68,031);
+character @[000257] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (68,032);
+character @[000258] level 8 [neuter] [stalker] noclass square map [_Overland_] (68,033);
+character @[000259] level 8 [neuter] [stalker] noclass square map [_Overland_] (69,033);
+character @[000260] level 8 [neuter] [stalker] noclass square map [_Overland_] (70,033);
+character @[000261] level 8 [neuter] [stalker] noclass square map [_Overland_] (68,034);
+character @[000262] level 8 [neuter] [stalker] noclass square map [_Overland_] (69,034);
+character @[000263] level 8 [neuter] [stalker] noclass square map [_Overland_] (70,034);
+character @[000264] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (91,024);
+character @[000265] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (92,024);
+character @[000266] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (94,024);
+character @[000267] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (85,025);
+character @[000268] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (92,025);
+character @[000269] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (86,026);
+character @[000270] level 12 [male] [guard] noclass neutral resident map [_Overland_] (89,026) square map [_Overland_] (89,026);
+character @[000271] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (91,026);
+character @[000272] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (94,026);
+character @[000273] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (86,027);
+character @[000274] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (87,027);
+character @[000275] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (92,027);
+character @[000276] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (91,028);
+character @[000277] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (92,028);
+character @[000278] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (94,028);
+character @[000279] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (80,029);
+character @[000280] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (81,029);
+character @[000281] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (81,030);
+character @[000282] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (83,032);
+character @[000283] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (84,032);
+character @[000284] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (84,033);
+character @[000285] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (83,034);
+character @[000286] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (84,034);
+character @[000287] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (84,035);
+character @[000288] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (84,036);
+character @[000289] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (85,036);
+character @[000290] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (01,045);
+character @[000291] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (12,045);
+character @[000292] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (07,047);
+character @[000293] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (19,047);
+character @[000294] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (19,048);
+character @[000295] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (12,052);
+character @[000296] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (19,052);
+character @[000297] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (03,053);
+character @[000298] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (22,053);
+character @[000299] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (01,055);
+character @[000300] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (07,055);
+character @[000301] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (11,055);
+character @[000302] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (15,055);
+character @[000303] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (07,056);
+character @[000304] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (08,056);
+character @[000305] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (20,058);
+character @[000306] level 6 [neuter] [small mimic] noclass square map [_Overland_] (03,061);
+character @[000307] level 6 [neuter] [small mimic] noclass square map [_Overland_] (04,061);
+character @[000308] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (20,061);
+character @[000309] level 6 [neuter] [small mimic] noclass square map [_Overland_] (05,062);
+character @[000310] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (10,062);
+character @[000311] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (20,062);
+character @[000312] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (10,064);
+character @[000313] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (16,064);
+character @[000314] level 10 [neuter] [living wall] noclass square map [_Overland_] (32,044);
+character @[000315] level 10 [neuter] [living wall] noclass square map [_Overland_] (33,044);
+character @[000316] level 10 [neuter] [living wall] noclass square map [_Overland_] (34,044);
+character @[000317] level 6 [neuter] [small mimic] noclass square map [_Overland_] (46,045);
+character @[000318] level 6 [neuter] [small mimic] noclass square map [_Overland_] (46,046);
+character @[000319] level 12 [male] [guard] noclass neutral resident map [_Overland_] (32,047) square map [_Overland_] (32,047);
+character @[000320] level 12 [male] [guard] noclass neutral resident map [_Overland_] (34,047) square map [_Overland_] (34,047);
+character @[000321] level 3 [male] [orc grunt] noclass square map [_Overland_] (26,049);
+character @[000322] level 3 [male] [orc grunt] noclass square map [_Overland_] (25,052);
+character @[000323] level 3 [male] [orc grunt] noclass square map [_Overland_] (42,053);
+character @[000324] level 3 [male] [orc grunt] noclass square map [_Overland_] (43,053);
+character @[000325] level 3 [male] [orc grunt] noclass square map [_Overland_] (42,054);
+character @[000326] level 3 [male] [orc grunt] noclass square map [_Overland_] (43,054);
+character @[000327] level 3 [male] [orc grunt] noclass square map [_Overland_] (26,055);
+character @[000328] level 3 [male] [orc grunt] noclass square map [_Overland_] (42,055);
+character @[000329] level 3 [male] [orc grunt] noclass square map [_Overland_] (43,055);
+character @[000330] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (25,060);
+character @[000331] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (26,060);
+character @[000332] level 12 [male] [guard] noclass neutral resident map [_Overland_] (44,060) square map [_Overland_] (44,060);
+character @[000333] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,060);
+character @[000334] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (39,061);
+character @[000335] level 12 [male] [guard] noclass neutral resident map [_Overland_] (44,061) square map [_Overland_] (44,061);
+character @[000336] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,061);
+character @[000337] level 12 [male] [guard] noclass neutral resident map [_Overland_] (44,062) square map [_Overland_] (44,062);
+character @[000338] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (45,062);
+character @[000339] level 3 [male] [orc grunt] noclass square map [_Overland_] (60,045);
+character @[000340] level 6 [neuter] [small mimic] noclass square map [_Overland_] (70,045);
+character @[000341] level 3 [male] [orc grunt] noclass square map [_Overland_] (52,046);
+character @[000342] level 3 [male] [orc grunt] noclass square map [_Overland_] (65,047);
+character @[000343] level 3 [male] [orc grunt] noclass square map [_Overland_] (55,050);
+character @[000344] level 3 [male] [orc grunt] noclass square map [_Overland_] (58,050);
+character @[000345] level 3 [male] [orc grunt] noclass square map [_Overland_] (66,050);
+character @[000346] level 3 [male] [orc grunt] noclass square map [_Overland_] (69,053);
+character @[000347] level 12 [male] [guard] noclass neutral resident map [_Overland_] (59,055) square map [_Overland_] (59,055);
+character @[000348] level 12 [male] [guard] noclass neutral resident map [_Overland_] (61,055) square map [_Overland_] (61,055);
+character @[000349] level 3 [male] [orc grunt] noclass square map [_Overland_] (68,056);
+character @[000350] level 3 [male] [orc grunt] noclass square map [_Overland_] (52,058);
+character @[000351] level 3 [male] [orc grunt] noclass square map [_Overland_] (54,058);
+character @[000352] level 3 [male] [orc grunt] noclass square map [_Overland_] (51,060);
+character @[000353] level 3 [male] [orc grunt] noclass square map [_Overland_] (60,061);
+character @[000354] level 6 [neuter] [small mimic] noclass square map [_Overland_] (68,063);
+character @[000355] level 6 [neuter] [small mimic] noclass square map [_Overland_] (69,063);
+character @[000356] level 6 [neuter] [small mimic] noclass square map [_Overland_] (70,063);
+character @[000357] level 3 [male] [orc grunt] noclass square map [_Overland_] (52,064);
+character @[000358] level 6 [neuter] [small mimic] noclass square map [_Overland_] (56,064);
+character @[000359] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,064);
+character @[000360] level 6 [neuter] [small mimic] noclass square map [_Overland_] (10,078);
+character @[000361] level 6 [neuter] [small mimic] noclass square map [_Overland_] (11,078);
+character @[000362] level 6 [neuter] [small mimic] noclass square map [_Overland_] (12,078);
+character @[000363] level 6 [neuter] [small mimic] noclass square map [_Overland_] (13,078);
+character @[000364] level 12 [male] [guard] noclass neutral resident map [_Overland_] (11,080) square map [_Overland_] (11,080);
+character @[000365] level 12 [male] [guard] noclass neutral resident map [_Overland_] (12,080) square map [_Overland_] (12,080);
+character @[000366] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (38,068);
+character @[000367] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (39,069);
+character @[000368] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (40,069);
+character @[000369] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (26,070);
+character @[000370] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (29,070);
+character @[000371] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (26,071);
+character @[000372] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (29,071);
+character @[000373] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (30,071);
+character @[000374] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (34,073);
+character @[000375] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (34,074);
+character @[000376] level 6 [neuter] [small mimic] noclass square map [_Overland_] (38,074);
+character @[000377] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (42,074);
+character @[000378] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (43,074);
+character @[000379] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (42,075);
 character @[000380] [male] [kobold scout] noclass square map [_Overland_] (27,077);
 character @[000381] [male] [kobold scout] noclass square map [_Overland_] (28,077);
-character @[000382] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,077);
+character @[000382] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,077);
 character @[000383] [male] [kobold scout] noclass square map [_Overland_] (28,078);
 character @[000384] [male] [kobold scout] noclass square map [_Overland_] (29,078);
-character @[000385] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,078);
-character @[000386] [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,079);
+character @[000385] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,078);
+character @[000386] level 7 [male] [cave troll] noclass talents [sleeping] square map [_Overland_] (37,079);
 character @[000387] [male] [kobold scout] noclass square map [_Overland_] (28,084);
-character @[000388] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (37,084);
+character @[000388] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (37,084);
 character @[000389] [male] [kobold scout] noclass square map [_Overland_] (28,085);
-character @[000390] [neuter] [small mimic] noclass square map [_Overland_] (64,067);
-character @[000391] [neuter] [small mimic] noclass square map [_Overland_] (68,067);
-character @[000392] [neuter] [small mimic] noclass square map [_Overland_] (64,068);
-character @[000393] [neuter] [small mimic] noclass square map [_Overland_] (68,068);
-character @[000394] [neuter] [small mimic] noclass square map [_Overland_] (64,069);
-character @[000395] [neuter] [small mimic] noclass square map [_Overland_] (68,069);
-character @[000396] [neuter] [small mimic] noclass square map [_Overland_] (64,070);
-character @[000397] [neuter] [small mimic] noclass square map [_Overland_] (68,070);
+character @[000390] level 6 [neuter] [small mimic] noclass square map [_Overland_] (64,067);
+character @[000391] level 6 [neuter] [small mimic] noclass square map [_Overland_] (68,067);
+character @[000392] level 6 [neuter] [small mimic] noclass square map [_Overland_] (64,068);
+character @[000393] level 6 [neuter] [small mimic] noclass square map [_Overland_] (68,068);
+character @[000394] level 6 [neuter] [small mimic] noclass square map [_Overland_] (64,069);
+character @[000395] level 6 [neuter] [small mimic] noclass square map [_Overland_] (68,069);
+character @[000396] level 6 [neuter] [small mimic] noclass square map [_Overland_] (64,070);
+character @[000397] level 6 [neuter] [small mimic] noclass square map [_Overland_] (68,070);
 character @[000398] [male] [kobold scout] noclass square map [_Overland_] (55,071);
 character @[000399] [male] [kobold scout] noclass square map [_Overland_] (56,071);
 character @[000400] [male] [kobold scout] noclass square map [_Overland_] (55,072);
@@ -8752,224 +8752,274 @@ character @[000529] [male] [kobold scout] noclass square map [_Overland_] (02,10
 character @[000530] [male] [kobold scout] noclass square map [_Overland_] (03,107);
 character @[000531] [male] [kobold scout] noclass square map [_Overland_] (09,108);
 character @[000532] [male] [kobold scout] noclass square map [_Overland_] (20,108);
-character @[000533] [male] [orc grunt] noclass square map [_Overland_] (27,088);
-character @[000534] [male] [guard] noclass neutral resident map [_Overland_] (46,090) square map [_Overland_] (46,090);
-character @[000535] [male] [guard] noclass neutral resident map [_Overland_] (46,091) square map [_Overland_] (46,091);
-character @[000536] [male] [orc grunt] noclass square map [_Overland_] (32,094);
-character @[000537] [neuter] [small mimic] noclass square map [_Overland_] (43,094);
-character @[000538] [neuter] [small mimic] noclass square map [_Overland_] (45,094);
-character @[000539] [male] [orc grunt] noclass square map [_Overland_] (25,095);
-character @[000540] [male] [orc grunt] noclass square map [_Overland_] (35,097);
-character @[000541] [male] [orc grunt] noclass square map [_Overland_] (36,097);
-character @[000542] [male] [orc grunt] noclass square map [_Overland_] (37,097);
-character @[000543] [male] [orc grunt] noclass square map [_Overland_] (38,097);
+character @[000533] level 3 [male] [orc grunt] noclass square map [_Overland_] (27,088);
+character @[000534] level 12 [male] [guard] noclass neutral resident map [_Overland_] (46,090) square map [_Overland_] (46,090);
+character @[000535] level 12 [male] [guard] noclass neutral resident map [_Overland_] (46,091) square map [_Overland_] (46,091);
+character @[000536] level 3 [male] [orc grunt] noclass square map [_Overland_] (32,094);
+character @[000537] level 6 [neuter] [small mimic] noclass square map [_Overland_] (43,094);
+character @[000538] level 6 [neuter] [small mimic] noclass square map [_Overland_] (45,094);
+character @[000539] level 3 [male] [orc grunt] noclass square map [_Overland_] (25,095);
+character @[000540] level 3 [male] [orc grunt] noclass square map [_Overland_] (35,097);
+character @[000541] level 3 [male] [orc grunt] noclass square map [_Overland_] (36,097);
+character @[000542] level 3 [male] [orc grunt] noclass square map [_Overland_] (37,097);
+character @[000543] level 3 [male] [orc grunt] noclass square map [_Overland_] (38,097);
 character @[000544] [male] [kobold scout] noclass square map [_Overland_] (33,101);
 character @[000545] [male] [kobold scout] noclass square map [_Overland_] (34,101);
 character @[000546] [male] [kobold scout] noclass square map [_Overland_] (35,101);
 character @[000547] [male] [kobold scout] noclass square map [_Overland_] (33,102);
 character @[000548] [male] [kobold scout] noclass square map [_Overland_] (34,102);
 character @[000549] [male] [kobold scout] noclass square map [_Overland_] (35,102);
-character @[000550] [male] [orc grunt] noclass square map [_Overland_] (39,104);
-character @[000551] [male] [orc grunt] noclass square map [_Overland_] (39,106);
-character @[000552] [neuter] [giant mimic] noclass square map [_Overland_] (58,090);
-character @[000553] [neuter] [giant mimic] noclass square map [_Overland_] (59,090);
-character @[000554] [neuter] [giant mimic] noclass square map [_Overland_] (58,091);
-character @[000555] [male] [skeleton] noclass square map [_Overland_] (52,096);
-character @[000556] [male] [skeleton] noclass square map [_Overland_] (53,096);
-character @[000557] [male] [skeleton] noclass square map [_Overland_] (52,097);
-character @[000558] [male] [skeleton] noclass square map [_Overland_] (53,097);
-character @[000559] [male] [skeleton] noclass square map [_Overland_] (52,098);
-character @[000560] [male] [skeleton] noclass square map [_Overland_] (53,098);
-character @[000561] [male] [guard] noclass neutral resident map [_Overland_] (71,101) square map [_Overland_] (71,101);
-character @[000562] [male] [guard] noclass neutral resident map [_Overland_] (71,104) square map [_Overland_] (71,104);
-character @[000563] [neuter] [small mimic] noclass square map [_Overland_] (54,107);
-character @[000564] [neuter] [giant mimic] noclass square map [_Overland_] (90,089);
-character @[000565] [neuter] [giant mimic] noclass square map [_Overland_] (91,089);
-character @[000566] [neuter] [giant mimic] noclass square map [_Overland_] (92,089);
-character @[000567] [neuter] [giant mimic] noclass square map [_Overland_] (93,089);
-character @[000568] [neuter] [stalker] noclass square map [_Overland_] (74,090);
-character @[000569] [neuter] [mind flayer] noclass square map [_Overland_] (86,090);
-character @[000570] [neuter] [giant mimic] noclass square map [_Overland_] (77,091);
-character @[000571] [female] [harpy] noclass square map [_Overland_] (84,091);
-character @[000572] [neuter] [mind flayer] noclass square map [_Overland_] (86,091);
-character @[000573] [neuter] [stalker] noclass square map [_Overland_] (80,092);
-character @[000574] [neuter] [mind flayer] noclass square map [_Overland_] (86,092);
-character @[000575] [neuter] [mind flayer] noclass square map [_Overland_] (93,092);
-character @[000576] [neuter] [living wall] noclass square map [_Overland_] (81,095);
-character @[000577] [neuter] [living wall] noclass square map [_Overland_] (83,095);
-character @[000578] [neuter] [living wall] noclass square map [_Overland_] (85,095);
-character @[000579] [neuter] [living wall] noclass square map [_Overland_] (86,095);
-character @[000580] [neuter] [living wall] noclass square map [_Overland_] (87,095);
-character @[000581] [female] [harpy] noclass square map [_Overland_] (75,096);
-character @[000582] [female] [harpy] noclass square map [_Overland_] (76,096);
-character @[000583] [neuter] [living wall] noclass square map [_Overland_] (80,096);
-character @[000584] [neuter] [stalker] noclass square map [_Overland_] (81,096);
-character @[000585] [neuter] [living wall] noclass square map [_Overland_] (83,096);
-character @[000586] [neuter] [stalker] noclass square map [_Overland_] (84,096);
-character @[000587] [neuter] [living wall] noclass square map [_Overland_] (85,096);
-character @[000588] [neuter] [living wall] noclass square map [_Overland_] (87,096);
-character @[000589] [neuter] [living wall] noclass square map [_Overland_] (80,097);
-character @[000590] [neuter] [living wall] noclass square map [_Overland_] (81,097);
-character @[000591] [neuter] [living wall] noclass square map [_Overland_] (85,097);
-character @[000592] [neuter] [living wall] noclass square map [_Overland_] (87,097);
-character @[000593] [neuter] [living wall] noclass square map [_Overland_] (80,098);
-character @[000594] [neuter] [living wall] noclass square map [_Overland_] (82,098);
-character @[000595] [neuter] [living wall] noclass square map [_Overland_] (84,098);
-character @[000596] [neuter] [living wall] noclass square map [_Overland_] (85,098);
-character @[000597] [neuter] [living wall] noclass square map [_Overland_] (87,098);
-character @[000598] [neuter] [mind flayer] noclass square map [_Overland_] (94,098);
-character @[000599] [neuter] [living wall] noclass square map [_Overland_] (81,099);
-character @[000600] [neuter] [living wall] noclass square map [_Overland_] (82,099);
-character @[000601] [neuter] [stalker] noclass square map [_Overland_] (83,099);
-character @[000602] [neuter] [living wall] noclass square map [_Overland_] (87,099);
-character @[000603] [neuter] [living wall] noclass square map [_Overland_] (83,100);
-character @[000604] [neuter] [stalker] noclass square map [_Overland_] (86,100);
-character @[000605] [neuter] [living wall] noclass square map [_Overland_] (87,100);
-character @[000606] [male] [giant rat] noclass square map [_Overland_] (89,100);
-character @[000607] [male] [giant rat] noclass square map [_Overland_] (90,100);
-character @[000608] [male] [giant rat] noclass square map [_Overland_] (91,100);
-character @[000609] [male] [giant rat] noclass square map [_Overland_] (92,100);
-character @[000610] [male] [giant rat] noclass square map [_Overland_] (93,100);
-character @[000611] [male] [giant rat] noclass square map [_Overland_] (94,100);
-character @[000612] [female] [harpy] noclass square map [_Overland_] (78,101);
-character @[000613] [neuter] [living wall] noclass square map [_Overland_] (80,101);
-character @[000614] [neuter] [stalker] noclass square map [_Overland_] (81,101);
-character @[000615] [neuter] [living wall] noclass square map [_Overland_] (83,101);
-character @[000616] [neuter] [living wall] noclass square map [_Overland_] (85,101);
-character @[000617] [male] [giant rat] noclass square map [_Overland_] (90,101);
-character @[000618] [male] [giant rat] noclass square map [_Overland_] (91,101);
-character @[000619] [male] [giant rat] noclass square map [_Overland_] (92,101);
-character @[000620] [male] [giant rat] noclass square map [_Overland_] (93,101);
-character @[000621] [male] [giant rat] noclass square map [_Overland_] (94,101);
-character @[000622] [neuter] [living wall] noclass square map [_Overland_] (80,102);
-character @[000623] [neuter] [living wall] noclass square map [_Overland_] (81,102);
-character @[000624] [neuter] [living wall] noclass square map [_Overland_] (83,102);
-character @[000625] [neuter] [living wall] noclass square map [_Overland_] (85,102);
-character @[000626] [neuter] [living wall] noclass square map [_Overland_] (86,102);
-character @[000627] [neuter] [living wall] noclass square map [_Overland_] (87,102);
-character @[000628] [male] [giant rat] noclass square map [_Overland_] (89,102);
-character @[000629] [male] [giant rat] noclass square map [_Overland_] (90,102);
-character @[000630] [male] [giant rat] noclass square map [_Overland_] (91,102);
-character @[000631] [male] [giant rat] noclass square map [_Overland_] (92,102);
-character @[000632] [male] [giant rat] noclass square map [_Overland_] (93,102);
-character @[000633] [male] [giant rat] noclass square map [_Overland_] (94,102);
-character @[000634] [male] [giant rat] noclass square map [_Overland_] (90,103);
-character @[000635] [male] [giant rat] noclass square map [_Overland_] (91,103);
-character @[000636] [male] [giant rat] noclass square map [_Overland_] (92,103);
-character @[000637] [male] [giant rat] noclass square map [_Overland_] (93,103);
-character @[000638] [female] [harpy] noclass square map [_Overland_] (78,104);
-character @[000639] [neuter] [living wall] noclass square map [_Overland_] (80,104);
-character @[000640] [neuter] [living wall] noclass square map [_Overland_] (81,104);
-character @[000641] [neuter] [living wall] noclass square map [_Overland_] (85,104);
-character @[000642] [neuter] [living wall] noclass square map [_Overland_] (86,104);
-character @[000643] [neuter] [living wall] noclass square map [_Overland_] (87,104);
-character @[000644] [male] [wererat] noclass square map [_Overland_] (89,104);
-character @[000645] [male] [wererat] noclass square map [_Overland_] (90,104);
-character @[000646] [male] [giant rat] noclass square map [_Overland_] (91,104);
-character @[000647] [male] [wererat] noclass square map [_Overland_] (92,104);
-character @[000648] [male] [wererat] noclass square map [_Overland_] (93,104);
-character @[000649] [male] [skeleton] noclass square map [_Overland_] (80,105);
-character @[000650] [male] [skeleton] noclass square map [_Overland_] (81,105);
-character @[000651] [male] [skeleton] noclass square map [_Overland_] (85,105);
-character @[000652] [male] [skeleton] noclass square map [_Overland_] (86,105);
-character @[000653] [male] [skeleton] noclass square map [_Overland_] (87,105);
-character @[000654] [male] [wererat] noclass square map [_Overland_] (89,105);
-character @[000655] [male] [wererat] noclass square map [_Overland_] (90,105);
-character @[000656] [male] [wererat] noclass square map [_Overland_] (91,105);
-character @[000657] [male] [wererat] noclass square map [_Overland_] (92,105);
-character @[000658] [male] [skeleton] noclass square map [_Overland_] (80,106);
-character @[000659] [male] [skeleton] noclass square map [_Overland_] (81,106);
-character @[000660] [male] [skeleton] noclass square map [_Overland_] (82,106);
-character @[000661] [male] [skeleton] noclass square map [_Overland_] (83,106);
-character @[000662] [male] [skeleton] noclass square map [_Overland_] (84,106);
-character @[000663] [male] [skeleton] noclass square map [_Overland_] (85,106);
-character @[000664] [male] [skeleton] noclass square map [_Overland_] (86,106);
-character @[000665] [male] [skeleton] noclass square map [_Overland_] (87,106);
-character @[000666] [male] [wererat] noclass square map [_Overland_] (90,106);
-character @[000667] [male] [skeleton] noclass square map [_Overland_] (80,107);
-character @[000668] [male] [skeleton] noclass square map [_Overland_] (81,107);
-character @[000669] [male] [skeleton] noclass square map [_Overland_] (82,107);
-character @[000670] [male] [skeleton] noclass square map [_Overland_] (83,107);
-character @[000671] [male] [skeleton] noclass square map [_Overland_] (84,107);
-character @[000672] [male] [skeleton] noclass square map [_Overland_] (85,107);
-character @[000673] [male] [skeleton] noclass square map [_Overland_] (86,107);
-character @[000674] [male] [skeleton] noclass square map [_Overland_] (87,107);
-character @[000675] [male] [skeleton] noclass square map [_Overland_] (80,108);
-character @[000676] [male] [skeleton] noclass square map [_Overland_] (81,108);
-character @[000677] [male] [skeleton] noclass square map [_Overland_] (82,108);
-character @[000678] [male] [skeleton] noclass square map [_Overland_] (83,108);
-character @[000679] [male] [skeleton] noclass square map [_Overland_] (84,108);
-character @[000680] [male] [skeleton] noclass square map [_Overland_] (85,108);
-character @[000681] [male] [skeleton] noclass square map [_Overland_] (86,108);
-character @[000682] [male] [skeleton] noclass square map [_Overland_] (87,108);
-character @[000683] [male] [dwarf warrior] noclass square map [_Overland_] (53,111);
-character @[000684] [male] [dwarf warrior] noclass square map [_Overland_] (51,112);
-character @[000685] [male] [dwarf warrior] noclass square map [_Overland_] (52,112);
+character @[000550] level 3 [male] [orc grunt] noclass square map [_Overland_] (39,104);
+character @[000551] level 3 [male] [orc grunt] noclass square map [_Overland_] (39,106);
+character @[000552] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (58,090);
+character @[000553] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (59,090);
+character @[000554] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (58,091);
+character @[000555] level 24 [male] [skeleton] noclass square map [_Overland_] (52,096);
+character @[000556] level 24 [male] [skeleton] noclass square map [_Overland_] (53,096);
+character @[000557] level 24 [male] [skeleton] noclass square map [_Overland_] (52,097);
+character @[000558] level 24 [male] [skeleton] noclass square map [_Overland_] (53,097);
+character @[000559] level 24 [male] [skeleton] noclass square map [_Overland_] (52,098);
+character @[000560] level 24 [male] [skeleton] noclass square map [_Overland_] (53,098);
+character @[000561] level 12 [male] [guard] noclass neutral resident map [_Overland_] (71,101) square map [_Overland_] (71,101);
+character @[000562] level 12 [male] [guard] noclass neutral resident map [_Overland_] (71,104) square map [_Overland_] (71,104);
+character @[000563] level 6 [neuter] [small mimic] noclass square map [_Overland_] (54,107);
+character @[000564] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (90,089);
+character @[000565] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (91,089);
+character @[000566] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (92,089);
+character @[000567] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (93,089);
+character @[000568] level 8 [neuter] [stalker] noclass square map [_Overland_] (74,090);
+character @[000569] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (86,090);
+character @[000570] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (77,091);
+character @[000571] level 16 [female] [harpy] noclass square map [_Overland_] (84,091);
+character @[000572] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (86,091);
+character @[000573] level 8 [neuter] [stalker] noclass square map [_Overland_] (80,092);
+character @[000574] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (86,092);
+character @[000575] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (93,092);
+character @[000576] level 10 [neuter] [living wall] noclass square map [_Overland_] (81,095);
+character @[000577] level 10 [neuter] [living wall] noclass square map [_Overland_] (83,095);
+character @[000578] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,095);
+character @[000579] level 10 [neuter] [living wall] noclass square map [_Overland_] (86,095);
+character @[000580] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,095);
+character @[000581] level 16 [female] [harpy] noclass square map [_Overland_] (75,096);
+character @[000582] level 16 [female] [harpy] noclass square map [_Overland_] (76,096);
+character @[000583] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,096);
+character @[000584] level 8 [neuter] [stalker] noclass square map [_Overland_] (81,096);
+character @[000585] level 10 [neuter] [living wall] noclass square map [_Overland_] (83,096);
+character @[000586] level 8 [neuter] [stalker] noclass square map [_Overland_] (84,096);
+character @[000587] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,096);
+character @[000588] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,096);
+character @[000589] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,097);
+character @[000590] level 10 [neuter] [living wall] noclass square map [_Overland_] (81,097);
+character @[000591] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,097);
+character @[000592] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,097);
+character @[000593] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,098);
+character @[000594] level 10 [neuter] [living wall] noclass square map [_Overland_] (82,098);
+character @[000595] level 10 [neuter] [living wall] noclass square map [_Overland_] (84,098);
+character @[000596] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,098);
+character @[000597] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,098);
+character @[000598] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (94,098);
+character @[000599] level 10 [neuter] [living wall] noclass square map [_Overland_] (81,099);
+character @[000600] level 10 [neuter] [living wall] noclass square map [_Overland_] (82,099);
+character @[000601] level 8 [neuter] [stalker] noclass square map [_Overland_] (83,099);
+character @[000602] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,099);
+character @[000603] level 10 [neuter] [living wall] noclass square map [_Overland_] (83,100);
+character @[000604] level 8 [neuter] [stalker] noclass square map [_Overland_] (86,100);
+character @[000605] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,100);
+character @[000606] level 1 [male] [giant rat] noclass square map [_Overland_] (89,100);
+character @[000607] level 1 [male] [giant rat] noclass square map [_Overland_] (90,100);
+character @[000608] level 1 [male] [giant rat] noclass square map [_Overland_] (91,100);
+character @[000609] level 1 [male] [giant rat] noclass square map [_Overland_] (92,100);
+character @[000610] level 1 [male] [giant rat] noclass square map [_Overland_] (93,100);
+character @[000611] level 1 [male] [giant rat] noclass square map [_Overland_] (94,100);
+character @[000612] level 16 [female] [harpy] noclass square map [_Overland_] (78,101);
+character @[000613] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,101);
+character @[000614] level 8 [neuter] [stalker] noclass square map [_Overland_] (81,101);
+character @[000615] level 10 [neuter] [living wall] noclass square map [_Overland_] (83,101);
+character @[000616] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,101);
+character @[000617] level 1 [male] [giant rat] noclass square map [_Overland_] (90,101);
+character @[000618] level 1 [male] [giant rat] noclass square map [_Overland_] (91,101);
+character @[000619] level 1 [male] [giant rat] noclass square map [_Overland_] (92,101);
+character @[000620] level 1 [male] [giant rat] noclass square map [_Overland_] (93,101);
+character @[000621] level 1 [male] [giant rat] noclass square map [_Overland_] (94,101);
+character @[000622] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,102);
+character @[000623] level 10 [neuter] [living wall] noclass square map [_Overland_] (81,102);
+character @[000624] level 10 [neuter] [living wall] noclass square map [_Overland_] (83,102);
+character @[000625] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,102);
+character @[000626] level 10 [neuter] [living wall] noclass square map [_Overland_] (86,102);
+character @[000627] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,102);
+character @[000628] level 1 [male] [giant rat] noclass square map [_Overland_] (89,102);
+character @[000629] level 1 [male] [giant rat] noclass square map [_Overland_] (90,102);
+character @[000630] level 1 [male] [giant rat] noclass square map [_Overland_] (91,102);
+character @[000631] level 1 [male] [giant rat] noclass square map [_Overland_] (92,102);
+character @[000632] level 1 [male] [giant rat] noclass square map [_Overland_] (93,102);
+character @[000633] level 1 [male] [giant rat] noclass square map [_Overland_] (94,102);
+character @[000634] level 1 [male] [giant rat] noclass square map [_Overland_] (90,103);
+character @[000635] level 1 [male] [giant rat] noclass square map [_Overland_] (91,103);
+character @[000636] level 1 [male] [giant rat] noclass square map [_Overland_] (92,103);
+character @[000637] level 1 [male] [giant rat] noclass square map [_Overland_] (93,103);
+character @[000638] level 16 [female] [harpy] noclass square map [_Overland_] (78,104);
+character @[000639] level 10 [neuter] [living wall] noclass square map [_Overland_] (80,104);
+character @[000640] level 10 [neuter] [living wall] noclass square map [_Overland_] (81,104);
+character @[000641] level 10 [neuter] [living wall] noclass square map [_Overland_] (85,104);
+character @[000642] level 10 [neuter] [living wall] noclass square map [_Overland_] (86,104);
+character @[000643] level 10 [neuter] [living wall] noclass square map [_Overland_] (87,104);
+character @[000644] level 2 [male] [wererat] noclass square map [_Overland_] (89,104);
+character @[000645] level 2 [male] [wererat] noclass square map [_Overland_] (90,104);
+character @[000646] level 1 [male] [giant rat] noclass square map [_Overland_] (91,104);
+character @[000647] level 2 [male] [wererat] noclass square map [_Overland_] (92,104);
+character @[000648] level 2 [male] [wererat] noclass square map [_Overland_] (93,104);
+character @[000649] level 24 [male] [skeleton] noclass square map [_Overland_] (80,105);
+character @[000650] level 24 [male] [skeleton] noclass square map [_Overland_] (81,105);
+character @[000651] level 24 [male] [skeleton] noclass square map [_Overland_] (85,105);
+character @[000652] level 24 [male] [skeleton] noclass square map [_Overland_] (86,105);
+character @[000653] level 24 [male] [skeleton] noclass square map [_Overland_] (87,105);
+character @[000654] level 2 [male] [wererat] noclass square map [_Overland_] (89,105);
+character @[000655] level 2 [male] [wererat] noclass square map [_Overland_] (90,105);
+character @[000656] level 2 [male] [wererat] noclass square map [_Overland_] (91,105);
+character @[000657] level 2 [male] [wererat] noclass square map [_Overland_] (92,105);
+character @[000658] level 24 [male] [skeleton] noclass square map [_Overland_] (80,106);
+character @[000659] level 24 [male] [skeleton] noclass square map [_Overland_] (81,106);
+character @[000660] level 24 [male] [skeleton] noclass square map [_Overland_] (82,106);
+character @[000661] level 24 [male] [skeleton] noclass square map [_Overland_] (83,106);
+character @[000662] level 24 [male] [skeleton] noclass square map [_Overland_] (84,106);
+character @[000663] level 24 [male] [skeleton] noclass square map [_Overland_] (85,106);
+character @[000664] level 24 [male] [skeleton] noclass square map [_Overland_] (86,106);
+character @[000665] level 24 [male] [skeleton] noclass square map [_Overland_] (87,106);
+character @[000666] level 2 [male] [wererat] noclass square map [_Overland_] (90,106);
+character @[000667] level 24 [male] [skeleton] noclass square map [_Overland_] (80,107);
+character @[000668] level 24 [male] [skeleton] noclass square map [_Overland_] (81,107);
+character @[000669] level 24 [male] [skeleton] noclass square map [_Overland_] (82,107);
+character @[000670] level 24 [male] [skeleton] noclass square map [_Overland_] (83,107);
+character @[000671] level 24 [male] [skeleton] noclass square map [_Overland_] (84,107);
+character @[000672] level 24 [male] [skeleton] noclass square map [_Overland_] (85,107);
+character @[000673] level 24 [male] [skeleton] noclass square map [_Overland_] (86,107);
+character @[000674] level 24 [male] [skeleton] noclass square map [_Overland_] (87,107);
+character @[000675] level 24 [male] [skeleton] noclass square map [_Overland_] (80,108);
+character @[000676] level 24 [male] [skeleton] noclass square map [_Overland_] (81,108);
+character @[000677] level 24 [male] [skeleton] noclass square map [_Overland_] (82,108);
+character @[000678] level 24 [male] [skeleton] noclass square map [_Overland_] (83,108);
+character @[000679] level 24 [male] [skeleton] noclass square map [_Overland_] (84,108);
+character @[000680] level 24 [male] [skeleton] noclass square map [_Overland_] (85,108);
+character @[000681] level 24 [male] [skeleton] noclass square map [_Overland_] (86,108);
+character @[000682] level 24 [male] [skeleton] noclass square map [_Overland_] (87,108);
+character @[000683] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (53,111);
+character @[000684] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (51,112);
+character @[000685] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (52,112);
 character @[000686] [male] [kobold scout] noclass square map [_Overland_] (53,112);
-character @[000687] [male] [dwarf warrior] noclass square map [_Overland_] (50,113);
+character @[000687] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (50,113);
 character @[000688] [male] [kobold scout] noclass square map [_Overland_] (51,113);
-character @[000689] [male] [dwarf warrior] noclass square map [_Overland_] (52,113);
-character @[000690] [male] [dwarf warrior] noclass square map [_Overland_] (50,114);
+character @[000689] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (52,113);
+character @[000690] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (50,114);
 character @[000691] [male] [kobold scout] noclass square map [_Overland_] (52,114);
-character @[000692] [neuter] [stalker] noclass square map [_Overland_] (51,122);
-character @[000693] [neuter] [stalker] noclass square map [_Overland_] (52,122);
-character @[000694] [neuter] [stalker] noclass square map [_Overland_] (57,122);
-character @[000695] [neuter] [stalker] noclass square map [_Overland_] (58,122);
-character @[000696] [male] [orc grunt] noclass square map [_Overland_] (67,122);
-character @[000697] [male] [orc grunt] noclass square map [_Overland_] (68,122);
-character @[000698] [male] [orc grunt] noclass square map [_Overland_] (69,122);
-character @[000699] [male] [orc grunt] noclass square map [_Overland_] (67,123);
-character @[000700] [male] [orc grunt] noclass square map [_Overland_] (68,123);
-character @[000701] [male] [orc grunt] noclass square map [_Overland_] (69,123);
-character @[000702] [neuter] [small mimic] noclass square map [_Overland_] (70,124);
-character @[000703] [male] [guard] noclass neutral resident map [_Overland_] (64,125) square map [_Overland_] (64,125);
-character @[000704] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,125);
-character @[000705] [male] [dwarf warrior] noclass square map [_Overland_] (70,125);
-character @[000706] [male] [guard] noclass neutral resident map [_Overland_] (64,126) square map [_Overland_] (64,126);
-character @[000707] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,126);
-character @[000708] [male] [dwarf warrior] noclass square map [_Overland_] (70,126);
-character @[000709] [male] [guard] noclass neutral resident map [_Overland_] (64,127) square map [_Overland_] (64,127);
-character @[000710] [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,127);
-character @[000711] [male] [dwarf warrior] noclass square map [_Overland_] (70,127);
-character @[000712] [neuter] [mind flayer] noclass square map [_Overland_] (51,128);
-character @[000713] [neuter] [mind flayer] noclass square map [_Overland_] (55,128);
-character @[000714] [neuter] [giant mimic] noclass square map [_Overland_] (60,128);
-character @[000715] [neuter] [giant mimic] noclass square map [_Overland_] (61,128);
-character @[000716] [neuter] [small mimic] noclass square map [_Overland_] (70,128);
-character @[000717] [neuter] [giant mimic] noclass square map [_Overland_] (60,129);
-character @[000718] [neuter] [giant mimic] noclass square map [_Overland_] (61,129);
-character @[000719] [male] [orc grunt] noclass square map [_Overland_] (66,129);
-character @[000720] [male] [orc grunt] noclass square map [_Overland_] (67,129);
-character @[000721] [male] [orc grunt] noclass square map [_Overland_] (68,129);
-character @[000722] [male] [orc grunt] noclass square map [_Overland_] (66,130);
-character @[000723] [male] [orc grunt] noclass square map [_Overland_] (67,130);
-character @[000724] [male] [orc grunt] noclass square map [_Overland_] (68,130);
-character @[000725] [male] [merchant] noclass neutral shop [used armour dealership] map [_Overland_] (05,077) square map [_Overland_] (05,077);
-character @[000726] [male] [merchant] noclass neutral shop [liquor emporium] map [_Overland_] (11,073) square map [_Overland_] (11,073);
-character @[000727] [male] [merchant] noclass neutral shop [delicatessen] map [_Overland_] (16,071) square map [_Overland_] (16,071);
-character @[000728] [male] [merchant] noclass neutral shop [rare books] map [_Overland_] (17,074) square map [_Overland_] (17,074);
-character @[000729] [male] [merchant] noclass neutral shop [antique weapons outlet] map [_Overland_] (16,079) square map [_Overland_] (16,079);
-character @[000730] [male] [merchant] noclass neutral shop [jewellers] map [_Overland_] (18,080) square map [_Overland_] (18,080);
-character @[000731] [male] [holy cleric] noclass neutral shrine [holy shrine] map [_Overland_] (46,081) square map [_Overland_] (46,081);
-character @[000732] [neuter] [large mimic] noclass square map [_Overland_] (37,083);
-character @[000733] [neuter] [large mimic] noclass square map [_Overland_] (64,064);
-character @[000734] [neuter] [large mimic] noclass square map [_Overland_] (36,036);
-character @[000735] [neuter] [large mimic] noclass square map [_Overland_] (70,023);
-character @[000736] [neuter] [large mimic] noclass square map [_Overland_] (06,074);
-character @[000737] [neuter] [large mimic] noclass square map [_Overland_] (13,012);
-character @[000738] [neuter] [large mimic] noclass square map [_Overland_] (15,073);
-character @[000739] [neuter] [large mimic] noclass square map [_Overland_] (14,081);
-character @[000740] [neuter] [large mimic] noclass square map [_Overland_] (18,078);
-character @[000741] [neuter] [large mimic] noclass square map [_Overland_] (13,074);
-character @[000742] [male] [minotaur] noclass square map [_Overland_] (69,047);
-character @[000743] [male] [adult blue dragon] noclass square map [_Overland_] (04,007);
-character @[000744] [male] [adult yellow dragon] noclass square map [_Overland_] (07,004);
-character @[000745] [male] [adult orange dragon] noclass square map [_Overland_] (04,013);
-character @[000746] [male] [adult green dragon] noclass square map [_Overland_] (13,004);
-character @[000747] [male] [adult black dragon] noclass square map [_Overland_] (07,016);
-character @[000748] [male] [adult silver dragon] noclass square map [_Overland_] (16,007);
-character @[000749] [male] [adult shimmering dragon] noclass square map [_Overland_] (16,013);
-character @[000750] [male] [adult red dragon] noclass square map [_Overland_] (13,016);
+character @[000692] level 8 [neuter] [stalker] noclass square map [_Overland_] (51,122);
+character @[000693] level 8 [neuter] [stalker] noclass square map [_Overland_] (52,122);
+character @[000694] level 8 [neuter] [stalker] noclass square map [_Overland_] (57,122);
+character @[000695] level 8 [neuter] [stalker] noclass square map [_Overland_] (58,122);
+character @[000696] level 3 [male] [orc grunt] noclass square map [_Overland_] (67,122);
+character @[000697] level 3 [male] [orc grunt] noclass square map [_Overland_] (68,122);
+character @[000698] level 3 [male] [orc grunt] noclass square map [_Overland_] (69,122);
+character @[000699] level 3 [male] [orc grunt] noclass square map [_Overland_] (67,123);
+character @[000700] level 3 [male] [orc grunt] noclass square map [_Overland_] (68,123);
+character @[000701] level 3 [male] [orc grunt] noclass square map [_Overland_] (69,123);
+character @[000702] level 6 [neuter] [small mimic] noclass square map [_Overland_] (70,124);
+character @[000703] level 12 [male] [guard] noclass neutral resident map [_Overland_] (64,125) square map [_Overland_] (64,125);
+character @[000704] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,125);
+character @[000705] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (70,125);
+character @[000706] level 12 [male] [guard] noclass neutral resident map [_Overland_] (64,126) square map [_Overland_] (64,126);
+character @[000707] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,126);
+character @[000708] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (70,126);
+character @[000709] level 12 [male] [guard] noclass neutral resident map [_Overland_] (64,127) square map [_Overland_] (64,127);
+character @[000710] level 13 [male] [leprechaun wizard] noclass talents [sleeping] square map [_Overland_] (69,127);
+character @[000711] level 11 [male] [dwarf warrior] noclass square map [_Overland_] (70,127);
+character @[000712] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (51,128);
+character @[000713] level 8 [neuter] [mind flayer] noclass square map [_Overland_] (55,128);
+character @[000714] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (60,128);
+character @[000715] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (61,128);
+character @[000716] level 6 [neuter] [small mimic] noclass square map [_Overland_] (70,128);
+character @[000717] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (60,129);
+character @[000718] level 13 [neuter] [giant mimic] noclass square map [_Overland_] (61,129);
+character @[000719] level 3 [male] [orc grunt] noclass square map [_Overland_] (66,129);
+character @[000720] level 3 [male] [orc grunt] noclass square map [_Overland_] (67,129);
+character @[000721] level 3 [male] [orc grunt] noclass square map [_Overland_] (68,129);
+character @[000722] level 3 [male] [orc grunt] noclass square map [_Overland_] (66,130);
+character @[000723] level 3 [male] [orc grunt] noclass square map [_Overland_] (67,130);
+character @[000724] level 3 [male] [orc grunt] noclass square map [_Overland_] (68,130);
+character @[000725] level 24 [male] [merchant] noclass neutral shop [used armour dealership] map [_Overland_] (05,077) square map [_Overland_] (05,077);
+character @[000726] level 24 [male] [merchant] noclass neutral shop [liquor emporium] map [_Overland_] (11,073) square map [_Overland_] (11,073);
+character @[000727] level 24 [male] [merchant] noclass neutral shop [delicatessen] map [_Overland_] (16,071) square map [_Overland_] (16,071);
+character @[000728] level 24 [male] [merchant] noclass neutral shop [rare books] map [_Overland_] (17,074) square map [_Overland_] (17,074);
+character @[000729] level 24 [male] [merchant] noclass neutral shop [antique weapons outlet] map [_Overland_] (16,079) square map [_Overland_] (16,079);
+character @[000730] level 24 [male] [merchant] noclass neutral shop [jewellers] map [_Overland_] (18,080) square map [_Overland_] (18,080);
+character @[000731] level 12 [male] [holy cleric] noclass neutral shrine [holy shrine] map [_Overland_] (46,081) square map [_Overland_] (46,081);
+character @[000732] level 10 [neuter] [large mimic] noclass square map [_Overland_] (37,083);
+character @[000733] level 10 [neuter] [large mimic] noclass square map [_Overland_] (64,064);
+character @[000734] level 10 [neuter] [large mimic] noclass square map [_Overland_] (36,036);
+character @[000735] level 10 [neuter] [large mimic] noclass square map [_Overland_] (70,023);
+character @[000736] level 10 [neuter] [large mimic] noclass square map [_Overland_] (06,074);
+character @[000737] level 10 [neuter] [large mimic] noclass square map [_Overland_] (13,012);
+character @[000738] level 10 [neuter] [large mimic] noclass square map [_Overland_] (15,073);
+character @[000739] level 10 [neuter] [large mimic] noclass square map [_Overland_] (14,081);
+character @[000740] level 10 [neuter] [large mimic] noclass square map [_Overland_] (18,078);
+character @[000741] level 10 [neuter] [large mimic] noclass square map [_Overland_] (13,074);
+character @[000742] level 15 [male] [minotaur] noclass square map [_Overland_] (69,047);
+character @[000743] level 20 [male] [adult blue dragon] noclass square map [_Overland_] (04,007);
+character @[000744] level 20 [male] [adult yellow dragon] noclass square map [_Overland_] (07,004);
+character @[000745] level 18 [male] [adult orange dragon] noclass square map [_Overland_] (04,013);
+character @[000746] level 20 [male] [adult green dragon] noclass square map [_Overland_] (13,004);
+character @[000747] level 20 [male] [adult black dragon] noclass square map [_Overland_] (07,016);
+character @[000748] level 25 [male] [adult silver dragon] noclass square map [_Overland_] (16,007);
+character @[000749] level 25 [male] [adult shimmering dragon] noclass square map [_Overland_] (16,013);
+character @[000750] level 20 [male] [adult red dragon] noclass square map [_Overland_] (13,016);
+character @[000751] level 1 [male] [large kobold] noclass deceased;
+character @[000752] [male] [kobold scout] noclass deceased;
+character @[000753] [male] [kobold scout] noclass deceased;
+character @[000754] [male] [kobold scout] noclass deceased;
+character @[000755] [male] [kobold scout] noclass deceased;
+character @[000756] level 2 [male] [kobold shaman] noclass deceased;
+character @[000757] level 1 [male] [large kobold] noclass deceased;
+character @[000758] level 8 [male] [swamp kobold] noclass deceased;
+character @[000759] [male] [sewer rat] noclass deceased;
+character @[000760] level 6 [male] [rat king] noclass deceased;
+character @[000761] level 1 [male] [large kobold] noclass deceased;
+character @[000762] level 1 [male] [large kobold] noclass deceased;
+character @[000763] level 1 [male] [giant rat] noclass deceased;
+character @[000764] level 2 [male] [black rat] noclass deceased;
+character @[000765] level 3 [male] [woodchuck] noclass deceased;
+character @[000766] [male] [kobold scout] noclass deceased;
+character @[000767] level 8 [male] [swamp kobold] noclass deceased;
+character @[000768] level 2 [male] [black rat] noclass deceased;
+character @[000769] level 2 [male] [black rat] noclass deceased;
+character @[000770] [male] [kobold scout] noclass deceased;
+character @[000771] [male] [kobold scout] noclass deceased;
+character @[000772] level 2 [male] [black rat] noclass deceased;
+character @[000773] level 1 [male] [giant rat] noclass deceased;
+character @[000774] level 1 [male] [large kobold] noclass deceased;
+character @[000775] level 8 [male] [swamp kobold] noclass deceased;
+character @[000776] level 5 [male] [hellrat] noclass deceased;
+character @[000777] level 1 [male] [large kobold] noclass deceased;
+character @[000778] level 4 [male] [pack rat] noclass deceased;
+character @[000779] level 3 [male] [rabid rat] noclass deceased;
+character @[000780] level 6 [male] [rat king] noclass deceased;
+character @[000781] level 2 [male] [black rat] noclass deceased;
+character @[000782] [male] [rabbit] noclass deceased;
+character @[000783] level 3 [male] [rabid rat] noclass deceased;
+character @[000784] level 2 [male] [rabid rabbit] noclass deceased;
+character @[000785] level 2 [male] [rabid rabbit] noclass deceased;
+character @[000786] level 2 [male] [black rat] noclass deceased;
+character @[000787] level 3 [male] [rabid rat] noclass deceased;
+character @[000788] level 8 [male] [swamp kobold] noclass deceased;
+character @[000789] [male] [kobold scout] noclass deceased;
+character @[000790] level 8 [male] [swamp kobold] noclass deceased;
+character @[000791] [male] [kobold scout] noclass deceased;
+character @[000792] level 2 [male] [kobold shaman] noclass deceased;
+character @[000793] level 2 [male] [kobold shaman] noclass deceased;
+character @[000794] [male] [kobold scout] noclass deceased;
+character @[000795] [male] [kobold scout] noclass deceased;
+character @[000796] level 8 [male] [swamp kobold] noclass deceased;
+character @[000797] level 1 [male] [large kobold] noclass deceased;
+character @[000798] level 1 [male] [large kobold] noclass deceased;
+character @[000799] level 1 [male] [large kobold] noclass deceased;
+character @[000800] [male] [kobold scout] noclass deceased;
 
 party [000213] [000227];
 party [000319] [000320];

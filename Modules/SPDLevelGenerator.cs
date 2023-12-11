@@ -1107,7 +1107,7 @@ namespace Pathos
             var tools = SPDRandom.IntRange(3, 5);
             for (var i = 0; i < tools; i++)
             {
-                StallAdd(SPDGameList.RandomTool());
+                StallAdd(SPDGameList.RandomToolOrMaybeArtifact());
             }
 
             var sous = SPDRandom.IntRange(0, 2);
@@ -1152,8 +1152,8 @@ namespace Pathos
             StallAdd(SPDGameList.RandomWand());
             StallAdd(SPDGameList.RandomRing());
             StallAdd(SPDGameList.RandomAmulet());
-            StallAdd(SPDGameList.RandomTool());
-            StallAdd(SPDGameList.RandomTool());
+            StallAdd(SPDGameList.RandomToolOrMaybeArtifact());
+            StallAdd(SPDGameList.RandomToolOrMaybeArtifact());
             StallAdd(SPDGameList.RandomScroll());
             StallAdd(SPDGameList.RandomScroll());
             StallAdd(SPDGameList.RandomScroll());
@@ -1245,7 +1245,7 @@ namespace Pathos
                     case 21: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.potion_of_healing); break;
                     case 22: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RealGem()); break;
                     case 23: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomWand()); break;
-                    case 24: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomTool()); break;
+                    case 24: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomToolOrMaybeArtifact()); break;
                 }
             }
         }

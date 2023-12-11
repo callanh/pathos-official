@@ -35,7 +35,7 @@ namespace Pathos
       if (Inv.Assert.IsEnabled)
       {
         var OverlandSite = Generator.Adventure.World.Sites.Single();
-        var OverlandText = Generator.TranslatedModuleTerm(Overland);
+        var OverlandText = Generator.EscapedModuleTerm(Overland);
 
         Inv.Assert.Check(OverlandSite.Name == OverlandText, "Site name mismatch.");
         Inv.Assert.Check(OverlandSite.GetMaps().Single().Name == OverlandText, "Map name mismatch.");

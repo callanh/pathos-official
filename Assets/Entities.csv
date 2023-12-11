@@ -1,5 +1,5 @@
 ﻿Kind,Race,Name,Description,Level,Frequency,Difficulty,Challenge,Size,Material,Weight,Speed,Defence,Strategy,Flags,STR,DEX,CON,INT,WIS,CHA
-angel,angel,Aleax,,44,1,40,1808,medium,animal,18000,6.0,30,attack,UNIQUE,22,18,21,22,23,24
+angel,angel,Aleax,,44,0,40,1808,medium,animal,18000,6.0,30,attack,UNIQUE,22,18,21,22,23,24
 angel,angel,angel,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",0,0,0,0,medium,animal,15000,4.5,10,attack,BASE,10,10,10,10,10,10
 angel,angel,archangel,,14,1,19,415,medium,animal,18000,4.5,24,attack,,18,17,16,17,19,20
 angel,angel,archon,,19,1,26,662,large,animal,18000,5.0,22,attack,,21,20,21,21,22,22
@@ -8,8 +8,8 @@ angel,,couatl,,8,1,11,148,large,animal,100000,3.0,10,attack,,16,20,17,18,20,18
 angel,,ki-rin,,16,1,21,472,large,animal,140000,6.0,18,attack,,19,20,16,17,20,18
 angel,angel,monadic deva,,15,1,21,456,medium,animal,20000,5.0,20,attack,,18,18,18,17,20,20
 angel,angel,movanic deva,,12,1,19,386,medium,animal,19000,5.0,19,attack,,16,16,16,15,18,18
-angel,angel,Planetar,,50,1,40,1642,large,animal,21000,6.0,30,attack,UNIQUE,24,20,24,19,22,25
-angel,angel,Solar,,58,1,40,2100,large,animal,18000,5.0,30,attack,UNIQUE,26,22,26,25,25,30
+angel,angel,Planetar,,50,0,40,1642,large,animal,21000,6.0,30,attack,UNIQUE,24,20,24,19,22,25
+angel,angel,Solar,,58,0,40,2100,large,animal,18000,5.0,30,attack,UNIQUE,26,22,26,25,25,30
 bat,,athol,,5,1,6,22,medium,animal,6000,5.0,13,defend,,15,14,11,2,12,6
 bat,,bat,,0,2,2,6,tiny,animal,200,5.0,10,defend,,4,15,8,2,13,4
 bat,,byakhee,,18,2,22,575,medium,animal,16000,5.0,21,defend,,18,16,17,7,15,8
@@ -77,7 +77,7 @@ demon,,bearded devil,,29,1,31,1088,medium,animal,14500,5.0,24,attack,,18,15,15,9
 demon,,bone devil,,29,2,33,1435,large,animal,19000,5.0,24,attack,,18,16,18,13,14,16
 demon,,chasme,,22,1,27,959,medium,animal,12000,5.0,27,attack,,16,10,19,18,12,13
 demon,,Cthulhu,,106,0,59,12837,gargantuan,animal,11000000,5.0,22,attack,UNIQUE,27,27,28,24,26,27
-demon,,Death,,49,0,34,3911,medium,animal,10000,4.0,27,attack,UNIQUE,6,24,26,25,25,18
+demon,,Death,,30,0,34,2011,medium,animal,10000,4.0,18,attack,UNIQUE,6,24,26,25,25,18
 demon,,Demogorgon,,106,0,57,12549,huge,animal,300000,5.0,26,attack,UNIQUE,21,24,28,25,27,27
 demon,demon,demon,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",0,0,0,0,large,animal,25000,4.0,10,attack,BASE,10,10,10,10,10,10
 demon,orc,demon orc,,19,1,21,606,medium,animal,22000,4.0,13,attack,,18,14,19,8,8,7
@@ -111,7 +111,7 @@ demon,,Yeenoghu,,56,0,31,3850,large,animal,22000,5.0,23,attack,UNIQUE,16,14,26,2
 devourer,,disenchanter,,12,2,14,253,large,animal,24000,3.7,30,attack,,15,13,10,3,10,6
 devourer,,disintegrator,,18,1,20,634,large,animal,25000,5.0,18,attack,,11,15,10,3,10,6
 devourer,,rust monster,,5,2,8,55,medium,animal,10000,5.0,18,attack,,13,12,13,2,13,6
-dog,,Cerberus,,60,1,22,4753,large,animal,80000,5.0,36,attack,UNIQUE,20,16,18,8,16,12
+dog,,Cerberus,,17,0,22,453,large,animal,80000,5.0,15,attack,UNIQUE,20,16,18,8,16,12
 dog,,coyote,,1,1,2,2,small,animal,3000,3.7,12,attack,,9,13,9,3,2,4
 dog,,death dog,,23,1,25,556,small,animal,5000,3.7,18,attack,,17,14,14,3,13,6
 dog,,dingo,,6,1,7,40,medium,animal,4000,5.0,13,attack,,13,15,13,4,2,7
@@ -169,7 +169,7 @@ dragon,,baby yellow dragon,,4,2,5,22,medium,animal,50000,5.0,18,attack,,15,10,14
 dragon,,chromatic dragon,,32,1,33,1446,gargantuan,animal,450000,5.0,27,attack,,27,10,30,26,26,28
 dragon,,dragon king,,39,1,38,1713,gargantuan,animal,300000,5.0,30,attack,,30,14,26,18,16,28
 dragon,,hydra,,34,1,36,1350,gargantuan,animal,1200000,5.0,27,attack,,28,12,24,2,10,7
-dragon,,Ixoth,,51,0,22,4100,gargantuan,animal,1400000,3.7,38,attack,UNIQUE,20,12,25,10,11,11
+dragon,,Ixoth,,15,0,22,500,gargantuan,animal,1400000,3.7,20,attack,UNIQUE,20,12,25,10,11,11
 dragon,,wyvern,,16,1,20,530,gargantuan,animal,70000,5.0,21,attack,,19,10,16,5,12,16
 dragon,,young black dragon,,12,2,15,294,large,animal,100000,5.0,20,attack,,17,16,15,12,13,15
 dragon,,young blue dragon,,12,2,15,298,large,animal,100000,5.0,20,attack,,19,12,17,14,13,17
@@ -188,7 +188,7 @@ dwarf,dwarf,dwarf king,,20,1,21,668,medium,animal,16000,4.0,13,attack,,18,16,14,
 dwarf,dwarf,dwarf lord,,14,3,16,257,medium,animal,15500,4.0,11,attack,,16,12,11,12,11,13
 dwarf,dwarf,dwarf thief,,8,1,10,78,medium,animal,13000,4.2,10,attack,,14,16,8,11,8,10
 dwarf,dwarf,dwarf warrior,,11,1,13,204,medium,animal,15000,4.2,12,attack,,16,11,12,8,10,9
-dwarf,dwarf,Thorin,,48,0,22,3263,medium,animal,17000,4.2,32,attack,UNIQUE,16,14,15,13,11,14
+dwarf,dwarf,Thorin,,20,0,22,463,medium,animal,17000,4.2,18,attack,UNIQUE,16,14,15,13,11,14
 echo,echo,echo,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",0,0,0,0,medium,animal,10000,5.0,10,attack,BASE,10,10,10,10,10,10
 elemental,,air elemental,,18,2,20,505,huge,air,0,7.5,17,attack,,14,20,14,6,10,6
 elemental,,animate object,,0,0,0,0,small,ether,0,5.0,10,attack,ANIMATE,11,11,11,11,11,11
@@ -207,11 +207,11 @@ elemental,,stalker,,8,3,9,65,large,animal,9000,3.7,13,defend,,16,19,14,10,15,11
 elemental,,water elemental,,12,2,14,226,huge,water,200000,2.0,16,attack,,18,14,18,5,10,8
 elemental,,water sphere,,3,2,5,24,small,water,100000,3.7,11,attack,,6,12,18,7,8,12
 elf,elf,drow,,10,1,13,225,medium,animal,10000,5.0,16,attack,,14,16,12,15,15,13
-elf,elf,Earendil,,48,0,22,3263,medium,animal,15000,5.0,34,attack,UNIQUE,14,24,14,20,20,22
+elf,elf,Earendil,,20,0,22,463,medium,animal,15000,5.0,20,attack,UNIQUE,14,24,14,20,20,22
 elf,elf,elf,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",0,0,0,0,medium,animal,10000,5.0,10,attack,BASE,10,10,10,10,10,10
 elf,elf,elf king,,22,1,24,713,medium,animal,12000,5.0,18,attack,,19,19,15,16,15,23
 elf,elf,elf lord,,20,2,22,636,medium,animal,11000,5.0,16,attack,,16,15,13,15,15,15
-elf,elf,Elwing,,48,0,22,3263,medium,animal,11000,5.0,34,attack,UNIQUE,14,24,14,20,20,22
+elf,elf,Elwing,,20,0,22,463,medium,animal,11000,5.0,20,attack,UNIQUE,14,24,14,20,20,22
 elf,elf,green elf,,10,3,12,189,medium,animal,10000,5.0,12,attack,,12,13,11,14,15,13
 elf,elf,grey elf,,14,3,16,242,medium,animal,10000,5.0,13,attack,,12,13,12,14,15,13
 elf,elf,high elf,,17,1,19,427,medium,animal,11000,5.0,15,attack,,17,15,12,15,15,14
@@ -222,7 +222,7 @@ eye,,bloodshot eye,,21,1,19,406,small,animal,100,2.0,13,attack,,6,16,8,4,6,5
 eye,,floating eye,,2,6,3,7,small,animal,500,1.5,8,attack,,6,16,6,7,6,12
 eye,,gas spore,,1,1,2,6,small,animal,100,2.0,15,attack,,5,1,3,1,1,1
 eye,,glowing eye,,5,1,7,34,small,animal,500,2.0,13,attack,,6,16,8,4,6,10
-fairy,nymph,Aphrodite,,41,1,13,3368,medium,animal,13000,5.0,36,defend,UNIQUE,5,18,12,16,24,30
+fairy,nymph,Aphrodite,,10,0,13,268,medium,animal,13000,5.0,21,defend,UNIQUE,5,18,12,16,24,30
 fairy,fairy,brownie,,8,1,11,94,tiny,animal,600,5.0,15,defend,,5,14,12,13,15,12
 fairy,fairy,dryad,,14,0,16,254,medium,animal,14500,3.7,26,attack,,18,16,20,15,20,14
 fairy,fairy,fairy,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",0,0,0,0,tiny,animal,3000,5.0,10,attack,BASE,10,10,10,10,10,10
@@ -255,7 +255,7 @@ giant,giant,frost giant,,17,1,20,441,huge,animal,110000,3.0,18,attack,,23,9,21,9
 giant,giant,giant,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",0,0,0,0,huge,animal,100000,3.3,10,attack,BASE,10,10,10,10,10,10
 giant,giant,giant king,,30,1,32,1300,huge,animal,165000,3.7,20,attack,,30,15,27,15,13,24
 giant,giant,hill giant,,12,2,14,229,huge,animal,110000,3.0,15,attack,,21,8,19,5,9,6
-giant,giant,Lord Surtur,,57,0,19,4611,huge,animal,130000,3.7,39,attack,UNIQUE,27,11,25,11,11,14
+giant,giant,Lord Surtur,,15,0,19,411,huge,animal,130000,3.7,18,attack,UNIQUE,27,11,25,11,11,14
 giant,giant,Mother Hydra,,102,0,52,10802,gargantuan,animal,3000000,5.0,29,attack,UNIQUE,30,17,30,16,18,25
 giant,giant,stone giant,,10,2,11,91,huge,animal,110000,3.0,15,attack,,23,15,20,10,12,9
 giant,giant,storm giant,,21,1,24,659,huge,animal,110000,3.0,20,attack,,29,14,20,16,18,18
@@ -277,7 +277,7 @@ golem,,crystal golem,,32,1,36,1182,large,crystal,100000,5.0,20,attack,,26,9,22,3
 golem,,diamond golem,,28,1,30,839,large,gemstone,110000,3.7,18,attack,,26,9,22,3,9,1
 golem,,emerald golem,,23,1,25,601,large,gemstone,110000,3.7,19,attack,,26,9,22,3,9,1
 golem,,flesh golem,,14,1,14,184,large,animal,50000,2.0,17,attack,,19,9,18,6,10,5
-golem,,Frankenstein's Monster,,50,0,23,3515,large,animal,30000,2.0,38,attack,UNIQUE,18,15,25,7,5,7
+golem,,Frankenstein's Monster,,20,0,23,515,large,animal,30000,2.0,23,attack,UNIQUE,18,15,25,7,5,7
 golem,,glass golem,,19,1,20,456,large,glass,90000,2.0,20,attack,,22,9,18,3,9,1
 golem,,gold golem,,9,1,10,84,large,gold,140000,2.5,14,attack,,16,10,13,3,8,1
 golem,,iron golem,,20,1,24,635,large,iron,120000,2.0,18,attack,,24,9,20,3,11,1
@@ -307,47 +307,47 @@ horse,,pegasus,,24,1,27,961,large,animal,75000,7.5,19,defend,,18,15,16,10,15,13
 horse,,pony,,3,2,4,13,large,animal,40000,5.0,14,defend,DOMESTIC,15,10,13,2,11,7
 horse,,warhorse,,7,2,9,55,large,animal,140000,6.0,15,defend,DOMESTIC,18,12,13,2,12,7
 horse,unicorn,white unicorn,,12,4,14,204,large,animal,100000,7.5,18,defend,,22,14,15,11,17,16
-human,human,Archmage Dirachi,,56,0,44,4098,medium,animal,14500,5.0,35,attack,UNIQUE,15,17,16,22,21,22
-human,human,Archmage Flaynn,,60,0,44,4498,medium,animal,14500,5.0,37,attack,UNIQUE,15,17,16,22,21,22
-human,human,Archpriest Avvakrum,,60,0,30,4276,medium,animal,15000,3.7,46,attack,UNIQUE,22,18,19,18,24,22
+human,human,Archmage Dirachi,,40,0,44,2498,medium,animal,14500,5.0,27,attack,UNIQUE,15,17,16,22,21,22
+human,human,Archmage Flaynn,,40,0,44,2498,medium,animal,14500,5.0,27,attack,UNIQUE,15,17,16,22,21,22
+human,human,Archpriest Avvakrum,,25,0,30,776,medium,animal,15000,4.5,29,attack,UNIQUE,22,18,19,18,24,22
 human,human,artisan,,14,0,18,314,medium,animal,13000,5.0,20,attack,,18,16,17,14,15,13
-human,human,Ashikaga Takauji,,57,0,19,4613,medium,animal,15000,3.7,47,attack,UNIQUE,16,18,16,16,14,14
-human,human,Assassin Mortimer,,57,0,20,4643,medium,animal,13000,3.7,33,attack,UNIQUE,15,26,15,18,17,20
+human,human,Ashikaga Takauji,,15,0,19,413,medium,animal,15000,5.0,26,attack,UNIQUE,16,18,16,16,14,14
+human,human,Assassin Mortimer,,15,0,20,443,medium,animal,13000,6.0,12,attack,UNIQUE,15,26,15,18,17,20
 human,human,Charon,,76,0,38,5938,medium,animal,14500,5.0,28,attack,UNIQUE,16,24,28,18,20,22
-human,human,Colonel Blood,,44,0,28,3041,medium,animal,18000,2.5,25,attack,UNIQUE,17,14,18,15,16,18
-human,human,Croesus,,46,0,22,3226,medium,animal,18000,5.0,38,attack,UNIQUE,22,17,18,16,16,19
+human,human,Colonel Blood,,20,0,28,641,medium,animal,18000,4.5,13,attack,UNIQUE,17,14,18,15,16,18
+human,human,Croesus,,20,0,22,626,medium,animal,18000,5.0,25,attack,UNIQUE,22,17,18,16,16,19
 human,human,dark cleric,,12,0,15,234,medium,animal,14000,5.0,24,attack,,18,12,18,12,22,16
-human,human,Dark Lord,,51,0,22,3563,medium,animal,16000,3.7,35,attack,UNIQUE,14,18,18,16,15,15
-human,human,Dark One,,59,0,20,4838,medium,animal,14000,3.7,42,attack,UNIQUE,14,18,16,15,17,15
-human,human,Doctor Frankenstein,,47,0,23,3210,medium,animal,14500,3.7,37,attack,UNIQUE,16,22,17,21,18,17
+human,human,Dark Lord,,20,0,22,463,medium,animal,16000,5.0,20,attack,UNIQUE,14,18,18,16,15,15
+human,human,Dark One,,15,0,20,438,medium,animal,14000,4.5,20,attack,UNIQUE,14,18,16,15,17,15
+human,human,Doctor Frankenstein,,20,0,23,510,medium,animal,14500,4.0,24,attack,UNIQUE,16,22,17,21,18,17
 human,human,genetic engineer,,11,1,12,199,medium,animal,14500,3.7,14,attack,,12,16,14,18,15,12
 human,human,guard,,12,0,14,212,medium,animal,14500,3.7,10,attack,,22,11,17,11,9,12
-human,human,Guildmaster Vaughn,,48,0,24,3288,medium,animal,14000,3.7,31,attack,UNIQUE,13,17,16,17,16,19
-human,human,Guru Quilion,,60,0,30,4453,medium,animal,12000,3.7,34,attack,UNIQUE,22,16,21,19,22,20
+human,human,Guildmaster Vaughn,,20,0,24,488,medium,animal,14000,4.5,17,attack,UNIQUE,13,17,16,17,16,19
+human,human,Guru Quilion,,25,0,30,953,medium,animal,12000,4.5,17,attack,UNIQUE,22,16,21,19,22,20
 human,human,gypsy,,19,2,21,519,medium,animal,12000,3.7,16,attack,,16,18,16,15,17,20
-human,human,Hippocrates,,42,0,22,2663,medium,animal,14500,3.7,29,attack,UNIQUE,13,15,16,17,17,20
+human,human,Hippocrates,,20,0,22,463,medium,animal,14500,4.5,18,attack,UNIQUE,13,15,16,17,17,20
 human,human,holy cleric,,12,0,15,234,medium,animal,14000,5.0,24,attack,,18,12,18,12,22,16
 human,human,human,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,0,0,0,0,medium,animal,12000,5.0,10,attack,BASE,10,10,10,10,10,10
 human,human,human king,,20,1,23,763,medium,animal,20000,3.7,16,attack,,17,15,18,15,16,19
-human,human,Lareth,,56,0,32,4116,medium,animal,15000,5.0,32,attack,UNIQUE,18,17,21,17,19,18
-human,human,Lord Carnarvon,,49,0,22,3363,medium,animal,16000,3.7,32,attack,UNIQUE,13,15,16,16,17,18
-human,human,Lord Sato,,44,0,23,2868,medium,animal,14500,3.7,30,attack,UNIQUE,13,15,16,16,17,18
-human,human,Lycaon,,50,0,22,3458,medium,animal,18000,3.7,35,attack,UNIQUE,20,16,25,14,20,25
-human,human,Master Kaen,,61,0,31,4595,medium,animal,14500,3.7,41,attack,UNIQUE,21,24,24,18,16,19
+human,human,Lareth,,25,0,32,1016,medium,animal,15000,5.0,17,attack,UNIQUE,18,17,21,17,19,18
+human,human,Lord Carnarvon,,20,0,22,463,medium,animal,16000,5.0,18,attack,UNIQUE,13,15,16,16,17,18
+human,human,Lord Sato,,20,0,23,468,medium,animal,14500,5.0,18,attack,UNIQUE,13,15,16,16,17,18
+human,human,Lycaon,,20,0,22,458,medium,animal,18000,5.0,20,attack,UNIQUE,20,16,25,14,20,25
+human,human,Master Kaen,,25,0,31,995,medium,animal,14500,5.0,23,attack,UNIQUE,21,24,24,18,16,19
 human,human,merchant,,24,0,28,666,medium,animal,14500,5.0,24,attack,,20,15,16,17,14,20
-human,human,Metamorphius,,44,0,23,2868,medium,animal,14500,3.7,29,attack,UNIQUE,15,16,16,21,22,19
-human,human,Neferet the Green,,49,0,23,3393,medium,animal,14500,3.7,31,attack,UNIQUE,15,16,16,21,23,20
-human,human,Norn,,43,0,23,2768,medium,animal,14500,3.7,28,attack,UNIQUE,22,16,16,18,20,21
+human,human,Metamorphius,,20,0,23,468,medium,animal,14500,4.5,17,attack,UNIQUE,15,16,16,21,22,19
+human,human,Neferet the Green,,20,0,23,493,medium,animal,14500,3.7,17,attack,UNIQUE,15,16,16,21,23,20
+human,human,Norn,,20,0,23,468,medium,animal,14500,3.7,17,attack,UNIQUE,22,16,16,18,20,21
 human,human,nurse,,11,3,13,190,medium,animal,12000,3.3,17,attack,,14,16,14,15,13,16
-human,human,Oracle,,47,0,13,3726,medium,animal,12000,1.5,34,attack,UNIQUE,8,16,12,25,27,24
-human,human,Orion,,43,0,22,2763,medium,animal,14500,3.7,28,attack,UNIQUE,14,16,16,14,15,17
-human,human,Pelias,,46,0,22,3063,medium,animal,18000,3.7,30,attack,UNIQUE,14,16,16,20,15,17
+human,human,Oracle,,12,0,13,226,medium,animal,12000,1.5,17,attack,UNIQUE,8,16,12,25,27,24
+human,human,Orion,,20,0,22,463,medium,animal,14500,3.7,17,attack,UNIQUE,14,16,16,14,15,17
+human,human,Pelias,,20,0,22,463,medium,animal,18000,3.7,17,attack,UNIQUE,14,16,16,20,15,17
 human,human,quantum mechanic,,7,2,9,57,medium,animal,14500,3.7,14,attack,,12,16,12,18,13,12
-human,human,Shaman Karnov,,43,0,22,2763,medium,animal,13000,3.7,28,attack,UNIQUE,16,16,16,20,24,15
-human,human,Sir Lorimar,,60,0,29,4423,medium,animal,14500,5.0,43,attack,UNIQUE,17,18,19,17,15,18
-human,human,Thoth Amon,,59,0,22,4799,medium,animal,19000,3.7,38,attack,UNIQUE,14,16,15,17,17,15
+human,human,Shaman Karnov,,20,0,22,463,medium,animal,13000,3.7,17,attack,UNIQUE,16,16,16,20,24,15
+human,human,Sir Lorimar,,25,0,29,923,medium,animal,14500,5.0,26,attack,UNIQUE,17,18,19,17,15,18
+human,human,Thoth Amon,,16,0,22,499,medium,animal,19000,3.7,17,attack,UNIQUE,14,16,15,17,17,15
 human,human,Twoflower,,49,0,45,2461,medium,animal,14500,5.0,29,attack,UNIQUE,16,12,16,15,13,17
-human,human,Van Helsing,,52,0,33,4668,medium,animal,17000,5.0,26,attack,UNIQUE,14,21,17,18,19,21
+human,human,Van Helsing,,30,0,33,2468,medium,animal,17000,5.0,15,attack,UNIQUE,14,21,17,18,19,21
 human,human,warlock,,30,1,32,1291,medium,animal,14000,5.0,21,attack,,16,20,25,24,29,26
 human,human,witch,,15,0,20,534,medium,animal,13000,5.0,20,attack,,14,16,17,20,18,8
 imp,,blood imp,,14,1,16,264,tiny,animal,200,3.7,19,defend,,6,17,13,11,12,14
@@ -375,6 +375,7 @@ insect,,giant louse,,5,1,7,32,tiny,animal,200,5.0,11,attack,,12,16,15,3,11,3
 insect,,giant termite,,3,1,4,5,tiny,animal,50,4.5,13,attack,,12,10,10,3,6,3
 insect,,giant tick,,1,1,1,5,tiny,animal,50,3.7,11,attack,,10,10,7,3,6,3
 insect,,giant wasp,,17,1,19,362,medium,animal,3000,5.0,18,attack,,10,14,10,3,10,3
+insect,,Girtab,,22,0,25,761,large,animal,16000,5.0,15,attack,UNIQUE,18,14,13,13,17,14
 insect,,killer bee,,1,3,5,26,tiny,animal,10,5.0,19,attack,,12,15,10,3,10,3
 insect,,killer beetle,,28,1,29,1153,large,animal,22000,2.5,26,attack,,15,16,16,5,8,5
 insect,,migo drone,,7,2,10,74,medium,animal,15000,3.7,22,defend,,10,7,10,3,3,3
@@ -609,15 +610,14 @@ spider,,barking spider,,3,1,5,17,small,animal,1000,5.0,14,attack,,6,12,11,2,6,4
 spider,,carrion crawler,,3,1,6,67,large,animal,80000,3.7,15,attack,,6,11,12,2,6,4
 spider,,cave spider,,1,3,3,2,tiny,animal,500,3.7,16,attack,,5,12,9,2,6,4
 spider,,centipede,,2,1,4,9,tiny,animal,500,2.5,17,attack,,5,11,10,2,6,4
-spider,,giant scorpion,,25,1,28,914,large,animal,16000,5.0,24,attack,,11,9,13,2,7,4
+spider,,giant scorpion,,19,1,22,914,large,animal,16000,5.0,24,attack,,11,9,13,2,7,4
 spider,,giant spider,,5,1,7,39,large,animal,9000,5.0,16,attack,,8,11,12,2,6,4
-spider,,Girtab,,53,1,25,3861,large,animal,16000,5.0,30,attack,UNIQUE,14,14,13,3,7,4
-spider,,Lolth,,47,0,22,3221,medium,animal,40000,5.0,31,attack,UNIQUE,18,15,18,16,17,16
+spider,,Lolth,,22,0,25,521,medium,animal,40000,5.0,18,attack,UNIQUE,18,15,18,16,17,16
 spider,,nickelpede,,13,1,15,201,medium,animal,15000,2.5,20,attack,,9,9,11,2,6,4
 spider,,phase spider,,15,1,17,366,large,animal,9000,3.7,21,attack,,12,13,12,3,8,4
 spider,,recluse spider,,21,1,23,676,tiny,animal,500,3.7,16,attack,,11,12,10,2,6,4
 spider,,scorpion,,5,1,8,42,small,animal,500,5.0,17,attack,,8,10,11,2,6,4
-spider,,Scorpius,,53,0,17,4214,large,animal,32000,5.0,39,attack,UNIQUE,24,24,24,10,10,6
+spider,,Scorpius,,22,0,25,414,large,animal,32000,5.0,20,attack,UNIQUE,24,24,24,10,10,16
 spider,,spider queen,,26,1,29,990,large,animal,32000,5.0,15,attack,,21,14,21,6,10,18
 tortle,tortle,tortle,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",0,0,0,0,large,animal,45000,3.5,15,attack,BASE,10,10,10,10,10,10
 trapper,,glass piercer,,8,1,9,64,medium,animal,4000,1.5,16,attack,,16,16,11,6,7,6
@@ -635,7 +635,7 @@ troll,troll,two-headed troll,,23,1,25,781,large,animal,40000,3.7,22,attack,,15,1
 troll,troll,water troll,,11,1,13,180,large,animal,36000,3.7,15,attack,,18,13,17,7,11,9
 umber,,umber hulk,,9,2,12,149,large,animal,25000,2.0,16,attack,,17,14,16,6,11,8
 umber,,water hulk,,24,1,27,930,large,animal,24000,2.5,16,attack,,17,14,17,6,11,8
-vampire,,Count Dracula,,61,0,30,4544,medium,animal,14500,5.0,41,attack,UNIQUE,16,20,22,16,17,15
+vampire,,Count Dracula,,25,0,30,944,medium,animal,14500,5.0,23,attack,UNIQUE,16,20,22,16,17,15
 vampire,,fire vampire,,24,1,30,1185,medium,fire,20000,5.0,15,attack,,15,20,16,11,12,11
 vampire,,star vampire,,28,1,33,1020,large,animal,30000,5.0,21,attack,,16,18,18,11,12,10
 vampire,,vampire,,15,2,17,477,medium,animal,14500,3.7,18,attack,,12,14,14,10,10,11

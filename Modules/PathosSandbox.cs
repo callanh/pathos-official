@@ -45,8 +45,9 @@ namespace Pathos
       var SandboxRoomGround = Codex.Grounds.stone_floor;
       var SandboxCorridorGround = Codex.Grounds.stone_path;
 
-      var SandboxSite = Adventure.World.AddSite(Generator.TranslatedModuleTerm(Dungeon));
-      var SandboxMap = Adventure.World.AddMap(Generator.TranslatedModuleTerm(Dungeon), SandboxWidth, SandboxHeight);
+      var SandboxSite = Adventure.World.AddSite(Generator.EscapedModuleTerm(Dungeon));
+      var SandboxMap = Adventure.World.AddMap(Generator.EscapedModuleTerm(Dungeon), SandboxWidth, SandboxHeight);
+      SandboxMap.SetDifficulty(1);
       SandboxMap.SetAtmosphere(Codex.Atmospheres.dungeon);
       SandboxMap.SetTerminal(true);
 

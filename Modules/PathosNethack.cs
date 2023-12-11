@@ -131,7 +131,7 @@ namespace Pathos
       const int FinaleWidth = 60;
       const int FinaleHeight = 60;
 
-      var Site = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Dungeon));
+      var Site = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Dungeon));
 
       var Portals = Codex.Portals;
 
@@ -199,7 +199,7 @@ namespace Pathos
         DebugStart();
         DebugWrite("Level " + LevelIndex.ToString("00"));
 
-        var LevelName = Generator.TranslatedModuleTerm(NethackTerms.level) + " " + LevelIndex;
+        var LevelName = Generator.EscapedModuleTerm(NethackTerms.level) + " " + LevelIndex;
 
         Level Level;
         DungeonPlan Plan;
@@ -1119,7 +1119,24 @@ namespace Pathos
           var UniqueCharacter = UniqueSquare.Character;
           if (UniqueCharacter != null)
           {
-            Debug.WriteLine(UniqueEntity.Name);
+            if (UniqueEntity.Level <= 40)
+            {
+              // TODO: this is meant to be a static but randomish level boost (However, string.GetHashCode() is not actually deterministic across .NET versions and x86/x64!).
+              var LevelBoost = Math.Abs(UniqueEntity.Name.GetHashCode() % 10) + (UniqueEntity.Level / 10) + (UniqueEntity.Level % 10);
+
+              if (UniqueEntity.Level < 10)
+                LevelBoost += 40;
+              else if (UniqueEntity.Level < 20)
+                LevelBoost += 30;
+              else if (UniqueEntity.Level < 30)
+                LevelBoost += 20;
+              else if (UniqueEntity.Level <= 40)
+                LevelBoost += 10;
+
+              Generator.PromoteCharacter(UniqueCharacter, LevelBoost);
+            }
+
+            Debug.WriteLine($"Boss: {UniqueEntity.Name} (level +{UniqueCharacter.Level - UniqueEntity.Level})");
 
             var Script = UniqueCharacter.InsertScript();
             Script.Killed.Sequence.Add(Codex.Tricks.warping, Target: null);
@@ -1522,14 +1539,14 @@ namespace Pathos
 
         ZooZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitZooArray[SelectZoo.Index]);
 
-        Generator.PlaceZoo(ZooZone.Squares, SelectZoo);
+        Generator.PlaceZoo(ZooZone.Squares, SelectZoo, Generator.MinimumDifficulty(ZooRoom.Map), Generator.MaximumDifficulty(ZooRoom.Map));
       }
     }
     private void CreateAtticRoom(Room SourceRoom, Barrier SourceBarrier, Ground SourceGround)
     {
       var SourceMap = SourceRoom.Map;
 
-      var AtticMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.attic);
+      var AtticMapName = SourceMap.Name + " " + Generator.EscapedModuleTerm(NethackTerms.attic);
       if (Generator.Adventure.World.HasMap(AtticMapName))
         return;
 
@@ -1751,7 +1768,7 @@ namespace Pathos
     {
       var SourceMap = SourceSquare.Map;
 
-      var CellarMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.cellar);
+      var CellarMapName = SourceMap.Name + " " + Generator.EscapedModuleTerm(NethackTerms.cellar);
       if (Generator.Adventure.World.HasMap(CellarMapName))
         return;
 
@@ -1856,7 +1873,7 @@ namespace Pathos
 
       var SourceMap = SourceSquare.Map;
 
-      var CavesMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.caves);
+      var CavesMapName = SourceMap.Name + " " + Generator.EscapedModuleTerm(NethackTerms.caves);
       if (Generator.Adventure.World.HasMap(CavesMapName))
         return;
 
@@ -1885,7 +1902,7 @@ namespace Pathos
     {
       var SourceMap = SourceSquare.Map;
 
-      var TroveMapName = SourceMap.Name + " " + Generator.TranslatedModuleTerm(NethackTerms.trove);
+      var TroveMapName = SourceMap.Name + " " + Generator.EscapedModuleTerm(NethackTerms.trove);
       if (Generator.Adventure.World.HasMap(TroveMapName))
         return;
 
@@ -1911,7 +1928,7 @@ namespace Pathos
         if (Square != TroveRoom.Midpoint)
         {
           if (Chance.OneIn9.Hit())
-            Generator.PlaceCharacter(Square, Square.MinimumDifficulty(Generator.Adventure), Square.MaximumDifficulty(Generator.Adventure), E => E.IsEncounter && E.IsMimicking());
+            Generator.PlaceCharacter(Square, Generator.MinimumDifficulty(Square), Generator.MaximumDifficulty(Square), E => E.IsEncounter && E.IsMimicking());
 
           if (Square.Character != null)
           {
@@ -2706,7 +2723,7 @@ namespace Pathos
     }
     private bool CreateMinesBranch(Level CastleLevel)
     {
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Mines)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Mines)))
         return false;
 
       var EntranceMap = CastleLevel.Map;
@@ -2774,7 +2791,7 @@ namespace Pathos
       foreach (var Town in TownArray)
       {
         var SiteName = TownArray[0] == Town ? NethackTerms.Mines : Town.Name; // NOTE: Town Names are not translated, this is just for debugging.
-        var MinesSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(SiteName));
+        var MinesSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(SiteName));
 
         var TownGrid = Generator.LoadSpecialGrid(Town.Text);
 
@@ -2792,7 +2809,7 @@ namespace Pathos
 
         var TownName = TownArray[0] == Town ? NethackTerms.Minetown : Town.Name;
 
-        var TownMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(TownName), TownWidth, TownHeight);
+        var TownMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(TownName), TownWidth, TownHeight);
         TownMap.SetDifficulty(EntranceMap.Difficulty + 1);
         TownMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
@@ -3010,7 +3027,7 @@ namespace Pathos
                     // murdered by orcs.
                     DeferList.Add(() =>
                     {
-                      var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
+                      var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                       if (ShopParty == null)
                         Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
                     });
@@ -3030,7 +3047,7 @@ namespace Pathos
 
                 DeferList.Add(() =>
                 {
-                  var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, TownSquare.MinimumDifficulty(null), TownSquare.MaximumDifficulty(null), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
+                  var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                   if (ShrineParty == null)
                     Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
                 });
@@ -3172,7 +3189,7 @@ namespace Pathos
 
         foreach (var Level in LevelArray)
         {
-          var LevelMapName = Generator.TranslatedModuleTerm(SiteName) + " " + Level.Number;
+          var LevelMapName = Generator.EscapedModuleTerm(SiteName) + " " + Level.Number;
           if (Generator.Adventure.World.HasMap(LevelMapName))
           {
             Debug.Fail("How is there a duplicate mines level?");
@@ -3492,7 +3509,7 @@ namespace Pathos
         {
           var UnderParty = Generator.NewParty(Leader: null);
 
-          UnderMap.SetName(Generator.TranslatedModuleTerm(UnderMap.Name));
+          UnderMap.SetName(Generator.EscapedModuleTerm(UnderMap.Name));
 
           Generator.BuildMap(UnderMap);
 
@@ -3635,10 +3652,10 @@ namespace Pathos
       if (EntranceSquare == null)
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Lost_Chambers)))
         return false;
 
-      var ChambersSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers));
+      var ChambersSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Lost_Chambers));
 
       var ResourceFile = Official.Resources.Quests.Chambers;
 
@@ -3680,7 +3697,7 @@ namespace Pathos
 
       Debug.Assert(QuestSite.Levels.Count == PointList.Count);
 
-      var ChamberMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Lost_Chambers), TotalWidth, TotalHeight);
+      var ChamberMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NethackTerms.Lost_Chambers), TotalWidth, TotalHeight);
       ChamberMap.SetDifficulty(QuestDifficulty);
       ChamberMap.SetAtmosphere(Codex.Atmospheres.nether);
       ChamberMap.SetTerminal(true);
@@ -3835,7 +3852,7 @@ namespace Pathos
     }
     private bool CreateLabyrinthBranch(Level CastleLevel)
     {
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Labyrinth)))
         return false;
 
       var EntranceMap = CastleLevel.Map;
@@ -3878,7 +3895,7 @@ namespace Pathos
         Generator.PlaceFloor(FixSquare, LabyrinthGround);
 
       // three maze levels, 10x10 -> 20x20 -> 30x30.
-      var LabyrinthSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth));
+      var LabyrinthSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Labyrinth));
 
       var BaseSize = 11;
       var BoxSize = 5;
@@ -3887,7 +3904,7 @@ namespace Pathos
       for (var LevelIndex = 1; LevelIndex <= LevelCount; LevelIndex++)
       {
         var LabyrinthSize = BaseSize * LevelIndex;
-        var LabyrinthMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Labyrinth) + " " + LevelIndex, LabyrinthSize, LabyrinthSize);
+        var LabyrinthMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NethackTerms.Labyrinth) + " " + LevelIndex, LabyrinthSize, LabyrinthSize);
         LabyrinthMap.SetDifficulty(EntranceMap.Difficulty + 1);
         LabyrinthMap.SetAtmosphere(Codex.Atmospheres.nether);
         LabyrinthMap.SetTerminal(LevelIndex == LevelCount);
@@ -4009,12 +4026,12 @@ namespace Pathos
       if (!Generator.CanPlacePortal(MazeSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Sokoban)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Sokoban)))
         return false;
 
       var MazeMap = MazeSquare.Map;
 
-      var SokobanSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Sokoban));
+      var SokobanSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Sokoban));
 
       var Specials = Official.Resources.Specials;
 
@@ -4041,7 +4058,7 @@ namespace Pathos
 
         var Grid = Generator.LoadSpecialGrid(Map);
 
-        var LevelMapName = Generator.TranslatedModuleTerm(NethackTerms.Sokoban) + " " + Level.Number;
+        var LevelMapName = Generator.EscapedModuleTerm(NethackTerms.Sokoban) + " " + Level.Number;
         if (Generator.Adventure.World.HasMap(LevelMapName))
           return false;
 
@@ -4294,7 +4311,7 @@ namespace Pathos
       if (PortalSquare == null)
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Fort_Ludios)))
         return false;
 
       var FortItems = Codex.Items;
@@ -4308,7 +4325,7 @@ namespace Pathos
 
       var VaultMap = VaultRoom.Map;
 
-      var FortSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios));
+      var FortSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Fort_Ludios));
 
       var FortArray = new[]
       {
@@ -4322,7 +4339,7 @@ namespace Pathos
       var FortGrid = Generator.LoadSpecialGrid(FortArray.GetRandom());
       var FortWidth = FortGrid.Width;
       var FortHeight = FortGrid.Height;
-      var FortMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios), FortWidth, FortHeight);
+      var FortMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NethackTerms.Fort_Ludios), FortWidth, FortHeight);
       FortMap.SetDifficulty(VaultMap.Difficulty);
       FortMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
@@ -4578,7 +4595,7 @@ namespace Pathos
 
       var CacheWidth = 12;
       var CacheHeight = 12;
-      var CacheMap = Generator.Adventure.World.AddMap(Generator.TranslatedModuleTerm(NethackTerms.Fort_Ludios_Cache), CacheWidth, CacheHeight);
+      var CacheMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NethackTerms.Fort_Ludios_Cache), CacheWidth, CacheHeight);
       CacheMap.SetDifficulty(VaultMap.Difficulty);
       CacheMap.SetTerminal(true);
       CacheMap.SetAtmosphere(Codex.Atmospheres.civilisation);
@@ -4717,7 +4734,7 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Elf_Kingdom)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Elf_Kingdom)))
         return false;
 
       var StandardGeneration = Chance.ThreeIn4.Hit(); // 75% normal, 25% massacre.
@@ -4731,7 +4748,7 @@ namespace Pathos
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var KingdomSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Elf_Kingdom));
+      var KingdomSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Elf_Kingdom));
 
       var KingdomDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -4744,7 +4761,7 @@ namespace Pathos
         var IsTown = KingdomMap.Name == "Elf Town";
         var IsPalace1 = KingdomMap.Name.StartsWith("Elf Palace 1");
 
-        KingdomMap.SetName(Generator.TranslatedModuleTerm(KingdomMap.Name));
+        KingdomMap.SetName(Generator.EscapedModuleTerm(KingdomMap.Name));
 
         if (IsPalace1)
         {
@@ -5023,14 +5040,14 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Lair.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var LairSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair));
+      var LairSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair));
 
       var LairDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -5058,7 +5075,7 @@ namespace Pathos
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var LairMap = QuestLevel.Map;
-        LairMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Medusa_Lair) + " " + QuestLevel.Index);
+        LairMap.SetName(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair) + " " + QuestLevel.Index);
         LairMap.SetDifficulty(LairDifficulty + QuestLevel.Index);
         LairMap.SetAtmosphere(Codex.Atmospheres.forest);
         LairMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
@@ -5178,7 +5195,7 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Black_Market)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Market.GetBuffer());
@@ -5188,7 +5205,7 @@ namespace Pathos
       //PortalSquare.SetFixture(new Fixture(Codex.Features.stall, Sanctity.Uncursed));
       Generator.PlacePassage(PortalSquare, Codex.Portals.transportal, QuestStart);
 
-      var MarketSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Black_Market));
+      var MarketSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market));
 
       var MarketDifficulty = EntryRoom.Map.Difficulty + 1;
 
@@ -5212,7 +5229,7 @@ namespace Pathos
       var QuestLevel = QuestSite.Levels.Single();
 
       var MarketMap = QuestLevel.Map;
-      MarketMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Black_Market));
+      MarketMap.SetName(Generator.EscapedModuleTerm(NethackTerms.Black_Market));
       MarketMap.SetDifficulty(MarketDifficulty + QuestLevel.Index);
       MarketMap.SetAtmosphere(Codex.Atmospheres.civilisation);
       MarketMap.SetTerminal(true);
@@ -5297,21 +5314,21 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Tower.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var TowerSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower));
+      var TowerSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower));
 
       var TowerDifficulty = AtticRoom.Map.Difficulty;
 
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var TowerMap = QuestLevel.Map;
-        TowerMap.SetName(Generator.TranslatedModuleTerm(NethackTerms.Lich_Tower) + " " + QuestLevel.Index);
+        TowerMap.SetName(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower) + " " + QuestLevel.Index);
         TowerMap.SetDifficulty(TowerDifficulty + (QuestSite.Levels.Count - QuestLevel.Index));
         TowerMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
@@ -5419,14 +5436,14 @@ namespace Pathos
       if (!Generator.CanPlacePortal(PortalSquare))
         return false;
 
-      if (Generator.Adventure.World.HasSite(Generator.TranslatedModuleTerm(NethackTerms.Abyss)))
+      if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Abyss)))
         return false;
 
       var Quest = Generator.ImportQuest(Official.Resources.Quests.Abyss.GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      var AbyssSite = Generator.Adventure.World.AddSite(Generator.TranslatedModuleTerm(NethackTerms.Abyss));
+      var AbyssSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Abyss));
       AbyssSite.SetWarped(true); // prevent this site from being warped.
 
       var AbyssDifficulty = PortalSquare.Map.Difficulty + 1;
@@ -5540,7 +5557,7 @@ namespace Pathos
       foreach (var QuestLevel in QuestSite.Levels)
       {
         var AbyssMap = QuestLevel.Map;
-        AbyssMap.SetName(Generator.TranslatedModuleTerm(AbyssMap.Name));
+        AbyssMap.SetName(Generator.EscapedModuleTerm(AbyssMap.Name));
         AbyssMap.SetDifficulty(AbyssDifficulty + (QuestSite.Levels.Count - QuestLevel.Index));
         AbyssMap.SetAtmosphere(Codex.Atmospheres.nether);
         AbyssMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
@@ -5554,7 +5571,7 @@ namespace Pathos
 
         foreach (var QuestMap in QuestLevel.GetMaps().Except(AbyssMap))
         {
-          QuestMap.SetName(Generator.TranslatedModuleTerm(QuestMap.Name));
+          QuestMap.SetName(Generator.EscapedModuleTerm(QuestMap.Name));
           QuestMap.SetDifficulty(AbyssMap.Difficulty);
           QuestMap.SetAtmosphere(AbyssMap.Atmosphere);
           QuestMap.SetTerminal(AbyssMap.Terminal);

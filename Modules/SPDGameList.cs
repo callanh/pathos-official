@@ -289,16 +289,20 @@ namespace Pathos
                           StoreAsset(RandomScroll());
                     }
                     break;
-                case 2: StoreAsset(RandomTool()); break;
+                case 2: StoreAsset(RandomToolOrMaybeArtifact()); break;
                 case 3: StoreAsset(RandomBook()); break;
-                default: StoreAsset(RandomTool()); break;
+                default: StoreAsset(RandomToolOrMaybeArtifact()); break;
             }
 
             return chest;
         }
-        public Item RandomTool()
+        public Item RandomToolOrMaybeArtifact()
         {
             return MaybeArtifact(ArtifactChance: 30) ?? tools.GetRandom();
+        }
+        public Item RandomTool()
+        {
+            return tools.GetRandom();
         }
         public Item ThrownWeapon()
         {
