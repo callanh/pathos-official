@@ -73,7 +73,7 @@ namespace Pathos
       this.drunkard = AddSpecial("drunkard", S =>
       {
         S.Description = "The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.";
-        S.Glyph = Glyphs.potion_stock;
+        S.Glyph = Glyphs.brown_potion;
 
         S.Startup.SetTalent(Properties.inebriation);
         S.Startup.SetPunishment(Codex.Punishments.thirst);

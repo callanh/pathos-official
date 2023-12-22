@@ -2047,8 +2047,10 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
+      // Lovecraftian, perhaps should be Kinds.alien?
       migo_drone = AddEntity(Kinds.insect, null, "migo drone", E =>
       {
+        //E.Description = "They are described as winged fungal creatures that resemble crustaceans, with large claws and heads covered in antennae.";
         E.Glyph = Glyphs.migo_drone;
         E.Sonic = Sonics.buzz;
         E.Level = 7;
@@ -2091,6 +2093,56 @@ namespace Pathos
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
+        E.Conveyance.MajorResistance(Elements.poison);
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
+        E.SetCorpse(Chance.OneIn3);
+      });
+
+      migo_warrior = AddEntity(Kinds.insect, null, "migo warrior", E =>
+      {
+        E.Glyph = Glyphs.migo_warrior;
+        E.Sonic = Sonics.buzz;
+        E.Level = 10;
+        E.Challenge = 197;
+        E.Difficulty = 14;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1 from dex = 23.
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(22000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: false,
+          Limbs: true,
+          Feet: false,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 14, DEX: 9, CON: 12, INT: 3, WIS: 9, CHA: 3);
+        E.LimitForm.Set(STR: 30, DEX: 13, CON: 30, INT: 3, WIS: 11, CHA: 3);
+        E.SetGender(Genders.male);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
+        E.Startup.SetResistance(Elements.poison);
+        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
+        {
+          K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
+        });
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn3);
@@ -2153,56 +2205,6 @@ namespace Pathos
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
-      });
-
-      migo_warrior = AddEntity(Kinds.insect, null, "migo warrior", E =>
-      {
-        E.Glyph = Glyphs.migo_warrior;
-        E.Sonic = Sonics.buzz;
-        E.Level = 10;
-        E.Challenge = 197;
-        E.Difficulty = 14;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1 from dex = 23.
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S5_0;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(22000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: false,
-          Limbs: true,
-          Feet: false,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 14, DEX: 9, CON: 12, INT: 3, WIS: 9, CHA: 3);
-        E.LimitForm.Set(STR: 30, DEX: 13, CON: 30, INT: 3, WIS: 11, CHA: 3);
-        E.SetGender(Genders.male);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight);
-        E.Startup.SetResistance(Elements.poison);
-        E.AddAttack(AttackTypes.sting, Elements.physical, 1.d3(), K =>
-        {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
-        });
-        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d4()); // +2 from str.
-        E.Conveyance.MajorResistance(Elements.poison);
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.OneIn3);
       });
 
       queen_bee = AddEntity(Kinds.insect, null, "queen bee", E =>
@@ -2609,6 +2611,7 @@ namespace Pathos
 
       byakhee = AddEntity(Kinds.bat, null, "byakhee", E =>
       {
+        //E.Description = "They are four-limbed eldritch monsters with bat-like wings, possessing visual traits of various animals such as vampire bats, crows and buzzards, as well as somewhat resembling human corpses.";
         E.Glyph = Glyphs.byakhee;
         E.Sonic = Sonics.chirp;
         E.Level = 18;
@@ -2645,7 +2648,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration); // TODO: shouldn't byakhee have teleport too?
+        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5()); // +4 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
@@ -2899,8 +2902,9 @@ namespace Pathos
 
       nightgaunt = AddEntity(Kinds.bat, null, "nightgaunt", E =>
       {
+        //E.Description = "they are humanoid, thin, black, and faceless. Their skin is slick and rubbery. They have a pair of inward-facing horns on their heads, clawed hands and a long barbed tail. They can fly using a set of membranous wings. They make no sound.";
         E.Glyph = Glyphs.nightgaunt;
-        E.Sonic = Sonics.chirp;
+        //E.Sonic = Sonics.chirp;
         E.Level = 27;
         E.Challenge = 827;
         E.Difficulty = 27;
@@ -2935,7 +2939,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.slippery, Properties.silence);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15());
@@ -10199,8 +10203,10 @@ namespace Pathos
       #endregion
 
       #region marine.
+      // Lovecraftian.
       deep_one = AddEntity(Kinds.marine, null, "deep one", E =>
       {
+        //E.Description = "They are intelligent ocean-dwelling creatures, and are fishy/froggy humanoids in appearance.";
         E.Glyph = Glyphs.deep_one;
         E.Sonic = Sonics.cackle;
         E.Level = 16;
@@ -17753,7 +17759,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S1_5;
+        E.Speed = Speed.S3_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -17783,6 +17789,11 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.clarity, Properties.telepathy, Properties.clairvoyance, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
+        E.AddRetaliation(Chance.Always, AttackTypes.spell, R =>
+        {
+          R.SetCast().Strike(Strikes.force, 2.d3() + 6);
+          R.Apply.Harm(Elements.force, 6.d6() + 6); // effectively champion force bolt.
+        });
         E.SetCorpse(Chance.Always);
       });
 
@@ -17795,7 +17806,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(14500);
@@ -17838,7 +17849,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(18000);
@@ -17881,7 +17892,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -17970,7 +17981,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
+        E.Speed = Speed.S4_2;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(19000);
@@ -31282,123 +31293,6 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
-      fire_vampire = AddEntity(Kinds.vampire, null, "fire vampire", E =>
-      {
-        E.Glyph = Glyphs.fire_vampire;
-        E.Level = 24;
-        E.Challenge = 1185;
-        E.Difficulty = 30;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5
-        E.SetTerrain(Materials.air, Materials.fire);
-        E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.S5_0;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(20000);
-        E.Figure.Set
-        (
-          Material: Materials.fire,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(32, 1.d8());
-        E.ManaAdvancement.Set(32, 1.d4());
-        E.DefaultForm.Set(STR: 15, DEX: 20, CON: 16, INT: 11, WIS: 12, CHA: 11);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
-        E.Startup.AddGrimoire(Dice.One, Spells.fireball);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness);
-        E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
-        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
-        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
-        {
-          K.SetCast().Strike(Strikes.spirit, Dice.One);
-          K.Apply.DrainLife(Elements.drain, 2.d4());
-        });
-        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
-        {
-          K.SetCast().Strike(Strikes.magic, Dice.One);
-          K.Apply.DrainMana(Elements.drain, 2.d4());
-        });
-        E.AddAttack(AttackTypes.spell, Elements.fire, 6.d6());
-        E.SetCorpse(Chance.Never);
-      });
-
-      star_vampire = AddEntity(Kinds.vampire, null, "star vampire", E =>
-      {
-        E.Glyph = Glyphs.star_vampire;
-        E.Level = 28;
-        E.Challenge = 1020;
-        E.Difficulty = 33;
-        E.Frequency = 1;
-        E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
-        E.SetDiet(Diets.hematophagy);
-        E.Speed = Speed.S5_0;
-        E.Size = Size.Large;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(30000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: true,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(32, 1.d8());
-        E.ManaAdvancement.Set(32, 1.d4());
-        E.DefaultForm.Set(STR: 16, DEX: 18, CON: 18, INT: 11, WIS: 12, CHA: 10);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
-        E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6()); // +3
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
-        {
-          K.SetCast().Strike(Strikes.spirit, Dice.One);
-          K.Apply.DrainLife(Elements.drain, 2.d6());
-        });
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6());
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
-        {
-          K.SetCast().Strike(Strikes.spirit, Dice.One);
-          K.Apply.DrainLife(Elements.drain, 2.d6());
-        });
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, 1.d12());
-        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
-        {
-          K.SetCast().Strike(Strikes.spirit, Dice.One);
-          K.Apply.DrainLife(Elements.drain, 2.d6());
-        });
-        E.SetCorpse(Chance.Never);
-      });
-
       vampire = AddEntity(Kinds.vampire, null, "vampire", E =>
       {
         E.Glyph = Glyphs.vampire;
@@ -31616,6 +31510,126 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d8());
+        });
+        E.SetCorpse(Chance.Never);
+      });
+
+      // TODO: fire vampire and star vampire are Lovecraftian aliens that are not undead vampires - perhaps move to Kinds.flayer and rename to star/fire flayer? Or introduce a new one such as Kinds.alien?
+      fire_vampire = AddEntity(Kinds.vampire, null, "fire vampire", E =>
+      {
+        //E.Description = " A fire vampire is a powerful type of vampire that is not undead like other members of the monster class - it is instead an extraterrestrial being that is humanoid and infravisible, though it still shares the vampire's regeneration abilities and resistances, along with their weakness to silver.";
+        E.Glyph = Glyphs.fire_vampire;
+        E.Level = 24;
+        E.Challenge = 1185;
+        E.Difficulty = 30;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5
+        E.SetTerrain(Materials.air, Materials.fire);
+        E.SetDiet(Diets.hematophagy);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(20000);
+        E.Figure.Set
+        (
+          Material: Materials.fire,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(32, 1.d8());
+        E.ManaAdvancement.Set(32, 1.d4());
+        E.DefaultForm.Set(STR: 15, DEX: 20, CON: 16, INT: 11, WIS: 12, CHA: 11);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
+        E.Startup.AddGrimoire(Dice.One, Spells.fireball);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness);
+        E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
+        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
+        E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
+        E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.spirit, Dice.One);
+          K.Apply.DrainLife(Elements.drain, 2.d4());
+        });
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.magic, Dice.One);
+          K.Apply.DrainMana(Elements.drain, 2.d4());
+        });
+        E.AddAttack(AttackTypes.spell, Elements.fire, 6.d6());
+        E.SetCorpse(Chance.Never);
+      });
+
+      star_vampire = AddEntity(Kinds.vampire, null, "star vampire", E =>
+      {
+        //E.Description = "Star vampire are extraterrestrials that lack a specific shape and have a myriad of sucker tentacles. Though they also feed on blood, they are not to be confused with the usual undead vampires.";
+        E.Glyph = Glyphs.star_vampire;
+        E.Level = 28;
+        E.Challenge = 1020;
+        E.Difficulty = 33;
+        E.Frequency = 1;
+        E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
+        E.SetDiet(Diets.hematophagy);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(30000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(32, 1.d8());
+        E.ManaAdvancement.Set(32, 1.d4());
+        E.DefaultForm.Set(STR: 16, DEX: 18, CON: 18, INT: 11, WIS: 12, CHA: 10);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability(Materials.silver);
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6()); // +3
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.spirit, Dice.One);
+          K.Apply.DrainLife(Elements.drain, 2.d6());
+        });
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.spirit, Dice.One);
+          K.Apply.DrainLife(Elements.drain, 2.d6());
+        });
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, 1.d12());
+        E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>
+        {
+          K.SetCast().Strike(Strikes.spirit, Dice.One);
+          K.Apply.DrainLife(Elements.drain, 2.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -34228,6 +34242,7 @@ namespace Pathos
 
       gug = AddEntity(Kinds.zombie, null, "gug", E =>
       {
+        //E.Description = "Gugs are large, black-furred beasts with vertically-opening fanged jaws. Their two eyes protrude from either side of their head, and their limbs bifurcate at the elbows, giving them four separate forearms. They are worshippers of the Great Ones, the gods of Earth who reside in Kadath. Gugs are estimated to reach around sixteen feet in heights and weigh in at nearly 2,000 pounds.";
         E.Glyph = Glyphs.gug;
         E.Sonic = Sonics.groan;
         E.Level = 21;
