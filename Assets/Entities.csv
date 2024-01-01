@@ -88,17 +88,17 @@ demon,,Famine,,45,0,34,1311,medium,animal,12000,4.0,28,attack,UNIQUE,28,24,26,16
 demon,,Geryon,,72,0,36,5906,huge,animal,1400000,4.0,36,attack,UNIQUE,17,24,26,22,21,25
 demon,,hezrou,,28,2,31,1334,large,animal,30000,2.5,21,attack,,24,17,20,5,12,13
 demon,,horned devil,,29,2,32,1114,medium,animal,18000,2.5,24,attack,,22,17,21,12,16,17
+demon,,Huhetotl,,9,0,15,333,large,animal,14500,3.5,18,attack,UNIQUE,16,16,16,14,16,15
 demon,,ice devil,,11,2,14,296,large,animal,35000,2.5,22,attack,,21,14,18,18,15,18
 demon,,incubus,,13,2,15,220,medium,animal,18000,4.0,17,attack,,8,17,13,15,12,20
 demon,,Juiblex,,50,0,40,3135,large,animal,66600,2.0,23,attack,UNIQUE,22,18,26,8,14,7
 demon,,living wall,,10,1,12,82,gargantuan,animal,200000,0.5,20,attack,,26,6,16,1,1,1
 demon,,marilith,,28,1,35,1075,large,animal,60000,4.0,23,attack,,22,20,20,18,16,20
-demon,,Maugneshaagar,,54,0,40,1437,large,animal,21000,2.5,30,attack,UNIQUE,18,20,18,14,16,15
+demon,,Maugneshaagar,,9,0,15,333,large,animal,21000,3.5,18,attack,UNIQUE,20,16,18,14,16,15
 demon,,medusa,,32,1,34,1000,large,animal,24000,3.7,28,attack,,14,13,14,16,12,16
-demon,,Minion of Huhetotl,,51,0,40,1521,large,animal,14500,4.0,28,attack,UNIQUE,22,18,18,14,16,15
 demon,,nabassu,,20,1,25,723,large,animal,23000,5.0,21,attack,,14,18,15,15,14,14
 demon,,nalfeshnee,,31,1,35,1069,large,animal,30000,2.5,25,attack,,21,10,22,19,12,15
-demon,,Nalzok,,49,0,40,1621,large,animal,14500,4.0,26,attack,UNIQUE,18,18,18,14,16,15
+demon,,Nalzok,,9,0,15,333,large,animal,14500,3.5,18,attack,UNIQUE,18,18,18,14,16,15
 demon,,Orcus,,66,0,40,5177,huge,animal,600000,2.5,25,attack,UNIQUE,24,21,26,28,28,18
 demon,,Pestilence,,43,0,34,1311,medium,animal,11000,4.0,28,attack,UNIQUE,28,24,26,16,16,18
 demon,,pit fiend,,33,2,36,1421,large,animal,30000,2.5,23,attack,,26,14,24,22,18,24
@@ -318,7 +318,7 @@ human,human,Colonel Blood,,20,0,28,641,medium,animal,18000,4.5,13,attack,UNIQUE,
 human,human,Croesus,,20,0,22,626,medium,animal,18000,5.0,25,attack,UNIQUE,22,17,18,16,16,19
 human,human,dark cleric,,12,0,15,234,medium,animal,14000,5.0,24,attack,,18,12,18,12,22,16
 human,human,Dark Lord,,20,0,22,463,medium,animal,16000,5.0,20,attack,UNIQUE,14,18,18,16,15,15
-human,human,Dark One,,15,0,20,438,medium,animal,14000,4.5,20,attack,UNIQUE,14,18,16,15,17,15
+human,human,Deliarne,,15,0,20,438,medium,animal,14000,4.5,20,attack,UNIQUE,14,18,16,15,17,15
 human,human,Doctor Frankenstein,,20,0,23,510,medium,animal,14500,4.0,24,attack,UNIQUE,16,22,17,21,18,17
 human,human,genetic engineer,,11,1,12,199,medium,animal,14500,3.7,14,attack,,12,16,14,18,15,12
 human,human,guard,,12,0,14,212,medium,animal,14500,3.7,10,attack,,22,11,17,11,9,12
@@ -336,7 +336,7 @@ human,human,Lycaon,,20,0,22,458,medium,animal,18000,5.0,20,attack,UNIQUE,20,16,2
 human,human,Master Kaen,,25,0,31,995,medium,animal,14500,5.0,23,attack,UNIQUE,21,24,24,18,16,19
 human,human,merchant,,24,0,28,666,medium,animal,14500,5.0,24,attack,,20,15,16,17,14,20
 human,human,Metamorphius,,20,0,23,468,medium,animal,14500,4.5,17,attack,UNIQUE,15,16,16,21,22,19
-human,human,Neferet the Green,,20,0,23,493,medium,animal,14500,3.7,17,attack,UNIQUE,15,16,16,21,23,20
+human,human,Neferet,,20,0,23,493,medium,animal,14500,4.5,17,attack,UNIQUE,15,16,16,21,23,20
 human,human,Norn,,20,0,23,468,medium,animal,14500,3.7,17,attack,UNIQUE,22,16,16,18,20,21
 human,human,nurse,,11,3,13,190,medium,animal,12000,3.3,17,attack,,14,16,14,15,13,16
 human,human,Oracle,,12,0,13,226,medium,animal,12000,3.5,17,attack,UNIQUE,8,16,12,25,27,24
@@ -557,7 +557,7 @@ orc,orc,orc king,,21,1,22,626,medium,animal,19000,3.3,11,attack,,20,12,19,13,9,1
 orc,orc,orc shaman,,3,1,5,23,medium,animal,15000,3.0,13,attack,,14,15,13,12,12,8
 orc,orc,orc warrior,,12,1,14,641,medium,animal,17000,3.3,9,attack,,18,12,16,7,8,6
 orc,orc,snow orc,,11,1,13,183,medium,animal,16000,3.7,11,attack,,17,12,16,8,8,10
-orc,orc,war orc,,16,1,18,726,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
+orc,orc,war orc,,16,1,18,626,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
 plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,9000,4.0,10,attack,BASE,10,10,10,10,10,10
 pudding,,black pudding,,20,1,23,674,large,vegetable,9000,2.0,22,attack,,16,5,16,1,6,1
 pudding,,brown pudding,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",6,1,7,45,medium,vegetable,5000,2.0,15,attack,,14,5,14,1,5,1

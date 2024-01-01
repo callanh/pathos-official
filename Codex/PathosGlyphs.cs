@@ -91,6 +91,9 @@ namespace Pathos
       Register.Alias(green_mould, "green mold");
       Register.Alias(yellow_mould, "yellow mold");
       Register.Alias(gargoyle, "statue gargoyle");
+      Register.Alias(Deliarne, "Dark One");
+      Register.Alias(Huhetotl, "Minion of Huhetotl");
+      Register.Alias(Neferet, "Neferet the Green");
 
       // Items.
       Register.Alias(green_gem, "jade");
@@ -543,7 +546,7 @@ namespace Pathos
     public readonly Glyph dark_explosion_top_left;
     public readonly Glyph dark_explosion_top_right;
     public readonly Glyph Dark_Lord;
-    public readonly Glyph Dark_One;
+    public readonly Glyph Deliarne;
     public readonly Glyph dart;
     public readonly Glyph mithril_dart;
     public readonly Glyph poison_dart;
@@ -1505,7 +1508,7 @@ namespace Pathos
     public readonly Glyph migo_queen;
     public readonly Glyph migo_warrior;
     public readonly Glyph mind_flayer;
-    public readonly Glyph Minion_of_Huhetotl;
+    public readonly Glyph Huhetotl;
     public readonly Glyph minotaur;
     //public readonly Glyph mirror;
     public readonly Glyph mist_wolf;
@@ -1538,7 +1541,7 @@ namespace Pathos
     public readonly Glyph nazgul;
     public readonly Glyph neanderthal;
     public readonly Glyph occultist;
-    public readonly Glyph Neferet_the_Green;
+    public readonly Glyph Neferet;
     public readonly Glyph newt;
     public readonly Glyph nickelpede;
     public readonly Glyph nightgaunt;

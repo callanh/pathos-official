@@ -505,7 +505,26 @@ namespace Pathos
                     }
                 case 25:
                     {
-                        boss = SPDDebug.generator.NewCharacter(Square, SPDGameList.RandomUniqueBoss());
+                        var bossEntity = SPDGameList.RandomUniqueBoss();
+                        boss = SPDDebug.generator.NewCharacter(Square, bossEntity);
+
+                        if (bossEntity.Level <= 40)
+                        {
+                          // TODO: this is meant to be a static but randomish level boost (However, string.GetHashCode() is not actually deterministic across .NET versions and x86/x64!).
+                          var levelBoost = Math.Abs(bossEntity.Name.GetHashCode() % 10) + (bossEntity.Level / 10) + (bossEntity.Level % 10);
+                        
+                          if (bossEntity.Level < 10)
+                            levelBoost += 40;
+                          else if (bossEntity.Level < 20)
+                            levelBoost += 30;
+                          else if (bossEntity.Level < 30)
+                            levelBoost += 20;
+                          else if (bossEntity.Level <= 40)
+                            levelBoost += 10;
+                        
+                          SPDDebug.generator.PromoteCharacter(boss, levelBoost);
+                        }
+
                         SPDDebug.generator.OutfitCharacter(boss);
                         var boss25killedscript = boss.InsertScript();
                         boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 1]);

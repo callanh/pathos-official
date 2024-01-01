@@ -111,6 +111,11 @@ namespace Pathos
         A.ArriveEntity(Dice.One, Sonics.gas, new[] { Entities.gas_spore });
       });
 
+      living_dead = AddTrick("living dead", A =>
+      {
+        A.AnimateRevenants(Properties.rage);
+      });
+
       surrounding_horde = AddTrick("surrounding horde", A =>
       {
         A.CreateHorde(Dice.Fixed(1));
@@ -219,6 +224,7 @@ namespace Pathos
     public readonly Trick arriving_bats;
     public readonly Trick calling_guard;
     public readonly Trick leaking_gas;
+    public readonly Trick living_dead;
     public readonly Trick escaping_mummies;
     public readonly Trick emerging_blobs;
     public readonly Trick hatching_eggs;

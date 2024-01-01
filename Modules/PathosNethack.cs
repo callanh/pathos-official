@@ -4504,7 +4504,7 @@ namespace Pathos
             case 'D':
               // outside dragons.
               Generator.PlaceFloor(FortSquare, FortPathGround);
-              Generator.PlaceCharacter(FortSquare, E => E.Kind == Codex.Kinds.dragon);
+              Generator.PlaceCharacter(FortSquare, Codex.Kinds.dragon);
               FortSquare.SetLit(false);
               break;
 
@@ -4518,7 +4518,7 @@ namespace Pathos
             case 'o':
               // inside orcs.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare, E => E.Race == Codex.Races.orc);
+              Generator.PlaceCharacter(FortSquare, Codex.Races.orc);
               FortSquare.SetLit(true);
               break;
 
@@ -4543,6 +4543,8 @@ namespace Pathos
                 FortCharacter.SetResistance(Elements.fire, 100);
                 FortCharacter.SetResistance(Elements.sleep, 100);
                 FortCharacter.SetResistance(Elements.magical, 100);
+
+                Generator.AcquireUnique(FortSquare, FortCharacter, Codex.Qualifications.proficient);
               }
 
               FortLevel.SetTransitions(null, FortSquare);
@@ -4694,7 +4696,7 @@ namespace Pathos
             case 'D':
               // surprise dragon.
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
-              Generator.PlaceCharacter(CacheSquare, E => E.Kind.Name == "dragon");
+              Generator.PlaceCharacter(CacheSquare, Codex.Kinds.dragon);
               CacheSquare.SetLit(false);
               break;
 

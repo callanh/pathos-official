@@ -13,7 +13,7 @@ namespace Pathos
     internal CodexSanctities(Codex Codex)
       : base(Codex.Manifest.Sanctities)
     {
-      Sanctity AddSancity(int Factor, string Code, string Name, int Frequency, Inv.Colour LightColour, Inv.Colour DarkColour)
+      Sanctity AddSancity(int Factor, string Code, string Name, int Frequency, Inv.Colour SolidColour)
       {
         return Register.Add(S =>
         {
@@ -21,14 +21,14 @@ namespace Pathos
           S.Code = Code;
           S.Name = Name;
           S.Frequency = Frequency;
-          S.LightColour = LightColour;
-          S.DarkColour = DarkColour;
+          S.TintColour = SolidColour.Opacity(0.25F);
+          S.SolidColour = SolidColour;
         });
       }
 
-      Cursed = AddSancity(-1, "C", "cursed", Frequency: 5, Inv.Colour.Red, Inv.Colour.DarkRed);
-      Uncursed = AddSancity(0, "U", "uncursed", Frequency: 90, Inv.Colour.WhiteSmoke, Inv.Colour.DarkGray);
-      Blessed = AddSancity(+1, "B", "blessed", Frequency: 5, Inv.Colour.Blue, Inv.Colour.DodgerBlue);
+      Cursed = AddSancity(-1, "C", "cursed", Frequency: 5, Inv.Colour.Red);
+      Uncursed = AddSancity(0, "U", "uncursed", Frequency: 90, Inv.Colour.WhiteSmoke);
+      Blessed = AddSancity(+1, "B", "blessed", Frequency: 5, Inv.Colour.Blue);
 
       // TODO: ⒸⓊⒷ◯ ? They looks small and need a colour.
       // ⛨⛧⛉ ⒞⒝⒰

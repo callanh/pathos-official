@@ -60,7 +60,7 @@ namespace Pathos
               Entities.Archpriest_Avvakrum,
               Entities.Twoflower,
               Entities.Vecna,
-              Entities.Dark_One,
+              Entities.Deliarne,
               Entities.Guru_Quilion,
               Entities.Yeenoghu,
             };
