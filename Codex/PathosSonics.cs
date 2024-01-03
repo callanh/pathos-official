@@ -53,6 +53,8 @@ namespace Pathos
     public readonly Sonic clank;
     public readonly Sonic clunk;
     public readonly Sonic sling_shot;
+    public readonly Sonic bars_slamming;
+    public readonly Sonic bars_raising;
     public readonly Sonic broken_boulder;
     public readonly Sonic broken_barrel;
     public readonly Sonic broken_door;

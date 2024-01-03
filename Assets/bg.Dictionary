@@ -1035,7 +1035,6 @@ EffectType,destroy asset,уничтожает ценность
 EffectType,destroy wall,
 EffectType,detect,находит
 EffectType,devour asset,
-EffectType,digging,копает
 EffectType,disarm,
 EffectType,divine,духовно
 EffectType,drain life,вытягивает жизнь
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,ДИАГНОСТИКА
 LiteralText,DID NOT RANK,НЕ РАНЖИРУЕТСЯ
 LiteralText,diet,питание
 LiteralText,difficulty,
+LiteralText,digging,копает
 LiteralText,disable ambient sounds,
 LiteralText,Disable auto save on transition,
 LiteralText,Disable button tap sounds,
@@ -4389,6 +4389,8 @@ SonicName,amulet,амулет
 SonicName,arf,
 SonicName,armour,броню
 SonicName,baa,
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,колокольчик
 SonicName,birds,
 SonicName,bleat,

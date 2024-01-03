@@ -1035,7 +1035,6 @@ EffectType,destroy asset,destruir recurso
 EffectType,destroy wall,destruir muro
 EffectType,detect,detectar
 EffectType,devour asset,devorar recurso
-EffectType,digging,cavar
 EffectType,disarm,desarmar
 EffectType,divine,adivinar
 EffectType,drain life,drenar vida
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,DIAGNÓSTICO
 LiteralText,DID NOT RANK,NO OBTUVISTE RANGO
 LiteralText,diet,dieta
 LiteralText,difficulty,dificultad
+LiteralText,digging,cavar
 LiteralText,disable ambient sounds,Desactivar los sonidos ambientales
 LiteralText,Disable auto save on transition,deshabilitar guardado automático en transición
 LiteralText,Disable button tap sounds,Desactivar los sonidos de pulsar botones
@@ -4389,6 +4389,8 @@ SonicName,amulet,amuleto
 SonicName,arf,ladrido
 SonicName,armour,armadura
 SonicName,baa,bee
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,campana
 SonicName,birds,aves
 SonicName,bleat,balido

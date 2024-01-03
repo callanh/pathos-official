@@ -1035,7 +1035,6 @@ EffectType,destroy asset,ทำลายทรัพย์สิน
 EffectType,destroy wall,ทำลายกำแพง
 EffectType,detect,ตรวจสอบ
 EffectType,devour asset,กลืนกินทรัพย์สิน
-EffectType,digging,ขุด
 EffectType,disarm,ปลด
 EffectType,divine,ทำนาย
 EffectType,drain life,สูบพลังชีวิต
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,การวินิจฉัย
 LiteralText,DID NOT RANK,ไม่ขึ้นแรงค์
 LiteralText,diet,สิ่งที่กิน
 LiteralText,difficulty,ความยาก
+LiteralText,digging,ขุด
 LiteralText,disable ambient sounds,ปิดเสียงบรรยากาศ
 LiteralText,Disable auto save on transition,
 LiteralText,Disable button tap sounds,
@@ -4389,6 +4389,8 @@ SonicName,amulet,เครื่องราง
 SonicName,arf,
 SonicName,armour,เกราะ
 SonicName,baa,
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,ระฆัง
 SonicName,birds,นก
 SonicName,bleat,

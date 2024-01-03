@@ -1149,6 +1149,7 @@ namespace Pathos
       UsedSonicSet.AddRange(Manifest.Beams.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Strikes.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Engulfments.List.Select(E => E.Sonic).ExceptNull());
+      UsedSonicSet.AddRange(Manifest.Barriers.List.SelectMany(E => new[] { E.CreateSonic, E.DestroySonic }).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Devices.List.Select(E => E.TriggerSonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Features.List.Select(E => E.Sonic).ExceptNull());
       UsedSonicSet.AddRange(Manifest.Features.List.SelectMany(E => E.Uses.Select(U => U.Sonic)).ExceptNull());

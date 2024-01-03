@@ -1035,7 +1035,6 @@ EffectType,destroy asset,eszköz elpusztítása
 EffectType,destroy wall,fal elpusztítása
 EffectType,detect,észlelés
 EffectType,devour asset,eszköz felfalása
-EffectType,digging,ásás
 EffectType,disarm,lefegyverzés
 EffectType,divine,megfejtés
 EffectType,drain life,életelszívás
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,DIAGNOSZTIKA
 LiteralText,DID NOT RANK,NEM ÉRT EL HELYEZÉST ITT:
 LiteralText,diet,étrend
 LiteralText,difficulty,nehézség
+LiteralText,digging,ásás
 LiteralText,disable ambient sounds,Háttérhangok kikapcsolása
 LiteralText,Disable auto save on transition,Automatikus mentés kikapcsolása átvezetők közben
 LiteralText,Disable button tap sounds,Gombnyomás hangok kikapcsolása
@@ -4389,6 +4389,8 @@ SonicName,amulet,amulett
 SonicName,arf,
 SonicName,armour,páncél
 SonicName,baa,bégetés
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,csengő
 SonicName,birds,
 SonicName,bleat,mekegés

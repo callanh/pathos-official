@@ -14,7 +14,8 @@ namespace Pathos
     internal CodexBarriers(Codex Codex)
       : base(Codex.Manifest.Barriers)
     {
-      var Glyphs = Codex.Glyphs; 
+      var Glyphs = Codex.Glyphs;
+      var Sonics = Codex.Sonics;
       var Grounds = Codex.Grounds;
       var Materials = Codex.Materials;
       var Elements = Codex.Elements;
@@ -52,6 +53,8 @@ namespace Pathos
       iron_bars = AddBarrier("iron bars", Materials.iron, Grounds.stone_floor, Glyphs.iron_bars, Opaque: false, Rebound: false, B =>
       {
         B.Description = null;
+        B.CreateSonic = Sonics.bars_slamming;
+        B.DestroySonic = Sonics.bars_raising;
         B.AddReaction(Chance.Always, Elements.fire, A => A.RemoveWall(WallStructure.Solid, iron_bars));
         B.AddReaction(Chance.Always, Elements.cold, A => A.RemoveWall(WallStructure.Solid, iron_bars));
         B.AddReaction(Chance.Always, Elements.shock, A => A.RemoveWall(WallStructure.Solid, iron_bars));

@@ -1035,7 +1035,6 @@ EffectType,destroy asset,アイテムを破壊
 EffectType,destroy wall,壁を破壊
 EffectType,detect,探知
 EffectType,devour asset,アイテムをむさぼり喰う
-EffectType,digging,掘削
 EffectType,disarm,武器を落とさせる
 EffectType,divine,判別
 EffectType,drain life,ライフ吸収
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,詳細設定/ファイル管理
 LiteralText,DID NOT RANK,ランク入りしていません
 LiteralText,diet,食性
 LiteralText,difficulty,困難
+LiteralText,digging,掘削
 LiteralText,disable ambient sounds,環境音を無効にする
 LiteralText,Disable auto save on transition,階層移動時のオートセーブを無効にする
 LiteralText,Disable button tap sounds,ボタンタップ音を無効にする
@@ -4389,6 +4389,8 @@ SonicName,amulet,お守り
 SonicName,arf,オゥッオゥッ
 SonicName,armour,防具
 SonicName,baa,ベェー
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,ベル
 SonicName,birds,さえずり
 SonicName,bleat,メェー

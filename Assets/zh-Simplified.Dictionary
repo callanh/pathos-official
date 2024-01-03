@@ -1035,7 +1035,6 @@ EffectType,destroy asset,摧毁物件
 EffectType,destroy wall,摧毁墙壁
 EffectType,detect,侦测
 EffectType,devour asset,吞食物品
-EffectType,digging,挖掘
 EffectType,disarm,缴械
 EffectType,divine,检测祝福/诅咒
 EffectType,drain life,吸取生命
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,调试
 LiteralText,DID NOT RANK,未录入
 LiteralText,diet,食性
 LiteralText,difficulty,难度
+LiteralText,digging,挖掘
 LiteralText,disable ambient sounds,关闭环境音效
 LiteralText,Disable auto save on transition,关闭楼层转换时自动保存
 LiteralText,Disable button tap sounds,关闭按钮音效
@@ -4389,6 +4389,8 @@ SonicName,amulet,护符
 SonicName,arf,海豹叫
 SonicName,armour,装甲
 SonicName,baa,嚎叫
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,响铃铛
 SonicName,birds,鸟叫
 SonicName,bleat,咩咩地叫

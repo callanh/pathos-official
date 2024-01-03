@@ -1035,7 +1035,6 @@ EffectType,destroy asset,phá hủy vật
 EffectType,destroy wall,phá hủy tường
 EffectType,detect,phát hiện
 EffectType,devour asset,nuốt vật
-EffectType,digging,đào
 EffectType,disarm,tước vũ khí
 EffectType,divine,thần thánh
 EffectType,drain life,hút sinh lực
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,BỘ CHẨN ĐOÁN
 LiteralText,DID NOT RANK,KHÔNG XẾP HẠNG
 LiteralText,diet,chế độ ăn
 LiteralText,difficulty,độ khó
+LiteralText,digging,đào
 LiteralText,disable ambient sounds,tắt âm thanh từ môi trường
 LiteralText,Disable auto save on transition,tắt tự động lưu khi chuyển màn
 LiteralText,Disable button tap sounds,tắt âm chạm nút
@@ -4389,6 +4389,8 @@ SonicName,amulet,đeo bùa phép
 SonicName,arf,arf
 SonicName,armour,mặc giáp
 SonicName,baa,cừu kêu
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,chuông kêu
 SonicName,birds,chim kêu
 SonicName,bleat,dê non kêu

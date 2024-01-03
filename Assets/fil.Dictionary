@@ -1035,7 +1035,6 @@ EffectType,destroy asset,pagkasira ng asset
 EffectType,destroy wall,
 EffectType,detect,pag-detect
 EffectType,devour asset,pagkonsumo ng asset
-EffectType,digging,paghuhukay
 EffectType,disarm,pag-disarm
 EffectType,divine,pag-divine
 EffectType,drain life,pag-drain ng life
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,
 LiteralText,DID NOT RANK,
 LiteralText,diet,
 LiteralText,difficulty,
+LiteralText,digging,paghuhukay
 LiteralText,disable ambient sounds,
 LiteralText,Disable auto save on transition,
 LiteralText,Disable button tap sounds,
@@ -4389,6 +4389,8 @@ SonicName,amulet,
 SonicName,arf,
 SonicName,armour,
 SonicName,baa,
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,
 SonicName,birds,
 SonicName,bleat,

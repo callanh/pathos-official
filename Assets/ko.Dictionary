@@ -1035,7 +1035,6 @@ EffectType,destroy asset,아이템 파괴
 EffectType,destroy wall,벽 파괴
 EffectType,detect,감지
 EffectType,devour asset,재산 몰수
-EffectType,digging,굴착
 EffectType,disarm,무장해제
 EffectType,divine,점술
 EffectType,drain life,체력 흡수
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,진단 도구
 LiteralText,DID NOT RANK,순위 안에 들지 못함
 LiteralText,diet,식성
 LiteralText,difficulty,난이도
+LiteralText,digging,굴착
 LiteralText,disable ambient sounds,앰비언트 사운드 비활성화
 LiteralText,Disable auto save on transition,층 이동시 자동 저장 비활성화
 LiteralText,Disable button tap sounds,버튼 탭 음향 비활성화
@@ -4389,6 +4389,8 @@ SonicName,amulet,아뮬렛
 SonicName,arf,멍멍
 SonicName,armour,방어구
 SonicName,baa,메에
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,종 소리
 SonicName,birds,새
 SonicName,bleat,음메에에

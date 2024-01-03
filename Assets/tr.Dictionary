@@ -1035,7 +1035,6 @@ EffectType,destroy asset,varlığı yoket
 EffectType,destroy wall,duvarı yok et
 EffectType,detect,sapta
 EffectType,devour asset,varlık yiyip bitir
-EffectType,digging,kazmak
 EffectType,disarm,silahsızlaştır
 EffectType,divine,ilahileştir
 EffectType,drain life,can em
@@ -3292,6 +3291,7 @@ LiteralText,DIAGNOSTICS,TEŞHİS
 LiteralText,DID NOT RANK,SIRAYA ALINMADI
 LiteralText,diet,diyet
 LiteralText,difficulty,zorluk
+LiteralText,digging,kazmak
 LiteralText,disable ambient sounds,ambians sesini kapat
 LiteralText,Disable auto save on transition,etkileşime geçince otomatik kaydetmeyi kapat
 LiteralText,Disable button tap sounds,buton seslerini kapat
@@ -4389,6 +4389,8 @@ SonicName,amulet,tılsım
 SonicName,arf,
 SonicName,armour,zırh
 SonicName,baa,baa
+SonicName,bars raising,
+SonicName,bars slamming,
 SonicName,bell,çan
 SonicName,birds,
 SonicName,bleat,meleme
