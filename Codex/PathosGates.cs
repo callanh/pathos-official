@@ -69,6 +69,24 @@ namespace Pathos
         G.SetWeakness(GateWeakness);
       });
 
+      iron_door = AddGate("iron door", Materials.iron, G =>
+      {
+        G.OpenHorizontalGlyph = Glyphs.iron_door_open_horizontal;
+        G.OpenVerticalGlyph = Glyphs.iron_door_open_vertical;
+        G.ClosedHorizontalGlyph = Glyphs.iron_door_closed_horizontal;
+        G.ClosedVerticalGlyph = Glyphs.iron_door_closed_vertical;
+        G.BrokenGlyph = Glyphs.iron_door_broken;
+        G.LockedHorizontalGlyph = Glyphs.iron_door_locked_horizontal;
+        G.LockedVerticalGlyph = Glyphs.iron_door_locked_vertical;
+        G.TrappedHorizontalGlyph = Glyphs.iron_door_trapped_horizontal;
+        G.TrappedVerticalGlyph = Glyphs.iron_door_trapped_vertical;
+        G.OpenSonic = Sonics.open_door;
+        G.CloseSonic = Sonics.close_door;
+        G.BreakSonic = Sonics.broken_door;
+        G.DefaultSecretBarrier = Codex.Barriers.iron_bars;
+        G.SetWeakness(GateWeakness);
+      });
+
       wooden_door = AddGate("wooden door", Materials.wood, G =>
       {
         G.OpenHorizontalGlyph = Glyphs.wooden_door_open_horizontal;
@@ -91,6 +109,7 @@ namespace Pathos
 
     public readonly Gate gold_door;
     public readonly Gate crystal_door;
+    public readonly Gate iron_door;
     public readonly Gate wooden_door;
   }
 }

@@ -617,6 +617,9 @@ namespace Pathos
         if (Entity.Imitation && !Entity.Figure.Has(Codex.Anatomies.voice))
           Record($"Entity {Entity.Name} has imitation so it must have a voice.");
 
+        if (Entity.IsUnique && Entity.Genders.Count != 1)
+          Record($"Entity {Entity.Name} is unique so they must have exactly one gender.");
+
         if (Entity.IsUnique && !Entity.Startup.Resistances.Contains(Codex.Elements.magical))
           Record($"Entity {Entity.Name} must have magic resistance when it is marked as unique.");
 

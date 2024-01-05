@@ -286,6 +286,15 @@ namespace Pathos
     public readonly Glyph barlgura;
     public readonly Glyph barrow_wight;
     public readonly Glyph iron_bars;
+    public readonly Glyph iron_door_broken;
+    public readonly Glyph iron_door_closed_horizontal;
+    public readonly Glyph iron_door_closed_vertical;
+    public readonly Glyph iron_door_open_horizontal;
+    public readonly Glyph iron_door_open_vertical;
+    public readonly Glyph iron_door_locked_horizontal;
+    public readonly Glyph iron_door_locked_vertical;
+    public readonly Glyph iron_door_trapped_horizontal;
+    public readonly Glyph iron_door_trapped_vertical;
     public readonly Glyph iron_ration;
     public readonly Glyph basilisk;
     public readonly Glyph bat;

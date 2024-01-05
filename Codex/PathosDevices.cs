@@ -70,7 +70,7 @@ namespace Pathos
         D.Strike = Strikes.shriek;
         D.Material = Materials.iron;
         D.TriggerApply.Alert(Dice.Fixed(20));
-        D.TriggerApply.CreateHorde(Dice.One);
+        D.TriggerApply.CreateRandomHorde(Dice.One);
       });
 
       amnesia_trap = AddDevice("amnesia trap", Difficulty: 13, RepeatDice: Dice.One, Glyphs.amnesia_trap, Sonics.magic, D =>
@@ -227,7 +227,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.CreateHorde(Dice.One);
+            A.CreateRandomHorde(Dice.One);
           });
           Table.Add(1, A =>
           {

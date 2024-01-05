@@ -818,12 +818,12 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.CreateHorde(Dice.One);
+                    A.CreateRandomHorde(Dice.One);
                     A.AreaTransient(Properties.slowness, 4.d10());
                   });
                   Table.Add(10, A =>
                   {
-                    A.CreateHorde(Dice.One);
+                    A.CreateRandomHorde(Dice.One);
                     A.AreaTransient(Properties.quickness, 4.d10());
                   });
                   Table.Add(10, A => A.TeleportInventoryAsset());
@@ -850,7 +850,7 @@ namespace Pathos
                   Table.Add(10, A =>
                   {
                     A.ApplyTransient(Properties.petrifying, 3.d6());
-                    A.CreateHorde(Dice.One);
+                    A.CreateRandomHorde(Dice.One);
                     A.AreaTransient(Properties.rage, 10.d10());
                   });
                   Table.Add(10, A =>
@@ -866,7 +866,7 @@ namespace Pathos
                   Table.Add(10, A =>
                   {
                     A.CreateBoulder(2.d3());
-                    A.CreateHorde(Dice.One);
+                    A.CreateRandomHorde(Dice.One);
                   });
                   Table.Add(10, A =>
                   {
@@ -9458,7 +9458,7 @@ namespace Pathos
         {
           Use.Consume();
           Use.Apply.TeleportCharacter(Properties.teleportation);
-          Use.Apply.CreateHorde(1.d3() + 3);
+          Use.Apply.CreateRandomHorde(1.d3() + 3);
         });
         I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(20), Sonics.tool);
       });
@@ -11175,9 +11175,9 @@ namespace Pathos
              .SetTerminates();
           Use.Apply.WithSourceSanctity
           (
-            B => B.CreateHorde(Dice.One),
-            U => U.CreateHorde(1.d2()),
-            C => C.CreateHorde(1.d2() + 1)
+            B => B.CreateRandomHorde(Dice.One),
+            U => U.CreateRandomHorde(1.d2()),
+            C => C.CreateRandomHorde(1.d2() + 1)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>

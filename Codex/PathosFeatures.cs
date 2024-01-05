@@ -58,9 +58,9 @@ namespace Pathos
         F.DestroyStrike = Strikes.holy;
         F.DestroyApply.Harm(Elements.shock, 6.d6() + 6);
         F.DestroyApply.BreakFixture(altar);
-        F.DestroyApply.CreateHorde(Dice.One, Hordes.jackal);
-        F.DestroyApply.CreateHorde(Dice.One, Hordes.hell_hound);
-        F.DestroyApply.CreateHorde(Dice.One, Hordes.demon);
+        F.DestroyApply.CreateSpecificHorde(Dice.One, Hordes.jackal);
+        F.DestroyApply.CreateSpecificHorde(Dice.One, Hordes.hell_hound);
+        F.DestroyApply.CreateSpecificHorde(Dice.One, Hordes.demon);
 
         var DivineUse = F.AddUse(Codex.Motions.divine, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
         DivineUse.SetCast().FilterDivined(false);
@@ -166,7 +166,7 @@ namespace Pathos
         {
           Table.Add(50, A => { });
           Table.Add(10, A => A.CreateAsset(Dice.One, Stocks.gem));
-          Table.Add(10, A => A.CreateHorde(Dice.One, Hordes.water_moccasin));
+          Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.water_moccasin));
           Table.Add(5, A => A.ConvertFixture(fountain, Devices.water_trap)); // destroy 5%
           Table.Add(5, A => A.BreakFixture(fountain)); // destroy 5%
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.water_demon));
@@ -218,7 +218,7 @@ namespace Pathos
           {
             Table.Add(78, A => A.Nothing());
             Table.Add(10, A => A.ConvertFixture(fountain, Devices.water_trap)); // destroy 10%
-            Table.Add(10, A => A.CreateHorde(Dice.One, Hordes.water_moccasin));
+            Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.water_moccasin));
             Table.Add(1, A => A.CreateEntity(Dice.One, Entities.water_demon));
             Table.Add(1, A => A.CreateEntity(Dice.One, Entities.water_nymph));
           });
@@ -303,7 +303,7 @@ namespace Pathos
         {
           Table.Add(50, A => { });
           Table.Add(10, A => A.CreateEntity(Dice.One, Kinds.Undead.ToArray()));
-          Table.Add(10, A => A.CreateHorde(Dice.One, Hordes.spider));
+          Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.spider));
           Table.Add(10, A => A.ConvertFixture(pentagram, Devices.fire_trap));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.efreeti));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.succubus));
@@ -424,13 +424,13 @@ namespace Pathos
         /*11*/Workbench.AddAccident(Codex.Explosions.dark, A => 
         {
           A.Light(false, Locality.Area);
-          A.CreateHorde(Dice.One, Targeted: true);
+          A.CreateRandomHorde(Dice.One, Targeted: true);
         });
         /*12*/Workbench.AddAccident(Codex.Explosions.light, A => 
         {
           A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 4.d100());
-          A.CreateHorde(Dice.One, Targeted: true);
+          A.CreateRandomHorde(Dice.One, Targeted: true);
         });
         /*13*/Workbench.AddAccident(Codex.Explosions.watery, A => 
         {

@@ -9831,7 +9831,7 @@ namespace Pathos
         E.ManaAdvancement.Set(30, 15.d2());
         E.DefaultForm.Set(STR: 26, DEX: 12, CON: 24, INT: 10, WIS: 11, CHA: 11);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.male, Genders.female);
+        E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour, Skills.evocation, Skills.enchantment, Skills.necromancy, Skills.abjuration, Skills.clerical, Skills.conjuration, Skills.transmutation, Skills.literacy);
@@ -16452,9 +16452,9 @@ namespace Pathos
       Croesus = AddUniqueEntity(Kinds.human, Races.human, "Croesus", E =>
       {
         E.Glyph = Glyphs.Croesus;
-        E.Level = 20;
-        E.Challenge = 626;
-        E.Difficulty = 22;
+        E.Level = 30;
+        E.Challenge = 2626;
+        E.Difficulty = 35;
         E.Frequency = 0;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -16480,14 +16480,19 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 22, DEX: 17, CON: 18, INT: 16, WIS: 16, CHA: 19);
+        E.DefaultForm.Set(STR: 22, DEX: 17, CON: 18, INT: 16, WIS: 16, CHA: 26);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.locks, Skills.traps);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
+        E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
+        {
+          A.SetCast().Strike(Strikes.holy, Dice.Fixed(8));
+          A.Apply.SummonEntity(Dice.One, guard);
+        });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d11()); // +6 from str.
         E.SetCorpse(Chance.Always);
       });
@@ -17233,13 +17238,13 @@ namespace Pathos
       Assassin_Mortimer = AddUniqueEntity(Kinds.human, Races.human, "Assassin Mortimer", E =>
       {
         E.Glyph = Glyphs.Assassin_Mortimer;
-        E.Level = 15;
-        E.Challenge = 443;
-        E.Difficulty = 20;
+        E.Level = 30;
+        E.Challenge = 2443;
+        E.Difficulty = 40;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +8 from dex.
+        E.Defence = new Defence(D: 32, P: +0, S: +0, B: +0); // +8 from dex.
         E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S6_0;
+        E.Speed = Speed.S5_3;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(13000);
@@ -17263,19 +17268,21 @@ namespace Pathos
         E.ManaAdvancement.Set(1.d4());
         E.DefaultForm.Set(STR: 15, DEX: 26, CON: 15, INT: 18, WIS: 17, CHA: 20);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.male, Genders.female);
+        E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
-        E.Startup.SetResistance(Elements.petrify, Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5(), K =>
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleportation, Properties.teleport_control, Properties.slippery, Properties.free_action, Properties.invisibility, Properties.stealth, Properties.phasing);
+        E.Startup.SetResistance(Elements.petrify, Elements.magical, Elements.poison);
+        E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, GoodCloakItemArray);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5(), K =>
+        {
+          K.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.poisoning));
+        });
         E.SetCorpse(Chance.Always);
       });
 
@@ -31281,9 +31288,9 @@ namespace Pathos
       Count_Dracula = AddUniqueEntity(Kinds.vampire, null, "Count Dracula", E =>
       {
         E.Glyph = Glyphs.Count_Dracula;
-        E.Level = 25;
-        E.Challenge = 1244;
-        E.Difficulty = 30;
+        E.Level = 18;
+        E.Challenge = 544;
+        E.Difficulty = 22;
         E.Frequency = 0;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +5
         E.SetDiet(Diets.hematophagy);
@@ -31315,14 +31322,14 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control, Properties.stealth);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d9());
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d9()); // +3
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9()); // +3
         E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, Dice.One);
-          K.Apply.DrainLife(Elements.drain, 2.d6());
+          K.Apply.DrainLife(Elements.drain, 3.d6());
         });
         E.SetCorpse(Chance.Never);
       });

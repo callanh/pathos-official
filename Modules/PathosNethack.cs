@@ -111,7 +111,6 @@ namespace Pathos
       AttractionProbability.Add(4, new Attraction(AttractionType.Attic));
       AttractionProbability.Add(3, new Attraction(AttractionType.Maze));
       AttractionProbability.Add(2, new Attraction(AttractionType.Zoo));
-      //AttractionProbability.Add(2, new Attraction(AttractionType.Flood));
     }
 
     public void Create()
@@ -203,14 +202,14 @@ namespace Pathos
 
         Level Level;
         DungeonPlan Plan;
+        DungeonStructure Structure;
 
         if (LevelIndex < CavernLevels)
         {
           Level = Site.AddLevel(LevelIndex, Site.World.AddMap(LevelName, CastleWidth, CastleHeight));
           Level.Map.SetDifficulty(LevelIndex);
 
-          CreateCastleLevel(Level);
-
+          Structure = CreateCastleLevel(Level);
           Plan = CastlePlan;
         }
         else if (LevelIndex < NetherLevels)
@@ -218,8 +217,7 @@ namespace Pathos
           Level = Site.AddLevel(LevelIndex, Site.World.AddMap(LevelName, CavernWidth, CavernHeight));
           Level.Map.SetDifficulty(LevelIndex);
 
-          CreateCavernLevel(Level);
-
+          Structure = CreateCavernLevel(Level);
           Plan = CavernPlan;
         }
         else if (LevelIndex < FinaleLevel)
@@ -227,8 +225,7 @@ namespace Pathos
           Level = Site.AddLevel(LevelIndex, Site.World.AddMap(LevelName, NetherWidth, NetherHeight));
           Level.Map.SetDifficulty(LevelIndex);
 
-          CreateNetherLevel(Level);
-
+          Structure = CreateNetherLevel(Level);
           Plan = NetherPlan;
         }
         else
@@ -236,12 +233,11 @@ namespace Pathos
           Level = Site.AddLevel(LevelIndex, Site.World.AddMap(LevelName, FinaleWidth, FinaleHeight));
           Level.Map.SetDifficulty(LevelIndex);
 
-          CreateFinaleLevel(Level);
-
+          Structure = CreateFinaleLevel(Level);
           Plan = NetherPlan;
         }
 
-        var RoomList = Level.Map.Rooms.Where(R => !R.Isolated && R.GetFloorSquares().Any(Generator.CanPlacePortal)).ToDistinctList();
+        var RoomList = Structure.Rooms.Where(R => !R.Isolated && R.GetFloorSquares().Any(Generator.CanPlacePortal)).ToDistinctList();
 
         var UpRoom = RoomList.GetRandomOrNull();
 
@@ -287,7 +283,7 @@ namespace Pathos
       }
     }
 
-    private void CreateCastleLevel(Level CastleLevel)
+    private DungeonStructure CreateCastleLevel(Level CastleLevel)
     {
       var CastleBlock = Codex.Blocks.stone_boulder;
       var CastleBarrier = Codex.Barriers.stone_wall;
@@ -297,6 +293,8 @@ namespace Pathos
 
       var CastleMap = CastleLevel.Map;
       CastleMap.SetAtmosphere(Codex.Atmospheres.dungeon);
+
+      var CastleStructure = new DungeonStructure(CastleMap);
 
       const int BoxSize = 10;
       var BoxWidth = CastleMap.Region.Width / BoxSize;
@@ -325,7 +323,7 @@ namespace Pathos
       Debug.WriteLine($"Castle {CastleLevel.Index} Attraction: {Attraction}");
 
       // Rooms.
-      var RoomGrid = new Inv.Grid<Room>(BoxWidth, BoxHeight);
+      var RoomGrid = new Inv.Grid<DungeonRoom>(BoxWidth, BoxHeight);
       var BoxTop = 0;
 
       for (var BoxY = 0; BoxY < BoxHeight; BoxY++)
@@ -360,7 +358,7 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, VaultRegion);
 
-                var VaultRoom = CastleMap.AddRoom(VaultRegion, Isolated: true);
+                var VaultRoom = CastleStructure.AddRoom(VaultRegion, Isolated: true);
                 if (VaultRoom.Map.Level.Index != FortIndex || !CreateFortLudiosBranch(VaultRoom))
                   CreateVaultRoom(VaultZone, VaultRoom);
                 RoomGrid[BoxX, BoxY] = null; // we do not want corridors.
@@ -371,8 +369,21 @@ namespace Pathos
 
                 var MazeRegion = new Region(BoxLeft + 1, BoxTop + 1, BoxLeft + BoxSize - 1, BoxTop + BoxSize - 1);
 
-                var MazeRoom = CastleMap.AddRoom(MazeRegion, Isolated: true);
-                CreateMazeRoom(MazeRoom, CastleBarrier);
+                var MazeRoom = CastleStructure.AddRoom(MazeRegion, Isolated: true);
+
+                // fill with solid walls.
+                RegionFill(CastleMap, MazeRegion, S => Generator.PlaceSolidWall(S, CastleBarrier, WallSegment.Cross));
+
+                // dig out the paths.
+                CreateMazePaths(CastleMap, MazeRegion);
+
+                // NOTE: don't generate boulders in the maze as they could obstruct the corridor doors that get placed later on.
+                CreateMazeDetails(CastleStructure, CastleMap, Block: null, MazeRegion, Math.Max(MazeRoom.Region.Width, MazeRoom.Region.Height) / 2);
+
+                // repair void squares and wall segments.
+                Generator.RepairVoid(CastleMap, MazeRegion);
+                Generator.RepairWalls(CastleMap, MazeRegion);
+
                 RoomGrid[BoxX, BoxY] = MazeRoom;
                 MazeRoom.SetLit(false); // always dark maze.
                 break;
@@ -394,7 +405,7 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, ZooRegion);
 
-                var ZooRoom = CastleMap.AddRoom(ZooRegion, Isolated: true);
+                var ZooRoom = CastleStructure.AddRoom(ZooRegion, Isolated: true);
                 CreateZooRoom(ZooZone, ZooRoom, Zoo: null);
                 RoomGrid[BoxX, BoxY] = ZooRoom;
                 break;
@@ -412,7 +423,7 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, AtticRegion);
 
-                var AtticRoom = CastleMap.AddRoom(AtticRegion, Isolated: true);
+                var AtticRoom = CastleStructure.AddRoom(AtticRegion, Isolated: true);
                 if (AtticRoom.Map.Level.Index != ChambersIndex || !CreateLostChambersBranch(AtticRoom))
                   CreateAtticRoom(AtticRoom, CastleBarrier, CastleRoomGround);
                 RoomGrid[BoxX, BoxY] = AtticRoom;
@@ -432,7 +443,7 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, ShopRegion);
 
-                var ShopRoom = CastleMap.AddRoom(ShopRegion, Isolated: true);
+                var ShopRoom = CastleStructure.AddRoom(ShopRegion, Isolated: true);
                 CreateShopRoom(ShopZone, ShopRoom, Shop: null); // allow creating a bazaar.
                 RoomGrid[BoxX, BoxY] = ShopRoom;
                 break;
@@ -451,28 +462,9 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, ShrineRegion);
 
-                var ShrineRoom = CastleMap.AddRoom(ShrineRegion, Isolated: true);
+                var ShrineRoom = CastleStructure.AddRoom(ShrineRegion, Isolated: true);
                 CreateShrineRoom(ShrineZone, ShrineRoom, Shrine: null);
                 RoomGrid[BoxX, BoxY] = ShrineRoom;
-                break;
-
-              case AttractionType.Flood:
-                var FloodRoomSize = 1.d(BoxSize - 6) + 5;
-                var FloodWidth = FloodRoomSize.Roll();
-                var FloodHeight = FloodRoomSize.Roll();
-                var FloodLeft = BoxLeft + 1.d(BoxSize - FloodWidth).Roll();
-                var FloodTop = BoxTop + 1.d(BoxSize - FloodHeight).Roll();
-                var FloodRegion = new Region(FloodLeft, FloodTop, FloodLeft + FloodWidth - 1, FloodTop + FloodHeight - 1);
-
-                var FloodZone = CastleMap.AddZone();
-                FloodZone.AddRegion(FloodRegion);
-                FloodZone.SetLit(false); // flooded rooms are always dark because the light sources extinguished.
-
-                Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, FloodRegion);
-
-                var FloodRoom = CastleMap.AddRoom(FloodRegion, Isolated: true);
-                CreateFloodRoom(FloodRoom);
-                RoomGrid[BoxX, BoxY] = FloodRoom;
                 break;
 
               case AttractionType.Prison:
@@ -490,7 +482,7 @@ namespace Pathos
 
                 Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, PrisonRegion);
 
-                var PrisonRoom = CastleMap.AddRoom(PrisonRegion, Isolated: true);
+                var PrisonRoom = CastleStructure.AddRoom(PrisonRegion, Isolated: true);
                 CreatePrisonRoom(PrisonZone, PrisonRoom);
 
                 RoomGrid[BoxX, BoxY] = null; // no corridors.
@@ -515,7 +507,7 @@ namespace Pathos
 
             Generator.PlaceRoom(CastleMap, CastleBarrier, CastleRoomGround, OrdinaryRegion);
 
-            var OrdinaryRoom = CastleMap.AddRoom(OrdinaryRegion, Isolated: false);
+            var OrdinaryRoom = CastleStructure.AddRoom(OrdinaryRegion, Isolated: false);
 
             RoomGrid[BoxX, BoxY] = OrdinaryRoom;
 
@@ -553,9 +545,9 @@ namespace Pathos
                 Generator.PlaceFloor(EndSquare, CastleRoomGround);
                 Generator.PlaceVerticalDoor(EndSquare, CastleGate, CastleBarrier);
 
-                var StartCorridor = StartRoom.AddCorridor(CastleMap[StartSquare.X + 1, StartSquare.Y]);
-                var EndCorridor = EndRoom.AddCorridor(CastleMap[EndSquare.X - 1, EndSquare.Y]);
-                Generator.JoinCorridor(CastleMap, CastleCorridorGround, StartCorridor, EndCorridor);
+                var StartCorridor = new DungeonCorridor(StartRoom, CastleMap[StartSquare.X + 1, StartSquare.Y]);
+                var EndCorridor = new DungeonCorridor(EndRoom, CastleMap[EndSquare.X - 1, EndSquare.Y]);
+                JoinCorridor(CastleMap, CastleCorridorGround, StartCorridor, EndCorridor);
 
                 if (Attraction == AttractionType.Zoo)
                 {
@@ -583,10 +575,10 @@ namespace Pathos
                 Generator.PlaceFloor(EndSquare, CastleRoomGround);
                 Generator.PlaceHorizontalDoor(EndSquare, CastleGate, CastleBarrier);
 
-                var StartCorridor = StartRoom.AddCorridor(CastleMap[StartSquare.X, StartSquare.Y + 1]);
-                var EndCorridor = EndRoom.AddCorridor(CastleMap[EndSquare.X, EndSquare.Y - 1]);
+                var StartCorridor = new DungeonCorridor(StartRoom, CastleMap[StartSquare.X, StartSquare.Y + 1]);
+                var EndCorridor = new DungeonCorridor(EndRoom, CastleMap[EndSquare.X, EndSquare.Y - 1]);
 
-                Generator.JoinCorridor(CastleMap, CastleCorridorGround, StartCorridor, EndCorridor);
+                JoinCorridor(CastleMap, CastleCorridorGround, StartCorridor, EndCorridor);
 
                 if (Attraction == AttractionType.Zoo)
                 {
@@ -603,13 +595,39 @@ namespace Pathos
 
       // possible mines branch.
       if (CastleLevel.Index == MinesIndex)
-        CreateMinesBranch(CastleLevel);
+        CreateMinesBranch(CastleLevel, CastleStructure);
       else if (CastleLevel.Index == LabyrinthIndex)
-        CreateLabyrinthBranch(CastleLevel);
+        CreateLabyrinthBranch(CastleLevel, CastleStructure);
 
-      // nooks.
-      CreateCastleNooks(CastleMap);
+      // castle nooks.
+      foreach (var Room in CastleStructure.Rooms.Where(R => !R.Isolated))
+      {
+        if (Room.Region.Left > 0)
+        {
+          for (var Y = Room.Region.Top + 1; Y < Room.Region.Bottom; Y++)
+            CreateCastleNook(CastleMap[Room.Region.Left, Y], CastleMap[Room.Region.Left - 1, Y]);
+        }
 
+        if (Room.Region.Right < CastleMap.Region.Right)
+        {
+          for (var Y = Room.Region.Top + 1; Y < Room.Region.Bottom; Y++)
+            CreateCastleNook(CastleMap[Room.Region.Right, Y], CastleMap[Room.Region.Right + 1, Y]);
+        }
+
+        if (Room.Region.Top > 0)
+        {
+          for (var X = Room.Region.Left + 1; X < Room.Region.Right; X++)
+            CreateCastleNook(CastleMap[X, Room.Region.Top], CastleMap[X, Room.Region.Top - 1]);
+        }
+
+        if (Room.Region.Bottom < CastleMap.Region.Bottom)
+        {
+          for (var X = Room.Region.Left + 1; X < Room.Region.Right; X++)
+            CreateCastleNook(CastleMap[X, Room.Region.Bottom], CastleMap[X, Room.Region.Bottom + 1]);
+        }
+      }
+
+      // maze boss.
       if (Attraction == AttractionType.Maze)
       {
         var MazeRoom = RoomGrid[AttractionX, AttractionY];
@@ -620,30 +638,24 @@ namespace Pathos
         if (MazeSquare != null && (CastleLevel.Index != SokobanIndex || !CreateSokobanBranch(MazeSquare)))
           CreateMazeBoss(MazeSquare);
       }
-      else if (Attraction == AttractionType.Flood)
-      {
-        var FloodRoom = RoomGrid[AttractionX, AttractionY];
-
-        // TODO: connect the bridges.
-        foreach (var Corridor in FloodRoom.Corridors)
-          Generator.PlaceBridge(CastleMap[Corridor.Start.X, Corridor.Start.Y], Codex.Platforms.wooden_bridge, BridgeOrientation.Vertical);
-      }
 
       // Traps, gold and assets.
-      foreach (var Room in CastleMap.Rooms.Where(R => !R.Isolated))
+      foreach (var Room in CastleStructure.Rooms.Where(R => !R.Isolated))
       {
         var FloorSquareList = Room.GetFloorSquares().ToDistinctList();
 
         Generator.PlaceRoomFixtures(FloorSquareList);
 
-        CreateRoomDetails(CastleMap, CastleBlock, FloorSquareList);
+        CreateRoomDetails(CastleStructure, CastleMap, CastleBlock, FloorSquareList);
       }
 
       // NOTE: only required because the maze bosses sometimes have illusionary walls.
       Generator.RepairVoid(CastleMap, CastleMap.Region);
       Generator.RepairWalls(CastleMap, CastleMap.Region);
+
+      return CastleStructure;
     }
-    private void CreateCavernLevel(Level CavernLevel)
+    private DungeonStructure CreateCavernLevel(Level CavernLevel)
     {
       var CavernBlock = Codex.Blocks.clay_boulder;
       var CavernBarrier = Codex.Barriers.cave_wall;
@@ -664,9 +676,9 @@ namespace Pathos
       var CavernTop = 1.d(LevelHeight - CavernHeight + 1).Roll() - 1;
       var CavernRegion = new Region(CavernLeft, CavernTop, CavernLeft + CavernWidth - 1, CavernTop + CavernHeight - 1);
 
-      CreateCavern(CavernMap, CavernRegion);
+      var CavernStructure = CreateCavern(CavernMap, CavernRegion);
 
-      var AttractionCount = 1.d(Math.Max(1, CavernMap.RoomCount() / 5) - 1).Roll() + 1;
+      var AttractionCount = 1.d(Math.Max(1, CavernStructure.Rooms.Count / 5) - 1).Roll() + 1;
 
       var CavernShopProbability = ShopProbability.Clone();
       var CavernShrineProbability = ShrineProbability.Clone();
@@ -674,12 +686,12 @@ namespace Pathos
 
       for (var AttractionIndex = 0; AttractionIndex < AttractionCount; AttractionIndex++)
       {
-        var CavernRoom = CavernMap.Rooms.Where(R => !R.Isolated).GetRandomOrNull();
+        var CavernRoom = CavernStructure.Rooms.Where(R => !R.Isolated).GetRandomOrNull();
 
         if (CavernRoom != null)
         {
-          if (CavernMap.RoomCount() > 1)
-            CavernMap.RemoveRoom(CavernRoom); // don't create a portal in this attraction room.
+          if (CavernStructure.Rooms.Count > 1)
+            CavernStructure.RemoveRoom(CavernRoom); // don't create a portal in this attraction room.
 
           if (AttractionIndex == 0 && LairIndex == CavernLevel.Index && CreateMedusaLairBranch(CavernRoom))
           {
@@ -749,7 +761,7 @@ namespace Pathos
       var TricksChance = Chance.OneIn(30 * AttractionCount);
 
       // ordinary cavern rooms need details and features.
-      foreach (var CavernRoom in CavernMap.Rooms.Where(R => !R.Isolated))
+      foreach (var CavernRoom in CavernStructure.Rooms.Where(R => !R.Isolated))
       {
         CreateTrickRoom(TricksChance, CavernRoom.Midpoint.Zone, CavernRoom);
 
@@ -758,13 +770,15 @@ namespace Pathos
         if (FeaturesChance.Hit())
           Generator.PlaceRoomFixtures(FloorSquareList);
 
-        CreateRoomDetails(CavernMap, CavernBlock, FloorSquareList);
+        CreateRoomDetails(CavernStructure, CavernMap, CavernBlock, FloorSquareList);
       }
 
       Generator.RepairVoid(CavernMap, CavernRegion);
       Generator.RepairWalls(CavernMap, CavernRegion);
+
+      return CavernStructure;
     }
-    private void CreateNetherLevel(Level NetherLevel)
+    private DungeonStructure CreateNetherLevel(Level NetherLevel)
     {
       var NetherBlock = Codex.Blocks.crystal_boulder;
       var NetherGate = Codex.Gates.crystal_door;
@@ -781,7 +795,7 @@ namespace Pathos
       var LevelWidth = LevelRegion.Width;
       var LevelHeight = LevelRegion.Height;
 
-      CreateCavern(NetherMap, LevelRegion);
+      var NetherStructure = CreateCavern(NetherMap, LevelRegion);
 
       // obliterate the inside caverns.
       var NetherRegion = new Region(CavernSize, CavernSize, LevelWidth - CavernSize - 1, LevelHeight - CavernSize - 1);
@@ -794,7 +808,7 @@ namespace Pathos
 
       // strip out all zones.
       NetherMap.RemoveZones();
-      NetherMap.RemoveRooms();
+      NetherStructure.RemoveRooms();
 
       // repair the gaps.
       foreach (var Square in NetherMap.GetSquares(LevelRegion))
@@ -807,10 +821,10 @@ namespace Pathos
       Generator.RepairWalls(NetherMap, LevelRegion);
 
       // these rooms are where the up/down stairs should be generated.
-      NetherMap.AddRoom(new Region(1, 1, CavernSize - 2, LevelHeight - 2), Isolated: false);
-      NetherMap.AddRoom(new Region(CavernSize - 1, 1, LevelWidth - 2, CavernSize - 2), Isolated: false);
-      NetherMap.AddRoom(new Region(LevelWidth - CavernSize - 2, 1, LevelWidth - 2, LevelHeight - 2), Isolated: false);
-      NetherMap.AddRoom(new Region(CavernSize - 1, LevelHeight - CavernSize + 1, LevelWidth - CavernSize + 1, LevelHeight - 2), Isolated: false);
+      NetherStructure.AddRoom(new Region(1, 1, CavernSize - 2, LevelHeight - 2), Isolated: false);
+      NetherStructure.AddRoom(new Region(CavernSize - 1, 1, LevelWidth - 2, CavernSize - 2), Isolated: false);
+      NetherStructure.AddRoom(new Region(LevelWidth - CavernSize - 2, 1, LevelWidth - 2, LevelHeight - 2), Isolated: false);
+      NetherStructure.AddRoom(new Region(CavernSize - 1, LevelHeight - CavernSize + 1, LevelWidth - CavernSize + 1, LevelHeight - 2), Isolated: false);
 
       var BSPEngine = new BSPEngine();
       BSPEngine.MinimumRoomSize = 5;
@@ -819,7 +833,7 @@ namespace Pathos
 
       var BSPMap = BSPEngine.Generate(NetherRegion.Width, NetherRegion.Height);
 
-      var NetherRoomList = new Inv.DistinctList<Room>(BSPMap.PartitionList.Count);
+      var NetherRoomList = new Inv.DistinctList<DungeonRoom>(BSPMap.PartitionList.Count);
 
       var TowerGenerated = false;
       var MarketGenerated = false;
@@ -832,7 +846,7 @@ namespace Pathos
       {
         if (BSPPartition.Room != null)
         {
-          var NetherRoom = NetherMap.AddRoom(new Region(
+          var NetherRoom = NetherStructure.AddRoom(new Region(
             NetherRegion.Left + BSPPartition.Room.Value.Left,
             NetherRegion.Top + BSPPartition.Room.Value.Top,
             NetherRegion.Left + BSPPartition.Room.Value.Right,
@@ -882,13 +896,13 @@ namespace Pathos
             case 5:
             case 6:
             case 7:
-              Generator.PlaceIllusionRoom(NetherRoom, NetherBarrier, NetherGround);
+              PlaceIllusionRoom(NetherRoom, NetherBarrier, NetherGround);
               break;
 
             case 8:
             case 9:
             case 10:
-              Generator.PlacePillarRoom(NetherRoom, NetherBarrier, NetherGround);
+              PlacePillarRoom(NetherRoom, NetherBarrier, NetherGround);
               break;
 
             default:
@@ -927,7 +941,7 @@ namespace Pathos
 
               case AttractionType.Attic:
                 CreateAtticRoom(NetherRoom, NetherBarrier, NetherGround);
-                CreateRoomDetails(NetherMap, NetherBlock, NetherRoom.GetFloorSquares().ToDistinctList());
+                CreateRoomDetails(NetherStructure, NetherMap, NetherBlock, NetherRoom.GetFloorSquares().ToDistinctList());
                 break;
 
               case AttractionType.Shop:
@@ -945,7 +959,7 @@ namespace Pathos
                 else
                   Debug.Fail("Why no trove?");
 
-                CreateRoomDetails(NetherMap, NetherBlock, NetherRoom.GetFloorSquares().ToDistinctList());
+                CreateRoomDetails(NetherStructure, NetherMap, NetherBlock, NetherRoom.GetFloorSquares().ToDistinctList());
                 break;
 
               case AttractionType.Prison:
@@ -979,10 +993,12 @@ namespace Pathos
           Generator.PlaceRoomFixtures(FloorSquareList);
 
         if (Chance.OneIn2.Hit())
-          CreateRoomDetails(NetherMap, NetherBlock, FloorSquareList);
+          CreateRoomDetails(NetherStructure, NetherMap, NetherBlock, FloorSquareList);
       }
+
+      return NetherStructure;
     }
-    private void CreateFinaleLevel(Level FinaleLevel)
+    private DungeonStructure CreateFinaleLevel(Level FinaleLevel)
     {
       var FinaleBlock = Codex.Blocks.crystal_boulder;
       var FinaleBarrier = Codex.Barriers.hell_brick;
@@ -992,6 +1008,8 @@ namespace Pathos
       FinaleMap.SetImportant(true);
       FinaleMap.SetTerminal(true);
       FinaleMap.SetAtmosphere(Codex.Atmospheres.nether);
+
+      var FinaleStructure = new DungeonStructure(FinaleMap);
 
       const int BoxSize = 10;
 
@@ -1028,7 +1046,7 @@ namespace Pathos
 
           if (StartX == FinalVaultX && StartY == FinalVaultY)
           {
-            FinaleMap.AddRoom(FinalVaultRegion, Isolated: false);
+            FinaleStructure.AddRoom(FinalVaultRegion, Isolated: false);
           }
           else
           {
@@ -1104,7 +1122,7 @@ namespace Pathos
       var UniqueEntity = UniqueEntityList.GetRandomOrNull();
       if (UniqueEntity != null)
       {
-        var StartSquareArray = FinaleMap.Rooms.Where(R => !R.Isolated).SelectMany(R => R.GetFloorSquares()).ToArray();
+        var StartSquareArray = FinaleStructure.Rooms.Where(R => !R.Isolated).SelectMany(R => R.GetFloorSquares()).ToArray();
 
         var UniqueSquare = FinaleMap.GetSquares().Where(S => Generator.CanPlaceCharacter(S) && !StartSquareArray.Contains(S)).GetRandomOrNull();
         if (UniqueSquare != null)
@@ -1119,6 +1137,8 @@ namespace Pathos
           var UniqueCharacter = UniqueSquare.Character;
           if (UniqueCharacter != null)
           {
+            UniqueCharacter.SetNeutral(false); // some of the uniques are now generated as friendly.
+
             if (UniqueEntity.Level <= 40)
             {
               // TODO: this is meant to be a static but randomish level boost (However, string.GetHashCode() is not actually deterministic across .NET versions and x86/x64!).
@@ -1152,30 +1172,14 @@ namespace Pathos
         }
       }
 
-      CreateMazeDetails(FinaleMap, FinaleBlock, FinaleMap.Region, 8);
+      CreateMazeDetails(FinaleStructure, FinaleMap, FinaleBlock, FinaleMap.Region, 8);
 
       Generator.RepairVoid(FinaleMap, FinaleMap.Region);
       Generator.RepairWalls(FinaleMap, FinaleMap.Region);
+
+      return FinaleStructure;
     }
-    private void CreateMazeRoom(Room MazeRoom, Barrier MazeBarrier)
-    {
-      var MazeMap = MazeRoom.Map;
-      var MazeRegion = MazeRoom.Region;
-
-      // fill with solid walls.
-      RegionFill(MazeMap, MazeRegion, S => Generator.PlaceSolidWall(S, MazeBarrier, WallSegment.Cross));
-
-      // dig out the paths.
-      CreateMazePaths(MazeMap, MazeRegion);
-
-      // NOTE: don't generate boulders in the maze as they could obstruct the corridor doors that get placed later on.
-      CreateMazeDetails(MazeMap, Block: null, MazeRegion, Math.Max(MazeRoom.Region.Width, MazeRoom.Region.Height) / 2);
-
-      // repair void squares and wall segments.
-      Generator.RepairVoid(MazeMap, MazeRegion);
-      Generator.RepairWalls(MazeMap, MazeRegion);
-    }
-    private void CreateShrineRoom(Zone ShrineZone, Room ShrineRoom, Shrine Shrine)
+    private void CreateShrineRoom(Zone ShrineZone, DungeonRoom ShrineRoom, Shrine Shrine)
     {
       var SelectShrine = Shrine ?? ShrineProbability.GetRandomOrNull();
 
@@ -1199,7 +1203,7 @@ namespace Pathos
         }
       }
     }
-    private void CreateShopRoom(Zone ShopZone, Room ShopRoom, Shop Shop)
+    private void CreateShopRoom(Zone ShopZone, DungeonRoom ShopRoom, Shop Shop)
     {
       Debug.Assert(ShopZone != null);
 
@@ -1300,7 +1304,7 @@ namespace Pathos
         }
       }
     }
-    private void CreateTrickRoom(Chance TrickChance, Zone TrickZone, Room TrickRoom)
+    private void CreateTrickRoom(Chance TrickChance, Zone TrickZone, DungeonRoom TrickRoom)
     {
 #if DEBUG
       //TrickChance = Chance.Always;
@@ -1521,7 +1525,7 @@ namespace Pathos
           break;
       }
     }
-    private void CreateZooRoom(Zone ZooZone, Room ZooRoom, Zoo Zoo)
+    private void CreateZooRoom(Zone ZooZone, DungeonRoom ZooRoom, Zoo Zoo)
     {
       var SelectZoo = Zoo ?? GetZooProbability(ZooRoom.Map).GetRandomOrNull();
 
@@ -1542,7 +1546,7 @@ namespace Pathos
         Generator.PlaceZoo(ZooZone.Squares, SelectZoo, Generator.MinimumDifficulty(ZooRoom.Map), Generator.MaximumDifficulty(ZooRoom.Map));
       }
     }
-    private void CreateAtticRoom(Room SourceRoom, Barrier SourceBarrier, Ground SourceGround)
+    private void CreateAtticRoom(DungeonRoom SourceRoom, Barrier SourceBarrier, Ground SourceGround)
     {
       var SourceMap = SourceRoom.Map;
 
@@ -1585,12 +1589,14 @@ namespace Pathos
         AtticMap.SetDifficulty(SourceMap.Difficulty); // match difficulty to source map.
         AtticMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
-        var StorageRoom = AtticMap.AddRoom(AtticMap.Region, Isolated: false);
+        var AtticStructure = new DungeonStructure(AtticMap);
+
+        var StorageRoom = AtticStructure.AddRoom(AtticMap.Region, Isolated: false);
 
         if (AtticTemplate == null)
         {
           // NOTE: this can only happen if there is something wrong with the Attics specials.
-          Generator.PlaceRoom(StorageRoom, SourceBarrier, SourceGround);
+          PlaceRoom(StorageRoom, SourceBarrier, SourceGround);
         }
         else
         {
@@ -1661,16 +1667,7 @@ namespace Pathos
         }
       }
     }
-    private void CreateFloodRoom(Room FloodRoom)
-    {
-      var Water = Codex.Grounds.water;
-
-      // TODO: rounded pool in the middle of the room.
-
-      foreach (var Square in FloodRoom.GetFloorSquares())
-        Generator.PlaceFloor(Square, Water);
-    }
-    private void CreateVaultRoom(Zone VaultZone, Room VaultRoom)
+    private void CreateVaultRoom(Zone VaultZone, DungeonRoom VaultRoom)
     {
       var VaultTrigger = VaultZone.InsertTrigger();
 
@@ -1683,7 +1680,7 @@ namespace Pathos
         VaultTrigger.AddSchedule(Delay.FromTurns(VaultDice.Roll()), Codex.Tricks.calling_guard).SetTarget(VaultSquare);
       }
     }
-    private void CreatePrisonRoom(Zone PrisonZone, Room PrisonRoom)
+    private void CreatePrisonRoom(Zone PrisonZone, DungeonRoom PrisonRoom)
     {
       if (PrisonRoom.Region.Width < 7 || PrisonRoom.Region.Height < 7)
       {
@@ -1785,12 +1782,14 @@ namespace Pathos
       CellarMap.SetDifficulty(SourceMap.Difficulty);
       CellarMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
+      var CellarStructure = new DungeonStructure(CellarMap);
+
       var CellarZone = CellarMap.AddZone();
       CellarZone.AddRegion(CellarMap.Region);
       CellarZone.SetLit(Generator.RandomRoomIsLit(CellarMap));
 
-      var CellarRoom = CellarMap.AddRoom(CellarMap.Region, Isolated: false);
-      Generator.PlaceRoom(CellarRoom, SourceBarrier, SourceGround);
+      var CellarRoom = CellarStructure.AddRoom(CellarMap.Region, Isolated: false);
+      PlaceRoom(CellarRoom, SourceBarrier, SourceGround);
 
       var CellarSquare = CellarRoom.Midpoint; // ladder in the midpoint always for the cellar.
 
@@ -1863,7 +1862,7 @@ namespace Pathos
           break;
 
         default:
-          CreateRoomDetails(CellarRoom.Map, Codex.Blocks.stone_boulder, CellarRoom.GetFloorSquares().ToDistinctList());
+          CreateRoomDetails(CellarStructure, CellarRoom.Map, Codex.Blocks.stone_boulder, CellarRoom.GetFloorSquares().ToDistinctList());
           break;
       }
     }
@@ -1882,7 +1881,7 @@ namespace Pathos
       CavesMap.SetDifficulty(SourceMap.Difficulty);
       CavesMap.SetAtmosphere(Codex.Atmospheres.cavern);
 
-      CreateCavern(CavesMap, CavesMap.Region);
+      var CavesStructure = CreateCavern(CavesMap, CavesMap.Region);
 
       Generator.RepairVoid(CavesMap, CavesMap.Region);
       Generator.RepairWalls(CavesMap, CavesMap.Region);
@@ -1895,8 +1894,8 @@ namespace Pathos
         Generator.PlacePassage(AccessSquare, Codex.Portals.wooden_ladder_up, SourceSquare);
       }
 
-      foreach (var CavernRoom in CavesMap.Rooms.Where(R => !R.Isolated))
-        CreateRoomDetails(CavesMap, CavernBlock, CavernRoom.GetFloorSquares().ToDistinctList());
+      foreach (var CavernRoom in CavesStructure.Rooms.Where(R => !R.Isolated))
+        CreateRoomDetails(CavesStructure, CavesMap, CavernBlock, CavernRoom.GetFloorSquares().ToDistinctList());
     }
     private void CreateTroveNook(Square SourceSquare, Barrier SourceBarrier, Ground SourceGround)
     {
@@ -1911,12 +1910,14 @@ namespace Pathos
       TroveMap.SetDifficulty(SourceMap.Difficulty);
       TroveMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
+      var TroveStructure = new DungeonStructure(TroveMap);
+
       var TroveZone = TroveMap.AddZone();
       TroveZone.AddRegion(TroveMap.Region);
       TroveZone.SetLit(Generator.RandomRoomIsLit(TroveMap));
 
-      var TroveRoom = TroveMap.AddRoom(TroveMap.Region, Isolated: false);
-      Generator.PlaceRoom(TroveRoom, SourceBarrier, SourceGround);
+      var TroveRoom = TroveStructure.AddRoom(TroveMap.Region, Isolated: false);
+      PlaceRoom(TroveRoom, SourceBarrier, SourceGround);
 
       var AccessSquare = TroveRoom.Midpoint;
 
@@ -1944,38 +1945,32 @@ namespace Pathos
         }
       }
     }
+    private void JoinCorridor(Map Map, Ground Ground, DungeonCorridor StartCorridor, DungeonCorridor EndCorridor)
+    {
+      if (Inv.Assert.IsEnabled)
+      {
+        Inv.Assert.Check(StartCorridor.Room.Map == Map, "Corridor must start in the expected map.");
+        Inv.Assert.Check(EndCorridor.Room.Map == Map, "Corridor must end in the expected map.");
+      }
+
+      var StartCorridorX = StartCorridor.Start.X;
+      var StartCorridorY = StartCorridor.Start.Y;
+      var EndCorridorX = EndCorridor.Start.X;
+      var EndCorridorY = EndCorridor.Start.Y;
+
+      if (StartCorridorX <= EndCorridorX)
+        Generator.PlaceCorridor(Map, Ground, new Region(StartCorridorX, StartCorridorY, EndCorridorX, StartCorridorY));
+      else if (StartCorridorX > EndCorridorX)
+        Generator.PlaceCorridor(Map, Ground, new Region(EndCorridorX, StartCorridorY, StartCorridorX, StartCorridorY));
+
+      if (StartCorridorY < EndCorridorY)
+        Generator.PlaceCorridor(Map, Ground, new Region(EndCorridorX, StartCorridorY + 1, EndCorridorX, EndCorridorY));
+      else if (StartCorridorY > EndCorridorY)
+        Generator.PlaceCorridor(Map, Ground, new Region(EndCorridorX, EndCorridorY, EndCorridorX, StartCorridorY - 1));
+    }
     private void DropVaultCoins(Square Square)
     {
       Generator.DropCoins(Square, Generator.RandomCoinQuantity(Square) * 1.d5().Roll());
-    }
-    private void CreateCastleNooks(Map Map)
-    {
-      foreach (var Room in Map.Rooms.Where(R => !R.Isolated))
-      {
-        if (Room.Region.Left > 0)
-        {
-          for (var Y = Room.Region.Top + 1; Y < Room.Region.Bottom; Y++)
-            CreateCastleNook(Map[Room.Region.Left, Y], Map[Room.Region.Left - 1, Y]);
-        }
-
-        if (Room.Region.Right < Map.Region.Right)
-        {
-          for (var Y = Room.Region.Top + 1; Y < Room.Region.Bottom; Y++)
-            CreateCastleNook(Map[Room.Region.Right, Y], Map[Room.Region.Right + 1, Y]);
-        }
-
-        if (Room.Region.Top > 0)
-        {
-          for (var X = Room.Region.Left + 1; X < Room.Region.Right; X++)
-            CreateCastleNook(Map[X, Room.Region.Top], Map[X, Room.Region.Top - 1]);
-        }
-
-        if (Room.Region.Bottom < Map.Region.Bottom)
-        {
-          for (var X = Room.Region.Left + 1; X < Room.Region.Right; X++)
-            CreateCastleNook(Map[X, Room.Region.Bottom], Map[X, Room.Region.Bottom + 1]);
-        }
-      }
     }
     private void CreateCastleNook(Square AccessSquare, Square NookSquare)
     {
@@ -2074,7 +2069,7 @@ namespace Pathos
         //  CreateNook(RecurseSquare, RecurseSquare.Adjacent(RecurseDirection));
       }
     }
-    private Square CreateMazeCorner(Room MazeRoom, Barrier MazeBarrier, Gate MazeGate)
+    private Square CreateMazeCorner(DungeonRoom MazeRoom, Barrier MazeBarrier, Gate MazeGate)
     {
       var MazeSquareArray = MazeRoom.GetFloorSquares().Where(M => Generator.CanPlaceCharacter(M) && M.GetAdjacentSquares().Count(S => S.Wall == null) == 1).ToArray();
 
@@ -2177,7 +2172,66 @@ namespace Pathos
         Party.AddAlly(Character, Clock.Zero, Delay.Zero);
       }
     }
-    private void CreateRoomDetails(Map Map, Block Block, IReadOnlyList<Square> FloorSquareList)
+    private void PlaceRoom(DungeonRoom Room, Barrier Barrier, Ground Ground)
+    {
+      if (Inv.Assert.IsEnabled)
+        Inv.Assert.CheckNotNull(Room, nameof(Room));
+
+      Generator.PlaceRoom(Room.Map, Barrier, Ground, Room.Region);
+    }
+    private void PlacePillarRoom(DungeonRoom Room, Barrier Barrier, Ground Ground)
+    {
+      if (Inv.Assert.IsEnabled)
+        Inv.Assert.CheckNotNull(Room, nameof(Room));
+
+      var Map = Room.Map;
+      var Region = Room.Region;
+
+      Generator.PlaceSolidWall(Map[Region.Left, Region.Top], Barrier, WallSegment.Pillar);
+      Generator.PlaceSolidWall(Map[Region.Right, Region.Top], Barrier, WallSegment.Pillar);
+      Generator.PlaceSolidWall(Map[Region.Left, Region.Bottom], Barrier, WallSegment.Pillar);
+      Generator.PlaceSolidWall(Map[Region.Right, Region.Bottom], Barrier, WallSegment.Pillar);
+
+      for (var X = Region.Left + 1; X <= Region.Right - 1; X++)
+      {
+        Generator.PlaceFloor(Map[X, Region.Top], Ground);
+        Generator.PlaceFloor(Map[X, Region.Bottom], Ground);
+      }
+
+      for (var Y = Region.Top + 1; Y <= Region.Bottom - 1; Y++)
+      {
+        Generator.PlaceFloor(Map[Region.Left, Y], Ground);
+        Generator.PlaceFloor(Map[Region.Right, Y], Ground);
+      }
+    }
+    private void PlaceIllusionRoom(DungeonRoom Room, Barrier Barrier, Ground Ground)
+    {
+      if (Inv.Assert.IsEnabled)
+        Inv.Assert.CheckNotNull(Room, nameof(Room));
+
+      var Map = Room.Map;
+      var Region = Room.Region;
+
+      Generator.PlaceIllusionaryWall(Map[Region.Left, Region.Top], Barrier, WallSegment.TopLeftCorner);
+      Generator.PlaceIllusionaryWall(Map[Region.Right, Region.Top], Barrier, WallSegment.TopRightCorner);
+      Generator.PlaceIllusionaryWall(Map[Region.Left, Region.Bottom], Barrier, WallSegment.BottomLeftCorner);
+      Generator.PlaceIllusionaryWall(Map[Region.Right, Region.Bottom], Barrier, WallSegment.BottomRightCorner);
+
+      for (var X = Region.Left + 1; X <= Region.Right - 1; X++)
+      {
+        Generator.PlaceIllusionaryWall(Map[X, Region.Top], Barrier, WallSegment.Horizontal);
+        Generator.PlaceIllusionaryWall(Map[X, Region.Bottom], Barrier, WallSegment.Horizontal);
+      }
+
+      for (var Y = Region.Top + 1; Y <= Region.Bottom - 1; Y++)
+      {
+        Generator.PlaceIllusionaryWall(Map[Region.Left, Y], Barrier, WallSegment.Vertical);
+        Generator.PlaceIllusionaryWall(Map[Region.Right, Y], Barrier, WallSegment.Vertical);
+      }
+
+      Generator.PlaceFloorFill(Map, Ground, Region);
+    }
+    private void CreateRoomDetails(DungeonStructure Structure, Map Map, Block Block, IReadOnlyList<Square> FloorSquareList)
     {
       var DetailSquareList = FloorSquareList.Where(Generator.CanPlaceTrap).ToDistinctList();
 
@@ -2188,7 +2242,7 @@ namespace Pathos
       Generator.PlaceRoomCoins(DetailSquareList);
 
       // estimated number of containers per area.
-      var ContainerIndex = Map.RoomCount();
+      var ContainerIndex = Structure.Rooms.Count;
 
       if (ContainerIndex == 0)
         ContainerIndex = Map.Zones.Count;
@@ -2335,7 +2389,7 @@ namespace Pathos
         }
       }
     }
-    private void CreateMazeDetails(Map Map, Block Block, Region Region, int BoxSize)
+    private void CreateMazeDetails(DungeonStructure Structure, Map Map, Block Block, Region Region, int BoxSize)
     {
       var BoxWidth = Region.Width / BoxSize;
       var BoxHeight = Region.Height / BoxSize;
@@ -2358,7 +2412,7 @@ namespace Pathos
 
           var BoxRight = Math.Min(Region.Right, BoxLeft + BoxSize - 1);
 
-          CreateRoomDetails(Map, Block, Map.GetSquares(new Region(BoxLeft, BoxTop, BoxRight, BoxBottom)).Where(S => S.Wall == null).ToDistinctList());
+          CreateRoomDetails(Structure, Map, Block, Map.GetSquares(new Region(BoxLeft, BoxTop, BoxRight, BoxBottom)).Where(S => S.Wall == null).ToDistinctList());
 
           BoxLeft += BoxSize;
         }
@@ -2366,10 +2420,12 @@ namespace Pathos
         BoxTop += BoxSize;
       }
     }
-    private void CreateCavern(Map Map, Region Region)
+    private DungeonStructure CreateCavern(Map Map, Region Region)
     {
       Debug.Assert(Region.Width % CavernSize == 0);
       Debug.Assert(Region.Height % CavernSize == 0);
+
+      var Structure = new DungeonStructure(Map);
 
       var BoxWidth = Region.Width / CavernSize;
       var BoxHeight = Region.Height / CavernSize;
@@ -2470,7 +2526,7 @@ namespace Pathos
           var BoxLeft = Region.Left + (BoxX * CavernSize);
           var BoxTop = Region.Top + (BoxY * CavernSize);
           var BoxRegion = new Region(BoxLeft, BoxTop, BoxLeft + CavernSize - 1, BoxTop + CavernSize - 1);
-          var BoxRoom = Map.AddRoom(BoxRegion, Isolated: false);
+          var BoxRoom = Structure.AddRoom(BoxRegion, Isolated: false);
           var BoxZone = Map.AddZone();
           BoxZone.AddRegion(BoxRegion);
           BoxZone.SetLit(Generator.RandomCaveIsLit(Map));
@@ -2620,6 +2676,8 @@ namespace Pathos
       }
 
       Generator.PlaceIllusionaryWalls(Map, CavernBarrier, Region);
+
+      return Structure;
     }
     private Inv.DistinctList<AtticTemplate> LoadAtticTemplateList()
     {
@@ -2721,14 +2779,14 @@ namespace Pathos
     {
       return Generator.GetZooProbability(Map.Difficulty);
     }
-    private bool CreateMinesBranch(Level CastleLevel)
+    private bool CreateMinesBranch(Level EntranceLevel, DungeonStructure EntranceStructure)
     {
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Mines)))
         return false;
 
-      var EntranceMap = CastleLevel.Map;
+      var EntranceMap = EntranceLevel.Map;
 
-      var EntranceRoom = EntranceMap.Rooms.Where(R => !R.Isolated && !R.GetFloorSquares().Any(S => CastleLevel.UpSquare == S || CastleLevel.DownSquare == S)).GetRandomOrNull();
+      var EntranceRoom = EntranceStructure.Rooms.Where(R => !R.Isolated && !R.GetFloorSquares().Any(S => EntranceLevel.UpSquare == S || EntranceLevel.DownSquare == S)).GetRandomOrNull();
       if (EntranceRoom == null)
         return false;
 
@@ -2744,8 +2802,8 @@ namespace Pathos
       var PreciousGemProbability = Codex.Stocks.gem.Items.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One).ToProbability(I => I.Rarity);
 
       // don't use this room for other portals (so we have to handle the details ourselves except don't create details on the minestown entrance staircase).
-      EntranceMap.RemoveRoom(EntranceRoom);
-      CreateRoomDetails(EntranceMap, MinesBlock, EntranceRoom.GetFloorSquares().Except(EntranceSquare).ToDistinctList());
+      EntranceStructure.RemoveRoom(EntranceRoom);
+      CreateRoomDetails(EntranceStructure, EntranceMap, MinesBlock, EntranceRoom.GetFloorSquares().Except(EntranceSquare).ToDistinctList());
 
       // repair entrance to minetown to look like mines.
       foreach (var FixSquare in EntranceRoom.GetEdgeSquares())
@@ -2815,10 +2873,10 @@ namespace Pathos
 
         var TownLevel = MinesSite.AddLevel(1, TownMap);
 
-        CreateCavern(TownMap, TownMap.Region);
+        var TownStructure = CreateCavern(TownMap, TownMap.Region);
 
         // strip out all zones and rooms.
-        TownMap.RemoveRooms();
+        TownStructure.RemoveRooms();
         TownMap.RemoveZones();
 
         var TownRegion = new Region(DoubleCavern, DoubleCavern, DoubleCavern + TownGrid.Width - 1, DoubleCavern + TownGrid.Height - 1);
@@ -2851,7 +2909,7 @@ namespace Pathos
             if (Chance.OneIn3.Hit())
               Generator.PlaceRoomFixtures(TownZone.Squares);
 
-            CreateRoomDetails(TownMap, MinesBlock, TownZone.Squares);
+            CreateRoomDetails(TownStructure, TownMap, MinesBlock, TownZone.Squares);
           }
           else if (Chance.OneIn3.Hit())
           {
@@ -3206,6 +3264,8 @@ namespace Pathos
           MinesMap.SetDifficulty(TownMap.Difficulty + Level.Number);
           MinesMap.SetAtmosphere(Codex.Atmospheres.cavern);
 
+          var MinesStructure = new DungeonStructure(MinesMap);
+
           var MinesLevel = MinesSite.AddLevel(Level.Number + 1, MinesMap);
 
           Square DownLevelSquare = null;
@@ -3485,7 +3545,7 @@ namespace Pathos
           foreach (var MinesZone in MinesMap.Zones)
           {
             if (Chance.OneIn3.Hit())
-              CreateRoomDetails(MinesMap, MinesBlock, MinesZone.Squares);
+              CreateRoomDetails(MinesStructure, MinesMap, MinesBlock, MinesZone.Squares);
           }
 
           NextLevelSquare = DownLevelSquare;
@@ -3646,7 +3706,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateLostChambersBranch(Room AtticRoom)
+    private bool CreateLostChambersBranch(DungeonRoom AtticRoom)
     {
       var EntranceSquare = AtticRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (EntranceSquare == null)
@@ -3772,6 +3832,8 @@ namespace Pathos
           var Shop = ChamberShopProbability.RemoveRandomOrNull();
           if (Shop != null)
           {
+            ChamberSquare.SetFixture(null); // erase the current stall.
+
             Generator.PlaceShop(ChamberSquare, Shop, ChamberShopItems.Roll());
 
             ResidentArea(ChamberSquare, Codex.Tricks.VisitShopArray[Shop.Index]);
@@ -3850,14 +3912,14 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateLabyrinthBranch(Level CastleLevel)
+    private bool CreateLabyrinthBranch(Level EntranceLevel, DungeonStructure EntranceStructure)
     {
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Labyrinth)))
         return false;
 
-      var EntranceMap = CastleLevel.Map;
+      var EntranceMap = EntranceLevel.Map;
 
-      var EntranceRoom = EntranceMap.Rooms.Where(R => !R.Isolated && !R.GetFloorSquares().Any(S => CastleLevel.UpSquare == S || CastleLevel.DownSquare == S)).GetRandomOrNull();
+      var EntranceRoom = EntranceStructure.Rooms.Where(R => !R.Isolated && !R.GetFloorSquares().Any(S => EntranceLevel.UpSquare == S || EntranceLevel.DownSquare == S)).GetRandomOrNull();
       if (EntranceRoom == null)
         return false;
 
@@ -3874,8 +3936,8 @@ namespace Pathos
       Generator.PlacePassage(EntranceSquare, LabyrinthLevelDownPortal, Destination: null);
 
       // don't use this room for other portals (so we have to handle the details ourselves except don't create details on the labyrinth entrance staircase).
-      EntranceMap.RemoveRoom(EntranceRoom);
-      CreateRoomDetails(EntranceMap, LabyrinthBlock, EntranceRoom.GetFloorSquares().Except(EntranceSquare).ToDistinctList());
+      EntranceStructure.RemoveRoom(EntranceRoom);
+      CreateRoomDetails(EntranceStructure, EntranceMap, LabyrinthBlock, EntranceRoom.GetFloorSquares().Except(EntranceSquare).ToDistinctList());
 
       // repair entrance to labyrinth to look like nether.
       foreach (var FixSquare in EntranceRoom.GetEdgeSquares())
@@ -3909,12 +3971,14 @@ namespace Pathos
         LabyrinthMap.SetAtmosphere(Codex.Atmospheres.nether);
         LabyrinthMap.SetTerminal(LevelIndex == LevelCount);
 
+        var LabyrinthStructure = new DungeonStructure(LabyrinthMap);
+
         var LabyrinthLevel = LabyrinthSite.AddLevel(LevelIndex, LabyrinthMap);
         var LabyrinthRegion = LabyrinthMap.Region;
 
         RegionFill(LabyrinthMap, LabyrinthRegion, S => Generator.PlaceSolidWall(S, LabyrinthBarrier, WallSegment.Cross));
         CreateMazePaths(LabyrinthMap, LabyrinthRegion);
-        CreateMazeDetails(LabyrinthMap, LabyrinthBlock, LabyrinthRegion, BoxSize);
+        CreateMazeDetails(LabyrinthStructure, LabyrinthMap, LabyrinthBlock, LabyrinthRegion, BoxSize);
 
         var ExclusionSize = BoxSize * LevelIndex;
         var ExclusionMargin = (LabyrinthSize - ExclusionSize) / 2;
@@ -4305,7 +4369,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateFortLudiosBranch(Room VaultRoom)
+    private bool CreateFortLudiosBranch(DungeonRoom VaultRoom)
     {
       var PortalSquare = VaultRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (PortalSquare == null)
@@ -4727,7 +4791,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateElfKingdomBranch(Room EntryRoom)
+    private bool CreateElfKingdomBranch(DungeonRoom EntryRoom)
     {
       var PortalSquare = EntryRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (PortalSquare == null)
@@ -5033,7 +5097,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateMedusaLairBranch(Room EntryRoom)
+    private bool CreateMedusaLairBranch(DungeonRoom EntryRoom)
     {
       var PortalSquare = EntryRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (PortalSquare == null)
@@ -5188,7 +5252,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateBlackMarketBranch(Room EntryRoom)
+    private bool CreateBlackMarketBranch(DungeonRoom EntryRoom)
     {
       var PortalSquare = EntryRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (PortalSquare == null)
@@ -5204,7 +5268,6 @@ namespace Pathos
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
-      //PortalSquare.SetFixture(new Fixture(Codex.Features.stall, Sanctity.Uncursed));
       Generator.PlacePassage(PortalSquare, Codex.Portals.transportal, QuestStart);
 
       var MarketSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market));
@@ -5270,7 +5333,11 @@ namespace Pathos
 
         // create a shop.
         if (MarketSquare.Fixture != null && MarketSquare.Fixture.Feature == Codex.Features.stall)
+        {
+          MarketSquare.SetFixture(null); // erase the current stall.
+
           Generator.PlaceShop(MarketSquare, GetShop(), ItemDice.Roll());
+        }
 
         // all neutrals are allied.
         var Character = MarketSquare.Character;
@@ -5307,7 +5374,7 @@ namespace Pathos
 
       return true;
     }
-    private bool CreateLichTowerBranch(Room AtticRoom)
+    private bool CreateLichTowerBranch(DungeonRoom AtticRoom)
     {
       var PortalSquare = AtticRoom.GetFloorSquares().Where(Generator.CanPlacePortal).GetRandomOrNull();
       if (PortalSquare == null)
@@ -5676,6 +5743,141 @@ namespace Pathos
     private int AbyssIndex;
 
     private const int CavernSize = 6;
+
+    private sealed class DungeonStructure
+    {
+      internal DungeonStructure(Map Map)
+      {
+        this.Map = Map;
+        this.RoomList = new Inv.DistinctList<DungeonRoom>();
+      }
+
+      public Map Map { get; }
+
+      /// <summary>
+      /// Register a rectangular room on the map.
+      /// </summary>
+      /// <param name="Region"></param>
+      /// <param name="Isolated">Isolated rooms will not be considered when placing the up/down passages</param>
+      /// <returns></returns>
+      public DungeonRoom AddRoom(Region Region, bool Isolated)
+      {
+        var Result = new DungeonRoom(Map, Region, Isolated);
+
+        RoomList.Add(Result);
+
+        return Result;
+      }
+      public void RemoveRoom(DungeonRoom Room)
+      {
+        RoomList.Remove(Room);
+      }
+      public void RemoveRooms()
+      {
+        RoomList.Clear();
+      }
+
+      public IReadOnlyList<DungeonRoom> Rooms => RoomList;
+
+      private readonly Inv.DistinctList<DungeonRoom> RoomList;
+    }
+
+    private sealed class DungeonRoom
+    {
+      internal DungeonRoom(Map Map, Region Region, bool Isolated)
+      {
+        this.Map = Map;
+        this.Region = Region;
+        this.Isolated = Isolated;
+      }
+
+      public Map Map { get; }
+      public Region Region { get; }
+      /// <summary>
+      /// Room cannot be used to place an up/down transition passage.
+      /// </summary>
+      public bool Isolated { get; }
+      public Square Midpoint => Map[Region.Left + ((Region.Right - Region.Left) / 2), Region.Top + ((Region.Bottom - Region.Top) / 2)];
+      public Square this[int X, int Y] => Map[Region.Left + X, Region.Top + Y];
+
+      public IEnumerable<Square> GetFloorSquares()
+      {
+        for (var X = 1; X < Region.Width - 1; X++)
+        {
+          for (var Y = 1; Y < Region.Height - 1; Y++)
+            yield return this[X, Y];
+        }
+      }
+      public IEnumerable<Square> GetPerimeterSquares()
+      {
+        for (var X = 1; X < Region.Width - 1; X++)
+        {
+          yield return this[X, 1];
+          yield return this[X, Region.Height - 2];
+        }
+
+        for (var Y = 2; Y < Region.Height - 2; Y++)
+        {
+          yield return this[1, Y];
+          yield return this[Region.Width - 2, Y];
+        }
+      }
+      public IEnumerable<Square> GetEdgeSquares()
+      {
+        for (var X = 0; X < Region.Width; X++)
+        {
+          yield return this[X, 0];
+          yield return this[X, Region.Height - 1];
+        }
+
+        for (var Y = 1; Y < Region.Height - 1; Y++)
+        {
+          yield return this[0, Y];
+          yield return this[Region.Width - 1, Y];
+        }
+      }
+      public IEnumerable<Square> TopEdgeSquares()
+      {
+        for (var X = 1; X < Region.Width - 1; X++)
+          yield return this[X, 0];
+      }
+      public IEnumerable<Square> BottomEdgeSquares()
+      {
+        for (var X = 1; X < Region.Width - 1; X++)
+          yield return this[X, Region.Height - 1];
+      }
+      public IEnumerable<Square> LeftEdgeSquares()
+      {
+        for (var Y = 1; Y < Region.Height - 1; Y++)
+          yield return this[0, Y];
+      }
+      public IEnumerable<Square> RightEdgeSquares()
+      {
+        for (var Y = 1; Y < Region.Height - 1; Y++)
+          yield return this[Region.Width - 1, Y];
+      }
+
+      public void SetLit(bool IsLit)
+      {
+        for (var X = Region.Left; X <= Region.Right; X++)
+        {
+          for (var Y = Region.Top; Y <= Region.Bottom; Y++)
+            Map[X, Y].SetLit(IsLit);
+        }
+      }
+    }
+
+    private sealed class DungeonCorridor
+    {
+      internal DungeonCorridor(DungeonRoom Room, Square Start)
+      {
+        this.Room = Room;
+        this.Start = Start;
+      }
+
+      public DungeonRoom Room { get; }
+      public Square Start { get; }
+    }
 
     private sealed class DungeonPlan
     {

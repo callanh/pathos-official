@@ -118,7 +118,12 @@ namespace Pathos
 
       surrounding_horde = AddTrick("surrounding horde", A =>
       {
-        A.CreateHorde(Dice.Fixed(1));
+        A.CreateRandomHorde(Dice.One);
+      });
+
+      keystone_kops = AddTrick("keystone kops", A =>
+      {
+        A.CreateSpecificHorde(Dice.One, Codex.Hordes.keystone);
       });
 
       returning_undead = AddTrick("returning undead",  A =>
@@ -232,6 +237,7 @@ namespace Pathos
     public readonly Trick marble_paving;
     public readonly Trick mobilise_boulder;
     public readonly Trick surrounding_horde;
+    public readonly Trick keystone_kops;
     public readonly Trick random_spawning;
     public readonly Trick returning_undead;
     public readonly Trick summoning_demons;

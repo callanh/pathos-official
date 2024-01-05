@@ -53,13 +53,13 @@ namespace Pathos
 
       var SandboxLevel = SandboxSite.AddLevel(1, SandboxMap);
 
-      var LightRoom = SandboxMap.AddRoom(new Region(10, 0, 19, 10), Isolated: false);
+      var LightRegion = new Region(10, 0, 19, 10);
 
       var LightZone = SandboxMap.AddZone();
-      LightZone.AddRegion(LightRoom.Region);
+      LightZone.AddRegion(LightRegion);
       LightZone.SetLit(true);
 
-      Generator.PlaceRoom(LightRoom, SandboxBarrier, SandboxRoomGround);
+      Generator.PlaceRoom(SandboxMap, SandboxBarrier, SandboxRoomGround, LightRegion);
       Generator.PlaceFloor(SandboxMap[16, 10], SandboxRoomGround);
       Generator.PlaceClosedHorizontalDoor(SandboxMap[16, 10], SandboxGate, SandboxBarrier);
       Generator.PlaceFloor(SandboxMap[19, 3], SandboxRoomGround);
@@ -154,13 +154,13 @@ namespace Pathos
         TinSquare.PlaceAsset(TinAsset);
       }
 
-      var DarkRoom = SandboxMap.AddRoom(new Region(25, 0, 34, 9), Isolated: false);
+      var DarkRegion = new Region(25, 0, 34, 9);
 
       var DarkZone = SandboxMap.AddZone();
-      DarkZone.AddRegion(DarkRoom.Region);
+      DarkZone.AddRegion(DarkRegion);
       DarkZone.SetLit(false);
 
-      Generator.PlaceRoom(DarkRoom, SandboxBarrier, SandboxRoomGround);
+      Generator.PlaceRoom(SandboxMap, SandboxBarrier, SandboxRoomGround, DarkRegion);
       Generator.PlaceFloor(SandboxMap[25, 3], SandboxRoomGround);
       Generator.PlaceClosedVerticalDoor(SandboxMap[25, 3], SandboxGate, SandboxBarrier);
       Generator.PlaceCharacter(SandboxMap[29, 1]);
