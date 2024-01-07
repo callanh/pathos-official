@@ -11791,6 +11791,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16540,7 +16541,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.champion, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment, Skills.clerical, Skills.transmutation);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control, Properties.clarity, Properties.free_action, Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
@@ -17028,6 +17029,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -25905,6 +25907,7 @@ namespace Pathos
         E.Challenge = 268;
         E.Difficulty = 13;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
