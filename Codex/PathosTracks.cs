@@ -19,7 +19,7 @@ namespace Pathos
       inside = AddTrack("inside");
       nethack_title = AddTrack("nethack title");
       dhak_title = AddTrack("dhak title");
-      pixel_title = nethack_title; // TODO: AddTrack("pixel title");
+      pixel_title = AddTrack("pixel title");
     }
 #endif
 

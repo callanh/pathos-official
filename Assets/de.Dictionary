@@ -1311,7 +1311,6 @@ EntityName,Cthulhu,Cthulhu
 EntityName,cyclops,Zyklop
 EntityName,dao,Dao
 EntityName,dark cleric,schwarzer Priester
-EntityName,Dark Lord,Dunkler Lord
 EntityName,Death,Tod
 EntityName,death dog,Todeshund
 EntityName,deep gnome,Tiefengnom
@@ -1522,6 +1521,7 @@ EntityName,jiggling blob,wackelnder Blob
 EntityName,juggernaut,Moloch
 EntityName,Juiblex,Juiblex
 EntityName,juvenile raven,jugendlicher Rabe
+EntityName,Kaloi Thrym,Dunkler Lord
 EntityName,kamadan,Kamadan
 EntityName,keystone captain,Basis-Kommandant
 EntityName,keystone kop,Basis-Polizist
@@ -3647,6 +3647,7 @@ LiteralText,REVERT,RÜCKGÄNGIG
 LiteralText,RIGHT RING,RECHTER RING
 LiteralText,rigid,starr
 LiteralText,ROTATE,DREHEN
+LiteralText,route,
 LiteralText,SANITY CHECK,MENTALE GESUNDHEITSPRÜFUNG
 LiteralText,SAVE,SPEICHERN
 LiteralText,SAVE & QUIT,SPEICHERN & BEENDEN
@@ -3762,6 +3763,7 @@ LiteralText,transform to,verwandeln in
 LiteralText,transients,temporäre Effekte
 LiteralText,TRANSIENTS,TRANSIENT
 LiteralText,TRANSLATIONS,ÜBERSETZUNGEN
+LiteralText,transport,
 LiteralText,TRAP,FALLE
 LiteralText,trap?,Falle?
 LiteralText,trapped,gefangen

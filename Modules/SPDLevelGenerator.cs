@@ -422,8 +422,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script5 = boss.InsertScript();
-                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[32, 20]);
-                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[4, 4]);
+                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[32, 20]);
+                        script5.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[4, 4]);
                         break;
                     }
                 case 10:
@@ -449,8 +449,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script10 = boss.InsertScript();
-                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 5]);
-                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[14, 23]);
+                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[14, 5]);
+                        script10.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[14, 23]);
                         break;
                     }
                 case 15:
@@ -474,8 +474,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var script15 = boss.InsertScript();
-                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 11]);
-                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[11, 2]);
+                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[11, 11]);
+                        script15.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[11, 2]);
                         break;
                     }
                 case 20:
@@ -499,8 +499,8 @@ namespace Pathos
                         }
                         SPDDebug.generator.AcquireUnique(Square, boss, SPDDebug.codex.Qualifications.master);
                         var boss20killedscript = boss.InsertScript();
-                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 23]);
-                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[6, 2]);
+                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[6, 23]);
+                        boss20killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[6, 2]);
                         break;
                     }
                 case 25:
@@ -527,8 +527,8 @@ namespace Pathos
 
                         SPDDebug.generator.OutfitCharacter(boss);
                         var boss25killedscript = boss.InsertScript();
-                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 1]);
-                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way, SPDDebug.currentmap.pathosMap[9, 9]);
+                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[9, 1]);
+                        boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[9, 9]);
                         break;
                     }
                 default: boss = null; break;
@@ -769,16 +769,16 @@ namespace Pathos
         {
             var trigger = SPDDebug.currentmap.pathosMap.InsertTrigger();
 
-            trigger.AddSchedule(Delay.FromTurns(SPDDebug.currentmap.depth < 15 ? 10000 : 15000), SPDDebug.codex.Tricks.sudden_hellscape);
+            trigger.Add(Delay.FromTurns(SPDDebug.currentmap.depth < 15 ? 10000 : 15000), SPDDebug.codex.Tricks.sudden_hellscape);
             
             for (var i = 0; i < 8; i++)
             {
-                trigger.AddSchedule(i == 0 ? Delay.Zero : Delay.FromTurns(2000), SPDDebug.codex.Tricks.overwhelm_difficulty);
+                trigger.Add(i == 0 ? Delay.Zero : Delay.FromTurns(2000), SPDDebug.codex.Tricks.overwhelm_difficulty);
 
                 if (IsBossLevel(SPDDebug.currentmap.depth))
                 {
                     for (var j = 0; j < 5; j++)
-                        trigger.AddSchedule(Delay.Zero, SPDDebug.codex.Tricks.random_spawning).SetTarget(RandomSquare());
+                        trigger.Add(Delay.Zero, SPDDebug.codex.Tricks.random_spawning).SetTarget(RandomSquare());
                 }
             }
         }
@@ -1150,7 +1150,7 @@ namespace Pathos
                 Inv.Assert.CheckNotNull(Square.Zone, "Square.Zone");
 
             if (Square.Zone != null)
-                Square.Zone.InsertTrigger().AddSchedule(Delay.Zero, SPDDebug.codex.Tricks.VisitShopArray[shop.Index]).SetTarget(Square);
+                Square.Zone.InsertTrigger().Add(Delay.Zero, SPDDebug.codex.Tricks.VisitShopArray[shop.Index]).SetTarget(Square);
         }
         private void PlacePoorShop(SPDMapPoint pos)
         {
@@ -1184,7 +1184,7 @@ namespace Pathos
                 Inv.Assert.CheckNotNull(square.Zone, "Square.Zone");
 
             if (square.Zone != null)
-                square.Zone.InsertTrigger().AddSchedule(Delay.Zero, SPDDebug.codex.Tricks.VisitShopArray[shop.Index]).SetTarget(square);
+                square.Zone.InsertTrigger().Add(Delay.Zero, SPDDebug.codex.Tricks.VisitShopArray[shop.Index]).SetTarget(square);
         }
         private void PlaceShrine(Square Square, Shrine Shrine)
         {
@@ -1194,7 +1194,7 @@ namespace Pathos
             SPDDebug.generator.PlaceShrine(Square, Shrine);
 
             if (Square.Zone != null)
-              Square.Zone.InsertTrigger().AddSchedule(Delay.Zero, SPDDebug.codex.Tricks.VisitShrineArray[Shrine.Index]).SetTarget(Square);
+              Square.Zone.InsertTrigger().Add(Delay.Zero, SPDDebug.codex.Tricks.VisitShrineArray[Shrine.Index]).SetTarget(Square);
         }
         private void PutFacilities()
         {

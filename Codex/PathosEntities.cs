@@ -1274,6 +1274,7 @@ namespace Pathos
         E.Challenge = 1808;
         E.Difficulty = 40;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S6_0;
@@ -1323,6 +1324,7 @@ namespace Pathos
         E.Challenge = 1642;
         E.Difficulty = 40;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +5 from dex = 35.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S6_0;
@@ -1380,6 +1382,7 @@ namespace Pathos
         E.Challenge = 2100;
         E.Difficulty = 40;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex = 36.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -10181,6 +10184,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -11637,6 +11641,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16260,6 +16265,7 @@ namespace Pathos
         E.Challenge = 1276;
         E.Difficulty = 30;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -16497,14 +16503,14 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Dark_Lord = AddUniqueEntity(Kinds.human, Races.human, "Dark Lord", E =>
+      Kaloi_Thrym = AddUniqueEntity(Kinds.human, Races.human, "Kaloi Thrym", E =>
       {
-        E.Glyph = Glyphs.Dark_Lord;
-        E.Level = 20;
-        E.Challenge = 463;
-        E.Difficulty = 22;
+        E.Glyph = Glyphs.Kaloi_Thrym;
+        E.Level = 100;
+        E.Challenge = 20000;
+        E.Difficulty = 50;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
+        E.Defence = new Defence(D: 40, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
@@ -16526,23 +16532,38 @@ namespace Pathos
           Mounted: false,
           Amorphous: false
         );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
+        E.LifeAdvancement.Set(1.d10());
+        E.ManaAdvancement.Set(1.d10());
         E.DefaultForm.Set(STR: 14, DEX: 18, CON: 18, INT: 16, WIS: 15, CHA: 15);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.champion, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment, Skills.clerical, Skills.transmutation);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.Startup.AddGrimoire(Dice.One, Spells.confusion);
-        E.Startup.AddGrimoire(Dice.One, Spells.darkness);
+        E.Startup.AddGrimoire(Dice.One, Spells.finger_of_death);
+        E.Startup.AddGrimoire(Dice.One, Spells.fireball);
+        E.Startup.AddGrimoire(Dice.One, Spells.ice_storm);
+        E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
+        E.Startup.AddGrimoire(Dice.One, Spells.disintegrate);
+        E.Startup.AddGrimoire(Dice.One, Spells.poison_blast);
         E.Startup.AddGrimoire(Dice.One, Spells.drain_life);
-        E.Startup.AddGrimoire(Dice.One, Spells.animate_dead);
-        E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.Startup.AddGrimoire(Dice.One, Spells.fear);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +2 from str.
+        E.Startup.AddGrimoire(Dice.One, Spells.toxic_spray);
+        E.Startup.AddGrimoire(Dice.One, Spells.full_healing);
+
+        // wands in case of 'silence'.
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_cold);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_fire);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_fireball);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_iceball);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_death);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_lightning);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_cancellation);
+        E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_create_horde);
+
+        // no physical attacks - pure spellcaster.
+        //E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +2 from str.
         E.SetCorpse(Chance.Always);
       });
 
@@ -16847,6 +16868,7 @@ namespace Pathos
         E.Challenge = 2498;
         E.Difficulty = 44;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16897,6 +16919,7 @@ namespace Pathos
         E.Challenge = 2498;
         E.Difficulty = 44;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -17197,6 +17220,7 @@ namespace Pathos
         E.Challenge = 1268;
         E.Difficulty = 30;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -17242,6 +17266,7 @@ namespace Pathos
         E.Challenge = 2443;
         E.Difficulty = 40;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 32, P: +0, S: +0, B: +0); // +8 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_3;
@@ -17506,6 +17531,7 @@ namespace Pathos
         E.Challenge = 493;
         E.Difficulty = 23;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -17549,6 +17575,7 @@ namespace Pathos
         E.Challenge = 468;
         E.Difficulty = 23;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -17742,6 +17769,7 @@ namespace Pathos
         E.Challenge = 226;
         E.Difficulty = 13;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_5;
@@ -17789,6 +17817,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -17832,6 +17861,7 @@ namespace Pathos
         E.Challenge = 463;
         E.Difficulty = 22;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -18064,6 +18094,7 @@ namespace Pathos
         E.Challenge = 2461;
         E.Difficulty = 45;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // 'lucky' protection and +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -18113,6 +18144,7 @@ namespace Pathos
         E.Challenge = 2468;
         E.Difficulty = 33;
         E.Frequency = 0;
+        E.IsGuardian = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -34601,7 +34633,8 @@ namespace Pathos
       // renamed uniques.
       Register.Alias(Deliarne, "Dark One");
       Register.Alias(Huhetotl, "Minion of Huhetotl");
-      Register.Alias(Neferet, "Neferet the Green");     
+      Register.Alias(Neferet, "Neferet the Green");
+      Register.Alias(Kaloi_Thrym, "Dark Lord");
       #endregion
     }
 #endif
@@ -35255,7 +35288,7 @@ namespace Pathos
     public readonly Entity Count_Dracula;
     public readonly Entity Croesus;
     public readonly Entity Cthulhu;
-    public readonly Entity Dark_Lord;
+    public readonly Entity Kaloi_Thrym;
     public readonly Entity Death;
     public readonly Entity Deliarne;
     public readonly Entity Demogorgon;

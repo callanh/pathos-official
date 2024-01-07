@@ -36,7 +36,7 @@ namespace Pathos
         });
       }
 
-      awake_character = AddTrick("awake character", A =>
+      awaken_slumber = AddTrick("awaken slumber", A =>
       {
         A.LoseTalent(Properties.sleeping);
       });
@@ -196,6 +196,16 @@ namespace Pathos
         A.DetectTrap(Range.Sq0, Reveal: false);
       });
 
+      transport_candidate = AddTrick("transport candidate", A =>
+      {
+        A.Transport();
+      });
+
+      change_route = AddTrick("change route", A =>
+      {
+        A.Route();
+      });
+
       warping = AddTrick("warping", A =>
       {
         A.Warping();
@@ -214,12 +224,15 @@ namespace Pathos
       this.VisitShrineArray = new Trick[Shrines.List.Count];
       foreach (var Shrine in Shrines.List)
         VisitShrineArray[Shrine.Index] = AddTrick("visited " + Shrine.Name, A => A.VisitShrine(Shrine));
+
+      Register.Alias(awaken_slumber, "awake character");
     }
 #endif
 
-    public readonly Trick awake_character;
+    public readonly Trick awaken_slumber;
     public readonly Trick barred_way;
     public readonly Trick cleared_way;
+    public readonly Trick change_route;
     public readonly Trick connecting_portal;
     public readonly Trick connecting_rift;
     public readonly Trick dismissed_illusion;
@@ -247,6 +260,7 @@ namespace Pathos
     public readonly Trick watery_noodles;
     public readonly Trick sudden_hellscape;
     public readonly Trick complete_mapping;
+    public readonly Trick transport_candidate;
     public readonly Trick warping;
     public readonly Trick whispered_rumour;
     public readonly Trick[] VisitZooArray;

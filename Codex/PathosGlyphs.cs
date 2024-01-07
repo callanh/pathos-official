@@ -94,6 +94,7 @@ namespace Pathos
       Register.Alias(Deliarne, "Dark One");
       Register.Alias(Huhetotl, "Minion of Huhetotl");
       Register.Alias(Neferet, "Neferet the Green");
+      Register.Alias(Kaloi_Thrym, "Dark Lord");
 
       // Items.
       Register.Alias(green_gem, "jade");
@@ -554,7 +555,7 @@ namespace Pathos
     public readonly Glyph dark_explosion_top_center;
     public readonly Glyph dark_explosion_top_left;
     public readonly Glyph dark_explosion_top_right;
-    public readonly Glyph Dark_Lord;
+    public readonly Glyph Kaloi_Thrym;
     public readonly Glyph Deliarne;
     public readonly Glyph dart;
     public readonly Glyph mithril_dart;

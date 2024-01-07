@@ -1159,7 +1159,7 @@ namespace Pathos
             Debug.WriteLine($"Boss: {UniqueEntity.Name} (level +{UniqueCharacter.Level - UniqueEntity.Level})");
 
             var Script = UniqueCharacter.InsertScript();
-            Script.Killed.Sequence.Add(Codex.Tricks.warping, Target: null);
+            Script.Killed.Sequence.Add(Codex.Tricks.warping).SetTarget(null);
 
             // has the endgame letter.
             var LetterAsset = Generator.NewSpecificAsset(UniqueSquare, Codex.Items.Stamped_Letter);
@@ -1199,7 +1199,7 @@ namespace Pathos
 
           Generator.PlaceShrine(ShrineSquare, SelectShrine);
 
-          ShrineZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitShrineArray[SelectShrine.Index]).SetTarget(ShrineSquare);
+          ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[SelectShrine.Index]).SetTarget(ShrineSquare);
         }
       }
     }
@@ -1285,9 +1285,9 @@ namespace Pathos
       {
         var Trigger = ShopZone.InsertTrigger();
         if (ShopList.Count == 1 && ShopSquareList.Count == 1)
-          Trigger.AddSchedule(Delay.Zero, Codex.Tricks.VisitShopArray[ShopList[0].Index]).SetTarget(ShopSquareList[0]);
+          Trigger.Add(Delay.Zero, Codex.Tricks.VisitShopArray[ShopList[0].Index]).SetTarget(ShopSquareList[0]);
         else
-          Trigger.AddSchedule(Delay.Zero, Codex.Tricks.visited_bazaar);
+          Trigger.Add(Delay.Zero, Codex.Tricks.visited_bazaar);
       }
 
       var ServantProbability = ShopList.SelectMany(S => S.ServantEntities).Distinct().Where(E => E.Difficulty <= ShopRoom.Map.Difficulty).ToProbability(E => E.Frequency);
@@ -1362,7 +1362,7 @@ namespace Pathos
               HoleTrap.SetRevealed(true);
 
               foreach (var FloorSquare in FloorSquareList)
-                Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.arriving_bats).SetTarget(HoleSquare);
+                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.arriving_bats).SetTarget(HoleSquare);
             }
           }
           break;
@@ -1377,7 +1377,7 @@ namespace Pathos
             Generator.PlaceFixture(PentagramSquare, Codex.Features.pentagram);
 
             foreach (var FloorSquare in FloorSquareList)
-              Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.summoning_demons).SetTarget(PentagramSquare);
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.summoning_demons).SetTarget(PentagramSquare);
           }
           break;
 
@@ -1391,7 +1391,7 @@ namespace Pathos
             Generator.PlaceFixture(GraveSquare, Codex.Features.grave);
 
             foreach (var FloorSquare in FloorSquareList)
-              Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.returning_undead).SetTarget(GraveSquare);
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.returning_undead).SetTarget(GraveSquare);
           }
           break;
 
@@ -1411,7 +1411,7 @@ namespace Pathos
               PoolTrap.SetTriggered(FloorSquareList.Count);
 
               foreach (var FloorSquare in FloorSquareList)
-                Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.emerging_blobs).SetTarget(PoolSquare);
+                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.emerging_blobs).SetTarget(PoolSquare);
             }
           }
           break;
@@ -1423,15 +1423,15 @@ namespace Pathos
 
           if (StatueSquare != null)
           {
-            Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.living_statue).SetTarget(StatueSquare);
+            Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.living_statue).SetTarget(StatueSquare);
             Generator.PlaceBoulder(StatueSquare, Codex.Blocks.statue, true);
           }
           break;
 
         case 6:
           var HordeSquare = TrickRoom.Midpoint;
-          Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.automatic_locking);
-          Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.surrounding_horde).SetTarget(HordeSquare);
+          Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.automatic_locking);
+          Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.surrounding_horde).SetTarget(HordeSquare);
           break;
 
         case 7:
@@ -1449,7 +1449,7 @@ namespace Pathos
               LeakTrap.SetTriggered(FloorSquareList.Count);
 
               foreach (var FloorSquare in FloorSquareList)
-                Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.leaking_gas).SetTarget(LeakSquare);
+                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.leaking_gas).SetTarget(LeakSquare);
             }
           }
           break;
@@ -1464,7 +1464,7 @@ namespace Pathos
             Generator.PlaceFixture(SarcophagusSquare, Codex.Features.sarcophagus);
 
             foreach (var FloorSquare in FloorSquareList)
-              Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.escaping_mummies).SetTarget(SarcophagusSquare);
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.escaping_mummies).SetTarget(SarcophagusSquare);
           }
           break;
 
@@ -1489,8 +1489,8 @@ namespace Pathos
                     AnimateAsset.SetSanctity(Codex.Sanctities.Blessed); // so it becomes uncursed when killed.
                 }
 
-                Trigger.AddSchedule(Delay.Zero, Codex.Tricks.marble_paving).SetTarget(AnimateSquare);
-                Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.animated_objects).SetTarget(AnimateSquare);
+                Trigger.Add(Delay.Zero, Codex.Tricks.marble_paving).SetTarget(AnimateSquare);
+                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.animated_objects).SetTarget(AnimateSquare);
               }
             }
 
@@ -1515,7 +1515,7 @@ namespace Pathos
               GreaseTrap.SetTriggered(FloorSquareList.Count);
 
               foreach (var FloorSquare in FloorSquareList)
-                Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.scuttling_insects).SetTarget(GreaseSquare);
+                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.scuttling_insects).SetTarget(GreaseSquare);
             }
           }
           break;
@@ -1541,7 +1541,7 @@ namespace Pathos
       {
         DebugWrite("; zoo(" + SelectZoo.Name + ")");
 
-        ZooZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitZooArray[SelectZoo.Index]);
+        ZooZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitZooArray[SelectZoo.Index]);
 
         Generator.PlaceZoo(ZooZone.Squares, SelectZoo, Generator.MinimumDifficulty(ZooRoom.Map), Generator.MaximumDifficulty(ZooRoom.Map));
       }
@@ -1677,7 +1677,7 @@ namespace Pathos
       {
         DropVaultCoins(VaultSquare);
 
-        VaultTrigger.AddSchedule(Delay.FromTurns(VaultDice.Roll()), Codex.Tricks.calling_guard).SetTarget(VaultSquare);
+        VaultTrigger.Add(Delay.FromTurns(VaultDice.Roll()), Codex.Tricks.calling_guard).SetTarget(VaultSquare);
       }
     }
     private void CreatePrisonRoom(Zone PrisonZone, DungeonRoom PrisonRoom)
@@ -1756,7 +1756,7 @@ namespace Pathos
             var PrisonDice = 3.d20() + 20;
 
             foreach (var AlarmSquare in PrisonRoom.GetPerimeterSquares().Where(S => !S.IsObstructed()))
-              AlarmSquare.InsertTrigger().AddSchedule(Delay.FromTurns(PrisonDice.Roll()), Codex.Tricks.calling_guard).SetTarget(AlarmSquare);
+              AlarmSquare.InsertTrigger().Add(Delay.FromTurns(PrisonDice.Roll()), Codex.Tricks.calling_guard).SetTarget(AlarmSquare);
           }
         }
       }
@@ -3023,7 +3023,7 @@ namespace Pathos
                   var ShrineZone = TownMap.AddZone();
                   ShrineZone.AddRegion(TownSquare.FindBoundary());
 
-                  ShrineZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitShrineArray[TownShrine.Index]).SetTarget(TownSquare);
+                  ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[TownShrine.Index]).SetTarget(TownSquare);
                 });
 
                 break;
@@ -3071,7 +3071,7 @@ namespace Pathos
                     {
                       var ShopZone = TownMap.AddZone();
                       ShopZone.AddRegion(TownSquare.FindBoundary());
-                      ShopZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitShopArray[TownShop.Index]).SetTarget(TownSquare);
+                      ShopZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShopArray[TownShop.Index]).SetTarget(TownSquare);
                     });
                   }
                   else
@@ -3606,7 +3606,7 @@ namespace Pathos
                       if (!ResidentSquare.IsObscuredFrom(UnderCharacter.Square))
                         ResidentZone.ForceSquare(ResidentSquare);
                     }
-                    ResidentZone.InsertTrigger().AddSchedule(Delay.Zero, Trick).SetTarget(UnderCharacter.Square);
+                    ResidentZone.InsertTrigger().Add(Delay.Zero, Trick).SetTarget(UnderCharacter.Square);
                   }
 
                   if (UnderCharacter.Resident.Shop != null)
@@ -3819,7 +3819,7 @@ namespace Pathos
         {
           Generator.PunishCharacter(ResidentCharacter, Codex.Punishments.psychosis);
 
-          ChamberZone.InsertTrigger().AddSchedule(Delay.Zero, ResidentTrick).SetTarget(ResidentSquare);
+          ChamberZone.InsertTrigger().Add(Delay.Zero, ResidentTrick).SetTarget(ResidentSquare);
         }
       }
 
@@ -4210,7 +4210,7 @@ namespace Pathos
 
                 SokobanSquare.SetLit(true);
 
-                SokobanSquare.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.complete_mapping);
+                SokobanSquare.InsertTrigger().Add(Delay.Zero, Codex.Tricks.complete_mapping);
                 break;
 
               case '0':
@@ -4841,7 +4841,7 @@ namespace Pathos
           for (var Repeat = 0; Repeat < 2.d3().Roll(); Repeat++)
           {
             foreach (var PentagramSquare in PentagramZone.Squares.Where(S => S.Fixture != null))
-              Trigger.AddSchedule(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.summoning_demons).SetTarget(PentagramSquare);
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.summoning_demons).SetTarget(PentagramSquare);
           }
         }
 
@@ -4874,7 +4874,7 @@ namespace Pathos
             // force a zone so we can have a visit trigger.
             var ShrineZone = KingdomMap.AddZone();
             ShrineZone.ForceRegion(KingdomSquare.FindBoundary());
-            ShrineZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitShrineArray[Shrine.Index]).SetTarget(KingdomSquare);
+            ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[Shrine.Index]).SetTarget(KingdomSquare);
           }
 
           if (KingdomSquare.Character?.Resident?.Shop != null && KingdomSquare.Fixture?.Container != null)
@@ -4897,7 +4897,7 @@ namespace Pathos
               if (StandardGeneration)
               {
                 // visit trigger.
-                ShopZone.InsertTrigger().AddSchedule(Delay.Zero, Codex.Tricks.VisitShopArray[Shop.Index]).SetTarget(KingdomSquare);
+                ShopZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShopArray[Shop.Index]).SetTarget(KingdomSquare);
 
                 // the shop is fully stocked.
                 Generator.StockShop(KingdomSquare, ShopStall, Shop, (2.d4() + 4).Roll());

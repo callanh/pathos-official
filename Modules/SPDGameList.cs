@@ -50,7 +50,7 @@ namespace Pathos
             {
               Entities.Archmage_Dirachi,
               Entities.Archmage_Flaynn,
-              Entities.Dark_Lord,
+              Entities.Kaloi_Thrym,
               Entities.Master_Kaen,
               Entities.Assassin_Mortimer,
               Entities.Ashikaga_Takauji,
