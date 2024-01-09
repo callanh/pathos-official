@@ -5436,7 +5436,7 @@ namespace Pathos
       {
         E.Glyph = Glyphs.Huhetotl;
         E.Sonic = Sonics.chant;
-        E.Level = 9;
+        E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
         E.Frequency = 0;
@@ -5488,7 +5488,7 @@ namespace Pathos
       Maugneshaagar = AddUniqueEntity(Kinds.demon, null, "Maugneshaagar", E =>
       {
         E.Glyph = Glyphs.Maugneshaagar;
-        E.Level = 9;
+        E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
         E.Frequency = 0;
@@ -5540,7 +5540,7 @@ namespace Pathos
       Nalzok = AddUniqueEntity(Kinds.demon, null, "Nalzok", E =>
       {
         E.Glyph = Glyphs.Nalzok;
-        E.Level = 9;
+        E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
         E.Frequency = 0;
@@ -16560,9 +16560,9 @@ namespace Pathos
       Deliarne = AddUniqueEntity(Kinds.human, Races.human, "Deliarne", E =>
       {
         E.Glyph = Glyphs.Deliarne;
-        E.Level = 11;
+        E.Level = 8;
         E.Challenge = 338;
-        E.Difficulty = 15;
+        E.Difficulty = 12;
         E.Frequency = 0;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
