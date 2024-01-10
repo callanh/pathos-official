@@ -128,6 +128,7 @@
     <Compile Include="Modules\SPDRect.cs" />
     <Compile Include="Modules\SPDRoom.cs" />
     <Compile Include="PathosOfficial.cs" />
+    <Compile Include="PathosOpus.cs" />
     <None Include="Resources\Pathos.InvResourcePackage" />
     <Compile Include="Resources\Pathos.InvResourcePackage.cs">
       <DependentUpon>Pathos.InvResourcePackage</DependentUpon>

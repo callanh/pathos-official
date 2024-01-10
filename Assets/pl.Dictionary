@@ -3515,6 +3515,7 @@ LiteralText,NAME,NAZWA
 LiteralText,name?,nazwa?
 LiteralText,neutral,neutralny
 LiteralText,never,nigdy
+LiteralText,NEW,
 LiteralText,no additional effects,brak dodatkowych efektów
 LiteralText,no allies,brak sojuszników
 LiteralText,no ambient sounds,brak dźwięków otoczenia
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,POLYMORPH
 LiteralText,Polymorph into what?,Polimorf w co?
 LiteralText,POLYMORPHED,POLIMORFOWANY
 LiteralText,portal,portal
+LiteralText,PORTALS,
 LiteralText,porter,tragarz
 LiteralText,PRAY,MODLITWA
 LiteralText,preservation,konserwacja
@@ -3872,21 +3874,41 @@ MaterialName,wood,drewno
 MeasurementSystemName,imperial,imperialny
 MeasurementSystemName,metric,metryczny
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Zejdź przez proceduralnie generowane lochy i jaskinie. Nieskończona regrywalność i polecana dla graczy początkujących w Pathos.
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Ręcznie projektowane mapy w epickiej przygodzie na lądzie. Zrób sobie przerwę od ograniczeń lochu i wyrusz na pełną wyzwań wyprawę.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Ciekawe pokoje i tajemnice czekają. Ale nie zwlekaj!. Musisz zejść lub zginąć. Oparte na generowaniu map z Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Piaskownica do eksperymentowania z mechaniką Pathos. Baw się każdym przedmiotem, pułapką i elementem wyposażenia lochu na prostej mapie składającej się z dwóch pomieszczeń."
 ModuleName,Dhak Legacy,Dziedzictwo Dhak
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pikselowa podróż
 ModuleName,Sandbox Play,Zabawa w piaskownicy
 ModuleTerm,Abyss,Otchłań
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,attic
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,Czarny Rynek
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,jaskinie
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,piwnica
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,Głęboka hala
 ModuleTerm,Deepruins,Głębokie ruiny
 ModuleTerm,Deepwilds,Głębokie dzikie pola
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,Lochy
 ModuleTerm,Elf Forest,Elfia Las
 ModuleTerm,Elf Kingdom,Elfie Królestwo
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,Elfi Pałac 2
 ModuleTerm,Elf Palace Vault,Elfi Skarbiec Pałacu
 ModuleTerm,Elf Town,Elfie miasto
 ModuleTerm,Elf Town Trove,Elfi Skarbiec Miejski
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,Fort Ludios
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,Piekielna Klatka
 ModuleTerm,Infernal Fields,Piekielne Pola
 ModuleTerm,Infernal Keep,Piekielna straż
 ModuleTerm,Infernal Spire,Piekielna Iglica
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,Labirynt
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,poziom
 ModuleTerm,Lich Tower,Wieża licha
 ModuleTerm,Lost Chambers,Zaginione komnaty
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,Pamięć podręczna Ludiosa
 ModuleTerm,Medusa Lair,Legowisko Meduzy
 ModuleTerm,Mines,Kopalnia
 ModuleTerm,Minetown,Minetown
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,Sokoban
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,trove
 ModuleTerm,Underbarracks,Podkoszary
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,Podlimity
 ModuleTerm,Underpeaks,Underpeaks
 ModuleTerm,Undertown,Pod miastem
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,namaszczony
 MotionPastName,ate,zjadł
 MotionPastName,captured,złapany

@@ -3515,6 +3515,7 @@ LiteralText,NAME,TÊN
 LiteralText,name?,tên?
 LiteralText,neutral,trung lập
 LiteralText,never,không bao giờ
+LiteralText,NEW,
 LiteralText,no additional effects,không có hiệu ứng phụ
 LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,BIẾN HÌNH
 LiteralText,Polymorph into what?,Biến hình thành?
 LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
+LiteralText,PORTALS,
 LiteralText,porter,túi
 LiteralText,PRAY,CẦU NGUYỆN
 LiteralText,preservation,quan sát
@@ -3872,21 +3874,41 @@ MaterialName,wood,gỗ
 MeasurementSystemName,imperial,hệ đo lường Anh
 MeasurementSystemName,metric,hệ đo lường mét
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Đi sâu vào những hầm ngục và hang động được tạo ngẫu nhiên. Cho bạn trải nghiệm chơi lại vô hạn và được đề xuất cho những người mới chơi Pathos.
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
 ModuleName,Dhak Legacy,Di sản nhà Dhak
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Chế độ sáng tạo
 ModuleTerm,Abyss,Vực thẳm
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,gác xép
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,Chợ đen
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,hang
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,trần nhà
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,sảnh sâu
 ModuleTerm,Deepruins,tàn tích sâu
 ModuleTerm,Deepwilds,rừng hoang dã sâu
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,Hầm ngục
 ModuleTerm,Elf Forest,Rừng Elf
 ModuleTerm,Elf Kingdom,Vương quốc Elf
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,Dinh thự Elf số 2
 ModuleTerm,Elf Palace Vault,Hầm dinh thự Elf
 ModuleTerm,Elf Town,Thi trấn Elf
 ModuleTerm,Elf Town Trove,Kho báu của thi trấn Elf
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,Pháo đài Ludios
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,Lồng Infernal
 ModuleTerm,Infernal Fields,Sàn Infernal
 ModuleTerm,Infernal Keep,Nông trại Infernal
 ModuleTerm,Infernal Spire,Tháp ngọn Infernal
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,Mê cung
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,tầng
 ModuleTerm,Lich Tower,Tòa tháp Vu Yêu
 ModuleTerm,Lost Chambers,Căn phòng lãng quên
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,Hầm trữ Ludios
 ModuleTerm,Medusa Lair,Hang ổ Medusa
 ModuleTerm,Mines,mìn
 ModuleTerm,Minetown,thi trấn Mine
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,Sokoban
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,kho báu
 ModuleTerm,Underbarracks,Underbarracks
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,Underlimits
 ModuleTerm,Underpeaks,Underpeaks
 ModuleTerm,Undertown,Undertown
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,đã bôi
 MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt

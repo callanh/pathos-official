@@ -33,8 +33,9 @@ namespace Pathos
       SetManifest(Codex.Manifest);
 
       AddModule(new NethackModule(Codex));
-      AddModule(new DhakModule(Codex));
+      AddModule(new OpusModule(Codex));
       AddModule(new SPDModule(Codex));
+      AddModule(new DhakModule(Codex));
       AddModule(new SandboxModule(Codex));
 
       AddAtlasType("absurd");

@@ -3515,6 +3515,7 @@ LiteralText,NAME,名付ける
 LiteralText,name?,名前?
 LiteralText,neutral,中立
 LiteralText,never,0％
+LiteralText,NEW,
 LiteralText,no additional effects,追加効果なし
 LiteralText,no allies,仲間がいない
 LiteralText,no ambient sounds,環境音無し
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,変化
 LiteralText,Polymorph into what?,何に変化する？
 LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
+LiteralText,PORTALS,
 LiteralText,porter,の入った捕獲袋
 LiteralText,PRAY,祈る
 LiteralText,preservation,保存
@@ -3872,21 +3874,41 @@ MaterialName,wood,木
 MeasurementSystemName,imperial,ヤードポンド法
 MeasurementSystemName,metric,メートル法
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
 ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,サンドボックスプレイ
 ModuleTerm,Abyss,地獄の深淵
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,屋根裏
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,闇市場
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,洞窟
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,地下室
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,深層王の間
 ModuleTerm,Deepruins,深層の旧跡
 ModuleTerm,Deepwilds,深層の荒野
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,ダンジョン
 ModuleTerm,Elf Forest,エルフの森
 ModuleTerm,Elf Kingdom,エルフの王国
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,エルフの城 2階
 ModuleTerm,Elf Palace Vault,エルフの城・地下庫
 ModuleTerm,Elf Town,エルフの街
 ModuleTerm,Elf Town Trove,エルフの街・宝物庫
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,ルディオス砦
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,地獄の収容所
 ModuleTerm,Infernal Fields,地獄の荒野
 ModuleTerm,Infernal Keep,地獄の城塞
 ModuleTerm,Infernal Spire,地獄の尖塔
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,迷宮
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,階層
 ModuleTerm,Lich Tower,リッチの塔
 ModuleTerm,Lost Chambers,古の実験室
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,ローディウスの金庫室
 ModuleTerm,Medusa Lair,メデューサの棲み家
 ModuleTerm,Mines,鉱山
 ModuleTerm,Minetown,鉱山の街
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,大倉庫
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,地下蔵
 ModuleTerm,Underbarracks,地下砦
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,地下の尾根
 ModuleTerm,Underpeaks,地下の頂
 ModuleTerm,Undertown,地下の街
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,を注いだ
 MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた

@@ -3515,6 +3515,7 @@ LiteralText,NAME,ชื่อ
 LiteralText,name?,ชื่อ?
 LiteralText,neutral,
 LiteralText,never,ไม่เคย
+LiteralText,NEW,
 LiteralText,no additional effects,ไม่มีผลเพิ่มเติม
 LiteralText,no allies,ไม่มีพรรคพวก
 LiteralText,no ambient sounds,ปิดเสียงบรรยากาศ
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,กลายร่าง
 LiteralText,Polymorph into what?,กลายร่างเป็นอะไร?
 LiteralText,POLYMORPHED,กลายร่างแล้ว
 LiteralText,portal,ประตูมิติ
+LiteralText,PORTALS,
 LiteralText,porter,
 LiteralText,PRAY,อธิษฐาน
 LiteralText,preservation,
@@ -3872,21 +3874,41 @@ MaterialName,wood,ไม้
 MeasurementSystemName,imperial,อิมพีเรียล
 MeasurementSystemName,metric,เมตริก
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
 ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,
 ModuleName,Sandbox Play,
 ModuleTerm,Abyss,อบีส
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,ห้องใต้หลังคา
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,ตลาดมืด
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,ถ้ำ
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,ห้องใต้ดิน
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,
 ModuleTerm,Deepruins,
 ModuleTerm,Deepwilds,
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,ดันเจี้ยน
 ModuleTerm,Elf Forest,เอลฟ์ป่า
 ModuleTerm,Elf Kingdom,อาณาจักรเอลฟ์
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,พระราชวังเอลฟ์ 2
 ModuleTerm,Elf Palace Vault,
 ModuleTerm,Elf Town,เมืองเอลฟ์
 ModuleTerm,Elf Town Trove,ขุมทรัพย์เมืองเอลฟ์
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,
 ModuleTerm,Infernal Fields,
 ModuleTerm,Infernal Keep,
 ModuleTerm,Infernal Spire,
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,ชั้นที่
 ModuleTerm,Lich Tower,หอคอยแห่งลิช
 ModuleTerm,Lost Chambers,
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,
 ModuleTerm,Medusa Lair,รังเมดูซ่า
 ModuleTerm,Mines,เหมือง
 ModuleTerm,Minetown,เมืองเหมือง
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,ขุมทรัพย์
 ModuleTerm,Underbarracks,
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,
 ModuleTerm,Underpeaks,
 ModuleTerm,Undertown,
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,ชโลม
 MotionPastName,ate,กิน
 MotionPastName,captured,ถูกจับ

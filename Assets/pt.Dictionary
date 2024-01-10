@@ -3515,6 +3515,7 @@ LiteralText,NAME,NOME
 LiteralText,name?,nome?
 LiteralText,neutral,neutro
 LiteralText,never,nunca
+LiteralText,NEW,
 LiteralText,no additional effects,sem efeitos adicionais
 LiteralText,no allies,sem aliados
 LiteralText,no ambient sounds,sem sons ambientes
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,POLIMORFAR
 LiteralText,Polymorph into what?,Polimorfar em que?
 LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
+LiteralText,PORTALS,
 LiteralText,porter,carregador
 LiteralText,PRAY,ORAR
 LiteralText,preservation,preservação
@@ -3872,21 +3874,41 @@ MaterialName,wood,madeira
 MeasurementSystemName,imperial,imperial
 MeasurementSystemName,metric,métrico
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desça masmorras e cavernas geradas proceduralmente. Rejogabilidade infinita e recomendada para jogadores novatos.
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão numa aventura épica pelas planícies. Tire uma folga das masmorras e embarque nessa aventura.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Caixa de areia para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e acessório das masmorra num mapa simples de duas salas."
 ModuleName,Dhak Legacy,Legado Dhak
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Codex Nethack
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Modo Caixa de Areia
 ModuleTerm,Abyss,Abismo
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,sótão
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,Mercado Negro
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,cavernas
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,porão
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,Salão das Profundezas
 ModuleTerm,Deepruins,Ruínas das Profundezas
 ModuleTerm,Deepwilds,Profundezas Selvagens
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,Masmorra
 ModuleTerm,Elf Forest,Floresta Élfica
 ModuleTerm,Elf Kingdom,Reino Élfico
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,Palácio Élfico 2
 ModuleTerm,Elf Palace Vault,Câmara do Tesouro do Palácio Élfico
 ModuleTerm,Elf Town,Cidade Élfica
 ModuleTerm,Elf Town Trove,Tesouro da Cidade Élfica
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,Forte Ludios
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,Jaula Infernal
 ModuleTerm,Infernal Fields,Campos Infernais
 ModuleTerm,Infernal Keep,Fortaleza Infernal
 ModuleTerm,Infernal Spire,Pináculo Infernal
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,Labirinto
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,nível
 ModuleTerm,Lich Tower,Torre Lich
 ModuleTerm,Lost Chambers,Câmaras Perdidas
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,Provisões de Ludios
 ModuleTerm,Medusa Lair,Covil da Medusa
 ModuleTerm,Mines,Minas
 ModuleTerm,Minetown,Cidade das Minas
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,Sokoban
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,tesouro
 ModuleTerm,Underbarracks,Quartel de Baixo
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,Limites de Baixo
 ModuleTerm,Underpeaks,Picos de Baixo
 ModuleTerm,Undertown,Cidade de Baixo
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,ungiu
 MotionPastName,ate,comeu
 MotionPastName,captured,capturou

@@ -3515,6 +3515,7 @@ LiteralText,NAME,命名
 LiteralText,name?,命名
 LiteralText,neutral,中立
 LiteralText,never,0%
+LiteralText,NEW,
 LiteralText,no additional effects,无特殊效果
 LiteralText,no allies,没有盟友
 LiteralText,no ambient sounds,无背景音乐
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,变形
 LiteralText,Polymorph into what?,变形为什么？
 LiteralText,POLYMORPHED,已变形
 LiteralText,portal,传送门
+LiteralText,PORTALS,
 LiteralText,porter,捕捉袋
 LiteralText,PRAY,祈祷
 LiteralText,preservation,维护
@@ -3872,21 +3874,41 @@ MaterialName,wood,木头
 MeasurementSystemName,imperial,斤
 MeasurementSystemName,metric,公斤
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,层层深入程序生成的地牢与洞穴，无限可重玩性——同时也易于Pathos的新玩家上手。
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工设计的地图，地表世界的传奇冒险。脱离幽深禁闭的地牢，进行更具挑战的冒险。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房间和无尽的秘密等着你去探索，但是不要沉溺在其中，长时间停留在某一层会招致死亡。基于《破碎像素地牢》生成的地图。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
 ModuleName,Dhak Legacy,Dhak Legacy
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,像素之旅
 ModuleName,Sandbox Play,沙盒游戏
 ModuleTerm,Abyss,深渊
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,阁楼
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,黑市
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,洞穴
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,地窖
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,地下大厅
 ModuleTerm,Deepruins,地下废墟
 ModuleTerm,Deepwilds,地下荒野
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,地牢
 ModuleTerm,Elf Forest,精灵森林
 ModuleTerm,Elf Kingdom,精灵王国
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,精灵宫殿2
 ModuleTerm,Elf Palace Vault,精灵宫殿顶
 ModuleTerm,Elf Town,精灵城镇
 ModuleTerm,Elf Town Trove,精灵城地窖
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,卢底人堡垒
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,地狱笼子
 ModuleTerm,Infernal Fields,地狱场地
 ModuleTerm,Infernal Keep,地狱看守
 ModuleTerm,Infernal Spire,地狱尖塔
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,迷宫
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,楼层
 ModuleTerm,Lich Tower,巫妖之塔
 ModuleTerm,Lost Chambers,迷失之庭
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,卢底人藏宝室
 ModuleTerm,Medusa Lair,美杜莎领地
 ModuleTerm,Mines,矿洞
 ModuleTerm,Minetown,矿镇
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,仓库番
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,贵重物
 ModuleTerm,Underbarracks,地城兵营
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,地城边境
 ModuleTerm,Underpeaks,地城通路
 ModuleTerm,Undertown,地下城
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,洗涤了
 MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了

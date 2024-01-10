@@ -3515,6 +3515,7 @@ LiteralText,NAME,ELNEVEZÉS
 LiteralText,name?,átnevez?
 LiteralText,neutral,semleges
 LiteralText,never,soha sem
+LiteralText,NEW,
 LiteralText,no additional effects,nincs további hatás
 LiteralText,no allies,nincsenek szövetségesek
 LiteralText,no ambient sounds,nincsenek környezeti hangok
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,ÁTVÁLTOZÁS
 LiteralText,Polymorph into what?,Mivé szeretnél átváltozni?
 LiteralText,POLYMORPHED,ÁTVÁLTOZOTT
 LiteralText,portal,portál
+LiteralText,PORTALS,
 LiteralText,porter,hordár
 LiteralText,PRAY,IMA
 LiteralText,preservation,konzerválás
@@ -3872,21 +3874,41 @@ MaterialName,wood,fa
 MeasurementSystemName,imperial,fenséges
 MeasurementSystemName,metric,metrikus
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Fedezz fel procedurálisan generált kazamatákat és barlangokat végtelen újrajátszhatóság mellett. A Pathosszal ismerkedők számára ajánlott.
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
 ModuleName,Dhak Legacy,Dhak örökség
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack-Kódex
 ModuleName,Pixel Sojourn,Pixelkaland
 ModuleName,Sandbox Play,Sandbox játék
 ModuleTerm,Abyss,Mélység
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,padlás
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,Fekete Piac
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,barlangok
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,pince
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,Deephall
 ModuleTerm,Deepruins,Deepruins
 ModuleTerm,Deepwilds,Deepwilds
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,Kazamata
 ModuleTerm,Elf Forest,Elferdő
 ModuleTerm,Elf Kingdom,Elfkirályság
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,Elfpalota 2
 ModuleTerm,Elf Palace Vault,Elfpalota pincéje
 ModuleTerm,Elf Town,Elfváros
 ModuleTerm,Elf Town Trove,Elfvárosi lelet
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,Ludios Erőd
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,Alvilági ketrec
 ModuleTerm,Infernal Fields,Alvilági mező
 ModuleTerm,Infernal Keep,Alvilági erőd
 ModuleTerm,Infernal Spire,Alvilági torony
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,Labirintus
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,szint
 ModuleTerm,Lich Tower,Lícs torony
 ModuleTerm,Lost Chambers,Elveszett Kamrák
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,Ludios Rejtekhely
 ModuleTerm,Medusa Lair,Medúza-verem
 ModuleTerm,Mines,Bányák
 ModuleTerm,Minetown,Bányászváros
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,Sokoban
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,lelet
 ModuleTerm,Underbarracks,Underbarracks
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,Underlimits
 ModuleTerm,Underpeaks,Underpeaks
 ModuleTerm,Undertown,Undertown
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,felszentelte
 MotionPastName,ate,elfogyasztotta
 MotionPastName,captured,elfogta

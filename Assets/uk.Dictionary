@@ -3515,6 +3515,7 @@ LiteralText,NAME,НАЗВАТИ
 LiteralText,name?,ім’я?
 LiteralText,neutral,нейтральний
 LiteralText,never,ніколи
+LiteralText,NEW,
 LiteralText,no additional effects,немає додаткових ефектів
 LiteralText,no allies,нема отряду
 LiteralText,no ambient sounds,без навколишніх звуків
@@ -3572,6 +3573,7 @@ LiteralText,POLYMORPH,ПЕРЕТВОРЕННЯ
 LiteralText,Polymorph into what?,Перетворитися на кого?
 LiteralText,POLYMORPHED,ПЕРЕТВОРЕНИЙ НА
 LiteralText,portal,портал
+LiteralText,PORTALS,
 LiteralText,porter,портер
 LiteralText,PRAY,МОЛИТИСЯ
 LiteralText,preservation,збереження
@@ -3872,21 +3874,41 @@ MaterialName,wood,деревина
 MeasurementSystemName,imperial,англійська
 MeasurementSystemName,metric,метрична
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Спустіться в процедурно-згенеровані підземелля і печери. Нескінченна реіграбельность, рекомендовано для новачків в Pathos."
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Створені вручну карти для пригод на поверхні. Вийдіть з підземелля і відправтеся на виконання Квесту.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"На вас чекають цікаві кімнати, але не затримуйтеся; маєте спускатися або померти. Основане на генераторі з Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Пісочниця для експериментів з ігровою механікою Pathos. Пограйте з кожною річчю, пастками і механізмами нашого підземелля на простий двокімнатній карті."
 ModuleName,Dhak Legacy,Спадщина Дхаки
+ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Кодекс «Nethack»
 ModuleName,Pixel Sojourn,Екскурсія до Pixel
 ModuleName,Sandbox Play,Пісочниця
 ModuleTerm,Abyss,Безодня
+ModuleTerm,Ant Cave,
+ModuleTerm,Ant Lair,
+ModuleTerm,Ant Nest,
+ModuleTerm,Arena,
 ModuleTerm,attic,горище
+ModuleTerm,Black Lair,
 ModuleTerm,Black Market,Чорний ринок
+ModuleTerm,Blue Lair,
+ModuleTerm,Cage,
+ModuleTerm,Canyon,
+ModuleTerm,Cave Maze,
 ModuleTerm,caves,печери
+ModuleTerm,Cavetown,
 ModuleTerm,cellar,льох
+ModuleTerm,Cemetery,
+ModuleTerm,Chicken Farm,
+ModuleTerm,Cow Farm,
+ModuleTerm,Crater,
+ModuleTerm,Crypt,
+ModuleTerm,Crystal Henge,
+ModuleTerm,Deep Lair,
 ModuleTerm,Deephall,
 ModuleTerm,Deepruins,
 ModuleTerm,Deepwilds,
+ModuleTerm,Diamond Mine,
 ModuleTerm,Dungeon,Підземелля
 ModuleTerm,Elf Forest,Ельфійський Ліс
 ModuleTerm,Elf Kingdom,Ельфійське Королівство
@@ -3895,12 +3917,28 @@ ModuleTerm,Elf Palace 2,Ельфійський палац 2
 ModuleTerm,Elf Palace Vault,Скарбниця Ельфійського палацу
 ModuleTerm,Elf Town,Ельфійське місто
 ModuleTerm,Elf Town Trove,казна Ельфійського міста
+ModuleTerm,Emerald Mine,
+ModuleTerm,Eye Pit,
 ModuleTerm,Fort Ludios,Форт Людіос
+ModuleTerm,Furnace,
+ModuleTerm,Glacier,
+ModuleTerm,Goat Farm,
+ModuleTerm,Green Lair,
+ModuleTerm,Halls,
+ModuleTerm,Helltown,
+ModuleTerm,Horse Farm,
+ModuleTerm,Ice Lake,
 ModuleTerm,Infernal Cage,Пекельна Клітка
 ModuleTerm,Infernal Fields,Пекельні поля
 ModuleTerm,Infernal Keep,Пекельний Замок
 ModuleTerm,Infernal Spire,Пекельний Шпиль
+ModuleTerm,Jadetown,
+ModuleTerm,Jelly Pit,
+ModuleTerm,Kobold Fort,
 ModuleTerm,Labyrinth,Лабіринт
+ModuleTerm,Lake,
+ModuleTerm,Lava Flow,
+ModuleTerm,Lava Lake,
 ModuleTerm,level//depth,рівень
 ModuleTerm,Lich Tower,Лич Вежа
 ModuleTerm,Lost Chambers,Втрачені палати
@@ -3908,13 +3946,57 @@ ModuleTerm,Ludios Cache,Тайник Лудіоса
 ModuleTerm,Medusa Lair,Гніздо Медузи
 ModuleTerm,Mines,Копальні
 ModuleTerm,Minetown,Шахтне містечко
+ModuleTerm,Moss Pit,
+ModuleTerm,Opus,
+ModuleTerm,Orange Lair,
+ModuleTerm,Outpost,
 ModuleTerm,Overland,
+ModuleTerm,Pig Farm,
+ModuleTerm,Prison,
+ModuleTerm,Pudding Pit,
+ModuleTerm,Rat Pit,
+ModuleTerm,Red Lair,
+ModuleTerm,River,
+ModuleTerm,Ruby Mine,
+ModuleTerm,Ruins,
+ModuleTerm,Rupture,
+ModuleTerm,Sapphire Mine,
+ModuleTerm,Scorpion Cave,
+ModuleTerm,Scorpion Lair,
+ModuleTerm,Scorpion Nest,
+ModuleTerm,Seal Farm,
+ModuleTerm,Sheep Farm,
+ModuleTerm,Shimmer Lair,
+ModuleTerm,Shroom Maze,
+ModuleTerm,Slime Pit,
+ModuleTerm,Snake Pit,
 ModuleTerm,Sokoban,Сокобан
+ModuleTerm,Spider Cave,
+ModuleTerm,Spider Lair,
+ModuleTerm,Spider Nest,
+ModuleTerm,Station,
+ModuleTerm,Statue Henge,
+ModuleTerm,Stone Henge,
+ModuleTerm,Stonetown,
+ModuleTerm,strange chicken,
+ModuleTerm,strange cow,
+ModuleTerm,strange goat,
+ModuleTerm,strange horse,
+ModuleTerm,strange pig,
+ModuleTerm,strange seal,
+ModuleTerm,strange sheep,
+ModuleTerm,Topaz Mine,
+ModuleTerm,Tree Maze,
 ModuleTerm,trove,скарбниця
 ModuleTerm,Underbarracks,
+ModuleTerm,Underground,
 ModuleTerm,Underlimits,
 ModuleTerm,Underpeaks,
 ModuleTerm,Undertown,
+ModuleTerm,White Lair,
+ModuleTerm,Woodtown,
+ModuleTerm,Worm Pit,
+ModuleTerm,Yellow Lair,
 MotionPastName,anointed,помазав
 MotionPastName,ate,з'їв
 MotionPastName,captured,захоплено
