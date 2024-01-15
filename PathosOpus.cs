@@ -62,11 +62,15 @@ namespace Pathos
     public const string Halls = "Halls";
     public const string Cage = "Cage";
     public const string Rupture = "Rupture";
+    public const string Respite = "Respite";
+    public const string Rebirth = "Rebirth";
     public const string Crypt = "Crypt";
     public const string Furnace = "Furnace";
     public const string Arena = "Arena";
     public const string Prison = "Prison";
     public const string Cemetery = "Cemetery";
+    public const string Grotto = "Grotto";
+    public const string Ambush = "Ambush";
 
     // Towns.
     public const string Woodtown = "Woodtown";
@@ -269,6 +273,7 @@ namespace Pathos
           (Section) => Mine.Build(Section), // mine
         (Section) => Town.Build(Section),
           (Section) => Lake.Build(Section),
+          (Section) => Farm.Build(Section), // garden
           (Section) => Outpost.Build(Section),
           (Section) => Henge.Build(Section),
           (Section) => Halls.Build(Section), // halls
@@ -298,8 +303,7 @@ namespace Pathos
         (Clearing) => Vendor.Build(Clearing),
         (Clearing) => Horde.Build(Clearing),
         (Clearing) => Zoo.Build(Clearing),
-        (Clearing) => Print.Build(Clearing),
-        (Clearing) => Farm.Build(Clearing)
+        (Clearing) => Print.Build(Clearing)
       };
 
       var OpusDesign = NewDesign(256, 256, CriticalList.Length - 1); // minus one because origin counts as distance zero.
@@ -1258,6 +1262,8 @@ namespace Pathos
       {
         BuildStart();
 
+        Section.UndergroundAreaName = OpusTerms.Rebirth;
+
         var OverlandMap = Maker.OverlandMap;
         var UndergroundMap = Maker.UndergroundMap;
         var OriginClearing = Section.SmallestClearing;
@@ -1421,7 +1427,7 @@ namespace Pathos
           Debug.Assert(ConnectZone.HasSquares());
         }
 
-        StationMap.AddArea(OpusTerms.Station).AddMapZones();
+        StationMap.AddArea(StationName).AddMapZones();
 
         BuildStop();
 
@@ -1466,6 +1472,8 @@ namespace Pathos
       public void Build(OpusSection Section)
       {
         BuildStart();
+
+        Section.OverlandAreaName = OpusTerms.Grotto;
 
         var AmbushMap = Maker.OverlandMap;
         var AmbushCircle = Section.LargestClearing.Circle;
@@ -1557,6 +1565,8 @@ namespace Pathos
             LureTrigger.Add(Delay.Zero, Codex.Tricks.mobilise_boulder).SetTarget(BoulderSquare);
           }
         }
+
+        AmbushMap.AddArea(Generator.EscapedModuleTerm(OpusTerms.Ambush)).AddZone(LureZone);
 
         var BoulderWater = Chance.OneIn2.Hit();
         void PlaceBoulderFill(Square FillSquare)
@@ -1995,7 +2005,7 @@ namespace Pathos
           // prepare the map.
           Generator.RepairMap(BelowMap, BelowMap.Region);
 
-          BelowMap.AddArea(CageVariant.BelowName).AddMapZones();
+          BelowMap.AddArea(BelowName).AddMapZones();
         }
 
         BuildStop();
@@ -2629,7 +2639,7 @@ namespace Pathos
 
             Generator.RepairMap(CryptMap, CryptMap.Region);
 
-            CryptMap.AddArea(CryptVariant.Name).AddMapZones();
+            CryptMap.AddArea(CryptName).AddMapZones();
 
 #if DEBUG
             foreach (var FrameSquare in CryptMap.GetFrameSquares(CryptMap.Region))
@@ -2899,7 +2909,7 @@ namespace Pathos
           // repair the walls and zones.
           Generator.RepairMap(LairMap, LairMap.Region);
 
-          LairMap.AddArea(DragonLairVariant.Name).AddMapZones();
+          LairMap.AddArea(DragonLairName).AddMapZones();
 
           Debug.Assert(!LairMap.Zones.Any(Z => Z.Squares.Count == 0), "Dragon lair should not have any zones without squares.");
 
@@ -2945,7 +2955,7 @@ namespace Pathos
         (
           new FarmVariant
           {
-            SecretName = OpusTerms.ChickenFarm,
+            Name = OpusTerms.ChickenFarm,
             StrangeName = OpusTerms.StrangeChicken,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2953,7 +2963,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.SheepFarm,
+            Name = OpusTerms.SheepFarm,
             StrangeName = OpusTerms.StrangeSheep,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2961,7 +2971,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.GoatFarm,
+            Name = OpusTerms.GoatFarm,
             StrangeName = OpusTerms.StrangeGoat,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2969,7 +2979,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.PigFarm,
+            Name = OpusTerms.PigFarm,
             StrangeName = OpusTerms.StrangePig,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2977,7 +2987,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.HorseFarm,
+            Name = OpusTerms.HorseFarm,
             StrangeName = OpusTerms.StrangeHorse,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2985,7 +2995,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.CowFarm,
+            Name = OpusTerms.CowFarm,
             StrangeName = OpusTerms.StrangeCow,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
@@ -2993,7 +3003,7 @@ namespace Pathos
           },
           new FarmVariant
           {
-            SecretName = OpusTerms.SealFarm,
+            Name = OpusTerms.SealFarm,
             StrangeName = OpusTerms.StrangeSeal,
             FieldGround = Codex.Grounds.water,
             FenceGround = Codex.Grounds.sand,
@@ -3002,12 +3012,15 @@ namespace Pathos
         );
       }
 
-      public void Build(OpusClearing FarmClearing)
+      public void Build(OpusSection Section)
       {
         BuildStart();
 
-        var FarmMap = Maker.OverlandMap;
         var FarmVariant = FarmVariance.NextVariant();
+        Section.OverlandAreaName = FarmVariant.Name;
+
+        var FarmClearing = Section.LargestClearing;
+        var FarmMap = Maker.OverlandMap;
 
         var FarmCircle = FarmClearing.Circle.Reduce(FarmClearing.Circle.Radius > 4 ? FarmClearing.Circle.Radius - 4 : 2);
 
@@ -3020,7 +3033,7 @@ namespace Pathos
           Generator.PlaceFloor(FarmSquare, FarmVariant.FenceGround);
 
         // Strange animals.
-        var Strange = Chance.OneIn4.Hit();
+        var Strange = Chance.Always.Hit();
         var SuspicousEntity = FarmVariant.EntityList[0]; // first entity is the Strange one.
         var StrangeName = Generator.EscapedModuleTerm(FarmVariant.StrangeName);
         void ActSuspicous(Character StrangeCharacter)
@@ -3094,7 +3107,7 @@ namespace Pathos
 
         // secret level.
         var SecretCharacter = MiddleSquare.Character;
-        var SecretName = Generator.EscapedModuleTerm(FarmVariant.SecretName);
+        var SecretName = Generator.EscapedModuleTerm(FarmVariant.Name);
         if (SecretCharacter != null && !Generator.Adventure.World.HasSite(SecretName))
         {
           var SecretSite = Generator.Adventure.World.AddSite(SecretName);
@@ -3146,15 +3159,17 @@ namespace Pathos
           }
 
           var UniqueSquare = SecretMap.GetCircleInnerSquares(SecretCircle).Where(S => S.Character != null).GetRandomOrNull();
-          if (UniqueSquare != null)
-            UniqueSquare.PlaceAsset(Generator.GenerateUniqueAsset(UniqueSquare));
+          UniqueSquare?.PlaceAsset(Generator.GenerateUniqueAsset(UniqueSquare));
 
           SecretZone.SetLit(true);
           Debug.Assert(SecretZone.HasSquares());
 
           Generator.PlacePassage(RiftSquare, Codex.Portals.rift, MiddleSquare);
 
-          SecretCharacter.InsertScript().Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetTarget(RiftSquare);
+          var SecretScript = SecretCharacter.InsertScript();
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.connecting_portal).SetTarget(RiftSquare);
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.transport_candidate).SetSource(SecretCharacter).SetTarget(RiftSquare);
+          SecretScript.Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetTarget(RiftSquare);
 
           Generator.RepairMap(SecretMap, SecretMap.Region);
         }
@@ -3173,7 +3188,7 @@ namespace Pathos
 
       private sealed class FarmVariant
       {
-        public string SecretName;
+        public string Name;
         public string StrangeName;
         public Ground FieldGround;
         public Ground FenceGround;
@@ -3415,6 +3430,10 @@ namespace Pathos
                   SackAsset.Container.Stash.Add(MercenaryAsset);
               }
 
+              // The 'One Ring'.
+              if (SackAsset.Container.Stash.Count == 0)
+                SackAsset.Container.Stash.Add(Generator.NewSpecificAsset(S, Codex.Items.ring_of_invisibility));
+
               SackAsset.Container.Stash.Add(Generator.CorpseCharacter(HobbitCharacter));
             }
           },
@@ -3616,7 +3635,7 @@ namespace Pathos
 
           Generator.RepairMap(FurnaceMap, FurnaceMap.Region);
 
-          FurnaceMap.AddArea(OpusTerms.Furnace).AddMapZones();
+          FurnaceMap.AddArea(FurnaceName).AddMapZones();
 
           var ResultSquare = FurnaceMap.Midpoint;
           FurnaceLevel.SetTransitions(ResultSquare, null);
@@ -3768,7 +3787,7 @@ namespace Pathos
 
             BuildHall(BelowMap, BelowMap.Region, BelowVariant);
 
-            BelowMap.AddArea(OpusTerms.Halls).AddMapZones();
+            BelowMap.AddArea(HallsName).AddMapZones();
           }
         }
 
@@ -4861,19 +4880,13 @@ namespace Pathos
           {
             Generator.PlaceCharacter(GolemSquare, MineVariant.Golem);
             var GolemCharacter = GolemSquare.Character;
-            if (GolemCharacter != null)
-            {
-              // gimmick: raging, tunnelling golem (slowness to make it escapable).
-              GolemCharacter.AcquireTalent(Codex.Properties.aggravation, Codex.Properties.rage, Codex.Properties.tunnelling, Codex.Properties.slowness);
-
-              // NOTE: no artifact because this isn't a unique character.
-              //Generator.GainCarriedAsset(GolemCharacter, Generator.GenerateUniqueAsset(BossSquare));
-            }
+            // gimmick: raging, tunnelling golem (slowness to make it escapable).
+            GolemCharacter?.AcquireTalent(Codex.Properties.aggravation, Codex.Properties.rage, Codex.Properties.tunnelling, Codex.Properties.slowness);
           }
 
           Generator.RepairMap(BelowMap, BelowMap.Region);
 
-          BelowMap.AddArea(MineVariant.Name).AddMapZones();
+          BelowMap.AddArea(MineName).AddMapZones();
         }
 
         // TODO:
@@ -5040,11 +5053,13 @@ namespace Pathos
           var NestSite = Generator.Adventure.World.AddSite(NestName);
           const int NestSize = 32;
 
-          var BelowMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NestVariant.CaveName), NestSize, NestSize);
-          BelowMap.SetDifficulty(Section.Distance + 1);
-          BelowMap.SetTerminal(false);
-          BelowMap.SetAtmosphere(Codex.Atmospheres.cavern);
-          var BelowLevel = NestSite.AddLevel(1, BelowMap);
+          var CaveName = Generator.EscapedModuleTerm(NestVariant.CaveName);
+
+          var CaveMap = Generator.Adventure.World.AddMap(CaveName, NestSize, NestSize);
+          CaveMap.SetDifficulty(Section.Distance + 1);
+          CaveMap.SetTerminal(false);
+          CaveMap.SetAtmosphere(Codex.Atmospheres.cavern);
+          var BelowLevel = NestSite.AddLevel(1, CaveMap);
 
           var PointCount = RandomSupport.NextNumber(15, 20);
           var PointList = new Inv.DistinctList<Inv.Point>(PointCount);
@@ -5054,8 +5069,8 @@ namespace Pathos
             var Attempt = 0;
             do
             {
-              var PointX = RandomSupport.NextRange(BelowMap.Region.Left + 2, BelowMap.Region.Right - 2);
-              var PointY = RandomSupport.NextRange(BelowMap.Region.Top + 2, BelowMap.Region.Bottom - 2);
+              var PointX = RandomSupport.NextRange(CaveMap.Region.Left + 2, CaveMap.Region.Right - 2);
+              var PointY = RandomSupport.NextRange(CaveMap.Region.Top + 2, CaveMap.Region.Bottom - 2);
 
               var Point = new Inv.Point(PointX, PointY);
 
@@ -5084,7 +5099,7 @@ namespace Pathos
           {
             if (LastPoint != null)
             {
-              foreach (var PathSquare in Maker.DeviatingPath(BelowMap[LastPoint.Value], BelowMap[Point], BelowMap.Region))
+              foreach (var PathSquare in Maker.DeviatingPath(CaveMap[LastPoint.Value], CaveMap[Point], CaveMap.Region))
                 Generator.PlaceFloor(PathSquare, Codex.Grounds.cave_floor);
             }
 
@@ -5093,18 +5108,18 @@ namespace Pathos
 
           // nest passages.
           var EnterSquare = NestEnterList.GetRandom();
-          var ExitSquare = Generator.ExpandingFindSquare(BelowMap.Midpoint, NestSize, S => S.Floor != null);
+          var ExitSquare = Generator.ExpandingFindSquare(CaveMap.Midpoint, NestSize, S => S.Floor != null);
 
           Generator.PlacePassage(EnterSquare, Codex.Portals.clay_staircase_down, ExitSquare);
           Generator.PlacePassage(ExitSquare, Codex.Portals.clay_staircase_up, EnterSquare);
 
-          var RoyalSquare = Generator.ReducingFindSquare(BelowMap.Midpoint, NestSize, S => S.Floor != null);
+          var RoyalSquare = Generator.ReducingFindSquare(CaveMap.Midpoint, NestSize, S => S.Floor != null);
           Generator.PlacePassage(RoyalSquare, Codex.Portals.wooden_ladder_down, null);
 
           BelowLevel.SetTransitions(UpSquare: ExitSquare, DownSquare: RoyalSquare);
 
           // nest boundary.
-          foreach (var BoundarySquare in BelowMap.GetSquares())
+          foreach (var BoundarySquare in CaveMap.GetSquares())
           {
             if (BoundarySquare.IsVoid() && BoundarySquare.GetAdjacentSquares().Any(S => S.Floor != null && S.Wall == null))
             {
@@ -5114,7 +5129,7 @@ namespace Pathos
           }
 
           // traps.
-          foreach (var TrapSquare in BelowMap.GetSquares().Where(S => Maker.IsCorner(S, C => C.Wall != null, O => O.Floor != null)))
+          foreach (var TrapSquare in CaveMap.GetSquares().Where(S => Maker.IsCorner(S, C => C.Wall != null, O => O.Floor != null)))
           {
             if (TrapSquare.Wall == null && TrapSquare.Passage == null)
             {
@@ -5142,7 +5157,7 @@ namespace Pathos
             }
           }
 
-          foreach (var EggSquare in BelowMap.GetSquares().Where(S => S.Floor != null && S.GetAdjacentSquares().All(S => S.Floor != null)))
+          foreach (var EggSquare in CaveMap.GetSquares().Where(S => S.Floor != null && S.GetAdjacentSquares().All(S => S.Floor != null)))
           {
             Generator.PlaceFloor(EggSquare, Codex.Grounds.moss);
 
@@ -5150,31 +5165,32 @@ namespace Pathos
               PlaceEgg(EggSquare);
           }
 
-          Generator.RepairMap(BelowMap, BelowMap.Region);
+          Generator.RepairMap(CaveMap, CaveMap.Region);
 
-          BelowMap.AddArea(NestVariant.CaveName).AddMapZones();
+          CaveMap.AddArea(CaveName).AddMapZones();
 
           // boss chambers.
-          var BossMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NestVariant.LairName), NestSize, NestSize);
-          BossMap.SetDifficulty(Section.Distance + 2);
-          BossMap.SetTerminal(true);
-          BossMap.SetAtmosphere(Codex.Atmospheres.cavern);
-          var BossLevel = NestSite.AddLevel(2, BossMap);
+          var LairName = Generator.EscapedModuleTerm(NestVariant.LairName);
+          var LairMap = Generator.Adventure.World.AddMap(LairName, NestSize, NestSize);
+          LairMap.SetDifficulty(Section.Distance + 2);
+          LairMap.SetTerminal(true);
+          LairMap.SetAtmosphere(Codex.Atmospheres.cavern);
+          var BossLevel = NestSite.AddLevel(2, LairMap);
 
           var BossRadius = NestSize / 8;
-          var BossCircle = new Inv.Circle(BossMap.Midpoint.Point, BossRadius);
-          var BossSquare = BossMap[BossCircle.Origin];
+          var BossCircle = new Inv.Circle(LairMap.Midpoint.Point, BossRadius);
+          var BossSquare = LairMap[BossCircle.Origin];
           var ChamberRadius = BossRadius / 2;
-          var JoinSquare = BossMap.GetCircleOuterSquares(BossCircle.Expand(ChamberRadius - 1)).GetRandomOrNull();
+          var JoinSquare = LairMap.GetCircleOuterSquares(BossCircle.Expand(ChamberRadius - 1)).GetRandomOrNull();
           var JoinCircle = new Inv.Circle(JoinSquare.Point, ChamberRadius);
           var LootSquare = JoinSquare.Rotate(BossCircle.Origin, 180);
           var LootCircle = new Inv.Circle(LootSquare.Point, ChamberRadius);
 
-          var BossZone = BossMap.AddZone();
+          var BossZone = LairMap.AddZone();
 
           var BossTrigger = BossZone.InsertTrigger();
 
-          foreach (var ChamberSquare in BossMap.GetCircleInnerSquares(BossCircle))
+          foreach (var ChamberSquare in LairMap.GetCircleInnerSquares(BossCircle))
           {
             Generator.PlaceFloor(ChamberSquare, Codex.Grounds.moss);
 
@@ -5199,8 +5215,8 @@ namespace Pathos
           }
           Debug.Assert(BossZone.HasSquares());
 
-          var JoinZone = BossMap.AddZone();
-          foreach (var ChamberSquare in BossMap.GetCircleInnerSquares(JoinCircle))
+          var JoinZone = LairMap.AddZone();
+          foreach (var ChamberSquare in LairMap.GetCircleInnerSquares(JoinCircle))
           {
             Generator.PlaceFloor(ChamberSquare, Codex.Grounds.moss);
 
@@ -5211,11 +5227,11 @@ namespace Pathos
           Debug.Assert(JoinZone.HasSquares());
 
           // surround join chamber with traps.
-          foreach (var ChamberSquare in BossMap.GetCircleInnerSquares(JoinCircle).Where(S => S.GetAdjacentSquares().Any(T => T.IsVoid())))
+          foreach (var ChamberSquare in LairMap.GetCircleInnerSquares(JoinCircle).Where(S => S.GetAdjacentSquares().Any(T => T.IsVoid())))
             Generator.PlaceTrap(ChamberSquare, NestVariant.Device, Revealed: true);
 
-          var LootZone = BossMap.AddZone();
-          foreach (var ChamberSquare in BossMap.GetCircleInnerSquares(LootCircle))
+          var LootZone = LairMap.AddZone();
+          foreach (var ChamberSquare in LairMap.GetCircleInnerSquares(LootCircle))
           {
             Generator.PlaceFloor(ChamberSquare, Codex.Grounds.moss);
 
@@ -5239,7 +5255,7 @@ namespace Pathos
               Generator.PlaceRandomAsset(ChamberSquare);
           }
 
-          Maker.RepairBoundary(BossMap, BossMap.Region, Codex.Barriers.cave_wall, Codex.Grounds.moss, IsLit: true);
+          Maker.RepairBoundary(LairMap, LairMap.Region, Codex.Barriers.cave_wall, Codex.Grounds.moss, IsLit: true);
 
           BossLevel.SetTransitions(UpSquare: JoinSquare, DownSquare: null);
 
@@ -5249,9 +5265,9 @@ namespace Pathos
           var BossCharacter = Maker.NewEvilCharacter(BossSquare, Maker.SelectUniqueEntity(NestVariant.Boss));
           Generator.PlaceCharacter(BossSquare, BossCharacter);
 
-          Generator.RepairMap(BossMap, BossMap.Region);
+          Generator.RepairMap(LairMap, LairMap.Region);
 
-          BossMap.AddArea(NestVariant.LairName).AddMapZones();
+          LairMap.AddArea(LairName).AddMapZones();
         }
 
         // TODO:
@@ -5519,6 +5535,8 @@ namespace Pathos
       public void Build(OpusSection Section)
       {
         BuildStart();
+
+        Section.OverlandAreaName = OpusTerms.Respite;
 
         var RoadMap = Maker.OverlandMap;
         var RoadVariant = RoadVariance.NextVariant();
@@ -5994,7 +6012,7 @@ H-----------H
 
             BuildRuin(BelowMap, BelowMap.Region, BelowVariant);
 
-            BelowMap.AddArea(OpusTerms.Ruins).AddMapZones();
+            BelowMap.AddArea(RuinsName).AddMapZones();
           }
         }
 
@@ -6918,12 +6936,19 @@ H-----------H
 
           var StorageAssetList = new Inv.DistinctList<Asset>();
 
+          Zone PlaceZone(OpusBuilding Building)
+          {
+            var Zone = BelowMap.AddZone();
+            Zone.AddRegion(Building.Region);
+            Zone.SetAccessRestricted(true);
+            Zone.SetSpawnRestricted(true);
+            Zone.SetLit(true);
+            Debug.Assert(Zone.HasSquares());
+            return Zone;
+          }
           void PlaceShaft(OpusBuilding Building)
           {
-            var ShaftZone = BelowMap.AddZone();
-            ShaftZone.AddRegion(Building.Region);
-            ShaftZone.SetLit(true);
-            Debug.Assert(ShaftZone.HasSquares());
+            var ShaftZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -6950,11 +6975,7 @@ H-----------H
           }
           void PlaceCell(OpusBuilding Building)
           {
-            var CellZone = BelowMap.AddZone();
-            CellZone.AddRegion(Building.Region);
-            CellZone.SetAccessRestricted(true);
-            CellZone.SetLit(true);
-            Debug.Assert(CellZone.HasSquares());
+            var CellZone = PlaceZone(Building);
 
             var HorizontalWide = Building.Region.Width >= 5;
             var VerticalWide = Building.Region.Height >= 5;
@@ -7018,10 +7039,7 @@ H-----------H
           }
           void PlaceYard(OpusBuilding Building)
           {
-            var YardZone = BelowMap.AddZone();
-            YardZone.AddRegion(Building.Region);
-            YardZone.SetLit(true);
-            Debug.Assert(YardZone.HasSquares());
+            var YardZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetSquares(Building.Region))
             {
@@ -7041,10 +7059,7 @@ H-----------H
           }
           void PlaceOffice(OpusBuilding Building)
           {
-            var OfficeZone = BelowMap.AddZone();
-            OfficeZone.AddRegion(Building.Region);
-            OfficeZone.SetLit(true);
-            Debug.Assert(OfficeZone.HasSquares());
+            var OfficeZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -7088,10 +7103,7 @@ H-----------H
           }
           void PlaceVault(OpusBuilding Building)
           {
-            var VaultZone = BelowMap.AddZone();
-            VaultZone.AddRegion(Building.Region);
-            VaultZone.SetLit(true);
-            Debug.Assert(VaultZone.HasSquares());
+            var VaultZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -7130,10 +7142,7 @@ H-----------H
           }
           void PlaceGarrison(OpusBuilding Building)
           {
-            var GarrisonZone = BelowMap.AddZone();
-            GarrisonZone.AddRegion(Building.Region);
-            GarrisonZone.SetLit(true);
-            Debug.Assert(GarrisonZone.HasSquares());
+            var GarrisonZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -7159,10 +7168,7 @@ H-----------H
           }
           void PlaceStorage(OpusBuilding Building)
           {
-            var StorageZone = BelowMap.AddZone();
-            StorageZone.AddRegion(Building.Region);
-            StorageZone.SetLit(true);
-            Debug.Assert(StorageZone.HasSquares());
+            var StorageZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -7196,10 +7202,7 @@ H-----------H
           }
           void PlaceZoo(OpusBuilding Building)
           {
-            var ZooZone = BelowMap.AddZone();
-            ZooZone.AddRegion(Building.Region);
-            ZooZone.SetLit(true);
-            Debug.Assert(ZooZone.HasSquares());
+            var ZooZone = PlaceZone(Building);
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
@@ -7257,7 +7260,7 @@ H-----------H
 
           Generator.RepairMap(BelowMap, BelowMap.Region);
 
-          BelowMap.AddArea(PrisonVariant.Name).AddMapZones();
+          BelowMap.AddArea(PrisonName).AddMapZones();
         }
 
         // TODO:

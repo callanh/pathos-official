@@ -29730,7 +29730,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
-        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d7(), K =>
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d10(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +4
@@ -29796,6 +29796,58 @@ namespace Pathos
           K.Apply.ApplyTransient(Properties.silence, 3.d40());
         });
         E.Conveyance.MajorResistance(Elements.sleep);
+        E.SetCorpse(Chance.Always);
+      });
+
+      Scorpius = AddUniqueEntity(Kinds.spider, null, "Scorpius", E =>
+      {
+        E.Glyph = Glyphs.Scorpius;
+        E.Sonic = Sonics.scuttle;
+        E.Level = 22;
+        E.Challenge = 414;
+        E.Difficulty = 25;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(32000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: false,
+          Limbs: true,
+          Feet: false,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 24, DEX: 24, CON: 24, INT: 10, WIS: 10, CHA: 16);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.male);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.dark_vision, Properties.teleport_control, Properties.jumping);
+        E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +6 from STR
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.sting, Elements.physical, 2.d10(), A =>
+        {
+          A.Apply.Macro(MajorPoison(Attributes.strength));
+          A.Apply.Afflict(Codex.Afflictions.poisoning);
+        });
+        E.Conveyance.MajorResistance(Elements.poison);
+        E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
       });
 
@@ -30043,58 +30095,6 @@ namespace Pathos
         E.AddAttack(AttackTypes.sting, Elements.physical, 5.d4(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
-        });
-        E.Conveyance.MajorResistance(Elements.poison);
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.Always);
-      });
-
-      Scorpius = AddUniqueEntity(Kinds.spider, null, "Scorpius", E =>
-      {
-        E.Glyph = Glyphs.Scorpius;
-        E.Sonic = Sonics.scuttle;
-        E.Level = 22;
-        E.Challenge = 414;
-        E.Difficulty = 25;
-        E.Frequency = 0;
-        E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S5_0;
-        E.Size = Size.Large;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(32000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: false,
-          Limbs: true,
-          Feet: false,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 24, DEX: 24, CON: 24, INT: 10, WIS: 10, CHA: 16);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.male);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.clarity, Properties.dark_vision, Properties.teleport_control, Properties.jumping);
-        E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6()); // +6 from STR
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6());
-        E.AddAttack(AttackTypes.sting, Elements.physical, 4.d10(), A =>
-        {
-          A.Apply.Macro(MajorPoison(Attributes.strength));
-          A.Apply.Afflict(Codex.Afflictions.poisoning);
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));

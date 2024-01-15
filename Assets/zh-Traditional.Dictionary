@@ -133,7 +133,7 @@ AppearanceName,emerald potion,翠綠藥水
 AppearanceName,emerald ring,綠寶石戒指
 AppearanceName,engagement ring,結婚戒指
 AppearanceName,etched helmet,蝕銹頭盔
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,奇異雙尖長柄武器
 AppearanceName,faded book,褪色的書
 AppearanceName,faded pall,褪色斗篷
 AppearanceName,fencing gloves,劍術手套
@@ -367,7 +367,7 @@ AppearanceName,tin wand,錫制魔杖
 AppearanceName,tiny book,小巧的書
 AppearanceName,topaz ring,黃玉戒指
 AppearanceName,torn book,被撕裂的書
-AppearanceName,toy sword,
+AppearanceName,toy sword,玩具劍
 AppearanceName,triangular amulet,三角形護符
 AppearanceName,turquoise book,綠松石書
 AppearanceName,twisted ring,扭曲戒指
@@ -462,7 +462,7 @@ BarrierName,jade wall,玉牆
 BarrierName,shroom,蘑菇牆
 BarrierName,stone wall,石牆
 BarrierName,tree,樹
-BarrierName,wooden wall,
+BarrierName,wooden wall,木牆
 BeamName,acid,強酸
 BeamName,cold,寒冷
 BeamName,death,死亡
@@ -483,7 +483,7 @@ BlockName,crystal boulder,巨水晶球
 BlockName,gold boulder,巨型黃金球
 BlockName,statue,雕像
 BlockName,stone boulder,巨石
-BlockName,trophy,
+BlockName,trophy,金雕
 BlockName,wooden barrel,木桶
 BoonDescription,Ask for a unicorn to join your party.,召喚一頭獨角獸與你為伴。
 BoonDescription,Bless one item in your inventory or on the ground.,祝福物品欄中或地面上的一件物品。
@@ -931,7 +931,7 @@ DeviceName,noxious pool,毒液池
 DeviceName,pit,陷坑
 DeviceName,poison gas trap,毒氣陷阱
 DeviceName,polymorph trap,變形陷阱
-DeviceName,pressure plate,
+DeviceName,pressure plate,壓力板
 DeviceName,scything blade trap,鐮刀陷阱
 DeviceName,shock trap,電擊陷阱
 DeviceName,silence trap,沉默陷阱
@@ -1013,7 +1013,7 @@ EffectType,charging,充能
 EffectType,charm,魅力
 EffectType,clone character,克隆角色
 EffectType,concealing,隱匿
-EffectType,connect passage,
+EffectType,connect passage,連接通道
 EffectType,convert asset,轉換物件
 EffectType,convert boulder,轉換巨石
 EffectType,convert door,轉換門
@@ -1060,7 +1060,7 @@ EffectType,lose skill,失去技能
 EffectType,lose talent,失去天賦
 EffectType,malnutrition,降低營養
 EffectType,mapping,地圖繪製
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,移動巨石
 EffectType,murder,秒殺
 EffectType,nutrition,營養
 EffectType,opening,開啟
@@ -1266,7 +1266,7 @@ EntityName,blood imp,血色惡魔
 EntityName,bloodshot eye,血絲之眼
 EntityName,bloodworm,血蠕蟲
 EntityName,blue jelly,藍色凝凍
-EntityName,blue light,
+EntityName,blue light,藍光
 EntityName,bone devil,骨魔
 EntityName,brown mould,褐色真菌
 EntityName,brown pudding,褐色凝膠怪
@@ -1366,7 +1366,7 @@ EntityName,elf mummy,精靈木乃伊
 EntityName,elf zombie,精靈殭屍
 EntityName,Elwing,愛爾溫
 EntityName,embalmer,斂屍者
-EntityName,emerald golem,
+EntityName,emerald golem,綠寶石傀儡
 EntityName,energy vortex,能量旋風
 EntityName,erinys,欲魔
 EntityName,ettin,雙頭巨人
@@ -1690,7 +1690,7 @@ EntityName,rancid jelly,腐臭凝凍
 EntityName,rat king,鼠之王
 EntityName,ratwere,鼠狼人
 EntityName,recluse spider,隱蔽獵蛛
-EntityName,red light,
+EntityName,red light,紅光
 EntityName,red mould,紅色真菌
 EntityName,red naga,紅色娜迦
 EntityName,red naga hatchling,紅色幼娜迦
@@ -1771,7 +1771,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,虎狼人
 EntityName,titan,泰坦巨人
 EntityName,titanothere,雷獸
-EntityName,topaz golem,
+EntityName,topaz golem,黃玉傀儡
 EntityName,tortle,龜行者
 EntityName,tracker,獵人
 EntityName,transmuter,變形術士
@@ -2088,7 +2088,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} 斤
 FormatText,after reaching dungeon level {RecordDepth},最深到達過 {RecordDepth} 層
 FormatText,animate {CharacterName},活化 {CharacterName}
 FormatText,boost {AttributeName} by enchantment,根據附魔改變{AttributeName}
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},破壞 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封頂
 FormatText,Cast {SpellName} on which item?,對哪個物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪個方向使用 {SpellName} ？
@@ -2153,8 +2153,8 @@ FormatText,when {STANDINGNAME},當 {STANDINGNAME}
 FormatText,when resists {ElementName},當對 {ElementName} 免疫時
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,這扇門是用水晶造成的，很難損壞。
 GateName,crystal door,水晶門
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,金門
+GateName,iron door,鐵門
 GateName,wooden door,木製門
 GenderHimself,herself,她自己
 GenderHimself,himself,他自己
@@ -2174,21 +2174,21 @@ GradeName,artifact,神器
 GradeName,exotic,超凡
 GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,冰冷的石頭地面的製作手藝並不精良，但是上面刻滿了時間的痕跡。
-GroundName,cave floor,
+GroundName,cave floor,洞穴地面
 GroundName,chasm,裂隙
 GroundName,dirt,泥土地面
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,黃金地面
+GroundName,granite floor,花崗岩地面
 GroundName,grass,草地
 GroundName,hive floor,巢穴地面
 GroundName,ice,堅冰
 GroundName,lava,熔岩
 GroundName,marble floor,大理石地面
-GroundName,metal floor,金屬地板
+GroundName,metal floor,金屬地面
 GroundName,moss,苔蘚叢
 GroundName,obsidian floor,黑曜石地面
 GroundName,sand,沙地
-GroundName,snow,
+GroundName,snow,雪地
 GroundName,stone floor,岩石地面
 GroundName,stone path,岩石走廊
 GroundName,water,水
@@ -2197,7 +2197,7 @@ HordeName,ant,蟻
 HordeName,ape,猿
 HordeName,bat,蝙蝠
 HordeName,bee,蜂
-HordeName,beetle,
+HordeName,beetle,甲蟲
 HordeName,cockroach,蟑螂
 HordeName,couatl,羽蛇
 HordeName,coyote,犬
@@ -2372,7 +2372,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,對著牆壁使用可以製造一個巨大的隧道。
 ItemName,adamantine arrow,精金箭
 ItemName,adamantine axe,精金斧
-ItemName,adamantine bident,
+ItemName,adamantine bident,精金雙尖刀
 ItemName,adamantine bow,精金弓
 ItemName,adamantine dagger,精金匕首
 ItemName,adamantine greataxe,精金戰斧
@@ -2757,7 +2757,7 @@ ItemName,phantom key,幻影鑰匙
 ItemName,Philosophers Stone,哲學者之石
 ItemName,pick-axe,鶴嘴鋤
 ItemName,pistol,手槍
-ItemName,plastic sword,
+ItemName,plastic sword,塑料劍
 ItemName,plate barding,金屬馬甲
 ItemName,plate mail,板甲
 ItemName,poison dart,劇毒飛鏢
@@ -3008,7 +3008,7 @@ ItemName,yellow dragon scales,黃色龍鱗
 ItemName,yellow glass bauble,黃色玻璃裝飾品
 ItemName,yellowish brown glass bauble,黃褐玻璃裝飾品
 ItemName,yumi,和弓
-ItemName,zircon,
+ItemName,zircon,藍鋯石
 ItemType,amulet,護符
 ItemType,bag,包
 ItemType,barding,馬甲
@@ -3515,7 +3515,7 @@ LiteralText,NAME,命名
 LiteralText,name?,命名
 LiteralText,neutral,中立
 LiteralText,never,0%
-LiteralText,NEW,
+LiteralText,NEW,新建
 LiteralText,no additional effects,無特殊效果
 LiteralText,no allies,沒有盟友
 LiteralText,no ambient sounds,無背景音樂
@@ -3573,7 +3573,7 @@ LiteralText,POLYMORPH,變形
 LiteralText,Polymorph into what?,變形為什麼？
 LiteralText,POLYMORPHED,已變形
 LiteralText,portal,傳送門
-LiteralText,PORTALS,
+LiteralText,PORTALS,傳送門
 LiteralText,porter,捕捉袋
 LiteralText,PRAY,祈禱
 LiteralText,preservation,維護
@@ -3649,7 +3649,7 @@ LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
 LiteralText,ROTATE,旋轉
-LiteralText,route,
+LiteralText,route,路徑
 LiteralText,SANITY CHECK,兼容性測試
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存與退出
@@ -3765,7 +3765,7 @@ LiteralText,transform to,變形為
 LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
 LiteralText,TRANSLATIONS,翻譯
-LiteralText,transport,
+LiteralText,transport,運輸
 LiteralText,TRAP,陷阱
 LiteralText,trap?,陷阱
 LiteralText,trapped,中陷阱的
@@ -3874,41 +3874,42 @@ MaterialName,wood,木頭
 MeasurementSystemName,imperial,斤
 MeasurementSystemName,metric,公斤
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,層層深入程序生成的地牢與洞穴，無限可重玩性——同時也易於Pathos的新玩家上手。
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",探索一張龐大的、程序生成的陸上地圖，包含地牢支線、精心製作的佈景和有趣的邂逅。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工設計的地圖，地表世界的傳奇冒險。脫離幽深禁閉的地牢，進行更具挑戰的冒險。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房間和無盡的秘密等著你去探索，但是不要沉溺在其中，長時間停留在某一層會招致死亡。基於《破碎像素地牢》生成的地圖。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用來實驗Pathos的機制。您可以在兩個房間的簡易地圖內試驗所有物品、陷阱與地牢機關。
 ModuleName,Dhak Legacy,Dhak Legacy
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,像素之旅
 ModuleName,Sandbox Play,沙盒遊戲
 ModuleTerm,Abyss,深淵
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,
+ModuleTerm,Ant Cave,螞蟻洞穴
+ModuleTerm,Ant Lair,螞蟻巢穴
+ModuleTerm,Ant Nest,螞蟻窩
+ModuleTerm,Arena,諸神競技場
 ModuleTerm,attic,閣樓
-ModuleTerm,Black Lair,
+ModuleTerm,Black Lair,黑龍巢穴
 ModuleTerm,Black Market,黑市
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,藍龍巢穴
+ModuleTerm,Cage,牢籠
+ModuleTerm,Canyon,峽谷
+ModuleTerm,Cave Maze,洞穴迷宮
 ModuleTerm,caves,洞穴
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,洞穴小鎮
 ModuleTerm,cellar,地窖
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cemetery,墳場
+ModuleTerm,Chicken Farm,養雞場
+ModuleTerm,Cow Farm,牧牛場
+ModuleTerm,Crater,環形山
+ModuleTerm,Crypt,地穴
+ModuleTerm,Crystal Henge,水晶柱林
+ModuleTerm,Deep Lair,巢穴深處
 ModuleTerm,Deephall,地下大廳
 ModuleTerm,Deepruins,地下廢墟
 ModuleTerm,Deepwilds,地下荒野
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,鑽石礦區
 ModuleTerm,Dungeon,地牢
 ModuleTerm,Elf Forest,精靈森林
 ModuleTerm,Elf Kingdom,精靈王國
@@ -3917,28 +3918,29 @@ ModuleTerm,Elf Palace 2,精靈宮殿2
 ModuleTerm,Elf Palace Vault,精靈宮殿頂
 ModuleTerm,Elf Town,精靈城鎮
 ModuleTerm,Elf Town Trove,精靈城地窖
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,綠寶石礦區
+ModuleTerm,Eye Pit,眼球坑
 ModuleTerm,Fort Ludios,盧底人堡壘
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,熔爐
+ModuleTerm,Glacier,冰川
+ModuleTerm,Goat Farm,牧羊場
+ModuleTerm,Green Lair,綠龍巢穴
+ModuleTerm,Grotto,
+ModuleTerm,Halls,大廳
+ModuleTerm,Helltown,地獄小鎮
+ModuleTerm,Horse Farm,牧馬場
+ModuleTerm,Ice Lake,冰封湖泊
 ModuleTerm,Infernal Cage,地獄籠子
 ModuleTerm,Infernal Fields,地獄場地
 ModuleTerm,Infernal Keep,地獄看守
 ModuleTerm,Infernal Spire,地獄尖塔
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,翠玉小鎮
+ModuleTerm,Jelly Pit,凝凍坑
+ModuleTerm,Kobold Fort,狗頭人要塞
 ModuleTerm,Labyrinth,迷宮
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,湖泊
+ModuleTerm,Lava Flow,岩漿流
+ModuleTerm,Lava Lake,岩漿湖
 ModuleTerm,level//depth,樓層
 ModuleTerm,Lich Tower,巫妖之塔
 ModuleTerm,Lost Chambers,迷失之庭
@@ -3946,57 +3948,59 @@ ModuleTerm,Ludios Cache,盧底人藏寶室
 ModuleTerm,Medusa Lair,美杜莎領地
 ModuleTerm,Mines,礦洞
 ModuleTerm,Minetown,礦鎮
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Red Lair,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,苔蘚洞
+ModuleTerm,Opus,奧普斯
+ModuleTerm,Orange Lair,橙龍巢穴
+ModuleTerm,Outpost,前哨站
+ModuleTerm,Overland,大陸
+ModuleTerm,Pig Farm,養豬場
+ModuleTerm,Prison,監獄
+ModuleTerm,Pudding Pit,凝膠洞
+ModuleTerm,Rat Pit,蝙蝠洞
+ModuleTerm,Rebirth,
+ModuleTerm,Red Lair,紅龍巢穴
+ModuleTerm,Respite,
+ModuleTerm,River,河流
+ModuleTerm,Ruby Mine,紅寶石礦區
+ModuleTerm,Ruins,廢墟
+ModuleTerm,Rupture,地獄斷層
+ModuleTerm,Sapphire Mine,藍寶石礦區
+ModuleTerm,Scorpion Cave,蠍子洞穴
+ModuleTerm,Scorpion Lair,蠍子巢穴
+ModuleTerm,Scorpion Nest,蠍子窩
+ModuleTerm,Seal Farm,海豹農場
+ModuleTerm,Sheep Farm,綿羊農場
+ModuleTerm,Shimmer Lair,閃光龍穴
+ModuleTerm,Shroom Maze,蘑菇迷宮
+ModuleTerm,Slime Pit,史萊姆洞
+ModuleTerm,Snake Pit,蛇洞
 ModuleTerm,Sokoban,倉庫番
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,Spider Cave,蜘蛛洞穴
+ModuleTerm,Spider Lair,蜘蛛巢穴
+ModuleTerm,Spider Nest,蜘蛛窩
+ModuleTerm,Station,樞紐
+ModuleTerm,Statue Henge,雕像林
+ModuleTerm,Stone Henge,巨石林
+ModuleTerm,Stonetown,石頭小鎮
+ModuleTerm,strange chicken,奇怪的雞
+ModuleTerm,strange cow,奇怪的牛
+ModuleTerm,strange goat,奇怪的山羊
+ModuleTerm,strange horse,奇怪的馬
+ModuleTerm,strange pig,奇怪的豬
+ModuleTerm,strange seal,奇怪的海報
+ModuleTerm,strange sheep,奇怪的綿羊
+ModuleTerm,Topaz Mine,黃玉礦區
+ModuleTerm,Tree Maze,巨木森林
 ModuleTerm,trove,貴重物
 ModuleTerm,Underbarracks,地城兵營
-ModuleTerm,Underground,
+ModuleTerm,Underground,地下
 ModuleTerm,Underlimits,地城邊境
 ModuleTerm,Underpeaks,地城通路
 ModuleTerm,Undertown,地下城
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,白龍巢穴
+ModuleTerm,Woodtown,木頭小鎮
+ModuleTerm,Worm Pit,蠕蟲洞
+ModuleTerm,Yellow Lair,黃龍巢穴
 MotionPastName,anointed,洗滌了
 MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了
@@ -4474,8 +4478,8 @@ SonicName,amulet,護符
 SonicName,arf,海豹叫
 SonicName,armour,裝甲
 SonicName,baa,嚎叫
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,猛地升起
+SonicName,bars slamming,猛地關上
 SonicName,bell,響鈴鐺
 SonicName,birds,鳥叫
 SonicName,bleat,咩咩地叫
@@ -4499,7 +4503,7 @@ SonicName,chirp,嘰嘰喳喳地叫
 SonicName,clank,錚錚地響
 SonicName,close door,關門
 SonicName,cluck,咕咕地叫
-SonicName,clunk,
+SonicName,clunk,壓力板觸發
 SonicName,coins,金幣
 SonicName,conclusion,結論
 SonicName,craft,創造了

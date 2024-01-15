@@ -73,7 +73,7 @@ namespace Pathos
       this.drunkard = AddSpecial("drunkard", S =>
       {
         S.Description = "The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.";
-        S.Glyph = Glyphs.brown_potion;
+        S.Glyph = Glyphs.drunkard_special;
 
         S.Startup.SetTalent(Properties.inebriation);
         S.Startup.SetPunishment(Codex.Punishments.thirst);
@@ -82,7 +82,7 @@ namespace Pathos
       this.glass = AddSpecial("glass", S =>
       {
         S.Description = "Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.";
-        S.Glyph = Glyphs.glass_golem;
+        S.Glyph = Glyphs.glass_special;
 
         S.Diet = Diets.geophagy;
         S.LifeAdvancement.Set(Dice.Zero - 2);
@@ -148,7 +148,7 @@ namespace Pathos
       this.psychic = AddSpecial("psychic", S =>
       {
         S.Description = "Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.";
-        S.Glyph = Glyphs.psychic_strike;
+        S.Glyph = Glyphs.psychic_special;
 
         S.Startup.SetTalent(Properties.telepathy, Properties.telekinesis, Properties.clairvoyance, Properties.hunger);
       });
@@ -156,7 +156,7 @@ namespace Pathos
       this.quantum = AddSpecial("quantum", S =>
       {
         S.Description = "Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.";
-        S.Glyph = Glyphs.quantum_mechanic;
+        S.Glyph = Glyphs.quantum_special;
 
         S.Startup.SetTalent(Properties.teleportation);
       });
@@ -176,7 +176,7 @@ namespace Pathos
       this.skeleton = AddSpecial("skeleton", S =>
       {
         S.Description = "Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.";
-        S.Glyph = Glyphs.skeleton;
+        S.Glyph = Glyphs.skeleton_special;
 
         S.Diet = Diets.inediate;
         S.DefenceBias.Bludgeon = Modifier.Minus2;
@@ -209,7 +209,7 @@ namespace Pathos
       this.vampire = AddSpecial("vampire", S =>
       {
         S.Description = "Forsaken creature that subsists by feeding on the vital essence of the living.";
-        S.Glyph = Glyphs.vampire;
+        S.Glyph = Glyphs.vampire_special;
 
         S.Diet = Diets.hematophagy;
         S.Chemistry.SetVulnerability(Materials.silver);
@@ -237,11 +237,11 @@ namespace Pathos
         S.SetTransformations(Entities.vampire_bat, Entities.fog_cloud);
       });
 
-      this.frost = AddElemental("frost", Glyphs.frost_sphere, Elements.cold, Elements.fire, Spells.freezing_sphere);
-      this.flame = AddElemental("flame", Glyphs.flame_sphere, Elements.fire, Elements.cold, Spells.flaming_sphere);
-      this.shock = AddElemental("shock", Glyphs.shock_sphere, Elements.shock, Elements.drain, Spells.shocking_sphere);
-      this.earth = AddElemental("earth", Glyphs.earth_sphere, Elements.petrify, Elements.disintegrate, Spells.crushing_sphere);
-      this.water = AddElemental("water", Glyphs.water_sphere, Elements.acid, Elements.shock, Spells.soaking_sphere);
+      this.frost = AddElemental("frost", Glyphs.frost_special, Elements.cold, Elements.fire, Spells.freezing_sphere);
+      this.flame = AddElemental("flame", Glyphs.flame_special, Elements.fire, Elements.cold, Spells.flaming_sphere);
+      this.shock = AddElemental("shock", Glyphs.shock_special, Elements.shock, Elements.drain, Spells.shocking_sphere);
+      this.earth = AddElemental("earth", Glyphs.earth_special, Elements.petrify, Elements.disintegrate, Spells.crushing_sphere);
+      this.water = AddElemental("water", Glyphs.water_special, Elements.acid, Elements.shock, Spells.soaking_sphere);
 
       // lycanthrope: wolf, jackal, rat, panther, snaker, spider, tiger, wolf.
       //this.werejackal = AddLycanthrope(Entities.jackal, Entities.jackalwere, Entities.werejackal);

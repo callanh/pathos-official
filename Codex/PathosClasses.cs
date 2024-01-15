@@ -1009,6 +1009,7 @@ namespace Pathos
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_shaman);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_shaman);
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_shaman);
+        C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_shaman);
         C.AddFeat(4, Elements.poison);
         C.AddFeat(10, Properties.polymorph_control);
         C.AddFeat(14, Properties.telekinesis);

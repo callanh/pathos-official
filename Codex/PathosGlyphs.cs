@@ -955,7 +955,7 @@ namespace Pathos
     public readonly Glyph halfling_female_reaver;
 
     // human.
-    // TODO: just replace the base one instead? 
+    // NOTE: just replace the base one instead eg. male_knight/female_knight.
 
     // lizardman.
     public readonly Glyph lizardman_male_barbarian;
@@ -972,6 +972,7 @@ namespace Pathos
     public readonly Glyph lizardman_male_reaver;
     public readonly Glyph lizardman_male_rogue;
     public readonly Glyph lizardman_male_samurai;
+    public readonly Glyph lizardman_male_shaman;
     public readonly Glyph lizardman_male_valkyrie;
     public readonly Glyph lizardman_male_wizard;
 
@@ -1061,14 +1062,6 @@ namespace Pathos
     public readonly Glyph troll_female_bard;
     public readonly Glyph troll_female_reaver;
     public readonly Glyph troll_female_samurai;
-
-    // specials.
-    public readonly Glyph colossus;
-    public readonly Glyph fugitive;
-    public readonly Glyph midget;
-    public readonly Glyph noble;
-    public readonly Glyph protagonist;
-    public readonly Glyph scholar;
 
     public readonly Glyph fiend;
     public readonly Glyph fiery_explosion_bottom_center;
@@ -2599,6 +2592,25 @@ namespace Pathos
     public readonly Glyph freeze;
     public readonly Glyph electricity;
     public readonly Glyph steam;
+
+    // specials.
+    public readonly Glyph colossus;
+    public readonly Glyph fugitive;
+    public readonly Glyph midget;
+    public readonly Glyph noble;
+    public readonly Glyph protagonist;
+    public readonly Glyph scholar;
+    public Glyph drunkard_special => brown_potion;
+    public Glyph psychic_special => psychic_strike;
+    public Glyph skeleton_special => skeleton;
+    public Glyph glass_special => glass_golem;
+    public Glyph quantum_special => quantum_mechanic;
+    public Glyph vampire_special => vampire;
+    public Glyph frost_special => frost_sphere;
+    public Glyph flame_special => flame_sphere;
+    public Glyph shock_special => shock_sphere;
+    public Glyph earth_special => earth_sphere;
+    public Glyph water_special => water_sphere;
 #pragma warning restore 0649
 
     public Glyph Add(string Name) => Register.Add(Name);
