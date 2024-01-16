@@ -4833,6 +4833,7 @@ namespace Pathos
         {
           var PentagramZone = KingdomMap.AddZone();
           PentagramZone.AddRegion(new Region(1, 6, 6, 11));
+          Debug.Assert(PentagramZone.Squares.Count > 0);
 
           var Trigger = PentagramZone.InsertTrigger();
 
@@ -4874,6 +4875,8 @@ namespace Pathos
             // force a zone so we can have a visit trigger.
             var ShrineZone = KingdomMap.AddZone();
             ShrineZone.ForceRegion(KingdomSquare.FindBoundary());
+            Debug.Assert(ShrineZone.Squares.Count > 0);
+
             ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[Shrine.Index]).SetTarget(KingdomSquare);
           }
 
@@ -4889,6 +4892,7 @@ namespace Pathos
               // force a shop zone.
               var ShopZone = KingdomMap.AddZone();
               ShopZone.ForceRegion(KingdomSquare.FindBoundary());
+              Debug.Assert(ShopZone.Squares.Count > 0);
 
               var ShopStall = KingdomSquare.Fixture.Container;
 
@@ -5081,7 +5085,9 @@ namespace Pathos
         }
       }
 
-      EntryRoom.Map.AddZone().ForceSquare(PortalSquare); // so we can teleport directly onto the portal.
+      var EntryZone = EntryRoom.Map.AddZone();
+      EntryZone.ForceSquare(PortalSquare); // so we can teleport directly onto the portal.
+      Debug.Assert(EntryZone.Squares.Count > 0);
 
       Generator.PlacePassage(PortalSquare, Codex.Portals.transportal, QuestStart);
       Generator.PlacePassage(QuestStart, Codex.Portals.transportal, PortalSquare);

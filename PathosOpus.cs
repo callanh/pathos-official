@@ -538,9 +538,9 @@ namespace Pathos
       SetSiteFirstLevelUp(OpusTerms.Prison);
       SetMapLevelDown(OpusTerms.Overland);
       SetSiteSuffixFirstLevelDown("Nest");
-      SetSiteFirstLevelUp(OpusTerms.Furnace);
       Generator.Adventure.World.SetStart(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Ruins);
+      SetSiteFirstLevelUp(OpusTerms.Furnace);
 #endif
 
       // write out build records for performance tracking.
@@ -753,7 +753,7 @@ namespace Pathos
           }
           else
           {
-            Generator.PlaceBoulder(BoulderSquare, Codex.Blocks.stone_boulder, IsRigid: false);
+            Generator.PlaceBoulder(BoulderSquare, BoulderSquare.Floor?.Ground.Block ?? Codex.Blocks.stone_boulder, IsRigid: false);
 
             // any items under the boulder?
             if (!BoulderSquare.HasAssets())
@@ -3538,26 +3538,49 @@ namespace Pathos
         if (!Generator.Adventure.World.HasSite(FurnaceName))
         {
           var FurnaceSite = Generator.Adventure.World.AddSite(FurnaceName);
-          var FurnaceSize = (RandomSupport.NextRange(7, 10) * 2) + 1; // must be odd number.
-          var FurnaceHalfSize = FurnaceSize / 2;
+          var FurnaceBossSize = (RandomSupport.NextRange(7, 10) * 2) + 1; // must be odd number.
+          var FurnaceBossHalfSize = FurnaceBossSize / 2;
+          var FurnaceBossQuarterSize = FurnaceBossSize / 4;
+          var FurnaceInset = 14;
+          var FurnaceFullSize = FurnaceBossSize + ((FurnaceInset - 1) * 2);
 
-          var FurnaceMap = Generator.Adventure.World.AddMap(FurnaceName, FurnaceSize, FurnaceSize);
+          var FurnaceMap = Generator.Adventure.World.AddMap(FurnaceName, FurnaceFullSize, FurnaceFullSize);
           FurnaceMap.SetDifficulty(Difficulty);
           FurnaceMap.SetSealed(true);
           FurnaceMap.SetTerminal(true);
           FurnaceMap.SetAtmosphere(Codex.Atmospheres.dungeon);
-
           var FurnaceLevel = FurnaceSite.AddLevel(1, FurnaceMap);
 
-          var TriangleFirstSquare = FurnaceMap[FurnaceHalfSize, 1];
-          var TriangleSecondSquare = FurnaceMap[1, FurnaceHalfSize];
-          var TriangleThirdSquare = FurnaceMap[FurnaceSize - 1, FurnaceHalfSize];
-          var ThroneSquare = FurnaceMap[FurnaceHalfSize, 2];
-          var OppositeSquare = FurnaceMap[FurnaceHalfSize, FurnaceSize - 3];
-          var LootSquare = FurnaceMap[FurnaceHalfSize, 1];
+          var FurnaceMidpoint = FurnaceMap.Region.Midpoint();
+
+          // boundary circle line.
+          var FirstCircle = new Inv.Circle(FurnaceMidpoint, FurnaceFullSize / 2 - 2);
+          foreach (var FurnaceSquare in FurnaceMap.GetCircleInnerSquares(FirstCircle).Except(FurnaceMap.GetCircleInnerSquares(FirstCircle.Reduce(4))))
+          {
+            FurnaceSquare.SetLit(true);
+
+            Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.obsidian_floor);
+          }
+
+          var SecondCircle = FirstCircle.Reduce(5);
+          foreach (var FurnaceSquare in FurnaceMap.GetCircleInnerSquares(SecondCircle).Except(FurnaceMap.GetCircleInnerSquares(SecondCircle.Reduce(4))))
+          {
+            FurnaceSquare.SetLit(true);
+
+            Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.obsidian_floor);
+          }
+
+          var ThirdCircle = SecondCircle.Reduce(5);
+
+          var TriangleFirstPoint = new Inv.Point(FurnaceMidpoint.X, FurnaceInset);
+          var TriangleSecondPoint = new Inv.Point(FurnaceInset, FurnaceMidpoint.Y);
+          var TriangleThirdPoint = new Inv.Point(FurnaceFullSize - FurnaceInset, FurnaceMidpoint.Y);
+          var ThroneSquare = FurnaceMap[TriangleFirstPoint.X, TriangleFirstPoint.Y + 1];
+          var ApproachSquare = FurnaceMap[FurnaceMidpoint.X, FurnaceFullSize - FurnaceInset + 2];
+          var LootSquare = FurnaceMap[TriangleFirstPoint];
 
           // outer circle line.
-          var OuterCircle = new Inv.Circle(FurnaceHalfSize, FurnaceHalfSize, FurnaceHalfSize - 2);
+          var OuterCircle = new Inv.Circle(FurnaceMidpoint, FurnaceBossHalfSize - 2);
           foreach (var FurnaceSquare in FurnaceMap.GetCircleOuterSquares(OuterCircle))
           {
             FurnaceSquare.SetLit(true);
@@ -3566,17 +3589,19 @@ namespace Pathos
           }
 
           // main triangle.
-          foreach (var FurnaceSquare in FurnaceMap.GetTriangleInnerSquares(new Inv.Triangle(TriangleFirstSquare.Point, TriangleSecondSquare.Point, TriangleThirdSquare.Point)).Where(S => S.Floor == null))
+          foreach (var FurnaceSquare in FurnaceMap.GetTriangleInnerSquares(new Inv.Triangle(TriangleFirstPoint, TriangleSecondPoint, TriangleThirdPoint)).Where(S => S.Floor == null))
             Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.obsidian_floor);
 
           // inner circle area.
-          var InnerCircle = OuterCircle.Reduce(FurnaceHalfSize / 2);
+          var InnerCircle = OuterCircle.Reduce(FurnaceBossQuarterSize);
           foreach (var FurnaceSquare in FurnaceMap.GetCircleInnerSquares(InnerCircle))
             Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.granite_floor);
 
           // crystal bridge.
-          foreach (var FurnaceSquare in OppositeSquare.GetPathSquares(ThroneSquare.Adjacent(Direction.South)))
+          foreach (var FurnaceSquare in ApproachSquare.GetPathSquares(ThroneSquare.Adjacent(Direction.South)))
           {
+            FurnaceSquare.SetLit(true);
+
             Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.lava);
             Generator.PlaceBridge(FurnaceSquare, Codex.Platforms.crystal_bridge, BridgeOrientation.Vertical);
           }
@@ -3584,7 +3609,7 @@ namespace Pathos
           // boulder fence.
           foreach (var FurnaceSquare in FurnaceMap.GetCircleInnerSquares(InnerCircle))
           {
-            if (FurnaceSquare.GetAdjacentSquares().Any(S => S.IsVoid()))
+            if (FurnaceSquare.Bridge == null && FurnaceSquare.GetAdjacentSquares().Any(S => S.IsVoid()))
               Generator.PlaceBoulder(FurnaceSquare, Codex.Blocks.crystal_boulder, IsRigid: true);
           }
 
@@ -3600,6 +3625,14 @@ namespace Pathos
           // throne.
           Generator.PlaceFixture(ThroneSquare, Codex.Features.throne);
 
+          // flood remaining squares with lava
+          foreach (var FurnaceSquare in FurnaceMap.GetCircleInnerSquares(ThirdCircle).Where(S => S.Floor == null))
+          {
+            FurnaceSquare.SetLit(true);
+
+            Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.lava);
+          }
+
           // artifact.
           Generator.PlacePermanentWall(LootSquare, Codex.Barriers.iron_bars, WallSegment.Pillar);
           LootSquare.PlaceAsset(Generator.GenerateUniqueAsset(LootSquare));
@@ -3611,16 +3644,16 @@ namespace Pathos
             Generator.PlaceSpill(FurnaceSquare, Codex.Volatiles.blaze, Clock.Forever);
 
           // pentagrams.
-          var LeftPentagramSquare = FurnaceMap[2, FurnaceHalfSize];
+          var LeftPentagramSquare = FurnaceMap[FurnaceInset + 1, FurnaceMidpoint.Y];
           Generator.PlaceFixture(LeftPentagramSquare, Codex.Features.pentagram);
 
-          var RightPentagramSquare = FurnaceMap[FurnaceSize - 3, FurnaceHalfSize];
+          var RightPentagramSquare = FurnaceMap[FurnaceFullSize - FurnaceInset - 2, FurnaceMidpoint.Y];
           Generator.PlaceFixture(RightPentagramSquare, Codex.Features.pentagram);
 
           var FurnaceTrigger = FurnaceMap.InsertTrigger();
           foreach (var SummonIndex in 6.NumberSeries())
           {
-            FurnaceTrigger.Add(Delay.FromTurns(60), Codex.Tricks.summoning_demons).SetTarget(LeftPentagramSquare);
+            FurnaceTrigger.Add(Delay.FromTurns(600), Codex.Tricks.summoning_demons).SetTarget(LeftPentagramSquare);
             FurnaceTrigger.Add(Delay.Zero, Codex.Tricks.summoning_demons).SetTarget(RightPentagramSquare);
           }
 
@@ -3633,15 +3666,101 @@ namespace Pathos
 
           Maker.RepairBoundary(FurnaceMap, FurnaceMap.Region, Codex.Barriers.hell_brick, Codex.Grounds.obsidian_floor, IsLit: true);
 
+          Maker.RepairGaps(FurnaceMap, FurnaceMap.Region, Codex.Barriers.hell_brick, IsLit: true);
+
+          var LastRoomMatched = false;
+
+          foreach (var RoomSquare in FurnaceMap.GetCircleOuterSquares(SecondCircle).Where(S => S.Wall != null))
+          {
+            Debug.Assert(RoomSquare.Floor == null);
+            //Generator.PlacePermanentWall(RoomSquare, Codex.Barriers.jade_wall, WallSegment.Pillar);
+
+            if (LastRoomMatched)
+            {
+              LastRoomMatched = false;
+              continue;
+            }
+
+            var OptionSquare = RoomSquare.GetNeighbourSquares().Where(S => S.Floor != null).GetRandomOrNull();
+            if (OptionSquare != null)
+            {
+              var NeighbourDirection = RoomSquare.AsDirection(OptionSquare);
+              var NeighbourSquare = OptionSquare;
+
+              do
+              {
+                var LastSquare = NeighbourSquare;
+
+                NeighbourSquare = LastSquare.Adjacent(NeighbourDirection);
+
+                if (NeighbourSquare?.Wall != null)
+                  break;
+
+                if (NeighbourSquare != null && NeighbourSquare.GetNeighbourSquares().Any(S => S != LastSquare && S != NeighbourSquare.Adjacent(NeighbourDirection) && S.Wall != null))
+                {
+                  //Generator.PlaceFloor(NeighbourSquare, Codex.Grounds.metal_floor);
+                  NeighbourSquare = null;
+                }
+              }
+              while (NeighbourSquare?.Floor != null && NeighbourSquare?.Bridge == null);
+
+              if (NeighbourSquare?.Wall != null)
+              {
+                LastRoomMatched = true;
+
+                foreach (var LineSquare in RoomSquare.GetPathSquares(NeighbourSquare))
+                {
+                  if (LineSquare.Floor != null)
+                  {
+                    LineSquare.SetFloor(null);
+                    Generator.PlacePermanentWall(LineSquare, Codex.Barriers.hell_brick, WallSegment.Pillar);
+                  }
+                }
+              }
+            }
+          }
+
+          Maker.ConnectSquares(FurnaceMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor || S.Bridge != null), ThroneSquare, S =>
+          {
+            Generator.PlaceFloor(S, Codex.Grounds.obsidian_floor);
+            Generator.PlaceDoor(S, Codex.Gates.crystal_door, DoorOrientation.Horizontal, SecretBarrier: Codex.Barriers.hell_brick);
+          });
+
+          // irons bars walls over lava for decoration.          
+          foreach (var FurnaceSquare in FurnaceMap.GetSquares().Where(S => S.Wall != null && S.IsFlat() && !S.GetNeighbourSquares().Any(S => S.Wall?.Barrier == Codex.Barriers.iron_bars)))
+          {
+            if (Chance.OneIn2.Hit())
+            {
+              Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.lava);
+              Generator.PlacePermanentWall(FurnaceSquare, Codex.Barriers.iron_bars, WallSegment.Pillar);
+            }
+          }
+
+          // repair the map.
           Generator.RepairMap(FurnaceMap, FurnaceMap.Region);
+
+          // map details.
+          foreach (var DetailZone in FurnaceMap.GetCircleInnerSquares(FirstCircle).Except(FurnaceMap.GetCircleInnerSquares(ThirdCircle)).Where(S => S.Floor != null && S.Wall == null && S.Spill == null).Select(S => S.Zone).Distinct())
+          {
+            var DetailSquareList = DetailZone.Squares.Where(Generator.CanPlaceTrap).ToDistinctList();
+            Generator.PlaceRoomTraps(DetailSquareList, FurnaceMap.Difficulty);
+            Generator.PlaceRoomCoins(DetailSquareList);
+            Generator.PlaceRoomAssets(DetailSquareList);
+            Generator.PlaceRoomHorde(DetailSquareList);
+            Generator.PlaceRoomCharacter(DetailSquareList);
+            Maker.PlaceRoomBoulders(DetailSquareList);
+          }
 
           FurnaceMap.AddArea(FurnaceName).AddMapZones();
 
-          var ResultSquare = FurnaceMap.Midpoint;
+          var ResultSquare = FurnaceMap[FurnaceMidpoint.X, 2];
+          if (ResultSquare.Floor?.Ground != Codex.Grounds.obsidian_floor)
+            ResultSquare = ResultSquare.GetAdjacentSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull() ?? FurnaceMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull();
+
           FurnaceLevel.SetTransitions(ResultSquare, null);
 
           // TODO:
-          // *
+          // * random orientation of furnace?
 
           return ResultSquare;
         }
@@ -4513,6 +4632,7 @@ namespace Pathos
 
         Generator.RepairMap(MazeMap, MazeRegion);
 
+        var FeatureSquareList = new Inv.DistinctList<Square>();
         foreach (var MazeSquare in MazeMap.GetSquares(MazeRegion))
         {
           if (MazeSquare.Floor?.Ground == MazeVariant.Ground && MazeSquare.Wall == null && MazeSquare.Character == null && MazeSquare.Fixture == null)
@@ -4520,8 +4640,7 @@ namespace Pathos
             if (MazeSquare.GetAdjacentSquares().Count(S => S.Wall != null && S.Wall.IsSolid()) == 7)
             {
               // dead-end.
-              if (Chance.OneIn2.Hit())
-                Generator.PlaceFixture(MazeSquare, MazeVariant.Feature);
+              FeatureSquareList.Add(MazeSquare);
             }
             else if (Chance.OneIn8.Hit())
             {
@@ -4536,6 +4655,18 @@ namespace Pathos
               Generator.PlaceRandomAsset(MazeSquare);
             }
           }
+        }
+
+        // maximum three features in the dead-ends.
+        var FeatureCount = 3;
+        foreach (var FeatureIndex in FeatureCount.NumberSeries())
+        {
+          var FeatureSquare = FeatureSquareList.RemoveRandomOrNull();
+
+          if (FeatureSquare == null)
+            break;
+
+          Generator.PlaceFixture(FeatureSquare, MazeVariant.Feature);
         }
 
         // TODO:
