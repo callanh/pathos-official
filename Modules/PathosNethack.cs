@@ -372,7 +372,8 @@ namespace Pathos
                 var MazeRoom = CastleStructure.AddRoom(MazeRegion, Isolated: true);
 
                 // fill with solid walls.
-                RegionFill(CastleMap, MazeRegion, S => Generator.PlaceSolidWall(S, CastleBarrier, WallSegment.Cross));
+                foreach (var CastleSquare in CastleMap.GetSquares(MazeRegion))
+                  Generator.PlaceSolidWall(CastleSquare, CastleBarrier, WallSegment.Cross);
 
                 // dig out the paths.
                 CreateMazePaths(CastleMap, MazeRegion);
@@ -802,7 +803,9 @@ namespace Pathos
 
       foreach (var Square in NetherMap.GetSquares(NetherRegion))
       {
-        Square.SetWall(null);
+        if (Square.Wall != null)
+          Generator.RemoveWall(Square);
+
         Generator.PlaceFloor(Square, CavernGround);
       }
 
@@ -1013,7 +1016,10 @@ namespace Pathos
 
       const int BoxSize = 10;
 
-      RegionFill(FinaleMap, FinaleMap.Region, S => Generator.PlaceSolidWall(S, FinaleBarrier, WallSegment.Cross));
+      // fill with walls.
+      foreach (var FinaleSquare in FinaleMap.GetSquares(FinaleMap.Region))
+        Generator.PlaceSolidWall(FinaleSquare, FinaleBarrier, WallSegment.Cross);
+
       CreateMazePaths(FinaleMap, FinaleMap.Region);
 
       var FinalVaultsColumns = FinaleMap.Region.Width / BoxSize;
@@ -1030,7 +1036,8 @@ namespace Pathos
           var FinalVaultTop = (FinalVaultY * BoxSize) + 3;
 
           var FinalVaultRegion = new Region(FinalVaultLeft, FinalVaultTop, FinalVaultLeft + 3, FinalVaultTop + 3);
-          RegionFill(FinaleMap, FinalVaultRegion, S => S.SetWall(null));
+          foreach (var FinaleSquare in FinaleMap.GetSquares(FinalVaultRegion).Where(S => S.Wall != null))
+            Generator.RemoveWall(FinaleSquare);
 
           var FinalVaultZone = FinaleMap.AddZone();
           FinalVaultZone.AddRegion(FinalVaultRegion);
@@ -1038,11 +1045,13 @@ namespace Pathos
 
           Generator.PlaceRoom(FinaleMap, FinaleBarrier, FinaleGround, FinalVaultRegion);
 
-          RegionEdge(FinaleMap, FinalVaultRegion.Expand(1), S =>
+          foreach (var FinaleSquare in FinaleMap.GetFrameSquares(FinalVaultRegion.Expand(1)))
           {
-            S.SetWall(null);
-            Generator.PlaceFloor(S, FinaleGround);
-          });
+            if (FinaleSquare.Wall != null)
+              Generator.RemoveWall(FinaleSquare);
+
+            Generator.PlaceFloor(FinaleSquare, FinaleGround);
+          }
 
           if (StartX == FinalVaultX && StartY == FinalVaultY)
           {
@@ -1066,7 +1075,7 @@ namespace Pathos
                 {
                   // 1..3 gems per square.
                   foreach (var Item in 1.d5().Roll().NumberSeries())
-                    FinalSquare.PlaceAsset(Generator.NewSpecificAsset(FinalSquare, GemProbability.GetRandom()));
+                    Generator.PlaceSpecificAsset(FinalSquare, GemProbability.GetRandom());
                 }
                 break;
 
@@ -1076,7 +1085,7 @@ namespace Pathos
                 {
                   // 1..3 items per square.
                   foreach (var Item in 1.d3().Roll().NumberSeries())
-                    FinalSquare.PlaceAsset(Generator.NewRandomAsset(FinalSquare, Stock: null));
+                    Generator.PlaceRandomAsset(FinalSquare);
                 }
                 break;
 
@@ -1137,7 +1146,7 @@ namespace Pathos
           var UniqueCharacter = UniqueSquare.Character;
           if (UniqueCharacter != null)
           {
-            UniqueCharacter.SetNeutral(false); // some of the uniques are now generated as friendly.
+            Generator.HostileCharacter(UniqueCharacter); // some of the uniques are now generated as friendly.
 
             if (UniqueEntity.Level <= 40)
             {
@@ -1743,12 +1752,12 @@ namespace Pathos
             var ChestSquare = PrisonRoom.GetPerimeterSquares().Where(S => !S.IsObstructed()).GetRandomOrNull() ?? PrisonSquare;
 
             var ContainerAsset = CreateContainer(ChestSquare, Locked: true, Trapped: true);
-            ChestSquare.PlaceAsset(ContainerAsset);
+            Generator.PlaceAsset(ChestSquare, ContainerAsset);
 
             foreach (var Asset in PrisonCharacter.Inventory.RemoveAllAssets())
             {
               if (Asset.Container != null)
-                ChestSquare.PlaceAsset(Asset);
+                Generator.PlaceAsset(ChestSquare, Asset);
               else
                 ContainerAsset.Container.Stash.Add(Asset);
             }
@@ -2079,18 +2088,15 @@ namespace Pathos
       {
         // delete any traps.
         if (EmptySquare.Trap != null)
-          EmptySquare.SetTrap(null);
+          Generator.RemoveTrap(EmptySquare);
 
         // delete any boulders (probably won't come up).
         if (EmptySquare.Boulder != null)
-          EmptySquare.SetBoulder(null);
+          Generator.RemoveBoulder(EmptySquare);
 
         // don't allow items to be placed inside the illusionary wall or locked door.
         if (EmptySquare.HasAssets())
-        {
-          foreach (var MoveAsset in EmptySquare.RemoveAssets())
-            MazeSquare.PlaceAsset(MoveAsset);
-        }
+          Generator.TransferAssets(MazeSquare, EmptySquare);
       }
 
       if (MazeSquare == null)
@@ -2159,18 +2165,7 @@ namespace Pathos
     /// <param name="Character"></param>
     public void SnoozeCharacter(Character Character)
     {
-      Generator.AcquireCharacterTalent(Character, Codex.Properties.sleeping);
-    }
-    private void RecruitParty(Square Square, Party Party)
-    {
-      var Character = Square.Character;
-      if (Character != null)
-      {
-        Debug.Assert(!Character.IsWormHead() && !Character.IsWormTail());
-
-        Character.SetNeutral(true);
-        Party.AddAlly(Character, Clock.Zero, Delay.Zero);
-      }
+      Generator.AcquireTalent(Character, Codex.Properties.sleeping);
     }
     private void PlaceRoom(DungeonRoom Room, Barrier Barrier, Ground Ground)
     {
@@ -2317,7 +2312,7 @@ namespace Pathos
     private void PlaceContainer(Square Square, bool Locked, bool Trapped)
     {
       var ContainerAsset = CreateContainer(Square, Locked, Trapped);
-      Square.PlaceAsset(ContainerAsset);
+      Generator.PlaceAsset(Square, ContainerAsset);
 
       StockContainer(Square, ContainerAsset, Locked, Trapped);
     }
@@ -2333,24 +2328,6 @@ namespace Pathos
       Asset.Container.Locked = Asset.Item.Storage.Locking && Locked;
       Asset.Container.Trap = Asset.Item.Storage.Trapping && Trapped ? Generator.NewTrap(Generator.RandomContainerDevice(Square), Revealed: false) : null;
       Generator.StockContainer(Square, Asset);
-    }
-    private void RegionFill(Map Map, Region Region, Action<Square> Action)
-    {
-      Map.GetSquares(Region).ForEach(Action);
-    }
-    private void RegionEdge(Map Map, Region Region, Action<Square> Action)
-    {
-      for (var X = Region.Left; X <= Region.Right; X++)
-      {
-        Action(Map[X, Region.Top]);
-        Action(Map[X, Region.Bottom]);
-      }
-
-      for (var Y = Region.Top + 1; Y <= Region.Bottom - 1; Y++)
-      {
-        Action(Map[Region.Left, Y]);
-        Action(Map[Region.Right, Y]);
-      }
     }
     private void CreateMazePaths(Map Map, Region Region)
     {
@@ -2369,14 +2346,14 @@ namespace Pathos
         {
           var Neighbour = NeighbourArray.GetRandom();
           var NeighbourUnderlay = Neighbour.Wall.Barrier.Underlay;
-          Neighbour.SetWall(null);
+          Generator.RemoveWall(Neighbour);
           Generator.PlaceFloor(Neighbour, NeighbourUnderlay);
 
           var Between = NextSquare.Adjacent(NextSquare.AsDirection(Neighbour));
           if (Between.Wall != null)
           {
             var BetweenUnderlay = Between.Wall.Barrier.Underlay;
-            Between.SetWall(null);
+            Generator.RemoveWall(Between);
             Generator.PlaceFloor(Between, BetweenUnderlay);
           }
 
@@ -2814,8 +2791,9 @@ namespace Pathos
         }
         else if (FixSquare.Door != null && FixSquare.Door.Secret)
         {
-          Generator.PlaceIllusionaryWall(FixSquare, MinesBarrier, FixSquare.Door.IsHorizontal ? WallSegment.Horizontal : WallSegment.Vertical);
-          FixSquare.SetDoor(null);
+          var FixSegment = FixSquare.Door.IsHorizontal ? WallSegment.Horizontal : WallSegment.Vertical;
+          Generator.RemoveDoor(FixSquare);
+          Generator.PlaceIllusionaryWall(FixSquare, MinesBarrier, FixSegment);
         }
       }
 
@@ -2884,13 +2862,15 @@ namespace Pathos
         // obliterate the inside caverns.
         foreach (var Square in TownMap.GetSquares(TownRegion))
         {
-          Square.SetWall(null);
+          if (Square.Wall != null)
+            Generator.RemoveWall(Square);
+
           Generator.PlaceFloor(Square, MinesGround); // required for the repair gaps algorithm.
         }
 
         foreach (var Square in TownMap.GetSquares(TownRegion))
         {
-          Square.SetFloor(null);
+          Generator.RemoveFloor(Square);
           Debug.Assert(Square.IsEmpty());
         }
 
@@ -2918,7 +2898,18 @@ namespace Pathos
         }
 
         var TownParty = Generator.NewParty(Leader: null);
-        
+
+        void RecruitTownParty(Square Square)
+        {
+          var Character = Square.Character;
+          if (Character != null)
+          {
+            Generator.NeutralCharacter(Character);
+
+            TownParty.AddAlly(Character, Clock.Zero, Delay.Zero);
+          }
+        }
+
         var DeferList = new Inv.DistinctList<Action>();
 
         var TownShopProbability = ShopProbability.Clone();
@@ -3016,7 +3007,7 @@ namespace Pathos
                 var TownShrine = ShrineProbability.GetRandom();
 
                 Generator.PlaceShrine(TownSquare, TownShrine);
-                RecruitParty(TownSquare, TownParty);
+                RecruitTownParty(TownSquare);
 
                 DeferList.Add(() =>
                 {
@@ -3065,7 +3056,7 @@ namespace Pathos
                   if (TownSymbol == '@')
                   {
                     Generator.PlaceShop(TownSquare, TownShop, 6.d2().Roll());
-                    RecruitParty(TownSquare, TownParty);
+                    RecruitTownParty(TownSquare);
 
                     DeferList.Add(() =>
                     {
@@ -3158,7 +3149,7 @@ namespace Pathos
                 TownSquare.SetLit(true);
 
                 Generator.PlaceCharacter(TownSquare, Codex.Entities.watch_captain);
-                RecruitParty(TownSquare, TownParty);
+                RecruitTownParty(TownSquare);
                 break;
 
               case '\\':
@@ -3191,20 +3182,20 @@ namespace Pathos
                   if (GuardCharacter != null)
                   {
                     GuardArray[GuardNumber] = GuardCharacter;
-                    GuardCharacter.SetResidentSquare(TownSquare);
+                    Generator.ResidentSquare(GuardCharacter, TownSquare);
 
-                    RecruitParty(TownSquare, TownParty);
+                    RecruitTownParty(TownSquare);
                   }
                 }
                 else
                 {
-                  GuardCharacter.SetResidentRoute(GuardCharacter.Resident.GetRouteArray().Union(TownSquare).ToArray(), 0);
+                  Generator.ResidentRoute(GuardCharacter, GuardCharacter.Resident.GetRouteArray().Union(TownSquare).ToArray(), 0);
                 }
                 break;
 
               case ' ':
                 // void.
-                TownSquare.SetFloor(null);
+                Generator.RemoveFloor(TownSquare);
                 TownSquare.SetLit(false);
                 break;
 
@@ -3453,8 +3444,8 @@ namespace Pathos
                     var Properties = Codex.Properties;
                     var Elements = Codex.Elements;
 
-                    KingCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
-                    KingCharacter.SetResistance(Elements.magical, 100);
+                    Generator.AcquireTalent(KingCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
+                    Generator.EnsureResistance(KingCharacter, Elements.magical, 100);
 
                     Generator.AcquireUnique(MinesSquare, KingCharacter, Codex.Qualifications.master);
 
@@ -3593,7 +3584,7 @@ namespace Pathos
 
                 // some of the guards in Undertown are fixed (and indicated by obsidian floor).
                 if (UnderCharacter.Square.Floor.Ground == Codex.Grounds.obsidian_floor)
-                  UnderCharacter.SetResidentSquare(UnderCharacter.Square);
+                  Generator.ResidentSquare(UnderCharacter, UnderCharacter.Square);
 
                 if (UnderCharacter.IsResident())
                 {
@@ -3622,8 +3613,8 @@ namespace Pathos
                 var Properties = Codex.Properties;
                 var Elements = Codex.Elements;
 
-                UnderCharacter.AcquireTalent(Properties.free_action, Properties.polymorph_control, Properties.slippery);
-                UnderCharacter.SetResistance(Elements.magical, 100);
+                Generator.AcquireTalent(UnderCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
+                Generator.EnsureResistance(UnderCharacter, Elements.magical, 100);
 
                 Generator.AcquireUnique(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
 
@@ -3646,25 +3637,7 @@ namespace Pathos
               else if (UnderAsset.Item.Type == ItemType.Gem || UnderAsset.Item.Type == ItemType.Book || UnderAsset.Item.Type == ItemType.Rock)
               {
                 // randomise items.
-                UnderSquare.RemoveAsset(UnderAsset);
-
-                var ReplaceAsset = Generator.NewRandomAsset(UnderSquare, UnderAsset.Item.Stock);
-                if (ReplaceAsset != null)
-                {
-                  if (UnderAsset.Quantity > 1)
-                    ReplaceAsset.SetQuantity(UnderAsset.Quantity);
-
-                  if (ReplaceAsset.Item.Type == UnderAsset.Item.Type)
-                  {
-                    UnderSquare.PlaceAsset(ReplaceAsset);
-
-                    //Debug.WriteLine(UnderAsset + " => " + ReplaceAsset);
-                  }
-                  else
-                  {
-                    //Debug.WriteLine(UnderAsset + " !! " + ReplaceAsset);
-                  }
-                }
+                Generator.ReplaceRandomAsset(UnderSquare, UnderAsset);
               }
               else
               {
@@ -3788,7 +3761,7 @@ namespace Pathos
             {
               var ChamberSquare = ChamberMap[TargetX + SourceX, TargetY + SourceY];
               if (ChamberSquare.Wall == null) // ChamberMargin causes an overlap.
-                ChamberSquare.Transfer(QuestSquare);
+                Generator.TransferSquare(ChamberSquare, QuestSquare);
 
               if (ChamberSquare.Floor != null)
                 ConversionDictionary.Add(QuestSquare, ChamberSquare);
@@ -3832,7 +3805,7 @@ namespace Pathos
           var Shop = ChamberShopProbability.RemoveRandomOrNull();
           if (Shop != null)
           {
-            ChamberSquare.SetFixture(null); // erase the current stall.
+            Generator.RemoveFixture(ChamberSquare); // erase the current stall.
 
             Generator.PlaceShop(ChamberSquare, Shop, ChamberShopItems.Roll());
 
@@ -3874,14 +3847,14 @@ namespace Pathos
           var Properties = Codex.Properties;
           var Elements = Codex.Elements;
 
-          BossCharacter.AcquireTalent(Properties.polymorph_control, Properties.slippery, Properties.clarity, Properties.free_action);
-          BossCharacter.SetResistance(Elements.poison, 100);
-          BossCharacter.SetResistance(Elements.shock, 100);
-          BossCharacter.SetResistance(Elements.cold, 100);
+          Generator.AcquireTalent(BossCharacter, Properties.polymorph_control, Properties.slippery, Properties.clarity, Properties.free_action);
+          Generator.EnsureResistance(BossCharacter, Elements.poison, 100);
+          Generator.EnsureResistance(BossCharacter, Elements.shock, 100);
+          Generator.EnsureResistance(BossCharacter, Elements.cold, 100);
 
           // master competency in all skills.
           foreach (var Competency in BossCharacter.Competencies)
-            Competency.Set(Codex.Qualifications.master);
+            Generator.RequireCompetency(BossCharacter, Competency.Skill, Codex.Qualifications.master);
 
           Generator.AcquireUnique(BossCharacter.Square, BossCharacter, Codex.Qualifications.master);
         }
@@ -3948,8 +3921,9 @@ namespace Pathos
         }
         else if (FixSquare.Door != null && FixSquare.Door.Secret)
         {
-          Generator.PlaceIllusionaryWall(FixSquare, LabyrinthBarrier, FixSquare.Door.IsHorizontal ? WallSegment.Horizontal : WallSegment.Vertical);
-          FixSquare.SetDoor(null);
+          var FixSegment = FixSquare.Door.IsHorizontal ? WallSegment.Horizontal : WallSegment.Vertical;
+          Generator.RemoveDoor(FixSquare);
+          Generator.PlaceIllusionaryWall(FixSquare, LabyrinthBarrier, FixSegment);
         }
       }
 
@@ -3976,7 +3950,9 @@ namespace Pathos
         var LabyrinthLevel = LabyrinthSite.AddLevel(LevelIndex, LabyrinthMap);
         var LabyrinthRegion = LabyrinthMap.Region;
 
-        RegionFill(LabyrinthMap, LabyrinthRegion, S => Generator.PlaceSolidWall(S, LabyrinthBarrier, WallSegment.Cross));
+        foreach (var LabyrinthSquare in LabyrinthMap.GetSquares(LabyrinthRegion))
+          Generator.PlaceSolidWall(LabyrinthSquare, LabyrinthBarrier, WallSegment.Cross);
+
         CreateMazePaths(LabyrinthMap, LabyrinthRegion);
         CreateMazeDetails(LabyrinthStructure, LabyrinthMap, LabyrinthBlock, LabyrinthRegion, BoxSize);
 
@@ -4005,7 +3981,7 @@ namespace Pathos
           {
             if (InnerSquare.Wall != null && Chance.OneIn10.Hit())
             {
-              InnerSquare.SetWall(null);
+              Generator.RemoveWall(InnerSquare);
               Generator.PlaceFloor(InnerSquare, Codex.Grounds.lava);
             }
           }
@@ -4043,14 +4019,14 @@ namespace Pathos
         var Properties = Codex.Properties;
         var Elements = Codex.Elements;
 
-        BossCharacter.AcquireTalent(Properties.polymorph_control, Properties.slippery, Properties.free_action, Properties.clarity);
-        BossCharacter.SetResistance(Elements.fire, 100);
-        BossCharacter.SetResistance(Elements.magical, 100);
-        BossCharacter.SetResistance(Elements.poison, 100);
+        Generator.AcquireTalent(BossCharacter, Properties.polymorph_control, Properties.slippery, Properties.free_action, Properties.clarity);
+        Generator.EnsureResistance(BossCharacter, Elements.fire, 100);
+        Generator.EnsureResistance(BossCharacter, Elements.magical, 100);
+        Generator.EnsureResistance(BossCharacter, Elements.poison, 100);
 
         // master competency in all skills.
         foreach (var Competency in BossCharacter.Competencies)
-          Competency.Set(Codex.Qualifications.master);
+          Generator.RequireCompetency(BossCharacter, Competency.Skill, Codex.Qualifications.master);
 
         var ArtifactAsset = Generator.NewSpecificAsset(BossCharacter.Square, Codex.Items.wand_of_digging);
         BossCharacter.Inventory.Carried.Add(ArtifactAsset);
@@ -4064,7 +4040,7 @@ namespace Pathos
       {
         var ArtifactAsset = Generator.GenerateUniqueAsset(JammedSquare);
         if (ArtifactAsset != null)
-          JammedSquare.PlaceAsset(ArtifactAsset);
+          Generator.PlaceAsset(JammedSquare, ArtifactAsset);
 
         Generator.PlaceBoulder(JammedSquare, LabyrinthBlock, IsRigid: true); // rigid so monsters don't move it around.
 
@@ -4504,7 +4480,7 @@ namespace Pathos
               // chests.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
               var ChestAsset = Generator.NewSpecificAsset(FortSquare, Codex.Items.chest);
-              FortSquare.PlaceAsset(ChestAsset);
+              Generator.PlaceAsset(FortSquare, ChestAsset);
 
               ChestAsset.Container.Stash.Add(Generator.CreateCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare) * 1.d3().Roll()));
               ChestAsset.Container.Stash.Add(Generator.NewSpecificAsset(FortSquare, FortGemProbability.GetRandomOrNull()));
@@ -4601,12 +4577,12 @@ namespace Pathos
                 var Properties = Codex.Properties;
                 var Elements = Codex.Elements;
 
-                FortCharacter.AcquireTalent(Properties.clarity, Properties.free_action, Properties.slippery, Properties.polymorph_control, Properties.see_invisible, Properties.vitality);
-                FortCharacter.SetResistance(Elements.drain, 100);
-                FortCharacter.SetResistance(Elements.cold, 100);
-                FortCharacter.SetResistance(Elements.fire, 100);
-                FortCharacter.SetResistance(Elements.sleep, 100);
-                FortCharacter.SetResistance(Elements.magical, 100);
+                Generator.AcquireTalent(FortCharacter, Properties.clarity, Properties.free_action, Properties.slippery, Properties.polymorph_control, Properties.see_invisible, Properties.vitality);
+                Generator.EnsureResistance(FortCharacter, Elements.drain, 100);
+                Generator.EnsureResistance(FortCharacter, Elements.cold, 100);
+                Generator.EnsureResistance(FortCharacter, Elements.fire, 100);
+                Generator.EnsureResistance(FortCharacter, Elements.sleep, 100);
+                Generator.EnsureResistance(FortCharacter, Elements.magical, 100);
 
                 Generator.AcquireUnique(FortSquare, FortCharacter, Codex.Qualifications.proficient);
               }
@@ -4866,7 +4842,7 @@ namespace Pathos
             if (KingdomMap.Level.Index == 1)
               KingdomSquare.Passage.SetDestination(PortalSquare);
             else
-              KingdomSquare.SetPassage(null);
+              Generator.RemovePassage(KingdomSquare);
           }
 
           var Shrine = KingdomSquare.Character?.Resident?.Shrine;
@@ -4887,7 +4863,7 @@ namespace Pathos
             if (Shop != null)
             {
               // replace the shop.
-              KingdomSquare.Character.SetResidentShop(KingdomSquare, Shop);
+              Generator.ResidentShop(KingdomSquare.Character, KingdomSquare, Shop);
 
               // force a shop zone.
               var ShopZone = KingdomMap.AddZone();
@@ -4927,7 +4903,7 @@ namespace Pathos
             if (IsTown)
               Generator.CorpseSquare(KingdomSquare); // murder all high elves in the town
             else
-              KingdomSquare.Character.SetNeutral(false); // high elves are hostile in the palace.
+              Generator.HostileCharacter(KingdomSquare.Character); // high elves are hostile in the palace.
           }
 
           if (!StandardGeneration && KingdomSquare.Character != null)
@@ -4941,23 +4917,23 @@ namespace Pathos
             {
               var Elements = Codex.Elements;
 
-              UpgradeCharacter.SetResistance(Elements.cold, 100);
-              UpgradeCharacter.SetResistance(Elements.fire, 100);
-              UpgradeCharacter.SetResistance(Elements.magical, 100);
-              UpgradeCharacter.SetResistance(Elements.poison, 100);
+              Generator.EnsureResistance(UpgradeCharacter, Elements.cold, 100);
+              Generator.EnsureResistance(UpgradeCharacter, Elements.fire, 100);
+              Generator.EnsureResistance(UpgradeCharacter, Elements.magical, 100);
+              Generator.EnsureResistance(UpgradeCharacter, Elements.poison, 100);
             }
             else if (UpgradeCharacter.Entity == Codex.Entities.orc_captain)
             {
-              UpgradeCharacter.ForceCompetency(Skills.light_blade).Set(Qualifications.master);
-              UpgradeCharacter.ForceCompetency(Skills.medium_blade).Set(Qualifications.master);
-              UpgradeCharacter.ForceCompetency(Skills.heavy_blade).Set(Qualifications.master);
-              UpgradeCharacter.ForceCompetency(Skills.light_armour).Set(Qualifications.master);
-              UpgradeCharacter.ForceCompetency(Skills.medium_armour).Set(Qualifications.master);
-              UpgradeCharacter.ForceCompetency(Skills.heavy_armour).Set(Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.light_blade, Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.medium_blade, Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.heavy_blade, Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.light_armour, Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.medium_armour, Qualifications.master);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.heavy_armour, Qualifications.master);
             }
             else if (UpgradeCharacter.Entity == Codex.Entities.orc_shaman)
             {
-              UpgradeCharacter.ForceCompetency(Skills.evocation).Set(Qualifications.specialist);
+              Generator.RequireCompetency(UpgradeCharacter, Skills.evocation, Qualifications.specialist);
             }
           }
 
@@ -4971,11 +4947,11 @@ namespace Pathos
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;
 
-            KingCharacter.AcquireTalent(Properties.free_action, Properties.invisibility, Properties.polymorph_control, Properties.slippery);
-            KingCharacter.SetResistance(Elements.cold, 100);
-            KingCharacter.SetResistance(Elements.fire, 100);
-            KingCharacter.SetResistance(Elements.magical, 100);
-            KingCharacter.SetResistance(Elements.poison, 100);
+            Generator.AcquireTalent(KingCharacter, Properties.free_action, Properties.invisibility, Properties.polymorph_control, Properties.slippery);
+            Generator.EnsureResistance(KingCharacter, Elements.cold, 100);
+            Generator.EnsureResistance(KingCharacter, Elements.fire, 100);
+            Generator.EnsureResistance(KingCharacter, Elements.magical, 100);
+            Generator.EnsureResistance(KingCharacter, Elements.poison, 100);
 
             KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(KingdomSquare, Codex.Items.potion_of_full_healing, 1));
             KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(KingdomSquare, Codex.Items.potion_of_extra_healing, 3));
@@ -5000,11 +4976,11 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in KingCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.master);
+              Generator.RequireCompetency(KingCharacter, Competency.Skill, Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(KingCharacter.Competencies.Select(C => C.Skill)))
-              KingCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
+              Generator.RequireCompetency(KingCharacter, SchoolSkill, Codex.Qualifications.master);
 
             if (!StandardGeneration)
               Generator.AcquireUnique(KingdomSquare, KingCharacter, Codex.Qualifications.master);
@@ -5019,7 +4995,7 @@ namespace Pathos
           if (KingdomSquare.Character?.Entity == Codex.Entities.straw_golem)
           {
             // paralysed for training students.
-            KingdomSquare.Character.AcquireTalent(Codex.Properties.paralysis);
+            Generator.AcquireTalent(KingdomSquare.Character, Codex.Properties.paralysis);
           }
 
           foreach (var Asset in KingdomSquare.GetAssets())
@@ -5027,13 +5003,13 @@ namespace Pathos
             if (Asset.Item == Codex.Items.sandwich)
             {
               // sandwich is replaced by an artifact.
-              KingdomSquare.RemoveAsset(Asset);
+              Generator.RemoveAsset(KingdomSquare, Asset);
 
               if (StandardGeneration)
               {
                 var KingAsset = Generator.GenerateUniqueAsset(KingdomSquare);
                 if (KingAsset != null)
-                  KingdomSquare.PlaceAsset(KingAsset);
+                  Generator.PlaceAsset(KingdomSquare, KingAsset);
               }
             }
             else if (Asset.Container != null)
@@ -5045,14 +5021,7 @@ namespace Pathos
             else if (Asset.Item != Codex.Items.skeleton_key && Asset.Item.Type != ItemType.Corpse)
             {
               // randomise items.
-              KingdomSquare.RemoveAsset(Asset);
-              var ReplaceAsset = Generator.NewRandomAsset(KingdomSquare, Asset.Item.Stock);
-              if (ReplaceAsset != null)
-              {
-                if (Asset.Quantity > 1)
-                  ReplaceAsset.SetQuantity(Asset.Quantity);
-                KingdomSquare.PlaceAsset(ReplaceAsset);
-              }
+              Generator.ReplaceRandomAsset(KingdomSquare, Asset);
             }
           }
         }
@@ -5192,8 +5161,7 @@ namespace Pathos
             else
             {
               // randomise items.
-              LairSquare.RemoveAsset(Asset);
-              Generator.PlaceRandomAsset(LairSquare, Asset.Item.Stock);
+              Generator.ReplaceRandomAsset(LairSquare, Asset);
             }
           }
 
@@ -5205,12 +5173,12 @@ namespace Pathos
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;
 
-            LairCharacter.AcquireTalent(Properties.clarity, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.see_invisible, Properties.vitality, Properties.slippery, Properties.free_action);
-            LairCharacter.SetResistance(Elements.drain, 100);
-            LairCharacter.SetResistance(Elements.cold, 100);
-            LairCharacter.SetResistance(Elements.fire, 100);
-            LairCharacter.SetResistance(Elements.sleep, 100);
-            LairCharacter.SetResistance(Elements.magical, 100);
+            Generator.AcquireTalent(LairCharacter, Properties.clarity, Properties.life_regeneration, Properties.mana_regeneration, Properties.polymorph_control, Properties.see_invisible, Properties.vitality, Properties.slippery, Properties.free_action);
+            Generator.EnsureResistance(LairCharacter, Elements.drain, 100);
+            Generator.EnsureResistance(LairCharacter, Elements.cold, 100);
+            Generator.EnsureResistance(LairCharacter, Elements.fire, 100);
+            Generator.EnsureResistance(LairCharacter, Elements.sleep, 100);
+            Generator.EnsureResistance(LairCharacter, Elements.magical, 100);
 
             // maximum knowledge of the known spells.
             var SpellArray = new[]
@@ -5228,11 +5196,11 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in LairCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.master);
+              Generator.RequireCompetency(LairCharacter, Competency.Skill, Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(LairCharacter.Competencies.Select(C => C.Skill)))
-              LairCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
+              Generator.RequireCompetency(LairCharacter, SchoolSkill, Codex.Qualifications.master);
 
             var ArtifactAsset = Generator.GenerateUniqueAsset(LairSquare);
 
@@ -5340,7 +5308,7 @@ namespace Pathos
         // create a shop.
         if (MarketSquare.Fixture != null && MarketSquare.Fixture.Feature == Codex.Features.stall)
         {
-          MarketSquare.SetFixture(null); // erase the current stall.
+          Generator.RemoveFixture(MarketSquare); // erase the current stall.
 
           Generator.PlaceShop(MarketSquare, GetShop(), ItemDice.Roll());
         }
@@ -5353,7 +5321,7 @@ namespace Pathos
 
           // guards are resident.
           if (Character.Entity == Codex.Entities.guard && !Character.IsResident())
-            Character.SetResidentSquare(MarketSquare);
+            Generator.ResidentSquare(Character, MarketSquare);
         }
 
         // randomise items.
@@ -5372,8 +5340,7 @@ namespace Pathos
           else
           {
             // randomise items.
-            MarketSquare.RemoveAsset(Asset);
-            Generator.PlaceRandomAsset(MarketSquare, Asset.Item.Stock);
+            Generator.ReplaceRandomAsset(MarketSquare, Asset);
           }
         }
       }
@@ -5444,8 +5411,7 @@ namespace Pathos
             else
             {
               // randomise items.
-              TowerSquare.RemoveAsset(Asset);
-              Generator.PlaceRandomAsset(TowerSquare, Asset.Item.Stock);
+              Generator.ReplaceRandomAsset(TowerSquare, Asset);
             }
           }
 
@@ -5457,8 +5423,8 @@ namespace Pathos
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;
 
-            TowerCharacter.AcquireTalent(Properties.free_action, Properties.displacement, Properties.polymorph_control, Properties.slippery);
-            TowerCharacter.SetResistance(Elements.fire, 100);
+            Generator.AcquireTalent(TowerCharacter, Properties.free_action, Properties.displacement, Properties.polymorph_control, Properties.slippery);
+            Generator.EnsureResistance(TowerCharacter, Elements.fire, 100);
 
             // maximum knowledge of the known spells.
             var SpellArray = new[]
@@ -5479,14 +5445,14 @@ namespace Pathos
 
             // master competency in all skills.
             foreach (var Competency in TowerCharacter.Competencies)
-              Competency.Set(Codex.Qualifications.master);
+              Generator.RequireCompetency(TowerCharacter, Competency.Skill, Codex.Qualifications.master);
 
             var SchoolSkillArray = SpellArray.Select(S => S.School.Skill).Distinct().ToArray();
             foreach (var SchoolSkill in SchoolSkillArray.Except(TowerCharacter.Competencies.Select(C => C.Skill)))
-              TowerCharacter.AddCompetency(SchoolSkill, Codex.Qualifications.master);
+              Generator.RequireCompetency(TowerCharacter, SchoolSkill, Codex.Qualifications.master);
 
             // downgrade enchantment to specialist.
-            TowerCharacter.GetCompetency(Codex.Skills.enchantment).Set(Codex.Qualifications.specialist);
+            Generator.RequireCompetency(TowerCharacter, Codex.Skills.enchantment, Codex.Qualifications.specialist);
 
             var ArtifactAsset = Generator.GenerateUniqueAsset(TowerSquare);
 
@@ -5568,8 +5534,7 @@ namespace Pathos
             else
             {
               // randomise items.
-              AbyssSquare.RemoveAsset(Asset);
-              Generator.PlaceRandomAsset(AbyssSquare, Asset.Item.Stock);
+              Generator.ReplaceRandomAsset(AbyssSquare, Asset);
             }
           }
 
@@ -5580,26 +5545,22 @@ namespace Pathos
             var Elements = Codex.Elements;
 
             // minions.
-            AbyssCharacter.SetResistance(Elements.drain, 100);
-            AbyssCharacter.SetResistance(Elements.fire, 100);
-            AbyssCharacter.SetResistance(Elements.poison, 100);
+            Generator.EnsureResistance(AbyssCharacter, Elements.drain, 100);
+            Generator.EnsureResistance(AbyssCharacter, Elements.fire, 100);
+            Generator.EnsureResistance(AbyssCharacter, Elements.poison, 100);
 
             var IsBoss = AbyssCharacter.Entity == Codex.Entities.nabassu;
 
             if (AbyssCharacter.HasAcquiredTalent(Properties.sleeping) || IsBoss)
             {
               // flunkies.
-              AbyssCharacter.ReleaseTalent(Properties.sleeping);
+              Generator.ReleaseTalent(AbyssCharacter, Properties.sleeping);
+              Generator.AcquireTalent(AbyssCharacter, Properties.polymorph_control);
+              Generator.AcquireTalent(AbyssCharacter, Properties.slippery);
 
-              AbyssCharacter.SetResistance(Elements.magical, 100);
-              AbyssCharacter.SetResistance(Elements.sleep, 100);
-              AbyssCharacter.SetResistance(Elements.petrify, 100);
-
-              if (!AbyssCharacter.HasAcquiredTalent(Properties.polymorph_control))
-                AbyssCharacter.AcquireTalent(Properties.polymorph_control);
-
-              if (!AbyssCharacter.HasAcquiredTalent(Properties.slippery))
-                AbyssCharacter.AcquireTalent(Properties.slippery);
+              Generator.EnsureResistance(AbyssCharacter, Elements.magical, 100);
+              Generator.EnsureResistance(AbyssCharacter, Elements.sleep, 100);
+              Generator.EnsureResistance(AbyssCharacter, Elements.petrify, 100);
 
               if (IsBoss)
               {
@@ -5607,9 +5568,9 @@ namespace Pathos
 
                 // resistances to all main elements.
                 foreach (var Element in Elements.List.Where(E => E.IsResistance))
-                  AbyssCharacter.SetResistance(Element, 100);
+                  Generator.EnsureResistance(AbyssCharacter, Element, 100);
 
-                AbyssCharacter.AcquireTalent(Properties.reflection, Properties.see_invisible, Properties.teleport_control, Properties.vitality);
+                Generator.AcquireTalent(AbyssCharacter, Properties.reflection, Properties.see_invisible, Properties.teleport_control, Properties.vitality);
 
                 Asset NewAsset(Item Item, int Quantity, Sanctity Sanctity)
                 {

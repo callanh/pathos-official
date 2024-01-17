@@ -84,7 +84,7 @@ namespace Pathos
 
       var ContainerSquare = SandboxMap[13, 3];
       var ContainerAsset = Generator.NewSpecificAsset(ContainerSquare, Generator.ContainerItems.GetRandomOrNull());
-      ContainerSquare.PlaceAsset(ContainerAsset);
+      Generator.PlaceAsset(ContainerSquare, ContainerAsset);
       ContainerAsset.Container.Locked = true;
       ContainerAsset.Container.Trap = Generator.NewTrap(Generator.RandomContainerDevice(ContainerSquare), Revealed: false);
 
@@ -144,14 +144,14 @@ namespace Pathos
       {
         var EggAsset = Generator.NewSpecificAsset(EggSquare, EggItem);
         EggAsset.SetEgg(Egg);
-        EggSquare.PlaceAsset(EggAsset);
+        Generator.PlaceAsset(EggSquare, EggAsset);
       }
 
       var TinSquare = SandboxMap[12, 1];
       for (var Tin = 0; Tin < 20; Tin++)
       {
         var TinAsset = Generator.NewSpecificAsset(TinSquare, Codex.Items.tin);
-        TinSquare.PlaceAsset(TinAsset);
+        Generator.PlaceAsset(TinSquare, TinAsset);
       }
 
       var DarkRegion = new Region(25, 0, 34, 9);

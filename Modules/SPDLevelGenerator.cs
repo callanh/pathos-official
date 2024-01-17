@@ -415,7 +415,7 @@ namespace Pathos
                             case 1:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.white_unicorn);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.slowness);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.slowness);
                                     break;
                                 }
                             default: boss = null; break;
@@ -433,16 +433,15 @@ namespace Pathos
                             case 0:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.air_elemental);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.confusion, SPDDebug.codex.Properties.narcolepsy);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.confusion, SPDDebug.codex.Properties.narcolepsy);
                                     break;
                                 }
                             case 1:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.leprechaun_wizard);
                                     SPDDebug.generator.PromoteCharacter(boss, 3);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.reflection, SPDDebug.codex.Properties.displacement, SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.mana_regeneration, SPDDebug.codex.Properties.deflection);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.free_action);
-                                    boss.SetResistance(SPDDebug.codex.Elements.magical, 100);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.reflection, SPDDebug.codex.Properties.displacement, SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.mana_regeneration, SPDDebug.codex.Properties.deflection, SPDDebug.codex.Properties.free_action);
+                                    SPDDebug.generator.EnsureResistance(boss, SPDDebug.codex.Elements.magical, 100);
                                     break;
                                 }
                             default: boss = null; break;
@@ -460,14 +459,14 @@ namespace Pathos
                             case 0:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.ettin);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.quickness);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.quickness);
                                     SPDDebug.generator.PromoteCharacter(boss, 5);
                                     break;
                                 }
                             case 1:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.archlich);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.reflection, SPDDebug.codex.Properties.displacement, SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.deflection);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.reflection, SPDDebug.codex.Properties.displacement, SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.deflection);
                                     break;
                                 }
                             default: boss = null; break;
@@ -485,13 +484,13 @@ namespace Pathos
                             case 0:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.mithril_golem);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.slowness);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.slowness);
                                     break;
                                 }
                             case 1:
                                 {
                                     boss = SPDDebug.generator.NewCharacter(Square, SPDDebug.codex.Entities.disintegrator);
-                                    boss.AcquireTalent(SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.reflection);
+                                    SPDDebug.generator.AcquireTalent(boss, SPDDebug.codex.Properties.quickness, SPDDebug.codex.Properties.reflection);
                                     SPDDebug.generator.PromoteCharacter(boss, 10);
                                     break;
                                 }
@@ -998,7 +997,7 @@ namespace Pathos
                 if (ItemDelayed.Item == null)
                 {
                     if (SPDRandom.Int(40) == 0) SPDDebug.generator.PlaceSpecificAsset(square, SPDDebug.generator.RandomUniqueItem());
-                    else square.PlaceAsset(SPDGameList.RandomAsset(square));
+                    else SPDDebug.generator.PlaceAsset(square, SPDGameList.RandomAsset(square));
                 }
                 else
                     SPDDebug.generator.PlaceSpecificAsset(square, ItemDelayed.Item, ItemDelayed.Quantity);
@@ -1012,7 +1011,7 @@ namespace Pathos
                 //pickaxe.SetWeight(Weight.Zero);
                 pickaxe.SetSanctity(SPDDebug.codex.Sanctities.Blessed);
                 pickaxe.SetEnchantment(Modifier.Zero);
-                pickaxeSquare.PlaceAsset(pickaxe);
+                SPDDebug.generator.PlaceAsset(pickaxeSquare, pickaxe);
             }
         }
         private void GenerateMonsters(Inv.DistinctList<SPDPoint> StandardPointList)
@@ -1027,7 +1026,7 @@ namespace Pathos
                 if (square.Character == null)
                 { 
                     SPDDebug.generator.PlaceCharacter(square);
-                    if (square.Character != null) SPDDebug.currentmap.pathosMap[pos.x, pos.y].Character.AcquireTalent(SPDDebug.codex.Properties.sleeping);
+                    if (square.Character != null) SPDDebug.generator.AcquireTalent(SPDDebug.currentmap.pathosMap[pos.x, pos.y].Character, SPDDebug.codex.Properties.sleeping);
                 }
             }
         }
@@ -1068,10 +1067,10 @@ namespace Pathos
             SPDDebug.generator.PlaceCharacter(Square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = Square.Character;
             shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1); // override to start with 1 gold coin.
-            shopkeeper.SetResidentShop(Square, shop);
-            shopkeeper.SetNeutral(true);
-            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
-            shopkeeper.SetName(SPDDebug.generator.GetCharacterName(shop.KeeperNames));
+            SPDDebug.generator.ResidentShop(shopkeeper, Square, shop);
+            SPDDebug.generator.NeutralCharacter(shopkeeper);
+            SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
+            SPDDebug.generator.NameCharacter(shopkeeper, SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
             Asset StallAdd(Item StallItem, int? Quantity = null)
             {
@@ -1161,10 +1160,10 @@ namespace Pathos
             SPDDebug.generator.PlaceCharacter(square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = square.Character;
             shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1);
-            shopkeeper.SetResidentShop(square, shop);
-            shopkeeper.SetNeutral(true);
-            shopkeeper.AddCompetency(SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
-            shopkeeper.SetName(SPDDebug.generator.GetCharacterName(shop.KeeperNames));
+            SPDDebug.generator.ResidentShop(shopkeeper, square, shop);
+            SPDDebug.generator.NeutralCharacter(shopkeeper);
+            SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
+            SPDDebug.generator.NameCharacter(shopkeeper, SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
             void StallAdd(Item StallItem) => stall.Stash.Add(SPDDebug.generator.NewSpecificAsset(square, StallItem));
 
@@ -1235,8 +1234,8 @@ namespace Pathos
                 var itemSquare = SPDDebug.currentmap.pathosMap[item.x, item.y];
                 switch (item.value)
                 {
-                    case 0: itemSquare.PlaceAsset(RandomGrade(itemSquare, SPDGameList.RandomArmour())); break;
-                    case 1: itemSquare.PlaceAsset(RandomGrade(itemSquare, SPDGameList.GoodArmour())); break;
+                    case 0: SPDDebug.generator.PlaceAsset(itemSquare, RandomGrade(itemSquare, SPDGameList.RandomArmour())); break;
+                    case 1: SPDDebug.generator.PlaceAsset(itemSquare, RandomGrade(itemSquare, SPDGameList.GoodArmour())); break;
                     case 2: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.MagicFood()); break;
                     case 3: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomPotion()); break;
                     case 4: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomScroll()); break;
@@ -1244,9 +1243,9 @@ namespace Pathos
                     case 6: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.scroll_of_enchantment); break;
                     case 7: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.potion_of_gain_ability); break;
                     case 8: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.scroll_of_remove_curse); break;
-                    case 9: itemSquare.PlaceAsset(SPDGameList.PitChest(itemSquare)); break;
+                    case 9: SPDDebug.generator.PlaceAsset(itemSquare, SPDGameList.PitChest(itemSquare)); break;
                     case 10: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomRing()); break;
-                    case 11: itemSquare.PlaceAsset(SPDGameList.PoolPrize(itemSquare)); break;
+                    case 11: SPDDebug.generator.PlaceAsset(itemSquare, SPDGameList.PoolPrize(itemSquare)); break;
                     case 12: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.GoodWeapon()); break;
                     case 13: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.gold_coin, SPDGameList.GoldCoinQuantity()); break;
                     case 14: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.gold_coin, SPDGameList.HalfGoldQuantity()); break;
@@ -1258,9 +1257,9 @@ namespace Pathos
                         var FirearmItem = SPDGameList.ThrownFirearm();
                         if (FirearmItem.IsAbolitionCandidate())
                             FirearmItem = SPDDebug.generator.AbolitionReplacement(FirearmItem);
-                        itemSquare.PlaceAsset(SPDDebug.generator.NewSpecificAsset(itemSquare, FirearmItem, 1));
+                        SPDDebug.generator.PlaceAsset(itemSquare, SPDDebug.generator.NewSpecificAsset(itemSquare, FirearmItem, Quantity: 1));
                         break;
-                    case 20: itemSquare.PlaceAsset(SPDGameList.ZooChest(itemSquare)); break;
+                    case 20: SPDDebug.generator.PlaceAsset(itemSquare, SPDGameList.ZooChest(itemSquare)); break;
                     case 21: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDDebug.codex.Items.potion_of_healing); break;
                     case 22: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RealGem()); break;
                     case 23: SPDDebug.generator.PlaceSpecificAsset(itemSquare, SPDGameList.RandomWand()); break;

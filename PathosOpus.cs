@@ -457,7 +457,7 @@ namespace Pathos
         }
         else if ((OverlandSquare.Trap?.Device.Descent ?? false) || OverlandSquare.Trap?.Device == Codex.Devices.squeaky_board) // squeaky board converts to hole.
         {
-          OverlandSquare.SetTrap(null); // erase descent traps for now.
+          Generator.RemoveTrap(OverlandSquare); // erase descent traps for now.
 
           /* trapdoors/holes do not drop the character to a fixed location.
           var UndergroundSquare = UndergroundMap[OverlandSquare.X, OverlandSquare.Y];
@@ -488,10 +488,7 @@ namespace Pathos
 
       // make all characters dormant so their AI doesn't impact on CPU until they are disturbed.
       foreach (var Map in Generator.Adventure.World.Maps)
-      {
-        foreach (var Character in Map.GetCharacters())
-          Character.SetDormant(true);
-      }
+        Generator.DormantCharacters(Map);
 
       // apply area difficulty based on distance from starting section.
       foreach (var Section in OpusDesign.Sections)
@@ -533,7 +530,6 @@ namespace Pathos
       SetMapMiddle(OpusTerms.Station);
       SetSiteSuffixFirstLevelUp("Mine");
       SetSiteSuffixFirstLevelUp("Lair");
-      SetSiteFirstLevelUp(OpusTerms.Halls);
       SetSiteFirstLevelUp(OpusTerms.Cage);
       SetSiteFirstLevelUp(OpusTerms.Prison);
       SetMapLevelDown(OpusTerms.Overland);
@@ -541,6 +537,7 @@ namespace Pathos
       Generator.Adventure.World.SetStart(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Ruins);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
+      SetSiteFirstLevelUp(OpusTerms.Halls);
 #endif
 
       // write out build records for performance tracking.
@@ -662,7 +659,7 @@ namespace Pathos
       bool IsFloor(Square Square, Direction Direction) => Square.Adjacent(Direction)?.Floor != null;
       void RepairGap(Square Square)
       {
-        Square.SetFloor(null);
+        Generator.RemoveFloor(Square);
         Generator.PlaceSolidWall(Square, Barrier, WallSegment.Pillar);
         Square.SetLit(IsLit);
       }
@@ -989,7 +986,7 @@ namespace Pathos
     private void Tunnel(Square TunnelSquare, Barrier TunnelBarrier, Ground TunnelGround, bool IsLit)
     {
       if (TunnelSquare.Wall != null)
-        TunnelSquare.SetWall(null);
+        Generator.RemoveWall(TunnelSquare);
 
       if (TunnelSquare.Floor == null)
       {
@@ -1025,7 +1022,7 @@ namespace Pathos
       Debug.Assert(UniqueEntityList.Contains(Entity), "Evil entity must first be selected by NewUniqueEntity.");
 
       var Result = Generator.NewCharacter(Square, Entity);
-      Result.SetNeutral(false);
+      Generator.HostileCharacter(Result);
       EvilCharacterList.Add(Result);
 
       return Result;
@@ -1036,7 +1033,7 @@ namespace Pathos
       Debug.Assert(UniqueEntityList.Contains(Entity), "Good entity must first be selected by NewUniqueEntity.");
 
       var Result = Generator.NewCharacter(Square, Entity);
-      Result.SetNeutral(true);
+      Generator.NeutralCharacter(Result);
       GoodCharacterList.Add(Result);
 
       return Result;
@@ -1078,7 +1075,7 @@ namespace Pathos
     private void SnoozeCharacter(Character Character)
     {
       if (Character != null)
-        Generator.AcquireCharacterTalent(Character, Codex.Properties.sleeping);
+        Generator.AcquireTalent(Character, Codex.Properties.sleeping);
     }
     private bool IsCorner(Square Square, Func<Square, bool> ClosedFunc, Func<Square, bool> OpenFunc)
     {
@@ -1323,8 +1320,8 @@ namespace Pathos
 
         var OracleSquare = UndergroundSquare.Adjacent(CoffinSquare.AsDirection(UndergroundSquare));
         var OracleCharacter = Maker.NewGoodCharacter(OracleSquare, Maker.SelectUniqueEntity(Codex.Entities.Oracle));
-        OracleCharacter.SetNeutral(true);
-        OracleCharacter.SetResidentSquare(OracleSquare);
+        System.Diagnostics.Debug.Assert(OracleCharacter.Neutral);
+        Generator.ResidentSquare(OracleCharacter, OracleSquare);
         Generator.PlaceCharacter(OracleSquare, OracleCharacter);
 
         // assassin will arrive in the overland if the oracle is slain.
@@ -1538,7 +1535,7 @@ namespace Pathos
           if (AmbushSquare != FunnelSquare && !AmbushSquare.IsAdjacent(FunnelSquare))
           {
             AmbushSquare.SetLit(true);
-            AmbushSquare.SetFloor(null);
+            Generator.RemoveFloor(AmbushSquare);
             Generator.PlaceWall(AmbushSquare, Codex.Barriers.cave_wall, WallStructure.Solid, WallSegment.Pillar);
           }
         }
@@ -1586,7 +1583,7 @@ namespace Pathos
           {
             var AdditionalDirection = LureSquare.AsDirection(AdditionalSquare);
 
-            AdditionalSquare.SetWall(null);
+            Generator.RemoveWall(AdditionalSquare);
             Generator.PlaceFloor(AdditionalSquare, Codex.Grounds.cave_floor);
             Generator.PlaceBoulder(AdditionalSquare, Codex.Blocks.clay_boulder, IsRigid: true);
 
@@ -1617,7 +1614,7 @@ namespace Pathos
             var LargeboxAsset = Generator.NewSpecificAsset(LargeboxSquare, Codex.Items.large_box);
             LargeboxAsset.Container.Locked = true;
 
-            LargeboxSquare.PlaceAsset(LargeboxAsset);
+            Generator.PlaceAsset(LargeboxSquare, LargeboxAsset);
 
             if (Largebox == 0)
               LargeboxAsset.Container.Stash.Add(Generator.GenerateUniqueAsset(LargeboxSquare));
@@ -1629,7 +1626,7 @@ namespace Pathos
         ChestAsset.Container.Locked = true;
         ChestAsset.Container.Trap = Maker.RandomContainerTrap(LureSquare, Section.Distance);
         Generator.StockContainer(LureSquare, ChestAsset);
-        LureSquare.PlaceAsset(ChestAsset);
+        Generator.PlaceAsset(LureSquare, ChestAsset);
 
         // corresponding pit for the boulders.
         foreach (var PitSquare in FunnelSquare.GetFrameSquares(1))
@@ -1652,7 +1649,7 @@ namespace Pathos
             if (OccupyCharacter != null)
             {
               // NOTE: aggravation prevents entities from hiding (they need to rush out to ambush).
-              OccupyCharacter.AcquireTalent(Codex.Properties.aggravation);
+              Generator.AcquireTalent(OccupyCharacter, Codex.Properties.aggravation);
               Generator.RevealCharacter(OccupyCharacter);
 
               LurkParty.AddAlly(OccupyCharacter, Clock.Zero, Delay.Zero);
@@ -1670,7 +1667,7 @@ namespace Pathos
 
           var LootAsset = Generator.NewSpecificAsset(LureSquare, Codex.Items.chest);
           Generator.StockContainer(LootSquare, LootAsset);
-          LootSquare.PlaceAsset(LootAsset);
+          Generator.PlaceAsset(LootSquare, LootAsset);
         }
 
         // place some scouts.
@@ -1884,7 +1881,7 @@ namespace Pathos
               ChestAsset.Container.Locked = true;
               ChestAsset.Container.Trap = Maker.RandomContainerTrap(SourceSquare, BelowMap.Difficulty + Sector.Distance);
               Generator.StockContainer(SourceSquare, ChestAsset);
-              SourceSquare.PlaceAsset(ChestAsset);
+              Generator.PlaceAsset(SourceSquare, ChestAsset);
 
               foreach (var ChestSquare in BelowMap.GetCircleOuterSquares(new Inv.Circle(SourceSquare.Point, 1)))
                 Generator.PlaceFloor(ChestSquare, CageVariant.SinkGround);
@@ -2132,7 +2129,7 @@ namespace Pathos
                 {
                   var CorpseEntity = Generator.RandomCorpse(Section.MinimumDifficulty, Section.MaximumDifficulty, Codex.Items.animal_corpse);
                   if (CorpseEntity != null)
-                    CemeterySquare.PlaceAsset(Generator.CorpseCharacter(Generator.NewCharacter(CemeterySquare, CorpseEntity)));
+                    Generator.PlaceAsset(CemeterySquare, Generator.CorpseCharacter(Generator.NewCharacter(CemeterySquare, CorpseEntity)));
                 }
               }
             }
@@ -2300,7 +2297,7 @@ namespace Pathos
             Maker.ConnectSquares(CryptMap.GetSquares(CryptRegion), EnterSquare, PunchSquare =>
             {
               var PunchBarrier = PunchSquare.Wall.Barrier;
-              PunchSquare.SetWall(null);
+              Generator.RemoveWall(PunchSquare);
               Generator.PlaceFloor(PunchSquare, PunchBarrier.Underlay);
 
               PunchSquare.SetLit(CryptIsLit);
@@ -2312,7 +2309,9 @@ namespace Pathos
 
               foreach (var CryptSquare in CryptMap.GetTriangleOuterSquares(BossTriangle))
               {
-                CryptSquare.SetFloor(null);
+                if (CryptSquare.Floor != null)
+                  Generator.RemoveFloor(CryptSquare);
+
                 Generator.PlaceSolidWall(CryptSquare, CryptVariant.Barrier, WallSegment.Pillar);
 
                 CryptSquare.SetLit(CryptIsLit);
@@ -2320,7 +2319,9 @@ namespace Pathos
 
               foreach (var CryptSquare in CryptMap.GetTriangleInnerSquares(BossTriangle))
               {
-                CryptSquare.SetWall(null);
+                if (CryptSquare.Wall != null)
+                  Generator.RemoveWall(CryptSquare);
+
                 Generator.PlaceFloor(CryptSquare, CryptVariant.Ground);
 
                 CryptSquare.SetLit(CryptIsLit);
@@ -2350,7 +2351,7 @@ namespace Pathos
                 foreach (var LootIndex in RandomSupport.NextRange(2, 3).NumberSeries())
                   ChestAsset.Container.Stash.Add(Generator.NewRandomAsset(Square, Stock));
 
-                Square.PlaceAsset(ChestAsset);
+                Generator.PlaceAsset(Square, ChestAsset);
               }
 
               LootChest(ThroneSquare.Adjacent(Direction.West), Codex.Stocks.book);
@@ -2367,13 +2368,13 @@ namespace Pathos
             // ensure access points.
             if (EnterSquare.Wall != null || EnterSquare.Floor == null)
             {
-              EnterSquare.SetWall(null);
+              Generator.RemoveWall(EnterSquare);
               Generator.PlaceFloor(EnterSquare, CryptVariant.Ground);
             }
 
             if (ExitSquare.Wall != null || ExitSquare.Floor == null)
             {
-              ExitSquare.SetWall(null);
+              Generator.RemoveWall(ExitSquare);
               Generator.PlaceFloor(ExitSquare, CryptVariant.Ground);
             }
 
@@ -2383,7 +2384,7 @@ namespace Pathos
               if (UnreachableSquare == EnterSquare || UnreachableSquare == ExitSquare)
                 continue;
 
-              UnreachableSquare.SetFloor(null);
+              Generator.RemoveFloor(UnreachableSquare);
               Generator.PlaceSolidWall(UnreachableSquare, CryptVariant.Barrier, WallSegment.Pillar);
 
               UnreachableSquare.SetLit(CryptIsLit);
@@ -2467,7 +2468,7 @@ namespace Pathos
             void Recess(Square RecessSquare, Direction Direction)
             {
               RecessSquare.SetLit(CryptIsLit);
-              RecessSquare.SetWall(null);
+              Generator.RemoveWall(RecessSquare);
               Generator.PlaceFloor(RecessSquare, CryptVariant.Ground);
               SurroundWall(RecessSquare, CryptVariant.Barrier);
 
@@ -2512,7 +2513,7 @@ namespace Pathos
                     {
                       SecretSquare.Wall.SetStructure(WallStructure.Illusionary);
 
-                      BeyondSquare.SetWall(null);
+                      Generator.RemoveWall(BeyondSquare);
                       Generator.PlaceFloor(BeyondSquare, CryptVariant.Ground);
                       SurroundWall(BeyondSquare, CryptVariant.Barrier);
 
@@ -2521,7 +2522,7 @@ namespace Pathos
                     }
                     else
                     {
-                      SecretSquare.SetWall(null);
+                      Generator.RemoveWall(SecretSquare);
 
                       Denizen(SecretSquare);
                     }
@@ -2556,7 +2557,7 @@ namespace Pathos
             {
               if (Square.Fixture == null && Square.Passage == null && Square.Boulder == null)
               {
-                Square.SetFloor(null);
+                Generator.RemoveFloor(Square);
                 Generator.PlaceSolidWall(Square, CryptVariant.Barrier, WallSegment.Pillar);
               }
             }
@@ -2624,12 +2625,12 @@ namespace Pathos
                   {
                     // containing a corpse of a mercenary and their gear.
                     var MercenaryCharacter = Generator.NewCharacter(CorpseSquare, MercenaryEntity);
-                    MercenaryCharacter.SetNeutral(false);
+                    Generator.HostileCharacter(MercenaryCharacter);
 
                     foreach (var MercenaryAsset in MercenaryCharacter.Inventory.RemoveAllAssets())
-                      CorpseSquare.PlaceAsset(MercenaryAsset);
+                      Generator.PlaceAsset(CorpseSquare, MercenaryAsset);
 
-                    CorpseSquare.PlaceAsset(Generator.CorpseCharacter(MercenaryCharacter));
+                    Generator.PlaceAsset(CorpseSquare, Generator.CorpseCharacter(MercenaryCharacter));
 
                     BossTrigger.Add(Delay.FromTurns(20), Codex.Tricks.living_dead).SetTarget(CorpseSquare);
                   }
@@ -2807,7 +2808,7 @@ namespace Pathos
                 if (SentryCharacter != null)
                 {
                   // walk the chamber tunnel.
-                  SentryCharacter.SetResidentRoute(new[] { SentrySquare, ChamberEntranceSquare }, 0);
+                  Generator.ResidentRoute(SentryCharacter, new[] { SentrySquare, ChamberEntranceSquare }, 0);
 
                   // remove any darts so they will only use their musical instrument at range.
                   SentryCharacter.Inventory.RemoveAllAssets();
@@ -2816,7 +2817,7 @@ namespace Pathos
                   var AlertItem = AlertItemArray.GetRandom();
                   SentryCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(SentrySquare, AlertItem));
                   foreach (var SentrySkill in AlertItem.GetSkills())
-                    SentryCharacter.ForceCompetency(SentrySkill, Codex.Qualifications.proficient);
+                    Generator.RequireCompetency(SentryCharacter, SentrySkill, Codex.Qualifications.proficient);
 
                   // chosen kobold gets to wear the scales.
                   if (DragonScalesItem != null && !SentryCharacter.Inventory.HasEquipment(Codex.Slots.suit))
@@ -2824,7 +2825,7 @@ namespace Pathos
                     Generator.EquipCharacter(SentryCharacter, Codex.Slots.suit, Generator.NewSpecificAsset(SentrySquare, DragonScalesItem));
 
                     foreach (var SentrySkill in DragonScalesItem.GetSkills())
-                      SentryCharacter.ForceCompetency(SentrySkill, Codex.Qualifications.proficient);
+                      Generator.RequireCompetency(SentryCharacter, SentrySkill, Codex.Qualifications.proficient);
                   }
                 }
               }
@@ -2882,7 +2883,7 @@ namespace Pathos
                   {
                     var EggAsset = Generator.NewSpecificAsset(Square: null, Codex.Items.egg);
                     EggAsset.SetEgg(LairEgg);
-                    SoftSquare.PlaceAsset(EggAsset);
+                    Generator.PlaceAsset(SoftSquare, EggAsset);
                   }
                 }
               }
@@ -2902,7 +2903,7 @@ namespace Pathos
           // replace unreachable squares with a wall, so the following call to RepairMap will remove them entirely as necessary.
           foreach (var UnreachableSquare in Maker.FindUnreachableSquares(LairMap, LairMap.Region, LairLevel.UpSquare))
           {
-            UnreachableSquare.SetFloor(null);
+            Generator.RemoveFloor(UnreachableSquare);
             Generator.PlaceSolidWall(UnreachableSquare, LairBarrier, WallSegment.Pillar);
           }
 
@@ -3040,8 +3041,8 @@ namespace Pathos
         {
           Debug.Assert(StrangeCharacter.Entity == SuspicousEntity);
 
-          StrangeCharacter.SetName(StrangeName);
-          StrangeCharacter.AcquireTalent(Codex.Properties.aggravation);
+          Generator.NameCharacter(StrangeCharacter, StrangeName);
+          Generator.AcquireTalent(StrangeCharacter, Codex.Properties.aggravation);
 
           // TODO: should we make the Strange animal eat corpses on the ground?
           //StrangeCharacter.AcquireTalent(Codex.Properties.cannibalism);
@@ -3074,13 +3075,13 @@ namespace Pathos
               var FarmCharacter = FarmSquare.Character;
               if (FarmCharacter != null)
               {
-                FarmCharacter.SetNeutral(true);
+                Generator.NeutralCharacter(FarmCharacter);
 
                 if (Middle && Strange)
                 {
                   ActSuspicous(FarmCharacter);
 
-                  FarmCharacter.SetResidentSquare(FarmSquare);
+                  Generator.ResidentSquare(FarmCharacter, FarmSquare);
                 }
                 else
                 {
@@ -3094,7 +3095,7 @@ namespace Pathos
                     RouteSquare.Rotate(FarmCircle.Origin, 270)
                   }.EnumerateRandom().ToArray();
 
-                  FarmCharacter.SetResidentRoute(RouteArray, 0);
+                  Generator.ResidentRoute(FarmCharacter, RouteArray, SquareIndex: 0);
                 }
                 FarmParty.AddAlly(FarmCharacter, Clock.Zero, Delay.Zero);
               }
@@ -3151,7 +3152,7 @@ namespace Pathos
               {
                 ActSuspicous(StrangeCharacter);
 
-                StrangeCharacter.SetNeutral(false);
+                Generator.HostileCharacter(StrangeCharacter);
 
                 SecretParty.AddAlly(StrangeCharacter, Clock.Zero, Delay.Zero);
               }
@@ -3159,7 +3160,8 @@ namespace Pathos
           }
 
           var UniqueSquare = SecretMap.GetCircleInnerSquares(SecretCircle).Where(S => S.Character != null).GetRandomOrNull();
-          UniqueSquare?.PlaceAsset(Generator.GenerateUniqueAsset(UniqueSquare));
+          if (UniqueSquare != null)
+            Generator.PlaceUniqueAsset(UniqueSquare);
 
           SecretZone.SetLit(true);
           Debug.Assert(SecretZone.HasSquares());
@@ -3418,14 +3420,14 @@ namespace Pathos
             {
               // place a dead halfling in a sack (reference to The Hobbit book).
               var SackAsset = Generator.NewSpecificAsset(S, Codex.Items.sack);
-              S.PlaceAsset(SackAsset);
+              Generator.PlaceAsset(S, SackAsset);
 
               var HobbitCharacter = Generator.NewCharacter(S, Codex.Entities.proudfoot);
 
               foreach (var MercenaryAsset in HobbitCharacter.Inventory.RemoveAllAssets())
               {
                 if (MercenaryAsset.Container != null)
-                  S.PlaceAsset(MercenaryAsset);
+                  Generator.PlaceAsset(S, MercenaryAsset);
                 else
                   SackAsset.Container.Stash.Add(MercenaryAsset);
               }
@@ -3635,7 +3637,7 @@ namespace Pathos
 
           // artifact.
           Generator.PlacePermanentWall(LootSquare, Codex.Barriers.iron_bars, WallSegment.Pillar);
-          LootSquare.PlaceAsset(Generator.GenerateUniqueAsset(LootSquare));
+          Generator.PlaceUniqueAsset(LootSquare);
           foreach (var FurnaceSquare in ThroneSquare.GetAdjacentSquares().Except(LootSquare))
             Generator.PlaceFloor(FurnaceSquare, Codex.Grounds.lava);
 
@@ -3712,7 +3714,7 @@ namespace Pathos
                 {
                   if (LineSquare.Floor != null)
                   {
-                    LineSquare.SetFloor(null);
+                    Generator.RemoveFloor(LineSquare);
                     Generator.PlacePermanentWall(LineSquare, Codex.Barriers.hell_brick, WallSegment.Pillar);
                   }
                 }
@@ -3739,6 +3741,15 @@ namespace Pathos
           // repair the map.
           Generator.RepairMap(FurnaceMap, FurnaceMap.Region);
 
+          // rift portal.
+          var ResultSquare = FurnaceMap[FurnaceMidpoint.X, 2];
+          if (ResultSquare.Floor?.Ground != Codex.Grounds.obsidian_floor)
+            ResultSquare = ResultSquare.GetAdjacentSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull() ?? FurnaceMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull();
+
+          Generator.PlacePassage(ResultSquare, Codex.Portals.rift, Destination: null); // placeholder.
+
+          FurnaceLevel.SetTransitions(ResultSquare, null);
+
           // map details.
           foreach (var DetailZone in FurnaceMap.GetCircleInnerSquares(FirstCircle).Except(FurnaceMap.GetCircleInnerSquares(ThirdCircle)).Where(S => S.Floor != null && S.Wall == null && S.Spill == null).Select(S => S.Zone).Distinct())
           {
@@ -3752,12 +3763,6 @@ namespace Pathos
           }
 
           FurnaceMap.AddArea(FurnaceName).AddMapZones();
-
-          var ResultSquare = FurnaceMap[FurnaceMidpoint.X, 2];
-          if (ResultSquare.Floor?.Ground != Codex.Grounds.obsidian_floor)
-            ResultSquare = ResultSquare.GetAdjacentSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull() ?? FurnaceMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.obsidian_floor).GetRandomOrNull();
-
-          FurnaceLevel.SetTransitions(ResultSquare, null);
 
           // TODO:
           // * random orientation of furnace?
@@ -3837,7 +3842,7 @@ namespace Pathos
           var PunchBarrier = PunchSquare.Wall.Barrier;
           Generator.PlaceFloor(PunchSquare, PunchBarrier.Underlay);
 
-          PunchSquare.SetWall(null);
+          Generator.RemoveWall(PunchSquare);
 
           Generator.PlaceLockedVerticalDoor(PunchSquare, AboveVariant.MainGate, SecretBarrier: PunchBarrier);
         });
@@ -3906,6 +3911,8 @@ namespace Pathos
 
             BuildHall(BelowMap, BelowMap.Region, BelowVariant);
 
+            Generator.RepairMap(BelowMap, BelowMap.Region);
+
             BelowMap.AddArea(HallsName).AddMapZones();
           }
         }
@@ -3936,8 +3943,8 @@ namespace Pathos
         foreach (var Sector in Plan.Sectors)
         {
           var SectorRegion = ShiftRegion(Sector.Region);
-          foreach (var HallSquare in HallMap.GetSquares(SectorRegion))
-            HallSquare.SetFloor(null);
+          foreach (var HallSquare in HallMap.GetSquares(SectorRegion).Where(S => S.Floor != null))
+            Generator.RemoveFloor(HallSquare);
         }
 
         // place the hall rooms.
@@ -3953,9 +3960,17 @@ namespace Pathos
 
           var FocusGround = HallVariant.FocusGroundArray.GetRandom();
 
+          void PlaceHall(Region Region, Ground Ground)
+          {
+            foreach (var HallSquare in HallMap.GetFrameSquares(Region).Where(S => S.Floor == null))
+              Generator.PlaceSolidWall(HallSquare, HallVariant.MainBarrier, WallSegment.Pillar);
+            
+            Generator.PlaceFloorFill(HallMap, Ground, Region);
+          }
+
           if (SectorRegion.Width >= 5 && SectorRegion.Height >= 5)
           {
-            Generator.PlaceRoom(HallMap, HallVariant.MainBarrier, HallVariant.MainGround, SectorRegion);
+            PlaceHall(SectorRegion, HallVariant.MainGround);
 
             if (Chance.OneIn5.Hit())
             {
@@ -3993,18 +4008,17 @@ namespace Pathos
           }
           else
           {
-            Generator.PlaceRoom(HallMap, HallVariant.MainBarrier, FocusGround, SectorRegion);
+            PlaceHall(SectorRegion, FocusGround);
           }
 
           foreach (var Link in Sector.Links)
           {
             var LinkRegion = ShiftRegion(Link.Region);
 
-            var LinkSquare = HallMap.GetSquares(LinkRegion).GetRandomOrNull();
+            var LinkSquare = HallMap.GetSquares(LinkRegion).Where(S => S.Wall != null && S.IsFlat()).GetRandomOrNull();
 
             if (LinkSquare != null)
             {
-              LinkSquare.SetWall(null);
               Generator.PlaceFloor(LinkSquare, HallVariant.MainGround);
               Generator.PlaceDoor(LinkSquare, HallVariant.MainGate, DoorOrientation.Vertical, SecretBarrier: HallVariant.MainBarrier);
             }
@@ -4031,7 +4045,6 @@ namespace Pathos
           var SectorRegion = ShiftRegion(Sector.Region);
 
           var FloorSquareList = HallMap.GetSquares(SectorRegion.Reduce(1)).ToDistinctList();
-          Debug.Assert(FloorSquareList.All(S => S.GetDifficulty() > 0), "Generator.PlaceRoom* only work correctly when the difficulty is derivable.");
 
           if (Sector == ZooSector)
           {
@@ -4062,7 +4075,7 @@ namespace Pathos
         WallSegment? GetWall(Square Square, Direction Direction) => Square.Adjacent(Direction)?.Wall?.Segment;
         void RemoveDoubleWall(Square Square)
         {
-          Square.SetWall(null);
+          Generator.RemoveWall(Square);
           Generator.PlaceFloor(Square, HallVariant.MainGround);
 
           if (Chance.OneIn2.Hit())
@@ -4088,8 +4101,6 @@ namespace Pathos
               RemoveDoubleWall(HallSquare);
           }
         }
-
-        Generator.RepairWalls(HallMap, HallRegion);
 
         // TODO:
         // * special rooms - shops, shrines.
@@ -4197,7 +4208,7 @@ namespace Pathos
         {
           if (FortSquare.Floor?.Ground == Codex.Grounds.dirt && FortSquare.Boulder == null && FortSquare.GetAdjacentSquares().Any(S => S.Floor?.Ground == Codex.Grounds.stone_floor))
           {
-            FortSquare.SetFloor(null);
+            Generator.RemoveFloor(FortSquare);
             Generator.PlaceWall(FortSquare, Codex.Barriers.wooden_wall, WallStructure.Solid, WallSegment.Pillar);
           }
         }
@@ -4205,7 +4216,7 @@ namespace Pathos
         // sanctum walls.
         foreach (var FortSquare in MiddleSquare.GetAdjacentSquares())
         {
-          FortSquare.SetFloor(null);
+          Generator.RemoveFloor(FortSquare);
           Generator.PlaceWall(FortSquare, Codex.Barriers.wooden_wall, WallStructure.Solid, WallSegment.Pillar);
         }
 
@@ -4225,7 +4236,7 @@ namespace Pathos
 
             if (FortSquare.Wall != null && FortSquare.IsFlat())
             {
-              FortSquare.SetWall(null);
+              Generator.RemoveWall(FortSquare);
               Generator.PlaceFloor(FortSquare, Codex.Grounds.dirt);
               Generator.PlaceTrap(FortSquare, Codex.Devices.spiked_pit, Revealed: true);
             }
@@ -4247,7 +4258,7 @@ namespace Pathos
 
           if (KoboldCharacter != null)
           {
-            KoboldCharacter.AcquireTalent(Codex.Properties.jumping); // so they can jump into the pits without dying like idiots.
+            Generator.AcquireTalent(KoboldCharacter, Codex.Properties.jumping); // so they can jump into the pits without dying like idiots.
 
             // promote kobolds so they are not completely outmatched.
             var DifficultyGap = SectionDifficulty - KoboldCharacter.Entity.Difficulty;
@@ -4268,9 +4279,9 @@ namespace Pathos
                 Generator.EquipCharacter(KoboldCharacter, DualWielding ? Codex.Slots.offhand : Codex.Slots.main_hand, Generator.NewSpecificAsset(KoboldSquare, Codex.Items.crossbow));
                 Generator.EquipCharacter(KoboldCharacter, Codex.Slots.quiver, Generator.NewSpecificAsset(KoboldSquare, Codex.Items.crossbow_bolt));
 
-                KoboldCharacter.ForceCompetency(Codex.Skills.crossbow, Codex.Qualifications.proficient);
+                Generator.RequireCompetency(KoboldCharacter, Codex.Skills.crossbow, Codex.Qualifications.proficient);
                 if (DualWielding)
-                  KoboldCharacter.ForceCompetency(Codex.Skills.dual_wielding, Codex.Qualifications.proficient);
+                  Generator.RequireCompetency(KoboldCharacter, Codex.Skills.dual_wielding, Codex.Qualifications.proficient);
               }
             }
 
@@ -4437,7 +4448,7 @@ namespace Pathos
 
             // erase any trees that are in the way of the jetty.
             if (JettySquare != null && LakeVariant.ShoreBarrier != null && JettySquare.Wall?.Barrier == LakeVariant.ShoreBarrier)
-              JettySquare.SetWall(null);
+              Generator.RemoveWall(JettySquare);
           }
           while (JettySquare != null && JettySquare.Floor?.Ground == LakeVariant.BodyGround);
         }
@@ -4458,7 +4469,7 @@ namespace Pathos
             foreach (var MercenaryAsset in MercenaryCharacter.Inventory.RemoveAllAssets())
             {
               if (MercenaryAsset.Container != null)
-                MiddleSquare.PlaceAsset(MercenaryAsset);
+                Generator.PlaceAsset(MiddleSquare, MercenaryAsset);
               else
                 ChestAsset.Container.Stash.Add(MercenaryAsset);
             }
@@ -4481,7 +4492,7 @@ namespace Pathos
           else if (MiddleSquare.Floor?.Ground == Codex.Grounds.lava || MiddleSquare.Floor?.Ground == Codex.Grounds.chasm)
             Generator.PlaceFloor(MiddleSquare, LakeVariant.IslandGround);
 
-          MiddleSquare.PlaceAsset(ChestAsset);
+          Generator.PlaceAsset(MiddleSquare, ChestAsset);
 
           var IsSunken = MiddleSquare.IsSunken();
           var IsDangerous = LakeVariant.BodyGround == Codex.Grounds.lava || LakeVariant.BodyGround == Codex.Grounds.chasm;
@@ -4602,7 +4613,7 @@ namespace Pathos
               if (NeighbourArray.Length > 0)
               {
                 var NeighbourSquare = NeighbourArray.GetRandom();
-                NeighbourSquare.SetWall(null);
+                Generator.RemoveWall(NeighbourSquare);
 
                 var BetweenSquare = NextSquare.Adjacent(NextSquare.AsDirection(NeighbourSquare));
                 if (BetweenSquare.Wall != null)
@@ -4613,7 +4624,7 @@ namespace Pathos
                   }
                   else
                   {
-                    BetweenSquare.SetWall(null);
+                    Generator.RemoveWall(BetweenSquare);
                     if (TreantChance.Hit())
                       Generator.PlaceCharacter(BetweenSquare, Codex.Entities.treant);
                   }
@@ -4784,7 +4795,7 @@ namespace Pathos
 
             foreach (var RoomSquare in EntranceSquare.GetNeighbourSquares(RoomSize))
             {
-              RoomSquare.SetWall(null);
+              Generator.RemoveWall(RoomSquare);
               Generator.PlaceFloor(RoomSquare, Codex.Grounds.cave_floor);
               //Generator.PlaceClosedHorizontalDoor(RoomSquare, Codex.Gates.wooden_door, Codex.Barriers.wooden_wall);
             }
@@ -4876,7 +4887,7 @@ namespace Pathos
           Maker.ConnectSquares(BelowMap.GetSquares(BelowMap.Region), ExitSquare, PunchSquare =>
           {
             var PunchBarrier = PunchSquare.Wall.Barrier;
-            PunchSquare.SetWall(null);
+            Generator.RemoveWall(PunchSquare);
             Generator.PlaceFloor(PunchSquare, PunchBarrier.Underlay);
 
             if (PunchSquare.Passage == null)
@@ -4902,7 +4913,7 @@ namespace Pathos
             {
               if (Chance.OneIn2.Hit())
               {
-                WallSquare.SetWall(null);
+                Generator.RemoveWall(WallSquare);
                 Generator.PlaceFloor(WallSquare, Codex.Grounds.cave_floor);
                 Generator.PlaceBoulder(WallSquare, Codex.Blocks.clay_boulder, IsRigid: false);
 
@@ -5012,7 +5023,8 @@ namespace Pathos
             Generator.PlaceCharacter(GolemSquare, MineVariant.Golem);
             var GolemCharacter = GolemSquare.Character;
             // gimmick: raging, tunnelling golem (slowness to make it escapable).
-            GolemCharacter?.AcquireTalent(Codex.Properties.aggravation, Codex.Properties.rage, Codex.Properties.tunnelling, Codex.Properties.slowness);
+            if (GolemCharacter != null)
+              Generator.AcquireTalent(GolemCharacter, Codex.Properties.aggravation, Codex.Properties.rage, Codex.Properties.tunnelling, Codex.Properties.slowness);
           }
 
           Generator.RepairMap(BelowMap, BelowMap.Region);
@@ -5135,14 +5147,14 @@ namespace Pathos
 
             foreach (var RoomSquare in EntranceSquare.GetNeighbourSquares(RoomSize))
             {
-              RoomSquare.SetWall(null);
+              Generator.RemoveWall(RoomSquare);
               Generator.PlaceFloor(RoomSquare, Codex.Grounds.cave_floor);
             }
 
             // boulder corner struts.
             foreach (var RoomSquare in EntranceSquare.GetCornerSquares(RoomSize))
             {
-              RoomSquare.SetWall(null);
+              Generator.RemoveWall(RoomSquare);
               Generator.PlaceFloor(RoomSquare, Codex.Grounds.dirt);
               Generator.PlaceBoulder(RoomSquare, Codex.Blocks.clay_boulder, IsRigid: true);
             }
@@ -5151,7 +5163,7 @@ namespace Pathos
             {
               foreach (var RoomSquare in EntranceSquare.GetCornerSquares(RoomSize - 1))
               {
-                RoomSquare.SetFloor(null);
+                Generator.RemoveFloor(RoomSquare);
                 Generator.PlaceSolidWall(RoomSquare, Codex.Barriers.cave_wall, WallSegment.Pillar);
               }
             }
@@ -5284,7 +5296,7 @@ namespace Pathos
             {
               var EggAsset = Generator.NewSpecificAsset(Square: null, Codex.Items.egg);
               EggAsset.SetEgg(NestEgg);
-              Square.PlaceAsset(EggAsset);
+              Generator.PlaceAsset(Square, EggAsset);
             }
           }
 
@@ -5372,7 +5384,7 @@ namespace Pathos
           }
           Debug.Assert(LootZone.HasSquares());
 
-          LootSquare.PlaceAsset(Generator.GenerateUniqueAsset(LootSquare));
+          Generator.PlaceUniqueAsset(LootSquare);
           foreach (var ChamberSquare in LootSquare.GetAdjacentSquares())
           {
             Generator.DropCoins(ChamberSquare, Generator.RandomCoinQuantity(ChamberSquare));
@@ -5800,14 +5812,17 @@ namespace Pathos
 
         var EscapeSquare = OverlandMap[LadderSquare.X, LadderSquare.Y];
         EscapeSquare.SetLit(true);
-        EscapeSquare.SetWall(null);
+
+        if (EscapeSquare.Wall != null)
+          Generator.RemoveWall(EscapeSquare);
+
         Generator.PlaceFloor(EscapeSquare, SurfaceGround);
 
         // give the escape square a chance.
         foreach (var PitSquare in EscapeSquare.GetNeighbourSquares())
         {
           if (PitSquare.Wall != null)
-            PitSquare.SetWall(null);
+            Generator.RemoveWall(PitSquare);
 
           if (PitSquare.IsVoid())
           {
@@ -6064,11 +6079,11 @@ H-----------H
             Generator.PlaceFloor(AboveSquare, AboveVariant.NaturalGround); // dirt under the tree.
 
             if (Chance.OneIn4.Hit())
-              AboveSquare.SetWall(null);
+              Generator.RemoveWall(AboveSquare);
           }
           else if (AboveSquare.Wall?.Barrier == Codex.Barriers.iron_bars)
           {
-            AboveSquare.SetWall(null); // delete iron bars in the above ruin.
+            Generator.RemoveWall(AboveSquare); // delete iron bars in the above ruin.
           }
         }
 
@@ -6216,7 +6231,7 @@ H-----------H
             {
               foreach (var DividerSquare in RuinMap.GetFrameSquares(AdjustRegion).Where(S => S.Wall == null && S.Passage == null))
               {
-                DividerSquare.SetFloor(null);
+                Generator.RemoveFloor(DividerSquare);
                 Generator.PlaceSolidWall(DividerSquare, RuinVariant.NaturalBarrier, WallSegment.Pillar);
               }
             }
@@ -6289,11 +6304,11 @@ H-----------H
               if (Chance.OneIn5.Hit())
                 PunchSquare.Wall.SetStructure(WallStructure.Illusionary);
               else
-                PunchSquare.SetWall(null);
+                Generator.RemoveWall(PunchSquare);
             }
             else
             {
-              PunchSquare.SetWall(null);
+              Generator.RemoveWall(PunchSquare);
               Generator.PlaceDoor(PunchSquare, PunchGate, DoorOrientation.Vertical, SecretBarrier: PunchBarrier);
 
               if (PunchSquare.Door != null && !PunchSquare.Door.Secret && Chance.OneIn5.Hit())
@@ -6309,7 +6324,6 @@ H-----------H
         foreach (var Building in BuildingList)
         {
           var FloorSquareList = RuinMap.GetSquares(Building.Region.Reduce(1)).ToDistinctList();
-          Debug.Assert(FloorSquareList.All(S => S.GetDifficulty() > 0), "Generator.PlaceRoom* only work correctly when the difficulty is derivable.");
 
           Generator.PlaceRoomFixtures(FloorSquareList);
 
@@ -6331,7 +6345,7 @@ H-----------H
 
               var BrokenAsset = Generator.NewSpecificAsset(BrokenSquare, Generator.ContainerItems.GetRandomOrNull());
               Generator.BreakContainer(BrokenAsset);
-              BrokenSquare.PlaceAsset(BrokenAsset);
+              Generator.PlaceAsset(BrokenSquare, BrokenAsset);
             }
           }
 
@@ -6347,7 +6361,7 @@ H-----------H
           {
             if (Chance.OneIn5.Hit())
             {
-              NaturalSquare.SetFloor(null);
+              Generator.RemoveFloor(NaturalSquare);
               Generator.PlaceSolidWall(NaturalSquare, RuinVariant.NaturalBarrier, WallSegment.Pillar);
             }
             else if (Chance.OneIn5.Hit())
@@ -6395,7 +6409,7 @@ H-----------H
                 LootAsset.Container.Locked = true;
                 LootAsset.Container.Trap = Maker.RandomContainerTrap(NaturalSquare, RuinVariant.MaximumDifficulty);
                 Generator.StockContainer(NaturalSquare, LootAsset);
-                NaturalSquare.PlaceAsset(LootAsset);
+                Generator.PlaceAsset(NaturalSquare, LootAsset);
               }
               else
               {
@@ -6423,7 +6437,7 @@ H-----------H
           {
             if (Chance.OneIn8.Hit())
             {
-              RuinSquare.SetWall(null);
+              Generator.RemoveWall(RuinSquare);
 
               Generator.PlaceFloor(RuinSquare, RuinVariant.BrokenGround); // floor under the boulder.
               Generator.PlaceBoulder(RuinSquare, RuinVariant.RoomBlock, IsRigid: true);
@@ -6543,7 +6557,9 @@ H-----------H
         {
           if (OutpostSquare != EntranceSquare)
           {
-            OutpostSquare.SetFloor(null);
+            if (OutpostSquare.Floor != null)
+              Generator.RemoveFloor(OutpostSquare);
+
             Generator.PlaceSolidWall(OutpostSquare, OutpostVariant.Barrier, WallSegment.Pillar);
           }
         }
@@ -6602,7 +6618,7 @@ H-----------H
           {
             if (RoomSquare.Floor?.Ground == OutpostVariant.Ground && RoomSquare.Door == null && RoomSquare.Passage == null)
             {
-              RoomSquare.SetFloor(null);
+              Generator.RemoveFloor(RoomSquare);
               Generator.PlaceSolidWall(RoomSquare, OutpostVariant.Barrier, WallSegment.Pillar);
             }
           }
@@ -6615,7 +6631,7 @@ H-----------H
         {
           Debug.Fail("Not expected to have a wall immediately at the entrance to the Outpost.");
 
-          WalkSquare.SetWall(null);
+          Generator.RemoveWall(WalkSquare);
           Generator.PlaceFloor(WalkSquare, OutpostVariant.Ground);
         }
 
@@ -6652,12 +6668,12 @@ H-----------H
               var ContainerAsset = Generator.NewSpecificAsset(ChestSquare, Codex.Items.large_box);
               ContainerAsset.Container.Locked = true;
               ContainerAsset.Container.Trap = Maker.RandomContainerTrap(ChestSquare, Section.Distance);
-              ChestSquare.PlaceAsset(ContainerAsset);
+              Generator.PlaceAsset(ChestSquare, ContainerAsset);
 
               foreach (var Asset in PrisonCharacter.Inventory.RemoveAllAssets())
               {
                 if (Asset.Container != null)
-                  ChestSquare.PlaceAsset(Asset);
+                  Generator.PlaceAsset(ChestSquare, Asset);
                 else
                   ContainerAsset.Container.Stash.Add(Asset);
               }
@@ -6792,7 +6808,7 @@ H-----------H
 
             if (PrisonSquare.GetAdjacentSquares().Any(S => S.Floor?.Ground == Codex.Grounds.dirt || S.IsVoid()))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlaceSolidWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
           }
@@ -6806,7 +6822,10 @@ H-----------H
             if ((PrisonSquare.Floor?.Ground == Codex.Grounds.dirt || PrisonSquare.IsVoid()) && PrisonSquare.GetAdjacentSquares().Any(S => S.Wall?.Barrier == Codex.Barriers.stone_wall))
             {
               PrisonSquare.SetLit(true);
-              PrisonSquare.SetWall(null);
+
+              if (PrisonSquare.Wall != null)
+                Generator.RemoveWall(PrisonSquare);
+
               Generator.PlaceFloor(PrisonSquare, Codex.Grounds.water);
 
               if (PrisonSquare.X != RallySquare.X && PrisonSquare.Y != RallySquare.Y && PrisonSquare.Floor?.Ground == Codex.Grounds.water && Chance.OneIn8.Hit())
@@ -6874,7 +6893,7 @@ H-----------H
 
         foreach (var PrisonSquare in AboveMap.GetFrameSquares(HouseRegion))
         {
-          PrisonSquare.SetFloor(null);
+          Generator.RemoveFloor(PrisonSquare);
           Generator.PlaceSolidWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
         }
 
@@ -6910,7 +6929,7 @@ H-----------H
             }
             else
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlaceSolidWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
           }
@@ -6978,7 +6997,7 @@ H-----------H
               var LargeboxAsset = Generator.NewSpecificAsset(LockerSquare, Codex.Items.large_box);
               LargeboxAsset.Container.Locked = true;
               LargeboxAsset.Container.Trap = Maker.RandomContainerTrap(LockerSquare, Section.Distance);
-              LockerSquare.PlaceAsset(LargeboxAsset);
+              Generator.PlaceAsset(LockerSquare, LargeboxAsset);
 
               LargeboxAsset.Container.Stash.Add(Generator.CreateCoins(LockerSquare, Generator.RandomCoinQuantity(LockerSquare) * 1.d3().Roll()));
               LargeboxAsset.Container.Stash.Add(Generator.NewSpecificAsset(LockerSquare, FortGemProbability.GetRandomOrNull()));
@@ -7083,7 +7102,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
 
@@ -7116,7 +7135,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetCornerSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
 
@@ -7124,7 +7143,7 @@ H-----------H
             {
               if ((HorizontalSplit || VerticalSplit) && (CellSquare.X == PrisonSquare.X || CellSquare.Y == PrisonSquare.Y))
               {
-                PrisonSquare.SetFloor(null);
+                Generator.RemoveFloor(PrisonSquare);
                 Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
               }
               else
@@ -7138,7 +7157,7 @@ H-----------H
             {
               if ((HorizontalSplit && CellSquare.X == PrisonSquare.X) || (VerticalSplit && CellSquare.Y == PrisonSquare.Y) || (!HorizontalSplit && !VerticalSplit && HorizontalWide && VerticalWide && PrisonSquare == CellSquare))
               {
-                PrisonSquare.SetFloor(null);
+                Generator.RemoveFloor(PrisonSquare);
                 Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
               }
               else
@@ -7162,7 +7181,7 @@ H-----------H
 
             Maker.ConnectSquares(BelowMap.GetSquares(Building.Region.Expand(1)).Where(S => S.Floor != null && S.Wall == null), BelowMap.GetFrameSquares(Building.Region.Expand(1)).GetRandomOrNull(), AccessSquare =>
             {
-              AccessSquare.SetWall(null);
+              Generator.RemoveWall(AccessSquare);
               Generator.PlaceFloor(AccessSquare, Codex.Grounds.stone_floor);
               Generator.PlaceLockedVerticalDoor(AccessSquare, Codex.Gates.iron_door, Codex.Barriers.iron_bars);
               AccessSquare.Door.SetReinforced(true);
@@ -7194,7 +7213,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.wooden_wall, WallSegment.Pillar);
             }
 
@@ -7206,7 +7225,7 @@ H-----------H
 
             // door.
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
-            AccessSquare.SetWall(null);
+            Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.wooden_floor);
             Generator.PlaceLockedVerticalDoor(AccessSquare, Codex.Gates.gold_door, Codex.Barriers.wooden_wall);
             AccessSquare.Door.SetReinforced(true);
@@ -7238,13 +7257,13 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.jade_wall, WallSegment.Pillar);
             }
 
             // artifact.
             var VaultSquare = BelowMap[Building.Region.Midpoint()];
-            VaultSquare.PlaceAsset(Generator.GenerateUniqueAsset(VaultSquare));
+            Generator.PlaceUniqueAsset(VaultSquare);
 
             foreach (var PrisonSquare in BelowMap.GetSquares(Building.Region.Reduce(1)))
             {
@@ -7252,15 +7271,15 @@ H-----------H
 
               if (PrisonSquare != VaultSquare)
               {
-                PrisonSquare.PlaceAsset(Generator.CreateCoins(PrisonSquare, Generator.RandomCoinQuantity(PrisonSquare) * 4.d4().Roll()));
-                PrisonSquare.PlaceAsset(Generator.NewSpecificAsset(PrisonSquare, FortGemProbability.GetRandomOrNull()));
-                PrisonSquare.PlaceAsset(Generator.NewSpecificAsset(PrisonSquare, FortGemProbability.GetRandomOrNull()));
+                Generator.PlaceCoinsAsset(PrisonSquare, Multiplier: 4.d4().Roll());
+                Generator.PlaceSpecificAsset(PrisonSquare, FortGemProbability.GetRandomOrNull());
+                Generator.PlaceSpecificAsset(PrisonSquare, FortGemProbability.GetRandomOrNull());
               }
             }
 
             // golden door locked with Jade Key (office boss has the key).
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
-            AccessSquare.SetWall(null);
+            Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.marble_floor);
             Generator.PlaceLockedVerticalDoor(AccessSquare, Codex.Gates.gold_door, Codex.Barriers.wooden_wall);
             AccessSquare.Door.SetReinforced(true);
@@ -7277,7 +7296,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
 
@@ -7291,7 +7310,7 @@ H-----------H
             }
 
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
-            AccessSquare.SetWall(null);
+            Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.stone_floor);
             Generator.PlaceClosedVerticalDoor(AccessSquare, Codex.Gates.wooden_door, Codex.Barriers.stone_wall);
             AccessSquare.Door.SetReinforced(true);
@@ -7303,7 +7322,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
 
@@ -7311,7 +7330,7 @@ H-----------H
               Generator.PlaceFloor(PrisonSquare, Codex.Grounds.stone_floor);
 
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
-            AccessSquare.SetWall(null);
+            Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.stone_floor);
             Generator.PlaceLockedVerticalDoor(AccessSquare, Codex.Gates.iron_door, Codex.Barriers.stone_wall);
             AccessSquare.Door.SetReinforced(true);
@@ -7322,7 +7341,7 @@ H-----------H
               {
                 var StorageAsset = StorageAssetList.RemoveLast();
                 if (Chance.OneIn2.Hit()) // reduce the number of assets stored (maybe convert to gold instead?)
-                  PrisonSquare.PlaceAsset(StorageAsset);
+                  Generator.PlaceAsset(PrisonSquare, StorageAsset);
 
                 if (StorageAssetList.Count == 0)
                   break;
@@ -7337,7 +7356,7 @@ H-----------H
 
             foreach (var PrisonSquare in BelowMap.GetFrameSquares(Building.Region))
             {
-              PrisonSquare.SetFloor(null);
+              Generator.RemoveFloor(PrisonSquare);
               Generator.PlacePermanentWall(PrisonSquare, Codex.Barriers.stone_wall, WallSegment.Pillar);
             }
 
@@ -7345,7 +7364,7 @@ H-----------H
               Generator.PlaceFloor(PrisonSquare, Codex.Grounds.stone_floor);
 
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
-            AccessSquare.SetWall(null);
+            Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.stone_floor);
             Generator.PlaceLockedVerticalDoor(AccessSquare, Codex.Gates.iron_door, Codex.Barriers.stone_wall);
             AccessSquare.Door.SetReinforced(true);
@@ -7591,14 +7610,18 @@ H-----------H
           {
             if (Square.Floor == null || Square.Floor.Ground == Codex.Grounds.dirt)
             {
-              Square.SetFloor(null);
+              if (Square.Floor != null)
+                Generator.RemoveFloor(Square);
+
               Generator.PlaceSolidWall(Square, TownVariant.BuildingBarrier, WallSegment.Pillar);
             }
           }
 
           foreach (var Square in TownMap.GetSquares(BuildingRegion.Reduce(1)))
           {
-            Square.SetWall(null);
+            if (Square.Wall != null)
+              Generator.RemoveWall(Square);
+
             Generator.PlaceFloor(Square, TownVariant.BuildingGround);
           }
 
@@ -7640,13 +7663,13 @@ H-----------H
               foreach (var TeardownSquare in TownMap.GetSquares(Building.Region))
               {
                 if (TeardownSquare.Door?.Gate == TownVariant.BuildingGate)
-                  TeardownSquare.SetDoor(null);
+                  Generator.RemoveDoor(TeardownSquare);
 
                 if (TeardownSquare.Floor?.Ground == TownVariant.BuildingGround)
-                  TeardownSquare.SetFloor(null);
+                  Generator.RemoveFloor(TeardownSquare);
 
                 if (TeardownSquare.Wall?.Barrier == TownVariant.BuildingBarrier)
-                  TeardownSquare.SetWall(null);
+                  Generator.RemoveWall(TeardownSquare);
 
                 var TeardownZone = TeardownSquare.Zone;
                 if (TeardownZone != null && TeardownSquare.Floor == null && TeardownSquare.Wall == null)
@@ -7665,7 +7688,7 @@ H-----------H
           else
           {
             // punch a door in a flat segment of wall.
-            BuildingSquare.SetWall(null);
+            Generator.RemoveWall(BuildingSquare);
             Generator.PlaceFloor(BuildingSquare, TownVariant.BuildingGround);
             Generator.PlaceClosedVerticalDoor(BuildingSquare, TownVariant.BuildingGate, SecretBarrier: TownVariant.BuildingBarrier);
           }
@@ -7755,7 +7778,7 @@ H-----------H
           {
             if (AroundSquare != OpenSquare && AroundSquare.Wall == null && !AroundSquare.GetNeighbourSquares().Any(S => S.Door != null))
             {
-              AroundSquare.SetFloor(null);
+              Generator.RemoveFloor(AroundSquare);
               Generator.PlaceSolidWall(AroundSquare, TownVariant.BuildingBarrier, WallSegment.Pillar);
             }
           }
@@ -7876,7 +7899,8 @@ H-----------H
           }
         }
 
-        MayorCharacter?.SetResidentRoute(MayorSquareList.ToArray(), 0);
+        if (MayorCharacter != null)
+          Generator.ResidentRoute(MayorCharacter, MayorSquareList.ToArray(), SquareIndex: 0);
 
         // make fountains.
         var FountainNumberDice = 1.d2();
@@ -7932,7 +7956,7 @@ H-----------H
                 var OffdutyCharacter = BedSquare.Character;
                 if (OffdutyCharacter != null)
                 {
-                  OffdutyCharacter.SetResidentSquare(BedSquare);
+                  Generator.ResidentSquare(OffdutyCharacter, BedSquare);
 
                   TownParty.AddAlly(OffdutyCharacter, Clock.Zero, Delay.Zero);
 
@@ -8015,7 +8039,7 @@ H-----------H
               var WatchmanCharacter = WatchmanSquare.Character;
               if (WatchmanCharacter != null)
               {
-                WatchmanCharacter.SetResidentRoute(WatchmanSquareArray, WatchmanSquareArray.IndexOf(WatchmanSquare));
+                Generator.ResidentRoute(WatchmanCharacter, WatchmanSquareArray, WatchmanSquareArray.IndexOf(WatchmanSquare));
                 TownParty.AddAlly(WatchmanCharacter, Clock.Zero, Delay.Zero);
               }
 
@@ -8047,9 +8071,9 @@ H-----------H
             if (WatchCaptainCharacter != null)
             {
               if (WatchCaptainSquareList.Count > 0)
-                WatchCaptainCharacter.SetResidentRoute(WatchCaptainSquareList.ToArray(), WatchCaptainSquareList.IndexOf(WatchCaptainSquare));
+                Generator.ResidentRoute(WatchCaptainCharacter, WatchCaptainSquareList.ToArray(), WatchCaptainSquareList.IndexOf(WatchCaptainSquare));
               else
-                WatchCaptainCharacter.SetResidentSquare(WatchCaptainSquare);
+                Generator.ResidentSquare(WatchCaptainCharacter, WatchCaptainSquare);
 
               TownParty.AddAlly(WatchCaptainCharacter, Clock.Zero, Delay.Zero);
 
@@ -8091,7 +8115,7 @@ H-----------H
             if (FillSquare.Fixture == null && !FillSquare.GetAdjacentSquares().Any(S => S.Wall != null || S.Passage != null) && Chance.OneIn4.Hit())
             {
               if (TownVariant.OutsideGround == null)
-                FillSquare.SetFloor(null);
+                Generator.RemoveFloor(FillSquare);
 
               Generator.PlaceSolidWall(FillSquare, TownVariant.OutsideBarrier, WallSegment.Pillar);
             }
@@ -8267,8 +8291,8 @@ H-----------H
             }
             else if (ZooSquare.Boulder == null)
             {
-              if (ZooBarrier.Opaque)
-                ZooSquare.SetFloor(null);
+              if (ZooBarrier.Opaque && ZooSquare.Floor != null)
+                Generator.RemoveFloor(ZooSquare);
 
               Generator.PlaceWall(ZooSquare, ZooBarrier, WallStructure.Solid, WallSegment.Pillar);
             }
