@@ -1053,7 +1053,7 @@ EffectType,hatch,孵化
 EffectType,identify,鑒定
 EffectType,impersonate,模仿
 EffectType,incarcerate,禁錮
-EffectType,karma,運氣
+EffectType,karma,運程
 EffectType,liberate,解放
 EffectType,locking,鎖住
 EffectType,lose skill,失去技能
@@ -3372,7 +3372,7 @@ LiteralText,feature,特殊
 LiteralText,FEATURES,特殊
 LiteralText,FEED,餵養
 LiteralText,FEEDBACK,反饋
-LiteralText,Feedback information,
+LiteralText,Feedback information,反饋信息
 LiteralText,FILES,文件
 LiteralText,fixed range,固定射程
 LiteralText,FIZZLE,發嘶嘶聲
@@ -3885,7 +3885,7 @@ ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,像素之旅
 ModuleName,Sandbox Play,沙盒遊戲
 ModuleTerm,Abyss,深淵
-ModuleTerm,Ambush,
+ModuleTerm,Ambush,伏擊
 ModuleTerm,Ant Cave,螞蟻洞穴
 ModuleTerm,Ant Lair,螞蟻巢穴
 ModuleTerm,Ant Nest,螞蟻窩
@@ -3900,7 +3900,7 @@ ModuleTerm,Cave Maze,洞穴迷宮
 ModuleTerm,caves,洞穴
 ModuleTerm,Cavetown,洞穴小鎮
 ModuleTerm,cellar,地窖
-ModuleTerm,Cemetery,墳場
+ModuleTerm,Cemetery,墓園
 ModuleTerm,Chicken Farm,養雞場
 ModuleTerm,Cow Farm,牧牛場
 ModuleTerm,Crater,環形山
@@ -3922,12 +3922,12 @@ ModuleTerm,Elf Town Trove,精靈城地窖
 ModuleTerm,Emerald Mine,綠寶石礦區
 ModuleTerm,Eye Pit,眼球坑
 ModuleTerm,Fort Ludios,盧底人堡壘
-ModuleTerm,Furnace,熔爐
+ModuleTerm,Furnace,地獄熔爐
 ModuleTerm,Glacier,冰川
 ModuleTerm,Goat Farm,牧羊場
 ModuleTerm,Green Lair,綠龍巢穴
-ModuleTerm,Grotto,
-ModuleTerm,Halls,大廳
+ModuleTerm,Grotto,石窟
+ModuleTerm,Halls,廳堂
 ModuleTerm,Helltown,地獄小鎮
 ModuleTerm,Horse Farm,牧馬場
 ModuleTerm,Ice Lake,冰封湖泊
@@ -3950,7 +3950,7 @@ ModuleTerm,Medusa Lair,美杜莎領地
 ModuleTerm,Mines,礦洞
 ModuleTerm,Minetown,礦鎮
 ModuleTerm,Moss Pit,苔蘚洞
-ModuleTerm,Opus,奧普斯
+ModuleTerm,Opus,序曲
 ModuleTerm,Orange Lair,橙龍巢穴
 ModuleTerm,Outpost,前哨站
 ModuleTerm,Overland,大陸
@@ -3958,9 +3958,9 @@ ModuleTerm,Pig Farm,養豬場
 ModuleTerm,Prison,監獄
 ModuleTerm,Pudding Pit,凝膠洞
 ModuleTerm,Rat Pit,蝙蝠洞
-ModuleTerm,Rebirth,
+ModuleTerm,Rebirth,新生
 ModuleTerm,Red Lair,紅龍巢穴
-ModuleTerm,Respite,
+ModuleTerm,Respite,喘息
 ModuleTerm,River,河流
 ModuleTerm,Ruby Mine,紅寶石礦區
 ModuleTerm,Ruins,廢墟
@@ -3979,7 +3979,7 @@ ModuleTerm,Sokoban,倉庫番
 ModuleTerm,Spider Cave,蜘蛛洞穴
 ModuleTerm,Spider Lair,蜘蛛巢穴
 ModuleTerm,Spider Nest,蜘蛛窩
-ModuleTerm,Station,樞紐
+ModuleTerm,Station,傳送樞紐
 ModuleTerm,Statue Henge,雕像林
 ModuleTerm,Stone Henge,巨石林
 ModuleTerm,Stonetown,石頭小鎮
@@ -4479,8 +4479,8 @@ SonicName,amulet,護符
 SonicName,arf,海豹叫
 SonicName,armour,裝甲
 SonicName,baa,嚎叫
-SonicName,bars raising,猛地升起
-SonicName,bars slamming,猛地關上
+SonicName,bars raising,柵欄升起
+SonicName,bars slamming,柵欄關上
 SonicName,bell,響鈴鐺
 SonicName,birds,鳥叫
 SonicName,bleat,咩咩地叫

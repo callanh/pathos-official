@@ -5519,9 +5519,6 @@ namespace Pathos
               // random container loot.
               if (ContainerItem.Type == ItemType.Chest && Asset.Container.Stash.Count == 0)
               {
-                // randomise container appearance.
-                Asset.Convert(Generator.ContainerItems.GetRandom(), Codex.Sanctities.Uncursed);
-
                 var Trapped = Chance.OneIn3.Hit(); // 1 in 3 chests are trapped.
                 var Locked = Trapped || !Chance.OneIn3.Hit(); // all trapped chests are locked, 2 in 3 untrapped chests are also locked.
                 StockContainer(AbyssSquare, Asset, Locked, Trapped);

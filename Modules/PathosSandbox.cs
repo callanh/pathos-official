@@ -141,11 +141,7 @@ namespace Pathos
       var EggItem = Codex.Items.List.Where(I => I.Type == ItemType.Egg && !I.Grade.Unique).Single();
 
       foreach (var Egg in Codex.Eggs.List.OrderBy(E => E.Layer.Name))
-      {
-        var EggAsset = Generator.NewSpecificAsset(EggSquare, EggItem);
-        EggAsset.SetEgg(Egg);
-        Generator.PlaceAsset(EggSquare, EggAsset);
-      }
+        Generator.PlaceEggAsset(EggSquare, EggItem, Egg);
 
       var TinSquare = SandboxMap[12, 1];
       for (var Tin = 0; Tin < 20; Tin++)

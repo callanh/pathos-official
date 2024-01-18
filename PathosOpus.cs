@@ -246,20 +246,6 @@ namespace Pathos
     {
       BuildRecordDictionary.Clear();
 
-      // TODO:
-      // * skirmish: mercenary fighting a horde
-      // * troll bridge with billy goats
-      // * bee hive and queen
-      // * beach with sand and water
-      // * cat island
-      // * circle of flames trick
-      // * elemental zone: flame/shock/frost/earth/water/wind plane (volatiles, vortex, elemental, seeker/binder/maker)
-      // * dwarf fortress/human castle + moat + bridge (UnderWW?)
-      // * tavern
-      // * cave entrance - cave bear, sleeping
-      // * sewers with sewer rats
-      // * gateway (statues & guards)
-
       var CriticalList = new Action<OpusSection>[]
       {
         (Section) => Origin.Build(Section),
@@ -535,9 +521,9 @@ namespace Pathos
       SetMapLevelDown(OpusTerms.Overland);
       SetSiteSuffixFirstLevelDown("Nest");
       Generator.Adventure.World.SetStart(FinaleSquare);
-      SetSiteFirstLevelUp(OpusTerms.Ruins);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
       SetSiteFirstLevelUp(OpusTerms.Halls);
+      SetSiteFirstLevelEntrance(OpusTerms.Ruins);
 #endif
 
       // write out build records for performance tracking.
@@ -2880,11 +2866,7 @@ namespace Pathos
                   Maker.SnoozeCharacter(LairCharacter);
 
                   if (LairEgg != null && Chance.OneIn3.Hit())
-                  {
-                    var EggAsset = Generator.NewSpecificAsset(Square: null, Codex.Items.egg);
-                    EggAsset.SetEgg(LairEgg);
-                    Generator.PlaceAsset(SoftSquare, EggAsset);
-                  }
+                    Generator.PlaceEggAsset(SoftSquare, Codex.Items.egg, LairEgg);
                 }
               }
               else
@@ -5293,11 +5275,7 @@ namespace Pathos
           {
             var NestEgg = NestEggArray.GetRandomOrNull();
             if (NestEgg != null)
-            {
-              var EggAsset = Generator.NewSpecificAsset(Square: null, Codex.Items.egg);
-              EggAsset.SetEgg(NestEgg);
-              Generator.PlaceAsset(Square, EggAsset);
-            }
+              Generator.PlaceEggAsset(Square, Codex.Items.egg, NestEgg);
           }
 
           foreach (var EggSquare in CaveMap.GetSquares().Where(S => S.Floor != null && S.GetAdjacentSquares().All(S => S.Floor != null)))
@@ -6060,10 +6038,6 @@ H-----------H
           ExitAction = null
         };
 
-        // erase anything already placed so we can build the ruin.
-        foreach (var AboveSquare in AboveMap.GetSquares(RuinRegion))
-          Generator.PlaceVoid(AboveSquare);
-
         BuildRuin(AboveMap, RuinRegion, AboveVariant);
 
         // might need a surrounding dirt veranda to reconnect the areas.
@@ -6201,16 +6175,22 @@ H-----------H
         // place wall and floor on all the connected regions.
         foreach (var ConnectedRegion in Maker.RandomConnectedRegions(BoxCount, GenerateBox))
         {
-          foreach (var RoomSquare in RuinMap.GetFrameSquares(ConnectedRegion).Where(S => S.IsVoid()))
+          foreach (var RoomSquare in RuinMap.GetFrameSquares(ConnectedRegion))
           {
             RoomSquare.SetLit(RuinVariant.NaturalIsLit);
+
+            if (RoomSquare.Floor != null)
+              Generator.RemoveFloor(RoomSquare);
 
             Generator.PlaceSolidWall(RoomSquare, RuinVariant.NaturalBarrier, WallSegment.Pillar);
           }
 
-          foreach (var RoomSquare in RuinMap.GetSquares(ConnectedRegion.Reduce(1)).Where(S => S.IsVoid()))
+          foreach (var RoomSquare in RuinMap.GetSquares(ConnectedRegion.Reduce(1)))
           {
             RoomSquare.SetLit(RuinVariant.NaturalIsLit);
+
+            if (RoomSquare.Wall != null)
+              Generator.RemoveWall(RoomSquare);
 
             Generator.PlaceFloor(RoomSquare, RuinVariant.NaturalGround);
           }
@@ -7500,6 +7480,37 @@ H-----------H
       }
     }
 
+    private sealed class TempleBuilder : Builder
+    {
+      public TempleBuilder(OpusMaker Maker)
+        : base(Maker)
+      {
+        this.TempleVariance = new Variance<TempleVariant>
+        (
+          new TempleVariant
+          {
+          }
+        );
+      }
+
+      public void Build(OpusSection Section, Map TempleMap)
+      {
+        BuildStart();
+
+        var TempleVariant = TempleVariance.NextVariant();
+
+        // TODO:
+        // * Good and Evil Temple variants? Avvakrum/Lareth?
+
+        BuildStop();
+      }
+
+      private readonly Variance<TempleVariant> TempleVariance;
+
+      private sealed class TempleVariant
+      {
+      }
+    }
     private sealed class TownBuilder : Builder
     {
       public TownBuilder(OpusMaker Maker)

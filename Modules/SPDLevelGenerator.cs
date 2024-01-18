@@ -1066,7 +1066,7 @@ namespace Pathos
             var stall = Square.Fixture.Container;
             SPDDebug.generator.PlaceCharacter(Square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = Square.Character;
-            shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1); // override to start with 1 gold coin.
+            SPDDebug.generator.ChangeQuantity(shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse), 1); // override to start with 1 gold coin.
             SPDDebug.generator.ResidentShop(shopkeeper, Square, shop);
             SPDDebug.generator.NeutralCharacter(shopkeeper);
             SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
@@ -1159,7 +1159,7 @@ namespace Pathos
             var stall = square.Fixture.Container;
             SPDDebug.generator.PlaceCharacter(square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = square.Character;
-            shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse).SetQuantity(1);
+            SPDDebug.generator.ChangeQuantity(shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse), 1);
             SPDDebug.generator.ResidentShop(shopkeeper, square, shop);
             SPDDebug.generator.NeutralCharacter(shopkeeper);
             SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
