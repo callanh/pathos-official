@@ -98,7 +98,7 @@ namespace Pathos
       MerchantParty.AddAlly(FirstMerchant, Clock.Zero, Delay.Zero);
       MerchantParty.AddAlly(SecondMerchant, Clock.Zero, Delay.Zero);
 
-      Generator.PlaceBoulder(SandboxMap[15, 4], Codex.Blocks.stone_boulder, false);
+      Generator.PlaceBoulder(SandboxMap[15, 4], Codex.Blocks.stone_boulder, IsRigid: false);
 
       var FeatureX = 11;
       var FeatureY = 2;
@@ -121,8 +121,7 @@ namespace Pathos
       foreach (var Device in Codex.Devices.List.Where(D => !D.Descent)) // TODO: create a basement level.
       {
         var Square = SandboxMap[DeviceX, DeviceY];
-        Generator.PlaceTrap(Square, Device, Revealed: false);
-        Square.Trap.SetRevealed(true);
+        Generator.PlaceTrap(Square, Device, Revealed: true);
 
         DeviceX++;
 
@@ -163,19 +162,13 @@ namespace Pathos
       Generator.PlaceCorridor(SandboxMap, SandboxCorridorGround, new Region(20, 3, 24, 3));
 
       Generator.PlaceFloor(SandboxMap[10, 2], SandboxRoomGround);
-      Generator.PlaceClosedVerticalDoor(SandboxMap[10, 2], SandboxGate, SandboxBarrier);
-      SandboxMap[10, 2].Door.SetState(DoorState.Locked);
-      SandboxMap[10, 2].Door.SetSecret(true);
-      SandboxMap[10, 2].Door.SetTrap(Generator.NewTrap(Codex.Devices.arrow_trap, Revealed: false));
+      Generator.PlaceLockedVerticalDoor(SandboxMap[10, 2], SandboxGate, SandboxBarrier, Secret: true, Trap: Generator.NewTrap(Codex.Devices.arrow_trap, Revealed: false));
       Generator.PlaceCorridor(SandboxMap, SandboxCorridorGround, new Region(0, 2, 9, 2));
       SandboxMap.Zones.Last().SetLit(false);
 
       var SpecialSquare = SandboxMap[10, 4];
       Generator.PlaceFloor(SpecialSquare, SandboxRoomGround);
-      Generator.PlaceClosedHorizontalDoor(SpecialSquare, Codex.Gates.crystal_door, SandboxBarrier);
-      var SpecialDoor = SpecialSquare.Door;
-      SpecialDoor.SetState(DoorState.Locked);
-      SpecialDoor.SetKey(Codex.Items.Ruby_Key);
+      Generator.PlaceLockedHorizontalDoor(SpecialSquare, Codex.Gates.crystal_door, SandboxBarrier, Key: Codex.Items.Ruby_Key);
       //Generator.PlaceSpecificAsset(SpecialSquare.Adjacent(Direction.East), SpecialDoor.Key);
 
       Adventure.World.SetStart(SandboxMap[18, 2]);

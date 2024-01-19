@@ -804,8 +804,8 @@ namespace Pathos
                 else if (point.value == SPDMapPoint.DOORNORM)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Horizontal, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
+                    SPDDebug.generator.PlaceRandomHorizontalDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, SPDDebug.codex.Barriers.stone_wall);
+                    SPDDebug.generator.CloseDoor(pointSquare);
                 }
                 else if (point.value == SPDMapPoint.ENTRANCE)
                 {
@@ -886,47 +886,27 @@ namespace Pathos
                 else if (point.value == SPDMapPoint.DOORLOCK)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Horizontal, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
-                    pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetSecret(false);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
-                    var trap = pointSquare.Trap;
-                    if (trap != null && SPDRandom.Int(2) == 0) trap.SetRevealed(true);
+                    SPDDebug.generator.PlaceLockedHorizontalDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, SPDDebug.codex.Barriers.stone_wall, Secret: false, Trap: SPDDebug.generator.NewTrap(RandomDevice(), Revealed: SPDRandom.Int(2) == 0));
                 }
                 else if (point.value == SPDMapPoint.DOORPLAIN)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Horizontal, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
-                    pointSquare.Door.SetSecret(false);
+                    SPDDebug.generator.PlaceClosedHorizontalDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, SPDDebug.codex.Barriers.stone_wall, Secret: false);
                 }
                 else if (point.value == SPDMapPoint.DOORSECH)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Horizontal, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
-                    pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
-                    pointSquare.Door.SetSecret(true);
+                    SPDDebug.generator.PlaceLockedHorizontalDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, SPDDebug.codex.Barriers.stone_wall, Secret: true, Trap: SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
                 }
                 else if (point.value == SPDMapPoint.DOORSECL)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, DoorOrientation.Vertical, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
-                    pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetTrap(SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
-                    pointSquare.Door.SetSecret(true);
+                    SPDDebug.generator.PlaceLockedVerticalDoor(pointSquare, SPDDebug.codex.Gates.wooden_door, SPDDebug.codex.Barriers.stone_wall, Secret: true, Trap: SPDDebug.generator.NewTrap(RandomDevice(), Revealed: false));
                 }
                 else if (point.value == SPDMapPoint.DOORSUPER)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    SPDDebug.generator.PlaceDoor(pointSquare, SPDDebug.codex.Gates.crystal_door, DoorOrientation.Vertical, SPDDebug.codex.Barriers.stone_wall);
-                    pointSquare.Door.SetState(DoorState.Closed);
-                    pointSquare.Door.SetState(DoorState.Locked);
-                    pointSquare.Door.SetSecret(false);
-                    pointSquare.Door.SetReinforced(true);
+                    SPDDebug.generator.PlaceLockedVerticalDoor(pointSquare, SPDDebug.codex.Gates.crystal_door, SPDDebug.codex.Barriers.stone_wall, Reinforced: true);
                 }
             }
         }
@@ -1009,8 +989,8 @@ namespace Pathos
                 var pickaxeSquare = SPDDebug.currentmap.pathosMap[pos.x, pos.y];
                 var pickaxe = SPDDebug.generator.NewSpecificAsset(pickaxeSquare, SPDDebug.codex.Items.pickaxe);
                 //pickaxe.SetWeight(Weight.Zero);
-                pickaxe.SetSanctity(SPDDebug.codex.Sanctities.Blessed);
-                pickaxe.SetEnchantment(Modifier.Zero);
+                SPDDebug.generator.ChangeSanctity(pickaxe, SPDDebug.codex.Sanctities.Blessed);
+                SPDDebug.generator.ChangeEnchantment(pickaxe, Modifier.Zero);
                 SPDDebug.generator.PlaceAsset(pickaxeSquare, pickaxe);
             }
         }
@@ -1082,16 +1062,16 @@ namespace Pathos
             var Items = SPDDebug.codex.Items;
 
             var armour = StallAdd(SPDGameList.RandomArmour());
-            armour.SetSanctity(SPDDebug.codex.Sanctities.Uncursed);
+            SPDDebug.generator.ChangeSanctity(armour, SPDDebug.codex.Sanctities.Uncursed);
 
             var armour2 = StallAdd(SPDGameList.RandomArmour());
-            armour2.SetSanctity(SPDDebug.codex.Sanctities.Uncursed);
+            SPDDebug.generator.ChangeSanctity(armour2, SPDDebug.codex.Sanctities.Uncursed);
 
             var weapon = StallAdd(SPDGameList.RandomWeapon());
-            weapon.SetSanctity(SPDDebug.codex.Sanctities.Uncursed);
+            SPDDebug.generator.ChangeSanctity(weapon, SPDDebug.codex.Sanctities.Uncursed);
 
             var water = StallAdd(Items.potion_of_water);
-            water.SetSanctity(SPDDebug.codex.Sanctities.Blessed);
+            SPDDebug.generator.ChangeSanctity(water, SPDDebug.codex.Sanctities.Blessed);
 
             var healingPotionDice = SPDRandom.Int(10);
             if (healingPotionDice < 1) StallAdd(Items.potion_of_full_healing, 2);
@@ -1222,8 +1202,8 @@ namespace Pathos
                 var blockSquare = SPDDebug.currentmap.pathosMap[block.x, block.y];
                 switch (block.value)
                 {
-                    case 0: SPDDebug.generator.PlaceBoulder(blockSquare, SPDDebug.codex.Blocks.statue, true); break;
-                    case 1: SPDDebug.generator.PlaceBoulder(blockSquare, SPDDebug.codex.Blocks.wooden_barrel, true); break;
+                    case 0: SPDDebug.generator.PlaceBoulder(blockSquare, SPDDebug.codex.Blocks.statue, IsRigid: true); break;
+                    case 1: SPDDebug.generator.PlaceBoulder(blockSquare, SPDDebug.codex.Blocks.wooden_barrel, IsRigid: true); break;
                 }
             }
         }
@@ -1313,8 +1293,8 @@ namespace Pathos
                 }
             }            
 
-            asset.SetSanctity(item.DefaultSanctity ?? sanctity);
-            asset.SetEnchantment(enchantment);
+            SPDDebug.generator.ChangeSanctity(asset, item.DefaultSanctity ?? sanctity);
+            SPDDebug.generator.ChangeEnchantment(asset, enchantment);
 
             return asset;
         }
@@ -1333,22 +1313,11 @@ namespace Pathos
                 {
                     case 0: SPDDebug.generator.PlaceTrap(trapSquare, RandomDevice(), Revealed: false); break;
                     case 1:
-                        SPDDebug.generator.PlaceTrap(trapSquare, deviceType, Revealed: false);
-                        var strap = trapSquare.Trap;
-                        if (strap != null)
-                        {
-                            strap.SetRevealed(true);
-                        }
+                        SPDDebug.generator.PlaceTrap(trapSquare, deviceType, Revealed: true);
                         break;
                         
                     case 2:
-                        SPDDebug.generator.PlaceTrap(trapSquare, SPDDebug.codex.Devices.alarm_trap, Revealed: false);
-                        var summonTrap = trapSquare.Trap;
-                        if (summonTrap != null)
-                        {
-                            summonTrap.SetRevealed(true);
-                            summonTrap.SetTriggered(1);
-                        }
+                        SPDDebug.generator.PlaceTrap(trapSquare, SPDDebug.codex.Devices.alarm_trap, Revealed: true, Triggered: 1);
                         break; 
                         
                 }

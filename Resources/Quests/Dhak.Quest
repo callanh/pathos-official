@@ -8215,7 +8215,7 @@ zone restricted access spawn 16,6:17,7 (16,006)(16,007)(17,006)(17,007);
 zone restricted access spawn 16,13:17,14 (16,013)(16,014)(17,013)(17,014);
 zone restricted access spawn 13,16:14,17 (13,016)(13,017)(14,016)(14,017);
 
-site "_Overland_"
+site "_Overland_" warped
 level [_Overland_];
 
 artifacts [Shadow Key] [Chasm Edge] [Jade Key] [Silver Key] [Sunsword] [Ruby Key] [Dire Needle] [Gold Key] [Stamped Letter];

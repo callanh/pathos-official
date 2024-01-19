@@ -541,10 +541,10 @@ namespace Pathos
               if (StartSquare != null && EndSquare != null)
               {
                 Generator.PlaceFloor(StartSquare, CastleRoomGround);
-                Generator.PlaceVerticalDoor(StartSquare, CastleGate, CastleBarrier);
+                Generator.PlaceRandomVerticalDoor(StartSquare, CastleGate, CastleBarrier);
 
                 Generator.PlaceFloor(EndSquare, CastleRoomGround);
-                Generator.PlaceVerticalDoor(EndSquare, CastleGate, CastleBarrier);
+                Generator.PlaceRandomVerticalDoor(EndSquare, CastleGate, CastleBarrier);
 
                 var StartCorridor = new DungeonCorridor(StartRoom, CastleMap[StartSquare.X + 1, StartSquare.Y]);
                 var EndCorridor = new DungeonCorridor(EndRoom, CastleMap[EndSquare.X - 1, EndSquare.Y]);
@@ -553,9 +553,9 @@ namespace Pathos
                 if (Attraction == AttractionType.Zoo)
                 {
                   if (StartSquare.Door != null && AttractionX == BoxX && AttractionY == BoxY)
-                    StartSquare.Door.SetState(DoorState.Locked);
+                    Generator.LockDoor(StartSquare);
                   else if (EndSquare.Door != null && AttractionX == BoxX + 1 && AttractionY == BoxY)
-                    EndSquare.Door.SetState(DoorState.Locked);
+                    Generator.LockDoor(EndSquare);
                 }
               }
             }
@@ -571,10 +571,10 @@ namespace Pathos
               if (StartSquare != null && EndSquare != null)
               {
                 Generator.PlaceFloor(StartSquare, CastleRoomGround);
-                Generator.PlaceHorizontalDoor(StartSquare, CastleGate, CastleBarrier);
+                Generator.PlaceRandomHorizontalDoor(StartSquare, CastleGate, CastleBarrier);
 
                 Generator.PlaceFloor(EndSquare, CastleRoomGround);
-                Generator.PlaceHorizontalDoor(EndSquare, CastleGate, CastleBarrier);
+                Generator.PlaceRandomHorizontalDoor(EndSquare, CastleGate, CastleBarrier);
 
                 var StartCorridor = new DungeonCorridor(StartRoom, CastleMap[StartSquare.X, StartSquare.Y + 1]);
                 var EndCorridor = new DungeonCorridor(EndRoom, CastleMap[EndSquare.X, EndSquare.Y - 1]);
@@ -584,9 +584,9 @@ namespace Pathos
                 if (Attraction == AttractionType.Zoo)
                 {
                   if (StartSquare.Door != null && AttractionX == BoxX && AttractionY == BoxY)
-                    StartSquare.Door.SetState(DoorState.Locked);
+                    Generator.LockDoor(StartSquare);
                   else if (EndSquare.Door != null && AttractionX == BoxX && AttractionY == BoxY + 1)
-                    EndSquare.Door.SetState(DoorState.Locked);
+                    Generator.LockDoor(EndSquare);
                 }
               }
             }
@@ -872,19 +872,19 @@ namespace Pathos
               switch (1.d5().Roll())
               {
                 case 1:
-                  Generator.PlaceDoor(NetherRoom.TopEdgeSquares().ToArray().GetRandom(), NetherGate, DoorOrientation.Horizontal, NetherBarrier);
+                  Generator.PlaceRandomHorizontalDoor(NetherRoom.TopEdgeSquares().ToArray().GetRandom(), NetherGate, NetherBarrier);
                   break;
 
                 case 2:
-                  Generator.PlaceDoor(NetherRoom.TopEdgeSquares().ToArray().GetRandom(), NetherGate, DoorOrientation.Horizontal, NetherBarrier);
+                  Generator.PlaceRandomHorizontalDoor(NetherRoom.TopEdgeSquares().ToArray().GetRandom(), NetherGate, NetherBarrier);
                   break;
 
                 case 3:
-                  Generator.PlaceDoor(NetherRoom.LeftEdgeSquares().ToArray().GetRandom(), NetherGate, DoorOrientation.Vertical, NetherBarrier);
+                  Generator.PlaceRandomVerticalDoor(NetherRoom.LeftEdgeSquares().ToArray().GetRandom(), NetherGate, NetherBarrier);
                   break;
 
                 case 4:
-                  Generator.PlaceDoor(NetherRoom.RightEdgeSquares().ToArray().GetRandom(), NetherGate, DoorOrientation.Vertical, NetherBarrier);
+                  Generator.PlaceRandomVerticalDoor(NetherRoom.RightEdgeSquares().ToArray().GetRandom(), NetherGate, NetherBarrier);
                   break;
 
                 case 5:
@@ -1368,7 +1368,7 @@ namespace Pathos
             var HoleTrap = HoleSquare.Trap;
             if (HoleTrap != null && HoleTrap.Device == Codex.Devices.hole)
             {
-              HoleTrap.SetRevealed(true);
+              Generator.RevealTrap(HoleSquare);
 
               foreach (var FloorSquare in FloorSquareList)
                 Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.arriving_bats).SetTarget(HoleSquare);
@@ -1411,17 +1411,10 @@ namespace Pathos
 
           if (PoolSquare != null)
           {
-            Generator.PlaceTrap(PoolSquare, Codex.Devices.noxious_pool, Revealed: false);
+            Generator.PlaceTrap(PoolSquare, Codex.Devices.noxious_pool, Revealed: true, Triggered: FloorSquareList.Count);
 
-            var PoolTrap = PoolSquare.Trap;
-            if (PoolTrap != null && PoolTrap.Device == Codex.Devices.noxious_pool)
-            {
-              PoolTrap.SetRevealed(true);
-              PoolTrap.SetTriggered(FloorSquareList.Count);
-
-              foreach (var FloorSquare in FloorSquareList)
-                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.emerging_blobs).SetTarget(PoolSquare);
-            }
+            foreach (var FloorSquare in FloorSquareList)
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.emerging_blobs).SetTarget(PoolSquare);
           }
           break;
 
@@ -1433,7 +1426,7 @@ namespace Pathos
           if (StatueSquare != null)
           {
             Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.living_statue).SetTarget(StatueSquare);
-            Generator.PlaceBoulder(StatueSquare, Codex.Blocks.statue, true);
+            Generator.PlaceBoulder(StatueSquare, Codex.Blocks.statue, IsRigid: true);
           }
           break;
 
@@ -1450,16 +1443,10 @@ namespace Pathos
 
           if (LeakSquare != null)
           {
-            Generator.PlaceTrap(LeakSquare, Codex.Devices.sleeping_gas_trap, Revealed: false);
-            var LeakTrap = LeakSquare.Trap;
-            if (LeakTrap != null && LeakTrap.Device == Codex.Devices.sleeping_gas_trap)
-            {
-              LeakTrap.SetRevealed(true);
-              LeakTrap.SetTriggered(FloorSquareList.Count);
+            Generator.PlaceTrap(LeakSquare, Codex.Devices.sleeping_gas_trap, Revealed: true, Triggered: FloorSquareList.Count);
 
-              foreach (var FloorSquare in FloorSquareList)
-                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.leaking_gas).SetTarget(LeakSquare);
-            }
+            foreach (var FloorSquare in FloorSquareList)
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.leaking_gas).SetTarget(LeakSquare);
           }
           break;
 
@@ -1495,7 +1482,7 @@ namespace Pathos
                 foreach (var AnimateAsset in AnimateSquare.GetAssets())
                 {
                   if (AnimateAsset.HasSanctity)
-                    AnimateAsset.SetSanctity(Codex.Sanctities.Blessed); // so it becomes uncursed when killed.
+                    Generator.ChangeSanctity(AnimateAsset, Codex.Sanctities.Blessed); // so it becomes uncursed when killed.
                 }
 
                 Trigger.Add(Delay.Zero, Codex.Tricks.marble_paving).SetTarget(AnimateSquare);
@@ -1515,17 +1502,10 @@ namespace Pathos
 
           if (GreaseSquare != null)
           {
-            Generator.PlaceTrap(GreaseSquare, Codex.Devices.grease_trap, Revealed: false);
+            Generator.PlaceTrap(GreaseSquare, Codex.Devices.grease_trap, Revealed: true, Triggered: FloorSquareList.Count);
 
-            var GreaseTrap = GreaseSquare.Trap;
-            if (GreaseTrap != null && GreaseTrap.Device == Codex.Devices.grease_trap)
-            {
-              GreaseTrap.SetRevealed(true);
-              GreaseTrap.SetTriggered(FloorSquareList.Count);
-
-              foreach (var FloorSquare in FloorSquareList)
-                Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.scuttling_insects).SetTarget(GreaseSquare);
-            }
+            foreach (var FloorSquare in FloorSquareList)
+              Trigger.Add(Delay.FromTurns(SummonDelay.Roll()), Codex.Tricks.scuttling_insects).SetTarget(GreaseSquare);
           }
           break;
 
@@ -2020,7 +2000,7 @@ namespace Pathos
         else
         {
           Generator.PlaceFloor(AccessSquare, AccessGround);
-          Generator.PlaceDoor(AccessSquare, CastleGate, AccessSquare.AsOffset(NookSquare).X == 0 ? DoorOrientation.Horizontal : DoorOrientation.Vertical, CastleBarrier);
+          Generator.PlaceRandomDoor(AccessSquare, CastleGate, AccessSquare.AsOffset(NookSquare).X == 0 ? DoorOrientation.Horizontal : DoorOrientation.Vertical, CastleBarrier);
         }
 
 #if DEBUG
@@ -2061,15 +2041,17 @@ namespace Pathos
           else
             NookBlock = Codex.Blocks.stone_boulder;
 
-          Generator.PlaceBoulder(NookSquare, NookBlock, false);
+          Generator.PlaceBoulder(NookSquare, NookBlock, IsRigid: false);
           Generator.PlaceRandomAsset(NookSquare);
         }
 
         // nooks are always secret if there is something good in them.
-        if (AccessSquare.Door != null && AccessSquare.HasAssets())
+        if (AccessSquare.Door != null && NookSquare.HasAssets())
         {
-          AccessSquare.Door.SetState(DoorState.Closed);
-          AccessSquare.Door.SetSecret(true);
+          if (!AccessSquare.Door.IsClosed)
+            Generator.CloseDoor(AccessSquare); // might already be closed/locked.
+
+          Generator.ConcealDoor(AccessSquare);
         }
 
         //var RecurseDirection = AccessSquare.AsDirection(NookSquare);
@@ -2134,12 +2116,13 @@ namespace Pathos
           }
           else
           {
-            Generator.PlaceDoor(EmptySquare, MazeGate, DoorOffset.Y == 0 ? DoorOrientation.Vertical : DoorOrientation.Horizontal, MazeBarrier);
+            Generator.PlaceRandomDoor(EmptySquare, MazeGate, DoorOffset.Y == 0 ? DoorOrientation.Vertical : DoorOrientation.Horizontal, MazeBarrier);
 
+            // door might be trapped but we always want it locked and not secret.
             if (EmptySquare.Door != null)
             {
-              EmptySquare.Door.SetState(DoorState.Locked);
-              EmptySquare.Door.SetSecret(false);
+              Generator.LockDoor(EmptySquare);
+              Generator.RevealDoor(EmptySquare);
             }
           }
         }
@@ -2787,7 +2770,7 @@ namespace Pathos
       {
         if (FixSquare.Wall != null)
         {
-          FixSquare.Wall.SetBarrier(MinesBarrier);
+          Generator.ReplaceWall(FixSquare, MinesBarrier);
         }
         else if (FixSquare.Door != null && FixSquare.Door.Secret)
         {
@@ -3071,7 +3054,7 @@ namespace Pathos
                     Generator.CorpseSquare(TownSquare);
 
                     if (TownSquare.Fixture != null)
-                      TownSquare.Fixture.SetBroken(true);
+                      Generator.BreakFixture(TownSquare);
 
                     // murdered by orcs.
                     DeferList.Add(() =>
@@ -3092,7 +3075,7 @@ namespace Pathos
                 Generator.CorpseSquare(TownSquare);
 
                 //if (TownSquare.Fixture != null)
-                //  TownSquare.Fixture.SetBroken(true);
+                //  Generator.BreakFixture(TownSquare);
 
                 DeferList.Add(() =>
                 {
@@ -3458,7 +3441,7 @@ namespace Pathos
 
                 case '0':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceBoulder(MinesSquare, MinesBlock, false);
+                  Generator.PlaceBoulder(MinesSquare, MinesBlock, IsRigid: false);
 
                   MinesSquare.SetLit(true);
                   break;
@@ -3829,7 +3812,7 @@ namespace Pathos
 
         // no-dig.
         if (ChamberSquare.Wall != null && ChamberSquare.Wall.IsPhysical())
-          ChamberSquare.Wall.SetStructure(WallStructure.Permanent);
+          Generator.AdjustToPermanentWall(ChamberSquare);
 
         // find the boss.
         if (ChamberSquare.Character?.Entity == Codex.Entities.master_mind_flayer)
@@ -3917,7 +3900,7 @@ namespace Pathos
       {
         if (FixSquare.Wall != null)
         {
-          FixSquare.Wall.SetBarrier(LabyrinthBarrier);
+          Generator.ReplaceWall(FixSquare, LabyrinthBarrier);
         }
         else if (FixSquare.Door != null && FixSquare.Door.Secret)
         {
@@ -4145,20 +4128,12 @@ namespace Pathos
               case '+':
                 // door.
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
+
                 if (SokobanGate == null)
-                {
                   Generator.PlaceIllusionaryWall(SokobanSquare, SokobanBarrier, WallSegment.Cross);
-                }
                 else
-                {
-                  Generator.PlaceClosedHorizontalDoor(SokobanSquare, SokobanGate, SokobanBarrier);
-                  var Door = SokobanSquare.Door;
-                  if (Door != null)
-                  {
-                    Door.SetState(DoorState.Locked);
-                    Door.SetTrap(Generator.NewTrap(Codex.Devices.fire_trap, Revealed: false));
-                  }
-                }
+                  Generator.PlaceLockedHorizontalDoor(SokobanSquare, SokobanGate, SokobanBarrier, Trap: Generator.NewTrap(Codex.Devices.fire_trap, Revealed: false));
+
                 SokobanSquare.SetLit(true);
                 break;
 
@@ -4191,7 +4166,7 @@ namespace Pathos
 
               case '0':
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
-                Generator.PlaceBoulder(SokobanSquare, SokobanBlock, true);
+                Generator.PlaceBoulder(SokobanSquare, SokobanBlock, IsRigid: true);
 
                 SokobanSquare.SetLit(true);
                 break;
@@ -4506,7 +4481,7 @@ namespace Pathos
             case 'S':
               // secret door.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceSecretHorizontalDoor(FortSquare, FortGate, FortBarrier);
+              Generator.PlaceClosedHorizontalDoor(FortSquare, FortGate, FortBarrier, Secret: true);
               FortSquare.SetLit(true);
               break;
 
@@ -4694,7 +4669,7 @@ namespace Pathos
             case 'S':
               // secret door.
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
-              Generator.PlaceSecretHorizontalDoor(CacheSquare, CacheGate, FortBarrier);
+              Generator.PlaceClosedHorizontalDoor(CacheSquare, CacheGate, FortBarrier, Secret: true);
               CacheSquare.SetLit(false);
               break;
 
@@ -5137,10 +5112,10 @@ namespace Pathos
           }
 
           if (LairSquare.Wall != null && LairSquare.Wall.IsPhysical())
-            LairSquare.Wall.SetStructure(WallStructure.Permanent);
+            Generator.AdjustToPermanentWall(LairSquare);
 
           if (LairSquare.Boulder != null && LairSquare.Boulder.Block.Prison != null)
-            LairSquare.Boulder.SetPrisoner(Generator.NewCharacter(LairSquare, MercenaryProbability.GetRandom()));
+            Generator.ImprisonCharacter(LairSquare, Generator.NewCharacter(LairSquare, MercenaryProbability.GetRandom()));
 
           if (LairSquare.Passage != null && LairSquare.Passage.Destination == null)
             LairSquare.Passage.SetDestination(PortalSquare);
@@ -5221,7 +5196,7 @@ namespace Pathos
       foreach (var StatueSquare in PortalSquare.GetCompassSquares())
       {
         if (Generator.CanPlaceBoulder(StatueSquare))
-          Generator.PlaceBoulder(StatueSquare, Codex.Blocks.statue, false);
+          Generator.PlaceBoulder(StatueSquare, Codex.Blocks.statue, IsRigid: false);
       }
 
       return true;
@@ -5295,7 +5270,7 @@ namespace Pathos
 
         // permanent walls.
         if (MarketSquare.Wall != null)
-          MarketSquare.Wall.SetStructure(WallStructure.Permanent);
+          Generator.AdjustToPermanentWall(MarketSquare);
 
         // return portal.
         if (MarketSquare.Passage != null)
@@ -5303,7 +5278,7 @@ namespace Pathos
 
         // statues are black marketeers as well.
         if (MarketSquare.Boulder != null && MarketSquare.Boulder.Block.Prison != null)
-          MarketSquare.Boulder.SetPrisoner(Generator.NewCharacter(MarketSquare, MercenaryProbability.GetRandomOrNull()));
+          Generator.ImprisonCharacter(MarketSquare, Generator.NewCharacter(MarketSquare, MercenaryProbability.GetRandomOrNull()));
 
         // create a shop.
         if (MarketSquare.Fixture != null && MarketSquare.Fixture.Feature == Codex.Features.stall)
@@ -5390,7 +5365,7 @@ namespace Pathos
           }
 
           if (TowerSquare.Wall != null && TowerSquare.Wall.IsPhysical())
-            TowerSquare.Wall.SetStructure(WallStructure.Permanent);
+            Generator.AdjustToPermanentWall(TowerSquare);
 
           if (TowerSquare.Passage != null && TowerSquare.Passage.Destination == null && TowerSquare != QuestStart)
             TowerSquare.Passage.SetDestination(PortalSquare); // exit portal.
@@ -5505,7 +5480,7 @@ namespace Pathos
           //  Square.Zone.SetRestricted(true);
 
           if (AbyssSquare.Wall != null && AbyssSquare.Wall.IsPhysical())
-            AbyssSquare.Wall.SetStructure(WallStructure.Permanent);
+            Generator.AdjustToPermanentWall(AbyssSquare);
 
           if (AbyssSquare.Passage != null && AbyssSquare.Passage.Destination == null && AbyssSquare != QuestStart)
             AbyssSquare.Passage.SetDestination(PortalSquare); // exit rift.
@@ -5572,7 +5547,7 @@ namespace Pathos
                 Asset NewAsset(Item Item, int Quantity, Sanctity Sanctity)
                 {
                   var Result = Generator.NewSpecificAsset(AbyssSquare, Item, Quantity);
-                  Result.SetSanctity(Sanctity);
+                  Generator.ChangeSanctity(Result, Sanctity);
                   return Result;
                 }
                 AbyssCharacter.Inventory.Carried.Add(NewAsset(Codex.Items.scroll_of_terror, 1, Codex.Sanctities.Blessed));

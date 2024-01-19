@@ -259,15 +259,24 @@ namespace Pathos
 
         OpenUse.Apply.WhenProbability(Table =>
         {
+          // 75% typical.
           Table.Add(30, A => A.CreateEntity(Dice.One, Kinds.mummy));
           Table.Add(20, A => A.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse }));
           Table.Add(15, A => A.CreateAsset(Dice.One, 10.d100(), Items.gold_coin));
           Table.Add(10, A => A.CreateAsset(2.d3() + 1, new[] { Stocks.ring, Stocks.amulet, Stocks.gem, Stocks.wand, Stocks.scroll, Stocks.potion, Stocks.book }));
+
+          // 20% annoying.
           Table.Add(5, A => A.PlaceCurse(1.d4() + 1, Sanctities.Cursed));
           Table.Add(5, A => A.ApplyTransient(Properties.hunger, 10.d100() + 100));
-          Table.Add(5, A => A.CreateEntity(Dice.One, Entities.stone_golem));
+          Table.Add(5, A => A.ApplyTransient(Properties.sickness, 10.d100() + 100));
           Table.Add(5, A => A.Punish(Codex.Punishments.malignant_aura));
-          Table.Add(5, A => A.CreateEntity(Dice.Fixed(8), Kinds.mummy));
+
+          // 5% dangerous.
+          Table.Add(1, A => A.CreateEntity(Dice.One, Kinds.vampire));
+          Table.Add(1, A => A.CreateEntity(Dice.Fixed(8), Kinds.mummy));
+          Table.Add(1, A => A.CreateEntity(Dice.One, Entities.stone_golem));
+          Table.Add(1, A => A.CreateEntity(Dice.One, Entities.skeleton));
+          Table.Add(1, A => A.CreateEntity(Dice.One, Entities.mellified_man));
         });
       });
 

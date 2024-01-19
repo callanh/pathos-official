@@ -113,6 +113,7 @@
     <Compile Include="Codex\PathosZoos.cs" />
     <Compile Include="Modules\PathosDhak.cs" />
     <Compile Include="Modules\PathosNethack.cs" />
+    <Compile Include="Modules\PathosOpus.cs" />
     <Compile Include="Modules\PathosSandbox.cs" />
     <Compile Include="Modules\SPDBuilder.cs" />
     <Compile Include="Modules\SPDDebug.cs" />
@@ -128,7 +129,6 @@
     <Compile Include="Modules\SPDRect.cs" />
     <Compile Include="Modules\SPDRoom.cs" />
     <Compile Include="PathosOfficial.cs" />
-    <Compile Include="PathosOpus.cs" />
     <None Include="Resources\Pathos.InvResourcePackage" />
     <Compile Include="Resources\Pathos.InvResourcePackage.cs">
       <DependentUpon>Pathos.InvResourcePackage</DependentUpon>

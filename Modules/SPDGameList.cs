@@ -374,13 +374,12 @@ namespace Pathos
             var Prize = SPDDebug.generator.NewSpecificAsset(Square, prize);
             if (Prize.CanUpgrade())
             {
-                Prize.SetEnchantment(Modifier.Zero);
                 var dice = SPDRandom.Int(10);
-                if (dice < 3) Prize.SetEnchantment(Modifier.Plus1);
-                else if (dice > 6) Prize.SetEnchantment(Modifier.Plus3);
-                else Prize.SetEnchantment(Modifier.Plus2);
+                if (dice < 3) SPDDebug.generator.ChangeEnchantment(Prize, Modifier.Plus1);
+                else if (dice > 6) SPDDebug.generator.ChangeEnchantment(Prize, Modifier.Plus3);
+                else SPDDebug.generator.ChangeEnchantment(Prize, Modifier.Plus2);
             }
-            Prize.SetSanctity(SPDDebug.codex.Sanctities.Blessed);
+            SPDDebug.generator.ChangeSanctity(Prize, SPDDebug.codex.Sanctities.Blessed);
             return Prize;
         }
         public Item RandomAmulet()
