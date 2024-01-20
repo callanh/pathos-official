@@ -3461,7 +3461,7 @@ namespace Pathos
 
           var HengeTrigger = HengeVariant.Trick != null || HengeVariant.FinalTriggerAction != null ? HengeZone.InsertTrigger() : null;
 
-          foreach (var HengeSquare in HengeMap.GetCircleOuterSquares(HengeCircle))
+          foreach (var HengeSquare in HengeMap.GetCircleOuterSquares(HengeCircle).ToDistinctList().EnumerateRandom())
           {
             HengeZone.AddSquare(HengeSquare);
 
@@ -3962,7 +3962,8 @@ namespace Pathos
 
               SectorTrigger?.Add(Delay.FromTurns(20), Codex.Tricks.automatic_locking);
 
-              foreach (var HallSquare in HallMap.GetCornerSquares(SectorRegion.Reduce(2)))
+              // statues are animated in a random pattern.
+              foreach (var HallSquare in HallMap.GetCornerSquares(SectorRegion.Reduce(2)).ToDistinctList().EnumerateRandom())
               {
                 Generator.PlaceBoulder(HallSquare, Codex.Blocks.statue, IsRigid: true, PreventPrisoner: true);
 

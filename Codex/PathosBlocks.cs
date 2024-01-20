@@ -47,6 +47,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K => 
         {
+          K.DecreaseKarma(Dice.Fixed(5));
         });
 
         B.SetBarrier(Codex.Barriers.cave_wall);
@@ -72,6 +73,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(5));
         });
 
         B.SetBarrier(Codex.Barriers.hell_brick);
@@ -89,6 +91,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(5));
         });
 
         B.SetBarrier(Codex.Barriers.jade_wall);
@@ -108,6 +111,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(25));
         });
       });
 
@@ -125,6 +129,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(50));
         });
       });
 
@@ -139,6 +144,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(5));
         });
 
         B.SetBarrier(Codex.Barriers.stone_wall);
@@ -155,6 +161,7 @@ namespace Pathos
 
         B.AddBreak(55, Codex.Sonics.broken_barrel, null, K =>
         {
+          K.DecreaseKarma(Dice.Fixed(10));
         });
         B.AddBreak(15, Codex.Sonics.broken_barrel, Codex.Explosions.watery, K =>
         {
