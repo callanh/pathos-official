@@ -5498,6 +5498,10 @@ namespace Pathos
           LastSquare = RavineEndSquare;
         }
 
+        // build the underpit below the chasm.
+        if (RavineVariant.Ground == Codex.Grounds.chasm)
+          Maker.Pit.Build(Section, Section.Region, Maker.OverlandMap, Maker.UndergroundMap, Codex.Grounds.dirt);
+
         // TODO: Section Thresholds.
         //foreach (var RavineJoin in Section.Joins)
         //{
@@ -5614,10 +5618,6 @@ namespace Pathos
             Generator.PlaceRandomAsset(RavineSquare);
           }
         }
-
-        // build the underpit below the chasm.
-        if (RavineVariant.Ground == Codex.Grounds.chasm)
-          Maker.Pit.Build(Section, Section.Region, Maker.OverlandMap, Maker.UndergroundMap, Codex.Grounds.dirt);
 
         BuildStop();
 
@@ -5765,7 +5765,10 @@ namespace Pathos
       {
         BuildStart();
 
+        // NOTE: variant may not have any entities that will generate at the difficulty.
         var PitVariant = PitVariance.NextVariant();
+        while (PitVariant.MinimumDifficulty() > Section.MaximumDifficulty)
+          PitVariant = PitVariance.NextVariant();
 
         Section.UndergroundAreaName = PitVariant.Name;
 
@@ -5795,7 +5798,7 @@ namespace Pathos
         Generator.PlaceFloor(EscapeSquare, SurfaceGround);
 
         // give the escape square a chance.
-        foreach (var PitSquare in EscapeSquare.GetNeighbourSquares())
+        foreach (var PitSquare in EscapeSquare.GetNeighbourSquares().Where(S => !S.IsEdge(OverlandMap.Region)))
         {
           if (PitSquare.Wall != null)
             Generator.RemoveWall(PitSquare);
@@ -5833,6 +5836,8 @@ namespace Pathos
         public string Name;
         public Ground Ground;
         public Kind Kind;
+
+        public int MinimumDifficulty() => Kind.Entities.Min(E => E.Difficulty);
 
         public override string ToString() => Name;
       }
@@ -7653,37 +7658,8 @@ H-----------H
 
           if (BuildingSquare == null)
           {
-            // TODO: a building in void space, completely unconnected is possible - should we instead deviate a dirt path to another building?
-            if (TownMap.GetFrameSquares(Building.Region).All(S => S.Wall != null && S.Door == null))
-            {
-              Debug.WriteLine($"{TownVariant.Name} teardown building {Building.Region}.");
-
-              BuildingList.Remove(Building);
-
-              foreach (var TeardownSquare in TownMap.GetSquares(Building.Region))
-              {
-                if (TeardownSquare.Door?.Gate == TownVariant.BuildingGate)
-                  Generator.RemoveDoor(TeardownSquare);
-
-                if (TeardownSquare.Floor?.Ground == TownVariant.BuildingGround)
-                  Generator.RemoveFloor(TeardownSquare);
-
-                if (TeardownSquare.Wall?.Barrier == TownVariant.BuildingBarrier)
-                  Generator.RemoveWall(TeardownSquare);
-
-                var TeardownZone = TeardownSquare.Zone;
-                if (TeardownZone != null && TeardownSquare.Floor == null && TeardownSquare.Wall == null)
-                {
-                  TeardownSquare.SetLit(false);
-                  TeardownZone.RemoveSquare(TeardownSquare);
-
-                  Debug.Assert(TeardownSquare.IsVoid());
-
-                  if (TeardownZone.Squares.Count == 0)
-                    TownMap.RemoveZone(TeardownZone);
-                }
-              }
-            }
+            // NOTE: if we fail to find a door square, the later code will still connect all the buildings with doors.
+            Debug.WriteLine("Unable to find a door square in a town building.");
           }
           else
           {
