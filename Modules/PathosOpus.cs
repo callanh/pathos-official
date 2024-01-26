@@ -441,11 +441,16 @@ namespace Pathos
 
           Debug.Assert(UndergroundSquare.Floor != null, "Overland chasm must be matched to an underground cavern.");
         }
-        else if ((OverlandSquare.Trap?.Device.Descent ?? false) || OverlandSquare.Trap?.Device == Codex.Devices.squeaky_board) // squeaky board converts to hole.
+
+        var OverlandDevice = OverlandSquare.Trap?.Device;
+
+        // don't want holes and trapdoors; squeaky board converts to hole; level teleporter will take you to random underground.
+        if ((OverlandDevice?.Descent ?? false) || OverlandDevice == Codex.Devices.squeaky_board || OverlandDevice == Codex.Devices.level_teleporter)
         {
           Generator.RemoveTrap(OverlandSquare); // erase descent traps for now.
 
-          /* trapdoors/holes do not drop the character to a fixed location.
+          // NOTE: trapdoors/holes do not currently drop the character to a fixed location (only chasm).
+          /* 
           var UndergroundSquare = UndergroundMap[OverlandSquare.X, OverlandSquare.Y];
 
           if (UndergroundSquare.Floor == null)
@@ -2201,7 +2206,7 @@ namespace Pathos
             CryptMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
             var CryptLevel = CryptSite.AddLevel(CryptIndex, CryptMap);
-            var CryptIsLit = !Chance.Of(CryptIndex, CryptCount * 2).Hit();
+            var CryptIsLit = !Chance.Of(CryptIndex, CryptCount * Math.Max(1, 6 - Section.MaximumDifficulty)).Hit();
 
             var TriangleCount = CryptMap.Region.Height / 4;
             var TriangleList = new Inv.DistinctList<Inv.Triangle>(TriangleCount);
@@ -4630,7 +4635,7 @@ namespace Pathos
         foreach (var MazeSquare in MazeMap.GetSquares(MazeRegion))
         {
           // don't need floors underneath an opaque wall.
-          if (MazeSquare.Floor != null && MazeSquare.Wall != null && MazeSquare.Wall.Barrier.Opaque)
+          if (MazeSquare.Floor != null && MazeSquare.Wall != null && !MazeSquare.Wall.Barrier.IsUniform)
             Generator.RemoveFloor(MazeSquare);
           
           if (MazeSquare.Floor?.Ground == MazeVariant.Ground && MazeSquare.Wall == null && MazeSquare.Character == null && MazeSquare.Fixture == null)

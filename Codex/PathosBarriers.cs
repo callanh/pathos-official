@@ -50,7 +50,7 @@ namespace Pathos
         });
       }
 
-      iron_bars = AddBarrier("iron bars", Materials.iron, Grounds.stone_floor, Glyphs.iron_bars, Opaque: false, Rebound: false, B =>
+      iron_bars = AddBarrier("iron bars", Materials.iron, Grounds.metal_floor, Glyphs.iron_bars, Opaque: false, Rebound: false, B =>
       {
         B.Description = null;
         B.CreateSonic = Sonics.bars_slamming;
@@ -64,7 +64,7 @@ namespace Pathos
         B.AddReaction(Chance.Always, Elements.disintegrate, A => A.RemoveWall(WallStructure.Solid, iron_bars));
       });
 
-      shroom = AddBarrier("shroom", Materials.vegetable, Grounds.dirt, Glyphs.shroom, Opaque: true, Rebound: false, B =>
+      shroom = AddBarrier("shroom", Materials.vegetable, Grounds.moss, Glyphs.shroom, Opaque: true, Rebound: false, B =>
       {
         B.Description = null;
         B.AddReaction(Chance.Always, Elements.cold, A => A.CreateSpill(Volatiles.freeze, 1.d100() + 100));
