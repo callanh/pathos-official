@@ -382,7 +382,7 @@ namespace Pathos
           Table.Add(1, A => A.GainTalent(Properties.see_invisible));
           Table.Add(1, A => A.TeleportCharacter(Properties.teleportation));
           Table.Add(1, A => A.TeleportInventoryAsset());
-          Table.Add(1, A => A.Polymorph());
+          Table.Add(1, A => A.PolymorphEntity());
           Table.Add(1, A => A.Identify(All: true, Sanctity: null)); // identify all items in inventory.
           Table.Add(1, A => A.ApplyTransient(Properties.stunned, 1.d7() + 16));
           Table.Add(1, A => A.GainSkill(RandomPoints: false, Codex.Skills.heavy_armour));

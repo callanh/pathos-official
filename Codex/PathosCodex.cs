@@ -485,7 +485,7 @@ namespace Pathos
           if (Use.Motion == Codex.Motions.eat && !EatMaterialArray.Contains(Item.Material))
             Record($"Item {Item.Name} is {Item.Material.Name} material which cannot be eaten by any diet.");
 
-          if (Use.Apply.HasEffects())
+          if (Use.Apply.Effects.Count > 0)
           {
             if (Use.Motion == Codex.Motions.zap && Use.Cast == null)
               Record($"Item {Item.Name} must have a cast specified for the zap motion.");
@@ -712,7 +712,7 @@ namespace Pathos
           if (Attack.Type.IsCasting && Attack.Cast == null)
             Record($"Entity {Entity.Name} attack[{AttackIndex}] {Attack.Type.ToString().ToLower()} must have a cast.");
 
-          if (Attack.DamageDice == Dice.Zero && !Attack.Apply.HasEffects())
+          if (Attack.DamageDice == Dice.Zero && Attack.Apply.Effects.Count == 0)
             Record($"Entity {Entity.Name} attack[{AttackIndex}] {Attack.Type.ToString().ToLower()} should have some damage or effect.");
 
           //if (!Entity.IsUnique && Attack.Type == AttackType.Summon && (Attack.Apply.GetEffects().First() as SummonEntityEffect).Entities.Any(E => E.Kind != Entity.Kind))
@@ -739,7 +739,7 @@ namespace Pathos
           //  Record($"Entity {Entity.Name} retaliation {Retaliation.Type} must have a cast.");
         }
 
-        if (Entity.Conveyance.HasEffects() && !Entity.MayDropCorpse())
+        if (Entity.Conveyance.Effects.Count > 0 && !Entity.MayDropCorpse())
           Record($"Entity {Entity.Name} must not have conveyance if it never drops a corpse.");
 
         CheckLoot($"Entity {Entity.Name}", Entity.Startup.Loot);
@@ -958,7 +958,7 @@ namespace Pathos
 
       foreach (var Trick in Manifest.Tricks.List)
       {
-        if (!Trick.Apply.HasEffects())
+        if (Trick.Apply.Effects.Count == 0)
           Record($"Trick {Trick.Name} must have apply effects");
       }
 
@@ -1004,7 +1004,7 @@ namespace Pathos
           if (Adept.Cast == null)
             Record($"Spell {Spell.Name} {Adept.Qualification.Name} adept must have a cast semantic");
 
-          if (!Adept.Apply.HasEffects())
+          if (Adept.Apply.Effects.Count == 0)
             Record($"Spell {Spell.Name} {Adept.Qualification.Name} adept must have apply effects");
         }
       }
@@ -1205,7 +1205,7 @@ namespace Pathos
 
       foreach (var Reaction in ReactionList)
       {
-        foreach (var Effect in Reaction.Apply.GetEffects())
+        foreach (var Effect in Reaction.Apply.Effects)
         {
           if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
             Record($"{Title} reaction to {Reaction.Element} should not harm with the same element to prevent endless cycles of 'harm'.");
@@ -1214,7 +1214,7 @@ namespace Pathos
     }
     private void CheckApply(Apply Apply, Func<string> Function)
     {
-      foreach (var Effect in Apply.GetEffects())
+      foreach (var Effect in Apply.Effects)
       {
         var WhenProbability = Effect as WhenProbabilityEffect;
 

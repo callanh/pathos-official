@@ -17741,9 +17741,11 @@ namespace Pathos
         E.SetGender(Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.clarity, Properties.telepathy, Properties.clairvoyance, Properties.polymorph_control, Properties.teleport_control);
-        E.Startup.SetResistance(Elements.magical);
+        E.Startup.SetResistance(Elements.magical, Elements.sleep);
+        E.Startup.AddGrimoire(Dice.One, Spells.confusion);
+        E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.AddRetaliation(Chance.Always, AttackTypes.spell, R =>
         {
           R.SetCast().Strike(Strikes.force, 2.d3() + 6);

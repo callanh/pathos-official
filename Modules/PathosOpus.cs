@@ -486,9 +486,7 @@ namespace Pathos
           if (Section.Distance == 0)
             Area.SetSpawnRestricted(true);
 
-          if (Area.Difficulty == 0)
-            Area.SetDifficulty(Section.Distance);
-          else if (Area.Difficulty > Section.Distance)
+          if (Area.Difficulty == 0 || Area.Difficulty > Section.Distance)
             Area.SetDifficulty(Section.Distance);
 
           foreach (var Square in Map.GetSquares(Section.Region))
@@ -8213,10 +8211,10 @@ H-----------H
             var MimicNumberDice = 1.d3();
             Maker.PlaceMimics(VendorClearing.Section, VendorZone.Squares, MimicNumberDice.Roll());
           }
-
-          if (VendorClearing.Circle.Radius < 4)
-            Maker.RepairVeranda(VendorMap, new Region(VendorClearing.Circle), Codex.Grounds.dirt, IsLit: true);
         }
+
+        if (VendorClearing.Circle.Radius < 5)
+          Maker.RepairVeranda(VendorMap, new Region(VendorClearing.Circle), Codex.Grounds.dirt, IsLit: true);
 
         BuildStop();
 

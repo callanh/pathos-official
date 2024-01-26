@@ -63,7 +63,7 @@ namespace Pathos
         }
     }
 
-    public sealed class SPDItem
+    internal sealed class SPDItem
     {
        public SPDItem(Item Item, int? Quantity)
        {
