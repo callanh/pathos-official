@@ -1059,10 +1059,10 @@ namespace Pathos
           Skills.disc, Skills.club, Skills.polearm, Skills.staff);
         C.Startup.AddGrimoire(Dice.One, Spells.summoning);
         C.Startup.AddGrimoire(Dice.One, DesireableSpellArray(C));
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, Items.scythe);
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.scythe);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, Items.sickle);
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.boomerang);
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, new[] { Items.battle_robe, Items.elemental_robe, Items.fleet_robe });
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.boomerang);
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus3, new[] { Items.battle_robe, Items.elemental_robe, Items.fleet_robe });
         C.Startup.Loot.AddKit(Dice.Fixed(3), Chance.Always, Dice.Fixed(2), Sanctity: null, Array.Empty<Modifier>() , new[] { Items.banana, Items.apple, Items.orange, Items.melon, Items.carrot, Items.pear, Items.cheese, Items.slime_mould, Items.fish });
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.eucalyptus_leaf);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.mushroom);

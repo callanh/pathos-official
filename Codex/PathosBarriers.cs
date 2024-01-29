@@ -86,6 +86,11 @@ namespace Pathos
         B.Description = null;
       });
 
+      sewer_wall = AddBarrier("sewer wall", Materials.stone, Grounds.stone_floor, Glyph: null, Opaque: true, Rebound: true, B =>
+      {
+        B.Description = null;
+      });
+
       stone_wall = AddBarrier("stone wall", Materials.stone, Grounds.stone_floor, Glyph: null, Opaque: true, Rebound: true, B =>
       {
         B.Description = "Heavy grey stones are cobbled together to make this wall.";
@@ -109,6 +114,7 @@ namespace Pathos
     public readonly Barrier cave_wall;
     public readonly Barrier jade_wall;
     public readonly Barrier hell_brick;
+    public readonly Barrier sewer_wall;
     public readonly Barrier stone_wall;
     public readonly Barrier wooden_wall;
   }
