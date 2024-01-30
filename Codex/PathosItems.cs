@@ -10492,6 +10492,8 @@ namespace Pathos
 
       magic_lamp = AddLight("magic lamp", I =>
       {
+        var LampEntityArray = new[] { Entities.djinni /*17*/, Entities.dao/*7*/, Entities.efreeti/*37*/, Entities.marid/*27*/ };
+
         I.Description = null;
         I.SetAppearance("lamp", null, Glyphs.oil_lamp, Gold.FromCoins(10));
         I.Glyph = Glyphs.magic_lamp;
@@ -10513,7 +10515,7 @@ namespace Pathos
             B =>
             {
               B.ConvertAsset(magic_lamp.Stock, WholeStack: false, oil_lamp);
-              B.SummonEntity(Dice.One, Entities.djinni);
+              B.SummonEntity(Dice.One, LampEntityArray);
             },
             U =>
             {
@@ -10522,13 +10524,13 @@ namespace Pathos
             C =>
             {
               C.ConvertAsset(magic_lamp.Stock, WholeStack: false, oil_lamp);
-              C.CreateEntity(Dice.One, Entities.djinni);
+              C.CreateEntity(Dice.One, LampEntityArray);
             }
           );
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(20), Sonics.tool, A =>
         {
-          A.Polymorph(Entities.djinni);
+          A.Polymorph(LampEntityArray, Items: false);
         });
       });
 

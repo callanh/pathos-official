@@ -11382,7 +11382,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 455;
         E.Difficulty = 18;
-        E.Frequency = 0;
+        E.Frequency = 1;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_5;
@@ -11424,10 +11424,10 @@ namespace Pathos
       {
         E.Glyph = Glyphs.efreeti;
         E.Sonic = Sonics.burn;
-        E.Level = 7;
-        E.Challenge = 55;
-        E.Difficulty = 8;
-        E.Frequency = 0;
+        E.Level = 37;
+        E.Challenge = 2055;
+        E.Difficulty = 38;
+        E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetTerrain(Materials.fire, Materials.air);
         E.SetDiet(Diets.inediate);
@@ -11445,7 +11445,7 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: true,
           Blood: false,
           Mounted: false,
@@ -11461,11 +11461,13 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.petrify);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +6 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +6 from str.
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 4.d2());
+          R.Apply.Harm(Elements.fire, 4.d8() + 4);
+          R.Apply.WhenChance(Chance.OneIn2, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 50));
         });
         E.Chemistry.SetWeakness(Elements.cold, Elements.water);
         E.SetCorpse(Chance.Never);
@@ -11495,7 +11497,7 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: false,
           Blood: false,
           Mounted: false,
