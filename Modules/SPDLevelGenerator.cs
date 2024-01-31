@@ -39,7 +39,7 @@ namespace Pathos
                 }
             }
 
-            SPDDebug.adventure.World.SetStart(SPDDebug.maps[0].pathosMap[SPDDebug.maps[0].entrance.x, SPDDebug.maps[0].entrance.y]);
+            SPDDebug.generator.StartSquare(SPDDebug.maps[0].pathosMap[SPDDebug.maps[0].entrance.x, SPDDebug.maps[0].entrance.y]);
 
             Gen.ClearDebug();
         }

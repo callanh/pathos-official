@@ -507,14 +507,15 @@ namespace Pathos
       foreach (var UniqueEntity in Codex.Entities.List.Where(E => E.IsUnique).Except(UniqueEntityList))
         Debug.WriteLine($"{UniqueEntity.Name} was not considered in this epic module.");
 
-      void SetSiteSuffixFirstLevelUp(string SiteName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.UpSquare);
-      void SetSiteSuffixFirstLevelDown(string SiteName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.DownSquare);
-      void SetSiteFirstLevelUp(string SiteName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare);
-      void SetSiteFirstLevelEntrance(string SiteName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare.Passage.Destination);
-      void SetSiteLastLevelUp(string SiteName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).LastLevel.UpSquare);
-      void SetMapLevelUp(string MapName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Level.UpSquare);
-      void SetMapLevelDown(string MapName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Level.DownSquare);
-      void SetMapMiddle(string MapName) => Generator.Adventure.World.SetStart(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Midpoint);
+      void SetSiteSuffixFirstLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.UpSquare);
+      void SetSiteSuffixFirstLevelDown(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.DownSquare);
+      void SetSiteFirstLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare);
+      void SetSiteFirstLevelEntrance(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare.Passage.Destination);
+      void SetSiteLastLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).LastLevel.UpSquare);
+      void SetMapLevelUp(string MapName) => Generator.StartSquare(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Level.UpSquare);
+      void SetMapLevelDown(string MapName) => Generator.StartSquare(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Level.DownSquare);
+      void SetMapMiddle(string MapName) => Generator.StartSquare(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Midpoint);
+      void SetUndergroundAreaPassage(string AreaName) => Generator.StartSquare(UndergroundMap.Areas.Find(A => A.Name == Generator.EscapedModuleTerm(AreaName)).GetSquares().Find(S => S.Passage != null));
 
       SetSiteFirstLevelUp(OpusTerms.Crypt);
       SetMapMiddle(OpusTerms.Station);
@@ -522,12 +523,13 @@ namespace Pathos
       SetSiteSuffixFirstLevelUp("Lair");
       SetSiteFirstLevelUp(OpusTerms.Prison);
       SetSiteSuffixFirstLevelDown("Nest");
-      Generator.Adventure.World.SetStart(FinaleSquare);
+      Generator.StartSquare(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
       SetSiteFirstLevelUp(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Ruins);
       SetSiteFirstLevelUp(OpusTerms.Cage);
       SetMapLevelDown(OpusTerms.Overland);
+      SetUndergroundAreaPassage(OpusTerms.Sewers);
 #endif
 
 #if DEBUG
@@ -547,7 +549,7 @@ namespace Pathos
           if (!Invalid)
           {
             Invalid = true;
-            Generator.Adventure.World.SetStart(OrphanSquare);
+            Generator.StartSquare(OrphanSquare);
           }
 
           Debug.WriteLine("Orphan: " + OrphanSquare);
@@ -655,7 +657,7 @@ namespace Pathos
         {
           Generator.AdjustToSolidWall(BoundarySquare);
 
-          if (BoundarySquare.Floor == null && !BoundaryBarrier.Rebound)
+          if (BoundarySquare.Floor == null && BoundaryBarrier.IsUniform)
             Generator.PlaceFloor(BoundarySquare, RegularGround);
         }
       }
@@ -1347,13 +1349,15 @@ namespace Pathos
 
         var CoffinSquare = UndergroundSquare.GetNeighbourSquares().GetRandomOrNull() ?? UndergroundSquare;
         Generator.PlaceFixture(CoffinSquare, Codex.Features.sarcophagus, Codex.Sanctities.Cursed, Broken: true);
-        Generator.Adventure.World.SetStart(CoffinSquare);
+        Generator.StartSquare(CoffinSquare);
 
         var OracleSquare = UndergroundSquare.Adjacent(CoffinSquare.AsDirection(UndergroundSquare));
         var OracleCharacter = Maker.NewGoodCharacter(OracleSquare, Maker.SelectUniqueEntity(Codex.Entities.Oracle));
-        System.Diagnostics.Debug.Assert(OracleCharacter.Neutral);
         Generator.ResidentSquare(OracleCharacter, OracleSquare);
         Generator.PlaceCharacter(OracleSquare, OracleCharacter);
+
+        // TODO: for testing transport of trophy/statue characters to the endgame.
+        //Generator.PlaceBoulder(OracleSquare, Codex.Blocks.trophy, IsRigid: true, PrisonerCharacter: OracleCharacter);
 
         // assassin will arrive in the overland if the oracle is slain.
         var AssassinSquare = OverlandSquare.Adjacent(CoffinSquare.AsDirection(UndergroundSquare));
@@ -4701,7 +4705,7 @@ namespace Pathos
         var DeadendSquareList = new Inv.DistinctList<Square>();
         foreach (var MazeSquare in MazeMap.GetSquares(MazeRegion))
         {
-          // don't need floors underneath an opaque wall.
+          // don't need floors underneath an segmented wall.
           if (MazeSquare.Floor != null && MazeSquare.Wall != null && !MazeSquare.Wall.Barrier.IsUniform && !MazeSquare.Wall.IsIllusionary())
             Generator.RemoveFloor(MazeSquare);
 
@@ -5893,6 +5897,8 @@ namespace Pathos
 
         Generator.PlacePassage(EscapeSquare, Codex.Portals.wooden_ladder_down, LadderSquare);
         Generator.PlacePassage(LadderSquare, Codex.Portals.wooden_ladder_up, EscapeSquare);
+
+        Maker.RepairBoundary(UndergroundMap, PitRegion, Codex.Barriers.cave_wall, PitVariant.Ground, IsLit: false);
 
         Generator.RepairMap(UndergroundMap, PitRegion);
 
@@ -7676,10 +7682,11 @@ H-----------H
         var TownMap = Maker.OverlandMap;
         var TownRegion = Section.Region.Reduce(1);
 
-        var MassacreChance = Chance.OneIn25;
-        var OccupyChance = Chance.OneIn2; // 50% of towns are occupied.
+        var MassacreChance = Chance.OneIn25; // 4% of towns are massacred.
+        var OccupyChance = Chance.OneIn4; // 25% of towns are occupied.
 #if DEBUG
-        //MassacreChance = Chance.Always;
+        //OccupyChance = Chance.Always;
+        //MassacreChance = Chance.Never;
 #endif
         var MassacreEvent = MassacreChance.Hit(); // kill everyone in town, overrun with hordes.
         var OccupyEvent = OccupyChance.Hit();
@@ -7869,18 +7876,14 @@ H-----------H
         var TownParty = Generator.NewParty(Leader: null);
 
         // unique mayor of the town, allied with the vendors.
-        Character MayorCharacter = null;
         var MayorSquareList = new Inv.DistinctList<Square>();
-        if (!MassacreEvent && !OccupyEvent)
-        {
-          // NPC and artifact.
-          MayorCharacter = Maker.NewGoodCharacter(PortalSquare, Maker.SelectUniqueEntity(TownVariant.MayorEntity));
-          Generator.PlaceCharacter(PortalSquare, MayorCharacter);
-          Generator.AcquireUnique(PortalSquare, MayorCharacter, Codex.Qualifications.champion);
-          MayorSquareList.Add(PortalSquare);
 
-          TownParty.AddAlly(MayorCharacter, Clock.Zero, Delay.Zero); // leader is not the party leader, or all merchants will act as 'guardians'.
-        }
+        // NPC and artifact.
+        var MayorCharacter = Maker.NewGoodCharacter(PortalSquare, Maker.SelectUniqueEntity(TownVariant.MayorEntity));
+        Generator.PlaceCharacter(PortalSquare, MayorCharacter);
+        Generator.AcquireUnique(PortalSquare, MayorCharacter, Codex.Qualifications.champion);
+        MayorSquareList.Add(PortalSquare);
+        TownParty.AddAlly(MayorCharacter, Clock.Zero, Delay.Zero); // leader is not the party leader, or all merchants will act as 'guardians'.
 
         // place one shrine.
         var ShrineBuilding = RegularBuildingList.GetRandom();
@@ -7982,8 +7985,7 @@ H-----------H
           }
         }
 
-        if (MayorCharacter != null)
-          Generator.ResidentRoute(MayorCharacter, MayorSquareList.ToArray(), SquareIndex: 0);
+        Generator.ResidentRoute(MayorCharacter, MayorSquareList.ToArray(), SquareIndex: 0);
 
         // make fountains.
         var FountainNumberDice = 1.d2();
@@ -8227,42 +8229,29 @@ H-----------H
           }
         }
 
-        BuildSewers(Section, TownMap, BuildingList);
+        BuildSewers(Section, TownMap, BuildingList, MassacreEvent || OccupyEvent ? MayorCharacter : null);
 
         // TODO:
-        // * sewers for massacres put the NPCs in a barred room so they will return to the surface, when freed. Maybe let them carry half their stall items and then put them back?
+        // *
 
         BuildStop();
       }
 
-      private void BuildSewers(OpusSection Section, Map TownMap, Inv.DistinctList<OpusBuilding> BuildingList)
+      private void BuildSewers(OpusSection Section, Map TownMap, Inv.DistinctList<OpusBuilding> BuildingList, Character SecureCharacter)
       {
         Section.UndergroundAreaName = OpusTerms.Sewers;
 
         var SewerMap = Maker.UndergroundMap;
+        var SewerRegion = Section.Region;
         var SewerBarrier = Codex.Barriers.sewer_wall;
         var SewerGround = Codex.Grounds.sewer_floor;
+        var SewerFluid = Codex.Grounds.water;
+        var SewerGrill = Codex.Barriers.iron_bars;
 
-        var ThemeBuilding = BuildingList.LastOrDefaultByOrder(S => S.Region.Width * S.Region.Height);
+        var ThemeBuilding = BuildingList.LastByOrder(S => S.Region.Width * S.Region.Height);
 
-        if (ThemeBuilding != null)
-        {
-          foreach (var RoomSquare in SewerMap.GetFrameSquares(ThemeBuilding.Region))
-          {
-            if (RoomSquare.Floor != null)
-              Generator.RemoveFloor(RoomSquare);
-
-            Generator.PlaceWall(RoomSquare, SewerBarrier, WallStructure.Permanent, WallSegment.Pillar);
-          }
-
-          foreach (var RoomSquare in SewerMap.GetSquares(ThemeBuilding.Region.Reduce(1)))
-          {
-            if (RoomSquare.Wall != null)
-              Generator.RemoveWall(RoomSquare);
-
-            Generator.PlaceFloor(RoomSquare, SewerGround);
-          }
-        }
+        foreach (var RoomSquare in SewerMap.GetSquares(ThemeBuilding.Region.Reduce(1)).Where(S => S.Floor == null))
+          Generator.PlaceFloor(RoomSquare, SewerGround);
 
         Square PreviousSquare = null;
 
@@ -8276,93 +8265,131 @@ H-----------H
           }
           else
           {
-            Maker.WalkingTunnel(PreviousSquare, NextSquare, SewerBarrier, SewerGround, IsLit: false, WallStructure.Permanent);
+            foreach (var SewerSquare in Maker.WalkingPath(PreviousSquare, NextSquare))
+              Generator.PlaceFloor(SewerSquare, SewerGround);
 
             PreviousSquare = NextSquare;
           }
         }
 
-        if (ThemeBuilding != null)
+        foreach (var SewerSquare in SewerMap.GetSquares(SewerRegion))
         {
-          var ThemeZone = SewerMap.AddZone();
-          ThemeZone.AddRegion(ThemeBuilding.Region);
-          ThemeZone.SetLit(true);
+          if (SewerSquare.Floor == null && SewerSquare.GetAdjacentSquares().Any(S => S.Floor?.Ground == SewerGround))
+            Generator.PlaceFloor(SewerSquare, SewerFluid);
+        }
 
-          foreach (var RoomSquare in SewerMap.GetFrameSquares(ThemeBuilding.Region))
+        Maker.RepairBoundary(SewerMap, SewerRegion, SewerBarrier, SewerGround, IsLit: false);
+
+        var ThemeZone = SewerMap.AddZone();
+        ThemeZone.AddRegion(ThemeBuilding.Region);
+        ThemeZone.SetLit(true);
+        ThemeZone.SetSpawnRestricted(true);
+
+        foreach (var RoomSquare in SewerMap.GetFrameSquares(ThemeBuilding.Region))
+        {
+          if (RoomSquare.Floor != null && RoomSquare.IsFlat())
+            Generator.PlaceRandomHorizontalDoor(RoomSquare, Codex.Gates.iron_door, SewerBarrier);
+        }
+
+        // sewer summoner.
+        var LycanthropeArray = new[]
+        {
+          new { Primary = Codex.Entities.werejackal, Secondary = Codex.Entities.jackalwere, Ordinary = Codex.Entities.jackal },
+          new { Primary = Codex.Entities.wererat, Secondary = Codex.Entities.ratwere, Ordinary = Codex.Entities.giant_rat },
+          new { Primary = Codex.Entities.werespider, Secondary = Codex.Entities.spiderwere, Ordinary = Codex.Entities.giant_spider },
+          new { Primary = Codex.Entities.weresnake, Secondary = Codex.Entities.snakewere, Ordinary = Codex.Entities.snake },
+          new { Primary = Codex.Entities.werewolf, Secondary = Codex.Entities.wolfwere, Ordinary = Codex.Entities.wolf },
+          new { Primary = Codex.Entities.werepanther, Secondary = Codex.Entities.pantherwere, Ordinary = Codex.Entities.panther },
+          new { Primary = Codex.Entities.weretiger, Secondary = Codex.Entities.tigerwere, Ordinary = Codex.Entities.tiger },
+        };
+        var Lycanthrope = LycanthropeArray.Where(L => L.Primary.Difficulty >= Section.MinimumDifficulty && L.Primary.Difficulty <= Section.MaximumDifficulty).LastOrDefaultByOrder(L => L.Primary.Difficulty);
+
+        var ThroneSquare = SewerMap[ThemeBuilding.Region.Midpoint()];
+
+        if (SecureCharacter != null)
+        {
+          ThemeZone.SetAccessRestricted(true);
+
+          // move the mayor to a secure location.
+          Generator.PlaceCharacter(ThroneSquare, SecureCharacter);
+
+          foreach (var SewerSquare in ThroneSquare.GetAdjacentSquares())
           {
-            if (RoomSquare.Floor != null && RoomSquare.IsFlat())
-              Generator.PlaceRandomHorizontalDoor(RoomSquare, Codex.Gates.iron_door, SewerBarrier);
-          }
-
-          // TODO: sewer summoner.
-          var LycanthropeArray = new[]
-          {
-            new { Primary = Codex.Entities.werejackal, Secondary = Codex.Entities.jackalwere, Ordinary = Codex.Entities.jackal },
-            new { Primary = Codex.Entities.wererat, Secondary = Codex.Entities.ratwere, Ordinary = Codex.Entities.giant_rat },
-            new { Primary = Codex.Entities.werespider, Secondary = Codex.Entities.spiderwere, Ordinary = Codex.Entities.giant_spider },
-            new { Primary = Codex.Entities.weresnake, Secondary = Codex.Entities.snakewere, Ordinary = Codex.Entities.snake },
-            new { Primary = Codex.Entities.werewolf, Secondary = Codex.Entities.wolfwere, Ordinary = Codex.Entities.wolf },
-            new { Primary = Codex.Entities.werepanther, Secondary = Codex.Entities.pantherwere, Ordinary = Codex.Entities.panther },
-            new { Primary = Codex.Entities.weretiger, Secondary = Codex.Entities.tigerwere, Ordinary = Codex.Entities.tiger },
-          };
-
-          var ThroneSquare = SewerMap[ThemeBuilding.Region.Midpoint()];
-
-          var Lycanthrope = LycanthropeArray.Where(L => L.Primary.Difficulty >= Section.MinimumDifficulty && L.Primary.Difficulty <= Section.MaximumDifficulty).LastOrDefaultByOrder(L => L.Primary.Difficulty);
-          if (Lycanthrope == null || Chance.OneIn10.Hit())
-          {
-            var RoyalEntity = Codex.Entities.rat_king;
-
-            Generator.PlaceFixture(ThroneSquare, Codex.Features.throne);
-            Generator.PlaceCharacter(ThroneSquare, RoyalEntity);
-
-            var LevelPromotion = Section.MaximumDifficulty - RoyalEntity.Difficulty;
-
-            if (LevelPromotion > 0)
-              Generator.PromoteCharacter(ThroneSquare.Character, LevelPromotion);
-
-            foreach (var RoomSquare in SewerMap.GetSquares(ThemeBuilding.Region.Reduce(1)))
+            if (SewerSquare.X == ThroneSquare.X || SewerSquare.Y == ThroneSquare.Y)
             {
-              if (Generator.CanPlaceCharacter(RoomSquare))
-              {
-                Generator.PlaceCharacter(RoomSquare, Codex.Entities.sewer_rat);
-
-                if (LevelPromotion > 0)
-                  Generator.PromoteCharacter(RoomSquare.Character, LevelPromotion);
-
-                if (Chance.OneIn5.Hit())
-                  Generator.PlaceAsset(RoomSquare, Generator.NewSpecificAsset(RoomSquare, Codex.Items.cheese));
-              }
+              Generator.PlacePermanentWall(SewerSquare, SewerGrill, WallSegment.Pillar);
+            }
+            else
+            {
+              Generator.RemoveFloor(SewerSquare);
+              Generator.PlacePermanentWall(SewerSquare, SewerBarrier, WallSegment.Pillar);
             }
           }
-          else
+
+          var SecureSquare = ThroneSquare.GetNeighbourSquares().GetRandomOrNull();
+
+          Generator.RemoveWall(SecureSquare);
+          Generator.PlaceLockedVerticalDoor(SecureSquare, Codex.Gates.iron_door, SewerGrill, Reinforced: true);
+        }
+        else if (Chance.OneIn10.Hit())
+        {
+          // special rat king.
+          Lycanthrope = null;
+
+          var RoyalEntity = Codex.Entities.rat_king;
+
+          Generator.PlaceFixture(ThroneSquare, Codex.Features.throne);
+          Generator.PlaceCharacter(ThroneSquare, RoyalEntity);
+
+          // may require level promotion for later towns.
+          var LevelPromotion = Section.MaximumDifficulty - RoyalEntity.Difficulty;
+
+          if (LevelPromotion > 0)
+            Generator.PromoteCharacter(ThroneSquare.Character, LevelPromotion);
+
+          foreach (var RoomSquare in SewerMap.GetSquares(ThemeBuilding.Region.Reduce(1)))
           {
-            Generator.PlaceCharacter(ThroneSquare, Lycanthrope.Primary);
-
-            if (ThroneSquare.Character != null)
+            if (Generator.CanPlaceCharacter(RoomSquare))
             {
-              Generator.GainCarriedAsset(ThroneSquare.Character, Generator.NewRandomAsset(ThroneSquare));
-              Generator.GainCarriedAsset(ThroneSquare.Character, Generator.NewRandomAsset(ThroneSquare));
-              Generator.GainCarriedAsset(ThroneSquare.Character, Generator.NewRandomAsset(ThroneSquare));
-            }
+              Generator.PlaceCharacter(RoomSquare, Codex.Entities.sewer_rat);
 
-            foreach (var SecondaryIndex in RandomSupport.NextNumber(3, 4).NumberSeries())
-            {
-              var SecondarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
-              if (SecondarySquare != null)
-              {
-                Generator.PlaceCharacter(SecondarySquare, Lycanthrope.Secondary);
-                if (SecondarySquare.Character != null)
-                  Generator.GainCarriedAsset(SecondarySquare.Character, Generator.NewRandomAsset(SecondarySquare));
-              }
-            }
+              if (LevelPromotion > 0)
+                Generator.PromoteCharacter(RoomSquare.Character, LevelPromotion);
 
-            foreach (var OrdinaryIndex in RandomSupport.NextNumber(5, 7).NumberSeries())
-            {
-              var OrdinarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
-              if (OrdinarySquare != null)
-                Generator.PlaceCharacter(OrdinarySquare, Lycanthrope.Ordinary);
+              if (Chance.OneIn5.Hit())
+                Generator.PlaceAsset(RoomSquare, Generator.NewSpecificAsset(RoomSquare, Codex.Items.cheese));
             }
+          }
+        }
+
+        if (Lycanthrope != null)
+        {
+          var PrimarySquare = ThroneSquare.IsOccupied() ? Generator.ExpandingFindSquare(ThroneSquare, 10) : ThroneSquare;
+          Generator.PlaceCharacter(PrimarySquare, Lycanthrope.Primary);
+
+          if (PrimarySquare.Character != null)
+          {
+            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
+            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
+            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
+          }
+
+          foreach (var SecondaryIndex in RandomSupport.NextNumber(3, 4).NumberSeries())
+          {
+            var SecondarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
+            if (SecondarySquare != null)
+            {
+              Generator.PlaceCharacter(SecondarySquare, Lycanthrope.Secondary);
+              if (SecondarySquare.Character != null)
+                Generator.GainCarriedAsset(SecondarySquare.Character, Generator.NewRandomAsset(SecondarySquare));
+            }
+          }
+
+          foreach (var OrdinaryIndex in RandomSupport.NextNumber(5, 7).NumberSeries())
+          {
+            var OrdinarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
+            if (OrdinarySquare != null)
+              Generator.PlaceCharacter(OrdinarySquare, Lycanthrope.Ordinary);
           }
         }
 
@@ -8380,39 +8407,82 @@ H-----------H
           Generator.PlacePassage(ArrivalSquare, Codex.Portals.wooden_ladder_up, EntranceSquare);
         }
 
-        // water grills.
-        foreach (var RoomSquare in SewerMap.GetSquares(Section.Region))
+        // sewage.
+        foreach (var SewerSquare in SewerMap.GetSquares(SewerRegion))
         {
-          if (RoomSquare.Wall != null && RoomSquare.IsFlat() && !RoomSquare.GetNeighbourSquares().Any(S => S.Wall?.Barrier == Codex.Barriers.iron_bars) && Chance.OneIn3.Hit())
+          bool IsFluid(Direction Direction) => SewerSquare.Adjacent(Direction)?.Floor?.Ground == SewerFluid && SewerSquare.Adjacent(Direction, 2)?.Wall?.Barrier == SewerBarrier;
+          bool IsEnclosedFluid(Direction Direction) => IsFluid(Direction) && SewerSquare.Adjacent(Direction, 2)?.Wall?.Barrier == SewerBarrier;
+          bool IsGround(Direction Direction) => SewerSquare.Adjacent(Direction)?.Floor?.Ground == SewerGround;
+          void PlaceGrill(Direction FluidUpper, Direction FluidLower, Direction GroundUpper, Direction GroundLower)
           {
-            var BarsZone = SewerMap.AddZone();
-            BarsZone.AddRegion(RoomSquare.SurroundingRegion(1));
-            BarsZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.random_spawning).SetTarget(RoomSquare);
-
-            Generator.ReplaceWall(RoomSquare, Codex.Barriers.iron_bars);
-            Generator.PlaceFloor(RoomSquare, Codex.Grounds.water);
+            if (IsEnclosedFluid(FluidUpper) && IsEnclosedFluid(FluidLower) && IsGround(GroundUpper) && IsGround(GroundLower) && !SewerSquare.GetAdjacentSquares().Any(S => S.Wall?.Barrier == SewerGrill))
+            {
+              Generator.PlaceSolidWall(SewerSquare.Adjacent(FluidUpper), SewerGrill, WallSegment.Pillar);
+              Generator.PlaceSolidWall(SewerSquare.Adjacent(FluidLower), SewerGrill, WallSegment.Pillar);
+            }
           }
-          else if (RoomSquare.Floor != null && RoomSquare.Wall == null && RoomSquare.Passage == null && RoomSquare.GetAdjacentSquares().Count(S => S.Wall != null && S.Wall.IsPhysical()) == 7)
+          void PlaceDivider(Direction GroundDirection, Direction FluidDirection)
           {
-            Generator.ReplaceFloor(RoomSquare, Codex.Grounds.water);
-            Generator.PlaceRandomAsset(RoomSquare);
+            if (SewerSquare.Floor?.Ground == SewerGround && SewerSquare.Passage == null && SewerSquare.Character == null && !SewerSquare.IsRegion(ThemeBuilding.Region))
+            {
+              if ((IsGround(GroundDirection) && IsFluid(FluidDirection)) || (IsFluid(GroundDirection) && IsGround(FluidDirection)))
+              {
+                Generator.RemoveFloor(SewerSquare);
+                Generator.PlaceSolidWall(SewerSquare, SewerBarrier, WallSegment.Pillar);
+              }
+            }
+          }
+
+          PlaceDivider(Direction.West, Direction.East);
+          PlaceDivider(Direction.North, Direction.South);
+
+          if (SewerSquare.Wall != null && SewerSquare.IsFlat() && !SewerSquare.GetNeighbourSquares().Any(S => S.Wall?.Barrier == SewerGrill) && Chance.OneIn3.Hit())
+          {
+            Generator.ReplaceWall(SewerSquare, SewerGrill);
+            Generator.PlaceFloor(SewerSquare, SewerFluid);
+          }
+          else if (SewerSquare.Floor?.Ground == SewerGround)
+          {
+            PlaceGrill(Direction.North, Direction.South, Direction.West, Direction.East);
+            PlaceGrill(Direction.West, Direction.East, Direction.North, Direction.South);
+
+            if (SewerSquare.Wall == null && SewerSquare.Character == null && SewerSquare.Passage == null && Chance.OneIn15.Hit())
+              Generator.PlaceRandomCharacter(SewerSquare, Section.MinimumDifficulty, Section.MaximumDifficulty);
+          }
+          else if (SewerSquare.Floor?.Ground == SewerFluid)
+          {
+            var IsGrilled = SewerSquare.Wall?.Barrier == SewerGrill;
+
+            if ((IsGrilled && Chance.OneIn4.Hit()) || (!IsGrilled && Chance.OneIn10.Hit()))
+            {
+              var SewerAsset = Generator.NewRandomAsset(SewerSquare);
+
+              if (SewerAsset.Item.IsIngested() && SewerAsset.HasSanctity)
+                SewerAsset.SetSanctity(Codex.Sanctities.Cursed);
+
+              Generator.PlaceAsset(SewerSquare, SewerAsset);
+            }
+            else if (SewerSquare.Wall == null && SewerSquare.Character == null && SewerSquare.Passage == null && Chance.OneIn15.Hit())
+            {
+              Generator.PlaceRandomCharacter(SewerSquare, Section.MinimumDifficulty, Section.MaximumDifficulty);
+            }
           }
         }
 
-        // flushed items.
-        foreach (var Building in BuildingList)
+        // remove pillar walls, unless they are in a dead-end.
+        foreach (var SewerSquare in SewerMap.GetSquares(SewerRegion))
         {
-          var FlushSquare = SewerMap[Building.Region.Midpoint()];
-
-          if (FlushSquare.Floor?.Ground == SewerGround && FlushSquare.Passage == null && FlushSquare.Fixture == null && FlushSquare.Character == null && Generator.CanPlaceAsset(FlushSquare))
+          if (SewerSquare.Wall?.Barrier == SewerBarrier && !SewerSquare.GetNeighbourSquares().Any(S => S.Wall != null) && SewerSquare.GetAdjacentSquares().Count(S => S.Floor?.Ground == SewerFluid && S.Wall == null) < 7)
           {
-            Generator.PlaceFloor(FlushSquare, Codex.Grounds.water);
-            Generator.PlaceRandomAsset(FlushSquare);
+            Generator.RemoveWall(SewerSquare);
+            Generator.PlaceFloor(SewerSquare, SewerGround);
           }
         }
+
+        Maker.RepairGaps(SewerMap, SewerRegion, SewerBarrier, IsLit: false);
 
         // repair missing zones.
-        Generator.RepairMap(SewerMap, Section.Region);
+        Generator.RepairMap(SewerMap, SewerRegion);
       }
 
       private readonly Variance<TownVariant> TownVariance;

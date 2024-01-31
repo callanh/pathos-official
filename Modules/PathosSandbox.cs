@@ -171,7 +171,7 @@ namespace Pathos
       Generator.PlaceLockedHorizontalDoor(SpecialSquare, Codex.Gates.crystal_door, SandboxBarrier, Key: Codex.Items.Ruby_Key);
       //Generator.PlaceSpecificAsset(SpecialSquare.Adjacent(Direction.East), SpecialDoor.Key);
 
-      Adventure.World.SetStart(SandboxMap[18, 2]);
+      Generator.StartSquare(SandboxMap[18, 2]);
 
       //var KoboldEntity = Generator.Codex.Entities.kobold_shaman;
       //var KoboldSquare = SandboxMap[18, 4];

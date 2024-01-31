@@ -256,7 +256,7 @@ namespace Pathos
           Generator.PlacePassage(UpSquare, UpPortal, Destination: null);
 
           // start player character and allies.
-          Generator.Adventure.World.SetStart(UpSquare);
+          Generator.StartSquare(UpSquare);
         }
         else
         {
