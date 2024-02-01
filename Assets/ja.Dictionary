@@ -133,7 +133,7 @@ AppearanceName,emerald potion,エメラルド色の液体の入った小瓶
 AppearanceName,emerald ring,エメラルドの指輪
 AppearanceName,engagement ring,婚約指輪
 AppearanceName,etched helmet,模様の刻まれた兜
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,異様な二又の長い武器
 AppearanceName,faded book,色褪せた本
 AppearanceName,faded pall,色褪せた外套
 AppearanceName,fencing gloves,フェンシンググローブ
@@ -367,7 +367,7 @@ AppearanceName,tin wand,錫の棒
 AppearanceName,tiny book,小さい本
 AppearanceName,topaz ring,トパーズの指輪
 AppearanceName,torn book,破れた本
-AppearanceName,toy sword,
+AppearanceName,toy sword,おもちゃの剣
 AppearanceName,triangular amulet,三角形のお守り
 AppearanceName,turquoise book,青緑色の本
 AppearanceName,twisted ring,ねじねじの指輪
@@ -459,11 +459,11 @@ BarrierName,cave wall,洞窟の壁
 BarrierName,hell brick,地獄の煉瓦
 BarrierName,iron bars,鉄格子
 BarrierName,jade wall,ひすいの壁
-BarrierName,sewer wall,
+BarrierName,sewer wall,下水の壁
 BarrierName,shroom,キノコ
 BarrierName,stone wall,石の壁
 BarrierName,tree,木
-BarrierName,wooden wall,
+BarrierName,wooden wall,木の壁
 BeamName,acid,酸
 BeamName,cold,冷気
 BeamName,death,死
@@ -484,7 +484,7 @@ BlockName,crystal boulder,クリスタルの巨塊
 BlockName,gold boulder,金鉱石の巨塊
 BlockName,statue,石像
 BlockName,stone boulder,巨石
-BlockName,trophy,
+BlockName,trophy,黄金像
 BlockName,wooden barrel,木樽
 BoonDescription,Ask for a unicorn to join your party.,ユニコーンが仲間になるよう頼んでもらう。
 BoonDescription,Bless one item in your inventory or on the ground.,所持品または足元のアイテム1つを祝福してもらう。
@@ -703,7 +703,7 @@ CharacterName,Zerbarry,ザーバリィ
 CharacterName,Zimn,ジン
 CharacterName,Zonagan,ゾナガン
 CharacterName,Zultry,ズルトリー
-ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",長年の熟考と計画を経て世界に出る事にした予見者。自分の精神を自在にコントロールし、鋼の意志で艱難辛苦に立ち向かう。
+ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",長年の熟考と計画を経、人の世に出でんとする予見者。自分の精神を自在にコントロールし、鋼の意志で艱難辛苦に立ち向かう。
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.",弱っている者に手を差し伸べることを喜びとする、面倒見のいい博愛主義者。人助けのため病気とは切っても切れない関係であり、衛生観念の鑑である。あくまで慈善の人であり、仲間の助け無くしては生き残りは厳しいだろう。
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.",獰猛で誇り高い北国の守護者。強靭な心と体でどんな相手にも果敢に立ち向かう。栄誉の死を迎えるその時まで。
 ClassDescription,"Charming minstrels, making their way through the world with their songs and stories. They are jacks-of-all-trades; alongside their troubadour talents, they dabble in both martial skills and spellcraft.",歌と話で世を渡る、どこでも好かれる吟遊楽人。何にでも興味を示し、詩歌の他にも戦闘術や魔術もかじる。
@@ -758,8 +758,8 @@ ClassName,gunslinger//female,ガンマン
 ClassName,gunslinger//male,ガンマン
 ClassName,gunslinger//non-binary,ガンマン
 ClassName,healer//female,医師
-ClassName,healer//male,薬師
-ClassName,healer//non-binary,薬師
+ClassName,healer//male,医師
+ClassName,healer//non-binary,医師
 ClassName,hunter//female,ハンター
 ClassName,hunter//male,ハンター
 ClassName,hunter//non-binary,ハンター
@@ -926,13 +926,13 @@ DeviceName,hallucination trap,幻覚の罠
 DeviceName,hole,大穴
 DeviceName,hunger trap,飢餓の罠
 DeviceName,ice trap,氷の罠
-DeviceName,level teleporter,階層移動
+DeviceName,level teleporter,階層移動の罠
 DeviceName,lightning trap,電撃の罠
 DeviceName,noxious pool,酸のプール
 DeviceName,pit,落とし穴
 DeviceName,poison gas trap,毒ガスの罠
 DeviceName,polymorph trap,変化の罠
-DeviceName,pressure plate,
+DeviceName,pressure plate,感圧板
 DeviceName,scything blade trap,刃の罠
 DeviceName,shock trap,電流の罠
 DeviceName,silence trap,沈黙の罠
@@ -1014,7 +1014,7 @@ EffectType,charging,充填
 EffectType,charm,魅了
 EffectType,clone character,分裂
 EffectType,concealing,隠す
-EffectType,connect passage,
+EffectType,connect passage,通路をつなげる
 EffectType,convert asset,アイテムを変換
 EffectType,convert boulder,巨塊を変換
 EffectType,convert door,扉を変換
@@ -1061,7 +1061,7 @@ EffectType,lose skill,スキルレベル低下
 EffectType,lose talent,性質を失う
 EffectType,malnutrition,満腹度減少
 EffectType,mapping,地図作製
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,障害物を動かす
 EffectType,murder,殺人
 EffectType,nutrition,満腹度上昇
 EffectType,opening,開錠
@@ -1267,7 +1267,7 @@ EntityName,blood imp,吸血インプ
 EntityName,bloodshot eye,血走った目
 EntityName,bloodworm,ブラッドワーム
 EntityName,blue jelly,ブルーゼリー
-EntityName,blue light,
+EntityName,blue light,青色の光球
 EntityName,bone devil,骨の悪魔
 EntityName,brown mould,茶色のカビ
 EntityName,brown pudding,茶色のプリン
@@ -1318,7 +1318,7 @@ EntityName,deep gnome,地底ノーム
 EntityName,deep one,深きもの
 EntityName,deeper one,更に深きもの
 EntityName,deepest one,最も深きもの
-EntityName,Deliarne,『ダークワン』
+EntityName,Deliarne,『デリアーネ』
 EntityName,demilich,デミリッチ
 EntityName,Demogorgon,『デモゴルゴン』
 EntityName,demon,悪魔
@@ -1367,7 +1367,7 @@ EntityName,elf mummy,エルフのミイラ
 EntityName,elf zombie,エルフのゾンビ
 EntityName,Elwing,『エルウィング』
 EntityName,embalmer,遺体整復師
-EntityName,emerald golem,
+EntityName,emerald golem,エメラルドのゴーレム
 EntityName,energy vortex,魔力の渦
 EntityName,erinys,エリニス
 EntityName,ettin,双頭の巨人
@@ -1496,7 +1496,7 @@ EntityName,horned devil,角の悪魔
 EntityName,horse,馬
 EntityName,housecat,猫
 EntityName,huge pile of killer coins,山積みの人喰いコイン
-EntityName,Huhetotl,『フヘトトルの右腕』
+EntityName,Huhetotl,『フヘトトル』
 EntityName,human,人間
 EntityName,human king,人間の王
 EntityName,human mummy,人間のミイラ
@@ -1522,7 +1522,7 @@ EntityName,jiggling blob,ぐにゃぐにゃブロブ
 EntityName,juggernaut,ジャガーノート
 EntityName,Juiblex,『ジュイブレックス』
 EntityName,juvenile raven,若ガラス
-EntityName,Kaloi Thrym,『闇王』
+EntityName,Kaloi Thrym,『カロイ・スリュム』
 EntityName,kamadan,カマダン
 EntityName,keystone captain,キーストン警部
 EntityName,keystone kop,キーストン巡査
@@ -1620,7 +1620,7 @@ EntityName,nalfeshnee,ナルフェシュニー
 EntityName,Nalzok,『ナルゾク』
 EntityName,nazgul,ナズグール
 EntityName,neanderthal,ネアンデルタール人
-EntityName,Neferet,『緑のネフェレット』
+EntityName,Neferet,『ネフェレット』
 EntityName,newt,イモリ
 EntityName,nickelpede,大ムカデ
 EntityName,nightgaunt,ナイトゴーント
@@ -1691,7 +1691,7 @@ EntityName,rancid jelly,悪臭ゼリー
 EntityName,rat king,ネズミの王
 EntityName,ratwere,半人ネズミ
 EntityName,recluse spider,カクレグモ
-EntityName,red light,
+EntityName,red light,赤色の光球
 EntityName,red mould,赤いカビ
 EntityName,red naga,レッドナーガ
 EntityName,red naga hatchling,レッドナーガの幼体
@@ -1772,7 +1772,7 @@ EntityName,tiger,虎
 EntityName,tigerwere,半人虎
 EntityName,titan,タイタン
 EntityName,titanothere,ブロントテリウム
-EntityName,topaz golem,
+EntityName,topaz golem,トパーズのゴーレム
 EntityName,tortle,トートル
 EntityName,tracker,猟師
 EntityName,transmuter,変性魔術師
@@ -1940,7 +1940,7 @@ FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}は{M
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName}は巧みに{AssetName}{MotionPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は巧みに{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}はレベル{LevelNumber}に到達した
-FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName}は既にを最大効率で{SpellName}を使っている
+FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName}は既に最大の効率で{SpellName}を唱えることができる
 FormatText,{CharacterName} animated {AssetName},{CharacterName}は{AssetName}に命を与えた
 FormatText,{CharacterName} broke {AssetName},{CharacterName}が{AssetName}を壊した
 FormatText,{CharacterName} broke {FixtureName},{CharacterName}が{FixtureName}を壊した
@@ -2059,7 +2059,7 @@ FormatText,{Entropy} entropy,エントロピー {Entropy}
 FormatText,{ExplosionName} explosion,{ExplosionName}の爆発
 FormatText,{ItemCount} item,{ItemCount}アイテム
 FormatText,{ItemCount} items,{ItemCount}個のアイテム
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} more items,{ItemCount}個以上のアイテム
 FormatText,{JournalDelay} sec,{JournalDelay}秒
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName}と{Follower:CharacterName}は仲間になった
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName}と{Follower:CharacterName}は仲間ではなくなった
@@ -2089,7 +2089,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits}ポンド
 FormatText,after reaching dungeon level {RecordDepth},ダンジョンレベル{RecordDepth}に到達した後
 FormatText,animate {CharacterName},生命を吹き込まれた{CharacterName}
 FormatText,boost {AttributeName} by enchantment,修正値に応じて{AttributeName}を強化
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
@@ -2114,7 +2114,7 @@ FormatText,heal {LifeDice},ライフ回復 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
 FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
 FormatText,increase one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}増加
-FormatText,learn spell {SpellName},呪文を学ぶ {SpellName}
+FormatText,learn spell {SpellName},{SpellName}の呪文を学ぶ
 FormatText,level {Depth},地下{Depth}階
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レベル{Level} {GenderName} {EntityName} {SpecialName} {ClassName}
 FormatText,levels {From}-{To},レベルの差 {From} から {To}
@@ -2154,8 +2154,8 @@ FormatText,when {STANDINGNAME},{STANDINGNAME}の場合
 FormatText,when resists {ElementName},{ElementName}に抵抗した場合
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,硬い結晶で構成された、簡単には壊れない重厚な扉。
 GateName,crystal door,水晶の扉
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,金の扉
+GateName,iron door,鉄の扉
 GateName,wooden door,木製扉
 GenderHimself,herself,彼女自身
 GenderHimself,himself,彼自身
@@ -2175,11 +2175,11 @@ GradeName,artifact,アーティファクト
 GradeName,exotic,秀逸
 GradeName,standard,普通
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,ひんやりとした石の表面は見事に加工されているが、傷と時の流れははっきりと刻み込まれている。
-GroundName,cave floor,
+GroundName,cave floor,洞窟の床
 GroundName,chasm,がけ穴
-GroundName,dirt,土の床
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,dirt,土
+GroundName,gold floor,金の床
+GroundName,granite floor,花崗岩の床
 GroundName,grass,草
 GroundName,hive floor,巣の床
 GroundName,ice,氷の床
@@ -2189,17 +2189,17 @@ GroundName,metal floor,金属の床
 GroundName,moss,苔むした床
 GroundName,obsidian floor,黒曜石の床
 GroundName,sand,砂地
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,下水の床
+GroundName,snow,積雪
 GroundName,stone floor,石の床
-GroundName,stone path,石の廊下
+GroundName,stone path,石の路
 GroundName,water,水
 GroundName,wooden floor,木の床
 HordeName,ant,アリ
 HordeName,ape,猿
 HordeName,bat,コウモリ
 HordeName,bee,蜂
-HordeName,beetle,
+HordeName,beetle,甲虫
 HordeName,cockroach,ゴキブリ
 HordeName,couatl,コアトル
 HordeName,coyote,コヨーテ
@@ -2374,7 +2374,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,一振りで壁に大きなトンネルを作り出す杖。
 ItemName,adamantine arrow,アダマンタインの矢
 ItemName,adamantine axe,アダマンタインの斧
-ItemName,adamantine bident,
+ItemName,adamantine bident,アダマンタインのバイデント
 ItemName,adamantine bow,アダマンタインの弓
 ItemName,adamantine dagger,アダマンタインのダガー
 ItemName,adamantine greataxe,アダマンタインのグレートアックス
@@ -2398,7 +2398,7 @@ ItemName,amulet of flying,飛行のお守り
 ItemName,amulet of life saving,命を守るお守り
 ItemName,amulet of nada,ただのお守り
 ItemName,amulet of reflection,反射のお守り
-ItemName,amulet of restful sleep,安らかな睡眠のお守り
+ItemName,amulet of restful sleep,熟睡のお守り
 ItemName,amulet of unchanging,不変のお守り
 ItemName,amulet of vitality,活力のお守り
 ItemName,amulet versus poison,毒耐性のお守り
@@ -2450,11 +2450,11 @@ ItemName,book of charm,魅了の魔法書
 ItemName,book of clairvoyance,千里眼の魔法書
 ItemName,book of cone of cold,冷気の魔法書
 ItemName,book of confusion,混乱の魔法書
-ItemName,book of create familiar,造魔の魔法書
-ItemName,book of crushing sphere,破砕する球
+ItemName,book of create familiar,使い魔生成の魔法書
+ItemName,book of crushing sphere,破砕する球の魔法書
 ItemName,book of curing,治癒の魔法書
 ItemName,book of darkness,暗闇の魔法書
-ItemName,book of deflection,偏向の魔法書
+ItemName,book of deflection,防護の魔法書
 ItemName,book of detect food,食料探知の魔法書
 ItemName,book of detect monsters,モンスター探知の魔法書
 ItemName,book of detect treasure,財宝探知の魔法書
@@ -2464,10 +2464,10 @@ ItemName,book of disintegrate,崩壊の魔法書
 ItemName,book of drain life,生命力吸収の魔法書
 ItemName,book of extra healing,大回復の魔法書
 ItemName,book of fear,恐慌の魔法書
-ItemName,book of finger of death,死の指の魔法書
-ItemName,book of fireball,火の玉の魔法書
+ItemName,book of finger of death,死神の指の魔法書
+ItemName,book of fireball,爆炎球の魔法書
 ItemName,book of flaming sphere,燃え立つ球の魔法書
-ItemName,book of force bolt,衝撃の魔法書
+ItemName,book of force bolt,衝撃弾の魔法書
 ItemName,book of freezing sphere,凍てつく球の魔法書
 ItemName,book of full healing,超回復の魔法書
 ItemName,book of haste,加速の魔法書
@@ -2476,7 +2476,7 @@ ItemName,book of ice storm,氷の嵐の魔法書
 ItemName,book of identify,識別の魔法書
 ItemName,book of invisibility,透明化の魔法書
 ItemName,book of jumping,跳躍の魔法書
-ItemName,book of knock,開錠の魔法書
+ItemName,book of knock,開放の魔法書
 ItemName,book of levitation,浮遊の魔法書
 ItemName,book of light,光の魔法書
 ItemName,book of lightning bolt,電撃の魔法書
@@ -2498,7 +2498,7 @@ ItemName,book of summoning,召喚の魔法書
 ItemName,book of telekinesis,念動力の魔法書
 ItemName,book of teleport away,瞬間移動の魔法書
 ItemName,book of toxic spray,酸の矢の魔法書
-ItemName,book of turn undead,死霊鎮魂の魔法書
+ItemName,book of turn undead,死霊退散の魔法書
 ItemName,book of walling,造壁の魔法書
 ItemName,book of wizard lock,施錠の魔法書
 ItemName,boomerang,ブーメラン
@@ -2528,8 +2528,8 @@ ItemName,citrine,黄水晶
 ItemName,Cleaver,『クリーヴァー』
 ItemName,cloak of blinking,転位のマント
 ItemName,cloak of deflection,偏向のマント
-ItemName,cloak of displacement,変位のマント
-ItemName,cloak of invisibility,不可視のマント
+ItemName,cloak of displacement,虚像のマント
+ItemName,cloak of invisibility,透明化のマント
 ItemName,cloak of magic resistance,耐魔のマント
 ItemName,clove of garlic,ニンニク
 ItemName,club,棍棒
@@ -2652,7 +2652,7 @@ ItemName,Illuminare,『イルミネア』
 ItemName,iron chain,鉄の鎖
 ItemName,iron ration,非常用食肉
 ItemName,iron shoes,鉄靴
-ItemName,jacinth,ジルコン
+ItemName,jacinth,ジャシンス
 ItemName,jade,ひすい
 ItemName,Jade Key,『ひすいの鍵』
 ItemName,jasper,碧玉
@@ -2759,7 +2759,7 @@ ItemName,phantom key,幽幻の鍵
 ItemName,Philosophers Stone,『賢者の石』
 ItemName,pick-axe,つるはし
 ItemName,pistol,ピストル
-ItemName,plastic sword,
+ItemName,plastic sword,プラスチックの剣
 ItemName,plate barding,鋼鉄の馬鎧
 ItemName,plate mail,プレートメイル
 ItemName,poison dart,毒ダーツ
@@ -2808,14 +2808,14 @@ ItemName,red glass bauble,赤い安物ガラス
 ItemName,ring mail,リングメイル
 ItemName,ring of accuracy,命中の指輪
 ItemName,ring of adornment,魅力の指輪
-ItemName,ring of aggravation,反感の指輪
-ItemName,ring of berserking,狂戦士の指輪
+ItemName,ring of aggravation,不遜の指輪
+ItemName,ring of berserking,狂暴の指輪
 ItemName,ring of cold resistance,耐冷の指輪
 ItemName,ring of conflict,争いの指輪
 ItemName,ring of constitution,体力の指輪
 ItemName,ring of dexterity,技巧の指輪
 ItemName,ring of fire resistance,耐炎の指輪
-ItemName,ring of free action,自由行動の指輪
+ItemName,ring of free action,頑健の指輪
 ItemName,ring of hunger,飢餓の指輪
 ItemName,ring of impact,攻撃の指輪
 ItemName,ring of intelligence,知性の指輪
@@ -2826,11 +2826,11 @@ ItemName,ring of poison resistance,耐毒の指輪
 ItemName,ring of polymorph,変化の指輪
 ItemName,ring of polymorph control,変化制御の指輪
 ItemName,ring of protection,守りの指輪
-ItemName,ring of regeneration,回復の指輪
-ItemName,ring of searching,調査の指輪
+ItemName,ring of regeneration,再生の指輪
+ItemName,ring of searching,鋭敏の指輪
 ItemName,ring of see invisible,透明視の指輪
 ItemName,ring of shock resistance,耐電の指輪
-ItemName,ring of sleeping,傾眠の指輪
+ItemName,ring of sleeping,睡魔の指輪
 ItemName,ring of slow digestion,消化不良の指輪
 ItemName,ring of stealth,忍び足の指輪
 ItemName,ring of strength,筋力の指輪
@@ -2838,7 +2838,7 @@ ItemName,ring of sustain ability,能力固定の指輪
 ItemName,ring of telekinesis,念動力の指輪
 ItemName,ring of teleport control,瞬間移動制御の指輪
 ItemName,ring of teleportation,瞬間移動の指輪
-ItemName,ring of warning,警告の指輪
+ItemName,ring of warning,警戒の指輪
 ItemName,ring of wisdom,知恵の指輪
 ItemName,robe,ローブ
 ItemName,rock,石
@@ -2970,7 +2970,7 @@ ItemName,wand of draining,生命力吸収の魔法棒
 ItemName,wand of extra healing,超回復の魔法棒
 ItemName,wand of fear,恐慌の魔法棒
 ItemName,wand of fire,火の魔法棒
-ItemName,wand of fireball,火の玉の魔法棒
+ItemName,wand of fireball,爆炎球の魔法棒
 ItemName,wand of haste,加速の魔法棒
 ItemName,wand of healing,回復の魔法棒
 ItemName,wand of iceball,氷の玉の魔法棒
@@ -2987,7 +2987,7 @@ ItemName,wand of punishment,天罰の魔法棒
 ItemName,wand of secret detection,調査の魔法棒
 ItemName,wand of sleep,催眠の魔法棒
 ItemName,wand of slow,減速の魔法棒
-ItemName,wand of striking,衝撃の魔法棒
+ItemName,wand of striking,衝撃弾の魔法棒
 ItemName,wand of summoning,召喚の魔法棒
 ItemName,wand of teleportation,瞬間移動の魔法棒
 ItemName,wand of theft,窃盗の魔法棒
@@ -3010,7 +3010,7 @@ ItemName,yellow dragon scales,イエロードラゴンの鱗
 ItemName,yellow glass bauble,黄色の安物ガラス
 ItemName,yellowish brown glass bauble,黄褐色の安物ガラス
 ItemName,yumi,大弓
-ItemName,zircon,
+ItemName,zircon,ジルコン
 ItemType,amulet,お守り
 ItemType,bag,袋
 ItemType,barding,馬鎧
@@ -3143,7 +3143,7 @@ LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,反時計回りに90度
 LiteralText,any item,あらゆるアイテム
 LiteralText,APPLICATION FILES,アプリケーションファイル
-LiteralText,Are you sure you want to end your adventure?,ダンジョンを脱出し、この冒険を終わりにしますか？
+LiteralText,Are you sure you want to end your adventure?,この冒険を終えてもよろしいでしょうか？
 LiteralText,Are you sure you want to lose this character and end your adventure?,このキャラクターの冒険を諦めますか？
 LiteralText,ARE YOU SURE?,本当によろしいですか？
 LiteralText,area of effect,効果範囲
@@ -3154,7 +3154,7 @@ LiteralText,ATMOSPHERE,環境音
 LiteralText,attack modifier,攻撃値修正
 LiteralText,Attack which direction?,どの方向に攻撃する？
 LiteralText,attack//noun,攻撃値
-LiteralText,ATTACK//noun,攻撃
+LiteralText,ATTACK//noun,攻撃値
 LiteralText,attack//verb,攻撃する
 LiteralText,ATTACK//verb,攻撃する
 LiteralText,attacks,攻撃
@@ -3355,7 +3355,7 @@ LiteralText,evolution,成長
 LiteralText,Examine which object?,どのアイテムを調べる？
 LiteralText,except replica,複製品でない場合
 LiteralText,EXCHANGE,交換
-LiteralText,EXIT PATHOS,Pathosを終了する
+LiteralText,EXIT PATHOS,Pathosを終了
 LiteralText,EXPAND,拡張
 LiteralText,EXPEL,吐き出す
 LiteralText,experience,経験
@@ -3374,7 +3374,7 @@ LiteralText,feature,設備
 LiteralText,FEATURES,設備
 LiteralText,FEED,餌付け
 LiteralText,FEEDBACK,フィードバック
-LiteralText,Feedback information,
+LiteralText,Feedback information,Feedback information
 LiteralText,FILES,ファイル
 LiteralText,fixed range,射程距離
 LiteralText,FIZZLE,失敗
@@ -3393,8 +3393,8 @@ LiteralText,gather,収集
 LiteralText,gender,性別
 LiteralText,genocide,根絶の巻物の効果
 LiteralText,GENOCIDE,根絶
-LiteralText,GIVE,与える
-LiteralText,GIVE ALL,全部与える
+LiteralText,GIVE,渡す
+LiteralText,GIVE ALL,全て渡す
 LiteralText,GLYPHS,タイル
 LiteralText,gold,ゴールド
 LiteralText,GOLD,ゴールド
@@ -3518,7 +3518,7 @@ LiteralText,NAME,名付ける
 LiteralText,name?,名前?
 LiteralText,neutral,中立
 LiteralText,never,0％
-LiteralText,NEW,
+LiteralText,NEW,NEW
 LiteralText,no additional effects,追加効果なし
 LiteralText,no allies,仲間がいない
 LiteralText,no ambient sounds,環境音無し
@@ -3540,7 +3540,7 @@ LiteralText,nothing to give,渡せるものは無い
 LiteralText,nothing to take,受け取れるものは無い
 LiteralText,nutrition,満腹度
 LiteralText,NUTRITION,満腹度
-LiteralText,OBSTRUCTED,塞がっている
+LiteralText,OBSTRUCTED,引っかかっている
 LiteralText,OFFLINE,オフライン
 LiteralText,ONE AT A TIME,1つずつ
 LiteralText,oOo,oOo
@@ -3559,12 +3559,12 @@ LiteralText,pathos development @ paypal,Pathos開発の為に、PayPalで
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathosは冒険の読み込みに失敗しました。問題の調査のため、開発者へセーブデータを送信して頂けませんでしょうか。場合によってはデータを修復したり、アプリの不具合を改修できるかもしれません。ご理解とご協力をお願いします。
 LiteralText,Pathos might be the next evolution of Nethack.,PathosはNethackの新たな発展形だと言えるかもしれません。
 LiteralText,penalty,ペナルティ
-LiteralText,penetrates,貫通する
+LiteralText,penetrates,貫通
 LiteralText,per level,レベル毎に上昇
 LiteralText,permanent,破壊不能
 LiteralText,PERSONAL,個人
-LiteralText,PLACE,入れる
-LiteralText,PLACE ALL,全部入れる
+LiteralText,PLACE,置く
+LiteralText,PLACE ALL,全て置く
 LiteralText,platform,橋
 LiteralText,Play,プレーする
 LiteralText,Play a sound effect?,効果音を再生しますか？
@@ -3576,7 +3576,7 @@ LiteralText,POLYMORPH,変化
 LiteralText,Polymorph into what?,何に変化する？
 LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
-LiteralText,PORTALS,
+LiteralText,PORTALS,ポータル
 LiteralText,porter,の入った捕獲袋
 LiteralText,PRAY,祈る
 LiteralText,preservation,保存
@@ -3732,7 +3732,7 @@ LiteralText,SWITCH,交代する
 LiteralText,symptoms,症状
 LiteralText,Table of Contents,目次
 LiteralText,TAKE,取る
-LiteralText,TAKE ALL,全部取る
+LiteralText,TAKE ALL,全て取る
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
 LiteralText,TELEKINESIS,念動力
@@ -3877,42 +3877,42 @@ MaterialName,wood,木
 MeasurementSystemName,imperial,ヤードポンド法
 MeasurementSystemName,metric,メートル法
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成された広大な地上マップを探索しましょう。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
 ModuleName,Dhak Legacy,Dhak Legacy
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,サンドボックスプレイ
 ModuleTerm,Abyss,地獄の深淵
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,待ち伏せ
+ModuleTerm,Ant Cave,アリの巣窟
+ModuleTerm,Ant Lair,蟻の棲み処
+ModuleTerm,Ant Nest,アリの巣穴
+ModuleTerm,Arena,闘技場
 ModuleTerm,attic,屋根裏
-ModuleTerm,Black Lair,
+ModuleTerm,Black Lair,ブラックドラゴンの棲み処
 ModuleTerm,Black Market,闇市場
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,ブルードラゴンの棲み処
+ModuleTerm,Cage,獄舎
+ModuleTerm,Canyon,峡谷
+ModuleTerm,Cave Maze,洞窟の迷路
 ModuleTerm,caves,洞窟
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,洞窟の街
 ModuleTerm,cellar,地下室
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cemetery,墓地
+ModuleTerm,Chicken Farm,鶏牧場
+ModuleTerm,Cow Farm,牛牧場
+ModuleTerm,Crater,クレーター
+ModuleTerm,Crypt,地下墓所
+ModuleTerm,Crystal Henge,クリスタル・サークル
+ModuleTerm,Deep Lair,ディープドラゴンの棲み処
 ModuleTerm,Deephall,深層王の間
 ModuleTerm,Deepruins,深層の旧跡
 ModuleTerm,Deepwilds,深層の荒野
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,ダイヤモンド鉱山
 ModuleTerm,Dungeon,ダンジョン
 ModuleTerm,Elf Forest,エルフの森
 ModuleTerm,Elf Kingdom,エルフの王国
@@ -3921,90 +3921,90 @@ ModuleTerm,Elf Palace 2,エルフの城 2階
 ModuleTerm,Elf Palace Vault,エルフの城・地下庫
 ModuleTerm,Elf Town,エルフの街
 ModuleTerm,Elf Town Trove,エルフの街・宝物庫
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,エメラルド鉱山
+ModuleTerm,Eye Pit,球体の穴ぐら
 ModuleTerm,Fort Ludios,ルディオス砦
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,地獄のかまど
+ModuleTerm,Glacier,氷河
+ModuleTerm,Goat Farm,山羊牧場
+ModuleTerm,Green Lair,グリーンドラゴンの棲み処
+ModuleTerm,Grotto,洞穴
+ModuleTerm,Halls,館
+ModuleTerm,Helltown,鬼獄街
+ModuleTerm,Horse Farm,馬牧場
+ModuleTerm,Ice Lake,氷湖
 ModuleTerm,Infernal Cage,地獄の収容所
 ModuleTerm,Infernal Fields,地獄の荒野
 ModuleTerm,Infernal Keep,地獄の城塞
 ModuleTerm,Infernal Spire,地獄の尖塔
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,ひすいの街
+ModuleTerm,Jelly Pit,ゼリーの穴ぐら
+ModuleTerm,Kobold Fort,コボルトの砦
 ModuleTerm,Labyrinth,迷宮
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,湖畔
+ModuleTerm,Lava Flow,溶岩流
+ModuleTerm,Lava Lake,溶岩湖
 ModuleTerm,level//depth,階層
 ModuleTerm,Lich Tower,リッチの塔
 ModuleTerm,Lost Chambers,古の実験室
 ModuleTerm,Ludios Cache,ローディウスの金庫室
-ModuleTerm,Medusa Lair,メデューサの棲み家
+ModuleTerm,Medusa Lair,メデューサの棲み処
 ModuleTerm,Mines,鉱山
 ModuleTerm,Minetown,鉱山の街
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,コケの穴ぐら
+ModuleTerm,Opus,Opus
+ModuleTerm,Orange Lair,オレンジドラゴンの棲み処
+ModuleTerm,Outpost,前哨基地
+ModuleTerm,Overland,地上
+ModuleTerm,Pig Farm,豚牧場
+ModuleTerm,Prison,牢獄
+ModuleTerm,Pudding Pit,プリンの穴ぐら
+ModuleTerm,Rat Pit,ネズミの穴ぐら
+ModuleTerm,Rebirth,復活
+ModuleTerm,Red Lair,レッドドラゴンの棲み処
+ModuleTerm,Respite,休息の場所
+ModuleTerm,River,川岸
+ModuleTerm,Ruby Mine,ルビー鉱山
+ModuleTerm,Ruins,廃墟
+ModuleTerm,Rupture,大地の裂け目
+ModuleTerm,Sapphire Mine,サファイア鉱山
+ModuleTerm,Scorpion Cave,サソリの巣窟
+ModuleTerm,Scorpion Lair,サソリの棲み処
+ModuleTerm,Scorpion Nest,サソリの巣穴
+ModuleTerm,Seal Farm,アザラシ牧場
+ModuleTerm,Sewers,下水道
+ModuleTerm,Sheep Farm,羊牧場
+ModuleTerm,Shimmer Lair,シマリングドラゴンの棲み処
+ModuleTerm,Shroom Maze,キノコ迷路
+ModuleTerm,Slime Pit,スライムの穴ぐら
+ModuleTerm,Snake Pit,ヘビの穴ぐら
 ModuleTerm,Sokoban,大倉庫
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,Spider Cave,クモの巣窟
+ModuleTerm,Spider Lair,クモの棲み処
+ModuleTerm,Spider Nest,クモの巣穴
+ModuleTerm,Station,中継地点
+ModuleTerm,Statue Henge,環状列像
+ModuleTerm,Stone Henge,ストーン・サークル
+ModuleTerm,Stonetown,石の街
+ModuleTerm,strange chicken,妙な鶏
+ModuleTerm,strange cow,妙な牛
+ModuleTerm,strange goat,妙な山羊
+ModuleTerm,strange horse,妙な馬
+ModuleTerm,strange pig,妙な豚
+ModuleTerm,strange seal,妙なアザラシ
+ModuleTerm,strange sheep,妙な羊
+ModuleTerm,Topaz Mine,トパーズ鉱山
+ModuleTerm,Tree Maze,緑の迷路
 ModuleTerm,trove,地下蔵
 ModuleTerm,Underbarracks,地下砦
-ModuleTerm,Underground,
+ModuleTerm,Underground,地下
 ModuleTerm,Underlimits,地下の尾根
 ModuleTerm,Underpeaks,地下の頂
 ModuleTerm,Undertown,地下の街
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,ホワイトドラゴンの棲み処
+ModuleTerm,Woodtown,森の街
+ModuleTerm,Worm Pit,ワームの穴ぐら
+ModuleTerm,Yellow Lair,イエロードラゴンの棲み処
 MotionPastName,anointed,を注いだ
 MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた
@@ -4127,7 +4127,7 @@ PropertyDescription,"Transform into another entity with all the advantages or di
 PropertyDescription,Using the power of your mind to move objects without physical interaction.,精神の力を用いて、触れずして物体を動かすことができる。
 PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,精神がねじ曲げられ、物品やモンスターの形が悪夢のような異様な姿に見える。
 PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,混乱し、物事を判断するのが非常に難しい状態。移動や攻撃の方向が意図しないものになることがあり、呪文を唱えることもできない。巻物を読む際に発音を間違い本来意図されていない効果が発生することになり、また集中力が続かず魔法書から呪文を学ぶこともできない。
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.",気分が悪くなると、混乱したときと同じように、まっすぐ歩いたり、高度な行動を実行することができなくなります。
+PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.",混乱した時の様に、真っ直ぐ歩いたり頭を使う行動ができなくなる。
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,何らかの、明らかにひどい病気に罹り、未知の症状と吐き気に苦しめられる。
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",眠りに落ち、穏やかな休息をとっている。モンスターでいっぱいのダンジョンで。
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,決して満たされることのない食欲に取りつかれている。
@@ -4447,7 +4447,7 @@ SkillName,crafting,製作
 SkillName,crossbow,クロスボウ
 SkillName,dart,ダーツ
 SkillName,disc,盤状武具
-SkillName,divination,探知魔法
+SkillName,divination,占術魔法
 SkillName,dual wielding,二刀流
 SkillName,enchantment,心霊魔法
 SkillName,evocation,具現魔法
@@ -4482,8 +4482,8 @@ SonicName,amulet,お守り
 SonicName,arf,オゥッオゥッ
 SonicName,armour,防具
 SonicName,baa,ベェー
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,鉄格子開閉
+SonicName,bars slamming,鉄格子落下
 SonicName,bell,ベル
 SonicName,birds,さえずり
 SonicName,bleat,メェー
@@ -4507,7 +4507,7 @@ SonicName,chirp,鳴く
 SonicName,clank,ガチャン
 SonicName,close door,扉を閉めた
 SonicName,cluck,コケッコー
-SonicName,clunk,
+SonicName,clunk,ガコン
 SonicName,coins,コイン
 SonicName,conclusion,ゲームオーバー
 SonicName,craft,トンテンカン
@@ -4521,7 +4521,7 @@ SonicName,eat,ムシャムシャ
 SonicName,electricity,電気
 SonicName,explosion,爆発
 SonicName,fizzle,失敗
-SonicName,flash,ピカッ
+SonicName,flash,パシャッ
 SonicName,flute,フルート
 SonicName,food,食料
 SonicName,footsteps,足音
@@ -4566,7 +4566,7 @@ SonicName,miss,ミス
 SonicName,moan,呪詛
 SonicName,moo,モー
 SonicName,neigh,ヒヒーン
-SonicName,oink,ブヒ
+SonicName,oink,ブヒー
 SonicName,open door,扉を開ける
 SonicName,pick axe,つるはし
 SonicName,pistol fire,ピストル発射
@@ -4657,7 +4657,7 @@ SpecialName,noble,貴族
 SpecialName,protagonist,主人公
 SpecialName,psychic,サイキック
 SpecialName,quantum,量子化
-SpecialName,scholar,学生
+SpecialName,scholar,学者
 SpecialName,shock,電撃属性
 SpecialName,skeleton,スケルトン
 SpecialName,vampire,吸血鬼
@@ -4672,12 +4672,12 @@ SpellName,blinking,転位
 SpellName,cancellation,魔法除去
 SpellName,charm,魅了
 SpellName,clairvoyance,千里眼
-SpellName,cone of cold,冷風
+SpellName,cone of cold,冷気流
 SpellName,confusion,混乱
 SpellName,create familiar,使い魔生成
 SpellName,crushing sphere,破砕する球
-SpellName,curing,治癒
-SpellName,darkness,闇
+SpellName,curing,快気
+SpellName,darkness,暗闇
 SpellName,deflection,防護
 SpellName,detect food,食料探知
 SpellName,detect monsters,モンスター探知
@@ -4691,7 +4691,7 @@ SpellName,fear,恐慌
 SpellName,finger of death,死神の指
 SpellName,fireball,爆炎球
 SpellName,flaming sphere,燃え立つ球
-SpellName,force bolt,力の球
+SpellName,force bolt,衝撃弾
 SpellName,freezing sphere,凍てつく球
 SpellName,full healing,超回復
 SpellName,haste,加速
@@ -4720,7 +4720,7 @@ SpellName,slow,減速
 SpellName,soaking sphere,濡れそぼつ球
 SpellName,summoning,召喚
 SpellName,telekinesis,念動力
-SpellName,teleport away,強制転移
+SpellName,teleport away,瞬間移動
 SpellName,toxic spray,酸の矢
 SpellName,turn undead,死霊退散
 SpellName,walling,造壁
