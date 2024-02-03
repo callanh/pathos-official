@@ -399,6 +399,10 @@ namespace Pathos
         E => E.Disarm(Codex.Attributes.dexterity)
       );
     }
+    internal static void SetCorpse(this EntityEditor Editor, Chance Chance)
+    {
+      Editor.SetCorpse(Chance, Item: null, Volatile: null);
+    }
 
     private static readonly Inv.DistinctList<Action> RecruitList;
     private static bool IsRecruiting;
@@ -602,17 +606,24 @@ namespace Pathos
         if (Entity.Weight < Weight.Zero)
           Record($"Entity {Entity.Name} weight base must be zero or more.");
 
-        if (Entity.IsDomestic && Entity.CorpseChance != Chance.Always)
-          Record($"Entity {Entity.Name} must always drop a corpse because it is domestic.");
+        if (Entity.Corpse == null)
+        {
+          Record($"Entity {Entity.Name} must specify corpse behaviour.");
+        }
+        else
+        {
+          if (Entity.IsDomestic && Entity.Corpse.Chance != Chance.Always)
+            Record($"Entity {Entity.Name} must always drop a corpse because it is domestic.");
 
-        if (Entity.CorpseChance != Chance.Never && Entity.CorpseItem == null)
-          Record($"Entity {Entity.Name} has a corpse so it must have a designated corpse item.");
+          if (Entity.Corpse.Chance != Chance.Never && Entity.Corpse.Item == null)
+            Record($"Entity {Entity.Name} has a corpse so it must have a designated corpse item.");
 
-        if (Entity.CorpseChance != Chance.Never && Entity.CorpseItem != null && Entity.Figure.Material != Entity.CorpseItem.Material)
-          Record($"Entity {Entity.Name} has a corpse so the figure and item must be of the same material.");
+          if (Entity.Corpse.Chance != Chance.Never && Entity.Corpse.Item != null && Entity.Figure.Material != Entity.Corpse.Item.Material)
+            Record($"Entity {Entity.Name} has a corpse so the figure and item must be of the same material.");
 
-        if (Entity.CorpseChance != Chance.Never && Entity.Figure.Material != Codex.Materials.animal && Entity.Figure.Material != Codex.Materials.vegetable)
-          Record($"Entity {Entity.Name} has a corpse so must be animal or vegetable material.");
+          if (Entity.Corpse.Chance != Chance.Never && Entity.Figure.Material != Codex.Materials.animal && Entity.Figure.Material != Codex.Materials.vegetable)
+            Record($"Entity {Entity.Name} has a corpse so must be animal or vegetable material.");
+        }
 
         if (Entity.Imitation && !Entity.Figure.Has(Codex.Anatomies.voice))
           Record($"Entity {Entity.Name} has imitation so it must have a voice.");
@@ -1055,7 +1066,7 @@ namespace Pathos
             if (ExpectDomestic && !CheckEntity.IsDomestic)
               Record($"Companion '{CheckEntity.Name}' must be declared as domestic");
 
-            if (CheckEntity.CorpseChance != Chance.Always)
+            if (CheckEntity.Corpse.Chance != Chance.Always)
               Record($"Companion '{CheckEntity.Name}' must always drop a corpse");
 
             if (CheckEntity.Genders.All(G => !G.Recognised))
@@ -1127,7 +1138,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Appetites.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new[] { E.ActiveGlyph, E.HoldGlyph }));
+      UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new [] { E.ActiveGlyph }.Union(E.HoldGlyphs)));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
 
@@ -1422,6 +1433,7 @@ namespace Pathos
       Base.Register<Class>();
       Base.Register<Companion>();
       Base.Register<Concealment>();
+      Base.Register<Corpse>();
       Base.Register<CustomPortrait>();
       Base.Register<Defence>();
       Base.Register<DefenceBias>();

@@ -2606,10 +2606,37 @@ namespace Pathos
     public readonly Glyph shroud;
 
     public readonly Glyph blaze;
+    public readonly Glyph blood;
     public readonly Glyph scorch;
     public readonly Glyph freeze;
     public readonly Glyph electricity;
     public readonly Glyph steam;
+    public readonly Glyph splatter_A;
+    public readonly Glyph splatter_B;
+    public readonly Glyph splatter_C;
+    public readonly Glyph splatter_D;
+    public readonly Glyph splatter_E;
+    public readonly Glyph splatter_F;
+    public readonly Glyph splatter_G;
+    public readonly Glyph splatter_H;
+    public readonly Glyph splatter_I;
+    public readonly Glyph splatter_J;
+    public readonly Glyph splatter_K;
+    public readonly Glyph splatter_L;
+    public readonly Glyph splatter_M;
+    public readonly Glyph splatter_N;
+    public readonly Glyph splatter_O;
+    public readonly Glyph splatter_P;
+    public readonly Glyph splatter_Q;
+    public readonly Glyph splatter_R;
+    public readonly Glyph splatter_S;
+    public readonly Glyph splatter_T;
+    public readonly Glyph splatter_U;
+    public readonly Glyph splatter_V;
+    public readonly Glyph splatter_W;
+    public readonly Glyph splatter_X;
+    public readonly Glyph splatter_Y;
+    public readonly Glyph splatter_Z;
 
     // specials.
     public readonly Glyph colossus;

@@ -79,8 +79,13 @@ namespace Pathos
             if (E.Figure.Has(Codex.Anatomies.mounted))
               E.Figure.MountSkill = Skills.riding;
 
-            if (E.CorpseChance != Chance.Never && E.CorpseItem == null)
-              E.SetCorpse(E.CorpseChance, E.Figure.Material == Codex.Materials.vegetable ? Codex.Items.vegetable_corpse : Codex.Items.animal_corpse);
+            if (E.Corpse.Chance != Chance.Never && E.Corpse.Item == null)
+            {
+              E.SetCorpse(
+                Chance: E.Corpse.Chance,
+                Item: E.Figure.Material == Codex.Materials.vegetable ? Codex.Items.vegetable_corpse : Codex.Items.animal_corpse,
+                Volatile: E.Figure.Has(Anatomies.blood) && E.Figure.Material == Codex.Materials.animal ? Volatiles.blood : null);
+            }
 
             if (E.Terrains == null)
               E.SetTerrain(Materials.air, Materials.water);
@@ -10342,7 +10347,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -10387,7 +10392,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -10431,7 +10436,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -10478,7 +10483,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -10522,18 +10527,18 @@ namespace Pathos
         E.Figure.Set
         (
           Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
+          Head: false,
+          Mind: false,
+          Voice: false,
+          Eyes: false,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
           Thermal: false,
           Blood: false,
           Mounted: false,
-          Amorphous: false
+          Amorphous: true
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
@@ -10576,7 +10581,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -10626,7 +10631,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -10670,7 +10675,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -10716,7 +10721,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,

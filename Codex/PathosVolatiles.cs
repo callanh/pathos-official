@@ -20,10 +20,10 @@ namespace Pathos
       var Properties = Codex.Properties;
       var Grounds = Codex.Grounds;
 
-      Volatile AddVolatile(string Name, Glyph ActiveGlyph, Glyph HoldGlyph, Sonic Sonic, Action<VolatileEditor> Action)
+      Volatile AddVolatile(string Name, Glyph ActiveGlyph, Glyph[] HoldGlyphArray, Sonic Sonic, Action<VolatileEditor> Action)
       {
         Debug.Assert(Name != null);
-        Debug.Assert(ActiveGlyph != null);
+        //Debug.Assert(ActiveGlyph != null);
         //Debug.Assert(HoldGlyph != null);
         Debug.Assert(Sonic != null);
 
@@ -31,14 +31,14 @@ namespace Pathos
         {
           S.Name = Name;
           S.ActiveGlyph = ActiveGlyph;
-          S.HoldGlyph = HoldGlyph;
+          S.HoldGlyphs = HoldGlyphArray ?? Array.Empty<Glyph>();
           S.Sonic = Sonic;
 
           CodexRecruiter.Enrol(() => Action(S));
         });
       }
 
-      blaze = AddVolatile("blaze", Glyphs.blaze, Glyphs.scorch, Sonics.burn, S => // TODO: rename 'flames'?
+      blaze = AddVolatile("blaze", Glyphs.blaze, new[] { Glyphs.scorch }, Sonics.burn, S => // TODO: rename 'flames'?
       {
         S.Apply.Harm(Elements.fire, 2.d6());
 
@@ -58,6 +58,52 @@ namespace Pathos
         S.AddReaction(Chance.Always, Elements.cold, T =>
         {
           T.ExtinguishSpill(blaze);
+        });
+      });
+
+      blood = AddVolatile("blood", Glyphs.blood, new[] 
+      {
+        Glyphs.splatter_A,
+        Glyphs.splatter_B,
+        Glyphs.splatter_C,
+        Glyphs.splatter_D,
+        Glyphs.splatter_E,
+        Glyphs.splatter_F,
+        Glyphs.splatter_G,
+        Glyphs.splatter_H,
+        Glyphs.splatter_I,
+        Glyphs.splatter_J,
+        Glyphs.splatter_K,
+        Glyphs.splatter_L,
+        Glyphs.splatter_M,
+        Glyphs.splatter_N,
+        Glyphs.splatter_O,
+        Glyphs.splatter_P,
+        Glyphs.splatter_Q,
+        Glyphs.splatter_R,
+        Glyphs.splatter_S,
+        Glyphs.splatter_T,
+        Glyphs.splatter_U,
+        Glyphs.splatter_V,
+        Glyphs.splatter_W,
+        Glyphs.splatter_X,
+        Glyphs.splatter_Y,
+        Glyphs.splatter_Z,
+      }, Sonics.splat, S =>
+      {
+        S.Apply.WhenTargetFloor(Grounds.lava, T =>
+        {
+          T.RemoveSpill(blood);
+        });
+
+        S.Apply.WhenTargetFloor(Grounds.water, T =>
+        {
+          T.RemoveSpill(blood);
+        });
+
+        S.Apply.WhenTargetFloor(Grounds.chasm, T =>
+        {
+          T.RemoveSpill(blood);
         });
       });
 
@@ -107,6 +153,7 @@ namespace Pathos
 #endif
 
     public readonly Volatile blaze;
+    public readonly Volatile blood;
     public readonly Volatile electricity;
     public readonly Volatile freeze;
     public readonly Volatile steam;
