@@ -534,11 +534,21 @@ namespace Pathos
 
 #if DEBUG
       // check that all squares are accessible.
-      // NOTE: ruins can generate an inaccessible boulder in the cross of a wall.
-      var ValidSet = OverlandMap.GetSquares().Where(S => S.Floor != null && (S.Boulder == null || !S.GetNeighbourSquares().All(T => T.Wall != null))).ToHashSetX();
+
+      // TODO: lava/chasm areas might lead to impassable squares (but some in the middle of a ravine/lake are intentional).
+
+      //var ImpassableGroundArray = new[] { Codex.Grounds.lava, Codex.Grounds.chasm };
+      bool IsPassable(Square Square) => 
+        Square.Floor != null 
+        //&& (!ImpassableGroundArray.Contains(Square.Floor.Ground) || !Square.IsSunken())
+        ;
+
+      var ValidSet = OverlandMap.GetSquares().Where(S =>
+        IsPassable(S) &&
+        (S.Boulder == null || !S.GetNeighbourSquares().All(T => T.Wall != null))).ToHashSetX(); // NOTE: ruins can generate an inaccessible boulder in the cross of a wall.
       var VisitSet = new HashSet<Square>(); // capacity constructor not available on netstandard20
 
-      OverlandMap.Level.DownSquare.FloodNeighbour(S => S.Floor != null && VisitSet.Add(S));
+      OverlandMap.Level.DownSquare.FloodNeighbour(S => IsPassable(S) && VisitSet.Add(S));
 
       if (VisitSet.Count != ValidSet.Count)
       {
