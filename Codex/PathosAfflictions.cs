@@ -38,6 +38,7 @@ namespace Pathos
         A.Taint = Inv.Colour.DarkSalmon.Opacity(0.50F);
         A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.giant_crab));
         //A.RemoveLoot.AddKit(Dice.One, Codex.Items.egg); // TODO: drop crab egg.
+        //A.RequiresAnatomy(Codex.Anatomies.crotch);
       });
       /*
       insomnia = AddAffliction("insomnia", ".", Glyphs.insomnia_affliction, Sonics.polymorph, A =>
@@ -84,6 +85,7 @@ namespace Pathos
         A.Taint = Inv.Colour.Brown.Opacity(0.50F);
         A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.giant_louse));
         //A.RemoveLoot.AddKit(Dice.One, Codex.Items.egg); // TODO: drop louse egg.
+        A.RequiresAnatomy(Codex.Anatomies.blood);
       });
 
       poisoning = AddAffliction("poisoning", "Deadly venom courses through your veins.", Glyphs.poisoning_affliction, Sonics.polymorph, A =>
@@ -92,6 +94,7 @@ namespace Pathos
         A.Taint = Inv.Colour.Red.Opacity(0.50F);
         A.SetResistance(Elements.poison);
         A.SetSymptom(Chance.OneIn2, P => P.Harm(Elements.poison, 1.d3()));
+        A.RequiresAnatomy(Codex.Anatomies.blood);
       });
 
       rabies = AddAffliction("rabies", "This viral disease causes inflammation of the brain and is spread by infected animals.", Glyphs.rabies_affliction, Sonics.polymorph, A =>
@@ -115,6 +118,7 @@ namespace Pathos
             R.Add(1, S => S.DecreaseAbility(Attributes.constitution, Dice.One));
           });
         });
+        A.RequiresAnatomy(Codex.Anatomies.blood);
       });
 
       reflux = AddAffliction("reflux", "You have a dreadful case of stomach acid.", Glyphs.reflux_affliction, Sonics.polymorph, A =>
@@ -122,6 +126,7 @@ namespace Pathos
         A.Taint = Inv.Colour.LightPink.Opacity(0.50F);
         A.SetResistance(Elements.acid);
         A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.acid_blob));
+        //A.RequiresAnatomy(Codex.Anatomies.stomach);
       });
 
       sliming = AddAffliction("sliming", "Your skin is sickly green and something is very wrong inside your stomach.", Glyphs.sliming_affliction, Sonics.polymorph, A =>
@@ -130,6 +135,7 @@ namespace Pathos
         A.Taint = Inv.Colour.LightGreen.Opacity(0.50F);
         A.SetImmunity(Properties.vitality);
         A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(Dice.One, Codex.Entities.green_slime));
+        //A.RequiresAnatomy(Codex.Anatomies.stomach);
       });
 
       worms = AddAffliction("worms", "There is a gnawing sensation from deep inside your stomach.", Glyphs.worms_affliction, Sonics.polymorph, A =>
@@ -138,6 +144,7 @@ namespace Pathos
         A.Taint = Inv.Colour.Tan.Opacity(0.50F);
         A.SetSymptom(Chance.OneIn100, P => P.ApplyTransient(Properties.hunger, 5.d10()));
         A.SetSymptom(Chance.OneIn100, P => P.CreateEntity(1.d3(), Codex.Entities.baby_long_worm));
+        //A.RequiresAnatomy(Codex.Anatomies.stomach);
       });
     }
 #endif
