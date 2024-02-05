@@ -5382,6 +5382,10 @@ namespace Pathos
         E.Startup.SetTalent(Properties.blindness);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d12()); // +8 from str.
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
+        {
+          R.Apply.CreateSpill(Codex.Volatiles.blood, Dice.Fixed(10));
+        });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Dice.One, Chance.Always, Items.huge_chunk_of_meat);
       });
@@ -14688,6 +14692,10 @@ namespace Pathos
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +4 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
+        E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
+        {
+          R.Apply.CreateSpill(Codex.Volatiles.blood, Dice.Fixed(10));
+        });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
           Table.Add(1, A => A.MajorResistance(Elements.fire));
@@ -33703,7 +33711,7 @@ namespace Pathos
           Limbs: true,
           Feet: false,
           Thermal: true,
-          Blood: true,
+          Blood: false, // sap is not blood.
           Mounted: false,
           Amorphous: false
         );

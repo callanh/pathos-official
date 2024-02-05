@@ -91,6 +91,8 @@ namespace Pathos
         Glyphs.splatter_Z,
       }, Sonics.splat, S =>
       {
+        S.Apply.ApplyTransient(Properties.fumbling, 1.d4() + 10); // TODO: for an active blood spray, needs an animated tile.
+        
         S.Apply.WhenTargetFloor(Grounds.lava, T =>
         {
           T.RemoveSpill(blood);

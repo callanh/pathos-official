@@ -661,6 +661,9 @@ namespace Pathos
         else if (!Entity.Figure.Has(Codex.Anatomies.mounted) && Entity.Figure.MountSkill != null)
           Record($"Entity {Entity.Name} that cannot be mounted is not expected to have a mount skill.");
 
+        if (Entity.Figure.Material != Codex.Materials.animal && Entity.Figure.Has(Codex.Anatomies.blood))
+          Record($"Entity {Entity.Name} is not an animal so should not have blood.");
+
         if ((Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill == null)
           Record($"Entity {Entity.Name} is expected to have a combat skill.");
         else if (!(Entity.IsBase || Entity.IsAnimate) && Entity.Figure.CombatSkill != null)
