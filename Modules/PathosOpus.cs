@@ -538,8 +538,8 @@ namespace Pathos
       // TODO: lava/chasm areas might lead to impassable squares (but some in the middle of a ravine/lake are intentional).
 
       //var ImpassableGroundArray = new[] { Codex.Grounds.lava, Codex.Grounds.chasm };
-      bool IsPassable(Square Square) => 
-        Square.Floor != null 
+      bool IsPassable(Square Square) =>
+        Square.Floor != null
         //&& (!ImpassableGroundArray.Contains(Square.Floor.Ground) || !Square.IsSunken())
         ;
 
@@ -1836,8 +1836,6 @@ namespace Pathos
 
             var SectorZone = BelowMap.AddZone();
             SectorZone.SetDifficulty(BelowMap.Difficulty + Sector.Distance);
-            SectorZone.SetAccessRestricted(true);
-            //SectorZone.SetSpawnRestricted(true); // map is sealed.
 
             foreach (var BelowSquare in BelowMap.GetCircleInnerSquares(SectorCircle).Where(S => S.Wall == null))
             {
@@ -2046,7 +2044,10 @@ namespace Pathos
           // prepare the map.
           Generator.RepairMap(BelowMap, BelowMap.Region);
 
-          BelowMap.AddArea(BelowName).AddMapZones();
+          var BelowArea = BelowMap.AddArea(BelowName);
+          BelowArea.SetAccessRestricted(true);
+          //BelowArea.SetSpawnRestricted(true); // map is sealed.
+          BelowArea.AddMapZones();
         }
 
         BuildStop();
@@ -4266,6 +4267,7 @@ namespace Pathos
           }
         }
 
+        // no weird gaps.
         Maker.RepairGaps(FortMap, FortRegion, FortBarrier, IsLit: true);
 
         // sanctum walls.
@@ -4286,6 +4288,9 @@ namespace Pathos
           {
             Generator.ReplaceFloor(FortSquare, Codex.Grounds.dirt);
             FortZone.AddSquare(FortSquare);
+
+            if (FortSquare.GetNeighbourSquares().All(S => S.Wall != null))
+              Generator.PlaceBoulder(FortSquare, Codex.Blocks.clay_boulder, IsRigid: true);
           }
           else if (FortSquare.Wall?.Barrier == FortBarrier)
           {
@@ -4305,7 +4310,7 @@ namespace Pathos
         // fill with kobolds.
         var KoboldHorde = Codex.Hordes.kobold;
         foreach (var HordeIndex in (FortZone.Squares.Count / KoboldHorde.GetPotential().Maximum).NumberSeries())
-          Generator.PlaceHorde(KoboldHorde, 0, Section.MaximumDifficulty, () => FortZone.Squares.Where(S => S != MiddleSquare && S.Character == null && S.Wall == null && S.Trap == null).GetRandomOrNull());
+          Generator.PlaceHorde(KoboldHorde, 0, Section.MaximumDifficulty, () => FortZone.Squares.Where(S => S != MiddleSquare && S.Character == null && S.Boulder == null && S.Wall == null && S.Trap == null).GetRandomOrNull());
 
         var SectionDifficulty = Section.Distance;
 

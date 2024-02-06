@@ -47,7 +47,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K => 
         {
-          K.DecreaseKarma(Dice.Fixed(5));
+          //K.DecreaseKarma(Dice.Fixed(1)); // TODO: until karma loss from vandalism of gates is also implemented.
         });
 
         B.SetBarrier(Codex.Barriers.cave_wall);
@@ -91,7 +91,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
-          K.DecreaseKarma(Dice.Fixed(5));
+          K.DecreaseKarma(Dice.Fixed(10));
         });
 
         B.SetBarrier(Codex.Barriers.jade_wall);
@@ -144,7 +144,7 @@ namespace Pathos
 
         B.AddBreak(1, Codex.Sonics.broken_boulder, null, K =>
         {
-          K.DecreaseKarma(Dice.Fixed(5));
+          //K.DecreaseKarma(Dice.Fixed(1)); // TODO: until karma loss from vandalism of gates is also implemented.
         });
 
         B.SetBarrier(Codex.Barriers.stone_wall);
