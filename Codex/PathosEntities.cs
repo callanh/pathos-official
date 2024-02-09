@@ -16608,8 +16608,7 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetSkill(Qualifications.master, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.literacy, Skills.abjuration, Skills.necromancy, Skills.conjuration, Skills.evocation, Skills.enchantment);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.Startup.AddGrimoire(Dice.One, Spells.confusion);

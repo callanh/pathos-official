@@ -459,7 +459,7 @@ BarrierName,cave wall,洞穴墙壁
 BarrierName,hell brick,地狱砖
 BarrierName,iron bars,铁栅栏
 BarrierName,jade wall,玉墙
-BarrierName,sewer wall,
+BarrierName,sewer wall,下水道墙
 BarrierName,shroom,蘑菇墙
 BarrierName,stone wall,石墙
 BarrierName,tree,树
@@ -1020,14 +1020,14 @@ EffectType,convert boulder,转换巨石
 EffectType,convert door,转换门
 EffectType,convert fixture,转换固定物
 EffectType,convert floor,转换地面
-EffectType,convert spill,转换元素场
+EffectType,convert spill,转换环境效果
 EffectType,convert wall,转换墙壁
 EffectType,create boulder,制造巨石
 EffectType,create fixture,制造固定物
 EffectType,create golem,制造魔像
 EffectType,create horde,制造生物群
 EffectType,create nook,制造角落
-EffectType,create spill,制造元素场
+EffectType,create spill,制造环境效果
 EffectType,create trap,制造陷阱
 EffectType,create wall,制造墙壁
 EffectType,decapitate,斩首
@@ -1044,7 +1044,7 @@ EffectType,enchant asset,附魔物件
 EffectType,engulf,吞咽
 EffectType,enlightenment,启蒙
 EffectType,exchange,交换
-EffectType,extinguish spill,扑灭元素场
+EffectType,extinguish spill,消除环境效果
 EffectType,gain level,升级
 EffectType,gain skill,获得技能
 EffectType,genocide,灭绝
@@ -1073,7 +1073,7 @@ EffectType,raise dead,复活死尸
 EffectType,recall,唤回队友
 EffectType,release,释放
 EffectType,remove curse,去除诅咒
-EffectType,remove spill,移除元素场
+EffectType,remove spill,移除环境效果
 EffectType,remove transient,去除短期状态
 EffectType,replicate asset,复制物件
 EffectType,restock,重新进货
@@ -1353,9 +1353,9 @@ EntityName,dwarf zombie,矮人僵尸
 EntityName,Earendil,埃兰迪尔
 EntityName,earth binder,大地使者
 EntityName,earth elemental,地元素
-EntityName,earth maker,地震法师
-EntityName,earth seeker,泥土侍徒
-EntityName,earth sphere,地球
+EntityName,earth maker,大地法师
+EntityName,earth seeker,大地侍徒
+EntityName,earth sphere,泥岩球
 EntityName,echo,灵体
 EntityName,efreeti,火巨灵
 EntityName,electric eel,电鳗
@@ -2189,7 +2189,7 @@ GroundName,metal floor,金属地面
 GroundName,moss,苔藓丛
 GroundName,obsidian floor,黑曜石地面
 GroundName,sand,沙地
-GroundName,sewer floor,
+GroundName,sewer floor,下水道地面
 GroundName,snow,雪地
 GroundName,stone floor,岩石地面
 GroundName,stone path,岩石走廊
@@ -2451,7 +2451,7 @@ ItemName,book of clairvoyance,洞察咒语书
 ItemName,book of cone of cold,严寒之锥咒语书
 ItemName,book of confusion,混乱咒语书
 ItemName,book of create familiar,侍灵制造咒语书
-ItemName,book of crushing sphere,地球侍灵之书
+ItemName,book of crushing sphere,泥岩球侍灵
 ItemName,book of curing,疾病治愈咒语书
 ItemName,book of darkness,黑暗咒语书
 ItemName,book of deflection,保护咒语书
@@ -2801,7 +2801,7 @@ ItemName,Prudentia,智慧之镜
 ItemName,quarterstaff,短杖
 ItemName,ranseur,三叉矛
 ItemName,rapier,细剑
-ItemName,Ravenbow,掠夺者
+ItemName,Ravenbow,鸦羽弓
 ItemName,red dragon scale mail,红色龙鳞甲
 ItemName,red dragon scales,红色龙鳞
 ItemName,red glass bauble,红色玻璃装饰品
@@ -3259,7 +3259,7 @@ LiteralText,CREATE HORDE,创造生物群
 LiteralText,CREATE ITEM,创造物品
 LiteralText,CREATE SHOP,创造商店
 LiteralText,CREATE SHRINE,创造遗迹
-LiteralText,CREATE SPILL,创造元素场
+LiteralText,CREATE SPILL,创造环境效果
 LiteralText,CREATE TRAP,创造陷阱
 LiteralText,CREATE WALL,创造墙壁
 LiteralText,Create which direction?,向哪个方向创造？
@@ -3808,7 +3808,7 @@ LiteralText,Vanity,自恋，请
 LiteralText,VIEW,查看
 LiteralText,Visit the website,访问官网
 LiteralText,VOID SPACE,虚空
-LiteralText,VOLATILES,元素场
+LiteralText,VOLATILES,环境效果
 LiteralText,vulnerable to,易受伤害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
@@ -3905,7 +3905,7 @@ ModuleTerm,cellar,地窖
 ModuleTerm,Cemetery,墓园
 ModuleTerm,Chicken Farm,养鸡场
 ModuleTerm,Cow Farm,牧牛场
-ModuleTerm,Crater,环形山
+ModuleTerm,Crater,陨石坑
 ModuleTerm,Crypt,地穴
 ModuleTerm,Crystal Henge,水晶柱林
 ModuleTerm,Deep Lair,巢穴深处
@@ -3972,7 +3972,7 @@ ModuleTerm,Scorpion Cave,蝎子洞穴
 ModuleTerm,Scorpion Lair,蝎子巢穴
 ModuleTerm,Scorpion Nest,蝎子窝
 ModuleTerm,Seal Farm,海豹农场
-ModuleTerm,Sewers,
+ModuleTerm,Sewers,下水道
 ModuleTerm,Sheep Farm,绵羊农场
 ModuleTerm,Shimmer Lair,闪光龙穴
 ModuleTerm,Shroom Maze,蘑菇迷宫
@@ -4633,7 +4633,7 @@ SpecialDescription,"Being unusually tall and heavy for your kind, you move a bit
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",由于受到狼人诅咒，你会变成可怕的狼形怪物。
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,你被造物主所遗弃，只能以活人的生命精华为食。
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,上天赐予你感知难以察觉的怪物的能力，但是你要承受无尽的饥饿。
-SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.",与地球侍灵高度契合，他们可以召唤地球侍灵为他们而战。
+SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.",与泥岩球侍灵高度契合，他们可以召唤泥岩球侍灵为他们而战。
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.",与火焰球侍灵高度契合，他们可以召唤火焰球侍灵为他们而战。
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.",与冰冻球侍灵高度契合，他们可以召唤冰冻球侍灵为他们而战。
 SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.",与闪电球侍灵高度契合，他们可以召唤闪电球侍灵为他们而战。
@@ -4772,7 +4772,7 @@ TraversalPresentName,ascend,向上移动
 TraversalPresentName,descend,向下移动
 TraversalPresentName,travel,行进
 VolatileName,blaze,火焰
-VolatileName,blood,
+VolatileName,blood,血
 VolatileName,electricity,感电
 VolatileName,freeze,冰雾
 VolatileName,steam,蒸汽
