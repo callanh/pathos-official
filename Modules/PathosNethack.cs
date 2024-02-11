@@ -3422,7 +3422,9 @@ namespace Pathos
 
                   if (KingCharacter != null)
                   {
-                    Generator.PromoteCharacter(KingCharacter, MinesMap.Difficulty - KingCharacter.Level + 5);
+                    var KingPromotion = MinesMap.Difficulty - KingCharacter.Level + 5;
+                    if (KingPromotion > 0)
+                      Generator.PromoteCharacter(KingCharacter, KingPromotion);
 
                     var Properties = Codex.Properties;
                     var Elements = Codex.Elements;
@@ -3591,7 +3593,9 @@ namespace Pathos
               }
               else if (UnderCharacter.Entity == Codex.Entities.dwarf_king)
               {
-                Generator.PromoteCharacter(UnderCharacter, UnderMap.Difficulty - UnderCharacter.Level + 5);
+                var UnderPromotion = UnderMap.Difficulty - UnderCharacter.Level + 5;
+                if (UnderPromotion > 0)
+                  Generator.PromoteCharacter(UnderCharacter, UnderPromotion);
 
                 var Properties = Codex.Properties;
                 var Elements = Codex.Elements;
@@ -3825,7 +3829,9 @@ namespace Pathos
 
         if (BossCharacter != null)
         {
-          Generator.PromoteCharacter(BossCharacter, ChamberMap.Difficulty - BossCharacter.Level + 5);
+          var BossPromotion = ChamberMap.Difficulty - BossCharacter.Level + 5;
+          if (BossPromotion > 0)
+            Generator.PromoteCharacter(BossCharacter, BossPromotion);
 
           var Properties = Codex.Properties;
           var Elements = Codex.Elements;
@@ -3997,7 +4003,9 @@ namespace Pathos
 
       if (BossCharacter != null)
       {
-        Generator.PromoteCharacter(BossCharacter, EntranceMap.Difficulty - BossCharacter.Level + 5);
+        var BossPromotion = EntranceMap.Difficulty - BossCharacter.Level + 5;
+        if (BossPromotion > 0)
+          Generator.PromoteCharacter(BossCharacter, BossPromotion);
 
         var Properties = Codex.Properties;
         var Elements = Codex.Elements;
@@ -4547,7 +4555,9 @@ namespace Pathos
               var FortCharacter = FortSquare.Character;
               if (FortCharacter != null)
               {
-                Generator.PromoteCharacter(FortCharacter, FortMap.Difficulty - FortCharacter.Level + 5);
+                var FortPromotion = FortMap.Difficulty - FortCharacter.Level + 5;
+                if (FortPromotion > 0)
+                  Generator.PromoteCharacter(FortCharacter, FortPromotion);
 
                 var Properties = Codex.Properties;
                 var Elements = Codex.Elements;
@@ -4917,7 +4927,9 @@ namespace Pathos
             // the elf king is powerful.
             var KingCharacter = KingdomSquare.Character;
 
-            Generator.PromoteCharacter(KingCharacter, KingdomMap.Difficulty - KingCharacter.Level + 5);
+            var KingPromotion = KingdomMap.Difficulty - KingCharacter.Level + 5;
+            if (KingPromotion > 0)
+              Generator.PromoteCharacter(KingCharacter, KingPromotion);
 
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;
@@ -5143,7 +5155,9 @@ namespace Pathos
           var LairCharacter = LairSquare.Character;
           if (LairCharacter != null && LairCharacter.Entity == Codex.Entities.medusa)
           {
-            Generator.PromoteCharacter(LairCharacter, LairMap.Difficulty - LairCharacter.Level + 5);
+            var LairPromotion = LairMap.Difficulty - LairCharacter.Level + 5;
+            if (LairPromotion > 0)
+              Generator.PromoteCharacter(LairCharacter, LairPromotion);
 
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;
@@ -5393,7 +5407,9 @@ namespace Pathos
           var TowerCharacter = TowerSquare.Character;
           if (TowerCharacter != null && TowerCharacter.Entity == Codex.Entities.dracolich)
           {
-            Generator.PromoteCharacter(TowerCharacter, TowerDifficulty - TowerCharacter.Level + 5);
+            var TowerPromotion = TowerDifficulty - TowerCharacter.Level + 5;
+            if (TowerPromotion > 0)
+              Generator.PromoteCharacter(TowerCharacter, TowerPromotion);
 
             var Properties = Codex.Properties;
             var Elements = Codex.Elements;

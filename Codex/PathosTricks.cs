@@ -86,24 +86,19 @@ namespace Pathos
         A.ArriveEntity(Dice.One, Sonics.burble, Kinds.blob);
       });
 
+      escaping_mummies = AddTrick("escaping mummies", A =>
+      {
+        A.ArriveEntity(Dice.One, Sonics.moan, Kinds.mummy);
+      });
+
       hatching_eggs = AddTrick("hatching eggs", A =>
       {
         A.Hatch();
       });
 
-      scuttling_insects = AddTrick("scuttling insects", A =>
+      instant_death = AddTrick("instant death", A =>
       {
-        A.ArriveEntity(Dice.One, Sonics.scuttle, Kinds.insect);
-      });
-
-      summoning_demons = AddTrick("summoning demons", A =>
-      {
-        A.ArriveEntity(Dice.One, Sonics.chant, Kinds.demon);
-      });
-
-      escaping_mummies = AddTrick("escaping mummies", A =>
-      {
-        A.ArriveEntity(Dice.One, Sonics.moan, Kinds.mummy);
+        A.Death(Element: null, KindArray: null, Codex.Strikes.death, DeathSupport.deathray);
       });
 
       leaking_gas = AddTrick("leaking gas", A =>
@@ -114,6 +109,16 @@ namespace Pathos
       living_dead = AddTrick("living dead", A =>
       {
         A.AnimateRevenants(Properties.rage);
+      });
+
+      scuttling_insects = AddTrick("scuttling insects", A =>
+      {
+        A.ArriveEntity(Dice.One, Sonics.scuttle, Kinds.insect);
+      });
+
+      summoning_demons = AddTrick("summoning demons", A =>
+      {
+        A.ArriveEntity(Dice.One, Sonics.chant, Kinds.demon);
       });
 
       surrounding_horde = AddTrick("surrounding horde", A =>
@@ -246,6 +251,7 @@ namespace Pathos
     public readonly Trick escaping_mummies;
     public readonly Trick emerging_blobs;
     public readonly Trick hatching_eggs;
+    public readonly Trick instant_death;
     public readonly Trick scuttling_insects;
     public readonly Trick marble_paving;
     public readonly Trick mobilise_boulder;

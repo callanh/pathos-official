@@ -2466,7 +2466,7 @@ namespace Pathos
             {
               var DoorSquare = CryptSquare.GetAdjacentSquares().Where(S => S.Floor != null).GetRandomOrNull();
 
-              if (DoorSquare != null)
+              if (DoorSquare != null && DoorSquare.Passage == null)
               {
                 Generator.PlaceCharacter(CryptSquare, Codex.Entities.skeleton);
                 Generator.PlaceLockedVerticalDoor(DoorSquare, CryptVariant.Gate, SecretBarrier: CryptVariant.Barrier);
@@ -3084,7 +3084,7 @@ namespace Pathos
         var Strange = Chance.Always.Hit();
         var SuspicousEntity = FarmVariant.EntityList[0]; // first entity is the Strange one.
         var StrangeName = Generator.EscapedModuleTerm(FarmVariant.StrangeName);
-        void ActSuspicous(Character StrangeCharacter)
+        void ActStrange(Character StrangeCharacter)
         {
           Debug.Assert(StrangeCharacter.Entity == SuspicousEntity);
 
@@ -3095,8 +3095,9 @@ namespace Pathos
           //StrangeCharacter.AcquireTalent(Codex.Properties.cannibalism);
           //StrangeCharacter.SetPunished(Codex.Punishments.gluttony);
 
-          if (FarmClearing.Section.Distance + 5 > StrangeCharacter.Level)
-            Generator.PromoteCharacter(StrangeCharacter, FarmClearing.Section.Distance + 5 - StrangeCharacter.Level);
+          var StrangePromotion = FarmClearing.Section.Distance + 5 - StrangeCharacter.Level;
+          if (StrangePromotion > 0)
+            Generator.PromoteCharacter(StrangeCharacter, StrangePromotion);
         }
 
         // field.
@@ -3126,7 +3127,7 @@ namespace Pathos
 
                 if (Middle && Strange)
                 {
-                  ActSuspicous(FarmCharacter);
+                  ActStrange(FarmCharacter);
 
                   Generator.ResidentSquare(FarmCharacter, FarmSquare);
                 }
@@ -3197,7 +3198,7 @@ namespace Pathos
               var StrangeCharacter = SecretSquare.Character;
               if (StrangeCharacter != null)
               {
-                ActSuspicous(StrangeCharacter);
+                ActStrange(StrangeCharacter);
 
                 Generator.HostileCharacter(StrangeCharacter);
 
@@ -3216,8 +3217,13 @@ namespace Pathos
           Generator.PlacePassage(RiftSquare, Codex.Portals.rift, MiddleSquare);
 
           var SecretScript = SecretCharacter.InsertScript();
+
+          // connect the transportal, send the strange animal to the secret level and then kill them so there is room to arrive.
           SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.connecting_portal).SetTarget(RiftSquare);
           SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.transport_candidate).SetSource(SecretCharacter).SetTarget(RiftSquare);
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.instant_death).SetSource(SecretCharacter);
+
+          // connect the rift if the strange animal is killed.
           SecretScript.Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetTarget(RiftSquare);
 
           Generator.RepairMap(SecretMap, SecretMap.Region);

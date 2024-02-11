@@ -34,11 +34,13 @@ namespace Pathos
           S.HoldGlyphs = HoldGlyphArray ?? Array.Empty<Glyph>();
           S.Sonic = Sonic;
 
+          Debug.Assert(S.HoldGlyphs.IsDistinct(), "HoldGlyphs must be distinct.");
+
           CodexRecruiter.Enrol(() => Action(S));
         });
       }
 
-      blaze = AddVolatile("blaze", Glyphs.blaze, new[] { Glyphs.scorch }, Sonics.burn, S => // TODO: rename 'flames'?
+      blaze = AddVolatile("blaze", Glyphs.blaze, new[] { Glyphs.scorch }, Sonics.burn, S =>
       {
         S.Apply.Harm(Elements.fire, 2.d6());
 
@@ -51,14 +53,8 @@ namespace Pathos
         //  T.RemoveSpill(blaze);
         //});
 
-        S.AddReaction(Chance.Always, Elements.water, T =>
-        {
-          T.ExtinguishSpill(blaze);
-        });
-        S.AddReaction(Chance.Always, Elements.cold, T =>
-        {
-          T.ExtinguishSpill(blaze);
-        });
+        S.AddReaction(Chance.Always, Elements.water, T => T.ExtinguishSpill(blaze));
+        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishSpill(blaze));
       });
 
       blood = AddVolatile("blood", Glyphs.blood, new[] 
@@ -92,21 +88,14 @@ namespace Pathos
       }, Sonics.splat, S =>
       {
         S.Apply.ApplyTransient(Properties.fumbling, 1.d4() + 10); // TODO: for an active blood spray, needs an animated tile.
-        
-        S.Apply.WhenTargetFloor(Grounds.lava, T =>
-        {
-          T.RemoveSpill(blood);
-        });
 
-        S.Apply.WhenTargetFloor(Grounds.water, T =>
-        {
-          T.RemoveSpill(blood);
-        });
+        // blood can't exist on these grounds.        
+        S.Apply.WhenTargetFloor(Grounds.lava, T => T.RemoveSpill(blood));
+        S.Apply.WhenTargetFloor(Grounds.water, T => T.RemoveSpill(blood));
+        S.Apply.WhenTargetFloor(Grounds.chasm, T => T.RemoveSpill(blood));
 
-        S.Apply.WhenTargetFloor(Grounds.chasm, T =>
-        {
-          T.RemoveSpill(blood);
-        });
+        // water washes away blood.
+        S.AddReaction(Chance.Always, Elements.water, T => T.RemoveSpill(blood));
       });
 
       electricity = AddVolatile("electricity", Glyphs.electricity, null, Sonics.electricity, S =>
@@ -127,16 +116,12 @@ namespace Pathos
         //  T.RemoveSpill(freeze);
         //});
 
-        S.Apply.WhenTargetFloor(Grounds.lava, T =>
-        {
-          T.RemoveSpill(freeze);
-        });
+        S.Apply.WhenTargetFloor(Grounds.lava, T => T.RemoveSpill(freeze));
 
-        S.AddReaction(Chance.Always, Elements.fire, T =>
-        {
-          T.ExtinguishSpill(freeze);
-        });
+        S.AddReaction(Chance.Always, Elements.fire, T => T.ExtinguishSpill(freeze));
       });
+
+      // TODO: 'puddle' of water?
 
       steam = AddVolatile("steam", Glyphs.steam, null, Sonics.gas, S =>
       {
@@ -144,10 +129,7 @@ namespace Pathos
         S.Apply.ApplyTransient(Properties.blindness, 1.d4() + 2);
         S.Apply.WhenChance(Chance.OneIn20, V => V.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper)); // potions & books are 'closed' so won't be directly affected by steam.
 
-        S.AddReaction(Chance.Always, Elements.cold, T =>
-        {
-          T.ExtinguishSpill(steam);
-        });
+        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishSpill(steam));
       });
 
       // TODO: brambles/swarm/oil/mucous/blood/smoke/pollution? what about positive fields such as life/mana recovery?
