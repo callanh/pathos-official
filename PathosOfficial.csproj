@@ -147,6 +147,6 @@
   
   <!-- Make the Atlases and Albums -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net48|OpenSource' ">
-    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
+    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; &quot;$(ProjectDir.TrimEnd('\'))&quot; &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
   </Target>
 </Project>
