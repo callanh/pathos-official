@@ -153,6 +153,7 @@ namespace Pathos
     public const string PigFarm = "Pig Farm";
     public const string SealFarm = "Seal Farm";
     public const string SheepFarm = "Sheep Farm";
+    public const string StrangeFarm = "Strange Farm";
     public const string StrangeChicken = "strange chicken";
     public const string StrangeCow = "strange cow";
     public const string StrangeGoat = "strange goat";
@@ -309,13 +310,54 @@ namespace Pathos
 
       // unassigned unique entities still need to be generated so they can be transported into the finale arena.
       var UnassignedSquare = OverlandMap.Midpoint;
-      foreach (var Good in new[] { Codex.Entities.Earendil, Codex.Entities.Thorin, Codex.Entities.Twoflower, Codex.Entities.Pelias, Codex.Entities.Orion, Codex.Entities.Norn, Codex.Entities.Neferet, Codex.Entities.Van_Helsing, Codex.Entities.Lord_Sato, Codex.Entities.Aleax, Codex.Entities.Solar, Codex.Entities.Planetar, Codex.Entities.Archmage_Dirachi, Codex.Entities.Archmage_Flaynn, Codex.Entities.Archpriest_Avvakrum, Codex.Entities.Aphrodite, Codex.Entities.Elwing, Codex.Entities.Hippocrates })
+
+      var GoodArray = new[]
+      {
+        Codex.Entities.Archmage_Dirachi,
+        Codex.Entities.Archmage_Flaynn,
+        Codex.Entities.Archpriest_Avvakrum,
+        Codex.Entities.Aphrodite,
+        Codex.Entities.Earendil,
+        Codex.Entities.Elwing,
+        Codex.Entities.Hippocrates,
+        Codex.Entities.Lord_Sato,
+        Codex.Entities.Pelias,
+        Codex.Entities.Orion,
+        Codex.Entities.Norn,
+        Codex.Entities.Neferet,
+        Codex.Entities.Thorin,
+        Codex.Entities.Twoflower,
+        Codex.Entities.Van_Helsing,
+        Codex.Entities.Aleax,
+        Codex.Entities.Solar,
+        Codex.Entities.Planetar,
+      };
+
+      foreach (var Good in GoodArray)
         NewGoodCharacter(UnassignedSquare, SelectUniqueEntity(Good));
 
       var FinaleCharacter = NewEvilCharacter(UnassignedSquare, SelectUniqueEntity(Codex.Entities.Kaloi_Thrym));
       Generator.GainCarriedAsset(FinaleCharacter, Generator.NewSpecificAsset(UnassignedSquare, Codex.Items.Stamped_Letter));
 
-      foreach (var Evil in new[] { Codex.Entities.Cthulhu, Codex.Entities.Father_Dagon, Codex.Entities.Mother_Hydra, Codex.Entities.Lycaon, Codex.Entities.Metamorphius, Codex.Entities.Master_Kaen, Codex.Entities.Ashikaga_Takauji, Codex.Entities.Lareth, Codex.Entities.Death, Codex.Entities.Pestilence, Codex.Entities.Famine, Codex.Entities.Charon, Codex.Entities.Cerberus, Codex.Entities.Vecna })
+      var EvilArray = new[]
+      {
+        Codex.Entities.Ashikaga_Takauji,
+        Codex.Entities.Lareth,
+        Codex.Entities.Lycaon,
+        Codex.Entities.Metamorphius,
+        Codex.Entities.Master_Kaen,
+        Codex.Entities.Vecna,
+        Codex.Entities.Cthulhu,
+        Codex.Entities.Father_Dagon,
+        Codex.Entities.Mother_Hydra,
+        Codex.Entities.Death,
+        Codex.Entities.Pestilence,
+        Codex.Entities.Famine,
+        Codex.Entities.Charon,
+        Codex.Entities.Cerberus
+      };
+
+      foreach (var Evil in EvilArray)
         NewEvilCharacter(UnassignedSquare, SelectUniqueEntity(Evil));
 
       // town transportal station.
@@ -530,6 +572,7 @@ namespace Pathos
       SetSiteFirstLevelUp(OpusTerms.Cage);
       SetMapLevelDown(OpusTerms.Overland);
       SetUndergroundAreaPassage(OpusTerms.Sewers);
+      SetSiteSuffixFirstLevelUp("Farm");
 #endif
 
 #if DEBUG
@@ -2006,7 +2049,7 @@ namespace Pathos
                     if (EnemyCharacter != null)
                     {
                       // add an item for loot.
-                      Generator.GainCarriedAsset(EnemyCharacter, Generator.NewRandomAsset(SourceSquare));
+                      Generator.GainRandomAsset(EnemyCharacter);
                       Generator.OutfitCharacter(EnemyCharacter);
                     }
 
@@ -2505,7 +2548,7 @@ namespace Pathos
               var RecessCharacter = Square.Character;
               if (RecessCharacter != null && Chance.OneIn2.Hit())
               {
-                Generator.GainCarriedAsset(RecessCharacter, Generator.NewRandomAsset(Square));
+                Generator.GainRandomAsset(RecessCharacter);
                 Generator.OutfitCharacter(RecessCharacter);
               }
             }
@@ -3078,7 +3121,18 @@ namespace Pathos
 
         // fence.
         foreach (var FarmSquare in FarmMap.GetCircleOuterSquares(FarmCircle))
-          Generator.PlaceFloor(FarmSquare, FarmVariant.FenceGround);
+        {
+          if (FarmSquare.IsNeighbour(MiddleSquare, FarmCircle.Radius + 1) || FarmSquare.GetAdjacentSquares().Any(S => S.Floor == null && S.Wall == null))
+          {
+            Generator.PlaceFloor(FarmSquare, FarmVariant.FenceGround);
+          }
+          else
+          {
+            if (FarmSquare.Floor != null)
+              Generator.RemoveFloor(FarmSquare);
+            Generator.PlaceSolidWall(FarmSquare, Codex.Barriers.wooden_wall, WallSegment.Pillar);
+          }
+        }
 
         // Strange animals.
         var Strange = Chance.Always.Hit();
@@ -3089,7 +3143,7 @@ namespace Pathos
           Debug.Assert(StrangeCharacter.Entity == SuspicousEntity);
 
           Generator.NameCharacter(StrangeCharacter, StrangeName);
-          Generator.AcquireTalent(StrangeCharacter, Codex.Properties.aggravation);
+          Generator.AcquireTalent(StrangeCharacter, Codex.Properties.aggravation, Codex.Properties.life_regeneration);
 
           // TODO: should we make the Strange animal eat corpses on the ground?
           //StrangeCharacter.AcquireTalent(Codex.Properties.cannibalism);
@@ -3134,7 +3188,7 @@ namespace Pathos
                 else
                 {
                   // random routes within the grassed area. random point on the circle, rotated 90 degrees.
-                  var RouteSquare = FarmMap.GetCircleOuterSquares(FarmCircle).GetRandomOrNull();
+                  var RouteSquare = FarmMap.GetCircleOuterSquares(FarmCircle.Reduce(1)).GetRandomOrNull();
                   var RouteArray = new[]
                   {
                     RouteSquare,
@@ -3154,6 +3208,8 @@ namespace Pathos
         FarmZone.SetLit(true);
         Debug.Assert(FarmZone.HasSquares());
 
+        //Maker.RepairVeranda(FarmMap, new Region(FarmCircle).Expand(2), Codex.Grounds.dirt, IsLit: true);
+
         // secret level.
         var SecretCharacter = MiddleSquare.Character;
         var SecretName = Generator.EscapedModuleTerm(FarmVariant.Name);
@@ -3161,55 +3217,80 @@ namespace Pathos
         {
           var SecretSite = Generator.Adventure.World.AddSite(SecretName);
 
-          var SecretCircle = new Inv.Circle(FarmCircle.Radius + 1, FarmCircle.Radius + 1, FarmCircle.Radius);
-          var SecretSize = ((SecretCircle.Radius + 1) * 2) + 1;
+          var SecretCircle = new Inv.Circle(FarmCircle.Radius + 3, FarmCircle.Radius + 3, FarmCircle.Radius);
+          var SecretSize = ((SecretCircle.Radius + 1) * 2) + 5;
 
-          var SecretMap = Generator.Adventure.World.AddMap(SecretName, SecretSize, SecretSize);
+          var SecretMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(OpusTerms.StrangeFarm), SecretSize, SecretSize);
           SecretMap.SetDifficulty(FarmClearing.Section.Distance + 1);
           SecretMap.SetTerminal(true);
           SecretMap.SetAtmosphere(Codex.Atmospheres.forest);
+
+          var RiftSquare = SecretMap[SecretCircle.X, SecretCircle.Y];
+
           var SecretLevel = SecretSite.AddLevel(1, SecretMap);
-          SecretLevel.SetTransitions(null, null);
+          SecretLevel.SetTransitions(RiftSquare, null);
 
           var SecretZone = SecretMap.AddZone();
 
           // fence.
+          foreach (var SecretSquare in SecretMap.GetFrameSquares(SecretMap.Region))
+            Generator.PlacePermanentWall(SecretSquare, Codex.Barriers.wooden_wall, WallSegment.Pillar);
+
           foreach (var SecretSquare in SecretMap.GetCircleOuterSquares(SecretCircle))
           {
-            Generator.PlaceWall(SecretSquare, Codex.Barriers.hell_brick, WallStructure.Permanent, WallSegment.Pillar);
-
             SecretZone.AddSquare(SecretSquare);
+
+            Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
+
+            if (!SecretSquare.IsNeighbour(RiftSquare, SecretCircle.Radius + 1))
+              Generator.PlaceSolidWall(SecretSquare, Codex.Barriers.shroom, WallSegment.Pillar);
           }
 
           // field.
           var SecretParty = Generator.NewParty(Leader: null);
-          var RiftSquare = SecretMap[SecretCircle.X, SecretCircle.Y];
 
           foreach (var SecretSquare in SecretMap.GetCircleInnerSquares(SecretCircle))
           {
-            Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
-
             SecretZone.AddSquare(SecretSquare);
 
-            if (SecretSquare != RiftSquare)
+            if (SecretSquare == RiftSquare)
             {
-              Generator.PlaceCharacter(SecretSquare, SuspicousEntity);
+              // arrival square.
+              Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
+            }
+            else if (SecretSquare.IsAdjacent(RiftSquare))
+            {
+              Generator.PlaceFloor(SecretSquare, Codex.Grounds.lava);
 
-              var StrangeCharacter = SecretSquare.Character;
-              if (StrangeCharacter != null)
+              if (SecretSquare.IsNeighbour(RiftSquare))
               {
-                ActStrange(StrangeCharacter);
-
-                Generator.HostileCharacter(StrangeCharacter);
-
-                SecretParty.AddAlly(StrangeCharacter, Clock.Zero, Delay.Zero);
+                //Generator.PlaceBridge(SecretSquare, Codex.Platforms.crystal_bridge, BridgeOrientation.Horizontal);
+                Generator.PlaceBoulder(SecretSquare, Codex.Blocks.crystal_boulder, IsRigid: false);
               }
+            }
+            else
+            {
+              Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
             }
           }
 
-          var UniqueSquare = SecretMap.GetCircleInnerSquares(SecretCircle).Where(S => S.Character != null).GetRandomOrNull();
-          if (UniqueSquare != null)
-            Generator.PlaceUniqueAsset(UniqueSquare);
+          foreach (var SecretSquare in SecretMap.GetSquares(SecretMap.Region.Reduce(1)).Where(S => S.Floor == null))
+          {
+            Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
+
+            Generator.PlaceCharacter(SecretSquare, SuspicousEntity);
+
+            var StrangeCharacter = SecretSquare.Character;
+            if (StrangeCharacter != null)
+            {
+              ActStrange(StrangeCharacter);
+
+              Generator.GainRandomAsset(StrangeCharacter); // loot pinatas!
+              Generator.HostileCharacter(StrangeCharacter);
+
+              SecretParty.AddAlly(StrangeCharacter, Clock.Zero, Delay.Zero);
+            }
+          }
 
           SecretZone.SetLit(true);
           Debug.Assert(SecretZone.HasSquares());
@@ -3227,14 +3308,14 @@ namespace Pathos
           SecretScript.Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetTarget(RiftSquare);
 
           Generator.RepairMap(SecretMap, SecretMap.Region);
+
+          var SecretArea = SecretMap.AddArea(SecretMap.Name);
+          SecretArea.SetSpawnRestricted(true);
+          SecretArea.AddMapZones();
         }
 
         // TODO:
-        // * randomly determined number of farm animals? right now, zero can be generated.
-        // * secret level is currently boring, jazz it up - loot pinatas?
         // * neutral farmer/peasant/shepherd?
-        // * wooden barn/shed building contains animal food (carrots, etc)?
-        // * sleeping animals in the three-wall barn.
 
         BuildStop();
       }
@@ -5021,7 +5102,7 @@ namespace Pathos
                 if (Chance.ThreeIn4.Hit())
                 {
                   // TODO: check carry capacity and drop on the ground if too heavy?
-                  Generator.GainCarriedAsset(EndCharacter, Generator.NewRandomAsset(EndSquare));
+                  Generator.GainRandomAsset(EndCharacter);
                   Generator.OutfitCharacter(EndCharacter);
                 }
               }
@@ -8390,9 +8471,9 @@ H-----------H
 
           if (PrimarySquare.Character != null)
           {
-            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
-            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
-            Generator.GainCarriedAsset(PrimarySquare.Character, Generator.NewRandomAsset(PrimarySquare));
+            Generator.GainRandomAsset(PrimarySquare.Character);
+            Generator.GainRandomAsset(PrimarySquare.Character);
+            Generator.GainRandomAsset(PrimarySquare.Character);
           }
 
           foreach (var SecondaryIndex in RandomSupport.NextNumber(3, 4).NumberSeries())
@@ -8402,7 +8483,7 @@ H-----------H
             {
               Generator.PlaceCharacter(SecondarySquare, Lycanthrope.Secondary);
               if (SecondarySquare.Character != null)
-                Generator.GainCarriedAsset(SecondarySquare.Character, Generator.NewRandomAsset(SecondarySquare));
+                Generator.GainRandomAsset(SecondarySquare.Character);
             }
           }
 
@@ -8478,6 +8559,7 @@ H-----------H
             {
               var SewerAsset = Generator.NewRandomAsset(SewerSquare);
 
+              // food found floating in the sewer water is, of course, cursed.
               if (SewerAsset.Item.IsIngested() && SewerAsset.HasSanctity)
                 SewerAsset.SetSanctity(Codex.Sanctities.Cursed);
 
