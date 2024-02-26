@@ -133,7 +133,7 @@ AppearanceName,emerald potion,poção esmeralda
 AppearanceName,emerald ring,anel de esmeralda
 AppearanceName,engagement ring,anel de noivado
 AppearanceName,etched helmet,elmo esculpido
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,alabarda exótica de duas pontas
 AppearanceName,faded book,livro desvanecido
 AppearanceName,faded pall,pano mortuário desvanecido
 AppearanceName,fencing gloves,luvas de esgrima
@@ -367,7 +367,7 @@ AppearanceName,tin wand,varinha de estanho
 AppearanceName,tiny book,livro pequenininho
 AppearanceName,topaz ring,anel de topázio
 AppearanceName,torn book,livro rasgado
-AppearanceName,toy sword,
+AppearanceName,toy sword,espada de brinquedo
 AppearanceName,triangular amulet,amuleto triangular
 AppearanceName,turquoise book,livro turquesa
 AppearanceName,twisted ring,anel retorcido
@@ -459,11 +459,11 @@ BarrierName,cave wall,parede da caverna
 BarrierName,hell brick,tijolo do inferno
 BarrierName,iron bars,barras de ferro
 BarrierName,jade wall,parede de jade
-BarrierName,sewer wall,
+BarrierName,sewer wall,parede do esgoto
 BarrierName,shroom,cogumelo
 BarrierName,stone wall,parede de pedra
 BarrierName,tree,árvore
-BarrierName,wooden wall,
+BarrierName,wooden wall,parede de madeira
 BeamName,acid,ácido
 BeamName,cold,gélido
 BeamName,death,da morte
@@ -484,7 +484,7 @@ BlockName,crystal boulder,pedregulho de cristal
 BlockName,gold boulder,pedregulho de ouro
 BlockName,statue,estátua
 BlockName,stone boulder,pedregulho de rocha
-BlockName,trophy,
+BlockName,trophy,troféu
 BlockName,wooden barrel,barril de madeira
 BoonDescription,Ask for a unicorn to join your party.,Pedir a um unicórnio para juntar-se a seu grupo.
 BoonDescription,Bless one item in your inventory or on the ground.,Abençoar um item no seu inventário ou no chão.
@@ -932,7 +932,7 @@ DeviceName,noxious pool,piscina nociva
 DeviceName,pit,o fosso
 DeviceName,poison gas trap,a armadilha de gás venenoso
 DeviceName,polymorph trap,a armadilha de polimorfia
-DeviceName,pressure plate,
+DeviceName,pressure plate,placa de pressão
 DeviceName,scything blade trap,a armadilha de lâminas de sega
 DeviceName,shock trap,a armadilha de choque
 DeviceName,silence trap,armadilha de silenciamento
@@ -1014,7 +1014,7 @@ EffectType,charging,carregando
 EffectType,charm,encanto
 EffectType,clone character,clonar personagem
 EffectType,concealing,escondendo
-EffectType,connect passage,
+EffectType,connect passage,conectar passagem
 EffectType,convert asset,converter item
 EffectType,convert boulder,converter pedregulho
 EffectType,convert door,converter porta
@@ -1061,7 +1061,7 @@ EffectType,lose skill,perder habilidade
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrição
 EffectType,mapping,mapeamento
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,mobilizar pedregulho
 EffectType,murder,assassinar
 EffectType,nutrition,nutrição
 EffectType,opening,abertura
@@ -1267,7 +1267,7 @@ EntityName,blood imp,diabinho de sangue
 EntityName,bloodshot eye,olho vermelho
 EntityName,bloodworm,minhoca de sangue
 EntityName,blue jelly,geléia azul
-EntityName,blue light,
+EntityName,blue light,luz azul
 EntityName,bone devil,diabo de osso
 EntityName,brown mould,mofo marrom
 EntityName,brown pudding,pudim marrom
@@ -1367,7 +1367,7 @@ EntityName,elf mummy,múmia elfo
 EntityName,elf zombie,zumbi elfo
 EntityName,Elwing,Elwing
 EntityName,embalmer,embalsamador
-EntityName,emerald golem,
+EntityName,emerald golem,golem de esmeralda
 EntityName,energy vortex,vórtice de energia
 EntityName,erinys,erinys
 EntityName,ettin,ettin
@@ -1691,7 +1691,7 @@ EntityName,rancid jelly,geléia rançosa
 EntityName,rat king,rei rato
 EntityName,ratwere,homem-rato
 EntityName,recluse spider,aranha reclusa
-EntityName,red light,
+EntityName,red light,luz vermelha
 EntityName,red mould,mofo vermelho
 EntityName,red naga,naga vermelha
 EntityName,red naga hatchling,naga vermelha bebê
@@ -1772,7 +1772,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,homem-tigre
 EntityName,titan,titã
 EntityName,titanothere,titanothere
-EntityName,topaz golem,
+EntityName,topaz golem,golem de topázio
 EntityName,tortle,tartarugão
 EntityName,tracker,caçador
 EntityName,transmuter,transmutador
@@ -2059,7 +2059,7 @@ FormatText,{Entropy} entropy,{Entropy} entropia
 FormatText,{ExplosionName} explosion,explosão {ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} item
 FormatText,{ItemCount} items,{ItemCount} itens
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} more items,{ItemCount} mais itens
 FormatText,{JournalDelay} sec,{JournalDelay} seg
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} e {Follower:CharacterName} são aliados
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} e {Follower:CharacterName} não são mais aliados
@@ -2089,7 +2089,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},após alcançar o nivel {RecordDepth} da masmorra
 FormatText,animate {CharacterName},animar {CharacterName}
 FormatText,boost {AttributeName} by enchantment,aumenta {AttributeName} através de encantamento
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},quebrar {FeatureName}
 FormatText,cap {Percent}%,limite {Percent}%
 FormatText,Cast {SpellName} on which item?,Lançar {SpellName} em que item?
 FormatText,Cast {SpellName} which direction?,Lançar {SpellName} em que direção?
@@ -2154,8 +2154,8 @@ FormatText,when {STANDINGNAME},quando {STANDINGNAME}
 FormatText,when resists {ElementName},quando resiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Essa porta pesada é feita de formações de cristais sólidos e não pode ser facilmente danificada.
 GateName,crystal door,porta de cristal
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,porta de ouro
+GateName,iron door,porta de ferro
 GateName,wooden door,porta de madeira
 GenderHimself,herself,si mesma
 GenderHimself,himself,si mesmo
@@ -2175,13 +2175,13 @@ GradeName,artifact,artefato
 GradeName,exotic,exótico
 GradeName,standard,padrão
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,A superfície de pedra gelada tem um artesanato imaculado mas está marcada pelo tempo e um pouco danificada.
-GroundName,cave floor,
+GroundName,cave floor,chão de caverna
 GroundName,chasm,abismo
 GroundName,dirt,piso de terra
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,piso de ouro
+GroundName,granite floor,piso de granito
 GroundName,grass,grama
-GroundName,hive floor,piso da colméia
+GroundName,hive floor,piso de colméia
 GroundName,ice,gelo
 GroundName,lava,lava
 GroundName,marble floor,piso de mármore
@@ -2189,8 +2189,8 @@ GroundName,metal floor,piso de metal
 GroundName,moss,musgo
 GroundName,obsidian floor,piso de obsidiana
 GroundName,sand,areia
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,chão de esgoto
+GroundName,snow,neve
 GroundName,stone floor,piso de pedra
 GroundName,stone path,corredor de pedra
 GroundName,water,água
@@ -2199,7 +2199,7 @@ HordeName,ant,formiga
 HordeName,ape,macaco
 HordeName,bat,morcego
 HordeName,bee,abelha
-HordeName,beetle,
+HordeName,beetle,besouro
 HordeName,cockroach,barata
 HordeName,couatl,couatl
 HordeName,coyote,coiote
@@ -2374,7 +2374,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Atirar com ela numa parede cria um grande túnel.
 ItemName,adamantine arrow,flecha de adamantina
 ItemName,adamantine axe,machado de adamantina
-ItemName,adamantine bident,
+ItemName,adamantine bident,bidente de adamantina
 ItemName,adamantine bow,arco de adamantina
 ItemName,adamantine dagger,adaga de adamantina
 ItemName,adamantine greataxe,grande machado de adamantina
@@ -2759,7 +2759,7 @@ ItemName,phantom key,chave fantasma
 ItemName,Philosophers Stone,Pedra Filosofal
 ItemName,pick-axe,picareta
 ItemName,pistol,pistola
-ItemName,plastic sword,
+ItemName,plastic sword,espada de plástico
 ItemName,plate barding,armadura de cavalo
 ItemName,plate mail,armadura de placas
 ItemName,poison dart,dardo envenenado
@@ -3010,7 +3010,7 @@ ItemName,yellow dragon scales,escamas de dragão amarelo
 ItemName,yellow glass bauble,ninharia de vidro amarela
 ItemName,yellowish brown glass bauble,ninharia de vidro marrom amarelado
 ItemName,yumi,yumi
-ItemName,zircon,
+ItemName,zircon,zircônia
 ItemType,amulet,amuleto
 ItemType,bag,bolsa
 ItemType,barding,armadura de cavalo
@@ -3374,7 +3374,7 @@ LiteralText,feature,característica
 LiteralText,FEATURES,CARACTERÍSTICAS
 LiteralText,FEED,ALIMENTAR
 LiteralText,FEEDBACK,FEEDBACK
-LiteralText,Feedback information,
+LiteralText,Feedback information,informação de feedback
 LiteralText,FILES,ARQUIVOS
 LiteralText,fixed range,alcance fixo
 LiteralText,FIZZLE,CHIADO
@@ -3518,7 +3518,7 @@ LiteralText,NAME,NOME
 LiteralText,name?,nome?
 LiteralText,neutral,neutro
 LiteralText,never,nunca
-LiteralText,NEW,
+LiteralText,NEW,NOVO
 LiteralText,no additional effects,sem efeitos adicionais
 LiteralText,no allies,sem aliados
 LiteralText,no ambient sounds,sem sons ambientes
@@ -3576,7 +3576,7 @@ LiteralText,POLYMORPH,POLIMORFAR
 LiteralText,Polymorph into what?,Polimorfar em que?
 LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
-LiteralText,PORTALS,
+LiteralText,PORTALS,PORTAIS
 LiteralText,porter,carregador
 LiteralText,PRAY,ORAR
 LiteralText,preservation,preservação
@@ -3652,7 +3652,6 @@ LiteralText,REVERT,REVERTER
 LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
 LiteralText,ROTATE,ROTACIONAR
-LiteralText,route,
 LiteralText,SANITY CHECK,CHECAR SANIDADE
 LiteralText,SAVE,SALVAR
 LiteralText,SAVE & QUIT,SALVAR & SAIR
@@ -3768,7 +3767,6 @@ LiteralText,transform to,se transformar em
 LiteralText,transients,temporários
 LiteralText,TRANSIENTS,TEMPORÁRIOS
 LiteralText,TRANSLATIONS,TRADUÇÕES
-LiteralText,transport,
 LiteralText,TRAP,ARMADILHA
 LiteralText,trap?,armadilha?
 LiteralText,trapped,armadilhado
@@ -3877,42 +3875,42 @@ MaterialName,wood,madeira
 MeasurementSystemName,imperial,imperial
 MeasurementSystemName,metric,métrico
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desça masmorras e cavernas geradas proceduralmente. Rejogabilidade infinita e recomendada para jogadores novatos.
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explore um vasto, proceduralmente gerado mapa que contém masmorras opcionais, encontros intrigantes e cenários elaborados."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão numa aventura épica pelas planícies. Tire uma folga das masmorras e embarque nessa aventura.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Caixa de areia para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e acessório das masmorra num mapa simples de duas salas."
 ModuleName,Dhak Legacy,Legado Dhak
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Codex Nethack
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Modo Caixa de Areia
 ModuleTerm,Abyss,Abismo
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,Emboscada
+ModuleTerm,Ant Cave,Caverna das Formigas
+ModuleTerm,Ant Lair,Lar das Formigas
+ModuleTerm,Ant Nest,Ninho das Formigas
+ModuleTerm,Arena,Arena
 ModuleTerm,attic,sótão
-ModuleTerm,Black Lair,
+ModuleTerm,Black Lair,Lar Negro
 ModuleTerm,Black Market,Mercado Negro
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,Lar Azul
+ModuleTerm,Cage,Jaula
+ModuleTerm,Canyon,Cânion
+ModuleTerm,Cave Maze,Caverna Labirinto
 ModuleTerm,caves,cavernas
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,Cidade da Caverna
 ModuleTerm,cellar,porão
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cemetery,Cemitério
+ModuleTerm,Chicken Farm,Fazenda das Galinhas
+ModuleTerm,Cow Farm,Fazenda das Vacas
+ModuleTerm,Crater,Cratera
+ModuleTerm,Crypt,Cripta
+ModuleTerm,Crystal Henge,Círculo Cristalino
+ModuleTerm,Deep Lair,Lar Profundo
 ModuleTerm,Deephall,Salão das Profundezas
 ModuleTerm,Deepruins,Ruínas das Profundezas
 ModuleTerm,Deepwilds,Profundezas Selvagens
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,Mina de Diamantes
 ModuleTerm,Dungeon,Masmorra
 ModuleTerm,Elf Forest,Floresta Élfica
 ModuleTerm,Elf Kingdom,Reino Élfico
@@ -3921,29 +3919,29 @@ ModuleTerm,Elf Palace 2,Palácio Élfico 2
 ModuleTerm,Elf Palace Vault,Câmara do Tesouro do Palácio Élfico
 ModuleTerm,Elf Town,Cidade Élfica
 ModuleTerm,Elf Town Trove,Tesouro da Cidade Élfica
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,Mina de Esmeraldas
+ModuleTerm,Eye Pit,Poço dos Olhos
 ModuleTerm,Fort Ludios,Forte Ludios
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,Fornalha
+ModuleTerm,Glacier,Geleira
+ModuleTerm,Goat Farm,Fazenda de Cabras
+ModuleTerm,Green Lair,Lar Verde
+ModuleTerm,Grotto,Ravina
+ModuleTerm,Halls,Salões
+ModuleTerm,Helltown,Cidade Infernal
+ModuleTerm,Horse Farm,Fazenda de Cavalos
+ModuleTerm,Ice Lake,Lago Glacial
 ModuleTerm,Infernal Cage,Jaula Infernal
 ModuleTerm,Infernal Fields,Campos Infernais
 ModuleTerm,Infernal Keep,Fortaleza Infernal
 ModuleTerm,Infernal Spire,Pináculo Infernal
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,Cidade Jade
+ModuleTerm,Jelly Pit,Poço Slime
+ModuleTerm,Kobold Fort,Forte Kobold
 ModuleTerm,Labyrinth,Labirinto
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,Lago
+ModuleTerm,Lava Flow,Corrente de Lava
+ModuleTerm,Lava Lake,Lago de Lava
 ModuleTerm,level//depth,nível
 ModuleTerm,Lich Tower,Torre Lich
 ModuleTerm,Lost Chambers,Câmaras Perdidas
@@ -3951,61 +3949,61 @@ ModuleTerm,Ludios Cache,Provisões de Ludios
 ModuleTerm,Medusa Lair,Covil da Medusa
 ModuleTerm,Mines,Minas
 ModuleTerm,Minetown,Cidade das Minas
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,Poço de Musgo
+ModuleTerm,Opus,Opus
+ModuleTerm,Orange Lair,Lar Laranja
+ModuleTerm,Outpost,Posto Avançado
+ModuleTerm,Overland,Terra Acima
+ModuleTerm,Pig Farm,Fazenda de Porcos
+ModuleTerm,Prison,Prisão
+ModuleTerm,Pudding Pit,Poço de Pudim
+ModuleTerm,Rat Pit,Poço de Ratos
+ModuleTerm,Rebirth,Renascer
+ModuleTerm,Red Lair,Lar Vermelho
+ModuleTerm,Respite,Refúgio
+ModuleTerm,River,Rio
+ModuleTerm,Ruby Mine,Mina de Rubi
+ModuleTerm,Ruins,Ruínas
+ModuleTerm,Rupture,Ruptura
+ModuleTerm,Sapphire Mine,Mina de Safira
+ModuleTerm,Scorpion Cave,Caverna dos Escorpiões
+ModuleTerm,Scorpion Lair,Lar dos Escorpiões
+ModuleTerm,Scorpion Nest,Ninho dos Escorpiões
+ModuleTerm,Seal Farm,Fazenda de Focas
+ModuleTerm,Sewers,Esgoto
+ModuleTerm,Sheep Farm,Fazenda de Ovelhas
+ModuleTerm,Shimmer Lair,Lar Reluzente
+ModuleTerm,Shroom Maze,Labirinto dos Cogumelos
+ModuleTerm,Slime Pit,Poço de Slime
+ModuleTerm,Snake Pit,Poço de Cobras
 ModuleTerm,Sokoban,Sokoban
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,Strange Farm,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,Spider Cave,Caverna das Aranhas
+ModuleTerm,Spider Lair,Lar das Aranhas
+ModuleTerm,Spider Nest,Ninho das Aranhas
+ModuleTerm,Station,Estação
+ModuleTerm,Statue Henge,Círculo de Estatuas
+ModuleTerm,Stone Henge,Círculo de Pedras
+ModuleTerm,Stonetown,Cidade das Pedras
+ModuleTerm,strange chicken,Galinha Estranha
+ModuleTerm,strange cow,Vaca Estranha
+ModuleTerm,Strange Farm,Fazenda Estranha
+ModuleTerm,strange goat,Cabra Estranha
+ModuleTerm,strange horse,Cavalo Estranho
+ModuleTerm,strange pig,Porco Estranho
+ModuleTerm,strange seal,Foca Estranha
+ModuleTerm,strange sheep,Ovelha Estranha
+ModuleTerm,Topaz Mine,Mina de Topázio
+ModuleTerm,Tree Maze,Labirinto das Árvores
 ModuleTerm,trove,tesouro
 ModuleTerm,Underbarracks,Quartel de Baixo
-ModuleTerm,Underground,
+ModuleTerm,Underground,Subterrâneo
 ModuleTerm,Underlimits,Limites de Baixo
 ModuleTerm,Underpeaks,Picos de Baixo
 ModuleTerm,Undertown,Cidade de Baixo
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,Lar Branco
+ModuleTerm,Woodtown,Cidade das Madeiras
+ModuleTerm,Worm Pit,Poço de Minhocas
+ModuleTerm,Yellow Lair,Lar Amarelo
 MotionPastName,anointed,ungiu
 MotionPastName,ate,comeu
 MotionPastName,captured,capturou
@@ -4483,8 +4481,8 @@ SonicName,amulet,amuleto
 SonicName,arf,latido
 SonicName,armour,armadura
 SonicName,baa,balido
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,barras subindo
+SonicName,bars slamming,barras batendo
 SonicName,bell,sino
 SonicName,birds,pássaros
 SonicName,bleat,balido
@@ -4508,7 +4506,7 @@ SonicName,chirp,gorjeio
 SonicName,clank,tinido
 SonicName,close door,porta fechada
 SonicName,cluck,cacarejo
-SonicName,clunk,
+SonicName,clunk,clank
 SonicName,coins,moedas
 SonicName,conclusion,conclusão
 SonicName,craft,fabricar
@@ -4773,7 +4771,7 @@ TraversalPresentName,ascend,subir
 TraversalPresentName,descend,descer
 TraversalPresentName,travel,viajar
 VolatileName,blaze,chama
-VolatileName,blood,
+VolatileName,blood,sangue
 VolatileName,electricity,eletricidade
 VolatileName,freeze,gelo
 VolatileName,steam,vapor

@@ -1419,7 +1419,7 @@ namespace Pathos
         var OracleParty = Generator.NewParty(OracleCharacter);
         OracleParty.AddAlly(AssassinCharacter, Clock.Zero, Delay.Zero);
 
-        OracleCharacter.InsertScript().Killed.Sequence.Add(Codex.Tricks.transport_candidate).SetSource(AssassinCharacter).SetTarget(AssassinSquare);
+        OracleCharacter.InsertScript().Killed.Sequence.Add(Codex.Tricks.transport_candidate).SetCharacter(AssassinCharacter).SetTarget(AssassinSquare);
 
         /* // NOTE: for testing pressure plates.
         var PressurePlateSquare = UndergroundSquare.Adjacent(CoffinSquare.AsDirection(UndergroundSquare));
@@ -3300,12 +3300,12 @@ namespace Pathos
           var SecretScript = SecretCharacter.InsertScript();
 
           // connect the transportal, send the strange animal to the secret level and then kill them so there is room to arrive.
-          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.connecting_portal).SetTarget(RiftSquare);
-          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.transport_candidate).SetSource(SecretCharacter).SetTarget(RiftSquare);
-          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.instant_death).SetSource(SecretCharacter);
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.connecting_portal).SetSource(MiddleSquare).SetTarget(RiftSquare);
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.transport_candidate).SetCharacter(SecretCharacter).SetTarget(RiftSquare);
+          SecretScript.TurnedFriendly.Sequence.Add(Codex.Tricks.instant_death).SetCharacter(SecretCharacter);
 
           // connect the rift if the strange animal is killed.
-          SecretScript.Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetTarget(RiftSquare);
+          SecretScript.Killed.Sequence.Add(Codex.Tricks.connecting_rift).SetSource(MiddleSquare).SetTarget(RiftSquare);
 
           Generator.RepairMap(SecretMap, SecretMap.Region);
 
@@ -3451,7 +3451,7 @@ namespace Pathos
         foreach (var GoodCharacter in Maker.GoodCharacterList)
         {
           var GoodSquare = GoodFormationSquareList.RemoveFirst();
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.transport_candidate).SetSource(GoodCharacter).SetTarget(GoodSquare);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.transport_candidate).SetCharacter(GoodCharacter).SetTarget(GoodSquare);
 
           FormationDictionary.Add(GoodCharacter, GoodSquare);
         }
@@ -3459,7 +3459,7 @@ namespace Pathos
         foreach (var EvilCharacter in Maker.EvilCharacterList)
         {
           var EvilSquare = EvilFormationSquareList.RemoveFirst();
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.transport_candidate).SetSource(EvilCharacter).SetTarget(EvilSquare);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.transport_candidate).SetCharacter(EvilCharacter).SetTarget(EvilSquare);
 
           FormationDictionary.Add(EvilCharacter, EvilSquare);
         }
@@ -3467,17 +3467,17 @@ namespace Pathos
         // resident routes to make both sides engage.
         foreach (var (GoodCharacter, EvilCharacter) in Maker.GoodCharacterList.ZipX(Maker.EvilCharacterList))
         {
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetSource(GoodCharacter).SetTarget(FormationDictionary[EvilCharacter]);
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetSource(EvilCharacter).SetTarget(FormationDictionary[GoodCharacter]);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(GoodCharacter).SetTarget(FormationDictionary[EvilCharacter]);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(EvilCharacter).SetTarget(FormationDictionary[GoodCharacter]);
         }
 
         // good double teams.
         foreach (var GoodCharacter in Maker.GoodCharacterList.Skip(Maker.EvilCharacterList.Count))
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetSource(GoodCharacter).SetTarget(FormationDictionary[Maker.EvilCharacterList.GetRandom()]);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(GoodCharacter).SetTarget(FormationDictionary[Maker.EvilCharacterList.GetRandom()]);
 
         // evil double teams.
         foreach (var EvilCharacter in Maker.EvilCharacterList.Skip(Maker.GoodCharacterList.Count))
-          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetSource(EvilCharacter).SetTarget(FormationDictionary[Maker.GoodCharacterList.GetRandom()]);
+          ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(EvilCharacter).SetTarget(FormationDictionary[Maker.GoodCharacterList.GetRandom()]);
 
         // end game rift.
         Generator.PlacePassage(Maker.FinaleSquare, Codex.Portals.rift, null);

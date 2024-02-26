@@ -1936,7 +1936,7 @@ FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{Ch
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName}は{FixtureName}{MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName}は{Use:FixtureName}で{With:AssetName}{MotionPastName}
-FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}は{MapName}へ{TraversalPastName}
+FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}は{MapName}に{TraversalPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName}は巧みに{AssetName}{MotionPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は巧みに{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}はレベル{LevelNumber}に到達した
@@ -2448,13 +2448,13 @@ ItemName,book of blinking,転位の魔法書
 ItemName,book of cancellation,魔法除去の魔法書
 ItemName,book of charm,魅了の魔法書
 ItemName,book of clairvoyance,千里眼の魔法書
-ItemName,book of cone of cold,冷気の魔法書
+ItemName,book of cone of cold,冷気流の魔法書
 ItemName,book of confusion,混乱の魔法書
 ItemName,book of create familiar,使い魔生成の魔法書
 ItemName,book of crushing sphere,破砕する球の魔法書
 ItemName,book of curing,治癒の魔法書
 ItemName,book of darkness,暗闇の魔法書
-ItemName,book of deflection,防護の魔法書
+ItemName,book of deflection,偏向の魔法書
 ItemName,book of detect food,食料探知の魔法書
 ItemName,book of detect monsters,モンスター探知の魔法書
 ItemName,book of detect treasure,財宝探知の魔法書
@@ -2475,7 +2475,7 @@ ItemName,book of healing,回復の魔法書
 ItemName,book of ice storm,氷の嵐の魔法書
 ItemName,book of identify,識別の魔法書
 ItemName,book of invisibility,透明化の魔法書
-ItemName,book of jumping,跳躍の魔法書
+ItemName,book of jumping,跳躍力の魔法書
 ItemName,book of knock,開放の魔法書
 ItemName,book of levitation,浮遊の魔法書
 ItemName,book of light,光の魔法書
@@ -3652,7 +3652,6 @@ LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
-LiteralText,route,
 LiteralText,SANITY CHECK,SANチェック
 LiteralText,SAVE,セーブ
 LiteralText,SAVE & QUIT,セーブと終了
@@ -3768,7 +3767,6 @@ LiteralText,transform to,変身可能
 LiteralText,transients,一時的な状態
 LiteralText,TRANSIENTS,一時的な状態
 LiteralText,TRANSLATIONS,翻訳
-LiteralText,transport,
 LiteralText,TRAP,罠
 LiteralText,trap?,罠?
 LiteralText,trapped,罠付きの
@@ -3877,7 +3875,7 @@ MaterialName,wood,木
 MeasurementSystemName,imperial,ヤードポンド法
 MeasurementSystemName,metric,メートル法
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成された広大な地上マップを探索しましょう。
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成によって散りばめられた広大な地上マップを探索しましょう。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
@@ -3889,7 +3887,7 @@ ModuleName,Sandbox Play,サンドボックスプレイ
 ModuleTerm,Abyss,地獄の深淵
 ModuleTerm,Ambush,待ち伏せ
 ModuleTerm,Ant Cave,アリの巣窟
-ModuleTerm,Ant Lair,蟻の棲み処
+ModuleTerm,Ant Lair,アリの棲み処
 ModuleTerm,Ant Nest,アリの巣穴
 ModuleTerm,Arena,闘技場
 ModuleTerm,attic,屋根裏
@@ -3930,7 +3928,7 @@ ModuleTerm,Goat Farm,山羊牧場
 ModuleTerm,Green Lair,グリーンドラゴンの棲み処
 ModuleTerm,Grotto,洞穴
 ModuleTerm,Halls,館
-ModuleTerm,Helltown,鬼獄街
+ModuleTerm,Helltown,地獄の街
 ModuleTerm,Horse Farm,馬牧場
 ModuleTerm,Ice Lake,氷湖
 ModuleTerm,Infernal Cage,地獄の収容所
@@ -3962,7 +3960,7 @@ ModuleTerm,Pudding Pit,プリンの穴ぐら
 ModuleTerm,Rat Pit,ネズミの穴ぐら
 ModuleTerm,Rebirth,復活
 ModuleTerm,Red Lair,レッドドラゴンの棲み処
-ModuleTerm,Respite,休息の場所
+ModuleTerm,Respite,休憩
 ModuleTerm,River,川岸
 ModuleTerm,Ruby Mine,ルビー鉱山
 ModuleTerm,Ruins,廃墟
@@ -3988,7 +3986,7 @@ ModuleTerm,Stone Henge,ストーン・サークル
 ModuleTerm,Stonetown,石の街
 ModuleTerm,strange chicken,妙な鶏
 ModuleTerm,strange cow,妙な牛
-ModuleTerm,Strange Farm,
+ModuleTerm,Strange Farm,奇妙な牧場
 ModuleTerm,strange goat,妙な山羊
 ModuleTerm,strange horse,妙な馬
 ModuleTerm,strange pig,妙な豚
@@ -4679,7 +4677,7 @@ SpellName,create familiar,使い魔生成
 SpellName,crushing sphere,破砕する球
 SpellName,curing,快気
 SpellName,darkness,暗闇
-SpellName,deflection,防護
+SpellName,deflection,偏向
 SpellName,detect food,食料探知
 SpellName,detect monsters,モンスター探知
 SpellName,detect treasure,財宝探知
@@ -4766,14 +4764,14 @@ StrikeName,spirit,精神
 StrikeName,tunnel,採掘
 StrikeName,venom,毒
 StrikeName,wail,叫び声
-TraversalPastName,ascended,昇った
+TraversalPastName,ascended,登った
 TraversalPastName,descended,降りた
 TraversalPastName,travelled,ワープした
-TraversalPresentName,ascend,昇る
+TraversalPresentName,ascend,登る
 TraversalPresentName,descend,降りる
 TraversalPresentName,travel,ワープする
 VolatileName,blaze,燃焼
-VolatileName,blood,
+VolatileName,blood,血のり
 VolatileName,electricity,漏電
 VolatileName,freeze,凍結
 VolatileName,steam,蒸気

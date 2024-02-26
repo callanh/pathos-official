@@ -13,29 +13,29 @@ AfflictionName,reflux,mide yanması
 AfflictionName,sliming,çamurlu
 AfflictionName,worms,solucanlı
 AnatomyAbsenceText,MINDLESS,ZİHİNSİZ
-AnatomyAbsenceText,NO BLOOD,
-AnatomyAbsenceText,NO EARS,
+AnatomyAbsenceText,NO BLOOD,KANSIZ
+AnatomyAbsenceText,NO EARS,KULAKSIZ
 AnatomyAbsenceText,NO EYES,GÖZSÜZ
 AnatomyAbsenceText,NO FEET,AYAKSIZ
 AnatomyAbsenceText,NO HANDS,ELSİZ
 AnatomyAbsenceText,NO HEAD,BAŞSIZ
 AnatomyAbsenceText,NO LIMBS,UZUVSUZ
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,ŞEKİLSİZ DEĞİL
+AnatomyAbsenceText,NOT MOUNTED,BİNİLMEDİ
+AnatomyAbsenceText,NOT WARM,ILIK DEĞİL
 AnatomyAbsenceText,VOICELESS,SESSİZ
 AnatomyName,amorphous,şekilsiz
 AnatomyName,blood,kan
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,kulak
+AnatomyName,eyes,göz
+AnatomyName,feet,ayak
+AnatomyName,hands,el
+AnatomyName,head,baş
+AnatomyName,limbs,uzuv
+AnatomyName,mind,akıl
 AnatomyName,mounted,binildi
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,thermal,termal
+AnatomyName,voice,ses
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Önü açık ve göğüsten toka ile bağlanan uzun bir pelerin.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Kısa ama dayanıklı gözüken mitril bir zırh.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Dar ve zarif gözüken mitril bir zırh.
@@ -3652,7 +3652,6 @@ LiteralText,REVERT,GERİ AL
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
-LiteralText,route,
 LiteralText,SANITY CHECK,RUH SAĞLIĞI KONTROLÜ
 LiteralText,SAVE,KAYDET
 LiteralText,SAVE & QUIT,KAYDET & ÇIK
@@ -3768,7 +3767,6 @@ LiteralText,transform to,
 LiteralText,transients,geçİcİler
 LiteralText,TRANSIENTS,GEÇİCİLER
 LiteralText,TRANSLATIONS,ÇEVİRİLER
-LiteralText,transport,
 LiteralText,TRAP,TUZAK
 LiteralText,trap?,
 LiteralText,trapped,yakalandı
