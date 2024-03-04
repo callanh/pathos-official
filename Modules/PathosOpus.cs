@@ -559,7 +559,6 @@ namespace Pathos
       void SetMapMiddle(string MapName) => Generator.StartSquare(Generator.Adventure.World.GetMap(Generator.EscapedModuleTerm(MapName)).Midpoint);
       void SetUndergroundAreaPassage(string AreaName) => Generator.StartSquare(UndergroundMap.Areas.Find(A => A.Name == Generator.EscapedModuleTerm(AreaName)).GetSquares().Find(S => S.Passage != null));
 
-      SetSiteFirstLevelUp(OpusTerms.Crypt);
       SetMapMiddle(OpusTerms.Station);
       SetSiteSuffixFirstLevelUp("Mine");
       SetSiteSuffixFirstLevelUp("Lair");
@@ -573,6 +572,7 @@ namespace Pathos
       SetMapLevelDown(OpusTerms.Overland);
       SetUndergroundAreaPassage(OpusTerms.Sewers);
       SetSiteSuffixFirstLevelUp("Farm");
+      SetSiteFirstLevelEntrance(OpusTerms.Crypt);
 #endif
 
 #if DEBUG
@@ -582,13 +582,13 @@ namespace Pathos
 
       //var ImpassableGroundArray = new[] { Codex.Grounds.lava, Codex.Grounds.chasm };
       bool IsPassable(Square Square) =>
-        Square.Floor != null
+        Square.Floor != null && (Square.Wall == null || Square.Wall.IsIllusionary() || !Square.Wall.Barrier.Opaque)
         //&& (!ImpassableGroundArray.Contains(Square.Floor.Ground) || !Square.IsSunken())
         ;
 
       var ValidSet = OverlandMap.GetSquares().Where(S =>
         IsPassable(S) &&
-        (S.Boulder == null || !S.GetNeighbourSquares().All(T => T.Wall != null))).ToHashSetX(); // NOTE: ruins can generate an inaccessible boulder in the cross of a wall.
+        (S.Boulder == null || !S.GetNeighbourSquares().All(T => T.Wall != null || T.Boulder != null))).ToHashSetX(); // NOTE: ruins can generate an inaccessible boulder in the cross of a wall.
       var VisitSet = new HashSet<Square>(); // capacity constructor not available on netstandard20
 
       OverlandMap.Level.DownSquare.FloodNeighbour(S => IsPassable(S) && VisitSet.Add(S));
@@ -3113,7 +3113,7 @@ namespace Pathos
         var FarmClearing = Section.LargestClearing;
         var FarmMap = Maker.OverlandMap;
 
-        var FarmCircle = FarmClearing.Circle.Reduce(FarmClearing.Circle.Radius > 4 ? FarmClearing.Circle.Radius - 4 : 2);
+        var FarmCircle = FarmClearing.Circle.Reduce(FarmClearing.Circle.Radius > 4 ? FarmClearing.Circle.Radius - 4 : 1);
 
         var MiddleSquare = FarmMap[FarmCircle.X, FarmCircle.Y];
 
@@ -4795,7 +4795,7 @@ namespace Pathos
         }
 
         // very rare generation can lead to a disconnected 3x3 room.
-        var ValidSet = MazeMap.GetSquares(Section.Region).Where(S => S.Floor != null).ToHashSetX();
+        var ValidSet = MazeMap.GetSquares(Section.Region).Where(S => S.Floor != null && S.Wall == null).ToHashSetX();
         Maker.ConnectSquares(ValidSet, ValidSet.GetRandomOrNull(), S =>
         {
           Generator.RemoveWall(S);
@@ -4946,7 +4946,15 @@ namespace Pathos
             RoomZone.SetLit(false);
             Debug.Assert(RoomZone.HasSquares());
 
-            Generator.PlaceRoom(MineMap, Codex.Barriers.cave_wall, Codex.Grounds.cave_floor, RoomRegion);
+            foreach (var RoomSquare in MineMap.GetFrameSquares(RoomRegion))
+            {
+              if (RoomSquare.Floor == null)
+                Generator.RemoveFloor(RoomSquare);
+              Generator.PlaceSolidWall(RoomSquare, Codex.Barriers.cave_wall, WallSegment.Pillar);
+            }
+
+            foreach (var RoomSquare in MineMap.GetSquares(RoomRegion.Reduce(1)))
+              Generator.PlaceFloor(RoomSquare, Codex.Grounds.cave_floor);
 
             var EntrancePoint = RoomRegion.Midpoint();
             var EntranceSquare = MineMap[EntrancePoint.X, EntrancePoint.Y];
@@ -4975,6 +4983,8 @@ namespace Pathos
             }
 
             Generator.PlaceHorde(MineHorde, Section.MinimumDifficulty, Section.MaximumDifficulty, () => MineMap.GetSquares(RoomRegion.Reduce(1)).Where(S => Generator.CanPlaceCharacter(S)).GetRandomOrNull());
+
+            Maker.RepairVeranda(MineMap, RoomRegion.Expand(1), Codex.Grounds.dirt, IsLit: true);
 
             EnterList.Add(EntranceSquare);
           }
@@ -5340,6 +5350,8 @@ namespace Pathos
 
             Generator.PlaceHorde(NestVariant.Horde, Section.MinimumDifficulty, Section.MaximumDifficulty, () => AboveMap.GetSquares(RoomRegion.Reduce(1)).Where(S => Generator.CanPlaceCharacter(S)).GetRandomOrNull());
 
+            Maker.RepairVeranda(AboveMap, RoomRegion.Expand(1), Codex.Grounds.dirt, IsLit: true);
+
             NestEnterList.Add(EntranceSquare);
           }
           else
@@ -5680,15 +5692,16 @@ namespace Pathos
         if (RavineVariant.Ground == Codex.Grounds.chasm)
           Maker.Pit.Build(Section, Section.Region, Maker.OverlandMap, Maker.UndergroundMap, Codex.Grounds.dirt);
 
-        // TODO: Section Thresholds.
-        //foreach (var RavineJoin in Section.Joins)
-        //{
-        //  foreach (var RavineSquare in RavineMap.GetSquares(RavineJoin.Region))
-        //  {
-        //    if (RavineSquare.Floor?.Ground == Codex.Grounds.dirt)
-        //      Generator.PlaceFloor(RavineSquare, RavineVariant.Ground);
-        //  }
-        //}
+        // collect threshold squares.
+        var ThresholdSet = new HashSet<Square>();
+        foreach (var RavineJoin in Section.Joins)
+        {
+          foreach (var RavineSquare in RavineMap.GetSquares(RavineJoin.Region))
+          {
+            if (RavineSquare.Floor?.Ground == Codex.Grounds.dirt)
+              ThresholdSet.Add(RavineSquare);
+          }
+        }
 
         // bridge across the ravines.
         var SpaceSet = RavineMap.GetSquares(RavineRegion.Expand(1)).Where(S => IsDirt(S)).ToHashSetX();
@@ -5743,7 +5756,57 @@ namespace Pathos
             // choose a ravine that we can bridge across.
             var RavineSquare = RavineSet.Where(F => F.GetNeighbourSquares().Any(S => BridgeAcross(F, S))).GetRandomOrNull();
             if (RavineSquare == null)
-              break;
+            {
+              var ImportantForged = false;
+
+              foreach (var ImportantSquare in SpaceSet.Except(PathSet).Intersect(ThresholdSet))
+              {
+                foreach (var ThresholdSquare in ThresholdSet)
+                {
+                  if (ImportantSquare == ThresholdSquare)
+                    continue;
+
+                  foreach (var ForgeSquare in Maker.WalkingPath(ImportantSquare, ThresholdSquare))
+                  {
+                    if (ForgeSquare.Floor == null)
+                    {
+                      Generator.PlaceFloor(ForgeSquare, Codex.Grounds.dirt);
+                      SpaceSet.Add(ForgeSquare);
+
+                      ImportantForged = true;
+                      break;
+                    }
+                    else if (ForgeSquare.Floor?.Ground == Codex.Grounds.dirt)
+                    {
+                      // walking through dirt to find ravines to replace with dirt.
+                    }
+                    else if (ForgeSquare.Floor?.Ground == RavineVariant.Ground)
+                    {
+                      if (ForgeSquare.Bridge == null)
+                      {
+                        Generator.ReplaceFloor(ForgeSquare, Codex.Grounds.dirt);
+                        SpaceSet.Add(ForgeSquare);
+
+                        ImportantForged = true;
+                      }
+
+                      break;
+                    }
+                  }
+
+                  if (ImportantForged)
+                    break;
+                }
+
+                if (ImportantForged)
+                  break;
+              }
+
+              if (ImportantForged)
+                continue;
+              else
+                break;
+            }
 
             Generator.PlaceBridge(RavineSquare, RavineVariant.Platform, BridgeOrientation.Horizontal);
 
@@ -6236,7 +6299,7 @@ H-----------H
         // might need a surrounding dirt veranda to reconnect the areas.
         Maker.RepairVeranda(AboveMap, RuinRegion, Codex.Grounds.dirt, IsLit: true);
 
-        // TODO: it is possible to have an inaccessible ruin, although unlikely. Player can always use a pickaxe?
+        // eliminate some walls to make it more of a ruins.
         foreach (var AboveSquare in AboveMap.GetSquares(RuinRegion))
         {
           AboveSquare.SetLit(true);
@@ -6246,7 +6309,12 @@ H-----------H
             Generator.PlaceFloor(AboveSquare, AboveVariant.NaturalGround); // dirt under the tree.
 
             if (Chance.OneIn4.Hit())
+            {
               Generator.RemoveWall(AboveSquare);
+
+              if (AboveSquare.GetNeighbourSquares().All(S => S.Wall != null))
+                Generator.PlaceBoulder(AboveSquare, AboveVariant.NaturalBlock, IsRigid: true);
+            }
           }
           else if (AboveSquare.Wall?.Barrier == Codex.Barriers.iron_bars)
           {
@@ -6254,7 +6322,17 @@ H-----------H
           }
         }
 
+        // make sure the ruins are surrounded by a dirt veranda.
         Maker.RepairVeranda(AboveMap, Section.Region, Codex.Grounds.dirt, IsLit: true);
+
+        // NOTE: it is possible to have an inaccessible ruin if not enough trees are eliminated by the above 25% chance per tree.
+        Maker.ConnectSquares(AboveMap.GetSquares(Section.Region).Where(S => S.Floor != null && S.Wall == null), AboveEntranceSquare, PunchSquare =>
+        {
+          if (PunchSquare.Floor == null)
+            Generator.PlaceFloor(PunchSquare, AboveVariant.NaturalGround);
+
+          Generator.RemoveWall(PunchSquare);
+        });
 
         var RuinsName = Generator.EscapedModuleTerm(OpusTerms.Ruins);
         if (!Generator.Adventure.World.HasSite(RuinsName))
@@ -7852,8 +7930,12 @@ H-----------H
           return;
         }
 
+        var ConnectBuildingList = BuildingList.ToDistinctList();
+
         foreach (var Building in BuildingList)
         {
+          ConnectBuildingList.Remove(Building);
+
           var BuildingSquare = TownMap.GetFrameSquares(Building.Region).Where(S => S.Wall != null && S.IsFlat()).GetRandomOrNull();
 
           if (BuildingSquare == null)
@@ -7862,7 +7944,8 @@ H-----------H
             Debug.WriteLine($"{TownVariant.Name}: unable to find a door square in a town building.");
 
             // we need to make sure this separate building is fully accessible to the rest of the town.
-            var ConnectBuilding = BuildingList.Except(Building).GetRandomOrNull();
+            var ConnectBuilding = ConnectBuildingList.RemoveRandomOrNull() ?? BuildingList.Except(Building).GetRandomOrNull();
+
             if (ConnectBuilding != null)
             {
               foreach (var ConnectSquare in Maker.WalkingPath(TownMap[Building.Region.Midpoint()], TownMap[ConnectBuilding.Region.Midpoint()]))
@@ -8628,21 +8711,24 @@ H-----------H
 
         var VendorZone = VendorMap.AddZone();
 
-        foreach (var Square in VendorMap.GetCircleOuterSquares(VendorCircle))
-        {
-          VendorZone.ForceSquare(Square);
+        var VendorOutsideSquareArray = VendorMap.GetCircleOuterSquares(VendorCircle).ToArray();
+        var VendorBlockedSquareArray = VendorOutsideSquareArray.Where(S => S.GetAdjacentSquares().Any(S => S.Wall != null)).ToArray();
 
-          if ((Square.X == VendorSquare.X || Square.Y == VendorSquare.Y) && !(Square.Adjacent(VendorSquare.AsDirection(Square))?.IsVoid() ?? false))
-            Generator.PlaceFloor(Square, VendorGround);
-          else
-            Generator.PlaceSolidWall(Square, VendorBarrier, WallSegment.Pillar);
+        foreach (var OutsideSquare in VendorOutsideSquareArray)
+        {
+          VendorZone.ForceSquare(OutsideSquare);
+
+          if ((OutsideSquare.X == VendorSquare.X || OutsideSquare.Y == VendorSquare.Y) && !(OutsideSquare.Adjacent(VendorSquare.AsDirection(OutsideSquare))?.IsVoid() ?? false))
+            Generator.PlaceFloor(OutsideSquare, VendorGround);
+          else if (!VendorBlockedSquareArray.Contains(OutsideSquare))
+            Generator.PlaceSolidWall(OutsideSquare, VendorBarrier, WallSegment.Pillar);
         }
 
-        foreach (var Square in VendorMap.GetCircleInnerSquares(VendorCircle))
+        foreach (var InsideSquare in VendorMap.GetCircleInnerSquares(VendorCircle))
         {
-          VendorZone.ForceSquare(Square);
+          VendorZone.ForceSquare(InsideSquare);
 
-          Generator.PlaceFloor(Square, VendorGround);
+          Generator.PlaceFloor(InsideSquare, VendorGround);
         }
 
         VendorZone.SetLit(true);
@@ -8677,8 +8763,7 @@ H-----------H
           }
         }
 
-        if (VendorClearing.Circle.Radius < 5)
-          Maker.RepairVeranda(VendorMap, new Region(VendorClearing.Circle), Codex.Grounds.dirt, IsLit: true);
+        Maker.RepairVeranda(VendorMap, new Region(VendorClearing.Circle), Codex.Grounds.dirt, IsLit: true);
 
         BuildStop();
 
@@ -8728,7 +8813,10 @@ H-----------H
 
           var ZooBarrier = Codex.Barriers.stone_wall;
 
-          foreach (var ZooSquare in ZooMap.GetCircleOuterSquares(ZooCircle))
+          var ZooOutsideSquareArray = ZooMap.GetCircleOuterSquares(ZooCircle).ToArray();
+          var ZooBlockedSquareArray = ZooOutsideSquareArray.Where(S => S.GetAdjacentSquares().Any(S => S.Wall != null)).ToArray();
+
+          foreach (var ZooSquare in ZooOutsideSquareArray)
           {
             if (ZooSquare == EntranceSquare)
             {
@@ -8738,7 +8826,7 @@ H-----------H
             {
               Generator.PlaceWall(ZooSquare, Codex.Barriers.iron_bars, WallStructure.Solid, WallSegment.Pillar);
             }
-            else if (ZooSquare.Boulder == null)
+            else if (ZooSquare.Boulder == null && !ZooBlockedSquareArray.Contains(ZooSquare))
             {
               if (ZooBarrier.Opaque && ZooSquare.Floor != null)
                 Generator.RemoveFloor(ZooSquare);

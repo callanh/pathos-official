@@ -13,35 +13,35 @@ AfflictionName,reflux,reflusso
 AfflictionName,sliming,slime-ificazione
 AfflictionName,worms,vermi
 AnatomyAbsenceText,MINDLESS,SENZA MENTE
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,SENZA SANGUE
 AnatomyAbsenceText,NO EARS,SENZA ORECCHIE
 AnatomyAbsenceText,NO EYES,SENZA OCCHI
 AnatomyAbsenceText,NO FEET,SENZA PIEDI
 AnatomyAbsenceText,NO HANDS,SENZA MANI
 AnatomyAbsenceText,NO HEAD,SENZA TESTA
 AnatomyAbsenceText,NO LIMBS,SENZA ARTI
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,NON AMORFO
+AnatomyAbsenceText,NOT MOUNTED,NON CAVALCATO
+AnatomyAbsenceText,NOT WARM,NON CALDO
 AnatomyAbsenceText,VOICELESS,SENZA VOCE
 AnatomyName,amorphous,amorfo
 AnatomyName,blood,sangue
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
+AnatomyName,ears,orecchie
+AnatomyName,eyes,occhi
+AnatomyName,feet,piedi
+AnatomyName,hands,mani
+AnatomyName,head,testa
+AnatomyName,limbs,arti
+AnatomyName,mind,mente
 AnatomyName,mounted,montato
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,thermal,temperatura
+AnatomyName,voice,voce
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Un lungo mantello aperto sul davanti e fissato al petto con una fermaglio.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un cappotto di armatura di mithril corto ma dall'aspetto robusto.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Un cappotto di armatura di mithril dall'aspetto sottile e delicato.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Un cappotto di armatura di mithril slanciato e lucido.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Questo classico accessorio da mago è un cappello a punta decorato con lune e stelle.
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,verga di adamantite
 AppearanceName,agate ring,anello di agata
 AppearanceName,aluminium wand,bacchetta di alluminio
 AppearanceName,angled poleaxe,ascia con asta inclinata
@@ -50,7 +50,7 @@ AppearanceName,bag,borsa
 AppearanceName,balsa wand,bacchetta di balsa
 AppearanceName,bamboo arrow,freccia di bambù
 AppearanceName,bamboo wand,bacchetta di bambù
-AppearanceName,beaked polearm,alabarda appuntita
+AppearanceName,beaked polearm,arma inastata appuntita
 AppearanceName,bell,campana di bronzo
 AppearanceName,big book,libro grande
 AppearanceName,black book,libro nero
@@ -109,7 +109,7 @@ AppearanceName,crude short sword,spada corta grezza
 AppearanceName,crude spear,giavellotto grezzo
 AppearanceName,crystal staff,verga di cristallo
 AppearanceName,crystal wand,bacchetta di cristallo
-AppearanceName,curved polearm,arma curvata con asta
+AppearanceName,curved polearm,arma inastata curva
 AppearanceName,curved sword,spada curva
 AppearanceName,curved wand,bacchetta curva
 AppearanceName,cyan book,libro azzurro
@@ -133,7 +133,7 @@ AppearanceName,emerald potion,pozione di smeraldo
 AppearanceName,emerald ring,anello di smeraldo
 AppearanceName,engagement ring,anello di fidanzamento
 AppearanceName,etched helmet,elmo inciso
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,arma inastata a due punte esotica
 AppearanceName,faded book,libro ingiallito
 AppearanceName,faded pall,scolorito
 AppearanceName,fencing gloves,guanti da scherma
@@ -141,7 +141,7 @@ AppearanceName,figurine,statuetta
 AppearanceName,fine mithril-coat,bel cappotto di mithril
 AppearanceName,fizzy potion,pozione frizzante
 AppearanceName,flute,flauto
-AppearanceName,forked polearm,arma a forca con asta
+AppearanceName,forked polearm,arma instata forcata
 AppearanceName,fur boots,stivali di pelliccia
 AppearanceName,fuzzy book,libro sfocato
 AppearanceName,glass orb,sfera di vetro
@@ -170,9 +170,9 @@ AppearanceName,heavy gun,arma da fuoco pesante
 AppearanceName,hexagonal amulet,amuleto esagonale
 AppearanceName,hexagonal wand,bacchetta esagonale
 AppearanceName,hiking boots,stivali da scalata
-AppearanceName,hilted polearm,lancia con elsa
+AppearanceName,hilted polearm,arma inastata con elsa
 AppearanceName,hooded cloak,mantello con cappuccio
-AppearanceName,hooked polearm,asta uncinata
+AppearanceName,hooked polearm,arma inastata uncinata
 AppearanceName,horn,corno
 AppearanceName,horseshoe,ferro di cavallo
 AppearanceName,humongous book,libro gigantesco
@@ -259,7 +259,7 @@ AppearanceName,plumed helmet,elmo piumato
 AppearanceName,pole cleaver,mannaia
 AppearanceName,pole sickle,falcetto lungo
 AppearanceName,polished silver shield,scudo d'argento lucido
-AppearanceName,pronged polearm,asta a punta
+AppearanceName,pronged polearm,arma inastata a punta
 AppearanceName,pruning hook,gancio di potatura
 AppearanceName,puce potion,pozione violacea
 AppearanceName,purple book,pozione porpora
@@ -328,7 +328,7 @@ AppearanceName,silver book,libro di argento
 AppearanceName,silver ring,anello di argento
 AppearanceName,silver slug,lumaca d'argento
 AppearanceName,silver wand,bacchetta di argento
-AppearanceName,single-edged polearm,asta a taglio singolo
+AppearanceName,single-edged polearm,arma inastata a lama singola
 AppearanceName,sky blue potion,pozione blu cielo
 AppearanceName,slippery cloak,mantello scivoloso
 AppearanceName,small gun,piccola pistola
@@ -356,9 +356,9 @@ AppearanceName,thick book,libro spesso
 AppearanceName,thin book,libro sottile
 AppearanceName,thin cake,torta sottile
 AppearanceName,thonged club,mazza di ferro
-AppearanceName,three-pointed polearm,arma a tre punte
+AppearanceName,three-pointed polearm,arma inastata a tre punte
 AppearanceName,throwing axe,ascia da lancio
-AppearanceName,throwing disc,
+AppearanceName,throwing disc,disco da lancio
 AppearanceName,throwing spear,giavellotto da lancio
 AppearanceName,throwing star,stella da lancio
 AppearanceName,throwing stick,bastone da lancio
@@ -367,7 +367,7 @@ AppearanceName,tin wand,bacchetta di latta
 AppearanceName,tiny book,libro minuto
 AppearanceName,topaz ring,anello di topazio
 AppearanceName,torn book,libro strappato
-AppearanceName,toy sword,
+AppearanceName,toy sword,spada giocattolo
 AppearanceName,triangular amulet,amuleto triangolare
 AppearanceName,turquoise book,libro turchese
 AppearanceName,twisted ring,anello attorcigliato
@@ -378,7 +378,7 @@ AppearanceName,velvet book,libro di velluto
 AppearanceName,violet book,libro viola
 AppearanceName,violet gem,gemma viola
 AppearanceName,visored helmet,casco con visiera
-AppearanceName,vulgar polearm,asta volgare
+AppearanceName,vulgar polearm,arma inastata volgare
 AppearanceName,walking shoes,scarpe da passeggio
 AppearanceName,warped amulet,amuleto deformato
 AppearanceName,wedding ring,fede nuziale
@@ -414,7 +414,7 @@ AttackType,horn,cornata
 AttackType,kick,calcio
 AttackType,punch,pugno
 AttackType,shriek,strillo
-AttackType,slap,
+AttackType,slap,schiaffo
 AttackType,spell,incantesimo
 AttackType,spit,sputo
 AttackType,splash,schizzo
@@ -459,11 +459,11 @@ BarrierName,cave wall,parete di grotta
 BarrierName,hell brick,mattone infernale
 BarrierName,iron bars,barre di ferro
 BarrierName,jade wall,muro di giada
-BarrierName,sewer wall,
+BarrierName,sewer wall,muro delle fogne
 BarrierName,shroom,fungo
 BarrierName,stone wall,muro di pietra
 BarrierName,tree,albero
-BarrierName,wooden wall,
+BarrierName,wooden wall,muro di legno
 BeamName,acid,di acido
 BeamName,cold,di freddo
 BeamName,death,di morte
@@ -484,7 +484,7 @@ BlockName,crystal boulder,masso di cristallo
 BlockName,gold boulder,masso d'oro
 BlockName,statue,statua
 BlockName,stone boulder,masso di pietra
-BlockName,trophy,
+BlockName,trophy,trofeo
 BlockName,wooden barrel,barile di legno
 BoonDescription,Ask for a unicorn to join your party.,Chiedi ad un unicorno di unirsi al tuo gruppo.
 BoonDescription,Bless one item in your inventory or on the ground.,Benedici un oggetto nel tuo inventario o sul terreno.
@@ -841,7 +841,7 @@ CounterName,captures,cattura
 CounterName,casts,lancia
 CounterName,chants,canta
 CounterName,constructs,costruisce
-CounterName,copies,
+CounterName,copies,copia
 CounterName,crafts,crea
 CounterName,decapitations,decapitazioni
 CounterName,digs,scava
@@ -860,7 +860,7 @@ CounterName,jumps,salta
 CounterName,kicks,calci
 CounterName,lifesaves,salvavita
 CounterName,mimics,imita
-CounterName,mounts,
+CounterName,mounts,cavalca
 CounterName,moves,si muove
 CounterName,opens,si apre
 CounterName,packs,confezioni
@@ -932,7 +932,7 @@ DeviceName,noxious pool,piscina nociva
 DeviceName,pit,fossa
 DeviceName,poison gas trap,trappola per gas velenosi
 DeviceName,polymorph trap,trappola metamorfosi
-DeviceName,pressure plate,
+DeviceName,pressure plate,pedana a pressione
 DeviceName,scything blade trap,trappola della lama falciante
 DeviceName,shock trap,trappola elettrica
 DeviceName,silence trap,trappola del silenzio
@@ -975,7 +975,7 @@ EffectProperty,hordes,orde
 EffectProperty,items,oggetti
 EffectProperty,kinds,tipi
 EffectProperty,lies,bugie
-EffectProperty,loyal only,
+EffectProperty,loyal only,solo leale
 EffectProperty,material,materiale
 EffectProperty,materials,materiali
 EffectProperty,polite,educato
@@ -1014,20 +1014,20 @@ EffectType,charging,in carica
 EffectType,charm,affascino
 EffectType,clone character,personaggio clone
 EffectType,concealing,nascondere
-EffectType,connect passage,
-EffectType,convert asset,convertire asset
+EffectType,connect passage,connetti passaggi
+EffectType,convert asset,convertire risorsa
 EffectType,convert boulder,convertire masso
 EffectType,convert door,convertire la porta
 EffectType,convert fixture,convertire trappola
 EffectType,convert floor,convertire piano
-EffectType,convert spill,
+EffectType,convert spill,convertire sversamento
 EffectType,convert wall,convertire muro
 EffectType,create boulder,creare un masso
 EffectType,create fixture,creare una trappola
 EffectType,create golem,creare golem
 EffectType,create horde,creare un'orda
 EffectType,create nook,creare un angolo
-EffectType,create spill,
+EffectType,create spill,creare uno sversamento
 EffectType,create trap,creare trappola
 EffectType,create wall,creare muro
 EffectType,decapitate,decapita
@@ -1044,7 +1044,7 @@ EffectType,enchant asset,incanta risorsa
 EffectType,engulf,inghiottire
 EffectType,enlightenment,illuminazione
 EffectType,exchange,scambio
-EffectType,extinguish spill,
+EffectType,extinguish spill,chiudi sversamento
 EffectType,gain level,guadagnare livello
 EffectType,gain skill,acquisire abilità
 EffectType,genocide,genocidio
@@ -1061,7 +1061,7 @@ EffectType,lose skill,perdere abilità
 EffectType,lose talent,perdere talento
 EffectType,malnutrition,malnutrizione
 EffectType,mapping,mappatura
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,mobilita masso
 EffectType,murder,omicidio
 EffectType,nutrition,nutrizione
 EffectType,opening,apertura
@@ -1073,7 +1073,7 @@ EffectType,raise dead,resuscitare morti
 EffectType,recall,richiamare
 EffectType,release,pubblicazione
 EffectType,remove curse,rimuovi la maledizione
-EffectType,remove spill,
+EffectType,remove spill,rimuovi sversamento
 EffectType,remove transient,rimuovi transitorio
 EffectType,replicate asset,replicare risorsa
 EffectType,restock,rifornire
@@ -1093,11 +1093,11 @@ EffectType,transition,transizione
 EffectType,unafflict,non afflitto
 EffectType,unpolymorph,de-metamorfizza
 EffectType,unpunish,perdona
-EffectType,unstuck,
+EffectType,unstuck,sblocca
 EffectType,visit shop,visita il negozio
 EffectType,visit shrine,visitare il santuario
 EffectType,visit zoo,visita zoo
-EffectType,vomit,
+EffectType,vomit,vomita
 EffectType,warping,teletrasporto
 EggName,black dragon,drago nero
 EggName,blue dragon,drago blu
@@ -1175,7 +1175,7 @@ EntityName,abbot,abate
 EntityName,acid blob,chiazza di acido
 EntityName,acid worm,verme acido
 EntityName,acolyte,accolito
-EntityName,adamantine golem,
+EntityName,adamantine golem,golem di adamantite
 EntityName,adult black dragon,drago nero adulto
 EntityName,adult blue dragon,drago blu adulto
 EntityName,adult deep dragon,drago profondo adulto
@@ -1267,7 +1267,7 @@ EntityName,blood imp,diavoletto del sangue
 EntityName,bloodshot eye,occhio iniettato di sangue
 EntityName,bloodworm,verme colore sangue
 EntityName,blue jelly,gelatina blu
-EntityName,blue light,
+EntityName,blue light,luce blu
 EntityName,bone devil,diavolo di osso
 EntityName,brown mould,muffa marrone
 EntityName,brown pudding,melma marrone
@@ -1367,7 +1367,7 @@ EntityName,elf mummy,mummia elfa
 EntityName,elf zombie,zombie elfo
 EntityName,Elwing,Elwing
 EntityName,embalmer,imbalsamatore
-EntityName,emerald golem,
+EntityName,emerald golem,golem di smeraldo
 EntityName,energy vortex,vortice energetico
 EntityName,erinys,erinni
 EntityName,ettin,ettin
@@ -1416,8 +1416,8 @@ EntityName,giant,gigante
 EntityName,giant ant,formica gigante
 EntityName,giant badger,tasso gigante
 EntityName,giant bat,pipistrello gigante
-EntityName,giant beetle,scarabeo gigante
-EntityName,giant cockroach,scarafaggio gigante
+EntityName,giant beetle,scarafaggio gigante
+EntityName,giant cockroach,blatta gigante
 EntityName,giant crab,granchio gigante
 EntityName,giant eel,anguilla gigante
 EntityName,giant flea,pulce gigante
@@ -1529,7 +1529,7 @@ EntityName,keystone kop,polizia di keystone
 EntityName,keystone lieutenant,tenente di keystone
 EntityName,keystone sergeant,sergente di keystone
 EntityName,killer bee,ape assassina
-EntityName,killer beetle,scarabeo assassino
+EntityName,killer beetle,scarafaggio assassino
 EntityName,killer food ration,razione di cibo killer
 EntityName,killer iron ration,razione militare killer
 EntityName,killer tripe ration,razione di trippa killer
@@ -1540,7 +1540,7 @@ EntityName,kobold,coboldo
 EntityName,kobold king,re coboldo
 EntityName,kobold lord,signore coboldo
 EntityName,kobold mummy,mummmia coboldo
-EntityName,kobold scout,
+EntityName,kobold scout,ricognitore coboldo
 EntityName,kobold shaman,sciamano coboldo
 EntityName,kobold warrior,guerriero coboldo
 EntityName,kobold zombie,zombi coboldo
@@ -1594,7 +1594,7 @@ EntityName,master mind flayer,capo dei mind flayer
 EntityName,mastodon,mastodonte
 EntityName,Maugneshaagar,Maugneshaagar
 EntityName,medusa,medusa
-EntityName,mellified man,
+EntityName,mellified man,uomo mellificato
 EntityName,merchant,mercante
 EntityName,Metamorphius,Metamorphius
 EntityName,migo drone,scagnozzo migo
@@ -1655,7 +1655,7 @@ EntityName,panther,pantera
 EntityName,pantherwere,pantherwere
 EntityName,paper golem,golem di carta
 EntityName,parrot,pappagallo
-EntityName,pearl golem,
+EntityName,pearl golem,golem di perla
 EntityName,pegasus,pegaso
 EntityName,Pelias,Pelias
 EntityName,Pestilence,Pestilence
@@ -1670,7 +1670,7 @@ EntityName,pit viper,vipera
 EntityName,pixie,folletto
 EntityName,plains centaur,centauro delle pianure
 EntityName,Planetar,Planetar
-EntityName,plasmoid,
+EntityName,plasmoid,plasmoide
 EntityName,plastic golem,golem di plastica
 EntityName,pony,pony
 EntityName,proudfoot,piede orgoglioso
@@ -1691,7 +1691,7 @@ EntityName,rancid jelly,gelatina rancida
 EntityName,rat king,re dei topi
 EntityName,ratwere,ratwere
 EntityName,recluse spider,ragno recluso
-EntityName,red light,
+EntityName,red light,luce rossa
 EntityName,red mould,muffa rossa
 EntityName,red naga,naga rossa
 EntityName,red naga hatchling,cucciolo di naga rosso
@@ -1717,7 +1717,7 @@ EntityName,satyr,satiro
 EntityName,scorpion,scorpione
 EntityName,Scorpius,Scorpius
 EntityName,scramper,raschiatore
-EntityName,seal,
+EntityName,seal,foca
 EntityName,sergeant,sergente
 EntityName,sewer rat,ratto di fogna
 EntityName,shade,ombreggiatura
@@ -1772,8 +1772,8 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigre maledetta
 EntityName,titan,titano
 EntityName,titanothere,rinoceroide
-EntityName,topaz golem,
-EntityName,tortle,
+EntityName,topaz golem,golem di topazio
+EntityName,tortle,tartarugoide
 EntityName,tracker,cacciatore
 EntityName,transmuter,transmutatore
 EntityName,trapper,perforatore
@@ -1983,7 +1983,7 @@ FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{Ch
 FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} ha la sua vita diminuita di {ModifierNumber}
 FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} ha il suo mana diminuito di {ModifierNumber}
 FormatText,{CharacterName} has forgotten something,{CharacterName} ha dimenticato qualcosa
-FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} ha incrementato la sua {AttributeName} di {ModifierNumber}
+FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} ha incrementato il suo {AttributeName} di {ModifierNumber}
 FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} ha aumentato la sua vita di {ModifierNumber}
 FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} ha incrementato il suo mana di {ModifierNumber}
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName} è poco pratico in {AttributeName} e non è capace di {ActionName}
@@ -2059,7 +2059,7 @@ FormatText,{Entropy} entropy,{Entropy} entropia
 FormatText,{ExplosionName} explosion,esplosione {ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} oggetto
 FormatText,{ItemCount} items,{ItemCount} oggetti
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} more items,{ItemCount} oggetti in più
 FormatText,{JournalDelay} sec,{JournalDelay} sec
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} e {Follower:CharacterName} sono ora alleati
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} e {Follower:CharacterName} non sono più alleati
@@ -2069,7 +2069,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} con quale oggetto?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} in quale direzione?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} quale oggetto nel {FeatureName}?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} cavalca {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} lancia
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {Enchantment} {ItemName} {CharacterName} {SanctityName} {ContainerQualifier} {Charges}
@@ -2083,37 +2083,37 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,{StrikeName} digestione
 FormatText,{StrikeName} strike,colpo {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} ha rubato {AssetName} da {Victim:CharacterName}
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} ha rubato oggetti da {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},dopo aver raggiunto il {RecordDepth}° livello del dungeon
 FormatText,animate {CharacterName},anima {CharacterName}
 FormatText,boost {AttributeName} by enchantment,migliora {AttributeName} per incantamento
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},rompe {FeatureName}
 FormatText,cap {Percent}%,limite {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancia {SpellName} su quale oggetto?
 FormatText,Cast {SpellName} which direction?,Lancia {SpellName} in quale direzione?
 FormatText,Congratulations on reaching the end of the {QuestName}!,Congratulazioni per aver terminato {QuestName}!
 FormatText,cripple {AttributeName},peggiora {AttributeName}
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},diminuisce {AttributeName} per {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},diminuisce tutte le abilità per {AdjustmentDice}
+FormatText,decrease one ability by {AdjustmentDice},diminuisce un'abilità per {AdjustmentDice}
 FormatText,diminish {ManaDice},diminuisci {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},fai cadere {BlockName} {DamageDice} {ElementName}
 FormatText,energise {ManaDice},energizza {ManaDice}
 FormatText,Equip {CharacterName},Equipaggia {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} punti fama e {RecordKills} uccisioni
 FormatText,Feed which item to {CharacterName}?,Con quale oggetto desideri sfamare {CharacterName}?
-FormatText,from {Cause},
+FormatText,from {Cause},da {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,ottieni resistenza a {ElementName} del {Percent}%
 FormatText,gain {TalentName} talent,ottieni il talento di {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Ave {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Ave {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},danneggia {DamageDice} {ElementName}
 FormatText,heal {LifeDice},cura {LifeDice}
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},migliora {AttributeName} per {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},migliora tutte le abilità per {AdjustmentDice}
+FormatText,increase one ability by {AdjustmentDice},migliora un'abilità per {AdjustmentDice}
 FormatText,learn spell {SpellName},impara l'incantesimo {SpellName}
 FormatText,level {Depth},{Depth}° piano
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},livello {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
@@ -2123,8 +2123,8 @@ FormatText,LOCKED {GATENAME},CHIUSO {GATENAME}
 FormatText,not {EffectProperty},non {EffectProperty}
 FormatText,range {Dice},range {Dice}
 FormatText,RANKED #{RankNumber},CLASSIFICATO #{RankNumber}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,ripristina vita da {Percent}%
+FormatText,replenish mana from {Percent}%,ripristina mana da {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Resuscitato {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},vendicarsi {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},vendicarsi {Chance} alla morte {AttackType}
@@ -2143,7 +2143,7 @@ FormatText,unless resists {ElementName},a meno che non resista {ElementName}
 FormatText,unless target has {PropertyName},a meno che bersaglio ha {PropertyName}
 FormatText,versus {Something},contro {Something}
 FormatText,when {Chance},quando {Chance}
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},quando {GROUNDNAME}
 FormatText,when {ITEMNAME},quando {ITEMNAME}
 FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
@@ -2151,11 +2151,11 @@ FormatText,when {PROPERTYNAME},quando {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},quando {SANCTITYNAME}
 FormatText,when {Something},quando {Something}
 FormatText,when {STANDINGNAME},quando {STANDINGNAME}
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},quando resiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Questa pesante porta è fatta di dure formazioni cristalline e non è facilmente danneggiabile.
 GateName,crystal door,porta di cristallo
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,porta d'oro
+GateName,iron door,porta di ferro
 GateName,wooden door,porta di legno
 GenderHimself,herself,lei stessa
 GenderHimself,himself,lui stesso
@@ -2172,14 +2172,14 @@ GenderName,non-binary,non binario
 GenerationType,module,modulo
 GenerationType,quest,quest
 GradeName,artifact,artefatto
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,esotico
+GradeName,standard,standard
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La superfice di pietra fresca ha fattezze immacolate ma è seganta da danni e dal tempo.
-GroundName,cave floor,
+GroundName,cave floor,pavimento di caverna
 GroundName,chasm,voragine
 GroundName,dirt,pavimeno sporco
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,pavimento d'oro
+GroundName,granite floor,pavimento di granito
 GroundName,grass,erba
 GroundName,hive floor,pavimento ad alveare
 GroundName,ice,ghiaccio
@@ -2189,8 +2189,8 @@ GroundName,metal floor,pavimento di metallo
 GroundName,moss,muschio
 GroundName,obsidian floor,pavimento di ossidiana
 GroundName,sand,sabbia
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,pavimento di fogna
+GroundName,snow,neve
 GroundName,stone floor,pavimento di pietra
 GroundName,stone path,corridoio di pietra
 GroundName,water,acqua
@@ -2199,8 +2199,8 @@ HordeName,ant,formica
 HordeName,ape,gorilla
 HordeName,bat,pipistrello
 HordeName,bee,ape
-HordeName,beetle,
-HordeName,cockroach,scarafaggio
+HordeName,beetle,scarafaggio
+HordeName,cockroach,blatta
 HordeName,couatl,couatl
 HordeName,coyote,coyote
 HordeName,demon,demone
@@ -2247,54 +2247,54 @@ IdentifyTypeName,One,Uno
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Una maschera di stoffa che ostruisce completamente la vista di chi la indossa.
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Tantissimi utensili per il condensamento dei corpi, inclusi lattine vuote e attrezzi da macellaio."
 ItemDescription,A compact hand-held firearm.,Un'arma da fuoco compatta.
-ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",
-ItemDescription,A curved single-edged blade often used by cavalry.,
-ItemDescription,"A curved yellow fruit, and a great source of fibre.",
-ItemDescription,"A flat throwing weapon made of wood, often used for hunting.",
-ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",
-ItemDescription,A foreign device which creates perfect visual depictions of reality.,
-ItemDescription,A hand-held brass horn.,
-ItemDescription,"A hard rock, smooth and therefore aerodynamic.",
+ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.",Una lama curva usata spesso dalla cavalleria. È specialmente efficace contro creature infernali.
+ItemDescription,A curved single-edged blade often used by cavalry.,Una lama curva spesso usata dalla cavalleria.
+ItemDescription,"A curved yellow fruit, and a great source of fibre.",Un frutto giallo e ricurvo. Ottima fonte di fibre.
+ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Un'arma da lancio realizzata in legno, spesso usata per cacciare."
+ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.",Una torta rotonda e piatta. Probabilmente è stata cucinata in una pentola.
+ItemDescription,A foreign device which creates perfect visual depictions of reality.,Un dispositivo dall'aspetto alieno che può creare copie visive perfette della realtà.
+ItemDescription,A hand-held brass horn.,Un corno d'ottone da tenere in mano.
+ItemDescription,"A hard rock, smooth and therefore aerodynamic.","Una roccia dura, liscia e areodinamica."
 ItemDescription,A hardwood pole. It is an unassuming but formidable weapon in trained hands.,
 ItemDescription,"A hearty, multi-portioned and nutritious vegetarian meal.",
 ItemDescription,"A heavy and long double-edged blade. Similar to a long sword, scaled-up specifically for two-handed usage.",
-ItemDescription,A heavy iron hammer designed specifically for use in melee combat.,
-ItemDescription,A heavy suit of armour made up of many strips of metal.,
+ItemDescription,A heavy iron hammer designed specifically for use in melee combat.,Un pesante martello di ferro progettato per l'uso nel combattimento corpo a corpo.
+ItemDescription,A heavy suit of armour made up of many strips of metal.,Una pesante armatura realizzata con molte strisce di metallo.
 ItemDescription,"A horizontal, mechanically-aided bow and arrow with a shoulder stock.",
-ItemDescription,A key designed to open all mundane locks.,
+ItemDescription,A key designed to open all mundane locks.,Una chiave progettata per aprire qualsiasi lucchetto non magico.
 ItemDescription,"A leather pouch set between two cords, meant for launching small projectiles.",
 ItemDescription,"A lightweight protective panel strapped to the forearm, made from wood with metal reinforcement.",
-ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",
-ItemDescription,A long pipe meant for shooting darts through force of breath.,
-ItemDescription,A long thrusting polearm best suited to mounted combat.,
+ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Un lungo coltello di ferro con una punta affilata, perfetto per essere lanciato."
+ItemDescription,A long pipe meant for shooting darts through force of breath.,Un lungo tubicino dal quale è possibile lanciare dardi con la forza del fiato.
+ItemDescription,A long thrusting polearm best suited to mounted combat.,Un'arma inastata pensata per il combattimento a cavallo.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",
-ItemDescription,A long-shafted arrow with a distinctive tip.,
+ItemDescription,A long-shafted arrow with a distinctive tip.,Una lunga freccia con una punta distintamente riconoscibile.
 ItemDescription,A mace that is spiked on its head.,Una mazza appuntita ed estremamente pericolosa.
-ItemDescription,A meal made from the stomach lining of an animal.,
-ItemDescription,"A package of preserved meats, all dried and chewy.",
-ItemDescription,A pair of sturdy leather boots which extend upward until just below the knee.,
+ItemDescription,A meal made from the stomach lining of an animal.,Un pasto realizzato con lo stomaco di un animale.
+ItemDescription,"A package of preserved meats, all dried and chewy.",Un pacchetto contenente una gran varietà di carne essiccata.
+ItemDescription,A pair of sturdy leather boots which extend upward until just below the knee.,Un paio di resistenti stivali in pelle che si estendono in alto fin appena sotto le ginocchia.
 ItemDescription,A pair of sturdy leather boots which extend upwards to just above the ankle.,
 ItemDescription,"A pointed iron bar fashioned at a right-angle to a sturdy wooden handle, used to pierce through hard surfaces.",
-ItemDescription,A pointed metal cylinder meant to be discharged from a firearm.,
-ItemDescription,A portable source of light fashioned out of copper and fuelled by oil.,
+ItemDescription,A pointed metal cylinder meant to be discharged from a firearm.,Un appuntito cilindro metallico pensato per l'uso con le armi da fuoco.
+ItemDescription,A portable source of light fashioned out of copper and fuelled by oil.,Una fonte di luce portatile: è realizzata in rame ed è alimentata ad olio.
 ItemDescription,A projectile consisting of a wooden shaft with a sharp metal tip at its front and stabilising fins at its rear.,
 ItemDescription,A righteous sword forged by a revered blacksmith many years ago who set out to hone his craft and to create the ultimate blade. The noble intent of its creator lingers in this weapon to cut down the wicked and protect the innocent.,
 ItemDescription,"A sanctimonious biscuit. A miracle to the meek, a scourge to the undead.",
 ItemDescription,"A semi-rigid weapon made up of a notched wooden shaft with a drawstring attached to both ends, used to launch arrows.",
 ItemDescription,A sharp iron wedge fashioned to a sturdy handle.,
 ItemDescription,"A sharp metal throwing weapon, smaller than a hand and shaped like a star.",
-ItemDescription,A short and light double-edged blade.,
+ItemDescription,A short and light double-edged blade.,Una lama corta e lggera che presenta una lama doppia.
 ItemDescription,"A slimy, scaly sea creature, in its entirety. Good for a meal.",
 ItemDescription,A small cutting utensil made of metal with a wooden handle.,
 ItemDescription,A small iron tool designed for opening all sorts of locks.,
 ItemDescription,A small missile with a pointed tip meant for throwing.,
 ItemDescription,A small missile with a reservoir of liquid delivered through a hollow pointed tip.,
-ItemDescription,"A soft-brimmed hat, somewhat out of fashion.",
+ItemDescription,"A soft-brimmed hat, somewhat out of fashion.","Un cappello soffice e orlato, forse un po' fuori moda."
 ItemDescription,A sophisticated bludgeon with a heavy iron head.,
 ItemDescription,A spacious bag made of incredibly stretchy cotton.,
 ItemDescription,A spacious cloth bag.,Una spaziosa sacca di stoffa.
-ItemDescription,A stick of cured meat.,
+ItemDescription,A stick of cured meat.,Un invitante pezzo di salume.
 ItemDescription,"A stick of highly explosive material, with a short fuse on one end.",
 ItemDescription,"A straight, double-edged, and often cruciform blade.",
 ItemDescription,A sturdy and solid mineral.,Un duro e resistente minerale.
@@ -2303,18 +2303,18 @@ ItemDescription,"A surviving portion of the legendary wall of Verimurus, an anci
 ItemDescription,"A sweet citrus fruit, coloured eponymously.",
 ItemDescription,"A sweet custard-filled pie with a thin crust, topped with whipped cream.",
 ItemDescription,"A sweet, round fruit, of the red variety. Reportedly a great supplement to your physical health.",
-ItemDescription,"A tall, asymmetric bow.",
-ItemDescription,"A thick leather coat, constructed to withstand weather and wear.",
+ItemDescription,"A tall, asymmetric bow.",Un arco lungo e asimmetrico.
+ItemDescription,"A thick leather coat, constructed to withstand weather and wear.","Un cappotto molto spesso, progettato per resistere alle intemperie e all'utilizzo."
 ItemDescription,"A thick wooden bludgeon. What it lacks in style, it makes up for in function.",
 ItemDescription,A thin and agile sword meant almost exclusively for thrusting.,
 ItemDescription,"A two-handed firearm, steadied at the shoulder, often used in small game hunting. It packs quite a punch.",
 ItemDescription,"A wonder of dwarven ingenuity and craftsmanship, stolen and repurposed by orcs. Mounted on a long shaft, this tool is a formidable weapon on horseback or warg-back. The electrical current that powers its drill will occasionally discharge on whomever is willing to stand in the way of this monstrosity.",
 ItemDescription,Agricultural implement consisting of a long curving blade and fastened to an angled handle.,
-ItemDescription,An ambiguous curiosity. It seems edible.,
+ItemDescription,An ambiguous curiosity. It seems edible.,Un'aliena stramberia... sembra commestibile.
 ItemDescription,An article of leather clothing covering the torso that hangs around the neck and on the shoulders.,
 ItemDescription,An article of waterproof cotton clothing covering the torso that hangs around the neck and on the shoulders.,
-ItemDescription,An elven travel food. It is incredibly satiating.,
-ItemDescription,An extremely sharp little blade used for precise incisions.,
+ItemDescription,An elven travel food. It is incredibly satiating.,Un pranzo da viaggio elfico. Estremamente saziante.
+ItemDescription,An extremely sharp little blade used for precise incisions.,Una lama estremamente affilata utilizzata per realizzare precisissime incisioni.
 ItemDescription,An inconspicuous snack that tells deep secrets.,
 ItemDescription,An iron projectile made up of a shaft with a sharpened square-pyramid tip.,
 ItemDescription,"An orange root-vegetable, commonly believed to improve eyesight.",
@@ -2370,22 +2370,22 @@ ItemDescription,This weapon consists of a spearhead mounted on a long wooden sha
 ItemDescription,"This weapon is a curved blade attached to a pole by binding the lower two-thirds of the blade to the side of the pole, to form a sort of axe.",
 ItemDescription,This withered hand is the last remnant of an ancient and powerful lich.,
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,
-ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,
-ItemDescription,Zapping it at a wall creates a big tunnel.,
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bident,
-ItemName,adamantine bow,
-ItemName,adamantine dagger,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,Sandali alati realizzati con oro imperituro che permettono a chi li indossa di volare in modo veloce e silenzioso.
+ItemDescription,Zapping it at a wall creates a big tunnel.,Castarla contro un muro crea un lungo tunnel.
+ItemName,adamantine arrow,freccia di adamantite
+ItemName,adamantine axe,ascia di adamantite
+ItemName,adamantine bident,bidente di adamantite
+ItemName,adamantine bow,arco di adamantite
+ItemName,adamantine dagger,pugnale di adamantite
+ItemName,adamantine greataxe,ascia mastodontica di adamantite
+ItemName,adamantine greatsword,spada mastodontica di adamantite
+ItemName,adamantine long sword,spada lunga di adamantite
+ItemName,adamantine plate mail,armatura a piastre di adamantite
+ItemName,adamantine rapier,stocco di adamantite
+ItemName,adamantine sabre,sciabola di adamantite
+ItemName,adamantine short sword,spada corta di adamantite
+ItemName,adamantine spear,giavellotto di adamantite
+ItemName,adamantine two-handed sword,spada a due mani di adamantite
 ItemName,agate,agata
 ItemName,aklys,giavellotto romano
 ItemName,alchemy smock,grembiule da alchimista
@@ -2420,7 +2420,7 @@ ItemName,banana,banana
 ItemName,banded mail,corazza a strisce
 ItemName,bardiche,berdica
 ItemName,battle robe,tunica da battaglia
-ItemName,battle staff,
+ItemName,battle staff,verga da battaglia
 ItemName,battle-axe,ascia da battaglia
 ItemName,beartrap,tagliola
 ItemName,bec de corbin,mazzapicchio
@@ -2508,7 +2508,7 @@ ItemName,brass knuckles,tirapugni d'ottone
 ItemName,broadsword,spadone
 ItemName,bronze bell,campana di bronzo
 ItemName,bronze plate mail,armatura a piastre di bronzo
-ItemName,Brumstyk,
+ItemName,Brumstyk,Brumstyk
 ItemName,bullet,proiettile
 ItemName,bullwhip,frusta
 ItemName,caltrops,piedi di corvo
@@ -2518,7 +2518,7 @@ ItemName,Carapace,Carrapace
 ItemName,carrot,carota
 ItemName,chain barding,bardatura a catena
 ItemName,chain mail,cotta di maglia
-ItemName,chakram,
+ItemName,chakram,chakram
 ItemName,Chaoshammer,Martello del Caos
 ItemName,Chasm Edge,Baratro dell'oblio
 ItemName,cheese,formaggio
@@ -2707,7 +2707,7 @@ ItemName,meat stick,bastone di carne
 ItemName,meatball,polpetta della nonna
 ItemName,melon,melone
 ItemName,Mirrorbright,Specchio di Perseo
-ItemName,Miserus,
+ItemName,Miserus,Miserus
 ItemName,mithril arrow,freccia di mithril
 ItemName,mithril barding,bardatura di mithril
 ItemName,mithril battle-axe,ascia da battaglia di mithril
@@ -2759,7 +2759,7 @@ ItemName,phantom key,chiave fantasma
 ItemName,Philosophers Stone,Pietra Filosofale
 ItemName,pick-axe,piccone
 ItemName,pistol,pistola
-ItemName,plastic sword,
+ItemName,plastic sword,spada di plastica
 ItemName,plate barding,bardatura a piastre
 ItemName,plate mail,armatura a piastre
 ItemName,poison dart,dardo avvelenato
@@ -2849,7 +2849,7 @@ ItemName,rubber hose,tubo di gomma
 ItemName,ruby,rubino
 ItemName,Ruby Key,chiave rubino
 ItemName,Runesword,Spada Runica
-ItemName,sabre,
+ItemName,sabre,sciabola
 ItemName,sack,sacca
 ItemName,saddle,sella
 ItemName,sai,sai
@@ -3010,7 +3010,7 @@ ItemName,yellow dragon scales,scaglie di drago giallo
 ItemName,yellow glass bauble,pallina di vetro giallastra
 ItemName,yellowish brown glass bauble,pallina di vetro marrone giallastro
 ItemName,yumi,yumi
-ItemName,zircon,
+ItemName,zircon,zircone
 ItemType,amulet,amuleto
 ItemType,bag,sacco
 ItemType,barding,bardatura
@@ -3095,13 +3095,13 @@ KindName,mummy,mummia
 KindName,naga,naga
 KindName,ogre,ogre
 KindName,orc,orco
-KindName,plasmoid,
+KindName,plasmoid,plasmoide
 KindName,pudding,melma
 KindName,quadruped,quadrupede
 KindName,rodent,roditore
 KindName,snake,serpente
 KindName,spider,ragno
-KindName,tortle,
+KindName,tortle,tartarugoide
 KindName,trapper,perforatore
 KindName,troll,troll
 KindName,umber,scavatore
@@ -3137,7 +3137,7 @@ LiteralText,AMBIENT SOUNDS,SUONI AMBIENTALI
 LiteralText,amnesia,amnesia
 LiteralText,AMNESIA,AMNESIA
 LiteralText,anatomy,anatomia
-LiteralText,animate mount,
+LiteralText,animate mount,animare cavalcatura
 LiteralText,animate revenant,animare non-morti
 LiteralText,ANONYMOUS,ANONIMO
 LiteralText,anticlockwise 90 degrees,in senso antiorario di 90 gradi
@@ -3203,7 +3203,7 @@ LiteralText,CAN'T SEE,IMPOSSIBILE VEDERE
 LiteralText,CAN'T SLIDE,IMPOSSIBILE SCIVOLARE
 LiteralText,CAN'T TELEKINESIS,IMPOSSIBILE USARE TELECINESI
 LiteralText,CAN'T THROW,IMPOSSIBILE LANCIARE
-LiteralText,Cast,Lancia
+LiteralText,Cast,Utilizza
 LiteralText,CAST SPELLS,LANCIA INCANTESIMI
 LiteralText,challenge,sfida
 LiteralText,CHAMPION,CAMPIONE
@@ -3259,7 +3259,7 @@ LiteralText,CREATE HORDE,CREA ORDA
 LiteralText,CREATE ITEM,CREA OGGETTO
 LiteralText,CREATE SHOP,CREA NEGOZIO
 LiteralText,CREATE SHRINE,CREA SANTUARIO
-LiteralText,CREATE SPILL,
+LiteralText,CREATE SPILL,CREA SVERSAMENTO
 LiteralText,CREATE TRAP,CREA TRAPPOLA
 LiteralText,CREATE WALL,CREA MURO
 LiteralText,Create which direction?,In quale direzione creare?
@@ -3303,11 +3303,11 @@ LiteralText,Disable continue button,Disabilita bottone continua
 LiteralText,disable haptic feedback,disabilita il feedback aptico
 LiteralText,Disable idle animations,Disabilita animazioni ozio
 LiteralText,Disable introduction boom,Disabilita il 'boom' iniziale
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,Disabilita animazioni maschera
 LiteralText,Disable online services,Disabilita servizi online
 LiteralText,Disable pitch shifting,Disabilita il pitch shifting per i suoni
 LiteralText,Disable spacebar real-time toggle,Disabilita la possibilità di alternare la modalità in tempo reale con la barra spaziatrice
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,Disattiva gesti di scorrimento
 LiteralText,DISCONNECT,DISCONNETTI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Collegamento interrotto. Assicurati di avere una condizione stabile e che tutti i giocatori utilizzino la stessa versione di Pathos.
 LiteralText,Discuss on Reddit,Discutine su Reddit
@@ -3374,7 +3374,7 @@ LiteralText,feature,caratteristica
 LiteralText,FEATURES,CARATTERISTICHE
 LiteralText,FEED,NUTRI
 LiteralText,FEEDBACK,FEEDBACK
-LiteralText,Feedback information,
+LiteralText,Feedback information,Informazioni sui feedback
 LiteralText,FILES,FILE
 LiteralText,fixed range,gittata fissa
 LiteralText,FIZZLE,SIBILIO
@@ -3440,7 +3440,7 @@ LiteralText,influenced actions,azioni influenzate
 LiteralText,INSCRIBE,INCIDI
 LiteralText,INSCRIBE ITEM,INCIDI OGGETTO
 LiteralText,inscription?,iscrizione?
-LiteralText,instruct each character,
+LiteralText,instruct each character,istruisci ciascun personaggio
 LiteralText,INSUFFICIENT GOLD,ORO INSUFFICIENTE
 LiteralText,insulation,insolazione termica
 LiteralText,Inventory,Inventario
@@ -3496,7 +3496,7 @@ LiteralText,Mana represents your energy supply for casting spells.,Il mana rappr
 LiteralText,Map,Mappa
 LiteralText,MAP,MAPPA
 LiteralText,material,materiale
-LiteralText,melting,
+LiteralText,melting,sciogliendo
 LiteralText,MENU,MENU
 LiteralText,mercenary,mercenario
 LiteralText,MIMIC,IMITA
@@ -3518,13 +3518,13 @@ LiteralText,NAME,NOME
 LiteralText,name?,nome?
 LiteralText,neutral,neutrale
 LiteralText,never,mai
-LiteralText,NEW,
+LiteralText,NEW,NUOVO
 LiteralText,no additional effects,nessun effetto aggiuntivo
 LiteralText,no allies,nessun alleato
 LiteralText,no ambient sounds,no suoni ambientali
 LiteralText,No appropriate items available,Nessun oggetto appropriato disponibile
 LiteralText,no available knowledge,nessuna conoscenza disponibile
-LiteralText,no records found,
+LiteralText,no records found,nessun record trovato
 LiteralText,no resistances,senza resistenze
 LiteralText,no talents,senza abilità
 LiteralText,no transient effects,nessun effetto transitorio
@@ -3554,7 +3554,7 @@ LiteralText,Palette,Palette
 LiteralText,PARTY,SQUADRA
 LiteralText,passage,passaggio
 LiteralText,passive (no attacking),passivo (non sta attaccando)
-LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos può essere giocato in split-screen con massimo 4 giocatori sullo stesso dispositivo.
+LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos può essere giocato in split-screen con 4 giocatori sullo stesso dispositivo.
 LiteralText,pathos development @ paypal,Pathos su Paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos non è in grado di caricare la tua avventura. Inviami il tuo file di salvataggio in modo che possa indagare sul problema. Potrei anche essere in grado di riparare il file o aggiornare l'app con una correzione. La tua comprensione è apprezzata.
 LiteralText,Pathos might be the next evolution of Nethack.,Pathos potrebbe essere la possima evoluzione di Nethack.
@@ -3576,7 +3576,7 @@ LiteralText,POLYMORPH,METAMORFOSI
 LiteralText,Polymorph into what?,Trasformarti in cosa?
 LiteralText,POLYMORPHED,TRASFORMATO
 LiteralText,portal,portale
-LiteralText,PORTALS,
+LiteralText,PORTALS,PORTALI
 LiteralText,porter,portabagagli
 LiteralText,PRAY,PREGA
 LiteralText,preservation,preservazione
@@ -3591,7 +3591,7 @@ LiteralText,PUNISHMENTS,PUNIZIONI
 LiteralText,QUANTITY,QUANTITA'
 LiteralText,QUICK LOAD,CARICAMENTO RAPIDO
 LiteralText,QUICK SAVE,SALVATAGGIO RAPIDO
-LiteralText,quit,esci
+LiteralText,quit,ha abbandonato
 LiteralText,QUIT,ESCI
 LiteralText,R//replica symbol,R
 LiteralText,race,razza
@@ -3645,9 +3645,9 @@ LiteralText,RETURN,RITORNA
 LiteralText,RE-USE,RI-USA
 LiteralText,REVEAL,RIVELA
 LiteralText,REVEAL ALL MAPS,RIVELA TUTTE LE MAPPE
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,RIVELA QUESTA MAPPA
 LiteralText,revealed,rivelato
-LiteralText,revenant,
+LiteralText,revenant,redivivo
 LiteralText,REVERT,RITORNA
 LiteralText,RIGHT RING,ANELLO DESTRO
 LiteralText,rigid,rigido
@@ -3806,7 +3806,7 @@ LiteralText,Vanity,Vanità
 LiteralText,VIEW,VISUALIZZA
 LiteralText,Visit the website,Visita il sito web
 LiteralText,VOID SPACE,SPAZIO VUOTO
-LiteralText,VOLATILES,
+LiteralText,VOLATILES,VOLATILI
 LiteralText,vulnerable to,vulnerabile a
 LiteralText,WAIT,ASPETTA
 LiteralText,Wait how many turns?,Aspetti per quanti turni?
@@ -3815,8 +3815,8 @@ LiteralText,was killed,è stato ucciso
 LiteralText,weakness to,debolezza a
 LiteralText,weight,peso
 LiteralText,when afflicted,quando afflitto
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,quando animato
+LiteralText,when confused,quando confuso
 LiteralText,when dropped,quando lasciato cadere
 LiteralText,when entered,quando entrato
 LiteralText,when exhausted,quando esausto
@@ -3833,14 +3833,14 @@ LiteralText,Your current movement and action speed in squares per second.,Il tuo
 LiteralText,ZOOM,INGRANDISCI
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,area
 LocalityName,level,livello
 LocalityName,map,carta geografica
 LocalityName,site,luogo
 LocalityName,square,piazza
 LocalityName,world,mondo
 LocalityName,zone,zona
-MaterialName,adamantine,
+MaterialName,adamantine,adamantite
 MaterialName,air,aria
 MaterialName,animal,animale
 MaterialName,bone,osso
@@ -3874,43 +3874,43 @@ MaterialName,wax,cera
 MaterialName,wood,legno
 MeasurementSystemName,imperial,imperiale
 MeasurementSystemName,metric,metrico
-ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Scendi in sotterranei e caverne generati automaticamente. Rigiocabilità infinita e raccomandato per nuovi giocatori di Pathos.
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
-ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mappe disegnate a mano per un'epica avventura all'aperto. Prenditi una pausa dai confini del sotteraneo e lanciati in una stimolante ricerca.
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Scendi in sotterranei e caverne generali proceduralmente. Rigiocabilità infinita, raccomandato per nuovi giocatori di Pathos."
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Esplora una vasta landa generata proceduralmente contenente località esotiche, dungeon nuovi di zecca e pericolosi scontri. Sarai all'altezza di questa nuova sfida?"
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Avventurati in questa mappa creata ad-hoc per andare alla ricerca dei segreti delle chiavi del drago. Prenditi una pausa dai confini dei sotterranei e lanciati in questa nuova avventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Stanze barocche e segreti misteriosi ti attendono ma non indugiare; dovrai scendere o morire. Basato sulla mappa di Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Per sperimentare con le meccaniche di Pathos. Gioca con ogni oggetto e trappola del dungeon in una semplice mappa a due stanze.
 ModuleName,Dhak Legacy,Dhak Legacy
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloimachia
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
-ModuleName,Sandbox Play,Gioco Sandbox
+ModuleName,Sandbox Play,Sandbox
 ModuleTerm,Abyss,Abisso
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,Imboscata
+ModuleTerm,Ant Cave,Caverna-formicaio
+ModuleTerm,Ant Lair,Antro delle formice
+ModuleTerm,Ant Nest,Formicaio
+ModuleTerm,Arena,Arena
 ModuleTerm,attic,soffitta
-ModuleTerm,Black Lair,
+ModuleTerm,Black Lair,Antro nero
 ModuleTerm,Black Market,Mercato Nero
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,Antro blu
+ModuleTerm,Cage,Gabbia
+ModuleTerm,Canyon,Canyon
+ModuleTerm,Cave Maze,Labirinto della caverna
 ModuleTerm,caves,caverne
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,Città Sotterranea
 ModuleTerm,cellar,scantinato
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cemetery,Cimitero
+ModuleTerm,Chicken Farm,Fattoria di galline
+ModuleTerm,Cow Farm,Fattoria di mucche
+ModuleTerm,Crater,Cratere
+ModuleTerm,Crypt,Cripta
+ModuleTerm,Crystal Henge,Circolo sacro di cristalli
+ModuleTerm,Deep Lair,Antro profondo
 ModuleTerm,Deephall,Deephall
 ModuleTerm,Deepruins,Deepruins
 ModuleTerm,Deepwilds,Deepwilds
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,Miniera di diamanti
 ModuleTerm,Dungeon,Dungeon
 ModuleTerm,Elf Forest,Foresta Elfica
 ModuleTerm,Elf Kingdom,Regno Elfico
@@ -3919,29 +3919,29 @@ ModuleTerm,Elf Palace 2,Palazzo Elfico 2
 ModuleTerm,Elf Palace Vault,Caveau del Palazzo Elfico
 ModuleTerm,Elf Town,Città Elfica
 ModuleTerm,Elf Town Trove,Segrete elfiche
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,Miniera di smeraldo
+ModuleTerm,Eye Pit,Fossa di occhi
 ModuleTerm,Fort Ludios,Fortezza Bastiani
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,Fornace
+ModuleTerm,Glacier,Ghiacciaio
+ModuleTerm,Goat Farm,Fattoria di capre
+ModuleTerm,Green Lair,Antro verde
+ModuleTerm,Grotto,Piccola grotta
+ModuleTerm,Halls,Saloni
+ModuleTerm,Helltown,Dite
+ModuleTerm,Horse Farm,Fattoria di cavalli
+ModuleTerm,Ice Lake,Lago di ghiaccio
 ModuleTerm,Infernal Cage,Gabbia Infernale
 ModuleTerm,Infernal Fields,Campi Infernali
 ModuleTerm,Infernal Keep,Fortezza Infernale
 ModuleTerm,Infernal Spire,Guglia Infernale
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,Città di Giada
+ModuleTerm,Jelly Pit,Fossa di gelatina
+ModuleTerm,Kobold Fort,Fortezza dei coboldi
 ModuleTerm,Labyrinth,Labirinto
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,Lago
+ModuleTerm,Lava Flow,Colata di lava
+ModuleTerm,Lava Lake,Lago di lava
 ModuleTerm,level//depth,piano
 ModuleTerm,Lich Tower,Torre del Lich
 ModuleTerm,Lost Chambers,Camere Dimenticate
@@ -3949,67 +3949,67 @@ ModuleTerm,Ludios Cache,Segrete della fortezza
 ModuleTerm,Medusa Lair,Antro di Medusa
 ModuleTerm,Mines,Profondità minerarie
 ModuleTerm,Minetown,Sottomonte
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,Fossa di muschio
+ModuleTerm,Opus,Kaloimachia
+ModuleTerm,Orange Lair,Antro arancione
+ModuleTerm,Outpost,Avamposto
+ModuleTerm,Overland,Terre desolate
+ModuleTerm,Pig Farm,Fattoria di maiali
+ModuleTerm,Prison,Prigione
+ModuleTerm,Pudding Pit,Fossa di pudding
+ModuleTerm,Rat Pit,Fossa di topi
+ModuleTerm,Rebirth,Rinascita
+ModuleTerm,Red Lair,Antro rosso
+ModuleTerm,Respite,Landa desolata
+ModuleTerm,River,Fiume
+ModuleTerm,Ruby Mine,Miniera di rubini
+ModuleTerm,Ruins,Rovine
+ModuleTerm,Rupture,Landa apocalittica
+ModuleTerm,Sapphire Mine,Miniera di zaffiri
+ModuleTerm,Scorpion Cave,Caverna degli scorpioni
+ModuleTerm,Scorpion Lair,Antro degli scorpioni
+ModuleTerm,Scorpion Nest,Nido di scorpioni
+ModuleTerm,Seal Farm,Fattoria di foche
+ModuleTerm,Sewers,Fogne
+ModuleTerm,Sheep Farm,Fattoria di pecore
+ModuleTerm,Shimmer Lair,Antro scintillante
+ModuleTerm,Shroom Maze,Labirinto fungoide
+ModuleTerm,Slime Pit,Fossa degli slime
+ModuleTerm,Snake Pit,Fossa dei serpenti
 ModuleTerm,Sokoban,Sokoban
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,Strange Farm,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,Spider Cave,Caverna dei ragni
+ModuleTerm,Spider Lair,Antro dei ragni
+ModuleTerm,Spider Nest,Nido dei ragni
+ModuleTerm,Station,Stazione
+ModuleTerm,Statue Henge,Cerchio sacro delle statue
+ModuleTerm,Stone Henge,Stonehenge
+ModuleTerm,Stonetown,Città di pietra
+ModuleTerm,strange chicken,Gallina stramba
+ModuleTerm,strange cow,Mucca stramba
+ModuleTerm,Strange Farm,Fattoria stramba
+ModuleTerm,strange goat,Capra stramba
+ModuleTerm,strange horse,Cavallo strambo
+ModuleTerm,strange pig,Maiale strambo
+ModuleTerm,strange seal,Foca stramba
+ModuleTerm,strange sheep,Pecora stramba
+ModuleTerm,Topaz Mine,Miniera di topazio
+ModuleTerm,Tree Maze,Labirinto dell'albero
 ModuleTerm,trove,tesoro
 ModuleTerm,Underbarracks,Caserme abissali
-ModuleTerm,Underground,
-ModuleTerm,Underlimits,Limite Underdark
+ModuleTerm,Underground,Sottosuolo
+ModuleTerm,Underlimits,Terra di confine dell'Underdark
 ModuleTerm,Underpeaks,Vetta Underdark
 ModuleTerm,Undertown,Città Underdark
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,Antro bianco
+ModuleTerm,Woodtown,Città del legno
+ModuleTerm,Worm Pit,Fossa dei vermi
+ModuleTerm,Yellow Lair,Antro giallo
 MotionPastName,anointed,ha unto
 MotionPastName,ate,ha mangiato
 MotionPastName,captured,ha catturato
 MotionPastName,chanted,ha salmodiato
 MotionPastName,constructed,ha costruito
-MotionPastName,copied,
+MotionPastName,copied,ha copiato
 MotionPastName,dipped,ha immerso
 MotionPastName,divined,ha divinato
 MotionPastName,drank,ha bevuto
@@ -4018,7 +4018,7 @@ MotionPastName,emptied,ha svuotato
 MotionPastName,exchanged,ha scambiato
 MotionPastName,flashed,ha lampeggiato
 MotionPastName,inscribed,ha inciso
-MotionPastName,mounted,
+MotionPastName,mounted,ha cavalcato
 MotionPastName,opened,ha aperto
 MotionPastName,packed,ha confezionato
 MotionPastName,played,ha suonato
@@ -4039,11 +4039,11 @@ MotionPastName,studied,ha studiato
 MotionPastName,swatted,ha schiacciato
 MotionPastName,wrote,ha scritto
 MotionPastName,zapped,ha lanciato
-MotionPresentName,anoint,ungi
+MotionPresentName,anoint,unge
 MotionPresentName,capture,cattura
 MotionPresentName,chant,salmodia
-MotionPresentName,construct,costruisci
-MotionPresentName,copy,
+MotionPresentName,construct,costruisce
+MotionPresentName,copy,copia
 MotionPresentName,dig,scava
 MotionPresentName,dip,immergi
 MotionPresentName,divine,divina
@@ -4052,14 +4052,14 @@ MotionPresentName,eat,mangia
 MotionPresentName,empty,svuota
 MotionPresentName,exchange,scambia
 MotionPresentName,flash,lampeggia
-MotionPresentName,inscribe,incidi
-MotionPresentName,mount,
-MotionPresentName,open,apri
+MotionPresentName,inscribe,incide
+MotionPresentName,mount,monta
+MotionPresentName,open,apre
 MotionPresentName,pack,confeziona
 MotionPresentName,play,suona
 MotionPresentName,pray,prega
 MotionPresentName,quaff,tracanna
-MotionPresentName,read,leggi
+MotionPresentName,read,legge
 MotionPresentName,recline,reclina
 MotionPresentName,refill,riempe
 MotionPresentName,release,libera
@@ -4103,7 +4103,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Alcuni attacchi come raggi laser e pietrificazione alla vista sono rimandati al mittente.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Ti accorgi in anticipo dei nemici vicino a te e capisci quanto siano pericolosi.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Preso dal terrore e dallo sconforto non riesci ad attaccare e vuoi solo fuggire.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Grazie al tuo stato di forte intossicazione, la smisurata fiducia che hai nelle tue capacità è sfidata solo dal tuo labile giudizio."
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Muovendoti silenziosamente riesci a prendere alla sprovvista chiunque stia dormendo.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Previeni la metamorfosi in altre creature ma allo stesso tempo di impedisce di tornare alla tua forma originaria se già trasformato.
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Ti protegge da qualunque effetto concernente la tua possibilità di muoverti come paralisi, rallentamento e ragnatele."
@@ -4112,7 +4112,7 @@ PropertyDescription,Revives you to half-health when you die at the cost of one p
 PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Ti addormenti all'improvviso.
 PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","Il teletrasporto trasporta il tuo personaggio nell'immediato livello del dungeon. Quando non è controllato, questo è un evento casuale che aggiunge un grado di imprevedibilità al tuo viaggio. Il teletrasporto controllato ti consente di selezionare sulla mappa la tua destinazione."
 PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,Non ti preoccupi più delle conseguenze morali riguardo al mangiare carne di esseri della tua stessa specie.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,
+PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,Hai la capacità di percepire le menti altrui quando non hai capacità di vedere.
 PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Fa sì che la tua immagine non appaia esattamente dove ti trovi. Per gli avversari senzienti questo rende più difficile colpirti. Effetti magici come raggi e colpi hanno una probabilità ridotta di colpirti.
 PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Riesci a muoverti e a colpire più velocemente.
 PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Avere la vista compromessa ti permette di vedere solamente ciò che si trova nelle tue immediate prossimità.
@@ -4171,7 +4171,7 @@ PropertyName,free action,libertà d'azione
 PropertyName,fumbling,mani di burro
 PropertyName,hallucination,allucinazione
 PropertyName,hunger,fame
-PropertyName,inebriation,
+PropertyName,inebriation,inebriazione
 PropertyName,invisibility,invisibilità
 PropertyName,jumping,salto
 PropertyName,levitation,levitazione
@@ -4296,15 +4296,15 @@ RaceName,ogre//non-binary,ogre
 RaceName,orc//female,orchessa
 RaceName,orc//male,orco
 RaceName,orc//non-binary,orco
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plasmoide
+RaceName,plasmoid//male,plasmoide
+RaceName,plasmoid//non-binary,plasmoide
 RaceName,satyr//female,satira
 RaceName,satyr//male,satiro
 RaceName,satyr//non-binary,satiro
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,tartarugoide
+RaceName,tortle//male,tartarugoide
+RaceName,tortle//non-binary,tartarugoide
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll
@@ -4445,7 +4445,7 @@ SkillName,conjuration,evocazione
 SkillName,crafting,lavorazione
 SkillName,crossbow,balestra
 SkillName,dart,dardo
-SkillName,disc,
+SkillName,disc,disco
 SkillName,divination,divinazione
 SkillName,dual wielding,maneggiamento doppio
 SkillName,enchantment,incanto
@@ -4466,7 +4466,7 @@ SkillName,medium blade,spada media
 SkillName,music,musicalità
 SkillName,necromancy,negromanzia
 SkillName,pick,raccolta
-SkillName,polearm,arma ad asta
+SkillName,polearm,arma inastata
 SkillName,riding,equitazione
 SkillName,sling,fionda
 SkillName,spear,giavellotto
@@ -4478,13 +4478,13 @@ SkillName,unarmed combat,combattimento a mani nude
 SkillName,whip,frusta
 SonicName,ammo,munizione
 SonicName,amulet,amuleto
-SonicName,arf,
+SonicName,arf,arf
 SonicName,armour,armatura
 SonicName,baa,baa
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,sbarre che si alzano
+SonicName,bars slamming,sbarre che sbattono
 SonicName,bell,campana
-SonicName,birds,
+SonicName,birds,uccellini
 SonicName,bleat,belato
 SonicName,blink,blink
 SonicName,book,libro
@@ -4499,14 +4499,14 @@ SonicName,burble,burble
 SonicName,burn,bruciatura
 SonicName,buzz,buzz
 SonicName,cackle,cackle
-SonicName,chains,
+SonicName,chains,catene
 SonicName,chant,canto
 SonicName,chime,rintocco
 SonicName,chirp,cinguettio
 SonicName,clank,sferragliamento
 SonicName,close door,chiudi porta
 SonicName,cluck,chiocciare
-SonicName,clunk,
+SonicName,clunk,clunk
 SonicName,coins,monete
 SonicName,conclusion,conclusione
 SonicName,craft,creazione
@@ -4514,7 +4514,7 @@ SonicName,creak,scricchiolio
 SonicName,crumble,sgretolamento
 SonicName,death,morte
 SonicName,dice,dado
-SonicName,drips,
+SonicName,drips,sgocciolamento
 SonicName,drum,tamburo
 SonicName,eat,mangiare
 SonicName,electricity,elettricità
@@ -4550,7 +4550,7 @@ SonicName,kick,calcio
 SonicName,launch grenade,lancia granata
 SonicName,launch rocket,lancia razzo
 SonicName,leather,pelle
-SonicName,leaves,
+SonicName,leaves,foglie
 SonicName,lit fuse,miccia accesa
 SonicName,locked,chiuso
 SonicName,long tap,tocco lungo
@@ -4579,10 +4579,10 @@ SonicName,rifle burst,scarica di colpi di fucile
 SonicName,rifle shot,colpo di fucile
 SonicName,ring,anello
 SonicName,roar,ruggito
-SonicName,roars,
+SonicName,roars,ruggiti
 SonicName,scrap,rottama
 SonicName,scrape,raschiata
-SonicName,scrapes,
+SonicName,scrapes,raschiate
 SonicName,scroll,pergamena
 SonicName,scuttle,beccheggio
 SonicName,sever,colpo fatale
@@ -4601,11 +4601,11 @@ SonicName,splat,splat
 SonicName,squall,grido smorzato
 SonicName,squawk,gracchiata
 SonicName,squeak,squittio
-SonicName,squeaks,
+SonicName,squeaks,squittii
 SonicName,squeal,stridio
 SonicName,swallow,ingurgito
 SonicName,switch,leva
-SonicName,taps,
+SonicName,taps,tocchi
 SonicName,teleport,teletrasporto
 SonicName,throne,trono
 SonicName,throw grenade,lancia granata
@@ -4639,23 +4639,23 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",Servitori altamente sintonizzati dell'acqua - possono evocare sfere esplosive per distruggere i loro nemici.
 SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,La vita di studio ha concentrato il tuo apprendimento sui libri a scapito di altri hobby e fitness.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"La sindrome del personaggio principale ha portato a fare affidamento sull'armatura della trama, ma sono destinati a un importante controllo della realtà."
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.",
+SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","Scolpito da vetro vivente che riflette energia e rifrange luce, sei una delicata ma perfetta emulazione della tua controparte naturale."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","In qualche modo ancora viva, anche se senza la carne necessaria per essere veramente viva, questa peculiare esistenza ha alcuni vantaggi."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Gli alcolizzati sono dei coraggiosi ma imprevedibili avventurieri; evita solo di chiedergli di camminare in linea retta.
+SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","La tua posizione dello spazio è caotica e incerta; sei ormai abituato a essere ovunque, da nessuna parte e in ogni luogo."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Che siano innocenti o colpevoli dei loro crimini accusati, questi individui cercano disperatamente di sfuggire alla custodia."
 SpecialName,colossus,colosso
-SpecialName,drunkard,
+SpecialName,drunkard,alcolizzato
 SpecialName,earth,terrifeo
 SpecialName,flame,fiammeggiante
 SpecialName,frost,congelante
 SpecialName,fugitive,fuggitivo
-SpecialName,glass,
+SpecialName,glass,vetroide
 SpecialName,midget,nano
 SpecialName,noble,nobile
 SpecialName,protagonist,protagonista
 SpecialName,psychic,mentalista
-SpecialName,quantum,
+SpecialName,quantum,quantico
 SpecialName,scholar,studioso
 SpecialName,shock,elettrico
 SpecialName,skeleton,scheletro
@@ -4770,11 +4770,11 @@ TraversalPastName,travelled,viaggiato
 TraversalPresentName,ascend,ascendere
 TraversalPresentName,descend,discendere
 TraversalPresentName,travel,viaggiare
-VolatileName,blaze,
-VolatileName,blood,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,fuoco
+VolatileName,blood,sangue
+VolatileName,electricity,elettricità
+VolatileName,freeze,freddo
+VolatileName,steam,vapore
 WallStructureName,illusionary,illusorio
 WallStructureName,permanent,permanente
 WallStructureName,solid,solido

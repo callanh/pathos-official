@@ -1027,6 +1027,7 @@ namespace Pathos
     public readonly Glyph satyr_male_jester;
     public readonly Glyph satyr_male_knight;
     public readonly Glyph satyr_male_miner;
+    public readonly Glyph satyr_male_mystic;
     public readonly Glyph satyr_male_necromancer;
     public readonly Glyph satyr_male_paladin;
     public readonly Glyph satyr_male_pirate;

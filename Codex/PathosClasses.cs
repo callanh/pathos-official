@@ -588,6 +588,7 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_mystic);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_mystic);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_mystic);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_mystic);
         C.AddFeat(1, Properties.telepathy);
         C.AddFeat(2, Properties.telekinesis);
         C.AddFeat(4, Elements.fire);

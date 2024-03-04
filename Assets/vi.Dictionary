@@ -133,7 +133,7 @@ AppearanceName,emerald potion,Lọ thuốc màu lục bảo
 AppearanceName,emerald ring,Nhẫn ngọc lục bảo
 AppearanceName,engagement ring,Nhẫn đính hôn
 AppearanceName,etched helmet,Giáp mũ khắc
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,trượng 2 đầu thiên phẩm
 AppearanceName,faded book,Quyển sách lu mờ
 AppearanceName,faded pall,Áo khoác lu mờ
 AppearanceName,fencing gloves,Đôi găng tay đấu kiếm
@@ -367,7 +367,7 @@ AppearanceName,tin wand,Đũa phép bằng thiếc
 AppearanceName,tiny book,Quyển sách nhỏ xíu
 AppearanceName,topaz ring,Nhẫn hoàng ngọc
 AppearanceName,torn book,Quyển sách bị xé
-AppearanceName,toy sword,
+AppearanceName,toy sword,Kiếm đồ chơi
 AppearanceName,triangular amulet,Bùa tam giác
 AppearanceName,turquoise book,Quyển sách màu ngọc lam
 AppearanceName,twisted ring,Nhẫn xoắn
@@ -459,11 +459,11 @@ BarrierName,cave wall,tường hang
 BarrierName,hell brick,gạch địa ngục
 BarrierName,iron bars,thanh sắt
 BarrierName,jade wall,tường lục bảo
-BarrierName,sewer wall,
+BarrierName,sewer wall,tường ống cống
 BarrierName,shroom,nấm
 BarrierName,stone wall,tường đá
 BarrierName,tree,cây
-BarrierName,wooden wall,
+BarrierName,wooden wall,tường gỗ
 BeamName,acid,axít
 BeamName,cold,lạnh
 BeamName,death,cái chết
@@ -484,7 +484,7 @@ BlockName,crystal boulder,Khối pha lê
 BlockName,gold boulder,Khối vàng
 BlockName,statue,Bức tượng
 BlockName,stone boulder,Khối đá
-BlockName,trophy,
+BlockName,trophy,cúp
 BlockName,wooden barrel,Thùng gỗ
 BoonDescription,Ask for a unicorn to join your party.,Hỏi một chú kỳ lân tham gia vào đội của bạn.
 BoonDescription,Bless one item in your inventory or on the ground.,Ban phước 1 vật phẩm trong hành trang của bạn hoặc ở trên mặt đất.
@@ -932,7 +932,7 @@ DeviceName,noxious pool,hố axit
 DeviceName,pit,hố
 DeviceName,poison gas trap,bẫy khí ga
 DeviceName,polymorph trap,bẫy biến đổi hình dạng
-DeviceName,pressure plate,
+DeviceName,pressure plate,tấm áp lực
 DeviceName,scything blade trap,bẫy chém
 DeviceName,shock trap,bẫy sốc
 DeviceName,silence trap,bẫy câm lặng
@@ -1014,15 +1014,15 @@ EffectType,charging,nạp lại
 EffectType,charm,quyến rũ
 EffectType,clone character,tạo bản sao của nhân vật
 EffectType,concealing,ẩn nấp
-EffectType,connect passage,
+EffectType,connect passage,tạo cổng dịch chuyển
 EffectType,convert asset,chuyển đổi xập đồ
-EffectType,convert boulder,chuyển đổi tảng
+EffectType,convert boulder,chuyển đổi tảng đá
 EffectType,convert door,chuyển đổi cửa
 EffectType,convert fixture,chuyển đổi vật cố
 EffectType,convert floor,chuyển đổi sàn
 EffectType,convert spill,chuyển đổi vũng
 EffectType,convert wall,chuyển đổi tường
-EffectType,create boulder,tạo tảng
+EffectType,create boulder,tạo tảng đá
 EffectType,create fixture,tạo vật cố
 EffectType,create golem,tạo quái vật golem
 EffectType,create horde,tạo bầy đám
@@ -1061,7 +1061,7 @@ EffectType,lose skill,mất kĩ năng
 EffectType,lose talent,mất tài năng
 EffectType,malnutrition,suy dinh dưỡng
 EffectType,mapping,lập bản đồ
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,di chuyển tảng đá
 EffectType,murder,giết
 EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
@@ -1267,7 +1267,7 @@ EntityName,blood imp,tiểu quỷ máu
 EntityName,bloodshot eye,quỷ mắt đỏ
 EntityName,bloodworm,giun máu
 EntityName,blue jelly,thạch xanh dương
-EntityName,blue light,
+EntityName,blue light,ánh sáng xanh dương
 EntityName,bone devil,quỷ xương
 EntityName,brown mould,mốc nâu
 EntityName,brown pudding,pudding màu nâu
@@ -1367,7 +1367,7 @@ EntityName,elf mummy,xác ướp elf
 EntityName,elf zombie,thây ma elf
 EntityName,Elwing,Elwing
 EntityName,embalmer,người ướp xác
-EntityName,emerald golem,
+EntityName,emerald golem,golem lục bảo
 EntityName,energy vortex,cuộn xoáy năng lượng
 EntityName,erinys,nữ thần báo thù
 EntityName,ettin,ettin
@@ -1691,7 +1691,7 @@ EntityName,rancid jelly,thạch ôi thiu
 EntityName,rat king,vua chuột
 EntityName,ratwere,ma chuột
 EntityName,recluse spider,nhện ở ẩn
-EntityName,red light,
+EntityName,red light,ánh sáng đỏ
 EntityName,red mould,mốc màu đỏ
 EntityName,red naga,xà nhân màu đỏ
 EntityName,red naga hatchling,xà nhân con màu đỏ
@@ -1772,7 +1772,7 @@ EntityName,tiger,hổ
 EntityName,tigerwere,ma cọp
 EntityName,titan,titan
 EntityName,titanothere,titanothere
-EntityName,topaz golem,
+EntityName,topaz golem,golem hoàng ngọc
 EntityName,tortle,rùa
 EntityName,tracker,kẻ theo dõi
 EntityName,transmuter,người biến đổi
@@ -2059,7 +2059,7 @@ FormatText,{Entropy} entropy,{Entropy} hỗn loạn
 FormatText,{ExplosionName} explosion,vụ nổ {ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} vật phảm
 FormatText,{ItemCount} items,{ItemCount} vật phẩm
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} more items,{ItemCount} nhiều vật phẩm
 FormatText,{JournalDelay} sec,{JournalDelay} giây
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} và {Follower:CharacterName} trở thành đồng minh
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} và {Follower:CharacterName} không còn là đồng đội
@@ -2089,7 +2089,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},sau khi tới được tầng {RecordDepth}
 FormatText,animate {CharacterName},tái sinh {CharacterName}
 FormatText,boost {AttributeName} by enchantment,tăng điểm thuộc tính {AttributeName} từ sự cường hóa
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},phá hỏng {FeatureName}
 FormatText,cap {Percent}%,giới hạn {Percent}%
 FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật phẩm nào?
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
@@ -2154,8 +2154,8 @@ FormatText,when {STANDINGNAME},nếu là {STANDINGNAME}
 FormatText,when resists {ElementName},khi kháng lại {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cái cửa này được làm từ kim loại cứng. Không dễ gì phá hủy đâu.
 GateName,crystal door,cửa pha lê
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,cửa vàng
+GateName,iron door,cửa sắt
 GateName,wooden door,cửa gỗ
 GenderHimself,herself,cô ấy
 GenderHimself,himself,anh ấy
@@ -2175,22 +2175,22 @@ GradeName,artifact,báu vật
 GradeName,exotic,thiên phẩm
 GradeName,standard,thông thường
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
-GroundName,cave floor,
+GroundName,cave floor,nền đá hang động
 GroundName,chasm,hang sâu
 GroundName,dirt,sàn đất
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,sàn vàng
+GroundName,granite floor,sàn đá hoa cương
 GroundName,grass,cỏ
 GroundName,hive floor,sàn tổ ong
 GroundName,ice,băng
 GroundName,lava,dung nham
-GroundName,marble floor,sàn đá hoa cương
+GroundName,marble floor,sàn đá cẩm thạch
 GroundName,metal floor,sàn kim loại
 GroundName,moss,mốc
 GroundName,obsidian floor,sàn hắc diện thạch
 GroundName,sand,cát
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,sàn ống cống
+GroundName,snow,tuyết
 GroundName,stone floor,sàn đá
 GroundName,stone path,hành lang đá
 GroundName,water,nước
@@ -2199,7 +2199,7 @@ HordeName,ant,bầy kiến
 HordeName,ape,bầy vượn
 HordeName,bat,bầy dơi
 HordeName,bee,bầy ong
-HordeName,beetle,
+HordeName,beetle,bầy bọ cánh cứng
 HordeName,cockroach,bầy gián
 HordeName,couatl,bầy tăng linh thú
 HordeName,coyote,bầy sói đồng cỏ
@@ -2374,7 +2374,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Vụt nó vào bức tường sẽ tạo nên 1 đường hầm.
 ItemName,adamantine arrow,mũi tên adamantine
 ItemName,adamantine axe,rìu adamantine
-ItemName,adamantine bident,
+ItemName,adamantine bident,trượng 2 đầu adamantine
 ItemName,adamantine bow,cung adamantine
 ItemName,adamantine dagger,dao găm adamantine
 ItemName,adamantine greataxe,rìu lớn adamantine
@@ -2759,7 +2759,7 @@ ItemName,phantom key,chìa khóa bóng ma
 ItemName,Philosophers Stone,Viên Đá Philosophers
 ItemName,pick-axe,cuốc chim
 ItemName,pistol,súng ngắn
-ItemName,plastic sword,
+ItemName,plastic sword,kiếm nhựa
 ItemName,plate barding,giáp ngựa tấm
 ItemName,plate mail,giáp tấm
 ItemName,poison dart,phi tiêu tẩm độc
@@ -3010,7 +3010,7 @@ ItemName,yellow dragon scales,vảy rồng vàng
 ItemName,yellow glass bauble,trang sức thủy tinh màu vàng
 ItemName,yellowish brown glass bauble,trang sức thủy tinh nâu vàng
 ItemName,yumi,cung Nhật
-ItemName,zircon,
+ItemName,zircon,đá zircon
 ItemType,amulet,bùa phép
 ItemType,bag,ba lô
 ItemType,barding,giáp ngựa
@@ -3183,7 +3183,7 @@ LiteralText,boost damage by enchantment,tăng sát thương do cường hóa
 LiteralText,boost defence by enchantment,tăng phòng thủ do cường hóa
 LiteralText,boost encumbrance by enchantment,tăng giới hạn hành trang do cường hóa
 LiteralText,boost speed by enchantment,tăng tốc độ do cường hóa
-LiteralText,boulders,các tảng đám
+LiteralText,boulders,các tảng đá
 LiteralText,bounces,nảy
 LiteralText,broken,hỏng
 LiteralText,BROKEN,BỊ HỎNG
@@ -3348,7 +3348,7 @@ LiteralText,entropy accidents,Số tai nạn hỗn loạn
 LiteralText,EQUIP,TRANG BỊ
 LiteralText,ESCAPE,TRỐN THOÁT
 LiteralText,escape traps,thoát khỏi bẫy
-LiteralText,escape with,thoái bằng
+LiteralText,escape with,thoát bằng
 LiteralText,escaped,đã trốn thoát
 LiteralText,ESSENCE,NGUYÊN LIỆU THÔ
 LiteralText,evolution,tiến hóa
@@ -3374,7 +3374,7 @@ LiteralText,feature,tính năng
 LiteralText,FEATURES,TÍNH NĂNG
 LiteralText,FEED,CHO ĂN
 LiteralText,FEEDBACK,PHẢN HỒI
-LiteralText,Feedback information,
+LiteralText,Feedback information,Ý kiến phản hồi
 LiteralText,FILES,TỆP
 LiteralText,fixed range,tầm đánh cố định
 LiteralText,FIZZLE,SỦI BỌT
@@ -3518,7 +3518,7 @@ LiteralText,NAME,TÊN
 LiteralText,name?,tên?
 LiteralText,neutral,trung lập
 LiteralText,never,không bao giờ
-LiteralText,NEW,
+LiteralText,NEW,MỚI
 LiteralText,no additional effects,không có hiệu ứng phụ
 LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
@@ -3576,7 +3576,7 @@ LiteralText,POLYMORPH,BIẾN HÌNH
 LiteralText,Polymorph into what?,Biến hình thành?
 LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
-LiteralText,PORTALS,
+LiteralText,PORTALS,CỔNG
 LiteralText,porter,túi
 LiteralText,PRAY,CẦU NGUYỆN
 LiteralText,preservation,quan sát
@@ -3868,49 +3868,49 @@ MaterialName,sand,cát
 MaterialName,silver,bạc
 MaterialName,stone,đá
 MaterialName,tin,thiếc
-MaterialName,vegetable,rau củ
+MaterialName,vegetable,thuần chay
 MaterialName,water,nước
 MaterialName,wax,sáp
 MaterialName,wood,gỗ
 MeasurementSystemName,imperial,hệ đo lường Anh
 MeasurementSystemName,metric,hệ đo lường mét
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Đi sâu vào những hầm ngục và hang động được tạo ngẫu nhiên. Cho bạn trải nghiệm chơi lại vô hạn và được đề xuất cho những người mới chơi Pathos.
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Khám phá một bản đồ rộng lớn, tái tạo ngẫu nhiên chứa đầy phó bản phụ, vô số những khung cảnh được thiết kế tỉ mỉ và hàng loạt những cuộc đụng độ hấp dẫn."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
 ModuleName,Dhak Legacy,Di sản nhà Dhak
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Chế độ sáng tạo
 ModuleTerm,Abyss,Vực thẳm
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,Phục kích
+ModuleTerm,Ant Cave,Hang Tổ Kiến
+ModuleTerm,Ant Lair,Hang ổ Kiến
+ModuleTerm,Ant Nest,Ổ Kiến
+ModuleTerm,Arena,Đấu trường
 ModuleTerm,attic,gác xép
-ModuleTerm,Black Lair,
+ModuleTerm,Black Lair,Sào huyệt Đen
 ModuleTerm,Black Market,Chợ đen
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,Sào huyệt Xanh dương
+ModuleTerm,Cage,Lồng
+ModuleTerm,Canyon,Tiếp tục cuộc phiêu lưu
+ModuleTerm,Cave Maze,Mê cung Hang động
 ModuleTerm,caves,hang
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,Thị trấn hang động
 ModuleTerm,cellar,trần nhà
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cemetery,Nghĩa trang
+ModuleTerm,Chicken Farm,Trang trại gà
+ModuleTerm,Cow Farm,Trang trại bò
+ModuleTerm,Crater,Miệng núi lửa
+ModuleTerm,Crypt,Lăng mộ
+ModuleTerm,Crystal Henge,Vòng tròn Pha lê
+ModuleTerm,Deep Lair,Sào huyệt Sâu thẳm
 ModuleTerm,Deephall,sảnh sâu
 ModuleTerm,Deepruins,tàn tích sâu
 ModuleTerm,Deepwilds,rừng hoang dã sâu
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,Mỏ Kim Cương
 ModuleTerm,Dungeon,Hầm ngục
 ModuleTerm,Elf Forest,Rừng Elf
 ModuleTerm,Elf Kingdom,Vương quốc Elf
@@ -3919,29 +3919,29 @@ ModuleTerm,Elf Palace 2,Dinh thự Elf số 2
 ModuleTerm,Elf Palace Vault,Hầm dinh thự Elf
 ModuleTerm,Elf Town,Thi trấn Elf
 ModuleTerm,Elf Town Trove,Kho báu của thi trấn Elf
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,Mỏ Lục Bảo
+ModuleTerm,Eye Pit,Hố Mắt
 ModuleTerm,Fort Ludios,Pháo đài Ludios
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,Lò nung nấu
+ModuleTerm,Glacier,Tảng băng
+ModuleTerm,Goat Farm,Trang trại Dê
+ModuleTerm,Green Lair,Sào huyệt Xanh lá
+ModuleTerm,Grotto,Hang động
+ModuleTerm,Halls,Đại sảnh
+ModuleTerm,Helltown,Thị trấn địa ngục
+ModuleTerm,Horse Farm,Trang trại ngựa
+ModuleTerm,Ice Lake,Hồ băng
 ModuleTerm,Infernal Cage,Lồng Infernal
 ModuleTerm,Infernal Fields,Sàn Infernal
 ModuleTerm,Infernal Keep,Nông trại Infernal
 ModuleTerm,Infernal Spire,Tháp ngọn Infernal
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
-ModuleTerm,Labyrinth,Mê cung
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Jadetown,Thị trấn ngọc bích
+ModuleTerm,Jelly Pit,Hố kẹo dẻo
+ModuleTerm,Kobold Fort,Pháo đài Kobold
+ModuleTerm,Labyrinth,Mê hồn trận
+ModuleTerm,Lake,Hồ
+ModuleTerm,Lava Flow,Dòng chảy dung nham
+ModuleTerm,Lava Lake,Hồ dung nham
 ModuleTerm,level//depth,tầng
 ModuleTerm,Lich Tower,Tòa tháp Vu Yêu
 ModuleTerm,Lost Chambers,Căn phòng lãng quên
@@ -3949,61 +3949,61 @@ ModuleTerm,Ludios Cache,Hầm trữ Ludios
 ModuleTerm,Medusa Lair,Hang ổ Medusa
 ModuleTerm,Mines,mìn
 ModuleTerm,Minetown,thi trấn Mine
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,Hố rêu dại
+ModuleTerm,Opus,Opus
+ModuleTerm,Orange Lair,Sào huyệt Cam
+ModuleTerm,Outpost,Tiền đồn
+ModuleTerm,Overland,Bình nguyên
+ModuleTerm,Pig Farm,Trang trại lợn
+ModuleTerm,Prison,Nhà tù
+ModuleTerm,Pudding Pit,Hố pudding
+ModuleTerm,Rat Pit,Hố chuột
+ModuleTerm,Rebirth,Tái sinh
+ModuleTerm,Red Lair,Sào huyệt Đỏ
+ModuleTerm,Respite,Giải lao
+ModuleTerm,River,Sông
+ModuleTerm,Ruby Mine,Mỏ Hồng Ngọc
+ModuleTerm,Ruins,Di tích
+ModuleTerm,Rupture,Gián đoạn
+ModuleTerm,Sapphire Mine,Mỏ Lam Ngọc
+ModuleTerm,Scorpion Cave,Hang Bò Cạp
+ModuleTerm,Scorpion Lair,Sào huyệt Bò Cạp
+ModuleTerm,Scorpion Nest,Ổ Bò Cạp
+ModuleTerm,Seal Farm,Trang trại Sư Tử Biển
+ModuleTerm,Sewers,Cống rãnh
+ModuleTerm,Sheep Farm,Trang trại Cừu
+ModuleTerm,Shimmer Lair,Sào huyệt SImmer
+ModuleTerm,Shroom Maze,Mê cung Nấm
+ModuleTerm,Slime Pit,Hố Slime
+ModuleTerm,Snake Pit,Hố Rắn
 ModuleTerm,Sokoban,Sokoban
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,Strange Farm,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,Spider Cave,Hang Nhện
+ModuleTerm,Spider Lair,Sào huyệt Nhện
+ModuleTerm,Spider Nest,Ổ Nhện
+ModuleTerm,Station,Trạm nghỉ
+ModuleTerm,Statue Henge,Vòng tròn Tượng
+ModuleTerm,Stone Henge,Trận Đá Khổng Lồ
+ModuleTerm,Stonetown,Thị trấn Đá
+ModuleTerm,strange chicken,Gà kì quái
+ModuleTerm,strange cow,Bò kì quái
+ModuleTerm,Strange Farm,Nông trại kì quái
+ModuleTerm,strange goat,Dê kì quái
+ModuleTerm,strange horse,Ngựa kì quái
+ModuleTerm,strange pig,Lợn kì quái
+ModuleTerm,strange seal,Sư tử biẻn kì quái
+ModuleTerm,strange sheep,Cừu kì quái
+ModuleTerm,Topaz Mine,Mỏ Hoàng ngọc
+ModuleTerm,Tree Maze,Mê cung Cây
 ModuleTerm,trove,kho báu
 ModuleTerm,Underbarracks,Underbarracks
-ModuleTerm,Underground,
+ModuleTerm,Underground,Lòng đất
 ModuleTerm,Underlimits,Underlimits
 ModuleTerm,Underpeaks,Underpeaks
 ModuleTerm,Undertown,Undertown
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,Sào huyệt Trắng
+ModuleTerm,Woodtown,Thị trấn Gỗ
+ModuleTerm,Worm Pit,Hố Giun
+ModuleTerm,Yellow Lair,Sào huyệt Vàng
 MotionPastName,anointed,đã bôi
 MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt
@@ -4392,7 +4392,7 @@ SanctityName,uncursed,không nguyền rủa
 SchoolName,abjuration,Phòng hộ
 SchoolName,clerical,Tăng lữ
 SchoolName,conjuration,Phù phép
-SchoolName,divination,Bói toán
+SchoolName,divination,Chiêm tinh
 SchoolName,enchantment,Cường hóa
 SchoolName,evocation,Cầu hồn
 SchoolName,necromancy,Chiêu hồn
@@ -4410,7 +4410,7 @@ ServiceName,trap detection,phát hiện bẫy
 ShopName,antique weapons outlet,cửa hàng vũ khí cổ
 ShopName,delicatessen,cửa hàng đặc sản
 ShopName,general store,tiệm tạp hóa
-ShopName,gun mart,chợ bán súng
+ShopName,gun mart,cửa hàng súng
 ShopName,hardware store,cửa hàng linh kiện
 ShopName,jewellers,cửa hàng đá quý
 ShopName,lighting store,cửa hàng đèn
@@ -4481,8 +4481,8 @@ SonicName,amulet,đeo bùa phép
 SonicName,arf,arf
 SonicName,armour,mặc giáp
 SonicName,baa,cừu kêu
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,thanh sắt nâng lên
+SonicName,bars slamming,thanh sắt hạ xuống
 SonicName,bell,chuông kêu
 SonicName,birds,chim kêu
 SonicName,bleat,dê non kêu
@@ -4506,7 +4506,7 @@ SonicName,chirp,tiếng chim hót
 SonicName,clank,tiếng kim loại
 SonicName,close door,tiếng đóng cửa
 SonicName,cluck,tiếng gà kêu
-SonicName,clunk,
+SonicName,clunk,tiếng cạch áp lực
 SonicName,coins,tiếng xu vàng
 SonicName,conclusion,tiếng kết thúc
 SonicName,craft,tiếng chế tạo
@@ -4771,7 +4771,7 @@ TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
 VolatileName,blaze,cháy
-VolatileName,blood,
+VolatileName,blood,máu
 VolatileName,electricity,phóng điện
 VolatileName,freeze,đóng băng
 VolatileName,steam,bay hơi

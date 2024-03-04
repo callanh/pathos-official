@@ -22,7 +22,7 @@ The content definitions and module generations are declared as C# code. This cod
 ### Visual Studio 2022
 
 1. Install [**Visual Studio Community**](https://visualstudio.microsoft.com/) with the **.NET Desktop Development** workload.
-2. Open `PathosOfficial.sln.`.
+2. Open `PathosOfficial.sln`.
 3. Run **PathosOfficial** project.
 
 ### Visual Studio Code and Build Tools
@@ -45,6 +45,7 @@ The main file is `PathosOfficial.cs` as it the top-level class that declares the
 | Folder    | Description                                            |
 |-----------|--------------------------------------------------------|
 | Albums    | mp3 files for sound effects                            |
+| Assets    | translation files, change updates and music tracks     |
 | Atlases   | png files for tilesets                                 |
 | Codex     | C# files for content definition                        |
 | Modules   | C# files for module generation                         |
