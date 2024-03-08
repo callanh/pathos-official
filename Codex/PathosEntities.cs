@@ -21196,7 +21196,7 @@ namespace Pathos
         E.Frequency = 0;
         E.Defence = NewBoneDefence(25); // +3 from dex.
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.S2_5;
+        E.Speed = Speed.S3_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(12000);
@@ -25403,13 +25403,13 @@ namespace Pathos
         E.Description = "This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.";
         E.Glyph = Glyphs.mellified_man;
         E.Sonic = Sonics.moan;
-        E.Level = 31;
-        E.Challenge = 937;
-        E.Difficulty = 34;
+        E.Level = 27;
+        E.Challenge = 637;
+        E.Difficulty = 30;
         E.Frequency = 1;
         E.Defence = new Defence(D: 30, P: +2, S: -2, B: +2);
         E.SetDiet(Diets.inediate);
-        E.Speed = Speed.S4_5;
+        E.Speed = Speed.S2_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(20000);
