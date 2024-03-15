@@ -772,9 +772,9 @@ ClassName,knight//non-binary,騎士
 ClassName,miner//female,礦工
 ClassName,miner//male,礦工
 ClassName,miner//non-binary,礦工
-ClassName,monk//female,尼姑
+ClassName,monk//female,修女
 ClassName,monk//male,僧侶
-ClassName,monk//non-binary,尼姑
+ClassName,monk//non-binary,僧侶
 ClassName,mystic//female,神秘人
 ClassName,mystic//male,神秘人
 ClassName,mystic//non-binary,神秘人
@@ -1934,11 +1934,11 @@ FormatText,{CharacterName} {EndType} by {EndCause},{CharacterName} 因 {EndCause
 FormatText,{CharacterName} {MotionPastName} {AssetName},{CharacterName} {MotionPastName} {AssetName}
 FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{CharacterName} {MotionPastName} {AssetName} 但什麼也沒發生
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {MotionPastName} {FixtureName}
-FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 用 {With:AssetName} {MotionPastName} {Use:AssetName}
-FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} 用 {With:AssetName} {MotionPastName} {Use:FixtureName}
+FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 對 {With:AssetName} {MotionPastName} {Use:AssetName}
+FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} 對 {With:AssetName} {MotionPastName} {Use:FixtureName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} 地牢 {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} 熟練地 {MotionPastName} {AssetName}
-FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 熟練地用 {With:AssetName} {MotionPastName} {Use:AssetName}
+FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 熟練地對 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} 升到了 {LevelNumber} 級
 FormatText,{CharacterName} already has maximum efficiency with {SpellName},{CharacterName} 的 {SpellName} 的熟練程度已經到達了最大值
 FormatText,{CharacterName} animated {AssetName},{CharacterName} 使 {AssetName} 活化
@@ -4674,7 +4674,7 @@ SpellName,clairvoyance,洞察力
 SpellName,cone of cold,寒冰錐
 SpellName,confusion,混亂
 SpellName,create familiar,侍靈創造
-SpellName,crushing sphere,地球侍靈
+SpellName,crushing sphere,泥巖球侍靈
 SpellName,curing,疾病治癒
 SpellName,darkness,黑暗
 SpellName,deflection,保護

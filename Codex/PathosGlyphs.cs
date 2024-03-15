@@ -1028,6 +1028,7 @@ namespace Pathos
     public readonly Glyph satyr_male_jester;
     public readonly Glyph satyr_male_knight;
     public readonly Glyph satyr_male_miner;
+    public readonly Glyph satyr_male_monk;
     public readonly Glyph satyr_male_mystic;
     public readonly Glyph satyr_male_ninja;
     public readonly Glyph satyr_male_necromancer;
@@ -1040,6 +1041,9 @@ namespace Pathos
     public readonly Glyph satyr_male_samurai;
     public readonly Glyph satyr_male_shaman;
     public readonly Glyph satyr_male_tinker;
+    public readonly Glyph satyr_male_templar;
+    public readonly Glyph satyr_male_tourist;
+    public readonly Glyph satyr_male_valkyrie;
     public readonly Glyph satyr_male_wizard;
 
     public readonly Glyph satyr_female_convict;

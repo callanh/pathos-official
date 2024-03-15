@@ -547,6 +547,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_monk);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_monk);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_monk);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_monk);
         C.AddFeat(2, Properties.quickness);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(6, Elements.poison);
@@ -787,6 +788,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_templar);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_templar);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_templar);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_templar);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(8, Elements.sleep);
         C.AddFeat(12, Properties.free_action);
@@ -1127,6 +1129,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_tourist);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_tourist);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_tourist);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_tourist);
         C.AddFeat(8, Properties.searching);
         C.AddFeat(14, Elements.poison);
         C.Startup.SetSkill(Qualifications.proficient,
@@ -1170,6 +1173,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_valkyrie);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_valkyrie);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_valkyrie);
+        C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_valkyrie);
         C.AddFeat(2, Elements.cold);
         C.AddFeat(4, Properties.stealth);
         C.AddFeat(8, Properties.quickness);

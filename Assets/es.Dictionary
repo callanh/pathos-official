@@ -133,7 +133,7 @@ AppearanceName,emerald potion,poción esmeralda
 AppearanceName,emerald ring,anillo esmeralda
 AppearanceName,engagement ring,anillo de compromiso
 AppearanceName,etched helmet,casco grabado
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,arma de asta exótica de dos puntas
 AppearanceName,faded book,libro desteñido
 AppearanceName,faded pall,capa desteñida
 AppearanceName,fencing gloves,guantes de esgrima
@@ -367,7 +367,7 @@ AppearanceName,tin wand,varita de estaño
 AppearanceName,tiny book,libro diminuto
 AppearanceName,topaz ring,anillo de topacio
 AppearanceName,torn book,libro rasgado
-AppearanceName,toy sword,
+AppearanceName,toy sword,espada de juguete
 AppearanceName,triangular amulet,amuleto triangular
 AppearanceName,turquoise book,libro turquesa
 AppearanceName,twisted ring,anillo retorcido
@@ -459,11 +459,11 @@ BarrierName,cave wall,muro de cueva
 BarrierName,hell brick,ladrillo infernal
 BarrierName,iron bars,barras de hierro
 BarrierName,jade wall,muro de jade
-BarrierName,sewer wall,
+BarrierName,sewer wall,muro de alcantarilla
 BarrierName,shroom,seta
 BarrierName,stone wall,muro de piedra
 BarrierName,tree,árbol
-BarrierName,wooden wall,
+BarrierName,wooden wall,muro de madera
 BeamName,acid,ácido
 BeamName,cold,frío
 BeamName,death,muerte
@@ -484,7 +484,7 @@ BlockName,crystal boulder,roca de cristal
 BlockName,gold boulder,roca de oro
 BlockName,statue,estatua
 BlockName,stone boulder,roca de piedra
-BlockName,trophy,
+BlockName,trophy,trofeo
 BlockName,wooden barrel,barril de madera
 BoonDescription,Ask for a unicorn to join your party.,Pídele a un unicornio que se una a tu grupo.
 BoonDescription,Bless one item in your inventory or on the ground.,Bendice un objeto en tu inventario o en el suelo.
@@ -932,7 +932,7 @@ DeviceName,noxious pool,piscina nociva
 DeviceName,pit,pozo
 DeviceName,poison gas trap,trampa de gas venenoso
 DeviceName,polymorph trap,trampa de polimorfismo
-DeviceName,pressure plate,
+DeviceName,pressure plate,placa de presión
 DeviceName,scything blade trap,trampa de espadas cortantes
 DeviceName,shock trap,trampa de choque
 DeviceName,silence trap,trampa silenciadora
@@ -1014,7 +1014,7 @@ EffectType,charging,cargar
 EffectType,charm,encanto
 EffectType,clone character,clonar personaje
 EffectType,concealing,encubrimiento
-EffectType,connect passage,
+EffectType,connect passage,pasaje de conexión
 EffectType,convert asset,convertir recurso
 EffectType,convert boulder,convertir roca
 EffectType,convert door,convertir puerta
@@ -1061,7 +1061,7 @@ EffectType,lose skill,perder habilidad
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrición
 EffectType,mapping,mapear
-EffectType,mobilise boulder,
+EffectType,mobilise boulder,desplazar roca
 EffectType,murder,asesinar
 EffectType,nutrition,nutrición
 EffectType,opening,apertura
@@ -1267,7 +1267,7 @@ EntityName,blood imp,diablillo de sangre
 EntityName,bloodshot eye,ojo sangriento
 EntityName,bloodworm,gusano de sangre
 EntityName,blue jelly,gelatina azul
-EntityName,blue light,
+EntityName,blue light,luz azul
 EntityName,bone devil,demonio de huesos
 EntityName,brown mould,moho marrón
 EntityName,brown pudding,pudín marrón
@@ -1367,7 +1367,7 @@ EntityName,elf mummy,momia elfo
 EntityName,elf zombie,elfo zombi
 EntityName,Elwing,Elwing
 EntityName,embalmer,embalsamador
-EntityName,emerald golem,
+EntityName,emerald golem,golem de esmeralda
 EntityName,energy vortex,remolino de energía
 EntityName,erinys,erinia
 EntityName,ettin,ettin
@@ -1691,7 +1691,7 @@ EntityName,rancid jelly,gelatina rancia
 EntityName,rat king,rey rata
 EntityName,ratwere,rata monstruosa
 EntityName,recluse spider,araña reclusa
-EntityName,red light,
+EntityName,red light,luz roja
 EntityName,red mould,moho rojo
 EntityName,red naga,naga roja
 EntityName,red naga hatchling,cría de naga roja
@@ -1772,7 +1772,7 @@ EntityName,tiger,tigre
 EntityName,tigerwere,tigre monstruoso
 EntityName,titan,titán
 EntityName,titanothere,titanotérido
-EntityName,topaz golem,
+EntityName,topaz golem,golem de topacio
 EntityName,tortle,tortuga
 EntityName,tracker,cazador
 EntityName,transmuter,transmutador
@@ -2059,7 +2059,7 @@ FormatText,{Entropy} entropy,{Entropy} entropía
 FormatText,{ExplosionName} explosion,explosión {ExplosionName}
 FormatText,{ItemCount} item,{ItemCount} objeto
 FormatText,{ItemCount} items,{ItemCount} objetos
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} more items,{ItemCount} más objetos
 FormatText,{JournalDelay} sec,{JournalDelay} seg
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} y {Follower:CharacterName} son aliados
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} y {Follower:CharacterName} ya no son aliados
@@ -2089,7 +2089,7 @@ FormatText,{WeightUnits} lbs,{WeightUnits} lbs
 FormatText,after reaching dungeon level {RecordDepth},luego de alcanzar el nivel {RecordDepth} de la mazmorra
 FormatText,animate {CharacterName},animar a {CharacterName}
 FormatText,boost {AttributeName} by enchantment,aumentado {AttributeName} por encantamiento
-FormatText,break {FeatureName},
+FormatText,break {FeatureName},romper {FeatureName}
 FormatText,cap {Percent}%,límite {Percent}%
 FormatText,Cast {SpellName} on which item?,¿Lanzar {SpellName} en qué objeto?
 FormatText,Cast {SpellName} which direction?,¿Lanzar {SpellName} en qué dirección?
@@ -2154,8 +2154,8 @@ FormatText,when {STANDINGNAME},cuando {STANDINGNAME}
 FormatText,when resists {ElementName},cuando resiste {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Esta pesada puerta está construida con formaciones de cristal duro y no se daña fácilmente
 GateName,crystal door,puerta de cristal
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,puerta de oro
+GateName,iron door,puerta de hierro
 GateName,wooden door,puerta de madera
 GenderHimself,herself,se
 GenderHimself,himself,se
@@ -2175,11 +2175,11 @@ GradeName,artifact,artefacto
 GradeName,exotic,exótico
 GradeName,standard,estándard
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,La fría piedra fue inmaculadamente elaborada pero está marcada por el daño y el tiempo.
-GroundName,cave floor,
+GroundName,cave floor,suelo de cueva
 GroundName,chasm,abismo
 GroundName,dirt,suelo de tierra
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,suelo de oro
+GroundName,granite floor,suelo de granito
 GroundName,grass,hierba
 GroundName,hive floor,suelo de colmena
 GroundName,ice,hielo
@@ -2189,8 +2189,8 @@ GroundName,metal floor,piso de metal
 GroundName,moss,musgo
 GroundName,obsidian floor,suelo de obsidiana
 GroundName,sand,arena
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,suelo de alcantarilla
+GroundName,snow,nieve
 GroundName,stone floor,suelo de piedra
 GroundName,stone path,pasillo de piedra
 GroundName,water,agua
@@ -2199,7 +2199,7 @@ HordeName,ant,hormiga
 HordeName,ape,simio
 HordeName,bat,murciélago
 HordeName,bee,abeja
-HordeName,beetle,
+HordeName,beetle,escarabajo
 HordeName,cockroach,cucaracha
 HordeName,couatl,couatl
 HordeName,coyote,coyote
@@ -2374,7 +2374,7 @@ ItemDescription,Winged sandals made of imperishable gold which fly the wearer sw
 ItemDescription,Zapping it at a wall creates a big tunnel.,Utilizarla en una pared crea un gran túnel.
 ItemName,adamantine arrow,flecha de adamantina
 ItemName,adamantine axe,hacha de adamantina
-ItemName,adamantine bident,
+ItemName,adamantine bident,bidente de adamantina
 ItemName,adamantine bow,arco de adamantina
 ItemName,adamantine dagger,daga de adamantina
 ItemName,adamantine greataxe,gran hacha de adamantina
@@ -2508,7 +2508,7 @@ ItemName,brass knuckles,nudillos de latón
 ItemName,broadsword,espada ancha
 ItemName,bronze bell,campana de bronce
 ItemName,bronze plate mail,malla de placas de bronce
-ItemName,Brumstyk,
+ItemName,Brumstyk,Brumstyk
 ItemName,bullet,bala
 ItemName,bullwhip,látigo
 ItemName,caltrops,abrojo
@@ -2518,7 +2518,7 @@ ItemName,Carapace,Caparazón
 ItemName,carrot,zanahoria
 ItemName,chain barding,barda de cota de malla
 ItemName,chain mail,cota de malla
-ItemName,chakram,
+ItemName,chakram,chakram
 ItemName,Chaoshammer,Mazo Caótico
 ItemName,Chasm Edge,Hoja del Abismo
 ItemName,cheese,queso
@@ -2707,14 +2707,14 @@ ItemName,meat stick,palo de carne
 ItemName,meatball,albóndiga
 ItemName,melon,melón
 ItemName,Mirrorbright,Espejo Reluciente.
-ItemName,Miserus,
+ItemName,Miserus,Miserus
 ItemName,mithril arrow,flecha de mithril
 ItemName,mithril barding,barda de mithril
 ItemName,mithril battle-axe,hacha de batalla de mithril
 ItemName,mithril bullet,bala de mithril
 ItemName,mithril crossbow bolt,flecha de ballesta de mithril
 ItemName,mithril dagger,daga de mithril
-ItemName,mithril dart,
+ItemName,mithril dart,dardo de mithril
 ItemName,mithril helmet,casco de mithril
 ItemName,mithril katar,katar de mithril
 ItemName,mithril lance,lanza de caballería de mithril
@@ -2759,7 +2759,7 @@ ItemName,phantom key,llave fantasmal
 ItemName,Philosophers Stone,Piedra Filosofal
 ItemName,pick-axe,pico
 ItemName,pistol,pistola
-ItemName,plastic sword,
+ItemName,plastic sword,espada de plástico
 ItemName,plate barding,barda de placas de acero
 ItemName,plate mail,malla de placas de acero
 ItemName,poison dart,dardo de veneno
@@ -2849,7 +2849,7 @@ ItemName,rubber hose,manguera de goma
 ItemName,ruby,rubí
 ItemName,Ruby Key,llave de rubí
 ItemName,Runesword,Espada Rúnica
-ItemName,sabre,
+ItemName,sabre,sable
 ItemName,sack,saco
 ItemName,saddle,montura
 ItemName,sai,sai
@@ -3010,7 +3010,7 @@ ItemName,yellow dragon scales,escamas de dragón amarillo
 ItemName,yellow glass bauble,baratija de vidrio amarillo
 ItemName,yellowish brown glass bauble,baratija de vidrio marrón amarillento
 ItemName,yumi,yumi
-ItemName,zircon,
+ItemName,zircon,zircón
 ItemType,amulet,amuleto
 ItemType,bag,bolso
 ItemType,barding,barda
@@ -3374,7 +3374,7 @@ LiteralText,feature,características
 LiteralText,FEATURES,CARACTERÍSTICAS
 LiteralText,FEED,ALIMENTAR
 LiteralText,FEEDBACK,RETROALIMENTACIÓN
-LiteralText,Feedback information,
+LiteralText,Feedback information,Información de retroalimentación
 LiteralText,FILES,ARCHIVOS
 LiteralText,fixed range,rango fijo
 LiteralText,FIZZLE,EFERVESCENCIA
@@ -3518,7 +3518,7 @@ LiteralText,NAME,NOMBRE
 LiteralText,name?,nombre?
 LiteralText,neutral,neutral
 LiteralText,never,nunca
-LiteralText,NEW,
+LiteralText,NEW,NUEVO
 LiteralText,no additional effects,sin efectos adicionales
 LiteralText,no allies,sin aliados
 LiteralText,no ambient sounds,sin sonidos ambientales
@@ -3576,7 +3576,7 @@ LiteralText,POLYMORPH,POLIMORFISMO
 LiteralText,Polymorph into what?,¿Polimorfar en qué?
 LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
-LiteralText,PORTALS,
+LiteralText,PORTALS,PORTALES
 LiteralText,porter,portador de
 LiteralText,PRAY,ORAR
 LiteralText,preservation,preservación
@@ -3875,7 +3875,7 @@ MaterialName,wood,madera
 MeasurementSystemName,imperial,imperial
 MeasurementSystemName,metric,métrico
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desciende a través de calabozos y cavernas generados proceduralmente. Re-jugabilidad infinita y recomendado para jugadores nuevos en Pathos.
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explora un vasto mapa generado proceduralmente que contiene mazmorras, escenarios elaborados y encuentros intrigantes."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas diseñados a mano en una aventura épica. Toma un descanso de los confines del calabozo y embárcate en una misión desafiante.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Interesantes habitaciones y secretos esperan pero no te detengas; debes descender o moriras. Basado en la generacion de mapas de Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Sandbox para experimentar con las mecánicas de Pathos. Juega con todos los ítems, trampas y elementos de los calabozos en un mapa simple de dos salas"
