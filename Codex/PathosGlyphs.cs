@@ -965,6 +965,7 @@ namespace Pathos
     public readonly Glyph lizardman_male_jester;
     public readonly Glyph lizardman_male_knight;
     public readonly Glyph lizardman_male_necromancer;
+    public readonly Glyph lizardman_male_monk;
     public readonly Glyph lizardman_male_ninja;
     public readonly Glyph lizardman_male_pirate;
     public readonly Glyph lizardman_male_priest;
@@ -986,6 +987,7 @@ namespace Pathos
     public readonly Glyph lizardman_female_reaver;
     public readonly Glyph lizardman_female_rogue;
     public readonly Glyph lizardman_female_samurai;
+    public readonly Glyph lizardman_female_shaman;
     public readonly Glyph lizardman_female_valkyrie;
     public readonly Glyph lizardman_female_wizard;
 

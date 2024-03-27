@@ -3172,7 +3172,7 @@ namespace Pathos
                 }
                 else
                 {
-                  Generator.ResidentRoute(GuardCharacter, GuardCharacter.Resident.GetRouteArray().Union(TownSquare).ToArray(), 0);
+                  Generator.ResidentRoute(GuardCharacter, GuardCharacter.Resident.Routes.Union(TownSquare).ToArray(), 0);
                 }
                 break;
 

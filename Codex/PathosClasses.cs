@@ -548,6 +548,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_monk);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_monk);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_monk);
+        C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_monk);
         C.AddFeat(2, Properties.quickness);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(6, Elements.poison);
@@ -1015,6 +1016,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_shaman);
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_shaman);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_shaman);
+        C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_shaman);
         C.AddFeat(4, Elements.poison);
         C.AddFeat(10, Properties.polymorph_control);
         C.AddFeat(14, Properties.telekinesis);

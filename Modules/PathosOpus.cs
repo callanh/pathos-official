@@ -566,12 +566,12 @@ namespace Pathos
       SetSiteSuffixFirstLevelDown("Nest");
       Generator.StartSquare(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
-      SetSiteFirstLevelUp(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Ruins);
       SetSiteFirstLevelUp(OpusTerms.Cage);
       SetMapLevelDown(OpusTerms.Overland);
       SetUndergroundAreaPassage(OpusTerms.Sewers);
       SetSiteSuffixFirstLevelUp("Farm");
+      SetSiteFirstLevelEntrance(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Crypt);
 #endif
 
@@ -4575,7 +4575,7 @@ namespace Pathos
         // shoreline.
         foreach (var LakeSquare in LakeMap.GetSquares(LakeRegion.Expand(1)))
         {
-          if (LakeSquare.Floor?.Ground == Codex.Grounds.dirt && LakeSquare.GetAdjacentSquares().Any(S => S.Floor?.Ground == LakeVariant.BodyGround))
+          if ((LakeSquare.Floor == null || LakeSquare.Floor.Ground == Codex.Grounds.dirt) && LakeSquare.GetAdjacentSquares().Any(S => S.Floor?.Ground == LakeVariant.BodyGround))
           {
             if (LakeVariant.ShoreGround != null)
               Generator.PlaceFloor(LakeSquare, LakeVariant.ShoreGround);
@@ -5704,7 +5704,7 @@ namespace Pathos
         }
 
         // bridge across the ravines.
-        var SpaceSet = RavineMap.GetSquares(RavineRegion.Expand(1)).Where(S => IsDirt(S)).ToHashSetX();
+        var SpaceSet = RavineMap.GetSquares(RavineRegion.Expand(2)).Where(S => IsDirt(S)).ToHashSetX();
         do
         {
           var RavineSet = new HashSet<Square>();
@@ -7875,8 +7875,7 @@ H-----------H
         var BuildingList = new Inv.DistinctList<OpusBuilding>(BuildingCount);
 
         // number of watchmen to generate.
-        var WatchmanNumberDice = 1.d3() + 1;
-        var WatchmanCount = OccupyEvent ? 0 : WatchmanNumberDice.Roll();
+        var WatchmanCount = OccupyEvent ? 0 : RandomSupport.NextRange(2, 4);
 
         foreach (var Building in BuildingCount.NumberSeries())
         {
@@ -8101,9 +8100,9 @@ H-----------H
         }
 
         // place shops.
-        var ShopNumberDice = 1.d3();
+        var ShopCount = RandomSupport.NextRange(1, 3); 
         var ShopSet = new HashSet<Shop>();
-        foreach (var ShopIndex in ShopNumberDice.Roll().NumberSeries())
+        foreach (var ShopIndex in ShopCount.NumberSeries())
         {
           OpusBuilding ShopBuilding;
           if (RegularBuildingList.Count > 0)
@@ -8161,10 +8160,7 @@ H-----------H
 
                 // only spawn mimics for towns without watchmen.
                 if (OccupyEvent)
-                {
-                  var MimicNumberDice = 1.d3();
-                  Maker.PlaceMimics(Section, TownMap.GetSquares(ShopBuilding.Region).ToArray(), MimicNumberDice.Roll());
-                }
+                  Maker.PlaceMimics(Section, TownMap.GetSquares(ShopBuilding.Region).ToArray(), 1.d3().Roll());
               }
             }
           }
@@ -8173,8 +8169,8 @@ H-----------H
         Generator.ResidentRoute(MayorCharacter, MayorSquareList.ToArray(), SquareIndex: 0);
 
         // make fountains.
-        var FountainNumberDice = 1.d2();
-        foreach (var Fountain in FountainNumberDice.Roll().NumberSeries())
+        var FountainCount = RandomSupport.NextRange(1, 2);
+        foreach (var Fountain in FountainCount.NumberSeries())
         {
           var FountainSquare = TownMap.GetSquares(TownRegion).Where(S => S.Floor?.Ground == Codex.Grounds.dirt && Generator.CanPlaceFeature(S) && S.GetAdjacentSquares().Count(A => A.Floor != null && A.Door == null && A.Fixture == null && A.Passage == null) == 8).GetRandomOrNull();
           if (FountainSquare != null)
@@ -8182,8 +8178,8 @@ H-----------H
         }
 
         // make barrels.
-        var BarrielNumberDice = 1.d2() + 1;
-        foreach (var Barrel in BarrielNumberDice.Roll().NumberSeries())
+        var BarrielCount = RandomSupport.NextRange(2, 3);
+        foreach (var Barrel in BarrielCount.NumberSeries())
         {
           var BarrelSquare = TownMap.GetSquares(TownRegion).Where(S => S.Floor?.Ground == TownVariant.BuildingGround && Generator.CanPlaceBoulder(S) && Maker.IsCorner(S, S => S.Wall != null, S => S.Floor != null && S.Boulder == null && S.Fixture == null && S.Door == null && S.Passage == null)).GetRandomOrNull();
           if (BarrelSquare != null)
@@ -8203,8 +8199,8 @@ H-----------H
         }
 
         // make beds.
-        var BedNumberDice = 1.d2() + 1;
-        foreach (var Bed in BedNumberDice.Roll().NumberSeries())
+        var BedCount = RandomSupport.NextRange(2, 3);
+        foreach (var Bed in BedCount.NumberSeries())
         {
           if (OtherBuildingList.Count > 0)
           {
