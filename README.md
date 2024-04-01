@@ -25,9 +25,6 @@ The content definitions and module generations are declared as C# code. This cod
 2. Open `PathosOfficial.sln`.
 3. Run **PathosOfficial** project.
 
-The first time you build you may need to add `nuget.org` (url: `https://api.nuget.org/v3/index.json`) as a package source for Nuget.
-This step comes from [Stack Overflow](https://stackoverflow.com/a/63633575).
-
 ### Visual Studio Code and Build Tools
 
 1. Install [**Visual Studio Code**](https://code.visualstudio.com).
@@ -38,6 +35,8 @@ This step comes from [Stack Overflow](https://stackoverflow.com/a/63633575).
 6. Press `F5` to run **PathosOfficial** project.
 
 If these steps are successful, the Pathos game will launch, running the forked code. Exit the game and make a minor change to the code before building and running again to see the difference in the game.
+
+This project relies on packages from `nuget.org` which should be automatically added to your "Package Sources" when you first set up Nuget.
 
 > NOTE: when the Pathos game self-updates you need to pull the latest commits from the Official repository and vice versa.
 
