@@ -506,6 +506,7 @@ namespace Pathos
                     {
                         var bossEntity = SPDGameList.RandomUniqueBoss();
                         boss = SPDDebug.generator.NewCharacter(Square, bossEntity);
+                        SPDDebug.generator.HostileCharacter(boss);
 
                         if (bossEntity.Level <= 40)
                         {
@@ -819,8 +820,16 @@ namespace Pathos
                 else if (point.value == SPDMapPoint.EXIT)
                 {
                     SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
-                    if (SPDDebug.currentmap.depth != 1)
-                    SPDDebug.generator.PlacePassage(SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y], SPDDebug.codex.Portals.stone_staircase_down, SPDDebug.currentmap.pathosMap[SPDDebug.currentmap.entrance.x, SPDDebug.currentmap.entrance.y]);
+                    if (SPDDebug.currentmap.depth != 1) 
+                    {
+                        var exitSquare = SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y];
+                        var entranceSquare = SPDDebug.currentmap.pathosMap[SPDDebug.currentmap.entrance.x, SPDDebug.currentmap.entrance.y];
+
+                        if (exitSquare.Fixture != null)
+                            SPDDebug.generator.RemoveFixture(exitSquare);
+
+                        SPDDebug.generator.PlacePassage(exitSquare, SPDDebug.codex.Portals.stone_staircase_down, entranceSquare);
+                    }
                 }
                 else if (point.value == SPDMapPoint.WATER)
                 {
