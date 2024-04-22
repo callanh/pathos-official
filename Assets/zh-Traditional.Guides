@@ -260,7 +260,7 @@
 # Spawning; 怪物生成
 . Monsters will randomly spawn into areas outside your current zone.; 怪物會在你所在區域外隨機生成。
 . The rate of spawning increases as you descend deeper into the dungeon.; 你的深度越深，怪物生成的速度就越快。
-. The talent of aggravation also increases the spawn rates for monsters.; 好鬥天賦也會加速怪物的產生。
+. The talent of aggravation also increases the spawn rates for monsters.; 好戰天賦也會加速怪物的產生。
 
 # Polymorph; 變形
 . Transform into another entity with all the advantages or disadvantages that brings.; 變成另一種單位，獲得它的一切優點和缺陷。
@@ -281,7 +281,7 @@
 # Traps; 陷阱
 . Traps have a difficulty rating that reflects the lethality of the device.; 陷阱有一個難度評價，反映的是它的危險性。
 . This difficulty rating is also the minimum dungeon level the trap can be generated.; 難度評價也等於能生成該陷阱的最低樓層數。
-. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 拆除陷阱的幾率是從該陷阱的難度，你的陷阱專精等級已經敏捷值計算出來的。
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; 拆除陷阱的幾率同時受該陷阱的難度、你的陷阱專精以及敏捷值影響。
 . If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; 如果你有任何短期狀態，比如笨拙，致盲，眩暈，混亂或者幻覺，你會更難以拆除陷阱。
 . Untrapping requires you to move into the square.; 你必須移動到陷阱所在的位置才能拆除它。
 . A failure to untrap will cause it to be triggered.; 如果拆除失敗，陷阱就會被觸發，但是還是會消失。

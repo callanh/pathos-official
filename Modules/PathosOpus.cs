@@ -4197,7 +4197,9 @@ namespace Pathos
           }
           else
           {
-            Generator.PlaceRoomFixtures(FloorSquareList);
+            // don't place 'throne' in particular on the overland map because it gets converted to a trapdoor, which won't take the player into the below halls.
+            if (HallMap != Maker.OverlandMap)
+              Generator.PlaceRoomFixtures(FloorSquareList);
 
             var DetailSquareList = FloorSquareList.Where(Generator.CanPlaceTrap).ToDistinctList();
             Generator.PlaceRoomTraps(DetailSquareList, HallVariant.MaximumDifficulty);
@@ -5170,11 +5172,11 @@ namespace Pathos
             Generator.ReplaceWall(MineSquare, Codex.Barriers.wooden_wall);
 
           // wooden floors between wooden pillars.
-          foreach (var MineSquare in BelowMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.cave_floor && S.GetNeighbourSquares().Count(N => N.Wall?.Barrier == Codex.Barriers.wooden_wall) >= 2))
+          foreach (var MineSquare in BelowMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.cave_floor && S.Passage == null && S.GetNeighbourSquares().Count(N => N.Wall?.Barrier == Codex.Barriers.wooden_wall) >= 2))
             Generator.ReplaceFloor(MineSquare, Codex.Grounds.wooden_floor);
 
           // place workbenches on perfect wooden nexus areas.
-          foreach (var MineSquare in BelowMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.cave_floor && S.GetNeighbourSquares().Count(N => N.Floor?.Ground == Codex.Grounds.wooden_floor) == 4))
+          foreach (var MineSquare in BelowMap.GetSquares().Where(S => S.Floor?.Ground == Codex.Grounds.cave_floor && S.Passage == null && S.GetNeighbourSquares().Count(N => N.Floor?.Ground == Codex.Grounds.wooden_floor) == 4))
           {
             Generator.ReplaceFloor(MineSquare, Codex.Grounds.wooden_floor);
             Generator.PlaceFixture(MineSquare, Codex.Features.workbench);
@@ -6577,7 +6579,9 @@ H-----------H
         {
           var FloorSquareList = RuinMap.GetSquares(Building.Region.Reduce(1)).ToDistinctList();
 
-          Generator.PlaceRoomFixtures(FloorSquareList);
+          // don't place 'throne' in particular on the overland map because it gets converted to a trapdoor, which won't take the player into the below ruins.
+          if (RuinMap != Maker.OverlandMap)
+            Generator.PlaceRoomFixtures(FloorSquareList);
 
           var DetailSquareList = FloorSquareList.Where(Generator.CanPlaceTrap).ToDistinctList();
           Generator.PlaceRoomTraps(DetailSquareList, RuinVariant.MaximumDifficulty);
