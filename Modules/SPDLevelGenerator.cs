@@ -1014,7 +1014,7 @@ namespace Pathos
 
                 if (square.Character == null)
                 { 
-                    SPDDebug.generator.PlaceCharacter(square);
+                    SPDDebug.generator.PlaceRandomCharacter(square);
                     if (square.Character != null) SPDDebug.generator.AcquireTalent(SPDDebug.currentmap.pathosMap[pos.x, pos.y].Character, SPDDebug.codex.Properties.sleeping);
                 }
             }
@@ -1053,7 +1053,7 @@ namespace Pathos
             var shop = SPDDebug.codex.Shops.general_store;
             SPDDebug.generator.PlaceFixture(Square, SPDDebug.codex.Features.stall, SPDDebug.codex.Sanctities.Uncursed);
             var stall = Square.Fixture.Container;
-            SPDDebug.generator.PlaceCharacter(Square, SPDDebug.codex.Entities.merchant);
+            SPDDebug.generator.PlaceSpecificCharacter(Square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = Square.Character;
             SPDDebug.generator.ChangeQuantity(shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse), 1); // override to start with 1 gold coin.
             SPDDebug.generator.ResidentShop(shopkeeper, Square, shop);
@@ -1146,7 +1146,7 @@ namespace Pathos
             var square = SPDDebug.currentmap.pathosMap[pos.x, pos.y];
             SPDDebug.generator.PlaceFixture(square, SPDDebug.codex.Features.stall, SPDDebug.codex.Sanctities.Uncursed);
             var stall = square.Fixture.Container;
-            SPDDebug.generator.PlaceCharacter(square, SPDDebug.codex.Entities.merchant);
+            SPDDebug.generator.PlaceSpecificCharacter(square, SPDDebug.codex.Entities.merchant);
             var shopkeeper = square.Character;
             SPDDebug.generator.ChangeQuantity(shopkeeper.Inventory.GetEquippedAsset(SPDDebug.codex.Slots.purse), 1);
             SPDDebug.generator.ResidentShop(shopkeeper, square, shop);
@@ -1342,15 +1342,15 @@ namespace Pathos
                 {
                     switch (monster.value)
                     {
-                        case 0: SPDDebug.generator.PlaceCharacter(monsterSquare); break;
-                        case 1: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.leprechaun); break;
-                        case 2: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.leprechaun_wizard); break;
-                        case 3: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.yeoman); break;
-                        case 4: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.yeoman_warder); break;
-                        case 5: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.chief_yeoman_warder); break;
-                        case 6: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.killer_bee); break;
-                        case 7: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.queen_bee); break;
-                        case 8: SPDDebug.generator.PlaceCharacter(monsterSquare, SPDDebug.codex.Entities.small_mimic); break;
+                        case 0: SPDDebug.generator.PlaceRandomCharacter(monsterSquare); break;
+                        case 1: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.leprechaun); break;
+                        case 2: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.leprechaun_wizard); break;
+                        case 3: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.yeoman); break;
+                        case 4: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.yeoman_warder); break;
+                        case 5: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.chief_yeoman_warder); break;
+                        case 6: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.killer_bee); break;
+                        case 7: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.queen_bee); break;
+                        case 8: SPDDebug.generator.PlaceSpecificCharacter(monsterSquare, SPDDebug.codex.Entities.small_mimic); break;
                     }
                 }
             }

@@ -158,7 +158,7 @@ namespace Pathos
       Generator.PlaceRoom(SandboxMap, SandboxBarrier, SandboxRoomGround, DarkRegion);
       Generator.PlaceFloor(SandboxMap[25, 3], SandboxRoomGround);
       Generator.PlaceClosedVerticalDoor(SandboxMap[25, 3], SandboxGate, SandboxBarrier);
-      Generator.PlaceCharacter(SandboxMap[29, 1]);
+      Generator.PlaceRandomCharacter(SandboxMap[29, 1]);
       Generator.PlaceCorridor(SandboxMap, SandboxCorridorGround, new Region(20, 3, 24, 3));
 
       Generator.PlaceFloor(SandboxMap[10, 2], SandboxRoomGround);
@@ -232,7 +232,7 @@ namespace Pathos
 
                 if (Entity != null)
                 {
-                  Generator.PlaceCharacter(ThankYouSquare, Entity);
+                  Generator.PlaceSpecificCharacter(ThankYouSquare, Entity);
 
                   if (EntityList.Count > 1)
                     EntityList.Remove(Entity);

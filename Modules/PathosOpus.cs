@@ -686,7 +686,7 @@ namespace Pathos
         // mimics should not be directly adjacent to the merchant or any other character.
         var MimicSquare = SquareList.Where(S => Generator.CanPlaceCharacter(S) && S.GetAdjacentSquares().All(A => A.Character == null)).GetRandomOrNull();
         if (MimicSquare != null)
-          Generator.PlaceCharacter(MimicSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, E => E.IsEncounter && E.IsMimicking());
+          Generator.PlaceCharacter(MimicSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, E => E.IsMimicking());
       }
     }
     private void RepairBoundary(Map BoundaryMap, Region BoundaryRegion, Barrier BoundaryBarrier, Ground RegularGround, bool IsLit)
@@ -763,14 +763,14 @@ namespace Pathos
         // TODO: there are some cases where the gaps won't get repaired.
       }
     }
-    private void ConnectSquares(IEnumerable<Square> SpaceSquares, Square StartSquare, Action<Square> ConnectAction)
+    private void ConnectSquares(IEnumerable<Square> SpaceSquares, Square InitialSquare, Action<Square> ConnectAction)
     {
       var SpaceSet = SpaceSquares.Where(S => S.Floor != null).ToHashSetX();
       do
       {
         var FlatSet = new HashSet<Square>();
         var PathSet = new HashSet<Square>();
-        StartSquare.FloodNeighbour(Square =>
+        InitialSquare.FloodNeighbour(Square =>
         {
           if (Square.Floor != null && (Square.Wall == null || Square.Wall.IsIllusionary()))
           {
@@ -1732,7 +1732,7 @@ namespace Pathos
         {
           if (AmbushSquare.Wall == null && AmbushSquare.Boulder == null && AmbushSquare.Trap == null && !AmbushSquare.IsAdjacent(FunnelSquare) && (AmbushSquare.GetAdjacentSquares().Any(S => S.Boulder != null) || LurkChance.Hit()))
           {
-            Generator.PlaceCharacter(AmbushSquare, EntityProbability?.GetRandomOrNull() ?? Generator.RandomEntity(AmbushSquare));
+            Generator.PlaceSpecificCharacter(AmbushSquare, EntityProbability?.GetRandomOrNull() ?? Generator.RandomEntity(AmbushSquare));
             var OccupyCharacter = AmbushSquare.Character;
             if (OccupyCharacter != null)
             {
@@ -1762,7 +1762,7 @@ namespace Pathos
         foreach (var SpaceSquare in AmbushMap.GetSquares(Section.Region).Where(S => S.Wall == null && S.Floor?.Ground == Codex.Grounds.dirt && S.Character == null))
         {
           if (Chance.OneIn15.Hit())
-            Generator.PlaceCharacter(SpaceSquare, EntityProbability?.GetRandomOrNull() ?? Generator.RandomEntity(SpaceSquare));
+            Generator.PlaceSpecificCharacter(SpaceSquare, EntityProbability?.GetRandomOrNull() ?? Generator.RandomEntity(SpaceSquare));
         }
 
         // ensure we have carved a dirt veranda around the ambush.
@@ -1838,7 +1838,7 @@ namespace Pathos
             Generator.PlaceFloor(CageSquare, Codex.Grounds.dirt);
 
             if (CageSquare.Character == null)
-              Generator.PlaceCharacter(CageSquare, CageVariant.Kind);
+              Generator.PlaceSpecificCharacter(CageSquare, CageVariant.Kind);
           }
         }
 
@@ -2036,12 +2036,12 @@ namespace Pathos
 
                     if (EnemyCharacter == null)
                     {
-                      Generator.PlaceCharacter(SourceSquare, CageVariant.Kind);
+                      Generator.PlaceSpecificCharacter(SourceSquare, CageVariant.Kind);
                       EnemyCharacter = SourceSquare.Character;
 
                       if (EnemyCharacter == null)
                       {
-                        Generator.PlaceCharacter(SourceSquare); // can't place the expected kind due to difficulty level probably.
+                        Generator.PlaceRandomCharacter(SourceSquare); // can't place the expected kind due to difficulty level probably.
                         EnemyCharacter = SourceSquare.Character;
                       }
                     }
@@ -2511,7 +2511,7 @@ namespace Pathos
 
               if (DoorSquare != null && DoorSquare.Passage == null)
               {
-                Generator.PlaceCharacter(CryptSquare, Codex.Entities.skeleton);
+                Generator.PlaceSpecificCharacter(CryptSquare, Codex.Entities.skeleton);
                 Generator.PlaceLockedVerticalDoor(DoorSquare, CryptVariant.Gate, SecretBarrier: CryptVariant.Barrier);
               }
             }
@@ -2542,7 +2542,7 @@ namespace Pathos
             }
             void Denizen(Square Square)
             {
-              Generator.PlaceCharacter(Square, CryptKindArray);
+              Generator.PlaceSpecificCharacter(Square, CryptKindArray);
 
               // 50% of denizens carry an item because there's no items generated on the floor.
               var RecessCharacter = Square.Character;
@@ -2897,7 +2897,7 @@ namespace Pathos
               if (SentrySquare.Character == null)
               {
                 // kobold sentries with bugles to awaken dragons (stationary position inside each chamber) - perhaps they can wear dragon scales as armour?
-                Generator.PlaceCharacter(SentrySquare, Codex.Entities.large_kobold);
+                Generator.PlaceSpecificCharacter(SentrySquare, Codex.Entities.large_kobold);
                 var SentryCharacter = SentrySquare.Character;
                 if (SentryCharacter != null)
                 {
@@ -2965,7 +2965,7 @@ namespace Pathos
               {
                 LairCharacterCount++;
 
-                Generator.PlaceCharacter(SoftSquare, ChamberEntity);
+                Generator.PlaceSpecificCharacter(SoftSquare, ChamberEntity);
 
                 var LairCharacter = SoftSquare.Character;
                 if (LairCharacter != null)
@@ -3170,9 +3170,9 @@ namespace Pathos
             if ((Middle && Strange) || (!Middle && Chance.OneIn3.Hit()))
             {
               if (Middle && Strange)
-                Generator.PlaceCharacter(FarmSquare, SuspicousEntity);
+                Generator.PlaceSpecificCharacter(FarmSquare, SuspicousEntity);
               else
-                Generator.PlaceCharacter(FarmSquare, FarmClearing.Section.MinimumDifficulty, FarmClearing.Section.MaximumDifficulty, FarmVariant.EntityList);
+                Generator.PlaceSpecificCharacter(FarmSquare, FarmClearing.Section.MinimumDifficulty, FarmClearing.Section.MaximumDifficulty, FarmVariant.EntityList);
 
               var FarmCharacter = FarmSquare.Character;
               if (FarmCharacter != null)
@@ -3278,7 +3278,7 @@ namespace Pathos
           {
             Generator.PlaceFloor(SecretSquare, Codex.Grounds.moss);
 
-            Generator.PlaceCharacter(SecretSquare, SuspicousEntity);
+            Generator.PlaceSpecificCharacter(SecretSquare, SuspicousEntity);
 
             var StrangeCharacter = SecretSquare.Character;
             if (StrangeCharacter != null)
@@ -4781,7 +4781,7 @@ namespace Pathos
                   {
                     Generator.RemoveWall(BetweenSquare);
                     if (TreantChance.Hit())
-                      Generator.PlaceCharacter(BetweenSquare, Codex.Entities.treant);
+                      Generator.PlaceSpecificCharacter(BetweenSquare, Codex.Entities.treant);
                   }
                 }
 
@@ -5104,7 +5104,7 @@ namespace Pathos
             }
             else if (Chance.ThreeIn4.Hit())
             {
-              Generator.PlaceCharacter(EndSquare, MineEntityArray);
+              Generator.PlaceSpecificCharacter(EndSquare, MineEntityArray);
 
               var EndCharacter = EndSquare.Character;
               if (EndCharacter != null)
@@ -5190,7 +5190,7 @@ namespace Pathos
           var GolemSquare = Generator.ReducingFindSquare(ExitSquare, BelowSize, S => S.Floor != null && S.Boulder == null && S.Fixture == null && S.Trap == null && S.Passage == null && S.Character == null);
           if (GolemSquare != null)
           {
-            Generator.PlaceCharacter(GolemSquare, MineVariant.Golem);
+            Generator.PlaceSpecificCharacter(GolemSquare, MineVariant.Golem);
             var GolemCharacter = GolemSquare.Character;
             // gimmick: raging, tunnelling golem (slowness to make it escapable).
             if (GolemCharacter != null)
@@ -5452,7 +5452,7 @@ namespace Pathos
                 Generator.PlaceRandomAsset(TrapSquare);
 
               if (Chance.OneIn2.Hit())
-                Generator.PlaceCharacter(TrapSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, NestVariant.EntityList);
+                Generator.PlaceSpecificCharacter(TrapSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, NestVariant.EntityList);
 
               Generator.PlaceTrap(TrapSquare, NestVariant.Device, Revealed: true);
             }
@@ -5660,11 +5660,11 @@ namespace Pathos
         foreach (var RavineClearing in Section.Clearings)
         {
           var RavineCircle = RavineClearing.Circle;
-          var RavineStartSquare = RavineMap.GetCircleOuterSquares(RavineCircle.Reduce(1)).GetRandomOrNull();
-          var RavineEndSquare = RavineStartSquare.Rotate(RavineCircle.Origin, 180);
+          var RavineBeginSquare = RavineMap.GetCircleOuterSquares(RavineCircle.Reduce(1)).GetRandomOrNull();
+          var RavineEndSquare = RavineBeginSquare.Rotate(RavineCircle.Origin, 180);
 
           // TODO: DeviatingPath needs a constraint region?
-          foreach (var RavineSquare in Maker.DeviatingPath(RavineStartSquare, RavineEndSquare, RavineRegion))
+          foreach (var RavineSquare in Maker.DeviatingPath(RavineBeginSquare, RavineEndSquare, RavineRegion))
           {
             Debug.Assert(RavineSquare.IsRegion(RavineRegion));
 
@@ -5675,7 +5675,7 @@ namespace Pathos
 
           if (LastSquare != null)
           {
-            var NextPoint = LastSquare.Point.ManhattanDistance(RavineStartSquare.Point) > LastSquare.Point.ManhattanDistance(RavineEndSquare.Point) ? RavineEndSquare : RavineStartSquare;
+            var NextPoint = LastSquare.Point.ManhattanDistance(RavineBeginSquare.Point) > LastSquare.Point.ManhattanDistance(RavineEndSquare.Point) ? RavineEndSquare : RavineBeginSquare;
 
             foreach (var RavineSquare in Maker.DeviatingPath(LastSquare, NextPoint, RavineRegion))
             {
@@ -6072,7 +6072,7 @@ namespace Pathos
         foreach (var UndergroundSquare in UndergroundMap.GetSquares(PitRegion).Where(S => S.Floor?.Ground == PitVariant.Ground))
         {
           if (UndergroundSquare.Character == null && Chance.OneIn7.Hit())
-            Generator.PlaceCharacter(UndergroundSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, new[] { PitVariant.Kind });
+            Generator.PlaceSpecificCharacter(UndergroundSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, new[] { PitVariant.Kind });
         }
 
         // TODO:
@@ -6637,7 +6637,7 @@ H-----------H
             else if (NaturalSquare.Character == null)
             {
               if (Chance.OneIn10.Hit())
-                Generator.PlaceCharacter(NaturalSquare, RuinVariant.MinimumDifficulty, RuinVariant.MaximumDifficulty);
+                Generator.PlaceRandomCharacter(NaturalSquare, RuinVariant.MinimumDifficulty, RuinVariant.MaximumDifficulty);
 
               if (Chance.OneIn20.Hit())
                 Generator.PlaceRandomAsset(NaturalSquare);
@@ -6909,7 +6909,7 @@ H-----------H
           if (BarsSquare != null)
           {
             Generator.PlaceWall(BarsSquare, Codex.Barriers.iron_bars, WallStructure.Solid, WallSegment.Pillar);
-            Generator.PlaceCharacter(PrisonSquare, Maker.RandomMercenaryEntity(Section));
+            Generator.PlaceSpecificCharacter(PrisonSquare, Maker.RandomMercenaryEntity(Section));
             var PrisonCharacter = PrisonSquare.Character;
             if (PrisonCharacter != null)
             {
@@ -6947,7 +6947,7 @@ H-----------H
         {
           var SoldierSquare = OutpostMap.GetSquares(OutpostRegion).Where(S => S.Floor?.Ground == OutpostVariant.Ground && S.Door == null && S.Character == null).GetRandomOrNull();
           if (SoldierSquare != null)
-            Generator.PlaceCharacter(SoldierSquare, FortSoldierProbability.GetRandomOrNull());
+            Generator.PlaceSpecificCharacter(SoldierSquare, FortSoldierProbability.GetRandomOrNull());
         }
 
         var BedNumberDice = 1.d3() + 1; // 2-4
@@ -7088,7 +7088,7 @@ H-----------H
               Generator.PlaceFloor(PrisonSquare, Codex.Grounds.water);
 
               if (PrisonSquare.X != RallySquare.X && PrisonSquare.Y != RallySquare.Y && PrisonSquare.Floor?.Ground == Codex.Grounds.water && Chance.OneIn8.Hit())
-                Generator.PlaceCharacter(PrisonSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, FortMoatEntityArray);
+                Generator.PlaceSpecificCharacter(PrisonSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, FortMoatEntityArray);
             }
           }
 
@@ -7243,7 +7243,8 @@ H-----------H
             if (BedSquare != null)
             {
               Generator.PlaceFixture(BedSquare, Codex.Features.bed);
-              Maker.SnoozeCharacter(Generator.PlaceCharacter(BedSquare, FortSoldierProbability.GetRandomOrNull()));
+              Generator.PlaceSpecificCharacter(BedSquare, FortSoldierProbability.GetRandomOrNull());
+              Maker.SnoozeCharacter(BedSquare.Character);
             }
           }
 
@@ -7270,12 +7271,12 @@ H-----------H
           {
             var SoldierSquare = GuardZone.Squares.Where(S => S.Floor?.Ground == Codex.Grounds.stone_floor && S.Door == null && S.Character == null).GetRandomOrNull();
             if (SoldierSquare != null)
-              Generator.PlaceCharacter(SoldierSquare, FortSoldierProbability.GetRandomOrNull());
+              Generator.PlaceSpecificCharacter(SoldierSquare, FortSoldierProbability.GetRandomOrNull());
           }
 
           var HoundSquare = GuardZone.Squares.Where(S => S.Floor?.Ground == Codex.Grounds.stone_floor && S.Door == null && S.Character == null).GetRandomOrNull();
           if (HoundSquare != null)
-            Generator.PlaceCharacter(HoundSquare, FortHoundProbability.GetRandomOrNull());
+            Generator.PlaceSpecificCharacter(HoundSquare, FortHoundProbability.GetRandomOrNull());
         }
 
         // welcome corridor.
@@ -7304,7 +7305,7 @@ H-----------H
         // hound corridor.
         var HoundCorridor = HouseCorridorArray.Where(H => H != WelcomeCorridor && H != BenchCorridor && H != MessCorridor).GetRandomOrNull();
         foreach (var PrisonSquare in AboveMap.GetSquares(HoundCorridor.Region).Where(S => S.Floor?.Ground == Codex.Grounds.stone_floor && S.Door == null && S.Character == null))
-          Generator.PlaceCharacter(PrisonSquare, FortHoundProbability.GetRandomOrNull());
+          Generator.PlaceSpecificCharacter(PrisonSquare, FortHoundProbability.GetRandomOrNull());
 
         // below the facility.
         var PrisonName = Generator.EscapedModuleTerm(OpusTerms.Prison);
@@ -7558,7 +7559,7 @@ H-----------H
               Generator.PlaceFloor(PrisonSquare, Codex.Grounds.stone_floor);
               Generator.PlaceFixture(PrisonSquare, Codex.Features.bed);
 
-              Generator.PlaceCharacter(PrisonSquare, FortSoldierProbability.GetRandomOrNull());
+              Generator.PlaceSpecificCharacter(PrisonSquare, FortSoldierProbability.GetRandomOrNull());
               Maker.SnoozeCharacter(PrisonSquare.Character);
             }
 
@@ -8311,7 +8312,7 @@ H-----------H
               var OccupySquare = TownMap.GetSquares(Building.Region).Where(S => Generator.CanPlaceCharacter(S)).GetRandomOrNull();
               if (OccupySquare != null)
               {
-                Generator.PlaceCharacter(OccupySquare, OccupyProbability.GetRandomOrNull());
+                Generator.PlaceSpecificCharacter(OccupySquare, OccupyProbability.GetRandomOrNull());
                 var OccupyCharacter = OccupySquare.Character;
                 if (OccupyCharacter != null)
                   OccupyParty.AddAlly(OccupyCharacter, Clock.Zero, Delay.Zero);
@@ -8397,7 +8398,7 @@ H-----------H
 
             if (MercenarySquare == null)
             {
-              Generator.PlaceCharacter(MercenarySquare, Maker.RandomMercenaryEntity(Section));
+              Generator.PlaceSpecificCharacter(MercenarySquare, Maker.RandomMercenaryEntity(Section));
 
               if (MassacreEvent)
                 Generator.CorpseSquare(MercenarySquare);
@@ -8524,7 +8525,7 @@ H-----------H
           var RoyalEntity = Codex.Entities.rat_king;
 
           Generator.PlaceFixture(ThroneSquare, Codex.Features.throne);
-          Generator.PlaceCharacter(ThroneSquare, RoyalEntity);
+          Generator.PlaceSpecificCharacter(ThroneSquare, RoyalEntity);
 
           // may require level promotion for later towns.
           var LevelPromotion = Section.MaximumDifficulty - RoyalEntity.Difficulty;
@@ -8536,7 +8537,7 @@ H-----------H
           {
             if (Generator.CanPlaceCharacter(RoomSquare))
             {
-              Generator.PlaceCharacter(RoomSquare, Codex.Entities.sewer_rat);
+              Generator.PlaceSpecificCharacter(RoomSquare, Codex.Entities.sewer_rat);
 
               if (LevelPromotion > 0)
                 Generator.PromoteCharacter(RoomSquare.Character, LevelPromotion);
@@ -8550,7 +8551,7 @@ H-----------H
         if (Lycanthrope != null)
         {
           var PrimarySquare = ThroneSquare.IsOccupied() ? Generator.ExpandingFindSquare(ThroneSquare, 10) : ThroneSquare;
-          Generator.PlaceCharacter(PrimarySquare, Lycanthrope.Primary);
+          Generator.PlaceSpecificCharacter(PrimarySquare, Lycanthrope.Primary);
 
           if (PrimarySquare.Character != null)
           {
@@ -8564,7 +8565,7 @@ H-----------H
             var SecondarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
             if (SecondarySquare != null)
             {
-              Generator.PlaceCharacter(SecondarySquare, Lycanthrope.Secondary);
+              Generator.PlaceSpecificCharacter(SecondarySquare, Lycanthrope.Secondary);
               if (SecondarySquare.Character != null)
                 Generator.GainRandomAsset(SecondarySquare.Character);
             }
@@ -8574,7 +8575,7 @@ H-----------H
           {
             var OrdinarySquare = Generator.ExpandingFindSquare(ThroneSquare, 10);
             if (OrdinarySquare != null)
-              Generator.PlaceCharacter(OrdinarySquare, Lycanthrope.Ordinary);
+              Generator.PlaceSpecificCharacter(OrdinarySquare, Lycanthrope.Ordinary);
           }
         }
 

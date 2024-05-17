@@ -1106,7 +1106,7 @@ namespace Pathos
 
                 // prison.
                 var PrisonSquare = FinaleMap.GetSquares(FinalVaultRegion.Reduce(1)).ToArray().GetRandom();
-                Generator.PlaceCharacter(PrisonSquare, FinaleMap.Difficulty, FinaleMap.Difficulty + 5);
+                Generator.PlaceRandomCharacter(PrisonSquare, FinaleMap.Difficulty, FinaleMap.Difficulty + 5);
                 break;
 
               default:
@@ -1141,7 +1141,7 @@ namespace Pathos
           if (!CreateAbyssBranch(UniqueSquare))
             Debug.WriteLine("Abyss not generated.");
 
-          Generator.PlaceCharacter(UniqueSquare, UniqueEntity);
+          Generator.PlaceSpecificCharacter(UniqueSquare, UniqueEntity);
 
           var UniqueCharacter = UniqueSquare.Character;
           if (UniqueCharacter != null)
@@ -1309,7 +1309,7 @@ namespace Pathos
         {
           var ServantSquare = ShopRoom.GetFloorSquares().Where(Generator.CanPlaceCharacter).GetRandomOrNull();
           if (ServantSquare != null)
-            Generator.PlaceCharacter(ServantSquare, ServantProbability.GetRandomOrNull());
+            Generator.PlaceSpecificCharacter(ServantSquare, ServantProbability.GetRandomOrNull());
         }
       }
     }
@@ -1651,7 +1651,7 @@ namespace Pathos
 
             var CharacterSquare = AtticMap.GetSquares().Where(Generator.CanPlaceCharacter).GetRandomOrNull();
             if (CharacterSquare != null)
-              Generator.PlaceCharacter(CharacterSquare);
+              Generator.PlaceRandomCharacter(CharacterSquare);
           }
         }
       }
@@ -1713,7 +1713,7 @@ namespace Pathos
 
         if (MercenaryEntity != null)
         {
-          Generator.PlaceCharacter(PrisonSquare, MercenaryEntity);
+          Generator.PlaceSpecificCharacter(PrisonSquare, MercenaryEntity);
 
           var PrisonCharacter = PrisonSquare.Character;
 
@@ -1807,7 +1807,7 @@ namespace Pathos
           var BossSquare = CellarRoom.GetFloorSquares().Where(Generator.CanPlaceCharacter).GetRandomOrNull();
           if (BossSquare != null)
           {
-            Generator.PlaceCharacter(BossSquare, BossSquare.Map.Difficulty + 1, BossSquare.Map.Difficulty + 3);
+            Generator.PlaceRandomCharacter(BossSquare, BossSquare.Map.Difficulty + 1, BossSquare.Map.Difficulty + 3);
             if (BossSquare.Character != null)
               SnoozeCharacter(BossSquare.Character);
           }
@@ -1823,7 +1823,7 @@ namespace Pathos
             Generator.PlaceFloor(Square, FloodedGround);
 
             if (Generator.CanPlaceCharacter(Square) && Chance.OneIn2.Hit())
-              Generator.PlaceCharacter(Square); // marine/ice.
+              Generator.PlaceRandomCharacter(Square); // marine/ice.
 
             if (!IsFrozen && Generator.CanPlaceAsset(Square) && Chance.OneIn5.Hit())
               Generator.PlaceSpecificAsset(Square, Codex.Items.kelp_frond);
@@ -1837,7 +1837,7 @@ namespace Pathos
             if (Generator.CanPlaceBoulder(Square) && Chance.ThreeIn4.Hit())
               Generator.PlaceBoulder(Square, Codex.Blocks.wooden_barrel, IsRigid: false);
             else if (Generator.CanPlaceCharacter(Square))
-              Generator.PlaceCharacter(Square);
+              Generator.PlaceRandomCharacter(Square);
           }
           break;
 
@@ -1918,7 +1918,7 @@ namespace Pathos
         if (Square != TroveRoom.Midpoint)
         {
           if (Chance.OneIn9.Hit())
-            Generator.PlaceCharacter(Square, Generator.MinimumDifficulty(Square), Generator.MaximumDifficulty(Square), E => E.IsEncounter && E.IsMimicking());
+            Generator.PlaceCharacter(Square, E => E.IsMimicking());
 
           if (Square.Character != null)
           {
@@ -2029,7 +2029,7 @@ namespace Pathos
         else if (Chance.OneIn7.Hit())
           Generator.PlaceTrap(NookSquare, Revealed: false);
         else if (Chance.OneIn7.Hit())
-          Generator.PlaceCharacter(NookSquare, AccessMap.Difficulty, AccessMap.Difficulty);
+          Generator.PlaceRandomCharacter(NookSquare, AccessMap.Difficulty, AccessMap.Difficulty);
         else if (Chance.OneIn7.Hit())
         {
           Block NookBlock;
@@ -2138,7 +2138,7 @@ namespace Pathos
     {
       Generator.PlaceRandomAsset(MazeSquare);
       Generator.DropCoins(MazeSquare, Generator.RandomCoinQuantity(MazeSquare) * 1.d5().Roll());
-      Generator.PlaceCharacter(MazeSquare, MazeSquare.Map.Difficulty + 1, MazeSquare.Map.Difficulty + 3);
+      Generator.PlaceRandomCharacter(MazeSquare, MazeSquare.Map.Difficulty + 1, MazeSquare.Map.Difficulty + 3);
       if (MazeSquare.Character != null)
         SnoozeCharacter(MazeSquare.Character);
     }
@@ -3061,7 +3061,7 @@ namespace Pathos
                     {
                       var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                       if (ShopParty == null)
-                        Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
+                        Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
                     });
                   }
                 }
@@ -3081,7 +3081,7 @@ namespace Pathos
                 {
                   var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
                   if (ShrineParty == null)
-                    Generator.PlaceCharacter(TownSquare, Codex.Entities.orc_grunt);
+                    Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
                 });
                 break;
 
@@ -3089,49 +3089,49 @@ namespace Pathos
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.housecat);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.housecat);
                 break;
 
               case 'k':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.kobold_shaman);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.kobold_shaman);
                 break;
 
               case 'l':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.gnome_lord);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnome_lord);
                 break;
 
               case 'n':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.water_nymph);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.water_nymph);
                 break;
 
               case 'w':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.gnomish_wizard);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnomish_wizard);
                 break;
 
               case 'y':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.monkey);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.monkey);
                 break;
 
               case 'G':
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                Generator.PlaceCharacter(TownSquare, Codex.Entities.watch_captain);
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watch_captain);
                 RecruitTownParty(TownSquare);
                 break;
 
@@ -3159,7 +3159,7 @@ namespace Pathos
 
                 if (GuardCharacter == null)
                 {
-                  Generator.PlaceCharacter(TownSquare, Codex.Entities.watchman);
+                  Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watchman);
 
                   GuardCharacter = TownSquare.Character;
                   if (GuardCharacter != null)
@@ -3348,42 +3348,42 @@ namespace Pathos
 
                 case 'g':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_warrior);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_warrior);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 'l':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_lord);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_lord);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 't':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_thief);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_thief);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 'm':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_mummy);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_mummy);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 'z':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_zombie);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_zombie);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 'w':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnomish_wizard);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnomish_wizard);
 
                   MinesSquare.SetLit(true);
                   break;
@@ -3392,19 +3392,19 @@ namespace Pathos
                   Generator.PlaceFloor(MinesSquare, MinesGround);
                   MinesSquare.SetLit(true);
 
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.kobold_shaman);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.kobold_shaman);
                   break;
 
                 case 'U':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.umber_hulk);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.umber_hulk);
 
                   MinesSquare.SetLit(true);
                   break;
 
                 case 'Z':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceCharacter(MinesSquare); // this is a zoo.
+                  Generator.PlaceRandomCharacter(MinesSquare); // this is a zoo.
                   Generator.DropCoins(MinesSquare, Generator.RandomCoinQuantity(MinesSquare));
 
                   var ZooCharacter = MinesSquare.Character;
@@ -3417,7 +3417,7 @@ namespace Pathos
                 case '\\':
                   Generator.PlaceFloor(MinesSquare, MinesGround);
                   Generator.PlaceFixture(MinesSquare, Codex.Features.throne);
-                  Generator.PlaceCharacter(MinesSquare, Codex.Entities.gnome_king);
+                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_king);
                   var KingCharacter = MinesSquare.Character;
 
                   if (KingCharacter != null)
@@ -3995,7 +3995,7 @@ namespace Pathos
       LabyrinthSite.LastLevel.SetTransitions(LabyrinthSite.LastLevel.UpSquare, null); // no way down any further.
 
       // minotaur boss, obviously.
-      Generator.PlaceCharacter(CurrentSquare, Codex.Entities.minotaur);
+      Generator.PlaceSpecificCharacter(CurrentSquare, Codex.Entities.minotaur);
 
       var BossCharacter = CurrentSquare.Character;
 
@@ -4218,7 +4218,7 @@ namespace Pathos
 
               case 'z':
                 Generator.PlaceFloor(SokobanSquare, SokobanGround);
-                Generator.PlaceCharacter(SokobanSquare); // this is a zoo.
+                Generator.PlaceRandomCharacter(SokobanSquare); // this is a zoo.
                 Generator.DropCoins(SokobanSquare, Generator.RandomCoinQuantity(SokobanSquare));
 
                 var ZooCharacter = SokobanSquare.Character;
@@ -4429,7 +4429,7 @@ namespace Pathos
             case ';':
               // water monster.
               Generator.PlaceFloor(FortSquare, FortWaterGround);
-              Generator.PlaceCharacter(FortSquare);
+              Generator.PlaceRandomCharacter(FortSquare);
               FortSquare.SetLit(false);
               break;
 
@@ -4505,7 +4505,7 @@ namespace Pathos
 
             case '@':
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare, FortSoldierProbability.GetRandomOrNull());
+              Generator.PlaceSpecificCharacter(FortSquare, FortSoldierProbability.GetRandomOrNull());
 
               var BarracksCharacter = FortSquare.Character;
               if (BarracksCharacter != null)
@@ -4520,35 +4520,35 @@ namespace Pathos
             case 'G':
               // outside soldiers.
               Generator.PlaceFloor(FortSquare, FortPathGround);
-              Generator.PlaceCharacter(FortSquare, FortSoldierArray[0]); // lowest level.
+              Generator.PlaceSpecificCharacter(FortSquare, FortSoldierArray[0]); // lowest level.
               FortSquare.SetLit(false);
               break;
 
             case 'D':
               // outside dragons.
               Generator.PlaceFloor(FortSquare, FortPathGround);
-              Generator.PlaceCharacter(FortSquare, Codex.Kinds.dragon);
+              Generator.PlaceSpecificCharacter(FortSquare, Codex.Kinds.dragon);
               FortSquare.SetLit(false);
               break;
 
             case 'd':
               // inside dogs.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare, FortDogProbability.GetRandomOrNull());
+              Generator.PlaceSpecificCharacter(FortSquare, FortDogProbability.GetRandomOrNull());
               FortSquare.SetLit(true);
               break;
 
             case 'o':
               // inside orcs.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare, Codex.Races.orc);
+              Generator.PlaceSpecificCharacter(FortSquare, Codex.Races.orc);
               FortSquare.SetLit(true);
               break;
 
             case 'B':
               // inside boss.
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare, FortSoldierArray[FortSoldierArray.Length - 1]);
+              Generator.PlaceSpecificCharacter(FortSquare, FortSoldierArray[FortSoldierArray.Length - 1]);
               Generator.PlaceFixture(FortSquare, Codex.Features.throne);
               FortSquare.SetLit(true);
 
@@ -4577,7 +4577,7 @@ namespace Pathos
 
             case 't':
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare); // this is a throne room.
+              Generator.PlaceRandomCharacter(FortSquare); // this is a throne room.
 
               var ThroneCharacter = FortSquare.Character;
               if (ThroneCharacter != null)
@@ -4588,7 +4588,7 @@ namespace Pathos
 
             case 'z':
               Generator.PlaceFloor(FortSquare, FortRoomGround);
-              Generator.PlaceCharacter(FortSquare); // this is a zoo.
+              Generator.PlaceRandomCharacter(FortSquare); // this is a zoo.
               Generator.DropCoins(FortSquare, Generator.RandomCoinQuantity(FortSquare));
 
               var ZooCharacter = FortSquare.Character;
@@ -4660,7 +4660,7 @@ namespace Pathos
 
             case '@':
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
-              Generator.PlaceCharacter(CacheSquare, FortSoldierProbability.GetRandomOrNull());
+              Generator.PlaceSpecificCharacter(CacheSquare, FortSoldierProbability.GetRandomOrNull());
 
               var BarracksCharacter = CacheSquare.Character;
               if (BarracksCharacter != null)
@@ -4699,7 +4699,7 @@ namespace Pathos
 
             case 'z':
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
-              Generator.PlaceCharacter(CacheSquare); // this is a zoo.
+              Generator.PlaceRandomCharacter(CacheSquare); // this is a zoo.
               Generator.DropCoins(CacheSquare, Generator.RandomCoinQuantity(CacheSquare) * 4.d4().Roll());
 
               var ZooCharacter = CacheSquare.Character;
@@ -4721,7 +4721,7 @@ namespace Pathos
             case 'D':
               // surprise dragon.
               Generator.PlaceFloor(CacheSquare, FortRoomGround);
-              Generator.PlaceCharacter(CacheSquare, Codex.Kinds.dragon);
+              Generator.PlaceSpecificCharacter(CacheSquare, Codex.Kinds.dragon);
               CacheSquare.SetLit(false);
               break;
 
