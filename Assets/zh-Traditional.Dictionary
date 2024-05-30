@@ -2098,9 +2098,9 @@ FormatText,cripple {AttributeName},損害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
 FormatText,decrease one ability by {AdjustmentDice},一項能力降低 {AdjustmentDice}
-FormatText,diminish {ManaDice},扣除mp {ManaDice}
+FormatText,diminish {ManaDice},減損魔力 {ManaDice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},掉落 {BlockName} {ElementName} {DamageDice}
-FormatText,energise {ManaDice},獲得mp{ManaDice}
+FormatText,energise {ManaDice},回復魔力 {ManaDice}
 FormatText,Equip {CharacterName},裝備 {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,一共獲得 {RecordFame} 點名望，殺死 {RecordKills} 個怪物
 FormatText,Feed which item to {CharacterName}?,給 {CharacterName} 餵食什麼？
