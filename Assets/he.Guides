@@ -1,0 +1,448 @@
+# Commands;
+. Single tap/left click or arrow keys to move and attack.;
+. Long press/right click to operate doors/traps.;
+. Double tap to pick up items, traverse stairs or wait one move.;
+/
+- . | wait one turn (also double tap on self);
+- , | pick up the top item on the floor;
+- A | toggle log (click the log to expand/collapse);
+- B | move down-left;
+- C | toggle character;
+- D | re-use last item;
+- E | mount or dismount your steed;
+- F | toggle floor;
+- G | re-equip last item;
+- H | move left;
+- I | toggle inventory;
+- J | move down;
+- K | move up;
+- L | move right;
+- M | toggle map;
+- N | move down-right;
+- O | hide from view;
+- P | polymorph at will;
+- Q | save or quit this game;
+- R | for rest mode to recover life and mana;
+- S | for search mode for secret doors and traps;
+- T | teleport at will;
+- U | move up-right;
+- V | kick in a direction;
+- W | jump in a direction (if you have the talent);
+- X | re-cast last spell;
+- Y | move up-left;
+- Z | toggle cast spells (read books to learn spells);
+- ' | blink in a direction;
+- ;; | telekinesis in a direction;
+- > | descend stairs;
+- < | ascend stairs;
+- / | toggle chat in multiplayer;
+- \ | view knowledge panel;
+- + | zoom in;
+- - | zoom out;
+- 1,2,3,4,5 | left quick actions (change action using shift + number);
+- 0,9,8,7,6 | right quick actions (change action using shift + number);
+- INSERT | toggle tunnelling mode;
+- SHIFT + arrow | fire a missile without moving;
+- CTRL + arrow | interact with the target without moving;
+- ENTER | select the top item on the floor;
+- ESCAPE | hides open panels and clears your target;
+- BACKSPACE | cancels open dialogs and clears the keyboard focus;
+- SPACE | toggle real-time or turn-based;
+- PgUp | switch to previous character;
+- PgDown | switch to next character;
+- ALT | show labels;
+- F1 | show this help;
+- F6 | quick save;
+- F10 | open side menu;
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop);
+
+# General mechanics;
+. You will die.;
+. But don't despair, you will learn something new each time.;
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.;
+. Pathos is turn-based so take your time and consider your options when things get serious.;
+. Each class starts with different items, skills and abilities.;
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.;
+. For example, the orange potion will not have a consistent effect across different adventures.;
+
+# Combat;
+. When attacking a d20 is rolled which gives a random number between 1 and 20.;
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.;
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).;
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.;
+. The strength bonus to damage is doubled when using a two handed weapon.;
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.;
+. Otherwise, this number is added to the attack score and compared to the defence score.;
+/
+` (Attack + d20) >= Defence;
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.;
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.;
+/
+. Your skill bonus is based on your level and is the same formula for all classes:;
+/
+` Skill Bonus = (Level / 4) + 1;
+/
+. Your defence is also affected by your circumstances:;
+/
+` {Mod} defence when blind;
+` {Mod} defence when invisible;
+` {Mod} defence when displaced;
+` {Mod} defence when paralysed or sleeping;
+` {Mod} defence when stuck;
+` {Mod} defence when attacked from concealment;
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.;
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.;
+. Light armour has no speed penalty if you are unskilled.;
+. Unskilled use of armour also attracts a one point defence penalty.;
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.;
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.;
+
+# Skills;
+. Each skill has a rating between 0 and 2000 and there are five competency levels.;
+/
+` (0) Proficient =    0..199;
+` (1) Specialist =  200..499;
+` (2) Expert     =  500..999;
+` (3) Master     = 1000..1999;
+` (4) Champion   = 2000;
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.;
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.;
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.;
+. This bonus to damage is doubled on a critical hit.;
+/
+. Armour skill gives you the competency level as a defence bonus.;
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.;
+. The defence bonus is the average of the skill levels on each piece of equipped armour.;
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.;
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.;
+. These skills are practised by learning and casting spells.;
+
+# Life;
+. {LifeDefinition};
+. Your starting life is determined by your race and class plus your constitution modifier.;
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.;
+. There are also magical means to increase your life potential.;
+. However, life cannot be increased past the maximum potential plus your constitution score.;
+/
+` Initial = Class base + Race base + {CON} modifier;
+` Advancement = Class roll + Race roll + {CON} modifier;
+` Limit = Initial + max(Advancement) x Level + {CON} score;
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.;
+. Sleeping improves recovery by halving the number of turns.;
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.;
+. Life regeneration guarantees the recovery at one point per turn.;
+. The {inediate} diet slows recovery of life by doubling the number of turns.;
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;
+. Active {phasing} prevents the natural recovery of life.;
+
+# Mana;
+. {ManaDefinition};
+. There are no adverse effects for exhausting your mana.;
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.;
+. There are also magical means to increase your mana potential.;
+. However, mana cannot be increased past the maximum potential plus your wisdom score.;
+/
+` Initial = Class base + Race base + {WIS} modifier;
+` Advancement = Class roll + Race roll + {WIS} modifier;
+` Limit = Initial + max(Advancement) x Level + {WIS} score;
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.;
+. Sleeping improves recovery by halving the number of turns.;
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.;
+. Mana regeneration guarantees the recovery at one point per turn.;
+. The {inediate} diet slows recovery of mana by doubling the number of turns;
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;
+. Active {phasing} prevents the natural recovery of mana.;
+
+# Nutrition;
+. Maintaining a food supply is important to avoid starving to death.;
+. In desperate or pragmatic times you can eat corpses.;
+
+# Corpses;
+. The bodies of your enemies and allies can be a source of nutrition.;
+. Many corpses also convey harm and illness but some may impart beneficial talents.;
+. Be aware that cannibalism is considered a bad idea even in desperate times.;
+
+# Encumbrance;
+. Everything you pick up adds to your encumbrance and you may become burdened.;
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.;
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight);
+
+# Resting;
+. The camp-fire action button toggles resting.;
+. While resting your life and mana recover at a faster rate.;
+. Companions will rest when you rest.;
+. Resting will be interrupted if there is a hostile in your zone.;
+
+# Searching;
+. The eye action button toggles searching.;
+. Searching will find secret doors and concealed traps.;
+. Companions will search when you search to help find secrets.;
+. Searching will be interrupted if there is a hostile in your zone.;
+
+# Abilities;
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.;
+. Your starting ability scores is determined by rolling 4d6 six times.;
+. The lowest roll from each set is dropped giving a score between 3 and 18.;
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.;
+. Racial limits are then applied as shown in help > races.;
+. Any points that are reduced by racial limits are transferred to another ability.;
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription};
+
+# Karma;
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).;
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.;
+. You can gain additional karma by donating gold to a priest at a shrine.;
+. You can pray at any time by long press/right click on your character.;
+. This will cost {Number} karma and has the following effects:;
+/
+` karma >= hopeful;
+`   gain {Number} nutrition when hungry;
+`   unafflict;
+`   unpolymorph;
+`   escape from being stuck;
+`   remove punishment;
+/
+` karma >= good;
+`   fully healed if less than half life;
+`   fully restored if less than half mana;
+/
+` karma >= glorious;
+`   remove blindness;
+`   remove hallucination;
+`   remove rage;
+`   remove sickness;
+/
+` karma >= exalted;
+`   remove one curse;
+`   raise dead for one loyal companion;
+
+# Diets;
+. Entities have different diets that allow them to eat specific materials.;
+/
+` {DietName}: {MaterialNames};
+
+# Spells;
+. Spells are learned by studying from magical books found in the dungeon.;
+. Any class can learn spells but only the skilled will use their mana efficiently.;
+
+# Gold;
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.;
+. Gold can be traded for items from merchants or donated to priests for karma.;
+
+# Companions;
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).;
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).;
+. You can mount some types of companions and ride around the dungeon.;
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.;
+. Your steed will be the first into any traps so take good care of their well-being.;
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.;
+. A steed is useful when you are burdened and it is strong enough to take your load.;
+. To dismount your steed you need to long press/right click on your character.;
+
+# Engulfing;
+. Some entities can swallow or engulf other entities.;
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.;
+. Alternatively, there are many mechanisms which can be used to escape.;
+. It is impossible to fight with your equipped weapons when swallowed.;
+. If you cast when engulfed the spell will hit your engulfer.;
+. However, beams may still bounce off walls and back through your engulfer and also hit you.;
+
+# Spawning;
+. Monsters will randomly spawn into areas outside your current zone.;
+. The rate of spawning increases as you descend deeper into the dungeon.;
+. The talent of aggravation also increases the spawn rates for monsters.;
+
+# Polymorph;
+. Transform into another entity with all the advantages or disadvantages that brings.;
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.;
+. When you perish in your polymorphed form you will often revert to your original form.;
+. You can transform into the entity of your choice when you have polymorph control.;
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.;
+. To access polymorph-at-will you need to long press/right click on your character.;
+
+# Locks;
+. Doors and containers can be locked and possibly trapped.;
+. You can kick locks to break them but this will trigger any trap.;
+. Items such as skeleton keys and lock picks can be used to unlock.;
+. These items can break and the chance is influenced by your competency with locks.;
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.;
+. There are other magical items and spells that can be used to unlock.;
+
+# Traps;
+. Traps have a difficulty rating that reflects the lethality of the device.;
+. This difficulty rating is also the minimum dungeon level the trap can be generated.;
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.;
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.;
+. Untrapping requires you to move into the square.;
+. A failure to untrap will cause it to be triggered.;
+
+# Teleport;
+. Teleportation transports your character around the current dungeon level.;
+. When uncontrolled, this is a random event that may help or hinder your journey.;
+. Controlled teleportation allows you to select on the map your destination location.;
+. However, each teleportation will cost you nutrition so use it wisely.;
+. To access teleport-at-will you need to long press/right click on your character.;
+
+# Dual wielding;
+. Dual wielding allows the character to hold two single handed weapons.;
+. This allows for two attacks instead of one but the chance of hitting is reduced.;
+. If you are skilled then it is only a -2 to attack on the offhand.;
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.;
+
+# Crafting;
+. Items can be scrapped into their raw essence and base material on a workbench.;
+. Essence is the building block of creation and can be extracted from both mundane and magical items.;
+. New items can be crafted on a workbench using enough of the base material and essence.;
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).;
+. Materials are not transferable between workbenches.;
+/
+. The crafting skill influences how much material you gain when scrapping.;
+. That is, when unskilled you recover only 50% of the scrapped material.;
+/
+` Unskilled  =  50%;
+` Proficient =  60%;
+` Specialist =  70%;
+` Expert     =  80%;
+` Master     =  90%;
+` Champion   = 100%;
+/
+. The crafting skill influences how much material you need when crafting.;
+. That is, when unskilled you need 150% of the required material to craft an item.;
+/
+` Unskilled  = 150%;
+` Proficient = 140%;
+` Specialist = 130%;
+` Expert     = 120%;
+` Master     = 110%;
+` Champion   = 100%;
+
+# Enchantment;
+. Weapons and armour have a modifier that can be changed with enchantment magic.;
+. A modifier of +0 is a normal, mundane item.;
+. Modifiers on armour apply to your defence score.;
+. Modifiers on weapons apply to your attack and damage scores.;
+/
+. The {grade} items are limited to between {Min} and {Max}.;
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.;
+/
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;
+
+# Punishments;
+. This severe curse can be gained by magical means or misconduct.;
+. There is a chance of being punished each time your karma dips below zero.;
+. Only one punishment can be active at one time.;
+. A punishment can be released with any remove curse magic.;
+
+# Charming & taming;
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.;
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.;
+. The charisma bonus for you and the target entity also modifies this relative percentage.;
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.;
+
+# Death;
+. There are seven mechanics for death:;
+/
+* life points reaches zero;
+* any ability score reaches zero;
+* starvation;
+* death effect (eg. wand of death);
+* genocide;
+* incarceration (eg. turned into a statue);
+* decapitation (eg. vorpal attacks);
+
+# Revenants;
+. Upon your death there is a 50% chance of creating a revenant on the current level.;
+. When you go down stairs there is a 50% chance of encountering this revenant.;
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.;
+. They will be as tough as you were at full health and may be quite challenging at times.;
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.;
+. Level 1 will never create a revenant.;
+
+# Fame;
+. Fame is calculated by the following formula.;
+/
+` = Maximum Depth x {Multiplier};
+` + Explored Maps x {Multiplier};
+` + Visited Locations x {Multiplier};
+` + Discovered Items x {Multiplier};
+` + Encountered Entities x {Multiplier};
+` + Possessed Artifacts x {Multiplier};
+` + Earned Experience (capped to {Cap});
+` + Development Level x {Multiplier};
+` + Practised Skills x {Multiplier};
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level);
+` + Increased Life x {Multiplier};
+` + Increased Mana x {Multiplier};
+` + Adjusted Attributes x {Multiplier};
+` + Acquired Talents x {Multiplier};
+` + Gained Resistances x {Multiplier};
+` + Total Inventory Worth (in gold);
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.;
+
+# Resurrect and continue;
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.;
+. You may learn that your character was not viable and death comes quick again.;
+. You can resurrect infinitely but all your achieved fame will be reset to zero.;
+. Fame achieved subsequent to your resurrection will contribute to your score.;
+. This is similar to the 'explorer mode' from the original Nethack.;
+
+# Multiplayer;
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;
+. This means the game is executed on the server and the user interface is projected to each of the clients.;
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.;
+. This technology only works well with low latency (less than 30ms ping should be playable).;
+/
+. One player needs to be the server and HOST the game.;
+. All other players are clients and JOIN the game.;
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.;
+. Firewall settings and port forwarding may be required when playing over the internet.;
+/
+. The HOST can use 3717 and tap CONNECT.;
+. The other players JOIN by typing in the host's IP Address and the port.;
+. For example: 192.168.1.5:3717;
+
+# Translations;
+. The language translations have been contributed by a number of dedicated players.;
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.;
+. The percentage on the language selection indicates the current completeness of the translation.;
+. You can also browse the individual translations in the Diagnostics screen.;
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.;
+
+# Master mode;
+. This is a cheat mode for more quickly learning the secrets of Pathos.;
+. Any adventures in this mode will not be tracked in the hall of fame.;
+/
+- ` | open master console (more commands);
+- ctrl + shift + D | darkness in this zone;
+- shift + E | spawn and be swallowed by a random engulfer;
+- shift + F | all adjacent enemies are charmed;
+- shift + G | gain 1000 gold;
+- shift + I | identify all items on the floor;
+- shift + W | jump at will;
+- shift + D | light this zone;
+- shift + M | reveal the entire map;
+- ctrl + shift + M | reveal the map for all levels;
+- ctrl + shift + O | warp the dungeon (the endgame map transforms);
+- shift + P | polymorph into any entity;
+- shift + T | teleport to a target zone;
+- shift + Z | learn all spells;
+- ! | toggle auto-use mode (step on a square and you will use all items);
+- < | ascend to the previous dungeon level (even when not on a staircase);
+- > | descend to the next dungeon level (even when not on a staircase);
+- F5 | refresh the screen;
+- F9 | quick load;
+/
+. There are additional manipulations built into the character panel and contextual help.;
