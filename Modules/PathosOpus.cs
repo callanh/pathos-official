@@ -3497,7 +3497,7 @@ namespace Pathos
         public override string ToString() => Name;
       }
     }
-
+    /*
     private sealed class GardenBuilder : Builder
     {
       public GardenBuilder(OpusMaker Maker)
@@ -3533,7 +3533,7 @@ namespace Pathos
         public override string ToString() => Name;
       }
     }
-
+    */
     private sealed class HengeBuilder : Builder
     {
       public HengeBuilder(OpusMaker Maker)
@@ -7678,7 +7678,7 @@ H-----------H
         public override string ToString() => Name;
       }
     }
-
+    /*
     private sealed class SanatoriumBuilder : Builder
     {
       public SanatoriumBuilder(OpusMaker Maker)
@@ -7755,7 +7755,8 @@ H-----------H
         public override string ToString() => Name;
       }
     }
-
+    */
+    /*
     private sealed class TempleBuilder : Builder
     {
       public TempleBuilder(OpusMaker Maker)
@@ -7787,6 +7788,7 @@ H-----------H
       {
       }
     }
+    */
     private sealed class TownBuilder : Builder
     {
       public TownBuilder(OpusMaker Maker)

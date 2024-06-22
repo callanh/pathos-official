@@ -144,9 +144,9 @@
   <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
     <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
-  
+
   <!-- Make the Atlases and Albums -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net48|OpenSource' ">
-    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; &quot;$(ProjectDir.TrimEnd('\'))&quot; &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
+    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; &quot;$(ProjectDir.TrimEnd('\'))&quot; &quot;$(TargetDir)$(AssemblyName).dll&quot; $(Configuration)" />
   </Target>
 </Project>

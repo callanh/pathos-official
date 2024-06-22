@@ -22,12 +22,15 @@ namespace Pathos
 #endif
       if (this.Codex == null)
       {
-        this.Codex = new Codex();
-
-        Debug.Assert(CodexStream != null, "CodexStream must be provided.");
-
         if (CodexStream != null)
+        {
+          this.Codex = new Codex();
           new CodexGovernor().Load(Codex, CodexStream); // 0.3 seconds.
+        }
+        else
+        {
+          throw new Exception("CodexStream must be provided when MASTER_CODEX is not used.");
+        }
       }
 
       SetManifest(Codex.Manifest);
