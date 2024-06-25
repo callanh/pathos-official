@@ -191,7 +191,7 @@ AppearanceName,key,מפתח
 AppearanceName,lamp,מנורה
 AppearanceName,large gun,רובה גדול
 AppearanceName,large round shield,מגן עגול גדול
-AppearanceName,leather apron,סינור עור
+AppearanceName,leather apron,סינר עור
 AppearanceName,leather book,ספר מעור
 AppearanceName,leather hat,כובע מעור
 AppearanceName,light blue book,ספר כחול בהיר
@@ -204,7 +204,7 @@ AppearanceName,long gun,רובה ארוך
 AppearanceName,long poleaxe,גרזן-חנית ארוך
 AppearanceName,long samurai sword,חרב סמוראים ארוכה
 AppearanceName,long wand,שרביט ארוך
-AppearanceName,luminescent potion,שיקוי מפיץ אור
+AppearanceName,luminescent potion,שיקוי זרחני
 AppearanceName,magenta book,ספר ארגמני
 AppearanceName,magenta potion,שיקוי ארגמני
 AppearanceName,maple wand,שרביט מייפל
@@ -1043,7 +1043,7 @@ EffectType,drain mana,שאיבת קסם
 EffectType,enchant asset,הקסמת נכס
 EffectType,engulf,עיטוף
 EffectType,enlightenment,הארה
-EffectType,exchange,חילופין
+EffectType,exchange,עסקה
 EffectType,extinguish spill,עצירת נזילה
 EffectType,gain level,עליית רמה
 EffectType,gain skill,קבלת יכולת
@@ -1522,7 +1522,7 @@ EntityName,jiggling blob,גוש מצחקק
 EntityName,juggernaut,ג'אגרנוט
 EntityName,Juiblex,ג'ובלקס
 EntityName,juvenile raven,עורב צעיר
-EntityName,Kaloi Thrym,קלויי תרים
+EntityName,Kaloi Thrym,קאלוי תרים
 EntityName,kamadan,קמדאן
 EntityName,keystone captain,מפקד משמר קיסטון
 EntityName,keystone kop,שוטר משמר קיסטון
@@ -1532,7 +1532,7 @@ EntityName,killer bee,דבורה רצחנית
 EntityName,killer beetle,חיפושית רצחנית
 EntityName,killer food ration,מנת קרב רצחנית
 EntityName,killer iron ration,מנת ברזל רצחנית
-EntityName,killer tripe ration,מנת קישקע רצחנית
+EntityName,killer tripe ration,מנת פיגולים רצחנית
 EntityName,king cobra,מלך קוברה
 EntityName,ki-rin,קי-רין
 EntityName,kitten,חתלתול
@@ -1918,8 +1918,8 @@ FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},הרא�
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},הפחדה למוות של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},הרג של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},חרטה של {Attacker:CharacterName} על מה שקרה ל{Defender:CharacterName}
-FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,עוינות פתאומית של {Defender:CharacterName} כלפי{Attacker:CharacterName}!
-FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,עוינות פתאומית של {Attacker:CharacterName} כלפי{Defender:CharacterName}!
+FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,עוינות פתאומית של {Defender:CharacterName} כלפי {Attacker:CharacterName}!
+FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,עוינות פתאומית של {Attacker:CharacterName} כלפי {Defender:CharacterName}!
 FormatText,{Base} in {Range},{Base} ב{Range}
 FormatText,{BeamName} beam,קרן {BeamName}
 FormatText,{BlockName} was disintegrated,פירוק של {BlockName}
@@ -1931,9 +1931,9 @@ FormatText,{Chance} per room,{Chance} לחדר
 FormatText,{Chance} react to {ElementName},{Chance} תגובה ל{ElementName}
 FormatText,{CharacterName} {EndType},{CharacterName} {EndType}
 FormatText,{CharacterName} {EndType} by {EndCause},{CharacterName} {EndType} על ידי {EndCause}
-FormatText,{CharacterName} {MotionPastName} {AssetName},{AssetName} {MotionPastName} {CharacterName}
-FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{AssetName} {MotionPastName} {CharacterName} אבל שום דבר לא קרה
-FormatText,{CharacterName} {MotionPastName} {FixtureName},{FixtureName} {MotionPastName} {CharacterName}
+FormatText,{CharacterName} {MotionPastName} {AssetName},{AssetName} {MotionPastName} של {CharacterName}
+FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{AssetName} של {MotionPastName} {CharacterName} אבל שום דבר לא קרה
+FormatText,{CharacterName} {MotionPastName} {FixtureName},{FixtureName} {MotionPastName} של {CharacterName}
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{MotionPastName} של {CharacterName} ב{Use:AssetName} עם {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{MotionPastName} של {CharacterName} ב{Use:FixtureName} עם {With:AssetName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{TraversalPastName} של {CharacterName} אל {MapName}
@@ -1949,21 +1949,21 @@ FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutri
 FormatText,{CharacterName} cannot grow up,ל{CharacterName} אין יכולת לגדול עוד
 FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{AssetName} תזונה לא מתאימה ל{CharacterName} בגלל {DietName}
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,הריחוף של {CharacterName} מונע גישה ל{ObjectName}
-FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},ל{CharacterName} אין יכולת להסיר את ה{GenderHis} {AssetName}
-FormatText,{CharacterName} cast {QualificationName} {SpellName},{QualificationName} {CharacterName} בקסם {SpellName}
+FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},ל{CharacterName} אין יכולת להסיר את ה{AssetName} {GenderHis}
+FormatText,{CharacterName} cast {QualificationName} {SpellName},{QualificationName} של {CharacterName} בקסם {SpellName}
 FormatText,{CharacterName} could not read the rumour,ל{CharacterName} אין יכולת לקרוא את השמועה
 FormatText,{CharacterName} crafted {AssetName} for {MaterialWeight} {MaterialName} and {Essence},יצירת {AssetName} על ידי {CharacterName} של {MaterialWeight} {MaterialName} ו{Essence}
 FormatText,{CharacterName} crushed {DeviceName} with {BlockName},ריסוק של {BlockName} על ידי {CharacterName} עם {DeviceName}
 FormatText,{CharacterName} did not decrease {AttributeName},אין פגיעה ב{AttributeName} של {CharacterName}
 FormatText,{CharacterName} did not decrease any attribute,אף יכולת של {CharacterName} לא נפגעה
-FormatText,{CharacterName} did not increase {AttributeName},אין שיפור ב{AttributeName} של{CharacterName}
+FormatText,{CharacterName} did not increase {AttributeName},אין שיפור ב{AttributeName} של {CharacterName}
 FormatText,{CharacterName} did not increase any attribute,אף יכולת של {CharacterName} לא השתפרה
 FormatText,{CharacterName} discovered the {ItemName},תגלית של {ItemName} על ידי {CharacterName}
 FormatText,{CharacterName} dropped {AssetName},הפלה של {AssetName} על ידי {CharacterName}
 FormatText,{CharacterName} emptied {AssetName},ריקון של {AssetName} על ידי {CharacterName}
-FormatText,{CharacterName} enters {ShopName},כניסה של {CharacterName} ל{ShopName}
-FormatText,{CharacterName} enters {ShrineName},כניסה של {CharacterName} ל{ShrineName}
-FormatText,{CharacterName} enters {ZooName},כניסה של {CharacterName} ל{ZooName}
+FormatText,{CharacterName} enters {ShopName},כניסה של {CharacterName} אל {ShopName}
+FormatText,{CharacterName} enters {ShrineName},כניסה של {CharacterName} אל {ShrineName}
+FormatText,{CharacterName} enters {ZooName},כניסה של {CharacterName} אל {ZooName}
 FormatText,{CharacterName} equipped {AssetName},ציוד של {CharacterName} ב{AssetName}
 FormatText,{CharacterName} exploded!,התפוצצות של !{CharacterName}
 FormatText,{CharacterName} fainted from lack of food,התעלפות של {CharacterName} מחוסר מזון
@@ -1971,7 +1971,7 @@ FormatText,{CharacterName} feels this area is becoming less dangerous,ל{Charact
 FormatText,{CharacterName} feels this area is becoming more dangerous,ל{CharacterName} יש תחושה שהאזור הזה הפך ליותר מסוכן
 FormatText,{CharacterName} fell asleep,הירדמות של {CharacterName}
 FormatText,{CharacterName} filled {DeviceName} with {BlockName},מילוי של {DeviceName} על ידי {CharacterName} עם {BlockName}
-FormatText,{CharacterName} fumbled and dropped {GenderHis} {AssetName},מעידה של {CharacterName} הפילה את ה{GenderHis} {AssetName}
+FormatText,{CharacterName} fumbled and dropped {GenderHis} {AssetName},מעידה של {CharacterName} הפילה את ה{AssetName} {GenderHis}
 FormatText,{CharacterName} gained skill in {SkillName},יכולת חדשה של {CharacterName} ב{SkillName}
 FormatText,{CharacterName} gained the talent of {PropertyName},הכישור החדש של {CharacterName} הוא {PropertyName}
 FormatText,{CharacterName} had already identified all items,כל החפצים של {CharacterName} כבר מזוהים
@@ -1992,11 +1992,11 @@ FormatText,{CharacterName} improved efficiency with {SpellName},שיפור בי�
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName},{MotionPastName} ב{AssetName} בחוסר מיומנות על ידי {CharacterName}
 FormatText,{CharacterName} ineptly {MotionPastName} {AssetName} and nothing happened,{MotionPastName} ב{AssetName} בחוסר מיומנות על ידי {CharacterName} וכלום לא קרה
 FormatText,{CharacterName} ineptly {MotionPastName} {Use:AssetName} with {With:AssetName},{MotionPastName} ב{Use:AssetName} עם {With:AssetName} בחוסר מיומנות על ידי {CharacterName}
-FormatText,{CharacterName} Inventory,המלאי של{CharacterName}
+FormatText,{CharacterName} Inventory,המלאי של {CharacterName}
 FormatText,{CharacterName} is {AppetiteName},{AppetiteName} {CharacterName}
 FormatText,{CharacterName} is feeling {StandingName},{CharacterName} בתחושה של {StandingName}
 FormatText,{CharacterName} is no longer stuck,{CharacterName} כבר לא במלכודת
-FormatText,{CharacterName} is now {QualificationName} in {SkillName},{CharacterName} כעת {QualificationName} ב{SkillName}
+FormatText,{CharacterName} is now {QualificationName} in {SkillName},ל{CharacterName} יש כעת {QualificationName} ב{SkillName}
 FormatText,{CharacterName} killed {GenderHimself},הריגה של {CharacterName} על ידי {GenderHimself}
 FormatText,{CharacterName} learned how to cast {SpellName},לימוד הקסם {SpellName} על ידי {CharacterName}
 FormatText,{CharacterName} level {CharacterLevel} {GenderName} {EntityName} {SpecialName} {ClassName} {EndConduct} (depth {DungeonDepth} and {DungeonKills} kills),{CharacterName} {ClassName} {SpecialName} {EntityName} {GenderName} ברמה {CharacterLevel} {EndConduct} (בעומק {DungeonDepth} עם {DungeonKills} הריגות)
@@ -2012,11 +2012,11 @@ FormatText,{CharacterName} picked up {AssetName},הרמה של {AssetName} על 
 FormatText,{CharacterName} polymorphed into {EntityName} form,שינוי צורה של {CharacterName} לדמות {EntityName}
 FormatText,{CharacterName} read '{RumourMessage}',{CharacterName} רואה שכתוב ''{RumourMessage}''
 FormatText,{CharacterName} regressed to level {LevelNumber},{CharacterName} בירידה לרמה {LevelNumber}
-FormatText,{CharacterName} removed {AssetName},ל{CharacterName} יש שכפול של {AssetName}
+FormatText,{CharacterName} removed {AssetName},הסרה של {AssetName} על ידי {CharacterName}
 FormatText,{CharacterName} replicated the {AssetName},ל{CharacterName} יש שכפול של {AssetName}
 FormatText,{CharacterName} reverted to {EntityName} form,חזרה של {CharacterName} לדמות {EntityName}
 FormatText,{CharacterName} revived from a {BlockName},התאוששות של {CharacterName} מ{BlockName}
-FormatText,{CharacterName} sacrificed {AssetName},הקרבה של {AssetName} על ידי{CharacterName}
+FormatText,{CharacterName} sacrificed {AssetName},הקרבה של {AssetName} על ידי {CharacterName}
 FormatText,{CharacterName} scrapped {AssetName} for {MaterialWeight} {MaterialName} and {Essence},גריטה של {AssetName} על ידי {CharacterName} עבור {MaterialWeight} {MaterialName} ו{Essence}
 FormatText,{CharacterName} slipped on the {GroundName},החלקה של {CharacterName} על {GroundName}
 FormatText,{CharacterName} triggered the {DeviceName},הפעלה של {DeviceName} על ידי {CharacterName}
@@ -2041,8 +2041,8 @@ FormatText,{CharacterName} was relieved from {AfflictionName},{AfflictionName} �
 FormatText,{CharacterName} was revived!,קימה לתחייה של !{CharacterName}
 FormatText,{CharacterName} woke up,התעוררות של {CharacterName}
 FormatText,{CharacterName} wrested one more use from the {AssetName},סחיטה של עוד שימוש אחד ב{AssetName} על ידי {CharacterName}
-FormatText,"{CharacterName}, {ShopName}","{ShopName} ,{CharacterName}"
-FormatText,"{CharacterName}, {ShrineName}","{ShrineName} ,{CharacterName}"
+FormatText,"{CharacterName}, {ShopName}","{CharacterName}, {ShopName}"
+FormatText,"{CharacterName}, {ShrineName}","{CharacterName}, {ShrineName}"
 FormatText,{Defender:CharacterName} condemns the desecration by {Attacker:CharacterName},{Defender:CharacterName} מגנה את חילול הקודש של {Attacker:CharacterName}
 FormatText,{Defender:CharacterName} was {EngulfmentName} by {Attacker:CharacterName},{EngulfmentName} של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Defender:CharacterName} was decapitated by {Attacker:CharacterName},עריפת ראש של {Defender:CharacterName} על ידי {Attacker:CharacterName}
@@ -2051,27 +2051,27 @@ FormatText,{Defender:CharacterName} was frightened to death by {Attacker:Charact
 FormatText,{Defender:CharacterName} was grappled by {Attacker:CharacterName},לפיתה של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},הרג של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} תגליות
-FormatText,{DiscoveryCount} discovery,תגלית{DiscoveryCount}
+FormatText,{DiscoveryCount} discovery,תגלית {DiscoveryCount}
 FormatText,{Duration} hours,{Duration} שעות
-FormatText,{ElementName} resistance,עמידות נגד{ElementName}
+FormatText,{ElementName} resistance,עמידות נגד {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} על ידי {EndCause}
 FormatText,{Entropy} entropy,{Entropy} אנטרופיה
-FormatText,{ExplosionName} explosion,פיצוץ{ExplosionName}
-FormatText,{ItemCount} item,חפץ{ItemCount}
+FormatText,{ExplosionName} explosion,פיצוץ {ExplosionName}
+FormatText,{ItemCount} item,חפץ {ItemCount}
 FormatText,{ItemCount} items,{ItemCount} חפצים
 FormatText,{ItemCount} more items,עוד {ItemCount} חפצים
 FormatText,{JournalDelay} sec,{JournalDelay} שניות
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,יש כעת ברית בין {Leader:CharacterName} ל{Follower:CharacterName}
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,הסתיימה הברית בין {Leader:CharacterName} ל{Follower:CharacterName}
 FormatText,{Leader:CharacterName} cannot have any more allies,ל {Leader:CharacterName}אין אפשרות לבני ברית נוספים
-FormatText,{MaterialName} material,חומר{MaterialName}
+FormatText,{MaterialName} material,חומר {MaterialName}
 FormatText,{MotionPresentName} {AssetName} which direction?,{AssetName} {MotionPresentName} באיזה כיוון?
 FormatText,{MotionPresentName} {AssetName} with which item?,{AssetName} {MotionPresentName} עם איזה חפץ?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{FeatureName} {MotionPresentName} באיזה כיוון?
-FormatText,{MotionPresentName} which item on {FeatureName}?,{FeatureName} {MotionPresentName} על איזה חפץ?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},רכיבה של {Mount:CharacterName} על{Steed:CharacterName}
+FormatText,{MotionPresentName} which item on {FeatureName}?,איזה חפץ {MotionPresentName} על {FeatureName} ?
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},רכיבה של {Mount:CharacterName} על {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{BlockName} {Prisoner:CharacterName}
-FormatText,{QualificationName} cast,קסם{QualificationName}
+FormatText,{QualificationName} cast,קסם {QualificationName}
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Charges} {ItemName} {ContainerQualifier} {Enchantment} {CharacterName} {SanctityName} {Quantity}
 FormatText,{Repeat} {Chance} {Quantity} {SanctityName} {Enchantment} {Items},{Items} {Enchantment} {SanctityName} {Quantity} {Chance} {Repeat}
 FormatText,{SanctityName} {FeatureName},{FeatureName} {SanctityName}
@@ -2080,77 +2080,77 @@ FormatText,{ServiceName} which item?,{ServiceName} איזה חפץ?
 FormatText,{SizeName} {MaterialName} {AnatomyFlags},{AnatomyFlags} {MaterialName} {SizeName}
 FormatText,{SkillName} [{QualificationCode}],[{QualificationCode}] {SkillName}
 FormatText,{Source:AssetName} was converted to {Target:AssetName},{Target:AssetName} עכשיו {Source:AssetName}
-FormatText,{StrikeName} digestion,בליעת{StrikeName}
-FormatText,{StrikeName} strike,מכת{StrikeName}
+FormatText,{StrikeName} digestion,בליעת {StrikeName}
+FormatText,{StrikeName} strike,מכת {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},גניבה של {AssetName} מ{Victim:CharacterName} על ידי {Thief:CharacterName}
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},גניבה מ{Victim:CharacterName} על ידי {Thief:CharacterName}
-FormatText,{WeightUnits} kg,{WeightUnits}ק''ג
+FormatText,{WeightUnits} kg,{WeightUnits} ק''ג
 FormatText,{WeightUnits} lbs,{WeightUnits} פאונד
 FormatText,after reaching dungeon level {RecordDepth},עומק מירבי של {RecordDepth} קומות
-FormatText,animate {CharacterName},החייאה של{CharacterName}
+FormatText,animate {CharacterName},החייאה של {CharacterName}
 FormatText,boost {AttributeName} by enchantment,שיפור {AttributeName} בקסם
-FormatText,break {FeatureName},שבירה של{FeatureName}
+FormatText,break {FeatureName},שבירה של {FeatureName}
 FormatText,cap {Percent}%,מגבלה של {Percent}%
-FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל?{SpellName}
-FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל?{SpellName}
+FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל ?{SpellName}
+FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל ?{SpellName}
 FormatText,Congratulations on reaching the end of the {QuestName}!,ברכות על הגעתך לסוף !{QuestName}
 FormatText,cripple {AttributeName},פגיעה ב{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ירידה של {AttributeName} ב{AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ירידה של כל היכולות ב{AdjustmentDice}
 FormatText,decrease one ability by {AdjustmentDice},ירידה של יכולת אחת ב{AdjustmentDice}
 FormatText,diminish {ManaDice},הפחתת {ManaDice} נקודות קסם
-FormatText,drop {BlockName} {ElementName} {DamageDice},ירידה של{DamageDice} {ElementName} {BlockName}
+FormatText,drop {BlockName} {ElementName} {DamageDice},ירידה של {DamageDice} {ElementName} {BlockName}
 FormatText,energise {ManaDice},הוספת {ManaDice} נקודות קסם
-FormatText,Equip {CharacterName},ציוד של{CharacterName}
-FormatText,fame {RecordFame} and {RecordKills} kills,תהילה {RecordFame} ו{RecordKills} הריגות
+FormatText,Equip {CharacterName},ציוד של {CharacterName}
+FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} תהילה ו-{RecordKills} הריגות
 FormatText,Feed which item to {CharacterName}?,במה להאכיל את ?{CharacterName}
 FormatText,from {Cause},מ{Cause}
 FormatText,gain {Percent}% {ElementName} resistance,תוספת של {Percent}% עמידות ל{ElementName}
-FormatText,gain {TalentName} talent,רכישת כישרון{TalentName}
+FormatText,gain {TalentName} talent,רכישת כישרון {TalentName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","ברכות, {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,"ברכות,!{PlayerHandle}"
-FormatText,harm {ElementName} {DamageDice},נזק {ElementName}של {DamageDice}
-FormatText,heal {LifeDice},ריפוי של{LifeDice}
+FormatText,harm {ElementName} {DamageDice},נזק {ElementName} של {DamageDice}
+FormatText,heal {LifeDice},ריפוי של {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},שיפור של {AttributeName} ב{AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},שיפור של כל היכולות ב{AdjustmentDice}
 FormatText,increase one ability by {AdjustmentDice},שיפור של יכולת אחת ב{AdjustmentDice}
-FormatText,learn spell {SpellName},לימוד לחש{SpellName}
-FormatText,level {Depth},קומה{Depth}
+FormatText,learn spell {SpellName},לימוד לחש {SpellName}
+FormatText,level {Depth},קומה {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{GenderName} {EntityName} {SpecialName} {ClassName} ברמה {Level}
-FormatText,levels {From}-{To},קומות{From}-{To}
+FormatText,levels {From}-{To},קומות {From}-{To}
 FormatText,levels {Number}+,קומות{Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} נעול
-FormatText,not {EffectProperty},לא{EffectProperty}
-FormatText,range {Dice},טווח{Dice}
-FormatText,RANKED #{RankNumber},מקום{RankNumber}
+FormatText,not {EffectProperty},לא {EffectProperty}
+FormatText,range {Dice},טווח {Dice}
+FormatText,RANKED #{RankNumber},מקום {RankNumber}
 FormatText,replenish life from {Percent}%,מילוי נקודות חיים מ{Percent}%-
 FormatText,replenish mana from {Percent}%,מילוי נקודות קסם מ{Percent}%-
-FormatText,"Resurrected {CharacterName}, {CharacterDescription}","קימה לתחייה של{CharacterName} ,{CharacterDescription}"
-FormatText,retaliate {Chance} {AttackType},נקמה{AttackType} {Chance}
+FormatText,"Resurrected {CharacterName}, {CharacterDescription}","קימה לתחייה של {CharacterName} ,{CharacterDescription}"
+FormatText,retaliate {Chance} {AttackType},נקמה {AttackType} {Chance}
 FormatText,retaliate {Chance} on death {AttackType},נקמה {Chance} על מוות מ{AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},נקמה {Chance} על פגיעה של {AttackType}
-FormatText,revenant {CharacterName},רוח רפאים של{CharacterName}
+FormatText,revenant {CharacterName},רוח רפאים של {CharacterName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},פגיעה של {DamageDice} מירייה של {ElementName} מ{ItemName}
-FormatText,stuck {DurationDice},אי אפשר לזוז{DurationDice}
+FormatText,stuck {DurationDice},אי אפשר לזוז {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,פיצוץ אנרגיה של {ExplosionName} השתחרר מה!{FixtureName}
-FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,המעשה האפל הזה יעלה לך את בכל נקודות התהילה שצברת עד עכשיו. בכל זאת להקים לתחייה את?{CharacterName}
+FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,המעשה האפל הזה יעלה לך את בכל נקודות התהילה שצברת עד עכשיו. בכל זאת להקים לתחייה את ?{CharacterName}
 FormatText,Throw {AssetName} which direction?,באיזה כיוון לזרוק את ה?{AssetName}
-FormatText,TOO {AttributeBad},יותר מדי{AttributeBad}
+FormatText,TOO {AttributeBad},יותר מדי {AttributeBad}
 FormatText,transient {PropertyName} {DurationDice},{PropertyName} {DurationDice} באופן זמני
 FormatText,transmute items to {MaterialName},הפיכת חפצים ל{MaterialName}
 FormatText,trigger {Dice} times,הפעלה למשך {Dice} פעמים
 FormatText,unless resists {ElementName},אלא אם יש עמידות ל{ElementName}
-FormatText,unless target has {PropertyName},אלא אם למטרה יש{PropertyName}
-FormatText,versus {Something},נגד{Something}
-FormatText,when {Chance},כאשר{Chance}
-FormatText,when {GROUNDNAME},כאשר{GROUNDNAME}
-FormatText,when {ITEMNAME},כאשר{ITEMNAME}
-FormatText,when {KINDNAMES},כאשר{KINDNAMES}
-FormatText,when {MATERIALNAME},כאשר{MATERIALNAME}
-FormatText,when {PROPERTYNAME},כאשר{PROPERTYNAME}
-FormatText,when {SANCTITYNAME},כאשר{SANCTITYNAME}
-FormatText,when {Something},כאשר{Something}
-FormatText,when {STANDINGNAME},כאשר{STANDINGNAME}
+FormatText,unless target has {PropertyName},אלא אם למטרה יש {PropertyName}
+FormatText,versus {Something},נגד {Something}
+FormatText,when {Chance},כאשר {Chance}
+FormatText,when {GROUNDNAME},כאשר {GROUNDNAME}
+FormatText,when {ITEMNAME},כאשר {ITEMNAME}
+FormatText,when {KINDNAMES},כאשר {KINDNAMES}
+FormatText,when {MATERIALNAME},כאשר {MATERIALNAME}
+FormatText,when {PROPERTYNAME},כאשר {PROPERTYNAME}
+FormatText,when {SANCTITYNAME},כאשר {SANCTITYNAME}
+FormatText,when {Something},כאשר {Something}
+FormatText,when {STANDINGNAME},כאשר {STANDINGNAME}
 FormatText,when resists {ElementName},כאשר יש עמידות ל{ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,הדלת הכבדה הזאת עשויה מגבישי בדולח קשים ולא ניזוקה בקלות.
 GateName,crystal door,דלת בדולח
@@ -2580,7 +2580,7 @@ ItemName,egg,ביצה
 ItemName,elemental robe,אדרת יסודות
 ItemName,elven arrow,חץ של אלפים
 ItemName,elven boots,נעלי אלפים
-ItemName,elven bow,חרב אלפים
+ItemName,elven bow,קשת אלפים
 ItemName,elven broadsword,חרב רחבת להב של אלפים
 ItemName,elven cloak,גלימה של אלפים
 ItemName,elven dagger,פגיון של אלפים
@@ -2798,7 +2798,7 @@ ItemName,potion of speed,שיקוי מהירות
 ItemName,potion of water,שיקוי מים
 ItemName,proof earrings,עגילי ראיות
 ItemName,Prudentia,פרודנטיה
-ItemName,quarterstaff,מוט טץ
+ItemName,quarterstaff,מוט עץ
 ItemName,ranseur,קלשון חד-חוד
 ItemName,rapier,רפייר
 ItemName,Ravenbow,רייבנבו
@@ -3185,8 +3185,8 @@ LiteralText,boost encumbrance by enchantment,קסם מחזק יכולת נשיא
 LiteralText,boost speed by enchantment,קסם מחזק מהירות
 LiteralText,boulders,סלעים
 LiteralText,bounces,ניתורים
-LiteralText,broken,שבר
-LiteralText,BROKEN,שבר
+LiteralText,broken,במצב שבור
+LiteralText,BROKEN,במצב שבור
 LiteralText,burst rate,קצב ירייה
 LiteralText,BUY,קנייה
 LiteralText,BUY ALL,לקנות את הכל
@@ -3354,7 +3354,7 @@ LiteralText,ESSENCE,מהות
 LiteralText,evolution,התפתחות
 LiteralText,Examine which object?,איזה חפץ לבחון?
 LiteralText,except replica,מלבד העתק
-LiteralText,EXCHANGE,חילופין
+LiteralText,EXCHANGE,עסקה
 LiteralText,EXIT PATHOS,יציאה מפאתוס
 LiteralText,EXPAND,להרחיב
 LiteralText,EXPEL,לגרש
@@ -3380,7 +3380,7 @@ LiteralText,fixed range,טווח קבוע
 LiteralText,FIZZLE,קול תסיסה
 LiteralText,Floor,רצפה
 LiteralText,FOLLOW,מעקב
-LiteralText,Follow me on Twitter,עקבו אחריי בטוויטר
+LiteralText,Follow me on Twitter,לעקוב אחריי בטוויטר
 LiteralText,free panning mode,מצב מסך עוקב חופשי
 LiteralText,fright,פחד
 LiteralText,fumbling,מעידה
@@ -3457,7 +3457,7 @@ LiteralText,karma,קארמה
 LiteralText,KARMA,קארמה
 LiteralText,key?,מפתח?
 LiteralText,Kick which direction?,באיזה כיוון לבעוט?
-LiteralText,KICK!,לבעוט!
+LiteralText,KICK!,!לבעוט
 LiteralText,kills,הריגות
 LiteralText,kit,ערכה
 LiteralText,KNOWLEDGE,ידע
@@ -3557,7 +3557,7 @@ LiteralText,passive (no attacking),(במצב פאסיבי (בלי לתקוף
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,אפשר לשחק בפאתוס במצב שיתופי במסך מפוצל עד ארבעה שחקנים.
 LiteralText,pathos development @ paypal,בפייפאל pathos development
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,פאתוס לא מצליח לטעון את ההרפתקה שלך. אשמח לקבל את קובץ השמירה שלך ולבדוק את העניין. אולי אפילו אצליח לתקן את הקובץ או לעדכן את האפליקציה כדי לתקן את הבעיה. תודה על ההבנה.
-LiteralText,Pathos might be the next evolution of Nethack.,ייתכן מאוד שפאתוס הוא ההתפתחות הבאה של נטהאק.
+LiteralText,Pathos might be the next evolution of Nethack.,פאתוס הוא כנראה ההתפתחות הבאה של נטהאק.
 LiteralText,penalty,עונש
 LiteralText,penetrates,במצב חדירה
 LiteralText,per level,לרמה
@@ -3604,7 +3604,7 @@ LiteralText,rank,דרגה
 LiteralText,rarity,נדירות
 LiteralText,rate & review on the app store,לדרג ולסקור את המשחק בחנות האפליקציות
 LiteralText,RE-ACT,לפעול שוב
-LiteralText,Read books to learn spells,לקרוא ספרים כדי ללמוד קסמים
+LiteralText,Read books to learn spells,כדי ללמוד קסמים צריך לקרוא ספרים
 LiteralText,READ!,!לקרוא
 LiteralText,REALLY CRASH?,?באמת לרסק
 LiteralText,REAL-TIME,בזמן-אמיתי
@@ -3620,7 +3620,7 @@ LiteralText,REINFORCED,במצב מחוזק
 LiteralText,REMOVE CURSE,הסרת קללה
 LiteralText,remove with,להסיר עם
 LiteralText,remove with boulder,להסיר עם סלע
-LiteralText,REMOVE//container,להוציא
+LiteralText,REMOVE//container,להרים
 LiteralText,REMOVE//equipment,להסיר
 LiteralText,RENAME,לשנות שם
 LiteralText,RENAME CHARACTER,לשנות את שם הדמות
@@ -3669,6 +3669,8 @@ LiteralText,secret,סוד
 LiteralText,SECRET,סוד
 LiteralText,seed,גרעין
 LiteralText,SELECT ATMOSPHERE,בחירת אווירה
+LiteralText,Select Companion Tile,לבחור אריח למלווה
+LiteralText,Select Hero Tile,לבחור אריח לגיבור או לגיבורה
 LiteralText,SELECT ITEM,בחירת פריט
 LiteralText,SELECT LANGUAGE,בחירת שפה
 LiteralText,SELECT MAP,בחירת מפה
@@ -3737,13 +3739,13 @@ LiteralText,talents,כשרונות
 LiteralText,TALENTS,כשרונות
 LiteralText,TELEKINESIS,טלקינזיס
 LiteralText,Telekinesis which direction?,?באיזה כיוון להפעיל טלקינזיס
-LiteralText,Telekinesis which object?,על איזה חפץ להפעיל טלקינזיס
+LiteralText,Telekinesis which object?,?על איזה חפץ להפעיל טלקינזיס
 LiteralText,TELEPORT,לשגר
 LiteralText,Teleport to where?,?לאן להשתגר
 LiteralText,TERMINAL,טרמינל
 LiteralText,terrain,פני השטח
 LiteralText,The attack score is your aptitude for hitting an opponent.,נקודות ההתקפה משקפות את יכולת התקיפה שלך.
-LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,האתגר הוא לשפר את המכניקה ובמקביל לשמר את המהות שהפכה אותו למשחק הטוב בכל הזמנים.
+LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,האתגר שלי הוא לשפר את המכניקה ובמקביל לשמר את המהות שהפכה אותו למשחק הטוב בכל הזמנים.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,נקודות ההגנה משקפות את מידת ההגנה שיש לך מפני פגיעות.
 LiteralText,There is a new update available!,יש עדכון חדש!
 LiteralText,there is nothing to place here,אין מה לשים כאן
@@ -3770,8 +3772,8 @@ LiteralText,TRANSIENTS,השפעות זמניות
 LiteralText,TRANSLATIONS,תרגומים
 LiteralText,TRAP,מלכודת
 LiteralText,trap?,?מלכודת
-LiteralText,trapped,בתוך מלכודת
-LiteralText,TRAPPED,בתוך מלכודת
+LiteralText,trapped,עם מלכודת
+LiteralText,TRAPPED,עם מלכודת
 LiteralText,trapped container,כלי קיבול ממולכד
 LiteralText,trapped door,דלת ממולכדת
 LiteralText,TRIGGER,להפעיל מלכודת
@@ -4127,7 +4129,7 @@ PropertyDescription,"Transform into another entity with all the advantages or di
 PropertyDescription,Using the power of your mind to move objects without physical interaction.,"הזזת חפצים בכוח המחשבה, ללא מגע פיזי."
 PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,תפיסת הראייה שלך מתעוותת והמוח שלך מחליף חפצים ויישויות רגילים לצורות מוזרות מהסיוטים.
 PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"במצב מבולבל יהיה לך קשה לקבל החלטות. התנועה וההתקפה שלך עשויות להגיע בכיוונים בלתי צפויים ולא ניתן להטיל לחשים. בזמן קריאת מגילות קסם ייתכן שהמילים לא ייקראו נכון, וההשפעות יהיו שונות מהצפוי. אין לך יכולת להתרכז למשך זמן ארוך מספיק כדי לקרוא ספר."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","במצב המום אין לך יכולת ללכת ישר או לבצע משימות מסובכות, בדומה למצב בלבול."
+PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","במצב הלם אין לך יכולת ללכת ישר או לבצע משימות מסובכות, בדומה למצב בלבול."
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,יש לך מחלה נוראית עם סימפטומים מוזרים ובחילה.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",שקעת בשינה עמוקה ושלווה. במבוך מלא במפלצות.
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,יש לך דחף בלתי נשלט ובלתי נגמר לאכול.
@@ -4150,7 +4152,7 @@ PropertyDescription,"Your mind is protected against deception, trickery and fals
 PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"השרירים שלך מכווצים ללא יכולת תנועה, ואין לך יכולת לזוז או להתגונן."
 PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,התפיסה והמודעות שלך מוגברות ומאפשרות לך לגלות בקלות דלתות סודיות ומלכודות.
 PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,המיקום שלך לא ברור ובקלות רבה מתאפשר לך להיעלם ולהופיע שוב.
-PropertyName,aggravation,עצבים
+PropertyName,aggravation,רוגז
 PropertyName,appraisal,הערכה
 PropertyName,beatitude,קדושה
 PropertyName,berserking,השתוללות
@@ -4197,7 +4199,7 @@ PropertyName,slippery,חלקלקות
 PropertyName,slow digestion,עיכול איטי
 PropertyName,slowness,איטיות
 PropertyName,stealth,התגנבות
-PropertyName,stunned,מצב המום
+PropertyName,stunned,מצב הלם
 PropertyName,sustain ability,יכולות קבועות
 PropertyName,telekinesis,טלקינזיס
 PropertyName,telepathy,טלפתיה
@@ -4725,14 +4727,14 @@ SpellName,toxic spray,רסס רעל
 SpellName,turn undead,גירוש אל-מתים
 SpellName,walling,קירוי
 SpellName,wizard lock,נעילת קסם
-StandingName,damned,במצב ארור
+StandingName,damned,מצב ארור
 StandingName,doomed,גורל נחרץ
-StandingName,doubtful,נתון לספק
-StandingName,evil,במצב רשע
-StandingName,exalted,במצב נעלה
-StandingName,glorious,במצב מהולל
-StandingName,good,במצב טוב
-StandingName,hopeful,בתקווה
+StandingName,doubtful,ספק
+StandingName,evil,מצב רשע
+StandingName,exalted,מצב נעלה
+StandingName,glorious,מצב מהולל
+StandingName,good,מצב טוב
+StandingName,hopeful,תקווה
 StandingName,reconciled,פיוס
 StandingName,strayed,תועה דרך
 StockName,amulet,קמע
