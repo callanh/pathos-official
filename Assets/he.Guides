@@ -1,448 +1,448 @@
-# Commands;
-. Single tap/left click or arrow keys to move and attack.;
-. Long press/right click to operate doors/traps.;
-. Double tap to pick up items, traverse stairs or wait one move.;
+# Commands; פקודות
+. Single tap/left click or arrow keys to move and attack.; לחיצה קצרה/קליק שמאלי או מקשי החצים כדי לזוז ולתקוף
+. Long press/right click to operate doors/traps.; לחיצה ארוכה/קליק ימני כדי להפעיל דלתות/מלכודות
+. Double tap to pick up items, traverse stairs or wait one move.; לחיצה כפולה כדי להרים חפצים, להשתמש במדרגות או לחכות תור אחד
 /
-- . | wait one turn (also double tap on self);
-- , | pick up the top item on the floor;
-- A | toggle log (click the log to expand/collapse);
-- B | move down-left;
-- C | toggle character;
-- D | re-use last item;
-- E | mount or dismount your steed;
-- F | toggle floor;
-- G | re-equip last item;
-- H | move left;
-- I | toggle inventory;
-- J | move down;
-- K | move up;
-- L | move right;
-- M | toggle map;
-- N | move down-right;
-- O | hide from view;
-- P | polymorph at will;
-- Q | save or quit this game;
-- R | for rest mode to recover life and mana;
-- S | for search mode for secret doors and traps;
-- T | teleport at will;
-- U | move up-right;
-- V | kick in a direction;
-- W | jump in a direction (if you have the talent);
-- X | re-cast last spell;
-- Y | move up-left;
-- Z | toggle cast spells (read books to learn spells);
-- ' | blink in a direction;
-- ;; | telekinesis in a direction;
-- > | descend stairs;
-- < | ascend stairs;
-- / | toggle chat in multiplayer;
-- \ | view knowledge panel;
-- + | zoom in;
-- - | zoom out;
-- 1,2,3,4,5 | left quick actions (change action using shift + number);
-- 0,9,8,7,6 | right quick actions (change action using shift + number);
-- INSERT | toggle tunnelling mode;
-- SHIFT + arrow | fire a missile without moving;
-- CTRL + arrow | interact with the target without moving;
-- ENTER | select the top item on the floor;
-- ESCAPE | hides open panels and clears your target;
-- BACKSPACE | cancels open dialogs and clears the keyboard focus;
-- SPACE | toggle real-time or turn-based;
-- PgUp | switch to previous character;
-- PgDown | switch to next character;
-- ALT | show labels;
-- F1 | show this help;
-- F6 | quick save;
-- F10 | open side menu;
-- ALT + ENTER | toggle full screen to window mode (Windows Desktop);
+- . | wait one turn (also double tap on self); . | לחכות תור אחד (גם לחיצה כפולה על הדמות שלך)
+- , | pick up the top item on the floor; , | להרים את החפץ העליון מהרצפה
+- A | toggle log (click the log to expand/collapse); A | הצגת יומן (לחיצה על היומן תגדיל ותכווץ אותו)
+- B | move down-left; B | תנועה שמאלה-ולמטה
+- C | toggle character; C | הצגת הדמות שלך
+- D | re-use last item; D | שימוש נוסף בחפץ האחרון
+- E | mount or dismount your steed; E | לרכוב או לרדת מהרמך שלך
+- F | toggle floor; F | הצגת הרצפה
+- G | re-equip last item; G | לבישה או אחיזה של החפץ האחרון
+- H | move left; H | תנועה שמאלה
+- I | toggle inventory; I | הצגת המלאי שלך
+- J | move down; J | תנועה למטה
+- K | move up; K | תנועה למעלה
+- L | move right; L | תנועה ימינה
+- M | toggle map; M | הצגת המפה
+- N | move down-right; N | תנועה ימינה-ולמטה
+- O | hide from view; O | הסתרה של הדמות שלך
+- P | polymorph at will; P | שינוי צורה רצוני
+- Q | save or quit this game; Q | שמירה או יציאה מהמשחק
+- R | for rest mode to recover life and mana; R | מנוחה להתאוששות והחזר נקודות חיים וקסם
+- S | for search mode for secret doors and traps; S | מצב חיפוש דלתות נסתרות ומלכודות
+- T | teleport at will; T | השתגרות רצונית
+- U | move up-right; U | תנועה ימינה-ולמעלה
+- V | kick in a direction; V | בעיטה בכיוון מסוים
+- W | jump in a direction (if you have the talent); W | קפיצה בכיוון מסוים (אם יש לך כישור מתאים)
+- X | re-cast last spell; X | חזרה על לחש הקסם האחרון
+- Y | move up-left; Y | תנועה שמאלה-ולמעלה
+- Z | toggle cast spells (read books to learn spells); Z | הצגת לחשי קסם (צריך לקרוא ספרים כדי ללמוד לחשים)
+- ' | blink in a direction; ' | בזיקה בכיוון מסוים
+- ;; | telekinesis in a direction; ;; | טלקינזיס בכיוון מסוים
+- > | descend stairs; > | ירידה במדרגות
+- < | ascend stairs; < | עלייה במדרגות
+- / | toggle chat in multiplayer; / | הצגת הצ'אט במשחק מרובה משתתפים
+- \ | view knowledge panel; \ | הצגת פאנל הידע
+- + | zoom in; + | הגדלת תצוגה
+- - | zoom out; - | הקטנת תצוגה
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | פעולות מהירות שמאלה (שיפט + מספר לשינוי הפעולה)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | פעולות מהירות ימינה (שיפט + מספר לשינוי הפעולה)
+- INSERT | toggle tunnelling mode; INSERT | הפעלת מצב חפירה
+- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | יריה מבלי לזוז מהמקום
+- CTRL + arrow | interact with the target without moving; CTRL + arrow | פעולות על מטרה מבלי לזוז מהמקום
+- ENTER | select the top item on the floor; ENTER | בחירת החפץ העליון על הרצפה
+- ESCAPE | hides open panels and clears your target; ESCAPE | הסתרת חלונות פתוחים ואיפוס המטרה
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | ביטול חלונות פתוחים ומיקוד באמצעות המקלדת
+- SPACE | toggle real-time or turn-based; SPACE | מעבר בין משחק זמן-אמיתי למשחק מבוסס-תורות
+- PgUp | switch to previous character; PgUp | החלפה לדמות הקודמת
+- PgDown | switch to next character; PgDown | החלפה לדמות הבאה
+- ALT | show labels; ALT | הצגת תוויות
+- F1 | show this help; F1 | הצגת מסך העזרה
+- F6 | quick save; F6 | שמירה מהירה
+- F10 | open side menu; F10 | פתיחת תפריט צד
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | מעבר ממסך מלא לחלון (בגרסת חלונות)
 
-# General mechanics;
-. You will die.;
-. But don't despair, you will learn something new each time.;
-. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.;
-. Pathos is turn-based so take your time and consider your options when things get serious.;
-. Each class starts with different items, skills and abilities.;
-. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.;
-. For example, the orange potion will not have a consistent effect across different adventures.;
+# General mechanics; מכניקה כללית של המשחק
+. You will die.; מותך מובטח
+. But don't despair, you will learn something new each time.; אבל אל ייאוש. בכל פעם תהיה לך הזדמנות ללמוד משהו חדש
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; המטרה בפאתוס היא לשרוד את כל הדרך עד קומה 40 ואז לברוח בחזרה לקומה 1
+. Pathos is turn-based so take your time and consider your options when things get serious.; פאתוס הוא משחק מבוסס-תורות, אז אין מה למהר. בשעת צרה כדאי לך לעצור לחשוב על כל האפשרויות שלך
+. Each class starts with different items, skills and abilities.; כל מקצוע מתחיל עם חפצים, כישורים ומיומנויות שונים
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; ההשפעות של שיקויים, מגילות, טבעות, שרביטים וחלק מהשריונות מוגרלות בתחילת כל הרפתקה.
+. For example, the orange potion will not have a consistent effect across different adventures.; לדוגמה, לשיקוי הכתום לא תהיה אותה השפעה בהרפתקאות שונות
 
-# Combat;
-. When attacking a d20 is rolled which gives a random number between 1 and 20.;
-. A roll of 1 is a critical miss and a roll of 20 is a critical hit.;
-. A critical miss stops any further attacks in that turn (if you have multiple attacks).;
-. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.;
-. The strength bonus to damage is doubled when using a two handed weapon.;
-. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.;
-. Otherwise, this number is added to the attack score and compared to the defence score.;
+# Combat; קרב
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; בהתקפה, קוביית 20 מגולגלת ונותנת מספר אקראי בין 1 ל-20
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; גלגול של 1 נקרא החטאה קריטית וגלגול של 20 נקרא פגיעה קריטית
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; החטאה קריטית עוצרת כל התקפה נוספת באותו תור (אם יש לך יותר מהתקפה אחת בתור)
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; פגיעה קריטית מכפילה את הנזק הבסיסי של הנשק התוקף. שיפורים בנשק ושינויים שנובעים מכוח לא מוכפלים
+. The strength bonus to damage is doubled when using a two handed weapon.; בונוס הכוח לנשק מוכפל אם משתמשים בנשק דו-ידני
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; אם פגיעה או החטאה קריטית מחוייבות באותו תור, הן מחושבות כפגיעה או החטאה רגילות
+. Otherwise, this number is added to the attack score and compared to the defence score.; אם לא, המספר הזה מתווסף לנקודות ההתקפה ומושווה לנקודות ההגנה
 /
-` (Attack + d20) >= Defence;
+` (Attack + d20) >= Defence; (התקפה + d20) >= הגנה
 /
-. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.;
-. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.;
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; נקודות ההתקפה וההגנה שלך מושפעות מהמיומנויות, הכישורים והשיפורים הקסומים שלך
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; שיפורים קסומים לכלי נשק משפיעים ישירות על נקודות ההתקפה שלך ומתווספים לנקודות הנזק
 /
-. Your skill bonus is based on your level and is the same formula for all classes:;
+. Your skill bonus is based on your level and is the same formula for all classes:; לכך נוסף בונוס מיומנות שתלוי ברמה שלך, והנוסחה זהה לכל המקצועות:
 /
-` Skill Bonus = (Level / 4) + 1;
+` Skill Bonus = (Level / 4) + 1; בונוס מיומנות = (4/רמה) + 1
 /
-. Your defence is also affected by your circumstances:;
+. Your defence is also affected by your circumstances:; גם ההגנה שלך מושפעת מהנסיבות:
 /
-` {Mod} defence when blind;
-` {Mod} defence when invisible;
-` {Mod} defence when displaced;
-` {Mod} defence when paralysed or sleeping;
-` {Mod} defence when stuck;
-` {Mod} defence when attacked from concealment;
+` {Mod} defence when blind; {Mod} הגנה בזמן עיוורון
+` {Mod} defence when invisible; {Mod} הגנה כאשר הדמות שלך בלתי נראית
+` {Mod} defence when displaced; {Mod} הגנה בזמן התעתקות
+` {Mod} defence when paralysed or sleeping; {Mod} הגנה בזמן שיתוק או שינה
+` {Mod} defence when stuck; {Mod} הגנה כאשר הדמות שלך תקועה
+` {Mod} defence when attacked from concealment; {Mod} הגנה בעת שמתקיפים דמות חבויה
 /
-. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.;
-. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.;
-. Light armour has no speed penalty if you are unskilled.;
-. Unskilled use of armour also attracts a one point defence penalty.;
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; שריון כבד יאט אותך ב-{UnskilledPenalty} נקודות אם אין לך כישורים מתאימים וב-{SkilledPenalty} נקודות אם יש לך כישורים
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; שריון בינוני יאט אותך ב-{UnskilledPenalty} נקודות אם אין לך כישורים מתאימים, אבל אם יש לך כישורים, הוא לא ישפיע על המהירות שלך
+. Light armour has no speed penalty if you are unskilled.; שריון קל לא פוגע במהירות שלך גם אם אין לך כישורים מתאימים
+. Unskilled use of armour also attracts a one point defence penalty.; שימוש בשריון ללא כישורים מתאימים מתבטא בהורדה של נקודת הגנה אחת
 /
-. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.;
-. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.;
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; תיקון זריזות מתווסף להגנה שלך רק אם יש לך כישורים מתאימים לכל חלקי השריון שלך
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; הוא מוגבל למקסימום של 4+ אם יש לך שריון בינוני כלשהו ול-2+ אם יש לך שריון כבד כלשהו
 
-# Skills;
-. Each skill has a rating between 0 and 2000 and there are five competency levels.;
+# Skills; כישורים
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; לכל כישור יש ציון שנע בין 0 ל-2000 וחמש רמות מיומנות
 /
-` (0) Proficient =    0..199;
-` (1) Specialist =  200..499;
-` (2) Expert     =  500..999;
-` (3) Master     = 1000..1999;
-` (4) Champion   = 2000;
+` (0) Proficient =    0..199; (0) יכולת = 0..199
+` (1) Specialist =  200..499; (1) התמחות = 200..499
+` (2) Expert     =  500..999; (2) מומחיות = 500..999
+` (3) Master     = 1000..1999; (3) שליטה = 1000..1999
+` (4) Champion   = 2000; (4) אליפות = 2000
 /
-. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.;
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; ניקוד הכישורים עולה עם הניסיון, למשל בפגיעה מוצלחת עם נשק או בהגנה מוצלחת עם שריון
 /
-. Weapon skill gives you the competency level as an attack bonus and to damage.;
-. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.;
-. This bonus to damage is doubled on a critical hit.;
+. Weapon skill gives you the competency level as an attack bonus and to damage.; כישורים בנשק מוסיפים את ניקוד המיומנות שלך כבונוס להתקפה ולנזק
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; לדוגמה, שליטה בלהב כבד תוסיף לך 3 נקודות התקפה ו-3 נזק בשימוש בחרב דו-ידנית
+. This bonus to damage is doubled on a critical hit.; הבונוס לנזק מוכפל בפגיעה קריטית
 /
-. Armour skill gives you the competency level as a defence bonus.;
-. For example, an expert in heavy armour receives +2 defence when wearing plate mail.;
-. The defence bonus is the average of the skill levels on each piece of equipped armour.;
-. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.;
+. Armour skill gives you the competency level as a defence bonus.; כישורים בשריון מוסיפים את ניקוד המיומנות שלך כבונוס להגנה
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; לדוגמה, מומחיות בשריון כבד תוסיף לך 2 נקודות הגנה בלבישת שריון לוחות
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; הבונוס להגנה הוא ממוצע רמות המיומנות בכל פריטי שריון שהדמות שלך לובשת
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; לדוגמה, דמות מומחית (2) בשריון כבד שיש לה רק יכולת (0) בשריון קל לובשת שריון לוחות (כבד) ומגן קטן (קל) ולכן בונוס ההגנה שלה יהיה 1+
 /
-. Skill in schools of magic improves the casting range and has better effects at each competency level.;
-. These skills are practised by learning and casting spells.;
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; כישורים באסכולות הקסם השונות משפרים את טווח ההגעה ואת השפעות הקסם בכל רמת מיומנות
+. These skills are practised by learning and casting spells.; אפשר לחזק את הכישורים האלה גם בלימוד וגם בהטלת לחשים
 
-# Life;
-. {LifeDefinition};
-. Your starting life is determined by your race and class plus your constitution modifier.;
-. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.;
-. There are also magical means to increase your life potential.;
-. However, life cannot be increased past the maximum potential plus your constitution score.;
+# Life; נקודות חיים
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; נקודות החיים ההתחלתיות שלך נקבעות על ידי הגזע והמקצוע, בנוסף לנקודות החוסן שלך
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; כשרמת הנסיון שלך עולה, נקודות החיים שלך עולות אקראית, בתלות בגזע, המקצוע ונקודות החוסן שלך
+. There are also magical means to increase your life potential.; קיימים גם אמצעים קסומים להעלאת פוטנציאל החיים שלך
+. However, life cannot be increased past the maximum potential plus your constitution score.; אבל לא ניתן להעלות את נקודות החיים מעבר לפוטנציאל המקסימלי שלך פלוס נקודות החוסן שלך
 /
-` Initial = Class base + Race base + {CON} modifier;
-` Advancement = Class roll + Race roll + {CON} modifier;
-` Limit = Initial + max(Advancement) x Level + {CON} score;
+` Initial = Class base + Race base + {CON} modifier; התחלה = בסיס מקצוע + בסיס גזע + {CON} תוספת
+` Advancement = Class roll + Race roll + {CON} modifier; התקדמות = קוביית מקצוע + קוביית גזע + {CON} תוספת
+` Limit = Initial + max(Advancement) x Level + {CON} score; מגבלה = התחלה + מקסימום התקדמות x רמה + {CON} ניקוד
 /
-. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.;
-. Sleeping improves recovery by halving the number of turns.;
-. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.;
-. Life regeneration guarantees the recovery at one point per turn.;
-. The {inediate} diet slows recovery of life by doubling the number of turns.;
-. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;
-. Active {phasing} prevents the natural recovery of life.;
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; נקודות חיים שירדו עולות חזרה באופן טבעי בנקודה אחת כל ({LevelCap} - Level - {CON} modifier) תורות
+. Sleeping improves recovery by halving the number of turns.; שינה משפרת את ההתאוששות ודורשת רק חצי מכמות התורות
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; במצב של הרעבה, נקודות החיים עולות בקצב של נקודה אחת כל {StarvationRecoveryRate} תורות
+. Life regeneration guarantees the recovery at one point per turn.; במצב של התחדשות חיים, ההתאוששות היא בנקודה אחת כל תור
+. The {inediate} diet slows recovery of life by doubling the number of turns.; מגבלת תזונה מסוג {inediate} מאטה את התאוששות החיים ודורשת מספר כפול של תורות
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; כאשר התכונה {hunger} קיימת בשילוב עם תזונה מסוג {inediate}, נקודות החיים לא יעלו באופן טבעי. אבל עם תוספת של {life regeneration}, נקודות החיים יעלו בקצב האיטי הרגיל
+. Active {phasing} prevents the natural recovery of life.; {phasing} פעיל מונע התאוששות טבעית של נקודות החיים
 
-# Mana;
-. {ManaDefinition};
-. There are no adverse effects for exhausting your mana.;
-. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.;
-. There are also magical means to increase your mana potential.;
-. However, mana cannot be increased past the maximum potential plus your wisdom score.;
+# Mana; נקודות קסם
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; אין השפעות שליליות למצב שבו נגמרות לך נקודות הקסם
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; ככל שרמת הנסיון שלך עולה, נקודות הקסם שלך עולות אקראית, בתלות בגזע ובמקצוע שלך בנוסף לנקודות החוכמה שלך
+. There are also magical means to increase your mana potential.; קיימים גם אמצעים קסומים להעלאת פוטנציאל הקסם שלך
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; אבל לא ניתן להעלות את נקודות הקסם מעבר לפוטנציאל המקסימלי שלך פלוס נקודות החוכמה שלך
 /
-` Initial = Class base + Race base + {WIS} modifier;
-` Advancement = Class roll + Race roll + {WIS} modifier;
-` Limit = Initial + max(Advancement) x Level + {WIS} score;
+` Initial = Class base + Race base + {WIS} modifier; התחלה = בסיס מקצוע + בסיס גזע + {WIS} תוספת
+` Advancement = Class roll + Race roll + {WIS} modifier; התקדמות = קוביית מקצוע + קוביית גזע + {WIS} תוספת
+` Limit = Initial + max(Advancement) x Level + {WIS} score; מגבלה = התחלה + מקסימום התקדמות x רמה + {WIS} ניקוד
 /
-. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.;
-. Sleeping improves recovery by halving the number of turns.;
-. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.;
-. Mana regeneration guarantees the recovery at one point per turn.;
-. The {inediate} diet slows recovery of mana by doubling the number of turns;
-. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;
-. Active {phasing} prevents the natural recovery of mana.;
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; נקודות קסם שירדו עולות חזרה באופן טבעי בנקודה אחת כל ({LevelCap} - Level - {WIS} modifier) תורות
+. Sleeping improves recovery by halving the number of turns.; שינה משפרת את ההתאוששות ודורשת רק חצי מכמות התורות
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; במצב של הרעבה, נקודות הקסם עולות בקצב של נקודה אחת כל {StarvationRecoveryRate} תורות
+. Mana regeneration guarantees the recovery at one point per turn.; במצב של התחדשות קסם, ההתאוששות היא בנקודה אחת כל תור
+. The {inediate} diet slows recovery of mana by doubling the number of turns; מגבלת תזונה מסוג {inediate} מאטה את התאוששות הקסם ודורשת מספר כפול של תורות
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; כאשר התכונה {hunger} קיימת בשילוב עם תזונה מסוג {inediate}, נקודות הקסם לא יעלו באופן טבעי. אבל עם תוספת של {mana regeneration}, נקודות הקסם יעלו בקצב האיטי הרגיל
+. Active {phasing} prevents the natural recovery of mana.; {phasing} פעיל מונע התאוששות טבעית של נקודות הקסם
 
-# Nutrition;
-. Maintaining a food supply is important to avoid starving to death.;
-. In desperate or pragmatic times you can eat corpses.;
+# Nutrition; תזונה
+. Maintaining a food supply is important to avoid starving to death.; שמירה על אספקת מזון נאותה חשובה כדי למנוע מוות מהרעבה
+. In desperate or pragmatic times you can eat corpses.; כשהמצב נואש או מטעמים פרגמטיים, אפשר לאכול גופות
 
-# Corpses;
-. The bodies of your enemies and allies can be a source of nutrition.;
-. Many corpses also convey harm and illness but some may impart beneficial talents.;
-. Be aware that cannibalism is considered a bad idea even in desperate times.;
+# Corpses; גופות
+. The bodies of your enemies and allies can be a source of nutrition.; גופות האויבים ובני הברית שלך כאחד הן מקור לתזונה
+. Many corpses also convey harm and illness but some may impart beneficial talents.; סוגים רבים של גופות יגרמו לנזק ולמחלות, אבל חלקן עשויות דווקא להעניק לך כשרונות מועילים
+. Be aware that cannibalism is considered a bad idea even in desperate times.; חשוב לציין שקניבליזם נחשב לרעיון רע גם בזמנים נואשים
 
-# Encumbrance;
-. Everything you pick up adds to your encumbrance and you may become burdened.;
-. This will slow down your movement and makes you easy prey to the denizens of the dungeon.;
+# Encumbrance; הכבדה
+. Everything you pick up adds to your encumbrance and you may become burdened.; כל דבר שנישא על ידך מכביד עליך, עד לרמה של עומס יתר
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; העומס יאט אותך ויהפוך אותך לטרף קל לאוכלוסיית המבוך
 /
-` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight);
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); יכולת הנשיאה = (נקודות כוח פחות החלשה בגלל תזונה) x {WeightMultiplier} + ({WeightPercentage} משקל הגוף)
 
-# Resting;
-. The camp-fire action button toggles resting.;
-. While resting your life and mana recover at a faster rate.;
-. Companions will rest when you rest.;
-. Resting will be interrupted if there is a hostile in your zone.;
+# Resting; מנוחה
+. The camp-fire action button toggles resting.; לחצן המדורה מפעיל ומפסיק את מצב המנוחה
+. While resting your life and mana recover at a faster rate.; בזמן מנוחה נקודות החיים והקסם שלך מתאוששות בקצב מוגבר
+. Companions will rest when you rest.; בני הלוויה שלך ינוחו יחד איתך
+. Resting will be interrupted if there is a hostile in your zone.; המנוחה תופסק אם יופיע באיזורך גורם עויין
 
-# Searching;
-. The eye action button toggles searching.;
-. Searching will find secret doors and concealed traps.;
-. Companions will search when you search to help find secrets.;
-. Searching will be interrupted if there is a hostile in your zone.;
+# Searching; חיפוש
+. The eye action button toggles searching.; לחצן העין נפעיל ומפסיק את מצב החיפוש
+. Searching will find secret doors and concealed traps.; החיפוש נועד למציאת דלתות נסתרות ומלכודות מוסוות
+. Companions will search when you search to help find secrets.; בני הלוויה שלך יחפשו יחד איתך ויעזרו לך לגלות סודות
+. Searching will be interrupted if there is a hostile in your zone.; החיפוש יופסק אם יופיע באיזורך גורם עויין
 
-# Abilities;
-. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.;
-. Your starting ability scores is determined by rolling 4d6 six times.;
-. The lowest roll from each set is dropped giving a score between 3 and 18.;
-. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.;
-. Racial limits are then applied as shown in help > races.;
-. Any points that are reduced by racial limits are transferred to another ability.;
+# Abilities; יכולות
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; יש שישה ציונים ליכולת - כוח, זריזות, חוסן, תבונה, חוכמה וכריזמה
+. Your starting ability scores is determined by rolling 4d6 six times.; הניקוד הראשוני שלך נקבע בגלגול ארבע קוביות של 6 שש פעמים
+. The lowest roll from each set is dropped giving a score between 3 and 18.; הגלגול הנמוך ביותר מכל סט לא נכנס לחישוב, כך שהניקוד הוא בין 3 ל-18
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; הציונים הגבוהים ביותר משוייכים אוטומטית ליכולות המרכזיות שלך, שמוסברות תחת הערך מקצועות
+. Racial limits are then applied as shown in help > races.; לאחר מכן מופעלות מגבלות גזע, כפי שמוסבר תחת הערך גזעים
+. Any points that are reduced by racial limits are transferred to another ability.; כל הנקודות שמקוזזות בגלל מגבלות של הגזע מועברות ליכולת אחרת
 /
-` {AttributeCode} ({AttributeName}): {AttributeDescription};
+` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeCode} ({AttributeName}): {AttributeDescription}
 
-# Karma;
-. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).;
-. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.;
-. You can gain additional karma by donating gold to a priest at a shrine.;
-. You can pray at any time by long press/right click on your character.;
-. This will cost {Number} karma and has the following effects:;
+# Karma; קארמה
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; קארמה נצברת כאשר הורגים מפלצות ומתבזבזת כאשר מבקשים טובה אלוהית (תפילות וברכות במקדשים)
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; ניתן לאבד קארמה גם על ידי אזרחות רעה, למשל תקיפת מפלצת נייטרלית או הרג של בני לוויה
+. You can gain additional karma by donating gold to a priest at a shrine.; ניתן לקבל עוד קארמה על ידי תרומת זהב לכוהנת או כוהן במקדש
+. You can pray at any time by long press/right click on your character.; אפשר להתפלל בכל עת, באמצעות לחיצה ארוכה על הדמות שלך
+. This will cost {Number} karma and has the following effects:; זה יעלה לך ב-{Number} קארמה ויתבטא בתוצאות הבאות:
 /
-` karma >= hopeful;
-`   gain {Number} nutrition when hungry;
-`   unafflict;
-`   unpolymorph;
-`   escape from being stuck;
-`   remove punishment;
+` karma >= hopeful; קארמה >= תקווה
+`   gain {Number} nutrition when hungry;  קבלת {Number} תזונה במצב של רעב
+`   unafflict;  חילוץ מצרה
+`   unpolymorph;  ביטול שינוי צורה
+`   escape from being stuck;  חילוץ ממצב תקוע
+`   remove punishment;  ביטול עונש
 /
-` karma >= good;
-`   fully healed if less than half life;
-`   fully restored if less than half mana;
+` karma >= good; קארמה >= מצב טוב
+`   fully healed if less than half life;  ריפוי מלא אם יש לך פחות ממחצית מנקודות החיים
+`   fully restored if less than half mana;  מילוי מלא אם יש לך פחות ממחצית מנקודות הקסם
 /
-` karma >= glorious;
-`   remove blindness;
-`   remove hallucination;
-`   remove rage;
-`   remove sickness;
+` karma >= glorious; קארמה >= מצב מהולל
+`   remove blindness;  ריפוי עיוורון
+`   remove hallucination;  ריפוי הזיות
+`   remove rage;  ריפוי זעם
+`   remove sickness;  ריפוי מחלה
 /
-` karma >= exalted;
-`   remove one curse;
-`   raise dead for one loyal companion;
+` karma >= exalted; קארמה >= מצב נעלה
+`   remove one curse;  ביטול קללה אחת
+`   raise dead for one loyal companion;  החייאת גופה אחת כבן או בת לוויה נאמנים
 
-# Diets;
-. Entities have different diets that allow them to eat specific materials.;
+# Diets; תזונה
+. Entities have different diets that allow them to eat specific materials.; ליישויות שונות יש מגבלות תזונה שונות, שמאפשרות להם לאכול חומרים מסויימים
 /
-` {DietName}: {MaterialNames};
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
 
-# Spells;
-. Spells are learned by studying from magical books found in the dungeon.;
-. Any class can learn spells but only the skilled will use their mana efficiently.;
+# Spells; לחשי קסם
+. Spells are learned by studying from magical books found in the dungeon.; לחשי קסם נלמדים מספרי קסם שניתן למצוא במבוך
+. Any class can learn spells but only the skilled will use their mana efficiently.; דמות מכל מקצוע יכולה ללמוד לחשים, אבל רק דמויות בעלות כישורים יוכלו לנצל את נקודות הקסם שלהן ביעילות
 
-# Gold;
-. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.;
-. Gold can be traded for items from merchants or donated to priests for karma.;
+# Gold; זהב
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; הזהב לא מכביד עליך ויש לו כמה שימושים במבוך
+. Gold can be traded for items from merchants or donated to priests for karma.; ניתן לסחור בזהב תמורת חפצים או לתרום אותו תמורת קארמה
 
-# Companions;
-. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).;
-. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).;
-. You can mount some types of companions and ride around the dungeon.;
-. Your steed will sometimes take over the attack and sometimes will be the target of an attack.;
-. Your steed will be the first into any traps so take good care of their well-being.;
-. A skilled rider adds their skill bonus to the steeds attack and defence ratings.;
-. A steed is useful when you are burdened and it is strong enough to take your load.;
-. To dismount your steed you need to long press/right click on your character.;
+# Companions; בני לוויה
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; אפשר לאלף חיות בית על ידי האכלתן במשהו שהן אוהבות לאכול (מעבר לזה הן לא נעשות רעבות)
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; חתולים ייללו וכלבים ינבחו אם ידרכו על חפץ מקולל או מתקן מקולל (כגון מזרקה)
+. You can mount some types of companions and ride around the dungeon.; על בני לויה מסוימים אפשר לרכוב ברחבי המבוך
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; הרמכים שלך לפעמים יתקפו במקומך ולפעמים יהיו המטרה להתקפה
+. Your steed will be the first into any traps so take good care of their well-being.; הרמכים שלך יהיו הראשונים להיכנס לכל מלכודת אז כדאי לך לשמור על רווחתם
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; רוכבים מיומנים מוסיפים את בונוס המיומנות שלהם להתקפות ולהגנות של הרמכים
+. A steed is useful when you are burdened and it is strong enough to take your load.; רמכים חזקים שימושיים לנשיאת המשא שלך במקרה שיש עליך עומס כבד
+. To dismount your steed you need to long press/right click on your character.; לחיצה ארוכה/קליק ימני על הדמות שלך תפסיק את הרכיבה
 
-# Engulfing;
-. Some entities can swallow or engulf other entities.;
-. When swallowed you will suffer damage each turn and can struggle until you are expelled.;
-. Alternatively, there are many mechanisms which can be used to escape.;
-. It is impossible to fight with your equipped weapons when swallowed.;
-. If you cast when engulfed the spell will hit your engulfer.;
-. However, beams may still bounce off walls and back through your engulfer and also hit you.;
+# Engulfing; עיטוף
+. Some entities can swallow or engulf other entities.; ישנם יצורים שיכולים לבלוע או לעטוף יצורים אחרים
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; כאשר הדמות שלך נבלעת היא תצבור נזק בכל תור ויידרש מאבק עד שהיא תיפלט החוצה
+. Alternatively, there are many mechanisms which can be used to escape.; לחלופין, ישנם מנגנונים רבים שניתן להשתמש בהם כדי לברוח
+. It is impossible to fight with your equipped weapons when swallowed.; דמות שנבלעה לא יכולה להשתמש בנשק שלה
+. If you cast when engulfed the spell will hit your engulfer.; דמות עטופה יכולה להטיל קסם שיפגע במפלצת שעוטפת אותה
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; עם זאת, קרני הקסם עלולות לחזור מהדפנות ולפגוע גם בך
 
-# Spawning;
-. Monsters will randomly spawn into areas outside your current zone.;
-. The rate of spawning increases as you descend deeper into the dungeon.;
-. The talent of aggravation also increases the spawn rates for monsters.;
+# Spawning; הולדה
+. Monsters will randomly spawn into areas outside your current zone.; מפלצות יופיעו באופן אקראי באזורים שאינם האזור הנוכחי שלך
+. The rate of spawning increases as you descend deeper into the dungeon.; קצב ההולדה עולה ככל שיורדים עמוק יותר במבוך
+. The talent of aggravation also increases the spawn rates for monsters.; גם כישרון הרגזה מגביר את קצב ההולדה של מפלצות
 
-# Polymorph;
-. Transform into another entity with all the advantages or disadvantages that brings.;
-. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.;
-. When you perish in your polymorphed form you will often revert to your original form.;
-. You can transform into the entity of your choice when you have polymorph control.;
-. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.;
-. To access polymorph-at-will you need to long press/right click on your character.;
+# Polymorph; שינוי צורה
+. Transform into another entity with all the advantages or disadvantages that brings.; הפיכה לישות אחרת, עם כל היתרונות או החסרונות שנלווים לכך
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; לדוגמה, לדרקונים אין ידיים אבל הם יכולים לעוף ולנשוף קרני אנרגיה קטלניות
+. When you perish in your polymorphed form you will often revert to your original form.; אם הדמות שלך תמות בצורתה המוחלפת, היא תחזור לרוב לצורתה המקורית
+. You can transform into the entity of your choice when you have polymorph control.; שליטה בשינוי צורה מאפשרת לבחור את היישות שהדמות שלך תשתנה אליה
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; השליטה הזו מוגבלת לישויות שכבר הצלחת להרוג וכל שינוי צורה יצרוך תזונה
+. To access polymorph-at-will you need to long press/right click on your character.; לשינוי צורה רצוני, עליך ללחוץ לחיצה ארוכה/קליק ימני על הדמות שלך
 
-# Locks;
-. Doors and containers can be locked and possibly trapped.;
-. You can kick locks to break them but this will trigger any trap.;
-. Items such as skeleton keys and lock picks can be used to unlock.;
-. These items can break and the chance is influenced by your competency with locks.;
-. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.;
-. There are other magical items and spells that can be used to unlock.;
+# Locks; מנעולים
+. Doors and containers can be locked and possibly trapped.; דלתות וכלי קיבול עלולים להיות נעולים וייתכן שגם ממולכדים
+. You can kick locks to break them but this will trigger any trap.; אפשר לבעוט במנעולים כדי לשבור אותם אך זה יפעיל כל מלכודת
+. Items such as skeleton keys and lock picks can be used to unlock.; חפצים כגון מפתחות מאסטר וכלי פריצה יכולים לשמש לפתיחה
+. These items can break and the chance is influenced by your competency with locks.; החפצים האלה יכולים להישבר והסיכוי שזה יקרה מושפע מהמיומנות שלך עם מנעולים
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; בנוסף, חפצים מקוללים נוטים להישבר פי שניים וחפצים מבורכים נוטים להישבר חצי מהזמן
+. There are other magical items and spells that can be used to unlock.; ישנם חפצים קסומים נוספים ולחשי קסם שמשמשים לפתיחה
 
-# Traps;
-. Traps have a difficulty rating that reflects the lethality of the device.;
-. This difficulty rating is also the minimum dungeon level the trap can be generated.;
-. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.;
-. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.;
-. Untrapping requires you to move into the square.;
-. A failure to untrap will cause it to be triggered.;
+# Traps; מלכודות
+. Traps have a difficulty rating that reflects the lethality of the device.; למלכודות יש דירוג קושי שמשקף את מידת הקטלניות שלהן
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; דירוג הקושי הוא גם הקומה המינימלית במבוך שבה תוכל להיווצר מלכודת כזאת
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; הסיכוי לנטרל מלכודת הוא שילוב של רמת הקושי שלה עם נקודות המיומנות והזריזות שלך
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; אם יש עליך השפעות זמניות כמו מעידה, עיוורון, הלם, בלבול או הזיה, יהיה לך קשה יותר לנטרל מלכודות
+. Untrapping requires you to move into the square.; ניטרול מלכודת דורש לזוז לריבוע שבו היא נמצאת
+. A failure to untrap will cause it to be triggered.; כישלון בניטרול מלכודת יפעיל אותה
 
-# Teleport;
-. Teleportation transports your character around the current dungeon level.;
-. When uncontrolled, this is a random event that may help or hinder your journey.;
-. Controlled teleportation allows you to select on the map your destination location.;
-. However, each teleportation will cost you nutrition so use it wisely.;
-. To access teleport-at-will you need to long press/right click on your character.;
+# Teleport; השתגרות
+. Teleportation transports your character around the current dungeon level.; השתגרות מעבירה את הדמות שלך למקום אחר בקומה הנוכחית
+. When uncontrolled, this is a random event that may help or hinder your journey.; כאשר אין לך שליטה בהשתגרות, היא הופכת לאירוע אקראי שיכול לעזור או להפריע לך במסע
+. Controlled teleportation allows you to select on the map your destination location.; שליטה בהשתגרות מאפשרת לך לבחור את היעד שלך על המפה
+. However, each teleportation will cost you nutrition so use it wisely.; עם זאת, כל השתגרות עולה בתזונה ולכן כדאי להשתמש בה בחוכמה
+. To access teleport-at-will you need to long press/right click on your character.; להשתגרות רצונית, עליך ללחוץ לחיצה ארוכה/קליק ימני על הדמות שלך
 
-# Dual wielding;
-. Dual wielding allows the character to hold two single handed weapons.;
-. This allows for two attacks instead of one but the chance of hitting is reduced.;
-. If you are skilled then it is only a -2 to attack on the offhand.;
-. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.;
+# Dual wielding; נשק כפול
+. Dual wielding allows the character to hold two single handed weapons.; מיומנות נשק כפול מאפשרת לדמות שלך להחזיק שני נשקים, אחד בכל יד
+. This allows for two attacks instead of one but the chance of hitting is reduced.; כך היא יכולה לתקוף פעמיים בתור אחד, אבל סיכוי הפגיעה קטן יותר
+. If you are skilled then it is only a -2 to attack on the offhand.; דמות מיומנת תיקנס רק ב-2 נקודות להתקפה ביד המשנית
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; דמות לא מיומנת תיקנס ב-2 נקודות להתקפה ביד הראשית וב-4 נקודות ביד המשנית
 
-# Crafting;
-. Items can be scrapped into their raw essence and base material on a workbench.;
-. Essence is the building block of creation and can be extracted from both mundane and magical items.;
-. New items can be crafted on a workbench using enough of the base material and essence.;
-. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).;
-. Materials are not transferable between workbenches.;
+# Crafting; יצירה
+. Items can be scrapped into their raw essence and base material on a workbench.; על שולחנות עבודה, ניתן לגרוט חפצים ולפרק אותם למהות הגולמית ולחומרי היסוד שלהם
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; המהות היא אבן הבניין של היצירה וניתן לחלץ אותה מחפצים רגילים וקסומים כאחד
+. New items can be crafted on a workbench using enough of the base material and essence.; עם מספיק חומרי יסוד ומהות ניתן ליצור חפצים חדשים על שולחן עבודה
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; שולחנות עבודה נוצרים עם שאריות חומרים (0 - 10 מהויות ושישה חומרי יסוד אקראיים 10 - 200)
+. Materials are not transferable between workbenches.; לא ניתן להעביר חומרים בין שולחנות עבודה
 /
-. The crafting skill influences how much material you gain when scrapping.;
-. That is, when unskilled you recover only 50% of the scrapped material.;
+. The crafting skill influences how much material you gain when scrapping.; מיומנות היצירה משפיעה על כמות החומר שמקבלים מגריטת חפצים
+. That is, when unskilled you recover only 50% of the scrapped material.; כלומר, ללא מיומנות, הדמות שלך תפיק רק 50% מהחומר הגרוט
 /
-` Unskilled  =  50%;
-` Proficient =  60%;
-` Specialist =  70%;
-` Expert     =  80%;
-` Master     =  90%;
-` Champion   = 100%;
+` Unskilled  =  50%; ללא מיומנות = 50%
+` Proficient =  60%; עם יכולת = 60%
+` Specialist =  70%; עם התמחות = 70%
+` Expert     =  80%; עם מומחיות = 80%
+` Master     =  90%; עם שליטה = 90%
+` Champion   = 100%; עם אליפות = 100%
 /
-. The crafting skill influences how much material you need when crafting.;
-. That is, when unskilled you need 150% of the required material to craft an item.;
+. The crafting skill influences how much material you need when crafting.; The crafting skill influences how much material you need when crafting.
+. That is, when unskilled you need 150% of the required material to craft an item.; That is, when unskilled you need 150% of the required material to craft an item.
 /
-` Unskilled  = 150%;
-` Proficient = 140%;
-` Specialist = 130%;
-` Expert     = 120%;
-` Master     = 110%;
-` Champion   = 100%;
+` Unskilled  = 150%; ללא מיומנות = 150%
+` Proficient = 140%; עם יכולת = 140%
+` Specialist = 130%; עם התמחות = 130%
+` Expert     = 120%; עם מומחיות = 120%
+` Master     = 110%; עם שליטה = 110%
+` Champion   = 100%; עם אליפות = 100%
 
-# Enchantment;
-. Weapons and armour have a modifier that can be changed with enchantment magic.;
-. A modifier of +0 is a normal, mundane item.;
-. Modifiers on armour apply to your defence score.;
-. Modifiers on weapons apply to your attack and damage scores.;
+# Enchantment; חיזוק קסום
+. Weapons and armour have a modifier that can be changed with enchantment magic.; לכלי נשק ושריונות יש מקדם, שאותו אפשר לשנות בקסם חיזוק
+. A modifier of +0 is a normal, mundane item.; לפריט רגיל ויומיומי יש מקדם 0
+. Modifiers on armour apply to your defence score.; מקדמים של שריונות משפיעים על יכולת ההגנה שלך
+. Modifiers on weapons apply to your attack and damage scores.; מקדמים של כלי נשק משפיעים על ההתקפה והנזק שלך
 /
-. The {grade} items are limited to between {Min} and {Max}.;
-. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.;
-. The {grade} items will be destroyed if you try to change a modifier beyond its limit.;
+. The {grade} items are limited to between {Min} and {Max}.; פריט {grade} מוגבל בין {Min} ל-{Max}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; פריט {grade} ניתן לחזק עד {Modifier} ומעבר לכך הוא יחזור לאפס
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; פריט {grade} יושמד אם הדמות שלך תנסה לשדרג אותו מעבר לגבול היכולת שלו
 /
-. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.;
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; ניתן גם לשדרג חפצים, למשל לחזק משרוקית פח ולהפוך אותה למשרוקית קסם
 
-# Punishments;
-. This severe curse can be gained by magical means or misconduct.;
-. There is a chance of being punished each time your karma dips below zero.;
-. Only one punishment can be active at one time.;
-. A punishment can be released with any remove curse magic.;
+# Punishments; עונשים
+. This severe curse can be gained by magical means or misconduct.; קללות קיצוניות שהדמות שלך עלולה לקבל באמצעים קסומים או על ידי התנהגות לא נאותה
+. There is a chance of being punished each time your karma dips below zero.; בכל פעם שהקארמה שלך יורדת מתחת לאפס יש סיכוי להיענש
+. Only one punishment can be active at one time.; רק עונש אחד יכול להיות פעיל בכל זמן נתון
+. A punishment can be released with any remove curse magic.; ניתן להשתחרר מעונש עם קסם הסרת קללה מכל סוג שהוא
 
-# Charming & taming;
-. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.;
-. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.;
-. The charisma bonus for you and the target entity also modifies this relative percentage.;
-. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.;
+# Charming & taming; הקסמה ואילוף
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; ההפרש בין הרמה שלך לרמת יישות המטרה משמש כאחוז להגדלת/הפחתת משך הנאמנות
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; לדוגמה, אם דמות ברמה 10 מצליחה להקסים ישות ברמה 20, הנאמנות תימשך רק חצי מזמן הרשום
+. The charisma bonus for you and the target entity also modifies this relative percentage.; גם הכריזמה שלך ושל ישות המטרה משפיעות על אחוז זה
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; לדוגמה, דמות ברמה 4 עם כריזמה 18 (+4) תקסים כאילו הייתה ברמה 8
 
-# Death;
-. There are seven mechanics for death:;
+# Death; מוות
+. There are seven mechanics for death:; יש שבע דרכים שונות למות:
 /
-* life points reaches zero;
-* any ability score reaches zero;
-* starvation;
-* death effect (eg. wand of death);
-* genocide;
-* incarceration (eg. turned into a statue);
-* decapitation (eg. vorpal attacks);
+* life points reaches zero; נקודות החיים מגיעות לאפס
+* any ability score reaches zero; הניקוד של יכולת כלשהי מגיע לאפס
+* starvation; מוות מרעב
+* death effect (eg. wand of death); אפקט מוות (לדוגמה שרביט מוות)
+* genocide; רצח עם
+* incarceration (eg. turned into a statue); כליאה של הגוף (למשל הפיכה לפסל)
+* decapitation (eg. vorpal attacks); עריפת ראש (למשל מתקפה סרפילית)
 
-# Revenants;
-. Upon your death there is a 50% chance of creating a revenant on the current level.;
-. When you go down stairs there is a 50% chance of encountering this revenant.;
-. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.;
-. They will be as tough as you were at full health and may be quite challenging at times.;
-. It is possible to die on a revenant level and your next character may have two revenants to deal with.;
-. Level 1 will never create a revenant.;
+# Revenants; רוחות נקם
+. Upon your death there is a 50% chance of creating a revenant on the current level.; יש 50% שבמותך תיווצר רוח נקם בקומה הנוכחית
+. When you go down stairs there is a 50% chance of encountering this revenant.; לדמות חדשה יש סיכוי של 50% להיתקל ברוח הנקם כאשר היא יורדת לקומה בה מתת
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; רוח הנקם היא גרסה מחודשת ועוינת של עצמך לשעבר, עדיין מצוידת בכל הנשקים והשריון שהיו לך
+. They will be as tough as you were at full health and may be quite challenging at times.; רוחות הנקם קשות, כמו שהדמות שלך הייתה במלוא הבריאות שלה, ויכולות להיות מאתגרות לפעמים
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; מוות בקומה שנמצאת בה רוח הנקם, עלול לגרום לכך שדמותך הבאה תצטרך להתמודד עם שתי רוחות
+. Level 1 will never create a revenant.; בקומה 1 לעולם לא תיווצר רוח נקם
 
-# Fame;
-. Fame is calculated by the following formula.;
+# Fame; תהילה
+. Fame is calculated by the following formula.; תהילה מחושבת על פי הנוסחה הבאה:
 /
-` = Maximum Depth x {Multiplier};
-` + Explored Maps x {Multiplier};
-` + Visited Locations x {Multiplier};
-` + Discovered Items x {Multiplier};
-` + Encountered Entities x {Multiplier};
-` + Possessed Artifacts x {Multiplier};
-` + Earned Experience (capped to {Cap});
-` + Development Level x {Multiplier};
-` + Practised Skills x {Multiplier};
-` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level);
-` + Increased Life x {Multiplier};
-` + Increased Mana x {Multiplier};
-` + Adjusted Attributes x {Multiplier};
-` + Acquired Talents x {Multiplier};
-` + Gained Resistances x {Multiplier};
-` + Total Inventory Worth (in gold);
+` = Maximum Depth x {Multiplier}; = עומק מקסימלי x {Multiplier}
+` + Explored Maps x {Multiplier}; + מפות שחקרת x {Multiplier}
+` + Visited Locations x {Multiplier}; + מקומות שביקרת בהם x {Multiplier}
+` + Discovered Items x {Multiplier}; + חפצים שגילית x {Multiplier}
+` + Encountered Entities x {Multiplier}; + ישויות שפגשת x {Multiplier}
+` + Possessed Artifacts x {Multiplier}; + חפצי כוח ברשותך x {Multiplier}
+` + Earned Experience (capped to {Cap}); + ניסיון שצברת (מוגבל ל{Cap})
+` + Development Level x {Multiplier}; + רמת ההתפתחות שלך x {Multiplier}
+` + Practised Skills x {Multiplier}; + מיומנויות x {Multiplier}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); + קסמים שלמדת x {Multiplier} (מכפלת נקודות הקסם הבסיסיות הנדרשות לקסם עם רמת המיומנות)
+` + Increased Life x {Multiplier}; + תוספת נקודות חיים x {Multiplier}
+` + Increased Mana x {Multiplier}; + תוספת נקודות קסם x {Multiplier}
+` + Adjusted Attributes x {Multiplier}; + יכולות ששיפרת x {Multiplier}
+` + Acquired Talents x {Multiplier}; + כישורים שרכשת x {Multiplier}
+` + Gained Resistances x {Multiplier}; + עמידויות שרכשת x {Multiplier}
+` + Total Inventory Worth (in gold); + סך שווי המלאי (בזהב)
 /
-. The total inventory worth is capped so cannot exceed the rest of the score.;
+. The total inventory worth is capped so cannot exceed the rest of the score.; סך שווי המלאי מוגבל כך שלא יוכל להיות יותר מסך כל שאר הניקוד
 
-# Resurrect and continue;
-. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.;
-. You may learn that your character was not viable and death comes quick again.;
-. You can resurrect infinitely but all your achieved fame will be reset to zero.;
-. Fame achieved subsequent to your resurrection will contribute to your score.;
-. This is similar to the 'explorer mode' from the original Nethack.;
+# Resurrect and continue; המשך המשחק לאחר הקמה לתחייה
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; זאת אפשרות מועילה כאשר הדמות שלך מתה במוות שנראה לא הוגן או חסר מזל
+. You may learn that your character was not viable and death comes quick again.; ייתכן שהדמות שלך לא נועדה לשרוד והמוות יבוא במהירות שוב
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; ניתן להחיות ללא הגבלה אך כל התהילה שהשגת תתאפס
+. Fame achieved subsequent to your resurrection will contribute to your score.; רק התהילה שתושג לאחר תחיית הדמות שלך תיספר
+. This is similar to the 'explorer mode' from the original Nethack.; זה דומה ל'מצב חקירה' במשחק המקורי, נטהאק
 
-# Multiplayer;
-. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;
-. This means the game is executed on the server and the user interface is projected to each of the clients.;
-. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.;
-. This technology only works well with low latency (less than 30ms ping should be playable).;
+# Multiplayer; משחק מרובה שחקנים
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; משחק מרובה שחקנים מבוסס על טכנולוגיית 'גרפיקל טלנט' מפלטפורמת אינבנשן
+. This means the game is executed on the server and the user interface is projected to each of the clients.; המשמעות היא שהמשחק נערך על השרת ומוצג אצל כל אחת מנקודות הקצה
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; ניתן לשחק דרך ויי-פיי או רשת מקומית, או באמצעות והאינטרנט כי התקשורת מבוססת על פרוטוקול אינטרנט
+. This technology only works well with low latency (less than 30ms ping should be playable).; הטכנולוגיה עובדת היטב רק עם זמן השהיה נמוך (פינג עד 30 מילישניות)
 /
-. One player needs to be the server and HOST the game.;
-. All other players are clients and JOIN the game.;
+. One player needs to be the server and HOST the game.; שחקן או שחקנית אחת צריכים לשמש כשרת ולארח את המשחק
+. All other players are clients and JOIN the game.; כל שאר השחקנים מצטרפים למשחק כנקודות קצה
 /
-. The server player will need to look up their IP address in device network settings and share with the client players.;
-. Firewall settings and port forwarding may be required when playing over the internet.;
+. The server player will need to look up their IP address in device network settings and share with the client players.; שחקן או שחקנית השרת צריכים למצוא את כתובת השרת בהגדרות הרשת שלהם ולשתף אותה עם שאר השחקנים
+. Firewall settings and port forwarding may be required when playing over the internet.; ייתכן שיהיה צורך בשינוי הגדרות חומת אש ותיעול שערים כאשר משחקים דרך האינטרנט
 /
-. The HOST can use 3717 and tap CONNECT.;
-. The other players JOIN by typing in the host's IP Address and the port.;
-. For example: 192.168.1.5:3717;
+. The HOST can use 3717 and tap CONNECT.; שחקן או שחקנית השרת יכולים להשתמש בפורט 3717 וללחוץ על התחברות
+. The other players JOIN by typing in the host's IP Address and the port.; השחקנים האחרים מצטרפים על ידי הקלדה של כתובת השרת המארח והפורט
+. For example: 192.168.1.5:3717; לדוגמה: 192.168.1.5:3717
 
-# Translations;
-. The language translations have been contributed by a number of dedicated players.;
-. Completing a translation is a significant achievement and one that requires ongoing maintenance.;
-. The percentage on the language selection indicates the current completeness of the translation.;
-. You can also browse the individual translations in the Diagnostics screen.;
-. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.;
+# Translations; תרגומים
+. The language translations have been contributed by a number of dedicated players.; התרגומים לשפות השונות נתרמו על ידי מספר שחקנים מסורים
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; השלמת תרגום היא הישג משמעותי שדורש תחזוקה מתמשכת
+. The percentage on the language selection indicates the current completeness of the translation.; האחוז ליד בחירת השפה מציין את שלמות התרגום הנוכחי
+. You can also browse the individual translations in the Diagnostics screen.; ניתן לעיין בתרגומים במסך הדיאגנוסטיקה
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; נא ליצור קשר עם המפתח אם ברצונך לתרום תרגום חדש, לתחזק תרגום קיים או אפילו להגיש תיקון
 
-# Master mode;
-. This is a cheat mode for more quickly learning the secrets of Pathos.;
-. Any adventures in this mode will not be tracked in the hall of fame.;
+# Master mode; מצב מאסטר
+. This is a cheat mode for more quickly learning the secrets of Pathos.; זהו מצב צ'יטים ללמידה מהירה יותר של כל הסודות של פאתוס
+. Any adventures in this mode will not be tracked in the hall of fame.; כל ההרפתקאות במצב הזה לא מזכות בכניסה להיכל התהילה
 /
-- ` | open master console (more commands);
-- ctrl + shift + D | darkness in this zone;
-- shift + E | spawn and be swallowed by a random engulfer;
-- shift + F | all adjacent enemies are charmed;
-- shift + G | gain 1000 gold;
-- shift + I | identify all items on the floor;
-- shift + W | jump at will;
-- shift + D | light this zone;
-- shift + M | reveal the entire map;
-- ctrl + shift + M | reveal the map for all levels;
-- ctrl + shift + O | warp the dungeon (the endgame map transforms);
-- shift + P | polymorph into any entity;
-- shift + T | teleport to a target zone;
-- shift + Z | learn all spells;
-- ! | toggle auto-use mode (step on a square and you will use all items);
-- < | ascend to the previous dungeon level (even when not on a staircase);
-- > | descend to the next dungeon level (even when not on a staircase);
-- F5 | refresh the screen;
-- F9 | quick load;
+- ` | open master console (more commands); ` | פתיחת קונסולת מאסטר (יותר פקודות)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | החשכת האזור
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | הולדת מפלצת עוטפת אקראית והיבלעות בתוכה
+- shift + F | all adjacent enemies are charmed; shift + F | הקסמה של כל האוייבים בסביבה
+- shift + G | gain 1000 gold; shift + G | קבלת 1000 מטבעות זהב
+- shift + I | identify all items on the floor; shift + I | זיהוי כל החפצים בקומה
+- shift + W | jump at will; shift + W | קפיצה רצונית
+- shift + D | light this zone; shift + D | הארת האזור
+- shift + M | reveal the entire map; shift + M | גילוי של כל המפה
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | גילוי המפה בכל הקומות
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | שינוי המבוך (המפה הסופית משתנה)
+- shift + P | polymorph into any entity; shift + P | שינוי צורה לכל יישות שהיא
+- shift + T | teleport to a target zone; shift + T | השתגרות לאזור המטרה
+- shift + Z | learn all spells; shift + Z | לימוד כל לחשי הקסם
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | הפעלת מצב שימוש אוטומטי (דריכה על משבצת תגרום לשימוש בכל החפצים שעליה)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | עלייה לקומה הקודמת של המבוך (גם אם אין מדרגות)
+- > | descend to the next dungeon level (even when not on a staircase); > | ירידה לקומה הבאה של המבוך (גם אם אין מדרגות)
+- F5 | refresh the screen; F5 | רפרוש של המסך
+- F9 | quick load; F9 | טעינה מהירה
 /
-. There are additional manipulations built into the character panel and contextual help.;
+. There are additional manipulations built into the character panel and contextual help.; פעולות נוספות משולבות בדף הדמות ובעזרה תוך כדי המשחק

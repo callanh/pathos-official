@@ -85,6 +85,7 @@ namespace Pathos
     public const string Deepwilds = "Deepwilds";
     public const string Deepruins = "Deepruins";
     public const string Deephall = "Deephall";
+    public const string Bigfoot = "Bigfoot";
 
     public const string attic = "attic";
     public const string caves = "caves";
