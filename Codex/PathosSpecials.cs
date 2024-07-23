@@ -61,7 +61,7 @@ namespace Pathos
 
       this.colossus = AddSpecial("colossus", S =>
       {
-        S.Description = "Being unusually tall and heavy for your kind, you move a bit slower but are more resilient.";
+        S.Description = "Being unusually tall and heavy, they move a bit slower but are more resilient.";
         S.Glyph = Glyphs.colossus;
 
         S.LifeAdvancement.Set(Dice.Zero + 2);
@@ -81,7 +81,7 @@ namespace Pathos
 
       this.glass = AddSpecial("glass", S =>
       {
-        S.Description = "Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.";
+        S.Description = "Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.";
         S.Glyph = Glyphs.glass_special;
 
         S.Diet = Diets.geophagy;
@@ -110,7 +110,7 @@ namespace Pathos
 
       this.midget = AddSpecial("midget", S =>
       {
-        S.Description = "Being unusually short and slight for your kind, you are more nimble but are not as effective in combat.";
+        S.Description = "Being unusually short and slight, they are more nimble but not as effective in combat.";
         S.Glyph = Glyphs.midget;
 
         S.LifeAdvancement.Set(Dice.Zero - 1);
@@ -155,7 +155,7 @@ namespace Pathos
 
       this.quantum = AddSpecial("quantum", S =>
       {
-        S.Description = "Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.";
+        S.Description = "Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.";
         S.Glyph = Glyphs.quantum_special;
 
         S.Startup.SetTalent(Properties.teleportation);
@@ -163,7 +163,7 @@ namespace Pathos
 
       this.scholar = AddSpecial("scholar", S =>
       {
-        S.Description = "Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.";
+        S.Description = "Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.";
         S.Glyph = Glyphs.scholar;
 
         S.LifeAdvancement.Set(Dice.Zero - 1); // -1 per level.

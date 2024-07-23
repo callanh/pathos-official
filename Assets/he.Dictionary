@@ -88,7 +88,7 @@ AppearanceName,clay ring,טבעת חימר
 AppearanceName,clear potion,שיקוי שקוף
 AppearanceName,cloth book,ספר מבד
 AppearanceName,cloudy potion,שיקוי מעונן
-AppearanceName,coarse mantelet,אבנט מחוספס
+AppearanceName,coarse mantelet,אצטלה גסה
 AppearanceName,colourful book,ספר צבעוני
 AppearanceName,combat boots,מגפי קרב
 AppearanceName,compact gun,אקדח
@@ -351,7 +351,7 @@ AppearanceName,stylish book,ספר אופנתי
 AppearanceName,swirly potion,שיקוי מסתחרר
 AppearanceName,tan book,ספר עור מעובד
 AppearanceName,tattered book,ספר מרופט
-AppearanceName,tattered cape,אדרת מרופטת
+AppearanceName,tattered cape,ברדס מרופט
 AppearanceName,thick book,ספר עבה
 AppearanceName,thin book,ספר דק
 AppearanceName,thin cake,עוגה דקה
@@ -1001,7 +1001,7 @@ EffectProperty,truth,אמת
 EffectProperty,unafflicts,ביטול צרה
 EffectProperty,unpolymorphs,ביטול שינוי צורה
 EffectProperty,unpunishes,ביטול עונש
-EffectProperty,whole stack,כל העסק
+EffectProperty,whole stack,כל המלאי
 EffectType,afflict,צרה
 EffectType,alert,ערנות
 EffectType,amnesia,שכחה
@@ -1119,7 +1119,7 @@ ElementDescription,Complete resistance to life and mana draining effects.,עמי
 ElementDescription,Complete resistance to petrification effects.,עמידות מוחלטת להתאבנות.
 ElementDescription,Complete resistance to poison damage.,עמידות מוחלטת לנזקי רעל.
 ElementDescription,Protects you against pure magical effects.,הגנה נגד השפעות קסם טהור.
-ElementDescription,You resist attempts to render you into a magical slumber.,התנגדות לניסיונות להרדים אותך בשינה קסומה.
+ElementDescription,You resist attempts to render you into a magical slumber.,עמידות לניסיונות להרדים אותך בשינה קסומה.
 ElementName,acid,חומצה
 ElementName,cold,קור
 ElementName,digging,חפירה
@@ -1176,18 +1176,18 @@ EntityName,acid blob,גוש חומצה
 EntityName,acid worm,תולעת חומצה
 EntityName,acolyte,שרת
 EntityName,adamantine golem,גולם אדמנטיט
-EntityName,adult black dragon,דרקון שחור מבוגר
-EntityName,adult blue dragon,דרקונית כחולה מבוגרת
-EntityName,adult deep dragon,דרקון מעמקים מבוגר
-EntityName,adult gold dragon,דרקונית זהובה מבוגרת
-EntityName,adult green dragon,דרקון ירוק מבוגר
-EntityName,adult orange dragon,דרקונית כתומה מבוגרת
-EntityName,adult raven,עורב מבוגר
-EntityName,adult red dragon,דרקון אדום מבוגר
-EntityName,adult shimmering dragon,דרקונית מנצנצת מבוגרת
-EntityName,adult silver dragon,דרקון כסף מבוגר
-EntityName,adult white dragon,דרקונית לבנה מבוגרת
-EntityName,adult yellow dragon,דרקון צהוב מבוגר
+EntityName,adult black dragon,דרקון שחור בוגר
+EntityName,adult blue dragon,דרקונית כחולה בוגרת
+EntityName,adult deep dragon,דרקון מעמקים בוגר
+EntityName,adult gold dragon,דרקונית זהובה בוגרת
+EntityName,adult green dragon,דרקון ירוק בוגר
+EntityName,adult orange dragon,דרקונית כתומה בוגרת
+EntityName,adult raven,עורב בוגר
+EntityName,adult red dragon,דרקון אדום בוגר
+EntityName,adult shimmering dragon,דרקונית מנצנצת בוגרת
+EntityName,adult silver dragon,דרקון כסף בוגר
+EntityName,adult white dragon,דרקונית לבנה בוגרת
+EntityName,adult yellow dragon,דרקון צהוב בוגר
 EntityName,air elemental,יסודן אוויר
 EntityName,Aleax,אליקס
 EntityName,ancient black dragon,דרקונית שחורה עתיקה
@@ -1357,7 +1357,7 @@ EntityName,earth maker,יוצר אדמה
 EntityName,earth seeker,שוחר אדמה
 EntityName,earth sphere,כדור אדמה
 EntityName,echo,הד
-EntityName,efreeti,אפריטי
+EntityName,efreeti,עפריתי
 EntityName,electric eel,צלופח חשמלי
 EntityName,elephant,פילה
 EntityName,elf,אלף
@@ -1465,7 +1465,7 @@ EntityName,green mould,עובש ירוק
 EntityName,green slime,רפש ירוק
 EntityName,gremlin,גרמלין
 EntityName,grey elf,אלף אפור
-EntityName,grey ooze,נוזל אפור
+EntityName,grey ooze,עיסה אפורה
 EntityName,grey unicorn,חד קרן אפור
 EntityName,grimlock,גרימלוק
 EntityName,guard,שומר
@@ -1594,7 +1594,7 @@ EntityName,master mind flayer,מאסטר מצליף מוחות
 EntityName,mastodon,מסטודון
 EntityName,Maugneshaagar,מוגנשגר
 EntityName,medusa,מדוזה
-EntityName,mellified man,איש חנוט בדבש
+EntityName,mellified man,חנוט בדבש
 EntityName,merchant,סוחר
 EntityName,Metamorphius,מטמורפיאוס
 EntityName,migo drone,מיגו בטלן
@@ -1733,7 +1733,7 @@ EntityName,shock binder,עוקד חשמל
 EntityName,shock maker,יוצר חשמל
 EntityName,shock seeker,שוחר חשמל
 EntityName,shock sphere,כדור חשמל
-EntityName,shoggoth,’שוגות
+EntityName,shoggoth,שוגות'
 EntityName,shrieker,צווחן
 EntityName,Sir Lorimar,סר לורימר
 EntityName,skeleton,שלד
@@ -1831,7 +1831,7 @@ EntityName,wolf,זאב
 EntityName,wolfwere,זאב-אדם
 EntityName,wolverine,גרגרן
 EntityName,wood golem,גולם עץ
-EntityName,wood nymph,נימפת עץ
+EntityName,wood nymph,נימפת יער
 EntityName,woodchuck,מרמיטה
 EntityName,woodland elf,אלף יערות
 EntityName,wraith,רפא
@@ -1840,7 +1840,7 @@ EntityName,wyvern,וייברן
 EntityName,xan,זאן
 EntityName,xorn,זורן
 EntityName,Yeenoghu,יינוגו
-EntityName,yellow jacket,צרעה גרמנית
+EntityName,yellow jacket,צרעה צהובה
 EntityName,yellow jelly,ג’לי צהוב
 EntityName,yellow light,אור צהוב
 EntityName,yellow mould,עובש צהוב
@@ -1862,8 +1862,8 @@ EntityName,zruty,זרוטי
 EquipAction,employ,שימוש
 EquipAction,purse,לארנק
 EquipAction,ready,בהיכון
-EquipAction,wear,ללבוש
-EquipAction,wield,לאחוז
+EquipAction,wear,בלבישה
+EquipAction,wield,באחיזה
 EquipSlot,amulet,קמע
 EquipSlot,barding,שריון לסוס
 EquipSlot,boots,נעליים
@@ -1931,11 +1931,11 @@ FormatText,{Chance} per room,{Chance} לחדר
 FormatText,{Chance} react to {ElementName},{Chance} תגובה ל{ElementName}
 FormatText,{CharacterName} {EndType},{CharacterName} {EndType}
 FormatText,{CharacterName} {EndType} by {EndCause},{CharacterName} {EndType} על ידי {EndCause}
-FormatText,{CharacterName} {MotionPastName} {AssetName},{AssetName} {MotionPastName} של {CharacterName}
-FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{AssetName} של {MotionPastName} {CharacterName} אבל שום דבר לא קרה
-FormatText,{CharacterName} {MotionPastName} {FixtureName},{FixtureName} {MotionPastName} של {CharacterName}
-FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{MotionPastName} של {CharacterName} ב{Use:AssetName} עם {With:AssetName}
-FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{MotionPastName} של {CharacterName} ב{Use:FixtureName} עם {With:AssetName}
+FormatText,{CharacterName} {MotionPastName} {AssetName},{AssetName} {MotionPastName} על ידי {CharacterName}
+FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{AssetName} על ידי {MotionPastName} {CharacterName} אבל שום דבר לא קרה
+FormatText,{CharacterName} {MotionPastName} {FixtureName},{FixtureName} {MotionPastName} על ידי {CharacterName}
+FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{With:AssetName} {MotionPastName} על ידי {CharacterName} ב{Use:AssetName}
+FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{With:AssetName} {MotionPastName} על ידי {CharacterName} ב{Use:FixtureName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{TraversalPastName} של {CharacterName} אל {MapName}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{MotionPastName} ב{AssetName} במיומנות על ידי {CharacterName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{MotionPastName} ב{Use:AssetName} עם {With:AssetName} במיומנות על ידי {CharacterName}
@@ -1979,7 +1979,7 @@ FormatText,{CharacterName} had an out of body experience,{CharacterName} חוו�
 FormatText,{CharacterName} has {Percent}% {ElementName} resistance,ל{CharacterName} יש %{Percent} עמידות נגד {ElementName}
 FormatText,{CharacterName} has {PropertyName},ל{CharacterName} יש {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,ל{CharacterName} יש כבר את מלוא פוטנציאל הקארמה {GenderHis}
-FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},ירידת {ModifierNumber} ב-{AttributeName} של {CharacterName}
+FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},ירידת {ModifierNumber} ב{AttributeName} של {CharacterName}
 FormatText,{CharacterName} has decreased life by {ModifierNumber},ירידה של {ModifierNumber} בנקודות החיים של {CharacterName}
 FormatText,{CharacterName} has decreased mana by {ModifierNumber},ירידה של {ModifierNumber} בנקודות הקסם של {CharacterName}
 FormatText,{CharacterName} has forgotten something,משהו נשכח מ{CharacterName}
@@ -2079,7 +2079,7 @@ FormatText,{ServiceName} which direction?,באיזה כיוון {ServiceName}?
 FormatText,{ServiceName} which item?,{ServiceName} איזה חפץ?
 FormatText,{SizeName} {MaterialName} {AnatomyFlags},{AnatomyFlags} {MaterialName} {SizeName}
 FormatText,{SkillName} [{QualificationCode}],[{QualificationCode}] {SkillName}
-FormatText,{Source:AssetName} was converted to {Target:AssetName},{Target:AssetName} עכשיו {Source:AssetName}
+FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetName} עכשיו {Target:AssetName}
 FormatText,{StrikeName} digestion,בליעת {StrikeName}
 FormatText,{StrikeName} strike,מכת {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},גניבה של {AssetName} מ{Victim:CharacterName} על ידי {Thief:CharacterName}
@@ -2442,7 +2442,7 @@ ItemName,blue glass bauble,זכוכית כחולה וזולה
 ItemName,book of acid stream,ספר כשפים זרם חומצה
 ItemName,book of animate dead,ספר כשפים הנפשת מתים
 ItemName,book of animate object,ספר כשפים הנפשת חפץ
-ItemName,book of bind undead,ספר כשפים קשירת אל-מתים
+ItemName,book of bind undead,ספר כשפים כבילת אל-מתים
 ItemName,book of blank paper,ספר כשפים ריק
 ItemName,book of blinking,ספר כשפים בזיקה
 ItemName,book of cancellation,ספר כשפים ביטול
@@ -2454,8 +2454,8 @@ ItemName,book of create familiar,ספר כשפים יצירת יציר-סוד
 ItemName,book of crushing sphere,ספר כשפים כדור מוחץ
 ItemName,book of curing,ספר כשפים הבראה
 ItemName,book of darkness,ספר כשפים חושך
-ItemName,book of deflection,ספר כשפים חמיקה
-ItemName,book of detect food,ספר כשפים איתור אוכל
+ItemName,book of deflection,ספר כשפים הדיפה
+ItemName,book of detect food,ספר כשפים איתור מזון
 ItemName,book of detect monsters,ספר כשפים איתור מפלצות
 ItemName,book of detect treasure,ספר כשפים איתור אוצרות
 ItemName,book of detect unseen,ספר כשפים איתור בלתי נראים
@@ -2467,21 +2467,21 @@ ItemName,book of fear,ספר כשפים פחד
 ItemName,book of finger of death,ספר כשפים אצבע המוות
 ItemName,book of fireball,ספר כשפים כדור אש
 ItemName,book of flaming sphere,ספר כשפים כדור בוער
-ItemName,book of force bolt,ספר כשפים חזיז כוח
+ItemName,book of force bolt,ספר כשפים קליע כוח
 ItemName,book of freezing sphere,ספר כשפים כדור מקפיא
 ItemName,book of full healing,ספר כשפים רפואה שלמה
-ItemName,book of haste,ספר כשפים מיהור
+ItemName,book of haste,ספר כשפים חיפזון
 ItemName,book of healing,ספר כשפים ריפוי
 ItemName,book of ice storm,ספר כשפים סופת קרח
 ItemName,book of identify,ספר כשפים זיהוי
-ItemName,book of invisibility,ספר כשפים בלתי-נראות
+ItemName,book of invisibility,ספר כשפים אי נראות
 ItemName,book of jumping,ספר כשפים קפיצה
-ItemName,book of knock,ספר כשפים דפיקה
+ItemName,book of knock,ספר כשפים נקישה
 ItemName,book of levitation,ספר כשפים ריחוף
 ItemName,book of light,ספר כשפים אור
 ItemName,book of lightning bolt,ספר כשפים חזיז ברק
 ItemName,book of living wall,ספר כשפים קיר חי
-ItemName,book of magic mapping,ספר כשפים מיפוי קסם
+ItemName,book of magic mapping,ספר כשפים מיפוי קסום
 ItemName,book of magic missile,ספר כשפים טיל קסם
 ItemName,book of phasing,ספר כשפים שינוי פאזה
 ItemName,book of poison blast,ספר כשפים מטח רעל
@@ -2524,10 +2524,10 @@ ItemName,Chasm Edge,להב תהום
 ItemName,cheese,גבינה
 ItemName,chest,תיבה
 ItemName,chrysoberyl,כריזובריל
-ItemName,citrine,צהוב-לימוני
+ItemName,citrine,סיטרין
 ItemName,Cleaver,מאכלת
 ItemName,cloak of blinking,גלימת בזיקה
-ItemName,cloak of deflection,גלימת הסטה
+ItemName,cloak of deflection,גלימת הדיפה
 ItemName,cloak of displacement,גלימת התעתקות
 ItemName,cloak of invisibility,גלימת היעלמות
 ItemName,cloak of magic resistance,גלימת הגנה מקסם
@@ -2782,7 +2782,7 @@ ItemName,potion of gain level,שיקוי תוספת רמה
 ItemName,potion of hallucination,שיקוי הזיות
 ItemName,potion of healing,שיקוי ריפוי
 ItemName,potion of ink,שיקוי דיו
-ItemName,potion of invisibility,שיקוי בלתי נראות
+ItemName,potion of invisibility,שיקוי אי נראות
 ItemName,potion of levitation,שיקוי ריחוף
 ItemName,potion of monster detection,שיקוי איתור מפלצות
 ItemName,potion of object detection,שיקוי איתור חפצים
@@ -2796,7 +2796,7 @@ ItemName,potion of sickness,שיקוי מחלה
 ItemName,potion of sleeping,שיקוי שינה
 ItemName,potion of speed,שיקוי מהירות
 ItemName,potion of water,שיקוי מים
-ItemName,proof earrings,עגילי ראיות
+ItemName,proof earrings,עגילי הערכה
 ItemName,Prudentia,פרודנטיה
 ItemName,quarterstaff,מוט עץ
 ItemName,ranseur,קלשון חד-חוד
@@ -2819,7 +2819,7 @@ ItemName,ring of free action,טבעת פעולה חופשית
 ItemName,ring of hunger,טבעת רעב
 ItemName,ring of impact,טבעת השפעה
 ItemName,ring of intelligence,טבעת תבונה
-ItemName,ring of invisibility,טבעת בלתי נראות
+ItemName,ring of invisibility,טבעת אי נראות
 ItemName,ring of levitation,טבעת ריחוף
 ItemName,ring of naught,טבעת כלום
 ItemName,ring of poison resistance,טבעת עמידות לרעל
@@ -2971,14 +2971,14 @@ ItemName,wand of extra healing,שרביט ריפוי חזק
 ItemName,wand of fear,שרביט פחד
 ItemName,wand of fire,שרביט אש
 ItemName,wand of fireball,שרביט כדור אש
-ItemName,wand of haste,שרביט זריזות
+ItemName,wand of haste,שרביט חיפזון
 ItemName,wand of healing,שרביט ריפוי
 ItemName,wand of iceball,שרביט כדור קרח
 ItemName,wand of light,שרביט אור
 ItemName,wand of lightning,שרביט ברק
 ItemName,wand of locking,שרביט נעילה
 ItemName,wand of magic missile,שרביט טיל קסמים
-ItemName,wand of make invisible,שרביט בלתי נראות
+ItemName,wand of make invisible,שרביט אי נראות
 ItemName,wand of nothing,שרביט של כלום
 ItemName,wand of opening,שרביט פתיחה
 ItemName,wand of phase,שרביט פאזה
@@ -3114,7 +3114,7 @@ KindName,zombie,זומבי או זומבית
 LiteralText,!MASTER MODE!,!מצב מאסטר!
 LiteralText,(2d6 instead of 2-12),(שתי קוביות של 6 במקום 2-12)
 LiteralText,(game information status text),(טקסט מידע על המשחק)
-LiteralText,(not eligible for hall of fame),(לא הצלחת להיכנס להיכל התהילה)
+LiteralText,(not eligible for hall of fame),(מונע כניסה להיכל התהילה)
 LiteralText,(recommended for AMOLED screens),(מומלץ למסכי אמולד)
 LiteralText,(SUPPRESSED),(מוסתר)
 LiteralText,[MASTER],[מאסטר]
@@ -3189,7 +3189,7 @@ LiteralText,broken,במצב שבור
 LiteralText,BROKEN,במצב שבור
 LiteralText,burst rate,קצב ירייה
 LiteralText,BUY,קנייה
-LiteralText,BUY ALL,לקנות את הכל
+LiteralText,BUY ALL,לקנות הכל
 LiteralText,CANCEL,ביטול
 LiteralText,cancellation,ביטול
 LiteralText,CANCELLED,בוטל
@@ -3298,11 +3298,11 @@ LiteralText,digging,לחפור
 LiteralText,disable ambient sounds,ביטול צלילי רקע
 LiteralText,Disable auto save on transition,ביטול שמירה אוטומטית במעבר
 LiteralText,Disable button tap sounds,ביטול צלילי לחצנים
-LiteralText,Disable conclusion boom,ביטול בום סיום
+LiteralText,Disable conclusion boom,ביטול צליל סיום
 LiteralText,Disable continue button,ביטול לחצן המשך
 LiteralText,disable haptic feedback,ביטול רטט
 LiteralText,Disable idle animations,ביטול אנימציה במנוחה
-LiteralText,Disable introduction boom,ביטול בום התחלה
+LiteralText,Disable introduction boom,ביטול צליל התחלה
 LiteralText,Disable mask animations,ביטול שכבות אנימציה
 LiteralText,Disable online services,ביטול שירותי אונליין
 LiteralText,Disable pitch shifting,ביטול שינוי גובה הצליל
@@ -3349,7 +3349,7 @@ LiteralText,EQUIP,להצטייד
 LiteralText,ESCAPE,לברוח
 LiteralText,escape traps,לחמוק ממלכודות
 LiteralText,escape with,לברוח עם
-LiteralText,escaped,ברחת
+LiteralText,escaped,אחרי בריחה
 LiteralText,ESSENCE,מהות
 LiteralText,evolution,התפתחות
 LiteralText,Examine which object?,איזה חפץ לבחון?
@@ -3581,7 +3581,7 @@ LiteralText,PORTALS,מעברים
 LiteralText,porter,מנשא
 LiteralText,PRAY,להתפלל
 LiteralText,preservation,שימור
-LiteralText,prevent revenant levels,הימנעות מרוחות נקם של עצמך
+LiteralText,prevent revenant levels,להימנע מרוחות נקם של עצמך
 LiteralText,prisoner,במעצר
 LiteralText,probability,הסתברות
 LiteralText,PROMOTE,קידום
@@ -3592,7 +3592,7 @@ LiteralText,PUNISHMENTS,עונשים
 LiteralText,QUANTITY,כמות
 LiteralText,QUICK LOAD,טעינה מהירה
 LiteralText,QUICK SAVE,שמירה מהירה
-LiteralText,quit,לצאת
+LiteralText,quit,אחרי יציאה
 LiteralText,QUIT,לצאת
 LiteralText,R//replica symbol,ח
 LiteralText,race,גזע
@@ -3754,7 +3754,7 @@ LiteralText,there is nothing to trade with this merchant,אין לך מה למכ
 LiteralText,this merchant has no stock to trade,אין מלאי למכירה
 LiteralText,This name is used to record your achievements in the Hall of Fame.,השם הזה משמש כדי לשמור את ההישגים שלך בהיכל התהילה.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,ניתן לשלוח את הגרעין הזה לחברים ולאתגר זה את זה באותו מבוך.
-LiteralText,threw,הושלך
+LiteralText,threw,אחרי השלכה
 LiteralText,THROW,להשליך
 LiteralText,tin,פחית
 LiteralText,To complete this game you need to escape the dungeon on the first level.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך היציאה בקומה הראשונה.
@@ -4153,7 +4153,7 @@ PropertyDescription,"Your mind is protected against deception, trickery and fals
 PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"השרירים שלך מכווצים ללא יכולת תנועה, ואין לך יכולת לזוז או להתגונן."
 PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,התפיסה והמודעות שלך מוגברות ומאפשרות לך לגלות בקלות דלתות סודיות ומלכודות.
 PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,המיקום שלך לא ברור ובקלות רבה מתאפשר לך להיעלם ולהופיע שוב.
-PropertyName,aggravation,רוגז
+PropertyName,aggravation,הרגזה
 PropertyName,appraisal,הערכה
 PropertyName,beatitude,ניחוש
 PropertyName,berserking,השתוללות
@@ -4166,9 +4166,9 @@ PropertyName,conflict,התנגשות
 PropertyName,confusion,בלבול
 PropertyName,dark vision,ראייה בחושך
 PropertyName,deafness,חירשות
-PropertyName,deflection,הסטה
+PropertyName,deflection,הדיפה
 PropertyName,displacement,התעתקות
-PropertyName,fainting,התעלפות
+PropertyName,fainting,עילפון
 PropertyName,fear,פחד
 PropertyName,flight,תעופה
 PropertyName,free action,תנועה חופשית
@@ -4176,7 +4176,7 @@ PropertyName,fumbling,מעידה
 PropertyName,hallucination,הזיות
 PropertyName,hunger,רעב
 PropertyName,inebriation,שיכרות
-PropertyName,invisibility,בלתי נראות
+PropertyName,invisibility,אי נראות
 PropertyName,jumping,קפיצה
 PropertyName,levitation,ריחוף
 PropertyName,life regeneration,חידוש חיים
@@ -4408,7 +4408,7 @@ ServiceDescription,refresh the shop with new items for sale.,חידוש החנו
 ServiceDescription,remove a curse from one item in your inventory.,הסרת קללה מאחד הפריטים שלך.
 ServiceName,curse removal,הסרת קללה
 ServiceName,identification,זיהוי
-ServiceName,magic mapping,מיפוי קסמים
+ServiceName,magic mapping,מיפוי קסום
 ServiceName,restock shop,חידוש מלאי
 ServiceName,trap detection,איתור מלכודות
 ShopName,antique weapons outlet,שוק הנשקים העתיקים
@@ -4419,7 +4419,7 @@ ShopName,hardware store,חנות לכלי בית
 ShopName,jewellers,דוכן התכשיטים
 ShopName,lighting store,מחסני תאורה
 ShopName,liquor emporium,היכל המשקאות
-ShopName,quality apparel and accessories,ביגוד ואביזרי איכות
+ShopName,quality apparel and accessories,אביזרי איכות
 ShopName,rare books,ספרים נדירים
 ShopName,second-hand stationery store,כלי כתיבה משומשים
 ShopName,used armour dealership,סוחר שריונות משומשים
@@ -4526,7 +4526,7 @@ SonicName,explosion,פיצוץ
 SonicName,fizzle,תסיסה
 SonicName,flash,הבזק
 SonicName,flute,חליל
-SonicName,food,אוכל
+SonicName,food,מזון
 SonicName,footsteps,צעדים
 SonicName,force,פריצה
 SonicName,foreboding,מרתיע
@@ -4631,8 +4631,8 @@ SonicName,whistle,שריקה
 SonicName,woof,נביחה
 SonicName,write,כתיבה
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,אריסטוקרטים שנהנים מכל הפריבילגיות שהעושר שלהם מביא ולא מבינים למה כולם שונאים אותם.
-SpecialDescription,"Being unusually short and slight for your kind, you are more nimble but are not as effective in combat.","נמוכים ורזים במידה בלתי אופיינית, ולכן זריזים יותר אבל פחות יעילים בקרב."
-SpecialDescription,"Being unusually tall and heavy for your kind, you move a bit slower but are more resilient.","גבוהים וכבדים במידה בלתי אופיינית, ולכן מעט איטיים יותר אבל גם פחות פגיעים."
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","נמוכים ורזים במידה בלתי אופיינית, ולכן זריזים יותר אבל פחות יעילים בקרב."
+SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","גבוהים וכבדים במידה בלתי אופיינית, ולכן מעט איטיים יותר אבל גם פחות פגיעים."
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",יצורים שמקוללים לנצח בהזדאבות ויכולים להפוך לזאבים מפלצתיים.
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,ייצור זנוח שמתקיים על ידי אכילת כוח החיות של החיים.
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"מחוננים בתפיסה יוצאת דופן ויכולים לזהות ישויות שחבויות מהחושים הרגילים, אבל במחיר של רעב מכרסם."
@@ -4641,12 +4641,12 @@ SpecialDescription,"Highly attuned servants of elemental flame, they can conjure
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","משרתים נאמנים של יסוד הקרח, יכולים לזמן כדורים מתפוצצים כדי להשמיד את אוייביהם."
 SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","משרתים נאמנים של יסוד החשמל, יכולים לזמן כדורים מתפוצצים כדי להשמיד את אוייביהם."
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","משרתים נאמנים של יסוד המים, יכולים לזמן כדורים מתפוצצים כדי להשמיד את אוייביהם."
-SpecialDescription,Lifetime of study has focused your learning on books at the cost of other hobbies and fitness.,שנים של לימוד גרמו לך להעדיף ספרים על פני תחביבים אחרים וכושר גופני.
+SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,שנים של לימוד גרמו לך להעדיף ספרים על פני תחביבים אחרים וכושר גופני.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,סינדרום הדמות הראשית גורם לך להסתמך על זה שהעלילה לא תאפשר להרוג אותך. המציאות חושבת אחרת.
-SpecialDescription,"Sculptured from living glass that reflects energy and refracts light, you are a perfect but delicate emulation of your natural counterpart.","פסל מזכוכית חיה, שמשקף אנרגיה ושובר את האור. חיקוי מושלם אבל עדין של הגיבורים הטבעיים."
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","המיקום שלך לעולם לא בטוח, ולכן התרגלת להיות בשום מקום ובכל מקום בבת אחת."
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"פסל מזכוכית חיה, שמשקף אנרגיה ושובר את האור. חיקוי מושלם אבל עדין של הגיבורים הטבעיים."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","איכשהו עדיין בחיים, אבל בלי הבשר שנדרש כדי לחיות באמת. לקיום המוזר הזה יש יתרונות מסויימים."
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,השכרות התמידית מייצרת הרפתקאות נועזות אבל גם חוסר יציבות; אל תבקשו מהם לדקלם את את האלפבית מהסוף להתחלה.
-SpecialDescription,"Uncertain of your position, you are accustomed to being anywhere and everywhere all at once.","המיקום שלך לעולם לא בטוח, ולכן התרגלת להיות בשום מקום ובכל מקום בבת אחת."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","לא ברור אם הדמות הזאת אכן אשמה בפשעים שמיוחסים לה, אבל היא נואשת לחמוק מהמעקב."
 SpecialName,colossus,קולוסוס
 SpecialName,drunkard,בשכרות
@@ -4668,8 +4668,8 @@ SpecialName,water,מים
 SpecialName,werewolf,מזדאב.ת
 SpellDescription,Projects a ball of energy that impacts on both monsters and objects.,שיגור כדור אנרגיה שמשפיע גם על מפלצות וגם על חפצים.
 SpellName,acid stream,זרם חומצה
-SpellName,animate dead,החייאת מתים
-SpellName,animate object,החייאת חפץ
+SpellName,animate dead,הנפשת מתים
+SpellName,animate object,הנפשת חפץ
 SpellName,bind undead,כבילת אל-מתים
 SpellName,blinking,בזיקה
 SpellName,cancellation,ביטול
@@ -4685,7 +4685,7 @@ SpellName,deflection,הדיפה
 SpellName,detect food,איתור מזון
 SpellName,detect monsters,איתור מפלצות
 SpellName,detect treasure,איתור אוצרות
-SpellName,detect unseen,איתור בלתי-נראים
+SpellName,detect unseen,איתור הנסתר
 SpellName,dig,חפירה
 SpellName,disintegrate,פירוק
 SpellName,drain life,שאיבת חיים
@@ -4695,13 +4695,13 @@ SpellName,finger of death,אצבע המוות
 SpellName,fireball,כדור אש
 SpellName,flaming sphere,כדור בוער
 SpellName,force bolt,קליע כוח
-SpellName,freezing sphere,כדור קפוא
+SpellName,freezing sphere,כדור מקפיא
 SpellName,full healing,רפואה שלמה
 SpellName,haste,חיפזון
 SpellName,healing,ריפוי
 SpellName,ice storm,סופת קרח
 SpellName,identify,זיהוי
-SpellName,invisibility,בלתי-נראות
+SpellName,invisibility,אי נראות
 SpellName,jumping,קפיצה
 SpellName,knock,נקישה
 SpellName,levitation,ריחוף
@@ -4709,7 +4709,7 @@ SpellName,light,אור
 SpellName,lightning bolt,חזיז ברק
 SpellName,living wall,קיר חי
 SpellName,magic mapping,מיפוי קסום
-SpellName,magic missile,טיל קסמים
+SpellName,magic missile,טיל קסם
 SpellName,phasing,שינוי פאזה
 SpellName,poison blast,מטח רעל
 SpellName,polymorph,שינוי צורה
@@ -4795,5 +4795,5 @@ ZooName,salty pool,בריכה מלוחה
 ZooName,science lab,מעבדה מדעית
 ZooName,slumber party,מסיבת פיג'מות
 ZooName,spider nest,רשת עכבישים
-ZooName,tavern,מסעדה
+ZooName,tavern,מסבאה
 ZooName,treasure zoo,גן אוצרות
