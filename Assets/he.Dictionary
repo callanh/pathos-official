@@ -902,8 +902,8 @@ CounterName,waits,המתנות
 CounterName,writes,כתיבות
 CounterName,zaps,יריות שרביט
 DamageTypeName,bludgeon,חבטה
-DamageTypeName,pierce,חדירה
-DamageTypeName,slash,חיתוך
+DamageTypeName,pierce,דקירה
+DamageTypeName,slash,שיסוף
 DeviceDescription,This square-cut hole is deep enough to hurt and hard to escape.,החור המרובע הזה עמוק מספיק כדי לפגוע וקשה להימלט ממנו.
 DeviceName,acid trap,מלכודת חומצה
 DeviceName,alarm trap,מלכודת אזעקה
@@ -919,7 +919,7 @@ DeviceName,dart trap,מלכודת חיצי מטרה
 DeviceName,entropy trap,מלכודת אנטרופיה
 DeviceName,explosive trap,מלכודת מתפוצצת
 DeviceName,falling boulder trap,מלכודת סלע נופל
-DeviceName,falling rock trap,מלכודת אבן נופלת
+DeviceName,falling rock trap,מלכודת מפולת אבנים
 DeviceName,fire trap,מלכודת אש
 DeviceName,grease trap,מלכודת שמן
 DeviceName,hallucination trap,מלכודת הזיות
@@ -1224,20 +1224,20 @@ EntityName,athol,אתול
 EntityName,attendant,משרת
 EntityName,Baalzebub,בעל זבוב
 EntityName,babau,בבאו
-EntityName,baby black dragon,דרקון שחור תינוק
-EntityName,baby blue dragon,דרקונית כחולה תינוקת
-EntityName,baby crocodile,תנין תינוק
-EntityName,baby deep dragon,דרקון מעמקים תינוק
-EntityName,baby gold dragon,דרקונית זהובה תינוקת
-EntityName,baby green dragon,דרקון ירוק תינוק
-EntityName,baby long worm,תולעת ארוכה תינוקת
-EntityName,baby orange dragon,דרקון כתום תינוק
-EntityName,baby purple worm,תולעת סגולת תינוקת
-EntityName,baby red dragon,דרקונית אדומה תינוקת
-EntityName,baby shimmering dragon,דרקון מנצנץ תינוק
-EntityName,baby silver dragon,דרקונית כסופה תינוקת
-EntityName,baby white dragon,דרקון לבן תינוק
-EntityName,baby yellow dragon,דרקונית צהובה תינוקת
+EntityName,baby black dragon,דרקון שחור גור
+EntityName,baby blue dragon,דרקונית כחולה גורה
+EntityName,baby crocodile,גור תנינים
+EntityName,baby deep dragon,דרקון מעמקים גור
+EntityName,baby gold dragon,דרקונית זהובה גורה
+EntityName,baby green dragon,דרקון ירוק גור
+EntityName,baby long worm,תולעת ארוכה גורה
+EntityName,baby orange dragon,דרקון כתום גור
+EntityName,baby purple worm,תולעת סגולת גורה
+EntityName,baby red dragon,דרקונית אדומה גורה
+EntityName,baby shimmering dragon,דרקון מנצנץ גור
+EntityName,baby silver dragon,דרקונית כסופה גורה
+EntityName,baby white dragon,דרקון לבן גור
+EntityName,baby yellow dragon,דרקונית צהובה גורה
 EntityName,bad egg,ביצה סרוחה
 EntityName,balrog,בלרוג
 EntityName,baluchitherium,באלוקיתריום
@@ -1718,7 +1718,7 @@ EntityName,scorpion,עקרב
 EntityName,Scorpius,סקורפיוס
 EntityName,scramper,סקאמפר
 EntityName,seal,כלב ים
-EntityName,sergeant,סמלת
+EntityName,sergeant,סמל
 EntityName,sewer rat,חולדת ביבים
 EntityName,shade,שחור
 EntityName,shadow,צל
@@ -1862,8 +1862,8 @@ EntityName,zruty,זרוטי
 EquipAction,employ,שימוש
 EquipAction,purse,לארנק
 EquipAction,ready,בהיכון
-EquipAction,wear,בלבישה
-EquipAction,wield,באחיזה
+EquipAction,wear,ללבוש
+EquipAction,wield,לאחוז
 EquipSlot,amulet,קמע
 EquipSlot,barding,שריון לסוס
 EquipSlot,boots,נעליים
@@ -2597,7 +2597,7 @@ ItemName,Eye of Aethiopica,עין אאתיופיקה
 ItemName,Eyes of Ra,עיני רא
 ItemName,fauchard,פושארד
 ItemName,fedora,מגבעת
-ItemName,fire horn,צופר אזעקה
+ItemName,fire horn,קרן אש
 ItemName,fish,דג
 ItemName,flail,מורג
 ItemName,flash staff,מטה מסנוור
@@ -3153,15 +3153,15 @@ LiteralText,assets,נכסים
 LiteralText,ATMOSPHERE,אווירה
 LiteralText,attack modifier,שינוי כוח התקפה
 LiteralText,Attack which direction?,באיזה כיוון לתקוף?
-LiteralText,attack//noun,מתקפה
-LiteralText,ATTACK//noun,מתקפה
+LiteralText,attack//noun,התקפה
+LiteralText,ATTACK//noun,התקפה
 LiteralText,attack//verb,לתקוף
 LiteralText,ATTACK//verb,לתקוף
 LiteralText,attacks,תקיפות
 LiteralText,attributes,תכונות
 LiteralText,AUTO,אוטומטי
 LiteralText,auto saving,שמירה אוטומטית
-LiteralText,AWAKE,התעוררת
+LiteralText,AWAKE,התעוררות
 LiteralText,BACK,חזרה
 LiteralText,backfire,אש חוזרת
 LiteralText,barrier,מחסום

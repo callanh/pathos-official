@@ -65,7 +65,7 @@ namespace Pathos
               Entities.Yeenoghu,
             };
 
-            this.devices = SPDDebug.codex.Devices.List.ToDistinctList();
+            this.devices = SPDDebug.codex.Devices.List.Where(D => D.Frequency > 0).ToDistinctList();
 
             this.realGems = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.Gem).Where(i => !i.Grade.Unique && i.Material == SPDDebug.codex.Materials.gemstone).ToDistinctList();
 
