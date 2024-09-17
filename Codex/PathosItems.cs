@@ -6144,18 +6144,18 @@ namespace Pathos
             {
               B.Nutrition(Dice.Fixed(30));
               B.RemoveTransient(Properties.fear);
-              B.ApplyTransient(Properties.inebriation, Dice.One); // briefly drunk
+              B.ApplyTransient(Properties.inebriation, 1.d10() + 10); // briefly drunk
             },
             U =>
             {
               U.Nutrition(Dice.Fixed(20));
               U.RemoveTransient(Properties.fear);
-              U.ApplyTransient(Properties.inebriation, 5.d10()); // a bit drunk.
+              U.ApplyTransient(Properties.inebriation, 1.d50() + 50); // a bit drunk.
             },
             C =>
             {
               C.Nutrition(Dice.Fixed(10));
-              C.ApplyTransient(Properties.inebriation, 10.d10()); // a lot drunk
+              C.ApplyTransient(Properties.inebriation, 1.d100() + 100); // a lot drunk
               C.ApplyTransient(Properties.fainting, 3.d6()); // black out.
             }
           );
