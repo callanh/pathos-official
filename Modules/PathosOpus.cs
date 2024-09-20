@@ -8553,13 +8553,17 @@ H-----------H
         if (Lycanthrope != null)
         {
           var PrimarySquare = ThroneSquare.IsOccupied() ? Generator.ExpandingFindSquare(ThroneSquare, 10) : ThroneSquare;
-          Generator.PlaceSpecificCharacter(PrimarySquare, Lycanthrope.Primary);
 
-          if (PrimarySquare.Character != null)
+          if (PrimarySquare != null)
           {
-            Generator.GainRandomAsset(PrimarySquare.Character);
-            Generator.GainRandomAsset(PrimarySquare.Character);
-            Generator.GainRandomAsset(PrimarySquare.Character);
+            Generator.PlaceSpecificCharacter(PrimarySquare, Lycanthrope.Primary);
+
+            if (PrimarySquare.Character != null)
+            {
+              Generator.GainRandomAsset(PrimarySquare.Character);
+              Generator.GainRandomAsset(PrimarySquare.Character);
+              Generator.GainRandomAsset(PrimarySquare.Character);
+            }
           }
 
           foreach (var SecondaryIndex in RandomSupport.NextNumber(3, 4).NumberSeries())
