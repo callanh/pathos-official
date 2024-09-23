@@ -260,7 +260,7 @@ namespace Pathos
             do
             {
                 asset = SPDDebug.generator.NewRandomAsset(Square, Stock: null);
-            } while (asset == null || ItemForbidden(asset.Item));
+            } while (asset != null && ItemForbidden(asset.Item));
             return asset;
         }
         public Device RandomDevice()

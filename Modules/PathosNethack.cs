@@ -5395,7 +5395,9 @@ namespace Pathos
                 StockContainer(TowerSquare, Asset, Locked: true, Trapped: true);
 
                 // every chest contains a book - magical knowledge and power is the treasure.
-                Asset.Container.Stash.Add(Generator.NewRandomAsset(TowerSquare, Codex.Stocks.book));
+                var ChestAsset = Generator.NewRandomAsset(TowerSquare, Codex.Stocks.book);
+                if (ChestAsset != null)
+                  Asset.Container.Stash.Add(ChestAsset);
               }
             }
             else

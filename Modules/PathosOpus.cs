@@ -532,10 +532,14 @@ namespace Pathos
           var Area = Map.AddArea(Generator.EscapedModuleTerm(Map == OverlandMap ? Section.OverlandAreaName : Section.UndergroundAreaName));
 
           if (Section.Distance == 0)
+          {
             Area.SetSpawnRestricted(true);
-
-          if (Area.Difficulty == 0 || Area.Difficulty > Section.Distance)
+            Area.SetDifficulty(1); // zero difficulty means it scales to the player's level.
+          }
+          else if (Area.Difficulty == 0 || Area.Difficulty > Section.Distance)
+          {
             Area.SetDifficulty(Section.Distance);
+          }
 
           foreach (var Square in Map.GetSquares(Section.Region))
             Area.AddZone(Square.Zone);
@@ -546,6 +550,9 @@ namespace Pathos
       }
 
 #if DEBUG
+      foreach (var OverlandArea in OverlandMap.Areas)
+        Debug.Assert(OverlandArea.Difficulty != 0, $"Overland Area '{OverlandArea.Name}' must have an assigned difficulty.");
+
       foreach (var UniqueEntity in Codex.Entities.List.Where(E => E.IsUnique).Except(UniqueEntityList))
         Debug.WriteLine($"{UniqueEntity.Name} was not considered in this epic module.");
 
@@ -567,12 +574,12 @@ namespace Pathos
       Generator.StartSquare(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
       SetSiteFirstLevelEntrance(OpusTerms.Ruins);
-      SetSiteFirstLevelUp(OpusTerms.Cage);
       SetMapLevelDown(OpusTerms.Overland);
       SetUndergroundAreaPassage(OpusTerms.Sewers);
       SetSiteSuffixFirstLevelUp("Farm");
       SetSiteFirstLevelEntrance(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Crypt);
+      SetSiteFirstLevelUp(OpusTerms.Cage);
 #endif
 
 #if DEBUG
@@ -970,14 +977,12 @@ namespace Pathos
       // end up with only one connected group of regions.
       return ConnectList.Single();
     }
-    private IEnumerable<Square> WalkingPath(Square SourceSquare, Square TargetSquare)
+    private IEnumerable<Square> DirectPath(Square SourceSquare, Square TargetSquare, bool VerticalBias)
     {
       var WalkSquare = SourceSquare;
 
       if (WalkSquare != null)
         yield return WalkSquare;
-
-      var BiasVertical = Chance.OneIn2.Hit();
 
       while (WalkSquare != null && WalkSquare != TargetSquare)
       {
@@ -988,7 +993,7 @@ namespace Pathos
         var GoNorth = Offset.Y < 0;
         var GoSouth = Offset.Y > 0;
 
-        if (BiasVertical && (GoNorth || GoSouth) && (GoWest || GoEast))
+        if (VerticalBias && (GoNorth || GoSouth) && (GoWest || GoEast))
         {
           GoEast = false;
           GoWest = false;
@@ -1006,6 +1011,10 @@ namespace Pathos
         if (WalkSquare != null)
           yield return WalkSquare;
       }
+    }
+    private IEnumerable<Square> WalkingPath(Square SourceSquare, Square TargetSquare)
+    {
+      return DirectPath(SourceSquare, TargetSquare, VerticalBias: Chance.OneIn2.Hit());
     }
     private IEnumerable<Square> DeviatingPath(Square SourceSquare, Square TargetSquare, Region ConstraintRegion)
     {
@@ -1651,7 +1660,9 @@ namespace Pathos
           }
         }
 
-        AmbushMap.AddArea(Generator.EscapedModuleTerm(OpusTerms.Ambush)).AddZone(LureZone);
+        var AmbushArea = AmbushMap.AddArea(Generator.EscapedModuleTerm(OpusTerms.Ambush));
+        AmbushArea.SetDifficulty(Section.Distance);
+        AmbushArea.AddZone(LureZone);
 
         var BoulderWater = Chance.OneIn2.Hit();
         void PlaceBoulderFill(Square FillSquare)
@@ -1983,21 +1994,26 @@ namespace Pathos
 
                 var TunnelSquareList = new Inv.DistinctList<Square>();
 
+                var TunnelBias = Chance.OneIn2.Hit();
+
                 if (LinkSquare == null)
                 {
                   Debug.Fail("Should not get to this code branch.");
-                  TunnelSquareList.AddRange(Maker.WalkingPath(SourceSquare, TargetSquare));
+                  TunnelSquareList.AddRange(Maker.DirectPath(SourceSquare, TargetSquare, TunnelBias));
                 }
                 else
                 {
-                  TunnelSquareList.AddRange(Maker.WalkingPath(SourceSquare, LinkSquare));
-                  TunnelSquareList.AddRange(Maker.WalkingPath(LinkSquare, TargetSquare).Except(TunnelSquareList));
+                  TunnelSquareList.AddRange(Maker.DirectPath(SourceSquare, LinkSquare, TunnelBias));
+                  TunnelSquareList.AddRange(Maker.DirectPath(LinkSquare, TargetSquare, VerticalBias: Chance.OneIn2.Hit()).Except(TunnelSquareList));
                 }
 
                 var TunnelGround = Sector != InitialSector && Chance.OneIn10.Hit() ? CageVariant.SinkGround : CageVariant.WalkGround;
 
                 foreach (var TunnelSquare in TunnelSquareList)
                   Maker.Tunnel(TunnelSquare, CageVariant.MainBarrier, TunnelGround, BelowIsLit, WallStructure.Permanent);
+
+                // don't use the source linking paths to select a divide square.
+                TunnelSquareList.RemoveRange(Maker.DirectPath(SourceSquare, LinkSquare, TunnelBias)); // #0543CF2F
 
                 var DivideSquare = TunnelSquareList.Where(S => S.Wall == null && S.Passage == null && S.Floor != null && S.IsFlat()).FirstOrDefault();
                 var BacktrackSquare = TunnelSquareList.Where(S => S.Wall == null && S.Passage == null && S.Floor != null && S.IsFlat()).LastOrDefault();
@@ -2441,7 +2457,11 @@ namespace Pathos
                 ChestAsset.Container.Trap = Maker.RandomContainerTrap(Square, Section.Distance);
 
                 foreach (var LootIndex in RandomSupport.NextRange(2, 3).NumberSeries())
-                  ChestAsset.Container.Stash.Add(Generator.NewRandomAsset(Square, Stock));
+                {
+                  var LootAsset = Generator.NewRandomAsset(Square, Stock);
+                  if (LootAsset != null)
+                    ChestAsset.Container.Stash.Add(LootAsset);
+                }
 
                 Generator.PlaceAsset(Square, ChestAsset);
               }
@@ -7946,9 +7966,6 @@ H-----------H
 
           if (BuildingSquare == null)
           {
-            // NOTE: if we fail to find a door square, the later code will still connect all the buildings with doors.
-            Debug.WriteLine($"{TownVariant.Name}: unable to find a door square in a town building.");
-
             // we need to make sure this separate building is fully accessible to the rest of the town.
             var ConnectBuilding = ConnectBuildingList.RemoveRandomOrNull() ?? BuildingList.Except(Building).GetRandomOrNull();
 
@@ -7959,6 +7976,11 @@ H-----------H
                 if (ConnectSquare.Floor == null && ConnectSquare.Wall == null)
                   Generator.PlaceFloor(ConnectSquare, Codex.Grounds.dirt);
               }
+            }
+            else
+            {
+              // NOTE: if we fail to find a door square, the later code will still connect all the buildings with doors.
+              Debug.WriteLine($"{TownVariant.Name}: unable to find a door square in a town building.");
             }
           }
           else
@@ -8648,12 +8670,14 @@ H-----------H
             if ((IsGrilled && Chance.OneIn4.Hit()) || (!IsGrilled && Chance.OneIn10.Hit()))
             {
               var SewerAsset = Generator.NewRandomAsset(SewerSquare);
+              if (SewerAsset != null)
+              {
+                // food found floating in the sewer water is, of course, cursed.
+                if (SewerAsset.Item.IsIngested() && SewerAsset.HasSanctity)
+                  SewerAsset.SetSanctity(Codex.Sanctities.Cursed);
 
-              // food found floating in the sewer water is, of course, cursed.
-              if (SewerAsset.Item.IsIngested() && SewerAsset.HasSanctity)
-                SewerAsset.SetSanctity(Codex.Sanctities.Cursed);
-
-              Generator.PlaceAsset(SewerSquare, SewerAsset);
+                Generator.PlaceAsset(SewerSquare, SewerAsset);
+              }
             }
             else if (SewerSquare.Wall == null && SewerSquare.Character == null && SewerSquare.Passage == null && Chance.OneIn15.Hit())
             {
