@@ -3143,7 +3143,7 @@ LiteralText,ANONYMOUS,АНОНИМ
 LiteralText,anticlockwise 90 degrees,против часовой стрелки на 90 градусов
 LiteralText,any item,любая вещь
 LiteralText,APPLICATION FILES,ФАЙЛЫ ПРИЛОЖЕНИЯ
-LiteralText,Are you sure you want to end your adventure?,"Вы уверены, что хотите выбраться из подземелья и закончить Ваше приключение?"
+LiteralText,Are you sure you want to end your adventure?,"Вы уверены, что хотите закончить своё приключение?"
 LiteralText,Are you sure you want to lose this character and end your adventure?,"Вы уверены, что хотите потерять этого персонажа и закончить Ваше приключение?"
 LiteralText,ARE YOU SURE?,ВЫ УВЕРЕНЫ?
 LiteralText,area of effect,область действия
@@ -3374,7 +3374,7 @@ LiteralText,feature,особый объект
 LiteralText,FEATURES,ОСОБЫЕ ОБЪЕКТЫ
 LiteralText,FEED,КОРМИТЬ
 LiteralText,FEEDBACK,ОБРАТНАЯ СВЯЗЬ
-LiteralText,Feedback information,Информация об обратной связи
+LiteralText,Feedback information,Информация для обратной связи
 LiteralText,FILES,ФАЙЛЫ
 LiteralText,fixed range,фиксированное расстояние
 LiteralText,FIZZLE,ФИАСКО
@@ -3569,7 +3569,7 @@ LiteralText,platform,платформа
 LiteralText,Play,Играть
 LiteralText,Play a sound effect?,Воспроизвести какой эффект?
 LiteralText,PLAYER,ИГРОК
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,"Обратите внимание, что принудительное завершение работы приложения может привести к поломке файлов сохранения, которые невозможно восстановить."
 LiteralText,Please offer any clarification,"Пожалуйста, напишите пояснение"
 LiteralText,Please provide your feedback,"Пожалуйста, напишите свой отзыв"
 LiteralText,Please rotate your device to landscape :-),"Пожалуйста, поверните ваше устройство в горизонтальное положение :-)"
@@ -3669,8 +3669,8 @@ LiteralText,secret,скрытая
 LiteralText,SECRET,СКРЫТАЯ
 LiteralText,seed,семя
 LiteralText,SELECT ATMOSPHERE,ВЫБЕРИТЕ АТМОСФЕРУ
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,Выберите тайл компаньона
+LiteralText,Select Hero Tile,Выберите тайл героя
 LiteralText,SELECT ITEM,ВЫБЕРИТЕ ВЕЩЬ
 LiteralText,SELECT LANGUAGE,ВЫБЕРИТЕ ЯЗЫК
 LiteralText,SELECT MAP,ВЫБЕРИТЕ КАРТУ
@@ -3878,7 +3878,7 @@ MaterialName,wood,древесина
 MeasurementSystemName,imperial,имперская
 MeasurementSystemName,metric,метрическая
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Спуститесь в процедурно-сгенерированные подземелья и пещеры. Бесконечная реиграбельность, рекомендуется для новичков в Pathos."
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Исследуйте огромную, процедурно-сгенерированную карту поверхности с множеством побочных подземелий, проработанных декораций и интригующих столкновений."
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Исследуйте огромную процедурно-генерируемую карту поверхности, содержащую множество дополнительных подземелий, интересных декораций и увлекательных встреч."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Выйдите за границы подземелий и приступайте к выполнению Квеста.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, ловушками и подземными механизмами на простой двухкомнатной карте."
@@ -3888,15 +3888,15 @@ ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Песочница
 ModuleTerm,Abyss,Бездна
-ModuleTerm,Ambush,Засада
+ModuleTerm,Ambush,Западня
 ModuleTerm,Ant Cave,Муравьиная пещера
 ModuleTerm,Ant Lair,Муравьиное логово
 ModuleTerm,Ant Nest,Муравьиное гнездо
 ModuleTerm,Arena,Арена
 ModuleTerm,attic,чердак
-ModuleTerm,Bigfoot,
-ModuleTerm,Black Lair,Черное логово
-ModuleTerm,Black Market,Черный рынок
+ModuleTerm,Bigfoot,Бигфут
+ModuleTerm,Black Lair,Чёрное логово
+ModuleTerm,Black Market,Чёрный рынок
 ModuleTerm,Blue Lair,Синее логово
 ModuleTerm,Cage,Клетка
 ModuleTerm,Canyon,Каньон
@@ -3909,7 +3909,7 @@ ModuleTerm,Chicken Farm,Куриная ферма
 ModuleTerm,Cow Farm,Коровья ферма
 ModuleTerm,Crater,Кратер
 ModuleTerm,Crypt,Склеп
-ModuleTerm,Crystal Henge,Кристалхендж
+ModuleTerm,Crystal Henge,Кристальный хендж
 ModuleTerm,Deep Lair,Глубинное логово
 ModuleTerm,Deephall,Глубинные залы
 ModuleTerm,Deepruins,Глубинные руины
@@ -3929,11 +3929,11 @@ ModuleTerm,Fort Ludios,Форт Лудиос
 ModuleTerm,Furnace,Печь
 ModuleTerm,Glacier,Ледник
 ModuleTerm,Goat Farm,Козья ферма
-ModuleTerm,Green Lair,Зеленое логово
+ModuleTerm,Green Lair,Зелёное логово
 ModuleTerm,Grotto,Грот
 ModuleTerm,Halls,Залы
 ModuleTerm,Helltown,Адский город
-ModuleTerm,Horse Farm,Лошадиная ферма
+ModuleTerm,Horse Farm,Конная ферма
 ModuleTerm,Ice Lake,Ледяное озеро
 ModuleTerm,Infernal Cage,Адская Клетка
 ModuleTerm,Infernal Fields,Адские поля
@@ -3947,8 +3947,8 @@ ModuleTerm,Lake,Озеро
 ModuleTerm,Lava Flow,Лавовое течение
 ModuleTerm,Lava Lake,Лавовое озеро
 ModuleTerm,level//depth,уровень
-ModuleTerm,Lich Tower,Башня личей
-ModuleTerm,Lost Chambers,Затерянные комнаты
+ModuleTerm,Lich Tower,Башня лича
+ModuleTerm,Lost Chambers,Затерянные залы
 ModuleTerm,Ludios Cache,Тайник Лудиоса
 ModuleTerm,Medusa Lair,Логово Медузы
 ModuleTerm,Mines,Копи
@@ -3958,10 +3958,10 @@ ModuleTerm,Opus,Опус
 ModuleTerm,Orange Lair,Оранжевое логово
 ModuleTerm,Outpost,Аванпост
 ModuleTerm,Overland,Поверхность
-ModuleTerm,Pig Farm,Свинная ферма
+ModuleTerm,Pig Farm,Свиная ферма
 ModuleTerm,Prison,Тюрьма
 ModuleTerm,Pudding Pit,Яма с массой
-ModuleTerm,Rat Pit,Крысиная яма
+ModuleTerm,Rat Pit,Яма с крысами
 ModuleTerm,Rebirth,Перерождение
 ModuleTerm,Red Lair,Красное логово
 ModuleTerm,Respite,Привал
@@ -3985,29 +3985,29 @@ ModuleTerm,Spider Cave,Паучья пещера
 ModuleTerm,Spider Lair,Паучье логово
 ModuleTerm,Spider Nest,Паучье гнездо
 ModuleTerm,Station,Станция
-ModuleTerm,Statue Henge,Статуяхендж
-ModuleTerm,Stone Henge,Стоунхендж
+ModuleTerm,Statue Henge,Статуя хендж
+ModuleTerm,Stone Henge,Каменный хендж
 ModuleTerm,Stonetown,Каменный город
 ModuleTerm,strange chicken,странный цыпленок
 ModuleTerm,strange cow,странная корова
 ModuleTerm,Strange Farm,Странная ферма
-ModuleTerm,strange goat,странный козел
+ModuleTerm,strange goat,странный козёл
 ModuleTerm,strange horse,странная лошадь
 ModuleTerm,strange pig,странная свинья
 ModuleTerm,strange seal,странный тюлень
 ModuleTerm,strange sheep,странная овца
-ModuleTerm,Topaz Mine,Топазная шахта
+ModuleTerm,Topaz Mine,Топазовая шахта
 ModuleTerm,Tree Maze,Лабиринт деревьев
 ModuleTerm,trove,клад
 ModuleTerm,Underbarracks,Подземные казармы
-ModuleTerm,Underground,Под землей
+ModuleTerm,Underground,Подполье
 ModuleTerm,Underlimits,Подземные пределы
 ModuleTerm,Underpeaks,Подземные вершины
 ModuleTerm,Undertown,Подземный город
 ModuleTerm,White Lair,Белое логово
 ModuleTerm,Woodtown,Древесный город
 ModuleTerm,Worm Pit,Яма с червями
-ModuleTerm,Yellow Lair,Желтое логово
+ModuleTerm,Yellow Lair,Жёлтое логово
 MotionPastName,anointed,помазал
 MotionPastName,ate,съел
 MotionPastName,captured,поймал в
@@ -4510,7 +4510,7 @@ SonicName,chirp,чириканье
 SonicName,clank,лязг
 SonicName,close door,закрывшаяся дверь
 SonicName,cluck,кудахтанье
-SonicName,clunk,глухой звук
+SonicName,clunk,глухой стук
 SonicName,coins,монеты
 SonicName,conclusion,вхождение
 SonicName,craft,создание
@@ -4631,8 +4631,8 @@ SonicName,whistle,свисток
 SonicName,woof,лай
 SonicName,write,написание
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,"Аристократы, пользующиеся всеми привилегиями спускаются с богатством и задаются вопросом, почему все их ненавидят."
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Будучи необычно низкорослым и лёгким для своего рода, вы более проворны, но не так эффективны в бою."
-SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Будучи необычно высоким и тяжёлым для своего рода, вы двигаетесь немного медленнее, но более выносливы."
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Будучи необычно низкорослым и лёгким, вы более проворны, но не так эффективны в бою."
+SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Будучи необычно высоким и тяжёлым, вы двигаетесь немного медленнее, но более выносливы."
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Навеки проклятые ликантропией, эти существа могут превращаться в чудовищных волков."
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,"Отрёкшееся существо, которое существует тем, что питается жизненной сущностью живых."
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Одарённый экстрасенсорным восприятием, позволяющим выявлять сущности, скрытые от обычных органов чувств, но ценой мучительного голода."
@@ -4641,10 +4641,10 @@ SpecialDescription,"Highly attuned servants of elemental flame, they can conjure
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии мороза, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии разряда, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии воды, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
-SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Во время учёбы вы сосредоточились на изучении книг в ущерб другим увлечениям и физической форме.
+SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Вся жизнь была сосредоточена на изучении книг в ущерб другим увлечениям и физической форме.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Синдром главного героя привёл к тому, что он полагается на сюжетную броню, но ему суждено пройти серьёзную проверку реальностью."
 SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Без чёткого ощущения себя в пространстве, вы привыкли ощущать себя везде и всюду одновременно."
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Созданный из живого стекла, отражающего энергию и свет, вы представляете собой идеальную, но хрупкую копию на себя настоящего."
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Созданный из живого стекла, отражающего энергию, вы представляете собой идеальную, но хрупкую копию на себя настоящего."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Каким-то образом всё ещё живое, хотя и без плоти, необходимой для того, чтобы жить по-настоящему, это своеобразное существование имеет некоторые преимущества."
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Из пьяниц получаются дерзкие, но слегка неустойчивые авантюристы; только не просите их прочесть алфавит наоборот."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Независимо от того, невиновны они или виновны в совершении своих преступлений, эти личности отчаянно пытаются избежать заключения под стражу."

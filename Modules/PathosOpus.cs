@@ -1962,7 +1962,7 @@ namespace Pathos
               Generator.GainCarriedAsset(BossCharacter, Generator.GenerateUniqueAsset(SourceSquare)); // carry but don't outfit.
               Generator.PlaceCharacter(SourceSquare, BossCharacter);
 
-              // TODO: clear all bars that prevent backtracking.
+              // clear all bars that prevent backtracking.
               var BossScript = BossCharacter.InsertScript();
               BossScript.Killed.Sequence.Add(Codex.Tricks.cleared_way).SetTarget(SourceSquare);
               foreach (var DivideSquare in BacktrackDictionary.Values)
@@ -2093,11 +2093,11 @@ namespace Pathos
           // dividers and enemies.
           DivideActionList.ForEach(A => A());
 
-          // traps.
+          // traps (level/teleporter traps don't work so exclude them).
           foreach (var Sector in Plan.Sectors)
           {
             foreach (var BelowSquare in BelowMap.GetSquares(Sector.Region).Where(S => S.Passage == null && S.Character == null && S.Trap == null && S.Floor != null && S.Floor.Ground != CageVariant.SinkGround && S.GetAdjacentSquares().Count(S => S.Wall?.Barrier == CageVariant.MainBarrier) == 1))
-              Generator.PlaceTrap(BelowSquare, Revealed: false);
+              Generator.PlaceTrap(BelowSquare, Generator.RandomDevice(BelowSquare, BelowMap.Difficulty, D => D != Codex.Devices.level_teleporter && D != Codex.Devices.teleporter), Revealed: false);
           }
 
           // prepare the map.
@@ -2291,7 +2291,7 @@ namespace Pathos
             Gate = Codex.Gates.wooden_door,
             PortalUp = Codex.Portals.stone_staircase_up,
             PortalDown = Codex.Portals.stone_staircase_down,
-            Boss = Codex.Entities.Deliarne // TODO: too powerful: Codex.Entities.Vecna, Codex.Entities.Dark_Lord
+            Boss = Codex.Entities.Deliarne
           }
         );
       }
@@ -5683,7 +5683,6 @@ namespace Pathos
           var RavineBeginSquare = RavineMap.GetCircleOuterSquares(RavineCircle.Reduce(1)).GetRandomOrNull();
           var RavineEndSquare = RavineBeginSquare.Rotate(RavineCircle.Origin, 180);
 
-          // TODO: DeviatingPath needs a constraint region?
           foreach (var RavineSquare in Maker.DeviatingPath(RavineBeginSquare, RavineEndSquare, RavineRegion))
           {
             Debug.Assert(RavineSquare.IsRegion(RavineRegion));
