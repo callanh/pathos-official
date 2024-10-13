@@ -24,7 +24,11 @@ namespace Pathos
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.pixel_title);
 
-      AddTerms(OpusTerms.List);
+      foreach (var TermText in CollectStaticPublicConstantStrings(typeof(OpusTerms)))
+        AddTerm(TermText);
+
+      foreach (var DialogueText in CollectStaticPublicConstantStrings(typeof(OpusDialogues)))
+        AddDialogue(DialogueText);
     }
 
     public override void Execute(Generator Generator) => new OpusMaker(Codex, Generator).Make();
@@ -32,25 +36,13 @@ namespace Pathos
     private readonly Codex Codex;
   }
 
+  internal static class OpusDialogues
+  {
+    public const string Oracle_greeting = "The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.";
+  }
+
   internal static class OpusTerms
   {
-    static OpusTerms()
-    {
-      var Type = typeof(OpusTerms);
-
-      var TermList = new Inv.DistinctList<string>();
-
-      foreach (var FieldInfo in Type.GetReflectionFields())
-      {
-        if (FieldInfo.IsStatic && FieldInfo.IsPublic && FieldInfo.FieldType == typeof(string))
-          TermList.Add((string)FieldInfo.GetValue(Type));
-      }
-
-      List = TermList;
-    }
-
-    public static readonly IReadOnlyList<string> List;
-
     // Opus.
     public const string Opus = "Opus";
     public const string Overland = "Overland";
@@ -570,16 +562,18 @@ namespace Pathos
       SetSiteSuffixFirstLevelUp("Mine");
       SetSiteSuffixFirstLevelUp("Lair");
       SetSiteFirstLevelUp(OpusTerms.Prison);
+      SetSiteLastLevelUp(OpusTerms.Prison);
       SetSiteSuffixFirstLevelDown("Nest");
       Generator.StartSquare(FinaleSquare);
       SetSiteFirstLevelUp(OpusTerms.Furnace);
       SetSiteFirstLevelEntrance(OpusTerms.Ruins);
-      SetMapLevelDown(OpusTerms.Overland);
       SetUndergroundAreaPassage(OpusTerms.Sewers);
       SetSiteSuffixFirstLevelUp("Farm");
       SetSiteFirstLevelEntrance(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Crypt);
       SetSiteFirstLevelUp(OpusTerms.Cage);
+      SetMapLevelDown(OpusTerms.Overland);
+      SetMapLevelUp(OpusTerms.Underground);
 #endif
 
 #if DEBUG
@@ -1417,6 +1411,10 @@ namespace Pathos
         var OracleCharacter = Maker.NewGoodCharacter(OracleSquare, Maker.SelectUniqueEntity(Codex.Entities.Oracle));
         Generator.ResidentSquare(OracleCharacter, OracleSquare);
         Generator.PlaceCharacter(OracleSquare, OracleCharacter);
+
+        var OracleDialogue = Generator.Adventure.World.AddDialogue("ORACLE");
+        OracleDialogue.Root.Document.Fragment(OpusDialogues.Oracle_greeting);
+        Generator.AssignDialogue(OracleCharacter, OracleDialogue);
 
         // TODO: for testing transport of trophy/statue characters to the endgame.
         //Generator.PlaceBoulder(OracleSquare, Codex.Blocks.trophy, IsRigid: true, PrisonerCharacter: OracleCharacter);

@@ -6,54 +6,54 @@
 - . | wait one turn (also double tap on self); . | чекати один хід (також подвійнай дотиак на себе)
 - , | pick up the top item on the floor; , | підняти верхній предмет з підлоги
 - A | toggle log (click the log to expand/collapse); A | увімк./вимк. журнал подій (натисніть на журнал, щоб розгорнути/згорнути)
-- B | move down-left;
+- B | move down-left; B | рухатись вниз-вліво
 - C | toggle character; C | перемкнути персонажа
 - D | re-use last item; D | використати остінній предмет
 - E | mount or dismount your steed; E | встановити або демонтувати коня
 - F | toggle floor; F | увімк./вимк. підлогу
 - G | re-equip last item; G | переспорядити останній предмет
-- H | move left;
-- I | toggle inventory; I | показати наплічник
-- J | move down;
-- K | move up;
-- L | move right;
+- H | move left; H | рухатись вниз
+- I | toggle inventory; I | показати інвентар
+- J | move down; J | рухатись вниз
+- K | move up; K | рухатись вверх
+- L | move right; L | рухатись вправо
 - M | toggle map; M | увімк./вимк. мапу
-- N | move down-right;
+- N | move down-right; N | рухатись вниз-вправо
 - O | hide from view; O | заховатися в тінях
 - P | polymorph at will; P | перетворитися за бажанням
 - Q | save or quit this game; Q | зберегти чи вийти з цієї гри
 - R | for rest mode to recover life and mana; R | увімкнути режим відпочинку, щоб відновити здоров'я та ману
 - S | for search mode for secret doors and traps; S | для пошуку таємних дверей та пасток
 - T | teleport at will; T | телепортуватися за бажанням
-- U | move up-right;
+- U | move up-right; U | рухатись вверх-вправо
 - V | kick in a direction; V | вдарити в напрямку
 - W | jump in a direction (if you have the talent); W | стрибнути в напрямку (якщо є талант)
 - X | re-cast last spell; X | застосувати останнє використане закляття
-- Y | move up-left;
+- Y | move up-left; Y | рухатись вверх-вліво
 - Z | toggle cast spells (read books to learn spells); Z | перемкнути чаклування (читайтие книги, щоб вивчати закляття)
 - ' | blink in a direction; ' | телепортуватися у напрямку
-- ;; | telekinesis in a direction;
+- ;; | telekinesis in a direction; ;; | телекінез у напрямку
 - > | descend stairs; > | спуститися сходами
 - < | ascend stairs; < | піднятися сходами
 - / | toggle chat in multiplayer; / | увімк./вимк. чат в багатокристувацькій грі
 - \ | view knowledge panel; \ | переглянути панель знань
 - + | zoom in; + | наблизити
 - - | zoom out; - | віддалити
-- 1,2,3,4,5 | left quick actions (change action using shift + number);
-- 0,9,8,7,6 | right quick actions (change action using shift + number);
-- INSERT | toggle tunnelling mode;
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | праві швидкі дії (змінити дію shift + number)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | ліві швидкі дії (змінити дію shift + number)
+- INSERT | toggle tunnelling mode; INSERT | переключити режим тунелювання
 - SHIFT + arrow | fire a missile without moving; SHIFT + стрілка | вистрілити снаряд, не рухаючись
-- CTRL + arrow | interact with the target without moving;
+- CTRL + arrow | interact with the target without moving; CTRL + стрілки | взаємодія з ціллю без переміщення
 - ENTER | select the top item on the floor; ENTER | вибрати верхній предмет на підлозі
 - ESCAPE | hides open panels and clears your target; ESCAPE | приховує відкриті панелі та очищає вашу ціль
-- BACKSPACE | cancels open dialogs and clears the keyboard focus;
-- SPACE | toggle real-time or turn-based;
-- PgUp | switch to previous character;
-- PgDown | switch to next character;
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | закриває активний діалог та прибирає фокусування клавіатури
+- SPACE | toggle real-time or turn-based; SPACE | перемкнути покроковий режим та режим реалнього часу
+- PgUp | switch to previous character; PgUp | переключитись на попереднього персонажа
+- PgDown | switch to next character; PgDown | переключитись на наступного персонажа
 - ALT | show labels; ALT | показати заголовки
 - F1 | show this help; F1 | показати цього помічника
 - F6 | quick save; F6 | швидке збереження
-- F10 | open side menu;
+- F10 | open side menu; F10 | відкрити бічне меню
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | перемикання з повноекранного до віконного режиму (Windows Desktop)
 
 # General mechanics; Основні механіки
@@ -71,134 +71,134 @@
 . A critical miss stops any further attacks in that turn (if you have multiple attacks).; Критичний промах зупиняє будь-які подальші атаки в свою чергу (якщо у вас кілька атак).
 . A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Критичний удар призводить до подвоєння шкоди зброї. Зауважте, що зачарування та модифікатори сили не подвоюються.
 . The strength bonus to damage is doubled when using a two handed weapon.; Сили подвоюється при використанні дворучної зброї.
-. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.;
-. Otherwise, this number is added to the attack score and compared to the defence score.;
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Якщо критичний удар є єдиним способом влучити або промахнутися, то він знижується до звичайного влучання або промаху.
+. Otherwise, this number is added to the attack score and compared to the defence score.; В іншому випадку це число додається до значення атаки і порівнюється зі значенням захисту.
 /
-` (Attack + d20) >= Defence;
+` (Attack + d20) >= Defence; (Атака + d20) >= Захист
 /
-. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.;
-. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.;
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Ваші показники атак і захисту залежать від ваших здібностей, навичок і магічних чар.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Магічні чари до зброї безпосередньо впливають на ваш рахунок атаки, а також додаються до оцінки шкоди.
 /
-. Your skill bonus is based on your level and is the same formula for all classes:;
+. Your skill bonus is based on your level and is the same formula for all classes:; Ваш бонус до навичок залежить від вашого рівня і має однакову формулу для всіх класів:
 /
-` Skill Bonus = (Level / 4) + 1;
+` Skill Bonus = (Level / 4) + 1; Бонус до навичок = (Рівень / 4) + 1
 /
-. Your defence is also affected by your circumstances:;
+. Your defence is also affected by your circumstances:; На ваш захист також впливають обставини:
 /
-` {Mod} defence when blind;
-` {Mod} defence when invisible;
-` {Mod} defence when displaced;
-` {Mod} defence when paralysed or sleeping;
-` {Mod} defence when stuck;
-` {Mod} defence when attacked from concealment;
+` {Mod} defence when blind; {Mod} захист при сліпоті
+` {Mod} defence when invisible; {Mod} захист при невидимості
+` {Mod} defence when displaced; {Mod} захист при переміщенні
+` {Mod} defence when paralysed or sleeping; {Mod} захист при паралічі або сні
+` {Mod} defence when stuck; {Mod} захист, коли застряг
+` {Mod} defence when attacked from concealment; {Mod} захист коли атакують з укриття
 /
-. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.;
-. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.;
-. Light armour has no speed penalty if you are unskilled.;
-. Unskilled use of armour also attracts a one point defence penalty.;
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Важка броня зробить вас на {UnskilledPenalty} повільнішими, якщо ви некваліфіковані, і на {SkilledPenalty} повільнішими, якщо ви вмілі.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Середня броня на {UnskilledPenalty} повільніша, якщо ви не вмілі, інакше регулювання швидкості не відбудеться.
+. Light armour has no speed penalty if you are unskilled.; Легка броня не має штрафів до швидкості, якщо ви не маєте навичок.
+. Unskilled use of armour also attracts a one point defence penalty.; Невміле використання обладунків також тягне за собою штраф в одне очко в захисті.
 /
-. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.;
-. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.;
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Модифікатор спритності застосовується до вашого захисту, коли ви вправно володієте всіма елементами броні.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Обмежується до +4 коли одягнуто середні обладунки, та до +2 коли одягнуто важкі обладунки.
 
-# Skills;
-. Each skill has a rating between 0 and 2000 and there are five competency levels.;
+# Skills; Навички
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; Кожна навичка має значення від 0 до 2000 та має п'ять рівнів майстерності.
 /
-` (0) Proficient =    0..199;
-` (1) Specialist =  200..499;
-` (2) Expert     =  500..999;
-` (3) Master     = 1000..1999;
-` (4) Champion   = 2000;
+` (0) Proficient =    0..199; Умілий
+` (1) Specialist =  200..499; Фахівець
+` (2) Expert     =  500..999; Експерт
+` (3) Master     = 1000..1999; Майстер
+` (4) Champion   = 2000; Чемпіон
 /
-. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.;
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; Показники навичок покращуються з практикою (атака зброєю чи уникнення ворожих атак використовуючи обладунки)
 /
-. Weapon skill gives you the competency level as an attack bonus and to damage.;
-. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.;
-. This bonus to damage is doubled on a critical hit.;
+. Weapon skill gives you the competency level as an attack bonus and to damage.; Навичка зброї надає вам рівень майстерності як бонус до атаки та до шкоди.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; Наприклад, майстер важкого меча отримує +3 до атаки та +3 до шкоди, використовуючи двуручний меч.
+. This bonus to damage is doubled on a critical hit.; Цей бонус до шкоди подвоюється під час критичних влучань.
 /
-. Armour skill gives you the competency level as a defence bonus.;
-. For example, an expert in heavy armour receives +2 defence when wearing plate mail.;
-. The defence bonus is the average of the skill levels on each piece of equipped armour.;
-. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.;
+. Armour skill gives you the competency level as a defence bonus.; Навичка обладунків надає вам рівень майстерності як бонус до захисту.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; Наприклад, експерт у важких обладунках отримує +2 до захисту, коли носить лати.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; Захисний бонус є середнім значенням рівнів навичок на кожному з одягнених елементів обладунків.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; Наприклад, експерт (2) у важких обладунках, який лише вміє (0) у легких обладунках, носить пластинчасту броню (важка) та малий щит (легкий), отже, матиме бонус до захисту +1.
 /
-. Skill in schools of magic improves the casting range and has better effects at each competency level.;
-. These skills are practised by learning and casting spells.;
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; Вміння в школах магії покращує дальність заклинань і має кращі ефекти на кожному рівні майстерності.
+. These skills are practised by learning and casting spells.; Ці навички практикуються шляхом вивчення та накладання заклинань.
 
-# Life;
-. {LifeDefinition};
-. Your starting life is determined by your race and class plus your constitution modifier.;
-. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.;
-. There are also magical means to increase your life potential.;
-. However, life cannot be increased past the maximum potential plus your constitution score.;
+# Life; Життя
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; Ваше початкове життя визначається вашою расою та класом, а також модифікатором витривалості (CON).
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Коли ви підвищуєте рівень досвіду, ваше життя збільшується на випадкову кількість, визначену вашою расою та класом, плюс модифікатор вашої витривалості (CON).
+. There are also magical means to increase your life potential.; Існують також магічні засоби для збільшення вашого життєвого потенціалу.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Проте життя не може перевищувати максимальний потенціал плюс ваш показник витривалості (CON).
 /
 ` Initial = Class base + Race base + {CON} modifier;
 ` Advancement = Class roll + Race roll + {CON} modifier;
 ` Limit = Initial + max(Advancement) x Level + {CON} score;
 /
-. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.;
-. Sleeping improves recovery by halving the number of turns.;
-. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.;
-. Life regeneration guarantees the recovery at one point per turn.;
-. The {inediate} diet slows recovery of life by doubling the number of turns.;
-. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;
-. Active {phasing} prevents the natural recovery of life.;
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; Життя природно відновлюється на один пункт за ({LevelCap} - Рівень - {CON} модифікатор) ходів.
+. Sleeping improves recovery by halving the number of turns.; Сон покращує відновлення, зменшуючи кількість ходів удвічі.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; Голод змушує життя відновлюватися на один пункт за {StarvationRecoveryRate} ходів.
+. Life regeneration guarantees the recovery at one point per turn.; Регенераця життя гарантує відновлення на один пункт за хід.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; Дієта {inediate} сповільнює відновлення життя, подвоюючи кількість ходів.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.; Коли властивість {hunger} присутня в поєднанні з дієтою {inediate}, життя більше не буде природно відновлюватися. Однак, з додаванням {life regeneration}, життя відновлюватиметься звичайним повільнішим темпом.
+. Active {phasing} prevents the natural recovery of life.; Активне {phasing} запобігає природному відновленню життя.
 
-# Mana;
-. {ManaDefinition};
-. There are no adverse effects for exhausting your mana.;
-. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.;
-. There are also magical means to increase your mana potential.;
-. However, mana cannot be increased past the maximum potential plus your wisdom score.;
+# Mana; Мана
+. {ManaDefinition}; {ManaDefinition}
+. There are no adverse effects for exhausting your mana.; Немає негативних наслідків від вичерпання вашої мани.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Коли ви підвищуєте рівень досвіду, ваша мана збільшується на випадкову кількість, визначену вашою расою та класом, плюс ваш модифікатор мудрості.
+. There are also magical means to increase your mana potential.; Існують також магічні засоби для збільшення вашого потенціалу мани.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Проте, ману не можна збільшити понад максимальний потенціал плюс ваш показник мудрості.
 /
 ` Initial = Class base + Race base + {WIS} modifier;
 ` Advancement = Class roll + Race roll + {WIS} modifier;
 ` Limit = Initial + max(Advancement) x Level + {WIS} score;
 /
-. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.;
-. Sleeping improves recovery by halving the number of turns.;
-. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.;
-. Mana regeneration guarantees the recovery at one point per turn.;
-. The {inediate} diet slows recovery of mana by doubling the number of turns;
-. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.;
-. Active {phasing} prevents the natural recovery of mana.;
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Мана природно відновлюється на один пункт за ({LevelCap} - Рівень - {WIS} модифікатор) ходів.
+. Sleeping improves recovery by halving the number of turns.; Сон покращує відновлення, зменшуючи кількість ходів удвічі.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; Голод змушує ману відновлюватися на один пункт за {StarvationRecoveryRate} ходів.
+. Mana regeneration guarantees the recovery at one point per turn.; Регенерація мани гарантує відновлення на один пункт за хід.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; Дієта {inediate} сповільнює відновлення мани, подвоюючи кількість ходів
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; Коли властивість {hunger} присутня в поєднанні з дієтою {inediate}, мана більше не буде природно відновлюватися. Однак, з додаванням {mana regeneration}, життя відновлюватиметься звичайним повільнішим темпом.
+. Active {phasing} prevents the natural recovery of mana.; Активне {phasing} запобігає природному відновленню мани.
 
-# Nutrition;
-. Maintaining a food supply is important to avoid starving to death.;
-. In desperate or pragmatic times you can eat corpses.;
+# Nutrition; Насиченість
+. Maintaining a food supply is important to avoid starving to death.; Підтримання постачання їжі важливе, щоб уникнути голодної смерті.
+. In desperate or pragmatic times you can eat corpses.; У відчайдушні або прагматичні часи можна їсти трупи.
 
-# Corpses;
-. The bodies of your enemies and allies can be a source of nutrition.;
-. Many corpses also convey harm and illness but some may impart beneficial talents.;
-. Be aware that cannibalism is considered a bad idea even in desperate times.;
+# Corpses; Трупи
+. The bodies of your enemies and allies can be a source of nutrition.; Тіла ваших ворогів і союзників можуть бути джерелом насичення.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; Багато трупів також передають шкоду та хвороби, але деякі можуть наділяти корисними талантами.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; Будьте обережні, що канібалізм вважається поганою ідеєю навіть у безвихідних ситуаціях.
 
-# Encumbrance;
-. Everything you pick up adds to your encumbrance and you may become burdened.;
-. This will slow down your movement and makes you easy prey to the denizens of the dungeon.;
+# Encumbrance; Обтяження
+. Everything you pick up adds to your encumbrance and you may become burdened.; Все, що ви підбираєте, додає до вашого обтяження, і ви можете стати сильно обтяженим.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; Це сповільнить ваш рух і зробить вас легкою здобиччю для мешканців підземелля.
 /
 ` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight);
 
-# Resting;
-. The camp-fire action button toggles resting.;
-. While resting your life and mana recover at a faster rate.;
-. Companions will rest when you rest.;
-. Resting will be interrupted if there is a hostile in your zone.;
+# Resting; Відпочинок
+. The camp-fire action button toggles resting.; Кнопка з зображенням вогнища перемикає відпочинок.
+. While resting your life and mana recover at a faster rate.; Під час відпочинку ваші життя та мана відновлюються швидше.
+. Companions will rest when you rest.; Поки ви відпочиваєте, супутники також відпочивають.
+. Resting will be interrupted if there is a hostile in your zone.; Відпочинок буде перервано, якщо у вашій зоні є ворог.
 
-# Searching;
-. The eye action button toggles searching.;
-. Searching will find secret doors and concealed traps.;
-. Companions will search when you search to help find secrets.;
-. Searching will be interrupted if there is a hostile in your zone.;
+# Searching; Пошук
+. The eye action button toggles searching.; Кнопка з зображенням ока перемикає пошук
+. Searching will find secret doors and concealed traps.; Пошук допоможе знайти секретні двері та приховані пастки.
+. Companions will search when you search to help find secrets.; Поки ви використовуєте пошук, супутники також шукатимуть.
+. Searching will be interrupted if there is a hostile in your zone.; Пошук буде перервано, якщо у вашій зоні є ворог.
 
-# Abilities;
-. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.;
-. Your starting ability scores is determined by rolling 4d6 six times.;
-. The lowest roll from each set is dropped giving a score between 3 and 18.;
-. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.;
-. Racial limits are then applied as shown in help > races.;
-. Any points that are reduced by racial limits are transferred to another ability.;
+# Abilities; Здібності
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; Існують шість показників здібностей - сила, спритність, витривалість, інтелект, мудрість та харизма.
+. Your starting ability scores is determined by rolling 4d6 six times.; Ваші початкові показники здібностей визначаються шляхом кидання 4d6 шість разів.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; Найнижчий результат з кожного набору скидається, що дає оцінку від 3 до 18.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; Найвищі показники випадковим чином розподіляються між вашими основними здібностями, які показані в довідці > класи.
+. Racial limits are then applied as shown in help > races.; Расові обмеження тоді застосовуються, як показано в довідці > раси.
+. Any points that are reduced by racial limits are transferred to another ability.; Будь-які бали, які зменшуються через расові обмеження, переносяться на іншу здатність.
 /
 ` {AttributeCode} ({AttributeName}): {AttributeDescription};
 
-# Karma;
+# Karma; Карма
 . Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).;
 . Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.;
 . You can gain additional karma by donating gold to a priest at a shrine.;
@@ -226,20 +226,20 @@
 `   remove one curse;
 `   raise dead for one loyal companion;
 
-# Diets;
+# Diets; Дієти
 . Entities have different diets that allow them to eat specific materials.;
 /
 ` {DietName}: {MaterialNames};
 
-# Spells;
+# Spells; Заклинання
 . Spells are learned by studying from magical books found in the dungeon.;
 . Any class can learn spells but only the skilled will use their mana efficiently.;
 
-# Gold;
+# Gold; Золото
 . Gold is not considered as part of your encumbrance and has several purposes in the dungeon.;
 . Gold can be traded for items from merchants or donated to priests for karma.;
 
-# Companions;
+# Companions; Супутники
 . Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).;
 . Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).;
 . You can mount some types of companions and ride around the dungeon.;
@@ -249,7 +249,7 @@
 . A steed is useful when you are burdened and it is strong enough to take your load.;
 . To dismount your steed you need to long press/right click on your character.;
 
-# Engulfing;
+# Engulfing; Поглинання
 . Some entities can swallow or engulf other entities.;
 . When swallowed you will suffer damage each turn and can struggle until you are expelled.;
 . Alternatively, there are many mechanisms which can be used to escape.;
@@ -257,12 +257,12 @@
 . If you cast when engulfed the spell will hit your engulfer.;
 . However, beams may still bounce off walls and back through your engulfer and also hit you.;
 
-# Spawning;
+# Spawning; Поява
 . Monsters will randomly spawn into areas outside your current zone.;
 . The rate of spawning increases as you descend deeper into the dungeon.;
 . The talent of aggravation also increases the spawn rates for monsters.;
 
-# Polymorph;
+# Polymorph; Видозмінення
 . Transform into another entity with all the advantages or disadvantages that brings.;
 . For example, a dragon does not have hands but can fly and breathe deadly beams of energy.;
 . When you perish in your polymorphed form you will often revert to your original form.;
@@ -270,7 +270,7 @@
 . This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.;
 . To access polymorph-at-will you need to long press/right click on your character.;
 
-# Locks;
+# Locks; Замки
 . Doors and containers can be locked and possibly trapped.;
 . You can kick locks to break them but this will trigger any trap.;
 . Items such as skeleton keys and lock picks can be used to unlock.;
@@ -278,7 +278,7 @@
 . In addition, cursed items are twice as likely to break and blessed item are half as likely to break.;
 . There are other magical items and spells that can be used to unlock.;
 
-# Traps;Пастки
+# Traps; Пастки
 . Traps have a difficulty rating that reflects the lethality of the device.; Пастки мають рейтинг складності, який відображає летальність пристрою.
 . This difficulty rating is also the minimum dungeon level the trap can be generated.; Ця оцінка складності - це також мінімальний рівень підземелля, який можна створити.
 . The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.;
@@ -410,8 +410,8 @@
 . The server player will need to look up their IP address in device network settings and share with the client players.;Гравець, що створив сервер, повинен буде знайти свою IP-адресу в налаштуваннях мережі пристрою/інтернеті та поділитися з гравцями, що будуть приєднуватися.
 . Firewall settings and port forwarding may be required when playing over the internet.;Може знадобитися налаштувати брандамауер та зробити переадресацію порту для гри через інтернет.
 /
-. The HOST can use 3717 and tap CONNECT.;
-. The other players JOIN by typing in the host's IP Address and the port.;
+. The HOST can use 3717 and tap CONNECT.; ХОСТ може використовувати 3717 і натиснути ПІДКЛЮЧИТИ.
+. The other players JOIN by typing in the host's IP Address and the port.; Інші гравці ПРИЄДНУЮТЬСЯ, вводячи IP-адресу хоста та порт.
 . For example: 192.168.1.5:3717; Наприклад, 192.168.1.5:3717
 
 # Translations; Переклади
@@ -443,6 +443,6 @@
 - < | ascend to the previous dungeon level (even when not on a staircase); < | спуститися до наступного рівня підземелля (навіть коли ви не на сходах)
 - > | descend to the next dungeon level (even when not on a staircase); > | спуститися до наступного рівня підземелля (навіть коли ви не на сходах)
 - F5 | refresh the screen; F5 | оновити екран
-- F9 | quick load;
+- F9 | quick load; F9 | швидке завантаження
 /
 . There are additional manipulations built into the character panel and contextual help.;Більше дій можна знайти в панелі персонажа та в контекстуальній допомозі.

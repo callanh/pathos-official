@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,由玩家等级决定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱
 LiteralText,DIAGNOSTICS,调试
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,未录入
 LiteralText,diet,食性
 LiteralText,difficulty,难度
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,拿取
 LiteralText,TAKE ALL,拿取全部
 LiteralText,talents,天赋
 LiteralText,TALENTS,天赋
+LiteralText,TALK,
 LiteralText,TELEKINESIS,念力控制
 LiteralText,Telekinesis which direction?,向哪个方向施展念力控制？
 LiteralText,Telekinesis which object?,念力控制哪个物体？
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工设计的地图，地表世界的传奇冒险。脱离幽深禁闭的地牢，进行更具挑战的冒险。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房间和无尽的秘密等着你去探索，但是不要沉溺在其中，长时间停留在某一层会招致死亡。基于《破碎像素地牢》生成的地图。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex

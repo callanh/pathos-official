@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,플레이어 레벨에 따라 정해짐
 LiteralText,device,장치
 LiteralText,DEVICES,장치
 LiteralText,DIAGNOSTICS,진단 도구
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,순위 안에 들지 못함
 LiteralText,diet,식성
 LiteralText,difficulty,난이도
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,가져가기
 LiteralText,TAKE ALL,전부 가져가기
 LiteralText,talents,재능
 LiteralText,TALENTS,재능
+LiteralText,TALK,
 LiteralText,TELEKINESIS,염동
 LiteralText,Telekinesis which direction?,어느 방향으로 염동력을 씁니까?
 LiteralText,Telekinesis which object?,어느 물체에 염동력을 씁니까?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,손수 제작된 맵에서 위대한 모험을 떠납니다. 답답한 던전을 벗어나 도전정신을 자극하는 퀘스트를 시작해보세요!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos의 메카닉을 실험하기위한 샌드박스 입니다. 두개의 방으로 이루어진 맵에서 모든 아이템, 함정, 던전 시설을 마음껏 다룰 수 있습니다."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,다크 레거시
 ModuleName,Kaloi Opus,칼로이 오푸스
 ModuleName,Nethack Codex,넷핵 코덱스

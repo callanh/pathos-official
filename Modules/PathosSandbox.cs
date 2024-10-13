@@ -23,7 +23,8 @@ namespace Pathos
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.nethack_title);
-      AddTerms(new[] { Dungeon });
+
+      AddTerm(Dungeon);
     }
 
     public const string Dungeon = "Dungeon";
@@ -98,6 +99,48 @@ namespace Pathos
       MerchantParty.AddAlly(FirstMerchant, Clock.Zero, Delay.Zero);
       MerchantParty.AddAlly(SecondMerchant, Clock.Zero, Delay.Zero);
 
+      var MerchantInsultedJuncture = Generator.Adventure.World.AddJuncture("M-Insulted");
+
+      const string MerchantAnotherQuestion = "Ask another question";
+
+      var MerchantDialogue = Generator.Adventure.World.AddDialogue("M");
+      MerchantDialogue.Root.Document.Fragment("Hail adventurer, welcome to my humble shop. I offer a variety of self-explanatory goods and services and if necessary, will stoop to answer your inane questions.").Condition.Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Document.Fragment("I'll take your coin but you will get no more advice from the merchant guild. GOOD LUCK IDIOT!").Condition.After(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Branch("Can you tell me about your services?", N =>
+      {
+        N.Document.Fragment("I offer a wide variety of essential services for a small and reasonable fee. If you do not have enough coin to pay, never fear! I will wait patiently while you go find more.");
+        N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
+      }).Condition.Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Branch("Do you accept replica coins?", N =>
+      {
+        N.Document.Fragment("Absolutely not! Law abiding citizens like me can't even distinguish replica coins from real coins...");
+
+        N.Branch("Are you sure? I have plenty of replica coins to spend.", O =>
+        {
+          O.Document.Fragment("This is entrapment! I'm calling the kops to deal with you!");
+          O.Sequence.Add(MerchantInsultedJuncture);
+          O.Sequence.Add(Codex.Tricks.keystone_kops);
+        });
+
+        N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
+      }).Condition.Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Branch("Can you help me fight the monsters?", N =>
+      {
+        N.Document.Fragment("Of course, you may purchase my wares and services to aid you in battle. Philosophically though, it's important to understand that they are only 'monsters' from your point of view. To them, you are the 'monster'. To me, they are an important part of our economy, responsible for the liberation of expensive items, by force if necessary.");
+
+        N.Branch("That's a load of garbage and you know it.", O =>
+        {
+          O.Document.Fragment("That was a rude and ignorant thing to say. Good riddance pathetic adventurer, you'll get no more help from the merchant guild.");
+          O.Sequence.Add(MerchantInsultedJuncture);
+        });
+
+        N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
+      }).Condition.Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Branch("No further questions");
+
+      Generator.AssignDialogue(FirstMerchant, MerchantDialogue);
+      Generator.AssignDialogue(SecondMerchant, MerchantDialogue);
+
       Generator.PlaceBoulder(SandboxMap[15, 4], Codex.Blocks.stone_boulder, IsRigid: false);
 
       var FeatureX = 11;
@@ -171,7 +214,7 @@ namespace Pathos
       Generator.PlaceLockedHorizontalDoor(SpecialSquare, Codex.Gates.crystal_door, SandboxBarrier, Key: Codex.Items.Ruby_Key);
       //Generator.PlaceSpecificAsset(SpecialSquare.Adjacent(Direction.East), SpecialDoor.Key);
 
-      Generator.StartSquare(SandboxMap[18, 2]);
+      Generator.StartSquare(SandboxMap[15, 3]);
 
       //var KoboldEntity = Generator.Codex.Entities.kobold_shaman;
       //var KoboldSquare = SandboxMap[18, 4];

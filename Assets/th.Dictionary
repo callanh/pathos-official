@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,
 LiteralText,device,อุปกรณ์
 LiteralText,DEVICES,อุปกรณ์
 LiteralText,DIAGNOSTICS,การวินิจฉัย
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,ไม่ขึ้นแรงค์
 LiteralText,diet,สิ่งที่กิน
 LiteralText,difficulty,ความยาก
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,เก็บ
 LiteralText,TAKE ALL,เก็บทั้งหมด
 LiteralText,talents,พรสวรรค์
 LiteralText,TALENTS,พรสวรรค์
+LiteralText,TALK,
 LiteralText,TELEKINESIS,พลังโทรจิต
 LiteralText,Telekinesis which direction?,ใช้พลังโทรจิตไปทิศทางไหน
 LiteralText,Telekinesis which object?,ใช้พลังโทรจิตกับวัสถุไหน?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex

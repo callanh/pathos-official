@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,נקבע על פי רמת הדמות
 LiteralText,device,מכשיר
 LiteralText,DEVICES,מכשירים
 LiteralText,DIAGNOSTICS,דיאגנוסטיקה
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,לא בהיכל התהילה
 LiteralText,diet,תזונה
 LiteralText,difficulty,קושי
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,לקחת
 LiteralText,TAKE ALL,לקחת הכל
 LiteralText,talents,כשרונות
 LiteralText,TALENTS,כשרונות
+LiteralText,TALK,
 LiteralText,TELEKINESIS,טלקינזיס
 LiteralText,Telekinesis which direction?,באיזה כיוון להפעיל טלקינזיס?
 LiteralText,Telekinesis which object?,על איזה חפץ להפעיל טלקינזיס?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,מפות שצויירו ביד בהרפתקה אפית מעל פני האדמה. הדמות שלך יכולה להתרענן מהמבוכים המחניקים ולצאת להרפתקה מאתגרת.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"חדרים וסודות מעניינים מחכים לך, אבל אסור לך להתמהמה. הדמות שלך חייבת להמשיך לרדת או שהיא תמות. מבוסס על בניית המפה של שאטרד פיקסל דאנג'ן."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","ארגז חול שאפשר להתנסות בו במכניקה של פאתוס, ולשחק עם כל חפץ, מלכודת ומתקן של המבוך במפה פשוטה של שני חדרים."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex

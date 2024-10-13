@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,プレイヤーのレベルによって�
 LiteralText,device,罠
 LiteralText,DEVICES,罠
 LiteralText,DIAGNOSTICS,詳細設定/ファイル管理
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,ランク入りしていません
 LiteralText,diet,食性
 LiteralText,difficulty,困難
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,取る
 LiteralText,TAKE ALL,全て取る
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
+LiteralText,TALK,
 LiteralText,TELEKINESIS,念動力
 LiteralText,Telekinesis which direction?,どの方向に念動力を使う？
 LiteralText,Telekinesis which object?,どの物体に念動力を使う？
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex

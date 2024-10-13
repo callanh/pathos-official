@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,được đánh giá bởi cấp độ ng
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY
 LiteralText,DIAGNOSTICS,BỘ CHẨN ĐOÁN
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,KHÔNG XẾP HẠNG
 LiteralText,diet,chế độ ăn
 LiteralText,difficulty,độ khó
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,LẤY
 LiteralText,TAKE ALL,LẤY TẤT CẢ
 LiteralText,talents,tài năng
 LiteralText,TALENTS,TÀI NĂNG
+LiteralText,TALK,
 LiteralText,TELEKINESIS,CHUYỂN ĐỘNG TỪ XA
 LiteralText,Telekinesis which direction?,Chuyển động từ xa vào hướng nào?
 LiteralText,Telekinesis which object?,Chuyển động từ xa vật nào?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Di sản nhà Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex

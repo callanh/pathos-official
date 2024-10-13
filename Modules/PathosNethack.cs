@@ -14,11 +14,11 @@ namespace Pathos
   {
     internal NethackModule(Codex Codex)
       : base(
-          Handle: "nethack codex", 
-          Name: "Nethack Codex", 
-          Description: "Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.", 
-          Colour: Inv.Colour.MediumVioletRed, 
-          Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com", 
+          Handle: "nethack codex",
+          Name: "Nethack Codex",
+          Description: "Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.",
+          Colour: Inv.Colour.MediumVioletRed,
+          Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com",
           RequiresMasterMode: false)
     {
       this.Codex = Codex;
@@ -26,7 +26,9 @@ namespace Pathos
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
       SetTrack(Codex.Tracks.nethack_title);
-      AddTerms(NethackTerms.List);
+
+      foreach (var TermText in CollectStaticPublicConstantStrings(typeof(NethackTerms)))
+        AddTerm(TermText);
     }
 
     public override void Execute(Generator Generator)
@@ -39,22 +41,6 @@ namespace Pathos
 
   internal static class NethackTerms
   {
-    static NethackTerms()
-    {
-      var NethackNamesType = typeof(NethackTerms);
-
-      var NethackNamesList = new Inv.DistinctList<string>();
-
-      foreach (var FieldInfo in NethackNamesType.GetReflectionFields())
-      {
-        if (FieldInfo.IsStatic && FieldInfo.IsPublic && FieldInfo.FieldType == typeof(string))
-          NethackNamesList.Add((string)FieldInfo.GetValue(NethackNamesType));
-      }
-
-      List = NethackNamesList;
-    }
-
-    public static readonly IReadOnlyList<string> List;
     public const string Dungeon = "Dungeon";
     public const string Minetown = "Minetown";
     public const string Mines = "Mines";

@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,determinato dal livello del giocatore
 LiteralText,device,apparecchio
 LiteralText,DEVICES,TRAPPOLE
 LiteralText,DIAGNOSTICS,DIAGNOSTICA
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,NON CLASSIFICATO
 LiteralText,diet,dieta
 LiteralText,difficulty,difficoltà
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,PRENDI
 LiteralText,TAKE ALL,PRENDI TUTTO
 LiteralText,talents,talenti
 LiteralText,TALENTS,TALENTI
+LiteralText,TALK,
 LiteralText,TELEKINESIS,TELECINESI
 LiteralText,Telekinesis which direction?,In quale direzione vuoi usare telecinesi?
 LiteralText,Telekinesis which object?,Su quale oggetto vuoi usare telecinesi?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Avventurati in questa mappa creata ad-hoc per andare alla ricerca dei segreti delle chiavi del drago. Prenditi una pausa dai confini dei sotterranei e lanciati in questa nuova avventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Stanze barocche e segreti misteriosi ti attendono ma non indugiare; dovrai scendere o morire. Basato sulla mappa di Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Per sperimentare con le meccaniche di Pathos. Gioca con ogni oggetto e trappola del dungeon in una semplice mappa a due stanze.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloimachia
 ModuleName,Nethack Codex,Nethack Codex

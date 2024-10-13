@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,a játékos szintje határozza meg
 LiteralText,device,eszköz
 LiteralText,DEVICES,ESZKÖZÖK
 LiteralText,DIAGNOSTICS,DIAGNOSZTIKA
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,NEM ÉRT EL HELYEZÉST ITT:
 LiteralText,diet,étrend
 LiteralText,difficulty,nehézség
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,FELVESZ
 LiteralText,TAKE ALL,ÖSSZES ELVÉTELE
 LiteralText,talents,készségek
 LiteralText,TALENTS,KÉSZSÉGEK
+LiteralText,TALK,
 LiteralText,TELEKINESIS,TELEKINÉZIS
 LiteralText,Telekinesis which direction?,Melyik irányba történjen telekinézis?
 LiteralText,Telekinesis which object?,Melyik objektumon történjen telekinézis?
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak örökség
 ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack-Kódex

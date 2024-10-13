@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,oyuncu tarafından belirlenmiş
 LiteralText,device,cihaz
 LiteralText,DEVICES,ALETLER
 LiteralText,DIAGNOSTICS,TEŞHİS
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,SIRAYA ALINMADI
 LiteralText,diet,diyet
 LiteralText,difficulty,zorluk
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,AL
 LiteralText,TAKE ALL,HEPSİNİ AL
 LiteralText,talents,yetenekler
 LiteralText,TALENTS,YETENEKLER
+LiteralText,TALK,
 LiteralText,TELEKINESIS,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Dağlardan ovalardan geçen el yapımı bir macera. Zindanın limitlerinden kurtul ve zorlayıcı bir maceraya atıl.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Mirası
 ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Kodeksi

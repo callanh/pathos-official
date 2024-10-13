@@ -3291,6 +3291,8 @@ LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,МЕХАНИЗМЫ
 LiteralText,DIAGNOSTICS,ДИАГНОСТИКА
+LiteralText,DIALOGUE,
+LiteralText,dialogue?,
 LiteralText,DID NOT RANK,НЕ РАНЖИРУЕТСЯ
 LiteralText,diet,питание
 LiteralText,difficulty,
@@ -3737,6 +3739,7 @@ LiteralText,TAKE,ПОДНЯТЬ
 LiteralText,TAKE ALL,ПОДНЯТЬ ВСЁ
 LiteralText,talents,таланты
 LiteralText,TALENTS,ТАЛАНТЫ
+LiteralText,TALK,
 LiteralText,TELEKINESIS,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
@@ -3882,6 +3885,7 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Виейдите за границы подземелий и приступайте к выполнению Квеста.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, капанми и подземными механизмами на простой двухкомнатной карте."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,
 ModuleName,Nethack Codex,Nethack Codex
