@@ -11,11 +11,11 @@ namespace Pathos
   {
     internal SandboxModule(Codex Codex)
       : base(
-          Handle: "sandbox play", 
-          Name: "Sandbox Play", 
-          Description: "Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.", 
-          Colour: Inv.Colour.DarkGoldenrod, 
-          Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com", 
+          Handle: "sandbox play",
+          Name: "Sandbox Play",
+          Description: "Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
+          Colour: Inv.Colour.DarkGoldenrod,
+          Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com",
           RequiresMasterMode: true)
     {
       this.Codex = Codex;
@@ -104,14 +104,14 @@ namespace Pathos
       const string MerchantAnotherQuestion = "Ask another question";
 
       var MerchantDialogue = Generator.Adventure.World.AddDialogue("M");
-      MerchantDialogue.Root.Document.Fragment("Hail adventurer, welcome to my humble shop. I offer a variety of self-explanatory goods and services and if necessary, will stoop to answer your inane questions.").Condition.Before(MerchantInsultedJuncture);
-      MerchantDialogue.Root.Document.Fragment("I'll take your coin but you will get no more advice from the merchant guild. GOOD LUCK IDIOT!").Condition.After(MerchantInsultedJuncture);
-      MerchantDialogue.Root.Branch("Can you tell me about your services?", N =>
+      MerchantDialogue.Root.Document.Fragment("Hail adventurer, welcome to my humble shop. I offer a variety of self-explanatory goods and services and if necessary, will stoop to answer your inane questions.").Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Document.Fragment("I'll take your coin but you will get no more advice from the merchant guild. GOOD LUCK IDIOT!").After(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Branch(D => D.Fragment("Can you tell me about your services?").Before(MerchantInsultedJuncture), N =>
       {
         N.Document.Fragment("I offer a wide variety of essential services for a small and reasonable fee. If you do not have enough coin to pay, never fear! I will wait patiently while you go find more.");
         N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
-      }).Condition.Before(MerchantInsultedJuncture);
-      MerchantDialogue.Root.Branch("Do you accept replica coins?", N =>
+      });
+      MerchantDialogue.Root.Branch(D => D.Fragment("Do you accept replica coins?").Before(MerchantInsultedJuncture), N =>
       {
         N.Document.Fragment("Absolutely not! Law abiding citizens like me can't even distinguish replica coins from real coins...");
 
@@ -123,8 +123,8 @@ namespace Pathos
         });
 
         N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
-      }).Condition.Before(MerchantInsultedJuncture);
-      MerchantDialogue.Root.Branch("Can you help me fight the monsters?", N =>
+      });
+      MerchantDialogue.Root.Branch(D => D.Fragment("Can you help me fight the monsters?").Before(MerchantInsultedJuncture), N =>
       {
         N.Document.Fragment("Of course, you may purchase my wares and services to aid you in battle. Philosophically though, it's important to understand that they are only 'monsters' from your point of view. To them, you are the 'monster'. To me, they are an important part of our economy, responsible for the liberation of expensive items, by force if necessary.");
 
@@ -135,7 +135,7 @@ namespace Pathos
         });
 
         N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
-      }).Condition.Before(MerchantInsultedJuncture);
+      });
       MerchantDialogue.Root.Branch("No further questions");
 
       Generator.AssignDialogue(FirstMerchant, MerchantDialogue);
