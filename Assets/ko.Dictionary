@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},{FeatureName} 부수기
 FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
-FormatText,Congratulations on reaching the end of the {QuestName}!,{QuestName} 퀘스트의 끝에 도달하신 것을 축하드립니다!
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
 FormatText,decrease all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 감소시킨다
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,숨기기
 LiteralText,CONCEALED,숨겨짐
 LiteralText,CONDUCT,행위
 LiteralText,CONFIRM,확인
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,마지막 레벨에 도달하여 당신의 숙적을 물리친것을 축하합니다.
 LiteralText,Connect to game hosted by another player.,다른 플레이어가 호스트한 게임에 연결
 LiteralText,CONSOLE,콘솔
 LiteralText,CONTACT,연락하기
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,던졌다
 LiteralText,THROW,던지기
 LiteralText,tin,통조림
-LiteralText,To complete this game you need to escape the dungeon on the first level.,게임을 완료하기 위해서는 첫층에서 던전을 탈출해야 합니다.
-LiteralText,To complete this game you need to escape through the final transportal.,게임을 완료하기 위해서는 마지막 포탈을 통과해야 합니다.
 LiteralText,TOO BIG,너무 큼
 LiteralText,TOO HEAVY,너무 무거움
 LiteralText,TOO HUNGRY,너무 배고픔
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,동굴 마을
 ModuleTerm,cellar,지하실
 ModuleTerm,Cemetery,공동묘지
 ModuleTerm,Chicken Farm,닭 농장
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,마지막 레벨에 도달하여 당신의 숙적을 물리친것을 축하합니다.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,{QuestName} 퀘스트의 끝에 도달하신 것을 축하드립니다!
 ModuleTerm,Cow Farm,소 농장
 ModuleTerm,Crater,분화구
 ModuleTerm,Crypt,토굴
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,이상한 말
 ModuleTerm,strange pig,이상한 돼지
 ModuleTerm,strange seal,이상한 물개
 ModuleTerm,strange sheep,이상한 양
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,게임을 완료하기 위해서는 첫층에서 던전을 탈출해야 합니다.
+ModuleTerm,To complete this game you need to escape through the final rift.,게임을 완료하기 위해서는 마지막 균열 을 통과해야 합니다.
+ModuleTerm,To complete this game you need to escape through the final transportal.,게임을 완료하기 위해서는 마지막 포탈을 통과해야 합니다.
 ModuleTerm,Topaz Mine,토파즈 광산
 ModuleTerm,Tree Maze,나무 미로
 ModuleTerm,trove,보물 창고

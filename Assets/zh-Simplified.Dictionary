@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},破坏 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封顶
 FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
-FormatText,Congratulations on reaching the end of the {QuestName}!,恭喜，您已通关冒险 {QuestName}！
 FormatText,cripple {AttributeName},损害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,隐藏
 LiteralText,CONCEALED,隐藏
 LiteralText,CONDUCT,计数
 LiteralText,CONFIRM,确认
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,恭喜你通过了最后一层并且消灭了你的宿敌。
 LiteralText,Connect to game hosted by another player.,连接其他玩家创建的游戏
 LiteralText,CONSOLE,控制台
 LiteralText,CONTACT,联系
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,扔了
 LiteralText,THROW,投掷
 LiteralText,tin,罐头
-LiteralText,To complete this game you need to escape the dungeon on the first level.,要赢得游戏，您在返回时需要从一层的出口逃离地牢。
-LiteralText,To complete this game you need to escape through the final transportal.,您需要从最终的传送门逃脱以完成游戏。
 LiteralText,TOO BIG,过大
 LiteralText,TOO HEAVY,超重
 LiteralText,TOO HUNGRY,过于饥饿
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,洞穴小镇
 ModuleTerm,cellar,地窖
 ModuleTerm,Cemetery,墓园
 ModuleTerm,Chicken Farm,养鸡场
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,恭喜你通过了最后一层并且消灭了你的宿敌。
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,恭喜，您已通关冒险 {QuestName}！
 ModuleTerm,Cow Farm,牧牛场
 ModuleTerm,Crater,陨石坑
 ModuleTerm,Crypt,地穴
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,奇怪的马
 ModuleTerm,strange pig,奇怪的猪
 ModuleTerm,strange seal,奇怪的海豹
 ModuleTerm,strange sheep,奇怪的绵羊
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,要赢得游戏，您在返回时需要从一层的出口逃离地牢。
+ModuleTerm,To complete this game you need to escape through the final rift.,您需要从最终的裂隙逃脱以完成游戏。
+ModuleTerm,To complete this game you need to escape through the final transportal.,您需要从最终的传送门逃脱以完成游戏。
 ModuleTerm,Topaz Mine,黄玉矿区
 ModuleTerm,Tree Maze,巨木森林
 ModuleTerm,trove,贵重物

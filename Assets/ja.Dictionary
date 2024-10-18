@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
-FormatText,Congratulations on reaching the end of the {QuestName}!,あなたは{QuestName}の終点にたどり着きました。おめでとう！
 FormatText,cripple {AttributeName},{AttributeName}が激減
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
 FormatText,decrease all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}減少
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,隠す
 LiteralText,CONCEALED,隠れた
 LiteralText,CONDUCT,行為
 LiteralText,CONFIRM,確認
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,ダンジョンの最深部までたどり着き、見事宿敵を倒してのけたことをお祝いします。
 LiteralText,Connect to game hosted by another player.,他のプレイヤーがホストしているゲームに接続
 LiteralText,CONSOLE,コンソール
 LiteralText,CONTACT,メールする
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,を投げた
 LiteralText,THROW,投げる
 LiteralText,tin,の缶詰
-LiteralText,To complete this game you need to escape the dungeon on the first level.,このゲームを完了するには、1階からダンジョンを脱出する必要があります。
-LiteralText,To complete this game you need to escape through the final transportal.,このゲームを完了するには、あなたは最後のワープソーンを通って逃げる必要があります。
 LiteralText,TOO BIG,大きすぎる
 LiteralText,TOO HEAVY,重すぎる
 LiteralText,TOO HUNGRY,空腹すぎる
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,洞窟の街
 ModuleTerm,cellar,地下室
 ModuleTerm,Cemetery,墓地
 ModuleTerm,Chicken Farm,鶏牧場
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,ダンジョンの最深部までたどり着き、見事宿敵を倒してのけたことをお祝いします。
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,あなたは{QuestName}の終点にたどり着きました。おめでとう！
 ModuleTerm,Cow Farm,牛牧場
 ModuleTerm,Crater,クレーター
 ModuleTerm,Crypt,地下墓所
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,妙な馬
 ModuleTerm,strange pig,妙な豚
 ModuleTerm,strange seal,妙なアザラシ
 ModuleTerm,strange sheep,妙な羊
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,このゲームを完了するには、1階からダンジョンを脱出する必要があります。
+ModuleTerm,To complete this game you need to escape through the final rift.,このゲームを完了するには、あなたは最後のワープソーンを通って逃げる必要があります。
+ModuleTerm,To complete this game you need to escape through the final transportal.,このゲームを完了するには、あなたは最後のワープソーンを通って逃げる必要があります。
 ModuleTerm,Topaz Mine,トパーズ鉱山
 ModuleTerm,Tree Maze,緑の迷路
 ModuleTerm,trove,地下蔵

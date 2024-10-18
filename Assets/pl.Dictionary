@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,cap {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} na jaki przedmiot
 FormatText,Cast {SpellName} which direction?,{SpellName} w którą stronę?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Gratulacje z okazji ukończenia {QuestName}!
 FormatText,cripple {AttributeName},Cripple {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,UKRYJ
 LiteralText,CONCEALED,UKRYTY
 LiteralText,CONDUCT,KONDYCJA
 LiteralText,CONFIRM,POTWIERDŹ
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Gratulacje za przejście do ostatniego poziomu i pokonanie swojego nemezis.
 LiteralText,Connect to game hosted by another player.,Połącz się z grą prowadzoną przez innego gracza.
 LiteralText,CONSOLE,KONSOLA
 LiteralText,CONTACT,KONTAKT
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,rzucił
 LiteralText,THROW,rzucić
 LiteralText,tin,puszka
-LiteralText,To complete this game you need to escape the dungeon on the first level.,"Aby ukończyć tę grę, musisz uciec z lochu na pierwszym poziomie."
-LiteralText,To complete this game you need to escape through the final transportal.,Aby ukończyć tę grę musisz uciec przez końcowy transportal.
 LiteralText,TOO BIG,ZA DUŻY
 LiteralText,TOO HEAVY,ZA CIĘŻKI
 LiteralText,TOO HUNGRY,ZBYT GŁODNY
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,
 ModuleTerm,cellar,piwnica
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Gratulacje za przejście do ostatniego poziomu i pokonanie swojego nemezis.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Gratulacje z okazji ukończenia {QuestName}!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,
 ModuleTerm,strange pig,
 ModuleTerm,strange seal,
 ModuleTerm,strange sheep,
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,"Aby ukończyć tę grę, musisz uciec z lochu na pierwszym poziomie."
+ModuleTerm,To complete this game you need to escape through the final rift.,Aby ukończyć tę grę musisz uciec przez końcowy rift.
+ModuleTerm,To complete this game you need to escape through the final transportal.,Aby ukończyć tę grę musisz uciec przez końcowy transportal.
 ModuleTerm,Topaz Mine,
 ModuleTerm,Tree Maze,
 ModuleTerm,trove,trove

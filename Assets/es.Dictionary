@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},romper {FeatureName}
 FormatText,cap {Percent}%,límite {Percent}%
 FormatText,Cast {SpellName} on which item?,¿Lanzar {SpellName} en qué objeto?
 FormatText,Cast {SpellName} which direction?,¿Lanzar {SpellName} en qué dirección?
-FormatText,Congratulations on reaching the end of the {QuestName}!,¡Felicitaciones por llegar al final de {QuestName}!
 FormatText,cripple {AttributeName},lisiar {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},disminuye {AttributeName} en {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},disminuye todas las habilidades en {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,OCULTAR
 LiteralText,CONCEALED,OCULTADO
 LiteralText,CONDUCT,CONDUCTA
 LiteralText,CONFIRM,CONFIRMA PARA
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Felicitaciones por haber llegado al nivel final y haber derrotado a tu némesis.
 LiteralText,Connect to game hosted by another player.,Conéctate al juego hosteado por otro jugador.
 LiteralText,CONSOLE,CONSOLA
 LiteralText,CONTACT,CONTACTO
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,arrojó
 LiteralText,THROW,ARROJAR
 LiteralText,tin,lata de
-LiteralText,To complete this game you need to escape the dungeon on the first level.,Para completar este juego debes escapar del calabozo en el primer nivel.
-LiteralText,To complete this game you need to escape through the final transportal.,Para completar este juego debes escapar a través del teletransportador final.
 LiteralText,TOO BIG,MUY GRANDE
 LiteralText,TOO HEAVY,DEMASIADO PESADO
 LiteralText,TOO HUNGRY,MUY HAMBRIENTO
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,
 ModuleTerm,cellar,sótano
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Felicitaciones por haber llegado al nivel final y haber derrotado a tu némesis.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,¡Felicitaciones por llegar al final de {QuestName}!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,
 ModuleTerm,strange pig,
 ModuleTerm,strange seal,
 ModuleTerm,strange sheep,
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Para completar este juego debes escapar del calabozo en el primer nivel.
+ModuleTerm,To complete this game you need to escape through the final rift.,Para completar este juego debes escapar a través del grieta final.
+ModuleTerm,To complete this game you need to escape through the final transportal.,Para completar este juego debes escapar a través del teletransportador final.
 ModuleTerm,Topaz Mine,
 ModuleTerm,Tree Maze,
 ModuleTerm,trove,tesoro

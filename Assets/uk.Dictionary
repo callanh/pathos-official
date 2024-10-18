@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},зламати {FeatureName}
 FormatText,cap {Percent}%,максимум {Percent}%
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Вітаємо із завершенням {QuestName}!
 FormatText,cripple {AttributeName},скалічило {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},зменшити {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},зменшити всі здібності на {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,ЗАХОВАТИ
 LiteralText,CONCEALED,ЗАХОВАНІ
 LiteralText,CONDUCT,СУПРОВОДЖУЄ
 LiteralText,CONFIRM,ПІДТВЕРДИТИ
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Вітаємо вас із досягненням фінального рівня і перемогою над головним ворогом.
 LiteralText,Connect to game hosted by another player.,Під’єднатися до гри створеної іншим гравцем.
 LiteralText,CONSOLE,КОНСОЛЬ
 LiteralText,CONTACT,ЗВ'ЯЗОК
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,жбурнув
 LiteralText,THROW,ЖБУРНУТИ
 LiteralText,tin,консерви
-LiteralText,To complete this game you need to escape the dungeon on the first level.,"Щоб завершити гру, ви маєте покинути підземелля на першому рівні."
-LiteralText,To complete this game you need to escape through the final transportal.,"Щоб завершити гру, ви маєте вийти через кінцевий транспортал."
 LiteralText,TOO BIG,ЗАНАДТО ВЕЛИКА
 LiteralText,TOO HEAVY,ЗАНАДТО ВАЖКИЙ
 LiteralText,TOO HUNGRY,ЗАНАДТО ГОЛОДНИЙ
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,Печерне місто
 ModuleTerm,cellar,льох
 ModuleTerm,Cemetery,Кладовище
 ModuleTerm,Chicken Farm,Ферма курок
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Вітаємо вас із досягненням фінального рівня і перемогою над головним ворогом.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Вітаємо із завершенням {QuestName}!
 ModuleTerm,Cow Farm,Ферма корів
 ModuleTerm,Crater,Кратер
 ModuleTerm,Crypt,Крипта
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,Дивний кінь
 ModuleTerm,strange pig,Дивна свиння
 ModuleTerm,strange seal,Дивний тюлень
 ModuleTerm,strange sheep,Дивна вівця
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,"Щоб завершити гру, ви маєте покинути підземелля на першому рівні."
+ModuleTerm,To complete this game you need to escape through the final rift.,"Щоб завершити гру, ви маєте вийти через кінцевий яма."
+ModuleTerm,To complete this game you need to escape through the final transportal.,"Щоб завершити гру, ви маєте вийти через кінцевий транспортал."
 ModuleTerm,Topaz Mine,Топазова шахта
 ModuleTerm,Tree Maze,Древесний Лабіринт
 ModuleTerm,trove,скарбниця

@@ -78,6 +78,9 @@ namespace Pathos
     public const string cellar = "cellar";
     public const string trove = "trove";
     public const string level = "level//depth";
+
+    public const string Congratulations_on_making_it_to_the_final_level_and_defeating_your_nemesis = "Congratulations on making it to the final level and defeating your nemesis.";
+    public const string To_complete_this_game_you_need_to_escape_the_dungeon_on_the_first_level = "To complete this game you need to escape the dungeon on the first level.";
   }
 
   internal sealed class NethackMaker
@@ -1159,6 +1162,9 @@ namespace Pathos
 
             // has the endgame letter.
             var LetterAsset = Generator.NewSpecificAsset(UniqueSquare, Codex.Items.Stamped_Letter);
+            Generator.InscribeAsset(LetterAsset, 
+              NethackTerms.Congratulations_on_making_it_to_the_final_level_and_defeating_your_nemesis + "|" + 
+              NethackTerms.To_complete_this_game_you_need_to_escape_the_dungeon_on_the_first_level);
             UniqueCharacter.Inventory.Carried.Add(LetterAsset);
           }
           else

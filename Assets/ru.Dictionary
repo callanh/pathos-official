@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},сломать {FeatureName}
 FormatText,cap {Percent}%,предел {Percent}%
 FormatText,Cast {SpellName} on which item?,Наложить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Наложить {SpellName} в каком направлении?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},уменьшение {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},уменьшение всех характеристик на {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,СПРЯТАТЬ
 LiteralText,CONCEALED,СПРЯТАНО
 LiteralText,CONDUCT,ПОВЕДЕНИЕ
 LiteralText,CONFIRM,ПОДТВЕРДИТЬ
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
 LiteralText,Connect to game hosted by another player.,"Подключение к игре, организованной другим игроком."
 LiteralText,CONSOLE,КОНСОЛЬ
 LiteralText,CONTACT,СВЯЗЬ
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,кидает
 LiteralText,THROW,КИНУТЬ
 LiteralText,tin,консервы
-LiteralText,To complete this game you need to escape the dungeon on the first level.,"Чтобы завершить игру, вы должны покинуть подземелье на первом уровне."
-LiteralText,To complete this game you need to escape through the final transportal.,"Чтобы завершить игру, вы должны сесть на конечный транспорт."
 LiteralText,TOO BIG,СЛИШКОМ ВЕЛИК
 LiteralText,TOO HEAVY,СЛИШКОМ ТЯЖЁЛ
 LiteralText,TOO HUNGRY,СЛИШКОМ ГОЛОДЕН
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,Пещерный город
 ModuleTerm,cellar,подвал
 ModuleTerm,Cemetery,Кладбище
 ModuleTerm,Chicken Farm,Куриная ферма
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
 ModuleTerm,Cow Farm,Коровья ферма
 ModuleTerm,Crater,Кратер
 ModuleTerm,Crypt,Склеп
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,странная лошадь
 ModuleTerm,strange pig,странная свинья
 ModuleTerm,strange seal,странный тюлень
 ModuleTerm,strange sheep,странная овца
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,"Чтобы завершить игру, вы должны покинуть подземелье на первом уровне."
+ModuleTerm,To complete this game you need to escape through the final rift.,"Чтобы завершить игру, вы должны сесть на конечный транспорт."
+ModuleTerm,To complete this game you need to escape through the final transportal.,"Чтобы завершить игру, вы должны сесть на конечный транспорт."
 ModuleTerm,Topaz Mine,Топазовая шахта
 ModuleTerm,Tree Maze,Лабиринт деревьев
 ModuleTerm,trove,клад

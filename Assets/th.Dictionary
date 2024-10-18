@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
-FormatText,Congratulations on reaching the end of the {QuestName}!,ยินดีด้วยคุณได้มาถึงจุดสิ้นสุดของ {QuestName} แล้ว!
 FormatText,cripple {AttributeName},พิการด้าน{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ลด{AttributeName}ลง {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ลดทุกทักษะลง {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,อำพราง
 LiteralText,CONCEALED,อำพรางแล้ว
 LiteralText,CONDUCT,การปฏิบัติ
 LiteralText,CONFIRM,ยืนยัน
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,ยินดีด้วยที่คุณสามารถมาถึงชั้นสุดท้ายและพิชิตศัตรูตัวฉกาจของคุณได้
 LiteralText,Connect to game hosted by another player.,เชื่อมต่อกับห้องของผู้เล่นคนอื่น
 LiteralText,CONSOLE,แผงควบคุม
 LiteralText,CONTACT,ติดต่อ
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,ขว้าง
 LiteralText,THROW,ขว้าง
 LiteralText,tin,ดีบุก
-LiteralText,To complete this game you need to escape the dungeon on the first level.,
-LiteralText,To complete this game you need to escape through the final transportal.,
 LiteralText,TOO BIG,ตัวใหญ่เกินไป
 LiteralText,TOO HEAVY,ตัวหนักเกินไป
 LiteralText,TOO HUNGRY,หิวเกินไป
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,
 ModuleTerm,cellar,ห้องใต้ดิน
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,ยินดีด้วยที่คุณสามารถมาถึงชั้นสุดท้ายและพิชิตศัตรูตัวฉกาจของคุณได้
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,ยินดีด้วยคุณได้มาถึงจุดสิ้นสุดของ {QuestName} แล้ว!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,
 ModuleTerm,strange pig,
 ModuleTerm,strange seal,
 ModuleTerm,strange sheep,
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,
+ModuleTerm,To complete this game you need to escape through the final rift.,
+ModuleTerm,To complete this game you need to escape through the final transportal.,
 ModuleTerm,Topaz Mine,
 ModuleTerm,Tree Maze,
 ModuleTerm,trove,ขุมทรัพย์

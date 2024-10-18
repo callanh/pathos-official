@@ -159,6 +159,9 @@ namespace Pathos
     //public const string Laboratory = "Laboratory";
     //public const string Sanatorium = "Sanatorium";
     //public const string Temple = "Temple";
+
+    public const string To_complete_this_game_you_need_to_escape_through_the_final_rift = "To complete this game you need to escape through the final rift.";
+    public const string Congratulations_on_reaching_the_end_of_the_QuestName = "Congratulations on reaching the end of the {QuestName}!";
   }
 
   internal sealed class OpusMaker
@@ -329,7 +332,9 @@ namespace Pathos
         NewGoodCharacter(UnassignedSquare, SelectUniqueEntity(Good));
 
       var FinaleCharacter = NewEvilCharacter(UnassignedSquare, SelectUniqueEntity(Codex.Entities.Kaloi_Thrym));
-      Generator.GainCarriedAsset(FinaleCharacter, Generator.NewSpecificAsset(UnassignedSquare, Codex.Items.Stamped_Letter));
+      var FinaleAsset = Generator.NewSpecificAsset(UnassignedSquare, Codex.Items.Stamped_Letter);
+      Generator.InscribeAsset(FinaleAsset, OpusTerms.Congratulations_on_reaching_the_end_of_the_QuestName + "|" + OpusTerms.To_complete_this_game_you_need_to_escape_through_the_final_rift);
+      Generator.GainCarriedAsset(FinaleCharacter, FinaleAsset);
 
       var EvilArray = new[]
       {

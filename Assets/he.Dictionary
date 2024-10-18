@@ -1497,7 +1497,7 @@ EntityName,horse,סוסה
 EntityName,housecat,חתול בית
 EntityName,huge pile of killer coins,ערימה עצומה של מטבעות קטלניים
 EntityName,Huhetotl,חיוטוטל
-EntityName,human,בן אנוש
+EntityName,human,ממין אנושי
 EntityName,human king,מלך אנושי
 EntityName,human mummy,מומיה אנושית
 EntityName,human zombie,זומבי אנושי
@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},שבירה של {FeatureName}
 FormatText,cap {Percent}%,מגבלה של {Percent}%
 FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל {SpellName}?
 FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל {SpellName}?
-FormatText,Congratulations on reaching the end of the {QuestName}!,ברכות על הגעתך לסוף {QuestName}!
 FormatText,cripple {AttributeName},פגיעה ב{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ירידה של {AttributeName} ב{AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ירידה של כל היכולות ב{AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,להסוות
 LiteralText,CONCEALED,מוסווה
 LiteralText,CONDUCT,התנהגות
 LiteralText,CONFIRM,אישור
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,ברכות על שהגעת לשלב הסופי והבסת את הנמסיס שלך.
 LiteralText,Connect to game hosted by another player.,חיבור למשחק של שחקנית או שחקן אחרים.
 LiteralText,CONSOLE,קונסולה
 LiteralText,CONTACT,קשר
@@ -3291,8 +3289,8 @@ LiteralText,determined by player level,נקבע על פי רמת הדמות
 LiteralText,device,מכשיר
 LiteralText,DEVICES,מכשירים
 LiteralText,DIAGNOSTICS,דיאגנוסטיקה
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,דיאלוג
+LiteralText,dialogue?,דיאלוג?
 LiteralText,DID NOT RANK,לא בהיכל התהילה
 LiteralText,diet,תזונה
 LiteralText,difficulty,קושי
@@ -3703,7 +3701,7 @@ LiteralText,SKILLS,כישורים
 LiteralText,SLIDE,להחליק
 LiteralText,Slide which direction?,לאיזה כיוון להחליק?
 LiteralText,slower animations,אנימציה איטית יותר
-LiteralText,SONICS,קולות
+LiteralText,SONICS,צלילים
 LiteralText,"Sorry, this device is a bit too small :-(",":-( סליחה, אבל המכשיר הזה קצת קטן מדי"
 LiteralText,SOUND BOARD,לוח צלילים
 LiteralText,Sound on/off,כיבוי והדלקת קול
@@ -3739,7 +3737,7 @@ LiteralText,TAKE,לקחת
 LiteralText,TAKE ALL,לקחת הכל
 LiteralText,talents,כשרונות
 LiteralText,TALENTS,כשרונות
-LiteralText,TALK,
+LiteralText,TALK,לדבר
 LiteralText,TELEKINESIS,טלקינזיס
 LiteralText,Telekinesis which direction?,באיזה כיוון להפעיל טלקינזיס?
 LiteralText,Telekinesis which object?,על איזה חפץ להפעיל טלקינזיס?
@@ -3760,14 +3758,12 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,אחרי השלכה
 LiteralText,THROW,להשליך
 LiteralText,tin,פחית
-LiteralText,To complete this game you need to escape the dungeon on the first level.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך היציאה בקומה הראשונה.
-LiteralText,To complete this game you need to escape through the final transportal.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך המשגר האחרון.
 LiteralText,TOO BIG,גדול מדי
 LiteralText,TOO HEAVY,כבד מדי
 LiteralText,TOO HUNGRY,הרעב כבד מדי
 LiteralText,TOO SMALL,קטן מדי
 LiteralText,TOO WEAK,חלש מדי
-LiteralText,TRACKS,דרכים
+LiteralText,TRACKS,מנגינות
 LiteralText,TRADE,לסחור
 LiteralText,transform to,לשנות ל
 LiteralText,transients,השפעות זמניות
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,עיר המערות
 ModuleTerm,cellar,מרתף
 ModuleTerm,Cemetery,בית הקברות
 ModuleTerm,Chicken Farm,חוות התרנגולים
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,ברכות על שהגעת לשלב הסופי והבסת את הנמסיס שלך.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,ברכות על הגעתך לסוף {QuestName}!
 ModuleTerm,Cow Farm,חוות הפרות
 ModuleTerm,Crater,המכתש
 ModuleTerm,Crypt,הקריפטה
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,סוס מוזר
 ModuleTerm,strange pig,חזיר מוזר
 ModuleTerm,strange seal,כלב ים מוזר
 ModuleTerm,strange sheep,כבשה מוזרה
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך היציאה בקומה הראשונה.
+ModuleTerm,To complete this game you need to escape through the final rift.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך הקרע האחרון במרחב.
+ModuleTerm,To complete this game you need to escape through the final transportal.,כדי לסיים את המשחק הזה צריך להימלט מהמבוך דרך המשגר האחרון.
 ModuleTerm,Topaz Mine,מכרה הטופז
 ModuleTerm,Tree Maze,מבוך העצים
 ModuleTerm,trove,מטמון

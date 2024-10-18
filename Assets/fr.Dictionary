@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},casser {FeatureName}
 FormatText,cap {Percent}%,plafond {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Félicitations pour avoir atteint la fin du {QuestName} !
 FormatText,cripple {AttributeName},handicape {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},diminue {AttributeName} de {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},diminue toutes les compétences de {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,CACHER
 LiteralText,CONCEALED,CACHÉ
 LiteralText,CONDUCT,CONDUITE
 LiteralText,CONFIRM,CONFIRMER
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Félicitations pour être arrivé au dernier niveau et avoir abattu votre Némésis
 LiteralText,Connect to game hosted by another player.,Se connecter à une partie hébergée par un autre joueur.
 LiteralText,CONSOLE,CONSOLE
 LiteralText,CONTACT,CONTACT
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,a jeté
 LiteralText,THROW,LANCER
 LiteralText,tin,boîte de conserve
-LiteralText,To complete this game you need to escape the dungeon on the first level.,Pour finir ce jeu vous devez vous échapper du donjon au premier niveau.
-LiteralText,To complete this game you need to escape through the final transportal.,"Pour compléter ce jeu, vous devez vous échapper par le portail de transport final."
 LiteralText,TOO BIG,TROP GRAND
 LiteralText,TOO HEAVY,TROP LOURD
 LiteralText,TOO HUNGRY,TROP AFFAMÉ
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,ville troglodytes
 ModuleTerm,cellar,cave
 ModuleTerm,Cemetery,Cimetière
 ModuleTerm,Chicken Farm,Elevage de poulets
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Félicitations pour être arrivé au dernier niveau et avoir abattu votre Némésis
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Félicitations pour avoir atteint la fin du {QuestName} !
 ModuleTerm,Cow Farm,Elevage de vaches
 ModuleTerm,Crater,Cratère
 ModuleTerm,Crypt,Crypte
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,cheval étrange
 ModuleTerm,strange pig,cochon étrange
 ModuleTerm,strange seal,phoque étrange
 ModuleTerm,strange sheep,mouton étrange
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Pour finir ce jeu vous devez vous échapper du donjon au premier niveau.
+ModuleTerm,To complete this game you need to escape through the final rift.,"Pour compléter ce jeu, vous devez vous échapper par le fissure final."
+ModuleTerm,To complete this game you need to escape through the final transportal.,"Pour compléter ce jeu, vous devez vous échapper par le portail de transport final."
 ModuleTerm,Topaz Mine,Mine de topaze
 ModuleTerm,Tree Maze,Labyrinthe d'arbres
 ModuleTerm,trove,trésor

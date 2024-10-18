@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},phá hỏng {FeatureName}
 FormatText,cap {Percent}%,giới hạn {Percent}%
 FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật phẩm nào?
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Chúc mừng bạn đã hoàn thành nhiệm vụ {QuestName}!
 FormatText,cripple {AttributeName},suy giảm {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},giảm {AttributeName} bởi {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},giảm tất cả kỹ năng bởi {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,GIẤU
 LiteralText,CONCEALED,ĐÃ GIẤU
 LiteralText,CONDUCT,HẠNH KIỂM
 LiteralText,CONFIRM,XÁC NHẬN
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Chúc mừng bạn đã đạt đến cấp độ cuối cùng và đánh bại kẻ thù của bạn.
 LiteralText,Connect to game hosted by another player.,Kết nối vào trò chơi từ người chơi khác
 LiteralText,CONSOLE,BẢNG ĐIỀU KHIỂN
 LiteralText,CONTACT,NGUYÊN VẸN
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,ném
 LiteralText,THROW,NÉM
 LiteralText,tin,đóng gói
-LiteralText,To complete this game you need to escape the dungeon on the first level.,Để phá đảo game này bạn cần phải thoát khỏi hầm ngục từ tầng đầu tiên.
-LiteralText,To complete this game you need to escape through the final transportal.,Để phá đảo game này bạn cần phải thoát bằng cánh cổng cuối cùng.
 LiteralText,TOO BIG,QUÁ LỚN
 LiteralText,TOO HEAVY,QUÁ NẶNG
 LiteralText,TOO HUNGRY,QUÁ ĐÓI
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,Thị trấn hang động
 ModuleTerm,cellar,trần nhà
 ModuleTerm,Cemetery,Nghĩa trang
 ModuleTerm,Chicken Farm,Trang trại gà
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Chúc mừng bạn đã đạt đến cấp độ cuối cùng và đánh bại kẻ thù của bạn.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Chúc mừng bạn đã hoàn thành nhiệm vụ {QuestName}!
 ModuleTerm,Cow Farm,Trang trại bò
 ModuleTerm,Crater,Miệng núi lửa
 ModuleTerm,Crypt,Lăng mộ
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,Ngựa kì quái
 ModuleTerm,strange pig,Lợn kì quái
 ModuleTerm,strange seal,Sư tử biẻn kì quái
 ModuleTerm,strange sheep,Cừu kì quái
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Để phá đảo game này bạn cần phải thoát khỏi hầm ngục từ tầng đầu tiên.
+ModuleTerm,To complete this game you need to escape through the final rift.,Để phá đảo game này bạn cần phải thoát bằng cánh cổng cuối cùng.
+ModuleTerm,To complete this game you need to escape through the final transportal.,Để phá đảo game này bạn cần phải thoát bằng cánh cổng cuối cùng.
 ModuleTerm,Topaz Mine,Mỏ Hoàng ngọc
 ModuleTerm,Tree Maze,Mê cung Cây
 ModuleTerm,trove,kho báu

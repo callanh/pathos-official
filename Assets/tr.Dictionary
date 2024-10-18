@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Tebrikler! {QuestName} 'in sonuna ulaştın!
 FormatText,cripple {AttributeName},{AttributeName}'i zayıflat
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,SAKLA
 LiteralText,CONCEALED,SAKLI
 LiteralText,CONDUCT,EYLEM
 LiteralText,CONFIRM,ONAYLA
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Tebrikler! son seviyeye ulaşıp ezeli düşmanını yendin.
 LiteralText,Connect to game hosted by another player.,Başka oyuncu tarafından kurulmuş bir oyuna katıl.
 LiteralText,CONSOLE,KONSOL
 LiteralText,CONTACT,İLETİŞİM
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,fırlattı
 LiteralText,THROW,FIRLAT
 LiteralText,tin,teneke
-LiteralText,To complete this game you need to escape the dungeon on the first level.,Oyunu bitirmek için birinci seviyeye gidip zindandan kaçmalısın
-LiteralText,To complete this game you need to escape through the final transportal.,Bu oyunu bitirmek için son transportalı kullanarak kaçmalısın
 LiteralText,TOO BIG,ÇOK BÜYÜK
 LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ÇOK AÇ
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,
 ModuleTerm,cellar,bodrum
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Tebrikler! son seviyeye ulaşıp ezeli düşmanını yendin.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Tebrikler! {QuestName} 'in sonuna ulaştın!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,
 ModuleTerm,strange pig,
 ModuleTerm,strange seal,
 ModuleTerm,strange sheep,
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Oyunu bitirmek için birinci seviyeye gidip zindandan kaçmalısın
+ModuleTerm,To complete this game you need to escape through the final rift.,Bu oyunu bitirmek için son riftı kullanarak kaçmalısın
+ModuleTerm,To complete this game you need to escape through the final transportal.,Bu oyunu bitirmek için son transportalı kullanarak kaçmalısın
 ModuleTerm,Topaz Mine,
 ModuleTerm,Tree Maze,
 ModuleTerm,trove,define

@@ -48,5 +48,7 @@ namespace Pathos
   internal static class DhakTerms
   {
     public const string Overland = "Overland";
+    public const string To_complete_this_game_you_need_to_escape_through_the_final_transportal = "To complete this game you need to escape through the final transportal.";
+    public const string Congratulations_on_reaching_the_end_of_the_QuestName = "Congratulations on reaching the end of the {QuestName}!";
   }
 }

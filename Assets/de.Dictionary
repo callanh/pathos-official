@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},beschädige {FeatureName}
 FormatText,cap {Percent}%,Max {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} mit welchem Gegenstand zaubern?
 FormatText,Cast {SpellName} which direction?,{SpellName} in welche Richtung zaubern?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Herzlichen Glückwunsch zum Ende von {QuestName}!
 FormatText,cripple {AttributeName},{AttributeName} verkrüppelt
 FormatText,decrease {AttributeName} by {AdjustmentDice},verringere {AttributeName} um {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},verringere alle Fähigkeiten um {AdjustmentDice}
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,ABDECKEN
 LiteralText,CONCEALED,ABGEDECKT
 LiteralText,CONDUCT,VERHALTEN
 LiteralText,CONFIRM,BESTÄTIGE
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Herzlichen Glückwunsch zum Erreichen der letzten Ebene und zum Sieg über euren Erzfeind.
 LiteralText,Connect to game hosted by another player.,Stellt eine Verbindung zu einem Spiel her das von einem anderen Spieler gehostet wird
 LiteralText,CONSOLE,CONSOLE
 LiteralText,CONTACT,KONTAKT
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,werfen
 LiteralText,THROW,WERFEN
 LiteralText,tin,Blechdose
-LiteralText,To complete this game you need to escape the dungeon on the first level.,Um dieses Spiel zu beenden müsst ihr auf der ersten Ebene aus dem Dungeon entkommen.
-LiteralText,To complete this game you need to escape through the final transportal.,Um dieses Spiel zu beenden müsst ihr durch das Transportal am Ende entkommen.
 LiteralText,TOO BIG,ZU GROSS
 LiteralText,TOO HEAVY,ZU SCHWER
 LiteralText,TOO HUNGRY,ZU HUNGRIG
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,Höhlensiedlung
 ModuleTerm,cellar,Keller
 ModuleTerm,Cemetery,Friedhof
 ModuleTerm,Chicken Farm,Geflügelhof
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Herzlichen Glückwunsch zum Erreichen der letzten Ebene und zum Sieg über euren Erzfeind.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Herzlichen Glückwunsch zum Ende von {QuestName}!
 ModuleTerm,Cow Farm,Rinderweide
 ModuleTerm,Crater,Krater
 ModuleTerm,Crypt,Krypta
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,seltsames Pferd
 ModuleTerm,strange pig,seltsames Schwein
 ModuleTerm,strange seal,seltsame Robbe
 ModuleTerm,strange sheep,seltsames Schaf
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Um dieses Spiel zu beenden müsst ihr auf der ersten Ebene aus dem Dungeon entkommen.
+ModuleTerm,To complete this game you need to escape through the final rift.,Um dieses Spiel zu beenden müsst ihr durch das Riss am Ende entkommen.
+ModuleTerm,To complete this game you need to escape through the final transportal.,Um dieses Spiel zu beenden müsst ihr durch das Transportal am Ende entkommen.
 ModuleTerm,Topaz Mine,Topasmine
 ModuleTerm,Tree Maze,Baumlabyrinth
 ModuleTerm,trove,Fundgrube

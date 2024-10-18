@@ -2093,7 +2093,6 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Применить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Применить {SpellName} в каком направлении?
-FormatText,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -3232,7 +3231,6 @@ LiteralText,CONCEAL,СПРЯТАТЬ
 LiteralText,CONCEALED,СПРЯТАНО
 LiteralText,CONDUCT,
 LiteralText,CONFIRM,
-LiteralText,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
 LiteralText,Connect to game hosted by another player.,
 LiteralText,CONSOLE,КОНСОЛЬ
 LiteralText,CONTACT,СВЯЗЬ
@@ -3760,8 +3758,6 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,
 LiteralText,THROW,КИНУТЬ
 LiteralText,tin,консервы
-LiteralText,To complete this game you need to escape the dungeon on the first level.,"Чтобы завершить игру, Вие должны покинуть подземелье на первом уровне."
-LiteralText,To complete this game you need to escape through the final transportal.,"Чтобы завершить игру, Вие должны сесть на конечный транспорт."
 LiteralText,TOO BIG,ТВЪРДЕ ВЕЛИК
 LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ТВЪРДЕ ГОЛОДЕН
@@ -3910,6 +3906,8 @@ ModuleTerm,Cavetown,
 ModuleTerm,cellar,пШрекеб
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
+ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
+ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,
@@ -4000,6 +3998,9 @@ ModuleTerm,strange horse,
 ModuleTerm,strange pig,
 ModuleTerm,strange seal,
 ModuleTerm,strange sheep,
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,"Чтобы завершить игру, Вие должны покинуть подземелье на первом уровне."
+ModuleTerm,To complete this game you need to escape through the final rift.,"Чтобы завершить игру, Вие должны сесть на конечный транспорт."
+ModuleTerm,To complete this game you need to escape through the final transportal.,"Чтобы завершить игру, Вие должны сесть на конечный транспорт."
 ModuleTerm,Topaz Mine,
 ModuleTerm,Tree Maze,
 ModuleTerm,trove,клад
