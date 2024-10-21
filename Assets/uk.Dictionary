@@ -3125,6 +3125,7 @@ LiteralText,actions,дії
 LiteralText,ADD LEVEL,ДОДАТИ РІВЕНЬ
 LiteralText,Add new adventurer,Додати ще гравця
 LiteralText,ADJUST,НАЛАШТУВАННЯ
+LiteralText,adventurer,
 LiteralText,AFFLICTED,СТРАЖДЕННИЙ
 LiteralText,affliction?,страждання?
 LiteralText,AFFLICTIONS,ПОРОБЛЕНО
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,льох
 ModuleTerm,Cemetery,Кладовище
 ModuleTerm,Chicken Farm,Ферма курок
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Вітаємо вас із досягненням фінального рівня і перемогою над головним ворогом.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Вітаємо із завершенням {QuestName}!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Вітаємо із завершенням {Quest}!
 ModuleTerm,Cow Farm,Ферма корів
 ModuleTerm,Crater,Кратер
 ModuleTerm,Crypt,Крипта

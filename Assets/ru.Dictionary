@@ -3125,6 +3125,7 @@ LiteralText,actions,действия
 LiteralText,ADD LEVEL,ДОБАВИТЬ
 LiteralText,Add new adventurer,Добавить приключенца
 LiteralText,ADJUST,ПРАВИТЬ
+LiteralText,adventurer,
 LiteralText,AFFLICTED,ПОРАЖЁННЫЙ
 LiteralText,affliction?,болезнь?
 LiteralText,AFFLICTIONS,БОЛЕЗНИ
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,подвал
 ModuleTerm,Cemetery,Кладбище
 ModuleTerm,Chicken Farm,Куриная ферма
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Поздравляем с завершением {Quest}!
 ModuleTerm,Cow Farm,Коровья ферма
 ModuleTerm,Crater,Кратер
 ModuleTerm,Crypt,Склеп

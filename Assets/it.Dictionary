@@ -3125,6 +3125,7 @@ LiteralText,actions,azioni
 LiteralText,ADD LEVEL,AGGIUNGI LIVELLO
 LiteralText,Add new adventurer,Aggiungi un avventuriero
 LiteralText,ADJUST,REGOLA
+LiteralText,adventurer,
 LiteralText,AFFLICTED,AFFLITTO
 LiteralText,affliction?,afflizioni?
 LiteralText,AFFLICTIONS,AFFLIZIONI
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,scantinato
 ModuleTerm,Cemetery,Cimitero
 ModuleTerm,Chicken Farm,Fattoria di galline
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Congratulazioni per aver raggiunto il livello finale e aver sconfitto i tuoi nemici.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Congratulazioni per aver terminato {QuestName}!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Congratulazioni per aver terminato {Quest}!
 ModuleTerm,Cow Farm,Fattoria di mucche
 ModuleTerm,Crater,Cratere
 ModuleTerm,Crypt,Cripta

@@ -3125,6 +3125,7 @@ LiteralText,actions,การกระทำ
 LiteralText,ADD LEVEL,เพิ่มเลเวล
 LiteralText,Add new adventurer,เพิ่มนักผจญภัย
 LiteralText,ADJUST,ปรับ
+LiteralText,adventurer,
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,ความทุกข์
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,ห้องใต้ดิน
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,ยินดีด้วยที่คุณสามารถมาถึงชั้นสุดท้ายและพิชิตศัตรูตัวฉกาจของคุณได้
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,ยินดีด้วยคุณได้มาถึงจุดสิ้นสุดของ {QuestName} แล้ว!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,ยินดีด้วยคุณได้มาถึงจุดสิ้นสุดของ {Quest} แล้ว!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,

@@ -3125,6 +3125,7 @@ LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
 LiteralText,Add new adventurer,새로운 모험가 추가
 LiteralText,ADJUST,조절
+LiteralText,adventurer,
 LiteralText,AFFLICTED,감염됨
 LiteralText,affliction?,감염?
 LiteralText,AFFLICTIONS,감염
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,지하실
 ModuleTerm,Cemetery,공동묘지
 ModuleTerm,Chicken Farm,닭 농장
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,마지막 레벨에 도달하여 당신의 숙적을 물리친것을 축하합니다.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,{QuestName} 퀘스트의 끝에 도달하신 것을 축하드립니다!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,{Quest} 퀘스트의 끝에 도달하신 것을 축하드립니다!
 ModuleTerm,Cow Farm,소 농장
 ModuleTerm,Crater,분화구
 ModuleTerm,Crypt,토굴

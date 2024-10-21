@@ -3125,6 +3125,7 @@ LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
 LiteralText,ADJUST,調整
+LiteralText,adventurer,
 LiteralText,AFFLICTED,災難に苛まれている
 LiteralText,affliction?,災難?
 LiteralText,AFFLICTIONS,災難
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,地下室
 ModuleTerm,Cemetery,墓地
 ModuleTerm,Chicken Farm,鶏牧場
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,ダンジョンの最深部までたどり着き、見事宿敵を倒してのけたことをお祝いします。
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,あなたは{QuestName}の終点にたどり着きました。おめでとう！
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,あなたは{Quest}の終点にたどり着きました。おめでとう！
 ModuleTerm,Cow Farm,牛牧場
 ModuleTerm,Crater,クレーター
 ModuleTerm,Crypt,地下墓所

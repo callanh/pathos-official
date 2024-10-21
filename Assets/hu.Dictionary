@@ -3125,6 +3125,7 @@ LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
 LiteralText,Add new adventurer,Új kalandor hozzáadása
 LiteralText,ADJUST,BEÁLLÍT
+LiteralText,adventurer,
 LiteralText,AFFLICTED,SZENVEDŐ
 LiteralText,affliction?,csapás?
 LiteralText,AFFLICTIONS,CSAPÁSOK
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,pince
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,"Gratulálok, hogy elérted az utolsó szintet és legyőzted az ősellenséged!"
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,"Gratulálok, hogy elérted a(z) {QuestName} kaland végét!"
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,"Gratulálok, hogy elérted a(z) {Quest} kaland végét!"
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,

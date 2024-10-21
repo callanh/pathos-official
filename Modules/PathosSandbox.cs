@@ -104,7 +104,7 @@ namespace Pathos
       const string MerchantAnotherQuestion = "Ask another question";
 
       var MerchantDialogue = Generator.Adventure.World.AddDialogue("M");
-      MerchantDialogue.Root.Document.Fragment("Hail adventurer, welcome to my humble shop. I offer a variety of self-explanatory goods and services and if necessary, will stoop to answer your inane questions.").Before(MerchantInsultedJuncture);
+      MerchantDialogue.Root.Document.Fragment("Hail {Character}, welcome to my humble shop. I offer a variety of self-explanatory goods and services and if necessary, will stoop to answer your inane questions.").Before(MerchantInsultedJuncture);
       MerchantDialogue.Root.Document.Fragment("I'll take your coin but you will get no more advice from the merchant guild. GOOD LUCK IDIOT!").After(MerchantInsultedJuncture);
       MerchantDialogue.Root.Branch(D => D.Fragment("Can you tell me about your services?").Before(MerchantInsultedJuncture), N =>
       {
@@ -134,6 +134,11 @@ namespace Pathos
           O.Sequence.Add(MerchantInsultedJuncture);
         });
 
+        N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
+      });
+      MerchantDialogue.Root.Branch(D => D.Fragment("How did you know my name is {Character}?").Before(MerchantInsultedJuncture), N =>
+      {
+        N.Document.Fragment("We actually get a full briefing and information pack about every new adventurer before they enter the dungeon. No surprises that way.");
         N.Branch(MerchantAnotherQuestion, MerchantDialogue.Root);
       });
       MerchantDialogue.Root.Branch("No further questions");

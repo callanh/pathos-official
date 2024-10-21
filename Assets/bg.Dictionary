@@ -3125,6 +3125,7 @@ LiteralText,actions,
 LiteralText,ADD LEVEL,
 LiteralText,Add new adventurer,
 LiteralText,ADJUST,НАСТРОЙКА
+LiteralText,adventurer,
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,пШрекеб
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Поздравляем с достижением финального уровня и победой над главным врагом.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Поздравляем с завершением {QuestName}!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Поздравляем с завершением {Quest}!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,

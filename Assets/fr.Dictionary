@@ -3125,6 +3125,7 @@ LiteralText,actions,actions
 LiteralText,ADD LEVEL,AJOUTER UN NIVEAU
 LiteralText,Add new adventurer,Ajouter un nouvel aventurier
 LiteralText,ADJUST,RÉGLER
+LiteralText,adventurer,
 LiteralText,AFFLICTED,MALADE
 LiteralText,affliction?,maladie?
 LiteralText,AFFLICTIONS,INFECTIONS
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,cave
 ModuleTerm,Cemetery,Cimetière
 ModuleTerm,Chicken Farm,Elevage de poulets
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Félicitations pour être arrivé au dernier niveau et avoir abattu votre Némésis
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Félicitations pour avoir atteint la fin du {QuestName} !
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Félicitations pour avoir atteint la fin du {Quest} !
 ModuleTerm,Cow Farm,Elevage de vaches
 ModuleTerm,Crater,Cratère
 ModuleTerm,Crypt,Crypte

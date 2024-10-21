@@ -3125,6 +3125,7 @@ LiteralText,actions,Aktionen
 LiteralText,ADD LEVEL,EBENE HINZUFÜGEN
 LiteralText,Add new adventurer,Neuen Abenteurer hinzufügen
 LiteralText,ADJUST,EINSTELLEN
+LiteralText,adventurer,
 LiteralText,AFFLICTED,GEBRECHEN
 LiteralText,affliction?,Gebrechen?
 LiteralText,AFFLICTIONS,GEBRECHEN
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,Keller
 ModuleTerm,Cemetery,Friedhof
 ModuleTerm,Chicken Farm,Geflügelhof
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Herzlichen Glückwunsch zum Erreichen der letzten Ebene und zum Sieg über euren Erzfeind.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Herzlichen Glückwunsch zum Ende von {QuestName}!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Herzlichen Glückwunsch zum Ende von {Quest}!
 ModuleTerm,Cow Farm,Rinderweide
 ModuleTerm,Crater,Krater
 ModuleTerm,Crypt,Krypta

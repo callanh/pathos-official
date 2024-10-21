@@ -3125,6 +3125,7 @@ LiteralText,actions,aksiyon
 LiteralText,ADD LEVEL,SEVİYE EKLE
 LiteralText,Add new adventurer,Yeni maceracı ekle
 LiteralText,ADJUST,AYARLA
+LiteralText,adventurer,
 LiteralText,AFFLICTED,ETKİLENDİ
 LiteralText,affliction?,taraf?
 LiteralText,AFFLICTIONS,BELALAR
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,bodrum
 ModuleTerm,Cemetery,
 ModuleTerm,Chicken Farm,
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Tebrikler! son seviyeye ulaşıp ezeli düşmanını yendin.
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,Tebrikler! {QuestName} 'in sonuna ulaştın!
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,Tebrikler! {Quest} 'in sonuna ulaştın!
 ModuleTerm,Cow Farm,
 ModuleTerm,Crater,
 ModuleTerm,Crypt,

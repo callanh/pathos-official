@@ -3125,6 +3125,7 @@ LiteralText,actions,行動
 LiteralText,ADD LEVEL,添加樓層
 LiteralText,Add new adventurer,添加新冒險者
 LiteralText,ADJUST,調整
+LiteralText,adventurer,
 LiteralText,AFFLICTED,被感染
 LiteralText,affliction?,感染症狀
 LiteralText,AFFLICTIONS,感染
@@ -3907,7 +3908,7 @@ ModuleTerm,cellar,地窖
 ModuleTerm,Cemetery,墓園
 ModuleTerm,Chicken Farm,養雞場
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,恭喜你通過了最後一層並且消滅了你的宿敵。
-ModuleTerm,Congratulations on reaching the end of the {QuestName}!,恭喜，您已通關冒險 {QuestName}！
+ModuleTerm,Congratulations on reaching the end of the {Quest}!,恭喜，您已通關冒險 {Quest}！
 ModuleTerm,Cow Farm,牧牛場
 ModuleTerm,Crater,隕石坑
 ModuleTerm,Crypt,地穴

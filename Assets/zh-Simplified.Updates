@@ -1,3 +1,6 @@
+2024-10-21
+- dialogue editor now supports the '{Character}' variable to insert the player characters name into the dialogue text.
+
 2024-10-14
 - dialogue editor now supports junctures for variant text (via '[<juncture>]' headers in the dialogue text such as '[Insulted] You cad! [!Insulted] You seem nice.').
 
