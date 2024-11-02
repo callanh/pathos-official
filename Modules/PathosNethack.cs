@@ -29,6 +29,12 @@ namespace Pathos
 
       foreach (var TermText in CollectStaticPublicConstantStrings(typeof(NethackTerms)))
         AddTerm(TermText);
+
+      foreach (var DialogueText in CollectStaticPublicConstantStrings(typeof(NethackDialogues)))
+        AddDialogue(DialogueText);
+
+      foreach (var WatchmanText in NethackDialogues.WatchmanList)
+        AddDialogue(WatchmanText);
     }
 
     public override void Execute(Generator Generator)
@@ -81,6 +87,35 @@ namespace Pathos
 
     public const string Congratulations_on_making_it_to_the_final_level_and_defeating_your_nemesis = "Congratulations on making it to the final level and defeating your nemesis.";
     public const string To_complete_this_game_you_need_to_escape_the_dungeon_on_the_first_level = "To complete this game you need to escape the dungeon on the first level.";
+  }
+
+  internal static class NethackDialogues
+  {
+    public const string Goodbye = "Goodbye.";
+
+    public static readonly IReadOnlyList<string> WatchmanList = new[]
+    {
+      "Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*",
+      "There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?",
+      "The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?",
+      "Everyone is talking about an orcish invasion but I don't believe it will ever happen.",
+      "Have you noticed that there's too many gnomes around here?",
+      "I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.",
+      "Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.",
+      "Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.",
+      "The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
+      "I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+      "Any news from the surface? I've been down here so long that I miss sunshine and weather.",
+      "Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?",
+      "This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!",
+      "Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.",
+      "I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.",
+      "I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
+      "Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
+      "This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
+      "Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
+      "There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!"
+    };
   }
 
   internal sealed class NethackMaker
@@ -2890,7 +2925,17 @@ namespace Pathos
 
         var TownShopProbability = ShopProbability.Clone();
 
-        var GuardArray = new Character[9];
+        var WatchmanDialogueList = NethackDialogues.WatchmanList.ToDistinctList();
+        
+        void AssignWatchCharacter(Character WatchCharacter, int WatchNumber)
+        {
+          var WatchDialogue = Generator.Adventure.World.AddDialogue("WATCH-" + WatchNumber);
+          WatchDialogue.Root.Document.Fragment(WatchmanDialogueList.RemoveRandomOrNull() ?? NethackDialogues.WatchmanList.GetRandom());
+          WatchDialogue.Root.Branch(NethackDialogues.Goodbye);
+          Generator.AssignDialogue(WatchCharacter, WatchDialogue);
+        }
+
+        var WatchmanArray = new Character[9];
 
         for (var Column = 0; Column < TownGrid.Width; Column++)
         {
@@ -2971,7 +3016,7 @@ namespace Pathos
 
               case '}':
                 // tree.
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
+                Generator.PlaceFloor(TownSquare, TownOutskirtGround);
                 Generator.PlaceSolidWall(TownSquare, Codex.Barriers.tree, WallSegment.Pillar);
                 TownSquare.SetLit(true);
                 break;
@@ -3125,6 +3170,11 @@ namespace Pathos
                 TownSquare.SetLit(true);
 
                 Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watch_captain);
+
+                var CaptainCharacter = TownSquare.Character;
+                if (CaptainCharacter != null)
+                  AssignWatchCharacter(CaptainCharacter, 0);
+
                 RecruitTownParty(TownSquare);
                 break;
 
@@ -3147,25 +3197,27 @@ namespace Pathos
                 Generator.PlaceFloor(TownSquare, TownBuildingGround);
                 TownSquare.SetLit(true);
 
-                var GuardNumber = (int)TownSymbol - (int)'0' - 1;
-                var GuardCharacter = GuardArray[GuardNumber];
+                var WatchmanNumber = (int)TownSymbol - (int)'0';
+                var WatchmanCharacter = WatchmanArray[WatchmanNumber - 1];
 
-                if (GuardCharacter == null)
+                if (WatchmanCharacter == null)
                 {
                   Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watchman);
 
-                  GuardCharacter = TownSquare.Character;
-                  if (GuardCharacter != null)
+                  WatchmanCharacter = TownSquare.Character;
+                  if (WatchmanCharacter != null)
                   {
-                    GuardArray[GuardNumber] = GuardCharacter;
-                    Generator.ResidentSquare(GuardCharacter, TownSquare);
+                    AssignWatchCharacter(WatchmanCharacter, WatchmanNumber);
+
+                    WatchmanArray[WatchmanNumber - 1] = WatchmanCharacter;
+                    Generator.ResidentSquare(WatchmanCharacter, TownSquare);
 
                     RecruitTownParty(TownSquare);
                   }
                 }
                 else
                 {
-                  Generator.ResidentRoute(GuardCharacter, GuardCharacter.Resident.Routes.Union(TownSquare).ToArray(), 0);
+                  Generator.ResidentRoute(WatchmanCharacter, WatchmanCharacter.Resident.Routes.Union(TownSquare).ToArray(), 0);
                 }
                 break;
 
