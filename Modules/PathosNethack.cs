@@ -114,7 +114,12 @@ namespace Pathos
       "Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
       "This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
       "Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-      "There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!"
+      "There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
+      "I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
+      "You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+      "Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
+      "The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.",
+      "The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!"
     };
   }
 
