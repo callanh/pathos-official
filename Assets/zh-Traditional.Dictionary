@@ -3125,7 +3125,7 @@ LiteralText,actions,行動
 LiteralText,ADD LEVEL,添加樓層
 LiteralText,Add new adventurer,添加新冒險者
 LiteralText,ADJUST,調整
-LiteralText,adventurer,
+LiteralText,adventurer,冒險者
 LiteralText,AFFLICTED,被感染
 LiteralText,affliction?,感染症狀
 LiteralText,AFFLICTIONS,感染
@@ -3290,8 +3290,8 @@ LiteralText,determined by player level,由玩家等級決定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱
 LiteralText,DIAGNOSTICS,調試
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,對話
+LiteralText,dialogue?,聊聊天？
 LiteralText,DID NOT RANK,未錄入
 LiteralText,diet,食性
 LiteralText,difficulty,難度
@@ -3534,7 +3534,7 @@ LiteralText,non divined items,未鑒定祝福/詛咒物品
 LiteralText,non edible items,不可食用物品
 LiteralText,non enchanted items,未強化物品
 LiteralText,normal animations,常速動畫
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,沒時間！
 LiteralText,Nothing equipped or carried,什麼也沒有裝備或攜帶
 LiteralText,nothing happens,什麼也不發生
 LiteralText,Nothing of interest,沒有值得關注的東西
@@ -3739,7 +3739,7 @@ LiteralText,TAKE,拿取
 LiteralText,TAKE ALL,拿取全部
 LiteralText,talents,天賦
 LiteralText,TALENTS,天賦
-LiteralText,TALK,
+LiteralText,TALK,對話
 LiteralText,TELEKINESIS,念力控制
 LiteralText,Telekinesis which direction?,向哪個方向施展念力控制？
 LiteralText,Telekinesis which object?,念力控制哪個物體？
@@ -3883,33 +3883,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工設計的地圖，地表世界的傳奇冒險。脫離幽深禁閉的地牢，進行更具挑戰的冒險。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房間和無盡的秘密等著你去探索，但是不要沉溺在其中，長時間停留在某一層會招致死亡。基於《破碎像素地牢》生成的地圖。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用來實驗Pathos的機制。您可以在兩個房間的簡易地圖內試驗所有物品、陷阱與地牢機關。
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地面那邊有什麼新鮮事嗎？我在這下面待太久了，很想念陽光和空氣。
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,你知道嗎？那些商人賣的東西裡，一半都來自你這樣的冒險者——的屍體。
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,每個人都在討論什麼獸人屠城。這種事情怎麼可能會發生呢？
+ModuleDialogue,Goodbye.,下次見。
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,你有沒有注意過，這附近有實在太多的侏儒？
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,我簡直不敢相信我要解釋這個。下礦之前，你得有一把鶴嘴鋤。只要有一些廢鐵，你甚至能在礦鎮的工作台上把它做出來。
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",「我不理解為什麼冒險者覺得他們可以在鎮子裡拿著飛鏢啊箭矢啊射來射去，射來射去！我們真的受夠這種事了，所以即使是一次意外的誤射，也會引來我們致命的武力回擊。」
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",「我發誓，你們這幫冒險者就是不祥的徵兆！每次，你們之一成為復仇者的時候，我們都要失去幾位兄弟。」
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,我好累！腳也很疼。我等不及這次巡邏結束後回床上休息了。
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",「有人告訴過我，這片侏儒礦洞的深處還有一座矮人的城市。那不是我會去的地方——一幫又臭又矮的傢伙，我不喜歡。」
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",「多注意一下那些幻象洞穴牆壁，因為礙事的侏儒法師一直在製造它們。真是幫討厭鬼，那些傢伙。」
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,多與商人交易，提振本地經濟！不過我建議你別空著肚子那麼做。
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",「有時候，來自世界各地的，強大而著名的英雄們會出現在我們面前…如果我能目睹一位的話，也會告訴你。」
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,一邊玩去！我的巡邏職責非常重要，但你這樣的冒險家總是擋我的道！
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",**先知**沉默而帶著同情地望向你，她悲傷的表情令你感到非常不安。||命運應當是為你安排了一些令人*很不愉快*的事情。
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,這裡的伙食條件很糟糕。不然你覺得我們為什麼要殺那些怪物，把工作台放在鎮子中央？
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,如果你形單影隻，礦洞是個危險的地方。你可以考慮叫一些當地的僱傭兵來幫助你。他們非常可靠——直到你的錢包空掉。
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",鎮上的神龕可以為品行高尚的冒險者提供許多幫助，務必今天就去參拜，並捐贈一些多餘的金幣。祝福你能一路順風！
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",「收起你的歪主意，我們看守人和商會有長期合同的。」
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",「礦洞裡掀起了一場寶石狂潮！到處都是價值連城的寶石，而不是那些碎玻璃碴子！」
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,鎮子外邊有一個去礦洞的樓梯。也許你應該下去看看，然後再也不回來？
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,這是我在退休前最後一次巡邏了。希望不要發生什麼意外！
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",「這個小鎮是個消磨時間的好地方，你可以為未來的旅程做好準備。不要急著離開這裡，在你深入地牢之前，還有很多事情可以看、可以做。」
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",「第一次去礦洞的話，一定要多加小心。那些鬼鬼祟祟的侏儒可太喜歡伏擊毫無準備的冒險者了。」
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,你不去鎮子外面的礦洞玩玩嗎？一大堆免費的東西等著你收集呢。不過我們不會在鎮外巡邏，所以如果遇到什麼麻煩，你要自己跑回來。
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,你能不能別擺弄那些噴泉了？規章裡寫了我不能弄濕我的制服。如果你把水濺到我身上，*我會弄死你*。
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",「你懂的，我曾經也是個和你一樣的冒險者……也許你也可以試著找個工作？畢竟，*冒險者*只是個對無家可歸的無業遊民的高情商稱呼。」
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
