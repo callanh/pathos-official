@@ -38,6 +38,7 @@ namespace Pathos
 
   internal static class OpusDialogues
   {
+    public const string Goodbye = "Goodbye.";
     public const string Oracle_greeting = "The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.";
   }
 
@@ -1419,6 +1420,7 @@ namespace Pathos
 
         var OracleDialogue = Generator.Adventure.World.AddDialogue("ORACLE");
         OracleDialogue.Root.Document.Fragment(OpusDialogues.Oracle_greeting);
+        OracleDialogue.Root.Branch(NethackDialogues.Goodbye);
         Generator.AssignDialogue(OracleCharacter, OracleDialogue);
 
         // TODO: for testing transport of trophy/statue characters to the endgame.
