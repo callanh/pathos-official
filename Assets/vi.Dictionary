@@ -1135,7 +1135,7 @@ ElementName,poison,độc
 ElementName,shock,sốc
 ElementName,sleep,ngủ
 ElementName,water,nước
-EncumbranceDescription,You can barely move with this load.,Bạn chỉ vừa đủ để lết chân với sức nặng của hành trang.
+EncumbranceDescription,You can barely move with this load.,Bạn chỉ vừa đủ sức để lết đi dưới sức nặng của hành trang.
 EncumbranceDescription,You collapse under your load.,Bạn sụp ngã dưới sức nặng của hành trang.
 EncumbranceDescription,You rebalance your load but movement is difficult.,Bạn thử cân bằng hành trang nhưng việc di chuyển vẫn vô cùng khó khăn.
 EncumbranceDescription,You stagger under your load.,Bạn lảo đảo dưới súc nặng của hành trang.
@@ -2168,7 +2168,7 @@ GenderName,female,nữ
 GenderName,male,nam
 GenderName,neuter,trung tính
 GenderName,non-binary,lưỡng tính
-GenerationType,module,phụ
+GenerationType,module,phần chơi
 GenerationType,quest,nhiệm vụ
 GradeName,artifact,báu vật
 GradeName,exotic,thiên phẩm
@@ -3125,7 +3125,7 @@ LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
 LiteralText,Add new adventurer,Thêm nhà thám hiểm mới
 LiteralText,ADJUST,CHỈNH SỬA
-LiteralText,adventurer,
+LiteralText,adventurer,mạo hiểm giả
 LiteralText,AFFLICTED,BỊNHIỄM BỆNH
 LiteralText,affliction?,nhiễm bệnh?
 LiteralText,AFFLICTIONS,NHỮNG LOẠI BỆNH
@@ -3157,7 +3157,7 @@ LiteralText,attack//noun,đòn đánh
 LiteralText,ATTACK//noun,ĐÒN ĐÁNH
 LiteralText,attack//verb,tấn công
 LiteralText,ATTACK//verb,TẤN CÔNG
-LiteralText,attacks,các đòn đánh
+LiteralText,attacks,tấn công
 LiteralText,attributes,các thuộc tính
 LiteralText,AUTO,TỰ ĐỘNG
 LiteralText,auto saving,TỰ ĐỘNG SAO LƯU
@@ -3290,8 +3290,8 @@ LiteralText,determined by player level,được đánh giá bởi cấp độ ng
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY
 LiteralText,DIAGNOSTICS,BỘ CHẨN ĐOÁN
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,LỜI THOẠI
+LiteralText,dialogue?,Lời thoại?
 LiteralText,DID NOT RANK,KHÔNG XẾP HẠNG
 LiteralText,diet,chế độ ăn
 LiteralText,difficulty,độ khó
@@ -3534,7 +3534,7 @@ LiteralText,non divined items,vật phẩm không thánh hóa
 LiteralText,non edible items,vật phẩm không ăn được
 LiteralText,non enchanted items,vật phẩm không cường hóa
 LiteralText,normal animations,hoạt ảnh bình thường
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,KHÔNG PHẢI LÚC NÀY!
 LiteralText,Nothing equipped or carried,Không trang bị hoặc mang theo gì
 LiteralText,nothing happens,không có gì xảy ra
 LiteralText,Nothing of interest,Không có gì đáng chú ý
@@ -3571,7 +3571,7 @@ LiteralText,platform,nền tảng
 LiteralText,Play,Chơi
 LiteralText,Play a sound effect?,Chạy một hiệu ứng âm thanh?
 LiteralText,PLAYER,NGƯỜI CHƠI
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Xin lưu ý rằng buộc dừng ứng dụng có thể dẫn đến tình trạng bản lưu trò chơi bị lỗi và không thể khôi phục được.
 LiteralText,Please offer any clarification,Hãy giải thích
 LiteralText,Please provide your feedback,Hãy gửi phản hồi của bạn
 LiteralText,Please rotate your device to landscape :-),Hãy xoay ngang thiết bị của bạn
@@ -3671,8 +3671,8 @@ LiteralText,secret,bí mật
 LiteralText,SECRET,BÍ MẬT
 LiteralText,seed,hạt giống
 LiteralText,SELECT ATMOSPHERE,CHỌN KHÍ QUYỂN
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,Lựa chọn Đồ hoạ cho Bạn đồng hành
+LiteralText,Select Hero Tile,Lựa chọn Đồ hoạ cho Dũng Giả
 LiteralText,SELECT ITEM,CHỌN VẬT PHẨM
 LiteralText,SELECT LANGUAGE,CHỌN NGÔN NGỮ
 LiteralText,SELECT MAP,CHỌN BẢN ĐỒ
@@ -3739,7 +3739,7 @@ LiteralText,TAKE,LẤY
 LiteralText,TAKE ALL,LẤY TẤT CẢ
 LiteralText,talents,tài năng
 LiteralText,TALENTS,TÀI NĂNG
-LiteralText,TALK,
+LiteralText,TALK,NÓI CHUYỆN
 LiteralText,TELEKINESIS,CHUYỂN ĐỘNG TỪ XA
 LiteralText,Telekinesis which direction?,Chuyển động từ xa vào hướng nào?
 LiteralText,Telekinesis which object?,Chuyển động từ xa vật nào?
@@ -3883,33 +3883,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Có tin tức gì trên mặt đất không? Tôi đã ở dưới này quá lâu đến độ tôi nhớ ánh nắng và thời tiết rồi.
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Bạn có biết rằng một nửa số hàng mà thương nhân bán được thu lượm từ những xác chết của những mạo hiểm giả như bạn không?
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,Tất cả mọi người đều bàn tán về cuộc xâm lăng của loài orc nhưng tôi không nghĩ nó sẽ xảy ra đâu.
+ModuleDialogue,Goodbye.,Tạm biệt.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,Bạn có để ý rằng có quá nhiều thần lùn ở quanh đây không?
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Tôi không thể tin rằng tôi phải giải thích điều này, nhưng hãy chắc chắn rằng bạn mang theo mình một cây cuốc chim trước khi dấn thân vào mấy cái hang đó. Bạn thậm chí có thể chế tạo một cái tại bàn chế tạo của thị trấn với đống sắt vụn còn thừa."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Tôi không hiểu vì sao những mạo hiểm giả nghĩ rằng họ có thể bắn, bắn, bắn khắp nơi trong thị trấn với đống tên và phi tiêu của họ. Chúng tôi chịu đựng điều ấy quá đủ rồi, vì thế dù kể cả đó có là một tai nạn ngoài ý muốn nhắm vào những cư dân của chúng tôi, họ chắn chắn sẽ được đáp trả lại với uy lực chết người."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.","Tôi thề rằng mạo hiểm giả các người là nhũng sứ giả của sự đen đủi! Mỗi lần một kẻ đểu cáng các người xuất hiện, chúng tôi mất đi 1 tá người."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Tôi quá mệt và chân tôi đau nhức! Tôi không thể chờ được đến lúc ca gác này kết thúc để tôi còn đánh một giấc.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Tôi được nghe kể rằng có một thành phố người lùn ngay dưới khu mỏ thần lùn. Đó chắc chắn không phải là chuyến phiêu lưu mà tôi sẽ mơ thực hiện - có quá nhiều những kẻ lùn tịt, hôi hám dưới đó."
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Hãy để mắt tới những bức tường hang đá ảo ánh bởi vì lũ pháp sư thần lùn ma quái ấy đang luẩn quẩn dạo gần đây. Một lũ tinh ranh, tổ sư chúng."
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Hãy mua bán với thương nhân của thị trấn và ủng hộ công ăn việc làm của chúng tôi nhé! Tôi không khuyến khích làm điều đó với cái dạ dày trống rỗng đâu.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","Thoảng khi, có những vị dũng sĩ đầy danh vọng với sức mạnh siêu nhiên từ khắp lục địa đến, và chúng tôi được vinh dự diện kiến họ... Tôi sẽ nói cho bạn biết nếu có ai đó ghé thăm hôm nay."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,Tránh xa tôi ra! Tôi đang trong một nhiệm vụ canh gác quan trọng và mạo hiểm giả các người luôn luôn chặn đường của tôi.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","""Nữ Tư Tế"" nhìn chằm chằm vào bạn với ánh nhìn xen chút thương cảm, hoàn toàn khiến bạn rối bời với những biểu cảm đáng thương trên khuôn mặt cô..||Định mệnh có vẻ như đã sắp đạt thứ gì đó ""không hay"" cho bạn."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,Thức ăn ở đây thật là tởm lợm. Bạn nghĩ vì sao chúng tôi giết quái vật và đặt một cái bàn chế tạo ngay giữa trung tâm thị trấn?
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,Hang động là nơi cực kì nguy hiểm để khám phá một mình nên bạn hãy cân nhắc thuê một vài lính đánh thuê trong làng để giúp đỡ bạn. Nhớ rằng họ sẽ chỉ tỏ ra hữu dụng cho đến khi cái bóp của bạn không xu dính túi.
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","ĐIện thờ thánh của thị trấn cung cấp vô vàn dịch vụ cho những mạo hiểm giả đầy đức hạnh, hãy chắc chắn rằng bạn ghé thăm hôm nay và ủng hộ tất cả số tiền lẻ. Chúa ban phước tất cả trên chuyến phiêu lưu của các người!"
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","Đội Cảnh Vệ và Phường Hội Thương Gia từ lâu đã luôn có sự hợp tác lâu bền, nên đừng có ý định gì vớ vẩn."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","Ở khu mỏ dưới thị trấn đang có cơn mưa đá quý. Những viên ngọc quý giá đắt đỏ nằm đầy rẫy dưới đất, không phải cái loại kính vô giá trị thường thấy!"
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,Có một cái cầu thang dẫn đến khu mỏ ở ngoài rìa thị trấn. Có lẽ ngươi nên xuống đó và không bao giờ quay trở lại nữa?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,Đây là chuyến canh gác cuối cùng trước khi tôi về hưu khỏi Đội Cảnh Vệ. Tôi thực sự hy vọng rằng không có gì xấu xa sẽ xảy ra!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Thị trấn này là nơi tuyệt vời để thư thả và chuẩn bị bạn cho cuộc hành trình phía trước. Đừng tỏ ra nóng vội để rời khỏi đây như thế, có vài thức đáng để xem và làm trước khi bạn tiến sâu hơn vào hầm ngục."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Để ý mỗi bước chân của bạn khi bạn lần đầu đi vào khu mỏ, lũ chó chết thần lùn đó rất thích phục kích những mạo hiểm giả không chút chuẩn bị."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Sao bạn không đi thám thú khu mỏ ngoài rỉa thị trấn? Có rất nhiều đồ miễn phí để thu thập nhưng hãy để ý rằng chúng tôi không tuần tra ngoài thị trấn, nên hãy chắc chắn bạn có thể chạy về nếu bạn gặp bất kì rắc rối nào."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Xin ngươi làm ơn đừng nghịch cái thác nước nữa. Ta không được để bộ quân phục này bị ướt được nên nếu ngươi làm bắn nước ta thề ""ta sẽ chấm hết ngươi."""
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Bạn biết đấy, tôi cũng đã từng là mạo hiểm giả như bạn... có lẽ bạn cũng nên kiếm một việc làm cho mình nữa chứ? Sau tất cả, ""mạo hiểm giả"" cũng chỉ là cách gọi sang hơn của việc trở nên vô gia cư và thất nghiệp."
 ModuleName,Dhak Legacy,Di sản nhà Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
@@ -3922,7 +3922,7 @@ ModuleTerm,Ant Lair,Hang ổ Kiến
 ModuleTerm,Ant Nest,Ổ Kiến
 ModuleTerm,Arena,Đấu trường
 ModuleTerm,attic,gác xép
-ModuleTerm,Bigfoot,
+ModuleTerm,Bigfoot,Chân to
 ModuleTerm,Black Lair,Sào huyệt Đen
 ModuleTerm,Black Market,Chợ đen
 ModuleTerm,Blue Lair,Sào huyệt Xanh dương
@@ -4027,7 +4027,7 @@ ModuleTerm,strange pig,Lợn kì quái
 ModuleTerm,strange seal,Sư tử biẻn kì quái
 ModuleTerm,strange sheep,Cừu kì quái
 ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Để phá đảo game này bạn cần phải thoát khỏi hầm ngục từ tầng đầu tiên.
-ModuleTerm,To complete this game you need to escape through the final rift.,Để phá đảo game này bạn cần phải thoát bằng cánh cổng cuối cùng.
+ModuleTerm,To complete this game you need to escape through the final rift.,Để phá đảo game này bạn cần phải thoát khỏi nơi này qua khe nứt không gian cuối cùng.
 ModuleTerm,To complete this game you need to escape through the final transportal.,Để phá đảo game này bạn cần phải thoát bằng cánh cổng cuối cùng.
 ModuleTerm,Topaz Mine,Mỏ Hoàng ngọc
 ModuleTerm,Tree Maze,Mê cung Cây
@@ -4664,7 +4664,7 @@ SonicName,whistle,tiếng thổi còi
 SonicName,woof,tiếng chó sủa
 SonicName,write,tiếng viết
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,Những quý tộc luôn thường thức những đặc quyền dành riêng cho họ tự hỏi vì sao mọi người đều ghét họ.
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Bạn thấp và nhẹ hơn so với những người khác trong loài, điều này khiến bạn nhanh nhẹn hơn nhưng kém hiệu quả trong giao tranh."
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Bạn thấp và nhẹ hơn so với những người khác, điều này khiến bạn nhanh nhẹn hơn nhưng kém hiệu quả trong giao tranh."
 SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Bạn cao và nặng hơn so với những người khác trong loài, điều này khiến bạn chậm chạp hơn nhưng vô cùng cứng cáp trong giao tranh."
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Mãi mãi bị nguyền rủa bởi chứng ma sói, những sinh vật này có thể biến hình thành dạng sói quái vật."
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,Những cá thể bị lãng quên tồn tại bằng việc hút đi sinh lực của những sinh vật khác.
@@ -4676,7 +4676,7 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Những đầy tớ chung thành của nguyên tố thủy, họ có thể tạo ra những khối cầu phát nổ để tiêu diệt kẻ thù."
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Việc dành cả đời để học khiến bạn không đoái hoài gì đến tập thể dục hay những thói quen khác.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Những kẻ mắc hội chứng nhân vật chính luôn tưởng tượng rằng mình bất tử với 'plot armour', nhưng họ sớm muộn sẽ ăn trái đắng của thực tế thôi."
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Không chắc chắn về vị trí của mình, bạn đã quen với việc có mặt ở mọi nơi và mọi nơi cùng một lúc."
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Với việc vị trí của bản thân luôn không ổn định, những cá thể này đã thích nghi với việc xuất hiện ở khắp mọi nơi và mọi lúc cùng thời điểm."
 SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Được điêu khắc từ thủy tinh sống phản chiếu năng lượng và khúc xạ ánh sáng, bạn là sự mô phỏng hoàn hảo nhưng tinh tế của đối tác tự nhiên của bạn."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Dù không có thịt nhưng vẫn còn sống, con quái vật kì dị này có những lợi thế kiên cường."
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Thói quen say xỉn tạo nên những nhà thám hiểm trơ trẽn nhưng hơi loạng choạng; chỉ cần không yêu cầu họ đọc ngược bảng chữ cái.
