@@ -1067,7 +1067,6 @@ EffectType,nutrition,táplálás
 EffectType,opening,kinyitás
 EffectType,pacify,nyugtatás
 EffectType,place curse,megátkozás
-EffectType,polymorph,átváltozás
 EffectType,punish,büntetés
 EffectType,raise dead,halott-támasztás
 EffectType,recall,visszahívás
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},{From}.-{To}. szint
 FormatText,levels {Number}+,{Number}. szint +
 FormatText,LOCKED {GATENAME},ZÁRT {GATENAME}
 FormatText,not {EffectProperty},nincsen/nem {EffectProperty}
+FormatText,polymorph into {EntityNames},átváltozás {EntityNames}
 FormatText,range {Dice},hatótávolság {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}. helyezett
 FormatText,replenish life from {Percent}%,
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,"Kérlek, tisztázd a dolgot"
 LiteralText,Please provide your feedback,"Kérlek, adj visszajelzést"
 LiteralText,Please rotate your device to landscape :-),"Kérlek, forgasd fekvő üzemmódba az eszközt :-)"
 LiteralText,POLYMORPH,ÁTVÁLTOZÁS
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,Mivé szeretnél átváltozni?
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,ÁTVÁLTOZOTT
 LiteralText,portal,portál
 LiteralText,PORTALS,

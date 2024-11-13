@@ -1067,7 +1067,6 @@ EffectType,nutrition,Nahrung
 EffectType,opening,Öffnung
 EffectType,pacify,befrieden
 EffectType,place curse,platziere Fluch
-EffectType,polymorph,verwandeln
 EffectType,punish,bestrafen
 EffectType,raise dead,erwecke Tote
 EffectType,recall,erinnern
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},Stufe {From}-{To}
 FormatText,levels {Number}+,Stufe {Number}+
 FormatText,LOCKED {GATENAME},VERSCHLOSSEN {GATENAME}
 FormatText,not {EffectProperty},nicht {EffectProperty}
+FormatText,polymorph into {EntityNames},verwandeln {EntityNames}
 FormatText,range {Dice},Reichweite {Dice}
 FormatText,RANKED #{RankNumber},PLATZIERUNG #{RankNumber}
 FormatText,replenish life from {Percent}%,Gesundheit von {Percent}% widerherstellen
@@ -3344,7 +3344,7 @@ LiteralText,End this adventure,Abenteuer beenden
 LiteralText,ended,beendet
 LiteralText,ENTER QUANTITY,MENGE EINGEBEN
 LiteralText,ENTITIES,WESEN
-LiteralText,entity,EINHEITEN
+LiteralText,entity,Einheiten
 LiteralText,entropy accidents,Entropieunfälle
 LiteralText,EQUIP,AUSRÜSTEN
 LiteralText,ESCAPE,FLUCHT
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,Bitte erläutere das genauer
 LiteralText,Please provide your feedback,Bitte gib uns Feedback
 LiteralText,Please rotate your device to landscape :-),Bitte drehe Dein Gerät in das Querformat :-)
 LiteralText,POLYMORPH,VERWANDELN
+LiteralText,polymorph entity,verwandeln Einheiten
 LiteralText,Polymorph into what?,Verwandeln in was?
+LiteralText,polymorph item,verwandeln Gegenstand
+LiteralText,polymorph trap,verwandeln Falle
 LiteralText,POLYMORPHED,VERWANDELT
 LiteralText,portal,Portal
 LiteralText,PORTALS,PORTALE

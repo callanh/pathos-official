@@ -1067,7 +1067,6 @@ EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
 EffectType,pacify,thỏa hiệp
 EffectType,place curse,niệm lời nguyền
-EffectType,polymorph,biến đổi hình dạng
 EffectType,punish,trừng phạt
 EffectType,raise dead,tái sinh
 EffectType,recall,gọi thú
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},từ tầng {From} đến {To}
 FormatText,levels {Number}+,tầng {Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} bị khóa
 FormatText,not {EffectProperty},không {EffectProperty}
+FormatText,polymorph into {EntityNames},biến đổi hình dạng {EntityNames}
 FormatText,range {Dice},tầm xa {Dice}
 FormatText,RANKED #{RankNumber},XẾP HẠNG #{RankNumber}
 FormatText,replenish life from {Percent}%,bổ sung máu từ {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,Hãy giải thích
 LiteralText,Please provide your feedback,Hãy gửi phản hồi của bạn
 LiteralText,Please rotate your device to landscape :-),Hãy xoay ngang thiết bị của bạn
 LiteralText,POLYMORPH,BIẾN HÌNH
+LiteralText,polymorph entity,biến đổi hình dạng thực thể
 LiteralText,Polymorph into what?,Biến hình thành?
+LiteralText,polymorph item,biến đổi hình dạng vật phẩm
+LiteralText,polymorph trap,biến đổi hình dạng bẫy
 LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
 LiteralText,PORTALS,CỔNG

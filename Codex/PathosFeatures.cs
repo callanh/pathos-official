@@ -402,6 +402,8 @@ namespace Pathos
         F.Mountable = true;
         F.Weight = Weight.FromUnits(50000);
 
+        F.DestroyApply.ConvertFixture(workbench, Devices.entropy_trap);
+
         var Workbench = F.SetWorkbench();
         Workbench.CraftSkill = Skills.crafting;
         Workbench.CraftSonic = Sonics.craft;
@@ -469,7 +471,7 @@ namespace Pathos
         /*18*/Workbench.AddAccident(Codex.Explosions.muddy, A =>
         {
           A.ApplyTransient(Properties.hallucination, 4.d100());
-          A.Polymorph();
+          A.PolymorphItemAndEntityAndTrap();
         });
         /*19*/Workbench.AddAccident(Codex.Explosions.acid, A => 
         {
@@ -483,8 +485,6 @@ namespace Pathos
           A.Afflict(Codex.Afflictions.List.ToArray());
           //A.ConvertFixture(F, Devices.entropy_trap); // NOTE: this will convert any nearby fixtures as well.
         });
-
-        F.DestroyApply.ConvertFixture(workbench, Devices.entropy_trap);
       });
     }
 #endif

@@ -1067,7 +1067,6 @@ EffectType,nutrition,תזונה
 EffectType,opening,פתיחה
 EffectType,pacify,הרגעה
 EffectType,place curse,הטלת קללה
-EffectType,polymorph,שינוי צורה
 EffectType,punish,ענישה
 EffectType,raise dead,הקמת מתים
 EffectType,recall,החזרה
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},קומות {From}-{To}
 FormatText,levels {Number}+,קומות{Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} נעול
 FormatText,not {EffectProperty},לא {EffectProperty}
+FormatText,polymorph into {EntityNames},שינוי צורה {EntityNames}
 FormatText,range {Dice},טווח {Dice}
 FormatText,RANKED #{RankNumber},מקום {RankNumber}
 FormatText,replenish life from {Percent}%,מילוי נקודות חיים מ{Percent}%-
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,נא להסביר
 LiteralText,Please provide your feedback,נא לשלוח משוב
 LiteralText,Please rotate your device to landscape :-),נא להעביר את המכשיר למצב אופקי :-)
 LiteralText,POLYMORPH,לשנות צורה
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,לשנות צורה למה?
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,במצב שינוי צורה
 LiteralText,portal,מעבר
 LiteralText,PORTALS,מעברים

@@ -410,7 +410,7 @@ namespace Pathos
         D.Strike = Strikes.spirit;
         D.Material = Materials.iron;
         //D.SetEscapeProperty(Properties.MagicResistance); // it's not clear why the player escaped the polymorph trap.
-        D.TriggerApply.Polymorph();
+        D.TriggerApply.PolymorphItemAndEntity();
       });
 
       poison_gas_trap = AddDevice("poison gas trap", Difficulty: 9, RepeatDice: 1.d20(), Glyphs.poison_gas_trap, Sonics.gas, D =>

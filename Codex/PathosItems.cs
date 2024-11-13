@@ -875,7 +875,7 @@ namespace Pathos
                     A.CreateEntity(1.d3(), Entities.ghost);
                   });
                   Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
-                  Table.Add(10, A => A.Polymorph(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray(), Items: false));
+                  Table.Add(10, A => A.PolymorphEntity(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray()));
                   Table.Add(5, A => A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null));
                 });
               }
@@ -1672,7 +1672,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 20, Delay.FromTurns(10), Sonics.amulet, A =>
         {
           A.MajorProperty(Properties.polymorph);
-          A.Polymorph();
+          A.PolymorphEntity();
         });
         I.SetWeakness(AmuletWeakness);
         I.DefaultSanctity = Sanctities.Cursed;
@@ -2531,7 +2531,7 @@ namespace Pathos
         I.SetArmour(Skills.light_armour, 1);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.armour, A =>
         {
-          A.Polymorph(Entities.ghost);
+          A.PolymorphEntity(Entities.ghost);
           A.SummonEntity(4.d4(), Entities.phase_spider);
         });
       });
@@ -3295,7 +3295,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 20, Delay.FromTurns(20), Sonics.armour, A =>
         {
           A.IncreaseAbility(Attributes.strength, Dice.One);
-          A.Polymorph(Entities.elephant);
+          A.PolymorphEntity(Entities.elephant);
         });
       });
 
@@ -6859,10 +6859,10 @@ namespace Pathos
               B.ApplyTransient(Properties.polymorph_control, 10.d100());
               B.ApplyTransient(Properties.polymorph, 10.d100());
             },
-            U => U.Polymorph(),
+            U => U.PolymorphEntity(),
             C =>
             {
-              C.Polymorph();
+              C.PolymorphEntity();
               C.ApplyTransient(Properties.paralysis, 10.d10());
             }
           );
@@ -7603,7 +7603,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 15, Delay.FromTurns(10), Sonics.ring, A =>
         {
           A.MajorProperty(Properties.polymorph);
-          A.Polymorph();
+          A.PolymorphEntity();
         });
         I.SetWeakness(RingWeakness);
         I.DefaultSanctity = Sanctities.Cursed;
@@ -8208,7 +8208,7 @@ namespace Pathos
           Use.SetCast().FilterDigestedItem(false);
           Use.Apply.WhenConfused
           (
-            T => T.Polymorph(Entities.killer_food_ration),
+            T => T.PolymorphEntity(Entities.killer_food_ration),
             E => E.WithSourceSanctity
             (
               B => B.DevourAsset(Sanctities.Cursed), // devour only cursed items.
@@ -8274,7 +8274,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
           // TODO: eating air does what?
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.air_elemental), E => E.Polymorph(Entities.energy_vortex));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.air_elemental), E => E.PolymorphEntity(Entities.energy_vortex));
         });
       });
 
@@ -8313,7 +8313,7 @@ namespace Pathos
         {
           A.CreateAsset(1.d3(), QuantityDice: null, rock); // poop rocks (quantity is more than this)!
           A.CreateAsset(1.d2() - 1, QuantityDice: null, diamond); // maybe something valuable comes out.
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.earth_elemental), E => E.Polymorph(Entities.dust_vortex));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.earth_elemental), E => E.PolymorphEntity(Entities.dust_vortex));
         });
       });
 
@@ -8496,7 +8496,7 @@ namespace Pathos
         {
           //A.Harm(Elements.fire, 5.d6() + 5); // NOTE: this effectively means you can't turn a bird pet into a fire elemental/vortex (because they die first).
           A.ConsumeResistance(Elements.fire);
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.fire_elemental), E => E.Polymorph(Entities.fire_vortex));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.fire_elemental), E => E.PolymorphEntity(Entities.fire_vortex));
         });
       });
 
@@ -8537,7 +8537,7 @@ namespace Pathos
         {
           //A.Harm(Elements.cold, 5.d6() + 5); // NOTE: this effectively means you can't turn a bird pet into an ice elemental/vortex (because they die first).
           A.ConsumeResistance(Elements.cold);
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.ice_elemental), E => E.Polymorph(Entities.ice_vortex));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.ice_elemental), E => E.PolymorphEntity(Entities.ice_vortex));
         });
       });
 
@@ -8591,7 +8591,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
           A.Nutrition(Dice.Fixed(100));
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.water_elemental), E => E.Polymorph(Entities.steam_vortex));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.water_elemental), E => E.PolymorphEntity(Entities.steam_vortex));
         });
       });
 
@@ -8815,7 +8815,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Polymorph(Entities.yellow_light);
+          A.PolymorphEntity(Entities.yellow_light);
         });
       });
 
@@ -10318,7 +10318,7 @@ namespace Pathos
          .SetTalent(Properties.hallucination);
         I.AddObviousIngestUse(Motions.eat, 50, Delay.FromTurns(10), Sonics.tool, A =>
         {
-          A.WhenChance(Chance.OneIn2, T => T.Polymorph(Entities.black_light), E => E.ApplyTransient(Properties.hallucination, 10.d100()));
+          A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.black_light), E => E.ApplyTransient(Properties.hallucination, 10.d100()));
         });
       });
 
@@ -10410,7 +10410,7 @@ namespace Pathos
         {
           Use.Apply.WhenConfused
           (
-            T => T.Polymorph(Entities.rat_king), // opposite blast
+            T => T.PolymorphEntity(Entities.rat_king), // opposite blast
             F => F.WithSourceSanctity
             (
               B =>
@@ -10425,7 +10425,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(10), Sonics.tool, A =>
         {
-          A.Polymorph(Entities.wererat);
+          A.PolymorphEntity(Entities.wererat);
         });
       });
 
@@ -10530,7 +10530,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(20), Sonics.tool, A =>
         {
-          A.Polymorph(LampEntityArray, Items: false);
+          A.PolymorphEntity(LampEntityArray);
         });
       });
 
@@ -10717,7 +10717,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.tool);
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
         {
-          A.Polymorph(Entities.skeleton);
+          A.PolymorphEntity(Entities.skeleton);
         });
       });
 
@@ -10927,9 +10927,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.Polymorph(Entities.white_unicorn),
-            U => U.Polymorph(Entities.grey_unicorn),
-            C => C.Polymorph(Entities.black_unicorn)
+            B => B.PolymorphEntity(Entities.white_unicorn),
+            U => U.PolymorphEntity(Entities.grey_unicorn),
+            C => C.PolymorphEntity(Entities.black_unicorn)
           );
         });
       });
@@ -11782,12 +11782,12 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.spirit, 2.d6() + 2)
              .SetObjects()
              .SetAudibility(5);
-          Use.Apply.Polymorph();
+          Use.Apply.PolymorphItemAndEntityAndTrap();
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
           A.MajorProperty(Properties.polymorph);
-          A.Polymorph();
+          A.PolymorphEntity();
         });
       });
 
@@ -12105,7 +12105,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Polymorph(Entities.vampire);
+          A.PolymorphEntity(Entities.vampire);
         });
       });
 

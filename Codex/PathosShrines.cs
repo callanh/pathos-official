@@ -398,7 +398,7 @@ namespace Pathos
            .FilterEquipped(false) // otherwise can reforge an equipped one-handed weapon into a two-handed weapon.
            .FilterUniques(false)
            .FilterCoins(false);
-          B.Apply.Polymorph();
+          B.Apply.PolymorphItem();
         });
 
         S.AddBoon("enchant", B =>

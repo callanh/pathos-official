@@ -2192,25 +2192,25 @@ namespace Pathos
           {
             S.SetCast().Strike(Strikes.spirit, 1.d4() + 3)
              .SetObjects();
-            S.Apply.PolymorphEntity();
+            S.Apply.PolymorphEntityAndTrap();
           },
           E =>
           {
             E.SetCast().Strike(Strikes.spirit, 1.d4() + 5)
              .SetObjects();
-            E.Apply.Polymorph();
+            E.Apply.PolymorphEntityAndTrap();
           },
           M =>
           {
             M.SetCast().Strike(Strikes.spirit, 1.d4() + 7)
              .SetObjects();
-            M.Apply.Polymorph();
+            M.Apply.PolymorphItemAndEntityAndTrap();
           },
           C =>
           {
             C.SetCast().Strike(Strikes.spirit, 1.d4() + 9)
              .SetObjects();
-            C.Apply.Polymorph();
+            C.Apply.PolymorphItemAndEntityAndTrap();
           }
         );
       });

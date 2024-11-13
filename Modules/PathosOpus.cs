@@ -577,9 +577,9 @@ namespace Pathos
       SetSiteSuffixFirstLevelUp("Farm");
       SetSiteFirstLevelEntrance(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Crypt);
-      SetSiteFirstLevelUp(OpusTerms.Cage);
       SetMapLevelDown(OpusTerms.Overland);
       SetMapLevelUp(OpusTerms.Underground);
+      SetSiteFirstLevelUp(OpusTerms.Cage);
 #endif
 
 #if DEBUG
@@ -1949,6 +1949,9 @@ namespace Pathos
 
           var BacktrackDictionary = new Dictionary<OpusSector, Square>();
 
+          // do we have any sunken tunnels on this map.
+          var HasSunkenTunnels = Chance.OneIn2.Hit();
+
           foreach (var Sector in Plan.Sectors)
           {
             var SourceSquare = BelowMap[Sector.Region.Midpoint()];
@@ -2012,7 +2015,8 @@ namespace Pathos
                   TunnelSquareList.AddRange(Maker.DirectPath(LinkSquare, TargetSquare, VerticalBias: Chance.OneIn2.Hit()).Except(TunnelSquareList));
                 }
 
-                var TunnelGround = Sector != InitialSector && Chance.OneIn10.Hit() ? CageVariant.SinkGround : CageVariant.WalkGround;
+                // if there are any sunken tunnels then the first tunnel must be sunken, so the unprepared player doesn't get caught between lava and iron bars.
+                var TunnelGround = HasSunkenTunnels && (Sector == InitialSector || Chance.OneIn10.Hit()) ? CageVariant.SinkGround : CageVariant.WalkGround;
 
                 foreach (var TunnelSquare in TunnelSquareList)
                   Maker.Tunnel(TunnelSquare, CageVariant.MainBarrier, TunnelGround, BelowIsLit, WallStructure.Permanent);

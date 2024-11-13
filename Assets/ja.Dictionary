@@ -1067,7 +1067,6 @@ EffectType,nutrition,満腹度上昇
 EffectType,opening,開錠
 EffectType,pacify,鎮める
 EffectType,place curse,呪いをかける
-EffectType,polymorph,変化
 EffectType,punish,天罰を受ける
 EffectType,raise dead,蘇生
 EffectType,recall,仲間を呼び戻す
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},レベルの差 {From} から {To}
 FormatText,levels {Number}+,レベルの差 {Number}以上
 FormatText,LOCKED {GATENAME},{GATENAME}は施錠されている
 FormatText,not {EffectProperty},{EffectProperty}ではない
+FormatText,polymorph into {EntityNames},
 FormatText,range {Dice},射程{Dice}
 FormatText,RANKED #{RankNumber},名誉の殿堂で{RankNumber}位に入りました！
 FormatText,replenish life from {Percent}%,ライフが{Percent}%以下の場合に全回復
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,どんな状況かお知らせくだ�
 LiteralText,Please provide your feedback,ご意見をお寄せください
 LiteralText,Please rotate your device to landscape :-),デバイスを横向きにしてください:-)
 LiteralText,POLYMORPH,変化
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,何に変化する？
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
 LiteralText,PORTALS,ポータル

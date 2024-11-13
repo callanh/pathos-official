@@ -1067,7 +1067,6 @@ EffectType,nutrition,营养
 EffectType,opening,开启
 EffectType,pacify,平静
 EffectType,place curse,诅咒
-EffectType,polymorph,变形
 EffectType,punish,惩罚
 EffectType,raise dead,复活死尸
 EffectType,recall,唤回队友
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},等级{From}-{To}
 FormatText,levels {Number}+,等级大于{Number}
 FormatText,LOCKED {GATENAME},上锁的 {GATENAME}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
+FormatText,polymorph into {EntityNames},
 FormatText,range {Dice},范围 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
 FormatText,replenish life from {Percent}%,从{Percent}%起补满生命值
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,请进行任何申明
 LiteralText,Please provide your feedback,请进行反馈
 LiteralText,Please rotate your device to landscape :-),请旋转您的设备以切换模式 :-)
 LiteralText,POLYMORPH,变形
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,变形为什么？
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,已变形
 LiteralText,portal,传送门
 LiteralText,PORTALS,传送门

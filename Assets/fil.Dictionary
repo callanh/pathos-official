@@ -1067,7 +1067,6 @@ EffectType,nutrition,
 EffectType,opening,pagbukas
 EffectType,pacify,pag-pacify
 EffectType,place curse,paglagay ng sumpa
-EffectType,polymorph,pag-polymorph
 EffectType,punish,pagkaparusa
 EffectType,raise dead,
 EffectType,recall,pag-recall
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},
 FormatText,levels {Number}+,
 FormatText,LOCKED {GATENAME},
 FormatText,not {EffectProperty},
+FormatText,polymorph into {EntityNames},polymorph {EntityNames}
 FormatText,range {Dice},
 FormatText,RANKED #{RankNumber},
 FormatText,replenish life from {Percent}%,
@@ -3575,8 +3575,11 @@ LiteralText,Please note that using force-quit on the app can result in truncated
 LiteralText,Please offer any clarification,
 LiteralText,Please provide your feedback,
 LiteralText,Please rotate your device to landscape :-),
-LiteralText,POLYMORPH,
+LiteralText,POLYMORPH,PAG-POLYMORPH
+LiteralText,polymorph entity,polymorph entity
 LiteralText,Polymorph into what?,
+LiteralText,polymorph item,
+LiteralText,polymorph trap,polymorph trap
 LiteralText,POLYMORPHED,
 LiteralText,portal,
 LiteralText,PORTALS,

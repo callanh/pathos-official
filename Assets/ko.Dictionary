@@ -1067,7 +1067,6 @@ EffectType,nutrition,영양 섭취
 EffectType,opening,개방
 EffectType,pacify,진정
 EffectType,place curse,저주 부여
-EffectType,polymorph,폴리모프
 EffectType,punish,형벌
 EffectType,raise dead,부활
 EffectType,recall,소환
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},레벨 {From}-{To}
 FormatText,levels {Number}+,레벨 {Number}+
 FormatText,LOCKED {GATENAME},잠겨진 {GATENAME}
 FormatText,not {EffectProperty},{EffectProperty}가 아님
+FormatText,polymorph into {EntityNames},폴리모프 {EntityNames}
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
 FormatText,replenish life from {Percent}%,{Percent}%만큼 체력 회복
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,설명을 부탁드립니다.
 LiteralText,Please provide your feedback,피드백을 주세요.
 LiteralText,Please rotate your device to landscape :-),풍경을 보려면 장치를 회전하세요 :-)
 LiteralText,POLYMORPH,폴리모프
+LiteralText,polymorph entity,폴리모프 개체
 LiteralText,Polymorph into what?,무엇으로 폴리모프 합니까?
+LiteralText,polymorph item,폴리모프 아이템
+LiteralText,polymorph trap,폴리모프 함정
 LiteralText,POLYMORPHED,폴리모프됨
 LiteralText,portal,포탈
 LiteralText,PORTALS,포탈들

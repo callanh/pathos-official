@@ -1067,7 +1067,6 @@ EffectType,nutrition,nutrizione
 EffectType,opening,apertura
 EffectType,pacify,pacificare
 EffectType,place curse,maledici
-EffectType,polymorph,metamorfosi
 EffectType,punish,punire
 EffectType,raise dead,resuscitare morti
 EffectType,recall,richiamare
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},livelli {From}-{To}
 FormatText,levels {Number}+,livelli {Number}+
 FormatText,LOCKED {GATENAME},CHIUSO {GATENAME}
 FormatText,not {EffectProperty},non {EffectProperty}
+FormatText,polymorph into {EntityNames},metamorfosi {EntityNames}
 FormatText,range {Dice},range {Dice}
 FormatText,RANKED #{RankNumber},CLASSIFICATO #{RankNumber}
 FormatText,replenish life from {Percent}%,ripristina vita da {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,Per favore offri qualsiasi chiariment
 LiteralText,Please provide your feedback,Per favore manda il tuo feedback
 LiteralText,Please rotate your device to landscape :-),Ruota il tuo dispositivo in orizzontale :-)
 LiteralText,POLYMORPH,METAMORFOSI
+LiteralText,polymorph entity,metamorfosi entità
 LiteralText,Polymorph into what?,Trasformarti in cosa?
+LiteralText,polymorph item,metamorfosi oggetto
+LiteralText,polymorph trap,metamorfosi trappola
 LiteralText,POLYMORPHED,TRASFORMATO
 LiteralText,portal,portale
 LiteralText,PORTALS,PORTALI

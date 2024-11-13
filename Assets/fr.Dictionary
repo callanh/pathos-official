@@ -1067,7 +1067,6 @@ EffectType,nutrition,nutrition
 EffectType,opening,ouverture
 EffectType,pacify,pacifier
 EffectType,place curse,place la malédiction
-EffectType,polymorph,polymorphe
 EffectType,punish,punir
 EffectType,raise dead,résurrection
 EffectType,recall,rappelle
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},niveaux {From}-{To}
 FormatText,levels {Number}+,niveaux {Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} VERROUILLÉE
 FormatText,not {EffectProperty},«pas {EffectProperty}»
+FormatText,polymorph into {EntityNames},polymorphe {EntityNames}
 FormatText,range {Dice},portée {Dice}
 FormatText,RANKED #{RankNumber},RANG #{RankNumber}
 FormatText,replenish life from {Percent}%,reconstituer la vie de {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,Merci de donner toute explication uti
 LiteralText,Please provide your feedback,Merci de partager vos impressions
 LiteralText,Please rotate your device to landscape :-),Veuillez faire pivoter votre appareil en mode paysage :-)
 LiteralText,POLYMORPH,POLYMORPHER
+LiteralText,polymorph entity,polymorphe entité
 LiteralText,Polymorph into what?,Polymorpher en quoi ?
+LiteralText,polymorph item,polymorphe objet
+LiteralText,polymorph trap,polymorphe piège
 LiteralText,POLYMORPHED,POLYMORPHÉ
 LiteralText,portal,portail
 LiteralText,PORTALS,PORTAILS

@@ -1067,7 +1067,6 @@ EffectType,nutrition,питание
 EffectType,opening,открытие
 EffectType,pacify,усмирён
 EffectType,place curse,накладывает проклятие
-EffectType,polymorph,превращает
 EffectType,punish,наказывает
 EffectType,raise dead,оживляет
 EffectType,recall,отзывает
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},уровни {From}-{To}
 FormatText,levels {Number}+,уровни {Number}+
 FormatText,LOCKED {GATENAME},ЗАПЕРТЫЙ {GATENAME}
 FormatText,not {EffectProperty},не {EffectProperty}
+FormatText,polymorph into {EntityNames},превращает {EntityNames}
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
 FormatText,replenish life from {Percent}%,восполнение здоровья на {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,"Пожалуйста, напишит
 LiteralText,Please provide your feedback,"Пожалуйста, напишите свой отзыв"
 LiteralText,Please rotate your device to landscape :-),"Пожалуйста, поверните ваше устройство в горизонтальное положение :-)"
 LiteralText,POLYMORPH,ПРЕВРАТИТЬСЯ
+LiteralText,polymorph entity,превращает существо
 LiteralText,Polymorph into what?,Превратиться во что?
+LiteralText,polymorph item,превращает предмет
+LiteralText,polymorph trap,превращает ловушку
 LiteralText,POLYMORPHED,ПРЕВРАЩЕНИЕ
 LiteralText,portal,портал
 LiteralText,PORTALS,ПОРТАЛЫ

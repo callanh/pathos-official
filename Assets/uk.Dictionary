@@ -1067,7 +1067,6 @@ EffectType,nutrition,харчування
 EffectType,opening,відкривання
 EffectType,pacify,вмиротворює
 EffectType,place curse,накладає прокляття
-EffectType,polymorph,перетворює
 EffectType,punish,карає
 EffectType,raise dead,підіймає мерця
 EffectType,recall,відкликає
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},рівні {From}-{To}
 FormatText,levels {Number}+,рівні {Number}+
 FormatText,LOCKED {GATENAME},ЗАМКНЕНІ {GATENAME}
 FormatText,not {EffectProperty},що не {EffectProperty}
+FormatText,polymorph into {EntityNames},перетворює {EntityNames}
 FormatText,range {Dice},дистанція {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
 FormatText,replenish life from {Percent}%,відновити життя від {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,"Будь ласка, напишіт�
 LiteralText,Please provide your feedback,"Будь ласка, напишіть свій відгук"
 LiteralText,Please rotate your device to landscape :-),"Будь ласка, поверніть пристрій в альбомний режим :)"
 LiteralText,POLYMORPH,ПЕРЕТВОРЕННЯ
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,Перетворитися на кого?
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,ПЕРЕТВОРЕНИЙ НА
 LiteralText,portal,портал
 LiteralText,PORTALS,ПОРТАЛИ

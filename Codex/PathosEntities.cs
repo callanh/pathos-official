@@ -5811,7 +5811,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.petrify);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
-        E.Conveyance.Polymorph();
+        E.Conveyance.PolymorphEntity();
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -16667,7 +16667,7 @@ namespace Pathos
         {
           A.Apply.Impersonate();
         });
-        E.Conveyance.Polymorph();
+        E.Conveyance.PolymorphEntity();
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -17658,7 +17658,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
         {
-          K.Apply.Polymorph();
+          K.Apply.PolymorphItemAndEntityAndTrap();
         }); // +1 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.polymorph, 1.d500() + 750));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -21592,7 +21592,7 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d3());
-        E.Conveyance.Polymorph();
+        E.Conveyance.PolymorphEntity();
         E.SetCorpse(Chance.OneIn4);
       });
 

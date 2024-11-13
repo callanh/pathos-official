@@ -1067,7 +1067,6 @@ EffectType,nutrition,beslenme
 EffectType,opening,açıklık
 EffectType,pacify,sakinleştir
 EffectType,place curse,lanet yerleştir
-EffectType,polymorph,şekil değiştir
 EffectType,punish,cezalandır
 EffectType,raise dead,ölüyü canlandırma
 EffectType,recall,geri çağır
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},
 FormatText,levels {Number}+,
 FormatText,LOCKED {GATENAME},{GATENAME} Kilitli
 FormatText,not {EffectProperty},olmamış {EffectProperty}
+FormatText,polymorph into {EntityNames},şekil değiştir {EntityNames}
 FormatText,range {Dice},menzil {Dice}
 FormatText,RANKED #{RankNumber},#{RankNumber} DERECESİNE ULAŞTIN
 FormatText,replenish life from {Percent}%,
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,Lütfen bir açıklama ekleyin
 LiteralText,Please provide your feedback,Lüften geri bildiri yapın
 LiteralText,Please rotate your device to landscape :-),
 LiteralText,POLYMORPH,ŞEKİL DEĞİŞTİR
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,Hangi şekle girmek istiyorsun?
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,ŞEKİL DEĞİŞTİRDİ
 LiteralText,portal,
 LiteralText,PORTALS,

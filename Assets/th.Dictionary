@@ -1067,7 +1067,6 @@ EffectType,nutrition,โภชนาการ
 EffectType,opening,เปิด
 EffectType,pacify,
 EffectType,place curse,ลงคำสาป
-EffectType,polymorph,กลายร่าง
 EffectType,punish,ลงโทษ
 EffectType,raise dead,คืนชีพคนตาย
 EffectType,recall,เรียกคืน
@@ -2120,6 +2119,7 @@ FormatText,levels {From}-{To},จากชั้น{From}ถึง{To}
 FormatText,levels {Number}+,เพิ่ม {Number} เลเวล
 FormatText,LOCKED {GATENAME},{GATENAME}ถูกล็อค
 FormatText,not {EffectProperty},ไม่{EffectProperty}
+FormatText,polymorph into {EntityNames},กลายร่าง {EntityNames}
 FormatText,range {Dice},ระยะ{Dice}
 FormatText,RANKED #{RankNumber},อันดับที่ {RankNumber}
 FormatText,replenish life from {Percent}%,ฟื้นฟูพลังชีวิต {Percent}%
@@ -3576,7 +3576,10 @@ LiteralText,Please offer any clarification,
 LiteralText,Please provide your feedback,
 LiteralText,Please rotate your device to landscape :-),
 LiteralText,POLYMORPH,กลายร่าง
+LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,กลายร่างเป็นอะไร?
+LiteralText,polymorph item,
+LiteralText,polymorph trap,
 LiteralText,POLYMORPHED,กลายร่างแล้ว
 LiteralText,portal,ประตูมิติ
 LiteralText,PORTALS,
