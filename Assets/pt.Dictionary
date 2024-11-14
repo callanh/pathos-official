@@ -1012,39 +1012,35 @@ EffectType,cancellation,cancelamento
 EffectType,capture,captura
 EffectType,charging,carregando
 EffectType,charm,encanto
-EffectType,clone character,clonar personagem
+EffectType,clone entity,clonar personagem
 EffectType,concealing,escondendo
-EffectType,connect passage,conectar passagem
-EffectType,convert asset,converter item
-EffectType,convert boulder,converter pedregulho
-EffectType,convert door,converter porta
-EffectType,convert fixture,converter estrutura
-EffectType,convert floor,converter piso
-EffectType,convert spill,converter cachoeira
-EffectType,convert wall,converter parede
-EffectType,create boulder,criar pedregulho
-EffectType,create fixture,criar estrutura
+EffectType,connect portal,conectar passagem
+EffectType,convert barrier,converter parede
+EffectType,convert block to barrier,converter pedregulho
+EffectType,convert feature,converter estrutura
+EffectType,convert gate,converter porta
+EffectType,convert ground,converter piso
+EffectType,convert item,converter item
+EffectType,convert volatile,converter cachoeira
 EffectType,create golem,criar golem
 EffectType,create horde,criar horda
 EffectType,create nook,criar recanto
-EffectType,create spill,criar cachoeira
 EffectType,create trap,criar armadilha
-EffectType,create wall,criar parede
+EffectType,create volatile,criar cachoeira
 EffectType,decapitate,decapitar
-EffectType,degrade,degradar
-EffectType,destroy asset,destruir espólio
-EffectType,destroy wall,destruir parede
+EffectType,destroy item,destruir espólio
+EffectType,destroy volatile,remover cachoeira
 EffectType,detect,detectar
-EffectType,devour asset,devorar espólio
+EffectType,devour item,devorar espólio
 EffectType,disarm,desarmar
 EffectType,divine,predizer
 EffectType,drain life,drenar saúde
 EffectType,drain mana,drenar mana
-EffectType,enchant asset,encantar espólio
+EffectType,enchant item,encantar espólio
 EffectType,engulf,engolfar
 EffectType,enlightenment,iluminação
 EffectType,exchange,trocar
-EffectType,extinguish spill,extinguir cachoeira
+EffectType,extinguish volatile,extinguir cachoeira
 EffectType,gain level,ganhar nível
 EffectType,gain skill,ganhar habilidade
 EffectType,genocide,genocidar
@@ -1061,7 +1057,7 @@ EffectType,lose skill,perder habilidade
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrição
 EffectType,mapping,mapeamento
-EffectType,mobilise boulder,mobilizar pedregulho
+EffectType,mobilise block,mobilizar pedregulho
 EffectType,murder,assassinar
 EffectType,nutrition,nutrição
 EffectType,opening,abertura
@@ -1072,21 +1068,20 @@ EffectType,raise dead,ressuscitar morto
 EffectType,recall,trazer aliados
 EffectType,release,liberar
 EffectType,remove curse,remover maldição
-EffectType,remove spill,remover cachoeira
 EffectType,remove transient,remover efeito transitório
-EffectType,replicate asset,replicar espólio
+EffectType,replicate item,replicar espólio
 EffectType,restock,reabastecer
 EffectType,restore ability,restaurar atributo
 EffectType,rumour,espalhar
 EffectType,sacrifice,sacrificar
 EffectType,sanctify,santificar
 EffectType,searching,procurar
-EffectType,spawn character,gerar personagem
+EffectType,spawn entity,gerar personagem
 EffectType,steal,roubar
 EffectType,summon entity,convocar entidade
-EffectType,teleport asset,teleportar espólio
-EffectType,teleport away,teleportar-se para longe
-EffectType,teleport character,teleportar personagem
+EffectType,teleport entity,teleportar personagem
+EffectType,teleport item,teleportar espólio
+EffectType,teleport item away,teleportar-se para longe
 EffectType,tinning,enlatar
 EffectType,transition,transicionar
 EffectType,unafflict,desafligir
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,DEMOVER
 LiteralText,depth,profundeza
 LiteralText,DESCEND TO NEXT LEVEL,DESCER PARA O PRÓXIMO ANDAR
 LiteralText,destination,destino
-LiteralText,DESTROY,DESTRUIR
+LiteralText,destroy,destruir
 LiteralText,determined by player level,determinado pelo nível do jogador
 LiteralText,device,dispositivo
 LiteralText,DEVICES,DISPOSITIVOS

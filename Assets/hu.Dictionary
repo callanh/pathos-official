@@ -1012,39 +1012,35 @@ EffectType,cancellation,érvénytelenítés
 EffectType,capture,elfogás
 EffectType,charging,töltés
 EffectType,charm,elbűvölés
-EffectType,clone character,karakterklón
+EffectType,clone entity,karakterklón
 EffectType,concealing,eltitkolás
-EffectType,connect passage,
-EffectType,convert asset,következővé alakul:
-EffectType,convert boulder,következővé alakul:
-EffectType,convert door,következővé alakul:
-EffectType,convert fixture,következővé alakul:
-EffectType,convert floor,következővé alakul:
-EffectType,convert spill,
-EffectType,convert wall,következővé alakul:
-EffectType,create boulder,akadályt hoz létre
-EffectType,create fixture,tereptárgyat hoz létre
+EffectType,connect portal,
+EffectType,convert barrier,következővé alakul:
+EffectType,convert block to barrier,következővé alakul:
+EffectType,convert feature,következővé alakul:
+EffectType,convert gate,következővé alakul:
+EffectType,convert ground,következővé alakul:
+EffectType,convert item,következővé alakul:
+EffectType,convert volatile,
 EffectType,create golem,gólemet hoz létre
 EffectType,create horde,hordát hoz létre
 EffectType,create nook,bemélyedést hoz létre:
-EffectType,create spill,
 EffectType,create trap,csapdát hoz létre
-EffectType,create wall,falat hoz létre
+EffectType,create volatile,
 EffectType,decapitate,lefejezés
-EffectType,degrade,gyengítés
-EffectType,destroy asset,eszköz elpusztítása
-EffectType,destroy wall,fal elpusztítása
+EffectType,destroy item,eszköz elpusztítása
+EffectType,destroy volatile,
 EffectType,detect,észlelés
-EffectType,devour asset,eszköz felfalása
+EffectType,devour item,eszköz felfalása
 EffectType,disarm,lefegyverzés
 EffectType,divine,megfejtés
 EffectType,drain life,életelszívás
 EffectType,drain mana,manaelszívás
-EffectType,enchant asset,eszköz igézése
+EffectType,enchant item,eszköz igézése
 EffectType,engulf,elnyelés
 EffectType,enlightenment,felvilágosodás
 EffectType,exchange,kicserél
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,szint megszerzése
 EffectType,gain skill,képesség megszerzése
 EffectType,genocide,népirtás
@@ -1061,7 +1057,7 @@ EffectType,lose skill,képesség elvesztése
 EffectType,lose talent,készség elvesztése
 EffectType,malnutrition,alultápláltság
 EffectType,mapping,feltérképezés
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,gyilkosság
 EffectType,nutrition,táplálás
 EffectType,opening,kinyitás
@@ -1072,21 +1068,20 @@ EffectType,raise dead,halott-támasztás
 EffectType,recall,visszahívás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
-EffectType,remove spill,
 EffectType,remove transient,átmeneti hatás eltávolítása
-EffectType,replicate asset,eszköz lemásolása
+EffectType,replicate item,eszköz lemásolása
 EffectType,restock,feltöltés
 EffectType,restore ability,adottság-visszaállítás
 EffectType,rumour,híresztelés
 EffectType,sacrifice,áldozat
 EffectType,sanctify,felszentelés
 EffectType,searching,keresés
-EffectType,spawn character,karakter lerakás
+EffectType,spawn entity,karakter lerakás
 EffectType,steal,lopás
 EffectType,summon entity,entitás megidézése:
-EffectType,teleport asset,eszköz teleportálása
-EffectType,teleport away,elteleportálás
-EffectType,teleport character,karakter teleportálása
+EffectType,teleport entity,karakter teleportálása
+EffectType,teleport item,eszköz teleportálása
+EffectType,teleport item away,elteleportálás
 EffectType,tinning,konzerválás
 EffectType,transition,átalakulás
 EffectType,unafflict,megtisztítás
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,LEFOKOZÁS
 LiteralText,depth,mélység
 LiteralText,DESCEND TO NEXT LEVEL,LEERESZKEDÉS A KÖVETKEZŐ SZINTRE
 LiteralText,destination,úti cél
-LiteralText,DESTROY,ELPUSZTÍTÁS
+LiteralText,destroy,elpusztítás
 LiteralText,determined by player level,a játékos szintje határozza meg
 LiteralText,device,eszköz
 LiteralText,DEVICES,ESZKÖZÖK

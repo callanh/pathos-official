@@ -1012,39 +1012,35 @@ EffectType,cancellation,odwołanie
 EffectType,capture,przechwycenie
 EffectType,charging,ładuje się
 EffectType,charm,zaurocz
-EffectType,clone character,sklonuj postać
+EffectType,clone entity,sklonuj postać
 EffectType,concealing,zakrywanie
-EffectType,connect passage,
-EffectType,convert asset,zmień zaletę
-EffectType,convert boulder,zmień głaz
-EffectType,convert door,zmień drzwi
-EffectType,convert fixture,zmień armaturę
-EffectType,convert floor,zmień podłogę
-EffectType,convert spill,
-EffectType,convert wall,zmień ściany
-EffectType,create boulder,stwórz głaz
-EffectType,create fixture,stwórz armaturę
+EffectType,connect portal,
+EffectType,convert barrier,zmień ściany
+EffectType,convert block to barrier,zmień głaz
+EffectType,convert feature,zmień armaturę
+EffectType,convert gate,zmień drzwi
+EffectType,convert ground,zmień podłogę
+EffectType,convert item,zmień zaletę
+EffectType,convert volatile,
 EffectType,create golem,stwórz golema
 EffectType,create horde,stwórz hordę
 EffectType,create nook,stworzyć zakątek
-EffectType,create spill,
 EffectType,create trap,stwórz pułapkę
-EffectType,create wall,stwórz ścianę
+EffectType,create volatile,
 EffectType,decapitate,ściąć głowę
-EffectType,degrade,degradacja
-EffectType,destroy asset,usuń umiejętność
-EffectType,destroy wall,zniszcz ściane
+EffectType,destroy item,usuń umiejętność
+EffectType,destroy volatile,
 EffectType,detect,odkryj
-EffectType,devour asset,usuń majątek
+EffectType,devour item,usuń majątek
 EffectType,disarm,rozbrój
 EffectType,divine,boski
 EffectType,drain life,wyssanie życia
 EffectType,drain mana,wyssanie many
-EffectType,enchant asset,ulepsz zaletę
+EffectType,enchant item,ulepsz zaletę
 EffectType,engulf,pochłoń
 EffectType,enlightenment,oświecenie
 EffectType,exchange,wymiana
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,zdobądź poziom
 EffectType,gain skill,zdobądź umiejętność
 EffectType,genocide,masakra
@@ -1061,7 +1057,7 @@ EffectType,lose skill,tracić umiejętność
 EffectType,lose talent,tracić talent
 EffectType,malnutrition,niedożywienie
 EffectType,mapping,odwzorowanie
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,morderstwo
 EffectType,nutrition,odżywianie
 EffectType,opening,otwarcie
@@ -1072,21 +1068,20 @@ EffectType,raise dead,wskrzeszać zmarłych
 EffectType,recall,wycofanie
 EffectType,release,wydanie
 EffectType,remove curse,zdjąć klątwę
-EffectType,remove spill,
 EffectType,remove transient,usunąć stan przejściowy
-EffectType,replicate asset,replikować majątek
+EffectType,replicate item,replikować majątek
 EffectType,restock,uzupełnić zapasy
 EffectType,restore ability,przywrócić zdolność
 EffectType,rumour,plotki
 EffectType,sacrifice,poświęcenie
 EffectType,sanctify,uświęcić
 EffectType,searching,wyszukiwanie
-EffectType,spawn character,spawn postaci
+EffectType,spawn entity,spawn postaci
 EffectType,steal,ukraść
 EffectType,summon entity,przywołać podmiot
-EffectType,teleport asset,zasób teleportu
-EffectType,teleport away,teleportować się
-EffectType,teleport character,teleportować postać
+EffectType,teleport entity,teleportować postać
+EffectType,teleport item,zasób teleportu
+EffectType,teleport item away,teleportować się
 EffectType,tinning,Tinning
 EffectType,transition,przejście
 EffectType,unafflict,niedostępny
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,degraduj
 LiteralText,depth,głębokość
 LiteralText,DESCEND TO NEXT LEVEL,ZEJŚCIE DO NASTĘPNEGO POZIOMU
 LiteralText,destination,miejsce docelowe
-LiteralText,DESTROY,ZNISZCZ
+LiteralText,destroy,zniszcz
 LiteralText,determined by player level,określony przez poziom gracza
 LiteralText,device,urządzenie
 LiteralText,DEVICES,URZĄDZENIA

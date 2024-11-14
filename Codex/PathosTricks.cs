@@ -58,27 +58,27 @@ namespace Pathos
 
       barred_way = AddTrick("barred way", A =>
       {
-        A.CreateWall(WallStructure.Permanent, Barriers.iron_bars);
+        A.CreateBarrier(WallStructure.Permanent, Barriers.iron_bars);
       });
 
       cleared_way = AddTrick("cleared way", A =>
       {
-        A.RemoveWall(WallStructure.Permanent, Barriers.iron_bars);
+        A.DestroyBarrier(WallStructure.Permanent, Barriers.iron_bars);
       });
 
       connecting_portal = AddTrick("connecting portal", A =>
       {
-        A.ConnectPassage(Codex.Portals.transportal);
+        A.ConnectPortal(Codex.Portals.transportal);
       });
 
       connecting_rift = AddTrick("connecting rift", A =>
       {
-        A.ConnectPassage(Codex.Portals.rift);
+        A.ConnectPortal(Codex.Portals.rift);
       });
 
       dismissed_illusion = AddTrick("dismissed illusion", A =>
       {
-        A.RemoveWall(WallStructure.Illusionary);
+        A.DestroyBarrier(WallStructure.Illusionary);
       });
 
       emerging_blobs = AddTrick("emerging blobs", A =>
@@ -179,25 +179,25 @@ namespace Pathos
 
       sudden_hellscape = AddTrick("sudden hellscape", A =>
       {
-        A.ConvertWall(Barriers.hell_brick, Locality.Map);
+        A.ConvertBarrier(Barriers.hell_brick, Locality.Map);
         //A.ConvertFloor(Grounds.obsidian_floor, Locality.Map);
         //A.ConvertDoor(Gates.crystal_door, Locality.Map);
       });
 
       marble_paving = AddTrick("marble paving", A =>
       {
-        A.ConvertFloor(FromGround: null, ToGround: Grounds.marble_floor, Locality.Square);
+        A.ConvertGround(FromGround: null, ToGround: Grounds.marble_floor, Locality.Square);
       });
 
       mobilise_boulder = AddTrick("mobile boulder", A =>
       {
-        A.MobiliseBoulder(Rigid: false);
+        A.MobiliseBlock(Rigid: false);
       });
 
       complete_mapping = AddTrick("complete mapping", A =>
       {
         A.Mapping(Range.Sq0, Chance.Always);
-        A.DetectBoulder(Range.Sq0);
+        A.DetectBlock(Range.Sq0);
         A.DetectTrap(Range.Sq0, Reveal: false);
       });
 

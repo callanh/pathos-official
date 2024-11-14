@@ -1012,39 +1012,35 @@ EffectType,cancellation,iptalleme
 EffectType,capture,yakala
 EffectType,charging,şarj ediyor
 EffectType,charm,cezbet
-EffectType,clone character,karakteri klonla
+EffectType,clone entity,karakteri klonla
 EffectType,concealing,gizle
-EffectType,connect passage,
-EffectType,convert asset,varlığı dönüştür
-EffectType,convert boulder,kayayı dönüştür
-EffectType,convert door,kapıyı dönüştür
-EffectType,convert fixture,möble dönüştür
-EffectType,convert floor,zemini dönüştür
-EffectType,convert spill,
-EffectType,convert wall,duvarı dönüştür
-EffectType,create boulder,kaya oluştur
-EffectType,create fixture,möble yarat
+EffectType,connect portal,
+EffectType,convert barrier,duvarı dönüştür
+EffectType,convert block to barrier,kayayı dönüştür
+EffectType,convert feature,möble dönüştür
+EffectType,convert gate,kapıyı dönüştür
+EffectType,convert ground,zemini dönüştür
+EffectType,convert item,varlığı dönüştür
+EffectType,convert volatile,
 EffectType,create golem,golem oluştur
 EffectType,create horde,ordu yarat
 EffectType,create nook,kuytu köşe yarat
-EffectType,create spill,
 EffectType,create trap,tuzak yarat
-EffectType,create wall,duvar yarat
+EffectType,create volatile,
 EffectType,decapitate,uzuv kaybet
-EffectType,degrade,indirge
-EffectType,destroy asset,varlığı yoket
-EffectType,destroy wall,duvarı yok et
+EffectType,destroy item,varlığı yoket
+EffectType,destroy volatile,
 EffectType,detect,sapta
-EffectType,devour asset,varlık yiyip bitir
+EffectType,devour item,varlık yiyip bitir
 EffectType,disarm,silahsızlaştır
 EffectType,divine,ilahileştir
 EffectType,drain life,can em
 EffectType,drain mana,mana em
-EffectType,enchant asset,varlığı efsunla
+EffectType,enchant item,varlığı efsunla
 EffectType,engulf,yut
 EffectType,enlightenment,aydınlat
 EffectType,exchange,değiş
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,seviye kazan
 EffectType,gain skill,beceri kazan
 EffectType,genocide,soykırım
@@ -1061,7 +1057,7 @@ EffectType,lose skill,beceri kaybet
 EffectType,lose talent,yetenek kaybet
 EffectType,malnutrition,yetersiz beslenme
 EffectType,mapping,haritalamak
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,katlet
 EffectType,nutrition,beslenme
 EffectType,opening,açıklık
@@ -1072,21 +1068,20 @@ EffectType,raise dead,ölüyü canlandırma
 EffectType,recall,geri çağır
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
-EffectType,remove spill,
 EffectType,remove transient,geçici etkileri kaldır
-EffectType,replicate asset,varlığı kopyala
+EffectType,replicate item,varlığı kopyala
 EffectType,restock,tekrar doldur
 EffectType,restore ability,kabiliyeti geri kazan
 EffectType,rumour,dedikodu
 EffectType,sacrifice,kurban et
 EffectType,sanctify,kutsallaştır
 EffectType,searching,ara
-EffectType,spawn character,karakter yarat
+EffectType,spawn entity,karakter yarat
 EffectType,steal,çal
 EffectType,summon entity,canlı çağır
-EffectType,teleport asset,varlığı ışınla
-EffectType,teleport away,ışınlanarak çık
-EffectType,teleport character,karakteri ışınla
+EffectType,teleport entity,karakteri ışınla
+EffectType,teleport item,varlığı ışınla
+EffectType,teleport item away,ışınlanarak çık
 EffectType,tinning,kalaylama
 EffectType,transition,değişme
 EffectType,unafflict,bela kaldır
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,PATLAT
 LiteralText,depth,derinlik
 LiteralText,DESCEND TO NEXT LEVEL,BİR SONRAKİ SEVİYEYE İN
 LiteralText,destination,hedef
-LiteralText,DESTROY,YOK ET
+LiteralText,destroy,yok et
 LiteralText,determined by player level,oyuncu tarafından belirlenmiş
 LiteralText,device,cihaz
 LiteralText,DEVICES,ALETLER

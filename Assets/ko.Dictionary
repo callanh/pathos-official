@@ -1012,39 +1012,35 @@ EffectType,cancellation,무효화
 EffectType,capture,포획하기
 EffectType,charging,충전
 EffectType,charm,매혹
-EffectType,clone character,캐릭터 복제
+EffectType,clone entity,캐릭터 복제
 EffectType,concealing,숨기기
-EffectType,connect passage,길 연결
-EffectType,convert asset,아이템 변환
-EffectType,convert boulder,바위 변환
-EffectType,convert door,문 변환
-EffectType,convert fixture,시설 변환
-EffectType,convert floor,바닥 변환
-EffectType,convert spill,휘발성 물질 변환
-EffectType,convert wall,벽 변환
-EffectType,create boulder,바위 생성
-EffectType,create fixture,시설 생성
+EffectType,connect portal,길 연결
+EffectType,convert barrier,벽 변환
+EffectType,convert block to barrier,바위 변환
+EffectType,convert feature,시설 변환
+EffectType,convert gate,문 변환
+EffectType,convert ground,바닥 변환
+EffectType,convert item,아이템 변환
+EffectType,convert volatile,휘발성 물질 변환
 EffectType,create golem,골렘 생성
 EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
-EffectType,create spill,휘발성 물질 생성
 EffectType,create trap,함정 생성
-EffectType,create wall,벽 생성
+EffectType,create volatile,휘발성 물질 생성
 EffectType,decapitate,참수
-EffectType,degrade,약화
-EffectType,destroy asset,아이템 파괴
-EffectType,destroy wall,벽 파괴
+EffectType,destroy item,아이템 파괴
+EffectType,destroy volatile,휘발성 물질 제거
 EffectType,detect,감지
-EffectType,devour asset,재산 몰수
+EffectType,devour item,재산 몰수
 EffectType,disarm,무장해제
 EffectType,divine,점술
 EffectType,drain life,체력 흡수
 EffectType,drain mana,마나 흡수
-EffectType,enchant asset,아이템 강화
+EffectType,enchant item,아이템 강화
 EffectType,engulf,삼키기
 EffectType,enlightenment,깨달음
 EffectType,exchange,교환
-EffectType,extinguish spill,휘발성 물질 증발
+EffectType,extinguish volatile,휘발성 물질 증발
 EffectType,gain level,레벨 증가
 EffectType,gain skill,숙련도 획득
 EffectType,genocide,몰살
@@ -1061,7 +1057,7 @@ EffectType,lose skill,스킬 손실
 EffectType,lose talent,재능 손실
 EffectType,malnutrition,영양 손실
 EffectType,mapping,매핑
-EffectType,mobilise boulder,이동가능한 바위
+EffectType,mobilise block,이동가능한 바위
 EffectType,murder,살해
 EffectType,nutrition,영양 섭취
 EffectType,opening,개방
@@ -1072,21 +1068,20 @@ EffectType,raise dead,부활
 EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
-EffectType,remove spill,휘발성 물질 제거
 EffectType,remove transient,일시적인 효과 제거
-EffectType,replicate asset,아이템 복제
+EffectType,replicate item,아이템 복제
 EffectType,restock,재충전
 EffectType,restore ability,능력치 복구
 EffectType,rumour,루머
 EffectType,sacrifice,희생
 EffectType,sanctify,신성화
 EffectType,searching,수색
-EffectType,spawn character,캐릭터 생성
+EffectType,spawn entity,캐릭터 생성
 EffectType,steal,훔치기
 EffectType,summon entity,개체 소환
-EffectType,teleport asset,아이템 텔레포트
-EffectType,teleport away,먼 곳으로 텔레포트
-EffectType,teleport character,캐릭터 텔레포트
+EffectType,teleport entity,캐릭터 텔레포트
+EffectType,teleport item,아이템 텔레포트
+EffectType,teleport item away,먼 곳으로 텔레포트
 EffectType,tinning,통조림 제작
 EffectType,transition,층 이동
 EffectType,unafflict,감염 해제
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,강등
 LiteralText,depth,층
 LiteralText,DESCEND TO NEXT LEVEL,다음 층으로 내려감
 LiteralText,destination,목적지
-LiteralText,DESTROY,파괴
+LiteralText,destroy,파괴
 LiteralText,determined by player level,플레이어 레벨에 따라 정해짐
 LiteralText,device,장치
 LiteralText,DEVICES,장치

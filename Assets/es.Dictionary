@@ -1012,39 +1012,35 @@ EffectType,cancellation,cancelación
 EffectType,capture,capturas
 EffectType,charging,cargar
 EffectType,charm,encanto
-EffectType,clone character,clonar personaje
+EffectType,clone entity,clonar personaje
 EffectType,concealing,encubrimiento
-EffectType,connect passage,pasaje de conexión
-EffectType,convert asset,convertir recurso
-EffectType,convert boulder,convertir roca
-EffectType,convert door,convertir puerta
-EffectType,convert fixture,convertir accesorio
-EffectType,convert floor,convertir suelo
-EffectType,convert spill,convertir derrame
-EffectType,convert wall,convertir muro
-EffectType,create boulder,crear roca
-EffectType,create fixture,crear accesorio
+EffectType,connect portal,pasaje de conexión
+EffectType,convert barrier,convertir muro
+EffectType,convert block to barrier,convertir roca
+EffectType,convert feature,convertir accesorio
+EffectType,convert gate,convertir puerta
+EffectType,convert ground,convertir suelo
+EffectType,convert item,convertir recurso
+EffectType,convert volatile,convertir derrame
 EffectType,create golem,crear golem
 EffectType,create horde,crear horda
 EffectType,create nook,crear estructura
-EffectType,create spill,crear derrame
 EffectType,create trap,crear trampa
-EffectType,create wall,crear pared
+EffectType,create volatile,crear derrame
 EffectType,decapitate,decapitar
-EffectType,degrade,degradar
-EffectType,destroy asset,destruir recurso
-EffectType,destroy wall,destruir muro
+EffectType,destroy item,destruir recurso
+EffectType,destroy volatile,eliminar derrame
 EffectType,detect,detectar
-EffectType,devour asset,devorar recurso
+EffectType,devour item,devorar recurso
 EffectType,disarm,desarmar
 EffectType,divine,adivinar
 EffectType,drain life,drenar vida
 EffectType,drain mana,drenar maná
-EffectType,enchant asset,encantar recurso
+EffectType,enchant item,encantar recurso
 EffectType,engulf,engullir
 EffectType,enlightenment,iluminación
 EffectType,exchange,intercambiar
-EffectType,extinguish spill,extinguir derrame
+EffectType,extinguish volatile,extinguir derrame
 EffectType,gain level,ganar nivel
 EffectType,gain skill,ganar habilidad
 EffectType,genocide,genocidio
@@ -1061,7 +1057,7 @@ EffectType,lose skill,perder habilidad
 EffectType,lose talent,perder talento
 EffectType,malnutrition,desnutrición
 EffectType,mapping,mapear
-EffectType,mobilise boulder,desplazar roca
+EffectType,mobilise block,desplazar roca
 EffectType,murder,asesinar
 EffectType,nutrition,nutrición
 EffectType,opening,apertura
@@ -1072,21 +1068,20 @@ EffectType,raise dead,levantar muertos
 EffectType,recall,retirar
 EffectType,release,liberar
 EffectType,remove curse,remover maldición
-EffectType,remove spill,eliminar derrame
 EffectType,remove transient,remover efecto transitorio
-EffectType,replicate asset,replicar recurso
+EffectType,replicate item,replicar recurso
 EffectType,restock,reaprovisionar
 EffectType,restore ability,restaurar habilidad
 EffectType,rumour,rumor
 EffectType,sacrifice,sacrificio
 EffectType,sanctify,santificar
 EffectType,searching,buscando
-EffectType,spawn character,generar personaje
+EffectType,spawn entity,generar personaje
 EffectType,steal,robar
 EffectType,summon entity,invocar entidad
-EffectType,teleport asset,teletransportar recurso
-EffectType,teleport away,teletransportarse lejos
-EffectType,teleport character,teletransportar personaje
+EffectType,teleport entity,teletransportar personaje
+EffectType,teleport item,teletransportar recurso
+EffectType,teleport item away,teletransportarse lejos
 EffectType,tinning,empaquetado
 EffectType,transition,transición
 EffectType,unafflict,quitar aflicción
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,DEGRADAR
 LiteralText,depth,profundidad
 LiteralText,DESCEND TO NEXT LEVEL,DESCENDER AL SIGUIENTE NIVEL
 LiteralText,destination,destino
-LiteralText,DESTROY,DESTRUIR
+LiteralText,destroy,destruir
 LiteralText,determined by player level,determinado por el nivel del jugador
 LiteralText,device,dispositivo
 LiteralText,DEVICES,DISPOSITIVOS

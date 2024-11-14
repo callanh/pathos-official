@@ -1012,39 +1012,35 @@ EffectType,cancellation,cancellazione
 EffectType,capture,catturare
 EffectType,charging,in carica
 EffectType,charm,affascino
-EffectType,clone character,personaggio clone
+EffectType,clone entity,personaggio clone
 EffectType,concealing,nascondere
-EffectType,connect passage,connetti passaggi
-EffectType,convert asset,convertire risorsa
-EffectType,convert boulder,convertire masso
-EffectType,convert door,convertire la porta
-EffectType,convert fixture,convertire trappola
-EffectType,convert floor,convertire piano
-EffectType,convert spill,convertire sversamento
-EffectType,convert wall,convertire muro
-EffectType,create boulder,creare un masso
-EffectType,create fixture,creare una trappola
+EffectType,connect portal,connetti passaggi
+EffectType,convert barrier,convertire muro
+EffectType,convert block to barrier,convertire masso
+EffectType,convert feature,convertire trappola
+EffectType,convert gate,convertire la porta
+EffectType,convert ground,convertire piano
+EffectType,convert item,convertire risorsa
+EffectType,convert volatile,convertire sversamento
 EffectType,create golem,creare golem
 EffectType,create horde,creare un'orda
 EffectType,create nook,creare un angolo
-EffectType,create spill,creare uno sversamento
 EffectType,create trap,creare trappola
-EffectType,create wall,creare muro
+EffectType,create volatile,creare uno sversamento
 EffectType,decapitate,decapita
-EffectType,degrade,degradare
-EffectType,destroy asset,distruggere la risorsa
-EffectType,destroy wall,distruggere il muro
+EffectType,destroy item,distruggere la risorsa
+EffectType,destroy volatile,rimuovi sversamento
 EffectType,detect,rilevare
-EffectType,devour asset,divorare risorse
+EffectType,devour item,divorare risorse
 EffectType,disarm,disarmare
 EffectType,divine,divine
 EffectType,drain life,drenare la vita
 EffectType,drain mana,drenare mana
-EffectType,enchant asset,incanta risorsa
+EffectType,enchant item,incanta risorsa
 EffectType,engulf,inghiottire
 EffectType,enlightenment,illuminazione
 EffectType,exchange,scambio
-EffectType,extinguish spill,chiudi sversamento
+EffectType,extinguish volatile,chiudi sversamento
 EffectType,gain level,guadagnare livello
 EffectType,gain skill,acquisire abilità
 EffectType,genocide,genocidio
@@ -1061,7 +1057,7 @@ EffectType,lose skill,perdere abilità
 EffectType,lose talent,perdere talento
 EffectType,malnutrition,malnutrizione
 EffectType,mapping,mappatura
-EffectType,mobilise boulder,mobilita masso
+EffectType,mobilise block,mobilita masso
 EffectType,murder,omicidio
 EffectType,nutrition,nutrizione
 EffectType,opening,apertura
@@ -1072,21 +1068,20 @@ EffectType,raise dead,resuscitare morti
 EffectType,recall,richiamare
 EffectType,release,pubblicazione
 EffectType,remove curse,rimuovi la maledizione
-EffectType,remove spill,rimuovi sversamento
 EffectType,remove transient,rimuovi transitorio
-EffectType,replicate asset,replicare risorsa
+EffectType,replicate item,replicare risorsa
 EffectType,restock,rifornire
 EffectType,restore ability,ripristinare la capacità
 EffectType,rumour,pettegolezzo
 EffectType,sacrifice,sacrificio
 EffectType,sanctify,santificare
 EffectType,searching,cercando
-EffectType,spawn character,carattere di generazione
+EffectType,spawn entity,carattere di generazione
 EffectType,steal,rubare
 EffectType,summon entity,evoca entità
-EffectType,teleport asset,risorsa di teletrasporto
-EffectType,teleport away,teletrasportarsi via
-EffectType,teleport character,teletrasporta personaggio
+EffectType,teleport entity,teletrasporta personaggio
+EffectType,teleport item,risorsa di teletrasporto
+EffectType,teleport item away,teletrasportarsi via
 EffectType,tinning,stagnatura
 EffectType,transition,transizione
 EffectType,unafflict,non afflitto
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,RETROCEDI
 LiteralText,depth,profondità
 LiteralText,DESCEND TO NEXT LEVEL,SCENDI AL PROSSIMO PIANO
 LiteralText,destination,destinazione
-LiteralText,DESTROY,DISTRUGGI
+LiteralText,destroy,distruggi
 LiteralText,determined by player level,determinato dal livello del giocatore
 LiteralText,device,apparecchio
 LiteralText,DEVICES,TRAPPOLE

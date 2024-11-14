@@ -1012,39 +1012,35 @@ EffectType,cancellation,การยกเลิก
 EffectType,capture,จับ
 EffectType,charging,
 EffectType,charm,ลุ่มหลง
-EffectType,clone character,
+EffectType,clone entity,
 EffectType,concealing,อำพราง
-EffectType,connect passage,
-EffectType,convert asset,เปลี่ยนทรัพย์สิน
-EffectType,convert boulder,เปลี่ยนหินก้อนใหญ่
-EffectType,convert door,เปลี่ยนประตู
-EffectType,convert fixture,เปลี่ยนของประจำที่
-EffectType,convert floor,เปลี่ยนพื้น
-EffectType,convert spill,
-EffectType,convert wall,เปลี่ยนกำแพง
-EffectType,create boulder,สร้างหินก้อนใหญ่
-EffectType,create fixture,สร้างของประจำที่
+EffectType,connect portal,
+EffectType,convert barrier,เปลี่ยนกำแพง
+EffectType,convert block to barrier,เปลี่ยนหินก้อนใหญ่
+EffectType,convert feature,เปลี่ยนของประจำที่
+EffectType,convert gate,เปลี่ยนประตู
+EffectType,convert ground,เปลี่ยนพื้น
+EffectType,convert item,เปลี่ยนทรัพย์สิน
+EffectType,convert volatile,
 EffectType,create golem,สร้างโกเล็ม
 EffectType,create horde,สร้างฝูง
 EffectType,create nook,สร้างของซ่อน
-EffectType,create spill,
 EffectType,create trap,สร้างกับดัก
-EffectType,create wall,สร้างกำแพง
+EffectType,create volatile,
 EffectType,decapitate,ประหาร
-EffectType,degrade,ลดคุณภาพ
-EffectType,destroy asset,ทำลายทรัพย์สิน
-EffectType,destroy wall,ทำลายกำแพง
+EffectType,destroy item,ทำลายทรัพย์สิน
+EffectType,destroy volatile,
 EffectType,detect,ตรวจสอบ
-EffectType,devour asset,กลืนกินทรัพย์สิน
+EffectType,devour item,กลืนกินทรัพย์สิน
 EffectType,disarm,ปลด
 EffectType,divine,ทำนาย
 EffectType,drain life,สูบพลังชีวิต
 EffectType,drain mana,สูบมานา
-EffectType,enchant asset,ลงอาคมทรัพย์สิน
+EffectType,enchant item,ลงอาคมทรัพย์สิน
 EffectType,engulf,เขมือบ
 EffectType,enlightenment,
 EffectType,exchange,แปลเปลี่ยน
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,ได้รับเลเวล
 EffectType,gain skill,ได้รับทักษะ
 EffectType,genocide,ล้างเผ่าพันธุ์
@@ -1061,7 +1057,7 @@ EffectType,lose skill,สูญเสียทักษะ
 EffectType,lose talent,สูญเสียพรสวรรค์
 EffectType,malnutrition,ขาดสารอาหาร
 EffectType,mapping,แผนที่
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,ฆาตกรรม
 EffectType,nutrition,โภชนาการ
 EffectType,opening,เปิด
@@ -1072,21 +1068,20 @@ EffectType,raise dead,คืนชีพคนตาย
 EffectType,recall,เรียกคืน
 EffectType,release,ปลดปล่อย
 EffectType,remove curse,ถอนคำสาป
-EffectType,remove spill,
 EffectType,remove transient,ถอนสถานะชั่วคราว
-EffectType,replicate asset,
+EffectType,replicate item,
 EffectType,restock,เปลี่ยนสินค้า
 EffectType,restore ability,คืนค่าความสามารถ
 EffectType,rumour,ข่าวลือ
 EffectType,sacrifice,สังเวย
 EffectType,sanctify,
 EffectType,searching,ค้นหา
-EffectType,spawn character,เสกตัวละคร
+EffectType,spawn entity,เสกตัวละคร
 EffectType,steal,ขโมย
 EffectType,summon entity,อัญเชิญสิ่งมีตัวตน
-EffectType,teleport asset,เทเลพอร์ตทรัพย์สิน
-EffectType,teleport away,เทเลพอร์ตหนี
-EffectType,teleport character,เทเลพอร์ตตัวละคร
+EffectType,teleport entity,เทเลพอร์ตตัวละคร
+EffectType,teleport item,เทเลพอร์ตทรัพย์สิน
+EffectType,teleport item away,เทเลพอร์ตหนี
 EffectType,tinning,
 EffectType,transition,
 EffectType,unafflict,
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,
 LiteralText,depth,ส่วนลึก
 LiteralText,DESCEND TO NEXT LEVEL,ลงไปสู่ชั้นต่อไป
 LiteralText,destination,
-LiteralText,DESTROY,ทำลาย
+LiteralText,destroy,ทำลาย
 LiteralText,determined by player level,
 LiteralText,device,อุปกรณ์
 LiteralText,DEVICES,อุปกรณ์

@@ -1012,39 +1012,35 @@ EffectType,cancellation,kanselasyon
 EffectType,capture,pag-capture
 EffectType,charging,pag-charge
 EffectType,charm,pag-charm
-EffectType,clone character,pag-clone ng character
+EffectType,clone entity,pag-clone ng character
 EffectType,concealing,pag-conceal
-EffectType,connect passage,
-EffectType,convert asset,pag-convert ng asset
-EffectType,convert boulder,pag-convert ng boulder
-EffectType,convert door,
-EffectType,convert fixture,pag-convert ng fixture
-EffectType,convert floor,pag-convert ng sahig
-EffectType,convert spill,
-EffectType,convert wall,
-EffectType,create boulder,paggawa ng boulder
-EffectType,create fixture,paggawa ng fixture
+EffectType,connect portal,
+EffectType,convert barrier,
+EffectType,convert block to barrier,pag-convert ng boulder
+EffectType,convert feature,pag-convert ng fixture
+EffectType,convert gate,
+EffectType,convert ground,pag-convert ng sahig
+EffectType,convert item,pag-convert ng asset
+EffectType,convert volatile,
 EffectType,create golem,paggawa ng golem
 EffectType,create horde,paggawa ng horde
 EffectType,create nook,paggawa ng nook
-EffectType,create spill,
 EffectType,create trap,paggawa ng trap
-EffectType,create wall,paggawa ng pader
+EffectType,create volatile,
 EffectType,decapitate,
-EffectType,degrade,pag-degrade
-EffectType,destroy asset,pagkasira ng asset
-EffectType,destroy wall,
+EffectType,destroy item,pagkasira ng asset
+EffectType,destroy volatile,
 EffectType,detect,pag-detect
-EffectType,devour asset,pagkonsumo ng asset
+EffectType,devour item,pagkonsumo ng asset
 EffectType,disarm,pag-disarm
 EffectType,divine,pag-divine
 EffectType,drain life,pag-drain ng life
 EffectType,drain mana,pag-drain ng mana
-EffectType,enchant asset,pag-enchant ng asset
+EffectType,enchant item,pag-enchant ng asset
 EffectType,engulf,pag-engulfed
 EffectType,enlightenment,pagbigay ng enlightenment
 EffectType,exchange,pagkapalit
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,pagdagdag ng level
 EffectType,gain skill,pagdagdag ng skill
 EffectType,genocide,
@@ -1061,7 +1057,7 @@ EffectType,lose skill,pagkawala ng skill
 EffectType,lose talent,pagkawala ng talent
 EffectType,malnutrition,
 EffectType,mapping,pagmamap
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,pag-murder
 EffectType,nutrition,
 EffectType,opening,pagbukas
@@ -1072,21 +1068,20 @@ EffectType,raise dead,
 EffectType,recall,pag-recall
 EffectType,release,pag-release
 EffectType,remove curse,pagtanggal ng sumpa
-EffectType,remove spill,
 EffectType,remove transient,pagkawala ng transient
-EffectType,replicate asset,pagka-replicate ng asset
+EffectType,replicate item,pagka-replicate ng asset
 EffectType,restock,pag-restock
 EffectType,restore ability,pag-restore ng ability
 EffectType,rumour,pag-rumour
 EffectType,sacrifice,pag-sacrifice
 EffectType,sanctify,pag-sanctify
 EffectType,searching,pag-search
-EffectType,spawn character,pag-spawn ng character
+EffectType,spawn entity,pag-spawn ng character
 EffectType,steal,pag-steal
 EffectType,summon entity,pag-summon ng entity
-EffectType,teleport asset,pagteleport ng asset
-EffectType,teleport away,
-EffectType,teleport character,pagteleport ng character
+EffectType,teleport entity,pagteleport ng character
+EffectType,teleport item,pagteleport ng asset
+EffectType,teleport item away,
 EffectType,tinning,
 EffectType,transition,pag-transition
 EffectType,unafflict,
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,
 LiteralText,depth,
 LiteralText,DESCEND TO NEXT LEVEL,
 LiteralText,destination,
-LiteralText,DESTROY,
+LiteralText,destroy,
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,

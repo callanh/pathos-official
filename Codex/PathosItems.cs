@@ -426,11 +426,11 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
-              B => B.DetectAsset(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
-              U => U.DetectAsset(Range.Sq15, Materials.gold, Materials.gemstone),
-              C => C.DetectAsset(Range.Sq10, Materials.gold)
+              B => B.DetectItem(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
+              U => U.DetectItem(Range.Sq15, Materials.gold, Materials.gemstone),
+              C => C.DetectItem(Range.Sq10, Materials.gold)
             ),
-            S => S.DestroyCarriedAsset(Dice.One, null, null, new[] { Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine })
+            S => S.DestroyCarriedItem(Dice.One, null, null, new[] { Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine })
           );
         });
         I.AddObviousUse(Motions.copy, Delay.FromTurns(30), Sonics.magic, Use =>
@@ -442,10 +442,10 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WhenConfused
             (
-              T => T.CreateAsset(Dice.One, Dice.One, scroll_of_blank_paper),
-              F => F.ReplicateAsset()
+              T => T.CreateItem(Dice.One, Dice.One, scroll_of_blank_paper),
+              F => F.ReplicateItem()
             ),
-            S => S.DestroyTargetAsset(Dice.One)
+            S => S.DestroyTargetItem(Dice.One)
           );
         });
       });
@@ -563,7 +563,7 @@ namespace Pathos
         {
           Use.SetCast().FilterAnyItem();
           Use.Apply.Harm(Elements.physical, Dice.One, Modifier.Plus1);
-          Use.Apply.TransmuteAsset(Materials.gold);
+          Use.Apply.TransmuteItem(Materials.gold);
         });
       });
 
@@ -795,9 +795,9 @@ namespace Pathos
                     A.RemoveCurse(Dice.One);
                     A.Charging(Dice.One, Dice.Fixed(100)); // 100%
                   });
-                  Table.Add(10, A => A.CreateAsset(Dice.One));
+                  Table.Add(10, A => A.CreateItem(Dice.One));
                   Table.Add(10, A => A.SummonEntity(Dice.One, Entities.List.Where(E => E.IsEncounter && E.IsDomestic).ToArray()));
-                  Table.Add(5, A => A.CreateFixture(Codex.Features.fountain));
+                  Table.Add(5, A => A.CreateFeature(Codex.Features.fountain));
                 });
               },
               U =>
@@ -826,9 +826,9 @@ namespace Pathos
                     A.CreateRandomHorde(Dice.One);
                     A.AreaTransient(Properties.quickness, 4.d10());
                   });
-                  Table.Add(10, A => A.TeleportInventoryAsset());
+                  Table.Add(10, A => A.TeleportInventoryItem());
                   Table.Add(10, A => A.TransitionRandom(Teleport: null, 1.d2()));
-                  Table.Add(5, A => A.CreateFixture(Codex.Features.altar));
+                  Table.Add(5, A => A.CreateFeature(Codex.Features.altar));
                 });
               },
               C =>
@@ -860,17 +860,17 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.TeleportInventoryAsset();
+                    A.TeleportInventoryItem();
                     A.CreateEntity(1.d3(), Kinds.golem.Entities.Where(E => E.IsEncounter).ToArray());
                   });
                   Table.Add(10, A =>
                   {
-                    A.CreateBoulder(2.d3());
+                    A.CreateBlock(2.d3(), Block: null);
                     A.CreateRandomHorde(Dice.One);
                   });
                   Table.Add(10, A =>
                   {
-                    A.CreateFixture(Codex.Features.pentagram);
+                    A.CreateFeature(Codex.Features.pentagram);
                     A.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false);
                     A.CreateEntity(1.d3(), Entities.ghost);
                   });
@@ -919,9 +919,9 @@ namespace Pathos
               R.Searching(Range.Sq10);
               R.WithSourceSanctity
               (
-                B => B.DetectAsset(Range.Sq20),
-                U => U.DetectAsset(Range.Sq15),
-                C => C.DetectAsset(Range.Sq10)
+                B => B.DetectItem(Range.Sq20),
+                U => U.DetectItem(Range.Sq15),
+                C => C.DetectItem(Range.Sq10)
               );
             },
             S => S.Amnesia(Range.Sq10)
@@ -5361,8 +5361,8 @@ namespace Pathos
           Use.Apply.ApplyTransient(Properties.aggravation, 6.d100() + 400);
           Use.Apply.WhenSourceReplica
           (
-            T => T.DestroySourceAsset(Dice.One),
-            F => F.TeleportAway()
+            T => T.DestroySourceItem(Dice.One),
+            F => F.TeleportItemAway()
           );
         });
       });
@@ -6623,16 +6623,16 @@ namespace Pathos
           (
             B =>
             {
-              B.DetectCharacter(Range.Sq20);
+              B.DetectEntity(Range.Sq20);
               B.ApplyTransient(Properties.see_invisible, 1.d100() + 50);
             },
             U =>
             {
-              U.DetectCharacter(Range.Sq15);
+              U.DetectEntity(Range.Sq15);
             },
             C =>
             {
-              C.DetectCharacter(Range.Sq10);
+              C.DetectEntity(Range.Sq10);
               C.ApplyTransient(Properties.aggravation, 1.d20() + 10);
             }
           );
@@ -6701,9 +6701,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.DetectAsset(Range.Sq20),
-            U => U.DetectAsset(Range.Sq15),
-            C => C.DetectAsset(Range.Sq10)
+            B => B.DetectItem(Range.Sq20),
+            U => U.DetectItem(Range.Sq15),
+            C => C.DetectItem(Range.Sq10)
           );
         });
       });
@@ -8169,14 +8169,14 @@ namespace Pathos
           Use.SetCast().FilterStock(DestroyArray);
           Use.Apply.WhenConfused
           (
-            T => T.CreateAsset(Dice.Fixed(1), DestroyArray),
+            T => T.CreateItem(Dice.Fixed(1), DestroyArray),
             E => E.WithSourceSanctity
             (
-              B => B.DestroyEquippedAsset(Dice.One, DestroyArray, new[] { Sanctities.Cursed }, null),
-              U => U.DestroyEquippedAsset(Dice.One, DestroyArray, null, null),
+              B => B.DestroyEquippedItem(Dice.One, DestroyArray, new[] { Sanctities.Cursed }, null),
+              U => U.DestroyEquippedItem(Dice.One, DestroyArray, null, null),
               C =>
               {
-                C.DestroyEquippedAsset(Dice.One, DestroyArray, null, null);
+                C.DestroyEquippedItem(Dice.One, DestroyArray, null, null);
                 C.ApplyTransient(Properties.stunned, 1.d10() + 1);
               }
             )
@@ -8211,11 +8211,11 @@ namespace Pathos
             T => T.PolymorphEntity(Entities.killer_food_ration),
             E => E.WithSourceSanctity
             (
-              B => B.DevourAsset(Sanctities.Cursed), // devour only cursed items.
-              U => U.DevourAsset(Sanctities.Uncursed), // devour only uncursed or cursed items.
+              B => B.DevourItem(Sanctities.Cursed), // devour only cursed items.
+              U => U.DevourItem(Sanctities.Uncursed), // devour only uncursed or cursed items.
               C =>
               {
-                C.DevourAsset(Sanctities.Blessed); // devour blessed, uncursed or cursed items.
+                C.DevourItem(Sanctities.Blessed); // devour blessed, uncursed or cursed items.
                 C.ApplyTransient(Properties.hunger, 1.d10() + 10);
               }
             )
@@ -8300,19 +8300,19 @@ namespace Pathos
            .SetAudibility(10);
           Use.Apply.WhenConfused
           (
-            T => T.CreateAsset(5.d6(), QuantityDice: null, rock), // 5d6 x (1d6 + 6) can be a lot of rocks.
+            T => T.CreateItem(5.d6(), QuantityDice: null, rock), // 5d6 x (1d6 + 6) can be a lot of rocks.
             E => E.WithSourceSanctity
             (
-              B => B.CreateBoulder(Dice.One),
-              U => U.CreateBoulder(1.d3()),
-              C => C.CreateBoulder(Dice.Fixed(9))
+              B => B.CreateBlock(Dice.One, Block: null),
+              U => U.CreateBlock(1.d3(), Block: null),
+              C => C.CreateBlock(Dice.Fixed(9), Block: null)
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(1.d3(), QuantityDice: null, rock); // poop rocks (quantity is more than this)!
-          A.CreateAsset(1.d2() - 1, QuantityDice: null, diamond); // maybe something valuable comes out.
+          A.CreateItem(1.d3(), QuantityDice: null, rock); // poop rocks (quantity is more than this)!
+          A.CreateItem(1.d2() - 1, QuantityDice: null, diamond); // maybe something valuable comes out.
           A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.earth_elemental), E => E.PolymorphEntity(Entities.dust_vortex));
         });
       });
@@ -8387,7 +8387,7 @@ namespace Pathos
             {
               T.Amnesia(Range.Sq30);
               T.Mapping(Range.Sq30, Chance.Always);
-              T.DetectAsset(Range.Sq30);
+              T.DetectItem(Range.Sq30);
             },
             E => E.WithSourceSanctity
             (
@@ -8453,9 +8453,9 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.beartrap);
-          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.caltrops);
-          A.CreateAsset(Dice.One, QuantityDice: null, Codex.Items.land_mine);
+          A.CreateItem(Dice.One, QuantityDice: null, Codex.Items.beartrap);
+          A.CreateItem(Dice.One, QuantityDice: null, Codex.Items.caltrops);
+          A.CreateItem(Dice.One, QuantityDice: null, Codex.Items.land_mine);
         });
       });
 
@@ -8488,7 +8488,7 @@ namespace Pathos
                 U => U.Harm(Elements.fire, 4.d3()),
                 C => C.Harm(Elements.fire, 5.d3())
               );
-              E.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+              E.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
             }
           );
         });
@@ -8529,7 +8529,7 @@ namespace Pathos
                 U => U.Harm(Elements.cold, 4.d3()),
                 C => C.Harm(Elements.cold, 5.d3())
               );
-              E.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+              E.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
             }
           );
         });
@@ -8564,9 +8564,9 @@ namespace Pathos
             T => T.CreateTrap(Codex.Devices.water_trap, Destruction: false),
             E =>
             {
-              E.WhenChance(Chance.OneIn20, V => V.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
-              E.WhenChance(Chance.OneIn20, V => V.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
-              E.WhenChance(Chance.OneIn20, V => V.ConvertAsset(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
+              E.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
+              E.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
+              E.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
               E.WithSourceSanctity
               (
                 B =>
@@ -8616,12 +8616,12 @@ namespace Pathos
              .SetTerminates();
           Use.Apply.WhenConfused
           (
-            T => T.DetectAsset(Range.Sq15, Stocks.potion),
+            T => T.DetectItem(Range.Sq15, Stocks.potion),
             E => E.WithSourceSanctity
             (
-              B => B.DetectAsset(Range.Sq20, Stocks.food, Stocks.potion),
-              U => U.DetectAsset(Range.Sq15, Stocks.food),
-              C => C.DestroyCarriedAsset(Dice.One, new[] { Stocks.food }, null, null)
+              B => B.DetectItem(Range.Sq20, Stocks.food, Stocks.potion),
+              U => U.DetectItem(Range.Sq15, Stocks.food),
+              C => C.DestroyCarriedItem(Dice.One, new[] { Stocks.food }, null, null)
             )
           );
         });
@@ -8689,12 +8689,12 @@ namespace Pathos
              .SetTerminates();
           Use.Apply.WhenConfused
           (
-            T => T.CloneSourceCharacter(1.d3()), // clones self in confusion.
+            T => T.CloneSourceEntity(1.d3()), // clones self in confusion.
             E => E.WithSourceSanctity
             (
               B => B.Genocide(true),
               U => U.Genocide(false),
-              C => C.SpawnCharacter(1.d3() + 4)
+              C => C.SpawnEntity(1.d3() + 4)
             )
           );
         });
@@ -8728,15 +8728,15 @@ namespace Pathos
             T => T.DetectTrap(Range.Sq15),
             E => E.WithSourceSanctity
             (
-              B => B.DetectAsset(Range.Sq20, Materials.gold),
-              U => U.DetectAsset(Range.Sq15, Materials.gold),
-              C => C.DestroyOwnedAsset(4.d10() + 10, null, null, new[] { Materials.gold })
+              B => B.DetectItem(Range.Sq20, Materials.gold),
+              U => U.DetectItem(Range.Sq15, Materials.gold),
+              C => C.DestroyOwnedItem(4.d10() + 10, null, null, new[] { Materials.gold })
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, QuantityDice: 10.d100(), gold_coin);
+          A.CreateItem(Dice.One, QuantityDice: 10.d100(), gold_coin);
         });
       });
 
@@ -9066,13 +9066,13 @@ namespace Pathos
             R => R.WhenConfused
             (
               T => T.CreateEntity(6.d6(), Entities.rabbit, Entities.rabid_rabbit),
-              F => F.ReplicateAsset() // TODO: BUC effects?
+              F => F.ReplicateItem() // TODO: BUC effects?
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CloneTargetCharacter(Dice.One);
+          A.CloneTargetEntity(Dice.One);
         });
       });
 
@@ -9108,7 +9108,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.CreateAsset(Dice.One, QuantityDice: null, bag_of_tricks);
+          A.CreateItem(Dice.One, QuantityDice: null, bag_of_tricks);
         });
       });
 
@@ -9207,7 +9207,7 @@ namespace Pathos
             T =>
             {
               T.TransitionRandom(Properties.teleportation, Dice.One); // -1, +1
-              T.TeleportCharacter(Properties.teleportation);
+              T.TeleportEntity(Properties.teleportation);
             },
             E => E.WithSourceSanctity
             (
@@ -9216,11 +9216,11 @@ namespace Pathos
                 B.ApplyTransient(Properties.teleportation, 10.d100());
                 B.ApplyTransient(Properties.teleport_control, 10.d100());
               },
-              U => U.TeleportCharacter(Properties.teleportation),
+              U => U.TeleportEntity(Properties.teleportation),
               C =>
               {
                 C.TransitionRandom(Properties.teleportation, Dice.One);
-                C.TeleportInventoryAsset(); // good bye equipment!
+                C.TeleportInventoryItem(); // good bye equipment!
               }
             )
           );
@@ -9451,13 +9451,13 @@ namespace Pathos
         I.ChargesDice = Dice.Fixed(+20);
         I.AddObviousUse(Motions.open, Delay.FromTurns(10), Sonics.magic, Use =>
         {
-          Use.Apply.TeleportCharacter(Properties.teleportation);
+          Use.Apply.TeleportEntity(Properties.teleportation);
           Use.Apply.CreateEntity(1.d3() + 3);
         });
         I.AddObviousUse(Motions.empty, Delay.FromTurns(10), Sonics.magic, Use =>
         {
           Use.Consume();
-          Use.Apply.TeleportCharacter(Properties.teleportation);
+          Use.Apply.TeleportEntity(Properties.teleportation);
           Use.Apply.CreateRandomHorde(1.d3() + 3);
         });
         I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(20), Sonics.tool);
@@ -9834,9 +9834,9 @@ namespace Pathos
         {
           Use.Apply.WithSourceSanctity
           (
-            B => B.DetectAsset(Range.Sq15),
-            U => U.DetectAsset(Range.Sq10),
-            C => C.DetectAsset(Range.Sq5)
+            B => B.DetectItem(Range.Sq15),
+            U => U.DetectItem(Range.Sq10),
+            C => C.DetectItem(Range.Sq5)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 500, Delay.FromTurns(30), Sonics.tool, A =>
@@ -10024,7 +10024,7 @@ namespace Pathos
           Use.SetCast().Beam(Beams.fire, 1.d4() + 4);
           Use.Apply.WhenConfused
           (
-            T => T.ConvertFloor(FromGround: null, ToGround: Codex.Grounds.lava, Locality.Square),
+            T => T.ConvertGround(FromGround: null, ToGround: Codex.Grounds.lava, Locality.Square),
             F => F.WithSourceSanctity
             (
               B => B.Harm(Elements.fire, 7.d6()),
@@ -10059,7 +10059,7 @@ namespace Pathos
           Use.SetCast().Beam(Beams.cold, 1.d4() + 4);
           Use.Apply.WhenConfused
           (
-            T => T.ConvertFloor(FromGround: null, ToGround: Codex.Grounds.ice, Locality.Square),
+            T => T.ConvertGround(FromGround: null, ToGround: Codex.Grounds.ice, Locality.Square),
             F => F.WithSourceSanctity
             (
               B => B.Harm(Elements.cold, 5.d4() + 5),
@@ -10108,23 +10108,23 @@ namespace Pathos
         {
           Use.Apply.WhenConfused
           (
-            T => T.DestroyCarriedAsset(1.d2(), new[] { Stocks.food }, null, null),
+            T => T.DestroyCarriedItem(1.d2(), new[] { Stocks.food }, null, null),
             F => F.WithSourceSanctity
             (
               B =>
               {
-                B.CreateAsset(1.d2(), Stocks.food);
-                B.WhenChance(Chance.OneIn9, A => A.CreateAsset(Dice.One, Stocks.potion));
+                B.CreateItem(1.d2(), Stocks.food);
+                B.WhenChance(Chance.OneIn9, A => A.CreateItem(Dice.One, Stocks.potion));
               },
               U =>
               {
-                U.CreateAsset(Dice.One, Stocks.food);
-                U.WhenChance(Chance.OneIn13, A => A.CreateAsset(Dice.One, Stocks.potion));
+                U.CreateItem(Dice.One, Stocks.food);
+                U.WhenChance(Chance.OneIn13, A => A.CreateItem(Dice.One, Stocks.potion));
               },
               C =>
               {
-                C.CreateAsset(1.d2() - 1, Stocks.food);
-                C.WhenChance(Chance.OneIn17, A => A.CreateAsset(Dice.One, Stocks.potion));
+                C.CreateItem(1.d2() - 1, Stocks.food);
+                C.WhenChance(Chance.OneIn17, A => A.CreateItem(Dice.One, Stocks.potion));
               }
             )
           ); ;
@@ -10514,7 +10514,7 @@ namespace Pathos
           (
             B =>
             {
-              B.ConvertAsset(magic_lamp.Stock, WholeStack: false, oil_lamp);
+              B.ConvertItem(magic_lamp.Stock, WholeStack: false, oil_lamp);
               B.SummonEntity(Dice.One, LampEntityArray);
             },
             U =>
@@ -10523,7 +10523,7 @@ namespace Pathos
             },
             C =>
             {
-              C.ConvertAsset(magic_lamp.Stock, WholeStack: false, oil_lamp);
+              C.ConvertItem(magic_lamp.Stock, WholeStack: false, oil_lamp);
               C.CreateEntity(Dice.One, LampEntityArray);
             }
           );
@@ -10553,8 +10553,8 @@ namespace Pathos
         {
           Use.SetCast().FilterItem(scroll_of_blank_paper, book_of_blank_paper)
              .SetAssetIndividualised();
-          Use.Apply.ConvertAsset(Stocks.scroll, WholeStack: false, Stocks.scroll.Items.Where(S => S != scroll_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
-          Use.Apply.ConvertAsset(Stocks.book, WholeStack: false, Stocks.book.Items.Where(S => S != book_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
+          Use.Apply.ConvertItem(Stocks.scroll, WholeStack: false, Stocks.scroll.Items.Where(S => S != scroll_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
+          Use.Apply.ConvertItem(Stocks.book, WholeStack: false, Stocks.book.Items.Where(S => S != book_of_blank_paper && !S.Grade.Unique && S.Rarity > 0).ToArray());
         });
         I.AddDiscoverUse(Motions.rename, Delay.FromTurns(50), Sonics.write, Use =>
         {
@@ -10920,7 +10920,7 @@ namespace Pathos
           Use.Apply.WhenAfflicted(T =>
           {
             T.Unafflict();
-            T.DestroySourceAsset(Dice.One);
+            T.DestroySourceItem(Dice.One);
           });
         });
         I.AddObviousIngestUse(Motions.eat, 250, Delay.FromTurns(20), Sonics.tool, A =>
@@ -11452,7 +11452,7 @@ namespace Pathos
             U => U.Harm(Elements.fire, 6.d6()),
             C => C.Harm(Elements.fire, 4.d6())
           );
-          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d50() + 50));
+          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
@@ -11485,7 +11485,7 @@ namespace Pathos
             U => U.Harm(Elements.cold, 6.d6()),
             C => C.Harm(Elements.cold, 4.d6())
           );
-          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d50() + 50));
+          Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.freeze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
@@ -12041,8 +12041,8 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.magic, 2.d6() + 2)
              .SetObjects()
              .SetAudibility(1);
-          Use.Apply.TeleportFloorAsset();
-          Use.Apply.TeleportCharacter(Properties.teleportation);
+          Use.Apply.TeleportFloorItem();
+          Use.Apply.TeleportEntity(Properties.teleportation);
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
@@ -12070,11 +12070,11 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.force, 1.d6() + 2)
              .SetObjects()
              .SetAudibility(1);
-          Use.Apply.StealAsset(Properties.fear);
+          Use.Apply.StealItem(Properties.fear);
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.StealAsset(Properties.fear);
+          A.StealItem(Properties.fear);
         });
       });
 

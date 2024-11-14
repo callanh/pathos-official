@@ -71,7 +71,7 @@ namespace Pathos
       {
         G.Description = null;
 
-        G.AddReaction(Chance.OneIn5, Elements.shock, A => A.CreateSpill(Volatiles.electricity, 1.d100() + 100)); // gold is highly conductive.
+        G.AddReaction(Chance.OneIn5, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, 1.d100() + 100)); // gold is highly conductive.
 
         G.SetBlock(Codex.Blocks.gold_boulder);
       });
@@ -102,8 +102,8 @@ namespace Pathos
         G.SetSlippery(Codex.Anatomies.limbs, Codex.Attributes.dexterity, Sonics.slip);
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: ice, ToGround: water, Locality.Square));
-        G.AddReaction(Chance.Always, Elements.cold, A => A.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertGround(FromGround: ice, ToGround: water, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.cold, A => A.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
       });
 
       lava = AddGround("lava", Materials.lava, Glyphs.lava, G =>
@@ -112,11 +112,11 @@ namespace Pathos
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.water, A => A.CreateSpill(Volatiles.steam, 1.d100() + 100));
+        G.AddReaction(Chance.Always, Elements.water, A => A.CreateVolatile(Volatiles.steam, 1.d100() + 100));
 
         G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, Skills.swimming,
           Enter => Enter.Harm(Elements.fire, 100.d10()),
-          Drop => Drop.DestroyTargetAsset(CountDice: null)); // TODO: fire resistant items should not be destroyed?
+          Drop => Drop.DestroyTargetItem(CountDice: null)); // TODO: fire resistant items should not be destroyed?
 
         // TODO: cold element _could_ converts lava to obsidian... but is it really cold enough to do that?
       });
@@ -132,7 +132,7 @@ namespace Pathos
       {
         G.Description = null;
 
-        G.AddReaction(Chance.OneIn10, Elements.shock, A => A.CreateSpill(Volatiles.electricity, 1.d100() + 100));
+        G.AddReaction(Chance.OneIn10, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, 1.d100() + 100));
 
         G.SetBlock(Codex.Blocks.wooden_barrel);
       });
@@ -173,7 +173,7 @@ namespace Pathos
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertFloor(FromGround: snow, ToGround: dirt, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertGround(FromGround: snow, ToGround: dirt, Locality.Square));
       });
 
       stone_floor = AddGround("stone floor", Materials.stone, Glyphs.stone_floor, G =>
@@ -196,23 +196,23 @@ namespace Pathos
 
         G.SetBlock(Codex.Blocks.stone_boulder);
 
-        G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertFloor(FromGround: water, ToGround: ice, Locality.Square));
+        G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertGround(FromGround: water, ToGround: ice, Locality.Square));
         G.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.stunned, 3.d6()));
-        G.AddReaction(Chance.Always, Elements.fire, A => A.CreateSpill(Volatiles.steam, 1.d100() + 100));
+        G.AddReaction(Chance.Always, Elements.fire, A => A.CreateVolatile(Volatiles.steam, 1.d100() + 100));
 
         G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact, Skills.swimming,
           Enter =>
           {
             Enter.Harm(Elements.water, Dice.Zero);
-            Enter.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
-            Enter.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
-            Enter.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
+            Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
+            Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
+            Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
           },
           Drop =>
           {
-            Drop.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water);
-            Drop.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper);
-            Drop.ConvertAsset(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper);
+            Drop.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water);
+            Drop.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper);
+            Drop.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper);
           }
         );
       });
@@ -221,7 +221,7 @@ namespace Pathos
       {
         G.Description = null;
 
-        G.AddReaction(Chance.OneIn10, Elements.fire, A => A.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+        G.AddReaction(Chance.OneIn10, Elements.fire, A => A.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
 
         G.SetBlock(Codex.Blocks.wooden_barrel);
       });

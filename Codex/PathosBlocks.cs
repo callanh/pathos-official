@@ -166,9 +166,9 @@ namespace Pathos
         B.AddBreak(15, Codex.Sonics.broken_barrel, Codex.Explosions.watery, K =>
         {
           K.Harm(Elements.water, Dice.Zero);
-          K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
-          K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
-          K.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
+          K.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
+          K.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
+          K.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.muddy, K =>
         {
@@ -178,22 +178,22 @@ namespace Pathos
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.fiery, K =>
         {
           K.Harm(Elements.fire, 3.d6() + 3);
-          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+          K.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.frosty, K =>
         {
           K.Harm(Elements.cold, 3.d6() + 3);
-          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+          K.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.electric, K =>
         {
           K.Harm(Elements.shock, 3.d6() + 3);
-          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.electricity, 1.d100() + 100));
+          K.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.electricity, 1.d100() + 100));
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, Codex.Explosions.acid, K =>
         {
           K.Harm(Elements.acid, 3.d6() + 3);
-          K.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.steam, 1.d100() + 100)); // TODO: acid cloud?
+          K.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.steam, 1.d100() + 100)); // TODO: acid cloud?
         });
         B.AddBreak(5, Codex.Sonics.broken_barrel, null, K =>
         {

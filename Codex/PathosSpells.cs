@@ -611,37 +611,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            U.Apply.DetectAsset(Range.Sq10, Stocks.food);
+            U.Apply.DetectItem(Range.Sq10, Stocks.food);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            P.Apply.DetectAsset(Range.Sq15, Stocks.food);
+            P.Apply.DetectItem(Range.Sq15, Stocks.food);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            S.Apply.DetectAsset(Range.Sq20, Stocks.food);
+            S.Apply.DetectItem(Range.Sq20, Stocks.food);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            E.Apply.DetectAsset(Range.Sq25, Stocks.food, Stocks.potion);
+            E.Apply.DetectItem(Range.Sq25, Stocks.food, Stocks.potion);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            M.Apply.DetectAsset(Range.Sq30, Stocks.food, Stocks.potion);
+            M.Apply.DetectItem(Range.Sq30, Stocks.food, Stocks.potion);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            C.Apply.DetectAsset(Range.Sq35, Stocks.food, Stocks.potion);
+            C.Apply.DetectItem(Range.Sq35, Stocks.food, Stocks.potion);
           }
         );
       });
@@ -656,37 +656,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            U.Apply.DetectCharacter(Range.Sq10);
+            U.Apply.DetectEntity(Range.Sq10);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            P.Apply.DetectCharacter(Range.Sq15);
+            P.Apply.DetectEntity(Range.Sq15);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            S.Apply.DetectCharacter(Range.Sq20);
+            S.Apply.DetectEntity(Range.Sq20);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            E.Apply.DetectCharacter(Range.Sq25);
+            E.Apply.DetectEntity(Range.Sq25);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            M.Apply.DetectCharacter(Range.Sq30);
+            M.Apply.DetectEntity(Range.Sq30);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            C.Apply.DetectCharacter(Range.Sq35);
+            C.Apply.DetectEntity(Range.Sq35);
           }
         );
       });
@@ -701,37 +701,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            U.Apply.DetectAsset(Range.Sq10, Stocks.gem);
+            U.Apply.DetectItem(Range.Sq10, Stocks.gem);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            P.Apply.DetectAsset(Range.Sq15, Stocks.gem);
+            P.Apply.DetectItem(Range.Sq15, Stocks.gem);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            S.Apply.DetectAsset(Range.Sq20, Stocks.gem, Stocks.ring);
+            S.Apply.DetectItem(Range.Sq20, Stocks.gem, Stocks.ring);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            E.Apply.DetectAsset(Range.Sq25, Stocks.gem, Stocks.ring, Stocks.amulet);
+            E.Apply.DetectItem(Range.Sq25, Stocks.gem, Stocks.ring, Stocks.amulet);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            M.Apply.DetectAsset(Range.Sq30, Stocks.gem, Stocks.ring, Stocks.amulet, Stocks.wand);
+            M.Apply.DetectItem(Range.Sq30, Stocks.gem, Stocks.ring, Stocks.amulet, Stocks.wand);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
-            C.Apply.DetectAsset(Range.Sq35, Stocks.gem, Stocks.ring, Stocks.amulet, Stocks.wand, Stocks.book);
+            C.Apply.DetectItem(Range.Sq35, Stocks.gem, Stocks.ring, Stocks.amulet, Stocks.wand, Stocks.book);
           }
         );
       });
@@ -2450,19 +2450,19 @@ namespace Pathos
           U =>
           {
             U.SetCast().Strike(Strikes.tunnel, Dice.One);
-            U.Apply.CreateWall(WallStructure.Illusionary);
+            U.Apply.CreateBarrier(WallStructure.Illusionary, Barrier: null);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.tunnel, Dice.One);
-            P.Apply.ConvertBoulder();
-            P.Apply.CreateWall(WallStructure.Illusionary);
+            P.Apply.ConvertBlockToBarrier();
+            P.Apply.CreateBarrier(WallStructure.Illusionary, Barrier: null);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.tunnel, Dice.One);
-            S.Apply.ConvertBoulder();
-            S.Apply.CreateWall(WallStructure.Solid);
+            S.Apply.ConvertBlockToBarrier();
+            S.Apply.CreateBarrier(WallStructure.Solid, Barrier: null);
           },
           null,
           null,
@@ -2608,38 +2608,38 @@ namespace Pathos
           U =>
           {
             U.SetCast().Strike(Strikes.force, Dice.Zero);
-            U.Apply.TeleportCharacter(Properties.teleportation);
+            U.Apply.TeleportEntity(Properties.teleportation);
           },
           P =>
           {
             P.SetCast().Strike(Strikes.force, Dice.One);
-            P.Apply.TeleportCharacter(Properties.teleportation);
+            P.Apply.TeleportEntity(Properties.teleportation);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.force, 1.d4() + 3);
-            S.Apply.TeleportCharacter(Properties.teleportation);
+            S.Apply.TeleportEntity(Properties.teleportation);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.force, 1.d4() + 5)
              .SetObjects();
-            E.Apply.TeleportFloorAsset();
-            E.Apply.TeleportCharacter(Properties.teleportation);
+            E.Apply.TeleportFloorItem();
+            E.Apply.TeleportEntity(Properties.teleportation);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.force, 1.d4() + 7)
              .SetObjects();
-            M.Apply.TeleportFloorAsset();
-            M.Apply.TeleportCharacter(Properties.teleportation);
+            M.Apply.TeleportFloorItem();
+            M.Apply.TeleportEntity(Properties.teleportation);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.force, 1.d4() + 9)
              .SetObjects();
-            C.Apply.TeleportFloorAsset();
-            C.Apply.TeleportCharacter(Properties.teleportation);
+            C.Apply.TeleportFloorItem();
+            C.Apply.TeleportEntity(Properties.teleportation);
           }
         );
       });

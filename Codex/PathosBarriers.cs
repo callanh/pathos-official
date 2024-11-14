@@ -55,25 +55,25 @@ namespace Pathos
         B.Description = null;
         B.CreateSonic = Sonics.bars_slamming;
         B.DestroySonic = Sonics.bars_raising;
-        B.AddReaction(Chance.Always, Elements.fire, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.cold, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.shock, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.acid, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.force, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.magical, A => A.RemoveWall(WallStructure.Solid, iron_bars));
-        B.AddReaction(Chance.Always, Elements.disintegrate, A => A.RemoveWall(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.fire, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.cold, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.shock, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.acid, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.force, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.magical, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
+        B.AddReaction(Chance.Always, Elements.disintegrate, A => A.DestroyBarrier(WallStructure.Solid, iron_bars));
       });
 
       shroom = AddBarrier("shroom", Materials.vegetable, Grounds.moss, Glyphs.shroom, Opaque: true, Rebound: false, B =>
       {
         B.Description = null;
-        B.AddReaction(Chance.Always, Elements.cold, A => A.CreateSpill(Volatiles.freeze, 1.d100() + 100));
+        B.AddReaction(Chance.Always, Elements.cold, A => A.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
       });
 
       tree = AddBarrier("tree", Materials.wood, Grounds.dirt, Glyphs.tree, Opaque: true, Rebound: false, B =>
       {
         B.Description = null;
-        B.AddReaction(Chance.Always, Elements.fire, A => A.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+        B.AddReaction(Chance.Always, Elements.fire, A => A.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
       });
 
       cave_wall = AddBarrier("cave wall", Materials.clay, Grounds.cave_floor, Glyph: null, Opaque: true, Rebound: true, B =>

@@ -219,7 +219,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.TeleportInventoryAsset();
+            A.TeleportInventoryItem();
           });
           Table.Add(1, A =>
           {
@@ -296,7 +296,7 @@ namespace Pathos
         D.Audibility = 30;
         D.Material = Materials.iron;
         D.TriggerApply.Harm(Elements.fire, 2.d6() + 2);
-        D.TriggerApply.WhenChance(Chance.OneIn3, T => T.CreateSpill(Volatiles.blaze, 1.d100() + 100));
+        D.TriggerApply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
       });
 
       grease_trap = AddDevice("grease trap", Difficulty: 1, RepeatDice: 1.d4() + 2, Glyphs.grease_trap, Sonics.splat, D =>
@@ -536,8 +536,8 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.magic;
         D.Material = Materials.iron;
-        D.TriggerApply.TeleportFloorAsset();
-        D.TriggerApply.TeleportCharacter(Properties.teleportation);
+        D.TriggerApply.TeleportFloorItem();
+        D.TriggerApply.TeleportEntity(Properties.teleportation);
       });
 
       toxic_trap = AddDevice("toxic trap", Difficulty: 15, RepeatDice: Dice.One, Glyphs.toxic_trap, Sonics.sizzle, D =>
@@ -562,9 +562,9 @@ namespace Pathos
         D.Material = Materials.iron;
         D.TriggerApply.Harm(Elements.water, Dice.Zero);
         D.TriggerApply.RemoveTransient(Properties.slippery, Properties.fumbling);
-        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water));
-        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper));
-        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertAsset(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper));
+        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water));
+        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper));
+        D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper));
       });
 
       web = AddDevice("web", Difficulty: 7, RepeatDice: 1.d4() + 1, Glyphs.web, Sonics.thump, D =>

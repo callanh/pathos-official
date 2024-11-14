@@ -178,7 +178,7 @@ namespace Pathos
         {
           B.Description = "Request a fresh corpse with no questions asked.";
           B.Cost = 100;
-          B.Apply.CreateAsset(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse });
+          B.Apply.CreateItem(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse });
         });
 
         S.AddBoon("tinned meat", B =>
@@ -223,9 +223,9 @@ namespace Pathos
           B.Description = "Erase the magic from a potion, scroll or book.";
           B.Cost = 50;
           B.SetCast().FilterStock(Codex.Stocks.potion, Codex.Stocks.scroll, Codex.Stocks.book);
-          B.Apply.ConvertAsset(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water);
-          B.Apply.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper);
-          B.Apply.ConvertAsset(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper);
+          B.Apply.ConvertItem(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water);
+          B.Apply.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper);
+          B.Apply.ConvertItem(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper);
         });
 
         S.AddBoon("hatch", B =>
@@ -296,7 +296,7 @@ namespace Pathos
           B.Cost = 250;
           B.SetCast().FilterItem(Items.scroll_of_blank_paper)
            .SetAssetIndividualised();
-          B.Apply.ConvertAsset(Codex.Stocks.scroll, WholeStack: false, Codex.Stocks.scroll.Items.Where(I => I != Items.scroll_of_blank_paper && !I.Grade.Unique && I.Rarity > 0).ToArray());
+          B.Apply.ConvertItem(Codex.Stocks.scroll, WholeStack: false, Codex.Stocks.scroll.Items.Where(I => I != Items.scroll_of_blank_paper && !I.Grade.Unique && I.Rarity > 0).ToArray());
         });
 
         S.AddBoon("brew", B =>
@@ -305,7 +305,7 @@ namespace Pathos
           B.Cost = 250;
           B.SetCast().FilterItem(Items.potion_of_water)
            .SetAssetIndividualised();
-          B.Apply.ConvertAsset(Codex.Stocks.potion, WholeStack: false, Codex.Stocks.potion.Items.Where(I => I != Items.potion_of_water && !I.Grade.Unique && I.Rarity > 0).ToArray());
+          B.Apply.ConvertItem(Codex.Stocks.potion, WholeStack: false, Codex.Stocks.potion.Items.Where(I => I != Items.potion_of_water && !I.Grade.Unique && I.Rarity > 0).ToArray());
         });
 
         S.AddBoon("polymorph", B =>
@@ -415,7 +415,7 @@ namespace Pathos
           B.Description = "Make an imitation copy of an item.";
           B.Cost = 1000;
           B.SetCast().FilterAnyItem();
-          B.Apply.ReplicateAsset();
+          B.Apply.ReplicateItem();
         });
       });
 

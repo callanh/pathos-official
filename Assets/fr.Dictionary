@@ -1012,39 +1012,35 @@ EffectType,cancellation,annulation
 EffectType,capture,capture
 EffectType,charging,charge
 EffectType,charm,charme
-EffectType,clone character,clone de personnage
+EffectType,clone entity,clone de personnage
 EffectType,concealing,camouflage
-EffectType,connect passage,relier le passage
-EffectType,convert asset,convertit une possession
-EffectType,convert boulder,convertit en roc
-EffectType,convert door,convertir porte
-EffectType,convert fixture,converti mobilier
-EffectType,convert floor,converti le sol
-EffectType,convert spill,converti le déversement
-EffectType,convert wall,converti le mur
-EffectType,create boulder,crée un rocher
-EffectType,create fixture,crée un élément de mobilier
+EffectType,connect portal,relier le passage
+EffectType,convert barrier,converti le mur
+EffectType,convert block to barrier,convertit en roc
+EffectType,convert feature,converti mobilier
+EffectType,convert gate,convertir porte
+EffectType,convert ground,converti le sol
+EffectType,convert item,convertit une possession
+EffectType,convert volatile,converti le déversement
 EffectType,create golem,crée un golem
 EffectType,create horde,crée une horde
 EffectType,create nook,créer un coin
-EffectType,create spill,créer un déversement
 EffectType,create trap,crée un piège
-EffectType,create wall,crée un mur
+EffectType,create volatile,créer un déversement
 EffectType,decapitate,décapitation
-EffectType,degrade,dégradation
-EffectType,destroy asset,détruit une possession
-EffectType,destroy wall,détruire mur
+EffectType,destroy item,détruit une possession
+EffectType,destroy volatile,retirer un déversement
 EffectType,detect,détection
-EffectType,devour asset,dévore une possession
+EffectType,devour item,dévore une possession
 EffectType,disarm,désarme
 EffectType,divine,divine
 EffectType,drain life,draine la vie
 EffectType,drain mana,draine la mana
-EffectType,enchant asset,enchante une possession
+EffectType,enchant item,enchante une possession
 EffectType,engulf,engloutir
 EffectType,enlightenment,illumination
 EffectType,exchange,échange
-EffectType,extinguish spill,éteindre le déversement
+EffectType,extinguish volatile,éteindre le déversement
 EffectType,gain level,gagne un niveau
 EffectType,gain skill,gagne la compétence
 EffectType,genocide,génocide
@@ -1061,7 +1057,7 @@ EffectType,lose skill,perd la compétence
 EffectType,lose talent,perd le talent
 EffectType,malnutrition,malnutrition
 EffectType,mapping,cartographie
-EffectType,mobilise boulder,mobiliser un rocher
+EffectType,mobilise block,mobiliser un rocher
 EffectType,murder,meurtre
 EffectType,nutrition,nutrition
 EffectType,opening,ouverture
@@ -1072,21 +1068,20 @@ EffectType,raise dead,résurrection
 EffectType,recall,rappelle
 EffectType,release,libere
 EffectType,remove curse,lève la malédiction
-EffectType,remove spill,retirer un déversement
 EffectType,remove transient,supprime le temporaire
-EffectType,replicate asset,reproduit la possession
+EffectType,replicate item,reproduit la possession
 EffectType,restock,réapprovisionner
 EffectType,restore ability,rétablit la compétence
 EffectType,rumour,rumeur
 EffectType,sacrifice,sacrifice
 EffectType,sanctify,sanctifie
 EffectType,searching,recherche
-EffectType,spawn character,crée un personnage
+EffectType,spawn entity,crée un personnage
 EffectType,steal,vole
 EffectType,summon entity,invoquer l'entité
-EffectType,teleport asset,téléporte une possession
-EffectType,teleport away,téléporte au loin
-EffectType,teleport character,téléporte le personnage
+EffectType,teleport entity,téléporte le personnage
+EffectType,teleport item,téléporte une possession
+EffectType,teleport item away,téléporte au loin
 EffectType,tinning,met en boîte
 EffectType,transition,transition
 EffectType,unafflict,enlève la maladie
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,RÉTROGRADER
 LiteralText,depth,profondeur
 LiteralText,DESCEND TO NEXT LEVEL,DESCENDRE AU NIVEAU SUIVANT
 LiteralText,destination,destination
-LiteralText,DESTROY,DÉTRUIRE
+LiteralText,destroy,détruire
 LiteralText,determined by player level,déterminé par le niveau du joueur
 LiteralText,device,mécanisme
 LiteralText,DEVICES,MÉCANISMES

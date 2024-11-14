@@ -1012,39 +1012,35 @@ EffectType,cancellation,魔法除去
 EffectType,capture,捕獲
 EffectType,charging,充填
 EffectType,charm,魅了
-EffectType,clone character,分裂
+EffectType,clone entity,分裂
 EffectType,concealing,隠す
-EffectType,connect passage,通路をつなげる
-EffectType,convert asset,アイテムを変換
-EffectType,convert boulder,巨塊を変換
-EffectType,convert door,扉を変換
-EffectType,convert fixture,設備を変換
-EffectType,convert floor,床を変換
-EffectType,convert spill,地形効果を変換
-EffectType,convert wall,壁を変換
-EffectType,create boulder,巨塊を生成
-EffectType,create fixture,設備を作成
+EffectType,connect portal,通路をつなげる
+EffectType,convert barrier,壁を変換
+EffectType,convert block to barrier,巨塊を変換
+EffectType,convert feature,設備を変換
+EffectType,convert gate,扉を変換
+EffectType,convert ground,床を変換
+EffectType,convert item,アイテムを変換
+EffectType,convert volatile,地形効果を変換
 EffectType,create golem,ゴーレムを作成
 EffectType,create horde,群れを作成
 EffectType,create nook,隠し小路を作成
-EffectType,create spill,地形効果が発生
 EffectType,create trap,罠を生成
-EffectType,create wall,壁を作成
+EffectType,create volatile,地形効果が発生
 EffectType,decapitate,首はね
-EffectType,degrade,劣化する
-EffectType,destroy asset,アイテムを破壊
-EffectType,destroy wall,壁を破壊
+EffectType,destroy item,アイテムを破壊
+EffectType,destroy volatile,地形効果が消滅
 EffectType,detect,探知
-EffectType,devour asset,アイテムをむさぼり喰う
+EffectType,devour item,アイテムをむさぼり喰う
 EffectType,disarm,武器を落とさせる
 EffectType,divine,判別
 EffectType,drain life,ライフ吸収
 EffectType,drain mana,マナ吸収
-EffectType,enchant asset,アイテムの修正値
+EffectType,enchant item,アイテムの修正値
 EffectType,engulf,丸呑み
 EffectType,enlightenment,アイテムの知識を得る
 EffectType,exchange,交換する
-EffectType,extinguish spill,地形効果が霧散
+EffectType,extinguish volatile,地形効果が霧散
 EffectType,gain level,レベルアップ
 EffectType,gain skill,スキルレベル上昇
 EffectType,genocide,根絶
@@ -1061,7 +1057,7 @@ EffectType,lose skill,スキルレベル低下
 EffectType,lose talent,性質を失う
 EffectType,malnutrition,満腹度減少
 EffectType,mapping,地図作製
-EffectType,mobilise boulder,障害物を動かす
+EffectType,mobilise block,障害物を動かす
 EffectType,murder,殺人
 EffectType,nutrition,満腹度上昇
 EffectType,opening,開錠
@@ -1072,21 +1068,20 @@ EffectType,raise dead,蘇生
 EffectType,recall,仲間を呼び戻す
 EffectType,release,解放
 EffectType,remove curse,解呪
-EffectType,remove spill,地形効果が消滅
 EffectType,remove transient,一時的な状態の解除
-EffectType,replicate asset,アイテムを複製
+EffectType,replicate item,アイテムを複製
 EffectType,restock,補充
 EffectType,restore ability,能力値回復
 EffectType,rumour,噂
 EffectType,sacrifice,犠牲
 EffectType,sanctify,祝呪を変更
 EffectType,searching,調査
-EffectType,spawn character,モンスターを生成
+EffectType,spawn entity,モンスターを生成
 EffectType,steal,盗む
 EffectType,summon entity,召喚
-EffectType,teleport asset,アイテムを瞬間移動させる
-EffectType,teleport away,瞬間移動で逃げる
-EffectType,teleport character,キャラクターが瞬間移動
+EffectType,teleport entity,キャラクターが瞬間移動
+EffectType,teleport item,アイテムを瞬間移動させる
+EffectType,teleport item away,瞬間移動で逃げる
 EffectType,tinning,詰める
 EffectType,transition,階層移動
 EffectType,unafflict,災難からの解放
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,降格
 LiteralText,depth,到達階数
 LiteralText,DESCEND TO NEXT LEVEL,1つ下の階に降りる
 LiteralText,destination,目的地
-LiteralText,DESTROY,破壊する
+LiteralText,destroy,破壊する
 LiteralText,determined by player level,プレイヤーのレベルによって決定
 LiteralText,device,罠
 LiteralText,DEVICES,罠

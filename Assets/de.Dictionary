@@ -1012,39 +1012,35 @@ EffectType,cancellation,Aufhebung
 EffectType,capture,erfassen
 EffectType,charging,aufladen
 EffectType,charm,betören
-EffectType,clone character,Charakter klonen
+EffectType,clone entity,Charakter klonen
 EffectType,concealing,tarnen
-EffectType,connect passage,verbinde Passage
-EffectType,convert asset,verwandle Gegenstand
-EffectType,convert boulder,verwandle Felsbrocken
-EffectType,convert door,verwandle Tür
-EffectType,convert fixture,verwandle Einrichtung
-EffectType,convert floor,verwandle Boden
-EffectType,convert spill,verwandle Leck
-EffectType,convert wall,verwandle Wand
-EffectType,create boulder,erschaffe Felsbrocken
-EffectType,create fixture,erschaffe Einrichtung
+EffectType,connect portal,verbinde Passage
+EffectType,convert barrier,verwandle Wand
+EffectType,convert block to barrier,verwandle Felsbrocken
+EffectType,convert feature,verwandle Einrichtung
+EffectType,convert gate,verwandle Tür
+EffectType,convert ground,verwandle Boden
+EffectType,convert item,verwandle Gegenstand
+EffectType,convert volatile,verwandle Leck
 EffectType,create golem,erschaffe Golem
 EffectType,create horde,erschaffe Horde
 EffectType,create nook,erschaffe Ecke
-EffectType,create spill,erschaffe Leck
 EffectType,create trap,erschaffe Falle
-EffectType,create wall,erschaffe Wand
+EffectType,create volatile,erschaffe Leck
 EffectType,decapitate,enthaupten
-EffectType,degrade,degradieren
-EffectType,destroy asset,Gegenstand zerstören
-EffectType,destroy wall,Wand zerstören
+EffectType,destroy item,Gegenstand zerstören
+EffectType,destroy volatile,beseitige Leck
 EffectType,detect,entdecken
-EffectType,devour asset,Gegenstand verschlingen
+EffectType,devour item,Gegenstand verschlingen
 EffectType,disarm,entwaffnen
 EffectType,divine,Deuten
 EffectType,drain life,enzieht Leben
 EffectType,drain mana,enzieht Mana
-EffectType,enchant asset,Gegenstand verzaubern
+EffectType,enchant item,Gegenstand verzaubern
 EffectType,engulf,verschlingen
 EffectType,enlightenment,Erleuchtung
 EffectType,exchange,austauschen
-EffectType,extinguish spill,beseitige Leck
+EffectType,extinguish volatile,beseitige Leck
 EffectType,gain level,steigere Stufe
 EffectType,gain skill,steigere Geschick
 EffectType,genocide,Genozid
@@ -1061,7 +1057,7 @@ EffectType,lose skill,verliere Übung
 EffectType,lose talent,verliere Talent
 EffectType,malnutrition,Mangelernärung
 EffectType,mapping,Kartierung
-EffectType,mobilise boulder,bewege Felsbrocken
+EffectType,mobilise block,bewege Felsbrocken
 EffectType,murder,Mord
 EffectType,nutrition,Nahrung
 EffectType,opening,Öffnung
@@ -1072,21 +1068,20 @@ EffectType,raise dead,erwecke Tote
 EffectType,recall,erinnern
 EffectType,release,freilassen
 EffectType,remove curse,entferne Fluch
-EffectType,remove spill,beseitige Leck
 EffectType,remove transient,hebe Zustände auf
-EffectType,replicate asset,bilde Gegenstand nach
+EffectType,replicate item,bilde Gegenstand nach
 EffectType,restock,Nachschub
 EffectType,restore ability,Fähigkeit wiederherstellen
 EffectType,rumour,Gerücht
 EffectType,sacrifice,opfern
 EffectType,sanctify,segnen
 EffectType,searching,suchen
-EffectType,spawn character,erschaffe Charakter
+EffectType,spawn entity,erschaffe Charakter
 EffectType,steal,stiehlt
 EffectType,summon entity,beschwöre Entität
-EffectType,teleport asset,teleportiere Gegenstand
-EffectType,teleport away,wegteleportieren
-EffectType,teleport character,teleportiere Charakter
+EffectType,teleport entity,teleportiere Charakter
+EffectType,teleport item,teleportiere Gegenstand
+EffectType,teleport item away,wegteleportieren
 EffectType,tinning,konservieren
 EffectType,transition,Zustand
 EffectType,unafflict,entferne Gebrechen
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,DEGRADIEREN
 LiteralText,depth,Tiefe
 LiteralText,DESCEND TO NEXT LEVEL,ABSTIEG ZUR NÄCHSTEN EBENE
 LiteralText,destination,Ziel
-LiteralText,DESTROY,ZERSTÖREN
+LiteralText,destroy,zerstören
 LiteralText,determined by player level,bestimmt durch die Spielerstufe
 LiteralText,device,Gerät
 LiteralText,DEVICES,FALLEN

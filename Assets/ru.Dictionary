@@ -1012,39 +1012,35 @@ EffectType,cancellation,очищение
 EffectType,capture,ловит
 EffectType,charging,заряжает
 EffectType,charm,очарование
-EffectType,clone character,клонирует персонажа
+EffectType,clone entity,клонирует персонажа
 EffectType,concealing,скрывает
-EffectType,connect passage,соединить проход
-EffectType,convert asset,переводит ценности
-EffectType,convert boulder,превращает валун
-EffectType,convert door,переводит дверь
-EffectType,convert fixture,переводит приспособление
-EffectType,convert floor,переводит пол в
-EffectType,convert spill,переводит барьер
-EffectType,convert wall,переводит стену
-EffectType,create boulder,создаёт валун
-EffectType,create fixture,создаёт приспособление
+EffectType,connect portal,соединить проход
+EffectType,convert barrier,переводит стену
+EffectType,convert block to barrier,превращает валун
+EffectType,convert feature,переводит приспособление
+EffectType,convert gate,переводит дверь
+EffectType,convert ground,переводит пол в
+EffectType,convert item,переводит ценности
+EffectType,convert volatile,переводит барьер
 EffectType,create golem,создаёт голема
 EffectType,create horde,создаёт орду
 EffectType,create nook,создаёт тайную
-EffectType,create spill,создаёт барьер
 EffectType,create trap,создаёт ловушку
-EffectType,create wall,создаёт стену
+EffectType,create volatile,создаёт барьер
 EffectType,decapitate,отрубает голову
-EffectType,degrade,понижает
-EffectType,destroy asset,уничтожает ценность
-EffectType,destroy wall,разрушает стену
+EffectType,destroy item,уничтожает ценность
+EffectType,destroy volatile,убирает барьер
 EffectType,detect,находит
-EffectType,devour asset,пожирает ценности
+EffectType,devour item,пожирает ценности
 EffectType,disarm,обезоруживает
 EffectType,divine,определяет духовность
 EffectType,drain life,вытягивает жизнь
 EffectType,drain mana,вытягивает ману
-EffectType,enchant asset,зачаровывает ценность
+EffectType,enchant item,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
-EffectType,extinguish spill,убрать барьер
+EffectType,extinguish volatile,убрать барьер
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -1061,7 +1057,7 @@ EffectType,lose skill,теряет навык
 EffectType,lose talent,теряет талант
 EffectType,malnutrition,недоедание
 EffectType,mapping,карта
-EffectType,mobilise boulder,призывает валун
+EffectType,mobilise block,призывает валун
 EffectType,murder,убивает
 EffectType,nutrition,питание
 EffectType,opening,открытие
@@ -1072,21 +1068,20 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
-EffectType,remove spill,убирает барьер
 EffectType,remove transient,снимает временное
-EffectType,replicate asset,копирует ценность
+EffectType,replicate item,копирует ценность
 EffectType,restock,пополняет запасы
 EffectType,restore ability,восстанавливает значение характеристики
 EffectType,rumour,слухи
 EffectType,sacrifice,приносит в жертву
 EffectType,sanctify,наделяет
 EffectType,searching,ищет
-EffectType,spawn character,порождает персонажа
+EffectType,spawn entity,порождает персонажа
 EffectType,steal,ворует
 EffectType,summon entity,призывает существо
-EffectType,teleport asset,телепортирует ценность
-EffectType,teleport away,телепортируется
-EffectType,teleport character,телепортирует персонажа
+EffectType,teleport entity,телепортирует персонажа
+EffectType,teleport item,телепортирует ценность
+EffectType,teleport item away,телепортируется
 EffectType,tinning,консервирует
 EffectType,transition,переход
 EffectType,unafflict,исцеляет от заражения
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,ПОНИЗИТЬ
 LiteralText,depth,уровень подземелья
 LiteralText,DESCEND TO NEXT LEVEL,СПУСК НА СЛЕДУЮЩИЙ УРОВЕНЬ
 LiteralText,destination,точка привязки
-LiteralText,DESTROY,УНИЧТОЖИТЬ
+LiteralText,destroy,уничтожить
 LiteralText,determined by player level,определяется уровнем игрока
 LiteralText,device,механизм
 LiteralText,DEVICES,МЕХАНИЗМЫ

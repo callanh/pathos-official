@@ -1012,39 +1012,35 @@ EffectType,cancellation,撤銷
 EffectType,capture,捕捉
 EffectType,charging,充能
 EffectType,charm,魅力
-EffectType,clone character,克隆角色
+EffectType,clone entity,克隆角色
 EffectType,concealing,隱匿
-EffectType,connect passage,連接通道
-EffectType,convert asset,轉換物件
-EffectType,convert boulder,轉換巨石
-EffectType,convert door,轉換門
-EffectType,convert fixture,轉換固定物
-EffectType,convert floor,轉換地面
-EffectType,convert spill,轉換環境效果
-EffectType,convert wall,轉換牆壁
-EffectType,create boulder,製造巨石
-EffectType,create fixture,製造固定物
+EffectType,connect portal,連接通道
+EffectType,convert barrier,轉換牆壁
+EffectType,convert block to barrier,轉換巨石
+EffectType,convert feature,轉換固定物
+EffectType,convert gate,轉換門
+EffectType,convert ground,轉換地面
+EffectType,convert item,轉換物件
+EffectType,convert volatile,轉換環境效果
 EffectType,create golem,製造魔像
 EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
-EffectType,create spill,製造環境效果
 EffectType,create trap,製造陷阱
-EffectType,create wall,製造牆壁
+EffectType,create volatile,製造環境效果
 EffectType,decapitate,斬首
-EffectType,degrade,降級
-EffectType,destroy asset,摧毀物件
-EffectType,destroy wall,摧毀牆壁
+EffectType,destroy item,摧毀物件
+EffectType,destroy volatile,移除環境效果
 EffectType,detect,偵測
-EffectType,devour asset,吞食物品
+EffectType,devour item,吞食物品
 EffectType,disarm,繳械
 EffectType,divine,檢測祝福/詛咒
 EffectType,drain life,吸取生命
 EffectType,drain mana,吸取魔力
-EffectType,enchant asset,附魔物件
+EffectType,enchant item,附魔物件
 EffectType,engulf,吞嚥
 EffectType,enlightenment,啟蒙
 EffectType,exchange,交換
-EffectType,extinguish spill,消除環境效果
+EffectType,extinguish volatile,消除環境效果
 EffectType,gain level,升級
 EffectType,gain skill,獲得技能
 EffectType,genocide,滅絕
@@ -1061,7 +1057,7 @@ EffectType,lose skill,失去技能
 EffectType,lose talent,失去天賦
 EffectType,malnutrition,降低營養
 EffectType,mapping,地圖繪製
-EffectType,mobilise boulder,移動巨石
+EffectType,mobilise block,移動巨石
 EffectType,murder,秒殺
 EffectType,nutrition,營養
 EffectType,opening,開啟
@@ -1072,21 +1068,20 @@ EffectType,raise dead,復活死屍
 EffectType,recall,喚回隊友
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
-EffectType,remove spill,移除環境效果
 EffectType,remove transient,去除短期狀態
-EffectType,replicate asset,複製物件
+EffectType,replicate item,複製物件
 EffectType,restock,重新進貨
 EffectType,restore ability,復原能力
 EffectType,rumour,流言
 EffectType,sacrifice,獻祭
 EffectType,sanctify,神聖化
 EffectType,searching,搜索
-EffectType,spawn character,產生角色
+EffectType,spawn entity,產生角色
 EffectType,steal,偷取
 EffectType,summon entity,召喚盟友
-EffectType,teleport asset,傳送物件
-EffectType,teleport away,傳送到別處
-EffectType,teleport character,傳送角色
+EffectType,teleport entity,傳送角色
+EffectType,teleport item,傳送物件
+EffectType,teleport item away,傳送到別處
 EffectType,tinning,罐裝
 EffectType,transition,轉變
 EffectType,unafflict,治癒感染
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,上移
 LiteralText,depth,深度
 LiteralText,DESCEND TO NEXT LEVEL,去往之後的樓層
 LiteralText,destination,通往
-LiteralText,DESTROY,催毀
+LiteralText,destroy,催毀
 LiteralText,determined by player level,由玩家等級決定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱

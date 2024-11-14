@@ -1012,39 +1012,35 @@ EffectType,cancellation,phép loại bỏ
 EffectType,capture,bắt
 EffectType,charging,nạp lại
 EffectType,charm,quyến rũ
-EffectType,clone character,tạo bản sao của nhân vật
+EffectType,clone entity,tạo bản sao của nhân vật
 EffectType,concealing,ẩn nấp
-EffectType,connect passage,tạo cổng dịch chuyển
-EffectType,convert asset,chuyển đổi xập đồ
-EffectType,convert boulder,chuyển đổi tảng đá
-EffectType,convert door,chuyển đổi cửa
-EffectType,convert fixture,chuyển đổi vật cố
-EffectType,convert floor,chuyển đổi sàn
-EffectType,convert spill,chuyển đổi vũng
-EffectType,convert wall,chuyển đổi tường
-EffectType,create boulder,tạo tảng đá
-EffectType,create fixture,tạo vật cố
+EffectType,connect portal,tạo cổng dịch chuyển
+EffectType,convert barrier,chuyển đổi tường
+EffectType,convert block to barrier,chuyển đổi tảng đá
+EffectType,convert feature,chuyển đổi vật cố
+EffectType,convert gate,chuyển đổi cửa
+EffectType,convert ground,chuyển đổi sàn
+EffectType,convert item,chuyển đổi xập đồ
+EffectType,convert volatile,chuyển đổi vũng
 EffectType,create golem,tạo quái vật golem
 EffectType,create horde,tạo bầy đám
 EffectType,create nook,tạo nắm cửa
-EffectType,create spill,tạo vũng
 EffectType,create trap,tạo bẫy
-EffectType,create wall,tạo tường
+EffectType,create volatile,tạo vũng
 EffectType,decapitate,chặt đầu
-EffectType,degrade,xuống cấp
-EffectType,destroy asset,phá hủy vật
-EffectType,destroy wall,phá hủy tường
+EffectType,destroy item,phá hủy vật
+EffectType,destroy volatile,loại bỏ vũng
 EffectType,detect,phát hiện
-EffectType,devour asset,nuốt vật
+EffectType,devour item,nuốt vật
 EffectType,disarm,tước vũ khí
 EffectType,divine,thần thánh
 EffectType,drain life,hút sinh lực
 EffectType,drain mana,hút ma pháp
-EffectType,enchant asset,phù phép vật
+EffectType,enchant item,phù phép vật
 EffectType,engulf,nuốt chửng
 EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
-EffectType,extinguish spill,dập vũng
+EffectType,extinguish volatile,dập vũng
 EffectType,gain level,lên cấp
 EffectType,gain skill,mở kĩ năng
 EffectType,genocide,diệt chủng
@@ -1061,7 +1057,7 @@ EffectType,lose skill,mất kĩ năng
 EffectType,lose talent,mất tài năng
 EffectType,malnutrition,suy dinh dưỡng
 EffectType,mapping,lập bản đồ
-EffectType,mobilise boulder,di chuyển tảng đá
+EffectType,mobilise block,di chuyển tảng đá
 EffectType,murder,giết
 EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
@@ -1072,21 +1068,20 @@ EffectType,raise dead,tái sinh
 EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
-EffectType,remove spill,loại bỏ vũng
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
-EffectType,replicate asset,tạo bản sao của vật
+EffectType,replicate item,tạo bản sao của vật
 EffectType,restock,bổ sung
 EffectType,restore ability,khôi phục chỉ số
 EffectType,rumour,lời đồn
 EffectType,sacrifice,cúng tế
 EffectType,sanctify,thánh hóa
 EffectType,searching,tìm kiếm
-EffectType,spawn character,tạo ra nhân vật
+EffectType,spawn entity,tạo ra nhân vật
 EffectType,steal,cướp
 EffectType,summon entity,triệu hồi thực thể
-EffectType,teleport asset,dịch chuyển vật
-EffectType,teleport away,dịch chuyển ra
-EffectType,teleport character,dịch chuyển nhân vật
+EffectType,teleport entity,dịch chuyển nhân vật
+EffectType,teleport item,dịch chuyển vật
+EffectType,teleport item away,dịch chuyển ra
 EffectType,tinning,đóng hộp
 EffectType,transition,di chuyển
 EffectType,unafflict,không ảnh hưởng
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,GIÁNG CẤP
 LiteralText,depth,tầng
 LiteralText,DESCEND TO NEXT LEVEL,ĐI XUỐNG TẦNG TIẾP THEO
 LiteralText,destination,đích đến
-LiteralText,DESTROY,PHÁ HỦY
+LiteralText,destroy,phá hủy
 LiteralText,determined by player level,được đánh giá bởi cấp độ người chơi
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY

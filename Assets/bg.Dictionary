@@ -1012,39 +1012,35 @@ EffectType,cancellation,отмена
 EffectType,capture,
 EffectType,charging,заряжает
 EffectType,charm,очарование
-EffectType,clone character,клонирует персонажа
+EffectType,clone entity,клонирует персонажа
 EffectType,concealing,скрывает
-EffectType,connect passage,
-EffectType,convert asset,переводит ценности
-EffectType,convert boulder,
-EffectType,convert door,
-EffectType,convert fixture,переводит приспособление
-EffectType,convert floor,
-EffectType,convert spill,
-EffectType,convert wall,
-EffectType,create boulder,създай скала
-EffectType,create fixture,създай приспособление
+EffectType,connect portal,
+EffectType,convert barrier,
+EffectType,convert block to barrier,
+EffectType,convert feature,переводит приспособление
+EffectType,convert gate,
+EffectType,convert ground,
+EffectType,convert item,переводит ценности
+EffectType,convert volatile,
 EffectType,create golem,създай голема
 EffectType,create horde,създай орду
 EffectType,create nook,
-EffectType,create spill,
 EffectType,create trap,създай ловушку
-EffectType,create wall,
+EffectType,create volatile,
 EffectType,decapitate,
-EffectType,degrade,
-EffectType,destroy asset,уничтожает ценность
-EffectType,destroy wall,
+EffectType,destroy item,уничтожает ценность
+EffectType,destroy volatile,
 EffectType,detect,находит
-EffectType,devour asset,
+EffectType,devour item,
 EffectType,disarm,
 EffectType,divine,духовно
 EffectType,drain life,вытягивает жизнь
 EffectType,drain mana,вытягивает ману
-EffectType,enchant asset,заклинает ценность
+EffectType,enchant item,заклинает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,просвещает
 EffectType,exchange,
-EffectType,extinguish spill,
+EffectType,extinguish volatile,
 EffectType,gain level,получи уровень
 EffectType,gain skill,получи умение
 EffectType,genocide,истребляет
@@ -1061,7 +1057,7 @@ EffectType,lose skill,загуби умение
 EffectType,lose talent,загуби талант
 EffectType,malnutrition,недоедание
 EffectType,mapping,карта
-EffectType,mobilise boulder,
+EffectType,mobilise block,
 EffectType,murder,убивает
 EffectType,nutrition,питание
 EffectType,opening,открытие
@@ -1072,21 +1068,20 @@ EffectType,raise dead,оживляет
 EffectType,recall,отзывает
 EffectType,release,
 EffectType,remove curse,премахване проклятье
-EffectType,remove spill,
 EffectType,remove transient,премахване временное
-EffectType,replicate asset,копирует ценность
+EffectType,replicate item,копирует ценность
 EffectType,restock,
 EffectType,restore ability,восстанавливает значение характеристики
 EffectType,rumour,слухи
 EffectType,sacrifice,приносит в жертву
 EffectType,sanctify,освящает
 EffectType,searching,ищет
-EffectType,spawn character,порождает персонажа
+EffectType,spawn entity,порождает персонажа
 EffectType,steal,крадецует
 EffectType,summon entity,призывает существо
-EffectType,teleport asset,телепортирует ценность
-EffectType,teleport away,
-EffectType,teleport character,телепортирует персонажа
+EffectType,teleport entity,телепортирует персонажа
+EffectType,teleport item,телепортирует ценность
+EffectType,teleport item away,
 EffectType,tinning,консервирует
 EffectType,transition,переход
 EffectType,unafflict,
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,
 LiteralText,depth,
 LiteralText,DESCEND TO NEXT LEVEL,СПУСК НА СЛЕДУЮЩИЙ УРОВЕНЬ
 LiteralText,destination,
-LiteralText,DESTROY,УНИЧТОЖИТЬ
+LiteralText,destroy,уничтожить
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,МЕХАНИЗМЫ

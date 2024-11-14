@@ -44,7 +44,7 @@ namespace Pathos
       {
         S.Apply.Harm(Elements.fire, 2.d6());
 
-        S.Apply.WhenTargetFloor(Grounds.water, T => T.ConvertSpill(blaze, steam, Locality.Square));
+        S.Apply.WhenTargetGround(Grounds.water, T => T.ConvertVolatile(blaze, steam, Locality.Square));
 
         // NOTE: ice ground already reacts to fire and turns to water.
         //S.Apply.WhenTargetFloor(Grounds.ice, T =>
@@ -53,8 +53,8 @@ namespace Pathos
         //  T.RemoveSpill(blaze);
         //});
 
-        S.AddReaction(Chance.Always, Elements.water, T => T.ExtinguishSpill(blaze));
-        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishSpill(blaze));
+        S.AddReaction(Chance.Always, Elements.water, T => T.ExtinguishVolatile(blaze));
+        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishVolatile(blaze));
       });
 
       blood = AddVolatile("blood", Glyphs.blood, new[] 
@@ -90,12 +90,12 @@ namespace Pathos
         S.Apply.ApplyTransient(Properties.fumbling, 1.d4() + 10); // TODO: for an active blood spray, needs an animated tile.
 
         // blood can't exist on these grounds.        
-        S.Apply.WhenTargetFloor(Grounds.lava, T => T.RemoveSpill(blood));
-        S.Apply.WhenTargetFloor(Grounds.water, T => T.RemoveSpill(blood));
-        S.Apply.WhenTargetFloor(Grounds.chasm, T => T.RemoveSpill(blood));
+        S.Apply.WhenTargetGround(Grounds.lava, T => T.DestroyVolatile(blood));
+        S.Apply.WhenTargetGround(Grounds.water, T => T.DestroyVolatile(blood));
+        S.Apply.WhenTargetGround(Grounds.chasm, T => T.DestroyVolatile(blood));
 
         // water washes away blood.
-        S.AddReaction(Chance.Always, Elements.water, T => T.RemoveSpill(blood));
+        S.AddReaction(Chance.Always, Elements.water, T => T.DestroyVolatile(blood));
       });
 
       electricity = AddVolatile("electricity", Glyphs.electricity, null, Sonics.electricity, S =>
@@ -116,9 +116,9 @@ namespace Pathos
         //  T.RemoveSpill(freeze);
         //});
 
-        S.Apply.WhenTargetFloor(Grounds.lava, T => T.RemoveSpill(freeze));
+        S.Apply.WhenTargetGround(Grounds.lava, T => T.DestroyVolatile(freeze));
 
-        S.AddReaction(Chance.Always, Elements.fire, T => T.ExtinguishSpill(freeze));
+        S.AddReaction(Chance.Always, Elements.fire, T => T.ExtinguishVolatile(freeze));
       });
 
       // TODO: 'puddle' of water?
@@ -127,9 +127,9 @@ namespace Pathos
       {
         S.Apply.Harm(Elements.water, Dice.Zero);
         S.Apply.ApplyTransient(Properties.blindness, 1.d4() + 2);
-        S.Apply.WhenChance(Chance.OneIn20, V => V.ConvertAsset(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper)); // potions & books are 'closed' so won't be directly affected by steam.
+        S.Apply.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper)); // potions & books are 'closed' so won't be directly affected by steam.
 
-        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishSpill(steam));
+        S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishVolatile(steam));
       });
 
       // TODO: brambles/swarm/oil/mucous/blood/smoke/pollution? what about positive fields such as life/mana recovery?

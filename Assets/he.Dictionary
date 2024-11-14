@@ -1012,39 +1012,35 @@ EffectType,cancellation,ביטול
 EffectType,capture,לכידה
 EffectType,charging,טעינה
 EffectType,charm,הקסמה
-EffectType,clone character,שיבוט דמות
+EffectType,clone entity,שיבוט דמות
 EffectType,concealing,התחבאות
-EffectType,connect passage,מגע במעבר
-EffectType,convert asset,המרת נכס
-EffectType,convert boulder,המרת סלע
-EffectType,convert door,המרת דלת
-EffectType,convert fixture,המרת מתקן
-EffectType,convert floor,המרת רצפה
-EffectType,convert spill,המרת נזילה
-EffectType,convert wall,המרת קיר
-EffectType,create boulder,יצירת סלע
-EffectType,create fixture,יצירת מתקן
+EffectType,connect portal,מגע במעבר
+EffectType,convert barrier,המרת קיר
+EffectType,convert block to barrier,המרת סלע
+EffectType,convert feature,המרת מתקן
+EffectType,convert gate,המרת דלת
+EffectType,convert ground,המרת רצפה
+EffectType,convert item,המרת נכס
+EffectType,convert volatile,המרת נזילה
 EffectType,create golem,יצירת גולם
 EffectType,create horde,יצירת נחיל
 EffectType,create nook,יצירת פינה
-EffectType,create spill,יצירת נזילה
 EffectType,create trap,יצירת מלכודת
-EffectType,create wall,יצירת קיר
+EffectType,create volatile,יצירת נזילה
 EffectType,decapitate,עריפה
-EffectType,degrade,שינמוך
-EffectType,destroy asset,השמדת נכס
-EffectType,destroy wall,השמדת קיר
+EffectType,destroy item,השמדת נכס
+EffectType,destroy volatile,הסרת נזילה
 EffectType,detect,איתור
-EffectType,devour asset,טריפת נכס
+EffectType,devour item,טריפת נכס
 EffectType,disarm,ניטרול נשק
 EffectType,divine,ניחוש
 EffectType,drain life,שאיבת חיים
 EffectType,drain mana,שאיבת קסם
-EffectType,enchant asset,הקסמת נכס
+EffectType,enchant item,הקסמת נכס
 EffectType,engulf,עיטוף
 EffectType,enlightenment,הארה
 EffectType,exchange,עסקה
-EffectType,extinguish spill,עצירת נזילה
+EffectType,extinguish volatile,עצירת נזילה
 EffectType,gain level,עליית רמה
 EffectType,gain skill,קבלת יכולת
 EffectType,genocide,רצח עם
@@ -1061,7 +1057,7 @@ EffectType,lose skill,איבוד יכולת
 EffectType,lose talent,איבוד כישור
 EffectType,malnutrition,תת תזונה
 EffectType,mapping,מיפוי
-EffectType,mobilise boulder,הזזת סלע
+EffectType,mobilise block,הזזת סלע
 EffectType,murder,רצח
 EffectType,nutrition,תזונה
 EffectType,opening,פתיחה
@@ -1072,21 +1068,20 @@ EffectType,raise dead,הקמת מתים
 EffectType,recall,החזרה
 EffectType,release,שיחרור
 EffectType,remove curse,הסרת קללה
-EffectType,remove spill,הסרת נזילה
 EffectType,remove transient,הסרת מצב זמני
-EffectType,replicate asset,הכפלת נכס
+EffectType,replicate item,הכפלת נכס
 EffectType,restock,עדכון המלאי
 EffectType,restore ability,שיחזור יכולת
 EffectType,rumour,שמועה
 EffectType,sacrifice,הקרבה
 EffectType,sanctify,קידוש
 EffectType,searching,חיפוש
-EffectType,spawn character,לידת דמות
+EffectType,spawn entity,לידת דמות
 EffectType,steal,גניבה
 EffectType,summon entity,זימון יישות
-EffectType,teleport asset,שיגור נכס
-EffectType,teleport away,שיגור
-EffectType,teleport character,שיגור דמות
+EffectType,teleport entity,שיגור דמות
+EffectType,teleport item,שיגור נכס
+EffectType,teleport item away,שיגור
 EffectType,tinning,שימור בפחית
 EffectType,transition,מעבר
 EffectType,unafflict,הסרת צרה
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,להוריד רמה
 LiteralText,depth,עומק
 LiteralText,DESCEND TO NEXT LEVEL,ירידה לקומה הבאה
 LiteralText,destination,יעד
-LiteralText,DESTROY,להשמיד
+LiteralText,destroy,להשמיד
 LiteralText,determined by player level,נקבע על פי רמת הדמות
 LiteralText,device,מכשיר
 LiteralText,DEVICES,מכשירים

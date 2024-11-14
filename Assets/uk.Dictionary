@@ -1012,39 +1012,35 @@ EffectType,cancellation,скасування
 EffectType,capture,захоплює
 EffectType,charging,заряджає
 EffectType,charm,причарування
-EffectType,clone character,клонує персонажа
+EffectType,clone entity,клонує персонажа
 EffectType,concealing,приховує
-EffectType,connect passage,з'єднати переходи
-EffectType,convert asset,перетворює цінність
-EffectType,convert boulder,перетворює брилу
-EffectType,convert door,перетворює двері
-EffectType,convert fixture,перетворює механізм
-EffectType,convert floor,перетворює підлогу
-EffectType,convert spill,перетворює лужу
-EffectType,convert wall,перетворює стіну
-EffectType,create boulder,створює брилу
-EffectType,create fixture,створити механізм
+EffectType,connect portal,з'єднати переходи
+EffectType,convert barrier,перетворює стіну
+EffectType,convert block to barrier,перетворює брилу
+EffectType,convert feature,перетворює механізм
+EffectType,convert gate,перетворює двері
+EffectType,convert ground,перетворює підлогу
+EffectType,convert item,перетворює цінність
+EffectType,convert volatile,перетворює лужу
 EffectType,create golem,створює голема
 EffectType,create horde,створює орду
 EffectType,create nook,створює затишне містечко
-EffectType,create spill,створює лужу
 EffectType,create trap,створює пастку
-EffectType,create wall,створює стіну
+EffectType,create volatile,створює лужу
 EffectType,decapitate,обезголовує
-EffectType,degrade,погіршитися
-EffectType,destroy asset,знищує цінність
-EffectType,destroy wall,знищує стіну
+EffectType,destroy item,знищує цінність
+EffectType,destroy volatile,прибрати лужу
 EffectType,detect,визначає:
-EffectType,devour asset,зжерти цінність
+EffectType,devour item,зжерти цінність
 EffectType,disarm,розряджає
 EffectType,divine,пророкує
 EffectType,drain life,витягує життя
 EffectType,drain mana,витягує ману
-EffectType,enchant asset,заклинає цінність
+EffectType,enchant item,заклинає цінність
 EffectType,engulf,проковтує
 EffectType,enlightenment,просвітлює
 EffectType,exchange,обміняти
-EffectType,extinguish spill,загасити
+EffectType,extinguish volatile,загасити
 EffectType,gain level,отримує рівень
 EffectType,gain skill,отримує вміння:
 EffectType,genocide,винищує
@@ -1061,7 +1057,7 @@ EffectType,lose skill,віднімає навичку
 EffectType,lose talent,віднімає талант
 EffectType,malnutrition,недоїдання
 EffectType,mapping,картографує
-EffectType,mobilise boulder,дозволити зрушення істостами
+EffectType,mobilise block,дозволити зрушення істостами
 EffectType,murder,вбиває:
 EffectType,nutrition,харчування
 EffectType,opening,відкривання
@@ -1072,21 +1068,20 @@ EffectType,raise dead,підіймає мерця
 EffectType,recall,відкликає
 EffectType,release,випустити
 EffectType,remove curse,знімає прокляття
-EffectType,remove spill,прибрати лужу
 EffectType,remove transient,знімає тимчасове
-EffectType,replicate asset,копіює цінність
+EffectType,replicate item,копіює цінність
 EffectType,restock,поновлює асортимент
 EffectType,restore ability,відновлює характеристику
 EffectType,rumour,чутка
 EffectType,sacrifice,приносить жертву
 EffectType,sanctify,освячує
 EffectType,searching,шукає
-EffectType,spawn character,породжує персонажа
+EffectType,spawn entity,породжує персонажа
 EffectType,steal,краде
 EffectType,summon entity,закликає істота
-EffectType,teleport asset,переміщує цінність
-EffectType,teleport away,телепортує геть
-EffectType,teleport character,переміщує персонажа
+EffectType,teleport entity,переміщує персонажа
+EffectType,teleport item,переміщує цінність
+EffectType,teleport item away,телепортує геть
 EffectType,tinning,консервує
 EffectType,transition,перехід
 EffectType,unafflict,знімає пороблене
@@ -3285,7 +3280,7 @@ LiteralText,DEMOTE,ПОНИЗИТИ
 LiteralText,depth,глибина
 LiteralText,DESCEND TO NEXT LEVEL,ВНИЗ НА НАСТУПНИЙ РІВЕНЬ
 LiteralText,destination,пункт призначення
-LiteralText,DESTROY,ЗНИЩИТИ
+LiteralText,destroy,знищити
 LiteralText,determined by player level,визначається рівнем гравця
 LiteralText,device,пристрій
 LiteralText,DEVICES,МЕХАНІЗМИ
