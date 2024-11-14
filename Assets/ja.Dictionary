@@ -1,7 +1,7 @@
 ﻿AfflictionDescription,Deadly venom courses through your veins.,強い毒が血管を巡りまわっている。
 AfflictionDescription,Something deeply unsettling is happening... down there.,かなりヤバいことになっている...　あそこが。
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,胃の奥がかじられているような感じがする。
-AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,このウイルス性の病気は脳の炎症を引き起こし、感染した動物を媒介として広がる。
+AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,脳の炎症を引き起こし、感染した動物を媒介として広がるウイルス性の病気。
 AfflictionDescription,You feel unclean and everything itches.,不潔感と全身の痒みを感じる。
 AfflictionDescription,You have a dreadful case of stomach acid.,胃酸がえげつない暴れ方をしている。
 AfflictionDescription,Your skin is sickly green and something is very wrong inside your stomach.,肌が病的な緑色になっていて、胃にかなりの違和感を覚える。
@@ -40,7 +40,7 @@ AppearanceDescription,A long cloak which is open in the front and fastened at th
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,ミスリル製の、短いが頑丈そうな鎖帷子。
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,ミスリル製の、細身で精巧に作られていそうな鎖帷子。
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,ミスリル製の、細身で光沢のある鎖帷子。
-AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,典型的な魔法使いのとんがり帽子。月と星の飾りがついている。
+AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,月と星の飾りがついた、典型的な魔法使いのとんがり帽子。
 AppearanceName,adamantine staff,アダマンタインの竿
 AppearanceName,agate ring,めのうの指輪
 AppearanceName,aluminium wand,アルミの棒
@@ -210,7 +210,7 @@ AppearanceName,magenta potion,マゼンタ色の液体の入った小瓶
 AppearanceName,maple wand,楓の棒
 AppearanceName,marble wand,大理石の棒
 AppearanceName,marker,マーカー
-AppearanceName,medallion amulet,金属のお守り
+AppearanceName,medallion amulet,円盤状のお守り
 AppearanceName,metal canister,金属の筒
 AppearanceName,metal pineapple,金属のパイナップル
 AppearanceName,metal slug,金属の小塊
@@ -223,8 +223,8 @@ AppearanceName,moonstone ring,月長石の指輪
 AppearanceName,mortar gun,臼のような銃
 AppearanceName,mottled book,まだら模様の本
 AppearanceName,mud boots,雨靴
-AppearanceName,muddy potion,濁った液体の入った小瓶
-AppearanceName,murky potion,濃黒の液体の入った小瓶
+AppearanceName,muddy potion,泥水のような液体の入った小瓶
+AppearanceName,murky potion,濁った液体の入った小瓶
 AppearanceName,mysterious gadget,謎の機械
 AppearanceName,oak wand,楢の棒
 AppearanceName,obsidian ring,黒曜石の指輪
@@ -330,7 +330,7 @@ AppearanceName,silver slug,銀の小塊
 AppearanceName,silver wand,銀の棒
 AppearanceName,single-edged polearm,片刃の長い武器
 AppearanceName,sky blue potion,水色の液体の入った小瓶
-AppearanceName,slippery cloak,滑るマント
+AppearanceName,slippery cloak,つるつるしたマント
 AppearanceName,small gun,小さい銃
 AppearanceName,smoky potion,煙色の液体の入った小瓶
 AppearanceName,snow boots,雪靴
@@ -388,7 +388,7 @@ AppearanceName,white coat,白いコート
 AppearanceName,white gem,白い宝石
 AppearanceName,white potion,白い液体の入った小瓶
 AppearanceName,wide book,幅広の本
-AppearanceName,winged missile,羽根付きのミサイル
+AppearanceName,winged missile,羽根付きの飛び道具
 AppearanceName,wire ring,細い指輪
 AppearanceName,wooden ring,木の指輪
 AppearanceName,wrinkled book,しわしわの本
@@ -425,7 +425,7 @@ AttackType,tentacle,触手
 AttackType,touch,触る
 AttackType,weapon,武器
 AttributeBad,clumsy,不器用
-AttributeBad,foolish,愚かな
+AttributeBad,foolish,物知らず
 AttributeBad,fragile,虚弱
 AttributeBad,repulsive,醜悪
 AttributeBad,stupid,愚鈍
@@ -488,7 +488,7 @@ BlockName,trophy,黄金像
 BlockName,wooden barrel,木樽
 BoonDescription,Ask for a unicorn to join your party.,ユニコーンが仲間になるよう頼んでもらう。
 BoonDescription,Bless one item in your inventory or on the ground.,所持品または足元のアイテム1つを祝福してもらう。
-BoonDescription,Brew a random potion into your bottle of water.,水の小瓶を何かの小瓶にしてもらう。
+BoonDescription,Brew a random potion into your bottle of water.,水の小瓶に何か他の液体を入れてもらう。
 BoonDescription,Butcher a corpse into an easy to carry container.,死体を缶詰にしてもらう。
 BoonDescription,Call upon the undead to fight for you.,あなたのために戦うアンデッドを呼んでもらう。
 BoonDescription,Convert one item into a random alternative of the same type.,アイテム1つを同じ種類の中から違うものに変えてもらう。
@@ -2119,7 +2119,7 @@ FormatText,levels {From}-{To},レベルの差 {From} から {To}
 FormatText,levels {Number}+,レベルの差 {Number}以上
 FormatText,LOCKED {GATENAME},{GATENAME}は施錠されている
 FormatText,not {EffectProperty},{EffectProperty}ではない
-FormatText,polymorph into {EntityNames},
+FormatText,polymorph into {EntityNames},{EntityNames}に変化
 FormatText,range {Dice},射程{Dice}
 FormatText,RANKED #{RankNumber},名誉の殿堂で{RankNumber}位に入りました！
 FormatText,replenish life from {Percent}%,ライフが{Percent}%以下の場合に全回復
@@ -2408,7 +2408,7 @@ ItemName,apple,リンゴ
 ItemName,aquamarine,アクアマリン
 ItemName,arrow,矢
 ItemName,assault rifle,アサルトライフル
-ItemName,athame,アサメ
+ItemName,athame,アサメイ
 ItemName,Aurigage,『オーリゲージ』
 ItemName,auto shotgun,オートショットガン
 ItemName,axe,斧
@@ -3125,7 +3125,7 @@ LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
 LiteralText,ADJUST,調整
-LiteralText,adventurer,
+LiteralText,adventurer,冒険者
 LiteralText,AFFLICTED,災難に苛まれている
 LiteralText,affliction?,災難?
 LiteralText,AFFLICTIONS,災難
@@ -3290,8 +3290,8 @@ LiteralText,determined by player level,プレイヤーのレベルによって�
 LiteralText,device,罠
 LiteralText,DEVICES,罠
 LiteralText,DIAGNOSTICS,詳細設定/ファイル管理
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,会話
+LiteralText,dialogue?,会話?
 LiteralText,DID NOT RANK,ランク入りしていません
 LiteralText,diet,食性
 LiteralText,difficulty,困難
@@ -3534,7 +3534,7 @@ LiteralText,non divined items,判別されていないアイテム
 LiteralText,non edible items,非食用アイテム
 LiteralText,non enchanted items,魔力付与されていないアイテム
 LiteralText,normal animations,描画の速さ：普通
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,今はダメだ！
 LiteralText,Nothing equipped or carried,装備品・所持品無し
 LiteralText,nothing happens,何も起こらない
 LiteralText,Nothing of interest,目ぼしいものは無い
@@ -3571,15 +3571,15 @@ LiteralText,platform,橋
 LiteralText,Play,プレーする
 LiteralText,Play a sound effect?,効果音を再生しますか？
 LiteralText,PLAYER,プレイヤー
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,アプリを強制的に終了すると、セーブファイルが破損して修復できなくなってしまう場合がありますのでご注意ください。
 LiteralText,Please offer any clarification,どんな状況かお知らせください。
 LiteralText,Please provide your feedback,ご意見をお寄せください
 LiteralText,Please rotate your device to landscape :-),デバイスを横向きにしてください:-)
 LiteralText,POLYMORPH,変化
-LiteralText,polymorph entity,
+LiteralText,polymorph entity,モンスターを変化させる
 LiteralText,Polymorph into what?,何に変化する？
-LiteralText,polymorph item,
-LiteralText,polymorph trap,
+LiteralText,polymorph item,アイテムを変化させる
+LiteralText,polymorph trap,罠を変化させる
 LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
 LiteralText,PORTALS,ポータル
@@ -3674,8 +3674,8 @@ LiteralText,secret,隠し扉
 LiteralText,SECRET,秘密の
 LiteralText,seed,シード
 LiteralText,SELECT ATMOSPHERE,環境音を選択
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,ペットのスキンを選択
+LiteralText,Select Hero Tile,プレイヤーのスキンを選択
 LiteralText,SELECT ITEM,アイテムを選択
 LiteralText,SELECT LANGUAGE,言語を選択する
 LiteralText,SELECT MAP,マップを選択
@@ -3742,7 +3742,7 @@ LiteralText,TAKE,取る
 LiteralText,TAKE ALL,全て取る
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
-LiteralText,TALK,
+LiteralText,TALK,話す
 LiteralText,TELEKINESIS,念動力
 LiteralText,Telekinesis which direction?,どの方向に念動力を使う？
 LiteralText,Telekinesis which object?,どの物体に念動力を使う？
@@ -3886,33 +3886,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地表の様子はどうかね？ここに降りてから長いこといるから、太陽や雨風が恋しいもんだ。
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,知ってるか？ここで売られてるものの半分は、おまえみたいな冒険者の遺品から来てるんだと。
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,みんなオークが侵略してくるって言ってるけど、そんなこと絶対起こらないんじゃないかな。
+ModuleDialogue,Goodbye.,さようなら。
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,このあたりは、それはもうノームが大量にいるそうだぞ？
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,説明するまでもないと思うが、鉱山に行く前につるはしを手に入れた方が良いぞ。鉄クズが十分あれば、作業台から作ることだってできるからな。
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",一体どうして冒険者どもは街のまわりで弓矢とかダガーとかバシバシ飛ばして知らん顏でいられるんだ。俺たちゃもうウンザリしてるから、例えうっかりでも住民に当たったりした日にゃタダじゃ済まさんぞ。
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",おまえたち冒険者は不吉の前兆に違いない！ロクデナシがひとり現れるたびに、俺たちは1ダースもの仲間を失っているんだぞ。
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,疲れたし足痛いし！こんな見回り早く終わらせて家で眠りたいよ。
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",ノーム鉱山の更に下にはドワーフの街があると聞く。臭くて小さい連中が多いのは好みではないし、行ってみたいとは思わないけどな。
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",洞窟では幻覚の壁に気を付けてくれ。ノームの魔法使いどもの仕業だけど、多すぎるし本当にやっかいだよ。
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,商人と取引して街の経済に貢献してくれよ！ただし腹の虫が鳴いてる時は足元を見られるからやめといた方がいいぞ。
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",光栄にも、各地から名の知れた強き英雄が現れることがある…。もし今日にでも見かけたら、おまえにも知らせよう。
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,道をあけろ！重要な見回りの最中だというのに、貴様ら冒険者どもはいつも俺の通り道を邪魔してくるんだな。
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",**『オラクル』**は、うろたえさせる程の悲しき表情をたたえ、無言で同情をあなたに向けている。||貴方の運命には*嫌悪を催す*なにかが待ち受けているに違いない。
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,ここでの食料はいいものじゃない。モンスターを狩ってて、街中には製作台があるんだ、分かるだろ？
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,鉱山を独りで進むのは危険だから、傭兵を雇うのも悪くない。ただし報酬を払えるうちしか信頼が置けないぞ。
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",街にある聖稜などでは、徳の高い者に恩恵をお与えになります。コインが余っていたらすぐにでも寄付しに行ってみませんか。貴方の旅に祝福あれ！
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",警備隊と商人ギルドは長期契約を結んでるんだ、変な気は起こすなよ。
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",街の下にある鉱山は宝石ラッシュの真っ只中さ。よくある安物ガラスじゃなくて、高価な宝石がゴロゴロしてるんだって。
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,街外れの洞窟には鉱山へつづく階段がある。降りたが最後、戻ってこれないかもしれないぞ。
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,わしはこの見回りが終わったら警備隊から引退するんじゃ。なにも異常がなければいいがの！
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",この街は、これから先の旅に向けた備えをするにはとてもよい場所です。まぁ慌てないで、ダンジョンの奥へ進む前にここで確認したり準備したり、やることはいろいろあるでしょう。
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",もし鉱山に入るのが初めてなら気をつけるんだな。不用心な冒険者は、あのコソコソしたノーム野郎どもの不意打ちにあうぞ。
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,街外れの洞窟にでも出かけてみたらどうかな？たくさんのアイテムを拾えるが、我々は街の外までは巡回しないからマズイことになったら自分で逃げ帰ってきたまえ。
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,どうか噴水で遊ぶのは止めてください。この制服を濡らすことは禁じられていまして、もし水が掛かったりしたら…あなたは間違いなく*一巻の終わり*です。
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",いいか、昔は俺もおまえのような冒険者だったが…おまえも定職に就いた方がいいんじゃないか？結局は*冒険者*なんて気取っても、ただの住所不定無職じゃないか。
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
@@ -3925,7 +3925,7 @@ ModuleTerm,Ant Lair,アリの棲み処
 ModuleTerm,Ant Nest,アリの巣穴
 ModuleTerm,Arena,闘技場
 ModuleTerm,attic,屋根裏
-ModuleTerm,Bigfoot,
+ModuleTerm,Bigfoot,ビッグフット
 ModuleTerm,Black Lair,ブラックドラゴンの棲み処
 ModuleTerm,Black Market,闇市場
 ModuleTerm,Blue Lair,ブルードラゴンの棲み処
@@ -4667,8 +4667,8 @@ SonicName,whistle,ホイッスル
 SonicName,woof,ワン！
 SonicName,write,書く
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,富と権力を謳歌しているが、皆からなぜ嫌われているのか考えが及んでいない。
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.",種族の中でも異常に小さく、すばしっこいが戦闘には向いていない。
-SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.",種族の中でも異常に図体が大きく、動きは鈍いが打たれ強い。
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.",異常に小さく、戦闘には向いていない。
+SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.",異常に図体が大きく、動きは鈍いが打たれ強い。
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",永久なる獣人の呪いをかけられた者たちで、恐るべき狼の姿に変化することができる。
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,生き血をすすり命を永らえている、忌み嫌われた生き物。
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,天性の超人的な感覚で通常知覚できないモンスターを見出すことができるが、代償として満たされることのない食欲に苦しんでいる。
@@ -4679,8 +4679,8 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",水の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,ほかの道楽や運動なんてそっちのけ、人生を学問に捧げてきた本の虫。
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,こじらせた主人公補正に頼って生きてきたが、その運命は厳しい現実にさらされることになる。
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",位置が不確定で、同時にどこへでも存在することが普通になっている。
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,エネルギーを反射し光を屈折させる生きたガラスから削りだされた。オリジナルのモンスターを完璧に模倣しているが、繊細である。
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",位置が不確定で、彼らにとって同時にどこへでも存在することは当たり前のことだ。
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,エネルギーを反射する生きたガラスから削りだされた。オリジナルのモンスターを完璧に模倣しているが、繊細である。
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.",本来なくてはならない血肉を持たずしてなぜか生きている、この奇怪な存在には幾分かの長所がある。
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,常習的な飲酒は冒険者を厚かましく、やや不用心にさせる。アルファベットを逆順に言うなんてできないだろう。
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.",無実かそうでないかに関わらず、その罪から逃れるのに必死だ。
