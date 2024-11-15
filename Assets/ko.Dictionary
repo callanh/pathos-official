@@ -956,14 +956,11 @@ DietName,metalivore,금속식성
 DietName,omnivore,잡식성
 DietName,organivore,자연식성
 DietName,xylophagy,목식성
-EffectProperty,afflictions,감염
 EffectProperty,all kind,전 종류
-EffectProperty,blocks,블록
 EffectProperty,break ally loyalty,동료관계 제거
 EffectProperty,carried,소지중
 EffectProperty,constructed,건축된
 EffectProperty,destruction,파괴
-EffectProperty,devices,장치들
 EffectProperty,disenchant,강화해제
 EffectProperty,entities,개체들
 EffectProperty,equipment,장비
@@ -977,17 +974,14 @@ EffectProperty,kinds,종류
 EffectProperty,lies,거짓
 EffectProperty,loyal only,동료관계만
 EffectProperty,material,재질
-EffectProperty,materials,물질
 EffectProperty,polite,공손한
 EffectProperty,properties,특성들
-EffectProperty,punishments,형벌
 EffectProperty,random experience,무작위 경험치
 EffectProperty,random points,무작위 포인트
 EffectProperty,remove random resistance,무작위 내성 제거
 EffectProperty,remove random talent,무작위 재능 제거
 EffectProperty,removes all transients,모든 일시적인 효과 해제
 EffectProperty,reset random equipment,무작위 장비 초기화
-EffectProperty,reveal,밝힘
 EffectProperty,rigid,단단한
 EffectProperty,sanctity,신성함
 EffectProperty,skills,숙련도
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,감염 해제
 EffectProperty,unpolymorphs,폴리모프 해제
 EffectProperty,unpunishes,형벌 해제
 EffectProperty,whole stack,전체 아이템
-EffectType,afflict,감염
 EffectType,alert,경계
 EffectType,amnesia,망각
 EffectType,area transient,범위 효과
@@ -1030,15 +1023,12 @@ EffectType,create volatile,휘발성 물질 생성
 EffectType,decapitate,참수
 EffectType,destroy item,아이템 파괴
 EffectType,destroy volatile,휘발성 물질 제거
-EffectType,detect,감지
 EffectType,devour item,재산 몰수
 EffectType,disarm,무장해제
-EffectType,divine,점술
 EffectType,drain life,체력 흡수
 EffectType,drain mana,마나 흡수
 EffectType,enchant item,아이템 강화
 EffectType,engulf,삼키기
-EffectType,enlightenment,깨달음
 EffectType,exchange,교환
 EffectType,extinguish volatile,휘발성 물질 증발
 EffectType,gain level,레벨 증가
@@ -1055,17 +1045,13 @@ EffectType,liberate,해방
 EffectType,locking,잠금
 EffectType,lose skill,스킬 손실
 EffectType,lose talent,재능 손실
-EffectType,malnutrition,영양 손실
 EffectType,mapping,매핑
 EffectType,mobilise block,이동가능한 바위
 EffectType,murder,살해
-EffectType,nutrition,영양 섭취
 EffectType,opening,개방
 EffectType,pacify,진정
 EffectType,place curse,저주 부여
-EffectType,punish,형벌
 EffectType,raise dead,부활
-EffectType,recall,소환
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
 EffectType,remove transient,일시적인 효과 제거
@@ -1091,7 +1077,6 @@ EffectType,unstuck,탈출
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
-EffectType,vomit,구토
 EffectType,warping,워프
 EggName,black dragon,블랙 드래곤
 EggName,blue dragon,블루 드래곤
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,레벨 추가
 LiteralText,Add new adventurer,새로운 모험가 추가
 LiteralText,ADJUST,조절
 LiteralText,adventurer,
+LiteralText,afflict,감염
 LiteralText,AFFLICTED,감염됨
 LiteralText,affliction?,감염?
 LiteralText,AFFLICTIONS,감염
@@ -3279,6 +3265,7 @@ LiteralText,depth,층
 LiteralText,DESCEND TO NEXT LEVEL,다음 층으로 내려감
 LiteralText,destination,목적지
 LiteralText,destroy,파괴
+LiteralText,detect,감지
 LiteralText,determined by player level,플레이어 레벨에 따라 정해짐
 LiteralText,device,장치
 LiteralText,DEVICES,장치
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,스페이스바 실시간 토글 �
 LiteralText,Disable swipe gestures,스와이프 비활성화
 LiteralText,DISCONNECT,연결해제
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,연결이 끊겼습니다. 네트워크에 연결되어 있는지 확인하시고 모든 기기에 동일한 버전의 Pathos가 설치되어 있는지 확인하세요.
+LiteralText,discover item,깨달음
 LiteralText,Discuss on Reddit,레딧에서 의논하기.
 LiteralText,dismantle items to extract the base materials and raw essence,아이템을 분해해서 원료와 정수를 추출하세요.
 LiteralText,DISMISS,취소
 LiteralText,DISMOUNT,내리기
 LiteralText,Dismount which direction?,어느 방향으로 내립니까?
 LiteralText,Display dice rolls in the help,도움말에 주사위 값 표시
+LiteralText,divine item,점술
 LiteralText,DIVINED,점침
 LiteralText,divined items,점술 받은 아이템
 LiteralText,Do you want to save or quit this adventure?,이 모험을 저장하거나 끝내시겠습니까?
@@ -3380,9 +3369,10 @@ LiteralText,fright,공포
 LiteralText,fumbling,실수
 LiteralText,GAIN KARMA,카르마 획득
 LiteralText,GAIN LEVEL,레벨 획득
-LiteralText,GAIN NUTRITION,영양분 획득
+LiteralText,gain nutrition,영양분 획득
 LiteralText,gain skill,숙련도 획득
 LiteralText,gate,게이트
+LiteralText,gates,
 LiteralText,gather,모이다
 LiteralText,gender,성별
 LiteralText,genocide,학살
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
 LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
-LiteralText,insulation,절연
 LiteralText,Inventory,인벤토리
 LiteralText,INVENTORY,인벤토리
 LiteralText,ITEM,아이템
@@ -3480,7 +3469,7 @@ LiteralText,loot,전리품
 LiteralText,LOOT,전리품
 LiteralText,LOSE KARMA,카르마 손실
 LiteralText,LOSE LEVEL,레벨 손실
-LiteralText,LOSE NUTRITION,영앙분 손실
+LiteralText,lose nutrition,영앙분 손실
 LiteralText,lose skill,숙련도 손실
 LiteralText,LOW MANA,마나 부족
 LiteralText,MAIN WIELD,주무장
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,마나는 당
 LiteralText,Map,지도
 LiteralText,MAP,지도
 LiteralText,material,물질
+LiteralText,materials,물질
 LiteralText,melting,녹고있는
 LiteralText,MENU,메뉴
 LiteralText,mercenary,용병
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,죄수
 LiteralText,probability,확률
 LiteralText,PROMOTE,진급
 LiteralText,PROPERTIES,특성
+LiteralText,punish,형벌
 LiteralText,PUNISHED,형벌받음
 LiteralText,punishment?,형벌?
 LiteralText,PUNISHMENTS,형벌
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,책을 읽어서 주문을 배우세요.
 LiteralText,READ!,읽기!
 LiteralText,REALLY CRASH?,정말 부수나요?
 LiteralText,REAL-TIME,실시간
+LiteralText,recall party,소환
 LiteralText,RE-CAST,주문 재시전
 LiteralText,Recommend Pathos,Pathos 추천하기
 LiteralText,Redo,다시 하기
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
 LiteralText,VOLATILES,휘발성 물질
+LiteralText,vomit,구토
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?

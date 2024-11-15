@@ -956,14 +956,11 @@ DietName,metalivore,fémevő
 DietName,omnivore,mindenevő
 DietName,organivore,organikus élelemmel táplálkozó
 DietName,xylophagy,faevő
-EffectProperty,afflictions,csapás
 EffectProperty,all kind,mindenfajta
-EffectProperty,blocks,akadályok
 EffectProperty,break ally loyalty,szövetségesi lojalitás megtörése
 EffectProperty,carried,hordozta
 EffectProperty,constructed,megépített
 EffectProperty,destruction,pusztítás
-EffectProperty,devices,eszközök
 EffectProperty,disenchant,levétel
 EffectProperty,entities,entitások
 EffectProperty,equipment,felszerelés
@@ -977,17 +974,14 @@ EffectProperty,kinds,fajták
 EffectProperty,lies,hazugságok
 EffectProperty,loyal only,
 EffectProperty,material,anyag
-EffectProperty,materials,anyagok
 EffectProperty,polite,illedelmes
 EffectProperty,properties,tulajdonságok
-EffectProperty,punishments,büntetések
 EffectProperty,random experience,véletlenszerű tapasztalat
 EffectProperty,random points,véletlenszerű pontok
 EffectProperty,remove random resistance,véletlenszerű ellenállás eltávolítása
 EffectProperty,remove random talent,véletlenszerű készség eltávolítása
 EffectProperty,removes all transients,összes átmeneti hatás eltávolítása
 EffectProperty,reset random equipment,véletlenszerű felszerelés visszaállítása
-EffectProperty,reveal,felfed
 EffectProperty,rigid,szilárd
 EffectProperty,sanctity,szentség
 EffectProperty,skills,képességek
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,tisztít
 EffectProperty,unpolymorphs,visszaváltozás
 EffectProperty,unpunishes,büntetéseltávolítás
 EffectProperty,whole stack,egész halom
-EffectType,afflict,lesújtás
 EffectType,alert,riasztás
 EffectType,amnesia,amnézia
 EffectType,area transient,területi hatás
@@ -1030,15 +1023,12 @@ EffectType,create volatile,
 EffectType,decapitate,lefejezés
 EffectType,destroy item,eszköz elpusztítása
 EffectType,destroy volatile,
-EffectType,detect,észlelés
 EffectType,devour item,eszköz felfalása
 EffectType,disarm,lefegyverzés
-EffectType,divine,megfejtés
 EffectType,drain life,életelszívás
 EffectType,drain mana,manaelszívás
 EffectType,enchant item,eszköz igézése
 EffectType,engulf,elnyelés
-EffectType,enlightenment,felvilágosodás
 EffectType,exchange,kicserél
 EffectType,extinguish volatile,
 EffectType,gain level,szint megszerzése
@@ -1055,17 +1045,13 @@ EffectType,liberate,felszabadítás
 EffectType,locking,zárás
 EffectType,lose skill,képesség elvesztése
 EffectType,lose talent,készség elvesztése
-EffectType,malnutrition,alultápláltság
 EffectType,mapping,feltérképezés
 EffectType,mobilise block,
 EffectType,murder,gyilkosság
-EffectType,nutrition,táplálás
 EffectType,opening,kinyitás
 EffectType,pacify,nyugtatás
 EffectType,place curse,megátkozás
-EffectType,punish,büntetés
 EffectType,raise dead,halott-támasztás
-EffectType,recall,visszahívás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
 EffectType,remove transient,átmeneti hatás eltávolítása
@@ -1091,7 +1077,6 @@ EffectType,unstuck,
 EffectType,visit shop,bolt meglátogatása
 EffectType,visit shrine,szentély meglátogatása
 EffectType,visit zoo,terem meglátogatása
-EffectType,vomit,
 EffectType,warping,eltévelyedés
 EggName,black dragon,feketesárkány
 EggName,blue dragon,kéksárkány
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
 LiteralText,Add new adventurer,Új kalandor hozzáadása
 LiteralText,ADJUST,BEÁLLÍT
 LiteralText,adventurer,
+LiteralText,afflict,lesújtás
 LiteralText,AFFLICTED,SZENVEDŐ
 LiteralText,affliction?,csapás?
 LiteralText,AFFLICTIONS,CSAPÁSOK
@@ -3279,6 +3265,7 @@ LiteralText,depth,mélység
 LiteralText,DESCEND TO NEXT LEVEL,LEERESZKEDÉS A KÖVETKEZŐ SZINTRE
 LiteralText,destination,úti cél
 LiteralText,destroy,elpusztítás
+LiteralText,detect,észlelés
 LiteralText,determined by player level,a játékos szintje határozza meg
 LiteralText,device,eszköz
 LiteralText,DEVICES,ESZKÖZÖK
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,A szóköz billentyűvel történ�
 LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,SZÉTKAPCSOL
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
+LiteralText,discover item,felvilágosodás
 LiteralText,Discuss on Reddit,Beszélgess a Redditen
 LiteralText,dismantle items to extract the base materials and raw essence,"bonts szét tárgyakat, hogy kinyerd alapanyagaikat és nyers esszenciájukat"
 LiteralText,DISMISS,ELUTASÍT
 LiteralText,DISMOUNT,LESZÁLL
 LiteralText,Dismount which direction?,Melyik irányba szeretnél leszállni?
 LiteralText,Display dice rolls in the help,Kockadobás mutatása a súgóban
+LiteralText,divine item,megfejtés
 LiteralText,DIVINED,MEGFEJTETT
 LiteralText,divined items,megfejtett tárgyak
 LiteralText,Do you want to save or quit this adventure?,Elmenteni vagy befejezni szeretnéd ezt a kalandot?
@@ -3380,9 +3369,10 @@ LiteralText,fright,rémület
 LiteralText,fumbling,ügyetlenség
 LiteralText,GAIN KARMA,KARMA MEGSZERZÉSE
 LiteralText,GAIN LEVEL,SZINTE MEGSZERZÉSE
-LiteralText,GAIN NUTRITION,TÁPANYAG MEGSZERZÉSE
+LiteralText,gain nutrition,tápanyag megszerzése
 LiteralText,gain skill,képesség megszerzése
 LiteralText,gate,kapu
+LiteralText,gates,
 LiteralText,gather,összegyűjt
 LiteralText,gender,nem
 LiteralText,genocide,népirtás
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
-LiteralText,insulation,szigetelés
 LiteralText,Inventory,Leltár
 LiteralText,INVENTORY,LELTÁR
 LiteralText,ITEM,TÁRGY
@@ -3480,7 +3469,7 @@ LiteralText,loot,zsákmány
 LiteralText,LOOT,ZSÁKMÁNY
 LiteralText,LOSE KARMA,KARMA ELVESZTÉSE
 LiteralText,LOSE LEVEL,SZINT ELVESZTÉSE
-LiteralText,LOSE NUTRITION,TÁPANYAG ELVESZTÉSE
+LiteralText,lose nutrition,tápanyag elvesztése
 LiteralText,lose skill,képesség elvesztése
 LiteralText,LOW MANA,ALACSONY MANA
 LiteralText,MAIN WIELD,ELSŐDLEGES
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,A mana a var�
 LiteralText,Map,Térkép
 LiteralText,MAP,TÉRKÉP
 LiteralText,material,anyag
+LiteralText,materials,anyagok
 LiteralText,melting,
 LiteralText,MENU,MENÜ
 LiteralText,mercenary,zsoldos
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,fogoly
 LiteralText,probability,valószínűség
 LiteralText,PROMOTE,ELŐLÉPTETÉS
 LiteralText,PROPERTIES,TULAJDONSÁGOK
+LiteralText,punish,büntetés
 LiteralText,PUNISHED,BÖNTETETT
 LiteralText,punishment?,büntetés?
 LiteralText,PUNISHMENTS,BÜNTETÉSEK
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,A varázslatok megtanulásához olvass k�
 LiteralText,READ!,OLVAS!
 LiteralText,REALLY CRASH?,BIZTOS ÖSSZEZÚZOD?
 LiteralText,REAL-TIME,VALÓS IDEJŰ
+LiteralText,recall party,visszahívás
 LiteralText,RE-CAST,ÚJRAVARÁZSLÁS
 LiteralText,Recommend Pathos,Pathos ajánlása
 LiteralText,Redo,Visszaállít
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
 LiteralText,VOLATILES,
+LiteralText,vomit,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?

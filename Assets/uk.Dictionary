@@ -956,14 +956,11 @@ DietName,metalivore,металоїдна
 DietName,omnivore,всеїдна
 DietName,organivore,деревоїдна
 DietName,xylophagy,древоядний
-EffectProperty,afflictions,пороблено
 EffectProperty,all kind,всі види
-EffectProperty,blocks,блоки
 EffectProperty,break ally loyalty,розриває лояльність помічника
 EffectProperty,carried,що її несе
 EffectProperty,constructed,рукотворне
 EffectProperty,destruction,знищення
-EffectProperty,devices,пристрої
 EffectProperty,disenchant,расколдовивает
 EffectProperty,entities,сутності
 EffectProperty,equipment,спорядження
@@ -977,17 +974,14 @@ EffectProperty,kinds,види
 EffectProperty,lies,брехня
 EffectProperty,loyal only,лише якщо вірний
 EffectProperty,material,матеріал
-EffectProperty,materials,матеріали
 EffectProperty,polite,ввічливе
 EffectProperty,properties,властивості
-EffectProperty,punishments,покарання
 EffectProperty,random experience,випадковий досвід
 EffectProperty,random points,очок випадкового вміння
 EffectProperty,remove random resistance,прибирає випадкову стійкість
 EffectProperty,remove random talent,прибирає випадковий талант
 EffectProperty,removes all transients,знімає всі тимчасові
 EffectProperty,reset random equipment,обнулює випадкове спорядження
-EffectProperty,reveal,розкрити
 EffectProperty,rigid,нерушимий
 EffectProperty,sanctity,недоторканість
 EffectProperty,skills,навички
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,знимає пороблене
 EffectProperty,unpolymorphs,знімає перетворення
 EffectProperty,unpunishes,знімає покарання
 EffectProperty,whole stack,заповнити повністю
-EffectType,afflict,пороблено
 EffectType,alert,тривога
 EffectType,amnesia,амнезія
 EffectType,area transient,область тимчасово
@@ -1030,15 +1023,12 @@ EffectType,create volatile,створює лужу
 EffectType,decapitate,обезголовує
 EffectType,destroy item,знищує цінність
 EffectType,destroy volatile,прибрати лужу
-EffectType,detect,визначає:
 EffectType,devour item,зжерти цінність
 EffectType,disarm,розряджає
-EffectType,divine,пророкує
 EffectType,drain life,витягує життя
 EffectType,drain mana,витягує ману
 EffectType,enchant item,заклинає цінність
 EffectType,engulf,проковтує
-EffectType,enlightenment,просвітлює
 EffectType,exchange,обміняти
 EffectType,extinguish volatile,загасити
 EffectType,gain level,отримує рівень
@@ -1055,17 +1045,13 @@ EffectType,liberate,звільняє
 EffectType,locking,замикає
 EffectType,lose skill,віднімає навичку
 EffectType,lose talent,віднімає талант
-EffectType,malnutrition,недоїдання
 EffectType,mapping,картографує
 EffectType,mobilise block,дозволити зрушення істостами
 EffectType,murder,вбиває:
-EffectType,nutrition,харчування
 EffectType,opening,відкривання
 EffectType,pacify,вмиротворює
 EffectType,place curse,накладає прокляття
-EffectType,punish,карає
 EffectType,raise dead,підіймає мерця
-EffectType,recall,відкликає
 EffectType,release,випустити
 EffectType,remove curse,знімає прокляття
 EffectType,remove transient,знімає тимчасове
@@ -1091,7 +1077,6 @@ EffectType,unstuck,вибратись
 EffectType,visit shop,відвідати крамницю
 EffectType,visit shrine,відвідати святилище
 EffectType,visit zoo,відвідати зоопарк
-EffectType,vomit,блює
 EffectType,warping,скручує
 EggName,black dragon,чорний дракон
 EggName,blue dragon,синій дракон
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,ДОДАТИ РІВЕНЬ
 LiteralText,Add new adventurer,Додати ще гравця
 LiteralText,ADJUST,НАЛАШТУВАННЯ
 LiteralText,adventurer,
+LiteralText,afflict,пороблено
 LiteralText,AFFLICTED,СТРАЖДЕННИЙ
 LiteralText,affliction?,страждання?
 LiteralText,AFFLICTIONS,ПОРОБЛЕНО
@@ -3279,6 +3265,7 @@ LiteralText,depth,глибина
 LiteralText,DESCEND TO NEXT LEVEL,ВНИЗ НА НАСТУПНИЙ РІВЕНЬ
 LiteralText,destination,пункт призначення
 LiteralText,destroy,знищити
+LiteralText,detect,визначає:
 LiteralText,determined by player level,визначається рівнем гравця
 LiteralText,device,пристрій
 LiteralText,DEVICES,МЕХАНІЗМИ
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,Вимкнути перемика�
 LiteralText,Disable swipe gestures,Вимкнути керування жестами
 LiteralText,DISCONNECT,ВІД’ЄДНАТИСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Виявлено роз'єднання. Будь ласка, переконайтеся, що у вас надійне мережеве з'єднання і всі пристрої використовують однакову версію Pathos."
+LiteralText,discover item,просвітлює
 LiteralText,Discuss on Reddit,Обговорюйте на Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,витяг з предметів основних матеріалів і есенцій
 LiteralText,DISMISS,ВИГНАТИ
 LiteralText,DISMOUNT,зпішитися
 LiteralText,Dismount which direction?,В який бік спішитися?
 LiteralText,Display dice rolls in the help,Показувати кидання кубікив в довідці
+LiteralText,divine item,пророкує
 LiteralText,DIVINED,ДУХОВНІСТЬ ВИЗНАЧЕНО
 LiteralText,divined items,визначена духовність речей
 LiteralText,Do you want to save or quit this adventure?,Ви бажаєте зберегти або закінчити гру?
@@ -3380,9 +3369,10 @@ LiteralText,fright,переляк
 LiteralText,fumbling,незручність
 LiteralText,GAIN KARMA,ЗБІЛЬШИТИ КАРМУ
 LiteralText,GAIN LEVEL,ПІДВИЩИТИ РІВЕНЬ
-LiteralText,GAIN NUTRITION,ПІДВИЩИТИ СИТІСТЬ
+LiteralText,gain nutrition,підвищити ситість
 LiteralText,gain skill,отримати вміння
 LiteralText,gate,ворота
+LiteralText,gates,
 LiteralText,gather,зібрати
 LiteralText,gender,пол
 LiteralText,genocide,геноцид
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,ПІДПИСАТИ ПРЕДМЕТ
 LiteralText,inscription?,підпис?
 LiteralText,instruct each character,командувати кожним персонажем
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТНЬО ЗОЛОТA
-LiteralText,insulation,ізоляція
 LiteralText,Inventory,Інвентар
 LiteralText,INVENTORY,ІНВЕНТАР
 LiteralText,ITEM,ПРЕДМЕТ
@@ -3480,7 +3469,7 @@ LiteralText,loot,здобич
 LiteralText,LOOT,ЗДОБИЧ
 LiteralText,LOSE KARMA,ВТРАТИТИ КАРМУ
 LiteralText,LOSE LEVEL,знизити рівень
-LiteralText,LOSE NUTRITION,знизився ситністю
+LiteralText,lose nutrition,знизився ситністю
 LiteralText,lose skill,втратити вміння
 LiteralText,LOW MANA,МАЛО мани
 LiteralText,MAIN WIELD,В ОСНОВНУ РУКУ
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,Мана пр
 LiteralText,Map,Мапа
 LiteralText,MAP,МАПА
 LiteralText,material,матеріал
+LiteralText,materials,матеріали
 LiteralText,melting,плавлення
 LiteralText,MENU,МЕНЮ
 LiteralText,mercenary,найманці
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,в'язень
 LiteralText,probability,ймовірність:
 LiteralText,PROMOTE,ПІДВИЩИТИ
 LiteralText,PROPERTIES,ВЛАСТИВОСТІ
+LiteralText,punish,карає
 LiteralText,PUNISHED,ПОКАРАНИЙ
 LiteralText,punishment?,покарання?
 LiteralText,PUNISHMENTS,ПОКАРАННЯ
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Читай книги для вивчен
 LiteralText,READ!,ЧИТАТИ!
 LiteralText,REALLY CRASH?,ДІЙСНО ЗЛАМАТИ?
 LiteralText,REAL-TIME,РЕАЛЬНИЙ ЧАС
+LiteralText,recall party,відкликає
 LiteralText,RE-CAST,ПОВТОР ЗАКЛИНАННЯ
 LiteralText,Recommend Pathos,Порекомендуйте Pathos
 LiteralText,Redo,Повернути назад
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,ОГЛЯД
 LiteralText,Visit the website,Відвідайте вебсайт
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
 LiteralText,VOLATILES,ЛЕТКІ
+LiteralText,vomit,блює
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
 LiteralText,Wait how many turns?,Чекати скільки ходів?

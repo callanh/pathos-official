@@ -426,9 +426,9 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
-              B => B.DetectItem(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
-              U => U.DetectItem(Range.Sq15, Materials.gold, Materials.gemstone),
-              C => C.DetectItem(Range.Sq10, Materials.gold)
+              B => B.DetectMaterial(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
+              U => U.DetectMaterial(Range.Sq15, Materials.gold, Materials.gemstone),
+              C => C.DetectMaterial(Range.Sq10, Materials.gold)
             ),
             S => S.DestroyCarriedItem(Dice.One, null, null, new[] { Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine })
           );
@@ -695,7 +695,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates()
              .SetAudibility(5);
-          Use.Apply.Malnutrition(Dice.Fixed(100));
+          Use.Apply.LoseNutrition(Dice.Fixed(100));
           Use.Apply.WithSourceSanctity
           (
             B => B.AreaTransient(Properties.blindness, 4.d6() + 4),
@@ -708,7 +708,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates()
              .SetAudibility(5);
-          Use.Apply.Malnutrition(Dice.Fixed(100));
+          Use.Apply.LoseNutrition(Dice.Fixed(100));
           Use.Apply.Light(true, Locality.Area);
           Use.Apply.WithSourceSanctity
           (
@@ -722,7 +722,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates()
              .SetAudibility(1);
-          Use.Apply.Malnutrition(Dice.Fixed(100));
+          Use.Apply.LoseNutrition(Dice.Fixed(100));
           Use.Apply.WithSourceSanctity
           (
             B => B.Mapping(Range.Sq20, Chance.Always),
@@ -782,7 +782,7 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.Nutrition(5.d100());
+                    A.GainNutrition(5.d100());
                     A.ApplyTransient(Properties.slow_digestion, 5.d100());
                     A.ApplyTransient(Properties.life_regeneration, 5.d100());
                     A.ApplyTransient(Properties.mana_regeneration, 5.d100());
@@ -809,7 +809,7 @@ namespace Pathos
                   Table.Add(10, A =>
                   {
                     A.Light(true, Locality.Area);
-                    A.DetectTrap(Range.Sq20);
+                    A.DetectGate(Range.Sq20);
                   });
                   Table.Add(10, A =>
                   {
@@ -6142,19 +6142,19 @@ namespace Pathos
           (
             B =>
             {
-              B.Nutrition(Dice.Fixed(30));
+              B.GainNutrition(Dice.Fixed(30));
               B.RemoveTransient(Properties.fear);
               B.ApplyTransient(Properties.inebriation, 1.d10() + 10); // briefly drunk
             },
             U =>
             {
-              U.Nutrition(Dice.Fixed(20));
+              U.GainNutrition(Dice.Fixed(20));
               U.RemoveTransient(Properties.fear);
               U.ApplyTransient(Properties.inebriation, 1.d50() + 50); // a bit drunk.
             },
             C =>
             {
-              C.Nutrition(Dice.Fixed(10));
+              C.GainNutrition(Dice.Fixed(10));
               C.ApplyTransient(Properties.inebriation, 1.d100() + 100); // a lot drunk
               C.ApplyTransient(Properties.fainting, 3.d6()); // black out.
             }
@@ -6368,11 +6368,11 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Nutrition(Dice.Fixed(200)),
-            U => U.Nutrition(Dice.Fixed(100)),
+            B => B.GainNutrition(Dice.Fixed(200)),
+            U => U.GainNutrition(Dice.Fixed(100)),
             C =>
             {
-              C.Malnutrition(Dice.Fixed(50));
+              C.LoseNutrition(Dice.Fixed(50));
               C.ApplyTransient(Properties.sickness, 4.d6()); // minor sickness
             }
           );
@@ -6727,9 +6727,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Nutrition(Dice.Fixed(+50)),
-            U => U.Nutrition(Dice.Fixed(+10)),
-            C => C.Malnutrition(Dice.Fixed(+50))
+            B => B.GainNutrition(Dice.Fixed(+50)),
+            U => U.GainNutrition(Dice.Fixed(+10)),
+            C => C.LoseNutrition(Dice.Fixed(+50))
           );
         });
         I.AddDiscoverUse(Motions.refill, Delay.FromTurns(30), Sonics.quaff, Use =>
@@ -6767,9 +6767,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Nutrition(Dice.Fixed(+50)),
-            U => U.Nutrition(Dice.Fixed(+10)),
-            C => C.Malnutrition(Dice.Fixed(+50))
+            B => B.GainNutrition(Dice.Fixed(+50)),
+            U => U.GainNutrition(Dice.Fixed(+10)),
+            C => C.LoseNutrition(Dice.Fixed(+50))
           );
         });
         I.AddDiscoverUse(Motions.refill, Delay.FromTurns(30), Sonics.quaff, Use =>
@@ -7092,9 +7092,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Nutrition(Dice.Fixed(20)),
-            U => U.Nutrition(Dice.Fixed(10)),
-            C => C.Malnutrition(Dice.Fixed(10))
+            B => B.GainNutrition(Dice.Fixed(20)),
+            U => U.GainNutrition(Dice.Fixed(10)),
+            C => C.LoseNutrition(Dice.Fixed(10))
           );
         });
         I.AddDiscoverUse(Motions.anoint, Delay.FromTurns(10), Sonics.magic, Use =>
@@ -7446,7 +7446,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 15, Delay.FromTurns(10), Sonics.ring, A =>
         {
           A.MajorProperty(Properties.hunger);
-          A.Malnutrition(Dice.Fixed(500));
+          A.LoseNutrition(Dice.Fixed(500));
         });
         I.SetWeakness(RingWeakness);
         I.DefaultSanctity = Sanctities.Cursed;
@@ -8590,7 +8590,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Nutrition(Dice.Fixed(100));
+          A.GainNutrition(Dice.Fixed(100));
           A.WhenChance(Chance.OneIn2, T => T.PolymorphEntity(Entities.water_elemental), E => E.PolymorphEntity(Entities.steam_vortex));
         });
       });
@@ -8627,7 +8627,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Nutrition(Dice.Fixed(+1000));
+          A.GainNutrition(Dice.Fixed(+1000));
         });
       });
 
@@ -8728,8 +8728,8 @@ namespace Pathos
             T => T.DetectTrap(Range.Sq15),
             E => E.WithSourceSanctity
             (
-              B => B.DetectItem(Range.Sq20, Materials.gold),
-              U => U.DetectItem(Range.Sq15, Materials.gold),
+              B => B.DetectMaterial(Range.Sq20, Materials.gold),
+              U => U.DetectMaterial(Range.Sq15, Materials.gold),
               C => C.DestroyOwnedItem(4.d10() + 10, null, null, new[] { Materials.gold })
             )
           );
@@ -9871,12 +9871,12 @@ namespace Pathos
               F.CreateTrap(Codex.Devices.pit, Destruction: true);
               F.WithSourceSanctity
               (
-                B => B.Shout(A =>
+                B => B.Shout(Dice.Fixed(10), A =>
                 {
                   A.ApplyTransient(Properties.deafness, 1.d20() + 20);
                   A.ApplyTransient(Properties.stunned, 1.d5() + 5);
                 }),
-                U => U.Shout(A => A.ApplyTransient(Properties.deafness, 1.d10() + 10)),
+                U => U.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 1.d10() + 10)),
                 C => C.ApplyTransient(Properties.deafness, 2.d10() + 10) // deafen yourself
               );
             }

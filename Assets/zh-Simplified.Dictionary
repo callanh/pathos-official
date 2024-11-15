@@ -956,14 +956,11 @@ DietName,metalivore,金属食性
 DietName,omnivore,杂食性
 DietName,organivore,有机食品食性
 DietName,xylophagy,木食性
-EffectProperty,afflictions,感染
 EffectProperty,all kind,所有种类
-EffectProperty,blocks,阻挡
 EffectProperty,break ally loyalty,破坏盟友关系
 EffectProperty,carried,携带
 EffectProperty,constructed,创造
 EffectProperty,destruction,破坏墙壁
-EffectProperty,devices,装置
 EffectProperty,disenchant,去附魔
 EffectProperty,entities,生物
 EffectProperty,equipment,装备
@@ -977,17 +974,14 @@ EffectProperty,kinds,种类
 EffectProperty,lies,假流言
 EffectProperty,loyal only,保留盟友关系
 EffectProperty,material,材料
-EffectProperty,materials,材料
 EffectProperty,polite,友善
-EffectProperty,properties,状态
-EffectProperty,punishments,惩罚
+EffectProperty,properties,
 EffectProperty,random experience,随机经验
 EffectProperty,random points,随机分数
 EffectProperty,remove random resistance,移除随机抗性
 EffectProperty,remove random talent,移除随机天赋
 EffectProperty,removes all transients,去除所有短期状态
 EffectProperty,reset random equipment,重设随机装备
-EffectProperty,reveal,揭露
 EffectProperty,rigid,坚硬
 EffectProperty,sanctity,神圣性
 EffectProperty,skills,专精
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,取消感染
 EffectProperty,unpolymorphs,取消变形
 EffectProperty,unpunishes,取消惩罚
 EffectProperty,whole stack,整堆
-EffectType,afflict,感染
 EffectType,alert,警觉
 EffectType,amnesia,失忆
 EffectType,area transient,范围短期状态
@@ -1030,15 +1023,12 @@ EffectType,create volatile,制造环境效果
 EffectType,decapitate,斩首
 EffectType,destroy item,摧毁物件
 EffectType,destroy volatile,移除环境效果
-EffectType,detect,侦测
 EffectType,devour item,吞食物品
 EffectType,disarm,缴械
-EffectType,divine,检测祝福/诅咒
 EffectType,drain life,吸取生命
 EffectType,drain mana,吸取魔力
 EffectType,enchant item,附魔物件
 EffectType,engulf,吞咽
-EffectType,enlightenment,启蒙
 EffectType,exchange,交换
 EffectType,extinguish volatile,消除环境效果
 EffectType,gain level,升级
@@ -1055,17 +1045,13 @@ EffectType,liberate,解放
 EffectType,locking,锁住
 EffectType,lose skill,失去技能
 EffectType,lose talent,失去天赋
-EffectType,malnutrition,降低营养
 EffectType,mapping,地图绘制
 EffectType,mobilise block,移动巨石
 EffectType,murder,秒杀
-EffectType,nutrition,营养
 EffectType,opening,开启
 EffectType,pacify,平静
 EffectType,place curse,诅咒
-EffectType,punish,惩罚
 EffectType,raise dead,复活死尸
-EffectType,recall,唤回队友
 EffectType,release,释放
 EffectType,remove curse,去除诅咒
 EffectType,remove transient,去除短期状态
@@ -1091,7 +1077,6 @@ EffectType,unstuck,不再被卡住
 EffectType,visit shop,访问商店
 EffectType,visit shrine,访问神龛
 EffectType,visit zoo,访问动物园
-EffectType,vomit,呕吐
 EffectType,warping,传送
 EggName,black dragon,黑龙
 EggName,blue dragon,蓝龙
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,添加楼层
 LiteralText,Add new adventurer,添加新冒险者
 LiteralText,ADJUST,调整
 LiteralText,adventurer,冒险者
+LiteralText,afflict,感染
 LiteralText,AFFLICTED,被感染
 LiteralText,affliction?,感染症状
 LiteralText,AFFLICTIONS,感染
@@ -3279,6 +3265,7 @@ LiteralText,depth,深度
 LiteralText,DESCEND TO NEXT LEVEL,去往之后的楼层
 LiteralText,destination,通往
 LiteralText,destroy,催毁
+LiteralText,detect,侦测
 LiteralText,determined by player level,由玩家等级决定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,禁用通过空格开关实时游�
 LiteralText,Disable swipe gestures,禁用平滑转场效果
 LiteralText,DISCONNECT,断开连接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,無法連接網絡，請檢查網絡連線和所有裝置的pathos的版本為相同版本
+LiteralText,discover item,启蒙
 LiteralText,Discuss on Reddit,在Reddit上讨论
 LiteralText,dismantle items to extract the base materials and raw essence,摧毁物品来得到基本材料和精华。
 LiteralText,DISMISS,解散
 LiteralText,DISMOUNT,下马
 LiteralText,Dismount which direction?,向哪个方向下马？
 LiteralText,Display dice rolls in the help,在帮助中显示骰子结果
+LiteralText,divine item,检测祝福/诅咒
 LiteralText,DIVINED,预言
 LiteralText,divined items,预言物品
 LiteralText,Do you want to save or quit this adventure?,你希望保存还是放弃这次冒险？
@@ -3380,9 +3369,10 @@ LiteralText,fright,惊吓
 LiteralText,fumbling,笨拙
 LiteralText,GAIN KARMA,获得运程
 LiteralText,GAIN LEVEL,获得等级
-LiteralText,GAIN NUTRITION,获得营养
+LiteralText,gain nutrition,获得营养
 LiteralText,gain skill,获得专精
 LiteralText,gate,门
+LiteralText,gates,
 LiteralText,gather,收集
 LiteralText,gender,性别
 LiteralText,genocide,灭绝
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,刻写物品
 LiteralText,inscription?,刻写内容
 LiteralText,instruct each character,指引每个角色
 LiteralText,INSUFFICIENT GOLD,金币不足
-LiteralText,insulation,隔离
 LiteralText,Inventory,背包
 LiteralText,INVENTORY,背包
 LiteralText,ITEM,道具
@@ -3480,7 +3469,7 @@ LiteralText,loot,物资
 LiteralText,LOOT,物资
 LiteralText,LOSE KARMA,失去运程
 LiteralText,LOSE LEVEL,失去等级
-LiteralText,LOSE NUTRITION,失去营养
+LiteralText,lose nutrition,失去营养
 LiteralText,lose skill,失去专精
 LiteralText,LOW MANA,魔法值低下
 LiteralText,MAIN WIELD,主手武器
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,魔法值代�
 LiteralText,Map,地图
 LiteralText,MAP,地图
 LiteralText,material,素材
+LiteralText,materials,材料
 LiteralText,melting,融化
 LiteralText,MENU,菜单
 LiteralText,mercenary,雇佣军
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,雕像
 LiteralText,probability,可能性
 LiteralText,PROMOTE,下移
 LiteralText,PROPERTIES,状态
+LiteralText,punish,惩罚
 LiteralText,PUNISHED,被惩罚
 LiteralText,punishment?,惩罚
 LiteralText,PUNISHMENTS,惩罚
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,读书来习得咒语
 LiteralText,READ!,读！
 LiteralText,REALLY CRASH?,真的破坏？
 LiteralText,REAL-TIME,实时
+LiteralText,recall party,唤回队友
 LiteralText,RE-CAST,重新施放
 LiteralText,Recommend Pathos,捐献给Pathos
 LiteralText,Redo,重复操作
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,查看
 LiteralText,Visit the website,访问官网
 LiteralText,VOID SPACE,虚空
 LiteralText,VOLATILES,环境效果
+LiteralText,vomit,呕吐
 LiteralText,vulnerable to,易受伤害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？

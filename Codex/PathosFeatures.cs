@@ -159,8 +159,8 @@ namespace Pathos
         DrinkUse.Apply.WithSourceSanctity
         (
           B => B.Heal(1.d4(), Modifier.Zero),
-          U => U.Nutrition(Dice.Fixed(10)),
-          C => C.Malnutrition(Dice.Fixed(10))
+          U => U.GainNutrition(Dice.Fixed(10)),
+          C => C.LoseNutrition(Dice.Fixed(10))
         );
         DrinkUse.Apply.WhenProbability(Table =>
         {

@@ -956,14 +956,11 @@ DietName,metalivore,สัตว์กินเหล็ก
 DietName,omnivore,กินทั้งพืชและสัตว์
 DietName,organivore,กินเฉพาะอาหารไร้สารเคมี
 DietName,xylophagy,สัตว์กินไม้
-EffectProperty,afflictions,ความทุกข์
 EffectProperty,all kind,ทุกเหล่า
-EffectProperty,blocks,ป้องกัน
 EffectProperty,break ally loyalty,ทำลายพันธมิตร
 EffectProperty,carried,แบกแล้ว
 EffectProperty,constructed,สร้างแล้ว
 EffectProperty,destruction,ทำลาย
-EffectProperty,devices,อุปกรณ์
 EffectProperty,disenchant,ถอนเสน่ห์
 EffectProperty,entities,สิ่งมีตัวตน
 EffectProperty,equipment,อุปกรณ์
@@ -977,17 +974,14 @@ EffectProperty,kinds,
 EffectProperty,lies,โกหก
 EffectProperty,loyal only,
 EffectProperty,material,วัสดุ
-EffectProperty,materials,วัสดุ
 EffectProperty,polite,
 EffectProperty,properties,สรรพคุณ
-EffectProperty,punishments,บทลงโทษ
 EffectProperty,random experience,สุ่มค่าประสบการณ์
 EffectProperty,random points,สุ่มแต้ม
 EffectProperty,remove random resistance,สุ่มล้างการต้านทาน
 EffectProperty,remove random talent,สุ่มล้างพรสวรรค์
 EffectProperty,removes all transients,ล้างสถานะชั่วคราวทั้งหมด
 EffectProperty,reset random equipment,สุ่มคืนค่าอุปกรณ์
-EffectProperty,reveal,เปิดเผย
 EffectProperty,rigid,
 EffectProperty,sanctity,
 EffectProperty,skills,ความชำนาญ
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,
 EffectProperty,unpolymorphs,หายจากการกลายร่าง
 EffectProperty,unpunishes,
 EffectProperty,whole stack,ทั้งหมด
-EffectType,afflict,
 EffectType,alert,แตกตื่น
 EffectType,amnesia,ความจำเสื่อม
 EffectType,area transient,
@@ -1030,15 +1023,12 @@ EffectType,create volatile,
 EffectType,decapitate,ประหาร
 EffectType,destroy item,ทำลายทรัพย์สิน
 EffectType,destroy volatile,
-EffectType,detect,ตรวจสอบ
 EffectType,devour item,กลืนกินทรัพย์สิน
 EffectType,disarm,ปลด
-EffectType,divine,ทำนาย
 EffectType,drain life,สูบพลังชีวิต
 EffectType,drain mana,สูบมานา
 EffectType,enchant item,ลงอาคมทรัพย์สิน
 EffectType,engulf,เขมือบ
-EffectType,enlightenment,
 EffectType,exchange,แปลเปลี่ยน
 EffectType,extinguish volatile,
 EffectType,gain level,ได้รับเลเวล
@@ -1055,17 +1045,13 @@ EffectType,liberate,ปลดแอก
 EffectType,locking,สะเดาะล็อค
 EffectType,lose skill,สูญเสียทักษะ
 EffectType,lose talent,สูญเสียพรสวรรค์
-EffectType,malnutrition,ขาดสารอาหาร
 EffectType,mapping,แผนที่
 EffectType,mobilise block,
 EffectType,murder,ฆาตกรรม
-EffectType,nutrition,โภชนาการ
 EffectType,opening,เปิด
 EffectType,pacify,
 EffectType,place curse,ลงคำสาป
-EffectType,punish,ลงโทษ
 EffectType,raise dead,คืนชีพคนตาย
-EffectType,recall,เรียกคืน
 EffectType,release,ปลดปล่อย
 EffectType,remove curse,ถอนคำสาป
 EffectType,remove transient,ถอนสถานะชั่วคราว
@@ -1091,7 +1077,6 @@ EffectType,unstuck,แก้ติด
 EffectType,visit shop,เยี่ยมร้านค้า
 EffectType,visit shrine,เยี่ยมสถานที่บูชา
 EffectType,visit zoo,เยี่ยมสวยสัตว์
-EffectType,vomit,อ้วก
 EffectType,warping,
 EggName,black dragon,มังกรดำ
 EggName,blue dragon,มังกรฟ้า
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,เพิ่มเลเวล
 LiteralText,Add new adventurer,เพิ่มนักผจญภัย
 LiteralText,ADJUST,ปรับ
 LiteralText,adventurer,
+LiteralText,afflict,
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,ความทุกข์
@@ -3279,6 +3265,7 @@ LiteralText,depth,ส่วนลึก
 LiteralText,DESCEND TO NEXT LEVEL,ลงไปสู่ชั้นต่อไป
 LiteralText,destination,
 LiteralText,destroy,ทำลาย
+LiteralText,detect,ตรวจสอบ
 LiteralText,determined by player level,
 LiteralText,device,อุปกรณ์
 LiteralText,DEVICES,อุปกรณ์
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,
 LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,หยุดการเชื่อมต่อ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
+LiteralText,discover item,
 LiteralText,Discuss on Reddit,พูดคุยบน Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,แยกชิ้นส่วนไอเท็มเพื่อให้ได้วัสดุและเนื้อแท้ไอเท็ม
 LiteralText,DISMISS,เฉดหัวทิ้ง
 LiteralText,DISMOUNT,เลิกขี่
 LiteralText,Dismount which direction?,ลงทางไหน?
 LiteralText,Display dice rolls in the help,
+LiteralText,divine item,ทำนาย
 LiteralText,DIVINED,ศักดิ์สิทธิ์
 LiteralText,divined items,ไอเท็มศักดิ์สิทธิ์
 LiteralText,Do you want to save or quit this adventure?,คุณต้องการบันทึกหรือออกจากการผจญภัยหรือไม่?
@@ -3380,9 +3369,10 @@ LiteralText,fright,
 LiteralText,fumbling,
 LiteralText,GAIN KARMA,ได้รับกรรม
 LiteralText,GAIN LEVEL,ได้รับเลเวล
-LiteralText,GAIN NUTRITION,ได้รับโภชนาการ
+LiteralText,gain nutrition,ได้รับโภชนาการ
 LiteralText,gain skill,
 LiteralText,gate,ประตู
+LiteralText,gates,
 LiteralText,gather,
 LiteralText,gender,เพศ
 LiteralText,genocide,ล้างเผ่าพันธุ์
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,
-LiteralText,insulation,
 LiteralText,Inventory,ช่องเก็บของ
 LiteralText,INVENTORY,ช่องเก็บของ
 LiteralText,ITEM,ไอเท็ม
@@ -3480,7 +3469,7 @@ LiteralText,loot,ของที่ปล้นมาได้
 LiteralText,LOOT,ของที่ปล้นมาได้
 LiteralText,LOSE KARMA,สูญเสียกรรม
 LiteralText,LOSE LEVEL,สูญเสียเลเวล
-LiteralText,LOSE NUTRITION,สูญเสียโภชนาการ
+LiteralText,lose nutrition,สูญเสียโภชนาการ
 LiteralText,lose skill,สูญเสียทักษะ
 LiteralText,LOW MANA,มานาเหลือน้อย
 LiteralText,MAIN WIELD,ถือเป็นหลัก
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,มานา�
 LiteralText,Map,แผนที่
 LiteralText,MAP,แผนที่
 LiteralText,material,วัสดุ
+LiteralText,materials,วัสดุ
 LiteralText,melting,ละลาย
 LiteralText,MENU,เมนู
 LiteralText,mercenary,ทหารรับจ้าง
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,นักโทษ
 LiteralText,probability,
 LiteralText,PROMOTE,
 LiteralText,PROPERTIES,
+LiteralText,punish,ลงโทษ
 LiteralText,PUNISHED,โดนลงโทษ
 LiteralText,punishment?,บทลงโทษไหน?
 LiteralText,PUNISHMENTS,บทลงโทษ
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,อ่านหนังสือเพ�
 LiteralText,READ!,อ่าน!
 LiteralText,REALLY CRASH?,
 LiteralText,REAL-TIME,เวลาจริง
+LiteralText,recall party,เรียกคืน
 LiteralText,RE-CAST,ร่ายอีกครั้ง
 LiteralText,Recommend Pathos,แนะนำ Pathos
 LiteralText,Redo,ย้อนกลับ
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,ดู
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
 LiteralText,VOID SPACE,
 LiteralText,VOLATILES,
+LiteralText,vomit,อ้วก
 LiteralText,vulnerable to,แพ้ทางต่อ
 LiteralText,WAIT,รอ
 LiteralText,Wait how many turns?,รอกี่เทิร์น?

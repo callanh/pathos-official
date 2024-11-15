@@ -765,7 +765,6 @@ namespace Pathos
           {
             E.SetCast().Strike(Strikes.boost, Dice.Fixed(3))
              .SetTerminates();
-            E.Apply.DetectTrap(Range.Sq5);
             E.Apply.ApplyTransient(Properties.see_invisible, 1.d15() + 151);
             E.Apply.ApplyTransient(Properties.searching, 1.d15() + 151);
           },

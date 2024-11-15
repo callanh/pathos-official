@@ -956,14 +956,11 @@ DietName,metalivore,metalobur
 DietName,omnivore,hepçil
 DietName,organivore,organikobur
 DietName,xylophagy,ağaçobur
-EffectProperty,afflictions,belalar
 EffectProperty,all kind,her türler
-EffectProperty,blocks,bloklar
 EffectProperty,break ally loyalty,dost sadakatini boz
 EffectProperty,carried,taşındı
 EffectProperty,constructed,
 EffectProperty,destruction,yık
-EffectProperty,devices,cihazlar
 EffectProperty,disenchant,efsunu boz
 EffectProperty,entities,varlıklar
 EffectProperty,equipment,teçhizat
@@ -977,17 +974,14 @@ EffectProperty,kinds,türler
 EffectProperty,lies,yalanlar
 EffectProperty,loyal only,
 EffectProperty,material,malzeme
-EffectProperty,materials,malzemeler
 EffectProperty,polite,nazik
 EffectProperty,properties,nitelikler
-EffectProperty,punishments,cezalar
 EffectProperty,random experience,rastgele tecrübe
 EffectProperty,random points,rasgele puanlar
 EffectProperty,remove random resistance,rastgele direnci kaldır
 EffectProperty,remove random talent,rastgele yeteneği kaldır
 EffectProperty,removes all transients,geçici olan her şeyi kaldırır
 EffectProperty,reset random equipment,rastgele bir teçhizatı yenile
-EffectProperty,reveal,açiğa kavuştur
 EffectProperty,rigid,
 EffectProperty,sanctity,kutsallık
 EffectProperty,skills,beceriler
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,etkiden kurtama
 EffectProperty,unpolymorphs,şekli düzeltme
 EffectProperty,unpunishes,ceza kaldırma
 EffectProperty,whole stack,
-EffectType,afflict,bela et
 EffectType,alert,dikkat çek
 EffectType,amnesia,hafızayı kaybet
 EffectType,area transient,alan geçici
@@ -1030,15 +1023,12 @@ EffectType,create volatile,
 EffectType,decapitate,uzuv kaybet
 EffectType,destroy item,varlığı yoket
 EffectType,destroy volatile,
-EffectType,detect,sapta
 EffectType,devour item,varlık yiyip bitir
 EffectType,disarm,silahsızlaştır
-EffectType,divine,ilahileştir
 EffectType,drain life,can em
 EffectType,drain mana,mana em
 EffectType,enchant item,varlığı efsunla
 EffectType,engulf,yut
-EffectType,enlightenment,aydınlat
 EffectType,exchange,değiş
 EffectType,extinguish volatile,
 EffectType,gain level,seviye kazan
@@ -1055,17 +1045,13 @@ EffectType,liberate,özgürleştir
 EffectType,locking,kilitle
 EffectType,lose skill,beceri kaybet
 EffectType,lose talent,yetenek kaybet
-EffectType,malnutrition,yetersiz beslenme
 EffectType,mapping,haritalamak
 EffectType,mobilise block,
 EffectType,murder,katlet
-EffectType,nutrition,beslenme
 EffectType,opening,açıklık
 EffectType,pacify,sakinleştir
 EffectType,place curse,lanet yerleştir
-EffectType,punish,cezalandır
 EffectType,raise dead,ölüyü canlandırma
-EffectType,recall,geri çağır
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
 EffectType,remove transient,geçici etkileri kaldır
@@ -1091,7 +1077,6 @@ EffectType,unstuck,
 EffectType,visit shop,dükkana git
 EffectType,visit shrine,tapınağa git
 EffectType,visit zoo,habitata git
-EffectType,vomit,
 EffectType,warping,ışınlan
 EggName,black dragon,siyah ejderha
 EggName,blue dragon,mavi ejderha
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,SEVİYE EKLE
 LiteralText,Add new adventurer,Yeni maceracı ekle
 LiteralText,ADJUST,AYARLA
 LiteralText,adventurer,
+LiteralText,afflict,bela et
 LiteralText,AFFLICTED,ETKİLENDİ
 LiteralText,affliction?,taraf?
 LiteralText,AFFLICTIONS,BELALAR
@@ -3279,6 +3265,7 @@ LiteralText,depth,derinlik
 LiteralText,DESCEND TO NEXT LEVEL,BİR SONRAKİ SEVİYEYE İN
 LiteralText,destination,hedef
 LiteralText,destroy,yok et
+LiteralText,detect,sapta
 LiteralText,determined by player level,oyuncu tarafından belirlenmiş
 LiteralText,device,cihaz
 LiteralText,DEVICES,ALETLER
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,gerçek zamanlı ve sıra tabanlı
 LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,BAĞLANTINI KOPART
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
+LiteralText,discover item,aydınlat
 LiteralText,Discuss on Reddit,Reddit'te muhabbet et
 LiteralText,dismantle items to extract the base materials and raw essence,eşyaları dağıtarak temel mazlemelerine ve esansına ulaş
 LiteralText,DISMISS,DAĞIL
 LiteralText,DISMOUNT,İN
 LiteralText,Dismount which direction?,Hangi yöne ineceksin?
 LiteralText,Display dice rolls in the help,yardım ekranında zar değerlerini göster
+LiteralText,divine item,ilahileştir
 LiteralText,DIVINED,İLAHİLEŞTİRİLMİŞ
 LiteralText,divined items,ilahileştirilmiş eşyalar
 LiteralText,Do you want to save or quit this adventure?,Bu macerayı silmek mi yoksa ondan çıkmak mı istiyorsun?
@@ -3380,9 +3369,10 @@ LiteralText,fright,korkut
 LiteralText,fumbling,sakarlık
 LiteralText,GAIN KARMA,KARMA KAZAN
 LiteralText,GAIN LEVEL,SEVİYE KAZAN
-LiteralText,GAIN NUTRITION,BESİN KAZAN
+LiteralText,gain nutrition,besin kazan
 LiteralText,gain skill,yetenek kazan
 LiteralText,gate,geçit
+LiteralText,gates,
 LiteralText,gather,topla
 LiteralText,gender,cins
 LiteralText,genocide,soykırım
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
-LiteralText,insulation,yalıtım
 LiteralText,Inventory,
 LiteralText,INVENTORY,ENVANTER
 LiteralText,ITEM,
@@ -3480,7 +3469,7 @@ LiteralText,loot,ganimet
 LiteralText,LOOT,GANİMET
 LiteralText,LOSE KARMA,KARMA KAYBET
 LiteralText,LOSE LEVEL,SEVİYE KAYBET
-LiteralText,LOSE NUTRITION,BESİN KAYBET
+LiteralText,lose nutrition,besin kaybet
 LiteralText,lose skill,
 LiteralText,LOW MANA,DÜŞÜK MANA
 LiteralText,MAIN WIELD,ANA SİLAH OLARAK KULLAN
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,HARİTA
 LiteralText,material,
+LiteralText,materials,malzemeler
 LiteralText,melting,
 LiteralText,MENU,
 LiteralText,mercenary,paralı asker
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,
 LiteralText,probability,olasılık
 LiteralText,PROMOTE,
 LiteralText,PROPERTIES,YETENEKLER
+LiteralText,punish,cezalandır
 LiteralText,PUNISHED,
 LiteralText,punishment?,
 LiteralText,PUNISHMENTS,CEZALAR
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Büyü öğrenmek için kitap oku
 LiteralText,READ!,OKU!
 LiteralText,REALLY CRASH?,CİDDEN ÇÖKSÜN MÜ?
 LiteralText,REAL-TIME,GERÇEK-ZAMANLI
+LiteralText,recall party,geri çağır
 LiteralText,RE-CAST,TEKRAR BÜYÜYÜ KULLAN
 LiteralText,Recommend Pathos,Pathos'u Öner
 LiteralText,Redo,
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,VOID SPACE,BOŞLUK
 LiteralText,VOLATILES,
+LiteralText,vomit,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,

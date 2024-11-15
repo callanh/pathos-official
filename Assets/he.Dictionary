@@ -956,14 +956,11 @@ DietName,metalivore,תזונת מתכת
 DietName,omnivore,תזונת-כל
 DietName,organivore,תזונה אורגנית
 DietName,xylophagy,תזונת סיבים
-EffectProperty,afflictions,צרות
 EffectProperty,all kind,כל הסוגים
-EffectProperty,blocks,חסימות
 EffectProperty,break ally loyalty,פגיעה בנאמנות
 EffectProperty,carried,בנשיאה
 EffectProperty,constructed,בבניה
 EffectProperty,destruction,הרס
-EffectProperty,devices,מתקנים
 EffectProperty,disenchant,הסרת קסם
 EffectProperty,entities,יישויות
 EffectProperty,equipment,ציוד
@@ -977,17 +974,14 @@ EffectProperty,kinds,סוגים
 EffectProperty,lies,שקרים
 EffectProperty,loyal only,רק נאמנות
 EffectProperty,material,חומר
-EffectProperty,materials,חומרים
 EffectProperty,polite,באדיבות
 EffectProperty,properties,תכונות
-EffectProperty,punishments,עונשים
 EffectProperty,random experience,ניסיון אקראי
 EffectProperty,random points,נקודות אקראיות
 EffectProperty,remove random resistance,מחיקת עמידות אקראית
 EffectProperty,remove random talent,מחיקת כישרון אקראי
 EffectProperty,removes all transients,מחיקת כל מצב ארעי
 EffectProperty,reset random equipment,איתחול ציוד אקראי
-EffectProperty,reveal,ניחוש
 EffectProperty,rigid,נוקשה
 EffectProperty,sanctity,קדושה
 EffectProperty,skills,כישורים
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,ביטול צרה
 EffectProperty,unpolymorphs,ביטול שינוי צורה
 EffectProperty,unpunishes,ביטול עונש
 EffectProperty,whole stack,כל המלאי
-EffectType,afflict,צרה
 EffectType,alert,ערנות
 EffectType,amnesia,שכחה
 EffectType,area transient,מוגבל לאיזור
@@ -1030,15 +1023,12 @@ EffectType,create volatile,יצירת נזילה
 EffectType,decapitate,עריפה
 EffectType,destroy item,השמדת נכס
 EffectType,destroy volatile,הסרת נזילה
-EffectType,detect,איתור
 EffectType,devour item,טריפת נכס
 EffectType,disarm,ניטרול נשק
-EffectType,divine,ניחוש
 EffectType,drain life,שאיבת חיים
 EffectType,drain mana,שאיבת קסם
 EffectType,enchant item,הקסמת נכס
 EffectType,engulf,עיטוף
-EffectType,enlightenment,הארה
 EffectType,exchange,עסקה
 EffectType,extinguish volatile,עצירת נזילה
 EffectType,gain level,עליית רמה
@@ -1055,17 +1045,13 @@ EffectType,liberate,הוצאה לחופשי
 EffectType,locking,נעילה
 EffectType,lose skill,איבוד יכולת
 EffectType,lose talent,איבוד כישור
-EffectType,malnutrition,תת תזונה
 EffectType,mapping,מיפוי
 EffectType,mobilise block,הזזת סלע
 EffectType,murder,רצח
-EffectType,nutrition,תזונה
 EffectType,opening,פתיחה
 EffectType,pacify,הרגעה
 EffectType,place curse,הטלת קללה
-EffectType,punish,ענישה
 EffectType,raise dead,הקמת מתים
-EffectType,recall,החזרה
 EffectType,release,שיחרור
 EffectType,remove curse,הסרת קללה
 EffectType,remove transient,הסרת מצב זמני
@@ -1091,7 +1077,6 @@ EffectType,unstuck,שיחרור דמות תקועה
 EffectType,visit shop,ביקור בחנות
 EffectType,visit shrine,ביקור במקדש
 EffectType,visit zoo,ביקור בגן חיות
-EffectType,vomit,הקאה
 EffectType,warping,השתגרות
 EggName,black dragon,דרקונית שחורה
 EggName,blue dragon,דרקונית כחולה
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,הוספת רמה
 LiteralText,Add new adventurer,הוספת דמות חדשה
 LiteralText,ADJUST,תיקון
 LiteralText,adventurer,
+LiteralText,afflict,צרה
 LiteralText,AFFLICTED,בצרה
 LiteralText,affliction?,צרה?
 LiteralText,AFFLICTIONS,צרות
@@ -3279,6 +3265,7 @@ LiteralText,depth,עומק
 LiteralText,DESCEND TO NEXT LEVEL,ירידה לקומה הבאה
 LiteralText,destination,יעד
 LiteralText,destroy,להשמיד
+LiteralText,detect,איתור
 LiteralText,determined by player level,נקבע על פי רמת הדמות
 LiteralText,device,מכשיר
 LiteralText,DEVICES,מכשירים
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,ביטול שימוש במקש ה�
 LiteralText,Disable swipe gestures,ביטול תנועות החלקה
 LiteralText,DISCONNECT,ניתוק
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,זוהה ניתוק. יש לבדוק שחיבור הרשת שלך אמין ושכל המכשירים משתמשים באותה גרסה של פאתוס.
+LiteralText,discover item,הארה
 LiteralText,Discuss on Reddit,לדבר ברדיט
 LiteralText,dismantle items to extract the base materials and raw essence,לפרק חפצים כדי להוציא מהם את חומרי הבסיס ומהות החפץ
 LiteralText,DISMISS,ביטול
 LiteralText,DISMOUNT,לרדת
 LiteralText,Dismount which direction?,לאיזה כיוון לרדת?
 LiteralText,Display dice rolls in the help,להציג גלגולי קובייה בעזרה
+LiteralText,divine item,ניחוש
 LiteralText,DIVINED,ניחוש מצב
 LiteralText,divined items,מצב ברכות וקללות ידוע
 LiteralText,Do you want to save or quit this adventure?,רוצה לשמור או לצאת מההרפתקה הזאת?
@@ -3380,9 +3369,10 @@ LiteralText,fright,פחד
 LiteralText,fumbling,מעידה
 LiteralText,GAIN KARMA,תוספת קארמה
 LiteralText,GAIN LEVEL,תוספת רמה
-LiteralText,GAIN NUTRITION,תוספת תזונה
+LiteralText,gain nutrition,תוספת תזונה
 LiteralText,gain skill,תוספת כישורים
 LiteralText,gate,שער
+LiteralText,gates,
 LiteralText,gather,איסוף
 LiteralText,gender,מגדר
 LiteralText,genocide,רצח עם
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,לכתוב על פריט
 LiteralText,inscription?,כתובת?
 LiteralText,instruct each character,הוראות לכל אחת מהדמויות
 LiteralText,INSUFFICIENT GOLD,אין לך מספיק זהב
-LiteralText,insulation,בידוד
 LiteralText,Inventory,רשימת מלאי
 LiteralText,INVENTORY,רשימת מלאי
 LiteralText,ITEM,פריט
@@ -3480,7 +3469,7 @@ LiteralText,loot,לבזוז
 LiteralText,LOOT,לבזוז
 LiteralText,LOSE KARMA,איבוד קארמה
 LiteralText,LOSE LEVEL,איבוד רמה
-LiteralText,LOSE NUTRITION,איבוד תזונה
+LiteralText,lose nutrition,איבוד תזונה
 LiteralText,lose skill,איבוד כישורים
 LiteralText,LOW MANA,מעט נקודות קסם
 LiteralText,MAIN WIELD,נשק ראשי
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,נקודות 
 LiteralText,Map,מפה
 LiteralText,MAP,מפה
 LiteralText,material,חומר
+LiteralText,materials,חומרים
 LiteralText,melting,במצב נמס
 LiteralText,MENU,תפריט
 LiteralText,mercenary,שכיר או שכירת חרב
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,במעצר
 LiteralText,probability,הסתברות
 LiteralText,PROMOTE,קידום
 LiteralText,PROPERTIES,תכונות
+LiteralText,punish,ענישה
 LiteralText,PUNISHED,במצב ענישה
 LiteralText,punishment?,עונש?
 LiteralText,PUNISHMENTS,עונשים
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,כדי ללמוד קסמים צריך ל�
 LiteralText,READ!,לקרוא!
 LiteralText,REALLY CRASH?,באמת לרסק?
 LiteralText,REAL-TIME,בזמן-אמיתי
+LiteralText,recall party,החזרה
 LiteralText,RE-CAST,להטיל שוב קסם
 LiteralText,Recommend Pathos,להמליץ על פאתוס
 LiteralText,Redo,לעשות שוב
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,להציג
 LiteralText,Visit the website,לבקר באתר
 LiteralText,VOID SPACE,חלל ריק
 LiteralText,VOLATILES,נדיפים
+LiteralText,vomit,הקאה
 LiteralText,vulnerable to,פגיעות ל
 LiteralText,WAIT,לחכות
 LiteralText,Wait how many turns?,כמה תורות לחכות?

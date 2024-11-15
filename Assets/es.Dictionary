@@ -956,14 +956,11 @@ DietName,metalivore,metalóvoro
 DietName,omnivore,omnívoro
 DietName,organivore,organívoro
 DietName,xylophagy,xilófago
-EffectProperty,afflictions,aflicciones
 EffectProperty,all kind,todo tipo
-EffectProperty,blocks,obstruir
 EffectProperty,break ally loyalty,romper lealtad de aliado
 EffectProperty,carried,cargado
 EffectProperty,constructed,construido
 EffectProperty,destruction,destrucción
-EffectProperty,devices,dispositivos
 EffectProperty,disenchant,desencantar
 EffectProperty,entities,entidades
 EffectProperty,equipment,equipamiento
@@ -977,17 +974,14 @@ EffectProperty,kinds,tipos
 EffectProperty,lies,mentiras
 EffectProperty,loyal only,solo lealtad
 EffectProperty,material,material
-EffectProperty,materials,materiales
 EffectProperty,polite,cortés
 EffectProperty,properties,propiedades
-EffectProperty,punishments,castigos
 EffectProperty,random experience,experiencia al azar
 EffectProperty,random points,puntos al azar
 EffectProperty,remove random resistance,elimina resistencia aleatoria
 EffectProperty,remove random talent,eliminar talento aleatorio
 EffectProperty,removes all transients,remueve todos los estados transitorios
 EffectProperty,reset random equipment,restablecer equipamiento al azar
-EffectProperty,reveal,revelar
 EffectProperty,rigid,rígido
 EffectProperty,sanctity,santidad
 EffectProperty,skills,habilidades
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,remueve afliccion
 EffectProperty,unpolymorphs,despolimorfismo
 EffectProperty,unpunishes,remueve castigo
 EffectProperty,whole stack,pila entera
-EffectType,afflict,afligir
 EffectType,alert,alertar
 EffectType,amnesia,amnesia
 EffectType,area transient,area efecto transitorio
@@ -1030,15 +1023,12 @@ EffectType,create volatile,crear derrame
 EffectType,decapitate,decapitar
 EffectType,destroy item,destruir recurso
 EffectType,destroy volatile,eliminar derrame
-EffectType,detect,detectar
 EffectType,devour item,devorar recurso
 EffectType,disarm,desarmar
-EffectType,divine,adivinar
 EffectType,drain life,drenar vida
 EffectType,drain mana,drenar maná
 EffectType,enchant item,encantar recurso
 EffectType,engulf,engullir
-EffectType,enlightenment,iluminación
 EffectType,exchange,intercambiar
 EffectType,extinguish volatile,extinguir derrame
 EffectType,gain level,ganar nivel
@@ -1055,17 +1045,13 @@ EffectType,liberate,liberar
 EffectType,locking,cerrar
 EffectType,lose skill,perder habilidad
 EffectType,lose talent,perder talento
-EffectType,malnutrition,desnutrición
 EffectType,mapping,mapear
 EffectType,mobilise block,desplazar roca
 EffectType,murder,asesinar
-EffectType,nutrition,nutrición
 EffectType,opening,apertura
 EffectType,pacify,pacificar
 EffectType,place curse,colocar maldición
-EffectType,punish,castigar
 EffectType,raise dead,levantar muertos
-EffectType,recall,retirar
 EffectType,release,liberar
 EffectType,remove curse,remover maldición
 EffectType,remove transient,remover efecto transitorio
@@ -1091,7 +1077,6 @@ EffectType,unstuck,desatascar
 EffectType,visit shop,visitar la tienda
 EffectType,visit shrine,visitar el santuario
 EffectType,visit zoo,visitar el zoológico
-EffectType,vomit,vómito
 EffectType,warping,distorsion
 EggName,black dragon,dragón negro
 EggName,blue dragon,dragón azul
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,AÑADIR NIVEL
 LiteralText,Add new adventurer,Añadir aventurero
 LiteralText,ADJUST,AJUSTAR
 LiteralText,adventurer,
+LiteralText,afflict,afligir
 LiteralText,AFFLICTED,AFLIJIDO
 LiteralText,affliction?,aflicción?
 LiteralText,AFFLICTIONS,AFLICCIONES
@@ -3279,6 +3265,7 @@ LiteralText,depth,profundidad
 LiteralText,DESCEND TO NEXT LEVEL,DESCENDER AL SIGUIENTE NIVEL
 LiteralText,destination,destino
 LiteralText,destroy,destruir
+LiteralText,detect,detectar
 LiteralText,determined by player level,determinado por el nivel del jugador
 LiteralText,device,dispositivo
 LiteralText,DEVICES,DISPOSITIVOS
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,desactivar barra espaciadora para 
 LiteralText,Disable swipe gestures,desactivar gesto de deslizamiento
 LiteralText,DISCONNECT,DESCONECTAR
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Se detectó un error en la conexión . Asegúrate que tengas una conexión estable y que todos los dispositivos tengan la misma versión de Pathos.
+LiteralText,discover item,iluminación
 LiteralText,Discuss on Reddit,Discutir en Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,Desmantela ítems para extraer los materiales base y su esencia pura.
 LiteralText,DISMISS,DESPEDIR
 LiteralText,DISMOUNT,DESMONTAR
 LiteralText,Dismount which direction?,¿Desmontar en qué dirección?
 LiteralText,Display dice rolls in the help,mostrar tiradas de dados en la ayuda
+LiteralText,divine item,adivinar
 LiteralText,DIVINED,ADIVINADO
 LiteralText,divined items,ítems adivinados
 LiteralText,Do you want to save or quit this adventure?,¿Quieres guardar o salir de esta aventura?
@@ -3380,9 +3369,10 @@ LiteralText,fright,terror
 LiteralText,fumbling,tantear
 LiteralText,GAIN KARMA,GANAR KARMA
 LiteralText,GAIN LEVEL,GANAR NIVEL
-LiteralText,GAIN NUTRITION,GANAR NUTRICIÓN
+LiteralText,gain nutrition,ganar nutrición
 LiteralText,gain skill,ganar habilidad
 LiteralText,gate,portón
+LiteralText,gates,
 LiteralText,gather,reunir
 LiteralText,gender,género
 LiteralText,genocide,genocidio
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,INSCRIBIR ÍTEM
 LiteralText,inscription?,inscripción?
 LiteralText,instruct each character,instructor de personajes
 LiteralText,INSUFFICIENT GOLD,ORO INSUFICIENTE
-LiteralText,insulation,aislamiento
 LiteralText,Inventory,Inventario
 LiteralText,INVENTORY,INVENTARIO
 LiteralText,ITEM,ÍTEM
@@ -3480,7 +3469,7 @@ LiteralText,loot,botín
 LiteralText,LOOT,BOTÍN
 LiteralText,LOSE KARMA,PERDER KARMA
 LiteralText,LOSE LEVEL,PERDER NIVEL
-LiteralText,LOSE NUTRITION,PERDER NUTRICIÓN
+LiteralText,lose nutrition,perder nutrición
 LiteralText,lose skill,perder habilidad
 LiteralText,LOW MANA,MANÁ ESCASO
 LiteralText,MAIN WIELD,EMPUÑADURA PRINCIPAL
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,El maná repr
 LiteralText,Map,Mapa
 LiteralText,MAP,MAPA
 LiteralText,material,material
+LiteralText,materials,materiales
 LiteralText,melting,fundir
 LiteralText,MENU,MENU
 LiteralText,mercenary,mercenario
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,prisionero
 LiteralText,probability,probabilidad
 LiteralText,PROMOTE,PROMOVER
 LiteralText,PROPERTIES,PROBABILIDADES
+LiteralText,punish,castigar
 LiteralText,PUNISHED,CASTIGADO
 LiteralText,punishment?,castigo?
 LiteralText,PUNISHMENTS,CASTIGOS
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Lee libros para aprender hechizos
 LiteralText,READ!,LEER!
 LiteralText,REALLY CRASH?,¿ESTÁ SEGURO DE QUERER COLGAR EL JUEGO?
 LiteralText,REAL-TIME,TIEMPO REAL
+LiteralText,recall party,retirar
 LiteralText,RE-CAST,VOLVER A LANZAR HECHIZO
 LiteralText,Recommend Pathos,Recomienda Pathos
 LiteralText,Redo,Rehacer
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,VER
 LiteralText,Visit the website,Visitar la web
 LiteralText,VOID SPACE,ESPACIO VACÍO
 LiteralText,VOLATILES,VOLÁTILES
+LiteralText,vomit,vómito
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?

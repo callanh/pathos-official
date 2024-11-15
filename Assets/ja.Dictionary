@@ -956,14 +956,11 @@ DietName,metalivore,金属食
 DietName,omnivore,雑食
 DietName,organivore,有機食
 DietName,xylophagy,木食
-EffectProperty,afflictions,災難
 EffectProperty,all kind,同種すべて
-EffectProperty,blocks,防ぐ
 EffectProperty,break ally loyalty,味方の忠誠心を壊す
 EffectProperty,carried,所持品
 EffectProperty,constructed,造り物
 EffectProperty,destruction,破壊された場合
-EffectProperty,devices,罠
 EffectProperty,disenchant,劣化する
 EffectProperty,entities,モンスター
 EffectProperty,equipment,装備品
@@ -977,17 +974,14 @@ EffectProperty,kinds,種類
 EffectProperty,lies,ウソ
 EffectProperty,loyal only,味方だけ
 EffectProperty,material,素材
-EffectProperty,materials,材料
 EffectProperty,polite,丁寧に扱う
 EffectProperty,properties,状態
-EffectProperty,punishments,天罰
 EffectProperty,random experience,追加経験値獲得
 EffectProperty,random points,追加技能値獲得
 EffectProperty,remove random resistance,ランダムな耐性を失う
 EffectProperty,remove random talent,ランダムな性質を失う
 EffectProperty,removes all transients,全ての一時的な状態を解消
 EffectProperty,reset random equipment,ランダムな装備の修正値を0にする
-EffectProperty,reveal,明らかに
 EffectProperty,rigid,固まった
 EffectProperty,sanctity,尊厳
 EffectProperty,skills,スキル
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,災難からの解放
 EffectProperty,unpolymorphs,変化から戻る
 EffectProperty,unpunishes,天罰からの解放
 EffectProperty,whole stack,スタック全体
-EffectType,afflict,災難
 EffectType,alert,警戒
 EffectType,amnesia,記憶喪失
 EffectType,area transient,範囲に一時的効果
@@ -1030,15 +1023,12 @@ EffectType,create volatile,地形効果が発生
 EffectType,decapitate,首はね
 EffectType,destroy item,アイテムを破壊
 EffectType,destroy volatile,地形効果が消滅
-EffectType,detect,探知
 EffectType,devour item,アイテムをむさぼり喰う
 EffectType,disarm,武器を落とさせる
-EffectType,divine,判別
 EffectType,drain life,ライフ吸収
 EffectType,drain mana,マナ吸収
 EffectType,enchant item,アイテムの修正値
 EffectType,engulf,丸呑み
-EffectType,enlightenment,アイテムの知識を得る
 EffectType,exchange,交換する
 EffectType,extinguish volatile,地形効果が霧散
 EffectType,gain level,レベルアップ
@@ -1055,17 +1045,13 @@ EffectType,liberate,解放する
 EffectType,locking,施錠
 EffectType,lose skill,スキルレベル低下
 EffectType,lose talent,性質を失う
-EffectType,malnutrition,満腹度減少
 EffectType,mapping,地図作製
 EffectType,mobilise block,障害物を動かす
 EffectType,murder,殺人
-EffectType,nutrition,満腹度上昇
 EffectType,opening,開錠
 EffectType,pacify,鎮める
 EffectType,place curse,呪いをかける
-EffectType,punish,天罰を受ける
 EffectType,raise dead,蘇生
-EffectType,recall,仲間を呼び戻す
 EffectType,release,解放
 EffectType,remove curse,解呪
 EffectType,remove transient,一時的な状態の解除
@@ -1091,7 +1077,6 @@ EffectType,unstuck,抜け出す
 EffectType,visit shop,お店を訪問
 EffectType,visit shrine,社を訪ねる
 EffectType,visit zoo,動物園を訪問
-EffectType,vomit,おう吐
 EffectType,warping,ダンジョン変容
 EggName,black dragon,ブラックドラゴン
 EggName,blue dragon,ブルードラゴン
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
 LiteralText,ADJUST,調整
 LiteralText,adventurer,冒険者
+LiteralText,afflict,災難
 LiteralText,AFFLICTED,災難に苛まれている
 LiteralText,affliction?,災難?
 LiteralText,AFFLICTIONS,災難
@@ -3279,6 +3265,7 @@ LiteralText,depth,到達階数
 LiteralText,DESCEND TO NEXT LEVEL,1つ下の階に降りる
 LiteralText,destination,目的地
 LiteralText,destroy,破壊する
+LiteralText,detect,探知
 LiteralText,determined by player level,プレイヤーのレベルによって決定
 LiteralText,device,罠
 LiteralText,DEVICES,罠
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,スペースキーでのリアル�
 LiteralText,Disable swipe gestures,スワイプ操作を無効化
 LiteralText,DISCONNECT,切断
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,切断されました。ネットワーク接続に問題がないこと、およびゲームに参加する全てのデバイスでPathosのバージョンが等しいことを確認してください。
+LiteralText,discover item,アイテムの知識を得る
 LiteralText,Discuss on Reddit,Redditで話し合う
 LiteralText,dismantle items to extract the base materials and raw essence,アイテムを分解し原材料とエッセンスを抽出する
 LiteralText,DISMISS,別れる
 LiteralText,DISMOUNT,降りる
 LiteralText,Dismount which direction?,どの方向に降りますか？
 LiteralText,Display dice rolls in the help,ダイスによる乱数表記
+LiteralText,divine item,判別
 LiteralText,DIVINED,判別された
 LiteralText,divined items,判別されたアイテム
 LiteralText,Do you want to save or quit this adventure?,セーブして中断しますか、それともこの冒険を終了しますか？
@@ -3380,9 +3369,10 @@ LiteralText,fright,戦慄
 LiteralText,fumbling,滑り
 LiteralText,GAIN KARMA,カルマを増やす
 LiteralText,GAIN LEVEL,レベルアップ
-LiteralText,GAIN NUTRITION,満腹度上昇
+LiteralText,gain nutrition,満腹度上昇
 LiteralText,gain skill,スキル増加
 LiteralText,gate,扉
+LiteralText,gates,
 LiteralText,gather,収集
 LiteralText,gender,性別
 LiteralText,genocide,根絶の巻物の効果
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,アイテムに書き込む
 LiteralText,inscription?,メッセージ?
 LiteralText,instruct each character,キャラクターごとに指示
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
-LiteralText,insulation,絶縁
 LiteralText,Inventory,持ち物
 LiteralText,INVENTORY,持ち物
 LiteralText,ITEM,アイテム
@@ -3480,7 +3469,7 @@ LiteralText,loot,戦利品
 LiteralText,LOOT,略奪
 LiteralText,LOSE KARMA,カルマを減らす
 LiteralText,LOSE LEVEL,レベルダウン
-LiteralText,LOSE NUTRITION,満腹度減少
+LiteralText,lose nutrition,満腹度減少
 LiteralText,lose skill,スキル減少
 LiteralText,LOW MANA,マナが足りない
 LiteralText,MAIN WIELD,利き手に装備
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,マナは呪�
 LiteralText,Map,地図
 LiteralText,MAP,地図
 LiteralText,material,素材
+LiteralText,materials,材料
 LiteralText,melting,溶解
 LiteralText,MENU,メニュー
 LiteralText,mercenary,傭兵
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,囚人
 LiteralText,probability,確率
 LiteralText,PROMOTE,昇格
 LiteralText,PROPERTIES,性質
+LiteralText,punish,天罰を受ける
 LiteralText,PUNISHED,天罰
 LiteralText,punishment?,天罰?
 LiteralText,PUNISHMENTS,天罰
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,本を読んで呪文を学ぶ
 LiteralText,READ!,読む！
 LiteralText,REALLY CRASH?,本当に強制終了しますか？
 LiteralText,REAL-TIME,リアルタイム
+LiteralText,recall party,仲間を呼び戻す
 LiteralText,RE-CAST,再詠唱
 LiteralText,Recommend Pathos,Pathosをお勧めする
 LiteralText,Redo,やり直し
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,VOID SPACE,ボイドスペース
 LiteralText,VOLATILES,地形効果
+LiteralText,vomit,おう吐
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？

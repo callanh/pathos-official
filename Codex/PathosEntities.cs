@@ -2856,7 +2856,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
           K.Apply.Alert(4.d6() + 4);
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 8.d6() + 8));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 8.d6() + 8));
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -4746,7 +4746,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4);
-          K.Apply.Malnutrition(80.d3());
+          K.Apply.LoseNutrition(80.d3());
         });
         E.Conveyance.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
         E.Conveyance.MajorProperty(Properties.teleport_control);
@@ -8211,7 +8211,7 @@ namespace Pathos
            .SetPenetrates()
            .SetAudibility(10);
           K.Apply.Harm(Elements.force, 4.d6());
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 3.d6() + 3));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 3.d6() + 3));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8819,7 +8819,7 @@ namespace Pathos
            .SetPenetrates()
            .SetAudibility(10);
           K.Apply.Harm(Elements.force, 6.d6());
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
@@ -9445,7 +9445,7 @@ namespace Pathos
            .SetPenetrates()
            .SetAudibility(10);
           K.Apply.Harm(Elements.force, 12.d6());
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 12.d6() + 12));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 12.d6() + 12));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
@@ -12371,7 +12371,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.shriek, 4.d2() + 1)
            .SetTerminates();
           K.Apply.Alert(2.d6() + 2);
-          K.Apply.Shout(A => A.Harm(Elements.physical, 1.d4() + 1));
+          K.Apply.Shout(Dice.Fixed(10), A => A.Harm(Elements.physical, 1.d4() + 1));
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -13237,7 +13237,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
           K.Apply.Alert(2.d6() + 2);
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 4.d6() + 4));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 4.d6() + 4));
         });
       });
 
@@ -13385,7 +13385,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.WhenTargetHasProperty(Properties.fear, 
+          K.Apply.Shout(Dice.Fixed(10), A => A.WhenTargetHasProperty(Properties.fear, 
             T => T.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, DeathSupport.fright), 
             F => F.WhenTargetKind(Kinds.Living, W => W.ApplyTransient(Properties.fear, 3.d4() + 3))));
         });
@@ -21385,7 +21385,7 @@ namespace Pathos
           K.Apply.WhenSourceHasProperty(Properties.invisibility, T => T.Nothing(), A =>
           {
             // should only apply if the blue light is not invisible.
-            A.Malnutrition(1.d100() + 100);
+            A.LoseNutrition(1.d100() + 100);
             A.ApplyTransient(Properties.hunger, 10.d15());
             A.DestroyCarriedItem(Dice.One, new[] { Stocks.food }, SanctityArray: null, MaterialArray: null);
           });
@@ -28456,7 +28456,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.shriek, Dice.Zero)
            .SetTerminates();
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
+          K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
         });
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.Always);
@@ -32846,7 +32846,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.wail, Dice.Zero)
            .SetTerminates(); // zero range so don't strike your steed.
           K.Apply.Alert(3.d6() + 3);
-          K.Apply.Shout(A => A.WhenTargetKind(Kinds.Living, T => T.ApplyTransient(Properties.silence, 6.d4() + 6)));
+          K.Apply.Shout(Dice.Fixed(10), A => A.WhenTargetKind(Kinds.Living, T => T.ApplyTransient(Properties.silence, 6.d4() + 6)));
         });
         E.SetCorpse(Chance.Never);
       });

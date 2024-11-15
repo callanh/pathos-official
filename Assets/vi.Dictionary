@@ -956,14 +956,11 @@ DietName,metalivore,ăn kim loại
 DietName,omnivore,ăn tạp
 DietName,organivore,ăn chất hữu cơ
 DietName,xylophagy,ăn gỗ
-EffectProperty,afflictions,ảnh hưởng
 EffectProperty,all kind,mọi loại
-EffectProperty,blocks,chặn
 EffectProperty,break ally loyalty,phá vỡ tình đồng đội
 EffectProperty,carried,mang theo
 EffectProperty,constructed,cấu thành
 EffectProperty,destruction,sự phá hủy
-EffectProperty,devices,các thiết bị
 EffectProperty,disenchant,tỉnh mộng
 EffectProperty,entities,các thực thể
 EffectProperty,equipment,trang bị
@@ -977,17 +974,14 @@ EffectProperty,kinds,các loại
 EffectProperty,lies,nằm trên
 EffectProperty,loyal only,chỉ trung thành
 EffectProperty,material,vật liệu
-EffectProperty,materials,các vật liệu
 EffectProperty,polite,lịch sự
 EffectProperty,properties,các chỉ số
-EffectProperty,punishments,các trừng phạt
 EffectProperty,random experience,trải nghiệm ngẫu nhiên
 EffectProperty,random points,các điểm ngẫu nhiên
 EffectProperty,remove random resistance,loại bỏ 1 đề kháng ngẫu nhiên
 EffectProperty,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
 EffectProperty,removes all transients,loại bỏ tất cả hiệu ứng tạm thời
 EffectProperty,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
-EffectProperty,reveal,phát giác
 EffectProperty,rigid,thô
 EffectProperty,sanctity,thiêng liêng
 EffectProperty,skills,các kĩ năng
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,không ảnh hưởng
 EffectProperty,unpolymorphs,hủy biến hình
 EffectProperty,unpunishes,hủy sự trừng phạt
 EffectProperty,whole stack,cả xập
-EffectType,afflict,ảnh hưởng
 EffectType,alert,báo động
 EffectType,amnesia,lãng quên
 EffectType,area transient,hiệu ứng tạm thời diện rộng
@@ -1030,15 +1023,12 @@ EffectType,create volatile,tạo vũng
 EffectType,decapitate,chặt đầu
 EffectType,destroy item,phá hủy vật
 EffectType,destroy volatile,loại bỏ vũng
-EffectType,detect,phát hiện
 EffectType,devour item,nuốt vật
 EffectType,disarm,tước vũ khí
-EffectType,divine,thần thánh
 EffectType,drain life,hút sinh lực
 EffectType,drain mana,hút ma pháp
 EffectType,enchant item,phù phép vật
 EffectType,engulf,nuốt chửng
-EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
 EffectType,extinguish volatile,dập vũng
 EffectType,gain level,lên cấp
@@ -1055,17 +1045,13 @@ EffectType,liberate,thả ra
 EffectType,locking,khóa
 EffectType,lose skill,mất kĩ năng
 EffectType,lose talent,mất tài năng
-EffectType,malnutrition,suy dinh dưỡng
 EffectType,mapping,lập bản đồ
 EffectType,mobilise block,di chuyển tảng đá
 EffectType,murder,giết
-EffectType,nutrition,dinh dưỡng
 EffectType,opening,mở
 EffectType,pacify,thỏa hiệp
 EffectType,place curse,niệm lời nguyền
-EffectType,punish,trừng phạt
 EffectType,raise dead,tái sinh
-EffectType,recall,gọi thú
 EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
 EffectType,remove transient,loại bỏ hiệu ứng tạm thời
@@ -1091,7 +1077,6 @@ EffectType,unstuck,tháo gỡ
 EffectType,visit shop,ghé cửa hàng
 EffectType,visit shrine,ghé điện thờ
 EffectType,visit zoo,ghé vườn thú
-EffectType,vomit,nôn mửa
 EffectType,warping,cong vênh
 EggName,black dragon,rồng đen
 EggName,blue dragon,rồng xanh dương
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
 LiteralText,Add new adventurer,Thêm nhà thám hiểm mới
 LiteralText,ADJUST,CHỈNH SỬA
 LiteralText,adventurer,mạo hiểm giả
+LiteralText,afflict,ảnh hưởng
 LiteralText,AFFLICTED,BỊNHIỄM BỆNH
 LiteralText,affliction?,nhiễm bệnh?
 LiteralText,AFFLICTIONS,NHỮNG LOẠI BỆNH
@@ -3279,6 +3265,7 @@ LiteralText,depth,tầng
 LiteralText,DESCEND TO NEXT LEVEL,ĐI XUỐNG TẦNG TIẾP THEO
 LiteralText,destination,đích đến
 LiteralText,destroy,phá hủy
+LiteralText,detect,phát hiện
 LiteralText,determined by player level,được đánh giá bởi cấp độ người chơi
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,bật tắt chế độ thời gia
 LiteralText,Disable swipe gestures,tắt cử chỉ vuốt
 LiteralText,DISCONNECT,NGẮT KẾT NỐI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
+LiteralText,discover item,khai sáng
 LiteralText,Discuss on Reddit,Thảo luận trên Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,Tháo những vật phẩm để lấy lại nguyên liệu và nguyên chất thô
 LiteralText,DISMISS,BỎ QUA
 LiteralText,DISMOUNT,XUỐNG NGỰA
 LiteralText,Dismount which direction?,Xuống ngựa vào hướng nào?
 LiteralText,Display dice rolls in the help,Hiển thị số con lắc trong trợ giúp
+LiteralText,divine item,thần thánh
 LiteralText,DIVINED,THẦN THÁNH HÓA
 LiteralText,divined items,vật phẩm thần thánh hóa
 LiteralText,Do you want to save or quit this adventure?,Bạn muốn lưu hay thoát khỏi chuyến phiêu lưu này?
@@ -3380,9 +3369,10 @@ LiteralText,fright,sợ hãi
 LiteralText,fumbling,hậu đậu
 LiteralText,GAIN KARMA,TĂNG NGHIỆP CHƯỚNG
 LiteralText,GAIN LEVEL,TĂNG CẤP ĐỘ
-LiteralText,GAIN NUTRITION,TĂNG DINH DƯỠNG
+LiteralText,gain nutrition,tăng dinh dưỡng
 LiteralText,gain skill,học kĩ năng
 LiteralText,gate,cổng
+LiteralText,gates,
 LiteralText,gather,thu lượm
 LiteralText,gender,giới tính
 LiteralText,genocide,tuyệt chủng
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,GHI VẬT PHẨM
 LiteralText,inscription?,khắc chữ gì?
 LiteralText,instruct each character,hướng dẫn từng nhân vật
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
-LiteralText,insulation,cô lập
 LiteralText,Inventory,Túi đồ
 LiteralText,INVENTORY,TÚI ĐỒ
 LiteralText,ITEM,VẬT PHẨM
@@ -3480,7 +3469,7 @@ LiteralText,loot,nhặt
 LiteralText,LOOT,NHẶT
 LiteralText,LOSE KARMA,GIẢM NGHIỆP CHƯỚNG
 LiteralText,LOSE LEVEL,GIẨM CẤP ĐỘ
-LiteralText,LOSE NUTRITION,GIẢM DINH DƯỠNG
+LiteralText,lose nutrition,giảm dinh dưỡng
 LiteralText,lose skill,mất kĩ năng
 LiteralText,LOW MANA,năng lượng thấp
 LiteralText,MAIN WIELD,VŨ KHÍ CHÍNH
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,Năng lượn
 LiteralText,Map,Bản đồ
 LiteralText,MAP,BẢN ĐỒ
 LiteralText,material,vật liệu
+LiteralText,materials,các vật liệu
 LiteralText,melting,tan chảy
 LiteralText,MENU,MENU
 LiteralText,mercenary,lính đánh thuê
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,tù nhân
 LiteralText,probability,khả năng
 LiteralText,PROMOTE,THĂNG CẤP
 LiteralText,PROPERTIES,HIỆU ỨNG
+LiteralText,punish,trừng phạt
 LiteralText,PUNISHED,TRỪNG PHẠT
 LiteralText,punishment?,trừng phạt?
 LiteralText,PUNISHMENTS,TRỪNG PHẠT
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Đọc sách để học phép
 LiteralText,READ!,ĐỌC!
 LiteralText,REALLY CRASH?,THẬT SỰ ĐÂM VÀO CHỨ?
 LiteralText,REAL-TIME,THỜI GIAN THỰC
+LiteralText,recall party,gọi thú
 LiteralText,RE-CAST,DÙNG LẠI PHÉP
 LiteralText,Recommend Pathos,Đề xuất Pathos
 LiteralText,Redo,làm lại
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
 LiteralText,VOLATILES,CÁC PHẢN ỨNG
+LiteralText,vomit,nôn mửa
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?

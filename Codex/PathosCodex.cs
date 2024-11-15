@@ -145,7 +145,7 @@ namespace Pathos
       Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
-        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -153,7 +153,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.good, A =>
       {
-        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -162,7 +162,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
-        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();
@@ -172,7 +172,7 @@ namespace Pathos
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
       {
-        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.Nutrition(Dice.Fixed(Rules.PrayNutrition)));
+        A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
         A.Unstuck();
         A.Unpunish();
         A.Unafflict();

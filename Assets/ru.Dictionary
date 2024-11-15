@@ -956,14 +956,11 @@ DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,биоядный
 DietName,xylophagy,древоядный
-EffectProperty,afflictions,болезни
 EffectProperty,all kind,все виды
-EffectProperty,blocks,препятствия
 EffectProperty,break ally loyalty,снимает лояльность союзников
 EffectProperty,carried,несомое
 EffectProperty,constructed,построено
 EffectProperty,destruction,уничтожение
-EffectProperty,devices,устройства
 EffectProperty,disenchant,расколдовывает
 EffectProperty,entities,сущности
 EffectProperty,equipment,снаряжение
@@ -977,17 +974,14 @@ EffectProperty,kinds,виды
 EffectProperty,lies,враньё
 EffectProperty,loyal only,только лояльный
 EffectProperty,material,материал
-EffectProperty,materials,материалы
 EffectProperty,polite,дружелюбно
 EffectProperty,properties,свойства
-EffectProperty,punishments,наказания
 EffectProperty,random experience,случайный опыт
 EffectProperty,random points,случайные очки
 EffectProperty,remove random resistance,удалить случайную сопротивляемость
 EffectProperty,remove random talent,удалить случайный талант
 EffectProperty,removes all transients,снимает все временные эффекты
 EffectProperty,reset random equipment,устанавливает случайное снаряжение
-EffectProperty,reveal,раскрыться
 EffectProperty,rigid,неподвижный
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,навыки
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,снимает заражение
 EffectProperty,unpolymorphs,снимает превращение
 EffectProperty,unpunishes,снимает наказания
 EffectProperty,whole stack,вся стопка
-EffectType,afflict,заражает
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
 EffectType,area transient,область временного эффекта
@@ -1030,15 +1023,12 @@ EffectType,create volatile,создаёт барьер
 EffectType,decapitate,отрубает голову
 EffectType,destroy item,уничтожает ценность
 EffectType,destroy volatile,убирает барьер
-EffectType,detect,находит
 EffectType,devour item,пожирает ценности
 EffectType,disarm,обезоруживает
-EffectType,divine,определяет духовность
 EffectType,drain life,вытягивает жизнь
 EffectType,drain mana,вытягивает ману
 EffectType,enchant item,зачаровывает ценность
 EffectType,engulf,проглатывает
-EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
 EffectType,extinguish volatile,убрать барьер
 EffectType,gain level,получает уровень
@@ -1055,17 +1045,13 @@ EffectType,liberate,освобождает
 EffectType,locking,запирает
 EffectType,lose skill,теряет навык
 EffectType,lose talent,теряет талант
-EffectType,malnutrition,недоедание
 EffectType,mapping,карта
 EffectType,mobilise block,призывает валун
 EffectType,murder,убивает
-EffectType,nutrition,питание
 EffectType,opening,открытие
 EffectType,pacify,усмирён
 EffectType,place curse,накладывает проклятие
-EffectType,punish,наказывает
 EffectType,raise dead,оживляет
-EffectType,recall,отзывает
 EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
 EffectType,remove transient,снимает временное
@@ -1091,7 +1077,6 @@ EffectType,unstuck,не застревает
 EffectType,visit shop,посещение магазина
 EffectType,visit shrine,посещение храма
 EffectType,visit zoo,посещение зоопарка
-EffectType,vomit,рвота
 EffectType,warping,искривление
 EggName,black dragon,чёрный дракон
 EggName,blue dragon,синий дракон
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,ДОБАВИТЬ
 LiteralText,Add new adventurer,Добавить приключенца
 LiteralText,ADJUST,ПРАВИТЬ
 LiteralText,adventurer,
+LiteralText,afflict,заражает
 LiteralText,AFFLICTED,ПОРАЖЁННЫЙ
 LiteralText,affliction?,болезнь?
 LiteralText,AFFLICTIONS,БОЛЕЗНИ
@@ -3279,6 +3265,7 @@ LiteralText,depth,уровень подземелья
 LiteralText,DESCEND TO NEXT LEVEL,СПУСК НА СЛЕДУЮЩИЙ УРОВЕНЬ
 LiteralText,destination,точка привязки
 LiteralText,destroy,уничтожить
+LiteralText,detect,находит
 LiteralText,determined by player level,определяется уровнем игрока
 LiteralText,device,механизм
 LiteralText,DEVICES,МЕХАНИЗМЫ
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,Отключить клавишу 
 LiteralText,Disable swipe gestures,Отключить жесты смахивания
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
+LiteralText,discover item,узнаёт
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,разобрать предмет для извлечения базовых материалов и чистых эссенций
 LiteralText,DISMISS,ОТПУСТИТЬ
 LiteralText,DISMOUNT,СПЕШИТЬСЯ
 LiteralText,Dismount which direction?,В каком направлении спешиться?
 LiteralText,Display dice rolls in the help,Отобразить броски костей в разделе «Помощь»
+LiteralText,divine item,определяет духовность
 LiteralText,DIVINED,ДУХОВНОСТЬ ОПРЕДЕЛЕНА
 LiteralText,divined items,определена духовность вещей
 LiteralText,Do you want to save or quit this adventure?,Вы желаете сохранить или закончить игру?
@@ -3380,9 +3369,10 @@ LiteralText,fright,испуг
 LiteralText,fumbling,неловкость
 LiteralText,GAIN KARMA,ПОВЫСИТЬ КАРМУ
 LiteralText,GAIN LEVEL,ПОВЫСИТЬ УРОВЕНЬ
-LiteralText,GAIN NUTRITION,ПОВЫСИТЬ СЫТОСТЬ
+LiteralText,gain nutrition,повысить сытость
 LiteralText,gain skill,повышение навыка
 LiteralText,gate,ворота
+LiteralText,gates,
 LiteralText,gather,собирает
 LiteralText,gender,пол
 LiteralText,genocide,геноцид
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
 LiteralText,instruct each character,приказы отдельным персонажам
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
-LiteralText,insulation,изоляция
 LiteralText,Inventory,Инвентарь
 LiteralText,INVENTORY,ИНВЕНТАРЬ
 LiteralText,ITEM,ПРЕДМЕТ
@@ -3480,7 +3469,7 @@ LiteralText,loot,добыча
 LiteralText,LOOT,ДОБЫЧА
 LiteralText,LOSE KARMA,ПОНИЗИТЬ КАРМУ
 LiteralText,LOSE LEVEL,ПОНИЗИТЬ УРОВЕНЬ
-LiteralText,LOSE NUTRITION,ПОНИЗИТЬ СЫТОСТЬ
+LiteralText,lose nutrition,понизить сытость
 LiteralText,lose skill,понижение навыка
 LiteralText,LOW MANA,МАЛО МАНЫ
 LiteralText,MAIN WIELD,ОСНОВНОЕ ОРУЖИЕ
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,Мана — 
 LiteralText,Map,Карта
 LiteralText,MAP,КАРТА
 LiteralText,material,материал
+LiteralText,materials,материалы
 LiteralText,melting,таяние
 LiteralText,MENU,МЕНЮ
 LiteralText,mercenary,наёмник
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,узник
 LiteralText,probability,вероятность:
 LiteralText,PROMOTE,ПОВЫСИТЬ
 LiteralText,PROPERTIES,СВОЙСТВА
+LiteralText,punish,наказывает
 LiteralText,PUNISHED,НАКАЗАН
 LiteralText,punishment?,наказание?
 LiteralText,PUNISHMENTS,НАКАЗАНИЯ
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Читай книги для изучен
 LiteralText,READ!,ПРОЧТИ!
 LiteralText,REALLY CRASH?,ВПРЯМЬ СЛОМАЛОСЬ?
 LiteralText,REAL-TIME,РЕАЛЬНЫЙ
+LiteralText,recall party,отзывает
 LiteralText,RE-CAST,ПОВТОРИТЬ ЗАКЛИНАНИЕ
 LiteralText,Recommend Pathos,Порекомендовать Pathos
 LiteralText,Redo,Повторить
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
 LiteralText,VOLATILES,БАРЬЕРЫ
+LiteralText,vomit,рвота
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?

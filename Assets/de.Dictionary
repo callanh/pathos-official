@@ -956,14 +956,11 @@ DietName,metalivore,Metallfresser
 DietName,omnivore,Allesfresser
 DietName,organivore,Organivore
 DietName,xylophagy,Xylophagie
-EffectProperty,afflictions,infiziert
 EffectProperty,all kind,alle Sorten
-EffectProperty,blocks,blöcke
 EffectProperty,break ally loyalty,mache Verbündete illoyal
 EffectProperty,carried,getragen
 EffectProperty,constructed,konstruiert
 EffectProperty,destruction,Zerstörung
-EffectProperty,devices,Geräte
 EffectProperty,disenchant,entzaubernd
 EffectProperty,entities,Entitäten
 EffectProperty,equipment,Ausrüstung
@@ -977,17 +974,14 @@ EffectProperty,kinds,Arten
 EffectProperty,lies,Lügen
 EffectProperty,loyal only,nur loyal
 EffectProperty,material,Material
-EffectProperty,materials,Materialien
 EffectProperty,polite,höflich
 EffectProperty,properties,Eigenschaften
-EffectProperty,punishments,Strafen
 EffectProperty,random experience,zufällige Erfahrung
 EffectProperty,random points,zufällige Punkte
 EffectProperty,remove random resistance,entfernt zufälligen Widerstand
 EffectProperty,remove random talent,entfernt zufälliges Talent
 EffectProperty,removes all transients,entfernt alle Zustände
 EffectProperty,reset random equipment,zufällige Ausrüstung zurücksetzen
-EffectProperty,reveal,aufdecken
 EffectProperty,rigid,starr
 EffectProperty,sanctity,Heiligkeit
 EffectProperty,skills,Geschick
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,heilt
 EffectProperty,unpolymorphs,Rückwandlung
 EffectProperty,unpunishes,begnadigt
 EffectProperty,whole stack,ganzer Stapel
-EffectType,afflict,infizieren
 EffectType,alert,alarmieren
 EffectType,amnesia,Amnesie
 EffectType,area transient,Umgebungszustand
@@ -1030,15 +1023,12 @@ EffectType,create volatile,erschaffe Leck
 EffectType,decapitate,enthaupten
 EffectType,destroy item,Gegenstand zerstören
 EffectType,destroy volatile,beseitige Leck
-EffectType,detect,entdecken
 EffectType,devour item,Gegenstand verschlingen
 EffectType,disarm,entwaffnen
-EffectType,divine,Deuten
 EffectType,drain life,enzieht Leben
 EffectType,drain mana,enzieht Mana
 EffectType,enchant item,Gegenstand verzaubern
 EffectType,engulf,verschlingen
-EffectType,enlightenment,Erleuchtung
 EffectType,exchange,austauschen
 EffectType,extinguish volatile,beseitige Leck
 EffectType,gain level,steigere Stufe
@@ -1055,17 +1045,13 @@ EffectType,liberate,befreien
 EffectType,locking,verriegeln
 EffectType,lose skill,verliere Übung
 EffectType,lose talent,verliere Talent
-EffectType,malnutrition,Mangelernärung
 EffectType,mapping,Kartierung
 EffectType,mobilise block,bewege Felsbrocken
 EffectType,murder,Mord
-EffectType,nutrition,Nahrung
 EffectType,opening,Öffnung
 EffectType,pacify,befrieden
 EffectType,place curse,platziere Fluch
-EffectType,punish,bestrafen
 EffectType,raise dead,erwecke Tote
-EffectType,recall,erinnern
 EffectType,release,freilassen
 EffectType,remove curse,entferne Fluch
 EffectType,remove transient,hebe Zustände auf
@@ -1091,7 +1077,6 @@ EffectType,unstuck,losgelöst
 EffectType,visit shop,besuche Laden
 EffectType,visit shrine,besuche Schrein
 EffectType,visit zoo,besuche Zoo
-EffectType,vomit,erbrechen
 EffectType,warping,deformiert
 EggName,black dragon,schwarzer Drache
 EggName,blue dragon,blauer Drache
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,EBENE HINZUFÜGEN
 LiteralText,Add new adventurer,Neuen Abenteurer hinzufügen
 LiteralText,ADJUST,EINSTELLEN
 LiteralText,adventurer,
+LiteralText,afflict,infizieren
 LiteralText,AFFLICTED,GEBRECHEN
 LiteralText,affliction?,Gebrechen?
 LiteralText,AFFLICTIONS,GEBRECHEN
@@ -3279,6 +3265,7 @@ LiteralText,depth,Tiefe
 LiteralText,DESCEND TO NEXT LEVEL,ABSTIEG ZUR NÄCHSTEN EBENE
 LiteralText,destination,Ziel
 LiteralText,destroy,zerstören
+LiteralText,detect,entdecken
 LiteralText,determined by player level,bestimmt durch die Spielerstufe
 LiteralText,device,Gerät
 LiteralText,DEVICES,FALLEN
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,Echtzeit-Leertastenfunktion deakti
 LiteralText,Disable swipe gestures,Wischgesten deaktivieren
 LiteralText,DISCONNECT,DISCONNECT
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Verbindung verloren. Bitte stelle sicher, dass die Netzwerkverbindung zuverlässig funktioniert und alle Geräte über die selbe Version von Pathos verfügen."
+LiteralText,discover item,Erleuchtung
 LiteralText,Discuss on Reddit,Diskutiere auf Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,Zerlegt Gegenstände um die Grundstoffe und die Rohstoffe zu extrahieren
 LiteralText,DISMISS,AUSBLENDEN
 LiteralText,DISMOUNT,ABSTEIGEN
 LiteralText,Dismount which direction?,In welcher Richtung absteigen?
 LiteralText,Display dice rolls in the help,Würfelwürfe anzeigen
+LiteralText,divine item,Deuten
 LiteralText,DIVINED,GEDEUTET
 LiteralText,divined items,göttliche Gegenstände
 LiteralText,Do you want to save or quit this adventure?,Möchtet ihr dieses Abenteuer speichern oder beenden?
@@ -3380,9 +3369,10 @@ LiteralText,fright,Schreck
 LiteralText,fumbling,fummeln
 LiteralText,GAIN KARMA,KARMA GESTEIGERT
 LiteralText,GAIN LEVEL,STUFE GESTEIGERT
-LiteralText,GAIN NUTRITION,NAHRUNG GESTEIGERT
+LiteralText,gain nutrition,nahrung gesteigert
 LiteralText,gain skill,Geschick gesteigert
 LiteralText,gate,Tor
+LiteralText,gates,
 LiteralText,gather,versammeln
 LiteralText,gender,Geschlecht
 LiteralText,genocide,Genozid
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,GEGENSTAND GRAVIEREN
 LiteralText,inscription?,Eingravierung?
 LiteralText,instruct each character,jeden Charakter unterrichten
 LiteralText,INSUFFICIENT GOLD,NICHT GENÜGEND GOLD
-LiteralText,insulation,Isolierung
 LiteralText,Inventory,Inventar
 LiteralText,INVENTORY,INVENTAR
 LiteralText,ITEM,GEGENSTAND
@@ -3480,7 +3469,7 @@ LiteralText,loot,Hinterlassene Beute
 LiteralText,LOOT,BEUTE
 LiteralText,LOSE KARMA,KARMA VERLOREN
 LiteralText,LOSE LEVEL,STUFE VERLOREN
-LiteralText,LOSE NUTRITION,NAHRUNG VERLOREN
+LiteralText,lose nutrition,nahrung verloren
 LiteralText,lose skill,Können verlernt
 LiteralText,LOW MANA,WENIG MANA
 LiteralText,MAIN WIELD,HAUPTHAND
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,Mana repräse
 LiteralText,Map,Karte
 LiteralText,MAP,KARTE
 LiteralText,material,Material
+LiteralText,materials,Materialien
 LiteralText,melting,schmelzen
 LiteralText,MENU,MENÜ
 LiteralText,mercenary,Söldner
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,Gefangener
 LiteralText,probability,Wahrscheinlichkeit
 LiteralText,PROMOTE,BEFÖRDERN
 LiteralText,PROPERTIES,EIGENSCHAFTEN
+LiteralText,punish,bestrafen
 LiteralText,PUNISHED,BESTRAFT
 LiteralText,punishment?,Bestrafung?
 LiteralText,PUNISHMENTS,BESTRAFUNGEN
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Lest Bücher um Zaubersprüche zu erlerne
 LiteralText,READ!,LESEN!
 LiteralText,REALLY CRASH?,WIRKLICH EINTRETEN?
 LiteralText,REAL-TIME,ECHTZEIT
+LiteralText,recall party,erinnern
 LiteralText,RE-CAST,ZAUBER WIEDERH.
 LiteralText,Recommend Pathos,Empfehle Pathos
 LiteralText,Redo,Wiederholen
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,ANSCHAUEN
 LiteralText,Visit the website,Besuche die Website
 LiteralText,VOID SPACE,LEERER RAUM
 LiteralText,VOLATILES,EMISSIONEN
+LiteralText,vomit,erbrechen
 LiteralText,vulnerable to,anfällig auf
 LiteralText,WAIT,WARTEN
 LiteralText,Wait how many turns?,Wie viele Runden warten?

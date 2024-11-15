@@ -956,14 +956,11 @@ DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,
 DietName,xylophagy,древоядный
-EffectProperty,afflictions,
 EffectProperty,all kind,все виды
-EffectProperty,blocks,
 EffectProperty,break ally loyalty,премахване лояльность союзников
 EffectProperty,carried,несомое
 EffectProperty,constructed,
 EffectProperty,destruction,
-EffectProperty,devices,устройства
 EffectProperty,disenchant,расколдовывает
 EffectProperty,entities,сущности
 EffectProperty,equipment,спанеряжение
@@ -977,17 +974,14 @@ EffectProperty,kinds,виды
 EffectProperty,lies,вранье
 EffectProperty,loyal only,
 EffectProperty,material,материал
-EffectProperty,materials,материалы
 EffectProperty,polite,
 EffectProperty,properties,свойства
-EffectProperty,punishments,наказания
 EffectProperty,random experience,случайный опыт
 EffectProperty,random points,случайные очки
 EffectProperty,remove random resistance,
 EffectProperty,remove random talent,
 EffectProperty,removes all transients,премахване все временные
 EffectProperty,reset random equipment,устанавливает случайное спанеряжение
-EffectProperty,reveal,
 EffectProperty,rigid,
 EffectProperty,sanctity,неприкосновенность
 EffectProperty,skills,умениеи
@@ -1002,7 +996,6 @@ EffectProperty,unafflicts,
 EffectProperty,unpolymorphs,премахване превращение
 EffectProperty,unpunishes,
 EffectProperty,whole stack,
-EffectType,afflict,
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
 EffectType,area transient,область временно
@@ -1030,15 +1023,12 @@ EffectType,create volatile,
 EffectType,decapitate,
 EffectType,destroy item,уничтожает ценность
 EffectType,destroy volatile,
-EffectType,detect,находит
 EffectType,devour item,
 EffectType,disarm,
-EffectType,divine,духовно
 EffectType,drain life,вытягивает жизнь
 EffectType,drain mana,вытягивает ману
 EffectType,enchant item,заклинает ценность
 EffectType,engulf,проглатывает
-EffectType,enlightenment,просвещает
 EffectType,exchange,
 EffectType,extinguish volatile,
 EffectType,gain level,получи уровень
@@ -1055,17 +1045,13 @@ EffectType,liberate,
 EffectType,locking,запирает
 EffectType,lose skill,загуби умение
 EffectType,lose talent,загуби талант
-EffectType,malnutrition,недоедание
 EffectType,mapping,карта
 EffectType,mobilise block,
 EffectType,murder,убивает
-EffectType,nutrition,питание
 EffectType,opening,открытие
 EffectType,pacify,усмирён
 EffectType,place curse,накладывает проклятие
-EffectType,punish,наказывает
 EffectType,raise dead,оживляет
-EffectType,recall,отзывает
 EffectType,release,
 EffectType,remove curse,премахване проклятье
 EffectType,remove transient,премахване временное
@@ -1091,7 +1077,6 @@ EffectType,unstuck,
 EffectType,visit shop,
 EffectType,visit shrine,
 EffectType,visit zoo,
-EffectType,vomit,
 EffectType,warping,
 EggName,black dragon,черен дракон
 EggName,blue dragon,син дракон
@@ -3121,6 +3106,7 @@ LiteralText,ADD LEVEL,
 LiteralText,Add new adventurer,
 LiteralText,ADJUST,НАСТРОЙКА
 LiteralText,adventurer,
+LiteralText,afflict,
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,
@@ -3279,6 +3265,7 @@ LiteralText,depth,
 LiteralText,DESCEND TO NEXT LEVEL,СПУСК НА СЛЕДУЮЩИЙ УРОВЕНЬ
 LiteralText,destination,
 LiteralText,destroy,уничтожить
+LiteralText,detect,находит
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,МЕХАНИЗМЫ
@@ -3304,12 +3291,14 @@ LiteralText,Disable spacebar real-time toggle,
 LiteralText,Disable swipe gestures,
 LiteralText,DISCONNECT,БЕЗ СВЯЗИ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
+LiteralText,discover item,просвещает
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
 LiteralText,dismantle items to extract the base materials and raw essence,извлечение из предметов основных материалов и эссенций
 LiteralText,DISMISS,
 LiteralText,DISMOUNT,СПЕШИТЬСЯ
 LiteralText,Dismount which direction?,В какую сторону спешиться?
 LiteralText,Display dice rolls in the help,
+LiteralText,divine item,духовно
 LiteralText,DIVINED,ДУХОВНОСТЬ ОПРЕДЕЛЕНА
 LiteralText,divined items,определена духовность вещей
 LiteralText,Do you want to save or quit this adventure?,Вие желаете сохранить или закончить игру?
@@ -3380,9 +3369,10 @@ LiteralText,fright,
 LiteralText,fumbling,неловкость
 LiteralText,GAIN KARMA,
 LiteralText,GAIN LEVEL,ПОВЫСИТЬ УРОВЕНЬ
-LiteralText,GAIN NUTRITION,ПОВЫСИТЬ СЫТНОСТЬ
+LiteralText,gain nutrition,повысить сытность
 LiteralText,gain skill,
 LiteralText,gate,
+LiteralText,gates,
 LiteralText,gather,
 LiteralText,gender,
 LiteralText,genocide,геноцид
@@ -3436,7 +3426,6 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
-LiteralText,insulation,изоляция
 LiteralText,Inventory,
 LiteralText,INVENTORY,ИНВЕНТАРЬ
 LiteralText,ITEM,
@@ -3480,7 +3469,7 @@ LiteralText,loot,добыча
 LiteralText,LOOT,ДОБЫЧА
 LiteralText,LOSE KARMA,
 LiteralText,LOSE LEVEL,ПОНИЗИТЬ УРОВЕНЬ
-LiteralText,LOSE NUTRITION,ПОНИЗИТЬ СЫТНОСТЬ
+LiteralText,lose nutrition,понизить сытность
 LiteralText,lose skill,
 LiteralText,LOW MANA,МАЛО МАНЫ
 LiteralText,MAIN WIELD,
@@ -3490,6 +3479,7 @@ LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,КАРТА
 LiteralText,material,
+LiteralText,materials,материалы
 LiteralText,melting,
 LiteralText,MENU,
 LiteralText,mercenary,наёмник
@@ -3583,6 +3573,7 @@ LiteralText,prisoner,
 LiteralText,probability,вероятность:
 LiteralText,PROMOTE,
 LiteralText,PROPERTIES,СВОЙСТВА
+LiteralText,punish,наказывает
 LiteralText,PUNISHED,
 LiteralText,punishment?,
 LiteralText,PUNISHMENTS,НАКАЗАНИЯ
@@ -3605,6 +3596,7 @@ LiteralText,Read books to learn spells,Читай книги для изучен
 LiteralText,READ!,ПРОЧТИ!
 LiteralText,REALLY CRASH?,ДЕЙСТВИТЕЛЬНО СЛОМАТЬ?
 LiteralText,REAL-TIME,РЕАЛЬНЫЙ
+LiteralText,recall party,отзывает
 LiteralText,RE-CAST,
 LiteralText,Recommend Pathos,Порекомендовать Pathos
 LiteralText,Redo,
@@ -3806,6 +3798,7 @@ LiteralText,VIEW,
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
 LiteralText,VOLATILES,
+LiteralText,vomit,
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,

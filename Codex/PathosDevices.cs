@@ -341,7 +341,7 @@ namespace Pathos
         D.Strike = Strikes.spirit;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Malnutrition(4.d50() + 200);
+        D.TriggerApply.LoseNutrition(4.d50() + 200);
       });
 
       ice_trap = AddDevice("ice trap", Difficulty: 7, RepeatDice: 4.d6(), Glyphs.ice_trap, Sonics.magic, D =>
