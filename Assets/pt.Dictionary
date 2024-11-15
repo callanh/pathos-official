@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,encantamento aumenta o dano
 LiteralText,boost defence by enchantment,encantamento aumenta a defesa
 LiteralText,boost encumbrance by enchantment,encantamento aumenta capacidade de carregar
 LiteralText,boost speed by enchantment,encantamento aumenta a velocidade
-LiteralText,boulders,pedregulhos
 LiteralText,bounces,ricocheteia
 LiteralText,broken,quebrado
 LiteralText,BROKEN,QUEBRADO
@@ -3204,7 +3203,6 @@ LiteralText,challenge,desafio
 LiteralText,CHAMPION,CAMPEÃO
 LiteralText,Character,Personagem
 LiteralText,CHARACTER,PERSONAGEM
-LiteralText,characters,personagens
 LiteralText,charged items,itens com cargas
 LiteralText,Chat on Discord,Converse no Discord
 LiteralText,check for updates?,checar atualizações?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Fabricar que item?
 LiteralText,CRASH APP!,BAAAAM!
 LiteralText,CRASH!,BAAAAM!
 LiteralText,create,criar
-LiteralText,CREATE BOULDER,CRIAR PEDREGULHO
-LiteralText,CREATE BRIDGE,CRIAR PONTE
-LiteralText,CREATE DOOR,CRIAR PORTA
+LiteralText,CREATE BARRIER,CRIAR PAREDE
+LiteralText,CREATE BLOCK,CRIAR PEDREGULHO
+LiteralText,CREATE DEVICE,CRIAR ARMADILHA
 LiteralText,CREATE ENTITY,CRIAR ENTIDADE
-LiteralText,CREATE FIXTURE,CRIAR ESTRUTURA
-LiteralText,CREATE FLOOR,CRIAR PISO
+LiteralText,CREATE FEATURE,CRIAR ESTRUTURA
+LiteralText,CREATE GATE,CRIAR PORTA
+LiteralText,CREATE GROUND,CRIAR PISO
 LiteralText,CREATE HORDE,CRIAR HORDA
 LiteralText,CREATE ITEM,CRIAR ITEM
+LiteralText,CREATE PLATFORM,CRIAR PONTE
 LiteralText,CREATE SHOP,CRIAR LOJA
 LiteralText,CREATE SHRINE,CRIAR SANTUÁRIO
-LiteralText,CREATE SPILL,CRIAR CACHOEIRA
-LiteralText,CREATE TRAP,CRIAR ARMADILHA
-LiteralText,CREATE WALL,CRIAR PAREDE
+LiteralText,CREATE VOLATILE,CRIAR CACHOEIRA
 LiteralText,Create which direction?,Criar em que direção?
 LiteralText,CREDITS,CRÉDITOS
 LiteralText,CROP,RECORTAR
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,SOBREPOR
 LiteralText,OVERVIEW,VISÃO GERAL
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPO
-LiteralText,passage,passagem
 LiteralText,passive (no attacking),passiva (sem atacar)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos pode ser jogado no modo cooperativo em tela dividida com até quatro jogadores.
 LiteralText,pathos development @ paypal,desenvolvimento do pathos no paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explore um vasto, proceduralmente gerado mapa que contém masmorras opcionais, encontros intrigantes e cenários elaborados."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão numa aventura épica pelas planícies. Tire uma folga das masmorras e embarque nessa aventura.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Caixa de areia para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e acessório das masmorra num mapa simples de duas salas."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Caixa de areia para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e acessório das masmorra num mapa simples de duas salas."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

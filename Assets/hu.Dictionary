@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,sebzés fokozása igézéssel
 LiteralText,boost defence by enchantment,védelem fokozása igézéssel
 LiteralText,boost encumbrance by enchantment,teherbírás növelése igézéssel
 LiteralText,boost speed by enchantment,sebesség növelése igézéssel
-LiteralText,boulders,sziklatömbök
 LiteralText,bounces,pattan
 LiteralText,broken,törött
 LiteralText,BROKEN,TÖRÖTT
@@ -3204,7 +3203,6 @@ LiteralText,challenge,kihívás
 LiteralText,CHAMPION,BAJNOK
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
-LiteralText,characters,karakterek
 LiteralText,charged items,feltöltött tárgyak
 LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Melyik tárgyat szeretnéd barkácsolni?
 LiteralText,CRASH APP!,DURR!
 LiteralText,CRASH!,DURR!
 LiteralText,create,létrehoz
-LiteralText,CREATE BOULDER,SZIKLATÖMB LÉTREHOZÁSA
-LiteralText,CREATE BRIDGE,HÍD LÉTREHOZÁSA
-LiteralText,CREATE DOOR,AJTÓ LÉTREHOZÁSA
+LiteralText,CREATE BARRIER,FAL LÉTREHOZÁSA
+LiteralText,CREATE BLOCK,SZIKLATÖMB LÉTREHOZÁSA
+LiteralText,CREATE DEVICE,CSAPDA LÉTREHOZÁSA
 LiteralText,CREATE ENTITY,ENTITÁS LÉTREHOZÁSA
-LiteralText,CREATE FIXTURE,TEREPTÁRGY LÉTREHOZÁSA
-LiteralText,CREATE FLOOR,TALAJ LÉTREHOZÁSA
+LiteralText,CREATE FEATURE,TEREPTÁRGY LÉTREHOZÁSA
+LiteralText,CREATE GATE,AJTÓ LÉTREHOZÁSA
+LiteralText,CREATE GROUND,TALAJ LÉTREHOZÁSA
 LiteralText,CREATE HORDE,HORDA LÉTREHOZÁSA
 LiteralText,CREATE ITEM,TÁRGY LÉTREHOZÁSA
+LiteralText,CREATE PLATFORM,HÍD LÉTREHOZÁSA
 LiteralText,CREATE SHOP,BOLT LÉTREHOZÁSA
 LiteralText,CREATE SHRINE,SZENTÉLY LÉTREHOZÁSA
-LiteralText,CREATE SPILL,
-LiteralText,CREATE TRAP,CSAPDA LÉTREHOZÁSA
-LiteralText,CREATE WALL,FAL LÉTREHOZÁSA
+LiteralText,CREATE VOLATILE,
 LiteralText,Create which direction?,Melyik irányba szeretnéd létrehozni?
 LiteralText,CREDITS,KÖZREMŰKÖDŐK
 LiteralText,CROP,LEVÁG
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
-LiteralText,passage,átjáró
 LiteralText,passive (no attacking),passzív (nincs támadás)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,"A Pathost osztott képernyőn, 4 játékos kooperatív módban is lehet játszani."
 LiteralText,pathos development @ paypal,Pathos-támogatás @ PayPal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

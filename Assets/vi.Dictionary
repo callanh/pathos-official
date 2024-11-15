@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,tăng sát thương do cường hóa
 LiteralText,boost defence by enchantment,tăng phòng thủ do cường hóa
 LiteralText,boost encumbrance by enchantment,tăng giới hạn hành trang do cường hóa
 LiteralText,boost speed by enchantment,tăng tốc độ do cường hóa
-LiteralText,boulders,các tảng đá
 LiteralText,bounces,nảy
 LiteralText,broken,hỏng
 LiteralText,BROKEN,BỊ HỎNG
@@ -3204,7 +3203,6 @@ LiteralText,challenge,thử thách
 LiteralText,CHAMPION,NHÀ VÔ ĐỊCH
 LiteralText,Character,Nhân vật
 LiteralText,CHARACTER,NHÂN VẬT
-LiteralText,characters,nhân vật
 LiteralText,charged items,vật phẩm nạp đầy
 LiteralText,Chat on Discord,Nói chuyện trên Discord
 LiteralText,check for updates?,tìm các cập nhật?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Chế tạo vật phẩm nào?
 LiteralText,CRASH APP!,SẬP ỨNG DỤNG!
 LiteralText,CRASH!,CRASH!
 LiteralText,create,tạo
-LiteralText,CREATE BOULDER,TẠO RA TẢNG ĐÁ
-LiteralText,CREATE BRIDGE,TẠO RA CẦU
-LiteralText,CREATE DOOR,TẠO RA CỬA
+LiteralText,CREATE BARRIER,TẠO RA TƯỜNG
+LiteralText,CREATE BLOCK,TẠO RA TẢNG ĐÁ
+LiteralText,CREATE DEVICE,TẠO RA BẪY
 LiteralText,CREATE ENTITY,TẠO RA THỰC THỂ
-LiteralText,CREATE FIXTURE,TẠO RA VẬT CỐ ĐỊNH
-LiteralText,CREATE FLOOR,TẠO RA SÀN NHÀ
+LiteralText,CREATE FEATURE,TẠO RA VẬT CỐ ĐỊNH
+LiteralText,CREATE GATE,TẠO RA CỬA
+LiteralText,CREATE GROUND,TẠO RA SÀN NHÀ
 LiteralText,CREATE HORDE,TẠO RA BẦY ĐÀN
 LiteralText,CREATE ITEM,TẠO RA VẬT PHẨM
+LiteralText,CREATE PLATFORM,TẠO RA CẦU
 LiteralText,CREATE SHOP,TẠO RA CỬA HÀNG
 LiteralText,CREATE SHRINE,TẠO RA ĐỀN THỜ
-LiteralText,CREATE SPILL,TẠO RA VŨNG
-LiteralText,CREATE TRAP,TẠO RA BẪY
-LiteralText,CREATE WALL,TẠO RA TƯỜNG
+LiteralText,CREATE VOLATILE,TẠO RA VŨNG
 LiteralText,Create which direction?,Tạo ở hướng nào?
 LiteralText,CREDITS,TÍN DỤNG
 LiteralText,CROP,THU NHỎ
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,GHI ĐÈ
 LiteralText,OVERVIEW,TỔNG QUÁT
 LiteralText,Palette,Palette
 LiteralText,PARTY,TỔ ĐỘI
-LiteralText,passage,lối đi
 LiteralText,passive (no attacking),hiền lành (không tấn công)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos có thể được chơi ở chế độ chia đôi màn hình với tối đa lên đến bốn người chơi.
 LiteralText,pathos development @ paypal,ủng hộ việc phát triển Pathos qua Paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Khám phá một bản đồ rộng lớn, tái tạo ngẫu nhiên chứa đầy phó bản phụ, vô số những khung cảnh được thiết kế tỉ mỉ và hàng loạt những cuộc đụng độ hấp dẫn."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Có tin tức gì trên mặt đất không? Tôi đã ở dưới này quá lâu đến độ tôi nhớ ánh nắng và thời tiết rồi.
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Bạn có biết rằng một nửa số hàng mà thương nhân bán được thu lượm từ những xác chết của những mạo hiểm giả như bạn không?
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,Tất cả mọi người đều bàn tán về cuộc xâm lăng của loài orc nhưng tôi không nghĩ nó sẽ xảy ra đâu.

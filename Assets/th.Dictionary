@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,เสริมความเสีย�
 LiteralText,boost defence by enchantment,เสริมพลังป้องกันด้วยอาคม
 LiteralText,boost encumbrance by enchantment,เสริมน้ำหนักที่แบกได้ด้วยอาคม
 LiteralText,boost speed by enchantment,เสริมความเร็วด้วยอาคม
-LiteralText,boulders,หินก้อนใหญ่
 LiteralText,bounces,กระดอน
 LiteralText,broken,พัง
 LiteralText,BROKEN,พัง
@@ -3204,7 +3203,6 @@ LiteralText,challenge,ความท้าทาย
 LiteralText,CHAMPION,แชมป์เปี้ยน
 LiteralText,Character,ตัวละคร
 LiteralText,CHARACTER,ตัวละคร
-LiteralText,characters,ตัวละคร
 LiteralText,charged items,
 LiteralText,Chat on Discord,พูดคุยกันใน Discord
 LiteralText,check for updates?,ตรวจหาการอัพเดตไหม?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,จะสร้างไอเท็มชิ้�
 LiteralText,CRASH APP!,พัง!
 LiteralText,CRASH!,พัง!
 LiteralText,create,สร้าง
-LiteralText,CREATE BOULDER,สร้างหินก้อนใหญ่
-LiteralText,CREATE BRIDGE,สร้างสะพาน
-LiteralText,CREATE DOOR,สร้างประตู
+LiteralText,CREATE BARRIER,สร้างกำแพง
+LiteralText,CREATE BLOCK,สร้างหินก้อนใหญ่
+LiteralText,CREATE DEVICE,สร้างกับดัก
 LiteralText,CREATE ENTITY,สร้างสิ่งมีตัวตน
-LiteralText,CREATE FIXTURE,สร้างของประจำที่
-LiteralText,CREATE FLOOR,สร้างพื้น
+LiteralText,CREATE FEATURE,สร้างของประจำที่
+LiteralText,CREATE GATE,สร้างประตู
+LiteralText,CREATE GROUND,สร้างพื้น
 LiteralText,CREATE HORDE,สร้างฝูง
 LiteralText,CREATE ITEM,สร้างไอเท็ม
+LiteralText,CREATE PLATFORM,สร้างสะพาน
 LiteralText,CREATE SHOP,สร้างร้านค้า
 LiteralText,CREATE SHRINE,สร้างสถานที่บูชา
-LiteralText,CREATE SPILL,
-LiteralText,CREATE TRAP,สร้างกับดัก
-LiteralText,CREATE WALL,สร้างกำแพง
+LiteralText,CREATE VOLATILE,
 LiteralText,Create which direction?,สร้างไว้ทิศไหน
 LiteralText,CREDITS,เครดิต
 LiteralText,CROP,
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,
 LiteralText,Palette,
 LiteralText,PARTY,ปาร์ตี้
-LiteralText,passage,
 LiteralText,passive (no attacking),
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,увеличение урона
 LiteralText,boost defence by enchantment,увеличение защиты
 LiteralText,boost encumbrance by enchantment,
 LiteralText,boost speed by enchantment,ускорение
-LiteralText,boulders,
 LiteralText,bounces,отскакивание
 LiteralText,broken,сломанный
 LiteralText,BROKEN,СЛОМАН
@@ -3204,7 +3203,6 @@ LiteralText,challenge,вызов
 LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,
 LiteralText,CHARACTER,ПЕРСОНАЖ
-LiteralText,characters,
 LiteralText,charged items,заряжает предметы
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Какую вещь создаване?
 LiteralText,CRASH APP!,СЛОМАНО!
 LiteralText,CRASH!,СЛОМАНО!
 LiteralText,create,
-LiteralText,CREATE BOULDER,СЪЗДАЙ ВАЛУН
-LiteralText,CREATE BRIDGE,СЪЗДАЙ МОСТ
-LiteralText,CREATE DOOR,
+LiteralText,CREATE BARRIER,
+LiteralText,CREATE BLOCK,СЪЗДАЙ ВАЛУН
+LiteralText,CREATE DEVICE,СЪЗДАЙ ЛОВУШКУ
 LiteralText,CREATE ENTITY,СЪЗДАЙ СУЩЕСТВО
-LiteralText,CREATE FIXTURE,СЪЗДАЙ МЕХАНИЗМ
-LiteralText,CREATE FLOOR,СЪЗДАЙ ПОЛ
+LiteralText,CREATE FEATURE,СЪЗДАЙ МЕХАНИЗМ
+LiteralText,CREATE GATE,
+LiteralText,CREATE GROUND,СЪЗДАЙ ПОЛ
 LiteralText,CREATE HORDE,СЪЗДАЙ ОРДУ
 LiteralText,CREATE ITEM,СЪЗДАЙ ПРЕДМЕТ
+LiteralText,CREATE PLATFORM,СЪЗДАЙ МОСТ
 LiteralText,CREATE SHOP,СЪЗДАЙ МАГАЗИН
 LiteralText,CREATE SHRINE,СЪЗДАЙ ХРАМ
-LiteralText,CREATE SPILL,
-LiteralText,CREATE TRAP,СЪЗДАЙ ЛОВУШКУ
-LiteralText,CREATE WALL,
+LiteralText,CREATE VOLATILE,
 LiteralText,Create which direction?,Создаване в каком направлении?
 LiteralText,CREDITS,БЛАГОДАРНОСТИ
 LiteralText,CROP,
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,ОБЗОР
 LiteralText,Palette,
 LiteralText,PARTY,ОТРЯД
-LiteralText,passage,
 LiteralText,passive (no attacking),
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,разработка pathos @ paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Виейдите за границы подземелий и приступайте к выполнению Квеста.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, капанми и подземными механизмами на простой двухкомнатной карте."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, капанми и подземными механизмами на простой двухкомнатной карте."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

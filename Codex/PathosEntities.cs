@@ -17658,7 +17658,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.poison);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3(), K =>
         {
-          K.Apply.PolymorphItemAndEntityAndTrap();
+          K.Apply.PolymorphEntity(); // can only rewrite DNA.
         }); // +1 from str.
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.polymorph, 1.d500() + 750));
         E.Conveyance.Macro(Poisoned(Attributes.strength));

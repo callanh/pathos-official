@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,傷害加成
 LiteralText,boost defence by enchantment,防禦加成
 LiteralText,boost encumbrance by enchantment,負重加成
 LiteralText,boost speed by enchantment,速度加成
-LiteralText,boulders,巨石
 LiteralText,bounces,彈跳
 LiteralText,broken,破裂的
 LiteralText,BROKEN,破裂
@@ -3204,7 +3203,6 @@ LiteralText,challenge,挑戰性
 LiteralText,CHAMPION,冠軍
 LiteralText,Character,角色
 LiteralText,CHARACTER,角色
-LiteralText,characters,角色
 LiteralText,charged items,已充能物品
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,檢查更新嗎？
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,要造什麼？
 LiteralText,CRASH APP!,衝開！
 LiteralText,CRASH!,衝開！
 LiteralText,create,創造
-LiteralText,CREATE BOULDER,創造巨石
-LiteralText,CREATE BRIDGE,創造橋樑
-LiteralText,CREATE DOOR,創造門
+LiteralText,CREATE BARRIER,創造牆壁
+LiteralText,CREATE BLOCK,創造巨石
+LiteralText,CREATE DEVICE,創造陷阱
 LiteralText,CREATE ENTITY,創造實體
-LiteralText,CREATE FIXTURE,創造固定物
-LiteralText,CREATE FLOOR,創造樓層
+LiteralText,CREATE FEATURE,創造固定物
+LiteralText,CREATE GATE,創造門
+LiteralText,CREATE GROUND,創造樓層
 LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
+LiteralText,CREATE PLATFORM,創造橋樑
 LiteralText,CREATE SHOP,創造商店
 LiteralText,CREATE SHRINE,創造遺跡
-LiteralText,CREATE SPILL,創造環境效果
-LiteralText,CREATE TRAP,創造陷阱
-LiteralText,CREATE WALL,創造牆壁
+LiteralText,CREATE VOLATILE,創造環境效果
 LiteralText,Create which direction?,向哪個方向創造？
 LiteralText,CREDITS,製作者
 LiteralText,CROP,重置樓層面積
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,覆寫
 LiteralText,OVERVIEW,總覽
 LiteralText,Palette,調色板
 LiteralText,PARTY,隊伍
-LiteralText,passage,通道
 LiteralText,passive (no attacking),被動（無攻擊）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos可以以分屏合作模式為最多四名玩家遊玩。
 LiteralText,pathos development @ paypal,pathos development @ paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",探索一張龐大的、程序生成的陸上地圖，包含地牢支線、精心製作的佈景和有趣的邂逅。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工設計的地圖，地表世界的傳奇冒險。脫離幽深禁閉的地牢，進行更具挑戰的冒險。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房間和無盡的秘密等著你去探索，但是不要沉溺在其中，長時間停留在某一層會招致死亡。基於《破碎像素地牢》生成的地圖。
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",沙盒模式可以用來實驗Pathos的機制。您可以在兩個房間的簡易地圖內試驗所有物品、陷阱與地牢機關。
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",沙盒模式可以用來實驗Pathos的機制。您可以在兩個房間的簡易地圖內試驗所有物品、陷阱與地牢機關。
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地面那邊有什麼新鮮事嗎？我在這下面待太久了，很想念陽光和空氣。
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,你知道嗎？那些商人賣的東西裡，一半都來自你這樣的冒險者——的屍體。
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,每個人都在討論什麼獸人屠城。這種事情怎麼可能會發生呢？

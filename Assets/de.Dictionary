@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,Schaden durch Verzauberung steigern
 LiteralText,boost defence by enchantment,Verteidigungswert durch Verzauberung steigern
 LiteralText,boost encumbrance by enchantment,Belastung durch Verzauberung steigern
 LiteralText,boost speed by enchantment,Geschwindigkeit durch Verzauberung steigern
-LiteralText,boulders,Felsbrocken
 LiteralText,bounces,springt
 LiteralText,broken,zerbrochen
 LiteralText,BROKEN,ZERBROCHEN
@@ -3204,7 +3203,6 @@ LiteralText,challenge,Herausforderung
 LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Charakter
 LiteralText,CHARACTER,CHARAKTER
-LiteralText,characters,Charaktere
 LiteralText,charged items,aufgeladene Gegenstände
 LiteralText,Chat on Discord,Chatte auf Discord
 LiteralText,check for updates?,auf Updates prüfen?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Welchen Gegenstand herstellen?
 LiteralText,CRASH APP!,ABSTURZ!
 LiteralText,CRASH!,KRACH!
 LiteralText,create,erschaffe
-LiteralText,CREATE BOULDER,FELSBLOCK ERSTELLEN
-LiteralText,CREATE BRIDGE,BRÜCKE ERSTELLEN
-LiteralText,CREATE DOOR,TÜR ERSTELLEN
+LiteralText,CREATE BARRIER,WAND ERSTELLEN
+LiteralText,CREATE BLOCK,FELSBLOCK ERSTELLEN
+LiteralText,CREATE DEVICE,FALLE ERSTELLEN
 LiteralText,CREATE ENTITY,ENTITÄT ERSTELLEN
-LiteralText,CREATE FIXTURE,EINRICHTUNG ERSTELLEN
-LiteralText,CREATE FLOOR,BODEN ERSTELLEN
+LiteralText,CREATE FEATURE,EINRICHTUNG ERSTELLEN
+LiteralText,CREATE GATE,TÜR ERSTELLEN
+LiteralText,CREATE GROUND,BODEN ERSTELLEN
 LiteralText,CREATE HORDE,HORDE ERSTELLEN
 LiteralText,CREATE ITEM,GEGENSTAND ERSTELLEN
+LiteralText,CREATE PLATFORM,BRÜCKE ERSTELLEN
 LiteralText,CREATE SHOP,GESCHÄFT ERSTELLEN
 LiteralText,CREATE SHRINE,SCHREIN ERSTELLEN
-LiteralText,CREATE SPILL,LECK ERSTELLEN
-LiteralText,CREATE TRAP,FALLE ERSTELLEN
-LiteralText,CREATE WALL,WAND ERSTELLEN
+LiteralText,CREATE VOLATILE,LECK ERSTELLEN
 LiteralText,Create which direction?,In welcher Richtung erstellen?
 LiteralText,CREDITS,CREDITS
 LiteralText,CROP,ERNTE
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,ÜBERSCHREIBEN
 LiteralText,OVERVIEW,ÜBERBLICK
 LiteralText,Palette,Palette
 LiteralText,PARTY,GEFÄHRTEN
-LiteralText,passage,Passage
 LiteralText,passive (no attacking),passiv (kein Angriff)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos kann im Split-Screen Kooperationsmodus mit bis zu vier Spielern gespielt werden.
 LiteralText,pathos development @ paypal,Pathos-Entwicklung @ Paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Entdeckt eine weite, prozedural erschaffene Landkarte mit zahlreichen Dungeons, kunstvollen Ausrüstungssets und bestechenden Konfrontationen."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Handgefertigte Karten in einem epischen Überlandabenteuer. Macht eine Pause von den Mauern des Verlieses und begebt euch auf eine herausfordernde Aufgabe.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Interessante Räume und Geheimnisse warten auf Sie. Verweilt aber nicht; es heisst weiter hinabsteigen oder sterben. Basierend auf der Kartengenerierung aus Shattered Pixel Dungeon.
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Sandkasten zum Experimentieren mit der Spielmechanik von Pathos. Probiert alle Gegenstände, Fallen und Einrichtungen auf einer einfachen Karte mit zwei Räumen aus."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Sandkasten zum Experimentieren mit der Spielmechanik von Pathos. Probiert alle Gegenstände, Fallen und Einrichtungen auf einer einfachen Karte mit zwei Räumen aus."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

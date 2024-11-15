@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,увеличение урона зача
 LiteralText,boost defence by enchantment,увеличение защиты зачаровыванием
 LiteralText,boost encumbrance by enchantment,увеличение обременения зачаровыванием
 LiteralText,boost speed by enchantment,увеличение скорости зачаровыванием
-LiteralText,boulders,валуны
 LiteralText,bounces,отскакивание
 LiteralText,broken,сломанный
 LiteralText,BROKEN,СЛОМАН
@@ -3204,7 +3203,6 @@ LiteralText,challenge,вызов
 LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
-LiteralText,characters,существ
 LiteralText,charged items,заряжает предметы
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Какую вещь создать?
 LiteralText,CRASH APP!,СБОЙ ПРИЛОЖЕНИЯ!
 LiteralText,CRASH!,СЛОМАНО!
 LiteralText,create,создать
-LiteralText,CREATE BOULDER,СОЗДАТЬ ВАЛУН
-LiteralText,CREATE BRIDGE,СОЗДАТЬ МОСТ
-LiteralText,CREATE DOOR,СОЗДАТЬ ДВЕРЬ
+LiteralText,CREATE BARRIER,СОЗДАТЬ СТЕНУ
+LiteralText,CREATE BLOCK,СОЗДАТЬ ВАЛУН
+LiteralText,CREATE DEVICE,СОЗДАТЬ ЛОВУШКУ
 LiteralText,CREATE ENTITY,СОЗДАТЬ СУЩЕСТВО
-LiteralText,CREATE FIXTURE,СОЗДАТЬ МЕХАНИЗМ
-LiteralText,CREATE FLOOR,СОЗДАТЬ ПОЛ
+LiteralText,CREATE FEATURE,СОЗДАТЬ МЕХАНИЗМ
+LiteralText,CREATE GATE,СОЗДАТЬ ДВЕРЬ
+LiteralText,CREATE GROUND,СОЗДАТЬ ПОЛ
 LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
 LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
+LiteralText,CREATE PLATFORM,СОЗДАТЬ МОСТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
 LiteralText,CREATE SHRINE,СОЗДАТЬ ХРАМ
-LiteralText,CREATE SPILL,СОЗДАТЬ БАРЬЕР
-LiteralText,CREATE TRAP,СОЗДАТЬ ЛОВУШКУ
-LiteralText,CREATE WALL,СОЗДАТЬ СТЕНУ
+LiteralText,CREATE VOLATILE,СОЗДАТЬ БАРЬЕР
 LiteralText,Create which direction?,В каком направлении создать?
 LiteralText,CREDITS,БЛАГОДАРНОСТИ
 LiteralText,CROP,ОБРЕЗАТЬ
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,ПОЛЬЗОВАТЕЛЬСКИЙ
 LiteralText,OVERVIEW,ОБЩИЙ ОБЗОР
 LiteralText,Palette,Панель инструментов
 LiteralText,PARTY,ОТРЯД
-LiteralText,passage,переход
 LiteralText,passive (no attacking),пассивный (не атакует)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,В Pathos можно играть в кооперативном режиме с разделением экрана до четырёх игроков.
 LiteralText,pathos development @ paypal,разработка pathos @ paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Исследуйте огромную процедурно-генерируемую карту поверхности, содержащую множество дополнительных подземелий, интересных декораций и увлекательных встреч."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Созданные вручную карты для приключений на поверхности. Выйдите за границы подземелий и приступайте к выполнению Квеста.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, ловушками и подземными механизмами на простой двухкомнатной карте."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Песочница для экспериментов с игровой механикой Pathos. Поиграйте с каждой вещью, ловушками и подземными механизмами на простой двухкомнатной карте."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

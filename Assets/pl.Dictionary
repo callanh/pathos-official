@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,wzmocnienie obrażeń przez zaklęcie
 LiteralText,boost defence by enchantment,wzmocnienie obrony przez zaklęcie
 LiteralText,boost encumbrance by enchantment,zwiększenie obciążenia przez zaklęcie
 LiteralText,boost speed by enchantment,zwiększenie prędkości przez zaklęcie
-LiteralText,boulders,głazy
 LiteralText,bounces,odbija
 LiteralText,broken,zepsuty
 LiteralText,BROKEN,ZEPSUTY
@@ -3204,7 +3203,6 @@ LiteralText,challenge,wyzwanie
 LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Postać
 LiteralText,CHARACTER,POSTAĆ
-LiteralText,characters,postacie
 LiteralText,charged items,pozycje obciążone
 LiteralText,Chat on Discord,Rozmowy na Discordzie
 LiteralText,check for updates?,sprawdzić aktualizacje?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Jaki przedmiot?
 LiteralText,CRASH APP!,CRASH!
 LiteralText,CRASH!,CRASH!
 LiteralText,create,utwórz
-LiteralText,CREATE BOULDER,UTWÓRZ BAŃKĘ
-LiteralText,CREATE BRIDGE,UTWÓRZ MOST
-LiteralText,CREATE DOOR,UTWÓRZ DRZWI
+LiteralText,CREATE BARRIER,STWÓRZ ŚCIANE
+LiteralText,CREATE BLOCK,UTWÓRZ BAŃKĘ
+LiteralText,CREATE DEVICE,STWÓRZ PUŁAPKĘ
 LiteralText,CREATE ENTITY,UTWÓRZ BYT
-LiteralText,CREATE FIXTURE,UTWÓRZ STRUKTURĘ
-LiteralText,CREATE FLOOR,UTWÓRZ PODŁOGĘ
+LiteralText,CREATE FEATURE,UTWÓRZ STRUKTURĘ
+LiteralText,CREATE GATE,UTWÓRZ DRZWI
+LiteralText,CREATE GROUND,UTWÓRZ PODŁOGĘ
 LiteralText,CREATE HORDE,STWÓRZ HORDE
 LiteralText,CREATE ITEM,STWÓRZ PRZEDMIOT
+LiteralText,CREATE PLATFORM,UTWÓRZ MOST
 LiteralText,CREATE SHOP,STWÓRZ SKLEP
 LiteralText,CREATE SHRINE,STWÓRZ KAPLICĘ
-LiteralText,CREATE SPILL,
-LiteralText,CREATE TRAP,STWÓRZ PUŁAPKĘ
-LiteralText,CREATE WALL,STWÓRZ ŚCIANE
+LiteralText,CREATE VOLATILE,
 LiteralText,Create which direction?,Tworzyć w którym kierunku?
 LiteralText,CREDITS,CREDITS
 LiteralText,CROP,CROP
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,OVERRIDE
 LiteralText,OVERVIEW,PRZEGLĄD
 LiteralText,Palette,Paleta
 LiteralText,PARTY,TOWARZYSZE
-LiteralText,passage,przejście
 LiteralText,passive (no attacking),pasywny (nie atakuje)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,W Pathos można grać w trybie współpracy na podzielonym ekranie z maksymalnie czterema graczami.
 LiteralText,pathos development @ paypal,pathos development @ paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Ręcznie projektowane mapy w epickiej przygodzie na lądzie. Zrób sobie przerwę od ograniczeń lochu i wyrusz na pełną wyzwań wyprawę.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Ciekawe pokoje i tajemnice czekają. Ale nie zwlekaj!. Musisz zejść lub zginąć. Oparte na generowaniu map z Shattered Pixel Dungeon.
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Piaskownica do eksperymentowania z mechaniką Pathos. Baw się każdym przedmiotem, pułapką i elementem wyposażenia lochu na prostej mapie składającej się z dwóch pomieszczeń."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Piaskownica do eksperymentowania z mechaniką Pathos. Baw się każdym przedmiotem, pułapką i elementem wyposażenia lochu na prostej mapie składającej się z dwóch pomieszczeń."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

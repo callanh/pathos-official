@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,קסם מחזק נזק
 LiteralText,boost defence by enchantment,קסם מחזק הגנה
 LiteralText,boost encumbrance by enchantment,קסם מחזק יכולת נשיאה
 LiteralText,boost speed by enchantment,קסם מחזק מהירות
-LiteralText,boulders,סלעים
 LiteralText,bounces,ניתורים
 LiteralText,broken,במצב שבור
 LiteralText,BROKEN,במצב שבור
@@ -3204,7 +3203,6 @@ LiteralText,challenge,הסתערות
 LiteralText,CHAMPION,אליפות
 LiteralText,Character,דמות
 LiteralText,CHARACTER,דמות
-LiteralText,characters,דמויות
 LiteralText,charged items,חפצים טעונים
 LiteralText,Chat on Discord,לדבר בדיסקורד
 LiteralText,check for updates?,לבדוק עדכונים?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,איזה חפץ ליצור?
 LiteralText,CRASH APP!,האפליקציה קרסה!
 LiteralText,CRASH!,קריסה!
 LiteralText,create,ליצור
-LiteralText,CREATE BOULDER,ליצור סלע
-LiteralText,CREATE BRIDGE,ליצור גשר
-LiteralText,CREATE DOOR,ליצור דלת
+LiteralText,CREATE BARRIER,ליצור קיר
+LiteralText,CREATE BLOCK,ליצור סלע
+LiteralText,CREATE DEVICE,ליצור מלכודת
 LiteralText,CREATE ENTITY,ליצור יישות
-LiteralText,CREATE FIXTURE,ליצור מתקן
-LiteralText,CREATE FLOOR,ליצור רצפה
+LiteralText,CREATE FEATURE,ליצור מתקן
+LiteralText,CREATE GATE,ליצור דלת
+LiteralText,CREATE GROUND,ליצור רצפה
 LiteralText,CREATE HORDE,ליצור נחיל
 LiteralText,CREATE ITEM,ליצור חפץ
+LiteralText,CREATE PLATFORM,ליצור גשר
 LiteralText,CREATE SHOP,ליצור חנות
 LiteralText,CREATE SHRINE,ליצור מקדש
-LiteralText,CREATE SPILL,ליצור דליפה
-LiteralText,CREATE TRAP,ליצור מלכודת
-LiteralText,CREATE WALL,ליצור קיר
+LiteralText,CREATE VOLATILE,ליצור דליפה
 LiteralText,Create which direction?,ליצור באיזה כיוון?
 LiteralText,CREDITS,קרדיטים
 LiteralText,CROP,חיתוך
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,עקיפה
 LiteralText,OVERVIEW,סקירה
 LiteralText,Palette,ערכת צבעים
 LiteralText,PARTY,חבורה
-LiteralText,passage,מעבר
 LiteralText,passive (no attacking),(במצב פאסיבי (בלי לתקוף
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,אפשר לשחק בפאתוס במצב שיתופי במסך מפוצל עד ארבעה שחקנים.
 LiteralText,pathos development @ paypal,בפייפאל pathos development
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","הדמות שלך חוקרת מפה מעל פני האדמה, שכוללת מבוכים צדדיים, רקע מוקפד ומפגשים מסקרנים."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,מפות שצויירו ביד בהרפתקה אפית מעל פני האדמה. הדמות שלך יכולה להתרענן מהמבוכים המחניקים ולצאת להרפתקה מאתגרת.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"חדרים וסודות מעניינים מחכים לך, אבל אסור לך להתמהמה. הדמות שלך חייבת להמשיך לרדת או שהיא תמות. מבוסס על בניית המפה של שאטרד פיקסל דאנג'ן."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","ארגז חול שאפשר להתנסות בו במכניקה של פאתוס, ולשחק עם כל חפץ, מלכודת ומתקן של המבוך במפה פשוטה של שני חדרים."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","ארגז חול שאפשר להתנסות בו במכניקה של פאתוס, ולשחק עם כל חפץ, מלכודת ומתקן של המבוך במפה פשוטה של שני חדרים."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

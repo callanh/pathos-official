@@ -9220,7 +9220,7 @@ namespace Pathos
               C =>
               {
                 C.TransitionRandom(Properties.teleportation, Dice.One);
-                C.TeleportInventoryItem(); // good bye equipment!
+                C.TeleportInventoryItem();
               }
             )
           );

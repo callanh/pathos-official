@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,renforce les dégâts
 LiteralText,boost defence by enchantment,renforce la défense
 LiteralText,boost encumbrance by enchantment,augmenter la capacité d'encombrement par enchantement
 LiteralText,boost speed by enchantment,renforce la vitesse
-LiteralText,boulders,rochers
 LiteralText,bounces,rebondit
 LiteralText,broken,cassée
 LiteralText,BROKEN,CASSÉÉ
@@ -3204,7 +3203,6 @@ LiteralText,challenge,défi
 LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Personnage
 LiteralText,CHARACTER,PERSONNAGE
-LiteralText,characters,personnages
 LiteralText,charged items,objets chargés
 LiteralText,Chat on Discord,Chat sur Discord
 LiteralText,check for updates?,vérifier les mises à jour ?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Fabriquer quel objet ?
 LiteralText,CRASH APP!,CRASH!
 LiteralText,CRASH!,CRASH!
 LiteralText,create,créer
-LiteralText,CREATE BOULDER,CRÉER UN BLOC DE ROCHE
-LiteralText,CREATE BRIDGE,CRÉER LE PONT
-LiteralText,CREATE DOOR,CRÉER UNE PORTE
+LiteralText,CREATE BARRIER,CRÉER UN MUR
+LiteralText,CREATE BLOCK,CRÉER UN BLOC DE ROCHE
+LiteralText,CREATE DEVICE,CRÉER UN PIÈGE
 LiteralText,CREATE ENTITY,CRÉER UNE ENTITÉ
-LiteralText,CREATE FIXTURE,CRÉER UNE FIXATION
-LiteralText,CREATE FLOOR,CRÉER UN SOL
+LiteralText,CREATE FEATURE,CRÉER UNE FIXATION
+LiteralText,CREATE GATE,CRÉER UNE PORTE
+LiteralText,CREATE GROUND,CRÉER UN SOL
 LiteralText,CREATE HORDE,CRÉER UNE HORDE
 LiteralText,CREATE ITEM,CRÉER UN OBJET
+LiteralText,CREATE PLATFORM,CRÉER LE PONT
 LiteralText,CREATE SHOP,CRÉER UNE BOUTIQUE
 LiteralText,CREATE SHRINE,CRÉER UN MAUSOLÉE
-LiteralText,CREATE SPILL,CRÉER UN DÉVERSEMENT
-LiteralText,CREATE TRAP,CRÉER UN PIÈGE
-LiteralText,CREATE WALL,CRÉER UN MUR
+LiteralText,CREATE VOLATILE,CRÉER UN DÉVERSEMENT
 LiteralText,Create which direction?,Créer dans quelle direction ?
 LiteralText,CREDITS,CRÉDITS
 LiteralText,CROP,RECADREMENT
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,REJETER
 LiteralText,OVERVIEW,VUE D'ENSEMBLE
 LiteralText,Palette,Palette
 LiteralText,PARTY,COMPAGNONS
-LiteralText,passage,passage
 LiteralText,passive (no attacking),passif (sans attaquer)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos peut être joué en mode demi-écran coopératif jusqu'à quatre joueurs.
 LiteralText,pathos development @ paypal,pathos development @ Paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explorez une vaste carte terrestre générée de manière procédurale contenant des donjons secondaires, des décors élaborés et des rencontres intrigantes."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Des cartes conçues à la main pour une aventure épique à la surface. Oubliez les donjons confinés pour un temps et embarquez-vous dans une quête palpitante et difficile.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Des salles intéressantes et des secrets vous attendent, mais ne traînez pas: vous devez descendre ou mourir. Basé sur la génération de carte de Shattered Pixel Dungeon."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Bac à Sable pour expérimenter les mécaniques de Pathos. Jouez avec chaque objet, piège et donjon dans une carte simple réduite à deux chambres."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Bac à Sable pour expérimenter les mécaniques de Pathos. Jouez avec chaque objet, piège et donjon dans une carte simple réduite à deux chambres."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

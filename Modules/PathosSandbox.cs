@@ -13,7 +13,7 @@ namespace Pathos
       : base(
           Handle: "sandbox play",
           Name: "Sandbox Play",
-          Description: "Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",
+          Description: "Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",
           Colour: Inv.Colour.DarkGoldenrod,
           Author: "Callan Hodgskin", Email: "hodgskin.callan@gmail.com",
           RequiresMasterMode: true)

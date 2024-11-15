@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,修正値に応じてダメージを強�
 LiteralText,boost defence by enchantment,修正値に応じて防御値を強化
 LiteralText,boost encumbrance by enchantment,修正値に応じて重い荷物を持てる
 LiteralText,boost speed by enchantment,修正値に応じてスピードを強化
-LiteralText,boulders,障害物
 LiteralText,bounces,壁ではね返る
 LiteralText,broken,壊れた
 LiteralText,BROKEN,壊れた
@@ -3204,7 +3203,6 @@ LiteralText,challenge,チャレンジ
 LiteralText,CHAMPION,チャンピオン
 LiteralText,Character,キャラクター
 LiteralText,CHARACTER,キャラクター
-LiteralText,characters,キャラクター
 LiteralText,charged items,使用回数があるアイテム
 LiteralText,Chat on Discord,Discordでチャット
 LiteralText,check for updates?,アップデートを確認しますか？
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,どのアイテムを作る？
 LiteralText,CRASH APP!,強制終了！
 LiteralText,CRASH!,バァン！
 LiteralText,create,生成
-LiteralText,CREATE BOULDER,障害物を作成
-LiteralText,CREATE BRIDGE,橋を作成
-LiteralText,CREATE DOOR,扉を作成
+LiteralText,CREATE BARRIER,壁を作成
+LiteralText,CREATE BLOCK,障害物を作成
+LiteralText,CREATE DEVICE,罠を作成
 LiteralText,CREATE ENTITY,モンスターを生成
-LiteralText,CREATE FIXTURE,設備を作成
-LiteralText,CREATE FLOOR,床を作成
+LiteralText,CREATE FEATURE,設備を作成
+LiteralText,CREATE GATE,扉を作成
+LiteralText,CREATE GROUND,床を作成
 LiteralText,CREATE HORDE,群れを作成
 LiteralText,CREATE ITEM,アイテムを作成
+LiteralText,CREATE PLATFORM,橋を作成
 LiteralText,CREATE SHOP,店を作成
 LiteralText,CREATE SHRINE,社を作成
-LiteralText,CREATE SPILL,地形効果が発生
-LiteralText,CREATE TRAP,罠を作成
-LiteralText,CREATE WALL,壁を作成
+LiteralText,CREATE VOLATILE,地形効果が発生
 LiteralText,Create which direction?,どの方向に作成する？
 LiteralText,CREDITS,クレジット
 LiteralText,CROP,トリミング
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,変更後
 LiteralText,OVERVIEW,全階層
 LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
-LiteralText,passage,通路
 LiteralText,passive (no attacking),受動的（攻撃しない）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathosは最大4人までのプレイヤーとの分割スクリーン共同モードで遊ぶことができます。
 LiteralText,pathos development @ paypal,Pathos開発の為に、PayPalで
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成によって散りばめられた広大な地上マップを探索しましょう。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地表の様子はどうかね？ここに降りてから長いこといるから、太陽や雨風が恋しいもんだ。
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,知ってるか？ここで売られてるものの半分は、おまえみたいな冒険者の遺品から来てるんだと。
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,みんなオークが侵略してくるって言ってるけど、そんなこと絶対起こらないんじゃないかな。

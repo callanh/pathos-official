@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,aumenta danno per incantamento
 LiteralText,boost defence by enchantment,aumenta difesa per incantamento
 LiteralText,boost encumbrance by enchantment,aumenta ingombro per incantamento
 LiteralText,boost speed by enchantment,aumenta velocità per incantamento
-LiteralText,boulders,massi
 LiteralText,bounces,rimbalza
 LiteralText,broken,rotto
 LiteralText,BROKEN,ROTTO
@@ -3204,7 +3203,6 @@ LiteralText,challenge,sfida
 LiteralText,CHAMPION,CAMPIONE
 LiteralText,Character,Personaggio
 LiteralText,CHARACTER,PERSONAGGIO
-LiteralText,characters,personaggi
 LiteralText,charged items,oggetti caricati
 LiteralText,Chat on Discord,Chatta su Discord (solo in inglese)
 LiteralText,check for updates?,controlla disponibilità aggiornamenti?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Quale oggetto fabbricare?
 LiteralText,CRASH APP!,CRASHA APPLICAZIONE!
 LiteralText,CRASH!,CRASHA!
 LiteralText,create,crea
-LiteralText,CREATE BOULDER,CREA MASSO
-LiteralText,CREATE BRIDGE,CREA PONTE
-LiteralText,CREATE DOOR,CREA PORTA
+LiteralText,CREATE BARRIER,CREA MURO
+LiteralText,CREATE BLOCK,CREA MASSO
+LiteralText,CREATE DEVICE,CREA TRAPPOLA
 LiteralText,CREATE ENTITY,CREA ENTITA'
-LiteralText,CREATE FIXTURE,CREA TRAPPOLA
-LiteralText,CREATE FLOOR,CREA PIANO
+LiteralText,CREATE FEATURE,CREA TRAPPOLA
+LiteralText,CREATE GATE,CREA PORTA
+LiteralText,CREATE GROUND,CREA PIANO
 LiteralText,CREATE HORDE,CREA ORDA
 LiteralText,CREATE ITEM,CREA OGGETTO
+LiteralText,CREATE PLATFORM,CREA PONTE
 LiteralText,CREATE SHOP,CREA NEGOZIO
 LiteralText,CREATE SHRINE,CREA SANTUARIO
-LiteralText,CREATE SPILL,CREA SVERSAMENTO
-LiteralText,CREATE TRAP,CREA TRAPPOLA
-LiteralText,CREATE WALL,CREA MURO
+LiteralText,CREATE VOLATILE,CREA SVERSAMENTO
 LiteralText,Create which direction?,In quale direzione creare?
 LiteralText,CREDITS,CREDITI
 LiteralText,CROP,TAGLIA
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,RIMPIAZZA
 LiteralText,OVERVIEW,PANORAMICA
 LiteralText,Palette,Palette
 LiteralText,PARTY,SQUADRA
-LiteralText,passage,passaggio
 LiteralText,passive (no attacking),passivo (non sta attaccando)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos può essere giocato in split-screen con 4 giocatori sullo stesso dispositivo.
 LiteralText,pathos development @ paypal,Pathos su Paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Esplora una vasta landa generata proceduralmente contenente località esotiche, dungeon nuovi di zecca e pericolosi scontri. Sarai all'altezza di questa nuova sfida?"
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Avventurati in questa mappa creata ad-hoc per andare alla ricerca dei segreti delle chiavi del drago. Prenditi una pausa dai confini dei sotterranei e lanciati in questa nuova avventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Stanze barocche e segreti misteriosi ti attendono ma non indugiare; dovrai scendere o morire. Basato sulla mappa di Shattered Pixel Dungeon.
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.",Per sperimentare con le meccaniche di Pathos. Gioca con ogni oggetto e trappola del dungeon in una semplice mappa a due stanze.
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",Per sperimentare con le meccaniche di Pathos. Gioca con ogni oggetto e trappola del dungeon in una semplice mappa a due stanze.
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

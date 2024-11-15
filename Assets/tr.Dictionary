@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,hasarı geliştir
 LiteralText,boost defence by enchantment,savunmayı geliştir
 LiteralText,boost encumbrance by enchantment,
 LiteralText,boost speed by enchantment,hızı geliştirir
-LiteralText,boulders,kayalar
 LiteralText,bounces,sekmeler
 LiteralText,broken,kırık
 LiteralText,BROKEN,KIRIK
@@ -3204,7 +3203,6 @@ LiteralText,challenge,meydan okuma
 LiteralText,CHAMPION,ŞAMPİYON
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
-LiteralText,characters,karakterler
 LiteralText,charged items,şarjlı itemler
 LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Hangi eşyayı oluştur?
 LiteralText,CRASH APP!,KÜT!
 LiteralText,CRASH!,KÜT!
 LiteralText,create,yarat
-LiteralText,CREATE BOULDER,KAYA OLUŞTUR
-LiteralText,CREATE BRIDGE,KÖPRÜ OLUŞTUR
-LiteralText,CREATE DOOR,KAPI OLUŞTUR
+LiteralText,CREATE BARRIER,DUVAR YARAT
+LiteralText,CREATE BLOCK,KAYA OLUŞTUR
+LiteralText,CREATE DEVICE,TUZAK OLUŞTUR
 LiteralText,CREATE ENTITY,CANLI OLUŞTUR
-LiteralText,CREATE FIXTURE,MÖBLE OLUŞTUR
-LiteralText,CREATE FLOOR,YER OLUŞTUR
+LiteralText,CREATE FEATURE,MÖBLE OLUŞTUR
+LiteralText,CREATE GATE,KAPI OLUŞTUR
+LiteralText,CREATE GROUND,YER OLUŞTUR
 LiteralText,CREATE HORDE,ORDU OLUŞTUR
 LiteralText,CREATE ITEM,EŞYA OLUŞTUR
+LiteralText,CREATE PLATFORM,KÖPRÜ OLUŞTUR
 LiteralText,CREATE SHOP,DÜKKAN OLUŞTUR
 LiteralText,CREATE SHRINE,TAPINAK OLUŞTUR
-LiteralText,CREATE SPILL,
-LiteralText,CREATE TRAP,TUZAK OLUŞTUR
-LiteralText,CREATE WALL,DUVAR YARAT
+LiteralText,CREATE VOLATILE,
 LiteralText,Create which direction?,Hangi yöne oluştur?
 LiteralText,CREDITS,KATKIDA BULUNANLAR
 LiteralText,CROP,KIRP
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
-LiteralText,passage,
 LiteralText,passive (no attacking),pasif (saldırgan değil)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,Pathos'un gelişimine Paypal'dan
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Dağlardan ovalardan geçen el yapımı bir macera. Zindanın limitlerinden kurtul ve zorlayıcı bir maceraya atıl.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,

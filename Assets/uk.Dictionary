@@ -3178,7 +3178,6 @@ LiteralText,boost damage by enchantment,магічне збільшення уш
 LiteralText,boost defence by enchantment,магічне покращення захисту
 LiteralText,boost encumbrance by enchantment,посилити обтяження зачарованістю
 LiteralText,boost speed by enchantment,магічне прискорення
-LiteralText,boulders,валуни
 LiteralText,bounces,відскок
 LiteralText,broken,зламаний
 LiteralText,BROKEN,ЗЛАМАНО
@@ -3204,7 +3203,6 @@ LiteralText,challenge,виклик
 LiteralText,CHAMPION,ЧЕМПІОНИ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
-LiteralText,characters,персонажі
 LiteralText,charged items,заряджає предмети
 LiteralText,Chat on Discord,Сервер в Discord
 LiteralText,check for updates?,Перевірити наявність оновлень?
@@ -3243,19 +3241,19 @@ LiteralText,Craft which item?,Яку річ створити?
 LiteralText,CRASH APP!,ХРЯСЬ!
 LiteralText,CRASH!,ХРЯСЬ!
 LiteralText,create,створити
-LiteralText,CREATE BOULDER,СТВОРИТИ БРИЛУ
-LiteralText,CREATE BRIDGE,СТВОРИТИ МІСТ
-LiteralText,CREATE DOOR,СТВОРИТИ ДВЕРІ
+LiteralText,CREATE BARRIER,СТВОРИТИ СТІНУ
+LiteralText,CREATE BLOCK,СТВОРИТИ БРИЛУ
+LiteralText,CREATE DEVICE,СТВОРИТИ ПАСТКУ
 LiteralText,CREATE ENTITY,СТВОРИТИ ІСТОТУ
-LiteralText,CREATE FIXTURE,СТВОРИТИ МЕХАНІЗМ
-LiteralText,CREATE FLOOR,СТВОРИТИ ПІДЛОГУ
+LiteralText,CREATE FEATURE,СТВОРИТИ МЕХАНІЗМ
+LiteralText,CREATE GATE,СТВОРИТИ ДВЕРІ
+LiteralText,CREATE GROUND,СТВОРИТИ ПІДЛОГУ
 LiteralText,CREATE HORDE,СТВОРИТИ ОРДУ
 LiteralText,CREATE ITEM,СТВОРИТИ ПРЕДМЕТ
+LiteralText,CREATE PLATFORM,СТВОРИТИ МІСТ
 LiteralText,CREATE SHOP,СТВОРИТИ МАГАЗИН
 LiteralText,CREATE SHRINE,СТВОРИТИ ХРАМ
-LiteralText,CREATE SPILL,СТВОРИТИ ЛУЖУ
-LiteralText,CREATE TRAP,СТВОРИТИ ПАСТКУ
-LiteralText,CREATE WALL,СТВОРИТИ СТІНУ
+LiteralText,CREATE VOLATILE,СТВОРИТИ ЛУЖУ
 LiteralText,Create which direction?,Створити в якому напрямку?
 LiteralText,CREDITS,ПОДЯКИ
 LiteralText,CROP,УРОЖАЙ
@@ -3549,7 +3547,6 @@ LiteralText,OVERRIDE,ЗАМІСТИТИ
 LiteralText,OVERVIEW,ОГЛЯД
 LiteralText,Palette,Палітра
 LiteralText,PARTY,ГРУПА
-LiteralText,passage,прохід
 LiteralText,passive (no attacking),пасивний (не нападає)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,У грі є режим розділеного екрану. Підтримується до чотирьох гравців включно.
 LiteralText,pathos development @ paypal,Підтримайте Pathos у Paypal
@@ -3880,7 +3877,7 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Досліджуйте величезну, процедурно згенеровану карту місцевості, що містить побічні підземелля, складні декорації та захоплюючі зустрічі."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Створені вручну карти для пригод на поверхні. Вийдіть з підземелля і відправтеся на виконання Квесту.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"На вас чекають цікаві кімнати, але не затримуйтеся; маєте спускатися або померти. Основане на генераторі з Shattered Pixel Dungeon."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon fixture in a simple two room map.","Пісочниця для експериментів з ігровою механікою Pathos. Пограйте з кожною річчю, пастками і механізмами нашого підземелля на простий двокімнатній карті."
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Пісочниця для експериментів з ігровою механікою Pathos. Пограйте з кожною річчю, пастками і механізмами нашого підземелля на простий двокімнатній карті."
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
