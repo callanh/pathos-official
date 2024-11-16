@@ -114,7 +114,7 @@ namespace Pathos
           B.Description = "Learn the divine status of all carried items.";
           B.Cost = 50;
           B.SetCast().Strike(Strikes.magic, Dice.Zero);
-          B.Apply.Divine();
+          B.Apply.DivineItem();
         });
 
         S.AddBoon("rejuvenate", B =>
@@ -147,9 +147,9 @@ namespace Pathos
           B.Description = "Restore any lost ability and remove any negative transient conditions.";
           B.Cost = 150;
           B.SetCast().Strike(Strikes.spirit, Dice.One);
-          B.Apply.Unafflict();
-          B.Apply.Unpunish();
-          B.Apply.Unpolymorph();
+          B.Apply.UnafflictEntity();
+          B.Apply.UnpunishEntity();
+          B.Apply.UnpolymorphEntity();
           B.Apply.RestoreAbility();
           B.Apply.RemoveTransient(Codex.Properties.List.Where(P => P.Unwanted).ToArray());
         });
@@ -241,7 +241,7 @@ namespace Pathos
           B.Description = "Use nature magic to grow the power of your ally.";
           B.Cost = 200;
           B.SetCast().Strike(Strikes.spirit, Dice.One);
-          B.Apply.Growth();
+          B.Apply.GrowEntity();
         });
 
         S.AddBoon("bless", B =>
@@ -343,7 +343,7 @@ namespace Pathos
           B.Description = "Determine the enchantment and charges of all carried items.";
           B.Cost = 50;
           B.SetCast().Strike(Strikes.psychic, Dice.Zero);
-          B.Apply.Assess();
+          B.Apply.AssessItem();
         });
 
         S.AddBoon("rename", B =>
@@ -387,7 +387,7 @@ namespace Pathos
           B.Description = "Partially recharge a spent item.";
           B.Cost = 250;
           B.SetCast().FilterCharged();
-          B.Apply.Charging(Dice.One, Dice.Fixed(75)); // 75%
+          B.Apply.ChargingItem(Dice.One, Dice.Fixed(75)); // 75%
         });
 
         S.AddBoon("reforge", B =>

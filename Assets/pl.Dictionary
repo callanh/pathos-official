@@ -962,24 +962,17 @@ EffectProperty,fixed,naprawione
 EffectProperty,loyal only,
 EffectProperty,polite,polite
 EffectProperty,rigid,sztywny
-EffectType,alert,alarmuje
-EffectType,amnesia,amnezja
 EffectType,blinking,błyskanie
 EffectType,capture,przechwycenie
 EffectType,clone entity,sklonuj postać
-EffectType,concealing,zakrywanie
-EffectType,connect portal,
 EffectType,convert barrier,zmień ściany
-EffectType,convert block to barrier,zmień głaz
 EffectType,convert gate,zmień drzwi
 EffectType,convert ground,zmień podłogę
 EffectType,convert volatile,
-EffectType,create golem,stwórz golema
 EffectType,create nook,stworzyć zakątek
 EffectType,create volatile,
 EffectType,decapitate,ściąć głowę
 EffectType,destroy volatile,
-EffectType,devour item,usuń majątek
 EffectType,disarm,rozbrój
 EffectType,drain life,wyssanie życia
 EffectType,drain mana,wyssanie many
@@ -988,14 +981,11 @@ EffectType,engulf,pochłoń
 EffectType,exchange,wymiana
 EffectType,extinguish volatile,
 EffectType,grapple,chwyt
-EffectType,growth,przyrost
 EffectType,hatch,właz
 EffectType,identify,rozpoznanie
-EffectType,impersonate,wciel się w
 EffectType,incarcerate,uwięź
 EffectType,karma,Karma
 EffectType,liberate,wyzwolić
-EffectType,locking,blokada
 EffectType,mobilise block,
 EffectType,opening,otwarcie
 EffectType,place curse,klątwa miejsca
@@ -1004,18 +994,12 @@ EffectType,release,wydanie
 EffectType,remove curse,zdjąć klątwę
 EffectType,restock,uzupełnić zapasy
 EffectType,restore ability,przywrócić zdolność
-EffectType,sacrifice,poświęcenie
 EffectType,sanctify,uświęcić
-EffectType,searching,wyszukiwanie
 EffectType,spawn entity,spawn postaci
 EffectType,teleport entity,teleportować postać
 EffectType,teleport item away,teleportować się
 EffectType,tinning,Tinning
 EffectType,transition,przejście
-EffectType,unafflict,niedostępny
-EffectType,unpolymorph,niepolimorficzny
-EffectType,unpunish,bezkarny
-EffectType,unstuck,
 EffectType,visit shop,odwiedź sklep
 EffectType,visit shrine,odzwiedź kaplicę
 EffectType,visit zoo,odwiedzić zoo
@@ -3055,11 +3039,11 @@ LiteralText,afflict,dolega
 LiteralText,AFFLICTED,AFFLICTED
 LiteralText,affliction?,dolegliwości?
 LiteralText,AFFLICTIONS,DOLEGLIWOŚCI
+LiteralText,alerting,alarmuje
 LiteralText,alias?,alias?
 LiteralText,ALL,WSZYSTKO
 LiteralText,ALL AT ONCE,WSZYSTKO NARAZ
 LiteralText,all kind,wszelkiego rodzaju
-LiteralText,all levels,
 LiteralText,always,zawsze
 LiteralText,AMBIENT SOUNDS,DŹWIĘKI OTOCZENIA
 LiteralText,amnesia,amnezja
@@ -3162,8 +3146,10 @@ LiteralText,companion,towarzysz
 LiteralText,compression,kompresja
 LiteralText,CONCEAL,UKRYJ
 LiteralText,CONCEALED,UKRYTY
+LiteralText,concealing,zakrywanie
 LiteralText,CONDUCT,KONDYCJA
 LiteralText,CONFIRM,POTWIERDŹ
+LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,Połącz się z grą prowadzoną przez innego gracza.
 LiteralText,CONSOLE,KONSOLA
 LiteralText,constructed,zbudowane
@@ -3172,6 +3158,7 @@ LiteralText,Continue,Kontynuuj
 LiteralText,CONTINUE,KONTYNUUJ
 LiteralText,CONTROLLED,KONTROLOWANY
 LiteralText,convert,
+LiteralText,convert block to barrier,zmień głaz
 LiteralText,conveyance,przeniesienie
 LiteralText,COPY,KOPIUJ
 LiteralText,corpse,zwłoki
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,STWÓRZ PUŁAPKĘ
 LiteralText,CREATE ENTITY,UTWÓRZ BYT
 LiteralText,CREATE FEATURE,UTWÓRZ STRUKTURĘ
 LiteralText,CREATE GATE,UTWÓRZ DRZWI
+LiteralText,create golem,stwórz golema
 LiteralText,CREATE GROUND,UTWÓRZ PODŁOGĘ
 LiteralText,CREATE HORDE,STWÓRZ HORDE
 LiteralText,CREATE ITEM,STWÓRZ PRZEDMIOT
@@ -3224,6 +3212,7 @@ LiteralText,detect,odkryj
 LiteralText,determined by player level,określony przez poziom gracza
 LiteralText,device,urządzenie
 LiteralText,DEVICES,URZĄDZENIA
+LiteralText,devour item,usuń majątek
 LiteralText,DIAGNOSTICS,DIAGNOSTYKA
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,chciwość
 LiteralText,grimoire,grimoire
 LiteralText,ground,grunt
 LiteralText,GROUNDS,GRUNTY
+LiteralText,grow entity,przyrost
 LiteralText,GUIDES,PORADY
 LiteralText,HALL of FAME,HALA SŁAW
 LiteralText,hatched by,wylęgany przez
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,ILUZJA
 LiteralText,immune to,odporny na
 LiteralText,immunities,immunitety
 LiteralText,impact,uderzenie
+LiteralText,impersonate entity,wciel się w
 LiteralText,IMPORT,IMPORT
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,NIEMOŻLIWE
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,LOCK
 LiteralText,locked,zamknięty
 LiteralText,LOCKED,ZAMKNIĘTE
 LiteralText,locked scaling mode,zablokowany tryb skalowania
+LiteralText,locking,blokada
 LiteralText,loot,łup
 LiteralText,LOOT,ŁUP
 LiteralText,LOSE KARMA,TRACISZ KARME
@@ -3550,6 +3542,7 @@ LiteralText,RACES,RASY
 LiteralText,random,losowo
 LiteralText,RANDOM,LOSOWO
 LiteralText,random dungeon seed,losowe ziarno lochu
+LiteralText,random level,
 LiteralText,random points,losowe punkty
 LiteralText,rank,ranking
 LiteralText,rarity,rzadkość
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,PRAWY PIERŚCIEŃ
 LiteralText,rigid,sztywny
 LiteralText,ROTATE,OBRÓĆ
 LiteralText,rumour,plotki
+LiteralText,sacrifice item,poświęcenie
 LiteralText,SANITY CHECK,KONTROLA STANU ZDROWIA
 LiteralText,SAVE,ZAPISZ
 LiteralText,SAVE & QUIT,ZAPISZ I WYJDŹ
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,ZŁOM
 LiteralText,SEALED,ZAPIECZĘTOWANE
 LiteralText,Search,Szukaj
 LiteralText,Search how many turns?,Ile tur szukać?
+LiteralText,searching,wyszukiwanie
 LiteralText,secret,sekret
 LiteralText,SECRET,SEKRET
 LiteralText,seed,ziarno
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,turowa
 LiteralText,turns,tury
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Wpisz dowolne słowo lub frazę, aby wygenerować losowe ziarno lochu."
 LiteralText,unable to load,nie można załadować
-LiteralText,unafflicts,nie dotyczy
+LiteralText,unafflict,nie dotyczy
 LiteralText,UNDEAD,NIEUMARŁY
 LiteralText,Undo,Cofnij
 LiteralText,unidentified items,niezidentyfikowane przedmioty
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,UNIKALNY
 LiteralText,UNLOCK,ODBLOKUJ
 LiteralText,unlock door or container,ODBLOKUJ DRZWI I POJEMNIKI
 LiteralText,UNLOCKED,ODBLOKOWANY
-LiteralText,unpolymorphs,depolimorfizuje
-LiteralText,unpunishes,wyzwala się z kary
+LiteralText,unpolymorph,depolimorfizuje
+LiteralText,unpunish,wyzwala się z kary
 LiteralText,unskilled,niewykwalifikowany
 LiteralText,UNSKILLED,NIEWYKWALIFIKOWANY
+LiteralText,unstuck,
 LiteralText,UNTRAP,ROZBROIĆ
 LiteralText,UNTRAPPED,ROZBROIĆ
 LiteralText,update available,dostępna aktualizacja

@@ -962,24 +962,17 @@ EffectProperty,fixed,被抓住
 EffectProperty,loyal only,保留盟友關係
 EffectProperty,polite,友善
 EffectProperty,rigid,堅硬
-EffectType,alert,警覺
-EffectType,amnesia,失憶
 EffectType,blinking,閃現
 EffectType,capture,捕捉
 EffectType,clone entity,克隆角色
-EffectType,concealing,隱匿
-EffectType,connect portal,連接通道
 EffectType,convert barrier,轉換牆壁
-EffectType,convert block to barrier,轉換巨石
 EffectType,convert gate,轉換門
 EffectType,convert ground,轉換地面
 EffectType,convert volatile,轉換環境效果
-EffectType,create golem,製造魔像
 EffectType,create nook,製造角落
 EffectType,create volatile,製造環境效果
 EffectType,decapitate,斬首
 EffectType,destroy volatile,移除環境效果
-EffectType,devour item,吞食物品
 EffectType,disarm,繳械
 EffectType,drain life,吸取生命
 EffectType,drain mana,吸取魔力
@@ -988,14 +981,11 @@ EffectType,engulf,吞嚥
 EffectType,exchange,交換
 EffectType,extinguish volatile,消除環境效果
 EffectType,grapple,抓鉤
-EffectType,growth,成長
 EffectType,hatch,孵化
 EffectType,identify,鑒定
-EffectType,impersonate,模仿
 EffectType,incarcerate,禁錮
 EffectType,karma,運程
 EffectType,liberate,解放
-EffectType,locking,鎖住
 EffectType,mobilise block,移動巨石
 EffectType,opening,開啟
 EffectType,place curse,詛咒
@@ -1004,18 +994,12 @@ EffectType,release,釋放
 EffectType,remove curse,去除詛咒
 EffectType,restock,重新進貨
 EffectType,restore ability,復原能力
-EffectType,sacrifice,獻祭
 EffectType,sanctify,神聖化
-EffectType,searching,搜索
 EffectType,spawn entity,產生角色
 EffectType,teleport entity,傳送角色
 EffectType,teleport item away,傳送到別處
 EffectType,tinning,罐裝
 EffectType,transition,轉變
-EffectType,unafflict,治癒感染
-EffectType,unpolymorph,取消變形
-EffectType,unpunish,取消懲罰
-EffectType,unstuck,不再被卡住
 EffectType,visit shop,訪問商店
 EffectType,visit shrine,訪問神龕
 EffectType,visit zoo,訪問動物園
@@ -3055,11 +3039,11 @@ LiteralText,afflict,感染
 LiteralText,AFFLICTED,被感染
 LiteralText,affliction?,感染症狀
 LiteralText,AFFLICTIONS,感染
+LiteralText,alerting,警覺
 LiteralText,alias?,命名
 LiteralText,ALL,所有
 LiteralText,ALL AT ONCE,所有同時
 LiteralText,all kind,所有種類
-LiteralText,all levels,
 LiteralText,always,100%
 LiteralText,AMBIENT SOUNDS,周圍聲音
 LiteralText,amnesia,失憶
@@ -3162,8 +3146,10 @@ LiteralText,companion,隊友
 LiteralText,compression,壓縮
 LiteralText,CONCEAL,隱藏
 LiteralText,CONCEALED,隱藏
+LiteralText,concealing,隱匿
 LiteralText,CONDUCT,計數
 LiteralText,CONFIRM,確認
+LiteralText,connect portal,連接通道
 LiteralText,Connect to game hosted by another player.,連接其他玩家創建的遊戲
 LiteralText,CONSOLE,控制台
 LiteralText,constructed,創造
@@ -3172,6 +3158,7 @@ LiteralText,Continue,繼續
 LiteralText,CONTINUE,繼續
 LiteralText,CONTROLLED,控制的
 LiteralText,convert,
+LiteralText,convert block to barrier,轉換巨石
 LiteralText,conveyance,食用
 LiteralText,COPY,複製
 LiteralText,corpse,屍體
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,創造陷阱
 LiteralText,CREATE ENTITY,創造實體
 LiteralText,CREATE FEATURE,創造固定物
 LiteralText,CREATE GATE,創造門
+LiteralText,create golem,製造魔像
 LiteralText,CREATE GROUND,創造樓層
 LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
@@ -3224,6 +3212,7 @@ LiteralText,detect,偵測
 LiteralText,determined by player level,由玩家等級決定
 LiteralText,device,陷阱
 LiteralText,DEVICES,陷阱
+LiteralText,devour item,吞食物品
 LiteralText,DIAGNOSTICS,調試
 LiteralText,DIALOGUE,對話
 LiteralText,dialogue?,聊聊天？
@@ -3345,6 +3334,7 @@ LiteralText,greed,貪婪
 LiteralText,grimoire,魔法書
 LiteralText,ground,地面
 LiteralText,GROUNDS,地面
+LiteralText,grow entity,成長
 LiteralText,GUIDES,指南
 LiteralText,HALL of FAME,名人堂
 LiteralText,hatched by,由……孵化
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,幻象
 LiteralText,immune to,免疫
 LiteralText,immunities,免疫
 LiteralText,impact,衝擊
+LiteralText,impersonate entity,模仿
 LiteralText,IMPORT,導入
 LiteralText,Import a file,請輸入文件
 LiteralText,IMPOSSIBLE,不可能
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,鎖住
 LiteralText,locked,上鎖的
 LiteralText,LOCKED,上鎖了
 LiteralText,locked scaling mode,鎖定縮放模式
+LiteralText,locking,鎖住
 LiteralText,loot,物資
 LiteralText,LOOT,物資
 LiteralText,LOSE KARMA,失去運程
@@ -3550,6 +3542,7 @@ LiteralText,RACES,種族
 LiteralText,random,隨機
 LiteralText,RANDOM,隨機
 LiteralText,random dungeon seed,隨機地牢種子
+LiteralText,random level,
 LiteralText,random points,隨機分數
 LiteralText,rank,階級
 LiteralText,rarity,稀有程度
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
 LiteralText,ROTATE,旋轉
 LiteralText,rumour,流言
+LiteralText,sacrifice item,獻祭
 LiteralText,SANITY CHECK,兼容性測試
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存與退出
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,分解
 LiteralText,SEALED,密封
 LiteralText,Search,搜索
 LiteralText,Search how many turns?,要搜索多少回合呢？
+LiteralText,searching,搜索
 LiteralText,secret,暗門
 LiteralText,SECRET,秘密
 LiteralText,seed,種子
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,回合制
 LiteralText,turns,回合
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,輸入任何英文字母或短句來創造一個地牢種子
 LiteralText,unable to load,無法讀取
-LiteralText,unafflicts,取消感染
+LiteralText,unafflict,取消感染
 LiteralText,UNDEAD,不死生物時
 LiteralText,Undo,撤銷
 LiteralText,unidentified items,未經辨認的物品
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,獨特單位
 LiteralText,UNLOCK,開鎖
 LiteralText,unlock door or container,開鎖任何門或容器
 LiteralText,UNLOCKED,開鎖
-LiteralText,unpolymorphs,取消變形
-LiteralText,unpunishes,取消懲罰
+LiteralText,unpolymorph,取消變形
+LiteralText,unpunish,取消懲罰
 LiteralText,unskilled,生疏
 LiteralText,UNSKILLED,生疏
+LiteralText,unstuck,不再被卡住
 LiteralText,UNTRAP,拆除
 LiteralText,UNTRAPPED,已拆除
 LiteralText,update available,更新可用

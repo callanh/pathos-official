@@ -1316,7 +1316,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10());
         E.AddAttack(AttackTypes.touch, Elements.physical, 1.d10(), A =>
         {
-          A.Apply.Impersonate();
+          A.Apply.ImpersonateEntity();
         });
         E.SetCorpse(Chance.Never);
       });
@@ -6062,12 +6062,12 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4(), K => // +2 from str.
         {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Disenchant(Dice.One));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.DisenchantItem(Dice.One));
         });
         E.AddRetaliation(Chance.OneIn4, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because it may not target the correct asset?
-          R.Apply.Disenchant(Dice.One);
+          R.Apply.DisenchantItem(Dice.One);
         });
         E.Conveyance.LoseTalent(Property: null);
         E.SetCorpse(Chance.Always);
@@ -15545,7 +15545,7 @@ namespace Pathos
         {
           // TODO: can't use cast, because strikes do not correctly target the source asset.
           //R.SetCast().Strike(Strikes.magic, Dice.One);
-          R.Apply.Disenchant(Dice.One);
+          R.Apply.DisenchantItem(Dice.One);
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.mithril_long_sword);
@@ -16665,7 +16665,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.sleep);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d12(), A =>
         {
-          A.Apply.Impersonate();
+          A.Apply.ImpersonateEntity();
         });
         E.Conveyance.PolymorphEntity();
         E.SetCorpse(Chance.OneIn3);
@@ -25446,7 +25446,7 @@ namespace Pathos
         {
           A.Apply.ApplyTransient(Properties.fumbling, 4.d10());
         });
-        E.Conveyance.Unafflict();
+        E.Conveyance.UnafflictEntity();
         E.Conveyance.RestoreAbility();
         E.Conveyance.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.confusion, Properties.stunned, Properties.petrifying, Properties.fumbling);
         E.Conveyance.WhenTargetKind(new[] { Kinds.fairy }, T =>

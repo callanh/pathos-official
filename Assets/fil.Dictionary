@@ -962,24 +962,17 @@ EffectProperty,fixed,
 EffectProperty,loyal only,
 EffectProperty,polite,
 EffectProperty,rigid,
-EffectType,alert,alerto
-EffectType,amnesia,amnesya
 EffectType,blinking,pag-blink
 EffectType,capture,pag-capture
 EffectType,clone entity,pag-clone ng character
-EffectType,concealing,pag-conceal
-EffectType,connect portal,
 EffectType,convert barrier,
-EffectType,convert block to barrier,pag-convert ng boulder
 EffectType,convert gate,
 EffectType,convert ground,pag-convert ng sahig
 EffectType,convert volatile,
-EffectType,create golem,paggawa ng golem
 EffectType,create nook,paggawa ng nook
 EffectType,create volatile,
 EffectType,decapitate,
 EffectType,destroy volatile,
-EffectType,devour item,pagkonsumo ng asset
 EffectType,disarm,pag-disarm
 EffectType,drain life,pag-drain ng life
 EffectType,drain mana,pag-drain ng mana
@@ -988,14 +981,11 @@ EffectType,engulf,pag-engulfed
 EffectType,exchange,pagkapalit
 EffectType,extinguish volatile,
 EffectType,grapple,pag-grapple
-EffectType,growth,pag-laki
 EffectType,hatch,pag-hatch
 EffectType,identify,pag-identify
-EffectType,impersonate,pag-impersonate
 EffectType,incarcerate,pag-incarcerate
 EffectType,karma,
 EffectType,liberate,pag-liberate
-EffectType,locking,pag-lock
 EffectType,mobilise block,
 EffectType,opening,pagbukas
 EffectType,place curse,paglagay ng sumpa
@@ -1004,18 +994,12 @@ EffectType,release,pag-release
 EffectType,remove curse,pagtanggal ng sumpa
 EffectType,restock,pag-restock
 EffectType,restore ability,pag-restore ng ability
-EffectType,sacrifice,pag-sacrifice
 EffectType,sanctify,pag-sanctify
-EffectType,searching,pag-search
 EffectType,spawn entity,pag-spawn ng character
 EffectType,teleport entity,pagteleport ng character
 EffectType,teleport item away,
 EffectType,tinning,
 EffectType,transition,pag-transition
-EffectType,unafflict,
-EffectType,unpolymorph,
-EffectType,unpunish,
-EffectType,unstuck,
 EffectType,visit shop,pagbisita sa shop
 EffectType,visit shrine,pagbisita sa shrine
 EffectType,visit zoo,pagbisita sa zoo
@@ -3055,11 +3039,11 @@ LiteralText,afflict,pag-afflict
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,
+LiteralText,alerting,alerto
 LiteralText,alias?,
 LiteralText,ALL,
 LiteralText,ALL AT ONCE,
 LiteralText,all kind,
-LiteralText,all levels,
 LiteralText,always,
 LiteralText,AMBIENT SOUNDS,
 LiteralText,amnesia,
@@ -3162,8 +3146,10 @@ LiteralText,companion,
 LiteralText,compression,
 LiteralText,CONCEAL,
 LiteralText,CONCEALED,
+LiteralText,concealing,pag-conceal
 LiteralText,CONDUCT,
 LiteralText,CONFIRM,
+LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,
 LiteralText,CONSOLE,
 LiteralText,constructed,
@@ -3172,6 +3158,7 @@ LiteralText,Continue,
 LiteralText,CONTINUE,
 LiteralText,CONTROLLED,
 LiteralText,convert,
+LiteralText,convert block to barrier,pag-convert ng boulder
 LiteralText,conveyance,
 LiteralText,COPY,
 LiteralText,corpse,
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,
 LiteralText,CREATE ENTITY,
 LiteralText,CREATE FEATURE,
 LiteralText,CREATE GATE,
+LiteralText,create golem,paggawa ng golem
 LiteralText,CREATE GROUND,
 LiteralText,CREATE HORDE,
 LiteralText,CREATE ITEM,
@@ -3224,6 +3212,7 @@ LiteralText,detect,pag-detect
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,
+LiteralText,devour item,pagkonsumo ng asset
 LiteralText,DIAGNOSTICS,
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,
 LiteralText,grimoire,
 LiteralText,ground,
 LiteralText,GROUNDS,
+LiteralText,grow entity,pag-laki
 LiteralText,GUIDES,
 LiteralText,HALL of FAME,
 LiteralText,hatched by,
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,
 LiteralText,immune to,
 LiteralText,immunities,
 LiteralText,impact,
+LiteralText,impersonate entity,pag-impersonate
 LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,
 LiteralText,locked,
 LiteralText,LOCKED,
 LiteralText,locked scaling mode,
+LiteralText,locking,pag-lock
 LiteralText,loot,
 LiteralText,LOOT,
 LiteralText,LOSE KARMA,
@@ -3550,6 +3542,7 @@ LiteralText,RACES,
 LiteralText,random,
 LiteralText,RANDOM,
 LiteralText,random dungeon seed,
+LiteralText,random level,
 LiteralText,random points,
 LiteralText,rank,
 LiteralText,rarity,
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
 LiteralText,rumour,pag-rumour
+LiteralText,sacrifice item,pag-sacrifice
 LiteralText,SANITY CHECK,
 LiteralText,SAVE,
 LiteralText,SAVE & QUIT,
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
+LiteralText,searching,pag-search
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,
 LiteralText,turns,
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,
 LiteralText,unable to load,
-LiteralText,unafflicts,
+LiteralText,unafflict,
 LiteralText,UNDEAD,
 LiteralText,Undo,
 LiteralText,unidentified items,
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,
 LiteralText,UNLOCK,
 LiteralText,unlock door or container,
 LiteralText,UNLOCKED,
-LiteralText,unpolymorphs,
-LiteralText,unpunishes,
+LiteralText,unpolymorph,
+LiteralText,unpunish,
 LiteralText,unskilled,
 LiteralText,UNSKILLED,
+LiteralText,unstuck,
 LiteralText,UNTRAP,
 LiteralText,UNTRAPPED,
 LiteralText,update available,

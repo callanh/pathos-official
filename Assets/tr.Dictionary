@@ -962,24 +962,17 @@ EffectProperty,fixed,
 EffectProperty,loyal only,
 EffectProperty,polite,nazik
 EffectProperty,rigid,
-EffectType,alert,dikkat çek
-EffectType,amnesia,hafızayı kaybet
 EffectType,blinking,sıçramak
 EffectType,capture,yakala
 EffectType,clone entity,karakteri klonla
-EffectType,concealing,gizle
-EffectType,connect portal,
 EffectType,convert barrier,duvarı dönüştür
-EffectType,convert block to barrier,kayayı dönüştür
 EffectType,convert gate,kapıyı dönüştür
 EffectType,convert ground,zemini dönüştür
 EffectType,convert volatile,
-EffectType,create golem,golem oluştur
 EffectType,create nook,kuytu köşe yarat
 EffectType,create volatile,
 EffectType,decapitate,uzuv kaybet
 EffectType,destroy volatile,
-EffectType,devour item,varlık yiyip bitir
 EffectType,disarm,silahsızlaştır
 EffectType,drain life,can em
 EffectType,drain mana,mana em
@@ -988,14 +981,11 @@ EffectType,engulf,yut
 EffectType,exchange,değiş
 EffectType,extinguish volatile,
 EffectType,grapple,tut
-EffectType,growth,büyü
 EffectType,hatch,kabuğu kır
 EffectType,identify,tanımla
-EffectType,impersonate,taklit et
 EffectType,incarcerate,hapset
 EffectType,karma,karma
 EffectType,liberate,özgürleştir
-EffectType,locking,kilitle
 EffectType,mobilise block,
 EffectType,opening,açıklık
 EffectType,place curse,lanet yerleştir
@@ -1004,18 +994,12 @@ EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
 EffectType,restock,tekrar doldur
 EffectType,restore ability,kabiliyeti geri kazan
-EffectType,sacrifice,kurban et
 EffectType,sanctify,kutsallaştır
-EffectType,searching,ara
 EffectType,spawn entity,karakter yarat
 EffectType,teleport entity,karakteri ışınla
 EffectType,teleport item away,ışınlanarak çık
 EffectType,tinning,kalaylama
 EffectType,transition,değişme
-EffectType,unafflict,bela kaldır
-EffectType,unpolymorph,asıl şekline geri dön
-EffectType,unpunish,ceza kaldır
-EffectType,unstuck,
 EffectType,visit shop,dükkana git
 EffectType,visit shrine,tapınağa git
 EffectType,visit zoo,habitata git
@@ -3055,11 +3039,11 @@ LiteralText,afflict,bela et
 LiteralText,AFFLICTED,ETKİLENDİ
 LiteralText,affliction?,taraf?
 LiteralText,AFFLICTIONS,BELALAR
+LiteralText,alerting,dikkat çek
 LiteralText,alias?,takma ad?
 LiteralText,ALL,HEPSİ
 LiteralText,ALL AT ONCE,HEPSİ BİRDEN
 LiteralText,all kind,her türler
-LiteralText,all levels,
 LiteralText,always,her zaman
 LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
 LiteralText,amnesia,unutkanlık
@@ -3162,8 +3146,10 @@ LiteralText,companion,dost
 LiteralText,compression,sıkıştırma
 LiteralText,CONCEAL,SAKLA
 LiteralText,CONCEALED,SAKLI
+LiteralText,concealing,gizle
 LiteralText,CONDUCT,EYLEM
 LiteralText,CONFIRM,ONAYLA
+LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,Başka oyuncu tarafından kurulmuş bir oyuna katıl.
 LiteralText,CONSOLE,KONSOL
 LiteralText,constructed,
@@ -3172,6 +3158,7 @@ LiteralText,Continue,Devam et
 LiteralText,CONTINUE,DEVAM ET
 LiteralText,CONTROLLED,KONTROL ALTINDA
 LiteralText,convert,
+LiteralText,convert block to barrier,kayayı dönüştür
 LiteralText,conveyance,nakil
 LiteralText,COPY,KOPYALA
 LiteralText,corpse,ceset
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,TUZAK OLUŞTUR
 LiteralText,CREATE ENTITY,CANLI OLUŞTUR
 LiteralText,CREATE FEATURE,MÖBLE OLUŞTUR
 LiteralText,CREATE GATE,KAPI OLUŞTUR
+LiteralText,create golem,golem oluştur
 LiteralText,CREATE GROUND,YER OLUŞTUR
 LiteralText,CREATE HORDE,ORDU OLUŞTUR
 LiteralText,CREATE ITEM,EŞYA OLUŞTUR
@@ -3224,6 +3212,7 @@ LiteralText,detect,sapta
 LiteralText,determined by player level,oyuncu tarafından belirlenmiş
 LiteralText,device,cihaz
 LiteralText,DEVICES,ALETLER
+LiteralText,devour item,varlık yiyip bitir
 LiteralText,DIAGNOSTICS,TEŞHİS
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,aç gözlülük
 LiteralText,grimoire,büyü kitabı
 LiteralText,ground,yer
 LiteralText,GROUNDS,YER
+LiteralText,grow entity,büyü
 LiteralText,GUIDES,REHBERLER
 LiteralText,HALL of FAME,ŞAN SALONU
 LiteralText,hatched by,yumurtadan çıkaran
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,İLÜZYON
 LiteralText,immune to,bağışıklık sahibi olduğu
 LiteralText,immunities,bağışıklık
 LiteralText,impact,
+LiteralText,impersonate entity,taklit et
 LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,İMKANSIZ
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,KİLİTLE
 LiteralText,locked,kilitli
 LiteralText,LOCKED,KİLİTLİ
 LiteralText,locked scaling mode,kilitli oran modu
+LiteralText,locking,kilitle
 LiteralText,loot,ganimet
 LiteralText,LOOT,GANİMET
 LiteralText,LOSE KARMA,KARMA KAYBET
@@ -3550,6 +3542,7 @@ LiteralText,RACES,IRKLAR
 LiteralText,random,rastgele
 LiteralText,RANDOM,RASTGELE
 LiteralText,random dungeon seed,rastgele zindan tohum kodu
+LiteralText,random level,
 LiteralText,random points,rasgele puanlar
 LiteralText,rank,
 LiteralText,rarity,enderlik
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
 LiteralText,rumour,dedikodu
+LiteralText,sacrifice item,kurban et
 LiteralText,SANITY CHECK,RUH SAĞLIĞI KONTROLÜ
 LiteralText,SAVE,KAYDET
 LiteralText,SAVE & QUIT,KAYDET & ÇIK
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,PARÇALARA AYIR
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
+LiteralText,searching,ara
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,tohum
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,SIRA-BAZLI
 LiteralText,turns,sıralar
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Rastgele bir zindan tohum kodu oluşturmak için istediğin bir kelime yada cümleyi gir.
 LiteralText,unable to load,yüklenemiyor
-LiteralText,unafflicts,etkiden kurtama
+LiteralText,unafflict,etkiden kurtama
 LiteralText,UNDEAD,YÜRÜYEN ÖLÜYKEN
 LiteralText,Undo,
 LiteralText,unidentified items,tanımlanamayan eşyalar
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,EŞŞİZLER
 LiteralText,UNLOCK,KİLİDİ AÇ
 LiteralText,unlock door or container,kapıyı veya kabı aç
 LiteralText,UNLOCKED,KİLDİ AÇILDI
-LiteralText,unpolymorphs,şekli düzeltme
-LiteralText,unpunishes,ceza kaldırma
+LiteralText,unpolymorph,şekli düzeltme
+LiteralText,unpunish,ceza kaldırma
 LiteralText,unskilled,yetersiz beceri
 LiteralText,UNSKILLED,YETERSİZ BECERİ
+LiteralText,unstuck,
 LiteralText,UNTRAP,SİLAHSIZLAŞTIR
 LiteralText,UNTRAPPED,SİLAHSIZLAŞTIRILMIŞ
 LiteralText,update available,güncelleme mevcut

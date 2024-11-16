@@ -962,24 +962,17 @@ EffectProperty,fixed,fixált
 EffectProperty,loyal only,
 EffectProperty,polite,illedelmes
 EffectProperty,rigid,szilárd
-EffectType,alert,riasztás
-EffectType,amnesia,amnézia
 EffectType,blinking,elillanás
 EffectType,capture,elfogás
 EffectType,clone entity,karakterklón
-EffectType,concealing,eltitkolás
-EffectType,connect portal,
 EffectType,convert barrier,következővé alakul:
-EffectType,convert block to barrier,következővé alakul:
 EffectType,convert gate,következővé alakul:
 EffectType,convert ground,következővé alakul:
 EffectType,convert volatile,
-EffectType,create golem,gólemet hoz létre
 EffectType,create nook,bemélyedést hoz létre:
 EffectType,create volatile,
 EffectType,decapitate,lefejezés
 EffectType,destroy volatile,
-EffectType,devour item,eszköz felfalása
 EffectType,disarm,lefegyverzés
 EffectType,drain life,életelszívás
 EffectType,drain mana,manaelszívás
@@ -988,14 +981,11 @@ EffectType,engulf,elnyelés
 EffectType,exchange,kicserél
 EffectType,extinguish volatile,
 EffectType,grapple,megragadás
-EffectType,growth,növekedés
 EffectType,hatch,kikeltés
 EffectType,identify,azonosítás
-EffectType,impersonate,utánzás
 EffectType,incarcerate,bebörtönzés
 EffectType,karma,karma
 EffectType,liberate,felszabadítás
-EffectType,locking,zárás
 EffectType,mobilise block,
 EffectType,opening,kinyitás
 EffectType,place curse,megátkozás
@@ -1004,18 +994,12 @@ EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
 EffectType,restock,feltöltés
 EffectType,restore ability,adottság-visszaállítás
-EffectType,sacrifice,áldozat
 EffectType,sanctify,felszentelés
-EffectType,searching,keresés
 EffectType,spawn entity,karakter lerakás
 EffectType,teleport entity,karakter teleportálása
 EffectType,teleport item away,elteleportálás
 EffectType,tinning,konzerválás
 EffectType,transition,átalakulás
-EffectType,unafflict,megtisztítás
-EffectType,unpolymorph,visszaváltozás
-EffectType,unpunish,büntetlenség
-EffectType,unstuck,
 EffectType,visit shop,bolt meglátogatása
 EffectType,visit shrine,szentély meglátogatása
 EffectType,visit zoo,terem meglátogatása
@@ -3055,11 +3039,11 @@ LiteralText,afflict,lesújtás
 LiteralText,AFFLICTED,SZENVEDŐ
 LiteralText,affliction?,csapás?
 LiteralText,AFFLICTIONS,CSAPÁSOK
+LiteralText,alerting,riasztás
 LiteralText,alias?,álnév?
 LiteralText,ALL,ÖSSZES
 LiteralText,ALL AT ONCE,MINDET EGYSZERRE
 LiteralText,all kind,mindenfajta
-LiteralText,all levels,
 LiteralText,always,mindig
 LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
 LiteralText,amnesia,amnézia
@@ -3162,8 +3146,10 @@ LiteralText,companion,társ
 LiteralText,compression,tömörítés
 LiteralText,CONCEAL,ELREJT
 LiteralText,CONCEALED,ELREJTVE
+LiteralText,concealing,eltitkolás
 LiteralText,CONDUCT,TETTEK
 LiteralText,CONFIRM,✓
+LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,Csatlakozz egy másik játékos által létrehozott játékhoz.
 LiteralText,CONSOLE,KONZOL
 LiteralText,constructed,megépített
@@ -3172,6 +3158,7 @@ LiteralText,Continue,Folytatás
 LiteralText,CONTINUE,FOLYTATÁS
 LiteralText,CONTROLLED,IRÁNYÍTOTT
 LiteralText,convert,
+LiteralText,convert block to barrier,következővé alakul:
 LiteralText,conveyance,tápérték:
 LiteralText,COPY,MÁSOL
 LiteralText,corpse,tetem
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,CSAPDA LÉTREHOZÁSA
 LiteralText,CREATE ENTITY,ENTITÁS LÉTREHOZÁSA
 LiteralText,CREATE FEATURE,TEREPTÁRGY LÉTREHOZÁSA
 LiteralText,CREATE GATE,AJTÓ LÉTREHOZÁSA
+LiteralText,create golem,gólemet hoz létre
 LiteralText,CREATE GROUND,TALAJ LÉTREHOZÁSA
 LiteralText,CREATE HORDE,HORDA LÉTREHOZÁSA
 LiteralText,CREATE ITEM,TÁRGY LÉTREHOZÁSA
@@ -3224,6 +3212,7 @@ LiteralText,detect,észlelés
 LiteralText,determined by player level,a játékos szintje határozza meg
 LiteralText,device,eszköz
 LiteralText,DEVICES,ESZKÖZÖK
+LiteralText,devour item,eszköz felfalása
 LiteralText,DIAGNOSTICS,DIAGNOSZTIKA
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,következő(k) után sóvárog
 LiteralText,grimoire,varázskönyv
 LiteralText,ground,talaj
 LiteralText,GROUNDS,TALAJFAJTÁK
+LiteralText,grow entity,növekedés
 LiteralText,GUIDES,ÚTMUTATÓ
 LiteralText,HALL of FAME,DICSŐSÉG CSARNOKA
 LiteralText,hatched by,kikelti:
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,ILLÚZIÓ
 LiteralText,immune to,védett a következővel szemben:
 LiteralText,immunities,védettség(ek)
 LiteralText,impact,hatás
+LiteralText,impersonate entity,utánzás
 LiteralText,IMPORT,IMPORTÁL
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,LEHETETLEN
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,ZÁR
 LiteralText,locked,zárt
 LiteralText,LOCKED,ZÁRT
 LiteralText,locked scaling mode,zoomolás zárolva
+LiteralText,locking,zárás
 LiteralText,loot,zsákmány
 LiteralText,LOOT,ZSÁKMÁNY
 LiteralText,LOSE KARMA,KARMA ELVESZTÉSE
@@ -3550,6 +3542,7 @@ LiteralText,RACES,FAJOK
 LiteralText,random,véletlenszerű
 LiteralText,RANDOM,VÉLETLENSZERŰ
 LiteralText,random dungeon seed,választható kazamata-seed
+LiteralText,random level,
 LiteralText,random points,véletlenszerű pontok
 LiteralText,rank,rang
 LiteralText,rarity,ritkaság
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
 LiteralText,ROTATE,FORGAT
 LiteralText,rumour,híresztelés
+LiteralText,sacrifice item,áldozat
 LiteralText,SANITY CHECK,HITELESSÉG ELLENŐRZÉSE
 LiteralText,SAVE,MENTÉS
 LiteralText,SAVE & QUIT,MENTÉS ÉS KILÉPÉS
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,SZÉTSZEDÉS
 LiteralText,SEALED,CSUKOTT
 LiteralText,Search,Keresés
 LiteralText,Search how many turns?,Hány kör keresés?
+LiteralText,searching,keresés
 LiteralText,secret,titok
 LiteralText,SECRET,TITOK
 LiteralText,seed,seed
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,KÖRÖKRE OSZTOTT
 LiteralText,turns,kör
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Írj be bármilyen szót vagy kifejezést ahhoz, hogy random kazamata seedet generálj."
 LiteralText,unable to load,nem lehet betölteni
-LiteralText,unafflicts,tisztít
+LiteralText,unafflict,tisztít
 LiteralText,UNDEAD,ÉLŐHOLT
 LiteralText,Undo,Visszavon
 LiteralText,unidentified items,azonosítatlan tárgyak
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,KIVÉTELESEK
 LiteralText,UNLOCK,KINYIT
 LiteralText,unlock door or container,ajtó vagy tároló kinyitása
 LiteralText,UNLOCKED,KINYITVA
-LiteralText,unpolymorphs,visszaváltozás
-LiteralText,unpunishes,büntetéseltávolítás
+LiteralText,unpolymorph,visszaváltozás
+LiteralText,unpunish,büntetéseltávolítás
 LiteralText,unskilled,gyakorlatlan
 LiteralText,UNSKILLED,GYAKORLATLAN
+LiteralText,unstuck,
 LiteralText,UNTRAP,HATÁSTALANÍT
 LiteralText,UNTRAPPED,HATÁSTALANÍTVA
 LiteralText,update available,frissítés elérhető

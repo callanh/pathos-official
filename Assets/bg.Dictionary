@@ -962,24 +962,17 @@ EffectProperty,fixed,
 EffectProperty,loyal only,
 EffectProperty,polite,
 EffectProperty,rigid,
-EffectType,alert,тревога
-EffectType,amnesia,амнезия
 EffectType,blinking,
 EffectType,capture,
 EffectType,clone entity,клонирует персонажа
-EffectType,concealing,скрывает
-EffectType,connect portal,
 EffectType,convert barrier,
-EffectType,convert block to barrier,
 EffectType,convert gate,
 EffectType,convert ground,
 EffectType,convert volatile,
-EffectType,create golem,създай голема
 EffectType,create nook,
 EffectType,create volatile,
 EffectType,decapitate,
 EffectType,destroy volatile,
-EffectType,devour item,
 EffectType,disarm,
 EffectType,drain life,вытягивает жизнь
 EffectType,drain mana,вытягивает ману
@@ -988,14 +981,11 @@ EffectType,engulf,проглатывает
 EffectType,exchange,
 EffectType,extinguish volatile,
 EffectType,grapple,хватает
-EffectType,growth,
 EffectType,hatch,
 EffectType,identify,опознаёт
-EffectType,impersonate,имитирует
 EffectType,incarcerate,
 EffectType,karma,карма
 EffectType,liberate,
-EffectType,locking,запирает
 EffectType,mobilise block,
 EffectType,opening,открытие
 EffectType,place curse,накладывает проклятие
@@ -1004,18 +994,12 @@ EffectType,release,
 EffectType,remove curse,премахване проклятье
 EffectType,restock,
 EffectType,restore ability,восстанавливает значение характеристики
-EffectType,sacrifice,приносит в жертву
 EffectType,sanctify,освящает
-EffectType,searching,ищет
 EffectType,spawn entity,порождает персонажа
 EffectType,teleport entity,телепортирует персонажа
 EffectType,teleport item away,
 EffectType,tinning,консервирует
 EffectType,transition,переход
-EffectType,unafflict,
-EffectType,unpolymorph,возвращает начальную форму
-EffectType,unpunish,
-EffectType,unstuck,
 EffectType,visit shop,
 EffectType,visit shrine,
 EffectType,visit zoo,
@@ -3055,11 +3039,11 @@ LiteralText,afflict,
 LiteralText,AFFLICTED,
 LiteralText,affliction?,
 LiteralText,AFFLICTIONS,
+LiteralText,alerting,тревога
 LiteralText,alias?,
 LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЁ ВМЕСТЕ
 LiteralText,all kind,все виды
-LiteralText,all levels,
 LiteralText,always,всегда
 LiteralText,AMBIENT SOUNDS,
 LiteralText,amnesia,амнезия
@@ -3162,8 +3146,10 @@ LiteralText,companion,компаньон
 LiteralText,compression,сжатие
 LiteralText,CONCEAL,СПРЯТАТЬ
 LiteralText,CONCEALED,СПРЯТАНО
+LiteralText,concealing,скрывает
 LiteralText,CONDUCT,
 LiteralText,CONFIRM,
+LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,
 LiteralText,CONSOLE,КОНСОЛЬ
 LiteralText,constructed,
@@ -3172,6 +3158,7 @@ LiteralText,Continue,
 LiteralText,CONTINUE,
 LiteralText,CONTROLLED,КОНТРОЛЛИРУЕМЫЙ
 LiteralText,convert,
+LiteralText,convert block to barrier,
 LiteralText,conveyance,поедание
 LiteralText,COPY,
 LiteralText,corpse,труп
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,СЪЗДАЙ ЛОВУШКУ
 LiteralText,CREATE ENTITY,СЪЗДАЙ СУЩЕСТВО
 LiteralText,CREATE FEATURE,СЪЗДАЙ МЕХАНИЗМ
 LiteralText,CREATE GATE,
+LiteralText,create golem,създай голема
 LiteralText,CREATE GROUND,СЪЗДАЙ ПОЛ
 LiteralText,CREATE HORDE,СЪЗДАЙ ОРДУ
 LiteralText,CREATE ITEM,СЪЗДАЙ ПРЕДМЕТ
@@ -3224,6 +3212,7 @@ LiteralText,detect,находит
 LiteralText,determined by player level,
 LiteralText,device,
 LiteralText,DEVICES,МЕХАНИЗМЫ
+LiteralText,devour item,
 LiteralText,DIAGNOSTICS,ДИАГНОСТИКА
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,нажива
 LiteralText,grimoire,гримуар
 LiteralText,ground,
 LiteralText,GROUNDS,
+LiteralText,grow entity,
 LiteralText,GUIDES,РУКОВОДСТВО
 LiteralText,HALL of FAME,ЗАЛ СЛАВЫ
 LiteralText,hatched by,высижено
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,ИЛЛЮЗИЯ
 LiteralText,immune to,иммунен к
 LiteralText,immunities,иммунитет
 LiteralText,impact,
+LiteralText,impersonate entity,имитирует
 LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,НЕВОЗМОЖНО
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,ЗАПЕРЕТЬ
 LiteralText,locked,запертый
 LiteralText,LOCKED,ЗАПЕРТЫЙ
 LiteralText,locked scaling mode,блокировка масштабирования
+LiteralText,locking,запирает
 LiteralText,loot,добыча
 LiteralText,LOOT,ДОБЫЧА
 LiteralText,LOSE KARMA,
@@ -3550,6 +3542,7 @@ LiteralText,RACES,РАСЫ
 LiteralText,random,случайно
 LiteralText,RANDOM,СЛУЧАЙНО
 LiteralText,random dungeon seed,случайное семя подземелья
+LiteralText,random level,
 LiteralText,random points,случайные очки
 LiteralText,rank,
 LiteralText,rarity,редкость
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
 LiteralText,rumour,слухи
+LiteralText,sacrifice item,приносит в жертву
 LiteralText,SANITY CHECK,
 LiteralText,SAVE,ЗАПАЗИ
 LiteralText,SAVE & QUIT,ЗАПАЗИ И ВЫЙТИ
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,РАЗОБРАТЬ
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
+LiteralText,searching,ищет
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,семя
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,ПОШАГОВЫЙ
 LiteralText,turns,ходы
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Введите любое слово или фразу, чтобы сгенерировать случайное семя подземелья."
 LiteralText,unable to load,не в состоянии загрузить
-LiteralText,unafflicts,
+LiteralText,unafflict,
 LiteralText,UNDEAD,МЁРТВЫЙ
 LiteralText,Undo,
 LiteralText,unidentified items,неопознанные вещи
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,
 LiteralText,UNLOCK,ОТОМКНУТЬ
 LiteralText,unlock door or container,отомкнуть дверь или контейнер
 LiteralText,UNLOCKED,ОТОМКНУТО
-LiteralText,unpolymorphs,премахване превращение
-LiteralText,unpunishes,
+LiteralText,unpolymorph,премахване превращение
+LiteralText,unpunish,
 LiteralText,unskilled,неумелый
 LiteralText,UNSKILLED,НЕУМЕЛЫЙ
+LiteralText,unstuck,
 LiteralText,UNTRAP,ОБЕЗВРЕДИТЬ
 LiteralText,UNTRAPPED,ОБЕЗВРЕЖЕНО
 LiteralText,update available,доступно ъпдейт

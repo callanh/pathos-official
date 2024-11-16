@@ -243,37 +243,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.psychic, Dice.Fixed(1))
              .SetTargetSelf(false);
-            U.Apply.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Living.ToArray());
+            U.Apply.CharmEntity(Elements.magical, Delay.FromTurns(10000), Kinds.Living.ToArray());
           },
           P =>
           {
             P.SetCast().Strike(Strikes.psychic, Dice.Fixed(1))
              .SetTargetSelf(false);
-            P.Apply.Charm(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray());
+            P.Apply.CharmEntity(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray());
           },
           S =>
           {
             S.SetCast().Strike(Strikes.psychic, Dice.Fixed(2))
              .SetTargetSelf(false);
-            S.Apply.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray());
+            S.Apply.CharmEntity(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray());
           },
           E =>
           {
             E.SetCast().Strike(Strikes.psychic, Dice.Fixed(3))
              .SetTargetSelf(false);
-            E.Apply.Charm(Elements.magical, Delay.FromTurns(40000), Kinds.Living.ToArray());
+            E.Apply.CharmEntity(Elements.magical, Delay.FromTurns(40000), Kinds.Living.ToArray());
           },
           M =>
           {
             M.SetCast().Strike(Strikes.psychic, Dice.Fixed(4))
              .SetTargetSelf(false);
-            M.Apply.Charm(Elements.magical, Delay.FromTurns(50000), Kinds.Living.ToArray());
+            M.Apply.CharmEntity(Elements.magical, Delay.FromTurns(50000), Kinds.Living.ToArray());
           },
           C =>
           {
             C.SetCast().Strike(Strikes.psychic, Dice.Fixed(5))
              .SetTargetSelf(false);
-            C.Apply.Charm(Elements.magical, Delay.FromTurns(60000), Kinds.Living.ToArray());
+            C.Apply.CharmEntity(Elements.magical, Delay.FromTurns(60000), Kinds.Living.ToArray());
           }
         );
       });
@@ -423,37 +423,37 @@ namespace Pathos
           {
             U.SetCast().Strike(Strikes.psychic, Dice.Fixed(1))
              .SetTargetSelf(false);
-            U.Apply.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray());
+            U.Apply.CharmEntity(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray());
           },
           P =>
           {
             P.SetCast().Strike(Strikes.psychic, Dice.Fixed(1))
              .SetTargetSelf(false);
-            P.Apply.Charm(Elements.magical, Delay.FromTurns(20000), Kinds.Undead.ToArray());
+            P.Apply.CharmEntity(Elements.magical, Delay.FromTurns(20000), Kinds.Undead.ToArray());
           },
           S =>
           {
             S.SetCast().Strike(Strikes.psychic, Dice.Fixed(2))
              .SetTargetSelf(false);
-            S.Apply.Charm(Elements.magical, Delay.FromTurns(40000), Kinds.Undead.ToArray());
+            S.Apply.CharmEntity(Elements.magical, Delay.FromTurns(40000), Kinds.Undead.ToArray());
           },
           E =>
           {
             E.SetCast().Strike(Strikes.psychic, Dice.Fixed(3))
              .SetTargetSelf(false);
-            E.Apply.Charm(Elements.magical, Delay.FromTurns(60000), Kinds.Undead.ToArray());
+            E.Apply.CharmEntity(Elements.magical, Delay.FromTurns(60000), Kinds.Undead.ToArray());
           },
           M =>
           {
             M.SetCast().Strike(Strikes.psychic, Dice.Fixed(4))
              .SetTargetSelf(false);
-            M.Apply.Charm(Elements.magical, Delay.FromTurns(80000), Kinds.Undead.ToArray());
+            M.Apply.CharmEntity(Elements.magical, Delay.FromTurns(80000), Kinds.Undead.ToArray());
           },
           C =>
           {
             C.SetCast().Strike(Strikes.psychic, Dice.Fixed(5))
              .SetTargetSelf(false);
-            C.Apply.Charm(Elements.magical, Delay.FromTurns(100000), Kinds.Undead.ToArray());
+            C.Apply.CharmEntity(Elements.magical, Delay.FromTurns(100000), Kinds.Undead.ToArray());
           }
         );
       });
@@ -567,35 +567,35 @@ namespace Pathos
           {
             P.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
-            P.Apply.Unafflict();
+            P.Apply.UnafflictEntity();
             P.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness);
           },
           S =>
           {
             S.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
-            S.Apply.Unafflict();
+            S.Apply.UnafflictEntity();
             S.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination);
           },
           E =>
           {
             E.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
-            E.Apply.Unafflict();
+            E.Apply.UnafflictEntity();
             E.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
-            M.Apply.Unafflict();
+            M.Apply.UnafflictEntity();
             M.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage);
           },
           C =>
           {
             C.SetCast().Strike(Strikes.spirit, Dice.One)
              .SetAfflictionOverride();
-            C.Apply.Unafflict();
+            C.Apply.UnafflictEntity();
             C.Apply.RemoveTransient(Properties.blindness, Properties.deafness, Properties.inebriation, Properties.sickness, Properties.hallucination, Properties.confusion, Properties.stunned, Properties.rage, Properties.fear);
           }
         );
@@ -2351,28 +2351,28 @@ namespace Pathos
           {
             S.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
-            S.Apply.Unpunish();
+            S.Apply.UnpunishEntity();
             S.Apply.RemoveCurse(Dice.Fixed(1));
           },
           E =>
           {
             E.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
-            E.Apply.Unpunish();
+            E.Apply.UnpunishEntity();
             E.Apply.RemoveCurse(Dice.Fixed(2));
           },
           M =>
           {
             M.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
-            M.Apply.Unpunish();
+            M.Apply.UnpunishEntity();
             M.Apply.RemoveCurse(Dice.Fixed(3));
           },
           C =>
           {
             C.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
-            C.Apply.Unpunish();
+            C.Apply.UnpunishEntity();
             C.Apply.RemoveCurse(Dice.Fixed(4));
           }
         );

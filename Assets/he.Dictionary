@@ -962,24 +962,17 @@ EffectProperty,fixed,מקובע
 EffectProperty,loyal only,רק נאמנות
 EffectProperty,polite,באדיבות
 EffectProperty,rigid,נוקשה
-EffectType,alert,ערנות
-EffectType,amnesia,שכחה
 EffectType,blinking,בזיקה
 EffectType,capture,לכידה
 EffectType,clone entity,שיבוט דמות
-EffectType,concealing,התחבאות
-EffectType,connect portal,מגע במעבר
 EffectType,convert barrier,המרת קיר
-EffectType,convert block to barrier,המרת סלע
 EffectType,convert gate,המרת דלת
 EffectType,convert ground,המרת רצפה
 EffectType,convert volatile,המרת נזילה
-EffectType,create golem,יצירת גולם
 EffectType,create nook,יצירת פינה
 EffectType,create volatile,יצירת נזילה
 EffectType,decapitate,עריפה
 EffectType,destroy volatile,הסרת נזילה
-EffectType,devour item,טריפת נכס
 EffectType,disarm,ניטרול נשק
 EffectType,drain life,שאיבת חיים
 EffectType,drain mana,שאיבת קסם
@@ -988,14 +981,11 @@ EffectType,engulf,עיטוף
 EffectType,exchange,עסקה
 EffectType,extinguish volatile,עצירת נזילה
 EffectType,grapple,לפיתה
-EffectType,growth,צמיחה
 EffectType,hatch,דגירה
 EffectType,identify,זיהוי
-EffectType,impersonate,התחזות
 EffectType,incarcerate,כליאה
 EffectType,karma,קארמה
 EffectType,liberate,הוצאה לחופשי
-EffectType,locking,נעילה
 EffectType,mobilise block,הזזת סלע
 EffectType,opening,פתיחה
 EffectType,place curse,הטלת קללה
@@ -1004,18 +994,12 @@ EffectType,release,שיחרור
 EffectType,remove curse,הסרת קללה
 EffectType,restock,עדכון המלאי
 EffectType,restore ability,שיחזור יכולת
-EffectType,sacrifice,הקרבה
 EffectType,sanctify,קידוש
-EffectType,searching,חיפוש
 EffectType,spawn entity,לידת דמות
 EffectType,teleport entity,שיגור דמות
 EffectType,teleport item away,שיגור
 EffectType,tinning,שימור בפחית
 EffectType,transition,מעבר
-EffectType,unafflict,הסרת צרה
-EffectType,unpolymorph,ביטול שינוי צורה
-EffectType,unpunish,ביטול הענשה
-EffectType,unstuck,שיחרור דמות תקועה
 EffectType,visit shop,ביקור בחנות
 EffectType,visit shrine,ביקור במקדש
 EffectType,visit zoo,ביקור בגן חיות
@@ -3055,11 +3039,11 @@ LiteralText,afflict,צרה
 LiteralText,AFFLICTED,בצרה
 LiteralText,affliction?,צרה?
 LiteralText,AFFLICTIONS,צרות
+LiteralText,alerting,ערנות
 LiteralText,alias?,כינוי?
 LiteralText,ALL,הכל
 LiteralText,ALL AT ONCE,הכל בבת אחת
 LiteralText,all kind,כל הסוגים
-LiteralText,all levels,
 LiteralText,always,תמיד
 LiteralText,AMBIENT SOUNDS,צלילי אווירה
 LiteralText,amnesia,שיכחון
@@ -3162,8 +3146,10 @@ LiteralText,companion,מלווה
 LiteralText,compression,דחיסה
 LiteralText,CONCEAL,להסוות
 LiteralText,CONCEALED,מוסווה
+LiteralText,concealing,התחבאות
 LiteralText,CONDUCT,התנהגות
 LiteralText,CONFIRM,אישור
+LiteralText,connect portal,מגע במעבר
 LiteralText,Connect to game hosted by another player.,חיבור למשחק של שחקנית או שחקן אחרים.
 LiteralText,CONSOLE,קונסולה
 LiteralText,constructed,בבניה
@@ -3172,6 +3158,7 @@ LiteralText,Continue,להמשיך
 LiteralText,CONTINUE,להמשיך
 LiteralText,CONTROLLED,שליטה
 LiteralText,convert,
+LiteralText,convert block to barrier,המרת סלע
 LiteralText,conveyance,העברה
 LiteralText,COPY,להעתיק
 LiteralText,corpse,גופת
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,ליצור מלכודת
 LiteralText,CREATE ENTITY,ליצור יישות
 LiteralText,CREATE FEATURE,ליצור מתקן
 LiteralText,CREATE GATE,ליצור דלת
+LiteralText,create golem,יצירת גולם
 LiteralText,CREATE GROUND,ליצור רצפה
 LiteralText,CREATE HORDE,ליצור נחיל
 LiteralText,CREATE ITEM,ליצור חפץ
@@ -3224,6 +3212,7 @@ LiteralText,detect,איתור
 LiteralText,determined by player level,נקבע על פי רמת הדמות
 LiteralText,device,מכשיר
 LiteralText,DEVICES,מכשירים
+LiteralText,devour item,טריפת נכס
 LiteralText,DIAGNOSTICS,דיאגנוסטיקה
 LiteralText,DIALOGUE,דיאלוג
 LiteralText,dialogue?,דיאלוג?
@@ -3345,6 +3334,7 @@ LiteralText,greed,תאוות בצע
 LiteralText,grimoire,ספר כשפים
 LiteralText,ground,קרקע
 LiteralText,GROUNDS,סוגי קרקע
+LiteralText,grow entity,צמיחה
 LiteralText,GUIDES,מדריכים
 LiteralText,HALL of FAME,היכל התהילה
 LiteralText,hatched by,הוטלה על ידי
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,אשליה
 LiteralText,immune to,חסינות ל
 LiteralText,immunities,חסינויות
 LiteralText,impact,פגיעה
+LiteralText,impersonate entity,התחזות
 LiteralText,IMPORT,לייבא
 LiteralText,Import a file,לייבא קובץ
 LiteralText,IMPOSSIBLE,בלתי אפשרי
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,לנעול
 LiteralText,locked,נעולה
 LiteralText,LOCKED,נעולה
 LiteralText,locked scaling mode,מצב נעילת מרחק תצוגה
+LiteralText,locking,נעילה
 LiteralText,loot,לבזוז
 LiteralText,LOOT,לבזוז
 LiteralText,LOSE KARMA,איבוד קארמה
@@ -3550,6 +3542,7 @@ LiteralText,RACES,גזעים
 LiteralText,random,אקראי
 LiteralText,RANDOM,אקראי
 LiteralText,random dungeon seed,גרעין אקראי של מבוך
+LiteralText,random level,
 LiteralText,random points,נקודות אקראיות
 LiteralText,rank,דרגה
 LiteralText,rarity,נדירות
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,טבעת ימין
 LiteralText,rigid,במצב נוקשה
 LiteralText,ROTATE,לסובב
 LiteralText,rumour,שמועה
+LiteralText,sacrifice item,הקרבה
 LiteralText,SANITY CHECK,בדיקת שפיות
 LiteralText,SAVE,לשמור
 LiteralText,SAVE & QUIT,לשמור ולצאת
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,לגרוט
 LiteralText,SEALED,במצב חתום
 LiteralText,Search,לחפש
 LiteralText,Search how many turns?,במשך כמה תורות לחפש?
+LiteralText,searching,חיפוש
 LiteralText,secret,סוד
 LiteralText,SECRET,סוד
 LiteralText,seed,גרעין
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,משחק מבוסס-תורות
 LiteralText,turns,תורות
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,כל מילה או ביטוי ייצרו גרעין מבוך אקראי.
 LiteralText,unable to load,לא מצליח לטעון
-LiteralText,unafflicts,ביטול צרה
+LiteralText,unafflict,ביטול צרה
 LiteralText,UNDEAD,אל-מת
 LiteralText,Undo,ביטוי
 LiteralText,unidentified items,פריטים לא מזוהים
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,מיוחדים
 LiteralText,UNLOCK,פתיחת נעילה
 LiteralText,unlock door or container,פתיחת דלת או כלי קיבול נעול
 LiteralText,UNLOCKED,לא נעולה
-LiteralText,unpolymorphs,ביטול שינוי צורה
-LiteralText,unpunishes,ביטול עונש
+LiteralText,unpolymorph,ביטול שינוי צורה
+LiteralText,unpunish,ביטול עונש
 LiteralText,unskilled,ללא מיומנות
 LiteralText,UNSKILLED,ללא מיומנות
+LiteralText,unstuck,שיחרור דמות תקועה
 LiteralText,UNTRAP,לנטרל
 LiteralText,UNTRAPPED,מנוטרלת
 LiteralText,update available,יש עדכון

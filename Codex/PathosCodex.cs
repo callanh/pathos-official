@@ -146,37 +146,37 @@ namespace Pathos
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
         A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
-        A.Unstuck();
-        A.Unpunish();
-        A.Unafflict();
-        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.UnstuckEntity();
+        A.UnpunishEntity();
+        A.UnafflictEntity();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
       });
       Manifest.Praying.AddPrayer(Standings.good, A =>
       {
         A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
-        A.Unstuck();
-        A.Unpunish();
-        A.Unafflict();
-        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.UnstuckEntity();
+        A.UnpunishEntity();
+        A.UnafflictEntity();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
         A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
-        A.Unstuck();
-        A.Unpunish();
-        A.Unafflict();
-        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.UnstuckEntity();
+        A.UnpunishEntity();
+        A.UnafflictEntity();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
       {
         A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));
-        A.Unstuck();
-        A.Unpunish();
-        A.Unafflict();
-        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.Unpolymorph());
+        A.UnstuckEntity();
+        A.UnpunishEntity();
+        A.UnafflictEntity();
+        A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
         A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
         A.RemoveCurse(Dice.One); // remove one curse.

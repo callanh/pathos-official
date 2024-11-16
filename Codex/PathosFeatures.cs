@@ -53,7 +53,7 @@ namespace Pathos
         // TODO: can't use the altar at all, when shunned.
 
         F.DropApply.DecreaseKarma(Dice.Fixed(5));
-        F.DropApply.Divine();
+        F.DropApply.DivineItem();
 
         F.DestroyStrike = Strikes.holy;
         F.DestroyApply.Harm(Elements.shock, 6.d6() + 6);
@@ -65,7 +65,7 @@ namespace Pathos
         var DivineUse = F.AddUse(Codex.Motions.divine, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
         DivineUse.SetCast().FilterDivined(false);
         DivineUse.Apply.DecreaseKarma(Dice.Fixed(5));
-        DivineUse.Apply.Divine();
+        DivineUse.Apply.DivineItem();
 
         var PrayUse = F.AddUse(Codex.Motions.pray, null, Delay.FromTurns(40), Sonics.prayer, Audibility: 5);
         PrayUse.Apply.DecreaseKarma(Dice.Fixed(200));
@@ -73,14 +73,14 @@ namespace Pathos
         (
           B =>
           {
-            B.Unpunish();
+            B.UnpunishEntity();
             B.RemoveCurse(Dice.One);
-            B.Divine();
+            B.DivineItem();
             B.Sanctify(Items.potion_of_water, Sanctities.Blessed);
           },
           U =>
           {
-            U.Divine();
+            U.DivineItem();
             U.Sanctify(Items.potion_of_water, Sanctities.Blessed);
           },
           C =>
@@ -92,7 +92,7 @@ namespace Pathos
 
         var SacrificeUse = F.AddUse(Codex.Motions.sacrifice, Utility: null, Delay.FromTurns(60), Sonics.prayer, Audibility: 5);
         SacrificeUse.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-        SacrificeUse.Apply.Sacrifice();
+        SacrificeUse.Apply.SacrificeItem();
       });
 
       bed = AddFeature("bed", Materials.wood, Chance.OneIn120, Glyphs.bed, Glyphs.bed_broken, F =>

@@ -962,24 +962,17 @@ EffectProperty,fixed,gắn chặt
 EffectProperty,loyal only,chỉ trung thành
 EffectProperty,polite,lịch sự
 EffectProperty,rigid,thô
-EffectType,alert,báo động
-EffectType,amnesia,lãng quên
 EffectType,blinking,nhấp nháy
 EffectType,capture,bắt
 EffectType,clone entity,tạo bản sao của nhân vật
-EffectType,concealing,ẩn nấp
-EffectType,connect portal,tạo cổng dịch chuyển
 EffectType,convert barrier,chuyển đổi tường
-EffectType,convert block to barrier,chuyển đổi tảng đá
 EffectType,convert gate,chuyển đổi cửa
 EffectType,convert ground,chuyển đổi sàn
 EffectType,convert volatile,chuyển đổi vũng
-EffectType,create golem,tạo quái vật golem
 EffectType,create nook,tạo nắm cửa
 EffectType,create volatile,tạo vũng
 EffectType,decapitate,chặt đầu
 EffectType,destroy volatile,loại bỏ vũng
-EffectType,devour item,nuốt vật
 EffectType,disarm,tước vũ khí
 EffectType,drain life,hút sinh lực
 EffectType,drain mana,hút ma pháp
@@ -988,14 +981,11 @@ EffectType,engulf,nuốt chửng
 EffectType,exchange,trao đổi
 EffectType,extinguish volatile,dập vũng
 EffectType,grapple,vật lộn
-EffectType,growth,phát triển
 EffectType,hatch,nở
 EffectType,identify,định danh
-EffectType,impersonate,diễn theo
 EffectType,incarcerate,nhốt
 EffectType,karma,nghiệp
 EffectType,liberate,thả ra
-EffectType,locking,khóa
 EffectType,mobilise block,di chuyển tảng đá
 EffectType,opening,mở
 EffectType,place curse,niệm lời nguyền
@@ -1004,18 +994,12 @@ EffectType,release,thả ra
 EffectType,remove curse,loại bỏ lời nguyền
 EffectType,restock,bổ sung
 EffectType,restore ability,khôi phục chỉ số
-EffectType,sacrifice,cúng tế
 EffectType,sanctify,thánh hóa
-EffectType,searching,tìm kiếm
 EffectType,spawn entity,tạo ra nhân vật
 EffectType,teleport entity,dịch chuyển nhân vật
 EffectType,teleport item away,dịch chuyển ra
 EffectType,tinning,đóng hộp
 EffectType,transition,di chuyển
-EffectType,unafflict,không ảnh hưởng
-EffectType,unpolymorph,trở về dạng cũ
-EffectType,unpunish,loại bỏ trừng phạt
-EffectType,unstuck,tháo gỡ
 EffectType,visit shop,ghé cửa hàng
 EffectType,visit shrine,ghé điện thờ
 EffectType,visit zoo,ghé vườn thú
@@ -3055,11 +3039,11 @@ LiteralText,afflict,ảnh hưởng
 LiteralText,AFFLICTED,BỊNHIỄM BỆNH
 LiteralText,affliction?,nhiễm bệnh?
 LiteralText,AFFLICTIONS,NHỮNG LOẠI BỆNH
+LiteralText,alerting,báo động
 LiteralText,alias?,thờ ai?
 LiteralText,ALL,TẤT CẢ
 LiteralText,ALL AT ONCE,TẤT CẢ 1 LÚC
 LiteralText,all kind,mọi loại
-LiteralText,all levels,
 LiteralText,always,luôn luôn
 LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
 LiteralText,amnesia,mất trí
@@ -3162,8 +3146,10 @@ LiteralText,companion,vật nuôi
 LiteralText,compression,nén
 LiteralText,CONCEAL,GIẤU
 LiteralText,CONCEALED,ĐÃ GIẤU
+LiteralText,concealing,ẩn nấp
 LiteralText,CONDUCT,HẠNH KIỂM
 LiteralText,CONFIRM,XÁC NHẬN
+LiteralText,connect portal,tạo cổng dịch chuyển
 LiteralText,Connect to game hosted by another player.,Kết nối vào trò chơi từ người chơi khác
 LiteralText,CONSOLE,BẢNG ĐIỀU KHIỂN
 LiteralText,constructed,cấu thành
@@ -3172,6 +3158,7 @@ LiteralText,Continue,Tiếp tục
 LiteralText,CONTINUE,TIẾP TỤC
 LiteralText,CONTROLLED,BỊ ĐIỀU KHIỂN
 LiteralText,convert,
+LiteralText,convert block to barrier,chuyển đổi tảng đá
 LiteralText,conveyance,hấp thụ
 LiteralText,COPY,SAO CHẾP
 LiteralText,corpse,xác chết
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,TẠO RA BẪY
 LiteralText,CREATE ENTITY,TẠO RA THỰC THỂ
 LiteralText,CREATE FEATURE,TẠO RA VẬT CỐ ĐỊNH
 LiteralText,CREATE GATE,TẠO RA CỬA
+LiteralText,create golem,tạo quái vật golem
 LiteralText,CREATE GROUND,TẠO RA SÀN NHÀ
 LiteralText,CREATE HORDE,TẠO RA BẦY ĐÀN
 LiteralText,CREATE ITEM,TẠO RA VẬT PHẨM
@@ -3224,6 +3212,7 @@ LiteralText,detect,phát hiện
 LiteralText,determined by player level,được đánh giá bởi cấp độ người chơi
 LiteralText,device,cạm bẩy
 LiteralText,DEVICES,CẠM BẨY
+LiteralText,devour item,nuốt vật
 LiteralText,DIAGNOSTICS,BỘ CHẨN ĐOÁN
 LiteralText,DIALOGUE,LỜI THOẠI
 LiteralText,dialogue?,Lời thoại?
@@ -3345,6 +3334,7 @@ LiteralText,greed,tham
 LiteralText,grimoire,ma thuật
 LiteralText,ground,sàn
 LiteralText,GROUNDS,SÀN
+LiteralText,grow entity,phát triển
 LiteralText,GUIDES,HƯỚNG DẪN
 LiteralText,HALL of FAME,SẢNH DANH VỌNG
 LiteralText,hatched by,được ấp bởi
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,ẢO ẢNH
 LiteralText,immune to,kháng
 LiteralText,immunities,kháng hiệu ứng
 LiteralText,impact,khi tác động
+LiteralText,impersonate entity,diễn theo
 LiteralText,IMPORT,NHẬP
 LiteralText,Import a file,Nhập một file
 LiteralText,IMPOSSIBLE,BẤT KHẢ THI
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,KHÓA
 LiteralText,locked,bị khóa
 LiteralText,LOCKED,BỊ KHÓA
 LiteralText,locked scaling mode,chế độ khóa tỉ lệ
+LiteralText,locking,khóa
 LiteralText,loot,nhặt
 LiteralText,LOOT,NHẶT
 LiteralText,LOSE KARMA,GIẢM NGHIỆP CHƯỚNG
@@ -3550,6 +3542,7 @@ LiteralText,RACES,CHỦNG TỘC
 LiteralText,random,ngẫu nhiên
 LiteralText,RANDOM,NGẪU NHIÊN
 LiteralText,random dungeon seed,hạt giống hầm ngục ngẫu nhiên
+LiteralText,random level,
 LiteralText,random points,các điểm ngẫu nhiên
 LiteralText,rank,hạng
 LiteralText,rarity,độ hiếm
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
 LiteralText,ROTATE,XOAY
 LiteralText,rumour,lời đồn
+LiteralText,sacrifice item,cúng tế
 LiteralText,SANITY CHECK,ĐIỂM MINH MẪN
 LiteralText,SAVE,LƯU
 LiteralText,SAVE & QUIT,LƯU & THOÁT
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,TÁI CHẾ
 LiteralText,SEALED,PHONG ẤN
 LiteralText,Search,Lục soát
 LiteralText,Search how many turns?,Lục soát trong bao nhiêu lượt?
+LiteralText,searching,tìm kiếm
 LiteralText,secret,bí mật
 LiteralText,SECRET,BÍ MẬT
 LiteralText,seed,hạt giống
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,THEO LƯỢT
 LiteralText,turns,lượt
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Điền từ hoặc câu nào đó để tạo hạt giống ngẫu nhiên.
 LiteralText,unable to load,không thể tải
-LiteralText,unafflicts,không ảnh hưởng
+LiteralText,unafflict,không ảnh hưởng
 LiteralText,UNDEAD,THÂY MA
 LiteralText,Undo,Hoàn tác
 LiteralText,unidentified items,vật phẩm chưa định danh
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,THỰC THỂ ĐẶC BIỆT
 LiteralText,UNLOCK,MỞ KHÓA
 LiteralText,unlock door or container,mở khóa cửa hoặc thùng chứa
 LiteralText,UNLOCKED,ĐÃ MỞ KHÓA
-LiteralText,unpolymorphs,hủy biến hình
-LiteralText,unpunishes,hủy sự trừng phạt
+LiteralText,unpolymorph,hủy biến hình
+LiteralText,unpunish,hủy sự trừng phạt
 LiteralText,unskilled,không có kỹ năng
 LiteralText,UNSKILLED,KHÔNG QUEN TAY
+LiteralText,unstuck,tháo gỡ
 LiteralText,UNTRAP,PHÁ BẪY
 LiteralText,UNTRAPPED,PHÁ BẪY
 LiteralText,update available,có bản cập nhật mới

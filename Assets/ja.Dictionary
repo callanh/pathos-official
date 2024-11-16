@@ -962,24 +962,17 @@ EffectProperty,fixed,固定位置
 EffectProperty,loyal only,味方だけ
 EffectProperty,polite,丁寧に扱う
 EffectProperty,rigid,固まった
-EffectType,alert,警戒
-EffectType,amnesia,記憶喪失
 EffectType,blinking,転位
 EffectType,capture,捕獲
 EffectType,clone entity,分裂
-EffectType,concealing,隠す
-EffectType,connect portal,通路をつなげる
 EffectType,convert barrier,壁を変換
-EffectType,convert block to barrier,巨塊を変換
 EffectType,convert gate,扉を変換
 EffectType,convert ground,床を変換
 EffectType,convert volatile,地形効果を変換
-EffectType,create golem,ゴーレムを作成
 EffectType,create nook,隠し小路を作成
 EffectType,create volatile,地形効果が発生
 EffectType,decapitate,首はね
 EffectType,destroy volatile,地形効果が消滅
-EffectType,devour item,アイテムをむさぼり喰う
 EffectType,disarm,武器を落とさせる
 EffectType,drain life,ライフ吸収
 EffectType,drain mana,マナ吸収
@@ -988,14 +981,11 @@ EffectType,engulf,丸呑み
 EffectType,exchange,交換する
 EffectType,extinguish volatile,地形効果が霧散
 EffectType,grapple,組みつく
-EffectType,growth,成長
 EffectType,hatch,孵化
 EffectType,identify,識別
-EffectType,impersonate,対象をコピー
 EffectType,incarcerate,石像化
 EffectType,karma,カルマ
 EffectType,liberate,解放する
-EffectType,locking,施錠
 EffectType,mobilise block,障害物を動かす
 EffectType,opening,開錠
 EffectType,place curse,呪いをかける
@@ -1004,18 +994,12 @@ EffectType,release,解放
 EffectType,remove curse,解呪
 EffectType,restock,補充
 EffectType,restore ability,能力値回復
-EffectType,sacrifice,犠牲
 EffectType,sanctify,祝呪を変更
-EffectType,searching,調査
 EffectType,spawn entity,モンスターを生成
 EffectType,teleport entity,キャラクターが瞬間移動
 EffectType,teleport item away,瞬間移動で逃げる
 EffectType,tinning,詰める
 EffectType,transition,階層移動
-EffectType,unafflict,災難からの解放
-EffectType,unpolymorph,変化した姿から戻る
-EffectType,unpunish,天罰からの解放
-EffectType,unstuck,抜け出す
 EffectType,visit shop,お店を訪問
 EffectType,visit shrine,社を訪ねる
 EffectType,visit zoo,動物園を訪問
@@ -3055,11 +3039,11 @@ LiteralText,afflict,災難
 LiteralText,AFFLICTED,災難に苛まれている
 LiteralText,affliction?,災難?
 LiteralText,AFFLICTIONS,災難
+LiteralText,alerting,警戒
 LiteralText,alias?,別名?
 LiteralText,ALL,すべて
 LiteralText,ALL AT ONCE,一斉に
 LiteralText,all kind,同種すべて
-LiteralText,all levels,
 LiteralText,always,常に
 LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,amnesia,記憶喪失
@@ -3162,8 +3146,10 @@ LiteralText,companion,仲間
 LiteralText,compression,に軽量化
 LiteralText,CONCEAL,隠す
 LiteralText,CONCEALED,隠れた
+LiteralText,concealing,隠す
 LiteralText,CONDUCT,行為
 LiteralText,CONFIRM,確認
+LiteralText,connect portal,通路をつなげる
 LiteralText,Connect to game hosted by another player.,他のプレイヤーがホストしているゲームに接続
 LiteralText,CONSOLE,コンソール
 LiteralText,constructed,造り物
@@ -3172,6 +3158,7 @@ LiteralText,Continue,続行
 LiteralText,CONTINUE,続行
 LiteralText,CONTROLLED,制御された
 LiteralText,convert,
+LiteralText,convert block to barrier,巨塊を変換
 LiteralText,conveyance,食べた時の効果
 LiteralText,COPY,コピー
 LiteralText,corpse,の死体
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,罠を作成
 LiteralText,CREATE ENTITY,モンスターを生成
 LiteralText,CREATE FEATURE,設備を作成
 LiteralText,CREATE GATE,扉を作成
+LiteralText,create golem,ゴーレムを作成
 LiteralText,CREATE GROUND,床を作成
 LiteralText,CREATE HORDE,群れを作成
 LiteralText,CREATE ITEM,アイテムを作成
@@ -3224,6 +3212,7 @@ LiteralText,detect,探知
 LiteralText,determined by player level,プレイヤーのレベルによって決定
 LiteralText,device,罠
 LiteralText,DEVICES,罠
+LiteralText,devour item,アイテムをむさぼり喰う
 LiteralText,DIAGNOSTICS,詳細設定/ファイル管理
 LiteralText,DIALOGUE,会話
 LiteralText,dialogue?,会話?
@@ -3345,6 +3334,7 @@ LiteralText,greed,拾う
 LiteralText,grimoire,呪文
 LiteralText,ground,地面
 LiteralText,GROUNDS,地面
+LiteralText,grow entity,成長
 LiteralText,GUIDES,ガイド
 LiteralText,HALL of FAME,名誉の殿堂
 LiteralText,hatched by,孵化条件
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,幻影
 LiteralText,immune to,に免疫がある
 LiteralText,immunities,免疫
 LiteralText,impact,殴る
+LiteralText,impersonate entity,対象をコピー
 LiteralText,IMPORT,インポート
 LiteralText,Import a file,ファイル読み込み
 LiteralText,IMPOSSIBLE,不可能
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,施錠
 LiteralText,locked,施錠されている
 LiteralText,LOCKED,施錠されている
 LiteralText,locked scaling mode,表示倍率を固定
+LiteralText,locking,施錠
 LiteralText,loot,戦利品
 LiteralText,LOOT,略奪
 LiteralText,LOSE KARMA,カルマを減らす
@@ -3550,6 +3542,7 @@ LiteralText,RACES,種族
 LiteralText,random,ランダム
 LiteralText,RANDOM,ランダム
 LiteralText,random dungeon seed,シードからダンジョンを生成
+LiteralText,random level,
 LiteralText,random points,追加技能値獲得
 LiteralText,rank,ランク
 LiteralText,rarity,出現率
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
 LiteralText,rumour,噂
+LiteralText,sacrifice item,犠牲
 LiteralText,SANITY CHECK,SANチェック
 LiteralText,SAVE,セーブ
 LiteralText,SAVE & QUIT,セーブと終了
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,分解
 LiteralText,SEALED,モンスターを生成しない
 LiteralText,Search,周囲を調査
 LiteralText,Search how many turns?,何ターン調査しますか？
+LiteralText,searching,調査
 LiteralText,secret,隠し扉
 LiteralText,SECRET,秘密の
 LiteralText,seed,シード
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,ターンベース
 LiteralText,turns,ターン
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
 LiteralText,unable to load,読み込みに失敗しました
-LiteralText,unafflicts,災難からの解放
+LiteralText,unafflict,災難からの解放
 LiteralText,UNDEAD,アンデッド
 LiteralText,Undo,元に戻す
 LiteralText,unidentified items,未識別アイテム
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,ユニーク
 LiteralText,UNLOCK,解錠
 LiteralText,unlock door or container,扉や箱の解錠
 LiteralText,UNLOCKED,鍵が開いた
-LiteralText,unpolymorphs,変化から戻る
-LiteralText,unpunishes,天罰からの解放
+LiteralText,unpolymorph,変化から戻る
+LiteralText,unpunish,天罰からの解放
 LiteralText,unskilled,初心者
 LiteralText,UNSKILLED,初心者
+LiteralText,unstuck,抜け出す
 LiteralText,UNTRAP,罠解除
 LiteralText,UNTRAPPED,罠解除
 LiteralText,update available,アップデートがあります

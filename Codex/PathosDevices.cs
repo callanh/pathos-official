@@ -231,7 +231,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.Charm(Elements.magical, Delay.FromTurns(30000));
+            A.CharmEntity(Elements.magical, Delay.FromTurns(30000));
           });
           Table.Add(1, A =>
           {
@@ -239,7 +239,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.Unpunish();
+            A.UnpunishEntity();
             A.RemoveCurse(Dice.One);
           });
           Table.Add(1, A =>
@@ -248,7 +248,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.Recall();
+            A.RecallParty();
           });
         });
       });

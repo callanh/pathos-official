@@ -621,8 +621,8 @@ namespace Pathos
              .SetAudibility(1);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Charm(Elements.magical, Delay.FromTurns(2000)),
-            U => U.Charm(Elements.magical, Delay.FromTurns(1000), Kinds.Living.ToArray()),
+            B => B.CharmEntity(Elements.magical, Delay.FromTurns(2000)),
+            U => U.CharmEntity(Elements.magical, Delay.FromTurns(1000), Kinds.Living.ToArray()),
             C => C.ApplyTransient(Properties.rage, 4.d6() + 4)
           );
         });
@@ -667,7 +667,7 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WhenTargetKind(Kinds.Living, 
               T => T.DrainLife(Elements.drain, 6.d6() + 6), 
-              F => F.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray()) // bind undead.
+              F => F.CharmEntity(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray()) // bind undead.
             ),
             S => S.Backfire(F => F.DrainLife(Elements.drain, 6.d6() + 6))
           );
@@ -789,11 +789,11 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.Unafflict();
-                    A.Unpunish();
-                    A.Unpolymorph();
+                    A.UnafflictEntity();
+                    A.UnpunishEntity();
+                    A.UnpolymorphEntity();
                     A.RemoveCurse(Dice.One);
-                    A.Charging(Dice.One, Dice.Fixed(100)); // 100%
+                    A.ChargingItem(Dice.One, Dice.Fixed(100)); // 100%
                   });
                   Table.Add(10, A => A.CreateItem(Dice.One));
                   Table.Add(10, A => A.SummonEntity(Dice.One, Entities.List.Where(E => E.IsEncounter && E.IsDomestic).ToArray()));
@@ -886,7 +886,7 @@ namespace Pathos
         {
           Use.SetCast().FilterItem(Codex.Items.animal_corpse, Codex.Items.vegetable_corpse);
           Use.Apply.Backfire(F => F.Sanctify(Item: null, Sanctities.Blessed));
-          Use.Apply.Sacrifice();
+          Use.Apply.SacrificeItem();
         });
       });
 
@@ -1051,9 +1051,9 @@ namespace Pathos
           {
             T.WithSourceSanctity
             (
-              B => B.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
-              U => U.Charm(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray()),
-              C => C.Charm(Elements.magical, Delay.FromTurns(10000), Kinds.Living.ToArray())
+              B => B.CharmEntity(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
+              U => U.CharmEntity(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray()),
+              C => C.CharmEntity(Elements.magical, Delay.FromTurns(10000), Kinds.Living.ToArray())
             );
           });
         });
@@ -4673,7 +4673,7 @@ namespace Pathos
           // single use magic whistle.
           Use.Consume();
           Use.Apply.Alert(1.d6() + 1);
-          Use.Apply.Recall();
+          Use.Apply.RecallParty();
         });
       });
       /*
@@ -5321,7 +5321,7 @@ namespace Pathos
         });
         I.SetImpact(Sonics.splat, A =>
         {
-          A.WhenTargetEntity(new[] { Entities.seal }, T => T.Charm(Elements.physical, Delay.Zero));
+          A.WhenTargetEntity(new[] { Entities.seal }, T => T.CharmEntity(Elements.physical, Delay.Zero));
         });
       });
 
@@ -6255,13 +6255,13 @@ namespace Pathos
           (
             B =>
             {
-              B.Unpunish();
-              B.Divine();
+              B.UnpunishEntity();
+              B.DivineItem();
               B.ApplyTransient(Properties.beatitude, 1.d500() + 250);
             },
             U =>
             {
-              U.Divine();
+              U.DivineItem();
               U.ApplyTransient(Properties.beatitude, 1.d50() + 50);
             },
             C =>
@@ -6740,9 +6740,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Charging(Dice.One, Dice.Fixed(100)), // 100%
-            U => U.Charging(Dice.One, 1.d20() + 70),    // 71..90%
-            C => C.Charging(Dice.One, 1.d20() + 30)     // 31..50%
+            B => B.ChargingItem(Dice.One, Dice.Fixed(100)), // 100%
+            U => U.ChargingItem(Dice.One, 1.d20() + 70),    // 71..90%
+            C => C.ChargingItem(Dice.One, 1.d20() + 30)     // 31..50%
           );
         });
         I.SetImpact(Sonics.broken_glass, A => A.ApplyTransient(Properties.blindness, 2.d6() + 6));
@@ -6780,9 +6780,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Charging(Dice.One, Dice.Fixed(100)), // 100%
-            U => U.Charging(Dice.One, 1.d20() + 70),    // 71..90%
-            C => C.Charging(Dice.One, 1.d20() + 30)     // 31..50%
+            B => B.ChargingItem(Dice.One, Dice.Fixed(100)), // 100%
+            U => U.ChargingItem(Dice.One, 1.d20() + 70),    // 71..90%
+            C => C.ChargingItem(Dice.One, 1.d20() + 30)     // 31..50%
           );
         });
         I.SetImpact(Sonics.broken_glass, A => A.WithSourceSanctity
@@ -6921,15 +6921,15 @@ namespace Pathos
             B =>
             {
               B.RestoreAbility();
-              B.Unafflict();
-              B.Unpolymorph();
+              B.UnafflictEntity();
+              B.UnpolymorphEntity();
               B.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.inebriation, Properties.confusion, Properties.stunned, Properties.petrifying);
             },
             U =>
             {
               U.RestoreAbility();
-              U.Unafflict();
-              U.Unpolymorph();
+              U.UnafflictEntity();
+              U.UnpolymorphEntity();
             },
             C =>
             {
@@ -8099,9 +8099,9 @@ namespace Pathos
             ),
             E => E.WithSourceSanctity
             (
-              B => B.Charging(Dice.One, Dice.Fixed(100)), // 100%
-              U => U.Charging(Dice.One, 1.d20() + 70),    // 71..90%
-              C => C.Charging(Dice.One, 1.d20() + 30)     // 31..50%
+              B => B.ChargingItem(Dice.One, Dice.Fixed(100)), // 100%
+              U => U.ChargingItem(Dice.One, 1.d20() + 70),    // 71..90%
+              C => C.ChargingItem(Dice.One, 1.d20() + 30)     // 31..50%
             )
           );
         });
@@ -8572,7 +8572,7 @@ namespace Pathos
                 B =>
                 {
                   B.Harm(Elements.water, Dice.Zero); // TODO: BCU
-                  B.Unpunish();
+                  B.UnpunishEntity();
                   B.RemoveCurse(Dice.One);
                 },
                 U =>
@@ -8692,8 +8692,8 @@ namespace Pathos
             T => T.CloneSourceEntity(1.d3()), // clones self in confusion.
             E => E.WithSourceSanctity
             (
-              B => B.Genocide(AllKind: true, Strikes.death),
-              U => U.Genocide(AllKind: false, Strikes.death),
+              B => B.GenocideEntity(AllKind: true, Strikes.death),
+              U => U.GenocideEntity(AllKind: false, Strikes.death),
               C => C.SpawnEntity(1.d3() + 4)
             )
           );
@@ -9020,7 +9020,7 @@ namespace Pathos
             ),
             F =>
             {
-              F.Unpunish();
+              F.UnpunishEntity();
               F.WithSourceSanctity
               (
                 B =>
@@ -9036,7 +9036,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Unpunish();
+          A.UnpunishEntity();
           A.RemoveCurse(2.d3() - 2);
         });
       });
@@ -9172,9 +9172,9 @@ namespace Pathos
             T => T.ApplyTransient(Properties.paralysis, 5.d100()),
             F => F.WithSourceSanctity
             (
-              B => B.Charm(Elements.magical, Delay.FromTurns(40000)),
-              U => U.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
-              C => C.Charm(Elements.magical, Delay.FromTurns(20000), Kinds.Undead.ToArray())
+              B => B.CharmEntity(Elements.magical, Delay.FromTurns(40000)),
+              U => U.CharmEntity(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
+              C => C.CharmEntity(Elements.magical, Delay.FromTurns(20000), Kinds.Undead.ToArray())
             )
           );
         });
@@ -10478,8 +10478,8 @@ namespace Pathos
             T => T.AreaTransient(Properties.rage, 10.d10()), // opposite blast
             F => F.WithSourceSanctity
             (
-              B => B.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
-              U => U.Charm(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray()),
+              B => B.CharmEntity(Elements.magical, Delay.FromTurns(30000), Kinds.Living.ToArray()),
+              U => U.CharmEntity(Elements.magical, Delay.FromTurns(20000), Kinds.Living.ToArray()),
               C => C.ApplyTransient(Properties.conflict, 10.d10())
             )
           );
@@ -10605,7 +10605,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(100);
         I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.whistle, Use =>
         {
-          Use.Apply.Recall();
+          Use.Apply.RecallParty();
           /*
           Use.Apply.WithSourceSanctity
           (
@@ -10919,7 +10919,7 @@ namespace Pathos
           );
           Use.Apply.WhenAfflicted(T =>
           {
-            T.Unafflict();
+            T.UnafflictEntity();
             T.DestroySourceItem(Dice.One);
           });
         });
@@ -11011,7 +11011,7 @@ namespace Pathos
           Use.Apply.Alert(Dice.Fixed(10));
           Use.Apply.WithSourceSanctity
           (
-            B => B.Charm(Elements.magical, Delay.FromTurns(30000), Kinds.snake),
+            B => B.CharmEntity(Elements.magical, Delay.FromTurns(30000), Kinds.snake),
             U => U.Nothing(),
             C => C.AreaTransient(Properties.aggravation, 3.d6() + 3, Kinds.snake, Kinds.naga)
           );
@@ -12642,9 +12642,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.WhenChance(Chance.OneIn100, T => T.Degrade()),
-            U => U.WhenChance(Chance.OneIn50, T => T.Degrade()),
-            C => C.WhenChance(Chance.OneIn10, T => T.Degrade())
+            B => B.WhenChance(Chance.OneIn100, T => T.DegradeItem()),
+            U => U.WhenChance(Chance.OneIn50, T => T.DegradeItem()),
+            C => C.WhenChance(Chance.OneIn10, T => T.DegradeItem())
           );
           ;
         });

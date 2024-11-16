@@ -962,24 +962,17 @@ EffectProperty,fixed,수리됨
 EffectProperty,loyal only,동료관계만
 EffectProperty,polite,공손한
 EffectProperty,rigid,단단한
-EffectType,alert,경계
-EffectType,amnesia,망각
 EffectType,blinking,점멸
 EffectType,capture,포획하기
 EffectType,clone entity,캐릭터 복제
-EffectType,concealing,숨기기
-EffectType,connect portal,길 연결
 EffectType,convert barrier,벽 변환
-EffectType,convert block to barrier,바위 변환
 EffectType,convert gate,문 변환
 EffectType,convert ground,바닥 변환
 EffectType,convert volatile,휘발성 물질 변환
-EffectType,create golem,골렘 생성
 EffectType,create nook,구석 생성
 EffectType,create volatile,휘발성 물질 생성
 EffectType,decapitate,참수
 EffectType,destroy volatile,휘발성 물질 제거
-EffectType,devour item,재산 몰수
 EffectType,disarm,무장해제
 EffectType,drain life,체력 흡수
 EffectType,drain mana,마나 흡수
@@ -988,14 +981,11 @@ EffectType,engulf,삼키기
 EffectType,exchange,교환
 EffectType,extinguish volatile,휘발성 물질 증발
 EffectType,grapple,붙잡기
-EffectType,growth,성장
 EffectType,hatch,부화
 EffectType,identify,식별
-EffectType,impersonate,사칭
 EffectType,incarcerate,투옥
 EffectType,karma,카르마
 EffectType,liberate,해방
-EffectType,locking,잠금
 EffectType,mobilise block,이동가능한 바위
 EffectType,opening,개방
 EffectType,place curse,저주 부여
@@ -1004,18 +994,12 @@ EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
 EffectType,restock,재충전
 EffectType,restore ability,능력치 복구
-EffectType,sacrifice,희생
 EffectType,sanctify,신성화
-EffectType,searching,수색
 EffectType,spawn entity,캐릭터 생성
 EffectType,teleport entity,캐릭터 텔레포트
 EffectType,teleport item away,먼 곳으로 텔레포트
 EffectType,tinning,통조림 제작
 EffectType,transition,층 이동
-EffectType,unafflict,감염 해제
-EffectType,unpolymorph,폴리모프 해제
-EffectType,unpunish,형벌 해제
-EffectType,unstuck,탈출
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
@@ -3055,11 +3039,11 @@ LiteralText,afflict,감염
 LiteralText,AFFLICTED,감염됨
 LiteralText,affliction?,감염?
 LiteralText,AFFLICTIONS,감염
+LiteralText,alerting,경계
 LiteralText,alias?,가명?
 LiteralText,ALL,전체
 LiteralText,ALL AT ONCE,한 번에 전부
 LiteralText,all kind,전 종류
-LiteralText,all levels,
 LiteralText,always,항상
 LiteralText,AMBIENT SOUNDS,앰비언트 사운드
 LiteralText,amnesia,망각
@@ -3162,8 +3146,10 @@ LiteralText,companion,동료
 LiteralText,compression,압축
 LiteralText,CONCEAL,숨기기
 LiteralText,CONCEALED,숨겨짐
+LiteralText,concealing,숨기기
 LiteralText,CONDUCT,행위
 LiteralText,CONFIRM,확인
+LiteralText,connect portal,길 연결
 LiteralText,Connect to game hosted by another player.,다른 플레이어가 호스트한 게임에 연결
 LiteralText,CONSOLE,콘솔
 LiteralText,constructed,건축된
@@ -3172,6 +3158,7 @@ LiteralText,Continue,계속하기
 LiteralText,CONTINUE,계속하기
 LiteralText,CONTROLLED,통제됨
 LiteralText,convert,
+LiteralText,convert block to barrier,바위 변환
 LiteralText,conveyance,시체 섭취
 LiteralText,COPY,복제
 LiteralText,corpse,시체
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,함정 생성
 LiteralText,CREATE ENTITY,개체 생성
 LiteralText,CREATE FEATURE,시설 생성
 LiteralText,CREATE GATE,문 생성
+LiteralText,create golem,골렘 생성
 LiteralText,CREATE GROUND,지면 생성
 LiteralText,CREATE HORDE,군단 생성
 LiteralText,CREATE ITEM,아이템 생성
@@ -3224,6 +3212,7 @@ LiteralText,detect,감지
 LiteralText,determined by player level,플레이어 레벨에 따라 정해짐
 LiteralText,device,장치
 LiteralText,DEVICES,장치
+LiteralText,devour item,재산 몰수
 LiteralText,DIAGNOSTICS,진단 도구
 LiteralText,DIALOGUE,
 LiteralText,dialogue?,
@@ -3345,6 +3334,7 @@ LiteralText,greed,탐욕
 LiteralText,grimoire,마법
 LiteralText,ground,땅
 LiteralText,GROUNDS,바닥
+LiteralText,grow entity,성장
 LiteralText,GUIDES,가이드
 LiteralText,HALL of FAME,명예의 전당
 LiteralText,hatched by,부화되었다
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,환영
 LiteralText,immune to,에 면역
 LiteralText,immunities,면역
 LiteralText,impact,충격
+LiteralText,impersonate entity,사칭
 LiteralText,IMPORT,불러오기
 LiteralText,Import a file,파일 불러오기
 LiteralText,IMPOSSIBLE,불가능
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,잠그기
 LiteralText,locked,잠긴
 LiteralText,LOCKED,잠김
 LiteralText,locked scaling mode,확대 잠금
+LiteralText,locking,잠금
 LiteralText,loot,전리품
 LiteralText,LOOT,전리품
 LiteralText,LOSE KARMA,카르마 손실
@@ -3550,6 +3542,7 @@ LiteralText,RACES,종족
 LiteralText,random,무작위
 LiteralText,RANDOM,무작위
 LiteralText,random dungeon seed,무작위 던전 시드
+LiteralText,random level,
 LiteralText,random points,무작위 포인트
 LiteralText,rank,랭크
 LiteralText,rarity,희귀도
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
 LiteralText,ROTATE,회전
 LiteralText,rumour,루머
+LiteralText,sacrifice item,희생
 LiteralText,SANITY CHECK,정신 진단
 LiteralText,SAVE,저장
 LiteralText,SAVE & QUIT,저장 및 종료
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,분해
 LiteralText,SEALED,봉인됨
 LiteralText,Search,탐색
 LiteralText,Search how many turns?,몇 턴 동안 탐색할까요?
+LiteralText,searching,수색
 LiteralText,secret,비밀
 LiteralText,SECRET,비밀
 LiteralText,seed,시드
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,턴제
 LiteralText,turns,턴
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,아무런 단어나 구를 입력하여 랜덤 던전 시드를 생성합니다.
 LiteralText,unable to load,불러오기 불가능
-LiteralText,unafflicts,감염 해제
+LiteralText,unafflict,감염 해제
 LiteralText,UNDEAD,언데드인
 LiteralText,Undo,실행 취소
 LiteralText,unidentified items,식별되지 않은 아이템들
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,유니크
 LiteralText,UNLOCK,잠금해제
 LiteralText,unlock door or container,문 또는 컨테이너의 잠금해제
 LiteralText,UNLOCKED,잠금해제됨
-LiteralText,unpolymorphs,폴리모프 해제
-LiteralText,unpunishes,형벌 해제
+LiteralText,unpolymorph,폴리모프 해제
+LiteralText,unpunish,형벌 해제
 LiteralText,unskilled,미숙함
 LiteralText,UNSKILLED,미숙함
+LiteralText,unstuck,탈출
 LiteralText,UNTRAP,무장해제
 LiteralText,UNTRAPPED,무장해제됨
 LiteralText,update available,업데이트 가능함

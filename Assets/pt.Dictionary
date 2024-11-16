@@ -962,24 +962,17 @@ EffectProperty,fixed,consertado
 EffectProperty,loyal only,apenas leal
 EffectProperty,polite,polido
 EffectProperty,rigid,rígido
-EffectType,alert,alerta
-EffectType,amnesia,amnésia
 EffectType,blinking,lampejante
 EffectType,capture,captura
 EffectType,clone entity,clonar personagem
-EffectType,concealing,escondendo
-EffectType,connect portal,conectar passagem
 EffectType,convert barrier,converter parede
-EffectType,convert block to barrier,converter pedregulho
 EffectType,convert gate,converter porta
 EffectType,convert ground,converter piso
 EffectType,convert volatile,converter cachoeira
-EffectType,create golem,criar golem
 EffectType,create nook,criar recanto
 EffectType,create volatile,criar cachoeira
 EffectType,decapitate,decapitar
 EffectType,destroy volatile,remover cachoeira
-EffectType,devour item,devorar espólio
 EffectType,disarm,desarmar
 EffectType,drain life,drenar saúde
 EffectType,drain mana,drenar mana
@@ -988,14 +981,11 @@ EffectType,engulf,engolfar
 EffectType,exchange,trocar
 EffectType,extinguish volatile,extinguir cachoeira
 EffectType,grapple,agarrar
-EffectType,growth,crescimento
 EffectType,hatch,chocar
 EffectType,identify,identificar
-EffectType,impersonate,personificar
 EffectType,incarcerate,encarcerar
 EffectType,karma,carma
 EffectType,liberate,liberar
-EffectType,locking,travamento
 EffectType,mobilise block,mobilizar pedregulho
 EffectType,opening,abertura
 EffectType,place curse,colocar maldição
@@ -1004,18 +994,12 @@ EffectType,release,liberar
 EffectType,remove curse,remover maldição
 EffectType,restock,reabastecer
 EffectType,restore ability,restaurar atributo
-EffectType,sacrifice,sacrificar
 EffectType,sanctify,santificar
-EffectType,searching,procurar
 EffectType,spawn entity,gerar personagem
 EffectType,teleport entity,teleportar personagem
 EffectType,teleport item away,teleportar-se para longe
 EffectType,tinning,enlatar
 EffectType,transition,transicionar
-EffectType,unafflict,desafligir
-EffectType,unpolymorph,despolimorfizar
-EffectType,unpunish,purgar punição
-EffectType,unstuck,desprender
 EffectType,visit shop,visitar loja
 EffectType,visit shrine,visitar santuário
 EffectType,visit zoo,visitar zoologico
@@ -3055,11 +3039,11 @@ LiteralText,afflict,afligir
 LiteralText,AFFLICTED,AFLIGIDO
 LiteralText,affliction?,aflição?
 LiteralText,AFFLICTIONS,AFLIÇÕES
+LiteralText,alerting,alerta
 LiteralText,alias?,apelido?
 LiteralText,ALL,TUDO
 LiteralText,ALL AT ONCE,TUDO DE UMA VEZ
 LiteralText,all kind,todos os tipos
-LiteralText,all levels,
 LiteralText,always,sempre
 LiteralText,AMBIENT SOUNDS,SONS AMBIENTES
 LiteralText,amnesia,amnésia
@@ -3162,8 +3146,10 @@ LiteralText,companion,companheiro
 LiteralText,compression,compressão
 LiteralText,CONCEAL,ESCONDER
 LiteralText,CONCEALED,ESCONDIDO
+LiteralText,concealing,escondendo
 LiteralText,CONDUCT,CONDUZIR
 LiteralText,CONFIRM,CONFIRMAR
+LiteralText,connect portal,conectar passagem
 LiteralText,Connect to game hosted by another player.,Conectar a uma partida hospedada por outro jogador.
 LiteralText,CONSOLE,CONSOLE
 LiteralText,constructed,construído
@@ -3172,6 +3158,7 @@ LiteralText,Continue,Continuar
 LiteralText,CONTINUE,CONTINUAR
 LiteralText,CONTROLLED,CONTROLADO
 LiteralText,convert,
+LiteralText,convert block to barrier,converter pedregulho
 LiteralText,conveyance,transmissão
 LiteralText,COPY,COPIAR
 LiteralText,corpse,cadáver
@@ -3188,6 +3175,7 @@ LiteralText,CREATE DEVICE,CRIAR ARMADILHA
 LiteralText,CREATE ENTITY,CRIAR ENTIDADE
 LiteralText,CREATE FEATURE,CRIAR ESTRUTURA
 LiteralText,CREATE GATE,CRIAR PORTA
+LiteralText,create golem,criar golem
 LiteralText,CREATE GROUND,CRIAR PISO
 LiteralText,CREATE HORDE,CRIAR HORDA
 LiteralText,CREATE ITEM,CRIAR ITEM
@@ -3224,6 +3212,7 @@ LiteralText,detect,detectar
 LiteralText,determined by player level,determinado pelo nível do jogador
 LiteralText,device,dispositivo
 LiteralText,DEVICES,DISPOSITIVOS
+LiteralText,devour item,devorar espólio
 LiteralText,DIAGNOSTICS,DIAGNÓSTICOS
 LiteralText,DIALOGUE,DIÁLOGO
 LiteralText,dialogue?,diálogo?
@@ -3345,6 +3334,7 @@ LiteralText,greed,cobiça
 LiteralText,grimoire,grimório
 LiteralText,ground,chão
 LiteralText,GROUNDS,CHÃO
+LiteralText,grow entity,crescimento
 LiteralText,GUIDES,GUIAS
 LiteralText,HALL of FAME,HALL DA FAMA
 LiteralText,hatched by,chocado por
@@ -3369,6 +3359,7 @@ LiteralText,ILLUSION,ILUSÃO
 LiteralText,immune to,imune a
 LiteralText,immunities,imunidades
 LiteralText,impact,impacto
+LiteralText,impersonate entity,personificar
 LiteralText,IMPORT,IMPORTAR
 LiteralText,Import a file,Importar um arquivo
 LiteralText,IMPOSSIBLE,IMPOSSÍVEL
@@ -3425,6 +3416,7 @@ LiteralText,LOCK,TRAVAR
 LiteralText,locked,trancado
 LiteralText,LOCKED,TRANCADO
 LiteralText,locked scaling mode,modo de escala travado
+LiteralText,locking,travamento
 LiteralText,loot,saque
 LiteralText,LOOT,SAQUEAR
 LiteralText,LOSE KARMA,PERDER CARMA
@@ -3550,6 +3542,7 @@ LiteralText,RACES,RAÇAS
 LiteralText,random,aleatório
 LiteralText,RANDOM,ALEATÓRIO
 LiteralText,random dungeon seed,masmorra aleatória (seed)
+LiteralText,random level,
 LiteralText,random points,pontos aleatórios
 LiteralText,rank,ranque
 LiteralText,rarity,raridade
@@ -3611,6 +3604,7 @@ LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
 LiteralText,ROTATE,ROTACIONAR
 LiteralText,rumour,espalhar
+LiteralText,sacrifice item,sacrificar
 LiteralText,SANITY CHECK,CHECAR SANIDADE
 LiteralText,SAVE,SALVAR
 LiteralText,SAVE & QUIT,SALVAR & SAIR
@@ -3623,6 +3617,7 @@ LiteralText,SCRAP,SUCATEAR
 LiteralText,SEALED,SELADO
 LiteralText,Search,Procurar
 LiteralText,Search how many turns?,Procurar por quantos turnos?
+LiteralText,searching,procurar
 LiteralText,secret,segredo
 LiteralText,SECRET,SEGREDO
 LiteralText,seed,semente
@@ -3749,7 +3744,7 @@ LiteralText,TURN-BASED,EM TURNOS
 LiteralText,turns,turnos
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Digite qualquer palavra ou frase para gerar uma semente de masmorra aleatória.
 LiteralText,unable to load,não foi possível carregar
-LiteralText,unafflicts,desaflige
+LiteralText,unafflict,desaflige
 LiteralText,UNDEAD,MORTO-VIVO
 LiteralText,Undo,Desfazer
 LiteralText,unidentified items,itens não identificados
@@ -3758,10 +3753,11 @@ LiteralText,UNIQUES,ÚNICOS
 LiteralText,UNLOCK,DESTRAVAR
 LiteralText,unlock door or container,destravar porta ou recipiente
 LiteralText,UNLOCKED,DESTRAVADO
-LiteralText,unpolymorphs,despolimorfa
-LiteralText,unpunishes,tira a punição
+LiteralText,unpolymorph,despolimorfa
+LiteralText,unpunish,tira a punição
 LiteralText,unskilled,inexperiente
 LiteralText,UNSKILLED,INEXPERIENTE
+LiteralText,unstuck,desprender
 LiteralText,UNTRAP,DESARMAR
 LiteralText,UNTRAPPED,DESARMADO
 LiteralText,update available,atualização disponível
