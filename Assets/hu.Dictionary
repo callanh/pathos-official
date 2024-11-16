@@ -956,72 +956,28 @@ DietName,metalivore,fémevő
 DietName,omnivore,mindenevő
 DietName,organivore,organikus élelemmel táplálkozó
 DietName,xylophagy,faevő
-EffectProperty,all kind,mindenfajta
-EffectProperty,break ally loyalty,szövetségesi lojalitás megtörése
-EffectProperty,carried,hordozta
-EffectProperty,constructed,megépített
-EffectProperty,destruction,pusztítás
 EffectProperty,disenchant,levétel
-EffectProperty,entities,entitások
-EffectProperty,equipment,felszerelés
-EffectProperty,equipped,felszerelve
 EffectProperty,expansive,terjedő
 EffectProperty,fixed,fixált
-EffectProperty,floor,padló
-EffectProperty,hordes,hordák
-EffectProperty,items,tárgyak
-EffectProperty,kinds,fajták
-EffectProperty,lies,hazugságok
 EffectProperty,loyal only,
-EffectProperty,material,anyag
 EffectProperty,polite,illedelmes
-EffectProperty,properties,tulajdonságok
-EffectProperty,random experience,véletlenszerű tapasztalat
-EffectProperty,random points,véletlenszerű pontok
-EffectProperty,remove random resistance,véletlenszerű ellenállás eltávolítása
-EffectProperty,remove random talent,véletlenszerű készség eltávolítása
-EffectProperty,removes all transients,összes átmeneti hatás eltávolítása
-EffectProperty,reset random equipment,véletlenszerű felszerelés visszaállítása
 EffectProperty,rigid,szilárd
-EffectProperty,sanctity,szentség
-EffectProperty,skills,képességek
-EffectProperty,source,forrás
-EffectProperty,stock,készlet
-EffectProperty,stocks,készletek
-EffectProperty,target,célpont
-EffectProperty,targeted,célzott
-EffectProperty,this level,ezen a szinten
-EffectProperty,truth,igazság
-EffectProperty,unafflicts,tisztít
-EffectProperty,unpolymorphs,visszaváltozás
-EffectProperty,unpunishes,büntetéseltávolítás
-EffectProperty,whole stack,egész halom
 EffectType,alert,riasztás
 EffectType,amnesia,amnézia
-EffectType,area transient,területi hatás
-EffectType,assess,értékelés
 EffectType,blinking,elillanás
-EffectType,cancellation,érvénytelenítés
 EffectType,capture,elfogás
-EffectType,charging,töltés
-EffectType,charm,elbűvölés
 EffectType,clone entity,karakterklón
 EffectType,concealing,eltitkolás
 EffectType,connect portal,
 EffectType,convert barrier,következővé alakul:
 EffectType,convert block to barrier,következővé alakul:
-EffectType,convert feature,következővé alakul:
 EffectType,convert gate,következővé alakul:
 EffectType,convert ground,következővé alakul:
-EffectType,convert item,következővé alakul:
 EffectType,convert volatile,
 EffectType,create golem,gólemet hoz létre
-EffectType,create horde,hordát hoz létre
 EffectType,create nook,bemélyedést hoz létre:
-EffectType,create trap,csapdát hoz létre
 EffectType,create volatile,
 EffectType,decapitate,lefejezés
-EffectType,destroy item,eszköz elpusztítása
 EffectType,destroy volatile,
 EffectType,devour item,eszköz felfalása
 EffectType,disarm,lefegyverzés
@@ -1031,9 +987,6 @@ EffectType,enchant item,eszköz igézése
 EffectType,engulf,elnyelés
 EffectType,exchange,kicserél
 EffectType,extinguish volatile,
-EffectType,gain level,szint megszerzése
-EffectType,gain skill,képesség megszerzése
-EffectType,genocide,népirtás
 EffectType,grapple,megragadás
 EffectType,growth,növekedés
 EffectType,hatch,kikeltés
@@ -1043,30 +996,19 @@ EffectType,incarcerate,bebörtönzés
 EffectType,karma,karma
 EffectType,liberate,felszabadítás
 EffectType,locking,zárás
-EffectType,lose skill,képesség elvesztése
-EffectType,lose talent,készség elvesztése
-EffectType,mapping,feltérképezés
 EffectType,mobilise block,
-EffectType,murder,gyilkosság
 EffectType,opening,kinyitás
-EffectType,pacify,nyugtatás
 EffectType,place curse,megátkozás
 EffectType,raise dead,halott-támasztás
 EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
-EffectType,remove transient,átmeneti hatás eltávolítása
-EffectType,replicate item,eszköz lemásolása
 EffectType,restock,feltöltés
 EffectType,restore ability,adottság-visszaállítás
-EffectType,rumour,híresztelés
 EffectType,sacrifice,áldozat
 EffectType,sanctify,felszentelés
 EffectType,searching,keresés
 EffectType,spawn entity,karakter lerakás
-EffectType,steal,lopás
-EffectType,summon entity,entitás megidézése:
 EffectType,teleport entity,karakter teleportálása
-EffectType,teleport item,eszköz teleportálása
 EffectType,teleport item away,elteleportálás
 EffectType,tinning,konzerválás
 EffectType,transition,átalakulás
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,{Percent}%-ot fed
 FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {SpellName} varázslat?
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
+FormatText,convert {FeatureName} into {DeviceName},következővé alakul: {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},megbénítja a következőt: {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,"hírnév: {RecordFame}, ö
 FormatText,Feed which item to {CharacterName}?,{CharacterName} melyik tárgyat fogyassza el?
 FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,{Percent}% {ElementName}ellenállást szerez
-FormatText,gain {TalentName} talent,{TalentName} készség megszerzése
+FormatText,gain {PropertyName} talent,{PropertyName} készség megszerzése
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Üdv, {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,"Üdv, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},sebzés {ElementName} {DamageDice}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Le
 FormatText,levels {From}-{To},{From}.-{To}. szint
 FormatText,levels {Number}+,{Number}. szint +
 FormatText,LOCKED {GATENAME},ZÁRT {GATENAME}
+FormatText,lose {PropertyName} talent,készség elvesztése {PropertyName}
 FormatText,not {EffectProperty},nincsen/nem {EffectProperty}
 FormatText,polymorph into {EntityNames},átváltozás {EntityNames}
 FormatText,range {Dice},hatótávolság {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}. helyezett
+FormatText,remove transient {PropertyNames},átmeneti hatás eltávolítása {PropertyNames}
 FormatText,replenish life from {Percent}%,
 FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Feltámasztott {CharacterName}, {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,CSAPÁSOK
 LiteralText,alias?,álnév?
 LiteralText,ALL,ÖSSZES
 LiteralText,ALL AT ONCE,MINDET EGYSZERRE
+LiteralText,all kind,mindenfajta
+LiteralText,all levels,
 LiteralText,always,mindig
 LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
 LiteralText,amnesia,amnézia
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,Biztos be szeretnéd fe
 LiteralText,Are you sure you want to lose this character and end your adventure?,Biztos be szeretnéd fejezni ezt a kalandot? Ez a karakter elvesztésével jár...
 LiteralText,ARE YOU SURE?,BIZTOS VAGY BENNE?
 LiteralText,area of effect,hatásterület
+LiteralText,area transient,területi hatás
 LiteralText,ARTIFACTS,EREKLYÉK
 LiteralText,ASCEND TO PREVIOUS LEVEL,LÉPÉS AZ ELŐZŐ SZINTRE
+LiteralText,assess item,értékelés
 LiteralText,assets,vagyon
 LiteralText,ATMOSPHERE,ATMOSZFÉRA
 LiteralText,attack modifier,támadásmódosító
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,védelem fokozása igézéssel
 LiteralText,boost encumbrance by enchantment,teherbírás növelése igézéssel
 LiteralText,boost speed by enchantment,sebesség növelése igézéssel
 LiteralText,bounces,pattan
+LiteralText,break ally loyalty,szövetségesi lojalitás megtörése
 LiteralText,broken,törött
 LiteralText,BROKEN,TÖRÖTT
 LiteralText,burst rate,sorozatlövés mértéke
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,NEM LEHET LÁTNI
 LiteralText,CAN'T SLIDE,NEM LEHET CSÚSZNI
 LiteralText,CAN'T TELEKINESIS,NEM MEHET VÉGBE TELEKINÉZIS
 LiteralText,CAN'T THROW,NEM LEHET ELDOBNI
+LiteralText,carried,hordozta
 LiteralText,Cast,Varázslatok
 LiteralText,CAST SPELLS,varázslás
 LiteralText,challenge,kihívás
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,BAJNOK
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,feltöltött tárgyak
+LiteralText,charging,töltés
+LiteralText,charm,elbűvölés
 LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
 LiteralText,checking for updates,frissítések keresése
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,TETTEK
 LiteralText,CONFIRM,✓
 LiteralText,Connect to game hosted by another player.,Csatlakozz egy másik játékos által létrehozott játékhoz.
 LiteralText,CONSOLE,KONZOL
+LiteralText,constructed,megépített
 LiteralText,CONTACT,KAPCSOLAT
 LiteralText,Continue,Folytatás
 LiteralText,CONTINUE,FOLYTATÁS
 LiteralText,CONTROLLED,IRÁNYÍTOTT
+LiteralText,convert,
 LiteralText,conveyance,tápérték:
 LiteralText,COPY,MÁSOL
 LiteralText,corpse,tetem
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,ENTITÁSOK
 LiteralText,entity,entitás
 LiteralText,entropy accidents,entrópiabalesetek
 LiteralText,EQUIP,FELSZEREL
+LiteralText,equipped,felszerelve
 LiteralText,ESCAPE,ELMENEKÜLÉS
 LiteralText,escape traps,csapdákból való kijutás
 LiteralText,escape with,kijutás
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,szabadon pásztázómód
 LiteralText,fright,rémület
 LiteralText,fumbling,ügyetlenség
 LiteralText,GAIN KARMA,KARMA MEGSZERZÉSE
+LiteralText,gain level,szint megszerzése
 LiteralText,GAIN LEVEL,SZINTE MEGSZERZÉSE
 LiteralText,gain nutrition,tápanyag megszerzése
 LiteralText,gain skill,képesség megszerzése
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,ELREJTŐZÉS
 LiteralText,hiding,rejtőzködő
 LiteralText,HINT,TIPP
 LiteralText,HIRE,FELBÉREL
+LiteralText,horde,
 LiteralText,HORDES,HORDÁK
 LiteralText,HOST,LÉTREHOZÁS
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
+LiteralText,into,
 LiteralText,Inventory,Leltár
 LiteralText,INVENTORY,LELTÁR
 LiteralText,ITEM,TÁRGY
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,varázslatok megtanulása
 LiteralText,LEFT RING,BAL GYŰRŰ
 LiteralText,LEVEL CHART,SZINT TÁBLÁZAT
 LiteralText,level//rank,szint
+LiteralText,lies,hazugságok
 LiteralText,life,életerő
 LiteralText,LIFE,ÉLETERŐ
 LiteralText,Life represents your physical health and death occurs at zero.,"Az életerő a testi egészségedet mutatja, így mikor eléri a 0-t, meghalsz."
@@ -3478,6 +3438,7 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,A mana a varázslatokhoz szükséges energia szintjét mutatja.
 LiteralText,Map,Térkép
 LiteralText,MAP,TÉRKÉP
+LiteralText,mapping,feltérképezés
 LiteralText,material,anyag
 LiteralText,materials,anyagok
 LiteralText,melting,
@@ -3535,6 +3496,7 @@ LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
 LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
+LiteralText,pacify,nyugtatás
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
 LiteralText,passive (no attacking),passzív (nincs támadás)
@@ -3588,6 +3550,7 @@ LiteralText,RACES,FAJOK
 LiteralText,random,véletlenszerű
 LiteralText,RANDOM,VÉLETLENSZERŰ
 LiteralText,random dungeon seed,választható kazamata-seed
+LiteralText,random points,véletlenszerű pontok
 LiteralText,rank,rang
 LiteralText,rarity,ritkaság
 LiteralText,rate & review on the app store,értékelés az app store-ban
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,REGISZTRÁCIÓ
 LiteralText,REGISTER PLAYER HANDLE,JÁTÉKOSAZONOSÍTÓ REGISZTRÁLÁSA
 LiteralText,reinforced,megerősített
 LiteralText,REINFORCED,MEGERŐSÍTETT
+LiteralText,remove all transients,összes átmeneti hatás eltávolítása
 LiteralText,REMOVE CURSE,ÁTOKLEVÉTEL
+LiteralText,remove random resistance,véletlenszerű ellenállás eltávolítása
+LiteralText,remove random talent,véletlenszerű készség eltávolítása
 LiteralText,remove with,eltávolítás ezzel:
 LiteralText,remove with boulder,eltávolítás akadállyal
 LiteralText,REMOVE//container,ELTÁVOLÍT
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,TÁRGY ÁTNEVEZÉSE
 LiteralText,RENAME MAP,TÉRKÉP ÁTNEVEZÉSE
 LiteralText,repel,visszaver
 LiteralText,replica,másolat
+LiteralText,replicate item,eszköz lemásolása
 LiteralText,requires the skill to pick locks,szükség van hozzá a zártörés képességre
 LiteralText,Re-roll,Újradob
 LiteralText,re-rolls,újradobások
+LiteralText,reset random equipment,véletlenszerű felszerelés visszaállítása
 LiteralText,resident?,ott tartózkodó?
 LiteralText,resistances,ellenállások
 LiteralText,RESISTS,ELLENÁLL
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,VISSZAÁLLÍTÁS
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
 LiteralText,ROTATE,FORGAT
+LiteralText,rumour,híresztelés
 LiteralText,SANITY CHECK,HITELESSÉG ELLENŐRZÉSE
 LiteralText,SAVE,MENTÉS
 LiteralText,SAVE & QUIT,MENTÉS ÉS KILÉPÉS
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,HANGOK
 LiteralText,"Sorry, this device is a bit too small :-(","Sajnálom, de ez az eszköz túl kicsi :-("
 LiteralText,SOUND BOARD,HANGEFFEKTEK
 LiteralText,Sound on/off,Hang be/ki
+LiteralText,source,forrás
 LiteralText,spare materials can be formed into new items using the essence of creation,a felesleges anyagokból új tárgyak készíthetők az alkotás esszenciájának köszönhetően
 LiteralText,spawn,előforduló lény(ek)
 LiteralText,SPAWN ENTITIES EVERYWHERE,ENTITÁSOK LERAKÁSA MINDENHOVA
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,SEBESSÉG
 LiteralText,SPELL,VARÁZSLAT
 LiteralText,SPELLS,VARÁZSLATOK
 LiteralText,Square,Négyzet
+LiteralText,stack,egész halom
 LiteralText,START,KEZDÉS
 LiteralText,Start a game to be joined by other players.,"Kezdj egy játékot, amelyhez mások is csatlakozhatnak."
 LiteralText,Start new adventure,Új kaland elkezdése
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,kezdés társ nélkül
 LiteralText,starvation,éhezés
 LiteralText,starved,kiéhezett
 LiteralText,STAY,MARAD
+LiteralText,steal,lopás
 LiteralText,STOP,STOP
 LiteralText,storage,tárhely
 LiteralText,STUCK,BESZORULT
 LiteralText,STUDIO,STUDIO
 LiteralText,STUDIO QUESTS,STUDIO KALANDOK
 LiteralText,SUBMIT,BEÁLLÍT
+LiteralText,summon,entitás megidézése:
 LiteralText,SUSTAINED,KITARTÓ
 LiteralText,SWAP,HELYCSERE
 LiteralText,SWITCH,VÁLTÁS
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,ÖSSZES ELVÉTELE
 LiteralText,talents,készségek
 LiteralText,TALENTS,KÉSZSÉGEK
 LiteralText,TALK,
+LiteralText,target,célpont
 LiteralText,TELEKINESIS,TELEKINÉZIS
 LiteralText,Telekinesis which direction?,Melyik irányba történjen telekinézis?
 LiteralText,Telekinesis which object?,Melyik objektumon történjen telekinézis?
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,Elérhető egy új frissítés!
 LiteralText,there is nothing to place here,ide semmit nem lehet rakni
 LiteralText,there is nothing to remove here,innen semmit nem lehet eltávolítani
 LiteralText,there is nothing to trade with this merchant,nincs mit kereskedni ezzel a kereskedővel
+LiteralText,this level,ezen a szinten
 LiteralText,this merchant has no stock to trade,ez a kereskedő nem tud semmit áruba bocsátani
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Ezen a névvel kerülnek rögzítésre eredményeid a Dicsőség Csarnokában.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,"Játszhatsz barátaiddal ugyanabban a kazamatában, amennyiben megosztod ezt a seedet velük"
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,beragadt ajtó
 LiteralText,TRIGGER,AKTIVÁLÁS
 LiteralText,trigger once,egyszeri aktiválás
 LiteralText,trigger unlimited times,aktiválás végtelenszer
+LiteralText,truth,igazság
 LiteralText,TUNNEL,ALAGÚT
 LiteralText,Tunnel which direction?,Melyik irányba szeretnél ásni?
 LiteralText,TURN-BASED,KÖRÖKRE OSZTOTT
 LiteralText,turns,kör
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Írj be bármilyen szót vagy kifejezést ahhoz, hogy random kazamata seedet generálj."
 LiteralText,unable to load,nem lehet betölteni
+LiteralText,unafflicts,tisztít
 LiteralText,UNDEAD,ÉLŐHOLT
 LiteralText,Undo,Visszavon
 LiteralText,unidentified items,azonosítatlan tárgyak
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,KIVÉTELESEK
 LiteralText,UNLOCK,KINYIT
 LiteralText,unlock door or container,ajtó vagy tároló kinyitása
 LiteralText,UNLOCKED,KINYITVA
+LiteralText,unpolymorphs,visszaváltozás
+LiteralText,unpunishes,büntetéseltávolítás
 LiteralText,unskilled,gyakorlatlan
 LiteralText,UNSKILLED,GYAKORLATLAN
 LiteralText,UNTRAP,HATÁSTALANÍT
@@ -3814,6 +3793,7 @@ LiteralText,when entered,belelépve
 LiteralText,when exhausted,kifáradva
 LiteralText,when replica,lemásolva
 LiteralText,when untrapped,hatástalanítva
+LiteralText,with demolition,pusztítás
 LiteralText,WON'T EAT,NEM FOG ENNI
 LiteralText,WORKBENCH MATERIALS,ALAPANYAGOK MUNKAPADHOZ
 LiteralText,World,Világ

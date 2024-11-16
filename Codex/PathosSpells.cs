@@ -2660,7 +2660,7 @@ namespace Pathos
             P.SetCast().Strike(Strikes.acid, 2.d3() + 2)
              .SetPenetrates(false);
             P.Apply.Harm(Elements.acid, 2.d6() + 2);
-            P.Apply.CreateTrap(Devices.noxious_pool, Destruction: false);
+            P.Apply.CreateDevice(Devices.noxious_pool, Destruction: false);
           },
           S =>
           {
@@ -2668,7 +2668,7 @@ namespace Pathos
              .SetPenetrates();
             S.Apply.Harm(Elements.acid, 3.d6() + 3);
             S.Apply.ApplyTransient(Properties.hallucination, 2.d6());
-            S.Apply.CreateTrap(Devices.noxious_pool, Destruction: false);
+            S.Apply.CreateDevice(Devices.noxious_pool, Destruction: false);
           },
           E =>
           {
@@ -2677,7 +2677,7 @@ namespace Pathos
             E.Apply.Harm(Elements.acid, 4.d6() + 4);
             E.Apply.ApplyTransient(Properties.hallucination, 3.d6());
             E.Apply.ApplyTransient(Properties.confusion, 3.d6());
-            E.Apply.CreateTrap(Devices.acid_trap, Destruction: false);
+            E.Apply.CreateDevice(Devices.acid_trap, Destruction: false);
           },
           M =>
           {
@@ -2686,7 +2686,7 @@ namespace Pathos
             M.Apply.Harm(Elements.acid, 5.d6() + 5);
             M.Apply.ApplyTransient(Properties.hallucination, 4.d6());
             M.Apply.ApplyTransient(Properties.stunned, 4.d6());
-            M.Apply.CreateTrap(Devices.toxic_trap, Destruction: false);
+            M.Apply.CreateDevice(Devices.toxic_trap, Destruction: false);
           },
           C =>
           {
@@ -2695,7 +2695,7 @@ namespace Pathos
             C.Apply.Harm(Elements.acid, 6.d6() + 6);
             C.Apply.ApplyTransient(Properties.hallucination, 5.d6());
             C.Apply.ApplyTransient(Properties.stunned, 5.d6());
-            C.Apply.CreateTrap(Devices.toxic_trap, Destruction: false);
+            C.Apply.CreateDevice(Devices.toxic_trap, Destruction: false);
           }
         );
       });

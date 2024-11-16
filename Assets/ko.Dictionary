@@ -956,72 +956,28 @@ DietName,metalivore,금속식성
 DietName,omnivore,잡식성
 DietName,organivore,자연식성
 DietName,xylophagy,목식성
-EffectProperty,all kind,전 종류
-EffectProperty,break ally loyalty,동료관계 제거
-EffectProperty,carried,소지중
-EffectProperty,constructed,건축된
-EffectProperty,destruction,파괴
 EffectProperty,disenchant,강화해제
-EffectProperty,entities,개체들
-EffectProperty,equipment,장비
-EffectProperty,equipped,장비됨
 EffectProperty,expansive,값비싼
 EffectProperty,fixed,수리됨
-EffectProperty,floor,바닥
-EffectProperty,hordes,군단
-EffectProperty,items,아이템
-EffectProperty,kinds,종류
-EffectProperty,lies,거짓
 EffectProperty,loyal only,동료관계만
-EffectProperty,material,재질
 EffectProperty,polite,공손한
-EffectProperty,properties,특성들
-EffectProperty,random experience,무작위 경험치
-EffectProperty,random points,무작위 포인트
-EffectProperty,remove random resistance,무작위 내성 제거
-EffectProperty,remove random talent,무작위 재능 제거
-EffectProperty,removes all transients,모든 일시적인 효과 해제
-EffectProperty,reset random equipment,무작위 장비 초기화
 EffectProperty,rigid,단단한
-EffectProperty,sanctity,신성함
-EffectProperty,skills,숙련도
-EffectProperty,source,재료
-EffectProperty,stock,아이템
-EffectProperty,stocks,아이템들
-EffectProperty,target,타겟
-EffectProperty,targeted,대상
-EffectProperty,this level,현재 레벨
-EffectProperty,truth,진실
-EffectProperty,unafflicts,감염 해제
-EffectProperty,unpolymorphs,폴리모프 해제
-EffectProperty,unpunishes,형벌 해제
-EffectProperty,whole stack,전체 아이템
 EffectType,alert,경계
 EffectType,amnesia,망각
-EffectType,area transient,범위 효과
-EffectType,assess,평가
 EffectType,blinking,점멸
-EffectType,cancellation,무효화
 EffectType,capture,포획하기
-EffectType,charging,충전
-EffectType,charm,매혹
 EffectType,clone entity,캐릭터 복제
 EffectType,concealing,숨기기
 EffectType,connect portal,길 연결
 EffectType,convert barrier,벽 변환
 EffectType,convert block to barrier,바위 변환
-EffectType,convert feature,시설 변환
 EffectType,convert gate,문 변환
 EffectType,convert ground,바닥 변환
-EffectType,convert item,아이템 변환
 EffectType,convert volatile,휘발성 물질 변환
 EffectType,create golem,골렘 생성
-EffectType,create horde,군단 생성
 EffectType,create nook,구석 생성
-EffectType,create trap,함정 생성
 EffectType,create volatile,휘발성 물질 생성
 EffectType,decapitate,참수
-EffectType,destroy item,아이템 파괴
 EffectType,destroy volatile,휘발성 물질 제거
 EffectType,devour item,재산 몰수
 EffectType,disarm,무장해제
@@ -1031,9 +987,6 @@ EffectType,enchant item,아이템 강화
 EffectType,engulf,삼키기
 EffectType,exchange,교환
 EffectType,extinguish volatile,휘발성 물질 증발
-EffectType,gain level,레벨 증가
-EffectType,gain skill,숙련도 획득
-EffectType,genocide,몰살
 EffectType,grapple,붙잡기
 EffectType,growth,성장
 EffectType,hatch,부화
@@ -1043,30 +996,19 @@ EffectType,incarcerate,투옥
 EffectType,karma,카르마
 EffectType,liberate,해방
 EffectType,locking,잠금
-EffectType,lose skill,스킬 손실
-EffectType,lose talent,재능 손실
-EffectType,mapping,매핑
 EffectType,mobilise block,이동가능한 바위
-EffectType,murder,살해
 EffectType,opening,개방
-EffectType,pacify,진정
 EffectType,place curse,저주 부여
 EffectType,raise dead,부활
 EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
-EffectType,remove transient,일시적인 효과 제거
-EffectType,replicate item,아이템 복제
 EffectType,restock,재충전
 EffectType,restore ability,능력치 복구
-EffectType,rumour,루머
 EffectType,sacrifice,희생
 EffectType,sanctify,신성화
 EffectType,searching,수색
 EffectType,spawn entity,캐릭터 생성
-EffectType,steal,훔치기
-EffectType,summon entity,개체 소환
 EffectType,teleport entity,캐릭터 텔레포트
-EffectType,teleport item,아이템 텔레포트
 EffectType,teleport item away,먼 곳으로 텔레포트
 EffectType,tinning,통조림 제작
 EffectType,transition,층 이동
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},{FeatureName} 부수기
 FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
+FormatText,convert {FeatureName} into {DeviceName},시설 변환 {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
 FormatText,decrease all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 감소시킨다
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,"명성치 {RecordFame}, {R
 FormatText,Feed which item to {CharacterName}?,어느 아이템을 {CharacterName}에게 먹입니까?
 FormatText,from {Cause},{Cause}으로부터
 FormatText,gain {Percent}% {ElementName} resistance,{ElementName}속성 저항 {Percent}% 획득
-FormatText,gain {TalentName} talent,{TalentName} 재능 획득
+FormatText,gain {PropertyName} talent,{PropertyName} 재능 획득
 FormatText,"Hail {CharacterName}, {CharacterDescription}","{CharacterDescription} - {CharacterName}님, 환영합니다"
 FormatText,Hail {PlayerHandle}!,{PlayerHandle}님 환영합니다!
 FormatText,harm {ElementName} {DamageDice},{ElementName}속성 피해 {DamageDice}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},레
 FormatText,levels {From}-{To},레벨 {From}-{To}
 FormatText,levels {Number}+,레벨 {Number}+
 FormatText,LOCKED {GATENAME},잠겨진 {GATENAME}
+FormatText,lose {PropertyName} talent,재능 손실 {PropertyName}
 FormatText,not {EffectProperty},{EffectProperty}가 아님
 FormatText,polymorph into {EntityNames},폴리모프 {EntityNames}
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
+FormatText,remove transient {PropertyNames},일시적인 효과 제거 {PropertyNames}
 FormatText,replenish life from {Percent}%,{Percent}%만큼 체력 회복
 FormatText,replenish mana from {Percent}%,{Percent}%만큼 마나 회복
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName}, {CharacterDescription}이(가) 부활했다."
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,감염
 LiteralText,alias?,가명?
 LiteralText,ALL,전체
 LiteralText,ALL AT ONCE,한 번에 전부
+LiteralText,all kind,전 종류
+LiteralText,all levels,
 LiteralText,always,항상
 LiteralText,AMBIENT SOUNDS,앰비언트 사운드
 LiteralText,amnesia,망각
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,정말로 던전을 탈
 LiteralText,Are you sure you want to lose this character and end your adventure?,정말로 이 캐릭터를 잃고 모험을 끝내시겠습니까?
 LiteralText,ARE YOU SURE?,정말입니까?
 LiteralText,area of effect,효과 범위
+LiteralText,area transient,범위 효과
 LiteralText,ARTIFACTS,유물
 LiteralText,ASCEND TO PREVIOUS LEVEL,이전 레벨로 올라감
+LiteralText,assess item,평가
 LiteralText,assets,물건들
 LiteralText,ATMOSPHERE,장소
 LiteralText,attack modifier,명중 보정치
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,강화에 비례해 방어력 향상
 LiteralText,boost encumbrance by enchantment,강화에 비례해 들 수 있는 짐의 무게 강화
 LiteralText,boost speed by enchantment,속도 향상
 LiteralText,bounces,튕김
+LiteralText,break ally loyalty,동료관계 제거
 LiteralText,broken,부서진
 LiteralText,BROKEN,부서짐
 LiteralText,burst rate,연발
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,관찰 불가
 LiteralText,CAN'T SLIDE,미끄러짐 불가
 LiteralText,CAN'T TELEKINESIS,염동력 사용 불가
 LiteralText,CAN'T THROW,투척 불가
+LiteralText,carried,소지중
 LiteralText,Cast,시전
 LiteralText,CAST SPELLS,마법 시전
 LiteralText,challenge,도전지수
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,챔피언
 LiteralText,Character,캐릭터
 LiteralText,CHARACTER,캐릭터
 LiteralText,charged items,충전된 아이템
+LiteralText,charging,충전
+LiteralText,charm,매혹
 LiteralText,Chat on Discord,Discord에서 이야기하세요
 LiteralText,check for updates?,업데이트를 확인할까요?
 LiteralText,checking for updates,업데이트 확인중
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,행위
 LiteralText,CONFIRM,확인
 LiteralText,Connect to game hosted by another player.,다른 플레이어가 호스트한 게임에 연결
 LiteralText,CONSOLE,콘솔
+LiteralText,constructed,건축된
 LiteralText,CONTACT,연락하기
 LiteralText,Continue,계속하기
 LiteralText,CONTINUE,계속하기
 LiteralText,CONTROLLED,통제됨
+LiteralText,convert,
 LiteralText,conveyance,시체 섭취
 LiteralText,COPY,복제
 LiteralText,corpse,시체
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,개체들
 LiteralText,entity,개체
 LiteralText,entropy accidents,엔트로피 사고
 LiteralText,EQUIP,장비
+LiteralText,equipped,장비됨
 LiteralText,ESCAPE,탈출
 LiteralText,escape traps,함정 탈출
 LiteralText,escape with,탈출 방법
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,자유 카메라 이동 모드
 LiteralText,fright,공포
 LiteralText,fumbling,실수
 LiteralText,GAIN KARMA,카르마 획득
+LiteralText,gain level,레벨 증가
 LiteralText,GAIN LEVEL,레벨 획득
 LiteralText,gain nutrition,영양분 획득
 LiteralText,gain skill,숙련도 획득
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,숨기
 LiteralText,hiding,은신
 LiteralText,HINT,힌트
 LiteralText,HIRE,고용
+LiteralText,horde,
 LiteralText,HORDES,군단
 LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
 LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
+LiteralText,into,
 LiteralText,Inventory,인벤토리
 LiteralText,INVENTORY,인벤토리
 LiteralText,ITEM,아이템
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,마법 학습
 LiteralText,LEFT RING,왼쪽 반지
 LiteralText,LEVEL CHART,레벨 표
 LiteralText,level//rank,레벨
+LiteralText,lies,거짓
 LiteralText,life,체력
 LiteralText,LIFE,체력
 LiteralText,Life represents your physical health and death occurs at zero.,"생명력은 당신의 육체적인 건강을 뜻하며, 수치가 0이 되면 죽음에 이른다."
@@ -3478,6 +3438,7 @@ LiteralText,MANA,마나
 LiteralText,Mana represents your energy supply for casting spells.,마나는 당신의 마법 주문을 위한 에너지를 뜻한다.
 LiteralText,Map,지도
 LiteralText,MAP,지도
+LiteralText,mapping,매핑
 LiteralText,material,물질
 LiteralText,materials,물질
 LiteralText,melting,녹고있는
@@ -3535,6 +3496,7 @@ LiteralText,OR,또는
 LiteralText,ORIGINAL,오리지널
 LiteralText,OVERRIDE,덮어쓰기
 LiteralText,OVERVIEW,훑어보기
+LiteralText,pacify,진정
 LiteralText,Palette,팔레트
 LiteralText,PARTY,파티
 LiteralText,passive (no attacking),패시브 - 공격 비활성화
@@ -3588,6 +3550,7 @@ LiteralText,RACES,종족
 LiteralText,random,무작위
 LiteralText,RANDOM,무작위
 LiteralText,random dungeon seed,무작위 던전 시드
+LiteralText,random points,무작위 포인트
 LiteralText,rank,랭크
 LiteralText,rarity,희귀도
 LiteralText,rate & review on the app store,앱스토어에서 평점 및 평가 작성하기
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,등록
 LiteralText,REGISTER PLAYER HANDLE,등록된 플레이어 핸들
 LiteralText,reinforced,강화됨
 LiteralText,REINFORCED,강화됨
+LiteralText,remove all transients,모든 일시적인 효과 해제
 LiteralText,REMOVE CURSE,저주 해제
+LiteralText,remove random resistance,무작위 내성 제거
+LiteralText,remove random talent,무작위 재능 제거
 LiteralText,remove with,로 제거
 LiteralText,remove with boulder,바위로 제거
 LiteralText,REMOVE//container,가져가기
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,아이템 이름 변경
 LiteralText,RENAME MAP,지도 이름 변경
 LiteralText,repel,밀쳐내기
 LiteralText,replica,복제품
+LiteralText,replicate item,아이템 복제
 LiteralText,requires the skill to pick locks,잠금 해제를 위한 스킬이 요구됨
 LiteralText,Re-roll,다시 주사위 굴리기
 LiteralText,re-rolls,리롤
+LiteralText,reset random equipment,무작위 장비 초기화
 LiteralText,resident?,주민?
 LiteralText,resistances,저항
 LiteralText,RESISTS,저항함
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
 LiteralText,ROTATE,회전
+LiteralText,rumour,루머
 LiteralText,SANITY CHECK,정신 진단
 LiteralText,SAVE,저장
 LiteralText,SAVE & QUIT,저장 및 종료
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,효과음
 LiteralText,"Sorry, this device is a bit too small :-(","죄송합니다, 이 기기는 너무 작아요 :-("
 LiteralText,SOUND BOARD,사운드 보드
 LiteralText,Sound on/off,음향 켜기/끄기
+LiteralText,source,재료
 LiteralText,spare materials can be formed into new items using the essence of creation,창조의 정수를 소모해서 재료를 새로운 아이템으로 제작할 수 있습니다.
 LiteralText,spawn,생성
 LiteralText,SPAWN ENTITIES EVERYWHERE,개체 전체 생성
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,속도
 LiteralText,SPELL,마법
 LiteralText,SPELLS,마법
 LiteralText,Square,칸
+LiteralText,stack,전체 아이템
 LiteralText,START,시작
 LiteralText,Start a game to be joined by other players.,다른 플레이어가 참가할 게임을 시작하세요
 LiteralText,Start new adventure,새로운 모험 시작
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,동료 없이 시작
 LiteralText,starvation,굶주림
 LiteralText,starved,굶주림
 LiteralText,STAY,대기
+LiteralText,steal,훔치기
 LiteralText,STOP,정지
 LiteralText,storage,저장소
 LiteralText,STUCK,갇힘
 LiteralText,STUDIO,스튜디오
 LiteralText,STUDIO QUESTS,스튜디오 퀘스트
 LiteralText,SUBMIT,제출
+LiteralText,summon,개체 소환
 LiteralText,SUSTAINED,능력치 유지됨
 LiteralText,SWAP,교대
 LiteralText,SWITCH,변경
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,전부 가져가기
 LiteralText,talents,재능
 LiteralText,TALENTS,재능
 LiteralText,TALK,
+LiteralText,target,타겟
 LiteralText,TELEKINESIS,염동
 LiteralText,Telekinesis which direction?,어느 방향으로 염동력을 씁니까?
 LiteralText,Telekinesis which object?,어느 물체에 염동력을 씁니까?
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,새로운 업데이트가 있습니
 LiteralText,there is nothing to place here,컨테이너에 넣을 것이 없다.
 LiteralText,there is nothing to remove here,비어 있음
 LiteralText,there is nothing to trade with this merchant,이 상인에게 판매할 물건이 없다.
+LiteralText,this level,현재 레벨
 LiteralText,this merchant has no stock to trade,이 상인이 판매하는 물건이 없다.
 LiteralText,This name is used to record your achievements in the Hall of Fame.,이 이름은 명예의 전당에 기록되는 이름입니다.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,이 시드는 친구들에게 공유할 수 있고 같은 던전에서 실력을 도전해볼 수 있습니다.
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,덫쳐진 문
 LiteralText,TRIGGER,발동
 LiteralText,trigger once,발동 1회
 LiteralText,trigger unlimited times,발동 횟수 무제한
+LiteralText,truth,진실
 LiteralText,TUNNEL,터널
 LiteralText,Tunnel which direction?,어느 방향으로 터널을 팝니까?
 LiteralText,TURN-BASED,턴제
 LiteralText,turns,턴
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,아무런 단어나 구를 입력하여 랜덤 던전 시드를 생성합니다.
 LiteralText,unable to load,불러오기 불가능
+LiteralText,unafflicts,감염 해제
 LiteralText,UNDEAD,언데드인
 LiteralText,Undo,실행 취소
 LiteralText,unidentified items,식별되지 않은 아이템들
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,유니크
 LiteralText,UNLOCK,잠금해제
 LiteralText,unlock door or container,문 또는 컨테이너의 잠금해제
 LiteralText,UNLOCKED,잠금해제됨
+LiteralText,unpolymorphs,폴리모프 해제
+LiteralText,unpunishes,형벌 해제
 LiteralText,unskilled,미숙함
 LiteralText,UNSKILLED,미숙함
 LiteralText,UNTRAP,무장해제
@@ -3814,6 +3793,7 @@ LiteralText,when entered,들어갔을 때
 LiteralText,when exhausted,발동횟수 소진시
 LiteralText,when replica,복제품일 시
 LiteralText,when untrapped,무장해제 시
+LiteralText,with demolition,파괴
 LiteralText,WON'T EAT,먹지 않음
 LiteralText,WORKBENCH MATERIALS,제작 재료
 LiteralText,World,월드

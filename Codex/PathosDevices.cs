@@ -263,7 +263,7 @@ namespace Pathos
         D.TriggerApply.Harm(Elements.force, 3.d6());
         D.TriggerApply.ApplyTransient(Properties.stunned, 1.d6() + 2);
         D.TriggerApply.ApplyTransient(Properties.deafness, 4.d6() + 4);
-        D.TriggerApply.WhenChance(Chance.ThreeIn4, T => T.CreateTrap(pit, Destruction: true));
+        D.TriggerApply.WhenChance(Chance.ThreeIn4, T => T.CreateDevice(pit, Destruction: true));
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
         D.UntrapLoot.AddKit(Items.land_mine);
       });
@@ -514,7 +514,7 @@ namespace Pathos
         D.BoulderRemoval = true;
         D.Material = Materials.wood;
         D.TriggerApply.Alert(1.d6() + 5); // wake up near by
-        D.ExhaustApply.CreateTrap(hole, Destruction: false); // worn out board reveals a hole.
+        D.ExhaustApply.CreateDevice(hole, Destruction: false); // worn out board reveals a hole.
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
 
@@ -549,7 +549,7 @@ namespace Pathos
         D.Audibility = 30;
         D.Material = Materials.iron;
         D.TriggerApply.Harm(Elements.acid, 6.d6());
-        D.TriggerApply.CreateTrap(acid_trap, Destruction: false);
+        D.TriggerApply.CreateDevice(acid_trap, Destruction: false);
       });
 
       water_trap = AddDevice("water trap", Difficulty: 1, RepeatDice: 2.d6(), Glyphs.water_trap, Sonics.water_crash, D =>

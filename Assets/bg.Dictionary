@@ -956,72 +956,28 @@ DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,
 DietName,xylophagy,древоядный
-EffectProperty,all kind,все виды
-EffectProperty,break ally loyalty,премахване лояльность союзников
-EffectProperty,carried,несомое
-EffectProperty,constructed,
-EffectProperty,destruction,
 EffectProperty,disenchant,расколдовывает
-EffectProperty,entities,сущности
-EffectProperty,equipment,спанеряжение
-EffectProperty,equipped,надето
 EffectProperty,expansive,
 EffectProperty,fixed,
-EffectProperty,floor,пол
-EffectProperty,hordes,орды
-EffectProperty,items,вещи
-EffectProperty,kinds,виды
-EffectProperty,lies,вранье
 EffectProperty,loyal only,
-EffectProperty,material,материал
 EffectProperty,polite,
-EffectProperty,properties,свойства
-EffectProperty,random experience,случайный опыт
-EffectProperty,random points,случайные очки
-EffectProperty,remove random resistance,
-EffectProperty,remove random talent,
-EffectProperty,removes all transients,премахване все временные
-EffectProperty,reset random equipment,устанавливает случайное спанеряжение
 EffectProperty,rigid,
-EffectProperty,sanctity,неприкосновенность
-EffectProperty,skills,умениеи
-EffectProperty,source,
-EffectProperty,stock,запас
-EffectProperty,stocks,запасы
-EffectProperty,target,
-EffectProperty,targeted,
-EffectProperty,this level,
-EffectProperty,truth,доверие
-EffectProperty,unafflicts,
-EffectProperty,unpolymorphs,премахване превращение
-EffectProperty,unpunishes,
-EffectProperty,whole stack,
 EffectType,alert,тревога
 EffectType,amnesia,амнезия
-EffectType,area transient,область временно
-EffectType,assess,
 EffectType,blinking,
-EffectType,cancellation,отмена
 EffectType,capture,
-EffectType,charging,заряжает
-EffectType,charm,очарование
 EffectType,clone entity,клонирует персонажа
 EffectType,concealing,скрывает
 EffectType,connect portal,
 EffectType,convert barrier,
 EffectType,convert block to barrier,
-EffectType,convert feature,переводит приспособление
 EffectType,convert gate,
 EffectType,convert ground,
-EffectType,convert item,переводит ценности
 EffectType,convert volatile,
 EffectType,create golem,създай голема
-EffectType,create horde,създай орду
 EffectType,create nook,
-EffectType,create trap,създай ловушку
 EffectType,create volatile,
 EffectType,decapitate,
-EffectType,destroy item,уничтожает ценность
 EffectType,destroy volatile,
 EffectType,devour item,
 EffectType,disarm,
@@ -1031,9 +987,6 @@ EffectType,enchant item,заклинает ценность
 EffectType,engulf,проглатывает
 EffectType,exchange,
 EffectType,extinguish volatile,
-EffectType,gain level,получи уровень
-EffectType,gain skill,получи умение
-EffectType,genocide,истребляет
 EffectType,grapple,хватает
 EffectType,growth,
 EffectType,hatch,
@@ -1043,30 +996,19 @@ EffectType,incarcerate,
 EffectType,karma,карма
 EffectType,liberate,
 EffectType,locking,запирает
-EffectType,lose skill,загуби умение
-EffectType,lose talent,загуби талант
-EffectType,mapping,карта
 EffectType,mobilise block,
-EffectType,murder,убивает
 EffectType,opening,открытие
-EffectType,pacify,усмирён
 EffectType,place curse,накладывает проклятие
 EffectType,raise dead,оживляет
 EffectType,release,
 EffectType,remove curse,премахване проклятье
-EffectType,remove transient,премахване временное
-EffectType,replicate item,копирует ценность
 EffectType,restock,
 EffectType,restore ability,восстанавливает значение характеристики
-EffectType,rumour,слухи
 EffectType,sacrifice,приносит в жертву
 EffectType,sanctify,освящает
 EffectType,searching,ищет
 EffectType,spawn entity,порождает персонажа
-EffectType,steal,крадецует
-EffectType,summon entity,призывает существо
 EffectType,teleport entity,телепортирует персонажа
-EffectType,teleport item,телепортирует ценность
 EffectType,teleport item away,
 EffectType,tinning,консервирует
 EffectType,transition,переход
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Применить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Применить {SpellName} в каком направлении?
+FormatText,convert {FeatureName} into {DeviceName},переводит приспособление {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,слава {RecordFame} и 
 FormatText,Feed which item to {CharacterName}?,Чем накормить {CharacterName}?
 FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,
-FormatText,gain {TalentName} talent,получи {TalentName}
+FormatText,gain {PropertyName} talent,получи {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветствуем {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Приветствуем {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},
 FormatText,levels {From}-{To},
 FormatText,levels {Number}+,
 FormatText,LOCKED {GATENAME},ЗАПЕРТЫЙ {GATENAME}
+FormatText,lose {PropertyName} talent,загуби талант {PropertyName}
 FormatText,not {EffectProperty},не {EffectProperty}
 FormatText,polymorph into {EntityNames},Превратиться во {EntityNames}
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
+FormatText,remove transient {PropertyNames},премахване временное {PropertyNames}
 FormatText,replenish life from {Percent}%,
 FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Воскрешён {CharacterName}, {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,
 LiteralText,alias?,
 LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЁ ВМЕСТЕ
+LiteralText,all kind,все виды
+LiteralText,all levels,
 LiteralText,always,всегда
 LiteralText,AMBIENT SOUNDS,
 LiteralText,amnesia,амнезия
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,"Вие уверены,
 LiteralText,Are you sure you want to lose this character and end your adventure?,"Вие уверены, что хотите загубать этого персонажа и закончить Ваше приключение?"
 LiteralText,ARE YOU SURE?,ВЫ УВЕРЕНЫ?
 LiteralText,area of effect,
+LiteralText,area transient,область временно
 LiteralText,ARTIFACTS,
 LiteralText,ASCEND TO PREVIOUS LEVEL,ПОДЪЁМ НА ПРЕДЫДУЩИЙ УРОВЕНЬ
+LiteralText,assess item,
 LiteralText,assets,
 LiteralText,ATMOSPHERE,
 LiteralText,attack modifier,модификатор атаки
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,увеличение защиты
 LiteralText,boost encumbrance by enchantment,
 LiteralText,boost speed by enchantment,ускорение
 LiteralText,bounces,отскакивание
+LiteralText,break ally loyalty,премахване лояльность союзников
 LiteralText,broken,сломанный
 LiteralText,BROKEN,СЛОМАН
 LiteralText,burst rate,скорострельность
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕТ ВИДЕТЬ
 LiteralText,CAN'T SLIDE,
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
+LiteralText,carried,несомое
 LiteralText,Cast,Применяет
 LiteralText,CAST SPELLS,ЧИТАТЬ ЗАКЛИНАНИЯ
 LiteralText,challenge,вызов
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряжает предметы
+LiteralText,charging,заряжает
+LiteralText,charm,очарование
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
 LiteralText,checking for updates,проверка обновлений
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,
 LiteralText,CONFIRM,
 LiteralText,Connect to game hosted by another player.,
 LiteralText,CONSOLE,КОНСОЛЬ
+LiteralText,constructed,
 LiteralText,CONTACT,СВЯЗЬ
 LiteralText,Continue,
 LiteralText,CONTINUE,
 LiteralText,CONTROLLED,КОНТРОЛЛИРУЕМЫЙ
+LiteralText,convert,
 LiteralText,conveyance,поедание
 LiteralText,COPY,
 LiteralText,corpse,труп
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,СУЩЕСТВА
 LiteralText,entity,существо
 LiteralText,entropy accidents,
 LiteralText,EQUIP,СНАРЯДИТЬ
+LiteralText,equipped,надето
 LiteralText,ESCAPE,ПОКИНУТЬ
 LiteralText,escape traps,избежать ловушек
 LiteralText,escape with,избежать с помощью
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,свободная прокрутка
 LiteralText,fright,
 LiteralText,fumbling,неловкость
 LiteralText,GAIN KARMA,
+LiteralText,gain level,получи уровень
 LiteralText,GAIN LEVEL,ПОВЫСИТЬ УРОВЕНЬ
 LiteralText,gain nutrition,повысить сытность
 LiteralText,gain skill,
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,СКРЫТЬ
 LiteralText,hiding,сокрытие
 LiteralText,HINT,СОВЕТ
 LiteralText,HIRE,НАНЯТЬ
+LiteralText,horde,
 LiteralText,HORDES,
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однако, вы можете решить завершить своё приключение, прежде чем обновить игру."
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
+LiteralText,into,
 LiteralText,Inventory,
 LiteralText,INVENTORY,ИНВЕНТАРЬ
 LiteralText,ITEM,
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,ТАБЛИЦА УРОВНЕЙ
 LiteralText,level//rank,
+LiteralText,lies,вранье
 LiteralText,life,здоровье
 LiteralText,LIFE,ЗДОРОВЬЕ
 LiteralText,Life represents your physical health and death occurs at zero.,
@@ -3478,6 +3438,7 @@ LiteralText,MANA,МАНА
 LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,КАРТА
+LiteralText,mapping,карта
 LiteralText,material,
 LiteralText,materials,материалы
 LiteralText,melting,
@@ -3535,6 +3496,7 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,ОБЗОР
+LiteralText,pacify,усмирён
 LiteralText,Palette,
 LiteralText,PARTY,ОТРЯД
 LiteralText,passive (no attacking),
@@ -3588,6 +3550,7 @@ LiteralText,RACES,РАСЫ
 LiteralText,random,случайно
 LiteralText,RANDOM,СЛУЧАЙНО
 LiteralText,random dungeon seed,случайное семя подземелья
+LiteralText,random points,случайные очки
 LiteralText,rank,
 LiteralText,rarity,редкость
 LiteralText,rate & review on the app store,поставить оценку и написать отзыв на приложение
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,РЕГИСТРАЦИЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕГИСТРАЦИЯ ИГРОКА
 LiteralText,reinforced,
 LiteralText,REINFORCED,УКРЕПЛЕННЫЙ
+LiteralText,remove all transients,премахване все временные
 LiteralText,REMOVE CURSE,СНЯТЬ ПРОКЛЯТИЕ
+LiteralText,remove random resistance,
+LiteralText,remove random talent,
 LiteralText,remove with,избавиться с помощью
 LiteralText,remove with boulder,закрыть с помощью скалаа
 LiteralText,REMOVE//container,ИЗВЛЕЧЬ
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,
 LiteralText,RENAME MAP,
 LiteralText,repel,
 LiteralText,replica,копия
+LiteralText,replicate item,копирует ценность
 LiteralText,requires the skill to pick locks,необходим умение взлома
 LiteralText,Re-roll,
 LiteralText,re-rolls,
+LiteralText,reset random equipment,устанавливает случайное спанеряжение
 LiteralText,resident?,
 LiteralText,resistances,сопротивления
 LiteralText,RESISTS,СОПРОТИВЛЯЕТСЯ
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
+LiteralText,rumour,слухи
 LiteralText,SANITY CHECK,
 LiteralText,SAVE,ЗАПАЗИ
 LiteralText,SAVE & QUIT,ЗАПАЗИ И ВЫЙТИ
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,
 LiteralText,"Sorry, this device is a bit too small :-(",
 LiteralText,SOUND BOARD,УПРАВЛЕНИЕ ЗВУКОМ
 LiteralText,Sound on/off,
+LiteralText,source,
 LiteralText,spare materials can be formed into new items using the essence of creation,из доступных материалов можно создаване новые предметы используя эссенцию созидания
 LiteralText,spawn,спавн
 LiteralText,SPAWN ENTITIES EVERYWHERE,СПАВН ПОВСЮДУ СУЩЕСТВ
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,СКОРОСТЬ
 LiteralText,SPELL,
 LiteralText,SPELLS,ЗАКЛИНАНИЯ
 LiteralText,Square,
+LiteralText,stack,
 LiteralText,START,СТАРТ
 LiteralText,Start a game to be joined by other players.,
 LiteralText,Start new adventure,Начать новое приключение
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,начать без компаньона
 LiteralText,starvation,голод
 LiteralText,starved,голоден
 LiteralText,STAY,
+LiteralText,steal,крадецует
 LiteralText,STOP,СТОП
 LiteralText,storage,хранилище
 LiteralText,STUCK,ЗАСТРЯТЬ
 LiteralText,STUDIO,
 LiteralText,STUDIO QUESTS,
 LiteralText,SUBMIT,ПРЕДЛОЖИТЬ
+LiteralText,summon,призывает существо
 LiteralText,SUSTAINED,ЗАКРЕПЛЕНО
 LiteralText,SWAP,ЗАМЕСТИТЬ
 LiteralText,SWITCH,
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,ПОДНЯТЬ ВСЁ
 LiteralText,talents,таланты
 LiteralText,TALENTS,ТАЛАНТЫ
 LiteralText,TALK,
+LiteralText,target,
 LiteralText,TELEKINESIS,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,Доступно новое ъпд�
 LiteralText,there is nothing to place here,здесь нельзя ничего положить в контейнер
 LiteralText,there is nothing to remove here,здесь нищо извлекать из контейнера
 LiteralText,there is nothing to trade with this merchant,здесь ничего без для торговли с торговцем
+LiteralText,this level,
 LiteralText,this merchant has no stock to trade,этот торговец не имеет ничего для торговли
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Това е имя будет использовано для записи Ваших достижений в Зале Славы.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Этим семенем генерации можно поделиться с друзьями и посоревноваться с ними в одном и том же подземелье.
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,дверь с ловушкой
 LiteralText,TRIGGER,СРАБАТЫВАНИЕ
 LiteralText,trigger once,срабатывание один раз
 LiteralText,trigger unlimited times,срабатывание неШреканиченное количество раз
+LiteralText,truth,доверие
 LiteralText,TUNNEL,ТОННЕЛЬ
 LiteralText,Tunnel which direction?,В каком направлении проложить тоннель?
 LiteralText,TURN-BASED,ПОШАГОВЫЙ
 LiteralText,turns,ходы
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Введите любое слово или фразу, чтобы сгенерировать случайное семя подземелья."
 LiteralText,unable to load,не в состоянии загрузить
+LiteralText,unafflicts,
 LiteralText,UNDEAD,МЁРТВЫЙ
 LiteralText,Undo,
 LiteralText,unidentified items,неопознанные вещи
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,
 LiteralText,UNLOCK,ОТОМКНУТЬ
 LiteralText,unlock door or container,отомкнуть дверь или контейнер
 LiteralText,UNLOCKED,ОТОМКНУТО
+LiteralText,unpolymorphs,премахване превращение
+LiteralText,unpunishes,
 LiteralText,unskilled,неумелый
 LiteralText,UNSKILLED,НЕУМЕЛЫЙ
 LiteralText,UNTRAP,ОБЕЗВРЕДИТЬ
@@ -3814,6 +3793,7 @@ LiteralText,when entered,
 LiteralText,when exhausted,когато израсходована
 LiteralText,when replica,
 LiteralText,when untrapped,когато обезвредили
+LiteralText,with demolition,
 LiteralText,WON'T EAT,НЕ БУДЕТ ЕСТЬ
 LiteralText,WORKBENCH MATERIALS,РАБОЧИЕ МАТЕРИАЛЫ
 LiteralText,World,

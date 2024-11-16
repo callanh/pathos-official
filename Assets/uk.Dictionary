@@ -956,72 +956,28 @@ DietName,metalivore,металоїдна
 DietName,omnivore,всеїдна
 DietName,organivore,деревоїдна
 DietName,xylophagy,древоядний
-EffectProperty,all kind,всі види
-EffectProperty,break ally loyalty,розриває лояльність помічника
-EffectProperty,carried,що її несе
-EffectProperty,constructed,рукотворне
-EffectProperty,destruction,знищення
 EffectProperty,disenchant,расколдовивает
-EffectProperty,entities,сутності
-EffectProperty,equipment,спорядження
-EffectProperty,equipped,одягнута
 EffectProperty,expansive,просторний
 EffectProperty,fixed,фіксоване
-EffectProperty,floor,підлога
-EffectProperty,hordes,орди
-EffectProperty,items,речі
-EffectProperty,kinds,види
-EffectProperty,lies,брехня
 EffectProperty,loyal only,лише якщо вірний
-EffectProperty,material,матеріал
 EffectProperty,polite,ввічливе
-EffectProperty,properties,властивості
-EffectProperty,random experience,випадковий досвід
-EffectProperty,random points,очок випадкового вміння
-EffectProperty,remove random resistance,прибирає випадкову стійкість
-EffectProperty,remove random talent,прибирає випадковий талант
-EffectProperty,removes all transients,знімає всі тимчасові
-EffectProperty,reset random equipment,обнулює випадкове спорядження
 EffectProperty,rigid,нерушимий
-EffectProperty,sanctity,недоторканість
-EffectProperty,skills,навички
-EffectProperty,source,джерело
-EffectProperty,stock,запас
-EffectProperty,stocks,запаси
-EffectProperty,target,ціль
-EffectProperty,targeted,прицільний
-EffectProperty,this level,цей рівень
-EffectProperty,truth,довіру
-EffectProperty,unafflicts,знимає пороблене
-EffectProperty,unpolymorphs,знімає перетворення
-EffectProperty,unpunishes,знімає покарання
-EffectProperty,whole stack,заповнити повністю
 EffectType,alert,тривога
 EffectType,amnesia,амнезія
-EffectType,area transient,область тимчасово
-EffectType,assess,оцінити
 EffectType,blinking,телепротувати
-EffectType,cancellation,скасування
 EffectType,capture,захоплює
-EffectType,charging,заряджає
-EffectType,charm,причарування
 EffectType,clone entity,клонує персонажа
 EffectType,concealing,приховує
 EffectType,connect portal,з'єднати переходи
 EffectType,convert barrier,перетворює стіну
 EffectType,convert block to barrier,перетворює брилу
-EffectType,convert feature,перетворює механізм
 EffectType,convert gate,перетворює двері
 EffectType,convert ground,перетворює підлогу
-EffectType,convert item,перетворює цінність
 EffectType,convert volatile,перетворює лужу
 EffectType,create golem,створює голема
-EffectType,create horde,створює орду
 EffectType,create nook,створює затишне містечко
-EffectType,create trap,створює пастку
 EffectType,create volatile,створює лужу
 EffectType,decapitate,обезголовує
-EffectType,destroy item,знищує цінність
 EffectType,destroy volatile,прибрати лужу
 EffectType,devour item,зжерти цінність
 EffectType,disarm,розряджає
@@ -1031,9 +987,6 @@ EffectType,enchant item,заклинає цінність
 EffectType,engulf,проковтує
 EffectType,exchange,обміняти
 EffectType,extinguish volatile,загасити
-EffectType,gain level,отримує рівень
-EffectType,gain skill,отримує вміння:
-EffectType,genocide,винищує
 EffectType,grapple,вистачає
 EffectType,growth,зростання
 EffectType,hatch,вилупляється
@@ -1043,30 +996,19 @@ EffectType,incarcerate,ув’язнює
 EffectType,karma,карма
 EffectType,liberate,звільняє
 EffectType,locking,замикає
-EffectType,lose skill,віднімає навичку
-EffectType,lose talent,віднімає талант
-EffectType,mapping,картографує
 EffectType,mobilise block,дозволити зрушення істостами
-EffectType,murder,вбиває:
 EffectType,opening,відкривання
-EffectType,pacify,вмиротворює
 EffectType,place curse,накладає прокляття
 EffectType,raise dead,підіймає мерця
 EffectType,release,випустити
 EffectType,remove curse,знімає прокляття
-EffectType,remove transient,знімає тимчасове
-EffectType,replicate item,копіює цінність
 EffectType,restock,поновлює асортимент
 EffectType,restore ability,відновлює характеристику
-EffectType,rumour,чутка
 EffectType,sacrifice,приносить жертву
 EffectType,sanctify,освячує
 EffectType,searching,шукає
 EffectType,spawn entity,породжує персонажа
-EffectType,steal,краде
-EffectType,summon entity,закликає істота
 EffectType,teleport entity,переміщує персонажа
-EffectType,teleport item,переміщує цінність
 EffectType,teleport item away,телепортує геть
 EffectType,tinning,консервує
 EffectType,transition,перехід
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},зламати {FeatureName}
 FormatText,cap {Percent}%,максимум {Percent}%
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
+FormatText,convert {FeatureName} into {DeviceName},перетворює механізм {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},скалічило {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},зменшити {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},зменшити всі здібності на {AdjustmentDice}
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,слава {RecordFame} і 
 FormatText,Feed which item to {CharacterName}?,чим нагодувати {CharacterName}?
 FormatText,from {Cause},від {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,отримати {Percent}% стійкості до: {ElementName}
-FormatText,gain {TalentName} talent,надає: {TalentName}
+FormatText,gain {PropertyName} talent,надає: {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Вітаємо {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,"Вітаємо, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},завдати {DamageDice} шкоди елементом: {ElementName}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},р�
 FormatText,levels {From}-{To},рівні {From}-{To}
 FormatText,levels {Number}+,рівні {Number}+
 FormatText,LOCKED {GATENAME},ЗАМКНЕНІ {GATENAME}
+FormatText,lose {PropertyName} talent,віднімає талант {PropertyName}
 FormatText,not {EffectProperty},що не {EffectProperty}
 FormatText,polymorph into {EntityNames},перетворює {EntityNames}
 FormatText,range {Dice},дистанція {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
+FormatText,remove transient {PropertyNames},знімає тимчасове {PropertyNames}
 FormatText,replenish life from {Percent}%,відновити життя від {Percent}%
 FormatText,replenish mana from {Percent}%,відновити ману від {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","відродженого {CharacterName}, {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,ПОРОБЛЕНО
 LiteralText,alias?,псевдонім
 LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЕ РАЗОМ
+LiteralText,all kind,всі види
+LiteralText,all levels,
 LiteralText,always,завжди
 LiteralText,AMBIENT SOUNDS,НАВКОЛИШНІ ЗВУКИ
 LiteralText,amnesia,амнезія
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,"Ви впевнені,
 LiteralText,Are you sure you want to lose this character and end your adventure?,"Ви впевнені, що хочете втратити цього персонажа і закінчити вашу пригоду?"
 LiteralText,ARE YOU SURE?,ВИ ВПЕВНЕНІ?
 LiteralText,area of effect,область ефекту
+LiteralText,area transient,область тимчасово
 LiteralText,ARTIFACTS,АРТЕФАКТИ
 LiteralText,ASCEND TO PREVIOUS LEVEL,ПІДЙОМ НА ПОПЕРЕДНІЙ РІВЕНЬ
+LiteralText,assess item,оцінити
 LiteralText,assets,предмети
 LiteralText,ATMOSPHERE,АТМОСФЕРА
 LiteralText,attack modifier,модифікатор атаки
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,магічне покращення з�
 LiteralText,boost encumbrance by enchantment,посилити обтяження зачарованістю
 LiteralText,boost speed by enchantment,магічне прискорення
 LiteralText,bounces,відскок
+LiteralText,break ally loyalty,розриває лояльність помічника
 LiteralText,broken,зламаний
 LiteralText,BROKEN,ЗЛАМАНО
 LiteralText,burst rate,скорострільність
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕ БАЧИТИ
 LiteralText,CAN'T SLIDE,НЕ МОЖЕ З'ЇЖДЖАТИ
 LiteralText,CAN'T TELEKINESIS,НЕ МОЖЕ ВИКОРИСТОВУВАТИ ТЕЛЕКІНЕЗ
 LiteralText,CAN'T THROW,НЕ МОЖЕ КИНУТИ
+LiteralText,carried,що її несе
 LiteralText,Cast,Заклинання
 LiteralText,CAST SPELLS,ТВОРИТИ ЗАКЛИНАННЯ
 LiteralText,challenge,виклик
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,ЧЕМПІОНИ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряджає предмети
+LiteralText,charging,заряджає
+LiteralText,charm,причарування
 LiteralText,Chat on Discord,Сервер в Discord
 LiteralText,check for updates?,Перевірити наявність оновлень?
 LiteralText,checking for updates,перевірка оновлень
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,СУПРОВОДЖУЄ
 LiteralText,CONFIRM,ПІДТВЕРДИТИ
 LiteralText,Connect to game hosted by another player.,Під’єднатися до гри створеної іншим гравцем.
 LiteralText,CONSOLE,КОНСОЛЬ
+LiteralText,constructed,рукотворне
 LiteralText,CONTACT,ЗВ'ЯЗОК
 LiteralText,Continue,Далі
 LiteralText,CONTINUE,ДАЛІ
 LiteralText,CONTROLLED,КЕРОВАНИЙ
+LiteralText,convert,
 LiteralText,conveyance,поїдання
 LiteralText,COPY,КОПІЮВАТИ
 LiteralText,corpse,труп
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,ІСТОТИ
 LiteralText,entity,істота
 LiteralText,entropy accidents,нещасні випадки через ентропію
 LiteralText,EQUIP,ВДЯГТИ
+LiteralText,equipped,одягнута
 LiteralText,ESCAPE,ЗАЛИШИТИ
 LiteralText,escape traps,уникнути пасток
 LiteralText,escape with,уникнути за допомогою
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,вільна прокрутка
 LiteralText,fright,переляк
 LiteralText,fumbling,незручність
 LiteralText,GAIN KARMA,ЗБІЛЬШИТИ КАРМУ
+LiteralText,gain level,отримує рівень
 LiteralText,GAIN LEVEL,ПІДВИЩИТИ РІВЕНЬ
 LiteralText,gain nutrition,підвищити ситість
 LiteralText,gain skill,отримати вміння
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,ПРИХОВАТИ
 LiteralText,hiding,ховання
 LiteralText,HINT,ПІДКАЗКА
 LiteralText,HIRE,НАЙНЯТИ
+LiteralText,horde,
 LiteralText,HORDES,ОРДИ
 LiteralText,HOST,СТВОРИТИ СЕРВЕР
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однак, можливо, ви захочете дограти свою пригоду, перш ніж оновити гру."
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,ПІДПИСАТИ ПРЕДМЕТ
 LiteralText,inscription?,підпис?
 LiteralText,instruct each character,командувати кожним персонажем
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТНЬО ЗОЛОТA
+LiteralText,into,
 LiteralText,Inventory,Інвентар
 LiteralText,INVENTORY,ІНВЕНТАР
 LiteralText,ITEM,ПРЕДМЕТ
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,вивчити закляття
 LiteralText,LEFT RING,ЛІВИЙ ПЕРСТЕНЬ
 LiteralText,LEVEL CHART,ТАБЛИЦЯ РІВНІВ
 LiteralText,level//rank,рівень
+LiteralText,lies,брехня
 LiteralText,life,здоров'я
 LiteralText,LIFE,ЗДОРОВ'Я
 LiteralText,Life represents your physical health and death occurs at zero.,Здоров’я представляє ваш фізичний стан; на нулі ви помираєте.
@@ -3478,6 +3438,7 @@ LiteralText,MANA,МАНА
 LiteralText,Mana represents your energy supply for casting spells.,Мана представляє ваш запас енергії для створення заклинань.
 LiteralText,Map,Мапа
 LiteralText,MAP,МАПА
+LiteralText,mapping,картографує
 LiteralText,material,матеріал
 LiteralText,materials,матеріали
 LiteralText,melting,плавлення
@@ -3535,6 +3496,7 @@ LiteralText,OR,ЧИ
 LiteralText,ORIGINAL,ОРИГІНАЛЬНИЙ
 LiteralText,OVERRIDE,ЗАМІСТИТИ
 LiteralText,OVERVIEW,ОГЛЯД
+LiteralText,pacify,вмиротворює
 LiteralText,Palette,Палітра
 LiteralText,PARTY,ГРУПА
 LiteralText,passive (no attacking),пасивний (не нападає)
@@ -3588,6 +3550,7 @@ LiteralText,RACES,РАСИ
 LiteralText,random,випадково
 LiteralText,RANDOM,ВИПАДКОВО
 LiteralText,random dungeon seed,випадкове насіння підземелля
+LiteralText,random points,очок випадкового вміння
 LiteralText,rank,місце
 LiteralText,rarity,рідкість
 LiteralText,rate & review on the app store,Поставте оцінку та напишіть відгук.
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,РЕЄСТРАЦІЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕЄСТРАЦІЯ ГРАВЦЯ
 LiteralText,reinforced,зміцнений
 LiteralText,REINFORCED,ЗМІЦНЕНИЙ
+LiteralText,remove all transients,знімає всі тимчасові
 LiteralText,REMOVE CURSE,ЗНЯТИ ПРОКЛЯТТЯ
+LiteralText,remove random resistance,прибирає випадкову стійкість
+LiteralText,remove random talent,прибирає випадковий талант
 LiteralText,remove with,позбутися за допомогою
 LiteralText,remove with boulder,закрити брилою
 LiteralText,REMOVE//container,ВИЙНЯТИ
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,ПЕРЕЙМЕНУВАТИ ПРЕДМЕТ
 LiteralText,RENAME MAP,ПЕРЕЙМЕНУВАТИ МАПУ
 LiteralText,repel,відштовхнути
 LiteralText,replica,копія
+LiteralText,replicate item,копіює цінність
 LiteralText,requires the skill to pick locks,необхідно вміння злому
 LiteralText,Re-roll,Перекинути
 LiteralText,re-rolls,перекинути
+LiteralText,reset random equipment,обнулює випадкове спорядження
 LiteralText,resident?,ОБИВАТЕЛЬ
 LiteralText,resistances,стійкість
 LiteralText,RESISTS,СТІЙКІСТЬ
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,ВЕРНУТИ НАЗАД
 LiteralText,RIGHT RING,ПРАВИЙ ПЕРСТЕНЬ
 LiteralText,rigid,жорсткий
 LiteralText,ROTATE,ПОВЕРНУТИ
+LiteralText,rumour,чутка
 LiteralText,SANITY CHECK,ПЕРЕВІРКА ЦІЛОСНОСТІ
 LiteralText,SAVE,ЗБЕРЕГТИ
 LiteralText,SAVE & QUIT,ЗБЕРЕГТИ І ВИЙТИ
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,ЗВУКОВЕ
 LiteralText,"Sorry, this device is a bit too small :-(","Вибачте, цей прилад трошки замаленький :-("
 LiteralText,SOUND BOARD,КЕРУВАННЯ ЗВУКОМ
 LiteralText,Sound on/off,Звук вмк/вимк
+LiteralText,source,джерело
 LiteralText,spare materials can be formed into new items using the essence of creation,з доступних матеріалів можна створити нові предмети використовуючи есенцію творення
 LiteralText,spawn,спавн
 LiteralText,SPAWN ENTITIES EVERYWHERE,ПОРОДИТИ ІСТОТ ВСЮДИ
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,ШВИДКІСТЬ
 LiteralText,SPELL,ЗАКЛИНАННЯ
 LiteralText,SPELLS,ЗАКЛИНАННЯ
 LiteralText,Square,Площа
+LiteralText,stack,заповнити повністю
 LiteralText,START,СТАРТ
 LiteralText,Start a game to be joined by other players.,Розпочніть гру приєднавшись до інших гравців
 LiteralText,Start new adventure,Почати нову пригоду
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,почати без компаньйона
 LiteralText,starvation,голод
 LiteralText,starved,виснажений
 LiteralText,STAY,СТІЙ ТУТ
+LiteralText,steal,краде
 LiteralText,STOP,СТОП
 LiteralText,storage,сховище
 LiteralText,STUCK,ЗАСТРЯГ
 LiteralText,STUDIO,СТУДІЯ
 LiteralText,STUDIO QUESTS,СТУДІЯ ЗАВДАНЬ
 LiteralText,SUBMIT,ЗАПРОПОНУВАТИ
+LiteralText,summon,закликає істота
 LiteralText,SUSTAINED,ЗАКРІПЛЕНІ
 LiteralText,SWAP,ПОСУНЬСЯ
 LiteralText,SWITCH,ПЕРЕМКНУТИ
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,ВЗЯТИ ВСЕ
 LiteralText,talents,таланти
 LiteralText,TALENTS,ТАЛАНТИ
 LiteralText,TALK,
+LiteralText,target,ціль
 LiteralText,TELEKINESIS,ТЕЛЕКІНЕЗ
 LiteralText,Telekinesis which direction?,Застосувати телекінез у який бік?
 LiteralText,Telekinesis which object?,Застосувати телекінез до...
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,Є оновлення!
 LiteralText,there is nothing to place here,тут не можна нічого покласти в контейнер
 LiteralText,there is nothing to remove here,тут нема чого витягати з контейнера
 LiteralText,there is nothing to trade with this merchant,нема чим торгувати з цим торговцем
+LiteralText,this level,цей рівень
 LiteralText,this merchant has no stock to trade,цей торговець не має нічого на продаж
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Це ім'я буде використано для запису ваших досягнень в Залі Слави.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Цим ​​сім'ям генерації можна поділитися з друзями і позмагатися з ними в одному і тому ж підземелля.
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,двері з пасткою
 LiteralText,TRIGGER,СПРАЦЮВАЛА
 LiteralText,trigger once,спрацьовує один раз
 LiteralText,trigger unlimited times,спрацьовує необмежену кількість разів
+LiteralText,truth,довіру
 LiteralText,TUNNEL,ТУНЕЛЬ
 LiteralText,Tunnel which direction?,В якому напрямку прокласти тунель?
 LiteralText,TURN-BASED,покрокова
 LiteralText,turns,ходи
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Введіть будь-яке слово або фразу, щоб згенерувати випадкове зернятко підземелля."
 LiteralText,unable to load,не можу завантажити
+LiteralText,unafflicts,знимає пороблене
 LiteralText,UNDEAD,МРЕЦЬ
 LiteralText,Undo,Скасувати сподіваюся
 LiteralText,unidentified items,непізнані речі
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,УНІКАЛЬНІ
 LiteralText,UNLOCK,ВІДІМКНУТИ
 LiteralText,unlock door or container,відімкнути двері або контейнер
 LiteralText,UNLOCKED,ВІДІМКНУТИЙ
+LiteralText,unpolymorphs,знімає перетворення
+LiteralText,unpunishes,знімає покарання
 LiteralText,unskilled,невмілий
 LiteralText,UNSKILLED,НЕВМІЛИЙ
 LiteralText,UNTRAP,ЗНЕШКОДИТИ
@@ -3814,6 +3793,7 @@ LiteralText,when entered,при вході
 LiteralText,when exhausted,коли витрачена
 LiteralText,when replica,коли репліка
 LiteralText,when untrapped,при знешкодженні
+LiteralText,with demolition,знищення
 LiteralText,WON'T EAT,НЕ ЇСТИМЕ
 LiteralText,WORKBENCH MATERIALS,РОБОЧІ МАТЕРІАЛИ
 LiteralText,World,Світ

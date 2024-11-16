@@ -956,72 +956,28 @@ DietName,metalivore,金属食
 DietName,omnivore,雑食
 DietName,organivore,有機食
 DietName,xylophagy,木食
-EffectProperty,all kind,同種すべて
-EffectProperty,break ally loyalty,味方の忠誠心を壊す
-EffectProperty,carried,所持品
-EffectProperty,constructed,造り物
-EffectProperty,destruction,破壊された場合
 EffectProperty,disenchant,劣化する
-EffectProperty,entities,モンスター
-EffectProperty,equipment,装備品
-EffectProperty,equipped,装備品
 EffectProperty,expansive,大型以上も捕獲可能
 EffectProperty,fixed,固定位置
-EffectProperty,floor,床の上
-EffectProperty,hordes,群れ
-EffectProperty,items,アイテム
-EffectProperty,kinds,種類
-EffectProperty,lies,ウソ
 EffectProperty,loyal only,味方だけ
-EffectProperty,material,素材
 EffectProperty,polite,丁寧に扱う
-EffectProperty,properties,状態
-EffectProperty,random experience,追加経験値獲得
-EffectProperty,random points,追加技能値獲得
-EffectProperty,remove random resistance,ランダムな耐性を失う
-EffectProperty,remove random talent,ランダムな性質を失う
-EffectProperty,removes all transients,全ての一時的な状態を解消
-EffectProperty,reset random equipment,ランダムな装備の修正値を0にする
 EffectProperty,rigid,固まった
-EffectProperty,sanctity,尊厳
-EffectProperty,skills,スキル
-EffectProperty,source,それ自体
-EffectProperty,stock,アイテム
-EffectProperty,stocks,アイテム
-EffectProperty,target,対象
-EffectProperty,targeted,対象のマス
-EffectProperty,this level,この階層
-EffectProperty,truth,真実
-EffectProperty,unafflicts,災難からの解放
-EffectProperty,unpolymorphs,変化から戻る
-EffectProperty,unpunishes,天罰からの解放
-EffectProperty,whole stack,スタック全体
 EffectType,alert,警戒
 EffectType,amnesia,記憶喪失
-EffectType,area transient,範囲に一時的効果
-EffectType,assess,査定
 EffectType,blinking,転位
-EffectType,cancellation,魔法除去
 EffectType,capture,捕獲
-EffectType,charging,充填
-EffectType,charm,魅了
 EffectType,clone entity,分裂
 EffectType,concealing,隠す
 EffectType,connect portal,通路をつなげる
 EffectType,convert barrier,壁を変換
 EffectType,convert block to barrier,巨塊を変換
-EffectType,convert feature,設備を変換
 EffectType,convert gate,扉を変換
 EffectType,convert ground,床を変換
-EffectType,convert item,アイテムを変換
 EffectType,convert volatile,地形効果を変換
 EffectType,create golem,ゴーレムを作成
-EffectType,create horde,群れを作成
 EffectType,create nook,隠し小路を作成
-EffectType,create trap,罠を生成
 EffectType,create volatile,地形効果が発生
 EffectType,decapitate,首はね
-EffectType,destroy item,アイテムを破壊
 EffectType,destroy volatile,地形効果が消滅
 EffectType,devour item,アイテムをむさぼり喰う
 EffectType,disarm,武器を落とさせる
@@ -1031,9 +987,6 @@ EffectType,enchant item,アイテムの修正値
 EffectType,engulf,丸呑み
 EffectType,exchange,交換する
 EffectType,extinguish volatile,地形効果が霧散
-EffectType,gain level,レベルアップ
-EffectType,gain skill,スキルレベル上昇
-EffectType,genocide,根絶
 EffectType,grapple,組みつく
 EffectType,growth,成長
 EffectType,hatch,孵化
@@ -1043,30 +996,19 @@ EffectType,incarcerate,石像化
 EffectType,karma,カルマ
 EffectType,liberate,解放する
 EffectType,locking,施錠
-EffectType,lose skill,スキルレベル低下
-EffectType,lose talent,性質を失う
-EffectType,mapping,地図作製
 EffectType,mobilise block,障害物を動かす
-EffectType,murder,殺人
 EffectType,opening,開錠
-EffectType,pacify,鎮める
 EffectType,place curse,呪いをかける
 EffectType,raise dead,蘇生
 EffectType,release,解放
 EffectType,remove curse,解呪
-EffectType,remove transient,一時的な状態の解除
-EffectType,replicate item,アイテムを複製
 EffectType,restock,補充
 EffectType,restore ability,能力値回復
-EffectType,rumour,噂
 EffectType,sacrifice,犠牲
 EffectType,sanctify,祝呪を変更
 EffectType,searching,調査
 EffectType,spawn entity,モンスターを生成
-EffectType,steal,盗む
-EffectType,summon entity,召喚
 EffectType,teleport entity,キャラクターが瞬間移動
-EffectType,teleport item,アイテムを瞬間移動させる
 EffectType,teleport item away,瞬間移動で逃げる
 EffectType,tinning,詰める
 EffectType,transition,階層移動
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
+FormatText,convert {FeatureName} into {DeviceName},設備を変換 {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},{AttributeName}が激減
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
 FormatText,decrease all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}減少
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,名声{RecordFame}、殺害
 FormatText,Feed which item to {CharacterName}?,どのアイテムを{CharacterName}に食べさせる？
 FormatText,from {Cause},{Cause}により
 FormatText,gain {Percent}% {ElementName} resistance,{Percent}％の{ElementName}への耐性を獲得
-FormatText,gain {TalentName} talent,{TalentName}の性質を得る
+FormatText,gain {PropertyName} talent,{PropertyName}の性質を得る
 FormatText,"Hail {CharacterName}, {CharacterDescription}",よくぞ来てくれた{CharacterName}よ！{CharacterDescription}
 FormatText,Hail {PlayerHandle}!,よくぞ来てくれた{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レ
 FormatText,levels {From}-{To},レベルの差 {From} から {To}
 FormatText,levels {Number}+,レベルの差 {Number}以上
 FormatText,LOCKED {GATENAME},{GATENAME}は施錠されている
+FormatText,lose {PropertyName} talent,性質を失う {PropertyName}
 FormatText,not {EffectProperty},{EffectProperty}ではない
 FormatText,polymorph into {EntityNames},{EntityNames}に変化
 FormatText,range {Dice},射程{Dice}
 FormatText,RANKED #{RankNumber},名誉の殿堂で{RankNumber}位に入りました！
+FormatText,remove transient {PropertyNames},一時的な状態の解除 {PropertyNames}
 FormatText,replenish life from {Percent}%,ライフが{Percent}%以下の場合に全回復
 FormatText,replenish mana from {Percent}%,マナが{Percent}%以下の場合に全回復
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName}、{CharacterDescription}は復活した
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,災難
 LiteralText,alias?,別名?
 LiteralText,ALL,すべて
 LiteralText,ALL AT ONCE,一斉に
+LiteralText,all kind,同種すべて
+LiteralText,all levels,
 LiteralText,always,常に
 LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,amnesia,記憶喪失
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,この冒険を終え�
 LiteralText,Are you sure you want to lose this character and end your adventure?,このキャラクターの冒険を諦めますか？
 LiteralText,ARE YOU SURE?,本当によろしいですか？
 LiteralText,area of effect,効果範囲
+LiteralText,area transient,範囲に一時的効果
 LiteralText,ARTIFACTS,アーティファクト
 LiteralText,ASCEND TO PREVIOUS LEVEL,1つ上の階へ昇る
+LiteralText,assess item,査定
 LiteralText,assets,アイテム
 LiteralText,ATMOSPHERE,環境音
 LiteralText,attack modifier,攻撃値修正
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,修正値に応じて防御値を強化
 LiteralText,boost encumbrance by enchantment,修正値に応じて重い荷物を持てる
 LiteralText,boost speed by enchantment,修正値に応じてスピードを強化
 LiteralText,bounces,壁ではね返る
+LiteralText,break ally loyalty,味方の忠誠心を壊す
 LiteralText,broken,壊れた
 LiteralText,BROKEN,壊れた
 LiteralText,burst rate,連射
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,目が見えない
 LiteralText,CAN'T SLIDE,すり抜けられない
 LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
+LiteralText,carried,所持品
 LiteralText,Cast,呪文
 LiteralText,CAST SPELLS,呪文
 LiteralText,challenge,チャレンジ
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,チャンピオン
 LiteralText,Character,キャラクター
 LiteralText,CHARACTER,キャラクター
 LiteralText,charged items,使用回数があるアイテム
+LiteralText,charging,充填
+LiteralText,charm,魅了
 LiteralText,Chat on Discord,Discordでチャット
 LiteralText,check for updates?,アップデートを確認しますか？
 LiteralText,checking for updates,アップデートの確認中
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,行為
 LiteralText,CONFIRM,確認
 LiteralText,Connect to game hosted by another player.,他のプレイヤーがホストしているゲームに接続
 LiteralText,CONSOLE,コンソール
+LiteralText,constructed,造り物
 LiteralText,CONTACT,メールする
 LiteralText,Continue,続行
 LiteralText,CONTINUE,続行
 LiteralText,CONTROLLED,制御された
+LiteralText,convert,
 LiteralText,conveyance,食べた時の効果
 LiteralText,COPY,コピー
 LiteralText,corpse,の死体
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,モンスター
 LiteralText,entity,モンスター
 LiteralText,entropy accidents,エントロピー事故
 LiteralText,EQUIP,装備
+LiteralText,equipped,装備品
 LiteralText,ESCAPE,脱出する
 LiteralText,escape traps,罠から逃れる
 LiteralText,escape with,回避方法
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,プレイヤーを中央に表示しない
 LiteralText,fright,戦慄
 LiteralText,fumbling,滑り
 LiteralText,GAIN KARMA,カルマを増やす
+LiteralText,gain level,レベルアップ
 LiteralText,GAIN LEVEL,レベルアップ
 LiteralText,gain nutrition,満腹度上昇
 LiteralText,gain skill,スキル増加
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,隠れる
 LiteralText,hiding,隠れる
 LiteralText,HINT,ヒント
 LiteralText,HIRE,雇う
+LiteralText,horde,
 LiteralText,HORDES,群れ
 LiteralText,HOST,ホスト
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,アイテムに書き込む
 LiteralText,inscription?,メッセージ?
 LiteralText,instruct each character,キャラクターごとに指示
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
+LiteralText,into,
 LiteralText,Inventory,持ち物
 LiteralText,INVENTORY,持ち物
 LiteralText,ITEM,アイテム
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,呪文を学ぶ
 LiteralText,LEFT RING,左手にはめる
 LiteralText,LEVEL CHART,必要経験値表
 LiteralText,level//rank,レベル
+LiteralText,lies,ウソ
 LiteralText,life,ライフ
 LiteralText,LIFE,ライフ
 LiteralText,Life represents your physical health and death occurs at zero.,ライフはあなたの身体の健康を表し、0になると死亡します。
@@ -3478,6 +3438,7 @@ LiteralText,MANA,マナ
 LiteralText,Mana represents your energy supply for casting spells.,マナは呪文を唱えるためのエネルギー量を表します。
 LiteralText,Map,地図
 LiteralText,MAP,地図
+LiteralText,mapping,地図作製
 LiteralText,material,素材
 LiteralText,materials,材料
 LiteralText,melting,溶解
@@ -3535,6 +3496,7 @@ LiteralText,OR,もしくは
 LiteralText,ORIGINAL,オリジナル
 LiteralText,OVERRIDE,変更後
 LiteralText,OVERVIEW,全階層
+LiteralText,pacify,鎮める
 LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
 LiteralText,passive (no attacking),受動的（攻撃しない）
@@ -3588,6 +3550,7 @@ LiteralText,RACES,種族
 LiteralText,random,ランダム
 LiteralText,RANDOM,ランダム
 LiteralText,random dungeon seed,シードからダンジョンを生成
+LiteralText,random points,追加技能値獲得
 LiteralText,rank,ランク
 LiteralText,rarity,出現率
 LiteralText,rate & review on the app store,App Storeで評価・レビュー
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,登録
 LiteralText,REGISTER PLAYER HANDLE,プレイヤーハンドルの登録
 LiteralText,reinforced,強化扉
 LiteralText,REINFORCED,蹴破れない
+LiteralText,remove all transients,全ての一時的な状態を解消
 LiteralText,REMOVE CURSE,解呪
+LiteralText,remove random resistance,ランダムな耐性を失う
+LiteralText,remove random talent,ランダムな性質を失う
 LiteralText,remove with,除去手段
 LiteralText,remove with boulder,障害物で破壊可能
 LiteralText,REMOVE//container,取る
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,アイテム名を変更
 LiteralText,RENAME MAP,マップの名称を変更
 LiteralText,repel,後退させる
 LiteralText,replica,複製の
+LiteralText,replicate item,アイテムを複製
 LiteralText,requires the skill to pick locks,閉開錠のスキルが必要
 LiteralText,Re-roll,振り直し
 LiteralText,re-rolls,振り直し
+LiteralText,reset random equipment,ランダムな装備の修正値を0にする
 LiteralText,resident?,住人?
 LiteralText,resistances,耐性
 LiteralText,RESISTS,抵抗した
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
+LiteralText,rumour,噂
 LiteralText,SANITY CHECK,SANチェック
 LiteralText,SAVE,セーブ
 LiteralText,SAVE & QUIT,セーブと終了
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,効果音
 LiteralText,"Sorry, this device is a bit too small :-(",すみませんが、このデバイスはちょっと小さすぎます:-(
 LiteralText,SOUND BOARD,効果音を再生
 LiteralText,Sound on/off,音のオン/オフ
+LiteralText,source,それ自体
 LiteralText,spare materials can be formed into new items using the essence of creation,材料とエッセンスを消費してアイテムを制作できます。
 LiteralText,spawn,出現モンスター
 LiteralText,SPAWN ENTITIES EVERYWHERE,そこら中にモンスターを生成
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,速度
 LiteralText,SPELL,呪文
 LiteralText,SPELLS,呪文
 LiteralText,Square,マス
+LiteralText,stack,スタック全体
 LiteralText,START,開始
 LiteralText,Start a game to be joined by other players.,他のプレイヤーが参加するためのゲームを始める
 LiteralText,Start new adventure,新しい冒険を始める
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,ペットなしで始める
 LiteralText,starvation,飢餓
 LiteralText,starved,飢えた
 LiteralText,STAY,待機
+LiteralText,steal,盗む
 LiteralText,STOP,やめる
 LiteralText,storage,所持量
 LiteralText,STUCK,動けない
 LiteralText,STUDIO,スタジオ
 LiteralText,STUDIO QUESTS,スタジオで作成された冒険
 LiteralText,SUBMIT,登録
+LiteralText,summon,召喚
 LiteralText,SUSTAINED,サステイン（持続）
 LiteralText,SWAP,入れ替わる
 LiteralText,SWITCH,交代する
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,全て取る
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
 LiteralText,TALK,話す
+LiteralText,target,対象
 LiteralText,TELEKINESIS,念動力
 LiteralText,Telekinesis which direction?,どの方向に念動力を使う？
 LiteralText,Telekinesis which object?,どの物体に念動力を使う？
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,新しいアップデートがあ�
 LiteralText,there is nothing to place here,置けるものは無い
 LiteralText,there is nothing to remove here,取る物は無い
 LiteralText,there is nothing to trade with this merchant,この商人に売れるものは無い
+LiteralText,this level,この階層
 LiteralText,this merchant has no stock to trade,この商人から買えるものは無い
 LiteralText,This name is used to record your achievements in the Hall of Fame.,この名前は名誉の殿堂であなたの功績を記録するために使われます。
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,同じシードからは同じダンジョンが生成されます。友達と同じシードでどこまでいけるか競争、なんてのもいいでしょう。
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,罠のかかった扉
 LiteralText,TRIGGER,罠起動
 LiteralText,trigger once,一回だけ起動
 LiteralText,trigger unlimited times,無制限に起動
+LiteralText,truth,真実
 LiteralText,TUNNEL,トンネル
 LiteralText,Tunnel which direction?,どの方向にトンネルを通す？
 LiteralText,TURN-BASED,ターンベース
 LiteralText,turns,ターン
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
 LiteralText,unable to load,読み込みに失敗しました
+LiteralText,unafflicts,災難からの解放
 LiteralText,UNDEAD,アンデッド
 LiteralText,Undo,元に戻す
 LiteralText,unidentified items,未識別アイテム
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,ユニーク
 LiteralText,UNLOCK,解錠
 LiteralText,unlock door or container,扉や箱の解錠
 LiteralText,UNLOCKED,鍵が開いた
+LiteralText,unpolymorphs,変化から戻る
+LiteralText,unpunishes,天罰からの解放
 LiteralText,unskilled,初心者
 LiteralText,UNSKILLED,初心者
 LiteralText,UNTRAP,罠解除
@@ -3814,6 +3793,7 @@ LiteralText,when entered,入った時
 LiteralText,when exhausted,使用回数がなくなった時
 LiteralText,when replica,複製品の場合
 LiteralText,when untrapped,解除された時
+LiteralText,with demolition,破壊された場合
 LiteralText,WON'T EAT,食べないで
 LiteralText,WORKBENCH MATERIALS,この作業台にある材料
 LiteralText,World,世界

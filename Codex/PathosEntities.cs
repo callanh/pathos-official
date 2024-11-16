@@ -2408,7 +2408,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 4.d6());
-          K.Apply.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
+          K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -2903,7 +2903,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d10());// +2 from STR.
         E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear, Stocks.food);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6, Stocks.food);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -5221,7 +5221,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 6.d6());
-          K.Apply.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
+          K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.Macro(Acidic);
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
@@ -6069,7 +6069,7 @@ namespace Pathos
           // TODO: can't use cast, because it may not target the correct asset?
           R.Apply.Disenchant(Dice.One);
         });
-        E.Conveyance.LoseTalent(null);
+        E.Conveyance.LoseTalent(Property: null);
         E.SetCorpse(Chance.Always);
       });
 
@@ -10070,7 +10070,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -14310,7 +14310,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -20856,7 +20856,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2(), K => // -1 from str.
         {
-          K.Apply.StealItem(Properties.fear, Items.gold_coin);
+          K.Apply.StealItem(Properties.fear, 6.d6() + 6, Items.gold_coin);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.OneIn4);
@@ -20911,7 +20911,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.slow);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4(), K => // -1 from str.
         {
-          K.Apply.StealItem(Properties.fear, Items.gold_coin);
+          K.Apply.StealItem(Properties.fear, 6.d6() + 6, Items.gold_coin);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25509,7 +25509,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 5.d2() + 1);
-          K.Apply.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
+          K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Acidic);
@@ -25897,9 +25897,9 @@ namespace Pathos
         E.Startup.SetTalent(Properties.teleportation, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical, Elements.drain, Elements.poison);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear));
-        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear));
-        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear));
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6));
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6));
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K => K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6));
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.Always);
       });
@@ -25948,7 +25948,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.fear);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -25996,7 +25996,7 @@ namespace Pathos
         E.Startup.SetTalent(Properties.see_invisible, Properties.blinking);
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d2(), K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
         E.SetCorpse(Chance.OneIn4);
@@ -26044,7 +26044,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // -2 from str.
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.SetCorpse(Chance.OneIn4);
         E.Conveyance.TradeoffAbility(Attributes.dexterity, Attributes.constitution);
@@ -26093,11 +26093,11 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -26148,11 +26148,11 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -26202,7 +26202,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -26251,7 +26251,7 @@ namespace Pathos
         E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealEquippedItem(Properties.fear);
+          K.Apply.StealEquippedItem(Properties.fear, 6.d6() + 6);
         });
         E.Conveyance.TradeoffAbility(Attributes.charisma, Attributes.strength);
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
@@ -28723,7 +28723,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d2()); // -1
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.One, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -31987,7 +31987,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
           K.Apply.Harm(Elements.acid, 3.d7());
-          K.Apply.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
+          K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10(), K =>
         {
@@ -33213,7 +33213,7 @@ namespace Pathos
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.StealCarriedItem(Properties.fear, Stocks.food);
+          K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6, Stocks.food);
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.SetCorpse(Chance.Always);

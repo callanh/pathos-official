@@ -956,72 +956,28 @@ DietName,metalivore,สัตว์กินเหล็ก
 DietName,omnivore,กินทั้งพืชและสัตว์
 DietName,organivore,กินเฉพาะอาหารไร้สารเคมี
 DietName,xylophagy,สัตว์กินไม้
-EffectProperty,all kind,ทุกเหล่า
-EffectProperty,break ally loyalty,ทำลายพันธมิตร
-EffectProperty,carried,แบกแล้ว
-EffectProperty,constructed,สร้างแล้ว
-EffectProperty,destruction,ทำลาย
 EffectProperty,disenchant,ถอนเสน่ห์
-EffectProperty,entities,สิ่งมีตัวตน
-EffectProperty,equipment,อุปกรณ์
-EffectProperty,equipped,สวมใส่แล้ว
 EffectProperty,expansive,แผ่ขยาย
 EffectProperty,fixed,ซ่อมแล้ว
-EffectProperty,floor,ฟื้น
-EffectProperty,hordes,กลุ่ม
-EffectProperty,items,ไอเท็ม
-EffectProperty,kinds,
-EffectProperty,lies,โกหก
 EffectProperty,loyal only,
-EffectProperty,material,วัสดุ
 EffectProperty,polite,
-EffectProperty,properties,สรรพคุณ
-EffectProperty,random experience,สุ่มค่าประสบการณ์
-EffectProperty,random points,สุ่มแต้ม
-EffectProperty,remove random resistance,สุ่มล้างการต้านทาน
-EffectProperty,remove random talent,สุ่มล้างพรสวรรค์
-EffectProperty,removes all transients,ล้างสถานะชั่วคราวทั้งหมด
-EffectProperty,reset random equipment,สุ่มคืนค่าอุปกรณ์
 EffectProperty,rigid,
-EffectProperty,sanctity,
-EffectProperty,skills,ความชำนาญ
-EffectProperty,source,
-EffectProperty,stock,คลัง
-EffectProperty,stocks,คลัง
-EffectProperty,target,เป้าหมาย
-EffectProperty,targeted,เป็นเป้าหมาย
-EffectProperty,this level,ชั้นนี้
-EffectProperty,truth,ความจริง
-EffectProperty,unafflicts,
-EffectProperty,unpolymorphs,หายจากการกลายร่าง
-EffectProperty,unpunishes,
-EffectProperty,whole stack,ทั้งหมด
 EffectType,alert,แตกตื่น
 EffectType,amnesia,ความจำเสื่อม
-EffectType,area transient,
-EffectType,assess,
 EffectType,blinking,เคลื่อนที่พริบตา
-EffectType,cancellation,การยกเลิก
 EffectType,capture,จับ
-EffectType,charging,
-EffectType,charm,ลุ่มหลง
 EffectType,clone entity,
 EffectType,concealing,อำพราง
 EffectType,connect portal,
 EffectType,convert barrier,เปลี่ยนกำแพง
 EffectType,convert block to barrier,เปลี่ยนหินก้อนใหญ่
-EffectType,convert feature,เปลี่ยนของประจำที่
 EffectType,convert gate,เปลี่ยนประตู
 EffectType,convert ground,เปลี่ยนพื้น
-EffectType,convert item,เปลี่ยนทรัพย์สิน
 EffectType,convert volatile,
 EffectType,create golem,สร้างโกเล็ม
-EffectType,create horde,สร้างฝูง
 EffectType,create nook,สร้างของซ่อน
-EffectType,create trap,สร้างกับดัก
 EffectType,create volatile,
 EffectType,decapitate,ประหาร
-EffectType,destroy item,ทำลายทรัพย์สิน
 EffectType,destroy volatile,
 EffectType,devour item,กลืนกินทรัพย์สิน
 EffectType,disarm,ปลด
@@ -1031,9 +987,6 @@ EffectType,enchant item,ลงอาคมทรัพย์สิน
 EffectType,engulf,เขมือบ
 EffectType,exchange,แปลเปลี่ยน
 EffectType,extinguish volatile,
-EffectType,gain level,ได้รับเลเวล
-EffectType,gain skill,ได้รับทักษะ
-EffectType,genocide,ล้างเผ่าพันธุ์
 EffectType,grapple,คว้า
 EffectType,growth,โตขึ้น
 EffectType,hatch,ฟัก
@@ -1043,30 +996,19 @@ EffectType,incarcerate,กักขัง
 EffectType,karma,กรรม
 EffectType,liberate,ปลดแอก
 EffectType,locking,สะเดาะล็อค
-EffectType,lose skill,สูญเสียทักษะ
-EffectType,lose talent,สูญเสียพรสวรรค์
-EffectType,mapping,แผนที่
 EffectType,mobilise block,
-EffectType,murder,ฆาตกรรม
 EffectType,opening,เปิด
-EffectType,pacify,
 EffectType,place curse,ลงคำสาป
 EffectType,raise dead,คืนชีพคนตาย
 EffectType,release,ปลดปล่อย
 EffectType,remove curse,ถอนคำสาป
-EffectType,remove transient,ถอนสถานะชั่วคราว
-EffectType,replicate item,
 EffectType,restock,เปลี่ยนสินค้า
 EffectType,restore ability,คืนค่าความสามารถ
-EffectType,rumour,ข่าวลือ
 EffectType,sacrifice,สังเวย
 EffectType,sanctify,
 EffectType,searching,ค้นหา
 EffectType,spawn entity,เสกตัวละคร
-EffectType,steal,ขโมย
-EffectType,summon entity,อัญเชิญสิ่งมีตัวตน
 EffectType,teleport entity,เทเลพอร์ตตัวละคร
-EffectType,teleport item,เทเลพอร์ตทรัพย์สิน
 EffectType,teleport item away,เทเลพอร์ตหนี
 EffectType,tinning,
 EffectType,transition,
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
+FormatText,convert {FeatureName} into {DeviceName},เปลี่ยนของประจำที่ {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},พิการด้าน{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ลด{AttributeName}ลง {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ลดทุกทักษะลง {AdjustmentDice}
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,
 FormatText,Feed which item to {CharacterName}?,จะเอาไอเท็มไหนให้ {CharacterName} กิน?
 FormatText,from {Cause},จาก{Cause}
 FormatText,gain {Percent}% {ElementName} resistance,ได้รับการต้านทาน{ElementName}{Percent}%
-FormatText,gain {TalentName} talent,ได้รับพรสวรรค์{TalentName}
+FormatText,gain {PropertyName} talent,ได้รับพรสวรรค์{PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}",
 FormatText,Hail {PlayerHandle}!,จงสรรเสริญ {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{En
 FormatText,levels {From}-{To},จากชั้น{From}ถึง{To}
 FormatText,levels {Number}+,เพิ่ม {Number} เลเวล
 FormatText,LOCKED {GATENAME},{GATENAME}ถูกล็อค
+FormatText,lose {PropertyName} talent,สูญเสียพรสวรรค์ {PropertyName}
 FormatText,not {EffectProperty},ไม่{EffectProperty}
 FormatText,polymorph into {EntityNames},กลายร่าง {EntityNames}
 FormatText,range {Dice},ระยะ{Dice}
 FormatText,RANKED #{RankNumber},อันดับที่ {RankNumber}
+FormatText,remove transient {PropertyNames},ถอนสถานะชั่วคราว {PropertyNames}
 FormatText,replenish life from {Percent}%,ฟื้นฟูพลังชีวิต {Percent}%
 FormatText,replenish mana from {Percent}%,ฟื้นฟูพลังมานา {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName} {CharacterDescription}คืนชีพแล้ว
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,ความทุกข์
 LiteralText,alias?,
 LiteralText,ALL,ทั้งหมด
 LiteralText,ALL AT ONCE,ทั้งหมดในครั้งเดียว
+LiteralText,all kind,ทุกเหล่า
+LiteralText,all levels,
 LiteralText,always,ทุกครั้ง
 LiteralText,AMBIENT SOUNDS,เสียงบรรยากาศ
 LiteralText,amnesia,ความจำเสื่อม
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,คุณแน่ใ�
 LiteralText,Are you sure you want to lose this character and end your adventure?,คุณแน่ใจไหม? ว่าคุณต้องการจะเสียตัวละครนี้และจบการผจญภัยของคุณ
 LiteralText,ARE YOU SURE?,คุณแน่ใจไหม?
 LiteralText,area of effect,ระยะของเอฟเฟค
+LiteralText,area transient,
 LiteralText,ARTIFACTS,ศิลปวัตถุ
 LiteralText,ASCEND TO PREVIOUS LEVEL,ขึ้นไปชั้นก่อน
+LiteralText,assess item,
 LiteralText,assets,สินทรัพย์
 LiteralText,ATMOSPHERE,บรรยากาศ
 LiteralText,attack modifier,ดัดแปลงการโจมตี
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,เสริมพลังป้อง
 LiteralText,boost encumbrance by enchantment,เสริมน้ำหนักที่แบกได้ด้วยอาคม
 LiteralText,boost speed by enchantment,เสริมความเร็วด้วยอาคม
 LiteralText,bounces,กระดอน
+LiteralText,break ally loyalty,ทำลายพันธมิตร
 LiteralText,broken,พัง
 LiteralText,BROKEN,พัง
 LiteralText,burst rate,
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,มองไม่เห็น
 LiteralText,CAN'T SLIDE,ไม่สามารถไถลได้
 LiteralText,CAN'T TELEKINESIS,ไม่สามารถใช้พลังโทรจิตได้
 LiteralText,CAN'T THROW,ขว้างไม่ได้
+LiteralText,carried,แบกแล้ว
 LiteralText,Cast,ร่าย
 LiteralText,CAST SPELLS,ร่ายเวท
 LiteralText,challenge,ความท้าทาย
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,แชมป์เปี้ยน
 LiteralText,Character,ตัวละคร
 LiteralText,CHARACTER,ตัวละคร
 LiteralText,charged items,
+LiteralText,charging,
+LiteralText,charm,ลุ่มหลง
 LiteralText,Chat on Discord,พูดคุยกันใน Discord
 LiteralText,check for updates?,ตรวจหาการอัพเดตไหม?
 LiteralText,checking for updates,กำลังตรวจหาการอัพเดต
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,การปฏิบัติ
 LiteralText,CONFIRM,ยืนยัน
 LiteralText,Connect to game hosted by another player.,เชื่อมต่อกับห้องของผู้เล่นคนอื่น
 LiteralText,CONSOLE,แผงควบคุม
+LiteralText,constructed,สร้างแล้ว
 LiteralText,CONTACT,ติดต่อ
 LiteralText,Continue,เล่นต่อ
 LiteralText,CONTINUE,เล่นต่อ
 LiteralText,CONTROLLED,ควบคุมแล้ว
+LiteralText,convert,
 LiteralText,conveyance,
 LiteralText,COPY,คัดลอก
 LiteralText,corpse,ศพ
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,สิ่งมีตัวตน
 LiteralText,entity,สิ่งมีตัวตน
 LiteralText,entropy accidents,
 LiteralText,EQUIP,สวมใส่
+LiteralText,equipped,สวมใส่แล้ว
 LiteralText,ESCAPE,หนี
 LiteralText,escape traps,หนีออกจากกับดัก
 LiteralText,escape with,หนีด้วย
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,โหมดมุมกล่องอิสร�
 LiteralText,fright,
 LiteralText,fumbling,
 LiteralText,GAIN KARMA,ได้รับกรรม
+LiteralText,gain level,ได้รับเลเวล
 LiteralText,GAIN LEVEL,ได้รับเลเวล
 LiteralText,gain nutrition,ได้รับโภชนาการ
 LiteralText,gain skill,
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,ซ่อน
 LiteralText,hiding,ซ่อนตัว
 LiteralText,HINT,คำไบ้
 LiteralText,HIRE,จ้าง
+LiteralText,horde,
 LiteralText,HORDES,กลุ่ม
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.",
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,
+LiteralText,into,
 LiteralText,Inventory,ช่องเก็บของ
 LiteralText,INVENTORY,ช่องเก็บของ
 LiteralText,ITEM,ไอเท็ม
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,
 LiteralText,LEFT RING,แหวนข้างซ้าย
 LiteralText,LEVEL CHART,
 LiteralText,level//rank,เลเวล
+LiteralText,lies,โกหก
 LiteralText,life,ชีวิต
 LiteralText,LIFE,ชีวิต
 LiteralText,Life represents your physical health and death occurs at zero.,พลังชีวิตหมายถึงสุขภาพร่างกายหากเหลือศูนย์เท่ากับตาย
@@ -3478,6 +3438,7 @@ LiteralText,MANA,มานา
 LiteralText,Mana represents your energy supply for casting spells.,มานาหมายถึงค่าพลังสำหรับการร่ายเวทมนตร์
 LiteralText,Map,แผนที่
 LiteralText,MAP,แผนที่
+LiteralText,mapping,แผนที่
 LiteralText,material,วัสดุ
 LiteralText,materials,วัสดุ
 LiteralText,melting,ละลาย
@@ -3535,6 +3496,7 @@ LiteralText,OR,หรือ
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,
+LiteralText,pacify,
 LiteralText,Palette,
 LiteralText,PARTY,ปาร์ตี้
 LiteralText,passive (no attacking),
@@ -3588,6 +3550,7 @@ LiteralText,RACES,เผ่า
 LiteralText,random,สุ่ม
 LiteralText,RANDOM,สุ่ม
 LiteralText,random dungeon seed,สุ่มโลก
+LiteralText,random points,สุ่มแต้ม
 LiteralText,rank,แรงค์
 LiteralText,rarity,ความหายาก
 LiteralText,rate & review on the app store,ให้คะแนนและความคิดเห็นบนหน้าร้านค้า
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,สมัครสมาชิก
 LiteralText,REGISTER PLAYER HANDLE,ตั้งชื่อผู้เล่น
 LiteralText,reinforced,เสริมกำลัง
 LiteralText,REINFORCED,เสริมกำลัง
+LiteralText,remove all transients,ล้างสถานะชั่วคราวทั้งหมด
 LiteralText,REMOVE CURSE,ถอนคำสาป
+LiteralText,remove random resistance,สุ่มล้างการต้านทาน
+LiteralText,remove random talent,สุ่มล้างพรสวรรค์
 LiteralText,remove with,
 LiteralText,remove with boulder,
 LiteralText,REMOVE//container,เอาออกจากที่ใส่ของ
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,เปลี่ยนชื่อไอเท็ม
 LiteralText,RENAME MAP,เปลี่ยนชื่อแผนที่
 LiteralText,repel,ต้านทาน
 LiteralText,replica,สำเนา
+LiteralText,replicate item,
 LiteralText,requires the skill to pick locks,
 LiteralText,Re-roll,สุ่มใหม่
 LiteralText,re-rolls,สุ่มใหม่
+LiteralText,reset random equipment,สุ่มคืนค่าอุปกรณ์
 LiteralText,resident?,
 LiteralText,resistances,ต้านทาน
 LiteralText,RESISTS,ต้านทาน
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,กลับสู่สภาพเดิม
 LiteralText,RIGHT RING,แหวนข้างขวา
 LiteralText,rigid,
 LiteralText,ROTATE,หมุน
+LiteralText,rumour,ข่าวลือ
 LiteralText,SANITY CHECK,เช็คค่าสติ
 LiteralText,SAVE,บันทึก
 LiteralText,SAVE & QUIT,บันทึกและออก
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,เสียงเอฟเฟค
 LiteralText,"Sorry, this device is a bit too small :-(",ขออภัยด้วยอุปกรณ์นี้เล็กเกินไป :-(
 LiteralText,SOUND BOARD,เสียงเอฟเฟค
 LiteralText,Sound on/off,เปิด/ปิด เสียง
+LiteralText,source,
 LiteralText,spare materials can be formed into new items using the essence of creation,
 LiteralText,spawn,ให้กำเนิด
 LiteralText,SPAWN ENTITIES EVERYWHERE,ให้กำเนิดสิ่งมีตัวตนทุกที่
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,ความเร็ว
 LiteralText,SPELL,เวท
 LiteralText,SPELLS,เวท
 LiteralText,Square,
+LiteralText,stack,ทั้งหมด
 LiteralText,START,เริ่ม
 LiteralText,Start a game to be joined by other players.,เริ่มเกมเพื่อให้คนอื่นเข้าร่วมได้
 LiteralText,Start new adventure,เริ่มการผจญภัยครั้งใหม่
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,เริ่มโดยไม่มีเ�
 LiteralText,starvation,อดตาย
 LiteralText,starved,อดตาย
 LiteralText,STAY,อยู่เฉยๆ
+LiteralText,steal,ขโมย
 LiteralText,STOP,หยุด
 LiteralText,storage,คลังเก็บของ
 LiteralText,STUCK,ติด
 LiteralText,STUDIO,สตูดิโอ
 LiteralText,STUDIO QUESTS,ภารกิจของสตูดิโอ
 LiteralText,SUBMIT,ตกลง
+LiteralText,summon,อัญเชิญสิ่งมีตัวตน
 LiteralText,SUSTAINED,ถูกค้ำจุน
 LiteralText,SWAP,สลับที่
 LiteralText,SWITCH,สลับกัน
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,เก็บทั้งหมด
 LiteralText,talents,พรสวรรค์
 LiteralText,TALENTS,พรสวรรค์
 LiteralText,TALK,
+LiteralText,target,เป้าหมาย
 LiteralText,TELEKINESIS,พลังโทรจิต
 LiteralText,Telekinesis which direction?,ใช้พลังโทรจิตไปทิศทางไหน
 LiteralText,Telekinesis which object?,ใช้พลังโทรจิตกับวัสถุไหน?
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,มีเวอร์ชั่น�
 LiteralText,there is nothing to place here,ไม่มีอะไรจะวางตรงนี้
 LiteralText,there is nothing to remove here,ไม่มีอะไรจะเอาออกจากตรงนี้
 LiteralText,there is nothing to trade with this merchant,ไม่มีอะไรจะแลกกับพ่อค้า
+LiteralText,this level,ชั้นนี้
 LiteralText,this merchant has no stock to trade,พ่อค้าคนนี้ไม่มีอะไรจะแลกเปลี่ยนด้วย
 LiteralText,This name is used to record your achievements in the Hall of Fame.,ชื่อนี้จะถูกใช้เพื่อบันทึกความสำเร็จของคุณในโถงแห่งเกียรติยศ
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,ประตูติดกับดัก
 LiteralText,TRIGGER,กระตุ้น
 LiteralText,trigger once,กระตุ้นครั้งเดียว
 LiteralText,trigger unlimited times,กระตุ้นไม่จำกัดจำนวนครั้ง
+LiteralText,truth,ความจริง
 LiteralText,TUNNEL,ขุดอุโมงค์
 LiteralText,Tunnel which direction?,ขุดอุโมงค์ไปทางไหน?
 LiteralText,TURN-BASED,เป็นเทิร์น
 LiteralText,turns,เทิร์น
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,พิมพ์ตัวอักษรหรือคำพูดเพื่อสุ่มสร้างโลก
 LiteralText,unable to load,ไม่สามารถโหลดได้
+LiteralText,unafflicts,
 LiteralText,UNDEAD,อันเด๊ด
 LiteralText,Undo,ย้อนกลับ
 LiteralText,unidentified items,ไอเท็มที่ยังไม่ได้ระบุ
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,พิเศษ
 LiteralText,UNLOCK,ปลดล็อค
 LiteralText,unlock door or container,ปลดล็อคประตูหรือที่เก็บของ
 LiteralText,UNLOCKED,ปลดล็อคแล้ว
+LiteralText,unpolymorphs,หายจากการกลายร่าง
+LiteralText,unpunishes,
 LiteralText,unskilled,ไร้ทักษะ
 LiteralText,UNSKILLED,ไร้ทักษะ
 LiteralText,UNTRAP,ปลดกับดัก
@@ -3814,6 +3793,7 @@ LiteralText,when entered,
 LiteralText,when exhausted,
 LiteralText,when replica,
 LiteralText,when untrapped,
+LiteralText,with demolition,ทำลาย
 LiteralText,WON'T EAT,ไม่กิน
 LiteralText,WORKBENCH MATERIALS,วัสดุโตะช่าง
 LiteralText,World,โลก

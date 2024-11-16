@@ -956,72 +956,28 @@ DietName,metalivore,金屬食性
 DietName,omnivore,雜食性
 DietName,organivore,有機食品食性
 DietName,xylophagy,木食性
-EffectProperty,all kind,所有種類
-EffectProperty,break ally loyalty,破壞盟友關係
-EffectProperty,carried,攜帶
-EffectProperty,constructed,創造
-EffectProperty,destruction,破壞牆壁
 EffectProperty,disenchant,去附魔
-EffectProperty,entities,生物
-EffectProperty,equipment,裝備
-EffectProperty,equipped,已裝備
 EffectProperty,expansive,大型生物
 EffectProperty,fixed,被抓住
-EffectProperty,floor,樓層
-EffectProperty,hordes,群
-EffectProperty,items,物品
-EffectProperty,kinds,種類
-EffectProperty,lies,假流言
 EffectProperty,loyal only,保留盟友關係
-EffectProperty,material,材料
 EffectProperty,polite,友善
-EffectProperty,properties,
-EffectProperty,random experience,隨機經驗
-EffectProperty,random points,隨機分數
-EffectProperty,remove random resistance,移除隨機抗性
-EffectProperty,remove random talent,移除隨機天賦
-EffectProperty,removes all transients,去除所有短期狀態
-EffectProperty,reset random equipment,重設隨機裝備
 EffectProperty,rigid,堅硬
-EffectProperty,sanctity,神聖性
-EffectProperty,skills,專精
-EffectProperty,source,來源
-EffectProperty,stock,儲備
-EffectProperty,stocks,儲備
-EffectProperty,target,目標
-EffectProperty,targeted,被作為目標
-EffectProperty,this level,當前樓層
-EffectProperty,truth,真流言
-EffectProperty,unafflicts,取消感染
-EffectProperty,unpolymorphs,取消變形
-EffectProperty,unpunishes,取消懲罰
-EffectProperty,whole stack,整堆
 EffectType,alert,警覺
 EffectType,amnesia,失憶
-EffectType,area transient,範圍短期狀態
-EffectType,assess,評估
 EffectType,blinking,閃現
-EffectType,cancellation,撤銷
 EffectType,capture,捕捉
-EffectType,charging,充能
-EffectType,charm,魅力
 EffectType,clone entity,克隆角色
 EffectType,concealing,隱匿
 EffectType,connect portal,連接通道
 EffectType,convert barrier,轉換牆壁
 EffectType,convert block to barrier,轉換巨石
-EffectType,convert feature,轉換固定物
 EffectType,convert gate,轉換門
 EffectType,convert ground,轉換地面
-EffectType,convert item,轉換物件
 EffectType,convert volatile,轉換環境效果
 EffectType,create golem,製造魔像
-EffectType,create horde,製造生物群
 EffectType,create nook,製造角落
-EffectType,create trap,製造陷阱
 EffectType,create volatile,製造環境效果
 EffectType,decapitate,斬首
-EffectType,destroy item,摧毀物件
 EffectType,destroy volatile,移除環境效果
 EffectType,devour item,吞食物品
 EffectType,disarm,繳械
@@ -1031,9 +987,6 @@ EffectType,enchant item,附魔物件
 EffectType,engulf,吞嚥
 EffectType,exchange,交換
 EffectType,extinguish volatile,消除環境效果
-EffectType,gain level,升級
-EffectType,gain skill,獲得技能
-EffectType,genocide,滅絕
 EffectType,grapple,抓鉤
 EffectType,growth,成長
 EffectType,hatch,孵化
@@ -1043,30 +996,19 @@ EffectType,incarcerate,禁錮
 EffectType,karma,運程
 EffectType,liberate,解放
 EffectType,locking,鎖住
-EffectType,lose skill,失去技能
-EffectType,lose talent,失去天賦
-EffectType,mapping,地圖繪製
 EffectType,mobilise block,移動巨石
-EffectType,murder,秒殺
 EffectType,opening,開啟
-EffectType,pacify,平靜
 EffectType,place curse,詛咒
 EffectType,raise dead,復活死屍
 EffectType,release,釋放
 EffectType,remove curse,去除詛咒
-EffectType,remove transient,去除短期狀態
-EffectType,replicate item,複製物件
 EffectType,restock,重新進貨
 EffectType,restore ability,復原能力
-EffectType,rumour,流言
 EffectType,sacrifice,獻祭
 EffectType,sanctify,神聖化
 EffectType,searching,搜索
 EffectType,spawn entity,產生角色
-EffectType,steal,偷取
-EffectType,summon entity,召喚盟友
 EffectType,teleport entity,傳送角色
-EffectType,teleport item,傳送物件
 EffectType,teleport item away,傳送到別處
 EffectType,tinning,罐裝
 EffectType,transition,轉變
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},破壞 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封頂
 FormatText,Cast {SpellName} on which item?,對哪個物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪個方向使用 {SpellName} ？
+FormatText,convert {FeatureName} into {DeviceName},轉換固定物 {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},損害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,一共獲得 {RecordFame} �
 FormatText,Feed which item to {CharacterName}?,給 {CharacterName} 餵食什麼？
 FormatText,from {Cause},由於 {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,獲得 {Percent}% 的 {ElementName}抗性
-FormatText,gain {TalentName} talent,獲得 {TalentName} 天賦
+FormatText,gain {PropertyName} talent,獲得 {PropertyName} 天賦
 FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{CharacterName} ，{CharacterDescription}
 FormatText,Hail {PlayerHandle}!,向你致敬，{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},傷害{ElementName}{DamageDice}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},{Le
 FormatText,levels {From}-{To},等級{From}-{To}
 FormatText,levels {Number}+,等級大於{Number}
 FormatText,LOCKED {GATENAME},上鎖的 {GATENAME}
+FormatText,lose {PropertyName} talent,失去天賦 {PropertyName}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
 FormatText,polymorph into {EntityNames},
 FormatText,range {Dice},範圍 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
+FormatText,remove transient {PropertyNames},去除短期狀態 {PropertyNames}
 FormatText,replenish life from {Percent}%,從{Percent}%起補滿生命值
 FormatText,replenish mana from {Percent}%,從{Percent}%起補滿魔法值
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","復活了 {CharacterName} , {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,感染
 LiteralText,alias?,命名
 LiteralText,ALL,所有
 LiteralText,ALL AT ONCE,所有同時
+LiteralText,all kind,所有種類
+LiteralText,all levels,
 LiteralText,always,100%
 LiteralText,AMBIENT SOUNDS,周圍聲音
 LiteralText,amnesia,失憶
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,你確定要離開地�
 LiteralText,Are you sure you want to lose this character and end your adventure?,您確定要放棄這名角色並結束本次冒險嗎？
 LiteralText,ARE YOU SURE?,你確定？
 LiteralText,area of effect,範圍效果
+LiteralText,area transient,範圍短期狀態
 LiteralText,ARTIFACTS,神器
 LiteralText,ASCEND TO PREVIOUS LEVEL,回到之前的樓層
+LiteralText,assess item,評估
 LiteralText,assets,物品
 LiteralText,ATMOSPHERE,氛圍
 LiteralText,attack modifier,攻擊調整
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,防禦加成
 LiteralText,boost encumbrance by enchantment,負重加成
 LiteralText,boost speed by enchantment,速度加成
 LiteralText,bounces,彈跳
+LiteralText,break ally loyalty,破壞盟友關係
 LiteralText,broken,破裂的
 LiteralText,BROKEN,破裂
 LiteralText,burst rate,開火速率
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,無法看見
 LiteralText,CAN'T SLIDE,無法滑動
 LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,無法投擲
+LiteralText,carried,攜帶
 LiteralText,Cast,施咒
 LiteralText,CAST SPELLS,施咒
 LiteralText,challenge,挑戰性
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,冠軍
 LiteralText,Character,角色
 LiteralText,CHARACTER,角色
 LiteralText,charged items,已充能物品
+LiteralText,charging,充能
+LiteralText,charm,魅力
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,檢查更新嗎？
 LiteralText,checking for updates,檢測更新
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,計數
 LiteralText,CONFIRM,確認
 LiteralText,Connect to game hosted by another player.,連接其他玩家創建的遊戲
 LiteralText,CONSOLE,控制台
+LiteralText,constructed,創造
 LiteralText,CONTACT,聯繫
 LiteralText,Continue,繼續
 LiteralText,CONTINUE,繼續
 LiteralText,CONTROLLED,控制的
+LiteralText,convert,
 LiteralText,conveyance,食用
 LiteralText,COPY,複製
 LiteralText,corpse,屍體
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,怪物
 LiteralText,entity,實體
 LiteralText,entropy accidents,熵隨機事件
 LiteralText,EQUIP,裝備
+LiteralText,equipped,已裝備
 LiteralText,ESCAPE,逃脫
 LiteralText,escape traps,掙脫陷阱
 LiteralText,escape with,掙脫與
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,自由平移畫面
 LiteralText,fright,驚嚇
 LiteralText,fumbling,笨拙
 LiteralText,GAIN KARMA,獲得運程
+LiteralText,gain level,升級
 LiteralText,GAIN LEVEL,獲得等級
 LiteralText,gain nutrition,獲得營養
 LiteralText,gain skill,獲得專精
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,躲藏
 LiteralText,hiding,隱藏
 LiteralText,HINT,提示
 LiteralText,HIRE,僱傭
+LiteralText,horde,
 LiteralText,HORDES,怪物群
 LiteralText,HOST,創建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也許您更希望在接受更新之前完成正在進行的冒險。
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,刻寫物品
 LiteralText,inscription?,刻寫內容
 LiteralText,instruct each character,指引每個角色
 LiteralText,INSUFFICIENT GOLD,金幣不足
+LiteralText,into,
 LiteralText,Inventory,背包
 LiteralText,INVENTORY,背包
 LiteralText,ITEM,道具
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,學習法術
 LiteralText,LEFT RING,左手戒指
 LiteralText,LEVEL CHART,等級-經驗值
 LiteralText,level//rank,等級
+LiteralText,lies,假流言
 LiteralText,life,生命值
 LiteralText,LIFE,生命值
 LiteralText,Life represents your physical health and death occurs at zero.,生命值代表你的健康，當生命值為0時將會死亡。
@@ -3478,6 +3438,7 @@ LiteralText,MANA,魔法值
 LiteralText,Mana represents your energy supply for casting spells.,魔法值代表你用來施放魔法時的能量供應
 LiteralText,Map,地圖
 LiteralText,MAP,地圖
+LiteralText,mapping,地圖繪製
 LiteralText,material,素材
 LiteralText,materials,材料
 LiteralText,melting,融化
@@ -3535,6 +3496,7 @@ LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆寫
 LiteralText,OVERVIEW,總覽
+LiteralText,pacify,平靜
 LiteralText,Palette,調色板
 LiteralText,PARTY,隊伍
 LiteralText,passive (no attacking),被動（無攻擊）
@@ -3588,6 +3550,7 @@ LiteralText,RACES,種族
 LiteralText,random,隨機
 LiteralText,RANDOM,隨機
 LiteralText,random dungeon seed,隨機地牢種子
+LiteralText,random points,隨機分數
 LiteralText,rank,階級
 LiteralText,rarity,稀有程度
 LiteralText,rate & review on the app store,評論並回顧
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,登錄
 LiteralText,REGISTER PLAYER HANDLE,登錄玩家行為
 LiteralText,reinforced,加固
 LiteralText,REINFORCED,加強
+LiteralText,remove all transients,去除所有短期狀態
 LiteralText,REMOVE CURSE,移除詛咒
+LiteralText,remove random resistance,移除隨機抗性
+LiteralText,remove random talent,移除隨機天賦
 LiteralText,remove with,去除通過
 LiteralText,remove with boulder,使用巨石移除
 LiteralText,REMOVE//container,取出
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,重命名物品
 LiteralText,RENAME MAP,重命名地圖
 LiteralText,repel,排斥
 LiteralText,replica,複製品
+LiteralText,replicate item,複製物件
 LiteralText,requires the skill to pick locks,需要開鎖技能
 LiteralText,Re-roll,重新投骰
 LiteralText,re-rolls,重新投擲
+LiteralText,reset random equipment,重設隨機裝備
 LiteralText,resident?,NPC
 LiteralText,resistances,抗性
 LiteralText,RESISTS,抗性
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
 LiteralText,ROTATE,旋轉
+LiteralText,rumour,流言
 LiteralText,SANITY CHECK,兼容性測試
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存與退出
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,音源
 LiteralText,"Sorry, this device is a bit too small :-(",抱歉，這個設備太小了:-(
 LiteralText,SOUND BOARD,聲板
 LiteralText,Sound on/off,打開/關閉聲音
+LiteralText,source,來源
 LiteralText,spare materials can be formed into new items using the essence of creation,使用創造精華，多餘的材料可以用來合成新的物品。
 LiteralText,spawn,生成
 LiteralText,SPAWN ENTITIES EVERYWHERE,在每處都生成實體
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,速度
 LiteralText,SPELL,咒語
 LiteralText,SPELLS,咒語
 LiteralText,Square,格子
+LiteralText,stack,整堆
 LiteralText,START,開始
 LiteralText,Start a game to be joined by other players.,創建一個多人遊戲
 LiteralText,Start new adventure,開始新的冒險
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,開局時無隊友
 LiteralText,starvation,饑荒
 LiteralText,starved,經受饑荒
 LiteralText,STAY,停留
+LiteralText,steal,偷取
 LiteralText,STOP,停止
 LiteralText,storage,儲藏
 LiteralText,STUCK,無法掙脫
 LiteralText,STUDIO,地圖編輯器
 LiteralText,STUDIO QUESTS,地圖編輯器文件
 LiteralText,SUBMIT,接受
+LiteralText,summon,召喚盟友
 LiteralText,SUSTAINED,持久
 LiteralText,SWAP,換位
 LiteralText,SWITCH,切換
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,拿取全部
 LiteralText,talents,天賦
 LiteralText,TALENTS,天賦
 LiteralText,TALK,對話
+LiteralText,target,目標
 LiteralText,TELEKINESIS,念力控制
 LiteralText,Telekinesis which direction?,向哪個方向施展念力控制？
 LiteralText,Telekinesis which object?,念力控制哪個物體？
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,新版本可用！
 LiteralText,there is nothing to place here,你沒有任何物品可以被放置在這個容器中
 LiteralText,there is nothing to remove here,沒有任何物品可以被從這個容器移除
 LiteralText,there is nothing to trade with this merchant,你沒有任何物品可以用以與這位商人交易
+LiteralText,this level,當前樓層
 LiteralText,this merchant has no stock to trade,這位商人沒有任何商品用以交易
 LiteralText,This name is used to record your achievements in the Hall of Fame.,這個名稱用於在名人堂記錄您的成績。
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,種子可以用來與您的朋友分享，這樣你們就能挑戰同樣的地牢。
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,陷阱門
 LiteralText,TRIGGER,發動
 LiteralText,trigger once,可發動一次
 LiteralText,trigger unlimited times,可發動無限次數
+LiteralText,truth,真流言
 LiteralText,TUNNEL,創造通道
 LiteralText,Tunnel which direction?,向哪個方向創造過道？
 LiteralText,TURN-BASED,回合制
 LiteralText,turns,回合
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,輸入任何英文字母或短句來創造一個地牢種子
 LiteralText,unable to load,無法讀取
+LiteralText,unafflicts,取消感染
 LiteralText,UNDEAD,不死生物時
 LiteralText,Undo,撤銷
 LiteralText,unidentified items,未經辨認的物品
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,獨特單位
 LiteralText,UNLOCK,開鎖
 LiteralText,unlock door or container,開鎖任何門或容器
 LiteralText,UNLOCKED,開鎖
+LiteralText,unpolymorphs,取消變形
+LiteralText,unpunishes,取消懲罰
 LiteralText,unskilled,生疏
 LiteralText,UNSKILLED,生疏
 LiteralText,UNTRAP,拆除
@@ -3814,6 +3793,7 @@ LiteralText,when entered,當進入時
 LiteralText,when exhausted,當耗盡時
 LiteralText,when replica,當其為複製品時
 LiteralText,when untrapped,當拆除時
+LiteralText,with demolition,破壞牆壁
 LiteralText,WON'T EAT,不會吃
 LiteralText,WORKBENCH MATERIALS,工作台素材
 LiteralText,World,世界

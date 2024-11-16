@@ -956,72 +956,28 @@ DietName,metalivore,métalivore
 DietName,omnivore,omnivore
 DietName,organivore,organivore
 DietName,xylophagy,xylophagie
-EffectProperty,all kind,tout type
-EffectProperty,break ally loyalty,brise la loyauté d'un allié
-EffectProperty,carried,porté
-EffectProperty,constructed,construit
-EffectProperty,destruction,destruction
 EffectProperty,disenchant,désenchanter
-EffectProperty,entities,entités
-EffectProperty,equipment,équipement
-EffectProperty,equipped,équipé
 EffectProperty,expansive,expansif
 EffectProperty,fixed,fixé
-EffectProperty,floor,sol
-EffectProperty,hordes,hordes
-EffectProperty,items,objets
-EffectProperty,kinds,types
-EffectProperty,lies,repose
 EffectProperty,loyal only,loyal uniquement
-EffectProperty,material,matériau
 EffectProperty,polite,poli
-EffectProperty,properties,propriétés
-EffectProperty,random experience,expérience aléatoire
-EffectProperty,random points,points aléatoires
-EffectProperty,remove random resistance,enlève une résistance aléatoire
-EffectProperty,remove random talent,supprime un talent aléatoire
-EffectProperty,removes all transients,supprime tous les effets temporaires
-EffectProperty,reset random equipment,réinitialise un équipement aléatoire
 EffectProperty,rigid,rigide
-EffectProperty,sanctity,sainteté
-EffectProperty,skills,compétences
-EffectProperty,source,source
-EffectProperty,stock,équipement
-EffectProperty,stocks,équipements
-EffectProperty,target,cible
-EffectProperty,targeted,ciblé
-EffectProperty,this level,ce niveau
-EffectProperty,truth,vérité
-EffectProperty,unafflicts,dé-afflige
-EffectProperty,unpolymorphs,dé-polymorphe
-EffectProperty,unpunishes,dé-punit
-EffectProperty,whole stack,toute la pile d'objet
 EffectType,alert,alerte
 EffectType,amnesia,amnésie
-EffectType,area transient,zone transitoire
-EffectType,assess,évaluer
 EffectType,blinking,cligner
-EffectType,cancellation,annulation
 EffectType,capture,capture
-EffectType,charging,charge
-EffectType,charm,charme
 EffectType,clone entity,clone de personnage
 EffectType,concealing,camouflage
 EffectType,connect portal,relier le passage
 EffectType,convert barrier,converti le mur
 EffectType,convert block to barrier,convertit en roc
-EffectType,convert feature,converti mobilier
 EffectType,convert gate,convertir porte
 EffectType,convert ground,converti le sol
-EffectType,convert item,convertit une possession
 EffectType,convert volatile,converti le déversement
 EffectType,create golem,crée un golem
-EffectType,create horde,crée une horde
 EffectType,create nook,créer un coin
-EffectType,create trap,crée un piège
 EffectType,create volatile,créer un déversement
 EffectType,decapitate,décapitation
-EffectType,destroy item,détruit une possession
 EffectType,destroy volatile,retirer un déversement
 EffectType,devour item,dévore une possession
 EffectType,disarm,désarme
@@ -1031,9 +987,6 @@ EffectType,enchant item,enchante une possession
 EffectType,engulf,engloutir
 EffectType,exchange,échange
 EffectType,extinguish volatile,éteindre le déversement
-EffectType,gain level,gagne un niveau
-EffectType,gain skill,gagne la compétence
-EffectType,genocide,génocide
 EffectType,grapple,attrape
 EffectType,growth,croissance
 EffectType,hatch,couver
@@ -1043,30 +996,19 @@ EffectType,incarcerate,emprisonne
 EffectType,karma,karma
 EffectType,liberate,libère
 EffectType,locking,verrouille
-EffectType,lose skill,perd la compétence
-EffectType,lose talent,perd le talent
-EffectType,mapping,cartographie
 EffectType,mobilise block,mobiliser un rocher
-EffectType,murder,meurtre
 EffectType,opening,ouverture
-EffectType,pacify,pacifier
 EffectType,place curse,place la malédiction
 EffectType,raise dead,résurrection
 EffectType,release,libere
 EffectType,remove curse,lève la malédiction
-EffectType,remove transient,supprime le temporaire
-EffectType,replicate item,reproduit la possession
 EffectType,restock,réapprovisionner
 EffectType,restore ability,rétablit la compétence
-EffectType,rumour,rumeur
 EffectType,sacrifice,sacrifice
 EffectType,sanctify,sanctifie
 EffectType,searching,recherche
 EffectType,spawn entity,crée un personnage
-EffectType,steal,vole
-EffectType,summon entity,invoquer l'entité
 EffectType,teleport entity,téléporte le personnage
-EffectType,teleport item,téléporte une possession
 EffectType,teleport item away,téléporte au loin
 EffectType,tinning,met en boîte
 EffectType,transition,transition
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},casser {FeatureName}
 FormatText,cap {Percent}%,plafond {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
+FormatText,convert {FeatureName} into {DeviceName},converti mobilier {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},handicape {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},diminue {AttributeName} de {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},diminue toutes les compétences de {AdjustmentDice}
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,réputation {RecordFame} et
 FormatText,Feed which item to {CharacterName}?,Quelle nourriture donner à {CharacterName} ?
 FormatText,from {Cause},de {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,a gagné {Percent}% de résistance à {ElementName}
-FormatText,gain {TalentName} talent,a gagné {TalentName}
+FormatText,gain {PropertyName} talent,a gagné {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Salutations {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Salutations {PlayerHandle} !
 FormatText,harm {ElementName} {DamageDice},endommage {ElementName} {DamageDice}
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},niv
 FormatText,levels {From}-{To},niveaux {From}-{To}
 FormatText,levels {Number}+,niveaux {Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} VERROUILLÉE
+FormatText,lose {PropertyName} talent,perd le talent {PropertyName}
 FormatText,not {EffectProperty},«pas {EffectProperty}»
 FormatText,polymorph into {EntityNames},polymorphe {EntityNames}
 FormatText,range {Dice},portée {Dice}
 FormatText,RANKED #{RankNumber},RANG #{RankNumber}
+FormatText,remove transient {PropertyNames},supprime le temporaire {PropertyNames}
 FormatText,replenish life from {Percent}%,reconstituer la vie de {Percent}%
 FormatText,replenish mana from {Percent}%,reconstituer le mana de {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Ressuscité {CharacterName}, {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,INFECTIONS
 LiteralText,alias?,alias?
 LiteralText,ALL,TOUT
 LiteralText,ALL AT ONCE,TOUT D'UN COUP
+LiteralText,all kind,tout type
+LiteralText,all levels,
 LiteralText,always,toujours
 LiteralText,AMBIENT SOUNDS,SONS AMBIANTS
 LiteralText,amnesia,amnésie
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,Êtes-vous sûr de voul
 LiteralText,Are you sure you want to lose this character and end your adventure?,Voulez-vous vraiment perdre ce personnage et mettre fin à votre aventure ?
 LiteralText,ARE YOU SURE?,ÊTES VOUS SÛR ?
 LiteralText,area of effect,zone d’effet
+LiteralText,area transient,zone transitoire
 LiteralText,ARTIFACTS,ARTEFACTS
 LiteralText,ASCEND TO PREVIOUS LEVEL,MONTER AU NIVEAU PRÉCÉDENT
+LiteralText,assess item,évaluer
 LiteralText,assets,biens
 LiteralText,ATMOSPHERE,ATMOSPHERE
 LiteralText,attack modifier,modificateur d'attaque
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,renforce la défense
 LiteralText,boost encumbrance by enchantment,augmenter la capacité d'encombrement par enchantement
 LiteralText,boost speed by enchantment,renforce la vitesse
 LiteralText,bounces,rebondit
+LiteralText,break ally loyalty,brise la loyauté d'un allié
 LiteralText,broken,cassée
 LiteralText,BROKEN,CASSÉÉ
 LiteralText,burst rate,taux de rafale
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,NE PEUT PAS VOIR
 LiteralText,CAN'T SLIDE,NE PEUT PAS GLISSER
 LiteralText,CAN'T TELEKINESIS,NE PEUT PAS TÉLÉKINÉSIER
 LiteralText,CAN'T THROW,NE PEUT PAS JETER
+LiteralText,carried,porté
 LiteralText,Cast,Lancer
 LiteralText,CAST SPELLS,LANCER SORTILÈGES
 LiteralText,challenge,défi
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Personnage
 LiteralText,CHARACTER,PERSONNAGE
 LiteralText,charged items,objets chargés
+LiteralText,charging,charge
+LiteralText,charm,charme
 LiteralText,Chat on Discord,Chat sur Discord
 LiteralText,check for updates?,vérifier les mises à jour ?
 LiteralText,checking for updates,vérification de mises jour
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,CONDUITE
 LiteralText,CONFIRM,CONFIRMER
 LiteralText,Connect to game hosted by another player.,Se connecter à une partie hébergée par un autre joueur.
 LiteralText,CONSOLE,CONSOLE
+LiteralText,constructed,construit
 LiteralText,CONTACT,CONTACT
 LiteralText,Continue,Continuer
 LiteralText,CONTINUE,CONTINUER
 LiteralText,CONTROLLED,CONTRÔLÉ
+LiteralText,convert,
 LiteralText,conveyance,transport
 LiteralText,COPY,COPIE
 LiteralText,corpse,corps
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,ENTITÉS
 LiteralText,entity,entité
 LiteralText,entropy accidents,accidents entropiques
 LiteralText,EQUIP,ÉQUIPER
+LiteralText,equipped,équipé
 LiteralText,ESCAPE,ÉCHAPPER
 LiteralText,escape traps,échapper aux pièges
 LiteralText,escape with,a échapper avec
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,mode panoramique libre
 LiteralText,fright,peur
 LiteralText,fumbling,maladroit
 LiteralText,GAIN KARMA,GAIN DE KARMA
+LiteralText,gain level,gagne un niveau
 LiteralText,GAIN LEVEL,GAIN DE NIVEAU
 LiteralText,gain nutrition,gain de nourriture
 LiteralText,gain skill,gagner compétence
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,CACHER
 LiteralText,hiding,dissimulation
 LiteralText,HINT,INDICE
 LiteralText,HIRE,ENGAGER
+LiteralText,horde,
 LiteralText,HORDES,HORDES
 LiteralText,HOST,HÉBERGER
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Cependant, vous pouvez vouloir terminer vos aventures avant de recevoir la mise à jour."
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,INSCRIRE l'ÉLÉMENT
 LiteralText,inscription?,inscription?
 LiteralText,instruct each character,instruire chaque personnage
 LiteralText,INSUFFICIENT GOLD,OR INSUFFISANT
+LiteralText,into,
 LiteralText,Inventory,inventaire
 LiteralText,INVENTORY,INVENTAIRE
 LiteralText,ITEM,OBJET
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,apprendre des sorts
 LiteralText,LEFT RING,BAGUE GAUCHE
 LiteralText,LEVEL CHART,DIAGRAMME DES NIVEAUX
 LiteralText,level//rank,niveau
+LiteralText,lies,repose
 LiteralText,life,vie
 LiteralText,LIFE,VIE
 LiteralText,Life represents your physical health and death occurs at zero.,La vie représente votre santé physique et la mort survient à zéro.
@@ -3478,6 +3438,7 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,Le mana représente votre réserve d'énergie servant à lancer des sorts.
 LiteralText,Map,Carte
 LiteralText,MAP,CARTE
+LiteralText,mapping,cartographie
 LiteralText,material,matériau
 LiteralText,materials,matériaux
 LiteralText,melting,fusion
@@ -3535,6 +3496,7 @@ LiteralText,OR,OR
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,REJETER
 LiteralText,OVERVIEW,VUE D'ENSEMBLE
+LiteralText,pacify,pacifier
 LiteralText,Palette,Palette
 LiteralText,PARTY,COMPAGNONS
 LiteralText,passive (no attacking),passif (sans attaquer)
@@ -3588,6 +3550,7 @@ LiteralText,RACES,RACES
 LiteralText,random,aléatoire
 LiteralText,RANDOM,ALÉATOIRE
 LiteralText,random dungeon seed,seed aléatoire pour les donjons
+LiteralText,random points,points aléatoires
 LiteralText,rank,rang
 LiteralText,rarity,rareté
 LiteralText,rate & review on the app store,notes et critiques sur l'AppStore
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,S'INSCRIRE
 LiteralText,REGISTER PLAYER HANDLE,INSCRIRE UN IDENTIFIANT DE JOUEUR
 LiteralText,reinforced,renforcé
 LiteralText,REINFORCED,RENFORCÉ
+LiteralText,remove all transients,supprime tous les effets temporaires
 LiteralText,REMOVE CURSE,SUPPRIMER MALÉDICTION
+LiteralText,remove random resistance,enlève une résistance aléatoire
+LiteralText,remove random talent,supprime un talent aléatoire
 LiteralText,remove with,enlever avec
 LiteralText,remove with boulder,supprimer avec un rocher
 LiteralText,REMOVE//container,PRENDRE
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,RENOMMER L'OBJET
 LiteralText,RENAME MAP,RENOMMER LA CARTE
 LiteralText,repel,rappeler
 LiteralText,replica,réplique
+LiteralText,replicate item,reproduit la possession
 LiteralText,requires the skill to pick locks,requiert la compétence de crochetage des serrures
 LiteralText,Re-roll,Relancer
 LiteralText,re-rolls,re-lancer
+LiteralText,reset random equipment,réinitialise un équipement aléatoire
 LiteralText,resident?,résident?
 LiteralText,resistances,résistances
 LiteralText,RESISTS,RÉSISTE
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,REVENIR
 LiteralText,RIGHT RING,BAGUE DROITE
 LiteralText,rigid,rigide
 LiteralText,ROTATE,TOURNÉ
+LiteralText,rumour,rumeur
 LiteralText,SANITY CHECK,VERIFICATION DE SANTÉ MENTALE
 LiteralText,SAVE,SAUVEGARDER
 LiteralText,SAVE & QUIT,SAUVEGARDER & QUITTER
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,EFFETS SONORES
 LiteralText,"Sorry, this device is a bit too small :-(","Désolé, cet appareil est un peu trop petit :-("
 LiteralText,SOUND BOARD,PLANCHE DE SON
 LiteralText,Sound on/off,Son on/off
+LiteralText,source,source
 LiteralText,spare materials can be formed into new items using the essence of creation,Les matériaux et essences de base peuvent être réutilisés pour fabriquer de nouveaux objets
 LiteralText,spawn,engendrer
 LiteralText,SPAWN ENTITIES EVERYWHERE,CRÉER DES ENTITÉS PARTOUT
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,VITESSE
 LiteralText,SPELL,SORT
 LiteralText,SPELLS,SORTS
 LiteralText,Square,Case
+LiteralText,stack,toute la pile d'objet
 LiteralText,START,COMMENCER
 LiteralText,Start a game to be joined by other players.,Démarrez une partie pour être rejoint par d'autres joueurs.
 LiteralText,Start new adventure,Commencer une nouvelle aventure
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,démarrer sans compagnon
 LiteralText,starvation,famine
 LiteralText,starved,affamé
 LiteralText,STAY,RESTEZ
+LiteralText,steal,vole
 LiteralText,STOP,ARRÊTEZ
 LiteralText,storage,stockage
 LiteralText,STUCK,COINCÉ
 LiteralText,STUDIO,STUDIO
 LiteralText,STUDIO QUESTS,QUESTIONS DE STUDIO
 LiteralText,SUBMIT,SOUMETTRE
+LiteralText,summon,invoquer l'entité
 LiteralText,SUSTAINED,MAINTENU
 LiteralText,SWAP,PRENDRE LA PLACE
 LiteralText,SWITCH,CHANGER
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,PRENDRE TOUT
 LiteralText,talents,talents
 LiteralText,TALENTS,TALENTS
 LiteralText,TALK,
+LiteralText,target,cible
 LiteralText,TELEKINESIS,TÉLÉKINÉSIE
 LiteralText,Telekinesis which direction?,Télékinésier dans quelle direction ?
 LiteralText,Telekinesis which object?,Télékinésier quel objet ?
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,Une mise à jour est disponible !
 LiteralText,there is nothing to place here,il n'y a rien à placer dans le conteneur
 LiteralText,there is nothing to remove here,il n'y a rien à prendre du conteneur
 LiteralText,there is nothing to trade with this merchant,il n'y a rien à échanger avec ce marchand
+LiteralText,this level,ce niveau
 LiteralText,this merchant has no stock to trade,ce marchand n'a rien à vendre
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Ce nom est utilisé pour enregistrer vos succès dans le Temple de la Renommée.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Cette seed peut être partagée avec vos amis pour pouvoir défier le même donjon.
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,porte piégée
 LiteralText,TRIGGER,DÉCLENCHEUR
 LiteralText,trigger once,déclencheur une fois
 LiteralText,trigger unlimited times,déclencheur nombre illimité de fois
+LiteralText,truth,vérité
 LiteralText,TUNNEL,TUNNEL
 LiteralText,Tunnel which direction?,Creuser un tunnel dans quelle direction ?
 LiteralText,TURN-BASED,TOUR PAR TOUR
 LiteralText,turns,tours
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Saisir n'importe quel mot ou phrase pour générer une seed de donjon aléatoire.
 LiteralText,unable to load,impossible de charger
+LiteralText,unafflicts,dé-afflige
 LiteralText,UNDEAD,MORT-VIVANT
 LiteralText,Undo,Annuler
 LiteralText,unidentified items,objets non identifiés
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,UNIQUES
 LiteralText,UNLOCK,DÉVERROUILLER
 LiteralText,unlock door or container,ouvre portes et conteneurs
 LiteralText,UNLOCKED,DÉVERROUILLÉ
+LiteralText,unpolymorphs,dé-polymorphe
+LiteralText,unpunishes,dé-punit
 LiteralText,unskilled,inexpérimenté
 LiteralText,UNSKILLED,INEXPÉRIMENTÉ
 LiteralText,UNTRAP,DÉSARMER
@@ -3814,6 +3793,7 @@ LiteralText,when entered,une fois entré
 LiteralText,when exhausted,quand fatigué
 LiteralText,when replica,quand répliqué
 LiteralText,when untrapped,quand désarmé
+LiteralText,with demolition,destruction
 LiteralText,WON'T EAT,NE MANGERA PAS
 LiteralText,WORKBENCH MATERIALS,MATÉRIAUX DE TABLE DE TRAVAIL
 LiteralText,World,Monde

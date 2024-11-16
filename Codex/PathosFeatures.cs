@@ -101,7 +101,7 @@ namespace Pathos
         F.Mountable = true;
         F.Weight = Weight.FromUnits(18000);
 
-        F.DestroyApply.ConvertFeature(bed, Devices.squeaky_board);
+        F.DestroyApply.ConvertFeatureToDevice(bed, Devices.squeaky_board);
         F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var ReclineUse = F.AddUse(Codex.Motions.recline, Utility: null, Delay.FromTurns(20), Sonics.magic, Audibility: 1); // springs creak softly.
@@ -167,7 +167,7 @@ namespace Pathos
           Table.Add(50, A => { });
           Table.Add(10, A => A.CreateItem(Dice.One, Stocks.gem));
           Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.water_moccasin));
-          Table.Add(5, A => A.ConvertFeature(fountain, Devices.water_trap)); // destroy 5%
+          Table.Add(5, A => A.ConvertFeatureToDevice(fountain, Devices.water_trap)); // destroy 5%
           Table.Add(5, A => A.BreakFeature(fountain)); // destroy 5%
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.water_demon));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.water_nymph));
@@ -217,7 +217,7 @@ namespace Pathos
           Apply.WhenProbability(Table =>
           {
             Table.Add(78, A => A.Nothing());
-            Table.Add(10, A => A.ConvertFeature(fountain, Devices.water_trap)); // destroy 10%
+            Table.Add(10, A => A.ConvertFeatureToDevice(fountain, Devices.water_trap)); // destroy 10%
             Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.water_moccasin));
             Table.Add(1, A => A.CreateEntity(Dice.One, Entities.water_demon));
             Table.Add(1, A => A.CreateEntity(Dice.One, Entities.water_nymph));
@@ -231,12 +231,12 @@ namespace Pathos
         F.Mountable = true;
         F.Weight = Weight.FromUnits(200000);
 
-        F.DestroyApply.ConvertFeature(grave, Devices.pit);
+        F.DestroyApply.ConvertFeatureToDevice(grave, Devices.pit);
         F.DestroyApply.DecreaseKarma(Dice.Fixed(50));
 
         var DigUse = F.AddUse(Codex.Motions.dig, null, Delay.FromTurns(50), Sonics.pick_axe, Audibility: 10);
         DigUse.SetCast().FilterItem(Items.pickaxe, Items.dwarvish_mattock, Items.Colossal_Excavator, Items.wand_of_digging).SetAssetIndividualised(); // use a charge for the wand of digging.
-        DigUse.Apply.ConvertFeature(grave, Devices.pit);
+        DigUse.Apply.ConvertFeatureToDevice(grave, Devices.pit);
         DigUse.Apply.DecreaseKarma(Dice.Fixed(50));
 
         DigUse.Apply.WhenChance(Chance.OneIn2, T => T.CreateEntity(1.d3(), Kinds.Undead.ToArray()));
@@ -288,7 +288,7 @@ namespace Pathos
 
         F.DestroyExplosion = Codex.Explosions.fiery;
         F.DestroyApply.Harm(Elements.fire, Dice.Zero);
-        F.DestroyApply.ConvertFeature(pentagram, Devices.fire_trap);
+        F.DestroyApply.ConvertFeatureToDevice(pentagram, Devices.fire_trap);
 
         var ChantUse = F.AddUse(Codex.Motions.chant, null, Delay.FromTurns(20), Sonics.chant, Audibility: 5);
         ChantUse.Apply.Light(IsLit: false, Locality.Area);
@@ -313,7 +313,7 @@ namespace Pathos
           Table.Add(50, A => { });
           Table.Add(10, A => A.CreateEntity(Dice.One, Kinds.Undead.ToArray()));
           Table.Add(10, A => A.CreateSpecificHorde(Dice.One, Hordes.spider));
-          Table.Add(10, A => A.ConvertFeature(pentagram, Devices.fire_trap));
+          Table.Add(10, A => A.ConvertFeatureToDevice(pentagram, Devices.fire_trap));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.efreeti));
           Table.Add(5, A => A.CreateEntity(Dice.One, Entities.succubus));
           Table.Add(1, A => A.CreateEntity(Dice.One, Entities.fire_elemental));
@@ -356,7 +356,7 @@ namespace Pathos
         F.Mountable = true;
         F.Weight = Weight.FromUnits(35000);
 
-        F.DestroyApply.ConvertFeature(throne, Devices.trapdoor);
+        F.DestroyApply.ConvertFeatureToDevice(throne, Devices.trapdoor);
 
         var SitUse = F.AddUse(Codex.Motions.sit, null, Delay.FromTurns(20), Sonics.throne, Audibility: 1);
         SitUse.Apply.WhenProbability(Table =>
@@ -392,7 +392,7 @@ namespace Pathos
           Table.Add(1, A => A.Heal(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.
           //Table.Add(1, A => A.CloneSourceCharacter(Dice.One)); // TODO: hostile and replica equipment.
         });
-        SitUse.Apply.WhenChance(Chance.OneIn2, A => A.ConvertFeature(throne, Devices.trapdoor));
+        SitUse.Apply.WhenChance(Chance.OneIn2, A => A.ConvertFeatureToDevice(throne, Devices.trapdoor));
       });
 
       workbench = AddFeature("workbench", Materials.wood, Chance.OneIn80, Glyphs.workbench, Glyphs.workbench_broken, F =>
@@ -402,7 +402,7 @@ namespace Pathos
         F.Mountable = true;
         F.Weight = Weight.FromUnits(50000);
 
-        F.DestroyApply.ConvertFeature(workbench, Devices.entropy_trap);
+        F.DestroyApply.ConvertFeatureToDevice(workbench, Devices.entropy_trap);
 
         var Workbench = F.SetWorkbench();
         Workbench.CraftSkill = Skills.crafting;

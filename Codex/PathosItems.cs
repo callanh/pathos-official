@@ -771,7 +771,7 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.Pacify(Elements.magical, Kinds.Living.ToArray());
+                    A.PacifyEntity(Elements.magical, Kinds.Living.ToArray());
                     A.AreaTransient(Properties.fear, 4.d10(), Kinds.Undead.ToArray());
                   });
                   Table.Add(10, A =>
@@ -845,7 +845,7 @@ namespace Pathos
                   Table.Add(10, A =>
                   {
                     A.ApplyTransient(Properties.paralysis, 3.d6());
-                    A.Murder(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
+                    A.MurderEntity(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
                   });
                   Table.Add(10, A =>
                   {
@@ -1461,11 +1461,11 @@ namespace Pathos
           A.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
-              B => B.CreateTrap(Codex.Devices.spiked_pit, Destruction: false),
-              U => U.CreateTrap(Codex.Devices.pit, Destruction: false),
-              C => C.Backfire(F => F.CreateTrap(Codex.Devices.pit, Destruction: false))
+              B => B.CreateDevice(Codex.Devices.spiked_pit, Destruction: false),
+              U => U.CreateDevice(Codex.Devices.pit, Destruction: false),
+              C => C.Backfire(F => F.CreateDevice(Codex.Devices.pit, Destruction: false))
             ),
-            S => S.Backfire(F => F.CreateTrap(Codex.Devices.spiked_pit, Destruction: false))
+            S => S.Backfire(F => F.CreateDevice(Codex.Devices.spiked_pit, Destruction: false))
           );
         });
         I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 4.d4(), A => A.WhenChance(Chance.OneIn4, T =>
@@ -1522,11 +1522,11 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
-              B => B.CreateTrap(Codex.Devices.hole, Destruction: true),
-              U => U.CreateTrap(Codex.Devices.hole, Destruction: false),
-              C => C.Backfire(F => F.CreateTrap(Codex.Devices.hole, Destruction: false))
+              B => B.CreateDevice(Codex.Devices.hole, Destruction: true),
+              U => U.CreateDevice(Codex.Devices.hole, Destruction: false),
+              C => C.Backfire(F => F.CreateDevice(Codex.Devices.hole, Destruction: false))
             ),
-            S => S.Backfire(F => F.CreateTrap(Codex.Devices.hole, Destruction: false))
+            S => S.Backfire(F => F.CreateDevice(Codex.Devices.hole, Destruction: false))
           );
         });
         I.SetTwoHandedMomentumWeapon(Skills.lance, null, Elements.physical, DamageType.Pierce, 2.d6(), A => A.WhenChance(Chance.OneIn4, T =>
@@ -6027,7 +6027,7 @@ namespace Pathos
         I.SetImpact(Sonics.broken_glass, A =>
         {
           A.Harm(Elements.acid, 1.d6());
-          A.CreateTrap(Codex.Devices.noxious_pool, Destruction: false);
+          A.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         I.AddPropertyTossUse(Motions.quaff, Property: null, Delay.FromTurns(15), Sonics.quaff, Use =>
         {
@@ -8442,11 +8442,11 @@ namespace Pathos
             (
               B =>
               {
-                B.CreateTrap(null, Destruction: false);
+                B.CreateDevice(null, Destruction: false);
                 B.ApplyTransient(Properties.paralysis, 4.d6());
               },
-              U => U.CreateTrap(null, Destruction: false),
-              C => C.Backfire(Z => Z.CreateTrap(null, Destruction: false))
+              U => U.CreateDevice(null, Destruction: false),
+              C => C.Backfire(Z => Z.CreateDevice(null, Destruction: false))
             )
           );
 
@@ -8479,7 +8479,7 @@ namespace Pathos
           Use.SetCast().Explosion(Explosions.fiery, Dice.Zero);
           Use.Apply.WhenConfused
           (
-            T => T.CreateTrap(Codex.Devices.fire_trap, Destruction: false),
+            T => T.CreateDevice(Codex.Devices.fire_trap, Destruction: false),
             E =>
             {
               E.WithSourceSanctity
@@ -8520,7 +8520,7 @@ namespace Pathos
           Use.SetCast().Explosion(Explosions.frosty, Dice.Zero);
           Use.Apply.WhenConfused
           (
-            T => T.CreateTrap(Codex.Devices.ice_trap, Destruction: false),
+            T => T.CreateDevice(Codex.Devices.ice_trap, Destruction: false),
             E =>
             {
               E.WithSourceSanctity
@@ -8561,7 +8561,7 @@ namespace Pathos
           Use.SetCast().Explosion(Explosions.watery, Dice.Zero);
           Use.Apply.WhenConfused
           (
-            T => T.CreateTrap(Codex.Devices.water_trap, Destruction: false),
+            T => T.CreateDevice(Codex.Devices.water_trap, Destruction: false),
             E =>
             {
               E.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
@@ -8692,8 +8692,8 @@ namespace Pathos
             T => T.CloneSourceEntity(1.d3()), // clones self in confusion.
             E => E.WithSourceSanctity
             (
-              B => B.Genocide(true),
-              U => U.Genocide(false),
+              B => B.Genocide(AllKind: true, Strikes.death),
+              U => U.Genocide(AllKind: false, Strikes.death),
               C => C.SpawnEntity(1.d3() + 4)
             )
           );
@@ -8894,9 +8894,9 @@ namespace Pathos
               F.DecreaseKarma(Dice.Fixed(250));
               F.WithSourceSanctity
               (
-                B => B.Murder(MurderType.Hostile, Strikes.death, Kinds.Living.ToArray()),
-                U => U.Murder(MurderType.Every, Strikes.death, Kinds.Living.ToArray()),
-                C => C.Murder(MurderType.Allied, Strikes.death, Kinds.Living.ToArray())
+                B => B.MurderEntity(MurderType.Hostile, Strikes.death, Kinds.Living.ToArray()),
+                U => U.MurderEntity(MurderType.Every, Strikes.death, Kinds.Living.ToArray()),
+                C => C.MurderEntity(MurderType.Allied, Strikes.death, Kinds.Living.ToArray())
               );
             }
           );
@@ -9296,13 +9296,13 @@ namespace Pathos
             (
               B =>
               {
-                B.Pacify(Elements.magical);
+                B.PacifyEntity(Elements.magical);
                 B.ApplyTransient(Properties.deflection, 4.d60());
                 B.RemoveTransient(Properties.fear, Properties.aggravation, Properties.rage);
               },
               U =>
               {
-                U.Pacify(Elements.magical);
+                U.PacifyEntity(Elements.magical);
                 U.RemoveTransient(Properties.fear, Properties.aggravation, Properties.rage);
               },
               C =>
@@ -9481,8 +9481,8 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WhenConfused
           (
-            T => T.Backfire(B => B.CreateTrap(Codex.Devices.bear_trap, Destruction: false)),
-            F => F.CreateTrap(Codex.Devices.bear_trap, Destruction: false)
+            T => T.Backfire(B => B.CreateDevice(Codex.Devices.bear_trap, Destruction: false)),
+            F => F.CreateDevice(Codex.Devices.bear_trap, Destruction: false)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(40), Sonics.tool);
@@ -9506,8 +9506,8 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WhenConfused
           (
-            T => T.Backfire(B => B.CreateTrap(Codex.Devices.caltrops, Destruction: false)),
-            F => F.CreateTrap(Codex.Devices.caltrops, Destruction: false)
+            T => T.Backfire(B => B.CreateDevice(Codex.Devices.caltrops, Destruction: false)),
+            F => F.CreateDevice(Codex.Devices.caltrops, Destruction: false)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(20), Sonics.tool);
@@ -9664,13 +9664,13 @@ namespace Pathos
             (
               B =>
               {
-                B.Pacify(Elements.magical);
+                B.PacifyEntity(Elements.magical);
                 B.ApplyTransient(Properties.deflection, 4.d60());
                 B.RemoveTransient(Properties.fear, Properties.aggravation, Properties.rage);
               },
               U =>
               {
-                U.Pacify(Elements.magical);
+                U.PacifyEntity(Elements.magical);
                 U.RemoveTransient(Properties.fear, Properties.aggravation, Properties.rage);
               },
               C =>
@@ -9710,15 +9710,15 @@ namespace Pathos
             (
               B =>
               {
-                B.Murder(MurderType.Hostile, Strikes.death, Kinds.Living.ToArray());
+                B.MurderEntity(MurderType.Hostile, Strikes.death, Kinds.Living.ToArray());
               },
               U =>
               {
-                U.Murder(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
+                U.MurderEntity(MurderType.Every, Strikes.death, Kinds.Living.ToArray());
               },
               C =>
               {
-                C.Murder(MurderType.Allied, Strikes.death, Kinds.Living.ToArray());
+                C.MurderEntity(MurderType.Allied, Strikes.death, Kinds.Living.ToArray());
                 C.AnimateRevenants(Corrupt: Properties.rage);
               }
             )
@@ -9868,7 +9868,7 @@ namespace Pathos
             T => T.Harm(Elements.force, 4.d6()),
             F =>
             {
-              F.CreateTrap(Codex.Devices.pit, Destruction: true);
+              F.CreateDevice(Codex.Devices.pit, Destruction: true);
               F.WithSourceSanctity
               (
                 B => B.Shout(Dice.Fixed(10), A =>
@@ -10172,8 +10172,8 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WhenConfused
           (
-            T => T.Backfire(B => B.CreateTrap(Codex.Devices.explosive_trap, Destruction: false)),
-            F => F.CreateTrap(Codex.Devices.explosive_trap, Destruction: false)
+            T => T.Backfire(B => B.CreateDevice(Codex.Devices.explosive_trap, Destruction: false)),
+            F => F.CreateDevice(Codex.Devices.explosive_trap, Destruction: false)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 300, Delay.FromTurns(30), Sonics.tool);
@@ -10449,7 +10449,7 @@ namespace Pathos
           Use.Apply.Alert(Dice.Fixed(10));
           Use.Apply.WithSourceSanctity
           (
-            B => B.Pacify(Elements.magical, Kinds.fairy),
+            B => B.PacifyEntity(Elements.magical, Kinds.fairy),
             U => U.Nothing(),
             C => C.AreaTransient(Properties.aggravation, 10.d10(), Kinds.fairy)
           );
@@ -10831,7 +10831,7 @@ namespace Pathos
           Use.Apply.Alert(Dice.Fixed(10));
           Use.Apply.WithSourceSanctity
           (
-            B => B.Pacify(Elements.magical, Kinds.dog),
+            B => B.PacifyEntity(Elements.magical, Kinds.dog),
             U => U.Nothing(),
             C => C.AreaTransient(Properties.aggravation, 3.d6() + 3, Kinds.dog)
           );
@@ -12070,11 +12070,11 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.force, 1.d6() + 2)
              .SetObjects()
              .SetAudibility(1);
-          Use.Apply.StealItem(Properties.fear);
+          Use.Apply.StealItem(Properties.fear, 6.d6() + 6);
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.StealItem(Properties.fear);
+          A.StealItem(Properties.fear, 6.d6() + 6);
         });
       });
 
@@ -14582,7 +14582,7 @@ namespace Pathos
         {
           A.ApplyTransient(Properties.stunned, 1.d6() + 2);
           A.Harm(Elements.force, 1.d100());
-          A.CreateTrap(Codex.Devices.pit, Destruction: true);
+          A.CreateDevice(Codex.Devices.pit, Destruction: true);
         });
         //I.AddEat(10, Delay.FromTurns(10), Sonics.ammo); // plastic, no one can eat it.
       });

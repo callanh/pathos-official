@@ -956,72 +956,28 @@ DietName,metalivore,metalobur
 DietName,omnivore,hepçil
 DietName,organivore,organikobur
 DietName,xylophagy,ağaçobur
-EffectProperty,all kind,her türler
-EffectProperty,break ally loyalty,dost sadakatini boz
-EffectProperty,carried,taşındı
-EffectProperty,constructed,
-EffectProperty,destruction,yık
 EffectProperty,disenchant,efsunu boz
-EffectProperty,entities,varlıklar
-EffectProperty,equipment,teçhizat
-EffectProperty,equipped,donan
 EffectProperty,expansive,genişleyici
 EffectProperty,fixed,
-EffectProperty,floor,zemin
-EffectProperty,hordes,ordular
-EffectProperty,items,eşyalar
-EffectProperty,kinds,türler
-EffectProperty,lies,yalanlar
 EffectProperty,loyal only,
-EffectProperty,material,malzeme
 EffectProperty,polite,nazik
-EffectProperty,properties,nitelikler
-EffectProperty,random experience,rastgele tecrübe
-EffectProperty,random points,rasgele puanlar
-EffectProperty,remove random resistance,rastgele direnci kaldır
-EffectProperty,remove random talent,rastgele yeteneği kaldır
-EffectProperty,removes all transients,geçici olan her şeyi kaldırır
-EffectProperty,reset random equipment,rastgele bir teçhizatı yenile
 EffectProperty,rigid,
-EffectProperty,sanctity,kutsallık
-EffectProperty,skills,beceriler
-EffectProperty,source,kaynak
-EffectProperty,stock,yığın
-EffectProperty,stocks,yığınlar
-EffectProperty,target,hedef
-EffectProperty,targeted,hedeflenen
-EffectProperty,this level,bulunduğun seviye
-EffectProperty,truth,doğru
-EffectProperty,unafflicts,etkiden kurtama
-EffectProperty,unpolymorphs,şekli düzeltme
-EffectProperty,unpunishes,ceza kaldırma
-EffectProperty,whole stack,
 EffectType,alert,dikkat çek
 EffectType,amnesia,hafızayı kaybet
-EffectType,area transient,alan geçici
-EffectType,assess,değer biç
 EffectType,blinking,sıçramak
-EffectType,cancellation,iptalleme
 EffectType,capture,yakala
-EffectType,charging,şarj ediyor
-EffectType,charm,cezbet
 EffectType,clone entity,karakteri klonla
 EffectType,concealing,gizle
 EffectType,connect portal,
 EffectType,convert barrier,duvarı dönüştür
 EffectType,convert block to barrier,kayayı dönüştür
-EffectType,convert feature,möble dönüştür
 EffectType,convert gate,kapıyı dönüştür
 EffectType,convert ground,zemini dönüştür
-EffectType,convert item,varlığı dönüştür
 EffectType,convert volatile,
 EffectType,create golem,golem oluştur
-EffectType,create horde,ordu yarat
 EffectType,create nook,kuytu köşe yarat
-EffectType,create trap,tuzak yarat
 EffectType,create volatile,
 EffectType,decapitate,uzuv kaybet
-EffectType,destroy item,varlığı yoket
 EffectType,destroy volatile,
 EffectType,devour item,varlık yiyip bitir
 EffectType,disarm,silahsızlaştır
@@ -1031,9 +987,6 @@ EffectType,enchant item,varlığı efsunla
 EffectType,engulf,yut
 EffectType,exchange,değiş
 EffectType,extinguish volatile,
-EffectType,gain level,seviye kazan
-EffectType,gain skill,beceri kazan
-EffectType,genocide,soykırım
 EffectType,grapple,tut
 EffectType,growth,büyü
 EffectType,hatch,kabuğu kır
@@ -1043,30 +996,19 @@ EffectType,incarcerate,hapset
 EffectType,karma,karma
 EffectType,liberate,özgürleştir
 EffectType,locking,kilitle
-EffectType,lose skill,beceri kaybet
-EffectType,lose talent,yetenek kaybet
-EffectType,mapping,haritalamak
 EffectType,mobilise block,
-EffectType,murder,katlet
 EffectType,opening,açıklık
-EffectType,pacify,sakinleştir
 EffectType,place curse,lanet yerleştir
 EffectType,raise dead,ölüyü canlandırma
 EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
-EffectType,remove transient,geçici etkileri kaldır
-EffectType,replicate item,varlığı kopyala
 EffectType,restock,tekrar doldur
 EffectType,restore ability,kabiliyeti geri kazan
-EffectType,rumour,dedikodu
 EffectType,sacrifice,kurban et
 EffectType,sanctify,kutsallaştır
 EffectType,searching,ara
 EffectType,spawn entity,karakter yarat
-EffectType,steal,çal
-EffectType,summon entity,canlı çağır
 EffectType,teleport entity,karakteri ışınla
-EffectType,teleport item,varlığı ışınla
 EffectType,teleport item away,ışınlanarak çık
 EffectType,tinning,kalaylama
 EffectType,transition,değişme
@@ -2072,6 +2014,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
+FormatText,convert {FeatureName} into {DeviceName},möble dönüştür {FeatureName} {DeviceName}
 FormatText,cripple {AttributeName},{AttributeName}'i zayıflat
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
@@ -2084,7 +2027,7 @@ FormatText,fame {RecordFame} and {RecordKills} kills,{RecordFame} şan ve {Recor
 FormatText,Feed which item to {CharacterName}?,Hangi eşyayı {CharacterName}'e yedir?
 FormatText,from {Cause},
 FormatText,gain {Percent}% {ElementName} resistance,
-FormatText,gain {TalentName} talent,{TalentName} kazan
+FormatText,gain {PropertyName} talent,{PropertyName} kazan
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Hoşgeldin {CharacterName}!, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Hoşgeldin {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
@@ -2098,10 +2041,12 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},sev
 FormatText,levels {From}-{To},
 FormatText,levels {Number}+,
 FormatText,LOCKED {GATENAME},{GATENAME} Kilitli
+FormatText,lose {PropertyName} talent,yetenek kaybet {PropertyName}
 FormatText,not {EffectProperty},olmamış {EffectProperty}
 FormatText,polymorph into {EntityNames},şekil değiştir {EntityNames}
 FormatText,range {Dice},menzil {Dice}
 FormatText,RANKED #{RankNumber},#{RankNumber} DERECESİNE ULAŞTIN
+FormatText,remove transient {PropertyNames},geçici etkileri kaldır {PropertyNames}
 FormatText,replenish life from {Percent}%,
 FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName} tekrar canlandırıldı, {CharacterDescription}"
@@ -3113,6 +3058,8 @@ LiteralText,AFFLICTIONS,BELALAR
 LiteralText,alias?,takma ad?
 LiteralText,ALL,HEPSİ
 LiteralText,ALL AT ONCE,HEPSİ BİRDEN
+LiteralText,all kind,her türler
+LiteralText,all levels,
 LiteralText,always,her zaman
 LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
 LiteralText,amnesia,unutkanlık
@@ -3128,8 +3075,10 @@ LiteralText,Are you sure you want to end your adventure?,Zindandan kaçıp macer
 LiteralText,Are you sure you want to lose this character and end your adventure?,Bu karakteri kaybedip maceranı bitirmek istediğine emin misin?
 LiteralText,ARE YOU SURE?,EMİN MİSİN?
 LiteralText,area of effect,alan etkisi
+LiteralText,area transient,alan geçici
 LiteralText,ARTIFACTS,ESERLER
 LiteralText,ASCEND TO PREVIOUS LEVEL,BİR ÖNCEKİ SEVİYEYE YÜKSEL
+LiteralText,assess item,değer biç
 LiteralText,assets,teçhizatlar
 LiteralText,ATMOSPHERE,ATMOSFER
 LiteralText,attack modifier,saldırı düzenleyici
@@ -3165,6 +3114,7 @@ LiteralText,boost defence by enchantment,savunmayı geliştir
 LiteralText,boost encumbrance by enchantment,
 LiteralText,boost speed by enchantment,hızı geliştirir
 LiteralText,bounces,sekmeler
+LiteralText,break ally loyalty,dost sadakatini boz
 LiteralText,broken,kırık
 LiteralText,BROKEN,KIRIK
 LiteralText,burst rate,patlama oranı
@@ -3183,6 +3133,7 @@ LiteralText,CAN'T SEE,GÖRÜLEMEZ
 LiteralText,CAN'T SLIDE,KAYILAMAZ
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,FIRLATILAMAZ
+LiteralText,carried,taşındı
 LiteralText,Cast,Kullan
 LiteralText,CAST SPELLS,büyü kullan
 LiteralText,challenge,meydan okuma
@@ -3190,6 +3141,8 @@ LiteralText,CHAMPION,ŞAMPİYON
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,şarjlı itemler
+LiteralText,charging,şarj ediyor
+LiteralText,charm,cezbet
 LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
 LiteralText,checking for updates,güncellemeler kontrol ediliyor
@@ -3213,10 +3166,12 @@ LiteralText,CONDUCT,EYLEM
 LiteralText,CONFIRM,ONAYLA
 LiteralText,Connect to game hosted by another player.,Başka oyuncu tarafından kurulmuş bir oyuna katıl.
 LiteralText,CONSOLE,KONSOL
+LiteralText,constructed,
 LiteralText,CONTACT,İLETİŞİM
 LiteralText,Continue,Devam et
 LiteralText,CONTINUE,DEVAM ET
 LiteralText,CONTROLLED,KONTROL ALTINDA
+LiteralText,convert,
 LiteralText,conveyance,nakil
 LiteralText,COPY,KOPYALA
 LiteralText,corpse,ceset
@@ -3329,6 +3284,7 @@ LiteralText,ENTITIES,VARLIKLAR
 LiteralText,entity,varlık
 LiteralText,entropy accidents,entropi kazası
 LiteralText,EQUIP,KUŞAN
+LiteralText,equipped,donan
 LiteralText,ESCAPE,KAÇ
 LiteralText,escape traps,tuzaklardan kaç
 LiteralText,escape with,birşey kullanarak kaç
@@ -3368,6 +3324,7 @@ LiteralText,free panning mode,serbest kamera modu
 LiteralText,fright,korkut
 LiteralText,fumbling,sakarlık
 LiteralText,GAIN KARMA,KARMA KAZAN
+LiteralText,gain level,seviye kazan
 LiteralText,GAIN LEVEL,SEVİYE KAZAN
 LiteralText,gain nutrition,besin kazan
 LiteralText,gain skill,yetenek kazan
@@ -3399,6 +3356,7 @@ LiteralText,HIDE,GİZLE
 LiteralText,hiding,saklanma
 LiteralText,HINT,İPUCU
 LiteralText,HIRE,İŞE AL
+LiteralText,horde,
 LiteralText,HORDES,ORDULAR
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
@@ -3426,6 +3384,7 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
+LiteralText,into,
 LiteralText,Inventory,
 LiteralText,INVENTORY,ENVANTER
 LiteralText,ITEM,
@@ -3450,6 +3409,7 @@ LiteralText,learn spells,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,SEVİYE TAHTASI
 LiteralText,level//rank,seviye
+LiteralText,lies,yalanlar
 LiteralText,life,hayat
 LiteralText,LIFE,HAYAT
 LiteralText,Life represents your physical health and death occurs at zero.,
@@ -3478,6 +3438,7 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,HARİTA
+LiteralText,mapping,haritalamak
 LiteralText,material,
 LiteralText,materials,malzemeler
 LiteralText,melting,
@@ -3535,6 +3496,7 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
+LiteralText,pacify,sakinleştir
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
 LiteralText,passive (no attacking),pasif (saldırgan değil)
@@ -3588,6 +3550,7 @@ LiteralText,RACES,IRKLAR
 LiteralText,random,rastgele
 LiteralText,RANDOM,RASTGELE
 LiteralText,random dungeon seed,rastgele zindan tohum kodu
+LiteralText,random points,rasgele puanlar
 LiteralText,rank,
 LiteralText,rarity,enderlik
 LiteralText,rate & review on the app store,uygulama dükkanında değerlendir ve eleştir.
@@ -3606,7 +3569,10 @@ LiteralText,REGISTER,KAYIT OL
 LiteralText,REGISTER PLAYER HANDLE,LAKABINI KAYDET
 LiteralText,reinforced,
 LiteralText,REINFORCED,GÜÇLENDİR
+LiteralText,remove all transients,geçici olan her şeyi kaldırır
 LiteralText,REMOVE CURSE,LANETİ BOZ
+LiteralText,remove random resistance,rastgele direnci kaldır
+LiteralText,remove random talent,rastgele yeteneği kaldır
 LiteralText,remove with,çıkarmak için
 LiteralText,remove with boulder,kaya ile çıkar
 LiteralText,REMOVE//container,ÇIKAR
@@ -3617,9 +3583,11 @@ LiteralText,RENAME ITEM,
 LiteralText,RENAME MAP,
 LiteralText,repel,
 LiteralText,replica,taklit
+LiteralText,replicate item,varlığı kopyala
 LiteralText,requires the skill to pick locks,kilit çözmek için beceriye ihtiyaç var
 LiteralText,Re-roll,
 LiteralText,re-rolls,
+LiteralText,reset random equipment,rastgele bir teçhizatı yenile
 LiteralText,resident?,
 LiteralText,resistances,dayanıklılıklar
 LiteralText,RESISTS,DAYANDI
@@ -3642,6 +3610,7 @@ LiteralText,REVERT,GERİ AL
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
+LiteralText,rumour,dedikodu
 LiteralText,SANITY CHECK,RUH SAĞLIĞI KONTROLÜ
 LiteralText,SAVE,KAYDET
 LiteralText,SAVE & QUIT,KAYDET & ÇIK
@@ -3694,6 +3663,7 @@ LiteralText,SONICS,
 LiteralText,"Sorry, this device is a bit too small :-(",
 LiteralText,SOUND BOARD,SES TAHTASI
 LiteralText,Sound on/off,
+LiteralText,source,kaynak
 LiteralText,spare materials can be formed into new items using the essence of creation,oluşturma esansına sahip olduğunuz sürece fazla malzemeleri yeni eşyalara dönüştürülebilir.
 LiteralText,spawn,canlandır
 LiteralText,SPAWN ENTITIES EVERYWHERE,HERYERDE CANLILAR CANLANDIR
@@ -3704,6 +3674,7 @@ LiteralText,SPEED,HIZ
 LiteralText,SPELL,
 LiteralText,SPELLS,BÜYÜLER
 LiteralText,Square,
+LiteralText,stack,
 LiteralText,START,BAŞLA
 LiteralText,Start a game to be joined by other players.,
 LiteralText,Start new adventure,Yeni maceraya başla
@@ -3711,12 +3682,14 @@ LiteralText,start without companion,dostsuz başla
 LiteralText,starvation,açlık
 LiteralText,starved,açlıktan öldü
 LiteralText,STAY,ORDA KAL
+LiteralText,steal,çal
 LiteralText,STOP,DUR
 LiteralText,storage,depo
 LiteralText,STUCK,TAKILDI
 LiteralText,STUDIO,
 LiteralText,STUDIO QUESTS,
 LiteralText,SUBMIT,YOLLA
+LiteralText,summon,canlı çağır
 LiteralText,SUSTAINED,SÜRDÜRÜLDÜ
 LiteralText,SWAP,DEĞİŞTİR
 LiteralText,SWITCH,
@@ -3727,6 +3700,7 @@ LiteralText,TAKE ALL,HEPSİNİ AL
 LiteralText,talents,yetenekler
 LiteralText,TALENTS,YETENEKLER
 LiteralText,TALK,
+LiteralText,target,hedef
 LiteralText,TELEKINESIS,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
@@ -3741,6 +3715,7 @@ LiteralText,There is a new update available!,Yeni bir güncelleme mevcut!
 LiteralText,there is nothing to place here,buraya yerleştirilebileek bir şeyin yok
 LiteralText,there is nothing to remove here,buradan kaldırılabilecek bir şey yok
 LiteralText,there is nothing to trade with this merchant,bu tüccara satabileceğin birşey yok
+LiteralText,this level,bulunduğun seviye
 LiteralText,this merchant has no stock to trade,bu tüccarın deposunda satacak birşey yok
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Başarılarınız Şan Salonuna bu isimle kaydedilecek.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Bu tohum kodunu arkadaşlarınla paylaşıp aynı zindanı yenmeye meydan okuyabilirsin
@@ -3767,12 +3742,14 @@ LiteralText,trapped door,tuzaklı kapı
 LiteralText,TRIGGER,TETİK
 LiteralText,trigger once,tetik bir kere
 LiteralText,trigger unlimited times,tetik sınırsız eşyalar
+LiteralText,truth,doğru
 LiteralText,TUNNEL,TÜNEL
 LiteralText,Tunnel which direction?,Hangi yöne kaz?
 LiteralText,TURN-BASED,SIRA-BAZLI
 LiteralText,turns,sıralar
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Rastgele bir zindan tohum kodu oluşturmak için istediğin bir kelime yada cümleyi gir.
 LiteralText,unable to load,yüklenemiyor
+LiteralText,unafflicts,etkiden kurtama
 LiteralText,UNDEAD,YÜRÜYEN ÖLÜYKEN
 LiteralText,Undo,
 LiteralText,unidentified items,tanımlanamayan eşyalar
@@ -3781,6 +3758,8 @@ LiteralText,UNIQUES,EŞŞİZLER
 LiteralText,UNLOCK,KİLİDİ AÇ
 LiteralText,unlock door or container,kapıyı veya kabı aç
 LiteralText,UNLOCKED,KİLDİ AÇILDI
+LiteralText,unpolymorphs,şekli düzeltme
+LiteralText,unpunishes,ceza kaldırma
 LiteralText,unskilled,yetersiz beceri
 LiteralText,UNSKILLED,YETERSİZ BECERİ
 LiteralText,UNTRAP,SİLAHSIZLAŞTIR
@@ -3814,6 +3793,7 @@ LiteralText,when entered,
 LiteralText,when exhausted,yorulduğunda
 LiteralText,when replica,
 LiteralText,when untrapped,silahsızlandırındığında
+LiteralText,with demolition,yık
 LiteralText,WON'T EAT,YEMİYOR
 LiteralText,WORKBENCH MATERIALS,ÇALIŞMA MASASI MALZEMELERİ
 LiteralText,World,
