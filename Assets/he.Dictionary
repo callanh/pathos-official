@@ -957,49 +957,22 @@ DietName,omnivore,תזונת-כל
 DietName,organivore,תזונה אורגנית
 DietName,xylophagy,תזונת סיבים
 EffectProperty,disenchant,הסרת קסם
-EffectProperty,expansive,יקר
-EffectProperty,fixed,מקובע
-EffectProperty,loyal only,רק נאמנות
-EffectProperty,polite,באדיבות
-EffectProperty,rigid,נוקשה
 EffectType,blinking,בזיקה
-EffectType,capture,לכידה
 EffectType,clone entity,שיבוט דמות
 EffectType,convert barrier,המרת קיר
 EffectType,convert gate,המרת דלת
 EffectType,convert ground,המרת רצפה
 EffectType,convert volatile,המרת נזילה
-EffectType,create nook,יצירת פינה
 EffectType,create volatile,יצירת נזילה
-EffectType,decapitate,עריפה
 EffectType,destroy volatile,הסרת נזילה
-EffectType,disarm,ניטרול נשק
-EffectType,drain life,שאיבת חיים
-EffectType,drain mana,שאיבת קסם
 EffectType,enchant item,הקסמת נכס
-EffectType,engulf,עיטוף
-EffectType,exchange,עסקה
 EffectType,extinguish volatile,עצירת נזילה
-EffectType,grapple,לפיתה
 EffectType,hatch,דגירה
 EffectType,identify,זיהוי
-EffectType,incarcerate,כליאה
-EffectType,karma,קארמה
-EffectType,liberate,הוצאה לחופשי
-EffectType,mobilise block,הזזת סלע
-EffectType,opening,פתיחה
 EffectType,place curse,הטלת קללה
-EffectType,raise dead,הקמת מתים
-EffectType,release,שיחרור
 EffectType,remove curse,הסרת קללה
-EffectType,restock,עדכון המלאי
-EffectType,restore ability,שיחזור יכולת
 EffectType,sanctify,קידוש
-EffectType,spawn entity,לידת דמות
-EffectType,teleport entity,שיגור דמות
-EffectType,teleport item away,שיגור
 EffectType,tinning,שימור בפחית
-EffectType,transition,מעבר
 EffectType,visit shop,ביקור בחנות
 EffectType,visit shrine,ביקור במקדש
 EffectType,visit zoo,ביקור בגן חיות
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,מגבלה של {Percent}%
 FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל {SpellName}?
 FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל {SpellName}?
 FormatText,convert {FeatureName} into {DeviceName},המרת מתקן {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},פגיעה ב{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ירידה של {AttributeName} ב{AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ירידה של כל היכולות ב{AdjustmentDice}
+FormatText,decrease karma by {ChangeDice},להוריד קארמה {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},ירידה של יכולת אחת ב{AdjustmentDice}
 FormatText,diminish {ManaDice},הפחתת {ManaDice} נקודות קסם
+FormatText,drain life {Dice},שאיבת חיים {Dice}
+FormatText,drain mana {Dice},שאיבת קסם {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},ירידה של {DamageDice} {ElementName} {BlockName}
 FormatText,energise {ManaDice},הוספת {ManaDice} נקודות קסם
 FormatText,Equip {CharacterName},ציוד של {CharacterName}
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},נזק {ElementName} של {DamageDice
 FormatText,heal {LifeDice},ריפוי של {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},שיפור של {AttributeName} ב{AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},שיפור של כל היכולות ב{AdjustmentDice}
+FormatText,increase karma by {ChangeDice},להעלות קארמה {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},שיפור של יכולת אחת ב{AdjustmentDice}
 FormatText,learn spell {SpellName},לימוד לחש {SpellName}
 FormatText,level {Depth},קומה {Depth}
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},{GATENAME} נעול
 FormatText,lose {PropertyName} talent,איבוד כישור {PropertyName}
 FormatText,not {EffectProperty},לא {EffectProperty}
 FormatText,polymorph into {EntityNames},שינוי צורה {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},הקמת מתים {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},טווח {Dice}
 FormatText,RANKED #{RankNumber},מקום {RankNumber}
 FormatText,remove transient {PropertyNames},הסרת מצב זמני {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,אי אפשר לראות
 LiteralText,CAN'T SLIDE,אי אפשר להחליק
 LiteralText,CAN'T TELEKINESIS,אי אפשר לעשות טלקינזיס
 LiteralText,CAN'T THROW,אי אפשר לזרוק
+LiteralText,capture entity,לכידה
 LiteralText,carried,בנשיאה
 LiteralText,Cast,קסם
 LiteralText,CAST SPELLS,הטלת קסם
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,קשר
 LiteralText,Continue,להמשיך
 LiteralText,CONTINUE,להמשיך
 LiteralText,CONTROLLED,שליטה
-LiteralText,convert,
 LiteralText,convert block to barrier,המרת סלע
 LiteralText,conveyance,העברה
 LiteralText,COPY,להעתיק
@@ -3179,6 +3158,7 @@ LiteralText,create golem,יצירת גולם
 LiteralText,CREATE GROUND,ליצור רצפה
 LiteralText,CREATE HORDE,ליצור נחיל
 LiteralText,CREATE ITEM,ליצור חפץ
+LiteralText,create nook,יצירת פינה
 LiteralText,CREATE PLATFORM,ליצור גשר
 LiteralText,CREATE SHOP,ליצור חנות
 LiteralText,CREATE SHRINE,ליצור מקדש
@@ -3194,6 +3174,7 @@ LiteralText,dark,חושך
 LiteralText,DEAD END,מבוי סתום
 LiteralText,death,מוות
 LiteralText,deathray,קרן מוות
+LiteralText,decapitate entity,עריפה
 LiteralText,decapitation,כריתת ראש
 LiteralText,DECEASED,ז''ל
 LiteralText,decelerated real-time,זמן אמיתי מואט
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,ביטול שירותי אונליין
 LiteralText,Disable pitch shifting,ביטול שינוי גובה הצליל
 LiteralText,Disable spacebar real-time toggle,ביטול שימוש במקש הרווח בזמן אמיתי
 LiteralText,Disable swipe gestures,ביטול תנועות החלקה
+LiteralText,disarm entity,ניטרול נשק
 LiteralText,DISCONNECT,ניתוק
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,זוהה ניתוק. יש לבדוק שחיבור הרשת שלך אמין ושכל המכשירים משתמשים באותה גרסה של פאתוס.
 LiteralText,discover item,הארה
@@ -3268,6 +3250,7 @@ LiteralText,encounters,מפגשים
 LiteralText,encumbrance thresholds,סף נשיאה
 LiteralText,End this adventure,סיום ההרפתקה הזאת
 LiteralText,ended,סיום
+LiteralText,engulf entity,עיטוף
 LiteralText,ENTER QUANTITY,כמה?
 LiteralText,ENTITIES,ישויות
 LiteralText,entity,ישות
@@ -3283,6 +3266,7 @@ LiteralText,evolution,התפתחות
 LiteralText,Examine which object?,איזה חפץ לבחון?
 LiteralText,except replica,מלבד העתק
 LiteralText,EXCHANGE,עסקה
+LiteralText,exchange entity,עסקה
 LiteralText,EXIT PATHOS,יציאה מפאתוס
 LiteralText,EXPAND,להרחיב
 LiteralText,EXPEL,לגרש
@@ -3304,6 +3288,7 @@ LiteralText,FEED,להאכיל
 LiteralText,FEEDBACK,משוב
 LiteralText,Feedback information,מידע מהמשוב
 LiteralText,FILES,קבצים
+LiteralText,fixed,מקובע
 LiteralText,fixed range,טווח קבוע
 LiteralText,FIZZLE,קול תסיסה
 LiteralText,Floor,רצפה
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,גליפים
 LiteralText,gold,זהב
 LiteralText,GOLD,זהב
 LiteralText,GRAPHICS,גרפיקה
+LiteralText,grapple entity,לפיתה
 LiteralText,GRAPPLED,בריתוק
 LiteralText,greed,תאוות בצע
 LiteralText,grimoire,ספר כשפים
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,לייבא
 LiteralText,Import a file,לייבא קובץ
 LiteralText,IMPOSSIBLE,בלתי אפשרי
 LiteralText,in both hands,בשתי הידיים
+LiteralText,incarcerate entity,כליאה
 LiteralText,incarceration,כליאה
 LiteralText,INCREASE,יותר
 LiteralText,INDEX,אינדקס
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,לכתוב על פריט
 LiteralText,inscription?,כתובת?
 LiteralText,instruct each character,הוראות לכל אחת מהדמויות
 LiteralText,INSUFFICIENT GOLD,אין לך מספיק זהב
-LiteralText,into,
 LiteralText,Inventory,רשימת מלאי
 LiteralText,INVENTORY,רשימת מלאי
 LiteralText,ITEM,פריט
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,לימוד קסמים
 LiteralText,LEFT RING,טבעת שמאל
 LiteralText,LEVEL CHART,תרשים הקומה
 LiteralText,level//rank,רמה
+LiteralText,liberate entity,הוצאה לחופשי
 LiteralText,lies,שקרים
 LiteralText,life,חיים
 LiteralText,LIFE,חיים
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,איבוד רמה
 LiteralText,lose nutrition,איבוד תזונה
 LiteralText,lose skill,איבוד כישורים
 LiteralText,LOW MANA,מעט נקודות קסם
+LiteralText,loyal only,רק נאמנות
 LiteralText,MAIN WIELD,נשק ראשי
 LiteralText,mana,נקודות קסם
 LiteralText,MANA,נקודות קסם
@@ -3438,6 +3426,7 @@ LiteralText,MENU,תפריט
 LiteralText,mercenary,שכיר או שכירת חרב
 LiteralText,MIMIC,מימיק
 LiteralText,mimicking,חיקוי
+LiteralText,mobilise block,הזזת סלע
 LiteralText,modifier,משנה גודל
 LiteralText,MOUNT,לרכוב
 LiteralText,Mount which direction?,באיזה כיוון לעלות לרכיבה?
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,אחד אחד
 LiteralText,oOo,oOo
 LiteralText,OPEN,לפתוח
 LiteralText,OPENED,פתוחה
+LiteralText,opening,פתיחה
 LiteralText,OR,או
 LiteralText,ORIGINAL,מקור
 LiteralText,OVERRIDE,עקיפה
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,רישום
 LiteralText,REGISTER PLAYER HANDLE,רישום כינוי
 LiteralText,reinforced,במצב מחוזק
 LiteralText,REINFORCED,במצב מחוזק
+LiteralText,release entity,שיחרור
 LiteralText,remove all transients,מחיקת כל מצב ארעי
 LiteralText,REMOVE CURSE,הסרת קללה
 LiteralText,remove random resistance,מחיקת עמידות אקראית
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,עמידות
 LiteralText,Rest,לנוח
 LiteralText,Rest how many turns?,כמה תורות לנוח?
 LiteralText,restarting to update,צריך לאתחל כדי לעדכן
+LiteralText,restock shop items,עדכון המלאי
+LiteralText,restore ability,שיחזור יכולת
 LiteralText,RESTORED,שיחזור
 LiteralText,RESURRECT,להקים לתחייה
 LiteralText,Resurrect and continue,להקים לתחייה ולהמשיך
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,טלקינזיס
 LiteralText,Telekinesis which direction?,באיזה כיוון להפעיל טלקינזיס?
 LiteralText,Telekinesis which object?,על איזה חפץ להפעיל טלקינזיס?
 LiteralText,TELEPORT,לשגר
+LiteralText,teleport entity,שיגור דמות
+LiteralText,teleport item away,שיגור
 LiteralText,Teleport to where?,לאן להשתגר?
 LiteralText,TERMINAL,טרמינל
 LiteralText,terrain,פני השטח
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,לסחור
 LiteralText,transform to,לשנות ל
 LiteralText,transients,השפעות זמניות
 LiteralText,TRANSIENTS,השפעות זמניות
+LiteralText,transition,מעבר
 LiteralText,TRANSLATIONS,תרגומים
 LiteralText,TRAP,מלכודת
 LiteralText,trap?,מלכודת?

@@ -957,49 +957,22 @@ DietName,omnivore,雜食性
 DietName,organivore,有機食品食性
 DietName,xylophagy,木食性
 EffectProperty,disenchant,去附魔
-EffectProperty,expansive,大型生物
-EffectProperty,fixed,被抓住
-EffectProperty,loyal only,保留盟友關係
-EffectProperty,polite,友善
-EffectProperty,rigid,堅硬
 EffectType,blinking,閃現
-EffectType,capture,捕捉
 EffectType,clone entity,克隆角色
 EffectType,convert barrier,轉換牆壁
 EffectType,convert gate,轉換門
 EffectType,convert ground,轉換地面
 EffectType,convert volatile,轉換環境效果
-EffectType,create nook,製造角落
 EffectType,create volatile,製造環境效果
-EffectType,decapitate,斬首
 EffectType,destroy volatile,移除環境效果
-EffectType,disarm,繳械
-EffectType,drain life,吸取生命
-EffectType,drain mana,吸取魔力
 EffectType,enchant item,附魔物件
-EffectType,engulf,吞嚥
-EffectType,exchange,交換
 EffectType,extinguish volatile,消除環境效果
-EffectType,grapple,抓鉤
 EffectType,hatch,孵化
 EffectType,identify,鑒定
-EffectType,incarcerate,禁錮
-EffectType,karma,運程
-EffectType,liberate,解放
-EffectType,mobilise block,移動巨石
-EffectType,opening,開啟
 EffectType,place curse,詛咒
-EffectType,raise dead,復活死屍
-EffectType,release,釋放
 EffectType,remove curse,去除詛咒
-EffectType,restock,重新進貨
-EffectType,restore ability,復原能力
 EffectType,sanctify,神聖化
-EffectType,spawn entity,產生角色
-EffectType,teleport entity,傳送角色
-EffectType,teleport item away,傳送到別處
 EffectType,tinning,罐裝
-EffectType,transition,轉變
 EffectType,visit shop,訪問商店
 EffectType,visit shrine,訪問神龕
 EffectType,visit zoo,訪問動物園
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,{Percent}% 封頂
 FormatText,Cast {SpellName} on which item?,對哪個物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪個方向使用 {SpellName} ？
 FormatText,convert {FeatureName} into {DeviceName},轉換固定物 {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},損害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
+FormatText,decrease karma by {ChangeDice},運程 減少 {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},一項能力降低 {AdjustmentDice}
 FormatText,diminish {ManaDice},減損魔力 {ManaDice}
+FormatText,drain life {Dice},吸取生命 {Dice}
+FormatText,drain mana {Dice},吸取魔力 {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},掉落 {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},回復魔力 {ManaDice}
 FormatText,Equip {CharacterName},裝備 {CharacterName}
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},傷害{ElementName}{DamageDice}
 FormatText,heal {LifeDice},治療 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}提升 {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},所有能力提升 {AdjustmentDice}
+FormatText,increase karma by {ChangeDice},運程 增加 {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},一項能力提升 {AdjustmentDice}
 FormatText,learn spell {SpellName},習得咒語 {SpellName}
 FormatText,level {Depth},樓層 {Depth}
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},上鎖的 {GATENAME}
 FormatText,lose {PropertyName} talent,失去天賦 {PropertyName}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
 FormatText,polymorph into {EntityNames},
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},復活死屍 {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},範圍 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
 FormatText,remove transient {PropertyNames},去除短期狀態 {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,無法看見
 LiteralText,CAN'T SLIDE,無法滑動
 LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,無法投擲
+LiteralText,capture entity,捕捉
 LiteralText,carried,攜帶
 LiteralText,Cast,施咒
 LiteralText,CAST SPELLS,施咒
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,聯繫
 LiteralText,Continue,繼續
 LiteralText,CONTINUE,繼續
 LiteralText,CONTROLLED,控制的
-LiteralText,convert,
 LiteralText,convert block to barrier,轉換巨石
 LiteralText,conveyance,食用
 LiteralText,COPY,複製
@@ -3179,6 +3158,7 @@ LiteralText,create golem,製造魔像
 LiteralText,CREATE GROUND,創造樓層
 LiteralText,CREATE HORDE,創造生物群
 LiteralText,CREATE ITEM,創造物品
+LiteralText,create nook,製造角落
 LiteralText,CREATE PLATFORM,創造橋樑
 LiteralText,CREATE SHOP,創造商店
 LiteralText,CREATE SHRINE,創造遺跡
@@ -3194,6 +3174,7 @@ LiteralText,dark,黑暗
 LiteralText,DEAD END,死胡同
 LiteralText,death,死亡
 LiteralText,deathray,死亡射線
+LiteralText,decapitate entity,斬首
 LiteralText,decapitation,斬首
 LiteralText,DECEASED,已故冒
 LiteralText,decelerated real-time,降低即時模式速度
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,禁用聯網功能
 LiteralText,Disable pitch shifting,禁止隨機音效音量
 LiteralText,Disable spacebar real-time toggle,禁用通過空格開關實時遊戲
 LiteralText,Disable swipe gestures,禁用平滑轉場效果
+LiteralText,disarm entity,繳械
 LiteralText,DISCONNECT,斷開連接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,無法連接網絡，請檢查網絡連線和所有裝置的pathos的版本為相同版本
 LiteralText,discover item,啟蒙
@@ -3268,6 +3250,7 @@ LiteralText,encounters,遭遇
 LiteralText,encumbrance thresholds,負重上限
 LiteralText,End this adventure,結束這次冒險
 LiteralText,ended,終結
+LiteralText,engulf entity,吞嚥
 LiteralText,ENTER QUANTITY,輸入數量
 LiteralText,ENTITIES,怪物
 LiteralText,entity,實體
@@ -3283,6 +3266,7 @@ LiteralText,evolution,進化
 LiteralText,Examine which object?,檢查哪一項
 LiteralText,except replica,除了複製品
 LiteralText,EXCHANGE,交換
+LiteralText,exchange entity,交換
 LiteralText,EXIT PATHOS,離開遊戲
 LiteralText,EXPAND,擴展樓層面積
 LiteralText,EXPEL,吐出
@@ -3304,6 +3288,7 @@ LiteralText,FEED,餵養
 LiteralText,FEEDBACK,反饋
 LiteralText,Feedback information,反饋信息
 LiteralText,FILES,文件
+LiteralText,fixed,被抓住
 LiteralText,fixed range,固定射程
 LiteralText,FIZZLE,發嘶嘶聲
 LiteralText,Floor,層
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,圖像
 LiteralText,gold,金幣
 LiteralText,GOLD,金幣
 LiteralText,GRAPHICS,圖像
+LiteralText,grapple entity,抓鉤
 LiteralText,GRAPPLED,扭打
 LiteralText,greed,貪婪
 LiteralText,grimoire,魔法書
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,導入
 LiteralText,Import a file,請輸入文件
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,雙手持
+LiteralText,incarcerate entity,禁錮
 LiteralText,incarceration,禁錮
 LiteralText,INCREASE,增加
 LiteralText,INDEX,索引
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,刻寫物品
 LiteralText,inscription?,刻寫內容
 LiteralText,instruct each character,指引每個角色
 LiteralText,INSUFFICIENT GOLD,金幣不足
-LiteralText,into,
 LiteralText,Inventory,背包
 LiteralText,INVENTORY,背包
 LiteralText,ITEM,道具
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,學習法術
 LiteralText,LEFT RING,左手戒指
 LiteralText,LEVEL CHART,等級-經驗值
 LiteralText,level//rank,等級
+LiteralText,liberate entity,解放
 LiteralText,lies,假流言
 LiteralText,life,生命值
 LiteralText,LIFE,生命值
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,失去等級
 LiteralText,lose nutrition,失去營養
 LiteralText,lose skill,失去專精
 LiteralText,LOW MANA,魔法值低下
+LiteralText,loyal only,保留盟友關係
 LiteralText,MAIN WIELD,主手武器
 LiteralText,mana,魔法值
 LiteralText,MANA,魔法值
@@ -3438,6 +3426,7 @@ LiteralText,MENU,菜單
 LiteralText,mercenary,僱傭軍
 LiteralText,MIMIC,擬態
 LiteralText,mimicking,擬態中的
+LiteralText,mobilise block,移動巨石
 LiteralText,modifier,調整
 LiteralText,MOUNT,騎乘
 LiteralText,Mount which direction?,向哪個方向騎乘？
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,一次一個
 LiteralText,oOo,oOo
 LiteralText,OPEN,打開
 LiteralText,OPENED,打開
+LiteralText,opening,開啟
 LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆寫
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,登錄
 LiteralText,REGISTER PLAYER HANDLE,登錄玩家行為
 LiteralText,reinforced,加固
 LiteralText,REINFORCED,加強
+LiteralText,release entity,釋放
 LiteralText,remove all transients,去除所有短期狀態
 LiteralText,REMOVE CURSE,移除詛咒
 LiteralText,remove random resistance,移除隨機抗性
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,抗性
 LiteralText,Rest,休息
 LiteralText,Rest how many turns?,要休息多少回合呢？
 LiteralText,restarting to update,重啟遊戲後更新……
+LiteralText,restock shop items,重新進貨
+LiteralText,restore ability,復原能力
 LiteralText,RESTORED,恢復
 LiteralText,RESURRECT,復活
 LiteralText,Resurrect and continue,復活並繼續
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,念力控制
 LiteralText,Telekinesis which direction?,向哪個方向施展念力控制？
 LiteralText,Telekinesis which object?,念力控制哪個物體？
 LiteralText,TELEPORT,傳送
+LiteralText,teleport entity,傳送角色
+LiteralText,teleport item away,傳送到別處
 LiteralText,Teleport to where?,傳送去哪裡？
 LiteralText,TERMINAL,終點
 LiteralText,terrain,地形
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,交易
 LiteralText,transform to,變形為
 LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
+LiteralText,transition,轉變
 LiteralText,TRANSLATIONS,翻譯
 LiteralText,TRAP,陷阱
 LiteralText,trap?,陷阱

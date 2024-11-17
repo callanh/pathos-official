@@ -957,49 +957,22 @@ DietName,omnivore,mindenevő
 DietName,organivore,organikus élelemmel táplálkozó
 DietName,xylophagy,faevő
 EffectProperty,disenchant,levétel
-EffectProperty,expansive,terjedő
-EffectProperty,fixed,fixált
-EffectProperty,loyal only,
-EffectProperty,polite,illedelmes
-EffectProperty,rigid,szilárd
 EffectType,blinking,elillanás
-EffectType,capture,elfogás
 EffectType,clone entity,karakterklón
 EffectType,convert barrier,következővé alakul:
 EffectType,convert gate,következővé alakul:
 EffectType,convert ground,következővé alakul:
 EffectType,convert volatile,
-EffectType,create nook,bemélyedést hoz létre:
 EffectType,create volatile,
-EffectType,decapitate,lefejezés
 EffectType,destroy volatile,
-EffectType,disarm,lefegyverzés
-EffectType,drain life,életelszívás
-EffectType,drain mana,manaelszívás
 EffectType,enchant item,eszköz igézése
-EffectType,engulf,elnyelés
-EffectType,exchange,kicserél
 EffectType,extinguish volatile,
-EffectType,grapple,megragadás
 EffectType,hatch,kikeltés
 EffectType,identify,azonosítás
-EffectType,incarcerate,bebörtönzés
-EffectType,karma,karma
-EffectType,liberate,felszabadítás
-EffectType,mobilise block,
-EffectType,opening,kinyitás
 EffectType,place curse,megátkozás
-EffectType,raise dead,halott-támasztás
-EffectType,release,elengedés
 EffectType,remove curse,átoklevétel
-EffectType,restock,feltöltés
-EffectType,restore ability,adottság-visszaállítás
 EffectType,sanctify,felszentelés
-EffectType,spawn entity,karakter lerakás
-EffectType,teleport entity,karakter teleportálása
-EffectType,teleport item away,elteleportálás
 EffectType,tinning,konzerválás
-EffectType,transition,átalakulás
 EffectType,visit shop,bolt meglátogatása
 EffectType,visit shrine,szentély meglátogatása
 EffectType,visit zoo,terem meglátogatása
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,{Percent}%-ot fed
 FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {SpellName} varázslat?
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
 FormatText,convert {FeatureName} into {DeviceName},következővé alakul: {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},megbénítja a következőt: {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease karma by {ChangeDice},karma csökkent {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},csökkentés {ManaDice}
+FormatText,drain life {Dice},életelszívás {Dice}
+FormatText,drain mana {Dice},manaelszívás {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},ledob: {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},energizálás {ManaDice}
 FormatText,Equip {CharacterName},{CharacterName} felszerelése
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},sebzés {ElementName} {DamageDice}
 FormatText,heal {LifeDice},gyógyítás {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase karma by {ChangeDice},karma növel {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},
 FormatText,learn spell {SpellName},megtanult varázslat: {SpellName}
 FormatText,level {Depth},{Depth}. szint
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},ZÁRT {GATENAME}
 FormatText,lose {PropertyName} talent,készség elvesztése {PropertyName}
 FormatText,not {EffectProperty},nincsen/nem {EffectProperty}
 FormatText,polymorph into {EntityNames},átváltozás {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},halott-támasztás {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},hatótávolság {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}. helyezett
 FormatText,remove transient {PropertyNames},átmeneti hatás eltávolítása {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,NEM LEHET LÁTNI
 LiteralText,CAN'T SLIDE,NEM LEHET CSÚSZNI
 LiteralText,CAN'T TELEKINESIS,NEM MEHET VÉGBE TELEKINÉZIS
 LiteralText,CAN'T THROW,NEM LEHET ELDOBNI
+LiteralText,capture entity,elfogás
 LiteralText,carried,hordozta
 LiteralText,Cast,Varázslatok
 LiteralText,CAST SPELLS,varázslás
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,KAPCSOLAT
 LiteralText,Continue,Folytatás
 LiteralText,CONTINUE,FOLYTATÁS
 LiteralText,CONTROLLED,IRÁNYÍTOTT
-LiteralText,convert,
 LiteralText,convert block to barrier,következővé alakul:
 LiteralText,conveyance,tápérték:
 LiteralText,COPY,MÁSOL
@@ -3179,6 +3158,7 @@ LiteralText,create golem,gólemet hoz létre
 LiteralText,CREATE GROUND,TALAJ LÉTREHOZÁSA
 LiteralText,CREATE HORDE,HORDA LÉTREHOZÁSA
 LiteralText,CREATE ITEM,TÁRGY LÉTREHOZÁSA
+LiteralText,create nook,bemélyedést hoz létre:
 LiteralText,CREATE PLATFORM,HÍD LÉTREHOZÁSA
 LiteralText,CREATE SHOP,BOLT LÉTREHOZÁSA
 LiteralText,CREATE SHRINE,SZENTÉLY LÉTREHOZÁSA
@@ -3194,6 +3174,7 @@ LiteralText,dark,sötét
 LiteralText,DEAD END,ZSÁKUTCA
 LiteralText,death,halál
 LiteralText,deathray,halálsugár
+LiteralText,decapitate entity,lefejezés
 LiteralText,decapitation,lefejezés
 LiteralText,DECEASED,ELHUNYT
 LiteralText,decelerated real-time,valós idő lassítása
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,Online szolgáltatások kikapcsolása
 LiteralText,Disable pitch shifting,Hangmagasság-eltolás kikapcsolása
 LiteralText,Disable spacebar real-time toggle,A szóköz billentyűvel történő időváltás kikapcsolása
 LiteralText,Disable swipe gestures,
+LiteralText,disarm entity,lefegyverzés
 LiteralText,DISCONNECT,SZÉTKAPCSOL
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,felvilágosodás
@@ -3268,6 +3250,7 @@ LiteralText,encounters,találkozások
 LiteralText,encumbrance thresholds,terhelési küszöb
 LiteralText,End this adventure,Kaland befejezése
 LiteralText,ended,befejeződött
+LiteralText,engulf entity,elnyelés
 LiteralText,ENTER QUANTITY,MENNYISÉG MEGADÁSA
 LiteralText,ENTITIES,ENTITÁSOK
 LiteralText,entity,entitás
@@ -3283,6 +3266,7 @@ LiteralText,evolution,fejlődés
 LiteralText,Examine which object?,Melyik objektumon szeretnéd megvizsgálni?
 LiteralText,except replica,kivéve másolat
 LiteralText,EXCHANGE,KICSERÉL
+LiteralText,exchange entity,kicserél
 LiteralText,EXIT PATHOS,KILÉPÉS A PATHOSBÓL
 LiteralText,EXPAND,KIBŐVÍT
 LiteralText,EXPEL,KIUTASÍT
@@ -3304,6 +3288,7 @@ LiteralText,FEED,MEGETET
 LiteralText,FEEDBACK,VISSZAJELZÉS
 LiteralText,Feedback information,
 LiteralText,FILES,FÁJLOK
+LiteralText,fixed,fixált
 LiteralText,fixed range,állandó hatótávolság
 LiteralText,FIZZLE,PEZSGÉS
 LiteralText,Floor,Padló
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,KÉPEK
 LiteralText,gold,arany
 LiteralText,GOLD,ARANY
 LiteralText,GRAPHICS,GRAFIKA
+LiteralText,grapple entity,megragadás
 LiteralText,GRAPPLED,MEGRAGADOTT
 LiteralText,greed,következő(k) után sóvárog
 LiteralText,grimoire,varázskönyv
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,IMPORTÁL
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,LEHETETLEN
 LiteralText,in both hands,mindkét kézben
+LiteralText,incarcerate entity,bebörtönzés
 LiteralText,incarceration,BEBÖRTÖNZÉS
 LiteralText,INCREASE,NÖVEL
 LiteralText,INDEX,NÉVMUTATÓ
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
-LiteralText,into,
 LiteralText,Inventory,Leltár
 LiteralText,INVENTORY,LELTÁR
 LiteralText,ITEM,TÁRGY
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,varázslatok megtanulása
 LiteralText,LEFT RING,BAL GYŰRŰ
 LiteralText,LEVEL CHART,SZINT TÁBLÁZAT
 LiteralText,level//rank,szint
+LiteralText,liberate entity,felszabadítás
 LiteralText,lies,hazugságok
 LiteralText,life,életerő
 LiteralText,LIFE,ÉLETERŐ
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,SZINT ELVESZTÉSE
 LiteralText,lose nutrition,tápanyag elvesztése
 LiteralText,lose skill,képesség elvesztése
 LiteralText,LOW MANA,ALACSONY MANA
+LiteralText,loyal only,
 LiteralText,MAIN WIELD,ELSŐDLEGES
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3438,6 +3426,7 @@ LiteralText,MENU,MENÜ
 LiteralText,mercenary,zsoldos
 LiteralText,MIMIC,MÍMEL
 LiteralText,mimicking,mímelés
+LiteralText,mobilise block,
 LiteralText,modifier,módosító
 LiteralText,MOUNT,FELSZÁLL
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,EGYSZERRE EGY
 LiteralText,oOo,oOo
 LiteralText,OPEN,KINYIT
 LiteralText,OPENED,NYITOTT
+LiteralText,opening,kinyitás
 LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
 LiteralText,OVERRIDE,FELÜLÍRT
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,REGISZTRÁCIÓ
 LiteralText,REGISTER PLAYER HANDLE,JÁTÉKOSAZONOSÍTÓ REGISZTRÁLÁSA
 LiteralText,reinforced,megerősített
 LiteralText,REINFORCED,MEGERŐSÍTETT
+LiteralText,release entity,elengedés
 LiteralText,remove all transients,összes átmeneti hatás eltávolítása
 LiteralText,REMOVE CURSE,ÁTOKLEVÉTEL
 LiteralText,remove random resistance,véletlenszerű ellenállás eltávolítása
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,ELLENÁLL
 LiteralText,Rest,Pihenés
 LiteralText,Rest how many turns?,Hány körön át tartson a pihenés?
 LiteralText,restarting to update,újraindítás a frissítés befejezéséhez
+LiteralText,restock shop items,feltöltés
+LiteralText,restore ability,adottság-visszaállítás
 LiteralText,RESTORED,VISSZAÁLLÍTOTT
 LiteralText,RESURRECT,FELTÁMASZT
 LiteralText,Resurrect and continue,Feltámasztás és folytatás
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,TELEKINÉZIS
 LiteralText,Telekinesis which direction?,Melyik irányba történjen telekinézis?
 LiteralText,Telekinesis which object?,Melyik objektumon történjen telekinézis?
 LiteralText,TELEPORT,TELEPORTÁLÁS
+LiteralText,teleport entity,karakter teleportálása
+LiteralText,teleport item away,elteleportálás
 LiteralText,Teleport to where?,Hova szeretnél teleportálni?
 LiteralText,TERMINAL,TERMINÁL
 LiteralText,terrain,terep
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,KERESKEDÉS
 LiteralText,transform to,átalakul:
 LiteralText,transients,átmeneti hatások
 LiteralText,TRANSIENTS,ÁTMENETI HATÁSOK
+LiteralText,transition,átalakulás
 LiteralText,TRANSLATIONS,FORDÍTÁSOK
 LiteralText,TRAP,CSAPDA
 LiteralText,trap?,csapda?

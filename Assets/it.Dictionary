@@ -957,49 +957,22 @@ DietName,omnivore,onnivoro
 DietName,organivore,organivoro
 DietName,xylophagy,xylofagia
 EffectProperty,disenchant,disincantare
-EffectProperty,expansive,espansivo
-EffectProperty,fixed,riparato
-EffectProperty,loyal only,solo leale
-EffectProperty,polite,educato
-EffectProperty,rigid,rigido
 EffectType,blinking,lampeggiante
-EffectType,capture,catturare
 EffectType,clone entity,personaggio clone
 EffectType,convert barrier,convertire muro
 EffectType,convert gate,convertire la porta
 EffectType,convert ground,convertire piano
 EffectType,convert volatile,convertire sversamento
-EffectType,create nook,creare un angolo
 EffectType,create volatile,creare uno sversamento
-EffectType,decapitate,decapita
 EffectType,destroy volatile,rimuovi sversamento
-EffectType,disarm,disarmare
-EffectType,drain life,drenare la vita
-EffectType,drain mana,drenare mana
 EffectType,enchant item,incanta risorsa
-EffectType,engulf,inghiottire
-EffectType,exchange,scambio
 EffectType,extinguish volatile,chiudi sversamento
-EffectType,grapple,afferrare
 EffectType,hatch,schiudere
 EffectType,identify,identificare
-EffectType,incarcerate,incarcerare
-EffectType,karma,karma
-EffectType,liberate,liberare
-EffectType,mobilise block,mobilita masso
-EffectType,opening,apertura
 EffectType,place curse,maledici
-EffectType,raise dead,resuscitare morti
-EffectType,release,pubblicazione
 EffectType,remove curse,rimuovi la maledizione
-EffectType,restock,rifornire
-EffectType,restore ability,ripristinare la capacità
 EffectType,sanctify,santificare
-EffectType,spawn entity,carattere di generazione
-EffectType,teleport entity,teletrasporta personaggio
-EffectType,teleport item away,teletrasportarsi via
 EffectType,tinning,stagnatura
-EffectType,transition,transizione
 EffectType,visit shop,visita il negozio
 EffectType,visit shrine,visitare il santuario
 EffectType,visit zoo,visita zoo
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,limite {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancia {SpellName} su quale oggetto?
 FormatText,Cast {SpellName} which direction?,Lancia {SpellName} in quale direzione?
 FormatText,convert {FeatureName} into {DeviceName},convertire trappola {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},peggiora {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},diminuisce {AttributeName} per {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},diminuisce tutte le abilità per {AdjustmentDice}
+FormatText,decrease karma by {ChangeDice},karma diminuisci {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},diminuisce un'abilità per {AdjustmentDice}
 FormatText,diminish {ManaDice},diminuisci {ManaDice}
+FormatText,drain life {Dice},drenare la vita {Dice}
+FormatText,drain mana {Dice},drenare mana {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},fai cadere {BlockName} {DamageDice} {ElementName}
 FormatText,energise {ManaDice},energizza {ManaDice}
 FormatText,Equip {CharacterName},Equipaggia {CharacterName}
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},danneggia {DamageDice} {ElementName}
 FormatText,heal {LifeDice},cura {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},migliora {AttributeName} per {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},migliora tutte le abilità per {AdjustmentDice}
+FormatText,increase karma by {ChangeDice},karma aumenta {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},migliora un'abilità per {AdjustmentDice}
 FormatText,learn spell {SpellName},impara l'incantesimo {SpellName}
 FormatText,level {Depth},{Depth}° piano
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},CHIUSO {GATENAME}
 FormatText,lose {PropertyName} talent,perdere talento {PropertyName}
 FormatText,not {EffectProperty},non {EffectProperty}
 FormatText,polymorph into {EntityNames},metamorfosi {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},resuscitare morti {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},range {Dice}
 FormatText,RANKED #{RankNumber},CLASSIFICATO #{RankNumber}
 FormatText,remove transient {PropertyNames},rimuovi transitorio {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,IMPOSSIBILE VEDERE
 LiteralText,CAN'T SLIDE,IMPOSSIBILE SCIVOLARE
 LiteralText,CAN'T TELEKINESIS,IMPOSSIBILE USARE TELECINESI
 LiteralText,CAN'T THROW,IMPOSSIBILE LANCIARE
+LiteralText,capture entity,catturare
 LiteralText,carried,portato
 LiteralText,Cast,Utilizza
 LiteralText,CAST SPELLS,LANCIA INCANTESIMI
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,CONTATTA
 LiteralText,Continue,Continua
 LiteralText,CONTINUE,CONTINUA
 LiteralText,CONTROLLED,CONTROLLATO
-LiteralText,convert,
 LiteralText,convert block to barrier,convertire masso
 LiteralText,conveyance,garantisce
 LiteralText,COPY,COPIA
@@ -3179,6 +3158,7 @@ LiteralText,create golem,creare golem
 LiteralText,CREATE GROUND,CREA PIANO
 LiteralText,CREATE HORDE,CREA ORDA
 LiteralText,CREATE ITEM,CREA OGGETTO
+LiteralText,create nook,creare un angolo
 LiteralText,CREATE PLATFORM,CREA PONTE
 LiteralText,CREATE SHOP,CREA NEGOZIO
 LiteralText,CREATE SHRINE,CREA SANTUARIO
@@ -3194,6 +3174,7 @@ LiteralText,dark,buio
 LiteralText,DEAD END,SENZA USCITA
 LiteralText,death,morte
 LiteralText,deathray,raggio della morte
+LiteralText,decapitate entity,decapita
 LiteralText,decapitation,decapitazione
 LiteralText,DECEASED,DECEDUTO
 LiteralText,decelerated real-time,tempo reale decelerato
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,Disabilita servizi online
 LiteralText,Disable pitch shifting,Disabilita il pitch shifting per i suoni
 LiteralText,Disable spacebar real-time toggle,Disabilita la possibilità di alternare la modalità in tempo reale con la barra spaziatrice
 LiteralText,Disable swipe gestures,Disattiva gesti di scorrimento
+LiteralText,disarm entity,disarmare
 LiteralText,DISCONNECT,DISCONNETTI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Collegamento interrotto. Assicurati di avere una condizione stabile e che tutti i giocatori utilizzino la stessa versione di Pathos.
 LiteralText,discover item,illuminazione
@@ -3268,6 +3250,7 @@ LiteralText,encounters,incontri
 LiteralText,encumbrance thresholds,soglie di ingombro
 LiteralText,End this adventure,Termina questa avventura
 LiteralText,ended,finito
+LiteralText,engulf entity,inghiottire
 LiteralText,ENTER QUANTITY,INSERISCI LA QUANTITA'
 LiteralText,ENTITIES,ENTITA'
 LiteralText,entity,entità
@@ -3283,6 +3266,7 @@ LiteralText,evolution,evoluzione
 LiteralText,Examine which object?,Esamina quale oggetto?
 LiteralText,except replica,eccetto replica
 LiteralText,EXCHANGE,SCAMBIA
+LiteralText,exchange entity,scambio
 LiteralText,EXIT PATHOS,ESCI DA PATHOS
 LiteralText,EXPAND,ESPANDI
 LiteralText,EXPEL,ESPELLI
@@ -3304,6 +3288,7 @@ LiteralText,FEED,NUTRI
 LiteralText,FEEDBACK,FEEDBACK
 LiteralText,Feedback information,Informazioni sui feedback
 LiteralText,FILES,FILE
+LiteralText,fixed,riparato
 LiteralText,fixed range,gittata fissa
 LiteralText,FIZZLE,SIBILIO
 LiteralText,Floor,Piano
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,SPRITE E TEXTURE
 LiteralText,gold,oro
 LiteralText,GOLD,ORO
 LiteralText,GRAPHICS,grafica
+LiteralText,grapple entity,afferrare
 LiteralText,GRAPPLED,AFFERRATO
 LiteralText,greed,avarizia
 LiteralText,grimoire,grimorio
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,IMPORTA
 LiteralText,Import a file,Importa un file
 LiteralText,IMPOSSIBLE,IMPOSSIBILE
 LiteralText,in both hands,in entrambe le mani
+LiteralText,incarcerate entity,incarcerare
 LiteralText,incarceration,incarcerazione
 LiteralText,INCREASE,AUMENTA
 LiteralText,INDEX,INDICE
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,INCIDI OGGETTO
 LiteralText,inscription?,iscrizione?
 LiteralText,instruct each character,istruisci ciascun personaggio
 LiteralText,INSUFFICIENT GOLD,ORO INSUFFICIENTE
-LiteralText,into,
 LiteralText,Inventory,Inventario
 LiteralText,INVENTORY,INVENTARIO
 LiteralText,ITEM,OGGETTO
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,impara incantesimi
 LiteralText,LEFT RING,ANELLO SINISTRO
 LiteralText,LEVEL CHART,TABELLA DEI LIVELLI
 LiteralText,level//rank,livello
+LiteralText,liberate entity,liberare
 LiteralText,lies,bugie
 LiteralText,life,vita
 LiteralText,LIFE,VITA
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,PERDI LIVELLO
 LiteralText,lose nutrition,perdi nutrimento
 LiteralText,lose skill,perdi abilità
 LiteralText,LOW MANA,MANA BASSA
+LiteralText,loyal only,solo leale
 LiteralText,MAIN WIELD,MANO PRIMARIA
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3438,6 +3426,7 @@ LiteralText,MENU,MENU
 LiteralText,mercenary,mercenario
 LiteralText,MIMIC,IMITA
 LiteralText,mimicking,imitando
+LiteralText,mobilise block,mobilita masso
 LiteralText,modifier,modificatore
 LiteralText,MOUNT,MONTA
 LiteralText,Mount which direction?,In quale direzione vuoi montare?
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,UNO ALLA VOLTA
 LiteralText,oOo,oOo
 LiteralText,OPEN,APRI
 LiteralText,OPENED,APERTO
+LiteralText,opening,apertura
 LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINALE
 LiteralText,OVERRIDE,RIMPIAZZA
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,REGISTRATI
 LiteralText,REGISTER PLAYER HANDLE,REGISTRA NOME GIOCATORE
 LiteralText,reinforced,rinforzato
 LiteralText,REINFORCED,RINFORZATO
+LiteralText,release entity,pubblicazione
 LiteralText,remove all transients,rimuove tutti i transitori
 LiteralText,REMOVE CURSE,RIMUOVI MALEDIZIONE
 LiteralText,remove random resistance,rimuovere la resistenza casuale
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,RESISTE
 LiteralText,Rest,Riposa
 LiteralText,Rest how many turns?,Riposi per quanti turni?
 LiteralText,restarting to update,riavvio per aggiornare
+LiteralText,restock shop items,rifornire
+LiteralText,restore ability,ripristinare la capacità
 LiteralText,RESTORED,RISTORATO
 LiteralText,RESURRECT,RESUSCITA
 LiteralText,Resurrect and continue,Resuscita e continua
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,TELECINESI
 LiteralText,Telekinesis which direction?,In quale direzione vuoi usare telecinesi?
 LiteralText,Telekinesis which object?,Su quale oggetto vuoi usare telecinesi?
 LiteralText,TELEPORT,TELETRASPORTO
+LiteralText,teleport entity,teletrasporta personaggio
+LiteralText,teleport item away,teletrasportarsi via
 LiteralText,Teleport to where?,Teletrasporta dove?
 LiteralText,TERMINAL,TERMINAL
 LiteralText,terrain,terreno
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,COMMERCIO
 LiteralText,transform to,trasformare in
 LiteralText,transients,condizioni transitorie
 LiteralText,TRANSIENTS,CONDIZIONI TRANSITORIE
+LiteralText,transition,transizione
 LiteralText,TRANSLATIONS,TRADUZIONI
 LiteralText,TRAP,TRAPPOLA
 LiteralText,trap?,trappola?

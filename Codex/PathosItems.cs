@@ -556,13 +556,13 @@ namespace Pathos
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.amulet).SetTalent(Properties.life_regeneration, Properties.vitality, Properties.slow_digestion);
         I.AddObviousUse(Motions.rub, Delay.FromTurns(20), Sonics.magic, Use =>
         {
-          Use.Apply.Harm(Elements.physical, 2.d5());
+          Use.Apply.HarmEntity(Elements.physical, 2.d5());
           Use.Apply.SummonEntity(Dice.One, Entities.homunculus);
         });
         I.AddObviousUse(Motions.zap, Delay.FromTurns(30), Sonics.magic, Use =>
         {
           Use.SetCast().FilterAnyItem();
-          Use.Apply.Harm(Elements.physical, Dice.One, Modifier.Plus1);
+          Use.Apply.HarmEntity(Elements.physical, Dice.One, Modifier.Plus1);
           Use.Apply.TransmuteItem(Materials.gold);
         });
       });
@@ -650,11 +650,11 @@ namespace Pathos
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
-              B => B.AnimateRevenants(Corrupt: null),
-              U => U.AnimateRevenants(Corrupt: Properties.rage),
+              B => B.AnimateRevenant(CorruptProperty: null, CorruptDice: 6.d10()),
+              U => U.AnimateRevenant(CorruptProperty: Properties.rage, CorruptDice: 6.d10()),
               C => C.Backfire(F => F.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null))
             ),
-            S => S.Harm(Elements.necrotic, 4.d6() + 4)
+            S => S.HarmEntity(Elements.necrotic, 4.d6() + 4)
           );
           Use.Apply.Backfire(F => F.PlaceCurse(Dice.One, Sanctities.Cursed)); // curse the wand.
         });
@@ -662,7 +662,7 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.death, Dice.One)
              .SetAudibility(5);
-          Use.Apply.Harm(Elements.physical, Dice.Zero);
+          Use.Apply.HarmEntity(Elements.physical, Dice.Zero);
           Use.Apply.DecreaseKarma(Dice.Fixed(250));
           Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
             R => R.WhenTargetKind(Kinds.Living, 
@@ -776,8 +776,8 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.Heal(5.d20(), Modifier.Zero);
-                    A.Energise(5.d20(), Modifier.Zero);
+                    A.HealEntity(5.d20(), Modifier.Zero);
+                    A.EnergiseEntity(5.d20(), Modifier.Zero);
                     A.RestoreAbility();
                   });
                   Table.Add(10, A =>
@@ -827,7 +827,7 @@ namespace Pathos
                     A.AreaTransient(Properties.quickness, 4.d10());
                   });
                   Table.Add(10, A => A.TeleportInventoryItem());
-                  Table.Add(10, A => A.TransitionRandom(Teleport: null, 1.d2()));
+                  Table.Add(10, A => A.TransitionRandom(SpatialProperty: null, 1.d2(), Fixed: false));
                   Table.Add(5, A => A.CreateFeature(Codex.Features.altar));
                 });
               },
@@ -855,8 +855,8 @@ namespace Pathos
                   });
                   Table.Add(10, A =>
                   {
-                    A.Afflict(Codex.Afflictions.List.ToArray());
-                    A.Punish(Codex.Punishments.List.ToArray());
+                    A.AfflictEntity(Codex.Afflictions.List.ToArray());
+                    A.PunishEntity(Codex.Punishments.List.ToArray());
                   });
                   Table.Add(10, A =>
                   {
@@ -871,10 +871,10 @@ namespace Pathos
                   Table.Add(10, A =>
                   {
                     A.CreateFeature(Codex.Features.pentagram);
-                    A.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false);
+                    A.RaiseDeadEntity(Percent: 100, CorruptProperty: Properties.rage, CorruptDice: 6.d10(), LoyalOnly: false);
                     A.CreateEntity(1.d3(), Entities.ghost);
                   });
-                  Table.Add(10, A => A.TransitionDescend(Teleport: null, 4.d3())); // 4-12 levels down.
+                  Table.Add(10, A => A.TransitionDescend(SpatialProperty: null, 4.d3(), Fixed: false)); // 4-12 levels down.
                   Table.Add(10, A => A.PolymorphEntity(Kinds.worm.Entities.Where(E => E.IsEncounter).ToArray()));
                   Table.Add(5, A => A.Death(Elements.magical, Array.Empty<Kind>(), Strikes.death, Cause: null));
                 });
@@ -950,7 +950,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.magic, Dice.Fixed(10))
              .SetAudibility(1)
              .SetTargetSelf(false);
-          Use.Apply.Exchange();
+          Use.Apply.ExchangeEntity();
           Use.Apply.Repel(Range.Sq3, Items: true, Characters: true, Boulders: true);
           Use.Apply.WithSourceSanctity
           (
@@ -1096,9 +1096,9 @@ namespace Pathos
         {
           T.WithSourceSanctity
           (
-            B => B.Punish(Codex.Punishments.List.ToArray()),
-            U => U.Punish(Codex.Punishments.List.ToArray()),
-            C => C.Backfire(F => F.Punish(Codex.Punishments.List.ToArray()))
+            B => B.PunishEntity(Codex.Punishments.List.ToArray()),
+            U => U.PunishEntity(Codex.Punishments.List.ToArray()),
+            C => C.Backfire(F => F.PunishEntity(Codex.Punishments.List.ToArray()))
           );
         }));
       });
@@ -1147,12 +1147,12 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8(), D =>
         {
-          D.WhenTargetEntity(new[] { Entities.jabberwock, Entities.vorpal_jabberwock }, T => T.Decapitate(Anatomies.head, Strikes.sever));
+          D.WhenTargetEntity(new[] { Entities.jabberwock, Entities.vorpal_jabberwock }, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
           D.WithSourceSanctity
           (
-            B => B.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever)),
-            U => U.WhenChance(Chance.OneIn20, T => T.Decapitate(Anatomies.head, Strikes.sever)),
-            C => C.Backfire(F => F.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever)))
+            B => B.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever)),
+            U => U.WhenChance(Chance.OneIn20, T => T.DecapitateEntity(Anatomies.head, Strikes.sever)),
+            C => C.Backfire(F => F.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever)))
           );
         });
       });
@@ -1174,7 +1174,7 @@ namespace Pathos
          .SetResistance(Elements.poison);
         I.SetOneHandedWeapon(Skills.light_blade, null, Elements.physical, DamageType.Pierce, 1.d6(), D =>
         {
-          D.Harm(Elements.poison, 1.d8());
+          D.HarmEntity(Elements.poison, 1.d8());
           D.WhenChance(Chance.OneIn4, T =>
           {
             T.WithSourceSanctity
@@ -1182,7 +1182,7 @@ namespace Pathos
               B =>
               {
                 B.UnlessTargetResistant(Elements.poison, A => A.DecreaseAbility(Attributes.strength, Dice.One));
-                B.Afflict(Codex.Afflictions.poisoning);
+                B.AfflictEntity(Codex.Afflictions.poisoning);
               },
               U =>
               {
@@ -1256,27 +1256,27 @@ namespace Pathos
         var W = I.SetOneHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d4());
         W.AddDetonation(Explosions.fiery, A =>
         {
-          A.Harm(Elements.fire, 1.d12());
+          A.HarmEntity(Elements.fire, 1.d12());
           A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.fire, R => R.ApplyTransient(Properties.blindness, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.frosty, A =>
         {
-          A.Harm(Elements.cold, 1.d14());
+          A.HarmEntity(Elements.cold, 1.d14());
           A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.electric, A =>
         {
-          A.Harm(Elements.shock, 1.d16());
+          A.HarmEntity(Elements.shock, 1.d16());
           A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.shock, R => R.ApplyTransient(Properties.stunned, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.acid, A =>
         {
-          A.Harm(Elements.acid, 1.d18());
+          A.HarmEntity(Elements.acid, 1.d18());
           A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.acid, R => R.ApplyTransient(Properties.confusion, 1.d4() + 1)));
         });
         W.AddDetonation(Explosions.magical, A =>
         {
-          A.Harm(Elements.magical, 1.d20());
+          A.HarmEntity(Elements.magical, 1.d20());
           A.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.magical, R => R.ApplyTransient(Properties.sleeping, 1.d4() + 1)));
         });
       });
@@ -1472,9 +1472,9 @@ namespace Pathos
         {
           T.WithSourceSanctity
           (
-            B => B.Harm(Elements.force, 1.d8()),
-            U => U.Harm(Elements.force, 1.d6()),
-            C => C.Backfire(F => F.Harm(Elements.force, 1.d4()))
+            B => B.HarmEntity(Elements.force, 1.d8()),
+            U => U.HarmEntity(Elements.force, 1.d6()),
+            C => C.Backfire(F => F.HarmEntity(Elements.force, 1.d4()))
           );
         }));
       });
@@ -1533,9 +1533,9 @@ namespace Pathos
         {
           T.WithSourceSanctity
           (
-            B => B.Harm(Elements.shock, 1.d8()),
-            U => U.Harm(Elements.shock, 1.d6()),
-            C => C.Backfire(F => F.Harm(Elements.physical, 1.d4()))
+            B => B.HarmEntity(Elements.shock, 1.d8()),
+            U => U.HarmEntity(Elements.shock, 1.d6()),
+            C => C.Backfire(F => F.HarmEntity(Elements.physical, 1.d4()))
           );
         }));
       });
@@ -1615,7 +1615,7 @@ namespace Pathos
          .SetTalent(Properties.berserking);
         var W = I.SetOneHandedWeapon(Skills.medium_blade, null, Elements.physical, DamageType.Slash, 2.d4(), D =>
         {
-          D.Harm(Elements.disintegrate, 1.d8());
+          D.HarmEntity(Elements.disintegrate, 1.d8());
         });
         W.AddVersus(Kinds.Living.ToArray(), Elements.physical, 1.d8());
         I.SetDowngradeItem(Ancient_Katana);
@@ -4432,7 +4432,7 @@ namespace Pathos
             U => U.RemoveTransient(Properties.fear),
             C =>
             {
-              C.WhenChance(Chance.OneIn20, T => T.Punish(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4));
+              C.WhenChance(Chance.OneIn20, T => T.PunishEntity(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4));
             }
           );
           A.WhenTargetKind(new[] { Kinds.dog, Kinds.cat }, T =>
@@ -4516,7 +4516,7 @@ namespace Pathos
           );
           A.WhenTargetKind(Kinds.Undead.ToArray(), T =>
           {
-            T.Harm(Elements.physical, 4.d6() + 4);
+            T.HarmEntity(Elements.physical, 4.d6() + 4);
             T.ApplyTransient(Properties.stunned, 4.d6());
           });
         });
@@ -4617,7 +4617,7 @@ namespace Pathos
           (
             B => B.Nothing(),
             U => U.Nothing(),
-            C => C.WhenChance(Chance.OneIn20, T => T.Punish(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
+            C => C.WhenChance(Chance.OneIn20, T => T.PunishEntity(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
           );
           SugarRush(I, A);
         });
@@ -4793,24 +4793,24 @@ namespace Pathos
           A.WhenTargetKind(Kinds.Undead.ToArray().Union(Kinds.demon).ToArray(),
           T =>
           {
-            T.Harm(Elements.physical, 4.d6() + 4);
+            T.HarmEntity(Elements.physical, 4.d6() + 4);
             T.ApplyTransient(Properties.stunned, 4.d6());
           },
           E => E.WithSourceSanctity
           (
             B =>
             {
-              B.Heal(1.d10() + 20, Modifier.Zero);
+              B.HealEntity(1.d10() + 20, Modifier.Zero);
               B.RemoveTransient(Properties.sickness);
             },
             U =>
             {
-              U.Heal(1.d10() + 2, Modifier.Zero);
+              U.HealEntity(1.d10() + 2, Modifier.Zero);
               U.RemoveTransient(Properties.sickness);
             },
             C =>
             {
-              C.Harm(Elements.necrotic, 1.d10() + 2);
+              C.HarmEntity(Elements.necrotic, 1.d10() + 2);
               C.ApplyTransient(Properties.sickness, 1.d10() + 10);
             }
           ));
@@ -5047,7 +5047,7 @@ namespace Pathos
           A.WhenChance(Chance.OneIn10,
             T => T.UnlessTargetResistant(Elements.poison, R =>
             {
-              R.Harm(Elements.poison, 1.d15());
+              R.HarmEntity(Elements.poison, 1.d15());
               R.DecreaseAbility(Attributes.strength, 1.d4());
             }),
             E => E.WhenChance(Chance.OneIn10, S =>
@@ -5102,7 +5102,7 @@ namespace Pathos
           (
             B => B.Nothing(),
             U => U.Nothing(),
-            C => C.WhenChance(Chance.OneIn20, T => T.Punish(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
+            C => C.WhenChance(Chance.OneIn20, T => T.PunishEntity(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
           );
           SugarRush(I, A);
         });
@@ -5223,7 +5223,7 @@ namespace Pathos
           );
           A.WhenTargetKind(new[] { Kinds.lycanthrope }, T =>
           {
-            T.Harm(Elements.physical, 4.d6() + 4);
+            T.HarmEntity(Elements.physical, 4.d6() + 4);
             T.ApplyTransient(Properties.stunned, 4.d6());
           });
         });
@@ -5270,7 +5270,7 @@ namespace Pathos
           (
             B => B.Nothing(),
             U => U.Nothing(),
-            C => C.WhenChance(Chance.OneIn20, T => T.Afflict(Codex.Afflictions.worms), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
+            C => C.WhenChance(Chance.OneIn20, T => T.AfflictEntity(Codex.Afflictions.worms), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
           );
         });
       });
@@ -5293,7 +5293,7 @@ namespace Pathos
           (
             B => B.Nothing(),
             U => U.Nothing(),
-            C => C.WhenChance(Chance.OneIn20, T => T.Afflict(Codex.Afflictions.worms), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
+            C => C.WhenChance(Chance.OneIn20, T => T.AfflictEntity(Codex.Afflictions.worms), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4))
           );
         });
       });
@@ -5346,11 +5346,11 @@ namespace Pathos
           (
             B =>
             {
-              B.Replenish(LifeThreshold: 100F, ManaThreshold: 100F); // full life and mana.
+              B.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 100F); // full life and mana.
             },
             U =>
             {
-              U.Replenish(LifeThreshold: 100F, ManaThreshold: 0F); // full life.
+              U.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 0F); // full life.
             },
             C =>
             {
@@ -6026,7 +6026,7 @@ namespace Pathos
         I.SetWeakness(PotionWeakness);
         I.SetImpact(Sonics.broken_glass, A =>
         {
-          A.Harm(Elements.acid, 1.d6());
+          A.HarmEntity(Elements.acid, 1.d6());
           A.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         I.AddPropertyTossUse(Motions.quaff, Property: null, Delay.FromTurns(15), Sonics.quaff, Use =>
@@ -6035,9 +6035,9 @@ namespace Pathos
           Use.Apply.RemoveTransient(Properties.petrifying);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.acid, 1.d4()),
-            U => U.Harm(Elements.acid, 1.d8()),
-            C => C.Harm(Elements.acid, 2.d8())
+            B => B.HarmEntity(Elements.acid, 1.d4()),
+            U => U.HarmEntity(Elements.acid, 1.d8()),
+            C => C.HarmEntity(Elements.acid, 2.d8())
           );
         });
       });
@@ -6061,9 +6061,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Afflict(Codex.Afflictions.List.Where(F => !F.Severe).ToArray()),
-            U => U.Afflict(Codex.Afflictions.List.ToArray()),
-            C => C.Afflict(Codex.Afflictions.List.Where(F => F.Severe).ToArray())
+            B => B.AfflictEntity(Codex.Afflictions.List.Where(F => !F.Severe).ToArray()),
+            U => U.AfflictEntity(Codex.Afflictions.List.ToArray()),
+            C => C.AfflictEntity(Codex.Afflictions.List.Where(F => F.Severe).ToArray())
           );
         });
       });
@@ -6137,7 +6137,7 @@ namespace Pathos
         I.AddObviousUse(Motions.quaff, Delay.FromTurns(15), Sonics.quaff, Use =>
         {
           Use.Consume();
-          Use.Apply.Heal(Dice.One, Modifier.Zero);
+          Use.Apply.HealEntity(Dice.One, Modifier.Zero);
           Use.Apply.WithSourceSanctity
           (
             B =>
@@ -6161,7 +6161,7 @@ namespace Pathos
           );
           Use.Apply.WhenTargetKind(new[] { Kinds.dwarf }, T =>
           {
-            T.Energise(2.d4(), Modifier.Zero);
+            T.EnergiseEntity(2.d4(), Modifier.Zero);
           });
         });
       });
@@ -6333,17 +6333,17 @@ namespace Pathos
           (
             B =>
             {
-              B.Heal(8.d8(), Modifier.FromRank(5));
+              B.HealEntity(8.d8(), Modifier.FromRank(5));
               B.RemoveTransient(Properties.sickness);
             },
             U =>
             {
-              U.Heal(6.d8(), Modifier.Zero);
+              U.HealEntity(6.d8(), Modifier.Zero);
               U.RemoveTransient(Properties.sickness);
             },
             C =>
             {
-              C.Heal(4.d8(), Modifier.Zero);
+              C.HealEntity(4.d8(), Modifier.Zero);
             }
           );
         });
@@ -6399,9 +6399,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Heal(Dice.Fixed(1000), Modifier.FromRank(+8)),
-            U => U.Heal(Dice.Fixed(1000), Modifier.Zero),
-            C => C.Heal(Dice.Fixed(1000), Modifier.Zero)
+            B => B.HealEntity(Dice.Fixed(1000), Modifier.FromRank(+8)),
+            U => U.HealEntity(Dice.Fixed(1000), Modifier.Zero),
+            C => C.HealEntity(Dice.Fixed(1000), Modifier.Zero)
           );
         });
       });
@@ -6451,9 +6451,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Energise(1.d25() + 14, Modifier.FromRank(6)),
-            U => U.Energise(1.d25() + 9, Modifier.Zero),
-            C => C.Diminish(1.d25() + 9, Modifier.FromRank(3))
+            B => B.EnergiseEntity(1.d25() + 14, Modifier.FromRank(6)),
+            U => U.EnergiseEntity(1.d25() + 9, Modifier.Zero),
+            C => C.DiminishEntity(1.d25() + 9, Modifier.FromRank(3))
           );
         });
       });
@@ -6479,7 +6479,7 @@ namespace Pathos
           (
             B => B.GainLevel(Dice.Fixed(+1), RandomExperience: true), // gain level plus random xp.
             U => U.GainLevel(Dice.Fixed(+1), RandomExperience: false), // gain level to base xp.
-            C => C.TransitionAscend(Properties.teleportation, Dice.One) // rise up through ceiling.
+            C => C.TransitionAscend(Properties.teleportation, Dice.One, Fixed: false) // rise up through ceiling.
           );
         });
       });
@@ -6506,7 +6506,7 @@ namespace Pathos
             B =>
             {
               B.ApplyTransient(Properties.hallucination, 1.d10() + 40);
-              B.Enlightenment(null);
+              B.DiscoverItem(null);
             },
             U =>
             {
@@ -6539,9 +6539,9 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Heal(8.d4(), Modifier.FromRank(1)),
-            U => U.Heal(6.d4(), Modifier.Zero),
-            C => C.Heal(4.d4(), Modifier.Zero)
+            B => B.HealEntity(8.d4(), Modifier.FromRank(1)),
+            U => U.HealEntity(6.d4(), Modifier.Zero),
+            C => C.HealEntity(4.d4(), Modifier.Zero)
           );
         });
       });
@@ -6997,18 +6997,18 @@ namespace Pathos
           (
             B =>
             {
-              B.Harm(Elements.physical, Dice.One);
+              B.HarmEntity(Elements.physical, Dice.One);
               B.ApplyTransient(Properties.sickness, 2.d40());
             },
             U =>
             {
-              U.Harm(Elements.physical, 1.d10());
+              U.HarmEntity(Elements.physical, 1.d10());
               U.DecreaseOneAbility(Dice.One);
               U.ApplyTransient(Properties.sickness, 6.d40());
             },
             C =>
             {
-              C.Harm(Elements.physical, 1.d10() + 5);
+              C.HarmEntity(Elements.physical, 1.d10() + 5);
               C.DecreaseOneAbility((1.d4() + 2)); // 3..6
               C.ApplyTransient(Properties.sickness, 10.d40());
             }
@@ -8093,9 +8093,9 @@ namespace Pathos
           (
             T => T.WithSourceSanctity
             (
-              B => B.Energise(Dice.Fixed(+300), Modifier.Plus5),
-              U => U.Energise(Dice.Fixed(+100), Modifier.Zero),
-              C => C.Diminish(Dice.Fixed(+300), Modifier.Plus5)
+              B => B.EnergiseEntity(Dice.Fixed(+300), Modifier.Plus5),
+              U => U.EnergiseEntity(Dice.Fixed(+100), Modifier.Zero),
+              C => C.DiminishEntity(Dice.Fixed(+300), Modifier.Plus5)
             ),
             E => E.WithSourceSanctity
             (
@@ -8184,7 +8184,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Harm(Elements.physical, 4.d6() + 4);
+          A.HarmEntity(Elements.physical, 4.d6() + 4);
         });
       });
 
@@ -8223,7 +8223,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Punish(Codex.Punishments.gluttony);
+          A.PunishEntity(Codex.Punishments.gluttony);
         });
       });
 
@@ -8393,17 +8393,17 @@ namespace Pathos
             (
               B =>
               {
-                B.Enlightenment(scroll_of_amnesia);
-                B.Enlightenment(potion_of_amnesia);
-                B.Enlightenment(null);
+                B.DiscoverItem(scroll_of_amnesia);
+                B.DiscoverItem(potion_of_amnesia);
+                B.DiscoverItem(null);
               },
               U =>
               {
-                U.Enlightenment(null);
+                U.DiscoverItem(null);
               },
               C =>
               {
-                C.Enlightenment(null);
+                C.DiscoverItem(null);
                 C.ApplyTransient(Properties.hallucination, 10.d10());
               }
             )
@@ -8484,9 +8484,9 @@ namespace Pathos
             {
               E.WithSourceSanctity
               (
-                B => B.Harm(Elements.fire, 3.d3()),
-                U => U.Harm(Elements.fire, 4.d3()),
-                C => C.Harm(Elements.fire, 5.d3())
+                B => B.HarmEntity(Elements.fire, 3.d3()),
+                U => U.HarmEntity(Elements.fire, 4.d3()),
+                C => C.HarmEntity(Elements.fire, 5.d3())
               );
               E.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
             }
@@ -8525,9 +8525,9 @@ namespace Pathos
             {
               E.WithSourceSanctity
               (
-                B => B.Harm(Elements.cold, 3.d3()),
-                U => U.Harm(Elements.cold, 4.d3()),
-                C => C.Harm(Elements.cold, 5.d3())
+                B => B.HarmEntity(Elements.cold, 3.d3()),
+                U => U.HarmEntity(Elements.cold, 4.d3()),
+                C => C.HarmEntity(Elements.cold, 5.d3())
               );
               E.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
             }
@@ -8571,17 +8571,17 @@ namespace Pathos
               (
                 B =>
                 {
-                  B.Harm(Elements.water, Dice.Zero); // TODO: BCU
+                  B.HarmEntity(Elements.water, Dice.Zero); // TODO: BCU
                   B.UnpunishEntity();
                   B.RemoveCurse(Dice.One);
                 },
                 U =>
                 {
-                  U.Harm(Elements.water, Dice.Zero);
+                  U.HarmEntity(Elements.water, Dice.Zero);
                 },
                 C =>
                 {
-                  C.Harm(Elements.water, Dice.Zero);
+                  C.HarmEntity(Elements.water, Dice.Zero);
                   C.PlaceCurse(Dice.One, Sanctities.Cursed);
                 }
               );
@@ -8941,16 +8941,16 @@ namespace Pathos
             {
               F.WithSourceSanctity
               (
-                B => B.Punish(Codex.Punishments.List.ToArray()),
-                U => U.Punish(Codex.Punishments.List.ToArray()),
-                C => C.Punish(Codex.Punishments.List.ToArray())
+                B => B.PunishEntity(Codex.Punishments.List.ToArray()),
+                U => U.PunishEntity(Codex.Punishments.List.ToArray()),
+                C => C.PunishEntity(Codex.Punishments.List.ToArray())
               );
             }
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Punish(Codex.Punishments.gluttony);
+          A.PunishEntity(Codex.Punishments.gluttony);
         });
       });
 
@@ -8978,9 +8978,9 @@ namespace Pathos
             T => T.CreateEntity(1.d4(), Kinds.Undead.ToArray()),
             F => F.WithSourceSanctity
             (
-              B => B.RaiseDead(Percent: 100, Corrupt: null, LoyalOnly: false),
-              U => U.RaiseDead(Percent: 50, Corrupt: null, LoyalOnly: false),
-              C => C.RaiseDead(Percent: 100, Corrupt: Properties.rage, LoyalOnly: false)
+              B => B.RaiseDeadEntity(Percent: 100, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: false),
+              U => U.RaiseDeadEntity(Percent: 50, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: false),
+              C => C.RaiseDeadEntity(Percent: 100, CorruptProperty: Properties.rage, CorruptDice: 6.d10(), LoyalOnly: false)
             )
           );
         });
@@ -9206,7 +9206,7 @@ namespace Pathos
           (
             T =>
             {
-              T.TransitionRandom(Properties.teleportation, Dice.One); // -1, +1
+              T.TransitionRandom(Properties.teleportation, Dice.One, Fixed: false); // -1, +1
               T.TeleportEntity(Properties.teleportation);
             },
             E => E.WithSourceSanctity
@@ -9219,7 +9219,7 @@ namespace Pathos
               U => U.TeleportEntity(Properties.teleportation),
               C =>
               {
-                C.TransitionRandom(Properties.teleportation, Dice.One);
+                C.TransitionRandom(Properties.teleportation, Dice.One, Fixed: false);
                 C.TeleportInventoryItem();
               }
             )
@@ -9384,9 +9384,9 @@ namespace Pathos
         {
           Apply.WithSourceSanctity
           (
-            B => B.Capture(Polite: true, Expansive: true, Property: null),
-            U => U.Capture(Polite: false, Expansive: true, Properties.rage),
-            C => C.Capture(Polite: false, Expansive: false, Properties.rage)
+            B => B.CaptureEntity(AngerProperty: null, AngerDice: Dice.Zero),
+            U => U.CaptureEntity(Properties.rage, 4.d6()),
+            C => C.CaptureEntity(Properties.rage, 8.d6() + 8)
           );
         }
 
@@ -9400,7 +9400,7 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.magic, Dice.One)
              .SetTargetSelf(false);
-          Use.Apply.Release();
+          Use.Apply.ReleaseEntity();
         });
         I.AddPretendUse(Motions.open, Delay.FromTurns(10), Sonics.magic, Use =>
         {
@@ -9408,7 +9408,7 @@ namespace Pathos
         });
         I.AddPretendUse(Motions.empty, Delay.FromTurns(10), Sonics.magic, Use =>
         {
-          Use.Apply.Release();
+          Use.Apply.ReleaseEntity();
         });
         I.AddObviousIngestUse(Motions.eat, 150, Delay.FromTurns(20), Sonics.tool, A =>
         {
@@ -9719,7 +9719,7 @@ namespace Pathos
               C =>
               {
                 C.MurderEntity(MurderType.Allied, Strikes.death, Kinds.Living.ToArray());
-                C.AnimateRevenants(Corrupt: Properties.rage);
+                C.AnimateRevenant(CorruptProperty: Properties.rage, CorruptDice: 6.d10());
               }
             )
           );
@@ -9865,7 +9865,7 @@ namespace Pathos
           Use.Apply.Alert(Dice.Fixed(10));
           Use.Apply.WhenConfused
           (
-            T => T.Harm(Elements.force, 4.d6()),
+            T => T.HarmEntity(Elements.force, 4.d6()),
             F =>
             {
               F.CreateDevice(Codex.Devices.pit, Destruction: true);
@@ -9908,7 +9908,7 @@ namespace Pathos
             U => U.ApplyTransient(Properties.blindness, 3.d6() + 3),
             C => C.Backfire(B => B.ApplyTransient(Properties.blindness, 2.d6() + 2))
           );
-          Use.Apply.WhenTargetKind(new[] { Kinds.gremlin }, T => T.Harm(Elements.physical, 8.d6() + 8));
+          Use.Apply.WhenTargetKind(new[] { Kinds.gremlin }, T => T.HarmEntity(Elements.physical, 8.d6() + 8));
         });
         //I.AddEat(200, Delay.FromTurns(20), Sonics.tool); // NOTE: no diet can eat plastic yet.
       });
@@ -9929,11 +9929,11 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.force, Dice.One)
              .SetAudibility(5);
-          Use.Apply.Harm(Elements.physical, Dice.Zero);
+          Use.Apply.HarmEntity(Elements.physical, Dice.Zero);
           Use.Apply.WhenTargetKind(new[] { Kinds.insect, Kinds.spider, Kinds.xan }, T =>
           {
             T.ApplyTransient(Properties.stunned, 3.d6() + 3);
-            T.Harm(Elements.physical, 8.d6() + 8);
+            T.HarmEntity(Elements.physical, 8.d6() + 8);
           });
         });
         //I.AddEat(100, Delay.FromTurns(20), Sonics.tool); // NOTE: no diet can eat plastic yet.
@@ -9955,11 +9955,11 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.force, Dice.One)
              .SetAudibility(1);
-          Use.Apply.Harm(Elements.physical, 1.d4());
+          Use.Apply.HarmEntity(Elements.physical, 1.d4());
           Use.Apply.WhenTargetKind(new[] { Kinds.vampire }, T =>
           {
             T.ApplyTransient(Properties.slowness, 3.d6() + 3);
-            T.Harm(Elements.physical, 8.d6() + 8);
+            T.HarmEntity(Elements.physical, 8.d6() + 8);
           });
         });
         I.AddObviousIngestUse(Motions.eat, 100, Delay.FromTurns(20), Sonics.tool);
@@ -9990,7 +9990,7 @@ namespace Pathos
         {
           A.WhenProbability(Table =>
           {
-            Table.Add(5, T => T.Harm(Elements.magical, 1.d50()));
+            Table.Add(5, T => T.HarmEntity(Elements.magical, 1.d50()));
             Table.Add(5, T => T.ApplyTransient(Properties.petrifying, 3.d100()));
             Table.Add(2, T => T.ConsumeResistance(Elements.petrify));
             Table.Add(1, T => T.Rumour(Attributes.wisdom, Skills.literacy, Truth: true, Lies: true));
@@ -10027,15 +10027,15 @@ namespace Pathos
             T => T.ConvertGround(FromGround: null, ToGround: Codex.Grounds.lava, Locality.Square),
             F => F.WithSourceSanctity
             (
-              B => B.Harm(Elements.fire, 7.d6()),
-              U => U.Harm(Elements.fire, 6.d6()),
-              C => C.Harm(Elements.fire, 5.d6())
+              B => B.HarmEntity(Elements.fire, 7.d6()),
+              U => U.HarmEntity(Elements.fire, 6.d6()),
+              C => C.HarmEntity(Elements.fire, 5.d6())
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 180, Delay.FromTurns(20), Sonics.tool, A =>
         {
-          A.Harm(Elements.fire, 7.d6() + 7);
+          A.HarmEntity(Elements.fire, 7.d6() + 7);
           A.ConsumeResistance(Elements.fire);
         });
       });
@@ -10062,15 +10062,15 @@ namespace Pathos
             T => T.ConvertGround(FromGround: null, ToGround: Codex.Grounds.ice, Locality.Square),
             F => F.WithSourceSanctity
             (
-              B => B.Harm(Elements.cold, 5.d4() + 5),
-              U => U.Harm(Elements.cold, 4.d4() + 4),
-              C => C.Harm(Elements.cold, 3.d4() + 3)
+              B => B.HarmEntity(Elements.cold, 5.d4() + 5),
+              U => U.HarmEntity(Elements.cold, 4.d4() + 4),
+              C => C.HarmEntity(Elements.cold, 3.d4() + 3)
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 180, Delay.FromTurns(20), Sonics.tool, A =>
         {
-          A.Harm(Elements.cold, 7.d6() + 7);
+          A.HarmEntity(Elements.cold, 7.d6() + 7);
           A.ConsumeResistance(Elements.cold);
         });
       });
@@ -10736,7 +10736,7 @@ namespace Pathos
         I.AddDiscoverUse(Motions.zap, Delay.FromTurns(10), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.force, Dice.One);
-          Use.Apply.Harm(Elements.force, 3.d6());
+          Use.Apply.HarmEntity(Elements.force, 3.d6());
           Use.Consume();
         });
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
@@ -11070,18 +11070,18 @@ namespace Pathos
           .SetAudibility(1);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Animate(ObjectEntity: Entities.animate_object, Corrupt: null),
-            U => U.Animate(ObjectEntity: Entities.animate_object, Corrupt: null),
-            C => C.Animate(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage)
+            B => B.AnimateItem(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero),
+            U => U.AnimateItem(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero),
+            C => C.AnimateItem(ObjectEntity: Entities.animate_object, CorruptProperty: Properties.rage, CorruptDice: 6.d10())
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
-          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
-          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
-          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
-          A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null);
+          A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero);
+          A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero);
+          A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero);
+          A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero);
+          A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero);
         });
       });
 
@@ -11143,15 +11143,15 @@ namespace Pathos
              .SetAudibility(10);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.cold, 7.d6()),
-            U => U.Harm(Elements.cold, 6.d6()),
-            C => C.Harm(Elements.cold, 5.d6())
+            B => B.HarmEntity(Elements.cold, 7.d6()),
+            U => U.HarmEntity(Elements.cold, 6.d6()),
+            C => C.HarmEntity(Elements.cold, 5.d6())
           );
           Use.Apply.WhenChance(Chance.OneIn2, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.paralysis, 1.d4() + 1)));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.cold, 14.d6() + 14);
+          A.HarmEntity(Elements.cold, 14.d6() + 14);
           A.ConsumeResistance(Elements.cold);
         });
       });
@@ -11308,9 +11308,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.Heal(1.d6(), Modifier.Plus1),
-            U => U.Heal(1.d6(), Modifier.Zero),
-            C => C.Harm(Elements.necrotic, 1.d6())
+            B => B.HealEntity(1.d6(), Modifier.Plus1),
+            U => U.HealEntity(1.d6(), Modifier.Zero),
+            C => C.HarmEntity(Elements.necrotic, 1.d6())
           );
         });
       });
@@ -11338,17 +11338,17 @@ namespace Pathos
           (
             B =>
             {
-              B.Heal(5.d4() + 10, Modifier.Zero);
+              B.HealEntity(5.d4() + 10, Modifier.Zero);
               B.RemoveTransient(Properties.blindness, Properties.deafness);
             },
             U =>
             {
-              U.Heal(5.d4() + 5, Modifier.Zero);
+              U.HealEntity(5.d4() + 5, Modifier.Zero);
               U.RemoveTransient(Properties.blindness, Properties.deafness);
             },
             C =>
             {
-              C.Heal(Dice.Fixed(10), Modifier.Zero);
+              C.HealEntity(Dice.Fixed(10), Modifier.Zero);
             }
           );
         });
@@ -11357,9 +11357,9 @@ namespace Pathos
           A.RemoveTransient(Properties.blindness, Properties.deafness);
           A.WithSourceSanctity
           (
-            B => B.Heal(5.d6() + 50, Modifier.Plus5),
-            U => U.Heal(5.d6() + 25, Modifier.Plus3),
-            C => C.Heal(5.d6(), Modifier.Zero)
+            B => B.HealEntity(5.d6() + 50, Modifier.Plus5),
+            U => U.HealEntity(5.d6() + 25, Modifier.Plus3),
+            C => C.HealEntity(5.d6(), Modifier.Zero)
           );
         });
       });
@@ -11416,14 +11416,14 @@ namespace Pathos
              .SetAudibility(10);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.fire, 7.d6()),
-            U => U.Harm(Elements.fire, 6.d6()),
-            C => C.Harm(Elements.fire, 5.d6())
+            B => B.HarmEntity(Elements.fire, 7.d6()),
+            U => U.HarmEntity(Elements.fire, 6.d6()),
+            C => C.HarmEntity(Elements.fire, 5.d6())
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.fire, 14.d6() + 14);
+          A.HarmEntity(Elements.fire, 14.d6() + 14);
           A.ConsumeResistance(Elements.fire);
         });
       });
@@ -11448,15 +11448,15 @@ namespace Pathos
           Use.SetCast().Explosion(Explosions.fiery, 2.d6() + 2);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.fire, 8.d6()),
-            U => U.Harm(Elements.fire, 6.d6()),
-            C => C.Harm(Elements.fire, 4.d6())
+            B => B.HarmEntity(Elements.fire, 8.d6()),
+            U => U.HarmEntity(Elements.fire, 6.d6()),
+            C => C.HarmEntity(Elements.fire, 4.d6())
           );
           Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.fire, 14.d6() + 14);
+          A.HarmEntity(Elements.fire, 14.d6() + 14);
           A.ConsumeResistance(Elements.fire);
         });
       });
@@ -11481,15 +11481,15 @@ namespace Pathos
           Use.SetCast().Explosion(Explosions.frosty, 2.d6() + 2);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.cold, 8.d6()),
-            U => U.Harm(Elements.cold, 6.d6()),
-            C => C.Harm(Elements.cold, 4.d6())
+            B => B.HarmEntity(Elements.cold, 8.d6()),
+            U => U.HarmEntity(Elements.cold, 6.d6()),
+            C => C.HarmEntity(Elements.cold, 4.d6())
           );
           Use.Apply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.freeze, 1.d50() + 50));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.cold, 14.d6() + 14);
+          A.HarmEntity(Elements.cold, 14.d6() + 14);
           A.ConsumeResistance(Elements.cold);
         });
       });
@@ -11519,17 +11519,17 @@ namespace Pathos
           (
             B =>
             {
-              B.Heal(5.d2() + 5, Modifier.Zero);
+              B.HealEntity(5.d2() + 5, Modifier.Zero);
               B.RemoveTransient(Properties.blindness, Properties.deafness);
             },
             U =>
             {
-              U.Heal(5.d2(), Modifier.Zero);
+              U.HealEntity(5.d2(), Modifier.Zero);
               U.RemoveTransient(Properties.blindness, Properties.deafness);
             },
             C =>
             {
-              C.Heal(Dice.Five, Modifier.Zero);
+              C.HealEntity(Dice.Five, Modifier.Zero);
             }
           );
         });
@@ -11537,9 +11537,9 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.Heal(5.d4() + 20, Modifier.Plus2),
-            U => U.Heal(5.d4() + 10, Modifier.Plus1),
-            C => C.Heal(5.d4(), Modifier.Zero)
+            B => B.HealEntity(5.d4() + 20, Modifier.Plus2),
+            U => U.HealEntity(5.d4() + 10, Modifier.Plus1),
+            C => C.HealEntity(5.d4(), Modifier.Zero)
           );
         });
       });
@@ -11599,15 +11599,15 @@ namespace Pathos
              .SetAudibility(10);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.shock, 7.d6()),
-            U => U.Harm(Elements.shock, 6.d6()),
-            C => C.Harm(Elements.shock, 5.d6())
+            B => B.HarmEntity(Elements.shock, 7.d6()),
+            U => U.HarmEntity(Elements.shock, 6.d6()),
+            C => C.HarmEntity(Elements.shock, 5.d6())
           );
           Use.Apply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.blindness, 1.d4() + 1));
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.shock, 14.d6() + 14);
+          A.HarmEntity(Elements.shock, 14.d6() + 14);
           A.ConsumeResistance(Elements.shock);
         });
       });
@@ -11667,14 +11667,14 @@ namespace Pathos
              .SetAudibility(10);
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.magical, 2.d6() + 1),
-            U => U.Harm(Elements.magical, 2.d6()),
-            C => C.Harm(Elements.magical, 2.d6() - 1)
+            B => B.HarmEntity(Elements.magical, 2.d6() + 1),
+            U => U.HarmEntity(Elements.magical, 2.d6()),
+            C => C.HarmEntity(Elements.magical, 2.d6() - 1)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.magical, 14.d6() + 14);
+          A.HarmEntity(Elements.magical, 14.d6() + 14);
           A.ConsumeResistance(Elements.magical);
         });
       });
@@ -11810,7 +11810,7 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.psychic, 2.d6() + 2)
              .SetAudibility(5);
-          Use.Apply.Punish(Codex.Punishments.List.ToArray());
+          Use.Apply.PunishEntity(Codex.Punishments.List.ToArray());
           // TODO: BUC differences?
           //Use.Apply.WithSourceSanctity
           //(
@@ -11821,7 +11821,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Punish(Codex.Punishments.gluttony);
+          A.PunishEntity(Codex.Punishments.gluttony);
         });
       });
 
@@ -11876,7 +11876,7 @@ namespace Pathos
         {
           Use.SetCast().Beam(Beams.sleep, 1.d4() + 4)
              .SetAudibility(0);
-          Use.Apply.Harm(Elements.sleep, Dice.Zero); // hatching eggs.
+          Use.Apply.HarmEntity(Elements.sleep, Dice.Zero); // hatching eggs.
           Use.Apply.WithSourceSanctity
           (
             B => B.ApplyTransient(Properties.sleeping, 20.d6()),
@@ -12010,14 +12010,14 @@ namespace Pathos
              .SetPenetrates();
           Use.Apply.WithSourceSanctity
           (
-            B => B.Harm(Elements.force, 3.d6() + 3),
-            U => U.Harm(Elements.force, 2.d6() + 2),
-            C => C.Harm(Elements.force, 1.d6() + 1)
+            B => B.HarmEntity(Elements.force, 3.d6() + 3),
+            U => U.HarmEntity(Elements.force, 2.d6() + 2),
+            C => C.HarmEntity(Elements.force, 1.d6() + 1)
           );
         });
         I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(10), Sonics.wand, A =>
         {
-          A.Harm(Elements.force, 6.d6() + 6);
+          A.HarmEntity(Elements.force, 6.d6() + 6);
         });
       });
 
@@ -12817,10 +12817,10 @@ namespace Pathos
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.dart, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d2(), D =>
         {
-          D.Harm(Elements.poison, 1.d3());
+          D.HarmEntity(Elements.poison, 1.d3());
           D.WhenChance(Chance.OneIn10, T =>
           {
-            T.Afflict(Codex.Afflictions.poisoning);
+            T.AfflictEntity(Codex.Afflictions.poisoning);
           });
         });
       });
@@ -14486,7 +14486,7 @@ namespace Pathos
         var W = I.SetOneHandedWeapon(Skills.firearms, null, Elements.physical, DamageType.Bludgeon, Dice.Zero);
         W.AddDetonation(Explosions.fiery, A =>
         {
-          A.Harm(Elements.force, 1.d60());
+          A.HarmEntity(Elements.force, 1.d60());
           A.ApplyTransient(Properties.stunned, 1.d12() + 4);
         });
       });
@@ -14533,7 +14533,7 @@ namespace Pathos
         var W = I.SetOneHandedWeapon(Skills.firearms, Sonics.throw_grenade, Elements.physical, DamageType.Pierce, Dice.Zero);
         W.AddDetonation(Explosions.fiery, A =>
         {
-          A.Harm(Elements.physical, 1.d45());
+          A.HarmEntity(Elements.physical, 1.d45());
           A.ApplyTransient(Properties.stunned, 5.d6() + 10);
         });
       });
@@ -14558,7 +14558,7 @@ namespace Pathos
         W.AddDetonation(Explosions.acid, A =>
         {
           A.ApplyTransient(Properties.paralysis, 10.d12() + 20);
-          A.Harm(Elements.acid, 1.d20());
+          A.HarmEntity(Elements.acid, 1.d20());
         });
       });
 
@@ -14581,7 +14581,7 @@ namespace Pathos
         W.AddDetonation(Explosions.fiery, A =>
         {
           A.ApplyTransient(Properties.stunned, 1.d6() + 2);
-          A.Harm(Elements.force, 1.d100());
+          A.HarmEntity(Elements.force, 1.d100());
           A.CreateDevice(Codex.Devices.pit, Destruction: true);
         });
         //I.AddEat(10, Delay.FromTurns(10), Sonics.ammo); // plastic, no one can eat it.

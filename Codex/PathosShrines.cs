@@ -122,8 +122,8 @@ namespace Pathos
           B.Description = "Heal damage and recover mana for yourself and your steed if mounted.";
           B.Cost = 100;
           B.SetCast().Strike(Strikes.spirit, Dice.One);
-          B.Apply.Heal(Dice.Fixed(100), Modifier.Zero);
-          B.Apply.Energise(Dice.Fixed(100), Modifier.Zero);
+          B.Apply.HealEntity(Dice.Fixed(100), Modifier.Zero);
+          B.Apply.EnergiseEntity(Dice.Fixed(100), Modifier.Zero);
         });
 
         S.AddBoon("remove curse", B =>
@@ -159,7 +159,7 @@ namespace Pathos
           B.Description = "Return a corpse back to life.";
           B.Cost = 750;
           B.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-          B.Apply.RaiseDead(Percent: 50, Corrupt: null, LoyalOnly: false);
+          B.Apply.RaiseDeadEntity(Percent: 50, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: false);
         });
       });
 
@@ -194,7 +194,7 @@ namespace Pathos
           B.Description = "Reanimate a corpse as a loyal revenant.";
           B.Cost = 500;
           B.SetCast().FilterItem(Items.animal_corpse, Items.vegetable_corpse);
-          B.Apply.AnimateRevenants(Corrupt: null);
+          B.Apply.AnimateRevenant(CorruptProperty: null, CorruptDice: 6.d10());
         });
 
         S.AddBoon("undead army", B =>
@@ -371,7 +371,7 @@ namespace Pathos
         {
           B.Description = "Learn the name of one random unknown item.";
           B.Cost = 100;
-          B.Apply.Enlightenment(null);
+          B.Apply.DiscoverItem(null);
         });
 
         S.AddBoon("cancel", B =>

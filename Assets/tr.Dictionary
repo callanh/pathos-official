@@ -957,49 +957,22 @@ DietName,omnivore,hepçil
 DietName,organivore,organikobur
 DietName,xylophagy,ağaçobur
 EffectProperty,disenchant,efsunu boz
-EffectProperty,expansive,genişleyici
-EffectProperty,fixed,
-EffectProperty,loyal only,
-EffectProperty,polite,nazik
-EffectProperty,rigid,
 EffectType,blinking,sıçramak
-EffectType,capture,yakala
 EffectType,clone entity,karakteri klonla
 EffectType,convert barrier,duvarı dönüştür
 EffectType,convert gate,kapıyı dönüştür
 EffectType,convert ground,zemini dönüştür
 EffectType,convert volatile,
-EffectType,create nook,kuytu köşe yarat
 EffectType,create volatile,
-EffectType,decapitate,uzuv kaybet
 EffectType,destroy volatile,
-EffectType,disarm,silahsızlaştır
-EffectType,drain life,can em
-EffectType,drain mana,mana em
 EffectType,enchant item,varlığı efsunla
-EffectType,engulf,yut
-EffectType,exchange,değiş
 EffectType,extinguish volatile,
-EffectType,grapple,tut
 EffectType,hatch,kabuğu kır
 EffectType,identify,tanımla
-EffectType,incarcerate,hapset
-EffectType,karma,karma
-EffectType,liberate,özgürleştir
-EffectType,mobilise block,
-EffectType,opening,açıklık
 EffectType,place curse,lanet yerleştir
-EffectType,raise dead,ölüyü canlandırma
-EffectType,release,serbest bırak
 EffectType,remove curse,lanet kaldır
-EffectType,restock,tekrar doldur
-EffectType,restore ability,kabiliyeti geri kazan
 EffectType,sanctify,kutsallaştır
-EffectType,spawn entity,karakter yarat
-EffectType,teleport entity,karakteri ışınla
-EffectType,teleport item away,ışınlanarak çık
 EffectType,tinning,kalaylama
-EffectType,transition,değişme
 EffectType,visit shop,dükkana git
 EffectType,visit shrine,tapınağa git
 EffectType,visit zoo,habitata git
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
 FormatText,convert {FeatureName} into {DeviceName},möble dönüştür {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},{AttributeName}'i zayıflat
 FormatText,decrease {AttributeName} by {AdjustmentDice},
 FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease karma by {ChangeDice},karma azalt {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},
 FormatText,diminish {ManaDice},
+FormatText,drain life {Dice},can em {Dice}
+FormatText,drain mana {Dice},mana em {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},bırak {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},
 FormatText,Equip {CharacterName},{CharacterName} 'i kuşan
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},
 FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase karma by {ChangeDice},karma artır {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},
 FormatText,learn spell {SpellName},büyü öğren {SpellName}
 FormatText,level {Depth},seviye {Depth}
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},{GATENAME} Kilitli
 FormatText,lose {PropertyName} talent,yetenek kaybet {PropertyName}
 FormatText,not {EffectProperty},olmamış {EffectProperty}
 FormatText,polymorph into {EntityNames},şekil değiştir {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},ölüyü canlandırma {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},menzil {Dice}
 FormatText,RANKED #{RankNumber},#{RankNumber} DERECESİNE ULAŞTIN
 FormatText,remove transient {PropertyNames},geçici etkileri kaldır {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,GÖRÜLEMEZ
 LiteralText,CAN'T SLIDE,KAYILAMAZ
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,FIRLATILAMAZ
+LiteralText,capture entity,yakala
 LiteralText,carried,taşındı
 LiteralText,Cast,Kullan
 LiteralText,CAST SPELLS,büyü kullan
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,İLETİŞİM
 LiteralText,Continue,Devam et
 LiteralText,CONTINUE,DEVAM ET
 LiteralText,CONTROLLED,KONTROL ALTINDA
-LiteralText,convert,
 LiteralText,convert block to barrier,kayayı dönüştür
 LiteralText,conveyance,nakil
 LiteralText,COPY,KOPYALA
@@ -3179,6 +3158,7 @@ LiteralText,create golem,golem oluştur
 LiteralText,CREATE GROUND,YER OLUŞTUR
 LiteralText,CREATE HORDE,ORDU OLUŞTUR
 LiteralText,CREATE ITEM,EŞYA OLUŞTUR
+LiteralText,create nook,kuytu köşe yarat
 LiteralText,CREATE PLATFORM,KÖPRÜ OLUŞTUR
 LiteralText,CREATE SHOP,DÜKKAN OLUŞTUR
 LiteralText,CREATE SHRINE,TAPINAK OLUŞTUR
@@ -3194,6 +3174,7 @@ LiteralText,dark,karanlık
 LiteralText,DEAD END,ÇIKMAZ
 LiteralText,death,ölüm
 LiteralText,deathray,ölüm ışını
+LiteralText,decapitate entity,uzuv kaybet
 LiteralText,decapitation,uzuv kaybı
 LiteralText,DECEASED,ÖLÜ
 LiteralText,decelerated real-time,gerçek zamana yavaşlatıldı
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,online servisleri kapat
 LiteralText,Disable pitch shifting,tizlik rastgeleyiciyi kapat
 LiteralText,Disable spacebar real-time toggle,gerçek zamanlı ve sıra tabanlı değişim tuşunu kapat
 LiteralText,Disable swipe gestures,
+LiteralText,disarm entity,silahsızlaştır
 LiteralText,DISCONNECT,BAĞLANTINI KOPART
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,aydınlat
@@ -3268,6 +3250,7 @@ LiteralText,encounters,karşılaştı
 LiteralText,encumbrance thresholds,Yük engeli seviyeleri
 LiteralText,End this adventure,Bu macerayı sonlandir
 LiteralText,ended,bitmiş
+LiteralText,engulf entity,yut
 LiteralText,ENTER QUANTITY,MİKTARI GİR
 LiteralText,ENTITIES,VARLIKLAR
 LiteralText,entity,varlık
@@ -3283,6 +3266,7 @@ LiteralText,evolution,evrim
 LiteralText,Examine which object?,Hangi eşyayı incele?
 LiteralText,except replica,kopya dışında
 LiteralText,EXCHANGE,TAKAS ET
+LiteralText,exchange entity,değiş
 LiteralText,EXIT PATHOS,PATHOS'TAN ÇIK
 LiteralText,EXPAND,GENİŞLE
 LiteralText,EXPEL,TÜKÜR
@@ -3304,6 +3288,7 @@ LiteralText,FEED,BESLE
 LiteralText,FEEDBACK,GERİ BİLDİRİ
 LiteralText,Feedback information,
 LiteralText,FILES,DOSYALAR
+LiteralText,fixed,
 LiteralText,fixed range,sabit mezil
 LiteralText,FIZZLE,KÖPÜRME
 LiteralText,Floor,Zemin
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,GLİF
 LiteralText,gold,altın
 LiteralText,GOLD,ALTIN
 LiteralText,GRAPHICS,GÖRÜNTÜ
+LiteralText,grapple entity,tut
 LiteralText,GRAPPLED,TUTULDU
 LiteralText,greed,aç gözlülük
 LiteralText,grimoire,büyü kitabı
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,İMKANSIZ
 LiteralText,in both hands,iki elle
+LiteralText,incarcerate entity,hapset
 LiteralText,incarceration,hapsetme
 LiteralText,INCREASE,ARTIR
 LiteralText,INDEX,INDEKS
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
 LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
-LiteralText,into,
 LiteralText,Inventory,
 LiteralText,INVENTORY,ENVANTER
 LiteralText,ITEM,
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,SEVİYE TAHTASI
 LiteralText,level//rank,seviye
+LiteralText,liberate entity,özgürleştir
 LiteralText,lies,yalanlar
 LiteralText,life,hayat
 LiteralText,LIFE,HAYAT
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,SEVİYE KAYBET
 LiteralText,lose nutrition,besin kaybet
 LiteralText,lose skill,
 LiteralText,LOW MANA,DÜŞÜK MANA
+LiteralText,loyal only,
 LiteralText,MAIN WIELD,ANA SİLAH OLARAK KULLAN
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3438,6 +3426,7 @@ LiteralText,MENU,
 LiteralText,mercenary,paralı asker
 LiteralText,MIMIC,MİMİK
 LiteralText,mimicking,
+LiteralText,mobilise block,
 LiteralText,modifier,düzenleyici
 LiteralText,MOUNT,BİN
 LiteralText,Mount which direction?,
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,TEKER TEKER
 LiteralText,oOo,oOo
 LiteralText,OPEN,AÇ
 LiteralText,OPENED,AÇIK
+LiteralText,opening,açıklık
 LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,KAYIT OL
 LiteralText,REGISTER PLAYER HANDLE,LAKABINI KAYDET
 LiteralText,reinforced,
 LiteralText,REINFORCED,GÜÇLENDİR
+LiteralText,release entity,serbest bırak
 LiteralText,remove all transients,geçici olan her şeyi kaldırır
 LiteralText,REMOVE CURSE,LANETİ BOZ
 LiteralText,remove random resistance,rastgele direnci kaldır
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,DAYANDI
 LiteralText,Rest,
 LiteralText,Rest how many turns?,
 LiteralText,restarting to update,güncellemek için tekrar başlatılıyor
+LiteralText,restock shop items,tekrar doldur
+LiteralText,restore ability,kabiliyeti geri kazan
 LiteralText,RESTORED,GERİ KAZANILDI
 LiteralText,RESURRECT,TEKRAR CANLANDIR
 LiteralText,Resurrect and continue,Tekrar canlan ve devam et
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
 LiteralText,TELEPORT,IŞINLAN
+LiteralText,teleport entity,karakteri ışınla
+LiteralText,teleport item away,ışınlanarak çık
 LiteralText,Teleport to where?,Nereye ışınlanacaksın?
 LiteralText,TERMINAL,
 LiteralText,terrain,arazi
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,ALIŞVERİŞ
 LiteralText,transform to,
 LiteralText,transients,geçİcİler
 LiteralText,TRANSIENTS,GEÇİCİLER
+LiteralText,transition,değişme
 LiteralText,TRANSLATIONS,ÇEVİRİLER
 LiteralText,TRAP,TUZAK
 LiteralText,trap?,

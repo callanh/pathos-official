@@ -957,49 +957,22 @@ DietName,omnivore,всеядный
 DietName,organivore,биоядный
 DietName,xylophagy,древоядный
 EffectProperty,disenchant,расколдовывает
-EffectProperty,expansive,большого
-EffectProperty,fixed,фиксированный
-EffectProperty,loyal only,только лояльный
-EffectProperty,polite,дружелюбно
-EffectProperty,rigid,неподвижный
 EffectType,blinking,мерцание
-EffectType,capture,ловит
 EffectType,clone entity,клонирует персонажа
 EffectType,convert barrier,переводит стену
 EffectType,convert gate,переводит дверь
 EffectType,convert ground,переводит пол в
 EffectType,convert volatile,переводит барьер
-EffectType,create nook,создаёт тайную
 EffectType,create volatile,создаёт барьер
-EffectType,decapitate,отрубает голову
 EffectType,destroy volatile,убирает барьер
-EffectType,disarm,обезоруживает
-EffectType,drain life,вытягивает жизнь
-EffectType,drain mana,вытягивает ману
 EffectType,enchant item,зачаровывает ценность
-EffectType,engulf,проглатывает
-EffectType,exchange,заменяет
 EffectType,extinguish volatile,убрать барьер
-EffectType,grapple,хватает
 EffectType,hatch,вылупляется
 EffectType,identify,опознаёт
-EffectType,incarcerate,заточает
-EffectType,karma,карма
-EffectType,liberate,освобождает
-EffectType,mobilise block,призывает валун
-EffectType,opening,открытие
 EffectType,place curse,накладывает проклятие
-EffectType,raise dead,оживляет
-EffectType,release,выпускает
 EffectType,remove curse,снимает проклятие
-EffectType,restock,пополняет запасы
-EffectType,restore ability,восстанавливает значение характеристики
 EffectType,sanctify,наделяет
-EffectType,spawn entity,порождает персонажа
-EffectType,teleport entity,телепортирует персонажа
-EffectType,teleport item away,телепортируется
 EffectType,tinning,консервирует
-EffectType,transition,переход
 EffectType,visit shop,посещение магазина
 EffectType,visit shrine,посещение храма
 EffectType,visit zoo,посещение зоопарка
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,предел {Percent}%
 FormatText,Cast {SpellName} on which item?,Наложить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Наложить {SpellName} в каком направлении?
 FormatText,convert {FeatureName} into {DeviceName},переводит приспособление {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},уменьшение {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},уменьшение всех характеристик на {AdjustmentDice}
+FormatText,decrease karma by {ChangeDice},карма уменьшение {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},уменьшение одной характеристики на {AdjustmentDice}
 FormatText,diminish {ManaDice},уменьшает энергию {ManaDice}
+FormatText,drain life {Dice},вытягивает жизнь {Dice}
+FormatText,drain mana {Dice},вытягивает ману {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},выкинуть {BlockName} {ElementName} {DamageDice}
 FormatText,energise {ManaDice},питает энергией {ManaDice}
 FormatText,Equip {CharacterName},Снарядить {CharacterName}
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},наносит урон {ElementName}
 FormatText,heal {LifeDice},лечение {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},увеличение {AttributeName} на {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},увеличение всех характеристик на {AdjustmentDice}
+FormatText,increase karma by {ChangeDice},карма увеличение {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},увеличение одной характеристики на {AdjustmentDice}
 FormatText,learn spell {SpellName},учит заклинание {SpellName}
 FormatText,level {Depth},уровень {Depth}
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},ЗАПЕРТЫЙ {GATENAME}
 FormatText,lose {PropertyName} talent,теряет талант {PropertyName}
 FormatText,not {EffectProperty},не {EffectProperty}
 FormatText,polymorph into {EntityNames},превращает {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},оживляет {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
 FormatText,remove transient {PropertyNames},снимает временное {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕТ ВИДЕТЬ
 LiteralText,CAN'T SLIDE,НЕ МОЖЕТ ВЫСКОЛЬЗНУТЬ
 LiteralText,CAN'T TELEKINESIS,НЕ МОЖЕТ ПРИМЕНИТЬ ТЕЛЕКИНЕЗ
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
+LiteralText,capture entity,ловит
 LiteralText,carried,несомое
 LiteralText,Cast,Заклинания
 LiteralText,CAST SPELLS,НАЛОЖИТЬ ЗАКЛИНАНИЯ
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,СВЯЗЬ
 LiteralText,Continue,продолжить
 LiteralText,CONTINUE,ПРОДОЛЖИТЬ
 LiteralText,CONTROLLED,КОНТРОЛЛИРУЕМЫЙ
-LiteralText,convert,
 LiteralText,convert block to barrier,превращает валун
 LiteralText,conveyance,поедание
 LiteralText,COPY,КОПИРОВАТЬ
@@ -3179,6 +3158,7 @@ LiteralText,create golem,создаёт голема
 LiteralText,CREATE GROUND,СОЗДАТЬ ПОЛ
 LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
 LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
+LiteralText,create nook,создаёт тайную
 LiteralText,CREATE PLATFORM,СОЗДАТЬ МОСТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
 LiteralText,CREATE SHRINE,СОЗДАТЬ ХРАМ
@@ -3194,6 +3174,7 @@ LiteralText,dark,тьма
 LiteralText,DEAD END,ТУПИК
 LiteralText,death,смерть
 LiteralText,deathray,смертельный луч
+LiteralText,decapitate entity,отрубает голову
 LiteralText,decapitation,обезглавливание
 LiteralText,DECEASED,УМЕРШИЙ
 LiteralText,decelerated real-time,медленное реальное время
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,Отключить онлайн-сервис
 LiteralText,Disable pitch shifting,Отключить изменение тона звука
 LiteralText,Disable spacebar real-time toggle,Отключить клавишу пробел для реального времени
 LiteralText,Disable swipe gestures,Отключить жесты смахивания
+LiteralText,disarm entity,обезоруживает
 LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,discover item,узнаёт
@@ -3268,6 +3250,7 @@ LiteralText,encounters,встречи
 LiteralText,encumbrance thresholds,пороги обременения
 LiteralText,End this adventure,Завершить приключение
 LiteralText,ended,закончен
+LiteralText,engulf entity,проглатывает
 LiteralText,ENTER QUANTITY,ВВЕДИТЕ ЧИСЛО
 LiteralText,ENTITIES,СУЩЕСТВА
 LiteralText,entity,существо
@@ -3283,6 +3266,7 @@ LiteralText,evolution,развитие
 LiteralText,Examine which object?,Какой предмет осмотреть?
 LiteralText,except replica,если не копия
 LiteralText,EXCHANGE,ОБМЕН
+LiteralText,exchange entity,заменяет
 LiteralText,EXIT PATHOS,ВЫЙТИ ИЗ PATHOS
 LiteralText,EXPAND,РАСШИРИТЬ
 LiteralText,EXPEL,ВЫГНАТЬ
@@ -3304,6 +3288,7 @@ LiteralText,FEED,КОРМИТЬ
 LiteralText,FEEDBACK,ОБРАТНАЯ СВЯЗЬ
 LiteralText,Feedback information,Информация для обратной связи
 LiteralText,FILES,ФАЙЛЫ
+LiteralText,fixed,фиксированный
 LiteralText,fixed range,фиксированное расстояние
 LiteralText,FIZZLE,ФИАСКО
 LiteralText,Floor,Пол
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,ТЕКСТУРЫ
 LiteralText,gold,золото
 LiteralText,GOLD,ЗОЛОТО
 LiteralText,GRAPHICS,ГРАФИКА
+LiteralText,grapple entity,хватает
 LiteralText,GRAPPLED,БОРОТЬСЯ
 LiteralText,greed,нажива
 LiteralText,grimoire,гримуар
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,ИМПОРТ
 LiteralText,Import a file,Импорт файла
 LiteralText,IMPOSSIBLE,НЕВОЗМОЖНО
 LiteralText,in both hands,в обе руки
+LiteralText,incarcerate entity,заточает
 LiteralText,incarceration,заточение
 LiteralText,INCREASE,УВЕЛИЧИТЬ
 LiteralText,INDEX,УКАЗАТЕЛЬ
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
 LiteralText,instruct each character,приказы отдельным персонажам
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
-LiteralText,into,
 LiteralText,Inventory,Инвентарь
 LiteralText,INVENTORY,ИНВЕНТАРЬ
 LiteralText,ITEM,ПРЕДМЕТ
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,учить заклинания
 LiteralText,LEFT RING,НА ЛЕВУЮ РУКУ
 LiteralText,LEVEL CHART,ТАБЛИЦА УРОВНЕЙ
 LiteralText,level//rank,уровень
+LiteralText,liberate entity,освобождает
 LiteralText,lies,враньё
 LiteralText,life,здоровье
 LiteralText,LIFE,ЗДОРОВЬЕ
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,ПОНИЗИТЬ УРОВЕНЬ
 LiteralText,lose nutrition,понизить сытость
 LiteralText,lose skill,понижение навыка
 LiteralText,LOW MANA,МАЛО МАНЫ
+LiteralText,loyal only,только лояльный
 LiteralText,MAIN WIELD,ОСНОВНОЕ ОРУЖИЕ
 LiteralText,mana,мана
 LiteralText,MANA,МАНА
@@ -3438,6 +3426,7 @@ LiteralText,MENU,МЕНЮ
 LiteralText,mercenary,наёмник
 LiteralText,MIMIC,МИМИК
 LiteralText,mimicking,подражание
+LiteralText,mobilise block,призывает валун
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,В каком направлении оседлать?
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,ОДИН ЗА РАЗ
 LiteralText,oOo,oOo
 LiteralText,OPEN,ОТКРЫТЬ
 LiteralText,OPENED,ОТКРЫТЫЙ
+LiteralText,opening,открытие
 LiteralText,OR,ИЛИ
 LiteralText,ORIGINAL,ОРИГИНАЛЬНЫЙ
 LiteralText,OVERRIDE,ПОЛЬЗОВАТЕЛЬСКИЙ
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,РЕГИСТРАЦИЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕГИСТРАЦИЯ ИГРОКА
 LiteralText,reinforced,укреплённая
 LiteralText,REINFORCED,УКРЕПЛЁННАЯ
+LiteralText,release entity,выпускает
 LiteralText,remove all transients,снимает все временные эффекты
 LiteralText,REMOVE CURSE,СНЯТЬ ПРОКЛЯТИЕ
 LiteralText,remove random resistance,удалить случайную сопротивляемость
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,СОПРОТИВЛЯЕТСЯ
 LiteralText,Rest,Отдых
 LiteralText,Rest how many turns?,Отдыхать сколько ходов?
 LiteralText,restarting to update,перезагрузка для обновления
+LiteralText,restock shop items,пополняет запасы
+LiteralText,restore ability,восстанавливает значение характеристики
 LiteralText,RESTORED,ВОССТАНОВИЛСЯ
 LiteralText,RESURRECT,ВОСКРЕСИТЬ
 LiteralText,Resurrect and continue,Воскресить и продолжить
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,ТЕЛЕКИНЕЗ
 LiteralText,Telekinesis which direction?,В каком направлении применить телекинез?
 LiteralText,Telekinesis which object?,На какой предмет применить телекинез?
 LiteralText,TELEPORT,ТЕЛЕПОРТ
+LiteralText,teleport entity,телепортирует персонажа
+LiteralText,teleport item away,телепортируется
 LiteralText,Teleport to where?,Телепортироваться куда?
 LiteralText,TERMINAL,БЕЗ ПРОВАЛОВ
 LiteralText,terrain,земля
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,ТОРГОВЛЯ
 LiteralText,transform to,превращение в
 LiteralText,transients,временные эффекты
 LiteralText,TRANSIENTS,ВРЕМЕННЫЕ ЭФФЕКТЫ
+LiteralText,transition,переход
 LiteralText,TRANSLATIONS,ПЕРЕВОДЫ
 LiteralText,TRAP,ЛОВУШКА
 LiteralText,trap?,ловушка?

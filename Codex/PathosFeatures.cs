@@ -56,7 +56,7 @@ namespace Pathos
         F.DropApply.DivineItem();
 
         F.DestroyStrike = Strikes.holy;
-        F.DestroyApply.Harm(Elements.shock, 6.d6() + 6);
+        F.DestroyApply.HarmEntity(Elements.shock, 6.d6() + 6);
         F.DestroyApply.BreakFeature(altar);
         F.DestroyApply.CreateSpecificHorde(Dice.One, Hordes.jackal);
         F.DestroyApply.CreateSpecificHorde(Dice.One, Hordes.hell_hound);
@@ -125,7 +125,7 @@ namespace Pathos
               Table.Add(20, A => A.ApplyTransient(Properties.paralysis, 2.d10() + 10));
               Table.Add(20, A => A.ApplyTransient(Properties.hallucination, 2.d10() + 10));
               Table.Add(5, A => A.ApplyTransient(Properties.narcolepsy, 2.d200() + 200));
-              Table.Add(5, A => A.Afflict(Codex.Afflictions.nits));
+              Table.Add(5, A => A.AfflictEntity(Codex.Afflictions.nits));
             });
             C.WhenChance(Chance.OneIn4, T => T.TeleportEntity(Properties.teleportation));
           }
@@ -139,10 +139,10 @@ namespace Pathos
         F.Weight = Weight.FromUnits(200000);
 
         F.DestroyExplosion = Codex.Explosions.watery;
-        F.DestroyApply.Harm(Elements.water, Dice.Zero);
+        F.DestroyApply.HarmEntity(Elements.water, Dice.Zero);
         F.DestroyApply.BreakFeature(fountain);
 
-        F.DropApply.Harm(Elements.water, Dice.Zero);
+        F.DropApply.HarmEntity(Elements.water, Dice.Zero);
         F.DropApply.ConvertItem(Stocks.potion, WholeStack: true, Items.potion_of_water);
         F.DropApply.ConvertItem(Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper);
         F.DropApply.ConvertItem(Stocks.book, WholeStack: true, Items.book_of_blank_paper);
@@ -158,7 +158,7 @@ namespace Pathos
         var DrinkUse = F.AddUse(Codex.Motions.drink, null, Delay.FromTurns(20), Sonics.water_fountain, Audibility: 2);
         DrinkUse.Apply.WithSourceSanctity
         (
-          B => B.Heal(1.d4(), Modifier.Zero),
+          B => B.HealEntity(1.d4(), Modifier.Zero),
           U => U.GainNutrition(Dice.Fixed(10)),
           C => C.LoseNutrition(Dice.Fixed(10))
         );
@@ -203,7 +203,7 @@ namespace Pathos
 
         var AnointUse = F.AddUse(Codex.Motions.anoint, null, Delay.FromTurns(20), Sonics.water_splash, Audibility: 2);
         AnointUse.SetCast().FilterAnyItem().FilterSanctity(Sanctities.List.ToArray()); // include all BUC, but don't allow items that do not have sanctity like coins.
-        AnointUse.Apply.Harm(Elements.water, Dice.Zero);
+        AnointUse.Apply.HarmEntity(Elements.water, Dice.Zero);
         AnointUse.Apply.WithSourceSanctity
         (
           B => B.Sanctify(Item: null, Sanctities.Blessed),
@@ -269,7 +269,7 @@ namespace Pathos
           Table.Add(5, A => A.PlaceCurse(1.d4() + 1, Sanctities.Cursed));
           Table.Add(5, A => A.ApplyTransient(Properties.hunger, 10.d100() + 100));
           Table.Add(5, A => A.ApplyTransient(Properties.sickness, 10.d100() + 100));
-          Table.Add(5, A => A.Punish(Codex.Punishments.malignant_aura));
+          Table.Add(5, A => A.PunishEntity(Codex.Punishments.malignant_aura));
 
           // 5% dangerous.
           Table.Add(1, A => A.CreateEntity(Dice.One, Kinds.vampire));
@@ -287,7 +287,7 @@ namespace Pathos
         F.Weight = Weight.FromUnits(10000);
 
         F.DestroyExplosion = Codex.Explosions.fiery;
-        F.DestroyApply.Harm(Elements.fire, Dice.Zero);
+        F.DestroyApply.HarmEntity(Elements.fire, Dice.Zero);
         F.DestroyApply.ConvertFeatureToDevice(pentagram, Devices.fire_trap);
 
         var ChantUse = F.AddUse(Codex.Motions.chant, null, Delay.FromTurns(20), Sonics.chant, Audibility: 5);
@@ -297,15 +297,15 @@ namespace Pathos
         (
           B =>
           {
-            B.Energise(Dice.Fixed(10), Modifier.Zero);
+            B.EnergiseEntity(Dice.Fixed(10), Modifier.Zero);
           },
           U =>
           {
-            U.Energise(Dice.Fixed(5), Modifier.Zero);
+            U.EnergiseEntity(Dice.Fixed(5), Modifier.Zero);
           },
           C =>
           {
-            C.Diminish(Dice.Fixed(10), Modifier.Zero);
+            C.DiminishEntity(Dice.Fixed(10), Modifier.Zero);
           }
         );
         ChantUse.Apply.WhenProbability(Table =>
@@ -364,10 +364,10 @@ namespace Pathos
           Table.Add(2, A => A.Nothing());
           Table.Add(1, A => A.DecreaseOneAbility(1.d4()));
           Table.Add(1, A => A.IncreaseOneAbility(Dice.One));
-          Table.Add(1, A => A.Harm(Elements.shock, 1.d30()));
+          Table.Add(1, A => A.HarmEntity(Elements.shock, 1.d30()));
           Table.Add(1, A =>
           {
-            A.Heal(8.d8(), Modifier.FromRank(4));
+            A.HealEntity(8.d8(), Modifier.FromRank(4));
             A.RemoveTransient(Properties.sickness, Properties.blindness);
           });
           Table.Add(1, A => A.DestroyOwnedItem(5.d1000(), StockArray: null, SanctityArray: null, new Material[] { Materials.gold }));
@@ -386,10 +386,10 @@ namespace Pathos
           Table.Add(1, A => A.Identify(All: true, Sanctity: null)); // identify all items in inventory.
           Table.Add(1, A => A.ApplyTransient(Properties.stunned, 1.d7() + 16));
           Table.Add(1, A => A.GainSkill(RandomPoints: false, Codex.Skills.heavy_armour));
-          Table.Add(1, A => A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: null));
+          Table.Add(1, A => A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero));
           Table.Add(1, A => A.EnchantUp(Dice.One)); // enchant a random item.
-          Table.Add(1, A => A.Energise(Dice.Zero, Modifier.FromRank(4))); // increase maximum mana.
-          Table.Add(1, A => A.Heal(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.
+          Table.Add(1, A => A.EnergiseEntity(Dice.Zero, Modifier.FromRank(4))); // increase maximum mana.
+          Table.Add(1, A => A.HealEntity(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.
           //Table.Add(1, A => A.CloneSourceCharacter(Dice.One)); // TODO: hostile and replica equipment.
         });
         SitUse.Apply.WhenChance(Chance.OneIn2, A => A.ConvertFeatureToDevice(throne, Devices.trapdoor));
@@ -419,17 +419,17 @@ namespace Pathos
         });
         /*03*/Workbench.AddAccident(Codex.Explosions.watery, A =>
         {
-          A.Harm(Elements.water, Dice.One);
+          A.HarmEntity(Elements.water, Dice.One);
           A.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water));
           A.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper));
           A.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.book, WholeStack: true, Items.book_of_blank_paper));
         });
-        /*04*/Workbench.AddAccident(Codex.Explosions.magical, A => A.Harm(Elements.magical, 2.d6() + 2));
-        /*05*/Workbench.AddAccident(Codex.Explosions.fiery, A => A.Harm(Elements.fire, 3.d6() + 3));
+        /*04*/Workbench.AddAccident(Codex.Explosions.magical, A => A.HarmEntity(Elements.magical, 2.d6() + 2));
+        /*05*/Workbench.AddAccident(Codex.Explosions.fiery, A => A.HarmEntity(Elements.fire, 3.d6() + 3));
         /*06*/Workbench.AddAccident(Codex.Explosions.frosty, A => A.ApplyTransient(Properties.slowness, 3.d100()));
-        /*07*/Workbench.AddAccident(Codex.Explosions.electric, A => A.Harm(Elements.shock, 4.d6() + 4));
+        /*07*/Workbench.AddAccident(Codex.Explosions.electric, A => A.HarmEntity(Elements.shock, 4.d6() + 4));
         /*08*/Workbench.AddAccident(Codex.Explosions.muddy, A => A.ApplyTransient(Properties.hallucination, 3.d100()));
-        /*09*/Workbench.AddAccident(Codex.Explosions.acid, A => A.Harm(Elements.acid, 6.d6() + 6));
+        /*09*/Workbench.AddAccident(Codex.Explosions.acid, A => A.HarmEntity(Elements.acid, 6.d6() + 6));
         /*10*/Workbench.AddAccident(Codex.Explosions.death, A => A.ApplyTransient(Properties.fear, 5.d50()));
 
         /*11*/Workbench.AddAccident(Codex.Explosions.dark, A => 
@@ -445,27 +445,27 @@ namespace Pathos
         });
         /*13*/Workbench.AddAccident(Codex.Explosions.watery, A => 
         {
-          A.Harm(Elements.water, Dice.One);
+          A.HarmEntity(Elements.water, Dice.One);
           A.ApplyTransient(Properties.sleeping, 4.d50());
         });
         /*14*/Workbench.AddAccident(Codex.Explosions.magical, A =>
         {
-          A.Harm(Elements.magical, 4.d6() + 4);
+          A.HarmEntity(Elements.magical, 4.d6() + 4);
           A.TeleportInventoryItem();
         });
         /*15*/Workbench.AddAccident(Codex.Explosions.fiery, A => 
         {
-          A.Harm(Elements.fire, 5.d6() + 5);
+          A.HarmEntity(Elements.fire, 5.d6() + 5);
           A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.paper });
         });
         /*16*/Workbench.AddAccident(Codex.Explosions.frosty, A =>
         {
-          A.Harm(Elements.cold, 6.d6() + 6);
+          A.HarmEntity(Elements.cold, 6.d6() + 6);
           A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.glass });
         });
         /*17*/Workbench.AddAccident(Codex.Explosions.electric, A => 
         {
-          A.Harm(Elements.shock, 7.d6() + 7);
+          A.HarmEntity(Elements.shock, 7.d6() + 7);
           A.TeleportItemAway();
         });
         /*18*/Workbench.AddAccident(Codex.Explosions.muddy, A =>
@@ -475,14 +475,14 @@ namespace Pathos
         });
         /*19*/Workbench.AddAccident(Codex.Explosions.acid, A => 
         {
-          A.Harm(Elements.acid, 8.d6() + 8);
+          A.HarmEntity(Elements.acid, 8.d6() + 8);
           A.DestroyEquippedItem(Dice.One, null, null, null);
         });
         /*20*/Workbench.AddAccident(Codex.Explosions.death, A =>
         {
           A.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
-          A.Punish(Codex.Punishments.List.ToArray());
-          A.Afflict(Codex.Afflictions.List.ToArray());
+          A.PunishEntity(Codex.Punishments.List.ToArray());
+          A.AfflictEntity(Codex.Afflictions.List.ToArray());
           //A.ConvertFixture(F, Devices.entropy_trap); // NOTE: this will convert any nearby fixtures as well.
         });
       });

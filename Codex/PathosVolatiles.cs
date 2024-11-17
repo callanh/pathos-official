@@ -42,7 +42,7 @@ namespace Pathos
 
       blaze = AddVolatile("blaze", Glyphs.blaze, new[] { Glyphs.scorch }, Sonics.burn, S =>
       {
-        S.Apply.Harm(Elements.fire, 2.d6());
+        S.Apply.HarmEntity(Elements.fire, 2.d6());
 
         S.Apply.WhenTargetGround(Grounds.water, T => T.ConvertVolatile(blaze, steam, Locality.Square));
 
@@ -100,13 +100,13 @@ namespace Pathos
 
       electricity = AddVolatile("electricity", Glyphs.electricity, null, Sonics.electricity, S =>
       {
-        S.Apply.Harm(Elements.shock, 4.d4());
+        S.Apply.HarmEntity(Elements.shock, 4.d4());
         S.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.shock, R => R.ApplyTransient(Properties.confusion, 1.d4() + 1)));
       });
 
       freeze = AddVolatile("freeze", Glyphs.freeze, null, Sonics.freeze, S =>
       {
-        S.Apply.Harm(Elements.cold, 3.d4());
+        S.Apply.HarmEntity(Elements.cold, 3.d4());
         S.Apply.WhenChance(Chance.OneIn4, T => T.UnlessTargetResistant(Elements.cold, R => R.ApplyTransient(Properties.slowness, 1.d4() + 1)));
 
         // NOTE: water ground already reacts to cold and turns to ice.
@@ -125,7 +125,7 @@ namespace Pathos
 
       steam = AddVolatile("steam", Glyphs.steam, null, Sonics.gas, S =>
       {
-        S.Apply.Harm(Elements.water, Dice.Zero);
+        S.Apply.HarmEntity(Elements.water, Dice.Zero);
         S.Apply.ApplyTransient(Properties.blindness, 1.d4() + 2);
         S.Apply.WhenChance(Chance.OneIn20, V => V.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper)); // potions & books are 'closed' so won't be directly affected by steam.
 

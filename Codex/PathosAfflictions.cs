@@ -93,7 +93,7 @@ namespace Pathos
         A.Severe = true;
         A.Taint = Inv.Colour.Red.Opacity(0.50F);
         A.SetResistance(Elements.poison);
-        A.SetSymptom(Chance.OneIn2, P => P.Harm(Elements.poison, 1.d3()));
+        A.SetSymptom(Chance.OneIn2, P => P.HarmEntity(Elements.poison, 1.d3()));
         A.RequiresAnatomy(Codex.Anatomies.blood);
       });
 

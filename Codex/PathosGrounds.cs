@@ -54,10 +54,10 @@ namespace Pathos
         G.SetSunken(Inv.Colour.Black.Opacity(0.50F), Element: null, Sonics.thump, Skill: null,
           Enter =>
           {
-            Enter.TransitionDescend(Teleport: null, Fixed: true, AdjustmentDice: Dice.One);
-            Enter.Harm(Elements.physical, 1.d6());
+            Enter.TransitionDescend(SpatialProperty: null, AdjustmentDice: Dice.One, Fixed: true);
+            Enter.HarmEntity(Elements.physical, 1.d6());
           },
-          Drop => Drop.TransitionDescend(Teleport: null, Fixed: true, AdjustmentDice: Dice.One));
+          Drop => Drop.TransitionDescend(SpatialProperty: null, AdjustmentDice: Dice.One, Fixed: true));
       });
 
       dirt = AddGround("dirt", Materials.sand, Glyphs.dirt, G =>
@@ -115,7 +115,7 @@ namespace Pathos
         G.AddReaction(Chance.Always, Elements.water, A => A.CreateVolatile(Volatiles.steam, 1.d100() + 100));
 
         G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, Skills.swimming,
-          Enter => Enter.Harm(Elements.fire, 100.d10()),
+          Enter => Enter.HarmEntity(Elements.fire, 100.d10()),
           Drop => Drop.DestroyTargetItem(CountDice: null)); // TODO: fire resistant items should not be destroyed?
 
         // TODO: cold element _could_ converts lava to obsidian... but is it really cold enough to do that?
@@ -203,7 +203,7 @@ namespace Pathos
         G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact, Skills.swimming,
           Enter =>
           {
-            Enter.Harm(Elements.water, Dice.Zero);
+            Enter.HarmEntity(Elements.water, Dice.Zero);
             Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Codex.Items.potion_of_water));
             Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Codex.Items.scroll_of_blank_paper));
             Enter.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper));

@@ -158,7 +158,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
@@ -167,7 +167,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
@@ -177,10 +177,10 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.Replenish(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
         A.RemoveCurse(Dice.One); // remove one curse.
-        A.RaiseDead(100, Corrupt: null, LoyalOnly: true); // raise one loyal companion from the dead.
+        A.RaiseDeadEntity(100, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: true); // raise one loyal companion from the dead.
       });
 
       Manifest.Searching.Set(Attributes.wisdom, Skills.traps);
@@ -396,7 +396,7 @@ namespace Pathos
       Apply.WhenTargetAnimated
       (
         T => T.WhenChance(Chance.OneIn2, D => D.ApplyTransient(Codex.Properties.stunned, 3.d6())), // animate objects have a 50% chance of being stunned by a 'disarming' effect.
-        E => E.Disarm(Codex.Attributes.dexterity)
+        E => E.DisarmEntity(Codex.Attributes.dexterity)
       );
     }
     internal static void SetCorpse(this EntityEditor Editor, Chance Chance)
@@ -1221,7 +1221,7 @@ namespace Pathos
       {
         foreach (var Effect in Reaction.Apply.Effects)
         {
-          if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
+          if (Effect is HarmEntityEffect && (Effect as HarmEntityEffect).Element == Reaction.Element)
             Record($"{Title} reaction to {Reaction.Element} should not harm with the same element to prevent endless cycles of 'harm'.");
         }
       }

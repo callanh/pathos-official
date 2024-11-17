@@ -59,7 +59,7 @@ namespace Pathos
         D.Strike = Strikes.acid;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.acid, 5.d6());
+        D.TriggerApply.HarmEntity(Elements.acid, 5.d6());
       });
 
       alarm_trap = AddDevice("alarm trap", Difficulty: 5, RepeatDice: 1.d3() + 3, Glyphs.alarm_trap, Sonics.shriek, D =>
@@ -91,7 +91,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.magic;
         D.Material = Materials.iron;
-        D.TriggerApply.Animate(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
+        D.TriggerApply.AnimateItem(ObjectEntity: Entities.animate_object, CorruptProperty: Properties.rage, CorruptDice: 6.d10());
       });
 
       antimagic_field = AddDevice("anti-magic field", Difficulty: 12, RepeatDice: null, Glyphs.antimagic_field, Sonics.magic, D =>
@@ -101,7 +101,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.magic;
         D.Material = Materials.iron;
-        D.TriggerApply.Diminish(1.d10(), Modifier.Zero);
+        D.TriggerApply.DiminishEntity(1.d10(), Modifier.Zero);
         D.TriggerApply.Cancellation(Elements.magical);
       });
 
@@ -133,7 +133,7 @@ namespace Pathos
         D.Material = Materials.iron;
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
         D.UntrapLoot.AddKit(Items.beartrap);
-        D.TriggerApply.Harm(Elements.physical, 1.d3());
+        D.TriggerApply.HarmEntity(Elements.physical, 1.d3());
         D.StuckDice = 1.d4() + 4;
       });
 
@@ -156,7 +156,7 @@ namespace Pathos
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
         D.UntrapLoot.AddKit(Items.caltrops);
         D.TriggerApply.ApplyTransient(Properties.slowness, 4.d6());
-        D.TriggerApply.Harm(Elements.physical, 1.d6());
+        D.TriggerApply.HarmEntity(Elements.physical, 1.d6());
       });
 
       dart_trap = AddDevice("dart trap", Difficulty: 1, RepeatDice: 4.d4(), Glyphs.dart_trap, Sonics.throw_object, D =>
@@ -187,7 +187,7 @@ namespace Pathos
           });
           Table.Add(4, A =>
           {
-            A.Harm(Elements.magical, 1.d20());
+            A.HarmEntity(Elements.magical, 1.d20());
           });
           Table.Add(2, A =>
           {
@@ -244,7 +244,7 @@ namespace Pathos
           });
           Table.Add(1, A =>
           {
-            A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
+            A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: Properties.rage, CorruptDice: 6.d10());
           });
           Table.Add(1, A =>
           {
@@ -260,7 +260,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Explosion = Explosions.fiery;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.force, 3.d6());
+        D.TriggerApply.HarmEntity(Elements.force, 3.d6());
         D.TriggerApply.ApplyTransient(Properties.stunned, 1.d6() + 2);
         D.TriggerApply.ApplyTransient(Properties.deafness, 4.d6() + 4);
         D.TriggerApply.WhenChance(Chance.ThreeIn4, T => T.CreateDevice(pit, Destruction: true));
@@ -295,7 +295,7 @@ namespace Pathos
         D.Explosion = Explosions.fiery;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.fire, 2.d6() + 2);
+        D.TriggerApply.HarmEntity(Elements.fire, 2.d6() + 2);
         D.TriggerApply.WhenChance(Chance.OneIn3, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
       });
 
@@ -328,8 +328,8 @@ namespace Pathos
         D.BoulderRemoval = true;
         D.Descent = true;
         D.Material = Materials.stone;
-        D.TriggerApply.TransitionDescend(Teleport: null, Dice.One);
-        D.TriggerApply.Harm(Elements.physical, 1.d6());
+        D.TriggerApply.TransitionDescend(SpatialProperty: null, Dice.One, Fixed: false);
+        D.TriggerApply.HarmEntity(Elements.physical, 1.d6());
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
 
@@ -352,7 +352,7 @@ namespace Pathos
         D.Explosion = Explosions.frosty;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.cold, 4.d4());
+        D.TriggerApply.HarmEntity(Elements.cold, 4.d4());
       });
 
       level_teleporter = AddDevice("level teleporter", Difficulty: 5, RepeatDice: Dice.One, Glyphs.level_teleporter, Sonics.magic, D =>
@@ -362,7 +362,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.magic;
         D.Material = Materials.iron;
-        D.TriggerApply.TransitionRandom(Properties.teleportation, 1.d4()); // -4..+4
+        D.TriggerApply.TransitionRandom(Properties.teleportation, 1.d4(), Fixed: false); // -4..+4
       });
 
       lightning_trap = AddDevice("lightning trap", Difficulty: 8, RepeatDice: 4.d6(), Glyphs.lightning_trap, Sonics.electricity, D =>
@@ -373,7 +373,7 @@ namespace Pathos
         D.Explosion = Explosions.electric;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.shock, 4.d6());
+        D.TriggerApply.HarmEntity(Elements.shock, 4.d6());
         D.TriggerApply.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.blindness, 1.d4() + 2));
       });
 
@@ -385,7 +385,7 @@ namespace Pathos
         D.Strike = Strikes.acid;
         D.Audibility = 20;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.acid, 2.d6() + 2);
+        D.TriggerApply.HarmEntity(Elements.acid, 2.d6() + 2);
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
 
@@ -398,7 +398,7 @@ namespace Pathos
         D.StuckDice = 1.d6() + 2;
         D.StuckUnderground = true;
         D.Material = Materials.stone;
-        D.TriggerApply.Harm(Elements.physical, 1.d6());
+        D.TriggerApply.HarmEntity(Elements.physical, 1.d6());
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
 
@@ -420,7 +420,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Strike = Strikes.gas;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.poison, 3.d4());
+        D.TriggerApply.HarmEntity(Elements.poison, 3.d4());
         D.TriggerApply.UnlessTargetResistant(Elements.poison, B => B.DecreaseAbility(Attributes.strength, Dice.One));
       });
 
@@ -440,7 +440,7 @@ namespace Pathos
         D.UntrapAttribute = Attributes.dexterity;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.physical, 2.d20() + 2);
+        D.TriggerApply.HarmEntity(Elements.physical, 2.d20() + 2);
         // TODO: chance of a decapitation?
         D.UntrapLoot.AddKit(1.d2() + 1, Items.scimitar); // 2..3
       });
@@ -453,7 +453,7 @@ namespace Pathos
         D.Strike = Strikes.flash;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.shock, 8.d6());
+        D.TriggerApply.HarmEntity(Elements.shock, 8.d6());
         D.TriggerApply.ApplyTransient(Properties.blindness, 1.d4() + 2);
         D.TriggerApply.ApplyTransient(Properties.stunned, 1.d4() + 2);
       });
@@ -496,7 +496,7 @@ namespace Pathos
         D.StuckDice = 1.d6() + 2;
         D.StuckUnderground = true;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.physical, 2.d6());
+        D.TriggerApply.HarmEntity(Elements.physical, 2.d6());
         D.TriggerApply.WhenChance(Chance.OneIn4, A => A.UnlessTargetResistant(Elements.poison, B => B.DecreaseAbility(Attributes.strength, Dice.One)));
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
@@ -525,7 +525,7 @@ namespace Pathos
         D.BoulderRemoval = true;
         D.Descent = true;
         D.Material = Materials.wood;
-        D.TriggerApply.TransitionDescend(Teleport: null, 1.d3());
+        D.TriggerApply.TransitionDescend(SpatialProperty: null, 1.d3(), Fixed: false);
         D.SetEscapeProperty(Properties.flight, Properties.levitation);
       });
 
@@ -548,7 +548,7 @@ namespace Pathos
         D.Explosion = Explosions.acid;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.acid, 6.d6());
+        D.TriggerApply.HarmEntity(Elements.acid, 6.d6());
         D.TriggerApply.CreateDevice(acid_trap, Destruction: false);
       });
 
@@ -560,7 +560,7 @@ namespace Pathos
         D.Explosion = Explosions.watery;
         D.Audibility = 30;
         D.Material = Materials.iron;
-        D.TriggerApply.Harm(Elements.water, Dice.Zero);
+        D.TriggerApply.HarmEntity(Elements.water, Dice.Zero);
         D.TriggerApply.RemoveTransient(Properties.slippery, Properties.fumbling);
         D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.potion, WholeStack: true, Items.potion_of_water));
         D.TriggerApply.WhenChance(Chance.OneIn20, T => T.ConvertItem(Codex.Stocks.scroll, WholeStack: true, Items.scroll_of_blank_paper));

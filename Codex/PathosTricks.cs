@@ -43,7 +43,7 @@ namespace Pathos
 
       living_statue = AddTrick("living statue", A =>
       {
-        A.Liberate(Dice.One);
+        A.Liberate();
       });
 
       whispered_rumour = AddTrick("whispered rumour", A =>
@@ -108,7 +108,7 @@ namespace Pathos
 
       living_dead = AddTrick("living dead", A =>
       {
-        A.AnimateRevenants(Properties.rage);
+        A.AnimateRevenant(CorruptProperty: Properties.rage, CorruptDice: 6.d10());
       });
 
       scuttling_insects = AddTrick("scuttling insects", A =>
@@ -164,7 +164,7 @@ namespace Pathos
       animated_objects = AddTrick("animated objects", A =>
       {
         A.Strike(Strikes.magic);
-        A.AnimateObjects(ObjectEntity: Entities.animate_object, Corrupt: Properties.rage);
+        A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: Properties.rage, CorruptDice: 6.d10());
       });
 
       increase_difficulty = AddTrick("increase difficulty", A =>
@@ -191,7 +191,7 @@ namespace Pathos
 
       mobilise_boulder = AddTrick("mobile boulder", A =>
       {
-        A.MobiliseBlock(Rigid: false);
+        A.MobiliseBlock();
       });
 
       complete_mapping = AddTrick("complete mapping", A =>

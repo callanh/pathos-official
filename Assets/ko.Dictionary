@@ -957,49 +957,22 @@ DietName,omnivore,잡식성
 DietName,organivore,자연식성
 DietName,xylophagy,목식성
 EffectProperty,disenchant,강화해제
-EffectProperty,expansive,값비싼
-EffectProperty,fixed,수리됨
-EffectProperty,loyal only,동료관계만
-EffectProperty,polite,공손한
-EffectProperty,rigid,단단한
 EffectType,blinking,점멸
-EffectType,capture,포획하기
 EffectType,clone entity,캐릭터 복제
 EffectType,convert barrier,벽 변환
 EffectType,convert gate,문 변환
 EffectType,convert ground,바닥 변환
 EffectType,convert volatile,휘발성 물질 변환
-EffectType,create nook,구석 생성
 EffectType,create volatile,휘발성 물질 생성
-EffectType,decapitate,참수
 EffectType,destroy volatile,휘발성 물질 제거
-EffectType,disarm,무장해제
-EffectType,drain life,체력 흡수
-EffectType,drain mana,마나 흡수
 EffectType,enchant item,아이템 강화
-EffectType,engulf,삼키기
-EffectType,exchange,교환
 EffectType,extinguish volatile,휘발성 물질 증발
-EffectType,grapple,붙잡기
 EffectType,hatch,부화
 EffectType,identify,식별
-EffectType,incarcerate,투옥
-EffectType,karma,카르마
-EffectType,liberate,해방
-EffectType,mobilise block,이동가능한 바위
-EffectType,opening,개방
 EffectType,place curse,저주 부여
-EffectType,raise dead,부활
-EffectType,release,풀어주기
 EffectType,remove curse,저주 해제
-EffectType,restock,재충전
-EffectType,restore ability,능력치 복구
 EffectType,sanctify,신성화
-EffectType,spawn entity,캐릭터 생성
-EffectType,teleport entity,캐릭터 텔레포트
-EffectType,teleport item away,먼 곳으로 텔레포트
 EffectType,tinning,통조림 제작
-EffectType,transition,층 이동
 EffectType,visit shop,가게 방문
 EffectType,visit shrine,제단 방문
 EffectType,visit zoo,서식지 방문
@@ -1999,11 +1972,15 @@ FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
 FormatText,convert {FeatureName} into {DeviceName},시설 변환 {FeatureName} {DeviceName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
 FormatText,decrease all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 감소시킨다
+FormatText,decrease karma by {ChangeDice},카르마 감소 {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},{AdjustmentDice}만큼 한 능력치를 감소시킨다
 FormatText,diminish {ManaDice},{ManaDice} 마나 감소
+FormatText,drain life {Dice},체력 흡수 {Dice}
+FormatText,drain mana {Dice},마나 흡수 {Dice}
 FormatText,drop {BlockName} {ElementName} {DamageDice},{BlockName}가 떨어져 {ElementName}속성 {DamageDice}피해를 입음
 FormatText,energise {ManaDice},{ManaDice} 마나 증가
 FormatText,Equip {CharacterName},장비 {CharacterName}
@@ -2018,6 +1995,7 @@ FormatText,harm {ElementName} {DamageDice},{ElementName}속성 피해 {DamageDic
 FormatText,heal {LifeDice},{LifeDice} 회복
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 증가시킨다
 FormatText,increase all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 증가시킨다
+FormatText,increase karma by {ChangeDice},카르마 증가 {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},{AdjustmentDice}만큼 한 능력치를 증가시킨다
 FormatText,learn spell {SpellName},주문 학습 {SpellName}
 FormatText,level {Depth},레벨 {Depth}
@@ -2028,6 +2006,7 @@ FormatText,LOCKED {GATENAME},잠겨진 {GATENAME}
 FormatText,lose {PropertyName} talent,재능 손실 {PropertyName}
 FormatText,not {EffectProperty},{EffectProperty}가 아님
 FormatText,polymorph into {EntityNames},폴리모프 {EntityNames}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},부활 {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
 FormatText,remove transient {PropertyNames},일시적인 효과 제거 {PropertyNames}
@@ -3117,6 +3096,7 @@ LiteralText,CAN'T SEE,관찰 불가
 LiteralText,CAN'T SLIDE,미끄러짐 불가
 LiteralText,CAN'T TELEKINESIS,염동력 사용 불가
 LiteralText,CAN'T THROW,투척 불가
+LiteralText,capture entity,포획하기
 LiteralText,carried,소지중
 LiteralText,Cast,시전
 LiteralText,CAST SPELLS,마법 시전
@@ -3157,7 +3137,6 @@ LiteralText,CONTACT,연락하기
 LiteralText,Continue,계속하기
 LiteralText,CONTINUE,계속하기
 LiteralText,CONTROLLED,통제됨
-LiteralText,convert,
 LiteralText,convert block to barrier,바위 변환
 LiteralText,conveyance,시체 섭취
 LiteralText,COPY,복제
@@ -3179,6 +3158,7 @@ LiteralText,create golem,골렘 생성
 LiteralText,CREATE GROUND,지면 생성
 LiteralText,CREATE HORDE,군단 생성
 LiteralText,CREATE ITEM,아이템 생성
+LiteralText,create nook,구석 생성
 LiteralText,CREATE PLATFORM,다리 생성
 LiteralText,CREATE SHOP,상점 생성
 LiteralText,CREATE SHRINE,신전 생성
@@ -3194,6 +3174,7 @@ LiteralText,dark,어둠
 LiteralText,DEAD END,막다른길
 LiteralText,death,죽음
 LiteralText,deathray,즉사 광선
+LiteralText,decapitate entity,참수
 LiteralText,decapitation,참수
 LiteralText,DECEASED,사망함
 LiteralText,decelerated real-time,실시간모드 감속
@@ -3233,6 +3214,7 @@ LiteralText,Disable online services,온라인 서비스 비활성화
 LiteralText,Disable pitch shifting,음색 변화 비활성화
 LiteralText,Disable spacebar real-time toggle,스페이스바 실시간 토글 비활성화
 LiteralText,Disable swipe gestures,스와이프 비활성화
+LiteralText,disarm entity,무장해제
 LiteralText,DISCONNECT,연결해제
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,연결이 끊겼습니다. 네트워크에 연결되어 있는지 확인하시고 모든 기기에 동일한 버전의 Pathos가 설치되어 있는지 확인하세요.
 LiteralText,discover item,깨달음
@@ -3268,6 +3250,7 @@ LiteralText,encounters,조우하다
 LiteralText,encumbrance thresholds,무게 한도
 LiteralText,End this adventure,모험 끝내기
 LiteralText,ended,끝났다
+LiteralText,engulf entity,삼키기
 LiteralText,ENTER QUANTITY,갯수 입력
 LiteralText,ENTITIES,개체들
 LiteralText,entity,개체
@@ -3283,6 +3266,7 @@ LiteralText,evolution,진화
 LiteralText,Examine which object?,어떤 아이템을 관찰합니까?
 LiteralText,except replica,복제품 제외
 LiteralText,EXCHANGE,교환
+LiteralText,exchange entity,교환
 LiteralText,EXIT PATHOS,PATHOS 나가기
 LiteralText,EXPAND,확장
 LiteralText,EXPEL,방출
@@ -3304,6 +3288,7 @@ LiteralText,FEED,먹이기
 LiteralText,FEEDBACK,피드백
 LiteralText,Feedback information,피드백 정보
 LiteralText,FILES,파일
+LiteralText,fixed,수리됨
 LiteralText,fixed range,고정 사거리
 LiteralText,FIZZLE,쉬익!
 LiteralText,Floor,층
@@ -3329,6 +3314,7 @@ LiteralText,GLYPHS,그래픽
 LiteralText,gold,골드
 LiteralText,GOLD,골드
 LiteralText,GRAPHICS,그래픽 설정
+LiteralText,grapple entity,붙잡기
 LiteralText,GRAPPLED,붙잡힘
 LiteralText,greed,탐욕
 LiteralText,grimoire,마법
@@ -3364,6 +3350,7 @@ LiteralText,IMPORT,불러오기
 LiteralText,Import a file,파일 불러오기
 LiteralText,IMPOSSIBLE,불가능
 LiteralText,in both hands,양손
+LiteralText,incarcerate entity,투옥
 LiteralText,incarceration,투옥
 LiteralText,INCREASE,증가
 LiteralText,INDEX,검색
@@ -3375,7 +3362,6 @@ LiteralText,INSCRIBE ITEM,아이템 필경
 LiteralText,inscription?,작성문?
 LiteralText,instruct each character,각각의 캐릭터에 명령하십시오.
 LiteralText,INSUFFICIENT GOLD,골드 부족
-LiteralText,into,
 LiteralText,Inventory,인벤토리
 LiteralText,INVENTORY,인벤토리
 LiteralText,ITEM,아이템
@@ -3400,6 +3386,7 @@ LiteralText,learn spells,마법 학습
 LiteralText,LEFT RING,왼쪽 반지
 LiteralText,LEVEL CHART,레벨 표
 LiteralText,level//rank,레벨
+LiteralText,liberate entity,해방
 LiteralText,lies,거짓
 LiteralText,life,체력
 LiteralText,LIFE,체력
@@ -3424,6 +3411,7 @@ LiteralText,LOSE LEVEL,레벨 손실
 LiteralText,lose nutrition,영앙분 손실
 LiteralText,lose skill,숙련도 손실
 LiteralText,LOW MANA,마나 부족
+LiteralText,loyal only,동료관계만
 LiteralText,MAIN WIELD,주무장
 LiteralText,mana,마나
 LiteralText,MANA,마나
@@ -3438,6 +3426,7 @@ LiteralText,MENU,메뉴
 LiteralText,mercenary,용병
 LiteralText,MIMIC,변장
 LiteralText,mimicking,따라하기
+LiteralText,mobilise block,이동가능한 바위
 LiteralText,modifier,보정치
 LiteralText,MOUNT,승마
 LiteralText,Mount which direction?,어느 방향으로 올라탑니까?
@@ -3484,6 +3473,7 @@ LiteralText,ONE AT A TIME,순차적으로
 LiteralText,oOo,oOo
 LiteralText,OPEN,열기
 LiteralText,OPENED,열림
+LiteralText,opening,개방
 LiteralText,OR,또는
 LiteralText,ORIGINAL,오리지널
 LiteralText,OVERRIDE,덮어쓰기
@@ -3562,6 +3552,7 @@ LiteralText,REGISTER,등록
 LiteralText,REGISTER PLAYER HANDLE,등록된 플레이어 핸들
 LiteralText,reinforced,강화됨
 LiteralText,REINFORCED,강화됨
+LiteralText,release entity,풀어주기
 LiteralText,remove all transients,모든 일시적인 효과 해제
 LiteralText,REMOVE CURSE,저주 해제
 LiteralText,remove random resistance,무작위 내성 제거
@@ -3587,6 +3578,8 @@ LiteralText,RESISTS,저항함
 LiteralText,Rest,초기화
 LiteralText,Rest how many turns?,몇 턴을 쉴까요?
 LiteralText,restarting to update,업데이트를 위해 재실행
+LiteralText,restock shop items,재충전
+LiteralText,restore ability,능력치 복구
 LiteralText,RESTORED,복구됨
 LiteralText,RESURRECT,부활
 LiteralText,Resurrect and continue,부활 및 게임 재개
@@ -3700,6 +3693,8 @@ LiteralText,TELEKINESIS,염동
 LiteralText,Telekinesis which direction?,어느 방향으로 염동력을 씁니까?
 LiteralText,Telekinesis which object?,어느 물체에 염동력을 씁니까?
 LiteralText,TELEPORT,텔레포트
+LiteralText,teleport entity,캐릭터 텔레포트
+LiteralText,teleport item away,먼 곳으로 텔레포트
 LiteralText,Teleport to where?,어디로 텔레포트 합니까?
 LiteralText,TERMINAL,터미널
 LiteralText,terrain,지형
@@ -3727,6 +3722,7 @@ LiteralText,TRADE,거래
 LiteralText,transform to,변신하다
 LiteralText,transients,효과
 LiteralText,TRANSIENTS,효과
+LiteralText,transition,층 이동
 LiteralText,TRANSLATIONS,번역
 LiteralText,TRAP,함정
 LiteralText,trap?,함정?

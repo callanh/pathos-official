@@ -153,13 +153,13 @@ namespace Pathos
       {
         // acidic blood.
         Apply.RemoveTransient(Properties.petrifying);
-        Apply.Harm(Elements.acid, 1.d15());
+        Apply.HarmEntity(Elements.acid, 1.d15());
       }
       void Tainted(ApplyEditor Apply)
       {
         // tainted meat.
-        Apply.Harm(Elements.necrotic, 1.d8());
-        Apply.Harm(Elements.poison, 1.d15());
+        Apply.HarmEntity(Elements.necrotic, 1.d8());
+        Apply.HarmEntity(Elements.poison, 1.d15());
         Apply.Macro(MajorPoison(Attributes.strength));
         Apply.ApplyTransient(Properties.sickness, 6.d6());
       }
@@ -167,7 +167,7 @@ namespace Pathos
       {
         return Apply =>
         {
-          Apply.Harm(Elements.poison, 1.d15());
+          Apply.HarmEntity(Elements.poison, 1.d15());
           Apply.Macro(MajorPoison(Attribute));
         };
       }
@@ -1210,7 +1210,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.strength);
@@ -1806,14 +1806,14 @@ namespace Pathos
         E.Startup.SetTalent(); // lice don't jump.
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3(), A =>
         {
-          A.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.nits));
+          A.Apply.WhenChance(Chance.OneIn4, T => T.AfflictEntity(Codex.Afflictions.nits));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3(), A =>
         {
-          A.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.nits));
+          A.Apply.WhenChance(Chance.OneIn4, T => T.AfflictEntity(Codex.Afflictions.nits));
         });
         E.SetCorpse(Chance.OneIn4);
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.nits));
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.AfflictEntity(Codex.Afflictions.nits));
       });
 
       giant_tick = AddEntity(Kinds.insect, null, "giant tick", E =>
@@ -2266,7 +2266,7 @@ namespace Pathos
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.Conveyance.Afflict(Codex.Afflictions.poisoning);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.poisoning);
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -2407,7 +2407,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
-          K.Apply.Harm(Elements.acid, 4.d6());
+          K.Apply.HarmEntity(Elements.acid, 4.d6());
           K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.MajorResistance(Elements.poison);
@@ -3379,7 +3379,7 @@ namespace Pathos
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.petrifying, 4.d8());
         });
-        E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+        E.Conveyance.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         E.Conveyance.ApplyTransient(Properties.petrifying, 10.d100());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
@@ -3472,13 +3472,13 @@ namespace Pathos
         E.AddAttack(AttackTypes.gaze, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.flame, 2.d4() + 4);
-          K.Apply.Harm(Elements.fire, 4.d5());
+          K.Apply.HarmEntity(Elements.fire, 4.d5());
           K.Apply.WhenChance(Chance.OneIn2, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 50));
         });
         E.AddRetaliation(Chance.Always, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 4.d5());
+          R.Apply.HarmEntity(Elements.fire, 4.d5());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -3536,10 +3536,10 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 1.d8());
+          R.Apply.HarmEntity(Elements.acid, 1.d8());
         });
         E.Conveyance.Macro(Acidic);
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.reflux));
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.AfflictEntity(Codex.Afflictions.reflux));
         E.SetCorpse(Chance.OneIn4);
       });
 
@@ -3587,7 +3587,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 5.d4());
+          R.Apply.HarmEntity(Elements.acid, 5.d4());
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
@@ -3696,7 +3696,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 2.d4());
+          R.Apply.HarmEntity(Elements.acid, 2.d4());
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
@@ -3747,7 +3747,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 2.d6());
+          R.Apply.HarmEntity(Elements.fire, 2.d6());
         });
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.Always);
@@ -3841,7 +3841,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.energy, Dice.One);
-          R.Apply.Harm(Elements.shock, 3.d5());
+          R.Apply.HarmEntity(Elements.shock, 3.d5());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -4252,14 +4252,14 @@ namespace Pathos
         E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.magic, 2.d4() + 4);
-          K.Apply.Harm(Elements.physical, 1.d8());
+          K.Apply.HarmEntity(Elements.physical, 1.d8());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 3.d4());
+          R.Apply.HarmEntity(Elements.acid, 3.d4());
         });
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -4315,7 +4315,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 10.d3());
+          R.Apply.HarmEntity(Elements.fire, 10.d3());
         });
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -4621,7 +4621,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10()); // +13 from str.
         E.AddAttack(AttackTypes.grapple, Elements.physical, 3.d7(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Fixed(+2), K =>
         {
@@ -5210,23 +5210,23 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.acid, Elements.fire, Elements.poison, Elements.drain, Elements.petrify, Elements.magical);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 4.d6()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 4.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d7(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 4.d2());
+          K.Apply.EngulfEntity(Engulfments.swallowed, 4.d2());
           K.Apply.ApplyTransient(Properties.sickness, 2.d40());
-          K.Apply.Afflict(Codex.Afflictions.poisoning);
+          K.Apply.AfflictEntity(Codex.Afflictions.poisoning);
         });
         E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
-          K.Apply.Harm(Elements.acid, 6.d6());
+          K.Apply.HarmEntity(Elements.acid, 6.d6());
           K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.Macro(Acidic);
         E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.Conveyance.Afflict(Codex.Afflictions.poisoning);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.poisoning);
         E.SetCorpse(Chance.Always);
       });
 
@@ -5754,11 +5754,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d2());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d4(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.grapple, Elements.physical, Dice.Zero, A =>
         {
@@ -6016,7 +6016,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d3());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d3());
-        E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
+        E.AddReaction(Chance.OneIn2, Elements.water, A => A.HealEntity(4.d4(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
       #endregion
@@ -6114,16 +6114,16 @@ namespace Pathos
         E.Startup.SetResistance(Elements.disintegrate);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5(), K =>
         {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Harm(Elements.disintegrate, Dice.Zero));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.HarmEntity(Elements.disintegrate, Dice.Zero));
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5(), K =>
         {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Harm(Elements.disintegrate, Dice.Zero));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.HarmEntity(Elements.disintegrate, Dice.Zero));
         });
         E.AddRetaliation(Chance.OneIn4, AttackTypes.touch, R =>
         {
           // TODO: can't use cast, because it may not target the correct asset?
-          R.Apply.Harm(Elements.disintegrate, Dice.Zero);
+          R.Apply.HarmEntity(Elements.disintegrate, Dice.Zero);
         });
         E.Conveyance.MajorResistance(Elements.disintegrate);
         E.SetCorpse(Chance.Always);
@@ -6232,7 +6232,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 3.d8());
+          K.Apply.HarmEntity(Elements.fire, 3.d8());
         });
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.Always);
@@ -6323,7 +6323,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +3 from str.
         E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d8(), A => // +3 from str.
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -6547,7 +6547,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 5.d6());
+          K.Apply.HarmEntity(Elements.fire, 5.d6());
         });
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
@@ -6599,7 +6599,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 3.d6());
+          K.Apply.HarmEntity(Elements.fire, 3.d6());
         });
         E.Conveyance.MajorResistance(Elements.fire);
         E.SetCorpse(Chance.OneIn3);
@@ -6915,14 +6915,14 @@ namespace Pathos
         E.Startup.SetTalent(Properties.cannibalism);
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8(), K => // +2 from STR.
         {
-          K.Apply.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.rabies));
+          K.Apply.WhenChance(Chance.OneIn2, T => T.AfflictEntity(Codex.Afflictions.rabies));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8(), K => // +2 from STR.
         {
-          K.Apply.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.rabies));
+          K.Apply.WhenChance(Chance.OneIn2, T => T.AfflictEntity(Codex.Afflictions.rabies));
         });
         E.SetCorpse(Chance.OneIn3);
-        E.Conveyance.Afflict(Codex.Afflictions.rabies);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.rabies);
       });
       //Modeled after 5ed shadow hound
       shadow_wolf = AddEntity(Kinds.dog, null, "shadow wolf", E =>
@@ -7059,7 +7059,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 6.d6());
+          K.Apply.HarmEntity(Elements.cold, 6.d6());
         });
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.Always);
@@ -7109,7 +7109,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 3.d6());
+          K.Apply.HarmEntity(Elements.cold, 3.d6());
         });
         E.Conveyance.MajorResistance(Elements.cold);
         E.SetCorpse(Chance.OneIn3);
@@ -7799,7 +7799,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d4() + 4);
-          K.Apply.Harm(Elements.acid, 3.d10());
+          K.Apply.HarmEntity(Elements.acid, 3.d10());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -7849,7 +7849,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d4() + 4);
-          K.Apply.Harm(Elements.shock, 3.d6());
+          K.Apply.HarmEntity(Elements.shock, 3.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -7902,7 +7902,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
-          K.Apply.Harm(Elements.poison, 3.d10());
+          K.Apply.HarmEntity(Elements.poison, 3.d10());
           K.Apply.WhenChance(Chance.OneIn6, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.SetCorpse(Chance.Always);
@@ -7954,7 +7954,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
-          K.Apply.Harm(Elements.petrify, 4.d6());
+          K.Apply.HarmEntity(Elements.petrify, 4.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8003,7 +8003,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d4() + 4);
-          K.Apply.Harm(Elements.poison, 4.d6());
+          K.Apply.HarmEntity(Elements.poison, 4.d6());
           K.Apply.WhenChance(Chance.OneIn6, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.Conveyance.MinorResistance(Elements.poison);
@@ -8106,7 +8106,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d4() + 4);
-          K.Apply.Harm(Elements.fire, 4.d6());
+          K.Apply.HarmEntity(Elements.fire, 4.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8156,7 +8156,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d4() + 4);
-          K.Apply.Harm(Elements.magical, 4.d6());
+          K.Apply.HarmEntity(Elements.magical, 4.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8210,7 +8210,7 @@ namespace Pathos
            .SetObjects()
            .SetPenetrates()
            .SetAudibility(10);
-          K.Apply.Harm(Elements.force, 4.d6());
+          K.Apply.HarmEntity(Elements.force, 4.d6());
           K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 3.d6() + 3));
         });
         E.SetCorpse(Chance.Always);
@@ -8261,7 +8261,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d4() + 4);
-          K.Apply.Harm(Elements.cold, 3.d6());
+          K.Apply.HarmEntity(Elements.cold, 3.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8311,7 +8311,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d4() + 4);
-          K.Apply.Harm(Elements.disintegrate, 3.d6());
+          K.Apply.HarmEntity(Elements.disintegrate, 3.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -8361,7 +8361,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d5() + 5);  //Not sure if this works
-          K.Apply.Harm(Elements.acid, 4.d10());
+          K.Apply.HarmEntity(Elements.acid, 4.d10());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -8416,7 +8416,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
-          K.Apply.Harm(Elements.shock, 4.d6());
+          K.Apply.HarmEntity(Elements.shock, 4.d6());
         });
         // +7 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());  // +7 from str.
@@ -8472,7 +8472,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 4.d10());
+          K.Apply.HarmEntity(Elements.poison, 4.d10());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
@@ -8538,7 +8538,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.petrify, 5.d6());
+          K.Apply.HarmEntity(Elements.petrify, 5.d6());
           K.Apply.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.petrifying, 4.d4()));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
@@ -8594,7 +8594,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 5.d6());
+          K.Apply.HarmEntity(Elements.poison, 5.d6());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12());
@@ -8706,7 +8706,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 6.d6());
+          K.Apply.HarmEntity(Elements.fire, 6.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -8760,7 +8760,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 6.d6());
+          K.Apply.HarmEntity(Elements.magical, 6.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
@@ -8818,7 +8818,7 @@ namespace Pathos
            .SetObjects()
            .SetPenetrates()
            .SetAudibility(10);
-          K.Apply.Harm(Elements.force, 6.d6());
+          K.Apply.HarmEntity(Elements.force, 6.d6());
           K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 6.d6() + 6));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
@@ -8874,7 +8874,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 4.d6());
+          K.Apply.HarmEntity(Elements.cold, 4.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -8929,7 +8929,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d5() + 5);
-          K.Apply.Harm(Elements.disintegrate, 4.d6());
+          K.Apply.HarmEntity(Elements.disintegrate, 4.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d18());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
@@ -8984,7 +8984,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.acid, 1.d5() + 5);  //Not sure if this works
-          K.Apply.Harm(Elements.acid, 8.d10());
+          K.Apply.HarmEntity(Elements.acid, 8.d10());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
@@ -9039,7 +9039,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
-          K.Apply.Harm(Elements.shock, 8.d6());
+          K.Apply.HarmEntity(Elements.shock, 8.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.electricity, 1.d100() + 150));
         });
         // +7 from str.
@@ -9096,7 +9096,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 8.d10());
+          K.Apply.HarmEntity(Elements.poison, 8.d10());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, Dice.Zero, K =>
@@ -9162,9 +9162,9 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.petrify, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.petrify, 10.d6());
+          K.Apply.HarmEntity(Elements.petrify, 10.d6());
           K.Apply.ApplyTransient(Properties.petrifying, 4.d4());
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Incarcerate(Elements.petrify, Codex.Blocks.trophy));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.IncarcerateEntity(Elements.petrify, Codex.Blocks.trophy));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8());
@@ -9219,7 +9219,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 10.d6());
+          K.Apply.HarmEntity(Elements.poison, 10.d6());
           K.Apply.WhenChance(Chance.OneIn2, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d12());
@@ -9331,7 +9331,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 12.d6());
+          K.Apply.HarmEntity(Elements.fire, 12.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
@@ -9386,7 +9386,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 12.d6());
+          K.Apply.HarmEntity(Elements.magical, 12.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
@@ -9444,7 +9444,7 @@ namespace Pathos
            .SetObjects()
            .SetPenetrates()
            .SetAudibility(10);
-          K.Apply.Harm(Elements.force, 12.d6());
+          K.Apply.HarmEntity(Elements.force, 12.d6());
           K.Apply.Shout(Dice.Fixed(10), A => A.ApplyTransient(Properties.deafness, 12.d6() + 12));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +8 from str.
@@ -9500,7 +9500,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 8.d6());
+          K.Apply.HarmEntity(Elements.cold, 8.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.freeze, 1.d100() + 150));
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8()); // +6 from str.
@@ -9556,7 +9556,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.disintegrate, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.disintegration, 1.d5() + 5);
-          K.Apply.Harm(Elements.disintegrate, 8.d6());
+          K.Apply.HarmEntity(Elements.disintegrate, 8.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d18());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3());
@@ -9611,7 +9611,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 6.d8());
+          K.Apply.HarmEntity(Elements.magical, 6.d8());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d8()); // +8 from str.
@@ -9674,12 +9674,12 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 6.d8());
+          K.Apply.HarmEntity(Elements.fire, 6.d8());
         });
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 3.d6());
+          K.Apply.HarmEntity(Elements.fire, 3.d6());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d10()); // +10 from str.
@@ -9802,7 +9802,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 8.d6() + 8);
+          K.Apply.HarmEntity(Elements.fire, 8.d6() + 8);
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8()); // +8 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8());
@@ -9856,7 +9856,7 @@ namespace Pathos
           K.Apply.WhenChance(Chance.OneIn4, T =>
           {
             T.Macro(MinorPoison(Attributes.strength));
-            T.Afflict(Codex.Afflictions.poisoning);
+            T.AfflictEntity(Codex.Afflictions.poisoning);
           });
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d8());
@@ -10461,7 +10461,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +3 from str.
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d3(), A => // +3 from str.
         {
-          A.Apply.Grapple(1.d6());
+          A.Apply.GrappleEntity(1.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -10505,11 +10505,11 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.expert, Skills.swimming);
         E.Startup.SetTalent(Properties.slippery, Properties.jumping);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 1.d6()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 1.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d6(), K => // +1 from str.
         {
           K.SetCast().Strike(Strikes.venom, Dice.Fixed(2));
-          K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 1);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d4() + 1);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -10608,7 +10608,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d9(), A => // +3 from str.
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 5.d4());
         E.SetCorpse(Chance.Always);
@@ -10834,11 +10834,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.watery, Dice.Zero);
-          K.Apply.Harm(Elements.water, 2.d6());
+          K.Apply.HarmEntity(Elements.water, 2.d6());
           K.Apply.WhenChance(Chance.OneIn2, T => T.ConvertGround(FromGround: null, ToGround: Codex.Grounds.water, Locality.Square)); // TODO: would prefer this only happened on one square instead of 9?
         });
         E.Chemistry.SetWeakness(Elements.fire);
-        E.AddReaction(Chance.Always, Elements.water, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.water, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -10885,11 +10885,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.fiery, Dice.Zero);
-          K.Apply.Harm(Elements.fire, 3.d6());
+          K.Apply.HarmEntity(Elements.fire, 3.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.blaze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.cold, Elements.water);
-        E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.fire, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -10936,12 +10936,12 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.frosty, Dice.Zero);
-          K.Apply.Harm(Elements.cold, 3.d9());
+          K.Apply.HarmEntity(Elements.cold, 3.d9());
           K.Apply.UnlessTargetResistant(Elements.cold, T => T.ApplyTransient(Properties.paralysis, 1.d3() + 3));
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.freeze, 1.d50() + 50));
         });
         E.Chemistry.SetWeakness(Elements.fire);
-        E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.cold, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -10988,12 +10988,12 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.muddy, Dice.Zero); // TODO: 'water crash' is probably not the right sfx.
-          K.Apply.Harm(Elements.physical, 4.d6());
+          K.Apply.HarmEntity(Elements.physical, 4.d6());
           K.Apply.Digging(Elements.digging);
           K.Apply.WhenChance(Chance.OneIn2, T => T.ConvertGround(FromGround: Codex.Grounds.water, ToGround: Codex.Grounds.dirt, Locality.Square)); // TODO: would prefer this only happened on one square instead of 9?
         });
         E.Chemistry.SetWeakness(Elements.disintegrate, Elements.digging);
-        E.AddReaction(Chance.Always, Elements.petrify, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.petrify, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.DropLoot.AddKit(4.d4() + 1, Items.rock);
         E.SetCorpse(Chance.Never);
       });
@@ -11041,7 +11041,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.blast, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Explosion(Explosions.electric, Dice.Zero);
-          K.Apply.Harm(Elements.shock, 5.d6());
+          K.Apply.HarmEntity(Elements.shock, 5.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.electricity, 1.d50() + 50));
         });
         E.SetCorpse(Chance.Never);
@@ -11088,14 +11088,14 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
-        E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 1.d12()));
+        E.SetEngulf(Strikes.force, A => A.HarmEntity(Elements.physical, 1.d12()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d12(), K => // +2 from str.
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d6() + 2);
         });
         E.AddAttack(AttackTypes.engulf, Elements.physical, 1.d12(), K => // +2 from str.
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d6() + 2);
         });
         E.SetCorpse(Chance.Never);
       });
@@ -11146,10 +11146,10 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
-          R.Apply.Harm(Elements.cold, 10.d4());
+          R.Apply.HarmEntity(Elements.cold, 10.d4());
           R.Apply.WhenChance(Chance.OneIn4, T => T.CreateVolatile(Volatiles.freeze, 1.d50() + 50));
         });
-        E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d8(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.cold, A => A.HealEntity(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -11244,10 +11244,10 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 10.d4());
+          R.Apply.HarmEntity(Elements.fire, 10.d4());
           R.Apply.WhenChance(Chance.OneIn4, T => T.CreateVolatile(Volatiles.blaze, 1.d50() + 50));
         });
-        E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(4.d8(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.fire, A => A.HealEntity(4.d8(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -11337,7 +11337,7 @@ namespace Pathos
         E.Startup.SetTalent(Properties.vitality, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6(), A => A.Apply.SpecialDisarm()); // +4 from str.
-        E.AddReaction(Chance.Always, Elements.water, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.water, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 
@@ -11475,7 +11475,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 4.d8() + 4);
+          R.Apply.HarmEntity(Elements.fire, 4.d8() + 4);
           R.Apply.WhenChance(Chance.OneIn2, T => T.CreateVolatile(Volatiles.blaze, 1.d100() + 50));
         });
         E.Chemistry.SetWeakness(Elements.cold, Elements.water);
@@ -11524,7 +11524,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.petrify);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3()); // +6 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 7.d3());
-        E.AddReaction(Chance.OneIn2, Elements.water, A => A.Heal(4.d4(), Modifier.Zero));
+        E.AddReaction(Chance.OneIn2, Elements.water, A => A.HealEntity(4.d4(), Modifier.Zero));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
       });
@@ -12032,7 +12032,7 @@ namespace Pathos
         {
           K.SetCast().Strike(Strikes.magic, 2.d4() + 4)
            .SetReflects();
-          K.Apply.Harm(Elements.physical, 4.d9());
+          K.Apply.HarmEntity(Elements.physical, 4.d9());
         });
         E.AddAttack(AttackTypes.gaze, Elements.physical, Dice.Zero, K =>
         {
@@ -12160,7 +12160,7 @@ namespace Pathos
           K.Apply.ApplyTransient(Properties.stunned, 5.d3()); // TODO: rage instead?
         });
         E.Conveyance.ApplyTransient(Properties.hallucination, Dice.Fixed(+200));
-        E.Conveyance.Punish(Codex.Punishments.psychosis);
+        E.Conveyance.PunishEntity(Codex.Punishments.psychosis);
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -12255,7 +12255,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.acid, Dice.Zero);
-          R.Apply.Harm(Elements.physical, 4.d6());
+          R.Apply.HarmEntity(Elements.physical, 4.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -12371,7 +12371,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.shriek, 4.d2() + 1)
            .SetTerminates();
           K.Apply.Alert(2.d6() + 2);
-          K.Apply.Shout(Dice.Fixed(10), A => A.Harm(Elements.physical, 1.d4() + 1));
+          K.Apply.Shout(Dice.Fixed(10), A => A.HarmEntity(Elements.physical, 1.d4() + 1));
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -12924,13 +12924,13 @@ namespace Pathos
         E.AddRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.venom, Dice.One);
-          R.Apply.Harm(Elements.poison, 7.d4());
+          R.Apply.HarmEntity(Elements.poison, 7.d4());
           R.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 1.d8());
+          R.Apply.HarmEntity(Elements.acid, 1.d8());
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
@@ -12975,7 +12975,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.cold, A =>
         {
-          A.Heal(6.d6(), Modifier.Zero);
+          A.HealEntity(6.d6(), Modifier.Zero);
           A.CloneTargetEntity(Dice.One);
         });
         E.Startup.SetSkill(Qualifications.proficient);
@@ -12983,7 +12983,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
-          R.Apply.Harm(Elements.cold, 2.d6());
+          R.Apply.HarmEntity(Elements.cold, 2.d6());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -13035,13 +13035,13 @@ namespace Pathos
         E.AddRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.venom, Dice.One);
-          R.Apply.Harm(Elements.poison, 1.d8());
+          R.Apply.HarmEntity(Elements.poison, 1.d8());
           R.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 2.d4());
+          R.Apply.HarmEntity(Elements.acid, 2.d4());
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
@@ -13090,7 +13090,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 2.d4());
+          R.Apply.HarmEntity(Elements.acid, 2.d4());
         });
         E.Conveyance.Macro(Acidic);
         E.SetCorpse(Chance.OneIn3);
@@ -13181,7 +13181,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.spore, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 2.d4());
+          R.Apply.HarmEntity(Elements.fire, 2.d4());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -14644,7 +14644,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 6.d8());
+          K.Apply.HarmEntity(Elements.magical, 6.d8());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.crystal_ball);
@@ -14686,7 +14686,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
-        E.AddReaction(Chance.Always, Elements.shock, A => A.Heal(4.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.shock, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
@@ -14805,7 +14805,7 @@ namespace Pathos
           Table.Add(1, A => A.MajorResistance(Elements.shock));
           Table.Add(1, A => A.MajorResistance(Elements.poison));
         }));
-        E.Conveyance.Harm(Elements.necrotic, 1.d8());
+        E.Conveyance.HarmEntity(Elements.necrotic, 1.d8());
         E.SetCorpse(Chance.Always);
       });
 
@@ -14944,8 +14944,8 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
         E.Chemistry.SetVulnerability();
-        E.AddReaction(Chance.Always, Elements.water, A => A.Harm(Elements.physical, 8.d6()));
-        E.AddReaction(Chance.Always, Elements.fire, A => A.Heal(8.d6(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.water, A => A.HarmEntity(Elements.physical, 8.d6()));
+        E.AddReaction(Chance.Always, Elements.fire, A => A.HealEntity(8.d6(), Modifier.Zero));
         E.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.slowness, 4.d6()));
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
@@ -14954,7 +14954,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 4.d8());
+          K.Apply.HarmEntity(Elements.poison, 4.d8());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.SetCorpse(Chance.Never);
@@ -15192,7 +15192,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2()); // +4 from str.
         E.AddAttack(AttackTypes.grapple, Elements.physical, Dice.Fixed(+6), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -15240,7 +15240,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.magical, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.magic_missile, 1.d5() + 5);
-          K.Apply.Harm(Elements.magical, 8.d8());
+          K.Apply.HarmEntity(Elements.magical, 8.d8());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.diamond);
@@ -15289,7 +15289,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.poison, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.poison, 1.d5() + 5);
-          K.Apply.Harm(Elements.poison, 7.d7());
+          K.Apply.HarmEntity(Elements.poison, 7.d7());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.emerald);
@@ -15338,7 +15338,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 5.d6());
+          K.Apply.HarmEntity(Elements.fire, 5.d6());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.ruby);
@@ -15387,7 +15387,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.shock, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.lightning, 1.d5() + 5);
-          K.Apply.Harm(Elements.shock, 7.d7());
+          K.Apply.HarmEntity(Elements.shock, 7.d7());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.sapphire);
@@ -15436,7 +15436,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 5.d5());
+          K.Apply.HarmEntity(Elements.cold, 5.d5());
         });
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.topaz);
@@ -15487,11 +15487,11 @@ namespace Pathos
         {
           K.SetCast().Beam(Beams.cold, 1.d3() + 3)
            .SetReflects(false);
-          K.Apply.Harm(Elements.cold, 4.d4());
+          K.Apply.HarmEntity(Elements.cold, 4.d4());
           K.Apply.UnlessTargetResistant(Elements.cold, T => T.ApplyTransient(Properties.paralysis, 1.d3() + 3));
         });
         E.Chemistry.SetWeakness(Elements.fire);
-        E.AddReaction(Chance.Always, Elements.cold, A => A.Heal(4.d4(), Modifier.Zero));
+        E.AddReaction(Chance.Always, Elements.cold, A => A.HealEntity(4.d4(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.carrot);
       });
@@ -15539,7 +15539,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.cold, 1.d5() + 5);
-          K.Apply.Harm(Elements.cold, 5.d8());
+          K.Apply.HarmEntity(Elements.cold, 5.d8());
         });
         E.AddRetaliation(Chance.OneIn2, AttackTypes.touch, R =>
         {
@@ -15974,7 +15974,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.wanted);
+          A.Apply.PunishEntity(Codex.Punishments.wanted);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16029,7 +16029,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.shunning);
+          A.Apply.PunishEntity(Codex.Punishments.shunning);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16084,7 +16084,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.malignant_aura);
+          A.Apply.PunishEntity(Codex.Punishments.malignant_aura);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16140,7 +16140,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.ignoramus);
+          A.Apply.PunishEntity(Codex.Punishments.ignoramus);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16199,7 +16199,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.gluttony);
+          A.Apply.PunishEntity(Codex.Punishments.gluttony);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16258,7 +16258,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.spell, A =>
         {
           A.SetCast().Strike(Strikes.psychic, Dice.Fixed(10));
-          A.Apply.Punish(Codex.Punishments.thirst);
+          A.Apply.PunishEntity(Codex.Punishments.thirst);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -16356,15 +16356,15 @@ namespace Pathos
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
         });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
         });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn10, T => T.Decapitate(Anatomies.head, Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -17262,7 +17262,7 @@ namespace Pathos
         });
         E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5(), K =>
         {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.poisoning));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.AfflictEntity(Codex.Afflictions.poisoning));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -17451,7 +17451,7 @@ namespace Pathos
           K.SetCast().Strike(Strikes.spirit, 2.d4() + 4)
            .SetReflects()
            .SetBeholds();
-          K.Apply.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+          K.Apply.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6(), K =>
         {
@@ -17473,7 +17473,7 @@ namespace Pathos
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         }); // +2 from str.
-        E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+        E.Conveyance.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         E.Conveyance.ApplyTransient(Properties.petrifying, 10.d100());
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -17612,7 +17612,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.restoration);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
-        E.Conveyance.Replenish(LifeThreshold: 100F, ManaThreshold: 0F); // replenish full life.
+        E.Conveyance.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 0F); // replenish full life.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });
@@ -17763,7 +17763,7 @@ namespace Pathos
         E.AddRetaliation(Chance.Always, AttackTypes.spell, R =>
         {
           R.SetCast().Strike(Strikes.force, 2.d3() + 6);
-          R.Apply.Harm(Elements.force, 6.d6() + 6); // effectively champion force bolt.
+          R.Apply.HarmEntity(Elements.force, 6.d6() + 6); // effectively champion force bolt.
         });
         E.SetCorpse(Chance.Always);
       });
@@ -20099,7 +20099,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.AddReaction(Chance.Always, Elements.cold, A =>
         {
-          A.Heal(6.d6(), Modifier.Zero);
+          A.HealEntity(6.d6(), Modifier.Zero);
           A.CloneTargetEntity(Dice.One);
         });
         E.Startup.SetSkill(Qualifications.proficient);
@@ -20107,7 +20107,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
-          R.Apply.Harm(Elements.cold, 5.d6());
+          R.Apply.HarmEntity(Elements.cold, 5.d6());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -20206,15 +20206,15 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 2.d6()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 2.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.acid, 3.d6(), K => // -1 from str.
         {
-          K.Apply.Engulf(Engulfments.engulfed, 3.d2() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 3.d2() + 2);
         });
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 3.d6());
+          R.Apply.HarmEntity(Elements.acid, 3.d6());
         });
         E.Conveyance.Macro(Acidic);
         E.SetCorpse(Chance.OneIn3);
@@ -20259,10 +20259,10 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 2.d4()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 2.d4()));
         E.AddAttack(AttackTypes.engulf, Elements.acid, 2.d8(), K => // -1 from str.
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d6() + 2);
         });
         E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
@@ -20312,15 +20312,15 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 3.d6()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 3.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 3.d2() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 3.d2() + 2);
         });
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 3.d6());
+          R.Apply.HarmEntity(Elements.acid, 3.d6());
         });
         E.Conveyance.Macro(Acidic);
         E.SetCorpse(Chance.OneIn3);
@@ -20368,7 +20368,7 @@ namespace Pathos
         E.AddRetaliation(Chance.OneIn2, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 6.d6());
+          R.Apply.HarmEntity(Elements.acid, 6.d6());
         });
         E.Conveyance.Macro(Acidic);
         E.SetCorpse(Chance.OneIn3);
@@ -20413,10 +20413,10 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.petrify);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 4.d4()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 4.d4()));
         E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K => // -1 from str.
         {
-          K.Apply.Engulf(Engulfments.engulfed, 3.d3() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 3.d3() + 2);
         });
         E.AddRetaliation(Chance.OneIn3, AttackTypes.splash, R =>
         {
@@ -21544,7 +21544,7 @@ namespace Pathos
            .SetBeholds();
           R.Apply.ApplyTransient(Properties.petrifying, 4.d6());
         });
-        E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+        E.Conveyance.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         E.Conveyance.ApplyTransient(Properties.petrifying, 10.d100());
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
@@ -21900,7 +21900,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
-        E.Conveyance.Energise(1.d3(), Modifier.Zero);
+        E.Conveyance.EnergiseEntity(1.d3(), Modifier.Zero);
         E.SetCorpse(Chance.Always);
       });
 
@@ -21997,11 +21997,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.touch, Elements.fire, 2.d8());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d5(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.grapple, Elements.fire, 3.d5(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.Conveyance.MajorResistance(Elements.fire);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -24579,11 +24579,11 @@ namespace Pathos
         E.Startup.SetResistance(Elements.acid);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d15(), A => // +3 from str.
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -24762,7 +24762,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.acid);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d12(), A => // +2 from str.
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -24941,7 +24941,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.acid);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5(), A => // +1 from str.
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.OneIn3);
       });
@@ -25508,7 +25508,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
-          K.Apply.Harm(Elements.acid, 5.d2() + 1);
+          K.Apply.HarmEntity(Elements.acid, 5.d2() + 1);
           K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.Conveyance.MajorResistance(Elements.poison);
@@ -25696,12 +25696,12 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
-          K.Apply.Harm(Elements.physical, 4.d5());
+          K.Apply.HarmEntity(Elements.physical, 4.d5());
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
         E.AddAttack(AttackTypes.grapple, Elements.physical, 4.d4(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -25795,7 +25795,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.breath, Elements.fire, Dice.Zero, K =>
         {
           K.SetCast().Beam(Beams.fire, 1.d5() + 5);
-          K.Apply.Harm(Elements.fire, 6.d4());
+          K.Apply.HarmEntity(Elements.fire, 6.d4());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -27180,12 +27180,12 @@ namespace Pathos
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6(), K => // +3 from str.
         {
-          K.Apply.Harm(Elements.acid, 4.d8());
+          K.Apply.HarmEntity(Elements.acid, 4.d8());
         });
         E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 4.d8());
+          R.Apply.HarmEntity(Elements.acid, 4.d8());
         });
         E.AddLivingRetaliation(Chance.Always, AttackTypes.spore, R =>
         {
@@ -27302,25 +27302,25 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.teleportation, Properties.teleport_control, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
-        E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 4.d8()));
+        E.SetEngulf(Strikes.gas, A => A.HarmEntity(Elements.physical, 4.d8()));
         E.AddAttack(AttackTypes.claw, Elements.physical, 5.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 5.d8()); // +7
         E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
-          K.Apply.Harm(Elements.acid, 2.d6() + 2);
+          K.Apply.HarmEntity(Elements.acid, 2.d6() + 2);
         });
         E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
-          K.Apply.Harm(Elements.acid, 2.d6() + 2);
+          K.Apply.HarmEntity(Elements.acid, 2.d6() + 2);
         });
         E.AddAttack(AttackTypes.engulf, Elements.acid, 8.d9(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 1.d6() + 2);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 1.d6() + 2);
         });
         E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 2.d6() + 2);
+          R.Apply.HarmEntity(Elements.acid, 2.d6() + 2);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -27429,18 +27429,18 @@ namespace Pathos
         E.Startup.SetTalent(Properties.slippery, Properties.vitality); // green slime can't get sliming because of vitality.
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d4(), K =>
         {
-          K.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.sliming));
+          K.Apply.WhenChance(Chance.OneIn4, T => T.AfflictEntity(Codex.Afflictions.sliming));
         }); // +3
         E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 4.d4() + 4);
-          R.Apply.WhenChance(Chance.OneIn4, T => T.Afflict(Codex.Afflictions.sliming));
+          R.Apply.HarmEntity(Elements.acid, 4.d4() + 4);
+          R.Apply.WhenChance(Chance.OneIn4, T => T.AfflictEntity(Codex.Afflictions.sliming));
         });
         E.Conveyance.Macro(Acidic);
         E.Conveyance.ApplyTransient(Properties.sickness, 1.d6() + 4);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.Conveyance.Afflict(Codex.Afflictions.sliming);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.sliming);
         E.SetCorpse(Chance.Always);
       });
 
@@ -27483,10 +27483,10 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
-        E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 2.d4()));
+        E.SetEngulf(Strikes.gas, A => A.HarmEntity(Elements.physical, 2.d4()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d4(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d6() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d6() + 2);
           K.Apply.WhenChance(Chance.OneIn3, T => T.DestroyEquippedItem(Dice.One, StockArray: null, SanctityArray: null, E.Diet.Materials.ToArray()));
         }); // +2
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
@@ -27540,20 +27540,20 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.acid, Elements.cold, Elements.shock, Elements.poison, Elements.petrify);
-        E.SetEngulf(Strikes.acid, A => A.Harm(Elements.acid, 3.d6()));
+        E.SetEngulf(Strikes.acid, A => A.HarmEntity(Elements.acid, 3.d6()));
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d6());
         E.AddAttack(AttackTypes.touch, Elements.acid, Dice.Zero, K =>
         {
-          K.Apply.Harm(Elements.acid, 3.d6() + 3);
+          K.Apply.HarmEntity(Elements.acid, 3.d6() + 3);
         });
         E.AddAttack(AttackTypes.engulf, Elements.acid, 4.d6(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 2.d6() + 4);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 2.d6() + 4);
         }); // +5
         E.AddRetaliation(Chance.Always, AttackTypes.splash, R =>
         {
           R.SetCast().Strike(Strikes.acid, Dice.One);
-          R.Apply.Harm(Elements.acid, 3.d6() + 3);
+          R.Apply.HarmEntity(Elements.acid, 3.d6() + 3);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -27658,7 +27658,7 @@ namespace Pathos
           K.Apply.ApplyTransient(Properties.petrifying, 10.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
-        E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+        E.Conveyance.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         E.SetCorpse(Chance.Always);
       });
 
@@ -28812,10 +28812,10 @@ namespace Pathos
         E.Startup.SetTalent(Properties.jumping, Properties.cannibalism);
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2(), K =>
         {
-          K.Apply.WhenChance(Chance.ThreeIn20, T => T.Afflict(Codex.Afflictions.rabies));
+          K.Apply.WhenChance(Chance.ThreeIn20, T => T.AfflictEntity(Codex.Afflictions.rabies));
         }); // -1 from str.
         E.SetCorpse(Chance.OneIn4);
-        E.Conveyance.Afflict(Codex.Afflictions.rabies);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.rabies);
       });
 
       rabid_rat = AddEntity(Kinds.rodent, null, "rabid rat", E =>
@@ -28860,10 +28860,10 @@ namespace Pathos
         E.Startup.SetTalent(Properties.cannibalism);
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d2(), K =>
         {
-          K.Apply.WhenChance(Chance.OneIn5, T => T.Afflict(Codex.Afflictions.rabies));
+          K.Apply.WhenChance(Chance.OneIn5, T => T.AfflictEntity(Codex.Afflictions.rabies));
         }); // -1
         E.SetCorpse(Chance.OneIn4);
-        E.Conveyance.Afflict(Codex.Afflictions.rabies);
+        E.Conveyance.AfflictEntity(Codex.Afflictions.rabies);
       });
 
       rat_king = AddDomesticEntity(Kinds.rodent, null, "rat king", E =>
@@ -29099,7 +29099,7 @@ namespace Pathos
           R.SetCast().Strike(Strikes.psychic, Dice.One);
           R.Apply.ApplyTransient(Properties.petrifying, 10.d4());
         });
-        E.Conveyance.Incarcerate(Elements.petrify, Codex.Blocks.statue);
+        E.Conveyance.IncarcerateEntity(Elements.petrify, Codex.Blocks.statue);
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.ApplyTransient(Properties.petrifying, 10.d100());
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -29350,11 +29350,11 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d2());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d2(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.AddAttack(AttackTypes.grapple, Elements.physical, 2.d2(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         }); // +3
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.Always);
@@ -29860,7 +29860,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.sting, Elements.physical, 2.d10(), A =>
         {
           A.Apply.Macro(MajorPoison(Attributes.strength));
-          A.Apply.Afflict(Codex.Afflictions.poisoning);
+          A.Apply.AfflictEntity(Codex.Afflictions.poisoning);
         });
         E.Conveyance.MajorResistance(Elements.poison);
         E.Conveyance.Macro(Poisoned(Attributes.strength));
@@ -30216,10 +30216,10 @@ namespace Pathos
         E.SetConcealment(Mimicry: false);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 3.d3()));
+        E.SetEngulf(Strikes.force, A => A.HarmEntity(Elements.physical, 3.d3()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 3.d5(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 2.d3() + 2);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 2.d3() + 2);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -30397,10 +30397,10 @@ namespace Pathos
         E.SetConcealment(Mimicry: false);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent();
-        E.SetEngulf(Strikes.force, A => A.Harm(Elements.physical, 4.d4()));
+        E.SetEngulf(Strikes.force, A => A.HarmEntity(Elements.physical, 4.d4()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 3.d7(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 3.d2() + 4);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 3.d2() + 4);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -31662,10 +31662,10 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
-        E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 1.d6()));
+        E.SetEngulf(Strikes.gas, A => A.HarmEntity(Elements.physical, 1.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, Dice.Zero, K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d4() + 2);
           K.Apply.ApplyTransient(Properties.blindness, 3.d7());
         });
         E.SetCorpse(Chance.Never);
@@ -31711,7 +31711,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.disintegrate, Elements.shock, Elements.poison, Elements.sleep, Elements.petrify);
-        E.SetEngulf(Strikes.flash, A => A.Harm(Elements.shock, 4.d5()));
+        E.SetEngulf(Strikes.flash, A => A.HarmEntity(Elements.shock, 4.d5()));
         E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.energy, Dice.One);
@@ -31719,12 +31719,12 @@ namespace Pathos
         });
         E.AddAttack(AttackTypes.engulf, Elements.shock, 1.d6(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 2.d3() + 2);
         });
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.energy, Dice.One);
-          R.Apply.Harm(Elements.shock, 7.d4());
+          R.Apply.HarmEntity(Elements.shock, 7.d4());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -31770,15 +31770,15 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
-        E.SetEngulf(Strikes.flash, A => A.Harm(Elements.fire, 4.d4()));
+        E.SetEngulf(Strikes.flash, A => A.HarmEntity(Elements.fire, 4.d4()));
         E.AddAttack(AttackTypes.engulf, Elements.fire, 4.d4(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 2.d3() + 2);
         });
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.flame, Dice.One);
-          R.Apply.Harm(Elements.fire, 9.d4());
+          R.Apply.HarmEntity(Elements.fire, 9.d4());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -31823,10 +31823,10 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight, Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.petrify);
-        E.SetEngulf(Strikes.gas, A => A.Harm(Elements.physical, 1.d6()));
+        E.SetEngulf(Strikes.gas, A => A.HarmEntity(Elements.physical, 1.d6()));
         E.AddAttack(AttackTypes.engulf, Elements.physical, 4.d2(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d3() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d3() + 2);
         }); // -3
         E.SetCorpse(Chance.Never);
       });
@@ -31873,17 +31873,17 @@ namespace Pathos
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.frost, A =>
         {
-          A.Harm(Elements.cold, 2.d8());
+          A.HarmEntity(Elements.cold, 2.d8());
           A.ApplyTransient(Properties.slowness, 2.d3());
         });
         E.AddAttack(AttackTypes.engulf, Elements.cold, 2.d5(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 1.d4() + 2);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 1.d4() + 2);
         });
         E.AddRetaliation(Chance.OneIn3, AttackTypes.touch, R =>
         {
           R.SetCast().Strike(Strikes.frost, Dice.One);
-          R.Apply.Harm(Elements.cold, 4.d4());
+          R.Apply.HarmEntity(Elements.cold, 4.d4());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -31930,13 +31930,13 @@ namespace Pathos
         E.Startup.SetResistance(Elements.fire, Elements.poison, Elements.sleep, Elements.petrify);
         E.SetEngulf(Strikes.gas, A =>
         {
-          A.Harm(Elements.fire, 3.d4());
+          A.HarmEntity(Elements.fire, 3.d4());
           A.ApplyTransient(Properties.blindness, 2.d3());
           A.CreateVolatile(Volatiles.steam, 1.d100() + 100);
         });
         E.AddAttack(AttackTypes.engulf, Elements.fire, 3.d4(), K =>
         {
-          K.Apply.Engulf(Engulfments.engulfed, 2.d3() + 1);
+          K.Apply.EngulfEntity(Engulfments.engulfed, 2.d3() + 1);
         });
         E.SetCorpse(Chance.Never);
       });
@@ -31986,7 +31986,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, 1.d4() + 4);
-          K.Apply.Harm(Elements.acid, 3.d7());
+          K.Apply.HarmEntity(Elements.acid, 3.d7());
           K.Apply.CreateDevice(Codex.Devices.noxious_pool, Destruction: false);
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d10(), K =>
@@ -32220,7 +32220,7 @@ namespace Pathos
         E.Startup.SetTalent(Properties.slippery);
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d20()); // +2
         E.SetCorpse(Chance.Always);
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.Afflict(Codex.Afflictions.worms));
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.AfflictEntity(Codex.Afflictions.worms));
         E.DropLoot.AddKit(Chance.Always, Dice.One, Items.worm_tooth);
       });
 
@@ -32399,7 +32399,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.physical, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.venom, 1.d4() + 4);
-          K.Apply.Harm(Elements.physical, 1.d6());
+          K.Apply.HarmEntity(Elements.physical, 1.d6());
           K.Apply.ApplyTransient(Properties.hallucination, Dice.Fixed(50));
         });
         E.SetCorpse(Chance.Always);
@@ -32490,7 +32490,7 @@ namespace Pathos
         E.Startup.SetResistance(Elements.poison, Elements.disintegrate);
         E.SetEngulf(Strikes.psychic, A =>
         {
-          A.Harm(Elements.physical, 1.d20());
+          A.HarmEntity(Elements.physical, 1.d20());
           A.ApplyTransient(Properties.phasing, 4.d6());
         });
         E.AddAttack(AttackTypes.bite, Elements.physical, 5.d5(), K => // +6
@@ -32499,7 +32499,7 @@ namespace Pathos
         });
         E.AddAttack(AttackTypes.engulf, Elements.physical, 2.d8(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 1.d8() + 2);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 1.d8() + 2);
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
         {
@@ -32550,11 +32550,11 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.slippery);
-        E.SetEngulf(Strikes.venom, A => A.Harm(Elements.physical, 1.d10()));
+        E.SetEngulf(Strikes.venom, A => A.HarmEntity(Elements.physical, 1.d10()));
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +2
         E.AddAttack(AttackTypes.engulf, Elements.physical, 2.d8(), K =>
         {
-          K.Apply.Engulf(Engulfments.swallowed, 1.d8() + 2);
+          K.Apply.EngulfEntity(Engulfments.swallowed, 1.d8() + 2);
         });
         E.SetCorpse(Chance.Always);
       });
@@ -32731,7 +32731,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.spit, Elements.acid, Dice.Zero, K =>
         {
           K.SetCast().Strike(Strikes.acid, Dice.Fixed(3));
-          K.Apply.Harm(Elements.acid, Dice.One);
+          K.Apply.HarmEntity(Elements.acid, Dice.One);
         });
         E.Conveyance.MinorResistance(Elements.poison);
         E.Conveyance.ApplyTransient(Properties.slowness, 4.d4()); // you feel sluggish!
@@ -32950,19 +32950,19 @@ namespace Pathos
           K.SetCast().Strike(Strikes.spirit, Dice.One);
           K.Apply.DrainLife(Elements.drain, 1.d6());
         });
-        E.Conveyance.Harm(Elements.necrotic, 1.d8());
+        E.Conveyance.HarmEntity(Elements.necrotic, 1.d8());
         E.Conveyance.WhenProbability(Table =>
         {
           Table.Add(3, T => T.Nothing());
           Table.Add(1, T =>
           {
-            T.Harm(Elements.necrotic, Dice.Four, Modifier.Plus4);
-            T.Diminish(Dice.Four, Modifier.Plus4);
+            T.HarmEntity(Elements.necrotic, Dice.Four, Modifier.Plus4);
+            T.DiminishEntity(Dice.Four, Modifier.Plus4);
           });
           Table.Add(1, T =>
           {
-            T.Heal(Dice.Fixed(+4), Modifier.FromRank(+4));
-            T.Energise(Dice.Fixed(+4), Modifier.FromRank(+4));
+            T.HealEntity(Dice.Fixed(+4), Modifier.FromRank(+4));
+            T.EnergiseEntity(Dice.Fixed(+4), Modifier.FromRank(+4));
           });
           Table.Add(5, T => T.GainLevel(Dice.One, false));
         });
@@ -33014,7 +33014,7 @@ namespace Pathos
         E.AddDyingRetaliation(Chance.Always, AttackTypes.blast, R =>
         {
           R.SetCast().Explosion(Explosions.electric, Dice.Zero);
-          R.Apply.Harm(Elements.shock, 6.d6());
+          R.Apply.HarmEntity(Elements.shock, 6.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -33065,7 +33065,7 @@ namespace Pathos
         E.AddLivingRetaliation(Chance.Always, AttackTypes.bite, R =>
         {
           R.SetCast().Explosion(Explosions.electric, Dice.Zero);
-          R.Apply.Harm(Elements.shock, 6.d6());
+          R.Apply.HarmEntity(Elements.shock, 6.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -33112,7 +33112,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d10(), A => // +4 from str.
         {
           A.SetCast().Explosion(Explosions.electric, Dice.Zero);
-          A.Apply.Harm(Elements.shock, 6.d6());
+          A.Apply.HarmEntity(Elements.shock, 6.d6());
         });
         E.SetCorpse(Chance.Never);
       });
@@ -33307,7 +33307,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d3()); // +3 from str.
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d5(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.Always);
       });
@@ -33448,7 +33448,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7());
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d7(), D =>
         {
-          D.Apply.WhenChance(Chance.OneIn4, T => T.Decapitate(Anatomies.head, Strikes.sever));
+          D.Apply.WhenChance(Chance.OneIn4, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
         });
         E.SetCorpse(Chance.Always);
       });
@@ -33496,7 +33496,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d2());
         E.AddAttack(AttackTypes.grapple, Elements.physical, 1.d8(), A =>
         {
-          A.Apply.Grapple(2.d6());
+          A.Apply.GrappleEntity(2.d6());
         });
         E.SetCorpse(Chance.Always);
       });
