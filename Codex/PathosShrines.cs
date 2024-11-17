@@ -131,7 +131,7 @@ namespace Pathos
           B.Description = "Remove the curse on one equipped or carried item.";
           B.Cost = 200;
           B.SetCast().FilterSanctity(Sanctities.Cursed);
-          B.Apply.RemoveCurse(Dice.One);
+          B.Apply.RemoveCurse(Dice.One, Sanctities.Uncursed);
         });
 
         S.AddBoon("bless", B =>
@@ -233,7 +233,7 @@ namespace Pathos
           B.Description = "Hatch an egg and become a parent.";
           B.Cost = 100;
           B.SetCast().FilterItem(Codex.Items.egg);
-          B.Apply.Hatch();
+          B.Apply.HatchEgg();
         });
 
         S.AddBoon("grow", B =>
@@ -407,7 +407,7 @@ namespace Pathos
           B.Cost = 500;
           B.SetCast().FilterEnchanted()
            .SetAssetIndividualised();
-          B.Apply.EnchantUp(Dice.Fixed(+1));
+          B.Apply.EnchantItemUp(Dice.Fixed(+1));
         });
 
         S.AddBoon("replicate", B =>

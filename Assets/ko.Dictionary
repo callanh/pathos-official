@@ -545,8 +545,6 @@ BoonName,tinned meat,통조림 고기
 BoonName,undead army,언데드 군대
 BoonName,unicorn friend,유니콘 친구
 CalendarText,d MMMM yyyy,yyyy년 MMMM d일
-ChangeType,decrease,감소
-ChangeType,increase,증가
 CharacterName,Adebesi,아데베시
 CharacterName,Alista,알리스타
 CharacterName,Amaya,아마야
@@ -956,27 +954,6 @@ DietName,metalivore,금속식성
 DietName,omnivore,잡식성
 DietName,organivore,자연식성
 DietName,xylophagy,목식성
-EffectProperty,disenchant,강화해제
-EffectType,blinking,점멸
-EffectType,clone entity,캐릭터 복제
-EffectType,convert barrier,벽 변환
-EffectType,convert gate,문 변환
-EffectType,convert ground,바닥 변환
-EffectType,convert volatile,휘발성 물질 변환
-EffectType,create volatile,휘발성 물질 생성
-EffectType,destroy volatile,휘발성 물질 제거
-EffectType,enchant item,아이템 강화
-EffectType,extinguish volatile,휘발성 물질 증발
-EffectType,hatch,부화
-EffectType,identify,식별
-EffectType,place curse,저주 부여
-EffectType,remove curse,저주 해제
-EffectType,sanctify,신성화
-EffectType,tinning,통조림 제작
-EffectType,visit shop,가게 방문
-EffectType,visit shrine,제단 방문
-EffectType,visit zoo,서식지 방문
-EffectType,warping,워프
 EggName,black dragon,블랙 드래곤
 EggName,blue dragon,블루 드래곤
 EggName,deep dragon,딥 드래곤
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
 FormatText,convert {FeatureName} into {DeviceName},시설 변환 {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},벽 변환 {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},문 변환 {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},바닥 변환 {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},휘발성 물질 변환 {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},"{AttackType}일 시, {Chance}(으)�
 FormatText,retaliate {Chance} on death {AttackType},{AttackType}로 사망 시 {Chance}(으)로 되돌려줌
 FormatText,retaliate {Chance} on hit {AttackType},{AttackType} 피격시 {Chance}(으)로 되돌려줌
 FormatText,revenant {CharacterName},망령 {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},신성화 {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},{ItemName} 발사 - {ElementName}속성 {DamageDice}데미지
 FormatText,stuck {DurationDice},갇힌 상태 {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName}가 {ExplosionName}에너지의 폭발을 일으켰다!
@@ -2129,8 +2111,6 @@ HordeName,wolf,늑대
 HordeName,worm,벌레
 HordeName,yeoman,요우먼
 HordeName,zombie,좀비
-IdentifyTypeName,All,전체
-IdentifyTypeName,One,하나
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,착용자의 시야를 완전히 가리는 천 마스크.
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",시체를 압축해서 담기 위한 빈 통과 정육 도구등의 식기 모음.
 ItemDescription,A compact hand-held firearm.,휴대용 소형 화기.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,베타 버전에 대한 토론
 LiteralText,Black background,검은 배경
 LiteralText,blasphemy,신성모독
 LiteralText,BLINK,점멸
+LiteralText,blink entity,점멸
 LiteralText,Blink which direction?,어느 방향으로 점멸하시겠습니까?
 LiteralText,block,막다
 LiteralText,BLOCKED,막힘
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,클리어
 LiteralText,click to download,클릭하여 다운로드
 LiteralText,click to retry,클릭하여 재시도
 LiteralText,Click to send detected issues to the author,클릭하여 제작자에게 문제점을 보고합니다
+LiteralText,clone source entity,캐릭터 복제 재료
+LiteralText,clone target entity,캐릭터 복제 타겟
 LiteralText,CLOSE,닫기
 LiteralText,closed,닫힘
 LiteralText,Coding on Medium,Medium에서 코딩
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,연결해제
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,연결이 끊겼습니다. 네트워크에 연결되어 있는지 확인하시고 모든 기기에 동일한 버전의 Pathos가 설치되어 있는지 확인하세요.
 LiteralText,discover item,깨달음
 LiteralText,Discuss on Reddit,레딧에서 의논하기.
+LiteralText,disenchant item,강화해제
 LiteralText,dismantle items to extract the base materials and raw essence,아이템을 분해해서 원료와 정수를 추출하세요.
 LiteralText,DISMISS,취소
 LiteralText,DISMOUNT,내리기
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,문
 LiteralText,double damage when mounted,승마중에 사용시 두 배의 피해를 줍니다
 LiteralText,downgrade to,다운그레이드:
 LiteralText,downloading update,업데이트 다운로드중
+LiteralText,drain item,
 LiteralText,drop,떨어트림
 LiteralText,DROP,떨어뜨리기
 LiteralText,DUAL WIELD,쌍수 장비
@@ -3245,6 +3230,7 @@ LiteralText,else,아닐경우
 LiteralText,EMAIL,이메일
 LiteralText,Enable auto save,자동 저장 켜기
 LiteralText,Enable master mode,마스터 모드 켜기
+LiteralText,enchant item,아이템 강화
 LiteralText,enchanted items,강화된 아이템
 LiteralText,encounters,조우하다
 LiteralText,encumbrance thresholds,무게 한도
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,경험치
 LiteralText,explosion,폭발
 LiteralText,EXPORT,내보내기
 LiteralText,extinctions,멸종
+LiteralText,extinguish,휘발성 물질 증발
 LiteralText,FAILED,실패함
 LiteralText,failed to download,다운로드 실패
 LiteralText,fame,명성
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,바닥
 LiteralText,grow entity,성장
 LiteralText,GUIDES,가이드
 LiteralText,HALL of FAME,명예의 전당
+LiteralText,hatch egg,부화
 LiteralText,hatched by,부화되었다
 LiteralText,Having trouble finding the stairs down to the next level?,다음 레벨로 가는 계단을 찾기 곤란합니까?
 LiteralText,Help,도움말
@@ -3338,7 +3326,9 @@ LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,모험을 재미있게 즐기셨으면 좋겠고 피드백이나 건의사항이 있다면 얼마든지 저에게 보내주세요.
 LiteralText,identified items,식별된 아이템
+LiteralText,identify all items,식별 전체
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,땅에 떨어진 모든 아이템을 식별함
+LiteralText,identify one item,식별 하나
 LiteralText,ILLITERATE,문맹
 LiteralText,illusion,환영
 LiteralText,ILLUSION,환영
@@ -3493,6 +3483,7 @@ LiteralText,permanent,영구
 LiteralText,PERSONAL,개인
 LiteralText,PLACE,넣기
 LiteralText,PLACE ALL,전부 넣기
+LiteralText,place curse,저주 부여
 LiteralText,platform,플랫폼
 LiteralText,Play,플레이
 LiteralText,Play a sound effect?,음향 효과를 재생할까요?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,강화됨
 LiteralText,REINFORCED,강화됨
 LiteralText,release entity,풀어주기
 LiteralText,remove all transients,모든 일시적인 효과 해제
+LiteralText,remove curse,저주 해제
 LiteralText,REMOVE CURSE,저주 해제
 LiteralText,remove random resistance,무작위 내성 제거
 LiteralText,remove random talent,무작위 재능 제거
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,던졌다
 LiteralText,THROW,던지기
 LiteralText,tin,통조림
+LiteralText,tinning,통조림 제작
 LiteralText,TOO BIG,너무 큼
 LiteralText,TOO HEAVY,너무 무거움
 LiteralText,TOO HUNGRY,너무 배고픔
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
+LiteralText,volatile,
 LiteralText,VOLATILES,휘발성 물질
 LiteralText,vomit,구토
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
+LiteralText,warping,워프
 LiteralText,WARPING,워프증
 LiteralText,was killed,죽었다
 LiteralText,weakness to,약점 :

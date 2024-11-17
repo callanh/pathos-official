@@ -545,8 +545,6 @@ BoonName,tinned meat,缶詰作成
 BoonName,undead army,アンデッドの軍団
 BoonName,unicorn friend,ユニコーンの友達
 CalendarText,d MMMM yyyy,yyyy/M/d
-ChangeType,decrease,減少
-ChangeType,increase,増加
 CharacterName,Adebesi,アデベシ
 CharacterName,Alista,アリスタ
 CharacterName,Amaya,アマヤ
@@ -956,27 +954,6 @@ DietName,metalivore,金属食
 DietName,omnivore,雑食
 DietName,organivore,有機食
 DietName,xylophagy,木食
-EffectProperty,disenchant,劣化する
-EffectType,blinking,転位
-EffectType,clone entity,分裂
-EffectType,convert barrier,壁を変換
-EffectType,convert gate,扉を変換
-EffectType,convert ground,床を変換
-EffectType,convert volatile,地形効果を変換
-EffectType,create volatile,地形効果が発生
-EffectType,destroy volatile,地形効果が消滅
-EffectType,enchant item,アイテムの修正値
-EffectType,extinguish volatile,地形効果が霧散
-EffectType,hatch,孵化
-EffectType,identify,識別
-EffectType,place curse,呪いをかける
-EffectType,remove curse,解呪
-EffectType,sanctify,祝呪を変更
-EffectType,tinning,詰める
-EffectType,visit shop,お店を訪問
-EffectType,visit shrine,社を訪ねる
-EffectType,visit zoo,動物園を訪問
-EffectType,warping,ダンジョン変容
 EggName,black dragon,ブラックドラゴン
 EggName,blue dragon,ブルードラゴン
 EggName,deep dragon,ディープドラゴン
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
 FormatText,convert {FeatureName} into {DeviceName},設備を変換 {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},壁を変換 {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},扉を変換 {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},床を変換 {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},地形効果を変換 {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},{AttributeName}が激減
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},{Chance} 反撃 {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},死亡時に反撃 {Chance}{AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},被攻撃時に反撃 {Chance}{AttackType}
 FormatText,revenant {CharacterName},黄泉帰りの{CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},祝呪を変更 {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},{ElementName}ダメージ{DamageDice}の{ItemName}を発射
 FormatText,stuck {DurationDice},足止め{DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName}は{ExplosionName}のエネルギーで爆発した！
@@ -2129,8 +2111,6 @@ HordeName,wolf,狼
 HordeName,worm,肥溜め虫
 HordeName,yeoman,近衛兵
 HordeName,zombie,ゾンビ
-IdentifyTypeName,All,持ち物すべて
-IdentifyTypeName,One,アイテム1つ
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,着用者の視界を完全に遮る布のアイマスク。
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",死体を缶に詰め込むための、空の缶や精肉用具などのキット。
 ItemDescription,A compact hand-held firearm.,コンパクトで持ち運びしやすい銃器。
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,ベータ版に関する意見交換
 LiteralText,Black background,背景を黒くする
 LiteralText,blasphemy,冒涜
 LiteralText,BLINK,転位
+LiteralText,blink entity,転位
 LiteralText,Blink which direction?,どの方向に転位する？
 LiteralText,block,障害物
 LiteralText,BLOCKED,防がれた
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,クリア
 LiteralText,click to download,クリックしてダウンロード
 LiteralText,click to retry,クリックして再試行
 LiteralText,Click to send detected issues to the author,検出された問題をメールします
+LiteralText,clone source entity,分裂 それ自体
+LiteralText,clone target entity,分裂 対象
 LiteralText,CLOSE,閉じる
 LiteralText,closed,閉じている
 LiteralText,Coding on Medium,Mediumの記事を読む
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,切断
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,切断されました。ネットワーク接続に問題がないこと、およびゲームに参加する全てのデバイスでPathosのバージョンが等しいことを確認してください。
 LiteralText,discover item,アイテムの知識を得る
 LiteralText,Discuss on Reddit,Redditで話し合う
+LiteralText,disenchant item,劣化する
 LiteralText,dismantle items to extract the base materials and raw essence,アイテムを分解し原材料とエッセンスを抽出する
 LiteralText,DISMISS,別れる
 LiteralText,DISMOUNT,降りる
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,扉
 LiteralText,double damage when mounted,騎乗時に2倍のダメージ
 LiteralText,downgrade to,ダウングレード
 LiteralText,downloading update,アップデートをダウンロード中
+LiteralText,drain item,
 LiteralText,drop,ドロップ
 LiteralText,DROP,床に置く
 LiteralText,DUAL WIELD,二刀流
@@ -3245,6 +3230,7 @@ LiteralText,else,それ以外
 LiteralText,EMAIL,Eメール
 LiteralText,Enable auto save,オートセーブを有効にする
 LiteralText,Enable master mode,マスターモードを有効にする
+LiteralText,enchant item,アイテムの修正値
 LiteralText,enchanted items,魔力付与されているアイテム
 LiteralText,encounters,モンスター発見数
 LiteralText,encumbrance thresholds,障害しきい値
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,経験
 LiteralText,explosion,爆発
 LiteralText,EXPORT,エクスポート
 LiteralText,extinctions,根絶されたモンスター
+LiteralText,extinguish,地形効果が霧散
 LiteralText,FAILED,失敗しました
 LiteralText,failed to download,ダウンロードに失敗しました
 LiteralText,fame,名声
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,地面
 LiteralText,grow entity,成長
 LiteralText,GUIDES,ガイド
 LiteralText,HALL of FAME,名誉の殿堂
+LiteralText,hatch egg,孵化
 LiteralText,hatched by,孵化条件
 LiteralText,Having trouble finding the stairs down to the next level?,階段が見つからなくて先に進めませんか？
 LiteralText,Help,ヘルプ
@@ -3338,7 +3326,9 @@ LiteralText,HOST,ホスト
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,冒険を楽しんで頂けたでしょうか。どうぞ感想や提案をお寄せください。
 LiteralText,identified items,識別されたアイテム
+LiteralText,identify all items,識別持ち物すべて
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,床の上のすべてのアイテムを識別
+LiteralText,identify one item,識別アイテム1つ
 LiteralText,ILLITERATE,読めない
 LiteralText,illusion,幻影
 LiteralText,ILLUSION,幻影
@@ -3493,6 +3483,7 @@ LiteralText,permanent,破壊不能
 LiteralText,PERSONAL,個人
 LiteralText,PLACE,置く
 LiteralText,PLACE ALL,全て置く
+LiteralText,place curse,呪いをかける
 LiteralText,platform,橋
 LiteralText,Play,プレーする
 LiteralText,Play a sound effect?,効果音を再生しますか？
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,強化扉
 LiteralText,REINFORCED,蹴破れない
 LiteralText,release entity,解放
 LiteralText,remove all transients,全ての一時的な状態を解消
+LiteralText,remove curse,解呪
 LiteralText,REMOVE CURSE,解呪
 LiteralText,remove random resistance,ランダムな耐性を失う
 LiteralText,remove random talent,ランダムな性質を失う
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,を投げた
 LiteralText,THROW,投げる
 LiteralText,tin,の缶詰
+LiteralText,tinning,詰める
 LiteralText,TOO BIG,大きすぎる
 LiteralText,TOO HEAVY,重すぎる
 LiteralText,TOO HUNGRY,空腹すぎる
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,VOID SPACE,ボイドスペース
+LiteralText,volatile,
 LiteralText,VOLATILES,地形効果
 LiteralText,vomit,おう吐
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
+LiteralText,warping,ダンジョン変容
 LiteralText,WARPING,ダンジョン変容
 LiteralText,was killed,殺された
 LiteralText,weakness to,弱点

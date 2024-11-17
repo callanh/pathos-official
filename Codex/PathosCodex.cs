@@ -179,7 +179,7 @@ namespace Pathos
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
         A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
-        A.RemoveCurse(Dice.One); // remove one curse.
+        A.RemoveCurse(Dice.One, Sanctities.Uncursed); // remove one curse.
         A.RaiseDeadEntity(100, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: true); // raise one loyal companion from the dead.
       });
 

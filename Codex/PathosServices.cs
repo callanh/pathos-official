@@ -37,7 +37,7 @@ namespace Pathos
       identify = AddService("identification", "identify one item in your inventory.", Gold.FromCoins(500), S =>
       {
         S.SetCast().FilterIdentified(false);
-        S.Apply.Identify(All: false, Sanctity: null);
+        S.Apply.IdentifyItem(All: false, Sanctity: null);
       });
 
       magic_mapping = AddService("magic mapping", "magic mapping for the surrounding area.", Gold.FromCoins(250), S =>
@@ -49,7 +49,7 @@ namespace Pathos
       remove_curse = AddService("curse removal", "remove a curse from one item in your inventory.", Gold.FromCoins(1000), S =>
       {
         S.SetCast().FilterSanctity(Sanctities.Cursed);
-        S.Apply.RemoveCurse(Dice.One);
+        S.Apply.RemoveCurse(Dice.One, Sanctities.Uncursed);
       });
 
       restock = AddService("restock shop", "refresh the shop with new items for sale.", Gold.FromCoins(10000), S =>

@@ -93,7 +93,7 @@ namespace Pathos
 
       hatching_eggs = AddTrick("hatching eggs", A =>
       {
-        A.Hatch();
+        A.HatchEgg();
       });
 
       instant_death = AddTrick("instant death", A =>
@@ -179,9 +179,9 @@ namespace Pathos
 
       sudden_hellscape = AddTrick("sudden hellscape", A =>
       {
-        A.ConvertBarrier(Barriers.hell_brick, Locality.Map);
-        //A.ConvertFloor(Grounds.obsidian_floor, Locality.Map);
-        //A.ConvertDoor(Gates.crystal_door, Locality.Map);
+        A.ConvertBarrier(FromBarrier: null, ToBarrier: Barriers.hell_brick, Locality.Map);
+        //A.ConvertGround(FromGround: null, ToGround: Grounds.obsidian_floor, Locality.Map);
+        //A.ConvertGate(FromGate: null, ToGate: Gates.crystal_door, Locality.Map);
       });
 
       marble_paving = AddTrick("marble paving", A =>

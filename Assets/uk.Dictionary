@@ -545,8 +545,6 @@ BoonName,tinned meat,м'ясні консерви
 BoonName,undead army,армія мерців
 BoonName,unicorn friend,друг-єдиноріг
 CalendarText,d MMMM yyyy,d дд MM yy
-ChangeType,decrease,зменшення
-ChangeType,increase,збільшення
 CharacterName,Adebesi,Адебесі
 CharacterName,Alista,Алиста
 CharacterName,Amaya,Амая
@@ -956,27 +954,6 @@ DietName,metalivore,металоїдна
 DietName,omnivore,всеїдна
 DietName,organivore,деревоїдна
 DietName,xylophagy,древоядний
-EffectProperty,disenchant,расколдовивает
-EffectType,blinking,телепротувати
-EffectType,clone entity,клонує персонажа
-EffectType,convert barrier,перетворює стіну
-EffectType,convert gate,перетворює двері
-EffectType,convert ground,перетворює підлогу
-EffectType,convert volatile,перетворює лужу
-EffectType,create volatile,створює лужу
-EffectType,destroy volatile,прибрати лужу
-EffectType,enchant item,заклинає цінність
-EffectType,extinguish volatile,загасити
-EffectType,hatch,вилупляється
-EffectType,identify,пізнає
-EffectType,place curse,накладає прокляття
-EffectType,remove curse,знімає прокляття
-EffectType,sanctify,освячує
-EffectType,tinning,консервує
-EffectType,visit shop,відвідати крамницю
-EffectType,visit shrine,відвідати святилище
-EffectType,visit zoo,відвідати зоопарк
-EffectType,warping,скручує
 EggName,black dragon,чорний дракон
 EggName,blue dragon,синій дракон
 EggName,deep dragon,глибинний дракон
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,максимум {Percent}%
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
 FormatText,convert {FeatureName} into {DeviceName},перетворює механізм {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},перетворює стіну {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},перетворює двері {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},перетворює підлогу {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},перетворює лужу {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},скалічило {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},зменшити {AttributeName} на {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},{Chance} вдарити у відпо
 FormatText,retaliate {Chance} on death {AttackType},"{Chance} вдарити у відповідь на, коли помирає від {AttackType}"
 FormatText,retaliate {Chance} on hit {AttackType},{Chance} вдарити у відповідь на {AttackType}
 FormatText,revenant {CharacterName},повсталий {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},освячує {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},стріляти {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},застряг {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} випускає вибух енергії {ExplosionName}!
@@ -2129,8 +2111,6 @@ HordeName,wolf,вовк
 HordeName,worm,хробак
 HordeName,yeoman,йомен
 HordeName,zombie,зомбі
-IdentifyTypeName,All,Все
-IdentifyTypeName,One,Один
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Маска з тканини, що повністю блокує зір носія."
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Набір приладдя, включаючи порожні бляшанки та інструменти для розділки, призначений для пакування трупів з метою їх ущільнення."
 ItemDescription,A compact hand-held firearm.,Компактна ручна вогнепальна зброя.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,Саме тут можна обговорити г�
 LiteralText,Black background,Чорний фон
 LiteralText,blasphemy,богохульство
 LiteralText,BLINK,ТЕЛЕПОРТУ
+LiteralText,blink entity,телепротувати
 LiteralText,Blink which direction?,Куди телепортуватися?
 LiteralText,block,клітина
 LiteralText,BLOCKED,заблоковано
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,ОЧИСТИТИ
 LiteralText,click to download,натисніть для завантаження
 LiteralText,click to retry,"Натисніть, щоб повторити спробу."
 LiteralText,Click to send detected issues to the author,"Натисніть, щоб надіслати звіт про помилки"
+LiteralText,clone source entity,клонує персонажа джерело
+LiteralText,clone target entity,клонує персонажа ціль
 LiteralText,CLOSE,ЗАКРИТИ
 LiteralText,closed,закрито
 LiteralText,Coding on Medium,Нотатки щодо програмування на Medium
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,ВІД’ЄДНАТИСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Виявлено роз'єднання. Будь ласка, переконайтеся, що у вас надійне мережеве з'єднання і всі пристрої використовують однакову версію Pathos."
 LiteralText,discover item,просвітлює
 LiteralText,Discuss on Reddit,Обговорюйте на Reddit
+LiteralText,disenchant item,расколдовивает
 LiteralText,dismantle items to extract the base materials and raw essence,витяг з предметів основних матеріалів і есенцій
 LiteralText,DISMISS,ВИГНАТИ
 LiteralText,DISMOUNT,зпішитися
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,ДВЕРІ
 LiteralText,double damage when mounted,"подвійні ушкодження, коли верхи"
 LiteralText,downgrade to,погіршується до
 LiteralText,downloading update,завантаження оновлення
+LiteralText,drain item,
 LiteralText,drop,викинути
 LiteralText,DROP,ВИКИНУТИ
 LiteralText,DUAL WIELD,В ДРУГУ РУКУ
@@ -3245,6 +3230,7 @@ LiteralText,else,інакше
 LiteralText,EMAIL,Ел. скринька
 LiteralText,Enable auto save,Увімкнути автоматичне збереження
 LiteralText,Enable master mode,Увімкнути режим майстра
+LiteralText,enchant item,заклинає цінність
 LiteralText,enchanted items,зачаровані речі
 LiteralText,encounters,істоти
 LiteralText,encumbrance thresholds,пороги обтяження
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,ДОСВІД
 LiteralText,explosion,вибух
 LiteralText,EXPORT,ЕКСПОРТ
 LiteralText,extinctions,гасіння
+LiteralText,extinguish,загасити
 LiteralText,FAILED,НЕВДАЧА
 LiteralText,failed to download,не вдалося завантажити
 LiteralText,fame,слави
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,ЗЕМЛЯ
 LiteralText,grow entity,зростання
 LiteralText,GUIDES,КЕРІВНИЦТВО
 LiteralText,HALL of FAME,ЗАЛ СЛАВИ
+LiteralText,hatch egg,вилупляється
 LiteralText,hatched by,висижує
 LiteralText,Having trouble finding the stairs down to the next level?,Проблеми з пошуком сходів на наступний рівень?
 LiteralText,Help,Довідка
@@ -3338,7 +3326,9 @@ LiteralText,HOST,СТВОРИТИ СЕРВЕР
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однак, можливо, ви захочете дограти свою пригоду, перш ніж оновити гру."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я сподіваюся, ви насолоджуєтеся пригоди, і будь ласка, не соромтеся відправляти мені ваші відгуки і пропозиції."
 LiteralText,identified items,розпізнав речі
+LiteralText,identify all items,пізнає все
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,УПІЗНАНО ВСІ ПРЕДМЕТИ НА ПІДЛОЗІ
+LiteralText,identify one item,пізнає один
 LiteralText,ILLITERATE,НЕГРАМОТНІСТЬ
 LiteralText,illusion,ілюзія
 LiteralText,ILLUSION,ІЛЮЗІЯ
@@ -3493,6 +3483,7 @@ LiteralText,permanent,постійний
 LiteralText,PERSONAL,ПЕРСОНАЛЬНИЙ
 LiteralText,PLACE,ВІДДАТИ
 LiteralText,PLACE ALL,ВІДДАТИ ВСЕ
+LiteralText,place curse,накладає прокляття
 LiteralText,platform,платформа
 LiteralText,Play,Відтворити
 LiteralText,Play a sound effect?,Відтворити який ефект?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,зміцнений
 LiteralText,REINFORCED,ЗМІЦНЕНИЙ
 LiteralText,release entity,випустити
 LiteralText,remove all transients,знімає всі тимчасові
+LiteralText,remove curse,знімає прокляття
 LiteralText,REMOVE CURSE,ЗНЯТИ ПРОКЛЯТТЯ
 LiteralText,remove random resistance,прибирає випадкову стійкість
 LiteralText,remove random talent,прибирає випадковий талант
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,жбурнув
 LiteralText,THROW,ЖБУРНУТИ
 LiteralText,tin,консерви
+LiteralText,tinning,консервує
 LiteralText,TOO BIG,ЗАНАДТО ВЕЛИКА
 LiteralText,TOO HEAVY,ЗАНАДТО ВАЖКИЙ
 LiteralText,TOO HUNGRY,ЗАНАДТО ГОЛОДНИЙ
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,Марнославство
 LiteralText,VIEW,ОГЛЯД
 LiteralText,Visit the website,Відвідайте вебсайт
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
+LiteralText,volatile,
 LiteralText,VOLATILES,ЛЕТКІ
 LiteralText,vomit,блює
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
 LiteralText,Wait how many turns?,Чекати скільки ходів?
+LiteralText,warping,скручує
 LiteralText,WARPING,УВАГА
 LiteralText,was killed,було вбито
 LiteralText,weakness to,слабкий до

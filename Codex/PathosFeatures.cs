@@ -74,7 +74,7 @@ namespace Pathos
           B =>
           {
             B.UnpunishEntity();
-            B.RemoveCurse(Dice.One);
+            B.RemoveCurse(Dice.One, Sanctities.Uncursed);
             B.DivineItem();
             B.Sanctify(Items.potion_of_water, Sanctities.Blessed);
           },
@@ -383,11 +383,11 @@ namespace Pathos
           Table.Add(1, A => A.TeleportEntity(Properties.teleportation));
           Table.Add(1, A => A.TeleportInventoryItem());
           Table.Add(1, A => A.PolymorphEntity());
-          Table.Add(1, A => A.Identify(All: true, Sanctity: null)); // identify all items in inventory.
+          Table.Add(1, A => A.IdentifyItem(All: true, Sanctity: null)); // identify all items in inventory.
           Table.Add(1, A => A.ApplyTransient(Properties.stunned, 1.d7() + 16));
           Table.Add(1, A => A.GainSkill(RandomPoints: false, Codex.Skills.heavy_armour));
           Table.Add(1, A => A.AnimateObject(ObjectEntity: Entities.animate_object, CorruptProperty: null, CorruptDice: Dice.Zero));
-          Table.Add(1, A => A.EnchantUp(Dice.One)); // enchant a random item.
+          Table.Add(1, A => A.EnchantItemUp(Dice.One)); // enchant a random item.
           Table.Add(1, A => A.EnergiseEntity(Dice.Zero, Modifier.FromRank(4))); // increase maximum mana.
           Table.Add(1, A => A.HealEntity(Dice.Zero, Modifier.FromRank(4))); // increase maximum life.
           //Table.Add(1, A => A.CloneSourceCharacter(Dice.One)); // TODO: hostile and replica equipment.

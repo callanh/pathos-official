@@ -545,8 +545,6 @@ BoonName,tinned meat,
 BoonName,undead army,กองทัพอันเด๊ด
 BoonName,unicorn friend,เป็นเพื่อนกับยูนิคอร์น
 CalendarText,d MMMM yyyy,dd/MM/yyyy
-ChangeType,decrease,ลดลง
-ChangeType,increase,เพิ่มขึ้น
 CharacterName,Adebesi,อเดบีซี
 CharacterName,Alista,อลิสต้า
 CharacterName,Amaya,อมายา
@@ -956,27 +954,6 @@ DietName,metalivore,สัตว์กินเหล็ก
 DietName,omnivore,กินทั้งพืชและสัตว์
 DietName,organivore,กินเฉพาะอาหารไร้สารเคมี
 DietName,xylophagy,สัตว์กินไม้
-EffectProperty,disenchant,ถอนเสน่ห์
-EffectType,blinking,เคลื่อนที่พริบตา
-EffectType,clone entity,
-EffectType,convert barrier,เปลี่ยนกำแพง
-EffectType,convert gate,เปลี่ยนประตู
-EffectType,convert ground,เปลี่ยนพื้น
-EffectType,convert volatile,
-EffectType,create volatile,
-EffectType,destroy volatile,
-EffectType,enchant item,ลงอาคมทรัพย์สิน
-EffectType,extinguish volatile,
-EffectType,hatch,ฟัก
-EffectType,identify,ระบุ
-EffectType,place curse,ลงคำสาป
-EffectType,remove curse,ถอนคำสาป
-EffectType,sanctify,
-EffectType,tinning,
-EffectType,visit shop,เยี่ยมร้านค้า
-EffectType,visit shrine,เยี่ยมสถานที่บูชา
-EffectType,visit zoo,เยี่ยมสวยสัตว์
-EffectType,warping,
 EggName,black dragon,มังกรดำ
 EggName,blue dragon,มังกรฟ้า
 EggName,deep dragon,มังกรลึกลับ
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
 FormatText,convert {FeatureName} into {DeviceName},เปลี่ยนของประจำที่ {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},เปลี่ยนกำแพง {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},เปลี่ยนประตู {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},เปลี่ยนพื้น {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},พิการด้าน{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ลด{AttributeName}ลง {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},
 FormatText,retaliate {Chance} on death {AttackType},
 FormatText,retaliate {Chance} on hit {AttackType},
 FormatText,revenant {CharacterName},
+FormatText,sanctify {ItemName} as {SanctityName},
 FormatText,shoot {ItemName} {ElementName} {DamageDice},ยิง{ItemName}เป็น{ElementName}ความเสียหาย{DamageDice}
 FormatText,stuck {DurationDice},ติด {DurationDice} เทิร์น
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName}ระเบิดพลัง{ExplosionName}!
@@ -2129,8 +2111,6 @@ HordeName,wolf,หมาป่า
 HordeName,worm,หนอน
 HordeName,yeoman,เสรีชน
 HordeName,zombie,ซอมบี้
-IdentifyTypeName,All,ทั้งหมด
-IdentifyTypeName,One,ชิ้นเดียว
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",
 ItemDescription,A compact hand-held firearm.,
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,
 LiteralText,Black background,พื้นหลังสีดำ
 LiteralText,blasphemy,
 LiteralText,BLINK,เคลื่อนที่พริบตา
+LiteralText,blink entity,เคลื่อนที่พริบตา
 LiteralText,Blink which direction?,เคลื่อนที่พริบตาไปทางไหน?
 LiteralText,block,ป้องกัน
 LiteralText,BLOCKED,ป้องกัน
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,เคลียร์
 LiteralText,click to download,กดเพื่อดาวน์โหลด
 LiteralText,click to retry,กดเพื่อลองใหม่
 LiteralText,Click to send detected issues to the author,กดเพื่อส่งปัญหาที่พบให้ผู้สร้าง
+LiteralText,clone source entity,
+LiteralText,clone target entity,
 LiteralText,CLOSE,ปิด
 LiteralText,closed,ปิดแล้ว
 LiteralText,Coding on Medium,เขียนโปรแกรมบน Medium
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,หยุดการเชื่อมต่อ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,
 LiteralText,Discuss on Reddit,พูดคุยบน Reddit
+LiteralText,disenchant item,ถอนเสน่ห์
 LiteralText,dismantle items to extract the base materials and raw essence,แยกชิ้นส่วนไอเท็มเพื่อให้ได้วัสดุและเนื้อแท้ไอเท็ม
 LiteralText,DISMISS,เฉดหัวทิ้ง
 LiteralText,DISMOUNT,เลิกขี่
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,ประตู
 LiteralText,double damage when mounted,ความเสียหายสองเท่าเมื่อขี่
 LiteralText,downgrade to,ลดขั้นเป็น
 LiteralText,downloading update,ดาวน์โหลดอัพเดต
+LiteralText,drain item,
 LiteralText,drop,ทิ้งลง
 LiteralText,DROP,ทิ้งลง
 LiteralText,DUAL WIELD,ถือคู่
@@ -3245,6 +3230,7 @@ LiteralText,else,อย่างอื่น
 LiteralText,EMAIL,อีเมล์
 LiteralText,Enable auto save,เปิดใช้งานการบันทึกอัตโนมัติ
 LiteralText,Enable master mode,เปิดใช้งานโหมดแอดมิน
+LiteralText,enchant item,ลงอาคมทรัพย์สิน
 LiteralText,enchanted items,
 LiteralText,encounters,เผชิญหน้า
 LiteralText,encumbrance thresholds,น้ำหนักสูงสุด
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,ค่าประสบการณ์
 LiteralText,explosion,ระเบิด
 LiteralText,EXPORT,ส่งออก
 LiteralText,extinctions,การสูญพันธุ์
+LiteralText,extinguish,
 LiteralText,FAILED,ล้มเหลว
 LiteralText,failed to download,ดาวน์โหลดล้มเหลว
 LiteralText,fame,ชื่อเสียง
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,พื้น
 LiteralText,grow entity,โตขึ้น
 LiteralText,GUIDES,แนะนำ
 LiteralText,HALL of FAME,โถงแห่งเกียรติยศ
+LiteralText,hatch egg,ฟัก
 LiteralText,hatched by,ฟักโดย
 LiteralText,Having trouble finding the stairs down to the next level?,ทางบันไดลงไปชั้นล่างไม่เจอเหรอ?
 LiteralText,Help,ข้อมูลเพิ่มเติม
@@ -3338,7 +3326,9 @@ LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.",
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,
 LiteralText,identified items,ระบุไอเท็ม
+LiteralText,identify all items,ระบุทั้งหมด
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ระบุไอเท็มทั้งหมดที่อยู่บนพื้น
+LiteralText,identify one item,ระบุชิ้นเดียว
 LiteralText,ILLITERATE,
 LiteralText,illusion,
 LiteralText,ILLUSION,ภาพลวงตา
@@ -3493,6 +3483,7 @@ LiteralText,permanent,ถาวร
 LiteralText,PERSONAL,ส่วนตัว
 LiteralText,PLACE,ใส่
 LiteralText,PLACE ALL,ใส่ทั้งหมด
+LiteralText,place curse,ลงคำสาป
 LiteralText,platform,
 LiteralText,Play,เล่น
 LiteralText,Play a sound effect?,เปิดเสียงเอฟเฟคไหม?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,เสริมกำลัง
 LiteralText,REINFORCED,เสริมกำลัง
 LiteralText,release entity,ปลดปล่อย
 LiteralText,remove all transients,ล้างสถานะชั่วคราวทั้งหมด
+LiteralText,remove curse,ถอนคำสาป
 LiteralText,REMOVE CURSE,ถอนคำสาป
 LiteralText,remove random resistance,สุ่มล้างการต้านทาน
 LiteralText,remove random talent,สุ่มล้างพรสวรรค์
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,ขว้าง
 LiteralText,THROW,ขว้าง
 LiteralText,tin,ดีบุก
+LiteralText,tinning,
 LiteralText,TOO BIG,ตัวใหญ่เกินไป
 LiteralText,TOO HEAVY,ตัวหนักเกินไป
 LiteralText,TOO HUNGRY,หิวเกินไป
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,
 LiteralText,VIEW,ดู
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
 LiteralText,VOID SPACE,
+LiteralText,volatile,
 LiteralText,VOLATILES,
 LiteralText,vomit,อ้วก
 LiteralText,vulnerable to,แพ้ทางต่อ
 LiteralText,WAIT,รอ
 LiteralText,Wait how many turns?,รอกี่เทิร์น?
+LiteralText,warping,
 LiteralText,WARPING,
 LiteralText,was killed,ถูกฆ่า
 LiteralText,weakness to,แพ้ทางให้กับ

@@ -240,7 +240,7 @@ namespace Pathos
           Table.Add(1, A =>
           {
             A.UnpunishEntity();
-            A.RemoveCurse(Dice.One);
+            A.RemoveCurse(Dice.One, Sanctities.Uncursed);
           });
           Table.Add(1, A =>
           {

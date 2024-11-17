@@ -545,8 +545,6 @@ BoonName,tinned meat,罐装肉块
 BoonName,undead army,不死大军
 BoonName,unicorn friend,独角兽伙伴
 CalendarText,d MMMM yyyy,yyyy年 M月 d日
-ChangeType,decrease,减少
-ChangeType,increase,增加
 CharacterName,Adebesi,Adebesi
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
@@ -956,27 +954,6 @@ DietName,metalivore,金属食性
 DietName,omnivore,杂食性
 DietName,organivore,有机食品食性
 DietName,xylophagy,木食性
-EffectProperty,disenchant,去附魔
-EffectType,blinking,闪现
-EffectType,clone entity,克隆角色
-EffectType,convert barrier,转换墙壁
-EffectType,convert gate,转换门
-EffectType,convert ground,转换地面
-EffectType,convert volatile,转换环境效果
-EffectType,create volatile,制造环境效果
-EffectType,destroy volatile,移除环境效果
-EffectType,enchant item,附魔物件
-EffectType,extinguish volatile,消除环境效果
-EffectType,hatch,孵化
-EffectType,identify,鉴定
-EffectType,place curse,诅咒
-EffectType,remove curse,去除诅咒
-EffectType,sanctify,神圣化
-EffectType,tinning,罐装
-EffectType,visit shop,访问商店
-EffectType,visit shrine,访问神龛
-EffectType,visit zoo,访问动物园
-EffectType,warping,传送
 EggName,black dragon,黑龙
 EggName,blue dragon,蓝龙
 EggName,deep dragon,深渊龙
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,{Percent}% 封顶
 FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
 FormatText,convert {FeatureName} into {DeviceName},转换固定物 {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},转换墙壁 {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},转换门 {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},转换地面 {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},转换环境效果 {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},损害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},复仇 {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},复仇 {Chance} 死亡时 {AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},复仇 {Chance} 被击中时 {AttackType}
 FormatText,revenant {CharacterName},复仇者 {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},神圣化 {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},射击 {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},无法挣脱 {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} 爆发出 {ExplosionName} 能量！
@@ -2129,8 +2111,6 @@ HordeName,wolf,狼
 HordeName,worm,蠕虫
 HordeName,yeoman,自耕农
 HordeName,zombie,僵尸
-IdentifyTypeName,All,所有
-IdentifyTypeName,One,一个
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,阻挡穿戴者视野的布面具。
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",一组家什，包括空罐头和屠宰工具，用来打包尸体使其防腐。
 ItemDescription,A compact hand-held firearm.,小型手持火器。
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,测试版讨论
 LiteralText,Black background,黑色背景
 LiteralText,blasphemy,亵渎
 LiteralText,BLINK,闪现
+LiteralText,blink entity,闪现
 LiteralText,Blink which direction?,朝哪个方向闪现？
 LiteralText,block,堵住
 LiteralText,BLOCKED,堵住的
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,清除
 LiteralText,click to download,点击这里下载
 LiteralText,click to retry,点击重试
 LiteralText,Click to send detected issues to the author,点击将出现的问题发送给作者
+LiteralText,clone source entity,克隆角色来源
+LiteralText,clone target entity,克隆角色目标
 LiteralText,CLOSE,关闭
 LiteralText,closed,关闭
 LiteralText,Coding on Medium,在Medium上的代码
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,断开连接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,無法連接網絡，請檢查網絡連線和所有裝置的pathos的版本為相同版本
 LiteralText,discover item,启蒙
 LiteralText,Discuss on Reddit,在Reddit上讨论
+LiteralText,disenchant item,去附魔
 LiteralText,dismantle items to extract the base materials and raw essence,摧毁物品来得到基本材料和精华。
 LiteralText,DISMISS,解散
 LiteralText,DISMOUNT,下马
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,门
 LiteralText,double damage when mounted,骑乘时双倍伤害
 LiteralText,downgrade to,降级成了
 LiteralText,downloading update,更新下载中
+LiteralText,drain item,
 LiteralText,drop,掉落
 LiteralText,DROP,丢弃
 LiteralText,DUAL WIELD,双持
@@ -3245,6 +3230,7 @@ LiteralText,else,其他
 LiteralText,EMAIL,电邮
 LiteralText,Enable auto save,开启自动存档
 LiteralText,Enable master mode,启动大师模式
+LiteralText,enchant item,附魔物件
 LiteralText,enchanted items,强化物品
 LiteralText,encounters,遭遇
 LiteralText,encumbrance thresholds,负重上限
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,经验
 LiteralText,explosion,爆炸
 LiteralText,EXPORT,导出
 LiteralText,extinctions,灭绝
+LiteralText,extinguish,消除环境效果
 LiteralText,FAILED,失败
 LiteralText,failed to download,下载失败
 LiteralText,fame,荣誉
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,地面
 LiteralText,grow entity,成长
 LiteralText,GUIDES,指南
 LiteralText,HALL of FAME,名人堂
+LiteralText,hatch egg,孵化
 LiteralText,hatched by,由……孵化
 LiteralText,Having trouble finding the stairs down to the next level?,难以找到下楼楼梯？
 LiteralText,Help,帮助
@@ -3338,7 +3326,9 @@ LiteralText,HOST,创建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也许您更希望在接受更新之前完成正在进行的冒险。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,开发者希望您的冒险愉快，并且请随意与开发者交谈，给予反馈与建议。
 LiteralText,identified items,已鉴定的物品
+LiteralText,identify all items,鉴定所有
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,鉴定地上所有物品
+LiteralText,identify one item,鉴定一个
 LiteralText,ILLITERATE,文盲
 LiteralText,illusion,幻象
 LiteralText,ILLUSION,幻象
@@ -3493,6 +3483,7 @@ LiteralText,permanent,无法破坏
 LiteralText,PERSONAL,个人的
 LiteralText,PLACE,放置
 LiteralText,PLACE ALL,放置全部
+LiteralText,place curse,诅咒
 LiteralText,platform,平台
 LiteralText,Play,开始游戏
 LiteralText,Play a sound effect?,播放声效？
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,加固
 LiteralText,REINFORCED,加强
 LiteralText,release entity,释放
 LiteralText,remove all transients,去除所有短期状态
+LiteralText,remove curse,去除诅咒
 LiteralText,REMOVE CURSE,移除诅咒
 LiteralText,remove random resistance,移除随机抗性
 LiteralText,remove random talent,移除随机天赋
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,扔了
 LiteralText,THROW,投掷
 LiteralText,tin,罐头
+LiteralText,tinning,罐装
 LiteralText,TOO BIG,过大
 LiteralText,TOO HEAVY,超重
 LiteralText,TOO HUNGRY,过于饥饿
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,自恋，请
 LiteralText,VIEW,查看
 LiteralText,Visit the website,访问官网
 LiteralText,VOID SPACE,虚空
+LiteralText,volatile,
 LiteralText,VOLATILES,环境效果
 LiteralText,vomit,呕吐
 LiteralText,vulnerable to,易受伤害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
+LiteralText,warping,传送
 LiteralText,WARPING,开启返程模式
 LiteralText,was killed,被杀死了
 LiteralText,weakness to,弱点

@@ -545,8 +545,6 @@ BoonName,tinned meat,konzervhús
 BoonName,undead army,élőholtak serege
 BoonName,unicorn friend,unikornis barát
 CalendarText,d MMMM yyyy,yyyy MMMM d
-ChangeType,decrease,csökkent
-ChangeType,increase,növel
 CharacterName,Adebesi,Adebesi
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
@@ -956,27 +954,6 @@ DietName,metalivore,fémevő
 DietName,omnivore,mindenevő
 DietName,organivore,organikus élelemmel táplálkozó
 DietName,xylophagy,faevő
-EffectProperty,disenchant,levétel
-EffectType,blinking,elillanás
-EffectType,clone entity,karakterklón
-EffectType,convert barrier,következővé alakul:
-EffectType,convert gate,következővé alakul:
-EffectType,convert ground,következővé alakul:
-EffectType,convert volatile,
-EffectType,create volatile,
-EffectType,destroy volatile,
-EffectType,enchant item,eszköz igézése
-EffectType,extinguish volatile,
-EffectType,hatch,kikeltés
-EffectType,identify,azonosítás
-EffectType,place curse,megátkozás
-EffectType,remove curse,átoklevétel
-EffectType,sanctify,felszentelés
-EffectType,tinning,konzerválás
-EffectType,visit shop,bolt meglátogatása
-EffectType,visit shrine,szentély meglátogatása
-EffectType,visit zoo,terem meglátogatása
-EffectType,warping,eltévelyedés
 EggName,black dragon,feketesárkány
 EggName,blue dragon,kéksárkány
 EggName,deep dragon,lilasárkány
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,{Percent}%-ot fed
 FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {SpellName} varázslat?
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
 FormatText,convert {FeatureName} into {DeviceName},következővé alakul: {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},következővé alakul: {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},következővé alakul: {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},következővé alakul: {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},megbénítja a következőt: {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},{Chance} esély visszaütésre {Attac
 FormatText,retaliate {Chance} on death {AttackType},{Chance} esély visszaütésre {AttackType}támadás általi halál esetén
 FormatText,retaliate {Chance} on hit {AttackType},{Chance} esély visszaütésre {AttackType}támadásból származó találat esetén
 FormatText,revenant {CharacterName},kísértet {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},felszentelés {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},lő: {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},beragadva ennyi ideig: {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,A {FixtureName} tereptárgyból {ExplosionName} energiarobbanás tört ki!
@@ -2129,8 +2111,6 @@ HordeName,wolf,farkas
 HordeName,worm,féreg
 HordeName,yeoman,felgyügyelő
 HordeName,zombie,zombi
-IdentifyTypeName,All,Összes
-IdentifyTypeName,One,Egy
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Egy szövetmaszk, amely teljesen megakadályozza viselőjét a látásban."
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","A tetemek tömörítéséhez használt eszközök gyűjteménye, ideértve az üres konzervdobozokat és a henteseszközöket."
 ItemDescription,A compact hand-held firearm.,Egy kompakt kézi lőfegyver.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,értekezések a bétaverzióról
 LiteralText,Black background,Fekete háttér
 LiteralText,blasphemy,istenkáromlás
 LiteralText,BLINK,ELILLANÁS
+LiteralText,blink entity,elillanás
 LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
 LiteralText,block,akadály
 LiteralText,BLOCKED,EL VAN ZÁRVA
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,C
 LiteralText,click to download,kattints a letöltéshez
 LiteralText,click to retry,kattints az újrapróbáláshoz
 LiteralText,Click to send detected issues to the author,problémák bejelentése
+LiteralText,clone source entity,karakterklón forrás
+LiteralText,clone target entity,karakterklón célpont
 LiteralText,CLOSE,BEZÁRÁS
 LiteralText,closed,becsukott
 LiteralText,Coding on Medium,Kódolás a Mediumon
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,SZÉTKAPCSOL
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,felvilágosodás
 LiteralText,Discuss on Reddit,Beszélgess a Redditen
+LiteralText,disenchant item,levétel
 LiteralText,dismantle items to extract the base materials and raw essence,"bonts szét tárgyakat, hogy kinyerd alapanyagaikat és nyers esszenciájukat"
 LiteralText,DISMISS,ELUTASÍT
 LiteralText,DISMOUNT,LESZÁLL
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,AJTÓ
 LiteralText,double damage when mounted,dupla sebzés hátason
 LiteralText,downgrade to,használat után
 LiteralText,downloading update,frissítés letöltése
+LiteralText,drain item,
 LiteralText,drop,elejt
 LiteralText,DROP,ELEJT
 LiteralText,DUAL WIELD,KÉTKEZES
@@ -3245,6 +3230,7 @@ LiteralText,else,vagy
 LiteralText,EMAIL,E-MAIL
 LiteralText,Enable auto save,Automatikus mentés engedélyezése
 LiteralText,Enable master mode,Mestermód engedélyezése
+LiteralText,enchant item,eszköz igézése
 LiteralText,enchanted items,megigézett tárgyak
 LiteralText,encounters,találkozások
 LiteralText,encumbrance thresholds,terhelési küszöb
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,TAPASZTALAT
 LiteralText,explosion,robbanás
 LiteralText,EXPORT,EXPORTÁL
 LiteralText,extinctions,kiirtások
+LiteralText,extinguish,
 LiteralText,FAILED,SIKERTELEN
 LiteralText,failed to download,nem sikerült a letöltés
 LiteralText,fame,dicsőség
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,TALAJFAJTÁK
 LiteralText,grow entity,növekedés
 LiteralText,GUIDES,ÚTMUTATÓ
 LiteralText,HALL of FAME,DICSŐSÉG CSARNOKA
+LiteralText,hatch egg,kikeltés
 LiteralText,hatched by,kikelti:
 LiteralText,Having trouble finding the stairs down to the next level?,Nem találod a következő szintre vezető lépcsősort?
 LiteralText,Help,Súgó
@@ -3338,7 +3326,9 @@ LiteralText,HOST,LÉTREHOZÁS
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Remélem élvezed a kalandokat! Bármilyen visszajelzéssel vagy javaslattal fordulj hozzám bizalommal.
 LiteralText,identified items,azonosított tárgyak
+LiteralText,identify all items,azonosítás összes
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,A PADLÓN LÉVŐ ÖSSZES TÁRGY AZONOSÍTÁSA
+LiteralText,identify one item,azonosítás egy
 LiteralText,ILLITERATE,ÍRÁSTUDATLAN
 LiteralText,illusion,illúzió
 LiteralText,ILLUSION,ILLÚZIÓ
@@ -3493,6 +3483,7 @@ LiteralText,permanent,állandó
 LiteralText,PERSONAL,SZEMÉLYES
 LiteralText,PLACE,ELHELYEZ
 LiteralText,PLACE ALL,ÖSSZES ELHELYEZÉSE
+LiteralText,place curse,megátkozás
 LiteralText,platform,platform
 LiteralText,Play,Játék
 LiteralText,Play a sound effect?,Lejátszható hangeffektek
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,megerősített
 LiteralText,REINFORCED,MEGERŐSÍTETT
 LiteralText,release entity,elengedés
 LiteralText,remove all transients,összes átmeneti hatás eltávolítása
+LiteralText,remove curse,átoklevétel
 LiteralText,REMOVE CURSE,ÁTOKLEVÉTEL
 LiteralText,remove random resistance,véletlenszerű ellenállás eltávolítása
 LiteralText,remove random talent,véletlenszerű készség eltávolítása
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,eldobta
 LiteralText,THROW,ELDOB
 LiteralText,tin,konzerv
+LiteralText,tinning,konzerválás
 LiteralText,TOO BIG,TÚL NAGY
 LiteralText,TOO HEAVY,TÚL NEHÉZ
 LiteralText,TOO HUNGRY,TÚL ÉHES
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
+LiteralText,volatile,
 LiteralText,VOLATILES,
 LiteralText,vomit,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
+LiteralText,warping,eltévelyedés
 LiteralText,WARPING,ELTÉVELYEDÉS
 LiteralText,was killed,elesett
 LiteralText,weakness to,gyenge a következővel szemben:

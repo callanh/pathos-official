@@ -545,8 +545,6 @@ BoonName,tinned meat,thịt đóng hộp
 BoonName,undead army,đội quân thây ma
 BoonName,unicorn friend,bạn kỳ lân
 CalendarText,d MMMM yyyy,d MMMM yyyy
-ChangeType,decrease,giảm
-ChangeType,increase,tăng
 CharacterName,Adebesi,Adebesi
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
@@ -956,27 +954,6 @@ DietName,metalivore,ăn kim loại
 DietName,omnivore,ăn tạp
 DietName,organivore,ăn chất hữu cơ
 DietName,xylophagy,ăn gỗ
-EffectProperty,disenchant,tỉnh mộng
-EffectType,blinking,nhấp nháy
-EffectType,clone entity,tạo bản sao của nhân vật
-EffectType,convert barrier,chuyển đổi tường
-EffectType,convert gate,chuyển đổi cửa
-EffectType,convert ground,chuyển đổi sàn
-EffectType,convert volatile,chuyển đổi vũng
-EffectType,create volatile,tạo vũng
-EffectType,destroy volatile,loại bỏ vũng
-EffectType,enchant item,phù phép vật
-EffectType,extinguish volatile,dập vũng
-EffectType,hatch,nở
-EffectType,identify,định danh
-EffectType,place curse,niệm lời nguyền
-EffectType,remove curse,loại bỏ lời nguyền
-EffectType,sanctify,thánh hóa
-EffectType,tinning,đóng hộp
-EffectType,visit shop,ghé cửa hàng
-EffectType,visit shrine,ghé điện thờ
-EffectType,visit zoo,ghé vườn thú
-EffectType,warping,cong vênh
 EggName,black dragon,rồng đen
 EggName,blue dragon,rồng xanh dương
 EggName,deep dragon,rồng xanh đậm
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,giới hạn {Percent}%
 FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật phẩm nào?
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
 FormatText,convert {FeatureName} into {DeviceName},chuyển đổi vật cố {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},chuyển đổi tường {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},chuyển đổi cửa {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},chuyển đổi sàn {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},chuyển đổi vũng {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},suy giảm {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},giảm {AttributeName} bởi {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},{Chance} khả năng {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},{Chance} khả năng khi chết {AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},{Chance} khả năng khi bị đau {AttackType}
 FormatText,revenant {CharacterName},Hồn ma của {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},thánh hóa {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},bắn {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},bị kẹt {DurationDice} lượt
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} kích nổ vụ nổ năng lượng {ExplosionName}!
@@ -2129,8 +2111,6 @@ HordeName,wolf,bầy sói
 HordeName,worm,sâu
 HordeName,yeoman,bầy kỵ binh
 HordeName,zombie,bầy thây ma
-IdentifyTypeName,All,Tất cả
-IdentifyTypeName,One,Chỉ một
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Mặt nạ từ vải che kín tầm nhìn của người đeo
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","1 bộ dụng cụ bao gồm những lọ rỗng và dụng cụ giết mổ, để đóng gói xác và đông đặc chúng."
 ItemDescription,A compact hand-held firearm.,1 khẩu súng nòng ngắn nhỏ gọn
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,thảo luận về bản beta
 LiteralText,Black background,Hình nền màu đen
 LiteralText,blasphemy,phỉ báng
 LiteralText,BLINK,NHẤP NHÁY
+LiteralText,blink entity,nhấp nháy
 LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
 LiteralText,block,khối
 LiteralText,BLOCKED,BỊ CHẶN
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,DỌN SẠCH
 LiteralText,click to download,bấm để tải
 LiteralText,click to retry,bấm để thử lại
 LiteralText,Click to send detected issues to the author,Nhấp để gửi các vấn đề đã phát hiện cho tác giả
+LiteralText,clone source entity,tạo bản sao của nhân vật nguồn
+LiteralText,clone target entity,tạo bản sao của nhân vật mục tiêu
 LiteralText,CLOSE,ĐÓNG
 LiteralText,closed,đóng cửa
 LiteralText,Coding on Medium,viết code trên Medium
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,NGẮT KẾT NỐI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
 LiteralText,discover item,khai sáng
 LiteralText,Discuss on Reddit,Thảo luận trên Reddit
+LiteralText,disenchant item,tỉnh mộng
 LiteralText,dismantle items to extract the base materials and raw essence,Tháo những vật phẩm để lấy lại nguyên liệu và nguyên chất thô
 LiteralText,DISMISS,BỎ QUA
 LiteralText,DISMOUNT,XUỐNG NGỰA
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,CỬA
 LiteralText,double damage when mounted,Nhân đôi sát thương khi đang cưỡi ngựa
 LiteralText,downgrade to,hạ cấp xuống
 LiteralText,downloading update,đang tải bản cập nhật
+LiteralText,drain item,
 LiteralText,drop,thả
 LiteralText,DROP,THẢ
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
@@ -3245,6 +3230,7 @@ LiteralText,else,nếu khác
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Bật tụ động lưu
 LiteralText,Enable master mode,Bật chế độ tự do
+LiteralText,enchant item,phù phép vật
 LiteralText,enchanted items,vật phẩm được cường hóa
 LiteralText,encounters,số chạm mặt
 LiteralText,encumbrance thresholds,ngưỡng chịu đựng
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,KINH NGHIỆM
 LiteralText,explosion,vụ nổ
 LiteralText,EXPORT,XUÂT RA
 LiteralText,extinctions,tuyệt chủng
+LiteralText,extinguish,dập vũng
 LiteralText,FAILED,THẤT BẠI
 LiteralText,failed to download,tải xuống thất bại
 LiteralText,fame,danh dự
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,SÀN
 LiteralText,grow entity,phát triển
 LiteralText,GUIDES,HƯỚNG DẪN
 LiteralText,HALL of FAME,SẢNH DANH VỌNG
+LiteralText,hatch egg,nở
 LiteralText,hatched by,được ấp bởi
 LiteralText,Having trouble finding the stairs down to the next level?,Bạn đang gặp khó khăn trong việc tìm đường xuống tầng tiếp theo?
 LiteralText,Help,trợ giúp
@@ -3338,7 +3326,9 @@ LiteralText,HOST,CHỦ PHÒNG
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Chúng tôi hy vọng rằng bạn đang tận hưởng những chuyến phiêu lưu của bạn. Đừng ngần ngại góp ý cải thiện cho chúng tôi nhé.
 LiteralText,identified items,vật phẩm được đinh danh
+LiteralText,identify all items,định danh tất cả
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ĐỊNH DANH MỌI VẬT PHẨM TRÊN SÀN NHÀ
+LiteralText,identify one item,định danh chỉ một
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
 LiteralText,ILLUSION,ẢO ẢNH
@@ -3493,6 +3483,7 @@ LiteralText,permanent,vĩnh viễn
 LiteralText,PERSONAL,CÁ NHÂN
 LiteralText,PLACE,ĐẶT
 LiteralText,PLACE ALL,ĐẶT TẤT CẢ
+LiteralText,place curse,niệm lời nguyền
 LiteralText,platform,nền tảng
 LiteralText,Play,Chơi
 LiteralText,Play a sound effect?,Chạy một hiệu ứng âm thanh?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,gia cố
 LiteralText,REINFORCED,GIA CỐ
 LiteralText,release entity,thả ra
 LiteralText,remove all transients,loại bỏ tất cả hiệu ứng tạm thời
+LiteralText,remove curse,loại bỏ lời nguyền
 LiteralText,REMOVE CURSE,XÓA BỎ LỜI NGUYỀN
 LiteralText,remove random resistance,loại bỏ 1 đề kháng ngẫu nhiên
 LiteralText,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,ném
 LiteralText,THROW,NÉM
 LiteralText,tin,đóng gói
+LiteralText,tinning,đóng hộp
 LiteralText,TOO BIG,QUÁ LỚN
 LiteralText,TOO HEAVY,QUÁ NẶNG
 LiteralText,TOO HUNGRY,QUÁ ĐÓI
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
+LiteralText,volatile,
 LiteralText,VOLATILES,CÁC PHẢN ỨNG
 LiteralText,vomit,nôn mửa
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
+LiteralText,warping,cong vênh
 LiteralText,WARPING,ĐANG DỊCH CHUYỂN
 LiteralText,was killed,bị giết
 LiteralText,weakness to,yếu trước

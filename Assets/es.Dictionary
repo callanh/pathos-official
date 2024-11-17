@@ -545,8 +545,6 @@ BoonName,tinned meat,carne enlatada
 BoonName,undead army,ejército de no-muertos
 BoonName,unicorn friend,unicornio amigo
 CalendarText,d MMMM yyyy,d MMMM yyyy
-ChangeType,decrease,reducir
-ChangeType,increase,aumentar
 CharacterName,Adebesi,Adebesi
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
@@ -956,27 +954,6 @@ DietName,metalivore,metalóvoro
 DietName,omnivore,omnívoro
 DietName,organivore,organívoro
 DietName,xylophagy,xilófago
-EffectProperty,disenchant,desencantar
-EffectType,blinking,salto
-EffectType,clone entity,clonar personaje
-EffectType,convert barrier,convertir muro
-EffectType,convert gate,convertir puerta
-EffectType,convert ground,convertir suelo
-EffectType,convert volatile,convertir derrame
-EffectType,create volatile,crear derrame
-EffectType,destroy volatile,eliminar derrame
-EffectType,enchant item,encantar recurso
-EffectType,extinguish volatile,extinguir derrame
-EffectType,hatch,incubar
-EffectType,identify,identificar
-EffectType,place curse,colocar maldición
-EffectType,remove curse,remover maldición
-EffectType,sanctify,santificar
-EffectType,tinning,empaquetado
-EffectType,visit shop,visitar la tienda
-EffectType,visit shrine,visitar el santuario
-EffectType,visit zoo,visitar el zoológico
-EffectType,warping,distorsion
 EggName,black dragon,dragón negro
 EggName,blue dragon,dragón azul
 EggName,deep dragon,dragón azul oscuro
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,límite {Percent}%
 FormatText,Cast {SpellName} on which item?,¿Lanzar {SpellName} en qué objeto?
 FormatText,Cast {SpellName} which direction?,¿Lanzar {SpellName} en qué dirección?
 FormatText,convert {FeatureName} into {DeviceName},convertir accesorio {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},convertir muro {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},convertir puerta {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},convertir suelo {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},convertir derrame {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},lisiar {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},disminuye {AttributeName} en {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},vengarse {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},vengarse {Chance} en la muerte {AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},vengarse {Chance} al ser golpeado {AttackType}
 FormatText,revenant {CharacterName},renacido {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},santificar {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},disparar {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},atascado {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,¡{FixtureName} liberó una explosión de energía {ExplosionName}!
@@ -2129,8 +2111,6 @@ HordeName,wolf,lobo
 HordeName,worm,gusano
 HordeName,yeoman,guardia de la hacienda
 HordeName,zombie,zombi
-IdentifyTypeName,All,Todos
-IdentifyTypeName,One,Uno
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Una máscara de tela que obstruye completamente la visión del usuario.
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Una colección de utensilios, incluidas latas vacías y herramientas de despiece, para empaquetar cadáveres."
 ItemDescription,A compact hand-held firearm.,Un arma de mano compacta.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,discusiones beta
 LiteralText,Black background,fondo negro
 LiteralText,blasphemy,blasfemia
 LiteralText,BLINK,SALTO
+LiteralText,blink entity,salto
 LiteralText,Blink which direction?,¿Saltar hacia qué dirección?
 LiteralText,block,bloquear
 LiteralText,BLOCKED,BLOQUEADO
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,LIMPIAR
 LiteralText,click to download,click aquí para descargar
 LiteralText,click to retry,click aquí para reintentar
 LiteralText,Click to send detected issues to the author,click aquí para enviar los problemas detectados al autor
+LiteralText,clone source entity,clonar personaje fuente
+LiteralText,clone target entity,clonar personaje objetivo
 LiteralText,CLOSE,CERRAR
 LiteralText,closed,cerrado
 LiteralText,Coding on Medium,Programación en Medium
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,DESCONECTAR
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Se detectó un error en la conexión . Asegúrate que tengas una conexión estable y que todos los dispositivos tengan la misma versión de Pathos.
 LiteralText,discover item,iluminación
 LiteralText,Discuss on Reddit,Discutir en Reddit
+LiteralText,disenchant item,desencantar
 LiteralText,dismantle items to extract the base materials and raw essence,Desmantela ítems para extraer los materiales base y su esencia pura.
 LiteralText,DISMISS,DESPEDIR
 LiteralText,DISMOUNT,DESMONTAR
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,PUERTA
 LiteralText,double damage when mounted,doble daño cuando está montado
 LiteralText,downgrade to,rebajar a
 LiteralText,downloading update,descargando actualización
+LiteralText,drain item,
 LiteralText,drop,soltar
 LiteralText,DROP,SOLTAR
 LiteralText,DUAL WIELD,DOBLE EMPUÑADURA
@@ -3245,6 +3230,7 @@ LiteralText,else,de otro modo
 LiteralText,EMAIL,CORREO
 LiteralText,Enable auto save,Activar auto guardado
 LiteralText,Enable master mode,Activar modo maestro
+LiteralText,enchant item,encantar recurso
 LiteralText,enchanted items,ítems encantados
 LiteralText,encounters,encuentros
 LiteralText,encumbrance thresholds,umbrales de deber
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,EXPERIENCIA
 LiteralText,explosion,explosión
 LiteralText,EXPORT,EXPORTAR
 LiteralText,extinctions,extinciones
+LiteralText,extinguish,extinguir derrame
 LiteralText,FAILED,FALLADO
 LiteralText,failed to download,fallo en la descarga
 LiteralText,fame,fama
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,SUELOS
 LiteralText,grow entity,crecimiento
 LiteralText,GUIDES,GUÍAS
 LiteralText,HALL of FAME,SALÓN DE LA FAMA
+LiteralText,hatch egg,incubar
 LiteralText,hatched by,eclosionado por
 LiteralText,Having trouble finding the stairs down to the next level?,¿Tienes problemas encontrando la escalera hacia el próximo nivel?
 LiteralText,Help,Ayuda
@@ -3338,7 +3326,9 @@ LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Sin embargo, quizás quieras completar tus aventuras antes de actualizar."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Espero que estés disfrutando de tus aventuras. No dudes en contactarme con tus comentarios y sugerencias.
 LiteralText,identified items,ítems identificados
+LiteralText,identify all items,identificar todos
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICAR TODOS LOS ÍTEMS DEL SUELO
+LiteralText,identify one item,identificar uno
 LiteralText,ILLITERATE,ANALFABETO
 LiteralText,illusion,ilusión
 LiteralText,ILLUSION,ILUSIÓN
@@ -3493,6 +3483,7 @@ LiteralText,permanent,permanente
 LiteralText,PERSONAL,PERSONAL
 LiteralText,PLACE,COLOCAR
 LiteralText,PLACE ALL,COLOCAR TODOS
+LiteralText,place curse,colocar maldición
 LiteralText,platform,plataforma
 LiteralText,Play,Jugar
 LiteralText,Play a sound effect?,¿Reproducir un efecto de sonido?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,reforzado
 LiteralText,REINFORCED,REFORZADO
 LiteralText,release entity,liberar
 LiteralText,remove all transients,remueve todos los estados transitorios
+LiteralText,remove curse,remover maldición
 LiteralText,REMOVE CURSE,QUITAR MALDICIÓN
 LiteralText,remove random resistance,elimina resistencia aleatoria
 LiteralText,remove random talent,eliminar talento aleatorio
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,arrojó
 LiteralText,THROW,ARROJAR
 LiteralText,tin,lata de
+LiteralText,tinning,empaquetado
 LiteralText,TOO BIG,MUY GRANDE
 LiteralText,TOO HEAVY,DEMASIADO PESADO
 LiteralText,TOO HUNGRY,MUY HAMBRIENTO
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,Vanidad
 LiteralText,VIEW,VER
 LiteralText,Visit the website,Visitar la web
 LiteralText,VOID SPACE,ESPACIO VACÍO
+LiteralText,volatile,
 LiteralText,VOLATILES,VOLÁTILES
 LiteralText,vomit,vómito
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?
+LiteralText,warping,distorsion
 LiteralText,WARPING,DEFORMAR
 LiteralText,was killed,fue asesinado
 LiteralText,weakness to,debilidad a

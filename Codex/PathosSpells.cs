@@ -1575,13 +1575,13 @@ namespace Pathos
           {
             U.SetCast().Plain(Dice.Zero) // identify a random item.
              .SetTerminates();
-            U.Apply.Identify(All: false, Sanctity: null);
+            U.Apply.IdentifyItem(All: false, Sanctity: null);
           },
           P =>
           {
             P.SetCast().FilterIdentified(false)
              .SetTerminates();
-            P.Apply.Identify(All: false, Sanctity: null);
+            P.Apply.IdentifyItem(All: false, Sanctity: null);
           },
           null,
           null,
@@ -1590,7 +1590,7 @@ namespace Pathos
           {
             C.SetCast().Strike(Strikes.psychic, Dice.Zero)
              .SetTerminates();
-            C.Apply.Identify(All: true, Sanctity: null);
+            C.Apply.IdentifyItem(All: true, Sanctity: null);
           }
         );
       });
@@ -2340,40 +2340,40 @@ namespace Pathos
           U =>
           {
             U.SetCast().Plain(Dice.Zero);
-            U.Apply.RemoveCurse(Dice.One);
+            U.Apply.RemoveCurse(Dice.One, Sanctities.Uncursed);
           },
           P =>
           {
             P.SetCast().FilterSanctity(Sanctities.Cursed);
-            P.Apply.RemoveCurse(Dice.One);
+            P.Apply.RemoveCurse(Dice.One, Sanctities.Uncursed);
           },
           S =>
           {
             S.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
             S.Apply.UnpunishEntity();
-            S.Apply.RemoveCurse(Dice.Fixed(1));
+            S.Apply.RemoveCurse(Dice.Fixed(1), Sanctities.Uncursed);
           },
           E =>
           {
             E.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
             E.Apply.UnpunishEntity();
-            E.Apply.RemoveCurse(Dice.Fixed(2));
+            E.Apply.RemoveCurse(Dice.Fixed(2), Sanctities.Uncursed);
           },
           M =>
           {
             M.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
             M.Apply.UnpunishEntity();
-            M.Apply.RemoveCurse(Dice.Fixed(3));
+            M.Apply.RemoveCurse(Dice.Fixed(3), Sanctities.Uncursed);
           },
           C =>
           {
             C.SetCast().FilterSanctity(Sanctities.Cursed)
              .SetPunishmentOverride();
             C.Apply.UnpunishEntity();
-            C.Apply.RemoveCurse(Dice.Fixed(4));
+            C.Apply.RemoveCurse(Dice.Fixed(4), Sanctities.Uncursed);
           }
         );
       });

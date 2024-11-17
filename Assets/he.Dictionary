@@ -545,8 +545,6 @@ BoonName,tinned meat,בשר משומר
 BoonName,undead army,צבא אל-מתים
 BoonName,unicorn friend,חבר חד-קרן
 CalendarText,d MMMM yyyy,d MMMM yyyy
-ChangeType,decrease,להוריד
-ChangeType,increase,להעלות
 CharacterName,Adebesi,אבבסי
 CharacterName,Alista,אליסטה
 CharacterName,Amaya,אמאיה
@@ -956,27 +954,6 @@ DietName,metalivore,תזונת מתכת
 DietName,omnivore,תזונת-כל
 DietName,organivore,תזונה אורגנית
 DietName,xylophagy,תזונת סיבים
-EffectProperty,disenchant,הסרת קסם
-EffectType,blinking,בזיקה
-EffectType,clone entity,שיבוט דמות
-EffectType,convert barrier,המרת קיר
-EffectType,convert gate,המרת דלת
-EffectType,convert ground,המרת רצפה
-EffectType,convert volatile,המרת נזילה
-EffectType,create volatile,יצירת נזילה
-EffectType,destroy volatile,הסרת נזילה
-EffectType,enchant item,הקסמת נכס
-EffectType,extinguish volatile,עצירת נזילה
-EffectType,hatch,דגירה
-EffectType,identify,זיהוי
-EffectType,place curse,הטלת קללה
-EffectType,remove curse,הסרת קללה
-EffectType,sanctify,קידוש
-EffectType,tinning,שימור בפחית
-EffectType,visit shop,ביקור בחנות
-EffectType,visit shrine,ביקור במקדש
-EffectType,visit zoo,ביקור בגן חיות
-EffectType,warping,השתגרות
 EggName,black dragon,דרקונית שחורה
 EggName,blue dragon,דרקונית כחולה
 EggName,deep dragon,דרקונית מעמקים
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,מגבלה של {Percent}%
 FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל {SpellName}?
 FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל {SpellName}?
 FormatText,convert {FeatureName} into {DeviceName},המרת מתקן {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},המרת קיר {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},המרת דלת {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},המרת רצפה {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},המרת נזילה {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},פגיעה ב{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ירידה של {AttributeName} ב{AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},נקמה {AttackType} {Chance}
 FormatText,retaliate {Chance} on death {AttackType},נקמה {Chance} על מוות מ{AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},נקמה {Chance} על פגיעה של {AttackType}
 FormatText,revenant {CharacterName},רוח נקם של {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},קידוש {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},פגיעה של {DamageDice} מירייה של {ElementName} מ{ItemName}
 FormatText,stuck {DurationDice},אי אפשר לזוז {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,פיצוץ אנרגיה של {ExplosionName} השתחרר מה{FixtureName}!
@@ -2129,8 +2111,6 @@ HordeName,wolf,זאב
 HordeName,worm,תולעת
 HordeName,yeoman,ייאומן
 HordeName,zombie,זומבי
-IdentifyTypeName,All,כולם
-IdentifyTypeName,One,אחד
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,מסכת בד שמסתירה לחלוטין את שדה הראייה.
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","אוסף של כלי מטבח, כולל פחיות ריקות וכלי שחיטה, המיועד לאריזת גופות באופן מרוכז."
 ItemDescription,A compact hand-held firearm.,כלי ירי קטן לאחיזה ביד.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,דיוני בטא
 LiteralText,Black background,רקע שחור
 LiteralText,blasphemy,חילול השם
 LiteralText,BLINK,בזיקה
+LiteralText,blink entity,בזיקה
 LiteralText,Blink which direction?,לאיזה כיוון לבזוק?
 LiteralText,block,חסימה
 LiteralText,BLOCKED,חסום
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,מחיקה
 LiteralText,click to download,להוריד
 LiteralText,click to retry,לנסות שוב
 LiteralText,Click to send detected issues to the author,לדווח לכותב המשחק על בעיות
+LiteralText,clone source entity,שיבוט דמות מקור
+LiteralText,clone target entity,שיבוט דמות מטרה
 LiteralText,CLOSE,לסגור
 LiteralText,closed,סגור
 LiteralText,Coding on Medium,לדבר על תכנות במדיום
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,ניתוק
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,זוהה ניתוק. יש לבדוק שחיבור הרשת שלך אמין ושכל המכשירים משתמשים באותה גרסה של פאתוס.
 LiteralText,discover item,הארה
 LiteralText,Discuss on Reddit,לדבר ברדיט
+LiteralText,disenchant item,הסרת קסם
 LiteralText,dismantle items to extract the base materials and raw essence,לפרק חפצים כדי להוציא מהם את חומרי הבסיס ומהות החפץ
 LiteralText,DISMISS,ביטול
 LiteralText,DISMOUNT,לרדת
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,דלת
 LiteralText,double damage when mounted,פגיעה כפולה ברכיבה
 LiteralText,downgrade to,שינמוך ל
 LiteralText,downloading update,הורדת עדכון
+LiteralText,drain item,
 LiteralText,drop,להפיל
 LiteralText,DROP,להפיל
 LiteralText,DUAL WIELD,נשק ביד השנייה
@@ -3245,6 +3230,7 @@ LiteralText,else,אחרת
 LiteralText,EMAIL,אימייל
 LiteralText,Enable auto save,לאפשר שמירה אוטומטית
 LiteralText,Enable master mode,לאפשר מצב מאסטר
+LiteralText,enchant item,הקסמת נכס
 LiteralText,enchanted items,חפצים קסומים
 LiteralText,encounters,מפגשים
 LiteralText,encumbrance thresholds,סף נשיאה
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,ניסיון
 LiteralText,explosion,פיצוץ
 LiteralText,EXPORT,לייצא
 LiteralText,extinctions,הכחדות
+LiteralText,extinguish,עצירת נזילה
 LiteralText,FAILED,כישלון
 LiteralText,failed to download,לא הצלחתי לטעון
 LiteralText,fame,תהילה
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,סוגי קרקע
 LiteralText,grow entity,צמיחה
 LiteralText,GUIDES,מדריכים
 LiteralText,HALL of FAME,היכל התהילה
+LiteralText,hatch egg,דגירה
 LiteralText,hatched by,הוטלה על ידי
 LiteralText,Having trouble finding the stairs down to the next level?,מתקשה למצוא את המדרגות היורדות אל הקומה הבאה?
 LiteralText,Help,עזרה
@@ -3338,7 +3326,9 @@ LiteralText,HOST,מארח
 LiteralText,"However, you may want to complete your adventures before receiving the update.","יחד עם זאת, אולי עדיף לך להשלים את ההרפתקה לפני קבלת העדכון."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,אני מקווה שנהנית מההרפתקאות שלך עד כה ותמיד אפשר ליצור איתי קשר למשוב והצעות.
 LiteralText,identified items,חפצים שזוהו
+LiteralText,identify all items,זיהוי כולם
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,זיהוי כל החפצים בקומה
+LiteralText,identify one item,זיהוי אחד
 LiteralText,ILLITERATE,במצב אנלפביתי
 LiteralText,illusion,אשליה
 LiteralText,ILLUSION,אשליה
@@ -3493,6 +3483,7 @@ LiteralText,permanent,במצב קבוע
 LiteralText,PERSONAL,אישי
 LiteralText,PLACE,להניח
 LiteralText,PLACE ALL,להניח הכל
+LiteralText,place curse,הטלת קללה
 LiteralText,platform,פלטפורמה
 LiteralText,Play,לנגן
 LiteralText,Play a sound effect?,לנגן אפקט קולי?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,במצב מחוזק
 LiteralText,REINFORCED,במצב מחוזק
 LiteralText,release entity,שיחרור
 LiteralText,remove all transients,מחיקת כל מצב ארעי
+LiteralText,remove curse,הסרת קללה
 LiteralText,REMOVE CURSE,הסרת קללה
 LiteralText,remove random resistance,מחיקת עמידות אקראית
 LiteralText,remove random talent,מחיקת כישרון אקראי
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,אחרי השלכה
 LiteralText,THROW,להשליך
 LiteralText,tin,פחית
+LiteralText,tinning,שימור בפחית
 LiteralText,TOO BIG,גדול מדי
 LiteralText,TOO HEAVY,כבד מדי
 LiteralText,TOO HUNGRY,הרעב כבד מדי
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,ראוותנות
 LiteralText,VIEW,להציג
 LiteralText,Visit the website,לבקר באתר
 LiteralText,VOID SPACE,חלל ריק
+LiteralText,volatile,
 LiteralText,VOLATILES,נדיפים
 LiteralText,vomit,הקאה
 LiteralText,vulnerable to,פגיעות ל
 LiteralText,WAIT,לחכות
 LiteralText,Wait how many turns?,כמה תורות לחכות?
+LiteralText,warping,השתגרות
 LiteralText,WARPING,השתגרות
 LiteralText,was killed,הדמות נהרגה
 LiteralText,weakness to,חולשות ל

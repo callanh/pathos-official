@@ -545,8 +545,6 @@ BoonName,tinned meat,konserve et
 BoonName,undead army,hortlak ordusu
 BoonName,unicorn friend,dost tek boynuzlu at
 CalendarText,d MMMM yyyy,d MMMM yyyy
-ChangeType,decrease,azalt
-ChangeType,increase,artır
 CharacterName,Adebesi,Adebesi
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
@@ -956,27 +954,6 @@ DietName,metalivore,metalobur
 DietName,omnivore,hepçil
 DietName,organivore,organikobur
 DietName,xylophagy,ağaçobur
-EffectProperty,disenchant,efsunu boz
-EffectType,blinking,sıçramak
-EffectType,clone entity,karakteri klonla
-EffectType,convert barrier,duvarı dönüştür
-EffectType,convert gate,kapıyı dönüştür
-EffectType,convert ground,zemini dönüştür
-EffectType,convert volatile,
-EffectType,create volatile,
-EffectType,destroy volatile,
-EffectType,enchant item,varlığı efsunla
-EffectType,extinguish volatile,
-EffectType,hatch,kabuğu kır
-EffectType,identify,tanımla
-EffectType,place curse,lanet yerleştir
-EffectType,remove curse,lanet kaldır
-EffectType,sanctify,kutsallaştır
-EffectType,tinning,kalaylama
-EffectType,visit shop,dükkana git
-EffectType,visit shrine,tapınağa git
-EffectType,visit zoo,habitata git
-EffectType,warping,ışınlan
 EggName,black dragon,siyah ejderha
 EggName,blue dragon,mavi ejderha
 EggName,deep dragon,derinlik ejderi
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
 FormatText,convert {FeatureName} into {DeviceName},möble dönüştür {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},duvarı dönüştür {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},kapıyı dönüştür {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},zemini dönüştür {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},{AttributeName}'i zayıflat
 FormatText,decrease {AttributeName} by {AdjustmentDice},
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},öç al {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},öç al {Chance} ölümde {AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},öç al {Chance} vurulduğunda {AttackType}
 FormatText,revenant {CharacterName},mezar kaçkını {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},kutsallaştır {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},ateş et {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},takıldı {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} patlayarak {ExplosionName} enerjisi saldı!
@@ -2129,8 +2111,6 @@ HordeName,wolf,kurt
 HordeName,worm,solucan
 HordeName,yeoman,çiftçi
 HordeName,zombie,zombi
-IdentifyTypeName,All,Hepsi
-IdentifyTypeName,One,Biri
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.",
 ItemDescription,A compact hand-held firearm.,
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,beta muhabbeti
 LiteralText,Black background,Siyah arkaplan
 LiteralText,blasphemy,kafirlik
 LiteralText,BLINK,SIÇRA
+LiteralText,blink entity,sıçramak
 LiteralText,Blink which direction?,Hangi yöne sıçra?
 LiteralText,block,blok
 LiteralText,BLOCKED,ENGELLENMİŞ
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,TEMİZLE
 LiteralText,click to download,indirmek için tıkla
 LiteralText,click to retry,tekrar denemek için tıkla
 LiteralText,Click to send detected issues to the author,Saptanan sorunları geliştiriciye yollamak için tıkla
+LiteralText,clone source entity,karakteri klonla kaynak
+LiteralText,clone target entity,karakteri klonla hedef
 LiteralText,CLOSE,KAPAT
 LiteralText,closed,kapalı
 LiteralText,Coding on Medium,Kodlama Medium'umda
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,BAĞLANTINI KOPART
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,aydınlat
 LiteralText,Discuss on Reddit,Reddit'te muhabbet et
+LiteralText,disenchant item,efsunu boz
 LiteralText,dismantle items to extract the base materials and raw essence,eşyaları dağıtarak temel mazlemelerine ve esansına ulaş
 LiteralText,DISMISS,DAĞIL
 LiteralText,DISMOUNT,İN
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,KAPI
 LiteralText,double damage when mounted,Binekteyken hasarını ikiye katla
 LiteralText,downgrade to,derevesini düşür
 LiteralText,downloading update,güncelleme indiriliyor
+LiteralText,drain item,
 LiteralText,drop,bırak
 LiteralText,DROP,BIRAK
 LiteralText,DUAL WIELD,ÇİFT ELLE KULLAN
@@ -3245,6 +3230,7 @@ LiteralText,else,başka
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Otomatik kaydetmeyi aç
 LiteralText,Enable master mode,Usta modunu aç
+LiteralText,enchant item,varlığı efsunla
 LiteralText,enchanted items,efsunlanmış eşyalar
 LiteralText,encounters,karşılaştı
 LiteralText,encumbrance thresholds,Yük engeli seviyeleri
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,TECRÜBE
 LiteralText,explosion,patlama
 LiteralText,EXPORT,ÇIKAR
 LiteralText,extinctions,soyu tükenmiş
+LiteralText,extinguish,
 LiteralText,FAILED,BAŞARISIZ
 LiteralText,failed to download,indiremedi
 LiteralText,fame,şan
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,YER
 LiteralText,grow entity,büyü
 LiteralText,GUIDES,REHBERLER
 LiteralText,HALL of FAME,ŞAN SALONU
+LiteralText,hatch egg,kabuğu kır
 LiteralText,hatched by,yumurtadan çıkaran
 LiteralText,Having trouble finding the stairs down to the next level?,Bir sonraki seviyeye ulaşmakta zorluk mu çekiyorsun?
 LiteralText,Help,Yardım
@@ -3338,7 +3326,9 @@ LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Umarım maceralarından keyif alıyorsundur. Bana ulaşıp fikirlerini beyan etmekten lütfen çekinme.
 LiteralText,identified items,tanımlanmış eşyalar
+LiteralText,identify all items,tanımla hepsi
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,YERDEKİ BÜTÜN EŞYALARI TANIMLA
+LiteralText,identify one item,tanımla biri
 LiteralText,ILLITERATE,OKUMA YAZMA BİLEN
 LiteralText,illusion,
 LiteralText,ILLUSION,İLÜZYON
@@ -3493,6 +3483,7 @@ LiteralText,permanent,
 LiteralText,PERSONAL,KİŞİSEL
 LiteralText,PLACE,YERLEŞTİR
 LiteralText,PLACE ALL,HEPSİNİ YERLEŞTİR
+LiteralText,place curse,lanet yerleştir
 LiteralText,platform,
 LiteralText,Play,
 LiteralText,Play a sound effect?,Ses efekti oynat?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,
 LiteralText,REINFORCED,GÜÇLENDİR
 LiteralText,release entity,serbest bırak
 LiteralText,remove all transients,geçici olan her şeyi kaldırır
+LiteralText,remove curse,lanet kaldır
 LiteralText,REMOVE CURSE,LANETİ BOZ
 LiteralText,remove random resistance,rastgele direnci kaldır
 LiteralText,remove random talent,rastgele yeteneği kaldır
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,fırlattı
 LiteralText,THROW,FIRLAT
 LiteralText,tin,teneke
+LiteralText,tinning,kalaylama
 LiteralText,TOO BIG,ÇOK BÜYÜK
 LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ÇOK AÇ
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,VOID SPACE,BOŞLUK
+LiteralText,volatile,
 LiteralText,VOLATILES,
 LiteralText,vomit,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,
+LiteralText,warping,ışınlan
 LiteralText,WARPING,EĞRİLME
 LiteralText,was killed,öldürüldü
 LiteralText,weakness to,

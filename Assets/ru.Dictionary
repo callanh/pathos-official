@@ -545,8 +545,6 @@ BoonName,tinned meat,консервация мяса
 BoonName,undead army,армия нежити
 BoonName,unicorn friend,друг единорога
 CalendarText,d MMMM yyyy,d MMMM yyyy
-ChangeType,decrease,уменьшение
-ChangeType,increase,увеличение
 CharacterName,Adebesi,Адебеси
 CharacterName,Alista,Алиста
 CharacterName,Amaya,Амая
@@ -956,27 +954,6 @@ DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,биоядный
 DietName,xylophagy,древоядный
-EffectProperty,disenchant,расколдовывает
-EffectType,blinking,мерцание
-EffectType,clone entity,клонирует персонажа
-EffectType,convert barrier,переводит стену
-EffectType,convert gate,переводит дверь
-EffectType,convert ground,переводит пол в
-EffectType,convert volatile,переводит барьер
-EffectType,create volatile,создаёт барьер
-EffectType,destroy volatile,убирает барьер
-EffectType,enchant item,зачаровывает ценность
-EffectType,extinguish volatile,убрать барьер
-EffectType,hatch,вылупляется
-EffectType,identify,опознаёт
-EffectType,place curse,накладывает проклятие
-EffectType,remove curse,снимает проклятие
-EffectType,sanctify,наделяет
-EffectType,tinning,консервирует
-EffectType,visit shop,посещение магазина
-EffectType,visit shrine,посещение храма
-EffectType,visit zoo,посещение зоопарка
-EffectType,warping,искривление
 EggName,black dragon,чёрный дракон
 EggName,blue dragon,синий дракон
 EggName,deep dragon,глубинный дракон
@@ -1972,6 +1949,10 @@ FormatText,cap {Percent}%,предел {Percent}%
 FormatText,Cast {SpellName} on which item?,Наложить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Наложить {SpellName} в каком направлении?
 FormatText,convert {FeatureName} into {DeviceName},переводит приспособление {FeatureName} {DeviceName}
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},переводит стену {LocalityName} {FromBarrierName} {ToBarrierName}
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},переводит дверь {LocalityName} {FromGateName} {ToGateName}
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},переводит пол в {LocalityName} {FromGroundName} {ToGroundName}
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},переводит барьер {LocalityName} {FromVolatileName} {ToVolatileName}
 FormatText,convert {StockName} {QualifierText} into {ItemNames},
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},уменьшение {AttributeName} на {AdjustmentDice}
@@ -2017,6 +1998,7 @@ FormatText,retaliate {Chance} {AttackType},мстит {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},мстит {Chance} о смерти {AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},мстит {Chance} об ударе {AttackType}
 FormatText,revenant {CharacterName},восставший {CharacterName}
+FormatText,sanctify {ItemName} as {SanctityName},наделяет {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},выстрел {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},застрять {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName} испустил вспышку {ExplosionName} энергии!
@@ -2129,8 +2111,6 @@ HordeName,wolf,волки
 HordeName,worm,черви
 HordeName,yeoman,йомены
 HordeName,zombie,зомби
-IdentifyTypeName,All,Всё
-IdentifyTypeName,One,Один
 ItemDescription,A cloth mask that completely obstructs the wearer's vision.,"Тканевая маска, которая полностью блокирует зрение владельца."
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Набор предметов для консервирования и упаковки трупов, состоящий из пустых банок и инструментов для разделки."
 ItemDescription,A compact hand-held firearm.,Компактное огнестрельное оружие.
@@ -3066,6 +3046,7 @@ LiteralText,beta discussions,обсуждение бета-версий
 LiteralText,Black background,Чёрный фон
 LiteralText,blasphemy,богохульство
 LiteralText,BLINK,МЕРЦАНИЕ
+LiteralText,blink entity,мерцание
 LiteralText,Blink which direction?,В каком направлении применить мерцание?
 LiteralText,block,препятствие
 LiteralText,BLOCKED,БЛОКИРОВАН
@@ -3118,6 +3099,8 @@ LiteralText,CLEAR,СТЕРЕТЬ
 LiteralText,click to download,"нажмите, чтобы загрузить"
 LiteralText,click to retry,"нажмите, чтобы повторить попытку"
 LiteralText,Click to send detected issues to the author,"Нажмите, чтобы отправить отчёт об ошибках"
+LiteralText,clone source entity,клонирует персонажа источник
+LiteralText,clone target entity,клонирует персонажа цель
 LiteralText,CLOSE,ЗАКРЫТЬ
 LiteralText,closed,закрытая
 LiteralText,Coding on Medium,Кодинг на medium'е
@@ -3219,6 +3202,7 @@ LiteralText,DISCONNECT,ОТКЛЮЧИТЬСЯ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Обнаружено отключение. Пожалуйста, убедитесь, что у вас надёжное сетевое подключение и на всех устройствах установлена одинаковая версия Pathos."
 LiteralText,discover item,узнаёт
 LiteralText,Discuss on Reddit,Обсуждение на Reddit
+LiteralText,disenchant item,расколдовывает
 LiteralText,dismantle items to extract the base materials and raw essence,разобрать предмет для извлечения базовых материалов и чистых эссенций
 LiteralText,DISMISS,ОТПУСТИТЬ
 LiteralText,DISMOUNT,СПЕШИТЬСЯ
@@ -3235,6 +3219,7 @@ LiteralText,DOOR,ДВЕРЬ
 LiteralText,double damage when mounted,сидя верхом наносимый урон удваивается
 LiteralText,downgrade to,понижение до
 LiteralText,downloading update,загрузка обновления
+LiteralText,drain item,
 LiteralText,drop,выкинуть
 LiteralText,DROP,ВЫКИНУТЬ
 LiteralText,DUAL WIELD,ДВА ОРУЖИЯ
@@ -3245,6 +3230,7 @@ LiteralText,else,или
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Авто сохранение
 LiteralText,Enable master mode,Включить режим мастера
+LiteralText,enchant item,зачаровывает ценность
 LiteralText,enchanted items,зачарованные вещи
 LiteralText,encounters,встречи
 LiteralText,encumbrance thresholds,пороги обременения
@@ -3275,6 +3261,7 @@ LiteralText,EXPERIENCE,ОПЫТ
 LiteralText,explosion,взрыв
 LiteralText,EXPORT,ЭКСПОРТ
 LiteralText,extinctions,истребления
+LiteralText,extinguish,убрать барьер
 LiteralText,FAILED,НЕУДАЧА
 LiteralText,failed to download,не удалось загрузить
 LiteralText,fame,слава
@@ -3323,6 +3310,7 @@ LiteralText,GROUNDS,ПОВЕРХНОСТИ
 LiteralText,grow entity,развивает
 LiteralText,GUIDES,РУКОВОДСТВО
 LiteralText,HALL of FAME,ЗАЛ СЛАВЫ
+LiteralText,hatch egg,вылупляется
 LiteralText,hatched by,вылупляется от
 LiteralText,Having trouble finding the stairs down to the next level?,Есть проблемы с поиском лестницы на следующий уровень?
 LiteralText,Help,Помощь
@@ -3338,7 +3326,9 @@ LiteralText,HOST,СОЗДАТЬ
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однако, вы можете завершить своё приключение прежде чем обновить игру."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я надеюсь, вы наслаждаетесь приключениями, и пожалуйста, не стесняйтесь отправлять мне ваши отзывы и предложения."
 LiteralText,identified items,распознал вещи
+LiteralText,identify all items,опознаёт всё
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ОПОЗНАТЬ ВСЕ ПРЕДМЕТЫ НА ПОЛУ
+LiteralText,identify one item,опознаёт один
 LiteralText,ILLITERATE,НЕГРАМОТНОСТЬ
 LiteralText,illusion,иллюзия
 LiteralText,ILLUSION,ИЛЛЮЗИЯ
@@ -3493,6 +3483,7 @@ LiteralText,permanent,не рушимая
 LiteralText,PERSONAL,ПЕРСОНАЛЬНЫЙ
 LiteralText,PLACE,ОТДАТЬ
 LiteralText,PLACE ALL,ОТДАТЬ ВСЁ
+LiteralText,place curse,накладывает проклятие
 LiteralText,platform,платформа
 LiteralText,Play,Играть
 LiteralText,Play a sound effect?,Воспроизвести какой эффект?
@@ -3554,6 +3545,7 @@ LiteralText,reinforced,укреплённая
 LiteralText,REINFORCED,УКРЕПЛЁННАЯ
 LiteralText,release entity,выпускает
 LiteralText,remove all transients,снимает все временные эффекты
+LiteralText,remove curse,снимает проклятие
 LiteralText,REMOVE CURSE,СНЯТЬ ПРОКЛЯТИЕ
 LiteralText,remove random resistance,удалить случайную сопротивляемость
 LiteralText,remove random talent,удалить случайный талант
@@ -3712,6 +3704,7 @@ LiteralText,This seed can be shared with your friends and challenge each other t
 LiteralText,threw,кидает
 LiteralText,THROW,КИНУТЬ
 LiteralText,tin,консервы
+LiteralText,tinning,консервирует
 LiteralText,TOO BIG,СЛИШКОМ ВЕЛИК
 LiteralText,TOO HEAVY,СЛИШКОМ ТЯЖЁЛ
 LiteralText,TOO HUNGRY,СЛИШКОМ ГОЛОДЕН
@@ -3768,11 +3761,13 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
+LiteralText,volatile,
 LiteralText,VOLATILES,БАРЬЕРЫ
 LiteralText,vomit,рвота
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
+LiteralText,warping,искривление
 LiteralText,WARPING,ИСКРИВЛЕНИЕ
 LiteralText,was killed,был убит
 LiteralText,weakness to,слабость к

@@ -792,7 +792,7 @@ namespace Pathos
                     A.UnafflictEntity();
                     A.UnpunishEntity();
                     A.UnpolymorphEntity();
-                    A.RemoveCurse(Dice.One);
+                    A.RemoveCurse(Dice.One, Sanctities.Uncursed);
                     A.ChargingItem(Dice.One, Dice.Fixed(100)); // 100%
                   });
                   Table.Add(10, A => A.CreateItem(Dice.One));
@@ -8342,9 +8342,9 @@ namespace Pathos
             T => T.Cancellation(Elements.magical),
             E => E.WithSourceSanctity
             (
-              B => B.EnchantUp(1.d3()),
-              U => U.EnchantUp(Dice.One),
-              C => C.EnchantDown(Dice.One)
+              B => B.EnchantItemUp(1.d3()),
+              U => U.EnchantItemUp(Dice.One),
+              C => C.EnchantItemDown(Dice.One)
             )
           );
         });
@@ -8573,7 +8573,7 @@ namespace Pathos
                 {
                   B.HarmEntity(Elements.water, Dice.Zero); // TODO: BCU
                   B.UnpunishEntity();
-                  B.RemoveCurse(Dice.One);
+                  B.RemoveCurse(Dice.One, Sanctities.Uncursed);
                 },
                 U =>
                 {
@@ -8764,15 +8764,15 @@ namespace Pathos
             T => T.ApplyTransient(Properties.beatitude, 10.d100()),
             F => F.WithSourceSanctity
             (
-              B => B.Identify(All: false, Sanctities.Blessed),
-              U => U.Identify(All: false, Sanctity: null),
-              C => C.Identify(All: false, Sanctities.Cursed)
+              B => B.IdentifyItem(All: false, Sanctities.Blessed),
+              U => U.IdentifyItem(All: false, Sanctity: null),
+              C => C.IdentifyItem(All: false, Sanctities.Cursed)
             )
           );
         });
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
-          A.Identify(All: true, Sanctity: null);
+          A.IdentifyItem(All: true, Sanctity: null);
         });
       });
 
@@ -9025,11 +9025,11 @@ namespace Pathos
               (
                 B =>
                 {
-                  B.RemoveCurse(Dice.One); // remove the curse.
+                  B.RemoveCurse(Dice.One, Sanctities.Uncursed); // remove the curse.
                   B.Sanctify(Item: null, Sanctities.Blessed); // then bless it (only if targeted).
                 },
-                U => U.RemoveCurse(Dice.One),
-                C => C.RemoveCurse(Dice.Zero)
+                U => U.RemoveCurse(Dice.One, Sanctities.Uncursed),
+                C => C.RemoveCurse(Dice.Zero, Sanctities.Uncursed)
               );
             }
           );
@@ -9037,7 +9037,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 6, Delay.FromTurns(10), Sonics.scroll, A =>
         {
           A.UnpunishEntity();
-          A.RemoveCurse(2.d3() - 2);
+          A.RemoveCurse(2.d3() - 2, Sanctities.Uncursed);
         });
       });
 
@@ -10760,7 +10760,7 @@ namespace Pathos
         {
           Use.SetCast().Plain(Dice.One) // don't need a strike, blink has it's own SFX.
              .SetTargetSelf(false);
-          Use.Apply.Blinking();
+          Use.Apply.BlinkEntity();
           Use.Consume();
         });
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
