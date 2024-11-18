@@ -2993,6 +2993,7 @@ LiteralText,actions,działania
 LiteralText,ADD LEVEL,Dodaj level
 LiteralText,Add new adventurer,Dodaj nowego poszukiwacza przygód
 LiteralText,ADJUST,ADJUST
+LiteralText,adjust difficulty,
 LiteralText,adventurer,
 LiteralText,afflict,dolega
 LiteralText,AFFLICTED,AFFLICTED
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,REVERT
 LiteralText,RIGHT RING,PRAWY PIERŚCIEŃ
 LiteralText,rigid,sztywny
 LiteralText,ROTATE,OBRÓĆ
+LiteralText,route entity,
 LiteralText,rumour,plotki
 LiteralText,sacrifice item,poświęcenie
 LiteralText,SANITY CHECK,KONTROLA STANU ZDROWIA
@@ -3717,6 +3719,7 @@ LiteralText,transients,stany przejściowe
 LiteralText,TRANSIENTS,EFEKTY
 LiteralText,transition,przejście
 LiteralText,TRANSLATIONS,TŁUMACZENIA
+LiteralText,transport entity,
 LiteralText,TRAP,PUŁAPKA
 LiteralText,trap?,pułapka?
 LiteralText,trapped,uwięziony
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,aktualizacja
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,"Użycie ziarna oznacza, że nie będziesz kwalifikował się do Hall of Fame."
 LiteralText,Vanity,Vanity
 LiteralText,VIEW,ZOBACZ
+LiteralText,visit shop,odwiedź sklep
+LiteralText,visit shrine,odzwiedź kaplicę
 LiteralText,Visit the website,Odwiedź stronę
+LiteralText,visit zoo,odwiedzić zoo
 LiteralText,VOID SPACE,PUSTA PRZESTRZEŃ
 LiteralText,volatile,
 LiteralText,VOLATILES,
-LiteralText,vomit,
+LiteralText,vomit nutrition,
 LiteralText,vulnerable to,narażony na
 LiteralText,WAIT,CZEKAJ
 LiteralText,Wait how many turns?,Ile tur poczekać?
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",

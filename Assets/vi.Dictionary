@@ -2993,6 +2993,7 @@ LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
 LiteralText,Add new adventurer,Thêm nhà thám hiểm mới
 LiteralText,ADJUST,CHỈNH SỬA
+LiteralText,adjust difficulty,
 LiteralText,adventurer,mạo hiểm giả
 LiteralText,afflict,ảnh hưởng
 LiteralText,AFFLICTED,BỊNHIỄM BỆNH
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
 LiteralText,ROTATE,XOAY
+LiteralText,route entity,
 LiteralText,rumour,lời đồn
 LiteralText,sacrifice item,cúng tế
 LiteralText,SANITY CHECK,ĐIỂM MINH MẪN
@@ -3717,6 +3719,7 @@ LiteralText,transients,hiệu ứng tạm thời
 LiteralText,TRANSIENTS,HIỆU ỨNG TẠM THỜI
 LiteralText,transition,di chuyển
 LiteralText,TRANSLATIONS,BẢN DỊCH
+LiteralText,transport entity,
 LiteralText,TRAP,BẨY
 LiteralText,trap?,bẩy?
 LiteralText,trapped,mắc bẫy
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,nâng cấp thành
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Sử dụng hạt giống đồng nghĩa với việc bạn sẽ không được xét vào Sảnh Danh Vọng
 LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
+LiteralText,visit shop,ghé cửa hàng
+LiteralText,visit shrine,ghé điện thờ
 LiteralText,Visit the website,Đến trang web của chúng tôi
+LiteralText,visit zoo,ghé vườn thú
 LiteralText,VOID SPACE,HƯ VÔ
 LiteralText,volatile,
 LiteralText,VOLATILES,CÁC PHẢN ỨNG
-LiteralText,vomit,nôn mửa
+LiteralText,vomit nutrition,nôn mửa
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,Tạm biệt.
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,Bạn có để ý rằng có quá nhiều thần lùn ở quanh đây không?
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Tôi không thể tin rằng tôi phải giải thích điều này, nhưng hãy chắc chắn rằng bạn mang theo mình một cây cuốc chim trước khi dấn thân vào mấy cái hang đó. Bạn thậm chí có thể chế tạo một cái tại bàn chế tạo của thị trấn với đống sắt vụn còn thừa."
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Tôi không hiểu vì sao những mạo hiểm giả nghĩ rằng họ có thể bắn, bắn, bắn khắp nơi trong thị trấn với đống tên và phi tiêu của họ. Chúng tôi chịu đựng điều ấy quá đủ rồi, vì thế dù kể cả đó có là một tai nạn ngoài ý muốn nhắm vào những cư dân của chúng tôi, họ chắn chắn sẽ được đáp trả lại với uy lực chết người."
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.","Tôi thề rằng mạo hiểm giả các người là nhũng sứ giả của sự đen đủi! Mỗi lần một kẻ đểu cáng các người xuất hiện, chúng tôi mất đi 1 tá người."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Tôi thề rằng mạo hiểm giả các người là nhũng sứ giả của sự đen đủi! Mỗi lần một kẻ đểu cáng các người xuất hiện, chúng tôi mất đi 1 tá người."
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Tôi quá mệt và chân tôi đau nhức! Tôi không thể chờ được đến lúc ca gác này kết thúc để tôi còn đánh một giấc.
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Tôi được nghe kể rằng có một thành phố người lùn ngay dưới khu mỏ thần lùn. Đó chắc chắn không phải là chuyến phiêu lưu mà tôi sẽ mơ thực hiện - có quá nhiều những kẻ lùn tịt, hôi hám dưới đó."
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Hãy để mắt tới những bức tường hang đá ảo ánh bởi vì lũ pháp sư thần lùn ma quái ấy đang luẩn quẩn dạo gần đây. Một lũ tinh ranh, tổ sư chúng."

@@ -2993,6 +2993,7 @@ LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
 LiteralText,Add new adventurer,Új kalandor hozzáadása
 LiteralText,ADJUST,BEÁLLÍT
+LiteralText,adjust difficulty,
 LiteralText,adventurer,
 LiteralText,afflict,lesújtás
 LiteralText,AFFLICTED,SZENVEDŐ
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,VISSZAÁLLÍTÁS
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
 LiteralText,ROTATE,FORGAT
+LiteralText,route entity,
 LiteralText,rumour,híresztelés
 LiteralText,sacrifice item,áldozat
 LiteralText,SANITY CHECK,HITELESSÉG ELLENŐRZÉSE
@@ -3717,6 +3719,7 @@ LiteralText,transients,átmeneti hatások
 LiteralText,TRANSIENTS,ÁTMENETI HATÁSOK
 LiteralText,transition,átalakulás
 LiteralText,TRANSLATIONS,FORDÍTÁSOK
+LiteralText,transport entity,
 LiteralText,TRAP,CSAPDA
 LiteralText,trap?,csapda?
 LiteralText,trapped,csapdában
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,következő(k)re fejleszthető
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,"Ha seeddel játszol, nem kerülhetsz be a Dicsőség Csarnokába."
 LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
+LiteralText,visit shop,bolt meglátogatása
+LiteralText,visit shrine,szentély meglátogatása
 LiteralText,Visit the website,Weboldal meglátogatása
+LiteralText,visit zoo,terem meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
 LiteralText,volatile,
 LiteralText,VOLATILES,
-LiteralText,vomit,
+LiteralText,vomit nutrition,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",

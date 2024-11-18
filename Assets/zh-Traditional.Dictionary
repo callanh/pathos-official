@@ -2993,6 +2993,7 @@ LiteralText,actions,行動
 LiteralText,ADD LEVEL,添加樓層
 LiteralText,Add new adventurer,添加新冒險者
 LiteralText,ADJUST,調整
+LiteralText,adjust difficulty,
 LiteralText,adventurer,冒險者
 LiteralText,afflict,感染
 LiteralText,AFFLICTED,被感染
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,復原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,堅硬
 LiteralText,ROTATE,旋轉
+LiteralText,route entity,
 LiteralText,rumour,流言
 LiteralText,sacrifice item,獻祭
 LiteralText,SANITY CHECK,兼容性測試
@@ -3717,6 +3719,7 @@ LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
 LiteralText,transition,轉變
 LiteralText,TRANSLATIONS,翻譯
+LiteralText,transport entity,
 LiteralText,TRAP,陷阱
 LiteralText,trap?,陷阱
 LiteralText,trapped,中陷阱的
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,升級到
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,如果使用種子，您將無法被記錄入名人堂。
 LiteralText,Vanity,自戀，請
 LiteralText,VIEW,查看
+LiteralText,visit shop,訪問商店
+LiteralText,visit shrine,訪問神龕
 LiteralText,Visit the website,訪問官網
+LiteralText,visit zoo,訪問動物園
 LiteralText,VOID SPACE,虛空
 LiteralText,volatile,
 LiteralText,VOLATILES,環境效果
-LiteralText,vomit,嘔吐
+LiteralText,vomit nutrition,嘔吐
 LiteralText,vulnerable to,易受傷害
 LiteralText,WAIT,等待
 LiteralText,Wait how many turns?,等待多少回合？
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,下次見。
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,你有沒有注意過，這附近有實在太多的侏儒？
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,我簡直不敢相信我要解釋這個。下礦之前，你得有一把鶴嘴鋤。只要有一些廢鐵，你甚至能在礦鎮的工作台上把它做出來。
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",「我不理解為什麼冒險者覺得他們可以在鎮子裡拿著飛鏢啊箭矢啊射來射去，射來射去！我們真的受夠這種事了，所以即使是一次意外的誤射，也會引來我們致命的武力回擊。」
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",「我發誓，你們這幫冒險者就是不祥的徵兆！每次，你們之一成為復仇者的時候，我們都要失去幾位兄弟。」
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",「我發誓，你們這幫冒險者就是不祥的徵兆！每次，你們之一成為復仇者的時候，我們都要失去幾位兄弟。」
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,我好累！腳也很疼。我等不及這次巡邏結束後回床上休息了。
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",「有人告訴過我，這片侏儒礦洞的深處還有一座矮人的城市。那不是我會去的地方——一幫又臭又矮的傢伙，我不喜歡。」
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",「多注意一下那些幻象洞穴牆壁，因為礙事的侏儒法師一直在製造它們。真是幫討厭鬼，那些傢伙。」

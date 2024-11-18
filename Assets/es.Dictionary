@@ -4,17 +4,17 @@ AfflictionDescription,There is a gnawing sensation from deep inside your stomach
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Esta enfermedad viral causa inflamación del cerebro y se transmite a través de los animales infectados.
 AfflictionDescription,You feel unclean and everything itches.,Te sientes sucio y todo te pica.
 AfflictionDescription,You have a dreadful case of stomach acid.,Tienes un horrible caso de acidez estomacal.
-AfflictionDescription,Your skin is sickly green and something is very wrong inside your stomach.,Tu piel tiene un color verde y algo va muy mal dentro de tu estómago.
+AfflictionDescription,Your skin is sickly green and something is very wrong inside your stomach.,Tu piel tiene un color verdoso y algo va muy mal dentro de tu estómago.
 AfflictionName,crabs,cangrejos
 AfflictionName,nits,liendres
 AfflictionName,poisoning,envenenamiento
 AfflictionName,rabies,rabia
 AfflictionName,reflux,reflujo
-AfflictionName,sliming,pegajoso
+AfflictionName,sliming,baboseo
 AfflictionName,worms,lombrices
 AnatomyAbsenceText,MINDLESS,SIN CONSCIENCIA
 AnatomyAbsenceText,NO BLOOD,SIN SANGRE
-AnatomyAbsenceText,NO EARS,SIN OREJAS
+AnatomyAbsenceText,NO EARS,SIN OIDOS
 AnatomyAbsenceText,NO EYES,SIN OJOS
 AnatomyAbsenceText,NO FEET,SIN PIES
 AnatomyAbsenceText,NO HANDS,SIN MANOS
@@ -26,7 +26,7 @@ AnatomyAbsenceText,NOT WARM,SIN TEMPERATURA CORPORAL
 AnatomyAbsenceText,VOICELESS,MUDO
 AnatomyName,amorphous,amorfo
 AnatomyName,blood,sangre
-AnatomyName,ears,orejas
+AnatomyName,ears,oidos
 AnatomyName,eyes,ojos
 AnatomyName,feet,pies
 AnatomyName,hands,manos
@@ -37,9 +37,9 @@ AnatomyName,mounted,montado
 AnatomyName,thermal,temperatura corporal
 AnatomyName,voice,voz
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Una larga capa abierta en la parte del frente y ajustada al pecho con un broche.
-AppearanceDescription,A short but sturdy looking coat of mithril armour.,Un pequeño pero resistente armadura de mithril.
-AppearanceDescription,A slender and delicate looking coat of mithril armour.,Una fina y delicada armadura de mithril.
-AppearanceDescription,A slender and glossy looking coat of mithril armour.,Una fina y brillante armadura de mithril.
+AppearanceDescription,A short but sturdy looking coat of mithril armour.,Una armadura de mithril de apariencia corta pero dura.
+AppearanceDescription,A slender and delicate looking coat of mithril armour.,Una armadura de mithril de apariencia fina y delicada.
+AppearanceDescription,A slender and glossy looking coat of mithril armour.,Una armadura de mithril de apariencia fina y lustrosa.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Este clásico accesorio de mago es un gorro puntiagudo decorado con lunas y estrellas.
 AppearanceName,adamantine staff,bastón de adamantina
 AppearanceName,agate ring,anillo de ágata
@@ -51,7 +51,7 @@ AppearanceName,balsa wand,varita de balsa
 AppearanceName,bamboo arrow,flecha de bambú
 AppearanceName,bamboo wand,varita de bambú
 AppearanceName,beaked polearm,asta de pico
-AppearanceName,bell,campana de bronce
+AppearanceName,bell,campana
 AppearanceName,big book,libro grande
 AppearanceName,black book,libro negro
 AppearanceName,black gem,gema negra
@@ -91,7 +91,7 @@ AppearanceName,cloudy potion,poción turbia
 AppearanceName,coarse mantelet,manta gruesa
 AppearanceName,colourful book,libro colorido
 AppearanceName,combat boots,botas de combate
-AppearanceName,compact gun,pistola compacta
+AppearanceName,compact gun,arma compacta
 AppearanceName,concave amulet,amuleto cóncavo
 AppearanceName,conical hat,sombrero cónico
 AppearanceName,convex amulet,amuleto convexo
@@ -110,8 +110,8 @@ AppearanceName,crude spear,lanza tosca
 AppearanceName,crystal staff,bastón de cristal
 AppearanceName,crystal wand,varita de cristal
 AppearanceName,curved polearm,arma de asta curvada
-AppearanceName,curved sword,espada curva
-AppearanceName,curved wand,varita curva
+AppearanceName,curved sword,espada curvada
+AppearanceName,curved wand,varita curvada
 AppearanceName,cyan book,libro cían
 AppearanceName,cyan potion,poción cían
 AppearanceName,dark blue book,libro azul oscuro
@@ -119,7 +119,7 @@ AppearanceName,dark brown book,libro marrón oscuro
 AppearanceName,dark green book,libro verde oscuro
 AppearanceName,dark green potion,poción verde oscuro
 AppearanceName,dark potion,poción oscura
-AppearanceName,deep book,libro misterioso
+AppearanceName,deep book,libro profundo
 AppearanceName,diamond ring,anillo de diamante
 AppearanceName,dirty rag,trapo sucio
 AppearanceName,dog eared book,libro desgastado
@@ -130,8 +130,8 @@ AppearanceName,dusty book,libro polvoriento
 AppearanceName,ebony wand,varita de ébano
 AppearanceName,effervescent potion,poción efervescente
 AppearanceName,emerald potion,poción esmeralda
-AppearanceName,emerald ring,anillo esmeralda
-AppearanceName,engagement ring,anillo de compromiso
+AppearanceName,emerald ring,anillo de esmeralda
+AppearanceName,engagement ring,anillo de matrimonio
 AppearanceName,etched helmet,casco grabado
 AppearanceName,exotic two-pointed polearm,arma de asta exótica de dos puntas
 AppearanceName,faded book,libro desteñido
@@ -150,7 +150,7 @@ AppearanceName,glass wand,varita de vidrio
 AppearanceName,glasses,gafas
 AppearanceName,glittering book,libro resplandeciente
 AppearanceName,gloomy potion,poción sombría
-AppearanceName,glossy mithril-coat,capa brillante de mithril
+AppearanceName,glossy mithril-coat,capa lustrosa de mithril
 AppearanceName,gold book,libro de oro
 AppearanceName,gold earrings,pendientes de oro
 AppearanceName,gold ring,anillo de oro
@@ -169,10 +169,10 @@ AppearanceName,heavy barrelled gun,arma de cañón pesado
 AppearanceName,heavy gun,arma pesada
 AppearanceName,hexagonal amulet,amuleto hexagonal
 AppearanceName,hexagonal wand,varita hexagonal
-AppearanceName,hiking boots,botas de montaña
+AppearanceName,hiking boots,botas de montañero
 AppearanceName,hilted polearm,lanza de asta con empuñadura
 AppearanceName,hooded cloak,capa con capucha
-AppearanceName,hooked polearm,lanza de asta con gancho
+AppearanceName,hooked polearm,arma de asta con gancho
 AppearanceName,horn,cuerno
 AppearanceName,horseshoe,herradura
 AppearanceName,humongous book,libro enorme
@@ -186,21 +186,21 @@ AppearanceName,ivory ring,anillo de marfil
 AppearanceName,jackboots,botas altas
 AppearanceName,jade ring,anillo de jade
 AppearanceName,jewelled wand,varita enjoyada
-AppearanceName,jungle boots,botas de la selva
+AppearanceName,jungle boots,botas de la jungla
 AppearanceName,key,llave
 AppearanceName,lamp,lámpara
 AppearanceName,large gun,arma grande
-AppearanceName,large round shield,escudo grande redondo
-AppearanceName,leather apron,peto de cuero
+AppearanceName,large round shield,escudo redondo grande
+AppearanceName,leather apron,delantal de cuero
 AppearanceName,leather book,libro de cuero
 AppearanceName,leather hat,sombrero de cuero
 AppearanceName,light blue book,libro celeste
 AppearanceName,light brown book,libro marrón claro
 AppearanceName,light green book,libro verde claro
-AppearanceName,long barrelled gun,pistola de cañón largo
+AppearanceName,long barrelled gun,arma de cañón largo
 AppearanceName,long book,libro largo
 AppearanceName,long bow,arco largo
-AppearanceName,long gun,pistola larga
+AppearanceName,long gun,arma larga
 AppearanceName,long poleaxe,lanza de asta larga
 AppearanceName,long samurai sword,espada de samurai larga
 AppearanceName,long wand,varita larga
@@ -2993,6 +2993,7 @@ LiteralText,actions,acciones
 LiteralText,ADD LEVEL,AÑADIR NIVEL
 LiteralText,Add new adventurer,Añadir aventurero
 LiteralText,ADJUST,AJUSTAR
+LiteralText,adjust difficulty,
 LiteralText,adventurer,
 LiteralText,afflict,afligir
 LiteralText,AFFLICTED,AFLIJIDO
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,REVERTIR
 LiteralText,RIGHT RING,ANILLO DERECHO
 LiteralText,rigid,rígido
 LiteralText,ROTATE,ROTAR
+LiteralText,route entity,
 LiteralText,rumour,rumor
 LiteralText,sacrifice item,sacrificio
 LiteralText,SANITY CHECK,PRUEBA DE CORDURA
@@ -3693,23 +3695,23 @@ LiteralText,terrain,terreno
 LiteralText,The attack score is your aptitude for hitting an opponent.,Los puntos de ataque son tu aptitud para golpear a un oponente.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,El desafío es mejorar las mecánicas mientras se mantiene la esencia de lo que lo hace el mejor juego de todos los tiempos.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Los puntos de defensa representan cuán protegido estás de ser golpeado por un oponente.
-LiteralText,There is a new update available!,¡Hay una nueva actualización disponible!
+LiteralText,There is a new update available!,Hay una nueva actualización disponible!
 LiteralText,there is nothing to place here,no hay nada para colocar aquí
 LiteralText,there is nothing to remove here,no hay nada para quitar aquí
 LiteralText,there is nothing to trade with this merchant,no hay nada para comerciar con este mercader
 LiteralText,this level,este nivel
 LiteralText,this merchant has no stock to trade,este mercader no tiene artículos para comerciar
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Este nombre se usa para guardar tus logros en el Salón de la Fama.
-LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Esta semilla puede ser compartida con tus amigos para jugar en el mismo calabozo.
+LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Esta semilla puede ser compartida con tus amigos para jugar y desafiarse a jugar en el mismo calabozo.
 LiteralText,threw,arrojó
 LiteralText,THROW,ARROJAR
 LiteralText,tin,lata de
 LiteralText,tinning,empaquetado
-LiteralText,TOO BIG,MUY GRANDE
+LiteralText,TOO BIG,DEMASIADO GRANDE
 LiteralText,TOO HEAVY,DEMASIADO PESADO
-LiteralText,TOO HUNGRY,MUY HAMBRIENTO
-LiteralText,TOO SMALL,MUY PEQUEÑO
-LiteralText,TOO WEAK,MUY DÉBIL
+LiteralText,TOO HUNGRY,DEMASIADO HAMBRIENTO
+LiteralText,TOO SMALL,DEMASIADO PEQUEÑO
+LiteralText,TOO WEAK,DEMASIADO DÉBIL
 LiteralText,TRACKS,CANCIONES
 LiteralText,TRADE,COMERCIO
 LiteralText,transform to,transformar en
@@ -3717,6 +3719,7 @@ LiteralText,transients,transitorios
 LiteralText,TRANSIENTS,TRANSITORIOS
 LiteralText,transition,transición
 LiteralText,TRANSLATIONS,TRADUCCIONES
+LiteralText,transport entity,
 LiteralText,TRAP,TRAMPA
 LiteralText,trap?,trampa?
 LiteralText,trapped,atrapado
@@ -3736,7 +3739,7 @@ LiteralText,unable to load,no se puede cargar
 LiteralText,unafflict,remueve afliccion
 LiteralText,UNDEAD,NO-MUERTO
 LiteralText,Undo,Deshacer
-LiteralText,unidentified items,objetos no identificados
+LiteralText,unidentified items,objetos sin identificar
 LiteralText,unique,único
 LiteralText,UNIQUES,ÚNICOS
 LiteralText,UNLOCK,DESBLOQUEAR
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,actualizar a
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Usar una semilla implica que no puedas ser elegido para el Salón de la Fama.
 LiteralText,Vanity,Vanidad
 LiteralText,VIEW,VER
+LiteralText,visit shop,visitar la tienda
+LiteralText,visit shrine,visitar el santuario
 LiteralText,Visit the website,Visitar la web
+LiteralText,visit zoo,visitar el zoológico
 LiteralText,VOID SPACE,ESPACIO VACÍO
 LiteralText,volatile,
 LiteralText,VOLATILES,VOLÁTILES
-LiteralText,vomit,vómito
+LiteralText,vomit nutrition,vómito
 LiteralText,vulnerable to,vulnerable a
 LiteralText,WAIT,ESPERAR
 LiteralText,Wait how many turns?,¿esperar cuantos turnos?
@@ -3838,68 +3844,68 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas diseñados a mano en una aventura épica. Toma un descanso de los confines del calabozo y embárcate en una misión desafiante.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Interesantes habitaciones y secretos esperan pero no te detengas; debes descender o moriras. Basado en la generacion de mapas de Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Sandbox para experimentar con las mecánicas de Pathos. Juega con todos los ítems, trampas y elementos de los calabozos en un mapa simple de dos salas"
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Alguna noticia de la superficie? He estado aquí tanto tiempo que ya extraño al sol y al clima.
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Sabías que la mitad de las cosas que te venden los mercaderes vienen de las mochilas de los cuerpos de aventureros como tu?
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Todos hablan de una invación de orcos pero no me la creo, no hay forma de que eso vaya a suceder."
+ModuleDialogue,Goodbye.,Adios.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,Te has dado cuenta de que hay demasiados gnomos aquí?
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"No puedo creer que tenga que explicar esto, pero asegurate de que tengas un pico antes de adentrarte a las minas. Hasta puedes hacerte uno en la mesa de trabajo de la ciudad si tienes mucho hierro chatarra."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","No se el por qué los aventureros pueden disparar y diparar por la ciudad con sus flechas y dardos. Ya nos cansamos de esto, así que aunque sea accidental, acertar a uno de nuestros poblantes vendrá con el castigo de fuerza bruta."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Juro que los aventureros como tú son los que traen mala suerte! Cada vez que gente degenerada como tu aparecen, perdemos una docena de hombres."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Estoy cansado y me duelen los pies! No puedo esperar para que esta patrulla termine para que pueda ir a la cama.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",Me contaron que hay una ciudad de enanos debajo de las minas de los gnomls. Es un viaje que yo no querría hacer - demasiada gente enana malholiente para mi gusto.
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Esté atento por las paredes de cuevas ilusorias, esos gnomos magos molestos estuvieron haciendo sus trucos recientemente. Pestes absolutas."
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Asegúrate de hacer intercambios con los mercaderes de la ciudad y que ayudes a la economía local. Yo no te recomendaría que lo hagas con un estómago vacío.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","Aveces, heroes famosos y poderosos de alrededor de las tierras nos agracian con sus presencias... Te dejaré saber saber si veo a uno hoy."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,Fuera de mi camino! Estoy en una patrulla importante y aventureros como tú siempre bloquean el camino.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","El **Oraculo** te mira con simpatía muda, desconcertandote con su expresión triste.||El destino debe de tener algo verdaderamente *desplacentero* preparado para ti."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,La comida es malísima aqui. Por qué crees que matamos mounstros y tenemos una mesa de trabajo en medio de la ciudad?.
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"Las minas son un lugar peligroso para viajar solo, asi que deberías considerar la posibilidad de contratar a los mercenarios locales para que te ayuden. Ten en cuenta que solo puedes confiar en ellos hasta que te quedes sin monedas."
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","El altar de la ciudad ofrece varias bendiciones a los aventureros virtuosos, asegurate de que lo visites hoy y dona las monedas que te sobren. Te bendigo en tus viajes, aventurero!"
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","La Patrulla y el Gremio de los Mercaderes tienen un acuerdo fuerte, así que ni se te ocurra hacer algo sospechoso."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","Hay un frenesí de gemas en las minas justo debajo de la ciudad. Hay gemas caras tiradas en el suelo, y no son los típicos pedazos de vidrio!"
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,Hay unas escaleras que llevan a las minas fuera de la ciudad. Tal vez deberías bajar ahí y nunca volver?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,Esta es mi última custodia antes de jubilarme de la Patrulla. Espero que nada inesperado suceda!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Esta ciudad es un increible lugar por donde pasar el tiempo y prepararte para el viaje por delante. No te apures para salir, hay muchas cosas para ver y hacer antes de adentrarse más a la mazmorra."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Cuidado en donde caminas al entrar en las minas,a esos escurridisos gnomos bastardos les encanta emboscar a los aventureros desprevenidos."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Por qué no te vas a jugar en las cuevas fuera de le ciudad? Hay muchas cosas gratis para recoger allá, pero ten cuidado, nosotros no patrullamos fuera de la ciudad, así que asegurate de volver si te metes en problemas."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Podrías parar de jugar con las fuentes por favor? No tengo permitido mojar mi uniforme, así que si me mojas, te juro que *te voy a matar*"
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Sabes, solía ser un aventurero como tu...tal vez deberías conseguirte un trabajo también? Después de todo, *aventurero* es una forma elegante de decir méndigo y desempleado"
 ModuleName,Dhak Legacy,Legado Dhak
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Codex Nethack
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Jugar Sandbox
 ModuleTerm,Abyss,Abismo
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
+ModuleTerm,Ambush,Emboscada
+ModuleTerm,Ant Cave,Cueva de Hormigas
+ModuleTerm,Ant Lair,Guarida de Hormigas
+ModuleTerm,Ant Nest,Nido de Hormigas
+ModuleTerm,Arena,Arena
 ModuleTerm,attic,ático
-ModuleTerm,Bigfoot,
-ModuleTerm,Black Lair,
+ModuleTerm,Bigfoot,Pie Grande
+ModuleTerm,Black Lair,Guarida Negra
 ModuleTerm,Black Market,Mercado Negro
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,Guarida Azul
+ModuleTerm,Cage,Jaula
+ModuleTerm,Canyon,Cañón
+ModuleTerm,Cave Maze,Laberinto de las Cuevas
 ModuleTerm,caves,cuevas
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,Ciudad de las Cuevas
 ModuleTerm,cellar,sótano
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
+ModuleTerm,Cemetery,Cementerio
+ModuleTerm,Chicken Farm,Granja de Gallinas
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Felicitaciones por haber llegado al nivel final y haber derrotado a tu némesis.
 ModuleTerm,Congratulations on reaching the end of the {Quest}!,¡Felicitaciones por llegar al final de {Quest}!
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cow Farm,Granja de Vacas
+ModuleTerm,Crater,Crater
+ModuleTerm,Crypt,Cripta
+ModuleTerm,Crystal Henge,Horca de Cristal
+ModuleTerm,Deep Lair,Guarida profunda
 ModuleTerm,Deephall,Pasillos profundos
 ModuleTerm,Deepruins,Ruinas profundas
 ModuleTerm,Deepwilds,Bosque profundas
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,Mina de Diamantes
 ModuleTerm,Dungeon,Mazmorra
 ModuleTerm,Elf Forest,Bosque de los Elfos
 ModuleTerm,Elf Kingdom,Reino de los Elfos
@@ -3908,29 +3914,29 @@ ModuleTerm,Elf Palace 2,Palacio de los Elfos 2
 ModuleTerm,Elf Palace Vault,Cámara del Palacio de los Elfos
 ModuleTerm,Elf Town,Ciudad de los Elfos
 ModuleTerm,Elf Town Trove,Tesoro de la Ciudad de los Elfos
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
-ModuleTerm,Fort Ludios,Fort Ludios
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Emerald Mine,Mina de Esmeralda
+ModuleTerm,Eye Pit,Foso de Ojos
+ModuleTerm,Fort Ludios,Fuerte Ludios
+ModuleTerm,Furnace,Horno
+ModuleTerm,Glacier,Glaciar
+ModuleTerm,Goat Farm,Granja de cabras
+ModuleTerm,Green Lair,Guarida Verde
+ModuleTerm,Grotto,Gruta
+ModuleTerm,Halls,Pasillos
+ModuleTerm,Helltown,Ciudad Infernal
+ModuleTerm,Horse Farm,Granja de Caballos
+ModuleTerm,Ice Lake,Lago de Hielo
 ModuleTerm,Infernal Cage,Jaula infernal
 ModuleTerm,Infernal Fields,campos infernales
 ModuleTerm,Infernal Keep,Torre infernal
 ModuleTerm,Infernal Spire,Aguja infernal
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,Ciudad de Jade
+ModuleTerm,Jelly Pit,Foso de Gelatina
+ModuleTerm,Kobold Fort,Fuerte Kobold
 ModuleTerm,Labyrinth,Laberinto
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,Lago
+ModuleTerm,Lava Flow,Flujo de Lava
+ModuleTerm,Lava Lake,Lago de lava
 ModuleTerm,level//depth,nivel
 ModuleTerm,Lich Tower,Torre del Liche
 ModuleTerm,Lost Chambers,Cámaras Perdidas
@@ -3938,57 +3944,57 @@ ModuleTerm,Ludios Cache,Caché de Ludios
 ModuleTerm,Medusa Lair,Guarida de Medusa
 ModuleTerm,Mines,Minas
 ModuleTerm,Minetown,Ciudad Minera
-ModuleTerm,Moss Pit,
-ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
-ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Moss Pit,Foso de Musgo
+ModuleTerm,Opus,Opus
+ModuleTerm,Orange Lair,Guarida Naranja
+ModuleTerm,Outpost,Puesto de Avanzada
+ModuleTerm,Overland,Sobretierra
+ModuleTerm,Pig Farm,Granja de Cerdos
+ModuleTerm,Prison,Prisión
+ModuleTerm,Pudding Pit,Foso de Pudín
+ModuleTerm,Rat Pit,Foso de Ratas
+ModuleTerm,Rebirth,Renacimiento
+ModuleTerm,Red Lair,Guarida Roja
+ModuleTerm,Respite,Respiro
+ModuleTerm,River,Río
+ModuleTerm,Ruby Mine,Mina de Rubí
+ModuleTerm,Ruins,Ruinas
+ModuleTerm,Rupture,Ruptura
+ModuleTerm,Sapphire Mine,Mina de Safiro
+ModuleTerm,Scorpion Cave,Cueva de Escorpiones
+ModuleTerm,Scorpion Lair,Guarida de Escorpiones
+ModuleTerm,Scorpion Nest,Nido de Escorpiones
+ModuleTerm,Seal Farm,Granja de Focas
+ModuleTerm,Sewers,Alcantarillas
+ModuleTerm,Sheep Farm,Granja de Ovejas
+ModuleTerm,Shimmer Lair,Guarida Reluciente
+ModuleTerm,Shroom Maze,Laberinto de Hongos
+ModuleTerm,Slime Pit,Foso de Baba
+ModuleTerm,Snake Pit,Foso de Serpientes
 ModuleTerm,Sokoban,Sokoban
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,Strange Farm,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
+ModuleTerm,Spider Cave,Cueva de Arañas
+ModuleTerm,Spider Lair,Guarida de Arañas
+ModuleTerm,Spider Nest,Nido de Arañas
+ModuleTerm,Station,Estación
+ModuleTerm,Statue Henge,Estatua de Horca
+ModuleTerm,Stone Henge,Horca de Piedra
+ModuleTerm,Stonetown,Ciudad de Piedra
+ModuleTerm,strange chicken,gallina extraña
+ModuleTerm,strange cow,vaca extraña
+ModuleTerm,Strange Farm,granja extraña
+ModuleTerm,strange goat,cabra extraña
+ModuleTerm,strange horse,caballo extraño
+ModuleTerm,strange pig,cerdo extraño
+ModuleTerm,strange seal,foca extraña
+ModuleTerm,strange sheep,oveja extraña
 ModuleTerm,To complete this game you need to escape the dungeon on the first level.,Para completar este juego debes escapar del calabozo en el primer nivel.
 ModuleTerm,To complete this game you need to escape through the final rift.,Para completar este juego debes escapar a través del grieta final.
-ModuleTerm,To complete this game you need to escape through the final transportal.,Para completar este juego debes escapar a través del teletransportador final.
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
+ModuleTerm,To complete this game you need to escape through the final transportal.,Para completar este juego debes escapar a través del transportal final.
+ModuleTerm,Topaz Mine,Mina de Topacio
+ModuleTerm,Tree Maze,Laberinto de Árboles
 ModuleTerm,trove,tesoro
 ModuleTerm,Underbarracks,Bajocuartéles
-ModuleTerm,Underground,
+ModuleTerm,Underground,Subsuelo
 ModuleTerm,Underlimits,Bajolímites
 ModuleTerm,Underpeaks,Bajocumbres
 ModuleTerm,Undertown,Bajopueblo
@@ -4043,13 +4049,13 @@ MotionPresentName,drink,beber
 MotionPresentName,eat,comer
 MotionPresentName,empty,vaciar
 MotionPresentName,exchange,intercambio
-MotionPresentName,flash,flashear
+MotionPresentName,flash,destellar
 MotionPresentName,inscribe,inscribir
 MotionPresentName,mount,montar
 MotionPresentName,open,abrir
 MotionPresentName,pack,empacar
 MotionPresentName,play,tocar
-MotionPresentName,pray,rezar
+MotionPresentName,pray,orar
 MotionPresentName,quaff,beber
 MotionPresentName,read,leer
 MotionPresentName,recline,acostarse
@@ -4065,7 +4071,7 @@ MotionPresentName,stake,hoguera
 MotionPresentName,study,estudiar
 MotionPresentName,swat,aplastar
 MotionPresentName,write,escribir
-MotionPresentName,zap,destellar
+MotionPresentName,zap,disparar magia
 MurderTypeName,allied,aliado
 MurderTypeName,every,todos
 MurderTypeName,hostile,hostil
@@ -4084,7 +4090,7 @@ PortalName,stone staircase up,escalera ascendente de piedra
 PortalName,transportal,portal teletransportador
 PortalName,wooden ladder down,escalera descendente de madera
 PortalName,wooden ladder up,escalera ascendente de madera
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,Un escudo mágico brillante rodea tu cuerpo ayudándote en tu defensa y desviando proyectiles.
+PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,Un escudo mágico brillante rodea tu cuerpo ayudándote en tu defensa y tiene una probabilidad de desviar proyectiles.
 PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.","Recubierto con una resina resbaladiza y aceitosa, simplemente te deslizas fuera del alcance y las fauces."
 PropertyDescription,Control when and where you teleport.,Controla cuándo y dónde te teletransportas.
 PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,"Desquiciado por la ira, atacas a amigos y enemigos por igual sin pensar ni razonar."
@@ -4092,23 +4098,23 @@ PropertyDescription,Enhances your vision so you can see otherwise invisible crea
 PropertyDescription,Fainting from lack of food.,Desmayo por falta de comida.
 PropertyDescription,Fly above the ground to avoid many types of traps.,Vuela por encima del suelo para evitar muchos tipos de trampas.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,La torpeza hace que sueltes tu arma durante el combate y te caigas por las escaleras.
-PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Los ataques de mirada y rayo son reflejados de vuelta hacia el lanzador.
+PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Los ataques de mirada y rayo son reflejados de vuelta al que los lanzó.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Te da una advertencia previa de los monstruos cercanos y su nivel aproximado de amenaza.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,"Atenazado por el terror, no puedes atacar y debes huir."
+PropertyDescription,Gripped by terror you cannot attack and should flee.,"Atenazado por el terror, no puedes atacar y deberías de huir."
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","En este embriagador estado de intoxicación, su confianza tremendamente aumentada sólo se ve compenzada por su juicio gravemente deteriorado."
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Moviéndote silenciosamente por la mazmorra puedes acercarte a los monstruos dormidos.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Evita que seas objeto del polimorfismo pero también evita que vuelvas a tu forma natural.
-PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Te protege de los efectos que disminuyen la velocidad, paralizan o restringen tu movimiento."
+PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Te protege de los efectos que disminuyen, paralizan o restringen tu movimiento."
 PropertyDescription,Recover mana at an increased rate.,Recuperas maná a mayor velocidad.
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,Te revive con la mitad de la salud a costa de un punto de constitución.
 PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,"De repente, te quedarás dormido hasta que despiertes o te despierten."
 PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","La teleportación transporta a tu personaje por el nivel actual de la mazmorra. Cuando no se controla, este es un evento aleatorio que agrega un grado de imprevisibilidad a tu viaje. La teleportación controlada te permite seleccionar en el mapa la ubicación de destino"
 PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,"La práctica, libre de culpa, de comer carne y órganos de seres de tu propia raza."
 PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,"Esto te permite detectar la presencia y ubicación de las mentes, pero solo cuando no puedes ver."
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Esto hace que tu imagen no aparezca exactamente donde te encuentras. Para los oponentes inteligentes esto hace que les sea más difícil golpearte. Los efectos mágicos como rayos y golpes tienen una posibilidad reducida de golpearte.
+PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Esto hace que tu imagen no aparezca exactamente donde te encuentras. Para los oponentes inteligentes esto hace que les sea más difícil golpearte. Los efectos mágicos como rayos y golpes tienen una posibilidad reducida de acertarte.
 PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Esta mejora de tu velocidad te permite moverte y atacar con más frecuencia.
 PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Este deterioro de la visión significa que solo puedes ver cosas estando muy cerca.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Esto desafía la gravedad y es útil para evitar muchos tipos de trampas. Si solo pudieses llegar al suelo al mismo tiempo.
+PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Esto desafía la gravedad y es útil para evitar muchos tipos de trampas. Si tan solo pudieses alcanzar el suelo.
 PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,Esto es la renovación de tu cuerpo a través de una curación rápida y revitalización. Tu metabolismo es aumentado enormemente y requieres más comida de lo normal.
 PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,Este es el estado de ser invisible. Te mueves con una ligera distorsión de luz que solo se nota cuando estás cerca.
 PropertyDescription,This profound hearing impairment has cut you off from the audible world.,Esta profunda discapacidad auditiva te ha separado del mundo audible.
@@ -4124,21 +4130,21 @@ PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of mo
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Te consume el impulso de comer y sabes que nunca estarás completamente satisfecho.
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Eres resistente y no te ves afectado por ningún tipo de enfermedad natural o mágica.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Estás bien equipado para cavar túneles y hacer tu propio camino a través de la mazmorra.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,Evalúas el número de cargas de un ítem simplemente cogiéndolo.
+PropertyDescription,You assess the number of charges in an item simply by picking it up.,Evalúas el número de cargas de un objeto con tan solo tocarlo.
 PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,Puedes transformarte en la entidad que elijas cuando tengas el control de polimorfismo. Este control está limitado a las entidades que ya has matado. Forzar una transformación tiene un costo para tu nivel de nutrición.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,Causas que todo a su alrededor sucumba en agresión y violencia. Incluso las entidades normalmente pacíficas se atacarán entre sí. Esta propiedad útil y peligrosa debe usarse con precaución. También sientes que tus niveles de nutrición están siendo debilitados por esta propiedad.
+PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,"Causas que todo a su alrededor sucumba en agresión y violencia. Incluso las entidades normalmente pacíficas se atacarán entre sí. Esta propiedad útil y peligrosa, debe usarse con precaución. También sientes que tus niveles de nutrición están siendo debilitados por esta propiedad."
 PropertyDescription,You feel unstable like you could be consumed with rage at any time.,"Te sientes inestable, como si pudieras ser consumido por la ira en cualquier momento."
 PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Tienes conocimiento de las entidades que se encuentran en otras partes de la mazmorra.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,Descubres el estado divino de un ítem simplemente cogiéndolo.
+PropertyDescription,You learn the divine status of an item simply by picking it up.,Descubres el estado divino de un objeto con tan solo tocarlo.
 PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Te mueves en un silencio espeluznante y no puedes pronunciar ni una sola sílaba en voz alta.
 PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,"Tus puntos de habilidad están fijos, no pueden disminuír pero tampoco mejorar."
 PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"Tu cuerpo se vuelve rígido y tieso, casi como si se convirtiera en piedra. Todo movimiento es difícil y te sientes frágil como si el siguiente golpe te fuese a hacer pedazos."
 PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","Tu cuerpo está a medio camino entre planos y esto significa que puedes pasar sin esfuerzo a través de paredes, puertas y rocas."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Tus piernas se sienten como fuertes resortes listas para entrar en acción y en grandes distancias.
+PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Tus piernas se sienten como fuertes resortes listos para entrar en acción y cubrir grandes distancias.
 PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Tu mera presencia provoca a todos en la mazmorra.
 PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Tu metabolismo se ralentiza y necesitas mucha menos nutrición.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Tu mente está protegida contra el engaño, la superchería y la falsedad."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,Tus músculos se agarrotan dejándote inmóvil e indefenso.
+PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Tu mente está protegida contra el engaño, los trucos y la falsedad."
+PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"Tus músculos se paran en una posición, dejándote inmóvil e indefenso."
 PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,Tu percepción y conciencia aumentan para que puedas encontrar puertas secretas y trampas sin ningún esfuerzo.
 PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,Tu posición es incierta y con un poco de esfuerzo puedes desaparecer y luego reaparecer.
 PropertyName,aggravation,provocación
@@ -4146,7 +4152,7 @@ PropertyName,appraisal,evaluación
 PropertyName,beatitude,beatitud
 PropertyName,berserking,frenesi
 PropertyName,blindness,ceguera
-PropertyName,blinking,salto
+PropertyName,blinking,salto de parpadeo
 PropertyName,cannibalism,canibalismo
 PropertyName,clairvoyance,clarividencia
 PropertyName,clarity,lucidez
@@ -4160,7 +4166,7 @@ PropertyName,fainting,desmayo
 PropertyName,fear,miedo
 PropertyName,flight,vuelo
 PropertyName,free action,acción libre
-PropertyName,fumbling,revuelto
+PropertyName,fumbling,torpeza
 PropertyName,hallucination,alucinación
 PropertyName,hunger,hambre
 PropertyName,inebriation,ebriedad
@@ -4168,7 +4174,7 @@ PropertyName,invisibility,invisivilidad
 PropertyName,jumping,salto
 PropertyName,levitation,levitación
 PropertyName,life regeneration,regeneración de vida
-PropertyName,lifesaving,salva-vidas
+PropertyName,lifesaving,salvar vida
 PropertyName,mana regeneration,regeneración de maná
 PropertyName,narcolepsy,narcolepsia
 PropertyName,paralysis,parálisis
@@ -4177,7 +4183,7 @@ PropertyName,phasing,cambio de fase
 PropertyName,polymorph,polimorfismo
 PropertyName,polymorph control,control de polimorfismo
 PropertyName,quickness,celeridad
-PropertyName,rage,rabia
+PropertyName,rage,furia
 PropertyName,reflection,reflexion
 PropertyName,searching,buscando
 PropertyName,see invisible,ver invisible
@@ -4201,10 +4207,10 @@ PropertyName,warning,advertencia
 PunishmentDescription,A heavy iron ball is attached to you by a chain.,Una pesada bola de hierro está unida a ti por una cadena.
 PunishmentDescription,All your knowledge has disappeared and retaining new information has become impossible.,Todo tu conocimiento ha desaparecido y la retención de nueva información se ha vuelto imposible.
 PunishmentDescription,Everything you touch will quite literally turn into gold.,Todo lo que toques se convertirá literalmente en oro.
-PunishmentDescription,"Malevolence and ghostly blackness seeps from your fingertips, corrupting all that you touch.","La malevolencia y la oscuridad fantasmal se filtran de tus dedos, corrompiendo todo lo que tocas."
+PunishmentDescription,"Malevolence and ghostly blackness seeps from your fingertips, corrupting all that you touch.","La malevolencia y la oscuridad fantasmal gotea de tus dedos, corrompiendo todo lo que tocas."
 PunishmentDescription,"This derangement makes you prone to fits of rage, hallucination, fear, agitation and the occasional act of cannibalism.","Este trastorno te hace propenso a ataques de ira, alucinación, miedo, agitación y el ocasional acto de canibalismo."
 PunishmentDescription,This formal rejection means your actions will not be rewarded and your prayers will be unanswered.,Este rechazo formal significa que tus acciones no serán recompensadas y tus oraciones no recibirán respuesta.
-PunishmentDescription,This malaise has rendered you completely unable to read or write.,Este malestar te ha dejado completamente incapacitado para leer o escribir.
+PunishmentDescription,This malaise has rendered you completely unable to read or write.,Este malestar te ha dejado completamente incapaz de leer o escribir.
 PunishmentDescription,You are marked as a criminal and wanted by authorities.,Estás marcado como criminal y buscado por las autoridades.
 PunishmentDescription,You are overwhelmed by the compulsion to eat and consume anything that you find.,Estás abrumado por la compulsión de comer y consumir cualquier cosa que encuentres.
 PunishmentDescription,You are overwhelmed by the compulsion to quaff everything that you can find.,Estás abrumado por la compulsión de beber a grandes tragos todo lo que puedas encontrar.
@@ -4215,7 +4221,7 @@ PunishmentName,illiteracy,analfabetismo
 PunishmentName,malignant aura,aura maligna
 PunishmentName,midas touch,toque de Midas
 PunishmentName,psychosis,psicosis
-PunishmentName,shunning,esquivo
+PunishmentName,shunning,rechazo
 PunishmentName,thirst,sed
 PunishmentName,wanted,buscado
 QualificationCode,c,ca
@@ -4278,7 +4284,7 @@ RaceName,leprechaun//male,duende
 RaceName,leprechaun//non-binary,duende
 RaceName,lizardman//female,mujer lagarta
 RaceName,lizardman//male,hombre lagarto
-RaceName,lizardman//non-binary,humano lagarto
+RaceName,lizardman//non-binary,persona lagarto
 RaceName,nymph//female,ninfa
 RaceName,nymph//male,ninfa
 RaceName,nymph//non-binary,ninfa
@@ -4309,14 +4315,14 @@ RecruitmentName,Long campaign,Larga campaña
 RecruitmentName,Short journey,Viaje corto
 RecruitmentName,To the bitter end,Hasta el crudo final
 RumourFalseMessage,A cornuthaum is a dunce cap.,Un cornuthaum es un capirote.
-RumourFalseMessage,A magic whistle tames dragons.,Un silbato mágico domestica dragones.
-RumourFalseMessage,A wand of nothing is something.,La varita de nada es algo.
+RumourFalseMessage,A magic whistle tames dragons.,Un silbato mágico doma dragones.
+RumourFalseMessage,A wand of nothing is something.,Una varita de nada es algo.
 RumourFalseMessage,Acid blobs make you hallucinate.,Las masas amorfas ácidas te hacen alucinar.
 RumourFalseMessage,Dip a scroll in a fountain for blessing.,Sumerge un pergamino en una fuente para una bendición.
 RumourFalseMessage,Donations are 100% tax deductible.,Las donaciones son cien por ciento deducibles de impuestos.
 RumourFalseMessage,Eat a flea and save a dog.,Come una pulga y salva a un perro.
 RumourFalseMessage,Eat a giant ant and you may be surprised.,Come una hormiga gigante y te sorprenderás.
-RumourFalseMessage,Eat a leprechaun and gain teleport control.,Come un leprechaun y gana el control de teletransporte.
+RumourFalseMessage,Eat a leprechaun and gain teleport control.,Come un duende y gana el control de teletransporte.
 RumourFalseMessage,Gain the powers of Indiana Jones by wearing a fedora.,Obtén los poderes de Indiana Jones usando un sombrero de fieltro.
 RumourFalseMessage,Give the lamp a caress and the djinni will undress.,Acaricia la lámpara y el genio se desvestirá.
 RumourFalseMessage,Give your lamp a rub.,Frota tu lámpara.
@@ -4325,7 +4331,7 @@ RumourFalseMessage,Gnomish weapons are always cursed.,Las armas de gnomos están
 RumourFalseMessage,Go towards the light.,Ve hacia la luz.
 RumourFalseMessage,Great tragedy falls upon those who eat the yellow snow.,Una gran tragedia recae sobre aquellos que comen la nieve amarilla.
 RumourFalseMessage,Learn to say cherry blossom in Draconic: selavra di wer cherry (Cell-ave-rah dee wur chah-ray).,Aprende a decir flor de cerezo en Dracónico: selavra di wer cherry (Cell-ave-rah dee wur chah-ray).
-RumourFalseMessage,Learn to say mortal fools in Draconic: mablik hofibai (Mah-blick hauph-ee-bay).,Aprende a decir tonto mortal en Dracónico: mablik hofibai (Mah-blick hauph-ee-bay).
+RumourFalseMessage,Learn to say mortal fools in Draconic: mablik hofibai (Mah-blick hauph-ee-bay).,Aprende a decir tontos mortales en Dracónico: mablik hofibai (Mah-blick hauph-ee-bay).
 RumourFalseMessage,Learn to say peach tree in Draconic: skjall di peaches (Skah-jawl dee peech-is).,Aprende a decir melocotonero en Dracónico: skjall di peaches (Skah-jawl dee peech-is).
 RumourFalseMessage,Learn to say slime mould in Draconic: mould di slime (Mole-duh dee slie-mah).,Aprende a decir moho baboso en Dracónico: mould di slime (Mole-duh dee slie-mah).
 RumourFalseMessage,Occasionally you should give your Gremlin a bath.,Ocasionalmente deberías bañar a tu Gremlin.
@@ -4334,7 +4340,7 @@ RumourFalseMessage,"The swallow may fly south with the sun or the house martin o
 RumourFalseMessage,There can be only ONE!,Sólo puede haber UNO!
 RumourFalseMessage,This is a fortune cookie.,Esto es una galleta de la fortuna.
 RumourFalseMessage,This is an automatic response from the College of Wizardry. We have received your message and an advisor will reply shortly.,Ésta es una respuesta automática del Colegio de Hechicería. Hemos recibido su mensaje y un consejero responderá en breve…
-RumourFalseMessage,Throw an acid blob at a rust monster.,Lanza una masa amorfa ácida a un monstruo oxidado.
+RumourFalseMessage,Throw an acid blob at a rust monster.,Lanza una masa amorfa ácida a un monstruo de óxido.
 RumourFalseMessage,"To view inventory, press 'backpack'.","Para ver el inventario, presiona 'mochila'."
 RumourFalseMessage,"Two wrongs do not make a right, but three rights do make a left.","Dos errores no hacen un acierto, pero tres a la derecha hacen uno a la izquierda."
 RumourFalseMessage,Wearing solid metal gear and eating rations will recover health.,Usar equipo de metal sólido y comer raciones recuperará salud.
@@ -4343,8 +4349,8 @@ RumourFalseMessage,"When in trouble, when in doubt; run in circles, scream and s
 RumourFalseMessage,"When reading a scroll of amnesia, remember the golden rule.","Al leer un pergamino de amnesia, recuerda la regla de oro."
 RumourFalseMessage,"When you crave ice cream, your body is telling you that it needs water.","Cuando anhelas un helado, tu cuerpo te está diciendo que necesita agua."
 RumourFalseMessage,Yellow mould brings you gold.,El moho amarillo te trae oro.
-RumourFalseMessage,You can be charmed to death.,Puedes ser hechizado hasta la muerte.
-RumourFalseMessage,Zap your enemy with a unicorn horn.,Descarga el cuerno de unicornio en tus enemigos.
+RumourFalseMessage,You can be charmed to death.,Puedes ser encantado hasta la muerte.
+RumourFalseMessage,Zap your enemy with a unicorn horn.,Hechiza a tus enemigos con un cuerno de unicornio.
 RumourTrueMessage,A pick-axe has many uses - be creative.,"Un pico tiene muchos usos, sé creativo."
 RumourTrueMessage,Adopt an older pet.,Adopta una mascota más vieja.
 RumourTrueMessage,Charmed enemies make great allies.,Los enemigos hechizados son grandes aliados.
@@ -4369,11 +4375,11 @@ RumourTrueMessage,Lost your pet? Try whistling for it.,¿Perdiste a tu mascota? 
 RumourTrueMessage,Never trust a Nymph.,Nunca confíes en una ninfa.
 RumourTrueMessage,Never turn a blind eye to carrots.,Nunca mires para otro lado con las zanahorias.
 RumourTrueMessage,Not all moulds are created equal.,No todos los mohos son creados iguales.
-RumourTrueMessage,Phase spiders can be trippy.,Las arañas en fase pueden producir alucinaciones.
+RumourTrueMessage,Phase spiders can be trippy.,Las arañas de fase pueden producir alucinaciones.
 RumourTrueMessage,Pyrolisk are fire eaters.,Los piroliscos son tragafuegos.
 RumourTrueMessage,Sacrificing a priest on his own altar is a very bad idea.,Sacrificar a un sacerdote en su propio altar es una muy mala idea.
 RumourTrueMessage,See the priest to cure what ails you.,Ve a ver al sacerdote para curar lo que te aflige.
-RumourTrueMessage,The utterly confused should chew on a lizard.,El completamente confundido debería masticar un lagarto.
+RumourTrueMessage,The utterly confused should chew on a lizard.,El que esté completamente confundido debería masticar un lagarto.
 RumourTrueMessage,There is a scroll that can defeat the merchant.,Hay un pergamino que puede derrotar al mercader.
 SanctityCode,B,B
 SanctityCode,C,M
@@ -4382,7 +4388,7 @@ SanctityName,blessed,bendito
 SanctityName,cursed,maldito
 SanctityName,uncursed,sin maldición
 SchoolName,abjuration,abjuración
-SchoolName,clerical,clérigo
+SchoolName,clerical,clerical
 SchoolName,conjuration,conjuración
 SchoolName,divination,adivinación
 SchoolName,enchantment,encantamiento
@@ -4390,16 +4396,16 @@ SchoolName,evocation,evocación
 SchoolName,necromancy,nigromancia
 SchoolName,transmutation,transmutación
 ServiceDescription,detect traps in the surrounding area.,detectar trampas por los alrededores.
-ServiceDescription,identify one item in your inventory.,identificar un ítem en tu inventario.
+ServiceDescription,identify one item in your inventory.,identificar un objeto en tu inventario.
 ServiceDescription,magic mapping for the surrounding area.,mapeado mágico de los alrededores.
 ServiceDescription,refresh the shop with new items for sale.,recarga la tienda con nuevos artículos para la venta.
-ServiceDescription,remove a curse from one item in your inventory.,elimina una maldición de un ítem de tu inventario.
+ServiceDescription,remove a curse from one item in your inventory.,elimina una maldición de un objeto de tu inventario.
 ServiceName,curse removal,eliminación de maldiciones
 ServiceName,identification,identificación
 ServiceName,magic mapping,mapeado mágico
 ServiceName,restock shop,reabastecer tienda
 ServiceName,trap detection,detección de trampas
-ShopName,antique weapons outlet,outlet de armas antiguas
+ShopName,antique weapons outlet,venta de armas antiguas
 ShopName,delicatessen,exquisiteces
 ShopName,general store,almacén general
 ShopName,gun mart,mercado de armas
@@ -4419,7 +4425,7 @@ ShrineName,sacred grove,arboleda sagrada
 SizeName,gargantuan,gigantesco
 SizeName,huge,enorme
 SizeName,large,grande
-SizeName,medium,medio
+SizeName,medium,mediano
 SizeName,small,pequeño
 SizeName,tiny,minúsculo
 SkillCategoryName,defensive,defensivo
@@ -4473,18 +4479,18 @@ SonicName,amulet,amuleto
 SonicName,arf,ladrido
 SonicName,armour,armadura
 SonicName,baa,bee
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,barras subiendo
+SonicName,bars slamming,barras chocando al suelo
 SonicName,bell,campana
 SonicName,birds,aves
 SonicName,bleat,balido
-SonicName,blink,salto
+SonicName,blink,salto de parpadeo
 SonicName,book,libro
 SonicName,bow fire,arco de fuego
 SonicName,broken barrel,barril roto
 SonicName,broken boulder,roca fracturada
 SonicName,broken door,puerta rota
-SonicName,broken glass,cristal quebrado
+SonicName,broken glass,vidrio quebrado
 SonicName,broken lock,cerradura rota
 SonicName,bugle,trompeta
 SonicName,burble,burbujeo
@@ -4498,7 +4504,7 @@ SonicName,chirp,gorjeo
 SonicName,clank,clank
 SonicName,close door,puerta cerrada
 SonicName,cluck,cloqueo
-SonicName,clunk,
+SonicName,clunk,ruido sordo
 SonicName,coins,monedas
 SonicName,conclusion,conclusión
 SonicName,craft,elaborar
@@ -4521,7 +4527,7 @@ SonicName,foreboding,presentimiento
 SonicName,freeze,congelar
 SonicName,gain ability,ganar habilidad
 SonicName,gain karma,ganar karma
-SonicName,gain level,ganar nivel
+SonicName,gain level,subir de nivel
 SonicName,gain skill,ganar capacidad
 SonicName,gas,gas
 SonicName,gem,gema
@@ -4560,10 +4566,10 @@ SonicName,neigh,relincho
 SonicName,oink,oink
 SonicName,open door,puerta abierta
 SonicName,pick axe,pico
-SonicName,pistol fire,pistola de fuego
-SonicName,polymorph,polimorfismo
+SonicName,pistol fire,disparo de pistola
+SonicName,polymorph,polimorfisar
 SonicName,potion,poción
-SonicName,prayer,plegaria
+SonicName,prayer,oración
 SonicName,quaff,beber
 SonicName,read,leer
 SonicName,realtime,tiempo real
@@ -4597,14 +4603,14 @@ SonicName,squeaks,chirridos
 SonicName,squeal,chillido
 SonicName,swallow,tragar
 SonicName,switch,cambiar
-SonicName,taps,golpes
+SonicName,taps,toques
 SonicName,teleport,teleportar
 SonicName,throne,trono
 SonicName,throw grenade,lanzar granada
 SonicName,throw object,lanzar objeto
 SonicName,thump,golpe seco
 SonicName,tool,herramienta
-SonicName,trumpet,pregón
+SonicName,trumpet,trompeta
 SonicName,tunnelling,tunelador
 SonicName,turnbased,por turnos
 SonicName,wailing,lamentos
@@ -4613,28 +4619,28 @@ SonicName,warping,deformar
 SonicName,water crash,estruendo de agua
 SonicName,water fountain,fuente de agua
 SonicName,water impact,impacto de agua
-SonicName,water splash,salpicaduras de agua
+SonicName,water splash,salpicadura de agua
 SonicName,weapon,arma
-SonicName,whistle,silbido
+SonicName,whistle,silbar
 SonicName,woof,woof
 SonicName,write,escribir
-SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,Aristócratas que disfrutan de todo su privilegio y se preguntan por qué todo el mundo los odia.
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Eres inusualmente de baja estatura y tamaño para tu raza, eres más ágil pero menos efectivo en el combate."
-SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Eres inusualmente alto y grande para tu raza, te mueves más lentamente pero eres más resistente."
-SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Eternamente maldecido con licantropía, estos seres pueden transformarse en hombres lobo."
+SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,Aristócratas que disfrutan de todo su privilegio y se preguntan del por qué todo el mundo los odia.
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Siendo de más baja estatura y tamaño de lo normal, son más ágiles pero menos efectivos en el combate."
+SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Siendo más alto y grande de lo normal, se mueven más lentamente pero son más resistentes."
+SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Eternamente maldecido con licantropía, estos seres pueden transformarse en formas mounstrosas del lobo."
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,Criatura olvidada que subsiste alimentándose de la esencia vital de los vivos.
-SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Siendo bendecidos con el don de persepción extra-sensorial para identificar entidades ocultas a los sentidos normales, sufren de terrible hambre."
+SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Siendo bendecidos con el don de persepción extra-sensorial para identificar entidades ocultas a los sentidos normales, sufren de una voráz hambre."
 SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores del elemento de tierra, pueden conjurar esferas explosivas a sus enemigos"
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores de el elemento de fuego, pueden conjurar esferas explosivas a sus enemigos"
-SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores de el elemento de hielo, pueden conjurar esferas explosivas a sus enemigos"
-SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores de el elemento de electrididad, pueden conjurar esferas explosivas a sus enemigos"
+SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores del elemento de hielo, pueden conjurar esferas explosivas a sus enemigos"
+SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores de el elemento de electricidad, pueden conjurar esferas explosivas a sus enemigos"
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Altamente ascendidos servidores de el elemento de agua, pueden conjurar esferas explosivas a sus enemigos"
-SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Una vida dedicada al estudio ha centrado tu aprendizaje en los libros a costa de otros hobbies y tu forma física.
+SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Una vida dedicada al estudio centrado aprendizaje en los libros a costa de otros pasatiempos y su forma física.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"El síndrome del personaje principal ha resultado en una fuerte dependencia en la armadura de trama, pero están destinados a vérselas con la vida real."
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Inseguro de tu posición, estas acostumbrado a estar en todas partesal mismo tiempo."
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Esculpido en vidrio vivo que refleja la energia y refracta la luz, eres una emulación perfecta pero delicada de tu contraparte natural."
-SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Todavía vivos por alguna razón, aunque sin la carne necesaria para estar realmente vivos, esta peculiar existencia tiene su ventajas."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Los borrachos habitualmente son descarados pero ligeramente inestables; simplemente no les pidas que reciten el alfabeto hacia atrás.
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Inseguro de tu posición, estas acostumbrado a estar en todas partes al mismo tiempo."
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Esculpido en vidrio vivo que refleja la energia y refracta la luz, es una emulación perfecta pero delicada de tu contraparte natural."
+SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Todavía vivos por alguna razón, aunque no tienen la carne necesaria para estar realmente vivos, esta peculiar existencia tiene sus ventajas."
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,Los habitualmente borrachos son aventureros valientes pero ligeramente inestables; simplemente no les pidas que reciten el alfabeto al revés.
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Ya sean culpables o inocentes de sus crímenes, estos individuos están desesperados por escapar de su custodia."
 SpecialName,colossus,coloso
 SpecialName,drunkard,borracho
@@ -4642,8 +4648,8 @@ SpecialName,earth,tierra
 SpecialName,flame,fuego
 SpecialName,frost,hielo
 SpecialName,fugitive,fugitivo
-SpecialName,glass,cristal
-SpecialName,midget,enano
+SpecialName,glass,vidrio
+SpecialName,midget,pequeño
 SpecialName,noble,noble
 SpecialName,protagonist,protagonista
 SpecialName,psychic,psíquico
@@ -4675,7 +4681,7 @@ SpellName,detect monsters,detectar monstruos
 SpellName,detect treasure,detectar tesoros
 SpellName,detect unseen,detectar invisible
 SpellName,dig,cavar
-SpellName,disintegrate,desintegración
+SpellName,disintegrate,desintegrar
 SpellName,drain life,drenar vida
 SpellName,extra healing,sanación extra
 SpellName,fear,miedo
@@ -4684,7 +4690,7 @@ SpellName,fireball,bola de fuego
 SpellName,flaming sphere,esfera llameante
 SpellName,force bolt,rayo de fuerza
 SpellName,freezing sphere,esfera congelada
-SpellName,full healing,curación completa
+SpellName,full healing,sanación completa
 SpellName,haste,prisa
 SpellName,healing,sanación
 SpellName,ice storm,tormenta de hielo
@@ -4693,27 +4699,27 @@ SpellName,invisibility,invisivilidad
 SpellName,jumping,salto
 SpellName,knock,golpe
 SpellName,levitation,levitación
-SpellName,light,iluminación
+SpellName,light,luz
 SpellName,lightning bolt,rayo
 SpellName,living wall,muro viviente
 SpellName,magic mapping,mapeado mágico
 SpellName,magic missile,misil mágico
-SpellName,phasing,fases
-SpellName,poison blast,explosión de veneno
+SpellName,phasing,cambio de fase
+SpellName,poison blast,explosión venenosa
 SpellName,polymorph,polimorfismo
 SpellName,raise dead,levantar a los muertos
 SpellName,regenerate,regeneración
-SpellName,remove curse,eliminar maldición
+SpellName,remove curse,remover maldición
 SpellName,restoration,restauración
-SpellName,shocking sphere,esfera aturdidora
+SpellName,shocking sphere,esfera de choque
 SpellName,sleep,sueño
 SpellName,slow,retardar
 SpellName,soaking sphere,esfera diluvia
-SpellName,summoning,invocar
+SpellName,summoning,invocación
 SpellName,telekinesis,telequinesia
-SpellName,teleport away,teletransportarse lejos
+SpellName,teleport away,huida teletransporte
 SpellName,toxic spray,spray tóxico
-SpellName,turn undead,convertir en muertos vivientes
+SpellName,turn undead,convertir no-muertos
 SpellName,walling,muros
 SpellName,wizard lock,cerradura mágica
 StandingName,damned,maldito
@@ -4742,7 +4748,7 @@ StrikeName,boost,aumentar
 StrikeName,death,muerte
 StrikeName,energy,energia
 StrikeName,flame,fuego
-StrikeName,flash,flash
+StrikeName,flash,destello
 StrikeName,force,fuerza
 StrikeName,frost,frio
 StrikeName,gas,gas
@@ -4763,8 +4769,8 @@ TraversalPresentName,ascend,asciende
 TraversalPresentName,descend,desciende
 TraversalPresentName,travel,viaja
 VolatileName,blaze,ardiente
-VolatileName,blood,
-VolatileName,electricity,electrificado
+VolatileName,blood,sangre
+VolatileName,electricity,electricidad
 VolatileName,freeze,congelar
 VolatileName,steam,evaporado
 WallStructureName,illusionary,ilusionaria

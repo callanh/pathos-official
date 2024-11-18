@@ -2993,6 +2993,7 @@ LiteralText,actions,פעולות
 LiteralText,ADD LEVEL,הוספת רמה
 LiteralText,Add new adventurer,הוספת דמות חדשה
 LiteralText,ADJUST,תיקון
+LiteralText,adjust difficulty,
 LiteralText,adventurer,
 LiteralText,afflict,צרה
 LiteralText,AFFLICTED,בצרה
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,לחזור
 LiteralText,RIGHT RING,טבעת ימין
 LiteralText,rigid,במצב נוקשה
 LiteralText,ROTATE,לסובב
+LiteralText,route entity,
 LiteralText,rumour,שמועה
 LiteralText,sacrifice item,הקרבה
 LiteralText,SANITY CHECK,בדיקת שפיות
@@ -3717,6 +3719,7 @@ LiteralText,transients,השפעות זמניות
 LiteralText,TRANSIENTS,השפעות זמניות
 LiteralText,transition,מעבר
 LiteralText,TRANSLATIONS,תרגומים
+LiteralText,transport entity,
 LiteralText,TRAP,מלכודת
 LiteralText,trap?,מלכודת?
 LiteralText,trapped,עם מלכודת
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,לשדרג ל
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,שימוש בגרעין מבטל את האפשרות להיכלל בהיכל התהילה.
 LiteralText,Vanity,ראוותנות
 LiteralText,VIEW,להציג
+LiteralText,visit shop,ביקור בחנות
+LiteralText,visit shrine,ביקור במקדש
 LiteralText,Visit the website,לבקר באתר
+LiteralText,visit zoo,ביקור בגן חיות
 LiteralText,VOID SPACE,חלל ריק
 LiteralText,volatile,
 LiteralText,VOLATILES,נדיפים
-LiteralText,vomit,הקאה
+LiteralText,vomit nutrition,הקאה
 LiteralText,vulnerable to,פגיעות ל
 LiteralText,WAIT,לחכות
 LiteralText,Wait how many turns?,כמה תורות לחכות?
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",

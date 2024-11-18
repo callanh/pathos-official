@@ -104,7 +104,7 @@ namespace Pathos
       "Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.",
       "Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.",
       "The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-      "I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+      "I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
       "Any news from the surface? I've been down here so long that I miss sunshine and weather.",
       "Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?",
       "This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!",

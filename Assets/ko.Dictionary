@@ -2993,6 +2993,7 @@ LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
 LiteralText,Add new adventurer,새로운 모험가 추가
 LiteralText,ADJUST,조절
+LiteralText,adjust difficulty,
 LiteralText,adventurer,
 LiteralText,afflict,감염
 LiteralText,AFFLICTED,감염됨
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
 LiteralText,ROTATE,회전
+LiteralText,route entity,
 LiteralText,rumour,루머
 LiteralText,sacrifice item,희생
 LiteralText,SANITY CHECK,정신 진단
@@ -3717,6 +3719,7 @@ LiteralText,transients,효과
 LiteralText,TRANSIENTS,효과
 LiteralText,transition,층 이동
 LiteralText,TRANSLATIONS,번역
+LiteralText,transport entity,
 LiteralText,TRAP,함정
 LiteralText,trap?,함정?
 LiteralText,trapped,덫쳐진
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,업그레이드 :
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,시드를 사용할 경우 명예의 전당에 기록 불가능 합니다.
 LiteralText,Vanity,장식
 LiteralText,VIEW,시야
+LiteralText,visit shop,가게 방문
+LiteralText,visit shrine,제단 방문
 LiteralText,Visit the website,웹사이트를 방문합니다.
+LiteralText,visit zoo,서식지 방문
 LiteralText,VOID SPACE,공허
 LiteralText,volatile,
 LiteralText,VOLATILES,휘발성 물질
-LiteralText,vomit,구토
+LiteralText,vomit nutrition,구토
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",

@@ -2993,6 +2993,7 @@ LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
 LiteralText,ADJUST,調整
+LiteralText,adjust difficulty,
 LiteralText,adventurer,冒険者
 LiteralText,afflict,災難
 LiteralText,AFFLICTED,災難に苛まれている
@@ -3588,6 +3589,7 @@ LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
+LiteralText,route entity,
 LiteralText,rumour,噂
 LiteralText,sacrifice item,犠牲
 LiteralText,SANITY CHECK,SANチェック
@@ -3717,6 +3719,7 @@ LiteralText,transients,一時的な状態
 LiteralText,TRANSIENTS,一時的な状態
 LiteralText,transition,階層移動
 LiteralText,TRANSLATIONS,翻訳
+LiteralText,transport entity,
 LiteralText,TRAP,罠
 LiteralText,trap?,罠?
 LiteralText,trapped,罠付きの
@@ -3759,11 +3762,14 @@ LiteralText,upgrade to,アップグレード
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,シードを使うと名誉の殿堂にはランクインされません。
 LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
+LiteralText,visit shop,お店を訪問
+LiteralText,visit shrine,社を訪ねる
 LiteralText,Visit the website,ウェブサイトにアクセス
+LiteralText,visit zoo,動物園を訪問
 LiteralText,VOID SPACE,ボイドスペース
 LiteralText,volatile,
 LiteralText,VOLATILES,地形効果
-LiteralText,vomit,おう吐
+LiteralText,vomit nutrition,おう吐
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
@@ -3845,7 +3851,7 @@ ModuleDialogue,Goodbye.,さようなら。
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,このあたりは、それはもうノームが大量にいるそうだぞ？
 ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,説明するまでもないと思うが、鉱山に行く前につるはしを手に入れた方が良いぞ。鉄クズが十分あれば、作業台から作ることだってできるからな。
 ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",一体どうして冒険者どもは街のまわりで弓矢とかダガーとかバシバシ飛ばして知らん顏でいられるんだ。俺たちゃもうウンザリしてるから、例えうっかりでも住民に当たったりした日にゃタダじゃ済まさんぞ。
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turn up, we lose a dozen men.",おまえたち冒険者は不吉の前兆に違いない！ロクデナシがひとり現れるたびに、俺たちは1ダースもの仲間を失っているんだぞ。
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",おまえたち冒険者は不吉の前兆に違いない！ロクデナシがひとり現れるたびに、俺たちは1ダースもの仲間を失っているんだぞ。
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,疲れたし足痛いし！こんな見回り早く終わらせて家で眠りたいよ。
 ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",ノーム鉱山の更に下にはドワーフの街があると聞く。臭くて小さい連中が多いのは好みではないし、行ってみたいとは思わないけどな。
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",洞窟では幻覚の壁に気を付けてくれ。ノームの魔法使いどもの仕業だけど、多すぎるし本当にやっかいだよ。
