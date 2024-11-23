@@ -221,7 +221,7 @@ AppearanceName,mithril staff,bastón de mithril
 AppearanceName,mood ring,anillo de humor
 AppearanceName,moonstone ring,anillo de piedra lunar
 AppearanceName,mortar gun,arma de mortero
-AppearanceName,mottled book,libro manchado
+AppearanceName,mottled book,libro veteado
 AppearanceName,mud boots,botas para barro
 AppearanceName,muddy potion,poción lodosa
 AppearanceName,murky potion,poción opaca
@@ -366,7 +366,7 @@ AppearanceName,tiger eye ring,anillo de ojo de tigre
 AppearanceName,tin wand,varita de estaño
 AppearanceName,tiny book,libro diminuto
 AppearanceName,topaz ring,anillo de topacio
-AppearanceName,torn book,libro rasgado
+AppearanceName,torn book,libro desgarrado
 AppearanceName,toy sword,espada de juguete
 AppearanceName,triangular amulet,amuleto triangular
 AppearanceName,turquoise book,libro turquesa
@@ -413,7 +413,7 @@ AttackType,grapple,agarrar
 AttackType,horn,cuerno
 AttackType,kick,patear
 AttackType,punch,puñetazo
-AttackType,shriek,chillido
+AttackType,shriek,grito
 AttackType,slap,bofetada
 AttackType,spell,hechizo
 AttackType,spit,escupir
@@ -515,7 +515,7 @@ BoonDescription,Summon a tame forest beast as your ally.,Invoca una bestia del b
 BoonDescription,Upgrade an item or increase its power.,Mejora un objeto o aumenta su poder.
 BoonDescription,Use nature magic to grow the power of your ally.,Usa la magia de la naturaleza para aumentar el poder de tu aliado.
 BoonDescription,Write a random scroll onto your blank paper.,Escribe un pergamino al azar en tu papel blanco.
-BoonName,animate dead,reanimar muertos
+BoonName,animate dead,revivir muertos
 BoonName,assess,evaluar
 BoonName,bless,bendecir
 BoonName,brew,preparar
@@ -833,7 +833,7 @@ CompanionName,rat,rata
 CounterName,afflictions,aflicciones
 CounterName,animations,animaciones
 CounterName,anoints,unciones
-CounterName,blinks,saltos
+CounterName,blinks,saltos de parpadeo
 CounterName,boons,bendiciones
 CounterName,captures,capturas
 CounterName,casts,hechizos
@@ -878,7 +878,7 @@ CounterName,rests,descansos
 CounterName,rubs,frotaciones
 CounterName,sacrifices,sacrificios
 CounterName,scraps,desarmados
-CounterName,scries,adivinaciones
+CounterName,scries,adivinaciones con bola de cristal
 CounterName,searches,búsquedas
 CounterName,services,servicios
 CounterName,sets,conjuntos
@@ -897,7 +897,7 @@ CounterName,tunnels,túneles
 CounterName,untraps,trampas desarmadas
 CounterName,violations,violaciones
 CounterName,waits,esperas
-CounterName,writes,inscripciones
+CounterName,writes,escrituras
 CounterName,zaps,usos de varitas
 DamageTypeName,bludgeon,contundente
 DamageTypeName,pierce,perforante
@@ -1232,7 +1232,7 @@ EntityName,exterminator,exterminador
 EntityName,fairy,hada
 EntityName,Famine,Hambre
 EntityName,Father Dagon,Padre Dagon
-EntityName,fiend,demonio
+EntityName,fiend,desalmado
 EntityName,fire ant,hormiga de fuego
 EntityName,fire elemental,elemental de fuego
 EntityName,fire giant,gigante de fuego
@@ -1262,7 +1262,7 @@ EntityName,gecko,lagarto
 EntityName,gelatinous cube,cubo gelatinoso
 EntityName,genetic engineer,ingeniero genético
 EntityName,Geryon,Gerión
-EntityName,ghast,espectro
+EntityName,ghast,aparición
 EntityName,ghost,fantasma
 EntityName,ghoul,necrófago
 EntityName,ghoul mage,mago necrófago
@@ -1448,7 +1448,7 @@ EntityName,master lich,lich maestro
 EntityName,master mind flayer,desollamentes maestro
 EntityName,mastodon,mastodonte
 EntityName,Maugneshaagar,Maugneshaagar
-EntityName,medusa,medusa
+EntityName,medusa,Medusa
 EntityName,mellified man,hombre mellificado
 EntityName,merchant,mercader
 EntityName,Metamorphius,Cambiante Maestro
@@ -1953,7 +1953,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},conv
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},convertir puerta {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},convertir suelo {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},convertir derrame {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},convertir {StockName} {QualifierText} a {ItemNames}
 FormatText,cripple {AttributeName},lisiar {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},disminuye {AttributeName} en {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},disminuye todas las habilidades en {AdjustmentDice}
@@ -2311,7 +2311,7 @@ ItemName,book of animate dead,libro de reanimar muertos
 ItemName,book of animate object,libro de animar objeto
 ItemName,book of bind undead,libro de doblegar muertos vivientes
 ItemName,book of blank paper,libro en blanco
-ItemName,book of blinking,libro de salto
+ItemName,book of blinking,libro de salto de parpadeo
 ItemName,book of cancellation,libro de cancelación
 ItemName,book of charm,libro de encanto
 ItemName,book of clairvoyance,libro de clarividencia
@@ -2519,7 +2519,7 @@ ItemName,Illuminare,Iluminador
 ItemName,iron chain,cadena de hierro
 ItemName,iron ration,ración de combate
 ItemName,iron shoes,zapatos de hierro
-ItemName,jacinth,zircón
+ItemName,jacinth,jacinto
 ItemName,jade,jade
 ItemName,Jade Key,llave de jade
 ItemName,jasper,jaspe
@@ -2994,7 +2994,7 @@ LiteralText,ADD LEVEL,AÑADIR NIVEL
 LiteralText,Add new adventurer,Añadir aventurero
 LiteralText,ADJUST,AJUSTAR
 LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adventurer,aventurero
 LiteralText,afflict,afligir
 LiteralText,AFFLICTED,AFLIJIDO
 LiteralText,affliction?,aflicción?
@@ -3047,7 +3047,7 @@ LiteralText,beta discussions,discusiones beta
 LiteralText,Black background,fondo negro
 LiteralText,blasphemy,blasfemia
 LiteralText,BLINK,SALTO
-LiteralText,blink entity,salto
+LiteralText,blink entity,salto de parpadeo
 LiteralText,Blink which direction?,¿Saltar hacia qué dirección?
 LiteralText,block,bloquear
 LiteralText,BLOCKED,BLOQUEADO
@@ -3179,8 +3179,8 @@ LiteralText,device,dispositivo
 LiteralText,DEVICES,DISPOSITIVOS
 LiteralText,devour item,devorar recurso
 LiteralText,DIAGNOSTICS,DIAGNÓSTICO
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,DIALOGO
+LiteralText,dialogue?,dialogo?
 LiteralText,DID NOT RANK,NO OBTUVISTE RANGO
 LiteralText,diet,dieta
 LiteralText,difficulty,dificultad
@@ -3211,7 +3211,7 @@ LiteralText,Dismount which direction?,¿Desmontar en qué dirección?
 LiteralText,Display dice rolls in the help,mostrar tiradas de dados en la ayuda
 LiteralText,divine item,adivinar
 LiteralText,DIVINED,ADIVINADO
-LiteralText,divined items,ítems adivinados
+LiteralText,divined items,objetos adivinados
 LiteralText,Do you want to save or quit this adventure?,¿Quieres guardar o salir de esta aventura?
 LiteralText,domestic,doméstico
 LiteralText,DONATE,DONAR
@@ -3220,7 +3220,7 @@ LiteralText,DOOR,PUERTA
 LiteralText,double damage when mounted,doble daño cuando está montado
 LiteralText,downgrade to,rebajar a
 LiteralText,downloading update,descargando actualización
-LiteralText,drain item,
+LiteralText,drain item,drenar objeto
 LiteralText,drop,soltar
 LiteralText,DROP,SOLTAR
 LiteralText,DUAL WIELD,DOBLE EMPUÑADURA
@@ -3291,7 +3291,7 @@ LiteralText,GAIN LEVEL,GANAR NIVEL
 LiteralText,gain nutrition,ganar nutrición
 LiteralText,gain skill,ganar habilidad
 LiteralText,gate,portón
-LiteralText,gates,
+LiteralText,gates,barras
 LiteralText,gather,reunir
 LiteralText,gender,género
 LiteralText,genocide,genocidio
@@ -3321,7 +3321,7 @@ LiteralText,HIDE,OCULTAR
 LiteralText,hiding,escondido
 LiteralText,HINT,PISTA
 LiteralText,HIRE,CONTRATAR
-LiteralText,horde,
+LiteralText,horde,horda
 LiteralText,HORDES,HORDAS
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Sin embargo, quizás quieras completar tus aventuras antes de actualizar."
@@ -3450,7 +3450,7 @@ LiteralText,non divined items,objetos no adivinados
 LiteralText,non edible items,objetos no comestibles
 LiteralText,non enchanted items,objetos sin encantar
 LiteralText,normal animations,animaciones normales
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,AHORA NO!
 LiteralText,Nothing equipped or carried,Nada equipado o cargado
 LiteralText,nothing happens,nada sucede
 LiteralText,Nothing of interest,Nada de interés
@@ -3489,7 +3489,7 @@ LiteralText,platform,plataforma
 LiteralText,Play,Jugar
 LiteralText,Play a sound effect?,¿Reproducir un efecto de sonido?
 LiteralText,PLAYER,JUGADOR
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,"Porfavor ten en cuenta que forzar la app a salir puede resultar en archivos de guardado truncados, los cuales no pueden ser recuperados de ninguna forma."
 LiteralText,Please offer any clarification,"Por favor, aclare de ser necesario"
 LiteralText,Please provide your feedback,Por favor brinde sus comentarios
 LiteralText,Please rotate your device to landscape :-),"Por favor, Gire su dispositivo de forma horizontal :-)"
@@ -3524,7 +3524,7 @@ LiteralText,RACES,RAZAS
 LiteralText,random,al azar
 LiteralText,RANDOM,AL AZAR
 LiteralText,random dungeon seed,semilla de mazmorra al azar
-LiteralText,random level,
+LiteralText,random level,nivel aleatorio
 LiteralText,random points,puntos al azar
 LiteralText,rank,rango
 LiteralText,rarity,rareza
@@ -3609,8 +3609,8 @@ LiteralText,secret,secreto
 LiteralText,SECRET,SECRETO
 LiteralText,seed,semilla
 LiteralText,SELECT ATMOSPHERE,ESGOGER ATMÓSFERA
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,Elejir casilla de Compañero
+LiteralText,Select Hero Tile,Elejir casilla de Heroe.
 LiteralText,SELECT ITEM,ESCOGER ÍTEM
 LiteralText,SELECT LANGUAGE,SELECCIONE UN IDIOMA
 LiteralText,SELECT MAP,SELECCIONAR MAPA
@@ -3642,7 +3642,7 @@ LiteralText,SLIDE,DESLIZAR
 LiteralText,Slide which direction?,Deslizarse hacia qué dirección
 LiteralText,slower animations,animaciones lentas
 LiteralText,SONICS,SONIDOS
-LiteralText,"Sorry, this device is a bit too small :-(","Lo siento, este dispositivo es un poco pequeño :-("
+LiteralText,"Sorry, this device is a bit too small :-(","Lo siento, este dispositivo es un poco demasiado pequeño :-("
 LiteralText,SOUND BOARD,ESTACIÓN DE SONIDO
 LiteralText,Sound on/off,Sonido encendido/apagado
 LiteralText,source,fuente
@@ -3681,7 +3681,7 @@ LiteralText,TAKE,TOMAR
 LiteralText,TAKE ALL,TOMAR TODO
 LiteralText,talents,talentos
 LiteralText,TALENTS,TALENTOS
-LiteralText,TALK,
+LiteralText,TALK,HABLAR
 LiteralText,target,objetivo
 LiteralText,TELEKINESIS,TELEQUINESIA
 LiteralText,Telekinesis which direction?,"¿Telequinesia, a qué dirección?"
@@ -3767,7 +3767,7 @@ LiteralText,visit shrine,visitar el santuario
 LiteralText,Visit the website,Visitar la web
 LiteralText,visit zoo,visitar el zoológico
 LiteralText,VOID SPACE,ESPACIO VACÍO
-LiteralText,volatile,
+LiteralText,volatile,volátil
 LiteralText,VOLATILES,VOLÁTILES
 LiteralText,vomit nutrition,vómito
 LiteralText,vulnerable to,vulnerable a
@@ -3998,10 +3998,10 @@ ModuleTerm,Underground,Subsuelo
 ModuleTerm,Underlimits,Bajolímites
 ModuleTerm,Underpeaks,Bajocumbres
 ModuleTerm,Undertown,Bajopueblo
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,Guarida Blanca
+ModuleTerm,Woodtown,Ciudad de Madera
+ModuleTerm,Worm Pit,Foso de Gusanos
+ModuleTerm,Yellow Lair,Guarida Amarilla
 MotionPastName,anointed,ungió
 MotionPastName,ate,comió
 MotionPastName,captured,capturó
@@ -4009,8 +4009,8 @@ MotionPastName,chanted,cantó
 MotionPastName,constructed,construyó
 MotionPastName,copied,copió
 MotionPastName,dipped,sumergió
-MotionPastName,divined,adivinó
-MotionPastName,drank,bebió
+MotionPastName,divined,adivinado
+MotionPastName,drank,tomó
 MotionPastName,dug,cavó
 MotionPastName,emptied,vació
 MotionPastName,exchanged,intercambiado
@@ -4045,7 +4045,7 @@ MotionPresentName,copy,copiar
 MotionPresentName,dig,excavar
 MotionPresentName,dip,sumergir
 MotionPresentName,divine,adivinar
-MotionPresentName,drink,beber
+MotionPresentName,drink,tomar
 MotionPresentName,eat,comer
 MotionPresentName,empty,vaciar
 MotionPresentName,exchange,intercambio
@@ -4064,7 +4064,7 @@ MotionPresentName,release,liberar
 MotionPresentName,rename,renombrar
 MotionPresentName,rub,frotar
 MotionPresentName,sacrifice,sacrificar
-MotionPresentName,scry,adivinar
+MotionPresentName,scry,adivinar con bola de cristal
 MotionPresentName,set,ponerse
 MotionPresentName,sit,sentarse
 MotionPresentName,stake,hoguera
@@ -4453,7 +4453,7 @@ SkillName,flail,mayal
 SkillName,hammer,martillo
 SkillName,heavy armour,armadura pesada
 SkillName,heavy blade,chuchilla pesada
-SkillName,lance,lanza
+SkillName,lance,lanza de caballería
 SkillName,light armour,armadura ligera
 SkillName,light blade,cuchilla ligera
 SkillName,literacy,alfabetismo
@@ -4492,7 +4492,7 @@ SonicName,broken boulder,roca fracturada
 SonicName,broken door,puerta rota
 SonicName,broken glass,vidrio quebrado
 SonicName,broken lock,cerradura rota
-SonicName,bugle,trompeta
+SonicName,bugle,corneta
 SonicName,burble,burbujeo
 SonicName,burn,quemadura
 SonicName,buzz,zumbido
@@ -4533,8 +4533,8 @@ SonicName,gas,gas
 SonicName,gem,gema
 SonicName,gibber,farfullar
 SonicName,giggle,risilla
-SonicName,groan,gemido
-SonicName,growl,gruñido
+SonicName,groan,quejido
+SonicName,growl,gruñido animal
 SonicName,grumble,refunfuño
 SonicName,grunt,gruñido
 SonicName,harp,arpa
@@ -4588,15 +4588,15 @@ SonicName,shackle,encadenar
 SonicName,short tap,toqueteo corto
 SonicName,shotgun blast,estallido de escopeta
 SonicName,shotgun burst,ráfaga de escopeta
-SonicName,shriek,chillido
+SonicName,shriek,grito
 SonicName,sigh,suspiro
 SonicName,sizzle,chisporroteo
 SonicName,slime,babeo
 SonicName,sling shot,tiro de honda
 SonicName,slip,deslizar
-SonicName,snarl,gruñido
+SonicName,snarl,bramado
 SonicName,splat,plaf
-SonicName,squall,chillido
+SonicName,squall,berrido
 SonicName,squawk,graznido
 SonicName,squeak,chirrido
 SonicName,squeaks,chirridos
@@ -4606,7 +4606,7 @@ SonicName,switch,cambiar
 SonicName,taps,toques
 SonicName,teleport,teleportar
 SonicName,throne,trono
-SonicName,throw grenade,lanzar granada
+SonicName,throw grenade,arrojar granada
 SonicName,throw object,lanzar objeto
 SonicName,thump,golpe seco
 SonicName,tool,herramienta
@@ -4665,7 +4665,7 @@ SpellName,acid stream,chorro de ácido
 SpellName,animate dead,animar muerto
 SpellName,animate object,animar objeto
 SpellName,bind undead,doblegar muertos vivientes
-SpellName,blinking,salto
+SpellName,blinking,salto de parpadeo
 SpellName,cancellation,cancelación
 SpellName,charm,encanto
 SpellName,clairvoyance,clarividencia
@@ -4757,11 +4757,11 @@ StrikeName,magic,mágico
 StrikeName,psychic,psíquico
 StrikeName,sever,cortante
 StrikeName,shield,escudo
-StrikeName,shriek,chillido
+StrikeName,shriek,chirrido
 StrikeName,spirit,espíritu
 StrikeName,tunnel,excavar
 StrikeName,venom,veneno
-StrikeName,wail,gemido
+StrikeName,wail,grito lamentoso
 TraversalPastName,ascended,ascendió
 TraversalPastName,descended,descendió
 TraversalPastName,travelled,viajó
