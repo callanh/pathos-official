@@ -8163,7 +8163,7 @@ namespace Pathos
         I.SetWeakness(ScrollWeakness);
         I.AddObviousUse(Motions.read, Delay.FromTurns(15), Sonics.read, Use =>
         {
-          var DestroyArray = new[] { Stocks.armour, Stocks.weapon, Stocks.ring, Stocks.tool, Stocks.amulet };
+          var DestroyArray = new[] { Stocks.armour, Stocks.weapon, Stocks.ring, Stocks.tool, Stocks.amulet, Stocks.gem }; // equipable items.
 
           Use.Consume();
           Use.SetCast().FilterStock(DestroyArray);
