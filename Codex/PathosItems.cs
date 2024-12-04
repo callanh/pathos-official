@@ -423,7 +423,7 @@ namespace Pathos
              .Strike(Strikes.boost, Dice.Zero)
              .SetTerminates();
           Use.Apply.DecreaseKarma(Dice.Fixed(25));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
               B => B.DetectMaterial(Range.Sq20, Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine),
@@ -439,7 +439,7 @@ namespace Pathos
              .FilterItem(Stocks.scroll.Items.Except(Miserus, scroll_of_blank_paper, scroll_of_replication).Where(I => I.Type == ItemType.Scroll).ToArray())
              .SetTerminates();
           Use.Apply.DecreaseKarma(Dice.Fixed(500)); // shrine boon costs 1000 to replicate any item.
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WhenConfused
             (
               T => T.CreateItem(Dice.One, Dice.One, scroll_of_blank_paper),
@@ -647,7 +647,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.magic, Dice.One)
              .SetAudibility(1);
           Use.Apply.DecreaseKarma(Dice.Fixed(150));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
               B => B.AnimateRevenant(CorruptProperty: null, CorruptDice: 6.d10()),
@@ -664,7 +664,7 @@ namespace Pathos
              .SetAudibility(5);
           Use.Apply.HarmEntity(Elements.physical, Dice.Zero);
           Use.Apply.DecreaseKarma(Dice.Fixed(250));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WhenTargetKind(Kinds.Living, 
               T => T.DrainLife(Elements.drain, 6.d6() + 6), 
               F => F.CharmEntity(Elements.magical, Delay.FromTurns(10000), Kinds.Undead.ToArray()) // bind undead.
@@ -752,7 +752,7 @@ namespace Pathos
              .SetTerminates()
              .SetAudibility(1);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled, R =>
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled, R =>
           {
             R.WithSourceSanctity
             (
@@ -912,7 +912,7 @@ namespace Pathos
              .SetTerminates()
              .SetAudibility(1);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R =>
             {
               R.DetectTrap(Range.Sq10);
@@ -1014,7 +1014,7 @@ namespace Pathos
              .SetTerminates()
              .SetAudibility(5);
           Use.Apply.DecreaseKarma(Dice.Fixed(100));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R =>
             {
               R.Light(true, Locality.Area);
@@ -1458,7 +1458,7 @@ namespace Pathos
         {
           A.SetCast().Strike(Strikes.force, Dice.One);
           A.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.spiked_pit.KarmaCost));
-          A.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          A.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
               B => B.CreateDevice(Codex.Devices.spiked_pit, Destruction: false),
@@ -1519,7 +1519,7 @@ namespace Pathos
         {
           Use.SetCast().Strike(Strikes.tunnel, Dice.One);
           Use.Apply.DecreaseKarma(Dice.Fixed(Codex.Devices.hole.KarmaCost));
-          Use.Apply.WhenTargetKarma(Codex.Standings.reconciled,
+          Use.Apply.WhenSourceKarma(Codex.Standings.reconciled,
             R => R.WithSourceSanctity
             (
               B => B.CreateDevice(Codex.Devices.hole, Destruction: true),
