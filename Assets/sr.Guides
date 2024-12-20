@@ -1,0 +1,448 @@
+# Commands; Komande
+. Single tap/left click or arrow keys to move and attack.; Jedan dodir/levi klik ili tasteri sa strelicama za kretanje i napad.
+. Long press/right click to operate doors/traps.; Dugo pritisnite/desni klik da biste otvorili vrata/zamke.
+. Double tap to pick up items, traverse stairs or wait one move.; Dodirnite dvaput da pokupite predmete, pređete stepenicama ili sačekate jedan potez.
+/
+- . | wait one turn (also double tap on self); . | sačekajte jedan potez (takođe dvaput dodirnite sebe)
+- , | pick up the top item on the floor; , | pokupite gornji predmet na podu
+- A | toggle log (click the log to expand/collapse); A | uključite/isključite dnevnik (kliknite na dnevnik da biste ga proširili/suzili)
+- B | move down-left; B | pomerite dole-levo
+- C | toggle character; C | promenite karaktera
+- D | re-use last item; D | ponovo upotrebite poslednju stavku
+- E | mount or dismount your steed; E | uzjašite ili siđite sa konja
+- F | toggle floor; F | uključite/isključite pod
+- G | re-equip last item; G | ponovo opremite poslednju stavku
+- H | move left; H | pomerite levo
+- I | toggle inventory; I | uključite/isključite inventar
+- J | move down; J | pomerite dole
+- K | move up; K | pomerite gore
+- L | move right; L | pomerite desno
+- M | toggle map; M | uključite/isključite mapu
+- N | move down-right; N | pomerite dole-desno
+- O | hide from view; O | sakrijete od pogleda
+- P | polymorph at will; P | polimorf po volji
+- Q | save or quit this game; Q | memorišite ili se izbacite iz igre
+- R | for rest mode to recover life and mana; R | za režim odmora za oporavak života i mane
+- S | for search mode for secret doors and traps; S | za režim traženja tajnih vrata i zamki
+- T | teleport at will; T | teleport po volji
+- U | move up-right; U | pomerite gore-desno
+- V | kick in a direction; V | udarac u pravcu
+- W | jump in a direction (if you have the talent); W | skočite u pravcu (ako imate talenat)
+- X | re-cast last spell; X | ponovo bacite poslednju čaroliju
+- Y | move up-left; Y | pomerite gore-levo
+- Z | toggle cast spells (read books to learn spells); Z | uključite bacanje čini (čitajte knjige da biste naučili čini)
+- ' | blink in a direction; ' | bljeskajte u pravcu
+- ;; | telekinesis in a direction; ;; | telekineza u pravcu
+- > | descend stairs; > | siđete sa stepenica
+- < | ascend stairs; < | popnete na stepenice
+- / | toggle chat in multiplayer; / | uključite/isključite ćaskanje u više igrača
+- \ | view knowledge panel; \ | pogledajte tablu znanja
+- + | zoom in; + | uvećajte
+- - | zoom out; - | umanjite
+- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | leve brze akcije (promenite radnju koristeći shift + broj)
+- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | desne brze akcije (promenite radnju koristeći shift + broj)
+- INSERT | toggle tunnelling mode; INSERT | uključite režim tuneliranja
+- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | ispaliti projektil bez kretanja
+- CTRL + arrow | interact with the target without moving; CTRL + arrow | stupajte u interakciju sa metom bez kretanja
+- ENTER | select the top item on the floor; ENTER | izaberite gornju stavku na podu
+- ESCAPE | hides open panels and clears your target; ESCAPE | sakriva otvorene panele i briše vašu metu
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | otkazuje otvorene dijaloge i briše fokus tastature
+- SPACE | toggle real-time or turn-based; SPACE | prebacivanje u realnom vremenu ili na potezu
+- PgUp | switch to previous character; PgUp | pređite na prethodnog karaktera
+- PgDown | switch to next character; PgDown | pređite na sledećeg karaktera
+- ALT | show labels; ALT | pokazivanje etikete
+- F1 | show this help; F1 | pokazati ovu pomoć
+- F6 | quick save; F6 | brzo memorisanje
+- F10 | open side menu; F10 | otvorite bočni meni
+- ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | prebacite ceo ekran na režim prozora (Windows Desktop)
+
+# General mechanics; Generalne Mehanike
+. You will die.; Vi ćete umreti.
+. But don't despair, you will learn something new each time.; Ali ne očajavajte, svaki put ćete naučiti nešto novo.
+. The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Cilj Pathosa je da preživi sve do nivoa 40 pre nego što pobegne nazad na nivo 1.
+. Pathos is turn-based so take your time and consider your options when things get serious.; Patos je zasnovan na potezu, pa uzmite vremena i razmislite o svojim opcijama kada stvari postanu ozbiljne.
+. Each class starts with different items, skills and abilities.; Svaki klasa počinje sa različitim stavkama, veštinama i sposobnostima.
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; Efekti napitaka, svitaka, prstenova, štapića i nekog oklopa se mešaju na početku svake avanture.
+. For example, the orange potion will not have a consistent effect across different adventures.; Na primer, napitak od pomorandže neće imati konzistentan efekat u različitim avanturama.
+
+# Combat; Borba
+. When attacking a d20 is rolled which gives a random number between 1 and 20.; Prilikom napada baca se d20 što daje slučajni broj između 1 i 20.
+. A roll of 1 is a critical miss and a roll of 20 is a critical hit.; Bacanje 1 je kritičan promašaj, a bacanje 20 je kritičan pogodak.
+. A critical miss stops any further attacks in that turn (if you have multiple attacks).; Kritični promašaj zaustavlja sve dalje napade u tom potezu (ako imate više napada).
+. A critical hit causes the base weapon damage to be doubled. Note that enchantments and strength modifiers are not doubled.; Kritički pogodak uzrokuje udvostručenje osnovne štete od oružja. Imajte na umu da se čari i modifikatori snage ne udvostručuju.
+. The strength bonus to damage is doubled when using a two handed weapon.; Bonus snage za štetu se udvostručuje kada se koristi dvoručno oružje.
+. If a critical is the only way to hit or miss then it is downgraded to a normal hit or miss.; Ako je kritični jedini način da se pogodi ili promaši, onda se on smanjuje na normalan pogodak ili promašaj.
+. Otherwise, this number is added to the attack score and compared to the defence score.; U suprotnom, ovaj broj se dodaje rezultatu napada i upoređuje sa rezultatom odbrane.
+/
+` (Attack + d20) >= Defence; (Napad + d20) >= Odbrana
+/
+. Your attack and defence scores are influenced by your abilities, skills and magical enchantments.; Na vaše rezultate napada i odbrane utiču vaše sposobnosti, veštine i magične čari.
+. Magical enchantments to weapons directly affect your attack score and are also added to the damage score.; Magične čari oružja direktno utiču na vaš rezultat napada i takođe se dodaju na rezultat štete.
+/
+. Your skill bonus is based on your level and is the same formula for all classes:; Vaš bonus veština je zasnovan na vašem nivou i ista je formula za sve klase:
+/
+` Skill Bonus = (Level / 4) + 1; Bonus veštine = (Nivo / 4) + 1
+/
+. Your defence is also affected by your circumstances:; Na vašu odbranu takođe utiču vaše okolnosti:
+/
+` {Mod} defence when blind; odbrana kada je slep
+` {Mod} defence when invisible; odbrana kada je nevidljiv
+` {Mod} defence when displaced; odbrana kada je premešten
+` {Mod} defence when paralysed or sleeping; odbrana kada je paralizovan ili spava
+` {Mod} defence when stuck; odbrana kada je zaglavjen
+` {Mod} defence when attacked from concealment; odbrana kada je napadnut iz prikrivanja
+/
+. Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; Teški oklop će vas učiniti {UskilledPenalty} poena sporijim ako ste nevešti i {SkilledPenalty} poena sporijim ako ste vešti.
+. Medium armour is {UnskilledPenalty} point slower if you are unskilled, otherwise no speed adjustment.; Srednji oklop je {UskilledPenalty} poena sporiji ako niste vešti, inače nema podešavanja brzine.
+. Light armour has no speed penalty if you are unskilled.; Laki oklop nema kaznu za brzinu ako niste vešti.
+. Unskilled use of armour also attracts a one point defence penalty.; Nevešto korišćenje oklopa takođe dovodi do kazne odbrambenom odbranom od jednog poena.
+/
+. The dexterity modifier is applied to your defence when you are skilled in all pieces of armour.; Modifikator spretnosti se primenjuje na vašu odbranu kada ste vešti u svim delovima oklopa.
+. This is limited to a maximum of +4 when wearing any medium armour and +2 when wearing any heavy armour.; Ovo je ograničeno na maksimalno +4 kada nosite bilo koji srednji oklop i +2 kada nosite bilo koji teški oklop.
+
+# Skills; Skilovi
+. Each skill has a rating between 0 and 2000 and there are five competency levels.; Svaka veština ima ocenu između 0 i 2000 i postoji pet nivoa kompetencija.
+/
+` (0) Proficient =    0..199; (0) Stručan = 0..199
+` (1) Specialist =  200..499; (1) Specijalista = 200..499
+` (2) Expert     =  500..999; (2) Ekspert = 500..999
+` (3) Master     = 1000..1999; (3) Master = 1000..1999
+` (4) Champion   = 2000; (4) Šampion   = 2000
+/
+. Skill ratings are improved with practice such as hitting with a weapon and not being hit wearing armour.; Ocene veština se poboljšavaju vežbanjem kao što je udaranje oružjem, a ne nošenje oklopa.
+/
+. Weapon skill gives you the competency level as an attack bonus and to damage.; Veština oružja vam daje nivo kompetencije kao bonus za napad i štetu.
+. For example, a master in heavy blade receives +3 attack and +3 damage when using a two handed sword.; Na primer, majstor u teškom sečivu dobija +3 napada i +3 štete kada koristi dvoručni mač.
+. This bonus to damage is doubled on a critical hit.; Ovaj bonus na štetu se udvostručuje pri kritičnom pogotku.
+/
+. Armour skill gives you the competency level as a defence bonus.; Oklopna veština vam daje nivo kompetencije kao bonus za odbranu.
+. For example, an expert in heavy armour receives +2 defence when wearing plate mail.; Na primer, stručnjak za teške oklope dobija +2 odbranu kada nosi poštu.
+. The defence bonus is the average of the skill levels on each piece of equipped armour.; Bonus odbrane je prosek nivoa veštine na svakom delu opremljenog oklopa.
+. For example, an expert (2) in heavy armour whom is only proficient (0) in light armour is wearing plate mail (heavy) and a small shield (light) so would have a defence bonus of +1.; Na primer, stručnjak (2) u teškom oklopu koji je samo vešt (0) u lakom oklopu nosi oklop (tešku) i mali štit (laki) tako da bi imao odbrambeni bonus od +1.
+/
+. Skill in schools of magic improves the casting range and has better effects at each competency level.; Veština u školama magije poboljšava domet bacanja i ima bolje efekte na svakom nivou kompetencije.
+. These skills are practised by learning and casting spells.; Ove veštine se vežbaju učenjem i bacanjem čini.
+
+# Life; Život
+. {LifeDefinition}; {LifeDefinition}
+. Your starting life is determined by your race and class plus your constitution modifier.; Vaš početni život je određen vašom rasom i klasom plus modifikatorom konstitucije.
+. When you advance an experience level, your life is increased by a random amount determined by your race and class plus your constitution modifier.; Kada unapredite nivo iskustva, vaš život se povećava za nasumični iznos koji određuje vaša rasa i klasa plus modifikator konstitucije.
+. There are also magical means to increase your life potential.; Postoje i magična sredstva za povećanje vašeg životnog potencijala.
+. However, life cannot be increased past the maximum potential plus your constitution score.; Međutim, život se ne može povećati iznad maksimalnog potencijala plus vaše konstitucije.
+/
+` Initial = Class base + Race base + {CON} modifier; Početno = Baza Klase + Baza Rase + {CON} modifikator
+` Advancement = Class roll + Race roll + {CON} modifier; Napredak = Klasa roll + Rasa roll + {CON} modifikator
+` Limit = Initial + max(Advancement) x Level + {CON} score; Ograničenje = početni + maksimalni(napredak) x nivo + {CON} rezultat
+/
+. Life naturally recovers at one point per ({LevelCap} - Level - {CON} modifier) turns.; Život se prirodno oporavlja u jednom trenutku po ({LevelCap} - Nivo - {CON} modifikator) pokretima.
+. Sleeping improves recovery by halving the number of turns.; Spavanje poboljšava oporavak prepolovljavanjem broja okreta.
+. Starvation causes life to recover at one point per {StarvationRecoveryRate} turns.; Gladovanje uzrokuje oporavak života u jednom trenutku po {StarvationRecoveriRate} pokretima.
+. Life regeneration guarantees the recovery at one point per turn.; Regeneracija života garantuje oporavak u jednom trenutku po pokretu.
+. The {inediate} diet slows recovery of life by doubling the number of turns.; {inediate} dijeta usporava oporavak života tako što udvostručuje broj pokreta.
+. When the {hunger} property is present in combination with the {inediate} diet, life will no longer naturally recover. However, with the addition of {life regeneration}, life will recover at the usual slower rate.;Kada je svojstvo {glad} prisutno u kombinaciji sa {inediate} ishranom, život se više neće prirodno oporaviti. Međutim, uz dodatak {life regeneration}, život će se oporaviti uobičajenom sporijom brzinom.
+. Active {phasing} prevents the natural recovery of life.; Aktivan {phasing} sprečava prirodni oporavak života.
+
+# Mana; Mana
+. {ManaDefinition};{ManaDefinition}
+. There are no adverse effects for exhausting your mana.; Nema štetnih efekata za iscrpljivanje vaše mane.
+. When you advance an experience level, your mana is increased by a random amount determined by your race and class plus your wisdom modifier.; Kada unapredite nivo iskustva, vaša mana se povećava za nasumični iznos koji određuje vaša rasa i klasa plus modifikator mudrosti.
+. There are also magical means to increase your mana potential.; Postoje i magična sredstva za povećanje vašeg mana potencijala.
+. However, mana cannot be increased past the maximum potential plus your wisdom score.; Međutim, mana se ne može povećati iznad maksimalnog potencijala plus vaše ocene mudrosti.
+/
+` Initial = Class base + Race base + {WIS} modifier; Početno = baza klase + osnova rase + {VIS} modifikator
+` Advancement = Class roll + Race roll + {WIS} modifier; Napredak = Klasa roll + Rasa roll + {VIS} modifikator
+` Limit = Initial + max(Advancement) x Level + {WIS} score; Ograničenje = početni + maksimalni (Napredak) x nivo + {VIS} rezultat
+/
+. Mana naturally recovers at one point per ({LevelCap} - Level - {WIS} modifier) turns.; Mana se prirodno oporavlja u jednom trenutku po ({LevelCap} - Nivo - {VIS} modifikator) pokretu.
+. Sleeping improves recovery by halving the number of turns.; Spavanje poboljšava oporavak prepolovljavanjem broja pokreta.
+. Starvation causes mana to recover at one point per {StarvationRecoveryRate} turns.; Gladovanje uzrokuje da se mana oporavi u jednom trenutku po {StarvationRecoveryRate} pokreta.
+. Mana regeneration guarantees the recovery at one point per turn.; Regeneracija mane garantuje oporavak u jednom trenutku po pokretu.
+. The {inediate} diet slows recovery of mana by doubling the number of turns; {inediate} dijeta usporava oporavak mane udvostručavajući broj okreta
+. When the {hunger} property is present in combination with the {inediate} diet, mana will no longer naturally recover. However, with the addition of {mana regeneration}, mana will recover at the usual slower rate.; Kada je svojstvo {glad} prisutno u kombinaciji sa {inediate} ishranom, mana se više neće prirodno oporaviti. Međutim, uz dodatak {mana regeneracija}, mana će se oporaviti uobičajeno sporije.
+. Active {phasing} prevents the natural recovery of mana.; Aktivnan {phasing} sprečava prirodni oporavak mane.
+
+# Nutrition; Ishrana
+. Maintaining a food supply is important to avoid starving to death.; Održavanje zaliha hrane je važno da biste izbegli smrt od gladi.
+. In desperate or pragmatic times you can eat corpses.; U očajnim ili pragmatičnim vremenima možete jesti leševe.
+
+# Corpses; Leševi
+. The bodies of your enemies and allies can be a source of nutrition.; Tela vaših neprijatelja i saveznika mogu biti izvor ishrane.
+. Many corpses also convey harm and illness but some may impart beneficial talents.; Mnogi leševi takođe prenose štetu i bolest, ali neki mogu dati korisne talente.
+. Be aware that cannibalism is considered a bad idea even in desperate times.; Imajte na umu da se kanibalizam smatra lošom idejom čak i u očajnim vremenima.
+
+# Encumbrance; Opterećenje
+. Everything you pick up adds to your encumbrance and you may become burdened.; Sve što pokupite povećava vaše opterećenje i možete postati opterećeni.
+. This will slow down your movement and makes you easy prey to the denizens of the dungeon.; Ovo će usporiti vaše kretanje i učiniti vas lakim plenom stanovnika tamnice.
+/
+` Carrying capacity = (Strength Score - Nutrition Penalty) x {WeightMultiplier} + ({WeightPercentage} Body Weight); Nosivost = (ocena snage - kazna za ishranu) x {Multiplikator težine} + ({WeightPercentage} Telesna težina)
+
+# Resting; Odmaranje
+. The camp-fire action button toggles resting.; Dugme za akciju logorske vatre uključuje mirovanje.
+. While resting your life and mana recover at a faster rate.; Dok odmarate svoj život i mana se oporavljaju brže.
+. Companions will rest when you rest.; Saputnici će se odmarati kada se odmarate.
+. Resting will be interrupted if there is a hostile in your zone.;Odmaranje će biti prekinuto ako se u vašoj zoni nalazi neprijatelj.
+
+# Searching; Pretraživanje
+. The eye action button toggles searching.; Dugme za radnju oko prebacuje pretragu.
+. Searching will find secret doors and concealed traps.; Pretraživanje će pronaći tajna vrata i skrivene zamke.
+. Companions will search when you search to help find secrets.; Saputnici će tražiti kada tražite da vam pomognu u pronalaženju tajni.
+. Searching will be interrupted if there is a hostile in your zone.; Pretraživanje će biti prekinuto ako se u vašoj zoni nalazi neprijatelj.
+
+# Abilities; Sposobnosti
+. There are six ability scores - strength, dexterity, constitution, intelligence, wisdom and charisma.; Postoji šest ocena sposobnosti - snaga, spretnost, konstitucija, inteligencija, mudrost i harizma.
+. Your starting ability scores is determined by rolling 4d6 six times.; Vaši početni rezultati se određuju bacanjem 4d6 šest puta.
+. The lowest roll from each set is dropped giving a score between 3 and 18.; Najmanje bacanje iz svakog seta se ispušta dajući rezultat između 3 i 18.
+. The highest scores are randomly allocated to your primary abilities which are shown in help > classes.; Najveći rezultati se nasumično dodeljuju vašim primarnim sposobnostima koje su prikazane u pomoć > klase.
+. Racial limits are then applied as shown in help > races.; Rasne granice se zatim primenjuju kao što je prikazano u pomoći > trke.
+. Any points that are reduced by racial limits are transferred to another ability.; Svi bodovi koji su smanjeni rasnim ograničenjima se prenose na drugu sposobnost.
+/
+` {AttributeCode} ({AttributeName}): {AttributeDescription};{AttributeCode} ({AttributeName}): {AttributeDescription}
+
+# Karma; Karma
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; Karma se dobija kada ubijate čudovišta i troši se kada tražite božansku naklonost (molite se i tražite blagodati u svetilištu).
+. Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; Karma se može izgubiti ako budete loš građanin tamnice, kao što je napad na neutralno čudovište ili ubijanje svojih saveznika.
+. You can gain additional karma by donating gold to a priest at a shrine.; Dodatnu karmu možete dobiti doniranjem zlata svešteniku u svetilištu.
+. You can pray at any time by long press/right click on your character.; Možete se moliti u bilo kom trenutku dugim pritiskom/desnim klikom na svoj lik.
+. This will cost {Number} karma and has the following effects:; Ovo će koštati {Broj} karme i ima sledeće efekte:
+/
+` karma >= hopeful; karma >= pun nade
+`   gain {Number} nutrition when hungry; dobija {Number} ishranu kada je gladan
+`   unafflict;unaflikt
+`   unpolymorph;izpolimorfisanje
+`   escape from being stuck; beg od zaglavljivanja
+`   remove punishment; otklanja kaznu
+/
+` karma >= good; karma >= dobar
+`   fully healed if less than half life; potpuno izlečen ako je kraći od pola života
+`   fully restored if less than half mana; potpuno obnovljen ako je manje od polovine mane
+/
+` karma >= glorious; karma >= slavan
+`   remove blindness; uklanja slepilo
+`   remove hallucination; uklanja halucinaciju
+`   remove rage; uklanja bes
+`   remove sickness; uklanja bolest
+/
+` karma >= exalted; karma >= uzvišen
+`   remove one curse; uklanja jednu ukletost
+`   raise dead for one loyal companion; podiže iz mrtvih jednog odanog saputnika
+
+# Diets;Dijete
+. Entities have different diets that allow them to eat specific materials.; Entiteti imaju različite dijete koje im omogućavaju da jedu određene materijale.
+/
+` {DietName}: {MaterialNames}; {DietName}: {MaterialNames}
+
+# Spells; Čarolije
+. Spells are learned by studying from magical books found in the dungeon.; Čarolije se uče proučavanjem iz magijskih knjiga pronađenih u tamnici.
+. Any class can learn spells but only the skilled will use their mana efficiently.; Bilo koja klasa može naučiti čini, ali samo vešti će efikasno koristiti svoju manu.
+
+# Gold;Zlato
+. Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; Zlato se ne smatra delom vašeg tereta i ima nekoliko namena u tamnici.
+. Gold can be traded for items from merchants or donated to priests for karma.; Zlato se može trgovati za predmete od trgovaca ili donirati sveštenicima za karmu.
+
+# Companions; Saputnici
+. Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; Domaće životinje se mogu pripitomiti tako što će ih hraniti nečim što vole da jedu (ali inače ne ogladne).
+. Cats will meow and dogs will woof when they step on a cursed item or fixture (such as a fountain).; Mačke će mjaukati, a psi ćakati kada stanu na ukleti predmet ili uređaj (kao što je fontana).
+. You can mount some types of companions and ride around the dungeon.; Možete uzjahati neke vrste pratilaca i voziti se po tamnici.
+. Your steed will sometimes take over the attack and sometimes will be the target of an attack.; Vaš konj će ponekad preuzeti napad, a ponekad će biti meta napada.
+. Your steed will be the first into any traps so take good care of their well-being.; Vaš konj će biti prvi u svakoj zamci, zato dobro vodite računa o njihovom blagostanju.
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; Vešt jahač dodaje svoj bonus veštini na ocene napada i odbrane konja.
+. A steed is useful when you are burdened and it is strong enough to take your load.; Konj je koristan kada ste opterećeni i dovoljno je jak da preuzme vaš teret.
+. To dismount your steed you need to long press/right click on your character.; Da biste sjahali svog konja, morate dugo da pritisnete/desni klik na svog lika.
+
+# Engulfing; Progutati
+. Some entities can swallow or engulf other entities.; Neki entiteti mogu progutati ili progutati druge entitete.
+. When swallowed you will suffer damage each turn and can struggle until you are expelled.; Kada se proguta, pretrpećete štetu na svakom koraku i možete se boriti dok ne budete izbačeni.
+. Alternatively, there are many mechanisms which can be used to escape.; Alternativno, postoji mnogo mehanizama koji se mogu koristiti za bekstvo.
+. It is impossible to fight with your equipped weapons when swallowed.; Nemoguće je boriti se sa svojim opremljenim oružjem kada ga progutate.
+. If you cast when engulfed the spell will hit your engulfer.; Ako bacite čaroliju kada ste progutani, čarolija će pogoditi vašeg gutača.
+. However, beams may still bounce off walls and back through your engulfer and also hit you.; Međutim, grede se i dalje mogu odbijati od zidova i nazad kroz vaš gutač i takođe vas pogoditi.
+
+# Spawning; Pojavljivanje - Spawning
+. Monsters will randomly spawn into areas outside your current zone.; Čudovišta će se nasumično pojavljivati u oblastima van vaše trenutne zone.
+. The rate of spawning increases as you descend deeper into the dungeon.; Brzina pojavljivanja se povećava kako se spuštate dublje u tamnicu.
+. The talent of aggravation also increases the spawn rates for monsters.; Talenat pogoršanja takođe povećava stopu pojavljivanja za čudovišta.
+
+# Polymorph; Polimorf
+. Transform into another entity with all the advantages or disadvantages that brings.; Transformišite se u drugi entitet sa svim prednostima ili nedostacima koje donosi.
+. For example, a dragon does not have hands but can fly and breathe deadly beams of energy.; Na primer, zmaj nema ruke, ali može da leti i udiše smrtonosne zrake energije.
+. When you perish in your polymorphed form you will often revert to your original form.; Kada nestanete u svom polimorfnom obliku, često ćete se vraćati u svoj prvobitni oblik.
+. You can transform into the entity of your choice when you have polymorph control.; Možete se transformisati u entitet po svom izboru kada imate kontrolu polimorfa.
+. This control is limited to entities that you have already managed to kill and each transformation will consume your nutrition.; Ova kontrola je ograničena na entitete koje ste već uspeli da ubijete i svaka transformacija će potrošiti vašu ishranu.
+. To access polymorph-at-will you need to long press/right click on your character.; Da biste pristupili polimorfu po želji, potrebno je da dugo pritisnete/desni klik na svoj lik.
+
+# Locks; Brave
+. Doors and containers can be locked and possibly trapped.; Vrata i kontejneri mogu biti zaključani i eventualno zarobljeni.
+. You can kick locks to break them but this will trigger any trap.; Možete razbiti brave da biste ih razbili, ali to će pokrenuti bilo kakvu zamku.
+. Items such as skeleton keys and lock picks can be used to unlock.; Za otključavanje se mogu koristiti predmeti kao što su skeletni ključevi i otvarači brava.
+. These items can break and the chance is influenced by your competency with locks.; Ovi predmeti se mogu pokvariti i na šansu utiče vaša kompetencija sa bravama.
+. In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; Pored toga, duplo je veća verovatnoća da će se prokleti predmeti slomiti, a blagosloveni predmeti upola manje.
+. There are other magical items and spells that can be used to unlock.; Postoje i drugi magični predmeti i čarolije koje se mogu koristiti za otključavanje.
+
+# Traps; Zamke
+. Traps have a difficulty rating that reflects the lethality of the device.; Zamke imaju ocenu težine koja odražava smrtonosnost uređaja.
+. This difficulty rating is also the minimum dungeon level the trap can be generated.; Ova ocena težine je takođe minimalni nivo tamnice koji zamka može da se generiše.
+. The chance to untrap is calculated from the difficulty of the device against your skill and dexterity modifier.; Šansa da se oslobodite se izračunava na osnovu težine uređaja u odnosu na modifikator vaše veštine i spretnosti.
+. If you have any transients such as fumbling, blindness, stunned, confusion or hallucination, you will find it harder to untrap.; Ako imate bilo kakve prolazne pojave kao što su petljanje, slepilo, omamljenost, zbunjenost ili halucinacije, biće vam teže da ih oslobodite.
+. Untrapping requires you to move into the square.; Uklanjanje zamki zahteva da se pomerite u kvadrat.
+. A failure to untrap will cause it to be triggered.; Neuspeh u otklanjanju zamke će dovesti do toga da se pokrene.
+
+# Teleport; Teleport
+. Teleportation transports your character around the current dungeon level.; Teleportacija prenosi vaš lik oko trenutnog nivoa tamnice.
+. When uncontrolled, this is a random event that may help or hinder your journey.; Kada se ne kontroliše, ovo je nasumičan događaj koji može pomoći ili ometati vaše putovanje.
+. Controlled teleportation allows you to select on the map your destination location.; Kontrolisana teleportacija vam omogućava da na mapi izaberete lokaciju odredišta.
+. However, each teleportation will cost you nutrition so use it wisely.; Međutim, svaka teleportacija će vas koštati ishrane, pa je koristite mudro.
+. To access teleport-at-will you need to long press/right click on your character.; Da biste pristupili teleportu po volji, morate dugo da pritisnete/desni klik na svog lika.
+
+# Dual wielding; Držanje dva oružja
+. Dual wielding allows the character to hold two single handed weapons.; Držanje dva oružja omogućava liku da drži dva jednoručna oružja.
+. This allows for two attacks instead of one but the chance of hitting is reduced.; Ovo omogućava dva napada umesto jednog, ali je šansa za udarac smanjena.
+. If you are skilled then it is only a -2 to attack on the offhand.; Ako ste vešti onda je samo -2 da napadnete iz druge ruke.
+. Otherwise it is -2 to attack on the main hand and -4 to attack on the offhand.; Inače je -2 za napad u glavnoj ruci i -4 za napad iz druge ruke.
+
+# Crafting; Pravljenje
+. Items can be scrapped into their raw essence and base material on a workbench.; Predmeti se mogu ubaciti u njihovu sirovu suštinu i osnovni materijal na radnom stolu.
+. Essence is the building block of creation and can be extracted from both mundane and magical items.; Esencija je gradivni blok stvaranja i može se izvući i iz svakodnevnih i iz magičnih predmeta.
+. New items can be crafted on a workbench using enough of the base material and essence.; Novi predmeti se mogu izraditi na radnom stolu koristeći dovoljno osnovnog materijala i esencije.
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; Radni stolovi se generišu sa ostacima materijala (0 - 10 esencija i šest nasumičnih materijala 10 - 200).
+. Materials are not transferable between workbenches.; Materijali se ne mogu prenositi između radnih stolova.
+/
+. The crafting skill influences how much material you gain when scrapping.; Veština izrade utiče na to koliko materijala dobijete prilikom rasipanja.
+. That is, when unskilled you recover only 50% of the scrapped material.; To jest, kada ste nekvalifikovani, povratite samo 50% otpadnog materijala.
+/
+` Unskilled  =  50%; Neskilovani =  50%
+` Proficient =  60%; Stručni = 60%
+` Specialist =  70%; Specijalista = 70%
+` Expert     =  80%; Ekspert     = 80%
+` Master     =  90%; Master     =  90%
+` Champion   = 100%; Šampion   = 100%
+/
+. The crafting skill influences how much material you need when crafting.; Veština izrade utiče na to koliko materijala vam je potrebno prilikom izrade.
+. That is, when unskilled you need 150% of the required material to craft an item.; To jest, kada niste vešti, potrebno vam je 150% potrebnog materijala za izradu predmeta.
+/
+` Unskilled  = 150%; Neskilovani = 150%
+` Proficient = 140%; Stručni = 140%
+` Specialist = 130%; Specijalista = 130%
+` Expert     = 120%; Ekspert     = 120%
+` Master     = 110%; Master     = 110%
+` Champion   = 100%; Šampion   = 100%
+
+# Enchantment; Očaranost
+. Weapons and armour have a modifier that can be changed with enchantment magic.; Oružje i oklop imaju modifikator koji se može promeniti magijom očaravanja.
+. A modifier of +0 is a normal, mundane item.; Modifikator +0 je normalna, obična stavka.
+. Modifiers on armour apply to your defence score.; Modifikatori na oklopu primenjuju se na vaš rezultat odbrane.
+. Modifiers on weapons apply to your attack and damage scores.; Modifikatori na oružju se primenjuju na vaše rezultate napada i štete.
+/
+. The {grade} items are limited to between {Min} and {Max}.; Stavke {grade} su ograničene na između {Min} i {Max}.
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; Stavke {grade} se mogu začarati do {Modifier} i vratiće se na nulu ako se ovo prekorači.
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; Stavke {grade} će biti uništene ako pokušate da promenite modifikator preko njegovog ograničenja.
+/
+. Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; Predmeti se takođe mogu nadograditi kao što je očaravanje limene zviždaljke u magičnu zviždaljku.
+
+# Punishments; Kazne
+. This severe curse can be gained by magical means or misconduct.; Ova teška kletva se može steći magijskim sredstvima ili nedoličnim ponašanjem.
+. There is a chance of being punished each time your karma dips below zero.; Postoji šansa da budete kažnjeni svaki put kada vaša karma padne ispod nule.
+. Only one punishment can be active at one time.; U jednom trenutku može biti aktivna samo jedna kazna.
+. A punishment can be released with any remove curse magic.; Kazna se može osloboditi bilo kojom magijom uklanjanja prokletstva.
+
+# Charming & taming; Šarmiranje i pripitomljavanje
+. The difference between your level and the target entity level is used as percentage to increase/decrease the loyalty duration.; Razlika između vašeg nivoa i nivoa ciljnog entiteta se koristi kao procenat za povećanje/smanjenje trajanja lojalnosti.
+. For example, if you are level 10 and charming a level 20 entity, loyalty is only half the listed duration.; Na primer, ako ste nivo 10 i šarmantan entitet nivoa 20, lojalnost je samo polovina navedenog trajanja.
+. The charisma bonus for you and the target entity also modifies this relative percentage.; Bonus harizme za vas i ciljni entitet takođe menja ovaj relativni procenat.
+. For example, level 4 with charisma 18 (+4) means you cast charm as if you were level 8.; Na primer, nivo 4 sa harizmom 18 (+4) znači da bacate šarm kao da ste nivo 8.
+
+# Death; Smrt
+. There are seven mechanics for death:; Postoji sedam mehanizama za smrt:
+/
+* life points reaches zero; životni poeni dostižu nulu
+* any ability score reaches zero; bilo koji rezultat sposobnosti dostiže nulu
+* starvation; glad
+* death effect (eg. wand of death); efekat smrti (npr. štap smrti)
+* genocide; genocid
+* incarceration (eg. turned into a statue); inkarnacija (npr. pretvoreno u statuu)
+* decapitation (eg. vorpal attacks); obezglavljivanje (npr. vorpalni napadi)
+
+# Revenants; Revenanti
+. Upon your death there is a 50% chance of creating a revenant on the current level.; Nakon vaše smrti postoji 50% šanse da stvorite revenanta na trenutnom nivou.
+. When you go down stairs there is a 50% chance of encountering this revenant.; Kada siđete niz stepenice postoji 50% šanse da naiđete na ovog revenanta.
+. The revenant is a reanimated and hostile version of your former self still equipped with all your weapons and armour.; Revenant je reanimirana i neprijateljska verzija vašeg bivšeg sebe koji je još uvek opremljen svim vašim oružjem i oklopom.
+. They will be as tough as you were at full health and may be quite challenging at times.; Biće teški kao što ste bili u punom zdravlju i ponekad mogu biti prilično izazovni.
+. It is possible to die on a revenant level and your next character may have two revenants to deal with.; Moguće je umreti na nivou revenanta i vaš sledeći lik može imati dva revenanta sa kojima će se nositi.
+. Level 1 will never create a revenant.; Nivo 1 nikada neće stvoriti revenanta.
+
+# Fame; Slava
+. Fame is calculated by the following formula.; Slava se izračunava po sledećoj formuli.
+/
+` = Maximum Depth x {Multiplier}; Maksimalna dubina x {Množitelj}
+` + Explored Maps x {Multiplier}; Istražene mape x {Množitelj}
+` + Visited Locations x {Multiplier}; Posećene lokacije x {Množitelj}
+` + Discovered Items x {Multiplier}; Otkrijeni predmeti x {Množitelj}
+` + Encountered Entities x {Multiplier}; Susretnuti entiteti x {Množitelj}
+` + Possessed Artifacts x {Multiplier}; Posedovani artefakti x {Množitelj}
+` + Earned Experience (capped to {Cap}); Stečeno iskustvo (ograničeno na {Kap})
+` + Development Level x {Multiplier}; Nivo razvoja x {Množitelj}
+` + Practised Skills x {Multiplier}; Vežbane veštine x {Množitelj}
+` + Learned Spells x {Multiplier} (sum of base mana cost x mastery level); Naučene čarolije x {Množitelj} (zbir osnovne mane x nivo majstorstva)
+` + Increased Life x {Multiplier}; Povećan život x {Množitelj}
+` + Increased Mana x {Multiplier}; Povećana mana x {Množitelj}
+` + Adjusted Attributes x {Multiplier}; Prilagođeni atributi x {Množitelj}
+` + Acquired Talents x {Multiplier}; Stečeni talenti x {Množitelj}
+` + Gained Resistances x {Multiplier}; Stečeni otpori x {Množitelj}
+` + Total Inventory Worth (in gold); Ukupna vrednost inventara (u zlatu)
+/
+. The total inventory worth is capped so cannot exceed the rest of the score.; Ukupna vrednost inventara je ograničena tako da ne može premašiti ostatak rezultata.
+
+# Resurrect and continue; Oživite i nastavite
+. This optional feature is helpful when your character dies a seemingly unfair or unlucky death.; Ova opciona funkcija je od pomoći kada vaš lik umre naizgled nepravednom ili nesrećnom smrću.
+. You may learn that your character was not viable and death comes quick again.; Možda ćete saznati da vaš lik nije bio održiv i da smrt ponovo dolazi brzo.
+. You can resurrect infinitely but all your achieved fame will be reset to zero.; Možete beskonačno oživeti, ali sva vaša postignuta slava će biti vraćena na nulu.
+. Fame achieved subsequent to your resurrection will contribute to your score.; Slava stečena nakon vašeg vaskrsenja doprineće vašem rezultatu.
+. This is similar to the 'explorer mode' from the original Nethack.; Ovo je slično 'režimu istraživača' iz originalnog Nethack-a.
+
+# Multiplayer; Multiplejer
+. Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Multiplejer je zasnovan na 'grafičkoj telnet' tehnologiji sa Invention platforme.
+. This means the game is executed on the server and the user interface is projected to each of the clients.; To znači da se igra izvodi na serveru i da se korisnički interfejs projektuje svakom od klijenata.
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; Možete igrati preko WIFI/LAN-a i interneta jer je komunikacija zasnovana na TCP/IP-u.
+. This technology only works well with low latency (less than 30ms ping should be playable).; Ova tehnologija dobro funkcioniše samo sa malim kašnjenjem (trebalo bi da se reprodukuje manje od 30ms ping).
+/
+. One player needs to be the server and HOST the game.; Jedan igrač treba da bude server i da HOSTuje igru.
+. All other players are clients and JOIN the game.; Svi ostali igrači su klijenti i PRIDRUŽUJU SE igri.
+/
+. The server player will need to look up their IP address in device network settings and share with the client players.; Serverski plejer će morati da potraži svoju IP adresu u mrežnim podešavanjima uređaja i da deli sa klijentskim igračima.
+. Firewall settings and port forwarding may be required when playing over the internet.; Podešavanja zaštitnog zida i prosleđivanje portova mogu biti potrebni kada igrate preko interneta.
+/
+. The HOST can use 3717 and tap CONNECT.; HOST može da koristi 3717 i dodirne POVEŽI.
+. The other players JOIN by typing in the host's IP Address and the port.; Ostali igrači SE PRIKLJUČUJU tako što će ukucati IP adresu domaćina i port.
+. For example: 192.168.1.5:3717; Na primer: 192.168.1.5:3717
+
+# Translations; Prevodi
+. The language translations have been contributed by a number of dedicated players.; Prevodi na jezik su doprineli brojni posvećeni igrači.
+. Completing a translation is a significant achievement and one that requires ongoing maintenance.; Završetak prevoda je značajno dostignuće koje zahteva stalno održavanje.
+. The percentage on the language selection indicates the current completeness of the translation.; Procenat na izboru jezika ukazuje na trenutnu kompletnost prevoda.
+. You can also browse the individual translations in the Diagnostics screen.; Takođe možete da pregledate pojedinačne prevode na ekranu Dijagnostika.
+. Please contact the developer if you would like to contribute a new translation, maintain an existing translation, or even submit a correction.; Kontaktirajte programera ako želite da doprinesete novom prevodu, da zadržite postojeći prevod ili čak da podnesete ispravku.
+
+# Master mode; Master mod
+. This is a cheat mode for more quickly learning the secrets of Pathos.; Ovo je način varanja za brže učenje tajni Patosa.
+. Any adventures in this mode will not be tracked in the hall of fame.; Nijedna avantura u ovom režimu neće biti praćena u dvorani slavnih.
+/
+- ` | open master console (more commands); ` | otvori glavnu konzolu (više komandi)
+- ctrl + shift + D | darkness in this zone; ctrl + shift + D | tama u ovoj zoni
+- shift + E | spawn and be swallowed by a random engulfer; shift + E | pojavi se i budi progutan od strane nasumičnog progutača
+- shift + F | all adjacent enemies are charmed; shift + F | svi susedni neprijatelji su očarani
+- shift + G | gain 1000 gold; shift + G | dobijaš 1000 zlata
+- shift + I | identify all items on the floor; shift + I | identifikuj sve predmete na podu
+- shift + W | jump at will; shift + W | skači po želji
+- shift + D | light this zone; shift + D | osvetli ovu zonu
+- shift + M | reveal the entire map; shift + M | otkrij celu mapu
+- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | otkrij mape za sve nivoe
+- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | izobliči tamnicu (mapa završne igre se transformiše)
+- shift + P | polymorph into any entity; shift + P | preoblikuj se u bilo koji entitet
+- shift + T | teleport to a target zone; shift + T | teleportuj se u ciljnu zonu
+- shift + Z | learn all spells; shift + Z | nauči sve čarolije
+- ! | toggle auto-use mode (step on a square and you will use all items); ! | uključi/isključi režim automatskog korišćenja (stani na polje i koristićeš sve predmete)
+- < | ascend to the previous dungeon level (even when not on a staircase); < | popni se na prethodni nivo tamnice (čak i ako nisi na stepenicama)
+- > | descend to the next dungeon level (even when not on a staircase); > | siđi na sledeći nivo tamnice (čak i ako nisi na stepenicama)
+- F5 | refresh the screen; F5 | osveži ekran
+- F9 | quick load; F9 | brzo učitavanje
+/
+. There are additional manipulations built into the character panel and contextual help.; Postoje dodatne manipulacije ugrađene u panel karaktera i kontekstualna pomoć.

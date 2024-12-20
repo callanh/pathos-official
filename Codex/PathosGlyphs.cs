@@ -2617,8 +2617,9 @@ namespace Pathos
     public readonly Glyph blaze;
     public readonly Glyph blood;
     public readonly Glyph scorch;
-    public readonly Glyph freeze;
     public readonly Glyph electricity;
+    public readonly Glyph freeze;
+    //public readonly Glyph oil;
     public readonly Glyph steam;
     public readonly Glyph splatter_A;
     public readonly Glyph splatter_B;
