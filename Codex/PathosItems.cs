@@ -267,11 +267,12 @@ namespace Pathos
           Register.Edit(UpperItem).SetDowngradeItem(LowerItem);
       }
 
+      var ArtifactRarity = 1;
+      var AdamantineRarity = 1; // deliberately on par with generating an artifact; adamantine is a straight upgrade as compared to the equivalent weapon/armour.
       var MithrilRarity = 2;
 
       #region artifact.
-      var ArtifactRarity = 1;
-      var ArtifactEssence = Essence.FromUnits(0); // artifacts cannot be scrapped into essence.
+      var ArtifactEssence = Essence.Zero; // artifacts cannot be scrapped into essence.
 
       Backpack = AddItem(Stocks.tool, ItemType.Bag, "Backpack", I =>
       {
@@ -5341,16 +5342,15 @@ namespace Pathos
         I.SetNutrition(1000);
         I.AddObviousUse(Motions.eat, Delay.FromTurns(60), Sonics.eat, Use =>
         {
-          // TODO: replica heros should be destroyed instead of teleporting away.
           Use.Apply.WithSourceSanctity
           (
             B =>
             {
-              B.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 100F); // full life and mana.
+              B.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 1.00F); // full life and mana.
             },
             U =>
             {
-              U.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 0F); // full life.
+              U.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 0.00F); // full life.
             },
             C =>
             {
@@ -12780,6 +12780,25 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.dart, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d3())/*.FixedRange = 2*/; // NOTE: for testing short ranged AI.
       });
 
+      adamantine_dart = AddThrownMissile(Ammunition.Dart, "adamantine dart", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_dart;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Rarity = AdamantineRarity;
+        I.Size = Size.Small;
+        I.Weight = Weight.FromUnits(10);
+        I.Material = Materials.adamantine;
+        I.Essence = AmmoEssence2;
+        I.Price = Gold.FromCoins(15);
+        //I.AddObviousIngestUse(Motions.eat, 5, Delay.FromTurns(10), Sonics.weapon);
+        I.SetWeakness(AmmoWeakness);
+        I.BundleDice = 1.d3() + 3;
+        I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.dart, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d4() + 1);
+      });
+
       mithril_dart = AddThrownMissile(Ammunition.Dart, "mithril dart", I =>
       {
         I.Description = null;
@@ -14843,6 +14862,25 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.firearms, null, Elements.physical, DamageType.Pierce, 1.d20());
       });
 
+      adamantine_bullet = AddRangedMissile(Ammunition.Bullet, "adamantine bullet", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("adamantine slug", null);
+        I.Glyph = Glyphs.adamantine_bullet;
+        I.Sonic = Sonics.ammo;
+        I.Series = null;
+        I.Rarity = 0;
+        I.Size = Size.Tiny;
+        I.Weight = Weight.FromUnits(5);
+        I.Material = Materials.adamantine;
+        I.Essence = AmmoEssence3;
+        I.Price = Gold.FromCoins(75);
+        //I.AddObviousIngestUse(Motions.eat, 2, Delay.FromTurns(10), Sonics.ammo);
+        I.BundleDice = 1.d6() + 6;
+        I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.ammo);
+        I.SetOneHandedWeapon(Skills.firearms, null, Elements.physical, DamageType.Pierce, 1.d30());
+      });
+
       mithril_bullet = AddRangedMissile(Ammunition.Bullet, "mithril bullet", I =>
       {
         I.Description = null;
@@ -14886,7 +14924,7 @@ namespace Pathos
       void AdamantineEquivalent(ItemEditor I, Item Source)
       {
         I.Grade = Grades.exotic;
-        I.Rarity = 1; // deliberately on par with generating an artifact; adamantine is a straight upgrade as compared to the equivalent weapon/armour.
+        I.Rarity = AdamantineRarity;
         I.Weight = Source.Weight; // adamantine weighs same as steel.
         I.Material = Materials.adamantine;
         I.Essence = WeaponEssence2;
@@ -14939,6 +14977,19 @@ namespace Pathos
         //I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(30), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 1.d7() + 1);
+      });
+
+      adamantine_hatchet = AddThrownWeapon("adamantine hatchet", I =>
+      {
+        AdamantineEquivalent(I, hatchet);
+
+        I.Description = null;
+        I.Glyph = Glyphs.adamantine_hatchet;
+        I.Series = null;
+        I.BundleDice = Dice.One;
+        //I.AddObviousIngestUse(Motions.eat, 60, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.axe, null, Elements.physical, DamageType.Slash, 1.d6() + 1);
       });
 
       adamantine_greataxe = AddMeleeWeapon("adamantine greataxe", I =>
@@ -15160,6 +15211,7 @@ namespace Pathos
         Register.AddAbolitionReplacement(bullet, arrow);
         Register.AddAbolitionReplacement(silver_bullet, silver_arrow);
         Register.AddAbolitionReplacement(mithril_bullet, mithril_arrow);
+        Register.AddAbolitionReplacement(adamantine_bullet, adamantine_arrow);
 
         var MissingAbolitionReplacementArray = List.Where(I => I.IsAbolitionCandidate() && !I.Grade.Unique).Except(Register.AbolitionReplacements.Select(R => R.AbolitionItem)).ToArray();
         if (MissingAbolitionReplacementArray.Length > 0)
@@ -15465,7 +15517,9 @@ namespace Pathos
     public readonly Item adamantine_bow;
     public readonly Item adamantine_axe;
     public readonly Item adamantine_bident;
+    public readonly Item adamantine_dart;
     public readonly Item adamantine_greataxe;
+    public readonly Item adamantine_hatchet;
     public readonly Item adamantine_dagger;
     public readonly Item adamantine_long_sword;
     public readonly Item adamantine_greatsword;
@@ -15657,6 +15711,7 @@ namespace Pathos
     public readonly Item pistol;
     public readonly Item bullet;
     public readonly Item silver_bullet;
+    public readonly Item adamantine_bullet;
     public readonly Item mithril_bullet;
 
     // amulets.

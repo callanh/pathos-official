@@ -17612,7 +17612,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.restoration);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
-        E.Conveyance.ReplenishEntity(LifeThreshold: 100F, ManaThreshold: 0F); // replenish full life.
+        E.Conveyance.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 0.00F); // replenish full life.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });

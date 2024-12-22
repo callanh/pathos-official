@@ -41,6 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,一件�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,一件薄而精妙的秘银夹克。
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,一件薄而光亮的秘银夹克。
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,这件经典的法师装备——装点着星月花纹的尖顶帽。
+AppearanceName,adamantine slug,
 AppearanceName,adamantine staff,精金手杖
 AppearanceName,agate ring,玛瑙戒指
 AppearanceName,aluminium wand,铝制魔杖
@@ -1953,7 +1954,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},转�
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},转换门 {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},转换地面 {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},转换环境效果 {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},将{QualifierText}{StockName}转化为 {ItemNames}
 FormatText,cripple {AttributeName},损害{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}降低 {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},所有能力降低 {AdjustmentDice}
@@ -1986,7 +1987,7 @@ FormatText,levels {Number}+,等级大于{Number}
 FormatText,LOCKED {GATENAME},上锁的 {GATENAME}
 FormatText,lose {PropertyName} talent,失去天赋 {PropertyName}
 FormatText,not {EffectProperty},不包括 {EffectProperty}
-FormatText,polymorph into {EntityNames},
+FormatText,polymorph into {EntityNames},变形为 {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},复活死尸 {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},范围 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
@@ -2243,9 +2244,12 @@ ItemName,adamantine arrow,精金箭
 ItemName,adamantine axe,精金斧
 ItemName,adamantine bident,精金双尖刀
 ItemName,adamantine bow,精金弓
+ItemName,adamantine bullet,精金子弹
 ItemName,adamantine dagger,精金匕首
+ItemName,adamantine dart,精金飞镖
 ItemName,adamantine greataxe,精金战斧
 ItemName,adamantine greatsword,精金大剑
+ItemName,adamantine hatchet,精金手斧
 ItemName,adamantine long sword,精金长剑
 ItemName,adamantine plate mail,精金板甲
 ItemName,adamantine rapier,精金细剑
@@ -2993,7 +2997,7 @@ LiteralText,actions,行动
 LiteralText,ADD LEVEL,添加楼层
 LiteralText,Add new adventurer,添加新冒险者
 LiteralText,ADJUST,调整
-LiteralText,adjust difficulty,
+LiteralText,adjust difficulty,调整难度
 LiteralText,adventurer,冒险者
 LiteralText,afflict,感染
 LiteralText,AFFLICTED,被感染
@@ -3220,7 +3224,7 @@ LiteralText,DOOR,门
 LiteralText,double damage when mounted,骑乘时双倍伤害
 LiteralText,downgrade to,降级成了
 LiteralText,downloading update,更新下载中
-LiteralText,drain item,
+LiteralText,drain item,物品降级
 LiteralText,drop,掉落
 LiteralText,DROP,丢弃
 LiteralText,DUAL WIELD,双持
@@ -3291,7 +3295,7 @@ LiteralText,GAIN LEVEL,获得等级
 LiteralText,gain nutrition,获得营养
 LiteralText,gain skill,获得专精
 LiteralText,gate,门
-LiteralText,gates,
+LiteralText,gates,门
 LiteralText,gather,收集
 LiteralText,gender,性别
 LiteralText,genocide,灭绝
@@ -3321,7 +3325,7 @@ LiteralText,HIDE,躲藏
 LiteralText,hiding,隐藏
 LiteralText,HINT,提示
 LiteralText,HIRE,雇佣
-LiteralText,horde,
+LiteralText,horde,怪物群
 LiteralText,HORDES,怪物群
 LiteralText,HOST,创建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也许您更希望在接受更新之前完成正在进行的冒险。
@@ -3494,10 +3498,10 @@ LiteralText,Please offer any clarification,请进行任何申明
 LiteralText,Please provide your feedback,请进行反馈
 LiteralText,Please rotate your device to landscape :-),请旋转您的设备以切换模式 :-)
 LiteralText,POLYMORPH,变形
-LiteralText,polymorph entity,
+LiteralText,polymorph entity,变形实体
 LiteralText,Polymorph into what?,变形为什么？
-LiteralText,polymorph item,
-LiteralText,polymorph trap,
+LiteralText,polymorph item,变形物品
+LiteralText,polymorph trap,变形陷阱
 LiteralText,POLYMORPHED,已变形
 LiteralText,portal,传送门
 LiteralText,PORTALS,传送门
@@ -3524,7 +3528,7 @@ LiteralText,RACES,种族
 LiteralText,random,随机
 LiteralText,RANDOM,随机
 LiteralText,random dungeon seed,随机地牢种子
-LiteralText,random level,
+LiteralText,random level,随机楼层
 LiteralText,random points,随机分数
 LiteralText,rank,阶级
 LiteralText,rarity,稀有程度
@@ -3589,7 +3593,7 @@ LiteralText,REVERT,复原
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,坚硬
 LiteralText,ROTATE,旋转
-LiteralText,route entity,
+LiteralText,route entity,发送实体
 LiteralText,rumour,流言
 LiteralText,sacrifice item,献祭
 LiteralText,SANITY CHECK,兼容性测试
@@ -3719,7 +3723,7 @@ LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
 LiteralText,transition,转变
 LiteralText,TRANSLATIONS,翻译
-LiteralText,transport entity,
+LiteralText,transport entity,转移实体
 LiteralText,TRAP,陷阱
 LiteralText,trap?,陷阱
 LiteralText,trapped,中陷阱的
@@ -3767,7 +3771,7 @@ LiteralText,visit shrine,访问神龛
 LiteralText,Visit the website,访问官网
 LiteralText,visit zoo,访问动物园
 LiteralText,VOID SPACE,虚空
-LiteralText,volatile,
+LiteralText,volatile,环境效果
 LiteralText,VOLATILES,环境效果
 LiteralText,vomit nutrition,呕吐
 LiteralText,vulnerable to,易受伤害

@@ -158,7 +158,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
@@ -167,7 +167,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
@@ -177,7 +177,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 50, ManaThreshold: 50);
+        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
         A.RemoveCurse(Dice.One, Sanctities.Uncursed); // remove one curse.
         A.RaiseDeadEntity(100, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: true); // raise one loyal companion from the dead.

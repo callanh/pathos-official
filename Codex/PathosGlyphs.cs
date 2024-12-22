@@ -150,6 +150,7 @@ namespace Pathos
     public readonly Glyph acid_explosion_top_right;
     public readonly Glyph acid_trap;
 
+    public readonly Glyph adamantine_bullet;
     public readonly Glyph adamantine_golem;
     public readonly Glyph adamantine_bow;
     public readonly Glyph adamantine_arrow;
@@ -158,6 +159,7 @@ namespace Pathos
     public readonly Glyph adamantine_greataxe;
     public readonly Glyph adamantine_greatsword;
     public readonly Glyph adamantine_dagger;
+    public readonly Glyph adamantine_hatchet;
     public readonly Glyph adamantine_long_sword;
     public readonly Glyph adamantine_plate_mail;
     public readonly Glyph adamantine_rapier;
@@ -558,6 +560,7 @@ namespace Pathos
     public readonly Glyph Kaloi_Thrym;
     public readonly Glyph Deliarne;
     public readonly Glyph dart;
+    public readonly Glyph adamantine_dart;
     public readonly Glyph mithril_dart;
     public readonly Glyph poison_dart;
     public readonly Glyph dart_trap;
