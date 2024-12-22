@@ -36,6 +36,7 @@ namespace Pathos
 
       capture = AddMotion("capture", "captured", Attributes.dexterity, M =>
       {
+        M.RequiresCharacter = false;
         M.UseAnatomy(Anatomies.hands);
       });
 
@@ -157,7 +158,6 @@ namespace Pathos
 
       release = AddMotion("release", "released", Attributes.dexterity, M =>
       {
-        M.UseVoice = true;
         M.RequiresCharacter = true;
         M.UseAnatomy(Anatomies.hands, Anatomies.voice);
       });
