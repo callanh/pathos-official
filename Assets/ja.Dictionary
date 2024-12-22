@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,ミス�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,ミスリル製の、細身で精巧に作られていそうな鎖帷子。
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,ミスリル製の、細身で光沢のある鎖帷子。
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,月と星の飾りがついた、典型的な魔法使いのとんがり帽子。
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,アダマンタインの小塊
 AppearanceName,adamantine staff,アダマンタインの竿
 AppearanceName,agate ring,めのうの指輪
 AppearanceName,aluminium wand,アルミの棒
@@ -1451,7 +1451,7 @@ EntityName,mastodon,マストドン
 EntityName,Maugneshaagar,『マウグネシャガー』
 EntityName,medusa,メデューサ
 EntityName,mellified man,蜜漬けミイラ
-EntityName,merchant,店主
+EntityName,merchant,商人
 EntityName,Metamorphius,『メタモルフィアス』
 EntityName,migo drone,ミ=ゴの尖兵
 EntityName,migo queen,ミ=ゴの女王
@@ -1949,20 +1949,20 @@ FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
-FormatText,convert {FeatureName} into {DeviceName},設備を変換 {FeatureName} {DeviceName}
-FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},壁を変換 {LocalityName} {FromBarrierName} {ToBarrierName}
-FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},扉を変換 {LocalityName} {FromGateName} {ToGateName}
-FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},床を変換 {LocalityName} {FromGroundName} {ToGroundName}
-FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},地形効果を変換 {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {FeatureName} into {DeviceName},{FeatureName}から{DeviceName}になる
+FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},{LocalityName}の{FromBarrierName}を{ToBarrierName}に変える
+FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},{LocalityName}の{FromGateName}を{ToGateName}に変える
+FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},{LocalityName}の{FromGroundName}を{ToGroundName}に変える
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},{LocalityName}の{FromVolatileName}を{ToVolatileName}に変える
+FormatText,convert {StockName} {QualifierText} into {ItemNames},{StockName}{QualifierText}を次に変換：{ItemNames}
 FormatText,cripple {AttributeName},{AttributeName}が激減
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}減少
 FormatText,decrease all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}減少
-FormatText,decrease karma by {ChangeDice},カルマ 減少 {ChangeDice}
+FormatText,decrease karma by {ChangeDice},カルマが{ChangeDice}減少
 FormatText,decrease one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}減少
 FormatText,diminish {ManaDice},マナ減少 {ManaDice}
-FormatText,drain life {Dice},ライフ吸収 {Dice}
-FormatText,drain mana {Dice},マナ吸収 {Dice}
+FormatText,drain life {Dice},ライフを{Dice}吸収
+FormatText,drain mana {Dice},マナを{Dice}吸収
 FormatText,drop {BlockName} {ElementName} {DamageDice},{ElementName}ダメージ{DamageDice}の{BlockName}を落とす
 FormatText,energise {ManaDice},マナ回復 {ManaDice}
 FormatText,Equip {CharacterName},{CharacterName}を装備する
@@ -1977,7 +1977,7 @@ FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice
 FormatText,heal {LifeDice},ライフ回復 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
 FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
-FormatText,increase karma by {ChangeDice},カルマ 増加 {ChangeDice}
+FormatText,increase karma by {ChangeDice},カルマが{ChangeDice}増加
 FormatText,increase one ability by {AdjustmentDice},いずれかの能力値1つが{AdjustmentDice}増加
 FormatText,learn spell {SpellName},{SpellName}の呪文を学ぶ
 FormatText,level {Depth},地下{Depth}階
@@ -1985,13 +1985,13 @@ FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},レ
 FormatText,levels {From}-{To},レベルの差 {From} から {To}
 FormatText,levels {Number}+,レベルの差 {Number}以上
 FormatText,LOCKED {GATENAME},{GATENAME}は施錠されている
-FormatText,lose {PropertyName} talent,性質を失う {PropertyName}
+FormatText,lose {PropertyName} talent,{PropertyName}の性質を失う
 FormatText,not {EffectProperty},{EffectProperty}ではない
 FormatText,polymorph into {EntityNames},{EntityNames}に変化
-FormatText,raise dead {Percent}% {LoyalText} {CorruptText},蘇生 {Percent}％ {LoyalText} {CorruptText}
+FormatText,raise dead {Percent}% {LoyalText} {CorruptText},{Percent}%の確率で蘇生 {LoyalText} {CorruptText}
 FormatText,range {Dice},射程{Dice}
 FormatText,RANKED #{RankNumber},名誉の殿堂で{RankNumber}位に入りました！
-FormatText,remove transient {PropertyNames},一時的な状態の解除 {PropertyNames}
+FormatText,remove transient {PropertyNames},{PropertyNames}の状態を解除
 FormatText,replenish life from {Percent}%,ライフが{Percent}%以下の場合に全回復
 FormatText,replenish mana from {Percent}%,マナが{Percent}%以下の場合に全回復
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName}、{CharacterDescription}は復活した
@@ -1999,14 +1999,14 @@ FormatText,retaliate {Chance} {AttackType},{Chance} 反撃 {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},死亡時に反撃 {Chance}{AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},被攻撃時に反撃 {Chance}{AttackType}
 FormatText,revenant {CharacterName},黄泉帰りの{CharacterName}
-FormatText,sanctify {ItemName} as {SanctityName},祝呪を変更 {ItemName} {SanctityName}
+FormatText,sanctify {ItemName} as {SanctityName},{ItemName}を{SanctityName}アイテムにする
 FormatText,shoot {ItemName} {ElementName} {DamageDice},{ElementName}ダメージ{DamageDice}の{ItemName}を発射
 FormatText,stuck {DurationDice},足止め{DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,{FixtureName}は{ExplosionName}のエネルギーで爆発した！
 FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,これまでに得てきた名声は、この忌まわしい行為で地に落ちるでしょう。本当に{CharacterName}を復活させてもよろしいですか？
 FormatText,Throw {AssetName} which direction?,どの方向に{AssetName}を投げる？
 FormatText,TOO {AttributeBad},{AttributeBad}すぎる
-FormatText,transient {PropertyName} {DurationDice},一時的効果 {PropertyName} {DurationDice}
+FormatText,transient {PropertyName} {DurationDice},{PropertyName}の状態を{DurationDice}ターン得る
 FormatText,transmute items to {MaterialName},アイテムを{MaterialName}に変換
 FormatText,trigger {Dice} times,{Dice}回起動
 FormatText,unless resists {ElementName},{ElementName}への抵抗に失敗した場合
@@ -2244,12 +2244,12 @@ ItemName,adamantine arrow,アダマンタインの矢
 ItemName,adamantine axe,アダマンタインの斧
 ItemName,adamantine bident,アダマンタインのバイデント
 ItemName,adamantine bow,アダマンタインの弓
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,アダマンタインの弾丸
 ItemName,adamantine dagger,アダマンタインのダガー
-ItemName,adamantine dart,
+ItemName,adamantine dart,アダマンタインのダーツ
 ItemName,adamantine greataxe,アダマンタインのグレートアックス
 ItemName,adamantine greatsword,アダマンタインのグレートソード
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,アダマンタインの手斧
 ItemName,adamantine long sword,アダマンタインのロングソード
 ItemName,adamantine plate mail,アダマンタインのプレートメイル
 ItemName,adamantine rapier,アダマンタインのレイピア
@@ -2997,7 +2997,7 @@ LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
 LiteralText,ADJUST,調整
-LiteralText,adjust difficulty,
+LiteralText,adjust difficulty,難易度が変動
 LiteralText,adventurer,冒険者
 LiteralText,afflict,災難
 LiteralText,AFFLICTED,災難に苛まれている
@@ -3026,7 +3026,7 @@ LiteralText,area of effect,効果範囲
 LiteralText,area transient,範囲に一時的効果
 LiteralText,ARTIFACTS,アーティファクト
 LiteralText,ASCEND TO PREVIOUS LEVEL,1つ上の階へ昇る
-LiteralText,assess item,査定
+LiteralText,assess item,アイテムを査定
 LiteralText,assets,アイテム
 LiteralText,ATMOSPHERE,環境音
 LiteralText,attack modifier,攻撃値修正
@@ -3051,7 +3051,7 @@ LiteralText,beta discussions,ベータ版に関する意見交換
 LiteralText,Black background,背景を黒くする
 LiteralText,blasphemy,冒涜
 LiteralText,BLINK,転位
-LiteralText,blink entity,転位
+LiteralText,blink entity,モンスターを転位
 LiteralText,Blink which direction?,どの方向に転位する？
 LiteralText,block,障害物
 LiteralText,BLOCKED,防がれた
@@ -3082,7 +3082,7 @@ LiteralText,CAN'T SEE,目が見えない
 LiteralText,CAN'T SLIDE,すり抜けられない
 LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
-LiteralText,capture entity,捕獲
+LiteralText,capture entity,モンスターを捕獲
 LiteralText,carried,所持品
 LiteralText,Cast,呪文
 LiteralText,CAST SPELLS,呪文
@@ -3104,8 +3104,8 @@ LiteralText,CLEAR,クリア
 LiteralText,click to download,クリックしてダウンロード
 LiteralText,click to retry,クリックして再試行
 LiteralText,Click to send detected issues to the author,検出された問題をメールします
-LiteralText,clone source entity,分裂 それ自体
-LiteralText,clone target entity,分裂 対象
+LiteralText,clone source entity,モンスターが分裂
+LiteralText,clone target entity,対象のモンスターが分裂
 LiteralText,CLOSE,閉じる
 LiteralText,closed,閉じている
 LiteralText,Coding on Medium,Mediumの記事を読む
@@ -3125,7 +3125,7 @@ LiteralText,CONTACT,メールする
 LiteralText,Continue,続行
 LiteralText,CONTINUE,続行
 LiteralText,CONTROLLED,制御された
-LiteralText,convert block to barrier,巨塊を変換
+LiteralText,convert block to barrier,障害物を壁に変える
 LiteralText,conveyance,食べた時の効果
 LiteralText,COPY,コピー
 LiteralText,corpse,の死体
@@ -3143,10 +3143,10 @@ LiteralText,CREATE ENTITY,モンスターを生成
 LiteralText,CREATE FEATURE,設備を作成
 LiteralText,CREATE GATE,扉を作成
 LiteralText,create golem,ゴーレムを作成
-LiteralText,CREATE GROUND,床を作成
+LiteralText,CREATE GROUND,地面を作成
 LiteralText,CREATE HORDE,群れを作成
 LiteralText,CREATE ITEM,アイテムを作成
-LiteralText,create nook,隠し小路を作成
+LiteralText,create nook,壁に扉を作成
 LiteralText,CREATE PLATFORM,橋を作成
 LiteralText,CREATE SHOP,店を作成
 LiteralText,CREATE SHRINE,社を作成
@@ -3162,7 +3162,7 @@ LiteralText,dark,暗闇
 LiteralText,DEAD END,死に終わり
 LiteralText,death,死
 LiteralText,deathray,殺人光線
-LiteralText,decapitate entity,首はね
+LiteralText,decapitate entity,モンスターの首をはねる
 LiteralText,decapitation,首はね
 LiteralText,DECEASED,死亡
 LiteralText,decelerated real-time,リアルタイムモードを遅くする
@@ -3207,13 +3207,13 @@ LiteralText,DISCONNECT,切断
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,切断されました。ネットワーク接続に問題がないこと、およびゲームに参加する全てのデバイスでPathosのバージョンが等しいことを確認してください。
 LiteralText,discover item,アイテムの知識を得る
 LiteralText,Discuss on Reddit,Redditで話し合う
-LiteralText,disenchant item,劣化する
+LiteralText,disenchant item,アイテムの修正値が減少
 LiteralText,dismantle items to extract the base materials and raw essence,アイテムを分解し原材料とエッセンスを抽出する
 LiteralText,DISMISS,別れる
 LiteralText,DISMOUNT,降りる
 LiteralText,Dismount which direction?,どの方向に降りますか？
 LiteralText,Display dice rolls in the help,ダイスによる乱数表記
-LiteralText,divine item,判別
+LiteralText,divine item,アイテムを判別
 LiteralText,DIVINED,判別された
 LiteralText,divined items,判別されたアイテム
 LiteralText,Do you want to save or quit this adventure?,セーブして中断しますか、それともこの冒険を終了しますか？
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,扉
 LiteralText,double damage when mounted,騎乗時に2倍のダメージ
 LiteralText,downgrade to,ダウングレード
 LiteralText,downloading update,アップデートをダウンロード中
-LiteralText,drain item,
+LiteralText,drain item,アイテムを劣化させる
 LiteralText,drop,ドロップ
 LiteralText,DROP,床に置く
 LiteralText,DUAL WIELD,二刀流
@@ -3235,13 +3235,13 @@ LiteralText,else,それ以外
 LiteralText,EMAIL,Eメール
 LiteralText,Enable auto save,オートセーブを有効にする
 LiteralText,Enable master mode,マスターモードを有効にする
-LiteralText,enchant item,アイテムの修正値
+LiteralText,enchant item,アイテムの修正値が増加
 LiteralText,enchanted items,魔力付与されているアイテム
 LiteralText,encounters,モンスター発見数
 LiteralText,encumbrance thresholds,障害しきい値
 LiteralText,End this adventure,この冒険を終わらせる
 LiteralText,ended,終了しました
-LiteralText,engulf entity,丸呑み
+LiteralText,engulf entity,モンスターを丸呑み
 LiteralText,ENTER QUANTITY,いくつ？
 LiteralText,ENTITIES,モンスター
 LiteralText,entity,モンスター
@@ -3257,7 +3257,7 @@ LiteralText,evolution,成長
 LiteralText,Examine which object?,どのアイテムを調べる？
 LiteralText,except replica,複製品でない場合
 LiteralText,EXCHANGE,交換
-LiteralText,exchange entity,交換する
+LiteralText,exchange entity,モンスターの位置を交換
 LiteralText,EXIT PATHOS,Pathosを終了
 LiteralText,EXPAND,拡張
 LiteralText,EXPEL,吐き出す
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,レベルアップ
 LiteralText,gain nutrition,満腹度上昇
 LiteralText,gain skill,スキル増加
 LiteralText,gate,扉
-LiteralText,gates,
+LiteralText,gates,扉
 LiteralText,gather,収集
 LiteralText,gender,性別
 LiteralText,genocide,根絶の巻物の効果
@@ -3306,7 +3306,7 @@ LiteralText,GLYPHS,タイル
 LiteralText,gold,ゴールド
 LiteralText,GOLD,ゴールド
 LiteralText,GRAPHICS,スキンの変更
-LiteralText,grapple entity,組みつく
+LiteralText,grapple entity,モンスターに組みつく
 LiteralText,GRAPPLED,組みつき
 LiteralText,greed,拾う
 LiteralText,grimoire,呪文
@@ -3315,7 +3315,7 @@ LiteralText,GROUNDS,地面
 LiteralText,grow entity,成長
 LiteralText,GUIDES,ガイド
 LiteralText,HALL of FAME,名誉の殿堂
-LiteralText,hatch egg,孵化
+LiteralText,hatch egg,卵を孵化させる
 LiteralText,hatched by,孵化条件
 LiteralText,Having trouble finding the stairs down to the next level?,階段が見つからなくて先に進めませんか？
 LiteralText,Help,ヘルプ
@@ -3325,15 +3325,15 @@ LiteralText,HIDE,隠れる
 LiteralText,hiding,隠れる
 LiteralText,HINT,ヒント
 LiteralText,HIRE,雇う
-LiteralText,horde,
+LiteralText,horde,大群
 LiteralText,HORDES,群れ
 LiteralText,HOST,ホスト
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,冒険を楽しんで頂けたでしょうか。どうぞ感想や提案をお寄せください。
 LiteralText,identified items,識別されたアイテム
-LiteralText,identify all items,識別持ち物すべて
+LiteralText,identify all items,すべてのアイテムを識別
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,床の上のすべてのアイテムを識別
-LiteralText,identify one item,識別アイテム1つ
+LiteralText,identify one item,アイテム1つを識別
 LiteralText,ILLITERATE,読めない
 LiteralText,illusion,幻影
 LiteralText,ILLUSION,幻影
@@ -3345,7 +3345,7 @@ LiteralText,IMPORT,インポート
 LiteralText,Import a file,ファイル読み込み
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,両手で
-LiteralText,incarcerate entity,石像化
+LiteralText,incarcerate entity,モンスターを石像化
 LiteralText,incarceration,硬直化
 LiteralText,INCREASE,増加する
 LiteralText,INDEX,索引
@@ -3381,7 +3381,7 @@ LiteralText,learn spells,呪文を学ぶ
 LiteralText,LEFT RING,左手にはめる
 LiteralText,LEVEL CHART,必要経験値表
 LiteralText,level//rank,レベル
-LiteralText,liberate entity,解放する
+LiteralText,liberate entity,モンスターを解放
 LiteralText,lies,ウソ
 LiteralText,life,ライフ
 LiteralText,LIFE,ライフ
@@ -3528,8 +3528,8 @@ LiteralText,RACES,種族
 LiteralText,random,ランダム
 LiteralText,RANDOM,ランダム
 LiteralText,random dungeon seed,シードからダンジョンを生成
-LiteralText,random level,
-LiteralText,random points,追加技能値獲得
+LiteralText,random level,ランダムな階層
+LiteralText,random points,追加でポイント獲得
 LiteralText,rank,ランク
 LiteralText,rarity,出現率
 LiteralText,rate & review on the app store,App Storeで評価・レビュー
@@ -3548,9 +3548,9 @@ LiteralText,REGISTER,登録
 LiteralText,REGISTER PLAYER HANDLE,プレイヤーハンドルの登録
 LiteralText,reinforced,強化扉
 LiteralText,REINFORCED,蹴破れない
-LiteralText,release entity,解放
+LiteralText,release entity,モンスターを解放
 LiteralText,remove all transients,全ての一時的な状態を解消
-LiteralText,remove curse,解呪
+LiteralText,remove curse,呪いを解く
 LiteralText,REMOVE CURSE,解呪
 LiteralText,remove random resistance,ランダムな耐性を失う
 LiteralText,remove random talent,ランダムな性質を失う
@@ -3575,7 +3575,7 @@ LiteralText,RESISTS,抵抗した
 LiteralText,Rest,休憩
 LiteralText,Rest how many turns?,何ターン休憩する？
 LiteralText,restarting to update,アップデートのために再起動しています
-LiteralText,restock shop items,補充
+LiteralText,restock shop items,店の在庫を再入荷
 LiteralText,restore ability,能力値回復
 LiteralText,RESTORED,復元済み
 LiteralText,RESURRECT,復活させる
@@ -3593,7 +3593,7 @@ LiteralText,REVERT,戻す
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
-LiteralText,route entity,
+LiteralText,route entity,モンスターがある地点から移動
 LiteralText,rumour,噂
 LiteralText,sacrifice item,犠牲
 LiteralText,SANITY CHECK,SANチェック
@@ -3650,7 +3650,7 @@ LiteralText,"Sorry, this device is a bit too small :-(",すみませんが、こ
 LiteralText,SOUND BOARD,効果音を再生
 LiteralText,Sound on/off,音のオン/オフ
 LiteralText,source,それ自体
-LiteralText,spare materials can be formed into new items using the essence of creation,材料とエッセンスを消費してアイテムを制作できます。
+LiteralText,spare materials can be formed into new items using the essence of creation,材料とエッセンスを用いて新しいアイテムを制作できる
 LiteralText,spawn,出現モンスター
 LiteralText,SPAWN ENTITIES EVERYWHERE,そこら中にモンスターを生成
 LiteralText,special,特殊
@@ -3660,7 +3660,7 @@ LiteralText,SPEED,速度
 LiteralText,SPELL,呪文
 LiteralText,SPELLS,呪文
 LiteralText,Square,マス
-LiteralText,stack,スタック全体
+LiteralText,stack,のスタック全体
 LiteralText,START,開始
 LiteralText,Start a game to be joined by other players.,他のプレイヤーが参加するためのゲームを始める
 LiteralText,Start new adventure,新しい冒険を始める
@@ -3691,8 +3691,8 @@ LiteralText,TELEKINESIS,念動力
 LiteralText,Telekinesis which direction?,どの方向に念動力を使う？
 LiteralText,Telekinesis which object?,どの物体に念動力を使う？
 LiteralText,TELEPORT,瞬間移動
-LiteralText,teleport entity,キャラクターが瞬間移動
-LiteralText,teleport item away,瞬間移動で逃げる
+LiteralText,teleport entity,モンスターを瞬間移動
+LiteralText,teleport item away,アイテムを瞬間移動
 LiteralText,Teleport to where?,どこに瞬間移動する？
 LiteralText,TERMINAL,最下層
 LiteralText,terrain,地形
@@ -3723,7 +3723,7 @@ LiteralText,transients,一時的な状態
 LiteralText,TRANSIENTS,一時的な状態
 LiteralText,transition,階層移動
 LiteralText,TRANSLATIONS,翻訳
-LiteralText,transport entity,
+LiteralText,transport entity,モンスターを移動
 LiteralText,TRAP,罠
 LiteralText,trap?,罠?
 LiteralText,trapped,罠付きの
@@ -3734,8 +3734,8 @@ LiteralText,TRIGGER,罠起動
 LiteralText,trigger once,一回だけ起動
 LiteralText,trigger unlimited times,無制限に起動
 LiteralText,truth,真実
-LiteralText,TUNNEL,トンネル
-LiteralText,Tunnel which direction?,どの方向にトンネルを通す？
+LiteralText,TUNNEL,掘り進む
+LiteralText,Tunnel which direction?,どの方向に掘り進む？
 LiteralText,TURN-BASED,ターンベース
 LiteralText,turns,ターン
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
@@ -3771,7 +3771,7 @@ LiteralText,visit shrine,社を訪ねる
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,visit zoo,動物園を訪問
 LiteralText,VOID SPACE,ボイドスペース
-LiteralText,volatile,
+LiteralText,volatile,地形効果
 LiteralText,VOLATILES,地形効果
 LiteralText,vomit nutrition,おう吐
 LiteralText,vulnerable to,弱点
@@ -3806,7 +3806,7 @@ LocalityName,area,周辺
 LocalityName,level,階層
 LocalityName,map,地図
 LocalityName,site,敷地
-LocalityName,square,マス
+LocalityName,square,マス上
 LocalityName,world,世界
 LocalityName,zone,区域
 MaterialName,adamantine,アダマンタイン
@@ -3847,34 +3847,34 @@ ModuleDescription,Descend through procedurally generated dungeons and caverns. I
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成によって散りばめられた広大な地上マップを探索しましょう。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",Pathosの力学を試すためのサンドボックス。シンプルな2部屋のマップで、すべてのアイテム、トラップ、ダンジョンフィクスチャを使ってプレイしよう。
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地表の様子はどうかね？ここに降りてから長いこといるから、太陽や雨風が恋しいもんだ。
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",Pathosの仕組みを実験するためのサンドボックスです。シンプルな2部屋のマップで、すべてのアイテムや罠などダンジョンの要素を使ってプレイしましょう。
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地上の様子はどうかね？ここに降りてもう久しいから、太陽や雨風が恋しいもんだ。
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,知ってるか？ここで売られてるものの半分は、おまえみたいな冒険者の遺品から来てるんだと。
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,みんなオークが侵略してくるって言ってるけど、そんなこと絶対起こらないんじゃないかな。
 ModuleDialogue,Goodbye.,さようなら。
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,このあたりは、それはもうノームが大量にいるそうだぞ？
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,説明するまでもないと思うが、鉱山に行く前につるはしを手に入れた方が良いぞ。鉄クズが十分あれば、作業台から作ることだってできるからな。
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",一体どうして冒険者どもは街のまわりで弓矢とかダガーとかバシバシ飛ばして知らん顏でいられるんだ。俺たちゃもうウンザリしてるから、例えうっかりでも住民に当たったりした日にゃタダじゃ済まさんぞ。
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",おまえたち冒険者は不吉の前兆に違いない！ロクデナシがひとり現れるたびに、俺たちは1ダースもの仲間を失っているんだぞ。
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,最近やたらノームがこの辺うろついてるの気づいた？
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,言うまでもないが、鉱山に行くならつるはしを持っていけよ。鉄クズが十分あれば、作業台から作ることだってできるからな。
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",一体どうして冒険者どもは街中で当たり前のように弓矢とかダガーとかバシバシ飛ばしまくるんだか。俺たちゃもうウンザリしてるから、例えうっかりでも住民に当たったりした日にゃタダじゃ済まさんぞ。
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",おまえたち冒険者どもは不吉の前兆に違いない！ロクデナシがひとり現れるたびに、俺たちは1ダースもの仲間を失っているんだぞ。
 ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,疲れたし足痛いし！こんな見回り早く終わらせて家で眠りたいよ。
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",ノーム鉱山の更に下にはドワーフの街があると聞く。臭くて小さい連中が多いのは好みではないし、行ってみたいとは思わないけどな。
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",ノーム鉱山の更に下にはドワーフの街があると聞く。臭くて小さい連中だらけのところなんて、行ってみたいとも思わんがな。
 ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",洞窟では幻覚の壁に気を付けてくれ。ノームの魔法使いどもの仕業だけど、多すぎるし本当にやっかいだよ。
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,商人と取引して街の経済に貢献してくれよ！ただし腹の虫が鳴いてる時は足元を見られるからやめといた方がいいぞ。
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,商人と取引して我が街の経済に貢献してくれよ！ただし腹の虫が鳴いてる時は足元を見られるからやめといた方がいいぞ。
 ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",光栄にも、各地から名の知れた強き英雄が現れることがある…。もし今日にでも見かけたら、おまえにも知らせよう。
 ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,道をあけろ！重要な見回りの最中だというのに、貴様ら冒険者どもはいつも俺の通り道を邪魔してくるんだな。
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",**『オラクル』**は、うろたえさせる程の悲しき表情をたたえ、無言で同情をあなたに向けている。||貴方の運命には*嫌悪を催す*なにかが待ち受けているに違いない。
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,ここでの食料はいいものじゃない。モンスターを狩ってて、街中には製作台があるんだ、分かるだろ？
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,鉱山を独りで進むのは危険だから、傭兵を雇うのも悪くない。ただし報酬を払えるうちしか信頼が置けないぞ。
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",街にある聖稜などでは、徳の高い者に恩恵をお与えになります。コインが余っていたらすぐにでも寄付しに行ってみませんか。貴方の旅に祝福あれ！
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",**『オラクル』**は、うろたえさせる程の悲しき表情をたたえ、無言で同情をあなたに向けている。||貴方の運命には*嫌悪を催す*何かが待ち受けているに違いない。
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,ここの食い物はひどいもんだ。モンスターを狩ってて、街中には製作台があるんだ、分かるだろ？
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,鉱山を独りで進むのは危険だから、傭兵を雇うのも悪くない。ただし奴らは報酬を払っている間しか信頼できないぞ。
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",徳が高い冒険者は、街にある聖稜などで恩恵を受けられます。あまったコインがあるなら今すぐ寄付しに行きましょう。貴方の旅に祝福あれ！
 ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",警備隊と商人ギルドは長期契約を結んでるんだ、変な気は起こすなよ。
 ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",街の下にある鉱山は宝石ラッシュの真っ只中さ。よくある安物ガラスじゃなくて、高価な宝石がゴロゴロしてるんだって。
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,街外れの洞窟には鉱山へつづく階段がある。降りたが最後、戻ってこれないかもしれないぞ。
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,街外れの洞窟には鉱山へつづく階段がある。降りたが最後、もう戻ってこれないかもしれんぞ？
 ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,わしはこの見回りが終わったら警備隊から引退するんじゃ。なにも異常がなければいいがの！
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",この街は、これから先の旅に向けた備えをするにはとてもよい場所です。まぁ慌てないで、ダンジョンの奥へ進む前にここで確認したり準備したり、やることはいろいろあるでしょう。
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",この街は、これから先の旅に備えるにはピッタリの場所です。ダンジョンの奥へと急ぐ前に、ここでいろいろ確認したり準備したり、ゆっくりしていったらいかがでしょう。
 ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",もし鉱山に入るのが初めてなら気をつけるんだな。不用心な冒険者は、あのコソコソしたノーム野郎どもの不意打ちにあうぞ。
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,街外れの洞窟にでも出かけてみたらどうかな？たくさんのアイテムを拾えるが、我々は街の外までは巡回しないからマズイことになったら自分で逃げ帰ってきたまえ。
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,どうか噴水で遊ぶのは止めてください。この制服を濡らすことは禁じられていまして、もし水が掛かったりしたら…あなたは間違いなく*一巻の終わり*です。
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",いいか、昔は俺もおまえのような冒険者だったが…おまえも定職に就いた方がいいんじゃないか？結局は*冒険者*なんて気取っても、ただの住所不定無職じゃないか。
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,街外れの洞窟にでも出かけてみたらどうかな？たくさんのアイテムを拾えるが、我々は街の外までは巡回しないからマズイことになる前に帰ってくることだな。
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,どうか噴水で遊ぶのは止めてください。この制服を濡らすことは禁じられていまして、もし水が掛かったりしたら…あなたを*処刑*しますよ。
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",いいか、昔は俺もおまえのような冒険者だったが…おまえも定職に就いた方がいいんじゃないか？*冒険者*なんて気取っても、結局ただの住所不定無職じゃないか。
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
@@ -3991,9 +3991,9 @@ ModuleTerm,strange horse,妙な馬
 ModuleTerm,strange pig,妙な豚
 ModuleTerm,strange seal,妙なアザラシ
 ModuleTerm,strange sheep,妙な羊
-ModuleTerm,To complete this game you need to escape the dungeon on the first level.,このゲームを完了するには、1階からダンジョンを脱出する必要があります。
-ModuleTerm,To complete this game you need to escape through the final rift.,このゲームを完了するには、あなたは最後のワープソーンを通って逃げる必要があります。
-ModuleTerm,To complete this game you need to escape through the final transportal.,このゲームを完了するには、あなたは最後のワープソーンを通って逃げる必要があります。
+ModuleTerm,To complete this game you need to escape the dungeon on the first level.,このゲームをクリアするには、一階からダンジョンを脱出する必要があります。
+ModuleTerm,To complete this game you need to escape through the final rift.,このゲームをクリアするには、最後の裂け目を通ってダンジョンを脱出する必要があります。
+ModuleTerm,To complete this game you need to escape through the final transportal.,このゲームをクリアするには、最後のポータルを通ってダンジョンを脱出する必要があります。
 ModuleTerm,Topaz Mine,トパーズ鉱山
 ModuleTerm,Tree Maze,緑の迷路
 ModuleTerm,trove,地下蔵
@@ -4384,7 +4384,7 @@ RumourTrueMessage,Pyrolisk are fire eaters.,パイロリスクは火を食うん
 RumourTrueMessage,Sacrificing a priest on his own altar is a very bad idea.,坊さんをそいつの祭壇で生贄にするってのはさすがに発想やばいぞ。
 RumourTrueMessage,See the priest to cure what ails you.,何か具合が悪いなら坊さんに会ってみろ。
 RumourTrueMessage,The utterly confused should chew on a lizard.,マジでパニくったら騙されたと思ってトカゲをかんでみろ。
-RumourTrueMessage,There is a scroll that can defeat the merchant.,店主を出し抜ける巻物があるんだって。
+RumourTrueMessage,There is a scroll that can defeat the merchant.,商人を出し抜ける巻物があるんだって。
 SanctityCode,B,祝
 SanctityCode,C,呪
 SanctityCode,U,普
@@ -4629,7 +4629,7 @@ SonicName,whistle,ホイッスル
 SonicName,woof,ワン！
 SonicName,write,書く
 SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,富と権力を謳歌しているが、皆からなぜ嫌われているのか考えが及んでいない。
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.",異常に小さく、戦闘には向いていない。
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.",異常に小さくすばしっこいが、戦闘には向いていない。
 SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.",異常に図体が大きく、動きは鈍いが打たれ強い。
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",永久なる獣人の呪いをかけられた者たちで、恐るべき狼の姿に変化することができる。
 SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,生き血をすすり命を永らえている、忌み嫌われた生き物。
@@ -4641,8 +4641,8 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.",水の精霊に付き従い、敵を打ち滅ぼすため爆発する球を召喚することができる。
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,ほかの道楽や運動なんてそっちのけ、人生を学問に捧げてきた本の虫。
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,こじらせた主人公補正に頼って生きてきたが、その運命は厳しい現実にさらされることになる。
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",位置が不確定で、彼らにとって同時にどこへでも存在することは当たり前のことだ。
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,エネルギーを反射する生きたガラスから削りだされた。オリジナルのモンスターを完璧に模倣しているが、繊細である。
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",位置が不確定な彼らにとって、同時にどこへでも存在することは当たり前のことだ。
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,エネルギーを反射する生きたガラスから削りだされた。オリジナルのモンスターを完璧かつ繊細に模倣している。
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.",本来なくてはならない血肉を持たずしてなぜか生きている、この奇怪な存在には幾分かの長所がある。
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,常習的な飲酒は冒険者を厚かましく、やや不用心にさせる。アルファベットを逆順に言うなんてできないだろう。
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.",無実かそうでないかに関わらず、その罪から逃れるのに必死だ。

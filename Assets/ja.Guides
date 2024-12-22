@@ -62,7 +62,7 @@
 . The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos（パトス、またはペイソス。悲哀や情念を意味します。）におけるメインの目的は、地下40階まで降りてあることを成し遂げ、そして地下1階からダンジョンを脱出することです。
 . Pathos is turn-based so take your time and consider your options when things get serious.; Pathosはターン制ですので、ピンチに追い込まれたらじっくり時間をかけて選択肢を検討しましょう。アイテムやモンスターなどのヘルプに打開のヒントがあるかも知れません。
 . Each class starts with different items, skills and abilities.; 各クラスごとに異なるアイテム、スキル、能力値を持って開始します。（クラスによってはランダムな呪文を覚えた状態で始まります）
-. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 冒険を始める度に、薬の小瓶、巻物、指輪、杖、鎧などの見かけの色・形はシャッフルされ、実際に効果を発揮するか識別されるまで正体は分かりません。
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 冒険を始める度に、薬の小瓶、巻物、指輪、魔法棒、鎧などの見かけの色・形はシャッフルされ、実際に効果を発揮するか識別されるまで正体は分かりません。
 . For example, the orange potion will not have a consistent effect across different adventures.; 例えば、ある冒険でオレンジ色の液体の入った小瓶が回復の薬の小瓶だったとしても、別な冒険でも回復の薬の小瓶であるとは限りません。
 
 # Combat; 戦闘
@@ -83,13 +83,13 @@
 /
 ` Skill Bonus = (Level / 4) + 1; スキルボーナス = (レベル / 4) + 1
 /
-. Your defence is also affected by your circumstances:; 防御値は以下の様に状況にも影響されます。
+. Your defence is also affected by your circumstances:; 防御値は状況にも影響を受けます。
 /
 ` {Mod} defence when blind; 盲目の場合: 防御値に {Mod}
 ` {Mod} defence when invisible; 透明化している場合: 防御値に {Mod}
-` {Mod} defence when displaced; 変位している場合: 防御値に {Mod}
+` {Mod} defence when displaced; 虚像の状態がある場合: 防御値に {Mod}
 ` {Mod} defence when paralysed or sleeping; 麻痺または寝ている場合: 防御値に {Mod}
-` {Mod} defence when stuck; 立ち往生している場合: 防御値に {Mod}
+` {Mod} defence when stuck; 動けない場合: 防御値に {Mod}
 ` {Mod} defence when attacked from concealment; 隠れた敵から攻撃された場合: 防御値に {Mod}
 /
 . Heavy armour will make you {UnskilledPenalty} points slower if you are unskilled and {SkilledPenalty} points slower if you are skilled.; 重装防具を装備すると、スキルを持たない初心者の場合は速度が{UnskilledPenalty}ポイント遅くなり、熟練者以上の場合は{SkilledPenalty}ポイントだけ遅くなります。
@@ -184,7 +184,7 @@
 
 # Searching; 調査
 . The eye action button toggles searching.; 目の形をしたアイコンで調査モードを切り替えます。
-. Searching will find secret doors and concealed traps.; 調査していると、秘密の扉や隠された罠が見つかる場合があります。（調査の性質があると見つけやすくなります）
+. Searching will find secret doors and concealed traps.; 調査していると、秘密の扉や隠された罠が見つかる場合があります。（鋭敏の性質があると見つけやすくなります）
 . Companions will search when you search to help find secrets.; 仲間がいる場合、調査モードに入ると仲間も近くで調査の手伝いをします。
 . Searching will be interrupted if there is a hostile in your zone.; 視界内に敵が現れた場合、調査モードは解除されます。
 
@@ -217,10 +217,10 @@
 `   fully restored if less than half mana; マナが半分より下回っていた場合、完全に回復
 /
 ` karma >= glorious; カルマ >= 高潔
-`   remove blindness; 失明を取り除く
+`   remove blindness; 盲目を取り除く
 `   remove hallucination; 幻覚を取り除く
-`   remove rage; 怒りを取り除く
-`   remove sickness; 病気を取り除く
+`   remove rage; 激昂を取り除く
+`   remove sickness; 病を取り除く
 /
 ` karma >= exalted; カルマ >= 神聖
 `   remove one curse; 呪われたアイテム1つを解呪
@@ -245,7 +245,7 @@
 . You can mount some types of companions and ride around the dungeon.; いくつかの種類の仲間は騎乗してダンジョンを乗り回すことができます。
 . Your steed will sometimes take over the attack and sometimes will be the target of an attack.; 騎獣（騎乗されているモンスター）は、時々敵の攻撃を肩代わりしたり、攻撃の目標にされたりします。
 . Your steed will be the first into any traps so take good care of their well-being.; 騎獣は罠の効果を受けることになるため、ライフや耐性などに気を付ける必要があります。
-. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 騎乗のスキルが技能者以上の場合、騎獣の攻撃・防御が増加します。
+. A skilled rider adds their skill bonus to the steeds attack and defence ratings.; 騎乗のスキルが技能者以上の場合、騎獣が攻撃する頻度やプレイヤーの代わりに攻撃を受ける確率が増加します。
 . A steed is useful when you are burdened and it is strong enough to take your load.; 騎獣に十分な筋力と体格があれば、プレイヤーだけで持つには重い持ち物があっても、楽に運ぶことができます。
 . To dismount your steed you need to long press/right click on your character.; 騎獣から降りるには、プレイヤーを長押しするか右クリックします。
 
@@ -260,7 +260,7 @@
 # Spawning; モンスターの生成
 . Monsters will randomly spawn into areas outside your current zone.; モンスターはプレイヤーがいるマス以外の場所にランダムに出現します。
 . The rate of spawning increases as you descend deeper into the dungeon.; ダンジョンの奥深くに行くにつれて、モンスターの出現率が増加します。
-. The talent of aggravation also increases the spawn rates for monsters.; 反感の性質を持っていると、モンスターの出現率が増加します。
+. The talent of aggravation also increases the spawn rates for monsters.; 不遜の性質を持っていると、モンスターの出現率が増加します。
 
 # Polymorph; 変化について
 . Transform into another entity with all the advantages or disadvantages that brings.; 他のモンスターに変化すると、そのモンスターの長所と短所がもたらされます。
@@ -273,7 +273,7 @@
 # Locks; 錠前
 . Doors and containers can be locked and possibly trapped.; ドアや箱には鍵が掛かっていたり、罠が仕掛けられているかもしれません。
 . You can kick locks to break them but this will trigger any trap.; 蹴ることで錠前ごと破壊することができますが、仕掛けられていた罠が必ず起動します。
-. Items such as skeleton keys and lock picks can be used to unlock.; 万能鍵やピッキング道具などのアイテムを使うことで鍵を解錠できます。（罠付きの箱の解錠に失敗すると、仕掛けられていた罠が起動します）
+. Items such as skeleton keys and lock picks can be used to unlock.; 仕込み鍵やピッキング道具などのアイテムを使うことで鍵を解錠できます。（罠付きの箱の解錠に失敗すると、仕掛けられていた罠が起動します）
 . These items can break and the chance is influenced by your competency with locks.; これらの道具は使用すると壊れる可能性があり、その確率は錠前のスキルに影響されます。
 . In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; 加えて、壊れる可能性は呪われた道具では2倍に、祝福された道具では半分になります。
 . There are other magical items and spells that can be used to unlock.; 他にも解錠することができる魔法のアイテムや呪文があります。
@@ -288,7 +288,7 @@
 
 # Teleport; 瞬間移動
 . Teleportation transports your character around the current dungeon level.; 瞬間移動の状態は、キャラクターを現在の階層のどこかへ転送します。
-. When uncontrolled, this is a random event that may help or hinder your journey.; 制御できない場合は瞬間移動がランダムに発生し、冒険を助けるか妨げになるでしょう。
+. When uncontrolled, this is a random event that may help or hinder your journey.; 制御できない場合は瞬間移動がランダムに発生し、冒険を助けたり、あるいは妨げになったりすることがあります。
 . Controlled teleportation allows you to select on the map your destination location.; 瞬間移動制御の性質を持っていると、マップから任意のタイミングで目的地を選んで瞬間移動できるようになります。
 . However, each teleportation will cost you nutrition so use it wisely.; ただし瞬間移動するたびに満腹度を消費するので、使いどころを考えましょう。
 . To access teleport-at-will you need to long press/right click on your character.; 任意で瞬間移動するには、キャラクターを長押しか右クリックします。
@@ -332,9 +332,9 @@
 . Modifiers on armour apply to your defence score.; 防具の修正値は防御値に影響します。
 . Modifiers on weapons apply to your attack and damage scores.; 武器の修正値は攻撃値とダメージに影響します。
 /
-. The {grade} items are limited to between {Min} and {Max}.; 階級が「{grade}」のアイテムは、修正値が{Min}から{Max}に制限されています。
-. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; 階級が「{grade}」のアイテムは、{Modifier}まで強化することができ、それを超えて強化しようとすると修正値が0に戻ります。
-. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; 制限を超えて{grade}のアイテムを魔力付与しようとすると、アイテムが破壊されてしまいます。
+. The {grade} items are limited to between {Min} and {Max}.; グレードが「{grade}」のアイテムは、修正値が{Min}から{Max}に制限されています。
+. The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; グレードが「{grade}」のアイテムは、{Modifier}まで強化することができ、それを超えて強化しようとすると修正値が0に戻ります。
+. The {grade} items will be destroyed if you try to change a modifier beyond its limit.; グレードによる制限を超えて{grade}のアイテムを魔力付与しようとすると、アイテムが破壊されてしまいます。
 /
 . Items can also be upgraded such as enchanting a tin whistle into a magic whistle.; 錫のホイッスルを魔法のホイッスルにするなど、アイテムをアップグレードすることもできます。
 
