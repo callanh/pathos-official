@@ -13,36 +13,36 @@ AfflictionName,reflux,refluks
 AfflictionName,sliming,śluz
 AfflictionName,worms,zarobaczenie
 AnatomyAbsenceText,MINDLESS,BEZMYŚLNY
-AnatomyAbsenceText,NO BLOOD,
+AnatomyAbsenceText,NO BLOOD,BRAK KRWI
 AnatomyAbsenceText,NO EARS,BRAK USZU
 AnatomyAbsenceText,NO EYES,BRAK OCZU
 AnatomyAbsenceText,NO FEET,BRAK STÓP
 AnatomyAbsenceText,NO HANDS,BRAK RĄK
 AnatomyAbsenceText,NO HEAD,BRAK GŁOWY
 AnatomyAbsenceText,NO LIMBS,BRAK KOŃCZYNY
-AnatomyAbsenceText,NOT AMORPHOUS,
-AnatomyAbsenceText,NOT MOUNTED,
-AnatomyAbsenceText,NOT WARM,
+AnatomyAbsenceText,NOT AMORPHOUS,NIEAMORFICZNY
+AnatomyAbsenceText,NOT MOUNTED,NIEOSIODŁANY
+AnatomyAbsenceText,NOT WARM,ZIMNY
 AnatomyAbsenceText,VOICELESS,BEZ GŁOSU
 AnatomyName,amorphous,amorficzny
 AnatomyName,blood,krew
-AnatomyName,ears,
-AnatomyName,eyes,
-AnatomyName,feet,
-AnatomyName,hands,
-AnatomyName,head,
-AnatomyName,limbs,
-AnatomyName,mind,
-AnatomyName,mounted,mounted
-AnatomyName,thermal,
-AnatomyName,voice,
+AnatomyName,ears,uszy
+AnatomyName,eyes,oczy
+AnatomyName,feet,stopy
+AnatomyName,hands,ręce
+AnatomyName,head,głowa
+AnatomyName,limbs,kończyny
+AnatomyName,mind,umysł
+AnatomyName,mounted,osiodłany
+AnatomyName,thermal,termiczny
+AnatomyName,voice,głos
 AppearanceDescription,A long cloak which is open in the front and fastened at the breast with a clasp.,Długi płaszcz który jest otwarty z przodu i zapinany na piersi klamrą.
 AppearanceDescription,A short but sturdy looking coat of mithril armour.,Krótka ale mocna zbroja z mithrilu.
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Wysmukła i delikatna zbroja z mithrilu.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Wysmukła i lśniąca zbroja z mithrilu.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Klasyczny kapelusz czarodzieja haftowany w gwiazdy i księżyce.
 AppearanceName,adamantine slug,
-AppearanceName,adamantine staff,
+AppearanceName,adamantine staff,adamantowy kostur
 AppearanceName,agate ring,pierścień z agatem
 AppearanceName,aluminium wand,aluminiowa różdżka
 AppearanceName,angled poleaxe,zakrzywiona halabarda
@@ -69,7 +69,7 @@ AppearanceName,blue and green shield,niebiesko-zielona tarcza
 AppearanceName,blue gem,niebieski klejnot
 AppearanceName,blue robe,niebieska szata
 AppearanceName,bone earrings,kolczyki z kości
-AppearanceName,bone staff,kościana różdżka
+AppearanceName,bone staff,kościany kostur
 AppearanceName,brass ring,mosiężny pierścień
 AppearanceName,brass wand,mosiężna różdżka
 AppearanceName,brilliant blue potion,jasnobłękitna mikstura
@@ -134,7 +134,7 @@ AppearanceName,emerald potion,szmaragdowa mikstura
 AppearanceName,emerald ring,pierścień ze szmaragdem
 AppearanceName,engagement ring,pierścień zaręczynowy
 AppearanceName,etched helmet,grawerowany hełm
-AppearanceName,exotic two-pointed polearm,
+AppearanceName,exotic two-pointed polearm,egzotyczna broń drzewcowa o dwóch kolcach
 AppearanceName,faded book,wyblakła księga
 AppearanceName,faded pall,wyblakły całun
 AppearanceName,fencing gloves,rękawice szermierskie
@@ -218,7 +218,7 @@ AppearanceName,metal slug,metalowy ślimak
 AppearanceName,milky potion,mleczna mikstura
 AppearanceName,mithril ring,mithrilowy pierścień
 AppearanceName,mithril slug,mithrilowy ślimak
-AppearanceName,mithril staff,mithrilowa laska
+AppearanceName,mithril staff,mithrilowy kostur
 AppearanceName,mood ring,pierścień nastroju
 AppearanceName,moonstone ring,pierścień z kamieniem księżycowym
 AppearanceName,mortar gun,działo moździerzowe
@@ -359,7 +359,7 @@ AppearanceName,thin cake,cienkie ciasto
 AppearanceName,thonged club,thonged club
 AppearanceName,three-pointed polearm,trójramienna tyczka
 AppearanceName,throwing axe,topór do rzucania
-AppearanceName,throwing disc,
+AppearanceName,throwing disc,dysk do rzucania
 AppearanceName,throwing spear,włócznia do rzucania
 AppearanceName,throwing star,gwiazda rzucana
 AppearanceName,throwing stick,kij do rzucania
@@ -368,7 +368,7 @@ AppearanceName,tin wand,cynowa różdżka
 AppearanceName,tiny book,malutka książeczka
 AppearanceName,topaz ring,pierścień z topazem
 AppearanceName,torn book,podarta księga
-AppearanceName,toy sword,
+AppearanceName,toy sword,zabawkowy miecz
 AppearanceName,triangular amulet,trójkątny amulet
 AppearanceName,turquoise book,turkusowa księga
 AppearanceName,twisted ring,skręcony pierścień
@@ -415,7 +415,7 @@ AttackType,horn,róg
 AttackType,kick,kopnięcie
 AttackType,punch,uderzenie
 AttackType,shriek,krzyk
-AttackType,slap,
+AttackType,slap,klaps
 AttackType,spell,czar
 AttackType,spit,splucie
 AttackType,splash,bryzg
@@ -460,11 +460,11 @@ BarrierName,cave wall,ściana groty
 BarrierName,hell brick,piekielna cegła
 BarrierName,iron bars,sztaby żelaza
 BarrierName,jade wall,ściana z jadeitu
-BarrierName,sewer wall,
+BarrierName,sewer wall,ściana kanału
 BarrierName,shroom,grzybnia
 BarrierName,stone wall,kamienna ściana
 BarrierName,tree,drzewo
-BarrierName,wooden wall,
+BarrierName,wooden wall,drewniana ściana
 BeamName,acid,kwas
 BeamName,cold,zimno
 BeamName,death,śmierć
@@ -485,7 +485,7 @@ BlockName,crystal boulder,kryształ
 BlockName,gold boulder,złoty głaz
 BlockName,statue,statua
 BlockName,stone boulder,głaz
-BlockName,trophy,
+BlockName,trophy,trofeum
 BlockName,wooden barrel,drewniana beczka
 BoonDescription,Ask for a unicorn to join your party.,Poproś jednorożca aby dołączył do Twojej imprezy.
 BoonDescription,Bless one item in your inventory or on the ground.,Pobłogosław jeden przedmiot znajdujący się w ekwipunku lub na ziemi.
@@ -840,9 +840,9 @@ CounterName,captures,captures
 CounterName,casts,odlewy
 CounterName,chants,śpiewy
 CounterName,constructs,konstrukcje
-CounterName,copies,
+CounterName,copies,kopie
 CounterName,crafts,rzemiosła
-CounterName,decapitations,
+CounterName,decapitations,dekapitacje
 CounterName,digs,wykopaliska
 CounterName,dips,dips
 CounterName,disarms,rozbraja
@@ -859,7 +859,7 @@ CounterName,jumps,skacze
 CounterName,kicks,kopie
 CounterName,lifesaves,ratuje życie
 CounterName,mimics,naśladuje
-CounterName,mounts,
+CounterName,mounts,osiodłania
 CounterName,moves,chodzi
 CounterName,opens,otwiera
 CounterName,packs,pakuje
@@ -931,7 +931,7 @@ DeviceName,noxious pool,zatruta sadzawka
 DeviceName,pit,jama
 DeviceName,poison gas trap,trujący gaz
 DeviceName,polymorph trap,pułapka przeobrażenia
-DeviceName,pressure plate,
+DeviceName,pressure plate,płyta dociskająca
 DeviceName,scything blade trap,tnące ostrze
 DeviceName,shock trap,pułapka paraliżująca
 DeviceName,silence trap,pułapka ciszy
@@ -1031,7 +1031,7 @@ EntityName,abbot,opat
 EntityName,acid blob,plama kwasu
 EntityName,acid worm,kwasowy robal
 EntityName,acolyte,akolita
-EntityName,adamantine golem,
+EntityName,adamantine golem,adamantowy golem
 EntityName,adult black dragon,czarny smok
 EntityName,adult blue dragon,niebieski smok
 EntityName,adult deep dragon,smok głębi
@@ -1123,7 +1123,7 @@ EntityName,blood imp,krwawy imp
 EntityName,bloodshot eye,przekrwione oko
 EntityName,bloodworm,krwawy robak
 EntityName,blue jelly,niebieska galaretka
-EntityName,blue light,
+EntityName,blue light,niebieskie światło
 EntityName,bone devil,kościany diabeł
 EntityName,brown mould,brązowa pleśń
 EntityName,brown pudding,brązowy pudding
@@ -1223,7 +1223,7 @@ EntityName,elf mummy,mumia elfa
 EntityName,elf zombie,elf zombie
 EntityName,Elwing,Elwing
 EntityName,embalmer,balsamista
-EntityName,emerald golem,
+EntityName,emerald golem,szmaragdowy golem
 EntityName,energy vortex,wir energetyczny
 EntityName,erinys,erynia
 EntityName,ettin,etyn
@@ -1396,7 +1396,7 @@ EntityName,kobold,kobold
 EntityName,kobold king,król koboldów
 EntityName,kobold lord,lord koboldów
 EntityName,kobold mummy,mumia kobolda
-EntityName,kobold scout,
+EntityName,kobold scout,kobold zwiadowca
 EntityName,kobold shaman,kobold szaman
 EntityName,kobold warrior,kobold wojownik
 EntityName,kobold zombie,kobold zombie
@@ -1450,7 +1450,7 @@ EntityName,master mind flayer,mistrz umysłów
 EntityName,mastodon,mastodont
 EntityName,Maugneshaagar,Maugneshaagar
 EntityName,medusa,meduza
-EntityName,mellified man,
+EntityName,mellified man,zmiękczony człowiek
 EntityName,merchant,kupiec
 EntityName,Metamorphius,Mistrz Shifter
 EntityName,migo drone,dron migo
@@ -1511,7 +1511,7 @@ EntityName,panther,pantera
 EntityName,pantherwere,łakopantera
 EntityName,paper golem,papierowy golem
 EntityName,parrot,papuga
-EntityName,pearl golem,
+EntityName,pearl golem,perłowy golem
 EntityName,pegasus,pegaz
 EntityName,Pelias,Pelias
 EntityName,Pestilence,Zaraza
@@ -1526,7 +1526,7 @@ EntityName,pit viper,żmija
 EntityName,pixie,pixie
 EntityName,plains centaur,centaur nizinny
 EntityName,Planetar,planetar
-EntityName,plasmoid,
+EntityName,plasmoid,plazmoid
 EntityName,plastic golem,plastikowy golem
 EntityName,pony,kucyk
 EntityName,proudfoot,dumna stopa
@@ -1547,7 +1547,7 @@ EntityName,rancid jelly,zjeczała galaretka
 EntityName,rat king,król szczurów
 EntityName,ratwere,łakoszczur
 EntityName,recluse spider,pająk pustelnik
-EntityName,red light,
+EntityName,red light,czerwone światło
 EntityName,red mould,czerwona pleśń
 EntityName,red naga,czerwona naga
 EntityName,red naga hatchling,pisklę czerwonej nagi
@@ -1573,7 +1573,7 @@ EntityName,satyr,Satyr
 EntityName,scorpion,skorpion
 EntityName,Scorpius,Scorpius
 EntityName,scramper,krępowacz
-EntityName,seal,
+EntityName,seal,foka
 EntityName,sergeant,sierżant
 EntityName,sewer rat,szczur kanałowy
 EntityName,shade,pomniejszy cień
@@ -1628,8 +1628,8 @@ EntityName,tiger,tygrys
 EntityName,tigerwere,łakotygrys
 EntityName,titan,tytan
 EntityName,titanothere,tytanothera
-EntityName,topaz golem,
-EntityName,tortle,
+EntityName,topaz golem,topazowy golem
+EntityName,tortle,żółw
 EntityName,tracker,łowca
 EntityName,transmuter,mag przemian
 EntityName,trapper,pułapkowicz
@@ -1803,7 +1803,7 @@ FormatText,{CharacterName} broke {FixtureName},{CharacterName} złamał {Fixture
 FormatText,{CharacterName} can only hold {AssetName} in {GenderHis} quiver,{CharacterName} może trzymać tylko {AssetName} w kołczanie {GenderHis}
 FormatText,{CharacterName} cannot be more satiated and has wasted valuable nutrition,{CharacterName} nie może być bardziej nasycony i zmarnował posiłek
 FormatText,{CharacterName} cannot grow up,{CharacterName} nie może urosnąć
-FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,
+FormatText,{CharacterName} cannot ingest {AssetName} due to {DietName} diet,{CharacterName} Nie można zjeść {AssetName} przez {DietName} dietę
 FormatText,{CharacterName} cannot reach {ObjectName} while levitating,{CharacterName} nie można dosięgnąć {ObjectName} podczas lewitacji
 FormatText,{CharacterName} cannot remove {GenderHis} {AssetName},{CharacterName} nie może usunąć {GenderHis} {AssetName}
 FormatText,{CharacterName} cast {QualificationName} {SpellName},{CharacterName} ładuje {QualificationName} {SpellName}
@@ -1838,7 +1838,7 @@ FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{Ch
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} zmniejszył wartość {AttributeName} o {ModifierNumber}
 FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} zmniejszył życie o {ModifierNumber}
 FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} zmniejszył ilość many o {ModifierNumber}
-FormatText,{CharacterName} has forgotten something,
+FormatText,{CharacterName} has forgotten something,{CharacterName} zapomniał coś
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} zwiększył {AttributeName} o {ModifierNumber}
 FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} zwiększył życie o {ModifierNumber}
 FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} zwiększył manę o {ModifierNumber}
@@ -1913,9 +1913,9 @@ FormatText,{ElementName} resistance,{ElementName} odporność
 FormatText,{EndType} by {EndCause},{EndType} przez {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropia
 FormatText,{ExplosionName} explosion,eksplozja {ExplosionName}
-FormatText,{ItemCount} item,{ItemCount} obiekt
-FormatText,{ItemCount} items,{ItemCount} obiektów
-FormatText,{ItemCount} more items,
+FormatText,{ItemCount} item,{ItemCount} przedmiot
+FormatText,{ItemCount} items,{ItemCount} przedmiot
+FormatText,{ItemCount} more items,{ItemCount} więcej przedmiotów
 FormatText,{JournalDelay} sec,{JournalDelay} sekund
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are allied,{Leader:CharacterName} i {Follower:CharacterName} są sprzymierzeni
 FormatText,{Leader:CharacterName} and {Follower:CharacterName} are no longer allied,{Leader:CharacterName} i {Follower:CharacterName} nie są już sprzymierzeni
@@ -1925,7 +1925,7 @@ FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} 
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} z jakim elementem?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} w którą stronę?
 FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} który element na {FeatureName}?
-FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},
+FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} dosiadł {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} cast
 FormatText,{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges},{Quantity} {SanctityName} {CharacterName} {Enchantment} {ContainerQualifier} {ItemName} {Charges}
@@ -1939,27 +1939,27 @@ FormatText,{Source:AssetName} was converted to {Target:AssetName},{Source:AssetN
 FormatText,{StrikeName} digestion,trawienie {StrikeName}
 FormatText,{StrikeName} strike,atak {StrikeName}
 FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{Thief:CharacterName} ukradł {AssetName} z {Victim:CharacterName}
-FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
+FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} ukradł przedmioty {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} funtów
 FormatText,after reaching dungeon level {RecordDepth},po osiągnięciu poziomu lochu {RecordDepth}
 FormatText,animate {CharacterName},animować {CharacterName}
 FormatText,boost {AttributeName} by enchantment,wzmocnienie {AttributeName} przez zaczarowanie
-FormatText,break {FeatureName},
-FormatText,cap {Percent}%,cap {Percent}%
+FormatText,break {FeatureName},zepsuł {FeatureName}
+FormatText,cap {Percent}%,limit {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} na jaki przedmiot
 FormatText,Cast {SpellName} which direction?,{SpellName} w którą stronę?
 FormatText,convert {FeatureName} into {DeviceName},zmień armaturę {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},zmień ściany {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},zmień drzwi {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},zmień podłogę {LocalityName} {FromGroundName} {ToGroundName}
-FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},zmień {LocalityName} z {FromVolatileName} w {ToVolatileName}
+FormatText,convert {StockName} {QualifierText} into {ItemNames},zmień {StockName} {QualifierText} w {ItemNames}
 FormatText,cripple {AttributeName},Cripple {AttributeName}
-FormatText,decrease {AttributeName} by {AdjustmentDice},
-FormatText,decrease all abilities by {AdjustmentDice},
+FormatText,decrease {AttributeName} by {AdjustmentDice},zmniejsz {AttributeName} o {AdjustmentDice}
+FormatText,decrease all abilities by {AdjustmentDice},zmniejsz wszystkie umiejętności o {AdjustmentDice}
 FormatText,decrease karma by {ChangeDice},Karma zmniejsza {ChangeDice}
-FormatText,decrease one ability by {AdjustmentDice},
+FormatText,decrease one ability by {AdjustmentDice},zmniejsz jedną umiejętność o {AdjustmentDice}
 FormatText,diminish {ManaDice},osłabienie {ManaDice}
 FormatText,drain life {Dice},wyssanie życia {Dice}
 FormatText,drain mana {Dice},wyssanie many {Dice}
@@ -1968,17 +1968,17 @@ FormatText,energise {ManaDice},energia {ManaDice}
 FormatText,Equip {CharacterName},Wyposaż {CharacterName}
 FormatText,fame {RecordFame} and {RecordKills} kills,sława {RecordFame} i {RecordKills} zabójstwa
 FormatText,Feed which item to {CharacterName}?,Który element dać do {CharacterName}?
-FormatText,from {Cause},
+FormatText,from {Cause},z {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,wzmocnienie {Percent}% {ElementName} odporności
 FormatText,gain {PropertyName} talent,zdobyty talent {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Witaj {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Niech żyje {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},harm {ElementName} {DamageDice}
 FormatText,heal {LifeDice},uzdrawiaj {LifeDice}
-FormatText,increase {AttributeName} by {AdjustmentDice},
-FormatText,increase all abilities by {AdjustmentDice},
+FormatText,increase {AttributeName} by {AdjustmentDice},zwiększ {AttributeName} o {AdjustmentDice}
+FormatText,increase all abilities by {AdjustmentDice},zwiększ wszystkie umiejętności o {AdjustmentDice}
 FormatText,increase karma by {ChangeDice},Karma zwiększa {ChangeDice}
-FormatText,increase one ability by {AdjustmentDice},
+FormatText,increase one ability by {AdjustmentDice},zwiększ jedną umiejętność o {AdjustmentDice}
 FormatText,learn spell {SpellName},ucz się zaklęć {SpellName}
 FormatText,level {Depth},poziom {Depth}
 FormatText,level {Level} {GenderName} {EntityName} {SpecialName} {ClassName},poziom {Level} {GenderName} {EntityName} {SpecialName} {ClassName}
@@ -1992,8 +1992,8 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},wskrzeszać zmarłych
 FormatText,range {Dice},zakres {Dice}
 FormatText,RANKED #{RankNumber},Miejsce #{RankNumber}
 FormatText,remove transient {PropertyNames},usunąć stan przejściowy {PropertyNames}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
+FormatText,replenish life from {Percent}%,uzupełnij życie z {Percent}%
+FormatText,replenish mana from {Percent}%,uzupełnij manę z {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Zmartwychwstały {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},odwet {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},odwet {Chance} za śmierć {AttackType}
@@ -2013,7 +2013,7 @@ FormatText,unless resists {ElementName},chyba że opiera się {ElementName}
 FormatText,unless target has {PropertyName},chyba że cel posiada {PropertyName}
 FormatText,versus {Something},kontra {Something}
 FormatText,when {Chance},kiedy {Chance}
-FormatText,when {GROUNDNAME},
+FormatText,when {GROUNDNAME},gdy {GROUNDNAME}
 FormatText,when {ITEMNAME},gdy {ITEMNAME}
 FormatText,when {KINDNAMES},gdy {KINDNAMES}
 FormatText,when {MATERIALNAME},gdy {MATERIALNAME}
@@ -2021,11 +2021,11 @@ FormatText,when {PROPERTYNAME},gdy {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},gdy {SANCTITYNAME}
 FormatText,when {Something},gdy {Something}
 FormatText,when {STANDINGNAME},gdy {STANDINGNAME}
-FormatText,when resists {ElementName},
+FormatText,when resists {ElementName},gdy jest odporny na {ElementName}
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Te ciężkie drzwi są wykonane z twardych kryształowych formacji i niełatwo je uszkodzić.
 GateName,crystal door,kryształowe drzwi
-GateName,gold door,
-GateName,iron door,
+GateName,gold door,złote drzwi
+GateName,iron door,żelazne drzwi
 GateName,wooden door,drewniane drzwi
 GenderHimself,herself,się
 GenderHimself,himself,sam
@@ -2042,14 +2042,14 @@ GenderName,non-binary,niebinarna
 GenerationType,module,moduł
 GenerationType,quest,zadanie
 GradeName,artifact,artefakt
-GradeName,exotic,
-GradeName,standard,
+GradeName,exotic,egzotyczne
+GradeName,standard,standardowe
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Chłodna powierzchnia kamienia ma nieskazitelny kunszt ale jest naznaczona uszkodzeniami i czasem.
-GroundName,cave floor,
-GroundName,chasm,Przepaść
+GroundName,cave floor,posadzka jaskini
+GroundName,chasm,przepaść
 GroundName,dirt,klepisko
-GroundName,gold floor,
-GroundName,granite floor,
+GroundName,gold floor,złota posadzka
+GroundName,granite floor,granitowa posadzka
 GroundName,grass,trawa
 GroundName,hive floor,posadzka ula
 GroundName,ice,lód
@@ -2059,8 +2059,8 @@ GroundName,metal floor,metalowa podłoga
 GroundName,moss,mech
 GroundName,obsidian floor,obsydianowa posadzka
 GroundName,sand,piach
-GroundName,sewer floor,
-GroundName,snow,
+GroundName,sewer floor,ściekowa posadzka
+GroundName,snow,śnieg
 GroundName,stone floor,kamienna posadzka
 GroundName,stone path,kamienny korytarz
 GroundName,water,woda
@@ -2069,7 +2069,7 @@ HordeName,ant,mrówka
 HordeName,ape,małpa
 HordeName,bat,nietoperz
 HordeName,bee,pszczoła
-HordeName,beetle,
+HordeName,beetle,chrząszcz
 HordeName,cockroach,karaluch
 HordeName,couatl,couatl
 HordeName,coyote,kojot
@@ -2116,7 +2116,7 @@ ItemDescription,A cloth mask that completely obstructs the wearer's vision.,Mask
 ItemDescription,"A collection of utensils, including empty tins and butchering tools, for packing corpses so as to condense them.","Zbiór przyborów, w tym pustych puszek i narzędzi rzeźnickich, służących do pakowania zwłok w celu ich skondensowania."
 ItemDescription,A compact hand-held firearm.,Kompaktowa broń ręczna.
 ItemDescription,"A curved single-edged blade often used by cavalry, especially effective against creatures of the netherworld.","Zakrzywione, jednosieczne ostrze często używane przez kawalerię, szczególnie skuteczne w walce z istotami z zaświatów."
-ItemDescription,A curved single-edged blade often used by cavalry.,
+ItemDescription,A curved single-edged blade often used by cavalry.,"Zakrzywione, jednosieczne ostrze często używane przez kawalerię."
 ItemDescription,"A curved yellow fruit, and a great source of fibre.","Zakrzywiony, żółty owoc i świetne źródło błonnika."
 ItemDescription,"A flat throwing weapon made of wood, often used for hunting.","Płaska broń miotająca wykonana z drewna, często używana do polowań."
 ItemDescription,"A flat, round cake. Cooked in a pan, as you might presume.","Płaskie, okrągłe ciasto. Gotowane na patelni."
@@ -2230,7 +2230,7 @@ ItemDescription,This powerful magic can be used to create copies of any item.,Ta
 ItemDescription,This ring augments the damage caused by your strikes,Ten pierścień zwiększa obrażenia spowodowane przez twoje uderzenia
 ItemDescription,"This tool is used for digging and chopping, similar to the pick-axe. It has a long handle, and a stout head, which combines an axe blade and an adze. It can also be used as an effective melee weapon.","To narzędzie jest używane do kopania i rąbania, podobne do kilofa. Ma długi trzonek i mocną głowicę, która łączy w sobie ostrze siekiery i siekierę. Może być również używane jako skuteczna broń do walki wręcz."
 ItemDescription,This utility scroll restores some of the charges to your spent wands and tools.,Ten zwój przywraca część ładunków zużytych różdżek i narzędzi.
-ItemDescription,"This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head, and also a hook or spike mounted on the reverse side of the blade.","Ta broń składa się z haczykowatego ostrza tnącego z kilkoma spiczastymi występami zamontowanymi na lasce. Koniec ostrza tnącego wygina się do przodu tworząc hak. Ponadto ostrze ma jeden wyraźny kolec prosto z wierzchołka jak grot włóczni, a także hak lub kolec zamontowany na odwrotnej stronie ostrza."
+ItemDescription,"This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head, and also a hook or spike mounted on the reverse side of the blade.","Ta broń składa się z haczykowatego ostrza tnącego z kilkoma spiczastymi występami zamontowanymi na kosturze. Koniec ostrza tnącego wygina się do przodu tworząc hak. Ponadto ostrze ma jeden wyraźny kolec prosto z wierzchołka jak grot włóczni, a także hak lub kolec zamontowany na odwrotnej stronie ostrza."
 ItemDescription,This weapon consists of a large blade on the end of a long pole. The blade is affixed in a socket-shaft configuration similar to an axe head.,"Broń ta składa się z dużego ostrza umieszczonego na końcu długiego kija. Ostrze jest zamocowane w konfiguracji nasadka-wałek, podobnej do głowicy topora."
 ItemDescription,This weapon consists of a long pole with a mounted a spear head and two projections at its base.,Broń ta składa się z długiego słupa z zamontowaną głowicą włóczni i dwoma występami u jego podstawy.
 ItemDescription,This weapon consists of a single-edged blade on the end of a pole.,Broń ta składa się z jednosiecznego ostrza na końcu kija.
@@ -2240,23 +2240,23 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,Małe metalowe kolce rzucane na ziemię w celu utrudnienia poruszania się
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,"Skrzydlate sandały z nieśmiertelnego złota, które unoszą noszącego szybko i bezszelestnie"
 ItemDescription,Zapping it at a wall creates a big tunnel.,Wystrzelenie go w ścianę tworzy duży tunel
-ItemName,adamantine arrow,
-ItemName,adamantine axe,
-ItemName,adamantine bident,
-ItemName,adamantine bow,
+ItemName,adamantine arrow,adamantowa strzała
+ItemName,adamantine axe,adamantowy topór
+ItemName,adamantine bident,adamantowe widły
+ItemName,adamantine bow,adamantowy łuk
 ItemName,adamantine bullet,
-ItemName,adamantine dagger,
+ItemName,adamantine dagger,adamantowy sztylet
 ItemName,adamantine dart,
-ItemName,adamantine greataxe,
-ItemName,adamantine greatsword,
+ItemName,adamantine greataxe,adamantowy wielki topór
+ItemName,adamantine greatsword,adamantowy wielki miecz
 ItemName,adamantine hatchet,
-ItemName,adamantine long sword,
-ItemName,adamantine plate mail,
-ItemName,adamantine rapier,
-ItemName,adamantine sabre,
-ItemName,adamantine short sword,
-ItemName,adamantine spear,
-ItemName,adamantine two-handed sword,
+ItemName,adamantine long sword,adamantowy długi miecz
+ItemName,adamantine plate mail,adamantowa zbroja płytowa
+ItemName,adamantine rapier,rapier
+ItemName,adamantine sabre,szabla
+ItemName,adamantine short sword,krótki miecz
+ItemName,adamantine spear,włócznia
+ItemName,adamantine two-handed sword,miecz dwuręczny
 ItemName,agate,agat
 ItemName,aklys,aklys
 ItemName,alchemy smock,fartuch alchemiczny
@@ -2291,7 +2291,7 @@ ItemName,banana,banan
 ItemName,banded mail,zbroja kryta
 ItemName,bardiche,berdysz
 ItemName,battle robe,szata bojowa
-ItemName,battle staff,
+ItemName,battle staff,kostur bojowy
 ItemName,battle-axe,topór bojowy
 ItemName,beartrap,pułapka na niedźwiedzie
 ItemName,bec de corbin,bec de corbin
@@ -2379,7 +2379,7 @@ ItemName,brass knuckles,mosiężne kastety
 ItemName,broadsword,pałasz
 ItemName,bronze bell,dzwonek z brązu
 ItemName,bronze plate mail,brązowa zbroja płytowa
-ItemName,Brumstyk,
+ItemName,Brumstyk,Brumstyk
 ItemName,bullet,pocisk
 ItemName,bullwhip,bicz
 ItemName,caltrops,kolce
@@ -2389,7 +2389,7 @@ ItemName,Carapace,Żółwia Zbroja
 ItemName,carrot,marchewka
 ItemName,chain barding,kolczuga końska
 ItemName,chain mail,kolczuga
-ItemName,chakram,
+ItemName,chakram,czakram
 ItemName,Chaoshammer,Młot Chaosu
 ItemName,Chasm Edge,Ostrze Odchłani
 ItemName,cheese,ser
@@ -2415,7 +2415,7 @@ ItemName,crossbow,kusza
 ItemName,crossbow bolt,bełt z kuszy
 ItemName,crysknife,crysknife
 ItemName,crystal ball,kryształowa kula
-ItemName,crystal plate mail,crystal plate mail
+ItemName,crystal plate mail,kryształowa zbroja płytowa
 ItemName,dagger,sztylet
 ItemName,dark elven arrow,strzała mrocznego elfa
 ItemName,dark elven bow,łuk mrocznego elfa
@@ -2435,7 +2435,7 @@ ItemName,dimension key,klucz wymiarowy
 ItemName,Dire Needle,igła kierunków
 ItemName,disencumbrance boots,buty pozbawienia praw
 ItemName,Dragonbane,Zguba Smoków
-ItemName,dread staff,dread staff
+ItemName,dread staff,kostur grozy
 ItemName,Drilanze,Drilanze
 ItemName,drum of earthquake,bęben trzęsienia ziemi
 ItemName,dunce cap,czapka błazna
@@ -2578,16 +2578,16 @@ ItemName,meat stick,kij z mięsa
 ItemName,meatball,kula mięsa
 ItemName,melon,melon
 ItemName,Mirrorbright,Lustrzane odbicie
-ItemName,Miserus,
+ItemName,Miserus,Miserus
 ItemName,mithril arrow,mithrilowa strzała
 ItemName,mithril barding,mithrilowy pancerz
 ItemName,mithril battle-axe,mithrilowy topór bitewny
 ItemName,mithril bullet,mithrilowy nabój
 ItemName,mithril crossbow bolt,mithrilowy bełt do kuszy
 ItemName,mithril dagger,mithrilowy sztylet
-ItemName,mithril dart,
-ItemName,mithril helmet,
-ItemName,mithril katar,mithril kafar
+ItemName,mithril dart,mithrilowa rzutka
+ItemName,mithril helmet,hełm
+ItemName,mithril katar,mithrilowy kafar
 ItemName,mithril lance,mithrilowa lanca
 ItemName,mithril long sword,mithrilowy długi miecz
 ItemName,mithril plate mail,mithrilowa zbroja płytowa
@@ -2602,7 +2602,7 @@ ItemName,mummy wrapping,bandaże mumii
 ItemName,Muramasa,Muramasa
 ItemName,mushroom,grzyb
 ItemName,mute earrings,nieme kolczyki
-ItemName,nunchaku,
+ItemName,nunchaku,nunczako
 ItemName,obsidian,obsydian
 ItemName,oil lamp,lampa oliwna
 ItemName,oilskin cloak,płaszcz z olejnej skóry
@@ -2630,9 +2630,9 @@ ItemName,phantom key,klucz fantomowy
 ItemName,Philosophers Stone,Kamień filozoficzny
 ItemName,pick-axe,kilof
 ItemName,pistol,pistolet
-ItemName,plastic sword,
+ItemName,plastic sword,plastikowy miecz
 ItemName,plate barding,osłona płytowa
-ItemName,plate mail,plate mail
+ItemName,plate mail,zbroja płytowa
 ItemName,poison dart,rzutka z trucizną
 ItemName,porter,portier
 ItemName,potion of acid,eliksir kwasu
@@ -2669,7 +2669,7 @@ ItemName,potion of speed,eliksir szybkości
 ItemName,potion of water,mikstura wody
 ItemName,proof earrings,kolczyki dowodowe
 ItemName,Prudentia,Prudentia
-ItemName,quarterstaff,quarterstaff
+ItemName,quarterstaff,kostur
 ItemName,ranseur,ranseur
 ItemName,rapier,rapier
 ItemName,Ravenbow,łuk kruka
@@ -2720,10 +2720,10 @@ ItemName,rubber hose,wąż gumowy
 ItemName,ruby,rubin
 ItemName,Ruby Key,rubinowy klucz
 ItemName,Runesword,Miecz runiczny
-ItemName,sabre,
+ItemName,sabre,szabla
 ItemName,sack,worek
 ItemName,saddle,siodło
-ItemName,sai,
+ItemName,sai,sai
 ItemName,sandwich,kanapka
 ItemName,sapphire,szafir
 ItemName,sawn-off shotgun,sawn-off shotgun
@@ -2774,7 +2774,7 @@ ItemName,shotgun shell,naboje do shotguna
 ItemName,shuriken,shurikeny
 ItemName,sickle,sierp
 ItemName,silver arrow,srebna strzała
-ItemName,silver axe,
+ItemName,silver axe,srebrny topór
 ItemName,silver bullet,srebny nabój
 ItemName,silver crossbow bolt,srebny bełt
 ItemName,silver dagger,srebny sztylet
@@ -2809,7 +2809,7 @@ ItemName,submachine gun,pistolet maszynowy
 ItemName,Sunsword,Miecz słoneczny
 ItemName,Talaria,Talaria
 ItemName,The Hero,Bohater
-ItemName,thunder staff,obsługa grzmotów
+ItemName,thunder staff,kostur błyskawic
 ItemName,tin,puszka
 ItemName,tin whistle,gwizdek
 ItemName,tinning kit,zestaw do cynowania
@@ -2881,7 +2881,7 @@ ItemName,yellow dragon scales,żółte łuski smoka
 ItemName,yellow glass bauble,bombka z żółtego szkła
 ItemName,yellowish brown glass bauble,bombka szklana żółto-brązowa
 ItemName,yumi,yumi
-ItemName,zircon,
+ItemName,zircon,cyrkonia
 ItemType,amulet,amulet
 ItemType,bag,torba
 ItemType,barding,barding
@@ -2966,13 +2966,13 @@ KindName,mummy,mumia
 KindName,naga,naga
 KindName,ogre,ogr
 KindName,orc,ork
-KindName,plasmoid,
+KindName,plasmoid,plazmoid
 KindName,pudding,pudding
 KindName,quadruped,czworonóg
 KindName,rodent,gryzoń
 KindName,snake,wąż
 KindName,spider,pająk
-KindName,tortle,
+KindName,tortle,żółw
 KindName,trapper,pułapkowicz
 KindName,troll,troll
 KindName,umber,umber
@@ -2997,10 +2997,10 @@ LiteralText,actions,działania
 LiteralText,ADD LEVEL,Dodaj level
 LiteralText,Add new adventurer,Dodaj nowego poszukiwacza przygód
 LiteralText,ADJUST,ADJUST
-LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adjust difficulty,dostosuj poziom trudności
+LiteralText,adventurer,poszukiwacz przygówd
 LiteralText,afflict,dolega
-LiteralText,AFFLICTED,AFFLICTED
+LiteralText,AFFLICTED,CHORY
 LiteralText,affliction?,dolegliwości?
 LiteralText,AFFLICTIONS,DOLEGLIWOŚCI
 LiteralText,alerting,alarmuje
@@ -3013,7 +3013,7 @@ LiteralText,AMBIENT SOUNDS,DŹWIĘKI OTOCZENIA
 LiteralText,amnesia,amnezja
 LiteralText,AMNESIA,AMNESJA
 LiteralText,anatomy,anatomia
-LiteralText,animate mount,
+LiteralText,animate mount,animuje osiodłanie
 LiteralText,animate revenant,animuje zemsta
 LiteralText,ANONYMOUS,ANONIMOWY
 LiteralText,anticlockwise 90 degrees,przeciwnie do ruchu wskazówek zegara 90 stopni
@@ -3117,7 +3117,7 @@ LiteralText,CONCEALED,UKRYTY
 LiteralText,concealing,zakrywanie
 LiteralText,CONDUCT,KONDYCJA
 LiteralText,CONFIRM,POTWIERDŹ
-LiteralText,connect portal,
+LiteralText,connect portal,podłącz portal
 LiteralText,Connect to game hosted by another player.,Połącz się z grą prowadzoną przez innego gracza.
 LiteralText,CONSOLE,KONSOLA
 LiteralText,constructed,zbudowane
@@ -3150,7 +3150,7 @@ LiteralText,create nook,stworzyć zakątek
 LiteralText,CREATE PLATFORM,UTWÓRZ MOST
 LiteralText,CREATE SHOP,STWÓRZ SKLEP
 LiteralText,CREATE SHRINE,STWÓRZ KAPLICĘ
-LiteralText,CREATE VOLATILE,
+LiteralText,CREATE VOLATILE,STWÓRZ ZMIENNĄ
 LiteralText,Create which direction?,Tworzyć w którym kierunku?
 LiteralText,CREDITS,CREDITS
 LiteralText,CROP,CROP
@@ -3183,8 +3183,8 @@ LiteralText,device,urządzenie
 LiteralText,DEVICES,URZĄDZENIA
 LiteralText,devour item,usuń majątek
 LiteralText,DIAGNOSTICS,DIAGNOSTYKA
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,DIALOG
+LiteralText,dialogue?,dialog?
 LiteralText,DID NOT RANK,NIE ZOSTAŁ ZALICZONY
 LiteralText,diet,dieta
 LiteralText,difficulty,trudność
@@ -3197,14 +3197,14 @@ LiteralText,Disable continue button,Wyłączenie przycisku kontynuacji
 LiteralText,disable haptic feedback,Wyłącz informacje zwrotną
 LiteralText,Disable idle animations,Wyłączenie animacji w stanie bezczynności
 LiteralText,Disable introduction boom,Wyłącz belke wprowadzającą
-LiteralText,Disable mask animations,
+LiteralText,Disable mask animations,animacja maski
 LiteralText,Disable online services,Wyłącz usługi online
 LiteralText,Disable pitch shifting,Wyłącz skok wysokości dźwięku
 LiteralText,Disable spacebar real-time toggle,Wyłącz przełączanie spacji w czasie rzeczywistym
-LiteralText,Disable swipe gestures,
+LiteralText,Disable swipe gestures,wyłącz gesty przesuwania
 LiteralText,disarm entity,rozbrój
 LiteralText,DISCONNECT,ROZŁĄCZ
-LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
+LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Utracono połączenie. Upewnij się, że masz dobre połączenie z internetem, wszystkie urzędzenia używają tej samej wersji Pathos."
 LiteralText,discover item,oświecenie
 LiteralText,Discuss on Reddit,Dyskusja na Reddit
 LiteralText,disenchant item,odczarował
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,DRZWI
 LiteralText,double damage when mounted,podwójne obrażenia po osiodłaniu
 LiteralText,downgrade to,obniżenie do
 LiteralText,downloading update,pobieranie aktualizacji
-LiteralText,drain item,
+LiteralText,drain item,opróżnij przedmiot
 LiteralText,drop,rzuć
 LiteralText,DROP,RZUĆ
 LiteralText,DUAL WIELD,POBOCZNE NARZĘDZIE
@@ -3265,8 +3265,8 @@ LiteralText,experience,doświadczenie
 LiteralText,EXPERIENCE,DOŚWIADCZENIE
 LiteralText,explosion,eksplozja
 LiteralText,EXPORT,EXPORT
-LiteralText,extinctions,extinctions
-LiteralText,extinguish,
+LiteralText,extinctions,wymarcie
+LiteralText,extinguish,zgaś
 LiteralText,FAILED,NIEPOWODZENIE
 LiteralText,failed to download,pobieranie zakończone niepowodzeniem
 LiteralText,fame,sława
@@ -3278,7 +3278,7 @@ LiteralText,feature,funkcja
 LiteralText,FEATURES,FUNKCJA
 LiteralText,FEED,OSWÓJ
 LiteralText,FEEDBACK,informacja zwrotna
-LiteralText,Feedback information,
+LiteralText,Feedback information,informacja zwrotna
 LiteralText,FILES,PLIKI
 LiteralText,fixed,naprawione
 LiteralText,fixed range,stały zakres
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,ZDOBYWA LEVEL
 LiteralText,gain nutrition,gain nutrition
 LiteralText,gain skill,zdobywa umiejętność
 LiteralText,gate,brama
-LiteralText,gates,
+LiteralText,gates,bramy
 LiteralText,gather,zebrać
 LiteralText,gender,płeć
 LiteralText,genocide,ludobójstwo
@@ -3325,7 +3325,7 @@ LiteralText,HIDE,UKRYJ
 LiteralText,hiding,ukrycie
 LiteralText,HINT,WSKAZÓWKA
 LiteralText,HIRE,ZATRUDNIJ
-LiteralText,horde,
+LiteralText,horde,horda
 LiteralText,HORDES,HORDY
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Jednakże, możesz chcieć zakończyć swoje przygody przed otrzymaniem aktualizacji."
@@ -3342,7 +3342,7 @@ LiteralText,immunities,immunitety
 LiteralText,impact,uderzenie
 LiteralText,impersonate entity,wciel się w
 LiteralText,IMPORT,IMPORT
-LiteralText,Import a file,
+LiteralText,Import a file,Importuj plik
 LiteralText,IMPOSSIBLE,NIEMOŻLIWE
 LiteralText,in both hands,w obu dłoniach
 LiteralText,incarcerate entity,uwięź
@@ -3355,7 +3355,7 @@ LiteralText,influenced actions,działania pod wpływem
 LiteralText,INSCRIBE,OPIS
 LiteralText,INSCRIBE ITEM,OPIS PRZEDMIOTU
 LiteralText,inscription?,napis
-LiteralText,instruct each character,
+LiteralText,instruct each character,poinstruuj każdą postać
 LiteralText,INSUFFICIENT GOLD,NIEWYSTARCZAJĄCA ILOŚĆ ZŁOTA
 LiteralText,Inventory,Ekwipunek
 LiteralText,INVENTORY,EKWIPUNEK
@@ -3406,7 +3406,7 @@ LiteralText,LOSE LEVEL,TRACISZ POZIOM
 LiteralText,lose nutrition,tracisz odżywienia
 LiteralText,lose skill,TRACISZ UMIEJĘTNOŚĆ
 LiteralText,LOW MANA,MAŁO MANY
-LiteralText,loyal only,
+LiteralText,loyal only,tylko lojalny
 LiteralText,MAIN WIELD,GŁÓWNE NARZĘDZIE
 LiteralText,mana,mana
 LiteralText,MANA,MANA
@@ -3416,7 +3416,7 @@ LiteralText,MAP,MAPA
 LiteralText,mapping,odwzorowanie
 LiteralText,material,materiał
 LiteralText,materials,materiały
-LiteralText,melting,
+LiteralText,melting,topnieje
 LiteralText,MENU,MENU
 LiteralText,mercenary,najemnik
 LiteralText,MIMIC,MIMIC
@@ -3439,13 +3439,13 @@ LiteralText,NAME,NAZWA
 LiteralText,name?,nazwa?
 LiteralText,neutral,neutralny
 LiteralText,never,nigdy
-LiteralText,NEW,
+LiteralText,NEW,NOWY
 LiteralText,no additional effects,brak dodatkowych efektów
 LiteralText,no allies,brak sojuszników
 LiteralText,no ambient sounds,brak dźwięków otoczenia
 LiteralText,No appropriate items available,Brak odpowiednich elementów
 LiteralText,no available knowledge,brak dostępnej wiedzy
-LiteralText,no records found,
+LiteralText,no records found,nie znaleziono wpisów
 LiteralText,no resistances,brak oporów
 LiteralText,no talents,brak talentów
 LiteralText,no transient effects,brak efektów przejściowych
@@ -3454,7 +3454,7 @@ LiteralText,non divined items,przedmioty nie do wynalezienia
 LiteralText,non edible items,artykuły niejadalne
 LiteralText,non enchanted items,nie zaczarowane przedmioty
 LiteralText,normal animations,normalne animacje
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,NIE TERAZ!
 LiteralText,Nothing equipped or carried,Nic nie jest wyposażone ani przewożone
 LiteralText,nothing happens,nic się nie dzieje
 LiteralText,Nothing of interest,Nic ciekawego
@@ -3493,7 +3493,7 @@ LiteralText,platform,platforma
 LiteralText,Play,Odtwórz
 LiteralText,Play a sound effect?,Odtworzyć efekt dźwiękowy?
 LiteralText,PLAYER,GRACZ
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,"Użycie wymuszonego zamknięcia może skutkować uszkodzonym zapisem, który nie będzie mógł być przywrócony."
 LiteralText,Please offer any clarification,Proszę o wszelkie wyjaśnienia
 LiteralText,Please provide your feedback,Proszę przekazać swoją opinię
 LiteralText,Please rotate your device to landscape :-),Proszę obrócić urządzenie do pozycji poziomej :-)
@@ -3504,7 +3504,7 @@ LiteralText,polymorph item,przeobrażenie przedmiot
 LiteralText,polymorph trap,przeobrażenie pułapkę
 LiteralText,POLYMORPHED,POLIMORFOWANY
 LiteralText,portal,portal
-LiteralText,PORTALS,
+LiteralText,PORTALS,PORTALE
 LiteralText,porter,tragarz
 LiteralText,PRAY,MODLITWA
 LiteralText,preservation,konserwacja
@@ -3528,7 +3528,7 @@ LiteralText,RACES,RASY
 LiteralText,random,losowo
 LiteralText,RANDOM,LOSOWO
 LiteralText,random dungeon seed,losowe ziarno lochu
-LiteralText,random level,
+LiteralText,random level,losowy poziom
 LiteralText,random points,losowe punkty
 LiteralText,rank,ranking
 LiteralText,rarity,rzadkość
@@ -3586,14 +3586,14 @@ LiteralText,RETURN,RETURN
 LiteralText,RE-USE,PONOWNE UŻYCIE
 LiteralText,REVEAL,UJAWNIJ
 LiteralText,REVEAL ALL MAPS,POKAŻ WSZYSTKIE MAPY
-LiteralText,REVEAL THIS MAP,
+LiteralText,REVEAL THIS MAP,ODKRYJ TĘ MAPĘ
 LiteralText,revealed,ujawnił
 LiteralText,revenant,
 LiteralText,REVERT,REVERT
 LiteralText,RIGHT RING,PRAWY PIERŚCIEŃ
 LiteralText,rigid,sztywny
 LiteralText,ROTATE,OBRÓĆ
-LiteralText,route entity,
+LiteralText,route entity,obiekt trasy
 LiteralText,rumour,plotki
 LiteralText,sacrifice item,poświęcenie
 LiteralText,SANITY CHECK,KONTROLA STANU ZDROWIA
@@ -3613,8 +3613,8 @@ LiteralText,secret,sekret
 LiteralText,SECRET,SEKRET
 LiteralText,seed,ziarno
 LiteralText,SELECT ATMOSPHERE,WYBIERZ ATMOSFERE
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,wybierz kafelek towarzysza
+LiteralText,Select Hero Tile,wybierz kafelek bohatera
 LiteralText,SELECT ITEM,WYBIERZ PRZEDMIOT
 LiteralText,SELECT LANGUAGE,WYBIERZ JĘZYK
 LiteralText,SELECT MAP,WYBIERZ MAPE
@@ -3622,7 +3622,7 @@ LiteralText,SELECT PORTRAIT,WYBIERZ PORTRET
 LiteralText,SELECT RESIDENT,WYBIERZ MIESZKAŃCA
 LiteralText,SELECT SQUARE,WYBIERZ KWADRAT
 LiteralText,SELECT TILESET,WYBIERZ ZESTAW PŁYTEK
-LiteralText,self,self
+LiteralText,self,sobie
 LiteralText,SELL,SPRZEDAJ
 LiteralText,SELL ALL,SPRZEDAJ WSZYSTKO
 LiteralText,SEND,WYŚLIJ
@@ -3685,7 +3685,7 @@ LiteralText,TAKE,WEŹ
 LiteralText,TAKE ALL,WEŹ WSZYSTKO
 LiteralText,talents,talenty
 LiteralText,TALENTS,TALENTY
-LiteralText,TALK,
+LiteralText,TALK,ROZMAWIAJ
 LiteralText,target,cel
 LiteralText,TELEKINESIS,TELEKINEZA
 LiteralText,Telekinesis which direction?,W którym kierunku użyć telekinezy?
@@ -3723,7 +3723,7 @@ LiteralText,transients,stany przejściowe
 LiteralText,TRANSIENTS,EFEKTY
 LiteralText,transition,przejście
 LiteralText,TRANSLATIONS,TŁUMACZENIA
-LiteralText,transport entity,
+LiteralText,transport entity,obiekt transportu
 LiteralText,TRAP,PUŁAPKA
 LiteralText,trap?,pułapka?
 LiteralText,trapped,uwięziony
@@ -3753,7 +3753,7 @@ LiteralText,unpolymorph,depolimorfizuje
 LiteralText,unpunish,wyzwala się z kary
 LiteralText,unskilled,niewykwalifikowany
 LiteralText,UNSKILLED,NIEWYKWALIFIKOWANY
-LiteralText,unstuck,
+LiteralText,unstuck,odblokowany
 LiteralText,UNTRAP,ROZBROIĆ
 LiteralText,UNTRAPPED,ROZBROIĆ
 LiteralText,update available,dostępna aktualizacja
@@ -3771,9 +3771,9 @@ LiteralText,visit shrine,odzwiedź kaplicę
 LiteralText,Visit the website,Odwiedź stronę
 LiteralText,visit zoo,odwiedzić zoo
 LiteralText,VOID SPACE,PUSTA PRZESTRZEŃ
-LiteralText,volatile,
-LiteralText,VOLATILES,
-LiteralText,vomit nutrition,
+LiteralText,volatile,zmienna
+LiteralText,VOLATILES,ZMIENNE
+LiteralText,vomit nutrition,zwróć jedzenei
 LiteralText,vulnerable to,narażony na
 LiteralText,WAIT,CZEKAJ
 LiteralText,Wait how many turns?,Ile tur poczekać?
@@ -3783,8 +3783,8 @@ LiteralText,was killed,został zabity
 LiteralText,weakness to,osłabienie
 LiteralText,weight,waga
 LiteralText,when afflicted,gdy dotknięty
-LiteralText,when animated,
-LiteralText,when confused,
+LiteralText,when animated,gdy animowany
+LiteralText,when confused,gdy zdezorientowany
 LiteralText,when dropped,gdy upuszczony
 LiteralText,when entered,gdy otwarty
 LiteralText,when exhausted,po wyczerpaniu
@@ -3802,7 +3802,7 @@ LiteralText,Your current movement and action speed in squares per second.,Twoja 
 LiteralText,ZOOM,ZBLIŻENIE
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
-LocalityName,area,
+LocalityName,area,obszar
 LocalityName,level,poziom
 LocalityName,map,mapa
 LocalityName,site,strona
@@ -3948,70 +3948,70 @@ ModuleTerm,Ludios Cache,Pamięć podręczna Ludiosa
 ModuleTerm,Medusa Lair,Legowisko Meduzy
 ModuleTerm,Mines,Kopalnia
 ModuleTerm,Minetown,Minetown
-ModuleTerm,Moss Pit,
+ModuleTerm,Moss Pit,Dziura Mchu
 ModuleTerm,Opus,
-ModuleTerm,Orange Lair,
-ModuleTerm,Outpost,
-ModuleTerm,Overland,
-ModuleTerm,Pig Farm,
-ModuleTerm,Prison,
+ModuleTerm,Orange Lair,Pomarańczowe Legowisko
+ModuleTerm,Outpost,Placówka
+ModuleTerm,Overland,Ląd
+ModuleTerm,Pig Farm,Świńska Farma
+ModuleTerm,Prison,Więzienie
 ModuleTerm,Pudding Pit,
-ModuleTerm,Rat Pit,
-ModuleTerm,Rebirth,
-ModuleTerm,Red Lair,
-ModuleTerm,Respite,
-ModuleTerm,River,
-ModuleTerm,Ruby Mine,
-ModuleTerm,Ruins,
-ModuleTerm,Rupture,
-ModuleTerm,Sapphire Mine,
-ModuleTerm,Scorpion Cave,
-ModuleTerm,Scorpion Lair,
-ModuleTerm,Scorpion Nest,
-ModuleTerm,Seal Farm,
-ModuleTerm,Sewers,
-ModuleTerm,Sheep Farm,
-ModuleTerm,Shimmer Lair,
-ModuleTerm,Shroom Maze,
-ModuleTerm,Slime Pit,
-ModuleTerm,Snake Pit,
+ModuleTerm,Rat Pit,Dół Szczurów
+ModuleTerm,Rebirth,Odrodzenie
+ModuleTerm,Red Lair,Czerwone Legowisko
+ModuleTerm,Respite,Wytchnienie
+ModuleTerm,River,Rzeka
+ModuleTerm,Ruby Mine,Kopalnia Rubinu
+ModuleTerm,Ruins,Ruiny
+ModuleTerm,Rupture,Pęknięcie
+ModuleTerm,Sapphire Mine,Kopalnia Szafiru
+ModuleTerm,Scorpion Cave,Jaskinia Skorpionów
+ModuleTerm,Scorpion Lair,Legowisko Skorpionów
+ModuleTerm,Scorpion Nest,Gniazdo Skorpionów
+ModuleTerm,Seal Farm,Focza Farma
+ModuleTerm,Sewers,Kanały
+ModuleTerm,Sheep Farm,Owcza Farma
+ModuleTerm,Shimmer Lair,Dół Migotania
+ModuleTerm,Shroom Maze,Labirynt Grzybów
+ModuleTerm,Slime Pit,Dół Szlamu
+ModuleTerm,Snake Pit,Dół Węży
 ModuleTerm,Sokoban,Sokoban
-ModuleTerm,Spider Cave,
-ModuleTerm,Spider Lair,
-ModuleTerm,Spider Nest,
-ModuleTerm,Station,
-ModuleTerm,Statue Henge,
-ModuleTerm,Stone Henge,
-ModuleTerm,Stonetown,
-ModuleTerm,strange chicken,
-ModuleTerm,strange cow,
-ModuleTerm,Strange Farm,
-ModuleTerm,strange goat,
-ModuleTerm,strange horse,
-ModuleTerm,strange pig,
-ModuleTerm,strange seal,
-ModuleTerm,strange sheep,
+ModuleTerm,Spider Cave,Jaskinia Pająków
+ModuleTerm,Spider Lair,Legowisko Pająków
+ModuleTerm,Spider Nest,Gniazdo Pająków
+ModuleTerm,Station,Stacja
+ModuleTerm,Statue Henge,Posąg Kręgu
+ModuleTerm,Stone Henge,Kamienny Krąg
+ModuleTerm,Stonetown,Miasto Kamieni
+ModuleTerm,strange chicken,dziwny kurczak
+ModuleTerm,strange cow,dziwna krowa
+ModuleTerm,Strange Farm,Dziwna Farma
+ModuleTerm,strange goat,dziwna koza
+ModuleTerm,strange horse,dziwny koń
+ModuleTerm,strange pig,dziwna świnia
+ModuleTerm,strange seal,dziwna foka
+ModuleTerm,strange sheep,dziwnca owca
 ModuleTerm,To complete this game you need to escape the dungeon on the first level.,"Aby ukończyć tę grę, musisz uciec z lochu na pierwszym poziomie."
 ModuleTerm,To complete this game you need to escape through the final rift.,Aby ukończyć tę grę musisz uciec przez końcowy rift.
 ModuleTerm,To complete this game you need to escape through the final transportal.,Aby ukończyć tę grę musisz uciec przez końcowy transportal.
-ModuleTerm,Topaz Mine,
-ModuleTerm,Tree Maze,
-ModuleTerm,trove,trove
+ModuleTerm,Topaz Mine,Kopalnia Topazu
+ModuleTerm,Tree Maze,Labirynt Drzew
+ModuleTerm,trove,skarbnica
 ModuleTerm,Underbarracks,Podkoszary
-ModuleTerm,Underground,
+ModuleTerm,Underground,Podziemia
 ModuleTerm,Underlimits,Podlimity
 ModuleTerm,Underpeaks,Underpeaks
 ModuleTerm,Undertown,Pod miastem
-ModuleTerm,White Lair,
-ModuleTerm,Woodtown,
-ModuleTerm,Worm Pit,
-ModuleTerm,Yellow Lair,
+ModuleTerm,White Lair,Biała Jama
+ModuleTerm,Woodtown,Drewniane Miasto
+ModuleTerm,Worm Pit,Dół Robaków
+ModuleTerm,Yellow Lair,Źółta Jama
 MotionPastName,anointed,namaszczony
 MotionPastName,ate,zjadł
 MotionPastName,captured,złapany
 MotionPastName,chanted,skandował
 MotionPastName,constructed,zbudował
-MotionPastName,copied,
+MotionPastName,copied,skopiował
 MotionPastName,dipped,zanurzony
 MotionPastName,divined,wynaleziono
 MotionPastName,drank,pił z
@@ -4020,7 +4020,7 @@ MotionPastName,emptied,opróżniony
 MotionPastName,exchanged,wymieniono
 MotionPastName,flashed,błysnął
 MotionPastName,inscribed,z napisem
-MotionPastName,mounted,
+MotionPastName,mounted,osiodłał
 MotionPastName,opened,otwarty
 MotionPastName,packed,pakowane
 MotionPastName,played,grał
@@ -4045,7 +4045,7 @@ MotionPresentName,anoint,namaścić
 MotionPresentName,capture,przechwytywanie
 MotionPresentName,chant,chorał
 MotionPresentName,construct,zbudować
-MotionPresentName,copy,
+MotionPresentName,copy,kopiować
 MotionPresentName,dig,rozkop
 MotionPresentName,dip,wrzuć
 MotionPresentName,divine,złóż w ofierze
@@ -4055,7 +4055,7 @@ MotionPresentName,empty,pusty
 MotionPresentName,exchange,wymiana
 MotionPresentName,flash,błysk
 MotionPresentName,inscribe,napisać
-MotionPresentName,mount,
+MotionPresentName,mount,osiodłać
 MotionPresentName,open,otwórz
 MotionPresentName,pack,opakowanie
 MotionPresentName,play,odtwórz
@@ -4173,7 +4173,7 @@ PropertyName,free action,swobodne działanie
 PropertyName,fumbling,dymiący
 PropertyName,hallucination,halucynacje
 PropertyName,hunger,głód
-PropertyName,inebriation,
+PropertyName,inebriation,upojenie
 PropertyName,invisibility,niewidzialność
 PropertyName,jumping,skok
 PropertyName,levitation,lewitacja
@@ -4298,15 +4298,15 @@ RaceName,ogre//non-binary,ogr
 RaceName,orc//female,ork
 RaceName,orc//male,ork
 RaceName,orc//non-binary,ork
-RaceName,plasmoid//female,
-RaceName,plasmoid//male,
-RaceName,plasmoid//non-binary,
+RaceName,plasmoid//female,plazmoid
+RaceName,plasmoid//male,plazmoid
+RaceName,plasmoid//non-binary,plazmoid
 RaceName,satyr//female,satyr
 RaceName,satyr//male,satyr
 RaceName,satyr//non-binary,satyr
-RaceName,tortle//female,
-RaceName,tortle//male,
-RaceName,tortle//non-binary,
+RaceName,tortle//female,żółwica
+RaceName,tortle//male,żółw
+RaceName,tortle//non-binary,żółw
 RaceName,troll//female,troll
 RaceName,troll//male,troll
 RaceName,troll//non-binary,troll
@@ -4374,7 +4374,7 @@ RumourTrueMessage,Is that a scroll in your pocket or are you just happy to tame 
 RumourTrueMessage,It wasn't luck; it is only karma.,"To nie było szczęście, to tylko karma."
 RumourTrueMessage,Jelly can give you heartburn.,Galaretka może powodować zgagę.
 RumourTrueMessage,Keep enchanted items away from disenchanter.,Trzymaj zaczarowane przedmioty z dala od disenchantera.
-RumourTrueMessage,Kobolds have nice darts.,Koboldy mają niezłe lotki.
+RumourTrueMessage,Kobolds have nice darts.,Koboldy mają niezłe rzutki.
 RumourTrueMessage,Lost your pet? Try whistling for it.,Zgubiłeś swojego zwierzaka? Spróbuj do niego zagwizdać.
 RumourTrueMessage,Never trust a Nymph.,Nigdy nie ufaj Nimfie.
 RumourTrueMessage,Never turn a blind eye to carrots.,Nigdy nie należy przymykać oczu na marchewkę.
@@ -4446,8 +4446,8 @@ SkillName,club,pałka
 SkillName,conjuration,zaklinanie
 SkillName,crafting,tworzenie
 SkillName,crossbow,kusza
-SkillName,dart,strzałki
-SkillName,disc,
+SkillName,dart,rzutka
+SkillName,disc,dysk
 SkillName,divination,poznanie
 SkillName,dual wielding,dwuręczność
 SkillName,enchantment,zaczarowania
@@ -4472,7 +4472,7 @@ SkillName,polearm,broń drzewcowa
 SkillName,riding,jeździectwo
 SkillName,sling,proca
 SkillName,spear,włócznia
-SkillName,staff,kij
+SkillName,staff,kostur
 SkillName,swimming,pływanie
 SkillName,transmutation,przemiany
 SkillName,traps,pułapki
@@ -4480,13 +4480,13 @@ SkillName,unarmed combat,pięści
 SkillName,whip,bicz
 SonicName,ammo,amunicja
 SonicName,amulet,amulet
-SonicName,arf,
+SonicName,arf,arf
 SonicName,armour,zbroja
 SonicName,baa,baa
-SonicName,bars raising,
-SonicName,bars slamming,
+SonicName,bars raising,podnoszące się kraty
+SonicName,bars slamming,zatrzaskujące się kraty
 SonicName,bell,dzwonek
-SonicName,birds,
+SonicName,birds,ptaki
 SonicName,bleat,beczenie
 SonicName,blink,migotanie
 SonicName,book,książka
@@ -4499,16 +4499,16 @@ SonicName,broken lock,zepsuty zamek
 SonicName,bugle,hejnał
 SonicName,burble,burknąć
 SonicName,burn,oparzenie
-SonicName,buzz,buzz
-SonicName,cackle,cackle
-SonicName,chains,
+SonicName,buzz,brzęcznie
+SonicName,cackle,rechot
+SonicName,chains,łancuchy
 SonicName,chant,chorał
 SonicName,chime,gong
 SonicName,chirp,ćwierkanie
-SonicName,clank,clank
+SonicName,clank,brzęk
 SonicName,close door,zamknięte drzwi
-SonicName,cluck,cluck
-SonicName,clunk,
+SonicName,cluck,gdakanie
+SonicName,clunk,stukot
 SonicName,coins,monety
 SonicName,conclusion,wniosek
 SonicName,craft,rzemiosło
@@ -4516,13 +4516,13 @@ SonicName,creak,skrzypienie
 SonicName,crumble,kruszonka
 SonicName,death,śmierć
 SonicName,dice,kostka
-SonicName,drips,
+SonicName,drips,kapanie
 SonicName,drum,bęben
 SonicName,eat,zjedz
 SonicName,electricity,energia elektryczna
 SonicName,explosion,eksplozja
-SonicName,fizzle,fizzle
-SonicName,flash,flash
+SonicName,fizzle,syczenie
+SonicName,flash,iskrzenie
 SonicName,flute,flet
 SonicName,food,żywność
 SonicName,footsteps,ślady
@@ -4538,9 +4538,9 @@ SonicName,gem,gem
 SonicName,gibber,gibber
 SonicName,giggle,chichot
 SonicName,groan,jęk
-SonicName,growl,growl
-SonicName,grumble,grumble
-SonicName,grunt,grunt
+SonicName,growl,ryk
+SonicName,grumble,zrzędzenie
+SonicName,grunt,burknięcie
 SonicName,harp,harfa
 SonicName,hiss,syczenie
 SonicName,hit,uderzenie
@@ -4552,7 +4552,7 @@ SonicName,kick,kopnięcie
 SonicName,launch grenade,granat
 SonicName,launch rocket,rakieta
 SonicName,leather,skóra
-SonicName,leaves,
+SonicName,leaves,liście
 SonicName,lit fuse,zapalony bezpiecznik
 SonicName,locked,zamknięte
 SonicName,long tap,długi kran
@@ -4581,10 +4581,10 @@ SonicName,rifle burst,wybuch karabinu
 SonicName,rifle shot,strzał z karabinu
 SonicName,ring,pierścień
 SonicName,roar,ryk
-SonicName,roars,
+SonicName,roars,ryki
 SonicName,scrap,złom
 SonicName,scrape,zadrapanie
-SonicName,scrapes,
+SonicName,scrapes,zadrapania
 SonicName,scroll,zwój
 SonicName,scuttle,łopatka
 SonicName,sever,surowy
@@ -4603,11 +4603,11 @@ SonicName,splat,splat
 SonicName,squall,squall
 SonicName,squawk,squawk
 SonicName,squeak,piszczeć
-SonicName,squeaks,
+SonicName,squeaks,piszczy
 SonicName,squeal,pisk
 SonicName,swallow,połknięcie
 SonicName,switch,przełącznik
-SonicName,taps,
+SonicName,taps,krany
 SonicName,teleport,teleport
 SonicName,throne,tron
 SonicName,throw grenade,rzucić granat
@@ -4642,22 +4642,22 @@ SpecialDescription,"Highly attuned servants of elemental water, they can conjure
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Całe życie studiów skupiło Twoją naukę na książkach kosztem innych zainteresowań i sprawności fizycznej.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Syndrom głównego bohatera zaowocował poleganiem na zbroi fabularnej, ale są one przeznaczone do poważnego sprawdzenia rzeczywistości."
 SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Wyrzeźbione z żywego szkła, które odbija energię i tworzy perfekcyjne, lecz delikatne odbicia swojego odpowiednika."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","W jakiś sposób wciąż żywy, choć bez ciała wymaganego do prawdziwego życia, ta osobliwa egzystencja ma pewne zalety."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Pijacy są bezczelnymi, ale niestabilnym poszukiwaczami przygód. Tylko nie pytajcie ich o wyrecytowanie alfabetu od tyłu."
 SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Niezależnie od tego, czy są niewinni czy winni zarzucanych im przestępstw, osoby te są zdesperowane, by uciec z aresztu."
 SpecialName,colossus,kolos
-SpecialName,drunkard,
+SpecialName,drunkard,pijak
 SpecialName,earth,ziemia
 SpecialName,flame,płomień
 SpecialName,frost,mróz
 SpecialName,fugitive,uciekinier
-SpecialName,glass,
+SpecialName,glass,szklany
 SpecialName,midget,karłówka
 SpecialName,noble,szlachetny
 SpecialName,protagonist,protagonista
 SpecialName,psychic,medium
-SpecialName,quantum,
+SpecialName,quantum,kwantowy
 SpecialName,scholar,naukowiec
 SpecialName,shock,wstrząs
 SpecialName,skeleton,szkielet
@@ -4772,11 +4772,11 @@ TraversalPastName,travelled,udał się
 TraversalPresentName,ascend,wejdź na stronę
 TraversalPresentName,descend,schodzić
 TraversalPresentName,travel,podróż
-VolatileName,blaze,
-VolatileName,blood,
-VolatileName,electricity,
-VolatileName,freeze,
-VolatileName,steam,
+VolatileName,blaze,płomień
+VolatileName,blood,krew
+VolatileName,electricity,elektryczność
+VolatileName,freeze,mróz
+VolatileName,steam,para
 WallStructureName,illusionary,iluzja
 WallStructureName,permanent,stała
 WallStructureName,solid,solidna

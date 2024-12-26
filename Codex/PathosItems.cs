@@ -12783,6 +12783,7 @@ namespace Pathos
       adamantine_dart = AddThrownMissile(Ammunition.Dart, "adamantine dart", I =>
       {
         I.Description = null;
+        I.Grade = Grades.exotic;
         I.Glyph = Glyphs.adamantine_dart;
         I.Sonic = Sonics.weapon;
         I.Series = null;
@@ -14866,6 +14867,7 @@ namespace Pathos
       {
         I.Description = null;
         I.SetAppearance("adamantine slug", null);
+        I.Grade = Grades.exotic;
         I.Glyph = Glyphs.adamantine_bullet;
         I.Sonic = Sonics.ammo;
         I.Series = null;

@@ -9013,7 +9013,7 @@ H-----------H
                         var LinkY = Math.Max(SectorRegion.Top, NextY) + 1;
 
                         NextSectorRegion = new Region(NextX, NextY, NextX + NextWidth - 1, NextY + NextHeight - 1);
-                        NextLinkRegion = new Region(LinkX, LinkY, LinkX, LinkY + Math.Min(NextY + NextHeight - 1, SectorRegion.Bottom) - LinkY - 1);
+                        NextLinkRegion = new Region(LinkX, LinkY, LinkX, Math.Min(NextY + NextHeight - 1, SectorRegion.Bottom) - 1);
                       }
                       break;
 
@@ -9026,7 +9026,7 @@ H-----------H
                         var LinkY = Math.Max(SectorRegion.Top, NextY) + 1;
 
                         NextSectorRegion = new Region(NextX, NextY, NextX + NextWidth - 1, NextY + NextHeight - 1);
-                        NextLinkRegion = new Region(LinkX, LinkY, LinkX, LinkY + Math.Min(NextY + NextHeight - 1, SectorRegion.Bottom) - LinkY - 1);
+                        NextLinkRegion = new Region(LinkX, LinkY, LinkX, Math.Min(NextY + NextHeight - 1, SectorRegion.Bottom) - 1);
                       }
                       break;
 
@@ -9039,7 +9039,7 @@ H-----------H
                         var LinkY = SectorRegion.Top;
 
                         NextSectorRegion = new Region(NextX, NextY, NextX + NextWidth - 1, NextY + NextHeight - 1);
-                        NextLinkRegion = new Region(LinkX, LinkY, LinkX + Math.Min(SectorRegion.Right, NextX + NextWidth - 1) - LinkX - 1, LinkY);
+                        NextLinkRegion = new Region(LinkX, LinkY, Math.Min(SectorRegion.Right, NextX + NextWidth - 1) - 1, LinkY);
                       }
                       break;
 
@@ -9052,7 +9052,7 @@ H-----------H
                         var LinkY = SectorRegion.Bottom;
 
                         NextSectorRegion = new Region(NextX, NextY, NextX + NextWidth - 1, NextY + NextHeight - 1);
-                        NextLinkRegion = new Region(LinkX, LinkY, LinkX + Math.Min(SectorRegion.Right, NextX + NextWidth - 1) - LinkX - 1, LinkY);
+                        NextLinkRegion = new Region(LinkX, LinkY, Math.Min(SectorRegion.Right, NextX + NextWidth - 1) - 1, LinkY);
                       }
                       break;
 
@@ -9081,7 +9081,8 @@ H-----------H
         }
         while (GenerationIndex < GenerationLimit && MaximumDistance < CriticalDistance);
 
-        Debug.Assert(GenerationIndex < GenerationLimit, "Exceeded generation limit.");
+        if (Inv.Assert.IsEnabled)
+          Inv.Assert.Check(GenerationIndex < GenerationLimit, "Exceeded generation limit.");
 
         return Result;
       }
@@ -9179,7 +9180,7 @@ H-----------H
         var MinTop = SectorList.Min(A => A.Region.Top);
         var MaxRight = SectorList.Max(A => A.Region.Right);
         var MaxBottom = SectorList.Max(A => A.Region.Bottom);
-        Debug.WriteLine($"{MinLeft}, {MinTop}, {MaxRight}, {MaxBottom}");
+        //Debug.WriteLine($"{MinLeft}, {MinTop}, {MaxRight}, {MaxBottom}");
 
         // NOTE: we want a 1 square empty border around the entire map.
         var ShiftX = -MinLeft + 1;
