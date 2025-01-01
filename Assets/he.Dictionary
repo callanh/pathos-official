@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,חלי�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,חליפת שריון מיתריל דקה ועדינה למראה.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,חליפת שריון מיתריל דקה ומבריקה.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,אביזר הקוסמים הקלאסי הזה הוא כובע מחודד מעוטר בירחים וכוכבים.
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,חשופית אדמנטיט
 AppearanceName,adamantine staff,מטה אדמנטיט
 AppearanceName,agate ring,טבעת ברקת
 AppearanceName,aluminium wand,שרביט אלומיניום
@@ -1954,7 +1954,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},המ
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},המרת דלת {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},המרת רצפה {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},המרת נזילה {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},המרת {StockName} {QualifierText} ל{ItemNames}
 FormatText,cripple {AttributeName},פגיעה ב{AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},ירידה של {AttributeName} ב{AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},ירידה של כל היכולות ב{AdjustmentDice}
@@ -2244,15 +2244,15 @@ ItemName,adamantine arrow,חץ אדמנטיט
 ItemName,adamantine axe,גרזן אדמנטיט
 ItemName,adamantine bident,דו-שן אדמנטיט
 ItemName,adamantine bow,קשת אדמנטיט
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,כדור אדמנטיט
 ItemName,adamantine dagger,פגיון אדמנטיט
-ItemName,adamantine dart,
+ItemName,adamantine dart,חץ מטרה מאדמנטיט
 ItemName,adamantine greataxe,גרזן אדיר
 ItemName,adamantine greatsword,חרב אדירה
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,קרדום אדמנטיט
 ItemName,adamantine long sword,חרב ארוכה מאדמנטיט
 ItemName,adamantine plate mail,שריון לוחות מאדמנטיט
-ItemName,adamantine rapier,רפייר מאדמנטיט
+ItemName,adamantine rapier,רפייר אדמנטיט
 ItemName,adamantine sabre,סייף פרשים מאדמנטייט
 ItemName,adamantine short sword,חרב קצרה מאדמנטיט
 ItemName,adamantine spear,חנית אדמנטיט
@@ -2997,8 +2997,8 @@ LiteralText,actions,פעולות
 LiteralText,ADD LEVEL,הוספת רמה
 LiteralText,Add new adventurer,הוספת דמות חדשה
 LiteralText,ADJUST,תיקון
-LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adjust difficulty,תיקון רמת קושי
+LiteralText,adventurer,דמות
 LiteralText,afflict,צרה
 LiteralText,AFFLICTED,בצרה
 LiteralText,affliction?,צרה?
@@ -3150,7 +3150,7 @@ LiteralText,create nook,יצירת פינה
 LiteralText,CREATE PLATFORM,ליצור גשר
 LiteralText,CREATE SHOP,ליצור חנות
 LiteralText,CREATE SHRINE,ליצור מקדש
-LiteralText,CREATE VOLATILE,ליצור דליפה
+LiteralText,CREATE VOLATILE,ליצור מפגע זמני
 LiteralText,Create which direction?,ליצור באיזה כיוון?
 LiteralText,CREDITS,קרדיטים
 LiteralText,CROP,חיתוך
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,דלת
 LiteralText,double damage when mounted,פגיעה כפולה ברכיבה
 LiteralText,downgrade to,שינמוך ל
 LiteralText,downloading update,הורדת עדכון
-LiteralText,drain item,
+LiteralText,drain item,שאיבת חפץ
 LiteralText,drop,להפיל
 LiteralText,DROP,להפיל
 LiteralText,DUAL WIELD,נשק ביד השנייה
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,תוספת רמה
 LiteralText,gain nutrition,תוספת תזונה
 LiteralText,gain skill,תוספת כישורים
 LiteralText,gate,שער
-LiteralText,gates,
+LiteralText,gates,שערים
 LiteralText,gather,איסוף
 LiteralText,gender,מגדר
 LiteralText,genocide,רצח עם
@@ -3325,7 +3325,7 @@ LiteralText,HIDE,להסתיר
 LiteralText,hiding,להסתתר
 LiteralText,HINT,רמז
 LiteralText,HIRE,להעסיק
-LiteralText,horde,
+LiteralText,horde,נחיל
 LiteralText,HORDES,נחילים
 LiteralText,HOST,מארח
 LiteralText,"However, you may want to complete your adventures before receiving the update.","יחד עם זאת, אולי עדיף לך להשלים את ההרפתקה לפני קבלת העדכון."
@@ -3454,7 +3454,7 @@ LiteralText,non divined items,חפצים במצב לא ידוע
 LiteralText,non edible items,פריטים לא אכילים
 LiteralText,non enchanted items,פריטים לא קסומים
 LiteralText,normal animations,אנימציה רגילה
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,לא עכשיו!
 LiteralText,Nothing equipped or carried,אין עליך חפצים
 LiteralText,nothing happens,כלום לא קורה
 LiteralText,Nothing of interest,שום דבר מעניין
@@ -3498,10 +3498,10 @@ LiteralText,Please offer any clarification,נא להסביר
 LiteralText,Please provide your feedback,נא לשלוח משוב
 LiteralText,Please rotate your device to landscape :-),נא להעביר את המכשיר למצב אופקי :-)
 LiteralText,POLYMORPH,לשנות צורה
-LiteralText,polymorph entity,
+LiteralText,polymorph entity,שינוי צורה של יישות
 LiteralText,Polymorph into what?,לשנות צורה למה?
-LiteralText,polymorph item,
-LiteralText,polymorph trap,
+LiteralText,polymorph item,שינוי צורה של חפץ
+LiteralText,polymorph trap,שינוי צורה של מלכודת
 LiteralText,POLYMORPHED,במצב שינוי צורה
 LiteralText,portal,מעבר
 LiteralText,PORTALS,מעברים
@@ -3528,7 +3528,7 @@ LiteralText,RACES,גזעים
 LiteralText,random,אקראי
 LiteralText,RANDOM,אקראי
 LiteralText,random dungeon seed,גרעין אקראי של מבוך
-LiteralText,random level,
+LiteralText,random level,קומה אקראית
 LiteralText,random points,נקודות אקראיות
 LiteralText,rank,דרגה
 LiteralText,rarity,נדירות
@@ -3593,7 +3593,7 @@ LiteralText,REVERT,לחזור
 LiteralText,RIGHT RING,טבעת ימין
 LiteralText,rigid,במצב נוקשה
 LiteralText,ROTATE,לסובב
-LiteralText,route entity,
+LiteralText,route entity,תוואי דרך
 LiteralText,rumour,שמועה
 LiteralText,sacrifice item,הקרבה
 LiteralText,SANITY CHECK,בדיקת שפיות
@@ -3723,7 +3723,7 @@ LiteralText,transients,השפעות זמניות
 LiteralText,TRANSIENTS,השפעות זמניות
 LiteralText,transition,מעבר
 LiteralText,TRANSLATIONS,תרגומים
-LiteralText,transport entity,
+LiteralText,transport entity,תוואי שיגור
 LiteralText,TRAP,מלכודת
 LiteralText,trap?,מלכודת?
 LiteralText,trapped,עם מלכודת
@@ -3771,8 +3771,8 @@ LiteralText,visit shrine,ביקור במקדש
 LiteralText,Visit the website,לבקר באתר
 LiteralText,visit zoo,ביקור בגן חיות
 LiteralText,VOID SPACE,חלל ריק
-LiteralText,volatile,
-LiteralText,VOLATILES,נדיפים
+LiteralText,volatile,מפגע זמני
+LiteralText,VOLATILES,מפגעים זמניים
 LiteralText,vomit nutrition,הקאה
 LiteralText,vulnerable to,פגיעות ל
 LiteralText,WAIT,לחכות
@@ -3848,33 +3848,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,מפות שצויירו ביד בהרפתקה אפית מעל פני האדמה. הדמות שלך יכולה להתרענן מהמבוכים המחניקים ולצאת להרפתקה מאתגרת.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"חדרים וסודות מעניינים מחכים לך, אבל אסור לך להתמהמה. הדמות שלך חייבת להמשיך לרדת או שהיא תמות. מבוסס על בניית המפה של שאטרד פיקסל דאנג'ן."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","ארגז חול שאפשר להתנסות בו במכניקה של פאתוס, ולשחק עם כל חפץ, מלכודת ומתקן של המבוך במפה פשוטה של שני חדרים."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,יש לך חדשות מהעולם שלמעלה? הייתי כאן למטה כל כך הרבה זמן וחסרים לי השמש ומזג האוויר
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,ידעת שחצי מהסחורה שמוכרים בחנויות מגיעה מגופות של הרפתקנים כמוך?
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,כולם מדברים על פלישת אורקים אבל לדעתי זה לא יקרה לעולם.
+ModuleDialogue,Goodbye.,להתראות.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,שמת לב שמסתובבים כאן יותר מדי גנומים?
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,לא יאמן שצריך להסביר לך את זה אבל חשוב שיהיה לך מכוש לפני הכניסה למכרות. אפשר גם להכין מכוש באחד משולחנות העבודה בעיר אם יש לך הרבה גרוטאות ברזל.
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","לא ברור לי למה הרפתקנים חושבים שהם יכולים לירות, לירות, לירות את החיצים שלהם בכל העיר. נמאס לנו מזה, אז אפילו פגיעה של חץ תועה באחד התושבים שלנו תיענה בכוח קטלני."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","בחיי שהרפתקנים מבשרים רק רעות! בכל פעם שאחד מהמטומטמים האלה מגיע לכאן, אנחנו מאבדים עשרות אנשים."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,התעייפתי וכואבות לי הרגליים! הלוואי שהמשמרת הזאת תיגמר ואוכל ללכת לישון.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",השמועות מספרות שמתחת למכרות הגנומים יש עיר של גמדים. זה לא מסע שארצה לעשות - יש שם יותר מדי אנשים נמוכים ומסריחים לטעמי.
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","חשוב לשים לב לקירות מערה שהם בעצם אשליה, כי הקוסמים הגנומים המעצבנים האלה עבדו שם קשה לאחרונה. טפילים מוחלטים, כולם."
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,חשוב לסחור עם אנשי העיר ולתמוך בכלכלה המקומית! אבל לא מומלץ לעשות את זה על קיבה ריקה.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","לפעמים, גיבורים חזקים ומפורסמים מארצות הניכר מכבדים אותנו בנוכחותם... אספר לך אם אראה אחד כזה היום."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,פנו דרך! אני במשמרת חשובה והרפתקנים כמוך תמיד חוסמים לי את הדרך.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","ה**אורקל** נועצת בך מבט ארוך של רחמים שקטים, ומבטה העצוב מעורר בך חוסר מנוחה.||נראה שהגורל מתכנן לך משהו מאוד *לא נעים*."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,האוכל כאן כל כך גרוע. למה לדעתך אנחנו הורגים מפלצות ולמה לדעתך אנחנו משתמשים בשולחן העבודה שבאמצע העיר?
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,המכרות מסוכנים להרפתקנים בודדים. כדאי לך לשקול להעסיק שכירי חרב מקומיים שיעזרו לך. אבל חשוב לזכור שאפשר לסמוך עליהם רק עד שהכסף נגמר.
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","המקדש בעיר מציע הרבה ברכות להרפתקנים שלא חוטאים. כדאי לך לבקר היום ולתרום כמה מטבעות. יבורכו רגליך, מסעות מוצלחים!"
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","בין המשמר לגילדת הסוחרים יש הסכם הגנה רב שנים, אז בלי רעיונות מוזרים."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","במכרות שמתחת לעיר יש טירוף של אבני חן. אבנים יקרות זרוקות בכל מקום, לא זכוכית חסרת ערך!"
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,במערות שמחוץ לעיר יש מדרגות שמובילות אל המכרות. לדעתי כדאי לך לרדת לשם ולא לחזור לעולם
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,זאת המשמרת האחרונה שלי לפני פרישה מהמשמר. אני ממש מקווה שלא יקרה שום דבר מפוקפק!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","העיר הזאת היא מקום נפלא לבלות בו ולהתכונן למסע העומד בפניך. אין צורך למהר ולעזוב אותה, יש כאן הרבה דברים לראות ולעשות לפני שממשיכים הלאה לתוך המבוך."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","בזהירות בכניסה למכרות, הגנומים החמקמקים המחורבנים האלה אוהבים לארוב להרפתקנים חסרי ניסיון."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,אפשר ללכת לשחק במערות שמחוץ לעיר. יש שם הרבה דברים שאפשר לאסוף בחינם רק שחשוב לזכור שאנחנו לא מפטרלים מחוץ לעיר אז כדאי לך לשמור על מרחק בטוח ובמקרה של בעיות לרוץ בחזרה לכאן
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,אולי מספיק לשחק עם המזרקות? אסור לי להרטיב את המדים אז בחיי שאם המים ישפריצו עלי *אחסל אותך.*
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","האמת, פעם הייתי הרפתקן כמוך... אולי כדאי גם לך למצוא עבודה? הרי *הרפתקנים* זאת רק מילה מפונפנת לחסרי עבודה וחסרי בית."
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex

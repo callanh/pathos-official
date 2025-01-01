@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,Một c
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Một chiếc áo dài thun và tinh tế làm từ mithril.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Một chiếc áo thun dài và bóng láng làm từ mithril.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Chiếc mũ nhọn đầu trang trí với mặt trăng và những ngôi sao này là phụ kiện thường thấy của phù thủy.
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,đạn nhỏ adamantine
 AppearanceName,adamantine staff,gậy adamantine
 AppearanceName,agate ring,Nhẫn mã não
 AppearanceName,aluminium wand,Gậy nhôm
@@ -1954,7 +1954,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},chuy
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},chuyển đổi cửa {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},chuyển đổi sàn {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},chuyển đổi vũng {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},chuyển đổi {StockName} {QualifierText} thành {ItemNames}
 FormatText,cripple {AttributeName},suy giảm {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},giảm {AttributeName} bởi {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},giảm tất cả kỹ năng bởi {AdjustmentDice}
@@ -2244,12 +2244,12 @@ ItemName,adamantine arrow,mũi tên adamantine
 ItemName,adamantine axe,rìu adamantine
 ItemName,adamantine bident,trượng 2 đầu adamantine
 ItemName,adamantine bow,cung adamantine
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,đạn adamantine
 ItemName,adamantine dagger,dao găm adamantine
-ItemName,adamantine dart,
+ItemName,adamantine dart,phi tiêu adamantine
 ItemName,adamantine greataxe,rìu lớn adamantine
 ItemName,adamantine greatsword,đại kiếm adamantine
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,rìu nhỏ adamantine
 ItemName,adamantine long sword,trường kiếm adamantine
 ItemName,adamantine plate mail,giáp tấm adamantine
 ItemName,adamantine rapier,kiếm mảnh adamantine
@@ -2997,7 +2997,7 @@ LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
 LiteralText,Add new adventurer,Thêm nhà thám hiểm mới
 LiteralText,ADJUST,CHỈNH SỬA
-LiteralText,adjust difficulty,
+LiteralText,adjust difficulty,chỉnh độ khó
 LiteralText,adventurer,mạo hiểm giả
 LiteralText,afflict,ảnh hưởng
 LiteralText,AFFLICTED,BỊNHIỄM BỆNH
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,CỬA
 LiteralText,double damage when mounted,Nhân đôi sát thương khi đang cưỡi ngựa
 LiteralText,downgrade to,hạ cấp xuống
 LiteralText,downloading update,đang tải bản cập nhật
-LiteralText,drain item,
+LiteralText,drain item,rút cạn vật phẩm
 LiteralText,drop,thả
 LiteralText,DROP,THẢ
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,TĂNG CẤP ĐỘ
 LiteralText,gain nutrition,tăng dinh dưỡng
 LiteralText,gain skill,học kĩ năng
 LiteralText,gate,cổng
-LiteralText,gates,
+LiteralText,gates,các cổng
 LiteralText,gather,thu lượm
 LiteralText,gender,giới tính
 LiteralText,genocide,tuyệt chủng
@@ -3325,7 +3325,7 @@ LiteralText,HIDE,TRỐN
 LiteralText,hiding,đang trốn
 LiteralText,HINT,GỢI Ý
 LiteralText,HIRE,THUÊ
-LiteralText,horde,
+LiteralText,horde,bầy đàn
 LiteralText,HORDES,BẦY ĐÀN
 LiteralText,HOST,CHỦ PHÒNG
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
@@ -3528,7 +3528,7 @@ LiteralText,RACES,CHỦNG TỘC
 LiteralText,random,ngẫu nhiên
 LiteralText,RANDOM,NGẪU NHIÊN
 LiteralText,random dungeon seed,hạt giống hầm ngục ngẫu nhiên
-LiteralText,random level,
+LiteralText,random level,tầng ngẫu nhiên
 LiteralText,random points,các điểm ngẫu nhiên
 LiteralText,rank,hạng
 LiteralText,rarity,độ hiếm
@@ -3593,7 +3593,7 @@ LiteralText,REVERT,QUAY LẠI
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
 LiteralText,ROTATE,XOAY
-LiteralText,route entity,
+LiteralText,route entity,lối đi thực thể
 LiteralText,rumour,lời đồn
 LiteralText,sacrifice item,cúng tế
 LiteralText,SANITY CHECK,ĐIỂM MINH MẪN
@@ -3723,7 +3723,7 @@ LiteralText,transients,hiệu ứng tạm thời
 LiteralText,TRANSIENTS,HIỆU ỨNG TẠM THỜI
 LiteralText,transition,di chuyển
 LiteralText,TRANSLATIONS,BẢN DỊCH
-LiteralText,transport entity,
+LiteralText,transport entity,vận chuyển thực thể
 LiteralText,TRAP,BẨY
 LiteralText,trap?,bẩy?
 LiteralText,trapped,mắc bẫy
@@ -3771,7 +3771,7 @@ LiteralText,visit shrine,ghé điện thờ
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,visit zoo,ghé vườn thú
 LiteralText,VOID SPACE,HƯ VÔ
-LiteralText,volatile,
+LiteralText,volatile,phản ứng
 LiteralText,VOLATILES,CÁC PHẢN ỨNG
 LiteralText,vomit nutrition,nôn mửa
 LiteralText,vulnerable to,bị khắc chế bởi
