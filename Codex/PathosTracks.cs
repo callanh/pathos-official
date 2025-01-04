@@ -17,15 +17,17 @@ namespace Pathos
       Track AddTrack(string Name) => Register.Add(T => T.Name = Name);
 
       inside = AddTrack("inside");
-      nethack_title = AddTrack("nethack title");
       dhak_title = AddTrack("dhak title");
+      kaloi_title = AddTrack("kaloi title");
+      nethack_title = AddTrack("nethack title");
       pixel_title = AddTrack("pixel title");
     }
 #endif
 
     public readonly Track inside;
-    public readonly Track nethack_title;
     public readonly Track dhak_title;
+    public readonly Track kaloi_title;
+    public readonly Track nethack_title;
     public readonly Track pixel_title;
   }
 }

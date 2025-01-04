@@ -22,7 +22,7 @@ namespace Pathos
 
       SetIntroduction(Codex.Sonics.introduction);
       SetConclusion(Codex.Sonics.conclusion);
-      SetTrack(Codex.Tracks.pixel_title);
+      SetTrack(Codex.Tracks.kaloi_title);
 
       foreach (var TermText in CollectStaticPublicConstantStrings(typeof(OpusTerms)))
         AddTerm(TermText);
