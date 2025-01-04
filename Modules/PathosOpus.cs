@@ -577,9 +577,9 @@ namespace Pathos
       SetSiteSuffixFirstLevelUp("Farm");
       SetSiteFirstLevelEntrance(OpusTerms.Halls);
       SetSiteFirstLevelEntrance(OpusTerms.Crypt);
-      SetMapLevelDown(OpusTerms.Overland);
       SetMapLevelUp(OpusTerms.Underground);
       SetSiteFirstLevelUp(OpusTerms.Cage);
+      SetMapLevelDown(OpusTerms.Overland);
 #endif
 
 #if DEBUG
