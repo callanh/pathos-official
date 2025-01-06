@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,Krótka
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Wysmukła i delikatna zbroja z mithrilu.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Wysmukła i lśniąca zbroja z mithrilu.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Klasyczny kapelusz czarodzieja haftowany w gwiazdy i księżyce.
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,adamantowy ślimak
 AppearanceName,adamantine staff,adamantowy kostur
 AppearanceName,agate ring,pierścień z agatem
 AppearanceName,aluminium wand,aluminiowa różdżka
@@ -2244,12 +2244,12 @@ ItemName,adamantine arrow,adamantowa strzała
 ItemName,adamantine axe,adamantowy topór
 ItemName,adamantine bident,adamantowe widły
 ItemName,adamantine bow,adamantowy łuk
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,adamantowy pocisk
 ItemName,adamantine dagger,adamantowy sztylet
-ItemName,adamantine dart,
+ItemName,adamantine dart,adamantowa rzutka
 ItemName,adamantine greataxe,adamantowy wielki topór
 ItemName,adamantine greatsword,adamantowy wielki miecz
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,adamantowa siekiera
 ItemName,adamantine long sword,adamantowy długi miecz
 ItemName,adamantine plate mail,adamantowa zbroja płytowa
 ItemName,adamantine rapier,adamantowy rapier
@@ -2422,7 +2422,7 @@ ItemName,dark elven bow,łuk mrocznego elfa
 ItemName,dark elven dagger,sztylet mrocznego elfa
 ItemName,dark elven mithril-coat,płaszcz z mithrilu dla mrocznych elfów
 ItemName,dark elven short sword,krótki miecz mrocznych elfów
-ItemName,dart,strzałka
+ItemName,dart,rzutka
 ItemName,Deadwood,Martwe drewno
 ItemName,Deagle,Deagle
 ItemName,deep dragon scale mail,poczta z głębokiej smoczej łuski
@@ -3421,7 +3421,7 @@ LiteralText,MENU,MENU
 LiteralText,mercenary,najemnik
 LiteralText,MIMIC,MIMIC
 LiteralText,mimicking,mimicking
-LiteralText,mobilise block,
+LiteralText,mobilise block,uwolnij głaz
 LiteralText,modifier,modyfikator
 LiteralText,MOUNT,OSIODŁAJ
 LiteralText,Mount which direction?,Mount which direction?
@@ -3582,14 +3582,14 @@ LiteralText,RESURRECT,RESURRECT
 LiteralText,Resurrect and continue,Zmartwychwstać i kontynuować
 LiteralText,resurrections,zmartwychwstania
 LiteralText,retaliations,odwety
-LiteralText,RETURN,RETURN
+LiteralText,RETURN,POWRÓT
 LiteralText,RE-USE,PONOWNE UŻYCIE
 LiteralText,REVEAL,UJAWNIJ
 LiteralText,REVEAL ALL MAPS,POKAŻ WSZYSTKIE MAPY
 LiteralText,REVEAL THIS MAP,ODKRYJ TĘ MAPĘ
 LiteralText,revealed,ujawnił
-LiteralText,revenant,
-LiteralText,REVERT,REVERT
+LiteralText,revenant,zjawa
+LiteralText,REVERT,POWRÓCIĆ
 LiteralText,RIGHT RING,PRAWY PIERŚCIEŃ
 LiteralText,rigid,sztywny
 LiteralText,ROTATE,OBRÓĆ
@@ -3809,7 +3809,7 @@ LocalityName,site,strona
 LocalityName,square,kwadrat
 LocalityName,world,świat
 LocalityName,zone,strefa
-MaterialName,adamantine,
+MaterialName,adamantine,adamant
 MaterialName,air,powietrze
 MaterialName,animal,zwierzęcy
 MaterialName,bone,kość
@@ -3848,99 +3848,99 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Ręcznie projektowane mapy w epickiej przygodzie na lądzie. Zrób sobie przerwę od ograniczeń lochu i wyrusz na pełną wyzwań wyprawę.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Ciekawe pokoje i tajemnice czekają. Ale nie zwlekaj!. Musisz zejść lub zginąć. Oparte na generowaniu map z Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Piaskownica do eksperymentowania z mechaniką Pathos. Baw się każdym przedmiotem, pułapką i elementem wyposażenia lochu na prostej mapie składającej się z dwóch pomieszczeń."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,"Jakieś wiadomości z powierzchni? Jestem tu tak długo, że tęsknię za słońcem i pogodą."
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,"Wiedziałeś, że połowa przedmiotów sprzedawanych przez kupców jest zabrana ze zwłok poszukiwaczy przygód takich jak Ty?"
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Wszyscy mówią o inwazji orków, ale ja nie wierzę, że kiedykolwiek do niej dojdzie."
+ModuleDialogue,Goodbye.,Do zobaczenia.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,"Zauważyłeś, że jest tutaj za dużo gnomów?"
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Nie mogę uwierzyć, że muszę to tłumaczyć, ale upewnij się, że masz kilof zanim zejdziesz do kopalń. Możesz stworzyć taki w mieście przy stole warsztatowym jeśli masz dużo żelaza."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Nie wiem dlaczego poszukiwacze przygód myślą, że mogą strzelać i strzelać z łuku albo rzucać lotkami wokół miasta. Mamy już tego dość, więc nawet przypadkowe trafienie miastowego spotka się z krwawą vendettą."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Przysięgam, że wy poszukiwacze przygód jesteście zwiastunami nieszczęść. Za każdym razem, kiedy jeden z was degeneratów sie tu pojawia tracimy tuzin ludzi."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Jestem zmęczony i bolą mnie stopy. Nie mogę się doczekać kiedy skończę patrol i pójdę do łóżka.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Powiedziano mi, że pod kopalniami gnomów jest miasto krasnoludów. Ale to nie jest miejsce gdzie chciałym się wybrać - za dużo śmierdzących kurdupli."
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Miej na uwadze widmowe ściany w jaskini. Ci wredni gnomi czarodzieje ostatnio wzieli się do roboty, ta banda szkodników."
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Handluj z miejskimi kupcami i wspieraj lokalną gospodarkę! Ale nie polecam robienia tego przy pustym żółądku.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",Czasami znani i potężni bohaterowie z innych krajów zaszczycają nas swoją obecnością... Dam Ci znać jak jakiegoś spotkam.
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,"Nie wchodź mi w drogę. Jestem na ważnym patrolu, a wy poszukiwacze przygód zawsze blokujecie moją trasę."
 ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,"Tutejsze jedzenie jest bardzo kiepskie. Jak myślisz, dlaczego zabijamy potwory i mamy ten stół warsztatowy w środku miasta?"
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"Kopalnie są niebezpiecznym miejscem do podróżowania samemu, więc powinieneś przemyśleć zatrudnienie któregoś z lokalnych najemników do pomocy. Ale uważaj, bo ich lojalność kończy się wtedy, kiedy Tobie skończą się monety."
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","Miejska kapliczka oferuje wiele darów dla cnotliwych poszukiwaczy przygód. Upewnij się, że ją dzisiaj odwiedzisz i złoższy w darze kilka zbędnych monet. Niech Ci błogosławi w Twoich wędrówkach."
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","Straż i Gildia Kupiecka mają wieloletnią umowę, więc nie próbuj nic podejrzanego."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","W kopalniach pod miastem panuje gorączka klejnotów. Na ziemi walają się drogocenne kamienie, a nie zwykłe kawałki szkła."
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,W jaskiniach za miastem są schody do kopalni. Może powinieneś się tam wybrać i nigdy nie wracać?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,"To mój ostatni patrol przed emeryturą. Mam nadzieję, że nie stanie się nic niespodziewanego."
 ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Patrz pod nogi, gdy wejdziesz do kopalni. Te przebiegłe gnomie dranie kochają robić zasadzki na nieprzygotowanych poszukiwaczy przygód."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Dlaczego nie pójdziesz pobawić się w jaskiniach za miastem? Jest tam dużo darmowego sprzętu do zabrania, ale miej na uwadze, że nie patrolujemy okolicy za miastem, więc w razie kłopotów uciekaj tu z powrotem."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Możesz przestać bawić się w fontannie? Nie mogę zamoczyć mojego munduru, więc jeśli mnie oblejesz przysięgam, że *zniszczę Cię*."
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
 ModuleName,Dhak Legacy,Dziedzictwo Dhak
-ModuleName,Kaloi Opus,
+ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
 ModuleName,Pixel Sojourn,Pikselowa podróż
 ModuleName,Sandbox Play,Zabawa w piaskownicy
 ModuleTerm,Abyss,Otchłań
-ModuleTerm,Ambush,
-ModuleTerm,Ant Cave,
-ModuleTerm,Ant Lair,
-ModuleTerm,Ant Nest,
-ModuleTerm,Arena,
-ModuleTerm,attic,attic
-ModuleTerm,Bigfoot,
-ModuleTerm,Black Lair,
+ModuleTerm,Ambush,Zasadzka
+ModuleTerm,Ant Cave,Jaskinia Mrówek
+ModuleTerm,Ant Lair,Legowisko Mrówek
+ModuleTerm,Ant Nest,Gniazdo Mrówek
+ModuleTerm,Arena,Arena
+ModuleTerm,attic,strych
+ModuleTerm,Bigfoot,Wielka Stopa
+ModuleTerm,Black Lair,Czarne Legowisko
 ModuleTerm,Black Market,Czarny Rynek
-ModuleTerm,Blue Lair,
-ModuleTerm,Cage,
-ModuleTerm,Canyon,
-ModuleTerm,Cave Maze,
+ModuleTerm,Blue Lair,Niebieskie Legowisko
+ModuleTerm,Cage,Klatka
+ModuleTerm,Canyon,Kanion
+ModuleTerm,Cave Maze,Labirynt Jaskiń
 ModuleTerm,caves,jaskinie
-ModuleTerm,Cavetown,
+ModuleTerm,Cavetown,Jaskiniowe Miasto
 ModuleTerm,cellar,piwnica
-ModuleTerm,Cemetery,
-ModuleTerm,Chicken Farm,
+ModuleTerm,Cemetery,Cmentarz
+ModuleTerm,Chicken Farm,Farma Kurczaków
 ModuleTerm,Congratulations on making it to the final level and defeating your nemesis.,Gratulacje za przejście do ostatniego poziomu i pokonanie swojego nemezis.
 ModuleTerm,Congratulations on reaching the end of the {Quest}!,Gratulacje z okazji ukończenia {Quest}!
-ModuleTerm,Cow Farm,
-ModuleTerm,Crater,
-ModuleTerm,Crypt,
-ModuleTerm,Crystal Henge,
-ModuleTerm,Deep Lair,
+ModuleTerm,Cow Farm,Farma Krów
+ModuleTerm,Crater,Krater
+ModuleTerm,Crypt,Krypta
+ModuleTerm,Crystal Henge,Kryształowy Krąg
+ModuleTerm,Deep Lair,Głębiokie Leże
 ModuleTerm,Deephall,Głęboka hala
 ModuleTerm,Deepruins,Głębokie ruiny
 ModuleTerm,Deepwilds,Głębokie dzikie pola
-ModuleTerm,Diamond Mine,
+ModuleTerm,Diamond Mine,Diamentowa Kopalnia
 ModuleTerm,Dungeon,Lochy
-ModuleTerm,Elf Forest,Elfia Las
+ModuleTerm,Elf Forest,Elfi Las
 ModuleTerm,Elf Kingdom,Elfie Królestwo
 ModuleTerm,Elf Palace 1,Elfi Pałac 1
 ModuleTerm,Elf Palace 2,Elfi Pałac 2
 ModuleTerm,Elf Palace Vault,Elfi Skarbiec Pałacu
-ModuleTerm,Elf Town,Elfie miasto
+ModuleTerm,Elf Town,Elfie Miasto
 ModuleTerm,Elf Town Trove,Elfi Skarbiec Miejski
-ModuleTerm,Emerald Mine,
-ModuleTerm,Eye Pit,
+ModuleTerm,Emerald Mine,Szmaragdowa Kopalnia
+ModuleTerm,Eye Pit,Dół Oczu
 ModuleTerm,Fort Ludios,Fort Ludios
-ModuleTerm,Furnace,
-ModuleTerm,Glacier,
-ModuleTerm,Goat Farm,
-ModuleTerm,Green Lair,
-ModuleTerm,Grotto,
-ModuleTerm,Halls,
-ModuleTerm,Helltown,
-ModuleTerm,Horse Farm,
-ModuleTerm,Ice Lake,
+ModuleTerm,Furnace,Piec
+ModuleTerm,Glacier,Lodowiec
+ModuleTerm,Goat Farm,Farma Kozłów
+ModuleTerm,Green Lair,Zielone Leże
+ModuleTerm,Grotto,Grota
+ModuleTerm,Halls,Korytarze
+ModuleTerm,Helltown,Miasto Piekła
+ModuleTerm,Horse Farm,Farma Koni
+ModuleTerm,Ice Lake,Jezioro Lodu
 ModuleTerm,Infernal Cage,Piekielna Klatka
 ModuleTerm,Infernal Fields,Piekielne Pola
 ModuleTerm,Infernal Keep,Piekielna straż
 ModuleTerm,Infernal Spire,Piekielna Iglica
-ModuleTerm,Jadetown,
-ModuleTerm,Jelly Pit,
-ModuleTerm,Kobold Fort,
+ModuleTerm,Jadetown,Jadeitowe Miasto
+ModuleTerm,Jelly Pit,Dziura Galaretki
+ModuleTerm,Kobold Fort,Fort Koboldów
 ModuleTerm,Labyrinth,Labirynt
-ModuleTerm,Lake,
-ModuleTerm,Lava Flow,
-ModuleTerm,Lava Lake,
+ModuleTerm,Lake,Jezioro
+ModuleTerm,Lava Flow,Wypyw Lawy
+ModuleTerm,Lava Lake,Jezioro Lawy
 ModuleTerm,level//depth,poziom
 ModuleTerm,Lich Tower,Wieża licha
 ModuleTerm,Lost Chambers,Zaginione komnaty
@@ -3949,13 +3949,13 @@ ModuleTerm,Medusa Lair,Legowisko Meduzy
 ModuleTerm,Mines,Kopalnia
 ModuleTerm,Minetown,Minetown
 ModuleTerm,Moss Pit,Dziura Mchu
-ModuleTerm,Opus,
+ModuleTerm,Opus,Opus
 ModuleTerm,Orange Lair,Pomarańczowe Legowisko
 ModuleTerm,Outpost,Placówka
 ModuleTerm,Overland,Ląd
 ModuleTerm,Pig Farm,Świńska Farma
 ModuleTerm,Prison,Więzienie
-ModuleTerm,Pudding Pit,
+ModuleTerm,Pudding Pit,Dół Budyniu
 ModuleTerm,Rat Pit,Dół Szczurów
 ModuleTerm,Rebirth,Odrodzenie
 ModuleTerm,Red Lair,Czerwone Legowisko
