@@ -497,7 +497,7 @@ namespace Pathos
       {
         foreach (var Item in Register.List)
         {
-          if (string.IsNullOrWhiteSpace(Item.Description) || !Item.Description.EndsWith("."))
+          if (string.IsNullOrWhiteSpace(Item.Description) || !Item.Description.EndsWith(".", StringComparison.InvariantCultureIgnoreCase))
             throw new Exception(Item.Name + " must have a description that ends with a full stop.");
         }
       });

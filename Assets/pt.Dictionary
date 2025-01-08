@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,Uma peq
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Uma vestimenta de mithril esguia e delicada.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Uma vestimenta de mithril esguia e lustrosa.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Este clássico acessório para feiticeiros é um chapéu pontudo decorado com estrelas e luas.
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,cartucho de adamantina
 AppearanceName,adamantine staff,cajado de adamantina
 AppearanceName,agate ring,anel de ágata
 AppearanceName,aluminium wand,varinha de alumínio
@@ -904,46 +904,46 @@ DamageTypeName,bludgeon,impactante
 DamageTypeName,pierce,perfurante
 DamageTypeName,slash,cortante
 DeviceDescription,This square-cut hole is deep enough to hurt and hard to escape.,Esse buraco quadrado é profundo o suficiente para machucar e difícil de se escapar.
-DeviceName,acid trap,a armadilha ácida
-DeviceName,alarm trap,a rmadilha de alarme
-DeviceName,amnesia trap,a armadilha de amnésia
+DeviceName,acid trap,armadilha ácida
+DeviceName,alarm trap,armadilha de alarme
+DeviceName,amnesia trap,armadilha de amnésia
 DeviceName,animation trap,armadilha de animação
-DeviceName,ant hole,o buraco de formiga
-DeviceName,anti-magic field,o campo anti-magia
-DeviceName,arrow trap,a armadilha de flechas
-DeviceName,bear trap,a armadilha de urso
-DeviceName,bolt trap,a armadilha de virotes
+DeviceName,ant hole,buraco de formiga
+DeviceName,anti-magic field,campo anti-magia
+DeviceName,arrow trap,armadilha de flechas
+DeviceName,bear trap,armadilha de urso
+DeviceName,bolt trap,armadilha de virotes
 DeviceName,caltrops,os estrepes
-DeviceName,dart trap,a armadilha de dardos
-DeviceName,entropy trap,a armadilha mágica
-DeviceName,explosive trap,a armadilha explosiva
-DeviceName,falling boulder trap,a armadilha de queda de pedregulho
-DeviceName,falling rock trap,a armadilha de queda de rocha
-DeviceName,fire trap,a armadilha de fogo
+DeviceName,dart trap,armadilha de dardos
+DeviceName,entropy trap,armadilha entrópica
+DeviceName,explosive trap,armadilha explosiva
+DeviceName,falling boulder trap,armadilha de queda de pedregulho
+DeviceName,falling rock trap,armadilha de queda de rocha
+DeviceName,fire trap,armadilha de fogo
 DeviceName,grease trap,armadilha escorregadia
-DeviceName,hallucination trap,a armadilha de alucinação
-DeviceName,hole,o buraco
-DeviceName,hunger trap,a armadilha para famintos
-DeviceName,ice trap,a armadilha de gelo
-DeviceName,level teleporter,o teletransportador de andares
-DeviceName,lightning trap,a armadilha de relâmpago
-DeviceName,noxious pool,piscina nociva
-DeviceName,pit,o fosso
-DeviceName,poison gas trap,a armadilha de gás venenoso
-DeviceName,polymorph trap,a armadilha de polimorfia
+DeviceName,hallucination trap,armadilha de alucinação
+DeviceName,hole,buraco
+DeviceName,hunger trap,armadilha para famintos
+DeviceName,ice trap,armadilha de gelo
+DeviceName,level teleporter,teletransportador de andares
+DeviceName,lightning trap,armadilha de relâmpago
+DeviceName,noxious pool,poça nociva
+DeviceName,pit,fosso
+DeviceName,poison gas trap,armadilha de gás venenoso
+DeviceName,polymorph trap,armadilha de polimorfia
 DeviceName,pressure plate,placa de pressão
-DeviceName,scything blade trap,a armadilha de lâminas de sega
-DeviceName,shock trap,a armadilha de choque
+DeviceName,scything blade trap,armadilha de lâmina ceifante
+DeviceName,shock trap,armadilha de choque
 DeviceName,silence trap,armadilha de silenciamento
-DeviceName,sleeping gas trap,a armadilha de gás de sono
-DeviceName,spear trap,a armadilha de lança
-DeviceName,spiked pit,o fosso com estacas
-DeviceName,squeaky board,a tábua rangendo
-DeviceName,teleporter,o teletransportador
-DeviceName,toxic trap,a armadilha tóxica
-DeviceName,trapdoor,o alçapão
-DeviceName,water trap,a armadilha de água
-DeviceName,web,a teia
+DeviceName,sleeping gas trap,armadilha de gás sonífero
+DeviceName,spear trap,armadilha de lança
+DeviceName,spiked pit,fosso com estacas
+DeviceName,squeaky board,tábua rangendo
+DeviceName,teleporter,teletransportador
+DeviceName,toxic trap,armadilha tóxica
+DeviceName,trapdoor,alçapão
+DeviceName,water trap,armadilha de água
+DeviceName,web,teia
 DietName,carnivore,carnívoro
 DietName,fabrivore,tecidófago
 DietName,geophagy,geófago
@@ -1954,7 +1954,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},conv
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},converter porta {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},converter piso {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},converter cachoeira {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},converter {StockName} {QualifierText} em {ItemNames}
 FormatText,cripple {AttributeName},deteriorar {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},reduzir {AttributeName} por {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},reduzir todas as abilidades por {AdjustmentDice}
@@ -2244,9 +2244,9 @@ ItemName,adamantine arrow,flecha de adamantina
 ItemName,adamantine axe,machado de adamantina
 ItemName,adamantine bident,bidente de adamantina
 ItemName,adamantine bow,arco de adamantina
-ItemName,adamantine bullet,balas de adamantina
+ItemName,adamantine bullet,bala de adamantina
 ItemName,adamantine dagger,adaga de adamantina
-ItemName,adamantine dart,dardos de adamantina
+ItemName,adamantine dart,dardo de adamantina
 ItemName,adamantine greataxe,grande machado de adamantina
 ItemName,adamantine greatsword,grande espada de adamantina
 ItemName,adamantine hatchet,machadinha de adamantina
@@ -2997,8 +2997,8 @@ LiteralText,actions,ações
 LiteralText,ADD LEVEL,ADICIONAR NÍVEL
 LiteralText,Add new adventurer,Adicionar aventureiro
 LiteralText,ADJUST,AJUSTES
-LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adjust difficulty,ajustar dificuldade
+LiteralText,adventurer,aventureiro
 LiteralText,afflict,afligir
 LiteralText,AFFLICTED,AFLIGIDO
 LiteralText,affliction?,aflição?
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,PORTA
 LiteralText,double damage when mounted,dano dobrado quando em uma montaria
 LiteralText,downgrade to,quando desencantado
 LiteralText,downloading update,baixando atualização
-LiteralText,drain item,
+LiteralText,drain item,drenar item
 LiteralText,drop,largar
 LiteralText,DROP,LARGAR
 LiteralText,DUAL WIELD,EMPUNHADURA DUPLA
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,GANHAR NÍVEL
 LiteralText,gain nutrition,ganhar nutrição
 LiteralText,gain skill,ganhar abilidade
 LiteralText,gate,portão
-LiteralText,gates,
+LiteralText,gates,portão
 LiteralText,gather,reunir
 LiteralText,gender,gênero
 LiteralText,genocide,genocídio
@@ -3325,7 +3325,7 @@ LiteralText,HIDE,ESCONDER
 LiteralText,hiding,ocultação
 LiteralText,HINT,DICA
 LiteralText,HIRE,CONTRATAR
-LiteralText,horde,
+LiteralText,horde,horda
 LiteralText,HORDES,HORDAS
 LiteralText,HOST,ANFITRIÃO
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Entretanto, você pode querer completar suas aventuras antes de baixar a atualização."
@@ -3454,7 +3454,7 @@ LiteralText,non divined items,itens sem predição
 LiteralText,non edible items,itens não comestíveis
 LiteralText,non enchanted items,itens não encantados
 LiteralText,normal animations,animações normais
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,NÃO AGORA!
 LiteralText,Nothing equipped or carried,Nada sendo usado ou carregado
 LiteralText,nothing happens,nada acontece
 LiteralText,Nothing of interest,Nada de interessante
@@ -3528,7 +3528,7 @@ LiteralText,RACES,RAÇAS
 LiteralText,random,aleatório
 LiteralText,RANDOM,ALEATÓRIO
 LiteralText,random dungeon seed,masmorra aleatória (seed)
-LiteralText,random level,
+LiteralText,random level,level aleatório
 LiteralText,random points,pontos aleatórios
 LiteralText,rank,ranque
 LiteralText,rarity,raridade
@@ -3593,7 +3593,7 @@ LiteralText,REVERT,REVERTER
 LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
 LiteralText,ROTATE,ROTACIONAR
-LiteralText,route entity,
+LiteralText,route entity,rota da entidade
 LiteralText,rumour,espalhar
 LiteralText,sacrifice item,sacrificar
 LiteralText,SANITY CHECK,CHECAR SANIDADE
@@ -3723,7 +3723,7 @@ LiteralText,transients,temporários
 LiteralText,TRANSIENTS,TEMPORÁRIOS
 LiteralText,transition,transicionar
 LiteralText,TRANSLATIONS,TRADUÇÕES
-LiteralText,transport entity,
+LiteralText,transport entity,transportar entidade
 LiteralText,TRAP,ARMADILHA
 LiteralText,trap?,armadilha?
 LiteralText,trapped,armadilhado
@@ -3771,7 +3771,7 @@ LiteralText,visit shrine,visitar santuário
 LiteralText,Visit the website,Visite o website
 LiteralText,visit zoo,visitar zoologico
 LiteralText,VOID SPACE,ESPAÇO VAZIO
-LiteralText,volatile,
+LiteralText,volatile,volatil
 LiteralText,VOLATILES,VOLÁTEIS
 LiteralText,vomit nutrition,vomitar
 LiteralText,vulnerable to,vulnerável a
@@ -3843,38 +3843,38 @@ MaterialName,wax,cera
 MaterialName,wood,madeira
 MeasurementSystemName,imperial,imperial
 MeasurementSystemName,metric,métrico
-ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desça masmorras e cavernas geradas proceduralmente. Rejogabilidade infinita e recomendada para jogadores novatos.
+ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desça masmorras e cavernas geradas proceduralmente. Rejogabilidade infinita e recomendado para jogadores novatos.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explore um vasto, proceduralmente gerado mapa que contém masmorras opcionais, encontros intrigantes e cenários elaborados."
-ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão numa aventura épica pelas planícies. Tire uma folga das masmorras e embarque nessa aventura.
+ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão em uma aventura épica pelas superficie. Tire uma folga dos confinametos das masmorras e embarque nessa aventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
-ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Caixa de areia para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e acessório das masmorra num mapa simples de duas salas."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Modo livre para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e funções das masmorra num mapa simples de duas salas."
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Qualquer notícias da superfície? Eu estive aqui embaixo por tanto tempo que eu sinto falta da luz do sol e do clima.
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Você sabia que metade do que os mercadores vendem é coletado de corpos de aventureiros como você?
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Todos estão falando de uma invasão orc mas, eu não acredito que vai sequer acontecer."
+ModuleDialogue,Goodbye.,Adeus.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,Você tem notado que tem gnomos demais por aqui?
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Eu não posso acreditar que eu tenho de explicar isso mas, se cerifique que você tenha uma picareta antes de ir as minas. Você pode até criar uma na bancada de trabalho da cidade com bastante sucatas de ferro."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Eu não entendo porque aventureiros pensão que podem atirar, atirar, atirar envolta da cidade com suas flechas e dardos, nós estamos fardos disto, então até mesmo um acerto acidental em nosso pessoal ira ser tratado com força letal!"
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Eu juro, vocês aventureiros são precursores da disgraça! Toda vez um de vocês degenerados aparecem, nós perdemos uma dúzia de homens."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Estou cançado e meus pés doem! Eu mal posso esperar para que essa patrulha se acabe para eu ir me deitar.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Eu fui dito que há uma cidade de anões embaixo das minas dos gnomos. Isso não é uma jornada eu irei sequer querer pegar – muitas nojentas, pessoas pequenas, ali embaixo para meu gosto."
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Fica de olho nas paredes ilusórias das cavernas porque gnomos mágicos irritantes estiveram em circulação recentemente. Completamente pestinhas, todos eles!"
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Se certifique de fazer trocas com os mercadores da cidade e de ajudar a economia local. Eu não recomendaria fazer isso com uma barriga vazia entretanto.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","As vezes, poderosos e famosos heróis de todas as terras nos dão a graça de suas presenças... Eu irei lhe deixar saber caso eu ver um hoje."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,Sai do meu caminho! Eu estou em uma importante patrulha e vocês aventureiros estão sempre bloqueando meu caminho.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","O **Oráculo** te encará em muda simpatia, te deixando inteiramente incomodado com sua entristecida expressão. || O destino deve haver algo realmente *desagradável* planejado para você."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,A comida é tão ruim aqui. Oque acha de irmos matar monstros e pegar aquela bancada de trabalho no meio da cidade.
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"As minas são um lugar perigoso de cruzar sozinho, então você deve considerar contratar alguns dos mercenários locais para te ajudar. Mas fique atento que eles são apenas confiáveis enquanto o dinheiro não acabar."
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","santuário da cidade oferece muitas dádivas para os virtuosos aventureiros, se cerifique de visitar hoje e doar qualquer moedas sobrando. Abençoado seja você em suas caminhadas aventureiro."
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","A guarda e a guilda dos mercadores tem um contrato de longa duração, então nem pense em gracinhas."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",Tem uma avalanche de jóias acontecendo nas minas abaixo da cidade. Jóias caríssimas apenas jogadas ao chão. Não aqueles pedaços de vidro sem preço que você encontra.
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,Tem uma escadaria para as minas nas cavernas fora da cidade. Talvez você deve se ir para baixo e nunca mais voltar?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,Esta é a ultima patrulha antes de minha retirada da guarda. Eu realmente espero que nada desagradável aconteça!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Essa cidade é um local maravilhoso para passar o tempo e se preparar para a jornada afrente. Não esteja apresado em sair daqui, tem um monte de coisas para ver e fazer antes de você adentrar mais a fundo na masmorra."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Olhe seus passos quando entra nas minas pela primeira vez, esse gnomos sorrateiros desgraçados adoram emboscar um aventureiro despreparado."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Porque você não vai brincar nas cavernas fora da cidade, tem um monte de coisas grátis para coletar, mas fique ciente que nós não patrulhamos fora da cidade então, se cerifique que você possa correr devolta caso você entrar em qualquer problema."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Você irá por favor parar de brincar nas fontes. Eu não tenho permissão de deixar esse uniforme molhado, então se você respingar em mim eu juro! *Eu vou acabar com você.*"
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Sabe, eu custumava ser um aventureiro como você... Talvez você devese pegar um emprego também? Afinal, *aventureiro* é apenas um jeito chique de dizer desabrigado e desempregado."
 ModuleName,Dhak Legacy,Legado Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Codex Nethack

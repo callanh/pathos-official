@@ -46,10 +46,10 @@ namespace Pathos
 
       void CheckDragon(Entity Baby, Entity Young, Entity Adult, Entity Ancient)
       {
-        Debug.Assert(Baby.Name.StartsWith("baby ") && Baby.Name.EndsWith(" dragon"), Baby.Name);
-        Debug.Assert(Young.Name.StartsWith("young ") && Young.Name.EndsWith(" dragon"), Young.Name);
-        Debug.Assert(Adult.Name.StartsWith("adult ") && Adult.Name.EndsWith(" dragon"), Adult.Name);
-        Debug.Assert(Ancient.Name.StartsWith("ancient ") && Ancient.Name.EndsWith(" dragon"), Ancient.Name);
+        Debug.Assert(Baby.Name.StartsWith("baby ", StringComparison.InvariantCulture) && Baby.Name.EndsWith(" dragon", StringComparison.InvariantCulture), Baby.Name);
+        Debug.Assert(Young.Name.StartsWith("young ", StringComparison.InvariantCulture) && Young.Name.EndsWith(" dragon", StringComparison.InvariantCulture), Young.Name);
+        Debug.Assert(Adult.Name.StartsWith("adult ", StringComparison.InvariantCulture) && Adult.Name.EndsWith(" dragon", StringComparison.InvariantCulture), Adult.Name);
+        Debug.Assert(Ancient.Name.StartsWith("ancient ", StringComparison.InvariantCulture) && Ancient.Name.EndsWith(" dragon", StringComparison.InvariantCulture), Ancient.Name);
         Debug.Assert(new[] { Baby, Young, Adult, Ancient }.Select(E => E.Name.Split(' ')[1]).Distinct().ToArray().Length == 1, Baby.Name);
 
         CodexRecruiter.Enrol(() =>

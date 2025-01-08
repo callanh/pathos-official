@@ -554,8 +554,8 @@ namespace Pathos
       foreach (var UniqueEntity in Codex.Entities.List.Where(E => E.IsUnique).Except(UniqueEntityList))
         Debug.WriteLine($"{UniqueEntity.Name} was not considered in this epic module.");
 
-      void SetSiteSuffixFirstLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.UpSquare);
-      void SetSiteSuffixFirstLevelDown(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_")).FirstLevel.DownSquare);
+      void SetSiteSuffixFirstLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_", StringComparison.InvariantCultureIgnoreCase)).FirstLevel.UpSquare);
+      void SetSiteSuffixFirstLevelDown(string SiteName) => Generator.StartSquare(Generator.Adventure.World.Sites.Find(S => S.Name.EndsWith(SiteName + "_", StringComparison.InvariantCultureIgnoreCase)).FirstLevel.DownSquare);
       void SetSiteFirstLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare);
       void SetSiteFirstLevelEntrance(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).FirstLevel.UpSquare.Passage.Destination);
       void SetSiteLastLevelUp(string SiteName) => Generator.StartSquare(Generator.Adventure.World.GetSite(Generator.EscapedModuleTerm(SiteName)).LastLevel.UpSquare);
