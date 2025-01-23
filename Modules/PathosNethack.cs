@@ -3582,7 +3582,7 @@ namespace Pathos
 
         var ResourceFile = Official.Resources.Quests.Underdeep;
 
-        var Quest = Generator.ImportQuest(ResourceFile.GetBuffer());
+        var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
 
         var QuestSite = Quest.World.Sites.Single();
         var QuestStart = Quest.World.Start;
@@ -3729,7 +3729,7 @@ namespace Pathos
 
       var ResourceFile = Official.Resources.Quests.Chambers;
 
-      var Quest = Generator.ImportQuest(ResourceFile.GetBuffer());
+      var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
 
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
@@ -4816,12 +4816,12 @@ namespace Pathos
 
       var StandardGeneration = Chance.ThreeIn4.Hit(); // 75% normal, 25% massacre.
 #if DEBUG
-      StandardGeneration = false;
+      //StandardGeneration = false;
 #endif
 
       var ResourceFile = StandardGeneration ? Official.Resources.Quests.Kingdom1 : Official.Resources.Quests.Kingdom2;
 
-      var Quest = Generator.ImportQuest(ResourceFile.GetBuffer());
+      var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5121,7 +5121,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Lair.GetBuffer());
+      var Quest = Generator.ImportQuest(Official.Resources.Quests.Lair.Load().GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5277,7 +5277,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Market.GetBuffer());
+      var Quest = Generator.ImportQuest(Official.Resources.Quests.Market.Load().GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5398,7 +5398,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Tower.GetBuffer());
+      var Quest = Generator.ImportQuest(Official.Resources.Quests.Tower.Load().GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5523,7 +5523,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Abyss)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Abyss.GetBuffer());
+      var Quest = Generator.ImportQuest(Official.Resources.Quests.Abyss.Load().GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 

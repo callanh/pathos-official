@@ -707,6 +707,7 @@ ClassDescription,"Benevolent caretakers, always willing to lend a helping hand t
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.","Campeões dos reinos de inverno, ferozes e orgulhosos. Resistentes e fortes, eles enfrentarão corajosamente qualquer adversário até encontrarem uma morte gloriosa."
 ClassDescription,"Charming minstrels, making their way through the world with their songs and stories. They are jacks-of-all-trades; alongside their troubadour talents, they dabble in both martial skills and spellcraft.","Menestréis charmosos, fazem seus caminhos atravéz do mundo com canções e histórias. Ajudam a todos; com os seus talentos de trovadores, eles se interessam por habilidades marciais e feitiços."
 ClassDescription,"Conductors of natural energies, these uniquely attuned spell casters derive their powers from the living world. Peaceful until threatened, they are unafraid to respond with animalistic savagery.","Condutores das energias da natureza, estes feiticeiros de afinidades únicas derivam seus poderes do mundo vivente. Pacíficos até serem ameaçados, eles não têm medo de reagir com selvageria animalesca."
+ClassDescription,"Corrupt and hateful souls, who are motivated by causing carnage and spreading chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.","Uma alma corrupta e odienta, motivada apenas pela carnificina e pelo caos. Vitimados por rompantes incontrolávels de fúria, despejam desgraça e destruição indiscriminadamente sobre aliados e inimigos."
 ClassDescription,"Daft harlequins, always carrying a trick up their sleeves. Eclectic and eccentric; they are unassuming masters of chaos, adept in many bewildering talents.","Tolos arlequins, sempre carregam truques nas mangas. Ecléticos e excêntricos; são mestres despretensiosos do caos, adeptos de muitos talentos desconcertantes."
 ClassDescription,"Deft miscreants, conniving and quick with their wits. Through trial and error, they have learned that their best chance in avoiding the clutches of death is to stick to the shadows and outmanoeuvre their pursuers.","Hábeis meliantes, coniventes e rápidos com sua inteligência. Por tentativa e erro, eles aprenderam que sua melhor chance de evitar as garras da morte é permanecer nas sombras e superar seus perseguidores."
 ClassDescription,"Devoted to understanding the essence of magic and the marvel of engineering, these adept craftsman crave both knowledge and resources. Whether directed by madness or genius, they are a capable adversary and a tenacious survivor.","Dedicados à compreensão da essência da magia e das maravilhas da engenharia, estes talentosos artífices anseiam tanto por conhecimento quanto por recursos. Quer guiados por loucura ou por genialidade, são adversários competentes e sobreviventes tenazes."
@@ -726,9 +727,8 @@ ClassDescription,Questionably pious individuals from an ancient religious and mi
 ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.","Pesquisadores científicos extraordinários e investigadores históricos destemidos. Tão impetuosos quanto destemidos, eles buscam conhecimento e elogios. Curiosamente eles adoram chicotes e compartilham um ódio perplexo contra serpentes."
 ClassDescription,"Restless desperados, driven by wanderlust and troubled by the haunting memories of those they could not protect. They are sly masters of lead and steel, hellbent on redemption and retribution.","Criminosos inquietos, impulsionado pelo desejo de viajar e perturbado pelas memórias assombrosas daqueles que não podiam proteger. Eles são mestres do chumbo e do aço, incansáveis na redenção e retribuição."
 ClassDescription,"Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. They are well-versed in divine magic and the judicial delivery of violence to those they deem unworthy of salvation.","Clérigos justos, dedicados a uma vida de sacrifício e espalhando a palavra de suas divindades todo-poderosas. Eles são experientes em magia divina e a entrega judicial de violência àqueles que eles consideram indignos de salvação."
-ClassDescription,"Strongly built, this tough and industrious worker is more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.","De constituição forte, este industrioso trabalhador está mais do que pronto para enfrentar o perigo. Práticas tradicionais e ferramentas pesadas vão ajudá-lo a transpor obstáculos na busca por pedras preciosas."
+ClassDescription,"Strongly built, tough and industrious workers who are more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.","De constituição forte, este industrioso trabalhador está mais do que pronto para enfrentar o perigo. Práticas tradicionais e ferramentas pesadas vão ajudá-lo a transpor obstáculos na busca por pedras preciosas."
 ClassDescription,"Sworn to uphold justice, these righteous warriors are dogmatic in pursuit of their sacred work. Classical martial skills are complemented by magical powers to protect the innocent and smite the wicked.","Jurados a defender a justiça, estes guerreiros virtuosos são dogmáticos em sua busca pelo divino Trabalho. Suas habilidades marciais, aliadas a poderes mágicos, protegem os inocentes e castigam os perversos."
-ClassDescription,"This corrupt and hateful soul is motivated only by carnage and chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.","Uma alma corrupta e odienta, motivada apenas pela carnificina e pelo caos. Vitimados por rompantes incontrolávels de fúria, despejam desgraça e destruição indiscriminadamente sobre aliados e inimigos."
 ClassDescription,"Venerable men-at-arms clad in gleaming armour, renowned for their unyielding chivalry and conviction. They are high-born and are educated to be strategists and capable leaders on any battlefront.","Veneráveis homens de armas com armaduras reluzentes, renomados por seu inabalável cavalheirismo e convicção. Eles são primogênitos e são educados para serem estrategistas e líderes capazes em qualquer batalha."
 ClassDescription,"Warrior slaves compelled to battle for the entertainment of raucous crowds, often to the death. Those that can survive this cauldron are trained into the most brutal of pit fighters.","Guerreiros escravizados coagidos a batalhar para entreter broncas multidões; muitas vezes, até a morte. Aqueles que sobrevivem a este caldeirão tornam-se os mais brutais lutadores da liça."
 ClassDescription,"Wilderness sentinels who understand the true balance of the universe. With bow in hand, they have devoted their lives to protecting the forces of nature from the corrupting touch of civilisation.","Sentinelas da natureza que compreendem o verdadeiro equilíbrio do universo. Com um arco na mão, eles dedicaram suas vidas a proteger as forças da natureza do toque corrupto da civilização."
@@ -1071,7 +1071,7 @@ EntityName,archon,arconte
 EntityName,Archpriest Avvakrum,Arcebispo
 EntityName,artisan,artesão
 EntityName,Ashikaga Takauji,Ashikaga Takauji
-EntityName,Asmodeus,Asmodan
+EntityName,Asmodeus,Asmodeus
 EntityName,asphynx,asfinge
 EntityName,assassin bug,inseto assassino
 EntityName,Assassin Mortimer,Assassino Mestre
@@ -1156,7 +1156,7 @@ EntityName,clear jelly,geléia transparente
 EntityName,cobra,naja
 EntityName,cockatoo,cacatua
 EntityName,cockatrice,cocatriz
-EntityName,Colonel Blood,Coronel Blood
+EntityName,Colonel Blood,Coronel Sangue
 EntityName,couatl,couatl
 EntityName,Count Dracula,Conde Drácula
 EntityName,cow,vaca
@@ -1515,7 +1515,7 @@ EntityName,pearl golem,golem de pérola
 EntityName,pegasus,pégaso
 EntityName,Pelias,Pelial
 EntityName,Pestilence,Pestilência
-EntityName,phase spider,aranha de fase
+EntityName,phase spider,aranha incorpórea
 EntityName,phase worm,verme piscante
 EntityName,pig,porco
 EntityName,pile of killer coins,pilha de moedas assassina
@@ -1811,9 +1811,9 @@ FormatText,{CharacterName} could not read the rumour,{CharacterName} não conseg
 FormatText,{CharacterName} crafted {AssetName} for {MaterialWeight} {MaterialName} and {Essence},{CharacterName} manufaturou {AssetName} for {MaterialWeight} {MaterialName} and {Essence}
 FormatText,{CharacterName} crushed {DeviceName} with {BlockName},{CharacterName} esmagou {DeviceName} com {BlockName}
 FormatText,{CharacterName} did not decrease {AttributeName},{CharacterName} não perdeu pontos em {AttributeName}
-FormatText,{CharacterName} did not decrease any attribute,{CharacterName} não perdeu pontos em atributo algum
+FormatText,{CharacterName} did not decrease any ability,{CharacterName} não perdeu pontos em atributo algum
 FormatText,{CharacterName} did not increase {AttributeName},{CharacterName} não ganhou pontos em {AttributeName}
-FormatText,{CharacterName} did not increase any attribute,{CharacterName} não ganhou pontos em atributo algum
+FormatText,{CharacterName} did not increase any ability,{CharacterName} não ganhou pontos em atributo algum
 FormatText,{CharacterName} discovered the {ItemName},{CharacterName} descobriu o {ItemName}
 FormatText,{CharacterName} dropped {AssetName},{CharacterName} derrubou {AssetName}
 FormatText,{CharacterName} emptied {AssetName},{CharacterName} esvaziou {AssetName}
@@ -2265,10 +2265,10 @@ ItemName,amethyst,ametista
 ItemName,amulet of change,amuleto da transfiguração
 ItemName,amulet of drain resistance,amuleto da resistência ao dreno
 ItemName,amulet of ESP,amuleto da percepção extrassensorial
-ItemName,amulet of flying,amuleto do voo
+ItemName,amulet of flying,amuleto do vôo
 ItemName,amulet of life saving,amuleto da salvação
 ItemName,amulet of nada,amuleto do nada
-ItemName,amulet of reflection,amuleto de reflexão
+ItemName,amulet of reflection,amuleto refletivo
 ItemName,amulet of restful sleep,amuleto do sono tranquilo
 ItemName,amulet of unchanging,amuleto da imutabilidade
 ItemName,amulet of vitality,amuleto da vitalidade
@@ -2354,7 +2354,7 @@ ItemName,book of lightning bolt,livro de relâmpago
 ItemName,book of living wall,livro de parede viva
 ItemName,book of magic mapping,livro de mapeamento mágico
 ItemName,book of magic missile,livro de míssil mágico
-ItemName,book of phasing,livro de faseamento
+ItemName,book of phasing,livro da incorporalidade
 ItemName,book of poison blast,livro de explosão venenosa
 ItemName,book of polymorph,livro de polimorfia
 ItemName,book of raise dead,livro de ressuscitar morto
@@ -2485,7 +2485,7 @@ ItemName,garnet,granada
 ItemName,gas grenade,granada de gás
 ItemName,gauntlets of dexterity,manoplas da destreza
 ItemName,gauntlets of fumbling,manoplas do atrapalhado
-ItemName,gauntlets of phasing,manoplas de faseamento
+ItemName,gauntlets of phasing,manoplas da incorporalidade
 ItemName,gauntlets of power,manoplas do poder
 ItemName,Giantslayer,Assassino de Gigantes
 ItemName,glaive,gládio
@@ -2765,7 +2765,7 @@ ItemName,scroll of water,pergaminho da água
 ItemName,scythe,foice
 ItemName,shades,óculos escuros
 ItemName,Shadow Key,chave das sombras
-ItemName,shield of reflection,escudo de reflexão
+ItemName,shield of reflection,escudo refletivo
 ItemName,shimmering dragon scale mail,armadura de escama de dragão cintilante
 ItemName,shimmering dragon scales,escamas de dragão cintilante
 ItemName,short sword,espada curta
@@ -3036,7 +3036,6 @@ LiteralText,ATTACK//noun,ATAQUE
 LiteralText,attack//verb,atacar
 LiteralText,ATTACK//verb,ATACAR
 LiteralText,attacks,ataques
-LiteralText,attributes,atributos
 LiteralText,AUTO,AUTOMÁTICO
 LiteralText,auto saving,salvando
 LiteralText,AWAKE,ACORDAR
@@ -3213,6 +3212,7 @@ LiteralText,DISMISS,DISPENSAR
 LiteralText,DISMOUNT,DESMONTAR
 LiteralText,Dismount which direction?,Desmontar em que direção?
 LiteralText,Display dice rolls in the help,Mostrar rolagem de dados na ajuda
+LiteralText,distribution,atributos
 LiteralText,divine item,predizer
 LiteralText,DIVINED,PREDITO
 LiteralText,divined items,itens preditos
@@ -3848,33 +3848,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão em uma aventura épica pelas superficie. Tire uma folga dos confinametos das masmorras e embarque nessa aventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Modo livre para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e funções das masmorra num mapa simples de duas salas."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Qualquer notícias da superfície? Eu estive aqui embaixo por tanto tempo que eu sinto falta da luz do sol e do clima.
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Alguma notícia da superfície? Eu estou aqui embaixo já faz tanto tempo que eu sinto falta da luz do sol e do clima.
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Você sabia que metade do que os mercadores vendem é coletado de corpos de aventureiros como você?
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Todos estão falando de uma invasão orc mas, eu não acredito que vai sequer acontecer."
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Todos estão falando da possibilidade de uma invasão orc, mas eu não acredito que isso aconteceria nem um milhão de anos!."
 ModuleDialogue,Goodbye.,Adeus.
 ModuleDialogue,Have you noticed that there's too many gnomes around here?,Você tem notado que tem gnomos demais por aqui?
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Eu não posso acreditar que eu tenho de explicar isso mas, se cerifique que você tenha uma picareta antes de ir as minas. Você pode até criar uma na bancada de trabalho da cidade com bastante sucatas de ferro."
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Eu não entendo porque aventureiros pensão que podem atirar, atirar, atirar envolta da cidade com suas flechas e dardos, nós estamos fardos disto, então até mesmo um acerto acidental em nosso pessoal ira ser tratado com força letal!"
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Eu juro, vocês aventureiros são precursores da disgraça! Toda vez um de vocês degenerados aparecem, nós perdemos uma dúzia de homens."
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Estou cançado e meus pés doem! Eu mal posso esperar para que essa patrulha se acabe para eu ir me deitar.
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Eu fui dito que há uma cidade de anões embaixo das minas dos gnomos. Isso não é uma jornada eu irei sequer querer pegar – muitas nojentas, pessoas pequenas, ali embaixo para meu gosto."
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Fica de olho nas paredes ilusórias das cavernas porque gnomos mágicos irritantes estiveram em circulação recentemente. Completamente pestinhas, todos eles!"
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Se certifique de fazer trocas com os mercadores da cidade e de ajudar a economia local. Eu não recomendaria fazer isso com uma barriga vazia entretanto.
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","As vezes, poderosos e famosos heróis de todas as terras nos dão a graça de suas presenças... Eu irei lhe deixar saber caso eu ver um hoje."
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,Sai do meu caminho! Eu estou em uma importante patrulha e vocês aventureiros estão sempre bloqueando meu caminho.
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","O **Oráculo** te encará em muda simpatia, te deixando inteiramente incomodado com sua entristecida expressão. || O destino deve haver algo realmente *desagradável* planejado para você."
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,A comida é tão ruim aqui. Oque acha de irmos matar monstros e pegar aquela bancada de trabalho no meio da cidade.
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"As minas são um lugar perigoso de cruzar sozinho, então você deve considerar contratar alguns dos mercenários locais para te ajudar. Mas fique atento que eles são apenas confiáveis enquanto o dinheiro não acabar."
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","santuário da cidade oferece muitas dádivas para os virtuosos aventureiros, se cerifique de visitar hoje e doar qualquer moedas sobrando. Abençoado seja você em suas caminhadas aventureiro."
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Eu não posso acreditar que eu tenho de explicar isso mas, certifique-se de que você tenha uma picareta antes de ir às minas. Você pode até criar uma na bancada de trabalho da cidade, utilizando um tanto de sucata de ferro."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Eu não entendo porque aventureiros pensam que podem sair por aí atirando flechas e dardos dentro da cidade. Estamos cansados disso, vamos revidar qualquer ataque com força letal!"
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Eu juro, vocês aventureiros são precursores da desgraça! Toda vez que um de vocês degenerados aparecem, nós perdemos uma dúzia de homens."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,Estou cansado e meus pés doem! Eu quero terminar logo minha ronda e ir dormir.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",Me disseram que existe uma cidade anã embaixo das minas dos gnomos. Eu nunca perderia meu tempo viajando até lá!  – Muitas pessoas baixinhas e fedidas para o meu gosto.
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Cuidado com paredes ilusórias, estamos lidando com uma infestação de magos gnomos . Eles são extremamente irritantes! Nenhum se salva!"
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,"Se certifique de comercializar com os mercantes da cidade, apoie o pequeno empreendedor e a economia local!. No entanto, eu não recomendo fazer isso de barriga vazia..."
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","As vezes, poderosos e famosos heróis de todas as terras nos concedem a graça de suas presenças... Caso algum apareça você será o primeiro a saber."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,Saia do meu caminho! Eu estou em uma importante patrulha e vocês aventureiros estão sempre bloqueando meu caminho.
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","A **Oráculo** te encará em muda simpatia, você fica extremamente assustado com a expressão de tristeza no rosto dela. || O destino deve haver algo realmente *desagradável* planejado para você."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,A comida aqui é horrível. Porque você acha que matamos monstros e temos aquele bancada de trabalho no meio da cidade?.
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"É perigoso explorar as minas sozinho, considerar contratar alguns mercenários locais para te ajudar. Mas fique atento que eles são apenas confiáveis enquanto o dinheiro não acabar."
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","O santuário da cidade oferece muitas dádivas para aventureiros virtuosos, se certifique de visitar e doar qualquer ouro que você tenha sobrando. Abençoado seja você em suas caminhadas, aventureiro."
 ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","A guarda e a guilda dos mercadores tem um contrato de longa duração, então nem pense em gracinhas."
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",Tem uma avalanche de jóias acontecendo nas minas abaixo da cidade. Jóias caríssimas apenas jogadas ao chão. Não aqueles pedaços de vidro sem preço que você encontra.
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,Tem uma escadaria para as minas nas cavernas fora da cidade. Talvez você deve se ir para baixo e nunca mais voltar?
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,Esta é a ultima patrulha antes de minha retirada da guarda. Eu realmente espero que nada desagradável aconteça!
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Essa cidade é um local maravilhoso para passar o tempo e se preparar para a jornada afrente. Não esteja apresado em sair daqui, tem um monte de coisas para ver e fazer antes de você adentrar mais a fundo na masmorra."
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Olhe seus passos quando entra nas minas pela primeira vez, esse gnomos sorrateiros desgraçados adoram emboscar um aventureiro despreparado."
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Porque você não vai brincar nas cavernas fora da cidade, tem um monte de coisas grátis para coletar, mas fique ciente que nós não patrulhamos fora da cidade então, se cerifique que você possa correr devolta caso você entrar em qualquer problema."
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Você irá por favor parar de brincar nas fontes. Eu não tenho permissão de deixar esse uniforme molhado, então se você respingar em mim eu juro! *Eu vou acabar com você.*"
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Sabe, eu custumava ser um aventureiro como você... Talvez você devese pegar um emprego também? Afinal, *aventureiro* é apenas um jeito chique de dizer desabrigado e desempregado."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",Tem uma quantidade absurda de gemas nas minas abaixo da cidade. Jóias caríssimas jogadas no chão. Não aqueles pedaços de vidro sem preço que você encontra.
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,Há uma escadaria para as minas nas cavernas fora da cidade. Talvez você devesse descer e nunca mais voltar?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,Esta é a minha ultima patrulha antes de minha aposentadoria da Guarda. Eu realmente espero que nada desagradável aconteça!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Essa cidade é um lugar maravilhoso para passar o tempo e se preparar para a jornada à frente. Não se apresse em sair daqui, há muitas coisas para ver e fazer antes de descer mais a fundo na masmorra."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Tenha cuidado ao entrar nas minas pela primeira vez, esses gnomos desgraçados são sorrateiros e adoram emboscar um aventureiro despreparado."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Porque você não vai se divertir um pouco nas cavernas fora da cidade? Tem muita coisa grátis para pegar, no entanto fique sabendo que não patrulhamos fora da cidade, se certifique de que caso algo dê errado você consiga correr para a segurança."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Você poderia por favor parar de brincar nas fontes? Eu não posso molhar esse uniforme, então se você respingar água em mim eu juro! *Eu vou acabar com você.*"
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Sabe, eu costumava ser um aventureiro como você... Talvez você devesse buscar um emprego fixo? Afinal, *aventureiro* é um termo que pode ser usado como sinônimo de sem-teto desempregado."
 ModuleName,Dhak Legacy,Legado Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Codex Nethack
@@ -4183,7 +4183,7 @@ PropertyName,mana regeneration,regeneração de mana
 PropertyName,narcolepsy,narcolepsia
 PropertyName,paralysis,paralisia
 PropertyName,petrifying,petrificação
-PropertyName,phasing,em faseamento
+PropertyName,phasing,incorpóreo
 PropertyName,polymorph,polimorfia
 PropertyName,polymorph control,polimorfia controlada
 PropertyName,quickness,rapidez
@@ -4708,7 +4708,7 @@ SpellName,lightning bolt,relâmpago
 SpellName,living wall,parede viva
 SpellName,magic mapping,mapeamento mágico
 SpellName,magic missile,míssil mágico
-SpellName,phasing,faseamento
+SpellName,phasing,incorporeidade
 SpellName,poison blast,explosão venenosa
 SpellName,polymorph,polimorfia
 SpellName,raise dead,reviver mortos

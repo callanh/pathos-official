@@ -707,6 +707,7 @@ ClassDescription,"Benevolent caretakers, always willing to lend a helping hand t
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.",寒冬边境以内的领主，她们勇猛且高傲，坚韧且强壮。她们会直面任何挑战者直到充满荣耀地牺牲。
 ClassDescription,"Charming minstrels, making their way through the world with their songs and stories. They are jacks-of-all-trades; alongside their troubadour talents, they dabble in both martial skills and spellcraft.",富有魅力的诗人，他们以诗歌与故事而闻名世界。同时他们对万物略知一二；排除开他们在诗歌上的天赋，他们也精通武术与法术。
 ClassDescription,"Conductors of natural energies, these uniquely attuned spell casters derive their powers from the living world. Peaceful until threatened, they are unafraid to respond with animalistic savagery.",能够以独特的方式去调和自然能量奥秘的施法者，他们从生物世界中获得力量。他们儒雅随和，可一旦他们受到威胁，他们会无畏地用野性的残暴来反击。
+ClassDescription,"Corrupt and hateful souls, who are motivated by causing carnage and spreading chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.",这些腐烂且令人憎恶的灵魂仅能被屠杀以及混乱驱使，他们给盟友以及同类带来破坏以及毁灭。
 ClassDescription,"Daft harlequins, always carrying a trick up their sleeves. Eclectic and eccentric; they are unassuming masters of chaos, adept in many bewildering talents.",戏剧中愚蠢的丑角，他们的袖中仿佛藏着不同的戏法并且风格迥异；他们否认自己是造成混乱的大师，可他们熟练可以使人迷惑的技巧。
 ClassDescription,"Deft miscreants, conniving and quick with their wits. Through trial and error, they have learned that their best chance in avoiding the clutches of death is to stick to the shadows and outmanoeuvre their pursuers.",手脚麻利的大盗，他们放纵，敏捷且机智。通过不断的尝试与错误，他们学会以隐匿在暗影中来躲避追击者的追击以及死亡的魔爪。
 ClassDescription,"Devoted to understanding the essence of magic and the marvel of engineering, these adept craftsman crave both knowledge and resources. Whether directed by madness or genius, they are a capable adversary and a tenacious survivor.",献身于魔法之精华以及工程学之奇迹的熟练工匠，他们渴望知识以及资源。无论他们是天才还是鬼才，他们都会是一个强劲的对手以及打不死的小强。
@@ -726,9 +727,8 @@ ClassDescription,Questionably pious individuals from an ancient religious and mi
 ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.",典型的科学家以及无畏的考古学家。他们高傲且自信， 他们寻求他们所认可的知识以及意见。 奇怪且令人困扰的是，他们喜爱鞭子，可他们同样讨厌蛇类。
 ClassDescription,"Restless desperados, driven by wanderlust and troubled by the haunting memories of those they could not protect. They are sly masters of lead and steel, hellbent on redemption and retribution.",陷入无尽绝望的迷途者， 被无法保护所想要保护的人或事物的记忆所困扰而流浪。他们是带着火药味硝烟的诡计师，在因果报应与救赎之中承受炼狱的考验。
 ClassDescription,"Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. They are well-versed in divine magic and the judicial delivery of violence to those they deem unworthy of salvation.",受人尊重的牧师，他们的生命注定要奉献给全能的神灵。他们广知各种圣灵之术，也可对他们所认为无可救药的生物以武力来审判。
-ClassDescription,"Strongly built, this tough and industrious worker is more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.",体格健壮，这位强壮而努力的工人在危险环境中如鱼得水。他们在追寻珍贵宝石的路途中用练习与重型工具克服困难。
+ClassDescription,"Strongly built, tough and industrious workers who are more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.",体格健壮，这位强壮而努力的工人在危险环境中如鱼得水。他们在追寻珍贵宝石的路途中用练习与重型工具克服困难。
 ClassDescription,"Sworn to uphold justice, these righteous warriors are dogmatic in pursuit of their sacred work. Classical martial skills are complemented by magical powers to protect the innocent and smite the wicked.",出于对心中正义的信仰，这些受人尊敬的战士追求于他们神圣的工作，他们用经典的武术搭配上魔力的补足来惩恶扬善。
-ClassDescription,"This corrupt and hateful soul is motivated only by carnage and chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.",这些腐烂且令人憎恶的灵魂仅能被屠杀以及混乱驱使，他们给盟友以及同类带来破坏以及毁灭。
 ClassDescription,"Venerable men-at-arms clad in gleaming armour, renowned for their unyielding chivalry and conviction. They are high-born and are educated to be strategists and capable leaders on any battlefront.",受人尊敬的圣甲战士，他们因他们的身份与信念而受人尊敬， 他们皆出生于贵族并且受过良好的教育，能够在前线领导军队。
 ClassDescription,"Warrior slaves compelled to battle for the entertainment of raucous crowds, often to the death. Those that can survive this cauldron are trained into the most brutal of pit fighters.",被迫以战斗给喧嚣的群众取乐的奴隶，死亡是他们的旧友。在角斗场上的生存将他们磨炼成最残忍的角斗士。
 ClassDescription,"Wilderness sentinels who understand the true balance of the universe. With bow in hand, they have devoted their lives to protecting the forces of nature from the corrupting touch of civilisation.",狂野的哨兵，他们深知宇宙之间的真正平衡。他们执弓于手， 将自己献身于保护自然之力免受其它文明的腐蚀。
@@ -1811,9 +1811,9 @@ FormatText,{CharacterName} could not read the rumour,{CharacterName} 无法阅�
 FormatText,{CharacterName} crafted {AssetName} for {MaterialWeight} {MaterialName} and {Essence},{CharacterName} 制作了 {AssetName}，消耗了 {MaterialWeight} {MaterialName} 和 {Essence} 精华
 FormatText,{CharacterName} crushed {DeviceName} with {BlockName},{CharacterName} 用{BlockName}压扁了{DeviceName}
 FormatText,{CharacterName} did not decrease {AttributeName},{CharacterName} 并没有减少 {AttributeName}
-FormatText,{CharacterName} did not decrease any attribute,{CharacterName} 并没有减少任何属性
+FormatText,{CharacterName} did not decrease any ability,{CharacterName} 并没有减少任何属性
 FormatText,{CharacterName} did not increase {AttributeName},{CharacterName} 并没有增加 {AttributeName}
-FormatText,{CharacterName} did not increase any attribute,{CharacterName} 没有上升任何能力
+FormatText,{CharacterName} did not increase any ability,{CharacterName} 没有上升任何能力
 FormatText,{CharacterName} discovered the {ItemName},{CharacterName} 发现了 {ItemName}
 FormatText,{CharacterName} dropped {AssetName},{CharacterName} 丢下了 {AssetName}
 FormatText,{CharacterName} emptied {AssetName},{CharacterName} 清空了 {AssetName}
@@ -3036,7 +3036,6 @@ LiteralText,ATTACK//noun,攻击
 LiteralText,attack//verb,攻击
 LiteralText,ATTACK//verb,攻击
 LiteralText,attacks,攻击
-LiteralText,attributes,能力加成
 LiteralText,AUTO,自动
 LiteralText,auto saving,自动存档
 LiteralText,AWAKE,醒来
@@ -3213,6 +3212,7 @@ LiteralText,DISMISS,解散
 LiteralText,DISMOUNT,下马
 LiteralText,Dismount which direction?,向哪个方向下马？
 LiteralText,Display dice rolls in the help,在帮助中显示骰子结果
+LiteralText,distribution,能力加成
 LiteralText,divine item,检测祝福/诅咒
 LiteralText,DIVINED,预言
 LiteralText,divined items,预言物品

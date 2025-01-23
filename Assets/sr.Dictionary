@@ -707,6 +707,7 @@ ClassDescription,"Benevolent caretakers, always willing to lend a helping hand t
 ClassDescription,"Champions of the winter realms, fierce and proud. Hardy and strong, they will boldly face any challenger until they meet a glorious death.","Šampioni zimskih carstava, žestoki i ponosni. Izdržljivi i jaki, hrabro će se suočiti sa svakim izazivačem dok ne dočekaju slavnu smrt."
 ClassDescription,"Charming minstrels, making their way through the world with their songs and stories. They are jacks-of-all-trades; alongside their troubadour talents, they dabble in both martial skills and spellcraft.","Šarmantni ministranti koji se probijaju kroz svet sa svojim pesmama i pričama. Oni su majstori za sve zanate; pored svojih trubadurskih talenata, bave se i borilačkim veštinama i čarolijama."
 ClassDescription,"Conductors of natural energies, these uniquely attuned spell casters derive their powers from the living world. Peaceful until threatened, they are unafraid to respond with animalistic savagery.","Provodnici prirodnih energija, ovi jedinstveno podešeni čarolije crpe svoje moći iz živog sveta. Mirni dok im se ne preti, oni se ne boje da odgovore životinjskim divljaštvom."
+ClassDescription,"Corrupt and hateful souls, who are motivated by causing carnage and spreading chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.","Ova pokvarena i mrska duša je motivisana samo pokoljem i haosom. Podložni nekontrolisanim napadima besa, oni donose propast i uništenje i prijateljima i neprijateljima."
 ClassDescription,"Daft harlequins, always carrying a trick up their sleeves. Eclectic and eccentric; they are unassuming masters of chaos, adept in many bewildering talents.","Lupi arlekini, koji uvek nose trik u rukavu. Eklektični i ekscentrični; oni su skromni majstori haosa, vešti u mnogim zbunjujućim talentima."
 ClassDescription,"Deft miscreants, conniving and quick with their wits. Through trial and error, they have learned that their best chance in avoiding the clutches of death is to stick to the shadows and outmanoeuvre their pursuers.","Spretni izgrednici, poverljivi i brzi u svojoj pameti. Putem pokušaja i grešaka, naučili su da je njihova najbolja šansa da izbegnu kandže smrti da se drže senki i nadmaše svoje goniče."
 ClassDescription,"Devoted to understanding the essence of magic and the marvel of engineering, these adept craftsman crave both knowledge and resources. Whether directed by madness or genius, they are a capable adversary and a tenacious survivor.","Posvećeni razumevanju suštine magije i čuda inženjeringa, ovi vešti zanatlije žude za znanjem i resursima. Bez obzira da li ih vodi ludilo ili genije, oni su sposobni protivnici i uporni preživeli."
@@ -726,9 +727,8 @@ ClassDescription,Questionably pious individuals from an ancient religious and mi
 ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.","Izuzetni naučni istraživači i neustrašivi istorijski istraživači. I drski i bezobrazni, podjednako traže znanje i priznanja. Neobično vole bičeve i dele zbunjujuću mržnju prema zmijama."
 ClassDescription,"Restless desperados, driven by wanderlust and troubled by the haunting memories of those they could not protect. They are sly masters of lead and steel, hellbent on redemption and retribution.","Nemirni očajnici, vođeni željom za lutanjem i uznemireni proganjajućim sećanjima na one koje nisu mogli da zaštite. Oni su lukavi majstori olova i čelika, pakleni na iskupljenje i odmazdu."
 ClassDescription,"Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. They are well-versed in divine magic and the judicial delivery of violence to those they deem unworthy of salvation.","Pravedni duhovnici, posvećeni žrtvovanju i širenju reči svojih svemoćnih božanstava. Oni su dobro upućeni u božansku magiju i sudsko vršenje nasilja nad onima koje smatraju nedostojnima spasenja."
-ClassDescription,"Strongly built, this tough and industrious worker is more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.","Snažno izgrađen, ovaj čvrst i marljiv radnik je više nego sposoban u opasnim situacijama. Tradicionalne prakse i teški alati se koriste za prevazilaženje prepreka u potrazi za vrednim dragim kamenjem."
+ClassDescription,"Strongly built, tough and industrious workers who are more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.","Snažno izgrađen, ovaj čvrst i marljiv radnik je više nego sposoban u opasnim situacijama. Tradicionalne prakse i teški alati se koriste za prevazilaženje prepreka u potrazi za vrednim dragim kamenjem."
 ClassDescription,"Sworn to uphold justice, these righteous warriors are dogmatic in pursuit of their sacred work. Classical martial skills are complemented by magical powers to protect the innocent and smite the wicked.","Zakleti se da će podržavati pravdu, ovi pravedni ratnici su dogmatični u potrazi za svojim svetim delom. Klasične borilačke veštine su dopunjene magičnim moćima da zaštite nevine i poraze zle."
-ClassDescription,"This corrupt and hateful soul is motivated only by carnage and chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.","Ova pokvarena i mrska duša je motivisana samo pokoljem i haosom. Podložni nekontrolisanim napadima besa, oni donose propast i uništenje i prijateljima i neprijateljima."
 ClassDescription,"Venerable men-at-arms clad in gleaming armour, renowned for their unyielding chivalry and conviction. They are high-born and are educated to be strategists and capable leaders on any battlefront.","Časni vojnici obučeni u blistave oklope, poznati po svom nepopustljivom viteštvu i ubeđenju. Visoko su rođeni i obrazovani su da budu stratezi i sposobni vođe na svakom frontu."
 ClassDescription,"Warrior slaves compelled to battle for the entertainment of raucous crowds, often to the death. Those that can survive this cauldron are trained into the most brutal of pit fighters.","Robovi ratnici primorani da se bore za zabavu razularenih gomila, često do smrti. Oni koji mogu da prežive ovaj kotao obučeni su u najbrutalnije borce u jame."
 ClassDescription,"Wilderness sentinels who understand the true balance of the universe. With bow in hand, they have devoted their lives to protecting the forces of nature from the corrupting touch of civilisation.","Čuvari divljine koji razumeju pravu ravnotežu univerzuma. Sa lukom u ruci, oni su svoje živote posvetili zaštiti prirodnih sila od kvarnog dodira civilizacije."
@@ -1811,9 +1811,9 @@ FormatText,{CharacterName} could not read the rumour,{CharacterName} nije mogao 
 FormatText,{CharacterName} crafted {AssetName} for {MaterialWeight} {MaterialName} and {Essence},{CharacterName} je napravio {AssetName} za {MaterialWeight} {MaterialName} i {Essence}
 FormatText,{CharacterName} crushed {DeviceName} with {BlockName},{CharacterName} je uništio {DeviceName} sa {BlockName}
 FormatText,{CharacterName} did not decrease {AttributeName},{CharacterName} nije smanjio {AttributeName}
-FormatText,{CharacterName} did not decrease any attribute,{CharacterName} nije smanjio nijedan atribut
+FormatText,{CharacterName} did not decrease any ability,{CharacterName} nije smanjio nijedan atribut
 FormatText,{CharacterName} did not increase {AttributeName},{CharacterName} nije povećao {AttributeName}
-FormatText,{CharacterName} did not increase any attribute,{CharacterName} nije povećao nijedan atribut
+FormatText,{CharacterName} did not increase any ability,{CharacterName} nije povećao nijedan atribut
 FormatText,{CharacterName} discovered the {ItemName},{CharacterName} je otkrio{ItemName}
 FormatText,{CharacterName} dropped {AssetName},{CharacterName} je izbacio {AssetName}
 FormatText,{CharacterName} emptied {AssetName},{CharacterName} je ispraznio {AssetName}
@@ -3036,7 +3036,6 @@ LiteralText,ATTACK//noun,NAPAD//imenica
 LiteralText,attack//verb,napasti//glagol
 LiteralText,ATTACK//verb,NAPASTI//glagol
 LiteralText,attacks,napadi
-LiteralText,attributes,atributi
 LiteralText,AUTO,AUTOMATSKI
 LiteralText,auto saving,automatsko memorisanje
 LiteralText,AWAKE,BUDAN
@@ -3213,6 +3212,7 @@ LiteralText,DISMISS,ODBACI
 LiteralText,DISMOUNT,SJAŠITI
 LiteralText,Dismount which direction?,Sjašite u kom pravcu?
 LiteralText,Display dice rolls in the help,Prikažite bacanje kockica u pomoć
+LiteralText,distribution,atributi
 LiteralText,divine item,božanska stavka
 LiteralText,DIVINED,BOŽANSKI
 LiteralText,divined items,božanske stavke

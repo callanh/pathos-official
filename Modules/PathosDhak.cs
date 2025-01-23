@@ -30,7 +30,7 @@ namespace Pathos
 
     public override void Execute(Generator Generator)
     {
-      Generator.BuildWorld(Generator.ImportQuest(Official.Resources.Quests.Dhak.GetBuffer()).World);
+      Generator.BuildWorld(Generator.ImportQuest(Official.Resources.Quests.Dhak.Load().GetBuffer()).World);
 
       if (Inv.Assert.IsEnabled)
       {

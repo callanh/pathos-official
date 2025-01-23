@@ -10,9 +10,13 @@ namespace Pathos
   {
     public SPDGameList()
     {
+      var Stocks = SPDDebug.codex.Stocks;
       var Items = SPDDebug.codex.Items;
       var Entities = SPDDebug.codex.Entities;
       var Features = SPDDebug.codex.Features;
+      var Devices = SPDDebug.codex.Devices;
+      var Materials = SPDDebug.codex.Materials;
+      var Sanctities = SPDDebug.codex.Sanctities;
 
       this.forbidden = Items.List.Where(item => item.Type == ItemType.Gem || item.Type == ItemType.Food || item.Type == ItemType.Coin || item.Type == ItemType.Tin || item.Type == ItemType.Egg).Union(new[]
       {
@@ -46,11 +50,10 @@ namespace Pathos
         Items.potion_of_amnesia
       }).ToHashSetX();
 
-      this.uniques = new Inv.DistinctList<Entity>()
+      this.uniques = new[]
       {
         Entities.Archmage_Dirachi,
         Entities.Archmage_Flaynn,
-        Entities.Kaloi_Thrym,
         Entities.Master_Kaen,
         Entities.Assassin_Mortimer,
         Entities.Ashikaga_Takauji,
@@ -65,17 +68,17 @@ namespace Pathos
         Entities.Yeenoghu,
       };
 
-      this.devices = SPDDebug.codex.Devices.List.Where(D => D.Frequency > 0).ToDistinctList();
+      this.devices = Devices.List.Where(D => D.Frequency > 0).ToArray();
 
-      this.realGems = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.Gem).Where(i => !i.Grade.Unique && i.Material == SPDDebug.codex.Materials.gemstone).ToDistinctList();
+      this.realGems = Items.List.Where(i => i.Type == ItemType.Gem).Where(i => !i.Grade.Unique && i.Material == Materials.gemstone).ToArray();
 
-      this.tools = SPDDebug.codex.Items.List
+      this.tools = Items.List
         .Where(i => i.Type == ItemType.Device || i.Type == ItemType.Eyewear || i.Type == ItemType.Instrument || i.Type == ItemType.Light || i.Type == ItemType.SkeletonKey || i.Type == ItemType.Tool)
-        .Where(i => !i.Grade.Unique && i.Rarity > 0 && i != SPDDebug.codex.Items.porter).ToDistinctList();
+        .Where(i => !i.Grade.Unique && i.Rarity > 0 && i != Items.porter).ToArray();
 
-      this.thrownWeapons = SPDDebug.codex.Items.List.Where(i => i.Type == ItemType.ThrownWeapon).Where(i => !i.Grade.Unique && !i.IsAbolitionCandidate()).ToDistinctList();
+      this.thrownWeapons = Items.List.Where(i => i.Type == ItemType.ThrownWeapon).Where(i => !i.Grade.Unique && !i.IsAbolitionCandidate()).ToArray();
 
-      this.thrownFirearms = new Inv.DistinctList<Item>()
+      this.thrownFirearms = new[]
       {
         Items.stick_of_dynamite,
         Items.rocket,
@@ -83,116 +86,43 @@ namespace Pathos
         Items.gas_grenade
       };
 
-      this.goodWeapon = new Inv.DistinctList<Item>()
+      this.goodWeapon = Items.List.Where(I => I.IsWeapon() && !I.Grade.Unique && I.Rarity > 0 && (I.Material == Materials.adamantine || I.Material == Materials.mithril || I.Material == Materials.silver || I.Material == Materials.bone || I.Material == Materials.crystal))
+        .Union(new[]
       {
-        Items.adamantine_arrow,
-        Items.adamantine_axe,
-        Items.adamantine_bow,
-        Items.adamantine_dagger,
-        Items.adamantine_greataxe,
-        Items.adamantine_greatsword,
-        Items.adamantine_long_sword,
-        Items.adamantine_rapier,
-        Items.adamantine_sabre,
-        Items.adamantine_short_sword,
-        Items.adamantine_spear,
-        Items.adamantine_twohanded_sword,
-        Items.mithril_battleaxe,
-        Items.mithril_katar,
-        Items.mithril_long_sword,
-        Items.mithril_sabre,
-        Items.mithril_short_sword,
-        Items.mithril_twohanded_sword,
-        Items.mithril_arrow,
-        Items.mithril_crossbow_bolt,
-        Items.mithril_dagger,
-        Items.mithril_whip,
-        Items.mithril_lance,
-        Items.silver_heavy_hammer,
-        Items.silver_long_sword,
-        Items.silver_mace,
-        Items.silver_sabre,
-        Items.silver_short_sword,
-        Items.silver_twohanded_sword,
-        Items.silver_arrow,
-        Items.silver_crossbow_bolt,
-        Items.silver_lance,
-        Items.silver_spear,
-        Items.silver_dagger,
         Items.magic_horseshoe,
-        Items.flash_staff,
-        Items.dread_staff,
-        Items.battle_staff,
-        Items.thunder_staff,
         Items.trident,
         Items.tsurugi,
         Items.katana,
         Items.wakizashi,
         Items.yumi
-      };
+      }).ToArray();
 
-      this.randomArmour = SPDDebug.codex.Items.List.Where(armour =>
-          (armour.Type == ItemType.Boots || armour.Type == ItemType.Cloak ||
-          armour.Type == ItemType.Gloves || armour.Type == ItemType.Helmet || armour.Type == ItemType.Shield ||
-          armour.Type == ItemType.Shirt || armour.Type == ItemType.Suit) && !armour.Grade.Unique && armour.Rarity > 0).ToDistinctList();
+      this.randomArmour = Items.List.Where(I =>
+          (I.Type == ItemType.Boots || I.Type == ItemType.Cloak ||
+          I.Type == ItemType.Gloves || I.Type == ItemType.Helmet || I.Type == ItemType.Shield ||
+          I.Type == ItemType.Shirt || I.Type == ItemType.Suit) && !I.Grade.Unique && I.Rarity > 0).ToArray();
 
-      this.amulets = SPDDebug.codex.Items.List.Where(
-          amulet => amulet.Type == ItemType.Amulet && !amulet.Grade.Unique && amulet.Rarity > 0 && amulet != SPDDebug.codex.Items.amulet_of_change).ToDistinctList();
+      this.amulets = Items.List.Where(
+          I => I.Type == ItemType.Amulet && !I.Grade.Unique && I.Rarity > 0 && I != Items.amulet_of_change).ToArray();
 
-      this.randomWeapon = SPDDebug.codex.Items.List.Where(
-          weapon => (weapon.Type == ItemType.MeleeWeapon || weapon.Type == ItemType.ReachWeapon || weapon.Type == ItemType.RangedWeapon) && !weapon.Grade.Unique && weapon.Rarity > 0).ToDistinctList();
+      this.randomWeapon = Items.List.Where(
+          I => (I.Type == ItemType.MeleeWeapon || I.Type == ItemType.ReachWeapon || I.Type == ItemType.RangedWeapon) && !I.Grade.Unique && I.Rarity > 0).ToArray();
 
-      this.books = SPDDebug.codex.Items.List.Where(book => book.Type == ItemType.Book && !ItemForbidden(book)).ToDistinctList();
+      this.books = Items.List.Where(I => I.Type == ItemType.Book && !I.Grade.Unique && I.Rarity > 0 && !ItemForbidden(I)).ToArray();
 
-      this.potions = SPDDebug.codex.Stocks.potion.Items.Where(I => !I.Grade.Unique && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
+      this.potions = Stocks.potion.Items.Where(I => !I.Grade.Unique && I.Rarity > 0 && !ItemForbidden(I)).ToProbability(I => I.Rarity);
 
-      this.scrolls = SPDDebug.codex.Stocks.scroll.Items.Where(I => !I.Grade.Unique && !ItemForbidden(I) && I.Rarity > 0).ToProbability(I => I.Rarity);
+      this.scrolls = Stocks.scroll.Items.Where(I => !I.Grade.Unique && I.Rarity > 0 && !ItemForbidden(I)).ToProbability(I => I.Rarity);
 
-      this.unleveledRing = new Inv.DistinctList<Item>()
-      {
-        Items.ring_of_aggravation,
-        Items.ring_of_berserking,
-        Items.ring_of_cold_resistance,
-        Items.ring_of_conflict,
-        Items.ring_of_fire_resistance,
-        Items.ring_of_free_action,
-        Items.ring_of_hunger,
-        Items.ring_of_levitation,
-        Items.ring_of_naught,
-        Items.ring_of_poison_resistance,
-        Items.ring_of_regeneration,
-        Items.ring_of_searching,
-        Items.ring_of_see_invisible,
-        Items.ring_of_shock_resistance,
-        Items.ring_of_sleeping,
-        Items.ring_of_slow_digestion,
-        Items.ring_of_stealth,
-        Items.ring_of_sustain_ability,
-        Items.ring_of_teleport_control,
-        Items.ring_of_teleportation,
-        Items.ring_of_warning
-      };
+      this.leveledRing = Items.List.Where(I => I.Type == ItemType.Ring && !I.Grade.Unique && I.Rarity > 0 && I.HasEnchantment() && !ItemForbidden(I)).ToArray();
 
-      this.wands = SPDDebug.codex.Items.List.Where(
-        wand => wand.Type == ItemType.Wand && !wand.Grade.Unique && wand.Rarity > 0 && !ItemForbidden(wand)).ToDistinctList();
+      this.unleveledRing = Items.List.Where(I => I.Type == ItemType.Ring && !I.Grade.Unique && I.Rarity > 0 && !I.HasEnchantment() && !ItemForbidden(I)).ToArray();
+      
+      this.wands = Items.List.Where(I => I.Type == ItemType.Wand && !I.Grade.Unique && I.Rarity > 0 && !ItemForbidden(I)).ToArray();
 
-      this.randRing = SPDDebug.codex.Items.List.Where(
-        ring => ring.Type == ItemType.Ring && !ring.Grade.Unique && ring.Rarity > 0 && ring != SPDDebug.codex.Items.ring_of_polymorph && ring != SPDDebug.codex.Items.ring_of_polymorph_control).ToDistinctList();
+      this.randRing = Items.List.Where(I => I.Type == ItemType.Ring && !I.Grade.Unique && I.Rarity > 0 && !ItemForbidden(I)).ToArray();
 
-      this.leveledRing = new Inv.DistinctList<Item>()
-      {
-        Items.ring_of_accuracy,
-        Items.ring_of_adornment,
-        Items.ring_of_constitution,
-        Items.ring_of_dexterity,
-        Items.ring_of_impact,
-        Items.ring_of_intelligence,
-        Items.ring_of_protection,
-        Items.ring_of_strength,
-        Items.ring_of_wisdom,
-      };
-
-      this.goodArmour = new Inv.DistinctList<Item>()
+      this.goodArmour = new[]
       {
         Items.adamantine_plate_mail,
         Items.mithril_barding,
@@ -208,17 +138,13 @@ namespace Pathos
         Items.battle_robe,
         Items.elemental_robe,
         Items.fleet_robe,
-      };
-      goodArmour.AddRange(Items.List.Where(
-              Armour => Armour.Type == ItemType.Cloak).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
-      goodArmour.AddRange(Items.List.Where(
-              Armour => Armour.Type == ItemType.Boots).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
-      goodArmour.AddRange(Items.List.Where(
-              Armour => Armour.Type == ItemType.Gloves).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
-      goodArmour.AddRange(Items.List.Where(
-              Armour => Armour.Type == ItemType.Helmet).Where(Armour => !Armour.Grade.Unique && Armour.Equip.HasEffects() && Armour.DefaultSanctity != SPDDebug.codex.Sanctities.Cursed));
+      }
+        .Union(Items.List.Where(I => I.Type == ItemType.Cloak && !I.Grade.Unique && I.Equip.HasEffects() && I.DefaultSanctity != Sanctities.Cursed))
+        .Union(Items.List.Where(I => I.Type == ItemType.Boots && !I.Grade.Unique && I.Equip.HasEffects() && I.DefaultSanctity != Sanctities.Cursed))
+        .Union(Items.List.Where(I => I.Type == ItemType.Gloves && !I.Grade.Unique && I.Equip.HasEffects() && I.DefaultSanctity != Sanctities.Cursed))
+        .Union(Items.List.Where(I => I.Type == ItemType.Helmet && !I.Grade.Unique && I.Equip.HasEffects() && I.DefaultSanctity != Sanctities.Cursed)).ToArray();
 
-      this.magicFood = new Inv.DistinctList<Item>()
+      this.magicFood = new[]
       {
         Items.apple,
         Items.banana,
@@ -239,7 +165,7 @@ namespace Pathos
         Items.sprig_of_wolfsbane
       };
 
-      this.features = new Inv.DistinctList<Feature>()
+      this.features = new[]
       {
         Features.altar,
         Features.bed,
@@ -437,24 +363,24 @@ namespace Pathos
       return SPDRandom.Int(ArtifactChance) == 0 ? SPDDebug.generator.RandomUniqueItem(I => !ItemForbidden(I)) : null;
     }
 
-    private readonly Inv.DistinctList<Item> randomArmour;
-    private readonly Inv.DistinctList<Item> goodArmour;
-    private readonly Inv.DistinctList<Item> magicFood;
-    private readonly Inv.DistinctList<Item> leveledRing;
-    private readonly Inv.DistinctList<Item> unleveledRing;
-    private readonly Inv.DistinctList<Item> wands;
-    private readonly Inv.DistinctList<Item> amulets;
-    private readonly Inv.DistinctList<Item> randRing;
-    private readonly Inv.DistinctList<Item> randomWeapon;
-    private readonly Inv.DistinctList<Item> books;
-    private readonly Inv.DistinctList<Item> goodWeapon;
-    private readonly Inv.DistinctList<Item> thrownFirearms;
-    private readonly Inv.DistinctList<Item> thrownWeapons;
-    private readonly Inv.DistinctList<Item> tools;
-    private readonly Inv.DistinctList<Item> realGems;
-    private readonly Inv.DistinctList<Device> devices;
-    private readonly Inv.DistinctList<Entity> uniques;
-    private readonly Inv.DistinctList<Feature> features;
+    private readonly IReadOnlyList<Item> randomArmour;
+    private readonly IReadOnlyList<Item> goodArmour;
+    private readonly IReadOnlyList<Item> magicFood;
+    private readonly IReadOnlyList<Item> leveledRing;
+    private readonly IReadOnlyList<Item> unleveledRing;
+    private readonly IReadOnlyList<Item> wands;
+    private readonly IReadOnlyList<Item> amulets;
+    private readonly IReadOnlyList<Item> randRing;
+    private readonly IReadOnlyList<Item> randomWeapon;
+    private readonly IReadOnlyList<Item> books;
+    private readonly IReadOnlyList<Item> goodWeapon;
+    private readonly IReadOnlyList<Item> thrownFirearms;
+    private readonly IReadOnlyList<Item> thrownWeapons;
+    private readonly IReadOnlyList<Item> tools;
+    private readonly IReadOnlyList<Item> realGems;
+    private readonly IReadOnlyList<Device> devices;
+    private readonly IReadOnlyList<Entity> uniques;
+    private readonly IReadOnlyList<Feature> features;
     private readonly Probability<Item> potions;
     private readonly Probability<Item> scrolls;
     private readonly HashSet<Item> forbidden;

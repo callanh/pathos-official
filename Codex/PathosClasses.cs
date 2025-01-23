@@ -297,7 +297,7 @@ namespace Pathos
       miner = AddClass(C =>
       {
         C.Name = "miner";
-        C.Description = "Strongly built, this tough and industrious worker is more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.";
+        C.Description = "Strongly built, tough and industrious workers who are more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(11, 1.d8());
         C.ManaAdvancement.Set(1, Dice.Fixed(1));
@@ -820,7 +820,7 @@ namespace Pathos
       reaver = AddClass(C =>
       {
         C.Name = "reaver";
-        C.Description = "This corrupt and hateful soul is motivated only by carnage and chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.";
+        C.Description = "Corrupt and hateful souls, who are motivated by causing carnage and spreading chaos. Subject to uncontrollable bouts of rage, they bring doom and destruction to friend and foe alike.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(18, 1.d12());
         C.ManaAdvancement.Set(1, Dice.Zero);

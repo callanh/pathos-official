@@ -330,7 +330,7 @@
 . Weapons and armour have a modifier that can be changed with enchantment magic.; 武器和防具有一個+x的前綴，來表示當前附魔的等級。
 . A modifier of +0 is a normal, mundane item.; +0的附魔表示普通的道具。
 . Modifiers on armour apply to your defence score.; 防具上的附魔會加到你的防禦力裡。
-. Modifiers on weapons apply to your attack and damage scores.; 武器上的附魔會加到你的攻擊力和傷害裡。
+. Modifiers on weapons apply to your attack and damage scores.; 武器上的附魔會加到你的攻擊力和傷害力。
 /
 . The {grade} items are limited to between {Min} and {Max}.; 「{grade}」級別的物品，附魔等級的限制範圍是從{Min}到{Max}。
 . The {grade} items can be enchanted up to {Modifier} and will reset to zero if this is exceeded.; {grade}物品的最高附魔等級為{Modifier}，再試圖強化它會將附魔重置為+0。
