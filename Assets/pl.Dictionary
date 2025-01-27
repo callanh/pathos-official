@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,Krótka
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Wysmukła i delikatna zbroja z mithrilu.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Wysmukła i lśniąca zbroja z mithrilu.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,Klasyczny kapelusz czarodzieja haftowany w gwiazdy i księżyce.
-AppearanceName,adamantine slug,adamantowy ślimak
+AppearanceName,adamantine slug,adamantowy pocisk
 AppearanceName,adamantine staff,adamantowy kostur
 AppearanceName,agate ring,pierścień z agatem
 AppearanceName,aluminium wand,aluminiowa różdżka
@@ -214,10 +214,10 @@ AppearanceName,marker,znacznik
 AppearanceName,medallion amulet,amulet medalion
 AppearanceName,metal canister,metalowy pojemnik
 AppearanceName,metal pineapple,metalowy ananas
-AppearanceName,metal slug,metalowy ślimak
+AppearanceName,metal slug,metalowy pocisk
 AppearanceName,milky potion,mleczna mikstura
 AppearanceName,mithril ring,mithrilowy pierścień
-AppearanceName,mithril slug,mithrilowy ślimak
+AppearanceName,mithril slug,mithrilowy pocisk
 AppearanceName,mithril staff,mithrilowy kostur
 AppearanceName,mood ring,pierścień nastroju
 AppearanceName,moonstone ring,pierścień z kamieniem księżycowym
@@ -253,7 +253,7 @@ AppearanceName,plaid book,kraciasta księga
 AppearanceName,plain book,zwyczajna księga
 AppearanceName,plain ring,zwykły pierścionek
 AppearanceName,plain robe,prosta szata
-AppearanceName,plastic slug,plastikowy ślimak
+AppearanceName,plastic slug,plastikowy pocisk
 AppearanceName,plastic stick,plastikowy kij
 AppearanceName,platinum wand,różdżka z platyny
 AppearanceName,plumed helmet,hełm z pióropuszem
@@ -327,7 +327,7 @@ AppearanceName,short wand,krótka różdżka
 AppearanceName,shoulder gun,pistolet naramienny
 AppearanceName,silver book,srebrna księga
 AppearanceName,silver ring,srebrny pierścień
-AppearanceName,silver slug,srebrny ślimak
+AppearanceName,silver slug,srebrny pocisk
 AppearanceName,silver wand,srebrna różdżka
 AppearanceName,single-edged polearm,tyczka jednosieczna
 AppearanceName,sky blue potion,błękitna mikstura
@@ -774,9 +774,9 @@ ClassName,miner//non-binary,górnik
 ClassName,monk//female,mniszka
 ClassName,monk//male,mnich
 ClassName,monk//non-binary,mnich
-ClassName,mystic//female,mistyczna
-ClassName,mystic//male,mistyczny
-ClassName,mystic//non-binary,mistyczny
+ClassName,mystic//female,mistyczka
+ClassName,mystic//male,mistyk
+ClassName,mystic//non-binary,mistyk
 ClassName,necromancer//female,nekromantka
 ClassName,necromancer//male,nekromanta
 ClassName,necromancer//non-binary,nekromanta
@@ -792,12 +792,12 @@ ClassName,pirate//non-binary,pirat
 ClassName,priest//female,kapłanka
 ClassName,priest//male,kapłan
 ClassName,priest//non-binary,kapłan
-ClassName,ranger//female,leśniczka
-ClassName,ranger//male,leśniczy
-ClassName,ranger//non-binary,leśniczy
-ClassName,reaver//female,brukarz
-ClassName,reaver//male,brukarz
-ClassName,reaver//non-binary,brukarz
+ClassName,ranger//female,łowczyni
+ClassName,ranger//male,łowca
+ClassName,ranger//non-binary,łowca
+ClassName,reaver//female,rozbójnik
+ClassName,reaver//male,rozbójnik
+ClassName,reaver//non-binary,rozbójnik
 ClassName,rogue//female,łotrzyk
 ClassName,rogue//male,łotrzyk
 ClassName,rogue//non-binary,łotrzyk
@@ -1569,7 +1569,7 @@ EntityName,salamander,salamandra
 EntityName,sandestin,sandestyn
 EntityName,sapphire golem,szafirowy golem
 EntityName,sasquatch,wielka stopa
-EntityName,satyr,Satyr
+EntityName,satyr,satyr
 EntityName,scorpion,skorpion
 EntityName,Scorpius,Scorpius
 EntityName,scramper,krępowacz
@@ -1717,7 +1717,7 @@ EntityName,young yellow dragon,młody zółty smok
 EntityName,zruty,zruty
 EquipAction,employ,wyposaż
 EquipAction,purse,zbierz
-EquipAction,ready,podnieś
+EquipAction,ready,przygotuj
 EquipAction,wear,załóż
 EquipAction,wield,wyposaż
 EquipSlot,amulet,amulet
@@ -3225,9 +3225,9 @@ LiteralText,double damage when mounted,podwójne obrażenia po osiodłaniu
 LiteralText,downgrade to,obniżenie do
 LiteralText,downloading update,pobieranie aktualizacji
 LiteralText,drain item,opróżnij przedmiot
-LiteralText,drop,rzuć
-LiteralText,DROP,RZUĆ
-LiteralText,DUAL WIELD,POBOCZNE NARZĘDZIE
+LiteralText,drop,upuść
+LiteralText,DROP,UPUŚĆ
+LiteralText,DUAL WIELD,DRUGA BROŃ
 LiteralText,duration,wytrzymałość
 LiteralText,edible items,artykuły spożywcze
 LiteralText,egg,jajko
@@ -3354,7 +3354,7 @@ LiteralText,infinite quantity,nieskończona ilość
 LiteralText,influenced actions,działania pod wpływem
 LiteralText,INSCRIBE,OPIS
 LiteralText,INSCRIBE ITEM,OPIS PRZEDMIOTU
-LiteralText,inscription?,napis
+LiteralText,inscription?,napis?
 LiteralText,instruct each character,poinstruuj każdą postać
 LiteralText,INSUFFICIENT GOLD,NIEWYSTARCZAJĄCA ILOŚĆ ZŁOTA
 LiteralText,Inventory,Ekwipunek
@@ -3378,7 +3378,7 @@ LiteralText,KNOWLEDGE,WIEDZA
 LiteralText,LANGUAGE,JĘZYK
 LiteralText,LEARN ALL SPELLS,POZNAJ WSZYSTKIE ZAKLĘCIA
 LiteralText,learn spells,poznaj zaklęcia
-LiteralText,LEFT RING,lewy pierścień
+LiteralText,LEFT RING,LEWY PIERŚCIEŃ
 LiteralText,LEVEL CHART,SCHEMAT POZIOMU
 LiteralText,level//rank,poziom
 LiteralText,liberate entity,wyzwolić
