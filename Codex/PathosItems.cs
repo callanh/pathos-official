@@ -2433,7 +2433,7 @@ namespace Pathos
         I.Glyph = Glyphs.fedora;
         I.Sonic = Sonics.armour;
         I.Series = null;
-        I.Rarity = 0;
+        I.Rarity = 1;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(30);
         I.Material = Materials.cloth;
