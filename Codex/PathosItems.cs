@@ -10019,7 +10019,7 @@ namespace Pathos
         I.Essence = ToolEssence4;
         I.Price = Gold.FromCoins(50);
         I.ChargesDice = 1.d5() + 4;
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.horn, Use =>
+        I.AddElementBlastUse(Motions.play, Elements.fire, Delay.FromTurns(10), Sonics.horn, Use =>
         {
           Use.SetCast().Beam(Beams.fire, 1.d4() + 4);
           Use.Apply.WhenConfused
@@ -10054,7 +10054,7 @@ namespace Pathos
         I.Essence = ToolEssence4;
         I.Price = Gold.FromCoins(50);
         I.ChargesDice = 1.d5() + 4;
-        I.AddObviousUse(Motions.play, Delay.FromTurns(10), Sonics.horn, Use =>
+        I.AddElementBlastUse(Motions.play, Elements.cold, Delay.FromTurns(10), Sonics.horn, Use =>
         {
           Use.SetCast().Beam(Beams.cold, 1.d4() + 4);
           Use.Apply.WhenConfused

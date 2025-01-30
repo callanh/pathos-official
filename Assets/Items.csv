@@ -382,8 +382,8 @@ tool,instrument,bell of strife,bell,,,,,,silver,40,300,150,2,standard,FALSE,
 tool,instrument,brass bugle,bugle,A hand-held brass horn.,,,,,copper,5,100,15,4,standard,FALSE,play:Debuff:sleeping|/:0
 tool,instrument,bronze bell,bell,,,,,,copper,5,300,10,10,standard,FALSE,play:Debuff:sleeping|/:0
 tool,instrument,drum of earthquake,drum,,,,,,leather,100,250,25,2,standard,FALSE,play:AreaOfEffect:deafness|/:0
-tool,instrument,fire horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,
-tool,instrument,frost horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,
+tool,instrument,fire horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,play:Blast:|fire/:0
+tool,instrument,frost horn,horn,,,,,,bone,50,180,50,2,standard,FALSE,play:Blast:|cold/:0
 tool,instrument,horn of plenty,horn,,,,,,bone,100,180,50,2,standard,FALSE,
 tool,instrument,leather drum,drum,,,,,,leather,5,250,25,2,standard,FALSE,play:Debuff:sleeping|/:0
 tool,instrument,magic bugle,bugle,,,,,,copper,50,100,35,2,standard,FALSE,
