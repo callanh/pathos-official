@@ -23,7 +23,7 @@
     <PathosInstallation>C:\Games\Pathos</PathosInstallation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(PathosDeveloper)' != 'OpenSource' ">
-    <PathosInstallation>C:\Development\Notlame\Pathos\PathosGameW\bin\Debug\net48</PathosInstallation>
+    <PathosInstallation>C:\Projects\Notlame\Pathos\PathosGameW\bin\Debug\net48</PathosInstallation>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -34,7 +34,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(PathosDeveloper)' != 'OpenSource' ">
-    <ProjectReference Include="..\..\..\Forge\Inv\InvLibrary\InvLibrary.csproj" />
+    <ProjectReference Include="..\..\..\Invention\InvLibrary\InvLibrary.csproj" />
     <ProjectReference Include="..\PathosLibrary\PathosLibrary.csproj" />
     <ProjectReference Include="..\PathosEngine\PathosEngine.csproj" />
   </ItemGroup>
