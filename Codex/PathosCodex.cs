@@ -653,6 +653,9 @@ namespace Pathos
         if (Entity.IsMercenary && !Entity.IsGuardian)
           Record($"Entity {Entity.Name} must be a guardian if they are a mercenary.");
 
+        if (Entity.IsMercenary && Entity.Kind != Codex.Kinds.mercenary)
+          Record($"Entity {Entity.Name} must belong to the mercenary kind.");
+
         if (!Entity.Figure.Has(Codex.Anatomies.limbs) && Entity.Startup.Talents.Contains(Codex.Properties.jumping))
           Record($"Entity {Entity.Name} without limbs should not be able to jump.");
 

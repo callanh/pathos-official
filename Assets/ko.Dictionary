@@ -41,7 +41,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,짧지�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,날렵하고 섬세해 보이는 미스릴 갑옷이다.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,날렵하고 광택이 나는 미스릴 갑옷이다.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,이 고전적인 마법사 모자는 달과 별 무늬로 장식되어 있다.
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,아다만티움 슬러그탄
 AppearanceName,adamantine staff,아다만티움 지팡이
 AppearanceName,agate ring,마노 반지
 AppearanceName,aluminium wand,알루미늄 마법봉
@@ -1168,7 +1168,7 @@ EntityName,Cthulhu,크툴루
 EntityName,cyclops,사이클롭스
 EntityName,dao,다오
 EntityName,dark cleric,어둠의 사제
-EntityName,Death,사신
+EntityName,Death,죽음
 EntityName,death dog,죽음의 개
 EntityName,deep gnome,딥 노움
 EntityName,deep one,깊은 곳의 존재
@@ -1450,7 +1450,7 @@ EntityName,master mind flayer,마스터 마인드 플레이어
 EntityName,mastodon,마스토돈
 EntityName,Maugneshaagar,마우그네샤가
 EntityName,medusa,메두사
-EntityName,mellified man,꿀발린 미라
+EntityName,mellified man,밀인
 EntityName,merchant,상인
 EntityName,Metamorphius,메타모르피우스
 EntityName,migo drone,미고
@@ -1786,7 +1786,7 @@ FormatText,{Chance} leaves corpse,시체의 {Chance}이(가) 사라짐
 FormatText,{Chance} per room,{Chance} 방 당
 FormatText,{Chance} react to {ElementName},{Chance}이(가) {ElementName}속성에 반응
 FormatText,{CharacterName} {EndType},{CharacterName}은(는) {EndType}
-FormatText,{CharacterName} {EndType} by {EndCause},{CharacterName}은(는)  {EndCause}에게 {EndType}
+FormatText,{CharacterName} {EndType} by {EndCause},{CharacterName}은(는) {EndCause}에게 {EndType}
 FormatText,{CharacterName} {MotionPastName} {AssetName},{CharacterName}은(는) {AssetName}을(를) {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {AssetName} but nothing happened,{CharacterName}은(는) {AssetName}을(를) {MotionPastName}했지만 아무 일도 일어나지 않았다
 FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName}은(는) {FixtureName}을(를) {MotionPastName}
@@ -1954,7 +1954,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},벽 
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},문 변환 {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},바닥 변환 {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},휘발성 물질 변환 {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},{StockName} {QualifierText}를 {ItemNames} 로 변환
 FormatText,cripple {AttributeName},{AttributeName} 능력치 장애 효과
 FormatText,decrease {AttributeName} by {AdjustmentDice},{AttributeName}을(를) {AdjustmentDice}만큼 감소시킨다
 FormatText,decrease all abilities by {AdjustmentDice},모든 능력치를 {AdjustmentDice} 만큼 감소시킨다
@@ -2244,12 +2244,12 @@ ItemName,adamantine arrow,아다만티움 화살
 ItemName,adamantine axe,아다만티움 도끼
 ItemName,adamantine bident,아다만티움 이지창
 ItemName,adamantine bow,아다만티움 활
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,아다만티움 총알
 ItemName,adamantine dagger,아다만티움 단검
-ItemName,adamantine dart,
+ItemName,adamantine dart,아다만티움 다트
 ItemName,adamantine greataxe,아다만티움 전투도끼
 ItemName,adamantine greatsword,아다만티움 대검
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,아다만티움 손도끼
 ItemName,adamantine long sword,아다만티움 롱소드
 ItemName,adamantine plate mail,아다만티움 판금 갑옷
 ItemName,adamantine rapier,아다만티움 레이피어
@@ -2828,7 +2828,7 @@ ItemName,vegetable corpse,식물 시체
 ItemName,Verimurus,베리무루스
 ItemName,violet glass bauble,보라색 싸구려 유리보석
 ItemName,Voltaic,볼타익
-ItemName,Vorpal Blade,보팔 검
+ItemName,Vorpal Blade,보팔 블레이드
 ItemName,voulge,볼제
 ItemName,wakizashi,와키자시
 ItemName,wand of animation,생동화의 마법봉
@@ -2997,8 +2997,8 @@ LiteralText,actions,행동
 LiteralText,ADD LEVEL,레벨 추가
 LiteralText,Add new adventurer,새로운 모험가 추가
 LiteralText,ADJUST,조절
-LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adjust difficulty,난이도 조절
+LiteralText,adventurer,모험가
 LiteralText,afflict,감염
 LiteralText,AFFLICTED,감염됨
 LiteralText,affliction?,감염?
@@ -3182,8 +3182,8 @@ LiteralText,device,장치
 LiteralText,DEVICES,장치
 LiteralText,devour item,재산 몰수
 LiteralText,DIAGNOSTICS,진단 도구
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,다이얼로그
+LiteralText,dialogue?,다이얼로그?
 LiteralText,DID NOT RANK,순위 안에 들지 못함
 LiteralText,diet,식성
 LiteralText,difficulty,난이도
@@ -3224,7 +3224,7 @@ LiteralText,DOOR,문
 LiteralText,double damage when mounted,승마중에 사용시 두 배의 피해를 줍니다
 LiteralText,downgrade to,다운그레이드:
 LiteralText,downloading update,업데이트 다운로드중
-LiteralText,drain item,
+LiteralText,drain item,아이템 흡수
 LiteralText,drop,떨어트림
 LiteralText,DROP,떨어뜨리기
 LiteralText,DUAL WIELD,쌍수 장비
@@ -3295,7 +3295,7 @@ LiteralText,GAIN LEVEL,레벨 획득
 LiteralText,gain nutrition,영양분 획득
 LiteralText,gain skill,숙련도 획득
 LiteralText,gate,게이트
-LiteralText,gates,
+LiteralText,gates,문들
 LiteralText,gather,모이다
 LiteralText,gender,성별
 LiteralText,genocide,학살
@@ -3325,7 +3325,7 @@ LiteralText,HIDE,숨기
 LiteralText,hiding,은신
 LiteralText,HINT,힌트
 LiteralText,HIRE,고용
-LiteralText,horde,
+LiteralText,horde,무리
 LiteralText,HORDES,군단
 LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
@@ -3454,7 +3454,7 @@ LiteralText,non divined items,점치지 않은 아이템
 LiteralText,non edible items,식품 없음
 LiteralText,non enchanted items,강화되지 않은 아이템
 LiteralText,normal animations,보통 애니메이션
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,지금은 안돼!
 LiteralText,Nothing equipped or carried,장비하거나 소지중인 것이 없다.
 LiteralText,nothing happens,아무것도 일어나지 않음
 LiteralText,Nothing of interest,아무것도 없음
@@ -3493,7 +3493,7 @@ LiteralText,platform,플랫폼
 LiteralText,Play,플레이
 LiteralText,Play a sound effect?,음향 효과를 재생할까요?
 LiteralText,PLAYER,플레이어
-LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
+LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,앱에서 강제 종료를 하면 복구할 수 없는 손상된 저장 파일이 생성될 수 있습니다.
 LiteralText,Please offer any clarification,설명을 부탁드립니다.
 LiteralText,Please provide your feedback,피드백을 주세요.
 LiteralText,Please rotate your device to landscape :-),풍경을 보려면 장치를 회전하세요 :-)
@@ -3528,7 +3528,7 @@ LiteralText,RACES,종족
 LiteralText,random,무작위
 LiteralText,RANDOM,무작위
 LiteralText,random dungeon seed,무작위 던전 시드
-LiteralText,random level,
+LiteralText,random level,무작위 레벨
 LiteralText,random points,무작위 포인트
 LiteralText,rank,랭크
 LiteralText,rarity,희귀도
@@ -3593,7 +3593,7 @@ LiteralText,REVERT,실행 취소
 LiteralText,RIGHT RING,오른쪽 반지
 LiteralText,rigid,단단한
 LiteralText,ROTATE,회전
-LiteralText,route entity,
+LiteralText,route entity,개체 경로
 LiteralText,rumour,루머
 LiteralText,sacrifice item,희생
 LiteralText,SANITY CHECK,정신 진단
@@ -3613,8 +3613,8 @@ LiteralText,secret,비밀
 LiteralText,SECRET,비밀
 LiteralText,seed,시드
 LiteralText,SELECT ATMOSPHERE,장소 선택
-LiteralText,Select Companion Tile,
-LiteralText,Select Hero Tile,
+LiteralText,Select Companion Tile,동반자 타일 선택
+LiteralText,Select Hero Tile,영웅 타일 선택
 LiteralText,SELECT ITEM,아이템 선택
 LiteralText,SELECT LANGUAGE,언어 선택
 LiteralText,SELECT MAP,지도 선택
@@ -3685,7 +3685,7 @@ LiteralText,TAKE,가져가기
 LiteralText,TAKE ALL,전부 가져가기
 LiteralText,talents,재능
 LiteralText,TALENTS,재능
-LiteralText,TALK,
+LiteralText,TALK,대화
 LiteralText,target,타겟
 LiteralText,TELEKINESIS,염동
 LiteralText,Telekinesis which direction?,어느 방향으로 염동력을 씁니까?
@@ -3723,7 +3723,7 @@ LiteralText,transients,효과
 LiteralText,TRANSIENTS,효과
 LiteralText,transition,층 이동
 LiteralText,TRANSLATIONS,번역
-LiteralText,transport entity,
+LiteralText,transport entity,개체 전송
 LiteralText,TRAP,함정
 LiteralText,trap?,함정?
 LiteralText,trapped,덫쳐진
@@ -3771,7 +3771,7 @@ LiteralText,visit shrine,제단 방문
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,visit zoo,서식지 방문
 LiteralText,VOID SPACE,공허
-LiteralText,volatile,
+LiteralText,volatile,휘발성
 LiteralText,VOLATILES,휘발성 물질
 LiteralText,vomit nutrition,구토
 LiteralText,vulnerable to,약점 :
@@ -3848,33 +3848,33 @@ ModuleDescription,"Explore a vast, procedurally generated overland map containin
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,손수 제작된 맵에서 위대한 모험을 떠납니다. 답답한 던전을 벗어나 도전정신을 자극하는 퀘스트를 시작해보세요!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,흥미로운 모험과 비밀이 기다리지만 오래 머물지는 마십시오. 당신은 죽거나 내려가야만 합니다. Shattered Pixel Dungeon의 지형 생성에 기반합니다.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Pathos의 메카닉을 실험하기위한 샌드박스 입니다. 두개의 방으로 이루어진 맵에서 모든 아이템, 함정, 던전 시설을 마음껏 다룰 수 있습니다."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,지상에서 온 소식이 있나요? 여기 너무 오래 있어서 햇빛과 날씨가 그리워요.
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,상인들이 파는 물건의 절반은 당신 같은 모험가들의 시체에서 나온 거라는 걸 알고 있었나요?
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"모두가 오크의 침공에 대해 이야기하지만, 난 절대 그런 일이 일어나지 않을 거라고 생각해요."
+ModuleDialogue,Goodbye.,안녕히 가세요.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,여기 노움들이 너무 많다는 거 눈치챘어요?
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"이걸 설명해야 한다는 게 믿기지 않지만, 광산에 들어가기 전에 곡괭이를 꼭 챙기세요. 마을 작업대에서 고철 철을 모아 직접 만들 수도 있어요."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",모험가들은 왜 마을에서 화살과 다트를 마구 쏘아대도 된다고 생각하는 걸까요? 우리도 이제 지쳤어요. 그러니 실수로라도 마을 사람을 맞히면 가만두지 않을 거예요.
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","맹세컨대, 당신들 모험가는 불행을 몰고 다녀요! 당신들 같은 망나니가 나타날 때마다 우리 병사들이 열 명씩 사라진다니까요."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,피곤하고 발도 아파요! 이 순찰이 끝나면 얼른 자러 가고 싶어요.
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",노움 광산 아래에 드워프 도시가 있다는 말을 들었어요. 하지만 난 절대 가고 싶지 않아요. 거긴 냄새나는 난쟁이들이 너무 많거든요.
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",환영 벽을 조심하세요. 요즘 성가신 노움 마법사들이 설치고 다닌다니까요. 정말 골칫덩어리들이에요.
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,마을 상인들과 거래해서 지역 경제를 살려주세요! 하지만 빈속에 하는 건 추천하지 않아요.
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",가끔씩 이 땅의 강력하고 유명한 영웅들이 우리를 찾아오곤 해요... 오늘 그런 영웅을 보면 알려드릴게요.
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,"내 길을 막지 마세요! 난 중요한 순찰 중인데, 모험가들은 항상 내 길을 가로막는다니까요."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",**예언자**가 말없이 당신을 동정 어린 눈빛으로 바라봅니다. 그녀의 슬픈 표정이 당신을 불안하게 만듭니다.||운명이 당신에게 정말 *끔찍한* 일을 계획하고 있는 게 분명해요.
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,여기 음식은 정말 형편없어요. 우리가 왜 몬스터를 사냥하고 마을 한가운데 작업대를 두었는지 생각해 본 적 있나요?
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,광산은 혼자 여행하기엔 위험한 곳이니 지역 용병을 고용하는 걸 고려해 보세요. 하지만 그들이 당신의 돈이 떨어질 때까지만 충성한다는 점을 명심하세요.
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","마을의 제단은 선한 모험가에게 많은 축복을 내려줍니다. 오늘 꼭 방문해서 여분의 동전을 기부하세요. 모험가님, 여행길에 축복이 함께하길!"
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","순찰대와 상인 조합은 오랜 협정을 맺고 있으니, 쓸데없는 생각은 하지 마세요."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",마을 아래 광산에서 보석 열풍이 불고 있어요. 흔한 유리 조각이 아니라 값비싼 보석들이 그냥 널려 있다니까요!
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,마을 밖 동굴에 광산으로 내려가는 계단이 있어요. 한 번 내려가서 다시는 돌아오지 않는 게 어때요?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,이번이 순찰대에서 은퇴하기 전 마지막 순찰이에요. 제발 아무 일도 일어나지 않길!
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","이 마을은 여행을 준비하고 시간을 보내기에 아주 좋은 곳이에요. 서둘러 떠나지 말고, 던전 깊숙이 들어가기 전에 볼거리와 할 일을 충분히 즐기세요."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",광산에 처음 들어갈 때 발밑을 조심하세요. 교활한 노움 놈들이 준비되지 않은 모험가를 습격하는 걸 아주 좋아하거든요.
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"마을 밖 동굴에서 놀아보는 게 어때요? 공짜로 얻을 수 있는 물건이 많지만, 우리가 마을 밖까지 순찰하지 않으니 위험해지면 도망칠 준비는 해두세요."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"분수에서 장난 좀 그만하세요. 이 제복을 젖게 하면 안 되는데, 만약 나한테 물을 튀기면 *가만두지 않을 거예요.*"
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",저도 한때는 당신처럼 모험가였어요... 그런데 당신도 직업을 구하는 게 어때요? 결국 *모험가*라는 건 그럴듯하게 포장한 실업자일 뿐이잖아요.
 ModuleName,Dhak Legacy,다크 레거시
 ModuleName,Kaloi Opus,칼로이 오푸스
 ModuleName,Nethack Codex,넷핵 코덱스
@@ -3887,7 +3887,7 @@ ModuleTerm,Ant Lair,개미 굴
 ModuleTerm,Ant Nest,개미 둥지
 ModuleTerm,Arena,아레나
 ModuleTerm,attic,다락방
-ModuleTerm,Bigfoot,
+ModuleTerm,Bigfoot,빅풋
 ModuleTerm,Black Lair,암흑의 굴
 ModuleTerm,Black Market,암시장
 ModuleTerm,Blue Lair,청색의 굴
@@ -4149,7 +4149,7 @@ PropertyDescription,Your mere presence aggravates everyone in the dungeon.,존�
 PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,신진대사가 느려져 더 적은 영양소를 필요로 한다.
 PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.",속임수와 거짓된 것들로부터 정신을 보호한다.
 PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,근육이 고정되어 움직일 수 없는 무방비 상태가 된다.
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,지각 능력이 향상되어 함정과 비밀문을 노력 없이  찾을 수 있다.
+PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,지각 능력이 향상되어 함정과 비밀문을 노력 없이 찾을 수 있다.
 PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,당신의 위상이 불확실해지고 사라지고 나타날 수 있게 된다.
 PropertyName,aggravation,도발
 PropertyName,appraisal,평가
@@ -4337,7 +4337,7 @@ RumourFalseMessage,Great tragedy falls upon those who eat the yellow snow.,노�
 RumourFalseMessage,Learn to say cherry blossom in Draconic: selavra di wer cherry (Cell-ave-rah dee wur chah-ray).,벚꽃을 용언으로 배워 봅시다: selavra di wer cherry(셀-아브-라 디 워 차-레이)
 RumourFalseMessage,Learn to say mortal fools in Draconic: mablik hofibai (Mah-blick hauph-ee-bay).,필멸자를 용언으로 배워 봅시다: mablik hofibai (마-블릭 하우프-이-배이)
 RumourFalseMessage,Learn to say peach tree in Draconic: skjall di peaches (Skah-jawl dee peech-is).,복숭아 나무를 용언으로 배워 봅시다: skjall di peaches (스카-자울 디 피치스)
-RumourFalseMessage,Learn to say slime mould in Draconic: mould di slime (Mole-duh dee slie-mah).,슬라임 몰드를 을 용언으로 배워 봅시다:  mould di slime (몰-더 디 슬라이-마)
+RumourFalseMessage,Learn to say slime mould in Draconic: mould di slime (Mole-duh dee slie-mah).,슬라임 몰드를 을 용언으로 배워 봅시다: mould di slime (몰-더 디 슬라이-마)
 RumourFalseMessage,Occasionally you should give your Gremlin a bath.,그렘린에게 이따금씩 목욕을 시켜주세요.
 RumourFalseMessage,Post withdrawn by author and will be automatically deleted in 24 hours unless flagged.,게시자가 글을 내렸습니다. 저장하지 않으면 24시간 내로 글이 삭제됩니다.
 RumourFalseMessage,"The swallow may fly south with the sun or the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land?","제비는 해를 따라 남쪽으로 날고, 흰털발제비이나 물떼새도 겨울에 따뜻한 곳을 찾아 떠나는데, 이들이 우리 땅의 주민이라 할 수 있겠는가?"
@@ -4345,7 +4345,7 @@ RumourFalseMessage,There can be only ONE!,단 한 명만 살아남을 수 있지
 RumourFalseMessage,This is a fortune cookie.,이것은 포츈 쿠키입니다.
 RumourFalseMessage,This is an automatic response from the College of Wizardry. We have received your message and an advisor will reply shortly.,마법 대학의 자동 응답기입니다. 메시지가 접수되었고 상담사가 곧 연락드릴 것 입니다.
 RumourFalseMessage,Throw an acid blob at a rust monster.,녹 괴물에게 산성 방울을 던지세요.
-RumourFalseMessage,"To view inventory, press 'backpack'.",인벤토리를 확인하려면 '가방' 버튼을 누르세요
+RumourFalseMessage,"To view inventory, press 'backpack'.",인벤토리를 확인하려면 '가방' 버튼을 누르세요.
 RumourFalseMessage,"Two wrongs do not make a right, but three rights do make a left.","두 번 틀렸다고 옳은 게 되지는 않지만, 세 번 옳은쪽으로 돌면 왼쪽을 보게 되지요."
 RumourFalseMessage,Wearing solid metal gear and eating rations will recover health.,튼튼한 무쇠 갑옷을 입고 전투식량을 먹으면 체력이 회복된답니다.
 RumourFalseMessage,"When in doubt, refrain from reply all.",확신이 안서면 전체 답장을 하지마세요.
@@ -4369,7 +4369,7 @@ RumourTrueMessage,Good karma brings you great favours.,좋은 카르마는 유�
 RumourTrueMessage,Grave robbers are not good people.,도굴꾼은 나쁜 사람 입니다.
 RumourTrueMessage,Grave yards are not just for the dead.,묘지는 죽은 사람을 위해서만 있는 것은 아닙니다.
 RumourTrueMessage,Hitch a ride with a charmed centaur.,켄타우로스를 매혹시켜 타고 다녀 보세요.
-RumourTrueMessage,Is eating Death worth the chance of teleport control?,사신을 먹어서 텔레포트 통제를 얻을 만한 가치가 있을까요?
+RumourTrueMessage,Is eating Death worth the chance of teleport control?,죽음을 먹어서 텔레포트 통제를 얻을 만한 가치가 있을까요?
 RumourTrueMessage,Is that a scroll in your pocket or are you just happy to tame me?,아래가 묵직한데 주문서가 들어있는 거야? 아니면 날 보고 흥분한 거야?
 RumourTrueMessage,It wasn't luck; it is only karma.,행운이 아니라 업보일 뿐이다.
 RumourTrueMessage,Jelly can give you heartburn.,젤리를 먹으면 속이 쓰립니다.

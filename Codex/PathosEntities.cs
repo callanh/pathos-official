@@ -16766,56 +16766,6 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      gypsy = AddEntity(Kinds.human, Races.human, "gypsy", E =>
-      {
-        E.Glyph = Glyphs.gypsy;
-        E.Level = 19;
-        E.Challenge = 519;
-        E.Difficulty = 21;
-        E.Frequency = 2;
-        E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
-        E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(12000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 16, DEX: 18, CON: 16, INT: 15, WIS: 17, CHA: 20);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.female);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.conjuration, Skills.literacy);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.teleportation, Properties.life_regeneration);
-        E.Startup.SetResistance(Elements.poison, Elements.sleep);
-        E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
-        E.Startup.AddGrimoire(Dice.One, Spells.summoning);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8(), K => // +3 from str.
-        {
-          K.Apply.PlaceCurse(Dice.One, Sanctities.Cursed);
-        });
-        E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.charisma);
-        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
-        E.SetCorpse(Chance.OneIn3);
-      });
-
       Archmage_Flaynn = AddUniqueEntity(Kinds.human, Races.human, "Archmage Flaynn", E =>
       {
         E.Glyph = Glyphs.Archmage_Flaynn;
@@ -23227,6 +23177,58 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.wand_of_healing);
         E.Startup.Loot.AddKit(Chance.OneIn4, Items.wand_of_extra_healing);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d6());
+        E.SetCorpse(Chance.OneIn3);
+      });
+
+      gypsy = AddEntity(Kinds.mercenary, Races.human, "gypsy", E =>
+      {
+        E.Glyph = Glyphs.gypsy;
+        E.Level = 19;
+        E.Challenge = 519;
+        E.Difficulty = 14;
+        E.Frequency = 2;
+        E.IsGuardian = true;
+        E.IsMercenary = true;
+        E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(12000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 16, DEX: 18, CON: 16, INT: 15, WIS: 17, CHA: 20);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.female);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration, Skills.conjuration, Skills.literacy);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.teleportation, Properties.life_regeneration);
+        E.Startup.SetResistance(Elements.poison, Elements.sleep);
+        E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
+        E.Startup.AddGrimoire(Dice.One, Spells.summoning);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d8(), K => // +3 from str.
+        {
+          K.Apply.PlaceCurse(Dice.One, Sanctities.Cursed);
+        });
+        E.Conveyance.TradeoffAbility(Attributes.wisdom, Attributes.charisma);
+        E.Conveyance.WhenChance(Chance.OneIn2, T => T.ApplyTransient(Properties.teleportation, 1.d500() + 750));
         E.SetCorpse(Chance.OneIn3);
       });
 
