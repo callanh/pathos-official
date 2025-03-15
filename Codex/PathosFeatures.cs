@@ -430,55 +430,54 @@ namespace Pathos
         /*07*/Workbench.AddAccident(Codex.Explosions.electric, A => A.HarmEntity(Elements.shock, 4.d6() + 4));
         /*08*/Workbench.AddAccident(Codex.Explosions.muddy, A => A.ApplyTransient(Properties.hallucination, 3.d100()));
         /*09*/Workbench.AddAccident(Codex.Explosions.acid, A => A.HarmEntity(Elements.acid, 6.d6() + 6));
-        /*10*/Workbench.AddAccident(Codex.Explosions.death, A => A.ApplyTransient(Properties.fear, 5.d50()));
 
-        /*11*/Workbench.AddAccident(Codex.Explosions.dark, A => 
+        /*10*/Workbench.AddAccident(Codex.Explosions.dark, A => 
         {
           A.Light(false, Locality.Area);
           A.CreateRandomHorde(Dice.One, Targeted: true);
         });
-        /*12*/Workbench.AddAccident(Codex.Explosions.light, A => 
+        /*11*/Workbench.AddAccident(Codex.Explosions.light, A => 
         {
           A.Light(true, Locality.Area);
           A.ApplyTransient(Properties.blindness, 4.d100());
           A.CreateRandomHorde(Dice.One, Targeted: true);
         });
-        /*13*/Workbench.AddAccident(Codex.Explosions.watery, A => 
+        /*12*/Workbench.AddAccident(Codex.Explosions.watery, A => 
         {
           A.HarmEntity(Elements.water, Dice.One);
           A.ApplyTransient(Properties.sleeping, 4.d50());
         });
-        /*14*/Workbench.AddAccident(Codex.Explosions.magical, A =>
+        /*13*/Workbench.AddAccident(Codex.Explosions.magical, A =>
         {
           A.HarmEntity(Elements.magical, 4.d6() + 4);
           A.TeleportInventoryItem();
         });
-        /*15*/Workbench.AddAccident(Codex.Explosions.fiery, A => 
+        /*14*/Workbench.AddAccident(Codex.Explosions.fiery, A => 
         {
           A.HarmEntity(Elements.fire, 5.d6() + 5);
           A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.paper });
         });
-        /*16*/Workbench.AddAccident(Codex.Explosions.frosty, A =>
+        /*15*/Workbench.AddAccident(Codex.Explosions.frosty, A =>
         {
           A.HarmEntity(Elements.cold, 6.d6() + 6);
           A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.glass });
         });
-        /*17*/Workbench.AddAccident(Codex.Explosions.electric, A => 
+        /*16*/Workbench.AddAccident(Codex.Explosions.electric, A => 
         {
           A.HarmEntity(Elements.shock, 7.d6() + 7);
           A.TeleportItemAway();
         });
-        /*18*/Workbench.AddAccident(Codex.Explosions.muddy, A =>
+        /*17*/Workbench.AddAccident(Codex.Explosions.muddy, A =>
         {
           A.ApplyTransient(Properties.hallucination, 4.d100());
           A.PolymorphItemAndEntityAndTrap();
         });
-        /*19*/Workbench.AddAccident(Codex.Explosions.acid, A => 
+        /*18*/Workbench.AddAccident(Codex.Explosions.acid, A => 
         {
           A.HarmEntity(Elements.acid, 8.d6() + 8);
           A.DestroyEquippedItem(Dice.One, null, null, null);
         });
-        /*20*/Workbench.AddAccident(Codex.Explosions.death, A =>
+        /*19*/Workbench.AddAccident(Codex.Explosions.death, A =>
         {
           A.Death(Elements.magical, Kinds.Living.ToArray(), Strikes.death, Cause: null);
           A.PunishEntity(Codex.Punishments.List.ToArray());
