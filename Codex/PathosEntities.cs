@@ -21850,7 +21850,9 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent();
         E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
-        E.Conveyance.EnergiseEntity(1.d3(), Modifier.Zero);
+        E.Conveyance.WhenChance(Chance.OneIn2, 
+          T => T.EnergiseEntity(1.d3(), Modifier.Plus1),
+          E => E.EnergiseEntity(1.d3(), Modifier.Zero));
         E.SetCorpse(Chance.Always);
       });
 

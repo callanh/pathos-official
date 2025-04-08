@@ -299,7 +299,7 @@ namespace Pathos
   {
     static CodexRecruiter()
     {
-      RecruitList = new Inv.DistinctList<Action>();
+      RecruitList = [];
     }
 
     internal static Codex Codex { get; set; }

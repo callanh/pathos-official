@@ -173,9 +173,9 @@ namespace Pathos
       this.Generator = Generator;
       this.ShopProbability = new Probability<Shop>();
       this.ShrineProbability = new Probability<Shrine>();
-      this.GoodCharacterList = new Inv.DistinctList<Character>();
-      this.EvilCharacterList = new Inv.DistinctList<Character>();
-      this.UniqueEntityList = new Inv.DistinctList<Entity>();
+      this.GoodCharacterList = [];
+      this.EvilCharacterList = [];
+      this.UniqueEntityList = [];
 
       this.OccupyList = new[]
       {
@@ -9102,7 +9102,7 @@ H-----------H
       {
         this.Width = Width;
         this.Height = Height;
-        this.SectorList = new Inv.DistinctList<OpusSector>();
+        this.SectorList = [];
       }
 
       public int Width { get; private set; }
@@ -9206,7 +9206,7 @@ H-----------H
       {
         this.Region = Region;
         this.Distance = Distance;
-        this.LinkList = new Inv.DistinctList<OpusLink>();
+        this.LinkList = [];
       }
 
       public Region Region { get; private set; }
@@ -9278,8 +9278,8 @@ H-----------H
       {
         this.Region = Region;
         this.Distance = Distance;
-        this.JoinList = new Inv.DistinctList<OpusJoin>();
-        this.ClearingList = new Inv.DistinctList<OpusClearing>();
+        this.JoinList = [];
+        this.ClearingList = [];
         this.MinimumDifficulty = Distance / 6;
         this.MaximumDifficulty = Distance;
       }

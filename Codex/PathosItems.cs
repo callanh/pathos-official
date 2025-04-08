@@ -14,7 +14,7 @@ namespace Pathos
     internal CodexItems(Codex Codex)
       : base(Codex.Manifest.Items)
     {
-      this.DragonScalesArmourList = new Inv.DistinctList<Item>();
+      this.DragonScalesArmourList = [];
 
       var Stocks = Codex.Stocks;
       var Grades = Codex.Grades;

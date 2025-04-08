@@ -2676,7 +2676,7 @@ namespace Pathos
     {
       if (AtticTemplateList == null)
       {
-        this.AtticTemplateList = new Inv.DistinctList<AtticTemplate>();
+        this.AtticTemplateList = [];
 
         using (var TemplateReader = new System.IO.StringReader(Official.Resources.Specials.Attics))
         {
@@ -2711,7 +2711,7 @@ namespace Pathos
     {
       if (CaveTemplateList == null)
       {
-        this.CaveTemplateList = new Inv.DistinctList<CaveTemplate>();
+        this.CaveTemplateList = [];
 
         var IdentitySet = new HashSet<string>();
 
@@ -5756,7 +5756,7 @@ namespace Pathos
       internal DungeonStructure(Map Map)
       {
         this.Map = Map;
-        this.RoomList = new Inv.DistinctList<DungeonRoom>();
+        this.RoomList = [];
       }
 
       public Map Map { get; }
@@ -6113,7 +6113,7 @@ namespace Pathos
     {
       internal BSPMap(int MapWidth, int MapHeight)
       {
-        this.PartitionList = new Inv.DistinctList<BSPPartition>();
+        this.PartitionList = [];
 
         this.Main = new BSPPartition(0, 0, MapWidth, MapHeight);
         PartitionList.Add(Main);
