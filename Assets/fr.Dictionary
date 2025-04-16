@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} découvertes
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} découverte
 FormatText,{Duration} hours,{Duration} heures
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} charme {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} pacifier {KindNames}
 FormatText,{ElementName} resistance,résistance à {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} par {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropie
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},casser {FeatureName}
 FormatText,cap {Percent}%,plafond {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancer {SpellName} sur quel objet ?
 FormatText,Cast {SpellName} which direction?,Lancer {SpellName} dans quelle direction ?
+FormatText,charging {ItemDice} items {ChargeDice},charge {ItemDice} objets {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},converti mobilier {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},converti le mur {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},convertir porte {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Personnage
 LiteralText,CHARACTER,PERSONNAGE
 LiteralText,charged items,objets chargés
-LiteralText,charging,charge
-LiteralText,charm,charme
 LiteralText,Chat on Discord,Chat sur Discord
 LiteralText,check for updates?,vérifier les mises à jour ?
 LiteralText,checking for updates,vérification de mises jour
@@ -3473,7 +3474,6 @@ LiteralText,OR,OR
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,REJETER
 LiteralText,OVERVIEW,VUE D'ENSEMBLE
-LiteralText,pacify,pacifier
 LiteralText,Palette,Palette
 LiteralText,PARTY,COMPAGNONS
 LiteralText,passive (no attacking),passif (sans attaquer)

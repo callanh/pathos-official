@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} descubrimientos
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} descubrimiento
 FormatText,{Duration} hours,{Duration} horas
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} encanto {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} pacificar {KindNames}
 FormatText,{ElementName} resistance,resistencia al {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} por {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropía
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},romper {FeatureName}
 FormatText,cap {Percent}%,límite {Percent}%
 FormatText,Cast {SpellName} on which item?,¿Lanzar {SpellName} en qué objeto?
 FormatText,Cast {SpellName} which direction?,¿Lanzar {SpellName} en qué dirección?
+FormatText,charging {ItemDice} items {ChargeDice},cargar {ItemDice} ítems {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},convertir accesorio {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},convertir muro {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},convertir puerta {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,CAMPEÓN
 LiteralText,Character,Personaje
 LiteralText,CHARACTER,PERSONAJE
 LiteralText,charged items,ítems cargados
-LiteralText,charging,cargar
-LiteralText,charm,encanto
 LiteralText,Chat on Discord,chatear en Discord
 LiteralText,check for updates?,¿buscar actualizaciones?
 LiteralText,checking for updates,buscando actualizaciones
@@ -3473,7 +3474,6 @@ LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,ANULAR
 LiteralText,OVERVIEW,RESUMEN
-LiteralText,pacify,pacificar
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPO
 LiteralText,passive (no attacking),pasivo (sin atacar)

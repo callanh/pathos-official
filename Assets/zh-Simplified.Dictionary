@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} 个发现
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} 个发现
 FormatText,{Duration} hours,{Duration} 小时
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} 魅力 {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} 平静 {KindNames}
 FormatText,{ElementName} resistance,{ElementName}抗性
 FormatText,{EndType} by {EndCause},{EndType} 因为 {EndCause}
 FormatText,{Entropy} entropy,{Entropy} 混乱度
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},破坏 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封顶
 FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
+FormatText,charging {ItemDice} items {ChargeDice},充能 {ItemDice} 物品 {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},转换固定物 {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},转换墙壁 {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},转换门 {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,冠军
 LiteralText,Character,角色
 LiteralText,CHARACTER,角色
 LiteralText,charged items,已充能物品
-LiteralText,charging,充能
-LiteralText,charm,魅力
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,检查更新吗？
 LiteralText,checking for updates,检测更新
@@ -3473,7 +3474,6 @@ LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆写
 LiteralText,OVERVIEW,总览
-LiteralText,pacify,平静
 LiteralText,Palette,调色板
 LiteralText,PARTY,队伍
 LiteralText,passive (no attacking),被动（无攻击）

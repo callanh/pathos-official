@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Atta
 FormatText,{DiscoveryCount} discoveries,открыты {DiscoveryCount}
 FormatText,{DiscoveryCount} discovery,открыто {DiscoveryCount}
 FormatText,{Duration} hours,
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} очарование {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} усмирён {KindNames}
 FormatText,{ElementName} resistance,
 FormatText,{EndType} by {EndCause},{EndType} из-за {EndCause}
 FormatText,{Entropy} entropy,
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Применить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Применить {SpellName} в каком направлении?
+FormatText,charging {ItemDice} items {ChargeDice},заряжает {ItemDice} предметы {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},переводит приспособление {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряжает предметы
-LiteralText,charging,заряжает
-LiteralText,charm,очарование
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
 LiteralText,checking for updates,проверка обновлений
@@ -3473,7 +3474,6 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,ОБЗОР
-LiteralText,pacify,усмирён
 LiteralText,Palette,
 LiteralText,PARTY,ОТРЯД
 LiteralText,passive (no attacking),

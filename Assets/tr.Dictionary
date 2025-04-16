@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} keşif
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} keşif
 FormatText,{Duration} hours,
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} cezbet {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} sakinleştir {KindNames}
 FormatText,{ElementName} resistance,
 FormatText,{EndType} by {EndCause},{EndCause} şeklinde {EndType}
 FormatText,{Entropy} entropy,{Entropy} entropi
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,Hang eşyada {SpellName} kullan?
 FormatText,Cast {SpellName} which direction?,Hangi yöne {SpellName} kullan?
+FormatText,charging {ItemDice} items {ChargeDice},şarj ediyor {ItemDice} eşyalar {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},möble dönüştür {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},duvarı dönüştür {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},kapıyı dönüştür {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,ŞAMPİYON
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,şarjlı itemler
-LiteralText,charging,şarj ediyor
-LiteralText,charm,cezbet
 LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
 LiteralText,checking for updates,güncellemeler kontrol ediliyor
@@ -3473,7 +3474,6 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
-LiteralText,pacify,sakinleştir
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
 LiteralText,passive (no attacking),pasif (saldırgan değil)

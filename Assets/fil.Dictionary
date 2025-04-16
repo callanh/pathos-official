@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},
 FormatText,{DiscoveryCount} discoveries,
 FormatText,{DiscoveryCount} discovery,
 FormatText,{Duration} hours,
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} pag-charm {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} pag-pacify {KindNames}
 FormatText,{ElementName} resistance,
 FormatText,{EndType} by {EndCause},
 FormatText,{Entropy} entropy,
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,
 FormatText,Cast {SpellName} which direction?,
+FormatText,charging {ItemDice} items {ChargeDice},pag-charge {ItemDice} items {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},pag-convert ng fixture {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,
 LiteralText,Character,
 LiteralText,CHARACTER,
 LiteralText,charged items,
-LiteralText,charging,pag-charge
-LiteralText,charm,pag-charm
 LiteralText,Chat on Discord,
 LiteralText,check for updates?,
 LiteralText,checking for updates,
@@ -3473,7 +3474,6 @@ LiteralText,OR,
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,
-LiteralText,pacify,pag-pacify
 LiteralText,Palette,
 LiteralText,PARTY,
 LiteralText,passive (no attacking),

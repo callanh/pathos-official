@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,số phát hiện {DiscoveryCount}
 FormatText,{DiscoveryCount} discovery,phát hiện {DiscoveryCount}
 FormatText,{Duration} hours,{Duration} tiếng
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} quyến rũ {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} thỏa hiệp {KindNames}
 FormatText,{ElementName} resistance,kháng {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} bởi {EndCause}
 FormatText,{Entropy} entropy,{Entropy} hỗn loạn
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},phá hỏng {FeatureName}
 FormatText,cap {Percent}%,giới hạn {Percent}%
 FormatText,Cast {SpellName} on which item?,niệm phép {SpellName} lên vật phẩm nào?
 FormatText,Cast {SpellName} which direction?,niệm phép {SpellName} vào hướng nào?
+FormatText,charging {ItemDice} items {ChargeDice},nạp lại {ItemDice} vật phẩm {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},chuyển đổi vật cố {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},chuyển đổi tường {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},chuyển đổi cửa {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,NHÀ VÔ ĐỊCH
 LiteralText,Character,Nhân vật
 LiteralText,CHARACTER,NHÂN VẬT
 LiteralText,charged items,vật phẩm nạp đầy
-LiteralText,charging,nạp lại
-LiteralText,charm,quyến rũ
 LiteralText,Chat on Discord,Nói chuyện trên Discord
 LiteralText,check for updates?,tìm các cập nhật?
 LiteralText,checking for updates,đang kiểm tra các bản cập nhật
@@ -3473,7 +3474,6 @@ LiteralText,OR,HOẶC
 LiteralText,ORIGINAL,GỐC
 LiteralText,OVERRIDE,GHI ĐÈ
 LiteralText,OVERVIEW,TỔNG QUÁT
-LiteralText,pacify,thỏa hiệp
 LiteralText,Palette,Palette
 LiteralText,PARTY,TỔ ĐỘI
 LiteralText,passive (no attacking),hiền lành (không tấn công)

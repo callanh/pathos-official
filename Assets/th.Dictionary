@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} การค้นพบ
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} การค้นพบ
 FormatText,{Duration} hours,
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} ลุ่มหลง {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},
 FormatText,{ElementName} resistance,การต้านทาน{ElementName}
 FormatText,{EndType} by {EndCause},
 FormatText,{Entropy} entropy,
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
 FormatText,Cast {SpellName} on which item?,ร่าย{SpellName}กับไอเท็มไหน?
 FormatText,Cast {SpellName} which direction?,ร่าย{SpellName}ไปทางไหน?
+FormatText,charging {ItemDice} items {ChargeDice},
 FormatText,convert {FeatureName} into {DeviceName},เปลี่ยนของประจำที่ {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},เปลี่ยนกำแพง {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},เปลี่ยนประตู {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,แชมป์เปี้ยน
 LiteralText,Character,ตัวละคร
 LiteralText,CHARACTER,ตัวละคร
 LiteralText,charged items,
-LiteralText,charging,
-LiteralText,charm,ลุ่มหลง
 LiteralText,Chat on Discord,พูดคุยกันใน Discord
 LiteralText,check for updates?,ตรวจหาการอัพเดตไหม?
 LiteralText,checking for updates,กำลังตรวจหาการอัพเดต
@@ -3473,7 +3474,6 @@ LiteralText,OR,หรือ
 LiteralText,ORIGINAL,
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,
-LiteralText,pacify,
 LiteralText,Palette,
 LiteralText,PARTY,ปาร์ตี้
 LiteralText,passive (no attacking),

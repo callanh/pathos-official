@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} otkrića
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} otkriće
 FormatText,{Duration} hours,{Duration} sati
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} šarm {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} smiriti {KindNames}
 FormatText,{ElementName} resistance,{ElementName} otpor
 FormatText,{EndType} by {EndCause},{EndType} od {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropija
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},polomi {FeatureName}
 FormatText,cap {Percent}%,kap {Percent}%
 FormatText,Cast {SpellName} on which item?,Bacite {SpellName} na koju stavku?
 FormatText,Cast {SpellName} which direction?,Bacite {SpellName} u kom pravcu?
+FormatText,charging {ItemDice} items {ChargeDice},punjenje {ItemDice} stavke {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},pretvori {FeatureName} u {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},pretvori {LocalityName} iz {FromBarrierName} u {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},pretvori {LocalityName} iz {FromGateName} u {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,ŠAMPION
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,napunjene stavke
-LiteralText,charging,punjenje
-LiteralText,charm,šarm
 LiteralText,Chat on Discord,Dopisuj se na Diskordu
 LiteralText,check for updates?,proveriti ažuriranja?
 LiteralText,checking for updates,proveravanje ažuriranja
@@ -3473,7 +3474,6 @@ LiteralText,OR,ILI
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,NADJAČAJTE
 LiteralText,OVERVIEW,PREGLED
-LiteralText,pacify,smiriti
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPA
 LiteralText,passive (no attacking),pasivno (bez napada)

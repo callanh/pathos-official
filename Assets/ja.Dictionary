@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount}の発見
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount}の発見
 FormatText,{Duration} hours,{Duration}時間
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} 魅了 {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} 鎮める {KindNames}
 FormatText,{ElementName} resistance,{ElementName}への耐性
 FormatText,{EndType} by {EndCause},{EndCause}により{EndType}
 FormatText,{Entropy} entropy,エントロピー {Entropy}
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
+FormatText,charging {ItemDice} items {ChargeDice},充填 {ItemDice} アイテム {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},{FeatureName}から{DeviceName}になる
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},{LocalityName}の{FromBarrierName}を{ToBarrierName}に変える
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},{LocalityName}の{FromGateName}を{ToGateName}に変える
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,チャンピオン
 LiteralText,Character,キャラクター
 LiteralText,CHARACTER,キャラクター
 LiteralText,charged items,使用回数があるアイテム
-LiteralText,charging,充填
-LiteralText,charm,魅了
 LiteralText,Chat on Discord,Discordでチャット
 LiteralText,check for updates?,アップデートを確認しますか？
 LiteralText,checking for updates,アップデートの確認中
@@ -3473,7 +3474,6 @@ LiteralText,OR,もしくは
 LiteralText,ORIGINAL,オリジナル
 LiteralText,OVERRIDE,変更後
 LiteralText,OVERVIEW,全階層
-LiteralText,pacify,鎮める
 LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
 LiteralText,passive (no attacking),受動的（攻撃しない）

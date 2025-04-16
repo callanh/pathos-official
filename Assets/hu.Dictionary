@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} felfedezés
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} felfedezés
 FormatText,{Duration} hours,{Duration} óra
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} elbűvölés {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} nyugtatás {KindNames}
 FormatText,{ElementName} resistance,{ElementName}ellenállás
 FormatText,{EndType} by {EndCause},{EndType} ezáltal: {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entrópia
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},
 FormatText,cap {Percent}%,{Percent}%-ot fed
 FormatText,Cast {SpellName} on which item?,Melyik tárgyon menjen végbe a(z) {SpellName} varázslat?
 FormatText,Cast {SpellName} which direction?,Melyik irányba történjen a(z) {SpellName} varázslat?
+FormatText,charging {ItemDice} items {ChargeDice},töltés {ItemDice} tárgyak {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},következővé alakul: {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},következővé alakul: {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},következővé alakul: {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,BAJNOK
 LiteralText,Character,Karakter
 LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,feltöltött tárgyak
-LiteralText,charging,töltés
-LiteralText,charm,elbűvölés
 LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
 LiteralText,checking for updates,frissítések keresése
@@ -3473,7 +3474,6 @@ LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
 LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
-LiteralText,pacify,nyugtatás
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
 LiteralText,passive (no attacking),passzív (nincs támadás)

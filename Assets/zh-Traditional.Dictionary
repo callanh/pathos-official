@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} 個發現
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} 個發現
 FormatText,{Duration} hours,{Duration} 小時
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} 魅力 {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} 平靜 {KindNames}
 FormatText,{ElementName} resistance,{ElementName}抗性
 FormatText,{EndType} by {EndCause},{EndType} 因為 {EndCause}
 FormatText,{Entropy} entropy,{Entropy} 混亂度
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},破壞 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封頂
 FormatText,Cast {SpellName} on which item?,對哪個物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪個方向使用 {SpellName} ？
+FormatText,charging {ItemDice} items {ChargeDice},充能 {ItemDice} 物品 {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},轉換固定物 {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},轉換牆壁 {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},轉換門 {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,冠軍
 LiteralText,Character,角色
 LiteralText,CHARACTER,角色
 LiteralText,charged items,已充能物品
-LiteralText,charging,充能
-LiteralText,charm,魅力
 LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,檢查更新嗎？
 LiteralText,checking for updates,檢測更新
@@ -3473,7 +3474,6 @@ LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
 LiteralText,OVERRIDE,覆寫
 LiteralText,OVERVIEW,總覽
-LiteralText,pacify,平靜
 LiteralText,Palette,調色板
 LiteralText,PARTY,隊伍
 LiteralText,passive (no attacking),被動（無攻擊）

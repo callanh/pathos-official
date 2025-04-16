@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount}개 아이템 발견함
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount}개 아이템 발견함
 FormatText,{Duration} hours,{Duration} 시간
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} 매혹 {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} 진정 {KindNames}
 FormatText,{ElementName} resistance,{ElementName}속성 저항
 FormatText,{EndType} by {EndCause},은(는) {EndCause}에 의해 {EndType}
 FormatText,{Entropy} entropy,{Entropy} 엔트로피
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},{FeatureName} 부수기
 FormatText,cap {Percent}%,한도 {Percent}%
 FormatText,Cast {SpellName} on which item?,어느 아이템에 {SpellName}마법을 시전합니까?
 FormatText,Cast {SpellName} which direction?,어느 방향에 {SpellName}마법을 시전합니까?
+FormatText,charging {ItemDice} items {ChargeDice},충전 {ItemDice} 아이템 {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},시설 변환 {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},벽 변환 {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},문 변환 {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,챔피언
 LiteralText,Character,캐릭터
 LiteralText,CHARACTER,캐릭터
 LiteralText,charged items,충전된 아이템
-LiteralText,charging,충전
-LiteralText,charm,매혹
 LiteralText,Chat on Discord,Discord에서 이야기하세요
 LiteralText,check for updates?,업데이트를 확인할까요?
 LiteralText,checking for updates,업데이트 확인중
@@ -3473,7 +3474,6 @@ LiteralText,OR,또는
 LiteralText,ORIGINAL,오리지널
 LiteralText,OVERRIDE,덮어쓰기
 LiteralText,OVERVIEW,훑어보기
-LiteralText,pacify,진정
 LiteralText,Palette,팔레트
 LiteralText,PARTY,파티
 LiteralText,passive (no attacking),패시브 - 공격 비활성화

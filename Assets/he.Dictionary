@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},הר�
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} תגליות
 FormatText,{DiscoveryCount} discovery,תגלית {DiscoveryCount}
 FormatText,{Duration} hours,{Duration} שעות
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} הקסמה {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} הרגעה {KindNames}
 FormatText,{ElementName} resistance,עמידות נגד {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} על ידי {EndCause}
 FormatText,{Entropy} entropy,{Entropy} אנטרופיה
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},שבירה של {FeatureName}
 FormatText,cap {Percent}%,מגבלה של {Percent}%
 FormatText,Cast {SpellName} on which item?,על איזה חפץ להטיל {SpellName}?
 FormatText,Cast {SpellName} which direction?,באיזה כיוון להטיל {SpellName}?
+FormatText,charging {ItemDice} items {ChargeDice},טעינה {ItemDice} פריטים {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},המרת מתקן {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},המרת קיר {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},המרת דלת {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,אליפות
 LiteralText,Character,דמות
 LiteralText,CHARACTER,דמות
 LiteralText,charged items,חפצים טעונים
-LiteralText,charging,טעינה
-LiteralText,charm,הקסמה
 LiteralText,Chat on Discord,לדבר בדיסקורד
 LiteralText,check for updates?,לבדוק עדכונים?
 LiteralText,checking for updates,בודק עדכונים
@@ -3473,7 +3474,6 @@ LiteralText,OR,או
 LiteralText,ORIGINAL,מקור
 LiteralText,OVERRIDE,עקיפה
 LiteralText,OVERVIEW,סקירה
-LiteralText,pacify,הרגעה
 LiteralText,Palette,ערכת צבעים
 LiteralText,PARTY,חבורה
 LiteralText,passive (no attacking),(במצב פאסיבי (בלי לתקוף

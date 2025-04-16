@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Atta
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} открытий
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} открытие
 FormatText,{Duration} hours,{Duration} часов
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} очарование {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} усмирён {KindNames}
 FormatText,{ElementName} resistance,{ElementName} сопротивляемость
 FormatText,{EndType} by {EndCause},{EndType} из-за {EndCause}
 FormatText,{Entropy} entropy,{Entropy} энтропия
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},сломать {FeatureName}
 FormatText,cap {Percent}%,предел {Percent}%
 FormatText,Cast {SpellName} on which item?,Наложить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Наложить {SpellName} в каком направлении?
+FormatText,charging {ItemDice} items {ChargeDice},заряжает {ItemDice} предметы {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},переводит приспособление {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},переводит стену {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},переводит дверь {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряжает предметы
-LiteralText,charging,заряжает
-LiteralText,charm,очарование
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
 LiteralText,checking for updates,проверка обновлений
@@ -3473,7 +3474,6 @@ LiteralText,OR,ИЛИ
 LiteralText,ORIGINAL,ОРИГИНАЛЬНЫЙ
 LiteralText,OVERRIDE,ПОЛЬЗОВАТЕЛЬСКИЙ
 LiteralText,OVERVIEW,ОБЩИЙ ОБЗОР
-LiteralText,pacify,усмирён
 LiteralText,Palette,Панель инструментов
 LiteralText,PARTY,ОТРЯД
 LiteralText,passive (no attacking),пассивный (не атакует)

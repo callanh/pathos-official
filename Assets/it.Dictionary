@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} scoperte
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} scoperta
 FormatText,{Duration} hours,{Duration} ore
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} affascino {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} pacificare {KindNames}
 FormatText,{ElementName} resistance,resistenza a {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} per {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropia
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},rompe {FeatureName}
 FormatText,cap {Percent}%,limite {Percent}%
 FormatText,Cast {SpellName} on which item?,Lancia {SpellName} su quale oggetto?
 FormatText,Cast {SpellName} which direction?,Lancia {SpellName} in quale direzione?
+FormatText,charging {ItemDice} items {ChargeDice},in carica {ItemDice} oggetti {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},convertire trappola {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},convertire muro {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},convertire la porta {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,CAMPIONE
 LiteralText,Character,Personaggio
 LiteralText,CHARACTER,PERSONAGGIO
 LiteralText,charged items,oggetti caricati
-LiteralText,charging,in carica
-LiteralText,charm,affascino
 LiteralText,Chat on Discord,Chatta su Discord (solo in inglese)
 LiteralText,check for updates?,controlla disponibilità aggiornamenti?
 LiteralText,checking for updates,controllo per aggiornamenti...
@@ -3473,7 +3474,6 @@ LiteralText,OR,O
 LiteralText,ORIGINAL,ORIGINALE
 LiteralText,OVERRIDE,RIMPIAZZA
 LiteralText,OVERVIEW,PANORAMICA
-LiteralText,pacify,pacificare
 LiteralText,Palette,Palette
 LiteralText,PARTY,SQUADRA
 LiteralText,passive (no attacking),passivo (non sta attaccando)

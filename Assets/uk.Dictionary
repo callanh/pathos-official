@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Atta
 FormatText,{DiscoveryCount} discoveries,відкриттів: {DiscoveryCount}
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} відкриття
 FormatText,{Duration} hours,Годин: {Duration}
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} причарування {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} вмиротворює {KindNames}
 FormatText,{ElementName} resistance,стійкість до {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} через {EndCause}
 FormatText,{Entropy} entropy,ентропія: {Entropy}
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},зламати {FeatureName}
 FormatText,cap {Percent}%,максимум {Percent}%
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
+FormatText,charging {ItemDice} items {ChargeDice},заряджає {ItemDice} предмети {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},перетворює механізм {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},перетворює стіну {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},перетворює двері {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,ЧЕМПІОНИ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряджає предмети
-LiteralText,charging,заряджає
-LiteralText,charm,причарування
 LiteralText,Chat on Discord,Сервер в Discord
 LiteralText,check for updates?,Перевірити наявність оновлень?
 LiteralText,checking for updates,перевірка оновлень
@@ -3473,7 +3474,6 @@ LiteralText,OR,ЧИ
 LiteralText,ORIGINAL,ОРИГІНАЛЬНИЙ
 LiteralText,OVERRIDE,ЗАМІСТИТИ
 LiteralText,OVERVIEW,ОГЛЯД
-LiteralText,pacify,вмиротворює
 LiteralText,Palette,Палітра
 LiteralText,PARTY,ГРУПА
 LiteralText,passive (no attacking),пасивний (не нападає)

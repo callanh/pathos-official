@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,Odkrycia {DiscoveryCount}
 FormatText,{DiscoveryCount} discovery,Odkrycie {DiscoveryCount}
 FormatText,{Duration} hours,{Duration} godzin
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} zaurocz {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} uspokoić {KindNames}
 FormatText,{ElementName} resistance,{ElementName} odporność
 FormatText,{EndType} by {EndCause},{EndType} przez {EndCause}
 FormatText,{Entropy} entropy,{Entropy} entropia
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},zepsuł {FeatureName}
 FormatText,cap {Percent}%,limit {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} na jaki przedmiot
 FormatText,Cast {SpellName} which direction?,{SpellName} w którą stronę?
+FormatText,charging {ItemDice} items {ChargeDice},ładuje się {ItemDice} przedmioty {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},zmień armaturę {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},zmień ściany {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},zmień drzwi {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Postać
 LiteralText,CHARACTER,POSTAĆ
 LiteralText,charged items,pozycje obciążone
-LiteralText,charging,ładuje się
-LiteralText,charm,zaurocz
 LiteralText,Chat on Discord,Rozmowy na Discordzie
 LiteralText,check for updates?,sprawdzić aktualizacje?
 LiteralText,checking for updates,sprawdzanie aktualizacji
@@ -3473,7 +3474,6 @@ LiteralText,OR,LUB
 LiteralText,ORIGINAL,ORYGINAŁ
 LiteralText,OVERRIDE,OVERRIDE
 LiteralText,OVERVIEW,PRZEGLĄD
-LiteralText,pacify,uspokoić
 LiteralText,Palette,Paleta
 LiteralText,PARTY,TOWARZYSZE
 LiteralText,passive (no attacking),pasywny (nie atakuje)

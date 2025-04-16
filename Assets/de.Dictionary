@@ -1909,6 +1909,8 @@ FormatText,{Defender:CharacterName} was killed by {Attacker:CharacterName},{Defe
 FormatText,{DiscoveryCount} discoveries,{DiscoveryCount} Entdeckungen
 FormatText,{DiscoveryCount} discovery,{DiscoveryCount} Entdeckung
 FormatText,{Duration} hours,{Duration} Stunden
+FormatText,{ElementName} charm {KindNames} {Duration},{ElementName} betören {KindNames} {Duration}
+FormatText,{ElementName} pacify {KindNames},{ElementName} befrieden {KindNames}
 FormatText,{ElementName} resistance,Widerstand {ElementName}
 FormatText,{EndType} by {EndCause},{EndType} von {EndCause}
 FormatText,{Entropy} entropy,{Entropy} Entropie
@@ -1949,6 +1951,7 @@ FormatText,break {FeatureName},beschädige {FeatureName}
 FormatText,cap {Percent}%,Max {Percent}%
 FormatText,Cast {SpellName} on which item?,{SpellName} mit welchem Gegenstand zaubern?
 FormatText,Cast {SpellName} which direction?,{SpellName} in welche Richtung zaubern?
+FormatText,charging {ItemDice} items {ChargeDice},aufladen {ItemDice} Gegenstände {ChargeDice}
 FormatText,convert {FeatureName} into {DeviceName},verwandle Einrichtung {FeatureName} {DeviceName}
 FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},verwandle Wand {LocalityName} {FromBarrierName} {ToBarrierName}
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},verwandle Tür {LocalityName} {FromGateName} {ToGateName}
@@ -3090,8 +3093,6 @@ LiteralText,CHAMPION,CHAMPION
 LiteralText,Character,Charakter
 LiteralText,CHARACTER,CHARAKTER
 LiteralText,charged items,aufgeladene Gegenstände
-LiteralText,charging,aufladen
-LiteralText,charm,betören
 LiteralText,Chat on Discord,Chatte auf Discord
 LiteralText,check for updates?,auf Updates prüfen?
 LiteralText,checking for updates,suche nach Updates
@@ -3473,7 +3474,6 @@ LiteralText,OR,ODER
 LiteralText,ORIGINAL,ORIGINAL
 LiteralText,OVERRIDE,ÜBERSCHREIBEN
 LiteralText,OVERVIEW,ÜBERBLICK
-LiteralText,pacify,befrieden
 LiteralText,Palette,Palette
 LiteralText,PARTY,GEFÄHRTEN
 LiteralText,passive (no attacking),passiv (kein Angriff)
