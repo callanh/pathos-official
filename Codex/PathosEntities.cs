@@ -18390,7 +18390,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.stealth);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +4 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
@@ -18441,7 +18441,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.stealth);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6()); // +4 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d6());
@@ -18582,8 +18582,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.slippery);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4());
@@ -18633,8 +18633,8 @@ namespace Pathos
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.slippery);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6()); // +1 from str.
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6(), A => A.Apply.Macro(MajorPoison(Attributes.strength)));
@@ -18777,7 +18777,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.stealth);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +5 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
@@ -18828,7 +18828,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.life_regeneration);
+        E.Startup.SetTalent(Properties.life_regeneration, Properties.stealth);
         E.Startup.SetResistance(Elements.poison, Elements.drain);
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d4());

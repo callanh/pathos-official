@@ -41,7 +41,7 @@ namespace Pathos
 
       gluttony = AddPunishment("gluttony", "You are overwhelmed by the compulsion to eat and consume anything that you find.", Glyphs.gluttony_punishment, Sonics.shackle, P =>
       {
-        P.SetCompulsions(new[] { Codex.Motions.eat });
+        P.SetCompulsions([Codex.Motions.eat]);
       });
 
       illiteracy = AddPunishment("illiteracy", "This malaise has rendered you completely unable to read or write.", Glyphs.illiteracy_punishment, Sonics.shackle, P =>
@@ -66,7 +66,7 @@ namespace Pathos
       
       psychosis = AddPunishment("psychosis", "This derangement makes you prone to fits of rage, hallucination, fear, agitation and the occasional act of cannibalism.", Glyphs.psychosis_punishment, Sonics.shackle, P =>
       {
-        P.SetBouts(new[] { Properties.rage, Properties.fear, Properties.hallucination, Properties.cannibalism, Properties.aggravation });
+        P.SetBouts([Properties.rage, Properties.fear, Properties.hallucination, Properties.cannibalism, Properties.aggravation]);
       });
       
       shunning = AddPunishment("shunning", "This formal rejection means your actions will not be rewarded and your prayers will be unanswered.", Glyphs.shunning_punishment, Sonics.shackle, P =>
@@ -76,7 +76,7 @@ namespace Pathos
       
       thirst = AddPunishment("thirst", "You are overwhelmed by the compulsion to quaff everything that you can find.", Glyphs.thirst_punishment, Sonics.shackle, P =>
       {
-        P.SetCompulsions(new[] { Codex.Motions.quaff, Codex.Motions.drink });
+        P.SetCompulsions([Codex.Motions.quaff, Codex.Motions.drink]);
       });
 
       wanted = AddPunishment("wanted", "You are marked as a criminal and wanted by authorities.", Glyphs.wanted_punishment, Sonics.shackle, P =>

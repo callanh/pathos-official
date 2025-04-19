@@ -119,6 +119,8 @@ namespace Pathos
           });
         });
         A.RequiresAnatomy(Codex.Anatomies.blood);
+
+        // TODO: hydrophobia - cannot quaff/drink.
       });
 
       reflux = AddAffliction("reflux", "You have a dreadful case of stomach acid.", Glyphs.reflux_affliction, Sonics.polymorph, A =>

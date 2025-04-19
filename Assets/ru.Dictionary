@@ -1811,9 +1811,9 @@ FormatText,{CharacterName} could not read the rumour,{CharacterName} не мож
 FormatText,{CharacterName} crafted {AssetName} for {MaterialWeight} {MaterialName} and {Essence},{CharacterName} создаёт {AssetName} используя {MaterialWeight} {MaterialName} и {Essence}
 FormatText,{CharacterName} crushed {DeviceName} with {BlockName},{CharacterName} ломает {DeviceName} используя {BlockName}
 FormatText,{CharacterName} did not decrease {AttributeName},{AttributeName} у {CharacterName} не уменьшилась
-FormatText,{CharacterName} did not decrease any ability,никакая из способностей {CharacterName} не уменьшилась
+FormatText,{CharacterName} did not decrease any ability,никакая из характеристик {CharacterName} не уменьшилась
 FormatText,{CharacterName} did not increase {AttributeName},{AttributeName} {CharacterName} не увеличилась
-FormatText,{CharacterName} did not increase any ability,никакая из способностей {CharacterName} не увеличилась
+FormatText,{CharacterName} did not increase any ability,никакая из характеристик {CharacterName} не увеличилась
 FormatText,{CharacterName} discovered the {ItemName},{CharacterName} узнаёт о {ItemName}
 FormatText,{CharacterName} dropped {AssetName},{CharacterName} выбрасывает {AssetName}
 FormatText,{CharacterName} emptied {AssetName},{CharacterName} опустошает {AssetName}
@@ -1926,7 +1926,7 @@ FormatText,{MaterialName} material,материал: {MaterialName}
 FormatText,{MotionPresentName} {AssetName} which direction?,{MotionPresentName} {AssetName} в каком направлении?
 FormatText,{MotionPresentName} {AssetName} with which item?,{MotionPresentName} {AssetName} на чём?
 FormatText,{MotionPresentName} {FeatureName} which direction?,{MotionPresentName} {FeatureName} в каком направлении?
-FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} {FeatureName} какой предмет?
+FormatText,{MotionPresentName} which item on {FeatureName}?,{MotionPresentName} {FeatureName} какую вещь?
 FormatText,{Mount:CharacterName} mounted {Steed:CharacterName},{Mount:CharacterName} осёдлан {Steed:CharacterName}
 FormatText,{Prisoner:CharacterName} {BlockName},{Prisoner:CharacterName} {BlockName}
 FormatText,{QualificationName} cast,{QualificationName} накладывает
@@ -1961,7 +1961,7 @@ FormatText,convert {StockName} {QualifierText} into {ItemNames},переводи
 FormatText,cripple {AttributeName},уменьшена {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},уменьшение {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},уменьшение всех характеристик на {AdjustmentDice}
-FormatText,decrease karma by {ChangeDice},карма уменьшение {ChangeDice}
+FormatText,decrease karma by {ChangeDice},уменьшение кармы на {ChangeDice}
 FormatText,decrease one ability by {AdjustmentDice},уменьшение одной характеристики на {AdjustmentDice}
 FormatText,diminish {ManaDice},уменьшает энергию {ManaDice}
 FormatText,drain life {Dice},вытягивает жизнь {Dice}
@@ -1973,14 +1973,14 @@ FormatText,fame {RecordFame} and {RecordKills} kills,слава {RecordFame} и 
 FormatText,Feed which item to {CharacterName}?,Чем накормить {CharacterName}?
 FormatText,from {Cause},из-за {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,получаете {Percent}% сопротивляемости к {ElementName}
-FormatText,gain {PropertyName} talent,получаете {PropertyName}
+FormatText,gain {PropertyName} talent,получаете талант {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветствуем {CharacterName}, {CharacterDescription}"
 FormatText,Hail {PlayerHandle}!,Приветствуем {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},наносит урон {ElementName} {DamageDice}
 FormatText,heal {LifeDice},лечение {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},увеличение {AttributeName} на {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},увеличение всех характеристик на {AdjustmentDice}
-FormatText,increase karma by {ChangeDice},карма увеличение {ChangeDice}
+FormatText,increase karma by {ChangeDice},увеличение кармы на {ChangeDice}
 FormatText,increase one ability by {AdjustmentDice},увеличение одной характеристики на {AdjustmentDice}
 FormatText,learn spell {SpellName},учит заклинание {SpellName}
 FormatText,level {Depth},уровень {Depth}
@@ -3092,7 +3092,7 @@ LiteralText,challenge,вызов
 LiteralText,CHAMPION,ЧЕМПИОНЫ
 LiteralText,Character,Персонаж
 LiteralText,CHARACTER,ПЕРСОНАЖ
-LiteralText,charged items,заряжает предметы
+LiteralText,charged items,заряжает вещи
 LiteralText,Chat on Discord,Чат в Discord'e
 LiteralText,check for updates?,проверить наличие обновлений?
 LiteralText,checking for updates,проверка обновлений
@@ -3125,7 +3125,7 @@ LiteralText,CONTACT,СВЯЗЬ
 LiteralText,Continue,продолжить
 LiteralText,CONTINUE,ПРОДОЛЖИТЬ
 LiteralText,CONTROLLED,КОНТРОЛЛИРУЕМЫЙ
-LiteralText,convert block to barrier,превращает валун
+LiteralText,convert block to barrier,переводит препятствие в преграду
 LiteralText,conveyance,поедание
 LiteralText,COPY,КОПИРОВАТЬ
 LiteralText,corpse,труп
@@ -3137,7 +3137,7 @@ LiteralText,CRASH APP!,СБОЙ ПРИЛОЖЕНИЯ!
 LiteralText,CRASH!,СЛОМАНО!
 LiteralText,create,создать
 LiteralText,CREATE BARRIER,СОЗДАТЬ СТЕНУ
-LiteralText,CREATE BLOCK,СОЗДАТЬ ВАЛУН
+LiteralText,CREATE BLOCK,СОЗДАТЬ ПРЕПЯТСТВИЕ
 LiteralText,CREATE DEVICE,СОЗДАТЬ ЛОВУШКУ
 LiteralText,CREATE ENTITY,СОЗДАТЬ СУЩЕСТВО
 LiteralText,CREATE FEATURE,СОЗДАТЬ МЕХАНИЗМ
@@ -3145,7 +3145,7 @@ LiteralText,CREATE GATE,СОЗДАТЬ ДВЕРЬ
 LiteralText,create golem,создаёт голема
 LiteralText,CREATE GROUND,СОЗДАТЬ ПОЛ
 LiteralText,CREATE HORDE,СОЗДАТЬ ОРДУ
-LiteralText,CREATE ITEM,СОЗДАТЬ ПРЕДМЕТ
+LiteralText,CREATE ITEM,СОЗДАТЬ ВЕЩЬ
 LiteralText,create nook,создаёт тайную
 LiteralText,CREATE PLATFORM,СОЗДАТЬ МОСТ
 LiteralText,CREATE SHOP,СОЗДАТЬ МАГАЗИН
@@ -3181,7 +3181,7 @@ LiteralText,detect,находит
 LiteralText,determined by player level,определяется уровнем игрока
 LiteralText,device,механизм
 LiteralText,DEVICES,МЕХАНИЗМЫ
-LiteralText,devour item,пожирает ценности
+LiteralText,devour item,пожирает вещи
 LiteralText,DIAGNOSTICS,ДИАГНОСТИКА
 LiteralText,DIALOGUE,ДИАЛОГ
 LiteralText,dialogue?,диалог?
@@ -3236,7 +3236,7 @@ LiteralText,else,или
 LiteralText,EMAIL,EMAIL
 LiteralText,Enable auto save,Авто сохранение
 LiteralText,Enable master mode,Включить режим мастера
-LiteralText,enchant item,зачаровывает ценность
+LiteralText,enchant item,зачаровывает вещь
 LiteralText,enchanted items,зачарованные вещи
 LiteralText,encounters,встречи
 LiteralText,encumbrance thresholds,пороги обременения
@@ -3360,9 +3360,9 @@ LiteralText,instruct each character,приказы отдельным персо
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,Inventory,Инвентарь
 LiteralText,INVENTORY,ИНВЕНТАРЬ
-LiteralText,ITEM,ПРЕДМЕТ
-LiteralText,items,предметы
-LiteralText,ITEMS,ПРЕДМЕТЫ
+LiteralText,ITEM,ВЕЩЬ
+LiteralText,items,вещи
+LiteralText,ITEMS,ВЕЩИ
 LiteralText,JOIN,ВСТУПИТЬ
 LiteralText,Journal,Журнал
 LiteralText,JOURNAL,ЖУРНАЛ
@@ -3383,7 +3383,7 @@ LiteralText,LEFT RING,НА ЛЕВУЮ РУКУ
 LiteralText,LEVEL CHART,ТАБЛИЦА УРОВНЕЙ
 LiteralText,level//rank,уровень
 LiteralText,liberate entity,освобождает
-LiteralText,lies,враньё
+LiteralText,lies,ложь
 LiteralText,life,здоровье
 LiteralText,LIFE,ЗДОРОВЬЕ
 LiteralText,Life represents your physical health and death occurs at zero.,"Жизнь — это ваше физическое здоровье, а смерть наступает на нуле."
@@ -3414,7 +3414,7 @@ LiteralText,MANA,МАНА
 LiteralText,Mana represents your energy supply for casting spells.,Мана — это ваш источник энергии для накладывания заклинаний.
 LiteralText,Map,Карта
 LiteralText,MAP,КАРТА
-LiteralText,mapping,карта
+LiteralText,mapping,картография
 LiteralText,material,материал
 LiteralText,materials,материалы
 LiteralText,melting,таяние
@@ -3422,7 +3422,7 @@ LiteralText,MENU,МЕНЮ
 LiteralText,mercenary,наёмник
 LiteralText,MIMIC,МИМИК
 LiteralText,mimicking,подражание
-LiteralText,mobilise block,призывает валун
+LiteralText,mobilise block,призывает препятствие
 LiteralText,modifier,модификатор
 LiteralText,MOUNT,ОСЕДЛАТЬ
 LiteralText,Mount which direction?,В каком направлении оседлать?
@@ -3473,7 +3473,7 @@ LiteralText,opening,открытие
 LiteralText,OR,ИЛИ
 LiteralText,ORIGINAL,ОРИГИНАЛЬНЫЙ
 LiteralText,OVERRIDE,ПОЛЬЗОВАТЕЛЬСКИЙ
-LiteralText,OVERVIEW,ОБЩИЙ ОБЗОР
+LiteralText,OVERVIEW,ОБЗОР
 LiteralText,Palette,Панель инструментов
 LiteralText,PARTY,ОТРЯД
 LiteralText,passive (no attacking),пассивный (не атакует)
@@ -3500,7 +3500,7 @@ LiteralText,Please rotate your device to landscape :-),"Пожалуйста, п
 LiteralText,POLYMORPH,ПРЕВРАТИТЬСЯ
 LiteralText,polymorph entity,превращает существо
 LiteralText,Polymorph into what?,Превратиться во что?
-LiteralText,polymorph item,превращает предмет
+LiteralText,polymorph item,превращает вещь
 LiteralText,polymorph trap,превращает ловушку
 LiteralText,POLYMORPHED,ПРЕВРАЩЕНИЕ
 LiteralText,portal,портал
@@ -3564,7 +3564,7 @@ LiteralText,RENAME ITEM,ПЕРЕИМЕНУЙТЕ ВЕЩЬ
 LiteralText,RENAME MAP,ПЕРЕИМЕНУЙТЕ КАРТУ
 LiteralText,repel,оттолкнуть
 LiteralText,replica,копия
-LiteralText,replicate item,копирует ценность
+LiteralText,replicate item,копирует вещь
 LiteralText,requires the skill to pick locks,необходим навык взлома
 LiteralText,Re-roll,Перебросить кости
 LiteralText,re-rolls,броски костей
