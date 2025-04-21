@@ -44,7 +44,7 @@ namespace Pathos
         Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.cheese);
         Z.Ground = Grounds.dirt;
         Z.Device = Devices.ant_hole;
-        Z.AddSpawn(Chance.Always, 1.d4(), new[] { Entities.giant_ant });
+        Z.AddSpawn(Chance.Always, 1.d4(), [Entities.giant_ant]);
       });
 
       bee_hive = AddZoo("bee hive", Sonics.buzz, Z =>
@@ -53,8 +53,8 @@ namespace Pathos
         Z.Rarity = 2;
         Z.Ground = Grounds.hive_floor;
         Z.Loot.AddKit(Chance.OneIn5, Dice.One, Items.lump_of_royal_jelly);
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.queen_bee });
-        Z.AddSpawn(Chance.Always, Count: null, new[] { Entities.killer_bee });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.queen_bee]);
+        Z.AddSpawn(Chance.Always, Count: null, [Entities.killer_bee]);
       });
 
       barracks = AddZoo("barracks", Sonics.bugle, Z =>
@@ -65,10 +65,10 @@ namespace Pathos
         Z.Loot.AddKit(Chance.OneIn10, Dice.One, Items.brass_bugle);
         Z.Loot.AddKit(Chance.OneIn10, 4.d4(), Items.bullet);
         Z.Loot.AddKit(Chance.OneIn10, 2.d2(), Items.shotgun_shell);
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.captain });
-        Z.AddSpawn(Chance.ThreeIn4, 1.d2(), new[] { Entities.lieutenant });
-        Z.AddSpawn(Chance.ThreeIn4, 1.d3(), new[] { Entities.sergeant });
-        Z.AddSpawn(Chance.OneIn3, Count: null, new[] { Entities.soldier });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.captain]);
+        Z.AddSpawn(Chance.ThreeIn4, 1.d2(), [Entities.lieutenant]);
+        Z.AddSpawn(Chance.ThreeIn4, 1.d3(), [Entities.sergeant]);
+        Z.AddSpawn(Chance.OneIn3, Count: null, [Entities.soldier]);
       });
 
       cocknest = AddZoo("cocknest", Sonics.cluck, Z =>
@@ -77,7 +77,7 @@ namespace Pathos
         Z.Rarity = 2;
         Z.Ground = Grounds.cave_floor;
         Z.Loot.AddKit(Chance.OneIn5, Dice.One, Items.egg);
-        Z.AddSpawn(Chance.OneIn2, Count: null, new[] { Entities.cockatrice, Entities.pyrolisk, Entities.chickatrice, Entities.chicken, Entities.cockatoo });
+        Z.AddSpawn(Chance.OneIn2, Count: null, [Entities.cockatrice, Entities.pyrolisk, Entities.chickatrice, Entities.chicken, Entities.cockatoo]);
       });
 
       college_of_wizardry = AddZoo("college of wizardry", Sonics.craft, Z =>
@@ -125,7 +125,7 @@ namespace Pathos
         Z.Rarity = 2;
         Z.Ground = Grounds.dirt;
         Z.Feature = Features.grave;
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.ghost });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.ghost]);
       });
 
       gremlin_pit = AddZoo("gremlin pit", Sonics.cackle, Z =>
@@ -136,7 +136,7 @@ namespace Pathos
         Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.fortune_cookie);
         Z.Ground = Grounds.obsidian_floor;
         Z.Device = Devices.water_trap;
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.gremlin });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.gremlin]);
       });
 
       leprechaun_hall = AddZoo("leprechaun hall", Sonics.giggle, Z =>
@@ -144,8 +144,8 @@ namespace Pathos
         Z.Difficulty = Entities.leprechaun.Difficulty + 1;
         Z.Rarity = 2;
         Z.Loot.AddKit(Chance.Always, Dice.Zero, Items.gold_coin);
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.leprechaun_wizard });
-        Z.AddSpawn(Chance.Always, Count: null, new[] { Entities.leprechaun });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.leprechaun_wizard]);
+        Z.AddSpawn(Chance.Always, Count: null, [Entities.leprechaun]);
       });
 
       salty_pool = AddZoo("salty pool", Sonics.water_splash, Z =>
@@ -174,8 +174,8 @@ namespace Pathos
         foreach (var Item in EyewearArray)
           Z.Loot.AddKit(Chance.OneIn(20 * EyewearArray.Length), Dice.One, Item);
 
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.flesh_golem });
-        Z.AddSpawn(Chance.OneIn3, Count: null, new[] { Entities.quantum_mechanic, Entities.genetic_engineer });
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.flesh_golem]);
+        Z.AddSpawn(Chance.OneIn3, Count: null, [Entities.quantum_mechanic, Entities.genetic_engineer]);
       });
 
       spider_nest = AddZoo("spider nest", Sonics.scuttle, Z =>
@@ -185,8 +185,8 @@ namespace Pathos
         //Z.Loot.AddKit(Chance.OneIn8, Dice.One, Items.egg); // TODO: spider egg?
         Z.Ground = Grounds.dirt;
         Z.Device = Devices.web;
-        Z.AddSpawn(Chance.Always, 1.d4(), new[] { Entities.recluse_spider });
-        Z.AddSpawn(Chance.Always, Dice.One, new[] { Entities.spider_queen });
+        Z.AddSpawn(Chance.Always, 1.d4(), [Entities.recluse_spider]);
+        Z.AddSpawn(Chance.Always, Dice.One, [Entities.spider_queen]);
       });
 
       slumber_party = AddZoo("slumber party", Sonics.sigh, Z =>
@@ -198,7 +198,7 @@ namespace Pathos
         Z.Loot.AddKit(Chance.OneIn60, Dice.One, Items.magic_marker);
         Z.Loot.AddKit(Chance.OneIn60, Dice.One, Items.blindfold);
         Z.Loot.AddKit(Chance.OneIn60, Dice.One, Items.expensive_camera);
-        Z.AddSpawn(Chance.Always, Count: null, new[] { Entities.mountain_nymph });
+        Z.AddSpawn(Chance.Always, Count: null, [Entities.mountain_nymph]);
       });
 
       tavern = AddZoo("tavern", Sonics.quaff, Z =>
@@ -223,7 +223,7 @@ namespace Pathos
         Z.Difficulty = 1;
         Z.Rarity = 8;
         Z.Loot.AddKit(Chance.ThreeIn4, Dice.Zero, Items.gold_coin);
-        Z.AddSpawn(Chance.Always, Count: null, Array.Empty<Entity>());
+        Z.AddSpawn(Chance.Always, Count: null, []);
       });
 
       // TODO: swamp.

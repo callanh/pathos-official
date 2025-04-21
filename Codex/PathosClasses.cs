@@ -142,7 +142,7 @@ namespace Pathos
           Skills.light_armour, Skills.medium_armour,
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
           Skills.axe, Skills.club, Skills.hammer, Skills.mace, Skills.polearm, Skills.spear, Skills.unarmed_combat, Skills.whip);
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, new[] { Items.trident, Items.spear, Items.voulge, Items.halberd, Items.guisarme, Items.billguisarme, Items.bec_de_corbin, Items.bardiche, Items.ranseur, Items.partisan, Items.spetum, Items.fauchard, Items.glaive, Items.lucern_hammer });
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, [Items.trident, Items.spear, Items.voulge, Items.halberd, Items.guisarme, Items.billguisarme, Items.bec_de_corbin, Items.bardiche, Items.ranseur, Items.partisan, Items.spetum, Items.fauchard, Items.glaive, Items.lucern_hammer]);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.brass_knuckles);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.brass_knuckles);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.studded_leather_armour);
@@ -185,7 +185,7 @@ namespace Pathos
         C.Startup.Loot.AddKit(Chance.Always, 8.d6(), Modifier.Plus1, Items.crossbow_bolt);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.leather_cloak);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.high_boots);
-        C.Startup.Loot.AddKit(Chance.Always, new[] { Items.fire_horn, Items.frost_horn, Items.magic_flute, Items.magic_harp, Items.drum_of_earthquake });
+        C.Startup.Loot.AddKit(Chance.Always, [Items.fire_horn, Items.frost_horn, Items.magic_flute, Items.magic_harp, Items.drum_of_earthquake]);
         C.Startup.Loot.AddKit(Chance.Always, Items.horn_of_plenty);
         C.Startup.Loot.AddKit(Chance.Always, 1.d250() + 250, Items.gold_coin);
       });
@@ -323,7 +323,7 @@ namespace Pathos
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(1), Items.sandwich);
         C.Startup.Loot.AddKit(Chance.Always, Items.lantern);
         C.Startup.Loot.AddKit(Chance.Always, 2.d3(), Items.wax_candle); // backup lightsource.
-        C.Startup.Loot.AddKit(Chance.Always, new[] { Items.amethyst, Items.diamond, Items.ruby, Items.emerald, Items.sapphire, Items.topaz });
+        C.Startup.Loot.AddKit(Chance.Always, [Items.amethyst, Items.diamond, Items.ruby, Items.emerald, Items.sapphire, Items.topaz]);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.scroll_of_gold_detection);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.stick_of_dynamite);
         C.Startup.Loot.AddKit(Chance.OneIn4, Items.wand_of_digging);
@@ -623,7 +623,7 @@ namespace Pathos
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.pear);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.mushroom);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.crystal_ball);
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, new[] { Items.bell_of_secrets, Items.bell_of_resources });
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, [Items.bell_of_secrets, Items.bell_of_resources]);
         C.Startup.Loot.AddKit(Chance.OneIn4, Items.magic_whistle);
         C.Startup.Loot.AddKit(Chance.OneIn20, Items.porter);
       });
@@ -658,9 +658,9 @@ namespace Pathos
           Skills.light_armour, Skills.medium_blade,
           Skills.light_blade,
           Skills.polearm, Skills.flail, Skills.disc, Skills.unarmed_combat);
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, new[] { Items.nunchaku, Items.sai });
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, new[] { Items.nunchaku, Items.sai });
-        C.Startup.Loot.AddKit(Dice.One, Chance.Always, 1.d20() + 26, Sanctities.Blessed, new[] { Modifier.Plus1 }, new[] { Items.shuriken }); // blessed 21-47
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, [Items.nunchaku, Items.sai]);
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, [Items.nunchaku, Items.sai]);
+        C.Startup.Loot.AddKit(Dice.One, Chance.Always, 1.d20() + 26, Sanctities.Blessed, [Modifier.Plus1], [Items.shuriken]); // blessed 21-47
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus3, Items.studded_leather_armour);
         C.Startup.Loot.AddKit(Chance.Always, 2.d3(), Items.caltrops);
         C.Startup.Loot.AddKit(Chance.Always, 1.d3(), Items.lock_pick);
@@ -801,7 +801,7 @@ namespace Pathos
           Skills.light_blade, Skills.medium_blade, Skills.heavy_blade,
           Skills.light_armour, Skills.medium_armour, Skills.heavy_armour,
           Skills.club, Skills.mace, Skills.flail, Skills.hammer, Skills.spear, Skills.staff);
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, new[] { Items.silver_mace, Items.silver_long_sword, Items.silver_spear } );
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, [Items.silver_mace, Items.silver_long_sword, Items.silver_spear]);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.shield_of_reflection);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.helmet);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.banded_mail);
@@ -1029,7 +1029,7 @@ namespace Pathos
           Skills.axe, Skills.club, Skills.dart, Skills.sling, Skills.staff);
         C.Startup.AddGrimoire(Dice.One, Spells.magic_missile);
         C.Startup.AddGrimoire(Dice.One, DesireableSpellArray(C));
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, new[] { Items.dread_staff, Items.flash_staff, Items.thunder_staff, Items.battle_staff });
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, [Items.dread_staff, Items.flash_staff, Items.thunder_staff, Items.battle_staff]);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, Items.blowgun);
         C.Startup.Loot.AddKit(Chance.Always, 1.d10() + 11, Modifier.Plus1, Items.dart); // 12-21
         C.Startup.Loot.AddKit(Chance.Always, 1.d5() + 5, Modifier.Plus0, Items.poison_dart); // 6-10
@@ -1069,8 +1069,8 @@ namespace Pathos
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.scythe);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus1, Items.sickle);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus0, Items.boomerang);
-        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus3, new[] { Items.battle_robe, Items.elemental_robe, Items.fleet_robe });
-        C.Startup.Loot.AddKit(Dice.Fixed(3), Chance.Always, Dice.Fixed(2), Sanctity: null, Array.Empty<Modifier>() , new[] { Items.banana, Items.apple, Items.orange, Items.melon, Items.carrot, Items.pear, Items.cheese, Items.slime_mould, Items.fish });
+        C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus3, [Items.battle_robe, Items.elemental_robe, Items.fleet_robe]);
+        C.Startup.Loot.AddKit(Dice.Fixed(3), Chance.Always, Dice.Fixed(2), Sanctity: null, [], [Items.banana, Items.apple, Items.orange, Items.melon, Items.carrot, Items.pear, Items.cheese, Items.slime_mould, Items.fish]);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.eucalyptus_leaf);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(2), Items.mushroom);
         C.Startup.Loot.AddKit(Dice.Fixed(1), Chance.Always, DesirableItemArray(C, Stocks.ring));

@@ -178,7 +178,7 @@ namespace Pathos
           Table.Add(1, A => A.GainTalent(Properties.see_invisible));
           Table.Add(1, A => A.DetectEntity(Range.Sq15));
           Table.Add(1, A => A.AreaTransient(Properties.fear, 4.d6(), Kinds.Living.ToArray()));
-          Table.Add(1, A => A.DestroyCarriedItem(4.d10() + 10, new[] { Stocks.gem }, null, null));
+          Table.Add(1, A => A.DestroyCarriedItem(4.d10() + 10, [Stocks.gem], null, null));
           Table.Add(1, A => A.UnlessTargetResistant(Elements.poison, T => T.DecreaseAbility(Attributes.strength, Dice.One)));
           Table.Add(1, A =>
           {
@@ -261,9 +261,9 @@ namespace Pathos
         {
           // 75% typical.
           Table.Add(30, A => A.CreateEntity(Dice.One, Kinds.mummy));
-          Table.Add(20, A => A.CreateItem(Dice.One, QuantityDice: null, new[] { Items.animal_corpse, Items.vegetable_corpse }));
+          Table.Add(20, A => A.CreateItem(Dice.One, QuantityDice: null, [Items.animal_corpse, Items.vegetable_corpse]));
           Table.Add(15, A => A.CreateItem(Dice.One, 10.d100(), Items.gold_coin));
-          Table.Add(10, A => A.CreateItem(2.d3() + 1, new[] { Stocks.ring, Stocks.amulet, Stocks.gem, Stocks.wand, Stocks.scroll, Stocks.potion, Stocks.book }));
+          Table.Add(10, A => A.CreateItem(2.d3() + 1, [Stocks.ring, Stocks.amulet, Stocks.gem, Stocks.wand, Stocks.scroll, Stocks.potion, Stocks.book]));
 
           // 20% annoying.
           Table.Add(5, A => A.PlaceCurse(1.d4() + 1, Sanctities.Cursed));
@@ -323,7 +323,7 @@ namespace Pathos
           Table.Add(1, A => A.GainTalent(Properties.cannibalism));
           Table.Add(1, A => A.DetectItem(Range.Sq15));
           Table.Add(1, A => A.AreaTransient(Properties.rage, 4.d6(), Kinds.Living.ToArray()));
-          Table.Add(1, A => A.DestroyCarriedItem(1.d4() + 1, new[] { Stocks.food }, null, null));
+          Table.Add(1, A => A.DestroyCarriedItem(1.d4() + 1, [Stocks.food], null, null));
           //Table.Add(1, A => A.Afflict(Codex.Afflictions.Array.Where(Z => !Z.Severe).ToArray()));
           Table.Add(1, A => A.UnlessTargetResistant(Elements.poison, T => T.DecreaseAbility(Attributes.strength, Dice.One)));
           Table.Add(1, A =>
@@ -370,7 +370,7 @@ namespace Pathos
             A.HealEntity(8.d8(), Modifier.FromRank(4));
             A.RemoveTransient(Properties.sickness, Properties.blindness);
           });
-          Table.Add(1, A => A.DestroyOwnedItem(5.d1000(), StockArray: null, SanctityArray: null, new Material[] { Materials.gold }));
+          Table.Add(1, A => A.DestroyOwnedItem(5.d1000(), StockArray: null, SanctityArray: null, [Materials.gold]));
           //Table.Add(1, A => { }); // TODO: wish!
           //Table.Add(1, A => { }); // TODO: genocide!
           Table.Add(1, A =>
@@ -455,12 +455,12 @@ namespace Pathos
         /*14*/Workbench.AddAccident(Codex.Explosions.fiery, A => 
         {
           A.HarmEntity(Elements.fire, 5.d6() + 5);
-          A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.paper });
+          A.DestroyCarriedItem(2.d3(), null, null, [Materials.paper]);
         });
         /*15*/Workbench.AddAccident(Codex.Explosions.frosty, A =>
         {
           A.HarmEntity(Elements.cold, 6.d6() + 6);
-          A.DestroyCarriedItem(2.d3(), null, null, new Material[] { Materials.glass });
+          A.DestroyCarriedItem(2.d3(), null, null, [Materials.glass]);
         });
         /*16*/Workbench.AddAccident(Codex.Explosions.electric, A => 
         {

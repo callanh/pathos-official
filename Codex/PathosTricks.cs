@@ -103,7 +103,7 @@ namespace Pathos
 
       leaking_gas = AddTrick("leaking gas", A =>
       {
-        A.ArriveEntity(Dice.One, Sonics.gas, new[] { Entities.gas_spore });
+        A.ArriveEntity(Dice.One, Sonics.gas, [Entities.gas_spore]);
       });
 
       living_dead = AddTrick("living dead", A =>
@@ -138,12 +138,12 @@ namespace Pathos
 
       watery_noodles = AddTrick("watery noodles", A =>
       {
-        A.ArriveEntity(1.d3(), Sonics.water_splash, new[] { Entities.water_moccasin, Entities.electric_eel, Entities.giant_eel, Entities.pearl_golem });
+        A.ArriveEntity(1.d3(), Sonics.water_splash, [Entities.water_moccasin, Entities.electric_eel, Entities.giant_eel, Entities.pearl_golem]);
       });
 
       pinching_crabs = AddTrick("pinching crabs", A =>
       {
-        A.ArriveEntity(1.d3(), Sonic: null, new[] { Entities.giant_crab });
+        A.ArriveEntity(1.d3(), Sonic: null, [Entities.giant_crab]);
       });
 
       calling_guard = AddTrick("calling guard", A =>

@@ -3657,7 +3657,7 @@ namespace Pathos
             // space the boulders around the circle.
             if (!HengeSquare.GetAdjacentSquares().Any(S => S.Boulder != null))
             {
-              var PrisonerEntity = HengeVariant.Block.Prison != null && HengeVariant.Prisoner != null ? Generator.RandomEntity(Section.MinimumDifficulty, Section.MaximumDifficulty, E => E.Kind.In(HengeVariant.Prisoner)) : null;
+              var PrisonerEntity = HengeVariant.Block.Prison != null && HengeVariant.Prisoner != null ? Generator.RandomEntity(Section.MinimumDifficulty, Section.MaximumDifficulty, E => E.Kind == HengeVariant.Prisoner) : null;
 
               if (HengeVariant.Ground != null)
                 Generator.PlaceFloor(HengeSquare, HengeVariant.Ground);

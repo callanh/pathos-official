@@ -62,15 +62,15 @@ namespace Pathos
       wax = AddMaterial("wax", Elements.physical, Corporeal: true);
       wood = AddMaterial("wood", Elements.physical, Corporeal: true);
 
-      this.RustMetalArray = new[]
-      {
+      this.RustMetalArray =
+      [
         iron, // rust is an iron oxide, usually red oxide formed by the redox reaction of iron and oxygen in the presence of water or air moisture
         copper, // copper tarnishes but which comes to the same effect as rusting.
         silver, // silver can rust or tarnish over time because of exposure to moisture or sulfur in the air
         //gold, // gold does not rust.
         //bronze, // bronze does not rust, it is an alloy of tin and copper.
         //tin // tin does not rust, it is an elemental metal and therefore does not contain iron.
-      };
+      ];
 
       foreach (var Material in List)
         Register.Alias(Material, Material.Name.ToSentenceCase()); // backwards compatibility fallback for when materials started with a capital letter. eg. "Wood".

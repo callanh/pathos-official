@@ -156,15 +156,15 @@ namespace Pathos
         { ItemType.Rock, quiver },
       };
 
-      Register.VanitySlotRowArray = new SlotRow[6]
-      {
+      Register.VanitySlotRowArray =
+      [
         new SlotRow(eyewear, helmet, earwear),
         new SlotRow(cloak, shirt, amulet),
         new SlotRow(quiver, suit, light),
         new SlotRow(main_hand, barding, left_ring),
         new SlotRow(offhand, gloves, right_ring),
         new SlotRow(purse, boots, keys),
-      };
+      ];
 
       // TODO: slots requiring further abstraction in the engine.
       Register.both_hands = both_hands;

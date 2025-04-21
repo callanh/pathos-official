@@ -27,52 +27,52 @@ namespace Pathos
         });
       }
 
-      inediate = AddDiet("inediate", Array.Empty<Material>(), D =>
+      inediate = AddDiet("inediate", [], D =>
       {
       });
 
-      omnivore = AddDiet("omnivore", new[] { Materials.fruit, Materials.vegetable, Materials.animal }, D =>
+      omnivore = AddDiet("omnivore", [Materials.fruit, Materials.vegetable, Materials.animal], D =>
       {
       });
 
-      carnivore = AddDiet("carnivore", new[] { Materials.animal }, D =>
+      carnivore = AddDiet("carnivore", [Materials.animal], D =>
       {
       });
 
-      fabrivore = AddDiet("fabrivore", new[] { Materials.fruit, Materials.vegetable, Materials.wax, Materials.leather, Materials.hide, Materials.cloth, /*Materials.straw,*/ Materials.bone }, D =>
+      fabrivore = AddDiet("fabrivore", [Materials.fruit, Materials.vegetable, Materials.wax, Materials.leather, Materials.hide, Materials.cloth, /*Materials.straw,*/ Materials.bone], D =>
       {
       });
 
-      geophagy = AddDiet("geophagy", new[] { Materials.stone, Materials.animal, Materials.hide, Materials.leather, Materials.gemstone, Materials.glass, Materials.bone }, D =>
+      geophagy = AddDiet("geophagy", [Materials.stone, Materials.animal, Materials.hide, Materials.leather, Materials.gemstone, Materials.glass, Materials.bone], D =>
       {
       });
 
-      hematophagy = AddDiet("hematophagy", Array.Empty<Material>(), D =>
+      hematophagy = AddDiet("hematophagy", [], D =>
       {
         D.SpecificAnatomy = Anatomies.blood;
       });
       
-      herbivore = AddDiet("herbivore", new[] { Materials.fruit, Materials.vegetable, /*Materials.straw,*/ Materials.paper }, D =>
+      herbivore = AddDiet("herbivore", [Materials.fruit, Materials.vegetable, /*Materials.straw,*/ Materials.paper], D =>
       {
       });
       
-      lithivore = AddDiet("lithivore", new[] { Materials.stone, Materials.sand, Materials.glass, Materials.clay, Materials.crystal, Materials.gemstone }, D =>
+      lithivore = AddDiet("lithivore", [Materials.stone, Materials.sand, Materials.glass, Materials.clay, Materials.crystal, Materials.gemstone], D =>
       {
       });
       
-      metalivore = AddDiet("metalivore", new[] { Materials.tin, Materials.iron, Materials.copper, Materials.silver, Materials.gold, Materials.platinum, Materials.mithril }, D =>
+      metalivore = AddDiet("metalivore", [Materials.tin, Materials.iron, Materials.copper, Materials.silver, Materials.gold, Materials.platinum, Materials.mithril], D =>
       {
       });
 
-      organivore = AddDiet("organivore", new[] { Materials.fruit, Materials.vegetable, Materials.wax, Materials.leather, Materials.hide, Materials.cloth, /*Materials.straw,*/ Materials.wood, Materials.paper, Materials.animal }, D =>
+      organivore = AddDiet("organivore", [Materials.fruit, Materials.vegetable, Materials.wax, Materials.leather, Materials.hide, Materials.cloth, /*Materials.straw,*/ Materials.wood, Materials.paper, Materials.animal], D =>
       {
       });
 
-      //plastivore = AddDiet("plastivore", new[] { Materials.plastic }, D =>
+      //plastivore = AddDiet("plastivore", [Materials.plastic], D =>
       //{
       //});
 
-      xylophagy = AddDiet("xylophagy", new[] { Materials.wood, Materials.paper }, D =>
+      xylophagy = AddDiet("xylophagy", [Materials.wood, Materials.paper], D =>
       {
       });
     }

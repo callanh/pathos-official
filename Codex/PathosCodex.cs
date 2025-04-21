@@ -134,7 +134,7 @@ namespace Pathos
 
       Manifest.Blinking.Set(Properties.blinking, new Requirement(Attributes.intelligence, 3), Sonics.blink, NutritionCost: 5);
 
-      Manifest.Casting.Set(Attributes.intelligence, new[] { Anatomies.mind, Anatomies.voice });
+      Manifest.Casting.Set(Attributes.intelligence, [Anatomies.mind, Anatomies.voice]);
 
       Manifest.Jumping.Set(Properties.jumping, new Requirement(Attributes.strength, 3), Sonics.jump, NutritionCost: 5);
 
@@ -142,7 +142,7 @@ namespace Pathos
 
       Manifest.Kicking.Set(new Requirement(Attributes.strength, 3), Elements.physical, Sonics.kick, NutritionCost: 1);
 
-      Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, new[] { Anatomies.mind, Anatomies.voice });
+      Manifest.Praying.Set(Motions.pray, Sonics.gain_karma, Sonics.lose_karma, PrayKarmaCost: 250, [Anatomies.mind, Anatomies.voice]);
       Manifest.Praying.AddPrayer(Standings.hopeful, A =>
       {
         A.WhenSourceBelowAppetite(Appetites.hungry, T => T.GainNutrition(Dice.Fixed(Rules.PrayNutrition)));

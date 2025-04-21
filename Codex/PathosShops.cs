@@ -60,7 +60,7 @@ namespace Pathos
           S.Sonic = Codex.Sonics.chime;
           S.Rarity = Rarity;
           S.KeeperEntity = Entities.merchant;
-          S.SetServantEntities(new[] { Entities.small_mimic, Entities.large_mimic, Entities.giant_mimic });
+          S.SetServantEntities([Entities.small_mimic, Entities.large_mimic, Entities.giant_mimic]);
           S.KeeperFeature = Features.stall;
           S.SetKeeperNames(MerchantNameArray);
           S.SetServices(Services.List.ToArray());
@@ -84,48 +84,48 @@ namespace Pathos
         () => Items.List.Where(I => I.Rarity > 0 || (!I.Grade.Unique && I.IsAbolitionCandidate())));
 
       gun_mart = AddShop("gun mart", Glyphs.firearm_stock, Rarity: 2,
-        () => new[] { Stocks.weapon, Stocks.gem },
+        () => [Stocks.weapon, Stocks.gem],
         () => Stocks.weapon.Items.Where(I => I.IsAbolitionCandidate()));
 
       used_armour_dealership = AddShop("used armour dealership", Glyphs.armour_stock, Rarity: 14,
-        () => new[] { Stocks.armour, Stocks.gem },
+        () => [Stocks.armour, Stocks.gem],
         () => Stocks.armour.Items.Where(I => I.Rarity > 0));
 
       secondhand_stationery_store = AddShop("second-hand stationery store", Glyphs.scroll_stock, Rarity: 10,
-        () => new[] { Stocks.scroll, Stocks.book, Stocks.gem },
-        () => Stocks.scroll.Items.Where(I => I.Rarity > 0)/*.Union(new Item[] { Items.potion_of_ink })*/);
+        () => [Stocks.scroll, Stocks.book, Stocks.gem],
+        () => Stocks.scroll.Items.Where(I => I.Rarity > 0)/*.Union([Items.potion_of_ink])*/);
 
       liquor_emporium = AddShop("liquor emporium", Glyphs.potion_stock, Rarity: 10,
-        () => new[] { Stocks.potion, Stocks.gem },
+        () => [Stocks.potion, Stocks.gem],
         () => Stocks.potion.Items.Where(I => I.Rarity > 0));
 
       antique_weapons_outlet = AddShop("antique weapons outlet", Glyphs.weapon_stock, Rarity: 5,
-        () => new[] { Stocks.weapon, Stocks.gem },
+        () => [Stocks.weapon, Stocks.gem],
         () => Stocks.weapon.Items.Where(I => I.Rarity > 0 && !I.IsAbolitionCandidate()));
 
       delicatessen = AddShop("delicatessen", Glyphs.food_stock, Rarity: 5,
-        () => new[] { Stocks.food, Stocks.gem },
-        () => Stocks.food.Items.Where(I => I.Rarity > 0).Union(new Item[] { Items.potion_of_water, Items.potion_of_booze, Items.potion_of_fruit_juice, Items.ice_box, Items.horn_of_plenty }));
+        () => [Stocks.food, Stocks.gem],
+        () => Stocks.food.Items.Where(I => I.Rarity > 0).Union([Items.potion_of_water, Items.potion_of_booze, Items.potion_of_fruit_juice, Items.ice_box, Items.horn_of_plenty]));
 
       jewellers = AddShop("jewellers", Glyphs.ring_stock, Rarity: 3,
-        () => new[] { Stocks.ring, Stocks.amulet, Stocks.gem },
+        () => [Stocks.ring, Stocks.amulet, Stocks.gem],
         () => Stocks.ring.Items.Union(Stocks.amulet.Items).Union(Stocks.gem.Items).Where(I => I.Rarity > 0));
 
       quality_apparel_and_accessories = AddShop("quality apparel and accessories", Glyphs.wand_stock, Rarity: 3,
-        () => new[] { Stocks.wand, Stocks.gem },
-        () => Stocks.wand.Items.Where(I => I.Rarity > 0).Union(new[] { Items.leather_gloves, Items.elven_cloak }));
+        () => [Stocks.wand, Stocks.gem],
+        () => Stocks.wand.Items.Where(I => I.Rarity > 0).Union([Items.leather_gloves, Items.elven_cloak]));
 
       hardware_store = AddShop("hardware store", Glyphs.tool_stock, Rarity: 3,
-        () => new[] { Stocks.tool, Stocks.gem },
+        () => [Stocks.tool, Stocks.gem],
         () => Stocks.tool.Items.Where(I => I.Rarity > 0));
 
       rare_books = AddShop("rare books", Glyphs.book_stock, Rarity: 3,
-        () => new[] { Stocks.book, Stocks.gem },
+        () => [Stocks.book, Stocks.gem],
         () => Stocks.book.Items.Where(I => I.Rarity > 0));
 
       lighting_store = AddShop("lighting store", Glyphs.light_stock, Rarity: 3,
-        () => new[] { Stocks.tool, Stocks.gem },
-        () => new[] { Items.oil_lamp, Items.magic_lamp, Items.lantern, Items.torch, Items.magic_candle, Items.wax_candle, Items.potion_of_oil, Items.wand_of_light });
+        () => [Stocks.tool, Stocks.gem],
+        () => [Items.oil_lamp, Items.magic_lamp, Items.lantern, Items.torch, Items.magic_candle, Items.wax_candle, Items.potion_of_oil, Items.wand_of_light]);
     }
 #endif
 

@@ -31,7 +31,7 @@ namespace Pathos
         {
           S.Name = Name;
           S.ActiveGlyph = ActiveGlyph;
-          S.HoldGlyphs = HoldGlyphArray ?? Array.Empty<Glyph>();
+          S.HoldGlyphs = HoldGlyphArray ?? [];
           S.Sonic = Sonic;
 
           Debug.Assert(S.HoldGlyphs.IsDistinct(), "HoldGlyphs must be distinct.");
@@ -40,7 +40,7 @@ namespace Pathos
         });
       }
 
-      blaze = AddVolatile("blaze", Glyphs.blaze, new[] { Glyphs.scorch }, Sonics.burn, S =>
+      blaze = AddVolatile("blaze", Glyphs.blaze, [Glyphs.scorch], Sonics.burn, S =>
       {
         S.Apply.HarmEntity(Elements.fire, 2.d6());
 
@@ -57,8 +57,8 @@ namespace Pathos
         S.AddReaction(Chance.Always, Elements.cold, T => T.ExtinguishVolatile(blaze));
       });
 
-      blood = AddVolatile("blood", Glyphs.blood, new[] 
-      {
+      blood = AddVolatile("blood", Glyphs.blood,
+      [
         Glyphs.splatter_A,
         Glyphs.splatter_B,
         Glyphs.splatter_C,
@@ -85,7 +85,7 @@ namespace Pathos
         Glyphs.splatter_X,
         Glyphs.splatter_Y,
         Glyphs.splatter_Z,
-      }, Sonics.splat, S =>
+      ], Sonics.splat, S =>
       {
         S.Apply.ApplyTransient(Properties.fumbling, 1.d4() + 10); // TODO: for an active blood spray, needs an animated tile.
 

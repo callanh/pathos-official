@@ -2101,7 +2101,7 @@ HordeName,ogre,огры
 HordeName,orc,орки
 HordeName,rat,крысы
 HordeName,rothé,роте
-HordeName,scorpion,скорпион
+HordeName,scorpion,скорпионы
 HordeName,spider,пауки
 HordeName,spore,споры
 HordeName,termite,термиты
@@ -2458,7 +2458,7 @@ ItemName,elven bow,эльфийский лук
 ItemName,elven broadsword,эльфийский палаш
 ItemName,elven cloak,эльфийский плащ
 ItemName,elven dagger,эльфийский кинжал
-ItemName,elven leather helm,эльфийская кожаная шляпа
+ItemName,elven leather helm,эльфийский кожаный шлем
 ItemName,elven mithril-coat,эльфийский мифрильный доспех
 ItemName,elven shield,эльфийский щит
 ItemName,elven short sword,эльфийский короткий меч
@@ -3295,8 +3295,8 @@ LiteralText,gain level,получает уровень
 LiteralText,GAIN LEVEL,ПОВЫСИТЬ УРОВЕНЬ
 LiteralText,gain nutrition,повысить сытость
 LiteralText,gain skill,повышение навыка
-LiteralText,gate,ворота
-LiteralText,gates,ворота
+LiteralText,gate,дверь
+LiteralText,gates,двери
 LiteralText,gather,собирает
 LiteralText,gender,пол
 LiteralText,genocide,геноцид
@@ -4628,24 +4628,24 @@ SonicName,weapon,оружие
 SonicName,whistle,свисток
 SonicName,woof,лай
 SonicName,write,написание
-SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,"Аристократы, пользующиеся всеми привилегиями спускаются с богатством и задаются вопросом, почему все их ненавидят."
-SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Будучи необычно низкорослым и лёгким, вы более проворны, но не так эффективны в бою."
-SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Будучи необычно высоким и тяжёлым, вы двигаетесь немного медленнее, но более выносливы."
-SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Навеки проклятые ликантропией, эти существа могут превращаться в чудовищных волков."
-SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,"Отрёкшееся существо, которое существует тем, что питается жизненной сущностью живых."
-SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Одарённый экстрасенсорным восприятием, позволяющим выявлять сущности, скрытые от обычных органов чувств, но ценой мучительного голода."
+SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealth and wonder why everyone hates them.,"Аристократы, привыкшие пользоваться всеми благами богатства и власти, недоумевают, отчего же народ относится к ним с неприязнью и ненавистью."
+SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","Ваш небольшой рост и лёгкость делают вас удивительно проворным, однако уменьшают физическую мощь."
+SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","Ваш необычный рост и массивность снижают скорость передвижения, но компенсируются повышенной физической устойчивостью."
+SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.","Навеки проклятые ликантропией, они обречены превращаться в ужасающих зверей-волков."
+SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,"Отрёкшийся от прежнего бытия, ныне оно поддерживает своё существование, поглощая жизненную энергию живых существ."
+SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"Вам дано уникальное экстрасенсорное восприятие, позволяющее обнаруживать существа, скрытые от обыденного взгляда, но эта сила обходится дорогой ценой — постоянным и изнурительным чувством голода."
 SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии земли, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии пламени, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии мороза, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии разряда, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Очень чуткие прислужники стихии воды, они могут призывать взрывные сферы, чтобы уничтожать своих врагов."
-SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Вся жизнь была сосредоточена на изучении книг в ущерб другим увлечениям и физической форме.
-SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Синдром главного героя привёл к тому, что он полагается на сюжетную броню, но ему суждено пройти серьёзную проверку реальностью."
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Без чёткого ощущения себя в пространстве, вы привыкли ощущать себя везде и всюду одновременно."
-SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Созданный из живого стекла, отражающего энергию, вы представляете собой идеальную, но хрупкую копию на себя настоящего."
-SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Каким-то образом всё ещё живое, хотя и без плоти, необходимой для того, чтобы жить по-настоящему, это своеобразное существование имеет некоторые преимущества."
-SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Из пьяниц получаются дерзкие, но слегка неустойчивые авантюристы; только не просите их прочесть алфавит наоборот."
-SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Независимо от того, невиновны они или виновны в совершении своих преступлений, эти личности отчаянно пытаются избежать заключения под стражу."
+SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,"Всю свою жизнь вы посвятили изучению книг, пренебрегая физическими упражнениями и прочими развлечениями."
+SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Синдром главного героя заставил вас поверить в неуязвимую силу сюжета, но судьба приготовила вам суровое испытание реальной жизнью."
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Не имея точного представления о своём месте в пространстве, вы обрели способность находиться и ощущать себя одновременно повсюду."
+SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Вы сотворены из живого стекла, впитывающее и отражающее окружающую энергию. Ваша сущность является совершенной, точной копией оригинала, однако отличается исключительной хрупкостью и уязвимостью."
+SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","Несмотря на потерю телесной оболочки, необходимой для настоящей жизни, существо ухитряется сохранять некое подобие существования, которое, впрочем, открывает перед ним уникальные возможности."
+SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Пьяницы часто становятся смелыми и отважными авантюристами, однако их поступки нередко бывают непредсказуемыми. Но вот попросить их произнести буквы алфавита задом наперёд — дело заведомо проигрышное."
+SpecialDescription,"Whether innocent or guilty of their accused crimes, these individuals are desperate to escape custody.","Неважно, заслуженно или незаслуженно обвинённые в совершённых преступлениях, эти люди всеми силами стремятся уйти от наказания и остаться на свободе."
 SpecialName,colossus,гигант
 SpecialName,drunkard,пьяница
 SpecialName,earth,почва
