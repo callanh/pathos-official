@@ -23346,54 +23346,6 @@ namespace Pathos
       yeoman = AddEntity(Kinds.mercenary, Races.human, "yeoman", E =>
       {
         E.Glyph = Glyphs.yeoman;
-        E.Level = 16;
-        E.Challenge = 151;
-        E.Difficulty = 11;
-        E.Frequency = 1;
-        E.IsGuardian = true;
-        E.IsMercenary = true;
-        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
-        E.SetDiet(Diets.omnivore);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(16000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: true,
-          Blood: true,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 14, DEX: 11, CON: 15, INT: 8, WIS: 11, CHA: 12);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.male, Genders.female);
-        E.SetGreed(SentientGreed);
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.polearm);
-        E.Startup.SetTalent();
-        E.Startup.Loot.AddKit(Items.fauchard);
-        E.Startup.Loot.AddKit(Items.studded_leather_armour);
-        E.Startup.Loot.AddKit(Items.low_boots);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +2 from str.
-        E.SetCorpse(Chance.Always);
-      });
-
-      yeoman_warder = AddEntity(Kinds.mercenary, Races.human, "yeoman warder", E =>
-      {
-        E.Glyph = Glyphs.yeoman_warder;
         E.Level = 9;
         E.Challenge = 156;
         E.Difficulty = 5;
@@ -23424,7 +23376,54 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 14, DEX: 11, CON: 13, INT: 10, WIS: 11, CHA: 14);
+        E.DefaultForm.Set(STR: 12, DEX: 11, CON: 13, INT: 8, WIS: 11, CHA: 12);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.male, Genders.female);
+        E.SetGreed(SentientGreed);
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.polearm);
+        E.Startup.SetTalent();
+        E.Startup.Loot.AddKit(Items.fauchard);
+        E.Startup.Loot.AddKit(Items.studded_leather_armour);
+        E.Startup.Loot.AddKit(Items.low_boots);
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.SetCorpse(Chance.Always);
+      });
+
+      yeoman_warder = AddEntity(Kinds.mercenary, Races.human, "yeoman warder", E =>
+      {
+        E.Glyph = Glyphs.yeoman_warder;
+        E.Level = 16;
+        E.Challenge = 151;
+        E.Difficulty = 11;
+        E.Frequency = 1;
+        E.IsGuardian = true;
+        E.IsMercenary = true;
+        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.omnivore);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(16000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 14, DEX: 11, CON: 15, INT: 10, WIS: 11, CHA: 14);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
@@ -23434,13 +23433,14 @@ namespace Pathos
         E.Startup.Loot.AddKit(Items.ranseur);
         E.Startup.Loot.AddKit(Items.chain_mail);
         E.Startup.Loot.AddKit(Items.high_boots);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d6()); // +2 from str.
         E.SetCorpse(Chance.OneIn3);
       });
 
       chief_yeoman_warder = AddEntity(Kinds.mercenary, Races.human, "chief yeoman warder", E =>
       {
-        E.Glyph = Glyphs.Chief_Yeoman_Warder;
+        E.Glyph = Glyphs.chief_yeoman_warder;
         E.Level = 28;
         E.Challenge = 1168;
         E.Difficulty = 23;

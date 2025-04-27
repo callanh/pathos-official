@@ -478,7 +478,7 @@ namespace Pathos
     public readonly Glyph chest_trapped;
     public readonly Glyph chickatrice;
     public readonly Glyph chicken;
-    public readonly Glyph Chief_Yeoman_Warder;
+    public readonly Glyph chief_yeoman_warder;
     public readonly Glyph chieftain;
     public readonly Glyph yellow_gem;
     public readonly Glyph clairvoyance_spell;

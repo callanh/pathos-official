@@ -207,7 +207,7 @@ namespace Pathos
 
       AddEvolution(Entities.spark_bug, Entities.arc_bug, Entities.lightning_bug);
 
-      AddEvolution(Entities.yeoman_warder, Entities.yeoman, Entities.chief_yeoman_warder);
+      AddEvolution(Entities.yeoman, Entities.yeoman_warder, Entities.chief_yeoman_warder);
 
       AddEvolution(Entities.earth_seeker, Entities.earth_binder, Entities.earth_maker);
       AddEvolution(Entities.flame_seeker, Entities.flame_binder, Entities.flame_maker);
