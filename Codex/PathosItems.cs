@@ -227,7 +227,7 @@ namespace Pathos
       void SugarRush(ItemEditor I, ApplyEditor A, int? Duration = null)
       {
         // fairies benefit from sweet things and an increased metabolism.
-        A.WhenTargetKind(new[] { Kinds.fairy }, T =>
+        A.WhenTargetKind([Kinds.fairy], T =>
         {
           T.ApplyTransient(Properties.life_regeneration, 10.d(Duration ?? (I.Nutrition / 10)));
           T.ApplyTransient(Properties.mana_regeneration, 10.d(Duration ?? (I.Nutrition / 10)));
@@ -431,7 +431,7 @@ namespace Pathos
               U => U.DetectMaterial(Range.Sq15, Materials.gold, Materials.gemstone),
               C => C.DetectMaterial(Range.Sq10, Materials.gold)
             ),
-            S => S.DestroyCarriedItem(Dice.One, null, null, new[] { Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine })
+            S => S.DestroyCarriedItem(Dice.One, null, null, [Materials.gold, Materials.gemstone, Materials.mithril, Materials.adamantine])
           );
         });
         I.AddObviousUse(Motions.copy, Delay.FromTurns(30), Sonics.magic, Use =>
@@ -491,7 +491,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.tunnelling);
         var W = I.SetTwoHandedWeapon(Skills.pick, null, Elements.physical, DamageType.Pierce, 1.d12() + 6);
-        W.AddVersus(new[] { Materials.stone }, Elements.physical, 2.d12() + 12);
+        W.AddVersus([Materials.stone], Elements.physical, 2.d12() + 12);
         I.AddObviousUse(Motions.dig, Delay.FromTurns(10), Sonics.pick_axe, Use =>
         {
           Use.SetCast().Beam(Beams.digging, 1.d4())
@@ -998,7 +998,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         var W = I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 2.d5(), D =>
         {
-          D.WhenTargetKind(new[] { Kinds.dragon }, T => T.WhenChance(Chance.OneIn4, A =>
+          D.WhenTargetKind([Kinds.dragon], T => T.WhenChance(Chance.OneIn4, A =>
           {
             A.WithSourceSanctity
             (
@@ -1008,7 +1008,7 @@ namespace Pathos
             );
           }));
         });
-        W.AddVersus(new[] { Kinds.dragon }, Elements.physical, 2.d4());
+        W.AddVersus([Kinds.dragon], Elements.physical, 2.d4());
         I.AddPropertyAreaUse(Motions.zap, Properties.fear, Delay.FromTurns(20), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.flash, Dice.Zero)
@@ -1129,7 +1129,7 @@ namespace Pathos
             C => C.Backfire(F => F.ApplyTransient(Properties.blindness, 1.d6() + 1))
           );
         }));
-        W.AddVersus(Kinds.Undead.ToArray(), Elements.fire, 1.d8());
+        W.AddVersus(Kinds.Undead, Elements.fire, 1.d8());
       });
 
       Vorpal_Blade = AddMeleeWeapon("Vorpal Blade", I =>
@@ -1148,7 +1148,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         I.SetOneHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d8(), D =>
         {
-          D.WhenTargetEntity(new[] { Entities.jabberwock, Entities.vorpal_jabberwock }, T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
+          D.WhenTargetEntity([Entities.jabberwock, Entities.vorpal_jabberwock], T => T.DecapitateEntity(Anatomies.head, Strikes.sever));
           D.WithSourceSanctity
           (
             B => B.WhenChance(Chance.OneIn10, T => T.DecapitateEntity(Anatomies.head, Strikes.sever)),
@@ -1214,7 +1214,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.leather)
          .SetBoostAttribute(Attributes.strength);
         var Weapon = I.SetOneHandedWeapon(Skills.sling, Sonics.sling_shot, Elements.physical, DamageType.Bludgeon, Dice.One);
-        Weapon.AddVersus(new[] { Kinds.giant }, Elements.physical, 2.d4());
+        Weapon.AddVersus([Kinds.giant], Elements.physical, 2.d4());
         Weapon.AttackModifier = Modifier.Plus2;
         Weapon.BurstRate = 2;
       });
@@ -1413,7 +1413,7 @@ namespace Pathos
             C => C.Backfire(F => F.DrainMana(Elements.drain, 1.d4()))
           );
         }));
-        W.AddVersus(new[] { Materials.vegetable }, Elements.physical, 2.d4());
+        W.AddVersus([Materials.vegetable], Elements.physical, 2.d4());
       });
 
       Dire_Needle = AddMeleeWeapon("Dire Needle", I =>
@@ -1557,7 +1557,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetDamageBoost();
         var W = I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 1.d6()); // max: 1d6 + 20 damage.
-        W.AddVersus(new[] { Kinds.orc }, Elements.drain, 2.d6());
+        W.AddVersus([Kinds.orc], Elements.drain, 2.d6());
       });
 
       Ancient_Katana = AddMeleeWeapon("Ancient Katana", I =>
@@ -1594,7 +1594,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon) 
          .SetTalent(Properties.beatitude, Properties.clarity);
         var W = I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 4.d4());
-        W.AddVersus(Kinds.Undead.ToArray(), Elements.physical, 1.d8());
+        W.AddVersus(Kinds.Undead, Elements.physical, 1.d8());
         I.SetDowngradeItem(Ancient_Katana);
       });
 
@@ -1618,7 +1618,7 @@ namespace Pathos
         {
           D.HarmEntity(Elements.disintegrate, 1.d8());
         });
-        W.AddVersus(Kinds.Living.ToArray(), Elements.physical, 1.d8());
+        W.AddVersus(Kinds.Living, Elements.physical, 1.d8());
         I.SetDowngradeItem(Ancient_Katana);
       });
 
@@ -4436,7 +4436,7 @@ namespace Pathos
               C.WhenChance(Chance.OneIn20, T => T.PunishEntity(Codex.Punishments.gluttony), E => E.ApplyTransient(Properties.sickness, 1.d6() + 4));
             }
           );
-          A.WhenTargetKind(new[] { Kinds.dog, Kinds.cat }, T =>
+          A.WhenTargetKind([Kinds.dog, Kinds.cat], T =>
           {
             // dogs and cats cannot eat chocolate without serious illness.
             T.ApplyTransient(Properties.sickness, 4.d40());
@@ -5222,7 +5222,7 @@ namespace Pathos
             U => U.Nothing(),
             C => C.ApplyTransient(Properties.paralysis, 1.d6() + 4)
           );
-          A.WhenTargetKind(new[] { Kinds.lycanthrope }, T =>
+          A.WhenTargetKind([Kinds.lycanthrope], T =>
           {
             T.HarmEntity(Elements.physical, 4.d6() + 4);
             T.ApplyTransient(Properties.stunned, 4.d6());
@@ -5322,7 +5322,7 @@ namespace Pathos
         });
         I.SetImpact(Sonics.splat, A =>
         {
-          A.WhenTargetEntity(new[] { Entities.seal }, T => T.CharmEntity(Elements.physical, Delay.Zero));
+          A.WhenTargetEntity([Entities.seal], T => T.CharmEntity(Elements.physical, Delay.Zero));
         });
       });
 
@@ -6159,7 +6159,7 @@ namespace Pathos
               C.ApplyTransient(Properties.fainting, 3.d6()); // black out.
             }
           );
-          Use.Apply.WhenTargetKind(new[] { Kinds.dwarf }, T =>
+          Use.Apply.WhenTargetKind([Kinds.dwarf], T =>
           {
             T.EnergiseEntity(2.d4(), Modifier.Zero);
           });
@@ -6477,8 +6477,8 @@ namespace Pathos
           Use.Consume();
           Use.Apply.WithSourceSanctity
           (
-            B => B.GainLevel(Dice.Fixed(+1), RandomExperience: true), // gain level plus random xp.
-            U => U.GainLevel(Dice.Fixed(+1), RandomExperience: false), // gain level to base xp.
+            B => B.GainLevel(Dice.One, RandomExperience: true), // gain level plus random xp.
+            U => U.GainLevel(Dice.One, RandomExperience: false), // gain level to base xp.
             C => C.TransitionAscend(Properties.teleportation, Dice.One, Fixed: false) // rise up through ceiling.
           );
         });
@@ -8172,7 +8172,7 @@ namespace Pathos
             T => T.CreateItem(Dice.Fixed(1), DestroyArray),
             E => E.WithSourceSanctity
             (
-              B => B.DestroyEquippedItem(Dice.One, DestroyArray, new[] { Sanctities.Cursed }, null),
+              B => B.DestroyEquippedItem(Dice.One, DestroyArray, [Sanctities.Cursed], null),
               U => U.DestroyEquippedItem(Dice.One, DestroyArray, null, null),
               C =>
               {
@@ -8621,7 +8621,7 @@ namespace Pathos
             (
               B => B.DetectItem(Range.Sq20, Stocks.food, Stocks.potion),
               U => U.DetectItem(Range.Sq15, Stocks.food),
-              C => C.DestroyCarriedItem(Dice.One, new[] { Stocks.food }, null, null)
+              C => C.DestroyCarriedItem(Dice.One, [Stocks.food], null, null)
             )
           );
         });
@@ -8730,7 +8730,7 @@ namespace Pathos
             (
               B => B.DetectMaterial(Range.Sq20, Materials.gold),
               U => U.DetectMaterial(Range.Sq15, Materials.gold),
-              C => C.DestroyOwnedItem(4.d10() + 10, null, null, new[] { Materials.gold })
+              C => C.DestroyOwnedItem(4.d10() + 10, null, null, [Materials.gold])
             )
           );
         });
@@ -8968,7 +8968,7 @@ namespace Pathos
         I.Essence = ScrollEssence4;
         I.Price = Gold.FromCoins(300);
         I.SetWeakness(ScrollWeakness);
-        I.AddObviousUse(Motions.read, new Utility(Purpose.SummonEnemy, ItemArray: new[] { animal_corpse, vegetable_corpse }), Delay.FromTurns(15), Sonics.read, Use => // TODO: this is ENEMY, because raise dead does not have any charming effects.
+        I.AddObviousUse(Motions.read, new Utility(Purpose.SummonEnemy, ItemArray: [animal_corpse, vegetable_corpse]), Delay.FromTurns(15), Sonics.read, Use => // TODO: this is ENEMY, because raise dead does not have any charming effects.
         {
           Use.Consume();
           Use.SetCast().FilterItem(animal_corpse, vegetable_corpse)
@@ -9908,7 +9908,7 @@ namespace Pathos
             U => U.ApplyTransient(Properties.blindness, 3.d6() + 3),
             C => C.Backfire(B => B.ApplyTransient(Properties.blindness, 2.d6() + 2))
           );
-          Use.Apply.WhenTargetKind(new[] { Kinds.gremlin }, T => T.HarmEntity(Elements.physical, 8.d6() + 8));
+          Use.Apply.WhenTargetKind([Kinds.gremlin], T => T.HarmEntity(Elements.physical, 8.d6() + 8));
         });
         //I.AddEat(200, Delay.FromTurns(20), Sonics.tool); // NOTE: no diet can eat plastic yet.
       });
@@ -9930,7 +9930,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.force, Dice.One)
              .SetAudibility(5);
           Use.Apply.HarmEntity(Elements.physical, Dice.Zero);
-          Use.Apply.WhenTargetKind(new[] { Kinds.insect, Kinds.spider, Kinds.xan }, T =>
+          Use.Apply.WhenTargetKind([Kinds.insect, Kinds.spider, Kinds.xan], T =>
           {
             T.ApplyTransient(Properties.stunned, 3.d6() + 3);
             T.HarmEntity(Elements.physical, 8.d6() + 8);
@@ -9956,7 +9956,7 @@ namespace Pathos
           Use.SetCast().Strike(Strikes.force, Dice.One)
              .SetAudibility(1);
           Use.Apply.HarmEntity(Elements.physical, 1.d4());
-          Use.Apply.WhenTargetKind(new[] { Kinds.vampire }, T =>
+          Use.Apply.WhenTargetKind([Kinds.vampire], T =>
           {
             T.ApplyTransient(Properties.slowness, 3.d6() + 3);
             T.HarmEntity(Elements.physical, 8.d6() + 8);
@@ -10108,7 +10108,7 @@ namespace Pathos
         {
           Use.Apply.WhenConfused
           (
-            T => T.DestroyCarriedItem(1.d2(), new[] { Stocks.food }, null, null),
+            T => T.DestroyCarriedItem(1.d2(), [Stocks.food], null, null),
             F => F.WithSourceSanctity
             (
               B =>
@@ -10656,7 +10656,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.tunnelling);
         var W = I.SetOneHandedWeapon(Skills.pick, null, Elements.physical, DamageType.Pierce, 1.d6());
-        W.AddVersus(new[] { Materials.stone }, Elements.physical, 2.d6());
+        W.AddVersus([Materials.stone], Elements.physical, 2.d6());
         I.AddObviousUse(Motions.dig, Delay.FromTurns(30), Sonics.pick_axe, Use =>
         {
           Use.SetCast().Strike(Strikes.tunnel, Dice.One);
@@ -10682,7 +10682,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.tunnelling);
         var W = I.SetTwoHandedWeapon(Skills.pick, null, Elements.physical, DamageType.Pierce, 1.d12());
-        W.AddVersus(new[] { Materials.stone }, Elements.physical, 2.d12());
+        W.AddVersus([Materials.stone], Elements.physical, 2.d12());
         I.AddObviousUse(Motions.dig, Delay.FromTurns(30), Sonics.pick_axe, Use =>
         {
           Use.SetCast().Strike(Strikes.tunnel, Dice.One);
@@ -11110,7 +11110,7 @@ namespace Pathos
             B =>
             {
               B.Cancellation(Elements.magical);
-              B.Death(Elements.magical, new[] { Kinds.golem, Kinds.elemental }, Strikes.death, DeathSupport.cancellation);
+              B.Death(Elements.magical, [Kinds.golem, Kinds.elemental], Strikes.death, DeathSupport.cancellation);
             },
             U => U.Cancellation(Elements.magical),
             C => C.Backfire(F => F.Cancellation(Elements.magical))
@@ -11633,7 +11633,7 @@ namespace Pathos
              .SetObjects()
              .SetAudibility(1);
           Use.Apply.Locking();
-          Use.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.WithSourceSanctity
+          Use.Apply.WhenTargetKind([Kinds.golem], T => T.WithSourceSanctity
           (
             B => B.ApplyTransient(Properties.paralysis, 3.d6()),
             U => U.ApplyTransient(Properties.paralysis, 2.d6()),
@@ -13708,7 +13708,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         var W = I.SetTwoHandedMomentumWeapon(Skills.polearm, null, Elements.physical, DamageType.Slash, 2.d4());
         W.AttackModifier = Modifier.Minus2;
-        W.AddVersus(new[] { Materials.vegetable }, Elements.physical, 2.d4());
+        W.AddVersus([Materials.vegetable], Elements.physical, 2.d4());
       });
 
       sickle = AddMeleeWeapon("sickle", I =>
@@ -13728,7 +13728,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
         var W = I.SetOneHandedWeapon(Skills.light_blade, null, Elements.physical, DamageType.Slash, 1.d4() + 1);
         W.AttackModifier = Modifier.Minus1;
-        W.AddVersus(new[] { Materials.vegetable }, Elements.physical, 1.d4());
+        W.AddVersus([Materials.vegetable], Elements.physical, 1.d4());
       });
 
       short_sword = AddMeleeWeapon("short sword", I =>
@@ -14243,7 +14243,7 @@ namespace Pathos
         I.Series = null;
         I.Rarity = 2;
         I.Size = Size.Large;
-        I.Weight = Weight.FromUnits(250);
+        I.Weight = Weight.FromUnits(500);
         I.Material = Materials.iron;
         I.Essence = WeaponEssence0;
         I.Price = Gold.FromCoins(5);
@@ -15101,7 +15101,7 @@ namespace Pathos
         I.Series = null;
         //I.AddObviousIngestUse(Motions.eat, 30, Delay.FromTurns(20), Sonics.weapon);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
-        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d6() + 1);
+        I.SetOneHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 1.d7() + 1);
       });
 
       adamantine_bident = AddReachWeapon("adamantine bident", I =>

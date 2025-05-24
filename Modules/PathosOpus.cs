@@ -1151,7 +1151,7 @@ namespace Pathos
     }
     private Shop NextRandomShop()
     {
-      if (!ShopProbability.HasChecks())
+      if (ShopProbability.Checks.Count == 0)
         ShopProbability.Add(Generator.GetShops(), M => M.Rarity);
 
       var Result = ShopProbability.GetRandom();
@@ -1160,7 +1160,7 @@ namespace Pathos
     }
     private Shrine NextRandomShrine()
     {
-      if (!ShrineProbability.HasChecks())
+      if (ShrineProbability.Checks.Count == 0)
         ShrineProbability.Add(Generator.GetShrines(), M => M.Rarity);
 
       var Result = ShrineProbability.GetRandom();
@@ -8915,7 +8915,7 @@ H-----------H
       {
         var Result = EncounterEntities.Where(E => E.Difficulty >= MinimumDifficulty && E.Difficulty <= MaximumDifficulty).ToProbability(E => E.Frequency);
 
-        Debug.Assert(Result.HasChecks(), "Occupy probability should only be used when there is at least one viable entity.");
+        Debug.Assert(Result.Checks.Count > 0, "Occupy probability should only be used when there is at least one viable entity.");
 
         return Result;
       }

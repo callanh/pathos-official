@@ -92,7 +92,6 @@ namespace Pathos
     public readonly Material gemstone;
     public readonly Material glass;
     public readonly Material gold;
-    public readonly Material hemp;
     public readonly Material hide;
     public readonly Material ice;
     public readonly Material iron;

@@ -51,9 +51,9 @@ namespace Pathos
         Items = Codex.Items;
         Spells = Codex.Spells;
         Volatiles = Codex.Volatiles;
-        SentientGreed = new[] { Stocks.book, Stocks.potion, Stocks.scroll, Stocks.wand, Stocks.ring, Stocks.amulet, Stocks.gem };
-        GuardianGreed = new[] { Stocks.gem };
-        GolemGreed = Array.Empty<Stock>();
+        SentientGreed = [Stocks.book, Stocks.potion, Stocks.scroll, Stocks.wand, Stocks.ring, Stocks.amulet, Stocks.gem];
+        GuardianGreed = [Stocks.gem];
+        GolemGreed = [];
 
         GoodCloakItemArray = Stocks.armour.Items.Where(I => I.Type == ItemType.Cloak && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
         GoodAmuletItemArray = Stocks.amulet.Items.Where(I => I.Type == ItemType.Amulet && I.DefaultSanctity != Sanctities.Cursed && !I.Grade.Unique && I.Equip.HasEffects()).ToArray();
@@ -2709,7 +2709,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.flight);
-        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // -2 from str.
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +2 from str.
         E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+60));
         E.SetCorpse(Chance.OneIn3);
       });
@@ -4677,7 +4677,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.master, Skills.polearm);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.life_regeneration, Properties.mana_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.magical, Elements.drain, Elements.petrify, Elements.poison, Elements.sleep);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, Items.scythe);
+        E.Startup.Loot.AddKit([Modifier.Plus5], Items.scythe);
         E.AddAttack(AttackTypes.touch, Elements.physical, 4.d6(), K =>
         {
           K.SetCast().Strike(Strikes.death, Dice.One);
@@ -11670,7 +11670,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.spear, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision);
         E.Startup.SetResistance(Elements.sleep);
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.elven_spear });
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.elven_spear]);
         E.Startup.Loot.AddKit(Chance.Always, Items.elven_mithrilcoat);
         E.Startup.Loot.AddKit(Chance.OneIn5, Dice.One, Stocks.wand);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
@@ -14303,7 +14303,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade, Skills.whip);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.bullwhip);
-        E.Startup.Loot.AddKit(Chance.OneIn5, 2.d6(), new[] { Items.dagger, Items.silver_dagger, Items.mithril_dagger });
+        E.Startup.Loot.AddKit(Chance.OneIn5, 2.d6(), [Items.dagger, Items.silver_dagger, Items.mithril_dagger]);
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.leather_cloak);
         E.Startup.Loot.AddKit(Chance.OneIn20, Items.leather_armour);
         E.Startup.Loot.AddKit(Chance.OneIn5, 10.d6(), Items.gold_coin);
@@ -14400,7 +14400,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
-        E.Startup.Loot.AddKit(Chance.OneIn5, new[] { Items.axe, Items.silver_axe });
+        E.Startup.Loot.AddKit(Chance.OneIn5, [Items.axe, Items.silver_axe]);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.small_shield);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.helmet);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.scale_mail);
@@ -16017,7 +16017,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.necromancy, Skills.mace, Skills.light_armour, Skills.literacy);
         E.Startup.SetResistance(Elements.shock);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.silver_mace, Items.mace]);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
@@ -16072,7 +16072,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.light_armour, Skills.literacy, Skills.necromancy);
         E.Startup.SetResistance(Elements.shock);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.silver_mace, Items.mace]);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
@@ -16127,7 +16127,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.hammer, Skills.light_armour, Skills.transmutation, Skills.literacy, Skills.divination, Skills.abjuration, Skills.enchantment);
         E.Startup.SetResistance(Elements.shock);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_heavy_hammer, Items.heavy_hammer });
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.silver_heavy_hammer, Items.heavy_hammer]);
         E.Startup.Loot.AddKit(Chance.Always, Dice.One, Items.alchemy_smock);
         E.Startup.Loot.AddKit(Chance.Always, Stocks.tool.Items.Where(T => !T.Grade.Unique && T.Type == ItemType.Eyewear && T.DefaultSanctity != Sanctities.Cursed).ToArray());
         E.Startup.Loot.AddKit(Chance.OneIn2, 1.d2(), Stocks.potion);
@@ -16760,8 +16760,8 @@ namespace Pathos
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.Always, Items.plate_mail);
         E.Startup.Loot.AddKit(Chance.Always, Items.large_shield);
-        E.Startup.Loot.AddKit(Chance.Always, new[] { Items.long_sword, Items.silver_long_sword });
-        E.Startup.Loot.AddKit(Chance.OneIn2, 2.d4(), new[] { Items.dagger, Items.silver_dagger });
+        E.Startup.Loot.AddKit(Chance.Always, [Items.long_sword, Items.silver_long_sword]);
+        E.Startup.Loot.AddKit(Chance.OneIn2, 2.d4(), [Items.dagger, Items.silver_dagger]);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d7()); // +6 from str.
         E.SetCorpse(Chance.OneIn3);
       });
@@ -16810,7 +16810,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.flaming_sphere);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.magical);
@@ -16862,7 +16862,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.freezing_sphere);
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_away);
         E.Startup.AddGrimoire(Dice.One, Spells.invisibility);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
         E.Conveyance.MajorResistance(Elements.magical);
@@ -16908,7 +16908,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.sleep, Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6());
         E.AddAttack(AttackTypes.bite, Elements.physical, 4.d6());
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
@@ -16966,7 +16966,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
       });
@@ -17113,7 +17113,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
@@ -17159,7 +17159,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5()); // +1 from str.
         E.SetCorpse(Chance.Always);
@@ -17205,7 +17205,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleportation, Properties.teleport_control, Properties.slippery, Properties.free_action, Properties.invisibility, Properties.stealth, Properties.phasing);
         E.Startup.SetResistance(Elements.petrify, Elements.magical, Elements.poison);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus5], GoodCloakItemArray);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d5(), K =>
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
@@ -17256,7 +17256,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.master, Skills.light_armour, Skills.unarmed_combat);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.deflection, Properties.teleport_control);
         E.Startup.SetResistance(Elements.poison, Elements.petrify, Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
         E.AddAttack(AttackTypes.punch, Elements.physical, 13.d2());
         E.AddAttack(AttackTypes.punch, Elements.physical, 13.d2());
         E.AddAttack(AttackTypes.punch, Elements.physical, 1.d4()); // +5 from str.
@@ -17304,8 +17304,8 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.locks, Skills.traps, Skills.light_armour, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.petrify, Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, GoodCloakItemArray);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus3 }, 4.d4(), Items.silver_dagger);
+        E.Startup.Loot.AddKit([Modifier.Plus3], GoodCloakItemArray);
+        E.Startup.Loot.AddKit([Modifier.Plus3], 4.d4(), Items.silver_dagger);
         E.Startup.Loot.AddKit(3.d4(), Items.scroll_of_teleportation);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
@@ -18035,7 +18035,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade);
         E.Startup.SetTalent(Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
-        E.Startup.Loot.AddKit(new[] { Modifier.Plus5 }, Items.hawaiian_shirt);
+        E.Startup.Loot.AddKit([Modifier.Plus5], Items.hawaiian_shirt);
         E.Startup.Loot.AddKit(Items.wand_of_animation);
         E.Startup.Loot.AddKit(Items.expensive_camera);
         E.Startup.Loot.AddKit(Items.spectacles);
@@ -18085,13 +18085,13 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.clarity, Properties.see_invisible, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical, Elements.fire);
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.leather_armour });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.leather_cloak });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.fedora });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.pistol });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.crossbow });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.silver_bullet });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 4.d4(), Sanctities.Blessed, Modifier.Plus3to5, new[] { Items.silver_crossbow_bolt });
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, [Items.leather_armour]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, [Items.leather_cloak]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, [Items.fedora]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, [Items.pistol]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus3to5, [Items.crossbow]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus3to5, [Items.silver_bullet]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 4.d4(), Sanctities.Blessed, Modifier.Plus3to5, [Items.silver_crossbow_bolt]);
         E.Startup.Loot.AddKit(Dice.One, Items.wooden_stake);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +2 from str.
@@ -18252,7 +18252,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm, Skills.medium_blade);
         E.Startup.SetTalent();
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.halberd);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.short_sword, Items.silver_short_sword });
+        E.Startup.Loot.AddKit(Chance.OneIn2, [Items.short_sword, Items.silver_short_sword]);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d7()); // +1 from str.
         E.SetCorpse(Chance.OneIn3);
       });
@@ -21337,7 +21337,7 @@ namespace Pathos
             // should only apply if the blue light is not invisible.
             A.LoseNutrition(1.d100() + 100);
             A.ApplyTransient(Properties.hunger, 10.d15());
-            A.DestroyCarriedItem(Dice.One, new[] { Stocks.food }, SanctityArray: null, MaterialArray: null);
+            A.DestroyCarriedItem(Dice.One, StockArray: [Stocks.food], SanctityArray: null, MaterialArray: null);
           });
         });
         E.SetCorpse(Chance.Never);
@@ -23275,7 +23275,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.literacy, Skills.sling, Skills.axe);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.fire, Elements.sleep, Elements.petrify);
         E.Startup.SetTalent(Properties.quickness);
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 3.d4(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.hatchet });
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 3.d4(), Sanctities.Blessed, Modifier.Plus1to3, [Items.hatchet]);
         E.Startup.Loot.AddKit(50.d100(), Items.gold_coin);
         E.Startup.Loot.AddKit(1.d3() + 1, Chance.Always, Stocks.potion); // 2..4
         E.Startup.Loot.AddKit(1.d3() + 1, Chance.Always, Stocks.scroll); // 2..4
@@ -23330,13 +23330,13 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.firearms, Skills.light_armour, Skills.crossbow, Skills.dual_wielding);
         E.Startup.SetTalent(Properties.clarity);
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.leather_armour });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.leather_cloak });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.fedora });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.pistol });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.crossbow });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.silver_bullet });
-        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 6.d4(), Sanctities.Blessed, Modifier.Plus1to3, new[] { Items.silver_crossbow_bolt });
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.leather_armour]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.leather_cloak]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.fedora]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.pistol]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, Dice.One, Sanctities.Blessed, Modifier.Plus1to3, [Items.crossbow]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 10.d10(), Sanctities.Blessed, Modifier.Plus1to3, [Items.silver_bullet]);
+        E.Startup.Loot.AddKit(Dice.One, Chance.Always, 6.d4(), Sanctities.Blessed, Modifier.Plus1to3, [Items.silver_crossbow_bolt]);
         E.Startup.Loot.AddKit(Dice.One, Items.wooden_stake);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4()); // +3 from str.
@@ -23769,7 +23769,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.literacy, Skills.necromancy);
         E.Startup.SetTalent(Properties.see_invisible);
         E.Startup.SetResistance(Elements.shock, Elements.fire, Elements.poison, Elements.sleep);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.silver_mace, Items.mace });
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.silver_mace, Items.mace]);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
@@ -24437,7 +24437,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.heavy_armour, Skills.heavy_blade);
         E.Startup.SetTalent(Properties.berserking, Properties.vitality);
         E.Startup.Loot.AddKit(Modifier.Plus1to3, Items.plate_mail);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, new[] { Items.mithril_twohanded_sword, Items.silver_twohanded_sword, Items.twohanded_sword });
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.mithril_twohanded_sword, Items.silver_twohanded_sword, Items.twohanded_sword]);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_healing);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_extra_healing);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6()); // +4 from str.
@@ -24486,7 +24486,7 @@ namespace Pathos
         E.SetConcealment(Mimicry: false);
         E.Startup.SetSkill(Qualifications.proficient, Skills.light_armour, Skills.light_blade, Skills.sling, Skills.locks, Skills.traps, Skills.dart);
         E.Startup.SetTalent(Properties.dark_vision, Properties.stealth);
-        E.Startup.Loot.AddKit(Chance.OneIn3, new[] { Items.silver_dagger, Items.dagger, Items.elven_dagger });
+        E.Startup.Loot.AddKit(Chance.OneIn3, [Items.silver_dagger, Items.dagger, Items.elven_dagger]);
         E.Startup.Loot.AddKit(Chance.OneIn3, Items.sling);
         E.Startup.Loot.AddKit(Chance.OneIn3, 3.d4(), Items.rock);
         E.Startup.Loot.AddKit(Chance.OneIn10, Items.elven_mithrilcoat);
@@ -25453,7 +25453,7 @@ namespace Pathos
         E.Conveyance.UnafflictEntity();
         E.Conveyance.RestoreAbility();
         E.Conveyance.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.sickness, Properties.confusion, Properties.stunned, Properties.petrifying, Properties.fumbling);
-        E.Conveyance.WhenTargetKind(new[] { Kinds.fairy }, T =>
+        E.Conveyance.WhenTargetKind([Kinds.fairy], T =>
         {
           // fairies benefit from sweet things and an increased metabolism.
           T.ApplyTransient(Properties.life_regeneration, 1.d(500) + 500);
@@ -26993,10 +26993,10 @@ namespace Pathos
         E.Glyph = Glyphs.orc_warrior;
         E.Sonic = Sonics.grunt;
         E.Level = 12;
-        E.Challenge = 641;
+        E.Challenge = 214;
         E.Difficulty = 14;
         E.Frequency = 1;
-        E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
+        E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
         E.Size = Size.Medium;
@@ -27020,7 +27020,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 18, DEX: 12, CON: 16, INT: 7, WIS: 8, CHA: 6);
+        E.DefaultForm.Set(STR: 17, DEX: 12, CON: 16, INT: 7, WIS: 8, CHA: 6);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
@@ -27037,7 +27037,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_ring_mail);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d4()); // +4
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8()); // +4
         E.SetCorpse(Chance.OneIn3);
       });
 
@@ -30411,6 +30411,8 @@ namespace Pathos
       #endregion
 
       #region troll.
+      Item[] TrollPolearmArray() => [Items.glaive, Items.partisan, Items.spetum, Items.ranseur];
+
       black_troll = AddEntity(Kinds.troll, Races.troll, "black troll", E =>
       {
         E.Glyph = Glyphs.black_troll;
@@ -30450,7 +30452,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d5());
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d7());
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d4()); // +5
@@ -30500,7 +30502,7 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
         E.Startup.SetResistance(Elements.cold);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.AddAttack(AttackTypes.claw, Elements.cold, 4.d5());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5()); // +3
@@ -30549,7 +30551,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d8());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d10());
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d6()); // +4
@@ -30597,7 +30599,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d5());
         E.AddAttack(AttackTypes.bite, Elements.physical, 3.d3()); // +3
@@ -30646,7 +30648,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d5());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d4()); // +3
@@ -30694,7 +30696,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d8());
@@ -30744,7 +30746,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.master, Skills.swimming, Skills.polearm);
         E.Startup.SetTalent(Properties.dark_vision, Properties.life_regeneration);
-        E.Startup.Loot.AddKit(Chance.OneIn2, new[] { Items.glaive, Items.partisan, Items.spetum, Items.ranseur });
+        E.Startup.Loot.AddKit(Chance.OneIn2, TrollPolearmArray());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d5());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5());
         E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5()); // +4

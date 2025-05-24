@@ -1334,7 +1334,7 @@ namespace Pathos
 
       var ServantProbability = ShopList.SelectMany(S => S.ServantEntities).Distinct().Where(E => E.Difficulty <= ShopRoom.Map.Difficulty).ToProbability(E => E.Frequency);
 
-      if (ServantProbability.HasChecks())
+      if (ServantProbability.Checks.Count > 0)
       {
         var ServantCount = 1.d(Math.Max(ShopWidth, ShopHeight) / 2).Roll();
 
@@ -4864,7 +4864,7 @@ namespace Pathos
 
         Shop NextRandomShop()
         {
-          if (!KingdomShopProbability.HasChecks())
+          if (KingdomShopProbability.Checks.Count == 0)
             KingdomShopProbability = ShopProbability.Clone(); 
 
           return KingdomShopProbability.RemoveRandomOrNull();

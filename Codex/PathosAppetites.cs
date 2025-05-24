@@ -16,7 +16,7 @@ namespace Pathos
       var Properties = Codex.Properties;
       var Glyphs = Codex.Glyphs;
 
-      Appetite AddStatus(string Name, Inv.Colour Colour, int Threshold, Action<AppetiteEditor> EditorAction)
+      Appetite AddAppetite(string Name, Inv.Colour Colour, int Threshold, Action<AppetiteEditor> EditorAction)
       {
         return Register.Add(E =>
         {
@@ -29,26 +29,26 @@ namespace Pathos
         });
       }
 
-      satiated = AddStatus("satiated", Inv.Colour.DarkGreen, 1000, A =>
+      satiated = AddAppetite("satiated", Inv.Colour.DarkGreen, 1000, A =>
       {
         A.SpeedModifier = -0.25F; // overfed is a slight speed penalty.
         A.PriceMultiplier = 1;
         A.Interrupt = true;
       });
 
-      content = AddStatus("content", Inv.Colour.Black, 200, A =>
+      content = AddAppetite("content", Inv.Colour.Black, 200, A =>
       {
         A.PriceMultiplier = 1;
       });
 
-      hungry = AddStatus("hungry", Inv.Colour.DarkYellow, 50, A =>
+      hungry = AddAppetite("hungry", Inv.Colour.DarkYellow, 50, A =>
       {
         A.UnableAtWill = true;
         A.PriceMultiplier = 2;
         A.Interrupt = true;
       });
 
-      weak = AddStatus("weak", Inv.Colour.DarkOrange, 1, A =>
+      weak = AddAppetite("weak", Inv.Colour.DarkOrange, 1, A =>
       {
         A.StrengthModifier = -1;
         A.UnableAtWill = true;
@@ -56,7 +56,7 @@ namespace Pathos
         A.Interrupt = true;
       });
 
-      starving = AddStatus("starving", Inv.Colour.DarkRed, 0, A =>
+      starving = AddAppetite("starving", Inv.Colour.DarkRed, 0, A =>
       {
         A.StrengthModifier = -1;
         A.SpeedModifier = +0.25F; // starving is slight speed bonus.
