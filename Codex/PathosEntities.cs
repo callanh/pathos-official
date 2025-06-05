@@ -1864,7 +1864,7 @@ namespace Pathos
         E.Glyph = Glyphs.giant_termite;
         E.Sonic = Sonics.buzz;
         E.Level = 3;
-        E.Challenge = 5;
+        E.Challenge = 19;
         E.Difficulty = 4;
         E.Frequency = 1;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
@@ -1872,7 +1872,7 @@ namespace Pathos
         E.Speed = Speed.S4_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(50);
+        E.Weight = Weight.FromUnits(500);
         E.Figure.Set
         (
           Material: Materials.animal,
@@ -12243,7 +12243,7 @@ namespace Pathos
           Amorphous: false
         );
         E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
+        E.ManaAdvancement.Set(Dice.Zero);
         E.DefaultForm.Set(STR: 5, DEX: 1, CON: 3, INT: 1, WIS: 1, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
@@ -12968,7 +12968,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(Dice.Zero);
-        E.DefaultForm.Set(STR: 2, DEX: 1, CON: 10, INT: 1, WIS: 2, CHA: 1);
+        E.DefaultForm.Set(STR: 3, DEX: 1, CON: 10, INT: 1, WIS: 2, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();
@@ -13079,7 +13079,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(Dice.Zero);
-        E.DefaultForm.Set(STR: 2, DEX: 1, CON: 10, INT: 1, WIS: 2, CHA: 1);
+        E.DefaultForm.Set(STR: 3, DEX: 1, CON: 10, INT: 1, WIS: 2, CHA: 1);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed();

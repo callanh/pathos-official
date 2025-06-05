@@ -495,7 +495,7 @@ namespace Pathos
       knight = AddClass(C =>
       {
         C.Name = "knight";
-          C.Description = "Venerable men-at-arms clad in gleaming armour, renowned for their unyielding chivalry and conviction. They are high-born and are educated to be strategists and capable leaders on any battlefront.";
+        C.Description = "Venerable men-at-arms clad in gleaming armour, renowned for their unyielding chivalry and conviction. They are high-born and are educated to be strategists and capable leaders on any battlefront.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(14, 1.d8());
         C.ManaAdvancement.Set(3, Dice.One);

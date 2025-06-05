@@ -202,7 +202,7 @@ namespace Pathos
         Abuse(DipUse.Apply);
 
         var AnointUse = F.AddUse(Codex.Motions.anoint, null, Delay.FromTurns(20), Sonics.water_splash, Audibility: 2);
-        AnointUse.SetCast().FilterAnyItem().FilterSanctity(Sanctities.List.ToArray()); // include all BUC, but don't allow items that do not have sanctity like coins.
+        AnointUse.SetCast().FilterSanctity(Sanctities.List.ToArray()); // include all BUC, but don't allow items that do not have sanctity like coins.
         AnointUse.Apply.HarmEntity(Elements.water, Dice.Zero);
         AnointUse.Apply.WithSourceSanctity
         (

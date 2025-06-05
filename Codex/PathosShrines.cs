@@ -394,7 +394,7 @@ namespace Pathos
         {
           B.Description = "Convert one item into a random alternative of the same type.";
           B.Cost = 500;
-          B.SetCast().FilterAnyItem()
+          B.SetCast()
            .FilterEquipped(false) // otherwise can reforge an equipped one-handed weapon into a two-handed weapon.
            .FilterUniques(false)
            .FilterCoins(false);
