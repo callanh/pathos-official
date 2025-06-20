@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},活化 {CharacterName}
 FormatText,boost {AttributeName} by enchantment,根据附魔改变{AttributeName}
 FormatText,break {FeatureName},破坏 {FeatureName}
 FormatText,cap {Percent}%,{Percent}% 封顶
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},捕捉 {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,对哪个物品使用 {SpellName} ？
 FormatText,Cast {SpellName} which direction?,向哪个方向使用 {SpellName} ？
 FormatText,charging {ItemDice} items {ChargeDice},充能 {ItemDice} 物品 {ChargeDice}
@@ -2325,7 +2326,7 @@ ItemName,book of clairvoyance,洞察咒语书
 ItemName,book of cone of cold,严寒之锥咒语书
 ItemName,book of confusion,混乱咒语书
 ItemName,book of create familiar,侍灵制造咒语书
-ItemName,book of crushing sphere,泥岩球侍灵
+ItemName,book of crushing sphere,泥岩球侍灵咒语书
 ItemName,book of curing,疾病治愈咒语书
 ItemName,book of darkness,黑暗咒语书
 ItemName,book of deflection,保护咒语书
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,无法看见
 LiteralText,CAN'T SLIDE,无法滑动
 LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,无法投掷
-LiteralText,capture entity,捕捉
+LiteralText,capture any entity,捕捉
 LiteralText,carried,携带
 LiteralText,Cast,施咒
 LiteralText,CAST SPELLS,施咒

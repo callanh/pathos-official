@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},animiraj {CharacterName}
 FormatText,boost {AttributeName} by enchantment,pojačajte {AttributeName} očaravanjem
 FormatText,break {FeatureName},polomi {FeatureName}
 FormatText,cap {Percent}%,kap {Percent}%
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},hvatanje bića {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,Bacite {SpellName} na koju stavku?
 FormatText,Cast {SpellName} which direction?,Bacite {SpellName} u kom pravcu?
 FormatText,charging {ItemDice} items {ChargeDice},punjenje {ItemDice} stavke {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,NE MOŽE DA VIDI
 LiteralText,CAN'T SLIDE,NE MOŽE DA KLIZI
 LiteralText,CAN'T TELEKINESIS,NE MOŽE DA TELEKINEZUJE
 LiteralText,CAN'T THROW,NE MOŽE DA BACI
-LiteralText,capture entity,hvatanje bića
+LiteralText,capture any entity,hvatanje bića
 LiteralText,carried,nosi
 LiteralText,Cast,Baca
 LiteralText,CAST SPELLS,BACI MAGIJE

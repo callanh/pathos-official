@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},生命を吹き込まれた{CharacterName}
 FormatText,boost {AttributeName} by enchantment,修正値に応じて{AttributeName}を強化
 FormatText,break {FeatureName},{FeatureName}が壊れる
 FormatText,cap {Percent}%,上限{Percent}％
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},モンスターを捕獲 {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,どのアイテムに{SpellName}の呪文を唱える？
 FormatText,Cast {SpellName} which direction?,どの方向に{SpellName}の呪文を唱える？
 FormatText,charging {ItemDice} items {ChargeDice},充填 {ItemDice} アイテム {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,目が見えない
 LiteralText,CAN'T SLIDE,すり抜けられない
 LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
-LiteralText,capture entity,モンスターを捕獲
+LiteralText,capture any entity,モンスターを捕獲
 LiteralText,carried,所持品
 LiteralText,Cast,呪文
 LiteralText,CAST SPELLS,呪文

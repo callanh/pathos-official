@@ -3710,7 +3710,7 @@ namespace Pathos
         E.Challenge = 194;
         E.Difficulty = 12;
         E.Frequency = 1;
-        E.Defence = NewBlobDefence(13); // -1 from dex.
+        E.Defence = NewBlobDefence(18); // -1 from dex.
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -3806,7 +3806,7 @@ namespace Pathos
         E.Challenge = 258;
         E.Difficulty = 14;
         E.Frequency = 1;
-        E.Defence = NewBlobDefence(13); // -1 from dex.
+        E.Defence = NewBlobDefence(21); // -1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
         E.Size = Size.Large;

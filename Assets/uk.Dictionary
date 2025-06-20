@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},анімований {CharacterName}
 FormatText,boost {AttributeName} by enchantment,збільшення {AttributeName} через чари
 FormatText,break {FeatureName},зламати {FeatureName}
 FormatText,cap {Percent}%,максимум {Percent}%
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},захоплює {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,Застосувати {SpellName} на яку річ?
 FormatText,Cast {SpellName} which direction?,Застосувати {SpellName} в якому напрямку?
 FormatText,charging {ItemDice} items {ChargeDice},заряджає {ItemDice} предмети {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕ БАЧИТИ
 LiteralText,CAN'T SLIDE,НЕ МОЖЕ З'ЇЖДЖАТИ
 LiteralText,CAN'T TELEKINESIS,НЕ МОЖЕ ВИКОРИСТОВУВАТИ ТЕЛЕКІНЕЗ
 LiteralText,CAN'T THROW,НЕ МОЖЕ КИНУТИ
-LiteralText,capture entity,захоплює
+LiteralText,capture any entity,захоплює
 LiteralText,carried,що її несе
 LiteralText,Cast,Заклинання
 LiteralText,CAST SPELLS,ТВОРИТИ ЗАКЛИНАННЯ

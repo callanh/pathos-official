@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},animar a {CharacterName}
 FormatText,boost {AttributeName} by enchantment,aumentado {AttributeName} por encantamiento
 FormatText,break {FeatureName},romper {FeatureName}
 FormatText,cap {Percent}%,límite {Percent}%
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},capturas {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,¿Lanzar {SpellName} en qué objeto?
 FormatText,Cast {SpellName} which direction?,¿Lanzar {SpellName} en qué dirección?
 FormatText,charging {ItemDice} items {ChargeDice},cargar {ItemDice} ítems {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,NO PUEDE VER
 LiteralText,CAN'T SLIDE,NO PUEDE DESLIZARSE
 LiteralText,CAN'T TELEKINESIS,NO PUEDE TELEQUINESIA
 LiteralText,CAN'T THROW,NO PUEDE LANZAR
-LiteralText,capture entity,capturas
+LiteralText,capture any entity,capturas
 LiteralText,carried,cargado
 LiteralText,Cast,Lanzar
 LiteralText,CAST SPELLS,LANZAR HECHIZOS

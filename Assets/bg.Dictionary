@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},
 FormatText,boost {AttributeName} by enchantment,увеличение {AttributeName} зачарованием
 FormatText,break {FeatureName},
 FormatText,cap {Percent}%,
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},
 FormatText,Cast {SpellName} on which item?,Применить {SpellName} на какую вещь?
 FormatText,Cast {SpellName} which direction?,Применить {SpellName} в каком направлении?
 FormatText,charging {ItemDice} items {ChargeDice},заряжает {ItemDice} предметы {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕТ ВИДЕТЬ
 LiteralText,CAN'T SLIDE,
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
-LiteralText,capture entity,
+LiteralText,capture any entity,
 LiteralText,carried,несомое
 LiteralText,Cast,Применяет
 LiteralText,CAST SPELLS,ЧИТАТЬ ЗАКЛИНАНИЯ

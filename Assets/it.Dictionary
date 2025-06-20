@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},anima {CharacterName}
 FormatText,boost {AttributeName} by enchantment,migliora {AttributeName} per incantamento
 FormatText,break {FeatureName},rompe {FeatureName}
 FormatText,cap {Percent}%,limite {Percent}%
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},catturare {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,Lancia {SpellName} su quale oggetto?
 FormatText,Cast {SpellName} which direction?,Lancia {SpellName} in quale direzione?
 FormatText,charging {ItemDice} items {ChargeDice},in carica {ItemDice} oggetti {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,IMPOSSIBILE VEDERE
 LiteralText,CAN'T SLIDE,IMPOSSIBILE SCIVOLARE
 LiteralText,CAN'T TELEKINESIS,IMPOSSIBILE USARE TELECINESI
 LiteralText,CAN'T THROW,IMPOSSIBILE LANCIARE
-LiteralText,capture entity,catturare
+LiteralText,capture any entity,catturare
 LiteralText,carried,portato
 LiteralText,Cast,Utilizza
 LiteralText,CAST SPELLS,LANCIA INCANTESIMI

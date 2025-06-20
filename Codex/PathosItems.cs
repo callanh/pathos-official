@@ -11769,7 +11769,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_wand;
         I.Sonic = Sonics.wand;
         I.Series = WandSeries;
-        I.Rarity = 45;
+        I.Rarity = 35;
         I.Size = WandSize;
         I.Weight = Weight.FromUnits(70);
         I.Material = Materials.silver;

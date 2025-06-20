@@ -1949,6 +1949,7 @@ FormatText,animate {CharacterName},animować {CharacterName}
 FormatText,boost {AttributeName} by enchantment,wzmocnienie {AttributeName} przez zaczarowanie
 FormatText,break {FeatureName},zepsuł {FeatureName}
 FormatText,cap {Percent}%,limit {Percent}%
+FormatText,capture {SizeName} entity and {PropertyName} {PropertyDice},przechwycenie {SizeName} {PropertyName} {PropertyDice}
 FormatText,Cast {SpellName} on which item?,{SpellName} na jaki przedmiot
 FormatText,Cast {SpellName} which direction?,{SpellName} w którą stronę?
 FormatText,charging {ItemDice} items {ChargeDice},ładuje się {ItemDice} przedmioty {ChargeDice}
@@ -3084,7 +3085,7 @@ LiteralText,CAN'T SEE,NIE WIDZĘ
 LiteralText,CAN'T SLIDE,CAN'T SLIDE
 LiteralText,CAN'T TELEKINESIS,TELEKINEZA NIEMOŻLIWA
 LiteralText,CAN'T THROW,NIE MOGĘ RZUCAĆ
-LiteralText,capture entity,przechwycenie
+LiteralText,capture any entity,przechwycenie
 LiteralText,carried,noszony
 LiteralText,Cast,Czary
 LiteralText,CAST SPELLS,RZUCAJ CZARY
