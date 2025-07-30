@@ -2420,8 +2420,8 @@ namespace Pathos
         E.Glyph = Glyphs.tsetse_fly;
         E.Sonic = Sonics.buzz;
         E.Level = 3;
-        E.Challenge = 53;
-        E.Difficulty = 5;
+        E.Challenge = 68;
+        E.Difficulty = 8;
         E.Frequency = 1;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 20.
         E.SetDiet(Diets.hematophagy);

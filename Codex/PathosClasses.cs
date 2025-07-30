@@ -133,6 +133,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_gladiator);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_gladiator);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_gladiator);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_gladiator);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_gladiator);
         C.AddFeat(2, Properties.jumping);
         C.AddFeat(8, Properties.deflection);
@@ -390,6 +391,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_healer);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_healer);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_healer);
+        C.AddAvatar(Races.changeling, Genders.male, Glyphs.changeling_male_healer);
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.warning);
@@ -680,6 +682,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_paladin);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_paladin);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_paladin);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_paladin);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_paladin);
         C.AddFeat(1, Properties.clarity);
         C.AddFeat(5, Properties.beatitude);
@@ -789,6 +792,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_templar);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_templar);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_templar);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_templar);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_templar);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(8, Elements.sleep);

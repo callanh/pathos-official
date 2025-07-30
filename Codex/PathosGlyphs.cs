@@ -946,9 +946,12 @@ namespace Pathos
     public readonly Glyph gnome_female_reaver;
     public readonly Glyph gnome_male_caveman;
     public readonly Glyph gnome_male_explorer;
+    public readonly Glyph gnome_male_gladiator;
     public readonly Glyph gnome_male_healer;
+    public readonly Glyph gnome_male_paladin;
     public readonly Glyph gnome_male_ranger;
     public readonly Glyph gnome_male_reaver;
+    public readonly Glyph gnome_male_templar;
     public readonly Glyph gnome_male_wizard;
     public readonly Glyph gnome_female_wizard;
 
@@ -1018,6 +1021,9 @@ namespace Pathos
     public readonly Glyph orc_female_samurai;
     public readonly Glyph orc_female_shaman;
     public readonly Glyph orc_female_wizard;
+
+    // changeling.
+    public readonly Glyph changeling_male_healer;
 
     // satyr.
     public readonly Glyph satyr_male_barbarian;
