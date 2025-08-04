@@ -1011,6 +1011,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Entidades astrales que contienen el indomable espiritu de aventureros derrotados. Al no tener motivaciones propias, se alegran de permitir la posesión. Para el aventurero fallecido, es una segunda oportunidad de venganza o redención. Nacidos de materia astral, están ligeramente armados fisicamente, son translúcidos y pueden moverse libremente a través de obstáculos físicos."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Hermosos seres de otro mundo caracterizados por su peculiar halo y sus alas emplumadas. Fuertemente adaptados al conflicto entre el bien y el mal, sienten la divinidad dentro de todo lo que poseen."
 EntityDescription,Beware this clockwork machine of war.,Cuidado con esta máquina de guerra relojesca.
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by an molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas mágicas vinculadas por poderosos espíritus de la naturaleza para alimentar sus payasadas. Son fornidos con la parte inferior del cuerpo peludo, pezuñas hendidas de cabra y cuernos de carnero enroscados. Atrevidos e inteligentes, lideran alegremente escapadas hedonistas de bebidas, bailes y peleas."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptiles carnívoros cuyos bestiales antepasados dominaron el mundo mucho antes del nacimiento de la civilización. Son depredadores temibles, capaces de saltar distancias impresionantes y evitar muchos ataques con sus gruesas pieles escamosas."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas de muchas aberraciones, pero siempre con piel y cuernos carmesí. Su mera presencia obliga a otros a exteriorizar sus deseos más oscuros y violentos."
@@ -1553,6 +1554,7 @@ EntityName,red naga,naga roja
 EntityName,red naga hatchling,cría de naga roja
 EntityName,rhaumbusun,rhaumbusun
 EntityName,rhumbat,ronciélago
+EntityName,robot,
 EntityName,rock kobold,kobold de roca
 EntityName,rock mole,topo de roca
 EntityName,rock piercer,perforador de roca
@@ -2973,7 +2975,9 @@ KindName,orc,orco
 KindName,plasmoid,plasmóide
 KindName,pudding,pudín
 KindName,quadruped,cuadrúpedo
+KindName,robot,
 KindName,rodent,roedor
+KindName,satyr,
 KindName,snake,serpiente
 KindName,spider,araña
 KindName,tortle,tortuga
@@ -4302,6 +4306,9 @@ RaceName,orc//non-binary,orco
 RaceName,plasmoid//female,plasmóide
 RaceName,plasmoid//male,plasmóide
 RaceName,plasmoid//non-binary,plasmóide
+RaceName,robot//female,
+RaceName,robot//male,
+RaceName,robot//non-binary,
 RaceName,satyr//female,satira
 RaceName,satyr//male,satiro
 RaceName,satyr//non-binary,satiro

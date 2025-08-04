@@ -1011,6 +1011,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",光輪と羽毛に覆われた翼が特徴的な、別世界の美しい住人達。善と悪の闘争との関係は深く、触れるもの全てに神の威光を見出す。
 EntityDescription,Beware this clockwork machine of war.,この殺戮マシーンには気をつけろ。
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by an molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",文明の誕生よりもはるか昔に世界を支配していた、大きな二足歩行の肉食爬虫類。恐るべき狩人であり、驚くほどの跳躍力と、強固な鱗と厚い皮による堅固な防護を誇る。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",邪道を地で行く生物。姿は様々ではあるが深紅の肌と角は彼ら共通の特徴である。彼らと同じ空気を吸う者はそれだけでドス黒い暴力への欲求に服従することになる。
@@ -1553,6 +1554,7 @@ EntityName,red naga,レッドナーガ
 EntityName,red naga hatchling,レッドナーガの幼体
 EntityName,rhaumbusun,ラウンブスン
 EntityName,rhumbat,ルンバット
+EntityName,robot,
 EntityName,rock kobold,岩地のコボルト
 EntityName,rock mole,岩もぐら
 EntityName,rock piercer,石殻のつらら石モドキ
@@ -2973,7 +2975,9 @@ KindName,orc,オーク
 KindName,plasmoid,プラズモイド
 KindName,pudding,プリン
 KindName,quadruped,四肢動物
+KindName,robot,
 KindName,rodent,齧歯類
+KindName,satyr,
 KindName,snake,ヘビ
 KindName,spider,クモ・さそり・ムカデ
 KindName,tortle,トートル
@@ -4302,6 +4306,9 @@ RaceName,orc//non-binary,オーク
 RaceName,plasmoid//female,プラズモイド
 RaceName,plasmoid//male,プラズモイド
 RaceName,plasmoid//non-binary,プラズモイド
+RaceName,robot//female,
+RaceName,robot//male,
+RaceName,robot//non-binary,
 RaceName,satyr//female,サテュロス
 RaceName,satyr//male,サテュロス
 RaceName,satyr//non-binary,サテュロス

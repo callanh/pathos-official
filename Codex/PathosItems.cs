@@ -233,6 +233,16 @@ namespace Pathos
           T.ApplyTransient(Properties.mana_regeneration, 10.d(Duration ?? (I.Nutrition / 10)));
         });
       }
+      void WellOiled(ItemEditor I, ApplyEditor A, int? Duration = null)
+      {
+        // robots benefit from oil and grease.
+        A.WhenTargetKind([Kinds.robot], T =>
+        {
+          T.ApplyTransient(Properties.quickness, 10.d(Duration ?? (I.Nutrition / 10)));
+          T.HealEntity(3.d6(), Modifier.Plus1);
+          T.EnergiseEntity(3.d6(), Modifier.Plus1);
+        });
+      }
       void KnockoutPoison(ApplyEditor Apply)
       {
         Apply.WhenChance(Chance.OneIn4, T => T.ApplyTransient(Properties.sleeping, 3.d20()));
@@ -6771,6 +6781,7 @@ namespace Pathos
             U => U.GainNutrition(Dice.Fixed(+10)),
             C => C.LoseNutrition(Dice.Fixed(+50))
           );
+          WellOiled(I, Use.Apply, Duration: 100);
         });
         I.AddDiscoverUse(Motions.refill, Delay.FromTurns(30), Sonics.quaff, Use =>
         {
@@ -9544,6 +9555,7 @@ namespace Pathos
             U => U.MajorProperty(Properties.slippery),
             C => C.MajorProperty(Properties.fumbling)
           );
+          WellOiled(I, A, Duration: 200);
         });
       });
 
@@ -10638,7 +10650,10 @@ namespace Pathos
         I.SetWeakness(LightWeakness);
         I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool);
         I.SetIllumination(3);
-        I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(20), Sonics.tool);
+        I.AddObviousIngestUse(Motions.eat, 200, Delay.FromTurns(20), Sonics.tool, A =>
+        {
+          WellOiled(I, A);
+        });
       });
 
       pickaxe = AddItem(Stocks.tool, ItemType.MeleeWeapon, "pick-axe", I =>

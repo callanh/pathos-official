@@ -103,7 +103,7 @@ namespace Pathos
         );
       });
 
-      animate_dead = AddSpell(Schools.necromancy, "animate dead", 2, new Precept(Purpose.SummonAlly, new[] { Items.animal_corpse, Items.vegetable_corpse }), Glyphs.animate_dead_spell, Z =>
+      animate_dead = AddSpell(Schools.necromancy, "animate dead", 2, new Precept(Purpose.SummonAlly, [Items.animal_corpse, Items.vegetable_corpse]), Glyphs.animate_dead_spell, Z =>
       {
         Z.Description = null;
         SetAdept
@@ -2019,15 +2019,15 @@ namespace Pathos
             E.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
             E.Apply.Light(true, Locality.Area);
-            E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
-            E.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
+            E.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
+            E.Apply.AreaTransient(Properties.blindness, 3.d6() + 3);
           },
           M =>
           {
             M.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
             M.Apply.Light(true, Locality.Area);
-            M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
+            M.Apply.AreaTransient(Properties.fear, 6.d6(), Kinds.Undead.ToArray().Union([Kinds.demon, Kinds.orc]).ToArray());
             M.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
           },
           C =>
@@ -2035,7 +2035,7 @@ namespace Pathos
             C.SetCast().Strike(Strikes.flash, Dice.Zero)
              .SetTerminates();
             C.Apply.Light(true, Locality.Area);
-            C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
+            C.Apply.AreaTransient(Properties.fear, 7.d6(), Kinds.Undead.ToArray().Union([Kinds.demon, Kinds.orc]).ToArray());
             C.Apply.AreaTransient(Properties.blindness, 5.d6() + 5);
           }
         );
@@ -2292,7 +2292,7 @@ namespace Pathos
         );
       });
 
-      raise_dead = AddSpell(Schools.necromancy, "raise dead", 7, new Precept(Purpose.SummonEnemy, new[] { Items.animal_corpse, Items.vegetable_corpse }), Glyphs.raise_dead_spell, Z =>  // TODO: this is ENEMY, because raise dead does not have any charming effects.
+      raise_dead = AddSpell(Schools.necromancy, "raise dead", 7, new Precept(Purpose.SummonEnemy, [Items.animal_corpse, Items.vegetable_corpse]), Glyphs.raise_dead_spell, Z =>  // TODO: this is ENEMY, because raise dead does not have any charming effects.
       {
         Z.Description = null;
         SetAdept
@@ -2769,7 +2769,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             S.Apply.Locking();
-            S.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, Dice.One));
+            S.Apply.WhenTargetKind([Kinds.golem], T => T.ApplyTransient(Properties.paralysis, Dice.One));
           },
           E =>
           {
@@ -2777,7 +2777,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             E.Apply.Locking();
-            E.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d2()));
+            E.Apply.WhenTargetKind([Kinds.golem], T => T.ApplyTransient(Properties.paralysis, 1.d2()));
           },
           M =>
           {
@@ -2785,7 +2785,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             M.Apply.Locking();
-            M.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 1.d4()));
+            M.Apply.WhenTargetKind([Kinds.golem], T => T.ApplyTransient(Properties.paralysis, 1.d4()));
           },
           C =>
           {
@@ -2793,7 +2793,7 @@ namespace Pathos
              .SetObjects()
              .SetPenetrates();
             C.Apply.Locking();
-            C.Apply.WhenTargetKind(new[] { Kinds.golem }, T => T.ApplyTransient(Properties.paralysis, 2.d4()));
+            C.Apply.WhenTargetKind([Kinds.golem], T => T.ApplyTransient(Properties.paralysis, 2.d4()));
           }
         );
       });

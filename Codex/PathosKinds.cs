@@ -85,7 +85,9 @@ namespace Pathos
       plasmoid = AddLivingKind("plasmoid");
       pudding = AddLivingKind("pudding");
       quadruped = AddLivingKind("quadruped");
+      robot = AddOtherKind("robot");
       rodent = AddLivingKind("rodent");
+      satyr = AddLivingKind("satyr");
       snake = AddLivingKind("snake");
       military = AddLivingKind("military");
       spider = AddLivingKind("spider");
@@ -156,7 +158,9 @@ namespace Pathos
     public readonly Kind plasmoid;
     public readonly Kind pudding;
     public readonly Kind quadruped;
+    public readonly Kind robot;
     public readonly Kind rodent;
+    public readonly Kind satyr;
     public readonly Kind snake;
     public readonly Kind spider;
     public readonly Kind tortle;

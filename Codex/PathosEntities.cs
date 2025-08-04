@@ -784,7 +784,53 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      satyr = AddBaseEntity(Kinds.beast, Races.satyr, "satyr", E =>
+      robot = AddBaseEntity(Kinds.robot, Races.robot, "robot", E =>
+      {
+        E.Description = "Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by an molten core engine that requires a constant supply of raw metals and is susceptible to water damage.";
+        E.Glyph = Glyphs.robot;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 11, P: -1, S: +0, B: +1);
+        E.SetDiet(Diets.metalivore);
+        E.Speed = Speed.S4_5;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(15000);
+        E.Figure.Set
+        (
+          Material: Materials.iron,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(4, 1.d2());
+        E.ManaAdvancement.Set(1, 1.d2());
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 22, DEX: 16, CON: 22, INT: 28, WIS: 18, CHA: 12);
+        E.SetGender(Genders.male, Genders.female);
+        E.Startup.SetTalent(Properties.clarity, Properties.vitality);
+        E.Startup.SetResistance(Elements.petrify);
+        E.SetCorpse(Chance.Never); // TODO: metal corpse?
+        E.AddReaction(Chance.Always, Elements.water, A =>
+        {
+          // physical damage and -1 permanent life/mana.
+          A.HarmEntity(Elements.physical, 2.d4(), Modifier.Plus1);
+          A.DiminishEntity(2.d4(), Modifier.Plus1);
+        });
+      });
+
+      satyr = AddBaseEntity(Kinds.satyr, Races.satyr, "satyr", E =>
       {
         E.Description = "Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.";
         E.Glyph = Glyphs.satyr;
@@ -35059,6 +35105,7 @@ namespace Pathos
     public readonly Entity sandestin;
     public readonly Entity sapphire_golem;
     public readonly Entity sasquatch;
+    public readonly Entity robot;
     public readonly Entity satyr;
     public readonly Entity scorpion;
     public readonly Entity scramper;

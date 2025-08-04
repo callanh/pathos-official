@@ -42,6 +42,7 @@ namespace Pathos
       ogre = AddRace("ogre");
       orc = AddRace("orc");
       plasmoid = AddRace("plasmoid");
+      robot = AddRace("robot");
       satyr = AddRace("satyr");
       tortle = AddRace("tortle");
       troll = AddRace("troll");
@@ -70,6 +71,7 @@ namespace Pathos
     public readonly Race ogre;
     public readonly Race orc;
     public readonly Race plasmoid;
+    public readonly Race robot;
     public readonly Race satyr;
     public readonly Race tortle;
     public readonly Race troll;

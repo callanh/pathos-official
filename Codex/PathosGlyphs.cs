@@ -1025,6 +1025,48 @@ namespace Pathos
     // changeling.
     public readonly Glyph changeling_male_healer;
 
+    // robot.
+    public readonly Glyph robot_male_barbarian;
+    public readonly Glyph robot_male_bard;
+    public readonly Glyph robot_male_caveman;
+    public readonly Glyph robot_male_convict;
+    public readonly Glyph robot_male_druid;
+    public readonly Glyph robot_male_explorer;
+    public readonly Glyph robot_male_gladiator;
+    public readonly Glyph robot_male_gunslinger;
+    public readonly Glyph robot_male_healer;
+    public readonly Glyph robot_male_hunter;
+    public readonly Glyph robot_male_jester;
+    public readonly Glyph robot_male_knight;
+    public readonly Glyph robot_male_miner;
+    public readonly Glyph robot_male_monk;
+    public readonly Glyph robot_male_mystic;
+    public readonly Glyph robot_male_ninja;
+    public readonly Glyph robot_male_necromancer;
+    public readonly Glyph robot_male_paladin;
+    public readonly Glyph robot_male_pirate;
+    public readonly Glyph robot_male_priest;
+    public readonly Glyph robot_male_ranger;
+    public readonly Glyph robot_male_reaver;
+    public readonly Glyph robot_male_rogue;
+    public readonly Glyph robot_male_samurai;
+    public readonly Glyph robot_male_shaman;
+    public readonly Glyph robot_male_tinker;
+    public readonly Glyph robot_male_templar;
+    public readonly Glyph robot_male_tourist;
+    public readonly Glyph robot_male_valkyrie;
+    public readonly Glyph robot_male_wizard;
+
+    public readonly Glyph robot_female_bard;
+    public readonly Glyph robot_female_druid;
+    public readonly Glyph robot_female_jester;
+    public readonly Glyph robot_female_knight;
+    public readonly Glyph robot_female_mystic;
+    public readonly Glyph robot_female_pirate;
+    public readonly Glyph robot_female_samurai;
+    public readonly Glyph robot_female_tourist;
+
+
     // satyr.
     public readonly Glyph satyr_male_barbarian;
     public readonly Glyph satyr_male_bard;
@@ -1724,6 +1766,7 @@ namespace Pathos
     public readonly Glyph sapphire_golem;
     public readonly Glyph topaz_golem;
     public readonly Glyph sasquatch;
+    public readonly Glyph robot;
     public readonly Glyph satyr;
     public readonly Glyph scale_mail;
     public readonly Glyph scalpel;
