@@ -786,7 +786,7 @@ namespace Pathos
 
       robot = AddBaseEntity(Kinds.robot, Races.robot, "robot", E =>
       {
-        E.Description = "Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by an molten core engine that requires a constant supply of raw metals and is susceptible to water damage.";
+        E.Description = "Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.";
         E.Glyph = Glyphs.robot;
         E.Level = 0;
         E.Challenge = 0;
