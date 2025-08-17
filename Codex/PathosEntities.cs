@@ -20631,7 +20631,7 @@ namespace Pathos
         E.Challenge = 205;
         E.Difficulty = 14;
         E.Frequency = 1;
-        E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3
+        E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
         E.Size = Size.Small;
@@ -20655,7 +20655,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 8, DEX: 16, CON: 10, INT: 8, WIS: 7, CHA: 8);
+        E.DefaultForm.Set(STR: 12, DEX: 16, CON: 10, INT: 8, WIS: 7, CHA: 8);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed(SentientGreed);
