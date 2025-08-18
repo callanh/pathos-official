@@ -1780,7 +1780,7 @@ namespace Pathos
         E.Speed = Speed.S3_7;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(50);
+        E.Weight = Weight.FromUnits(100);
         E.Figure.Set
         (
           Material: Materials.animal,
@@ -1918,7 +1918,7 @@ namespace Pathos
         E.Speed = Speed.S4_5;
         E.Size = Size.Tiny;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(500);
+        E.Weight = Weight.FromUnits(100);
         E.Figure.Set
         (
           Material: Materials.animal,
