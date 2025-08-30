@@ -874,6 +874,7 @@ namespace Pathos
 
     // kobold.
     public readonly Glyph kobold_male_knight;
+    public readonly Glyph kobold_male_priest;
 
     // giant.
     public readonly Glyph giant_male_barbarian;

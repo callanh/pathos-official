@@ -65,7 +65,7 @@ namespace Pathos
         S.Glyph = Glyphs.colossus;
 
         S.LifeAdvancement.Set(Dice.Zero + 2);
-        S.SpeedRateDelta = -0.25F;
+        S.SpeedRateDelta = -0.3F;
         S.WeightMultiplier = 1.50F;
         S.DefenceModifier = Modifier.Plus1;
       });
@@ -114,7 +114,7 @@ namespace Pathos
         S.Glyph = Glyphs.midget;
 
         S.LifeAdvancement.Set(Dice.Zero - 1);
-        S.SpeedRateDelta = +0.25F;
+        S.SpeedRateDelta = +0.3F;
         S.WeightMultiplier = 0.75F;
         S.AttackModifier = Modifier.Minus1;
       });
@@ -181,7 +181,7 @@ namespace Pathos
         S.Diet = Diets.inediate;
         S.DefenceBias.Bludgeon = Modifier.Minus2;
         S.DefenceBias.Pierce = Modifier.Plus2;
-        S.SpeedRateDelta = -0.50F;
+        S.SpeedRateDelta = -0.5F;
         S.WeightMultiplier = 0.30F;
         S.SetMaskFigure().Set
         (

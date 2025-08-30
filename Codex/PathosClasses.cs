@@ -781,6 +781,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_priest);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_priest);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_priest);
+        C.AddAvatar(Races.kobold, Genders.male, Glyphs.kobold_male_priest);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_priest);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_priest);
         C.AddFeat(1, Properties.beatitude);
