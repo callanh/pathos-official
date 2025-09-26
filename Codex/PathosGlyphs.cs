@@ -940,12 +940,10 @@ namespace Pathos
     public readonly Glyph giant_female_wizard;
 
     // gnome.
-    public readonly Glyph gnome_female_caveman;
-    public readonly Glyph gnome_female_explorer;
-    public readonly Glyph gnome_female_healer;
-    public readonly Glyph gnome_female_ranger;
-    public readonly Glyph gnome_female_reaver;
+    public readonly Glyph gnome_male_barbarian;
+    public readonly Glyph gnome_male_bard;
     public readonly Glyph gnome_male_caveman;
+    public readonly Glyph gnome_male_convict;
     public readonly Glyph gnome_male_druid;
     public readonly Glyph gnome_male_explorer;
     public readonly Glyph gnome_male_gladiator;
@@ -955,16 +953,28 @@ namespace Pathos
     public readonly Glyph gnome_male_healer;
     public readonly Glyph gnome_male_knight;
     public readonly Glyph gnome_male_miner;
+    public readonly Glyph gnome_male_monk;
+    public readonly Glyph gnome_male_mystic;
     public readonly Glyph gnome_male_necromancer;
+    public readonly Glyph gnome_male_ninja;
     public readonly Glyph gnome_male_paladin;
+    public readonly Glyph gnome_male_pirate;
     public readonly Glyph gnome_male_ranger;
     public readonly Glyph gnome_male_reaver;
+    public readonly Glyph gnome_male_rogue;
     public readonly Glyph gnome_male_samurai;
+    public readonly Glyph gnome_male_shaman;
     public readonly Glyph gnome_male_templar;
     public readonly Glyph gnome_male_tinker;
     public readonly Glyph gnome_male_tourist;
     public readonly Glyph gnome_male_valkyrie;
     public readonly Glyph gnome_male_wizard;
+
+    public readonly Glyph gnome_female_caveman;
+    public readonly Glyph gnome_female_explorer;
+    public readonly Glyph gnome_female_healer;
+    public readonly Glyph gnome_female_ranger;
+    public readonly Glyph gnome_female_reaver;
     public readonly Glyph gnome_female_wizard;
 
     // halfling.

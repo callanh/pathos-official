@@ -104,6 +104,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_barbarian);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_barbarian);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_barbarian);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_barbarian);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_barbarian);
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.quickness);
@@ -172,6 +173,7 @@ namespace Pathos
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_bard);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_bard);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_bard);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_bard);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_bard);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_bard);
         C.AddFeat(2, Properties.free_action);
@@ -252,6 +254,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_convict);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_convict);
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_convict);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_convict);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_convict);
         C.AddFeat(10, Properties.hunger);
         C.AddFeat(20, Properties.aggravation);
@@ -570,6 +573,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_monk);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_monk);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_monk);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_monk);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_monk);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_monk);
         C.AddFeat(2, Properties.quickness);
@@ -615,6 +619,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_mystic);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_mystic);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_mystic);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_mystic);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_mystic);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_mystic);
         C.AddFeat(1, Properties.telepathy);
@@ -672,6 +677,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_ninja);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_ninja);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ninja);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_ninja);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_ninja);
         C.AddFeat(1, Properties.stealth);
         C.AddFeat(5, Properties.jumping);
@@ -742,6 +748,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_pirate);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_pirate);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_pirate);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_pirate);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_pirate);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_pirate);
         C.AddFeat(1, Properties.searching);
@@ -969,6 +976,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_rogue);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_rogue);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_rogue);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_rogue);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_rogue);
         C.AddFeat(2, Properties.stealth);
         C.AddFeat(6, Properties.searching);
@@ -1057,6 +1065,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_shaman);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_shaman);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_shaman);
+        C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_shaman);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_shaman);
         C.AddFeat(4, Elements.poison);
         C.AddFeat(10, Properties.polymorph_control);
