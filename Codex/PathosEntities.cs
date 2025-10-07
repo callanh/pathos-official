@@ -701,6 +701,46 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
+      minotaur = AddBaseEntity(Kinds.minotaur, Races.minotaur, "minotaur", E =>
+      {
+        E.Description = "Monstrous creatures with the head and tail of a bull and the body of a man.";
+        E.Glyph = Glyphs.minotaur;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S5_0;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(45000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true, // TODO: can't wear helmet due to horns?
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(5, 1.d3());
+        E.ManaAdvancement.Set(1, Dice.Zero);
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 24, DEX: 16, CON: 24, INT: 16, WIS: 16, CHA: 16);
+        E.SetGender(Genders.male, Genders.female);
+        E.Startup.SetTalent(Properties.berserking, Properties.dark_vision);
+        E.Startup.SetResistance();
+        E.SetCorpse(Chance.Always);
+      });
+
       orc = AddBaseEntity(Kinds.orc, Races.orc, "orc", E =>
       {
         E.Description = "Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.";
@@ -33364,9 +33404,9 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      minotaur = AddEntity(Kinds.beast, null, "minotaur", E =>
+      minotaur_lord = AddEntity(Kinds.minotaur, Races.minotaur, "minotaur lord", E =>
       {
-        E.Glyph = Glyphs.minotaur;
+        E.Glyph = Glyphs.minotaur_lord;
         E.Sonic = Sonics.growl;
         E.Level = 15;
         E.Challenge = 414;
@@ -35000,6 +35040,7 @@ namespace Pathos
     public readonly Entity migo_warrior;
     public readonly Entity mind_flayer;
     public readonly Entity minotaur;
+    public readonly Entity minotaur_lord;
     public readonly Entity mist_wolf;
     public readonly Entity mobat;
     public readonly Entity mouldy_pudding;

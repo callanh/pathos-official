@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Yanıltıcı yeteneklerine güvenen, şekil değiştirici asiler."
@@ -1459,6 +1460,7 @@ EntityName,migo queen,migo kraliçe
 EntityName,migo warrior,migo savaşçı
 EntityName,mind flayer,zihin hırsızı
 EntityName,minotaur,minator
+EntityName,minotaur lord,
 EntityName,mist wolf,sis kurtu
 EntityName,mithril golem,mitril golem
 EntityName,mobat,mobat
@@ -2968,6 +2970,7 @@ KindName,marine,deniz canlısı
 KindName,mercenary,paralı asker
 KindName,military,ordu
 KindName,mimic,mimik
+KindName,minotaur,minator
 KindName,mummy,mumya
 KindName,naga,naga
 KindName,ogre,ogre
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,
 RaceName,lizardman//female,kertenkele kadın
 RaceName,lizardman//male,kertenkele adam
 RaceName,lizardman//non-binary,kertenkele adam
+RaceName,minotaur//female,minator
+RaceName,minotaur//male,minator
+RaceName,minotaur//non-binary,minator
 RaceName,nymph//female,
 RaceName,nymph//male,
 RaceName,nymph//non-binary,

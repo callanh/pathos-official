@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,이 시계테엽으로 �
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","자연의 강력한 정령과 이어져 있는 익살스러운 장난꾼. 다부진 하반신은 털로 덮여 있고, 염소의 발굽과 양의 뿔을 가졌다. 상스럽고 영리한 이들은 마시고, 춤추고, 싸우며 경쾌하게 향락을 즐긴다."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","거대한 육식 도마뱀. 그들의 흉포한 조상은 문명이 탄생하기 훨씬 전에 세상을 지배했었다. 무시무시한 포식자인 그들은, 상당한 거리를 도약할 수 있고 두꺼운 비늘로 수많은 공격을 막을 수 있다."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",핏빛 피부와 뿔이 달린 매우 기괴하고 뒤틀린 생명체. 존재 만으로도 타인을 가장 어둡고 폭력적인 욕망에 따라 움직이게 만든다.
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","팔이 땅에 끌릴 정도로 등이 굽은 거대한 종족. 굶주린 포식자인 이들은 기괴한 외형에도 불구하고 강인하며, 고무같은 가죽에 난 어떤 상처도 금세 회복하는 능력으로 악명높다."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",모습을 바꾸는 변이체. 그들은 능력을 이용해 타인을 속이는 것을 즐긴다.
@@ -1459,6 +1460,7 @@ EntityName,migo queen,미고 여왕
 EntityName,migo warrior,미고 전사
 EntityName,mind flayer,마인드 플레이어
 EntityName,minotaur,미노타우로스
+EntityName,minotaur lord,
 EntityName,mist wolf,안개 늑대
 EntityName,mithril golem,미스릴 골렘
 EntityName,mobat,모뱃
@@ -2968,6 +2970,7 @@ KindName,marine,해양생물
 KindName,mercenary,용병
 KindName,military,군인
 KindName,mimic,미믹
+KindName,minotaur,미노타우로스
 KindName,mummy,미라
 KindName,naga,나가
 KindName,ogre,오우거
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,레프리콘
 RaceName,lizardman//female,리자드맨
 RaceName,lizardman//male,리자드맨
 RaceName,lizardman//non-binary,리자드맨
+RaceName,minotaur//female,미노타우로스
+RaceName,minotaur//male,미노타우로스
+RaceName,minotaur//non-binary,미노타우로스
 RaceName,nymph//female,님프
 RaceName,nymph//male,님프
 RaceName,nymph//non-binary,님프

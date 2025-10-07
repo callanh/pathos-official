@@ -271,7 +271,7 @@ namespace Pathos
             Entities.forest_centaur,
             Entities.displacer_beast,
             Entities.owlbear,
-            Entities.minotaur,
+            Entities.minotaur_lord,
             Entities.guardian_naga,
             Entities.ettin,
             Entities.basilisk);

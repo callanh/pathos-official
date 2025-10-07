@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,מכונת מלחמה מ
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","יצורים ממין הפיות, מקושרים לרוחות הטבע שמסייעות להם בתעלוליהם. הם חסונים, בעלי גוף תחתון שעיר, פרסות עז שסועות וקרני כבש מסולסלות. הם גסים ופקחיים, ומנהלים חיי הנאה של שתייה, ריקוד וקרבות."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","זוחלים גדולים, אוכלי בשר, שאבות אבותיהם החייתיים שלטו בעולם הרבה לפני ערש התרבות. הם טורפים מעוררי אימה, מסוגלים לזנק מרחקים ארוכים ולהדוף מתקפות רבות בעזרת העורות העבים והקשקשיים שלהם."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","יצורים סוטים שונים ומגוונים, אבל תמיד בעלי עור ארגמן וקרניים. עצם נוכחותם גורמת לאחרים לפעול על פי התשוקות האפלות והאלימות ביותר שלהם."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","מין רעבתני וטורף של דמויי אדם מפלצתיים בעלי גיבנת עצומה שגורמת לכך שגב היד שלהם נגרר על האדמה. למרות מראם הגופני המגושם, הם חזקים וידועים לשמצה ביכולת שלהם להתאושש במהירות מכל פציעה של העור הגמיש שלהם."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","סוטים חברתיים משני-צורה, שמשגשגים בזכות כישורי ההונאה שלהם."
@@ -1459,6 +1460,7 @@ EntityName,migo queen,מלכת מיגו
 EntityName,migo warrior,לוחמת מיגו
 EntityName,mind flayer,מצליף מוחות
 EntityName,minotaur,מינוטאור
+EntityName,minotaur lord,
 EntityName,mist wolf,זאב ערפל
 EntityName,mithril golem,גולם מיתריל
 EntityName,mobat,עטלף אימים
@@ -2968,6 +2970,7 @@ KindName,marine,יצור ימי
 KindName,mercenary,שכיר או שכירת חרב
 KindName,military,איש או אשת צבא
 KindName,mimic,מימיק
+KindName,minotaur,מינוטאור
 KindName,mummy,מומיה
 KindName,naga,נאגה
 KindName,ogre,עוג או עוגית
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,לפרקונ.ית
 RaceName,lizardman//female,איש לטאה
 RaceName,lizardman//male,אשת לטאה
 RaceName,lizardman//non-binary,אישת לטאה
+RaceName,minotaur//female,מינוטאור
+RaceName,minotaur//male,מינוטאור
+RaceName,minotaur//non-binary,מינוטאור
 RaceName,nymph//female,נימפה
 RaceName,nymph//male,נימפה
 RaceName,nymph//non-binary,נימפה

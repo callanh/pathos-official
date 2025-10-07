@@ -874,7 +874,9 @@ namespace Pathos
 
     // kobold.
     public readonly Glyph kobold_male_knight;
+    public readonly Glyph kobold_male_gunslinger;
     public readonly Glyph kobold_male_priest;
+    public readonly Glyph kobold_male_ranger;
 
     // giant.
     public readonly Glyph giant_male_barbarian;
@@ -973,11 +975,14 @@ namespace Pathos
     public readonly Glyph gnome_female_caveman;
     public readonly Glyph gnome_female_explorer;
     public readonly Glyph gnome_female_healer;
+    public readonly Glyph gnome_female_knight;
     public readonly Glyph gnome_female_ranger;
     public readonly Glyph gnome_female_reaver;
+    public readonly Glyph gnome_female_tinker;
     public readonly Glyph gnome_female_wizard;
 
     // halfling.
+    public readonly Glyph halfling_male_knight;
     public readonly Glyph halfling_male_reaver;
 
     public readonly Glyph halfling_female_reaver;
@@ -1018,6 +1023,20 @@ namespace Pathos
     public readonly Glyph lizardman_female_shaman;
     public readonly Glyph lizardman_female_valkyrie;
     public readonly Glyph lizardman_female_wizard;
+
+    // minotaur.
+    public readonly Glyph minotaur_male_barbarian;
+    public readonly Glyph minotaur_male_explorer;
+    public readonly Glyph minotaur_male_knight;
+    public readonly Glyph minotaur_male_miner;
+    public readonly Glyph minotaur_male_monk;
+    public readonly Glyph minotaur_male_mystic;
+    public readonly Glyph minotaur_male_paladin;
+    public readonly Glyph minotaur_male_priest;
+    public readonly Glyph minotaur_male_ranger;
+    public readonly Glyph minotaur_male_templar;
+    public readonly Glyph minotaur_male_tourist;
+    public readonly Glyph minotaur_male_wizard;
 
     // orc.
     public readonly Glyph orc_male_barbarian;
@@ -1595,6 +1614,7 @@ namespace Pathos
     public readonly Glyph mind_flayer;
     public readonly Glyph Huhetotl;
     public readonly Glyph minotaur;
+    public readonly Glyph minotaur_lord;
     //public readonly Glyph mirror;
     public readonly Glyph mist_wolf;
     public readonly Glyph mobat;

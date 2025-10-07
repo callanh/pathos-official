@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,Cuidado com essa engenho
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas féericas ligadas por poderosos espíritos da natureza para alimentar suas travessuras . Eles são atarracados com corpos inferiores peludos, cascos fendidos de cabra e chifres enrolados de carneiro . Irreverentes e espertos, eles alegremente conduzem aventuras hedonísticas de bebida , dança e luta ."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos carnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas peles escamosas."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas que manifestam-se em muitas aberrações, mas sempre com pele rubra e terríveis chifres. Sua mera presença desperta em outrem os impulsos mais sombrios e violentos."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espécie voraz e predatória de gigantes humanóides, eles são extremamente corcundas, o que faz com que a parte de trás das suas mãos se arraste no chão . Apesar da aparência física estranha, eles são extremamente fortes e famosos por sua habilidade de se recuperar rapidamente de qualquer ferimento causado a sua pele extremamente resistente ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Demônios que mudam de forma, que prosperam em seus talentos enganosos."
@@ -1459,6 +1460,7 @@ EntityName,migo queen,rainha migo
 EntityName,migo warrior,guerreiro migo
 EntityName,mind flayer,esfolador de mentes
 EntityName,minotaur,minotauro
+EntityName,minotaur lord,
 EntityName,mist wolf,lobo da neblina
 EntityName,mithril golem,golem de mithril
 EntityName,mobat,momorcego
@@ -2968,6 +2970,7 @@ KindName,marine,fuzileiro
 KindName,mercenary,mercenário
 KindName,military,exército
 KindName,mimic,mímica
+KindName,minotaur,minotauro
 KindName,mummy,múmia
 KindName,naga,naga
 KindName,ogre,ogro
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,duende
 RaceName,lizardman//female,mulher-lagarto
 RaceName,lizardman//male,homem-lagarto
 RaceName,lizardman//non-binary,ser-lagarto
+RaceName,minotaur//female,minotaura
+RaceName,minotaur//male,minotauro
+RaceName,minotaur//non-binary,minotauro
 RaceName,nymph//female,ninfa
 RaceName,nymph//male,ninfo
 RaceName,nymph//non-binary,ninfa

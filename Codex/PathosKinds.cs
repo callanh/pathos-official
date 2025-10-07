@@ -78,6 +78,7 @@ namespace Pathos
       marine = AddLivingKind("marine");
       mercenary = AddLivingKind("mercenary");
       mimic = AddLivingKind("mimic");
+      minotaur = AddLivingKind("minotaur");
       mummy = AddUndeadKind("mummy");
       naga = AddLivingKind("naga");
       ogre = AddLivingKind("ogre");
@@ -151,6 +152,7 @@ namespace Pathos
     public readonly Kind mercenary;
     public readonly Kind military;
     public readonly Kind mimic;
+    public readonly Kind minotaur;
     public readonly Kind mummy;
     public readonly Kind naga;
     public readonly Kind ogre;

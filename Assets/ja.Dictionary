@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,この殺戮マシーン
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",文明の誕生よりもはるか昔に世界を支配していた、大きな二足歩行の肉食爬虫類。恐るべき狩人であり、驚くほどの跳躍力と、強固な鱗と厚い皮による堅固な防護を誇る。
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",邪道を地で行く生物。姿は様々ではあるが深紅の肌と角は彼ら共通の特徴である。彼らと同じ空気を吸う者はそれだけでドス黒い暴力への欲求に服従することになる。
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、肉体を覆うゴムのような厚皮はどんな傷を付けられようとも見る間に元に戻ってしまうことで特に厄介がられている。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",変化の才で人を欺き世に蔓延る、変幻自在の外道達。
@@ -1459,6 +1460,7 @@ EntityName,migo queen,ミ=ゴの女王
 EntityName,migo warrior,ミ=ゴの戦士
 EntityName,mind flayer,マインドフレイヤー
 EntityName,minotaur,ミノタウロス
+EntityName,minotaur lord,
 EntityName,mist wolf,ミストウルフ
 EntityName,mithril golem,ミスリルのゴーレム
 EntityName,mobat,モバット
@@ -2968,6 +2970,7 @@ KindName,marine,水生生物
 KindName,mercenary,傭兵
 KindName,military,軍属
 KindName,mimic,ミミック
+KindName,minotaur,ミノタウロス
 KindName,mummy,ミイラ
 KindName,naga,ナーガ
 KindName,ogre,オーガ
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,レプラコーン
 RaceName,lizardman//female,トカゲ族
 RaceName,lizardman//male,トカゲ族
 RaceName,lizardman//non-binary,トカゲ族
+RaceName,minotaur//female,ミノタウロス
+RaceName,minotaur//male,ミノタウロス
+RaceName,minotaur//non-binary,ミノタウロス
 RaceName,nymph//female,ニンフ
 RaceName,nymph//male,ニンフ
 RaceName,nymph//non-binary,ニンフ

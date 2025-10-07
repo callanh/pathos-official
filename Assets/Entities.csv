@@ -25,7 +25,6 @@ beast,,ape,,4,2,6,17,large,animal,11000,3.7,13,attack,DOMESTIC,13,13,12,6,10,6
 beast,,bugbear,,17,1,19,466,large,animal,22000,3.3,18,attack,,18,11,14,9,11,7
 beast,,carnivorous ape,,6,1,8,40,large,animal,40000,3.7,13,attack,DOMESTIC,16,13,14,8,12,7
 beast,,jabberwock,,25,1,28,938,large,animal,150000,3.7,20,attack,,21,16,18,12,14,12
-beast,,minotaur,,15,1,17,414,large,animal,45000,5.0,14,attack,,18,11,16,6,16,9
 beast,,monkey,,2,1,4,7,small,animal,1000,3.7,12,attack,DOMESTIC,11,15,10,8,11,7
 beast,,owlbear,,7,3,9,72,large,animal,60000,3.7,16,attack,,20,12,17,3,12,7
 beast,,sasquatch,,15,1,17,395,large,animal,70000,5.0,13,attack,,18,13,16,8,12,7
@@ -520,6 +519,8 @@ mimic,,large mimic,,10,1,11,94,large,animal,23000,2.0,13,attack,,15,10,14,8,11,1
 mimic,,large pile of killer coins,,15,1,16,232,medium,animal,14600,3.7,18,attack,,15,16,10,3,2,5
 mimic,,pile of killer coins,,6,1,7,37,small,animal,13600,2.5,11,attack,,11,14,8,3,2,4
 mimic,,small mimic,,6,2,7,46,medium,animal,3000,2.0,13,attack,,13,11,12,8,11,10
+minotaur,minotaur,minotaur,Monstrous creatures with the head and tail of a bull and the body of a man.,0,0,0,0,medium,animal,45000,5.0,11,attack,BASE,10,10,10,10,10,10
+minotaur,minotaur,minotaur lord,,15,1,17,414,large,animal,45000,5.0,14,attack,,18,11,16,6,16,9
 mummy,dwarf,dwarf mummy,,13,1,14,326,medium,animal,10000,2.5,18,attack,,14,10,15,8,3,12
 mummy,elf,elf mummy,,19,1,20,437,medium,animal,9000,3.7,20,attack,,12,11,11,9,3,13
 mummy,ettin,ettin mummy,,26,1,28,953,huge,animal,80000,3.7,22,attack,,17,8,16,2,2,5

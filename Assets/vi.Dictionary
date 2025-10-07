@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,Hãy coi chừng cỗ m�
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Những sinh vật thần tiên, được kết nối bởi linh hồn thiên nhiên mạnh mẽ để tiếp nối những trò hề của họ. Cơ thể chắc nịch, phần dưới có lông, có móng vuốt giống loài dê và sừng xoắn ốc giống loài cừu. Dâm tục và thông minh, họ vui vẻ dẫn dắt những tù nhân của sự khoái lạc vào việc uống, nhảy múa và đánh nhau."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","To lớn, những người bò sát ăn thịt mà tổ tiên của họ đã từng thống trị thế giới trước khi nền văn minh ra đời. Họ là những sát thủ ăn thịt đáng sợ, có thể nhảy vọt với khoảng cách rất xa và chống lại rất nhiều đòn tấn công với vảy cứng của họ."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Những sinh vật biến thái lầm lạc nhưng luôn có màu da đỏ thắm và mọc sừng. Sự xuất hiện của chúng khiến tất cả bộc lộ những tham vọng, trụy lạc đen tối và bạo lực nhất."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Giống loài người khổng lồ ăn thịt đói khát, với cục bướu to khiến cho bàn tay của họ bị kéo lê trên mặt đất. Mặc dù ngoại hình kì lạ, họ cực kỉ khỏe mạnh và nổi tiếng nhờ khả năng hồi phục mọi vết thương vào da dẻo dai của họ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Giống loài biến hình lệch lạc, sống nhờ vào tài năng lừa dối của chúng."
@@ -1459,6 +1460,7 @@ EntityName,migo queen,migo chúa
 EntityName,migo warrior,migo đực
 EntityName,mind flayer,kẻ ăn não
 EntityName,minotaur,nhân ngưu
+EntityName,minotaur lord,
 EntityName,mist wolf,sói sương
 EntityName,mithril golem,golem mithril
 EntityName,mobat,dơi hóa nhỏ
@@ -2968,6 +2970,7 @@ KindName,marine,hải thú
 KindName,mercenary,lính đánh thuê
 KindName,military,quân đội
 KindName,mimic,quỷ giả dạng
+KindName,minotaur,nhân ngưu
 KindName,mummy,xác ướp
 KindName,naga,xà nhân
 KindName,ogre,ogre
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,leprechaun lưỡng tính
 RaceName,lizardman//female,người thằn lằn nữ
 RaceName,lizardman//male,người thằn lằn nam
 RaceName,lizardman//non-binary,người thằn lằn lưỡng tính
+RaceName,minotaur//female,
+RaceName,minotaur//male,
+RaceName,minotaur//non-binary,
 RaceName,nymph//female,nymph nữ
 RaceName,nymph//male,nymph nam
 RaceName,nymph//non-binary,nymph lưỡng tính

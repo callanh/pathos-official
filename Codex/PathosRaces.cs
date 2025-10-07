@@ -38,6 +38,7 @@ namespace Pathos
       kobold = AddRace("kobold");
       leprechaun = AddRace("leprechaun");
       lizardman = AddRace("lizardman");
+      minotaur = AddRace("minotaur");
       nymph = AddRace("nymph");
       ogre = AddRace("ogre");
       orc = AddRace("orc");
@@ -67,6 +68,7 @@ namespace Pathos
     public readonly Race kobold;
     public readonly Race leprechaun;
     public readonly Race lizardman;
+    public readonly Race minotaur;
     public readonly Race nymph;
     public readonly Race ogre;
     public readonly Race orc;

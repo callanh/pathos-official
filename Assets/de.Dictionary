@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,Vorsicht vor dieser aufz
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Feenwesen, die durch mächtige Naturgeister gebunden sind, die sie zu Streichen anstiften. Sie sind stämmig mit dem haarigen Unterkörper, den gespaltenen Hufen einer Ziege und den spiralförmigen Hörnern eines Widders. Lachend und intelligent führen sie glücklich hedonistische Eskapaden, bei denen sie trinken, tanzen und kämpfen ."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Große, fleischfressende Reptilien, deren bestialische Vorfahren die Welt lange vor der Geburt der Zivilisation beherrschten. Sie sind furchterregende Raubtiere, die in der Lage sind, beeindruckende Entfernungen zu springen und mit ihren dicken schuppigen Häuten viele Angriffe abzuwehren."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",Perverse Kreaturen mit vielen Aberrationen aber immer mit purpurroter Haut und Hörnern. Ihre bloße Anwesenheit zwingt andere ihre dunkelsten und gewalttätigsten Wünsche zu erfüllen.
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Gefräßige, räuberische Arten von riesigen Humanoiden mit einem großen Buckel, der dazu führt, dass der Handrücken auf dem Boden schleift. Trotz des unangenehmen Aussehens sind sie kraftvoll gebaut und berüchtigt für ihre Fähigkeit sich schnell von jeder Wunde an ihrer gummiartigen Haut zu erholen."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",Formverändernde Wesen die von ihren trügerischen Talenten leben.
@@ -1459,6 +1460,7 @@ EntityName,migo queen,Migo-Königin
 EntityName,migo warrior,Migo-Krieger
 EntityName,mind flayer,Gedankenschinder
 EntityName,minotaur,Minotaurus
+EntityName,minotaur lord,
 EntityName,mist wolf,Nebelwolf
 EntityName,mithril golem,Mithril-Golem
 EntityName,mobat,Mobat
@@ -2968,6 +2970,7 @@ KindName,marine,Meeresbewohner
 KindName,mercenary,Söldner
 KindName,military,Militär
 KindName,mimic,Mimic
+KindName,minotaur,Minotaurus
 KindName,mummy,Mumie
 KindName,naga,Naga
 KindName,ogre,Oger
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,Leprechaun
 RaceName,lizardman//female,Echsenmensch
 RaceName,lizardman//male,Echsenmensch
 RaceName,lizardman//non-binary,Echsenmenschen
+RaceName,minotaur//female,Minotaurus
+RaceName,minotaur//male,Minotaurus
+RaceName,minotaur//non-binary,Minotaurus
 RaceName,nymph//female,Nymphe
 RaceName,nymph//male,Nymph
 RaceName,nymph//non-binary,Nymphe

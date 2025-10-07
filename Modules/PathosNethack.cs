@@ -4045,7 +4045,7 @@ namespace Pathos
       LabyrinthSite.LastLevel.SetTransitions(LabyrinthSite.LastLevel.UpSquare, null); // no way down any further.
 
       // minotaur boss, obviously.
-      Generator.PlaceSpecificCharacter(CurrentSquare, Codex.Entities.minotaur);
+      Generator.PlaceSpecificCharacter(CurrentSquare, Codex.Entities.minotaur_lord);
 
       var BossCharacter = CurrentSquare.Character;
 

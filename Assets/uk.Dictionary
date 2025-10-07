@@ -1014,6 +1014,7 @@ EntityDescription,Beware this clockwork machine of war.,Бережіться ц�
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Чарівні істоти, пов'язані з могутніми духами природи, які наснажують їхні пустощі. Вони присадкуваті, з хутряними нижніми частинами тіла, козлячими ратицями та баранячими закрученими рогами. Грайливі та хитрі, вони з радістю влаштовують гедоністичні пригоди, сповнені випивки, танців та бійок."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Великі хижі рептилії, чиї предки-звірі панували у світі задовго до народження цивілізації. Вони є страхітливими хижаками, що здатні стрибати на довжелезні відстані і відштовхуватися від атак своїми густими лускатими шкурами."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Перекручені істоти багатьох аберацій, але завжди з малиновою шкірою та рогами. Сама їх присутність змушує інших виконувати свої найтемніші, найжорстокіші бажання."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Ненаситний, хижий вид потворних людиноподібних істот з виразним горбом, через який їхні руки волочаться по землі. Попри незграбну зовнішність, вони мають міцну статуру і славляться здатністю блискавично загоювати будь-які рани на своїй еластичній шкірі."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Девіанти, що змінюють форму, процвітають у своїх оманливих талантах."
@@ -1459,6 +1460,7 @@ EntityName,migo queen,королева мі-го
 EntityName,migo warrior,мі-го-воїн
 EntityName,mind flayer,пожирач розуму
 EntityName,minotaur,Мінотавр
+EntityName,minotaur lord,
 EntityName,mist wolf,туманний вовк
 EntityName,mithril golem,міфріловий голем
 EntityName,mobat,мотопирь
@@ -2968,6 +2970,7 @@ KindName,marine,морські
 KindName,mercenary,найманці
 KindName,military,армія
 KindName,mimic,міміки
+KindName,minotaur,Мінотавр
 KindName,mummy,мумії
 KindName,naga,наги
 KindName,ogre,огри
@@ -4294,6 +4297,9 @@ RaceName,leprechaun//non-binary,лепрекон
 RaceName,lizardman//female,людина-ящірка
 RaceName,lizardman//male,людина-ящірка
 RaceName,lizardman//non-binary,людина-ящірка
+RaceName,minotaur//female,мінотавр
+RaceName,minotaur//male,мінотавр
+RaceName,minotaur//non-binary,мінотавр
 RaceName,nymph//female,німфа
 RaceName,nymph//male,німф
 RaceName,nymph//non-binary,німфа
