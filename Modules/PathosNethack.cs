@@ -171,7 +171,7 @@ namespace Pathos
       var LevelSquare = (Square)null;
 
       // guarantee the branches.
-      this.MinesIndex = 1.d4().Roll() + 1;
+      this.MinesIndex = 1 + 1.d3().Roll();
 #if DEBUG
       //MinesIndex = 2;
 #endif
@@ -191,8 +191,8 @@ namespace Pathos
 #if DEBUG
       var BranchArray = new[]
       {
-        new { Index = MinesIndex, Name = "Minetown", From = 2, Until = 5 },
-        new { Index = SokobanIndex, Name = "Sokoban", From = 3, Until = 9 },
+        new { Index = MinesIndex, Name = "Minetown", From = 2, Until = 4 },
+        new { Index = SokobanIndex, Name = "Sokoban", From = 3, Until = 8 },
         new { Index = FortIndex, Name = "Fort Ludios", From = 8, Until = 13 },
         new { Index = LabyrinthIndex, Name = "Labyrinth", From = 11, Until = 16 },
         new { Index = ChambersIndex, Name = "Lost Chambers", From = 14, Until = 19 },

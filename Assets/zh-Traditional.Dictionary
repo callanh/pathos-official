@@ -12,6 +12,7 @@ AfflictionName,rabies,狂犬病
 AfflictionName,reflux,噁心
 AfflictionName,sliming,史萊姆化
 AfflictionName,worms,蠕蟲
+AnatomyAbsenceText,HORNS,有角
 AnatomyAbsenceText,MINDLESS,無意志的
 AnatomyAbsenceText,NO BLOOD,沒有血
 AnatomyAbsenceText,NO EARS,沒有耳朵
@@ -31,6 +32,7 @@ AnatomyName,eyes,眼睛
 AnatomyName,feet,腳
 AnatomyName,hands,手
 AnatomyName,head,頭
+AnatomyName,horns,有角
 AnatomyName,limbs,肢體
 AnatomyName,mind,有意志
 AnatomyName,mounted,騎乘
@@ -1014,7 +1016,7 @@ EntityDescription,Beware this clockwork machine of war.,當心這個發條控制
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,一種雙足機械造物，擁有近乎無限的智能，由熔核引擎驅動。這種引擎需要持續提供金屬作為原料，並且極易受到水的傷害。
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",受到自然之靈祝福的異族生物，擁有魁梧的身軀，毛茸茸的下半身，山羊的蹄子和公羊的角。他們野蠻而又聰明，過著每天喝酒跳舞打架的快樂生活。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",大型食肉爬行動物其祖先在文明出現前就已統治世界許久。他們是令人恐懼的掠食者，可以跳躍很遠、用厚皮抵擋許多攻擊。
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,可怖的生物，有公牛一般的頭和尾巴，身體卻是人形。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",雖然是所有邪惡生物的簡稱，但總長著赤紅的皮膚以及長角。 僅僅是迫使他人就能使他們展現出最黑暗且殘暴的慾望。
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",貪婪、喜歡劫掠且體型魁梧的類人種族，通常有很嚴重的駝背，因此他們總是把手拖在地上。雖然體型笨拙，但是他們有著強壯的體質，以及極強的自愈能力。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",能變形的惡魔，以欺騙為生。
@@ -1459,8 +1461,8 @@ EntityName,migo drone,米戈工蜂
 EntityName,migo queen,米戈女皇
 EntityName,migo warrior,米戈戰士
 EntityName,mind flayer,奪心魔
-EntityName,minotaur,米諾陶爾
-EntityName,minotaur lord,
+EntityName,minotaur,牛頭人
+EntityName,minotaur lord,牛頭人領主
 EntityName,mist wolf,迷霧之狼
 EntityName,mithril golem,秘銀傀儡
 EntityName,mobat,大蝙蝠
@@ -3051,7 +3053,7 @@ LiteralText,AUTO,自動
 LiteralText,auto saving,自動存檔
 LiteralText,AWAKE,醒來
 LiteralText,BACK,返回
-LiteralText,backfire,回火
+LiteralText,backfire,作用於自身
 LiteralText,barrier,障礙物
 LiteralText,BARRIERS,障礙物
 LiteralText,bazaar,集市

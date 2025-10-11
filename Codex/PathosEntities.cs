@@ -709,7 +709,7 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
+        E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
@@ -718,7 +718,8 @@ namespace Pathos
         E.Figure.Set
         (
           Material: Materials.animal,
-          Head: true, // TODO: can't wear helmet due to horns?
+          Head: true,
+          Horns: true, // can't wear helms due to horns
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -732,11 +733,11 @@ namespace Pathos
           Amorphous: false
         );
         E.LifeAdvancement.Set(5, 1.d3());
-        E.ManaAdvancement.Set(1, Dice.Zero);
+        E.ManaAdvancement.Set(1, 1.d(2) - 1);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 24, DEX: 16, CON: 24, INT: 16, WIS: 16, CHA: 16);
         E.SetGender(Genders.male, Genders.female);
-        E.Startup.SetTalent(Properties.berserking, Properties.dark_vision);
+        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision);
         E.Startup.SetResistance();
         E.SetCorpse(Chance.Always);
       });
@@ -888,6 +889,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true, // can't wear helms due to horns
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -27816,6 +27818,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -28004,6 +28007,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -33422,6 +33426,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,

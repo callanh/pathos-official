@@ -94,6 +94,7 @@ namespace Pathos
         (
           Material: Materials.glass,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -187,6 +188,7 @@ namespace Pathos
         (
           Material: Materials.bone,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -218,6 +220,7 @@ namespace Pathos
         (
           Material: null,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -231,7 +234,7 @@ namespace Pathos
           Amorphous: true
         );
 
-        S.Startup.SetTalent(Properties.dark_vision);
+        S.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion);
         S.Startup.SetResistance(Elements.sleep);
 
         S.SetTransformations(Entities.vampire_bat, Entities.fog_cloud);

@@ -7594,7 +7594,7 @@ H-----------H
             var AccessSquare = BelowMap.GetFrameSquares(Building.Region).Where(S => S.IsFlat()).GetRandomOrNull();
             Generator.RemoveWall(AccessSquare);
             Generator.PlaceFloor(AccessSquare, Codex.Grounds.stone_floor);
-            Generator.PlaceClosedVerticalDoor(AccessSquare, Codex.Gates.wooden_door, Codex.Barriers.stone_wall, Reinforced: true, Key: Codex.Items.Jade_Key);
+            Generator.PlaceClosedVerticalDoor(AccessSquare, Codex.Gates.gold_door, Codex.Barriers.stone_wall, Reinforced: true, Key: Codex.Items.Jade_Key);
           }
           void PlaceStorage(OpusBuilding Building)
           {

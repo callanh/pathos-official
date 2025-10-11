@@ -961,6 +961,7 @@ namespace Pathos
     public readonly Glyph gnome_male_ninja;
     public readonly Glyph gnome_male_paladin;
     public readonly Glyph gnome_male_pirate;
+    public readonly Glyph gnome_male_priest;
     public readonly Glyph gnome_male_ranger;
     public readonly Glyph gnome_male_reaver;
     public readonly Glyph gnome_male_rogue;
@@ -976,6 +977,8 @@ namespace Pathos
     public readonly Glyph gnome_female_explorer;
     public readonly Glyph gnome_female_healer;
     public readonly Glyph gnome_female_knight;
+    public readonly Glyph gnome_female_mystic;
+    public readonly Glyph gnome_female_ninja;
     public readonly Glyph gnome_female_ranger;
     public readonly Glyph gnome_female_reaver;
     public readonly Glyph gnome_female_tinker;

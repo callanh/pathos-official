@@ -353,12 +353,13 @@ namespace Pathos
       Form.SetScore(Attributes.charisma, CHA);
     }
 
-    internal static void Set(this FigureEditor Figure, Material Material, bool Head, bool Mind, bool Eyes, bool Ears, bool Hands, bool Limbs, bool Feet, bool Thermal, bool Blood, bool Mounted, bool Amorphous, bool Voice)
+    internal static void Set(this FigureEditor Figure, Material Material, bool Head, bool Mind, bool Eyes, bool Ears, bool Hands, bool Limbs, bool Feet, bool Thermal, bool Blood, bool Mounted, bool Amorphous, bool Voice, bool Horns = false)
     {
       var Anatomy = Codex.Anatomies;
 
       Figure.Material = Material;
       if (Head) Figure.Set(Anatomy.head);
+      if (Horns) Figure.Set(Anatomy.horns);
       if (Mind) Figure.Set(Anatomy.mind);
       if (Eyes) Figure.Set(Anatomy.eyes);
       if (Ears) Figure.Set(Anatomy.ears);

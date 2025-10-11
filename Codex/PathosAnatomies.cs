@@ -23,6 +23,7 @@ namespace Pathos
       }
 
       head = AddAnatomy("head", "NO HEAD");
+      horns = AddAnatomy("horns", "HORNS");
       mind = AddAnatomy("mind", "MINDLESS");
       eyes = AddAnatomy("eyes", "NO EYES");
       ears = AddAnatomy("ears", "NO EARS");
@@ -45,6 +46,7 @@ namespace Pathos
 #endif
 
     public readonly Anatomy head;
+    public readonly Anatomy horns;
     public readonly Anatomy mind;
     public readonly Anatomy eyes;
     public readonly Anatomy ears;
