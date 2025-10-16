@@ -815,6 +815,8 @@ namespace Pathos
       #endregion
 
       #region Hordes.
+      Base.UniqueCheck("Horde", Manifest.Hordes.List, I => I.Name);
+
       foreach (var Horde in Manifest.Hordes.List)
       {
         if (Horde.Minions.Count == 0 && Horde.Cavalries.Count == 0)

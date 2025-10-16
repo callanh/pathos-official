@@ -140,6 +140,16 @@ namespace Pathos
         H.AddCavalry(Entities.hobgoblin, Entities.giant_frog, Dice.One);
       });
 
+      gibberling = AddHorde("gibberling", null, H =>
+      {
+        H.AddMinion(Entities.gibberling, 2.d10()); // 2-20
+      });
+
+      grimlock = AddHorde("grimlock", null, H =>
+      {
+        H.AddMinion(Entities.grimlock, 2.d10()); // 2-20
+      });
+
       harpy = AddHorde("harpy", null, H =>
       {
         H.AddMinion(Entities.harpy, 1.d4());
@@ -353,6 +363,8 @@ namespace Pathos
     public readonly Horde garter_snake;
     public readonly Horde gnome;
     public readonly Horde goblin;
+    public readonly Horde gibberling;
+    public readonly Horde grimlock;
     public readonly Horde harpy;
     public readonly Horde hell_hound;
     public readonly Horde jackal;

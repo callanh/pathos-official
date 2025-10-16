@@ -825,6 +825,10 @@ namespace Pathos
     public readonly Glyph dwarf_female_reaver;
     public readonly Glyph dwarf_female_valkyrie;
 
+    // echo.
+    public readonly Glyph echo_male_gunslinger;
+    public readonly Glyph echo_male_necromancer;
+
     // elf.
     public readonly Glyph elf_male_bard;
     public readonly Glyph elf_male_explorer;
@@ -979,8 +983,10 @@ namespace Pathos
     public readonly Glyph gnome_female_knight;
     public readonly Glyph gnome_female_mystic;
     public readonly Glyph gnome_female_ninja;
+    public readonly Glyph gnome_female_paladin;
     public readonly Glyph gnome_female_ranger;
     public readonly Glyph gnome_female_reaver;
+    public readonly Glyph gnome_female_shaman;
     public readonly Glyph gnome_female_tinker;
     public readonly Glyph gnome_female_wizard;
 

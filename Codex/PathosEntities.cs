@@ -712,7 +712,7 @@ namespace Pathos
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
-        E.Size = Size.Medium;
+        E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
         E.Weight = Weight.FromUnits(45000);
         E.Figure.Set
@@ -737,7 +737,7 @@ namespace Pathos
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 24, DEX: 16, CON: 24, INT: 16, WIS: 16, CHA: 16);
         E.SetGender(Genders.male, Genders.female);
-        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision);
+        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision); // TOD: charging property?
         E.Startup.SetResistance();
         E.SetCorpse(Chance.Always);
       });

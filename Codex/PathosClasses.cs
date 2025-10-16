@@ -368,6 +368,7 @@ namespace Pathos
         C.AddAvatar(Races.kobold, Genders.male, Glyphs.kobold_male_gunslinger);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_gunslinger);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_gunslinger);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_gunslinger);
         C.AddFeat(5, Properties.warning);
         C.AddFeat(10, Elements.sleep);
         C.AddFeat(15, Properties.appraisal);
@@ -722,6 +723,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_paladin);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_paladin);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_paladin);
+        C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_paladin);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_paladin);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_paladin);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_paladin);
@@ -1081,6 +1083,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_shaman);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_shaman);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_shaman);
+        C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_shaman);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_shaman);
         C.AddFeat(4, Elements.poison);
         C.AddFeat(10, Properties.polymorph_control);
@@ -1339,6 +1342,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_necromancer);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_necromancer);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_necromancer);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_necromancer);
         C.SetDistribution(Attributes.intelligence, Attributes.constitution, Attributes.dexterity, Attributes.wisdom, Attributes.strength, Attributes.charisma);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.clairvoyance);
