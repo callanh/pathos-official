@@ -11173,6 +11173,7 @@ namespace Pathos
           K.Apply.HarmEntity(Elements.shock, 5.d6());
           K.Apply.WhenChance(Chance.OneIn5, T => T.CreateVolatile(Volatiles.electricity, 1.d50() + 50));
         });
+        E.AddReaction(Chance.Always, Elements.shock, A => A.HealEntity(4.d6(), Modifier.Zero));
         E.SetCorpse(Chance.Never);
       });
 

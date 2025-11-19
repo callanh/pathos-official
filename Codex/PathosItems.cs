@@ -1362,6 +1362,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(1400);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetResistance(Elements.cold);
+        // TODO: zap for freeze volatile?
         I.SetTwoHandedWeapon(Skills.hammer, null, Elements.physical, DamageType.Bludgeon, 2.d8() + 2, A => A.WhenChance(Chance.OneIn4, T =>
         {
           T.WithSourceSanctity
@@ -1388,8 +1389,10 @@ namespace Pathos
         I.Price = Gold.FromCoins(1200);
         I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetResistance(Elements.shock);
+        // TODO: zap for electricity volatile?
         I.SetTwoHandedWeapon(Skills.spear, null, Elements.physical, DamageType.Pierce, 2.d6() + 2, A => A.WhenChance(Chance.OneIn4, T =>
         {
+          //T.HarmEntity(Elements.shock, 1.d2() + 1); // TODO: does not display the damage bubble usefully.
           T.WithSourceSanctity
           (
             B => B.ApplyTransient(Properties.stunned, 1.d4() + 3),
