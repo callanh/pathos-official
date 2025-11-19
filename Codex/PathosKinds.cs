@@ -49,6 +49,7 @@ namespace Pathos
       demon = AddOtherKind("demon");
       devourer = AddLivingKind("devourer");
       dog = AddLivingKind("dog");
+      dracon = AddLivingKind("dracon");
       dragon = AddLivingKind("dragon");
       dwarf = AddLivingKind("dwarf");
       echo = AddOtherKind("echo");
@@ -110,73 +111,74 @@ namespace Pathos
 
     public IReadOnlyList<Kind> Undead => UndeadArray;
     public IReadOnlyList<Kind> Living => LivingArray;
-    public readonly Kind angel;
-    public readonly Kind insect;
-    public readonly Kind bat;
-    public readonly Kind beast;
-    public readonly Kind bird;
-    public readonly Kind blob;
-    public readonly Kind cat;
-    public readonly Kind centaur;
-    public readonly Kind changeling;
-    public readonly Kind demon;
-    public readonly Kind devourer;
-    public readonly Kind dog;
-    public readonly Kind dragon;
-    public readonly Kind dwarf;
-    public readonly Kind echo;
-    public readonly Kind elemental;
-    public readonly Kind elf;
-    public readonly Kind eye;
-    public readonly Kind fairy;
-    public readonly Kind flayer;
-    public readonly Kind fungus;
-    public readonly Kind ghost;
-    public readonly Kind giant;
-    public readonly Kind gnoll;
-    public readonly Kind gnome;
-    public readonly Kind golem;
-    public readonly Kind gremlin;
-    public readonly Kind halfling;
-    public readonly Kind horse;
-    public readonly Kind human;
-    public readonly Kind imp;
-    public readonly Kind jelly;
-    public readonly Kind kobold;
-    public readonly Kind lich;
-    public readonly Kind light;
-    public readonly Kind lizard;
-    public readonly Kind lizardman;
-    public readonly Kind lycanthrope;
-    public readonly Kind marine;
-    public readonly Kind mercenary;
-    public readonly Kind military;
-    public readonly Kind mimic;
-    public readonly Kind minotaur;
-    public readonly Kind mummy;
-    public readonly Kind naga;
-    public readonly Kind ogre;
-    public readonly Kind orc;
-    public readonly Kind plasmoid;
-    public readonly Kind pudding;
-    public readonly Kind quadruped;
-    public readonly Kind robot;
-    public readonly Kind rodent;
-    public readonly Kind satyr;
-    public readonly Kind snake;
-    public readonly Kind spider;
-    public readonly Kind tortle;
-    public readonly Kind trapper;
-    public readonly Kind troll;
-    public readonly Kind umber;
-    public readonly Kind vampire;
-    public readonly Kind vortex;
-    public readonly Kind worm;
-    public readonly Kind wraith;
-    public readonly Kind xan;
-    public readonly Kind zombie;
+    public Kind angel { get; }
+    public Kind insect { get; }
+    public Kind bat { get; }
+    public Kind beast { get; }
+    public Kind bird { get; }
+    public Kind blob { get; }
+    public Kind cat { get; }
+    public Kind centaur { get; }
+    public Kind changeling { get; }
+    public Kind demon { get; }
+    public Kind devourer { get; }
+    public Kind dog { get; }
+    public Kind dracon { get; }
+    public Kind dragon { get; }
+    public Kind dwarf { get; }
+    public Kind echo { get; }
+    public Kind elemental { get; }
+    public Kind elf { get; }
+    public Kind eye { get; }
+    public Kind fairy { get; }
+    public Kind flayer { get; }
+    public Kind fungus { get; }
+    public Kind ghost { get; }
+    public Kind giant { get; }
+    public Kind gnoll { get; }
+    public Kind gnome { get; }
+    public Kind golem { get; }
+    public Kind gremlin { get; }
+    public Kind halfling { get; }
+    public Kind horse { get; }
+    public Kind human { get; }
+    public Kind imp { get; }
+    public Kind jelly { get; }
+    public Kind kobold { get; }
+    public Kind lich { get; }
+    public Kind light { get; }
+    public Kind lizard { get; }
+    public Kind lizardman { get; }
+    public Kind lycanthrope { get; }
+    public Kind marine { get; }
+    public Kind mercenary { get; }
+    public Kind military { get; }
+    public Kind mimic { get; }
+    public Kind minotaur { get; }
+    public Kind mummy { get; }
+    public Kind naga { get; }
+    public Kind ogre { get; }
+    public Kind orc { get; }
+    public Kind plasmoid { get; }
+    public Kind pudding { get; }
+    public Kind quadruped { get; }
+    public Kind robot { get; }
+    public Kind rodent { get; }
+    public Kind satyr { get; }
+    public Kind snake { get; }
+    public Kind spider { get; }
+    public Kind tortle { get; }
+    public Kind trapper { get; }
+    public Kind troll { get; }
+    public Kind umber { get; }
+    public Kind vampire { get; }
+    public Kind vortex { get; }
+    public Kind worm { get; }
+    public Kind wraith { get; }
+    public Kind xan { get; }
+    public Kind zombie { get; }
 
-    private readonly Kind[] UndeadArray;
-    private readonly Kind[] LivingArray;
+    private Kind[] UndeadArray;
+    private Kind[] LivingArray;
   }
 }

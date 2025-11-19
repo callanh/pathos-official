@@ -375,12 +375,12 @@ namespace Pathos
 
       var prevCenter = new SPDPointF((prev.left + prev.right) / 2f, (prev.top + prev.bottom) / 2f);
 
-      double m = Math.Tan(angle / A + Math.PI / 2.0);
-      double b = prevCenter.y - m * prevCenter.x;
+      var m = MathF.Tan(angle / A + MathF.PI / 2.0F);
+      var b = prevCenter.y - m * prevCenter.x;
 
       SPDPoint start;
       int direction;
-      if (Math.Abs(m) >= 1)
+      if (MathF.Abs(m) >= 1)
       {
         if (angle < 90 || angle > 270)
         {
@@ -487,9 +487,9 @@ namespace Pathos
     }
     private float AngleBetweenPoints(SPDPointF from, SPDPointF to)
     {
-      double m = (to.y - from.y) / (to.x = from.x);
+      var m = (to.y - from.y) / (to.x = from.x);
 
-      var angle = (float)(A * (Math.Atan(m) + Math.PI / 2.0));
+      var angle = A * (MathF.Atan(m) + MathF.PI / 2.0F);
       if (from.x > to.x) angle -= 180f;
       return angle;
     }
@@ -594,14 +594,11 @@ namespace Pathos
     private float TargetAngle(float percentAlong)
     {
       percentAlong += curveOffset;
-      return 360f * (float)(curveIntensity * CurveEquation(percentAlong)
-          + (1 - curveIntensity) * percentAlong - curveOffset);
+      return 360f * (curveIntensity * CurveEquation(percentAlong) + (1 - curveIntensity) * percentAlong - curveOffset);
     }
-    private double CurveEquation(double x)
+    private float CurveEquation(float x)
     {
-      return Math.Pow(4, 2 * curveExponent) *
-          (Math.Pow((x % 0.5f) - 0.25, 2 * curveExponent + 1)) +
-          0.25 + 0.5 * Math.Floor(2 * x);
+      return MathF.Pow(4, 2 * curveExponent) * (MathF.Pow((x % 0.5f) - 0.25F, 2 * curveExponent + 1)) + 0.25F + 0.5F * MathF.Floor(2 * x);
     }
     private static int BranchFails;
     private bool CreateBranches(Inv.DistinctList<SPDRoom> rooms, Inv.DistinctList<SPDRoom> branchable, Inv.DistinctList<SPDRoom> roomsToBranch, float[] connChances)
@@ -721,7 +718,7 @@ namespace Pathos
         for (var i = 0; i < 4; i++)
         {
           var newAngle = SPDRandom.Float(360f);
-          if (Math.Abs(toCenter - newAngle) < Math.Abs(toCenter - currAngle))
+          if (MathF.Abs(toCenter - newAngle) < MathF.Abs(toCenter - currAngle))
           {
             currAngle = newAngle;
           }
@@ -753,10 +750,10 @@ namespace Pathos
     private float curveIntensity = 1;
     private int curveExponent = 0;
     private readonly float pathLength = 0.25f;
-    private readonly double A = 180 / Math.PI;
-    private readonly float[] pathLenJitterChances = new float[] { 0, 0, 0, 1 };
-    private readonly float[] branchTunnelChances = new float[] { 2, 2, 1 };
-    private readonly float[] pathTunnelChances = new float[] { 1, 3, 1 };
+    private readonly float A = 180 / MathF.PI;
+    private readonly float[] pathLenJitterChances = [0, 0, 0, 1];
+    private readonly float[] branchTunnelChances = [2, 2, 1];
+    private readonly float[] pathTunnelChances = [1, 3, 1];
 
     public static float Gate(float min, float value, float max)
     {

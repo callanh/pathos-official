@@ -1015,6 +1015,7 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
@@ -1196,6 +1197,7 @@ EntityName,Doctor Frankenstein,Доктор Франкенштейн
 EntityName,dog,собака
 EntityName,doppelgänger,доппельгангер
 EntityName,dracolich,драколич
+EntityName,dracon,
 EntityName,dragon king,царь драконов
 EntityName,dretch,дретч
 EntityName,drow,дроу
@@ -2943,6 +2945,7 @@ KindName,changeling,
 KindName,demon,демоны
 KindName,devourer,поглотители
 KindName,dog,псовые
+KindName,dracon,
 KindName,dragon,драконы
 KindName,dwarf,дварфы
 KindName,echo,
@@ -4259,6 +4262,9 @@ RaceName,changeling//non-binary,
 RaceName,demon//female,
 RaceName,demon//male,
 RaceName,demon//non-binary,
+RaceName,dracon//female,
+RaceName,dracon//male,
+RaceName,dracon//non-binary,
 RaceName,dwarf//female,дварф
 RaceName,dwarf//male,дварф
 RaceName,dwarf//non-binary,

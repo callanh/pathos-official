@@ -1015,6 +1015,7 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,Бережіться цього механічного знаряддя війни.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Чарівні істоти, пов'язані з могутніми духами природи, які наснажують їхні пустощі. Вони присадкуваті, з хутряними нижніми частинами тіла, козлячими ратицями та баранячими закрученими рогами. Грайливі та хитрі, вони з радістю влаштовують гедоністичні пригоди, сповнені випивки, танців та бійок."
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Великі хижі рептилії, чиї предки-звірі панували у світі задовго до народження цивілізації. Вони є страхітливими хижаками, що здатні стрибати на довжелезні відстані і відштовхуватися від атак своїми густими лускатими шкурами."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Перекручені істоти багатьох аберацій, але завжди з малиновою шкірою та рогами. Сама їх присутність змушує інших виконувати свої найтемніші, найжорстокіші бажання."
@@ -1196,6 +1197,7 @@ EntityName,Doctor Frankenstein,Доктор Франкенштейн
 EntityName,dog,собака
 EntityName,doppelgänger,допельгангер
 EntityName,dracolich,драколіч
+EntityName,dracon,
 EntityName,dragon king,цар драконів
 EntityName,dretch,дретч
 EntityName,drow,дроу
@@ -2943,6 +2945,7 @@ KindName,changeling,змінці
 KindName,demon,демони
 KindName,devourer,поглиначі
 KindName,dog,псові
+KindName,dracon,
 KindName,dragon,дракони
 KindName,dwarf,дварфи
 KindName,echo,ехо
@@ -4259,6 +4262,9 @@ RaceName,changeling//non-binary,змінець
 RaceName,demon//female,демониця
 RaceName,demon//male,демон
 RaceName,demon//non-binary,демон
+RaceName,dracon//female,
+RaceName,dracon//male,
+RaceName,dracon//non-binary,
 RaceName,dwarf//female,дварфка
 RaceName,dwarf//male,дварф
 RaceName,dwarf//non-binary,дварф

@@ -668,7 +668,7 @@ namespace Pathos
         E.Difficulty = 0;
         E.Frequency = 0;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // strong natural skin
-        E.SetDiet(Diets.carnivore);
+        E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
         E.Size = Size.Large;
         E.Strategy = Strategy.Attack;
@@ -680,7 +680,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -692,7 +692,7 @@ namespace Pathos
         E.LifeAdvancement.Set(2, Dice.One);
         E.ManaAdvancement.Set(1, Dice.Zero);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
-        E.LimitForm.Set(STR: 22, DEX: 18, CON: 24, INT: 16, WIS: 16, CHA: 16);
+        E.LimitForm.Set(STR: 22, DEX: 18, CON: 24, INT: 18, WIS: 16, CHA: 16);
         E.SetGender(Genders.male, Genders.female);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
@@ -735,10 +735,51 @@ namespace Pathos
         E.LifeAdvancement.Set(5, 1.d3());
         E.ManaAdvancement.Set(1, 1.d(2) - 1);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
-        E.LimitForm.Set(STR: 24, DEX: 16, CON: 24, INT: 16, WIS: 16, CHA: 16);
+        E.LimitForm.Set(STR: 25, DEX: 15, CON: 25, INT: 15, WIS: 15, CHA: 20);
         E.SetGender(Genders.male, Genders.female);
-        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision); // TOD: charging property?
+        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision); // TODO: charge property?
         E.Startup.SetResistance();
+        E.SetCorpse(Chance.Always);
+      });
+
+      dracon = AddBaseEntity(Kinds.dracon, Races.dracon, "dracon", E =>
+      {
+        E.Description = "Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.";
+        E.Glyph = Glyphs.dracon;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 12, P: +1, S: +0, B: +0);
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S4_5;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(20000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Horns: false,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: false,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: true,
+          Blood: true,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(2, Dice.Fixed(+2));
+        E.ManaAdvancement.Set(2, Dice.Fixed(+1));
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 22, DEX: 22, CON: 22, INT: 18, WIS: 18, CHA: 18);
+        E.SetGender(Genders.male, Genders.female);
+        E.Startup.SetTalent(Properties.flight, Properties.dark_vision); // TODO: breathe fire?
+        E.Startup.SetResistance([Elements.fire]);
         E.SetCorpse(Chance.Always);
       });
 
@@ -10916,7 +10957,7 @@ namespace Pathos
         E.SetGender(Genders.neuter);
         E.SetGreed();
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.swimming);
         E.Startup.SetTalent(Properties.levitation, Properties.life_regeneration);
         //E.Startup.SetResistance(Elements.water);
         E.AddAttack(AttackTypes.blast, Elements.fire, Dice.Zero, K =>
@@ -15573,8 +15614,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d3()); // +3 from str.
         E.AddAttack(AttackTypes.breath, Elements.cold, Dice.Zero, K =>
         {
-          K.SetCast().Beam(Beams.cold, 1.d3() + 3)
-           .SetReflects(false);
+          K.SetCast().Beam(Beams.cold, 1.d3() + 3);
           K.Apply.HarmEntity(Elements.cold, 4.d4());
           K.Apply.UnlessTargetResistant(Elements.cold, T => T.ApplyTransient(Properties.paralysis, 1.d3() + 3));
         });
@@ -22955,7 +22995,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.conjuration, Skills.swimming);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
@@ -23004,7 +23044,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.medium_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.expert, Skills.conjuration, Skills.swimming);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
@@ -23057,7 +23097,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.clerical, Skills.abjuration, Skills.literacy, Skills.transmutation, Skills.light_armour, Skills.staff);
-        E.Startup.SetSkill(Qualifications.master, Skills.conjuration);
+        E.Startup.SetSkill(Qualifications.master, Skills.conjuration, Skills.swimming);
         E.Startup.SetTalent();
         E.Startup.SetResistance(Elements.poison, Elements.shock, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.soaking_sphere);
@@ -34676,6 +34716,8 @@ namespace Pathos
     public readonly Entity baby_crocodile;
     public readonly Entity baby_long_worm;
     public readonly Entity baby_purple_worm;
+
+    public readonly Entity dracon;
 
     public readonly Entity baby_black_dragon;
     public readonly Entity baby_blue_dragon;

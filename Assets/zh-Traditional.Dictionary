@@ -761,9 +761,9 @@ ClassName,gunslinger//non-binary,槍械師
 ClassName,healer//female,治療師
 ClassName,healer//male,治療師
 ClassName,healer//non-binary,治療師
-ClassName,hunter//female,賞金獵人
-ClassName,hunter//male,賞金獵人
-ClassName,hunter//non-binary,賞金獵人
+ClassName,hunter//female,獵人
+ClassName,hunter//male,獵人
+ClassName,hunter//non-binary,獵人
 ClassName,jester//female,小丑
 ClassName,jester//male,小丑
 ClassName,jester//non-binary,小丑
@@ -776,9 +776,9 @@ ClassName,miner//non-binary,礦工
 ClassName,monk//female,修女
 ClassName,monk//male,僧侶
 ClassName,monk//non-binary,僧侶
-ClassName,mystic//female,神秘人
-ClassName,mystic//male,神秘人
-ClassName,mystic//non-binary,神秘人
+ClassName,mystic//female,神秘學者
+ClassName,mystic//male,神秘學者
+ClassName,mystic//non-binary,神秘學者
 ClassName,necromancer//female,死靈法師
 ClassName,necromancer//male,死靈法師
 ClassName,necromancer//non-binary,死靈法師
@@ -1015,6 +1015,7 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,當心這個發條控制的戰爭機器。
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,一種雙足機械造物，擁有近乎無限的智能，由熔核引擎驅動。這種引擎需要持續提供金屬作為原料，並且極易受到水的傷害。
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",受到自然之靈祝福的異族生物，擁有魁梧的身軀，毛茸茸的下半身，山羊的蹄子和公羊的角。他們野蠻而又聰明，過著每天喝酒跳舞打架的快樂生活。
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",看起來像人形的龍，體型健壯、氣勢雄偉，具有一些爬行動物的特徵，包括鱗片、呼吸孔和爪子。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",大型食肉爬行動物其祖先在文明出現前就已統治世界許久。他們是令人恐懼的掠食者，可以跳躍很遠、用厚皮抵擋許多攻擊。
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,可怖的生物，有公牛一般的頭和尾巴，身體卻是人形。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",雖然是所有邪惡生物的簡稱，但總長著赤紅的皮膚以及長角。 僅僅是迫使他人就能使他們展現出最黑暗且殘暴的慾望。
@@ -1196,6 +1197,7 @@ EntityName,Doctor Frankenstein,弗蘭肯斯坦博士
 EntityName,dog,狗
 EntityName,doppelgänger,變形怪
 EntityName,dracolich,龍巫妖
+EntityName,dracon,龍裔
 EntityName,dragon king,龍王
 EntityName,dretch,怯魔
 EntityName,drow,卓爾精靈
@@ -1636,7 +1638,7 @@ EntityName,titan,泰坦巨人
 EntityName,titanothere,雷獸
 EntityName,topaz golem,黃玉傀儡
 EntityName,tortle,龜行者
-EntityName,tracker,獵人
+EntityName,tracker,賞金獵人
 EntityName,transmuter,變形術士
 EntityName,trapper,陷阱魔
 EntityName,treant,樹精
@@ -2943,6 +2945,7 @@ KindName,changeling,變形人
 KindName,demon,惡魔
 KindName,devourer,吞噬者
 KindName,dog,狗
+KindName,dracon,
 KindName,dragon,龍
 KindName,dwarf,矮人
 KindName,echo,殘像
@@ -4259,6 +4262,9 @@ RaceName,changeling//non-binary,變形人
 RaceName,demon//female,惡魔
 RaceName,demon//male,惡魔
 RaceName,demon//non-binary,惡魔
+RaceName,dracon//female,
+RaceName,dracon//male,
+RaceName,dracon//non-binary,
 RaceName,dwarf//female,矮人
 RaceName,dwarf//male,矮人
 RaceName,dwarf//non-binary,矮人

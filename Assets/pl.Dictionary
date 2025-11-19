@@ -1015,6 +1015,7 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,Strzeżcie się tej machiny wojny.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Stworzenia połączone przez potężne duchy natury, które napędzają ich wybryki. Są krępi, z futrzanymi dolnymi partiami ciała, kopytami kozy i zakręconymi rogami barana. Zabawne i sprytne, wesoło prowadzą hedonistyczne eskapady, podczas których piją, tańczą i walczą."
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Duże, mięsożerne reptiliany, których bestialscy przodkowie dominowali na świecie na długo przed narodzinami cywilizacji. To przerażające drapieżniki, zdolne do skoków na imponujące odległości i odpierające wiele ataków swoimi grubymi łuskowatymi skórami."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Perwersyjne istoty o wielu aberracjach, ale zawsze z karmazynową skórą i rogami. Sama ich obecność zmusza innych do spełniania ich najmroczniejszych, najbardziej brutalnych pragnień."
@@ -1196,6 +1197,7 @@ EntityName,Doctor Frankenstein,Doktor Frankenstein
 EntityName,dog,pies
 EntityName,doppelgänger,sobowtór
 EntityName,dracolich,smokolich
+EntityName,dracon,
 EntityName,dragon king,król smoków
 EntityName,dretch,kreta
 EntityName,drow,drow
@@ -2943,6 +2945,7 @@ KindName,changeling,odmieniec
 KindName,demon,demon
 KindName,devourer,pożeracz
 KindName,dog,pies
+KindName,dracon,
 KindName,dragon,smok
 KindName,dwarf,krasnolud
 KindName,echo,echo
@@ -4259,6 +4262,9 @@ RaceName,changeling//non-binary,zmiennokształtny
 RaceName,demon//female,demonica
 RaceName,demon//male,demon
 RaceName,demon//non-binary,demon
+RaceName,dracon//female,
+RaceName,dracon//male,
+RaceName,dracon//non-binary,
 RaceName,dwarf//female,krasnolud
 RaceName,dwarf//male,krasnolud
 RaceName,dwarf//non-binary,krasnolud

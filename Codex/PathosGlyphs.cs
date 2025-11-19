@@ -222,6 +222,8 @@ namespace Pathos
     public readonly Glyph baby_crocodile;
     public readonly Glyph baby_long_worm;
     public readonly Glyph baby_purple_worm;
+    
+    public readonly Glyph dracon;
 
     public readonly Glyph baby_black_dragon;
     public readonly Glyph baby_blue_dragon;
@@ -812,6 +814,21 @@ namespace Pathos
     public readonly Glyph demon_female_valkyrie;
     public readonly Glyph demon_female_wizard;
 
+    // dracon.
+    public readonly Glyph dracon_male_bard;
+    public readonly Glyph dracon_male_caveman;
+    public readonly Glyph dracon_male_druid;
+    public readonly Glyph dracon_male_jester;
+    public readonly Glyph dracon_male_knight;
+    public readonly Glyph dracon_male_monk;
+    public readonly Glyph dracon_male_priest;
+    public readonly Glyph dracon_male_ranger;
+    public readonly Glyph dracon_male_reaver;
+    public readonly Glyph dracon_male_rogue;
+    public readonly Glyph dracon_male_wizard;
+
+    public readonly Glyph dracon_female_druid;
+
     // dwarf.
     public readonly Glyph dwarf_male_caveman;
     public readonly Glyph dwarf_male_explorer;
@@ -839,6 +856,7 @@ namespace Pathos
     public readonly Glyph elf_male_templar;
     public readonly Glyph elf_male_wizard;
 
+    public readonly Glyph elf_female_barbarian;
     public readonly Glyph elf_female_explorer;
     public readonly Glyph elf_female_priest;
     public readonly Glyph elf_female_ranger;
@@ -988,6 +1006,7 @@ namespace Pathos
     public readonly Glyph gnome_female_reaver;
     public readonly Glyph gnome_female_shaman;
     public readonly Glyph gnome_female_tinker;
+    public readonly Glyph gnome_female_tourist;
     public readonly Glyph gnome_female_wizard;
 
     // halfling.

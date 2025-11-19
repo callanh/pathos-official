@@ -1015,6 +1015,7 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,Cuidado com essa engenhosa máquina de guerra.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas féericas ligadas por poderosos espíritos da natureza para alimentar suas travessuras . Eles são atarracados com corpos inferiores peludos, cascos fendidos de cabra e chifres enrolados de carneiro . Irreverentes e espertos, eles alegremente conduzem aventuras hedonísticas de bebida , dança e luta ."
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos carnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas peles escamosas."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas que manifestam-se em muitas aberrações, mas sempre com pele rubra e terríveis chifres. Sua mera presença desperta em outrem os impulsos mais sombrios e violentos."
@@ -1196,6 +1197,7 @@ EntityName,Doctor Frankenstein,Doutor Frankenstein
 EntityName,dog,cachorro
 EntityName,doppelgänger,doppelgänger
 EntityName,dracolich,dragolich
+EntityName,dracon,
 EntityName,dragon king,rei dragão
 EntityName,dretch,dretch
 EntityName,drow,drow
@@ -2943,6 +2945,7 @@ KindName,changeling,trocado
 KindName,demon,demônio
 KindName,devourer,devorador
 KindName,dog,cachorro
+KindName,dracon,
 KindName,dragon,dragão
 KindName,dwarf,anão
 KindName,echo,eco
@@ -4259,6 +4262,9 @@ RaceName,changeling//non-binary,multimorfe
 RaceName,demon//female,demônio
 RaceName,demon//male,demônio
 RaceName,demon//non-binary,demônio
+RaceName,dracon//female,
+RaceName,dracon//male,
+RaceName,dracon//non-binary,
 RaceName,dwarf//female,anã
 RaceName,dwarf//male,anão
 RaceName,dwarf//non-binary,anão

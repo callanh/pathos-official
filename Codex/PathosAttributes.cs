@@ -44,7 +44,7 @@ namespace Pathos
     }
 #endif
 
-  public readonly Attribute strength;
+    public readonly Attribute strength;
     public readonly Attribute dexterity;
     public readonly Attribute constitution;
     public readonly Attribute intelligence;
