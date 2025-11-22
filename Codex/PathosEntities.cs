@@ -10941,7 +10941,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -10992,7 +10992,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11043,7 +11043,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11095,7 +11095,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11147,8 +11147,8 @@ namespace Pathos
           Head: false,
           Mind: false,
           Voice: false,
-          Eyes: true,
-          Ears: true,
+          Eyes: false,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11185,7 +11185,7 @@ namespace Pathos
         E.Challenge = 505;
         E.Difficulty = 20;
         E.Frequency = 2;
-        E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // 5+ from dex = 22
+        E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +5 from dex = 22
         E.SetDiet(Diets.inediate);
         E.SetTerrain(Materials.air);
         E.Speed = Speed.S7_5;
@@ -11199,7 +11199,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11252,7 +11252,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11305,7 +11305,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11350,7 +11350,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11381,50 +11381,6 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
-      stalker = AddEntity(Kinds.elemental, null, "stalker", E =>
-      {
-        E.Glyph = Glyphs.stalker;
-        E.Level = 8;
-        E.Challenge = 65;
-        E.Difficulty = 9;
-        E.Frequency = 3;
-        E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +4 from dex = 17
-        E.SetDiet(Diets.carnivore);
-        E.Speed = Speed.S3_7;
-        E.Size = Size.Large;
-        E.Strategy = Strategy.Defend;
-        E.Weight = Weight.FromUnits(9000);
-        E.Figure.Set
-        (
-          Material: Materials.animal,
-          Head: true,
-          Mind: true,
-          Voice: true,
-          Eyes: true,
-          Ears: true,
-          Hands: true,
-          Limbs: true,
-          Feet: true,
-          Thermal: false,
-          Blood: false,
-          Mounted: false,
-          Amorphous: false
-        );
-        E.LifeAdvancement.Set(1.d8());
-        E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 16, DEX: 19, CON: 14, INT: 10, WIS: 15, CHA: 11);
-        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
-        E.SetGender(Genders.neuter);
-        E.SetGreed();
-        E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.invisibility);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +3 from strength.
-        E.Conveyance.ApplyTransient(Properties.invisibility, 1.d100() + 50);
-        E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+60));
-        E.SetCorpse(Chance.Always);
-      });
-
       water_elemental = AddEntity(Kinds.elemental, null, "water elemental", E =>
       {
         E.Glyph = Glyphs.water_elemental;
@@ -11447,7 +11403,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -11657,6 +11613,50 @@ namespace Pathos
         E.AddReaction(Chance.OneIn2, Elements.water, A => A.HealEntity(4.d4(), Modifier.Zero));
         E.Conveyance.Macro(Poisoned(Attributes.strength));
         E.SetCorpse(Chance.OneIn4);
+      });
+
+      stalker = AddEntity(Kinds.elemental, null, "stalker", E =>
+      {
+        E.Glyph = Glyphs.stalker;
+        E.Level = 8;
+        E.Challenge = 65;
+        E.Difficulty = 9;
+        E.Frequency = 3;
+        E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +4 from dex = 17
+        E.SetDiet(Diets.carnivore);
+        E.Speed = Speed.S3_7;
+        E.Size = Size.Large;
+        E.Strategy = Strategy.Defend;
+        E.Weight = Weight.FromUnits(9000);
+        E.Figure.Set
+        (
+          Material: Materials.animal,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: true,
+          Ears: true,
+          Hands: true,
+          Limbs: true,
+          Feet: true,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+        E.LifeAdvancement.Set(1.d8());
+        E.ManaAdvancement.Set(1.d4());
+        E.DefaultForm.Set(STR: 16, DEX: 19, CON: 14, INT: 10, WIS: 15, CHA: 11);
+        E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
+        E.SetGender(Genders.neuter);
+        E.SetGreed();
+        E.Chemistry.SetVulnerability();
+        E.Startup.SetSkill(Qualifications.proficient);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.invisibility);
+        E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +3 from strength.
+        E.Conveyance.ApplyTransient(Properties.invisibility, 1.d100() + 50);
+        E.Conveyance.ApplyTransient(Properties.stunned, Dice.Fixed(+60));
+        E.SetCorpse(Chance.Always);
       });
       #endregion
 
@@ -29912,7 +29912,7 @@ namespace Pathos
           Voice: true,
           Eyes: true,
           Ears: true,
-          Hands: false,
+          Hands: true,
           Limbs: true,
           Feet: false,
           Thermal: false,
