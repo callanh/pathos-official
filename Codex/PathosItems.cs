@@ -2754,14 +2754,14 @@ namespace Pathos
       panic_boots = AddArmour(ItemType.Boots, "panic boots", I =>
       {
         I.Description = null;
-        I.SetAppearance("steel boots", null);
-        I.Glyph = Glyphs.steel_boots;
+        I.SetAppearance("mithril boots", null);
+        I.Glyph = Glyphs.mithril_boots;
         I.Sonic = Sonics.armour;
         I.Series = BootsSeries;
         I.Rarity = 6;
         I.Size = Size.Small;
-        I.Weight = Weight.FromUnits(400);
-        I.Material = Materials.iron;
+        I.Weight = Weight.FromUnits(250);
+        I.Material = Materials.mithril;
         I.Essence = ArmourEssence2;
         I.Price = Gold.FromCoins(30);
         I.DefaultSanctity = Sanctities.Cursed;

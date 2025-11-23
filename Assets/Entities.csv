@@ -131,7 +131,7 @@ dog,,winter wolf,,17,1,19,426,large,animal,10000,3.7,21,attack,,12,15,12,3,12,6
 dog,,winter wolf cub,,10,2,12,185,small,animal,2500,3.7,14,attack,,10,12,10,3,10,6
 dog,,wolf,,7,3,8,54,medium,animal,10000,3.7,14,attack,,12,15,12,3,12,6
 dog,,wolverine,,13,1,15,211,medium,animal,8500,5.0,15,attack,,13,12,16,4,9,7
-dracon,dracon,dracon,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",0,0,0,0,medium,animal,20000,4.5,12,attack,BASE,10,10,10,10,10,10
+dracon,dracon,dracon,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",0,0,0,0,medium,animal,20000,4.5,13,attack,BASE,10,10,10,10,10,10
 dragon,,adult black dragon,,20,3,25,894,huge,animal,200000,5.0,23,attack,,23,14,21,14,13,17
 dragon,,adult blue dragon,,20,3,23,598,huge,animal,200000,5.0,24,attack,,25,10,23,16,15,19
 dragon,,adult deep dragon,,22,3,27,944,huge,animal,200000,5.0,26,attack,,22,11,21,16,15,20
@@ -188,7 +188,7 @@ dwarf,dwarf,dwarf lord,,14,3,16,257,medium,animal,15500,4.0,11,attack,,16,12,11,
 dwarf,dwarf,dwarf thief,,8,1,10,78,medium,animal,13000,4.2,10,attack,,14,16,8,11,8,10
 dwarf,dwarf,dwarf warrior,,11,1,13,204,medium,animal,15000,4.2,12,attack,,16,11,12,8,10,9
 dwarf,dwarf,Thorin,,20,0,22,963,medium,animal,17000,4.2,18,attack,GUARDIAN|UNIQUE,16,14,15,13,11,14
-echo,echo,echo,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",0,0,0,0,medium,animal,10000,5.0,10,attack,BASE,10,10,10,10,10,10
+echo,echo,echo,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",0,0,0,0,medium,animal,10000,5.0,8,attack,BASE,10,10,10,10,10,10
 elemental,,air elemental,,18,2,20,505,huge,air,0,7.5,17,attack,,14,20,14,6,10,6
 elemental,,animate object,,0,0,0,0,small,ether,0,5.0,10,attack,ANIMATE,11,11,11,11,11,11
 elemental,,dao,,7,1,8,55,medium,stone,19000,4.0,15,attack,,23,12,24,12,13,14
@@ -520,8 +520,8 @@ mimic,,large mimic,,10,1,11,94,large,animal,23000,2.0,13,attack,,15,10,14,8,11,1
 mimic,,large pile of killer coins,,15,1,16,232,medium,animal,14600,3.7,18,attack,,15,16,10,3,2,5
 mimic,,pile of killer coins,,6,1,7,37,small,animal,13600,2.5,11,attack,,11,14,8,3,2,4
 mimic,,small mimic,,6,2,7,46,medium,animal,3000,2.0,13,attack,,13,11,12,8,11,10
-minotaur,minotaur,minotaur,Monstrous creatures with the head and tail of a bull and the body of a man.,0,0,0,0,large,animal,45000,5.0,13,attack,BASE,10,10,10,10,10,10
-minotaur,minotaur,minotaur lord,,15,1,17,414,large,animal,45000,5.0,14,attack,,18,11,16,6,16,9
+minotaur,minotaur,minotaur,Monstrous creatures with the head and tail of a bull and the body of a man.,0,0,0,0,large,animal,45000,5.0,14,attack,BASE,10,10,10,10,10,10
+minotaur,minotaur,minotaur lord,,15,1,17,414,large,animal,45000,5.0,18,attack,,18,11,16,6,16,9
 mummy,dwarf,dwarf mummy,,13,1,14,326,medium,animal,10000,2.5,18,attack,,14,10,15,8,3,12
 mummy,elf,elf mummy,,19,1,20,437,medium,animal,9000,3.7,20,attack,,12,11,11,9,3,13
 mummy,ettin,ettin mummy,,26,1,28,953,huge,animal,80000,3.7,22,attack,,17,8,16,2,2,5
@@ -559,7 +559,7 @@ orc,orc,orc shaman,,3,1,5,23,medium,animal,15000,3.0,13,attack,,14,15,13,12,12,8
 orc,orc,orc warrior,,12,1,14,214,medium,animal,17000,3.3,10,attack,,17,12,16,7,8,6
 orc,orc,snow orc,,11,1,13,183,medium,animal,16000,3.7,11,attack,,17,12,16,8,8,10
 orc,orc,war orc,,16,1,18,626,medium,animal,19000,3.7,12,attack,,18,12,16,7,8,6
-plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,9000,4.0,10,attack,BASE,10,10,10,10,10,10
+plasmoid,plasmoid,plasmoid,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",0,0,0,0,medium,animal,9000,4.0,9,attack,BASE,10,10,10,10,10,10
 pudding,,black pudding,,20,1,23,674,large,vegetable,9000,2.0,22,attack,,16,5,16,1,6,1
 pudding,,brown pudding,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",6,1,7,45,medium,vegetable,5000,2.0,15,attack,,14,5,14,1,5,1
 pudding,,giant shoggoth,,36,1,38,1935,huge,vegetable,200000,5.0,33,attack,,24,4,22,4,8,3

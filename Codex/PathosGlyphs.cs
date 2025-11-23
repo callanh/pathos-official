@@ -111,6 +111,7 @@ namespace Pathos
       Register.Alias(Jade_Key, "jade key");
       Register.Alias(Ruby_Key, "ruby key");
       Register.Alias(Shadow_Key, "shadow key");
+      Register.Alias(mithril_boots, "steel boots");
 
       // Gates.
       Register.Alias(wooden_door_closed_horizontal, "wooden door closed");
@@ -2298,7 +2299,7 @@ namespace Pathos
     public readonly Glyph riding_boots;
     public readonly Glyph hiking_boots;
     public readonly Glyph jungle_boots;
-    public readonly Glyph steel_boots;
+    public readonly Glyph mithril_boots;
     public readonly Glyph snow_boots;
     public readonly Glyph combat_boots;
     public readonly Glyph low_boots;

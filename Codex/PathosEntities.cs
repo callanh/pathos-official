@@ -429,7 +429,7 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
+        E.Defence = new Defence(D: 8, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
         E.Size = Size.Medium;
@@ -709,7 +709,7 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
+        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
         E.Size = Size.Large;
@@ -733,11 +733,11 @@ namespace Pathos
           Amorphous: false
         );
         E.LifeAdvancement.Set(5, 1.d3());
-        E.ManaAdvancement.Set(1, 1.d(2) - 1);
+        E.ManaAdvancement.Set(0, Dice.Zero);
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
-        E.LimitForm.Set(STR: 25, DEX: 15, CON: 25, INT: 15, WIS: 15, CHA: 20);
+        E.LimitForm.Set(STR: 25, DEX: 20, CON: 25, INT: 20, WIS: 15, CHA: 15);
         E.SetGender(Genders.male, Genders.female);
-        E.Startup.SetTalent(Properties.berserking, Properties.warning, Properties.dark_vision); // TODO: charge property?
+        E.Startup.SetTalent(Properties.berserking, Properties.clairvoyance, Properties.clarity, Properties.dark_vision); // TODO: charge property?
         E.Startup.SetResistance();
         E.SetCorpse(Chance.Always);
       });
@@ -750,7 +750,7 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 12, P: +1, S: +0, B: +0);
+        E.Defence = new Defence(D: 13, P: +1, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
         E.Size = Size.Medium;
@@ -833,7 +833,7 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 10, P: +1, S: +1, B: -2);
+        E.Defence = new Defence(D: 9, P: +1, S: +1, B: -2);
         E.SetDiet(Diets.organivore);
         E.Speed = Speed.S4_0;
         E.Size = Size.Medium;
@@ -33457,7 +33457,7 @@ namespace Pathos
         E.Challenge = 414;
         E.Difficulty = 17;
         E.Frequency = 1;
-        E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
+        E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
         E.Size = Size.Large;
