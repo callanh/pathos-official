@@ -744,7 +744,7 @@ namespace Pathos
 
       dracon = AddBaseEntity(Kinds.dracon, Races.dracon, "dracon", E =>
       {
-        E.Description = "Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.";
+        E.Description = "Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.";
         E.Glyph = Glyphs.dracon;
         E.Level = 0;
         E.Challenge = 0;

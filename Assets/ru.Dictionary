@@ -12,7 +12,7 @@ AfflictionName,rabies,бешенство
 AfflictionName,reflux,изжога
 AfflictionName,sliming,ослизнение
 AfflictionName,worms,черви
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,РОГА
 AnatomyAbsenceText,MINDLESS,НЕМЫСЛЯЩИЙ
 AnatomyAbsenceText,NO BLOOD,НЕТ КРОВИ
 AnatomyAbsenceText,NO EARS,НЕТ УШЕЙ
@@ -32,7 +32,7 @@ AnatomyName,eyes,глаза
 AnatomyName,feet,ступни
 AnatomyName,hands,руки
 AnatomyName,head,голова
-AnatomyName,horns,
+AnatomyName,horns,рога
 AnatomyName,limbs,конечности
 AnatomyName,mind,разум
 AnatomyName,mounted,ездовой
@@ -1015,9 +1015,9 @@ EntityDescription,"Beautiful, otherworldly beings characterised by their signatu
 EntityDescription,Beware this clockwork machine of war.,Бойтесь этой заводной машины войны.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"Прямоходящие механические автоматоны с с практически неограниченным исскуственным интеллектом. Питаются от двигателя с расплавленным сердечником, который требует постоянного притока металла для функционирования и уязвим к воде."
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Могущественные духи природы, связанные с этими волшебными существами, подпитывают их шалости. Они коренастые, с мохнатой нижней частью тела, раздвоенными копытами козла и загнутыми рогами барана. Грубые и умные, они весело проводят шалости с выпивкой, танцами и драками."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Внушительные и массивные, они похожи на гуманоидных драконов с мордой, чешуйчатым покровом и рабочими крыльями."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Крупные, плотоядные рептилии, чьи дикие предки господствовали в мире задолго до рождения цивилизации. Это страшные хищники, способные прыгать на внушительные расстояния и отражать множество атак своими толстыми чешуйчатыми шкурами."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Чудовищные существа с головой и хвостом быка и телом человека.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Извращённые существа многих аберраций, но всегда с багровой кожей и рогами. Само их присутствие заставляет других действовать в своих самых мрачных, самых жестоких желаниях."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Ненасытный, хищный вид гигантских гуманоидов с тяжким горбом, заставляющий руки волочиться по земле. Несмотря на неуклюжий внешний вид, они мощно сложены и имеют печально известную способность быстро оправиться от любой раны на своей резиноподобной шкуре."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Изменяющие форму демоны, которые добиваются успехов благодаря своим обманчивым талантам."
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Доктор Франкенштейн
 EntityName,dog,собака
 EntityName,doppelgänger,доппельгангер
 EntityName,dracolich,драколич
-EntityName,dracon,
+EntityName,dracon,драконоид
 EntityName,dragon king,царь драконов
 EntityName,dretch,дретч
 EntityName,drow,дроу
@@ -1464,7 +1464,7 @@ EntityName,migo queen,ми-го-королева
 EntityName,migo warrior,ми-го-воин
 EntityName,mind flayer,свежеватель разума
 EntityName,minotaur,минотавр
-EntityName,minotaur lord,
+EntityName,minotaur lord,минотавр-лорд
 EntityName,mist wolf,туманный волк
 EntityName,mithril golem,мифрильный голем
 EntityName,mobat,мотопырь
@@ -2945,7 +2945,7 @@ KindName,changeling,перевёртыши
 KindName,demon,демоны
 KindName,devourer,поглотители
 KindName,dog,псовые
-KindName,dracon,
+KindName,dracon,драконоиды
 KindName,dragon,драконы
 KindName,dwarf,дварфы
 KindName,echo,подражатели
@@ -4262,9 +4262,9 @@ RaceName,changeling//non-binary,перевёртыш
 RaceName,demon//female,демон
 RaceName,demon//male,демон
 RaceName,demon//non-binary,демон
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,драконоид
+RaceName,dracon//male,драконоид
+RaceName,dracon//non-binary,драконоид
 RaceName,dwarf//female,дварф
 RaceName,dwarf//male,дварф
 RaceName,dwarf//non-binary,дварф

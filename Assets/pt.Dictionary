@@ -12,7 +12,7 @@ AfflictionName,rabies,raiva
 AfflictionName,reflux,refluxo
 AfflictionName,sliming,lodo
 AfflictionName,worms,lombrigas
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,CHIFRES
 AnatomyAbsenceText,MINDLESS,DESCUIDADO
 AnatomyAbsenceText,NO BLOOD,SEM SANGUE
 AnatomyAbsenceText,NO EARS,SEM ORELHAS
@@ -32,7 +32,7 @@ AnatomyName,eyes,olhos
 AnatomyName,feet,pés
 AnatomyName,hands,mãos
 AnatomyName,head,cabeça
-AnatomyName,horns,
+AnatomyName,horns,chifres
 AnatomyName,limbs,membros
 AnatomyName,mind,mente
 AnatomyName,mounted,montado
@@ -218,7 +218,7 @@ AppearanceName,metal canister,lata de metal
 AppearanceName,metal pineapple,abacaxi de metal
 AppearanceName,metal slug,cartucho de metal
 AppearanceName,milky potion,poção leitosa
-AppearanceName,mithril boots,botas de aço
+AppearanceName,mithril boots,botas de mithril
 AppearanceName,mithril ring,anel de mithril
 AppearanceName,mithril slug,cartucho de mithril
 AppearanceName,mithril staff,cajado de mithril
@@ -1013,11 +1013,11 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Seres astrais que são recipientes para o espírito indomável de aventureiros que sucumbiram . Não tendo motivações próprias, eles estão felizes em permitir a possessão; para o aventureiro falecido, é uma segunda chance para vingança ou redenção . Nascidos da matéria astral, eles são ligeiramente fracos, translúcidos e conseguem se mover livremente através de obstáculos físicos."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Seres belos e celestiais, dotados de características areólas e asas emplumadas. Fortemente ligados à disputa entre o bem e o mal, podem sentir a natureza divina de tudo que tocam."
 EntityDescription,Beware this clockwork machine of war.,Cuidado com essa engenhosa máquina de guerra.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,Autômatos mecânicos bípedes com inteligência artificial praticamente ilimitada. Eles são alimentados por um motor de núcleo derretido que requer suprimento constante de metais brutos e é suscetível a danos por água.
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas féericas ligadas por poderosos espíritos da natureza para alimentar suas travessuras . Eles são atarracados com corpos inferiores peludos, cascos fendidos de cabra e chifres enrolados de carneiro . Irreverentes e espertos, eles alegremente conduzem aventuras hedonísticas de bebida , dança e luta ."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with reptilian features including a scaly hide, snout and claws.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Imponentes e robustos, eles lembram dragões humanoides com focinho, pele escamosa e asas funcionais."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos carnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas peles escamosas."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Criaturas monstruosas com a cabeça e cauda de um touro e o corpo de um homem.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas que manifestam-se em muitas aberrações, mas sempre com pele rubra e terríveis chifres. Sua mera presença desperta em outrem os impulsos mais sombrios e violentos."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espécie voraz e predatória de gigantes humanóides, eles são extremamente corcundas, o que faz com que a parte de trás das suas mãos se arraste no chão . Apesar da aparência física estranha, eles são extremamente fortes e famosos por sua habilidade de se recuperar rapidamente de qualquer ferimento causado a sua pele extremamente resistente ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Demônios que mudam de forma, que prosperam em seus talentos enganosos."
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Doutor Frankenstein
 EntityName,dog,cachorro
 EntityName,doppelgänger,doppelgänger
 EntityName,dracolich,dragolich
-EntityName,dracon,
+EntityName,dracon,draconato
 EntityName,dragon king,rei dragão
 EntityName,dretch,dretch
 EntityName,drow,drow
@@ -1464,7 +1464,7 @@ EntityName,migo queen,rainha migo
 EntityName,migo warrior,guerreiro migo
 EntityName,mind flayer,esfolador de mentes
 EntityName,minotaur,minotauro
-EntityName,minotaur lord,
+EntityName,minotaur lord,lorde minotauro
 EntityName,mist wolf,lobo da neblina
 EntityName,mithril golem,golem de mithril
 EntityName,mobat,momorcego
@@ -1560,7 +1560,7 @@ EntityName,red naga,naga vermelha
 EntityName,red naga hatchling,naga vermelha bebê
 EntityName,rhaumbusun,rhaumbusun
 EntityName,rhumbat,rhumorcego
-EntityName,robot,
+EntityName,robot,robô
 EntityName,rock kobold,kobold de rocha
 EntityName,rock mole,toupeira de rocha
 EntityName,rock piercer,perfurador de rocha
@@ -2945,7 +2945,7 @@ KindName,changeling,trocado
 KindName,demon,demônio
 KindName,devourer,devorador
 KindName,dog,cachorro
-KindName,dracon,
+KindName,dracon,draconato
 KindName,dragon,dragão
 KindName,dwarf,anão
 KindName,echo,eco
@@ -2985,7 +2985,7 @@ KindName,orc,orc
 KindName,plasmoid,plasmoide
 KindName,pudding,pudim
 KindName,quadruped,quadrúpede
-KindName,robot,
+KindName,robot,robô
 KindName,rodent,roedor
 KindName,satyr,sátiro
 KindName,snake,cobra
@@ -4262,9 +4262,9 @@ RaceName,changeling//non-binary,multimorfe
 RaceName,demon//female,demônio
 RaceName,demon//male,demônio
 RaceName,demon//non-binary,demônio
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,draconata
+RaceName,dracon//male,draconato
+RaceName,dracon//non-binary,draconato
 RaceName,dwarf//female,anã
 RaceName,dwarf//male,anão
 RaceName,dwarf//non-binary,anão
@@ -4322,9 +4322,9 @@ RaceName,orc//non-binary,orc
 RaceName,plasmoid//female,plasmoide
 RaceName,plasmoid//male,plasmoide
 RaceName,plasmoid//non-binary,plasmoide
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,robô
+RaceName,robot//male,robô
+RaceName,robot//non-binary,robô
 RaceName,satyr//female,sátira
 RaceName,satyr//male,sátiro
 RaceName,satyr//non-binary,sátire
