@@ -17,7 +17,7 @@ namespace Pathos
 
       var Gen = new SPDLevelGenerator();
 
-      SPDDebug.maps = new Inv.DistinctList<SPDMap>();
+      SPDDebug.maps = [];
       SPDDebug.currentmap = null;
       Gen.AssignMaps();
       foreach (var map in SPDDebug.maps)
@@ -813,7 +813,16 @@ namespace Pathos
               SPDDebug.generator.PlacePassage(pointSquare, SPDDebug.codex.Portals.stone_staircase_up, null);
             else
               SPDDebug.generator.PlacePassage(pointSquare, SPDDebug.codex.Portals.stone_staircase_up, SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y]);
-            if (SPDDebug.currentmap.depth == 25) SPDDebug.generator.PlacePassage(SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y], SPDDebug.codex.Portals.stone_staircase_down, SPDDebug.currentmap.pathosMap[SPDDebug.currentmap.entrance.x, SPDDebug.currentmap.entrance.y]);
+            if (SPDDebug.currentmap.depth == 25)
+            {
+              var DownSquare = SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y];
+
+              // NOTE: workaround to prevent generating a staircase on fountain.
+              if (DownSquare.Fixture != null)
+                SPDDebug.generator.RemoveFixture(DownSquare);
+
+              SPDDebug.generator.PlacePassage(DownSquare, SPDDebug.codex.Portals.stone_staircase_down, SPDDebug.currentmap.pathosMap[SPDDebug.currentmap.entrance.x, SPDDebug.currentmap.entrance.y]);
+            }
             break;
           case SPDMapPoint.EXIT:
             {
