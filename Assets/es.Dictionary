@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},levantar muertos {Per
 FormatText,range {Dice},rango {Dice}
 FormatText,RANKED #{RankNumber},RANGO #{RankNumber}
 FormatText,remove transient {PropertyNames},remover efecto transitorio {PropertyNames}
-FormatText,replenish life from {Percent}%,regenera vida en {Percent}%
-FormatText,replenish mana from {Percent}%,regenera mana en {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName}, {CharacterDescription} ha resucitado"
 FormatText,retaliate {Chance} {AttackType},vengarse {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},vengarse {Chance} en la muerte {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,RENOMBRAR PERSONAJE
 LiteralText,RENAME ITEM,RENOMBRAR ÍTEM
 LiteralText,RENAME MAP,RENOMBRAR MAPA
 LiteralText,repel,repeler
+LiteralText,replenish life,regenera vida
+LiteralText,replenish mana,regenera mana
 LiteralText,replica,réplica
 LiteralText,replicate item,replicar recurso
 LiteralText,requires the skill to pick locks,requiere la habilidad de abrir cerraduras

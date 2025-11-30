@@ -88,8 +88,8 @@ namespace Pathos
         CodexRecruiter.Codex = null;
       }
 
-      Manifest.Levelling.Set(Sonics.gain_level, Sonics.lose_level, new int[40]
-      {
+      Manifest.Levelling.Set(Sonics.gain_level, Sonics.lose_level,
+      [
         /* 01 */ 0,
         /* 02 */ 25,
         /* 03 */ 50,
@@ -130,7 +130,7 @@ namespace Pathos
         /* 38 */ 1800000,
         /* 39 */ 1900000,
         /* 40 */ 2000000
-      });
+      ]);
 
       Manifest.Blinking.Set(Properties.blinking, new Requirement(Attributes.intelligence, 3), Sonics.blink, NutritionCost: 5);
 
@@ -158,7 +158,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
+        A.ReplenishEntity(Life: true, Mana: true);
       });
       Manifest.Praying.AddPrayer(Standings.glorious, A =>
       {
@@ -167,7 +167,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
+        A.ReplenishEntity(Life: true, Mana: true);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
       });
       Manifest.Praying.AddPrayer(Standings.exalted, A =>
@@ -177,7 +177,7 @@ namespace Pathos
         A.UnpunishEntity();
         A.UnafflictEntity();
         A.WhenSourceNotHasProperty(Properties.polymorph_control, T => T.UnpolymorphEntity());
-        A.ReplenishEntity(LifeThreshold: 0.50F, ManaThreshold: 0.50F);
+        A.ReplenishEntity(Life: true, Mana: true);
         A.RemoveTransient(Properties.blindness, Properties.deafness, Properties.hallucination, Properties.rage, Properties.sickness);
         A.RemoveCurse(Dice.One, Sanctities.Uncursed); // remove one curse.
         A.RaiseDeadEntity(100, CorruptProperty: null, CorruptDice: Dice.Zero, LoyalOnly: true); // raise one loyal companion from the dead.

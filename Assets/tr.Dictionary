@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},ölüyü canlandırma
 FormatText,range {Dice},menzil {Dice}
 FormatText,RANKED #{RankNumber},#{RankNumber} DERECESİNE ULAŞTIN
 FormatText,remove transient {PropertyNames},geçici etkileri kaldır {PropertyNames}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName} tekrar canlandırıldı, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},öç al {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},öç al {Chance} ölümde {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,
 LiteralText,RENAME ITEM,
 LiteralText,RENAME MAP,
 LiteralText,repel,
+LiteralText,replenish life,
+LiteralText,replenish mana,
 LiteralText,replica,taklit
 LiteralText,replicate item,varlığı kopyala
 LiteralText,requires the skill to pick locks,kilit çözmek için beceriye ihtiyaç var

@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},resuscitare morti {Pe
 FormatText,range {Dice},range {Dice}
 FormatText,RANKED #{RankNumber},CLASSIFICATO #{RankNumber}
 FormatText,remove transient {PropertyNames},rimuovi transitorio {PropertyNames}
-FormatText,replenish life from {Percent}%,ripristina vita da {Percent}%
-FormatText,replenish mana from {Percent}%,ripristina mana da {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Resuscitato {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},vendicarsi {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},vendicarsi {Chance} alla morte {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,RINOMINA PERSONAGGIO
 LiteralText,RENAME ITEM,RINOMINA OGGETTO
 LiteralText,RENAME MAP,RINOMINA MAPPA
 LiteralText,repel,respingi
+LiteralText,replenish life,ripristina vita
+LiteralText,replenish mana,ripristina mana
 LiteralText,replica,replica
 LiteralText,replicate item,replicare risorsa
 LiteralText,requires the skill to pick locks,richiede l'abilità di scassinare le serrature

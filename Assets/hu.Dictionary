@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},halott-támasztás {P
 FormatText,range {Dice},hatótávolság {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}. helyezett
 FormatText,remove transient {PropertyNames},átmeneti hatás eltávolítása {PropertyNames}
-FormatText,replenish life from {Percent}%,
-FormatText,replenish mana from {Percent}%,
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Feltámasztott {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} esély visszaütésre {AttackType}támadás esetén
 FormatText,retaliate {Chance} on death {AttackType},{Chance} esély visszaütésre {AttackType}támadás általi halál esetén
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,KARAKTER ÁTNEVEZÉSE
 LiteralText,RENAME ITEM,TÁRGY ÁTNEVEZÉSE
 LiteralText,RENAME MAP,TÉRKÉP ÁTNEVEZÉSE
 LiteralText,repel,visszaver
+LiteralText,replenish life,
+LiteralText,replenish mana,
 LiteralText,replica,másolat
 LiteralText,replicate item,eszköz lemásolása
 LiteralText,requires the skill to pick locks,szükség van hozzá a zártörés képességre

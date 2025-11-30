@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},부활 {Percent}% {Lo
 FormatText,range {Dice},사거리 {Dice}
 FormatText,RANKED #{RankNumber},{RankNumber}위 기록
 FormatText,remove transient {PropertyNames},일시적인 효과 제거 {PropertyNames}
-FormatText,replenish life from {Percent}%,{Percent}%만큼 체력 회복
-FormatText,replenish mana from {Percent}%,{Percent}%만큼 마나 회복
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","{CharacterName}, {CharacterDescription}이(가) 부활했다."
 FormatText,retaliate {Chance} {AttackType},"{AttackType}일 시, {Chance}(으)로 되돌려줌"
 FormatText,retaliate {Chance} on death {AttackType},{AttackType}로 사망 시 {Chance}(으)로 되돌려줌
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,캐릭터 이름 변경
 LiteralText,RENAME ITEM,아이템 이름 변경
 LiteralText,RENAME MAP,지도 이름 변경
 LiteralText,repel,밀쳐내기
+LiteralText,replenish life,체력 회복
+LiteralText,replenish mana,마나 회복
 LiteralText,replica,복제품
 LiteralText,replicate item,아이템 복제
 LiteralText,requires the skill to pick locks,잠금 해제를 위한 스킬이 요구됨

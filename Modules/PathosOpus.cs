@@ -177,8 +177,8 @@ namespace Pathos
       this.EvilCharacterList = [];
       this.UniqueEntityList = [];
 
-      this.OccupyList = new[]
-      {
+      this.OccupyList =
+      [
         new OpusOccupy(Codex.Kinds.dwarf),
         new OpusOccupy(Codex.Kinds.elf),
         new OpusOccupy(Codex.Kinds.fairy),
@@ -193,20 +193,20 @@ namespace Pathos
         new OpusOccupy(Codex.Kinds.orc), // contains goblins/hobgoblins.
         new OpusOccupy(Codex.Kinds.troll),
         new OpusOccupy(Codex.Kinds.vampire),
-      };
+      ];
 
 #if DEBUG
       //for (var Difficulty = 1; Difficulty <= 40; Difficulty++)
       //  Debug.WriteLine($"Occupy {Difficulty:D2} = " + GetOccupy(Difficulty).Select(O => O.Kind.Name).OrderBy().AsSeparatedText(", "));
 #endif
 
-      this.CornerList = new[]
-      {
-        new OpusCorner { Closed = new [] { Direction.NorthWest, Direction.North, Direction.West }, Open = new [] { Direction.South, Direction.SouthEast, Direction.East } },
-        new OpusCorner { Closed = new [] { Direction.NorthEast, Direction.North, Direction.East }, Open = new [] { Direction.South, Direction.SouthWest, Direction.West } },
-        new OpusCorner { Closed = new [] { Direction.SouthWest, Direction.South, Direction.West }, Open = new [] { Direction.North, Direction.NorthEast, Direction.East } },
-        new OpusCorner { Closed = new [] { Direction.SouthEast, Direction.South, Direction.East }, Open = new [] { Direction.North, Direction.NorthWest, Direction.West } },
-      };
+      this.CornerList =
+      [
+        new OpusCorner { Closed = [Direction.NorthWest, Direction.North, Direction.West], Open = [Direction.South, Direction.SouthEast, Direction.East] },
+        new OpusCorner { Closed = [Direction.NorthEast, Direction.North, Direction.East], Open = [Direction.South, Direction.SouthWest, Direction.West] },
+        new OpusCorner { Closed = [Direction.SouthWest, Direction.South, Direction.West], Open = [Direction.North, Direction.NorthEast, Direction.East] },
+        new OpusCorner { Closed = [Direction.SouthEast, Direction.South, Direction.East], Open = [Direction.North, Direction.NorthWest, Direction.West] },
+      ];
 
       this.Ambush = new AmbushBuilder(this);
       this.Cage = new CageBuilder(this);
@@ -237,7 +237,7 @@ namespace Pathos
       this.Vendor = new VendorBuilder(this);
       this.Zoo = new ZooBuilder(this);
 
-      this.BuildRecordDictionary = new Dictionary<string, BuildRecord>();
+      this.BuildRecordDictionary = [];
     }
 
     public void Make()
@@ -1268,7 +1268,7 @@ namespace Pathos
       internal BuildRecord(string Name)
       {
         this.Name = Name;
-        this.ElapsedMSList = new List<long>();
+        this.ElapsedMSList = [];
       }
 
       public readonly string Name;
@@ -1279,7 +1279,7 @@ namespace Pathos
     {
       public Builder(OpusMaker Maker)
       {
-        this.Name = GetType().Name.ExcludeAfter("Builder");
+        this.Name = GetType().Name.ExcludeAfter("Builder", StringComparison.InvariantCultureIgnoreCase);
         this.Maker = Maker;
         this.Codex = Maker.Codex;
         this.Generator = Maker.Generator;
@@ -2931,7 +2931,7 @@ namespace Pathos
                 if (SentryCharacter != null)
                 {
                   // walk the chamber tunnel.
-                  Generator.ResidentRoute(SentryCharacter, new[] { SentrySquare, ChamberEntranceSquare }, 0);
+                  Generator.ResidentRoute(SentryCharacter, [SentrySquare, ChamberEntranceSquare], 0);
 
                   // remove any darts so they will only use their musical instrument at range.
                   SentryCharacter.Inventory.RemoveAllAssets();
@@ -3079,7 +3079,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeChicken,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.chicken }
+            EntityList = [Codex.Entities.chicken]
           },
           new FarmVariant
           {
@@ -3087,7 +3087,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeSheep,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.sheep, Codex.Entities.lamb }
+            EntityList = [Codex.Entities.sheep, Codex.Entities.lamb]
           },
           new FarmVariant
           {
@@ -3095,7 +3095,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeGoat,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.goat }
+            EntityList = [Codex.Entities.goat]
           },
           new FarmVariant
           {
@@ -3103,7 +3103,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangePig,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.pig }
+            EntityList = [Codex.Entities.pig]
           },
           new FarmVariant
           {
@@ -3111,7 +3111,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeHorse,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.horse, Codex.Entities.pony, Codex.Entities.warhorse }
+            EntityList = [Codex.Entities.horse, Codex.Entities.pony, Codex.Entities.warhorse]
           },
           new FarmVariant
           {
@@ -3119,7 +3119,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeCow,
             FieldGround = Codex.Grounds.grass,
             FenceGround = Codex.Grounds.stone_path,
-            EntityList = new[] { Codex.Entities.cow, Codex.Entities.bull }
+            EntityList = [Codex.Entities.cow, Codex.Entities.bull]
           },
           new FarmVariant
           {
@@ -3127,7 +3127,7 @@ namespace Pathos
             StrangeName = OpusTerms.StrangeSeal,
             FieldGround = Codex.Grounds.water,
             FenceGround = Codex.Grounds.sand,
-            EntityList = new[] { Codex.Entities.seal }
+            EntityList = [Codex.Entities.seal]
           }
         );
       }
@@ -3980,7 +3980,7 @@ namespace Pathos
           MainBarrier = Codex.Barriers.stone_wall,
           MainGround = Codex.Grounds.stone_floor,
           MainGate = Codex.Gates.wooden_door,
-          FocusGroundArray = new Ground[] { Codex.Grounds.wooden_floor },
+          FocusGroundArray = [Codex.Grounds.wooden_floor],
           MinimumDifficulty = Section.MinimumDifficulty,
           MaximumDifficulty = Section.MaximumDifficulty,
           CriticalDistance = 1,
@@ -4038,7 +4038,7 @@ namespace Pathos
               MainBarrier = Codex.Barriers.stone_wall,
               MainGround = Codex.Grounds.stone_floor,
               MainGate = Codex.Gates.wooden_door,
-              FocusGroundArray = new Ground[] { Codex.Grounds.wooden_floor, Codex.Grounds.marble_floor },
+              FocusGroundArray = [Codex.Grounds.wooden_floor, Codex.Grounds.marble_floor],
               MinimumDifficulty = Generator.MinimumDifficulty(BelowMap),
               MaximumDifficulty = Generator.MaximumDifficulty(BelowMap),
               CriticalDistance = 8,
@@ -4954,7 +4954,7 @@ namespace Pathos
         var MineEntityArray = Codex.Entities.List.Where(E => E.IsEncounter &&
           (
           E.Attacks.Count == 0 ||
-          E.Startup.Talents.ContainsAny(new[] { Codex.Properties.tunnelling, Codex.Properties.phasing })
+          E.Startup.Talents.ContainsAny([Codex.Properties.tunnelling, Codex.Properties.phasing])
           )).ToArray();
 
         // occupying the surface of the mine.
@@ -5265,7 +5265,7 @@ namespace Pathos
             LairName = OpusTerms.AntLair,
             Ground = Codex.Grounds.dirt,
             Horde = Codex.Hordes.ant,
-            EntityList = new[] { Codex.Entities.giant_ant, Codex.Entities.snow_ant, Codex.Entities.fire_ant, Codex.Entities.soldier_ant, },
+            EntityList = [Codex.Entities.giant_ant, Codex.Entities.snow_ant, Codex.Entities.fire_ant, Codex.Entities.soldier_ant,],
             Device = Codex.Devices.ant_hole,
             Boss = Codex.Entities.Girtab
           },
@@ -5275,7 +5275,7 @@ namespace Pathos
             Name = OpusTerms.BeetleNest,
             Ground = Codex.Grounds.dirt,
             Horde = Codex.Hordes.beetle,
-            EntityList = new[] { Codex.Entities.giant_cockroach, Codex.Entities.giant_beetle, Codex.Entities.spitting_beetle, Codex.Entities.killer_beetle },
+            EntityList = [Codex.Entities.giant_cockroach, Codex.Entities.giant_beetle, Codex.Entities.spitting_beetle, Codex.Entities.killer_beetle],
             Device = Codex.Devices.grease_trap,
             Boss = Codex.Entities.???
           }
@@ -5287,7 +5287,7 @@ namespace Pathos
             LairName = OpusTerms.ScorpionLair,
             Ground = Codex.Grounds.dirt,
             Horde = Codex.Hordes.scorpion,
-            EntityList = new[] { Codex.Entities.giant_scorpion, Codex.Entities.scorpion },
+            EntityList = [Codex.Entities.giant_scorpion, Codex.Entities.scorpion],
             Device = Codex.Devices.pit,
             Boss = Codex.Entities.Scorpius
           },
@@ -5298,7 +5298,7 @@ namespace Pathos
             LairName = OpusTerms.SpiderLair,
             Ground = Codex.Grounds.dirt,
             Horde = Codex.Hordes.spider,
-            EntityList = new[] { Codex.Entities.giant_spider, Codex.Entities.cave_spider, Codex.Entities.barking_spider, Codex.Entities.phase_spider, Codex.Entities.recluse_spider },
+            EntityList = [Codex.Entities.giant_spider, Codex.Entities.cave_spider, Codex.Entities.barking_spider, Codex.Entities.phase_spider, Codex.Entities.recluse_spider],
             Device = Codex.Devices.web,
             Boss = Codex.Entities.Lolth
           }
@@ -6100,7 +6100,7 @@ namespace Pathos
         foreach (var UndergroundSquare in UndergroundMap.GetSquares(PitRegion).Where(S => S.Floor?.Ground == PitVariant.Ground))
         {
           if (UndergroundSquare.Character == null && Chance.OneIn7.Hit())
-            Generator.PlaceSpecificCharacter(UndergroundSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, new[] { PitVariant.Kind });
+            Generator.PlaceSpecificCharacter(UndergroundSquare, Section.MinimumDifficulty, Section.MaximumDifficulty, [PitVariant.Kind]);
         }
 
         // TODO:

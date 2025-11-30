@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},erwecke Tote {Percent
 FormatText,range {Dice},Reichweite {Dice}
 FormatText,RANKED #{RankNumber},PLATZIERUNG #{RankNumber}
 FormatText,remove transient {PropertyNames},hebe Zustände auf {PropertyNames}
-FormatText,replenish life from {Percent}%,Gesundheit von {Percent}% widerherstellen
-FormatText,replenish mana from {Percent}%,Mana von {Percent}% widerherstellen
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Auferstanden {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},Vergeltung {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},Vergeltung {Chance} zum Tode {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,CHARAKTER UMBENENNEN
 LiteralText,RENAME ITEM,GEGENSTAND UMBENENNEN
 LiteralText,RENAME MAP,KARTE UMBENENNEN
 LiteralText,repel,abstoßen
+LiteralText,replenish life,Gesundheit widerherstellen
+LiteralText,replenish mana,Mana widerherstellen
 LiteralText,replica,Nachbildung
 LiteralText,replicate item,bilde Gegenstand nach
 LiteralText,requires the skill to pick locks,erfordert die Fähigkeit Schlösser zu knacken

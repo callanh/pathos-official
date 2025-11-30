@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},résurrection {Percen
 FormatText,range {Dice},portée {Dice}
 FormatText,RANKED #{RankNumber},RANG #{RankNumber}
 FormatText,remove transient {PropertyNames},supprime le temporaire {PropertyNames}
-FormatText,replenish life from {Percent}%,reconstituer la vie de {Percent}%
-FormatText,replenish mana from {Percent}%,reconstituer le mana de {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Ressuscité {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},répliquer {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},répliquer {Chance} à la mort {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,RENOMMER LE PERSONNAGE
 LiteralText,RENAME ITEM,RENOMMER L'OBJET
 LiteralText,RENAME MAP,RENOMMER LA CARTE
 LiteralText,repel,rappeler
+LiteralText,replenish life,reconstituer la vie
+LiteralText,replenish mana,reconstituer le mana
 LiteralText,replica,réplique
 LiteralText,replicate item,reproduit la possession
 LiteralText,requires the skill to pick locks,requiert la compétence de crochetage des serrures

@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},{Percent}%の確率�
 FormatText,range {Dice},射程{Dice}
 FormatText,RANKED #{RankNumber},名誉の殿堂で{RankNumber}位に入りました！
 FormatText,remove transient {PropertyNames},{PropertyNames}の状態を解除
-FormatText,replenish life from {Percent}%,ライフが{Percent}%以下の場合に全回復
-FormatText,replenish mana from {Percent}%,マナが{Percent}%以下の場合に全回復
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}",{CharacterName}、{CharacterDescription}は復活した
 FormatText,retaliate {Chance} {AttackType},{Chance} 反撃 {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},死亡時に反撃 {Chance}{AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,キャラクター名を変更
 LiteralText,RENAME ITEM,アイテム名を変更
 LiteralText,RENAME MAP,マップの名称を変更
 LiteralText,repel,後退させる
+LiteralText,replenish life,ライフが全回復
+LiteralText,replenish mana,マナが全回復
 LiteralText,replica,複製の
 LiteralText,replicate item,アイテムを複製
 LiteralText,requires the skill to pick locks,閉開錠のスキルが必要

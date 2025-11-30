@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},wskrzeszać zmarłych
 FormatText,range {Dice},zakres {Dice}
 FormatText,RANKED #{RankNumber},Miejsce #{RankNumber}
 FormatText,remove transient {PropertyNames},usunąć stan przejściowy {PropertyNames}
-FormatText,replenish life from {Percent}%,uzupełnij życie z {Percent}%
-FormatText,replenish mana from {Percent}%,uzupełnij manę z {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Zmartwychwstały {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},odwet {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},odwet {Chance} za śmierć {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,ZMIENIĆ NAZWĘ POSTACI
 LiteralText,RENAME ITEM,ZMIANA NAZWY ELEMENTU
 LiteralText,RENAME MAP,ZMIEŃ NAZWĘ MAPY
 LiteralText,repel,repel
+LiteralText,replenish life,uzupełnij życie
+LiteralText,replenish mana,uzupełnij manę
 LiteralText,replica,replika
 LiteralText,replicate item,replikować majątek
 LiteralText,requires the skill to pick locks,wymaga umiejętności otwierania zamków

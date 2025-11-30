@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},tái sinh {Percent}% 
 FormatText,range {Dice},tầm xa {Dice}
 FormatText,RANKED #{RankNumber},XẾP HẠNG #{RankNumber}
 FormatText,remove transient {PropertyNames},loại bỏ hiệu ứng tạm thời {PropertyNames}
-FormatText,replenish life from {Percent}%,bổ sung máu từ {Percent}%
-FormatText,replenish mana from {Percent}%,bổ sung mana từ {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Đã hồi sinh {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} khả năng {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},{Chance} khả năng khi chết {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,ĐẶT TÊN NHÂN VẬT
 LiteralText,RENAME ITEM,ĐẶT TÊN VẬT PHẨM
 LiteralText,RENAME MAP,ĐẶT TÊN BẢN ĐỒ
 LiteralText,repel,phản lại
+LiteralText,replenish life,bổ sung máu
+LiteralText,replenish mana,bổ sung mana
 LiteralText,replica,bản sao
 LiteralText,replicate item,tạo bản sao của vật
 LiteralText,requires the skill to pick locks,cần có kĩ năng để phá khóa

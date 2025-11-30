@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},ressuscitar morto {Pe
 FormatText,range {Dice},alcance {Dice}
 FormatText,RANKED #{RankNumber},RANQUEOU #{RankNumber}
 FormatText,remove transient {PropertyNames},remover efeito transitório {PropertyNames}
-FormatText,replenish life from {Percent}%,reencher vida dos {Percent}%
-FormatText,replenish mana from {Percent}%,reencher mana dos {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","<{CharacterName} foi ressuscitado>, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},retaliar {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},retaliar {Chance} quando morre {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,RENOMEAR PERSONAGEM
 LiteralText,RENAME ITEM,RENOMEAR ITEM
 LiteralText,RENAME MAP,RENOMEAR MAPA
 LiteralText,repel,repelir
+LiteralText,replenish life,reencher vida
+LiteralText,replenish mana,reencher mana
 LiteralText,replica,réplica
 LiteralText,replicate item,replicar espólio
 LiteralText,requires the skill to pick locks,requer a habilidade de arrombar travas

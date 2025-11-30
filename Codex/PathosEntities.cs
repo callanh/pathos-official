@@ -4614,7 +4614,7 @@ namespace Pathos
         E.Weight = Weight.FromUnits(19000);
         E.Figure.Set
         (
-          Material: Materials.animal,
+          Material: Materials.bone,
           Head: true,
           Mind: true,
           Voice: true,
@@ -4624,7 +4624,7 @@ namespace Pathos
           Limbs: true,
           Feet: true,
           Thermal: true,
-          Blood: true,
+          Blood: false,
           Mounted: false,
           Amorphous: false
         );
@@ -4646,9 +4646,7 @@ namespace Pathos
         {
           K.Apply.WhenChance(Chance.OneIn4, T => T.Macro(MinorPoison(Attributes.strength)));
         });
-        E.Conveyance.ApplyTransient(Properties.rage, 4.d6());
-        E.Conveyance.Macro(Poisoned(Attributes.strength));
-        E.SetCorpse(Chance.OneIn4);
+        E.SetCorpse(Chance.Never);
       });
 
       chasme = AddEntity(Kinds.demon, null, "chasme", E =>
@@ -17691,7 +17689,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.curing);
         E.Startup.AddGrimoire(Dice.One, Spells.restoration);
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d5()); // +2 from str.
-        E.Conveyance.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 0.00F); // replenish full life.
+        E.Conveyance.ReplenishEntity(Life: true, Mana: false); // replenish full life.
         E.Conveyance.MajorResistance(Elements.poison);
         E.SetCorpse(Chance.OneIn3);
       });

@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},復活死屍 {Percent
 FormatText,range {Dice},範圍 {Dice}
 FormatText,RANKED #{RankNumber},RANKED #{RankNumber}
 FormatText,remove transient {PropertyNames},去除短期狀態 {PropertyNames}
-FormatText,replenish life from {Percent}%,從{Percent}%起補滿生命值
-FormatText,replenish mana from {Percent}%,從{Percent}%起補滿魔法值
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","復活了 {CharacterName} , {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},復仇 {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},復仇 {Chance} 死亡時 {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,重命名角色
 LiteralText,RENAME ITEM,重命名物品
 LiteralText,RENAME MAP,重命名地圖
 LiteralText,repel,排斥
+LiteralText,replenish life,起補滿生命值
+LiteralText,replenish mana,起補滿魔法值
 LiteralText,replica,複製品
 LiteralText,replicate item,複製物件
 LiteralText,requires the skill to pick locks,需要開鎖技能

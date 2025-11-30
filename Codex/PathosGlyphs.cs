@@ -819,6 +819,7 @@ namespace Pathos
     public readonly Glyph dracon_male_bard;
     public readonly Glyph dracon_male_caveman;
     public readonly Glyph dracon_male_druid;
+    public readonly Glyph dracon_male_gladiator;
     public readonly Glyph dracon_male_jester;
     public readonly Glyph dracon_male_knight;
     public readonly Glyph dracon_male_monk;
@@ -826,6 +827,7 @@ namespace Pathos
     public readonly Glyph dracon_male_ranger;
     public readonly Glyph dracon_male_reaver;
     public readonly Glyph dracon_male_rogue;
+    public readonly Glyph dracon_male_valkyrie;
     public readonly Glyph dracon_male_wizard;
 
     public readonly Glyph dracon_female_druid;
@@ -845,7 +847,10 @@ namespace Pathos
 
     // echo.
     public readonly Glyph echo_male_gunslinger;
+    public readonly Glyph echo_male_mystic;
     public readonly Glyph echo_male_necromancer;
+    public readonly Glyph echo_male_templar;
+    public readonly Glyph echo_male_wizard;
 
     // elf.
     public readonly Glyph elf_male_bard;

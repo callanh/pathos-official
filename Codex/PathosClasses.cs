@@ -138,6 +138,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_gladiator);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_gladiator);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_gladiator);
+        C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_gladiator);
         C.AddFeat(2, Properties.jumping);
         C.AddFeat(8, Properties.deflection);
         C.AddFeat(14, Properties.vitality);
@@ -637,6 +638,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_mystic);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_mystic);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_mystic);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_mystic);
         C.AddFeat(1, Properties.telepathy);
         C.AddFeat(2, Properties.telekinesis);
         C.AddFeat(4, Elements.fire);
@@ -853,6 +855,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_templar);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_templar);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_templar);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_templar);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(8, Elements.sleep);
         C.AddFeat(12, Properties.free_action);
@@ -1269,6 +1272,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_valkyrie);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_valkyrie);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_valkyrie);
+        C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_valkyrie);
         C.AddFeat(2, Elements.cold);
         C.AddFeat(4, Properties.stealth);
         C.AddFeat(8, Properties.quickness);
@@ -1316,6 +1320,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_wizard);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_wizard);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_wizard);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_wizard);
         C.AddFeat(8, Properties.warning);
         C.AddFeat(14, Properties.teleport_control);
         C.Startup.SetSkill(Qualifications.proficient,

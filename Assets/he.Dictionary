@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},הקמת מתים {Pe
 FormatText,range {Dice},טווח {Dice}
 FormatText,RANKED #{RankNumber},מקום {RankNumber}
 FormatText,remove transient {PropertyNames},הסרת מצב זמני {PropertyNames}
-FormatText,replenish life from {Percent}%,מילוי נקודות חיים מ{Percent}%-
-FormatText,replenish mana from {Percent}%,מילוי נקודות קסם מ{Percent}%-
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","קימה לתחייה של {CharacterName} ,{CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},נקמה {AttackType} {Chance}
 FormatText,retaliate {Chance} on death {AttackType},נקמה {Chance} על מוות מ{AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,לשנות את שם הדמות
 LiteralText,RENAME ITEM,לשנות שם של חפץ
 LiteralText,RENAME MAP,לשנות שם של מפה
 LiteralText,repel,להרחיק
+LiteralText,replenish life,מילוי נקודות חיים מ
+LiteralText,replenish mana,מילוי נקודות קסם מ
 LiteralText,replica,חיקוי
 LiteralText,replicate item,הכפלת נכס
 LiteralText,requires the skill to pick locks,נדרשים כישורי פריצה

@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},оживляет {Per
 FormatText,range {Dice},дистанция {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
 FormatText,remove transient {PropertyNames},снимает временное {PropertyNames}
-FormatText,replenish life from {Percent}%,восполнение здоровья на {Percent}%
-FormatText,replenish mana from {Percent}%,восполнение маны на {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","Воскрешён {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},мстит {Chance} {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},мстит {Chance} о смерти {AttackType}
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,ПЕРЕИМЕНУЙТЕ ПЕРСОНАЖА
 LiteralText,RENAME ITEM,ПЕРЕИМЕНУЙТЕ ВЕЩЬ
 LiteralText,RENAME MAP,ПЕРЕИМЕНУЙТЕ КАРТУ
 LiteralText,repel,оттолкнуть
+LiteralText,replenish life,восполнение здоровья
+LiteralText,replenish mana,восполнение маны
 LiteralText,replica,копия
 LiteralText,replicate item,копирует вещь
 LiteralText,requires the skill to pick locks,необходим навык взлома

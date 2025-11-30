@@ -2004,8 +2004,6 @@ FormatText,raise dead {Percent}% {LoyalText} {CorruptText},підіймає ме
 FormatText,range {Dice},дистанція {Dice}
 FormatText,RANKED #{RankNumber},РЕЙТИНГ #{RankNumber}
 FormatText,remove transient {PropertyNames},знімає тимчасове {PropertyNames}
-FormatText,replenish life from {Percent}%,відновити життя від {Percent}%
-FormatText,replenish mana from {Percent}%,відновити ману від {Percent}%
 FormatText,"Resurrected {CharacterName}, {CharacterDescription}","відродженого {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},{Chance} вдарити у відповідь: {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},"{Chance} вдарити у відповідь на, коли помирає від {AttackType}"
@@ -3578,6 +3576,8 @@ LiteralText,RENAME CHARACTER,ПЕРЕЙМЕНУВАТИ ПЕРСОНАЖА
 LiteralText,RENAME ITEM,ПЕРЕЙМЕНУВАТИ ПРЕДМЕТ
 LiteralText,RENAME MAP,ПЕРЕЙМЕНУВАТИ МАПУ
 LiteralText,repel,відштовхнути
+LiteralText,replenish life,відновити життя
+LiteralText,replenish mana,відновити ману
 LiteralText,replica,копія
 LiteralText,replicate item,копіює цінність
 LiteralText,requires the skill to pick locks,необхідно вміння злому

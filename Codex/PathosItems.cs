@@ -5359,11 +5359,11 @@ namespace Pathos
           (
             B =>
             {
-              B.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 1.00F); // full life and mana.
+              B.ReplenishEntity(Life: true, Mana: true); // full life and mana.
             },
             U =>
             {
-              U.ReplenishEntity(LifeThreshold: 1.00F, ManaThreshold: 0.00F); // full life.
+              U.ReplenishEntity(Life: true, Mana: false); // full life.
             },
             C =>
             {
