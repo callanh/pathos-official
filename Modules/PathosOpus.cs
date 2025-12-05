@@ -1279,7 +1279,7 @@ namespace Pathos
     {
       public Builder(OpusMaker Maker)
       {
-        this.Name = GetType().Name.ExcludeAfter("Builder", StringComparison.InvariantCultureIgnoreCase);
+        this.Name = GetType().Name.ExcludeAfter("Builder");
         this.Maker = Maker;
         this.Codex = Maker.Codex;
         this.Generator = Maker.Generator;

@@ -1,15 +1,15 @@
 ﻿quest "Medusa Lair"
 
-map [Medusa Lair Entrance] difficulty 0 40 x 40
+map [Medusa Lair Entrance] atmosphere [cavern] difficulty 0 40 x 40
 character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[000008]@[000009]@[000010]@[000011]@[000012]@[000013]@[000014]@[000015]@[000016]@[000017]@[000018];
 (11,04)! |[stone wall] topleftcorner permanent
 (12,04)! |[stone wall] horizontal permanent
 (13,04)! |[stone wall] toprightcorner permanent
 (11,05)! |[stone wall] vertical permanent
-(12,05)! .[stone corridor]
+(12,05)! .[stone path]
 (13,05)! |[stone wall] vertical permanent
 (11,06)! |[stone wall] vertical permanent
-(12,06)! .[stone corridor]
+(12,06)! .[stone path]
 (13,06)! |[stone wall] vertical permanent
 (15,06)  |[stone wall] topleftcorner permanent
 (16,06)  |[stone wall] horizontal permanent
@@ -78,9 +78,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (08,09)  |[stone wall] vertical permanent
 (09,09)! .[stone floor]
 (10,09)! .[water] @[000014]
-(11,09)! .[stone corridor]
-(12,09)! .[stone corridor]
-(13,09)! .[stone corridor]
+(11,09)! .[stone path]
+(12,09)! .[stone path]
+(13,09)! .[stone path]
 (14,09)! .[water]
 (15,09)! .[water] @[000017]
 (16,09)! .[water]
@@ -105,7 +105,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (09,10)! .[water]
 (10,10)! .[water]
 (11,10)! .[water]
-(12,10)! .[stone corridor]
+(12,10)! .[stone path]
 (13,10)! .[water]
 (14,10)! .[water]
 (15,10)! .[water]
@@ -208,7 +208,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (21,13)! .[water]
 (22,13)! .[water]
 (23,13)! .[stone floor]
-(24,13)! .[stone corridor] _[fountain]
+(24,13)! .[stone path] _[fountain]
 (25,13)! .[stone floor]
 (26,13)! .[stone floor] #[wooden bridge] horizontal
 (27,13)! .[stone floor] #[wooden bridge] horizontal
@@ -389,8 +389,8 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (38,18)  |[stone wall] vertical permanent
 (06,19)  |[stone wall] bottomleftcorner permanent
 (07,19)  |[stone wall] toprightcorner permanent
-(08,19)! .[dirt floor] ^[bear trap] 0
-(09,19)! .[dirt floor] ^[bear trap] 0
+(08,19)! .[dirt] ^[bear trap] 0
+(09,19)! .[dirt] ^[bear trap] 0
 (10,19)! .[water]
 (11,19)! .[water]
 (12,19)! .[water] @[000005]
@@ -421,8 +421,8 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (37,19)  .[water]
 (38,19)  |[stone wall] vertical permanent
 (07,20)  |[stone wall] vertical permanent
-(08,20)! .[dirt floor] ?[potion of ESP]
-(09,20)! .[dirt floor] ^[bear trap] 0
+(08,20)! .[dirt] ?[potion of ESP]
+(09,20)! .[dirt] ^[bear trap] 0
 (10,20)! .[water]
 (11,20)! .[water]
 (12,20)! .[water]
@@ -491,9 +491,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (14,22)! .[water]
 (15,22)! .[water] #[wooden bridge] horizontal
 (16,22)! .[stone floor]
-(17,22)! .[stone corridor]
+(17,22)! .[stone path]
 (18,22)! .[stone floor]
-(19,22)! .[stone corridor]
+(19,22)! .[stone path]
 (20,22)! .[water]
 (21,22)! .[water]
 (22,22)! .[water]
@@ -519,9 +519,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (13,23)! .[water]
 (14,23)! .[water]
 (15,23)! .[water] #[wooden bridge] horizontal
-(16,23)! .[stone corridor]
+(16,23)! .[stone path]
 (17,23)! .[stone floor] ?[sack] container
-(18,23)! .[stone corridor] _[grave]
+(18,23)! .[stone path] _[grave]
 (19,23)! .[stone floor]
 (20,23)! .[water]
 (21,23)! .[water]
@@ -546,7 +546,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (14,24)  .[water]
 (15,24)! .[water]
 (16,24)! .[stone floor]
-(17,24)! .[stone corridor]
+(17,24)! .[stone path]
 (18,24)! .[stone floor]
 (19,24)! .[water]
 (20,24)! .[water]
@@ -683,13 +683,13 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (33,30)  |[stone wall] horizontal permanent
 (34,30)  |[stone wall] bottomrightcorner permanent
 
-map [Underground River] difficulty 0 40 x 40
+map [Underground River] atmosphere [cavern] difficulty 0 40 x 40
 character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[000026]@[000027]@[000028]@[000029]@[000030]@[000031]@[000032]@[000033]@[000034]@[000035]@[000036]@[000037]@[000038]@[000039]@[000040]@[000041]@[000042]@[000043]@[000044]@[000045]@[000046]@[000047]@[000048]@[000049]@[000050]@[000051]@[000052];
 (11,05)  |[cave wall] topleftcorner permanent
 (12,05)  |[cave wall] horizontal permanent
 (13,05)  |[cave wall] toprightcorner permanent
 (11,06)  |[cave wall] vertical permanent
-(12,06)! .[dirt floor] >[stone staircase up] : map [Medusa Lair Entrance] (30,25)
+(12,06)! .[dirt] >[stone staircase up] : map [Medusa Lair Entrance] (30,25)
 (13,06)  |[cave wall] vertical permanent
 (11,07)  |[cave wall] vertical permanent
 (12,07)! .[water]
@@ -706,12 +706,12 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (20,08)  |[cave wall] toprightcorner permanent
 (11,09)  |[cave wall] vertical permanent
 (12,09)  .[water]
-(13,09)  .[dirt floor]
-(14,09)  .[dirt floor] `[stone boulder]
-(15,09)  .[dirt floor]
-(16,09)  .[dirt floor]
-(17,09)  .[dirt floor]
-(18,09)  .[dirt floor]
+(13,09)  .[dirt]
+(14,09)  .[dirt] `[stone boulder]
+(15,09)  .[dirt]
+(16,09)  .[dirt]
+(17,09)  .[dirt]
+(18,09)  .[dirt]
 (19,09)  .[water]
 (20,09)  |[cave wall] vertical permanent
 (11,10)  |[cave wall] vertical permanent
@@ -797,8 +797,8 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (29,13)! .[water] @[000037]
 (30,13)! .[water] @[000032]
 (31,13)! .[water]
-(32,13)! .[dirt floor]
-(33,13)! .[dirt floor]
+(32,13)! .[dirt]
+(33,13)! .[dirt]
 (34,13)! |[cave wall] vertical permanent
 (08,14)  |[cave wall] topleftcorner permanent
 (09,14)  |[cave wall] bottomrightcorner permanent
@@ -821,9 +821,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (28,14)! .[water]
 (29,14)! .[water] @[000036]
 (30,14)! .[water] @[000033]
-(31,14)! .[dirt floor]
-(32,14)! .[dirt floor]
-(33,14)! .[dirt floor] ?[chest] container
+(31,14)! .[dirt]
+(32,14)! .[dirt]
+(33,14)! .[dirt] ?[chest] container
 (34,14)! |[cave wall] vertical permanent
 (08,15)  |[cave wall] vertical permanent
 (09,15)  .[water] @[000019]
@@ -843,9 +843,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (28,15)! .[water]
 (29,15)! .[water] @[000035]
 (30,15)! .[water] @[000034]
-(31,15)! .[dirt floor]
-(32,15)! .[dirt floor]
-(33,15)! .[dirt floor] ?[chest] container
+(31,15)! .[dirt]
+(32,15)! .[dirt]
+(33,15)! .[dirt] ?[chest] container
 (34,15)! |[cave wall] vertical permanent
 (08,16)  |[cave wall] vertical permanent
 (09,16)  .[water] @[000020]
@@ -866,8 +866,8 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (29,16)! .[water]
 (30,16)! .[water]
 (31,16)! .[water]
-(32,16)! .[dirt floor]
-(33,16)! .[dirt floor]
+(32,16)! .[dirt]
+(33,16)! .[dirt]
 (34,16)! |[cave wall] vertical permanent
 (08,17)  |[cave wall] vertical permanent
 (09,17)  .[water] @[000021]
@@ -936,7 +936,7 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (18,22)  .[water]
 (19,22)  |[cave wall] vertical permanent
 (04,23)! |[stone wall] topleftcorner permanent
-(05,23)! |[stone wall] horizontal permanent .[dirt floor]
+(05,23)! |[stone wall] horizontal permanent .[dirt]
 (06,23)! |[stone wall] horizontal permanent .[water]
 (07,23)! |[stone wall] horizontal permanent .[water]
 (08,23)! |[stone wall] toprightcorner permanent .[water]
@@ -977,9 +977,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (17,25)  .[water]
 (18,25)  |[cave wall] vertical permanent
 (04,26)! |[stone wall] vertical permanent
-(05,26)! .[dirt floor] @[000040]
-(06,26)! .[dirt floor] @[000041]
-(07,26)! .[dirt floor] @[000039]
+(05,26)! .[dirt] @[000040]
+(06,26)! .[dirt] @[000041]
+(07,26)! .[dirt] @[000039]
 (08,26)! |[stone wall] vertical permanent .[water]
 (09,26)  |[cave wall] topleftcorner permanent
 (10,26)  |[cave wall] bottomrightcorner permanent
@@ -991,9 +991,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (18,26)  |[cave wall] bottomleftcorner permanent
 (19,26)  |[cave wall] toprightcorner permanent
 (04,27)! |[stone wall] vertical permanent
-(05,27)! .[dirt floor]
-(06,27)! .[dirt floor]
-(07,27)! .[dirt floor]
+(05,27)! .[dirt]
+(06,27)! .[dirt]
+(07,27)! .[dirt]
 (08,27)! |[stone wall] vertical permanent .[water]
 (09,27)  |[cave wall] enddown permanent
 (10,27)  .[water]
@@ -1006,9 +1006,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (20,27)  |[cave wall] toprightcorner permanent
 (03,28)! |[cave wall] endup permanent
 (04,28)! |[stone wall] enddown permanent
-(05,28)! .[dirt floor]
-(06,28)! .[dirt floor]
-(07,28)! .[dirt floor]
+(05,28)! .[dirt]
+(06,28)! .[dirt]
+(07,28)! .[dirt]
 (08,28)! |[stone wall] enddown permanent .[water]
 (09,28)  .[water]
 (10,28)  .[water]
@@ -1029,7 +1029,7 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (03,29)  |[cave wall] bottomleftcorner permanent
 (04,29)  |[cave wall] toprightcorner permanent
 (05,29)  .[water]
-(06,29)  .[dirt floor]
+(06,29)  .[dirt]
 (07,29)  .[water]
 (08,29)  .[water]
 (09,29)  .[water]
@@ -1103,11 +1103,11 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (24,32)  .[water]
 (25,32)  .[water]
 (26,32)  .[water]
-(27,32)! |[jade wall] pillar .[dirt floor]
+(27,32)! |[jade wall] .[dirt]
 (28,32)! .[marble floor]
 (29,32)! .[marble floor] @[000048]
 (30,32)! .[marble floor]
-(31,32)! |[jade wall] pillar .[dirt floor]
+(31,32)! |[jade wall] .[dirt]
 (32,32)  .[water]
 (33,32)  |[cave wall] bottomleftcorner permanent
 (34,32)  |[cave wall] toprightcorner permanent
@@ -1117,9 +1117,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (25,33)  .[water]
 (26,33)  .[water]
 (27,33)! .[marble floor] @[000049]
-(28,33)! .[stone corridor]
+(28,33)! .[stone path]
 (29,33)! .[stone floor]
-(30,33)! .[stone corridor]
+(30,33)! .[stone path]
 (31,33)! .[marble floor]
 (32,33)  .[water]
 (33,33)  .[water]
@@ -1130,7 +1130,7 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (26,34)  .[water]
 (27,34)! .[marble floor] @[000050]
 (28,34)! .[stone floor]
-(29,34)! .[stone corridor] >[stone staircase down] : map [Medusa's Lair] (18,36) `[statue]
+(29,34)! .[stone path] >[stone staircase down] : map [Medusa's Lair] (18,36) `[statue]
 (30,34)! .[stone floor]
 (31,34)! .[marble floor]
 (32,34)  .[water]
@@ -1141,9 +1141,9 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (25,35)  .[water]
 (26,35)  .[water]
 (27,35)! .[marble floor] @[000051]
-(28,35)! .[stone corridor]
+(28,35)! .[stone path]
 (29,35)! .[stone floor]
-(30,35)! .[stone corridor]
+(30,35)! .[stone path]
 (31,35)! .[marble floor]
 (32,35)  .[water]
 (33,35)  .[water]
@@ -1152,11 +1152,11 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (24,36)  .[water]
 (25,36)  .[water]
 (26,36)  .[water]
-(27,36)! |[jade wall] pillar .[dirt floor]
+(27,36)! |[jade wall] .[dirt]
 (28,36)! .[marble floor]
 (29,36)! .[marble floor]
 (30,36)! .[marble floor]
-(31,36)! |[jade wall] pillar .[dirt floor]
+(31,36)! |[jade wall] .[dirt]
 (32,36)  .[water]
 (33,36)  |[cave wall] topleftcorner permanent
 (34,36)  |[cave wall] bottomrightcorner permanent
@@ -1187,8 +1187,8 @@ character @[000019]@[000020]@[000021]@[000022]@[000023]@[000024]@[000025]@[00002
 (30,39)  |[cave wall] horizontal permanent
 (31,39)  |[cave wall] bottomrightcorner
 
-map [Medusa's Lair] terminal difficulty 0 40 x 40
-character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[000060]@[000061]@[000062]@[000063]@[000064]@[000065]@[000066]@[000067]@[000068]@[000069]@[000070]@[000071]@[000072]@[000073]@[000074]@[000075]@[000076]@[000077]@[000078]@[000079]@[000080]@[000081]@[000082]@[000083]@[000084]@[000085]@[000086]@[000087]@[000088]@[000089]@[000090]@[000091]@[000092];
+map [Medusa's Lair] terminal atmosphere [cavern] difficulty 0 40 x 40
+character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[000060]@[000061]@[000062]@[000063]@[000064]@[000065]@[000066]@[000067]@[000068]@[000069]@[000070]@[000071]@[000072]@[000073]@[000074]@[000075]@[000076]@[000077]@[000078]@[000079]@[000080]@[000081]@[000082]@[000083]@[000084]@[000085]@[000086]@[000087]@[000088]@[000089]@[000090]@[000091]@[000092]@[000093]@[000094];
 (12,01)! |[stone wall] topleftcorner permanent
 (13,01)! |[stone wall] horizontal permanent
 (14,01)! |[stone wall] horizontal permanent
@@ -1208,17 +1208,17 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (12,02)! |[stone wall] vertical permanent
 (13,02)! .[marble floor] ?[chest] container
 (14,02)! .[marble floor] @[000091]
-(15,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(15,02)! +[wooden door] vertical secret locked trapped [entropy trap] 0 .[marble floor]
 (16,02)! .[marble floor]
 (17,02)! .[marble floor] @[000076]
 (18,02)! .[marble floor] _[throne] @[000053]
 (19,02)! .[marble floor] _[fountain]
 (20,02)! .[marble floor] @[000081]
 (21,02)! .[marble floor]
-(22,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(22,02)! +[wooden door] vertical secret locked trapped [entropy trap] 0 .[marble floor]
 (23,02)! .[marble floor] @[000092]
 (24,02)! .[marble floor] ?[chest] container
-(25,02)! +[wooden door] vertical secret locked trapped [magic trap] 0 .[marble floor]
+(25,02)! +[wooden door] vertical secret locked trapped [entropy trap] 0 .[marble floor]
 (26,02)! .[marble floor] >[transportal]
 (27,02)! |[stone wall] vertical permanent
 (12,03)! |[stone wall] bottomleftcorner permanent
@@ -1252,8 +1252,8 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (15,06)! |[stone wall] topleftcorner permanent
 (16,06)! |[stone wall] horizontal permanent
 (17,06)! |[stone wall] teeup permanent
-(18,06)! +[crystal door] horizontal locked trapped [magic trap] 0 .[marble floor]
-(19,06)! +[crystal door] horizontal locked trapped [magic trap] 0 .[marble floor]
+(18,06)! +[crystal door] horizontal locked trapped [entropy trap] 0 .[marble floor]
+(19,06)! +[crystal door] horizontal locked trapped [entropy trap] 0 .[marble floor]
 (20,06)! |[stone wall] teeup permanent
 (21,06)! |[stone wall] horizontal permanent
 (22,06)! |[stone wall] toprightcorner permanent
@@ -1270,10 +1270,10 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (14,08)! |[stone wall] vertical permanent
 (15,08)! .[obsidian floor]
 (16,08)! .[obsidian floor]
-(17,08)! |[stone wall] pillar .[obsidian floor]
+(17,08)! |[stone wall] .[obsidian floor]
 (18,08)! .[stone floor]
 (19,08)! .[stone floor] `[statue]
-(20,08)! |[stone wall] pillar .[obsidian floor]
+(20,08)! |[stone wall] .[obsidian floor]
 (21,08)! .[obsidian floor]
 (22,08)! .[obsidian floor]
 (23,08)! |[stone wall] vertical permanent
@@ -1290,10 +1290,10 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (14,10)! |[stone wall] vertical permanent
 (15,10)! .[obsidian floor]
 (16,10)! .[obsidian floor]
-(17,10)! |[stone wall] pillar .[obsidian floor]
+(17,10)! |[stone wall] .[obsidian floor]
 (18,10)! .[stone floor]
 (19,10)! .[stone floor]
-(20,10)! |[stone wall] pillar .[obsidian floor]
+(20,10)! |[stone wall] .[obsidian floor]
 (21,10)! .[obsidian floor]
 (22,10)! .[obsidian floor]
 (23,10)! |[stone wall] vertical permanent
@@ -1311,8 +1311,8 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (15,12)! .[obsidian floor]
 (16,12)! .[obsidian floor] @[000060]
 (17,12)! |[jade wall] topleftcorner permanent .[obsidian floor]
-(18,12)! +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
-(19,12)! +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(18,12)! +[crystal door] horizontal locked trapped [entropy trap] 0 .[obsidian floor]
+(19,12)! +[crystal door] horizontal locked trapped [entropy trap] 0 .[obsidian floor]
 (20,12)! |[jade wall] toprightcorner permanent .[obsidian floor]
 (21,12)! .[obsidian floor] @[000061]
 (22,12)! .[obsidian floor]
@@ -1328,14 +1328,14 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (22,13)  |[jade wall] horizontal permanent .[stone floor]
 (23,13)  |[jade wall] teeleft permanent
 (14,14)  |[jade wall] vertical permanent
-(15,14)! .[water]
+(15,14)! .[water] @[000093]
 (16,14)! .[water]
 (17,14)! .[stone floor]
 (18,14)! .[obsidian floor] `[statue]
 (19,14)! .[obsidian floor]
 (20,14)! .[stone floor]
 (21,14)! .[water]
-(22,14)! .[water]
+(22,14)! .[water] @[000094]
 (23,14)  |[jade wall] vertical permanent
 (14,15)  |[jade wall] vertical permanent
 (15,15)! .[water]
@@ -1531,8 +1531,8 @@ character @[000053]@[000054]@[000055]@[000056]@[000057]@[000058]@[000059]@[00006
 (15,34)  |[jade wall] horizontal permanent
 (16,34)  |[jade wall] horizontal permanent
 (17,34)  |[jade wall] teedown permanent .[obsidian floor]
-(18,34)  +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
-(19,34)  +[crystal door] horizontal locked trapped [magic trap] 0 .[obsidian floor]
+(18,34)  +[crystal door] horizontal locked trapped [entropy trap] 0 .[obsidian floor]
+(19,34)  +[crystal door] horizontal locked trapped [entropy trap] 0 .[obsidian floor]
 (20,34)  |[jade wall] teedown permanent .[obsidian floor]
 (21,34)  |[jade wall] horizontal permanent
 (22,34)  |[jade wall] horizontal permanent
@@ -1647,4 +1647,6 @@ character @[000089] [neuter] [water moccasin] noclass square map [Medusa's Lair]
 character @[000090] [neuter] [water moccasin] noclass square map [Medusa's Lair] (17,19);
 character @[000091] [neuter] [water demon] noclass square map [Medusa's Lair] (14,02);
 character @[000092] [neuter] [water demon] noclass square map [Medusa's Lair] (23,02);
+character @[000093] [neuter] [pearl golem] noclass nutrition 0 square map [Medusa's Lair] (15,14);
+character @[000094] [neuter] [pearl golem] noclass nutrition 0 square map [Medusa's Lair] (22,14);
 start [Medusa Lair Entrance] (12,05);

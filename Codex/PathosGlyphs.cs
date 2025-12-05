@@ -762,8 +762,13 @@ namespace Pathos
     public readonly Glyph female_wizard;
 
     // angel.
+    public readonly Glyph angel_male_ninja;
+    public readonly Glyph angel_male_paladin;
+    public readonly Glyph angel_male_ranger;
     public readonly Glyph angel_male_reaver;
 
+    public readonly Glyph angel_female_paladin;
+    public readonly Glyph angel_female_ranger;
     public readonly Glyph angel_female_reaver;
     public readonly Glyph angel_female_shaman;
 
@@ -847,6 +852,7 @@ namespace Pathos
 
     // echo.
     public readonly Glyph echo_male_gunslinger;
+    public readonly Glyph echo_male_knight;
     public readonly Glyph echo_male_mystic;
     public readonly Glyph echo_male_necromancer;
     public readonly Glyph echo_male_templar;
@@ -876,6 +882,7 @@ namespace Pathos
     public readonly Glyph fairy_male_druid;
     public readonly Glyph fairy_male_gunslinger;
     public readonly Glyph fairy_male_knight;
+    public readonly Glyph fairy_male_mystic;
     public readonly Glyph fairy_male_priest;
     public readonly Glyph fairy_male_ninja;
     public readonly Glyph fairy_male_ranger;
@@ -891,6 +898,7 @@ namespace Pathos
     public readonly Glyph fairy_female_druid;
     public readonly Glyph fairy_female_gunslinger;
     public readonly Glyph fairy_female_knight;
+    public readonly Glyph fairy_female_mystic;
     public readonly Glyph fairy_female_priest;
     public readonly Glyph fairy_female_ninja;
     public readonly Glyph fairy_female_ranger;
@@ -1090,6 +1098,7 @@ namespace Pathos
     public readonly Glyph orc_female_jester;
     public readonly Glyph orc_female_knight;
     public readonly Glyph orc_female_necromancer;
+    public readonly Glyph orc_female_paladin;
     public readonly Glyph orc_female_ranger;
     public readonly Glyph orc_female_reaver;
     public readonly Glyph orc_female_rogue;

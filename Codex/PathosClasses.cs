@@ -553,6 +553,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_knight);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_knight);
         C.AddAvatar(Races.halfling, Genders.male, Glyphs.halfling_male_knight);
+        C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_knight);
         C.AddFeat(8, Properties.quickness);
         C.Startup.SetSkill(Qualifications.proficient,
           Skills.dual_wielding, Skills.literacy, Skills.riding,
@@ -635,6 +636,8 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_mystic);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_mystic);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_mystic);
+        C.AddAvatar(Races.fairy, Genders.male, Glyphs.fairy_male_mystic);
+        C.AddAvatar(Races.fairy, Genders.female, Glyphs.fairy_female_mystic);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_mystic);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_mystic);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_mystic);
@@ -691,6 +694,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_ninja);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_ninja);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_ninja);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_ninja);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_ninja);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_ninja);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ninja);
@@ -730,20 +734,23 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_paladin);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_paladin);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_paladin);
+        C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_paladin);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_paladin);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_paladin);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_paladin);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_paladin);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_paladin);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_paladin);
+        C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_paladin);
         C.AddFeat(1, Properties.clarity);
         C.AddFeat(5, Properties.beatitude);
         C.AddFeat(10, Properties.quickness);
         C.AddFeat(15, Properties.warning);
         C.Startup.SetSkill(Qualifications.proficient,
           Skills.riding, Skills.literacy,
-          Skills.clerical,
+          Skills.abjuration, Skills.clerical,
           Skills.medium_armour, Skills.heavy_armour,
-          Skills.medium_blade, Skills.heavy_blade);
+          Skills.medium_blade, Skills.heavy_blade, Skills.mace, Skills.hammer);
         C.Startup.AddGrimoire(Dice.One, Spells.healing);
         C.Startup.AddGrimoire(Dice.One, Spells.turn_undead);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus0, Items.long_sword);
@@ -963,6 +970,8 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_ranger);
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_ranger);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_ranger);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_ranger);
+        C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_ranger);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ranger);
         C.AddAvatar(Races.kobold, Genders.male, Glyphs.kobold_male_ranger);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_ranger);

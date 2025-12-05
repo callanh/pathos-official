@@ -661,7 +661,7 @@ namespace Pathos
 
       lizardman = AddBaseEntity(Kinds.lizardman, Races.lizardman, "lizardman", E =>
       {
-        E.Description = "Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.";
+        E.Description = "Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.";
         E.Glyph = Glyphs.lizardman;
         E.Level = 0;
         E.Challenge = 0;
@@ -4147,6 +4147,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -4309,7 +4310,7 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: true,
           Blood: true,
           Mounted: false,
@@ -4413,6 +4414,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -5101,6 +5103,7 @@ namespace Pathos
         (
           Material: Materials.animal,
           Head: true,
+          Horns: true,
           Mind: true,
           Voice: true,
           Eyes: true,
@@ -5541,7 +5544,7 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: true,
           Blood: true,
           Mounted: false,
@@ -14572,9 +14575,14 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.light_blade, Skills.light_armour, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour, Skills.sling);
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
+        E.Startup.Loot.AddKit(Chance.Always, Items.sling);
+        E.Startup.Loot.AddKit(Chance.Always, 2.d3() + 1, Stocks.gem);
+        E.Startup.Loot.AddKit(Chance.OneIn2, Items.small_shield);
+        E.Startup.Loot.AddKit(Chance.OneIn2, Items.helmet);
+        E.Startup.Loot.AddKit(Chance.OneIn2, Items.scale_mail);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d10()); // +2 from str.
         E.AddAttack(AttackTypes.summon, Elements.physical, Dice.Zero, A =>
         {
@@ -15125,7 +15133,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetWeakness(Elements.fire);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
@@ -15229,7 +15237,7 @@ namespace Pathos
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d8()); // +8 from str.
         E.SetCorpse(Chance.Never);
-        //E.DropLoot.AddKit(1.d3(), Chance.Always, Items.pearl); // TODO: need to add 'pearl'.
+        E.DropLoot.AddKit(Chance.Always, Dice.One, Items.pearl);
       });
 
       plastic_golem = AddEntity(Kinds.golem, null, "plastic golem", E =>
@@ -15802,7 +15810,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetWeakness(Elements.fire);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
@@ -15892,7 +15900,7 @@ namespace Pathos
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.neuter);
         E.SetGreed(GolemGreed);
-        E.Chemistry.SetVulnerability();
+        E.Chemistry.SetWeakness(Elements.fire);
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.poison, Elements.sleep);
@@ -22057,7 +22065,7 @@ namespace Pathos
           Ears: true,
           Hands: true,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: true,
           Blood: true,
           Mounted: false,
@@ -23900,7 +23908,7 @@ namespace Pathos
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
-        E.Startup.Loot.AddKit(Chance.OneIn2, Items.potion_of_water);
+        E.Startup.Loot.AddKit(Chance.OneIn2, Sanctities.Blessed, [Items.potion_of_water]);
         E.Startup.AddGrimoire(Dice.One, Spells.summoning);
         E.Startup.AddGrimoire(Dice.One, Spells.extra_healing);
         E.Startup.AddGrimoire(Dice.One, Spells.raise_dead);
@@ -26091,8 +26099,8 @@ namespace Pathos
         E.Glyph = Glyphs.pixie;
         E.Sonic = Sonics.giggle;
         E.Level = 3;
-        E.Challenge = 16;
-        E.Difficulty = 5;
+        E.Challenge = 76;
+        E.Difficulty = 11;
         E.Frequency = 1;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.herbivore);
@@ -26124,7 +26132,8 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.blinking);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.blinking, Properties.invisibility);
+        E.Startup.SetAcquisition(Properties.sleeping);
         E.AddAttack(AttackTypes.touch, Elements.physical, 2.d2(), K =>
         {
           K.Apply.StealCarriedItem(Properties.fear, 6.d6() + 6);
@@ -31676,7 +31685,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness, Properties.invisibility);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
@@ -33836,7 +33845,7 @@ namespace Pathos
         E.Weight = Weight.FromUnits(150000);
         E.Figure.Set
         (
-          Material: Materials.vegetable,
+          Material: Materials.wood,
           Head: true,
           Mind: true,
           Voice: true,

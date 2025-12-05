@@ -28,39 +28,39 @@ namespace Pathos
         });
       }
 
-      adamantine = AddMaterial("adamantine", Elements.physical, Corporeal: true);
-      air = AddMaterial("air", Elements.physical, Corporeal: false);
-      animal = AddMaterial("animal", Elements.physical, Corporeal: true);
-      bone = AddMaterial("bone", Elements.physical, Corporeal: true);
-      clay = AddMaterial("clay", Elements.physical, Corporeal: true, Weakness: Elements.digging);
-      cloth = AddMaterial("cloth", Elements.physical, Corporeal: true);
-      copper = AddMaterial("copper", Elements.physical, Corporeal: true);
-      crystal = AddMaterial("crystal", Elements.physical, Corporeal: true);
-      electricity = AddMaterial("electricity", Elements.shock, Corporeal: false);
-      ether = AddMaterial("ether", Elements.physical, Corporeal: false);
-      fire = AddMaterial("fire", Elements.fire, Corporeal: false);
-      fruit = AddMaterial("fruit", Elements.physical, Corporeal: true);
-      gemstone = AddMaterial("gemstone", Elements.physical, Corporeal: true);
-      glass = AddMaterial("glass", Elements.physical, Corporeal: true);
-      gold = AddMaterial("gold", Elements.physical, Corporeal: true);
-      hide = AddMaterial("hide", Elements.physical, Corporeal: true);
-      ice = AddMaterial("ice", Elements.cold, Corporeal: true);
-      iron = AddMaterial("iron", Elements.physical, Corporeal: true);
-      lava = AddMaterial("lava", Elements.fire, Corporeal: true);
-      leather = AddMaterial("leather", Elements.physical, Corporeal: true);
-      mithril = AddMaterial("mithril", Elements.physical, Corporeal: true);
-      paper = AddMaterial("paper", Elements.physical, Corporeal: true);
-      plastic = AddMaterial("plastic", Elements.physical, Corporeal: true);
-      platinum = AddMaterial("platinum", Elements.physical, Corporeal: true);
-      sand = AddMaterial("sand", Elements.physical, Corporeal: true, Weakness: Elements.digging);
-      silver = AddMaterial("silver", Elements.physical, Corporeal: true);
-      stone = AddMaterial("stone", Elements.physical, Corporeal: true, Weakness: Elements.digging);
-      //straw = AddMaterial("straw", Elements.physical, Solid: true);
-      tin = AddMaterial("tin", Elements.physical, Corporeal: true);
-      vegetable = AddMaterial("vegetable", Elements.physical, Corporeal: true);
-      water = AddMaterial("water", Elements.water, Corporeal: true);
-      wax = AddMaterial("wax", Elements.physical, Corporeal: true);
-      wood = AddMaterial("wood", Elements.physical, Corporeal: true);
+      this.adamantine = AddMaterial("adamantine", Elements.physical, Corporeal: true);
+      this.air = AddMaterial("air", Elements.physical, Corporeal: false);
+      this.animal = AddMaterial("animal", Elements.physical, Corporeal: true);
+      this.bone = AddMaterial("bone", Elements.physical, Corporeal: true);
+      this.clay = AddMaterial("clay", Elements.physical, Corporeal: true, Weakness: Elements.digging);
+      this.cloth = AddMaterial("cloth", Elements.physical, Corporeal: true);
+      this.copper = AddMaterial("copper", Elements.physical, Corporeal: true);
+      this.crystal = AddMaterial("crystal", Elements.physical, Corporeal: true);
+      this.electricity = AddMaterial("electricity", Elements.shock, Corporeal: false);
+      this.ether = AddMaterial("ether", Elements.physical, Corporeal: false);
+      this.fire = AddMaterial("fire", Elements.fire, Corporeal: false);
+      this.fruit = AddMaterial("fruit", Elements.physical, Corporeal: true);
+      this.gemstone = AddMaterial("gemstone", Elements.physical, Corporeal: true);
+      this.glass = AddMaterial("glass", Elements.physical, Corporeal: true);
+      this.gold = AddMaterial("gold", Elements.physical, Corporeal: true);
+      this.hide = AddMaterial("hide", Elements.physical, Corporeal: true);
+      this.ice = AddMaterial("ice", Elements.cold, Corporeal: true);
+      this.iron = AddMaterial("iron", Elements.physical, Corporeal: true);
+      this.lava = AddMaterial("lava", Elements.fire, Corporeal: true);
+      this.leather = AddMaterial("leather", Elements.physical, Corporeal: true);
+      this.mithril = AddMaterial("mithril", Elements.physical, Corporeal: true);
+      this.paper = AddMaterial("paper", Elements.physical, Corporeal: true);
+      this.plastic = AddMaterial("plastic", Elements.physical, Corporeal: true);
+      this.platinum = AddMaterial("platinum", Elements.physical, Corporeal: true);
+      this.sand = AddMaterial("sand", Elements.physical, Corporeal: true, Weakness: Elements.digging);
+      this.silver = AddMaterial("silver", Elements.physical, Corporeal: true);
+      this.stone = AddMaterial("stone", Elements.physical, Corporeal: true, Weakness: Elements.digging);
+    //this.straw = AddMaterial("straw", Elements.physical, Solid: true);
+      this.tin = AddMaterial("tin", Elements.physical, Corporeal: true);
+      this.vegetable = AddMaterial("vegetable", Elements.physical, Corporeal: true);
+      this.water = AddMaterial("water", Elements.water, Corporeal: true);
+      this.wax = AddMaterial("wax", Elements.physical, Corporeal: true);
+      this.wood = AddMaterial("wood", Elements.physical, Corporeal: true);
 
       this.RustMetalArray =
       [
@@ -77,39 +77,39 @@ namespace Pathos
     }
 #endif
 
-    public readonly Material adamantine;
-    public readonly Material air;
-    public readonly Material animal;
-    public readonly Material bone;
-    public readonly Material clay;
-    public readonly Material cloth;
-    public readonly Material copper;
-    public readonly Material crystal;
-    public readonly Material electricity;
-    public readonly Material ether;
-    public readonly Material fire;
-    public readonly Material fruit;
-    public readonly Material gemstone;
-    public readonly Material glass;
-    public readonly Material gold;
-    public readonly Material hide;
-    public readonly Material ice;
-    public readonly Material iron;
-    public readonly Material lava;
-    public readonly Material leather;
-    public readonly Material mithril;
-    public readonly Material paper;
-    public readonly Material plastic;
-    public readonly Material platinum;
-    public readonly Material sand;
-    public readonly Material silver;
-    public readonly Material stone;
-    //public readonly Material straw; // TODO: need straw items to make this worthwhile.
-    public readonly Material tin;
-    public readonly Material vegetable;
-    public readonly Material water;
-    public readonly Material wax;
-    public readonly Material wood;
+    public Material adamantine { get; }
+    public Material air { get; }
+    public Material animal { get; }
+    public Material bone { get; }
+    public Material clay { get; }
+    public Material cloth { get; }
+    public Material copper { get; }
+    public Material crystal { get; }
+    public Material electricity { get; }
+    public Material ether { get; }
+    public Material fire { get; }
+    public Material fruit { get; }
+    public Material gemstone { get; }
+    public Material glass { get; }
+    public Material gold { get; }
+    public Material hide { get; }
+    public Material ice { get; }
+    public Material iron { get; }
+    public Material lava { get; }
+    public Material leather { get; }
+    public Material mithril { get; }
+    public Material paper { get; }
+    public Material plastic { get; }
+    public Material platinum { get; }
+    public Material sand { get; }
+    public Material silver { get; }
+    public Material stone { get; }
+  //public Material straw { get; } // TODO: need straw items to make this worthwhile.
+    public Material tin { get; }
+    public Material vegetable { get; }
+    public Material water { get; }
+    public Material wax { get; }
+    public Material wood { get; }
     public IReadOnlyList<Material> RustMetals => RustMetalArray;
 
     private readonly Material[] RustMetalArray;

@@ -97,9 +97,19 @@ namespace Pathos
           DeclareAction(I);
         });
       }
+      Item AddWeapon(ItemType ItemType, string Name, Action<ItemEditor> DeclareAction)
+      {
+        return AddItem(Stocks.weapon, ItemType, Name, I =>
+        {
+          DeclareAction(I);
+
+          if (I.Weapon.Skill == Skills.axe)
+            I.SetWeapon().AddVersus([Materials.wood], Elements.physical, 1.d4());
+        });
+      }
       Item AddRangedWeapon(Ammunition Ammunition, string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.RangedWeapon, Name, I =>
+        return AddWeapon(ItemType.RangedWeapon, Name, I =>
         {
           DeclareAction(I);
 
@@ -108,7 +118,7 @@ namespace Pathos
       }
       Item AddRangedMissile(Ammunition Ammunition, string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.RangedMissile, Name, I =>
+        return AddWeapon(ItemType.RangedMissile, Name, I =>
         {
           DeclareAction(I);
 
@@ -117,7 +127,7 @@ namespace Pathos
       }
       Item AddThrownMissile(Ammunition Ammunition, string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.ThrownWeapon, Name, I =>
+        return AddWeapon(ItemType.ThrownWeapon, Name, I =>
         {
           DeclareAction(I);
 
@@ -126,21 +136,21 @@ namespace Pathos
       }
       Item AddThrownWeapon(string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.ThrownWeapon, Name, I =>
+        return AddWeapon(ItemType.ThrownWeapon, Name, I =>
         {
           DeclareAction(I);
         });
       }
       Item AddMeleeWeapon(string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.MeleeWeapon, Name, I =>
+        return AddWeapon(ItemType.MeleeWeapon, Name, I =>
         {
           DeclareAction(I);
         });
       }
       Item AddReachWeapon(string Name, Action<ItemEditor> DeclareAction)
       {
-        return AddItem(Stocks.weapon, ItemType.ReachWeapon, Name, I =>
+        return AddWeapon(ItemType.ReachWeapon, Name, I =>
         {
           DeclareAction(I);
 
@@ -1426,7 +1436,7 @@ namespace Pathos
             C => C.Backfire(F => F.DrainMana(Elements.drain, 1.d4()))
           );
         }));
-        W.AddVersus([Materials.vegetable], Elements.physical, 2.d4());
+        W.AddVersus([Materials.vegetable, Materials.wood], Elements.physical, 2.d4());
       });
 
       Dire_Needle = AddMeleeWeapon("Dire Needle", I =>
@@ -5090,7 +5100,7 @@ namespace Pathos
         {
           A.WithSourceSanctity
           (
-            B => B.RemoveTransient(Properties.sickness),
+            B => B.RemoveTransient(Properties.confusion, Properties.stunned, Properties.petrifying),
             U => U.Nothing(),
             C => C.ApplyTransient(Properties.sickness, 1.d6() + 4)
           );
@@ -5397,7 +5407,7 @@ namespace Pathos
       var BaubleImpactSonic = Sonics.broken_glass;
       
       Item AddOrangeGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("orange gem", null, Price: Gold.FromCoins(325)).Indiscriminate(); EditorAction(I); }); // 3250, 200, 1
-      Item AddWhiteGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("white gem", null, Price: Gold.FromCoins(450)).Indiscriminate(); EditorAction(I); }); // 4500, 4000, 800, 1
+      Item AddWhiteGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("white gem", null, Price: Gold.FromCoins(450)).Indiscriminate(); EditorAction(I); }); // 4500, 4000, 800, 600, 1
       Item AddYellowBrownGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("yellowish brown gem", null, Price: Gold.FromCoins(100)).Indiscriminate(); EditorAction(I); }); // 1000, 900, 1
       Item AddVioletGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("violet gem", null, Price: Gold.FromCoins(60)).Indiscriminate(); EditorAction(I); }); // 600, 400, 1
       Item AddBlackGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("black gem", null, Price: Gold.FromCoins(250)).Indiscriminate(); EditorAction(I); }); // 2500, 850, 200, 1.
@@ -5788,6 +5798,23 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.gem);
 
         EquipPellet(I, BaubleDamage);
+      });
+
+      pearl = AddWhiteGem("pearl", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.white_gem;
+        I.Sonic = Sonics.gem;
+        I.Series = null;
+        I.Rarity = 14;
+        I.Size = GemSize;
+        I.Weight = GemWeight;
+        I.Material = Materials.gemstone;
+        I.Essence = Essence.FromUnits(18);
+        I.Price = Gold.FromCoins(600);
+        I.AddObviousIngestUse(Motions.eat, 600, Delay.FromTurns(10), Sonics.gem);
+
+        EquipPellet(I, Gem1Damage);
       });
 
       red_glass_bauble = AddRedGem("red glass bauble", I =>
@@ -10783,7 +10810,7 @@ namespace Pathos
         });
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
         {
-          A.ApplyTransient(Properties.beatitude, 5.d10());
+          A.ApplyTransient(Properties.blinking, 5.d100());
         });
       });
 
@@ -11609,7 +11636,7 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = WandEssence3;
         I.Price = Gold.FromCoins(175);
-        I.SetWeakness(WandWeakness);
+        I.SetWeakness(); // NOTE: immune to shock.
         I.ChargesDice = 1.d5() + 4;
         I.AddElementBlastUse(Motions.zap, Elements.shock, WandZapDelay, Sonics.magic, Use =>
         {
@@ -15638,7 +15665,7 @@ namespace Pathos
     public readonly Item garnet;
     public readonly Item obsidian;
     public readonly Item opal;
-    //public readonly Item pearl;
+    public readonly Item pearl;
     public readonly Item ruby;
     public readonly Item sapphire;
     public readonly Item topaz;

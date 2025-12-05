@@ -134,7 +134,7 @@ namespace Pathos
         E.IsOpenWielding = true;
       });
 
-      weapon = Add("weapon", DamageType.Slash, E =>
+      weapon = Add("weapon", DamageType: null, E => // NOTE: can't infer the damage type for non-specific weapon.
       {
         E.IsOpenWielding = true;
       });
