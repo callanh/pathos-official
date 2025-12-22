@@ -106,6 +106,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_barbarian);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_barbarian);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_barbarian);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_barbarian);
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.quickness);
         C.AddFeat(14, Properties.stealth);
@@ -178,6 +179,7 @@ namespace Pathos
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_bard);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_bard);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_bard);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_bard);
         C.AddFeat(2, Properties.free_action);
         C.AddFeat(8, Properties.appraisal);
         C.AddFeat(14, Properties.clarity);
@@ -414,6 +416,9 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_healer);
         C.AddAvatar(Races.changeling, Genders.male, Glyphs.changeling_male_healer);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_healer);
+        C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_healer);
+        C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_healer);
+        C.AddAvatar(Races.angel, Genders.nonbinary, Glyphs.angel_nonbinary_healer);
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.vitality);
         C.AddFeat(14, Properties.warning);
@@ -695,6 +700,7 @@ namespace Pathos
         C.AddAvatar(Races.demon, Genders.male, Glyphs.demon_male_ninja);
         C.AddAvatar(Races.demon, Genders.female, Glyphs.demon_female_ninja);
         C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_ninja);
+        C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_ninja);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_ninja);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_ninja);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ninja);
@@ -742,6 +748,7 @@ namespace Pathos
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_paladin);
         C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_paladin);
         C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_paladin);
+        C.AddAvatar(Races.angel, Genders.nonbinary, Glyphs.angel_nonbinary_paladin);
         C.AddFeat(1, Properties.clarity);
         C.AddFeat(5, Properties.beatitude);
         C.AddFeat(10, Properties.quickness);

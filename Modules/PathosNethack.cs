@@ -5332,8 +5332,8 @@ namespace Pathos
           MarketSquare.Zone.SetSpawnRestricted(true);
         }
 
-        // permanent walls.
-        if (MarketSquare.Wall != null)
+        // permanent walls, trees are diggable so echos don't get stuck outside the map.
+        if (MarketSquare.Wall?.Barrier == Codex.Barriers.hell_brick)
           Generator.AdjustToPermanentWall(MarketSquare);
 
         // return portal.
@@ -5675,7 +5675,7 @@ namespace Pathos
         //new { Grid = Official.Resources.Specials.DispaterLair },
         //new { Grid = Official.Resources.Specials.GeryonLair },
         new { Grid = Official.Resources.Specials.GnollTown }, // 33x38
-        new { Grid = Official.Resources.Specials.HallOfGiants }, // 22x36
+        new { Grid = Official.Resources.Specials.HallofGiants }, // 22x36
         //new { Grid = Official.Resources.Specials.KoboldTown },
         new { Grid = Official.Resources.Specials.LostTomb }, // 28x26
         new { Grid = Official.Resources.Specials.MonsterLair }, // 14x49

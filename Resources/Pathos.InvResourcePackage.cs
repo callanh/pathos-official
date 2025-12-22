@@ -24,13 +24,13 @@ namespace Pathos.Official
     public readonly global::Inv.Resource.BinaryReference Dhak;
     ///<Summary>(.quest) ~ (385.7KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Eobi;
-    ///<Summary>(.quest) ~ (192.8KB)</Summary>
+    ///<Summary>(.quest) ~ (175.5KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Kingdom1;
-    ///<Summary>(.quest) ~ (208.6KB)</Summary>
+    ///<Summary>(.quest) ~ (191.0KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Kingdom2;
     ///<Summary>(.quest) ~ (57.2KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Lair;
-    ///<Summary>(.quest) ~ (15.4KB)</Summary>
+    ///<Summary>(.quest) ~ (14.2KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Market;
     ///<Summary>(.quest) ~ (227.7KB)</Summary>
     public readonly global::Inv.Resource.BinaryReference Phantasie;
@@ -77,7 +77,7 @@ namespace Pathos.Official
     ///<Summary>(.txt) ------------------------------------- (1.3KB)</Summary>
     public readonly global::Inv.Resource.TextReference GnollTown;
     ///<Summary>(.txt)          -----|        (0.7KB)</Summary>
-    public readonly global::Inv.Resource.TextReference HallOfGiants;
+    public readonly global::Inv.Resource.TextReference HallofGiants;
     ///<Summary>(.txt) |--------------------------------------    -------------------|  ----| (1.2KB)</Summary>
     public readonly global::Inv.Resource.TextReference KoboldTown;
     ///<Summary>(.txt)          ------             (0.7KB)</Summary>

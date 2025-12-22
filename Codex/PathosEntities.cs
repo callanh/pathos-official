@@ -4787,7 +4787,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -4975,7 +4975,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.specialist, Skills.medium_armour, Skills.heavy_blade);
-        E.Startup.SetTalent(Properties.dark_vision);
+        E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.SetResistance(Elements.fire);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.scimitar);
@@ -14579,7 +14579,7 @@ namespace Pathos
         E.Startup.SetTalent(Properties.dark_vision, Properties.slow_digestion, Properties.appraisal);
         E.Startup.SetResistance(Elements.poison, Elements.petrify);
         E.Startup.Loot.AddKit(Chance.Always, Items.sling);
-        E.Startup.Loot.AddKit(Chance.Always, 2.d3() + 1, Stocks.gem);
+        E.Startup.Loot.AddKit(1.d3(), Chance.Always, Stocks.gem.Items.Where(I => I.Type == ItemType.Gem && I.Price > Gold.One).ToArray());
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.small_shield);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.helmet);
         E.Startup.Loot.AddKit(Chance.OneIn2, Items.scale_mail);
@@ -18849,7 +18849,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -21026,7 +21026,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -21076,7 +21076,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -21126,7 +21126,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -21176,7 +21176,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -21226,7 +21226,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -21292,7 +21292,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -21341,7 +21341,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -21393,7 +21393,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -21445,7 +21445,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -21498,7 +21498,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -22116,7 +22116,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -22162,7 +22162,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -22215,7 +22215,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -22264,7 +22264,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -22313,7 +22313,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: true,
           Limbs: true,
           Feet: true,
@@ -24653,7 +24653,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24697,7 +24697,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24748,7 +24748,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24792,7 +24792,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24836,7 +24836,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24880,7 +24880,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24927,7 +24927,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -24971,7 +24971,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -25015,7 +25015,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -25059,7 +25059,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -26777,7 +26777,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade, Skills.heavy_armour, Skills.heavy_blade);
-        E.Startup.SetTalent(Properties.dark_vision);
+        E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d13()); // +3
         E.SetCorpse(Chance.OneIn3);
@@ -26865,7 +26865,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.medium_armour, Skills.medium_blade);
-        E.Startup.SetTalent(Properties.dark_vision);
+        E.Startup.SetTalent(Properties.dark_vision, Properties.cannibalism);
         E.Startup.Loot.AddKit(Chance.OneIn2, Dice.One, Items.orcish_helm);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +2
         E.SetCorpse(Chance.OneIn3);
@@ -27300,7 +27300,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27364,7 +27364,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27422,7 +27422,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27495,7 +27495,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27548,7 +27548,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27605,7 +27605,7 @@ namespace Pathos
           Mind: false,
           Voice: false,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -27660,7 +27660,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -29624,7 +29624,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -29672,7 +29672,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -29726,7 +29726,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -29771,7 +29771,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -29818,7 +29818,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -29978,7 +29978,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30030,7 +30030,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30077,7 +30077,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30130,7 +30130,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30180,7 +30180,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30230,7 +30230,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30280,7 +30280,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: true,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: true,
           Feet: false,
@@ -30339,7 +30339,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -30387,7 +30387,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -30432,7 +30432,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -30476,7 +30476,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -30520,7 +30520,7 @@ namespace Pathos
           Mind: true,
           Voice: true,
           Eyes: false,
-          Ears: true,
+          Ears: false,
           Hands: false,
           Limbs: false,
           Feet: false,
@@ -31411,7 +31411,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control, Properties.stealth);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.polymorph_control, Properties.teleport_control, Properties.stealth, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9());
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d9()); // +3
@@ -31460,7 +31460,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4()); // +1
         E.AddAttack(AttackTypes.claw, Elements.physical, 3.d4());
@@ -31514,7 +31514,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep, Elements.magical);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10()); // +3
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10());
@@ -31576,7 +31576,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.physical, 4.d3()); // +2
         E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d6());
@@ -31625,7 +31625,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient, Skills.necromancy, Skills.evocation, Skills.enchantment, Skills.literacy);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
         E.Startup.SetResistance(Elements.poison, Elements.drain, Elements.sleep);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
@@ -31685,7 +31685,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness, Properties.invisibility);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness, Properties.invisibility, Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
@@ -31741,7 +31741,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6()); // +3
         E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>

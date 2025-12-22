@@ -12,7 +12,7 @@ AfflictionName,rabies,כלבת
 AfflictionName,reflux,רפלוקס
 AfflictionName,sliming,ריפוש
 AfflictionName,worms,תולעים
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,קרניים
 AnatomyAbsenceText,MINDLESS,אין מוח
 AnatomyAbsenceText,NO BLOOD,אין דם
 AnatomyAbsenceText,NO EARS,אין אוזניים
@@ -32,7 +32,7 @@ AnatomyName,eyes,עיניים
 AnatomyName,feet,כפות רגליים
 AnatomyName,hands,ידיים
 AnatomyName,head,ראש
-AnatomyName,horns,
+AnatomyName,horns,קרניים
 AnatomyName,limbs,גפיים
 AnatomyName,mind,מוח
 AnatomyName,mounted,ברכיבה
@@ -492,7 +492,7 @@ BlockName,wooden barrel,חבית עץ
 BoonDescription,Ask for a unicorn to join your party.,להזמין חד-קרן שיצטרף לחבורה שלך.
 BoonDescription,Bless one item in your inventory or on the ground.,לברך פריט אחד בציוד שלך או על הקרקע.
 BoonDescription,Brew a random potion into your bottle of water.,בישול שיקוי אקראי בבקבוק המים שלך.
-BoonDescription,Butcher a corpse into an easy to carry container.,קיצוץ גופה אך תוך מיכל נוח לנשיאה.
+BoonDescription,Butcher a corpse into an easy to carry container.,קיצוץ גופה אל תוך מיכל נוח לנשיאה.
 BoonDescription,Call upon the undead to fight for you.,הזמנת אל-מתים שיילחמו עבורך.
 BoonDescription,Convert one item into a random alternative of the same type.,המרת פריט אחד לתחליף אקראי מאותו סוג.
 BoonDescription,Determine the enchantment and charges of all carried items.,גילוי העוצמות של כל החפצים שלך.
@@ -1013,11 +1013,11 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","יצורים שמיימיים שמשמשים כלי קיבול לרוח עשויה לבלי חת של הרפתקן או הרפתקנית שמתו. אין להם שאיפות משלהם, והם שמחים להרשות את הדיבוק; עבור ההרפתקנים המתים, זאת הזדמנות שנייה לנקמה או גאולה. הם נולדו מחומר שמיימי ולכן הם דקים, שקופים, ויכולים לעבור בחופשיות דרך מכשולים פיזיים."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","יצורים יפיפיים שלא מן העולם הזה, בעלי הילה אופיינית וכנפיים עם נוצות. הם קשובים מאוד לקרב בין הטוב לרע, והם חשים את מידת הקדושה בכל דבר שהם אוחזים בו."
 EntityDescription,Beware this clockwork machine of war.,מכונת מלחמה מכנית ומסוכנת.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,אוטומטונים רבי עוצמה בעלי שתי רגליים ובינה מלאכותית כמעט בלתי מוגבלת. מנוע ההיתוך שמספק להם את כוחם דורש אספקה מתמדת של חומרי גלם והוא פגיע לנזקי מים.
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","יצורים ממין הפיות, מקושרים לרוחות הטבע שמסייעות להם בתעלוליהם. הם חסונים, בעלי גוף תחתון שעיר, פרסות עז שסועות וקרני כבש מסולסלות. הם גסים ופקחיים, ומנהלים חיי הנאה של שתייה, ריקוד וקרבות."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
-EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","זוחלים גדולים, אוכלי בשר, שאבות אבותיהם החייתיים שלטו בעולם הרבה לפני ערש התרבות. הם טורפים מעוררי אימה, מסוגלים לזנק מרחקים ארוכים ולהדוף מתקפות רבות בעזרת העורות העבים והקשקשיים שלהם."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","יצורים מרשימים וכבדים, דומים לדרקונים אנושיים בעלי חוטם ארוך, עור קשקשי וכנפיים שימושיות."
+EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","זוחלים גדולים, אוכלי כל, שאבות אבותיהם החייתיים שלטו בעולם הרבה לפני ערש התרבות. הם טורפים מעוררי אימה, מסוגלים לזנק מרחקים ארוכים ולהדוף מתקפות רבות בעזרת העורות העבים והקשקשיים שלהם."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,יצורים מפלצתיים עם ראש וזנב של שור ועם גוף אדם.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","יצורים סוטים שונים ומגוונים, אבל תמיד בעלי עור ארגמן וקרניים. עצם נוכחותם גורמת לאחרים לפעול על פי התשוקות האפלות והאלימות ביותר שלהם."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","מין רעבתני וטורף של דמויי אדם מפלצתיים בעלי גיבנת עצומה שגורמת לכך שגב היד שלהם נגרר על האדמה. למרות מראם הגופני המגושם, הם חזקים וידועים לשמצה ביכולת שלהם להתאושש במהירות מכל פציעה של העור הגמיש שלהם."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","סוטים חברתיים משני-צורה, שמשגשגים בזכות כישורי ההונאה שלהם."
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,דוקטור פרנקנשטיין
 EntityName,dog,כלב
 EntityName,doppelgänger,דופלגנגר
 EntityName,dracolich,דרקוליץ'
-EntityName,dracon,
+EntityName,dracon,דראקון
 EntityName,dragon king,מלך דרקונים
 EntityName,dretch,דרץ'
 EntityName,drow,אלף אפל
@@ -1464,7 +1464,7 @@ EntityName,migo queen,מלכת מיגו
 EntityName,migo warrior,לוחמת מיגו
 EntityName,mind flayer,מצליף מוחות
 EntityName,minotaur,מינוטאור
-EntityName,minotaur lord,
+EntityName,minotaur lord,שר מינוטאורים
 EntityName,mist wolf,זאב ערפל
 EntityName,mithril golem,גולם מיתריל
 EntityName,mobat,עטלף אימים
@@ -1560,7 +1560,7 @@ EntityName,red naga,נאגה אדומה
 EntityName,red naga hatchling,אבקוע של נאגה אדומה
 EntityName,rhaumbusun,ראומבוסון
 EntityName,rhumbat,רומבט
-EntityName,robot,
+EntityName,robot,רובוט
 EntityName,rock kobold,קובולד סלעים
 EntityName,rock mole,חפרפרת סלעים
 EntityName,rock piercer,נוקב סלעים
@@ -1664,7 +1664,7 @@ EntityName,war orc,אורק מלחמה
 EntityName,warg,וארג
 EntityName,warhorse,סוס מלחמה
 EntityName,warlock,אמגוש
-EntityName,warrior,לוחמת
+EntityName,warrior,לוחם
 EntityName,watch captain,מפקד המשמר
 EntityName,watchman,איש המשמר
 EntityName,water binder,עוקדת מים
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,תיבת פנדורה
 ItemName,panic boots,נעלי פאניקה
 ItemName,partisan,פארטיזאן
 ItemName,pear,אגס
-ItemName,pearl,
+ItemName,pearl,פנינה
 ItemName,phantom key,מפתח פאנטום
 ItemName,Philosophers Stone,אבן החכמים
 ItemName,pick-axe,מכוש
@@ -2837,7 +2837,7 @@ ItemName,tsurugi,צורוגי
 ItemName,turquoise,אבן טורקיז
 ItemName,two-handed sword,חרב דו-ידנית
 ItemName,unicorn horn,קרן של חדקרן
-ItemName,vegetable corpse,גופת ירק
+ItemName,vegetable corpse,גופה צמחית
 ItemName,Verimurus,ורימורוס
 ItemName,violet glass bauble,זכוכית סגולה וזולה
 ItemName,Voltaic,וולטאי
@@ -2944,7 +2944,7 @@ KindName,changeling,בן או בת חליפין
 KindName,demon,שד או שדה
 KindName,devourer,מעכל או מעכלת
 KindName,dog,כלב או כלבה
-KindName,dracon,
+KindName,dracon,דראקון או דראקונית
 KindName,dragon,דרקון או דרקונית
 KindName,dwarf,גמד או גמדה
 KindName,echo,הד
@@ -2984,7 +2984,7 @@ KindName,orc,אורק או אורקית
 KindName,plasmoid,פלזמואיד או פלזמואידית
 KindName,pudding,פודינג
 KindName,quadruped,הולך או הולכת על ארבע
-KindName,robot,
+KindName,robot,רובוט או רובוטית
 KindName,rodent,מכרסם או מכרסמת
 KindName,satyr,סאטיר
 KindName,snake,נחש או נחשה
@@ -3853,7 +3853,7 @@ MaterialName,sand,חול
 MaterialName,silver,כסף
 MaterialName,stone,אבן
 MaterialName,tin,פח
-MaterialName,vegetable,ירק
+MaterialName,vegetable,צמח
 MaterialName,water,מים
 MaterialName,wax,שעווה
 MaterialName,wood,עץ
@@ -4263,9 +4263,9 @@ RaceName,changeling//non-binary,חליפין
 RaceName,demon//female,שדה
 RaceName,demon//male,שד
 RaceName,demon//non-binary,שד.ה
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,דראקונית
+RaceName,dracon//male,דראקון
+RaceName,dracon//non-binary,דראקונ.ית
 RaceName,dwarf//female,גמדה
 RaceName,dwarf//male,גמד
 RaceName,dwarf//non-binary,גמד.ה
@@ -4323,9 +4323,9 @@ RaceName,orc//non-binary,אורק.ית
 RaceName,plasmoid//female,פלזמואידית
 RaceName,plasmoid//male,פלזמואיד
 RaceName,plasmoid//non-binary,פלזמואיד.ית
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,רובוטית
+RaceName,robot//male,רובוט
+RaceName,robot//non-binary,רובוט.ית
 RaceName,satyr//female,סאטירית
 RaceName,satyr//male,סאטיר
 RaceName,satyr//non-binary,סאטיר.ית

@@ -12431,6 +12431,8 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.disc, Sonics.throw_object, Elements.physical, DamageType.Bludgeon, 1.d10(), D => D.ApplyTransient(Properties.confusion, 3.d6()));
       });
 
+      SetUpgradeDowngradePair(horseshoe, magic_horseshoe);
+
       boomerang = AddThrownWeapon("boomerang", I =>
       {
         I.Description = "A flat throwing weapon made of wood, often used for hunting.";

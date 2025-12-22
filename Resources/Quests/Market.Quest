@@ -2,29 +2,29 @@
 
 map [Market] difficulty 0 40 x 40
 character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[000008]@[000009]@[000010]@[000011]@[000012]@[000013]@[000014]@[000015]@[000016]@[000017]@[000018]@[000019]@[000020]@[000021]@[000022];
-(15,06)  |[tree] topleftcorner .[dirt floor]
-(16,06)  |[tree] horizontal .[dirt floor]
-(17,06)  |[tree] teedown .[dirt floor]
-(18,06)  |[tree] horizontal .[dirt floor]
-(19,06)  |[tree] teedown .[dirt floor]
-(20,06)  |[tree] teedown .[dirt floor]
-(21,06)  |[tree] horizontal .[dirt floor]
-(22,06)  |[tree] teedown .[dirt floor]
-(23,06)  |[tree] horizontal .[dirt floor]
-(24,06)  |[tree] toprightcorner .[dirt floor]
-(14,07)  |[tree] topleftcorner .[dirt floor]
-(15,07)  |[tree] teeup .[dirt floor]
-(16,07)  |[tree] horizontal .[dirt floor]
-(17,07)  |[tree] bottomrightcorner .[dirt floor]
-(18,07)  .[dirt floor] >[transportal]
-(19,07)  |[tree] bottomleftcorner .[dirt floor]
-(20,07)  |[tree] bottomrightcorner .[dirt floor]
-(21,07)  .[dirt floor] >[transportal]
-(22,07)  |[tree] bottomleftcorner .[dirt floor]
-(23,07)  |[tree] horizontal .[dirt floor]
-(24,07)  |[tree] teeup .[dirt floor]
-(25,07)  |[tree] toprightcorner .[dirt floor]
-(14,08)  |[tree] vertical .[dirt floor]
+(15,06)  |[tree] .[dirt]
+(16,06)  |[tree] .[dirt]
+(17,06)  |[tree] .[dirt]
+(18,06)  |[tree] .[dirt]
+(19,06)  |[tree] .[dirt]
+(20,06)  |[tree] .[dirt]
+(21,06)  |[tree] .[dirt]
+(22,06)  |[tree] .[dirt]
+(23,06)  |[tree] .[dirt]
+(24,06)  |[tree] .[dirt]
+(14,07)  |[tree] .[dirt]
+(15,07)  |[tree] .[dirt]
+(16,07)  |[tree] .[dirt]
+(17,07)  |[tree] .[dirt]
+(18,07)  .[marble floor] >[transportal]
+(19,07)  |[tree] .[dirt]
+(20,07)  |[tree] .[dirt]
+(21,07)  .[marble floor] >[transportal]
+(22,07)  |[tree] .[dirt]
+(23,07)  |[tree] .[dirt]
+(24,07)  |[tree] .[dirt]
+(25,07)  |[tree] .[dirt]
+(14,08)  |[tree] .[dirt]
 (15,08)  .[marble floor]
 (16,08)  .[marble floor]
 (17,08)  .[marble floor]
@@ -35,44 +35,44 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (22,08)  .[marble floor]
 (23,08)  .[marble floor]
 (24,08)  .[marble floor]
-(25,08)  |[tree] vertical .[dirt floor]
-(14,09)  |[tree] vertical .[dirt floor]
+(25,08)  |[tree] .[dirt]
+(14,09)  |[tree] .[dirt]
 (15,09)  .[marble floor]
 (16,09)  .[water]
-(17,09)  |[tree] endup .[dirt floor]
+(17,09)  |[tree] .[dirt]
 (18,09)  .[water] #[wooden bridge] vertical
-(19,09)  |[tree] topleftcorner .[dirt floor]
-(20,09)  |[tree] toprightcorner .[dirt floor]
+(19,09)  |[tree] .[dirt]
+(20,09)  |[tree] .[dirt]
 (21,09)  .[water] #[wooden bridge] vertical
-(22,09)  |[tree] endup .[dirt floor]
+(22,09)  |[tree] .[dirt]
 (23,09)  .[water]
 (24,09)  .[marble floor]
-(25,09)  |[tree] vertical .[dirt floor]
-(14,10)  |[tree] vertical .[dirt floor]
+(25,09)  |[tree] .[dirt]
+(14,10)  |[tree] .[dirt]
 (15,10)  .[marble floor]
 (16,10)  .[water]
-(17,10)  |[tree] vertical .[dirt floor]
+(17,10)  |[tree] .[dirt]
 (18,10)  .[water] #[wooden bridge] vertical
-(19,10)  |[tree] vertical .[dirt floor]
-(20,10)  |[tree] vertical .[dirt floor]
+(19,10)  |[tree] .[dirt]
+(20,10)  |[tree] .[dirt]
 (21,10)  .[water] #[wooden bridge] vertical
-(22,10)  |[tree] vertical .[dirt floor]
+(22,10)  |[tree] .[dirt]
 (23,10)  .[water]
 (24,10)  .[marble floor]
-(25,10)  |[tree] vertical .[dirt floor]
-(14,11)  |[tree] vertical .[dirt floor]
+(25,10)  |[tree] .[dirt]
+(14,11)  |[tree] .[dirt]
 (15,11)  .[marble floor]
 (16,11)  .[water]
-(17,11)  |[tree] enddown .[water]
+(17,11)  |[tree] .[water]
 (18,11)  .[water] #[wooden bridge] vertical
-(19,11)  |[tree] bottomleftcorner .[dirt floor]
-(20,11)  |[tree] bottomrightcorner .[dirt floor]
+(19,11)  |[tree] .[dirt]
+(20,11)  |[tree] .[dirt]
 (21,11)  .[water] #[wooden bridge] vertical
-(22,11)  |[tree] enddown .[water]
+(22,11)  |[tree] .[water]
 (23,11)  .[water]
 (24,11)  .[marble floor]
-(25,11)  |[tree] vertical .[dirt floor]
-(14,12)  |[tree] vertical .[dirt floor]
+(25,11)  |[tree] .[dirt]
+(14,12)  |[tree] .[dirt]
 (15,12)  .[marble floor]
 (16,12)  .[marble floor]
 (17,12)  .[marble floor]
@@ -83,8 +83,8 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (22,12)  .[marble floor]
 (23,12)  .[marble floor]
 (24,12)  .[marble floor]
-(25,12)  |[tree] vertical .[dirt floor]
-(14,13)  |[tree] enddown .[dirt floor]
+(25,12)  |[tree] .[dirt]
+(14,13)  |[tree] .[dirt]
 (15,13)  |[hell brick] topleftcorner
 (16,13)  |[hell brick] horizontal
 (17,13)  |[hell brick] endright
@@ -95,7 +95,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (22,13)  |[hell brick] endleft
 (23,13)  |[hell brick] horizontal
 (24,13)  |[hell brick] toprightcorner
-(25,13)  |[tree] enddown .[dirt floor]
+(25,13)  |[tree] .[dirt]
 (08,14)  |[hell brick] topleftcorner
 (09,14)  |[hell brick] horizontal
 (10,14)  |[hell brick] horizontal
@@ -118,10 +118,10 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (31,14)  |[hell brick] toprightcorner
 (07,15)  |[hell brick] topleftcorner
 (08,15)  |[hell brick] bottomrightcorner
-(09,15)  .[dirt floor] _[grave]
-(10,15)  .[dirt floor] _[grave] @[000021]
-(11,15)  .[dirt floor] _[grave]
-(12,15)  |[hell brick] teeright .[dirt floor]
+(09,15)  .[dirt] _[grave]
+(10,15)  .[dirt] _[grave] @[000021]
+(11,15)  .[dirt] _[grave]
+(12,15)  |[hell brick] teeright .[dirt]
 (13,15)  |[hell brick] horizontal .[obsidian floor]
 (14,15)  |[hell brick] horizontal
 (15,15)  |[hell brick] bottomrightcorner
@@ -137,17 +137,17 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (25,15)  |[hell brick] horizontal
 (26,15)  |[hell brick] horizontal .[obsidian floor]
 (27,15)  |[hell brick] teeleft .[obsidian floor]
-(28,15)  .[dirt floor] @[000011]
-(29,15)  .[dirt floor] @[000012]
-(30,15)  .[dirt floor]
+(28,15)  .[dirt] @[000011]
+(29,15)  .[dirt] @[000012]
+(30,15)  .[dirt]
 (31,15)  |[hell brick] bottomleftcorner
 (32,15)  |[hell brick] toprightcorner
 (07,16)  |[hell brick] vertical
-(08,16)  .[dirt floor] _[grave]
-(09,16)  .[dirt floor] _[grave]
-(10,16)  .[dirt floor] _[grave]
-(11,16)  .[dirt floor] _[grave]
-(12,16)  +[crystal door] vertical reinforced locked .[dirt floor]
+(08,16)  .[dirt] _[grave]
+(09,16)  .[dirt] _[grave]
+(10,16)  .[dirt] _[grave]
+(11,16)  .[dirt] _[grave]
+(12,16)  +[crystal door] vertical reinforced locked .[dirt]
 (13,16)  .[obsidian floor] @[000005]
 (14,16)  .[obsidian floor]
 (15,16)  .[obsidian floor]
@@ -163,17 +163,17 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (25,16)  .[obsidian floor]
 (26,16)  .[obsidian floor] @[000007]
 (27,16)  +[crystal door] vertical reinforced locked .[obsidian floor]
-(28,16)  .[dirt floor] @[000010]
-(29,16)  .[dirt floor] @[000013]
-(30,16)  .[dirt floor] _[altar]
-(31,16)  .[dirt floor] ?[chest] container
+(28,16)  .[dirt] @[000010]
+(29,16)  .[dirt] @[000013]
+(30,16)  .[dirt] _[altar]
+(31,16)  .[dirt] ?[chest] container
 (32,16)  |[hell brick] vertical
 (07,17)  |[hell brick] vertical
-(08,17)  .[dirt floor] _[grave] @[000020]
-(09,17)  .[dirt floor] _[grave]
-(10,17)  .[dirt floor] _[grave] @[000019]
-(11,17)  .[dirt floor] _[grave]
-(12,17)  |[hell brick] vertical .[dirt floor]
+(08,17)  .[dirt] _[grave] @[000020]
+(09,17)  .[dirt] _[grave]
+(10,17)  .[dirt] _[grave] @[000019]
+(11,17)  .[dirt] _[grave]
+(12,17)  |[hell brick] vertical .[dirt]
 (13,17)  .[obsidian floor]
 (14,17)  .[marble floor] _[stall] container
 (15,17)  .[marble floor]
@@ -189,17 +189,17 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (25,17)  .[marble floor] _[stall] container
 (26,17)  .[obsidian floor]
 (27,17)  |[hell brick] vertical .[obsidian floor]
-(28,17)  .[dirt floor] @[000009]
-(29,17)  .[dirt floor] @[000014]
-(30,17)  .[dirt floor] _[pentagram]
-(31,17)  .[dirt floor] _[throne] @[000022]
+(28,17)  .[dirt] @[000009]
+(29,17)  .[dirt] @[000014]
+(30,17)  .[dirt] _[pentagram]
+(31,17)  .[dirt] _[throne] @[000022]
 (32,17)  |[hell brick] vertical
 (07,18)  |[hell brick] vertical
-(08,18)  .[dirt floor] _[grave]
-(09,18)  .[dirt floor] _[grave]
-(10,18)  .[dirt floor] _[grave]
-(11,18)  .[dirt floor] _[grave]
-(12,18)  +[crystal door] vertical reinforced locked .[dirt floor]
+(08,18)  .[dirt] _[grave]
+(09,18)  .[dirt] _[grave]
+(10,18)  .[dirt] _[grave]
+(11,18)  .[dirt] _[grave]
+(12,18)  +[crystal door] vertical reinforced locked .[dirt]
 (13,18)  .[obsidian floor] @[000006]
 (14,18)  .[obsidian floor]
 (15,18)  .[obsidian floor]
@@ -215,17 +215,17 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (25,18)  .[obsidian floor]
 (26,18)  .[obsidian floor] @[000008]
 (27,18)  +[crystal door] vertical reinforced locked .[obsidian floor]
-(28,18)  .[dirt floor] @[000016]
-(29,18)  .[dirt floor] @[000015]
-(30,18)  .[dirt floor] _[altar]
-(31,18)  .[dirt floor] ?[chest] container
+(28,18)  .[dirt] @[000016]
+(29,18)  .[dirt] @[000015]
+(30,18)  .[dirt] _[altar]
+(31,18)  .[dirt] ?[chest] container
 (32,18)  |[hell brick] vertical
 (07,19)  |[hell brick] bottomleftcorner
 (08,19)  |[hell brick] toprightcorner
-(09,19)  .[dirt floor] _[grave]
-(10,19)  .[dirt floor] _[grave]
-(11,19)  .[dirt floor] _[grave]
-(12,19)  |[hell brick] teeright .[dirt floor]
+(09,19)  .[dirt] _[grave]
+(10,19)  .[dirt] _[grave]
+(11,19)  .[dirt] _[grave]
+(12,19)  |[hell brick] teeright .[dirt]
 (13,19)  |[hell brick] horizontal .[obsidian floor]
 (14,19)  |[hell brick] horizontal
 (15,19)  |[hell brick] toprightcorner
@@ -241,9 +241,9 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (25,19)  |[hell brick] horizontal
 (26,19)  |[hell brick] horizontal .[obsidian floor]
 (27,19)  |[hell brick] teeleft .[obsidian floor]
-(28,19)  .[dirt floor] @[000017]
-(29,19)  .[dirt floor] @[000018]
-(30,19)  .[dirt floor]
+(28,19)  .[dirt] @[000017]
+(29,19)  .[dirt] @[000018]
+(30,19)  .[dirt]
 (31,19)  |[hell brick] topleftcorner
 (32,19)  |[hell brick] bottomrightcorner
 (08,20)  |[hell brick] bottomleftcorner
@@ -337,61 +337,61 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (23,27)  .[obsidian floor]
 (24,27)  |[hell brick] vertical
 (15,28)  |[hell brick] vertical
-(16,28)  .[dirt floor]
-(17,28)  .[dirt floor]
-(18,28)  .[dirt floor]
-(19,28)  .[dirt floor]
-(20,28)  .[dirt floor]
-(21,28)  .[dirt floor]
-(22,28)  .[dirt floor]
-(23,28)  .[dirt floor]
+(16,28)  .[dirt]
+(17,28)  .[dirt]
+(18,28)  .[dirt]
+(19,28)  .[dirt]
+(20,28)  .[dirt]
+(21,28)  .[dirt]
+(22,28)  .[dirt]
+(23,28)  .[dirt]
 (24,28)  |[hell brick] vertical
 (15,29)  |[hell brick] vertical
-(16,29)  .[dirt floor] `[statue]
-(17,29)  .[dirt floor] `[statue]
-(18,29)  .[dirt floor]
-(19,29)  .[dirt floor] `[statue]
-(20,29)  .[dirt floor] `[statue]
-(21,29)  .[dirt floor]
-(22,29)  .[dirt floor] `[statue]
-(23,29)  .[dirt floor] `[statue]
+(16,29)  .[dirt] `[statue]
+(17,29)  .[dirt] `[statue]
+(18,29)  .[dirt]
+(19,29)  .[dirt] `[statue]
+(20,29)  .[dirt] `[statue]
+(21,29)  .[dirt]
+(22,29)  .[dirt] `[statue]
+(23,29)  .[dirt] `[statue]
 (24,29)  |[hell brick] vertical
 (15,30)  |[hell brick] vertical
-(16,30)  .[dirt floor]
-(17,30)  .[dirt floor]
-(18,30)  .[dirt floor]
-(19,30)  .[dirt floor]
-(20,30)  .[dirt floor]
-(21,30)  .[dirt floor]
-(22,30)  .[dirt floor]
-(23,30)  .[dirt floor]
+(16,30)  .[dirt]
+(17,30)  .[dirt]
+(18,30)  .[dirt]
+(19,30)  .[dirt]
+(20,30)  .[dirt]
+(21,30)  .[dirt]
+(22,30)  .[dirt]
+(23,30)  .[dirt]
 (24,30)  |[hell brick] vertical
 (15,31)  |[hell brick] vertical
-(16,31)  .[dirt floor] `[statue]
-(17,31)  .[dirt floor] `[statue]
-(18,31)  .[dirt floor]
-(19,31)  .[dirt floor] `[statue]
-(20,31)  .[dirt floor] `[statue]
-(21,31)  .[dirt floor]
-(22,31)  .[dirt floor] `[statue]
-(23,31)  .[dirt floor] `[statue]
+(16,31)  .[dirt] `[statue]
+(17,31)  .[dirt] `[statue]
+(18,31)  .[dirt]
+(19,31)  .[dirt] `[statue]
+(20,31)  .[dirt] `[statue]
+(21,31)  .[dirt]
+(22,31)  .[dirt] `[statue]
+(23,31)  .[dirt] `[statue]
 (24,31)  |[hell brick] vertical
 (15,32)  |[hell brick] bottomleftcorner
 (16,32)  |[hell brick] toprightcorner
-(17,32)  .[dirt floor] `[statue]
-(18,32)  .[dirt floor]
-(19,32)  .[dirt floor]
-(20,32)  .[dirt floor]
-(21,32)  .[dirt floor]
-(22,32)  .[dirt floor] `[statue]
+(17,32)  .[dirt] `[statue]
+(18,32)  .[dirt]
+(19,32)  .[dirt]
+(20,32)  .[dirt]
+(21,32)  .[dirt]
+(22,32)  .[dirt] `[statue]
 (23,32)  |[hell brick] topleftcorner
 (24,32)  |[hell brick] bottomrightcorner
 (16,33)  |[hell brick] bottomleftcorner
 (17,33)  |[hell brick] toprightcorner
-(18,33)  .[dirt floor]
-(19,33)  .[dirt floor] `[statue]
-(20,33)  .[dirt floor] `[statue]
-(21,33)  .[dirt floor]
+(18,33)  .[dirt]
+(19,33)  .[dirt] `[statue]
+(20,33)  .[dirt] `[statue]
+(21,33)  .[dirt]
 (22,33)  |[hell brick] topleftcorner
 (23,33)  |[hell brick] bottomrightcorner
 (17,34)  |[hell brick] bottomleftcorner

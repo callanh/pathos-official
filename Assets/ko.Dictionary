@@ -12,7 +12,7 @@ AfflictionName,rabies,광견병
 AfflictionName,reflux,역류
 AfflictionName,sliming,슬라임화
 AfflictionName,worms,기생충
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,뿔
 AnatomyAbsenceText,MINDLESS,이성없음
 AnatomyAbsenceText,NO BLOOD,피 없음
 AnatomyAbsenceText,NO EARS,소리 없음
@@ -32,7 +32,7 @@ AnatomyName,eyes,눈
 AnatomyName,feet,발
 AnatomyName,hands,손
 AnatomyName,head,머리
-AnatomyName,horns,
+AnatomyName,horns,뿔
 AnatomyName,limbs,사지
 AnatomyName,mind,정신
 AnatomyName,mounted,승마가능
@@ -1013,11 +1013,11 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","스러진 모험가의 불굴의 영혼을 담는 영적인 그릇. 스스로는 움직이지 않으며, 모험가의 영혼에게 기꺼이 몸을 내어 복수 또는 속죄를 위한 두 번째 기회를 준다. 영적 물질로 만들어진 자그마한 몸은 투명하며 물리적 장애물을 통과할 수 있다."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",빛나는 후광과 깃털난 날개가 특징인 아름다운 초월적 존재. 선과 악의 대결에 단련된 그들은 손에 쥐는 모든 것들에서 성스러움을 느낀다.
 EntityDescription,Beware this clockwork machine of war.,이 시계테엽으로 만들어진 전쟁기계를 조심하라.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"거의 제한이 없는 인공지능을 탑재한 이족 보행 기계 자동인형. 지속적인 금속 공급이 필요한 융해 코어 엔진으로 구동되며, 침수 피해에 취약하다."
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","자연의 강력한 정령과 이어져 있는 익살스러운 장난꾼. 다부진 하반신은 털로 덮여 있고, 염소의 발굽과 양의 뿔을 가졌다. 상스럽고 영리한 이들은 마시고, 춤추고, 싸우며 경쾌하게 향락을 즐긴다."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","위압적이고 다부진 체격의 이들은 주둥이와 비늘 가죽, 그리고 실제로 비행이 가능한 날개를 가진 인간형 용을 닮았다."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","거대한 육식 도마뱀. 그들의 흉포한 조상은 문명이 탄생하기 훨씬 전에 세상을 지배했었다. 무시무시한 포식자인 그들은, 상당한 거리를 도약할 수 있고 두꺼운 비늘로 수많은 공격을 막을 수 있다."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,"황소의 머리와 꼬리, 그리고 인간의 몸을 가진 괴물 같은 생명체."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",핏빛 피부와 뿔이 달린 매우 기괴하고 뒤틀린 생명체. 존재 만으로도 타인을 가장 어둡고 폭력적인 욕망에 따라 움직이게 만든다.
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","팔이 땅에 끌릴 정도로 등이 굽은 거대한 종족. 굶주린 포식자인 이들은 기괴한 외형에도 불구하고 강인하며, 고무같은 가죽에 난 어떤 상처도 금세 회복하는 능력으로 악명높다."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",모습을 바꾸는 변이체. 그들은 능력을 이용해 타인을 속이는 것을 즐긴다.
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,프랑켄슈타인 박사
 EntityName,dog,개
 EntityName,doppelgänger,도플갱어
 EntityName,dracolich,드라코리치
-EntityName,dracon,
+EntityName,dracon,용인
 EntityName,dragon king,드래곤 킹
 EntityName,dretch,드레치
 EntityName,drow,드로우
@@ -1464,7 +1464,7 @@ EntityName,migo queen,미고 여왕
 EntityName,migo warrior,미고 전사
 EntityName,mind flayer,마인드 플레이어
 EntityName,minotaur,미노타우로스
-EntityName,minotaur lord,
+EntityName,minotaur lord,미노타우로스 군주
 EntityName,mist wolf,안개 늑대
 EntityName,mithril golem,미스릴 골렘
 EntityName,mobat,모뱃
@@ -1560,7 +1560,7 @@ EntityName,red naga,적색 나가
 EntityName,red naga hatchling,새끼 적색 나가
 EntityName,rhaumbusun,람부선
 EntityName,rhumbat,럼뱃
-EntityName,robot,
+EntityName,robot,로봇
 EntityName,rock kobold,바위 코볼트
 EntityName,rock mole,바위 두더지
 EntityName,rock piercer,바위 피어서
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,판도라의 상자
 ItemName,panic boots,공포의 부츠
 ItemName,partisan,파르티잔
 ItemName,pear,배
-ItemName,pearl,
+ItemName,pearl,진주
 ItemName,phantom key,유령 열쇠
 ItemName,Philosophers Stone,현자의 돌
 ItemName,pick-axe,곡괭이
@@ -2944,7 +2944,7 @@ KindName,changeling,체인질링
 KindName,demon,악마
 KindName,devourer,포식귀
 KindName,dog,개
-KindName,dracon,
+KindName,dracon,용인
 KindName,dragon,드래곤
 KindName,dwarf,드워프
 KindName,echo,메아리
@@ -2984,7 +2984,7 @@ KindName,orc,오크
 KindName,plasmoid,플라스마이드
 KindName,pudding,푸딩
 KindName,quadruped,네발짐승
-KindName,robot,
+KindName,robot,로봇
 KindName,rodent,설치류
 KindName,satyr,사티로스
 KindName,snake,뱀
@@ -4263,9 +4263,9 @@ RaceName,changeling//non-binary,체인질링
 RaceName,demon//female,악마
 RaceName,demon//male,악마
 RaceName,demon//non-binary,악마
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,용인
+RaceName,dracon//male,용인
+RaceName,dracon//non-binary,용인
 RaceName,dwarf//female,드워프
 RaceName,dwarf//male,드워프
 RaceName,dwarf//non-binary,드워프
@@ -4323,9 +4323,9 @@ RaceName,orc//non-binary,오크
 RaceName,plasmoid//female,플라스마이드
 RaceName,plasmoid//male,플라스마이드
 RaceName,plasmoid//non-binary,플라스마이드
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,로봇
+RaceName,robot//male,로봇
+RaceName,robot//non-binary,로봇
 RaceName,satyr//female,사티로스
 RaceName,satyr//male,사티로스
 RaceName,satyr//non-binary,사티로스

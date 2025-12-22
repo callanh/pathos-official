@@ -12,7 +12,7 @@ AfflictionName,rabies,besnilo
 AfflictionName,reflux,refluks
 AfflictionName,sliming,sluzi
 AfflictionName,worms,crvi
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,ROGOVI
 AnatomyAbsenceText,MINDLESS,BEZUMNI
 AnatomyAbsenceText,NO BLOOD,NEMA KRVI
 AnatomyAbsenceText,NO EARS,NEMA UŠI
@@ -32,7 +32,7 @@ AnatomyName,eyes,oči
 AnatomyName,feet,noge
 AnatomyName,hands,ruke
 AnatomyName,head,glava
-AnatomyName,horns,
+AnatomyName,horns,rogovi
 AnatomyName,limbs,udovi
 AnatomyName,mind,um
 AnatomyName,mounted,uzjahao
@@ -1013,11 +1013,11 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Astralna bića koja su posuda za nesalomivi duh pobeđenog avanturiste. Bez sopstvene motivacije, rado dozvoljavaju posedovanje; za preminulog avanturiste, to je druga šansa za osvetu ili iskupljenje. Rođena iz astralne materije , blago su građeni, providni i mogu se slobodno kretati kroz fizičke prepreke."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Prelepa, vanzemaljska bića koja se odlikuju svojim prepoznatljivim oreolom i pernatim krilima. Snažno usklađeni sa borbom između dobra i zla, oni osećaju božanstvo unutar svega što drže."
 EntityDescription,Beware this clockwork machine of war.,Čuvajte se ove ratne mašinerije.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,Dvonožni mehanički automati sa gotovo neograničenom veštačkom inteligencijom. Pokretani motorom sa rastopljenim jezgrom koji zahteva stalan dotok sirovih metala i osetljiv je na oštećenja izazvana vodom.
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Feja stvorenja povezana moćnim prirodnim duhovima da podstiču njihove ludosti. Oni su zdepasti sa krznenim donjim delovima tela, iscepljenim kozjim kopitima i uvijenim rogovima ovna. Ribasti i pametni, veselo vode hedonističke eskapade opijanja, plesa i tuče."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
-EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Veliki, mesožderni reptili čiji su zverski preci dominirali svetom mnogo pre rođenja civilizacije. Oni su strašni grabežljivci, sposobni da skaču na impresivne udaljenosti i da odvrate mnoge napade svojom debelom ljuskavom kožom."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Impozantni i masivne građe, podsećaju na humanoidne zmajeve sa njuškom, krljuštastom kožom i funkcionalnim krilima."
+EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Veliki, svaštojedni reptili čiji su zverski preci dominirali svetom mnogo pre rođenja civilizacije. Oni su strašni grabežljivci, sposobni da skaču na impresivne udaljenosti i da odvrate mnoge napade svojom debelom ljuskavom kožom."
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Čudovišna bića sa glavom i repom bika i telom čoveka.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Izopačena stvorenja sa mnogo aberacija, ali uvek sa grimiznom kožom i rogovima. Njihovo samo prisustvo primorava druge da glume svoje najmračnije, najnasilnije želje."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Ravenantna, grabežljiva vrsta monstruoznog humanoida sa teškim predosećajem zbog kojeg se nadlanice vuku po zemlji. Uprkos nezgodnom fizičkom izgledu, snažno su građeni i zloglasni su po svojoj sposobnosti da se brzo oporave od bilo koje rane. njihova gumena koža."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Devijantima koji menjaju oblik, koji napreduju na svojim prevarantskim talentima."
@@ -1076,15 +1076,15 @@ EntityName,archon,arhon
 EntityName,Archpriest Avvakrum,Arčprist Avakrum
 EntityName,artisan,zanatlija
 EntityName,Ashikaga Takauji,Ašikaga Takaudži
-EntityName,Asmodeus,Asmodeus
+EntityName,Asmodeus,Asmodes
 EntityName,asphynx,asfinks
 EntityName,assassin bug,buba antetator
 EntityName,Assassin Mortimer,Asasin Mortimer
-EntityName,astral deva,astral deva
+EntityName,astral deva,astralna diva
 EntityName,athol,atol
 EntityName,attendant,atendant
 EntityName,Baalzebub,Balzebub
-EntityName,babau,babau
+EntityName,babau,babav
 EntityName,baby black dragon,beba crni zmaj
 EntityName,baby blue dragon,beba plavi zmaj
 EntityName,baby crocodile,beba krokodil
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Doktor Frankenštajn
 EntityName,dog,pas
 EntityName,doppelgänger,dvojnik
 EntityName,dracolich,drakolič
-EntityName,dracon,
+EntityName,dracon,drakon
 EntityName,dragon king,kralj zmajeva
 EntityName,dretch,dretč
 EntityName,drow,drov
@@ -1464,7 +1464,7 @@ EntityName,migo queen,migo kraljica
 EntityName,migo warrior,migo ratnik
 EntityName,mind flayer,derikoža
 EntityName,minotaur,minotaur
-EntityName,minotaur lord,
+EntityName,minotaur lord,gospodar minotaura
 EntityName,mist wolf,magleni vuk
 EntityName,mithril golem,mitrilan džin
 EntityName,mobat,slepi miš sa zubima
@@ -1560,7 +1560,7 @@ EntityName,red naga,crvena naga
 EntityName,red naga hatchling,mladunče crvene nage
 EntityName,rhaumbusun,raumbusun
 EntityName,rhumbat,rum slepi miš
-EntityName,robot,
+EntityName,robot,robot
 EntityName,rock kobold,kameni kobold
 EntityName,rock mole,kamena krtica
 EntityName,rock piercer,kameni pirser
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,Pandorina Kutija
 ItemName,panic boots,čizme panike
 ItemName,partisan,partizano koplje
 ItemName,pear,kruška
-ItemName,pearl,
+ItemName,pearl,biser
 ItemName,phantom key,fantomski ključ
 ItemName,Philosophers Stone,Filozovski Kamen
 ItemName,pick-axe,kramp
@@ -2944,7 +2944,7 @@ KindName,changeling,preobličar
 KindName,demon,demon
 KindName,devourer,žderač
 KindName,dog,pas
-KindName,dracon,
+KindName,dracon,drakon
 KindName,dragon,zmaj
 KindName,dwarf,patuljak
 KindName,echo,eho
@@ -2970,7 +2970,7 @@ KindName,kobold,kobold
 KindName,lich,lič
 KindName,light,svetlo
 KindName,lizard,gušter
-KindName,lizardman,ćovek gušter
+KindName,lizardman,čovek gušter
 KindName,lycanthrope,likantrop
 KindName,marine,marinac
 KindName,mercenary,plaćenik
@@ -2984,7 +2984,7 @@ KindName,orc,ork
 KindName,plasmoid,plazmoid
 KindName,pudding,puding
 KindName,quadruped,četvoronožni
-KindName,robot,
+KindName,robot,robot
 KindName,rodent,glodar
 KindName,satyr,satir
 KindName,snake,zmija
@@ -4263,9 +4263,9 @@ RaceName,changeling//non-binary,preobličar
 RaceName,demon//female,demon
 RaceName,demon//male,demon
 RaceName,demon//non-binary,demon
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,drakon
+RaceName,dracon//male,drakon
+RaceName,dracon//non-binary,drakon
 RaceName,dwarf//female,patuljak
 RaceName,dwarf//male,patuljak
 RaceName,dwarf//non-binary,patuljak
@@ -4308,9 +4308,9 @@ RaceName,leprechaun//non-binary,leprešun
 RaceName,lizardman//female,gušter
 RaceName,lizardman//male,gušter
 RaceName,lizardman//non-binary,gušter
-RaceName,minotaur//female,
-RaceName,minotaur//male,
-RaceName,minotaur//non-binary,
+RaceName,minotaur//female,minotaur
+RaceName,minotaur//male,minotaur
+RaceName,minotaur//non-binary,minotaur
 RaceName,nymph//female,nimfa
 RaceName,nymph//male,nimfa
 RaceName,nymph//non-binary,nimfa
@@ -4323,9 +4323,9 @@ RaceName,orc//non-binary,ork
 RaceName,plasmoid//female,plazmoid
 RaceName,plasmoid//male,plazmoid
 RaceName,plasmoid//non-binary,plazmoid
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,robot
+RaceName,robot//male,robot
+RaceName,robot//non-binary,robot
 RaceName,satyr//female,satir
 RaceName,satyr//male,satir
 RaceName,satyr//non-binary,satir
