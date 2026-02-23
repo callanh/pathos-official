@@ -12,7 +12,7 @@ AfflictionName,rabies,Bệnh dại
 AfflictionName,reflux,Trào ngược dịch dạ dày
 AfflictionName,sliming,Hóa nhờn
 AfflictionName,worms,Hóa sâu
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,SỪNG
 AnatomyAbsenceText,MINDLESS,VÔ TRI
 AnatomyAbsenceText,NO BLOOD,KHÔNG CÓ MÁU
 AnatomyAbsenceText,NO EARS,KHÔNG TAI
@@ -32,7 +32,7 @@ AnatomyName,eyes,mắt
 AnatomyName,feet,chân
 AnatomyName,hands,tay
 AnatomyName,head,đầu
-AnatomyName,horns,
+AnatomyName,horns,sừng
 AnatomyName,limbs,cánh tay
 AnatomyName,mind,tâm trí
 AnatomyName,mounted,cưỡi
@@ -723,7 +723,7 @@ ClassDescription,"Noble savages, hardened to battle by generations of survival i
 ClassDescription,"Obsessed with blurring the line between life and death, these meddlers of dark forces prefer to associate with cadavers over the living. To some, the rituals are grotesque, but they see pure majesty in the manipulation of the natural order.","Ám ảnh với việc xóa nhòa đi ranh giới giữa sự sống và cái chết, những kẻ điều khiển sức mạnh bóng tối này thích làm việc với tử thi hơn là với sinh vật sống. Đối với một số chúng, lễ nghi là một việc kỳ quái, nhưng chúng cảm thấy uy nghi lẫm liệt khi đảo lộn trật tự tự nhiên."
 ClassDescription,"Pious scholars, oath-bound to their scripture. Although altruistic and good-natured, they are trained in martial arts so as to protect themselves and the canon they live by.","Những học giả sùng đạo, ràng buộc với thánh thư của họ. Mặc dù là người tốt và có lòng vị tha, họ được rèn luyện võ thuật kĩ càng để bảo vệ bản thân cũng như những người sùng đạo."
 ClassDescription,"Powerful sorcerers, lords of arcane knowledge, and vanguards of psychic warfare. They are unrivalled in their mastery of nearly all schools of magic, augmented by a wide array of mystical devices.","Những pháp sư hùng mạnh, chúa tể về kiến thức bí truyền, và là quân tiên phong trong chiến tranh tâm lý. Họ không có đối thủ về kĩ năng phép thuật, hỗ trợ bởi một loạt các thiết bị ma thuật."
-ClassDescription,"Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators, and this fervour is matched in their loyalty to their kin.","Hoang dã nhưng cực kì đáng gờm trong việc sinh tồn, họ là những kẻ hành động theo bản năng, hoàn toàn tự do khỏi những đạo đức,  tiêu chuẩn của cộng đồng. Họ được xem là những quái thú phóng đãng, và sự hăng hái này ngang với lòng trung thành với họ hàng của chúng."
+ClassDescription,"Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators, and this fervour is matched in their loyalty to their kin.","Hoang dã nhưng cực kì đáng gờm trong việc sinh tồn, họ là những kẻ hành động theo bản năng, hoàn toàn tự do khỏi những đạo đức, tiêu chuẩn của cộng đồng. Họ được xem là những quái thú phóng đãng, và sự hăng hái này ngang với lòng trung thành với họ hàng của chúng."
 ClassDescription,Professional marksmen who are obsessed with hunting the biggest game. Heavily equipped with firearms and the desire to build the most fantastical trophy collection.,"Những thiện xạ chuyên nghiệp, ám ảnh với việc đi săn những con thú to lớn nhất. Được trang bị tận răng với súng ống và khát khao tạo nên bộ sưu tập dị thường nhất."
 ClassDescription,Questionably pious individuals from an ancient religious and military order. They abuse this power and influence to crusade against practitioners of the occult and supernatural beings.,Những người sùng đạo đến khó hiểu đến từ một tôn giáo cổ đại và quân đội cổ xưa. Họ lạm dụng sức mạnh và danh tiếng của mình để chống lại những kẻ theo đạo thần bí và những sinh vật siêu nhiên.
 ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.","Những nhà khoa học tinh túy nhất và nhà khảo cổ học đầy gan dạ. Cả hai đều mạnh mẽ và vui tính, họ trên đường khám phá tri thức và danh hiệu. Họ yêu thích roi vụt đến khó hiểu, và đều ghét rắn."
@@ -1013,11 +1013,11 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Những thực thể thần thánh, là vỏ bọc cho những linh hồn bất khuất của những nhà thám hiểm. Chúng không có mục tiêu, luôn sẵn lòng cho mượn lấy cơ thể của mình; đối với những nhà thám hiểm đã chết, đây chính là cơ hội thứ hai để trả thù hoặc chuộc lỗi. Được tạo ra từ vật chất thiên thạch, chúng rất mỏng, trong suốt và có thể bay lượn tự do xuyên qua vật chất."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Xinh đẹp, những thực thể siêu nhiên này nổi bật với đặc điểm như vầng hào quang hay cánh lông vũ. Rất hòa hợp với cuộc chiến giữa cái thiện và cái ác, họ có thể cảm nhận được tính thánh hóa của mọi vật họ chạm vào."
 EntityDescription,Beware this clockwork machine of war.,Hãy coi chừng cỗ máy của chiến tranh.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"Những cỗ máy 2 chân tự động với trí tuệ nhân tạo gần như vô song. Được vận hành bởi một bộ lõi kim loại lỏng và cần nguồn cung cấp kim loại thô liên tục, chúng dễ bị tổn thương bởi sát thương từ nước."
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Những sinh vật thần tiên, được kết nối bởi linh hồn thiên nhiên mạnh mẽ để tiếp nối những trò hề của họ. Cơ thể chắc nịch, phần dưới có lông, có móng vuốt giống loài dê và sừng xoắn ốc giống loài cừu. Dâm tục và thông minh, họ vui vẻ dẫn dắt những tù nhân của sự khoái lạc vào việc uống, nhảy múa và đánh nhau."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Với vẻ ngoài oai nghiêm cường hoá bởi thân hình cứng cáp, chúng có nét tương đồng với tộc người rồng với cái mõm, da vảy và bộ cánh."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","To lớn, những người bò sát ăn thịt mà tổ tiên của họ đã từng thống trị thế giới trước khi nền văn minh ra đời. Họ là những sát thủ ăn thịt đáng sợ, có thể nhảy vọt với khoảng cách rất xa và chống lại rất nhiều đòn tấn công với vảy cứng của họ."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Thứ sinh vật quái quỷ với cái đầu và đuôi của con bò lai với thân hình của con người.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Những sinh vật biến thái lầm lạc nhưng luôn có màu da đỏ thắm và mọc sừng. Sự xuất hiện của chúng khiến tất cả bộc lộ những tham vọng, trụy lạc đen tối và bạo lực nhất."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Giống loài người khổng lồ ăn thịt đói khát, với cục bướu to khiến cho bàn tay của họ bị kéo lê trên mặt đất. Mặc dù ngoại hình kì lạ, họ cực kỉ khỏe mạnh và nổi tiếng nhờ khả năng hồi phục mọi vết thương vào da dẻo dai của họ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Giống loài biến hình lệch lạc, sống nhờ vào tài năng lừa dối của chúng."
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Bác sĩ Frankenstein
 EntityName,dog,chó
 EntityName,doppelgänger,người song trùng
 EntityName,dracolich,rồng vu yêu
-EntityName,dracon,
+EntityName,dracon,dracon
 EntityName,dragon king,vua rồng
 EntityName,dretch,tiểu quỷ lợn
 EntityName,drow,tiểu quỷ hắc ám
@@ -1464,7 +1464,7 @@ EntityName,migo queen,migo chúa
 EntityName,migo warrior,migo đực
 EntityName,mind flayer,kẻ ăn não
 EntityName,minotaur,nhân ngưu
-EntityName,minotaur lord,
+EntityName,minotaur lord,lãnh chúa nhân ngưu
 EntityName,mist wolf,sói sương
 EntityName,mithril golem,golem mithril
 EntityName,mobat,dơi hóa nhỏ
@@ -1560,7 +1560,7 @@ EntityName,red naga,xà nhân màu đỏ
 EntityName,red naga hatchling,xà nhân con màu đỏ
 EntityName,rhaumbusun,rhaumbusun
 EntityName,rhumbat,rhumbat
-EntityName,robot,
+EntityName,robot,người máy
 EntityName,rock kobold,kobold đá
 EntityName,rock mole,chuột chũi đào đá
 EntityName,rock piercer,ốc gai đá
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,Chiếc Hộp Pandora
 ItemName,panic boots,đôi giày hoảng loạn
 ItemName,partisan,thương khoát đầu
 ItemName,pear,quả lê
-ItemName,pearl,
+ItemName,pearl,ngọc trai
 ItemName,phantom key,chìa khóa bóng ma
 ItemName,Philosophers Stone,Viên Đá Philosophers
 ItemName,pick-axe,cuốc chim
@@ -2944,7 +2944,7 @@ KindName,changeling,yêu tinh mạo danh
 KindName,demon,ác quỷ
 KindName,devourer,devourer
 KindName,dog,chó
-KindName,dracon,
+KindName,dracon,dracon
 KindName,dragon,rồng
 KindName,dwarf,người lùn
 KindName,echo,vong hồn
@@ -2984,7 +2984,7 @@ KindName,orc,orc
 KindName,plasmoid,plasmoid
 KindName,pudding,pudding
 KindName,quadruped,động vật 4 chân
-KindName,robot,
+KindName,robot,người máy
 KindName,rodent,bộ gặm nhấm
 KindName,satyr,thần dê
 KindName,snake,rắn
@@ -3032,6 +3032,7 @@ LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
 LiteralText,animate mount,tái sinh vật cưỡi
 LiteralText,animate revenant,tái sinh những vong hồn
+LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
 LiteralText,any item,mọi vật phẩm
@@ -3216,6 +3217,7 @@ LiteralText,Disable online services,tắt dịch vụ online (sảnh danh vọng
 LiteralText,Disable pitch shifting,tắt dịch cao độ
 LiteralText,Disable spacebar real-time toggle,bật tắt chế độ thời gian thực bằng nút cách
 LiteralText,Disable swipe gestures,tắt cử chỉ vuốt
+LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,tước vũ khí
 LiteralText,DISCONNECT,NGẮT KẾT NỐI
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
@@ -3352,6 +3354,8 @@ LiteralText,identify one item,định danh chỉ một
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
 LiteralText,ILLUSION,ẢO ẢNH
+LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,kháng
 LiteralText,immunities,kháng hiệu ứng
 LiteralText,impact,khi tác động
@@ -3393,6 +3397,7 @@ LiteralText,KNOWLEDGE,KIẾN THỨC ĐÃ HỌC
 LiteralText,LANGUAGE,NGÔN NGỮ
 LiteralText,LEARN ALL SPELLS,HỌC TẤT CẢ PHÉP THUẬT
 LiteralText,learn spells,học phép thuật
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
 LiteralText,LEFT RING,NHẪN TRÁI
 LiteralText,LEVEL CHART,BẢNG CẤP ĐỘ
 LiteralText,level//rank,cấp độ
@@ -3438,6 +3443,7 @@ LiteralText,MIMIC,GIẢ DẠNG
 LiteralText,mimicking,đang giả dạng
 LiteralText,mobilise block,di chuyển tảng đá
 LiteralText,modifier,cấp số nhân
+LiteralText,MORE INFO,
 LiteralText,MOUNT,CƯỠI
 LiteralText,Mount which direction?,Cưỡi hướng nào?
 LiteralText,MOUNTED,ĐÃ CƯỠI
@@ -3815,6 +3821,7 @@ LiteralText,WRONG WAY,NHẦM HƯỚNG
 LiteralText,"You are playing as anonymous, please register!","Bạn đang chơi với tư cách là ẩn danh, xin vui lòng đăng ký!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Bạn có thể cần LỤC SOÁT để tìm những cánh cửa bí mật bằng nút hình con mắt.
 LiteralText,Your current movement and action speed in squares per second.,Tốc độ di chuyển và hành động hiện tại của bạn tính bằng ô vuông trên giây.
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,PHÓNG TO
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz
@@ -4263,9 +4270,9 @@ RaceName,changeling//non-binary,yêu tinh mạo danh lưỡng tính
 RaceName,demon//female,quỷ nữ
 RaceName,demon//male,quỷ nam
 RaceName,demon//non-binary,quỷ lưỡng tính
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,dracon nữ
+RaceName,dracon//male,dracon nam
+RaceName,dracon//non-binary,dracon lưỡng tính
 RaceName,dwarf//female,người lùn nữ
 RaceName,dwarf//male,người lùn nam
 RaceName,dwarf//non-binary,người lùn lưỡng tính
@@ -4308,9 +4315,9 @@ RaceName,leprechaun//non-binary,leprechaun lưỡng tính
 RaceName,lizardman//female,người thằn lằn nữ
 RaceName,lizardman//male,người thằn lằn nam
 RaceName,lizardman//non-binary,người thằn lằn lưỡng tính
-RaceName,minotaur//female,
-RaceName,minotaur//male,
-RaceName,minotaur//non-binary,
+RaceName,minotaur//female,nhân ngưu nữ
+RaceName,minotaur//male,nhân ngưu nam
+RaceName,minotaur//non-binary,nhân ngưu lưỡng tính
 RaceName,nymph//female,nymph nữ
 RaceName,nymph//male,nymph nam
 RaceName,nymph//non-binary,nymph lưỡng tính
@@ -4323,9 +4330,9 @@ RaceName,orc//non-binary,orc lưỡng tính
 RaceName,plasmoid//female,plasmoid nữ
 RaceName,plasmoid//male,plasmoid nam
 RaceName,plasmoid//non-binary,plasmoid lưỡng tính
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,người máy nữ
+RaceName,robot//male,người máy nam
+RaceName,robot//non-binary,người máy lưỡng tính
 RaceName,satyr//female,thần dê nữ
 RaceName,satyr//male,thần dê nam
 RaceName,satyr//non-binary,thần dê lưỡng tính

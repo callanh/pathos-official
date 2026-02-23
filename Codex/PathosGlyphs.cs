@@ -762,6 +762,7 @@ namespace Pathos
     public readonly Glyph female_wizard;
 
     // angel.
+    public readonly Glyph angel_nonbinary_bard;
     public readonly Glyph angel_nonbinary_healer;
     public readonly Glyph angel_nonbinary_paladin;
 
@@ -849,6 +850,7 @@ namespace Pathos
     public readonly Glyph dwarf_male_caveman;
     public readonly Glyph dwarf_male_explorer;
     public readonly Glyph dwarf_male_knight;
+    public readonly Glyph dwarf_male_miner;
     public readonly Glyph dwarf_male_ranger;
     public readonly Glyph dwarf_male_reaver;
     public readonly Glyph dwarf_male_valkyrie;

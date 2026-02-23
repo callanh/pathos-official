@@ -31644,7 +31644,7 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
-      // TODO: fire vampire and star vampire are Lovecraftian aliens that are not undead vampires - perhaps move to Kinds.flayer and rename to star/fire flayer? Or introduce a new one such as Kinds.alien?
+      // TODO: fire/star vampire are Lovecraftian aliens that are not undead vampires - perhaps move to Kinds.flayer and rename to star/fire flayer? Or introduce a new one such as Kinds.alien?
       fire_vampire = AddEntity(Kinds.vampire, null, "fire vampire", E =>
       {
         //E.Description = " A fire vampire is a powerful type of vampire that is not undead like other members of the monster class - it is instead an extraterrestrial being that is humanoid and infravisible, though it still shares the vampire's regeneration abilities and resistances, along with their weakness to silver.";
@@ -31685,7 +31685,7 @@ namespace Pathos
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient, Skills.evocation, Skills.literacy);
         E.Startup.AddGrimoire(Dice.One, Spells.fireball);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness, Properties.invisibility, Properties.dark_vision);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.quickness, Properties.dark_vision);
         E.Startup.SetResistance(Elements.cold, Elements.fire, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8()); // +2 from STR.
         E.AddAttack(AttackTypes.claw, Elements.fire, 2.d8());
@@ -31741,7 +31741,7 @@ namespace Pathos
         E.SetGreed();
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision);
+        E.Startup.SetTalent(Properties.flight, Properties.life_regeneration, Properties.vitality, Properties.dark_vision, Properties.invisibility);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.tentacle, Elements.physical, 2.d6()); // +3
         E.AddAttack(AttackTypes.tentacle, Elements.physical, Dice.Zero, K =>

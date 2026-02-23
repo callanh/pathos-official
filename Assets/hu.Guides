@@ -213,8 +213,8 @@
 `   remove punishment;  büntetés eltávolítása
 /
 ` karma >= good;karma >= jó
-`   fully healed if less than half life;  ha az életerő kevesebb mint a felére csökken: teljes gyógyulás
-`   fully restored if less than half mana;  ha a mana kevesebb mint a felére csökken: teljes visszatöltés
+`   fully healed life;  ha az életerő kevesebb mint a felére csökken: teljes gyógyulás
+`   fully restored mana;  ha a mana kevesebb mint a felére csökken: teljes visszatöltés
 /
 ` karma >= glorious;karma >= dicsőséges
 `   remove blindness;  vakság eltávolítása

@@ -726,7 +726,7 @@ ClassDescription,"Powerful sorcerers, lords of arcane knowledge, and vanguards o
 ClassDescription,"Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators, and this fervour is matched in their loyalty to their kin.","שורדים פרימיטיביים אבל מעוררי יראה, שפועלים אך ורק על פי אינסטינקטים. הם חופשיים מכל המוסכמות החברתיות, ממוסר ותרבות. הם נחשבים לטורפים מרושעים, אבל באותה מידה הם גם נאמנים לבני מינם."
 ClassDescription,Professional marksmen who are obsessed with hunting the biggest game. Heavily equipped with firearms and the desire to build the most fantastical trophy collection.,"קלעים מקצועיים, אובססיביים לגבי ציד של טרף יותר ויותר גדול. מצויידים היטב בכלי ירייה וברצון לאסוף שלל פנטסטי."
 ClassDescription,Questionably pious individuals from an ancient religious and military order. They abuse this power and influence to crusade against practitioners of the occult and supernatural beings.,בעלי נאמנות דתית מפוקפקת ממסדר דתי וצבאי עתיק. הם מנצלים את כוחם ואת ההשפעה שלהם כדי לצאת למסע צלב נגד העוסקים בתורת הנסתר ונגד יצורים על טבעיים.
-ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.","מדענים למופת וחוקרי הסיטוריה חסרי מורא. חצופים אבל גם מעודנים, הם מחפשים גם ידע וגם תהילה. יש להם חיבה משונה לשימוש בשוט ומסיבה כלשהי הם שונאים נחשים."
+ClassDescription,"Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.","מדענים למופת וחוקרי היסטוריה חסרי מורא. חצופים אבל גם מעודנים, הם מחפשים גם ידע וגם תהילה. יש להם חיבה משונה לשימוש בשוט ומסיבה כלשהי הם שונאים נחשים."
 ClassDescription,"Restless desperados, driven by wanderlust and troubled by the haunting memories of those they could not protect. They are sly masters of lead and steel, hellbent on redemption and retribution.","עבריינים נמלטים חסרי מנוח, מונעים מתאוות נדודים ומוטרדים מהזיכרונות הרודפים של אלה שלא הצליחו להגן עליהם. הם שליטים מיומנים של עופרת ופלדה, נחושים לגאולה ולנקמה."
 ClassDescription,"Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. They are well-versed in divine magic and the judicial delivery of violence to those they deem unworthy of salvation.","כוהנים צדקניים, שהקדישו את חייהם להקרבה ולהפצת דברי אליהם האדירים. הם מיומנים בקסם אלוהי ובשפטים אלימים באלה שאינם נחשבים בעיניהם לראוים לגאולה."
 ClassDescription,"Strongly built, tough and industrious workers who are more than capable in dangerous situations. Traditional practices and heavy tools are used to overcome obstacles in their pursuit of valuable gemstones.","פועלים חסונים, קשוחים וחרוצים שיכולתם רבה מאוד במצבים מסוכנים. הם משתמשים בשיטות מסורתיות ובכלים כבדים כדי להתגבר על מכשולים בחיפושם אחר אבני חן יקרות."
@@ -3032,6 +3032,7 @@ LiteralText,AMNESIA,שיכחון
 LiteralText,anatomy,מבנה גוף
 LiteralText,animate mount,החייאת מערום
 LiteralText,animate revenant,החייאת רוח נקם
+LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,באלמוניות
 LiteralText,anticlockwise 90 degrees,תשעים מעלות נגד כיוון השעון
 LiteralText,any item,כל חפץ
@@ -3216,6 +3217,7 @@ LiteralText,Disable online services,ביטול שירותי אונליין
 LiteralText,Disable pitch shifting,ביטול שינוי גובה הצליל
 LiteralText,Disable spacebar real-time toggle,ביטול שימוש במקש הרווח בזמן אמיתי
 LiteralText,Disable swipe gestures,ביטול תנועות החלקה
+LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,ניטרול נשק
 LiteralText,DISCONNECT,ניתוק
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,זוהה ניתוק. יש לבדוק שחיבור הרשת שלך אמין ושכל המכשירים משתמשים באותה גרסה של פאתוס.
@@ -3352,6 +3354,8 @@ LiteralText,identify one item,זיהוי אחד
 LiteralText,ILLITERATE,במצב אנלפביתי
 LiteralText,illusion,אשליה
 LiteralText,ILLUSION,אשליה
+LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,חסינות ל
 LiteralText,immunities,חסינויות
 LiteralText,impact,פגיעה
@@ -3393,6 +3397,7 @@ LiteralText,KNOWLEDGE,ידע
 LiteralText,LANGUAGE,שפה
 LiteralText,LEARN ALL SPELLS,לימוד כל הקסמים
 LiteralText,learn spells,לימוד קסמים
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
 LiteralText,LEFT RING,טבעת שמאל
 LiteralText,LEVEL CHART,תרשים הקומה
 LiteralText,level//rank,רמה
@@ -3438,6 +3443,7 @@ LiteralText,MIMIC,מימיק
 LiteralText,mimicking,חיקוי
 LiteralText,mobilise block,הזזת סלע
 LiteralText,modifier,משנה גודל
+LiteralText,MORE INFO,
 LiteralText,MOUNT,לרכוב
 LiteralText,Mount which direction?,באיזה כיוון לעלות לרכיבה?
 LiteralText,MOUNTED,ברכיבה
@@ -3815,6 +3821,7 @@ LiteralText,WRONG WAY,טעות בדרך
 LiteralText,"You are playing as anonymous, please register!",המשחק שלך במצב עילום-שם. נא להירשם!
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,לפעמים צריך לחפש דלתות סודיות באמצעות לחצן העין.
 LiteralText,Your current movement and action speed in squares per second.,מהירות התנועה והפעולה הנוכחית שלך בריבועים לשנייה.
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,זום
 LiteralText,ZOOS,גני חיות
 LiteralText,zZz,zZz

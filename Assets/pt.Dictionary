@@ -1016,7 +1016,7 @@ EntityDescription,Beware this clockwork machine of war.,Cuidado com essa engenho
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,Autômatos mecânicos bípedes com inteligência artificial praticamente ilimitada. Eles são alimentados por um motor de núcleo derretido que requer suprimento constante de metais brutos e é suscetível a danos por água.
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas féericas ligadas por poderosos espíritos da natureza para alimentar suas travessuras . Eles são atarracados com corpos inferiores peludos, cascos fendidos de cabra e chifres enrolados de carneiro . Irreverentes e espertos, eles alegremente conduzem aventuras hedonísticas de bebida , dança e luta ."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Imponentes e robustos, eles lembram dragões humanoides com focinho, pele escamosa e asas funcionais."
-EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos carnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas peles escamosas."
+EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos omnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas escamas."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Criaturas monstruosas com a cabeça e cauda de um touro e o corpo de um homem.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas que manifestam-se em muitas aberrações, mas sempre com pele rubra e terríveis chifres. Sua mera presença desperta em outrem os impulsos mais sombrios e violentos."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espécie voraz e predatória de gigantes humanóides, eles são extremamente corcundas, o que faz com que a parte de trás das suas mãos se arraste no chão . Apesar da aparência física estranha, eles são extremamente fortes e famosos por sua habilidade de se recuperar rapidamente de qualquer ferimento causado a sua pele extremamente resistente ."
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,Caixa de Pandora
 ItemName,panic boots,botas do pânico
 ItemName,partisan,alabarda
 ItemName,pear,pera
-ItemName,pearl,
+ItemName,pearl,pérola
 ItemName,phantom key,chave fantasma
 ItemName,Philosophers Stone,Pedra Filosofal
 ItemName,pick-axe,picareta
@@ -3032,6 +3032,7 @@ LiteralText,AMNESIA,AMNÉSIA
 LiteralText,anatomy,anatomia
 LiteralText,animate mount,animar montaria
 LiteralText,animate revenant,animar fantasmas
+LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,ANÔNIMO
 LiteralText,anticlockwise 90 degrees,90 graus anti-horário
 LiteralText,any item,qualquer item
@@ -3216,6 +3217,7 @@ LiteralText,Disable online services,Desabilitar serviços online
 LiteralText,Disable pitch shifting,desabilitar mudança de tom
 LiteralText,Disable spacebar real-time toggle,Desabilitar tempo real ao apertar espaço
 LiteralText,Disable swipe gestures,desabilitar deslize para agir
+LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,desarmar
 LiteralText,DISCONNECT,DESCONECTAR
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Desconexão detectada. Por favor certifique-se de que você está conectado à internet e que todos os aparelhos estão na mesma versão do Pathos.
@@ -3352,6 +3354,8 @@ LiteralText,identify one item,identificar um
 LiteralText,ILLITERATE,ILETRADO
 LiteralText,illusion,ilusão
 LiteralText,ILLUSION,ILUSÃO
+LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,imune a
 LiteralText,immunities,imunidades
 LiteralText,impact,impacto
@@ -3393,6 +3397,7 @@ LiteralText,KNOWLEDGE,CONHECIMENTO
 LiteralText,LANGUAGE,IDIOMA
 LiteralText,LEARN ALL SPELLS,APRENDER TODOS os FEITIÇOS
 LiteralText,learn spells,aprender feitiços
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
 LiteralText,LEFT RING,ANEL ESQUERDO
 LiteralText,LEVEL CHART,MAPA DE NÍVEIS
 LiteralText,level//rank,nível
@@ -3438,6 +3443,7 @@ LiteralText,MIMIC,MÍMICA
 LiteralText,mimicking,mimetizando
 LiteralText,mobilise block,mobilizar pedregulho
 LiteralText,modifier,modificador
+LiteralText,MORE INFO,
 LiteralText,MOUNT,MONTAR
 LiteralText,Mount which direction?,Montar em qual direção?
 LiteralText,MOUNTED,MONTADO
@@ -3815,6 +3821,7 @@ LiteralText,WRONG WAY,CAMINHO ERRADO
 LiteralText,"You are playing as anonymous, please register!","Você está jogando como anônimo, por favor registre-se!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Você precisará PROCURAR por portas secretas usando o botão com um OLHO.
 LiteralText,Your current movement and action speed in squares per second.,Sua velocidade de movimento atual e ações em quadrados por segundos.
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,ZOOM
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz

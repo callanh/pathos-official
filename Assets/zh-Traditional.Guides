@@ -213,8 +213,8 @@
 `   remove punishment;   移除懲罰
 /
 ` karma >= good; 運程 >= 良好
-`   fully healed if less than half life;   如果生命值低於一半，將其回滿。
-`   fully restored if less than half mana;   如果魔法值低於一半，將其回滿。
+`   fully healed life;   如果生命值低於一半，將其回滿。
+`   fully restored mana;   如果魔法值低於一半，將其回滿。
 /
 ` karma >= glorious; 運程 >= 充滿榮耀
 `   remove blindness;   移除 致盲

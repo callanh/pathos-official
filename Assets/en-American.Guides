@@ -213,8 +213,8 @@
 `   remove punishment;
 /
 ` karma >= good;
-`   fully healed if less than half life;
-`   fully restored if less than half mana;
+`   fully healed life;
+`   fully restored mana;
 /
 ` karma >= glorious;
 `   remove blindness;

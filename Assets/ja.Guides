@@ -213,8 +213,8 @@
 `   remove punishment; 天罰からの解放
 /
 ` karma >= good; カルマ >= 善良
-`   fully healed if less than half life; ライフが半分より下回っていた場合、完全に回復
-`   fully restored if less than half mana; マナが半分より下回っていた場合、完全に回復
+`   fully healed life; ライフが半分より下回っていた場合、完全に回復
+`   fully restored mana; マナが半分より下回っていた場合、完全に回復
 /
 ` karma >= glorious; カルマ >= 高潔
 `   remove blindness; 盲目を取り除く

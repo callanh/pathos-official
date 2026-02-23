@@ -213,8 +213,8 @@
 `   remove punishment;  ceza kaldır
 /
 ` karma >= good;karma >= iyi
-`   fully healed if less than half life;  Canın yarıdan az ise tamamlanır
-`   fully restored if less than half mana;  Manan yarıdan az ise tamamlanır
+`   fully healed life;  Canın yarıdan az ise tamamlanır
+`   fully restored mana;  Manan yarıdan az ise tamamlanır
 /
 ` karma >= glorious;karma >= şanlı
 `   remove blindness;  körlüğün kalkar

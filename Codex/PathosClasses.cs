@@ -180,6 +180,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_bard);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_bard);
         C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_bard);
+        C.AddAvatar(Races.angel, Genders.nonbinary, Glyphs.angel_nonbinary_bard);
         C.AddFeat(2, Properties.free_action);
         C.AddFeat(8, Properties.appraisal);
         C.AddFeat(14, Properties.clarity);
@@ -327,6 +328,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_miner);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_miner);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_miner);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_miner);
         C.AddFeat(1, Properties.searching);
         C.AddFeat(5, Properties.vitality);
         C.AddFeat(10, Properties.appraisal);
