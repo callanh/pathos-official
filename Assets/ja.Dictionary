@@ -569,11 +569,11 @@ CharacterName,Chemron,ケムロン
 CharacterName,Cheyne,チェイン
 CharacterName,Choung,チョン
 CharacterName,Crepsal,クレサル
+CharacterName,D'rey,ディ・レイ
 CharacterName,Damano,ダマノ
 CharacterName,Daracy,ダレイシィ
 CharacterName,Davicohr,ダヴィコウル
 CharacterName,Donneller,ダネラー
-CharacterName,D'rey,ディ・レイ
 CharacterName,Dug,ダグ
 CharacterName,Elishmeli,エリシュメリ
 CharacterName,Ellent,エレント
@@ -1068,8 +1068,8 @@ EntityName,ape,猿
 EntityName,Aphrodite,『アフロディーテ』
 EntityName,apprentice,見習い
 EntityName,arc bug,電弧虫
-EntityName,archangel,大天使
 EntityName,arch-lich,アーチリッチ
+EntityName,archangel,大天使
 EntityName,Archmage Dirachi,大魔術師『ディラーチ』
 EntityName,Archmage Flaynn,大魔術師『フレイン』
 EntityName,archon,アルコン
@@ -1103,9 +1103,9 @@ EntityName,bad egg,悪い卵
 EntityName,balrog,バルログ
 EntityName,baluchitherium,バルキテリウム
 EntityName,banshee,バンシー
+EntityName,bar-lgura,バールグーラ
 EntityName,barbed devil,棘の悪魔
 EntityName,barking spider,ズダカグモ
-EntityName,bar-lgura,バールグーラ
 EntityName,barrow wight,塚のワイト
 EntityName,basilisk,バシリスク
 EntityName,bat,コウモリ
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,キーストン警部
 EntityName,keystone kop,キーストン巡査
 EntityName,keystone lieutenant,キーストン警部補
 EntityName,keystone sergeant,キーストン巡査部長
+EntityName,ki-rin,麒麟
 EntityName,killer bee,キラービー
 EntityName,killer beetle,キラービートル
 EntityName,killer food ration,人喰い携行食
 EntityName,killer iron ration,人喰い非常用食肉
 EntityName,killer tripe ration,人喰い屑モツ
 EntityName,king cobra,キングコブラ
-EntityName,ki-rin,麒麟
 EntityName,kitten,子猫
 EntityName,kobold,コボルト
 EntityName,kobold king,コボルトの王
@@ -1646,8 +1646,8 @@ EntityName,troll,トロル
 EntityName,troll mummy,トロルのミイラ
 EntityName,tsetse fly,ツェツェバエ
 EntityName,tunnel worm,穴掘りワーム
-EntityName,Twoflower,『ツーフラワー』
 EntityName,two-headed troll,双頭のトロル
+EntityName,Twoflower,『ツーフラワー』
 EntityName,umber hulk,アンバーハルク
 EntityName,undead slayer,アンデッド退治屋
 EntityName,vampire,吸血鬼
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",先端を尖らせた鉄製の長いナイフ。投げることを想定した重量バランスに作られている。
 ItemDescription,A long pipe meant for shooting darts through force of breath.,息でダーツを撃ち出すための、長いパイプ。
 ItemDescription,A long thrusting polearm best suited to mounted combat.,非常に長い刺突用の槍。騎乗した状態での戦闘に最適である。
+ItemDescription,A long-shafted arrow with a distinctive tip.,特徴的な矢じりの付いた長い矢。
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",長くしなやかな革ひも。意外に思われるかもしれないが十分な殺傷能力を持つ。
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",長くてゆるやかな、フードの付いた長袖の服。
-ItemDescription,A long-shafted arrow with a distinctive tip.,特徴的な矢じりの付いた長い矢。
 ItemDescription,A mace that is spiked on its head.,頭部にスパイクの付いたメイス。
 ItemDescription,A meal made from the stomach lining of an animal.,動物の胃壁から作られた食べ物。
 ItemDescription,"A package of preserved meats, all dried and chewy.",すっかり乾いて歯ごたえがある、包装された保存用食肉。
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,銅のプレートメイル
 ItemName,Brumstyk,『ブラムスティック』
 ItemName,bullet,弾丸
 ItemName,bullwhip,一本鞭
+ItemName,c-ration,C型携行食
 ItemName,caltrops,撒き菱
 ItemName,can of grease,グリス缶
 ItemName,candy bar,チョコバー
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,『コロッサル・エクスカヴェーター』
 ItemName,cornuthaum,魔法使いの帽子
 ItemName,costume earrings,ただの耳飾り
 ItemName,cram ration,圧縮携行食
-ItemName,c-ration,C型携行食
 ItemName,cream pie,クリームパイ
 ItemName,Creeping Sprout,『クリーピング・スプラウト』
 ItemName,crossbow,クロスボウ
@@ -2542,13 +2542,13 @@ ItemName,jasper,碧玉
 ItemName,javelin,ジャベリン
 ItemName,jet,黒玉
 ItemName,jumping boots,跳躍の靴
+ItemName,k-ration,K型携行食
 ItemName,kaleidoscope glasses,トリップメガネ
 ItemName,kanabo,金棒
 ItemName,katana,刀
 ItemName,katar,カタール
 ItemName,kelp frond,昆布
 ItemName,knife,ナイフ
-ItemName,k-ration,K型携行食
 ItemName,lab coat,実験着
 ItemName,lance,ランス
 ItemName,land mine,地雷
@@ -2820,6 +2820,7 @@ ItemName,stone club,石の棍棒
 ItemName,studded leather armour,鋲付きレザーアーマー
 ItemName,submachine gun,サブマシンガン
 ItemName,Sunsword,『サンソード』
+ItemName,t-shirt,Tシャツ
 ItemName,Talaria,『タラリア』
 ItemName,The Hero,『ザ・ヒーロー』
 ItemName,thunder staff,雷鳴の杖
@@ -2832,7 +2833,6 @@ ItemName,torch,たいまつ
 ItemName,tortilla,トルティーヤ
 ItemName,trident,トライデント
 ItemName,tripe ration,屑モツ
-ItemName,t-shirt,Tシャツ
 ItemName,tsurugi,大太刀
 ItemName,turquoise,トルコ石
 ItemName,two-handed sword,両手剣
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,壊れた
 LiteralText,burst rate,連射
 LiteralText,BUY,買う
 LiteralText,BUY ALL,全て買う
-LiteralText,CANCEL,取消
-LiteralText,cancellation,魔法除去
-LiteralText,CANCELLED,取り消した
 LiteralText,CAN'T BLINK,転位できない
 LiteralText,CAN'T HIDE,隠れることができない
 LiteralText,CAN'T JUMP,ジャンプできない
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,目が見えない
 LiteralText,CAN'T SLIDE,すり抜けられない
 LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
+LiteralText,CANCEL,取消
+LiteralText,cancellation,魔法除去
+LiteralText,CANCELLED,取り消した
 LiteralText,capture any entity,あらゆる大きさのモンスターを捕獲
 LiteralText,carried,所持品
 LiteralText,Cast,呪文
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,群れ
 LiteralText,HOST,ホスト
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,冒険を楽しんで頂けたでしょうか。どうぞ感想や提案をお寄せください。
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",Pathosのルールセットに基づいた新作ローグライク・プラットフォームアクション、『Zeroth』を開発中です。詳しくはこちらをタップ！
+LiteralText,I'm developing a new game called ZEROTH!,新作ゲーム『Zeroth』鋭意開発中！
 LiteralText,identified items,識別されたアイテム
 LiteralText,identify all items,すべてのアイテムを識別
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,床の上のすべてのアイテムを識別
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,アイテム1つを識別
 LiteralText,ILLITERATE,読めない
 LiteralText,illusion,幻影
 LiteralText,ILLUSION,幻影
-LiteralText,I'm developing a new game called ZEROTH!,新作ゲーム『Zeroth』鋭意開発中！
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",Pathosのルールセットに基づいた新作ローグライク・プラットフォームアクション、『Zeroth』を開発中です。詳しくはこちらをタップ！
 LiteralText,immune to,に免疫がある
 LiteralText,immunities,免疫
 LiteralText,impact,殴る
@@ -3554,15 +3554,18 @@ LiteralText,rank,ランク
 LiteralText,rarity,出現率
 LiteralText,rate & review on the app store,App Storeで評価・レビュー
 LiteralText,RE-ACT,同じ行動
+LiteralText,RE-CAST,再詠唱
+LiteralText,RE-EQUIP,再装備
+LiteralText,Re-roll,振り直し
+LiteralText,re-rolls,振り直し
+LiteralText,RE-USE,再使用
 LiteralText,Read books to learn spells,本を読んで呪文を学ぶ
 LiteralText,READ!,読む！
-LiteralText,REALLY CRASH?,本当に強制終了しますか？
 LiteralText,REAL-TIME,リアルタイム
+LiteralText,REALLY CRASH?,本当に強制終了しますか？
 LiteralText,recall party,仲間を呼び戻す
-LiteralText,RE-CAST,再詠唱
 LiteralText,Recommend Pathos,Pathosをお勧めする
 LiteralText,Redo,やり直し
-LiteralText,RE-EQUIP,再装備
 LiteralText,reflects,反射可能
 LiteralText,REGISTER,登録
 LiteralText,REGISTER PLAYER HANDLE,プレイヤーハンドルの登録
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,マナが全回復
 LiteralText,replica,複製の
 LiteralText,replicate item,アイテムを複製
 LiteralText,requires the skill to pick locks,閉開錠のスキルが必要
-LiteralText,Re-roll,振り直し
-LiteralText,re-rolls,振り直し
 LiteralText,reset random equipment,ランダムな装備の修正値を0にする
 LiteralText,resident?,住人?
 LiteralText,resistances,耐性
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,復活して冒険を続ける
 LiteralText,resurrections,復活
 LiteralText,retaliations,報復
 LiteralText,RETURN,戻る
-LiteralText,RE-USE,再使用
 LiteralText,REVEAL,姿を現す
 LiteralText,REVEAL ALL MAPS,全てのマップを表示
 LiteralText,REVEAL THIS MAP,この階層のマップを表示

@@ -569,11 +569,11 @@ CharacterName,Chemron,Čemron
 CharacterName,Cheyne,Čejn
 CharacterName,Choung,Čong
 CharacterName,Crepsal,Krepsal
+CharacterName,D'rey,D'rej
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daraci
 CharacterName,Davicohr,Davikor
 CharacterName,Donneller,Doneler
-CharacterName,D'rey,D'rej
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elišmeli
 CharacterName,Ellent,Elent
@@ -1068,8 +1068,8 @@ EntityName,ape,gorila
 EntityName,Aphrodite,Afrodita
 EntityName,apprentice,šegrt
 EntityName,arc bug,duga buba
-EntityName,archangel,arhanđel
 EntityName,arch-lich,arh-lič
+EntityName,archangel,arhanđel
 EntityName,Archmage Dirachi,Arčmejdž Dirači
 EntityName,Archmage Flaynn,Arčmejdž Flejn
 EntityName,archon,arhon
@@ -1103,9 +1103,9 @@ EntityName,bad egg,loše jaje
 EntityName,balrog,balrog
 EntityName,baluchitherium,balučiterijum
 EntityName,banshee,banši
+EntityName,bar-lgura,bar-lgura
 EntityName,barbed devil,bodljikavi đavo
 EntityName,barking spider,pauk koji laje
-EntityName,bar-lgura,bar-lgura
 EntityName,barrow wight,berov vajt
 EntityName,basilisk,basilisk
 EntityName,bat,slepi miš
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,kejston kapetan
 EntityName,keystone kop,kejston policajac
 EntityName,keystone lieutenant,Keistone poručnik
 EntityName,keystone sergeant,kejston narednik
+EntityName,ki-rin,kirin
 EntityName,killer bee,pčela ubica
 EntityName,killer beetle,tvrdokrilac ubica
 EntityName,killer food ration,ubistvena porcija hrane
 EntityName,killer iron ration,porcija gvožđa ubice
 EntityName,killer tripe ration,ubistveni porcija tripica
 EntityName,king cobra,kobra kralj
-EntityName,ki-rin,kirin
 EntityName,kitten,mačkica
 EntityName,kobold,kobold
 EntityName,kobold king,kralj kobolda
@@ -1646,8 +1646,8 @@ EntityName,troll,trol
 EntityName,troll mummy,trol mumija
 EntityName,tsetse fly,cece muva
 EntityName,tunnel worm,tunelski crv
-EntityName,Twoflower,Tvuflover
 EntityName,two-headed troll,dvoglavi trol
+EntityName,Twoflower,Tvuflover
 EntityName,umber hulk,ambr hulk
 EntityName,undead slayer,ubica nemrtvih
 EntityName,vampire,vampir
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Dugačak gvozdeni nož sa oštrim vrhom, opterećen za bacanje."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,Duga cev namenjena za gađanje strelica kroz snagu daha.
 ItemDescription,A long thrusting polearm best suited to mounted combat.,Dugačko bojno koplje koje je najprikladnije za borbu dok jašete.
+ItemDescription,A long-shafted arrow with a distinctive tip.,Strela sa dugim drškom sa karakterističnim vrhom.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.","Duge, fleksibilne kožne tange. Neočekivano oštre."
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.","Dugačka, lepršava odeća, sa dugim rukavima i kapuljačom."
-ItemDescription,A long-shafted arrow with a distinctive tip.,Strela sa dugim drškom sa karakterističnim vrhom.
 ItemDescription,A mace that is spiked on its head.,Buzdovan koji je šiljast na glavi.
 ItemDescription,A meal made from the stomach lining of an animal.,Obrok napravljen od stomačne sluznice životinje.
 ItemDescription,"A package of preserved meats, all dried and chewy.","Paket konzerviranog mesa, sve sušeno i žvakano."
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,bronzani oklop
 ItemName,Brumstyk,Brumstik
 ItemName,bullet,metak
 ItemName,bullwhip,bič za bikove
+ItemName,c-ration,c-obrok
 ItemName,caltrops,kaltrops
 ItemName,can of grease,konzerva masti
 ItemName,candy bar,slatkiš
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Kolosalni Ekskavator
 ItemName,cornuthaum,kornudaum
 ItemName,costume earrings,kostim minđuše
 ItemName,cram ration,natrpani obrok
-ItemName,c-ration,c-obrok
 ItemName,cream pie,krem pita
 ItemName,Creeping Sprout,Kriping Spraut
 ItemName,crossbow,samostrel
@@ -2542,13 +2542,13 @@ ItemName,jasper,džasper
 ItemName,javelin,bacačko koplje
 ItemName,jet,džet
 ItemName,jumping boots,čizme za skakanje
+ItemName,k-ration,k'obrok
 ItemName,kaleidoscope glasses,naočare za kaleidoskop
 ItemName,kanabo,kanabo
 ItemName,katana,katana
 ItemName,katar,katar
 ItemName,kelp frond,list kelpa
 ItemName,knife,kuhinjski nož
-ItemName,k-ration,k'obrok
 ItemName,lab coat,laboratorijski kaput
 ItemName,lance,lanza
 ItemName,land mine,mina
@@ -2820,6 +2820,7 @@ ItemName,stone club,kamena toljaga
 ItemName,studded leather armour,kožni oklop sa klinovima
 ItemName,submachine gun,puškomitraljez
 ItemName,Sunsword,Sunčani Mač
+ItemName,t-shirt,majica
 ItemName,Talaria,Talaria
 ItemName,The Hero,Heroj
 ItemName,thunder staff,štap groma
@@ -2832,7 +2833,6 @@ ItemName,torch,baklja
 ItemName,tortilla,tortilja
 ItemName,trident,trozubac
 ItemName,tripe ration,trajp obrok
-ItemName,t-shirt,majica
 ItemName,tsurugi,curugi
 ItemName,turquoise,tirkiz
 ItemName,two-handed sword,mač za dve ruke
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,POKVAREN
 LiteralText,burst rate,brzina rafala
 LiteralText,BUY,KUPI
 LiteralText,BUY ALL,KUPI SVE
-LiteralText,CANCEL,OTKAŽITE
-LiteralText,cancellation,otkazivanje
-LiteralText,CANCELLED,OTKAZAN
 LiteralText,CAN'T BLINK,NE MOŽE BLJESKATI
 LiteralText,CAN'T HIDE,NE MOŽE DA SE SAKRIJE
 LiteralText,CAN'T JUMP,NE MOŽE DA SKAČE
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,NE MOŽE DA VIDI
 LiteralText,CAN'T SLIDE,NE MOŽE DA KLIZI
 LiteralText,CAN'T TELEKINESIS,NE MOŽE DA TELEKINEZUJE
 LiteralText,CAN'T THROW,NE MOŽE DA BACI
+LiteralText,CANCEL,OTKAŽITE
+LiteralText,cancellation,otkazivanje
+LiteralText,CANCELLED,OTKAZAN
 LiteralText,capture any entity,hvatanje bića
 LiteralText,carried,nosi
 LiteralText,Cast,Baca
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,HORDE
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Međutim, možda ćete želeti da završite svoje avanture pre nego što dobijete ažuriranje."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Nadam se da uživate u svojim avanturama i slobodno me kontaktirajte sa svojim povratnim informacijama i predlozima.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,identifikovani predmeti
 LiteralText,identify all items,indetifikujte sve predmete
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,INDENTIFIKUJTE SVE PREDMETE SA PODA
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,indentifikujte jedan predmet
 LiteralText,ILLITERATE,NEPISMENI
 LiteralText,illusion,iluzija
 LiteralText,ILLUSION,ILUZIJA
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,imun na
 LiteralText,immunities,imuniteti
 LiteralText,impact,uticaj
@@ -3554,15 +3554,18 @@ LiteralText,rank,rank
 LiteralText,rarity,retkost
 LiteralText,rate & review on the app store,ocenite i pregledajte u prodavnici aplikacije
 LiteralText,RE-ACT,REAGUJTE PONOVO
+LiteralText,RE-CAST,BACITE PONOVO
+LiteralText,RE-EQUIP,OPREMITE PONOVO
+LiteralText,Re-roll,Re-roll
+LiteralText,re-rolls,zakotrljao ponovo
+LiteralText,RE-USE,ISKORISTITE PONOVO
 LiteralText,Read books to learn spells,Pročitajte knjige da bi ste naučili magije.
 LiteralText,READ!,PROČITAJTE!
-LiteralText,REALLY CRASH?,STVARNO SRUŠITI?
 LiteralText,REAL-TIME,REALNO-VREME
+LiteralText,REALLY CRASH?,STVARNO SRUŠITI?
 LiteralText,recall party,opozovite grupu
-LiteralText,RE-CAST,BACITE PONOVO
 LiteralText,Recommend Pathos,Preporučite Pathos
 LiteralText,Redo,Uradite ponovo
-LiteralText,RE-EQUIP,OPREMITE PONOVO
 LiteralText,reflects,odražava
 LiteralText,REGISTER,REGISTRUJTE SE
 LiteralText,REGISTER PLAYER HANDLE,REGISTRUJTE IME IGRAČA
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,dopuni manu
 LiteralText,replica,replika
 LiteralText,replicate item,kopirajte stavku
 LiteralText,requires the skill to pick locks,zahteva veštinu za obaranje brava
-LiteralText,Re-roll,Re-roll
-LiteralText,re-rolls,zakotrljao ponovo
 LiteralText,reset random equipment,resetujte random opremu
 LiteralText,resident?,rezident?
 LiteralText,resistances,otpori
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Oživeti i nastaviti
 LiteralText,resurrections,oživljavanja
 LiteralText,retaliations,odmazde
 LiteralText,RETURN,VRATITE SE
-LiteralText,RE-USE,ISKORISTITE PONOVO
 LiteralText,REVEAL,OTKRITE
 LiteralText,REVEAL ALL MAPS,OTKRITE SVE MAPE
 LiteralText,REVEAL THIS MAP,OTKRITE OVU MAPU

@@ -458,6 +458,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_hunter);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_hunter);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_hunter);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_hunter);
         C.AddFeat(5, Properties.searching);
         C.AddFeat(10, Elements.cold);
         C.AddFeat(15, Properties.clarity);

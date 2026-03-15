@@ -569,11 +569,11 @@ CharacterName,Chemron,Chemron
 CharacterName,Cheyne,Cheyne
 CharacterName,Choung,Choung
 CharacterName,Crepsal,Crepsal
+CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
 CharacterName,Davicohr,Davicohr
 CharacterName,Donneller,Donneller
-CharacterName,D'rey,D'rey
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
 CharacterName,Ellent,Ellent
@@ -1068,8 +1068,8 @@ EntityName,ape,majom
 EntityName,Aphrodite,Afrodité
 EntityName,apprentice,tanonc
 EntityName,arc bug,íveshátú bogár
-EntityName,archangel,arkangyal
 EntityName,arch-lich,lícs vezető
+EntityName,archangel,arkangyal
 EntityName,Archmage Dirachi,Fő Jégmágus
 EntityName,Archmage Flaynn,Fő Lángmágus
 EntityName,archon,arkhón
@@ -1103,9 +1103,9 @@ EntityName,bad egg,záptojás
 EntityName,balrog,balrog
 EntityName,baluchitherium,paraceratherium
 EntityName,banshee,banshee
+EntityName,bar-lgura,bar-igura
 EntityName,barbed devil,tüskés ördög
 EntityName,barking spider,madárpók
-EntityName,bar-lgura,bar-igura
 EntityName,barrow wight,buckamanó
 EntityName,basilisk,baziliszkus
 EntityName,bat,denevér
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,rendőr százados
 EntityName,keystone kop,rendőr
 EntityName,keystone lieutenant,rendőr hadnagy
 EntityName,keystone sergeant,rendőr őrmester
+EntityName,ki-rin,csi-lin
 EntityName,killer bee,gyilkos méh
 EntityName,killer beetle,gyilkos bogár
 EntityName,killer food ration,gyilkos élelmiszercsomag
 EntityName,killer iron ration,gyilkos vastartalék
 EntityName,killer tripe ration,gyilkos belsőség
 EntityName,king cobra,királykobra
-EntityName,ki-rin,csi-lin
 EntityName,kitten,kiscica
 EntityName,kobold,kobold
 EntityName,kobold king,koboldkirály
@@ -1646,8 +1646,8 @@ EntityName,troll,troll
 EntityName,troll mummy,trollmúmia
 EntityName,tsetse fly,cecelégy
 EntityName,tunnel worm,alagútféreg
-EntityName,Twoflower,Kétvirág
 EntityName,two-headed troll,kétfejű troll
+EntityName,Twoflower,Kétvirág
 EntityName,umber hulk,barna melák
 EntityName,undead slayer,élőholtvadász
 EntityName,vampire,vámpír
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Hosszú, dobásra súlyozott, hegyes vaskés."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,"Hosszú cső, melyből nyilakat fúvással lehet kilőni."
 ItemDescription,A long thrusting polearm best suited to mounted combat.,"Hosszú, döfésre alkalmas alabárd, amely hátason használva a leghatékonyabb."
+ItemDescription,A long-shafted arrow with a distinctive tip.,"Hosszú szárú nyíl, jellegzetes heggyel."
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.","Hosszú, rugalmas és meglepően éles bőrkorbács."
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.","Hosszú, leomló ruha, hosszú ujjal és kapucnival."
-ItemDescription,A long-shafted arrow with a distinctive tip.,"Hosszú szárú nyíl, jellegzetes heggyel."
 ItemDescription,A mace that is spiked on its head.,Egy tüskés fejű buzogány.
 ItemDescription,A meal made from the stomach lining of an animal.,"Egy étel, melyet állati gyomorból készítenek."
 ItemDescription,"A package of preserved meats, all dried and chewy.",Egy csomag szárított és rágós tartósított hús.
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,bronzpáncél
 ItemName,Brumstyk,
 ItemName,bullet,golyó
 ItemName,bullwhip,korbács
+ItemName,c-ration,kicsi élelmiszercsomag
 ItemName,caltrops,vassulyom
 ItemName,can of grease,zsírosbödön
 ItemName,candy bar,édesség
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Kolosszális Exkavátor
 ItemName,cornuthaum,cornuthaum
 ItemName,costume earrings,divatos fülbevaló
 ItemName,cram ration,nagy élelmiszercsomag
-ItemName,c-ration,kicsi élelmiszercsomag
 ItemName,cream pie,krémes pite
 ItemName,Creeping Sprout,Kúszó Hajtás
 ItemName,crossbow,számszeríj
@@ -2542,13 +2542,13 @@ ItemName,jasper,jáspis
 ItemName,javelin,gerely
 ItemName,jet,borostyánkő
 ItemName,jumping boots,ugrócipő
+ItemName,k-ration,közepes élelmiszercsomag
 ItemName,kaleidoscope glasses,kaleidoszkópos szemüveg
 ItemName,kanabo,kanabo
 ItemName,katana,katana
 ItemName,katar,katar
 ItemName,kelp frond,hínár
 ItemName,knife,kés
-ItemName,k-ration,közepes élelmiszercsomag
 ItemName,lab coat,laborköpeny
 ItemName,lance,kopja
 ItemName,land mine,taposóakna
@@ -2820,6 +2820,7 @@ ItemName,stone club,kőbunkó
 ItemName,studded leather armour,szegecselt bőrpáncél
 ItemName,submachine gun,géppisztoly
 ItemName,Sunsword,Napkard
+ItemName,t-shirt,póló
 ItemName,Talaria,Talaria
 ItemName,The Hero,A Hős
 ItemName,thunder staff,villámbot
@@ -2832,7 +2833,6 @@ ItemName,torch,fáklya
 ItemName,tortilla,tortilla
 ItemName,trident,háromágú szigony
 ItemName,tripe ration,belsőség
-ItemName,t-shirt,póló
 ItemName,tsurugi,tsurugi
 ItemName,turquoise,türkiz
 ItemName,two-handed sword,kétkezes kard
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,TÖRÖTT
 LiteralText,burst rate,sorozatlövés mértéke
 LiteralText,BUY,MEGVÁSÁROL
 LiteralText,BUY ALL,ÖSSZES MEGVÁSÁRLÁSA
-LiteralText,CANCEL,MÉGSE
-LiteralText,cancellation,érvénytelenítés
-LiteralText,CANCELLED,ÉRVÉNYTELENÍTVE
 LiteralText,CAN'T BLINK,NEM LEHET ELILLANNI
 LiteralText,CAN'T HIDE,NEM LEHET ELREJTENI
 LiteralText,CAN'T JUMP,NEM LEHET UGRANI
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,NEM LEHET LÁTNI
 LiteralText,CAN'T SLIDE,NEM LEHET CSÚSZNI
 LiteralText,CAN'T TELEKINESIS,NEM MEHET VÉGBE TELEKINÉZIS
 LiteralText,CAN'T THROW,NEM LEHET ELDOBNI
+LiteralText,CANCEL,MÉGSE
+LiteralText,cancellation,érvénytelenítés
+LiteralText,CANCELLED,ÉRVÉNYTELENÍTVE
 LiteralText,capture any entity,elfogás
 LiteralText,carried,hordozta
 LiteralText,Cast,Varázslatok
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,HORDÁK
 LiteralText,HOST,LÉTREHOZÁS
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Remélem élvezed a kalandokat! Bármilyen visszajelzéssel vagy javaslattal fordulj hozzám bizalommal.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,azonosított tárgyak
 LiteralText,identify all items,azonosítás összes
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,A PADLÓN LÉVŐ ÖSSZES TÁRGY AZONOSÍTÁSA
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,azonosítás egy
 LiteralText,ILLITERATE,ÍRÁSTUDATLAN
 LiteralText,illusion,illúzió
 LiteralText,ILLUSION,ILLÚZIÓ
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,védett a következővel szemben:
 LiteralText,immunities,védettség(ek)
 LiteralText,impact,hatás
@@ -3554,15 +3554,18 @@ LiteralText,rank,rang
 LiteralText,rarity,ritkaság
 LiteralText,rate & review on the app store,értékelés az app store-ban
 LiteralText,RE-ACT,ÚJRACSELEKVÉS
+LiteralText,RE-CAST,ÚJRAVARÁZSLÁS
+LiteralText,RE-EQUIP,ÚJRA FELSZERELÉS
+LiteralText,Re-roll,Újradob
+LiteralText,re-rolls,újradobások
+LiteralText,RE-USE,ÚJRAHASZNÁL
 LiteralText,Read books to learn spells,A varázslatok megtanulásához olvass könyveket
 LiteralText,READ!,OLVAS!
-LiteralText,REALLY CRASH?,BIZTOS ÖSSZEZÚZOD?
 LiteralText,REAL-TIME,VALÓS IDEJŰ
+LiteralText,REALLY CRASH?,BIZTOS ÖSSZEZÚZOD?
 LiteralText,recall party,visszahívás
-LiteralText,RE-CAST,ÚJRAVARÁZSLÁS
 LiteralText,Recommend Pathos,Pathos ajánlása
 LiteralText,Redo,Visszaállít
-LiteralText,RE-EQUIP,ÚJRA FELSZERELÉS
 LiteralText,reflects,tükrözés
 LiteralText,REGISTER,REGISZTRÁCIÓ
 LiteralText,REGISTER PLAYER HANDLE,JÁTÉKOSAZONOSÍTÓ REGISZTRÁLÁSA
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,
 LiteralText,replica,másolat
 LiteralText,replicate item,eszköz lemásolása
 LiteralText,requires the skill to pick locks,szükség van hozzá a zártörés képességre
-LiteralText,Re-roll,Újradob
-LiteralText,re-rolls,újradobások
 LiteralText,reset random equipment,véletlenszerű felszerelés visszaállítása
 LiteralText,resident?,ott tartózkodó?
 LiteralText,resistances,ellenállások
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Feltámasztás és folytatás
 LiteralText,resurrections,felélesztések
 LiteralText,retaliations,visszaütések
 LiteralText,RETURN,VISSZA
-LiteralText,RE-USE,ÚJRAHASZNÁL
 LiteralText,REVEAL,FELFED
 LiteralText,REVEAL ALL MAPS,EGÉSZ TÉRKÉP FELFEDÉSE
 LiteralText,REVEAL THIS MAP,

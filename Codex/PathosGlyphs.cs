@@ -849,6 +849,7 @@ namespace Pathos
     // dwarf.
     public readonly Glyph dwarf_male_caveman;
     public readonly Glyph dwarf_male_explorer;
+    public readonly Glyph dwarf_male_hunter;
     public readonly Glyph dwarf_male_knight;
     public readonly Glyph dwarf_male_miner;
     public readonly Glyph dwarf_male_ranger;

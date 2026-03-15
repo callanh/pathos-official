@@ -569,11 +569,11 @@ CharacterName,Chemron,Шемрон
 CharacterName,Cheyne,Шейн
 CharacterName,Choung,Чунг
 CharacterName,Crepsal,Крепсал
+CharacterName,D'rey,Д'рей
 CharacterName,Damano,Дамано
 CharacterName,Daracy,Дараси
 CharacterName,Davicohr,Давикор
 CharacterName,Donneller,Доннеллер
-CharacterName,D'rey,Д'рей
 CharacterName,Dug,Даг
 CharacterName,Elishmeli,Элишмели
 CharacterName,Ellent,Эллент
@@ -1068,8 +1068,8 @@ EntityName,ape,обезьяна
 EntityName,Aphrodite,Афродита
 EntityName,apprentice,ученик
 EntityName,arc bug,электрожук
-EntityName,archangel,архангел
 EntityName,arch-lich,архилич
+EntityName,archangel,архангел
 EntityName,Archmage Dirachi,Верховный маг Дирачи
 EntityName,Archmage Flaynn,Верховный маг Флинн
 EntityName,archon,архонт
@@ -1103,9 +1103,9 @@ EntityName,bad egg,плохое яйцо
 EntityName,balrog,балрог
 EntityName,baluchitherium,белуджитерий
 EntityName,banshee,баньши
+EntityName,bar-lgura,бар-лгура
 EntityName,barbed devil,шипастый дьявол
 EntityName,barking spider,коростяной паук
-EntityName,bar-lgura,бар-лгура
 EntityName,barrow wight,курганный уайт
 EntityName,basilisk,василиск
 EntityName,bat,нетопырь
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,недотёпа капитан
 EntityName,keystone kop,недотёпа коп
 EntityName,keystone lieutenant,недотёпа лейтенант
 EntityName,keystone sergeant,недотёпа сержант
+EntityName,ki-rin,ки-рин
 EntityName,killer bee,пчела-убийца
 EntityName,killer beetle,жук-убийца
 EntityName,killer food ration,паёк-убийца
 EntityName,killer iron ration,резервный паёк-убийца
 EntityName,killer tripe ration,требуха-убийца
 EntityName,king cobra,королевская кобра
-EntityName,ki-rin,ки-рин
 EntityName,kitten,котёнок
 EntityName,kobold,кобольд
 EntityName,kobold king,кобольд-король
@@ -1646,8 +1646,8 @@ EntityName,troll,тролль
 EntityName,troll mummy,мумия-тролль
 EntityName,tsetse fly,муха цеце
 EntityName,tunnel worm,тоннельный червь
-EntityName,Twoflower,Двацветок
 EntityName,two-headed troll,двухголовый тролль
+EntityName,Twoflower,Двацветок
 EntityName,umber hulk,бурый громила
 EntityName,undead slayer,убийца нежити
 EntityName,vampire,вампир
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Длинный железный нож, хорошо сбалансированный для метания."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,"Длинная трубка, предназначенная для стрельбы дротиками, приводимая в движение выдуваемым воздухом."
 ItemDescription,A long thrusting polearm best suited to mounted combat.,"Копьё с длинным древком, наиболее пригодное для боя верхом."
+ItemDescription,A long-shafted arrow with a distinctive tip.,Стрела с длинным древком и характерным наконечником.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",Длинный плетёный кожаный ремень. Неожиданно быстрый.
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",Длинная струящаяся одежда с длинными рукавами и капюшоном.
-ItemDescription,A long-shafted arrow with a distinctive tip.,Стрела с длинным древком и характерным наконечником.
 ItemDescription,A mace that is spiked on its head.,Булава с шипами на навершии.
 ItemDescription,A meal made from the stomach lining of an animal.,"Еда, приготовленная из внутренностей животного."
 ItemDescription,"A package of preserved meats, all dried and chewy.","Пакет консервированного мяса, всё сушёное и жевательное."
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,бронзовые латы
 ItemName,Brumstyk,Брумстик
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
+ItemName,c-ration,солдатский паёк
 ItemName,caltrops,шипы
 ItemName,can of grease,банка со смазкой
 ItemName,candy bar,шоколадный батончик
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Великий Землекоп
 ItemName,cornuthaum,корнутхаум
 ItemName,costume earrings,костюмные серьги
 ItemName,cram ration,сухой паёк
-ItemName,c-ration,солдатский паёк
 ItemName,cream pie,кремовый пирог
 ItemName,Creeping Sprout,Ползучий побег
 ItemName,crossbow,арбалет
@@ -2542,13 +2542,13 @@ ItemName,jasper,яшма
 ItemName,javelin,джавелин
 ItemName,jet,гагат
 ItemName,jumping boots,прыгающие сапоги
+ItemName,k-ration,армейский паёк
 ItemName,kaleidoscope glasses,калейдоскопные очки
 ItemName,kanabo,канабо
 ItemName,katana,катана
 ItemName,katar,катар
 ItemName,kelp frond,лист водоросли
 ItemName,knife,нож
-ItemName,k-ration,армейский паёк
 ItemName,lab coat,лабораторный халат
 ItemName,lance,длинное копьё
 ItemName,land mine,наземная мина
@@ -2820,6 +2820,7 @@ ItemName,stone club,каменная дубина
 ItemName,studded leather armour,клёпанный кожаный доспех
 ItemName,submachine gun,пистолет-пулемёт
 ItemName,Sunsword,Меч Солнца
+ItemName,t-shirt,футболка
 ItemName,Talaria,Таларии
 ItemName,The Hero,Герой
 ItemName,thunder staff,посох грома
@@ -2832,7 +2833,6 @@ ItemName,torch,факел
 ItemName,tortilla,тортилья
 ItemName,trident,трезубец
 ItemName,tripe ration,требуха
-ItemName,t-shirt,футболка
 ItemName,tsurugi,цуруги
 ItemName,turquoise,бирюза
 ItemName,two-handed sword,двуручный меч
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,СЛОМАН
 LiteralText,burst rate,скорострельность
 LiteralText,BUY,КУПИТЬ
 LiteralText,BUY ALL,КУПИТЬ ВСЁ
-LiteralText,CANCEL,ОТМЕНА
-LiteralText,cancellation,очищение
-LiteralText,CANCELLED,ОЧИЩЕНО
 LiteralText,CAN'T BLINK,НЕ МОЖЕТ МЕРЦАТЬ
 LiteralText,CAN'T HIDE,НЕ МОЖЕТ СКРЫТЬСЯ
 LiteralText,CAN'T JUMP,НЕ МОЖЕТ ПРЫГНУТЬ
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,НЕ МОЖЕТ ВИДЕТЬ
 LiteralText,CAN'T SLIDE,НЕ МОЖЕТ ВЫСКОЛЬЗНУТЬ
 LiteralText,CAN'T TELEKINESIS,НЕ МОЖЕТ ПРИМЕНИТЬ ТЕЛЕКИНЕЗ
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
+LiteralText,CANCEL,ОТМЕНА
+LiteralText,cancellation,очищение
+LiteralText,CANCELLED,ОЧИЩЕНО
 LiteralText,capture any entity,ловит
 LiteralText,carried,несомое
 LiteralText,Cast,Заклинания
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,ОРДЫ
 LiteralText,HOST,СОЗДАТЬ
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однако, вы можете завершить своё приключение прежде чем обновить игру."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я надеюсь, вы наслаждаетесь приключениями, и пожалуйста, не стесняйтесь отправлять мне ваши отзывы и предложения."
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Я разрабатываю новую игру под названием Zeroth, платформер в жанре рогалик, основанный на механиках Pathos. Нажмите здесь, чтобы узнать больше."
+LiteralText,I'm developing a new game called ZEROTH!,Я разрабатываю новую игру под названием Zeroth!
 LiteralText,identified items,распознал вещи
 LiteralText,identify all items,опознаёт всё
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ОПОЗНАТЬ ВСЕ ПРЕДМЕТЫ НА ПОЛУ
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,опознаёт один
 LiteralText,ILLITERATE,НЕГРАМОТНОСТЬ
 LiteralText,illusion,иллюзия
 LiteralText,ILLUSION,ИЛЛЮЗИЯ
-LiteralText,I'm developing a new game called ZEROTH!,Я разрабатываю новую игру под названием Zeroth!
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Я разрабатываю новую игру под названием Zeroth, платформер в жанре рогалик, основанный на механиках Pathos. Нажмите здесь, чтобы узнать больше."
 LiteralText,immune to,иммунен к
 LiteralText,immunities,иммунитет
 LiteralText,impact,воздействие
@@ -3554,15 +3554,18 @@ LiteralText,rank,место
 LiteralText,rarity,редкость
 LiteralText,rate & review on the app store,поставить оценку и написать отзыв на приложение
 LiteralText,RE-ACT,ПОВТОР ДЕЙСТВИЯ
+LiteralText,RE-CAST,ПОВТОРИТЬ ЗАКЛИНАНИЕ
+LiteralText,RE-EQUIP,ПЕРЕОДЕТЬ
+LiteralText,Re-roll,Перебросить кости
+LiteralText,re-rolls,броски костей
+LiteralText,RE-USE,ПЕРЕИСПОЛЬЗОВАТЬ
 LiteralText,Read books to learn spells,Читай книги для изучения заклинаний
 LiteralText,READ!,ПРОЧТИ!
-LiteralText,REALLY CRASH?,ВПРЯМЬ СЛОМАЛОСЬ?
 LiteralText,REAL-TIME,РЕАЛЬНЫЙ
+LiteralText,REALLY CRASH?,ВПРЯМЬ СЛОМАЛОСЬ?
 LiteralText,recall party,отзывает
-LiteralText,RE-CAST,ПОВТОРИТЬ ЗАКЛИНАНИЕ
 LiteralText,Recommend Pathos,Порекомендовать Pathos
 LiteralText,Redo,Повторить
-LiteralText,RE-EQUIP,ПЕРЕОДЕТЬ
 LiteralText,reflects,рефлексы
 LiteralText,REGISTER,РЕГИСТРАЦИЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕГИСТРАЦИЯ ИГРОКА
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,восполнение маны
 LiteralText,replica,копия
 LiteralText,replicate item,копирует вещь
 LiteralText,requires the skill to pick locks,необходим навык взлома
-LiteralText,Re-roll,Перебросить кости
-LiteralText,re-rolls,броски костей
 LiteralText,reset random equipment,устанавливает случайное снаряжение
 LiteralText,resident?,обыватель?
 LiteralText,resistances,сопротивления
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Воскресить и продолжить
 LiteralText,resurrections,воскрешения
 LiteralText,retaliations,ответный удар
 LiteralText,RETURN,ВЕРНУТЬСЯ
-LiteralText,RE-USE,ПЕРЕИСПОЛЬЗОВАТЬ
 LiteralText,REVEAL,РАСКРЫТЬСЯ
 LiteralText,REVEAL ALL MAPS,ОТКРЫТЬ ВСЕ КАРТЫ
 LiteralText,REVEAL THIS MAP,ОТКРЫТЬ ЭТУ КАРТУ

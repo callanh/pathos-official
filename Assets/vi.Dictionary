@@ -569,11 +569,11 @@ CharacterName,Chemron,Chemron
 CharacterName,Cheyne,Cheyne
 CharacterName,Choung,Choung
 CharacterName,Crepsal,Crepsal
+CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
 CharacterName,Davicohr,Davicohr
 CharacterName,Donneller,Donneller
-CharacterName,D'rey,D'rey
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
 CharacterName,Ellent,Ellent
@@ -1068,8 +1068,8 @@ EntityName,ape,vượn
 EntityName,Aphrodite,Aphrodite
 EntityName,apprentice,tập sự
 EntityName,arc bug,bọ điện lớn
-EntityName,archangel,tổng lãnh thiên sứ
 EntityName,arch-lich,tổng lãnh vu yêu
+EntityName,archangel,tổng lãnh thiên sứ
 EntityName,Archmage Dirachi,tổng lãnh phù thủy Dirachi
 EntityName,Archmage Flaynn,tổng lãnh phù thủy Flaynn
 EntityName,archon,quan chấp chính
@@ -1103,9 +1103,9 @@ EntityName,bad egg,trứng thối
 EntityName,balrog,quỷ balrog
 EntityName,baluchitherium,tê giác cổ
 EntityName,banshee,quỷ báo tử
+EntityName,bar-lgura,quỷ bar-lgura
 EntityName,barbed devil,quỷ có gai
 EntityName,barking spider,nhện barking
-EntityName,bar-lgura,quỷ bar-lgura
 EntityName,barrow wight,hồn ma cút kít
 EntityName,basilisk,tử xà
 EntityName,bat,dơi
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,đội trưởng keystone
 EntityName,keystone kop,cảnk sát keystone
 EntityName,keystone lieutenant,trung úy keystone
 EntityName,keystone sergeant,trung sĩ keystone
+EntityName,ki-rin,long mã
 EntityName,killer bee,ong sát thủ
 EntityName,killer beetle,bọ cánh cứng sát thủ
 EntityName,killer food ration,lương khô giết người
 EntityName,killer iron ration,két thịt giết người
 EntityName,killer tripe ration,thức ăn cho chó giết người
 EntityName,king cobra,rắn hổ chúa
-EntityName,ki-rin,long mã
 EntityName,kitten,mèo con
 EntityName,kobold,kobold
 EntityName,kobold king,vua kobold
@@ -1646,8 +1646,8 @@ EntityName,troll,troll
 EntityName,troll mummy,xác ướp troll
 EntityName,tsetse fly,ruồi xê xê
 EntityName,tunnel worm,giun đào đá
-EntityName,Twoflower,Twoflower
 EntityName,two-headed troll,troll 2 đầu
+EntityName,Twoflower,Twoflower
 EntityName,umber hulk,hulk nâu đất
 EntityName,undead slayer,thợ săn thây ma
 EntityName,vampire,ma cà rồng
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","1 con dao dài với đầu nhọn, dùng để ném."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,1 ống dài dùng để thổi phi tiêu.
 ItemDescription,A long thrusting polearm best suited to mounted combat.,1 cây thương dài dùng để chiến đấu trên ngựa.
+ItemDescription,A long-shafted arrow with a distinctive tip.,1 mũi tên dài với đầu tên đặc biệt.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",1 sợi dây da dài và dễ uốn. Sắc bén đến bất ngờ.
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.","1 bộ áo dài và phẳng, với cổ tay áo dài và mũ trùm đầu."
-ItemDescription,A long-shafted arrow with a distinctive tip.,1 mũi tên dài với đầu tên đặc biệt.
 ItemDescription,A mace that is spiked on its head.,1 cái chùy đính gai ở phần đầu.
 ItemDescription,A meal made from the stomach lining of an animal.,1 món ăn làm từ dạ dày của động vật.
 ItemDescription,"A package of preserved meats, all dried and chewy.",1 gói toàn thịt sấy khô. chúng rất khô và dai.
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,giáp tấm đồng
 ItemName,Brumstyk,Cây Chủi
 ItemName,bullet,viên đạn
 ItemName,bullwhip,roi dây
+ItemName,c-ration,khẩu phần tác chiến
 ItemName,caltrops,chông
 ItemName,can of grease,thùng đựng mỡ
 ItemName,candy bar,thanh kẹo
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Máy xúc khổng lồ
 ItemName,cornuthaum,cornuthaum
 ItemName,costume earrings,khuyên tai thời trang
 ItemName,cram ration,thực phẩm chay
-ItemName,c-ration,khẩu phần tác chiến
 ItemName,cream pie,bánh kem
 ItemName,Creeping Sprout,Mầm leo
 ItemName,crossbow,nỏ
@@ -2542,13 +2542,13 @@ ItemName,jasper,ngọc bích đỏ
 ItemName,javelin,lao
 ItemName,jet,đá huyền thạch
 ItemName,jumping boots,đôi giày nhảy
+ItemName,k-ration,khẩu phần chiến đấu hàng ngày
 ItemName,kaleidoscope glasses,cặp kính vạn hoa
 ItemName,kanabo,chùy kanabo
 ItemName,katana,katana
 ItemName,katar,dao nắm tay
 ItemName,kelp frond,lá tảo bẹ
 ItemName,knife,dao
-ItemName,k-ration,khẩu phần chiến đấu hàng ngày
 ItemName,lab coat,áo choàng trắng
 ItemName,lance,trường thương
 ItemName,land mine,mìn
@@ -2820,6 +2820,7 @@ ItemName,stone club,dùi cui đá
 ItemName,studded leather armour,giáp da độn cứng
 ItemName,submachine gun,súng tiểu liên
 ItemName,Sunsword,Kiếm mặt trời
+ItemName,t-shirt,áo thun
 ItemName,Talaria,Talaria
 ItemName,The Hero,Anh Hùng
 ItemName,thunder staff,gậy sấm
@@ -2832,7 +2833,6 @@ ItemName,torch,ngọn đuốc
 ItemName,tortilla,bánh tortilla
 ItemName,trident,đinh ba
 ItemName,tripe ration,thức ăn cho chó
-ItemName,t-shirt,áo thun
 ItemName,tsurugi,kiếm tsurugi
 ItemName,turquoise,ngọc lam
 ItemName,two-handed sword,kiếm song thủ
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,BỊ HỎNG
 LiteralText,burst rate,số đạn mỗi phát bắn
 LiteralText,BUY,MUA
 LiteralText,BUY ALL,MUA TẤT CẢ
-LiteralText,CANCEL,HỦY BỎ
-LiteralText,cancellation,phép loại bỏ
-LiteralText,CANCELLED,BỊ LOẠI BỎ
 LiteralText,CAN'T BLINK,KHÔNG THỂ NHẤP NHÁY
 LiteralText,CAN'T HIDE,KHÔNG THỂ TRỐN
 LiteralText,CAN'T JUMP,KHÔNG THỂ NHẢY
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,KHÔNG THỂ NHÌN
 LiteralText,CAN'T SLIDE,KHÔNG THỂ TRƯỢT
 LiteralText,CAN'T TELEKINESIS,KHÔNG THỂ CHUYỂN ĐỘNG TỪ XA
 LiteralText,CAN'T THROW,KHÔNG THỂ NÉM
+LiteralText,CANCEL,HỦY BỎ
+LiteralText,cancellation,phép loại bỏ
+LiteralText,CANCELLED,BỊ LOẠI BỎ
 LiteralText,capture any entity,bắt
 LiteralText,carried,mang theo
 LiteralText,Cast,Niệm phép
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,BẦY ĐÀN
 LiteralText,HOST,CHỦ PHÒNG
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Chúng tôi hy vọng rằng bạn đang tận hưởng những chuyến phiêu lưu của bạn. Đừng ngần ngại góp ý cải thiện cho chúng tôi nhé.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,vật phẩm được đinh danh
 LiteralText,identify all items,định danh tất cả
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ĐỊNH DANH MỌI VẬT PHẨM TRÊN SÀN NHÀ
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,định danh chỉ một
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
 LiteralText,ILLUSION,ẢO ẢNH
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,kháng
 LiteralText,immunities,kháng hiệu ứng
 LiteralText,impact,khi tác động
@@ -3554,15 +3554,18 @@ LiteralText,rank,hạng
 LiteralText,rarity,độ hiếm
 LiteralText,rate & review on the app store,đánh giá trên cửa hàng
 LiteralText,RE-ACT,HÀNH ĐỘNG LẠI
+LiteralText,RE-CAST,DÙNG LẠI PHÉP
+LiteralText,RE-EQUIP,TRANG BỊ LẠI
+LiteralText,Re-roll,Đổi lại
+LiteralText,re-rolls,số lần đổi lại
+LiteralText,RE-USE,TÁI SỬ DỤNG
 LiteralText,Read books to learn spells,Đọc sách để học phép
 LiteralText,READ!,ĐỌC!
-LiteralText,REALLY CRASH?,THẬT SỰ ĐÂM VÀO CHỨ?
 LiteralText,REAL-TIME,THỜI GIAN THỰC
+LiteralText,REALLY CRASH?,THẬT SỰ ĐÂM VÀO CHỨ?
 LiteralText,recall party,gọi thú
-LiteralText,RE-CAST,DÙNG LẠI PHÉP
 LiteralText,Recommend Pathos,Đề xuất Pathos
 LiteralText,Redo,làm lại
-LiteralText,RE-EQUIP,TRANG BỊ LẠI
 LiteralText,reflects,phản
 LiteralText,REGISTER,ĐĂNG KÝ
 LiteralText,REGISTER PLAYER HANDLE,ĐĂNG KÝ XỬ LÝ NGƯỜI CHƠI
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,bổ sung mana
 LiteralText,replica,bản sao
 LiteralText,replicate item,tạo bản sao của vật
 LiteralText,requires the skill to pick locks,cần có kĩ năng để phá khóa
-LiteralText,Re-roll,Đổi lại
-LiteralText,re-rolls,số lần đổi lại
 LiteralText,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
 LiteralText,resident?,là dân cư?
 LiteralText,resistances,các đề kháng
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Hồi sinh và tiếp tục
 LiteralText,resurrections,số lần hồi sinh
 LiteralText,retaliations,phản lại
 LiteralText,RETURN,QUAY VỀ
-LiteralText,RE-USE,TÁI SỬ DỤNG
 LiteralText,REVEAL,LỘ DIỆN
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
 LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY

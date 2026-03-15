@@ -569,11 +569,11 @@ CharacterName,Chemron,켐론
 CharacterName,Cheyne,체인
 CharacterName,Choung,초웅
 CharacterName,Crepsal,크렙살
+CharacterName,D'rey,드레이
 CharacterName,Damano,다마노
 CharacterName,Daracy,다라시
 CharacterName,Davicohr,다비코르
 CharacterName,Donneller,도넬러
-CharacterName,D'rey,드레이
 CharacterName,Dug,더그
 CharacterName,Elishmeli,엘리쉬멀리
 CharacterName,Ellent,엘런트
@@ -1068,8 +1068,8 @@ EntityName,ape,유인원
 EntityName,Aphrodite,아프로디테
 EntityName,apprentice,견습생
 EntityName,arc bug,방전 벌레
-EntityName,archangel,대천사
 EntityName,arch-lich,아크리치
+EntityName,archangel,대천사
 EntityName,Archmage Dirachi,대마법사 디라키
 EntityName,Archmage Flaynn,대마법사 플레인
 EntityName,archon,집정관
@@ -1103,9 +1103,9 @@ EntityName,bad egg,상한 달걀
 EntityName,balrog,발록
 EntityName,baluchitherium,발루키테리움
 EntityName,banshee,벤시
+EntityName,bar-lgura,발-르고라
 EntityName,barbed devil,가시돋친 악마
 EntityName,barking spider,타란튤라
-EntityName,bar-lgura,발-르고라
 EntityName,barrow wight,고분악령
 EntityName,basilisk,바실리스크
 EntityName,bat,박쥐
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,키스톤 대장
 EntityName,keystone kop,키스톤 순경
 EntityName,keystone lieutenant,키스톤 부관
 EntityName,keystone sergeant,키스톤 경사
+EntityName,ki-rin,기린
 EntityName,killer bee,킬러비
 EntityName,killer beetle,살인 딱정벌레
 EntityName,killer food ration,살인 전투식량
 EntityName,killer iron ration,살인 비상식량
 EntityName,killer tripe ration,살인 사료
 EntityName,king cobra,킹코브라
-EntityName,ki-rin,기린
 EntityName,kitten,새끼 고양이
 EntityName,kobold,코볼트
 EntityName,kobold king,코볼트 왕
@@ -1646,8 +1646,8 @@ EntityName,troll,트롤
 EntityName,troll mummy,트롤 미라
 EntityName,tsetse fly,체체파리
 EntityName,tunnel worm,터널 벌레
-EntityName,Twoflower,두송이꽃
 EntityName,two-headed troll,쌍두 트롤
+EntityName,Twoflower,두송이꽃
 EntityName,umber hulk,움버 헐크
 EntityName,undead slayer,퇴마사
 EntityName,vampire,뱀파이어
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","던질 수 있도록 무게가 잘 잡힌, 길쭉한 금속 칼."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,숨을 뱉어 다트를 발사할 수 있도록 만들어진 길쭉한 파이프.
 ItemDescription,A long thrusting polearm best suited to mounted combat.,"마상 전투에 최적화된, 찌르기용 길쭉한 폴암."
+ItemDescription,A long-shafted arrow with a distinctive tip.,독특한 촉이 달린 기다란 화살.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",길고 유연한 가죽 끈. 의외로 날카롭다.
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",긴 소매와 후드가 달린 헐렁하고 긴 옷.
-ItemDescription,A long-shafted arrow with a distinctive tip.,독특한 촉이 달린 기다란 화살.
 ItemDescription,A mace that is spiked on its head.,머리에 뾰족한 가시가 돋친 메이스.
 ItemDescription,A meal made from the stomach lining of an animal.,동물의 위나 내장으로 만든 음식물.
 ItemDescription,"A package of preserved meats, all dried and chewy.",말려서 보관하는 고기 꾸러미. 꼭꼭 씹어 먹어야 한다.
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,청동 판금 갑옷
 ItemName,Brumstyk,빗자루우
 ItemName,bullet,총알
 ItemName,bullwhip,가죽 채찍
+ItemName,c-ration,C형 전투식량
 ItemName,caltrops,마름쇠
 ItemName,can of grease,윤활유 통
 ItemName,candy bar,초콜릿
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,대지 파괴자
 ItemName,cornuthaum,마법사 모자
 ItemName,costume earrings,귀걸이 의상
 ItemName,cram ration,크램 전투식량
-ItemName,c-ration,C형 전투식량
 ItemName,cream pie,크림 파이
 ItemName,Creeping Sprout,기어오르는 새싹
 ItemName,crossbow,석궁
@@ -2542,13 +2542,13 @@ ItemName,jasper,벽옥
 ItemName,javelin,투창
 ItemName,jet,흑옥
 ItemName,jumping boots,도약의 부츠
+ItemName,k-ration,K형 전투식량
 ItemName,kaleidoscope glasses,만화경
 ItemName,kanabo,금쇄봉
 ItemName,katana,카타나
 ItemName,katar,카타르
 ItemName,kelp frond,해초 잎
 ItemName,knife,나이프
-ItemName,k-ration,K형 전투식량
 ItemName,lab coat,실험복
 ItemName,lance,랜스
 ItemName,land mine,지뢰
@@ -2820,6 +2820,7 @@ ItemName,stone club,바위 몽둥이
 ItemName,studded leather armour,징박힌 가죽 갑옷
 ItemName,submachine gun,기관단총
 ItemName,Sunsword,태양의 검
+ItemName,t-shirt,티셔츠
 ItemName,Talaria,탈라리아
 ItemName,The Hero,영웅
 ItemName,thunder staff,천둥의 지팡이
@@ -2832,7 +2833,6 @@ ItemName,torch,횃불
 ItemName,tortilla,또띠아
 ItemName,trident,삼지창
 ItemName,tripe ration,사료
-ItemName,t-shirt,티셔츠
 ItemName,tsurugi,츠루기
 ItemName,turquoise,터키석
 ItemName,two-handed sword,양손검
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,부서짐
 LiteralText,burst rate,연발
 LiteralText,BUY,구매
 LiteralText,BUY ALL,전부 구매
-LiteralText,CANCEL,취소
-LiteralText,cancellation,무효화
-LiteralText,CANCELLED,무효화됨
 LiteralText,CAN'T BLINK,점멸 불가
 LiteralText,CAN'T HIDE,은신 불가
 LiteralText,CAN'T JUMP,도약 불가
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,관찰 불가
 LiteralText,CAN'T SLIDE,미끄러짐 불가
 LiteralText,CAN'T TELEKINESIS,염동력 사용 불가
 LiteralText,CAN'T THROW,투척 불가
+LiteralText,CANCEL,취소
+LiteralText,cancellation,무효화
+LiteralText,CANCELLED,무효화됨
 LiteralText,capture any entity,포획하기
 LiteralText,carried,소지중
 LiteralText,Cast,시전
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,군단
 LiteralText,HOST,호스트
 LiteralText,"However, you may want to complete your adventures before receiving the update.",하지만 업데이트를 받기전에 진행하던 모험을 끝내시길 권장합니다.
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,모험을 재미있게 즐기셨으면 좋겠고 피드백이나 건의사항이 있다면 얼마든지 저에게 보내주세요.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,식별된 아이템
 LiteralText,identify all items,식별 전체
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,땅에 떨어진 모든 아이템을 식별함
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,식별 하나
 LiteralText,ILLITERATE,문맹
 LiteralText,illusion,환영
 LiteralText,ILLUSION,환영
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,에 면역
 LiteralText,immunities,면역
 LiteralText,impact,충격
@@ -3554,15 +3554,18 @@ LiteralText,rank,랭크
 LiteralText,rarity,희귀도
 LiteralText,rate & review on the app store,앱스토어에서 평점 및 평가 작성하기
 LiteralText,RE-ACT,다시 행동
+LiteralText,RE-CAST,주문 재시전
+LiteralText,RE-EQUIP,재장비
+LiteralText,Re-roll,다시 주사위 굴리기
+LiteralText,re-rolls,리롤
+LiteralText,RE-USE,재사용
 LiteralText,Read books to learn spells,책을 읽어서 주문을 배우세요.
 LiteralText,READ!,읽기!
-LiteralText,REALLY CRASH?,정말 부수나요?
 LiteralText,REAL-TIME,실시간
+LiteralText,REALLY CRASH?,정말 부수나요?
 LiteralText,recall party,소환
-LiteralText,RE-CAST,주문 재시전
 LiteralText,Recommend Pathos,Pathos 추천하기
 LiteralText,Redo,다시 하기
-LiteralText,RE-EQUIP,재장비
 LiteralText,reflects,반사됨
 LiteralText,REGISTER,등록
 LiteralText,REGISTER PLAYER HANDLE,등록된 플레이어 핸들
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,마나 회복
 LiteralText,replica,복제품
 LiteralText,replicate item,아이템 복제
 LiteralText,requires the skill to pick locks,잠금 해제를 위한 스킬이 요구됨
-LiteralText,Re-roll,다시 주사위 굴리기
-LiteralText,re-rolls,리롤
 LiteralText,reset random equipment,무작위 장비 초기화
 LiteralText,resident?,주민?
 LiteralText,resistances,저항
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,부활 및 게임 재개
 LiteralText,resurrections,부활 횟수
 LiteralText,retaliations,보복
 LiteralText,RETURN,돌아오기
-LiteralText,RE-USE,재사용
 LiteralText,REVEAL,밝힘
 LiteralText,REVEAL ALL MAPS,모든 지도를 밝힘
 LiteralText,REVEAL THIS MAP,이 지도를 밝힘

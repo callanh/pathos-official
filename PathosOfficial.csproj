@@ -3,7 +3,7 @@
     <AssemblyName>PathosOfficial</AssemblyName>
     <RootNamespace>Pathos</RootNamespace>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard20;net48;net90</TargetFrameworks>
+    <TargetFrameworks>netstandard20;net10.0</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
@@ -23,7 +23,7 @@
     <PathosInstallation>C:\Games\Pathos</PathosInstallation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(PathosDeveloper)' != 'OpenSource' ">
-    <PathosInstallation>C:\Projects\Notlame\Pathos\PathosGameW\bin\Debug\net48</PathosInstallation>
+    <PathosInstallation>C:\Projects\Notlame\Pathos\PathosGameW\bin\Debug\net10.0-windows</PathosInstallation>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -146,7 +146,7 @@
   </Target>
 
   <!-- Make the Atlases and Albums -->
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net48|OpenSource' ">
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net10.0|OpenSource' ">
     <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; &quot;$(ProjectDir.TrimEnd('\'))&quot; &quot;$(TargetDir)$(AssemblyName).dll&quot; $(Configuration)" />
   </Target>
 </Project>

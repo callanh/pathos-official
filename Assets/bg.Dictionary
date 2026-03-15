@@ -569,11 +569,11 @@ CharacterName,Chemron,Кемрон
 CharacterName,Cheyne,Чейн
 CharacterName,Choung,
 CharacterName,Crepsal,
+CharacterName,D'rey,
 CharacterName,Damano,Дамано
 CharacterName,Daracy,
 CharacterName,Davicohr,
 CharacterName,Donneller,
-CharacterName,D'rey,
 CharacterName,Dug,Дъг
 CharacterName,Elishmeli,Елишмели
 CharacterName,Ellent,Еллент
@@ -1068,8 +1068,8 @@ EntityName,ape,обезьяна
 EntityName,Aphrodite,Афродита
 EntityName,apprentice,ученик
 EntityName,arc bug,электро бръмбар
-EntityName,archangel,
 EntityName,arch-lich,архилич
+EntityName,archangel,
 EntityName,Archmage Dirachi,Верховный маг льда
 EntityName,Archmage Flaynn,Верховный маг пламени
 EntityName,archon,архонт
@@ -1103,9 +1103,9 @@ EntityName,bad egg,плохое яйцо
 EntityName,balrog,балрог
 EntityName,baluchitherium,белуджитерий
 EntityName,banshee,
+EntityName,bar-lgura,бар-лгура
 EntityName,barbed devil,шипастый дьявол
 EntityName,barking spider,коростяной паяк
-EntityName,bar-lgura,бар-лгура
 EntityName,barrow wight,курганный уайт
 EntityName,basilisk,василиск
 EntityName,bat,безопырь
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,
 EntityName,keystone kop,
 EntityName,keystone lieutenant,
 EntityName,keystone sergeant,
+EntityName,ki-rin,ки-рин
 EntityName,killer bee,пчела-убиец
 EntityName,killer beetle,бръмбар-убиец
 EntityName,killer food ration,паёк-убиец
 EntityName,killer iron ration,
 EntityName,killer tripe ration,требуха-убиец
 EntityName,king cobra,королевская кобра
-EntityName,ki-rin,ки-рин
 EntityName,kitten,котёнок
 EntityName,kobold,коболд
 EntityName,kobold king,коболд-крал
@@ -1646,8 +1646,8 @@ EntityName,troll,трол
 EntityName,troll mummy,мумия тролля
 EntityName,tsetse fly,муха цеце
 EntityName,tunnel worm,туннельный червь
-EntityName,Twoflower,Двацветок
 EntityName,two-headed troll,двухголовый трол
+EntityName,Twoflower,Двацветок
 EntityName,umber hulk,бурый громила
 EntityName,undead slayer,
 EntityName,vampire,вампир
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",Длинный железен нож хорошо сбалансирован для метания.
 ItemDescription,A long pipe meant for shooting darts through force of breath.,
 ItemDescription,A long thrusting polearm best suited to mounted combat.,Копьё с длинным древком наиболее пригодно для борьбы в устойчивой позиции.
+ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",
-ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,A mace that is spiked on its head.,
 ItemDescription,A meal made from the stomach lining of an animal.,
 ItemDescription,"A package of preserved meats, all dried and chewy.",
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,бронзовые латы
 ItemName,Brumstyk,
 ItemName,bullet,пуля
 ItemName,bullwhip,кнут
+ItemName,c-ration,неприкосновенный паёк
 ItemName,caltrops,шипы
 ItemName,can of grease,
 ItemName,candy bar,шоколадный батончик
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Великий Землекоп
 ItemName,cornuthaum,корнутхаум
 ItemName,costume earrings,
 ItemName,cram ration,паёк для веганов
-ItemName,c-ration,неприкосновенный паёк
 ItemName,cream pie,кремовый пирог
 ItemName,Creeping Sprout,
 ItemName,crossbow,арбалет
@@ -2542,13 +2542,13 @@ ItemName,jasper,яшма
 ItemName,javelin,джавелин
 ItemName,jet,гагат
 ItemName,jumping boots,прыгающие ботуши
+ItemName,k-ration,армейский паёк
 ItemName,kaleidoscope glasses,калейдескопные очки
 ItemName,kanabo,
 ItemName,katana,катана
 ItemName,katar,
 ItemName,kelp frond,лист водоросли
 ItemName,knife,нож
-ItemName,k-ration,армейский паёк
 ItemName,lab coat,лабораторный халат
 ItemName,lance,длинное копие
 ItemName,land mine,наземная мина
@@ -2820,6 +2820,7 @@ ItemName,stone club,
 ItemName,studded leather armour,клёпанный кожен доспехи
 ItemName,submachine gun,пистолет-пулемёт
 ItemName,Sunsword,Меч Солнца
+ItemName,t-shirt,футболка
 ItemName,Talaria,
 ItemName,The Hero,
 ItemName,thunder staff,посох грома
@@ -2832,7 +2833,6 @@ ItemName,torch,факел
 ItemName,tortilla,тортилья
 ItemName,trident,трезубец
 ItemName,tripe ration,требуха
-ItemName,t-shirt,футболка
 ItemName,tsurugi,цуруги
 ItemName,turquoise,бирюза
 ItemName,two-handed sword,двуручный меч
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,СЛОМАН
 LiteralText,burst rate,скорострельность
 LiteralText,BUY,КУПИТЬ
 LiteralText,BUY ALL,КУПИТЬ ВСЁ
-LiteralText,CANCEL,ОТМЕНА
-LiteralText,cancellation,отмена
-LiteralText,CANCELLED,ОТМЕНЕНО
 LiteralText,CAN'T BLINK,
 LiteralText,CAN'T HIDE,НЕ МОЖЕТ СКРЫТЬСЯ
 LiteralText,CAN'T JUMP,НЕ МОЖЕТ ПРЫГНУТЬ
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,НЕ МОЖЕТ ВИДЕТЬ
 LiteralText,CAN'T SLIDE,
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,НЕ МОЖЕТ КИНУТЬ
+LiteralText,CANCEL,ОТМЕНА
+LiteralText,cancellation,отмена
+LiteralText,CANCELLED,ОТМЕНЕНО
 LiteralText,capture any entity,
 LiteralText,carried,несомое
 LiteralText,Cast,Применяет
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однако, вы можете решить завершить своё приключение, прежде чем обновить игру."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я надеюсь, вы наслаждаетесь приключения, и пожалуйста, не стесняйтесь отправлять мне ваши отзывы и предложения."
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,распознал вещи
 LiteralText,identify all items,опознаёт всё
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ОПОЗНАТЬ ВСЕ ПРЕДМЕТЫ НА ПОЛУ
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,опознаёт один
 LiteralText,ILLITERATE,НЕГРАМОТНОСТЬ
 LiteralText,illusion,
 LiteralText,ILLUSION,ИЛЛЮЗИЯ
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,иммунен к
 LiteralText,immunities,иммунитет
 LiteralText,impact,
@@ -3554,15 +3554,18 @@ LiteralText,rank,
 LiteralText,rarity,редкость
 LiteralText,rate & review on the app store,поставить оценку и написать отзыв на приложение
 LiteralText,RE-ACT,
+LiteralText,RE-CAST,
+LiteralText,RE-EQUIP,
+LiteralText,Re-roll,
+LiteralText,re-rolls,
+LiteralText,RE-USE,
 LiteralText,Read books to learn spells,Читай книги для изучения заклинаний
 LiteralText,READ!,ПРОЧТИ!
-LiteralText,REALLY CRASH?,ДЕЙСТВИТЕЛЬНО СЛОМАТЬ?
 LiteralText,REAL-TIME,РЕАЛЬНЫЙ
+LiteralText,REALLY CRASH?,ДЕЙСТВИТЕЛЬНО СЛОМАТЬ?
 LiteralText,recall party,отзывает
-LiteralText,RE-CAST,
 LiteralText,Recommend Pathos,Порекомендовать Pathos
 LiteralText,Redo,
-LiteralText,RE-EQUIP,
 LiteralText,reflects,рефлексы
 LiteralText,REGISTER,РЕГИСТРАЦИЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕГИСТРАЦИЯ ИГРОКА
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,
 LiteralText,replica,копия
 LiteralText,replicate item,копирует ценность
 LiteralText,requires the skill to pick locks,необходим умение взлома
-LiteralText,Re-roll,
-LiteralText,re-rolls,
 LiteralText,reset random equipment,устанавливает случайное спанеряжение
 LiteralText,resident?,
 LiteralText,resistances,сопротивления
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Съживи и продолжить
 LiteralText,resurrections,воскрешения
 LiteralText,retaliations,
 LiteralText,RETURN,
-LiteralText,RE-USE,
 LiteralText,REVEAL,
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,

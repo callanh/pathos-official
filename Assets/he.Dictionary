@@ -569,11 +569,11 @@ CharacterName,Chemron,צ'מרון
 CharacterName,Cheyne,צ'יין
 CharacterName,Choung,צ'ונג
 CharacterName,Crepsal,קרפסל
+CharacterName,D'rey,ד'ריי
 CharacterName,Damano,דמנו
 CharacterName,Daracy,דראסי
 CharacterName,Davicohr,דויקוהר
 CharacterName,Donneller,דונלר
-CharacterName,D'rey,ד'ריי
 CharacterName,Dug,דאג
 CharacterName,Elishmeli,אלישמלי
 CharacterName,Ellent,אלנט
@@ -1068,8 +1068,8 @@ EntityName,ape,קוף
 EntityName,Aphrodite,אפרודיטה
 EntityName,apprentice,שולייה
 EntityName,arc bug,חרק מחשמל
-EntityName,archangel,מלאך עליון
 EntityName,arch-lich,ליץ' עליון
+EntityName,archangel,מלאך עליון
 EntityName,Archmage Dirachi,הרב-מג דיראצ'י
 EntityName,Archmage Flaynn,הרב-מגית פלאיין
 EntityName,archon,ארכון
@@ -1103,9 +1103,9 @@ EntityName,bad egg,ביצה סרוחה
 EntityName,balrog,בלרוג
 EntityName,baluchitherium,באלוקיתריום
 EntityName,banshee,באנשי
+EntityName,bar-lgura,בר-איגורה
 EntityName,barbed devil,שטן מקושקש
 EntityName,barking spider,עכביש נובח
-EntityName,bar-lgura,בר-איגורה
 EntityName,barrow wight,ביעות כוכים
 EntityName,basilisk,בסיליסק
 EntityName,bat,עטלף
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,מפקד משמר קיסטון
 EntityName,keystone kop,שוטר משמר קיסטון
 EntityName,keystone lieutenant,סגן משמר קיסטון
 EntityName,keystone sergeant,סמלת משמר קיסטון
+EntityName,ki-rin,קי-רין
 EntityName,killer bee,דבורה רצחנית
 EntityName,killer beetle,חיפושית רצחנית
 EntityName,killer food ration,מנת קרב רצחנית
 EntityName,killer iron ration,מנת ברזל רצחנית
 EntityName,killer tripe ration,מנת פיגולים רצחנית
 EntityName,king cobra,מלך קוברה
-EntityName,ki-rin,קי-רין
 EntityName,kitten,חתלתול
 EntityName,kobold,קובולד
 EntityName,kobold king,מלך קובולדים
@@ -1646,8 +1646,8 @@ EntityName,troll,טרול
 EntityName,troll mummy,טרול מומיה
 EntityName,tsetse fly,זבוב צה צה
 EntityName,tunnel worm,תולעת מחילות
-EntityName,Twoflower,זוגפרח
 EntityName,two-headed troll,טרול דו-ראשי
+EntityName,Twoflower,זוגפרח
 EntityName,umber hulk,תפלץ בצבע אדמה
 EntityName,undead slayer,קוטלת אל-מתים
 EntityName,vampire,ערפדית
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","סכין ברזל ארוכה עם קצה חד, מאוזנת לצורכי השלכה."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,צינור ארוך שנועד ליריית חיצי מטרה בכוח הנשיפה.
 ItemDescription,A long thrusting polearm best suited to mounted combat.,נשק מוט ארוך לנעיצה. מתאים במיוחד לקרב ברכיבה.
+ItemDescription,A long-shafted arrow with a distinctive tip.,חץ בעל גוף ארוך וקצה מיוחד.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",שוט עור ארוך וגמיש. חד במידה מפתיעה.
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.","בגד ארוך ומתנפנף, עם שרוולים ארוכים וברדס."
-ItemDescription,A long-shafted arrow with a distinctive tip.,חץ בעל גוף ארוך וקצה מיוחד.
 ItemDescription,A mace that is spiked on its head.,אלה עם קצה מחודד.
 ItemDescription,A meal made from the stomach lining of an animal.,ארוחה שעשויה ממעטפת הקיבה של בעל חיים.
 ItemDescription,"A package of preserved meats, all dried and chewy.","צרור בשרים משומרים, יבשים וצמיגים."
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,שריון לוחות מארד
 ItemName,Brumstyk,ברומסטיק
 ItemName,bullet,כדור
 ItemName,bullwhip,שוט קלוע
+ItemName,c-ration,מנת קרב תקנית
 ItemName,caltrops,דוקרנים
 ItemName,can of grease,פחית שומן
 ItemName,candy bar,חטיף מתוק
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,מחפר קולוסלי
 ItemName,cornuthaum,כובע עם קרניים
 ItemName,costume earrings,עגילי קוספליי
 ItemName,cram ration,מנת קרב טבעונית
-ItemName,c-ration,מנת קרב תקנית
 ItemName,cream pie,עוגת קצפת
 ItemName,Creeping Sprout,חץ מנץ
 ItemName,crossbow,קשת מוצלבת
@@ -2542,13 +2542,13 @@ ItemName,jasper,ישפה
 ItemName,javelin,כידון
 ItemName,jet,ג'ט
 ItemName,jumping boots,נעלי קפיצה
+ItemName,k-ration,מנת קרב קלה
 ItemName,kaleidoscope glasses,משקפי קליידוסקופ
 ItemName,kanabo,קנאבו
 ItemName,katana,קטאנה
 ItemName,katar,קטאר
 ItemName,kelp frond,פיסת אצה
 ItemName,knife,סכין
-ItemName,k-ration,מנת קרב קלה
 ItemName,lab coat,חלוק מעבדה
 ItemName,lance,רומח
 ItemName,land mine,מוקש
@@ -2820,6 +2820,7 @@ ItemName,stone club,מחבט מאבן
 ItemName,studded leather armour,שריון עור ממוסמר
 ItemName,submachine gun,תת-מקלע
 ItemName,Sunsword,חרב שמש
+ItemName,t-shirt,חולצת טי
 ItemName,Talaria,טלריה
 ItemName,The Hero,הגיבור
 ItemName,thunder staff,מטה רעם
@@ -2832,7 +2833,6 @@ ItemName,torch,לפיד
 ItemName,tortilla,טורטייה
 ItemName,trident,קלשון
 ItemName,tripe ration,מנת פיגולים
-ItemName,t-shirt,חולצת טי
 ItemName,tsurugi,צורוגי
 ItemName,turquoise,אבן טורקיז
 ItemName,two-handed sword,חרב דו-ידנית
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,במצב שבור
 LiteralText,burst rate,קצב ירייה
 LiteralText,BUY,קנייה
 LiteralText,BUY ALL,לקנות הכל
-LiteralText,CANCEL,ביטול
-LiteralText,cancellation,ביטול
-LiteralText,CANCELLED,בוטל
 LiteralText,CAN'T BLINK,אי אפשר לבזוק
 LiteralText,CAN'T HIDE,אי אפשר להתחבא
 LiteralText,CAN'T JUMP,אי אפשר לקפוץ
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,אי אפשר לראות
 LiteralText,CAN'T SLIDE,אי אפשר להחליק
 LiteralText,CAN'T TELEKINESIS,אי אפשר לעשות טלקינזיס
 LiteralText,CAN'T THROW,אי אפשר לזרוק
+LiteralText,CANCEL,ביטול
+LiteralText,cancellation,ביטול
+LiteralText,CANCELLED,בוטל
 LiteralText,capture any entity,לכידה
 LiteralText,carried,בנשיאה
 LiteralText,Cast,קסם
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,נחילים
 LiteralText,HOST,מארח
 LiteralText,"However, you may want to complete your adventures before receiving the update.","יחד עם זאת, אולי עדיף לך להשלים את ההרפתקה לפני קבלת העדכון."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,אני מקווה שנהנית מההרפתקאות שלך עד כה ותמיד אפשר ליצור איתי קשר למשוב והצעות.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,חפצים שזוהו
 LiteralText,identify all items,זיהוי כולם
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,זיהוי כל החפצים בקומה
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,זיהוי אחד
 LiteralText,ILLITERATE,במצב אנלפביתי
 LiteralText,illusion,אשליה
 LiteralText,ILLUSION,אשליה
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,חסינות ל
 LiteralText,immunities,חסינויות
 LiteralText,impact,פגיעה
@@ -3554,15 +3554,18 @@ LiteralText,rank,דרגה
 LiteralText,rarity,נדירות
 LiteralText,rate & review on the app store,לדרג ולסקור את המשחק בחנות האפליקציות
 LiteralText,RE-ACT,לפעול שוב
+LiteralText,RE-CAST,להטיל שוב קסם
+LiteralText,RE-EQUIP,להצטייד שוב
+LiteralText,Re-roll,הטלת קוביה
+LiteralText,re-rolls,הטלות קוביה
+LiteralText,RE-USE,להשתמש שוב
 LiteralText,Read books to learn spells,כדי ללמוד קסמים צריך לקרוא ספרים
 LiteralText,READ!,לקרוא!
-LiteralText,REALLY CRASH?,באמת לרסק?
 LiteralText,REAL-TIME,בזמן-אמיתי
+LiteralText,REALLY CRASH?,באמת לרסק?
 LiteralText,recall party,החזרה
-LiteralText,RE-CAST,להטיל שוב קסם
 LiteralText,Recommend Pathos,להמליץ על פאתוס
 LiteralText,Redo,לעשות שוב
-LiteralText,RE-EQUIP,להצטייד שוב
 LiteralText,reflects,השתקפות
 LiteralText,REGISTER,רישום
 LiteralText,REGISTER PLAYER HANDLE,רישום כינוי
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,מילוי נקודות קסם מ
 LiteralText,replica,חיקוי
 LiteralText,replicate item,הכפלת נכס
 LiteralText,requires the skill to pick locks,נדרשים כישורי פריצה
-LiteralText,Re-roll,הטלת קוביה
-LiteralText,re-rolls,הטלות קוביה
 LiteralText,reset random equipment,איתחול ציוד אקראי
 LiteralText,resident?,קבוע?
 LiteralText,resistances,עמידויות
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,להקים לתחייה ולהמשיך
 LiteralText,resurrections,הקמות לתחייה
 LiteralText,retaliations,נקמות
 LiteralText,RETURN,לחזור
-LiteralText,RE-USE,להשתמש שוב
 LiteralText,REVEAL,לגלות
 LiteralText,REVEAL ALL MAPS,לגלות את כל המפות
 LiteralText,REVEAL THIS MAP,לגלות את המפה הנוכחית

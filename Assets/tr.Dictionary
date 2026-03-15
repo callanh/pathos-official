@@ -569,11 +569,11 @@ CharacterName,Chemron,Chemron
 CharacterName,Cheyne,Cheyne
 CharacterName,Choung,Choung
 CharacterName,Crepsal,Crepsal
+CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
 CharacterName,Davicohr,Davicohr
 CharacterName,Donneller,Donneler
-CharacterName,D'rey,D'rey
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
 CharacterName,Ellent,Ellent
@@ -1068,8 +1068,8 @@ EntityName,ape,orangutan
 EntityName,Aphrodite,Afrodit
 EntityName,apprentice,çırak
 EntityName,arc bug,elektrik böceği
-EntityName,archangel,başmelek
 EntityName,arch-lich,Baş Liş
+EntityName,archangel,başmelek
 EntityName,Archmage Dirachi,Yüce Buz Büyücüsü
 EntityName,Archmage Flaynn,Yüce Ateş Büyücüsü
 EntityName,archon,baş yargıç
@@ -1103,9 +1103,9 @@ EntityName,bad egg,kötü yumurta
 EntityName,balrog,balrog
 EntityName,baluchitherium,baluchitherium
 EntityName,banshee,ölüm perisi
+EntityName,bar-lgura,bar-lgura
 EntityName,barbed devil,dikenli şeytan
 EntityName,barking spider,havlayan örümcek
-EntityName,bar-lgura,bar-lgura
 EntityName,barrow wight,höyük ruhu
 EntityName,basilisk,basilisk
 EntityName,bat,yarasa
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,kilit taşı kaptan
 EntityName,keystone kop,kilit taşı tepe
 EntityName,keystone lieutenant,kilit taşı teğmen
 EntityName,keystone sergeant,kilit taşı çavuş
+EntityName,ki-rin,ki-rin
 EntityName,killer bee,katil arı
 EntityName,killer beetle,katil böcek
 EntityName,killer food ration,katil kumanya
 EntityName,killer iron ration,katil demir kumanya
 EntityName,killer tripe ration,katil yetersiz kumanya
 EntityName,king cobra,kral kobra
-EntityName,ki-rin,ki-rin
 EntityName,kitten,kedicik
 EntityName,kobold,kobold
 EntityName,kobold king,kobold kralı
@@ -1646,8 +1646,8 @@ EntityName,troll,troll
 EntityName,troll mummy,troll mumya
 EntityName,tsetse fly,çeçe sineği
 EntityName,tunnel worm,tünel solucanı
-EntityName,Twoflower,Skortacı
 EntityName,two-headed troll,iki başlı troll
+EntityName,Twoflower,Skortacı
 EntityName,umber hulk,kahverengı dev
 EntityName,undead slayer,yürüyen ölü boğan
 EntityName,vampire,vampir
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",Fırlatılabilir olması için ağırlaştırılmış uzun demir bir bıçak.
 ItemDescription,A long pipe meant for shooting darts through force of breath.,
 ItemDescription,A long thrusting polearm best suited to mounted combat.,Binek üstünde kullanılması için tasarlanmış mızrağımsı uzun sırık.
+ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",
-ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,A mace that is spiked on its head.,
 ItemDescription,A meal made from the stomach lining of an animal.,
 ItemDescription,"A package of preserved meats, all dried and chewy.",
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,tunç plaka zırh
 ItemName,Brumstyk,
 ItemName,bullet,mermi
 ItemName,bullwhip,kırbaç
+ItemName,c-ration,c-kumanya
 ItemName,caltrops,boğadikeni
 ItemName,can of grease,
 ItemName,candy bar,şeker kutusu
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Devasa Kazıcı
 ItemName,cornuthaum,cornuthaum
 ItemName,costume earrings,
 ItemName,cram ration,atıştırma kumanyası
-ItemName,c-ration,c-kumanya
 ItemName,cream pie,kremalı turta
 ItemName,Creeping Sprout,
 ItemName,crossbow,arbalet
@@ -2542,13 +2542,13 @@ ItemName,jasper,japsis
 ItemName,javelin,cirit
 ItemName,jet,oltu taşı
 ItemName,jumping boots,sıçrama botları
+ItemName,k-ration,k-kumanya
 ItemName,kaleidoscope glasses,kaleydoskop gözlük
 ItemName,kanabo,
 ItemName,katana,katana
 ItemName,katar,
 ItemName,kelp frond,yosun yaprağı
 ItemName,knife,bıçak
-ItemName,k-ration,k-kumanya
 ItemName,lab coat,laboratuvar önlüğü
 ItemName,lance,süvari mızrağı
 ItemName,land mine,mayın
@@ -2820,6 +2820,7 @@ ItemName,stone club,
 ItemName,studded leather armour,çivili deri zırh
 ItemName,submachine gun,hafif makineli tabanca
 ItemName,Sunsword,Güneş kılıç
+ItemName,t-shirt,tişört
 ItemName,Talaria,
 ItemName,The Hero,Kahraman
 ItemName,thunder staff,fırtına kılıcı
@@ -2832,7 +2833,6 @@ ItemName,torch,meşale
 ItemName,tortilla,tortilla
 ItemName,trident,trident
 ItemName,tripe ration,yetersiz kumanya
-ItemName,t-shirt,tişört
 ItemName,tsurugi,tsurugi
 ItemName,turquoise,turkuaz
 ItemName,two-handed sword,çift ellik kılıç
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,KIRIK
 LiteralText,burst rate,patlama oranı
 LiteralText,BUY,SATIN AL
 LiteralText,BUY ALL,HEPSİNİ SATIN AL
-LiteralText,CANCEL,İPTAL
-LiteralText,cancellation,iptalleme
-LiteralText,CANCELLED,İPTAL EDİLDİ
 LiteralText,CAN'T BLINK,SIÇRANILAMAZ
 LiteralText,CAN'T HIDE,SAKLANAMAZ
 LiteralText,CAN'T JUMP,ZIPLANAMAZ
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,GÖRÜLEMEZ
 LiteralText,CAN'T SLIDE,KAYILAMAZ
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,FIRLATILAMAZ
+LiteralText,CANCEL,İPTAL
+LiteralText,cancellation,iptalleme
+LiteralText,CANCELLED,İPTAL EDİLDİ
 LiteralText,capture any entity,yakala
 LiteralText,carried,taşındı
 LiteralText,Cast,Kullan
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,ORDULAR
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Umarım maceralarından keyif alıyorsundur. Bana ulaşıp fikirlerini beyan etmekten lütfen çekinme.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,tanımlanmış eşyalar
 LiteralText,identify all items,tanımla hepsi
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,YERDEKİ BÜTÜN EŞYALARI TANIMLA
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,tanımla biri
 LiteralText,ILLITERATE,OKUMA YAZMA BİLEN
 LiteralText,illusion,
 LiteralText,ILLUSION,İLÜZYON
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,bağışıklık sahibi olduğu
 LiteralText,immunities,bağışıklık
 LiteralText,impact,
@@ -3554,15 +3554,18 @@ LiteralText,rank,
 LiteralText,rarity,enderlik
 LiteralText,rate & review on the app store,uygulama dükkanında değerlendir ve eleştir.
 LiteralText,RE-ACT,YENİDEN YAP
+LiteralText,RE-CAST,TEKRAR BÜYÜYÜ KULLAN
+LiteralText,RE-EQUIP,TEKRAR KUŞAN
+LiteralText,Re-roll,
+LiteralText,re-rolls,
+LiteralText,RE-USE,TEKRAR KULLAN
 LiteralText,Read books to learn spells,Büyü öğrenmek için kitap oku
 LiteralText,READ!,OKU!
-LiteralText,REALLY CRASH?,CİDDEN ÇÖKSÜN MÜ?
 LiteralText,REAL-TIME,GERÇEK-ZAMANLI
+LiteralText,REALLY CRASH?,CİDDEN ÇÖKSÜN MÜ?
 LiteralText,recall party,geri çağır
-LiteralText,RE-CAST,TEKRAR BÜYÜYÜ KULLAN
 LiteralText,Recommend Pathos,Pathos'u Öner
 LiteralText,Redo,
-LiteralText,RE-EQUIP,TEKRAR KUŞAN
 LiteralText,reflects,yansıtır
 LiteralText,REGISTER,KAYIT OL
 LiteralText,REGISTER PLAYER HANDLE,LAKABINI KAYDET
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,
 LiteralText,replica,taklit
 LiteralText,replicate item,varlığı kopyala
 LiteralText,requires the skill to pick locks,kilit çözmek için beceriye ihtiyaç var
-LiteralText,Re-roll,
-LiteralText,re-rolls,
 LiteralText,reset random equipment,rastgele bir teçhizatı yenile
 LiteralText,resident?,
 LiteralText,resistances,dayanıklılıklar
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Tekrar canlan ve devam et
 LiteralText,resurrections,tekrar canlandırmalar
 LiteralText,retaliations,
 LiteralText,RETURN,GERİ VER
-LiteralText,RE-USE,TEKRAR KULLAN
 LiteralText,REVEAL,AÇIĞA KAVUŞTUR
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,

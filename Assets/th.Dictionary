@@ -569,11 +569,11 @@ CharacterName,Chemron,เชมรอน
 CharacterName,Cheyne,ไชน์
 CharacterName,Choung,ชุง
 CharacterName,Crepsal,เครปซอล
+CharacterName,D'rey,เดรย์
 CharacterName,Damano,ดามาโน
 CharacterName,Daracy,ดาร์ซี่
 CharacterName,Davicohr,ดาวิกา
 CharacterName,Donneller,ดอนเนลเลอร์
-CharacterName,D'rey,เดรย์
 CharacterName,Dug,ดั๊ก
 CharacterName,Elishmeli,เอลิชเมลิ
 CharacterName,Ellent,เอลเลนท์
@@ -1068,8 +1068,8 @@ EntityName,ape,วานร
 EntityName,Aphrodite,อาโฟรไดตี้
 EntityName,apprentice,ลูกศิษย์
 EntityName,arc bug,
-EntityName,archangel,ทูตสวรรค์ชั้นสูง
 EntityName,arch-lich,ลิชชั้นสูง
+EntityName,archangel,ทูตสวรรค์ชั้นสูง
 EntityName,Archmage Dirachi,จอมเวทน้ำแข็งชั้นสูง
 EntityName,Archmage Flaynn,จอมเวทเพลิงชั้นสูง
 EntityName,archon,อาร์คอน
@@ -1103,9 +1103,9 @@ EntityName,bad egg,
 EntityName,balrog,
 EntityName,baluchitherium,
 EntityName,banshee,
+EntityName,bar-lgura,
 EntityName,barbed devil,
 EntityName,barking spider,
-EntityName,bar-lgura,
 EntityName,barrow wight,
 EntityName,basilisk,
 EntityName,bat,ค้างคาว
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,
 EntityName,keystone kop,
 EntityName,keystone lieutenant,
 EntityName,keystone sergeant,
+EntityName,ki-rin,
 EntityName,killer bee,
 EntityName,killer beetle,
 EntityName,killer food ration,
 EntityName,killer iron ration,
 EntityName,killer tripe ration,
 EntityName,king cobra,
-EntityName,ki-rin,
 EntityName,kitten,ลูกแมว
 EntityName,kobold,
 EntityName,kobold king,
@@ -1646,8 +1646,8 @@ EntityName,troll,โทรล
 EntityName,troll mummy,มัมมี่โทรล
 EntityName,tsetse fly,
 EntityName,tunnel worm,หนอนอุโมงค์
-EntityName,Twoflower,
 EntityName,two-headed troll,โทรลสองหัว
+EntityName,Twoflower,
 EntityName,umber hulk,
 EntityName,undead slayer,
 EntityName,vampire,แวมไพร์
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",
 ItemDescription,A long pipe meant for shooting darts through force of breath.,
 ItemDescription,A long thrusting polearm best suited to mounted combat.,
+ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",
-ItemDescription,A long-shafted arrow with a distinctive tip.,
 ItemDescription,A mace that is spiked on its head.,
 ItemDescription,A meal made from the stomach lining of an animal.,
 ItemDescription,"A package of preserved meats, all dried and chewy.",
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,
 ItemName,Brumstyk,
 ItemName,bullet,ลูกกระสุน
 ItemName,bullwhip,
+ItemName,c-ration,เสบียงC
 ItemName,caltrops,ขวาก
 ItemName,can of grease,
 ItemName,candy bar,ขนมแท่ง
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,
 ItemName,cornuthaum,
 ItemName,costume earrings,
 ItemName,cram ration,
-ItemName,c-ration,เสบียงC
 ItemName,cream pie,
 ItemName,Creeping Sprout,
 ItemName,crossbow,หน้าไม้
@@ -2542,13 +2542,13 @@ ItemName,jasper,
 ItemName,javelin,
 ItemName,jet,
 ItemName,jumping boots,รองเท้ากระโดด
+ItemName,k-ration,
 ItemName,kaleidoscope glasses,
 ItemName,kanabo,
 ItemName,katana,คาตานะ
 ItemName,katar,
 ItemName,kelp frond,
 ItemName,knife,มีด
-ItemName,k-ration,
 ItemName,lab coat,เสื้อกาวน์
 ItemName,lance,หอกยาว
 ItemName,land mine,ระเบิดวาง
@@ -2820,6 +2820,7 @@ ItemName,stone club,กระบองหิน
 ItemName,studded leather armour,เกราะหนังติดกระดุม
 ItemName,submachine gun,ปืนอัตโนมัติ
 ItemName,Sunsword,
+ItemName,t-shirt,เสื้อยืด
 ItemName,Talaria,
 ItemName,The Hero,วีรบุรุษ
 ItemName,thunder staff,ไม้เท้าสายฟ้า
@@ -2832,7 +2833,6 @@ ItemName,torch,พกเพลิง
 ItemName,tortilla,
 ItemName,trident,ตรีศูล
 ItemName,tripe ration,
-ItemName,t-shirt,เสื้อยืด
 ItemName,tsurugi,
 ItemName,turquoise,
 ItemName,two-handed sword,ดาบสองมือ
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,พัง
 LiteralText,burst rate,
 LiteralText,BUY,ซื้อ
 LiteralText,BUY ALL,ซื้อทั้งหมด
-LiteralText,CANCEL,ยกเลิก
-LiteralText,cancellation,การยกเลิก
-LiteralText,CANCELLED,ยกเลิกแล้ว
 LiteralText,CAN'T BLINK,ไม่สามารถเคลื่อนที่พริบตาได้
 LiteralText,CAN'T HIDE,ซ่อนไม่ได้
 LiteralText,CAN'T JUMP,โดดไม่ได้
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,มองไม่เห็น
 LiteralText,CAN'T SLIDE,ไม่สามารถไถลได้
 LiteralText,CAN'T TELEKINESIS,ไม่สามารถใช้พลังโทรจิตได้
 LiteralText,CAN'T THROW,ขว้างไม่ได้
+LiteralText,CANCEL,ยกเลิก
+LiteralText,cancellation,การยกเลิก
+LiteralText,CANCELLED,ยกเลิกแล้ว
 LiteralText,capture any entity,จับ
 LiteralText,carried,แบกแล้ว
 LiteralText,Cast,ร่าย
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,กลุ่ม
 LiteralText,HOST,
 LiteralText,"However, you may want to complete your adventures before receiving the update.",
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,ระบุไอเท็ม
 LiteralText,identify all items,ระบุทั้งหมด
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ระบุไอเท็มทั้งหมดที่อยู่บนพื้น
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,ระบุชิ้นเดียว
 LiteralText,ILLITERATE,
 LiteralText,illusion,
 LiteralText,ILLUSION,ภาพลวงตา
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,ต้านทานต่อ
 LiteralText,immunities,ภูมิต้านทาน
 LiteralText,impact,
@@ -3554,15 +3554,18 @@ LiteralText,rank,แรงค์
 LiteralText,rarity,ความหายาก
 LiteralText,rate & review on the app store,ให้คะแนนและความคิดเห็นบนหน้าร้านค้า
 LiteralText,RE-ACT,กระทำอีกครั้ง
+LiteralText,RE-CAST,ร่ายอีกครั้ง
+LiteralText,RE-EQUIP,สวมใส่อีกครั้ง
+LiteralText,Re-roll,สุ่มใหม่
+LiteralText,re-rolls,สุ่มใหม่
+LiteralText,RE-USE,ใช้อีกครั้ง
 LiteralText,Read books to learn spells,อ่านหนังสือเพื่อเรียนเวท
 LiteralText,READ!,อ่าน!
-LiteralText,REALLY CRASH?,
 LiteralText,REAL-TIME,เวลาจริง
+LiteralText,REALLY CRASH?,
 LiteralText,recall party,เรียกคืน
-LiteralText,RE-CAST,ร่ายอีกครั้ง
 LiteralText,Recommend Pathos,แนะนำ Pathos
 LiteralText,Redo,ย้อนกลับ
-LiteralText,RE-EQUIP,สวมใส่อีกครั้ง
 LiteralText,reflects,สะท้อน
 LiteralText,REGISTER,สมัครสมาชิก
 LiteralText,REGISTER PLAYER HANDLE,ตั้งชื่อผู้เล่น
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,ฟื้นฟูพลังมานา
 LiteralText,replica,สำเนา
 LiteralText,replicate item,
 LiteralText,requires the skill to pick locks,
-LiteralText,Re-roll,สุ่มใหม่
-LiteralText,re-rolls,สุ่มใหม่
 LiteralText,reset random equipment,สุ่มคืนค่าอุปกรณ์
 LiteralText,resident?,
 LiteralText,resistances,ต้านทาน
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,คืนชีพและเล่นต่
 LiteralText,resurrections,การคืนชีพ
 LiteralText,retaliations,
 LiteralText,RETURN,กลับไป
-LiteralText,RE-USE,ใช้อีกครั้ง
 LiteralText,REVEAL,เปิดเผย
 LiteralText,REVEAL ALL MAPS,เปิดเผยแผนที่ทั้งหมด
 LiteralText,REVEAL THIS MAP,เปิดเผยแผนที่ชั้นนี้

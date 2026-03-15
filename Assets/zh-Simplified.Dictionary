@@ -569,11 +569,11 @@ CharacterName,Chemron,Chemron
 CharacterName,Cheyne,Cheyne
 CharacterName,Choung,Choung
 CharacterName,Crepsal,Crepsal
+CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
 CharacterName,Davicohr,Davicohr
 CharacterName,Donneller,Donneller
-CharacterName,D'rey,D'rey
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
 CharacterName,Ellent,Ellent
@@ -1068,8 +1068,8 @@ EntityName,ape,猿
 EntityName,Aphrodite,阿芙洛迪忒
 EntityName,apprentice,学徒
 EntityName,arc bug,电弧虫
-EntityName,archangel,大天使
 EntityName,arch-lich,大巫妖
+EntityName,archangel,大天使
 EntityName,Archmage Dirachi,寒冰大法师
 EntityName,Archmage Flaynn,火焰大法师
 EntityName,archon,亚空
@@ -1103,9 +1103,9 @@ EntityName,bad egg,坏蛋
 EntityName,balrog,巴洛炎魔
 EntityName,baluchitherium,巨犀
 EntityName,banshee,女妖
+EntityName,bar-lgura,猿魔
 EntityName,barbed devil,尖刺魔
 EntityName,barking spider,尖啸蜘蛛
-EntityName,bar-lgura,猿魔
 EntityName,barrow wight,古墓尸妖
 EntityName,basilisk,石化蜥蜴
 EntityName,bat,蝙蝠
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,假警察上尉
 EntityName,keystone kop,假警察
 EntityName,keystone lieutenant,假警察中尉
 EntityName,keystone sergeant,假警察中士
+EntityName,ki-rin,麒麟
 EntityName,killer bee,杀人蜂
 EntityName,killer beetle,杀手甲虫
 EntityName,killer food ration,杀手食物堆
 EntityName,killer iron ration,杀手火腿
 EntityName,killer tripe ration,杀手内脏餐
 EntityName,king cobra,眼镜王蛇
-EntityName,ki-rin,麒麟
 EntityName,kitten,小猫
 EntityName,kobold,狗头人
 EntityName,kobold king,狗头人之王
@@ -1646,8 +1646,8 @@ EntityName,troll,巨魔
 EntityName,troll mummy,巨魔木乃伊
 EntityName,tsetse fly,舌蝇
 EntityName,tunnel worm,隧道蠕虫
-EntityName,Twoflower,双花
 EntityName,two-headed troll,双头巨魔
+EntityName,Twoflower,双花
 EntityName,umber hulk,土巨怪
 EntityName,undead slayer,不死者猎手
 EntityName,vampire,吸血鬼
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.",重心平衡的铁制小刀，可以用来投掷。
 ItemDescription,A long pipe meant for shooting darts through force of breath.,用吹气射出飞镖的长管。
 ItemDescription,A long thrusting polearm best suited to mounted combat.,一根长矛样的长柄武器，骑乘的时候使用效果更好。
+ItemDescription,A long-shafted arrow with a distinctive tip.,尖端突出的长箭。
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",一条长皮子，意想不到的锋利。
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",带长袖和兜帽的服装。
-ItemDescription,A long-shafted arrow with a distinctive tip.,尖端突出的长箭。
 ItemDescription,A mace that is spiked on its head.,头有尖刺的棍棒。
 ItemDescription,A meal made from the stomach lining of an animal.,某种动物的胃部。
 ItemDescription,"A package of preserved meats, all dried and chewy.",一包熟成肉，又干又柴
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,青铜板甲
 ItemName,Brumstyk,女巫扫帚
 ItemName,bullet,子弹
 ItemName,bullwhip,鞭子
+ItemName,c-ration,c型口粮
 ItemName,caltrops,铁蒺藜
 ItemName,can of grease,罐装润滑脂
 ItemName,candy bar,糖块
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,巨型挖掘者
 ItemName,cornuthaum,巫师帽
 ItemName,costume earrings,无效果耳环
 ItemName,cram ration,廉价口粮
-ItemName,c-ration,c型口粮
 ItemName,cream pie,奶油派
 ItemName,Creeping Sprout,幼芽
 ItemName,crossbow,弩
@@ -2542,13 +2542,13 @@ ItemName,jasper,碧玉
 ItemName,javelin,标枪
 ItemName,jet,黑玉
 ItemName,jumping boots,跳跃之靴
+ItemName,k-ration,k型口粮
 ItemName,kaleidoscope glasses,万花筒眼镜
 ItemName,kanabo,鬼金棒
 ItemName,katana,打刀
 ItemName,katar,拳刃
 ItemName,kelp frond,海带藻体
 ItemName,knife,刀
-ItemName,k-ration,k型口粮
 ItemName,lab coat,实验服
 ItemName,lance,骑枪
 ItemName,land mine,地雷
@@ -2820,6 +2820,7 @@ ItemName,stone club,石制大棒
 ItemName,studded leather armour,镶钉皮革甲
 ItemName,submachine gun,冲锋枪
 ItemName,Sunsword,阳炎剑
+ItemName,t-shirt,T恤
 ItemName,Talaria,泰拉瑞亚
 ItemName,The Hero,“英雄”
 ItemName,thunder staff,雷霆手杖
@@ -2832,7 +2833,6 @@ ItemName,torch,火炬
 ItemName,tortilla,墨西哥薄饼
 ItemName,trident,三叉戟
 ItemName,tripe ration,内脏
-ItemName,t-shirt,T恤
 ItemName,tsurugi,野太刀
 ItemName,turquoise,绿松石
 ItemName,two-handed sword,双手剑
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,破裂
 LiteralText,burst rate,开火速率
 LiteralText,BUY,购买
 LiteralText,BUY ALL,购买全部
-LiteralText,CANCEL,取消
-LiteralText,cancellation,撤销
-LiteralText,CANCELLED,取消的
 LiteralText,CAN'T BLINK,无法闪现
 LiteralText,CAN'T HIDE,无法躲藏
 LiteralText,CAN'T JUMP,无法跳跃
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,无法看见
 LiteralText,CAN'T SLIDE,无法滑动
 LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,无法投掷
+LiteralText,CANCEL,取消
+LiteralText,cancellation,撤销
+LiteralText,CANCELLED,取消的
 LiteralText,capture any entity,捕捉
 LiteralText,carried,携带
 LiteralText,Cast,施咒
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,怪物群
 LiteralText,HOST,创建
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也许您更希望在接受更新之前完成正在进行的冒险。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,开发者希望您的冒险愉快，并且请随意与开发者交谈，给予反馈与建议。
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",我正在制作《零环》，一款继承了《Pathos》许多机制的2D平台类肉鸽游戏。点击这里来详细了解！
+LiteralText,I'm developing a new game called ZEROTH!,我正在制作一款名为《零环》的全新游戏！
 LiteralText,identified items,已鉴定的物品
 LiteralText,identify all items,鉴定所有
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,鉴定地上所有物品
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,鉴定一个
 LiteralText,ILLITERATE,文盲
 LiteralText,illusion,幻象
 LiteralText,ILLUSION,幻象
-LiteralText,I'm developing a new game called ZEROTH!,我正在制作一款名为《零环》的全新游戏！
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",我正在制作《零环》，一款继承了《Pathos》许多机制的2D平台类肉鸽游戏。点击这里来详细了解！
 LiteralText,immune to,免疫
 LiteralText,immunities,免疫
 LiteralText,impact,冲击
@@ -3554,15 +3554,18 @@ LiteralText,rank,阶级
 LiteralText,rarity,稀有程度
 LiteralText,rate & review on the app store,评论并回顾
 LiteralText,RE-ACT,重复动作
+LiteralText,RE-CAST,重新施放
+LiteralText,RE-EQUIP,重新装备
+LiteralText,Re-roll,重新投骰
+LiteralText,re-rolls,重新投掷
+LiteralText,RE-USE,重新使用
 LiteralText,Read books to learn spells,读书来习得咒语
 LiteralText,READ!,读！
-LiteralText,REALLY CRASH?,真的破坏？
 LiteralText,REAL-TIME,实时
+LiteralText,REALLY CRASH?,真的破坏？
 LiteralText,recall party,唤回队友
-LiteralText,RE-CAST,重新施放
 LiteralText,Recommend Pathos,捐献给Pathos
 LiteralText,Redo,重复操作
-LiteralText,RE-EQUIP,重新装备
 LiteralText,reflects,反射
 LiteralText,REGISTER,登录
 LiteralText,REGISTER PLAYER HANDLE,登录玩家行为
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,起补满魔法值
 LiteralText,replica,复制品
 LiteralText,replicate item,复制物件
 LiteralText,requires the skill to pick locks,需要开锁技能
-LiteralText,Re-roll,重新投骰
-LiteralText,re-rolls,重新投掷
 LiteralText,reset random equipment,重设随机装备
 LiteralText,resident?,NPC
 LiteralText,resistances,抗性
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,复活并继续
 LiteralText,resurrections,复活次数
 LiteralText,retaliations,反击
 LiteralText,RETURN,返回
-LiteralText,RE-USE,重新使用
 LiteralText,REVEAL,揭露
 LiteralText,REVEAL ALL MAPS,对所有楼层使用魔法地图
 LiteralText,REVEAL THIS MAP,对本楼层使用魔法地图

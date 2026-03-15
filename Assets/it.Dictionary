@@ -569,11 +569,11 @@ CharacterName,Chemron,Chemron
 CharacterName,Cheyne,Cheyne
 CharacterName,Choung,Choung
 CharacterName,Crepsal,Crepsal
+CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
 CharacterName,Davicohr,Davicohr
 CharacterName,Donneller,Donneller
-CharacterName,D'rey,D'rey
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
 CharacterName,Ellent,Ellent
@@ -1068,8 +1068,8 @@ EntityName,ape,gorilla
 EntityName,Aphrodite,Afrodite
 EntityName,apprentice,apprendista
 EntityName,arc bug,insetto sprizzalampo
-EntityName,archangel,arcangelo
 EntityName,arch-lich,arch-lich
+EntityName,archangel,arcangelo
 EntityName,Archmage Dirachi,Alto Mago del Ghiaccio
 EntityName,Archmage Flaynn,Alto Mago della Fiamma
 EntityName,archon,arconte
@@ -1103,9 +1103,9 @@ EntityName,bad egg,uovo andato a male
 EntityName,balrog,balrog
 EntityName,baluchitherium,baluchitherium
 EntityName,banshee,banshee
+EntityName,bar-lgura,bar-Igura
 EntityName,barbed devil,diavolo spinato
 EntityName,barking spider,tarantola sibilante
-EntityName,bar-lgura,bar-Igura
 EntityName,barrow wight,spettro dei tumuli
 EntityName,basilisk,basilisco
 EntityName,bat,pipistrello
@@ -1390,13 +1390,13 @@ EntityName,keystone captain,capitano di keystone
 EntityName,keystone kop,polizia di keystone
 EntityName,keystone lieutenant,tenente di keystone
 EntityName,keystone sergeant,sergente di keystone
+EntityName,ki-rin,ki-rin
 EntityName,killer bee,ape assassina
 EntityName,killer beetle,scarafaggio assassino
 EntityName,killer food ration,razione di cibo killer
 EntityName,killer iron ration,razione militare killer
 EntityName,killer tripe ration,razione di trippa killer
 EntityName,king cobra,re cobra
-EntityName,ki-rin,ki-rin
 EntityName,kitten,gattino
 EntityName,kobold,coboldo
 EntityName,kobold king,re coboldo
@@ -1646,8 +1646,8 @@ EntityName,troll,troll
 EntityName,troll mummy,mummia troll
 EntityName,tsetse fly,zanzara tse-tse
 EntityName,tunnel worm,verme scavatore
-EntityName,Twoflower,Duefiori
 EntityName,two-headed troll,troll a due teste
+EntityName,Twoflower,Duefiori
 EntityName,umber hulk,scavatore delle profondità
 EntityName,undead slayer,uccisore di non morti
 EntityName,vampire,vampiro
@@ -2147,9 +2147,9 @@ ItemDescription,"A lightweight protective panel strapped to the forearm, made fr
 ItemDescription,"A long iron knife with a sharp tip, weighted for throwing.","Un lungo coltello di ferro con una punta affilata, perfetto per essere lanciato."
 ItemDescription,A long pipe meant for shooting darts through force of breath.,Un lungo tubicino dal quale è possibile lanciare dardi con la forza del fiato.
 ItemDescription,A long thrusting polearm best suited to mounted combat.,Un'arma inastata pensata per il combattimento a cavallo.
+ItemDescription,A long-shafted arrow with a distinctive tip.,Una lunga freccia con una punta distintamente riconoscibile.
 ItemDescription,"A long, flexible leather thong. Unexpectedly sharp.",
 ItemDescription,"A long, flowing garment, with long sleeves and a hood.",
-ItemDescription,A long-shafted arrow with a distinctive tip.,Una lunga freccia con una punta distintamente riconoscibile.
 ItemDescription,A mace that is spiked on its head.,Una mazza appuntita ed estremamente pericolosa.
 ItemDescription,A meal made from the stomach lining of an animal.,Un pasto realizzato con lo stomaco di un animale.
 ItemDescription,"A package of preserved meats, all dried and chewy.",Un pacchetto contenente una gran varietà di carne essiccata.
@@ -2394,6 +2394,7 @@ ItemName,bronze plate mail,armatura a piastre di bronzo
 ItemName,Brumstyk,Brumstyk
 ItemName,bullet,proiettile
 ItemName,bullwhip,frusta
+ItemName,c-ration,razione C
 ItemName,caltrops,piedi di corvo
 ItemName,can of grease,lattina di grasso
 ItemName,candy bar,caramella
@@ -2420,7 +2421,6 @@ ItemName,Colossal Excavator,Il Cavatore
 ItemName,cornuthaum,cornuthaum
 ItemName,costume earrings,orecchini
 ItemName,cram ration,razione alimentare
-ItemName,c-ration,razione C
 ItemName,cream pie,torta alla crema
 ItemName,Creeping Sprout,Germoglio Strisciante
 ItemName,crossbow,balestra
@@ -2542,13 +2542,13 @@ ItemName,jasper,diaspro
 ItemName,javelin,giavellotto da lancio
 ItemName,jet,giaietto
 ItemName,jumping boots,stivali a molla del salto
+ItemName,k-ration,razione k
 ItemName,kaleidoscope glasses,occhiali caleidoscopici
 ItemName,kanabo,kanabo
 ItemName,katana,katana
 ItemName,katar,katar
 ItemName,kelp frond,fronda di alghe
 ItemName,knife,coltello
-ItemName,k-ration,razione k
 ItemName,lab coat,camice da laboratorio
 ItemName,lance,lancia
 ItemName,land mine,mina terrestre
@@ -2820,6 +2820,7 @@ ItemName,stone club,clava di pietra
 ItemName,studded leather armour,armatura di pelle borchiata
 ItemName,submachine gun,mitragliatrice pesante
 ItemName,Sunsword,Spada Solare
+ItemName,t-shirt,maglietta
 ItemName,Talaria,Talaria
 ItemName,The Hero,Il Big Big Big Mac
 ItemName,thunder staff,verga del tuono
@@ -2832,7 +2833,6 @@ ItemName,torch,torcia
 ItemName,tortilla,tortilla
 ItemName,trident,tridente
 ItemName,tripe ration,razione di trippa
-ItemName,t-shirt,maglietta
 ItemName,tsurugi,tsurugi
 ItemName,turquoise,turchese
 ItemName,two-handed sword,spada a due mani
@@ -3086,9 +3086,6 @@ LiteralText,BROKEN,ROTTO
 LiteralText,burst rate,rateo di fuoco
 LiteralText,BUY,COMPRA
 LiteralText,BUY ALL,COMPRA TUTTO
-LiteralText,CANCEL,ANNULLA
-LiteralText,cancellation,cancellazione
-LiteralText,CANCELLED,ANNULLATO
 LiteralText,CAN'T BLINK,IMPOSSIBILE TELETRASPORTARE
 LiteralText,CAN'T HIDE,IMPOSSIBILE NASCONDERE
 LiteralText,CAN'T JUMP,IMPOSSIBILE SALTARE
@@ -3099,6 +3096,9 @@ LiteralText,CAN'T SEE,IMPOSSIBILE VEDERE
 LiteralText,CAN'T SLIDE,IMPOSSIBILE SCIVOLARE
 LiteralText,CAN'T TELEKINESIS,IMPOSSIBILE USARE TELECINESI
 LiteralText,CAN'T THROW,IMPOSSIBILE LANCIARE
+LiteralText,CANCEL,ANNULLA
+LiteralText,cancellation,cancellazione
+LiteralText,CANCELLED,ANNULLATO
 LiteralText,capture any entity,catturare
 LiteralText,carried,portato
 LiteralText,Cast,Utilizza
@@ -3347,6 +3347,8 @@ LiteralText,HORDES,ORDE
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Nonostante ciò, sarebbe saggio finire le seguenti avventure prima di scaricare l'aggiornamento."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Spero che le tue avventure ti stiano divertendo. Se vuoi puoi contattami per farmi sapere le tue impressioni e suggerimenti.
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
+LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,ha identificato oggetti
 LiteralText,identify all items,identificare tutti
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICA TUTTI GLI OGGETTI SUL TERRENO
@@ -3354,8 +3356,6 @@ LiteralText,identify one item,identificare uno
 LiteralText,ILLITERATE,ILLETTERATO
 LiteralText,illusion,illusione
 LiteralText,ILLUSION,ILLUSIONE
-LiteralText,I'm developing a new game called ZEROTH!,
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,immune to,immune a
 LiteralText,immunities,immunità
 LiteralText,impact,impatto
@@ -3554,15 +3554,18 @@ LiteralText,rank,rango
 LiteralText,rarity,rarità
 LiteralText,rate & review on the app store,vota e recensisci su app store
 LiteralText,RE-ACT,AGISCI NUOVAMENTE
+LiteralText,RE-CAST,CASTA NUOVAMENTE
+LiteralText,RE-EQUIP,EQUIPAGGIA NUOVAMENTE
+LiteralText,Re-roll,Ritira
+LiteralText,re-rolls,re-rolls
+LiteralText,RE-USE,RI-USA
 LiteralText,Read books to learn spells,Leggi libri per imparare incantesimi
 LiteralText,READ!,LEGGI!
-LiteralText,REALLY CRASH?,SICURO DI VOLER CRASHARE?
 LiteralText,REAL-TIME,TEMPO REALE
+LiteralText,REALLY CRASH?,SICURO DI VOLER CRASHARE?
 LiteralText,recall party,richiamare
-LiteralText,RE-CAST,CASTA NUOVAMENTE
 LiteralText,Recommend Pathos,Raccomanda Pathos
 LiteralText,Redo,Ripristina
-LiteralText,RE-EQUIP,EQUIPAGGIA NUOVAMENTE
 LiteralText,reflects,riflettente
 LiteralText,REGISTER,REGISTRATI
 LiteralText,REGISTER PLAYER HANDLE,REGISTRA NOME GIOCATORE
@@ -3588,8 +3591,6 @@ LiteralText,replenish mana,ripristina mana
 LiteralText,replica,replica
 LiteralText,replicate item,replicare risorsa
 LiteralText,requires the skill to pick locks,richiede l'abilità di scassinare le serrature
-LiteralText,Re-roll,Ritira
-LiteralText,re-rolls,re-rolls
 LiteralText,reset random equipment,resettare l'equipaggiamento casuale
 LiteralText,resident?,residente?
 LiteralText,resistances,resistenze
@@ -3605,7 +3606,6 @@ LiteralText,Resurrect and continue,Resuscita e continua
 LiteralText,resurrections,resurrezioni
 LiteralText,retaliations,vendette
 LiteralText,RETURN,RITORNA
-LiteralText,RE-USE,RI-USA
 LiteralText,REVEAL,RIVELA
 LiteralText,REVEAL ALL MAPS,RIVELA TUTTE LE MAPPE
 LiteralText,REVEAL THIS MAP,RIVELA QUESTA MAPPA
