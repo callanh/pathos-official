@@ -1,3 +1,13 @@
+2026-03-28
+- Improved handling of window size for the start screen when using split-windows on Android.
+
+2026-03-26
+- Single tap on your character tile now brings up the quick menu for easier use (rather than having to long-press for the personal menu).
+
+2026-03-22
+- Back button now closes the map instead of opening the side menu.
+- Map will always have a gutter on square resolutions, so you can tap away to dismiss it.
+
 2026-03-15
 - upgraded Windows Desktop version to target .NET 10.0 (you may need to install the latest .NET Desktop Runtime).
 

@@ -599,6 +599,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_monk);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_monk);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_monk);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_monk);
         C.AddFeat(2, Properties.quickness);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(6, Elements.poison);
