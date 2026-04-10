@@ -15,11 +15,11 @@ The content definitions and module generations are declared as C# code. This cod
 1. Download [**Pathos for Windows Desktop**](https://pathos.azurewebsites.net/).
 2. Install Pathos to `C:\Games\Pathos` **.
 3. Fork the [**Official public repository**](https://github.com/callanh/pathos-official.git).
-4. Install **Microsoft Visual Studio 2022** _or_ **Microsoft Visual Code** plus build tools.
+4. Install **Microsoft Visual Studio 2026** _or_ **Microsoft Visual Code** plus build tools.
 
 ** _you will need to edit the paths in PathosOfficial.csproj if you don't use this default location._
 
-### Visual Studio 2022
+### Visual Studio 2026
 
 1. Install [**Visual Studio Community**](https://visualstudio.microsoft.com/) with the **.NET Desktop Development** workload.
 2. Open `PathosOfficial.sln`.

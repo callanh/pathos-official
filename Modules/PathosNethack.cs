@@ -1202,8 +1202,8 @@ namespace Pathos
 
             // has the endgame letter.
             var LetterAsset = Generator.NewSpecificAsset(UniqueSquare, Codex.Items.Stamped_Letter);
-            Generator.InscribeAsset(LetterAsset, 
-              NethackTerms.Congratulations_on_making_it_to_the_final_level_and_defeating_your_nemesis + "|" + 
+            Generator.InscribeAsset(LetterAsset,
+              NethackTerms.Congratulations_on_making_it_to_the_final_level_and_defeating_your_nemesis + "|" +
               NethackTerms.To_complete_this_game_you_need_to_escape_the_dungeon_on_the_first_level);
             UniqueCharacter.Inventory.Carried.Add(LetterAsset);
           }
@@ -1796,7 +1796,7 @@ namespace Pathos
       //CellarDice = Dice.Fixed(5);
 #endif
 
-      var CellarWidth = CellarDice.Roll();  
+      var CellarWidth = CellarDice.Roll();
       var CellarHeight = CellarDice.Roll();
 
       var CellarMap = Generator.Adventure.World.AddMap(CellarMapName, CellarWidth, CellarHeight);
@@ -2678,7 +2678,7 @@ namespace Pathos
       {
         this.AtticTemplateList = [];
 
-        using (var TemplateReader = new System.IO.StringReader(Official.Resources.Specials.Attics))
+        using (var TemplateReader = new System.IO.StringReader(Resources.LoadSpecial("Attics")))
         {
           var AtticBuilder = new StringBuilder();
 
@@ -2715,7 +2715,7 @@ namespace Pathos
 
         var IdentitySet = new HashSet<string>();
 
-        using (var TemplateReader = new System.IO.StringReader(Official.Resources.Specials.SixBy6))
+        using (var TemplateReader = new System.IO.StringReader(Resources.LoadSpecial("SixBy6")))
         {
           var Name = TemplateReader.ReadLine();
 
@@ -2824,893 +2824,887 @@ namespace Pathos
 
       var GridArray = new[]
       {
-        new { Frequency = 12, Name = "Frontier Town", Text = Official.Resources.Specials.Town1Frontier },
-        new { Frequency = 12, Name = "Townsquare", Text = Official.Resources.Specials.Town2Square },
-        new { Frequency = 12, Name = "Alley Town", Text = Official.Resources.Specials.Town3Alley },
-        new { Frequency = 12, Name = "College Town", Text = Official.Resources.Specials.Town4College },
-        new { Frequency = 12, Name = "Bustling Town", Text = Official.Resources.Specials.Town5Bustling },
-        new { Frequency = 12, Name = "The Bazaar", Text = Official.Resources.Specials.Town6Bazaar },
-        new { Frequency = 4, Name = "Orc Town", Text = Official.Resources.Specials.Town7Orcish }, // massacre.
-        new { Frequency = 12, Name = "The Waterway", Text = Official.Resources.Specials.Town8Waterway },
-        new { Frequency = 12, Name = "The Lavaflow", Text = Official.Resources.Specials.Town9Lavaflow },
+        new { Frequency = 12, Name = "Frontier Town", Resource = "Town 1 - Frontier" },
+        new { Frequency = 12, Name = "Townsquare", Resource = "Town 2 - Square" },
+        new { Frequency = 12, Name = "Alley Town", Resource = "Town 3 - Alley" },
+        new { Frequency = 12, Name = "College Town", Resource = "Town 4 - College" },
+        new { Frequency = 12, Name = "Bustling Town", Resource = "Town 5 - Bustling" },
+        new { Frequency = 12, Name = "The Bazaar", Resource = "Town 6 - Bazaar" },
+        new { Frequency = 4, Name = "Orc Town", Resource = "Town 7 - Orcish" }, // massacre.
+        new { Frequency = 12, Name = "The Waterway", Resource = "Town 8 - Waterway" },
+        new { Frequency = 12, Name = "The Lavaflow", Resource = "Town 9 - Lavaflow" },
       };
 
-      var TownArray = new[] { GridArray.ToProbability(T => T.Frequency).GetRandom() }; // generate a single town.
 #if DEBUG
-      //TownArray = new[] { GridArray[6] }; // test a specific town.
-      //TownArray = GridArray; // test all towns.
+      //foreach (var Grid in GridArray) Resources.LoadSpecial(Grid.Resource); // test all resources.
 #endif
-      foreach (var Town in TownArray)
-      {
-        var SiteName = TownArray[0] == Town ? NethackTerms.Mines : Town.Name; // NOTE: Town Names are not translated, this is just for debugging.
-        var MinesSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(SiteName));
 
-        var TownGrid = Generator.LoadSpecialGrid(Town.Text);
+      var Town = GridArray.ToProbability(T => T.Frequency).GetRandom(); // generate a single town.
+
+      var SiteName = NethackTerms.Mines;
+      var MinesSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(SiteName));
+
+      var TownGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Town.Resource));
+
+      // rotate 0-3 times (0/90/180/270 degrees).
+      for (var Index = 0; Index < (1.d4() - 1).Roll(); Index++)
+        TownGrid.Rotate90Degrees();
+
+      var DoubleCavern = CavernSize * 2;
+
+      var TownWidth = TownGrid.Width + (DoubleCavern * 2);
+      TownWidth -= TownWidth % CavernSize;
+
+      var TownHeight = TownGrid.Height + (DoubleCavern * 2);
+      TownHeight -= TownHeight % CavernSize;
+
+      var TownMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(NethackTerms.Minetown), TownWidth, TownHeight);
+      TownMap.SetDifficulty(EntranceMap.Difficulty + 1);
+      TownMap.SetAtmosphere(Codex.Atmospheres.civilisation);
+
+      var TownLevel = MinesSite.AddLevel(1, TownMap);
+
+      var TownStructure = CreateCavern(TownMap, TownMap.Region);
+
+      // strip out all zones and rooms.
+      TownStructure.RemoveRooms();
+      TownMap.RemoveZones();
+
+      var TownRegion = new Region(DoubleCavern, DoubleCavern, DoubleCavern + TownGrid.Width - 1, DoubleCavern + TownGrid.Height - 1);
+
+      // obliterate the inside caverns.
+      foreach (var Square in TownMap.GetSquares(TownRegion))
+      {
+        if (Square.Wall != null)
+          Generator.RemoveWall(Square);
+
+        Generator.PlaceFloor(Square, MinesGround); // required for the repair gaps algorithm.
+      }
+
+      foreach (var Square in TownMap.GetSquares(TownRegion))
+      {
+        Generator.RemoveFloor(Square);
+        Debug.Assert(Square.IsEmpty());
+      }
+
+      // put in the caves zones, so we can create details.
+      Generator.RepairZones(TownMap, TownMap.Region);
+
+      // passages to the mines levels.
+      var BelowSquare = TownMap.GetSquares(TownMap.Region).Where(Generator.CanPlacePortal).ToArray().GetRandom();
+      Generator.PlacePassage(BelowSquare, MinesLevelDownPortal, Destination: null);
+
+      // the outer caves.
+      foreach (var TownZone in TownMap.Zones)
+      {
+        if (Chance.OneIn3.Hit())
+        {
+          if (Chance.OneIn3.Hit())
+            Generator.PlaceRoomFixtures(TownZone.Squares);
+
+          CreateRoomDetails(TownStructure, TownMap, MinesBlock, TownZone.Squares);
+        }
+        else if (Chance.OneIn3.Hit())
+        {
+          Generator.PlaceHorde(TownZone.Squares);
+        }
+      }
+
+      var TownParty = Generator.NewParty(Leader: null);
+
+      void RecruitTownParty(Square Square)
+      {
+        var Character = Square.Character;
+        if (Character != null)
+        {
+          Generator.NeutralCharacter(Character);
+
+          TownParty.AddAlly(Character, Clock.Zero, Delay.Zero);
+        }
+      }
+
+      var DeferList = new Inv.DistinctList<Action>();
+
+      var TownShopProbability = ShopProbability.Clone();
+
+      var WatchmanDialogueList = NethackDialogues.WatchmanList.ToDistinctList();
+
+      void AssignWatchCharacter(Character WatchCharacter, int WatchNumber)
+      {
+        var WatchDialogue = Generator.Adventure.World.AddDialogue("WATCH-" + WatchNumber);
+        WatchDialogue.Root.Document.Fragment(WatchmanDialogueList.RemoveRandomOrNull() ?? NethackDialogues.WatchmanList.GetRandom());
+        WatchDialogue.Root.Branch(NethackDialogues.Goodbye);
+        Generator.AssignDialogue(WatchCharacter, WatchDialogue);
+      }
+
+      var WatchmanArray = new Character[9];
+
+      for (var Column = 0; Column < TownGrid.Width; Column++)
+      {
+        for (var Row = 0; Row < TownGrid.Height; Row++)
+        {
+          var TownSymbol = TownGrid[Column, Row];
+          var TownSquare = TownMap[Column + DoubleCavern, Row + DoubleCavern];
+
+          switch (TownSymbol)
+          {
+            case '<':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlacePassage(EntranceSquare, MinesLevelDownPortal, TownSquare);
+              Generator.PlacePassage(TownSquare, MinesLevelUpPortal, EntranceSquare);
+
+              TownLevel.SetTransitions(TownSquare, BelowSquare);
+              break;
+
+            case '.':
+              // room floor.
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+              break;
+
+            case '#':
+              // corridor floor.
+              Generator.PlaceFloor(TownSquare, TownOutskirtGround);
+              TownSquare.SetLit(true);
+              break;
+
+            case '-':
+            case '|':
+              // walls.
+              Generator.PlaceSolidWall(TownSquare, TownBarrier, WallSegment.Cross);
+              TownSquare.SetLit(true);
+              break;
+
+            case '+':
+              // door.
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              if (TownGate == null)
+              {
+                Generator.PlaceIllusionaryWall(TownSquare, TownBarrier, WallSegment.Cross);
+              }
+              else
+              {
+                Generator.PlaceClosedHorizontalDoor(TownSquare, TownGate, TownBarrier);
+                /*
+                var Door = TownSquare.Door;
+                if (Door != null)
+                {
+                  //Door.SetState(DoorState.Locked);
+                  //Door.SetTrap(Generator.Engine.CreateTrap(Codex.Devices.fire_trap));
+                }
+                */
+              }
+              break;
+
+            case '=':
+              // workbench.
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceFixture(TownSquare, Codex.Features.workbench);
+              break;
+
+            case '{':
+              // fountain.
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceFixture(TownSquare, Codex.Features.fountain);
+              break;
+
+            case '}':
+              // tree.
+              Generator.PlaceFloor(TownSquare, TownOutskirtGround);
+              Generator.PlaceSolidWall(TownSquare, Codex.Barriers.tree, WallSegment.Pillar);
+              TownSquare.SetLit(true);
+              break;
+
+            case '_':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              var TownShrine = ShrineProbability.GetRandom();
+
+              Generator.PlaceShrine(TownSquare, TownShrine);
+              RecruitTownParty(TownSquare);
+
+              DeferList.Add(() =>
+              {
+                var ShrineZone = TownMap.AddZone();
+                ShrineZone.AddRegion(TownSquare.FindBoundary());
+
+                ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[TownShrine.Index]).SetTarget(TownSquare);
+              });
+
+              break;
+
+            case '~':
+              Generator.PlaceFloor(TownSquare, Codex.Grounds.water);
+              TownSquare.SetLit(true);
+
+              if (Generator.CanPlaceAsset(TownSquare) && Chance.OneIn10.Hit())
+                Generator.PlaceSpecificAsset(TownSquare, Codex.Items.kelp_frond);
+              break;
+
+            case '[':
+              Generator.PlaceFloor(TownSquare, Codex.Grounds.water);
+              Generator.PlaceBridge(TownSquare, Codex.Platforms.wooden_bridge, BridgeOrientation.Horizontal);
+              TownSquare.SetLit(true);
+              break;
+
+            case '`':
+              Generator.PlaceFloor(TownSquare, Codex.Grounds.lava);
+              TownSquare.SetLit(true);
+              break;
+
+            case ']':
+              Generator.PlaceFloor(TownSquare, Codex.Grounds.lava);
+              Generator.PlaceBridge(TownSquare, Codex.Platforms.crystal_bridge, BridgeOrientation.Horizontal);
+              TownSquare.SetLit(true);
+              break;
+
+            case '@':
+            case '%':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              var TownShop = TownShopProbability.RemoveRandomOrNull();
+
+              if (TownShop != null)
+              {
+                if (TownSymbol == '@')
+                {
+                  Generator.PlaceShop(TownSquare, TownShop, 6.d2().Roll());
+                  RecruitTownParty(TownSquare);
+
+                  DeferList.Add(() =>
+                  {
+                    var ShopZone = TownMap.AddZone();
+                    ShopZone.AddRegion(TownSquare.FindBoundary());
+                    ShopZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShopArray[TownShop.Index]).SetTarget(TownSquare);
+                  });
+                }
+                else
+                {
+                  Generator.PlaceShop(TownSquare, TownShop, 1.d4().Roll());
+                  Generator.CorpseSquare(TownSquare);
+
+                  if (TownSquare.Fixture != null)
+                    Generator.BreakFixture(TownSquare);
+
+                  // murdered by orcs.
+                  DeferList.Add(() =>
+                  {
+                    var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
+                    if (ShopParty == null)
+                      Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
+                  });
+                }
+              }
+              break;
+
+            case '&':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceShrine(TownSquare, ShrineProbability.GetRandom());
+              Generator.CorpseSquare(TownSquare);
+
+              //if (TownSquare.Fixture != null)
+              //  Generator.BreakFixture(TownSquare);
+
+              DeferList.Add(() =>
+              {
+                var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
+                if (ShrineParty == null)
+                  Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
+              });
+              break;
+
+            case 'f':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.housecat);
+              break;
+
+            case 'k':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.kobold_shaman);
+              break;
+
+            case 'l':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnome_lord);
+              break;
+
+            case 'n':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.water_nymph);
+              break;
+
+            case 'w':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnomish_wizard);
+              break;
+
+            case 'y':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.monkey);
+              break;
+
+            case 'G':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watch_captain);
+
+              var CaptainCharacter = TownSquare.Character;
+              if (CaptainCharacter != null)
+                AssignWatchCharacter(CaptainCharacter, 0);
+
+              RecruitTownParty(TownSquare);
+              break;
+
+            case '\\':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              Generator.PlaceFixture(TownSquare, Codex.Features.bed);
+              break;
+
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+
+              var WatchmanNumber = (int)TownSymbol - (int)'0';
+              var WatchmanCharacter = WatchmanArray[WatchmanNumber - 1];
+
+              if (WatchmanCharacter == null)
+              {
+                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watchman);
+
+                WatchmanCharacter = TownSquare.Character;
+                if (WatchmanCharacter != null)
+                {
+                  AssignWatchCharacter(WatchmanCharacter, WatchmanNumber);
+
+                  WatchmanArray[WatchmanNumber - 1] = WatchmanCharacter;
+                  Generator.ResidentSquare(WatchmanCharacter, TownSquare);
+
+                  RecruitTownParty(TownSquare);
+                }
+              }
+              else
+              {
+                Generator.ResidentRoute(WatchmanCharacter, WatchmanCharacter.Resident.Routes.Union(TownSquare).ToArray(), 0);
+              }
+              break;
+
+            case ' ':
+              // void.
+              Generator.RemoveFloor(TownSquare);
+              TownSquare.SetLit(false);
+              break;
+
+            default:
+              Generator.PlaceFloor(TownSquare, TownBuildingGround);
+              TownSquare.SetLit(true);
+              Debug.WriteLine(TownSymbol);
+              break;
+          }
+        }
+      }
+
+      // repair the gaps.
+      foreach (var Square in TownMap.GetSquares(TownMap.Region))
+      {
+        if (Square.IsEmpty() && Square.GetAdjacentSquares().Any(S => S.Floor != null && S.Wall == null))
+          Generator.PlaceSolidWall(Square, MinesBarrier, WallSegment.Cross);
+      }
+
+      foreach (var Defer in DeferList)
+        Defer();
+
+      Generator.RepairVoid(TownMap, TownMap.Region);
+      Generator.RepairWalls(TownMap, TownMap.Region);
+      Generator.RepairDoors(TownMap, TownMap.Region);
+      Generator.RepairBridges(TownMap, TownMap.Region);
+      Generator.RepairZones(TownMap, TownMap.Region);
+
+      // mines levels.
+      var LevelArray = new[]
+      {
+        new { Number = 1, Special = "Mines 1" },
+        new { Number = 2, Special = "Mines 2" },
+        new { Number = 3, Special = "Mines 3" },
+        new { Number = 4, Special = "Mines 4" },
+        new { Number = 5, Special = "Mines 5" },
+      };
+
+      Square NextLevelSquare = null;
+
+      foreach (var Level in LevelArray)
+      {
+        var LevelMapName = Generator.EscapedModuleTerm(SiteName) + " " + Level.Number;
+        if (Generator.Adventure.World.HasMap(LevelMapName))
+        {
+          Debug.Fail("How is there a duplicate mines level?");
+          return false;
+        }
+
+        var MinesGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Level.Special));
 
         // rotate 0-3 times (0/90/180/270 degrees).
         for (var Index = 0; Index < (1.d4() - 1).Roll(); Index++)
-          TownGrid.Rotate90Degrees();
+          MinesGrid.Rotate90Degrees();
 
-        var DoubleCavern = CavernSize * 2;
+        var MinesMap = Generator.Adventure.World.AddMap(LevelMapName, MinesGrid.Width, MinesGrid.Height);
+        MinesMap.SetDifficulty(TownMap.Difficulty + Level.Number);
+        MinesMap.SetAtmosphere(Codex.Atmospheres.cavern);
 
-        var TownWidth = TownGrid.Width + (DoubleCavern * 2);
-        TownWidth -= TownWidth % CavernSize;
+        var MinesStructure = new DungeonStructure(MinesMap);
 
-        var TownHeight = TownGrid.Height + (DoubleCavern * 2);
-        TownHeight -= TownHeight % CavernSize;
+        var MinesLevel = MinesSite.AddLevel(Level.Number + 1, MinesMap);
 
-        var TownName = TownArray[0] == Town ? NethackTerms.Minetown : Town.Name;
+        Square DownLevelSquare = null;
 
-        var TownMap = Generator.Adventure.World.AddMap(Generator.EscapedModuleTerm(TownName), TownWidth, TownHeight);
-        TownMap.SetDifficulty(EntranceMap.Difficulty + 1);
-        TownMap.SetAtmosphere(Codex.Atmospheres.civilisation);
-
-        var TownLevel = MinesSite.AddLevel(1, TownMap);
-
-        var TownStructure = CreateCavern(TownMap, TownMap.Region);
-
-        // strip out all zones and rooms.
-        TownStructure.RemoveRooms();
-        TownMap.RemoveZones();
-
-        var TownRegion = new Region(DoubleCavern, DoubleCavern, DoubleCavern + TownGrid.Width - 1, DoubleCavern + TownGrid.Height - 1);
-
-        // obliterate the inside caverns.
-        foreach (var Square in TownMap.GetSquares(TownRegion))
+        for (var Column = 0; Column < MinesGrid.Width; Column++)
         {
-          if (Square.Wall != null)
-            Generator.RemoveWall(Square);
-
-          Generator.PlaceFloor(Square, MinesGround); // required for the repair gaps algorithm.
-        }
-
-        foreach (var Square in TownMap.GetSquares(TownRegion))
-        {
-          Generator.RemoveFloor(Square);
-          Debug.Assert(Square.IsEmpty());
-        }
-
-        // put in the caves zones, so we can create details.
-        Generator.RepairZones(TownMap, TownMap.Region);
-
-        // passages to the mines levels.
-        var BelowSquare = TownMap.GetSquares(TownMap.Region).Where(Generator.CanPlacePortal).ToArray().GetRandom();
-        Generator.PlacePassage(BelowSquare, MinesLevelDownPortal, Destination: null);
-
-        // the outer caves.
-        foreach (var TownZone in TownMap.Zones)
-        {
-          if (Chance.OneIn3.Hit())
+          for (var Row = 0; Row < MinesGrid.Height; Row++)
           {
-            if (Chance.OneIn3.Hit())
-              Generator.PlaceRoomFixtures(TownZone.Squares);
+            var MinesSymbol = MinesGrid[Column, Row];
+            var MinesSquare = MinesMap[Column, Row];
 
-            CreateRoomDetails(TownStructure, TownMap, MinesBlock, TownZone.Squares);
-          }
-          else if (Chance.OneIn3.Hit())
-          {
-            Generator.PlaceHorde(TownZone.Squares);
-          }
-        }
-
-        var TownParty = Generator.NewParty(Leader: null);
-
-        void RecruitTownParty(Square Square)
-        {
-          var Character = Square.Character;
-          if (Character != null)
-          {
-            Generator.NeutralCharacter(Character);
-
-            TownParty.AddAlly(Character, Clock.Zero, Delay.Zero);
-          }
-        }
-
-        var DeferList = new Inv.DistinctList<Action>();
-
-        var TownShopProbability = ShopProbability.Clone();
-
-        var WatchmanDialogueList = NethackDialogues.WatchmanList.ToDistinctList();
-        
-        void AssignWatchCharacter(Character WatchCharacter, int WatchNumber)
-        {
-          var WatchDialogue = Generator.Adventure.World.AddDialogue("WATCH-" + WatchNumber);
-          WatchDialogue.Root.Document.Fragment(WatchmanDialogueList.RemoveRandomOrNull() ?? NethackDialogues.WatchmanList.GetRandom());
-          WatchDialogue.Root.Branch(NethackDialogues.Goodbye);
-          Generator.AssignDialogue(WatchCharacter, WatchDialogue);
-        }
-
-        var WatchmanArray = new Character[9];
-
-        for (var Column = 0; Column < TownGrid.Width; Column++)
-        {
-          for (var Row = 0; Row < TownGrid.Height; Row++)
-          {
-            var TownSymbol = TownGrid[Column, Row];
-            var TownSquare = TownMap[Column + DoubleCavern, Row + DoubleCavern];
-
-            switch (TownSymbol)
+            switch (MinesSymbol)
             {
-              case '<':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlacePassage(EntranceSquare, MinesLevelDownPortal, TownSquare);
-                Generator.PlacePassage(TownSquare, MinesLevelUpPortal, EntranceSquare);
-
-                TownLevel.SetTransitions(TownSquare, BelowSquare);
+              case ' ':
+                // void.
                 break;
 
               case '.':
                 // room floor.
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                MinesSquare.SetLit(true);
                 break;
 
               case '#':
                 // corridor floor.
-                Generator.PlaceFloor(TownSquare, TownOutskirtGround);
-                TownSquare.SetLit(true);
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                MinesSquare.SetLit(true);
                 break;
 
               case '-':
               case '|':
                 // walls.
-                Generator.PlaceSolidWall(TownSquare, TownBarrier, WallSegment.Cross);
-                TownSquare.SetLit(true);
+                Generator.PlaceSolidWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
+
+              case '`':
+                // can't dig through this wall.
+                Generator.PlacePermanentWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
+
+              case '~':
+                // locked door to Under levels staircase.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceLockedHorizontalDoor(MinesSquare, Codex.Gates.crystal_door, MinesBarrier);
+                MinesSquare.SetLit(true);
                 break;
 
               case '+':
                 // door.
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
 
-                if (TownGate == null)
-                {
-                  Generator.PlaceIllusionaryWall(TownSquare, TownBarrier, WallSegment.Cross);
-                }
+              case 'S':
+                // secret door.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'D':
+                // locked secret door.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'H':
+                // maybe floor, maybe wall.
+                if (Chance.OneIn2.Hit())
+                  Generator.PlaceFloor(MinesSquare, MinesGround);
                 else
+                  Generator.PlaceSolidWall(MinesSquare, MinesBarrier, WallSegment.Cross);
+                MinesSquare.SetLit(true);
+                break;
+
+              case '<':
+                // up stair.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                MinesSquare.SetLit(true);
+
+                var DestinationSquare = NextLevelSquare != null && NextLevelSquare.Map != MinesMap ? NextLevelSquare : BelowSquare;
+
+                DestinationSquare.Passage.SetDestination(MinesSquare);
+                Generator.PlacePassage(MinesSquare, MinesLevelUpPortal, DestinationSquare);
+
+                MinesLevel.SetTransitions(MinesSquare, MinesLevel.DownSquare);
+                break;
+
+              case '>':
+                // down stair.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+
+                DownLevelSquare = MinesSquare;
+
+                // NOTE: the passage destination is replaced by the upstairs placement of the next level (we do it this way to avoid traps being generated on the downstairs).
+                Generator.PlacePassage(DownLevelSquare, MinesLevelDownPortal, Destination: null);
+
+                MinesLevel.SetTransitions(MinesLevel.UpSquare, MinesSquare);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'g':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_warrior);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'l':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_lord);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 't':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_thief);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'm':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_mummy);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'z':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_zombie);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'w':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnomish_wizard);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'k':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                MinesSquare.SetLit(true);
+
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.kobold_shaman);
+                break;
+
+              case 'U':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.umber_hulk);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case 'Z':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceRandomCharacter(MinesSquare); // this is a zoo.
+                Generator.DropCoins(MinesSquare, Generator.RandomCoinQuantity(MinesSquare));
+
+                var ZooCharacter = MinesSquare.Character;
+                if (ZooCharacter != null)
+                  SnoozeCharacter(ZooCharacter);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '\\':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceFixture(MinesSquare, Codex.Features.throne);
+                Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_king);
+                var KingCharacter = MinesSquare.Character;
+
+                if (KingCharacter != null)
                 {
-                  Generator.PlaceClosedHorizontalDoor(TownSquare, TownGate, TownBarrier);
-                  /*
-                  var Door = TownSquare.Door;
-                  if (Door != null)
-                  {
-                    //Door.SetState(DoorState.Locked);
-                    //Door.SetTrap(Generator.Engine.CreateTrap(Codex.Devices.fire_trap));
-                  }
-                  */
+                  var KingPromotion = MinesMap.Difficulty - KingCharacter.Level + 5;
+                  if (KingPromotion > 0)
+                    Generator.PromoteCharacter(KingCharacter, KingPromotion);
+
+                  var Properties = Codex.Properties;
+                  var Elements = Codex.Elements;
+
+                  Generator.AcquireTalent(KingCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
+                  Generator.EnsureResistance(KingCharacter, Elements.magical, 100);
+
+                  Generator.AcquireUnique(MinesSquare, KingCharacter, Codex.Qualifications.master);
+
+                  // gnome with a wand of death!
+                  KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(MinesSquare, Codex.Items.wand_of_death));
                 }
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '0':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceBoulder(MinesSquare, MinesBlock, IsRigid: false);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '*':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceSpecificAsset(MinesSquare, PreciousGemProbability.GetRandom());
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '!':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceRandomAsset(MinesSquare, Codex.Stocks.potion);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '?':
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceRandomAsset(MinesSquare, Codex.Stocks.scroll);
+
+                MinesSquare.SetLit(true);
+                break;
+
+              case '{':
+                // fountain.                
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceFixture(MinesSquare, Codex.Features.fountain);
+                MinesSquare.SetLit(true);
+                break;
+
+              case '_':
+                // altar.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceFixture(MinesSquare, Codex.Features.altar);
+                MinesSquare.SetLit(true);
+                break;
+
+              case '&':
+                // grave.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceFixture(MinesSquare, Codex.Features.grave);
+                MinesSquare.SetLit(true);
                 break;
 
               case '=':
                 // workbench.
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceFixture(TownSquare, Codex.Features.workbench);
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlaceFixture(MinesSquare, Codex.Features.workbench);
+                MinesSquare.SetLit(true);
                 break;
 
-              case '{':
-                // fountain.
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceFixture(TownSquare, Codex.Features.fountain);
-                break;
-
-              case '}':
-                // tree.
-                Generator.PlaceFloor(TownSquare, TownOutskirtGround);
-                Generator.PlaceSolidWall(TownSquare, Codex.Barriers.tree, WallSegment.Pillar);
-                TownSquare.SetLit(true);
-                break;
-
-              case '_':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                var TownShrine = ShrineProbability.GetRandom();
-
-                Generator.PlaceShrine(TownSquare, TownShrine);
-                RecruitTownParty(TownSquare);
-
-                DeferList.Add(() =>
-                {
-                  var ShrineZone = TownMap.AddZone();
-                  ShrineZone.AddRegion(TownSquare.FindBoundary());
-
-                  ShrineZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShrineArray[TownShrine.Index]).SetTarget(TownSquare);
-                });
-
-                break;
-
-              case '~':
-                Generator.PlaceFloor(TownSquare, Codex.Grounds.water);
-                TownSquare.SetLit(true);
-
-                if (Generator.CanPlaceAsset(TownSquare) && Chance.OneIn10.Hit())
-                  Generator.PlaceSpecificAsset(TownSquare, Codex.Items.kelp_frond);
-                break;
-
-              case '[':
-                Generator.PlaceFloor(TownSquare, Codex.Grounds.water);
-                Generator.PlaceBridge(TownSquare, Codex.Platforms.wooden_bridge, BridgeOrientation.Horizontal);
-                TownSquare.SetLit(true);
-                break;
-
-              case '`':
-                Generator.PlaceFloor(TownSquare, Codex.Grounds.lava);
-                TownSquare.SetLit(true);
-                break;
-
-              case ']':
-                Generator.PlaceFloor(TownSquare, Codex.Grounds.lava);
-                Generator.PlaceBridge(TownSquare, Codex.Platforms.crystal_bridge, BridgeOrientation.Horizontal);
-                TownSquare.SetLit(true);
-                break;
-
-              case '@':
-              case '%':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                var TownShop = TownShopProbability.RemoveRandomOrNull();
-
-                if (TownShop != null)
-                {
-                  if (TownSymbol == '@')
-                  {
-                    Generator.PlaceShop(TownSquare, TownShop, 6.d2().Roll());
-                    RecruitTownParty(TownSquare);
-
-                    DeferList.Add(() =>
-                    {
-                      var ShopZone = TownMap.AddZone();
-                      ShopZone.AddRegion(TownSquare.FindBoundary());
-                      ShopZone.InsertTrigger().Add(Delay.Zero, Codex.Tricks.VisitShopArray[TownShop.Index]).SetTarget(TownSquare);
-                    });
-                  }
-                  else
-                  {
-                    Generator.PlaceShop(TownSquare, TownShop, 1.d4().Roll());
-                    Generator.CorpseSquare(TownSquare);
-
-                    if (TownSquare.Fixture != null)
-                      Generator.BreakFixture(TownSquare);
-
-                    // murdered by orcs.
-                    DeferList.Add(() =>
-                    {
-                      var ShopParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
-                      if (ShopParty == null)
-                        Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
-                    });
-                  }
-                }
-                break;
-
-              case '&':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceShrine(TownSquare, ShrineProbability.GetRandom());
-                Generator.CorpseSquare(TownSquare);
-
-                //if (TownSquare.Fixture != null)
-                //  Generator.BreakFixture(TownSquare);
-
-                DeferList.Add(() =>
-                {
-                  var ShrineParty = Generator.PlaceHorde(Codex.Hordes.orc, Generator.MinimumDifficulty(TownSquare), Generator.MaximumDifficulty(TownSquare), () => Generator.CanPlaceCharacter(TownSquare) ? TownSquare : Generator.ExpandingFindSquare(TownSquare, 3));
-                  if (ShrineParty == null)
-                    Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.orc_grunt);
-                });
-                break;
-
-              case 'f':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.housecat);
-                break;
-
-              case 'k':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.kobold_shaman);
-                break;
-
-              case 'l':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnome_lord);
-                break;
-
-              case 'n':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.water_nymph);
-                break;
-
-              case 'w':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.gnomish_wizard);
-                break;
-
-              case 'y':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.monkey);
-                break;
-
-              case 'G':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watch_captain);
-
-                var CaptainCharacter = TownSquare.Character;
-                if (CaptainCharacter != null)
-                  AssignWatchCharacter(CaptainCharacter, 0);
-
-                RecruitTownParty(TownSquare);
-                break;
-
-              case '\\':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                Generator.PlaceFixture(TownSquare, Codex.Features.bed);
-                break;
-
-              case '1':
-              case '2':
-              case '3':
-              case '4':
-              case '5':
-              case '6':
-              case '7':
-              case '8':
-              case '9':
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-
-                var WatchmanNumber = (int)TownSymbol - (int)'0';
-                var WatchmanCharacter = WatchmanArray[WatchmanNumber - 1];
-
-                if (WatchmanCharacter == null)
-                {
-                  Generator.PlaceSpecificCharacter(TownSquare, Codex.Entities.watchman);
-
-                  WatchmanCharacter = TownSquare.Character;
-                  if (WatchmanCharacter != null)
-                  {
-                    AssignWatchCharacter(WatchmanCharacter, WatchmanNumber);
-
-                    WatchmanArray[WatchmanNumber - 1] = WatchmanCharacter;
-                    Generator.ResidentSquare(WatchmanCharacter, TownSquare);
-
-                    RecruitTownParty(TownSquare);
-                  }
-                }
-                else
-                {
-                  Generator.ResidentRoute(WatchmanCharacter, WatchmanCharacter.Resident.Routes.Union(TownSquare).ToArray(), 0);
-                }
-                break;
-
-              case ' ':
-                // void.
-                Generator.RemoveFloor(TownSquare);
-                TownSquare.SetLit(false);
+              case '^':
+                // portal back to the dungeon.
+                Generator.PlaceFloor(MinesSquare, MinesGround);
+                Generator.PlacePassage(MinesSquare, Codex.Portals.transportal, EntranceSquare);
+                MinesSquare.SetLit(true);
                 break;
 
               default:
-                Generator.PlaceFloor(TownSquare, TownBuildingGround);
-                TownSquare.SetLit(true);
-                Debug.WriteLine(TownSymbol);
+                Debug.Fail($"Mines symbol not handled: {MinesSymbol} {(int)MinesSymbol}");
+
+                Generator.PlaceFloor(MinesSquare, MinesGround);
                 break;
             }
           }
         }
 
-        // repair the gaps.
-        foreach (var Square in TownMap.GetSquares(TownMap.Region))
+        Generator.RepairVoid(MinesMap, MinesMap.Region);
+        Generator.RepairWalls(MinesMap, MinesMap.Region);
+        Generator.RepairDoors(MinesMap, MinesMap.Region);
+        Generator.RepairZones(MinesMap, MinesMap.Region);
+
+        foreach (var MinesZone in MinesMap.Zones)
         {
-          if (Square.IsEmpty() && Square.GetAdjacentSquares().Any(S => S.Floor != null && S.Wall == null))
-            Generator.PlaceSolidWall(Square, MinesBarrier, WallSegment.Cross);
+          if (Chance.OneIn3.Hit())
+            CreateRoomDetails(MinesStructure, MinesMap, MinesBlock, MinesZone.Squares);
         }
 
-        foreach (var Defer in DeferList)
-          Defer();
+        NextLevelSquare = DownLevelSquare;
+      }
 
-        Generator.RepairVoid(TownMap, TownMap.Region);
-        Generator.RepairWalls(TownMap, TownMap.Region);
-        Generator.RepairDoors(TownMap, TownMap.Region);
-        Generator.RepairBridges(TownMap, TownMap.Region);
-        Generator.RepairZones(TownMap, TownMap.Region);
+      if (Inv.Assert.IsEnabled)
+        Inv.Assert.CheckNotNull(NextLevelSquare, nameof(NextLevelSquare));
 
-        // mines levels.
-        var LevelArray = new[]
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Underdeep").GetBuffer());
+
+      var QuestSite = Quest.World.Sites.Single();
+      var QuestStart = Quest.World.Start;
+      var QuestDifficulty = NextLevelSquare.Map.Difficulty + 1;
+
+      NextLevelSquare.Passage.SetDestination(QuestStart);
+      QuestStart.Passage.SetDestination(NextLevelSquare);
+
+      void GenerateMap(Map UnderMap)
+      {
+        var UnderParty = Generator.NewParty(Leader: null);
+
+        UnderMap.SetName(Generator.EscapedModuleTerm(UnderMap.Name));
+
+        Generator.BuildMap(UnderMap);
+
+        foreach (var UnderSquare in UnderMap.GetSquares())
         {
-          new { Number = 1, Text = Official.Resources.Specials.Mines1 },
-          new { Number = 2, Text = Official.Resources.Specials.Mines2 },
-          new { Number = 3, Text = Official.Resources.Specials.Mines3 },
-          new { Number = 4, Text = Official.Resources.Specials.Mines4 },
-          new { Number = 5, Text = Official.Resources.Specials.Mines5 },
-        };
-
-        Square NextLevelSquare = null;
-
-        foreach (var Level in LevelArray)
-        {
-          var LevelMapName = Generator.EscapedModuleTerm(SiteName) + " " + Level.Number;
-          if (Generator.Adventure.World.HasMap(LevelMapName))
+          var UnderCharacter = UnderSquare.Character;
+          if (UnderCharacter != null)
           {
-            Debug.Fail("How is there a duplicate mines level?");
-            return false;
-          }
-
-          var MinesGrid = Generator.LoadSpecialGrid(Level.Text);
-
-          // rotate 0-3 times (0/90/180/270 degrees).
-          for (var Index = 0; Index < (1.d4() - 1).Roll(); Index++)
-            MinesGrid.Rotate90Degrees();
-
-          var MinesMap = Generator.Adventure.World.AddMap(LevelMapName, MinesGrid.Width, MinesGrid.Height);
-          MinesMap.SetDifficulty(TownMap.Difficulty + Level.Number);
-          MinesMap.SetAtmosphere(Codex.Atmospheres.cavern);
-
-          var MinesStructure = new DungeonStructure(MinesMap);
-
-          var MinesLevel = MinesSite.AddLevel(Level.Number + 1, MinesMap);
-
-          Square DownLevelSquare = null;
-
-          for (var Column = 0; Column < MinesGrid.Width; Column++)
-          {
-            for (var Row = 0; Row < MinesGrid.Height; Row++)
+            if (UnderCharacter.Entity == Codex.Entities.guard ||
+                UnderCharacter.Entity == Codex.Entities.watchman ||
+                UnderCharacter.Entity == Codex.Entities.watch_captain ||
+                UnderCharacter.Entity == Codex.Entities.merchant ||
+                UnderCharacter.Entity == Codex.Entities.holy_cleric ||
+                UnderCharacter.Entity == Codex.Entities.witch ||
+                UnderCharacter.Entity == Codex.Entities.dryad)
             {
-              var MinesSymbol = MinesGrid[Column, Row];
-              var MinesSquare = MinesMap[Column, Row];
+              Debug.Assert(UnderCharacter.Neutral);
 
-              switch (MinesSymbol)
+              // all guards are allied to each other.
+              UnderParty.AddAlly(UnderCharacter, Clock.Zero, Delay.Zero);
+
+              // some of the guards in Undertown are fixed (and indicated by obsidian floor).
+              if (UnderCharacter.Square.Floor.Ground == Codex.Grounds.obsidian_floor)
+                Generator.ResidentSquare(UnderCharacter, UnderCharacter.Square);
+
+              if (UnderCharacter.IsResident())
               {
-                case ' ':
-                  // void.
-                  break;
-
-                case '.':
-                  // room floor.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '#':
-                  // corridor floor.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '-':
-                case '|':
-                  // walls.
-                  Generator.PlaceSolidWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '`':
-                  // can't dig through this wall.
-                  Generator.PlacePermanentWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '~':
-                  // locked door to Under levels staircase.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceLockedHorizontalDoor(MinesSquare, Codex.Gates.crystal_door, MinesBarrier);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '+':
-                  // door.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'S':
-                  // secret door.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'D':
-                  // locked secret door.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceIllusionaryWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'H':
-                  // maybe floor, maybe wall.
-                  if (Chance.OneIn2.Hit())
-                    Generator.PlaceFloor(MinesSquare, MinesGround);
-                  else
-                    Generator.PlaceSolidWall(MinesSquare, MinesBarrier, WallSegment.Cross);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '<':
-                  // up stair.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  MinesSquare.SetLit(true);
-
-                  var DestinationSquare = NextLevelSquare != null && NextLevelSquare.Map != MinesMap ? NextLevelSquare : BelowSquare;
-
-                  DestinationSquare.Passage.SetDestination(MinesSquare);
-                  Generator.PlacePassage(MinesSquare, MinesLevelUpPortal, DestinationSquare);
-
-                  MinesLevel.SetTransitions(MinesSquare, MinesLevel.DownSquare);
-                  break;
-
-                case '>':
-                  // down stair.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-
-                  DownLevelSquare = MinesSquare;
-
-                  // NOTE: the passage destination is replaced by the upstairs placement of the next level (we do it this way to avoid traps being generated on the downstairs).
-                  Generator.PlacePassage(DownLevelSquare, MinesLevelDownPortal, Destination: null);
-
-                  MinesLevel.SetTransitions(MinesLevel.UpSquare, MinesSquare);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'g':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_warrior);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'l':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_lord);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 't':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_thief);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'm':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_mummy);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'z':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_zombie);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'w':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnomish_wizard);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'k':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  MinesSquare.SetLit(true);
-
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.kobold_shaman);
-                  break;
-
-                case 'U':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.umber_hulk);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case 'Z':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceRandomCharacter(MinesSquare); // this is a zoo.
-                  Generator.DropCoins(MinesSquare, Generator.RandomCoinQuantity(MinesSquare));
-
-                  var ZooCharacter = MinesSquare.Character;
-                  if (ZooCharacter != null)
-                    SnoozeCharacter(ZooCharacter);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '\\':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceFixture(MinesSquare, Codex.Features.throne);
-                  Generator.PlaceSpecificCharacter(MinesSquare, Codex.Entities.gnome_king);
-                  var KingCharacter = MinesSquare.Character;
-
-                  if (KingCharacter != null)
-                  {
-                    var KingPromotion = MinesMap.Difficulty - KingCharacter.Level + 5;
-                    if (KingPromotion > 0)
-                      Generator.PromoteCharacter(KingCharacter, KingPromotion);
-
-                    var Properties = Codex.Properties;
-                    var Elements = Codex.Elements;
-
-                    Generator.AcquireTalent(KingCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
-                    Generator.EnsureResistance(KingCharacter, Elements.magical, 100);
-
-                    Generator.AcquireUnique(MinesSquare, KingCharacter, Codex.Qualifications.master);
-
-                    // gnome with a wand of death!
-                    KingCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(MinesSquare, Codex.Items.wand_of_death));
-                  }
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '0':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceBoulder(MinesSquare, MinesBlock, IsRigid: false);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '*':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceSpecificAsset(MinesSquare, PreciousGemProbability.GetRandom());
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '!':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceRandomAsset(MinesSquare, Codex.Stocks.potion);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '?':
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceRandomAsset(MinesSquare, Codex.Stocks.scroll);
-
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '{':
-                  // fountain.                
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceFixture(MinesSquare, Codex.Features.fountain);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '_':
-                  // altar.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceFixture(MinesSquare, Codex.Features.altar);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '&':
-                  // grave.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceFixture(MinesSquare, Codex.Features.grave);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '=':
-                  // workbench.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlaceFixture(MinesSquare, Codex.Features.workbench);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                case '^':
-                  // portal back to the dungeon.
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  Generator.PlacePassage(MinesSquare, Codex.Portals.transportal, EntranceSquare);
-                  MinesSquare.SetLit(true);
-                  break;
-
-                default:
-                  Debug.Fail($"Mines symbol not handled: {MinesSymbol} {(int)MinesSymbol}");
-
-                  Generator.PlaceFloor(MinesSquare, MinesGround);
-                  break;
-              }
-            }
-          }
-
-          Generator.RepairVoid(MinesMap, MinesMap.Region);
-          Generator.RepairWalls(MinesMap, MinesMap.Region);
-          Generator.RepairDoors(MinesMap, MinesMap.Region);
-          Generator.RepairZones(MinesMap, MinesMap.Region);
-
-          foreach (var MinesZone in MinesMap.Zones)
-          {
-            if (Chance.OneIn3.Hit())
-              CreateRoomDetails(MinesStructure, MinesMap, MinesBlock, MinesZone.Squares);
-          }
-
-          NextLevelSquare = DownLevelSquare;
-        }
-
-        if (Inv.Assert.IsEnabled)
-          Inv.Assert.CheckNotNull(NextLevelSquare, nameof(NextLevelSquare));
-
-        var ResourceFile = Official.Resources.Quests.Underdeep;
-
-        var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
-
-        var QuestSite = Quest.World.Sites.Single();
-        var QuestStart = Quest.World.Start;
-        var QuestDifficulty = NextLevelSquare.Map.Difficulty + 1;
-
-        NextLevelSquare.Passage.SetDestination(QuestStart);
-        QuestStart.Passage.SetDestination(NextLevelSquare);
-
-        void GenerateMap(Map UnderMap)
-        {
-          var UnderParty = Generator.NewParty(Leader: null);
-
-          UnderMap.SetName(Generator.EscapedModuleTerm(UnderMap.Name));
-
-          Generator.BuildMap(UnderMap);
-
-          foreach (var UnderSquare in UnderMap.GetSquares())
-          {
-            var UnderCharacter = UnderSquare.Character;
-            if (UnderCharacter != null)
-            {
-              if (UnderCharacter.Entity == Codex.Entities.guard ||
-                  UnderCharacter.Entity == Codex.Entities.watchman ||
-                  UnderCharacter.Entity == Codex.Entities.watch_captain ||
-                  UnderCharacter.Entity == Codex.Entities.merchant ||
-                  UnderCharacter.Entity == Codex.Entities.holy_cleric ||
-                  UnderCharacter.Entity == Codex.Entities.witch ||
-                  UnderCharacter.Entity == Codex.Entities.dryad)
-              {
-                Debug.Assert(UnderCharacter.Neutral);
-
-                // all guards are allied to each other.
-                UnderParty.AddAlly(UnderCharacter, Clock.Zero, Delay.Zero);
-
-                // some of the guards in Undertown are fixed (and indicated by obsidian floor).
-                if (UnderCharacter.Square.Floor.Ground == Codex.Grounds.obsidian_floor)
-                  Generator.ResidentSquare(UnderCharacter, UnderCharacter.Square);
-
-                if (UnderCharacter.IsResident())
+                void ResidentArea(Trick Trick)
                 {
-                  void ResidentArea(Trick Trick)
+                  var ResidentZone = UnderMap.AddZone();
+
+                  foreach (var ResidentSquare in UnderMap.GetSquares(UnderCharacter.Square.FindBoundary()))
                   {
-                    var ResidentZone = UnderMap.AddZone();
-
-                    foreach (var ResidentSquare in UnderMap.GetSquares(UnderCharacter.Square.FindBoundary()))
-                    {
-                      if (!ResidentSquare.IsObscuredFrom(UnderCharacter.Square))
-                        ResidentZone.ForceSquare(ResidentSquare);
-                    }
-                    ResidentZone.InsertTrigger().Add(Delay.Zero, Trick).SetTarget(UnderCharacter.Square);
+                    if (!ResidentSquare.IsObscuredFrom(UnderCharacter.Square))
+                      ResidentZone.ForceSquare(ResidentSquare);
                   }
-
-                  if (UnderCharacter.Resident.Shop != null)
-                    ResidentArea(Codex.Tricks.VisitShopArray[UnderCharacter.Resident.Shop.Index]);
-                  else if (UnderCharacter.Resident.Shrine != null)
-                    ResidentArea(Codex.Tricks.VisitShrineArray[UnderCharacter.Resident.Shrine.Index]);
+                  ResidentZone.InsertTrigger().Add(Delay.Zero, Trick).SetTarget(UnderCharacter.Square);
                 }
-              }
-              else if (UnderCharacter.Entity == Codex.Entities.dwarf_king)
-              {
-                var UnderPromotion = UnderMap.Difficulty - UnderCharacter.Level + 5;
-                if (UnderPromotion > 0)
-                  Generator.PromoteCharacter(UnderCharacter, UnderPromotion);
 
-                var Properties = Codex.Properties;
-                var Elements = Codex.Elements;
-
-                Generator.AcquireTalent(UnderCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
-                Generator.EnsureResistance(UnderCharacter, Elements.magical, 100);
-
-                Generator.AcquireUnique(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
-
-                UnderCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(UnderCharacter.Square, Codex.Items.potion_of_full_healing));
-              }
-              else
-              {
-                //if (UnderCharacter.Neutral) Debug.WriteLine($"Underdeep Neutral: {UnderCharacter.Entity.Name}");
+                if (UnderCharacter.Resident.Shop != null)
+                  ResidentArea(Codex.Tricks.VisitShopArray[UnderCharacter.Resident.Shop.Index]);
+                else if (UnderCharacter.Resident.Shrine != null)
+                  ResidentArea(Codex.Tricks.VisitShrineArray[UnderCharacter.Resident.Shrine.Index]);
               }
             }
-
-            foreach (var UnderAsset in UnderSquare.GetAssets())
+            else if (UnderCharacter.Entity == Codex.Entities.dwarf_king)
             {
-              if (UnderAsset.Container != null)
-              {
-                // random container loot.
-                if (UnderAsset.Item.Type == ItemType.Chest && UnderAsset.Container.Stash.Count == 0)
-                  StockContainer(UnderSquare, UnderAsset, Locked: true, Trapped: true);
-              }
-              else if (UnderAsset.Item.Type == ItemType.Gem || UnderAsset.Item.Type == ItemType.Book || UnderAsset.Item.Type == ItemType.Rock)
-              {
-                // randomise items.
-                Generator.ReplaceRandomAsset(UnderSquare, UnderAsset);
-              }
-              else
-              {
-                //Debug.WriteLine(UnderAsset);
-              }
+              var UnderPromotion = UnderMap.Difficulty - UnderCharacter.Level + 5;
+              if (UnderPromotion > 0)
+                Generator.PromoteCharacter(UnderCharacter, UnderPromotion);
+
+              var Properties = Codex.Properties;
+              var Elements = Codex.Elements;
+
+              Generator.AcquireTalent(UnderCharacter, Properties.free_action, Properties.polymorph_control, Properties.slippery);
+              Generator.EnsureResistance(UnderCharacter, Elements.magical, 100);
+
+              Generator.AcquireUnique(UnderCharacter.Square, UnderCharacter, Codex.Qualifications.master);
+
+              UnderCharacter.Inventory.Carried.Add(Generator.NewSpecificAsset(UnderCharacter.Square, Codex.Items.potion_of_full_healing));
+            }
+            else
+            {
+              //if (UnderCharacter.Neutral) Debug.WriteLine($"Underdeep Neutral: {UnderCharacter.Entity.Name}");
+            }
+          }
+
+          foreach (var UnderAsset in UnderSquare.GetAssets())
+          {
+            if (UnderAsset.Container != null)
+            {
+              // random container loot.
+              if (UnderAsset.Item.Type == ItemType.Chest && UnderAsset.Container.Stash.Count == 0)
+                StockContainer(UnderSquare, UnderAsset, Locked: true, Trapped: true);
+            }
+            else if (UnderAsset.Item.Type == ItemType.Gem || UnderAsset.Item.Type == ItemType.Book || UnderAsset.Item.Type == ItemType.Rock)
+            {
+              // randomise items.
+              Generator.ReplaceRandomAsset(UnderSquare, UnderAsset);
+            }
+            else
+            {
+              //Debug.WriteLine(UnderAsset);
             }
           }
         }
+      }
 
-        foreach (var QuestLevel in QuestSite.Levels)
+      foreach (var QuestLevel in QuestSite.Levels)
+      {
+        var UnderMap = QuestLevel.Map;
+        UnderMap.SetDifficulty(QuestDifficulty + QuestLevel.Index);
+        UnderMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
+
+        Generator.Adventure.World.AddMap(UnderMap);
+
+        var UnderLevel = MinesSite.AddLevel(MinesSite.LastLevel.Index + 1, UnderMap);
+        UnderLevel.SetTransitions(QuestLevel.UpSquare, QuestLevel.DownSquare);
+
+        GenerateMap(UnderMap);
+
+        // return portal to the entrance of the underdeep.
+        if (UnderMap.Terminal)
+          Generator.PlacePassage(UnderMap[10, 31], Codex.Portals.transportal, NextLevelSquare);
+
+        foreach (var QuestMap in QuestLevel.GetMaps().Except(UnderMap))
         {
-          var UnderMap = QuestLevel.Map;
-          UnderMap.SetDifficulty(QuestDifficulty + QuestLevel.Index);
-          UnderMap.SetTerminal(QuestLevel == QuestSite.LastLevel);
+          QuestMap.SetDifficulty(UnderMap.Difficulty);
 
-          Generator.Adventure.World.AddMap(UnderMap);
+          Generator.Adventure.World.AddMap(QuestMap);
 
-          var UnderLevel = MinesSite.AddLevel(MinesSite.LastLevel.Index + 1, UnderMap);
-          UnderLevel.SetTransitions(QuestLevel.UpSquare, QuestLevel.DownSquare);
+          QuestMap.SetLevel(UnderLevel);
 
-          GenerateMap(UnderMap);
-
-          // return portal to the entrance of the underdeep.
-          if (UnderMap.Terminal)
-            Generator.PlacePassage(UnderMap[10, 31], Codex.Portals.transportal, NextLevelSquare);
-
-          foreach (var QuestMap in QuestLevel.GetMaps().Except(UnderMap))
-          {
-            QuestMap.SetDifficulty(UnderMap.Difficulty);
-
-            Generator.Adventure.World.AddMap(QuestMap);
-
-            QuestMap.SetLevel(UnderLevel);
-
-            GenerateMap(QuestMap);
-          }
+          GenerateMap(QuestMap);
         }
       }
 
@@ -3727,9 +3721,7 @@ namespace Pathos
 
       var ChambersSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Lost_Chambers));
 
-      var ResourceFile = Official.Resources.Quests.Chambers;
-
-      var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Chambers").GetBuffer());
 
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
@@ -4114,15 +4106,17 @@ namespace Pathos
 
       var SokobanSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Sokoban));
 
-      var Specials = Official.Resources.Specials;
-
       var SokobanLevelArray = new[]
       {
-        new { Number = 1, OptionArray = new [] { Specials.Sokoban1a, Specials.Sokoban1b, Specials.Sokoban1c, Specials.Sokoban1d, Specials.Sokoban1e  } },
-        new { Number = 2, OptionArray = new [] { Specials.Sokoban2a, Specials.Sokoban2b, Specials.Sokoban2c, Specials.Sokoban2d, Specials.Sokoban2e, Specials.Sokoban2f, Specials.Sokoban2g  } },
-        new { Number = 3, OptionArray = new [] { Specials.Sokoban3a, Specials.Sokoban3b, Specials.Sokoban3c, Specials.Sokoban3d, Specials.Sokoban3e, Specials.Sokoban3f, Specials.Sokoban3g  } },
-        new { Number = 4, OptionArray = new [] { Specials.Sokoban4a, Specials.Sokoban4b, Specials.Sokoban4c, Specials.Sokoban4d } },
+        new { Number = 1, OptionArray = new [] { "Sokoban 1a", "Sokoban 1b", "Sokoban 1c", "Sokoban 1d", "Sokoban 1e"  } },
+        new { Number = 2, OptionArray = new [] { "Sokoban 2a", "Sokoban 2b", "Sokoban 2c", "Sokoban 2d", "Sokoban 2e", "Sokoban 2f", "Sokoban 2g" } },
+        new { Number = 3, OptionArray = new [] { "Sokoban 3a", "Sokoban 3b", "Sokoban 3c", "Sokoban 3d", "Sokoban 3e", "Sokoban 3f", "Sokoban 3g" } },
+        new { Number = 4, OptionArray = new [] { "Sokoban 4a", "Sokoban 4b", "Sokoban 4c", "Sokoban 4d" } },
       };
+
+#if DEBUG
+      //foreach (var Level in SokobanLevelArray) foreach (var Option in Level.OptionArray) Resources.LoadSpecial(Option); // make sure they all load.
+#endif
 
       var SokobanBarrier = Codex.Barriers.jade_wall;
       var SokobanGround = Codex.Grounds.marble_floor;
@@ -4133,34 +4127,34 @@ namespace Pathos
 
       Square PreviousLevelSquare = null;
 
-      foreach (var Level in SokobanLevelArray)
+      foreach (var SpecialLevel in SokobanLevelArray)
       {
-        var Map = Level.OptionArray.GetRandom();
+        var SpecialOption = SpecialLevel.OptionArray.GetRandom();
 
-        var Grid = Generator.LoadSpecialGrid(Map);
+        var SpecialGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(SpecialOption));
 
-        var LevelMapName = Generator.EscapedModuleTerm(NethackTerms.Sokoban) + " " + Level.Number;
+        var LevelMapName = Generator.EscapedModuleTerm(NethackTerms.Sokoban) + " " + SpecialLevel.Number;
         if (Generator.Adventure.World.HasMap(LevelMapName))
           return false;
 
-        var SokobanMap = Generator.Adventure.World.AddMap(LevelMapName, Grid.Width, Grid.Height);
-        SokobanMap.SetDifficulty(MazeMap.Difficulty + Level.Number);
+        var SokobanMap = Generator.Adventure.World.AddMap(LevelMapName, SpecialGrid.Width, SpecialGrid.Height);
+        SokobanMap.SetDifficulty(MazeMap.Difficulty + SpecialLevel.Number);
         SokobanMap.SetAtmosphere(Codex.Atmospheres.dungeon);
 
-        if (Level == SokobanLevelArray.First())
+        if (SpecialLevel == SokobanLevelArray.First())
           SokobanMap.SetTerminal(true);
 
-        var SokobanLevel = SokobanSite.AddLevel(SokobanLevelArray.Length - Level.Number + 1, SokobanMap);
+        var SokobanLevel = SokobanSite.AddLevel(SokobanLevelArray.Length - SpecialLevel.Number + 1, SokobanMap);
 
         Square UpLevelSquare = null;
 
         var TreasureSquareList = new Inv.DistinctList<Square>();
 
-        for (var Column = 0; Column < Grid.Width; Column++)
+        for (var Column = 0; Column < SpecialGrid.Width; Column++)
         {
-          for (var Row = 0; Row < Grid.Height; Row++)
+          for (var Row = 0; Row < SpecialGrid.Height; Row++)
           {
-            var SokobanSymbol = Grid[Column, Row];
+            var SokobanSymbol = SpecialGrid[Column, Row];
 
             var SokobanSquare = SokobanMap[Column, Row];
 
@@ -4402,11 +4396,11 @@ namespace Pathos
 
       var FortArray = new[]
       {
-        Official.Resources.Specials.FortLudios1,
-        Official.Resources.Specials.FortLudios2,
-        Official.Resources.Specials.FortLudios3,
-        Official.Resources.Specials.FortLudios4,
-        Official.Resources.Specials.FortLudios5
+        Resources.LoadSpecial("Fort Ludios 1"),
+        Resources.LoadSpecial("Fort Ludios 2"),
+        Resources.LoadSpecial("Fort Ludios 3"),
+        Resources.LoadSpecial("Fort Ludios 4"),
+        Resources.LoadSpecial("Fort Ludios 5")
       };
 
       var FortGrid = Generator.LoadSpecialGrid(FortArray.GetRandom());
@@ -4678,7 +4672,7 @@ namespace Pathos
       CacheMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
       var CacheLevel = FortSite.AddLevel(2, CacheMap);
-      var CacheGrid = Generator.LoadSpecialGrid(Official.Resources.Specials.FortLudiosCache);
+      var CacheGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial("Fort Ludios Cache"));
 
       for (var Row = 0; Row < CacheHeight; Row++)
       {
@@ -4819,9 +4813,7 @@ namespace Pathos
       //StandardGeneration = false;
 #endif
 
-      var ResourceFile = StandardGeneration ? Official.Resources.Quests.Kingdom1 : Official.Resources.Quests.Kingdom2;
-
-      var Quest = Generator.ImportQuest(ResourceFile.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest(StandardGeneration ? "Kingdom1" : "Kingdom2").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -4865,7 +4857,7 @@ namespace Pathos
         Shop NextRandomShop()
         {
           if (KingdomShopProbability.Checks.Count == 0)
-            KingdomShopProbability = ShopProbability.Clone(); 
+            KingdomShopProbability = ShopProbability.Clone();
 
           return KingdomShopProbability.RemoveRandomOrNull();
         }
@@ -5121,7 +5113,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Lair.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Lair").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5277,7 +5269,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Market.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Market").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5398,7 +5390,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Tower.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Tower").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5523,7 +5515,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Abyss)))
         return false;
 
-      var Quest = Generator.ImportQuest(Official.Resources.Quests.Abyss.Load().GetBuffer());
+      var Quest = Generator.ImportQuest(Resources.LoadQuest("Abyss").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5666,33 +5658,33 @@ namespace Pathos
     {
       var SecretArray = new[]
       {
-        //new { Grid = Official.Resources.Specials.AncientStronghold },
-        //new { Grid = Official.Resources.Specials.AsmodeusLair },
-        //new { Grid = Official.Resources.Specials.BaalzebubLair },
-        //new { Grid = Official.Resources.Specials.CthulhuSanctum },
-        //new { Grid = Official.Resources.Specials.DemogorgonLair },
-        //new { Grid = Official.Resources.Specials.DemonLair },
-        //new { Grid = Official.Resources.Specials.DispaterLair },
-        //new { Grid = Official.Resources.Specials.GeryonLair },
-        new { Grid = Official.Resources.Specials.GnollTown }, // 33x38
-        new { Grid = Official.Resources.Specials.HallofGiants }, // 22x36
-        //new { Grid = Official.Resources.Specials.KoboldTown },
-        new { Grid = Official.Resources.Specials.LostTomb }, // 28x26
-        new { Grid = Official.Resources.Specials.MonsterLair }, // 14x49
-        //new { Grid = Official.Resources.Specials.OrcusTown },
-        //new { Grid = Official.Resources.Specials.PleasantValley },
-        //new { Grid = Official.Resources.Specials.RatInfestation },
-        //new { Grid = Official.Resources.Specials.RottingTemple },
-        //new { Grid = Official.Resources.Specials.SecretLaboratory },
-        //new { Grid = Official.Resources.Specials.SpiderCaves },
-        //new { Grid = Official.Resources.Specials.SunlessSea },
-        //new { Grid = Official.Resources.Specials.WyrmCaves },
-        //new { Grid = Official.Resources.Specials.YeenoghuLair },
+        //new { Grid = "Ancient Stronghold" },
+        //new { Grid = "Asmodeus Lair" },
+        //new { Grid = "Baalzebub Lair" },
+        //new { Grid = "Cthulhu Sanctum" },
+        //new { Grid = "Demogorgon Lair" },
+        //new { Grid = "Demon Lair" },
+        //new { Grid = "Dispater Lair" },
+        //new { Grid = "Geryon Lair" },
+        new { Grid = "Gnoll Town" }, // 33x38
+        new { Grid = "Hall of Giants" }, // 22x36
+        //new { Grid = "Kobold Town" },
+        new { Grid = "Lost Tomb" }, // 28x26
+        new { Grid = "Monster Lair" }, // 14x49
+        //new { Grid = "Orcus Town" },
+        //new { Grid = "Pleasant Valley" },
+        //new { Grid = "Rat Infestation" },
+        //new { Grid = "Rotting Temple" },
+        //new { Grid = "Secret Laboratory" },
+        //new { Grid = "Spider Caves" },
+        //new { Grid = "Sunless Sea" },
+        //new { Grid = "Wyrm Caves" },
+        //new { Grid = "Yeenoghu Lair" },
       };
 
       var Secret = SecretArray.GetRandom();
 
-      var Grid = Generator.LoadSpecialGrid(Secret.Grid);
+      var Grid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Secret.Grid));
 
       return false;
     }

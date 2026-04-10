@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>PathosOfficial</AssemblyName>
-    <RootNamespace>Pathos</RootNamespace>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard20;net10.0</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
@@ -21,8 +19,10 @@
   <!-- Location of the Windows Desktop version of Pathos (make sure it is up-to-date) -->
   <PropertyGroup Condition=" '$(PathosDeveloper)' == 'OpenSource' ">
     <PathosInstallation>C:\Games\Pathos</PathosInstallation>
+    <TargetFrameworks>net10.0-windows</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(PathosDeveloper)' != 'OpenSource' ">
+    <TargetFrameworks>netstandard20;net10.0</TargetFrameworks>
     <PathosInstallation>C:\Projects\Notlame\Pathos\PathosGameW\bin\Debug\net10.0-windows</PathosInstallation>
   </PropertyGroup>
 
@@ -129,24 +129,15 @@
     <Compile Include="Modules\SPDRect.cs" />
     <Compile Include="Modules\SPDRoom.cs" />
     <Compile Include="PathosOfficial.cs" />
-    <None Include="Resources\Pathos.InvResourcePackage" />
-    <Compile Include="Resources\Pathos.InvResourcePackage.cs">
-      <DependentUpon>Pathos.InvResourcePackage</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Resources\Pathos.InvResourcePackage.rs">
-      <DependentUpon>Pathos.InvResourcePackage</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="PathosResources.cs" />
+
+    <EmbeddedResource Include="Resources\**\*" />
   </ItemGroup>
 
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />
 
-  <!-- Automatically regenerates the Resources files -->
-  <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
-    <Exec Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
-  </Target>
-
   <!-- Make the Atlases and Albums -->
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net10.0|OpenSource' ">
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net10.0-windows|OpenSource' ">
     <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; &quot;$(ProjectDir.TrimEnd('\'))&quot; &quot;$(TargetDir)$(AssemblyName).dll&quot; $(Configuration)" />
   </Target>
 </Project>

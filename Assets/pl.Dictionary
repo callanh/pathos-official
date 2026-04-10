@@ -12,7 +12,7 @@ AfflictionName,rabies,wścieklizna
 AfflictionName,reflux,refluks
 AfflictionName,sliming,śluz
 AfflictionName,worms,zarobaczenie
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,ROGI
 AnatomyAbsenceText,MINDLESS,BEZMYŚLNY
 AnatomyAbsenceText,NO BLOOD,BRAK KRWI
 AnatomyAbsenceText,NO EARS,BRAK USZU
@@ -32,7 +32,7 @@ AnatomyName,eyes,oczy
 AnatomyName,feet,stopy
 AnatomyName,hands,ręce
 AnatomyName,head,głowa
-AnatomyName,horns,
+AnatomyName,horns,rogi
 AnatomyName,limbs,kończyny
 AnatomyName,mind,umysł
 AnatomyName,mounted,osiodłany
@@ -1008,16 +1008,16 @@ EncumbranceName,unencumbered,swobodny
 EngulfmentName,engulfed,pochłonięty
 EngulfmentName,swallowed,połknął
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Średniej wielkości istota skłonna do wielkich ambicji. Krótkotrwałe, ale wszechobecne; nie należy ich lekceważyć."
-EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
+EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Amorficzne istoty, które nie mają typowego kształtu, ale często przybierają półprzezroczystą humanoidalną formę. Choć nie można jej pomylić z niczym innym niż śluzem przypominającym plazmę, forma ta umożliwia użycie odzieży i narzędzi."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Starożytna rasa potężnych pustelników. Ich przerażające rozmiary dają im ogromną siłę, uzupełnianą przez żarłoczną dietę składającą się z mięsa i minerałów."
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Istoty astralne, które są naczyniem dla niezłomnego ducha pokonanego poszukiwacza przygód. Nie mając własnych motywacji, mają szanse na opętanie; dla zmarłego poszukiwacza przygód jest to druga szansa na zemstę lub odkupienie. Zrodzone z materii astralnej, są lekko zbudowane, półprzezroczyste i mogą swobodnie poruszać się przez fizyczne przeszkody."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Piękne istoty z innego świata, charakteryzujące się charakterystyczną aureolą i pierzastymi skrzydłami. Silnie dostrojone do walki między dobrem a złem, wyczuwają boskość we wszystkim, co trzymają."
 EntityDescription,Beware this clockwork machine of war.,Strzeżcie się tej machiny wojny.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"Dwunożne automaty mechaniczne z niemal nieograniczoną sztuczną inteligencją. Napędzany silnikiem ze stopionym rdzeniem, który wymaga stałego dopływu surowców metalowych i jest podatny na uszkodzenia spowodowane przez wodę."
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Stworzenia połączone przez potężne duchy natury, które napędzają ich wybryki. Są krępi, z futrzanymi dolnymi partiami ciała, kopytami kozy i zakręconymi rogami barana. Zabawne i sprytne, wesoło prowadzą hedonistyczne eskapady, podczas których piją, tańczą i walczą."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Imponujące i mocno zbudowane, przypominają humanoidalne smoki z pyskiem, łuskowatą skórą i funkcjonalnymi skrzydłami."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Duże, mięsożerne reptiliany, których bestialscy przodkowie dominowali na świecie na długo przed narodzinami cywilizacji. To przerażające drapieżniki, zdolne do skoków na imponujące odległości i odpierające wiele ataków swoimi grubymi łuskowatymi skórami."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Potworne stworzenia z głową i ogonem byka oraz ciałem człowieka.
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Perwersyjne istoty o wielu aberracjach, ale zawsze z karmazynową skórą i rogami. Sama ich obecność zmusza innych do spełniania ich najmroczniejszych, najbardziej brutalnych pragnień."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Kruczy, drapieżny gatunek olbrzymich humanoidów z silnym garbem, który sprawia, że grzbiety ich rąk ciągną się po ziemi. Pomimo kłopotliwego wyglądu fizycznego, są potężnie zbudowani i słyną ze zdolności do szybkiej regeneracji po każdej ranie zadanej ich gumowatej skórze."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Zmiennokształtni dewianci, którzy rozwijają się dzięki swoim zwodniczym talentom."
@@ -1026,12 +1026,12 @@ EntityDescription,"Spiritual beings fond of nature and magic. They are physicall
 EntityDescription,"Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.","Silny, niski i wytrzymały lud. Znani są ze swojego uporu, obróbki metalu i zamiłowania do alkoholu."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Podziemne ludy o niewielkiej posturze, lubujące się w majsterkowaniu i magii. Ich metabolizm jest przystosowany do długich przygód w miejscach, gdzie brakuje pożywienia."
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","Mniejszy z dwóch ferrozygotycznych puddingów, brązowy pudding smakuje podobno bardziej jak zgniłe mleko niż czekoladowy deser. Pudding żywi się tkaninami i skórami wszelkiego rodzaju, ale jego najbardziej znaną zdolnością jest unikalna metoda reprodukcji. Po zetknięciu z żelazem, cudem zgniłego śluzu, dochodzi do binarnego rozszczepienia, w wyniku którego powstają dwa żarłoczne potomstwa. Dzięki wszechobecności żelaza w uzbrojeniu poszukiwaczy przygód, populacja tego stworzenia rośnie z czasem."
-EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
+EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Ten mumijowy wyrób powstał poprzez zanurzenie ludzkich zwłok w miodzie. W jakiś sposób ożywiony przez nieznany kult mnichów, jest zarówno zabójczy, jak i pyszny."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Ta dziwna żywa bańka żrących płynów nie wydaje się mieć żadnych zdolności ofensywnych.
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Maleńkie skrzydlate duchy, z natury magiczne i niezwykle piękne. Gdy są zagrożone, potrafią uciec przez zniekształcenia rzeczywistości przestrzennej."
-EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
+EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Podobni do żółwi nomadzi, nomadowie, którzy opuszczają miejsce urodzenia od chwili, gdy potrafią chodzić, aby podróżować po świecie, mając na plecach wygodę i ochronę domu."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Brzydkie, brutalne stworzenia o kanibalistycznych skłonnościach; ta wojownicza rasa znana jest z imponującej siły i intelektualnej nieudolności."
-EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.",
+EntityDescription,"Unfairly characterised as cowardly and weak, these diminutive reptilian creatures overcome their physical limitations by employing vicious and cunning strategies.","Te drobne gadzie stworzenia, niesprawiedliwie określane jako tchórzliwe i słabe, pokonują swoje fizyczne ograniczenia, stosując okrutne i przebiegłe strategie."
 EntityName,abbot,opat
 EntityName,acid blob,plama kwasu
 EntityName,acid worm,kwasowy robal
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Doktor Frankenstein
 EntityName,dog,pies
 EntityName,doppelgänger,sobowtór
 EntityName,dracolich,smokolich
-EntityName,dracon,
+EntityName,dracon,smok
 EntityName,dragon king,król smoków
 EntityName,dretch,kreta
 EntityName,drow,drow
@@ -1464,7 +1464,7 @@ EntityName,migo queen,księżna migo
 EntityName,migo warrior,wojownik migo
 EntityName,mind flayer,pogromca umysłów
 EntityName,minotaur,minotaur
-EntityName,minotaur lord,
+EntityName,minotaur lord,władca minotaurów
 EntityName,mist wolf,mglisty wilk
 EntityName,mithril golem,mithrilowy golem
 EntityName,mobat,mobat
@@ -1560,7 +1560,7 @@ EntityName,red naga,czerwona naga
 EntityName,red naga hatchling,pisklę czerwonej nagi
 EntityName,rhaumbusun,raumbusun
 EntityName,rhumbat,rumbat
-EntityName,robot,
+EntityName,robot,robot
 EntityName,rock kobold,kamienny kobold
 EntityName,rock mole,kamienny kret
 EntityName,rock piercer,kamienny przebijacz
@@ -2638,7 +2638,7 @@ ItemName,Pandora's Box,puszka pandory
 ItemName,panic boots,buty paniki
 ItemName,partisan,partyzantka
 ItemName,pear,gruszka
-ItemName,pearl,
+ItemName,pearl,perła
 ItemName,phantom key,klucz fantomowy
 ItemName,Philosophers Stone,Kamień filozoficzny
 ItemName,pick-axe,kilof
@@ -2944,7 +2944,7 @@ KindName,changeling,odmieniec
 KindName,demon,demon
 KindName,devourer,pożeracz
 KindName,dog,pies
-KindName,dracon,
+KindName,dracon,smok
 KindName,dragon,smok
 KindName,dwarf,krasnolud
 KindName,echo,echo
@@ -2984,7 +2984,7 @@ KindName,orc,ork
 KindName,plasmoid,plazmoid
 KindName,pudding,pudding
 KindName,quadruped,czworonóg
-KindName,robot,
+KindName,robot,robot
 KindName,rodent,gryzoń
 KindName,satyr,satyr
 KindName,snake,wąż
@@ -3032,7 +3032,7 @@ LiteralText,AMNESIA,AMNESJA
 LiteralText,anatomy,anatomia
 LiteralText,animate mount,animuje osiodłanie
 LiteralText,animate revenant,animuje zemsta
-LiteralText,ANNOUNCEMENT,
+LiteralText,ANNOUNCEMENT,OGŁOSZENIE
 LiteralText,ANONYMOUS,ANONIMOWY
 LiteralText,anticlockwise 90 degrees,przeciwnie do ruchu wskazówek zegara 90 stopni
 LiteralText,any item,dowolny przedmiot
@@ -3215,9 +3215,10 @@ LiteralText,Disable introduction boom,Wyłącz belke wprowadzającą
 LiteralText,Disable mask animations,animacja maski
 LiteralText,Disable online services,Wyłącz usługi online
 LiteralText,Disable pitch shifting,Wyłącz skok wysokości dźwięku
+LiteralText,Disable radial quick menu,Wyłącz radialne szybkie menu
 LiteralText,Disable spacebar real-time toggle,Wyłącz przełączanie spacji w czasie rzeczywistym
 LiteralText,Disable swipe gestures,wyłącz gesty przesuwania
-LiteralText,Disable Zeroth announcement,
+LiteralText,Disable Zeroth announcement,Wyłącz ogłoszenie Zeroth
 LiteralText,disarm entity,rozbrój
 LiteralText,DISCONNECT,ROZŁĄCZ
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Utracono połączenie. Upewnij się, że masz dobre połączenie z internetem, wszystkie urzędzenia używają tej samej wersji Pathos."
@@ -3347,8 +3348,8 @@ LiteralText,HORDES,HORDY
 LiteralText,HOST,HOST
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Jednakże, możesz chcieć zakończyć swoje przygody przed otrzymaniem aktualizacji."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Mam nadzieję, że cieszycie się swoimi przygodami i proszę, skontaktujcie się ze mną z waszymi uwagami i sugestiami."
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
-LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Tworzę nową grę o nazwie ZEROTH, platformówkę roguelike opartą na mechanice z Pathos. Kliknij tutaj, aby uzyskać więcej informacji."
+LiteralText,I'm developing a new game called ZEROTH!,Tworzę nową grę o nazwie ZEROTH!
 LiteralText,identified items,zidentyfikowane elementy
 LiteralText,identify all items,rozpoznanie wszyscy
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTYFIKUJ WSZYSTKIE PRZEDMIOTY ZNAJDUJĄCE SIĘ NA PODŁODZE
@@ -3397,7 +3398,7 @@ LiteralText,KNOWLEDGE,WIEDZA
 LiteralText,LANGUAGE,JĘZYK
 LiteralText,LEARN ALL SPELLS,POZNAJ WSZYSTKIE ZAKLĘCIA
 LiteralText,learn spells,poznaj zaklęcia
-LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,"Poznaj zasady rządzące światem poprzez zabawne śmierci i poprowadź swoich bohaterów, gdy będą próbowali uciec z zerowego kręgu Haell."
 LiteralText,LEFT RING,LEWY PIERŚCIEŃ
 LiteralText,LEVEL CHART,SCHEMAT POZIOMU
 LiteralText,level//rank,poziom
@@ -3443,7 +3444,7 @@ LiteralText,MIMIC,MIMIC
 LiteralText,mimicking,mimicking
 LiteralText,mobilise block,uwolnij głaz
 LiteralText,modifier,modyfikator
-LiteralText,MORE INFO,
+LiteralText,MORE INFO,WIĘCEJ INFORMACJI
 LiteralText,MOUNT,OSIODŁAJ
 LiteralText,Mount which direction?,Mount which direction?
 LiteralText,MOUNTED,MOUNTED
@@ -3821,7 +3822,7 @@ LiteralText,WRONG WAY,ZŁA DROGA
 LiteralText,"You are playing as anonymous, please register!","Grasz jako anonimowy, proszę się zarejestrować!."
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Może być konieczne WYSZUKIWANIE sekretnych drzwi za pomocą przycisku EYE.
 LiteralText,Your current movement and action speed in squares per second.,Twoja aktualna prędkość ruchu i akcji w kwadratach na sekundę.
-LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.","Zeroth to debiutancki tytuł mojego nowego studia Contrary Games. Jest to duchowy następca Pathos, ale z animacjami papierowych lalek, platformówką w czasie rzeczywistym, symulacją fizyki i tą samą głęboką, powtarzalną rozgrywką."
 LiteralText,ZOOM,ZBLIŻENIE
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
@@ -3867,7 +3868,7 @@ MaterialName,wood,drewno
 MeasurementSystemName,imperial,imperialny
 MeasurementSystemName,metric,metryczny
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Zejdź przez proceduralnie generowane lochy i jaskinie. Nieskończona regrywalność i polecana dla graczy początkujących w Pathos.
-ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
+ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Eksploruj rozległą, generowaną proceduralnie mapę lądową zawierającą boczne lochy, rozbudowane elementy scenerii i intrygujące spotkania."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Ręcznie projektowane mapy w epickiej przygodzie na lądzie. Zrób sobie przerwę od ograniczeń lochu i wyrusz na pełną wyzwań wyprawę.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Ciekawe pokoje i tajemnice czekają. Ale nie zwlekaj!. Musisz zejść lub zginąć. Oparte na generowaniu map z Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Piaskownica do eksperymentowania z mechaniką Pathos. Baw się każdym przedmiotem, pułapką i elementem wyposażenia lochu na prostej mapie składającej się z dwóch pomieszczeń."
@@ -3885,7 +3886,7 @@ ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish
 ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,Handluj z miejskimi kupcami i wspieraj lokalną gospodarkę! Ale nie polecam robienia tego przy pustym żółądku.
 ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",Czasami znani i potężni bohaterowie z innych krajów zaszczycają nas swoją obecnością... Dam Ci znać jak jakiegoś spotkam.
 ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,"Nie wchodź mi w drogę. Jestem na ważnym patrolu, a wy poszukiwacze przygód zawsze blokujecie moją trasę."
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","**Wyrocznia** patrzy na ciebie z niemym współczuciem, całkowicie wytrącając cię z równowagi swoim smutnym wyrazem twarzy.||Los musi mieć zaplanowane dla ciebie coś naprawdę *nieprzyjemnego*."
 ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,"Tutejsze jedzenie jest bardzo kiepskie. Jak myślisz, dlaczego zabijamy potwory i mamy ten stół warsztatowy w środku miasta?"
 ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"Kopalnie są niebezpiecznym miejscem do podróżowania samemu, więc powinieneś przemyśleć zatrudnienie któregoś z lokalnych najemników do pomocy. Ale uważaj, bo ich lojalność kończy się wtedy, kiedy Tobie skończą się monety."
 ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","Miejska kapliczka oferuje wiele darów dla cnotliwych poszukiwaczy przygód. Upewnij się, że ją dzisiaj odwiedzisz i złoższy w darze kilka zbędnych monet. Niech Ci błogosławi w Twoich wędrówkach."
@@ -3893,11 +3894,11 @@ ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement,
 ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","W kopalniach pod miastem panuje gorączka klejnotów. Na ziemi walają się drogocenne kamienie, a nie zwykłe kawałki szkła."
 ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,W jaskiniach za miastem są schody do kopalni. Może powinieneś się tam wybrać i nigdy nie wracać?
 ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,"To mój ostatni patrol przed emeryturą. Mam nadzieję, że nie stanie się nic niespodziewanego."
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","To miasto jest wspaniałym miejscem do spędzenia czasu i przygotowania się do przyszłej podróży. Nie spiesz się, aby stąd wyjść, jest mnóstwo rzeczy do zobaczenia i zrobienia, zanim zagłębisz się w lochy."
 ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Patrz pod nogi, gdy wejdziesz do kopalni. Te przebiegłe gnomie dranie kochają robić zasadzki na nieprzygotowanych poszukiwaczy przygód."
 ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Dlaczego nie pójdziesz pobawić się w jaskiniach za miastem? Jest tam dużo darmowego sprzętu do zabrania, ale miej na uwadze, że nie patrolujemy okolicy za miastem, więc w razie kłopotów uciekaj tu z powrotem."
 ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Możesz przestać bawić się w fontannie? Nie mogę zamoczyć mojego munduru, więc jeśli mnie oblejesz przysięgam, że *zniszczę Cię*."
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Wiesz, kiedyś byłem poszukiwaczem przygód, tak jak ty... może ty też powinieneś znaleźć pracę? W końcu *poszukiwacz przygód* to po prostu fantazyjny sposób na określenie bezdomnego i bezrobotnego."
 ModuleName,Dhak Legacy,Dziedzictwo Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
 ModuleName,Nethack Codex,Nethack Codex
@@ -4128,7 +4129,7 @@ PropertyDescription,Fumbling causes you to drop your weapon during combat and fa
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Spojrzenia i ataki wiązką promieni są odbijane z powrotem w stronę mistrza.
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Ostrzega Cię z wyprzedzeniem o pobliskich potworach i ich przybliżonym poziomie zagrożenia.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Ogarnięty przerażeniem nie możesz atakować i powinieneś uciekać.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
+PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",W tym mocnym stanie odurzenia twoją szalenie zwiększoną pewność siebie równoważy jedynie poważnie zaburzony osąd.
 PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Poruszając się po cichu po lochu możesz podkradać się do śpiących potworów.
 PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Zapobiega polimorfii, ale również nie pozwala na powrót do swojej naturalnej postaci."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Chroni cię przed efektami, które spowalniają, paraliżują lub w inny sposób ograniczają twój ruch."
@@ -4270,9 +4271,9 @@ RaceName,changeling//non-binary,zmiennokształtny
 RaceName,demon//female,demonica
 RaceName,demon//male,demon
 RaceName,demon//non-binary,demon
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
+RaceName,dracon//female,smok
+RaceName,dracon//male,smok
+RaceName,dracon//non-binary,dracon
 RaceName,dwarf//female,krasnolud
 RaceName,dwarf//male,krasnolud
 RaceName,dwarf//non-binary,krasnolud
@@ -4330,9 +4331,9 @@ RaceName,orc//non-binary,ork
 RaceName,plasmoid//female,plazmoid
 RaceName,plasmoid//male,plazmoid
 RaceName,plasmoid//non-binary,plazmoid
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,robot
+RaceName,robot//male,robot
+RaceName,robot//non-binary,robot
 RaceName,satyr//female,satyr
 RaceName,satyr//male,satyr
 RaceName,satyr//non-binary,satyr
@@ -4673,7 +4674,7 @@ SpecialDescription,"Highly attuned servants of elemental shock, they can conjure
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Wysoce dostrojeni słudzy żywiołu wody, potrafią wyczarować eksplodujące kule, aby zniszczyć swoich wrogów"
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Całe życie studiów skupiło Twoją naukę na książkach kosztem innych zainteresowań i sprawności fizycznej.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Syndrom głównego bohatera zaowocował poleganiem na zbroi fabularnej, ale są one przeznaczone do poważnego sprawdzenia rzeczywistości."
-SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.",
+SpecialDescription,"Positionally uncertain, these individuals are accustomed to being anywhere and everywhere all at once.","Niepewny swojej pozycji, jesteś przyzwyczajony do bycia wszędzie i wszędzie jednocześnie."
 SpecialDescription,Sculptured from living glass that reflects energy and makes a perfect but delicate emulation of their natural counterpart.,"Wyrzeźbione z żywego szkła, które odbija energię i tworzy perfekcyjne, lecz delikatne odbicia swojego odpowiednika."
 SpecialDescription,"Somehow still alive, albeit without the flesh required to be truly living, this peculiar existence has some advantages.","W jakiś sposób wciąż żywy, choć bez ciała wymaganego do prawdziwego życia, ta osobliwa egzystencja ma pewne zalety."
 SpecialDescription,The habitually drunk make for brazen yet slightly unsteady adventurers; just don't ask them to recite the alphabet backwards.,"Pijacy są bezczelnymi, ale niestabilnym poszukiwaczami przygód. Tylko nie pytajcie ich o wyrecytowanie alfabetu od tyłu."

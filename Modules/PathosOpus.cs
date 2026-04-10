@@ -3494,8 +3494,14 @@ namespace Pathos
         }
 
         // resident routes to make both sides engage.
-        foreach (var (GoodCharacter, EvilCharacter) in Maker.GoodCharacterList.ZipX(Maker.EvilCharacterList))
+        var GoodIterator = Maker.GoodCharacterList.GetEnumerator();
+        var EvilIterator = Maker.EvilCharacterList.GetEnumerator();
+
+        while (GoodIterator.MoveNext() && EvilIterator.MoveNext())
         {
+          var GoodCharacter = GoodIterator.Current;
+          var EvilCharacter = EvilIterator.Current;
+
           ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(GoodCharacter).SetTarget(FormationDictionary[EvilCharacter]);
           ArenaTrigger.Add(Delay.Zero, Codex.Tricks.change_route).SetCharacter(EvilCharacter).SetTarget(FormationDictionary[GoodCharacter]);
         }
