@@ -74,7 +74,7 @@ Please reach out to me for any help or even just to share your variant :)
 <https://www.reddit.com/r/pathos_nethack>
 
 **Discord**
-<https://discord.gg/TRhRZhX>
+<https://discord.gg/M6MmU2m>
 
 **Made with Invention**
 <https://gitlab.com/hodgskin-callan/Invention>
