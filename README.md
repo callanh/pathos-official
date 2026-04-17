@@ -60,6 +60,46 @@ The `Codex` is a way of naming the individual content that is registered in the 
 
 Because of the way .NET JIT (Just-In-Time) compilation works, it is desirable to serialise the codex into a binary file. This is named `Pathos.Codex` and is automatically compiled by the `PathosMaker` tool.
 
+## Debuggin and Troubleshooting
+
+In Visual Studio, the View > Output window shows information about the build. The `PathosMaker` tool will give information about what happened including any errors or warnings.
+
+```
+1>------ Build started: Project: PathosOfficial, Configuration: Debug Any CPU ------
+1>  Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>  PathosOfficial -> C:\Projects\Notlame\Pathos\PathosOfficial\bin\Debug\net10.0-windows\PathosOfficial.dll
+1>  Installation: C:\Games\Pathos
+1>  Project: C:\Projects\Notlame\Pathos\PathosOfficial
+1>  Assembly: C:\Projects\Notlame\Pathos\PathosOfficial\bin\Debug\net10.0-windows\PathosOfficial.dll
+1>  Compile: Debug
+1>
+1>  Load: 283ms
+1>  Campaign: 511ms
+1>  Save Codex: 90ms
+1>  Atlases: 1,547ms
+1>  root: unused - contrary punishment
+1>  root: unused - insomnia affliction
+1>  root: unused - myopia affliction
+1>  root: unused - oil
+1>  Albums: 722ms
+1>  Dictionaries: 2,725ms
+1>  Guides: 295ms
+1>  Updates: 685ms
+1>  Translation File: 379ms
+1>  CSV Files: 11ms
+1>  Change Logs: 29ms
+1>  Reports: 21ms
+1>  Assemblies: 4ms
+1>  Assets: 69ms
+1>
+1>  Total duration: 7,404ms
+1>
+1>  0 Errors
+1>  4 Warnings
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 9:07 AM and took 12.088 seconds ==========
+```
+
 ---
 
 Please reach out to me for any help or even just to share your variant :)

@@ -151,7 +151,7 @@ namespace Pathos
 
       whip = AddSkill(SkillCategory.Offensive, "whip", S => { });
 
-      // mysical.
+      // mystical.
       abjuration = AddSkill(SkillCategory.Mystical, "abjuration", S => { });
 
       clerical = AddSkill(SkillCategory.Mystical, "clerical", S => { });

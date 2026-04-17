@@ -58,7 +58,7 @@ namespace Pathos
       AddRecipe(Entities.leather_golem, Materials.leather, Items.leather_armour, Items.leather_cloak, Items.leather_jacket, Items.leather_gloves);
 
       AddRecipe(Entities.mithril_golem, Materials.mithril,
-        Items.elven_mithrilcoat, Items.dwarvish_mithrilcoat, Items.dark_elven_mithrilcoat, Items.mithril_shield, Items.mithril_barding,
+        Items.elven_mithrilcoat, Items.dwarvish_mithrilcoat, Items.drow_mithrilcoat, Items.mithril_shield, Items.mithril_barding,
         Items.mithril_long_sword, Items.mithril_twohanded_sword, Items.mithril_battleaxe, Items.mithril_helmet, Items.mithril_plate_mail,
         Items.mithril_lance, Items.mithril_sabre, Items.mithril_katar);
 

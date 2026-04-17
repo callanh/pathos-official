@@ -61,10 +61,6 @@ AppearanceName,black gem,černý krystal
 AppearanceName,black gloves,černé rukavice
 AppearanceName,black onyx ring,černý onyxový prsten
 AppearanceName,black potion,černý lektvar
-AppearanceName,black runed arrow,černý runový šíp
-AppearanceName,black runed bow,černý runový luk
-AppearanceName,black runed dagger,černá runová dýka
-AppearanceName,black runed short sword,černý runový krátký meč
 AppearanceName,black wand,černá hůlka
 AppearanceName,bloody potion,krvavý lektvar
 AppearanceName,blue and green shield,modrozelený štít
@@ -153,7 +149,11 @@ AppearanceName,glass wand,skleněná hůlka
 AppearanceName,glasses,brýle
 AppearanceName,glittering book,třpitivá kniha
 AppearanceName,gloomy potion,tmavý lektvar
+AppearanceName,glossy arrow,černý runový šíp
+AppearanceName,glossy bow,černý runový luk
+AppearanceName,glossy dagger,černá runová dýka
 AppearanceName,glossy mithril-coat,lesklý mithrilový kabát
+AppearanceName,glossy short sword,černý runový krátký meč
 AppearanceName,gold book,zlatá kniha
 AppearanceName,gold earrings,
 AppearanceName,gold ring,zlatý prsten
@@ -2429,11 +2429,6 @@ ItemName,crysknife,
 ItemName,crystal ball,
 ItemName,crystal plate mail,
 ItemName,dagger,
-ItemName,dark elven arrow,
-ItemName,dark elven bow,
-ItemName,dark elven dagger,
-ItemName,dark elven mithril-coat,
-ItemName,dark elven short sword,
 ItemName,dart,
 ItemName,Deadwood,
 ItemName,Deagle,
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,
 ItemName,Dragonbane,
 ItemName,dread staff,
 ItemName,Drilanze,
+ItemName,drow arrow,
+ItemName,drow bow,
+ItemName,drow dagger,
+ItemName,drow mithril-coat,
+ItemName,drow short sword,
 ItemName,drum of earthquake,
 ItemName,dunce cap,
 ItemName,dwarvish cloak,

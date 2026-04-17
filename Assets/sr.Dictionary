@@ -61,10 +61,6 @@ AppearanceName,black gem,crni dragulj
 AppearanceName,black gloves,crne rukavice
 AppearanceName,black onyx ring,oniks prsten
 AppearanceName,black potion,crni napitak
-AppearanceName,black runed arrow,crna runirana strela
-AppearanceName,black runed bow,crni runirani luk
-AppearanceName,black runed dagger,crni runirani nož
-AppearanceName,black runed short sword,crni runirani kratki mač
 AppearanceName,black wand,crni štap
 AppearanceName,bloody potion,krvavi napitak
 AppearanceName,blue and green shield,plavi i zeleni štit
@@ -153,7 +149,11 @@ AppearanceName,glass wand,stakleni štapić
 AppearanceName,glasses,naočare
 AppearanceName,glittering book,blistava knjiga
 AppearanceName,gloomy potion,tmuran napitak
+AppearanceName,glossy arrow,crna runirana strela
+AppearanceName,glossy bow,crni runirani luk
+AppearanceName,glossy dagger,crni runirani nož
 AppearanceName,glossy mithril-coat,sjajni mitrilni kaput
+AppearanceName,glossy short sword,crni runirani kratki mač
 AppearanceName,gold book,zlatna knjiga
 AppearanceName,gold earrings,zlatne minđuše
 AppearanceName,gold ring,zlanti prsten
@@ -2429,11 +2429,6 @@ ItemName,crysknife,krisnož
 ItemName,crystal ball,kristalna kugla
 ItemName,crystal plate mail,kristalni oklop
 ItemName,dagger,nož
-ItemName,dark elven arrow,tamna vilenjačka strela
-ItemName,dark elven bow,taman vilenjački luk
-ItemName,dark elven dagger,tamni vilenjački bodež
-ItemName,dark elven mithril-coat,tamni vilenjački mitrilni kaput
-ItemName,dark elven short sword,tamni vilenjački kratki mač
 ItemName,dart,strelica
 ItemName,Deadwood,Dedvud
 ItemName,Deagle,Digl
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,čizme za rasterećenje
 ItemName,Dragonbane,Dragonbejn
 ItemName,dread staff,štap straha
 ItemName,Drilanze,Drilenz
+ItemName,drow arrow,tamna vilenjačka strela
+ItemName,drow bow,taman vilenjački luk
+ItemName,drow dagger,tamni vilenjački bodež
+ItemName,drow mithril-coat,tamni vilenjački mitrilni kaput
+ItemName,drow short sword,tamni vilenjački kratki mač
 ItemName,drum of earthquake,bubanj zemljotresa
 ItemName,dunce cap,dunc kapa
 ItemName,dwarvish cloak,patuljasti plašt
@@ -3005,7 +3005,7 @@ LiteralText,(game information status text),(tekst statusa informacija o igri)
 LiteralText,(not eligible for hall of fame),(ne ispunjava uslove za kuću slavnih)
 LiteralText,(recommended for AMOLED screens),(preporučuje se za AMOLED ekrane)
 LiteralText,(SUPPRESSED),(POTISNUTO)
-LiteralText,[MASTER],[MASTER]
+LiteralText,[MASTER],[MAGISTAR]
 LiteralText,abolition of firearms,ukidanje vatrenog oružja
 LiteralText,ABOUT,O PATHOSU
 LiteralText,About Pathos,O Patosu
@@ -3032,7 +3032,7 @@ LiteralText,AMNESIA,AMNEZIJA
 LiteralText,anatomy,anatomija
 LiteralText,animate mount,animiraj jahalicu
 LiteralText,animate revenant,animiraj revenanta
-LiteralText,ANNOUNCEMENT,
+LiteralText,ANNOUNCEMENT,SAOPŠTENJE
 LiteralText,ANONYMOUS,ANONIMAN
 LiteralText,anticlockwise 90 degrees,u smeru suprotnom od kazaljke na satu 90 stepeni
 LiteralText,any item,bilo koji predmet
@@ -3215,10 +3215,10 @@ LiteralText,Disable introduction boom,Onemogućite uvodni bum
 LiteralText,Disable mask animations,Onemogućite animacije maski
 LiteralText,Disable online services,Onemogućite usluge na mreži
 LiteralText,Disable pitch shifting,Onemogući pomeranje visine tona
-LiteralText,Disable radial quick menu,
+LiteralText,Disable radial quick menu,Onemogućite radijalni brzi meni
 LiteralText,Disable spacebar real-time toggle,Onemogućite spejs dugme u realnom vremenu
 LiteralText,Disable swipe gestures,Onemogućite pokrete prevlačenja
-LiteralText,Disable Zeroth announcement,
+LiteralText,Disable Zeroth announcement,Onemogućite Zeroth najavu
 LiteralText,disarm entity,razoružati biće
 LiteralText,DISCONNECT,DISKONEKTUJTE SE
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Otkriven je prekid veze. Uverite se da imate pouzdanu mrežnu vezu i da su svi uređaji na istoj verziji Pathosa.
@@ -3250,7 +3250,7 @@ LiteralText,duration,trajanje
 LiteralText,edible items,jestive stvari
 LiteralText,egg,jaje
 LiteralText,else,drugo
-LiteralText,EMAIL,EMAIL
+LiteralText,EMAIL,IMEJL
 LiteralText,Enable auto save,Omogućite automatsko memorisanje
 LiteralText,Enable master mode,Omogućite master mod
 LiteralText,enchant item,začarati predmet
@@ -3345,11 +3345,11 @@ LiteralText,HINT,NAGOVEŠTAJ
 LiteralText,HIRE,UNAJMITE
 LiteralText,horde,horda
 LiteralText,HORDES,HORDE
-LiteralText,HOST,HOST
+LiteralText,HOST,DOMAĆIN
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Međutim, možda ćete želeti da završite svoje avanture pre nego što dobijete ažuriranje."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Nadam se da uživate u svojim avanturama i slobodno me kontaktirajte sa svojim povratnim informacijama i predlozima.
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
-LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Razvijam novu igru pod nazivom ZEROTH, platformer u stilu roguelike-a zasnovan na mehanikama iz Pathos-a. Dodirnite ovde za više informacija."
+LiteralText,I'm developing a new game called ZEROTH!,Razvijam novu igru koja se zove Zeroth.
 LiteralText,identified items,identifikovani predmeti
 LiteralText,identify all items,indetifikujte sve predmete
 LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,INDENTIFIKUJTE SVE PREDMETE SA PODA
@@ -3398,7 +3398,7 @@ LiteralText,KNOWLEDGE,ZNANJE
 LiteralText,LANGUAGE,JEZIK
 LiteralText,LEARN ALL SPELLS,NAUČITE SVE MAGIJE
 LiteralText,learn spells,naučite magije
-LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,Naučite pravila sveta kroz urnebesne smrti kako biste mogli da vodite svoje heroje dok pokušavaju da pobegnu iz nultog kruga Haela.
 LiteralText,LEFT RING,LEVI PRSTEN
 LiteralText,LEVEL CHART,ŠEMA ZA NIVOE
 LiteralText,level//rank,nivo//rank
@@ -3444,7 +3444,7 @@ LiteralText,MIMIC,MIMIK
 LiteralText,mimicking,mimikovati
 LiteralText,mobilise block,mobilizovati blok
 LiteralText,modifier,modifikator
-LiteralText,MORE INFO,
+LiteralText,MORE INFO,JOŠ INFORMACIJA
 LiteralText,MOUNT,ZAJAŠITE
 LiteralText,Mount which direction?,Zajašite u kom pravcu?
 LiteralText,MOUNTED,ZAJAŠILI STE
@@ -3492,7 +3492,7 @@ LiteralText,OPEN,OTVORITE
 LiteralText,OPENED,OTVORENO
 LiteralText,opening,otvara se
 LiteralText,OR,ILI
-LiteralText,ORIGINAL,ORIGINAL
+LiteralText,ORIGINAL,ORIGINALNO
 LiteralText,OVERRIDE,NADJAČAJTE
 LiteralText,OVERVIEW,PREGLED
 LiteralText,Palette,Paleta
@@ -3543,11 +3543,11 @@ LiteralText,QUICK LOAD,BRZ POVRATAK
 LiteralText,QUICK SAVE,BRZO MEMORISANJE
 LiteralText,quit,je izašao iz
 LiteralText,QUIT,IZAĐITE
-LiteralText,R//replica symbol,R//replica symbol
+LiteralText,R//replica symbol,R//simbol replike
 LiteralText,race,rasa
 LiteralText,RACES,RASE
-LiteralText,random,random
-LiteralText,RANDOM,RANDOM
+LiteralText,random,nasumično
+LiteralText,RANDOM,NASUMIČNO
 LiteralText,random dungeon seed,random seme tamnice
 LiteralText,random level,random nivo
 LiteralText,random points,random pojeni
@@ -3696,7 +3696,7 @@ LiteralText,STOP,STANITE
 LiteralText,storage,skladište
 LiteralText,STUCK,ZAGLAVLJEN
 LiteralText,STUDIO,STUDIO
-LiteralText,STUDIO QUESTS,STUDIO QUESTS
+LiteralText,STUDIO QUESTS,STUDIO ISTRAGE
 LiteralText,SUBMIT,PODNESITE
 LiteralText,summon,pozvati
 LiteralText,SUSTAINED,PODRŽANO
@@ -3759,7 +3759,7 @@ LiteralText,trigger unlimited times,pokrenite bezbroj puta
 LiteralText,truth,istina
 LiteralText,TUNNEL,TUNEL
 LiteralText,Tunnel which direction?,Tunel u kom pravcu?
-LiteralText,TURN-BASED,TURN-BASED
+LiteralText,TURN-BASED,POTEZNO
 LiteralText,turns,pokreti
 LiteralText,Type in any word or phrase to generate a random dungeon seed.,Unesite bilo koju reč ili frazu da biste generisali nasumično seme tamnice.
 LiteralText,unable to load,nije moguće učitati
@@ -3822,7 +3822,7 @@ LiteralText,WRONG WAY,POGREŠAN PUT
 LiteralText,"You are playing as anonymous, please register!","Igrate kao anonimni, molimo vas da se registrujete!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Možda ćete morati da TRAŽITE tajna vrata pomoću dugmeta OKO.
 LiteralText,Your current movement and action speed in squares per second.,Vaša trenutna brzina kretanja i akcije u kvadratima u sekundi.
-LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.","Zeroth je debitantski naslov za moj novi studio, Contrary Games. To je duhovni naslednik Pathos-a, ali sa animacijama papirnih lutki, platformingom u realnom vremenu, simulacijom fizike i istim dubokim, ponovno igrajućim gejmplejem."
 LiteralText,ZOOM,ZUMIRAJTE
 LiteralText,ZOOS,ZOOLOŠKI VRTOVI
 LiteralText,zZz,zZz

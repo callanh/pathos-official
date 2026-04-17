@@ -61,10 +61,6 @@ AppearanceName,black gem,黒い宝石
 AppearanceName,black gloves,黒いグローブ
 AppearanceName,black onyx ring,黒めのうの指輪
 AppearanceName,black potion,黒い液体の入った小瓶
-AppearanceName,black runed arrow,謎の文字のついた黒い矢
-AppearanceName,black runed bow,謎の文字のついた黒い弓
-AppearanceName,black runed dagger,謎の文字のついた黒いダガー
-AppearanceName,black runed short sword,謎の文字のついた黒いショートソード
 AppearanceName,black wand,黒い棒
 AppearanceName,bloody potion,血のような液体の入った小瓶
 AppearanceName,blue and green shield,青と緑の盾
@@ -153,7 +149,11 @@ AppearanceName,glass wand,ガラスの棒
 AppearanceName,glasses,メガネ
 AppearanceName,glittering book,きらびやかな本
 AppearanceName,gloomy potion,薄暗い色の液体の入った小瓶
+AppearanceName,glossy arrow,謎の文字のついた黒い矢
+AppearanceName,glossy bow,謎の文字のついた黒い弓
+AppearanceName,glossy dagger,謎の文字のついた黒いダガー
 AppearanceName,glossy mithril-coat,光沢のあるミスリルの鎖帷子
+AppearanceName,glossy short sword,謎の文字のついた黒いショートソード
 AppearanceName,gold book,金表紙の本
 AppearanceName,gold earrings,金の耳飾り
 AppearanceName,gold ring,金の指輪
@@ -2429,11 +2429,6 @@ ItemName,crysknife,クリスナイフ
 ItemName,crystal ball,水晶玉
 ItemName,crystal plate mail,水晶のプレートメイル
 ItemName,dagger,ダガー
-ItemName,dark elven arrow,ダークエルフの矢
-ItemName,dark elven bow,ダークエルフの弓
-ItemName,dark elven dagger,ダークエルフのダガー
-ItemName,dark elven mithril-coat,ダークエルフのミスリル帷子
-ItemName,dark elven short sword,ダークエルフのショートソード
 ItemName,dart,ダーツ
 ItemName,Deadwood,『デッドウッド』
 ItemName,Deagle,『ディーグル』
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,健脚の靴
 ItemName,Dragonbane,『ドラゴンベーン』
 ItemName,dread staff,恐怖の杖
 ItemName,Drilanze,『ドリランヅェ』
+ItemName,drow arrow,ダークエルフの矢
+ItemName,drow bow,ダークエルフの弓
+ItemName,drow dagger,ダークエルフのダガー
+ItemName,drow mithril-coat,ダークエルフのミスリル帷子
+ItemName,drow short sword,ダークエルフのショートソード
 ItemName,drum of earthquake,地震の太鼓
 ItemName,dunce cap,おまぬけ帽
 ItemName,dwarvish cloak,ドワーフのマント

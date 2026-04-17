@@ -2254,11 +2254,11 @@ namespace Pathos
         I.SetArmour(Skills.light_armour, D: 5, P: +0, S: +1, B: +0);
       });
 
-      dark_elven_mithrilcoat = AddArmour(ItemType.Suit, "dark elven mithril-coat", I =>
+      drow_mithrilcoat = AddArmour(ItemType.Suit, "drow mithril-coat", I =>
       {
         I.Description = null;
         I.SetAppearance("glossy mithril-coat", "A slender and glossy looking coat of mithril armour.");
-        I.Glyph = Glyphs.dark_elven_mithrilcoat;
+        I.Glyph = Glyphs.drow_mithrilcoat;
         I.Sonic = Sonics.armour;
         I.OriginRace = Races.elf;
         I.Series = null;
@@ -12717,11 +12717,11 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.light_blade, Sonics.throw_object, Elements.physical, DamageType.Pierce, 1.d4());
       });
 
-      dark_elven_arrow = AddRangedMissile(Ammunition.Arrow, "dark elven arrow", I =>
+      drow_arrow = AddRangedMissile(Ammunition.Arrow, "drow arrow", I =>
       {
         I.Description = null;
-        I.SetAppearance("black runed arrow", null);
-        I.Glyph = Glyphs.dark_elven_arrow;
+        I.SetAppearance("glossy arrow", null);
+        I.Glyph = Glyphs.drow_arrow;
         I.Sonic = Sonics.ammo;
         I.OriginRace = Races.elf;
         I.Series = null;
@@ -12741,11 +12741,11 @@ namespace Pathos
         });
       });
 
-      dark_elven_bow = AddRangedWeapon(Ammunition.Arrow, "dark elven bow", I =>
+      drow_bow = AddRangedWeapon(Ammunition.Arrow, "drow bow", I =>
       {
         I.Description = null;
-        I.SetAppearance("black runed bow", null);
-        I.Glyph = Glyphs.dark_elven_bow;
+        I.SetAppearance("glossy bow", null);
+        I.Glyph = Glyphs.drow_bow;
         I.Sonic = Sonics.weapon;
         I.OriginRace = Races.elf;
         I.Series = null;
@@ -12763,11 +12763,11 @@ namespace Pathos
         });
       });
 
-      dark_elven_dagger = AddThrownWeapon("dark elven dagger", I =>
+      drow_dagger = AddThrownWeapon("drow dagger", I =>
       {
         I.Description = null;
-        I.SetAppearance("black runed dagger", null);
-        I.Glyph = Glyphs.dark_elven_dagger;
+        I.SetAppearance("glossy dagger", null);
+        I.Glyph = Glyphs.drow_dagger;
         I.Sonic = Sonics.weapon;
         I.OriginRace = Races.elf;
         I.BundleDice = Dice.One;
@@ -12786,11 +12786,11 @@ namespace Pathos
         });
       });
 
-      dark_elven_short_sword = AddMeleeWeapon("dark elven short sword", I =>
+      drow_short_sword = AddMeleeWeapon("drow short sword", I =>
       {
         I.Description = null;
-        I.SetAppearance("black runed short sword", null);
-        I.Glyph = Glyphs.dark_elven_short_sword;
+        I.SetAppearance("glossy short sword", null);
+        I.Glyph = Glyphs.drow_short_sword;
         I.Sonic = Sonics.weapon;
         I.OriginRace = Races.elf;
         I.Series = null;
@@ -15319,6 +15319,13 @@ namespace Pathos
 
       // naming consistency.
       Register.Alias(book_of_lightning_bolt, "book of lightning");
+
+      // dark elven -> drow.
+      Register.Alias(drow_mithrilcoat, "dark elven mithril-coat");
+      Register.Alias(drow_arrow, "dark elven arrow");
+      Register.Alias(drow_bow, "dark elven bow");
+      Register.Alias(drow_dagger, "dark elven dagger");
+      Register.Alias(drow_short_sword, "dark elven short sword");
       #endregion
     }
 #endif
@@ -15489,12 +15496,12 @@ namespace Pathos
     public readonly Item flash_staff;
     public readonly Item thunder_staff;
 
-    // dark elven.
-    public readonly Item dark_elven_arrow;
-    public readonly Item dark_elven_bow;
-    public readonly Item dark_elven_dagger;
-    public readonly Item dark_elven_mithrilcoat;
-    public readonly Item dark_elven_short_sword;
+    // drow.
+    public readonly Item drow_arrow;
+    public readonly Item drow_bow;
+    public readonly Item drow_dagger;
+    public readonly Item drow_short_sword;
+    public readonly Item drow_mithrilcoat;
 
     // dwarvish.
     public readonly Item dwarvish_cloak;

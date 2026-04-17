@@ -61,10 +61,6 @@ AppearanceName,black gem,schwarzer Edelstein
 AppearanceName,black gloves,schwarze Handschuhe
 AppearanceName,black onyx ring,schwarzer Onyxring
 AppearanceName,black potion,schwarzer Trank
-AppearanceName,black runed arrow,schwarzer Runenpfeil
-AppearanceName,black runed bow,schwarzer Runenbogen
-AppearanceName,black runed dagger,schwarzer Runendolch
-AppearanceName,black runed short sword,schwarzes Runenschwert
 AppearanceName,black wand,schwarzer Zauberstab
 AppearanceName,bloody potion,blutiger Trank
 AppearanceName,blue and green shield,blau-grünes Schild
@@ -153,7 +149,11 @@ AppearanceName,glass wand,Zauberstab aus Glas
 AppearanceName,glasses,Brille
 AppearanceName,glittering book,glitzerndes Buch
 AppearanceName,gloomy potion,finsterer Trank
+AppearanceName,glossy arrow,schwarzer Runenpfeil
+AppearanceName,glossy bow,schwarzer Runenbogen
+AppearanceName,glossy dagger,schwarzer Runendolch
 AppearanceName,glossy mithril-coat,glänzendes Mithril Fell
+AppearanceName,glossy short sword,schwarzes Runenschwert
 AppearanceName,gold book,goldenes Buch
 AppearanceName,gold earrings,Goldohrringe
 AppearanceName,gold ring,Goldring
@@ -2429,11 +2429,6 @@ ItemName,crysknife,Kris
 ItemName,crystal ball,Kristallkugel
 ItemName,crystal plate mail,Kristallene Plattenrüstung
 ItemName,dagger,Dolch
-ItemName,dark elven arrow,Dunkelelfischer Pfeil
-ItemName,dark elven bow,Dunkelelfischer Bogen
-ItemName,dark elven dagger,Dunkelelfischer Dolch
-ItemName,dark elven mithril-coat,Dunkelelfischer Mithrilmantel
-ItemName,dark elven short sword,Dunkelelfisches Kurzschwert
 ItemName,dart,Wurfpfeil
 ItemName,Deadwood,Totholz
 ItemName,Deagle,Deagle
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,Entlastungsstiefel
 ItemName,Dragonbane,Drachenbann
 ItemName,dread staff,Mitarbeiter des Terrors
 ItemName,Drilanze,Drilanze
+ItemName,drow arrow,Dunkelelfischer Pfeil
+ItemName,drow bow,Dunkelelfischer Bogen
+ItemName,drow dagger,Dunkelelfischer Dolch
+ItemName,drow mithril-coat,Dunkelelfischer Mithrilmantel
+ItemName,drow short sword,Dunkelelfisches Kurzschwert
 ItemName,drum of earthquake,Trommel des Erdbebens
 ItemName,dunce cap,Dummkopfmütze
 ItemName,dwarvish cloak,Zwergischer Mantel

@@ -61,10 +61,6 @@ AppearanceName,black gem,گوهر سیاه
 AppearanceName,black gloves,دستکش سیاه
 AppearanceName,black onyx ring,حلقه عقیق سیاه
 AppearanceName,black potion,معجون سیاه
-AppearanceName,black runed arrow,تیر رون کاری شده سیاه
-AppearanceName,black runed bow,کمان رون کاری شده سیاه
-AppearanceName,black runed dagger,خنجر رون کاری شده سیاه
-AppearanceName,black runed short sword,شمشیر کوتاه رون کاری شده سیاه
 AppearanceName,black wand,چوب دستی سیاه
 AppearanceName,bloody potion,معجون خونی
 AppearanceName,blue and green shield,سپر سبز و آبی
@@ -153,7 +149,11 @@ AppearanceName,glass wand,چوب دستی شیشه ای
 AppearanceName,glasses,عینک
 AppearanceName,glittering book,کتاب درخشان
 AppearanceName,gloomy potion,معجون تیره
+AppearanceName,glossy arrow,تیر رون کاری شده سیاه
+AppearanceName,glossy bow,کمان رون کاری شده سیاه
+AppearanceName,glossy dagger,خنجر رون کاری شده سیاه
 AppearanceName,glossy mithril-coat,کت میثریلی براق
+AppearanceName,glossy short sword,شمشیر کوتاه رون کاری شده سیاه
 AppearanceName,gold book,کتاب طلا
 AppearanceName,gold earrings,گوشواره طلا
 AppearanceName,gold ring,حلقه طلا
@@ -2429,11 +2429,6 @@ ItemName,crysknife,
 ItemName,crystal ball,
 ItemName,crystal plate mail,
 ItemName,dagger,
-ItemName,dark elven arrow,
-ItemName,dark elven bow,
-ItemName,dark elven dagger,
-ItemName,dark elven mithril-coat,
-ItemName,dark elven short sword,
 ItemName,dart,
 ItemName,Deadwood,
 ItemName,Deagle,
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,
 ItemName,Dragonbane,
 ItemName,dread staff,
 ItemName,Drilanze,
+ItemName,drow arrow,
+ItemName,drow bow,
+ItemName,drow dagger,
+ItemName,drow mithril-coat,
+ItemName,drow short sword,
 ItemName,drum of earthquake,
 ItemName,dunce cap,
 ItemName,dwarvish cloak,

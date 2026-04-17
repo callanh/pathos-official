@@ -127,6 +127,13 @@ namespace Pathos
 
       // Icons.
       Register.Alias(appetite, "apetite"); // typo fix.
+
+      // dark elven -> drow.
+      Register.Alias(drow_mithrilcoat, "dark elven mithril-coat");
+      Register.Alias(drow_arrow, "dark elven arrow");
+      Register.Alias(drow_bow, "dark elven bow");
+      Register.Alias(drow_dagger, "dark elven dagger");
+      Register.Alias(drow_short_sword, "dark elven short sword");
     }
 
     internal Glyph GetGlyph(string Name) => GetGlyphOrNull(Name) ?? throw new Exception("Glyph not found: " + Name);
@@ -546,11 +553,11 @@ namespace Pathos
     public readonly Glyph cyclops;
     public readonly Glyph dagger;
     public readonly Glyph dao;
-    public readonly Glyph dark_elven_arrow;
-    public readonly Glyph dark_elven_bow;
-    public readonly Glyph dark_elven_dagger;
-    public readonly Glyph dark_elven_mithrilcoat;
-    public readonly Glyph dark_elven_short_sword;
+    public readonly Glyph drow_arrow;
+    public readonly Glyph drow_bow;
+    public readonly Glyph drow_dagger;
+    public readonly Glyph drow_short_sword;
+    public readonly Glyph drow_mithrilcoat;
     public readonly Glyph dark_explosion_bottom_center;
     public readonly Glyph dark_explosion_bottom_left;
     public readonly Glyph dark_explosion_bottom_right;

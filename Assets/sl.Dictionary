@@ -61,10 +61,6 @@ AppearanceName,black gem,črni dragulj
 AppearanceName,black gloves,črne rokavice
 AppearanceName,black onyx ring,črni prstan iz oniksa
 AppearanceName,black potion,črni napoj
-AppearanceName,black runed arrow,črna runed puščica
-AppearanceName,black runed bow,črni runed lok
-AppearanceName,black runed dagger,črno runed bodalo
-AppearanceName,black runed short sword,črni runed kratek meč
 AppearanceName,black wand,črna čarobna palica
 AppearanceName,bloody potion,krvavi napoj
 AppearanceName,blue and green shield,modrozeleni ščit
@@ -153,7 +149,11 @@ AppearanceName,glass wand,steklena magična palica
 AppearanceName,glasses,očala
 AppearanceName,glittering book,bleščeča knjiga
 AppearanceName,gloomy potion,mračni napoj
+AppearanceName,glossy arrow,črna runed puščica
+AppearanceName,glossy bow,črni runed lok
+AppearanceName,glossy dagger,črno runed bodalo
 AppearanceName,glossy mithril-coat,sijajni mitrilni-plašč
+AppearanceName,glossy short sword,črni runed kratek meč
 AppearanceName,gold book,zlata knjiga
 AppearanceName,gold earrings,zlati uhani
 AppearanceName,gold ring,zlat prstan
@@ -2429,11 +2429,6 @@ ItemName,crysknife,
 ItemName,crystal ball,
 ItemName,crystal plate mail,
 ItemName,dagger,
-ItemName,dark elven arrow,
-ItemName,dark elven bow,
-ItemName,dark elven dagger,
-ItemName,dark elven mithril-coat,
-ItemName,dark elven short sword,
 ItemName,dart,
 ItemName,Deadwood,
 ItemName,Deagle,
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,
 ItemName,Dragonbane,
 ItemName,dread staff,
 ItemName,Drilanze,
+ItemName,drow arrow,
+ItemName,drow bow,
+ItemName,drow dagger,
+ItemName,drow mithril-coat,
+ItemName,drow short sword,
 ItemName,drum of earthquake,
 ItemName,dunce cap,
 ItemName,dwarvish cloak,

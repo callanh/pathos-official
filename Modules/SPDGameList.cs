@@ -129,7 +129,7 @@ namespace Pathos
         Items.mithril_shield,
         Items.mithril_plate_mail,
         Items.mithril_helmet,
-        Items.dark_elven_mithrilcoat,
+        Items.drow_mithrilcoat,
         Items.dwarvish_mithrilcoat,
         Items.elven_mithrilcoat,
         Items.hawaiian_shirt,

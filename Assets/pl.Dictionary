@@ -61,10 +61,6 @@ AppearanceName,black gem,czarny klejnot
 AppearanceName,black gloves,czarne rękawice
 AppearanceName,black onyx ring,pierścień z onyksem
 AppearanceName,black potion,czarna mikstura
-AppearanceName,black runed arrow,czarna strzała pokryta runami
-AppearanceName,black runed bow,czarny łuk pokryty runami
-AppearanceName,black runed dagger,czarny sztylet pokryty runami
-AppearanceName,black runed short sword,czarny krótki miecz pokryty runami
 AppearanceName,black wand,czarna różdżka
 AppearanceName,bloody potion,krwawy eliksir
 AppearanceName,blue and green shield,niebiesko-zielona tarcza
@@ -153,7 +149,11 @@ AppearanceName,glass wand,szklana różdżka
 AppearanceName,glasses,okulary
 AppearanceName,glittering book,migocząca księga
 AppearanceName,gloomy potion,ponura mikstura
+AppearanceName,glossy arrow,czarna strzała pokryta runami
+AppearanceName,glossy bow,czarny łuk pokryty runami
+AppearanceName,glossy dagger,czarny sztylet pokryty runami
 AppearanceName,glossy mithril-coat,lśniąca mithrilowa kolczuga
+AppearanceName,glossy short sword,czarny krótki miecz pokryty runami
 AppearanceName,gold book,złota księga
 AppearanceName,gold earrings,złote kolczyki
 AppearanceName,gold ring,złoty pierścień
@@ -1197,7 +1197,7 @@ EntityName,Doctor Frankenstein,Doktor Frankenstein
 EntityName,dog,pies
 EntityName,doppelgänger,sobowtór
 EntityName,dracolich,smokolich
-EntityName,dracon,smok
+EntityName,dracon,smokopodobny
 EntityName,dragon king,król smoków
 EntityName,dretch,kreta
 EntityName,drow,drow
@@ -2429,11 +2429,6 @@ ItemName,crysknife,crysknife
 ItemName,crystal ball,kryształowa kula
 ItemName,crystal plate mail,kryształowa zbroja płytowa
 ItemName,dagger,sztylet
-ItemName,dark elven arrow,strzała mrocznego elfa
-ItemName,dark elven bow,łuk mrocznego elfa
-ItemName,dark elven dagger,sztylet mrocznego elfa
-ItemName,dark elven mithril-coat,płaszcz z mithrilu dla mrocznych elfów
-ItemName,dark elven short sword,krótki miecz mrocznych elfów
 ItemName,dart,rzutka
 ItemName,Deadwood,Martwe drewno
 ItemName,Deagle,Deagle
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,buty pozbawienia praw
 ItemName,Dragonbane,Zguba Smoków
 ItemName,dread staff,kostur grozy
 ItemName,Drilanze,Drilanze
+ItemName,drow arrow,strzała mrocznego elfa
+ItemName,drow bow,łuk mrocznego elfa
+ItemName,drow dagger,sztylet mrocznego elfa
+ItemName,drow mithril-coat,płaszcz z mithrilu dla mrocznych elfów
+ItemName,drow short sword,krótki miecz mrocznych elfów
 ItemName,drum of earthquake,bęben trzęsienia ziemi
 ItemName,dunce cap,czapka błazna
 ItemName,dwarvish cloak,krasnoludzki płaszcz
@@ -2944,7 +2944,7 @@ KindName,changeling,odmieniec
 KindName,demon,demon
 KindName,devourer,pożeracz
 KindName,dog,pies
-KindName,dracon,smok
+KindName,dracon,smokopodobny
 KindName,dragon,smok
 KindName,dwarf,krasnolud
 KindName,echo,echo
@@ -4271,9 +4271,9 @@ RaceName,changeling//non-binary,zmiennokształtny
 RaceName,demon//female,demonica
 RaceName,demon//male,demon
 RaceName,demon//non-binary,demon
-RaceName,dracon//female,smok
-RaceName,dracon//male,smok
-RaceName,dracon//non-binary,dracon
+RaceName,dracon//female,smokopodobna
+RaceName,dracon//male,smokopodobny
+RaceName,dracon//non-binary,smokopodobne
 RaceName,dwarf//female,krasnolud
 RaceName,dwarf//male,krasnolud
 RaceName,dwarf//non-binary,krasnolud

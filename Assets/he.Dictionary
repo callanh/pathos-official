@@ -61,10 +61,6 @@ AppearanceName,black gem,אבן חן שחורה
 AppearanceName,black gloves,כפפות שחורות
 AppearanceName,black onyx ring,טבעת שוהם שחורה
 AppearanceName,black potion,שיקוי שחור
-AppearanceName,black runed arrow,חץ שחור עם רונות
-AppearanceName,black runed bow,קשת שחורה עם רונות
-AppearanceName,black runed dagger,פגיון שחור עם רונות
-AppearanceName,black runed short sword,חרב קצרה שחורה עם רונות
 AppearanceName,black wand,שרביט שחור
 AppearanceName,bloody potion,שיקוי דמוי דם
 AppearanceName,blue and green shield,מגן כחול-ירוק
@@ -153,7 +149,11 @@ AppearanceName,glass wand,שרביט זכוכית
 AppearanceName,glasses,משקפיים
 AppearanceName,glittering book,ספר נוצץ
 AppearanceName,gloomy potion,שיקוי עכור
+AppearanceName,glossy arrow,חץ שחור עם רונות
+AppearanceName,glossy bow,קשת שחורה עם רונות
+AppearanceName,glossy dagger,פגיון שחור עם רונות
 AppearanceName,glossy mithril-coat,שריון מיתריל מבריק
+AppearanceName,glossy short sword,חרב קצרה שחורה עם רונות
 AppearanceName,gold book,ספר זהב
 AppearanceName,gold earrings,עגילי זהב
 AppearanceName,gold ring,טבעת זהב
@@ -2429,11 +2429,6 @@ ItemName,crysknife,סכין קריס
 ItemName,crystal ball,כדור בדולח
 ItemName,crystal plate mail,שריון לוחות בדולח
 ItemName,dagger,פגיון
-ItemName,dark elven arrow,חץ אלפים אפל
-ItemName,dark elven bow,קשת אלפים אפלה
-ItemName,dark elven dagger,פגיון אלפים אפל
-ItemName,dark elven mithril-coat,שריון מיתריל אפל של אלפים
-ItemName,dark elven short sword,חרב קצרה אפלה של אלפים
 ItemName,dart,חץ מטרה
 ItemName,Deadwood,דדווד
 ItemName,Deagle,דיגל
@@ -2449,6 +2444,11 @@ ItemName,disencumbrance boots,מגפי הקלה
 ItemName,Dragonbane,רועצת הדרקונים
 ItemName,dread staff,מטה אימה
 ItemName,Drilanze,דרילנזה
+ItemName,drow arrow,חץ אלפים אפל
+ItemName,drow bow,קשת אלפים אפלה
+ItemName,drow dagger,פגיון אלפים אפל
+ItemName,drow mithril-coat,שריון מיתריל אפל של אלפים
+ItemName,drow short sword,חרב קצרה אפלה של אלפים
 ItemName,drum of earthquake,תוף רעידות אדמה
 ItemName,dunce cap,כובע טמבל
 ItemName,dwarvish cloak,גלימת גמדים
