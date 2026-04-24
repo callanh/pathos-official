@@ -1,15 +1,23 @@
+2026-04-23
+- 'place all' with containers and floor now ignores items in quick slots.
+- added side quick menus to the lower left/right of the screen.
+- new setting: disable the side quick menus.
+- status icons at the top of the screen now stack vertically, rather than horizontally on mobile sizes, to avoid overlap with the log.
+- character sheet now includes damage calculation (in a 2x2 grid with attack, defence and speed).
+- improving spell mastery now shows the number of stars in the log.
+
 2026-04-17
-- Renamed 'dark elven' items to 'drow' and appearance 'black runed' to 'glossy'.
+- renamed 'dark elven' items to 'drow' and appearance 'black runed' to 'glossy'.
 
 2026-03-30
 - new setting: disable radial quick menu on single tap of the character tile.
-- long press on radial quick icon will now clear it instead of immediately bring up the binding menu.
+- long press on radial quick slot will now clear it instead of immediately bring up the binding menu.
 
 2026-03-28
-- Improved handling of window size for the start screen when using split-windows on Android.
+- improved handling of window size for the start screen when using split-windows on Android.
 
 2026-03-26
-- Single tap on your character tile now brings up the quick menu for easier use (rather than having to long-press for the personal menu).
+- single tap on your character tile now brings up the quick menu for easier use (rather than having to long-press for the personal menu).
 
 2026-03-22
 - Back button now closes the map instead of opening the side menu.
@@ -72,10 +80,10 @@
 - Minetown will now be found before level 5 (changed from levels 2-5 to 2-4).
 
 2025-10-07
-- Scroll of earth/fire are now allowed as starting items.
+- scroll of earth/fire are now allowed as starting items.
 
 2025-09-30
-- Significantly increased nutrition gained from eating weapons and armour (eg. halberd increases from 150 to 750 nutrition).
+- significantly increased nutrition gained from eating weapons and armour (eg. halberd increases from 150 to 750 nutrition).
 
 2025-08-04
 - new player race: robot.
