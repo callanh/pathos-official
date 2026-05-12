@@ -10169,7 +10169,7 @@ namespace Pathos
                 C.WhenChance(Chance.OneIn17, A => A.CreateItem(Dice.One, Stocks.potion));
               }
             )
-          ); ;
+          );
         });
         I.AddObviousIngestUse(Motions.eat, 1000, Delay.FromTurns(20), Sonics.tool);
       });

@@ -2743,6 +2743,7 @@ namespace Pathos
     public readonly Glyph quick_attack;
     public readonly Glyph quick_blink;
     public readonly Glyph quick_choose;
+    public readonly Glyph quick_command;
     public readonly Glyph quick_console;
     public readonly Glyph quick_hide;
     public readonly Glyph quick_item;
@@ -2766,6 +2767,9 @@ namespace Pathos
     public readonly Glyph quick_tunnel;
     public readonly Glyph quick_turnbased;
     public readonly Glyph quick_wait;
+    public readonly Glyph quick_dismount;
+    public readonly Glyph quick_expel;
+    public readonly Glyph quick_slide;
 
     public readonly Glyph interrupt;
     public readonly Glyph shroud;

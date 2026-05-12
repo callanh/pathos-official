@@ -1,3 +1,17 @@
+2026-05-07
+- Journal now has a scrollbar and stores the last 100 entries.
+- Can now set personal actions (attack/polymorph/teleport/etc) in quickslots.
+- Added God Mode to the Master Console.
+- Journal entries for gaining life/mana now show your current max and capacity.
+- Increased max left and right quickslots to 10 each.
+- Personal Actions Menu now uses icons and has better fitment.
+- Added some early exits to the Journal rebuild to speed it up.
+- Adjusted fitment of Journal and character sheet/inventory for mobile to not overlap.
+- Adjusted the Continue Button so it no longer overlaps with the quickslots.
+- Adjusted fitment of icons and text within buttons.
+- Better sizing of quickslot buttons with status icons.
+- Remove stop icon from quickslots while moving.
+
 2026-04-23
 - 'place all' with containers and floor now ignores items in quick slots.
 - added side quick menus to the lower left/right of the screen.
