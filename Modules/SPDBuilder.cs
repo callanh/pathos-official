@@ -385,12 +385,12 @@ namespace Pathos
         if (angle < 90 || angle > 270)
         {
           direction = SPDRoom.TOP;
-          start = new SPDPoint((int)Math.Round((prev.top - b) / m), prev.top);
+          start = new SPDPoint((int)MathF.Round((prev.top - b) / m), prev.top);
         }
         else
         {
           direction = SPDRoom.BOTTOM;
-          start = new SPDPoint((int)Math.Round((prev.bottom - b) / m), prev.bottom);
+          start = new SPDPoint((int)MathF.Round((prev.bottom - b) / m), prev.bottom);
         }
       }
       else
@@ -398,12 +398,12 @@ namespace Pathos
         if (angle < 180)
         {
           direction = SPDRoom.RIGHT;
-          start = new SPDPoint(prev.right, (int)Math.Round(m * prev.right + b));
+          start = new SPDPoint(prev.right, (int)MathF.Round(m * prev.right + b));
         }
         else
         {
           direction = SPDRoom.LEFT;
-          start = new SPDPoint(prev.left, (int)Math.Round(m * prev.left + b));
+          start = new SPDPoint(prev.left, (int)MathF.Round(m * prev.left + b));
         }
       }
 

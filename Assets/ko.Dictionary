@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName}은(는) {PropertyName} 특성을 얻었다
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName}는 이미 {GenderHis} 카르마 최대치에 달했다
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName}은(는) {AttributeName}이(가) {ModifierNumber} 감소했다
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName}의 생명력이 {ModifierNumber} 감소했다
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName}의 마나가 {ModifierNumber} 감소했다
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName}의 생명력이 {ModifierNumber} 감소했다 ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName}의 마나가 {ModifierNumber} 감소했다 ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName}은 무언가를 잊어버렸다
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName}의 {AttributeName} 능력치가 {ModifierNumber} 증가했다
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName}의 생명력이 {ModifierNumber} 증가했다
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName}의 마나가 {ModifierNumber} 증가했다
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName}의 생명력이 {ModifierNumber} 증가했다 ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName}의 마나가 {ModifierNumber} 증가했다 ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName}은(는) {AttributeName}이(가) 부족해 {ActionName}을(를) 할 수 없다
 FormatText,{CharacterName} identified {AssetName},{CharacterName}은(는) {AssetName}을(를) 식별했다
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName}은(는) {SpellName}의 마나 효율이 증가했다
@@ -3519,7 +3519,7 @@ LiteralText,place curse,저주 부여
 LiteralText,platform,플랫폼
 LiteralText,Play,플레이
 LiteralText,Play a sound effect?,음향 효과를 재생할까요?
-LiteralText,PLAYER,플레이어
+LiteralText,Player,플레이어
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,앱에서 강제 종료를 하면 복구할 수 없는 손상된 저장 파일이 생성될 수 있습니다.
 LiteralText,Please offer any clarification,설명을 부탁드립니다.
 LiteralText,Please provide your feedback,피드백을 주세요.

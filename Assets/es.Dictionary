@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName} tiene {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} ha logrado su maximo potencial kármico//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} disminuyó {AttributeName} por {ModifierNumber}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} disminuyó su vida en {ModifierNumber}
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} disminuyó su maná en {ModifierNumber}
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName} disminuyó su vida en {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName} disminuyó su maná en {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName} ha olvidado algo
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} incrementó {AttributeName} en {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} incrementó su vida en {ModifierNumber}
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} incrementó su maná en {ModifierNumber}
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName} incrementó su vida en {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName} incrementó su maná en {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName} tiene {AttributeName} insuficiente y es incapaz de {ActionName}
 FormatText,{CharacterName} identified {AssetName},{CharacterName} identificó {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} mejoró la eficiencia con {SpellName}
@@ -3519,7 +3519,7 @@ LiteralText,place curse,colocar maldición
 LiteralText,platform,plataforma
 LiteralText,Play,Jugar
 LiteralText,Play a sound effect?,¿Reproducir un efecto de sonido?
-LiteralText,PLAYER,JUGADOR
+LiteralText,Player,Jugador
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,"Porfavor ten en cuenta que forzar la app a salir puede resultar en archivos de guardado truncados, los cuales no pueden ser recuperados de ninguna forma."
 LiteralText,Please offer any clarification,"Por favor, aclare de ser necesario"
 LiteralText,Please provide your feedback,Por favor brinde sus comentarios

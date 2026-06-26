@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName}擁有了 {PropertyName} 效果
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} 的運程達到了 {GenderHis} 點
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} 失去了 {ModifierNumber} 點 {AttributeName}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} 降低了 {ModifierNumber} 點生命
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} 降低了 {ModifierNumber} 點魔力
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName} 降低了 {ModifierNumber} 點生命 ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName} 降低了 {ModifierNumber} 點魔力 ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName}遺忘了一些東西
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} 增加了 {ModifierNumber} 點 {AttributeName}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} 增加了 {ModifierNumber} 點生命
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} 增加了 {ModifierNumber} 點魔力
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName} 增加了 {ModifierNumber} 點生命 ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName} 增加了 {ModifierNumber} 點魔力 ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName} 由於 {AttributeName} 過低無法 {ActionName}
 FormatText,{CharacterName} identified {AssetName},{CharacterName} 鑒定了 {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} 的 {SpellName} 的熟練度提高了。
@@ -3519,7 +3519,7 @@ LiteralText,place curse,詛咒
 LiteralText,platform,平台
 LiteralText,Play,開始遊戲
 LiteralText,Play a sound effect?,播放聲效？
-LiteralText,PLAYER,玩家
+LiteralText,Player,玩家
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,請注意強制退出遊戲可能導致存檔丟失。
 LiteralText,Please offer any clarification,請描述出錯情況
 LiteralText,Please provide your feedback,請進行反饋

@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName} hat {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} hat bereits {GenderHis} karmisches Potenzial erreicht
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} verringerte {AttributeName} um {ModifierNumber}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName}s verlor {ModifierNumber} Leben
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName}s verlor {ModifierNumber} Mana
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName}s verlor {ModifierNumber} Leben ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName}s verlor {ModifierNumber} Mana ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName} hat irgendetwas vergessen
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} erhöhte {AttributeName} um {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName}s erhielt {ModifierNumber} Leben
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName}s erhielt {ModifierNumber} Mana
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName}s erhielt {ModifierNumber} Leben ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName}s erhielt {ModifierNumber} Mana ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName}s {AttributeName} ist zu schwach für {ActionName}
 FormatText,{CharacterName} identified {AssetName},{CharacterName} identifiziert {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} steigerte Effizienz von {SpellName}
@@ -3519,7 +3519,7 @@ LiteralText,place curse,platziere Fluch
 LiteralText,platform,Plattform
 LiteralText,Play,Spielen
 LiteralText,Play a sound effect?,Einen Soundeffekt abspielen?
-LiteralText,PLAYER,SPIELER
+LiteralText,Player,Spieler
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
 LiteralText,Please offer any clarification,Bitte erläutere das genauer
 LiteralText,Please provide your feedback,Bitte gib uns Feedback

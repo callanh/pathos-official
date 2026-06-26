@@ -1,20 +1,33 @@
+2026-06-24
+- added a dropdown indicator to the player count and game module buttons on the home screen.
+- pick-axes, wands, bags, and thrown weapons in quickslots now default to dig, zap, open, and throw behavior.
+- character Interact menu restyled to match the personal command menu.
+- spell list shows progress to next skill tier.
+- clicking on a warning square will issue an attack command.
+- speed optimizations for opening/closing the journal (especially affecting IOS).
+- personal action menu now stacks to 2 rows on small screens.
+- minor sizing and fitment tweaks around buttons.
+
+2026-06-05
+- ki-rin no longer have 'feet' because they are horse-like creature.
+
 2026-05-29
-- Quickslot now grays out when an item/spell is unavailable, instead of forgetting it.
-- Speed optimizations for mobile
+- quickslot now grays out when an item/spell is unavailable, instead of forgetting it.
+- speed optimizations for mobile
 
 2026-05-07
-- Journal now has a scrollbar and stores the last 100 entries.
-- Can now set personal actions (attack/polymorph/teleport/etc) in quickslots.
-- Added God Mode to the Master Console.
-- Journal entries for gaining life/mana now show your current max and capacity.
-- Increased max left and right quickslots to 10 each.
-- Personal Actions Menu now uses icons and has better fitment.
-- Added some early exits to the Journal rebuild to speed it up.
-- Adjusted fitment of Journal and character sheet/inventory for mobile to not overlap.
-- Adjusted the Continue Button so it no longer overlaps with the quickslots.
-- Adjusted fitment of icons and text within buttons.
-- Better sizing of quickslot buttons with status icons.
-- Remove stop icon from quickslots while moving.
+- journal now has a scrollbar and stores the last 100 entries.
+- can now set personal actions (attack/polymorph/teleport/etc) in quickslots.
+- added God Mode to the Master Console.
+- journal entries for gaining life/mana now show your current max and capacity.
+- increased max left and right quickslots to 10 each.
+- personal Actions Menu now uses icons and has better fitment.
+- added some early exits to the Journal rebuild to speed it up.
+- adjusted fitment of Journal and character sheet/inventory for mobile to not overlap.
+- adjusted the Continue Button so it no longer overlaps with the quickslots.
+- adjusted fitment of icons and text within buttons.
+- better sizing of quickslot buttons with status icons.
+- remove stop icon from quickslots while moving.
 
 2026-04-23
 - 'place all' with containers and floor now ignores items in quick slots.
@@ -38,8 +51,8 @@
 - single tap on your character tile now brings up the quick menu for easier use (rather than having to long-press for the personal menu).
 
 2026-03-22
-- Back button now closes the map instead of opening the side menu.
-- Map will always have a gutter on square resolutions, so you can tap away to dismiss it.
+- back button now closes the map instead of opening the side menu.
+- map will always have a gutter on square resolutions, so you can tap away to dismiss it.
 
 2026-03-15
 - upgraded Windows Desktop version to target .NET 10.0 (you may need to install the latest .NET Desktop Runtime).
@@ -82,7 +95,7 @@
 - AI fix for blocks that are 'rigid' which allowed the player to phase inside them and no enemy would attack them.
 
 2025-11-20
-- Display the defense class against each damage type, if different in the Character > Defense contextual help.
+- display the defense class against each damage type, if different in the Character > Defense contextual help.
 
 2025-11-18
 - new race: dracon.
@@ -166,7 +179,7 @@
 - master mode editor for dialogue.
 
 2024-10-08
-- Master mode contextual help for an item now allows naming and inscribing.
+- Master Mode contextual help for an item now allows naming and inscribing.
 
 2024-10-07
 - Master Mode contextual help for an entity now allows renaming plus a neutral/hostile toggle.

@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName}{PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{AttributeName}ของ {CharacterName} ลดลง {ModifierNumber}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} พลังชีวิตลดลง {ModifierNumber}
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} มานาลดลง {ModifierNumber}
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName} พลังชีวิตลดลง {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName} มานาลดลง {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{AttributeName}ของ {CharacterName} เพิ่มขึ้น {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} พลังชีวิตเพิ่มขึ้น {ModifierNumber}
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} มานาเพิ่มขึ้น {ModifierNumber}
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName} พลังชีวิตเพิ่มขึ้น {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName} มานาเพิ่มขึ้น {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},
 FormatText,{CharacterName} identified {AssetName},{CharacterName} ได้ระบุ{AssetName}แล้ว
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} ได้เพิ่มผลของ{SpellName}มากขึ้น
@@ -3519,7 +3519,7 @@ LiteralText,place curse,ลงคำสาป
 LiteralText,platform,
 LiteralText,Play,เล่น
 LiteralText,Play a sound effect?,เปิดเสียงเอฟเฟคไหม?
-LiteralText,PLAYER,ผู้เล่น
+LiteralText,Player,ผู้เล่น
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
 LiteralText,Please offer any clarification,
 LiteralText,Please provide your feedback,

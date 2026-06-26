@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName} có {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} đã đạt được tiềm năng nghiệp tối đa của {GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} bị trừ mất {ModifierNumber} điểm thuộc tính {AttributeName}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} bị trừ {ModifierNumber} sinh lực tối đa
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} bị trừ {ModifierNumber} năng lượng tối đa
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName} bị trừ {ModifierNumber} sinh lực tối đa ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName} bị trừ {ModifierNumber} năng lượng tối đa ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName} đã quên mất cái gì đó
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} được tăng điểm thuộc tính {AttributeName} thêm {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} được tăng {ModifierNumber} sinh lực tối đa
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} được tăng {ModifierNumber} năng lượng tối đa
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName} được tăng {ModifierNumber} sinh lực tối đa ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName} được tăng {ModifierNumber} năng lượng tối đa ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},Điểm thuộc tính {AttributeName} của {CharacterName} quá thấp nên không thể {ActionName}
 FormatText,{CharacterName} identified {AssetName},{CharacterName} đã nhận dạng {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} đã cải thiện khả năng dùng phép {SpellName}
@@ -3519,7 +3519,7 @@ LiteralText,place curse,niệm lời nguyền
 LiteralText,platform,nền tảng
 LiteralText,Play,Chơi
 LiteralText,Play a sound effect?,Chạy một hiệu ứng âm thanh?
-LiteralText,PLAYER,NGƯỜI CHƠI
+LiteralText,Player,Người chơi
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Xin lưu ý rằng buộc dừng ứng dụng có thể dẫn đến tình trạng bản lưu trò chơi bị lỗi và không thể khôi phục được.
 LiteralText,Please offer any clarification,Hãy giải thích
 LiteralText,Please provide your feedback,Hãy gửi phản hồi của bạn

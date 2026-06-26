@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName} karakternél megjelent: {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} már elérte a karmikus potenciálját//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName} {AttributeName} tulajdonsága ennyivel csökkent: {ModifierNumber}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName} életereje ennyivel csökkent: {ModifierNumber}
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName} manája ennyivel csökkent: {ModifierNumber}
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName} életereje ennyivel csökkent: {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName} manája ennyivel csökkent: {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} {AttributeName} tulajdonsága ennyivel nőtt: {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName} életereje ennyivel nőtt: {ModifierNumber}
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName} manája ennyivel nőtt: {ModifierNumber}
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName} életereje ennyivel nőtt: {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName} manája ennyivel nőtt: {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},"{CharacterName} {AttributeName} tulajdonsága túl gyenge, ezért képtelen végrehajtani a(z) {ActionName} cselekvést"
 FormatText,{CharacterName} identified {AssetName},{CharacterName} beazonosította: {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} hatékonyabban tudja használni a(z) {SpellName} varázslatot
@@ -3519,7 +3519,7 @@ LiteralText,place curse,megátkozás
 LiteralText,platform,platform
 LiteralText,Play,Játék
 LiteralText,Play a sound effect?,Lejátszható hangeffektek
-LiteralText,PLAYER,JÁTÉKOS
+LiteralText,Player,Játékos
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
 LiteralText,Please offer any clarification,"Kérlek, tisztázd a dolgot"
 LiteralText,Please provide your feedback,"Kérlek, adj visszajelzést"

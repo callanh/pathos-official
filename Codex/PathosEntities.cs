@@ -1370,7 +1370,7 @@ namespace Pathos
           Ears: true,
           Hands: false,
           Limbs: true,
-          Feet: true,
+          Feet: false,
           Thermal: true,
           Blood: true,
           Mounted: true,

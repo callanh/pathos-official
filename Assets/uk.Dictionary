@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName} отримує {PropertyName}
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName} вже досяг максимуму свого кармічного потенціалу//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{AttributeName} у {CharacterName} зменшилася на {ModifierNumber}
-FormatText,{CharacterName} has decreased life by {ModifierNumber},здоров'я у {CharacterName} зменшилася на {ModifierNumber}
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},мана у {CharacterName} зменшилася на {ModifierNumber}
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),здоров'я у {CharacterName} зменшилася на {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),мана у {CharacterName} зменшилася на {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName} не може щось згадати
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName} збільшує {AttributeName} на {ModifierNumber}
-FormatText,{CharacterName} has increased life by {ModifierNumber},здоров'я {CharacterName} збільшується на {ModifierNumber}
-FormatText,{CharacterName} has increased mana by {ModifierNumber},мана {CharacterName} збільшується на {ModifierNumber}
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),здоров'я {CharacterName} збільшується на {ModifierNumber} ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),мана {CharacterName} збільшується на {ModifierNumber} ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},У {CharacterName} бракує {AttributeName} щоб {ActionName}
 FormatText,{CharacterName} identified {AssetName},{CharacterName} пізнає {AssetName}
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName} покращує володіння {SpellName}
@@ -3519,7 +3519,7 @@ LiteralText,place curse,накладає прокляття
 LiteralText,platform,платформа
 LiteralText,Play,Відтворити
 LiteralText,Play a sound effect?,Відтворити який ефект?
-LiteralText,PLAYER,ГРАВЕЦЬ
+LiteralText,Player,Гравець
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Будь ласка майте на увазі що некоректний вихід з застосунку може призвести до втрати збережень.
 LiteralText,Please offer any clarification,"Будь ласка, напишіть пояснення"
 LiteralText,Please provide your feedback,"Будь ласка, напишіть свій відгук"

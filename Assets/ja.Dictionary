@@ -1844,12 +1844,12 @@ FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterNam
 FormatText,{CharacterName} has {PropertyName},{CharacterName}は{PropertyName}の状態になった
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName}は既にカルマの上限に至っている//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName}の{AttributeName}が{ModifierNumber}低下した
-FormatText,{CharacterName} has decreased life by {ModifierNumber},{CharacterName}のライフの最大値が{ModifierNumber}低下した
-FormatText,{CharacterName} has decreased mana by {ModifierNumber},{CharacterName}のマナの最大値が{ModifierNumber}低下した
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}低下した({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}低下した({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName}は何かを忘れてしまった。
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName}の{AttributeName}が{ModifierNumber}向上した
-FormatText,{CharacterName} has increased life by {ModifierNumber},{CharacterName}のライフの最大値が{ModifierNumber}向上した
-FormatText,{CharacterName} has increased mana by {ModifierNumber},{CharacterName}のマナの最大値が{ModifierNumber}向上した
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}向上した({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}向上した({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName}は{AttributeName}が足りず{ActionName}ことができない
 FormatText,{CharacterName} identified {AssetName},{CharacterName}は{AssetName}を識別した
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName}の{SpellName}の効率が向上した
@@ -3519,7 +3519,7 @@ LiteralText,place curse,呪いをかける
 LiteralText,platform,橋
 LiteralText,Play,プレーする
 LiteralText,Play a sound effect?,効果音を再生しますか？
-LiteralText,PLAYER,プレイヤー
+LiteralText,Player,プレイヤー
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,アプリを強制的に終了すると、セーブファイルが破損して修復できなくなってしまう場合がありますのでご注意ください。
 LiteralText,Please offer any clarification,どんな状況かお知らせください。
 LiteralText,Please provide your feedback,ご意見をお寄せください
