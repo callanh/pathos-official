@@ -375,6 +375,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_gunslinger);
         C.AddAvatar(Races.kobold, Genders.male, Glyphs.kobold_male_gunslinger);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_gunslinger);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_gunslinger);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_gunslinger);
         C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_gunslinger);
         C.AddFeat(5, Properties.warning);
@@ -1199,6 +1200,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_tinker);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_tinker);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_tinker);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_tinker);
         C.AddFeat(2, Properties.searching);
         C.AddFeat(10, Properties.appraisal);
         C.AddFeat(20, Properties.vitality);
