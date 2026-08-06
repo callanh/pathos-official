@@ -107,6 +107,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_barbarian);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_barbarian);
         C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_barbarian);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_barbarian);
         C.AddFeat(2, Elements.poison);
         C.AddFeat(8, Properties.quickness);
         C.AddFeat(14, Properties.stealth);
@@ -137,6 +138,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_gladiator);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_gladiator);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_gladiator);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_gladiator);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_gladiator);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_gladiator);
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_gladiator);
@@ -176,6 +178,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_bard);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_bard);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_bard);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_bard);
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_bard);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_bard);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_bard);
@@ -205,7 +208,7 @@ namespace Pathos
       caveman = AddClass(C =>
       {
         C.Name = "caveman";
-        C.Description = "Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators, and this fervour is matched in their loyalty to their kin.";
+        C.Description = "Primitive but formidable survivalists who act solely on instinct, free from societal burdens and civilised morality. They are regarded as vicious predators and this fervour is matched in their loyalty to their kin.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(14, 1.d8());
         C.ManaAdvancement.Set(1, Dice.Fixed(1));
@@ -262,6 +265,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.female, Glyphs.satyr_female_convict);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_convict);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_convict);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_convict);
         C.AddFeat(10, Properties.hunger);
         C.AddFeat(20, Properties.aggravation);
         //C.Startup.SetSkill(Qualifications.Proficient, ); // none, an entire life in a prison cell.
@@ -271,7 +275,7 @@ namespace Pathos
       explorer = AddClass(C =>
       {
         C.Name = "explorer";
-        C.Description = "Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips, and share a perplexing hatred towards serpents.";
+        C.Description = "Quintessential scientific researchers and dauntless historical investigators. Both brash and debonair, they seek out knowledge and accolades alike. They are curiously fond of whips and share a perplexing hatred towards serpents.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(11, 1.d7());
         C.ManaAdvancement.Set(1, Dice.Fixed(1));
@@ -419,6 +423,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_healer);
         C.AddAvatar(Races.changeling, Genders.male, Glyphs.changeling_male_healer);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_healer);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_healer);
         C.AddAvatar(Races.angel, Genders.female, Glyphs.angel_female_healer);
         C.AddAvatar(Races.angel, Genders.male, Glyphs.angel_male_healer);
         C.AddAvatar(Races.angel, Genders.nonbinary, Glyphs.angel_nonbinary_healer);
@@ -496,6 +501,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_jester);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_jester);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_jester);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_jester);
         C.AddAvatar(Races.orc, Genders.male, Glyphs.orc_male_jester);
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_jester);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_jester);
@@ -652,6 +658,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_mystic);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_mystic);
         C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_mystic);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_mystic);
         C.AddFeat(1, Properties.telepathy);
         C.AddFeat(2, Properties.telekinesis);
         C.AddFeat(4, Elements.fire);
@@ -709,6 +716,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_ninja);
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_ninja);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_ninja);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_ninja);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_ninja);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_ninja);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_ninja);
@@ -744,6 +752,7 @@ namespace Pathos
         C.AddAvatar(Genders.female, Glyphs.female_paladin);
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_paladin);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_paladin);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_paladin);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_paladin);
         C.AddAvatar(Races.orc, Genders.female, Glyphs.orc_female_paladin);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_paladin);
@@ -788,6 +797,7 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_pirate);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_pirate);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_pirate);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_pirate);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_pirate);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_pirate);
         C.AddFeat(1, Properties.searching);
@@ -815,7 +825,7 @@ namespace Pathos
       priest = AddClass(C =>
       {
         C.Name = "priest";
-        C.Description = "Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. They are well-versed in divine magic and the judicial delivery of violence to those they deem unworthy of salvation.";
+        C.Description = "Righteous clergymen, dedicated to a life of sacrifice and spreading the word of their almighty deities. Well-versed in divine magic and the judicial delivery of violence to those deemed unworthy of salvation.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(12, 1.d8());
         C.ManaAdvancement.Set(6, 1.d2());
@@ -837,6 +847,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_priest);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_priest);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_priest);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_priest);
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_priest);
         C.AddFeat(1, Properties.beatitude);
         C.AddFeat(8, Properties.warning);
@@ -871,6 +882,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_templar);
         C.AddAvatar(Races.elf, Genders.male, Glyphs.elf_male_templar);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_templar);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_templar);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_templar);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_templar);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_templar);
@@ -1029,6 +1041,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_rogue);
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_rogue);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_rogue);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_rogue);
         C.AddFeat(2, Properties.stealth);
         C.AddFeat(6, Properties.searching);
         C.AddFeat(10, Properties.appraisal);
@@ -1075,6 +1088,7 @@ namespace Pathos
         C.AddAvatar(Races.troll, Genders.female, Glyphs.troll_female_samurai);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_samurai);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_samurai);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_samurai);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_samurai);
         C.AddAvatar(Races.robot, Genders.female, Glyphs.robot_female_samurai);
         C.AddFeat(2, Properties.quickness);
@@ -1119,6 +1133,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_shaman);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_shaman);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_shaman);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_shaman);
         C.AddFeat(4, Elements.poison);
         C.AddFeat(10, Properties.polymorph_control);
         C.AddFeat(14, Properties.telekinesis);
@@ -1158,6 +1173,7 @@ namespace Pathos
         C.AddAvatar(Races.fairy, Genders.female, Glyphs.fairy_female_druid);
         C.AddAvatar(Races.troll, Genders.male, Glyphs.troll_male_druid);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_druid);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_druid);
         C.AddAvatar(Races.dracon, Genders.male, Glyphs.dracon_male_druid);
         C.AddAvatar(Races.dracon, Genders.female, Glyphs.dracon_female_druid);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_druid);
@@ -1201,6 +1217,7 @@ namespace Pathos
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_tinker);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_tinker);
         C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_tinker);
+        C.AddAvatar(Races.plasmoid, Genders.nonbinary, Glyphs.plasmoid_nonbinary_tinker);
         C.AddFeat(2, Properties.searching);
         C.AddFeat(10, Properties.appraisal);
         C.AddFeat(20, Properties.vitality);
@@ -1243,6 +1260,7 @@ namespace Pathos
         C.AddAvatar(Races.giant, Genders.male, Glyphs.giant_male_tourist);
         C.AddAvatar(Races.giant, Genders.female, Glyphs.giant_female_tourist);
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_tourist);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_tourist);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_tourist);
         C.AddAvatar(Races.gnome, Genders.female, Glyphs.gnome_female_tourist);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_tourist);
@@ -1315,7 +1333,7 @@ namespace Pathos
       wizard = AddClass(C =>
       {
         C.Name = "wizard";
-        C.Description = "Powerful sorcerers, lords of arcane knowledge, and vanguards of psychic warfare. They are unrivalled in their mastery of nearly all schools of magic, augmented by a wide array of mystical devices.";
+        C.Description = "Powerful sorcerers, lords of arcane knowledge and vanguards of psychic warfare. They are unrivalled in their mastery of nearly all schools of magic, augmented by a wide array of mystical devices.";
         C.Backpack = Items.Backpack;
         C.LifeAdvancement.Set(10, 1.d6());
         C.ManaAdvancement.Set(6, 1.d2());
@@ -1343,6 +1361,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_wizard);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_wizard);
         C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_wizard);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_wizard);
         C.AddFeat(8, Properties.warning);
         C.AddFeat(14, Properties.teleport_control);
         C.Startup.SetSkill(Qualifications.proficient,
@@ -1382,6 +1401,7 @@ namespace Pathos
         C.AddAvatar(Races.satyr, Genders.male, Glyphs.satyr_male_necromancer);
         C.AddAvatar(Races.lizardman, Genders.male, Glyphs.lizardman_male_necromancer);
         C.AddAvatar(Races.gnome, Genders.male, Glyphs.gnome_male_necromancer);
+        C.AddAvatar(Races.dwarf, Genders.male, Glyphs.dwarf_male_necromancer);
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_necromancer);
         C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_necromancer);
         C.SetDistribution(Attributes.intelligence, Attributes.constitution, Attributes.dexterity, Attributes.wisdom, Attributes.strength, Attributes.charisma);

@@ -304,7 +304,7 @@ namespace Pathos
 
       dwarf = AddBaseEntity(Kinds.dwarf, Races.dwarf, "dwarf", E =>
       {
-        E.Description = "Stout, short, and hardy folk. They are known for their stubbornness, metalworking, and love of alcohol.";
+        E.Description = "Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.";
         E.Glyph = Glyphs.dwarf;
         E.Level = 0;
         E.Challenge = 0;
@@ -344,7 +344,7 @@ namespace Pathos
 
       halfling = AddBaseEntity(Kinds.halfling, Races.halfling, "halfling", E =>
       {
-        E.Description = "Small folk who prefer simple lives. They are notably gregarious, and their build lends them well to less-than-noble endeavours.";
+        E.Description = "Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.";
         E.Glyph = Glyphs.halfling;
         E.Level = 0;
         E.Challenge = 0;
@@ -2589,8 +2589,8 @@ namespace Pathos
         {
           // African trypanosomiasis, also known as African sleeping sickness or simply sleeping sickness, is an insect-borne parasitic infection of humans and other animals.
           // This is usually transmitted by the bite of an infected tsetse fly.
-          // Initially, the first stage of the disease is characterized by fevers, headaches, itchiness, and joint pains, beginning one to three weeks after the bite.
-          // TODO: Weeks to months later the second stage begins with confusion, poor coordination, numbness, and _trouble sleeping_.
+          // Initially, the first stage of the disease is characterized by fevers, headaches, itchiness and joint pains, beginning one to three weeks after the bite.
+          // TODO: Weeks to months later the second stage begins with confusion, poor coordination, numbness and _trouble sleeping_.
           K.Apply.ApplyTransient(Properties.sleeping, 1.d3());
         });
         E.Conveyance.WhenChance(Chance.OneIn2, T => T.WhenProbability(Table =>
@@ -3039,7 +3039,7 @@ namespace Pathos
 
       nightgaunt = AddEntity(Kinds.bat, null, "nightgaunt", E =>
       {
-        //E.Description = "they are humanoid, thin, black, and faceless. Their skin is slick and rubbery. They have a pair of inward-facing horns on their heads, clawed hands and a long barbed tail. They can fly using a set of membranous wings. They make no sound.";
+        //E.Description = "they are humanoid, thin, black and faceless. Their skin is slick and rubbery. They have a pair of inward-facing horns on their heads, clawed hands and a long barbed tail. They can fly using a set of membranous wings. They make no sound.";
         E.Glyph = Glyphs.nightgaunt;
         //E.Sonic = Sonics.chirp;
         E.Level = 27;
@@ -10313,7 +10313,7 @@ namespace Pathos
       // Lovecraftian.
       deep_one = AddEntity(Kinds.marine, null, "deep one", E =>
       {
-        //E.Description = "They are intelligent ocean-dwelling creatures, and are fishy/froggy humanoids in appearance.";
+        //E.Description = "They are intelligent ocean-dwelling creatures and are fishy/froggy humanoids in appearance.";
         E.Glyph = Glyphs.deep_one;
         E.Sonic = Sonics.cackle;
         E.Level = 16;
@@ -34373,7 +34373,7 @@ namespace Pathos
 
       gug = AddEntity(Kinds.zombie, null, "gug", E =>
       {
-        //E.Description = "Gugs are large, black-furred beasts with vertically-opening fanged jaws. Their two eyes protrude from either side of their head, and their limbs bifurcate at the elbows, giving them four separate forearms. They are worshippers of the Great Ones, the gods of Earth who reside in Kadath. Gugs are estimated to reach around sixteen feet in heights and weigh in at nearly 2,000 pounds.";
+        //E.Description = "Gugs are large, black-furred beasts with vertically-opening fanged jaws. Their two eyes protrude from either side of their head and their limbs bifurcate at the elbows, giving them four separate forearms. They are worshippers of the Great Ones, the gods of Earth who reside in Kadath. Gugs are estimated to reach around sixteen feet in heights and weigh in at nearly 2,000 pounds.";
         E.Glyph = Glyphs.gug;
         E.Sonic = Sonics.groan;
         E.Level = 21;

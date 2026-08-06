@@ -73,7 +73,7 @@ namespace Pathos
         });
       }
 
-      // all shops see the value in gems, and will buy/trade them from you.
+      // all shops see the value in gems and will buy/trade them from you.
 
       //local_butcher = AddShop("local butcher", Glyphs.food_stock, 5,
       //  () => new[] { Stocks.food, Stocks.gem },

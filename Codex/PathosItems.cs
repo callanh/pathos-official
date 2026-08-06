@@ -4410,7 +4410,7 @@ namespace Pathos
 
       banana = AddFood("banana", I =>
       {
-        I.Description = "A curved yellow fruit, and a great source of fibre.";
+        I.Description = "A curved yellow fruit and a great source of fibre.";
         I.Glyph = Glyphs.banana;
         I.Sonic = Sonics.food;
         I.Series = null;
@@ -10712,7 +10712,7 @@ namespace Pathos
 
       dwarvish_mattock = AddMeleeWeapon("dwarvish mattock", I =>
       {
-        I.Description = "This tool is used for digging and chopping, similar to the pick-axe. It has a long handle, and a stout head, which combines an axe blade and an adze. It can also be used as an effective melee weapon.";
+        I.Description = "This tool is used for digging and chopping, similar to the pick-axe. It has a long handle and a stout head, which combines an axe blade and an adze. It can also be used as an effective melee weapon.";
         I.SetAppearance("broad pick", null);
         I.Glyph = Glyphs.dwarvish_mattock;
         I.Sonic = Sonics.weapon;
@@ -10828,7 +10828,7 @@ namespace Pathos
         I.AddDiscoverUse(Motions.zap, Delay.FromTurns(10), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.boost, Dice.Zero);
-          Use.Apply.ApplyTransient(Properties.phasing, Dice.Three); // one turn to cast, one turn to phase, and then can exit the door.
+          Use.Apply.ApplyTransient(Properties.phasing, Dice.Three); // one turn to cast, one turn to phase and then can exit the door.
           Use.Consume();
         });
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
@@ -12375,7 +12375,7 @@ namespace Pathos
 
       billguisarme = AddReachWeapon("bill-guisarme", I =>
       {
-        I.Description = "This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head, and also a hook or spike mounted on the reverse side of the blade.";
+        I.Description = "This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head and also a hook or spike mounted on the reverse side of the blade.";
         I.SetAppearance("hooked polearm", null);
         I.Glyph = Glyphs.billguisarme;
         I.Sonic = Sonics.weapon;
@@ -13368,7 +13368,7 @@ namespace Pathos
 
       long_sword = AddMeleeWeapon("long sword", I =>
       {
-        I.Description = "A straight, double-edged, and often cruciform blade.";
+        I.Description = "A straight, double-edged and often cruciform blade.";
         I.Glyph = Glyphs.long_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;

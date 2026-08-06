@@ -854,17 +854,36 @@ namespace Pathos
     public readonly Glyph dracon_female_druid;
 
     // dwarf.
+    public readonly Glyph dwarf_male_barbarian;
+    public readonly Glyph dwarf_male_bard;
     public readonly Glyph dwarf_male_caveman;
+    public readonly Glyph dwarf_male_convict;
+    public readonly Glyph dwarf_male_druid;
     public readonly Glyph dwarf_male_explorer;
+    public readonly Glyph dwarf_male_gladiator;
     public readonly Glyph dwarf_male_gunslinger;
+    public readonly Glyph dwarf_male_healer;
     public readonly Glyph dwarf_male_hunter;
+    public readonly Glyph dwarf_male_jester;
     public readonly Glyph dwarf_male_knight;
     public readonly Glyph dwarf_male_miner;
     public readonly Glyph dwarf_male_monk;
+    public readonly Glyph dwarf_male_mystic;
+    public readonly Glyph dwarf_male_necromancer;
+    public readonly Glyph dwarf_male_ninja;
+    public readonly Glyph dwarf_male_paladin;
+    public readonly Glyph dwarf_male_pirate;
+    public readonly Glyph dwarf_male_priest;
     public readonly Glyph dwarf_male_ranger;
     public readonly Glyph dwarf_male_reaver;
+    public readonly Glyph dwarf_male_rogue;
+    public readonly Glyph dwarf_male_samurai;
+    public readonly Glyph dwarf_male_shaman;
+    public readonly Glyph dwarf_male_templar;
     public readonly Glyph dwarf_male_tinker;
+    public readonly Glyph dwarf_male_tourist;
     public readonly Glyph dwarf_male_valkyrie;
+    public readonly Glyph dwarf_male_wizard;
 
     public readonly Glyph dwarf_female_caveman;
     public readonly Glyph dwarf_female_explorer;
@@ -1126,6 +1145,9 @@ namespace Pathos
     public readonly Glyph orc_female_samurai;
     public readonly Glyph orc_female_shaman;
     public readonly Glyph orc_female_wizard;
+
+    // plasmoid.
+    public readonly Glyph plasmoid_nonbinary_tinker;
 
     // changeling.
     public readonly Glyph changeling_male_healer;

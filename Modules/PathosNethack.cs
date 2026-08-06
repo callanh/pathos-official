@@ -461,7 +461,7 @@ namespace Pathos
                 break;
 
               case AttractionType.Shop:
-                var ShopRoomSize = 1.d4() + 4; // 5..8 - minimum 5 is important because the merchant is always on the midpoint, and this prevents the merchant generating on the edge of a room.
+                var ShopRoomSize = 1.d4() + 4; // 5..8 - minimum 5 is important because the merchant is always on the midpoint and this prevents the merchant generating on the edge of a room.
                 var ShopWidth = ShopRoomSize.Roll();
                 var ShopHeight = ShopRoomSize.Roll();
                 var ShopLeft = BoxLeft + 1.d(BoxSize - ShopWidth).Roll();
