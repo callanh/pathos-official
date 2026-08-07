@@ -1133,8 +1133,8 @@ namespace Pathos
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.beatitude, Properties.displacement);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.lightning_bolt);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d10()); // +5 from str.
-        E.AddAttack(AttackTypes.weapon, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 4.d4()); // +5 from str.
+        E.AddAttack(AttackTypes.spell, Elements.physical, 4.d4(), K =>
         {
           K.Apply.ApplyTransient(Properties.stunned, 1.d4());
         });
@@ -1184,9 +1184,11 @@ namespace Pathos
         E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.flight, Properties.reflection, Properties.beatitude, Properties.displacement);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.Startup.AddGrimoire(Dice.Fixed(3), Spells.magic_missile, Spells.sleep, Spells.force_bolt);
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 2.d4()); // +4 from str.
-        E.AddAttack(AttackTypes.weapon, Elements.physical, 5.d4());
-        E.AddAttack(AttackTypes.spell, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d4()); // +4 from str.
+        E.AddAttack(AttackTypes.spell, Elements.physical, 3.d4(), K =>
+        {
+          K.Apply.ApplyTransient(Properties.confusion, 1.d4());
+        });
         E.SetCorpse(Chance.Never);
       });
 
@@ -1232,7 +1234,6 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.Fixed(2), Spells.magic_missile, Spells.sleep);
         E.Startup.SetResistance(Elements.cold, Elements.shock, Elements.poison, Elements.sleep);
         E.AddAttack(AttackTypes.weapon, Elements.fire, 2.d4()); // +3 from str.
-        E.AddAttack(AttackTypes.weapon, Elements.fire, 2.d4());
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
         E.SetCorpse(Chance.Never);
       });

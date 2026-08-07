@@ -2678,7 +2678,7 @@ namespace Pathos
       {
         this.AtticTemplateList = [];
 
-        using (var TemplateReader = new System.IO.StringReader(Resources.LoadSpecial("Attics")))
+        using (var TemplateReader = new System.IO.StringReader(ModuleResources.LoadSpecial("Attics")))
         {
           var AtticBuilder = new StringBuilder();
 
@@ -2715,7 +2715,7 @@ namespace Pathos
 
         var IdentitySet = new HashSet<string>();
 
-        using (var TemplateReader = new System.IO.StringReader(Resources.LoadSpecial("SixBy6")))
+        using (var TemplateReader = new System.IO.StringReader(ModuleResources.LoadSpecial("SixBy6")))
         {
           var Name = TemplateReader.ReadLine();
 
@@ -2844,7 +2844,7 @@ namespace Pathos
       var SiteName = NethackTerms.Mines;
       var MinesSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(SiteName));
 
-      var TownGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Town.Resource));
+      var TownGrid = Generator.LoadSpecialGrid(ModuleResources.LoadSpecial(Town.Resource));
 
       // rotate 0-3 times (0/90/180/270 degrees).
       for (var Index = 0; Index < (1.d4() - 1).Roll(); Index++)
@@ -3275,7 +3275,7 @@ namespace Pathos
           return false;
         }
 
-        var MinesGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Level.Special));
+        var MinesGrid = Generator.LoadSpecialGrid(ModuleResources.LoadSpecial(Level.Special));
 
         // rotate 0-3 times (0/90/180/270 degrees).
         for (var Index = 0; Index < (1.d4() - 1).Roll(); Index++)
@@ -3577,7 +3577,7 @@ namespace Pathos
       if (Inv.Assert.IsEnabled)
         Inv.Assert.CheckNotNull(NextLevelSquare, nameof(NextLevelSquare));
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Underdeep").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Underdeep").GetBuffer());
 
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
@@ -3721,7 +3721,7 @@ namespace Pathos
 
       var ChambersSite = Generator.Adventure.World.AddSite(Generator.EscapedModuleTerm(NethackTerms.Lost_Chambers));
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Chambers").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Chambers").GetBuffer());
 
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
@@ -4131,7 +4131,7 @@ namespace Pathos
       {
         var SpecialOption = SpecialLevel.OptionArray.GetRandom();
 
-        var SpecialGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial(SpecialOption));
+        var SpecialGrid = Generator.LoadSpecialGrid(ModuleResources.LoadSpecial(SpecialOption));
 
         var LevelMapName = Generator.EscapedModuleTerm(NethackTerms.Sokoban) + " " + SpecialLevel.Number;
         if (Generator.Adventure.World.HasMap(LevelMapName))
@@ -4396,11 +4396,11 @@ namespace Pathos
 
       var FortArray = new[]
       {
-        Resources.LoadSpecial("Fort Ludios 1"),
-        Resources.LoadSpecial("Fort Ludios 2"),
-        Resources.LoadSpecial("Fort Ludios 3"),
-        Resources.LoadSpecial("Fort Ludios 4"),
-        Resources.LoadSpecial("Fort Ludios 5")
+        ModuleResources.LoadSpecial("Fort Ludios 1"),
+        ModuleResources.LoadSpecial("Fort Ludios 2"),
+        ModuleResources.LoadSpecial("Fort Ludios 3"),
+        ModuleResources.LoadSpecial("Fort Ludios 4"),
+        ModuleResources.LoadSpecial("Fort Ludios 5")
       };
 
       var FortGrid = Generator.LoadSpecialGrid(FortArray.GetRandom());
@@ -4672,7 +4672,7 @@ namespace Pathos
       CacheMap.SetAtmosphere(Codex.Atmospheres.civilisation);
 
       var CacheLevel = FortSite.AddLevel(2, CacheMap);
-      var CacheGrid = Generator.LoadSpecialGrid(Resources.LoadSpecial("Fort Ludios Cache"));
+      var CacheGrid = Generator.LoadSpecialGrid(ModuleResources.LoadSpecial("Fort Ludios Cache"));
 
       for (var Row = 0; Row < CacheHeight; Row++)
       {
@@ -4813,7 +4813,7 @@ namespace Pathos
       //StandardGeneration = false;
 #endif
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest(StandardGeneration ? "Kingdom1" : "Kingdom2").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest(StandardGeneration ? "Kingdom1" : "Kingdom2").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5113,7 +5113,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Medusa_Lair)))
         return false;
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Lair").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Lair").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5269,7 +5269,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Black_Market)))
         return false;
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Market").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Market").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5390,7 +5390,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Lich_Tower)))
         return false;
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Tower").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Tower").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5515,7 +5515,7 @@ namespace Pathos
       if (Generator.Adventure.World.HasSite(Generator.EscapedModuleTerm(NethackTerms.Abyss)))
         return false;
 
-      var Quest = Generator.ImportQuest(Resources.LoadQuest("Abyss").GetBuffer());
+      var Quest = Generator.ImportQuest(ModuleResources.LoadQuest("Abyss").GetBuffer());
       var QuestSite = Quest.World.Sites.Single();
       var QuestStart = Quest.World.Start;
 
@@ -5684,7 +5684,7 @@ namespace Pathos
 
       var Secret = SecretArray.GetRandom();
 
-      var Grid = Generator.LoadSpecialGrid(Resources.LoadSpecial(Secret.Grid));
+      var Grid = Generator.LoadSpecialGrid(ModuleResources.LoadSpecial(Secret.Grid));
 
       return false;
     }

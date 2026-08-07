@@ -887,6 +887,7 @@ namespace Pathos
         C.AddAvatar(Races.robot, Genders.male, Glyphs.robot_male_templar);
         C.AddAvatar(Races.minotaur, Genders.male, Glyphs.minotaur_male_templar);
         C.AddAvatar(Races.echo, Genders.male, Glyphs.echo_male_templar);
+        C.AddAvatar(Races.kobold, Genders.male, Glyphs.kobold_male_templar);
         C.AddFeat(4, Properties.see_invisible);
         C.AddFeat(8, Elements.sleep);
         C.AddFeat(12, Properties.free_action);

@@ -1,14 +1,13 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using Inv.Support;
 
 namespace Pathos
 {
-  internal static class Resources
+  internal sealed class ModuleResources
   {
-    static Resources()
+    static ModuleResources()
     {
       ResourceAssembly = System.Reflection.Assembly.GetExecutingAssembly();
     }
