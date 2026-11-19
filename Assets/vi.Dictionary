@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Nọc độc chết người đang chảy trong người bạn.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,Nọc độc chết người đang chảy trong người bạn.
 AfflictionDescription,Something deeply unsettling is happening... down there.,Có một cái gì đó rất đáng lo ngại đang xảy ra... dưới đó.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Có một cảm giác gặm nhấm sâu bên trong bụng của bạn.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Căn bệnh do virus này làm bạn bị viêm não và được lây lan bởi những con vật bị nhiễm bệnh.
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,Áo choàng mithril chất lượng cao
 AppearanceName,fizzy potion,Lọ thuốc sùi bọt
 AppearanceName,flute,Cây sáo
 AppearanceName,forked polearm,Sào 2 lưỡi
+AppearanceName,frayed cloth,Mảnh vải
 AppearanceName,fur boots,Ủng lông thú
 AppearanceName,fuzzy book,Quyển sách bị mờ
 AppearanceName,glass orb,Nhãn cầu kính
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,Quyển sách giấy cói
 AppearanceName,parchment book,Quyển sách giấy da
 AppearanceName,pearl earrings,Đôi khuyên tai ngọc trai
 AppearanceName,pearl ring,Nhẫn ngọc trai
-AppearanceName,piece of cloth,Mảnh vải
 AppearanceName,pink book,Quyển sách màu hồng
 AppearanceName,pink potion,Lọ thuốc màu hồng
 AppearanceName,plaid book,Quyển sách kẻ sọc
@@ -549,8 +587,10 @@ BoonName,undead army,đội quân thây ma
 BoonName,unicorn friend,bạn kỳ lân
 CalendarText,d MMMM yyyy,d MMMM yyyy
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
+CharacterName,Armax,
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arrom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belietha
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brouwer
+CharacterName,Busko,
 CharacterName,Cailie,Cailie
 CharacterName,Capo,Capo
 CharacterName,Carthyre,Carthyre
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Crepsal
 CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
+CharacterName,Dastrne,
 CharacterName,Davicohr,Davicohr
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,Donneller
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Ericendrick
 CharacterName,Eybrinde,Eybrinde
 CharacterName,Faraze,Faraze
+CharacterName,Farleen,
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenraymond
+CharacterName,Fizzit,
 CharacterName,Floki,Floki
 CharacterName,Forro,Forro
 CharacterName,Franzia,Franzia
@@ -591,15 +637,20 @@ CharacterName,Galday,Galday
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Gleichman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomack
 CharacterName,Grytt,Grytt
 CharacterName,Haelom,Haelom
 CharacterName,Haique,Haique
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,Haquian
 CharacterName,Hendrick,Hendrick
 CharacterName,Hough,Hough
+CharacterName,Hylatia,
 CharacterName,Illitasha,Illitasha
+CharacterName,Iralna,
 CharacterName,Ishgood,Ishgood
 CharacterName,Istophe,Istophe
 CharacterName,Isylav,Isylav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Javarl
 CharacterName,Jayenason,Jayenason
 CharacterName,Jeem,Jeem
 CharacterName,Jessera,Jessera
+CharacterName,Jevard,
 CharacterName,Jonat,Jonat
+CharacterName,Karasque,
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kennold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagratha
 CharacterName,Lanetwalz,Lanetwalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Lesha
+CharacterName,Liloquy,
 CharacterName,Luickean,Luickean
+CharacterName,Lunch,
 CharacterName,Lzay,Lzay
 CharacterName,Malasuth,Malasuth
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melchai
 CharacterName,Meloty,Meloty
+CharacterName,Mili,
 CharacterName,Miller,Miller
 CharacterName,Misteph,Misteph
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,Nichaeltoy
 CharacterName,Ninerma,Ninerma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Ninny
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,
 CharacterName,Okennwood,Okennwood
 CharacterName,Ollac,Ollac
 CharacterName,Omdarro,Omdarro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oscae
+CharacterName,Ovira,
 CharacterName,Paltrick,Paltrick
 CharacterName,Pauwinner,Pauwinner
 CharacterName,Penevieve,Penevieve
@@ -653,13 +713,17 @@ CharacterName,Quarah,Quarah
 CharacterName,Quibb,Quibb
 CharacterName,Quizchak,Quizchak
 CharacterName,Quohnrupley,Quohnrupley
+CharacterName,Rake,
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugarr
 CharacterName,Razz,Razz
 CharacterName,Rebenna,Rebenna
+CharacterName,Relinsarn,
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokiju
 CharacterName,Rupley,Rupley
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,Sarlia
 CharacterName,Shinaas,Shinaas
 CharacterName,Smither,Smither
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stewite
 CharacterName,Sully,Sully
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanyacka
+CharacterName,Tempus,
 CharacterName,Thakuline,Thakuline
 CharacterName,Threepo,Threepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,
 CharacterName,Trank,Trank
+CharacterName,Uballon,
 CharacterName,Udfoot,Udfoot
 CharacterName,Uffle,Uffle
 CharacterName,Ujopayne,Ujopayne
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethome
 CharacterName,Viophie,Viophie
 CharacterName,Vorzian,Vorzian
+CharacterName,Waldrin,
 CharacterName,Wallison,Wallison
 CharacterName,Waltis,Waltis
 CharacterName,Walzen,Walzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Xank
 CharacterName,Xantari,Xantari
 CharacterName,Xarrung,Xarrung
 CharacterName,Xiolet,Xiolet
+CharacterName,Yahoa,
 CharacterName,Yarromdee,Yarromdee
 CharacterName,Yassage,Yassage
 CharacterName,Yorque,Yorque
 CharacterName,Yral,Yral
 CharacterName,Yuvaloren,Yuvaloren
+CharacterName,Zarja,
 CharacterName,Zean,Zean
 CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,
 CharacterName,Zultry,Zultry
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Sau nhiều năm tu luyện gian khổ, những nhà tiên tri đã sẵn sàng đi khám phá thế giới bao la. Làm chủ được tâm trí của mình, trí lực của họ hoàn toàn là thứ sức mạnh đáng gờm."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Những kẻ chăm sóc tốt bụng, luôn luôn cố gắng giúp đỡ những kẻ yếu. Thành thạo trong việc điều trị các loại bệnh, họ luôn mẫu mực trong vệ sinh cá nhân và sạch sẽ để giúp đỡ trong việc điều trị. Cũng chính vì thế mà họ phải dựa vào những đồng đội khác để sống sót."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,Hoàn toàn khá
 ElementDescription,Complete resistance to life and mana draining effects.,Hoàn toàn kháng hiệu ứng hút sinh lực và ma pháp.
 ElementDescription,Complete resistance to petrification effects.,Hoàn toàn kháng hiệu ứng hóa đá.
 ElementDescription,Complete resistance to poison damage.,Hoàn toàn kháng độc.
-ElementDescription,Protects you against pure magical effects.,Bảo vệ bạn khỏi hiệu ứng ma thuật tinh khiết.
-ElementDescription,You resist attempts to render you into a magical slumber.,Bạn cố gắng thoát khỏi giấc ngủ ma thuật.
+ElementDescription,Complete resistance to purely magical damage and effects.,Bảo vệ bạn khỏi hiệu ứng ma thuật tinh khiết.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,Bạn cố gắng thoát khỏi giấc ngủ ma thuật.
 ElementName,acid,axít
 ElementName,cold,lạnh
 ElementName,digging,đào
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,bị stress
 EncumbranceName,unencumbered,thoải mái
 EngulfmentName,engulfed,bị dìm
 EngulfmentName,swallowed,bị nuốt chửng
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Một loài sinh vật cỡ vừa với dã tâm lớn, tuổi thọ ngắn nhưng có ở khắp nơi; đừng đánh giá thấp chúng."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Những sinh vật vô định hình không có hình dạng điển hình nhưng thường có dạng hình người nhìn mờ nhạt. Mặc dù không thể nhầm lẫn với bất kỳ thứ gì khác ngoài các chất lỏng plasma giống như huyết tương, nhưng dạng này cho phép sử dụng quần áo và dụng cụ."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Một chủng tộc cổ xưa ở ẩn ở nơi cao chót vót. Kích thước khủng bố giúp chúng có sức mạnh rất lớn, được bổ sung với chế độ ăn toàn thịt và khoáng chất."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Những thực thể thần thánh, là vỏ bọc cho những linh hồn bất khuất của những nhà thám hiểm. Chúng không có mục tiêu, luôn sẵn lòng cho mượn lấy cơ thể của mình; đối với những nhà thám hiểm đã chết, đây chính là cơ hội thứ hai để trả thù hoặc chuộc lỗi. Được tạo ra từ vật chất thiên thạch, chúng rất mỏng, trong suốt và có thể bay lượn tự do xuyên qua vật chất."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Xinh đẹp, những thực thể siêu nhiên này nổi bật với đặc điểm như vầng hào quang hay cánh lông vũ. Rất hòa hợp với cuộc chiến giữa cái thiện và cái ác, họ có thể cảm nhận được tính thánh hóa của mọi vật họ chạm vào."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,Hãy coi chừng cỗ máy của chiến tranh.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"Những cỗ máy 2 chân tự động với trí tuệ nhân tạo gần như vô song. Được vận hành bởi một bộ lõi kim loại lỏng và cần nguồn cung cấp kim loại thô liên tục, chúng dễ bị tổn thương bởi sát thương từ nước."
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Những sinh vật thần tiên, được kết nối bởi linh hồn thiên nhiên mạnh mẽ để tiếp nối những trò hề của họ. Cơ thể chắc nịch, phần dưới có lông, có móng vuốt giống loài dê và sừng xoắn ốc giống loài cừu. Dâm tục và thông minh, họ vui vẻ dẫn dắt những tù nhân của sự khoái lạc vào việc uống, nhảy múa và đánh nhau."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Với vẻ ngoài oai nghiêm cường hoá bởi thân hình cứng cáp, chúng có nét tương đồng với tộc người rồng với cái mõm, da vảy và bộ cánh."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","To lớn, những người bò sát ăn thịt mà tổ tiên của họ đã từng thống trị thế giới trước khi nền văn minh ra đời. Họ là những sát thủ ăn thịt đáng sợ, có thể nhảy vọt với khoảng cách rất xa và chống lại rất nhiều đòn tấn công với vảy cứng của họ."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Thứ sinh vật quái quỷ với cái đầu và đuôi của con bò lai với thân hình của con người.
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Những sinh vật biến thái lầm lạc nhưng luôn có màu da đỏ thắm và mọc sừng. Sự xuất hiện của chúng khiến tất cả bộc lộ những tham vọng, trụy lạc đen tối và bạo lực nhất."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Giống loài người khổng lồ ăn thịt đói khát, với cục bướu to khiến cho bàn tay của họ bị kéo lê trên mặt đất. Mặc dù ngoại hình kì lạ, họ cực kỉ khỏe mạnh và nổi tiếng nhờ khả năng hồi phục mọi vết thương vào da dẻo dai của họ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Giống loài biến hình lệch lạc, sống nhờ vào tài năng lừa dối của chúng."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"Những cư dân nhỏ bé, những người ưa chuộng cuộc sống đơn giản. Họ thường sống theo cộng đồng, và sự đoàn kết của họ rất hiệu quả trong việc chống lại những hành vi xấu xa."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Những sinh vật siêu nhiên yêu chuộng thiên thiên và ma thuật. Họ rất giống với con người về vẻ ngoài, nhưng thường nhỏ bé và nhanh hơn."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","Béo, lùn và cứng cáp. Họ nổi tiếng với trí khôn ngu dốt của họ, kĩ nghệ kim loại, và tình yêu với rượu."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Những con người sống dưới lòng đất với chiều cao thấp bé, rất yêu thích kĩ thuật chế tạo và ma thuật. Tiến hóa để sống một cách tiết kiệm, sự trao đổi chất của họ rất thích hợp cho những chuyến phiêu lưu dài khi thức ăn vô cùng hạn hẹp."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","Một loại hợp tử sắt yếu hơn, pudding màu nâu được cho là có vị giống với sữa thối hơn là bánh sô cô la. Pudding ăn khi tiếp xúc với vải và da của mọi loài nhưng nó nổi tiếng với cách tái tạo của nó. Khi tiếp xúc với sắt, sự trục phân sẽ diễn ra, tạo ra hai cá thể con. Nhờ việc sắt có ở khắp nơi, đặc biệt là từ các thám hiểm gia, dân số của sinh vật này ngày càng tăng lên nhanh chóng."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Xác ướp này được tạo ra bằng cách nhúng xác người chết vào trong mật ong. Bằng cách nào đó được tái sinh bởi một hội nhóm nhà sư kín, con quái vật này vừa nguy hiểm, song cũng thật ngon."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Khối cầu dung dịch ăn mòn kì lạ này trông có vẻ vô hại.
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Những linh hồn có cánh nhỏ bé, được truyền ma thuật từ cha mẹ và vô cùng xinh đẹp. Khi gặp nguy hiểm, chúng có thể chạy trốn qua sự méo mó của không gian thực."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Những người sống sót du mục giống như những con rùa rời khỏi nơi sinh của họ, ngay từ khi họ có thể đi bộ, để đi du lịch khắp thế giới với sự thoải mái và bảo vệ của ngôi nhà trên lưng."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Những sinh vật xấu xí, thú tính với tập tính ăn thịt đồng loại; Chủng tộc hiếu chiến này được biết đến với sức mạnh phi thường và trí thông minh ngu dốt đến đần độn của chúng."
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,rồng con bạc
 EntityName,baby white dragon,rồng con trắng
 EntityName,baby yellow dragon,rồng con vàng
 EntityName,bad egg,trứng thối
-EntityName,balrog,quỷ balrog
 EntityName,baluchitherium,tê giác cổ
 EntityName,banshee,quỷ báo tử
 EntityName,bar-lgura,quỷ bar-lgura
@@ -1175,6 +1277,7 @@ EntityName,dao,rồng thần
 EntityName,dark cleric,hắc linh mục
 EntityName,Death,Cái Chết
 EntityName,death dog,quỷ chó 2 đầu
+EntityName,decinder,quỷ decinder
 EntityName,deep gnome,thần lùn xanh đậm
 EntityName,deep one,deep one
 EntityName,deeper one,deeper one
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,người song trùng
 EntityName,dracolich,rồng vu yêu
 EntityName,dracon,dracon
 EntityName,dragon king,vua rồng
+EntityName,dread wraith,ma nhẫn
 EntityName,dretch,tiểu quỷ lợn
 EntityName,drow,tiểu quỷ hắc ám
 EntityName,dryad,thần rừng
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,xác ướp người lùn
 EntityName,dwarf thief,trộm người lùn
 EntityName,dwarf warrior,chiến binh người lùn
 EntityName,dwarf zombie,thây ma người lùn
-EntityName,Earendil,Earendil
 EntityName,earth binder,người đóng sách hệ thổ
 EntityName,earth elemental,nguyên tố thổ
 EntityName,earth maker,ma thuật sư hệ thổ
@@ -1227,7 +1330,6 @@ EntityName,elf king,vua elf
 EntityName,elf lord,lãnh chúa elf
 EntityName,elf mummy,xác ướp elf
 EntityName,elf zombie,thây ma elf
-EntityName,Elwing,Elwing
 EntityName,embalmer,người ướp xác
 EntityName,emerald golem,golem lục bảo
 EntityName,energy vortex,cuộn xoáy năng lượng
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,thây ma ettin
 EntityName,exterminator,kẻ hủy diệt
 EntityName,fairy,tinh linh
 EntityName,Famine,Nạn Đói
+EntityName,Farwander,Farwander
 EntityName,Father Dagon,Cha xứ Dagon
 EntityName,fiend,quỷ dữ
 EntityName,fire ant,kiến lửa
@@ -1274,6 +1377,7 @@ EntityName,ghost,ma
 EntityName,ghoul,quỷ ăn thịt
 EntityName,ghoul mage,quỷ ăn thịt pháp sư
 EntityName,ghoul queen,quỷ ăn thịt nữ hoàng
+EntityName,Ghuyaxil,Ghuyaxil
 EntityName,giant,người khổng lồ
 EntityName,giant ant,kiến khổng lồ
 EntityName,giant badger,lửng khổng lồ
@@ -1380,9 +1484,9 @@ EntityName,jackal,chó rừng
 EntityName,jackalwere,ma chó rừng
 EntityName,jaguar,báo đốm
 EntityName,jellyfish,sứa
+EntityName,Jharothy,Jharothy
 EntityName,jiggling blob,bãi lung lay
 EntityName,juggernaut,kẻ hành quyết
-EntityName,Juiblex,Juiblex
 EntityName,juvenile raven,quạ con
 EntityName,Kaloi Thrym,Chúa tể bóng tối
 EntityName,kamadan,kamadan
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,thây ma kobold
 EntityName,komodo dragon,rồng komodo
 EntityName,kraken,kraken
 EntityName,lamb,cừu non
-EntityName,Lareth,Lareth
 EntityName,large cat,mèo lớn
 EntityName,large dingo,chó dingo lớn
 EntityName,large dog,chó lớn
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,người thằn lằn thủ lĩnh
 EntityName,lizardman mage,người thằn lằn pháp sư
 EntityName,lizardman shaman,người thằn lằn thầy cúng
 EntityName,lizardman warrior,người thằn lằn chiến binh
-EntityName,Lolth,Lolth
 EntityName,long worm,giun dài
 EntityName,long worm tail,đuôi giun dài
 EntityName,Lord Carnarvon,Lãnh chúa Carnarvon
@@ -1481,7 +1583,6 @@ EntityName,mumak,voi mumak
 EntityName,nabassu,nabassu
 EntityName,nalfeshnee,nalfeshnee
 EntityName,Nalzok,Nalzok
-EntityName,nazgul,ma nhẫn
 EntityName,neanderthal,người neanderthal
 EntityName,Neferet,Neferet the Green
 EntityName,newt,cá cóc
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,nupperibo
 EntityName,nurse,y tá
 EntityName,occultist,pháp sư thần bí
 EntityName,ochre jelly,thạch màu đất son
+EntityName,Oeziblegh,Oeziblegh
 EntityName,ogre,quái nhân
 EntityName,ogre king,vua quái nhân
 EntityName,ogre lord,lãnh chúa quái nhân
 EntityName,ogre mage,pháp sư quái nhân
+EntityName,Oleyth,Oleyth
 EntityName,olog-hai,olog-hai
 EntityName,Oracle,Oracle
 EntityName,orange jelly,thạch màu cam
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,orc chiến binh
 EntityName,orc zombie,orc thây ma
 EntityName,Orcus,Orcus
 EntityName,Orion,Orion
+EntityName,Orvalth,Orvalth
 EntityName,owlbear,cú gấu
 EntityName,pack rat,chuột đuôi rậm
 EntityName,page,kị sĩ
@@ -1550,6 +1654,7 @@ EntityName,rabbit,thỏ
 EntityName,rabid rabbit,thỏ điên dại
 EntityName,rabid rat,chuột điên dại
 EntityName,rabid wolf,sói điên dại
+EntityName,Raedilan,Raedilan
 EntityName,rancid jelly,thạch ôi thiu
 EntityName,rat king,vua chuột
 EntityName,ratwere,ma chuột
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,golem hồng ngọc
 EntityName,rust monster,quái vật gỉ
 EntityName,rutterkin,rutterkin
 EntityName,sabre-toothed cat,mèo nanh rắn
+EntityName,Sairou,Sairou
 EntityName,salamander,kỳ nhông
 EntityName,sandestin,sandestin
 EntityName,sapphire golem,golem lam ngọc
@@ -1629,8 +1735,7 @@ EntityName,student,học sinh
 EntityName,succubus,succubus
 EntityName,swamp kobold,kobold đầm lầy
 EntityName,tengu,thiên cẩu
-EntityName,Thorin,Thorin
-EntityName,Thoth Amon,Thoth Amon
+EntityName,Tholmak,Tholmak
 EntityName,thug,du côn
 EntityName,tiger,hổ
 EntityName,tigerwere,ma cọp
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,xác ướp troll
 EntityName,tsetse fly,ruồi xê xê
 EntityName,tunnel worm,giun đào đá
 EntityName,two-headed troll,troll 2 đầu
-EntityName,Twoflower,Twoflower
 EntityName,umber hulk,hulk nâu đất
 EntityName,undead slayer,thợ săn thây ma
 EntityName,vampire,ma cà rồng
@@ -1656,7 +1760,7 @@ EntityName,vampire king,vua ma cà rồng
 EntityName,vampire lord,lãnh chúa ma cà rồng
 EntityName,vampire mage,pháp sư ma cà rồng
 EntityName,Van Helsing,Van Helsing
-EntityName,Vecna,Vecna
+EntityName,Vercrux,Vercrux
 EntityName,violet fungus,nấm màu tím
 EntityName,vorpal jabberwock,vorpal jabberwock
 EntityName,vrock,vrock
@@ -1703,7 +1807,6 @@ EntityName,wumpus,wumpus
 EntityName,wyvern,wyvern
 EntityName,xan,xan
 EntityName,xorn,xorn
-EntityName,Yeenoghu,Yeenoghu
 EntityName,yellow jacket,ong bắp cày
 EntityName,yellow jelly,thạch màu vàng
 EntityName,yellow light,ánh sáng vàng
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} bị hủy bỏ
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} bị ảnh hưởng bởi {ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} bị phá hủy bởi {ElementName}
 FormatText,{AssetName} was disintegrated,{AssetName} đã bị tan rã
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} chặt đầu {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} dọa {Defender:CharacterName} sợ đến chết
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} đã giết {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} hối hận về những gì đã xảy ra với {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} biến {Defender:CharacterName} thành kẻ thù!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} trở thành kẻ thù với {Defender:CharacterName}
-FormatText,{Base} in {Range},{Base} trong {Range}
 FormatText,{BeamName} beam,tia {BeamName}
 FormatText,{BlockName} was disintegrated,{BlockName} đã bị phân rã
 FormatText,{BoonName} which direction?,{BoonName} ra hướng nào?
 FormatText,{BoonName} which item?,{BoonName} vật phẩm nào?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,tỉ lệ {Chance}
 FormatText,{Chance} leaves corpse,{Chance} để lại xác
 FormatText,{Chance} per room,{Chance} mỗi phòng
 FormatText,{Chance} react to {ElementName},{Chance} phản ứng với {ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} với {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} với {With:AssetName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} đến hầm ngục {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} {MotionPastName} {AssetName} một cách khéo léo
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} dùng {Use:AssetName} với {With:AssetName} một cách khéo léo
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} lên cấp {LevelNumber}
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} đã trộm vật phẩm từ {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
-FormatText,after reaching dungeon level {RecordDepth},sau khi tới được tầng {RecordDepth}
+FormatText,after reaching depth {RecordDepth},sau khi tới được tầng {RecordDepth}
 FormatText,animate {CharacterName},tái sinh {CharacterName}
 FormatText,boost {AttributeName} by enchantment,tăng điểm thuộc tính {AttributeName} từ sự cường hóa
 FormatText,break {FeatureName},phá hỏng {FeatureName}
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},từ tầng {From} đến {To}
 FormatText,levels {Number}+,tầng {Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} bị khóa
 FormatText,lose {PropertyName} talent,mất tài năng {PropertyName}
-FormatText,not {EffectProperty},không {EffectProperty}
 FormatText,polymorph into {EntityNames},biến đổi hình dạng {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},tái sinh {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},tầm xa {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,kích hoạt {Dice} lần
 FormatText,unless resists {ElementName},trừ khi kháng {ElementName}
 FormatText,unless target has {PropertyName},trừ khi mục tiêu {PropertyName}
 FormatText,versus {Something},đối đầu với {Something}
-FormatText,when {Chance},tỉ lệ {Chance}
 FormatText,when {GROUNDNAME},nếu {GROUNDNAME}
 FormatText,when {ITEMNAME},nếu {ITEMNAME}
-FormatText,when {KINDNAMES},là {KINDNAMES}
 FormatText,when {MATERIALNAME},nếu là {MATERIALNAME}
 FormatText,when {PROPERTYNAME},nếu là {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},khi {SANCTITYNAME}
 FormatText,when {Something},khi {Something}
 FormatText,when {STANDINGNAME},nếu là {STANDINGNAME}
 FormatText,when resists {ElementName},khi kháng lại {ElementName}
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Cái cửa này được làm từ kim loại cứng. Không dễ gì phá hủy đâu.
 GateName,crystal door,cửa pha lê
 GateName,gold door,cửa vàng
@@ -2051,9 +2159,11 @@ GenderName,neuter,trung tính
 GenderName,non-binary,lưỡng tính
 GenerationType,module,phần chơi
 GenerationType,quest,nhiệm vụ
+GenerationType,workshop,
 GradeName,artifact,báu vật
 GradeName,exotic,thiên phẩm
 GradeName,standard,thông thường
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Sàn đá này được làm với tay nghề tinh xảo nhưng có dấu hiệu hư hỏng theo thời gian
 GroundName,cave floor,nền đá hang động
 GroundName,chasm,hang sâu
@@ -2504,7 +2614,9 @@ ItemName,glaive,đoản kiếm
 ItemName,gold coin,đồng xu vàng
 ItemName,gold dragon scale mail,giáp vảy rồng vàng kim
 ItemName,gold dragon scales,vảy rồng vàng kim
+ItemName,gold flail,
 ItemName,Gold Key,Chìa Khóa Vàng
+ItemName,gold plate mail,
 ItemName,great dagger,dao lớn
 ItemName,green dragon scale mail,giáp vảy rồng xanh lá
 ItemName,green dragon scales,vảy rồng xanh lá
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!CHẾ ĐỘ TỰ DO!
 LiteralText,(2d6 instead of 2-12),(2d6 thay vì 2-12)
 LiteralText,(game information status text),(thông tin game trạng thái)
 LiteralText,(not eligible for hall of fame),(không được chọn vào đại sảnh danh vọng)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(đề xuất cho màn hình AMOLED)
 LiteralText,(SUPPRESSED),(BỊ NÉN)
 LiteralText,[MASTER],[TỰ DO]
-LiteralText,abolition of firearms,sự loại bỏ các loại súng
+LiteralText,Abolition of firearms,sự loại bỏ các loại súng
 LiteralText,ABOUT,GIỚI THIỆU
-LiteralText,About Pathos,Giới thiệu về Pathos
-LiteralText,accelerated resting,tăng tốc thời gian nghỉ
+LiteralText,Accelerated resting,tăng tốc thời gian nghỉ
+LiteralText,Achievements,
 LiteralText,actions,các hành động
 LiteralText,ADD LEVEL,THÊM CẤP ĐỘ
 LiteralText,Add new adventurer,Thêm nhà thám hiểm mới
@@ -3025,8 +3138,8 @@ LiteralText,alias?,thờ ai?
 LiteralText,ALL,TẤT CẢ
 LiteralText,ALL AT ONCE,TẤT CẢ 1 LÚC
 LiteralText,all kind,mọi loại
+LiteralText,all levels,
 LiteralText,always,luôn luôn
-LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
 LiteralText,anatomy,giải phẫu
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,tái sinh những vong hồn
 LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,VÔ DANH
 LiteralText,anticlockwise 90 degrees,nguọc chiều kim đồng hồ 90 độ
+LiteralText,antique art,
 LiteralText,any item,mọi vật phẩm
 LiteralText,APPLICATION FILES,FILES ỨNG DỤNG
 LiteralText,Are you sure you want to end your adventure?,Bạn có muốn thoát khỏi hầm ngục và kết thúc chuyến phiêu lưu này?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,BẠN CHẮC CHỨ?
 LiteralText,area of effect,vùng ảnh hưởng
 LiteralText,area transient,hiệu ứng tạm thời diện rộng
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,BÁU VẬT
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,ĐI LÊN TẦNG TRƯỚC
 LiteralText,assess item,đánh giá
 LiteralText,assets,hành trang
 LiteralText,ATMOSPHERE,KHÍ QUYỂN
 LiteralText,attack modifier,cấp số nhân sát thương
 LiteralText,Attack which direction?,Tấn công vào hướng nào?
-LiteralText,attack//noun,đòn đánh
-LiteralText,ATTACK//noun,ĐÒN ĐÁNH
-LiteralText,attack//verb,tấn công
-LiteralText,ATTACK//verb,TẤN CÔNG
+LiteralText,Attack//noun,Đòn đánh
+LiteralText,Attack//verb,Tấn công
 LiteralText,attacks,tấn công
+LiteralText,AUDIO,
 LiteralText,AUTO,TỰ ĐỘNG
 LiteralText,auto saving,TỰ ĐỘNG SAO LƯU
+LiteralText,avatar,
 LiteralText,AWAKE,TỈNH DẬY
-LiteralText,BACK,QUAY LẠI
 LiteralText,backfire,phản tác dụng
 LiteralText,barrier,rào chắn
 LiteralText,BARRIERS,RÀO CHẮN
 LiteralText,bazaar,khu chợ
 LiteralText,Begin the adventure,Bắt đầu chuyến phiêu lưu
 LiteralText,beholds,hãy nhìn đây
-LiteralText,beta discussions,thảo luận về bản beta
 LiteralText,Black background,Hình nền màu đen
 LiteralText,blasphemy,phỉ báng
-LiteralText,BLINK,NHẤP NHÁY
+LiteralText,Blink,Nhấp nháy
 LiteralText,blink entity,nhấp nháy
 LiteralText,Blink which direction?,Nhấp nháy vào hướng nào
 LiteralText,block,khối
 LiteralText,BLOCKED,BỊ CHẶN
 LiteralText,BLOCKS,CÁC KHỐI
-LiteralText,BOONS,CẦU XIN
+LiteralText,Boons,Cầu xin
 LiteralText,boost attack by enchantment,tăng tốc đánh do cường hóa
 LiteralText,boost damage by enchantment,tăng sát thương do cường hóa
 LiteralText,boost defence by enchantment,tăng phòng thủ do cường hóa
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,KHÔNG THỂ NHÌN
 LiteralText,CAN'T SLIDE,KHÔNG THỂ TRƯỢT
 LiteralText,CAN'T TELEKINESIS,KHÔNG THỂ CHUYỂN ĐỘNG TỪ XA
 LiteralText,CAN'T THROW,KHÔNG THỂ NÉM
-LiteralText,CANCEL,HỦY BỎ
+LiteralText,Cancel,Hủy bỏ
 LiteralText,cancellation,phép loại bỏ
 LiteralText,CANCELLED,BỊ LOẠI BỎ
 LiteralText,capture any entity,bắt
@@ -3105,13 +3219,12 @@ LiteralText,Cast,Niệm phép
 LiteralText,CAST SPELLS,NIỆM PHÉP
 LiteralText,challenge,thử thách
 LiteralText,CHAMPION,NHÀ VÔ ĐỊCH
+LiteralText,Change,
 LiteralText,Character,Nhân vật
-LiteralText,CHARACTER,NHÂN VẬT
 LiteralText,charged items,vật phẩm nạp đầy
-LiteralText,Chat on Discord,Nói chuyện trên Discord
 LiteralText,check for updates?,tìm các cập nhật?
 LiteralText,checking for updates,đang kiểm tra các bản cập nhật
-LiteralText,CHOOSE,CHỌN
+LiteralText,Choose,Chọn
 LiteralText,Choose your quick action,Hãy chọn thao tác nhanh
 LiteralText,class,vai trò
 LiteralText,CLASSES,VAI TRÒ
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,bấm để thử lại
 LiteralText,Click to send detected issues to the author,Nhấp để gửi các vấn đề đã phát hiện cho tác giả
 LiteralText,clone source entity,tạo bản sao của nhân vật nguồn
 LiteralText,clone target entity,tạo bản sao của nhân vật mục tiêu
-LiteralText,CLOSE,ĐÓNG
+LiteralText,Close,Đóng
 LiteralText,closed,đóng cửa
-LiteralText,Coding on Medium,viết code trên Medium
 LiteralText,coins,đồng xu
-LiteralText,COMMAND,
+LiteralText,Command,
+LiteralText,Community,
 LiteralText,companion,vật nuôi
 LiteralText,compression,nén
-LiteralText,CONCEAL,GIẤU
+LiteralText,Conceal,Giấu
 LiteralText,CONCEALED,ĐÃ GIẤU
 LiteralText,concealing,ẩn nấp
 LiteralText,CONDUCT,HẠNH KIỂM
-LiteralText,CONFIRM,XÁC NHẬN
+LiteralText,Confirm,Xác nhận
+LiteralText,Connect,
 LiteralText,connect portal,tạo cổng dịch chuyển
 LiteralText,Connect to game hosted by another player.,Kết nối vào trò chơi từ người chơi khác
-LiteralText,CONSOLE,BẢNG ĐIỀU KHIỂN
+LiteralText,Console,Bảng điều khiển
 LiteralText,constructed,cấu thành
-LiteralText,CONTACT,NGUYÊN VẸN
 LiteralText,Continue,Tiếp tục
 LiteralText,CONTINUE,TIẾP TỤC
 LiteralText,CONTROLLED,BỊ ĐIỀU KHIỂN
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,chuyển đổi tảng đá
 LiteralText,conveyance,hấp thụ
 LiteralText,COPY,SAO CHẾP
 LiteralText,corpse,xác chết
 LiteralText,CRACK!,CRACK!
-LiteralText,craft,chế tạo
-LiteralText,CRAFT,CHẾ TẠO
+LiteralText,Craft,Chế tạo
 LiteralText,Craft which item?,Chế tạo vật phẩm nào?
 LiteralText,CRASH APP!,SẬP ỨNG DỤNG!
 LiteralText,CRASH!,CRASH!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Tạo ở hướng nào?
 LiteralText,CREDITS,TÍN DỤNG
 LiteralText,CROP,THU NHỎ
 LiteralText,CURSED,BỊ NGUYỀN RỦA
-LiteralText,CUSTOM,TÙY CHỌN
 LiteralText,CUSTOM HERO,ANH HÙNG TỤ CHỌN
 LiteralText,CUSTOM MODULES,MÔ ĐUN TỰ CHỌN
+LiteralText,customise controls,
 LiteralText,damage,
 LiteralText,DAMAGE,
 LiteralText,dark,tối
+LiteralText,Darken area,
 LiteralText,DEAD END,NGÕ CỤT
 LiteralText,death,chết
 LiteralText,deathray,tia tử thần
 LiteralText,decapitate entity,chặt đầu
 LiteralText,decapitation,chặt đầu
 LiteralText,DECEASED,NGƯỜI CHẾT
-LiteralText,decelerated real-time,giảm tốc độ thời gian thực
+LiteralText,Decelerated real-time,giảm tốc độ thời gian thực
 LiteralText,DECREASE,GIẢM
 LiteralText,defence,phòng thủ
 LiteralText,DEFENCE,PHÒNG THỦ
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,XÓA
 LiteralText,delete this level,xóa cấp độ này
 LiteralText,DEMOTE,GIÁNG CẤP
 LiteralText,depth,tầng
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,ĐI XUỐNG TẦNG TIẾP THEO
 LiteralText,destination,đích đến
 LiteralText,destroy,phá hủy
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,KHÔNG XẾP HẠNG
 LiteralText,diet,chế độ ăn
 LiteralText,difficulty,độ khó
 LiteralText,digging,đào
-LiteralText,disable ambient sounds,tắt âm thanh từ môi trường
+LiteralText,Disable ambient sounds,tắt âm thanh từ môi trường
 LiteralText,Disable auto save on transition,tắt tự động lưu khi chuyển màn
+LiteralText,Disable automatic camera,chế độ lia máy tự do
 LiteralText,Disable button tap sounds,tắt âm chạm nút
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,tắt âm nổ khi chết
 LiteralText,Disable continue button,tắt nút tiếp tục
-LiteralText,disable haptic feedback,tắt phản hồi xúc giác
+LiteralText,Disable haptic feedback,tắt phản hồi xúc giác
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,tắt hoạt ảnh trong trạng thái nghỉ
 LiteralText,Disable introduction boom,tắt âm nổ khi vào game
+LiteralText,Disable manual zoom,chế độ khóa tỉ lệ
 LiteralText,Disable mask animations,tắt hoạt ảnh che phủ
 LiteralText,Disable online services,tắt dịch vụ online (sảnh danh vọng và tự động cập nhật)
 LiteralText,Disable pitch shifting,tắt dịch cao độ
+LiteralText,Disable processing rate limit,
 LiteralText,Disable radial quick menu,
 LiteralText,Disable side quick menus,
 LiteralText,Disable spacebar real-time toggle,bật tắt chế độ thời gian thực bằng nút cách
 LiteralText,Disable swipe gestures,tắt cử chỉ vuốt
+LiteralText,Disable tutorial,
 LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,tước vũ khí
-LiteralText,DISCONNECT,NGẮT KẾT NỐI
+LiteralText,Disconnect,Ngắt kết nối
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Đã phát hiện ngắt kết nối. Hãy đảm bảo kết nối mạng của bạn ổn định và mọi thiết bị đều có cùng phiên bản Pathos.
 LiteralText,discover item,khai sáng
-LiteralText,Discuss on Reddit,Thảo luận trên Reddit
+LiteralText,discoveries,
 LiteralText,disenchant item,tỉnh mộng
 LiteralText,dismantle items to extract the base materials and raw essence,Tháo những vật phẩm để lấy lại nguyên liệu và nguyên chất thô
-LiteralText,DISMISS,BỎ QUA
-LiteralText,DISMOUNT,XUỐNG NGỰA
+LiteralText,Dismiss,Bỏ qua
+LiteralText,Dismount,Xuống ngựa
 LiteralText,Dismount which direction?,Xuống ngựa vào hướng nào?
 LiteralText,Display dice rolls in the help,Hiển thị số con lắc trong trợ giúp
+LiteralText,Display full screen,
 LiteralText,distribution,các thuộc tính
 LiteralText,divine item,thần thánh
 LiteralText,DIVINED,THẦN THÁNH HÓA
 LiteralText,divined items,vật phẩm thần thánh hóa
 LiteralText,Do you want to save or quit this adventure?,Bạn muốn lưu hay thoát khỏi chuyến phiêu lưu này?
 LiteralText,domestic,vật nuôi
-LiteralText,DONATE,ỦNG HỘ
+LiteralText,Donate,Ủng hộ
 LiteralText,Donate to say thanks,Ủng hộ như 1 lời cảm ơn
 LiteralText,DOOR,CỬA
 LiteralText,double damage when mounted,Nhân đôi sát thương khi đang cưỡi ngựa
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,hạ cấp xuống
 LiteralText,downloading update,đang tải bản cập nhật
 LiteralText,drain item,rút cạn vật phẩm
-LiteralText,drop,thả
-LiteralText,DROP,THẢ
+LiteralText,Drop,Thả
 LiteralText,DUAL WIELD,TRANG BỊ 2 VŨ KHÍ
 LiteralText,duration,thời lượng
+LiteralText,Eat,
 LiteralText,edible items,vật phẩm ăn được
 LiteralText,egg,trứng
 LiteralText,else,nếu khác
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,ngưỡng chịu đựng
 LiteralText,End this adventure,Kết thúc chuyến phiêu lưu này
 LiteralText,ended,đã kết thúc
 LiteralText,engulf entity,nuốt chửng
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,NHẬP SỐ LƯỢNG
 LiteralText,ENTITIES,THỰC THỂ
 LiteralText,entity,thực thể
 LiteralText,entropy accidents,Số tai nạn hỗn loạn
-LiteralText,EQUIP,TRANG BỊ
-LiteralText,equipped,được trang bị
+LiteralText,Equip,Trang bị
+LiteralText,equipment,được trang bị
 LiteralText,ESCAPE,TRỐN THOÁT
 LiteralText,escape traps,thoát khỏi bẫy
 LiteralText,escape with,thoát bằng
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,TRAO ĐỔI
 LiteralText,exchange entity,trao đổi
 LiteralText,EXIT PATHOS,THOÁT
 LiteralText,EXPAND,MỞ RỘNG
-LiteralText,EXPEL,LOẠI TRỪ
+LiteralText,Expel,Loại trừ
 LiteralText,experience,kinh nghiệm
 LiteralText,EXPERIENCE,KINH NGHIỆM
 LiteralText,explosion,vụ nổ
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,LOG LỖI
 LiteralText,feats,tài năng theo cấp độ
 LiteralText,feature,tính năng
 LiteralText,FEATURES,TÍNH NĂNG
-LiteralText,FEED,CHO ĂN
+LiteralText,Feed,Cho ăn
 LiteralText,FEEDBACK,PHẢN HỒI
 LiteralText,Feedback information,Ý kiến phản hồi
 LiteralText,FILES,TỆP
@@ -3306,24 +3433,26 @@ LiteralText,fixed,gắn chặt
 LiteralText,fixed range,tầm đánh cố định
 LiteralText,FIZZLE,SỦI BỌT
 LiteralText,Floor,Sàn nhà
-LiteralText,FOLLOW,ĐI THEO
-LiteralText,Follow me on Twitter,Theo dõi tôi trên twitter
-LiteralText,free panning mode,chế độ lia máy tự do
+LiteralText,Follow,Đi theo
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,sợ hãi
 LiteralText,fumbling,hậu đậu
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,TĂNG NGHIỆP CHƯỚNG
 LiteralText,gain level,lên cấp
 LiteralText,GAIN LEVEL,TĂNG CẤP ĐỘ
 LiteralText,gain nutrition,tăng dinh dưỡng
 LiteralText,gain skill,học kĩ năng
+LiteralText,GAMEPLAY,
 LiteralText,gate,cổng
 LiteralText,gates,các cổng
 LiteralText,gather,thu lượm
 LiteralText,gender,giới tính
 LiteralText,genocide,tuyệt chủng
-LiteralText,GENOCIDE,TUYỆT CHỦNG
 LiteralText,GIVE,ĐƯA
 LiteralText,GIVE ALL,ĐƯA TẤT CẢ
+LiteralText,GLOBAL,THẾ GIỚI
 LiteralText,GLYPHS,KÝ HIỆU
 LiteralText,GOD MODE,
 LiteralText,gold,vàng
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,nở
 LiteralText,hatched by,được ấp bởi
 LiteralText,Having trouble finding the stairs down to the next level?,Bạn đang gặp khó khăn trong việc tìm đường xuống tầng tiếp theo?
 LiteralText,Help,trợ giúp
-LiteralText,HELP,TRỢ GIÚP
 LiteralText,HIDDEN,ẨN
-LiteralText,HIDE,TRỐN
+LiteralText,Hide,Trốn
 LiteralText,hiding,đang trốn
 LiteralText,HINT,GỢI Ý
-LiteralText,HIRE,THUÊ
+LiteralText,Hire,Thuê
+LiteralText,HJKL directional keys,
 LiteralText,horde,bầy đàn
 LiteralText,HORDES,BẦY ĐÀN
 LiteralText,HOST,CHỦ PHÒNG
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Mặc dù vậy, bạn nên hoàn thành chuyến phiêu lưu của mình trước khi cập nhật phiên bản mới."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Chúng tôi hy vọng rằng bạn đang tận hưởng những chuyến phiêu lưu của bạn. Đừng ngần ngại góp ý cải thiện cho chúng tôi nhé.
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,vật phẩm được đinh danh
-LiteralText,identify all items,định danh tất cả
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,ĐỊNH DANH MỌI VẬT PHẨM TRÊN SÀN NHÀ
-LiteralText,identify one item,định danh chỉ một
+LiteralText,Identify all items,Định danh tất cả
+LiteralText,Identify one item,Định danh chỉ một
+LiteralText,identity,
 LiteralText,ILLITERATE,THẤT HỌC
 LiteralText,illusion,ảo ảnh
 LiteralText,ILLUSION,ẢO ẢNH
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,nhốt
 LiteralText,incarceration,nhốt
 LiteralText,INCREASE,TĂNG
 LiteralText,INDEX,TỪ ĐIỂN
-LiteralText,individual crafting,chế tạo lẻ
+LiteralText,Individual crafting,chế tạo lẻ
 LiteralText,infinite quantity,số lượng vô hạn
 LiteralText,influenced actions,những hành động liên quan
 LiteralText,INSCRIBE,GHI
 LiteralText,INSCRIBE ITEM,GHI VẬT PHẨM
 LiteralText,inscription?,khắc chữ gì?
-LiteralText,instruct each character,hướng dẫn từng nhân vật
+LiteralText,Inspect,
+LiteralText,Instruct each character,hướng dẫn từng nhân vật
 LiteralText,INSUFFICIENT GOLD,KHÔNG ĐỦ XU VÀNG
+LiteralText,INTERFACE,
 LiteralText,Inventory,Túi đồ
-LiteralText,INVENTORY,TÚI ĐỒ
-LiteralText,ITEM,VẬT PHẨM
-LiteralText,items,vật phẩm
+LiteralText,Item,Vật phẩm
 LiteralText,ITEMS,VẬT PHẨM
 LiteralText,JOIN,THAM GIA
 LiteralText,Journal,Nhật ký
 LiteralText,JOURNAL,NHẬT KÝ
-LiteralText,JUMP,NHẢY
+LiteralText,Jump,Nhảy
 LiteralText,Jump which direction?,Nhảy hướng nào?
 LiteralText,karma,nghiệp chướng
 LiteralText,KARMA,NGHIỆP CHƯỚNG
 LiteralText,key?,chìa khóa nào?
+LiteralText,Keyboard,
+LiteralText,Kick,Đá
 LiteralText,Kick which direction?,Đá hướng nào?
-LiteralText,KICK!,ĐÁ!
 LiteralText,kills,số mạng đã giết
 LiteralText,kit,trang bị
-LiteralText,KNOWLEDGE,KIẾN THỨC ĐÃ HỌC
+LiteralText,Knowledge,Kiến thức đã học
 LiteralText,LANGUAGE,NGÔN NGỮ
-LiteralText,LEARN ALL SPELLS,HỌC TẤT CẢ PHÉP THUẬT
+LiteralText,Learn all spells,Học tất cả phép thuật
 LiteralText,learn spells,học phép thuật
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Left,
 LiteralText,LEFT RING,NHẪN TRÁI
 LiteralText,LEVEL CHART,BẢNG CẤP ĐỘ
 LiteralText,level//rank,cấp độ
@@ -3414,20 +3544,19 @@ LiteralText,life,sinh mệnh
 LiteralText,LIFE,SINH MỆNH
 LiteralText,Life represents your physical health and death occurs at zero.,Sinh mệnh đại diện cho HP của bạn và bạn sẽ chết khi nó xuống 0.
 LiteralText,light,ánh sáng
-LiteralText,LIGHT,SÁNG
 LiteralText,light radius,vùng được thắp sáng
+LiteralText,Lighten area,
 LiteralText,limits,giới hạn
 LiteralText,LIST,DANH SÁCH
 LiteralText,lit,khi thắp sáng
 LiteralText,LIVING,CÒN SỐNG
 LiteralText,loading,đang tải
-LiteralText,LOCK,KHÓA
-LiteralText,locked,bị khóa
-LiteralText,LOCKED,BỊ KHÓA
-LiteralText,locked scaling mode,chế độ khóa tỉ lệ
+LiteralText,Lock,Khóa
+LiteralText,Locked,Bị khóa
 LiteralText,locking,khóa
-LiteralText,loot,nhặt
-LiteralText,LOOT,NHẶT
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Nhặt
+LiteralText,Loot//verb,Nhặt
 LiteralText,LOSE KARMA,GIẢM NGHIỆP CHƯỚNG
 LiteralText,LOSE LEVEL,GIẨM CẤP ĐỘ
 LiteralText,lose nutrition,giảm dinh dưỡng
@@ -3440,39 +3569,44 @@ LiteralText,MANA,NĂNG LƯỢNG
 LiteralText,Mana represents your energy supply for casting spells.,Năng lượng đại diện cho nguồn cung cấp ma pháp của bạn để dùng phép.
 LiteralText,Map,Bản đồ
 LiteralText,MAP,BẢN ĐỒ
-LiteralText,mapping,lập bản đồ
+LiteralText,Mapping,Lập bản đồ
 LiteralText,material,vật liệu
 LiteralText,materials,các vật liệu
 LiteralText,melting,tan chảy
-LiteralText,MENU,MENU
+LiteralText,Menu,Menu
 LiteralText,mercenary,lính đánh thuê
-LiteralText,MIMIC,GIẢ DẠNG
+LiteralText,Mimic,Giả dạng
 LiteralText,mimicking,đang giả dạng
 LiteralText,mobilise block,di chuyển tảng đá
 LiteralText,modifier,cấp số nhân
+LiteralText,MODULE,
 LiteralText,MORE INFO,
-LiteralText,MOUNT,CƯỠI
+LiteralText,Mount,Cưỡi
 LiteralText,Mount which direction?,Cưỡi hướng nào?
 LiteralText,MOUNTED,ĐÃ CƯỠI
-LiteralText,MOVE,DI CHUYỂN
+LiteralText,Move,Di chuyển
 LiteralText,move down one level,Đi xuống 1 tầng
 LiteralText,move up one level,Đi lên 1 tầng
 LiteralText,MULTIPLAYER,NHIỀU NGƯỜI CHƠI
+LiteralText,Multiplayer Chat,
 LiteralText,murder,giết người
 LiteralText,MURDER ENTITIES EVERYWHERE,GIẾT MỌI THỰC THỂ
 LiteralText,music volume,âm lượng nhạc
 LiteralText,N/A,N/A
-LiteralText,name,tên
-LiteralText,NAME,TÊN
 LiteralText,name?,tên?
+LiteralText,Name//noun,Tên
+LiteralText,Name//verb,Tên
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,trung lập
 LiteralText,never,không bao giờ
-LiteralText,NEW,MỚI
+LiteralText,Next character,
 LiteralText,no additional effects,không có hiệu ứng phụ
 LiteralText,no allies,không đồng minh
 LiteralText,no ambient sounds,không âm thanh môi trường
 LiteralText,No appropriate items available,không có vật phẩm nào phù hợp
-LiteralText,no available knowledge,không có kiến thức nào
+LiteralText,No key,
 LiteralText,no records found,không tìm thấy kết quả
 LiteralText,no resistances,không đề kháng
 LiteralText,no talents,không tài năng
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,không có gì xảy ra
 LiteralText,Nothing of interest,Không có gì đáng chú ý
 LiteralText,nothing to give,không có gì để đưa
 LiteralText,nothing to take,không có gì để lấy
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,dinh dưỡng
 LiteralText,NUTRITION,DINH DƯỠNG
 LiteralText,OBSTRUCTED,BỊ CHẶN
 LiteralText,OFFLINE,NGOẠI TUYẾN
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,1 LẦN
 LiteralText,oOo,oOo
-LiteralText,OPEN,MỞ
+LiteralText,Open,Mở
 LiteralText,OPENED,ĐÃ MỞ
 LiteralText,opening,mở
 LiteralText,OR,HOẶC
 LiteralText,ORIGINAL,GỐC
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,GHI ĐÈ
 LiteralText,OVERVIEW,TỔNG QUÁT
 LiteralText,Palette,Palette
 LiteralText,PARTY,TỔ ĐỘI
-LiteralText,passive (no attacking),hiền lành (không tấn công)
+LiteralText,Passive (no attacking),hiền lành (không tấn công)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos có thể được chơi ở chế độ chia đôi màn hình với tối đa lên đến bốn người chơi.
 LiteralText,pathos development @ paypal,ủng hộ việc phát triển Pathos qua Paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos không thể tải chuyến phiêu lưu của bạn. Vui lòng gửi cho tôi tệp lưu của bạn để tôi có thể điều tra vấn đề. Tôi thậm chí có thể sửa chữa tệp hoặc cập nhật ứng dụng bằng bản sửa lỗi. Sự thông cảm của bạn được đánh giá cao.
-LiteralText,Pathos might be the next evolution of Nethack.,Pathos có thể là sự phát triển tiếp theo của Nethack.
+LiteralText,Pathos might be the next evolution of NetHack.,Pathos có thể là sự phát triển tiếp theo của NetHack.
 LiteralText,penalty,điểm phạt
 LiteralText,penetrates,xuyên giáp
 LiteralText,per level,mỗi cấp độ
+LiteralText,Perform,
 LiteralText,permanent,vĩnh viễn
 LiteralText,PERSONAL,CÁ NHÂN
+LiteralText,Pick up,
 LiteralText,PLACE,ĐẶT
 LiteralText,PLACE ALL,ĐẶT TẤT CẢ
 LiteralText,place curse,niệm lời nguyền
 LiteralText,platform,nền tảng
 LiteralText,Play,Chơi
 LiteralText,Play a sound effect?,Chạy một hiệu ứng âm thanh?
+LiteralText,Play Demo,
 LiteralText,Player,Người chơi
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Xin lưu ý rằng buộc dừng ứng dụng có thể dẫn đến tình trạng bản lưu trò chơi bị lỗi và không thể khôi phục được.
 LiteralText,Please offer any clarification,Hãy giải thích
 LiteralText,Please provide your feedback,Hãy gửi phản hồi của bạn
 LiteralText,Please rotate your device to landscape :-),Hãy xoay ngang thiết bị của bạn
-LiteralText,POLYMORPH,BIẾN HÌNH
+LiteralText,Polymorph,Biến hình
 LiteralText,polymorph entity,biến đổi hình dạng thực thể
 LiteralText,Polymorph into what?,Biến hình thành?
 LiteralText,polymorph item,biến đổi hình dạng vật phẩm
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,ĐÃ BIẾN HÌNH
 LiteralText,portal,cổng
 LiteralText,PORTALS,CỔNG
 LiteralText,porter,túi
-LiteralText,PRAY,CẦU NGUYỆN
+LiteralText,POSITIVE,
+LiteralText,Pray,Cầu nguyện
 LiteralText,preservation,quan sát
-LiteralText,prevent revenant levels,loại bỏ những tầng có bóng ma cũ
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,loại bỏ những tầng có bóng ma cũ
+LiteralText,Previous character,
 LiteralText,prisoner,tù nhân
 LiteralText,probability,khả năng
 LiteralText,PROMOTE,THĂNG CẤP
 LiteralText,PROPERTIES,HIỆU ỨNG
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,trừng phạt
 LiteralText,PUNISHED,TRỪNG PHẠT
 LiteralText,punishment?,trừng phạt?
 LiteralText,PUNISHMENTS,TRỪNG PHẠT
+LiteralText,Purchase,
 LiteralText,QUANTITY,SỐ LƯỢNG
-LiteralText,QUICK LOAD,TẢI LẠI NHANH
-LiteralText,QUICK SAVE,LƯU NHANH
+LiteralText,QUESTS,
+LiteralText,Quick load,Tải lại nhanh
+LiteralText,Quick save,Lưu nhanh
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,thoát
-LiteralText,QUIT,THOÁT
+LiteralText,Quit,Thoát
 LiteralText,R//replica symbol,R
 LiteralText,race,chủng tộc
 LiteralText,RACES,CHỦNG TỘC
 LiteralText,random,ngẫu nhiên
-LiteralText,RANDOM,NGẪU NHIÊN
-LiteralText,random dungeon seed,hạt giống hầm ngục ngẫu nhiên
 LiteralText,random level,tầng ngẫu nhiên
 LiteralText,random points,các điểm ngẫu nhiên
+LiteralText,random seed,hạt giống hầm ngục ngẫu nhiên
 LiteralText,rank,hạng
 LiteralText,rarity,độ hiếm
 LiteralText,rate & review on the app store,đánh giá trên cửa hàng
-LiteralText,RE-ACT,HÀNH ĐỘNG LẠI
-LiteralText,RE-CAST,DÙNG LẠI PHÉP
-LiteralText,RE-EQUIP,TRANG BỊ LẠI
+LiteralText,Re-act,Hành động lại
+LiteralText,Re-cast,Dùng lại phép
+LiteralText,Re-equip,Trang bị lại
 LiteralText,Re-roll,Đổi lại
 LiteralText,re-rolls,số lần đổi lại
-LiteralText,RE-USE,TÁI SỬ DỤNG
+LiteralText,Re-use,Tái sử dụng
 LiteralText,Read books to learn spells,Đọc sách để học phép
-LiteralText,READ!,ĐỌC!
-LiteralText,REAL-TIME,THỜI GIAN THỰC
+LiteralText,Read!,Đọc!
+LiteralText,Real-time,Thời gian thực
 LiteralText,REALLY CRASH?,THẬT SỰ ĐÂM VÀO CHỨ?
 LiteralText,recall party,gọi thú
 LiteralText,Recommend Pathos,Đề xuất Pathos
 LiteralText,Redo,làm lại
 LiteralText,reflects,phản
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,ĐĂNG KÝ
 LiteralText,REGISTER PLAYER HANDLE,ĐĂNG KÝ XỬ LÝ NGƯỜI CHƠI
 LiteralText,reinforced,gia cố
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,GIA CỐ
 LiteralText,release entity,thả ra
 LiteralText,remove all transients,loại bỏ tất cả hiệu ứng tạm thời
 LiteralText,remove curse,loại bỏ lời nguyền
-LiteralText,REMOVE CURSE,XÓA BỎ LỜI NGUYỀN
 LiteralText,remove random resistance,loại bỏ 1 đề kháng ngẫu nhiên
 LiteralText,remove random talent,loại bỏ 1 tài năng ngẫu nhiên
 LiteralText,remove with,loại bỏ với
 LiteralText,remove with boulder,loại bỏ bằng tảng đá
 LiteralText,REMOVE//container,LẤY
-LiteralText,REMOVE//equipment,THÁO RA
+LiteralText,Remove//equipment,Tháo ra
 LiteralText,RENAME,ĐẶT TÊN
 LiteralText,RENAME CHARACTER,ĐẶT TÊN NHÂN VẬT
 LiteralText,RENAME ITEM,ĐẶT TÊN VẬT PHẨM
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,bổ sung máu
 LiteralText,replenish mana,bổ sung mana
 LiteralText,replica,bản sao
 LiteralText,replicate item,tạo bản sao của vật
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,cần có kĩ năng để phá khóa
 LiteralText,reset random equipment,đặt lại 1 trang bị ngẫu nhiên
+LiteralText,Reset to defaults,
 LiteralText,resident?,là dân cư?
 LiteralText,resistances,các đề kháng
 LiteralText,RESISTS,KHÁNG
 LiteralText,Rest,Nghỉ ngơi
 LiteralText,Rest how many turns?,Nghỉ ngơi trong bao nhiêu lượt?
+LiteralText,Rest once,
 LiteralText,restarting to update,khởi động lại để cập nhật
 LiteralText,restock shop items,bổ sung
 LiteralText,restore ability,khôi phục chỉ số
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Hồi sinh và tiếp tục
 LiteralText,resurrections,số lần hồi sinh
 LiteralText,retaliations,phản lại
 LiteralText,RETURN,QUAY VỀ
-LiteralText,REVEAL,LỘ DIỆN
+LiteralText,Reveal,Lộ diện
 LiteralText,REVEAL ALL MAPS,HIỆN TOÀN BỘ BẢN ĐỘI
 LiteralText,REVEAL THIS MAP,HIỆN BẢN ĐỒ TẦNG NÀY
 LiteralText,revealed,đã lộ diện
 LiteralText,revenant,bóng ma cũ
-LiteralText,REVERT,QUAY LẠI
+LiteralText,Revert,Quay lại
+LiteralText,Right,
 LiteralText,RIGHT RING,NHẪN PHẢI
 LiteralText,rigid,thô
 LiteralText,ROTATE,XOAY
 LiteralText,route entity,lối đi thực thể
 LiteralText,rumour,lời đồn
 LiteralText,sacrifice item,cúng tế
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,ĐIỂM MINH MẪN
 LiteralText,SAVE,LƯU
 LiteralText,SAVE & QUIT,LƯU & THOÁT
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,CHUYẾN PHIÊU LƯU ĐÃ LƯU
 LiteralText,SAVED BONES,BONES ĐÃ LƯU
 LiteralText,school,trường học
-LiteralText,scrap,tái chế
-LiteralText,SCRAP,TÁI CHẾ
+LiteralText,Scrap,Tái chế
 LiteralText,SEALED,PHONG ẤN
 LiteralText,Search,Lục soát
 LiteralText,Search how many turns?,Lục soát trong bao nhiêu lượt?
+LiteralText,Search once,
 LiteralText,searching,tìm kiếm
 LiteralText,secret,bí mật
 LiteralText,SECRET,BÍ MẬT
 LiteralText,seed,hạt giống
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,CHỌN KHÍ QUYỂN
 LiteralText,Select Companion Tile,Lựa chọn Đồ hoạ cho Bạn đồng hành
 LiteralText,Select Hero Tile,Lựa chọn Đồ hoạ cho Dũng Giả
 LiteralText,SELECT ITEM,CHỌN VẬT PHẨM
-LiteralText,SELECT LANGUAGE,CHỌN NGÔN NGỮ
 LiteralText,SELECT MAP,CHỌN BẢN ĐỒ
-LiteralText,SELECT PORTRAIT,CHON ẢNH ĐẠI DIỆN
 LiteralText,SELECT RESIDENT,CHỌN DÂN CƯ
 LiteralText,SELECT SQUARE,CHỌN Ô
-LiteralText,SELECT TILESET,CHỌN GÓI ĐỒ HỌA
 LiteralText,self,bản thân
+LiteralText,Self menu,
 LiteralText,SELL,BÁN
 LiteralText,SELL ALL,BÁN TẤT CẢ
 LiteralText,SEND,GỬI
 LiteralText,Send me an email,Gửi cho tôi email
-LiteralText,SERVICES,DỊCH VỤ
+LiteralText,Services,Dịch vụ
 LiteralText,SET DIFFICULTY,CHỌN ĐỘ KHÓ
 LiteralText,set starting location,CHỌN NƠI BẮT ĐẦU
-LiteralText,SETTINGS,CÀI ĐẶT
+LiteralText,Settings,Cài đặt
 LiteralText,sfx volume,âm thanh hiệu ứng
-LiteralText,SHARE//exchange,CHIA SẺ
+LiteralText,Share//exchange,Chia sẻ
 LiteralText,SHARE//publish,CHIA SẺ
 LiteralText,SHOPS,CỬA HÀNG
 LiteralText,Show debugging information,Hiện thông tin debug
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,ĐĂNG NHẬP
 LiteralText,size,kích thước
 LiteralText,skills,kỹ năng
 LiteralText,SKILLS,KỸ NĂNG
-LiteralText,SLIDE,TRƯỢT
+LiteralText,Slide,Trượt
 LiteralText,Slide which direction?,Trượt về hướng nào
 LiteralText,slower animations,hoạt ảnh chậm hơn
 LiteralText,SONICS,ÂM THANH
@@ -3686,17 +3847,17 @@ LiteralText,special,đặc biệt
 LiteralText,SPECIALS,ĐẶC BIỆT
 LiteralText,speed,tốc độ
 LiteralText,SPEED,TỐC ĐỘ
-LiteralText,SPELL,PHÉP THUẬT
+LiteralText,Spell,Phép thuật
 LiteralText,SPELLS,PHÉP THUẬT
 LiteralText,Square,Ô
 LiteralText,stack,cả xập
 LiteralText,START,BẮT ĐẦU
 LiteralText,Start a game to be joined by other players.,Tạo một game mới để người chơi khác có thể vào.
 LiteralText,Start new adventure,Bắt đầu chuyến phiêu lưu
-LiteralText,start without companion,bắt đầu mà không có thú cưng
+LiteralText,Start without companion,bắt đầu mà không có thú cưng
 LiteralText,starvation,chết đói
 LiteralText,starved,quá đói
-LiteralText,STAY,ĐỨNG YÊN
+LiteralText,Stay,Đứng yên
 LiteralText,steal,cướp
 LiteralText,STOP,DỪNG LẠI
 LiteralText,storage,kho
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,NHIỆM VỤ TỰ TẠO
 LiteralText,SUBMIT,TẢI LÊN
 LiteralText,summon,triệu hồi thực thể
 LiteralText,SUSTAINED,BẢO TOÀN
-LiteralText,SWAP,ĐỔI
-LiteralText,SWITCH,ĐỔI
+LiteralText,Swap,Đổi
+LiteralText,Switch,Đổi
 LiteralText,symptoms,triệu chứng
 LiteralText,Table of Contents,Nội dung
-LiteralText,TAKE,LẤY
+LiteralText,Take,Lấy
 LiteralText,TAKE ALL,LẤY TẤT CẢ
 LiteralText,talents,tài năng
 LiteralText,TALENTS,TÀI NĂNG
-LiteralText,TALK,NÓI CHUYỆN
+LiteralText,Talk,Nói chuyện
 LiteralText,target,mục tiêu
-LiteralText,TELEKINESIS,CHUYỂN ĐỘNG TỪ XA
+LiteralText,Telekinesis,Chuyển động từ xa
 LiteralText,Telekinesis which direction?,Chuyển động từ xa vào hướng nào?
 LiteralText,Telekinesis which object?,Chuyển động từ xa vật nào?
-LiteralText,TELEPORT,DỊCH CHUYỂN
+LiteralText,Teleport,Dịch chuyển
+LiteralText,Teleport end,
 LiteralText,teleport entity,dịch chuyển nhân vật
 LiteralText,teleport item away,dịch chuyển ra
 LiteralText,Teleport to where?,Dịch chuyển tới đâu?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,BẢNG ĐIỀU KHIỂN
 LiteralText,terrain,địa hình
 LiteralText,The attack score is your aptitude for hitting an opponent.,Điểm tấn công quyết định khả năng đánh trúng đôi thủ của bạn.
-LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Thử thách ở đây là cải thiện những thiếu sót mà không làm mất đi những tinh túy biến Nethack thành trò chơi tuyệt nhất mọi thời đại.
+LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Thử thách ở đây là cải thiện những thiếu sót mà không làm mất đi những tinh túy biến NetHack thành trò chơi tuyệt nhất mọi thời đại.
+LiteralText,The damage you do to an opponent upon a successful attack.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Điểm phòng thủ quyết định sát thương bạn nhận khi bị đánh bởi đối thủ.
 LiteralText,There is a new update available!,Có một bản cập nhật mới!
 LiteralText,there is nothing to place here,Không có gì để đặt vào đây
 LiteralText,there is nothing to remove here,không có gì để lấy
 LiteralText,there is nothing to trade with this merchant,không có gì để trao đổi
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,trong tầng này
 LiteralText,this merchant has no stock to trade,thương nhân này không có gì để trao đổi
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Cái tên này sẽ được sử dụng để ghi thành tích của bạn trong Sảnh Danh Vọng.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Hạt giống này có thể dùng để chia sẻ với bạn vè và thách thức nhau trong cùng một hầm ngục
 LiteralText,threw,ném
-LiteralText,THROW,NÉM
+LiteralText,Throw,Ném
+LiteralText,TILESET,CHỌN GÓI ĐỒ HỌA
 LiteralText,tin,đóng gói
 LiteralText,tinning,đóng hộp
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,QUÁ LỚN
 LiteralText,TOO HEAVY,QUÁ NẶNG
 LiteralText,TOO HUNGRY,QUÁ ĐÓI
 LiteralText,TOO SMALL,QUÁ NHỎ
 LiteralText,TOO WEAK,QUÁ YẾU
 LiteralText,TRACKS,THEO DÕI
-LiteralText,TRADE,TRAO ĐỔI
+LiteralText,Trade,Trao đổi
 LiteralText,transform to,biến hình thành
 LiteralText,transients,hiệu ứng tạm thời
 LiteralText,TRANSIENTS,HIỆU ỨNG TẠM THỜI
@@ -3759,15 +3926,16 @@ LiteralText,trapped,mắc bẫy
 LiteralText,TRAPPED,MẮC BẪY
 LiteralText,trapped container,vật chứa gài bẫy
 LiteralText,trapped door,cửa gài bẫy
-LiteralText,TRIGGER,KÍCH HOẠT
+LiteralText,Trigger,Kích hoạt
 LiteralText,trigger once,kích hoạt 1 lần
 LiteralText,trigger unlimited times,kích hoạt vô hạn lần
 LiteralText,truth,sự thật
-LiteralText,TUNNEL,ĐÀO ĐƯỜNG
+LiteralText,Tunnel,Đào đường
 LiteralText,Tunnel which direction?,Đào hướng nào?
-LiteralText,TURN-BASED,THEO LƯỢT
+LiteralText,Turn-based,Theo lượt
 LiteralText,turns,lượt
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,Điền từ hoặc câu nào đó để tạo hạt giống ngẫu nhiên.
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,Điền từ hoặc câu nào đó để tạo hạt giống ngẫu nhiên.
 LiteralText,unable to load,không thể tải
 LiteralText,unafflict,không ảnh hưởng
 LiteralText,UNDEAD,THÂY MA
@@ -3775,16 +3943,20 @@ LiteralText,Undo,Hoàn tác
 LiteralText,unidentified items,vật phẩm chưa định danh
 LiteralText,unique,độc nhất
 LiteralText,UNIQUES,THỰC THỂ ĐẶC BIỆT
-LiteralText,UNLOCK,MỞ KHÓA
+LiteralText,unknown effects,
+LiteralText,Unlock,Mở khóa
 LiteralText,unlock door or container,mở khóa cửa hoặc thùng chứa
-LiteralText,UNLOCKED,ĐÃ MỞ KHÓA
+LiteralText,Unlocked,Đã mở khóa
 LiteralText,unpolymorph,hủy biến hình
 LiteralText,unpunish,hủy sự trừng phạt
 LiteralText,unskilled,không có kỹ năng
 LiteralText,UNSKILLED,KHÔNG QUEN TAY
 LiteralText,unstuck,tháo gỡ
-LiteralText,UNTRAP,PHÁ BẪY
+LiteralText,Untrap,Phá bẫy
 LiteralText,UNTRAPPED,PHÁ BẪY
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,có bản cập nhật mới
 LiteralText,update cancelled,cập nhật bị hủy bỏ
 LiteralText,update failed,cập nhật thất bại
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,CÁC BẢN CẬP NHẬT
 LiteralText,upgrade to,nâng cấp thành
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Sử dụng hạt giống đồng nghĩa với việc bạn sẽ không được xét vào Sảnh Danh Vọng
 LiteralText,Vanity,Danh hiệu
+LiteralText,Victory!,
 LiteralText,VIEW,NHÌN
 LiteralText,visit shop,ghé cửa hàng
 LiteralText,visit shrine,ghé điện thờ
-LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,visit zoo,ghé vườn thú
 LiteralText,VOID SPACE,HƯ VÔ
 LiteralText,volatile,phản ứng
 LiteralText,VOLATILES,CÁC PHẢN ỨNG
 LiteralText,vomit nutrition,nôn mửa
 LiteralText,vulnerable to,bị khắc chế bởi
-LiteralText,WAIT,CHỜ
+LiteralText,Wait,Chờ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
-LiteralText,warping,cong vênh
-LiteralText,WARPING,ĐANG DỊCH CHUYỂN
+LiteralText,Warping,Đang dịch chuyển
 LiteralText,was killed,bị giết
 LiteralText,weakness to,yếu trước
 LiteralText,weight,cân nặng
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,sự phá hủy
 LiteralText,WON'T EAT,KHÔNG ĂN
 LiteralText,WORKBENCH MATERIALS,VẬT LIỆU CHẾ TẠO
 LiteralText,World,Thế giới
-LiteralText,WORLD,THẾ GIỚI
 LiteralText,WRONG WAY,NHẦM HƯỚNG
 LiteralText,"You are playing as anonymous, please register!","Bạn đang chơi với tư cách là ẩn danh, xin vui lòng đăng ký!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Bạn có thể cần LỤC SOÁT để tìm những cánh cửa bí mật bằng nút hình con mắt.
 LiteralText,Your current movement and action speed in squares per second.,Tốc độ di chuyển và hành động hiện tại của bạn tính bằng ô vuông trên giây.
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,PHÓNG TO
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,VƯỜN THÚ
 LiteralText,zZz,zZz
 LocalityName,area,khu vực
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,thuần chay
 MaterialName,water,nước
 MaterialName,wax,sáp
 MaterialName,wood,gỗ
-MeasurementSystemName,imperial,hệ đo lường Anh
-MeasurementSystemName,metric,hệ đo lường mét
+MeasurementSystemName,imperial units,hệ đo lường Anh
+MeasurementSystemName,metric units,hệ đo lường mét
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Đi sâu vào những hầm ngục và hang động được tạo ngẫu nhiên. Cho bạn trải nghiệm chơi lại vô hạn và được đề xuất cho những người mới chơi Pathos.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Khám phá một bản đồ rộng lớn, tái tạo ngẫu nhiên chứa đầy phó bản phụ, vô số những khung cảnh được thiết kế tỉ mỉ và hàng loạt những cuộc đụng độ hấp dẫn."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Một cuộc phiêu lưu kì thú trên 1 bản đồ thiết kế bằng tay. Hãy thư giãn khỏi sự gò bó của hầm ngục và tiến lên đi phiêu lưu nào.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,Vô vàn căn phòng và bí mật thú vị đang chờ bạn. Nhưng đừng ở đó quá lâu; bạn phải đi tiếp hoặc chết! Bản đồ được dựa trên thuật toán của Shattered Pixel Dungeon.
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Chế độ sáng tạo cho phép bạn thử nghiệm với lối chơi của Pathos. Sử dụng mọi vật phẩm, bẫy và các dụng cụ của hầm ngục trong bản đồ 2 căn phòng này."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Có tin tức gì trên mặt đất không? Tôi đã ở dưới này quá lâu đến độ tôi nhớ ánh nắng và thời tiết rồi.
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Bạn có biết rằng một nửa số hàng mà thương nhân bán được thu lượm từ những xác chết của những mạo hiểm giả như bạn không?
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,Tất cả mọi người đều bàn tán về cuộc xâm lăng của loài orc nhưng tôi không nghĩ nó sẽ xảy ra đâu.
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Bạn biết đấy, tôi cũng đã từng là mạo hiểm giả như bạn... có lẽ bạn cũng nên kiếm một việc làm cho mình nữa chứ? Sau tất cả, ""mạo hiểm giả"" cũng chỉ là cách gọi sang hơn của việc trở nên vô gia cư và thất nghiệp."
 ModuleName,Dhak Legacy,Di sản nhà Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Nethack Codex
+ModuleName,NetHack Codex,NetHack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Chế độ sáng tạo
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,Vực thẳm
 ModuleTerm,Ambush,Phục kích
 ModuleTerm,Ant Cave,Hang Tổ Kiến
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,cầu thang lên bằng đất sét
 PortalName,jade ladder down,thang trèo xuống bằng ngọc bích
 PortalName,jade ladder up,thang trèo lên bằng ngọc bích
 PortalName,rift,khe nứt
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,cầu thang xuống bằng đá
 PortalName,stone staircase up,cầu thang lên bằng đá
 PortalName,transportal,cổng dịch chuyển
 PortalName,wooden ladder down,thang trèo xuống bằng gỗ
 PortalName,wooden ladder up,thang trèo lên bằng gỗ
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,"Một lớp giáp ma thuật lấp lánh xung quanh bạn, giúp nâng điểm phòng thủ và tăng khả năng phản lại đòn đánh từ xa."
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.","Được bao phủ trong lớp nhựa cây dính nhớt như dầu, bạn dễ dàng trượt qua những rãnh nứt và kẽ hở."
-PropertyDescription,Control when and where you teleport.,Điều khiển việc dịch chuyển diễn ra khi nào và ở đâu.
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,"Giận dữ đến phát điên, bạn hừng hực tấn công mọi thứ, cả bạn lẫn thù không vì lí do nào cả."
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.",Các chỉ số của bạn được bảo toàn nguyên vẹn khiến nó không thể bị giảm nhưng cũng không thể tăng.
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,Bạn bị nhiễm một loại bệnh với triệu chứng kỳ lạ và luôn luôn buồn nôn.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,Cảnh báo bạn về những quái vật ở gần và ước tính độ nguy hiểm của chúng.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.","Bạn đang ngủ, một cách ngon lành. Trong một hầm ngục đầy rẫy quái vật."
+PropertyDescription,Assess the number of charges in an item when you pick it up.,Bạn biết được số lần sử dụng của vật phẩm chỉ bằng cách nhặt nó lên.
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,Điều khiển việc dịch chuyển diễn ra khi nào và ở đâu.
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.","Được bao phủ trong lớp nhựa cây dính nhớt như dầu, bạn dễ dàng trượt qua những rãnh nứt và kẽ hở."
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",Bạn bị sự đói khát nuốt chửng và không thể cưỡng lại ham muốn ăn tất cả những gì bạn thấy. Bạn biết bạn sẽ chẳng bao giờ có thể no được cả.
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.","Giận dữ đến phát điên, bạn hừng hực tấn công mọi thứ, cả bạn lẫn thù không vì lí do nào cả."
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,Thị giác của bạn trở nên méo mó khiến trí óc bạn nhìn những vật thể và thực thể thường ngày thành những dị vật như từ địa ngục bước ra.
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,Cải thiện thị giác của bạn để có thể nhìn thấy những sinh vật tàng hình.
-PropertyDescription,Fainting from lack of food.,Bạn ngất đi vì quá đói.
-PropertyDescription,Fly above the ground to avoid many types of traps.,Bay trên không trung giúp bạn tránh được vô số cạm bẫy.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Hậu đậu khiến cho bạn thường xuyên làm rơi vũ khí trong giao tranh và khiến bạn ngã khi leo cầu thang.
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,Lơ lửng giúp bạn tránh được rất nhiều loại bẫy. Chỉ có điều nếu bạn với được đồ ở mặt đất thôi...
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",Bay trên không trung giúp bạn tránh được vô số cạm bẫy.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Tia phép và phép lườm bị phản lại về phía người niệm phép.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Cảnh báo bạn về những quái vật ở gần và ước tính độ nguy hiểm của chúng.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,"Co rúm lại vì hoảng sợ, bạn không thể tấn công và chạy trốn khỏi đó."
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Trong trạng thái say khướt này, sự tự tin ngày càng tăng cao của bạn sẽ chỉ được bù đắp bằng khả năng phán đoán bị suy giảm nghiêm trọng của bạn."
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Di chuyển lặng lẽ trong hầm ngục giúp bạn có thể lén gần đến những con quái vật ngủ say.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Bảo vệ bạn khỏi việc bị biến hình nhưng cũng khiến bạn không thể quay trở lại hình dạng ban đầu nữa.
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.","Co rúm lại vì hoảng sợ, bạn không thể tấn công và chạy trốn khỏi đó."
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.","Cơ thể của bạn trở nên cứng và rắn, như đang hóa đá vậy. Mọi thao tác đều rất khó và bạn thấy giòn. Đòn đánh tiếp theo vào bạn có lẽ sẽ phá vỡ bạn thành nghìn mảnh..."
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,Bạn ăn thịt đồng loại mình mà không thấy chút thương xót hay tội lỗi.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,Thị giác và nhận thức của bạn được tăng cường khiến bạn có thể nhìn ra những cánh cửa bị ẩn và bẫy một cách tự nhiên.
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,Khiếm thị khiến bạn chỉ có thể nhìn ở khoảng cách rất gần.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",Bạn khiến tất cả sinh vật xung quanh bạn đâm đầu vào hỗn loạn và bạo lực. Kể cả những sinh vật hiền lành cũng sẽ đánh lẫn nhau. Hiệu ứng vừa tốt vừa xấu này phải được sử dụng một cách cực kì cẩn trọng. Bạn cũng cảm thấy dinh dưỡng của bạn như bị đốt bởi hiệu ứng này.
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Sự cường hóa về tốc độ khiến bạn di chuyển và tấn công nhiều hơn bình thường.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,Sự hiện diện của bạn khiến mọi sinh vật trở nên giận dữ.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,Bạn ngất đi vì quá đói.
+PropertyDescription,Move objects without physical contact through the power of your mind.,Sử dụng sức mạnh của trí óc để di chuyển đồ vật mà không cần chạm vào chúng.
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",Bạn di chuyển hoàn toàn im lặng và không thể nói được 1 từ nào cả.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",Di chuyển lặng lẽ trong hầm ngục giúp bạn có thể lén gần đến những con quái vật ngủ say.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.",Cơ bắp của bạn bám chặt và căng cứng khiến bạn bị cứng đờ và không chống cự được.
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","Cơ thể của bạn nằm ở giữa các mặt phẳng. Điều này có nghĩa bạn có thể đi xuyên qua tường, cửa hay tảng đá một cách dễ dàng."
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",Chân của bạn có cảm giác như được gắn lò xo. Bạn có thể nhảy rất cao và xa.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.",Bảo vệ bạn khỏi việc bị biến hình nhưng cũng khiến bạn không thể quay trở lại hình dạng ban đầu nữa.
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,Khiếm thính khiến bạn hoàn toàn không thể nghe thấy gì.
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Trí óc của bạn được bảo vệ khỏi những sự lừa dối, chiêu trò bẩn thỉu."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Bảo vệ bạn khỏi mọi hiệu ứng làm chậm, choáng hoặc tê liệt."
-PropertyDescription,Recover mana at an increased rate.,Hồi phục năng lượng nhanh hơn.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,"Cơ thể bạn sản sinh ra tế bào và tái sinh liên tục, giúp bạn hồi phục sinh lực nhanh hơn. Điều đó đồng nghĩa với việc trao đổi chất được diễn ra nhanh hơn và bạn cần ăn nhiều hơn."
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Hồi phục năng lượng nhanh hơn.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Sự thoái hóa về tốc độ khiến bạn di chuyển và tấn công ít hơn bình thường.
+PropertyDescription,Resilient to all forms of natural and magical illness.,Cơ thể bạn cứng cáp và hoàn toàn kháng các loại bệnh tự nhiên hay phép thuật.
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,"Hồi sinh bạn với 50% lượng máu tối đa nếu bạn chết, đổi lại bạn bị trừ 1 điểm thể chất."
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Bạn sẽ đột ngột thiếp đi cho đến khi bạn tỉnh dậy hoặc bị đánh thức.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.",Phép dịch chuyển đưa bạn đến 1 điểm bất kì trên tầng bạn đang ở. Đây là một sự kiện ngẫu nhiên gây rối loạn và khiến cuộc phiêu lưu của bạn thêm phần khó lường nếu không được điều khiển đúng cách. Chủ động sử dụng phép dịch chuyển cho phép bạn lựa chọn đích đến trên bản đồ.
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,Bạn ăn thịt đồng loại mình mà không thấy chút thương xót hay tội lỗi.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,Giúp bạn cảm nhận được sự hiện diện và vị trí của những sinh vật có trí giác nhưng chỉ khi bạn không thể nhìn.
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,"Khiến hình ảnh của bạn trở nên không rõ ràng, lệch đi so với vị trí chính xác của bạn. Điều này khiến đối thủ khó đánh trúng bạn hơn, và mọi đòn đánh tầm xa như phép hay cung bị giảm khả năng đánh trúng bạn."
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Sự cường hóa về tốc độ khiến bạn di chuyển và tấn công nhiều hơn bình thường.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Khiếm thị khiến bạn chỉ có thể nhìn ở khoảng cách rất gần.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Lơ lửng giúp bạn tránh được rất nhiều loại bẫy. Chỉ có điều nếu bạn với được đồ ở mặt đất thôi...
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,"Cơ thể bạn sản sinh ra tế bào và tái sinh liên tục, giúp bạn hồi phục sinh lực nhanh hơn. Điều đó đồng nghĩa với việc trao đổi chất được diễn ra nhanh hơn và bạn cần ăn nhiều hơn."
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,Đây là trạng thái vô hình. Bạn di chuyển khiến ánh sáng bị méo mó đi đôi chút và chỉ có thể nhận ra khi ở gần.
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,Khiếm thính khiến bạn hoàn toàn không thể nghe thấy gì.
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Sự thoái hóa về tốc độ khiến bạn di chuyển và tấn công ít hơn bình thường.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,Thị giác đặc biệt giúp bạn nhìn thấy những thực thể có thân nhiệt trong bóng tối.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","Biến hình thành 1 sinh vật khác với mọi yếu tố thuận lợi và bất lợi của sinh vật đó. Ví dụ: có những thực thế không có tay nhưng bù lại có thể bay và gầm ra tia năng lượng chết người. Khi bạn chết đi khi biến hình, thường bạn sẽ quay trở lại hình dạng ban đầu."
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,Sử dụng sức mạnh của trí óc để di chuyển đồ vật mà không cần chạm vào chúng.
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,Thị giác của bạn trở nên méo mó khiến trí óc bạn nhìn những vật thể và thực thể thường ngày thành những dị vật như từ địa ngục bước ra.
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"Khi bị rối loạn, bạn sẽ gặp khó khăn trong việc hành động. Bạn có thể di chuyển hay tấn công vào những vị trí không mong muốn và cũng không thể niệm phép. Khi đọc cuộn giấy ma thuật bạn sẽ phát âm sai và tạo ra các hiệu ứng khác thường. Bạn không thể tập trung để đọc sách được."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","Khi bị choáng, bạn không thể đi thẳng và không thể thực hiện những thao tác đòi hỏi kĩ năng cao. Giống như bị rối loạn vậy."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Bạn bị nhiễm một loại bệnh với triệu chứng kỳ lạ và luôn luôn buồn nôn.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Bạn đang ngủ, một cách ngon lành. Trong một hầm ngục đầy rẫy quái vật."
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Bạn bị sự đói khát nuốt chửng và không thể cưỡng lại ham muốn ăn tất cả những gì bạn thấy. Bạn biết bạn sẽ chẳng bao giờ có thể no được cả.
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Cơ thể bạn cứng cáp và hoàn toàn kháng các loại bệnh tự nhiên hay phép thuật.
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Bạn có thể đào hầm và tự tạo cho mình đường đi trong hầm ngục.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,Bạn biết được số lần sử dụng của vật phẩm chỉ bằng cách nhặt nó lên.
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,Bạn có thể biến hình thành thực thể mà bạn muốn nếu bạn điều khiển được phép biến hình. Bạn chỉ có thể biến hình thành các thực thể mà bạn đã giết. Niệm phép biến hình sẽ tiêu tốn dinh dưỡng của bạn.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,Bạn khiến tất cả sinh vật xung quanh bạn đâm đầu vào hỗn loạn và bạo lực. Kể cả những sinh vật hiền lành cũng sẽ đánh lẫn nhau. Hiệu ứng vừa tốt vừa xấu này phải được sử dụng một cách cực kì cẩn trọng. Bạn cũng cảm thấy dinh dưỡng của bạn như bị đốt bởi hiệu ứng này.
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,Bạn cảm thấy bất an như kiểu cơn giận dữ sẽ nuốt chửng bạn bất kì lúc nào.
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Bạn cảm thấy được những thực thể khác ở trong hầm ngục.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,Bạn biết được tính thánh hóa của vật phẩm chỉ bằng cách nhặt nó lên.
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Bạn di chuyển hoàn toàn im lặng và không thể nói được 1 từ nào cả.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,Các chỉ số của bạn được bảo toàn nguyên vẹn khiến nó không thể bị giảm nhưng cũng không thể tăng.
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"Cơ thể của bạn trở nên cứng và rắn, như đang hóa đá vậy. Mọi thao tác đều rất khó và bạn thấy giòn. Đòn đánh tiếp theo vào bạn có lẽ sẽ phá vỡ bạn thành nghìn mảnh..."
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","Cơ thể của bạn nằm ở giữa các mặt phẳng. Điều này có nghĩa bạn có thể đi xuyên qua tường, cửa hay tảng đá một cách dễ dàng."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Chân của bạn có cảm giác như được gắn lò xo. Bạn có thể nhảy rất cao và xa.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Sự hiện diện của bạn khiến mọi sinh vật trở nên giận dữ.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Việc trao đổi chất trong cơ thể bạn bị làm chậm lại khiến bạn không cần ăn nhiều.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Trí óc của bạn được bảo vệ khỏi những sự lừa dối, chiêu trò bẩn thỉu."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,Cơ bắp của bạn bám chặt và căng cứng khiến bạn bị cứng đờ và không chống cự được.
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,Thị giác và nhận thức của bạn được tăng cường khiến bạn có thể nhìn ra những cánh cửa bị ẩn và bẫy một cách tự nhiên.
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,Vị trí của bạn không xác định chắc chắn và bạn có thể biến mất và xuất hiện lại một cách dễ dàng.
+PropertyDescription,Sense the divine status of an item simply by picking it up.,Bạn biết được tính thánh hóa của vật phẩm chỉ bằng cách nhặt nó lên.
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,Giúp bạn cảm nhận được sự hiện diện và vị trí của những sinh vật có trí giác nhưng chỉ khi bạn không thể nhìn.
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.","Khi bị rối loạn, bạn sẽ gặp khó khăn trong việc hành động. Bạn có thể di chuyển hay tấn công vào những vị trí không mong muốn và cũng không thể niệm phép. Khi đọc cuộn giấy ma thuật bạn sẽ phát âm sai và tạo ra các hiệu ứng khác thường. Bạn không thể tập trung để đọc sách được."
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"Khi bị choáng, bạn không thể đi thẳng và không thể thực hiện những thao tác đòi hỏi kĩ năng cao. Giống như bị rối loạn vậy."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.","Một lớp giáp ma thuật lấp lánh xung quanh bạn, giúp nâng điểm phòng thủ và tăng khả năng phản lại đòn đánh từ xa."
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,Việc trao đổi chất trong cơ thể bạn bị làm chậm lại khiến bạn không cần ăn nhiều.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,Thị giác đặc biệt giúp bạn nhìn thấy những thực thể có thân nhiệt trong bóng tối.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.","Trong trạng thái say khướt này, sự tự tin ngày càng tăng cao của bạn sẽ chỉ được bù đắp bằng khả năng phán đoán bị suy giảm nghiêm trọng của bạn."
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,Bạn sẽ đột ngột thiếp đi cho đến khi bạn tỉnh dậy hoặc bị đánh thức.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",Bạn có thể biến hình thành thực thể mà bạn muốn nếu bạn điều khiển được phép biến hình. Bạn chỉ có thể biến hình thành các thực thể mà bạn đã giết. Niệm phép biến hình sẽ tiêu tốn dinh dưỡng của bạn.
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","Biến hình thành 1 sinh vật khác với mọi yếu tố thuận lợi và bất lợi của sinh vật đó. Ví dụ: có những thực thế không có tay nhưng bù lại có thể bay và gầm ra tia năng lượng chết người. Khi bạn chết đi khi biến hình, thường bạn sẽ quay trở lại hình dạng ban đầu."
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.",Phép dịch chuyển đưa bạn đến 1 điểm bất kì trên tầng bạn đang ở. Đây là một sự kiện ngẫu nhiên gây rối loạn và khiến cuộc phiêu lưu của bạn thêm phần khó lường nếu không được điều khiển đúng cách. Chủ động sử dụng phép dịch chuyển cho phép bạn lựa chọn đích đến trên bản đồ.
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Bạn cảm thấy được những thực thể khác ở trong hầm ngục.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,Hậu đậu khiến cho bạn thường xuyên làm rơi vũ khí trong giao tranh và khiến bạn ngã khi leo cầu thang.
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",Đây là trạng thái vô hình. Bạn di chuyển khiến ánh sáng bị méo mó đi đôi chút và chỉ có thể nhận ra khi ở gần.
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,Bạn cảm thấy bất an như kiểu cơn giận dữ sẽ nuốt chửng bạn bất kì lúc nào.
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,Vị trí của bạn không xác định chắc chắn và bạn có thể biến mất và xuất hiện lại một cách dễ dàng.
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.","Khiến hình ảnh của bạn trở nên không rõ ràng, lệch đi so với vị trí chính xác của bạn. Điều này khiến đối thủ khó đánh trúng bạn hơn, và mọi đòn đánh tầm xa như phép hay cung bị giảm khả năng đánh trúng bạn."
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,Bạn có thể đào hầm và tự tạo cho mình đường đi trong hầm ngục.
 PropertyName,aggravation,giận dữ
 PropertyName,appraisal,đánh giá
 PropertyName,beatitude,mối phúc
@@ -4563,6 +4739,7 @@ SonicName,explosion,tiếng nổ
 SonicName,fizzle,fizzle
 SonicName,flash,tiếng máy ảnh chụp
 SonicName,flute,tiếng sáo
+SonicName,focus tap,
 SonicName,food,tiếng nhặt thức ăn
 SonicName,footsteps,tiếng bước chân
 SonicName,force,tiếng dùng phép
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,đã đi đến
 TraversalPresentName,ascend,đi lên
 TraversalPresentName,descend,đi xuống
 TraversalPresentName,travel,đi đến
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,cháy
 VolatileName,blood,máu
 VolatileName,electricity,phóng điện

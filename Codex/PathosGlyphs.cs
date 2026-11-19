@@ -19,15 +19,16 @@ namespace Pathos
       foreach (var GlyphField in GlyphsType.GetReflectionInfo().GetReflectionFields().Where(T => T.FieldType == typeof(Glyph)).OrderBy(T => T.Name, StringComparer.Ordinal))
         GlyphField.SetValue(this, Register.Add(GlyphField.Name.Replace('_', ' ')));
 
-      for (var Index = 0; Index < Register.CustomPortraitArray.Length; Index++)
+      for (var Index = 0; Index < Register.CustomAvatarGlyphArray.Length; Index++)
       {
         var Qualifier = Index == 0 ? "" : Index.ToString("D2", System.Globalization.CultureInfo.InvariantCulture);
 
-        var HeroGlyph = Register.Add("__CustomPortrait__" + Qualifier);
+        var AvatarGlyph = Register.Add("__CustomPortrait__" + Qualifier);
 
         var CompanionGlyph = Register.Add("__CustomCompanionPortrait__" + Qualifier);
 
-        Register.CustomPortraitArray[Index] = new CustomPortrait(HeroGlyph, CompanionGlyph);
+        Register.CustomAvatarGlyphArray[Index] = AvatarGlyph;
+        Register.CustomCompanionGlyphArray[Index] = CompanionGlyph;
       }
 
       Register.Interrupt = interrupt;
@@ -91,10 +92,28 @@ namespace Pathos
       Register.Alias(green_mould, "green mold");
       Register.Alias(yellow_mould, "yellow mold");
       Register.Alias(gargoyle, "statue gargoyle");
+      Register.Alias(general_merchant, "merchant");
+      Register.Alias(satyr_male, "satyr");
+      Register.Alias(troll_male, "troll");
+
+      // Uniques.
       Register.Alias(Deliarne, "Dark One");
       Register.Alias(Huhetotl, "Minion of Huhetotl");
       Register.Alias(Neferet, "Neferet the Green");
       Register.Alias(Kaloi_Thrym, "Dark Lord");
+      Register.Alias(Vercrux, "Vecna");
+      Register.Alias(Farwander, "Twoflower");
+      Register.Alias(Raedilan, "Earendil");
+      Register.Alias(Sairou, "Elwing");
+      Register.Alias(Orvalth, "Lolth");
+      Register.Alias(Ghuyaxil, "Yeenoghu");
+      Register.Alias(Oeziblegh, "Juiblex");
+      Register.Alias(Tholmak, "Thorin");
+      Register.Alias(Oleyth, "Lareth");
+      Register.Alias(Jharothy, "Thoth Amon");
+
+      Register.Alias(dread_wraith, "nazgul");
+      Register.Alias(decinder, "balrog");
 
       // Items.
       Register.Alias(green_gem, "jade");
@@ -112,6 +131,7 @@ namespace Pathos
       Register.Alias(Ruby_Key, "ruby key");
       Register.Alias(Shadow_Key, "shadow key");
       Register.Alias(mithril_boots, "steel boots");
+      Register.Alias(frayed_cloth, "piece of cloth");
 
       // Gates.
       Register.Alias(wooden_door_closed_horizontal, "wooden door closed");
@@ -126,7 +146,9 @@ namespace Pathos
       Register.Alias(stone_path, "stone corridor"); // renamed so it can be used outside of dungeon corridors.
 
       // Icons.
-      Register.Alias(appetite, "apetite"); // typo fix.
+      Register.Alias(appetite_icon, "apetite"); // typo fix.
+      Register.Alias(appetite_icon, "appetite"); // wasn't previously an actual icon.
+      Register.Alias(standing_icon, "standing"); // wasn't previously an actual icon.
 
       // dark elven -> drow.
       Register.Alias(drow_mithrilcoat, "dark elven mithril-coat");
@@ -198,7 +220,6 @@ namespace Pathos
     public readonly Glyph Escapist;
     public readonly Glyph Eye_of_Aethiopica;
     public readonly Glyph Philosophers_Stone;
-    public readonly Glyph angel;
     public readonly Glyph archangel;
     public readonly Glyph ant_hole;
     public readonly Glyph antimagic_field;
@@ -230,8 +251,6 @@ namespace Pathos
     public readonly Glyph baby_crocodile;
     public readonly Glyph baby_long_worm;
     public readonly Glyph baby_purple_worm;
-    
-    public readonly Glyph dracon;
 
     public readonly Glyph baby_black_dragon;
     public readonly Glyph baby_blue_dragon;
@@ -287,7 +306,7 @@ namespace Pathos
     public readonly Glyph bad_egg;
     public readonly Glyph bag_of_holding;
     public readonly Glyph bag_of_tricks;
-    public readonly Glyph balrog;
+    public readonly Glyph decinder;
     public readonly Glyph baluchitherium;
     public readonly Glyph banana;
     //public readonly Glyph bandage;
@@ -432,6 +451,7 @@ namespace Pathos
     public readonly Glyph bow;
     public readonly Glyph brass_knuckles;
     public readonly Glyph broadsword;
+    public readonly Glyph gold_plate_mail;
     public readonly Glyph bronze_plate_mail;
     public readonly Glyph brown_mould;
     public readonly Glyph brown_pudding;
@@ -631,7 +651,6 @@ namespace Pathos
     public readonly Glyph duergar;
     public readonly Glyph dung_worm;
     public readonly Glyph dust_vortex;
-    public readonly Glyph dwarf;
     public readonly Glyph dwarf_king;
     public readonly Glyph dwarf_lord;
     public readonly Glyph dwarf_mummy;
@@ -645,14 +664,13 @@ namespace Pathos
     public readonly Glyph dwarvish_roundshield;
     public readonly Glyph dwarvish_short_sword;
     public readonly Glyph dwarvish_spear;
-    public readonly Glyph Earendil;
+    public readonly Glyph Raedilan;
     public readonly Glyph earth_elemental;
     public readonly Glyph earmuffs;
     public readonly Glyph bone_earrings;
     public readonly Glyph gold_earrings;
     public readonly Glyph pearl_earrings;
     public readonly Glyph pearl_golem;
-    public readonly Glyph echo;
     public readonly Glyph efreeti;
     public readonly Glyph egg;
     public readonly Glyph electric_eel;
@@ -666,7 +684,6 @@ namespace Pathos
     public readonly Glyph electric_explosion_top_left;
     public readonly Glyph electric_explosion_top_right;
     public readonly Glyph elephant;
-    public readonly Glyph elf;
     public readonly Glyph elf_king;
     public readonly Glyph elf_lord;
     public readonly Glyph elf_mummy;
@@ -681,7 +698,7 @@ namespace Pathos
     public readonly Glyph elven_shield;
     public readonly Glyph elven_short_sword;
     public readonly Glyph elven_spear;
-    public readonly Glyph Elwing;
+    public readonly Glyph Sairou;
     public readonly Glyph embalmer;
     public readonly Glyph energy_vortex;
     public readonly Glyph erinys;
@@ -699,7 +716,6 @@ namespace Pathos
     public readonly Glyph falling_rock_trap;
     public readonly Glyph Famine;
     public readonly Glyph Father_Dagon;
-    public readonly Glyph fairy;
     public readonly Glyph fauchard;
     public readonly Glyph fedora;
     public readonly Glyph fish;
@@ -769,6 +785,8 @@ namespace Pathos
     public readonly Glyph female_wizard;
 
     // angel.
+    public readonly Glyph angel;
+
     public readonly Glyph angel_nonbinary_bard;
     public readonly Glyph angel_nonbinary_healer;
     public readonly Glyph angel_nonbinary_paladin;
@@ -776,12 +794,17 @@ namespace Pathos
     public readonly Glyph angel_male_barbarian;
     public readonly Glyph angel_male_bard;
     public readonly Glyph angel_male_healer;
+    public readonly Glyph angel_male_jester;
+    public readonly Glyph angel_male_necromancer;
     public readonly Glyph angel_male_ninja;
     public readonly Glyph angel_male_paladin;
     public readonly Glyph angel_male_ranger;
     public readonly Glyph angel_male_reaver;
+    public readonly Glyph angel_male_templar;
 
+    public readonly Glyph angel_female_barbarian;
     public readonly Glyph angel_female_healer;
+    public readonly Glyph angel_female_necromancer;
     public readonly Glyph angel_female_ninja;
     public readonly Glyph angel_female_paladin;
     public readonly Glyph angel_female_ranger;
@@ -790,6 +813,7 @@ namespace Pathos
 
     // demon.
     public readonly Glyph demon;
+
     public readonly Glyph demon_male_barbarian;
     public readonly Glyph demon_male_bard;
     public readonly Glyph demon_male_caveman;
@@ -837,6 +861,9 @@ namespace Pathos
     public readonly Glyph demon_female_wizard;
 
     // dracon.
+    public readonly Glyph dracon;
+
+    public readonly Glyph dracon_male_barbarian;
     public readonly Glyph dracon_male_bard;
     public readonly Glyph dracon_male_caveman;
     public readonly Glyph dracon_male_druid;
@@ -854,6 +881,8 @@ namespace Pathos
     public readonly Glyph dracon_female_druid;
 
     // dwarf.
+    public readonly Glyph dwarf;
+
     public readonly Glyph dwarf_male_barbarian;
     public readonly Glyph dwarf_male_bard;
     public readonly Glyph dwarf_male_caveman;
@@ -891,6 +920,8 @@ namespace Pathos
     public readonly Glyph dwarf_female_valkyrie;
 
     // echo.
+    public readonly Glyph echo;
+
     public readonly Glyph echo_male_gunslinger;
     public readonly Glyph echo_male_knight;
     public readonly Glyph echo_male_mystic;
@@ -899,8 +930,11 @@ namespace Pathos
     public readonly Glyph echo_male_wizard;
 
     // elf.
+    public readonly Glyph elf;
+
     public readonly Glyph elf_male_bard;
     public readonly Glyph elf_male_explorer;
+    public readonly Glyph elf_male_knight;
     public readonly Glyph elf_male_paladin;
     public readonly Glyph elf_male_priest;
     public readonly Glyph elf_male_ranger;
@@ -915,7 +949,11 @@ namespace Pathos
     public readonly Glyph elf_female_reaver;
     public readonly Glyph elf_female_wizard;
 
+    public readonly Glyph elf_nonbinary_priest;
+
     // fairy.
+    public readonly Glyph fairy;
+
     public readonly Glyph fairy_male_barbarian;
     public readonly Glyph fairy_male_bard;
     public readonly Glyph fairy_male_caveman;
@@ -949,13 +987,25 @@ namespace Pathos
     public readonly Glyph fairy_female_wizard;
 
     // kobold.
+    public readonly Glyph kobold;
+
     public readonly Glyph kobold_male_knight;
     public readonly Glyph kobold_male_gunslinger;
+    public readonly Glyph kobold_male_miner;
+    public readonly Glyph kobold_male_monk;
+    public readonly Glyph kobold_male_mystic;
+    public readonly Glyph kobold_male_ninja;
     public readonly Glyph kobold_male_priest;
     public readonly Glyph kobold_male_ranger;
     public readonly Glyph kobold_male_templar;
+    public readonly Glyph kobold_male_tinker;
+    public readonly Glyph kobold_male_wizard;
+
+    public readonly Glyph kobold_nonbinary_miner;
 
     // giant.
+    public readonly Glyph giant;
+
     public readonly Glyph giant_male_barbarian;
     public readonly Glyph giant_male_bard;
     public readonly Glyph giant_male_caveman;
@@ -1019,6 +1069,8 @@ namespace Pathos
     public readonly Glyph giant_female_wizard;
 
     // gnome.
+    public readonly Glyph gnome;
+
     public readonly Glyph gnome_male_barbarian;
     public readonly Glyph gnome_male_bard;
     public readonly Glyph gnome_male_caveman;
@@ -1065,15 +1117,22 @@ namespace Pathos
     public readonly Glyph gnome_female_wizard;
 
     // halfling.
+    public readonly Glyph halfling;
+
+    public readonly Glyph halfling_male_caveman;
     public readonly Glyph halfling_male_knight;
     public readonly Glyph halfling_male_reaver;
+    public readonly Glyph halfling_male_rogue;
 
+    public readonly Glyph halfling_female_caveman;
     public readonly Glyph halfling_female_reaver;
 
     // human.
     // NOTE: just replace the base one instead eg. male_knight/female_knight.
 
     // lizardman.
+    public readonly Glyph lizardman;
+
     public readonly Glyph lizardman_male_barbarian;
     public readonly Glyph lizardman_male_bard;
     public readonly Glyph lizardman_male_caveman;
@@ -1094,6 +1153,7 @@ namespace Pathos
     public readonly Glyph lizardman_male_wizard;
 
     public readonly Glyph lizardman_female_barbarian;
+    public readonly Glyph lizardman_female_bard;
     public readonly Glyph lizardman_female_caveman;
     public readonly Glyph lizardman_female_jester;
     public readonly Glyph lizardman_female_knight;
@@ -1108,6 +1168,8 @@ namespace Pathos
     public readonly Glyph lizardman_female_wizard;
 
     // minotaur.
+    public readonly Glyph minotaur;
+
     public readonly Glyph minotaur_male_barbarian;
     public readonly Glyph minotaur_male_explorer;
     public readonly Glyph minotaur_male_knight;
@@ -1121,7 +1183,13 @@ namespace Pathos
     public readonly Glyph minotaur_male_tourist;
     public readonly Glyph minotaur_male_wizard;
 
+    public readonly Glyph minotaur_female_monk;
+
+    public readonly Glyph minotaur_nonbinary_monk;
+
     // orc.
+    public readonly Glyph orc;
+
     public readonly Glyph orc_male_barbarian;
     public readonly Glyph orc_male_gunslinger;
     public readonly Glyph orc_male_jester;
@@ -1132,6 +1200,7 @@ namespace Pathos
     public readonly Glyph orc_male_rogue;
     public readonly Glyph orc_male_samurai;
     public readonly Glyph orc_male_shaman;
+    public readonly Glyph orc_male_templar;
     public readonly Glyph orc_male_wizard;
 
     public readonly Glyph orc_female_barbarian;
@@ -1148,12 +1217,20 @@ namespace Pathos
     public readonly Glyph orc_female_wizard;
 
     // plasmoid.
+    public readonly Glyph plasmoid;
+
     public readonly Glyph plasmoid_nonbinary_tinker;
+    public readonly Glyph plasmoid_nonbinary_valkyrie;
 
     // changeling.
+    public readonly Glyph changeling;
+
     public readonly Glyph changeling_male_healer;
+    public readonly Glyph changeling_male_mystic;
 
     // robot.
+    public readonly Glyph robot;
+
     public readonly Glyph robot_male_barbarian;
     public readonly Glyph robot_male_bard;
     public readonly Glyph robot_male_caveman;
@@ -1186,6 +1263,7 @@ namespace Pathos
     public readonly Glyph robot_male_wizard;
 
     public readonly Glyph robot_female_bard;
+    public readonly Glyph robot_female_caveman;
     public readonly Glyph robot_female_druid;
     public readonly Glyph robot_female_jester;
     public readonly Glyph robot_female_knight;
@@ -1196,6 +1274,7 @@ namespace Pathos
 
 
     // satyr.
+    public readonly Glyph satyr_male;
     public readonly Glyph satyr_male_barbarian;
     public readonly Glyph satyr_male_bard;
     public readonly Glyph satyr_male_caveman;
@@ -1227,13 +1306,42 @@ namespace Pathos
     public readonly Glyph satyr_male_valkyrie;
     public readonly Glyph satyr_male_wizard;
 
+    public readonly Glyph satyr_female;
+    public readonly Glyph satyr_female_barbarian;
+    public readonly Glyph satyr_female_bard;
+    public readonly Glyph satyr_female_caveman;
     public readonly Glyph satyr_female_convict;
     public readonly Glyph satyr_female_druid;
+    public readonly Glyph satyr_female_explorer;
+    public readonly Glyph satyr_female_gladiator;
+    public readonly Glyph satyr_female_gunslinger;
+    public readonly Glyph satyr_female_healer;
+    public readonly Glyph satyr_female_hunter;
+    public readonly Glyph satyr_female_jester;
+    public readonly Glyph satyr_female_knight;
+    public readonly Glyph satyr_female_miner;
+    public readonly Glyph satyr_female_monk;
+    public readonly Glyph satyr_female_mystic;
+    public readonly Glyph satyr_female_ninja;
+    public readonly Glyph satyr_female_necromancer;
+    public readonly Glyph satyr_female_paladin;
+    public readonly Glyph satyr_female_pirate;
+    public readonly Glyph satyr_female_priest;
+    public readonly Glyph satyr_female_ranger;
     public readonly Glyph satyr_female_reaver;
+    public readonly Glyph satyr_female_rogue;
+    public readonly Glyph satyr_female_samurai;
     public readonly Glyph satyr_female_shaman;
+    public readonly Glyph satyr_female_tinker;
+    public readonly Glyph satyr_female_templar;
+    public readonly Glyph satyr_female_tourist;
+    public readonly Glyph satyr_female_valkyrie;
     public readonly Glyph satyr_female_wizard;
 
     // troll
+    public readonly Glyph troll_male;
+    public readonly Glyph troll_female;
+
     public readonly Glyph troll_male_barbarian;
     public readonly Glyph troll_male_bard;
     public readonly Glyph troll_male_caveman;
@@ -1279,6 +1387,7 @@ namespace Pathos
     public readonly Glyph ice_storm_spell;
     //public readonly Glyph fishing_pole;
     public readonly Glyph flail;
+    public readonly Glyph gold_flail;
     public readonly Glyph flame_sphere;
     public readonly Glyph earth_sphere;
     public readonly Glyph water_sphere;
@@ -1323,7 +1432,6 @@ namespace Pathos
     public readonly Glyph ghoul;
     public readonly Glyph ghoul_mage;
     public readonly Glyph ghoul_queen;
-    public readonly Glyph giant;
     public readonly Glyph giant_ant;
     public readonly Glyph giant_badger;
     public readonly Glyph giant_bat;
@@ -1357,7 +1465,6 @@ namespace Pathos
     public readonly Glyph gnoll_chieftain;
     public readonly Glyph gnoll_shaman;
     public readonly Glyph gnoll_warrior;
-    public readonly Glyph gnome;
     public readonly Glyph gnome_king;
     public readonly Glyph gnome_lord;
     public readonly Glyph gnome_mummy;
@@ -1455,8 +1562,6 @@ namespace Pathos
     public readonly Glyph hill_orc;
     public readonly Glyph Hippocrates;
     public readonly Glyph hive_floor;
-    public readonly Glyph changeling;
-    public readonly Glyph halfling;
     public readonly Glyph hobgoblin;
     public readonly Glyph hole;
     public readonly Glyph holy_wafer;
@@ -1522,7 +1627,7 @@ namespace Pathos
     public readonly Glyph jellyfish;
     public readonly Glyph jiggling_blob;
     public readonly Glyph juggernaut;
-    public readonly Glyph Juiblex;
+    public readonly Glyph Oeziblegh;
     public readonly Glyph jumping_spell;
     public readonly Glyph blinking_spell;
     public readonly Glyph phasing_spell;
@@ -1545,7 +1650,6 @@ namespace Pathos
     public readonly Glyph kitten;
     public readonly Glyph knife;
     public readonly Glyph knock_spell;
-    public readonly Glyph kobold;
     public readonly Glyph kobold_scout;
     public readonly Glyph kobold_king;
     public readonly Glyph kobold_lord;
@@ -1565,7 +1669,7 @@ namespace Pathos
     public readonly Glyph lance;
     public readonly Glyph land_mine;
     public readonly Glyph lantern;
-    public readonly Glyph Lareth;
+    public readonly Glyph Oleyth;
     public readonly Glyph large_box_closed;
     public readonly Glyph large_box_locked;
     public readonly Glyph large_box_broken;
@@ -1622,7 +1726,6 @@ namespace Pathos
     public readonly Glyph living_wall;
     public readonly Glyph living_wall_spell;
     public readonly Glyph lizard;
-    public readonly Glyph lizardman;
     public readonly Glyph lizardman_berserker;
     public readonly Glyph lizardman_chieftain;
     public readonly Glyph lizardman_mage;
@@ -1630,7 +1733,7 @@ namespace Pathos
     public readonly Glyph lizardman_warrior;
     //public readonly Glyph loadstone;
     public readonly Glyph lock_pick;
-    public readonly Glyph Lolth;
+    public readonly Glyph Orvalth;
     public readonly Glyph long_sword;
     public readonly Glyph long_worm;
     public readonly Glyph long_worm_tail;
@@ -1694,13 +1797,23 @@ namespace Pathos
     public readonly Glyph medusa;
     public readonly Glyph mellified_man;
     public readonly Glyph melon;
-    public readonly Glyph merchant;
+    public readonly Glyph general_merchant;
+    public readonly Glyph armour_merchant;
+    public readonly Glyph weapon_merchant;
+    public readonly Glyph firearm_merchant;
+    public readonly Glyph food_merchant;
+    public readonly Glyph potion_merchant;
+    public readonly Glyph scroll_merchant;
+    public readonly Glyph book_merchant;
+    public readonly Glyph jewel_merchant;
+    public readonly Glyph tool_merchant;
+    public readonly Glyph wand_merchant;
+    public readonly Glyph light_merchant;
     public readonly Glyph migo_drone;
     public readonly Glyph migo_queen;
     public readonly Glyph migo_warrior;
     public readonly Glyph mind_flayer;
     public readonly Glyph Huhetotl;
-    public readonly Glyph minotaur;
     public readonly Glyph minotaur_lord;
     //public readonly Glyph mirror;
     public readonly Glyph mist_wolf;
@@ -1730,7 +1843,7 @@ namespace Pathos
     public readonly Glyph nabassu;
     public readonly Glyph nalfeshnee;
     public readonly Glyph Nalzok;
-    public readonly Glyph nazgul;
+    public readonly Glyph dread_wraith;
     public readonly Glyph neanderthal;
     public readonly Glyph occultist;
     public readonly Glyph Neferet;
@@ -1759,7 +1872,6 @@ namespace Pathos
     public readonly Glyph orange_dragon_scales;
     public readonly Glyph orange_gem;
     public readonly Glyph orange_jelly;
-    public readonly Glyph orc;
     public readonly Glyph orc_berserker;
     public readonly Glyph orc_captain;
     public readonly Glyph orc_grunt;
@@ -1808,7 +1920,6 @@ namespace Pathos
     public readonly Glyph pixie;
     public readonly Glyph plains_centaur;
     public readonly Glyph Planetar;
-    public readonly Glyph plasmoid;
     public readonly Glyph plastic_golem;
     public readonly Glyph plastic_sword;
     public readonly Glyph plate_mail;
@@ -1895,8 +2006,6 @@ namespace Pathos
     public readonly Glyph sapphire_golem;
     public readonly Glyph topaz_golem;
     public readonly Glyph sasquatch;
-    public readonly Glyph robot;
-    public readonly Glyph satyr;
     public readonly Glyph scale_mail;
     public readonly Glyph scalpel;
     public readonly Glyph scimitar;
@@ -2014,6 +2123,8 @@ namespace Pathos
     //public readonly Glyph stethoscope;
     public readonly Glyph stiletto;
     public readonly Glyph sewer_floor;
+    public readonly Glyph sewer_ladder_down;
+    public readonly Glyph sewer_ladder_up;
     public readonly Glyph sewer_wall_bottom_left_corner;
     public readonly Glyph sewer_wall_bottom_right_corner;
     public readonly Glyph sewer_wall_cross;
@@ -2033,6 +2144,22 @@ namespace Pathos
     //public readonly Glyph sewer_wall_void;
     public readonly Glyph stone_path;
     public readonly Glyph stone_floor;
+    public readonly Glyph cave_join;
+    public readonly Glyph dirt_join;
+    public readonly Glyph grass_join;
+    public readonly Glyph moss_join;
+    public readonly Glyph snow_join;
+    public readonly Glyph sand_join;
+    public readonly Glyph stone_join;
+    public readonly Glyph stone_path_join;
+    public readonly Glyph sewer_join;
+    public readonly Glyph gold_join;
+    public readonly Glyph hive_join;
+    public readonly Glyph granite_join;
+    public readonly Glyph obsidian_join;
+    public readonly Glyph marble_join;
+    public readonly Glyph metal_join;
+    public readonly Glyph wooden_join;
     public readonly Glyph stone_giant;
     public readonly Glyph stone_golem;
     public readonly Glyph stone_staircase_down;
@@ -2072,8 +2199,8 @@ namespace Pathos
     public readonly Glyph teleport_away_spell;
     public readonly Glyph teleporter;
     public readonly Glyph tengu;
-    public readonly Glyph Thorin;
-    public readonly Glyph Thoth_Amon;
+    public readonly Glyph Tholmak;
+    public readonly Glyph Jharothy;
     public readonly Glyph throne;
     public readonly Glyph throne_broken;
     public readonly Glyph thug;
@@ -2098,7 +2225,6 @@ namespace Pathos
     public readonly Glyph tree;
     public readonly Glyph trident;
     public readonly Glyph tripe_ration;
-    public readonly Glyph troll;
     public readonly Glyph cave_troll;
     public readonly Glyph troll_mummy;
     public readonly Glyph tsetse_fly;
@@ -2106,7 +2232,7 @@ namespace Pathos
     public readonly Glyph tsurugi;
     public readonly Glyph tunnel_worm;
     public readonly Glyph turn_undead_spell;
-    public readonly Glyph Twoflower;
+    public readonly Glyph Farwander;
     public readonly Glyph twohanded_sword;
     public readonly Glyph twoheaded_troll;
     public readonly Glyph umber_hulk;
@@ -2118,7 +2244,7 @@ namespace Pathos
     public readonly Glyph vampire_lord;
     public readonly Glyph vampire_mage;
     public readonly Glyph Van_Helsing;
-    public readonly Glyph Vecna;
+    public readonly Glyph Vercrux;
     public readonly Glyph violet_fungus;
     public readonly Glyph violet_gem;
     public readonly Glyph vorpal_jabberwock;
@@ -2288,7 +2414,7 @@ namespace Pathos
     public readonly Glyph treant;
     public readonly Glyph xorn;
     public readonly Glyph ya;
-    public readonly Glyph Yeenoghu;
+    public readonly Glyph Ghuyaxil;
     public readonly Glyph yellow_dragon_scale_mail;
     public readonly Glyph yellow_dragon_scales;
     public readonly Glyph yellow_jacket;
@@ -2338,7 +2464,7 @@ namespace Pathos
     public readonly Glyph octagonal_amulet;
     public readonly Glyph pyramidal_amulet;
     public readonly Glyph oval_amulet;
-    public readonly Glyph piece_of_cloth;
+    public readonly Glyph frayed_cloth;
     public readonly Glyph dirty_rag;
     public readonly Glyph opera_cloak;
     public readonly Glyph ornamental_cope;
@@ -2497,7 +2623,7 @@ namespace Pathos
     public readonly Glyph Muramasa;
     public readonly Glyph Sunsword;
     public readonly Glyph Talaria;
-    public readonly Glyph Verimurus;    
+    public readonly Glyph Verimurus;
     public readonly Glyph The_Hero;
     public readonly Glyph Voltaic;
     public readonly Glyph Vorpal_Blade;
@@ -2620,66 +2746,87 @@ namespace Pathos
     public readonly Glyph thirst_punishment;
     public readonly Glyph wanted_punishment;
 
-    public readonly Glyph appetite;
-    public readonly Glyph standing;
-
+    public readonly Glyph appetite_icon;
+    public readonly Glyph standing_icon;
+    public readonly Glyph achievements_icon;
+    public readonly Glyph actions_icon;
     public readonly Glyph artifact_icon;
+    public readonly Glyph assets_icon;
     public readonly Glyph attack_icon;
     public readonly Glyph barrier_icon;
+    public readonly Glyph boon_icon;
     public readonly Glyph boulder_icon;
     public readonly Glyph cast_icon;
     public readonly Glyph character_icon;
+    public readonly Glyph craft_icon;
+    public readonly Glyph conceal_icon;
     public readonly Glyph continue_icon;
+    public readonly Glyph custom_icon;
+    public readonly Glyph cut_icon;
     public readonly Glyph defence_icon;
+    public readonly Glyph depth_icon;
     public readonly Glyph device_icon;
+    public readonly Glyph drop_icon;
+    public readonly Glyph dump_icon;
+    public readonly Glyph duration_icon;
     public readonly Glyph encumbrance_icon;
     public readonly Glyph entity_icon;
+    public readonly Glyph equip_icon;
     public readonly Glyph extinction_icon;
+    public readonly Glyph fame_icon;
     public readonly Glyph fixture_icon;
     public readonly Glyph floor_icon;
+    public readonly Glyph follow_icon;
     public readonly Glyph gate_icon;
-    public readonly Glyph volatile_icon;
+    public readonly Glyph help_icon;
     public readonly Glyph inventory_icon;
     public readonly Glyph journal_icon;
+    public readonly Glyph letter_icon;
+    public readonly Glyph life_icon;
     public readonly Glyph light_icon;
+    public readonly Glyph lock_icon;
+    public readonly Glyph loot_icon;
+    public readonly Glyph mana_icon;
     public readonly Glyph map_icon;
     public readonly Glyph more_icon;
+    public readonly Glyph name_icon;
+    public readonly Glyph palette_icon;
     public readonly Glyph party_icon;
+    public readonly Glyph paste_icon;
+    public readonly Glyph peace_icon;
     public readonly Glyph platform_icon;
+    public readonly Glyph play_icon;
     public readonly Glyph portal_icon;
+    public readonly Glyph portrait_icon;
     public readonly Glyph quiver_icon;
+    public readonly Glyph redo_icon;
+    public readonly Glyph remove_icon;
+    public readonly Glyph reroll_icon;
     public readonly Glyph rest_icon;
+    public readonly Glyph resurrection_icon;
+    public readonly Glyph return_icon;
+    public readonly Glyph scrap_icon;
     public readonly Glyph search_icon;
+    public readonly Glyph share_icon;
     public readonly Glyph speed_icon;
     public readonly Glyph spell_icon;
     public readonly Glyph stash_icon;
     public readonly Glyph steed_icon;
     public readonly Glyph stuck_icon;
-    public readonly Glyph peace_icon;
+    public readonly Glyph swap_icon;
+    public readonly Glyph take_icon;
+    public readonly Glyph talk_icon;
     public readonly Glyph tally_icon;
-    public readonly Glyph reroll_icon;
-    public readonly Glyph resurrection_icon;
-    public readonly Glyph fame_icon;
+    public readonly Glyph throw_icon;
+    public readonly Glyph trade_icon;
     public readonly Glyph trigger_icon;
-    public readonly Glyph life_icon;
-    public readonly Glyph mana_icon;
-    public readonly Glyph actions_icon;
-    public readonly Glyph assets_icon;
-    public readonly Glyph depth_icon;
-    public readonly Glyph duration_icon;
-    public readonly Glyph cut_icon;
-    public readonly Glyph paste_icon;
     public readonly Glyph undo_icon;
-    public readonly Glyph redo_icon;
-    public readonly Glyph play_icon;
-    public readonly Glyph vanity_icon;
-    public readonly Glyph palette_icon;
-    public readonly Glyph help_icon;
-    public readonly Glyph return_icon;
-    public readonly Glyph follow_icon;
-    public readonly Glyph custom_icon;
-    public readonly Glyph portrait_icon;
     public readonly Glyph unknown_icon;
+    public readonly Glyph unlock_icon;
+    public readonly Glyph untrap_icon;
+    public readonly Glyph use_icon;
+    public readonly Glyph vanity_icon;
+    public readonly Glyph volatile_icon;
 
     public readonly Glyph white_warning;
     public readonly Glyph yellow_warning;
@@ -2840,8 +2987,8 @@ namespace Pathos
     public readonly Glyph noble;
     public readonly Glyph protagonist;
     public readonly Glyph scholar;
+    public readonly Glyph psychic_special;
     public Glyph drunkard_special => brown_potion;
-    public Glyph psychic_special => psychic_strike;
     public Glyph skeleton_special => skeleton;
     public Glyph glass_special => glass_golem;
     public Glyph quantum_special => quantum_mechanic;

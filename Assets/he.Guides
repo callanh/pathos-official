@@ -1,59 +1,64 @@
 # Commands; פקודות
-. Single tap/left click or arrow keys to move and attack.; לחיצה קצרה/קליק שמאלי או מקשי החצים כדי לזוז ולתקוף
+. Single tap/left click or direction keys to move and attack.; לחיצה קצרה/קליק שמאלי או מקשי החצים כדי לזוז ולתקוף
 . Long press/right click to operate doors/traps.; לחיצה ארוכה/קליק ימני כדי להפעיל דלתות/מלכודות
 . Double tap to pick up items, traverse stairs or wait one move.; לחיצה כפולה כדי להרים חפצים, להשתמש במדרגות או לחכות תור אחד
 /
-- . | wait one turn (also double tap on self); . | לחכות תור אחד (גם לחיצה כפולה על הדמות שלך)
-- , | pick up the top item on the floor; , | להרים את החפץ העליון מהרצפה
-- A | toggle log (click the log to expand/collapse); A | הצגת יומן (לחיצה על היומן תגדיל ותכווץ אותו)
-- B | move down-left; B | תנועה שמאלה-ולמטה
-- C | toggle character; C | הצגת הדמות שלך
-- D | re-use last item; D | שימוש נוסף בחפץ האחרון
-- E | mount or dismount your steed; E | לרכוב או לרדת מהרמך שלך
-- F | toggle floor; F | הצגת הרצפה
-- G | re-equip last item; G | לבישה או אחיזה של החפץ האחרון
-- H | move left; H | תנועה שמאלה
-- I | toggle inventory; I | הצגת המלאי שלך
-- J | move down; J | תנועה למטה
-- K | move up; K | תנועה למעלה
-- L | move right; L | תנועה ימינה
-- M | toggle map; M | הצגת המפה
-- N | move down-right; N | תנועה ימינה-ולמטה
-- O | hide from view; O | הסתרה של הדמות שלך
-- P | polymorph at will; P | שינוי צורה רצוני
-- Q | save or quit this game; Q | שמירה או יציאה מהמשחק
-- R | for rest mode to recover life and mana; R | מנוחה להתאוששות והחזר נקודות חיים וקסם
-- S | for search mode for secret doors and traps; S | מצב חיפוש דלתות נסתרות ומלכודות
-- T | teleport at will; T | השתגרות רצונית
-- U | move up-right; U | תנועה ימינה-ולמעלה
-- V | kick in a direction; V | בעיטה בכיוון מסוים
-- W | jump in a direction (if you have the talent); W | קפיצה בכיוון מסוים (אם יש לך כישור מתאים)
-- X | re-cast last spell; X | חזרה על לחש הקסם האחרון
-- Y | move up-left; Y | תנועה שמאלה-ולמעלה
-- Z | toggle cast spells (read books to learn spells); Z | הצגת לחשי קסם (צריך לקרוא ספרים כדי ללמוד לחשים)
-- ' | blink in a direction; ' | בזיקה בכיוון מסוים
-- ;; | telekinesis in a direction; ;; | טלקינזיס בכיוון מסוים
-- > | descend stairs; > | ירידה במדרגות
-- < | ascend stairs; < | עלייה במדרגות
-- / | toggle chat in multiplayer; / | הצגת הצ'אט במשחק מרובה משתתפים
-- \ | view knowledge panel; \ | הצגת פאנל הידע
-- + | zoom in; + | הגדלת תצוגה
-- - | zoom out; - | הקטנת תצוגה
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | פעולות מהירות שמאלה (שיפט + מספר לשינוי הפעולה)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | פעולות מהירות ימינה (שיפט + מספר לשינוי הפעולה)
-- INSERT | toggle tunnelling mode; INSERT | הפעלת מצב חפירה
-- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | יריה מבלי לזוז מהמקום
-- CTRL + arrow | interact with the target without moving; CTRL + arrow | פעולות על מטרה מבלי לזוז מהמקום
-- ENTER | select the top item on the floor; ENTER | בחירת החפץ העליון על הרצפה
-- ESCAPE | hides open panels and clears your target; ESCAPE | הסתרת חלונות פתוחים ואיפוס המטרה
+- $Left$ | move left; $Left$ | תנועה שמאלה
+- $Right$ | move right; $Right$ | תנועה ימינה
+- $Up$ | move up; $Up$ | תנועה למעלה
+- $Down$ | move down; $Down$ | תנועה למטה
+- $UpLeft$ | move up-left; $UpLeft$ | תנועה שמאלה-ולמעלה
+- $UpRight$ | move up-right; $UpRight$ | תנועה ימינה-ולמעלה
+- $DownLeft$ | move down-left; $DownLeft$ | תנועה שמאלה-ולמטה
+- $DownRight$ | move down-right; $DownRight$ | תנועה ימינה-ולמטה
+- SHIFT + direction | fire a missile without moving; SHIFT + direction | יריה מבלי לזוז מהמקום
+- CTRL + direction | interact with the target without moving; CTRL + direction | פעולות על מטרה מבלי לזוז מהמקום
+- $Select$ | select the top item on the floor; $Select$ | בחירת החפץ העליון על הרצפה
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | הסתרת חלונות פתוחים ואיפוס המטרה
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | ביטול חלונות פתוחים ומיקוד באמצעות המקלדת
 - SPACE | toggle real-time or turn-based; SPACE | מעבר בין משחק זמן-אמיתי למשחק מבוסס-תורות
-- PgUp | switch to previous character; PgUp | החלפה לדמות הקודמת
-- PgDown | switch to next character; PgDown | החלפה לדמות הבאה
-- ALT | show labels; ALT | הצגת תוויות
-- F1 | show this help; F1 | הצגת מסך העזרה
-- F6 | quick save; F6 | שמירה מהירה
-- F10 | open side menu; F10 | פתיחת תפריט צד
+- CTRL/ALT | show labels; CTRL/ALT | הצגת תוויות
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | להרים את החפץ העליון מהרצפה
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | לחכות תור אחד (גם לחיצה כפולה על הדמות שלך)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | מנוחה להתאוששות והחזר נקודות חיים וקסם
+- $Search$ | for search mode for secret doors and traps; $Search$ | מצב חיפוש דלתות נסתרות ומלכודות
+- $Descend$ | descend stairs; $Descend$ | ירידה במדרגות
+- $Ascend$ | ascend stairs; $Ascend$ | עלייה במדרגות
+- $Character$ | toggle character; $Character$ | הצגת הדמות שלך
+- $Inventory$ | toggle inventory; $Inventory$ | הצגת המלאי שלך
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | הצגת לחשי קסם (צריך לקרוא ספרים כדי ללמוד לחשים)
+- $Floor$ | toggle floor; $Floor$ | הצגת הרצפה
+- $Map$ | toggle map; $Map$ | הצגת המפה
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | הצגת יומן (לחיצה על היומן תגדיל ותכווץ אותו)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | הצגת פאנל הידע
+- $Chat$ | toggle chat in multiplayer; $Chat$ | הצגת הצ'אט במשחק מרובה משתתפים
+- $Kick$ | kick in a direction; $Kick$ | בעיטה בכיוון מסוים
+- $Mount$ | mount or dismount your steed; $Mount$ | לרכוב או לרדת מהרמך שלך
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | קפיצה בכיוון מסוים (אם יש לך כישור מתאים)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | בזיקה בכיוון מסוים
+- $Teleport$ | teleport at will; $Teleport$ | השתגרות רצונית
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | טלקינזיס בכיוון מסוים
+- $Polymorph$ | polymorph at will; $Polymorph$ | שינוי צורה רצוני
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | הפעלת מצב חפירה
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | פתיחת תפריט צד
+- $QuickSave$ | quick save; $QuickSave$ | שמירה מהירה
+- $Help$ | show this help; $Help$ | הצגת מסך העזרה
+- $Quit$ | save or quit this game; $Quit$ | שמירה או יציאה מהמשחק
+- $ZoomIn$ | zoom in; $ZoomIn$ | הגדלת תצוגה
+- $ZoomOut$ | zoom out; $ZoomOut$ | הקטנת תצוגה
+- $ActionReuse$ | re-use last item; $ActionReuse$ | שימוש נוסף בחפץ האחרון
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | לבישה או אחיזה של החפץ האחרון
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | חזרה על לחש הקסם האחרון
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | החלפה לדמות הקודמת
+- $SwitchDown$ | switch to next character; $SwitchDown$ | החלפה לדמות הבאה
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | פעולות מהירות שמאלה (שיפט + מספר לשינוי הפעולה)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | פעולות מהירות ימינה (שיפט + מספר לשינוי הפעולה)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | מעבר ממסך מלא לחלון (בגרסת חלונות)
 
 # General mechanics; מכניקה כללית של המשחק
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + יכולות ששיפרת x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + כישורים שרכשת x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + עמידויות שרכשת x {Multiplier}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); + סך שווי המלאי (בזהב)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; סך שווי המלאי מוגבל כך שלא יוכל להיות יותר מסך כל שאר הניקוד
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; ייתכן שהדמות שלך לא נועדה לשרוד והמוות יבוא במהירות שוב
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; ניתן להחיות ללא הגבלה אך כל התהילה שהשגת תתאפס
 . Fame achieved subsequent to your resurrection will contribute to your score.; רק התהילה שתושג לאחר תחיית הדמות שלך תיספר
-. This is similar to the 'explorer mode' from the original Nethack.; זה דומה ל'מצב חקירה' במשחק המקורי, נטהאק
+. This is similar to the 'explorer mode' from the original NetHack.; זה דומה ל'מצב חקירה' במשחק המקורי, נטהאק
 
 # Multiplayer; משחק מרובה שחקנים
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; משחק מרובה שחקנים מבוסס על טכנולוגיית 'גרפיקל טלנט' מפלטפורמת אינבנשן
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; זהו מצב צ'יטים ללמידה מהירה יותר של כל הסודות של פאתוס
 . Any adventures in this mode will not be tracked in the hall of fame.; כל ההרפתקאות במצב הזה לא מזכות בכניסה להיכל התהילה
 /
-- ` | open master console (more commands); ` | פתיחת קונסולת מאסטר (יותר פקודות)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | החשכת האזור
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | הולדת מפלצת עוטפת אקראית והיבלעות בתוכה
-- shift + F | all adjacent enemies are charmed; shift + F | הקסמה של כל האוייבים בסביבה
-- shift + G | gain 1000 gold; shift + G | קבלת 1000 מטבעות זהב
-- shift + I | identify all items on the floor; shift + I | זיהוי כל החפצים בקומה
-- shift + W | jump at will; shift + W | קפיצה רצונית
-- shift + D | light this zone; shift + D | הארת האזור
-- shift + M | reveal the entire map; shift + M | גילוי של כל המפה
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | גילוי המפה בכל הקומות
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | שינוי המבוך (המפה הסופית משתנה)
-- shift + P | polymorph into any entity; shift + P | שינוי צורה לכל יישות שהיא
-- shift + T | teleport to a target zone; shift + T | השתגרות לאזור המטרה
-- shift + Z | learn all spells; shift + Z | לימוד כל לחשי הקסם
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | הפעלת מצב שימוש אוטומטי (דריכה על משבצת תגרום לשימוש בכל החפצים שעליה)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | עלייה לקומה הקודמת של המבוך (גם אם אין מדרגות)
-- > | descend to the next dungeon level (even when not on a staircase); > | ירידה לקומה הבאה של המבוך (גם אם אין מדרגות)
-- F5 | refresh the screen; F5 | רפרוש של המסך
-- F9 | quick load; F9 | טעינה מהירה
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | פתיחת קונסולת מאסטר (יותר פקודות)
+- $MasterLightness$ | light this zone; $MasterLightness$ | הארת האזור
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | החשכת האזור
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | הולדת מפלצת עוטפת אקראית והיבלעות בתוכה
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | הקסמה של כל האוייבים בסביבה
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | קבלת 1000 מטבעות זהב
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | זיהוי כל החפצים בקומה
+- $MasterJump$ | jump at will; $MasterJump$ | קפיצה רצונית
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | גילוי של כל המפה
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | גילוי המפה בכל הקומות
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | שינוי המבוך (המפה הסופית משתנה)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | שינוי צורה לכל יישות שהיא
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | השתגרות לאזור המטרה
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | לימוד כל לחשי הקסם
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | הפעלת מצב שימוש אוטומטי (דריכה על משבצת תגרום לשימוש בכל החפצים שעליה)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | עלייה לקומה הקודמת של המבוך (גם אם אין מדרגות)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | ירידה לקומה הבאה של המבוך (גם אם אין מדרגות)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | רפרוש של המסך
+- $QuickLoad$ | quick load; $QuickLoad$ | טעינה מהירה
 /
 . There are additional manipulations built into the character panel and contextual help.; פעולות נוספות משולבות בדף הדמות ובעזרה תוך כדי המשחק

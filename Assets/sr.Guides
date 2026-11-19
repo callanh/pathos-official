@@ -1,59 +1,64 @@
 # Commands; Komande
-. Single tap/left click or arrow keys to move and attack.; Jedan dodir/levi klik ili tasteri sa strelicama za kretanje i napad.
+. Single tap/left click or direction keys to move and attack.; Jedan dodir/levi klik ili tasteri sa strelicama za kretanje i napad.
 . Long press/right click to operate doors/traps.; Dugo pritisnite/desni klik da biste otvorili vrata/zamke.
 . Double tap to pick up items, traverse stairs or wait one move.; Dodirnite dvaput da pokupite predmete, pređete stepenicama ili sačekate jedan potez.
 /
-- . | wait one turn (also double tap on self); . | sačekajte jedan potez (takođe dvaput dodirnite sebe)
-- , | pick up the top item on the floor; , | pokupite gornji predmet na podu
-- A | toggle log (click the log to expand/collapse); A | uključite/isključite dnevnik (kliknite na dnevnik da biste ga proširili/suzili)
-- B | move down-left; B | pomerite dole-levo
-- C | toggle character; C | promenite karaktera
-- D | re-use last item; D | ponovo upotrebite poslednju stavku
-- E | mount or dismount your steed; E | uzjašite ili siđite sa konja
-- F | toggle floor; F | uključite/isključite pod
-- G | re-equip last item; G | ponovo opremite poslednju stavku
-- H | move left; H | pomerite levo
-- I | toggle inventory; I | uključite/isključite inventar
-- J | move down; J | pomerite dole
-- K | move up; K | pomerite gore
-- L | move right; L | pomerite desno
-- M | toggle map; M | uključite/isključite mapu
-- N | move down-right; N | pomerite dole-desno
-- O | hide from view; O | sakrijete od pogleda
-- P | polymorph at will; P | polimorf po volji
-- Q | save or quit this game; Q | memorišite ili se izbacite iz igre
-- R | for rest mode to recover life and mana; R | za režim odmora za oporavak života i mane
-- S | for search mode for secret doors and traps; S | za režim traženja tajnih vrata i zamki
-- T | teleport at will; T | teleport po volji
-- U | move up-right; U | pomerite gore-desno
-- V | kick in a direction; V | udarac u pravcu
-- W | jump in a direction (if you have the talent); W | skočite u pravcu (ako imate talenat)
-- X | re-cast last spell; X | ponovo bacite poslednju čaroliju
-- Y | move up-left; Y | pomerite gore-levo
-- Z | toggle cast spells (read books to learn spells); Z | uključite bacanje čini (čitajte knjige da biste naučili čini)
-- ' | blink in a direction; ' | bljeskajte u pravcu
-- ;; | telekinesis in a direction; ;; | telekineza u pravcu
-- > | descend stairs; > | siđete sa stepenica
-- < | ascend stairs; < | popnete na stepenice
-- / | toggle chat in multiplayer; / | uključite/isključite ćaskanje u više igrača
-- \ | view knowledge panel; \ | pogledajte tablu znanja
-- + | zoom in; + | uvećajte
-- - | zoom out; - | umanjite
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | leve brze akcije (promenite radnju koristeći shift + broj)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | desne brze akcije (promenite radnju koristeći shift + broj)
-- INSERT | toggle tunnelling mode; INSERT | uključite režim tuneliranja
-- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | ispaliti projektil bez kretanja
-- CTRL + arrow | interact with the target without moving; CTRL + arrow | stupajte u interakciju sa metom bez kretanja
-- ENTER | select the top item on the floor; ENTER | izaberite gornju stavku na podu
-- ESCAPE | hides open panels and clears your target; ESCAPE | sakriva otvorene panele i briše vašu metu
+- $Left$ | move left; $Left$ | pomerite levo
+- $Right$ | move right; $Right$ | pomerite desno
+- $Up$ | move up; $Up$ | pomerite gore
+- $Down$ | move down; $Down$ | pomerite dole
+- $UpLeft$ | move up-left; $UpLeft$ | pomerite gore-levo
+- $UpRight$ | move up-right; $UpRight$ | pomerite gore-desno
+- $DownLeft$ | move down-left; $DownLeft$ | pomerite dole-levo
+- $DownRight$ | move down-right; $DownRight$ | pomerite dole-desno
+- SHIFT + direction | fire a missile without moving; SHIFT + direction | ispaliti projektil bez kretanja
+- CTRL + direction | interact with the target without moving; CTRL + direction | stupajte u interakciju sa metom bez kretanja
+- $Select$ | select the top item on the floor; $Select$ | izaberite gornju stavku na podu
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | sakriva otvorene panele i briše vašu metu
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | otkazuje otvorene dijaloge i briše fokus tastature
 - SPACE | toggle real-time or turn-based; SPACE | prebacivanje u realnom vremenu ili na potezu
-- PgUp | switch to previous character; PgUp | pređite na prethodnog karaktera
-- PgDown | switch to next character; PgDown | pređite na sledećeg karaktera
-- ALT | show labels; ALT | pokazivanje etikete
-- F1 | show this help; F1 | pokazati ovu pomoć
-- F6 | quick save; F6 | brzo memorisanje
-- F10 | open side menu; F10 | otvorite bočni meni
+- CTRL/ALT | show labels; CTRL/ALT | pokazivanje etikete
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | pokupite gornji predmet na podu
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | sačekajte jedan potez (takođe dvaput dodirnite sebe)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | za režim odmora za oporavak života i mane
+- $Search$ | for search mode for secret doors and traps; $Search$ | za režim traženja tajnih vrata i zamki
+- $Descend$ | descend stairs; $Descend$ | siđete sa stepenica
+- $Ascend$ | ascend stairs; $Ascend$ | popnete na stepenice
+- $Character$ | toggle character; $Character$ | promenite karaktera
+- $Inventory$ | toggle inventory; $Inventory$ | uključite/isključite inventar
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | uključite bacanje čini (čitajte knjige da biste naučili čini)
+- $Floor$ | toggle floor; $Floor$ | uključite/isključite pod
+- $Map$ | toggle map; $Map$ | uključite/isključite mapu
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | uključite/isključite dnevnik (kliknite na dnevnik da biste ga proširili/suzili)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | pogledajte tablu znanja
+- $Chat$ | toggle chat in multiplayer; $Chat$ | uključite/isključite ćaskanje u više igrača
+- $Kick$ | kick in a direction; $Kick$ | udarac u pravcu
+- $Mount$ | mount or dismount your steed; $Mount$ | uzjašite ili siđite sa konja
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | skočite u pravcu (ako imate talenat)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | bljeskajte u pravcu
+- $Teleport$ | teleport at will; $Teleport$ | teleport po volji
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | telekineza u pravcu
+- $Polymorph$ | polymorph at will; $Polymorph$ | polimorf po volji
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | uključite režim tuneliranja
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | otvorite bočni meni
+- $QuickSave$ | quick save; $QuickSave$ | brzo memorisanje
+- $Help$ | show this help; $Help$ | pokazati ovu pomoć
+- $Quit$ | save or quit this game; $Quit$ | memorišite ili se izbacite iz igre
+- $ZoomIn$ | zoom in; $ZoomIn$ | uvećajte
+- $ZoomOut$ | zoom out; $ZoomOut$ | umanjite
+- $ActionReuse$ | re-use last item; $ActionReuse$ | ponovo upotrebite poslednju stavku
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | ponovo opremite poslednju stavku
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | ponovo bacite poslednju čaroliju
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | pređite na prethodnog karaktera
+- $SwitchDown$ | switch to next character; $SwitchDown$ | pređite na sledećeg karaktera
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | leve brze akcije (promenite radnju koristeći shift + broj)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | desne brze akcije (promenite radnju koristeći shift + broj)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | prebacite ceo ekran na režim prozora (Windows Desktop)
 
 # General mechanics; Generalne Mehanike
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; Prilagođeni atributi x {Množitelj}
 ` + Acquired Talents x {Multiplier}; Stečeni talenti x {Množitelj}
 ` + Gained Resistances x {Multiplier}; Stečeni otpori x {Množitelj}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); Ukupna vrednost inventara (u zlatu)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; Ukupna vrednost inventara je ograničena tako da ne može premašiti ostatak rezultata.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; Možda ćete saznati da vaš lik nije bio održiv i da smrt ponovo dolazi brzo.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; Možete beskonačno oživeti, ali sva vaša postignuta slava će biti vraćena na nulu.
 . Fame achieved subsequent to your resurrection will contribute to your score.; Slava stečena nakon vašeg vaskrsenja doprineće vašem rezultatu.
-. This is similar to the 'explorer mode' from the original Nethack.; Ovo je slično 'režimu istraživača' iz originalnog Nethack-a.
+. This is similar to the 'explorer mode' from the original NetHack.; Ovo je slično 'režimu istraživača' iz originalnog NetHack-a.
 
 # Multiplayer; Multiplejer
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Multiplejer je zasnovan na 'grafičkoj telnet' tehnologiji sa Invention platforme.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; Ovo je način varanja za brže učenje tajni Patosa.
 . Any adventures in this mode will not be tracked in the hall of fame.; Nijedna avantura u ovom režimu neće biti praćena u dvorani slavnih.
 /
-- ` | open master console (more commands); ` | otvori glavnu konzolu (više komandi)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | tama u ovoj zoni
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | pojavi se i budi progutan od strane nasumičnog progutača
-- shift + F | all adjacent enemies are charmed; shift + F | svi susedni neprijatelji su očarani
-- shift + G | gain 1000 gold; shift + G | dobijaš 1000 zlata
-- shift + I | identify all items on the floor; shift + I | identifikuj sve predmete na podu
-- shift + W | jump at will; shift + W | skači po želji
-- shift + D | light this zone; shift + D | osvetli ovu zonu
-- shift + M | reveal the entire map; shift + M | otkrij celu mapu
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | otkrij mape za sve nivoe
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | izobliči tamnicu (mapa završne igre se transformiše)
-- shift + P | polymorph into any entity; shift + P | preoblikuj se u bilo koji entitet
-- shift + T | teleport to a target zone; shift + T | teleportuj se u ciljnu zonu
-- shift + Z | learn all spells; shift + Z | nauči sve čarolije
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | uključi/isključi režim automatskog korišćenja (stani na polje i koristićeš sve predmete)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | popni se na prethodni nivo tamnice (čak i ako nisi na stepenicama)
-- > | descend to the next dungeon level (even when not on a staircase); > | siđi na sledeći nivo tamnice (čak i ako nisi na stepenicama)
-- F5 | refresh the screen; F5 | osveži ekran
-- F9 | quick load; F9 | brzo učitavanje
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | otvori glavnu konzolu (više komandi)
+- $MasterLightness$ | light this zone; $MasterLightness$ | osvetli ovu zonu
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | tama u ovoj zoni
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | pojavi se i budi progutan od strane nasumičnog progutača
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | svi susedni neprijatelji su očarani
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | dobijaš 1000 zlata
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | identifikuj sve predmete na podu
+- $MasterJump$ | jump at will; $MasterJump$ | skači po želji
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | otkrij celu mapu
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | otkrij mape za sve nivoe
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | izobliči tamnicu (mapa završne igre se transformiše)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | preoblikuj se u bilo koji entitet
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | teleportuj se u ciljnu zonu
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | nauči sve čarolije
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | uključi/isključi režim automatskog korišćenja (stani na polje i koristićeš sve predmete)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | popni se na prethodni nivo tamnice (čak i ako nisi na stepenicama)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | siđi na sledeći nivo tamnice (čak i ako nisi na stepenicama)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | osveži ekran
+- $QuickLoad$ | quick load; $QuickLoad$ | brzo učitavanje
 /
 . There are additional manipulations built into the character panel and contextual help.; Postoje dodatne manipulacije ugrađene u panel karaktera i kontekstualna pomoć.

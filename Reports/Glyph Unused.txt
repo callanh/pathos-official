@@ -5,7 +5,6 @@ X	X	X	X	4	baby grey dragon.png
 X	X	X	X	4	eyeball.png
 X	X	X	X	4	fishing pole.png
 X	X	X	X	4	grappling hook.png
-X	X	X	X	4	grey dragon scale mail.png
 X	X	X	X	4	grey dragon scales.png
 X	X	X	X	4	mithril axe.png
 X	X	X	X	4	mithril trident.png
@@ -13,6 +12,7 @@ X	X	X	X	4	naginata.png
 X	X	X	X	4	Tempter.png
 X	X	 	X	3	burgundy book.png
 X	X	 	X	3	froster.png
+X	X	X	 	3	grey dragon scale mail.png
 X	X	 	X	3	healthstone.png
 X	X	 	X	3	holy book.png
 X	X	 	X	3	igniter.png
@@ -32,13 +32,16 @@ X	X	 	 	2	adamantine helmet.png
  	X	 	X	2	Al-Mi'raj.png
 X	 	 	X	2	astral dragon.png
 X	X	 	 	2	bandage.png
-X	 	 	X	2	credit card.png
 X	 	 	X	2	dwarvish katar.png
 X	 	 	X	2	leash.png
 X	 	 	X	2	loadstone.png
 X	 	 	X	2	luckstone.png
 X	X	 	 	2	medical kit.png
 X	 	 	X	2	mithril katana.png
+ 	 	X	X	2	pheral khit.png
+ 	 	X	X	2	pheral pharaoh.png
+ 	 	X	X	2	pheral sentinel.png
+ 	 	X	X	2	pheral vizier.png
 X	X	 	 	2	phial.png
  	X	 	X	2	pine.png
 X	 	 	X	2	pyramid.png
@@ -58,6 +61,8 @@ X	 	 	X	2	towel.png
  	 	 	X	1	adamantine poleaxe.png
  	X	 	 	1	adamantine quarterstaff.png
  	X	 	 	1	adamantine shuriken.png
+ 	 	 	X	1	adamantine spear.png
+ 	 	 	X	1	adamantine twohanded sword.png
  	X	 	 	1	air binder.png
  	X	 	 	1	air maker.png
  	 	 	X	1	air sphere.png
@@ -68,6 +73,7 @@ X	 	 	 	1	archeologist.png
  	 	 	X	1	army lieutenant.png
  	 	 	X	1	army sergeant.png
  	 	 	X	1	army soldier.png
+ 	 	 	X	1	artifact skull.png
  	 	 	X	1	ash elemental.png
 X	 	 	 	1	assassin.png
  	 	 	X	1	astral dog.png
@@ -78,6 +84,7 @@ X	 	 	 	1	assassin.png
 X	 	 	 	1	baseball bat.png
 X	 	 	 	1	berserker.png
 X	 	 	 	1	bishop.png
+ 	 	 	X	1	black marble.png
  	 	 	X	1	blink dog.png
  	 	 	X	1	blink puppy.png
  	 	 	X	1	buraq.png
@@ -90,9 +97,10 @@ X	 	 	 	1	bushi.png
  	 	 	X	1	Celestial Portent.png
  	 	 	X	1	cherubim.png
 X	 	 	 	1	chest.png
- 	 	 	X	1	cloth shirt.png
 X	 	 	 	1	cloud.png
- 	 	 	X	1	crimson cloak.png
+ 	 	 	X	1	crazy barbarian.png
+X	 	 	 	1	credit card.png
+ 	 	 	X	1	crown.png
  	 	 	X	1	cyan jelly.png
  	 	 	X	1	darkstone.png
  	 	 	X	1	deep water.png
@@ -108,13 +116,17 @@ X	 	 	 	1	cloud.png
  	X	 	 	1	dwarf male gunslinger.png
  	X	 	 	1	dwarf male monk.png
  	X	 	 	1	dwarf male samurai.png
+ 	 	 	X	1	dwarf zombie.png
  	X	 	 	1	earth mage.png
+ 	 	 	X	1	elder priest.png
  	 	 	X	1	elder wizard.png
+ 	 	 	X	1	elf zombie.png
  	 	 	X	1	elven chakram.png
  	 	 	X	1	elven hand crossbow.png
  	 	 	X	1	energy elemental.png
  	 	 	X	1	eshim.png
  	 	 	X	1	eternity ring.png
+ 	 	 	X	1	ettin zombie.png
  	 	 	X	1	explosive elemental.png
  	 	 	X	1	explosive sphere.png
  	 	 	X	1	fae dragon.png
@@ -128,8 +140,10 @@ X	 	 	 	1	forked wand.png
  	 	 	X	1	galgalim.png
  	 	 	X	1	General Breetai.png
 X	 	 	 	1	giant hamster.png
+ 	 	 	X	1	giant zombie.png
  	 	 	X	1	Gianta Klaus.png
  	 	 	X	1	glossy potion.png
+ 	 	 	X	1	gnome zombie.png
  	 	 	X	1	gold axe.png
  	 	 	X	1	gold chakram.png
 X	 	 	 	1	gold coin 1.png
@@ -140,11 +154,9 @@ X	 	 	 	1	gold coin 5.png
 X	 	 	 	1	gold coin 6.png
  	 	 	X	1	gold dagger.png
  	 	 	X	1	gold double vajra.png
- 	 	 	X	1	gold flail.png
  	 	 	X	1	gold khanda.png
  	 	 	X	1	gold labrys.png
  	 	 	X	1	gold longsword.png
- 	 	 	X	1	gold plate mail.png
  	 	 	X	1	gold single vajra.png
  	 	 	X	1	gold spade.png
  	 	 	X	1	gold trident.png
@@ -157,9 +169,8 @@ X	 	 	 	1	gold coin 6.png
  	 	 	X	1	green jelly.png
  	 	 	X	1	Gungir.png
  	 	 	X	1	hag.png
- 	X	 	 	1	halfling female caveman.png
- 	X	 	 	1	halfling male caveman.png
  	 	 	X	1	Huhetotl original.png
+ 	 	 	X	1	human zombie.png
  	 	 	X	1	humantrap.png
  	 	 	X	1	huntress.png
  	 	 	X	1	ice giant.png
@@ -183,6 +194,7 @@ X	 	 	 	1	gold coin 6.png
  	 	 	X	1	khaki potion.png
  	 	 	X	1	khopesh artifact.png
  	 	 	X	1	khopesh.png
+ 	 	 	X	1	kobold zombie.png
  	X	 	 	1	Krull.png
 X	 	 	 	1	large box.png
  	X	 	 	1	lattice floor.png
@@ -218,6 +230,7 @@ X	 	 	 	1	male savage.png
  	 	 	X	1	mirror7.png
  	X	 	 	1	mithil rapier.png
  	 	 	X	1	mithril gauntlets.png
+ 	 	 	X	1	mithril golem.png
  	 	 	X	1	mithril greatmace.png
  	X	 	 	1	mithril hatchet.png
  	 	 	X	1	mithril poleaxe.png
@@ -225,6 +238,7 @@ X	 	 	 	1	male savage.png
  	 	 	X	1	mooshroom.png
  	 	 	X	1	Mournblade.png
  	 	 	X	1	mystical dragon.png
+ 	 	 	X	1	naga queen.png
  	 	 	X	1	new beam backward slant.png
  	 	 	X	1	new beam forward slant.png
  	 	 	X	1	new beam horizontal.png
@@ -244,11 +258,10 @@ X	 	 	 	1	nun.png
  	 	 	X	1	Nymph Princess.png
  	 	 	X	1	oil original.png
  	 	 	X	1	orc thief.png
+ 	 	 	X	1	orc zombie.png
  	 	 	X	1	orcish chakram.png
- 	 	 	X	1	pheral khit.png
- 	 	 	X	1	pheral pharaoh.png
- 	 	 	X	1	pheral sentinel.png
- 	 	 	X	1	pheral vizier.png
+ 	 	 	X	1	orcish long sword.png
+ 	 	 	X	1	orcish sabre.png
 X	 	 	 	1	pill.png
 X	 	 	 	1	pine wand.png
  	 	 	X	1	plastic bat.png
@@ -283,6 +296,7 @@ X	 	 	 	1	psychedelic book.png
  	 	 	X	1	rose spear.png
  	 	 	X	1	Runesword alternate.png
  	 	 	X	1	Runicorn Horn.png
+ 	 	 	X	1	satyr female templar alternative.png
  	 	 	X	1	seraphim.png
 X	 	 	 	1	shaolin monk.png
  	 	 	X	1	Shillelagh.png
@@ -317,7 +331,6 @@ X	 	 	 	1	traveller.png
  	 	 	X	1	water moccasin alternate.png
  	 	 	X	1	wheellock pistol.png
  	 	 	X	1	wind sphere.png
- 	 	 	X	1	wizard.png
  	 	 	X	1	wooden sign.png
  	X	 	 	1	wooden stool.png
  	X	 	 	1	wooden table.png

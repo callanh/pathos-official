@@ -23,15 +23,15 @@ namespace Pathos
         });
       }
 
-      AddCompanion("dog", Codex.Entities.little_dog, null);
-      AddCompanion("cat", Codex.Entities.kitten, null);
-      AddCompanion("horse", Codex.Entities.pony, null);
-      AddCompanion("bird", Codex.Entities.fledgling_raven, null);
-      AddCompanion("monkey", Codex.Entities.monkey, null);
-      AddCompanion("rat", Codex.Entities.black_rat, null);
-      AddCompanion("egg", null, Codex.Items.egg);
-      AddCompanion("imp", Codex.Entities.imp, null);
-      AddCompanion("ghoul", Codex.Entities.ghast, null);
+      dog = AddCompanion("dog", Codex.Entities.little_dog, null);
+      cat = AddCompanion("cat", Codex.Entities.kitten, null);
+      horse = AddCompanion("horse", Codex.Entities.pony, null);
+      bird = AddCompanion("bird", Codex.Entities.fledgling_raven, null);
+      monkey = AddCompanion("monkey", Codex.Entities.monkey, null);
+      rat = AddCompanion("rat", Codex.Entities.black_rat, null);
+      egg = AddCompanion("egg", null, Codex.Items.egg);
+      imp = AddCompanion("imp", Codex.Entities.imp, null);
+      ghoul = AddCompanion("ghoul", Codex.Entities.ghast, null);
 
       CodexRecruiter.Enrol(() =>
       {
@@ -39,5 +39,15 @@ namespace Pathos
       });
     }
 #endif
+
+    public Companion dog { get; }
+    public Companion cat { get; }
+    public Companion horse { get; }
+    public Companion bird { get; }
+    public Companion monkey { get; }
+    public Companion rat { get; }
+    public Companion egg { get; }
+    public Companion imp { get; }
+    public Companion ghoul { get; }
   }
 }

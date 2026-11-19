@@ -211,6 +211,11 @@ namespace Pathos
         A.Route();
       });
 
+      victory = AddTrick("victory", A =>
+      {
+        A.Victory();
+      });
+
       warping = AddTrick("warping", A =>
       {
         A.Warping();
@@ -267,6 +272,7 @@ namespace Pathos
     public readonly Trick sudden_hellscape;
     public readonly Trick complete_mapping;
     public readonly Trick transport_candidate;
+    public readonly Trick victory;
     public readonly Trick warping;
     public readonly Trick whispered_rumour;
     public readonly Trick[] VisitZooArray;

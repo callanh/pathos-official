@@ -356,7 +356,7 @@ character @[000001]@[000002]@[000003]@[000004]@[000005]@[000006]@[000007]@[00000
 (07,010)! .[obsidian floor]
 (08,010)! .[obsidian floor]
 (09,010)! .[obsidian floor] ^[spiked pit] 0 revealed
-(10,010)! .[obsidian floor] >[transportal] : (53,032)
+(10,010) trigger 0@0 ( 0:[victory] )! .[obsidian floor] >[transportal] : (53,032)
 (11,010)! .[obsidian floor] ^[spiked pit] 0 revealed
 (12,010)! .[obsidian floor]
 (13,010)! .[obsidian floor]

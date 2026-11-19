@@ -23,6 +23,52 @@ namespace Pathos
         this.Glyphs = new CodexGlyphs(this);
         this.Sonics = new CodexSonics(this);
         this.Tracks = new CodexTracks(this);
+
+        Manifest.Levelling.Set(Sonics.gain_level, Sonics.lose_level,
+        [
+          /* 01 */ 0,
+          /* 02 */ 25,
+          /* 03 */ 50,
+          /* 04 */ 100,
+          /* 05 */ 200,
+          /* 06 */ 500,
+          /* 07 */ 1000,
+          /* 08 */ 5000,
+          /* 09 */ 10000,
+          /* 10 */ 25000,
+          /* 11 */ 50000,
+          /* 12 */ 100000,
+          /* 13 */ 150000,
+          /* 14 */ 200000,
+          /* 15 */ 250000,
+          /* 16 */ 300000,
+          /* 17 */ 350000,
+          /* 18 */ 400000,
+          /* 19 */ 450000,
+          /* 20 */ 500000,
+          /* 21 */ 550000,
+          /* 22 */ 600000,
+          /* 23 */ 650000,
+          /* 24 */ 700000,
+          /* 25 */ 750000,
+          /* 26 */ 800000,
+          /* 27 */ 850000,
+          /* 28 */ 900000,
+          /* 29 */ 950000,
+          /* 30 */ 1000000,
+          /* 31 */ 1100000,
+          /* 32 */ 1200000,
+          /* 33 */ 1300000,
+          /* 34 */ 1400000,
+          /* 35 */ 1500000,
+          /* 36 */ 1600000,
+          /* 37 */ 1700000,
+          /* 38 */ 1800000,
+          /* 39 */ 1900000,
+          /* 40 */ 2000000
+        ]);
+
+        this.Achievements = new CodexAchievements(this);
         this.Atmospheres = new CodexAtmospheres(this);
         this.Attributes = new CodexAttributes(this);
         this.Sanctities = new CodexSanctities(this);
@@ -67,6 +113,8 @@ namespace Pathos
         this.Hordes = new CodexHordes(this);
         this.Features = new CodexFeatures(this);
         this.Zoos = new CodexZoos(this);
+        this.Eggs = new CodexEggs(this);
+        this.Companions = new CodexCompanions(this);
         this.Heroes = new CodexHeroes(this);
         this.Services = new CodexServices(this);
         this.Shops = new CodexShops(this);
@@ -75,10 +123,8 @@ namespace Pathos
         this.Platforms = new CodexPlatforms(this);
         this.Punishments = new CodexPunishments(this);
         this.Afflictions = new CodexAfflictions(this);
-        this.Eggs = new CodexEggs(this);
         this.Recipes = new CodexRecipes(this);
         this.Tricks = new CodexTricks(this);
-        this.Companions = new CodexCompanions(this);
 
         CodexRecruiter.Commit();
       }
@@ -87,50 +133,6 @@ namespace Pathos
         CodexRecruiter.Stop();
         CodexRecruiter.Codex = null;
       }
-
-      Manifest.Levelling.Set(Sonics.gain_level, Sonics.lose_level,
-      [
-        /* 01 */ 0,
-        /* 02 */ 25,
-        /* 03 */ 50,
-        /* 04 */ 100,
-        /* 05 */ 200,
-        /* 06 */ 500,
-        /* 07 */ 1000,
-        /* 08 */ 5000,
-        /* 09 */ 10000,
-        /* 10 */ 25000,
-        /* 11 */ 50000,
-        /* 12 */ 100000,
-        /* 13 */ 150000,
-        /* 14 */ 200000,
-        /* 15 */ 250000,
-        /* 16 */ 300000,
-        /* 17 */ 350000,
-        /* 18 */ 400000,
-        /* 19 */ 450000,
-        /* 20 */ 500000,
-        /* 21 */ 550000,
-        /* 22 */ 600000,
-        /* 23 */ 650000,
-        /* 24 */ 700000,
-        /* 25 */ 750000,
-        /* 26 */ 800000,
-        /* 27 */ 850000,
-        /* 28 */ 900000,
-        /* 29 */ 950000,
-        /* 30 */ 1000000,
-        /* 31 */ 1100000,
-        /* 32 */ 1200000,
-        /* 33 */ 1300000,
-        /* 34 */ 1400000,
-        /* 35 */ 1500000,
-        /* 36 */ 1600000,
-        /* 37 */ 1700000,
-        /* 38 */ 1800000,
-        /* 39 */ 1900000,
-        /* 40 */ 2000000
-      ]);
 
       Manifest.Blinking.Set(Properties.blinking, new Requirement(Attributes.intelligence, 3), Sonics.blink, NutritionCost: 5);
 
@@ -194,6 +196,7 @@ namespace Pathos
 #endif
 
     public Manifest Manifest { get; }
+    public CodexAchievements Achievements { get; }
     public CodexAfflictions Afflictions { get; }
     public CodexAnatomies Anatomies { get; }
     public CodexAppetites Appetites { get; }
@@ -1050,12 +1053,13 @@ namespace Pathos
       }
       #endregion
 
-      #region Heroes.
-      foreach (var Hero in Manifest.Heroes.List)
-      {
-        if (Hero.Pet != null && !Manifest.Companions.List.Any(C => C.Entity == Hero.Pet.Entity))
-          Record($"Hero '{Hero.Name}' has a pet '{Hero.Pet.Entity.Name}' that is not a declared companion");
-      }
+      #region Heroes
+      Base.UniqueCheck("Hero.AvatarName", Manifest.Heroes.List, I => I.Elect.AvatarName);
+      Base.UniqueCheck("Hero.CompanionName", Manifest.Heroes.List, I => I.Elect.CompanionName);
+      Base.UniqueCheck("Hero.AvatarClass", Manifest.Heroes.List, I => I.Elect.AvatarClass);
+
+      foreach (var Race in Manifest.Races.List.Where(R => R.BaseEntity != null).Except(Manifest.Heroes.List.Select(H => H.Elect.AvatarRace)))
+        Record($"Race {Race.Name} is not represented as a hero");
       #endregion
 
       #region Companions
@@ -1125,6 +1129,7 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Punishments.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Barriers.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Grounds.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Grounds.List.Select(E => E.Join).ExceptNull().Select(J => J.Glyph));
       UsedGlyphSet.AddRange(Manifest.Portals.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Blocks.List.SelectMany(E => new[] { E.Glyph, E.Prison?.Glyph }.ExceptNull()));
       UsedGlyphSet.AddRange(Manifest.Beams.List.SelectMany(E => new[] { E.HorizontalGlyph, E.VerticalGlyph, E.BackwardSlantGlyph, E.ForwardSlantGlyph }));
@@ -1132,12 +1137,15 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Strikes.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Spells.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Stocks.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Shops.List.Select(E => E.Glyph));
+      UsedGlyphSet.AddRange(Manifest.Shops.List.Select(E => E.SymbolGlyph));
+      UsedGlyphSet.AddRange(Manifest.Shops.List.Select(E => E.KeeperGlyph));
       UsedGlyphSet.AddRange(Manifest.Shrines.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Engulfments.List.SelectMany(E => E.GetGlyphs()));
       UsedGlyphSet.AddRange(Manifest.Specials.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Classes.List.SelectMany(E => E.Avatars.Select(A => A.Glyph)));
-      UsedGlyphSet.AddRange(Manifest.Glyphs.CustomPortraitArray.SelectMany(E => new[] { E.HeroGlyph, E.CompanionGlyph }));
+      UsedGlyphSet.AddRange(Manifest.Races.List.SelectMany(E => E.Avatars.Select(A => A.Glyph)));
+      UsedGlyphSet.AddRange(Manifest.Glyphs.CustomAvatarGlyphArray);
+      UsedGlyphSet.AddRange(Manifest.Glyphs.CustomCompanionGlyphArray);
       UsedGlyphSet.AddRange(Manifest.Skills.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Properties.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Elements.List.Select(E => E.Glyph));
@@ -1145,8 +1153,6 @@ namespace Pathos
       UsedGlyphSet.AddRange(Manifest.Glyphs.Quicks.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Warnings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Slots.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Appetites.List.Select(E => E.Glyph));
-      UsedGlyphSet.AddRange(Manifest.Standings.List.Select(E => E.Glyph));
       UsedGlyphSet.AddRange(Manifest.Volatiles.List.SelectMany(E => new [] { E.ActiveGlyph }.Union(E.HoldGlyphs)));
       UsedGlyphSet.Add(Manifest.Glyphs.Interrupt);
       UsedGlyphSet.Add(Manifest.Glyphs.Shroud);
@@ -1195,6 +1201,7 @@ namespace Pathos
       UsedSonicSet.Add(Manifest.Praying.LoseKarmaSonic);
       UsedSonicSet.Add(Manifest.Sonics.ShortTap);
       UsedSonicSet.Add(Manifest.Sonics.LongTap);
+      UsedSonicSet.Add(Manifest.Sonics.FocusTap);
       UsedSonicSet.Add(Manifest.Sonics.Switch);
       UsedSonicSet.Add(Manifest.Sonics.Realtime);
       UsedSonicSet.Add(Manifest.Sonics.Turnbased);
@@ -1294,6 +1301,7 @@ namespace Pathos
       Base.Register<Quicks>();
       Base.Register<Quick>();
 
+      RegisterRecord<ManifestAchievements, AchievementEditor, Achievement>();
       RegisterRecord<ManifestAfflictions, AfflictionEditor, Affliction>();
       RegisterRecord<ManifestAnatomies, AnatomyEditor, Anatomy>();
       RegisterRecord<ManifestAppetites, AppetiteEditor, Appetite>();
@@ -1345,15 +1353,16 @@ namespace Pathos
       RegisterRecord<ManifestSonics, SonicEditor, Sonic>();
       RegisterRecord<ManifestSpecials, SpecialEditor, Special>();
       RegisterRecord<ManifestSpells, SpellEditor, Spell>();
-      RegisterRecord<ManifestVolatiles, VolatileEditor, Volatile>();
       RegisterRecord<ManifestStandings, StandingEditor, Standing>();
       RegisterRecord<ManifestStocks, StockEditor, Stock>();
       RegisterRecord<ManifestStrikes, StrikeEditor, Strike>();
       RegisterRecord<ManifestTracks, TrackEditor, Track>();
       RegisterRecord<ManifestTricks, TrickEditor, Trick>();
+      RegisterRecord<ManifestVolatiles, VolatileEditor, Volatile>();
       RegisterRecord<ManifestWarnings, WarningEditor, Warning>();
       RegisterRecord<ManifestZoos, ZooEditor, Zoo>();
-
+      
+      Base.Register<CodexAchievements>();
       Base.Register<CodexAfflictions>();
       Base.Register<CodexAnatomies>();
       Base.Register<CodexAppetites>();
@@ -1415,6 +1424,7 @@ namespace Pathos
       Base.Register<CodexZoos>();
 
       Base.Register<Ability>();
+      Base.Register<Achievement>();
       Base.Register<Adept>();
       Base.Register<Advancement>();
       Base.Register<Affliction>();
@@ -1443,7 +1453,6 @@ namespace Pathos
       Base.Register<Companion>();
       Base.Register<Concealment>();
       Base.Register<Corpse>();
-      Base.Register<CustomPortrait>();
       Base.Register<Defence>();
       Base.Register<DefenceBias>();
       Base.Register<Detonation>();
@@ -1451,6 +1460,7 @@ namespace Pathos
       Base.Register<Diet>();
       Base.Register<Egg>();
       Base.Register<Element>();
+      Base.Register<Elect>();
       Base.Register<Enchantment>();
       Base.Register<Encumbrance>();
       Base.Register<Engulf>();
@@ -1476,6 +1486,7 @@ namespace Pathos
       Base.Register<Impact>();
       Base.Register<Impediment>();
       Base.Register<Item>();
+      Base.Register<Join>();
       Base.Register<Kind>();
       Base.Register<Kit>();
       Base.Register<Loot>();
@@ -1483,7 +1494,6 @@ namespace Pathos
       Base.Register<Minion>();
       Base.Register<Missile>();
       Base.Register<Motion>();
-      Base.Register<Pet>();
       Base.Register<Platform>();
       Base.Register<Portal>();
       Base.Register<Prayer>();

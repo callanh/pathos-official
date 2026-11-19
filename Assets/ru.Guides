@@ -1,59 +1,64 @@
 # Commands; Команды
-. Single tap/left click or arrow keys to move and attack.; Нажатие на экран, клик левой кнопкой мыши или стрелки используются для передвижения и атаки.
+. Single tap/left click or direction keys to move and attack.; Нажатие на экран, клик левой кнопкой мыши или стрелки используются для передвижения и атаки.
 . Long press/right click to operate doors/traps.; Долгое нажатие на экран или клик правой кнопкой мыши для взаимодействия с дверьми/ловушками или для поднятия/использования предмета из инвентаря или с пола.
 . Double tap to pick up items, traverse stairs or wait one move.; Двойное нажатие для поднятия предметов, использования лестниц или пропуска одного хода.
 /
-- . | wait one turn (also double tap on self); . | пропуск одного хода (также двойное нажатие на себя)
-- , | pick up the top item on the floor; , | поднять верхний предмет с пола
-- A | toggle log (click the log to expand/collapse); A | открыть/закрыть лог (кликнуть/нажать на него для разворачивания)
-- B | move down-left; B | двигаться вниз и влево
-- C | toggle character; C | открыть/закрыть информацию о персонаже
-- D | re-use last item; D | использовать последний использованный предмет
-- E | mount or dismount your steed; E | сесть или спешиться со скакуна
-- F | toggle floor; F | открыть/закрыть информацию о том, что находиться под ногами
-- G | re-equip last item; G | переодеться в последнюю использованную вещь
-- H | move left; H | двигаться влево
-- I | toggle inventory; I | открыть/закрыть инвентарь
-- J | move down; J | двигаться вниз
-- K | move up; K | двигаться вверх
-- L | move right; L | двигаться вправо
-- M | toggle map; M | открыть/закрыть карту
-- N | move down-right; N | двигаться вниз и вправо
-- O | hide from view; O | скрыться в тенях (при наличии соответствующего свойства)
-- P | polymorph at will; P | контролируемое превращение (при наличии соответствующего свойства)
-- Q | save or quit this game; Q | сохранить или покинуть эту игру
-- R | for rest mode to recover life and mana; R | войти в режим ожидания для восстановления здоровья и маны
-- S | for search mode for secret doors and traps; S | войти в режим поиска для обнаружения секретных дверей и ловушек
-- T | teleport at will; T | контролируемый телепорт (при наличии соответствующего свойства)
-- U | move up-right; U | двигаться вверх и вправо
-- V | kick in a direction; V | пнуть в направлении
-- W | jump in a direction (if you have the talent); W | прыжок в направлении (при наличии соответствующего свойства)
-- X | re-cast last spell; X | использовать последние заклинание
-- Y | move up-left; Y | двигаться вверх и влево
-- Z | toggle cast spells (read books to learn spells); Z | переключиться между использованными заклинаниями (читайте книги для изучения заклинаний)
-- ' | blink in a direction; ' | мерцание в направлении (при наличии соответствующего свойства)
-- ;; | telekinesis in a direction; ;; | телекинез в направлении (при наличии соответствующего свойства)
-- > | descend stairs; > | спуститься по лестнице
-- < | ascend stairs; < | подняться по лестнице
-- / | toggle chat in multiplayer; / | открыть/закрыть чат в многопользовательской игре
-- \ | view knowledge panel; \ | открыть/закрыть информацию о знаниях
-- + | zoom in; + | отдалить
-- - | zoom out; - | приблизить
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | быстрые действия слева (shift + цифра для выбора действия)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | быстрые действия справа (shift + цифра для выбора действия)
-- INSERT | toggle tunnelling mode; INSERT | переключиться на прокладку тоннелей
-- SHIFT + arrow | fire a missile without moving; SHIFT + стрелка | выстрелить без передвижения
-- CTRL + arrow | interact with the target without moving; CTRL + стрелка | взаимодействовать с целью не двигаясь
-- ENTER | select the top item on the floor; ENTER | выбрать верхний предмет на полу
-- ESCAPE | hides open panels and clears your target; ESCAPE | скрывает окна и отменяет цель
+- $Left$ | move left; $Left$ | двигаться влево
+- $Right$ | move right; $Right$ | двигаться вправо
+- $Up$ | move up; $Up$ | двигаться вверх
+- $Down$ | move down; $Down$ | двигаться вниз
+- $UpLeft$ | move up-left; $UpLeft$ | двигаться вверх и влево
+- $UpRight$ | move up-right; $UpRight$ | двигаться вверх и вправо
+- $DownLeft$ | move down-left; $DownLeft$ | двигаться вниз и влево
+- $DownRight$ | move down-right; $DownRight$ | двигаться вниз и вправо
+- SHIFT + direction | fire a missile without moving; SHIFT + стрелка | выстрелить без передвижения
+- CTRL + direction | interact with the target without moving; CTRL + стрелка | взаимодействовать с целью не двигаясь
+- $Select$ | select the top item on the floor; $Select$ | выбрать верхний предмет на полу
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | скрывает окна и отменяет цель
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | закрывает диалоговые окна и останавливает текущие задачи
 - SPACE | toggle real-time or turn-based; SPACE | переключить пошаговую игру и игру в реальном времени
-- PgUp | switch to previous character; PgUp | переключиться на предыдущего персонажа
-- PgDown | switch to next character; PgDown | переключиться на следующего персонажа
-- ALT | show labels; ALT | показать названия
-- F1 | show this help; F1 | показать это окно помощи
-- F6 | quick save; F6 | быстрое сохранение
-- F10 | open side menu; F10 | открыть боковое меню
+- CTRL/ALT | show labels; CTRL/ALT | показать названия
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | поднять верхний предмет с пола
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | пропуск одного хода (также двойное нажатие на себя)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | войти в режим ожидания для восстановления здоровья и маны
+- $Search$ | for search mode for secret doors and traps; $Search$ | войти в режим поиска для обнаружения секретных дверей и ловушек
+- $Descend$ | descend stairs; $Descend$ | спуститься по лестнице
+- $Ascend$ | ascend stairs; $Ascend$ | подняться по лестнице
+- $Character$ | toggle character; $Character$ | открыть/закрыть информацию о персонаже
+- $Inventory$ | toggle inventory; $Inventory$ | открыть/закрыть инвентарь
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | переключиться между использованными заклинаниями (читайте книги для изучения заклинаний)
+- $Floor$ | toggle floor; $Floor$ | открыть/закрыть информацию о том, что находиться под ногами
+- $Map$ | toggle map; $Map$ | открыть/закрыть карту
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | открыть/закрыть лог (кликнуть/нажать на него для разворачивания)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | открыть/закрыть информацию о знаниях
+- $Chat$ | toggle chat in multiplayer; $Chat$ | открыть/закрыть чат в многопользовательской игре
+- $Kick$ | kick in a direction; $Kick$ | пнуть в направлении
+- $Mount$ | mount or dismount your steed; $Mount$ | сесть или спешиться со скакуна
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | прыжок в направлении (при наличии соответствующего свойства)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | мерцание в направлении (при наличии соответствующего свойства)
+- $Teleport$ | teleport at will; $Teleport$ | контролируемый телепорт (при наличии соответствующего свойства)
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | телекинез в направлении (при наличии соответствующего свойства)
+- $Polymorph$ | polymorph at will; $Polymorph$ | контролируемое превращение (при наличии соответствующего свойства)
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | переключиться на прокладку тоннелей
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | открыть боковое меню
+- $QuickSave$ | quick save; $QuickSave$ | быстрое сохранение
+- $Help$ | show this help; $Help$ | показать это окно помощи
+- $Quit$ | save or quit this game; $Quit$ | сохранить или покинуть эту игру
+- $ZoomIn$ | zoom in; $ZoomIn$ | отдалить
+- $ZoomOut$ | zoom out; $ZoomOut$ | приблизить
+- $ActionReuse$ | re-use last item; $ActionReuse$ | использовать последний использованный предмет
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | переодеться в последнюю использованную вещь
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | использовать последние заклинание
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down; $NavigateDown$ | переместиться к спуску вниз
+- $NavigateUp$ | navigate to the way up; $NavigateUp$ | переместиться к подъему наверх
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | переключиться на предыдущего персонажа
+- $SwitchDown$ | switch to next character; $SwitchDown$ | переключиться на следующего персонажа
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | быстрые действия слева (shift + цифра для выбора действия)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | быстрые действия справа (shift + цифра для выбора действия)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | переключиться между оконным и полноэкранным режимом (Windows)
 
 # General mechanics; Основные механики
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + Корректировка атрибутов x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + Приобретённые таланты x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + Полученные сопротивления x {Multiplier}
+` + Achievements² x {Multiplier}; + Достижения² x {Multiplier}
 ` + Total Inventory Worth (in gold); + Общая ценность инвентаря (в золоте)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; Общая ценность инвентаря ограничена, поэтому не может превышать остальную часть счета.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; Вы также можете понять, что ваш персонаж нежизнеспособен, и смерть быстро наступит снова.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; Вы можете воскрешать персонажа бесконечное число раз, однако каждый раз ваша накопленная слава будет сбрасываться до нуля.
 . Fame achieved subsequent to your resurrection will contribute to your score.; Слава, накопленная после воскрешения, будет учитываться.
-. This is similar to the 'explorer mode' from the original Nethack.; Эта опция похожа на "режим исследователя" из оригинального Nethack.
+. This is similar to the 'explorer mode' from the original NetHack.; Эта опция похожа на "режим исследователя" из оригинального NetHack.
 
 # Multiplayer; Многопользовательская игра
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Многопользовательская игра основана на технологии «графического Telnet'а» на платформе Invention.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; Это чит режим, который позволяет значительно быстрее раскрыть секреты игры.
 . Any adventures in this mode will not be tracked in the hall of fame.; Приключения в этом режиме не попадают в Зал Славы.
 /
-- ` | open master console (more commands); ` | открыть мастер консоль (больше команд)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | тьма в этой зоне
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | призвать и быть проглоченным случайным поглотителем
-- shift + F | all adjacent enemies are charmed; shift + F | все ближайшие существа очарованы
-- shift + G | gain 1000 gold; shift + G | получите 1000 золота
-- shift + I | identify all items on the floor; shift + I | опознать все предметы на полу
-- shift + W | jump at will; shift + W | прыжок по желанию
-- shift + D | light this zone; shift + D | осветить эту зону
-- shift + M | reveal the entire map; shift + M | открыть всю карту
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | открыть карту на всех уровнях
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | преобразуйте подземелье (как после прохождения последнего уровня)
-- shift + P | polymorph into any entity; shift + P | превратиться в любое существо
-- shift + T | teleport to a target zone; shift + T | телепорт в указанную зону
-- shift + Z | learn all spells; shift + Z | выучить все заклинания
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | включить/выключить режим автоиспользования всех вещей с пола
-- < | ascend to the previous dungeon level (even when not on a staircase); < | поднимитесь на предыдущий уровень подземелья (даже не будучи на лестнице)
-- > | descend to the next dungeon level (even when not on a staircase); > | спуститесь на следующий уровень подземелья (даже не будучи на лестнице)
-- F5 | refresh the screen; - F5 | обновите экран
-- F9 | quick load; - F9 | быстрая загрузка
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | открыть мастер консоль (больше команд)
+- $MasterLightness$ | light this zone; $MasterLightness$ | осветить эту зону
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | тьма в этой зоне
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | призвать и быть проглоченным случайным поглотителем
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | все ближайшие существа очарованы
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | получите 1000 золота
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | опознать все предметы на полу
+- $MasterJump$ | jump at will; $MasterJump$ | прыжок по желанию
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | открыть всю карту
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | открыть карту на всех уровнях
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | преобразуйте подземелье (как после прохождения последнего уровня)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | превратиться в любое существо
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | телепорт в указанную зону
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | выучить все заклинания
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | включить/выключить режим автоиспользования всех вещей с пола
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | поднимитесь на предыдущий уровень подземелья (даже не будучи на лестнице)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | спуститесь на следующий уровень подземелья (даже не будучи на лестнице)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | обновите экран
+- $QuickLoad$ | quick load; $QuickLoad$ | быстрая загрузка
 /
 . There are additional manipulations built into the character panel and contextual help.; Также есть другие действия, которые можно найти в панели персонажа и контекстном меню.

@@ -13,11 +13,20 @@ namespace Pathos
     internal CodexRaces(Codex Codex)
       : base(Codex.Manifest.Races)
     {
-      Race AddRace(string Name)
+      Race AddRace(string Name, Glyph MaleGlyph = null, Glyph FemaleGlyph = null, Glyph NonBinaryGlyph = null)
       {
         return Register.Add(R =>
         {
           R.Name = Name;
+
+          if (MaleGlyph != null)
+            R.AddAvatar(Codex.Genders.male, MaleGlyph);
+
+          if (FemaleGlyph != null)
+            R.AddAvatar(Codex.Genders.female, FemaleGlyph);
+
+          if (NonBinaryGlyph != null)
+            R.AddAvatar(Codex.Genders.nonbinary, NonBinaryGlyph);
         });
       }
 
@@ -45,40 +54,40 @@ namespace Pathos
       orc = AddRace("orc");
       plasmoid = AddRace("plasmoid");
       robot = AddRace("robot");
-      satyr = AddRace("satyr");
+      satyr = AddRace("satyr", MaleGlyph: Codex.Glyphs.satyr_male, FemaleGlyph: Codex.Glyphs.satyr_female);
       tortle = AddRace("tortle");
-      troll = AddRace("troll");
+      troll = AddRace("troll", MaleGlyph: Codex.Glyphs.troll_male, FemaleGlyph: Codex.Glyphs.troll_female);
       unicorn = AddRace("unicorn");
     }
 #endif
 
-    public readonly Race angel;
-    public readonly Race changeling;
-    public readonly Race demon;
-    public readonly Race dracon;
-    public readonly Race dwarf;
-    public readonly Race echo;
-    public readonly Race elf;
-    public readonly Race ettin;
-    public readonly Race fairy;
-    public readonly Race giant;
-    public readonly Race gnoll;
-    public readonly Race gnome;
-    public readonly Race goblin;
-    public readonly Race halfling;
-    public readonly Race human;
-    public readonly Race kobold;
-    public readonly Race leprechaun;
-    public readonly Race lizardman;
-    public readonly Race minotaur;
-    public readonly Race nymph;
-    public readonly Race ogre;
-    public readonly Race orc;
-    public readonly Race plasmoid;
-    public readonly Race robot;
-    public readonly Race satyr;
-    public readonly Race tortle;
-    public readonly Race troll;
-    public readonly Race unicorn;
+    public Race angel { get; }
+    public Race changeling { get; }
+    public Race demon { get; }
+    public Race dracon { get; }
+    public Race dwarf { get; }
+    public Race echo { get; }
+    public Race elf { get; }
+    public Race ettin { get; }
+    public Race fairy { get; }
+    public Race giant { get; }
+    public Race gnoll { get; }
+    public Race gnome { get; }
+    public Race goblin { get; }
+    public Race halfling { get; }
+    public Race human { get; }
+    public Race kobold { get; }
+    public Race leprechaun { get; }
+    public Race lizardman { get; }
+    public Race minotaur { get; }
+    public Race nymph { get; }
+    public Race ogre { get; }
+    public Race orc { get; }
+    public Race plasmoid { get; }
+    public Race robot { get; }
+    public Race satyr { get; }
+    public Race tortle { get; }
+    public Race troll { get; }
+    public Race unicorn { get; }
   }
 }

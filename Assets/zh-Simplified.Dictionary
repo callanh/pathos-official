@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,毒液在你的体内流淌。
+﻿AchievementDescription,acquire all positive talents.,获得所有正面天赋。
+AchievementDescription,acquire uncontrolled teleportation.,获得不受控的传送能力。
+AchievementDescription,Complete the module with a deathless victory.,无死亡通关该模组。
+AchievementDescription,dig through a wall.,挖穿一堵墙。
+AchievementDescription,discover every item.,发现每一件物品。
+AchievementDescription,eat a non-food item.,吃下一件非食物物品。
+AchievementDescription,encounter every entity.,遭遇每一种实体。
+AchievementDescription,gain complete natural resistances.,获得全部自然抗性。
+AchievementDescription,learn to cast every spell.,学会施放每一个法术。
+AchievementDescription,maximise all ability scores.,将全部属性值提升至上限。
+AchievementDescription,push a boulder.,推动一块巨石。
+AchievementDescription,reach experience level 40.,达到经验等级 40。
+AchievementDescription,recover from 1 life point.,从 1 点生命值恢复过来。
+AchievementDescription,train every skill to the limit.,将每一种技能训练至极限。
+AchievementDescription,transform an item on the ground.,变形地面上的物品。
+AchievementDescription,transform into another form.,变形为另一种形态。
+AchievementDescription,win without resurrecting.,在未复活的情况下获胜。
+AchievementName,all curation,全收录
+AchievementName,bouldering,推石者
+AchievementName,deathless,不死通关
+AchievementName,Dhak Legacy,Dhak Legacy
+AchievementName,exceptional,出类拔萃
+AchievementName,grand champion,总冠军
+AchievementName,great experience,经验老到
+AchievementName,immunity,免疫之躯
+AchievementName,Kaloi Opus,Kaloi Opus
+AchievementName,NetHack Codex,NetHack Codex
+AchievementName,peak form,巅峰状态
+AchievementName,Pixel Sojourn,像素之旅
+AchievementName,polymorphism,千变万化
+AchievementName,polypiling,堆叠变形
+AchievementName,Short Dungeon,迷你地牢
+AchievementName,spellbound,法术缠身
+AchievementName,survivor,幸存者
+AchievementName,teleportitis,传送症
+AchievementName,tunnelling,掘地者
+AchievementName,vore,吞食
+AchievementName,well met,幸会
+AfflictionDescription,Deadly venom courses through your veins.,毒液在你的体内流淌。
 AfflictionDescription,Something deeply unsettling is happening... down there.,有一种无法平息的感觉……在很深的地方。
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,在你胃的深处有一种噬咬感。
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,这种病毒性疾病会导致脑炎，通过被感染的动物传播
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,优良的秘银夹克
 AppearanceName,fizzy potion,起泡药水
 AppearanceName,flute,笛子
 AppearanceName,forked polearm,叉状长柄武器
+AppearanceName,frayed cloth,衣料块
 AppearanceName,fur boots,皮革鞋子
 AppearanceName,fuzzy book,模糊的书
 AppearanceName,glass orb,玻璃法球
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,莎草纸书
 AppearanceName,parchment book,羊皮纸书
 AppearanceName,pearl earrings,珍珠耳环
 AppearanceName,pearl ring,珍珠戒指
-AppearanceName,piece of cloth,衣料块
 AppearanceName,pink book,粉红色的书
 AppearanceName,pink potion,粉红药水
 AppearanceName,plaid book,方格书
@@ -549,8 +587,10 @@ BoonName,undead army,不死大军
 BoonName,unicorn friend,独角兽伙伴
 CalendarText,d MMMM yyyy,yyyy年 M月 d日
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,Akoya
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
+CharacterName,Armax,Armax
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arrom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belietha
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brouwer
+CharacterName,Busko,Busko
 CharacterName,Cailie,Cailie
 CharacterName,Capo,Capo
 CharacterName,Carthyre,Carthyre
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Crepsal
 CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
+CharacterName,Dastrne,Dastrne
 CharacterName,Davicohr,Davicohr
+CharacterName,Denier,Denier
+CharacterName,Derent,Derent
 CharacterName,Donneller,Donneller
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Ericendrick
 CharacterName,Eybrinde,Eybrinde
 CharacterName,Faraze,Faraze
+CharacterName,Farleen,Farleen
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenraymond
+CharacterName,Fizzit,Fizzit
 CharacterName,Floki,Floki
 CharacterName,Forro,Forro
 CharacterName,Franzia,Franzia
@@ -591,15 +637,20 @@ CharacterName,Galday,Galday
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Gleichman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,Goggie
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomack
 CharacterName,Grytt,Grytt
 CharacterName,Haelom,Haelom
 CharacterName,Haique,Haique
+CharacterName,Hal,Hal
+CharacterName,Hampte,Hampte
 CharacterName,Haquian,Haquian
 CharacterName,Hendrick,Hendrick
 CharacterName,Hough,Hough
+CharacterName,Hylatia,Hylatia
 CharacterName,Illitasha,Illitasha
+CharacterName,Iralna,Iralna
 CharacterName,Ishgood,Ishgood
 CharacterName,Istophe,Istophe
 CharacterName,Isylav,Isylav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Javarl
 CharacterName,Jayenason,Jayenason
 CharacterName,Jeem,Jeem
 CharacterName,Jessera,Jessera
+CharacterName,Jevard,Jevard
 CharacterName,Jonat,Jonat
+CharacterName,Karasque,Karasque
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kennold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagratha
 CharacterName,Lanetwalz,Lanetwalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Lesha
+CharacterName,Liloquy,Liloquy
 CharacterName,Luickean,Luickean
+CharacterName,Lunch,Lunch
 CharacterName,Lzay,Lzay
 CharacterName,Malasuth,Malasuth
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melchai
 CharacterName,Meloty,Meloty
+CharacterName,Mili,Mili
 CharacterName,Miller,Miller
 CharacterName,Misteph,Misteph
+CharacterName,Mizra,Mizra
+CharacterName,Neeva,Neeva
 CharacterName,Nichaeltoy,Nichaeltoy
 CharacterName,Ninerma,Ninerma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Ninny
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,Norvric
 CharacterName,Okennwood,Okennwood
 CharacterName,Ollac,Ollac
 CharacterName,Omdarro,Omdarro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oscae
+CharacterName,Ovira,Ovira
 CharacterName,Paltrick,Paltrick
 CharacterName,Pauwinner,Pauwinner
 CharacterName,Penevieve,Penevieve
@@ -653,13 +713,17 @@ CharacterName,Quarah,Quarah
 CharacterName,Quibb,Quibb
 CharacterName,Quizchak,Quizchak
 CharacterName,Quohnrupley,Quohnrupley
+CharacterName,Rake,Rake
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugarr
 CharacterName,Razz,Razz
 CharacterName,Rebenna,Rebenna
+CharacterName,Relinsarn,Relinsarn
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokiju
 CharacterName,Rupley,Rupley
+CharacterName,Rytto,Rytto
+CharacterName,Samrae,Samrae
 CharacterName,Sarlia,Sarlia
 CharacterName,Shinaas,Shinaas
 CharacterName,Smither,Smither
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stewite
 CharacterName,Sully,Sully
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanyacka
+CharacterName,Tempus,Tempus
 CharacterName,Thakuline,Thakuline
 CharacterName,Threepo,Threepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,Toland
 CharacterName,Trank,Trank
+CharacterName,Uballon,Uballon
 CharacterName,Udfoot,Udfoot
 CharacterName,Uffle,Uffle
 CharacterName,Ujopayne,Ujopayne
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethome
 CharacterName,Viophie,Viophie
 CharacterName,Vorzian,Vorzian
+CharacterName,Waldrin,Waldrin
 CharacterName,Wallison,Wallison
 CharacterName,Waltis,Waltis
 CharacterName,Walzen,Walzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Xank
 CharacterName,Xantari,Xantari
 CharacterName,Xarrung,Xarrung
 CharacterName,Xiolet,Xiolet
+CharacterName,Yahoa,Yahoa
 CharacterName,Yarromdee,Yarromdee
 CharacterName,Yassage,Yassage
 CharacterName,Yorque,Yorque
 CharacterName,Yral,Yral
 CharacterName,Yuvaloren,Yuvaloren
+CharacterName,Zarja,Zarja
 CharacterName,Zean,Zean
 CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,Zuki
 CharacterName,Zultry,Zultry
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",经过多年的深思熟虑，这些占卜者准备出世冒险。掌握了自己的思想，他们能够以强大的意志力行动。
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.",慈善的看护人，他们总会给予弱者援助。并对于对抗疾病已习以为常，他们是卫生与清洁的模范，并藉此以援助。不过也因此，他们需要依赖长期与他人的友谊而生存。
@@ -886,7 +957,7 @@ CounterName,searches,搜索
 CounterName,services,服务
 CounterName,sets,设置
 CounterName,sits,坐
-CounterName,slides,滑动
+CounterName,slides,滑过
 CounterName,stakes,穿刺（木桩）
 CounterName,struggles,挣扎
 CounterName,studies,学习
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,对烈焰与高�
 ElementDescription,Complete resistance to life and mana draining effects.,对生命吸取与魔力吸取的完全抗性。
 ElementDescription,Complete resistance to petrification effects.,对石化的完全抗性。
 ElementDescription,Complete resistance to poison damage.,对毒素伤害的完全抗性。
-ElementDescription,Protects you against pure magical effects.,对于纯粹魔法效果的保护。
-ElementDescription,You resist attempts to render you into a magical slumber.,魔法造成的睡眠被你所抵抗。
+ElementDescription,Complete resistance to purely magical damage and effects.,对于纯粹魔法效果的保护。
+ElementDescription,Prevents effects that would cast you into a magical slumber.,魔法造成的睡眠被你所抵抗。
 ElementName,acid,强酸
 ElementName,cold,寒冷
 ElementName,digging,挖掘
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,重压
 EncumbranceName,unencumbered,无负担
 EngulfmentName,engulfed,吞入
 EngulfmentName,swallowed,吞咽
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,有远大理想的中体型生物。短命而常见，不要低估它们。
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",可以随意变形的奇妙存在，没有固定的形状，常常被描述为等离子体一样的软泥怪。不过它们经常呈现为半透明的人形，这样就可以使用工具和衣物。
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",躯体庞大的远古种族。他们可怖的体型给他们带来无比的力量，需要靠进食大量肉类与岩石支撑。
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",已故冒险者残留在世间的灵魂。他们已经没有了那种世俗的欲望，因此很乐意与他人分享。对于这些已故的冒险者来说，这是他们的第二次机会，让他们能够继续自己的复仇或是寻求救赎。作为一种灵体，他们体型较大，呈半透明状，并且可以在墙壁中穿梭。
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",美丽且与俗世隔绝的生物，谣传他们带有标志型的光圈与带羽毛的翅膀。 他们能在善恶分辨中从容自如，并且能在一切所持的物品中感觉到神性。
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,当心这个发条控制的战争机器。
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,一种双足机械造物，拥有近乎无限的智能，由熔核引擎驱动。这种引擎需要持续提供金属作为原料，并且极易受到水的伤害。
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",受到自然之灵祝福的异族生物，拥有魁梧的身躯，毛茸茸的下半身，山羊的蹄子和公羊的角。他们野蛮而又聪明，过着每天喝酒跳舞打架的快乐生活。
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",看起来像人形的龙，体型健壮、气势雄伟，具有一些爬行动物的特征，包括鳞片、呼吸孔和爪子。
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",大型食肉爬行动物其祖先在文明出现前就已统治世界许久。他们是令人恐惧的掠食者，可以跳跃很远、用厚皮抵挡许多攻击。
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,可怖的生物，有公牛一般的头和尾巴，身体却是人形。
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",虽然是所有邪恶生物的简称，但总长着赤红的皮肤以及长角。 仅仅是迫使他人就能使他们展现出最黑暗且残暴的欲望。
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",贪婪、喜欢劫掠且体型魁梧的类人种族，通常有很严重的驼背，因此他们总是把手拖在地上。虽然体型笨拙，但是他们有着强壮的体质，以及极强的自愈能力。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",能变形的恶魔，以欺骗为生。
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,喜欢简单生活的小生物。他们尤其喜好社交，天赋常让他们有不轨企图。
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",喜好自然与魔法的物种。他们与人类相近，但更小、更灵敏。
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.",粗壮、矮小、坚硬的物种。他们以固执、金技和嗜酒知名。
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",小体型的地底生物，喜好打造和魔法。进化使其适合在食物稀少的环境下生存。
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",两种腐烂史莱姆较小的那个，这个棕色的史莱姆据说尝起来更像过期的牛奶，而不是巧克力甜点。这个史莱姆会吃编织物和各种兽皮，但是它最有名的能力是它独特的繁殖方式。当它和铁器接触的时候，会发生腐烂史莱姆的二分裂，产生两个后代。得益于地牢中冒险者使用的铁质武器，这个生物的数量从来没有下降过。
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",这款木乃伊甜点是将人类尸体浸泡在蜂蜜中制成的。不知何故，一种鲜为人知的僧侣崇拜使它复活了，它既致命又美味。
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,这个奇怪的腐蚀性液体泡泡看起来没有任何进攻性。
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",长翅膀的小精灵，天生具有魔力和美貌。在受威胁时，他们可以通过扭曲空间逃脱。
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",他们和乌龟一样背着大大的壳，是天生的游牧生存主义者。从学会走路的那一刻起，他们就会离开家乡去环游世界。无论走到哪里，他们的背后都有家的舒适与庇护。
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",丑陋而残暴的食人物种，好战、强力但愚蠢。
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,银色雏龙
 EntityName,baby white dragon,白色雏龙
 EntityName,baby yellow dragon,黄色雏龙
 EntityName,bad egg,坏蛋
-EntityName,balrog,巴洛炎魔
 EntityName,baluchitherium,巨犀
 EntityName,banshee,女妖
 EntityName,bar-lgura,猿魔
@@ -1175,6 +1277,7 @@ EntityName,dao,土巨灵
 EntityName,dark cleric,黑暗祭司
 EntityName,Death,死亡
 EntityName,death dog,死神之犬
+EntityName,decinder,巴洛炎魔
 EntityName,deep gnome,深渊侏儒
 EntityName,deep one,深潜者
 EntityName,deeper one,更深潜者
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,变形怪
 EntityName,dracolich,龙巫妖
 EntityName,dracon,龙裔
 EntityName,dragon king,龙王
+EntityName,dread wraith,戒灵
 EntityName,dretch,怯魔
 EntityName,drow,卓尔精灵
 EntityName,dryad,森林女神
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,矮人木乃伊
 EntityName,dwarf thief,矮人盗贼
 EntityName,dwarf warrior,矮人战士
 EntityName,dwarf zombie,矮人僵尸
-EntityName,Earendil,埃兰迪尔
 EntityName,earth binder,大地使者
 EntityName,earth elemental,地元素
 EntityName,earth maker,大地法师
@@ -1227,7 +1330,6 @@ EntityName,elf king,精灵王
 EntityName,elf lord,精灵君主
 EntityName,elf mummy,精灵木乃伊
 EntityName,elf zombie,精灵僵尸
-EntityName,Elwing,爱尔温
 EntityName,embalmer,敛尸者
 EntityName,emerald golem,绿宝石傀儡
 EntityName,energy vortex,能量旋风
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,双头巨人僵尸
 EntityName,exterminator,灭虫者
 EntityName,fairy,妖精
 EntityName,Famine,饥荒
+EntityName,Farwander,双花
 EntityName,Father Dagon,父神达贡
 EntityName,fiend,邪神
 EntityName,fire ant,火蚁
@@ -1274,6 +1377,7 @@ EntityName,ghost,幽灵
 EntityName,ghoul,食尸鬼
 EntityName,ghoul mage,食尸鬼法师
 EntityName,ghoul queen,食尸鬼女王
+EntityName,Ghuyaxil,耶诺古
 EntityName,giant,巨人
 EntityName,giant ant,巨蚁
 EntityName,giant badger,巨人獾
@@ -1380,9 +1484,9 @@ EntityName,jackal,胡狼
 EntityName,jackalwere,胡狼人
 EntityName,jaguar,美洲虎
 EntityName,jellyfish,水母
+EntityName,Jharothy,阿蒙
 EntityName,jiggling blob,轻摇污斑
 EntityName,juggernaut,主宰
-EntityName,Juiblex,无面之主
 EntityName,juvenile raven,幼乌鸦
 EntityName,Kaloi Thrym,暗黑魔王
 EntityName,kamadan,卡曼丹
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,狗头人僵尸
 EntityName,komodo dragon,科莫多龙
 EntityName,kraken,克拉肯
 EntityName,lamb,羊羔
-EntityName,Lareth,拉瑞斯
 EntityName,large cat,巨猫
 EntityName,large dingo,大野狗
 EntityName,large dog,巨犬
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,蜥蜴人头领
 EntityName,lizardman mage,蜥蜴人魔法师
 EntityName,lizardman shaman,蜥蜴人萨满
 EntityName,lizardman warrior,蜥蜴人战士
-EntityName,Lolth,罗丝女神
 EntityName,long worm,长蠕虫
 EntityName,long worm tail,长蠕虫尾巴
 EntityName,Lord Carnarvon,卡那封伯爵
@@ -1481,7 +1583,6 @@ EntityName,mumak,战象
 EntityName,nabassu,掠魂魔
 EntityName,nalfeshnee,判魂魔
 EntityName,Nalzok,纳佐克
-EntityName,nazgul,戒灵
 EntityName,neanderthal,尼安德特人
 EntityName,Neferet,绿法师涅法雷特
 EntityName,newt,蝾螈
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,臃肿魔
 EntityName,nurse,护士
 EntityName,occultist,死灵法师
 EntityName,ochre jelly,赭石色凝冻
+EntityName,Oeziblegh,无面之主
 EntityName,ogre,食人魔
 EntityName,ogre king,食人魔之王
 EntityName,ogre lord,食人魔君主
 EntityName,ogre mage,食人魔法师
+EntityName,Oleyth,拉瑞斯
 EntityName,olog-hai,强巨魔
 EntityName,Oracle,先知
 EntityName,orange jelly,橙凝冻
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,兽人勇士
 EntityName,orc zombie,兽人僵尸
 EntityName,Orcus,奥伽斯
 EntityName,Orion,俄里翁
+EntityName,Orvalth,罗丝女神
 EntityName,owlbear,鸮熊
 EntityName,pack rat,包囊鼠
 EntityName,page,骑士侍从
@@ -1550,6 +1654,7 @@ EntityName,rabbit,兔子
 EntityName,rabid rabbit,疯狂兔子
 EntityName,rabid rat,疯狂之鼠
 EntityName,rabid wolf,疯狂之狼
+EntityName,Raedilan,埃兰迪尔
 EntityName,rancid jelly,腐臭凝冻
 EntityName,rat king,鼠之王
 EntityName,ratwere,鼠狼人
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,红宝石傀儡
 EntityName,rust monster,锈蚀怪
 EntityName,rutterkin,畸魔
 EntityName,sabre-toothed cat,剑齿虎
+EntityName,Sairou,爱尔温
 EntityName,salamander,火蜥蜴
 EntityName,sandestin,变形魔
 EntityName,sapphire golem,蓝宝石傀儡
@@ -1629,8 +1735,7 @@ EntityName,student,学生
 EntityName,succubus,魅魔
 EntityName,swamp kobold,沼泽狗头人
 EntityName,tengu,大天狗
-EntityName,Thorin,索林
-EntityName,Thoth Amon,阿蒙
+EntityName,Tholmak,索林
 EntityName,thug,暴徒
 EntityName,tiger,虎
 EntityName,tigerwere,虎狼人
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,巨魔木乃伊
 EntityName,tsetse fly,舌蝇
 EntityName,tunnel worm,隧道蠕虫
 EntityName,two-headed troll,双头巨魔
-EntityName,Twoflower,双花
 EntityName,umber hulk,土巨怪
 EntityName,undead slayer,不死者猎手
 EntityName,vampire,吸血鬼
@@ -1656,7 +1760,7 @@ EntityName,vampire king,吸血鬼之王
 EntityName,vampire lord,吸血鬼君主
 EntityName,vampire mage,吸血鬼法师
 EntityName,Van Helsing,范海辛
-EntityName,Vecna,维克那
+EntityName,Vercrux,维克那
 EntityName,violet fungus,浅紫真菌
 EntityName,vorpal jabberwock,断头炸脖龙
 EntityName,vrock,鹫魔
@@ -1703,7 +1807,6 @@ EntityName,wumpus,狮头象
 EntityName,wyvern,双足飞龙
 EntityName,xan,玄蚊
 EntityName,xorn,索尔石魔
-EntityName,Yeenoghu,耶诺古
 EntityName,yellow jacket,胡蜂
 EntityName,yellow jelly,黄色凝冻
 EntityName,yellow light,黄光
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} 被取消了
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} 被 {ElementName} 所伤害
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} 被 {ElementName} 所破坏
 FormatText,{AssetName} was disintegrated,{AssetName} 分解了
+FormatText,{AssetName} was recharged,{AssetName} 重新充能了
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} 将{Defender:CharacterName}斩首
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} 吓死了 {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} 杀死了 {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} 为 {Defender:CharacterName} 身上发生的不幸感到难过
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} 迫使 {Defender:CharacterName} 发起攻击！
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} 转为敌对 {Defender:CharacterName}！
-FormatText,{Base} in {Range},{Base} {Range}
 FormatText,{BeamName} beam,{BeamName} 射线
 FormatText,{BlockName} was disintegrated,{BlockName} 被解离了
 FormatText,{BoonName} which direction?,{BoonName} 哪个方向？
 FormatText,{BoonName} which item?,{BoonName} 哪个物品？
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,{Chance} 机率
 FormatText,{Chance} leaves corpse,({Chance}) 掉落尸体
 FormatText,{Chance} per room,每个房间 {Chance} 机率
 FormatText,{Chance} react to {ElementName},{Chance} 做出反应 {ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 对 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} 对 {With:AssetName} {MotionPastName} {Use:FixtureName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} 地牢 {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",{CharacterName} 达成了 {AchievementName}，{AchievementDescription}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} 熟练地 {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} 熟练地对 {With:AssetName} {MotionPastName} {Use:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} 升到了 {LevelNumber} 级
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} 从 {Victim:CharacterName} 身上偷走了所有物品
 FormatText,{WeightUnits} kg,{WeightUnits} 公斤
 FormatText,{WeightUnits} lbs,{WeightUnits} 斤
-FormatText,after reaching dungeon level {RecordDepth},最深到达过 {RecordDepth} 层
+FormatText,after reaching depth {RecordDepth},最深到达过 {RecordDepth} 层
 FormatText,animate {CharacterName},活化 {CharacterName}
 FormatText,boost {AttributeName} by enchantment,根据附魔改变{AttributeName}
 FormatText,break {FeatureName},破坏 {FeatureName}
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},等级{From}-{To}
 FormatText,levels {Number}+,等级大于{Number}
 FormatText,LOCKED {GATENAME},上锁的 {GATENAME}
 FormatText,lose {PropertyName} talent,失去天赋 {PropertyName}
-FormatText,not {EffectProperty},不包括 {EffectProperty}
 FormatText,polymorph into {EntityNames},变形为 {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},复活死尸 {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},范围 {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,发动 {Dice} 次
 FormatText,unless resists {ElementName},除非对 {ElementName} 有抗性
 FormatText,unless target has {PropertyName},除非目标拥有 {PropertyName}
 FormatText,versus {Something},克制{Something}
-FormatText,when {Chance},{Chance} 机率
 FormatText,when {GROUNDNAME},若地面为 {GROUNDNAME}
 FormatText,when {ITEMNAME},当 {ITEMNAME}
-FormatText,when {KINDNAMES},当 {KINDNAMES}
 FormatText,when {MATERIALNAME},当 {MATERIALNAME}
 FormatText,when {PROPERTYNAME},当 {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},当 {SANCTITYNAME}
 FormatText,when {Something},为{Something}
 FormatText,when {STANDINGNAME},当 {STANDINGNAME}
 FormatText,when resists {ElementName},当对 {ElementName} 免疫时
+FrequencyName,abundant,大量
+FrequencyName,elusive,稀有
+FrequencyName,none,无
+FrequencyName,occasional,偶尔
+FrequencyName,scarce,稀少
+FrequencyName,typical,普通
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,这扇门是用水晶造成的，很难损坏。
 GateName,crystal door,水晶门
 GateName,gold door,金门
@@ -2051,9 +2159,11 @@ GenderName,neuter,中性
 GenderName,non-binary,其他性别
 GenerationType,module,模组
 GenerationType,quest,探索
+GenerationType,workshop,创意工坊
 GradeName,artifact,神器
 GradeName,exotic,超凡
 GradeName,standard,普通
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,冰冷的石头地面的制作手艺并不精良，但是上面刻满了时间的痕迹。
 GroundName,cave floor,洞穴地面
 GroundName,chasm,裂隙
@@ -2337,7 +2447,7 @@ ItemName,book of create familiar,侍灵制造咒语书
 ItemName,book of crushing sphere,泥岩球侍灵咒语书
 ItemName,book of curing,疾病治愈咒语书
 ItemName,book of darkness,黑暗咒语书
-ItemName,book of deflection,保护咒语书
+ItemName,book of deflection,偏折咒语书
 ItemName,book of detect food,食物侦测咒语书
 ItemName,book of detect monsters,怪物侦测咒语书
 ItemName,book of detect treasure,宝藏侦测咒语书
@@ -2357,7 +2467,7 @@ ItemName,book of haste,迅捷咒语书
 ItemName,book of healing,治疗咒语书
 ItemName,book of ice storm,冰风暴咒语书
 ItemName,book of identify,鉴定咒语书
-ItemName,book of invisibility,隐形咒语书
+ItemName,book of invisibility,隐身咒语书
 ItemName,book of jumping,跳跃咒语书
 ItemName,book of knock,开锁咒语书
 ItemName,book of levitation,漂浮咒语书
@@ -2504,7 +2614,9 @@ ItemName,glaive,剑刃戟
 ItemName,gold coin,金币
 ItemName,gold dragon scale mail,金色龙鳞甲
 ItemName,gold dragon scales,金色龙鳞
+ItemName,gold flail,黄金链枷
 ItemName,Gold Key,黄金钥匙
+ItemName,gold plate mail,黄金板甲
 ItemName,great dagger,长匕首
 ItemName,green dragon scale mail,绿色龙鳞甲
 ItemName,green dragon scales,绿色龙鳞
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!大师模式!
 LiteralText,(2d6 instead of 2-12),(2d6 而非 2-12)
 LiteralText,(game information status text),(游戏信息状态文本)
 LiteralText,(not eligible for hall of fame),（本局游戏将不会录入名人堂）
+LiteralText,(optional),（可选的）
 LiteralText,(recommended for AMOLED screens),（推荐AMOLED屏幕使用）
 LiteralText,(SUPPRESSED),(压制）
 LiteralText,[MASTER],[大师]
-LiteralText,abolition of firearms,关闭火器
+LiteralText,Abolition of firearms,关闭火器
 LiteralText,ABOUT,关于
-LiteralText,About Pathos,关于Pathos
-LiteralText,accelerated resting,休息时加速
+LiteralText,Accelerated resting,休息时加速
+LiteralText,Achievements,成就
 LiteralText,actions,行动
 LiteralText,ADD LEVEL,添加楼层
 LiteralText,Add new adventurer,添加新冒险者
@@ -3025,8 +3138,8 @@ LiteralText,alias?,命名
 LiteralText,ALL,所有
 LiteralText,ALL AT ONCE,所有同时
 LiteralText,all kind,所有种类
+LiteralText,all levels,所有层
 LiteralText,always,100%
-LiteralText,AMBIENT SOUNDS,周围声音
 LiteralText,amnesia,失忆
 LiteralText,AMNESIA,失忆
 LiteralText,anatomy,解剖学
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,活化 复仇者
 LiteralText,ANNOUNCEMENT,提示
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,逆时针旋转90度
+LiteralText,antique art,上古艺术
 LiteralText,any item,任何物品
 LiteralText,APPLICATION FILES,应用文件
 LiteralText,Are you sure you want to end your adventure?,你确定要离开地牢并结束你的冒险吗？
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,你确定？
 LiteralText,area of effect,范围效果
 LiteralText,area transient,范围短期状态
+LiteralText,Arrow directional keys,方向键
 LiteralText,ARTIFACTS,神器
+LiteralText,Ascend,上楼
 LiteralText,ASCEND TO PREVIOUS LEVEL,回到之前的楼层
 LiteralText,assess item,评估
 LiteralText,assets,物品
 LiteralText,ATMOSPHERE,氛围
 LiteralText,attack modifier,攻击调整
 LiteralText,Attack which direction?,攻击哪个方向？
-LiteralText,attack//noun,攻击
-LiteralText,ATTACK//noun,攻击
-LiteralText,attack//verb,攻击
-LiteralText,ATTACK//verb,攻击
+LiteralText,Attack//noun,攻击
+LiteralText,Attack//verb,攻击
 LiteralText,attacks,攻击
+LiteralText,AUDIO,音量
 LiteralText,AUTO,自动
 LiteralText,auto saving,自动存档
+LiteralText,avatar,头像
 LiteralText,AWAKE,醒来
-LiteralText,BACK,返回
 LiteralText,backfire,作用于自身
 LiteralText,barrier,障碍物
 LiteralText,BARRIERS,障碍物
 LiteralText,bazaar,集市
 LiteralText,Begin the adventure,开始冒险
 LiteralText,beholds,观察
-LiteralText,beta discussions,测试版讨论
 LiteralText,Black background,黑色背景
 LiteralText,blasphemy,亵渎
-LiteralText,BLINK,闪现
+LiteralText,Blink,闪现
 LiteralText,blink entity,闪现
 LiteralText,Blink which direction?,朝哪个方向闪现？
 LiteralText,block,堵住
 LiteralText,BLOCKED,堵住的
 LiteralText,BLOCKS,阻挡
-LiteralText,BOONS,福利
+LiteralText,Boons,福利
 LiteralText,boost attack by enchantment,攻击加成
 LiteralText,boost damage by enchantment,伤害加成
 LiteralText,boost defence by enchantment,防御加成
@@ -3093,10 +3207,10 @@ LiteralText,CAN'T MIMIC,无法拟态
 LiteralText,CAN'T MOUNT,无法骑乘
 LiteralText,CAN'T REACH,无法接触
 LiteralText,CAN'T SEE,无法看见
-LiteralText,CAN'T SLIDE,无法滑动
+LiteralText,CAN'T SLIDE,无法滑过
 LiteralText,CAN'T TELEKINESIS,不能被念力控制
 LiteralText,CAN'T THROW,无法投掷
-LiteralText,CANCEL,取消
+LiteralText,Cancel,取消
 LiteralText,cancellation,撤销
 LiteralText,CANCELLED,取消的
 LiteralText,capture any entity,捕捉
@@ -3105,13 +3219,12 @@ LiteralText,Cast,施咒
 LiteralText,CAST SPELLS,施咒
 LiteralText,challenge,挑战性
 LiteralText,CHAMPION,冠军
+LiteralText,Change,更改
 LiteralText,Character,角色
-LiteralText,CHARACTER,角色
 LiteralText,charged items,已充能物品
-LiteralText,Chat on Discord,在Discord上聊天
 LiteralText,check for updates?,检查更新吗？
 LiteralText,checking for updates,检测更新
-LiteralText,CHOOSE,选择
+LiteralText,Choose,选择
 LiteralText,Choose your quick action,选择你的快捷按钮
 LiteralText,class,职业
 LiteralText,CLASSES,职业
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,点击重试
 LiteralText,Click to send detected issues to the author,点击将出现的问题发送给作者
 LiteralText,clone source entity,克隆角色来源
 LiteralText,clone target entity,克隆角色目标
-LiteralText,CLOSE,关闭
+LiteralText,Close,关闭
 LiteralText,closed,关闭
-LiteralText,Coding on Medium,在Medium上的代码
 LiteralText,coins,硬币
-LiteralText,COMMAND,命令
+LiteralText,Command,命令
+LiteralText,Community,
 LiteralText,companion,队友
 LiteralText,compression,压缩
-LiteralText,CONCEAL,隐藏
+LiteralText,Conceal,隐藏
 LiteralText,CONCEALED,隐藏
 LiteralText,concealing,隐匿
 LiteralText,CONDUCT,计数
-LiteralText,CONFIRM,确认
+LiteralText,Confirm,确认
+LiteralText,Connect,
 LiteralText,connect portal,连接通道
 LiteralText,Connect to game hosted by another player.,连接其他玩家创建的游戏
-LiteralText,CONSOLE,控制台
+LiteralText,Console,控制台
 LiteralText,constructed,创造
-LiteralText,CONTACT,联系
 LiteralText,Continue,继续
 LiteralText,CONTINUE,继续
 LiteralText,CONTROLLED,控制的
+LiteralText,Controller,手柄
+LiteralText,Controls,操控
 LiteralText,convert block to barrier,转换巨石
 LiteralText,conveyance,食用
 LiteralText,COPY,复制
 LiteralText,corpse,尸体
 LiteralText,CRACK!,破裂！
-LiteralText,craft,制作
-LiteralText,CRAFT,制作
+LiteralText,Craft,制作
 LiteralText,Craft which item?,要造什么？
 LiteralText,CRASH APP!,使游戏崩溃
 LiteralText,CRASH!,冲开！
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,向哪个方向创造？
 LiteralText,CREDITS,制作者
 LiteralText,CROP,重置楼层面积
 LiteralText,CURSED,物品受诅咒
-LiteralText,CUSTOM,自定义
 LiteralText,CUSTOM HERO,自定义英雄
 LiteralText,CUSTOM MODULES,自定义模组
+LiteralText,customise controls,自定义操控
 LiteralText,damage,伤害
 LiteralText,DAMAGE,伤害
 LiteralText,dark,黑暗
+LiteralText,Darken area,黑暗区域
 LiteralText,DEAD END,死胡同
 LiteralText,death,死亡
 LiteralText,deathray,死亡射线
 LiteralText,decapitate entity,斩首
 LiteralText,decapitation,斩首
 LiteralText,DECEASED,已故冒险者
-LiteralText,decelerated real-time,降低即时模式速度
+LiteralText,Decelerated real-time,降低即时模式速度
 LiteralText,DECREASE,降低
 LiteralText,defence,防御
 LiteralText,DEFENCE,防御
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,删除
 LiteralText,delete this level,删除此层
 LiteralText,DEMOTE,上移
 LiteralText,depth,深度
+LiteralText,Descend,下楼
 LiteralText,DESCEND TO NEXT LEVEL,去往之后的楼层
 LiteralText,destination,通往
 LiteralText,destroy,摧毁
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,未录入
 LiteralText,diet,食性
 LiteralText,difficulty,难度
 LiteralText,digging,挖掘
-LiteralText,disable ambient sounds,关闭环境音效
+LiteralText,Disable ambient sounds,关闭环境音效
 LiteralText,Disable auto save on transition,关闭楼层转换时自动保存
+LiteralText,Disable automatic camera,自由平移画面
 LiteralText,Disable button tap sounds,关闭按钮音效
+LiteralText,Disable cloud sync,关闭云同步
 LiteralText,Disable conclusion boom,关闭结束音效
 LiteralText,Disable continue button,关闭继续按钮
-LiteralText,disable haptic feedback,关闭震动反馈
+LiteralText,Disable haptic feedback,关闭震动反馈
+LiteralText,Disable hardware acceleration,关闭硬件加速
 LiteralText,Disable idle animations,关闭闲置动画
 LiteralText,Disable introduction boom,关闭开场音效
+LiteralText,Disable manual zoom,锁定缩放模式
 LiteralText,Disable mask animations,禁用屏幕遮罩效果
 LiteralText,Disable online services,禁用联网功能
 LiteralText,Disable pitch shifting,禁止随机音效音量
+LiteralText,Disable processing rate limit,解除性能限制
 LiteralText,Disable radial quick menu,禁用角色快捷菜单
 LiteralText,Disable side quick menus,禁用侧边快捷菜单
 LiteralText,Disable spacebar real-time toggle,禁用通过空格开关实时游戏
 LiteralText,Disable swipe gestures,禁用平滑转场效果
+LiteralText,Disable tutorial,关闭教程
 LiteralText,Disable Zeroth announcement,关闭《零环》提示
 LiteralText,disarm entity,缴械
-LiteralText,DISCONNECT,断开连接
+LiteralText,Disconnect,断开连接
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,已断开连接，请检查网络连接并确保所有设备的游戏版本均相同
 LiteralText,discover item,启蒙
-LiteralText,Discuss on Reddit,在Reddit上讨论
+LiteralText,discoveries,发现
 LiteralText,disenchant item,去附魔
 LiteralText,dismantle items to extract the base materials and raw essence,摧毁物品来得到基本材料和精华。
-LiteralText,DISMISS,解散
-LiteralText,DISMOUNT,下马
+LiteralText,Dismiss,解散
+LiteralText,Dismount,下马
 LiteralText,Dismount which direction?,向哪个方向下马？
 LiteralText,Display dice rolls in the help,在帮助中显示骰子结果
+LiteralText,Display full screen,全屏显示
 LiteralText,distribution,能力加成
 LiteralText,divine item,检测祝福/诅咒
 LiteralText,DIVINED,预言
 LiteralText,divined items,预言物品
 LiteralText,Do you want to save or quit this adventure?,你希望保存还是放弃这次冒险？
 LiteralText,domestic,可驯养
-LiteralText,DONATE,捐献
+LiteralText,Donate,捐献
 LiteralText,Donate to say thanks,捐赠来向作者致谢
 LiteralText,DOOR,门
 LiteralText,double damage when mounted,骑乘时双倍伤害
+LiteralText,Down,下
+LiteralText,Down-left,左下
+LiteralText,Down-right,右下
 LiteralText,downgrade to,降级成了
 LiteralText,downloading update,更新下载中
 LiteralText,drain item,物品降级
-LiteralText,drop,掉落
-LiteralText,DROP,丢弃
+LiteralText,Drop,丢弃
 LiteralText,DUAL WIELD,双持
 LiteralText,duration,持续时间
+LiteralText,Eat,
 LiteralText,edible items,可食用物品
 LiteralText,egg,蛋
 LiteralText,else,其他
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,负重上限
 LiteralText,End this adventure,结束这次冒险
 LiteralText,ended,终结
 LiteralText,engulf entity,吞咽
+LiteralText,Engulfment,吞噬
 LiteralText,ENTER QUANTITY,输入数量
 LiteralText,ENTITIES,怪物
 LiteralText,entity,实体
 LiteralText,entropy accidents,熵随机事件
-LiteralText,EQUIP,装备
-LiteralText,equipped,已装备
+LiteralText,Equip,装备
+LiteralText,equipment,已装备
 LiteralText,ESCAPE,逃脱
 LiteralText,escape traps,挣脱陷阱
 LiteralText,escape with,挣脱于
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,交换
 LiteralText,exchange entity,交换
 LiteralText,EXIT PATHOS,离开游戏
 LiteralText,EXPAND,扩展楼层面积
-LiteralText,EXPEL,吐出
+LiteralText,Expel,吐出
 LiteralText,experience,经验
 LiteralText,EXPERIENCE,经验
 LiteralText,explosion,爆炸
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,错误的存档
 LiteralText,feats,特殊能力
 LiteralText,feature,特殊
 LiteralText,FEATURES,特殊
-LiteralText,FEED,喂养
+LiteralText,Feed,喂养
 LiteralText,FEEDBACK,反馈
 LiteralText,Feedback information,反馈信息
 LiteralText,FILES,文件
@@ -3306,24 +3433,26 @@ LiteralText,fixed,被抓住
 LiteralText,fixed range,固定射程
 LiteralText,FIZZLE,发嘶嘶声
 LiteralText,Floor,层
-LiteralText,FOLLOW,跟随
-LiteralText,Follow me on Twitter,在推特上关注开发者
-LiteralText,free panning mode,自由平移画面
+LiteralText,Follow,跟随
+LiteralText,frequency,频率
+LiteralText,Friendship,友好
 LiteralText,fright,惊吓
 LiteralText,fumbling,笨拙
+LiteralText,Gain 1000 coins,获得1000金币
 LiteralText,GAIN KARMA,获得运程
 LiteralText,gain level,升级
 LiteralText,GAIN LEVEL,获得等级
 LiteralText,gain nutrition,获得营养
 LiteralText,gain skill,获得专精
+LiteralText,GAMEPLAY,开始游戏
 LiteralText,gate,门
 LiteralText,gates,门
 LiteralText,gather,收集
 LiteralText,gender,性别
 LiteralText,genocide,灭绝
-LiteralText,GENOCIDE,灭绝
 LiteralText,GIVE,给予
 LiteralText,GIVE ALL,给予所有
+LiteralText,GLOBAL,世界
 LiteralText,GLYPHS,图像
 LiteralText,GOD MODE,上帝模式
 LiteralText,gold,金币
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,孵化
 LiteralText,hatched by,孵化于
 LiteralText,Having trouble finding the stairs down to the next level?,难以找到下楼楼梯？
 LiteralText,Help,帮助
-LiteralText,HELP,帮助
 LiteralText,HIDDEN,躲藏的
-LiteralText,HIDE,躲藏
+LiteralText,Hide,躲藏
 LiteralText,hiding,隐藏
 LiteralText,HINT,提示
-LiteralText,HIRE,雇佣
+LiteralText,Hire,雇佣
+LiteralText,HJKL directional keys,HJKL移动方式
 LiteralText,horde,怪物群
 LiteralText,HORDES,怪物群
 LiteralText,HOST,创建
-LiteralText,How much damage you do to an opponent.,你能对目标造成的伤害。
 LiteralText,"However, you may want to complete your adventures before receiving the update.",但是，也许您更希望在接受更新之前完成正在进行的冒险。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,开发者希望您的冒险愉快，并且请随意与开发者交谈，给予反馈与建议。
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",我正在制作《零环》，一款继承了《Pathos》许多机制的2D平台类肉鸽游戏。点击这里来详细了解！
 LiteralText,I'm developing a new game called ZEROTH!,我正在制作一款名为《零环》的全新游戏！
 LiteralText,identified items,已鉴定的物品
-LiteralText,identify all items,鉴定所有
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,鉴定地上所有物品
-LiteralText,identify one item,鉴定一个
+LiteralText,Identify all items,鉴定所有
+LiteralText,Identify one item,鉴定一个
+LiteralText,identity,鉴定
 LiteralText,ILLITERATE,文盲
 LiteralText,illusion,幻象
 LiteralText,ILLUSION,幻象
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,禁锢
 LiteralText,incarceration,禁锢
 LiteralText,INCREASE,增加
 LiteralText,INDEX,索引
-LiteralText,individual crafting,分次制作
+LiteralText,Individual crafting,分次制作
 LiteralText,infinite quantity,可以使用无数次
 LiteralText,influenced actions,受影响的动作
 LiteralText,INSCRIBE,刻写
 LiteralText,INSCRIBE ITEM,刻写物品
 LiteralText,inscription?,刻写内容
-LiteralText,instruct each character,指引每个角色
+LiteralText,Inspect,查看
+LiteralText,Instruct each character,指引每个角色
 LiteralText,INSUFFICIENT GOLD,金币不足
+LiteralText,INTERFACE,界面
 LiteralText,Inventory,背包
-LiteralText,INVENTORY,背包
-LiteralText,ITEM,道具
-LiteralText,items,物品
+LiteralText,Item,道具
 LiteralText,ITEMS,物品
 LiteralText,JOIN,加入
 LiteralText,Journal,日志
 LiteralText,JOURNAL,日志
-LiteralText,JUMP,跳跃
+LiteralText,Jump,跳跃
 LiteralText,Jump which direction?,向哪个方向跳跃？
 LiteralText,karma,运程
 LiteralText,KARMA,运程
 LiteralText,key?,特殊钥匙
+LiteralText,Keyboard,键盘
+LiteralText,Kick,踢
 LiteralText,Kick which direction?,踢击哪个方向？
-LiteralText,KICK!,踢！
 LiteralText,kills,杀死
 LiteralText,kit,开局持有物品
-LiteralText,KNOWLEDGE,知识
+LiteralText,Knowledge,知识
 LiteralText,LANGUAGE,语言
-LiteralText,LEARN ALL SPELLS,学习所有咒语
+LiteralText,Learn all spells,学会所有法术
 LiteralText,learn spells,学习法术
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,在不断探索的过程中知晓零环世界的秘密，从而指引你的英雄逃离这个零环地狱。
+LiteralText,Left,左
 LiteralText,LEFT RING,左手戒指
 LiteralText,LEVEL CHART,等级-经验值
 LiteralText,level//rank,等级
@@ -3414,20 +3544,19 @@ LiteralText,life,生命值
 LiteralText,LIFE,生命值
 LiteralText,Life represents your physical health and death occurs at zero.,生命值代表你的健康，当生命值为0时将会死亡。
 LiteralText,light,点亮
-LiteralText,LIGHT,点亮
 LiteralText,light radius,光亮半径
+LiteralText,Lighten area,光亮区域
 LiteralText,limits,限制
 LiteralText,LIST,列表
 LiteralText,lit,点亮的
 LiteralText,LIVING,活物时
 LiteralText,loading,加载中
-LiteralText,LOCK,锁住
-LiteralText,locked,上锁的
-LiteralText,LOCKED,上锁了
-LiteralText,locked scaling mode,锁定缩放模式
+LiteralText,Lock,锁住
+LiteralText,Locked,上锁了
 LiteralText,locking,锁住
-LiteralText,loot,物资
-LiteralText,LOOT,物资
+LiteralText,Loot floor,搜刮地面
+LiteralText,Loot//noun,物资
+LiteralText,Loot//verb,物资
 LiteralText,LOSE KARMA,失去运程
 LiteralText,LOSE LEVEL,失去等级
 LiteralText,lose nutrition,失去营养
@@ -3440,39 +3569,44 @@ LiteralText,MANA,魔法值
 LiteralText,Mana represents your energy supply for casting spells.,魔法值代表你用来施放魔法时的能量供应
 LiteralText,Map,地图
 LiteralText,MAP,地图
-LiteralText,mapping,地图绘制
+LiteralText,Mapping,地图绘制
 LiteralText,material,素材
 LiteralText,materials,材料
 LiteralText,melting,融化
-LiteralText,MENU,菜单
+LiteralText,Menu,菜单
 LiteralText,mercenary,雇佣军
-LiteralText,MIMIC,拟态
+LiteralText,Mimic,拟态
 LiteralText,mimicking,拟态中的
 LiteralText,mobilise block,移动巨石
 LiteralText,modifier,调整
+LiteralText,MODULE,模组
 LiteralText,MORE INFO,更多信息
-LiteralText,MOUNT,骑乘
+LiteralText,Mount,骑乘
 LiteralText,Mount which direction?,向哪个方向骑乘？
 LiteralText,MOUNTED,骑乘中
-LiteralText,MOVE,前往
+LiteralText,Move,前往
 LiteralText,move down one level,下移一层
 LiteralText,move up one level,上移一层
 LiteralText,MULTIPLAYER,多人模式
+LiteralText,Multiplayer Chat,多人对话
 LiteralText,murder,谋杀
 LiteralText,MURDER ENTITIES EVERYWHERE,杀死一切生物
 LiteralText,music volume,音乐音量
 LiteralText,N/A,不可用
-LiteralText,name,命名
-LiteralText,NAME,命名
 LiteralText,name?,命名
+LiteralText,Name//noun,命名
+LiteralText,Name//verb,命名
+LiteralText,Navigate way down,自动前往下层
+LiteralText,Navigate way up,自动前往上层
+LiteralText,NEGATIVE,主动的
 LiteralText,neutral,中立
 LiteralText,never,0%
-LiteralText,NEW,新建
+LiteralText,Next character,下个角色
 LiteralText,no additional effects,无特殊效果
 LiteralText,no allies,没有盟友
 LiteralText,no ambient sounds,无背景音乐
 LiteralText,No appropriate items available,没有合适的物品
-LiteralText,no available knowledge,无可用知识
+LiteralText,No key,没有钥匙
 LiteralText,no records found,未找到记录
 LiteralText,no resistances,无抗性
 LiteralText,no talents,无天赋
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,什么也不发生
 LiteralText,Nothing of interest,没有值得关注的东西
 LiteralText,nothing to give,无可给予物品
 LiteralText,nothing to take,无可拿取物品
+LiteralText,Numpad directional keys,数字键盘移动方式
 LiteralText,nutrition,营养值
 LiteralText,NUTRITION,营养值
 LiteralText,OBSTRUCTED,阻塞的
 LiteralText,OFFLINE,离线
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,一次一个
 LiteralText,oOo,oOo
-LiteralText,OPEN,打开
+LiteralText,Open,打开
 LiteralText,OPENED,打开
 LiteralText,opening,开启
 LiteralText,OR,或者
 LiteralText,ORIGINAL,原始
+LiteralText,original art,原始
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",经过十余年的开发，Pathos 已成为一部极具沉浸感的奇幻角色扮演冒险。增强版即将首次登陆 Steam，敬请期待。
 LiteralText,OVERRIDE,覆写
 LiteralText,OVERVIEW,总览
 LiteralText,Palette,调色板
 LiteralText,PARTY,队伍
-LiteralText,passive (no attacking),被动（无攻击）
+LiteralText,Passive (no attacking),被动（无攻击）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos可以以分屏合作模式为最多四名玩家游玩。
 LiteralText,pathos development @ paypal,pathos development @ paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos无法加载您的冒险文件。请发送您的存档给我来调查错误。我也许可以通过修复来修复您的文件甚至更新游戏。感谢您的理解。
-LiteralText,Pathos might be the next evolution of Nethack.,Pathos 也许是Nethack的进化。
+LiteralText,Pathos might be the next evolution of NetHack.,Pathos 也许是NetHack的进化。
 LiteralText,penalty,惩罚
 LiteralText,penetrates,穿透
 LiteralText,per level,每升一级
+LiteralText,Perform,执行
 LiteralText,permanent,无法破坏
 LiteralText,PERSONAL,个人的
+LiteralText,Pick up,捡起
 LiteralText,PLACE,放置
 LiteralText,PLACE ALL,放置全部
 LiteralText,place curse,诅咒
 LiteralText,platform,平台
 LiteralText,Play,开始游戏
 LiteralText,Play a sound effect?,播放声效？
+LiteralText,Play Demo,体验测试版
 LiteralText,Player,玩家
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,请注意强制退出游戏可能导致存档丢失。
 LiteralText,Please offer any clarification,请描述出错情况
 LiteralText,Please provide your feedback,请进行反馈
 LiteralText,Please rotate your device to landscape :-),请旋转您的设备以切换模式 :-)
-LiteralText,POLYMORPH,变形
+LiteralText,Polymorph,变形
 LiteralText,polymorph entity,变形实体
 LiteralText,Polymorph into what?,变形为什么？
 LiteralText,polymorph item,变形物品
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,已变形
 LiteralText,portal,传送门
 LiteralText,PORTALS,传送门
 LiteralText,porter,捕捉袋
-LiteralText,PRAY,祈祷
+LiteralText,POSITIVE,被动的
+LiteralText,Pray,祈祷
 LiteralText,preservation,维护
-LiteralText,prevent revenant levels,禁止复仇者楼层
+LiteralText,Press a button to assign it to this command.,在这个快捷键上登录一个命令
+LiteralText,Prevent revenant levels,禁止复仇者楼层
+LiteralText,Previous character,上个角色
 LiteralText,prisoner,雕像
 LiteralText,probability,可能性
 LiteralText,PROMOTE,下移
 LiteralText,PROPERTIES,状态
+LiteralText,Publish,发布
+LiteralText,Publish to Pathos Workshop,发布到Pathos创意工坊
 LiteralText,punish,惩罚
 LiteralText,PUNISHED,被惩罚
 LiteralText,punishment?,惩罚
 LiteralText,PUNISHMENTS,惩罚
+LiteralText,Purchase,
 LiteralText,QUANTITY,数量
-LiteralText,QUICK LOAD,快速读档
-LiteralText,QUICK SAVE,快速存档
+LiteralText,QUESTS,任务
+LiteralText,Quick load,快速读档
+LiteralText,Quick save,快速存档
+LiteralText,Quick slot 0,快捷键0
+LiteralText,Quick slot 1,快捷键1
+LiteralText,Quick slot 2,快捷键2
+LiteralText,Quick slot 3,快捷键3
+LiteralText,Quick slot 4,快捷键4
+LiteralText,Quick slot 5,快捷键5
+LiteralText,Quick slot 6,快捷键6
+LiteralText,Quick slot 7,快捷键7
+LiteralText,Quick slot 8,快捷键8
+LiteralText,Quick slot 9,快捷键9
 LiteralText,quit,放弃
-LiteralText,QUIT,放弃
+LiteralText,Quit,放弃
 LiteralText,R//replica symbol,复制
 LiteralText,race,种族
 LiteralText,RACES,种族
 LiteralText,random,随机
-LiteralText,RANDOM,随机
-LiteralText,random dungeon seed,随机地牢种子
 LiteralText,random level,随机楼层
 LiteralText,random points,随机分数
+LiteralText,random seed,随机地牢种子
 LiteralText,rank,阶级
 LiteralText,rarity,稀有程度
 LiteralText,rate & review on the app store,评论并回顾
-LiteralText,RE-ACT,重复动作
-LiteralText,RE-CAST,重新施放
-LiteralText,RE-EQUIP,重新装备
+LiteralText,Re-act,重复动作
+LiteralText,Re-cast,重新施放
+LiteralText,Re-equip,重新装备
 LiteralText,Re-roll,重新投骰
 LiteralText,re-rolls,重新投掷
-LiteralText,RE-USE,重新使用
+LiteralText,Re-use,重新使用
 LiteralText,Read books to learn spells,读书来习得咒语
-LiteralText,READ!,读！
-LiteralText,REAL-TIME,实时
+LiteralText,Read!,读！
+LiteralText,Real-time,实时
 LiteralText,REALLY CRASH?,真的破坏？
 LiteralText,recall party,唤回队友
 LiteralText,Recommend Pathos,捐献给Pathos
 LiteralText,Redo,重复操作
 LiteralText,reflects,反射
+LiteralText,Refresh the screen,刷新屏幕
 LiteralText,REGISTER,登录
 LiteralText,REGISTER PLAYER HANDLE,登录玩家行为
 LiteralText,reinforced,加固
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,加强
 LiteralText,release entity,释放
 LiteralText,remove all transients,去除所有短期状态
 LiteralText,remove curse,去除诅咒
-LiteralText,REMOVE CURSE,移除诅咒
 LiteralText,remove random resistance,移除随机抗性
 LiteralText,remove random talent,移除随机天赋
 LiteralText,remove with,去除通过
 LiteralText,remove with boulder,使用巨石移除
 LiteralText,REMOVE//container,取出
-LiteralText,REMOVE//equipment,脱下
+LiteralText,Remove//equipment,脱下
 LiteralText,RENAME,重命名
 LiteralText,RENAME CHARACTER,重命名角色
 LiteralText,RENAME ITEM,重命名物品
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,起补满生命值
 LiteralText,replenish mana,起补满魔法值
 LiteralText,replica,复制品
 LiteralText,replicate item,复制物件
+LiteralText,Report faults,报告错误
 LiteralText,requires the skill to pick locks,需要开锁技能
 LiteralText,reset random equipment,重设随机装备
+LiteralText,Reset to defaults,恢复默认键
 LiteralText,resident?,NPC
 LiteralText,resistances,抗性
 LiteralText,RESISTS,抗性
 LiteralText,Rest,休息
 LiteralText,Rest how many turns?,要休息多少回合呢？
+LiteralText,Rest once,休息一回合
 LiteralText,restarting to update,重启游戏后更新……
 LiteralText,restock shop items,重新进货
 LiteralText,restore ability,复原能力
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,复活并继续
 LiteralText,resurrections,复活次数
 LiteralText,retaliations,反击
 LiteralText,RETURN,返回
-LiteralText,REVEAL,揭露
+LiteralText,Reveal,揭露
 LiteralText,REVEAL ALL MAPS,对所有楼层使用魔法地图
 LiteralText,REVEAL THIS MAP,对本楼层使用魔法地图
 LiteralText,revealed,不隐藏
 LiteralText,revenant,活化为复仇者
-LiteralText,REVERT,复原
+LiteralText,Revert,复原
+LiteralText,Right,右
 LiteralText,RIGHT RING,右手戒指
 LiteralText,rigid,坚硬
 LiteralText,ROTATE,旋转
 LiteralText,route entity,发送实体
 LiteralText,rumour,流言
 LiteralText,sacrifice item,献祭
+LiteralText,Same spot,相同方向
 LiteralText,SANITY CHECK,兼容性测试
 LiteralText,SAVE,保存
 LiteralText,SAVE & QUIT,保存与退出
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,保存的冒险
 LiteralText,SAVED BONES,遗骸
 LiteralText,school,研究
-LiteralText,scrap,分解
-LiteralText,SCRAP,分解
+LiteralText,Scrap,分解
 LiteralText,SEALED,密封
 LiteralText,Search,搜索
 LiteralText,Search how many turns?,要搜索多少回合呢？
+LiteralText,Search once,搜索一回合
 LiteralText,searching,搜索
 LiteralText,secret,暗门
 LiteralText,SECRET,秘密
 LiteralText,seed,种子
+LiteralText,Select,选择
 LiteralText,SELECT ATMOSPHERE,选择背景音乐
 LiteralText,Select Companion Tile,请选择宠物贴图
 LiteralText,Select Hero Tile,请选择角色贴图
 LiteralText,SELECT ITEM,选择物品
-LiteralText,SELECT LANGUAGE,选择语言
 LiteralText,SELECT MAP,选择地图
-LiteralText,SELECT PORTRAIT,选择朝向
 LiteralText,SELECT RESIDENT,选择NPC
 LiteralText,SELECT SQUARE,选择格子
-LiteralText,SELECT TILESET,选择图块包
 LiteralText,self,自身
+LiteralText,Self menu,角色菜单
 LiteralText,SELL,出售
 LiteralText,SELL ALL,出售全部
 LiteralText,SEND,发送
 LiteralText,Send me an email,电邮给开发者
-LiteralText,SERVICES,服务
+LiteralText,Services,服务
 LiteralText,SET DIFFICULTY,设置难度
 LiteralText,set starting location,设置出生点
-LiteralText,SETTINGS,设置
+LiteralText,Settings,设置
 LiteralText,sfx volume,音效音量
-LiteralText,SHARE//exchange,分享
+LiteralText,Share//exchange,分享
 LiteralText,SHARE//publish,分享
 LiteralText,SHOPS,商店
 LiteralText,Show debugging information,显示调试信息
@@ -3671,8 +3832,8 @@ LiteralText,SIGN-IN,登录
 LiteralText,size,大小
 LiteralText,skills,专精
 LiteralText,SKILLS,专精
-LiteralText,SLIDE,滑动
-LiteralText,Slide which direction?,朝哪个方向滑动？
+LiteralText,Slide,滑过
+LiteralText,Slide which direction?,朝哪个方向滑过去？
 LiteralText,slower animations,慢速动画
 LiteralText,SONICS,音源
 LiteralText,"Sorry, this device is a bit too small :-(",抱歉，这个设备太小了:-(
@@ -3686,17 +3847,17 @@ LiteralText,special,特质
 LiteralText,SPECIALS,特质
 LiteralText,speed,速度
 LiteralText,SPEED,速度
-LiteralText,SPELL,咒语
+LiteralText,Spell,咒语
 LiteralText,SPELLS,咒语
 LiteralText,Square,格子
 LiteralText,stack,整堆
 LiteralText,START,开始
 LiteralText,Start a game to be joined by other players.,创建一个多人游戏
 LiteralText,Start new adventure,开始新的冒险
-LiteralText,start without companion,开局时无队友
+LiteralText,Start without companion,开局时无队友
 LiteralText,starvation,饥荒
 LiteralText,starved,经受饥荒
-LiteralText,STAY,停留
+LiteralText,Stay,停留
 LiteralText,steal,偷取
 LiteralText,STOP,停止
 LiteralText,storage,储藏
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,地图编辑器文件
 LiteralText,SUBMIT,接受
 LiteralText,summon,召唤盟友
 LiteralText,SUSTAINED,持久
-LiteralText,SWAP,换位
-LiteralText,SWITCH,切换
+LiteralText,Swap,换位
+LiteralText,Switch,切换
 LiteralText,symptoms,症状
 LiteralText,Table of Contents,目录
-LiteralText,TAKE,拿取
+LiteralText,Take,拿取
 LiteralText,TAKE ALL,拿取全部
 LiteralText,talents,天赋
 LiteralText,TALENTS,天赋
-LiteralText,TALK,对话
+LiteralText,Talk,对话
 LiteralText,target,目标
-LiteralText,TELEKINESIS,念力控制
+LiteralText,Telekinesis,念力控制
 LiteralText,Telekinesis which direction?,向哪个方向施展念力控制？
 LiteralText,Telekinesis which object?,念力控制哪个物体？
-LiteralText,TELEPORT,传送
+LiteralText,Teleport,传送
+LiteralText,Teleport end,传送到终点
 LiteralText,teleport entity,传送角色
 LiteralText,teleport item away,传送到别处
 LiteralText,Teleport to where?,传送去哪里？
+LiteralText,Teleport top,传送到顶层
 LiteralText,TERMINAL,终点
 LiteralText,terrain,地形
 LiteralText,The attack score is your aptitude for hitting an opponent.,攻击力是你击中敌人的能力。
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,真正的挑战在于改变表现手法的同时保持使这个游戏得以成为有史以来最好游戏的精髓。
+LiteralText,The damage you do to an opponent upon a successful attack.,你能对目标造成的伤害。
 LiteralText,The defence score is how protected you are from being hit by an opponent.,防御力是你保护自己不受敌人攻击的能力。
 LiteralText,There is a new update available!,新版本可用！
 LiteralText,there is nothing to place here,你没有任何物品可以被放置在这个容器中
 LiteralText,there is nothing to remove here,没有任何物品可以被从这个容器移除
 LiteralText,there is nothing to trade with this merchant,你没有任何物品可以用以与这位商人交易
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",本试玩版是一座 16 层的地牢，一次成功的通关约需 2-3 小时。该地牢是完整游戏四个模组之一的节选，提供富有挑战性的代表性体验。
 LiteralText,this level,当前楼层
 LiteralText,this merchant has no stock to trade,这位商人没有任何商品用以交易
 LiteralText,This name is used to record your achievements in the Hall of Fame.,这个名称用于在名人堂记录您的成绩。
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,种子可以用来与您的朋友分享，这样你们就能挑战同样的地牢。
 LiteralText,threw,扔了
-LiteralText,THROW,投掷
+LiteralText,Throw,投掷
+LiteralText,TILESET,选择图块包
 LiteralText,tin,罐头
 LiteralText,tinning,罐装
+LiteralText,Toggle auto use,切换自动使用
 LiteralText,TOO BIG,过大
 LiteralText,TOO HEAVY,超重
 LiteralText,TOO HUNGRY,过于饥饿
 LiteralText,TOO SMALL,过小
 LiteralText,TOO WEAK,太弱
 LiteralText,TRACKS,音轨
-LiteralText,TRADE,交易
+LiteralText,Trade,交易
 LiteralText,transform to,变形为
 LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
@@ -3759,15 +3926,16 @@ LiteralText,trapped,中陷阱的
 LiteralText,TRAPPED,落入陷阱
 LiteralText,trapped container,陷阱容器
 LiteralText,trapped door,陷阱门
-LiteralText,TRIGGER,发动
+LiteralText,Trigger,发动
 LiteralText,trigger once,可发动一次
 LiteralText,trigger unlimited times,可发动无限次数
 LiteralText,truth,真流言
-LiteralText,TUNNEL,创造通道
+LiteralText,Tunnel,创造通道
 LiteralText,Tunnel which direction?,向哪个方向创造过道？
-LiteralText,TURN-BASED,回合制
+LiteralText,Turn-based,回合制
 LiteralText,turns,回合
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,输入任何英文字母或短句来创造一个地牢种子
+LiteralText,Tutorial,教程
+LiteralText,Type in any word or phrase to generate a random seed.,输入任何英文字母或短句来创造一个地牢种子
 LiteralText,unable to load,无法读取
 LiteralText,unafflict,取消感染
 LiteralText,UNDEAD,不死生物时
@@ -3775,16 +3943,20 @@ LiteralText,Undo,撤销
 LiteralText,unidentified items,未经辨认的物品
 LiteralText,unique,独特
 LiteralText,UNIQUES,独特单位
-LiteralText,UNLOCK,开锁
+LiteralText,unknown effects,未知效果
+LiteralText,Unlock,开锁
 LiteralText,unlock door or container,开锁任何门或容器
-LiteralText,UNLOCKED,开锁
+LiteralText,Unlocked,开锁
 LiteralText,unpolymorph,取消变形
 LiteralText,unpunish,取消惩罚
 LiteralText,unskilled,生疏
 LiteralText,UNSKILLED,生疏
 LiteralText,unstuck,不再被卡住
-LiteralText,UNTRAP,拆除
+LiteralText,Untrap,拆除
 LiteralText,UNTRAPPED,已拆除
+LiteralText,Up,上
+LiteralText,Up-left,左上
+LiteralText,Up-right,右上
 LiteralText,update available,更新可用
 LiteralText,update cancelled,更新取消
 LiteralText,update failed,更新失败
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,更新
 LiteralText,upgrade to,升级到
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,如果使用种子，您将无法被记录入名人堂。
 LiteralText,Vanity,自恋，请
+LiteralText,Victory!,胜利！
 LiteralText,VIEW,查看
 LiteralText,visit shop,访问商店
 LiteralText,visit shrine,访问神龛
-LiteralText,Visit the website,访问官网
 LiteralText,visit zoo,访问动物园
 LiteralText,VOID SPACE,虚空
 LiteralText,volatile,环境效果
 LiteralText,VOLATILES,环境效果
 LiteralText,vomit nutrition,呕吐
 LiteralText,vulnerable to,易受伤害
-LiteralText,WAIT,等待
+LiteralText,Wait,等待
 LiteralText,Wait how many turns?,等待多少回合？
-LiteralText,warping,传送
-LiteralText,WARPING,开启返程模式
+LiteralText,Warping,开启返程模式
 LiteralText,was killed,被杀死了
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,破坏墙壁
 LiteralText,WON'T EAT,不会吃
 LiteralText,WORKBENCH MATERIALS,工作台素材
 LiteralText,World,世界
-LiteralText,WORLD,世界
 LiteralText,WRONG WAY,错误路线
 LiteralText,"You are playing as anonymous, please register!",你正以匿名进行游戏！请登记！
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,你可能需要用眼睛图标对暗门进行搜索。
 LiteralText,Your current movement and action speed in squares per second.,每秒中你能移动的格数和动作数量。
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",《零环》是由我的游戏工作室 Contrary Games 制作的全新游戏。它是一款即时2D平台类肉鸽游戏，继承了来自《Pathos》的许多机制，使用了纸玩偶绘画、物理模拟引擎，深入的游戏机制和高度的可重复性提供了足以媲美《Pathos》的游戏体验。
 LiteralText,ZOOM,缩放
+LiteralText,Zoom in,放大
+LiteralText,Zoom out,缩小
 LiteralText,ZOOS,动物园
 LiteralText,zZz,zZz
 LocalityName,area,范围
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,蔬菜
 MaterialName,water,水
 MaterialName,wax,蜡
 MaterialName,wood,木头
-MeasurementSystemName,imperial,斤
-MeasurementSystemName,metric,公斤
+MeasurementSystemName,imperial units,斤
+MeasurementSystemName,metric units,公斤
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,层层深入程序生成的地牢与洞穴，无限可重玩性——同时也易于Pathos的新玩家上手。
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",探索一张庞大的、程序生成的陆上地图，包含地牢支线、精心制作的布景和有趣的邂逅。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,人工设计的地图，地表世界的传奇冒险。脱离幽深禁闭的地牢，进行更具挑战的冒险。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,有趣的房间和无尽的秘密等着你去探索，但是不要沉溺在其中，长时间停留在某一层会招致死亡。基于《破碎像素地牢》生成的地图。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",沙盒模式可以用来实验Pathos的机制。您可以在两个房间的简易地图内试验所有物品、陷阱与地牢机关。
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",在地牢中求生，抵达矿镇，然后踏入那片连通着致命深幽地底的未知隧洞。
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地面那边有什么新鲜事吗？我在这下面待太久了，很想念阳光和空气。
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,你知道吗？那些商人卖的东西里，一半都来自你这样的冒险者——的尸体。
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,每个人都在讨论什么兽人屠城。这种事情怎么可能会发生呢？
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",“你懂的，我曾经也是个和你一样的冒险者……也许你也可以试着找个工作？毕竟，*冒险者*只是个对无家可归的无业游民的高情商称呼。”
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Nethack Codex
+ModuleName,NetHack Codex,NetHack Codex
 ModuleName,Pixel Sojourn,像素之旅
 ModuleName,Sandbox Play,沙盒游戏
+ModuleName,Short Dungeon,迷你地牢
 ModuleTerm,Abyss,深渊
 ModuleTerm,Ambush,伏击
 ModuleTerm,Ant Cave,蚂蚁洞穴
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,向上的粘土楼梯
 PortalName,jade ladder down,向下的玉石楼梯
 PortalName,jade ladder up,向上的玉石楼梯
 PortalName,rift,裂隙
+PortalName,sewer ladder down,下楼
+PortalName,sewer ladder up,上楼
 PortalName,stone staircase down,向下的岩石楼梯
 PortalName,stone staircase up,向上的岩石楼梯
 PortalName,transportal,传送门
 PortalName,wooden ladder down,向下的木质梯子
 PortalName,wooden ladder up,向上的木质梯子
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,闪耀的魔法盾牌围绕你，增强你的防御水平。
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",你被光滑的油脂覆盖， 可以轻松的从爪子以及喉咙中滑出。
-PropertyDescription,Control when and where you teleport.,控制你想要传送去的地点和进行传送的时间。
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,你在愤怒之中疯狂，无理由并不经过思考地攻击你的盟友。
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.",你的能力值被固定，既不能被降低也不能提升。
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,你得了一种症状奇怪的严重疾病，需要忍受呕吐的欲望。
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,给予你对于附近怪物以及他们危险程度的预先警告。
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.",你矇眬欲睡，平静而眠——在一个充满怪物的地牢里。
+PropertyDescription,Assess the number of charges in an item when you pick it up.,你只要把物品捡起来就可以得知它可以被使用多少次。
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,控制你想要传送去的地点和进行传送的时间。
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",你被光滑的油脂覆盖， 可以轻松的从爪子以及喉咙中滑出。
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",你被巨大的进食欲望控制，并且知道你永远不会满足。
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.",你在愤怒之中疯狂，无理由并不经过思考地攻击你的盟友。
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,你所看见的东西被扭曲了——你的意念把你所见之物歪曲为荒唐的、如噩梦般的形态。
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,增强你的视野，使你能看见平常无法被看见的隐身怪物。
-PropertyDescription,Fainting from lack of food.,因为食物的缺乏造成的昏迷。
-PropertyDescription,Fly above the ground to avoid many types of traps.,从地面上空飞行而过，避免接触多种陷阱。
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,笨拙的行动让你在战斗中脱手你的武器，也可以让你错误地上下楼。
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,对重力的违抗，对于避免落入陷阱很有帮助，但是你同时也无法够到地面。
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",从地面上空飞行而过，避免接触多种陷阱。
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,凝视与射线被反射回施加者身上。
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,给予你对于附近怪物以及他们危险程度的预先警告。
-PropertyDescription,Gripped by terror you cannot attack and should flee.,你被恐惧攫住，无法攻击，应该逃离。
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",在这种醉醺醺的状态下，你大大增强的自信心无法掩盖判断力严重受损的事实。
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,你在地牢中的脚步沉静无声，可以让你从睡眠中的怪物身边潜行而过。
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,阻止你变形，同时也阻止你变回你原来的形态。
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",你被恐惧攫住，无法攻击，应该逃离。
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.",你的身体僵直难以活动，就好像它变成了岩石一样。你觉得所有活动都变得困难并且感觉脆弱，好像敌人的一击就可以将你粉碎。
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,你可以毫无顾忌与忧虑地吞噬你同族人的身体与内脏。
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,你的警觉与探索力提高，你可以不费功夫地发现隐藏的门或陷阱。
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,视力损失，你只能看见离你非常近的物体。
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",你导致地牢中所有生物变得愤怒而暴力，甚至平时温顺的生物都会攻击彼此。这种能力既有用又危险，需要谨慎使用——同时你觉得你的营养值正被这种能力侵蚀。
+PropertyDescription,Increased speed allows you to move and attack more frequently.,速度的提高使你可以更频繁地移动与攻击。
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,你的出现激怒了地牢中的所有生物。
+PropertyDescription,Loss of consciousness usually caused by lack of food.,因为食物的缺乏造成的昏迷。
+PropertyDescription,Move objects without physical contact through the power of your mind.,不需要直接接触，使用念力控制物品。
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",你无声无息地移动着，无法吐出一个音节。
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",你在地牢中的脚步沉静无声，可以让你从睡眠中的怪物身边潜行而过。
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.",你的肌肉僵硬，使你无法行动也无法防卫。
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.",你的身体处于空间的间隙里，这意味着你可以轻而易举地穿过墙，门和大石头
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",你的双腿充满力量蓄势待发，使你可以飞跃过很长的距离。
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.",阻止你变形，同时也阻止你变回你原来的形态。
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,深度的听力损失，可以把从听觉世界中隔离开来。
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.",你的思维在对抗欺骗、诡计和假象上受到保护。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",使你得以避免缓慢、麻痹以及其他束缚你行动的状态。
-PropertyDescription,Recover mana at an increased rate.,魔法值的自然恢复速度更快。
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,这是你身体的强大更新——通过频繁治愈和更生。你的新陈代谢大大提高，因此需要更多食物。
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,魔法值的自然恢复速度更快。
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,速度的降低，使你无法像平常一样频繁移动与攻击。
+PropertyDescription,Resilient to all forms of natural and magical illness.,你的适应性很强，不会受到大多数自然或魔法的疾病影响。
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,在你死亡的时候使你复活并拥有一半生命值，但会降低1点体质作为代价。
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,你会突然入睡，直到睡醒或者被弄醒。
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.",这种状态可以传送你的角色到达地牢当前楼层的某一位置。不可控的传送会使你被传送到随机的地方并增强你旅程的不确定性。可控的传送可以按照你的意志将你传送到指定地方。
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,你可以毫无顾忌与忧虑地吞噬你同族人的身体与内脏。
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,这使你可以侦测到地牢中其他意志的存在与所处的地点，但只是在你无法看见的时候。
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,你的身影和你所在的真实位置有时并不相同。这让你的对手更难击中你，同时也让一些魔法，比如能量波和打击有更小的几率击中你。
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,速度的提高使你可以更频繁地移动与攻击。
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,视力损失，你只能看见离你非常近的物体。
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,对重力的违抗，对于避免落入陷阱很有帮助，但是你同时也无法够到地面。
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,这是你身体的强大更新——通过频繁治愈和更生。你的新陈代谢大大提高，因此需要更多食物。
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,这种状态下你几乎不会被看见。你的移动只造成光线的轻微扰动——只在你靠得很近的时候才会被察觉到。
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,深度的听力损失，可以把从听觉世界中隔离开来。
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,速度的降低，使你无法像平常一样频繁移动与攻击。
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,这种特殊视野使你能够看见地牢暗处拥有温暖身体的生物。
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.",你会随机变成某种生物——包括所有可能带来的好处与坏处。比如你变成的生物可能有手又能飞并能吐出致命的能量波。当你取消你的变形的时候你总会回到最初的形态。
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,不需要直接接触，使用念力控制物品。
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,你所看见的东西被扭曲了——你的意念把你所见之物歪曲为荒唐的、如噩梦般的形态。
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,当你拥有混乱状态，你会发现做出决定变得艰难。你会朝非计划中的方向移动或攻击。你无法施展魔咒。在你阅读卷轴时会因为发音错误而获得不一样的效果。你无法集中注意力阅读一本书。
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.",当你拥有震荡状态，你根本无法走直线，并且无法进行一些需要协调的动作——有些像是混乱状态。
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,你得了一种症状奇怪的严重疾病，需要忍受呕吐的欲望。
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",你矇眬欲睡，平静而眠——在一个充满怪物的地牢里。
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,你被巨大的进食欲望控制，并且知道你永远不会满足。
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,你的适应性很强，不会受到大多数自然或魔法的疾病影响。
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,你携带了足以让你挖出过道的装备，可以在地牢里开辟自己的道路。
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,你只要把物品捡起来就可以得知它可以被使用多少次。
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,当你拥有变形控制的时候，你可以选择变成任何你已经杀死过的生物。进行变形需要消耗你的营养值。
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,你导致地牢中所有生物变得愤怒而暴力，甚至平时温顺的生物都会攻击彼此。这种能力既有用又危险，需要谨慎使用——同时你觉得你的营养值正被这种能力侵蚀。
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,你觉得情绪不稳定，就好像随时能被暴怒控制一般。
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,你对于地牢之中的其他生物有了一份警戒心。
-PropertyDescription,You learn the divine status of an item simply by picking it up.,你只要把物品捡起来就可以得知它的的圣灵属性。
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,你无声无息地移动着，无法吐出一个音节。
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,你的能力值被固定，既不能被降低也不能提升。
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,你的身体僵直难以活动，就好像它变成了岩石一样。你觉得所有活动都变得困难并且感觉脆弱，好像敌人的一击就可以将你粉碎。
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.",你的身体处于空间的间隙里，这意味着你可以轻而易举地穿过墙，门和大石头
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,你的双腿充满力量蓄势待发，使你可以飞跃过很长的距离。
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,你的出现激怒了地牢中的所有生物。
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,你的新陈代谢减缓，相比原来只需要很少的食物。
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.",你的思维在对抗欺骗、诡计和假象上受到保护。
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,你的肌肉僵硬，使你无法行动也无法防卫。
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,你的警觉与探索力提高，你可以不费功夫地发现隐藏的门或陷阱。
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,你的位置是不确定的，因此稍费工夫你就可以消失然后重新出现。
+PropertyDescription,Sense the divine status of an item simply by picking it up.,你只要把物品捡起来就可以得知它的的圣灵属性。
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,这使你可以侦测到地牢中其他意志的存在与所处的地点，但只是在你无法看见的时候。
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.",当你拥有混乱状态，你会发现做出决定变得艰难。你会朝非计划中的方向移动或攻击。你无法施展魔咒。在你阅读卷轴时会因为发音错误而获得不一样的效果。你无法集中注意力阅读一本书。
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,当你拥有震荡状态，你根本无法走直线，并且无法进行一些需要协调的动作——有些像是混乱状态。
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.",闪耀的魔法盾牌围绕你，增强你的防御水平。
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,你的新陈代谢减缓，相比原来只需要很少的食物。
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,这种特殊视野使你能够看见地牢暗处拥有温暖身体的生物。
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.",在这种醉醺醺的状态下，你大大增强的自信心无法掩盖判断力严重受损的事实。
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,你会突然入睡，直到睡醒或者被弄醒。
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",当你拥有变形控制的时候，你可以选择变成任何你已经杀死过的生物。进行变形需要消耗你的营养值。
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.",你会随机变成某种生物——包括所有可能带来的好处与坏处。比如你变成的生物可能有手又能飞并能吐出致命的能量波。当你取消你的变形的时候你总会回到最初的形态。
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.",这种状态可以传送你的角色到达地牢当前楼层的某一位置。不可控的传送会使你被传送到随机的地方并增强你旅程的不确定性。可控的传送可以按照你的意志将你传送到指定地方。
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,你对于地牢之中的其他生物有了一份警戒心。
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,笨拙的行动让你在战斗中脱手你的武器，也可以让你错误地上下楼。
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",这种状态下你几乎不会被看见。你的移动只造成光线的轻微扰动——只在你靠得很近的时候才会被察觉到。
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,你觉得情绪不稳定，就好像随时能被暴怒控制一般。
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,你的位置是不确定的，因此稍费工夫你就可以消失然后重新出现。
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",你的身影和你所在的真实位置有时并不相同。这让你的对手更难击中你，同时也让一些魔法，比如能量波和打击有更小的几率击中你。
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,你携带了足以让你挖出过道的装备，可以在地牢里开辟自己的道路。
 PropertyName,aggravation,好战
 PropertyName,appraisal,评价
 PropertyName,beatitude,祝福
@@ -4194,7 +4370,7 @@ PropertyName,conflict,冲突
 PropertyName,confusion,混乱
 PropertyName,dark vision,夜视
 PropertyName,deafness,失聪
-PropertyName,deflection,偏折
+PropertyName,deflection,防护
 PropertyName,displacement,分身
 PropertyName,fainting,昏迷
 PropertyName,fear,恐惧
@@ -4455,7 +4631,7 @@ ShopName,gun mart,枪店
 ShopName,hardware store,五金店
 ShopName,jewellers,珠宝店
 ShopName,lighting store,灯具店
-ShopName,liquor emporium,酒类商场
+ShopName,liquor emporium,酒馆
 ShopName,quality apparel and accessories,优质的服装及配饰
 ShopName,rare books,稀有书籍
 ShopName,second-hand stationery store,二手文具商店
@@ -4511,7 +4687,7 @@ SkillName,polearm,长柄武器
 SkillName,riding,骑乘
 SkillName,sling,投石器
 SkillName,spear,矛
-SkillName,staff,杖
+SkillName,staff,手杖
 SkillName,swimming,游泳
 SkillName,transmutation,变化术
 SkillName,traps,陷阱
@@ -4563,6 +4739,7 @@ SonicName,explosion,爆炸
 SonicName,fizzle,嘶嘶声
 SonicName,flash,闪光灯
 SonicName,flute,笛子
+SonicName,focus tap,
 SonicName,food,食物
 SonicName,footsteps,脚步
 SonicName,force,强力攻击
@@ -4718,7 +4895,7 @@ SpellName,create familiar,侍灵创造
 SpellName,crushing sphere,泥岩球侍灵
 SpellName,curing,疾病治愈
 SpellName,darkness,黑暗
-SpellName,deflection,保护
+SpellName,deflection,防护
 SpellName,detect food,食物侦测
 SpellName,detect monsters,怪物侦测
 SpellName,detect treasure,宝藏侦测
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,行进到
 TraversalPresentName,ascend,向上移动
 TraversalPresentName,descend,向下移动
 TraversalPresentName,travel,行进
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",击杀敌人可获得经验值并提升等级。||升级时，你的生命值与魔法值会提升，并获得由职业决定的特殊能力。
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,帮助中收录了游戏中所有内容的详尽索引，以及玩法详解。
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",查看敌人、尸体与物品可了解它们的更多信息。||长按、右键或按下 CTRL+方向键可查看某一格。
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",物品会出现在地面上、箱子里，或被敌人携带。||双击物品即可拾取，也可使用“地面”面板。
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",键盘与手柄的按键可在“设置-界面”中调整。||若只用键盘游玩，可以按 TAB 聚焦、方向键切换焦点、BACKSPACE 退出焦点。
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,在物品栏中管理你的装备与物品。||在角色面板中查看你的属性。
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,你找到的许多物品效果未知。||你可以冒险使用以发现它们的作用，也可以事先鉴定。
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",朝敌人移动即可攻击它们。||按 SHIFT+方向键可强行攻击，这对长柄近战武器、远程与投掷武器都十分重要。
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",如果移动途中出现敌人，前往远处格子的行动会被打断。||解决敌人后，点击继续按钮即可恢复行进。
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",Pathos 可以只用鼠标或触摸屏游玩。||点击格子即可移动、交互或攻击。
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,Pathos 是一个不断变化的世界，每次冒险都独一无二。||你会遭遇不同的敌人，物品也会有不同的效果。
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",Pathos 是回合制的，所以在危险时你可以从容思考。||你的角色可以在网格上朝八个方向移动，但有时最好的选择是按兵不动。
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,饥饿的时钟一直在走，别对食物太挑剔。||了解哪些尸体可以安全食用，对你的生存至关重要。
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",生命值或魔法值偏低时，最好在下一场遭遇前休息。||对付成群的敌人时，可把它们引到门口或走廊等狭窄处。
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",你可以踢开上锁的门和箱子。||它们可能设有陷阱，所以尽量使用钥匙或开锁工具。
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",你已完成教程，可以开始冒险了。||如有需要，你随时可以在“设置—界面”中重新开启教程。
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,你可能会因为暗门和幻影墙而走进死路。||耐心地搜索墙壁周围即可发现它们。
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,你可能会踩到地面上隐藏的陷阱。||拆除陷阱的成功率取决于你的陷阱技能。
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,你在地牢中的行为会影响你的运程。||运程可以在祭坛上消耗，以换取强大的福利。
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,使用鼠标滚轮或双指缩放来放大缩小。||拖动可平移视角，按住 CTRL 或 ALT 可显示敌人与物品的名称。
 VolatileName,blaze,火焰
 VolatileName,blood,血
 VolatileName,electricity,感电

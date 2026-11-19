@@ -58,14 +58,14 @@ namespace Pathos
         Entities.Assassin_Mortimer,
         Entities.Ashikaga_Takauji,
         Entities.Girtab,
-        Entities.Lolth,
+        Entities.Orvalth,
         Entities.Nalzok,
         Entities.Archpriest_Avvakrum,
-        Entities.Twoflower,
-        Entities.Vecna,
+        Entities.Farwander,
+        Entities.Vercrux,
         Entities.Deliarne,
         Entities.Guru_Quilion,
-        Entities.Yeenoghu,
+        Entities.Ghuyaxil,
       };
 
       this.devices = Devices.List.Where(D => D.Frequency > 0).ToArray();

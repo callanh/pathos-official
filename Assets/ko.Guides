@@ -1,59 +1,64 @@
 # Commands; 커맨드
-. Single tap/left click or arrow keys to move and attack.; 탭, 좌클릭 또는 화살표로 이동하고 공격할 수 있습니다.
+. Single tap/left click or direction keys to move and attack.; 탭, 좌클릭 또는 화살표로 이동하고 공격할 수 있습니다.
 . Long press/right click to operate doors/traps.; 길게 누르거나 우클릭으로 문이나 함정을 조작할 수 있습니다.
 . Double tap to pick up items, traverse stairs or wait one move.; 더블 탭하여 아이템을 집어들거나 계단을 오르내리고, 또는 한 턴을 기다릴 수 있습니다.
 /
-- . | wait one turn (also double tap on self); . | 한 턴 기다리기 (자신을 두 번 탭해도 됨)
-- , | pick up the top item on the floor; , | 바닥의 맨 상단 아이템 집어들기
-- A | toggle log (click the log to expand/collapse); A | 로그 켜고 끄기 (로그를 눌러 펼치기/접기)
-- B | move down-left; B | 왼쪽 아래로 이동하기
-- C | toggle character; C | 캐릭터 켜고 끄기
-- D | re-use last item; D | 마지막 아이템 재사용하기
-- E | mount or dismount your steed; E | 탈 것에 탑승 / 내리기
-- F | toggle floor; F | 층 켜고 끄기
-- G | re-equip last item; G | 마지막 아이템 다시 장비하기
-- H | move left; H | 왼쪽으로 이동하기
-- I | toggle inventory; I | 인벤토리 켜고 끄기
-- J | move down; J | 아래로 이동하기
-- K | move up; K | 위로 이동하기
-- L | move right; L | 오른쪽으로 이동하기
-- M | toggle map; M | 지도 켜고 끄기
-- N | move down-right; N | 오른쪽 아래로 이동하기
-- O | hide from view; O | 시야에서 숨기
-- P | polymorph at will; P | 폴리모프
-- Q | save or quit this game; Q | 저장 혹은 게임 종료하기
-- R | for rest mode to recover life and mana; R | 생명력과 마나를 회복하기 위한 휴식 모드
-- S | for search mode for secret doors and traps; S | 숨겨진 문이나 함정을 찾기 위한 탐색 모드
-- T | teleport at will; T | 텔레포트
-- U | move up-right; U | 오른쪽 위로 이동하기
-- V | kick in a direction; V | 원하는 방향으로 발차기
-- W | jump in a direction (if you have the talent); W | 원하는 방향으로 점프 (해당 재능이 있을 시)
-- X | re-cast last spell; X | 마지막 마법 재시전하기
-- Y | move up-left; Y | 왼쪽 위로 이동하기
-- Z | toggle cast spells (read books to learn spells); Z | 마법 주문 켜고 끄기(마법은 마법서를 읽어서 학습)
-- ' | blink in a direction; ' | 원하는 방향으로 점멸하기
-- ;; | telekinesis in a direction; ;; | 원하는 방향으로 염동력 발동하기
-- > | descend stairs; > | 계단 내려가기
-- < | ascend stairs; < | 계단 오르기
-- / | toggle chat in multiplayer; / | 멀티 플레이에서 채팅 켜고 끄기
-- \ | view knowledge panel; \ | 지식 패널 보기
-- + | zoom in; + | 확대하기
-- - | zoom out; - | 축소하기
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | 왼쪽 빠른 행동 (행동은 shift + 숫자로 변경)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | 오른쪽 빠른 행동 (행동은 shift + 숫자로 변경)
-- INSERT | toggle tunnelling mode; INSERT | 터널링 모드 토글
-- SHIFT + arrow | fire a missile without moving; SHIFT + arrow | 움직이지 않고 발사하기
-- CTRL + arrow | interact with the target without moving; CTRL + arrow | 움직이지 않고 대상과 상호작용하기
-- ENTER | select the top item on the floor; ENTER | 바닥의 최상위 아이템 선택하기
-- ESCAPE | hides open panels and clears your target; ESCAPE | 켜져있는 패널을 닫고 대상 초기화하기
+- $Left$ | move left; $Left$ | 왼쪽으로 이동하기
+- $Right$ | move right; $Right$ | 오른쪽으로 이동하기
+- $Up$ | move up; $Up$ | 위로 이동하기
+- $Down$ | move down; $Down$ | 아래로 이동하기
+- $UpLeft$ | move up-left; $UpLeft$ | 왼쪽 위로 이동하기
+- $UpRight$ | move up-right; $UpRight$ | 오른쪽 위로 이동하기
+- $DownLeft$ | move down-left; $DownLeft$ | 왼쪽 아래로 이동하기
+- $DownRight$ | move down-right; $DownRight$ | 오른쪽 아래로 이동하기
+- SHIFT + direction | fire a missile without moving; SHIFT + direction | 움직이지 않고 발사하기
+- CTRL + direction | interact with the target without moving; CTRL + direction | 움직이지 않고 대상과 상호작용하기
+- $Select$ | select the top item on the floor; $Select$ | 바닥의 최상위 아이템 선택하기
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | 켜져있는 패널을 닫고 대상 초기화하기
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 열려 있는 대화 취소하고 키보드 포커스 해제하기
 - SPACE | toggle real-time or turn-based; SPACE | 실시간/턴제 모드 켜고 끄기
-- PgUp | switch to previous character; PgUp | 이전 캐릭터로 전환하기
-- PgDown | switch to next character; PgDown | 다음 캐릭터로 전환하기
-- ALT | show labels; ALT | 설명 보기
-- F1 | show this help; F1 | 도움말 보기
-- F6 | quick save; F6 | 퀵 세이브
-- F10 | open side menu; F10 | 사이드 메뉴 열기
+- CTRL/ALT | show labels; CTRL/ALT | 설명 보기
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | 바닥의 맨 상단 아이템 집어들기
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | 한 턴 기다리기 (자신을 두 번 탭해도 됨)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | 생명력과 마나를 회복하기 위한 휴식 모드
+- $Search$ | for search mode for secret doors and traps; $Search$ | 숨겨진 문이나 함정을 찾기 위한 탐색 모드
+- $Descend$ | descend stairs; $Descend$ | 계단 내려가기
+- $Ascend$ | ascend stairs; $Ascend$ | 계단 오르기
+- $Character$ | toggle character; $Character$ | 캐릭터 켜고 끄기
+- $Inventory$ | toggle inventory; $Inventory$ | 인벤토리 켜고 끄기
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | 마법 주문 켜고 끄기(마법은 마법서를 읽어서 학습)
+- $Floor$ | toggle floor; $Floor$ | 층 켜고 끄기
+- $Map$ | toggle map; $Map$ | 지도 켜고 끄기
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | 로그 켜고 끄기 (로그를 눌러 펼치기/접기)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | 지식 패널 보기
+- $Chat$ | toggle chat in multiplayer; $Chat$ | 멀티 플레이에서 채팅 켜고 끄기
+- $Kick$ | kick in a direction; $Kick$ | 원하는 방향으로 발차기
+- $Mount$ | mount or dismount your steed; $Mount$ | 탈 것에 탑승 / 내리기
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | 원하는 방향으로 점프 (해당 재능이 있을 시)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | 원하는 방향으로 점멸하기
+- $Teleport$ | teleport at will; $Teleport$ | 텔레포트
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | 원하는 방향으로 염동력 발동하기
+- $Polymorph$ | polymorph at will; $Polymorph$ | 폴리모프
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | 터널링 모드 토글
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | 사이드 메뉴 열기
+- $QuickSave$ | quick save; $QuickSave$ | 퀵 세이브
+- $Help$ | show this help; $Help$ | 도움말 보기
+- $Quit$ | save or quit this game; $Quit$ | 저장 혹은 게임 종료하기
+- $ZoomIn$ | zoom in; $ZoomIn$ | 확대하기
+- $ZoomOut$ | zoom out; $ZoomOut$ | 축소하기
+- $ActionReuse$ | re-use last item; $ActionReuse$ | 마지막 아이템 재사용하기
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | 마지막 아이템 다시 장비하기
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | 마지막 마법 재시전하기
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | 이전 캐릭터로 전환하기
+- $SwitchDown$ | switch to next character; $SwitchDown$ | 다음 캐릭터로 전환하기
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | 왼쪽 빠른 행동 (행동은 shift + 숫자로 변경)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | 오른쪽 빠른 행동 (행동은 shift + 숫자로 변경)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | 전체 화면 켜고 끄기 (데스크탑 Windows에서만)
 
 # General mechanics; 전체적인 규칙
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + 조정한 능력치 x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + 습득한 재능 x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + 습득한 저항 x {Multiplier}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); + 총 소지품의 가치 (골드로)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; 총 소지품의 가치는 상한선이 있어 나머지 점수 합을 초과할 수 없습니다.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; 당신은 당신의 캐릭터가 살 수 없었으며, 죽음은 빠르게 찾아온다는 것을 배울 수 있을 겁니다.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; 원한다면 계속해서 부활할 수 있지만, 당신이 획득한 명성은 0으로 초기화될 것입니다.
 . Fame achieved subsequent to your resurrection will contribute to your score.; 부활 이후에 쌓은 명성은 이후에 당신의 점수에 반영됩니다.
-. This is similar to the 'explorer mode' from the original Nethack.; 이것은 오리지널 넷핵의 '모험가 모드(explorer mode)'와 유사합니다.
+. This is similar to the 'explorer mode' from the original NetHack.; 이것은 오리지널 넷핵의 '모험가 모드(explorer mode)'와 유사합니다.
 
 # Multiplayer; 멀티플레이어
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; 멀티플레이어는 Invention platform의 'graphical telnet' 기술에 기반합니다.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; 이것은 Pathos의 비밀을 빠르게 학습하기 위한 치트 모드입니다.
 . Any adventures in this mode will not be tracked in the hall of fame.; 이 모드에서는 어떤 모험도 명예의 전당에 기록되지 않습니다.
 /
-- ` | open master console (more commands); ` | 마스터 콘솔 열기 (더 많은 커맨드)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 현재 지역을 어둡게 하기
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | 삼킬 수 있는 임의의 개체를 소환하여 삼켜지기
-- shift + F | all adjacent enemies are charmed; shift + F | 주변의 모든 적들을 매혹하기
-- shift + G | gain 1000 gold; shift + G | 1000골드 획득하기
-- shift + I | identify all items on the floor; shift + I | 바닥에 있는 모든 아이템 식별하기
-- shift + W | jump at will; shift + W | 점프하기
-- shift + D | light this zone; shift + D | 현재 지역을 밝히기
-- shift + M | reveal the entire map; shift + M | 전체 지도 드러내기
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 모든 층의 지도 드러내기
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | 다른 던전으로 워프함 (최종 맵이 변형됨)
-- shift + P | polymorph into any entity; shift + P | 어떤 개체로든 폴리모프
-- shift + T | teleport to a target zone; shift + T | 선택한 위치로 텔레포트
-- shift + Z | learn all spells; shift + Z | 모든 마법 학습하기
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | 자동 사용 모드 (밟고 있는 사각형 위의 모든 아이템 사용)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | 이전 층으로 올라가기 (계단이 없더라도)
-- > | descend to the next dungeon level (even when not on a staircase); > | 다음 층으로 내려가기 (계단이 없더라도)
-- F5 | refresh the screen; F5 | 화면 새로고침
-- F9 | quick load; F9 | 빠른 불러오기
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | 마스터 콘솔 열기 (더 많은 커맨드)
+- $MasterLightness$ | light this zone; $MasterLightness$ | 현재 지역을 밝히기
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | 현재 지역을 어둡게 하기
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | 삼킬 수 있는 임의의 개체를 소환하여 삼켜지기
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | 주변의 모든 적들을 매혹하기
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | 1000골드 획득하기
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | 바닥에 있는 모든 아이템 식별하기
+- $MasterJump$ | jump at will; $MasterJump$ | 점프하기
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | 전체 지도 드러내기
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | 모든 층의 지도 드러내기
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | 다른 던전으로 워프함 (최종 맵이 변형됨)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | 어떤 개체로든 폴리모프
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | 선택한 위치로 텔레포트
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | 모든 마법 학습하기
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | 자동 사용 모드 (밟고 있는 사각형 위의 모든 아이템 사용)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | 이전 층으로 올라가기 (계단이 없더라도)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | 다음 층으로 내려가기 (계단이 없더라도)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | 화면 새로고침
+- $QuickLoad$ | quick load; $QuickLoad$ | 빠른 불러오기
 /
 . There are additional manipulations built into the character panel and contextual help.; 캐릭터 창과 도움말에 추가적인 조작이 있습니다.

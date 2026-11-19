@@ -1,59 +1,64 @@
 # Commands; Comandos
-. Single tap/left click or arrow keys to move and attack.; Toque único na tela, clique esquerdo do mouse ou setas direcionais para mover-se e atacar.
+. Single tap/left click or direction keys to move and attack.; Toque único na tela, clique esquerdo do mouse ou setas direcionais para mover-se e atacar.
 . Long press/right click to operate doors/traps.; Segure o toque na tela ou clique direito do mouse para manusear portas/armadilhas e para equipar/usar um item do inventário ou do chão.
 . Double tap to pick up items, traverse stairs or wait one move.; Toque duplo na tela para pegar itens, atravessar escadas ou esperar um turno.
 /
-- . | wait one turn (also double tap on self); . | esperar um turno (também com duplo clique na tela sobre si mesmo)
-- , | pick up the top item on the floor; , | pegar um item do topo da pilha no chão
-- A | toggle log (click the log to expand/collapse); A | alternar log (clique no log para expandir/colapsar)
-- B | move down-left; B | ir para baixo-esquerda
-- C | toggle character; C | alternar tela de personagem
-- D | re-use last item; D | reutilizar último item
-- E | mount or dismount your steed; E | montar ou desmontar de sua montaria
-- F | toggle floor; F | alternar tela "chão"
-- G | re-equip last item; G | re-equipar o último item
-- H | move left; H | ir para a esquerda
-- I | toggle inventory; I | alternar inventário
-- J | move down; J | ir para baixo
-- K | move up; K | ir para cima
-- L | move right; L | ir para a direita
-- M | toggle map; M | alternar mapa
-- N | move down-right; N | ir para baixo-direita
-- O | hide from view; O | esconder-se nas sombras
-- P | polymorph at will; P | polimorfar à vontade
-- Q | save or quit this game; Q | salvar ou sair do jogo
-- R | for rest mode to recover life and mana; R | modo de descanso para recuperar saúde e mana
-- S | for search mode for secret doors and traps; S | modo de busca para portas secretas e armadilhas
-- T | teleport at will; T | teleportar à vontade
-- U | move up-right; U | ir para cima-direita
-- V | kick in a direction; V | chutar em uma direção
-- W | jump in a direction (if you have the talent); W | pular em uma direção (se você tiver o talento)
-- X | re-cast last spell; X | relançar último feitiço
-- Y | move up-left; Y | ir para cima-esquerda
-- Z | toggle cast spells (read books to learn spells); Z | alternar lançamento de feitiços (ler livros para aprender feitiços)
-- ' | blink in a direction; ' | lampejar em uma direção
-- ;; | telekinesis in a direction; ;; | Usar a telecinésia em uma direção
-- > | descend stairs; > | descer escadarias
-- < | ascend stairs; < | subir escadarias
-- / | toggle chat in multiplayer; / | alternar chat (multijogador)
-- \ | view knowledge panel; \ | abrir tela de itens conhecidos
-- + | zoom in; + | dar zoom para dentro
-- - | zoom out; - | dar zoom para fora
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | ações rápidas de esquerda (mude de ação usando shift + o número)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | ações rápidas de direita (mude de ação usando shift + o número)
-- INSERT | toggle tunnelling mode; INSERT | Ligar modo de escavação
-- SHIFT + arrow | fire a missile without moving; SHIFT + setas direcionais | atirar um míssil sem mover-se
-- CTRL + arrow | interact with the target without moving; CTRL + setas direcionais | interagir com o alvo sem se mexer
-- ENTER | select the top item on the floor; ENTER | selecionar o item do topo da pilha no chão
-- ESCAPE | hides open panels and clears your target; ESC | esconde painéis abertos e limpa seu alvo atual
+- $Left$ | move left; $Left$ | ir para a esquerda
+- $Right$ | move right; $Right$ | ir para a direita
+- $Up$ | move up; $Up$ | ir para cima
+- $Down$ | move down; $Down$ | ir para baixo
+- $UpLeft$ | move up-left; $UpLeft$ | ir para cima-esquerda
+- $UpRight$ | move up-right; $UpRight$ | ir para cima-direita
+- $DownLeft$ | move down-left; $DownLeft$ | ir para baixo-esquerda
+- $DownRight$ | move down-right; $DownRight$ | ir para baixo-direita
+- SHIFT + direction | fire a missile without moving; SHIFT + setas direcionais | atirar um míssil sem mover-se
+- CTRL + direction | interact with the target without moving; CTRL + setas direcionais | interagir com o alvo sem se mexer
+- $Select$ | select the top item on the floor; $Select$ | selecionar o item do topo da pilha no chão
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | esconde painéis abertos e limpa seu alvo atual
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | cancela os diálogos abertos e limpa o foco do teclado
 - SPACE | toggle real-time or turn-based; SPACE | trocar entre tempo real ou modo de turnos
-- PgUp | switch to previous character; PgUp | mudar para o personagem anterior
-- PgDown | switch to next character; PgDown | mudar para o próximo personagem
-- ALT | show labels; ALT | mostrar rótulos
-- F1 | show this help; F1 | mostrar este guia de ajuda
-- F6 | quick save; F6 | salvamento rápido
-- F10 | open side menu; F10 | abrir o menu
+- CTRL/ALT | show labels; CTRL/ALT | mostrar rótulos
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | pegar um item do topo da pilha no chão
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | esperar um turno (também com duplo clique na tela sobre si mesmo)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | modo de descanso para recuperar saúde e mana
+- $Search$ | for search mode for secret doors and traps; $Search$ | modo de busca para portas secretas e armadilhas
+- $Descend$ | descend stairs; $Descend$ | descer escadarias
+- $Ascend$ | ascend stairs; $Ascend$ | subir escadarias
+- $Character$ | toggle character; $Character$ | alternar tela de personagem
+- $Inventory$ | toggle inventory; $Inventory$ | alternar inventário
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | alternar lançamento de feitiços (ler livros para aprender feitiços)
+- $Floor$ | toggle floor; $Floor$ | alternar tela "chão"
+- $Map$ | toggle map; $Map$ | alternar mapa
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | alternar log (clique no log para expandir/colapsar)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | abrir tela de itens conhecidos
+- $Chat$ | toggle chat in multiplayer; $Chat$ | alternar chat (multijogador)
+- $Kick$ | kick in a direction; $Kick$ | chutar em uma direção
+- $Mount$ | mount or dismount your steed; $Mount$ | montar ou desmontar de sua montaria
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | pular em uma direção (se você tiver o talento)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | lampejar em uma direção
+- $Teleport$ | teleport at will; $Teleport$ | teleportar à vontade
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | Usar a telecinésia em uma direção
+- $Polymorph$ | polymorph at will; $Polymorph$ | polimorfar à vontade
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | Ligar modo de escavação
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | abrir o menu
+- $QuickSave$ | quick save; $QuickSave$ | salvamento rápido
+- $Help$ | show this help; $Help$ | mostrar este guia de ajuda
+- $Quit$ | save or quit this game; $Quit$ | salvar ou sair do jogo
+- $ZoomIn$ | zoom in; $ZoomIn$ | dar zoom para dentro
+- $ZoomOut$ | zoom out; $ZoomOut$ | dar zoom para fora
+- $ActionReuse$ | re-use last item; $ActionReuse$ | reutilizar último item
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | re-equipar o último item
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | relançar último feitiço
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | mudar para o personagem anterior
+- $SwitchDown$ | switch to next character; $SwitchDown$ | mudar para o próximo personagem
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | ações rápidas de esquerda (mude de ação usando shift + o número)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | ações rápidas de direita (mude de ação usando shift + o número)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | alternar de tela cheia para modo janela (apenas no Windows)
 
 # General mechanics; Mecânicas gerais
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + Atributos Ajustados x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + Talentos Adquiridos x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + Resistências Adquiridas x {Multiplier}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); + Valor Total do Inventário (em ouro)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; A pontuação por valor total do inventário é limitada, não podendo exceder a pontuação somada de outras fontes.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; Você pode aprender que o seu personagem não é viável e encontrar a morte novamente logo em seguida.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; Você pode ressuscitar indefinidamente mas toda fama adquirida será zerada.
 . Fame achieved subsequent to your resurrection will contribute to your score.; Fama adquirida subsequentemente a sua ressureição contribuirá para sua pontuação final.
-. This is similar to the 'explorer mode' from the original Nethack.; Isso é similar ao 'modo explorador' do Nethack original.
+. This is similar to the 'explorer mode' from the original NetHack.; Isso é similar ao 'modo explorador' do NetHack original.
 
 # Multiplayer; Multiplayer
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; O modo multiplayer é baseado na tecnologia 'graphical telnet', na plataforma chamada Invention.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; Esse é um modo de trapaça para aprendizagem rápida dos segredos de Pathos.
 . Any adventures in this mode will not be tracked in the hall of fame.; Quaisquer aventuras nesse modo não serão arquivadas no hall da fama.
 /
-- ` | open master console (more commands); ` | abrir console (mais comandos)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | escuridão na área atual
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | gerar ser engolido por uma entidade aleatória
-- shift + F | all adjacent enemies are charmed; shift + F | todos os inimigos adjacentes serão seduzidos
-- shift + G | gain 1000 gold; shift + G | ganhar 1000 de ouro
-- shift + I | identify all items on the floor; shift + I | identificar todos os itens no chão
-- shift + W | jump at will; shift + W | saltar à vontade
-- shift + D | light this zone; shift + D | iluminar essa área
-- shift + M | reveal the entire map; shift + M | revelar todo o mapa
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | revelar o mapa de todos os níveis de masmorra
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | deformar a masmorra (o mapa do fim do jogo se transforma)
-- shift + P | polymorph into any entity; shift + P | polimorfar-se em qualquer entidade
-- shift + T | teleport to a target zone; shift + T | teleportar-se para uma área alvo
-- shift + Z | learn all spells; shift + Z | aprender todos os feitiços
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | alternar o modo de uso automático (pise em um quadrado e você usará todos os itens)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | subir para um nível de masmorra anterior (mesmo se não estiver sobre uma escadaria)
-- > | descend to the next dungeon level (even when not on a staircase); > | descer para um próximo nível de masmorra (mesmo se não estiver sobre uma escadaria)
-- F5 | refresh the screen; F5 | atualizar a tela
-- F9 | quick load; F9 | carregamento rápido
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | abrir console (mais comandos)
+- $MasterLightness$ | light this zone; $MasterLightness$ | iluminar essa área
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | escuridão na área atual
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | gerar ser engolido por uma entidade aleatória
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | todos os inimigos adjacentes serão seduzidos
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | ganhar 1000 de ouro
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | identificar todos os itens no chão
+- $MasterJump$ | jump at will; $MasterJump$ | saltar à vontade
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | revelar todo o mapa
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | revelar o mapa de todos os níveis de masmorra
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | deformar a masmorra (o mapa do fim do jogo se transforma)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | polimorfar-se em qualquer entidade
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | teleportar-se para uma área alvo
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | aprender todos os feitiços
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | alternar o modo de uso automático (pise em um quadrado e você usará todos os itens)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | subir para um nível de masmorra anterior (mesmo se não estiver sobre uma escadaria)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | descer para um próximo nível de masmorra (mesmo se não estiver sobre uma escadaria)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | atualizar a tela
+- $QuickLoad$ | quick load; $QuickLoad$ | carregamento rápido
 /
 . There are additional manipulations built into the character panel and contextual help.; Existem manipulações adicionais descritas no painel do personagem e na ajuda contextual.

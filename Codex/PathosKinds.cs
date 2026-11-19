@@ -106,6 +106,29 @@ namespace Pathos
 
       this.UndeadArray = List.Where(K => K.Undead).ToArray();
       this.LivingArray = List.Where(K => K.Living).ToArray();
+
+      void MutualHatred(Kind LeftKind, Kind RightKind)
+      {
+        if (Inv.Assert.IsEnabled)
+        {
+          Inv.Assert.CheckNotNull(LeftKind, nameof(LeftKind));
+          Inv.Assert.CheckNotNull(RightKind, nameof(RightKind));
+          Inv.Assert.Check(LeftKind != RightKind, "Self-hating kinds are not allowed.");
+          Inv.Assert.Check(LeftKind.HatredKind == null, "LeftKind must not already have a hatred.");
+          Inv.Assert.Check(RightKind.HatredKind == null, "RightKind must not already have a hatred.");
+        }
+
+        Edit(LeftKind).HatredKind = RightKind;
+        Edit(RightKind).HatredKind = LeftKind;
+      }
+
+      MutualHatred(angel, demon);
+      MutualHatred(orc, elf);
+      MutualHatred(giant, dwarf);
+      MutualHatred(spider, insect);
+      MutualHatred(dog, cat);
+      MutualHatred(gnome, kobold);
+      MutualHatred(snake, rodent);
     }
 #endif
 

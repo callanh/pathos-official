@@ -1,59 +1,64 @@
 # Commands; コマンド一覧（主にキーボード用）
-. Single tap/left click or arrow keys to move and attack.; シングルタップ、左クリック、矢印キーで指定した場所に移動、もしくは対象に攻撃します。
+. Single tap/left click or direction keys to move and attack.; シングルタップ、左クリック、または方向キーで指定した場所に移動、もしくは対象に攻撃します。
 . Long press/right click to operate doors/traps.; 長押しまたは右クリックで、ドアの開け閉め、罠の解除や、わざと罠のある場所へ移動するなどのコマンドを選択するメニューが表示されます。
 . Double tap to pick up items, traverse stairs or wait one move.; ダブルタップ（クリック）で、アイテムを拾ったり、階段を昇り降りしたり、または1ターンその場で待機できます。
 /
-- . | wait one turn (also double tap on self); . | その場で1ターン待機（キャラクターをダブルタップでも）
-- , | pick up the top item on the floor; , | 床の一番上にあるアイテムを拾う
-- A | toggle log (click the log to expand/collapse); A | メッセージを表示/隠す（メッセージをクリックすると展開/折りたたみ）
-- B | move down-left; B | 左下へ移動または攻撃
-- C | toggle character; C | キャラクターパネルを表示/隠す
-- D | re-use last item; D | 最後に使ったアイテムをもう一度使用
-- E | mount or dismount your steed; E | 騎乗可能なモンスターに乗る / 騎乗中にモンスターから降りる
-- F | toggle floor; F | 床情報パネルを表示/隠す
-- G | re-equip last item; G | 最後に外したアイテムを再装備
-- H | move left; H | 左へ移動または攻撃
-- I | toggle inventory; I | 持ち物パネルを表示/隠す
-- J | move down; J | 下へ移動または攻撃
-- K | move up; K | 上へ移動または攻撃
-- L | move right; L | 右へ移動または攻撃
-- M | toggle map; M | マップを表示/隠す
-- N | move down-right; N | 右下へ移動または攻撃
-- O | hide from view; O | 隠れる（能力を持つモンスターに変化している場合のみ）
-- P | polymorph at will; P | 任意で変化（可能な時のみ）
-- Q | save or quit this game; Q | 進行中のゲームを保存または終了する
-- R | for rest mode to recover life and mana; R | ライフとマナをより早く回復する休憩モードのオン・オフ
-- S | for search mode for secret doors and traps; S | 秘密の扉や罠を見つけやすくなる調査モードのオン・オフ
-- T | teleport at will; T | 任意でテレポートする（可能な時のみ）
-- U | move up-right; U | 右上へ移動または攻撃
-- V | kick in a direction; V | 任意の方向へ蹴る
-- W | jump in a direction (if you have the talent); W | 任意の方向にジャンプする（可能な時のみ）
-- X | re-cast last spell; X | 最後に唱えた呪文をもう一度使用する
-- Y | move up-left; Y | 左上へ移動または攻撃
-- Z | toggle cast spells (read books to learn spells); Z | 呪文パネルを表示/隠す（魔法書で学習した呪文を表示）
-- ' | blink in a direction; ' | 任意の方向に転位する（可能な時のみ）
-- ;; | telekinesis in a direction; ;; | 任意の方向に念動力を使う
-- > | descend stairs; > | 階段を降りる
-- < | ascend stairs; < | 階段を昇る
-- / | toggle chat in multiplayer; / | チャット入力欄を表示（マルチプレイヤー時）
-- \ | view knowledge panel; \ | 知識パネルを表示
-- + | zoom in; + | 表示を拡大
-- - | zoom out; - | 表示を縮小
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | クイックアクション（左側、Shift+数字で行動を変更）
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | クイックアクション（右側、Shift+数字で行動を変更）
-- INSERT | toggle tunnelling mode; INSERT | 掘削モードに切り替え
-- SHIFT + arrow | fire a missile without moving; SHIFT + 方向 | 動かずに指定した方向へ攻撃または飛び道具を発射
-- CTRL + arrow | interact with the target without moving; CTRL + 方向 | 動かずに指定した方向の対象を操作
-- ENTER | select the top item on the floor; ENTER | 床の一番上にあるアイテムを選択
-- ESCAPE | hides open panels and clears your target; ESCAPE | 表示中のパネルを非表示にする
-- BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 表示中のパネルを消してキーボードの選択を解除
+- $Left$ | move left; $Left$ | 左へ移動または攻撃
+- $Right$ | move right; $Right$ | 右へ移動または攻撃
+- $Up$ | move up; $Up$ | 上へ移動または攻撃
+- $Down$ | move down; $Down$ | 下へ移動または攻撃
+- $UpLeft$ | move up-left; $UpLeft$ | 左上へ移動または攻撃
+- $UpRight$ | move up-right; $UpRight$ | 右上へ移動または攻撃
+- $DownLeft$ | move down-left; $DownLeft$ | 左下へ移動または攻撃
+- $DownRight$ | move down-right; $DownRight$ | 右下へ移動または攻撃
+- SHIFT + direction | fire a missile without moving; Shift + 方向 | 動かずに指定した方向へ攻撃または飛び道具を発射
+- CTRL + direction | interact with the target without moving; Ctrl + 方向 | 動かずに指定した方向の対象を操作
+- $Select$ | select the top item on the floor; $Select$ | 床の一番上にあるアイテムを選択
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | 表示中のパネルを閉じる
+- BACKSPACE | cancels open dialogs and clears the keyboard focus; BackSpace | 表示中のパネルを消してキーボードの選択を解除
 - SPACE | toggle real-time or turn-based; スペース | リアルタイムモードとターンベースモードの切り替え
-- PgUp | switch to previous character; PgUp | 前のキャラクターに操作を切り替える
-- PgDown | switch to next character; PgDown | 次のキャラクターに操作を切り替える
-- ALT | show labels; ALT | キャラクター名などのラベルを表示
-- F1 | show this help; F1 | ヘルプ画面を表示
-- F6 | quick save; F6 | クイックセーブ
-- F10 | open side menu; F10 | サイドメニューを表示
+- CTRL/ALT | show labels; Ctrl か Alt | キャラクター名などのラベルを表示
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | 床の一番上にあるアイテムを拾う
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | その場で1ターン待機（キャラクターをダブルタップでも）
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | ライフとマナをより早く回復する休憩モードのオン・オフ
+- $Search$ | for search mode for secret doors and traps; $Search$ | 秘密の扉や罠を見つけやすくなる調査モードのオン・オフ
+- $Descend$ | descend stairs; $Descend$ | 階段を降りる
+- $Ascend$ | ascend stairs; $Ascend$ | 階段を昇る
+- $Character$ | toggle character; $Character$ | キャラクターパネルを表示/隠す
+- $Inventory$ | toggle inventory; $Inventory$ | 持ち物パネルを表示/隠す
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | 呪文パネルを表示/隠す（魔法書で学習した呪文を表示）
+- $Floor$ | toggle floor; $Floor$ | 床情報パネルを表示/隠す
+- $Map$ | toggle map; $Map$ | マップを表示/隠す
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | メッセージを表示/隠す（メッセージをクリックすると展開/折りたたみ）
+- $Knowledge$ | view knowledge panel; $Knowledge$ | 知識パネルを表示
+- $Chat$ | toggle chat in multiplayer; $Chat$ | チャット入力欄を表示（マルチプレイヤー時）
+- $Kick$ | kick in a direction; $Kick$ | 任意の方向にキック
+- $Mount$ | mount or dismount your steed; $Mount$ | 騎乗可能なモンスターに乗る / 騎乗中のモンスターから降りる
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | 指定方向にジャンプ（可能な時のみ）
+- $Slide$ | slide in a direction; $Slide$ | 指定方向にすり抜ける（可能な時のみ）
+- $Blink$ | blink in a direction; $Blink$ | 指定方向に転位（可能な時のみ）
+- $Teleport$ | teleport at will; $Teleport$ | 任意でテレポートする（可能な時のみ）
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | 指定方向に念動力を使う
+- $Polymorph$ | polymorph at will; $Polymorph$ | 任意で変化（可能な時のみ）
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | 掘削モードに切り替え
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | サイドメニューを表示
+- $QuickSave$ | quick save; $QuickSave$ | クイックセーブ
+- $Help$ | show this help; $Help$ | ヘルプ画面を表示
+- $Quit$ | save or quit this game; $Quit$ | 進行中のゲームを保存または終了する
+- $ZoomIn$ | zoom in; $ZoomIn$ | 表示を拡大
+- $ZoomOut$ | zoom out; $ZoomOut$ | 表示を縮小
+- $ActionReuse$ | re-use last item; $ActionReuse$ | 最後に使ったアイテムをもう一度使用
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | 最後に外したアイテムを再装備
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | 最後に唱えた呪文をもう一度使用する
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down; $NavigateDown$ | 下階層に続く方向へ移動
+- $NavigateUp$ | navigate to the way up; $NavigateUp$ | 上階層に続く方向へ移動
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | 前のキャラクターに操作を切り替える
+- $SwitchDown$ | switch to next character; $SwitchDown$ | 次のキャラクターに操作を切り替える
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | クイックアクション（左側、Shift+数字で行動を変更）
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | クイックアクション（右側、Shift+数字で行動を変更）
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); Alt + Enter | 全画面とウィンドウ表示の切り替え（Windowsデスクトップ）
 
 # General mechanics; はじめに
@@ -199,9 +204,9 @@
 ` {AttributeCode} ({AttributeName}): {AttributeDescription}; {AttributeName}: {AttributeDescription}
 
 # Karma; カルマ
-. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; カルマは、モンスターを殺すことで上昇し、神からご利益を授かる代わりに消費されます。（祈るか、杜で恩恵を受ける）
+. Karma is gained when you kill monsters and spent when you ask for divine favour (praying and asking for boons at a shrine).; カルマはモンスターを殺すことで上昇し、神からご利益を授かる時に消費されます。（祈りや、聖なる場所での恩恵）
 . Karma can be lost by being a bad dungeon citizen such as attacking a neutral monster or killing your allies.; 中立のモンスターを攻撃したり味方を殺したりするなど、ダンジョンにおいてすら咎められる悪い行いをするとカルマが下がります。
-. You can gain additional karma by donating gold to a priest at a shrine.; 杜の司祭にゴールドを寄付することで、カルマが上昇します。
+. You can gain additional karma by donating gold to a priest at a shrine.; 神父など聖なる場所に居る人物にゴールドを寄付することで、カルマが上昇します。
 . You can pray at any time by long press/right click on your character.; キャラクターを長押し、または右クリックで表示されるメニューから祈ることができます。
 . This will cost {Number} karma and has the following effects:; 祈るとカルマを{Number}消費し、以下の効果を得ることができます。
 /
@@ -213,8 +218,8 @@
 `   remove punishment; 天罰からの解放
 /
 ` karma >= good; カルマ >= 善良
-`   fully healed life; ライフが半分より下回っていた場合、完全に回復
-`   fully restored mana; マナが半分より下回っていた場合、完全に回復
+`   fully healed life; ライフを完全に回復
+`   fully restored mana; マナを完全に回復
 /
 ` karma >= glorious; カルマ >= 高潔
 `   remove blindness; 盲目を取り除く
@@ -237,7 +242,7 @@
 
 # Gold; ゴールド
 . Gold is not considered as part of your encumbrance and has several purposes in the dungeon.; ゴールドは荷物の重量に影響せず、ダンジョンの中ではいくつかの使い道があります。
-. Gold can be traded for items from merchants or donated to priests for karma.; ゴールドは商人とアイテムの売買に使ったり、カルマを得るために司祭等に寄付することができます。
+. Gold can be traded for items from merchants or donated to priests for karma.; ゴールドは商人とアイテムの売買に使ったり、カルマを得るために神父など聖なる場所に居る人物に寄付できます。
 
 # Companions; 仲間
 . Domestic animals can be tamed by feeding them something they like to eat (but they don't get hungry otherwise).; 中立の動物は、食べられる食料を与えることで仲間にすることができます。（仲間は食料を食べますが、空腹になることはありません）
@@ -272,7 +277,7 @@
 
 # Locks; 錠前
 . Doors and containers can be locked and possibly trapped.; ドアや箱には鍵が掛かっていたり、罠が仕掛けられているかもしれません。
-. You can kick locks to break them but this will trigger any trap.; 蹴ることで錠前ごと破壊することができますが、仕掛けられていた罠が必ず起動します。
+. You can kick locks to break them but this will trigger any trap.; キックで錠前ごと破壊できますが、仕掛けられていた罠が必ず起動します。
 . Items such as skeleton keys and lock picks can be used to unlock.; 仕込み鍵やピッキング道具などのアイテムを使うことで鍵を解錠できます。（罠付きの箱の解錠に失敗すると、仕掛けられていた罠が起動します）
 . These items can break and the chance is influenced by your competency with locks.; これらの道具は使用すると壊れる可能性があり、その確率は錠前のスキルに影響されます。
 . In addition, cursed items are twice as likely to break and blessed item are half as likely to break.; 加えて、壊れる可能性は呪われた道具では2倍に、祝福された道具では半分になります。
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + 上昇した能力値 x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + 保有している性質の数 x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + 獲得した耐性 (%) x {Multiplier}
+` + Achievements² x {Multiplier}; + (解除した実績の数)² x {Multiplier}
 ` + Total Inventory Worth (in gold); + 獲得したアイテムとゴールドの価値
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; 持ち物全ての価値は、その他要素からなる名声の値を超えないよう制限されます。
@@ -396,19 +402,19 @@
 . You may learn that your character was not viable and death comes quick again.; 復活しても強敵がすぐ近くにいるなどの状況から生き残れず、またすぐに死んでしまうこともあります。
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; 何度でも復活することができますが、復活すると獲得してきた名声が0に戻ってしまいます。
 . Fame achieved subsequent to your resurrection will contribute to your score.; 復活した後に得た名声はスコアとして集計されます。
-. This is similar to the 'explorer mode' from the original Nethack.; これはオリジナルのNethackにおける「エクスプローラーモード」の様なものです。
+. This is similar to the 'explorer mode' from the original NetHack.; これはオリジナルのNetHackにおける「エクスプローラーモード」の様なものです。
 
 # Multiplayer; マルチプレイヤー
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; マルチプレイヤーは、Inventionプラットフォームの「graphical telnet」テクノロジーを基にしています。
 . This means the game is executed on the server and the user interface is projected to each of the clients.; これは、ゲームがサーバー上で実行され、それぞれのクライアントにユーザーインターフェースが映し出される仕組みです。
-. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; TCP/IP通信に基づいているため、同じWIFI/LAN内や、インターネットを通じてプレーすることができます。
+. You can play over WIFI/LAN and the internet because the communications is based on TCP/IP.; TCP/IP通信に基づいているため、同じWi-Fi/LAN内や、インターネットを通じてプレイすることができます。
 . This technology only works well with low latency (less than 30ms ping should be playable).; この技術は低遅延でのみ快適に動作します。（通信の応答速度が30ミリ秒未満である必要があります）
 /
-. One player needs to be the server and HOST the game.; 参加するプレイヤーのうち1人が「ホスト」を選択して、サーバー役になる必要があります。（ホストもゲームをプレーすることができます）
+. One player needs to be the server and HOST the game.; 参加するプレイヤーのうち1人が「ホスト」を選択して、サーバー役になる必要があります。（ホストもゲームをプレイすることができます）
 . All other players are clients and JOIN the game.; 他の全てのプレイヤーは、「参加」を選択してクライアントとしてゲームに参加します。（ゲームのバージョンがサーバーと同じである必要があります）
 /
 . The server player will need to look up their IP address in device network settings and share with the client players.; サーバー役のプレイヤーは（PCやルーターなど）通信機器の設定から自分のIPアドレスを確認し、クライアントとして接続するプレイヤーに伝える必要があります。
-. Firewall settings and port forwarding may be required when playing over the internet.; インターネットを通じてプレーする場合、（ルーターなどで）ファイアウォールおよびポートフォワーディングの設定が必要になる場合があります。
+. Firewall settings and port forwarding may be required when playing over the internet.; インターネットを通じてプレイする場合、（ルーターなどで）ファイアウォールおよびポートフォワーディングの設定が必要になる場合があります。
 /
 . The HOST can use 3717 and tap CONNECT.; 「ホスト」を選択してサーバー役になる場合、ポート番号（既定値3717）を入力して「CONNECT」を選択します。
 . The other players JOIN by typing in the host's IP Address and the port.; 「参加」を選択してクライアントとして接続する場合、ホストのIPアドレスとポート番号を入力して「CONNECT」を選択します。
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; これは、Pathosの仕組みを自由に試すことができるチートモードです。
 . Any adventures in this mode will not be tracked in the hall of fame.; このモードを有効にした場合、冒険の足跡は名誉の殿堂に記されません。
 /
-- ` | open master console (more commands); @ | マスターコンソールを開く（追加のコマンドメニューを表示）
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 周囲を暗闇にする
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | 飲み込みを行うランダムなモンスターを生成し、飲み込まれる
-- shift + F | all adjacent enemies are charmed; shift + F | 隣接する全ての敵を魅了する
-- shift + G | gain 1000 gold; shift + G | 1000ゴールドを獲得
-- shift + I | identify all items on the floor; shift + I | 床の上のすべてのアイテムを識別
-- shift + W | jump at will; shift + W | 意のままにジャンプします
-- shift + D | light this zone; shift + D | 周囲を明るくする
-- shift + M | reveal the entire map; shift + M | 現在いる階層のマップを公開
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 全てのマップを公開
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | ダンジョンを変容
-- shift + P | polymorph into any entity; shift + P | 任意のモンスターへ変化
-- shift + T | teleport to a target zone; shift + T | 指定した領域へ瞬間移動
-- shift + Z | learn all spells; shift + Z | すべての呪文を学ぶ
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | 自動使用モードのオン・オフ（あるマスに進むと、マス上の全てのアイテムを使用します）
-- < | ascend to the previous dungeon level (even when not on a staircase); < | 1つ上の階層へ昇る（階段の上にいない場合も可能）
-- > | descend to the next dungeon level (even when not on a staircase); > | 1つ下の階層へ降りる（階段の上にいない場合も可能）
-- F5 | refresh the screen; F5 | 画面表示を更新
-- F9 | quick load; F9 | クイックロード
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | マスターコンソールを開く（追加のコマンドメニューを表示）
+- $MasterLightness$ | light this zone; $MasterLightness$ | 周囲を明るくする
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | 周囲を暗闇にする
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | 飲み込みを行うランダムなモンスターを生成し、飲み込まれる
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | 隣接する全ての敵を魅了
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | 所持金に1000ゴールド追加
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | すべてのアイテムを識別
+- $MasterJump$ | jump at will; $MasterJump$ | 意のままにジャンプ
+- $MasterBlink$ | blink at will; $MasterBlink$ | 意のままに転移
+- $MasterSlide$ | slide at will; $MasterSlide$ | 意のままにすり抜け
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | 意のままに念動力を使用
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | 現在いる階層をマッピング
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | 全ての階層をマッピング
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | ダンジョンを変容
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | 任意のモンスターへ変化
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | 指定した領域へ瞬間移動
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | 最上層に瞬間移動
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | 最下層に瞬間移動
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | すべての呪文を習得
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | 自動使用モードのオン・オフ（あるマスに進むと、マス上の全てのアイテムを使用します）
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | 1つ上の階層へ昇る（階段の上にいない場合も可能）
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | 1つ下の階層へ降りる（階段の上にいない場合も可能）
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | 画面表示を更新
+- $QuickLoad$ | quick load; $QuickLoad$ | クイックロード
 /
 . There are additional manipulations built into the character panel and contextual help.; キャラクターパネルとアイテムやモンスターなどのヘルプには、マスターモード専用のコマンドが追加されています。

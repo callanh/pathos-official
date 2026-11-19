@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,ארס קטלני זורם בוורידים שלך.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,ארס קטלני זורם בוורידים שלך.
 AfflictionDescription,Something deeply unsettling is happening... down there.,משהו מטריד מאוד קורה... שם למטה.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,תחושה מכרסמת לך עמוק בבטן.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,הנגיף הזה גורם לדלקת במוח והוא מועבר על ידי בעלי חיים חולים.
@@ -23,7 +61,7 @@ AnatomyAbsenceText,NO HEAD,אין ראש
 AnatomyAbsenceText,NO LIMBS,אין גפיים
 AnatomyAbsenceText,NOT AMORPHOUS,צורה מוגדרת
 AnatomyAbsenceText,NOT MOUNTED,לא ברכיבה
-AnatomyAbsenceText,NOT WARM,אין דם חם
+AnatomyAbsenceText,NOT WARM,ללא חום גוף
 AnatomyAbsenceText,VOICELESS,אין קול
 AnatomyName,amorphous,אין צורה מוגדרת
 AnatomyName,blood,דם
@@ -43,9 +81,9 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,חלי�
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,חליפת שריון מיתריל דקה ועדינה למראה.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,חליפת שריון מיתריל דקה ומבריקה.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,אביזר הקוסמים הקלאסי הזה הוא כובע מחודד מעוטר בירחים וכוכבים.
-AppearanceName,adamantine slug,חשופית אדמנטיט
-AppearanceName,adamantine staff,מטה אדמנטיט
-AppearanceName,agate ring,טבעת ברקת
+AppearanceName,adamantine slug,קליע אדמנטין
+AppearanceName,adamantine staff,מטה אדמנטין
+AppearanceName,agate ring,טבעת אגט
 AppearanceName,aluminium wand,שרביט אלומיניום
 AppearanceName,angled poleaxe,גרזן-חנית זוויתי
 AppearanceName,backwards book,ספר הפוך
@@ -92,7 +130,7 @@ AppearanceName,colourful book,ספר צבעוני
 AppearanceName,combat boots,מגפי קרב
 AppearanceName,compact gun,אקדח
 AppearanceName,concave amulet,קמע קעור
-AppearanceName,conical hat,כובע משולש
+AppearanceName,conical hat,כובע חרוטי
 AppearanceName,convex amulet,קמע קמור
 AppearanceName,copper book,ספר נחושת
 AppearanceName,copper ring,טבעת נחושת
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,שריון מיתריל משובח
 AppearanceName,fizzy potion,שיקוי מוגז
 AppearanceName,flute,חליל
 AppearanceName,forked polearm,נשק-מוט מפוצל
+AppearanceName,frayed cloth,חתיכת אריג
 AppearanceName,fur boots,מגפי פרווה
 AppearanceName,fuzzy book,ספר מטושטש
 AppearanceName,glass orb,כדור זכוכית
@@ -242,14 +281,13 @@ AppearanceName,orange book,ספר כתום
 AppearanceName,orange gem,אבן חן כתומה
 AppearanceName,orange potion,שיקוי כתום
 AppearanceName,orange robe,אדרת כתומה
-AppearanceName,ornamental cope,גלימה ארוכה מקושטת
+AppearanceName,ornamental cope,גלימה טקסית ארוכה
 AppearanceName,oval amulet,קמע סגלגל
 AppearanceName,padded gloves,כפפות מרופדות
 AppearanceName,papyrus book,ספר פפירוס
 AppearanceName,parchment book,ספר מגילה
 AppearanceName,pearl earrings,עגילי פנינה
 AppearanceName,pearl ring,טבעת פנינים
-AppearanceName,piece of cloth,חתיכת אריג
 AppearanceName,pink book,ספר ורוד
 AppearanceName,pink potion,שיקוי ורוד
 AppearanceName,plaid book,ספר צמר משובץ
@@ -400,11 +438,11 @@ AppearanceName,yellow gem,אבן חן צהובה
 AppearanceName,yellow potion,שיקוי צהוב
 AppearanceName,yellowish brown gem,אבן חן צהובה-חומה
 AppearanceName,zinc wand,שרביט אבץ
-AppetiteName,content,במצב שובע
-AppetiteName,hungry,במצב רעב
+AppetiteName,content,בשובע
+AppetiteName,hungry,ברעב
 AppetiteName,satiated,במצב מלא
 AppetiteName,starving,במצב הרעבה
-AppetiteName,weak,במצב חלש
+AppetiteName,weak,במצב חולשה
 AttackType,bite,נשיכה
 AttackType,blast,פיצוץ
 AttackType,breath,נשיפה
@@ -432,7 +470,7 @@ AttributeBad,foolish,במצב מטופש
 AttributeBad,fragile,במצב שביר
 AttributeBad,repulsive,במצב דוחה
 AttributeBad,stupid,במצב טפשות
-AttributeBad,weak,במצב חלש
+AttributeBad,weak,במצב חולשה
 AttributeCode,CHA,כרי
 AttributeCode,CON,חסן
 AttributeCode,DEX,זרי
@@ -446,7 +484,7 @@ AttributeDescription,Common sense and understanding of the world affects your ma
 AttributeDescription,Core fitness and endurance affects your life potential and recovery rate.,כושר בסיסי וסיבולת משפיעים על פוטנציאל החיים שלך ועל קצב ההתאוששות של נקודות הפגיעה.
 AttributeDescription,"Personality, charm and communication skills affects your commercial exchanges.","אישיות, קסם אישי וכישורי תקשורת משפיעים על כישורי המסחר שלך."
 AttributeGood,agile,במצב זריז
-AttributeGood,attractive,במצב מושך
+AttributeGood,attractive,במצב משיכה
 AttributeGood,smart,במצב פקחות
 AttributeGood,strong,במצב כוח
 AttributeGood,tough,במצב קשיחות
@@ -549,8 +587,10 @@ BoonName,undead army,צבא אל-מתים
 BoonName,unicorn friend,חבר חד-קרן
 CalendarText,d MMMM yyyy,d MMMM yyyy
 CharacterName,Adebesi,אבבסי
+CharacterName,Akoya,
 CharacterName,Alista,אליסטה
 CharacterName,Amaya,אמאיה
+CharacterName,Armax,
 CharacterName,Arnoken,ארנוקן
 CharacterName,Arrom,אררום
 CharacterName,Atral,אטרל
@@ -561,6 +601,7 @@ CharacterName,Belietha,בלייתה
 CharacterName,Bok,בוק
 CharacterName,Bolan,בולן
 CharacterName,Brouwer,ברוור
+CharacterName,Busko,
 CharacterName,Cailie,קייליי
 CharacterName,Capo,קפו
 CharacterName,Carthyre,קרתירה
@@ -572,7 +613,10 @@ CharacterName,Crepsal,קרפסל
 CharacterName,D'rey,ד'ריי
 CharacterName,Damano,דמנו
 CharacterName,Daracy,דראסי
+CharacterName,Dastrne,
 CharacterName,Davicohr,דויקוהר
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,דונלר
 CharacterName,Dug,דאג
 CharacterName,Elishmeli,אלישמלי
@@ -582,8 +626,10 @@ CharacterName,Enlan,אנלן
 CharacterName,Ericendrick,אריסנדריק
 CharacterName,Eybrinde,אייברינדה
 CharacterName,Faraze,פרזה
+CharacterName,Farleen,
 CharacterName,Fenlas,פנלס
 CharacterName,Fenraymond,פנריימונד
+CharacterName,Fizzit,
 CharacterName,Floki,פלוקי
 CharacterName,Forro,פורו
 CharacterName,Franzia,פרנזיה
@@ -591,15 +637,20 @@ CharacterName,Galday,גלדיי
 CharacterName,Gasberg,גסברג
 CharacterName,Gleichman,גלייכמן
 CharacterName,Gmima,גמימה
+CharacterName,Goggie,
 CharacterName,Gohu,גוהו
 CharacterName,Gomack,גומק
 CharacterName,Grytt,גריט
 CharacterName,Haelom,האלום
 CharacterName,Haique,הייקיו
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,הקויאן
 CharacterName,Hendrick,הנדריק
 CharacterName,Hough,האף
+CharacterName,Hylatia,
 CharacterName,Illitasha,איליטשה
+CharacterName,Iralna,
 CharacterName,Ishgood,אישגוד
 CharacterName,Istophe,איסטוף
 CharacterName,Isylav,איסילב
@@ -608,7 +659,9 @@ CharacterName,Javarl,ג'וורל
 CharacterName,Jayenason,ג'ייאנסון
 CharacterName,Jeem,ג'ים
 CharacterName,Jessera,ג'סרה
+CharacterName,Jevard,
 CharacterName,Jonat,ג'ונט
+CharacterName,Karasque,
 CharacterName,Karbri,קרברי
 CharacterName,Kennold,קנולד
 CharacterName,Kevugo,קווגו
@@ -619,25 +672,32 @@ CharacterName,Lagratha,לגרתה
 CharacterName,Lanetwalz,לנטוולז
 CharacterName,Lant,לאנט
 CharacterName,Lesha,לשה
+CharacterName,Liloquy,
 CharacterName,Luickean,לויקאן
+CharacterName,Lunch,
 CharacterName,Lzay,לזיי
 CharacterName,Malasuth,מלאסות
 CharacterName,Marisa,מריסה
 CharacterName,Melchai,מלכאי
 CharacterName,Meloty,מלוטי
+CharacterName,Mili,
 CharacterName,Miller,מילר
 CharacterName,Misteph,מיסאף
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,ניכאלטוי
 CharacterName,Ninerma,נינרמה
 CharacterName,Ninhart,נינהרט
 CharacterName,Ninny,ניני
 CharacterName,Nodin,נודין
 CharacterName,Norbant,נורבנט
+CharacterName,Norvric,
 CharacterName,Okennwood,אוקנווד
 CharacterName,Ollac,אולאק
 CharacterName,Omdarro,אומדרו
 CharacterName,Orankin,אורנקין
 CharacterName,Oscae,אוסקאה
+CharacterName,Ovira,
 CharacterName,Paltrick,פלטריק
 CharacterName,Pauwinner,פאווינר
 CharacterName,Penevieve,פנוייוה
@@ -653,13 +713,17 @@ CharacterName,Quarah,קוורה
 CharacterName,Quibb,קוויב
 CharacterName,Quizchak,קוויזצ'ק
 CharacterName,Quohnrupley,קווהנרופלי
+CharacterName,Rake,
 CharacterName,Rambrant,ראמברנט
 CharacterName,Raugarr,ראוגר
 CharacterName,Razz,ראז
 CharacterName,Rebenna,רבנה
+CharacterName,Relinsarn,
 CharacterName,Renorber,רנורבר
 CharacterName,Rokiju,רוקיג'ו
 CharacterName,Rupley,רופלי
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,סרליה
 CharacterName,Shinaas,שינאאס
 CharacterName,Smither,סמיתר
@@ -668,10 +732,13 @@ CharacterName,Stewite,סטווייט
 CharacterName,Sully,סולי
 CharacterName,Talon,טלון
 CharacterName,Tanyacka,טנייקה
+CharacterName,Tempus,
 CharacterName,Thakuline,תקוליין
 CharacterName,Threepo,תריפו
 CharacterName,Timonen,טימונן
+CharacterName,Toland,
 CharacterName,Trank,טרנק
+CharacterName,Uballon,
 CharacterName,Udfoot,אודפוט
 CharacterName,Uffle,אופל
 CharacterName,Ujopayne,אוג'ופיין
@@ -683,6 +750,7 @@ CharacterName,Vidar,וידאר
 CharacterName,Vikethome,וייקתום
 CharacterName,Viophie,ויופי
 CharacterName,Vorzian,ורזיאן
+CharacterName,Waldrin,
 CharacterName,Wallison,וואליסון
 CharacterName,Waltis,וולטיס
 CharacterName,Walzen,וולזן
@@ -694,15 +762,18 @@ CharacterName,Xank,קסנק
 CharacterName,Xantari,קסנטרי
 CharacterName,Xarrung,קסרונג
 CharacterName,Xiolet,קסיולט
+CharacterName,Yahoa,
 CharacterName,Yarromdee,ירומדי
 CharacterName,Yassage,יסאג'
 CharacterName,Yorque,יורקיו
 CharacterName,Yral,יירל
 CharacterName,Yuvaloren,יובלורן
+CharacterName,Zarja,
 CharacterName,Zean,ז'ין
 CharacterName,Zerbarry,זרברי
 CharacterName,Zimn,זימן
 CharacterName,Zonagan,זונגן
+CharacterName,Zuki,
 CharacterName,Zultry,זולטריי
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","אחרי שנים רבות של התבוננות מעמיקה, מגידי העתידות האלה מוכנים לצאת אל העולם. בשליטתם במוחם שלהם, הם מסוגלים למעשים שדורשים כוח רצון מעורר יראה."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","מרפאים שוחרי טוב, תמיד מוכנים להושיט יד עוזרת לחלשים. הם רגילים להתמודד עם מחלות והם דוגמה ומופת להיגיינה וניקיון, מוכנים לסיוע. לכן עליהם להסתמך על ליווי מתמיד אם הם רוצים לשרוד."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,עמידות מ�
 ElementDescription,Complete resistance to life and mana draining effects.,עמידות מוחלטת לשאיבת נקודות חיים וקסם.
 ElementDescription,Complete resistance to petrification effects.,עמידות מוחלטת להתאבנות.
 ElementDescription,Complete resistance to poison damage.,עמידות מוחלטת לנזקי רעל.
-ElementDescription,Protects you against pure magical effects.,הגנה נגד השפעות קסם טהור.
-ElementDescription,You resist attempts to render you into a magical slumber.,עמידות לניסיונות להרדים אותך בשינה קסומה.
+ElementDescription,Complete resistance to purely magical damage and effects.,הגנה נגד השפעות קסם טהור.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,עמידות לניסיונות להרדים אותך בשינה קסומה.
 ElementName,acid,חומצה
 ElementName,cold,קור
 ElementName,digging,חפירה
@@ -999,35 +1070,67 @@ EncumbranceDescription,You rebalance your load but movement is difficult.,המש
 EncumbranceDescription,You stagger under your load.,העומס מטלטל אותך.
 EncumbranceDescription,Your movements are slightly slowed because of your load.,התזוזה שלך איטית יותר בגלל העומס.
 EncumbranceDescription,Your movements are unencumbered.,אין עליך עומס.
-EncumbranceName,burdened,במצב עומס
-EncumbranceName,overloaded,במצב עומס-יתר
+EncumbranceName,burdened,בעומס
+EncumbranceName,overloaded,בעומס-יתר
 EncumbranceName,overtaxed,במצב הכבדה
 EncumbranceName,strained,במצב מאמץ בנשיאה
 EncumbranceName,stressed,במצב לחץ בנשיאה
-EncumbranceName,unencumbered,במצב לא עמוס
+EncumbranceName,unencumbered,ללא עומס
 EngulfmentName,engulfed,במצב עיטוף
 EngulfmentName,swallowed,במצב בליעה
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"יצורים בינוניים בגודלם, שאפתניים מאוד. קצרי-חיים אבל נמצאים בכל מקום; אין לזלזל בהם."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","יצורים חסרי צורה מוגדרת אבל לרוב מופיעים בדמות אנושית שקופה. אי אפשר לטעות בזהותם ולא לשים לב שהם נוזל פלזמתי, אבל הצורה הזאת מאפשרת להם להשתמש בבגדים ובכלים."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","גזע עתיק של מתבודדים עצומים בגודלם. גודלם המבעית מעניק להם כוח עצום, ומוסיפה לכך זלילה של בשרים ומינרלים."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","יצורים שמיימיים שמשמשים כלי קיבול לרוח עשויה לבלי חת של הרפתקן או הרפתקנית שמתו. אין להם שאיפות משלהם, והם שמחים להרשות את הדיבוק; עבור ההרפתקנים המתים, זאת הזדמנות שנייה לנקמה או גאולה. הם נולדו מחומר שמיימי ולכן הם דקים, שקופים, ויכולים לעבור בחופשיות דרך מכשולים פיזיים."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","יצורים יפיפיים שלא מן העולם הזה, בעלי הילה אופיינית וכנפיים עם נוצות. הם קשובים מאוד לקרב בין הטוב לרע, והם חשים את מידת הקדושה בכל דבר שהם אוחזים בו."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,מכונת מלחמה מכנית ומסוכנת.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,אוטומטונים רבי עוצמה בעלי שתי רגליים ובינה מלאכותית כמעט בלתי מוגבלת. מנוע ההיתוך שמספק להם את כוחם דורש אספקה מתמדת של חומרי גלם והוא פגיע לנזקי מים.
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","יצורים ממין הפיות, מקושרים לרוחות הטבע שמסייעות להם בתעלוליהם. הם חסונים, בעלי גוף תחתון שעיר, פרסות עז שסועות וקרני כבש מסולסלות. הם גסים ופקחיים, ומנהלים חיי הנאה של שתייה, ריקוד וקרבות."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","יצורים מרשימים וכבדים, דומים לדרקונים אנושיים בעלי חוטם ארוך, עור קשקשי וכנפיים שימושיות."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","זוחלים גדולים, אוכלי כל, שאבות אבותיהם החייתיים שלטו בעולם הרבה לפני ערש התרבות. הם טורפים מעוררי אימה, מסוגלים לזנק מרחקים ארוכים ולהדוף מתקפות רבות בעזרת העורות העבים והקשקשיים שלהם."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,יצורים מפלצתיים עם ראש וזנב של שור ועם גוף אדם.
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","יצורים סוטים שונים ומגוונים, אבל תמיד בעלי עור ארגמן וקרניים. עצם נוכחותם גורמת לאחרים לפעול על פי התשוקות האפלות והאלימות ביותר שלהם."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","מין רעבתני וטורף של דמויי אדם מפלצתיים בעלי גיבנת עצומה שגורמת לכך שגב היד שלהם נגרר על האדמה. למרות מראם הגופני המגושם, הם חזקים וידועים לשמצה ביכולת שלהם להתאושש במהירות מכל פציעה של העור הגמיש שלהם."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","סוטים חברתיים משני-צורה, שמשגשגים בזכות כישורי ההונאה שלהם."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"יצורים קטנים שמעדיפים חיים פשוטים. הם חברותיים במיוחד, ומבנה הגוף שלהם מוליך אותם להרפתקאות שאינן-בדיוק-אביריות."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","יצורים רוחניים שאוהבים את הטבע ואת הקסם. הם דומים לבני אדם, אבל לרוב קטנים וזריזים יותר."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","יצורים גוצים, נמוכים וקשוחים. הם ידועים בעקשנות שלהם, בעבודות המתכת שהם יוצרים ובחיבתם לאלכוהול."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","עם שחי מתחת לפני הקרקע, חובבי פחחות וקסם. הם התפתחו כדי להתאים לחיים בצמצום והמטבוליזם שלהם מתאים להרפתקאות ארוכות במקומות שבהם המזון נדיר."
-EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","הפודינג החום הוא הפחות-מוצלח מבין שני מיני הפודינג הפרוזיגוטי. נאמר שטעמו דומה יותר לחלב חמוץ מאשר לקינוח שוקולדי. הפודינג עצמו ניזון מבדים ועורות מכל הסוגים, אבל היכולת המפורסמת ביותר שלהם היא שיטת הרבייה הייחודית שלהם. כשהם באים במגע עם ברזל, מתרחש נס והרפש הרקוב מתפצל ויוצר שני צאצאים רעבים. מאחר שהברזל שכיח ביותר בכלי הנשק של ההרפתקנים, אוכלוסיית הייצורים האלה גדלה עם הזמן."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
+EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","הפודינג החום הוא הפחות-מוצלח מבין שני מיני הפודינג הפרוזיגוטי. נאמר שטעמו דומה יותר לחלב חמוץ מאשר לקינוח שוקולדי. הפודינג עצמו ניזון מבדים ועורות מכל הסוגים, אבל היכולת המפורסמת ביותר שלהם היא שיטת הרבייה הייחודית שלהם. כשהם באים במגע עם ברזל, מתרחש נס והרפש הרקוב מתפצל ויוצר שני צאצאים רעבים. מאחר שהברזל שכיח ביותר בכלי הנשק של ההרפתקנים, אוכלוסיית היצורים האלה גדלה עם הזמן."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","המומיה המתוקה הזאת נוצרת כאשר משרים גופת אדם בדבש. כת מוזרה של נזירים מחייה אותה באופן כלשהו, והיא קטלנית וטעימה כאחד."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,"לבועה החיה המוזרה הזאת, המלאה בנוזל מזיק, אין יכולות התקפה משלה."
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","רוחות מכונפות קטנטנות, בעלות קסם טבעי ויופי יוצא דופן. כאשר מאיימים עליהם הם יכולים לברוח דרך עיוותים במרחב."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","שורדים נודדים דמויי-צב, שעוזבים את מקום הולדתם ברגע שבו הם לומדים ללכת, ונודדים בעולם בתוך הנוחות וההגנה שמספק בית על הגב."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",יצורים מכוערים וגסים בעלי נטיות קניבליות; בני הגזע הלוחם הזה ידועים בכוחם המרשים ובשכלם הרפה.
@@ -1036,7 +1139,7 @@ EntityName,abbot,נזיר
 EntityName,acid blob,גוש חומצה
 EntityName,acid worm,תולעת חומצה
 EntityName,acolyte,שרת
-EntityName,adamantine golem,גולם אדמנטיט
+EntityName,adamantine golem,גולם אדמנטין
 EntityName,adult black dragon,דרקון שחור בוגר
 EntityName,adult blue dragon,דרקונית כחולה בוגרת
 EntityName,adult deep dragon,דרקון מעמקים בוגר
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,דרקונית כסופה גורה
 EntityName,baby white dragon,דרקון לבן גור
 EntityName,baby yellow dragon,דרקונית צהובה גורה
 EntityName,bad egg,ביצה סרוחה
-EntityName,balrog,בלרוג
 EntityName,baluchitherium,באלוקיתריום
 EntityName,banshee,באנשי
 EntityName,bar-lgura,בר-איגורה
@@ -1175,6 +1277,7 @@ EntityName,dao,דאו
 EntityName,dark cleric,כוהן אפל
 EntityName,Death,מוות
 EntityName,death dog,כלב מוות
+EntityName,decinder,בלרוג
 EntityName,deep gnome,גנום מעמקים
 EntityName,deep one,שוכן מעמקים
 EntityName,deeper one,שוכן עמקי מעמקים
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,דופלגנגר
 EntityName,dracolich,דרקוליץ'
 EntityName,dracon,דראקון
 EntityName,dragon king,מלך דרקונים
+EntityName,dread wraith,נזגול
 EntityName,dretch,דרץ'
 EntityName,drow,אלף אפל
 EntityName,dryad,דריאדה
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,מומיית גמד
 EntityName,dwarf thief,גנב גמד
 EntityName,dwarf warrior,לוחם גמד
 EntityName,dwarf zombie,זומבי גמד
-EntityName,Earendil,ארנדיל
 EntityName,earth binder,עוקד אדמה
 EntityName,earth elemental,יסודן אדמה
 EntityName,earth maker,יוצר אדמה
@@ -1227,7 +1330,6 @@ EntityName,elf king,מלך אלפים
 EntityName,elf lord,שר אלפים
 EntityName,elf mummy,מומיית אלף
 EntityName,elf zombie,זומבי אלף
-EntityName,Elwing,אלווינג
 EntityName,embalmer,חונט
 EntityName,emerald golem,גולם אזמרגד
 EntityName,energy vortex,מערבולת אנרגיה
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,זומבי אטין
 EntityName,exterminator,מדביר
 EntityName,fairy,פיה
 EntityName,Famine,רעב
+EntityName,Farwander,זוגפרח
 EntityName,Father Dagon,דגון
 EntityName,fiend,יצור תופת
 EntityName,fire ant,נמלת אש
@@ -1274,6 +1377,7 @@ EntityName,ghost,רוח רפאים
 EntityName,ghoul,גועל
 EntityName,ghoul mage,גועל קוסם
 EntityName,ghoul queen,מלכת גועלים
+EntityName,Ghuyaxil,יינוגו
 EntityName,giant,ענק
 EntityName,giant ant,נמלה ענקית
 EntityName,giant badger,גירית ענקית
@@ -1380,9 +1484,9 @@ EntityName,jackal,תן
 EntityName,jackalwere,תן-אדם
 EntityName,jaguar,יגואר
 EntityName,jellyfish,רכיכה ימית
+EntityName,Jharothy,תות אמון
 EntityName,jiggling blob,גוש רוטט
 EntityName,juggernaut,ג'אגרנוט
-EntityName,Juiblex,ג'ובלקס
 EntityName,juvenile raven,עורב צעיר
 EntityName,Kaloi Thrym,קאלוי תרים
 EntityName,kamadan,קמדאן
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,קובולד זומבי
 EntityName,komodo dragon,דרקון קומודו
 EntityName,kraken,קראקן
 EntityName,lamb,טלה
-EntityName,Lareth,לארת'
 EntityName,large cat,חתול גדול
 EntityName,large dingo,דינגו גדול
 EntityName,large dog,כלב גדול
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,ראש שבט אנשי לטאה
 EntityName,lizardman mage,איש לטאה קוסם
 EntityName,lizardman shaman,איש לטאה שאמן
 EntityName,lizardman warrior,איש לטאה לוחם
-EntityName,Lolth,לולת'
 EntityName,long worm,תולעת ארוכה
 EntityName,long worm tail,זנב תולעת ארוכה
 EntityName,Lord Carnarvon,הלורד קרנאבון
@@ -1481,7 +1583,6 @@ EntityName,mumak,מומאק
 EntityName,nabassu,נבסו
 EntityName,nalfeshnee,נלפשני
 EntityName,Nalzok,נלזוק
-EntityName,nazgul,נזגול
 EntityName,neanderthal,ניאנדרטל
 EntityName,Neferet,נפרת
 EntityName,newt,טריטון
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,נופריבו
 EntityName,nurse,אחות
 EntityName,occultist,מקובל
 EntityName,ochre jelly,ג'לי אוכרה
+EntityName,Oeziblegh,ג'ובלקס
 EntityName,ogre,עוג
 EntityName,ogre king,מלך עוגים
 EntityName,ogre lord,שר עוגים
 EntityName,ogre mage,עוג אשף
+EntityName,Oleyth,לארת'
 EntityName,olog-hai,אולוג-היי
 EntityName,Oracle,אורקל
 EntityName,orange jelly,ג’לי כתום
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,אורק לוחם
 EntityName,orc zombie,אורק זומבי
 EntityName,Orcus,אורקוס
 EntityName,Orion,אוריון
+EntityName,Orvalth,לולת'
 EntityName,owlbear,ינשודוב
 EntityName,pack rat,חולדה סוחרת
 EntityName,page,שליח
@@ -1550,6 +1654,7 @@ EntityName,rabbit,ארנבת
 EntityName,rabid rabbit,ארנבת חולה
 EntityName,rabid rat,חולדה חולה
 EntityName,rabid wolf,זאב חולה
+EntityName,Raedilan,ארנדיל
 EntityName,rancid jelly,ג’לי מצחין
 EntityName,rat king,מלך החולדות
 EntityName,ratwere,חולדת-אדם
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,גולם אודם
 EntityName,rust monster,מפלצת חלודה
 EntityName,rutterkin,רוטרקין
 EntityName,sabre-toothed cat,חתול שן-חרב
+EntityName,Sairou,אלווינג
 EntityName,salamander,סלמנדרה
 EntityName,sandestin,סנדסטין
 EntityName,sapphire golem,גולם ספיר
@@ -1629,15 +1735,14 @@ EntityName,student,תלמיד
 EntityName,succubus,סוקובוס
 EntityName,swamp kobold,קובולד ביצות
 EntityName,tengu,טנגו
-EntityName,Thorin,תורין
-EntityName,Thoth Amon,תות אמון
+EntityName,Tholmak,תורין
 EntityName,thug,בריון
 EntityName,tiger,טיגריס
 EntityName,tigerwere,טיגריס-אדם
 EntityName,titan,טיטאן
 EntityName,titanothere,ברונתותריום
 EntityName,topaz golem,גולם טופז
-EntityName,tortle,אישצב
+EntityName,tortle,מינצב
 EntityName,tracker,גשש
 EntityName,transmuter,תהפוכן
 EntityName,trapper,ממלכד
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,טרול מומיה
 EntityName,tsetse fly,זבוב צה צה
 EntityName,tunnel worm,תולעת מחילות
 EntityName,two-headed troll,טרול דו-ראשי
-EntityName,Twoflower,זוגפרח
 EntityName,umber hulk,תפלץ בצבע אדמה
 EntityName,undead slayer,קוטלת אל-מתים
 EntityName,vampire,ערפדית
@@ -1656,7 +1760,7 @@ EntityName,vampire king,מלך ערפדים
 EntityName,vampire lord,שר ערפדים
 EntityName,vampire mage,קוסם ערפד
 EntityName,Van Helsing,ואן הלסינג
-EntityName,Vecna,וקנה
+EntityName,Vercrux,וקנה
 EntityName,violet fungus,פטרייה בצבע לילך
 EntityName,vorpal jabberwock,פטעוני סרפילי
 EntityName,vrock,ורוק
@@ -1703,7 +1807,6 @@ EntityName,wumpus,וומפוס
 EntityName,wyvern,וייברן
 EntityName,xan,זאן
 EntityName,xorn,זורן
-EntityName,Yeenoghu,יינוגו
 EntityName,yellow jacket,צרעה צהובה
 EntityName,yellow jelly,ג’לי צהוב
 EntityName,yellow light,אור צהוב
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,ביטול של {AssetName}
 FormatText,{AssetName} was damaged by {ElementName},נזק {ElementName} נגרם ל{AssetName}
 FormatText,{AssetName} was destroyed by {ElementName},השמדה של {AssetName} על ידי {ElementName}
 FormatText,{AssetName} was disintegrated,פירוק של {AssetName}
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},הראש של {Defender:CharacterName} נערף על ידי {Attacker:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},הפחדה למוות של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},הרג של {Defender:CharacterName} על ידי {Attacker:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},חרטה של {Attacker:CharacterName} על מה שקרה ל{Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,עוינות פתאומית של {Defender:CharacterName} כלפי {Attacker:CharacterName}!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,עוינות פתאומית של {Attacker:CharacterName} כלפי {Defender:CharacterName}!
-FormatText,{Base} in {Range},{Base} ב{Range}
 FormatText,{BeamName} beam,קרן {BeamName}
 FormatText,{BlockName} was disintegrated,פירוק של {BlockName}
 FormatText,{BoonName} which direction?,{BoonName} לאיזה כיוון?
 FormatText,{BoonName} which item?,{BoonName} לאיזה חפץ?
 FormatText,{Chance} {Count} {Entities},{Entities} {Count} {Chance}
+FormatText,{Chance} chance:,כאשר {Chance}
 FormatText,{Chance} leaves corpse,{Chance} תישאר גופה
 FormatText,{Chance} per room,{Chance} לחדר
 FormatText,{Chance} react to {ElementName},{Chance} תגובה ל{ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{FixtureName} {MotionP
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{With:AssetName} {MotionPastName} על ידי {CharacterName} ב{Use:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{With:AssetName} {MotionPastName} על ידי {CharacterName} ב{Use:FixtureName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{TraversalPastName} של {CharacterName} אל {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{MotionPastName} ב{AssetName} במיומנות על ידי {CharacterName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{MotionPastName} ב{Use:AssetName} עם {With:AssetName} במיומנות על ידי {CharacterName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} עולה לרמה {LevelNumber}
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},�
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},גניבה מ{Victim:CharacterName} על ידי {Thief:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} ק''ג
 FormatText,{WeightUnits} lbs,{WeightUnits} פאונד
-FormatText,after reaching dungeon level {RecordDepth},עומק מירבי של {RecordDepth} קומות
+FormatText,after reaching depth {RecordDepth},עומק מירבי של {RecordDepth} קומות
 FormatText,animate {CharacterName},החייאה של {CharacterName}
 FormatText,boost {AttributeName} by enchantment,שיפור {AttributeName} בקסם
 FormatText,break {FeatureName},שבירה של {FeatureName}
@@ -1998,13 +2103,12 @@ FormatText,levels {From}-{To},קומות {From}-{To}
 FormatText,levels {Number}+,קומות{Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} נעול
 FormatText,lose {PropertyName} talent,איבוד כישור {PropertyName}
-FormatText,not {EffectProperty},לא {EffectProperty}
 FormatText,polymorph into {EntityNames},שינוי צורה {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},הקמת מתים {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},טווח {Dice}
 FormatText,RANKED #{RankNumber},מקום {RankNumber}
 FormatText,remove transient {PropertyNames},הסרת מצב זמני {PropertyNames}
-FormatText,"Resurrected {CharacterName}, {CharacterDescription}","קימה לתחייה של {CharacterName} ,{CharacterDescription}"
+FormatText,"Resurrected {CharacterName}, {CharacterDescription}","קימה לתחייה של {CharacterName}, {CharacterDescription}"
 FormatText,retaliate {Chance} {AttackType},נקמה {AttackType} {Chance}
 FormatText,retaliate {Chance} on death {AttackType},נקמה {Chance} על מוות מ{AttackType}
 FormatText,retaliate {Chance} on hit {AttackType},נקמה {Chance} על פגיעה של {AttackType}
@@ -2013,7 +2117,7 @@ FormatText,sanctify {ItemName} as {SanctityName},קידוש {ItemName} {Sanctity
 FormatText,shoot {ItemName} {ElementName} {DamageDice},פגיעה של {DamageDice} מירייה של {ElementName} מ{ItemName}
 FormatText,stuck {DurationDice},אי אפשר לזוז {DurationDice}
 FormatText,The {FixtureName} released an explosion of {ExplosionName} energy!,פיצוץ אנרגיה של {ExplosionName} השתחרר מה{FixtureName}!
-FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,המעשה האפל הזה יעלה לך את בכל נקודות התהילה שצברת עד עכשיו. בכל זאת להקים לתחייה את {CharacterName}?
+FormatText,This dark act will cost you all your fame to this point. Are you sure you want to resurrect {CharacterName}?,המעשה האפל הזה יעלה לך בכל נקודות התהילה שצברת עד עכשיו. בכל זאת להקים לתחייה את {CharacterName}?
 FormatText,Throw {AssetName} which direction?,באיזה כיוון לזרוק את ה{AssetName}?
 FormatText,TOO {AttributeBad},יותר מדי {AttributeBad}
 FormatText,transient {PropertyName} {DurationDice},{PropertyName} {DurationDice} באופן זמני
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,הפעלה למשך {Dice} פעמים
 FormatText,unless resists {ElementName},אלא אם יש עמידות ל{ElementName}
 FormatText,unless target has {PropertyName},אלא אם למטרה יש {PropertyName}
 FormatText,versus {Something},נגד {Something}
-FormatText,when {Chance},כאשר {Chance}
 FormatText,when {GROUNDNAME},כאשר {GROUNDNAME}
 FormatText,when {ITEMNAME},כאשר {ITEMNAME}
-FormatText,when {KINDNAMES},כאשר {KINDNAMES}
 FormatText,when {MATERIALNAME},כאשר {MATERIALNAME}
 FormatText,when {PROPERTYNAME},כאשר {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},כאשר {SANCTITYNAME}
 FormatText,when {Something},כאשר {Something}
 FormatText,when {STANDINGNAME},כאשר {STANDINGNAME}
 FormatText,when resists {ElementName},כאשר יש עמידות ל{ElementName}
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,הדלת הכבדה הזאת עשויה מגבישי בדולח קשים ולא ניזוקה בקלות.
 GateName,crystal door,דלת בדולח
 GateName,gold door,דלת זהב
@@ -2051,15 +2159,17 @@ GenderName,neuter,ללא
 GenderName,non-binary,אבינארי.ת
 GenerationType,module,מודול
 GenerationType,quest,קווסט
+GenerationType,workshop,
 GradeName,artifact,חפץ קסום
 GradeName,exotic,אקזוטי
 GradeName,standard,רגיל
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,משטח האבן הקריר עשוי ביד אומן אבל הפגיעות והזמן הותירו בו חותם.
 GroundName,cave floor,רצפת מערה
 GroundName,chasm,תהום
 GroundName,dirt,אבק
 GroundName,gold floor,רצפת זהב
-GroundName,granite floor,רצפת גרניט
+GroundName,granite floor,רצפת שחם
 GroundName,grass,עשב
 GroundName,hive floor,רצפת כוורת
 GroundName,ice,קרח
@@ -2165,7 +2275,7 @@ ItemDescription,"A semi-rigid weapon made up of a notched wooden shaft with a dr
 ItemDescription,A sharp iron wedge fashioned to a sturdy handle.,טריז ברזל חד שמחובר לידית קשיחה.
 ItemDescription,"A sharp metal throwing weapon, smaller than a hand and shaped like a star.","נשק השלכה חד ממתכת, קטן יותר מכף יד ומעוצב בצורת כוכב."
 ItemDescription,A short and light double-edged blade.,להב כפול קצר וקל.
-ItemDescription,"A slimy, scaly sea creature, in its entirety. Good for a meal.","ייצור ים מרופש וקשקשי, שלם. ארוחה טובה."
+ItemDescription,"A slimy, scaly sea creature, in its entirety. Good for a meal.","יצור ים מרופש וקשקשי, שלם. ארוחה טובה."
 ItemDescription,A small cutting utensil made of metal with a wooden handle.,מתקן חיתוך קטן עשוי ממתכת ובעל ידית מעץ.
 ItemDescription,A small iron tool designed for opening all sorts of locks.,"כלי קטן מברזל, שנועד לפתוח כל מיני סוגים של מנעולים."
 ItemDescription,A small missile with a pointed tip meant for throwing.,טיל קטן עם קצה מחודד שנועד להשלכה.
@@ -2197,7 +2307,7 @@ ItemDescription,An elven travel food. It is incredibly satiating.,מזון מס�
 ItemDescription,An extremely sharp little blade used for precise incisions.,להב קטן ומאוד חד שמשמש לחתכים מדוייקים.
 ItemDescription,An inconspicuous snack that tells deep secrets.,חטיף תמים למראה שמגלה סודות גנוזים.
 ItemDescription,An iron projectile made up of a shaft with a sharpened square-pyramid tip.,קליע ברזל שכולל מוט וקצה מחודד דמוי-פירמידה.
-ItemDescription,"An orange root-vegetable, commonly believed to improve eyesight.","ירק שורש כתום, שהרבה אנשים מאמינים שמשפר את הראייה."
+ItemDescription,"An orange root-vegetable, commonly believed to improve eyesight.","ירק שורש כתום, שנהוג לחשוב שהוא משפר את הראייה."
 ItemDescription,"Boiled leather, moulded into a bodily shape to be donned as light armour.","עור מעובד, מעוצב לצורת גוף כדי לשמש כשריון קל."
 ItemDescription,"Bold, or just tacky?",נועז או סתם עלוב?
 ItemDescription,Chain mail consists of a mesh of metal rings interlinked to form a flexible armour.,שריון שרשראות שעשוי מרשת טבעות מתכת שחוברו ביחד כדי ליצור שריון גמיש.
@@ -2229,7 +2339,7 @@ ItemDescription,This high-quality elven manufactured dagger is perfectly weighte
 ItemDescription,This is a curved blade put atop a long pole. The blade is moderately curved along its length with the cutting edge only on the concave side.,זה להב מעוקל שמורכב בראש מוט ארוך. העיקול של הלהב מתוך לכל אורכו והחלק החותך נמצא בצד הקעור.
 ItemDescription,This is a light spear designed to be thrown by hand.,זאת חנית קלה שנועדה להשלכה ביד.
 ItemDescription,This is a pole weapon consisting of a modified hammer head and spike mounted atop a long pole.,זה נשק מוט שכולל ראש פטיש ודורבן שהותאמו לקצה של מוט ארוך.
-ItemDescription,"This is a pole weapon with a long, cleaver type blade.","זה משק מוט עם להב ארוך, דמוי סכין קצבים."
+ItemDescription,"This is a pole weapon with a long, cleaver type blade.","זה נשק מוט עם להב ארוך, דמוי סכין קצבים."
 ItemDescription,This is a potion of pure magical energy which will restore and increase your mana.,זה שיקוי שמכיל אנרגיית קסם טהורה והוא ישחזר ויעלה את נקודות הקסם שלך.
 ItemDescription,This is a sharp and curved single-edged blade with a circular guard and long grip.,זה להב יחיד מעוקל עם מגן עגול וידית אחיזה ארוכה.
 ItemDescription,This is a sword weapon with a long curved design.,זאת חרב מעוצבת ארוכה ומעוקלת.
@@ -2243,7 +2353,7 @@ ItemDescription,This ring augments the damage caused by your strikes,הטבעת 
 ItemDescription,"This tool is used for digging and chopping, similar to the pick-axe. It has a long handle and a stout head, which combines an axe blade and an adze. It can also be used as an effective melee weapon.","הכלי הזה משמש לחפירה ולקיצוץ, בדומה למכוש. יש לו ידית ארוכה וראש מוצק, משהו בין להב גרזן לקרדום. הוא יכול לשמש גם כנשק יעיל בקרב פנים אל פנים."
 ItemDescription,This utility scroll restores some of the charges to your spent wands and tools.,המגילה השימושית הזאת יכולה לטעון מחדש את השרביטים והכלים שלך.
 ItemDescription,"This weapon consists of a hooked chopping blade with several pointed projections mounted on a staff. The end of the cutting blade curves forward to form a hook. In addition, the blade has one pronounced spike straight off the top like a spear head and also a hook or spike mounted on the reverse side of the blade.","הנשק הזה כולל להב קיצוץ מאונקל וכמה חודים בולטים שמורכבים על מטה. קצה הלהב מתעקל ויוצר קרס. בנוסף, בקצה העליון מחובר דורבן חד דמוי חנית, וקרס או דורבן מחוברים גם לצד הנגדי של הלהב."
-ItemDescription,This weapon consists of a large blade on the end of a long pole. The blade is affixed in a socket-shaft configuration similar to an axe head.,הנשק הזה הוא להב גדול בקצה של מוט ארוך. הלהב מחובר בתצורת ידית-בשקע שמזכירה ראש של פטיש.
+ItemDescription,This weapon consists of a large blade on the end of a long pole. The blade is affixed in a socket-shaft configuration similar to an axe head.,הנשק הזה הוא להב גדול בקצה של מוט ארוך. הלהב מחובר בתצורת ידית-בשקע שמזכירה ראש של גרזן.
 ItemDescription,This weapon consists of a long pole with a mounted a spear head and two projections at its base.,הנשק הזה הוא מוט ארוך שעליו רכוב ראש חנית ומבסיסו מזדקרים שני חודים.
 ItemDescription,This weapon consists of a single-edged blade on the end of a pole.,הנשק הזה הוא להב יחיד שמורכב בקצה מוט.
 ItemDescription,This weapon consists of a spearhead mounted on a long wooden shaft with protrusions on the sides which aided in parrying sword thrusts.,הנשק הזה הוא ראש של חנית שמורכב על קורת עץ ארוכה עם שקעים בצדדים שמסייעים בהנפה ובנעיצה של החרב.
@@ -2252,24 +2362,24 @@ ItemDescription,This withered hand is the last remnant of an ancient and powerfu
 ItemDescription,Tiny metal spikes thrown to the ground to impede mobility.,דורבנות מתכת זעירים שמושלכים על הקרקע כדי לפגוע ביכולת התנועה.
 ItemDescription,Winged sandals made of imperishable gold which fly the wearer swiftly and silently.,סנדלים מכונפים שעשויים מזהב לא מתכלה שמטיסים את הנועלים אותם במהירות ובשקט.
 ItemDescription,Zapping it at a wall creates a big tunnel.,"אם יורים אותו אל קיר, הוא יוצר מנהרה גדולה."
-ItemName,adamantine arrow,חץ אדמנטיט
-ItemName,adamantine axe,גרזן אדמנטיט
-ItemName,adamantine bident,דו-שן אדמנטיט
-ItemName,adamantine bow,קשת אדמנטיט
-ItemName,adamantine bullet,כדור אדמנטיט
-ItemName,adamantine dagger,פגיון אדמנטיט
-ItemName,adamantine dart,חץ מטרה מאדמנטיט
+ItemName,adamantine arrow,חץ אדמנטין
+ItemName,adamantine axe,גרזן אדמנטין
+ItemName,adamantine bident,דו-שן אדמנטין
+ItemName,adamantine bow,קשת אדמנטין
+ItemName,adamantine bullet,כדור אדמנטין
+ItemName,adamantine dagger,פגיון אדמנטין
+ItemName,adamantine dart,חץ מטרה מאדמנטין
 ItemName,adamantine greataxe,גרזן אדיר
 ItemName,adamantine greatsword,חרב אדירה
-ItemName,adamantine hatchet,קרדום אדמנטיט
-ItemName,adamantine long sword,חרב ארוכה מאדמנטיט
-ItemName,adamantine plate mail,שריון לוחות מאדמנטיט
-ItemName,adamantine rapier,רפייר אדמנטיט
-ItemName,adamantine sabre,סייף פרשים מאדמנטייט
-ItemName,adamantine short sword,חרב קצרה מאדמנטיט
-ItemName,adamantine spear,חנית אדמנטיט
-ItemName,adamantine two-handed sword,חרב דו-ידנית מאדמנטיט
-ItemName,agate,ברקת
+ItemName,adamantine hatchet,קרדום אדמנטין
+ItemName,adamantine long sword,חרב ארוכה מאדמנטין
+ItemName,adamantine plate mail,שריון לוחות מאדמנטין
+ItemName,adamantine rapier,רפייר אדמנטין
+ItemName,adamantine sabre,סייף פרשים מאדמנטיין
+ItemName,adamantine short sword,חרב קצרה מאדמנטין
+ItemName,adamantine spear,חנית אדמנטין
+ItemName,adamantine two-handed sword,חרב דו-ידנית מאדמנטין
+ItemName,agate,אגט
 ItemName,aklys,פילוס
 ItemName,alchemy smock,חלוק אלכימיה
 ItemName,amber,ענבר
@@ -2504,7 +2614,9 @@ ItemName,glaive,כילף
 ItemName,gold coin,מטבע זהב
 ItemName,gold dragon scale mail,שריון קשקשי דרקון זהובים
 ItemName,gold dragon scales,קשקשי דרקון זהובים
+ItemName,gold flail,
 ItemName,Gold Key,מפתח זהב
+ItemName,gold plate mail,
 ItemName,great dagger,פגיון אדיר
 ItemName,green dragon scale mail,שריון קשקשי דרקון ירוקים
 ItemName,green dragon scales,קשקשי דרקון ירוקים
@@ -2926,7 +3038,7 @@ ItemType,rock,אבן
 ItemType,scroll,מגילה
 ItemType,shield,מגן
 ItemType,shirt,חולצה
-ItemType,skeleton key,מפתח גנבים
+ItemType,skeleton key,מפתח מאסטר
 ItemType,specific key,מפתח מיוחד
 ItemType,suit,חליפה
 ItemType,thrown weapon,נשק להשלכה
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!מצב מאסטר!
 LiteralText,(2d6 instead of 2-12),(שתי קוביות של 6 במקום 2-12)
 LiteralText,(game information status text),(טקסט מידע על המשחק)
 LiteralText,(not eligible for hall of fame),(מונע כניסה להיכל התהילה)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(מומלץ למסכי אמולד)
 LiteralText,(SUPPRESSED),(מוסתר)
 LiteralText,[MASTER],[מאסטר]
-LiteralText,abolition of firearms,הקץ לנשק
+LiteralText,Abolition of firearms,הקץ לנשק
 LiteralText,ABOUT,על אודות
-LiteralText,About Pathos,על אודות פאתוס
-LiteralText,accelerated resting,מנוחה מואצת
+LiteralText,Accelerated resting,מנוחה מואצת
+LiteralText,Achievements,
 LiteralText,actions,פעולות
 LiteralText,ADD LEVEL,הוספת רמה
 LiteralText,Add new adventurer,הוספת דמות חדשה
@@ -3025,16 +3138,17 @@ LiteralText,alias?,כינוי?
 LiteralText,ALL,הכל
 LiteralText,ALL AT ONCE,הכל בבת אחת
 LiteralText,all kind,כל הסוגים
+LiteralText,all levels,
 LiteralText,always,תמיד
-LiteralText,AMBIENT SOUNDS,צלילי אווירה
 LiteralText,amnesia,שיכחון
 LiteralText,AMNESIA,שיכחון
 LiteralText,anatomy,מבנה גוף
 LiteralText,animate mount,החייאת מערום
 LiteralText,animate revenant,החייאת רוח נקם
-LiteralText,ANNOUNCEMENT,
+LiteralText,ANNOUNCEMENT,הכרזה
 LiteralText,ANONYMOUS,באלמוניות
 LiteralText,anticlockwise 90 degrees,תשעים מעלות נגד כיוון השעון
+LiteralText,antique art,
 LiteralText,any item,כל חפץ
 LiteralText,APPLICATION FILES,קבצי צרות
 LiteralText,Are you sure you want to end your adventure?,באמת רוצה לסיים את ההרפתקה הזאת?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,באמת?
 LiteralText,area of effect,אזור ההשפעה
 LiteralText,area transient,מוגבל לאיזור
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,חפצי כוח
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,עלייה לקומה הקודמת
 LiteralText,assess item,הערכה
 LiteralText,assets,נכסים
 LiteralText,ATMOSPHERE,אווירה
 LiteralText,attack modifier,שינוי כוח התקפה
 LiteralText,Attack which direction?,באיזה כיוון לתקוף?
-LiteralText,attack//noun,התקפה
-LiteralText,ATTACK//noun,התקפה
-LiteralText,attack//verb,לתקוף
-LiteralText,ATTACK//verb,לתקוף
+LiteralText,Attack//noun,התקפה
+LiteralText,Attack//verb,לתקוף
 LiteralText,attacks,תקיפות
+LiteralText,AUDIO,
 LiteralText,AUTO,אוטומטי
 LiteralText,auto saving,שמירה אוטומטית
+LiteralText,avatar,
 LiteralText,AWAKE,התעוררות
-LiteralText,BACK,חזרה
 LiteralText,backfire,אש חוזרת
 LiteralText,barrier,מחסום
 LiteralText,BARRIERS,מחסומים
 LiteralText,bazaar,חנות
 LiteralText,Begin the adventure,להתחיל בהרפתקה
 LiteralText,beholds,בוהה
-LiteralText,beta discussions,דיוני בטא
 LiteralText,Black background,רקע שחור
 LiteralText,blasphemy,חילול השם
-LiteralText,BLINK,בזיקה
+LiteralText,Blink,בזיקה
 LiteralText,blink entity,בזיקה
 LiteralText,Blink which direction?,לאיזה כיוון לבזוק?
 LiteralText,block,חסימה
 LiteralText,BLOCKED,חסום
 LiteralText,BLOCKS,חסמים
-LiteralText,BOONS,ברכות
+LiteralText,Boons,ברכות
 LiteralText,boost attack by enchantment,קסם מחזק התקפה
 LiteralText,boost damage by enchantment,קסם מחזק נזק
 LiteralText,boost defence by enchantment,קסם מחזק הגנה
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,אי אפשר לראות
 LiteralText,CAN'T SLIDE,אי אפשר להחליק
 LiteralText,CAN'T TELEKINESIS,אי אפשר לעשות טלקינזיס
 LiteralText,CAN'T THROW,אי אפשר לזרוק
-LiteralText,CANCEL,ביטול
+LiteralText,Cancel,ביטול
 LiteralText,cancellation,ביטול
 LiteralText,CANCELLED,בוטל
 LiteralText,capture any entity,לכידה
@@ -3105,13 +3219,12 @@ LiteralText,Cast,קסם
 LiteralText,CAST SPELLS,הטלת קסם
 LiteralText,challenge,הסתערות
 LiteralText,CHAMPION,אליפות
+LiteralText,Change,
 LiteralText,Character,דמות
-LiteralText,CHARACTER,דמות
 LiteralText,charged items,חפצים טעונים
-LiteralText,Chat on Discord,לדבר בדיסקורד
 LiteralText,check for updates?,לבדוק עדכונים?
 LiteralText,checking for updates,בודק עדכונים
-LiteralText,CHOOSE,בחירה
+LiteralText,Choose,בחירה
 LiteralText,Choose your quick action,אפשר לבחור פעולה מהירה
 LiteralText,class,מקצוע
 LiteralText,CLASSES,מקצועות
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,לנסות שוב
 LiteralText,Click to send detected issues to the author,לדווח לכותב המשחק על בעיות
 LiteralText,clone source entity,שיבוט דמות מקור
 LiteralText,clone target entity,שיבוט דמות מטרה
-LiteralText,CLOSE,לסגור
+LiteralText,Close,לסגור
 LiteralText,closed,סגור
-LiteralText,Coding on Medium,לדבר על תכנות במדיום
 LiteralText,coins,מטבעות
-LiteralText,COMMAND,
+LiteralText,Command,פקודה
+LiteralText,Community,
 LiteralText,companion,מלווה
 LiteralText,compression,דחיסה
-LiteralText,CONCEAL,להסוות
+LiteralText,Conceal,להסוות
 LiteralText,CONCEALED,מוסווה
 LiteralText,concealing,התחבאות
 LiteralText,CONDUCT,התנהגות
-LiteralText,CONFIRM,אישור
+LiteralText,Confirm,אישור
+LiteralText,Connect,
 LiteralText,connect portal,מגע במעבר
 LiteralText,Connect to game hosted by another player.,חיבור למשחק של שחקנית או שחקן אחרים.
-LiteralText,CONSOLE,קונסולה
+LiteralText,Console,קונסולה
 LiteralText,constructed,בבניה
-LiteralText,CONTACT,קשר
 LiteralText,Continue,להמשיך
 LiteralText,CONTINUE,להמשיך
 LiteralText,CONTROLLED,שליטה
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,המרת סלע
 LiteralText,conveyance,העברה
 LiteralText,COPY,להעתיק
 LiteralText,corpse,גופת
 LiteralText,CRACK!,קראק!
-LiteralText,craft,ליצור
-LiteralText,CRAFT,ליצור
+LiteralText,Craft,ליצור
 LiteralText,Craft which item?,איזה חפץ ליצור?
 LiteralText,CRASH APP!,האפליקציה קרסה!
 LiteralText,CRASH!,קריסה!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,ליצור באיזה כיוון?
 LiteralText,CREDITS,קרדיטים
 LiteralText,CROP,חיתוך
 LiteralText,CURSED,עם קללה
-LiteralText,CUSTOM,התאמה אישית
 LiteralText,CUSTOM HERO,התאמה אישית של גיבור או גיבורה
 LiteralText,CUSTOM MODULES,התאמה אישית של מודולים
-LiteralText,damage,
-LiteralText,DAMAGE,
+LiteralText,customise controls,
+LiteralText,damage,נזק
+LiteralText,DAMAGE,נזק
 LiteralText,dark,חושך
+LiteralText,Darken area,
 LiteralText,DEAD END,מבוי סתום
 LiteralText,death,מוות
 LiteralText,deathray,קרן מוות
 LiteralText,decapitate entity,עריפה
 LiteralText,decapitation,כריתת ראש
 LiteralText,DECEASED,ז''ל
-LiteralText,decelerated real-time,זמן אמיתי מואט
+LiteralText,Decelerated real-time,זמן אמיתי מואט
 LiteralText,DECREASE,פחות
 LiteralText,defence,הגנה
 LiteralText,DEFENCE,הגנה
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,למחוק
 LiteralText,delete this level,למחוק את הקומה הזאת
 LiteralText,DEMOTE,להוריד רמה
 LiteralText,depth,עומק
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,ירידה לקומה הבאה
 LiteralText,destination,יעד
 LiteralText,destroy,להשמיד
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,לא בהיכל התהילה
 LiteralText,diet,תזונה
 LiteralText,difficulty,קושי
 LiteralText,digging,לחפור
-LiteralText,disable ambient sounds,ביטול צלילי רקע
+LiteralText,Disable ambient sounds,ביטול צלילי רקע
 LiteralText,Disable auto save on transition,ביטול שמירה אוטומטית במעבר
+LiteralText,Disable automatic camera,מצב מסך עוקב חופשי
 LiteralText,Disable button tap sounds,ביטול צלילי לחצנים
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,ביטול צליל סיום
 LiteralText,Disable continue button,ביטול לחצן המשך
-LiteralText,disable haptic feedback,ביטול רטט
+LiteralText,Disable haptic feedback,ביטול רטט
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,ביטול אנימציה במנוחה
 LiteralText,Disable introduction boom,ביטול צליל התחלה
+LiteralText,Disable manual zoom,מצב נעילת מרחק תצוגה
 LiteralText,Disable mask animations,ביטול שכבות אנימציה
 LiteralText,Disable online services,ביטול שירותי אונליין
 LiteralText,Disable pitch shifting,ביטול שינוי גובה הצליל
-LiteralText,Disable radial quick menu,
-LiteralText,Disable side quick menus,
+LiteralText,Disable processing rate limit,
+LiteralText,Disable radial quick menu,ביטול תפריט מעגלי מהיר
+LiteralText,Disable side quick menus,ביטול תפריטים מהירים בצדדים
 LiteralText,Disable spacebar real-time toggle,ביטול שימוש במקש הרווח בזמן אמיתי
 LiteralText,Disable swipe gestures,ביטול תנועות החלקה
-LiteralText,Disable Zeroth announcement,
+LiteralText,Disable tutorial,
+LiteralText,Disable Zeroth announcement,ביטול הכרזה על זירות'
 LiteralText,disarm entity,ניטרול נשק
-LiteralText,DISCONNECT,ניתוק
+LiteralText,Disconnect,ניתוק
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,זוהה ניתוק. יש לבדוק שחיבור הרשת שלך אמין ושכל המכשירים משתמשים באותה גרסה של פאתוס.
 LiteralText,discover item,הארה
-LiteralText,Discuss on Reddit,לדבר ברדיט
+LiteralText,discoveries,
 LiteralText,disenchant item,הסרת קסם
 LiteralText,dismantle items to extract the base materials and raw essence,לפרק חפצים כדי להוציא מהם את חומרי הבסיס ומהות החפץ
-LiteralText,DISMISS,ביטול
-LiteralText,DISMOUNT,לרדת
+LiteralText,Dismiss,ביטול
+LiteralText,Dismount,לרדת
 LiteralText,Dismount which direction?,לאיזה כיוון לרדת?
 LiteralText,Display dice rolls in the help,להציג גלגולי קובייה בעזרה
+LiteralText,Display full screen,
 LiteralText,distribution,תכונות
 LiteralText,divine item,ניחוש
 LiteralText,DIVINED,ניחוש מצב
 LiteralText,divined items,מצב ברכות וקללות ידוע
 LiteralText,Do you want to save or quit this adventure?,רוצה לשמור או לצאת מההרפתקה הזאת?
 LiteralText,domestic,חיה מבוייתת
-LiteralText,DONATE,תרומה
+LiteralText,Donate,תרומה
 LiteralText,Donate to say thanks,תרומה כדי להגיד תודה
 LiteralText,DOOR,דלת
 LiteralText,double damage when mounted,פגיעה כפולה ברכיבה
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,שינמוך ל
 LiteralText,downloading update,הורדת עדכון
 LiteralText,drain item,שאיבת חפץ
-LiteralText,drop,להפיל
-LiteralText,DROP,להפיל
+LiteralText,Drop,להפיל
 LiteralText,DUAL WIELD,נשק ביד השנייה
 LiteralText,duration,משך
+LiteralText,Eat,
 LiteralText,edible items,דברים אכילים
 LiteralText,egg,ביצת
 LiteralText,else,אחרת
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,סף נשיאה
 LiteralText,End this adventure,סיום ההרפתקה הזאת
 LiteralText,ended,סיום
 LiteralText,engulf entity,עיטוף
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,כמה?
 LiteralText,ENTITIES,ישויות
 LiteralText,entity,ישות
 LiteralText,entropy accidents,תאונות אנטרופיה
-LiteralText,EQUIP,להצטייד
-LiteralText,equipped,עם ציוד
+LiteralText,Equip,להצטייד
+LiteralText,equipment,עם ציוד
 LiteralText,ESCAPE,לברוח
 LiteralText,escape traps,לחמוק ממלכודות
 LiteralText,escape with,לברוח עם
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,עסקה
 LiteralText,exchange entity,עסקה
 LiteralText,EXIT PATHOS,יציאה מפאתוס
 LiteralText,EXPAND,להרחיב
-LiteralText,EXPEL,לגרש
+LiteralText,Expel,לגרש
 LiteralText,experience,ניסיון
 LiteralText,EXPERIENCE,ניסיון
 LiteralText,explosion,פיצוץ
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,לוגים של תקלות
 LiteralText,feats,התקפים
 LiteralText,feature,מאפיין
 LiteralText,FEATURES,מאפיינים
-LiteralText,FEED,להאכיל
+LiteralText,Feed,להאכיל
 LiteralText,FEEDBACK,משוב
 LiteralText,Feedback information,מידע מהמשוב
 LiteralText,FILES,קבצים
@@ -3306,26 +3433,28 @@ LiteralText,fixed,מקובע
 LiteralText,fixed range,טווח קבוע
 LiteralText,FIZZLE,קול תסיסה
 LiteralText,Floor,רצפה
-LiteralText,FOLLOW,מעקב
-LiteralText,Follow me on Twitter,לעקוב אחריי בטוויטר
-LiteralText,free panning mode,מצב מסך עוקב חופשי
+LiteralText,Follow,מעקב
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,פחד
 LiteralText,fumbling,מעידה
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,תוספת קארמה
 LiteralText,gain level,עליית רמה
 LiteralText,GAIN LEVEL,תוספת רמה
 LiteralText,gain nutrition,תוספת תזונה
 LiteralText,gain skill,תוספת כישורים
+LiteralText,GAMEPLAY,
 LiteralText,gate,שער
 LiteralText,gates,שערים
 LiteralText,gather,איסוף
 LiteralText,gender,מגדר
 LiteralText,genocide,רצח עם
-LiteralText,GENOCIDE,רצח עם
 LiteralText,GIVE,לתת
 LiteralText,GIVE ALL,לתת הכל
+LiteralText,GLOBAL,עולם
 LiteralText,GLYPHS,גליפים
-LiteralText,GOD MODE,
+LiteralText,GOD MODE,מצב אל
 LiteralText,gold,זהב
 LiteralText,GOLD,זהב
 LiteralText,GRAPHICS,גרפיקה
@@ -3342,25 +3471,24 @@ LiteralText,hatch egg,דגירה
 LiteralText,hatched by,הוטלה על ידי
 LiteralText,Having trouble finding the stairs down to the next level?,מתקשה למצוא את המדרגות היורדות אל הקומה הבאה?
 LiteralText,Help,עזרה
-LiteralText,HELP,עזרה
 LiteralText,HIDDEN,במצב נסתר
-LiteralText,HIDE,להסתיר
+LiteralText,Hide,להסתיר
 LiteralText,hiding,להסתתר
 LiteralText,HINT,רמז
-LiteralText,HIRE,להעסיק
+LiteralText,Hire,להעסיק
+LiteralText,HJKL directional keys,
 LiteralText,horde,נחיל
 LiteralText,HORDES,נחילים
 LiteralText,HOST,מארח
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","יחד עם זאת, אולי עדיף לך להשלים את ההרפתקה לפני קבלת העדכון."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,אני מקווה שנהנית מההרפתקאות שלך עד כה ותמיד אפשר ליצור איתי קשר למשוב והצעות.
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
-LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","אני מפתח משחק חדש בשם זירות', משחק פלסטפורמה מסוג רוג-לייק, שמבוסס על המכניקה של פאתוס. כאן אפשר למצוא עוד מידע עליו."
+LiteralText,I'm developing a new game called ZEROTH!,אני מפתח משחק חדש בשם זירות'!
 LiteralText,identified items,חפצים שזוהו
-LiteralText,identify all items,זיהוי כולם
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,זיהוי כל החפצים בקומה
-LiteralText,identify one item,זיהוי אחד
-LiteralText,ILLITERATE,במצב אנלפביתי
+LiteralText,Identify all items,זיהוי כולם
+LiteralText,Identify one item,זיהוי אחד
+LiteralText,identity,
+LiteralText,ILLITERATE,ללא יכולת לקרוא
 LiteralText,illusion,אשליה
 LiteralText,ILLUSION,אשליה
 LiteralText,immune to,חסינות ל
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,כליאה
 LiteralText,incarceration,כליאה
 LiteralText,INCREASE,יותר
 LiteralText,INDEX,אינדקס
-LiteralText,individual crafting,יצירה בודדת
+LiteralText,Individual crafting,יצירה בודדת
 LiteralText,infinite quantity,כמות אינסופית
 LiteralText,influenced actions,פעולות מושפעות
 LiteralText,INSCRIBE,לכתוב
 LiteralText,INSCRIBE ITEM,לכתוב על פריט
 LiteralText,inscription?,כתובת?
-LiteralText,instruct each character,הוראות לכל אחת מהדמויות
+LiteralText,Inspect,
+LiteralText,Instruct each character,הוראות לכל אחת מהדמויות
 LiteralText,INSUFFICIENT GOLD,אין לך מספיק זהב
+LiteralText,INTERFACE,
 LiteralText,Inventory,רשימת מלאי
-LiteralText,INVENTORY,רשימת מלאי
-LiteralText,ITEM,פריט
-LiteralText,items,פריטים
+LiteralText,Item,פריט
 LiteralText,ITEMS,פריטים
 LiteralText,JOIN,להצטרף
 LiteralText,Journal,יומן
 LiteralText,JOURNAL,יומן
-LiteralText,JUMP,לקפוץ
+LiteralText,Jump,לקפוץ
 LiteralText,Jump which direction?,לאיזה כיוון לקפוץ?
 LiteralText,karma,קארמה
 LiteralText,KARMA,קארמה
 LiteralText,key?,מפתח?
+LiteralText,Keyboard,
+LiteralText,Kick,לבעוט
 LiteralText,Kick which direction?,באיזה כיוון לבעוט?
-LiteralText,KICK!,לבעוט!
 LiteralText,kills,הריגות
 LiteralText,kit,ערכה
-LiteralText,KNOWLEDGE,ידע
+LiteralText,Knowledge,ידע
 LiteralText,LANGUAGE,שפה
-LiteralText,LEARN ALL SPELLS,לימוד כל הקסמים
+LiteralText,Learn all spells,לימוד כל הקסמים
 LiteralText,learn spells,לימוד קסמים
-LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,לימוד חוקי המשחק דרך סדרת מיתות קורעת מצחוק כדי להדריך את הגיבורים והגיבורות שלך בדרכם להימלט מהמעגל אפס של השה-אולל.
+LiteralText,Left,
 LiteralText,LEFT RING,טבעת שמאל
 LiteralText,LEVEL CHART,תרשים הקומה
 LiteralText,level//rank,רמה
@@ -3414,20 +3544,19 @@ LiteralText,life,חיים
 LiteralText,LIFE,חיים
 LiteralText,Life represents your physical health and death occurs at zero.,נקודות החיים מייצגות את הבריאות הגופנית שלך ובאפס מגיע המוות.
 LiteralText,light,אור
-LiteralText,LIGHT,אור
 LiteralText,light radius,רדיוס האור
+LiteralText,Lighten area,
 LiteralText,limits,גבולות
 LiteralText,LIST,רשימה
 LiteralText,lit,במצב מואר
 LiteralText,LIVING,בחיים
 LiteralText,loading,טעינה
-LiteralText,LOCK,לנעול
-LiteralText,locked,נעולה
-LiteralText,LOCKED,נעולה
-LiteralText,locked scaling mode,מצב נעילת מרחק תצוגה
+LiteralText,Lock,לנעול
+LiteralText,Locked,נעולה
 LiteralText,locking,נעילה
-LiteralText,loot,לבזוז
-LiteralText,LOOT,לבזוז
+LiteralText,Loot floor,
+LiteralText,Loot//noun,לבזוז
+LiteralText,Loot//verb,לבזוז
 LiteralText,LOSE KARMA,איבוד קארמה
 LiteralText,LOSE LEVEL,איבוד רמה
 LiteralText,lose nutrition,איבוד תזונה
@@ -3440,39 +3569,44 @@ LiteralText,MANA,נקודות קסם
 LiteralText,Mana represents your energy supply for casting spells.,נקודות הקסם מייצגות את האנרגיה שיש לך לצורך הטלת לחשי קסם.
 LiteralText,Map,מפה
 LiteralText,MAP,מפה
-LiteralText,mapping,מיפוי
+LiteralText,Mapping,מיפוי
 LiteralText,material,חומר
 LiteralText,materials,חומרים
 LiteralText,melting,במצב נמס
-LiteralText,MENU,תפריט
+LiteralText,Menu,תפריט
 LiteralText,mercenary,שכיר או שכירת חרב
-LiteralText,MIMIC,מימיק
+LiteralText,Mimic,מימיק
 LiteralText,mimicking,חיקוי
 LiteralText,mobilise block,הזזת סלע
 LiteralText,modifier,משנה גודל
-LiteralText,MORE INFO,
-LiteralText,MOUNT,לרכוב
+LiteralText,MODULE,
+LiteralText,MORE INFO,למידע נוסף
+LiteralText,Mount,לרכוב
 LiteralText,Mount which direction?,באיזה כיוון לעלות לרכיבה?
 LiteralText,MOUNTED,ברכיבה
-LiteralText,MOVE,לזוז
+LiteralText,Move,לזוז
 LiteralText,move down one level,לרדת קומה אחת
 LiteralText,move up one level,לעלות קומה אחת
 LiteralText,MULTIPLAYER,מכפיל
+LiteralText,Multiplayer Chat,
 LiteralText,murder,רצח
 LiteralText,MURDER ENTITIES EVERYWHERE,לרצוח ישויות בכל מקום
 LiteralText,music volume,עוצמת המוזיקה
 LiteralText,N/A,אי אפשר
-LiteralText,name,שם
-LiteralText,NAME,שם
 LiteralText,name?,שם?
+LiteralText,Name//noun,שם
+LiteralText,Name//verb,שם
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,בנטייה נייטרלית
 LiteralText,never,אף פעם לא
-LiteralText,NEW,חדש
+LiteralText,Next character,
 LiteralText,no additional effects,אין השפעות נוספות
 LiteralText,no allies,אין בני ברית
 LiteralText,no ambient sounds,אין צלילי רקע
 LiteralText,No appropriate items available,אין חפצים מתאימים
-LiteralText,no available knowledge,אין ידע זמין
+LiteralText,No key,
 LiteralText,no records found,לא מצאתי תיעוד
 LiteralText,no resistances,אין עמידויות
 LiteralText,no talents,אין כישורים
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,כלום לא קורה
 LiteralText,Nothing of interest,שום דבר מעניין
 LiteralText,nothing to give,אין מה לתת
 LiteralText,nothing to take,אין מה לקחת
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,תזונה
 LiteralText,NUTRITION,תזונה
 LiteralText,OBSTRUCTED,מכשול בדרך
 LiteralText,OFFLINE,לא מקוון
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,אחד אחד
 LiteralText,oOo,oOo
-LiteralText,OPEN,לפתוח
+LiteralText,Open,לפתוח
 LiteralText,OPENED,פתוחה
 LiteralText,opening,פתיחה
 LiteralText,OR,או
 LiteralText,ORIGINAL,מקור
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,עקיפה
 LiteralText,OVERVIEW,סקירה
 LiteralText,Palette,ערכת צבעים
 LiteralText,PARTY,חבורה
-LiteralText,passive (no attacking),(במצב פאסיבי (בלי לתקוף
+LiteralText,Passive (no attacking),(במצב פאסיבי (בלי לתקוף
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,אפשר לשחק בפאתוס במצב שיתופי במסך מפוצל עד ארבעה שחקנים.
 LiteralText,pathos development @ paypal,בפייפאל pathos development
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,פאתוס לא מצליח לטעון את ההרפתקה שלך. אשמח לקבל את קובץ השמירה שלך ולבדוק את העניין. אולי אפילו אצליח לתקן את הקובץ או לעדכן את האפליקציה כדי לתקן את הבעיה. תודה על ההבנה.
-LiteralText,Pathos might be the next evolution of Nethack.,פאתוס הוא כנראה ההתפתחות הבאה של נטהאק.
+LiteralText,Pathos might be the next evolution of NetHack.,פאתוס הוא כנראה ההתפתחות הבאה של נטהאק.
 LiteralText,penalty,עונש
 LiteralText,penetrates,במצב חדירה
 LiteralText,per level,לרמה
+LiteralText,Perform,
 LiteralText,permanent,במצב קבוע
 LiteralText,PERSONAL,אישי
+LiteralText,Pick up,
 LiteralText,PLACE,להניח
 LiteralText,PLACE ALL,להניח הכל
 LiteralText,place curse,הטלת קללה
 LiteralText,platform,פלטפורמה
 LiteralText,Play,לנגן
 LiteralText,Play a sound effect?,לנגן אפקט קולי?
+LiteralText,Play Demo,
 LiteralText,Player,שחקנית או שחקן
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,חשוב לשים לב שעצירה ידנית של האפליקציה עלולה לגרום לפגיעה בקבצי השמירה כך שלא יהיו ניתנים לשחזור.
 LiteralText,Please offer any clarification,נא להסביר
 LiteralText,Please provide your feedback,נא לשלוח משוב
 LiteralText,Please rotate your device to landscape :-),נא להעביר את המכשיר למצב אופקי :-)
-LiteralText,POLYMORPH,לשנות צורה
+LiteralText,Polymorph,לשנות צורה
 LiteralText,polymorph entity,שינוי צורה של יישות
 LiteralText,Polymorph into what?,לשנות צורה למה?
 LiteralText,polymorph item,שינוי צורה של חפץ
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,במצב שינוי צורה
 LiteralText,portal,מעבר
 LiteralText,PORTALS,מעברים
 LiteralText,porter,מנשא
-LiteralText,PRAY,להתפלל
+LiteralText,POSITIVE,
+LiteralText,Pray,להתפלל
 LiteralText,preservation,שימור
-LiteralText,prevent revenant levels,להימנע מרוחות נקם של עצמך
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,להימנע מרוחות נקם של עצמך
+LiteralText,Previous character,
 LiteralText,prisoner,במעצר
 LiteralText,probability,הסתברות
 LiteralText,PROMOTE,קידום
 LiteralText,PROPERTIES,תכונות
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,ענישה
-LiteralText,PUNISHED,במצב ענישה
+LiteralText,PUNISHED,בעונש
 LiteralText,punishment?,עונש?
 LiteralText,PUNISHMENTS,עונשים
+LiteralText,Purchase,
 LiteralText,QUANTITY,כמות
-LiteralText,QUICK LOAD,טעינה מהירה
-LiteralText,QUICK SAVE,שמירה מהירה
+LiteralText,QUESTS,
+LiteralText,Quick load,טעינה מהירה
+LiteralText,Quick save,שמירה מהירה
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,אחרי יציאה
-LiteralText,QUIT,לצאת
+LiteralText,Quit,לצאת
 LiteralText,R//replica symbol,ח
 LiteralText,race,גזע
 LiteralText,RACES,גזעים
 LiteralText,random,אקראי
-LiteralText,RANDOM,אקראי
-LiteralText,random dungeon seed,גרעין אקראי של מבוך
 LiteralText,random level,קומה אקראית
 LiteralText,random points,נקודות אקראיות
+LiteralText,random seed,גרעין אקראי של מבוך
 LiteralText,rank,דרגה
 LiteralText,rarity,נדירות
 LiteralText,rate & review on the app store,לדרג ולסקור את המשחק בחנות האפליקציות
-LiteralText,RE-ACT,לפעול שוב
-LiteralText,RE-CAST,להטיל שוב קסם
-LiteralText,RE-EQUIP,להצטייד שוב
+LiteralText,Re-act,לפעול שוב
+LiteralText,Re-cast,להטיל שוב קסם
+LiteralText,Re-equip,להצטייד שוב
 LiteralText,Re-roll,הטלת קוביה
 LiteralText,re-rolls,הטלות קוביה
-LiteralText,RE-USE,להשתמש שוב
+LiteralText,Re-use,להשתמש שוב
 LiteralText,Read books to learn spells,כדי ללמוד קסמים צריך לקרוא ספרים
-LiteralText,READ!,לקרוא!
-LiteralText,REAL-TIME,בזמן-אמיתי
+LiteralText,Read!,לקרוא!
+LiteralText,Real-time,בזמן-אמיתי
 LiteralText,REALLY CRASH?,באמת לרסק?
 LiteralText,recall party,החזרה
 LiteralText,Recommend Pathos,להמליץ על פאתוס
 LiteralText,Redo,לעשות שוב
 LiteralText,reflects,השתקפות
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,רישום
 LiteralText,REGISTER PLAYER HANDLE,רישום כינוי
 LiteralText,reinforced,במצב מחוזק
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,במצב מחוזק
 LiteralText,release entity,שיחרור
 LiteralText,remove all transients,מחיקת כל מצב ארעי
 LiteralText,remove curse,הסרת קללה
-LiteralText,REMOVE CURSE,הסרת קללה
 LiteralText,remove random resistance,מחיקת עמידות אקראית
 LiteralText,remove random talent,מחיקת כישרון אקראי
 LiteralText,remove with,להסיר עם
 LiteralText,remove with boulder,להסיר עם סלע
 LiteralText,REMOVE//container,להרים
-LiteralText,REMOVE//equipment,להסיר
+LiteralText,Remove//equipment,להסיר
 LiteralText,RENAME,לשנות שם
 LiteralText,RENAME CHARACTER,לשנות את שם הדמות
 LiteralText,RENAME ITEM,לשנות שם של חפץ
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,מילוי נקודות חיים מ
 LiteralText,replenish mana,מילוי נקודות קסם מ
 LiteralText,replica,חיקוי
 LiteralText,replicate item,הכפלת נכס
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,נדרשים כישורי פריצה
 LiteralText,reset random equipment,איתחול ציוד אקראי
+LiteralText,Reset to defaults,
 LiteralText,resident?,קבוע?
 LiteralText,resistances,עמידויות
 LiteralText,RESISTS,עמידות
 LiteralText,Rest,לנוח
 LiteralText,Rest how many turns?,כמה תורות לנוח?
+LiteralText,Rest once,
 LiteralText,restarting to update,צריך לאתחל כדי לעדכן
 LiteralText,restock shop items,עדכון המלאי
 LiteralText,restore ability,שיחזור יכולת
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,להקים לתחייה ולהמשיך
 LiteralText,resurrections,הקמות לתחייה
 LiteralText,retaliations,נקמות
 LiteralText,RETURN,לחזור
-LiteralText,REVEAL,לגלות
+LiteralText,Reveal,לגלות
 LiteralText,REVEAL ALL MAPS,לגלות את כל המפות
 LiteralText,REVEAL THIS MAP,לגלות את המפה הנוכחית
 LiteralText,revealed,גלויה
 LiteralText,revenant,רוח נקם
-LiteralText,REVERT,לחזור
+LiteralText,Revert,לחזור
+LiteralText,Right,
 LiteralText,RIGHT RING,טבעת ימין
 LiteralText,rigid,במצב נוקשה
 LiteralText,ROTATE,לסובב
 LiteralText,route entity,תוואי דרך
 LiteralText,rumour,שמועה
 LiteralText,sacrifice item,הקרבה
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,בדיקת שפיות
 LiteralText,SAVE,לשמור
 LiteralText,SAVE & QUIT,לשמור ולצאת
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,הרפתקאות שמורות
 LiteralText,SAVED BONES,שלדי קומה שמורים
 LiteralText,school,אסכולה
-LiteralText,scrap,לגרוט
-LiteralText,SCRAP,לגרוט
+LiteralText,Scrap,לגרוט
 LiteralText,SEALED,במצב חתום
 LiteralText,Search,לחפש
 LiteralText,Search how many turns?,במשך כמה תורות לחפש?
+LiteralText,Search once,
 LiteralText,searching,חיפוש
 LiteralText,secret,סוד
 LiteralText,SECRET,סוד
 LiteralText,seed,גרעין
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,בחירת אווירה
 LiteralText,Select Companion Tile,לבחור אריח למלווה
 LiteralText,Select Hero Tile,לבחור אריח לגיבור או לגיבורה
 LiteralText,SELECT ITEM,בחירת פריט
-LiteralText,SELECT LANGUAGE,בחירת שפה
 LiteralText,SELECT MAP,בחירת מפה
-LiteralText,SELECT PORTRAIT,בחירת דיוקן
 LiteralText,SELECT RESIDENT,בחירת קבוע
 LiteralText,SELECT SQUARE,בחירת משבצת
-LiteralText,SELECT TILESET,בחירת אריחים
 LiteralText,self,עצמי
+LiteralText,Self menu,
 LiteralText,SELL,למכור
 LiteralText,SELL ALL,למכור הכל
 LiteralText,SEND,לשלוח
 LiteralText,Send me an email,לשלוח לי מייל
-LiteralText,SERVICES,שירותים
+LiteralText,Services,שירותים
 LiteralText,SET DIFFICULTY,קביעת רמת קושי
 LiteralText,set starting location,קביעת נקודת התחלה
-LiteralText,SETTINGS,הגדרות
+LiteralText,Settings,הגדרות
 LiteralText,sfx volume,עוצמת אפקטים קוליים
-LiteralText,SHARE//exchange,לתת
+LiteralText,Share//exchange,לתת
 LiteralText,SHARE//publish,לפרסם
 LiteralText,SHOPS,חנויות
 LiteralText,Show debugging information,להציג מידע על ניפוי באגים
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,כניסה
 LiteralText,size,גודל
 LiteralText,skills,כישורים
 LiteralText,SKILLS,כישורים
-LiteralText,SLIDE,להחליק
+LiteralText,Slide,להחליק
 LiteralText,Slide which direction?,לאיזה כיוון להחליק?
 LiteralText,slower animations,אנימציה איטית יותר
 LiteralText,SONICS,צלילים
@@ -3686,17 +3847,17 @@ LiteralText,special,מיוחד
 LiteralText,SPECIALS,מיוחדים
 LiteralText,speed,מהירות
 LiteralText,SPEED,מהירות
-LiteralText,SPELL,קסם
+LiteralText,Spell,קסם
 LiteralText,SPELLS,קסמים
 LiteralText,Square,ריבוע
 LiteralText,stack,כל המלאי
 LiteralText,START,להתחיל
 LiteralText,Start a game to be joined by other players.,להתחיל משחק חדש ששחקנים אחרים יכולים להצטרף אליו.
 LiteralText,Start new adventure,להתחיל הרפתקה חדשה
-LiteralText,start without companion,להתחיל ללא בני לוויה
+LiteralText,Start without companion,להתחיל ללא בני לוויה
 LiteralText,starvation,הרעבה
-LiteralText,starved,במצב מורעב
-LiteralText,STAY,להישאר
+LiteralText,starved,בהרעבה
+LiteralText,Stay,להישאר
 LiteralText,steal,גניבה
 LiteralText,STOP,לעצור
 LiteralText,storage,אחסון
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,הרפתקאות סטודיו
 LiteralText,SUBMIT,לשלוח
 LiteralText,summon,זימון יישות
 LiteralText,SUSTAINED,ללא שינוי
-LiteralText,SWAP,להחליף מקום
-LiteralText,SWITCH,לשנות
+LiteralText,Swap,להחליף מקום
+LiteralText,Switch,לשנות
 LiteralText,symptoms,תסמינים
 LiteralText,Table of Contents,תוכן עניינים
-LiteralText,TAKE,לקחת
+LiteralText,Take,לקחת
 LiteralText,TAKE ALL,לקחת הכל
 LiteralText,talents,כשרונות
 LiteralText,TALENTS,כשרונות
-LiteralText,TALK,לדבר
+LiteralText,Talk,לדבר
 LiteralText,target,מטרה
-LiteralText,TELEKINESIS,טלקינזיס
+LiteralText,Telekinesis,טלקינזיס
 LiteralText,Telekinesis which direction?,באיזה כיוון להפעיל טלקינזיס?
 LiteralText,Telekinesis which object?,על איזה חפץ להפעיל טלקינזיס?
-LiteralText,TELEPORT,לשגר
+LiteralText,Teleport,לשגר
+LiteralText,Teleport end,
 LiteralText,teleport entity,שיגור דמות
 LiteralText,teleport item away,שיגור
 LiteralText,Teleport to where?,לאן להשתגר?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,טרמינל
 LiteralText,terrain,פני השטח
 LiteralText,The attack score is your aptitude for hitting an opponent.,נקודות ההתקפה משקפות את יכולת התקיפה שלך.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,האתגר שלי הוא לשפר את המכניקה ובמקביל לשמר את המהות שהפכה אותו למשחק הטוב בכל הזמנים.
+LiteralText,The damage you do to an opponent upon a successful attack.,כמה נזק ייגרם ליריב שלך
 LiteralText,The defence score is how protected you are from being hit by an opponent.,נקודות ההגנה משקפות את מידת ההגנה שיש לך מפני פגיעות.
 LiteralText,There is a new update available!,יש עדכון חדש!
 LiteralText,there is nothing to place here,אין מה לשים כאן
 LiteralText,there is nothing to remove here,אין מה לקחת מכאן
 LiteralText,there is nothing to trade with this merchant,אין לך מה למכור
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,הקומה הזאת
 LiteralText,this merchant has no stock to trade,אין מלאי למכירה
 LiteralText,This name is used to record your achievements in the Hall of Fame.,השם הזה משמש כדי לשמור את ההישגים שלך בהיכל התהילה.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,ניתן לשלוח את הגרעין הזה לחברים ולאתגר זה את זה באותו מבוך.
 LiteralText,threw,אחרי השלכה
-LiteralText,THROW,להשליך
+LiteralText,Throw,להשליך
+LiteralText,TILESET,בחירת אריחים
 LiteralText,tin,פחית
 LiteralText,tinning,שימור בפחית
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,גדול מדי
 LiteralText,TOO HEAVY,כבד מדי
 LiteralText,TOO HUNGRY,הרעב כבד מדי
 LiteralText,TOO SMALL,קטן מדי
 LiteralText,TOO WEAK,חלש מדי
 LiteralText,TRACKS,מנגינות
-LiteralText,TRADE,לסחור
+LiteralText,Trade,לסחור
 LiteralText,transform to,לשנות ל
 LiteralText,transients,השפעות זמניות
 LiteralText,TRANSIENTS,השפעות זמניות
@@ -3759,15 +3926,16 @@ LiteralText,trapped,עם מלכודת
 LiteralText,TRAPPED,עם מלכודת
 LiteralText,trapped container,כלי קיבול ממולכד
 LiteralText,trapped door,דלת ממולכדת
-LiteralText,TRIGGER,להפעיל מלכודת
+LiteralText,Trigger,להפעיל מלכודת
 LiteralText,trigger once,להפעיל פעם אחת
 LiteralText,trigger unlimited times,להפעיל מספר בלתי מוגבל של פעמים
 LiteralText,truth,אמת
-LiteralText,TUNNEL,לחפור
+LiteralText,Tunnel,לחפור
 LiteralText,Tunnel which direction?,באיזה כיוון לחפור?
-LiteralText,TURN-BASED,משחק מבוסס-תורות
+LiteralText,Turn-based,משחק מבוסס-תורות
 LiteralText,turns,תורות
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,כל מילה או ביטוי ייצרו גרעין מבוך אקראי.
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,כל מילה או ביטוי ייצרו גרעין מבוך אקראי.
 LiteralText,unable to load,לא מצליח לטעון
 LiteralText,unafflict,ביטול צרה
 LiteralText,UNDEAD,אל-מת
@@ -3775,16 +3943,20 @@ LiteralText,Undo,ביטוי
 LiteralText,unidentified items,פריטים לא מזוהים
 LiteralText,unique,מיוחד
 LiteralText,UNIQUES,מיוחדים
-LiteralText,UNLOCK,פתיחת נעילה
+LiteralText,unknown effects,
+LiteralText,Unlock,פתיחת נעילה
 LiteralText,unlock door or container,פתיחת דלת או כלי קיבול נעול
-LiteralText,UNLOCKED,לא נעולה
+LiteralText,Unlocked,לא נעולה
 LiteralText,unpolymorph,ביטול שינוי צורה
 LiteralText,unpunish,ביטול עונש
 LiteralText,unskilled,ללא מיומנות
 LiteralText,UNSKILLED,ללא מיומנות
 LiteralText,unstuck,שיחרור דמות תקועה
-LiteralText,UNTRAP,לנטרל
+LiteralText,Untrap,לנטרל
 LiteralText,UNTRAPPED,מנוטרלת
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,יש עדכון
 LiteralText,update cancelled,עדכון בוטל
 LiteralText,update failed,עדכון נכשל
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,עדכונים
 LiteralText,upgrade to,לשדרג ל
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,שימוש בגרעין מבטל את האפשרות להיכלל בהיכל התהילה.
 LiteralText,Vanity,ראוותנות
+LiteralText,Victory!,
 LiteralText,VIEW,להציג
 LiteralText,visit shop,ביקור בחנות
 LiteralText,visit shrine,ביקור במקדש
-LiteralText,Visit the website,לבקר באתר
 LiteralText,visit zoo,ביקור בגן חיות
 LiteralText,VOID SPACE,חלל ריק
 LiteralText,volatile,מפגע זמני
 LiteralText,VOLATILES,מפגעים זמניים
 LiteralText,vomit nutrition,הקאה
 LiteralText,vulnerable to,פגיעות ל
-LiteralText,WAIT,לחכות
+LiteralText,Wait,לחכות
 LiteralText,Wait how many turns?,כמה תורות לחכות?
-LiteralText,warping,השתגרות
-LiteralText,WARPING,השתגרות
+LiteralText,Warping,השתגרות
 LiteralText,was killed,הדמות נהרגה
 LiteralText,weakness to,חולשות ל
 LiteralText,weight,משקל
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,הרס
 LiteralText,WON'T EAT,סירוב לאכול
 LiteralText,WORKBENCH MATERIALS,חומרי שולחן העבודה
 LiteralText,World,עולם
-LiteralText,WORLD,עולם
 LiteralText,WRONG WAY,טעות בדרך
 LiteralText,"You are playing as anonymous, please register!",המשחק שלך במצב עילום-שם. נא להירשם!
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,לפעמים צריך לחפש דלתות סודיות באמצעות לחצן העין.
 LiteralText,Your current movement and action speed in squares per second.,מהירות התנועה והפעולה הנוכחית שלך בריבועים לשנייה.
-LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.","זירות' הוא משחק הבכורה של הסטודיו החדש שלי, משחקי קונטררי. ברוחו הוא ממשיך דרכו של פאתוס, אבל הוא כולל הנפשות של גזירי-נייר, משחקיות פלטפורה בזמן אמת, הדמיית פיזיקה משחקית ומשחק בעל עומק וערך מתמשך."
 LiteralText,ZOOM,זום
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,גני חיות
 LiteralText,zZz,zZz
 LocalityName,area,אזור
@@ -3839,7 +4011,7 @@ LocalityName,site,אתר
 LocalityName,square,ריבוע
 LocalityName,world,עולם
 LocalityName,zone,תחום
-MaterialName,adamantine,אדמנטיט
+MaterialName,adamantine,אדמנטין
 MaterialName,air,אוויר
 MaterialName,animal,מן החי
 MaterialName,bone,עצם
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,צמח
 MaterialName,water,מים
 MaterialName,wax,שעווה
 MaterialName,wood,עץ
-MeasurementSystemName,imperial,השיטה האימפריאלית
-MeasurementSystemName,metric,השיטה המטרית
+MeasurementSystemName,imperial units,השיטה האימפריאלית
+MeasurementSystemName,metric units,השיטה המטרית
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,הדמות שלך יורדת דרך מבוכים וחללים שנבנים באקראיות שיטתית. אפשרויות אין-סופיות למשחק חוזר והמודול המומלץ לשחקנים חדשים בפאתוס.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","הדמות שלך חוקרת מפה מעל פני האדמה, שכוללת מבוכים צדדיים, רקע מוקפד ומפגשים מסקרנים."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,מפות שצויירו ביד בהרפתקה אפית מעל פני האדמה. הדמות שלך יכולה להתרענן מהמבוכים המחניקים ולצאת להרפתקה מאתגרת.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"חדרים וסודות מעניינים מחכים לך, אבל אסור לך להתמהמה. הדמות שלך חייבת להמשיך לרדת או שהיא תמות. מבוסס על בניית המפה של שאטרד פיקסל דאנג'ן."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","ארגז חול שאפשר להתנסות בו במכניקה של פאתוס, ולשחק עם כל חפץ, מלכודת ומתקן של המבוך במפה פשוטה של שני חדרים."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,יש לך חדשות מהעולם שלמעלה? הייתי כאן למטה כל כך הרבה זמן וחסרים לי השמש ומזג האוויר
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,ידעת שחצי מהסחורה שמוכרים בחנויות מגיעה מגופות של הרפתקנים כמוך?
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,כולם מדברים על פלישת אורקים אבל לדעתי זה לא יקרה לעולם.
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","האמת, פעם הייתי הרפתקן כמוך... אולי כדאי גם לך למצוא עבודה? הרי *הרפתקנים* זאת רק מילה מפונפנת לחסרי עבודה וחסרי בית."
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Nethack Codex
+ModuleName,NetHack Codex,NetHack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,ארגז החול
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,התהום
 ModuleTerm,Ambush,המארב
 ModuleTerm,Ant Cave,מערת הנמלים
@@ -4057,13 +4231,13 @@ MotionPastName,played,אחרי נגינה
 MotionPastName,prayed,אחרי תפילה
 MotionPastName,quaffed,אחרי לגימה
 MotionPastName,read,אחרי קריאה
-MotionPastName,reclined,במצב שכיבה
+MotionPastName,reclined,בשכיבה
 MotionPastName,refilled,אחרי מילוי
 MotionPastName,released,אחרי שחרור
 MotionPastName,renamed,אחרי שינוי שם
 MotionPastName,rubbed,אחרי שפשוף
 MotionPastName,sacrificed,אחרי הקרבה
-MotionPastName,sat,במצב ישיבה
+MotionPastName,sat,בישיבה
 MotionPastName,scried,אחרי סריקה
 MotionPastName,set,אחרי התקנה
 MotionPastName,staked,אחרי שיפוד
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,מדרגות עולות מחימר
 PortalName,jade ladder down,סולם אזמרגד יורד
 PortalName,jade ladder up,סולם אזמרגד עולה
 PortalName,rift,קרע במרחב
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,מדרגות יורדות מאבן
 PortalName,stone staircase up,מדרגות עולות מאבן
 PortalName,transportal,פורטל מעבר
 PortalName,wooden ladder down,סולם עץ יורד
 PortalName,wooden ladder up,סולם עץ עולה
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,מגן קסם וזוהר מקיף את גופך ועוזר לך להדוף קליעים שנורים לכיוונך.
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",ציפוי של שרף חלקלק ושמנוני מאפשר לך לחמוק ולגלוש הצידה.
-PropertyDescription,Control when and where you teleport.,לשלוט בעיתוי ובמיקום של ההשתגרות שלך.
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,הכעס מעביר אותך על דעתך וגורם לך להתנפל על חברים ואוייבים כאחד ללא חשיבה או היגיון.
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.","היכולות שלך קבועות ואינן יכולות לרדת, אבל גם אינן יכולות להשתפר."
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,יש לך מחלה נוראית עם סימפטומים מוזרים ובחילה.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,אזהרה מוקדמת על מפלצות קרובות ורמת האיום המשוערת שלהן.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.",שקעת בשינה עמוקה ושלווה. במבוך מלא במפלצות.
+PropertyDescription,Assess the number of charges in an item when you pick it up.,הרמת כל חפץ מספקת לך ידיעה על מספר השימושים שנותרו בו.
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,לשלוט בעיתוי ובמיקום של ההשתגרות שלך.
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",ציפוי של שרף חלקלק ושמנוני מאפשר לך לחמוק ולגלוש הצידה.
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",יש לך דחף בלתי נשלט ובלתי נגמר לאכול.
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.",הכעס מעביר אותך על דעתך וגורם לך להתנפל על חברים ואוייבים כאחד ללא חשיבה או היגיון.
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,תפיסת הראייה שלך מתעוותת והמוח שלך מחליף חפצים ויישויות רגילים לצורות מוזרות מהסיוטים.
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,ראייה משופרת שמאפשרת לך לראות יצורים בלתי נראים.
-PropertyDescription,Fainting from lack of food.,התעלפת מחוסר מזון.
-PropertyDescription,Fly above the ground to avoid many types of traps.,לרחף מעל הקרקע כדי להתחמק מסוגים רבים של מלכודות.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,מצב מעידה גורם לך להפיל את הנשק במהלך קרב וליפול בעלייה ובירידה במדרגות.
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,"ריחוף שמתגבר על כוח המשיכה, שימושי לחמיקה מסוגים רבים של מלכודות. אם רק יכולת גם להגיע אל הרצפה."
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",לרחף מעל הקרקע כדי להתחמק מסוגים רבים של מלכודות.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,מתקפות בהייה וקרני ירייה משתקפות וחוזרות אל המשגרים.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,אזהרה מוקדמת על מפלצות קרובות ורמת האיום המשוערת שלהן.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,האימה אוחזת בך ולא מאפשרת לך לתקוף. עדיף לך לברוח.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","במצב שיכרות כזה, הביטחון המוגבר שלך לא עוזר לך בגלל שיקול הדעת הפגום שלך."
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,תנועה שקטה במבוך מאפשרת לך להתגנב אל מפלצות ישנות.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"מונעת ממך שינוי צורה, אבל גם מונעת ממך חזרה אל הצורה המקורית שלך."
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",האימה אוחזת בך ולא מאפשרת לך לתקוף. עדיף לך לברוח.
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.","הגוף שלך הופך לנוקשה, כמעט כאילו הפך לאבן. כל תזוזה קשה לך ונוספת לכך תחושה שברירית, כאילו המכה הבאה תנפץ אותך לרסיסים."
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,אכילה נטולת אשמה של בשר ואיברים של יצורים מהגזע שלך.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,התפיסה והמודעות שלך מוגברות ומאפשרות לך לגלות בקלות דלתות סודיות ומלכודות.
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,הפגיעה הזאת ביכולת הראייה שלך מאפשרת לך לראות רק דברים קרובים אליך.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",כל מי שסביבך הופכים לתוקפנים ואלימים. גם יישויות שוחרות שלום מטיבן ייתקפו זו או זו. זאת תכונה שימושית אבל גם מסוכנת וכדאי להשתמש בה בזהירות. התכונה הזאת גם מגבירה את רמת הרעב שלך.
+PropertyDescription,Increased speed allows you to move and attack more frequently.,התוספת הזאת למהירות שלך מאפשרת לך לזוז ולתקוף בתכיפות גבוהה יותר.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,עצם הנוכחות שלך מעצבנת את כל מי שנמצא במבוך.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,התעלפת מחוסר מזון.
+PropertyDescription,Move objects without physical contact through the power of your mind.,"הזזת חפצים בכוח המחשבה, ללא מגע פיזי."
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",נתקפת בשתיקה מפחידה ואין באפשרותך לומר בקול אפילו הברה בודדת.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",תנועה שקטה במבוך מאפשרת לך להתגנב אל מפלצות ישנות.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.","השרירים שלך מכווצים ללא יכולת תנועה, ואין לך יכולת לזוז או להתגונן."
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","גופך נמצא בשני מישורי קיום שונים והמשמעות היא הוא יכול לעבור ללא כל קושי דרך קירות, דלתות וסלעים."
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",הרגליים שלך הן כמו קפיצים חזקים שמוכנים לזנק לפעולה ולגמוע מרחקים גדולים.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.","מונעת ממך שינוי צורה, אבל גם מונעת ממך חזרה אל הצורה המקורית שלך."
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,הפגיעה המוחלטת הזאת בשמיעה שלך מנתקת אותך מכל מה שניתן לשמוע.
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","המוח שלך מוגן מפני מרמה, נוכלות ושקרים."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","מגינה עליך מהשפעות שמאיטות, משתקות או מגבילות את התנועה שלך באופן אחר."
-PropertyDescription,Recover mana at an increased rate.,נקודות הקסם שלך עולות בקצב מוגבר.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,הגוף שלך מתחדש ברפואה וצמיחה מהירות. המטבוליזם שלך מוגבר ומצריך יותר מזון מהרגיל.
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,נקודות הקסם שלך עולות בקצב מוגבר.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,הפגיעה הזאת במהירות שלך גורמת לך לזוז ולתקוף בתדירות נמוכה יותר.
+PropertyDescription,Resilient to all forms of natural and magical illness.,"יש לך הגנה מפני כל סוג של מחלה, טבעית או קסומה."
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,מחייה אותך למצב של חצי-בריאות בעת המוות במחיר של נקודת חוסן אחת.
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,שינה פתאומית עד שיעירו אותך.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","יכולת שיגור מעבירה את הדמות שלך בתוך קומת המבוך הנוכחית. ללא שליטה, זה אירוע אקראי שמוסיף חוסר ודאות למסע שלך. שיגור נשלט מאפשר לך לבחור את היעד שלך על המפה."
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,אכילה נטולת אשמה של בשר ואיברים של יצורים מהגזע שלך.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,"איתור נוכחות ומיקום של מוחות, אבל רק במצב של חוסר ראייה."
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,הדמות שלך תופיע לא לגמרי במיקום המדוייק שלה. זה מקשה על יריבים בעלי חישה לפגוע בך. גם להשפעות קסומות כמו קרניים ומתקפות יש פחות סיכוי לפגוע בך.
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,התוספת הזאת למהירות שלך מאפשרת לך לזוז ולתקוף בתכיפות גבוהה יותר.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,הפגיעה הזאת ביכולת הראייה שלך מאפשרת לך לראות רק דברים קרובים אליך.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,"ריחוף שמתגבר על כוח המשיכה, שימושי לחמיקה מסוגים רבים של מלכודות. אם רק יכולת גם להגיע אל הרצפה."
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,הגוף שלך מתחדש ברפואה וצמיחה מהירות. המטבוליזם שלך מוגבר ומצריך יותר מזון מהרגיל.
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,"זה מצב שבו לא רואים אותך. בתנועה יש עיוות קל של האור, שאפשר להבחין בו רק בקרבה רבה אליך."
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,הפגיעה המוחלטת הזאת בשמיעה שלך מנתקת אותך מכל מה שניתן לשמוע.
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,הפגיעה הזאת במהירות שלך גורמת לך לזוז ולתקוף בתדירות נמוכה יותר.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,הראייה המיוחדת הזאת מאפשרת לך לראות ישויות בעלות דם חם באזורים החשוכים של המבוך.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","להפוך ליישות מסוג אחר, עם כל היתרונות והחסרונות שנלווים לזה. לדוגמה, יש ישויות שאין להן ידיים, אבל יכולות לעוף ולנשוף קרני אנרגיה קטלניות. מוות בתצורה המוחלפת שלך יחזיר אותך בדרך כלל לצורה המקורית."
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,"הזזת חפצים בכוח המחשבה, ללא מגע פיזי."
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,תפיסת הראייה שלך מתעוותת והמוח שלך מחליף חפצים ויישויות רגילים לצורות מוזרות מהסיוטים.
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"במצב מבולבל יהיה לך קשה לקבל החלטות. התנועה וההתקפה שלך עשויות להגיע בכיוונים בלתי צפויים ולא ניתן להטיל לחשים. בזמן קריאת מגילות קסם ייתכן שהמילים לא ייקראו נכון, וההשפעות יהיו שונות מהצפוי. אין לך יכולת להתרכז למשך זמן ארוך מספיק כדי לקרוא ספר."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","במצב הלם אין לך יכולת ללכת ישר או לבצע משימות מסובכות, בדומה למצב בלבול."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,יש לך מחלה נוראית עם סימפטומים מוזרים ובחילה.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",שקעת בשינה עמוקה ושלווה. במבוך מלא במפלצות.
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,יש לך דחף בלתי נשלט ובלתי נגמר לאכול.
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,"יש לך הגנה מפני כל סוג של מחלה, טבעית או קסומה."
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,יש לך יכולת טובה לחפור מנהרות ולפלס את דרכך בעצמך במבוך.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,הרמת כל חפץ מספקת לך ידיעה על מספר השימושים שנותרו בו.
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,שליטה בשינוי צורה מאפשרת לך להפוך לכל יישות לפי רצונך. השליטה מוגבלת ליצורים שכבר הרגת. לכפייה של שינוי צורה יש מחיר בדמות רמת השובע שלך.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,כל מי שסביבך הופכים לתוקפנים ואלימים. גם יישויות שוחרות שלום מטיבן ייתקפו זו או זו. זאת תכונה שימושית אבל גם מסוכנת וכדאי להשתמש בה בזהירות. התכונה הזאת גם מגבירה את רמת הרעב שלך.
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,נתקפת בחוסר יציבות והזעם עלול לכלות אותך בכל רגע.
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,יש לך מודעות לגבי נוכחות של יישויות אחרות במקומות אחרים במבוך.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,הרמה של חפץ תגלה לך אם הוא מבורך או מקולל.
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,נתקפת בשתיקה מפחידה ואין באפשרותך לומר בקול אפילו הברה בודדת.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,"היכולות שלך קבועות ואינן יכולות לרדת, אבל גם אינן יכולות להשתפר."
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"הגוף שלך הופך לנוקשה, כמעט כאילו הפך לאבן. כל תזוזה קשה לך ונוספת לכך תחושה שברירית, כאילו המכה הבאה תנפץ אותך לרסיסים."
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","גופך נמצא בשני מישורי קיום שונים והמשמעות היא הוא יכול לעבור ללא כל קושי דרך קירות, דלתות וסלעים."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,הרגליים שלך הן כמו קפיצים חזקים שמוכנים לזנק לפעולה ולגמוע מרחקים גדולים.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,עצם הנוכחות שלך מעצבנת את כל מי שנמצא במבוך.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,המטבוליזם שלך מואט ונדרש לך הרבה פחות מזון.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","המוח שלך מוגן מפני מרמה, נוכלות ושקרים."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"השרירים שלך מכווצים ללא יכולת תנועה, ואין לך יכולת לזוז או להתגונן."
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,התפיסה והמודעות שלך מוגברות ומאפשרות לך לגלות בקלות דלתות סודיות ומלכודות.
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,המיקום שלך לא ברור ובקלות רבה מתאפשר לך להיעלם ולהופיע שוב.
+PropertyDescription,Sense the divine status of an item simply by picking it up.,הרמה של חפץ תגלה לך אם הוא מבורך או מקולל.
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,"איתור נוכחות ומיקום של מוחות, אבל רק במצב של חוסר ראייה."
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.","במצב מבולבל יהיה לך קשה לקבל החלטות. התנועה וההתקפה שלך עשויות להגיע בכיוונים בלתי צפויים ולא ניתן להטיל לחשים. בזמן קריאת מגילות קסם ייתכן שהמילים לא ייקראו נכון, וההשפעות יהיו שונות מהצפוי. אין לך יכולת להתרכז למשך זמן ארוך מספיק כדי לקרוא ספר."
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"במצב הלם אין לך יכולת ללכת ישר או לבצע משימות מסובכות, בדומה למצב בלבול."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.",מגן קסם וזוהר מקיף את גופך ועוזר לך להדוף קליעים שנורים לכיוונך.
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,המטבוליזם שלך מואט ונדרש לך הרבה פחות מזון.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,הראייה המיוחדת הזאת מאפשרת לך לראות ישויות בעלות דם חם באזורים החשוכים של המבוך.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.","במצב שיכרות כזה, הביטחון המוגבר שלך לא עוזר לך בגלל שיקול הדעת הפגום שלך."
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,שינה פתאומית עד שיעירו אותך.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",שליטה בשינוי צורה מאפשרת לך להפוך לכל יישות לפי רצונך. השליטה מוגבלת ליצורים שכבר הרגת. לכפייה של שינוי צורה יש מחיר בדמות רמת השובע שלך.
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","להפוך ליישות מסוג אחר, עם כל היתרונות והחסרונות שנלווים לזה. לדוגמה, יש ישויות שאין להן ידיים, אבל יכולות לעוף ולנשוף קרני אנרגיה קטלניות. מוות בתצורה המוחלפת שלך יחזיר אותך בדרך כלל לצורה המקורית."
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.","יכולת שיגור מעבירה את הדמות שלך בתוך קומת המבוך הנוכחית. ללא שליטה, זה אירוע אקראי שמוסיף חוסר ודאות למסע שלך. שיגור נשלט מאפשר לך לבחור את היעד שלך על המפה."
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,יש לך מודעות לגבי נוכחות של יישויות אחרות במקומות אחרים במבוך.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,מצב מעידה גורם לך להפיל את הנשק במהלך קרב וליפול בעלייה ובירידה במדרגות.
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.","זה מצב שבו לא רואים אותך. בתנועה יש עיוות קל של האור, שאפשר להבחין בו רק בקרבה רבה אליך."
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,נתקפת בחוסר יציבות והזעם עלול לכלות אותך בכל רגע.
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,המיקום שלך לא ברור ובקלות רבה מתאפשר לך להיעלם ולהופיע שוב.
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",הדמות שלך תופיע לא לגמרי במיקום המדוייק שלה. זה מקשה על יריבים בעלי חישה לפגוע בך. גם להשפעות קסומות כמו קרניים ומתקפות יש פחות סיכוי לפגוע בך.
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,יש לך יכולת טובה לחפור מנהרות ולפלס את דרכך בעצמך במבוך.
 PropertyName,aggravation,הרגזה
 PropertyName,appraisal,הערכה
 PropertyName,beatitude,ניחוש
@@ -4251,7 +4427,7 @@ PunishmentDescription,You are overwhelmed by the compulsion to quaff everything 
 PunishmentName,ball & chain,כדור ושלשלאות
 PunishmentName,gluttony,גרגרנות
 PunishmentName,ignoramus,בורות
-PunishmentName,illiteracy,אנלפבתיות
+PunishmentName,illiteracy,אנאלפביתיות
 PunishmentName,malignant aura,הילה רעה
 PunishmentName,midas touch,מגע מידאס
 PunishmentName,psychosis,פסיכוזה
@@ -4319,8 +4495,8 @@ RaceName,kobold//non-binary,קובולד.ית
 RaceName,leprechaun//female,לפרקונית
 RaceName,leprechaun//male,לפרקון
 RaceName,leprechaun//non-binary,לפרקונ.ית
-RaceName,lizardman//female,איש לטאה
-RaceName,lizardman//male,אשת לטאה
+RaceName,lizardman//female,אשת לטאה
+RaceName,lizardman//male,איש לטאה
 RaceName,lizardman//non-binary,אישת לטאה
 RaceName,minotaur//female,מינוטאור
 RaceName,minotaur//male,מינוטאור
@@ -4373,7 +4549,7 @@ RumourFalseMessage,Gnomes weapons are often enchanted.,נשקים של גנומ�
 RumourFalseMessage,Gnomish weapons are always cursed.,נשקים של גנומים הם תמיד מקוללים.
 RumourFalseMessage,Go towards the light.,קדימה לכיוון האור.
 RumourFalseMessage,Great tragedy falls upon those who eat the yellow snow.,אסון גדול פוקד את אלה שאוכלים את השלג הצהוב.
-RumourFalseMessage,Learn to say cherry blossom in Draconic: selavra di wer cherry (Cell-ave-rah dee wur chah-ray).,כך אומרים פריחת הדובדבן בדקרונית: סלברה די וור צ'רי.
+RumourFalseMessage,Learn to say cherry blossom in Draconic: selavra di wer cherry (Cell-ave-rah dee wur chah-ray).,כך אומרים פריחת הדובדבן בדרקונית: סלברה די וור צ'רי.
 RumourFalseMessage,Learn to say mortal fools in Draconic: mablik hofibai (Mah-blick hauph-ee-bay).,כך אומרים שוטים בני מוות בדרקונית: מבליק הופיבאי.
 RumourFalseMessage,Learn to say peach tree in Draconic: skjall di peaches (Skah-jawl dee peech-is).,כך אומרים עץ אפרסקים בדרקונית: סקג'אול די פיצ'יס.
 RumourFalseMessage,Learn to say slime mould in Draconic: mould di slime (Mole-duh dee slie-mah).,כך אומרים רירנית בדרקונית: מולדה די סלימה.
@@ -4435,8 +4611,8 @@ SchoolName,clerical,דת
 SchoolName,conjuration,זימון
 SchoolName,divination,ניחוש
 SchoolName,enchantment,הקסמה
-SchoolName,evocation,אוב
-SchoolName,necromancy,מגיה
+SchoolName,evocation,מגיה
+SchoolName,necromancy,אוב
 SchoolName,transmutation,שינוי
 ServiceDescription,detect traps in the surrounding area.,איתור מלכודות באזור הקרוב.
 ServiceDescription,identify one item in your inventory.,זיהוי פריט אחד שלך.
@@ -4490,7 +4666,7 @@ SkillName,disc,דיסק
 SkillName,divination,ניחוש
 SkillName,dual wielding,נשק כפול
 SkillName,enchantment,הקסמה
-SkillName,evocation,אוב
+SkillName,evocation,מגיה
 SkillName,firearms,נשק חם
 SkillName,flail,מורג
 SkillName,hammer,פטיש
@@ -4505,7 +4681,7 @@ SkillName,mace,אלה
 SkillName,medium armour,שריון בינוני
 SkillName,medium blade,להב בינוני
 SkillName,music,מוזיקה
-SkillName,necromancy,מגיה
+SkillName,necromancy,אוב
 SkillName,pick,דוקרן
 SkillName,polearm,נשק מוט
 SkillName,riding,רכיבה
@@ -4563,6 +4739,7 @@ SonicName,explosion,פיצוץ
 SonicName,fizzle,תסיסה
 SonicName,flash,הבזק
 SonicName,flute,חליל
+SonicName,focus tap,
 SonicName,food,מזון
 SonicName,footsteps,צעדים
 SonicName,force,פריצה
@@ -4671,7 +4848,7 @@ SpecialDescription,Aristocrats who enjoy all the privilege that comes with wealt
 SpecialDescription,"Being unusually short and slight, they are more nimble but not as effective in combat.","נמוכים ורזים במידה בלתי אופיינית, ולכן זריזים יותר אבל פחות יעילים בקרב."
 SpecialDescription,"Being unusually tall and heavy, they move a bit slower but are more resilient.","גבוהים וכבדים במידה בלתי אופיינית, ולכן מעט איטיים יותר אבל גם פחות פגיעים."
 SpecialDescription,"Forever cursed with lycanthropy, these beings can transform themselves into monstrous wolf forms.",יצורים שמקוללים לנצח בהזדאבות ויכולים להפוך לזאבים מפלצתיים.
-SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,ייצור זנוח שמתקיים על ידי אכילת כוח החיות של החיים.
+SpecialDescription,Forsaken creature that subsists by feeding on the vital essence of the living.,יצור זנוח שמתקיים על ידי אכילת כוח החיות של החיים.
 SpecialDescription,Gifted with extrasensory perception to identify entities otherwise hidden from the normal senses but at the cost of a gnawing hunger.,"מחוננים בתפיסה יוצאת דופן ויכולים לזהות ישויות שחבויות מהחושים הרגילים, אבל במחיר של רעב מכרסם."
 SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.","משרתים נאמנים של יסוד האדמה, יכולים לזמן כדורים מתפוצצים כדי להשמיד את אוייביהם."
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.","משרתים נאמנים של יסוד האש, יכולים לזמן כדורים מתפוצצים כדי להשמיד את אוייביהם."
@@ -4693,7 +4870,7 @@ SpecialName,frost,כפור
 SpecialName,fugitive,במנוסה
 SpecialName,glass,זכוכית
 SpecialName,midget,גמדות
-SpecialName,noble,אצילות
+SpecialName,noble,ממוצא אצילי
 SpecialName,protagonist,דמות ראשית
 SpecialName,psychic,תקשור
 SpecialName,quantum,קוונטום
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,התקדמות
 TraversalPresentName,ascend,בעלייה
 TraversalPresentName,descend,בירידה
 TraversalPresentName,travel,תוך התקדמות
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,להבה
 VolatileName,blood,דם
 VolatileName,electricity,חשמל

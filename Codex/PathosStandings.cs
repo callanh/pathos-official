@@ -22,7 +22,6 @@ namespace Pathos
         {
           E.Name = Name;
           E.Threshold = Threshold;
-          E.Glyph = Glyphs.standing;
 
           CodexRecruiter.Enrol(() => EditAction(E));
         });

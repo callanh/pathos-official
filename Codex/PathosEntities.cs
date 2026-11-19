@@ -61,7 +61,7 @@ namespace Pathos
 
       Entity RegisterEntity(Kind Kind, Race Race, string Name, Action<EntityEditor> InitiateAction, Action<EntityEditor> EnrolAction)
       {
-        return Register.Add(E =>
+        var Result = Register.Add(E =>
         {
           E.Kind = Kind;
           E.Race = Race;
@@ -122,6 +122,19 @@ namespace Pathos
             }
           });
         });
+
+        if (Result.IsBase)
+        {
+          if (Inv.Assert.IsEnabled)
+          {
+            Inv.Assert.CheckNotNull(Result.Race, nameof(Result.Race));
+            Inv.Assert.CheckNull(Result.Race.BaseEntity, nameof(Result.Race.BaseEntity));
+          }
+
+          Codex.Manifest.Races.Edit(Result.Race).BaseEntity = Result;
+        }
+
+        return Result;
       }
 
       Entity AddDomesticEntity(Kind Kind, Race Race, string Name, Action<EntityEditor> DeclareAction)
@@ -187,7 +200,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S4_5;
@@ -228,7 +241,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_3;
@@ -268,7 +281,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -309,7 +322,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -349,7 +362,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -388,7 +401,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -428,7 +441,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 8, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -467,7 +480,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -507,7 +520,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_3;
@@ -546,7 +559,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -585,7 +598,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -624,7 +637,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -666,7 +679,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // strong natural skin
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -708,7 +721,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -749,7 +762,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 13, P: +1, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -790,7 +803,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -832,7 +845,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 9, P: +1, S: +1, B: -2);
         E.SetDiet(Diets.organivore);
         E.Speed = Speed.S4_0;
@@ -873,7 +886,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 11, P: -1, S: +0, B: +1);
         E.SetDiet(Diets.metalivore);
         E.Speed = Speed.S4_5;
@@ -915,11 +928,11 @@ namespace Pathos
       satyr = AddBaseEntity(Kinds.satyr, Races.satyr, "satyr", E =>
       {
         E.Description = "Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.";
-        E.Glyph = Glyphs.satyr;
+        E.Glyph = Glyphs.satyr_male;
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -960,7 +973,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_5;
@@ -1000,11 +1013,11 @@ namespace Pathos
       troll = AddBaseEntity(Kinds.troll, Races.troll, "troll", E =>
       {
         E.Description = "Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.";
-        E.Glyph = Glyphs.troll;
+        E.Glyph = Glyphs.troll_male;
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // tough natural skin.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S4_5;
@@ -1046,7 +1059,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 415;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S4_5;
@@ -1098,7 +1111,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 604;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +5 from dex = 26.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -1149,7 +1162,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 456;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex = 24.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -1199,7 +1212,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 386;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -1245,7 +1258,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 662;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +5 from dex = 27.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -1300,7 +1313,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 148;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +5 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_0;
@@ -1354,7 +1367,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 472;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +5 from dex = 23.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S6_0;
@@ -1408,7 +1421,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 5208;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +4 fromd ex.
         E.SetDiet(Diets.inediate);
@@ -1458,7 +1471,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 5642;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +5 from dex = 35.
         E.SetDiet(Diets.inediate);
@@ -1516,7 +1529,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 5100;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex = 36.
         E.SetDiet(Diets.inediate);
@@ -1578,7 +1591,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 121;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S7_5;
@@ -1627,7 +1640,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 349;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -1680,7 +1693,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 237;
         E.Difficulty = 15;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -1726,7 +1739,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 8;
         E.Difficulty = 4;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -1769,7 +1782,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 684;
         E.Difficulty = 23;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -1810,12 +1823,13 @@ namespace Pathos
 
       giant_cockroach = AddEntity(Kinds.insect, null, "giant cockroach", E =>
       {
+        E.Description = "A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.";
         E.Glyph = Glyphs.giant_cockroach;
         E.Sonic = Sonics.scuttle;
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -1858,7 +1872,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 16;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 14.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -1902,7 +1916,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 32;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3 from dex = 14.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -1953,7 +1967,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 5;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -1996,7 +2010,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 19;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.xylophagy);
         E.Speed = Speed.S4_5;
@@ -2043,7 +2057,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 362;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -2096,7 +2110,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 26;
         E.Difficulty = 5;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +2 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2145,7 +2159,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1153;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -2194,7 +2208,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 74;
         E.Difficulty = 10;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -2 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -2243,7 +2257,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 197;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1 from dex = 23.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2293,7 +2307,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 332;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +1 from dex = 23.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2352,7 +2366,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 648;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -2407,7 +2421,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 237;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2452,7 +2466,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 22;
         E.Difficulty = 6;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2501,7 +2515,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 946;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex = 28.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -2552,7 +2566,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 68;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 20.
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S5_0;
@@ -2610,7 +2624,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 182;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2661,12 +2675,13 @@ namespace Pathos
       //No Clue with what to do this one
       athol = AddEntity(Kinds.bat, null, "athol", E =>
       {
+        E.Description = "These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.";
         E.Glyph = Glyphs.athol;
         E.Sonic = Sonics.chirp;
         E.Level = 5;
         E.Challenge = 22;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from DEX.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2705,12 +2720,13 @@ namespace Pathos
 
       bat = AddEntity(Kinds.bat, null, "bat", E =>
       {
+        E.Description = "Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.";
         E.Glyph = Glyphs.bat;
         E.Sonic = Sonics.chirp;
         E.Level = 0;
         E.Challenge = 6;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 12.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2755,7 +2771,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 575;
         E.Difficulty = 22;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2807,7 +2823,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 10;
         E.Difficulty = 3;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2851,7 +2867,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 397;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2898,12 +2914,13 @@ namespace Pathos
 
       hellbat = AddEntity(Kinds.bat, null, "hellbat", E =>
       {
+        E.Description = "Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.";
         E.Glyph = Glyphs.hellbat;
         E.Sonic = Sonics.chirp;
         E.Level = 7;
         E.Challenge = 69;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +3 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2943,12 +2960,13 @@ namespace Pathos
 
       mobat = AddEntity(Kinds.bat, null, "mobat", E =>
       {
+        E.Description = "Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.";
         E.Glyph = Glyphs.mobat;
         E.Sonic = Sonics.chirp;
         E.Level = 10;
         E.Challenge = 152;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +5 from dex
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -2993,12 +3011,13 @@ namespace Pathos
 
       mongbat = AddEntity(Kinds.bat, null, "mongbat", E =>
       {
+        E.Description = "Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!";
         E.Glyph = Glyphs.mongbat;
         E.Sonic = Sonics.chirp;
         E.Level = 7;
         E.Challenge = 55;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +4 from DEX.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3046,7 +3065,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 827;
         E.Difficulty = 27;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3097,7 +3116,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 54;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from DEX.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3136,18 +3155,19 @@ namespace Pathos
 
       vampire_bat = AddEntity(Kinds.bat, null, "vampire bat", E =>
       {
+        E.Description = "Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.";
         E.Glyph = Glyphs.vampire_bat;
         E.Sonic = Sonics.chirp;
         E.Level = 13;
         E.Challenge = 225;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from DEX = 21.
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S5_0;
         E.Size = Size.Small;
         E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(300);
+        E.Weight = Weight.FromUnits(250);
         E.Figure.Set
         (
           Material: Materials.animal,
@@ -3193,7 +3213,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 11;
         E.Difficulty = 3;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3237,7 +3257,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 33;
         E.Difficulty = 6;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3281,7 +3301,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 63;
         E.Difficulty = 8;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -3325,7 +3345,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 60;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -3375,12 +3395,13 @@ namespace Pathos
 
       chicken = AddDomesticEntity(Kinds.bird, null, "chicken", E =>
       {
+        E.Description = "A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.";
         E.Glyph = Glyphs.chicken;
         E.Sonic = Sonics.cluck;
         E.Level = 2;
         E.Challenge = 2;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore); // TODO: should chicken be omnivore?
         E.Speed = Speed.S5_0;
@@ -3423,7 +3444,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 13;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -3466,7 +3487,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 129;
         E.Difficulty = 7;
-        E.Frequency = 6;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -3522,7 +3543,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 53;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Imitation = true; // imitate other monsters.
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
@@ -3566,7 +3587,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 203;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -3630,7 +3651,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 4;
         E.Difficulty = 2;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewBlobDefence(14); // -2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -3680,7 +3701,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 278;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -3725,12 +3746,13 @@ namespace Pathos
 
       gelatinous_cube = AddEntity(Kinds.blob, null, "gelatinous cube", E =>
       {
+        E.Description = "A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.";
         E.Glyph = Glyphs.gelatinous_cube;
         E.Sonic = Sonics.burble;
         E.Level = 6;
         E.Challenge = 52;
         E.Difficulty = 8;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewBlobDefence(12);
         E.SetDiet(Diets.organivore);
         E.Speed = Speed.S2_0;
@@ -3790,7 +3812,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 174;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBlobDefence(13); // -1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -3839,7 +3861,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 194;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBlobDefence(18); // -1 from dex.
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.omnivore);
@@ -3890,7 +3912,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 29;
         E.Difficulty = 6;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewBlobDefence(14); // -2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S1_5;
@@ -3935,7 +3957,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 258;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBlobDefence(21); // -1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -3989,7 +4011,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 25;
         E.Difficulty = 6;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -4037,7 +4059,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 160;
         E.Difficulty = 12;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -4085,7 +4107,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 520;
         E.Difficulty = 24;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -4137,7 +4159,7 @@ namespace Pathos
         E.Level = 75;
         E.Challenge = 10164;
         E.Difficulty = 80;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -4188,7 +4210,7 @@ namespace Pathos
         E.Level = 75;
         E.Challenge = 10889;
         E.Difficulty = 80;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_3;
@@ -4248,7 +4270,7 @@ namespace Pathos
         E.Level = 75;
         E.Challenge = 10951;
         E.Difficulty = 80;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -4294,7 +4316,7 @@ namespace Pathos
         E.Level = 75;
         E.Challenge = 10006;
         E.Difficulty = 80;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_5;
@@ -4345,7 +4367,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 239;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4397,14 +4419,14 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn4);
       });
 
-      balrog = AddEntity(Kinds.demon, null, "balrog", E =>
+      decinder = AddEntity(Kinds.demon, null, "decinder", E =>
       {
-        E.Glyph = Glyphs.balrog;
+        E.Glyph = Glyphs.decinder;
         E.Sonic = Sonics.chant;
         E.Level = 35;
         E.Challenge = 1236;
         E.Difficulty = 38;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -4461,7 +4483,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1073;
         E.Difficulty = 30;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3 from dex = 24.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -4510,7 +4532,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1303;
         E.Difficulty = 35;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4560,7 +4582,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 1088;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2 from dex = 26.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4608,7 +4630,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 1435;
         E.Difficulty = 33;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4659,7 +4681,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 959;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4713,7 +4735,7 @@ namespace Pathos
         E.Level = 90;
         E.Challenge = 20837;
         E.Difficulty = 95;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +13 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -4774,7 +4796,7 @@ namespace Pathos
         E.Level = 45;
         E.Challenge = 4311;
         E.Difficulty = 50;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_0;
@@ -4836,7 +4858,7 @@ namespace Pathos
         E.Level = 45;
         E.Challenge = 4311;
         E.Difficulty = 50;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_0;
@@ -4889,7 +4911,7 @@ namespace Pathos
         E.Level = 45;
         E.Challenge = 4311;
         E.Difficulty = 50;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_0;
@@ -4945,7 +4967,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 606;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -4993,7 +5015,7 @@ namespace Pathos
         E.Level = 34;
         E.Challenge = 1305;
         E.Difficulty = 37;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +6 from dex = 30.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -5044,7 +5066,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1334;
         E.Difficulty = 31;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5093,7 +5115,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 1114;
         E.Difficulty = 32;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5143,7 +5165,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 296;
         E.Difficulty = 14;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +2 from dex = 24.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5192,7 +5214,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 220;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -5249,7 +5271,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 5549;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +12 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -5301,14 +5323,14 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
       
-      Juiblex = AddUniqueEntity(Kinds.demon, null, "Juiblex", E =>
+      Oeziblegh = AddUniqueEntity(Kinds.demon, null, "Oeziblegh", E =>
       {
-        E.Glyph = Glyphs.Juiblex;
+        E.Glyph = Glyphs.Oeziblegh;
         E.Sonic = Sonics.burble;
         E.Level = 50;
         E.Challenge = 5135;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -5367,7 +5389,7 @@ namespace Pathos
         E.Level = 50;
         E.Challenge = 5177;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5416,14 +5438,14 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Yeenoghu = AddUniqueEntity(Kinds.demon, null, "Yeenoghu", E =>
+      Ghuyaxil = AddUniqueEntity(Kinds.demon, null, "Ghuyaxil", E =>
       {
-        E.Glyph = Glyphs.Yeenoghu;
+        E.Glyph = Glyphs.Ghuyaxil;
         E.Sonic = Sonics.chant;
         E.Level = 50;
         E.Challenge = 5850;
         E.Difficulty = 55;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -5478,7 +5500,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 82;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S0_5;
@@ -5528,7 +5550,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1075;
         E.Difficulty = 35;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +5 from dex = 28.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -5579,7 +5601,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_5;
@@ -5631,7 +5653,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_5;
@@ -5683,7 +5705,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 333;
         E.Difficulty = 15;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_5;
@@ -5738,7 +5760,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 723;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -5797,7 +5819,7 @@ namespace Pathos
         E.Level = 31;
         E.Challenge = 1069;
         E.Difficulty = 35;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5848,7 +5870,7 @@ namespace Pathos
         E.Level = 33;
         E.Challenge = 1421;
         E.Difficulty = 36;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -5907,7 +5929,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 702;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -5938,7 +5960,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability(Materials.silver);
         E.Startup.SetSkill(Qualifications.proficient);
-        E.Startup.SetTalent(Properties.dark_vision);
+        E.Startup.SetTalent(Properties.dark_vision, Properties.polymorph, Properties.polymorph_control);
         E.Startup.SetResistance(Elements.petrify);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 3.d6());
@@ -5953,7 +5975,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 1244;
         E.Difficulty = 29;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +2 from dex = 24.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -6003,7 +6025,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 220;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -6060,7 +6082,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 950;
         E.Difficulty = 28;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +2 from dex = 27.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -6110,7 +6132,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 148;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -6159,7 +6181,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 253;
         E.Difficulty = 14;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -6210,7 +6232,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 634;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -6267,7 +6289,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 55;
         E.Difficulty = 8;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.metalivore);
         E.Speed = Speed.S5_0;
@@ -6324,7 +6346,7 @@ namespace Pathos
         E.Level = 45;
         E.Challenge = 4453;
         E.Difficulty = 50;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -6371,12 +6393,13 @@ namespace Pathos
 
       coyote = AddEntity(Kinds.dog, null, "coyote", E =>
       {
+        E.Description = "A modestly-sized predatory canine, well-known for adaptability and resourcefulness.";
         E.Glyph = Glyphs.coyote;
         E.Sonic = Sonics.howl;
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from DEX = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -6419,7 +6442,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 556;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -6466,7 +6489,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 40;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from DEX = 15.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6509,7 +6532,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 8;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from DEX = 14.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6553,7 +6576,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 20;
         E.Difficulty = 5;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6591,12 +6614,13 @@ namespace Pathos
 
       fox = AddEntity(Kinds.dog, null, "fox", E =>
       {
+        E.Description = "A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.";
         E.Glyph = Glyphs.fox;
         E.Sonic = Sonics.woof;
         E.Level = 0;
         E.Challenge = 4;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6639,7 +6663,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 604;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.carnivore);
@@ -6691,7 +6715,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 240;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.carnivore);
@@ -6738,12 +6762,13 @@ namespace Pathos
 
       jackal = AddEntity(Kinds.dog, null, "jackal", E =>
       {
+        E.Description = "Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.";
         E.Glyph = Glyphs.jackal;
         E.Sonic = Sonics.howl;
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -6786,7 +6811,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 85;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6830,7 +6855,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 40;
         E.Difficulty = 7;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from DEX = 16.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6873,7 +6898,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 8;
         E.Difficulty = 3;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -6916,7 +6941,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1320;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -6969,7 +6994,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 175;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -7012,7 +7037,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 405;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from DEX = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -7063,7 +7088,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 965;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from DEX = 23.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -7109,7 +7134,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 78;
         E.Difficulty = 10;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -7153,7 +7178,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 426;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex = 23.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -7203,7 +7228,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 185;
         E.Difficulty = 12;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // + 1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -7253,7 +7278,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 54;
         E.Difficulty = 8;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -7296,7 +7321,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 211;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from DEX = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -7347,7 +7372,7 @@ namespace Pathos
       var BabyDragonSonic = Sonics.squall;
       var BabyDragonLevel = 4;
       var BabyDragonDefence = NewDragonDefence(18);
-      var BabyDragonFrequency = 2;
+      var BabyDragonFrequency = Frequency.Scarce;
       var BabyDragonChallenge = 22;
       var BabyDragonDifficulty = 5;
       var BabyDragonLifeDice = 1.d8();
@@ -7892,7 +7917,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 294;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20); // +3 from Dex.
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -7942,7 +7967,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 298;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -7992,7 +8017,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 344;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(22);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8046,7 +8071,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 336;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(21);
         E.SetDiet(DragonDiet);
@@ -8097,7 +8122,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 285;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(21);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8149,7 +8174,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 187;
         E.Difficulty = 11;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8199,7 +8224,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 298;
         E.Difficulty = 13;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8249,7 +8274,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 409;
         E.Difficulty = 19;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(23); // +2 from dex.
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8299,7 +8324,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 564;
         E.Difficulty = 20;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(21);
         E.SetDiet(DragonDiet);
@@ -8354,7 +8379,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 198;
         E.Difficulty = 13;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8404,7 +8429,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 310;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewDragonDefence(20);
         E.SetDiet(DragonDiet);
         E.Speed = YoungDragonSpeed;
@@ -8455,7 +8480,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 894;
         E.Difficulty = 25;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(23); // +2 from dex = 25.
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8509,7 +8534,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 598;
         E.Difficulty = 23;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(24);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8565,7 +8590,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 944;
         E.Difficulty = 27;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(26);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8631,7 +8656,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 936;
         E.Difficulty = 27;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(25);
         E.SetDiet(DragonDiet);
@@ -8687,7 +8712,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 785;
         E.Difficulty = 27;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(23); // +1 from dex.
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8744,7 +8769,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 557;
         E.Difficulty = 21;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(24);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8799,7 +8824,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 598;
         E.Difficulty = 23;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(24);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8854,7 +8879,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1109;
         E.Difficulty = 29;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(26); // +2 from dex.
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -8908,7 +8933,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1264;
         E.Difficulty = 30;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(25);
         E.SetDiet(DragonDiet);
@@ -8967,7 +8992,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 598;
         E.Difficulty = 23;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(24);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -9022,7 +9047,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 910;
         E.Difficulty = 25;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(24);
         E.SetDiet(DragonDiet);
         E.Speed = AdultDragonSpeed;
@@ -9078,7 +9103,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1894;
         E.Difficulty = 35;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(27); // +2 from dex = 25.
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9132,7 +9157,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1598;
         E.Difficulty = 33;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(28);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9189,7 +9214,7 @@ namespace Pathos
         E.Level = 34;
         E.Challenge = 1944;
         E.Difficulty = 37;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(30);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9255,7 +9280,7 @@ namespace Pathos
         E.Level = 38;
         E.Challenge = 1936;
         E.Difficulty = 40;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(29);
         E.SetDiet(DragonDiet);
@@ -9312,7 +9337,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1785;
         E.Difficulty = 36;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(27); // +1 from dex.
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9369,7 +9394,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1557;
         E.Difficulty = 31;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(28);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9424,7 +9449,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1598;
         E.Difficulty = 33;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(28);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9480,7 +9505,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 2109;
         E.Difficulty = 37;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(30); // +2 from dex.
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9534,7 +9559,7 @@ namespace Pathos
         E.Level = 37;
         E.Challenge = 2264;
         E.Difficulty = 39;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.IsGuardian = true; // neutral/friendly dragon.
         E.Defence = NewDragonDefence(29);
         E.SetDiet(DragonDiet);
@@ -9593,7 +9618,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1598;
         E.Difficulty = 33;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(28);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9649,7 +9674,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1910;
         E.Difficulty = 35;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewDragonDefence(28);
         E.SetDiet(DragonDiet);
         E.Speed = AncientDragonSpeed;
@@ -9705,7 +9730,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1446;
         E.Difficulty = 33;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewDragonDefence(27);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -9769,7 +9794,7 @@ namespace Pathos
         E.Level = 39;
         E.Challenge = 1713;
         E.Difficulty = 38;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewDragonDefence(30); // +2 from str = 32.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -9836,7 +9861,7 @@ namespace Pathos
         E.Level = 34;
         E.Challenge = 1350;
         E.Difficulty = 36;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +1 from dex = 28.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -9887,7 +9912,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 3500;
         E.Difficulty = 40;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 30, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -9949,7 +9974,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 530;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -10003,7 +10028,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 224;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -10054,7 +10079,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 668;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex = 16.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -10111,7 +10136,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 257;
         E.Difficulty = 16;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1 from dex = 12.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -10162,7 +10187,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 78;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +3 from dex = 13.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -10212,7 +10237,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 204;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -10257,13 +10282,13 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      Thorin = AddUniqueEntity(Kinds.dwarf, Races.dwarf, "Thorin", E =>
+      Tholmak = AddUniqueEntity(Kinds.dwarf, Races.dwarf, "Tholmak", E =>
       {
-        E.Glyph = Glyphs.Thorin;
+        E.Glyph = Glyphs.Tholmak;
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
@@ -10295,7 +10320,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.pick, Skills.medium_blade, Skills.axe, Skills.light_armour, Skills.medium_armour, Skills.heavy_armour);
-        E.Startup.SetTalent(Properties.dark_vision, Properties.vitality, Properties.searching, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.free_action, Properties.dark_vision, Properties.vitality, Properties.searching, Properties.polymorph_control, Properties.teleport_control);
         E.Startup.SetResistance(Elements.magical);
         E.Startup.Loot.AddKit(Chance.OneIn7, Items.dwarvish_cloak);
         E.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus3, Items.dwarvish_iron_helm);
@@ -10320,7 +10345,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 418;
         E.Difficulty = 18;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex = 17.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -10369,7 +10394,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 848;
         E.Difficulty = 26;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -10418,7 +10443,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1008;
         E.Difficulty = 33;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -10467,7 +10492,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 67;
         E.Difficulty = 10;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
@@ -10512,7 +10537,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 217;
         E.Difficulty = 14;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex = 22.
         E.SetDiet(Diets.omnivore);
         E.SetTerrain(Materials.water, Materials.air);
@@ -10556,7 +10581,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 305;
         E.Difficulty = 16;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
@@ -10603,7 +10628,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 105;
         E.Difficulty = 11;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.SetTerrain(Materials.water, Materials.air);
@@ -10651,7 +10676,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 49;
         E.Difficulty = 7;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.SetTerrain(Materials.water);
@@ -10701,7 +10726,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 447;
         E.Difficulty = 22;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
@@ -10751,7 +10776,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 46;
         E.Difficulty = 8;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
@@ -10795,7 +10820,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 125;
         E.Difficulty = 12;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 18, P: +2, S: +2, B: -2);
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -10841,7 +10866,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 482;
         E.Difficulty = 20;
-        E.Frequency = 10;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.SetTerrain(Materials.water);
@@ -10886,7 +10911,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 0;
         E.Difficulty = 0;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsAnimate = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
@@ -10929,7 +10954,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 24;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewEyeDefence(11); // +1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -10980,7 +11005,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 54;
         E.Difficulty = 7;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewEyeDefence(11); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -11031,7 +11056,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 80;
         E.Difficulty = 9;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -11083,7 +11108,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 54;
         E.Difficulty = 11;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewEyeDefence(21); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -11136,7 +11161,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 156;
         E.Difficulty = 13;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewEyeDefence(15); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -11186,7 +11211,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 505;
         E.Difficulty = 20;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +5 from dex = 22
         E.SetDiet(Diets.inediate);
         E.SetTerrain(Materials.air);
@@ -11239,7 +11264,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 605;
         E.Difficulty = 22;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21
         E.SetTerrain(Materials.air, Materials.ice, Materials.water);
         E.SetDiet(Diets.inediate);
@@ -11292,7 +11317,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 405;
         E.Difficulty = 18;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex = 20
         E.SetTerrain(Materials.air);
         E.SetDiet(Diets.inediate);
@@ -11337,7 +11362,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 327;
         E.Difficulty = 16;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.inediate);
@@ -11390,7 +11415,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 226;
         E.Difficulty = 14;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.inediate);
@@ -11436,7 +11461,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 55;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -11479,7 +11504,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 455;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_5;
@@ -11524,7 +11549,7 @@ namespace Pathos
         E.Level = 37;
         E.Challenge = 2055;
         E.Difficulty = 38;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetTerrain(Materials.fire, Materials.air);
         E.SetDiet(Diets.inediate);
@@ -11577,7 +11602,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 979;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_0;
@@ -11623,7 +11648,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 65;
         E.Difficulty = 9;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +4 from dex = 17
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -11669,7 +11694,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 225;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -11700,7 +11725,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient, Skills.bow, Skills.light_armour, Skills.light_blade, Skills.medium_blade, Skills.necromancy, Skills.literacy);
-        E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible); // drow do not have darkvision in Nethack lore, but it doesn't make sense.
+        E.Startup.SetTalent(Properties.dark_vision, Properties.see_invisible); // drow do not have darkvision in NetHack lore, but it doesn't make sense.
         E.Startup.SetResistance(Elements.sleep);
         E.Startup.AddGrimoire(Dice.One, Spells.darkness);
         E.Startup.Loot.AddKit(Chance.Always, Items.drow_bow);
@@ -11717,13 +11742,13 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      Earendil = AddUniqueEntity(Kinds.elf, Races.elf, "Earendil", E =>
+      Raedilan = AddUniqueEntity(Kinds.elf, Races.elf, "Raedilan", E =>
       {
-        E.Glyph = Glyphs.Earendil;
+        E.Glyph = Glyphs.Raedilan;
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
@@ -11769,7 +11794,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 713;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -11825,7 +11850,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 636;
         E.Difficulty = 22;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -11867,13 +11892,13 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      Elwing = AddUniqueEntity(Kinds.elf, Races.elf, "Elwing", E =>
+      Sairou = AddUniqueEntity(Kinds.elf, Races.elf, "Sairou", E =>
       {
-        E.Glyph = Glyphs.Elwing;
+        E.Glyph = Glyphs.Sairou;
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
@@ -11905,7 +11930,7 @@ namespace Pathos
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.master, Skills.swimming, Skills.literacy);
-        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control);
+        E.Startup.SetTalent(Properties.see_invisible, Properties.dark_vision, Properties.polymorph_control, Properties.teleport_control, Properties.flight);
         E.Startup.SetResistance(Elements.sleep, Elements.magical);
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
         E.AddAttack(AttackTypes.weapon, Elements.physical, 1.d8());
@@ -11919,7 +11944,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 189;
         E.Difficulty = 12;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -11972,7 +11997,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 242;
         E.Difficulty = 16;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex = 14.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -12022,7 +12047,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 427;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -12074,7 +12099,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 60;
         E.Difficulty = 9;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -12127,7 +12152,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1508;
         E.Difficulty = 34;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewEyeDefence(26); // +1 from dex=27.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -12200,7 +12225,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 76;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewEyeDefence(16); // +2 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -12252,7 +12277,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 406;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -12302,7 +12327,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 7;
         E.Difficulty = 3;
-        E.Frequency = 6;
+        E.Frequency = Frequency.Abundant;
         E.Defence = NewEyeDefence(8); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S1_5;
@@ -12351,7 +12376,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 6;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewEyeDefence(15); // -5 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -12398,7 +12423,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 34;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewEyeDefence(13); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -12463,7 +12488,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 42;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S7_5;
@@ -12515,7 +12540,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1450;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex, +2 from displacement = 30.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -12561,7 +12586,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 531;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -12607,7 +12632,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 20;
         E.Difficulty = 5;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12651,7 +12676,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 374;
         E.Difficulty = 18;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12696,7 +12721,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 161;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -12748,7 +12773,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 8;
         E.Difficulty = 3;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12792,7 +12817,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 40;
         E.Difficulty = 7;
-        E.Frequency = 7;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 DEX
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12838,7 +12863,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 208;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12883,7 +12908,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 45;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -12915,9 +12940,9 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.stealth, Properties.beatitude);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d2()); // +2 from str.
-        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d5());
-        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d8());
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4()); // +2 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
         E.SetCorpse(Chance.Always);
       });
 
@@ -12928,7 +12953,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 691;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -12974,7 +12999,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 252;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -13006,9 +13031,9 @@ namespace Pathos
         E.Chemistry.SetVulnerability();
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.stealth, Properties.beatitude);
-        E.AddAttack(AttackTypes.claw, Elements.physical, 4.d2()); // +3 from str.
+        E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6()); // +3 from str.
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d6());
-        E.AddAttack(AttackTypes.bite, Elements.physical, 5.d3());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d6());
         E.SetCorpse(Chance.Always);
       });
       #endregion
@@ -13021,7 +13046,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 61;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -13070,12 +13095,13 @@ namespace Pathos
 
       brown_mould = AddEntity(Kinds.fungus, null, "brown mould", E =>
       {
+        E.Description = "An overgrown, acrid fungus that seems to emit oddly chilling fumes.";
         E.Glyph = Glyphs.brown_mould;
         E.Sonic = Sonics.burble;
         E.Level = 1;
         E.Challenge = 4;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S1_5;
@@ -13132,7 +13158,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 46;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -13186,7 +13212,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 4;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S1_5;
@@ -13230,12 +13256,13 @@ namespace Pathos
 
       lichen = AddEntity(Kinds.fungus, null, "lichen", E =>
       {
+        E.Description = "An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.";
         E.Glyph = Glyphs.lichen;
         E.Sonic = Sonics.burble;
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S1_5;
@@ -13278,7 +13305,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 4;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -13330,7 +13357,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -13380,7 +13407,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 19;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -5 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -13425,7 +13452,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 3;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -5 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S1_5;
@@ -13477,7 +13504,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 678;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +3 from dex = 27.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S4_5;
@@ -13531,7 +13558,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 178;
         E.Difficulty = 12;
-        E.Frequency = 0; // graveyard zoo.
+        E.Frequency = Frequency.None; // graveyard zoo.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +1 from dex = 25.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -13575,7 +13602,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 309;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -13626,7 +13653,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 67;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +2 from dex = 16.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -13678,7 +13705,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 1005;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S4_5;
@@ -13724,7 +13751,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 658;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // -1 from dex = 25.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -13770,7 +13797,7 @@ namespace Pathos
         E.Level = 80;
         E.Challenge = 12388;
         E.Difficulty = 85;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S5_0;
@@ -13818,7 +13845,7 @@ namespace Pathos
         E.Level = 80;
         E.Challenge = 12802;
         E.Difficulty = 85;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S5_0;
@@ -13866,7 +13893,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 414;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.geophagy);
@@ -13914,7 +13941,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 441;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_0;
@@ -13961,7 +13988,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1300;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -14018,7 +14045,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 229;
         E.Difficulty = 14;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from dex = 14.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_0;
@@ -14062,7 +14089,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 91;
         E.Difficulty = 11;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex = 17.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_0;
@@ -14110,7 +14137,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 659;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex = 22.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_0;
@@ -14157,7 +14184,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 1143;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex = 29.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S5_0;
@@ -14207,7 +14234,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 385;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -14253,7 +14280,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 956;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -14305,7 +14332,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 441;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -14354,7 +14381,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 647;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -14402,7 +14429,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 11;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 8, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -14453,7 +14480,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 15;
         E.Difficulty = 4;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -14500,7 +14527,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 31;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -14546,7 +14573,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 524;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -14602,7 +14629,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 23;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -14648,7 +14675,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 151;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -14697,7 +14724,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 425;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -14743,7 +14770,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1182;
         E.Difficulty = 36;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -14793,7 +14820,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 184;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex = 16.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -14851,7 +14878,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 710;
         E.Difficulty = 30;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +6 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_0;
@@ -14900,7 +14927,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 715;
         E.Difficulty = 30;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -14952,7 +14979,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 456;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -15005,7 +15032,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 84;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -15051,7 +15078,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 635;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -15105,7 +15132,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 169;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -15154,7 +15181,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15199,7 +15226,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 695;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_0;
@@ -15247,7 +15274,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 23;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15292,7 +15319,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 62;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -15340,7 +15367,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 839;
         E.Difficulty = 30;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15389,7 +15416,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 601;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15438,7 +15465,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 731;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15487,7 +15514,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1014;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15536,7 +15563,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 501;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15585,7 +15612,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 199;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -15638,7 +15665,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1112;
         E.Difficulty = 34;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -15693,7 +15720,7 @@ namespace Pathos
         E.Level = 36;
         E.Challenge = 1212;
         E.Difficulty = 38;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 35, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -15736,7 +15763,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 673;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -15782,7 +15809,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15826,7 +15853,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 47;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -15872,7 +15899,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 310;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -15920,7 +15947,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 29;
         E.Difficulty = 6;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -15971,7 +15998,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 398;
         E.Difficulty = 18;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -16018,7 +16045,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 649;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +1 from dex = 24.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -16062,11 +16089,11 @@ namespace Pathos
       #region human.
       merchant = AddEntity(Kinds.human, Races.human, "merchant", E =>
       {
-        E.Glyph = Glyphs.merchant;
+        E.Glyph = Glyphs.general_merchant;
         E.Level = 24;
         E.Challenge = 666;
         E.Difficulty = 28;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16121,7 +16148,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 234;
         E.Difficulty = 15;
-        E.Frequency = 0; // shrine cleric.
+        E.Frequency = Frequency.None; // shrine cleric.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16176,7 +16203,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 234;
         E.Difficulty = 15;
-        E.Frequency = 0; // shrine cleric.
+        E.Frequency = Frequency.None; // shrine cleric.
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16206,9 +16233,9 @@ namespace Pathos
         E.SetGender(Genders.male);
         E.SetGreed(SentientGreed);
         E.Chemistry.SetVulnerability();
-        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.mace, Skills.light_armour, Skills.literacy, Skills.necromancy);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.clerical, Skills.conjuration, Skills.flail, Skills.light_armour, Skills.literacy, Skills.necromancy);
         E.Startup.SetResistance(Elements.shock);
-        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.silver_mace, Items.mace]);
+        E.Startup.Loot.AddKit(Modifier.Plus1to3, [Items.gold_flail, Items.flail]);
         E.Startup.Loot.AddKit(Chance.OneIn3, 1.d2(), Stocks.scroll);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.book);
         E.Startup.Loot.AddKit(Chance.OneIn10, Dice.One, Stocks.wand);
@@ -16231,7 +16258,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 314;
         E.Difficulty = 18;
-        E.Frequency = 0; // shrine artisan.
+        E.Frequency = Frequency.None; // shrine artisan.
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16287,7 +16314,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 534;
         E.Difficulty = 20;
-        E.Frequency = 0; // shrine witch.
+        E.Frequency = Frequency.None; // shrine witch.
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16346,7 +16373,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 254;
         E.Difficulty = 16;
-        E.Frequency = 0; // shrine dryad.
+        E.Frequency = Frequency.None; // shrine dryad.
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -16405,7 +16432,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1276;
         E.Difficulty = 30;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
@@ -16457,7 +16484,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 993;
         E.Difficulty = 32;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16511,7 +16538,7 @@ namespace Pathos
         E.Level = 45;
         E.Challenge = 4938;
         E.Difficulty = 38;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16558,7 +16585,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 541;
         E.Difficulty = 20;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -16602,7 +16629,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 2626;
         E.Difficulty = 35;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16650,7 +16677,7 @@ namespace Pathos
         E.Level = 100;
         E.Challenge = 20000;
         E.Difficulty = 50;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 40, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -16714,7 +16741,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 338;
         E.Difficulty = 12;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -16765,7 +16792,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 129;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Imitation = true; // imitate other monsters when bored.
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
@@ -16813,7 +16840,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1253;
         E.Difficulty = 30;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.herbivore);
@@ -16860,7 +16887,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 212;
         E.Difficulty = 14;
-        E.Frequency = 0; // summoned by merchants and alerted as vault guards.
+        E.Frequency = Frequency.None; // summoned by merchants and alerted as vault guards.
         E.IsGuardian = false; // will not fight hostiles.
         E.IsMercenary = false; // cannot be hired.
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -16908,7 +16935,7 @@ namespace Pathos
         E.Level = 40;
         E.Challenge = 2498;
         E.Difficulty = 44;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -16959,7 +16986,7 @@ namespace Pathos
         E.Level = 40;
         E.Challenge = 2498;
         E.Difficulty = 44;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17011,7 +17038,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 958;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 dex = 23.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -17068,7 +17095,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17113,7 +17140,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 763;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18 (plus plate mail).
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -17161,13 +17188,13 @@ namespace Pathos
         E.SetCorpse(Chance.OneIn3);
       });
 
-      Lareth = AddUniqueEntity(Kinds.human, Races.human, "Lareth", E =>
+      Oleyth = AddUniqueEntity(Kinds.human, Races.human, "Oleyth", E =>
       {
-        E.Glyph = Glyphs.Lareth;
+        E.Glyph = Glyphs.Oleyth;
         E.Level = 15;
         E.Challenge = 516;
         E.Difficulty = 20;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -17215,7 +17242,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1263;
         E.Difficulty = 31;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17261,7 +17288,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1268;
         E.Difficulty = 30;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17307,7 +17334,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 2443;
         E.Difficulty = 40;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 32, P: +0, S: +0, B: +0); // +8 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17359,7 +17386,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1295;
         E.Difficulty = 31;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +7 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -17406,7 +17433,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1288;
         E.Difficulty = 31;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17455,7 +17482,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 968;
         E.Difficulty = 23;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_5;
@@ -17499,7 +17526,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1000;
         E.Difficulty = 34;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -17572,7 +17599,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 993;
         E.Difficulty = 23;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17616,7 +17643,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 968;
         E.Difficulty = 23;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17661,7 +17688,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 190;
         E.Difficulty = 13;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -17709,7 +17736,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 199;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -17757,7 +17784,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 57;
         E.Difficulty = 9;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -17810,7 +17837,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 226;
         E.Difficulty = 13;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17860,7 +17887,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17904,7 +17931,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 963;
         E.Difficulty = 22;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17948,7 +17975,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1263;
         E.Difficulty = 31;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
@@ -17993,7 +18020,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 1223;
         E.Difficulty = 31;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
@@ -18040,7 +18067,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 511;
         E.Difficulty = 20;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S4_0;
@@ -18081,13 +18108,13 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Thoth_Amon = AddUniqueEntity(Kinds.human, Races.human, "Thoth Amon", E =>
+      Jharothy = AddUniqueEntity(Kinds.human, Races.human, "Jharothy", E =>
       {
-        E.Glyph = Glyphs.Thoth_Amon;
+        E.Glyph = Glyphs.Jharothy;
         E.Level = 15;
         E.Challenge = 499;
         E.Difficulty = 20;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S4_2;
@@ -18131,13 +18158,13 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Twoflower = AddUniqueEntity(Kinds.human, Races.human, "Twoflower", E =>
+      Farwander = AddUniqueEntity(Kinds.human, Races.human, "Farwander", E =>
       {
-        E.Glyph = Glyphs.Twoflower;
+        E.Glyph = Glyphs.Farwander;
         E.Level = 30;
         E.Challenge = 2461;
         E.Difficulty = 35;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 29, P: +0, S: +0, B: +0); // 'lucky' protection and +1 from dex.
         E.SetDiet(Diets.omnivore);
@@ -18187,7 +18214,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 2468;
         E.Difficulty = 33;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
@@ -18240,7 +18267,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1291;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -18306,7 +18333,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 161;
         E.Difficulty = 12;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.IsMercenary = false;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -18353,7 +18380,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 42;
         E.Difficulty = 8;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.IsMercenary = false;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -18400,7 +18427,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 65;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18450,7 +18477,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 63;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18495,7 +18522,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 734;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -18546,7 +18573,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 684;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 22.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -18593,7 +18620,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 10;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18643,7 +18670,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 10;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18688,7 +18715,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 537;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18739,7 +18766,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 507;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +5 from dex = 23.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18785,7 +18812,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 387;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18836,7 +18863,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 347;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18882,7 +18909,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 955;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 22.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18933,7 +18960,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 875;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +4 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -18980,7 +19007,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 211;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex = 12.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19030,7 +19057,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 198;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19075,7 +19102,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 50;
         E.Difficulty = 8;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19126,7 +19153,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 150;
         E.Difficulty = 10;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19174,7 +19201,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 200;
         E.Difficulty = 12;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19226,7 +19253,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 250;
         E.Difficulty = 14;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19278,7 +19305,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 5;
         E.Difficulty = 1;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19323,7 +19350,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 15;
         E.Difficulty = 2;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19368,7 +19395,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 20;
         E.Difficulty = 3;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19414,7 +19441,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 25;
         E.Difficulty = 4;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -19462,7 +19489,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 478;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19526,7 +19553,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 200;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19585,7 +19612,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 264;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S3_7;
@@ -19633,7 +19660,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 10;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19676,7 +19703,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 42;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19719,7 +19746,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 87;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19762,7 +19789,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 9;
         E.Difficulty = 3;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19815,7 +19842,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 51;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19859,7 +19886,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -3 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -19905,7 +19932,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -1 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -19952,7 +19979,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 71;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -19998,7 +20025,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 90;
         E.Difficulty = 10;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -20051,7 +20078,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 60;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -20097,7 +20124,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 875;
         E.Difficulty = 27;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -20153,7 +20180,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 25;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewJellyDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S1_5;
@@ -20210,7 +20237,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 352;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewJellyDefence(20); // -3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -20260,7 +20287,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 149;
         E.Difficulty = 12;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = NewJellyDefence(18); // -3 from dex = 15.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_0;
@@ -20313,7 +20340,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 100;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewJellyDefence(15); // -3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -20366,7 +20393,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 338;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewJellyDefence(19); // -3 from dex = 16.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -20419,7 +20446,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 42;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewJellyDefence(15); // -3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -20467,7 +20494,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 510;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewJellyDefence(20); // -3 from dex = 17.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -20523,7 +20550,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 2;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -20570,7 +20597,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 394;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -20622,7 +20649,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 190;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -20669,7 +20696,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 17;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -20720,7 +20747,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 205;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -20766,7 +20793,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 7;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -20812,7 +20839,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 87;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from DEX
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -20859,7 +20886,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 65;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +2 from DEX
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -20907,7 +20934,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 34;
         E.Difficulty = 4;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -20955,7 +20982,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 218;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -21013,7 +21040,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 815;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(24); // +2 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -21063,7 +21090,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 320;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(21); // +1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -21113,7 +21140,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 225;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(19); // +1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -21163,7 +21190,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 426;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(23); // +1 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -21213,7 +21240,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1598;
         E.Difficulty = 35;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(28); // +2 from dex = 30.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -21272,14 +21299,14 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
-      Vecna = AddUniqueEntity(Kinds.lich, null, "Vecna", E =>
+      Vercrux = AddUniqueEntity(Kinds.lich, null, "Vercrux", E =>
       {
-        E.Glyph = Glyphs.Vecna;
+        E.Glyph = Glyphs.Vercrux;
         E.Sonic = Sonics.moan;
         E.Level = 35;
         E.Challenge = 2534;
         E.Difficulty = 40;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = NewBoneDefence(25); // +3 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_5;
@@ -21328,7 +21355,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 49;
         E.Difficulty = 7;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -21380,7 +21407,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 29;
         E.Difficulty = 3;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -21432,7 +21459,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 49;
         E.Difficulty = 5;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -21485,7 +21512,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 79;
         E.Difficulty = 7;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -21539,7 +21566,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -21583,7 +21610,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 416;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -21643,7 +21670,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 74;
         E.Difficulty = 10;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +3 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -21689,7 +21716,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 184;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_3;
@@ -21729,17 +21756,18 @@ namespace Pathos
 
       gecko = AddEntity(Kinds.lizard, null, "gecko", E =>
       {
+        E.Description = "A particularly cowardly variant of lizard which cannot blink.";
         E.Glyph = Glyphs.gecko;
         E.Sonic = Sonics.chirp;
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 2;
-        E.Frequency = 5;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
         E.Size = Size.Tiny;
-        E.Strategy = Strategy.Attack;
+        E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(100);
         E.Figure.Set
         (
@@ -21776,7 +21804,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 49;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -21821,7 +21849,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 5;
         E.Difficulty = 3;
-        E.Frequency = 5;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -21863,7 +21891,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 652;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -21910,7 +21938,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 26;
         E.Difficulty = 6;
-        E.Frequency = 5;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -21949,11 +21977,12 @@ namespace Pathos
 
       newt = AddEntity(Kinds.lizard, null, "newt", E =>
       {
+        E.Description = "A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.";
         E.Glyph = Glyphs.newt;
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 5;
+        E.Frequency = Frequency.Abundant;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -21999,7 +22028,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 24;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -22049,7 +22078,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 954;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -22103,7 +22132,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 600;
         E.Difficulty = 22;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -22149,7 +22178,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 744;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -22202,7 +22231,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 641;
         E.Difficulty = 23;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -22251,7 +22280,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 481;
         E.Difficulty = 20;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -22300,7 +22329,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 421;
         E.Difficulty = 19;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -22347,7 +22376,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 198;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex = 24.
@@ -22396,7 +22425,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 598;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +4 from dex = 24.
@@ -22448,7 +22477,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1498;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +4 from dex = 24.
@@ -22503,7 +22532,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 196;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
@@ -22551,7 +22580,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 596;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0);
@@ -22603,7 +22632,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1431;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -22658,7 +22687,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 173;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
@@ -22706,7 +22735,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 603;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
@@ -22759,7 +22788,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1427;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -22813,7 +22842,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 173;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -22862,7 +22891,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 498;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -22915,7 +22944,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1513;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -22970,7 +22999,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 164;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23019,7 +23048,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 518;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23072,7 +23101,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1459;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23123,11 +23152,12 @@ namespace Pathos
 
       abbot = AddEntity(Kinds.mercenary, Races.human, "abbot", E =>
       {
+        E.Description = "The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.";
         E.Glyph = Glyphs.abbot;
         E.Level = 23;
         E.Challenge = 812;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
@@ -23177,11 +23207,12 @@ namespace Pathos
 
       acolyte = AddEntity(Kinds.mercenary, Races.human, "acolyte", E =>
       {
+        E.Description = "A lowly-ranked religious assistant, devoted to the faith and its teachings.";
         E.Glyph = Glyphs.acolyte;
         E.Level = 4;
         E.Challenge = 46;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -23227,7 +23258,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 96;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23275,7 +23306,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 110;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23324,7 +23355,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 519;
         E.Difficulty = 14;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +4 from dex.
@@ -23372,11 +23403,12 @@ namespace Pathos
 
       black_marketeer = AddEntity(Kinds.mercenary, Races.human, "black marketeer", E =>
       {
+        E.Description = "A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.";
         E.Glyph = Glyphs.black_marketeer;
         E.Level = 25;
         E.Challenge = 741;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +3 from dex =31.
@@ -23428,11 +23460,12 @@ namespace Pathos
 
       undead_slayer = AddEntity(Kinds.mercenary, Races.human, "undead slayer", E =>
       {
+        E.Description = "The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.";
         E.Glyph = Glyphs.undead_slayer;
         E.Level = 30;
         E.Challenge = 1368;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsMercenary = true;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +4 from dex, avg = 27
@@ -23485,7 +23518,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 156;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -23532,7 +23565,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 151;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
@@ -23580,7 +23613,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1168;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex.
@@ -23623,11 +23656,12 @@ namespace Pathos
 
       chieftain = AddEntity(Kinds.mercenary, Races.human, "chieftain", E =>
       {
+        E.Description = "The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.";
         E.Glyph = Glyphs.chieftain;
         E.Level = 29;
         E.Challenge = 1031;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -1 from dex.
@@ -23676,7 +23710,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 296;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23720,11 +23754,12 @@ namespace Pathos
 
       exterminator = AddEntity(Kinds.mercenary, Races.human, "exterminator", E =>
       {
+        E.Description = "A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.";
         E.Glyph = Glyphs.exterminator;
         E.Level = 18;
         E.Challenge = 550;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
@@ -23774,7 +23809,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 871;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
@@ -23823,7 +23858,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 35;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
@@ -23870,7 +23905,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1274;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0);
@@ -23926,7 +23961,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 746;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +4 from dex.
@@ -23978,7 +24013,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 201;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex.
@@ -24026,7 +24061,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 230;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
@@ -24070,11 +24105,12 @@ namespace Pathos
 
       neanderthal = AddEntity(Kinds.mercenary, Races.human, "neanderthal", E =>
       {
+        E.Description = "An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.";
         E.Glyph = Glyphs.neanderthal;
         E.Level = 17;
         E.Challenge = 421;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
@@ -24117,11 +24153,12 @@ namespace Pathos
 
       occultist = AddEntity(Kinds.mercenary, Races.human, "occultist", E =>
       {
+        E.Description = "A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.";
         E.Glyph = Glyphs.occultist;
         E.Level = 30;
         E.Challenge = 1376;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
@@ -24176,7 +24213,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1236;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5 from dex.
@@ -24222,11 +24259,12 @@ namespace Pathos
 
       page = AddEntity(Kinds.mercenary, Races.human, "page", E =>
       {
+        E.Description = "A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.";
         E.Glyph = Glyphs.page;
         E.Level = 6;
         E.Challenge = 76;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 7, P: +0, S: +0, B: +0); // +3 from dex.
@@ -24277,7 +24315,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 586;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
@@ -24326,7 +24364,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 583;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex.
@@ -24374,7 +24412,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 191;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
@@ -24420,11 +24458,12 @@ namespace Pathos
 
       thug = AddEntity(Kinds.mercenary, Races.human, "thug", E =>
       {
+        E.Description = "A violent outlaw, only motivated by the contents of your coin purse.";
         E.Glyph = Glyphs.thug;
         E.Level = 22;
         E.Challenge = 676;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex.
@@ -24468,11 +24507,12 @@ namespace Pathos
 
       transmuter = AddEntity(Kinds.mercenary, Races.human, "transmuter", E =>
       {
+        E.Description = "An expert sorcerer whose focus is the manipulation of physical reality.";
         E.Glyph = Glyphs.transmuter;
         E.Level = 30;
         E.Challenge = 1475;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex.
@@ -24538,7 +24578,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 976;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
@@ -24583,11 +24623,12 @@ namespace Pathos
 
       proudfoot = AddEntity(Kinds.mercenary, Races.halfling, "proudfoot", E =>
       {
+        E.Description = "An especially squat, bold and swaggering halfling.";
         E.Glyph = Glyphs.proudfoot;
         E.Level = 14;
         E.Challenge = 237;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.IsGuardian = true;
         E.IsMercenary = true;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
@@ -24640,7 +24681,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 17;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -24684,7 +24725,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 207;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -24735,7 +24776,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 720;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -24779,7 +24820,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 542;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -24823,7 +24864,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 312;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +0 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -24867,7 +24908,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 94;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -24914,7 +24955,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 37;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2 from dex=13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -24958,7 +24999,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 232;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +3 from dex=21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -25002,7 +25043,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 883;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex=28.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -25046,7 +25087,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 46;
         E.Difficulty = 7;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -25095,7 +25136,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 326;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -25143,7 +25184,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 437;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -25191,7 +25232,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 953;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -1 from dex = 21.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -25243,7 +25284,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 968;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -2 from dex = 22.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -25295,7 +25336,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 21;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -25343,7 +25384,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 637;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -25395,7 +25436,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -25443,7 +25484,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 386;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex = 19.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -25492,7 +25533,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 1135;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // -2 from dex = 23.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -25546,7 +25587,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 637;
         E.Difficulty = 30;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 30, P: +2, S: -2, B: +2);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_5;
@@ -25612,7 +25653,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 452;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -25663,7 +25704,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 72;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -25708,7 +25749,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 572;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +3 from dex = 20.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -25753,7 +25794,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 75;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -25797,7 +25838,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 747;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex = 25.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -25855,7 +25896,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 82;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -25899,7 +25940,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 272;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3 from dex = 18.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -25952,7 +25993,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 45;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1 from dex = 13.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -26002,7 +26043,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 968;
         E.Difficulty = 23;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsGuardian = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
@@ -26051,7 +26092,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 94;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -26102,7 +26143,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 76;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -26150,7 +26191,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 48;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 6, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -26199,7 +26240,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 220;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +4 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -26252,7 +26293,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 420;
         E.Difficulty = 20;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +5 from dex.
         E.SetDiet(Diets.herbivore);
         E.SetTerrain(Materials.air, Materials.fire);
@@ -26307,7 +26348,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 16;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.herbivore);
@@ -26357,7 +26398,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 79;
         E.Difficulty = 10;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -26408,7 +26449,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 284;
         E.Difficulty = 16;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -26453,7 +26494,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 914;
         E.Difficulty = 28;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -26504,7 +26545,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 614;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -26549,7 +26590,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 437;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -26597,7 +26638,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 610;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -26644,12 +26685,13 @@ namespace Pathos
       #region orc.
       goblin = AddEntity(Kinds.orc, Races.goblin, "goblin", E =>
       {
+        E.Description = "Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.";
         E.Glyph = Glyphs.goblin;
         E.Sonic = Sonics.cackle;
         E.Level = 0;
         E.Challenge = 4;
         E.Difficulty = 1;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -26694,7 +26736,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 389;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -26747,7 +26789,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 678;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -26791,7 +26833,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 7;
         E.Difficulty = 3;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1 from dex = 11.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -26835,7 +26877,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 97;
         E.Difficulty = 7;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -26879,7 +26921,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 734;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -26927,7 +26969,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 819;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -26978,7 +27020,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 15;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 9, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -27026,7 +27068,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 626;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -27083,7 +27125,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 23;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -27132,7 +27174,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 214;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_3;
@@ -27185,7 +27227,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 183;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -27233,7 +27275,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 626;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -27287,7 +27329,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 674;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(22); // -3 from dex = 19.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -27351,7 +27393,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 45;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.fabrivore);
         E.Speed = Speed.S2_0;
@@ -27409,7 +27451,7 @@ namespace Pathos
         E.Level = 36;
         E.Challenge = 1935;
         E.Difficulty = 38;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(33); // -3
         E.SetDiet(Diets.metalivore);
         E.Speed = Speed.S5_0;
@@ -27482,7 +27524,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 13;
         E.Difficulty = 4;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = NewPuddingDefence(15); // -3 from dex = 12.
         E.SetDiet(Diets.metalivore);
         E.Speed = Speed.S1_5;
@@ -27535,7 +27577,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 160;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(17); // -3
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_0;
@@ -27592,7 +27634,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 176;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(17); // -3 from dex = 14.
         E.SetDiet(Diets.fabrivore);
         E.Speed = Speed.S2_0;
@@ -27647,7 +27689,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 1242;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewPuddingDefence(28); // -3 from dex.
         E.SetDiet(Diets.metalivore);
         E.Speed = Speed.S5_0;
@@ -27715,7 +27757,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 977;
         E.Difficulty = 29;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -27759,7 +27801,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 198;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_0;
@@ -27810,7 +27852,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 134;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -27856,7 +27898,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 754;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -27905,7 +27947,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 50;
         E.Difficulty = 8;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_5;
@@ -27949,7 +27991,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 1245;
         E.Difficulty = 37;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex = 17.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28000,7 +28042,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 5;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -28045,7 +28087,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 17;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28092,7 +28134,7 @@ namespace Pathos
         E.Level = 33;
         E.Challenge = 1181;
         E.Difficulty = 34;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_5;
@@ -28139,7 +28181,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28183,7 +28225,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 205;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -28228,7 +28270,7 @@ namespace Pathos
         E.Level = 18;
         E.Challenge = 423;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -28273,7 +28315,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 991;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28325,7 +28367,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 138;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1 from dex = 20.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_5;
@@ -28373,7 +28415,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 5;
         E.Difficulty = 4;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -28418,7 +28460,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 16;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -28468,7 +28510,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 10;
         E.Difficulty = 6;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -28511,7 +28553,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 5;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28555,7 +28597,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 74;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -28612,7 +28654,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 935;
         E.Difficulty = 27;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -28656,7 +28698,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 370;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -28701,7 +28743,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 8;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -28739,12 +28781,13 @@ namespace Pathos
 
       giant_rat = AddEntity(Kinds.rodent, null, "giant rat", E =>
       {
+        E.Description = "A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.";
         E.Glyph = Glyphs.giant_rat;
         E.Sonic = Sonics.squeak;
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S2_5;
@@ -28787,7 +28830,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 39;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -28831,7 +28874,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 20;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -28873,12 +28916,13 @@ namespace Pathos
 
       rabbit = AddDomesticEntity(Kinds.rodent, null, "rabbit", E =>
       {
+        E.Description = "Benign critters prone to hopping and cuteness.";
         E.Glyph = Glyphs.rabbit;
         E.Sonic = Sonics.squeak;
         E.Level = 0;
         E.Challenge = 4;
         E.Difficulty = 1;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -28921,7 +28965,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 7;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -28968,7 +29012,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 12;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29016,7 +29060,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 287;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S5_0;
@@ -29069,7 +29113,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 17;
         E.Difficulty = 4;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.lithivore);
         E.Speed = Speed.S2_0;
@@ -29107,12 +29151,13 @@ namespace Pathos
 
       sewer_rat = AddEntity(Kinds.rodent, null, "sewer rat", E =>
       {
+        E.Description = "Oversized rodents who make their homes in cesspools and gutters.";
         E.Glyph = Glyphs.sewer_rat;
         E.Sonic = Sonics.squeak;
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -29155,7 +29200,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 17;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S2_5;
@@ -29200,7 +29245,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 768;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29256,7 +29301,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 253;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29310,7 +29355,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 3;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -29353,7 +29398,7 @@ namespace Pathos
         E.Level = 29;
         E.Challenge = 1010;
         E.Difficulty = 31;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29408,7 +29453,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 180;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29457,7 +29502,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 52;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -29510,7 +29555,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 19;
         E.Difficulty = 4;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29559,7 +29604,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 28;
         E.Difficulty = 7;
-        E.Frequency = 1; // water fountain.
+        E.Frequency = Frequency.Elusive; // water fountain.
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -29611,7 +29656,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 17;
         E.Difficulty = 5;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // +1 from dex = 15.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29659,7 +29704,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 67;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -29713,7 +29758,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 3;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -29758,7 +29803,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 9;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -29805,7 +29850,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 39;
         E.Difficulty = 7;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29854,7 +29899,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 761;
         E.Difficulty = 25;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29898,14 +29943,14 @@ namespace Pathos
         E.SetCorpse(Chance.Always);
       });
 
-      Lolth = AddUniqueEntity(Kinds.spider, null, "Lolth", E =>
+      Orvalth = AddUniqueEntity(Kinds.spider, null, "Orvalth", E =>
       {
-        E.Glyph = Glyphs.Lolth;
+        E.Glyph = Glyphs.Orvalth;
         E.Sonic = Sonics.scuttle;
         E.Level = 22;
         E.Challenge = 521;
         E.Difficulty = 25;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -29965,7 +30010,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 414;
         E.Difficulty = 25;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -30017,7 +30062,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 201;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // -1 from dex = 19.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -30064,7 +30109,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 366;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -30117,7 +30162,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 676;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -30167,7 +30212,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 42;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -30217,7 +30262,7 @@ namespace Pathos
         E.Level = 19;
         E.Challenge = 914;
         E.Difficulty = 22;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 24, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -30267,7 +30312,7 @@ namespace Pathos
         E.Level = 26;
         E.Challenge = 990;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -30326,7 +30371,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 649;
         E.Difficulty = 24;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -30374,7 +30419,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 64;
         E.Difficulty = 9;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -30419,7 +30464,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 395;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -30463,7 +30508,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 10;
         E.Difficulty = 4;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S1_5;
@@ -30507,7 +30552,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 1210;
         E.Difficulty = 36;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -30559,7 +30604,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 1184;
         E.Difficulty = 29;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3 from dex = 25.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -30608,7 +30653,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 560;
         E.Difficulty = 21;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S2_5;
@@ -30658,7 +30703,7 @@ namespace Pathos
         E.Level = 31;
         E.Challenge = 1247;
         E.Difficulty = 34;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 28, P: +0, S: +0, B: +0); // +3 from dex = 31.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -30706,7 +30751,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 354;
         E.Difficulty = 16;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -30755,7 +30800,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 55;
         E.Difficulty = 9;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -30803,7 +30848,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 781;
         E.Difficulty = 25;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.geophagy);
         E.Speed = Speed.S3_7;
@@ -30852,7 +30897,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 180;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.geophagy);
@@ -30903,7 +30948,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 149;
         E.Difficulty = 12;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.lithivore);
         E.Speed = Speed.S2_0;
@@ -30955,7 +31000,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 930;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2
         E.SetTerrain(Materials.water, Materials.air);
         E.SetDiet(Diets.carnivore);
@@ -31010,7 +31055,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 27;
         E.Difficulty = 6;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +2 from dex = 18.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -31057,7 +31102,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 165;
         E.Difficulty = 10;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // +2 from dex = 19.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -31104,7 +31149,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 204;
         E.Difficulty = 14;
-        E.Frequency = 4;
+        E.Frequency = Frequency.Typical;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from dex = 20.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -31151,7 +31196,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 31;
         E.Difficulty = 7;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S6_0;
@@ -31195,7 +31240,7 @@ namespace Pathos
         E.Level = 30;
         E.Challenge = 1365;
         E.Difficulty = 32;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -31247,7 +31292,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 961;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +3 from dex = 22.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S7_5;
@@ -31292,7 +31337,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 13;
         E.Difficulty = 4;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S5_0;
@@ -31336,7 +31381,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 55;
         E.Difficulty = 9;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +1 from dex = 16.
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S6_0;
@@ -31381,7 +31426,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 544;
         E.Difficulty = 20;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +5
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S5_0;
@@ -31430,7 +31475,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 477;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2 from DEX = 20.
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S3_7;
@@ -31484,7 +31529,7 @@ namespace Pathos
         E.Level = 32;
         E.Challenge = 1094;
         E.Difficulty = 36;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 27, P: +0, S: +0, B: +0); // +3 from dex=30
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S5_0;
@@ -31546,7 +31591,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 703;
         E.Difficulty = 24;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from DEX = 23.
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S3_7;
@@ -31595,7 +31640,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 746;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S3_7;
@@ -31653,7 +31698,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 1185;
         E.Difficulty = 30;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +5
         E.SetTerrain(Materials.air, Materials.fire);
         E.SetDiet(Diets.hematophagy);
@@ -31711,7 +31756,7 @@ namespace Pathos
         E.Level = 28;
         E.Challenge = 1020;
         E.Difficulty = 33;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
         E.SetDiet(Diets.hematophagy);
         E.Speed = Speed.S5_0;
@@ -31774,7 +31819,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 47;
         E.Difficulty = 8;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -31823,7 +31868,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 973;
         E.Difficulty = 27;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // +3 from dex = 26.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -31881,7 +31926,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 695;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3 from dex = 25.
         E.SetTerrain(Materials.air, Materials.fire, Materials.lava);
         E.SetDiet(Diets.inediate);
@@ -31935,7 +31980,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 20;
         E.Difficulty = 4;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S1_5;
@@ -31983,7 +32028,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 89;
         E.Difficulty = 11;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -32040,7 +32085,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 374;
         E.Difficulty = 17;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +3 from dex = 23.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S5_0;
@@ -32095,7 +32140,7 @@ namespace Pathos
         E.Level = 22;
         E.Challenge = 664;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32149,7 +32194,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 184;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -32192,7 +32237,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 184;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -32235,7 +32280,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 341;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32287,7 +32332,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 6;
         E.Difficulty = 3;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32330,7 +32375,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 580;
         E.Difficulty = 21;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -32375,7 +32420,7 @@ namespace Pathos
         E.Level = 20;
         E.Challenge = 8;
         E.Difficulty = 1;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsTail = true;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
@@ -32418,7 +32463,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 2;
         E.Difficulty = 1;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -32464,7 +32509,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 4;
         E.Difficulty = 2;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32507,7 +32552,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 21;
         E.Difficulty = 3;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32557,7 +32602,7 @@ namespace Pathos
         E.Level = 3;
         E.Challenge = 3;
         E.Difficulty = 3;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsTail = true;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
@@ -32600,7 +32645,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 1166;
         E.Difficulty = 37;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 21, P: +0, S: +0, B: +0); // +4
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -32662,7 +32707,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 833;
         E.Difficulty = 26;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // -1 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_3;
@@ -32710,7 +32755,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 38;
         E.Difficulty = 1;
-        E.Frequency = 0;
+        E.Frequency = Frequency.None;
         E.IsTail = true;
         E.Defence = new Defence(D: 23, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
@@ -32753,7 +32798,7 @@ namespace Pathos
         E.Level = 1;
         E.Challenge = 10;
         E.Difficulty = 2;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32796,7 +32841,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 207;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_5;
@@ -32840,7 +32885,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 3;
         E.Difficulty = 1;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_0;
@@ -32892,7 +32937,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 208;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -32935,14 +32980,14 @@ namespace Pathos
         E.SetCorpse(Chance.Never);
       });
 
-      nazgul = AddEntity(Kinds.wraith, null, "nazgul", E =>
+      dread_wraith = AddEntity(Kinds.wraith, null, "dread wraith", E =>
       {
-        E.Glyph = Glyphs.nazgul;
+        E.Glyph = Glyphs.dread_wraith;
         E.Sonic = Sonics.moan;
         E.Level = 22;
         E.Challenge = 664;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +4 from dex = 26.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -33003,7 +33048,7 @@ namespace Pathos
         E.Level = 14;
         E.Challenge = 326;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 19, P: +0, S: +0, B: +0); // +2 from dex = 21.
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -33057,7 +33102,7 @@ namespace Pathos
         E.Level = 5;
         E.Challenge = 84;
         E.Difficulty = 7;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S3_7;
@@ -33123,7 +33168,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 199;
         E.Difficulty = 13;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -33171,7 +33216,7 @@ namespace Pathos
         E.Level = 16;
         E.Challenge = 525;
         E.Difficulty = 18;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -33222,7 +33267,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 749;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.herbivore);
         E.Speed = Speed.S3_7;
@@ -33269,7 +33314,7 @@ namespace Pathos
         E.Level = 10;
         E.Challenge = 167;
         E.Difficulty = 12;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0); // +3
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -33324,7 +33369,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 7;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -33371,7 +33416,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 17;
         E.Difficulty = 6;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX.
         E.SetDiet(Diets.omnivore);
         E.Speed = Speed.S3_7;
@@ -33416,7 +33461,7 @@ namespace Pathos
         E.Level = 6;
         E.Challenge = 40;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from DEX.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -33464,7 +33509,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 414;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -33513,7 +33558,7 @@ namespace Pathos
         E.Level = 25;
         E.Challenge = 938;
         E.Difficulty = 28;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -33558,7 +33603,7 @@ namespace Pathos
         E.Level = 35;
         E.Challenge = 1335;
         E.Difficulty = 36;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 26, P: +0, S: +0, B: +0); // +2 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -33606,7 +33651,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 72;
         E.Difficulty = 9;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0); // +1 from dex = 17.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -33654,7 +33699,7 @@ namespace Pathos
         E.Level = 15;
         E.Challenge = 395;
         E.Difficulty = 17;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // +1 from dex = 14.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -33699,7 +33744,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 76;
         E.Difficulty = 10;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 20, P: +0, S: +0, B: +0); // +1 from dex = 21.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -33745,7 +33790,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 241;
         E.Difficulty = 15;
-        E.Frequency = 2;
+        E.Frequency = Frequency.Scarce;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0); // -1 from dex.
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S2_0;
@@ -33790,7 +33835,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 466;
         E.Difficulty = 19;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 18, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_3;
@@ -33837,7 +33882,7 @@ namespace Pathos
         E.Level = 27;
         E.Challenge = 754;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +4, S: +0, B: +4);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -33889,7 +33934,7 @@ namespace Pathos
         E.Level = 8;
         E.Challenge = 91;
         E.Difficulty = 11;
-        E.Frequency = 3;
+        E.Frequency = Frequency.Occasional;
         E.Defence = new Defence(D: 22, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.lithivore);
         E.Speed = Speed.S2_5;
@@ -33943,7 +33988,7 @@ namespace Pathos
         E.Level = 7;
         E.Challenge = 53;
         E.Difficulty = 8;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -33988,7 +34033,7 @@ namespace Pathos
         E.Level = 11;
         E.Challenge = 134;
         E.Difficulty = 12;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34033,7 +34078,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 188;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34078,7 +34123,7 @@ namespace Pathos
         E.Level = 4;
         E.Challenge = 21;
         E.Difficulty = 6;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_3;
@@ -34111,12 +34156,12 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 1.d2());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 1.d4());
-        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d6());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 1.d5());
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -34128,7 +34173,7 @@ namespace Pathos
         E.Level = 12;
         E.Challenge = 221;
         E.Difficulty = 14;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 17, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S4_5;
@@ -34153,7 +34198,7 @@ namespace Pathos
         );
         E.LifeAdvancement.Set(1.d8());
         E.ManaAdvancement.Set(1.d4());
-        E.DefaultForm.Set(STR: 11, DEX: 8, CON: 7, INT: 6, WIS: 5, CHA: 8);
+        E.DefaultForm.Set(STR: 17, DEX: 8, CON: 7, INT: 6, WIS: 5, CHA: 8);
         E.LimitForm.Set(STR: 30, DEX: 30, CON: 30, INT: 30, WIS: 30, CHA: 30);
         E.SetGender(Genders.male, Genders.female);
         E.SetGreed();
@@ -34161,12 +34206,12 @@ namespace Pathos
         E.Startup.SetSkill(Qualifications.proficient);
         E.Startup.SetTalent(Properties.dark_vision, Properties.vitality);
         E.Startup.SetResistance(Elements.cold, Elements.poison, Elements.drain, Elements.sleep);
-        E.AddAttack(AttackTypes.claw, Elements.physical, Dice.Zero, K =>
+        E.AddAttack(AttackTypes.touch, Elements.physical, Dice.Zero, K =>
         {
           K.Apply.ApplyTransient(Properties.paralysis, 2.d3());
         });
         E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
-        E.AddAttack(AttackTypes.claw, Elements.physical, 2.d4());
+        E.AddAttack(AttackTypes.bite, Elements.physical, 2.d5());
         E.Conveyance.Macro(Tainted);
         E.SetCorpse(Chance.Always);
       });
@@ -34178,7 +34223,7 @@ namespace Pathos
         E.Level = 17;
         E.Challenge = 436;
         E.Difficulty = 20;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 16, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -34234,7 +34279,7 @@ namespace Pathos
         E.Level = 23;
         E.Challenge = 820;
         E.Difficulty = 23;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 25, P: +0, S: +0, B: +0); // +1
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S3_7;
@@ -34289,7 +34334,7 @@ namespace Pathos
         E.Level = 13;
         E.Challenge = 203;
         E.Difficulty = 15;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 14, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34334,7 +34379,7 @@ namespace Pathos
         E.Level = 2;
         E.Challenge = 6;
         E.Difficulty = 4;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34380,7 +34425,7 @@ namespace Pathos
         E.Level = 21;
         E.Challenge = 667;
         E.Difficulty = 24;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 15, P: +0, S: +0, B: +0);
         E.SetDiet(Diets.carnivore);
         E.Speed = Speed.S5_0;
@@ -34430,7 +34475,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 87;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 11, P: +0, S: +0, B: +0); // -1
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34475,7 +34520,7 @@ namespace Pathos
         E.Level = 0;
         E.Challenge = 1;
         E.Difficulty = 1;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 12, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34520,7 +34565,7 @@ namespace Pathos
         E.Level = 9;
         E.Challenge = 78;
         E.Difficulty = 10;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = new Defence(D: 13, P: +0, S: +0, B: +0); // -2
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34564,7 +34609,7 @@ namespace Pathos
         E.Level = 24;
         E.Challenge = 772;
         E.Difficulty = 26;
-        E.Frequency = 1;
+        E.Frequency = Frequency.Elusive;
         E.Defence = NewBoneDefence(20);
         E.SetDiet(Diets.inediate);
         E.Speed = Speed.S2_0;
@@ -34659,16 +34704,6 @@ namespace Pathos
       Register.Alias(shock_sphere, "shocking sphere");
       Register.Alias(frost_sphere, "freezing sphere");
 
-      // non-generically named uniques.
-      Register.Alias(Archpriest_Avvakrum, "Arch Priest");
-      Register.Alias(Archmage_Dirachi, "High Ice Mage");
-      Register.Alias(Archmage_Flaynn, "High Flame Mage");
-      Register.Alias(Lycaon, "High Lycanthrope");
-      Register.Alias(Guru_Quilion, "Grand Master");
-      Register.Alias(Assassin_Mortimer, "Master Assassin");
-      Register.Alias(Guildmaster_Vaughn, "Master of Thieves");
-      Register.Alias(Metamorphius, "Master Shifter");
-
       // renamed to correct spelling of doppelgänger.
       Register.Alias(doppelganger, "doppelganger");
 
@@ -34689,11 +34724,34 @@ namespace Pathos
       // statue gargoyle tiles were not distinct enough and showing 'statue gargoyle status' when concealed was a bit bad.
       Register.Alias(gargoyle, "statue gargoyle");
 
+      // non-generically named uniques.
+      Register.Alias(Archpriest_Avvakrum, "Arch Priest");
+      Register.Alias(Archmage_Dirachi, "High Ice Mage");
+      Register.Alias(Archmage_Flaynn, "High Flame Mage");
+      Register.Alias(Lycaon, "High Lycanthrope");
+      Register.Alias(Guru_Quilion, "Grand Master");
+      Register.Alias(Assassin_Mortimer, "Master Assassin");
+      Register.Alias(Guildmaster_Vaughn, "Master of Thieves");
+      Register.Alias(Metamorphius, "Master Shifter");
+
       // renamed uniques.
       Register.Alias(Deliarne, "Dark One");
       Register.Alias(Huhetotl, "Minion of Huhetotl");
       Register.Alias(Neferet, "Neferet the Green");
       Register.Alias(Kaloi_Thrym, "Dark Lord");
+      Register.Alias(Vercrux, "Vecna");
+      Register.Alias(Farwander, "Twoflower");
+      Register.Alias(Raedilan, "Earendil");
+      Register.Alias(Sairou, "Elwing");
+      Register.Alias(Orvalth, "Lolth");
+      Register.Alias(Ghuyaxil, "Yeenoghu");
+      Register.Alias(Oeziblegh, "Juiblex");
+      Register.Alias(Tholmak, "Thorin");
+      Register.Alias(Oleyth, "Lareth");
+      Register.Alias(Jharothy, "Thoth Amon");
+
+      Register.Alias(dread_wraith, "nazgul");
+      Register.Alias(decinder, "balrog");
       #endregion
     }
 #endif
@@ -34777,7 +34835,7 @@ namespace Pathos
     public readonly Entity ancient_yellow_dragon;
 
     public readonly Entity bad_egg;
-    public readonly Entity balrog;
+    public readonly Entity decinder;
     public readonly Entity baluchitherium;
     public readonly Entity barbed_devil;
     public readonly Entity barking_spider;
@@ -35110,7 +35168,7 @@ namespace Pathos
     public readonly Entity mumak;
     public readonly Entity nabassu;
     public readonly Entity nalfeshnee;
-    public readonly Entity nazgul;
+    public readonly Entity dread_wraith;
     public readonly Entity neanderthal;
     public readonly Entity occultist;
     public readonly Entity newt;
@@ -35351,27 +35409,24 @@ namespace Pathos
     public readonly Entity Count_Dracula;
     public readonly Entity Croesus;
     public readonly Entity Cthulhu;
-    public readonly Entity Kaloi_Thrym;
     public readonly Entity Death;
     public readonly Entity Deliarne;
     public readonly Entity Demogorgon;
     public readonly Entity Dispater;
     public readonly Entity Doctor_Frankenstein;
-    public readonly Entity Earendil;
-    public readonly Entity Elwing;
     public readonly Entity Famine;
+    public readonly Entity Farwander;
     public readonly Entity Father_Dagon;
     public readonly Entity Frankensteins_Monster;
     public readonly Entity Geryon;
+    public readonly Entity Ghuyaxil;
     public readonly Entity Girtab;
     public readonly Entity Guildmaster_Vaughn;
     public readonly Entity Guru_Quilion;
     public readonly Entity Hippocrates;
     public readonly Entity Huhetotl;
     public readonly Entity Ixoth;
-    public readonly Entity Juiblex;
-    public readonly Entity Lareth;
-    public readonly Entity Lolth;
+    public readonly Entity Kaloi_Thrym;
     public readonly Entity Lord_Carnarvon;
     public readonly Entity Lord_Sato;
     public readonly Entity Lord_Surtur;
@@ -35383,21 +35438,26 @@ namespace Pathos
     public readonly Entity Nalzok;
     public readonly Entity Neferet;
     public readonly Entity Norn;
+    public readonly Entity Oeziblegh;
+    public readonly Entity Oleyth;
     public readonly Entity Oracle;
     public readonly Entity Orcus;
     public readonly Entity Orion;
+    public readonly Entity Orvalth;
     public readonly Entity Pelias;
     public readonly Entity Pestilence;
     public readonly Entity Planetar;
+    public readonly Entity Raedilan;
+    public readonly Entity Sairou;
     public readonly Entity Scorpius;
     public readonly Entity Shaman_Karnov;
     public readonly Entity Sir_Lorimar;
     public readonly Entity Solar;
-    public readonly Entity Thorin;
-    public readonly Entity Thoth_Amon;
-    public readonly Entity Twoflower;
+    public readonly Entity Tholmak;
+    public readonly Entity Jharothy;
     public readonly Entity Van_Helsing;
-    public readonly Entity Vecna;
-    public readonly Entity Yeenoghu;
+    public readonly Entity Vercrux;
+    
+    // E, J, Q, U, W, X, Y, Z
   }
 }

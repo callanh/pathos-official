@@ -84,7 +84,7 @@ namespace Pathos
         H.AddMinion(Entities.erinys, 1.d2() - 1); // 0..1
         H.AddMinion(Entities.vrock, 1.d2() - 1); // 0..1
         H.AddMinion(Entities.hezrou, 1.d2() - 1); // 0..1
-        H.AddMinion(Entities.balrog, 1.d2() - 1); // 0..1
+        H.AddMinion(Entities.decinder, 1.d2() - 1); // 0..1
         H.AddMinion(Entities.nalfeshnee, 1.d2() - 1); // 0..1
       });
 

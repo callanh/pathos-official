@@ -50,6 +50,15 @@ namespace Pathos
         P.Description = null;
       });
 
+      sewer_ladder_up = AddPortal("sewer ladder up", Materials.iron, Traversal.Ascend, Glyphs.sewer_ladder_up, Sonics.footsteps, P =>
+      {
+        P.Description = null;
+      });
+      sewer_ladder_down = AddPortal("sewer ladder down", Materials.iron, Traversal.Descend, Glyphs.sewer_ladder_down, Sonics.footsteps, P =>
+      {
+        P.Description = null;
+      });
+
       rift = AddPortal("rift", Materials.ether, Traversal.Travel, Glyphs.rift, Sonics.teleport, P =>
       {
         P.Description = "This twisting and howling gateway of damned souls connects you to the netherworld.";
@@ -84,6 +93,8 @@ namespace Pathos
     public readonly Portal clay_staircase_down;
     public readonly Portal jade_ladder_up;
     public readonly Portal jade_ladder_down;
+    public readonly Portal sewer_ladder_up;
+    public readonly Portal sewer_ladder_down;
     public readonly Portal rift;
     public readonly Portal stone_staircase_up;
     public readonly Portal stone_staircase_down;

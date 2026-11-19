@@ -15,7 +15,7 @@ namespace Pathos
     public static Adventure adventure;
     public static Codex codex;
     public static Site mainSite;
-    public static Region startRegion;
+    public static Region? startRegion;
     public static Zone startZone;
     public static Inv.DistinctList<SPDMap> maps;
     public static SPDMap currentmap;

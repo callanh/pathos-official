@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,強い毒が血管を巡りまわっている。
+﻿AchievementDescription,acquire all positive talents.,すべての有益な性質を取得。
+AchievementDescription,acquire uncontrolled teleportation.,制御されていない瞬間移動状態になる。
+AchievementDescription,Complete the module with a deathless victory.,死亡せずにモジュールを制覇する。
+AchievementDescription,dig through a wall.,壁を掘り進む。
+AchievementDescription,discover every item.,すべてのアイテムの知識を得る。
+AchievementDescription,eat a non-food item.,食用ではないアイテムを食べる。
+AchievementDescription,encounter every entity.,すべてのモンスターに遭遇。
+AchievementDescription,gain complete natural resistances.,すべての属性に対する耐性を自分のものにする。
+AchievementDescription,learn to cast every spell.,すべての呪文を覚える。
+AchievementDescription,maximise all ability scores.,すべての能力値を最大にする。
+AchievementDescription,push a boulder.,巨石を押す。
+AchievementDescription,reach experience level 40.,レベル40に到達する。
+AchievementDescription,recover from 1 life point.,ライフが1の状態から回復する。
+AchievementDescription,train every skill to the limit.,すべてのスキルを最大まで鍛える。
+AchievementDescription,transform an item on the ground.,地面の上のアイテムを変化させる。
+AchievementDescription,transform into another form.,別な姿に変化する。
+AchievementDescription,win without resurrecting.,復活なしで勝利する。
+AchievementName,all curation,コレクション完成
+AchievementName,bouldering,大岩転がし
+AchievementName,deathless,ノーデス
+AchievementName,Dhak Legacy,Dhak Legacy
+AchievementName,exceptional,並外れた才能
+AchievementName,grand champion,究極の覇者
+AchievementName,great experience,経験豊富
+AchievementName,immunity,完全耐性
+AchievementName,Kaloi Opus,Kaloi Opus
+AchievementName,NetHack Codex,NetHack Codex
+AchievementName,peak form,完全体
+AchievementName,Pixel Sojourn,Pixel Sojourn
+AchievementName,polymorphism,変身
+AchievementName,polypiling,ポリパイル
+AchievementName,Short Dungeon,Short Dungeon
+AchievementName,spellbound,魔法の虜
+AchievementName,survivor,死にぞこない
+AchievementName,teleportitis,瞬間移動病
+AchievementName,tunnelling,トンネル掘り
+AchievementName,vore,異食
+AchievementName,well met,よくもここまで
+AfflictionDescription,Deadly venom courses through your veins.,強い毒が血管を巡りまわっている。
 AfflictionDescription,Something deeply unsettling is happening... down there.,かなりヤバいことになっている...　あそこが。
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,胃の奥がかじられているような感じがする。
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,脳の炎症を引き起こし、感染した動物を媒介として広がるウイルス性の病気。
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,上等なミスリルの鎖帷子
 AppearanceName,fizzy potion,シュワシュワした液体の入った小瓶
 AppearanceName,flute,フルート
 AppearanceName,forked polearm,又状の長い武器
+AppearanceName,frayed cloth,布切れ
 AppearanceName,fur boots,毛皮のブーツ
 AppearanceName,fuzzy book,けばだった本
 AppearanceName,glass orb,ガラスの球
@@ -149,11 +188,11 @@ AppearanceName,glass wand,ガラスの棒
 AppearanceName,glasses,メガネ
 AppearanceName,glittering book,きらびやかな本
 AppearanceName,gloomy potion,薄暗い色の液体の入った小瓶
-AppearanceName,glossy arrow,謎の文字のついた黒い矢
-AppearanceName,glossy bow,謎の文字のついた黒い弓
-AppearanceName,glossy dagger,謎の文字のついた黒いダガー
-AppearanceName,glossy mithril-coat,光沢のあるミスリルの鎖帷子
-AppearanceName,glossy short sword,謎の文字のついた黒いショートソード
+AppearanceName,glossy arrow,つやを帯びた矢
+AppearanceName,glossy bow,つやを帯びた弓
+AppearanceName,glossy dagger,つやを帯びたダガー
+AppearanceName,glossy mithril-coat,つやを帯びたミスリルの鎖帷子
+AppearanceName,glossy short sword,つやを帯びたショートソード
 AppearanceName,gold book,金表紙の本
 AppearanceName,gold earrings,金の耳飾り
 AppearanceName,gold ring,金の指輪
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,パピルスの本
 AppearanceName,parchment book,羊皮紙の本
 AppearanceName,pearl earrings,真珠の耳飾り
 AppearanceName,pearl ring,パールの指輪
-AppearanceName,piece of cloth,布地
 AppearanceName,pink book,桃色の本
 AppearanceName,pink potion,桃色の液体の入った小瓶
 AppearanceName,plaid book,格子縞の本
@@ -287,7 +325,7 @@ AppearanceName,runed short sword,謎の文字のついたショートソード
 AppearanceName,runed spear,謎の文字のついた槍
 AppearanceName,runed wand,謎の文字のついた棒
 AppearanceName,rusty wand,さびた棒
-AppearanceName,samurai sword,サムライの剣
+AppearanceName,samurai sword,サムライのソード
 AppearanceName,sapphire ring,サファイアの指輪
 AppearanceName,scoped long gun,スコープのついた長い銃
 AppearanceName,scroll labelled ANDOVA BEGARIN,ANDOVA BEGARINと書かれた巻物
@@ -549,8 +587,10 @@ BoonName,undead army,アンデッドの軍団
 BoonName,unicorn friend,ユニコーンの友達
 CalendarText,d MMMM yyyy,yyyy/M/d
 CharacterName,Adebesi,アデベシ
+CharacterName,Akoya,アコヤ
 CharacterName,Alista,アリスタ
 CharacterName,Amaya,アマヤ
+CharacterName,Armax,アルマックス
 CharacterName,Arnoken,アノーケン
 CharacterName,Arrom,アロン
 CharacterName,Atral,アトラル
@@ -561,6 +601,7 @@ CharacterName,Belietha,ビリーサ
 CharacterName,Bok,ボク
 CharacterName,Bolan,ボラン
 CharacterName,Brouwer,ブロウワー
+CharacterName,Busko,バスコ
 CharacterName,Cailie,ケイリー
 CharacterName,Capo,カポ
 CharacterName,Carthyre,カルチェア
@@ -572,7 +613,10 @@ CharacterName,Crepsal,クレサル
 CharacterName,D'rey,ディ・レイ
 CharacterName,Damano,ダマノ
 CharacterName,Daracy,ダレイシィ
+CharacterName,Dastrne,ダストルン
 CharacterName,Davicohr,ダヴィコウル
+CharacterName,Denier,デニア
+CharacterName,Derent,デレント
 CharacterName,Donneller,ダネラー
 CharacterName,Dug,ダグ
 CharacterName,Elishmeli,エリシュメリ
@@ -582,8 +626,10 @@ CharacterName,Enlan,エンラン
 CharacterName,Ericendrick,エリセンドリック
 CharacterName,Eybrinde,アイブリンデ
 CharacterName,Faraze,ファラーズ
+CharacterName,Farleen,ファーリーン
 CharacterName,Fenlas,フェンラス
 CharacterName,Fenraymond,フェンレイモンド
+CharacterName,Fizzit,フィジット
 CharacterName,Floki,フロキ
 CharacterName,Forro,フォロ
 CharacterName,Franzia,フランツィア
@@ -591,15 +637,20 @@ CharacterName,Galday,ギャルデイ
 CharacterName,Gasberg,ガスバーグ
 CharacterName,Gleichman,グレイクマン
 CharacterName,Gmima,グミマ
+CharacterName,Goggie,グーギー
 CharacterName,Gohu,ゴフ
 CharacterName,Gomack,ゴマック
 CharacterName,Grytt,グリット
 CharacterName,Haelom,ヘイロム
 CharacterName,Haique,ハイク
+CharacterName,Hal,ハル
+CharacterName,Hampte,ハンプ
 CharacterName,Haquian,ハキアン
 CharacterName,Hendrick,ヘンドリック
 CharacterName,Hough,ハフ
+CharacterName,Hylatia,ヒラティア
 CharacterName,Illitasha,イリタシャ
+CharacterName,Iralna,イラルナ
 CharacterName,Ishgood,イシュグッド
 CharacterName,Istophe,イストフ
 CharacterName,Isylav,イシラフ
@@ -608,7 +659,9 @@ CharacterName,Javarl,ジャヴァール
 CharacterName,Jayenason,ジェイェネイソン
 CharacterName,Jeem,ジーム
 CharacterName,Jessera,ジェッセラ
+CharacterName,Jevard,ジェヴァルド
 CharacterName,Jonat,ジョナット
+CharacterName,Karasque,カラスキュ
 CharacterName,Karbri,カルブリ
 CharacterName,Kennold,ケノルド
 CharacterName,Kevugo,ケヴゴ
@@ -619,25 +672,32 @@ CharacterName,Lagratha,ラグラサ
 CharacterName,Lanetwalz,ラネトワルズ
 CharacterName,Lant,ラント
 CharacterName,Lesha,レシャ
+CharacterName,Liloquy,リロカイ
 CharacterName,Luickean,ルイッキーン
+CharacterName,Lunch,ランチ
 CharacterName,Lzay,ルゼィ
 CharacterName,Malasuth,マラサス
 CharacterName,Marisa,マリサ
 CharacterName,Melchai,メルチャイ
 CharacterName,Meloty,メロティ
+CharacterName,Mili,ミリ
 CharacterName,Miller,ミラー
 CharacterName,Misteph,ミステフ
+CharacterName,Mizra,ミズラ
+CharacterName,Neeva,ニーヴァ
 CharacterName,Nichaeltoy,ナイケルトイ
 CharacterName,Ninerma,ニネルマ
 CharacterName,Ninhart,ニンハート
 CharacterName,Ninny,ニニー
 CharacterName,Nodin,ノディン
 CharacterName,Norbant,ノルバント
+CharacterName,Norvric,ノルヴリック
 CharacterName,Okennwood,オケンウッド
 CharacterName,Ollac,オラック
 CharacterName,Omdarro,オンダロ
 CharacterName,Orankin,オランキン
 CharacterName,Oscae,オスカエ
+CharacterName,Ovira,オヴィラ
 CharacterName,Paltrick,パルトリック
 CharacterName,Pauwinner,ポウウィナー
 CharacterName,Penevieve,ペネヴィエヴ
@@ -653,13 +713,17 @@ CharacterName,Quarah,クアラ
 CharacterName,Quibb,クイブ
 CharacterName,Quizchak,クィザック
 CharacterName,Quohnrupley,クォンラプリー
+CharacterName,Rake,レイク
 CharacterName,Rambrant,ランブラント
 CharacterName,Raugarr,ラウガー
 CharacterName,Razz,ラズ
 CharacterName,Rebenna,レベンナ
+CharacterName,Relinsarn,レリンサーン
 CharacterName,Renorber,レノーバー
 CharacterName,Rokiju,ロキジュ
 CharacterName,Rupley,ラプリー
+CharacterName,Rytto,リット
+CharacterName,Samrae,サムリー
 CharacterName,Sarlia,サリア
 CharacterName,Shinaas,シナーズ
 CharacterName,Smither,スミサー
@@ -668,10 +732,13 @@ CharacterName,Stewite,スティワイト
 CharacterName,Sully,サリー
 CharacterName,Talon,タロン
 CharacterName,Tanyacka,タニャッカ
+CharacterName,Tempus,テンパス
 CharacterName,Thakuline,サカラィン
 CharacterName,Threepo,スリーポ
 CharacterName,Timonen,ティモネン
+CharacterName,Toland,トランド
 CharacterName,Trank,トランク
+CharacterName,Uballon,ウバロン
 CharacterName,Udfoot,ウドフット
 CharacterName,Uffle,アッフル
 CharacterName,Ujopayne,ウジョペイン
@@ -683,6 +750,7 @@ CharacterName,Vidar,ヴァイダー
 CharacterName,Vikethome,ヴィケソム
 CharacterName,Viophie,ヴァイオフィ
 CharacterName,Vorzian,ヴォルジャン
+CharacterName,Waldrin,ウォルドリン
 CharacterName,Wallison,ウォリソン
 CharacterName,Waltis,ワルティス
 CharacterName,Walzen,ワルツェン
@@ -694,15 +762,18 @@ CharacterName,Xank,ザンク
 CharacterName,Xantari,ザンタリ
 CharacterName,Xarrung,ザーラン
 CharacterName,Xiolet,ジオレット
+CharacterName,Yahoa,ヤフア
 CharacterName,Yarromdee,ヤーロンディー
 CharacterName,Yassage,ヤセージ
 CharacterName,Yorque,ヨーク
 CharacterName,Yral,イラール
 CharacterName,Yuvaloren,ユヴァロレン
+CharacterName,Zarja,ザルジャ
 CharacterName,Zean,ジーン
 CharacterName,Zerbarry,ザーバリィ
 CharacterName,Zimn,ジン
 CharacterName,Zonagan,ゾナガン
+CharacterName,Zuki,ズキ
 CharacterName,Zultry,ズルトリー
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",長年の熟考と計画を経、人の世に出でんとする予見者。自分の精神を自在にコントロールし、鋼の意志で艱難辛苦に立ち向かう。
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.",弱っている者に手を差し伸べることを喜びとする、面倒見のいい博愛主義者。人助けのため病気とは切っても切れない関係であり、衛生観念の鑑である。あくまで慈善の人であり、仲間の助け無くしては生き残りは厳しいだろう。
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,火や熱によ�
 ElementDescription,Complete resistance to life and mana draining effects.,ライフとマナの吸収効果への耐性。
 ElementDescription,Complete resistance to petrification effects.,石化効果への耐性。
 ElementDescription,Complete resistance to poison damage.,毒への耐性。
-ElementDescription,Protects you against pure magical effects.,純粋な魔力への耐性。
-ElementDescription,You resist attempts to render you into a magical slumber.,魔法による眠りへの耐性。
+ElementDescription,Complete resistance to purely magical damage and effects.,純粋な魔力への耐性。
+ElementDescription,Prevents effects that would cast you into a magical slumber.,魔法による眠りへの耐性。
 ElementName,acid,酸
 ElementName,cold,冷気
 ElementName,digging,掘削
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,重圧
 EncumbranceName,unencumbered,適正
 EngulfmentName,engulfed,呑み込み
 EngulfmentName,swallowed,丸呑み
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,短命ではあるがそこら中に住んでいる、大それた野心を抱きがちな中型の生き物。これといった長所はないが、なめてかかると痛い目を見ることになる。
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",ほぼ透明かつ不定形の存在。しばしば人型の形状をとることで、どう見てもべちゃっとした血しょうのような物体でしかないその体に衣服をまとったり道具を使用したりすることを可能にしている。
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",世に交わることを極端に嫌う、はるか昔から存在する種族。彼らの恐るべき体格と筋力は、大量の肉と鉱物の食事で支えられている。
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",光輪と羽毛に覆われた翼が特徴的な、別世界の美しい住人達。善と悪の闘争との関係は深く、触れるもの全てに神の威光を見出す。
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,この殺戮マシーンには気をつけろ。
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,とどまることをしらない人工知能を持つ、二足歩行の自律メカ。定期的に金属の供給が必要で、水によって損傷を受けやすい融解炉心式エンジンが動力源。
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",堂々としてがっしりとした体躯を誇り、口先、鱗に覆われた体表、飛翔を可能とする翼といった特徴を持つ、人型のドラゴンとでも形容すべき種族。
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",文明の誕生よりもはるか昔に世界を支配していた、大型で雑食の爬虫人類。恐るべき狩人であり、驚くほどの跳躍力と、強固な鱗と厚い皮による堅固な防護を誇る。
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,人の身体に牛の頭と尾が付いた、狂暴な怪物。
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",邪道を地で行く生物。姿は様々ではあるが深紅の肌と角は彼ら共通の特徴である。彼らと同じ空気を吸う者はそれだけでドス黒い暴力への欲求に服従することになる。
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",満腹と言う言葉を知らぬ、巨大な人間型の捕食者。手の甲を地面に引き摺らせるほどに極端な猫背から一見運動は苦手なように思われがちだがその筋骨たるや隆々としたもので、肉体を覆うゴムのような厚皮はどんな傷を付けられようとも見る間に元に戻ってしまうことで特に厄介がられている。
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.",変化の才で人を欺き世に蔓延る、変幻自在の外道達。
-EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,簡素な生活を好む小人達。高い社交性と小柄な体格は日常生活にはうってつけである。
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
+EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,簡素な生活を好む小人達。高い社交性と小柄な体格は小悪党にはうってつけである。
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",自然と魔法を好む気取り屋達。姿形は人間と似ているが、往々にしてより細く俊敏である。
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.",頑健で背が低く、図太い人々。彼らの頑固さ、金属加工の素晴らしさ、そして酒好きっぷりは皆の知るところである。
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",細工ごとや魔術を好む、地下に暮らす小型の人々。苦しい環境での生活に順応した代謝システムを持ち、食料不足が見込まれるような長旅に向く。
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",鉄に反応するプリンは二種存在し、そのうちの小さい方、茶色のプリンは甘いチョコレートというよりは腐った牛乳に近い味がすると言われている。あらゆる布地や革を餌とすることでも知られるが、もっとも有名な能力はその特殊な繁殖方法だ。鉄と接触することで腐った粘液の細胞分裂という奇跡が始まり、二体の食欲旺盛な子プリンとなる。冒険者たちの武器には大抵鉄が使われているおかげで、この生物の数は増加の一途を辿っている。
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",人間の死体をハチミツに浸して作られた極甘のミイラ。それを知られざる秘教の僧達が未知の技法で復活させた、非常に危険かつ美味なる怪物。
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,この奇妙な生きる腐食性の流体生物は、攻撃能力を全く持たないように思える。
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",とても小さな羽根の生えた精霊。元来魔法的な存在であり、言語を絶するほどの美しさを持つ。脅威を感じると、空間の歪みを通って逃げるという芸当も見せる。
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",亀の様な放浪者で、歩けるようになったその時から生地を離れ、頑丈で快適な背中の家と共に世界を旅する。
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",共食いの習慣を持つ、醜く獣じみた生物。好戦的であり、優れた筋力と知的な無能さで知られる。
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,シルバードラゴンの幼体
 EntityName,baby white dragon,ホワイトドラゴンの幼体
 EntityName,baby yellow dragon,イエロードラゴンの幼体
 EntityName,bad egg,悪い卵
-EntityName,balrog,バルログ
 EntityName,baluchitherium,バルキテリウム
 EntityName,banshee,バンシー
 EntityName,bar-lgura,バールグーラ
@@ -1175,6 +1277,7 @@ EntityName,dao,ダオ
 EntityName,dark cleric,闇の従僕
 EntityName,Death,『デス』
 EntityName,death dog,魔犬
+EntityName,decinder,バルログ
 EntityName,deep gnome,地底ノーム
 EntityName,deep one,深きもの
 EntityName,deeper one,更に深きもの
@@ -1191,7 +1294,7 @@ EntityName,disenchanter,ディスエンチャンター
 EntityName,disgusting mould,おぞましいカビ
 EntityName,disintegrator,ディスインテグレーター
 EntityName,Dispater,『ディスパテル』
-EntityName,displacer beast,ディスプレーサービースト
+EntityName,displacer beast,ディスプレイサー・ビースト
 EntityName,djinni,ジン
 EntityName,Doctor Frankenstein,『フランケンシュタイン博士』
 EntityName,dog,犬
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,ドッペルゲンガー
 EntityName,dracolich,ドラゴンのリッチ
 EntityName,dracon,竜人
 EntityName,dragon king,ドラゴンの王
+EntityName,dread wraith,ナズグール
 EntityName,dretch,ドレッチ
 EntityName,drow,ダークエルフ
 EntityName,dryad,森の妖精
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,ドワーフのミイラ
 EntityName,dwarf thief,ドワーフの泥棒
 EntityName,dwarf warrior,ドワーフの戦士
 EntityName,dwarf zombie,ドワーフのゾンビ
-EntityName,Earendil,『エアレンディル』
 EntityName,earth binder,土使い
 EntityName,earth elemental,大地の精
 EntityName,earth maker,土の魔術師
@@ -1227,7 +1330,6 @@ EntityName,elf king,エルフの王
 EntityName,elf lord,エルフの貴族
 EntityName,elf mummy,エルフのミイラ
 EntityName,elf zombie,エルフのゾンビ
-EntityName,Elwing,『エルウィング』
 EntityName,embalmer,遺体整復師
 EntityName,emerald golem,エメラルドのゴーレム
 EntityName,energy vortex,魔力の渦
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,エティンのゾンビ
 EntityName,exterminator,害虫掃除屋
 EntityName,fairy,妖精
 EntityName,Famine,『ファミン』
+EntityName,Farwander,『ツーフラワー』
 EntityName,Father Dagon,父なる『ダゴン』
 EntityName,fiend,魔界人
 EntityName,fire ant,火のアリ
@@ -1274,6 +1377,7 @@ EntityName,ghost,幽霊
 EntityName,ghoul,グール
 EntityName,ghoul mage,グールの魔術師
 EntityName,ghoul queen,グールの女王
+EntityName,Ghuyaxil,『イーノグ』
 EntityName,giant,巨人
 EntityName,giant ant,巨大アリ
 EntityName,giant badger,巨大アナグマ
@@ -1380,9 +1484,9 @@ EntityName,jackal,ジャッカル
 EntityName,jackalwere,半人ジャッカル
 EntityName,jaguar,ジャガー
 EntityName,jellyfish,クラゲ
+EntityName,Jharothy,『トート・アモン』
 EntityName,jiggling blob,ぐにゃぐにゃブロブ
 EntityName,juggernaut,ジャガーノート
-EntityName,Juiblex,『ジュイブレックス』
 EntityName,juvenile raven,若ガラス
 EntityName,Kaloi Thrym,『カロイ・スリュム』
 EntityName,kamadan,カマダン
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,コボルトのゾンビ
 EntityName,komodo dragon,コモドドラゴン
 EntityName,kraken,クラーケン
 EntityName,lamb,子羊
-EntityName,Lareth,『ラレス』
 EntityName,large cat,大きな猫
 EntityName,large dingo,大きなディンゴ
 EntityName,large dog,大きな犬
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,トカゲ族の首領
 EntityName,lizardman mage,トカゲ族の魔術師
 EntityName,lizardman shaman,トカゲ族の霊媒師
 EntityName,lizardman warrior,トカゲ族の戦士
-EntityName,Lolth,『ロルス』
 EntityName,long worm,ロングワーム
 EntityName,long worm tail,ロングワームの尾
 EntityName,Lord Carnarvon,『カーナヴォン卿』
@@ -1481,7 +1583,6 @@ EntityName,mumak,ムーマク
 EntityName,nabassu,ナバス
 EntityName,nalfeshnee,ナルフェシュニー
 EntityName,Nalzok,『ナルゾク』
-EntityName,nazgul,ナズグール
 EntityName,neanderthal,ネアンデルタール人
 EntityName,Neferet,『ネフェレット』
 EntityName,newt,イモリ
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,ヌッペリボー
 EntityName,nurse,ナース
 EntityName,occultist,オカルト信者
 EntityName,ochre jelly,黄土色のゼリー
+EntityName,Oeziblegh,『ジュイブレックス』
 EntityName,ogre,オーガ
 EntityName,ogre king,オーガの王
 EntityName,ogre lord,オーガの貴族
 EntityName,ogre mage,オーガの魔術師
+EntityName,Oleyth,『ラレス』
 EntityName,olog-hai,オログ・ハイ
 EntityName,Oracle,『オラクル』
 EntityName,orange jelly,オレンジゼリー
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,オークの戦士
 EntityName,orc zombie,オークのゾンビ
 EntityName,Orcus,『オルクス』
 EntityName,Orion,『オリオン』
+EntityName,Orvalth,『ロルス』
 EntityName,owlbear,フクロウグマ
 EntityName,pack rat,泥棒ネズミ
 EntityName,page,騎士見習い
@@ -1550,6 +1654,7 @@ EntityName,rabbit,ウサギ
 EntityName,rabid rabbit,狂犬病のウサギ
 EntityName,rabid rat,狂犬病のネズミ
 EntityName,rabid wolf,狂犬病のオオカミ
+EntityName,Raedilan,『エアレンディル』
 EntityName,rancid jelly,悪臭ゼリー
 EntityName,rat king,ネズミの王
 EntityName,ratwere,半人ネズミ
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,ルビーのゴーレム
 EntityName,rust monster,錆びの怪物
 EntityName,rutterkin,ラターキン
 EntityName,sabre-toothed cat,サーベルタイガー
+EntityName,Sairou,『エルウィング』
 EntityName,salamander,火トカゲ
 EntityName,sandestin,サンデスティン
 EntityName,sapphire golem,サファイアのゴーレム
@@ -1629,8 +1735,7 @@ EntityName,student,学生
 EntityName,succubus,サキュバス
 EntityName,swamp kobold,湿地のコボルト
 EntityName,tengu,天狗
-EntityName,Thorin,『トーリン』
-EntityName,Thoth Amon,『トート・アモン』
+EntityName,Tholmak,『トーリン』
 EntityName,thug,暴漢
 EntityName,tiger,虎
 EntityName,tigerwere,半人虎
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,トロルのミイラ
 EntityName,tsetse fly,ツェツェバエ
 EntityName,tunnel worm,穴掘りワーム
 EntityName,two-headed troll,双頭のトロル
-EntityName,Twoflower,『ツーフラワー』
 EntityName,umber hulk,アンバーハルク
 EntityName,undead slayer,アンデッド退治屋
 EntityName,vampire,吸血鬼
@@ -1656,7 +1760,7 @@ EntityName,vampire king,吸血鬼の王
 EntityName,vampire lord,吸血鬼の貴族
 EntityName,vampire mage,吸血鬼の魔術師
 EntityName,Van Helsing,『ヴァン・ヘルシング』
-EntityName,Vecna,『ヴェクナ』
+EntityName,Vercrux,『ヴェクナ』
 EntityName,violet fungus,スミレ色の菌塊
 EntityName,vorpal jabberwock,ヴォーパル・ジャバウォック
 EntityName,vrock,ヴラーク
@@ -1703,7 +1807,6 @@ EntityName,wumpus,ウンパス
 EntityName,wyvern,ワイバーン
 EntityName,xan,シャン
 EntityName,xorn,ゾーン
-EntityName,Yeenoghu,『イーノグ』
 EntityName,yellow jacket,スズメバチ
 EntityName,yellow jelly,黄色いゼリー
 EntityName,yellow light,黄色の光球
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName}の魔法が取り除かれた
 FormatText,{AssetName} was damaged by {ElementName},{AssetName}は{ElementName}によって破損した
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName}は{ElementName}によって破壊された
 FormatText,{AssetName} was disintegrated,{AssetName}は崩れ去った
+FormatText,{AssetName} was recharged,{AssetName}は充填された。
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}の首をはねた
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}へ死に至る恐怖をもたらした
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName}が{Defender:CharacterName}を殺害した
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}の身に起こってしまったことを後悔している
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName}は{Defender:CharacterName}を敵に回した！
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName}は{Defender:CharacterName}に敵意を向けた！
-FormatText,{Base} in {Range},{Range}内の{Base}
 FormatText,{BeamName} beam,{BeamName}ビーム
 FormatText,{BlockName} was disintegrated,{BlockName}は崩れ去った
 FormatText,{BoonName} which direction?,どの方向に{BoonName}を施してもらう？
 FormatText,{BoonName} which item?,どのアイテムに{BoonName}を施してもらう？
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,{Chance}の確率
 FormatText,{Chance} leaves corpse,{Chance} 死体を残す
 FormatText,{Chance} per room,部屋に出現する確率 {Chance}
 FormatText,{Chance} react to {ElementName},{Chance}{ElementName}に反応する
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName}は{Fix
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName}は{Use:FixtureName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName}は{MapName}に{TraversalPastName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",{CharacterName}は{AchievementName}の実績を獲得：{AchievementDescription}
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName}は巧みに{AssetName}{MotionPastName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName}は巧みに{Use:AssetName}で{With:AssetName}{MotionPastName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName}はレベル{LevelNumber}に到達した
@@ -1840,16 +1945,16 @@ FormatText,{CharacterName} gained skill in {SkillName},{CharacterName}は{SkillN
 FormatText,{CharacterName} gained the talent of {PropertyName},{CharacterName}は{PropertyName}の性質を得た
 FormatText,{CharacterName} had already identified all items,{CharacterName}の持ち物は既に全て識別されている
 FormatText,{CharacterName} had an out of body experience,{CharacterName}は幽体離脱したような気がした
-FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterName}の{ElementName}への耐性が{Percent}％になった
+FormatText,{CharacterName} has {Percent}% {ElementName} resistance,{CharacterName}の{ElementName}耐性が{Percent}％になった
 FormatText,{CharacterName} has {PropertyName},{CharacterName}は{PropertyName}の状態になった
 FormatText,{CharacterName} has already achieved {GenderHis} karmic potential,{CharacterName}は既にカルマの上限に至っている//{GenderHis}
 FormatText,{CharacterName} has decreased {AttributeName} by {ModifierNumber},{CharacterName}の{AttributeName}が{ModifierNumber}低下した
-FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}低下した({TotalPoints})
-FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}低下した({TotalPoints})
+FormatText,{CharacterName} has decreased life to {TotalPoints} (-{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}低下した ({TotalPoints})
+FormatText,{CharacterName} has decreased mana to {TotalPoints} (-{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}低下した ({TotalPoints})
 FormatText,{CharacterName} has forgotten something,{CharacterName}は何かを忘れてしまった。
 FormatText,{CharacterName} has increased {AttributeName} by {ModifierNumber},{CharacterName}の{AttributeName}が{ModifierNumber}向上した
-FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}向上した({TotalPoints})
-FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}向上した({TotalPoints})
+FormatText,{CharacterName} has increased life to {TotalPoints} (+{ModifierNumber}),{CharacterName}のライフの最大値が{ModifierNumber}向上した ({TotalPoints})
+FormatText,{CharacterName} has increased mana to {TotalPoints} (+{ModifierNumber}),{CharacterName}のマナの最大値が{ModifierNumber}向上した ({TotalPoints})
 FormatText,{CharacterName} has poor {AttributeName} and is unable to {ActionName},{CharacterName}は{AttributeName}が足りず{ActionName}ことができない
 FormatText,{CharacterName} identified {AssetName},{CharacterName}は{AssetName}を識別した
 FormatText,{CharacterName} improved efficiency with {SpellName},{CharacterName}の{SpellName}の効率が向上した
@@ -1919,7 +2024,7 @@ FormatText,{DiscoveryCount} discovery,{DiscoveryCount}の発見
 FormatText,{Duration} hours,{Duration}時間
 FormatText,{ElementName} charm {KindNames} {Duration},{ElementName}で{KindNames}を{Duration}魅了
 FormatText,{ElementName} pacify {KindNames},{ElementName}で{KindNames}の敵意を削ぐ
-FormatText,{ElementName} resistance,{ElementName}への耐性
+FormatText,{ElementName} resistance,{ElementName}耐性
 FormatText,{EndType} by {EndCause},{EndCause}により{EndType}
 FormatText,{Entropy} entropy,エントロピー {Entropy}
 FormatText,{ExplosionName} explosion,{ExplosionName}の爆発
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName}は{Victim:CharacterName}から持ち物を盗んだ
 FormatText,{WeightUnits} kg,{WeightUnits}kg
 FormatText,{WeightUnits} lbs,{WeightUnits}ポンド
-FormatText,after reaching dungeon level {RecordDepth},ダンジョンレベル{RecordDepth}に到達した後
+FormatText,after reaching depth {RecordDepth},第{RecordDepth}階層まで到達
 FormatText,animate {CharacterName},生命を吹き込まれた{CharacterName}
 FormatText,boost {AttributeName} by enchantment,修正値に応じて{AttributeName}を強化
 FormatText,break {FeatureName},{FeatureName}が壊れる
@@ -1981,7 +2086,7 @@ FormatText,Equip {CharacterName},{CharacterName}を装備する
 FormatText,fame {RecordFame} and {RecordKills} kills,名声{RecordFame}、殺害数{RecordKills}
 FormatText,Feed which item to {CharacterName}?,どのアイテムを{CharacterName}に食べさせる？
 FormatText,from {Cause},{Cause}により
-FormatText,gain {Percent}% {ElementName} resistance,{Percent}％の{ElementName}への耐性を獲得
+FormatText,gain {Percent}% {ElementName} resistance,{Percent}％の{ElementName}耐性を獲得
 FormatText,gain {PropertyName} talent,{PropertyName}の性質を得る
 FormatText,"Hail {CharacterName}, {CharacterDescription}",よくぞ来てくれた{CharacterName}よ！{CharacterDescription}
 FormatText,Hail {PlayerHandle}!,よくぞ来てくれた{PlayerHandle}！
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},レベルの差 {From} から {To}
 FormatText,levels {Number}+,レベルの差 {Number}以上
 FormatText,LOCKED {GATENAME},{GATENAME}は施錠されている
 FormatText,lose {PropertyName} talent,{PropertyName}の性質を失う
-FormatText,not {EffectProperty},{EffectProperty}ではない
 FormatText,polymorph into {EntityNames},{EntityNames}に変化
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},{Percent}%のライフで蘇生 {LoyalText} {CorruptText}
 FormatText,range {Dice},射程{Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,{Dice}回起動
 FormatText,unless resists {ElementName},{ElementName}への抵抗に失敗した場合
 FormatText,unless target has {PropertyName},対象が{PropertyName}の状態ではない場合
 FormatText,versus {Something},{Something}に対して
-FormatText,when {Chance},{Chance}の確率
 FormatText,when {GROUNDNAME},{GROUNDNAME}の場合
 FormatText,when {ITEMNAME},{ITEMNAME}の場合
-FormatText,when {KINDNAMES},{KINDNAMES}の場合
 FormatText,when {MATERIALNAME},{MATERIALNAME}の場合
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}の場合
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}場合
 FormatText,when {Something},{Something}の場合
 FormatText,when {STANDINGNAME},{STANDINGNAME}の場合
 FormatText,when resists {ElementName},{ElementName}に抵抗した場合
+FrequencyName,abundant,豊富
+FrequencyName,elusive,希少
+FrequencyName,none,(なし)
+FrequencyName,occasional,時々
+FrequencyName,scarce,珍しい
+FrequencyName,typical,普通
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,硬い結晶で構成された、簡単には壊れない重厚な扉。
 GateName,crystal door,水晶の扉
 GateName,gold door,金の扉
@@ -2049,11 +2157,13 @@ GenderName,female,女性
 GenderName,male,男性
 GenderName,neuter,中性
 GenderName,non-binary,その他
-GenerationType,module,カスタムMOD
+GenerationType,module,モジュール
 GenerationType,quest,クエストスタジオ
+GenerationType,workshop,ワークショップ
 GradeName,artifact,アーティファクト
 GradeName,exotic,秀逸
 GradeName,standard,普通
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,ひんやりとした石の表面は見事に加工されているが、傷と時の流れははっきりと刻み込まれている。
 GroundName,cave floor,洞窟の床
 GroundName,chasm,がけ穴
@@ -2504,7 +2614,9 @@ ItemName,glaive,グレイブ
 ItemName,gold coin,金貨
 ItemName,gold dragon scale mail,ゴールドドラゴンの鱗鎧
 ItemName,gold dragon scales,ゴールドドラゴンの鱗
+ItemName,gold flail,黄金のフレイル
 ItemName,Gold Key,『黄金の鍵』
+ItemName,gold plate mail,金のプレートメイル
 ItemName,great dagger,グレートダガー
 ItemName,green dragon scale mail,グリーンドラゴンの鱗鎧
 ItemName,green dragon scales,グリーンドラゴンの鱗
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!マスターモード!
 LiteralText,(2d6 instead of 2-12),（乱数表記の変更　例として2-12ではなく2d6に）
 LiteralText,(game information status text),（ゲームの情報や状態）
 LiteralText,(not eligible for hall of fame),（名誉の殿堂の対象外）
+LiteralText,(optional),（任意）
 LiteralText,(recommended for AMOLED screens),（AMOLED液晶にお勧め）
 LiteralText,(SUPPRESSED),（停止中）
 LiteralText,[MASTER],[マスター]
-LiteralText,abolition of firearms,銃器排除令！
+LiteralText,Abolition of firearms,銃器排除令！
 LiteralText,ABOUT,Pathosについて
-LiteralText,About Pathos,Pathosについて
-LiteralText,accelerated resting,休憩中に加速する
+LiteralText,Accelerated resting,休憩中に加速する
+LiteralText,Achievements,実績
 LiteralText,actions,行動回数
 LiteralText,ADD LEVEL,階層追加
 LiteralText,Add new adventurer,新たに冒険者を追加する
@@ -3025,8 +3138,8 @@ LiteralText,alias?,別名?
 LiteralText,ALL,すべて
 LiteralText,ALL AT ONCE,一斉に
 LiteralText,all kind,同種すべて
+LiteralText,all levels,すべての階層
 LiteralText,always,常に
-LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
 LiteralText,anatomy,形態
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,死体を黄泉帰りにする
 LiteralText,ANNOUNCEMENT,お知らせ
 LiteralText,ANONYMOUS,匿名
 LiteralText,anticlockwise 90 degrees,反時計回りに90度
+LiteralText,antique art,アンティーク背景画像
 LiteralText,any item,あらゆるアイテム
 LiteralText,APPLICATION FILES,アプリケーションファイル
 LiteralText,Are you sure you want to end your adventure?,この冒険を終えてもよろしいでしょうか？
@@ -3042,45 +3156,45 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,本当によろしいですか？
 LiteralText,area of effect,効果範囲
 LiteralText,area transient,範囲に一時的効果
+LiteralText,Arrow directional keys,十字キー移動
 LiteralText,ARTIFACTS,アーティファクト
+LiteralText,Ascend,階段を上る
 LiteralText,ASCEND TO PREVIOUS LEVEL,1つ上の階へ昇る
 LiteralText,assess item,アイテムを査定
 LiteralText,assets,アイテム
 LiteralText,ATMOSPHERE,環境音
 LiteralText,attack modifier,攻撃値修正
 LiteralText,Attack which direction?,どの方向に攻撃する？
-LiteralText,attack//noun,攻撃値
-LiteralText,ATTACK//noun,攻撃値
-LiteralText,attack//verb,攻撃する
-LiteralText,ATTACK//verb,攻撃する
+LiteralText,Attack//noun,攻撃値
+LiteralText,Attack//verb,攻撃する
 LiteralText,attacks,攻撃
+LiteralText,AUDIO,オーディオ
 LiteralText,AUTO,自動
 LiteralText,auto saving,セーブ中
+LiteralText,avatar,アバター
 LiteralText,AWAKE,目覚めた
-LiteralText,BACK,戻る
 LiteralText,backfire,暴発
 LiteralText,barrier,壁
 LiteralText,BARRIERS,壁
 LiteralText,bazaar,バザール
 LiteralText,Begin the adventure,冒険を始める
 LiteralText,beholds,見つめる
-LiteralText,beta discussions,ベータ版に関する意見交換
 LiteralText,Black background,背景を黒くする
 LiteralText,blasphemy,冒涜
-LiteralText,BLINK,転位
+LiteralText,Blink,転位
 LiteralText,blink entity,モンスターを転位
 LiteralText,Blink which direction?,どの方向に転位する？
 LiteralText,block,障害物
 LiteralText,BLOCKED,防がれた
 LiteralText,BLOCKS,障害物
-LiteralText,BOONS,恩恵
+LiteralText,Boons,恩恵
 LiteralText,boost attack by enchantment,修正値に応じて攻撃値を強化
 LiteralText,boost damage by enchantment,修正値に応じてダメージを強化
 LiteralText,boost defence by enchantment,修正値に応じて防御値を強化
 LiteralText,boost encumbrance by enchantment,修正値に応じて重い荷物を持てる
 LiteralText,boost speed by enchantment,修正値に応じてスピードを強化
 LiteralText,bounces,壁ではね返る
-LiteralText,break ally loyalty,味方の忠誠心を壊す
+LiteralText,break ally loyalty,味方を中立化
 LiteralText,broken,壊れた
 LiteralText,BROKEN,壊れた
 LiteralText,burst rate,連射
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,目が見えない
 LiteralText,CAN'T SLIDE,すり抜けられない
 LiteralText,CAN'T TELEKINESIS,念動力が使えない
 LiteralText,CAN'T THROW,投げられない
-LiteralText,CANCEL,取消
+LiteralText,Cancel,取消
 LiteralText,cancellation,魔法除去
 LiteralText,CANCELLED,取り消した
 LiteralText,capture any entity,あらゆる大きさのモンスターを捕獲
@@ -3105,13 +3219,12 @@ LiteralText,Cast,呪文
 LiteralText,CAST SPELLS,呪文
 LiteralText,challenge,チャレンジ
 LiteralText,CHAMPION,チャンピオン
+LiteralText,Change,変更
 LiteralText,Character,キャラクター
-LiteralText,CHARACTER,キャラクター
 LiteralText,charged items,使用回数があるアイテム
-LiteralText,Chat on Discord,Discordでチャット
 LiteralText,check for updates?,アップデートを確認しますか？
 LiteralText,checking for updates,アップデートの確認中
-LiteralText,CHOOSE,選択
+LiteralText,Choose,選択
 LiteralText,Choose your quick action,クイックアクションを選択
 LiteralText,class,クラス
 LiteralText,CLASSES,クラス
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,クリックして再試行
 LiteralText,Click to send detected issues to the author,検出された問題をメールします
 LiteralText,clone source entity,モンスターが分裂
 LiteralText,clone target entity,対象のモンスターが分裂
-LiteralText,CLOSE,閉じる
+LiteralText,Close,閉じる
 LiteralText,closed,閉じている
-LiteralText,Coding on Medium,Mediumの記事を読む
 LiteralText,coins,コイン
-LiteralText,COMMAND,
+LiteralText,Command,コマンド
+LiteralText,Community,
 LiteralText,companion,仲間
 LiteralText,compression,に軽量化
-LiteralText,CONCEAL,隠す
+LiteralText,Conceal,隠す
 LiteralText,CONCEALED,隠れた
 LiteralText,concealing,隠す
 LiteralText,CONDUCT,行為
-LiteralText,CONFIRM,確認
+LiteralText,Confirm,確認
+LiteralText,Connect,
 LiteralText,connect portal,通路をつなげる
 LiteralText,Connect to game hosted by another player.,他のプレイヤーがホストしているゲームに接続
-LiteralText,CONSOLE,コンソール
+LiteralText,Console,コンソール
 LiteralText,constructed,造り物
-LiteralText,CONTACT,メールする
-LiteralText,Continue,続行
+LiteralText,Continue,移動再開
 LiteralText,CONTINUE,続行
 LiteralText,CONTROLLED,制御された
+LiteralText,Controller,コントローラー
+LiteralText,Controls,操作設定
 LiteralText,convert block to barrier,障害物を壁に変える
 LiteralText,conveyance,食べた時の効果
 LiteralText,COPY,コピー
 LiteralText,corpse,の死体
 LiteralText,CRACK!,バコッ！
-LiteralText,craft,製作する
-LiteralText,CRAFT,製作する
+LiteralText,Craft,製作する
 LiteralText,Craft which item?,どのアイテムを作る？
 LiteralText,CRASH APP!,強制終了！
 LiteralText,CRASH!,バァン！
@@ -3165,25 +3279,26 @@ LiteralText,CREATE ITEM,アイテムを作成
 LiteralText,create nook,壁に扉を作成
 LiteralText,CREATE PLATFORM,橋を作成
 LiteralText,CREATE SHOP,店を作成
-LiteralText,CREATE SHRINE,社を作成
+LiteralText,CREATE SHRINE,聖なる場所を作成
 LiteralText,CREATE VOLATILE,地形効果が発生
 LiteralText,Create which direction?,どの方向に作成する？
 LiteralText,CREDITS,クレジット
 LiteralText,CROP,トリミング
 LiteralText,CURSED,呪われている
-LiteralText,CUSTOM,カスタム
 LiteralText,CUSTOM HERO,冒険者をカスタマイズ
 LiteralText,CUSTOM MODULES,MODファイル
-LiteralText,damage,
-LiteralText,DAMAGE,
+LiteralText,customise controls,操作設定を変更
+LiteralText,damage,ダメージ
+LiteralText,DAMAGE,ダメージ
 LiteralText,dark,暗闇
+LiteralText,Darken area,周囲を暗くする
 LiteralText,DEAD END,死に終わり
 LiteralText,death,死
 LiteralText,deathray,殺人光線
 LiteralText,decapitate entity,モンスターの首をはねる
 LiteralText,decapitation,首はね
 LiteralText,DECEASED,死亡
-LiteralText,decelerated real-time,リアルタイムモードを遅くする
+LiteralText,Decelerated real-time,リアルタイムモードを遅くする
 LiteralText,DECREASE,減少
 LiteralText,defence,防御値
 LiteralText,DEFENCE,防御値
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,削除
 LiteralText,delete this level,この階層を消去
 LiteralText,DEMOTE,降格
 LiteralText,depth,到達階数
+LiteralText,Descend,階段を下りる
 LiteralText,DESCEND TO NEXT LEVEL,1つ下の階に降りる
 LiteralText,destination,目的地
 LiteralText,destroy,破壊する
@@ -3207,56 +3323,66 @@ LiteralText,DID NOT RANK,ランク入りしていません
 LiteralText,diet,食性
 LiteralText,difficulty,困難
 LiteralText,digging,掘削
-LiteralText,disable ambient sounds,環境音を無効にする
-LiteralText,Disable auto save on transition,階層移動時のオートセーブを無効にする
-LiteralText,Disable button tap sounds,ボタンタップ音を無効にする
-LiteralText,Disable conclusion boom,冒険終了時の音を無効にする
-LiteralText,Disable continue button,続行ボタンを無効にする
-LiteralText,disable haptic feedback,振動を無効にする
+LiteralText,Disable ambient sounds,環境音を無効化
+LiteralText,Disable auto save on transition,階層移動時のオートセーブを無効化
+LiteralText,Disable automatic camera,視点の自動移動を無効化
+LiteralText,Disable button tap sounds,ボタンタップ音を無効化
+LiteralText,Disable cloud sync,クラウドとの同期を無効化
+LiteralText,Disable conclusion boom,冒険終了時の効果音を無効化
+LiteralText,Disable continue button,移動再開ボタンを無効化
+LiteralText,Disable haptic feedback,振動を無効化
+LiteralText,Disable hardware acceleration,ハードウェアアクセラレーションを無効化
 LiteralText,Disable idle animations,待機中のアニメーションを無効化
-LiteralText,Disable introduction boom,起動時の音を無効にする
+LiteralText,Disable introduction boom,起動時の音を無効化
+LiteralText,Disable manual zoom,表示倍率の手動変更を無効化
 LiteralText,Disable mask animations,色覚アニメーションを無効化
 LiteralText,Disable online services,オンライン要素を無効化
-LiteralText,Disable pitch shifting,効果音の音程変化を無効にする
-LiteralText,Disable radial quick menu,
-LiteralText,Disable side quick menus,
+LiteralText,Disable pitch shifting,効果音の音程変化を無効化
+LiteralText,Disable processing rate limit,処理スピード制限を無効化
+LiteralText,Disable radial quick menu,キャラ周囲クイックメニューを無効化
+LiteralText,Disable side quick menus,サイドクイックメニューを無効化
 LiteralText,Disable spacebar real-time toggle,スペースキーでのリアルタイムモード切替を無効化
 LiteralText,Disable swipe gestures,スワイプ操作を無効化
+LiteralText,Disable tutorial,チュートリアルを無効化
 LiteralText,Disable Zeroth announcement,Zerothのお知らせを無効化
 LiteralText,disarm entity,攻撃対象の武器を落とす
-LiteralText,DISCONNECT,切断
+LiteralText,Disconnect,切断
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,切断されました。ネットワーク接続に問題がないこと、およびゲームに参加する全てのデバイスでPathosのバージョンが等しいことを確認してください。
 LiteralText,discover item,アイテムの知識を得る
-LiteralText,Discuss on Reddit,Redditで話し合う
+LiteralText,discoveries,発見
 LiteralText,disenchant item,アイテムの修正値が減少
 LiteralText,dismantle items to extract the base materials and raw essence,アイテムを分解し原材料とエッセンスを抽出する
-LiteralText,DISMISS,別れる
-LiteralText,DISMOUNT,降りる
+LiteralText,Dismiss,別れる
+LiteralText,Dismount,降りる
 LiteralText,Dismount which direction?,どの方向に降りますか？
 LiteralText,Display dice rolls in the help,ダイスによる乱数表記
+LiteralText,Display full screen,全画面表示
 LiteralText,distribution,主要能力値
 LiteralText,divine item,アイテムを判別
 LiteralText,DIVINED,判別された
 LiteralText,divined items,判別されたアイテム
 LiteralText,Do you want to save or quit this adventure?,セーブして中断しますか、それともこの冒険を終了しますか？
 LiteralText,domestic,ペット
-LiteralText,DONATE,寄付する
+LiteralText,Donate,寄付する
 LiteralText,Donate to say thanks,感謝を伝えるために寄付する
 LiteralText,DOOR,扉
 LiteralText,double damage when mounted,騎乗時に2倍のダメージ
+LiteralText,Down,下
+LiteralText,Down-left,左下
+LiteralText,Down-right,右下
 LiteralText,downgrade to,ダウングレード
 LiteralText,downloading update,アップデートをダウンロード中
 LiteralText,drain item,アイテムを劣化させる
-LiteralText,drop,ドロップ
-LiteralText,DROP,床に置く
+LiteralText,Drop,床に置く
 LiteralText,DUAL WIELD,二刀流
-LiteralText,duration,プレー時間
+LiteralText,duration,プレイ時間
+LiteralText,Eat,
 LiteralText,edible items,可食アイテム
 LiteralText,egg,の卵
 LiteralText,else,それ以外
 LiteralText,EMAIL,Eメール
-LiteralText,Enable auto save,オートセーブを有効にする
-LiteralText,Enable master mode,マスターモードを有効にする
+LiteralText,Enable auto save,オートセーブを有効化
+LiteralText,Enable master mode,マスターモードを有効化
 LiteralText,enchant item,アイテムの修正値が増加
 LiteralText,enchanted items,魔力付与されているアイテム
 LiteralText,encounters,モンスター発見数
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,障害しきい値
 LiteralText,End this adventure,この冒険を終わらせる
 LiteralText,ended,終了しました
 LiteralText,engulf entity,モンスターを丸呑み
+LiteralText,Engulfment,丸呑みされる
 LiteralText,ENTER QUANTITY,いくつ？
 LiteralText,ENTITIES,モンスター
 LiteralText,entity,モンスター
 LiteralText,entropy accidents,エントロピー事故
-LiteralText,EQUIP,装備
-LiteralText,equipped,装備品
+LiteralText,Equip,装備
+LiteralText,equipment,装備品
 LiteralText,ESCAPE,脱出する
 LiteralText,escape traps,罠から逃れる
 LiteralText,escape with,回避方法
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,交換
 LiteralText,exchange entity,モンスターの位置を交換
 LiteralText,EXIT PATHOS,Pathosを終了
 LiteralText,EXPAND,拡張
-LiteralText,EXPEL,吐き出す
+LiteralText,Expel,吐き出す
 LiteralText,experience,経験
 LiteralText,EXPERIENCE,経験
 LiteralText,explosion,爆発
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,エラーログ
 LiteralText,feats,特技
 LiteralText,feature,設備
 LiteralText,FEATURES,設備
-LiteralText,FEED,餌付け
+LiteralText,Feed,餌付け
 LiteralText,FEEDBACK,フィードバック
 LiteralText,Feedback information,Feedback information
 LiteralText,FILES,ファイル
@@ -3306,29 +3433,31 @@ LiteralText,fixed,固定位置
 LiteralText,fixed range,射程距離
 LiteralText,FIZZLE,失敗
 LiteralText,Floor,床
-LiteralText,FOLLOW,追従
-LiteralText,Follow me on Twitter,Twitterでフォローする
-LiteralText,free panning mode,プレイヤーを中央に表示しない
+LiteralText,Follow,追従
+LiteralText,frequency,出現頻度
+LiteralText,Friendship,周囲を魅了
 LiteralText,fright,戦慄
 LiteralText,fumbling,滑り
+LiteralText,Gain 1000 coins,所持金を1000追加
 LiteralText,GAIN KARMA,カルマを増やす
 LiteralText,gain level,レベルアップ
 LiteralText,GAIN LEVEL,レベルアップ
 LiteralText,gain nutrition,満腹度上昇
 LiteralText,gain skill,スキル増加
+LiteralText,GAMEPLAY,ゲームプレイ
 LiteralText,gate,扉
 LiteralText,gates,扉
 LiteralText,gather,収集
 LiteralText,gender,性別
 LiteralText,genocide,根絶の巻物の効果
-LiteralText,GENOCIDE,根絶
 LiteralText,GIVE,渡す
 LiteralText,GIVE ALL,全て渡す
+LiteralText,GLOBAL,グローバル
 LiteralText,GLYPHS,タイル
-LiteralText,GOD MODE,
+LiteralText,GOD MODE,ゴッドモード
 LiteralText,gold,ゴールド
 LiteralText,GOLD,ゴールド
-LiteralText,GRAPHICS,スキンの変更
+LiteralText,GRAPHICS,グラフィックス
 LiteralText,grapple entity,モンスターに組みつく
 LiteralText,GRAPPLED,組みつき
 LiteralText,greed,拾う
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,卵を孵化させる
 LiteralText,hatched by,孵化条件
 LiteralText,Having trouble finding the stairs down to the next level?,階段が見つからなくて先に進めませんか？
 LiteralText,Help,ヘルプ
-LiteralText,HELP,ヘルプ
 LiteralText,HIDDEN,隠れた
-LiteralText,HIDE,隠れる
+LiteralText,Hide,隠れる
 LiteralText,hiding,隠れる
 LiteralText,HINT,ヒント
-LiteralText,HIRE,雇う
+LiteralText,Hire,雇う
+LiteralText,HJKL directional keys,HJKL方式
 LiteralText,horde,大群
 LiteralText,HORDES,群れ
 LiteralText,HOST,ホスト
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.",アップデートする前に進行中の冒険を終わらせた方がよいかもしれません。
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,冒険を楽しんで頂けたでしょうか。どうぞ感想や提案をお寄せください。
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",Pathosのルールセットに基づいた新作ローグライク・プラットフォームアクション、『Zeroth』を開発中です。詳しくはこちらをタップ！
 LiteralText,I'm developing a new game called ZEROTH!,新作ゲーム『Zeroth』鋭意開発中！
 LiteralText,identified items,識別されたアイテム
-LiteralText,identify all items,すべてのアイテムを識別
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,床の上のすべてのアイテムを識別
-LiteralText,identify one item,アイテム1つを識別
+LiteralText,Identify all items,すべてのアイテムを識別
+LiteralText,Identify one item,アイテム1つを識別
+LiteralText,identity,プロフィール
 LiteralText,ILLITERATE,読めない
 LiteralText,illusion,幻影
 LiteralText,ILLUSION,幻影
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,モンスターを石像化
 LiteralText,incarceration,硬直化
 LiteralText,INCREASE,増加する
 LiteralText,INDEX,索引
-LiteralText,individual crafting,1つずつ制作する
+LiteralText,Individual crafting,1つずつ制作する
 LiteralText,infinite quantity,数量無限
 LiteralText,influenced actions,能力値が必要になる行動
 LiteralText,INSCRIBE,書き込む
 LiteralText,INSCRIBE ITEM,アイテムに書き込む
 LiteralText,inscription?,メッセージ?
-LiteralText,instruct each character,キャラクターごとに指示
+LiteralText,Inspect,確認
+LiteralText,Instruct each character,キャラクターごとに指示
 LiteralText,INSUFFICIENT GOLD,ゴールドが足りない
+LiteralText,INTERFACE,インターフェース
 LiteralText,Inventory,持ち物
-LiteralText,INVENTORY,持ち物
-LiteralText,ITEM,アイテム
-LiteralText,items,アイテム
+LiteralText,Item,アイテム
 LiteralText,ITEMS,アイテム
 LiteralText,JOIN,参加
 LiteralText,Journal,メッセージ
 LiteralText,JOURNAL,メッセージ表示時間
-LiteralText,JUMP,ジャンプ
+LiteralText,Jump,ジャンプ
 LiteralText,Jump which direction?,どの方向にジャンプする？
 LiteralText,karma,カルマ
 LiteralText,KARMA,カルマ
 LiteralText,key?,特定の鍵?
+LiteralText,Keyboard,キーボード
+LiteralText,Kick,キック
 LiteralText,Kick which direction?,どの方向にキックする？
-LiteralText,KICK!,キック！
 LiteralText,kills,殺害数
 LiteralText,kit,所持品
-LiteralText,KNOWLEDGE,知識
+LiteralText,Knowledge,知識
 LiteralText,LANGUAGE,言語/LANGUAGE
-LiteralText,LEARN ALL SPELLS,すべての呪文を学ぶ
+LiteralText,Learn all spells,すべての呪文を習得
 LiteralText,learn spells,呪文を学ぶ
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,"可笑しな死に様から世界の法則を学び、ヒーローを導いてHaellの第ゼロ圏—the ""0th"" circle—から脱出を目指しましょう！"
+LiteralText,Left,左
 LiteralText,LEFT RING,左手にはめる
 LiteralText,LEVEL CHART,必要経験値表
 LiteralText,level//rank,レベル
@@ -3414,20 +3544,19 @@ LiteralText,life,ライフ
 LiteralText,LIFE,ライフ
 LiteralText,Life represents your physical health and death occurs at zero.,ライフはあなたの身体の健康を表し、0になると死亡します。
 LiteralText,light,灯り
-LiteralText,LIGHT,灯り
 LiteralText,light radius,照明範囲
+LiteralText,Lighten area,周囲を明るくする
 LiteralText,limits,上限
 LiteralText,LIST,リスト
 LiteralText,lit,点灯
 LiteralText,LIVING,生者
 LiteralText,loading,読み込み中
-LiteralText,LOCK,施錠
-LiteralText,locked,施錠されている
-LiteralText,LOCKED,施錠されている
-LiteralText,locked scaling mode,表示倍率を固定
+LiteralText,Lock,施錠
+LiteralText,Locked,施錠されている
 LiteralText,locking,施錠
-LiteralText,loot,戦利品
-LiteralText,LOOT,略奪
+LiteralText,Loot floor,アイテムの入れ替え
+LiteralText,Loot//noun,戦利品
+LiteralText,Loot//verb,略奪
 LiteralText,LOSE KARMA,カルマを減らす
 LiteralText,LOSE LEVEL,レベルダウン
 LiteralText,lose nutrition,満腹度減少
@@ -3440,39 +3569,44 @@ LiteralText,MANA,マナ
 LiteralText,Mana represents your energy supply for casting spells.,マナは呪文を唱えるためのエネルギー量を表します。
 LiteralText,Map,地図
 LiteralText,MAP,地図
-LiteralText,mapping,地図作製
+LiteralText,Mapping,地図作製
 LiteralText,material,素材
 LiteralText,materials,材料
 LiteralText,melting,溶解
-LiteralText,MENU,メニュー
+LiteralText,Menu,メニュー
 LiteralText,mercenary,傭兵
-LiteralText,MIMIC,ミミック
+LiteralText,Mimic,ミミック
 LiteralText,mimicking,擬態中の
 LiteralText,mobilise block,障害物を動かす
 LiteralText,modifier,修正値
+LiteralText,MODULE,モジュール
 LiteralText,MORE INFO,詳しくはこちら
-LiteralText,MOUNT,騎乗
+LiteralText,Mount,騎乗
 LiteralText,Mount which direction?,どれに騎乗する？
 LiteralText,MOUNTED,騎乗
-LiteralText,MOVE,移動
+LiteralText,Move,移動
 LiteralText,move down one level,階層を1つ下げる
 LiteralText,move up one level,階層を1つ上げる
 LiteralText,MULTIPLAYER,マルチプレイヤー
+LiteralText,Multiplayer Chat,マルチプレイヤーチャット
 LiteralText,murder,殺人
 LiteralText,MURDER ENTITIES EVERYWHERE,全てのモンスターを殺す
 LiteralText,music volume,BGMのボリューム
-LiteralText,N/A,なし
-LiteralText,name,名前
-LiteralText,NAME,名付ける
+LiteralText,N/A,(不可)
 LiteralText,name?,名前?
+LiteralText,Name//noun,名前
+LiteralText,Name//verb,名付ける
+LiteralText,Navigate way down,下階層へ移動
+LiteralText,Navigate way up,上階層へ移動
+LiteralText,NEGATIVE,有害
 LiteralText,neutral,中立
 LiteralText,never,0％
-LiteralText,NEW,NEW
+LiteralText,Next character,次のキャラクター
 LiteralText,no additional effects,追加効果なし
 LiteralText,no allies,仲間がいない
 LiteralText,no ambient sounds,環境音無し
 LiteralText,No appropriate items available,適したアイテムが無い
-LiteralText,no available knowledge,利用可能な知識なし
+LiteralText,No key,設定なし
 LiteralText,no records found,記録がありません
 LiteralText,no resistances,耐性がない
 LiteralText,no talents,性質がない
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,何も起こらない
 LiteralText,Nothing of interest,目ぼしいものは無い
 LiteralText,nothing to give,渡せるものは無い
 LiteralText,nothing to take,受け取れるものは無い
+LiteralText,Numpad directional keys,テンキー移動
 LiteralText,nutrition,満腹度
 LiteralText,NUTRITION,満腹度
 LiteralText,OBSTRUCTED,引っかかっている
 LiteralText,OFFLINE,オフライン
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,1つずつ
 LiteralText,oOo,oOo
-LiteralText,OPEN,開く
+LiteralText,Open,開く
 LiteralText,OPENED,開いている
 LiteralText,opening,開錠
 LiteralText,OR,もしくは
 LiteralText,ORIGINAL,オリジナル
+LiteralText,original art,オリジナル背景画像
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",10年以上に渡る開発を通して、Pathosはやり込み要素満載のロールプレイング・アドベンチャーとして磨き上げられてきました。もう間もなく、より強力になったPathosが初めてSteamに登場します。
 LiteralText,OVERRIDE,変更後
 LiteralText,OVERVIEW,全階層
 LiteralText,Palette,パレット
 LiteralText,PARTY,パーティー
-LiteralText,passive (no attacking),受動的（攻撃しない）
+LiteralText,Passive (no attacking),受動的（攻撃しない）
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathosは最大4人までのプレイヤーとの分割スクリーン共同モードで遊ぶことができます。
 LiteralText,pathos development @ paypal,Pathos開発の為に、PayPalで
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathosは冒険の読み込みに失敗しました。問題の調査のため、開発者へセーブデータを送信して頂けませんでしょうか。場合によってはデータを修復したり、アプリの不具合を改修できるかもしれません。ご理解とご協力をお願いします。
-LiteralText,Pathos might be the next evolution of Nethack.,PathosはNethackの新たな発展形だと言えるかもしれません。
+LiteralText,Pathos might be the next evolution of NetHack.,PathosはNetHackの新たな発展形だと言えるかもしれません。
 LiteralText,penalty,ペナルティ
 LiteralText,penetrates,貫通
 LiteralText,per level,レベル毎に上昇
+LiteralText,Perform,行動
 LiteralText,permanent,破壊不能
 LiteralText,PERSONAL,個人
+LiteralText,Pick up,アイテムを拾う
 LiteralText,PLACE,置く
 LiteralText,PLACE ALL,全て置く
 LiteralText,place curse,呪いをかける
 LiteralText,platform,橋
-LiteralText,Play,プレーする
+LiteralText,Play,スタート
 LiteralText,Play a sound effect?,効果音を再生しますか？
+LiteralText,Play Demo,デモを開始
 LiteralText,Player,プレイヤー
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,アプリを強制的に終了すると、セーブファイルが破損して修復できなくなってしまう場合がありますのでご注意ください。
 LiteralText,Please offer any clarification,どんな状況かお知らせください。
 LiteralText,Please provide your feedback,ご意見をお寄せください
 LiteralText,Please rotate your device to landscape :-),デバイスを横向きにしてください:-)
-LiteralText,POLYMORPH,変化
+LiteralText,Polymorph,変化
 LiteralText,polymorph entity,モンスターを変化させる
 LiteralText,Polymorph into what?,何に変化する？
 LiteralText,polymorph item,アイテムを変化させる
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,変化した
 LiteralText,portal,階段など
 LiteralText,PORTALS,ポータル
 LiteralText,porter,の入った捕獲袋
-LiteralText,PRAY,祈る
+LiteralText,POSITIVE,有益
+LiteralText,Pray,祈る
 LiteralText,preservation,保存
-LiteralText,prevent revenant levels,黄泉帰りのプレイヤーを出さない
+LiteralText,Press a button to assign it to this command.,この操作に割り当てるボタンを押してください。
+LiteralText,Prevent revenant levels,黄泉帰りのプレイヤーを出さない
+LiteralText,Previous character,前のキャラクター
 LiteralText,prisoner,囚人
 LiteralText,probability,確率
 LiteralText,PROMOTE,昇格
 LiteralText,PROPERTIES,性質
+LiteralText,Publish,公開
+LiteralText,Publish to Pathos Workshop,Pathosワークショップに公開
 LiteralText,punish,天罰を受ける
 LiteralText,PUNISHED,天罰
 LiteralText,punishment?,天罰?
 LiteralText,PUNISHMENTS,天罰
+LiteralText,Purchase,
 LiteralText,QUANTITY,量
-LiteralText,QUICK LOAD,クイックロード
-LiteralText,QUICK SAVE,クイックセーブ
+LiteralText,QUESTS,クエスト
+LiteralText,Quick load,クイックロード
+LiteralText,Quick save,クイックセーブ
+LiteralText,Quick slot 0,クイックスロット0
+LiteralText,Quick slot 1,クイックスロット1
+LiteralText,Quick slot 2,クイックスロット2
+LiteralText,Quick slot 3,クイックスロット3
+LiteralText,Quick slot 4,クイックスロット4
+LiteralText,Quick slot 5,クイックスロット5
+LiteralText,Quick slot 6,クイックスロット6
+LiteralText,Quick slot 7,クイックスロット7
+LiteralText,Quick slot 8,クイックスロット8
+LiteralText,Quick slot 9,クイックスロット9
 LiteralText,quit,冒険を終了した
-LiteralText,QUIT,冒険を終了
+LiteralText,Quit,冒険を終了
 LiteralText,R//replica symbol,複
 LiteralText,race,種族
 LiteralText,RACES,種族
 LiteralText,random,ランダム
-LiteralText,RANDOM,ランダム
-LiteralText,random dungeon seed,シードからダンジョンを生成
 LiteralText,random level,ランダムな階層
 LiteralText,random points,追加でポイント獲得
+LiteralText,random seed,シードからダンジョンを生成
 LiteralText,rank,ランク
 LiteralText,rarity,出現率
 LiteralText,rate & review on the app store,App Storeで評価・レビュー
-LiteralText,RE-ACT,同じ行動
-LiteralText,RE-CAST,再詠唱
-LiteralText,RE-EQUIP,再装備
+LiteralText,Re-act,同じ行動
+LiteralText,Re-cast,再詠唱
+LiteralText,Re-equip,再装備
 LiteralText,Re-roll,振り直し
 LiteralText,re-rolls,振り直し
-LiteralText,RE-USE,再使用
+LiteralText,Re-use,再使用
 LiteralText,Read books to learn spells,本を読んで呪文を学ぶ
-LiteralText,READ!,読む！
-LiteralText,REAL-TIME,リアルタイム
+LiteralText,Read!,読む！
+LiteralText,Real-time,リアルタイム
 LiteralText,REALLY CRASH?,本当に強制終了しますか？
 LiteralText,recall party,仲間を呼び戻す
 LiteralText,Recommend Pathos,Pathosをお勧めする
 LiteralText,Redo,やり直し
 LiteralText,reflects,反射可能
+LiteralText,Refresh the screen,画面表示を更新
 LiteralText,REGISTER,登録
 LiteralText,REGISTER PLAYER HANDLE,プレイヤーハンドルの登録
 LiteralText,reinforced,強化扉
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,蹴破れない
 LiteralText,release entity,モンスターを解放
 LiteralText,remove all transients,全ての一時的な状態を解消
 LiteralText,remove curse,呪いを解く
-LiteralText,REMOVE CURSE,解呪
 LiteralText,remove random resistance,ランダムな耐性を失う
 LiteralText,remove random talent,ランダムな性質を失う
 LiteralText,remove with,除去手段
 LiteralText,remove with boulder,障害物で破壊可能
 LiteralText,REMOVE//container,取る
-LiteralText,REMOVE//equipment,装備を外す
+LiteralText,Remove//equipment,装備を外す
 LiteralText,RENAME,リネーム
 LiteralText,RENAME CHARACTER,キャラクター名を変更
 LiteralText,RENAME ITEM,アイテム名を変更
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,ライフが全回復
 LiteralText,replenish mana,マナが全回復
 LiteralText,replica,複製の
 LiteralText,replicate item,アイテムを複製
+LiteralText,Report faults,エラーを報告
 LiteralText,requires the skill to pick locks,閉開錠のスキルが必要
 LiteralText,reset random equipment,ランダムな装備の修正値を0にする
+LiteralText,Reset to defaults,デフォルトに戻す
 LiteralText,resident?,住人?
 LiteralText,resistances,耐性
 LiteralText,RESISTS,抵抗した
 LiteralText,Rest,休憩
 LiteralText,Rest how many turns?,何ターン休憩する？
+LiteralText,Rest once,1度だけ休憩
 LiteralText,restarting to update,アップデートのために再起動しています
 LiteralText,restock shop items,店の在庫を再入荷
 LiteralText,restore ability,能力値回復
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,復活して冒険を続ける
 LiteralText,resurrections,復活
 LiteralText,retaliations,報復
 LiteralText,RETURN,戻る
-LiteralText,REVEAL,姿を現す
-LiteralText,REVEAL ALL MAPS,全てのマップを表示
+LiteralText,Reveal,姿を現す
+LiteralText,REVEAL ALL MAPS,全マップを表示
 LiteralText,REVEAL THIS MAP,この階層のマップを表示
 LiteralText,revealed,見えている
 LiteralText,revenant,黄泉帰り
-LiteralText,REVERT,戻す
+LiteralText,Revert,戻す
+LiteralText,Right,右
 LiteralText,RIGHT RING,右手にはめる
 LiteralText,rigid,固まった
 LiteralText,ROTATE,回転
 LiteralText,route entity,モンスターがある地点から移動
 LiteralText,rumour,噂
 LiteralText,sacrifice item,犠牲
+LiteralText,Same spot,同じ場所
 LiteralText,SANITY CHECK,SANチェック
 LiteralText,SAVE,セーブ
 LiteralText,SAVE & QUIT,セーブと終了
@@ -3632,46 +3794,45 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,セーブファイル
 LiteralText,SAVED BONES,黄泉帰りファイル
 LiteralText,school,魔術領域
-LiteralText,scrap,分解
-LiteralText,SCRAP,分解
+LiteralText,Scrap,分解
 LiteralText,SEALED,モンスターを生成しない
 LiteralText,Search,周囲を調査
 LiteralText,Search how many turns?,何ターン調査しますか？
+LiteralText,Search once,1度だけ調査
 LiteralText,searching,調査
 LiteralText,secret,隠し扉
 LiteralText,SECRET,秘密の
 LiteralText,seed,シード
+LiteralText,Select,選択
 LiteralText,SELECT ATMOSPHERE,環境音を選択
 LiteralText,Select Companion Tile,ペットのスキンを選択
 LiteralText,Select Hero Tile,プレイヤーのスキンを選択
 LiteralText,SELECT ITEM,アイテムを選択
-LiteralText,SELECT LANGUAGE,言語を選択する
 LiteralText,SELECT MAP,マップを選択
-LiteralText,SELECT PORTRAIT,ポートレートを選択
 LiteralText,SELECT RESIDENT,住人を選択
 LiteralText,SELECT SQUARE,マスを選択
-LiteralText,SELECT TILESET,スキンを選択
 LiteralText,self,自らの行い
+LiteralText,Self menu,キャラメニュー
 LiteralText,SELL,売る
 LiteralText,SELL ALL,全て売る
 LiteralText,SEND,送信する
 LiteralText,Send me an email,Eメールを送る
-LiteralText,SERVICES,サービス
+LiteralText,Services,サービス
 LiteralText,SET DIFFICULTY,難易度を設定
 LiteralText,set starting location,開始地点を選択
-LiteralText,SETTINGS,設定
+LiteralText,Settings,設定
 LiteralText,sfx volume,効果音のボリューム
-LiteralText,SHARE//exchange,交換
+LiteralText,Share//exchange,交換
 LiteralText,SHARE//publish,シェア
 LiteralText,SHOPS,店
-LiteralText,Show debugging information,デバッグ情報を表示する
-LiteralText,Show time clock,時計を表示する
-LiteralText,SHRINES,社
+LiteralText,Show debugging information,デバッグ情報を表示
+LiteralText,Show time clock,時刻を表示
+LiteralText,SHRINES,聖なる場所
 LiteralText,SIGN-IN,サインイン
 LiteralText,size,サイズ
 LiteralText,skills,スキル
 LiteralText,SKILLS,スキル
-LiteralText,SLIDE,すり抜ける
+LiteralText,Slide,すり抜ける
 LiteralText,Slide which direction?,どの方向にすり抜ける？
 LiteralText,slower animations,描画の速さ：遅い
 LiteralText,SONICS,効果音
@@ -3686,17 +3847,17 @@ LiteralText,special,特殊
 LiteralText,SPECIALS,特殊
 LiteralText,speed,速度
 LiteralText,SPEED,速度
-LiteralText,SPELL,呪文
+LiteralText,Spell,呪文
 LiteralText,SPELLS,呪文
 LiteralText,Square,マス
 LiteralText,stack,のスタック全体
 LiteralText,START,開始
 LiteralText,Start a game to be joined by other players.,他のプレイヤーが参加するためのゲームを始める
 LiteralText,Start new adventure,新しい冒険を始める
-LiteralText,start without companion,ペットなしで始める
+LiteralText,Start without companion,ペットなしで始める
 LiteralText,starvation,飢餓
 LiteralText,starved,飢えた
-LiteralText,STAY,待機
+LiteralText,Stay,待機
 LiteralText,steal,盗む
 LiteralText,STOP,やめる
 LiteralText,storage,所持量
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,スタジオで作成された冒険
 LiteralText,SUBMIT,登録
 LiteralText,summon,召喚
 LiteralText,SUSTAINED,サステイン（持続）
-LiteralText,SWAP,入れ替わる
-LiteralText,SWITCH,交代する
+LiteralText,Swap,入れ替わる
+LiteralText,Switch,交代する
 LiteralText,symptoms,症状
 LiteralText,Table of Contents,目次
-LiteralText,TAKE,取る
+LiteralText,Take,取る
 LiteralText,TAKE ALL,全て取る
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
-LiteralText,TALK,話す
+LiteralText,Talk,話す
 LiteralText,target,対象
-LiteralText,TELEKINESIS,念動力
+LiteralText,Telekinesis,念動力
 LiteralText,Telekinesis which direction?,どの方向に念動力を使う？
 LiteralText,Telekinesis which object?,どの物体に念動力を使う？
-LiteralText,TELEPORT,瞬間移動
+LiteralText,Teleport,瞬間移動
+LiteralText,Teleport end,最下層に瞬間移動
 LiteralText,teleport entity,モンスターを瞬間移動
 LiteralText,teleport item away,アイテムを瞬間移動
 LiteralText,Teleport to where?,どこに瞬間移動する？
+LiteralText,Teleport top,最上層に瞬間移動
 LiteralText,TERMINAL,最下層
 LiteralText,terrain,地形
 LiteralText,The attack score is your aptitude for hitting an opponent.,攻撃値は相手に対し有効打を与える能力を示す。
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,史上最高のゲームを形作る要素を留めつつ、ゲームメカニズムの向上に挑戦しています。
+LiteralText,The damage you do to an opponent upon a successful attack.,攻撃成功時、敵に与えるダメージ量。
 LiteralText,The defence score is how protected you are from being hit by an opponent.,防御値は相手の攻撃に対しどれだけ守りを固めているかを示す。
 LiteralText,There is a new update available!,新しいアップデートがあります！
 LiteralText,there is nothing to place here,置けるものは無い
 LiteralText,there is nothing to remove here,取る物は無い
 LiteralText,there is nothing to trade with this merchant,この商人に売れるものは無い
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",このデモは16階層のダンジョンでクリアまで2、3時間かかります。ダンジョンは完全版のゲームに4つあるモジュールのうち1つからの抜粋で、やりがいのあるゲーム体験の最たる例をお届けします。
 LiteralText,this level,この階層
 LiteralText,this merchant has no stock to trade,この商人から買えるものは無い
 LiteralText,This name is used to record your achievements in the Hall of Fame.,この名前は名誉の殿堂であなたの功績を記録するために使われます。
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,同じシードからは同じダンジョンが生成されます。友達と同じシードでどこまでいけるか競争、なんてのもいいでしょう。
 LiteralText,threw,を投げた
-LiteralText,THROW,投げる
+LiteralText,Throw,投げる
+LiteralText,TILESET,スキン
 LiteralText,tin,の缶詰
 LiteralText,tinning,詰める
+LiteralText,Toggle auto use,自動使用モードのオン・オフ
 LiteralText,TOO BIG,大きすぎる
 LiteralText,TOO HEAVY,重すぎる
 LiteralText,TOO HUNGRY,空腹すぎる
 LiteralText,TOO SMALL,小さすぎる
 LiteralText,TOO WEAK,弱すぎる
 LiteralText,TRACKS,音楽
-LiteralText,TRADE,売買
+LiteralText,Trade,売買
 LiteralText,transform to,変身可能
 LiteralText,transients,一時的な状態
 LiteralText,TRANSIENTS,一時的な状態
@@ -3759,15 +3926,16 @@ LiteralText,trapped,罠付きの
 LiteralText,TRAPPED,罠付き
 LiteralText,trapped container,罠のかかった木箱
 LiteralText,trapped door,罠のかかった扉
-LiteralText,TRIGGER,罠起動
+LiteralText,Trigger,罠起動
 LiteralText,trigger once,一回だけ起動
 LiteralText,trigger unlimited times,無制限に起動
 LiteralText,truth,真実
-LiteralText,TUNNEL,掘り進む
+LiteralText,Tunnel,掘り進む
 LiteralText,Tunnel which direction?,どの方向に掘り進む？
-LiteralText,TURN-BASED,ターンベース
+LiteralText,Turn-based,ターンベース
 LiteralText,turns,ターン
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
+LiteralText,Tutorial,チュートリアル
+LiteralText,Type in any word or phrase to generate a random seed.,ダンジョンを生成するための乱数種（シード）として何か入力してください。
 LiteralText,unable to load,読み込みに失敗しました
 LiteralText,unafflict,災難からの解放
 LiteralText,UNDEAD,アンデッド
@@ -3775,16 +3943,20 @@ LiteralText,Undo,元に戻す
 LiteralText,unidentified items,未識別アイテム
 LiteralText,unique,ユニーク
 LiteralText,UNIQUES,ユニーク
-LiteralText,UNLOCK,解錠
+LiteralText,unknown effects,効果不明
+LiteralText,Unlock,解錠
 LiteralText,unlock door or container,扉や箱の解錠
-LiteralText,UNLOCKED,鍵が開いた
+LiteralText,Unlocked,鍵が開いた
 LiteralText,unpolymorph,変化から戻る
 LiteralText,unpunish,天罰からの解放
 LiteralText,unskilled,初心者
 LiteralText,UNSKILLED,初心者
 LiteralText,unstuck,抜け出す
-LiteralText,UNTRAP,罠解除
+LiteralText,Untrap,罠解除
 LiteralText,UNTRAPPED,罠解除
+LiteralText,Up,上
+LiteralText,Up-left,左上
+LiteralText,Up-right,右上
 LiteralText,update available,アップデートがあります
 LiteralText,update cancelled,アップデートがキャンセルされました
 LiteralText,update failed,アップデートに失敗しました
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,更新情報
 LiteralText,upgrade to,アップグレード
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,シードを使うと名誉の殿堂にはランクインされません。
 LiteralText,Vanity,プロフ
+LiteralText,Victory!,勝利！
 LiteralText,VIEW,表示
 LiteralText,visit shop,お店を訪問
-LiteralText,visit shrine,社を訪ねる
-LiteralText,Visit the website,ウェブサイトにアクセス
+LiteralText,visit shrine,聖なる場所を訪れる
 LiteralText,visit zoo,動物園を訪問
 LiteralText,VOID SPACE,ボイドスペース
 LiteralText,volatile,地形効果
 LiteralText,VOLATILES,地形効果
 LiteralText,vomit nutrition,おう吐
 LiteralText,vulnerable to,弱点
-LiteralText,WAIT,待つ
+LiteralText,Wait,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
-LiteralText,warping,ダンジョン変容
-LiteralText,WARPING,ダンジョン変容
+LiteralText,Warping,ダンジョン変容
 LiteralText,was killed,殺された
 LiteralText,weakness to,弱点
 LiteralText,weight,重量
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,破壊された場合
 LiteralText,WON'T EAT,食べないで
 LiteralText,WORKBENCH MATERIALS,この作業台にある材料
 LiteralText,World,世界
-LiteralText,WORLD,全世界
 LiteralText,WRONG WAY,逆方向
 LiteralText,"You are playing as anonymous, please register!",あなたの名前を登録し、名誉の殿堂にその名を刻みましょう！
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,目のマークのボタン（調査モードのオン・オフ）を使って隠し扉を探してみることをおすすめします。
 LiteralText,Your current movement and action speed in squares per second.,移動と動作の速度（1マス/秒）
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",Zerothは私の新しいスタジオ、Contrary Gamesのデビュー作です。Pathosの精神的続編でありながら、関節がある紙人形のようなアニメーション、リアルタイム進行のプラットフォームアクション、物理シミュレーション、そして繰り返しやり込みできるゲーム性を備えています。
 LiteralText,ZOOM,ズーム
+LiteralText,Zoom in,表示を拡大
+LiteralText,Zoom out,表示を縮小
 LiteralText,ZOOS,モンスター部屋
 LiteralText,zZz,zzz
 LocalityName,area,周辺
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,植物
 MaterialName,water,水
 MaterialName,wax,ろう
 MaterialName,wood,木
-MeasurementSystemName,imperial,ヤードポンド法
-MeasurementSystemName,metric,メートル法
+MeasurementSystemName,imperial units,ヤードポンド法
+MeasurementSystemName,metric units,メートル法
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,自動で生成されるダンジョンや洞窟を攻略しましょう。何度も繰り返し遊べる、Pathosが初めてのプレイヤーにお勧めのモード。
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",サブダンジョンの数々、精巧に配置された地形、そして魅惑的な遭遇が自動生成によって散りばめられた広大な地上マップを探索しましょう。
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,固定で設計された広大な屋外マップ。狭いダンジョンを抜け出して、挑戦的な冒険に出かけましょう。
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,魅力的な数々の部屋と秘密が待っていますが、長く留まる事はできません。先へ進むか、もしくは死あるのみです。Shattered Pixel Dungeon のマップ生成方法を基にしています。
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.",Pathosの仕組みを実験するためのサンドボックスです。シンプルな2部屋のマップで、すべてのアイテムや罠などダンジョンの要素を使ってプレイしましょう。
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",ダンジョンを生き延びて鉱山の街に辿り着き、危険な地下世界に繋がる坑道へ突き進みましょう。
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,地上の様子はどうかね？ここに降りてもう久しいから、太陽や雨風が恋しいもんだ。
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,知ってるか？ここで売られてるものの半分は、おまえみたいな冒険者の遺品から来てるんだと。
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,みんなオークが侵略してくるって言ってるけど、そんなこと絶対起こらないんじゃないかな。
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",いいか、昔は俺もおまえのような冒険者だったが…おまえも定職に就いた方がいいんじゃないか？*冒険者*なんて気取っても、結局ただの住所不定無職じゃないか。
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Nethack Codex
+ModuleName,NetHack Codex,NetHack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,サンドボックスプレイ
+ModuleName,Short Dungeon,Short Dungeon
 ModuleTerm,Abyss,地獄の深淵
 ModuleTerm,Ambush,待ち伏せ
 ModuleTerm,Ant Cave,アリの巣窟
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,粘土の上り階段
 PortalName,jade ladder down,下に続くひすいのはしご
 PortalName,jade ladder up,上に続くひすいのはしご
 PortalName,rift,裂け目
+PortalName,sewer ladder down,下に続く下水道のはしご
+PortalName,sewer ladder up,上に続く下水道のはしご
 PortalName,stone staircase down,石の下り階段
 PortalName,stone staircase up,石の上り階段
 PortalName,transportal,ポータル
 PortalName,wooden ladder down,下に続く木のはしご
 PortalName,wooden ladder up,上に続く木のはしご
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,揺らめく魔法のシールドに囲まれ、防御値へのボーナスと飛び道具の軌道をそらす可能性を得る。
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",滑らかな油分にコーティングされ、捕縛の手からつるりと逃れることができる。
-PropertyDescription,Control when and where you teleport.,いつ、どこに瞬間移動するか制御することができる。
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,怒りに狂い、近くにいる者に対し無差別かつ衝動的に襲い掛かる。
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.",能力値が固定され、向上することも低下することもない。
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,何らかの、明らかにひどい病気に罹り、未知の症状と吐き気に苦しめられる。
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,前もって近くにいるモンスターの存在とそのおおよその危険度を知ることができる。
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.",眠りに落ち、穏やかな休息をとっている。モンスターでいっぱいのダンジョンで。
+PropertyDescription,Assess the number of charges in an item when you pick it up.,拾いあげて一見しただけでアイテムの使用可能回数が分かる。
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,いつ、どこに瞬間移動するか制御することができる。
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",滑らかな油分にコーティングされ、捕縛の手からつるりと逃れることができる。
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",決して満たされることのない食欲に取りつかれている。
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.",怒りに狂い、近くにいる者に対し無差別かつ衝動的に襲い掛かる。
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,精神がねじ曲げられ、物品やモンスターの形が悪夢のような異様な姿に見える。
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,視覚が強化され、通常目に見えない存在を視認することができる。
-PropertyDescription,Fainting from lack of food.,飢えによって気を失った状態。
-PropertyDescription,Fly above the ground to avoid many types of traps.,空中を移動することによって、地面に仕掛けられた罠を回避できる。
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,「滑り」は戦闘中にあなたが武器を落としたり、階段を勝手に昇降する原因となります。
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,万有引力の法則を冒涜し、地面に仕掛けられた罠を回避できる。これで床に届くことさえできれば言うことはないのだが。
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",空中を移動することによって、地面に仕掛けられた罠を回避できる。
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,睨みやビームによる攻撃を使用者に反射する。
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,前もって近くにいるモンスターの存在とそのおおよその危険度を知ることができる。
-PropertyDescription,Gripped by terror you cannot attack and should flee.,恐怖に取りつかれ、攻撃できず逃げることしか考えられない状態。
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",こんなに酔っぱらった状態では、酒の勢いなんて著しく低下した判断力の足しにはならない。
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,物音を立てずに移動し、眠っているモンスターの近くを忍び歩くことができる。
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,本来の姿に戻ることも含めて自身が変化することを防ぐ。
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",恐怖に取りつかれ、攻撃できず逃げることしか考えられない状態。
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.",体が石になっていくかのごとく硬直し、指一本動かすことですら容易ではない。一撃でも食らうと体が千々に砕かれてしまうのではないかとすら思えるほどだ。
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,同族の肉や臓物を食べることに対し罪悪感を感じない。
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,感覚が研ぎ澄まされ、労せずして隠された扉や罠を見つけ出すことができる。
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,なんらかの理由で視覚が損なわれ、すぐ近くの物しか見えない。
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",辺り一面が不条理な暴力に覆われ、通常平和的なモンスター達もお互いに攻撃しあう事になる。利便性と危険性を併せ持つ性質であり、慎重に用いられるべきである。この性質を持っていると腹の減りが早いように感じる。
+PropertyDescription,Increased speed allows you to move and attack more frequently.,スピードが強化され、同じ時間内に可能な攻撃や移動の回数が増える。
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,ただそこに居るというだけで、ダンジョンの住人すべての癇にさわるようになる。
+PropertyDescription,Loss of consciousness usually caused by lack of food.,飢えによって気を失った状態。
+PropertyDescription,Move objects without physical contact through the power of your mind.,精神の力を用いて、触れずして物体を動かすことができる。
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",不気味な静けさに包まれ、一言も発することができない。
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",物音を立てずに移動し、眠っているモンスターの近くを忍び歩くことができる。
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.",筋肉を動かすことができない、無防備な状態。
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.",物質界と幽界にまたがって存在することで、壁や扉、巨石などの障害物を難なく透り抜けることができる。
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",脚にバネでも入ったかのように力がみなぎり、長い距離を跳ぶことができる。
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.",本来の姿に戻ることも含めて自身が変化することを防ぐ。
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,聴覚に深刻な障害をきたし、周りの音が聞こえない。
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.",精神が明晰なものとなり、嘘偽りに騙されることがなくなる。
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.",減速、麻痺などの移動を妨げる状態を防ぐ。
-PropertyDescription,Recover mana at an increased rate.,マナの自然回復量が多くなる。
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,負傷が迅速に治癒するが、その分代謝が大きく、通常よりも多くの食事が必要となる。
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,マナの自然回復量が多くなる。
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,スピードが低下し、同じ時間に行える攻撃や移動の回数が減る。
+PropertyDescription,Resilient to all forms of natural and magical illness.,精気に満ち溢れ、いかなる病気とも無縁である。
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,死亡した際に、体力を1ポイント失い、ライフが最大の半分の値で復活する。
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,突発的に寝込むようになる。目が覚めるか、覚まされるまで。
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.",瞬間移動が発生すると、キャラクターは現在の階層のどこかへ移動する。制御されていない場合はランダムに発生し、冒険に予測不可能な影響をもたらすが、制御されていれば自らの任意で発動し、マップから移動先を選択できるようになる。
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,同族の肉や臓物を食べることに対し罪悪感を感じない。
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,目が見えない時のみ、他の精神の存在とその位置を感じ取ることができる。
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,実体の位置とは少し違う所に姿が投影される。感覚で相手を捉える敵の攻撃をより困難なものとし、魔法のビームや投射は命中しにくくなる。
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,スピードが強化され、同じ時間内に可能な攻撃や移動の回数が増える。
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,なんらかの理由で視覚が損なわれ、すぐ近くの物しか見えない。
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,万有引力の法則を冒涜し、地面に仕掛けられた罠を回避できる。これで床に届くことさえできれば言うことはないのだが。
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,負傷が迅速に治癒するが、その分代謝が大きく、通常よりも多くの食事が必要となる。
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,目に見えない状態。十分に近づくと光のゆがみで気付くことができる。
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,聴覚に深刻な障害をきたし、周りの音が聞こえない。
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,スピードが低下し、同じ時間に行える攻撃や移動の回数が減る。
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,特殊な視覚により、ダンジョンの暗い場所でも体温で存在を感知できる。
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.",異なるモンスターに変化し、その長所と短所を持つことになる。例えば、手が無く武器や盾を持てないが飛行出来たり、強烈なビームを吐き出せる、など。変化後の姿で死んだ場合、基本的に元の姿に戻ることになる。
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,精神の力を用いて、触れずして物体を動かすことができる。
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,精神がねじ曲げられ、物品やモンスターの形が悪夢のような異様な姿に見える。
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,混乱し、物事を判断するのが非常に難しい状態。移動や攻撃の方向が意図しないものになることがあり、呪文を唱えることもできない。巻物を読む際に発音を間違い本来意図されていない効果が発生することになり、また集中力が続かず魔法書から呪文を学ぶこともできない。
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.",混乱した時の様に、真っ直ぐ歩いたり頭を使う行動ができなくなる。
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,何らかの、明らかにひどい病気に罹り、未知の症状と吐き気に苦しめられる。
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",眠りに落ち、穏やかな休息をとっている。モンスターでいっぱいのダンジョンで。
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,決して満たされることのない食欲に取りつかれている。
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,精気に満ち溢れ、いかなる病気とも無縁である。
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,ダンジョンの壁を掘削し、新たな道を作りだすことができる。
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,拾いあげて一見しただけでアイテムの使用可能回数が分かる。
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,魔法による肉体の変化を制御できる。罠などによって強制的にランダムなモンスターに変化させられることはなくなり、変化の性質とセットで自らの任意で好きなモンスターに変化することが可能になる。変化の対象は殺害したことのあるモンスターに限られ、また任意での変化は満腹度を消費する。
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,辺り一面が不条理な暴力に覆われ、通常平和的なモンスター達もお互いに攻撃しあう事になる。利便性と危険性を併せ持つ性質であり、慎重に用いられるべきである。この性質を持っていると腹の減りが早いように感じる。
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,気分が落ち着かず、いつ激昂してしまうかわからない。
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,同じ階層にいるモンスターを認識できる。
-PropertyDescription,You learn the divine status of an item simply by picking it up.,アイテムを拾っただけでその祝呪が分かるようになる。
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,不気味な静けさに包まれ、一言も発することができない。
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,能力値が固定され、向上することも低下することもない。
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,体が石になっていくかのごとく硬直し、指一本動かすことですら容易ではない。一撃でも食らうと体が千々に砕かれてしまうのではないかとすら思えるほどだ。
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.",物質界と幽界にまたがって存在することで、壁や扉、巨石などの障害物を難なく透り抜けることができる。
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,脚にバネでも入ったかのように力がみなぎり、長い距離を跳ぶことができる。
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,ただそこに居るというだけで、ダンジョンの住人すべての癇にさわるようになる。
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,代謝が遅くなり、必要な食事の量が大幅に減る。
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.",精神が明晰なものとなり、嘘偽りに騙されることがなくなる。
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,筋肉を動かすことができない、無防備な状態。
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,感覚が研ぎ澄まされ、労せずして隠された扉や罠を見つけ出すことができる。
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,存在している位置があやふやなものとなり、労せずして姿を消し、違う場所に現れることができる。
+PropertyDescription,Sense the divine status of an item simply by picking it up.,アイテムを拾っただけでその祝呪が分かるようになる。
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,目が見えない時のみ、他の精神の存在とその位置を感じ取ることができる。
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.",混乱し、物事を判断するのが非常に難しい状態。移動や攻撃の方向が意図しないものになることがあり、呪文を唱えることもできない。巻物を読む際に発音を間違い本来意図されていない効果が発生することになり、また集中力が続かず魔法書から呪文を学ぶこともできない。
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,混乱した時の様に、真っ直ぐ歩いたり頭を使う行動ができなくなる。
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.",揺らめく魔法のシールドに囲まれ、防御値へのボーナスと飛び道具の軌道をそらす可能性を得る。
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,代謝が遅くなり、必要な食事の量が大幅に減る。
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,特殊な視覚により、ダンジョンの暗い場所でも体温で存在を感知できる。
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.",こんなに酔っぱらった状態では、酒の勢いなんて著しく低下した判断力の足しにはならない。
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,突発的に寝込むようになる。目が覚めるか、覚まされるまで。
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",魔法による肉体の変化を制御できる。罠などによって強制的にランダムなモンスターに変化させられることはなくなり、変化の性質とセットで自らの任意で好きなモンスターに変化することが可能になる。変化の対象は殺害したことのあるモンスターに限られ、また任意での変化は満腹度を消費する。
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.",異なるモンスターに変化し、その長所と短所を持つことになる。例えば、手が無く武器や盾を持てないが飛行出来たり、強烈なビームを吐き出せる、など。変化後の姿で死んだ場合、基本的に元の姿に戻ることになる。
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.",瞬間移動が発生すると、キャラクターは現在の階層のどこかへ移動する。制御されていない場合はランダムに発生し、冒険に予測不可能な影響をもたらすが、制御されていれば自らの任意で発動し、マップから移動先を選択できるようになる。
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,同じ階層にいるモンスターを認識できる。
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,「滑り」は戦闘中にあなたが武器を落としたり、階段を勝手に昇降する原因となります。
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",目に見えない状態。十分に近づくと光のゆがみで気付くことができる。
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,気分が落ち着かず、いつ激昂してしまうかわからない。
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,存在している位置があやふやなものとなり、労せずして姿を消し、違う場所に現れることができる。
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",実体の位置とは少し違う所に姿が投影される。感覚で相手を捉える敵の攻撃をより困難なものとし、魔法のビームや投射は命中しにくくなる。
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,ダンジョンの壁を掘削し、新たな道を作りだすことができる。
 PropertyName,aggravation,不遜
 PropertyName,appraisal,目利き
 PropertyName,beatitude,判別
@@ -4385,7 +4561,7 @@ RumourFalseMessage,This is a fortune cookie.,これはおみくじ入りクッ�
 RumourFalseMessage,This is an automatic response from the College of Wizardry. We have received your message and an advisor will reply shortly.,これは魔法大学からの自動応答です。メッセージを受信しました。教官から間もなく返信があります。
 RumourFalseMessage,Throw an acid blob at a rust monster.,錆の怪物に酸のブロブを投げつけるとピカピカの怪物になる。
 RumourFalseMessage,"To view inventory, press 'backpack'.",Backpackキーを押すと、所持品が見れるぞ！！！！！
-RumourFalseMessage,"Two wrongs do not make a right, but three rights do make a left.",右のほほを打たれたら、左のほほを差し出しなさい。
+RumourFalseMessage,"Two wrongs do not make a right, but three rights do make a left.",嘘から出た実は美味しくないらしい。
 RumourFalseMessage,Wearing solid metal gear and eating rations will recover health.,ソリッドなメタルのギアに身を包んでレーションを食べるとライフが回復する。
 RumourFalseMessage,"When in doubt, refrain from reply all.",迷ったら全返信はやめておこう。
 RumourFalseMessage,"When in trouble, when in doubt; run in circles, scream and shout.",困ったり悩んだときは、輪になって走って、わめいて、叫んじまおう。
@@ -4563,6 +4739,7 @@ SonicName,explosion,爆発
 SonicName,fizzle,失敗
 SonicName,flash,パシャッ
 SonicName,flute,フルート
+SonicName,focus tap,
 SonicName,food,食料
 SonicName,footsteps,足音
 SonicName,force,衝撃
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,ワープした
 TraversalPresentName,ascend,登る
 TraversalPresentName,descend,降りる
 TraversalPresentName,travel,ワープする
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",敵を倒して経験値を稼ぎ、レベルを上げましょう。||レベルが上がるとキャラクターのライフとマナが上昇し、クラスに応じた成長要素を得られます。
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,ヘルプには遊び方の詳細なガイドはもちろん、ゲーム中に登場するあらゆる要素を網羅した索引が収められています。
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",敵や死体、アイテムを調べることでより多くのことが分かります。||長押しか右クリック、もしくはCtrl+方向キーで調べる対象のマスを指定できます。
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",アイテムは地面の上やチェストの中から入手できたり、敵が持っている場合があります。||アイテムをダブルタップするか、床パネルを開くことで拾うことができます。
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",キーボードとコントローラーの操作設定は「設定」メニュー内の「インターフェース」にある「操作設定を変更」から変更できます。||キーボードのみでプレイする場合、Tabキーでフォーカス移動、方向キーで選択、BackSpaceキーでフォーカスを解除できます。
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,持ち物パネルでキャラクターの装備やアイテムを管理できます。||キャラクターパネルではキャラクターのステータスを確認できます。
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,アイテムの多くは、手に入れてもその効果が分かりません。||どんな効果か知るためにリスクを承知で使ってみるか、その前に識別することもできます。
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",敵に向かって移動することで攻撃します。||Shift+方向キーでその場から攻撃でき、これはリーチの長い武器や射撃武器、投擲武器を扱う上で重要な操作になります。
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",長い距離を移動中に敵が現れると移動が中断します。||敵に対処したあと移動再開ボタンを押すことで、指定していた場所への移動を再開できます。
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",Pathosはマウスやタッチパネルだけで遊ぶことができます。||マスをタップすることで移動したり、干渉したり、攻撃したりできます。
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,Pathosの世界は常に変わり続け、2つと同じ冒険はありません。||毎回異なる敵に遭遇し、アイテムの効果は異なるものになるでしょう。
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",Pathosはターン制なので、危険な状況に陥ったらじっくり対処しましょう。||キャラクターはマスから8方向に移動できますが、時には待つことが最善となる場合もあります。
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,腹は常に減っていく一方なので、あまり食べるものを選り好みできません。||食べても平気な死体を知っておくことは、生き残るために必須です。
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",ライフやマナが減ってきた時は、敵に出くわす前に休憩しておくのが良いでしょう。||敵の集団に対しては、出入口のドアや狭い通路に誘い込んで戦いましょう。
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",施錠された扉やチェストをキックで壊して開けることができます。||罠が仕掛けられているかもしれないので、可能な場合は鍵やピッキング道具を使いましょう。
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",チュートリアルが完了し、貴方の冒険は準備が整いました。||必要であれば、いつでも「設定」メニューの「インターフェース」にある「チュートリアルを無効化」をオフにしてこのチュートリアルを表示できます。
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,隠し扉や幻影の壁のせいで行き止まりに遭遇することがあります。||壁の近くを辛抱強く調査して、隠された道を見つけましょう。
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,地面に隠された罠にかかってしまうことがあります。||罠の解除を試してみましょう。成功率は罠のスキルに左右されます。
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,ダンジョン内での行動はカルマに影響します。||聖なる場所ではカルマと引き換えに強力な恩恵を授かることができます。
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,マウスホイールやタッチパネルのピンチ操作で拡大縮小できます。||ドラッグして表示範囲を移動するかCtrlやAltキーを押すことで敵やオブジェクトの名前が表示されます。
 VolatileName,blaze,燃焼
 VolatileName,blood,血のり
 VolatileName,electricity,漏電

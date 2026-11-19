@@ -1,59 +1,64 @@
 # Commands;Irányítás
-. Single tap/left click or arrow keys to move and attack.;Egy koppintás/bal klikk vagy nyilak lenyomása a mozgáshoz és támadáshoz.
+. Single tap/left click or direction keys to move and attack.;Egy koppintás/bal klikk vagy nyilak lenyomása a mozgáshoz és támadáshoz.
 . Long press/right click to operate doors/traps.;Hosszú lenyomás/jobb klikk a csapdák és ajtók használatához.
 . Double tap to pick up items, traverse stairs or wait one move.;Dupla koppintás a tárgyak felvételéhez, a lépcsőkön való haladáshoz vagy egy kör várakozáshoz.
 /
-- . | wait one turn (also double tap on self); . | egy kör várakozás (karakterre duplán kattintva is működik)
-- , | pick up the top item on the floor; , | a padlón lévő legfelső tárgy felvétele
-- A | toggle log (click the log to expand/collapse); A | napló megjelenítése (kattints a napló kinyitásához és összecsukásához)
-- B | move down-left; B | mozgás balra lefelé
-- C | toggle character; C | karakteradatok megjelenítése
-- D | re-use last item; D | legutóbbi tárgy újbóli használata
-- E | mount or dismount your steed; E | fel- és leszállás (hátasnál)
-- F | toggle floor; F | talaj megjelenítése
-- G | re-equip last item; G | legutóbbi tárgy újbóli felszerelése
-- H | move left; H | mozgás balra
-- I | toggle inventory; I | leltár megjelenítése
-- J | move down; J | mozgás lefelé
-- K | move up; K | mozgás felfelé
-- L | move right; L | mozgás jobbra
-- M | toggle map; M | térkép megjelenítése
-- N | move down-right; N | mozgás jobbra lefelé
-- O | hide from view; O | elrejtőzés
-- P | polymorph at will; P | önkéntes átváltozás
-- Q | save or quit this game; Q | mentés vagy kilépés a játékból
-- R | for rest mode to recover life and mana; R | pihenés (élet és mana visszatöltése)
-- S | for search mode for secret doors and traps; S | titkos ajtók és csapdák keresése
-- T | teleport at will; T | önkéntes teleportálás
-- U | move up-right; U | mozgás jobbra felfelé
-- V | kick in a direction; V | rúgás tetszőleges irányba
-- W | jump in a direction (if you have the talent); W | ugrás tetszőleges irányba (készség birtoklása esetén)
-- X | re-cast last spell; X | legutóbbi varázslat újbóli használata
-- Y | move up-left; Y | mozgás balra felfelé
-- Z | toggle cast spells (read books to learn spells); Z | varázslatok listájának megjelenítése (a varázslatok megtanulásához olvass könyveket)
-- ' | blink in a direction; ' | elillanás tetszőleges irányba
-- ;; | telekinesis in a direction; ;; | telekinézis tetszőleges irányba
-- > | descend stairs; > | leereszkedés a lépcsőn
-- < | ascend stairs; < | felsétálás a lépcsőn
-- / | toggle chat in multiplayer; / | chat megnyitása többjátékos módban
-- \ | view knowledge panel; \ | az Ismeretek megnyitása
-- + | zoom in; + | nagyítás
-- - | zoom out; - | kicsinyítés
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | bal oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | jobb oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
-- INSERT | toggle tunnelling mode;
-- SHIFT + arrow | fire a missile without moving; SHIFT + nyilak | rakéta kilövése mozgás nélkül
-- CTRL + arrow | interact with the target without moving; CTRL + nyilak | interakció a célponttal, mozgás nélkül
-- ENTER | select the top item on the floor; ENTER | a padlón lévő legfelső tárgy kiválasztása
-- ESCAPE | hides open panels and clears your target; ESCAPE | megnyitott panelek bezárása
+- $Left$ | move left; $Left$ | mozgás balra
+- $Right$ | move right; $Right$ | mozgás jobbra
+- $Up$ | move up; $Up$ | mozgás felfelé
+- $Down$ | move down; $Down$ | mozgás lefelé
+- $UpLeft$ | move up-left; $UpLeft$ | mozgás balra felfelé
+- $UpRight$ | move up-right; $UpRight$ | mozgás jobbra felfelé
+- $DownLeft$ | move down-left; $DownLeft$ | mozgás balra lefelé
+- $DownRight$ | move down-right; $DownRight$ | mozgás jobbra lefelé
+- SHIFT + direction | fire a missile without moving; SHIFT + nyilak | rakéta kilövése mozgás nélkül
+- CTRL + direction | interact with the target without moving; CTRL + nyilak | interakció a célponttal, mozgás nélkül
+- $Select$ | select the top item on the floor; $Select$ | a padlón lévő legfelső tárgy kiválasztása
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | megnyitott panelek bezárása
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | megnyitott panelek bezárása és billentyűzetfókusz törlése
 - SPACE | toggle real-time or turn-based; SPACE | váltás a körökre osztott és a valós idejű játék között
-- PgUp | switch to previous character; PgUp | váltás az előző karakterre
-- PgDown | switch to next character; PgDown | váltás a következő karakterre
-- ALT | show labels; ALT | címkék mutatása
-- F1 | show this help; F1 | súgó megnyitása
-- F6 | quick save; F6 | gyorsmentés
-- F10 | open side menu; F10 | oldalsó menü megnyitása
+- CTRL/ALT | show labels; CTRL/ALT | címkék mutatása
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | a padlón lévő legfelső tárgy felvétele
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | egy kör várakozás (karakterre duplán kattintva is működik)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | pihenés (élet és mana visszatöltése)
+- $Search$ | for search mode for secret doors and traps; $Search$ | titkos ajtók és csapdák keresése
+- $Descend$ | descend stairs; $Descend$ | leereszkedés a lépcsőn
+- $Ascend$ | ascend stairs; $Ascend$ | felsétálás a lépcsőn
+- $Character$ | toggle character; $Character$ | karakteradatok megjelenítése
+- $Inventory$ | toggle inventory; $Inventory$ | leltár megjelenítése
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | varázslatok listájának megjelenítése (a varázslatok megtanulásához olvass könyveket)
+- $Floor$ | toggle floor; $Floor$ | talaj megjelenítése
+- $Map$ | toggle map; $Map$ | térkép megjelenítése
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | napló megjelenítése (kattints a napló kinyitásához és összecsukásához)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | az Ismeretek megnyitása
+- $Chat$ | toggle chat in multiplayer; $Chat$ | chat megnyitása többjátékos módban
+- $Kick$ | kick in a direction; $Kick$ | rúgás tetszőleges irányba
+- $Mount$ | mount or dismount your steed; $Mount$ | fel- és leszállás (hátasnál)
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | ugrás tetszőleges irányba (készség birtoklása esetén)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | elillanás tetszőleges irányba
+- $Teleport$ | teleport at will; $Teleport$ | önkéntes teleportálás
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | telekinézis tetszőleges irányba
+- $Polymorph$ | polymorph at will; $Polymorph$ | önkéntes átváltozás
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | toggle tunnelling mode
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | oldalsó menü megnyitása
+- $QuickSave$ | quick save; $QuickSave$ | gyorsmentés
+- $Help$ | show this help; $Help$ | súgó megnyitása
+- $Quit$ | save or quit this game; $Quit$ | mentés vagy kilépés a játékból
+- $ZoomIn$ | zoom in; $ZoomIn$ | nagyítás
+- $ZoomOut$ | zoom out; $ZoomOut$ | kicsinyítés
+- $ActionReuse$ | re-use last item; $ActionReuse$ | legutóbbi tárgy újbóli használata
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | legutóbbi tárgy újbóli felszerelése
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | legutóbbi varázslat újbóli használata
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | váltás az előző karakterre
+- $SwitchDown$ | switch to next character; $SwitchDown$ | váltás a következő karakterre
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | bal oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | jobb oldali gyorscselekvések (cselekvés kiválasztása a shift + szám kombinációval)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | teljesképernyős-mód átállítása ablakos módra (Windows)
 
 # General mechanics;Általános mechanika
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier};+ Tulajdonságok alakulása x {Multiplier}
 ` + Acquired Talents x {Multiplier};+ Megszerzett készségek x {Multiplier}
 ` + Gained Resistances x {Multiplier};+ Megszerzett ellenállások x {Multiplier}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold);+ Teljes leltár értéke (aranyban)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.;A leltár teljes értékének van egy felső határa, így nem haladja meg a többi pontszámot.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.;Lehet, a karakteredről kiderül, hogy nem volt életrevaló, így a halál ismét gyorsan eljön érte.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.;Akárhányszor feltámaszthatod karakteredet, azonban az addig megszerzett összes hírneved nullázódni fog.
 . Fame achieved subsequent to your resurrection will contribute to your score.;A feltámasztás után elért hírnév hozzáadódik a pontszámodhoz.
-. This is similar to the 'explorer mode' from the original Nethack.;Ez hasonlít az eredeti Nethack "felfedezőmódjához".
+. This is similar to the 'explorer mode' from the original NetHack.;Ez hasonlít az eredeti NetHack "felfedezőmódjához".
 
 # Multiplayer;Többjátékos mód
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;A többjátékos mód az Invention platform "grafikus telnet" (graphical telnet) technológiáján alapul.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.;Ebben a "csalómódban" gyorsabban elsajátíthatod a Pathos titkait.
 . Any adventures in this mode will not be tracked in the hall of fame.;Az ebben a játékmódban játszott kalandok eredményei nem kerülnek be a Dicsőség Csarnokába.
 /
-- ` | open master console (more commands); ` | mestermódkonzol megnyitása (még több parancs)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | zóna elsötétítése
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | egy véletlenszerű entitás lerakása, amely elnyeli a karaktert
-- shift + F | all adjacent enemies are charmed; shift + F | összes közeli ellenség elbűvölése
-- shift + G | gain 1000 gold; shift + G | +1000 arany
-- shift + I | identify all items on the floor; shift + I | a padlón lévő összes tárgy azonosítása
-- shift + W | jump at will; shift + W | önkéntes ugrás
-- shift + D | light this zone; shift + D | zóna megvilágítása
-- shift + M | reveal the entire map; shift + M | egész térkép feltárása
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | összes szint térképének feltárása
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | kazamata átalakítása (a végjáték térképe megváltozik)
-- shift + P | polymorph into any entity; shift + P | átváltozás bármilyen entitássá
-- shift + T | teleport to a target zone; shift + T | teleportálás kívánt helyre
-- shift + Z | learn all spells; shift + Z | összes varázslat megtanulása
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | automatikus használat bekapcsolása (ha rálépsz egy négyzetre, az összes rajta lévő tárgyat használni fogod)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | visszatérés a kazamata előző szintjére (akkor is, ha nem lépcsőn állsz)
-- > | descend to the next dungeon level (even when not on a staircase); > | leereszkedés a kazamata következő szintjére (akkor is, ha nem lépcsőn állsz)
-- F5 | refresh the screen; F5 | képernyő frissítése
-- F9 | quick load; F9 | gyorsbetöltés
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | mestermódkonzol megnyitása (még több parancs)
+- $MasterLightness$ | light this zone; $MasterLightness$ | zóna megvilágítása
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | zóna elsötétítése
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | egy véletlenszerű entitás lerakása, amely elnyeli a karaktert
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | összes közeli ellenség elbűvölése
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | +1000 arany
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | a padlón lévő összes tárgy azonosítása
+- $MasterJump$ | jump at will; $MasterJump$ | önkéntes ugrás
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | egész térkép feltárása
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | összes szint térképének feltárása
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | kazamata átalakítása (a végjáték térképe megváltozik)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | átváltozás bármilyen entitássá
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | teleportálás kívánt helyre
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | összes varázslat megtanulása
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | automatikus használat bekapcsolása (ha rálépsz egy négyzetre, az összes rajta lévő tárgyat használni fogod)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | visszatérés a kazamata előző szintjére (akkor is, ha nem lépcsőn állsz)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | leereszkedés a kazamata következő szintjére (akkor is, ha nem lépcsőn állsz)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | képernyő frissítése
+- $QuickLoad$ | quick load; $QuickLoad$ | gyorsbetöltés
 /
 . There are additional manipulations built into the character panel and contextual help.; A karakterpanel és a kontextuális segítség további lehetőségeket tartalmaz.

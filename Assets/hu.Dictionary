@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Halálos méreg folyik az ereidben.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,Halálos méreg folyik az ereidben.
 AfflictionDescription,Something deeply unsettling is happening... down there.,Valami mélyen felkavaró történik... odalent.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Hasad gyötrő éhségtől szenved.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,"Ez a vírus okozta kór fertőzött állatokon keresztül terjed, és gyulladást okoz az agyban."
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,pompás mithrilpáncél
 AppearanceName,fizzy potion,szénsavas főzet
 AppearanceName,flute,furulya
 AppearanceName,forked polearm,villás alabárd
+AppearanceName,frayed cloth,szövetdarab
 AppearanceName,fur boots,szőrmecsizma
 AppearanceName,fuzzy book,rojtos könyv
 AppearanceName,glass orb,üveggömb
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,papiruszkönyv
 AppearanceName,parchment book,pergamenkönyv
 AppearanceName,pearl earrings,gyöngyfülbevaló
 AppearanceName,pearl ring,gyöngygyűrű
-AppearanceName,piece of cloth,szövetdarab
 AppearanceName,pink book,rózsaszín könyv
 AppearanceName,pink potion,rózsaszín főzet
 AppearanceName,plaid book,kockás könyv
@@ -549,8 +587,10 @@ BoonName,undead army,élőholtak serege
 BoonName,unicorn friend,unikornis barát
 CalendarText,d MMMM yyyy,yyyy MMMM d
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
+CharacterName,Armax,
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arrom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belietha
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brouwer
+CharacterName,Busko,
 CharacterName,Cailie,Cailie
 CharacterName,Capo,Capo
 CharacterName,Carthyre,Carthyre
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Crepsal
 CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
+CharacterName,Dastrne,
 CharacterName,Davicohr,Davicohr
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,Donneller
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Ericendrick
 CharacterName,Eybrinde,Eybrinde
 CharacterName,Faraze,Faraze
+CharacterName,Farleen,
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenraymond
+CharacterName,Fizzit,
 CharacterName,Floki,Floki
 CharacterName,Forro,Forro
 CharacterName,Franzia,Franzia
@@ -591,15 +637,20 @@ CharacterName,Galday,Galday
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Gleichman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomack
 CharacterName,Grytt,Grytt
 CharacterName,Haelom,Haelom
 CharacterName,Haique,Haique
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,Haquian
 CharacterName,Hendrick,Hendrick
 CharacterName,Hough,Hough
+CharacterName,Hylatia,
 CharacterName,Illitasha,Illitasha
+CharacterName,Iralna,
 CharacterName,Ishgood,Ishgood
 CharacterName,Istophe,Istophe
 CharacterName,Isylav,Isylav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Javarl
 CharacterName,Jayenason,Jayenason
 CharacterName,Jeem,Jeem
 CharacterName,Jessera,Jessera
+CharacterName,Jevard,
 CharacterName,Jonat,Jonat
+CharacterName,Karasque,
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kennold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagratha
 CharacterName,Lanetwalz,Lanetwalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Lesha
+CharacterName,Liloquy,
 CharacterName,Luickean,Luickean
+CharacterName,Lunch,
 CharacterName,Lzay,Lzay
 CharacterName,Malasuth,Malasuth
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melchai
 CharacterName,Meloty,Meloty
+CharacterName,Mili,
 CharacterName,Miller,Miller
 CharacterName,Misteph,Misteph
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,Nichaeltoy
 CharacterName,Ninerma,Ninerma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Ninny
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,
 CharacterName,Okennwood,Okennwood
 CharacterName,Ollac,Ollac
 CharacterName,Omdarro,Omdarro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oscae
+CharacterName,Ovira,
 CharacterName,Paltrick,Paltrick
 CharacterName,Pauwinner,Pauwinner
 CharacterName,Penevieve,Penevieve
@@ -653,13 +713,17 @@ CharacterName,Quarah,Quarah
 CharacterName,Quibb,Quibb
 CharacterName,Quizchak,Quizchak
 CharacterName,Quohnrupley,Quohnrupley
+CharacterName,Rake,
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugarr
 CharacterName,Razz,Razz
 CharacterName,Rebenna,Rebenna
+CharacterName,Relinsarn,
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokiju
 CharacterName,Rupley,Rupley
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,Sarlia
 CharacterName,Shinaas,Shinaas
 CharacterName,Smither,Smither
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stewite
 CharacterName,Sully,Sully
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanyacka
+CharacterName,Tempus,
 CharacterName,Thakuline,Thakuline
 CharacterName,Threepo,Threepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,
 CharacterName,Trank,Trank
+CharacterName,Uballon,
 CharacterName,Udfoot,Udfoot
 CharacterName,Uffle,Uffle
 CharacterName,Ujopayne,Ujopayne
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethome
 CharacterName,Viophie,Viophie
 CharacterName,Vorzian,Vorzian
+CharacterName,Waldrin,
 CharacterName,Wallison,Wallison
 CharacterName,Waltis,Waltis
 CharacterName,Walzen,Walzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Xank
 CharacterName,Xantari,Xantari
 CharacterName,Xarrung,Xarrung
 CharacterName,Xiolet,Xiolet
+CharacterName,Yahoa,
 CharacterName,Yarromdee,Yarromdee
 CharacterName,Yassage,Yassage
 CharacterName,Yorque,Yorque
 CharacterName,Yral,Yral
 CharacterName,Yuvaloren,Yuvaloren
+CharacterName,Zarja,
 CharacterName,Zean,Zean
 CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,
 CharacterName,Zultry,Zultry
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",Hosszú évekig tartó intenzív elmélkedés után ezek a jövendőmondók készek kimerészkedni a nagyvilágba. Saját elméjük mesterekén iszonyatos akaraterővel rendelkeznek.
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Jótékony és gondoskodó lelkek, akik mindig készek segítő kezet nyújtani a gyengéknek. A betegségekkel való örökös harcnak köszönhetően, a higiénia és a tisztaság ékes példai, kiknek célja a segítségnyújtás, ám emiatt az életben maradáshoz folyamatosan társaságra van szükségük."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,Teljes ellenáll
 ElementDescription,Complete resistance to life and mana draining effects.,Teljes ellenállás élet- és manaelszívás ellen.
 ElementDescription,Complete resistance to petrification effects.,Teljes ellenállás kővé dermedés ellen.
 ElementDescription,Complete resistance to poison damage.,Teljes ellenállás méregsebzés ellen.
-ElementDescription,Protects you against pure magical effects.,Megvéd a tisztán mágikus hatásokkal szemben.
-ElementDescription,You resist attempts to render you into a magical slumber.,"Ellenállsz annak, hogy mágikus álomba szenderítsenek."
+ElementDescription,Complete resistance to purely magical damage and effects.,Megvéd a tisztán mágikus hatásokkal szemben.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,"Ellenállsz annak, hogy mágikus álomba szenderítsenek."
 ElementName,acid,sav
 ElementName,cold,hideg
 ElementName,digging,ásás
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,igénybevett
 EncumbranceName,unencumbered,tehermentes
 EngulfmentName,engulfed,elnyelte
 EngulfmentName,swallowed,lenyelte
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Egy közepes méretű, nagy becsvágyra hajlamos lény. Élettartama rövid, de mindenütt előfordulhat; nem szabad alábecsülni."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Toronymagas remeték ősi fajtája. Félelmetes méretük hatalmas erőt kölcsönöz nekik, amit kiegészít a húsokból és ásványi anyagokból álló, falánk étrendjük."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Asztrális lények, akik egy legyőzött kalandor rettenthetetlen szellemének hordozói. Saját indíttatás híján örömmel ajánlják fel a testük feletti uralmat másoknak, így helyezve az elhunyt kalandor kezébe a bosszú vagy a megváltás második esélyét. Asztrális anyagból születtek, termetük vékony. Áttetszők és képesek szabadon áthaladni bármilyen fizikai akadályon."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Gyönyörű, nem e világi lények, kik jellemző glóriával és tollakkal borított szárnyaikkal rendelkeznek. Ezek a lények erősen ráhangolódtak a jó és a gonosz közötti szüntelen harcra, és emiatt képesek érzékelni az üdvösséget bármiben, ami csak a kezük ügyébe kerül."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,Óvakodj ettől a kíméletlen halálosztótól.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Túlvilági lények, kiket erőteljes természeti szellemek kötnek össze, hogy hóbortjaikat táplálják. Zömök, szőrös alsó testtel, a kecskééhez hasonló patával és a kosokra jellemző csavart szarvval rendelkeznek. Trágár és okos lények, akik vidám vezérei az ivás, a tánc és a harc hedonista kalandjainak."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Nagy, húsevő hüllők, kiknek vad ősei már jóval a civilizáció születése előtt uralták a világot. Félelmetes ragadozók, akik képesek lenyűgöző távolságokra ugrani, valamint vastag és pikkelyes bőrükkel támadások sokaságát elhárítani."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Perverz, aberrált, bíborszín bőrű, fejükön szarvakat viselő lények. Puszta jelenlétük arra kényszeríti a körülöttük lévőket, hogy legsötétebb és legerőszakosabb vágyaiknak tegyenek eleget."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Falánk és termetes ragadozó humanoid faj, melynek tagjai kezüket a földön húzzák maguk után a hátukon lévő púp miatt. A zavarba ejtő fizikai megjelenés ellenére testfelépítésük erőteljes, és hírhedtek arról, hogy képesek gyorsan felépülni bármilyen sérülésből, amely gumiszerű bőrüket érte."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Alakváltó deviánsok, a megtévesztés mesterei."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"Kis emberek, akik inkább az egyszerű életet kedvelik. Különösen barátságosak, de felépítésük csupán a kevésbé nemes vállalásokra teszi őket alkalmassá."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","A természetet és a mágiát kedvelő, spirituális lények. Megjelenésre hasonlóak az emberekhez, azonban gyakran kisebbek és fürgébbek."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","Zömök, alacsony és szívós népek. Makacsságukról, fémmunkáikról és az alkohol iránti szeretetükről ismertek."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Pöttöm termetű, földalatti népek, akik szeretnek bütykölni és varázsolni. Mivel hozzászoktak a létminimumon való tengődéshez, szervezetük alkalmas az olyan, hosszú kalandokra, ahol kevés az élelem."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","A két 'ferrozigóta' puding közül a kisebbik, barna puding íze állítólag jobban hasonlít a romlott tejére, mint a csokoládédesszertére. Maga a puding szövetekkel és mindenféle bőrrel táplálkozik, de legismertebb képessége az egyedülálló szaporodási módszere. Vassal való érintkezéskor a rothadt paca kettéhasadásának csodájára kerül sor, melynek eredményeként két mohó utód lát napvilágot. A kalandozók által viselt fegyverzetben mindenütt jelenlévő vas hatására ennek a lénynek az állománya az idő múlásával egyre csak nő."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,"Ez a furcsa, maró folyadékokból álló élő buborék nem tűnik valami ártalmasnak."
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Apró, szárnyas szellemek, akik eredendően varázslatosak és rendkívül szépek. Ha fenyegetve érzik magukat, képesek a térbeli valóság torzulásainak köszönhetően elmenekülni."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Ronda, érzéketlen lények, kannibál hajlamokkal; ez a harcias faj lenyűgöző erejéről és visszamaradott szellemi képességeiről ismert."
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,bébi ezüstsárkány
 EntityName,baby white dragon,fehérsárkány-bébi
 EntityName,baby yellow dragon,sárgasárkány-bébi
 EntityName,bad egg,záptojás
-EntityName,balrog,balrog
 EntityName,baluchitherium,paraceratherium
 EntityName,banshee,banshee
 EntityName,bar-lgura,bar-igura
@@ -1175,6 +1277,7 @@ EntityName,dao,dao
 EntityName,dark cleric,sötét pap
 EntityName,Death,Halál
 EntityName,death dog,halálkutya
+EntityName,decinder,decinder
 EntityName,deep gnome,földmélyi gnóm
 EntityName,deep one,mélyenlakó
 EntityName,deeper one,mélyebben lakó
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,hasonmás
 EntityName,dracolich,sárkánylidérc
 EntityName,dracon,
 EntityName,dragon king,sárkánykirály
+EntityName,dread wraith,dread wraith
 EntityName,dretch,dretch
 EntityName,drow,sötét elf
 EntityName,dryad,driád
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,törpmúmia
 EntityName,dwarf thief,törptolvaj
 EntityName,dwarf warrior,törpharcos
 EntityName,dwarf zombie,zombitörp
-EntityName,Earendil,Earendil
 EntityName,earth binder,földbűbájos
 EntityName,earth elemental,földelementál
 EntityName,earth maker,földmágus
@@ -1227,7 +1330,6 @@ EntityName,elf king,elfkirály
 EntityName,elf lord,elflord
 EntityName,elf mummy,elfmúmia
 EntityName,elf zombie,zombielf
-EntityName,Elwing,Elwing
 EntityName,embalmer,balzsamozó
 EntityName,emerald golem,
 EntityName,energy vortex,energiaörvény
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,zombikétfejű
 EntityName,exterminator,kivégző
 EntityName,fairy,tündér
 EntityName,Famine,Famine
+EntityName,Farwander,Kétvirág
 EntityName,Father Dagon,Dagon Apa
 EntityName,fiend,ördög
 EntityName,fire ant,tűzhangya
@@ -1274,6 +1377,7 @@ EntityName,ghost,szellem
 EntityName,ghoul,gúl
 EntityName,ghoul mage,gúlmágus
 EntityName,ghoul queen,gúlkirálynő
+EntityName,Ghuyaxil,Ghuyaxil
 EntityName,giant,óriás
 EntityName,giant ant,óriáshangya
 EntityName,giant badger,óriásborz
@@ -1380,9 +1484,9 @@ EntityName,jackal,sakál
 EntityName,jackalwere,sakálfajzat
 EntityName,jaguar,jaguár
 EntityName,jellyfish,medúza
+EntityName,Jharothy,Jharothy
 EntityName,jiggling blob,ugráló paca
 EntityName,juggernaut,buldózer
-EntityName,Juiblex,Juiblex
 EntityName,juvenile raven,fiatal holló
 EntityName,Kaloi Thrym,Sötét Úr
 EntityName,kamadan,kamadan
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,zombikobold
 EntityName,komodo dragon,komodói varánusz
 EntityName,kraken,kraken
 EntityName,lamb,bárány
-EntityName,Lareth,Lareth
 EntityName,large cat,nagy macska
 EntityName,large dingo,nagy dingó
 EntityName,large dog,nagy kutya
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,gyíkembertörzsfőnök
 EntityName,lizardman mage,gyíkermbermágus
 EntityName,lizardman shaman,gyíkembersámán
 EntityName,lizardman warrior,gyíkemberharcos
-EntityName,Lolth,Lolth
 EntityName,long worm,hosszú féreg
 EntityName,long worm tail,hosszúféreg-farok
 EntityName,Lord Carnarvon,Lord Carnarvon
@@ -1481,7 +1583,6 @@ EntityName,mumak,mumak
 EntityName,nabassu,nabassu
 EntityName,nalfeshnee,nalfeshnee
 EntityName,Nalzok,Nalzok
-EntityName,nazgul,nazgul
 EntityName,neanderthal,neandervölgyi
 EntityName,Neferet,"Neferet, a Zöld"
 EntityName,newt,gőte
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,nupperibo
 EntityName,nurse,ápoló
 EntityName,occultist,okkultista
 EntityName,ochre jelly,okkersárga nyálka
+EntityName,Oeziblegh,Oeziblegh
 EntityName,ogre,ogre
 EntityName,ogre king,ogrekirály
 EntityName,ogre lord,ogrelord
 EntityName,ogre mage,ogremágus
+EntityName,Oleyth,Oleyth
 EntityName,olog-hai,olog-hai
 EntityName,Oracle,Orákulum
 EntityName,orange jelly,narancssárga nyálka
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,orkharcos
 EntityName,orc zombie,zombiork
 EntityName,Orcus,Orcus
 EntityName,Orion,Orion
+EntityName,Orvalth,Orvalth
 EntityName,owlbear,bagolymedve
 EntityName,pack rat,bozótpatkány
 EntityName,page,apród
@@ -1550,6 +1654,7 @@ EntityName,rabbit,nyúl
 EntityName,rabid rabbit,veszett nyúl
 EntityName,rabid rat,veszett patkány
 EntityName,rabid wolf,veszett farkas
+EntityName,Raedilan,Raedilan
 EntityName,rancid jelly,avas nyálka
 EntityName,rat king,patkánykirály
 EntityName,ratwere,patkányfajzat
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,rubintgólem
 EntityName,rust monster,rozsdaszörny
 EntityName,rutterkin,rutterkin
 EntityName,sabre-toothed cat,kardfogú tigris
+EntityName,Sairou,Sairou
 EntityName,salamander,szalamandra
 EntityName,sandestin,sandestin
 EntityName,sapphire golem,zafírgólem
@@ -1629,8 +1735,7 @@ EntityName,student,tanuló
 EntityName,succubus,succubus
 EntityName,swamp kobold,mocsári kobold
 EntityName,tengu,tengu
-EntityName,Thorin,Thorin
-EntityName,Thoth Amon,Thoth Amon
+EntityName,Tholmak,Tholmak
 EntityName,thug,bandita
 EntityName,tiger,tigris
 EntityName,tigerwere,tigrisfajzat
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,trollmúmia
 EntityName,tsetse fly,cecelégy
 EntityName,tunnel worm,alagútféreg
 EntityName,two-headed troll,kétfejű troll
-EntityName,Twoflower,Kétvirág
 EntityName,umber hulk,barna melák
 EntityName,undead slayer,élőholtvadász
 EntityName,vampire,vámpír
@@ -1656,7 +1760,7 @@ EntityName,vampire king,vámpírkirály
 EntityName,vampire lord,vámpírlord
 EntityName,vampire mage,vámpírmágus
 EntityName,Van Helsing,Van Helsing
-EntityName,Vecna,Vecna
+EntityName,Vercrux,Vercrux
 EntityName,violet fungus,ibolya gomba
 EntityName,vorpal jabberwock,vorpal-szajkóhukk
 EntityName,vrock,verok
@@ -1703,7 +1807,6 @@ EntityName,wumpus,wumpus
 EntityName,wyvern,sárkánygyík
 EntityName,xan,xan
 EntityName,xorn,zorn
-EntityName,Yeenoghu,Yeenoghu
 EntityName,yellow jacket,lódarázs
 EntityName,yellow jelly,sárganyálka
 EntityName,yellow light,sárga fény
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} minden hatása érvénytelenít
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} kárt szenvedett a következőtől: {ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} elpusztult tőle: {ElementName}
 FormatText,{AssetName} was disintegrated,{AssetName} szétbomlott
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} lefejezte: {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} halálra rémisztette: {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} megölte: {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} sajnálja {Defender:CharacterName} esetét
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} ellenségévé tette {Defender:CharacterName} karaktert!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} {Defender:CharacterName} ellen fordult!
-FormatText,{Base} in {Range},{Base} {Range}
 FormatText,{BeamName} beam,{BeamName}
 FormatText,{BlockName} was disintegrated,{BlockName} szétbomlott
 FormatText,{BoonName} which direction?,{BoonName} melyik irányba?
 FormatText,{BoonName} which item?,{BoonName} melyik tárgyon?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,{Chance} esetben
 FormatText,{Chance} leaves corpse,{Chance} a következő marad utána: tetem
 FormatText,{Chance} per room,{Chance} szobánként
 FormatText,{Chance} react to {ElementName},"{Chance}, hogy reagál a következőre: {ElementName}"
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} {MotionPastName} a következőt: {Use:AssetName}, ezzel: {With:AssetName}"
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} a(z) {Use:FixtureName} tereptárgyat {With:AssetName} tárggyal {MotionPastName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} a kazamata következő szintjére: {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} ügyesen {MotionPastName} a(z) {AssetName} tárgyat
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},"{CharacterName} ügyesen {MotionPastName} a(z) {Use:AssetName} tárgyat, ezzel: {With:AssetName}"
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} elérte a {LevelNumber}. szintet
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},"
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
-FormatText,after reaching dungeon level {RecordDepth},miután elérte a kazamata {RecordDepth}. szintjét
+FormatText,after reaching depth {RecordDepth},miután elérte a kazamata {RecordDepth}. szintjét
 FormatText,animate {CharacterName},élő {CharacterName}
 FormatText,boost {AttributeName} by enchantment,{AttributeName} fokozása igézéssel
 FormatText,break {FeatureName},
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},{From}.-{To}. szint
 FormatText,levels {Number}+,{Number}. szint +
 FormatText,LOCKED {GATENAME},ZÁRT {GATENAME}
 FormatText,lose {PropertyName} talent,készség elvesztése {PropertyName}
-FormatText,not {EffectProperty},nincsen/nem {EffectProperty}
 FormatText,polymorph into {EntityNames},átváltozás {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},halott-támasztás {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},hatótávolság {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,aktiválás {Dice} alkalommal
 FormatText,unless resists {ElementName},"kivéve, ha ellenáll a következőnek: {ElementName}"
 FormatText,unless target has {PropertyName},"kivéve, ha a célpont rendelkezik a következővel: {PropertyName}"
 FormatText,versus {Something},{Something} ellen
-FormatText,when {Chance},{Chance} esetben
 FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME} esetén
-FormatText,when {KINDNAMES},{KINDNAMES} esetén
 FormatText,when {MATERIALNAME},{MATERIALNAME} esetén
 FormatText,when {PROPERTYNAME},{PROPERTYNAME} esetén
 FormatText,when {SANCTITYNAME},{SANCTITYNAME} esetén
 FormatText,when {Something},{Something} esetén
 FormatText,when {STANDINGNAME},{STANDINGNAME} esetén
 FormatText,when resists {ElementName},
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Ez a nehéz ajtó kemény kristályformákból áll és nehezen sérül.
 GateName,crystal door,kristályajtó
 GateName,gold door,
@@ -2051,9 +2159,11 @@ GenderName,neuter,semleges
 GenderName,non-binary,nem bináris
 GenerationType,module,modul
 GenerationType,quest,kaland
+GenerationType,workshop,
 GradeName,artifact,ereklye
 GradeName,exotic,
 GradeName,standard,
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Ez a kőfelület igazi, makulátlan mestermunka, annak ellenére, hogy az idő vasfogának nyomát hordozza magán."
 GroundName,cave floor,
 GroundName,chasm,üresség
@@ -2504,7 +2614,9 @@ ItemName,glaive,pallos
 ItemName,gold coin,aranyérme
 ItemName,gold dragon scale mail,arany sárkánypikkely-vért
 ItemName,gold dragon scales,arany sárkány-pikkely
+ItemName,gold flail,
 ItemName,Gold Key,aranykulcs
+ItemName,gold plate mail,
 ItemName,great dagger,nagy tőr
 ItemName,green dragon scale mail,zöldsárkánypikkely-vért
 ItemName,green dragon scales,zöldsárkány-pikkely
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!MESTERMÓD!
 LiteralText,(2d6 instead of 2-12),(2-12 helyett 2d6)
 LiteralText,(game information status text),(játékinformációk megjelenítése)
 LiteralText,(not eligible for hall of fame),(a Dicsőség Csarnokára nem jogosult)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(AMOLED kijelzőkhöz ajánlott)
 LiteralText,(SUPPRESSED),(LETILTVA)
 LiteralText,[MASTER],[MESTER]
-LiteralText,abolition of firearms,lőfegyverek nem használhatóak
+LiteralText,Abolition of firearms,lőfegyverek nem használhatóak
 LiteralText,ABOUT,A JÁTÉKRÓL
-LiteralText,About Pathos,A Pathosról
-LiteralText,accelerated resting,gyorsított pihenés
+LiteralText,Accelerated resting,gyorsított pihenés
+LiteralText,Achievements,
 LiteralText,actions,cselekvések
 LiteralText,ADD LEVEL,SZINT HOZZÁADÁSA
 LiteralText,Add new adventurer,Új kalandor hozzáadása
@@ -3025,8 +3138,8 @@ LiteralText,alias?,álnév?
 LiteralText,ALL,ÖSSZES
 LiteralText,ALL AT ONCE,MINDET EGYSZERRE
 LiteralText,all kind,mindenfajta
+LiteralText,all levels,
 LiteralText,always,mindig
-LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
 LiteralText,anatomy,anatómia
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,élesztés kísértetek
 LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,NÉVTELEN
 LiteralText,anticlockwise 90 degrees,az óramutató járásával ellentétesen 90 fokban
+LiteralText,antique art,
 LiteralText,any item,bármelyik tárgy
 LiteralText,APPLICATION FILES,ALKALMAZÁSFÁJLOK
 LiteralText,Are you sure you want to end your adventure?,Biztos be szeretnéd fejezni ezt a kalandot és elmenekülsz a kazamatákból?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,BIZTOS VAGY BENNE?
 LiteralText,area of effect,hatásterület
 LiteralText,area transient,területi hatás
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,EREKLYÉK
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,LÉPÉS AZ ELŐZŐ SZINTRE
 LiteralText,assess item,értékelés
 LiteralText,assets,vagyon
 LiteralText,ATMOSPHERE,ATMOSZFÉRA
 LiteralText,attack modifier,támadásmódosító
 LiteralText,Attack which direction?,Melyik irányba szeretnél támadni?
-LiteralText,attack//noun,támadás
-LiteralText,ATTACK//noun,TÁMADÁS
-LiteralText,attack//verb,támadás
-LiteralText,ATTACK//verb,TÁMADÁS
+LiteralText,Attack//noun,Támadás
+LiteralText,Attack//verb,Támadás
 LiteralText,attacks,támadások
+LiteralText,AUDIO,
 LiteralText,AUTO,AUTO
 LiteralText,auto saving,automatikus mentés
+LiteralText,avatar,
 LiteralText,AWAKE,ÉBER
-LiteralText,BACK,VISSZA
 LiteralText,backfire,visszaütés
 LiteralText,barrier,akadály
 LiteralText,BARRIERS,AKADÁLYOK
 LiteralText,bazaar,bazár
 LiteralText,Begin the adventure,Kaland elkezdése
 LiteralText,beholds,észrevesz
-LiteralText,beta discussions,értekezések a bétaverzióról
 LiteralText,Black background,Fekete háttér
 LiteralText,blasphemy,istenkáromlás
-LiteralText,BLINK,ELILLANÁS
+LiteralText,Blink,Elillanás
 LiteralText,blink entity,elillanás
 LiteralText,Blink which direction?,Melyik irányba szeretnél elillanni?
 LiteralText,block,akadály
 LiteralText,BLOCKED,EL VAN ZÁRVA
 LiteralText,BLOCKS,AKADÁLYOK
-LiteralText,BOONS,ÁLDÁSOK
+LiteralText,Boons,Áldások
 LiteralText,boost attack by enchantment,támadás fokozása igézéssel
 LiteralText,boost damage by enchantment,sebzés fokozása igézéssel
 LiteralText,boost defence by enchantment,védelem fokozása igézéssel
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,NEM LEHET LÁTNI
 LiteralText,CAN'T SLIDE,NEM LEHET CSÚSZNI
 LiteralText,CAN'T TELEKINESIS,NEM MEHET VÉGBE TELEKINÉZIS
 LiteralText,CAN'T THROW,NEM LEHET ELDOBNI
-LiteralText,CANCEL,MÉGSE
+LiteralText,Cancel,Mégse
 LiteralText,cancellation,érvénytelenítés
 LiteralText,CANCELLED,ÉRVÉNYTELENÍTVE
 LiteralText,capture any entity,elfogás
@@ -3105,13 +3219,12 @@ LiteralText,Cast,Varázslatok
 LiteralText,CAST SPELLS,varázslás
 LiteralText,challenge,kihívás
 LiteralText,CHAMPION,BAJNOK
+LiteralText,Change,
 LiteralText,Character,Karakter
-LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,feltöltött tárgyak
-LiteralText,Chat on Discord,Csevegj a Discordon
 LiteralText,check for updates?,frissítések keresése?
 LiteralText,checking for updates,frissítések keresése
-LiteralText,CHOOSE,KIVÁLASZT
+LiteralText,Choose,Kiválaszt
 LiteralText,Choose your quick action,Válaszd ki a gyorscselekvést
 LiteralText,class,osztály
 LiteralText,CLASSES,OSZTÁLYOK
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,kattints az újrapróbáláshoz
 LiteralText,Click to send detected issues to the author,problémák bejelentése
 LiteralText,clone source entity,karakterklón forrás
 LiteralText,clone target entity,karakterklón célpont
-LiteralText,CLOSE,BEZÁRÁS
+LiteralText,Close,Bezárás
 LiteralText,closed,becsukott
-LiteralText,Coding on Medium,Kódolás a Mediumon
 LiteralText,coins,érmék
-LiteralText,COMMAND,
+LiteralText,Command,
+LiteralText,Community,
 LiteralText,companion,társ
 LiteralText,compression,tömörítés
-LiteralText,CONCEAL,ELREJT
+LiteralText,Conceal,Elrejt
 LiteralText,CONCEALED,ELREJTVE
 LiteralText,concealing,eltitkolás
 LiteralText,CONDUCT,TETTEK
-LiteralText,CONFIRM,✓
+LiteralText,Confirm,✓
+LiteralText,Connect,
 LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,Csatlakozz egy másik játékos által létrehozott játékhoz.
-LiteralText,CONSOLE,KONZOL
+LiteralText,Console,Konzol
 LiteralText,constructed,megépített
-LiteralText,CONTACT,KAPCSOLAT
 LiteralText,Continue,Folytatás
 LiteralText,CONTINUE,FOLYTATÁS
 LiteralText,CONTROLLED,IRÁNYÍTOTT
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,következővé alakul:
 LiteralText,conveyance,tápérték:
 LiteralText,COPY,MÁSOL
 LiteralText,corpse,tetem
 LiteralText,CRACK!,RECCS!
-LiteralText,craft,barkácsolás
-LiteralText,CRAFT,BARKÁCSOLÁS
+LiteralText,Craft,Barkácsolás
 LiteralText,Craft which item?,Melyik tárgyat szeretnéd barkácsolni?
 LiteralText,CRASH APP!,DURR!
 LiteralText,CRASH!,DURR!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Melyik irányba szeretnéd létrehozni?
 LiteralText,CREDITS,KÖZREMŰKÖDŐK
 LiteralText,CROP,LEVÁG
 LiteralText,CURSED,ÁTKOZOTT
-LiteralText,CUSTOM,EGYÉNI
 LiteralText,CUSTOM HERO,EGYÉNI HŐS
 LiteralText,CUSTOM MODULES,EGYÉNI MODULOK
+LiteralText,customise controls,
 LiteralText,damage,
 LiteralText,DAMAGE,
 LiteralText,dark,sötét
+LiteralText,Darken area,
 LiteralText,DEAD END,ZSÁKUTCA
 LiteralText,death,halál
 LiteralText,deathray,halálsugár
 LiteralText,decapitate entity,lefejezés
 LiteralText,decapitation,lefejezés
 LiteralText,DECEASED,ELHUNYT
-LiteralText,decelerated real-time,valós idő lassítása
+LiteralText,Decelerated real-time,valós idő lassítása
 LiteralText,DECREASE,CSÖKKENÉS
 LiteralText,defence,védekezés
 LiteralText,DEFENCE,VÉDEKEZÉS
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,TÖRLÉS
 LiteralText,delete this level,szint törlése
 LiteralText,DEMOTE,LEFOKOZÁS
 LiteralText,depth,mélység
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,LEERESZKEDÉS A KÖVETKEZŐ SZINTRE
 LiteralText,destination,úti cél
 LiteralText,destroy,elpusztítás
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,NEM ÉRT EL HELYEZÉST ITT:
 LiteralText,diet,étrend
 LiteralText,difficulty,nehézség
 LiteralText,digging,ásás
-LiteralText,disable ambient sounds,Háttérhangok kikapcsolása
+LiteralText,Disable ambient sounds,Háttérhangok kikapcsolása
 LiteralText,Disable auto save on transition,Automatikus mentés kikapcsolása átvezetők közben
+LiteralText,Disable automatic camera,szabadon pásztázómód
 LiteralText,Disable button tap sounds,Gombnyomás hangok kikapcsolása
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,Befejező moraj kikapcsolása
 LiteralText,Disable continue button,Folytatás gomb kikapcsolása
-LiteralText,disable haptic feedback,Haptikus visszajelzés kikapcsolása
+LiteralText,Disable haptic feedback,Haptikus visszajelzés kikapcsolása
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,Idle animációk kikapcsolása
 LiteralText,Disable introduction boom,Kezdő moraj kikapcsolása
+LiteralText,Disable manual zoom,zoomolás zárolva
 LiteralText,Disable mask animations,
 LiteralText,Disable online services,Online szolgáltatások kikapcsolása
 LiteralText,Disable pitch shifting,Hangmagasság-eltolás kikapcsolása
+LiteralText,Disable processing rate limit,
 LiteralText,Disable radial quick menu,
 LiteralText,Disable side quick menus,
 LiteralText,Disable spacebar real-time toggle,A szóköz billentyűvel történő időváltás kikapcsolása
 LiteralText,Disable swipe gestures,
+LiteralText,Disable tutorial,
 LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,lefegyverzés
-LiteralText,DISCONNECT,SZÉTKAPCSOL
+LiteralText,Disconnect,Szétkapcsol
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,felvilágosodás
-LiteralText,Discuss on Reddit,Beszélgess a Redditen
+LiteralText,discoveries,
 LiteralText,disenchant item,levétel
 LiteralText,dismantle items to extract the base materials and raw essence,"bonts szét tárgyakat, hogy kinyerd alapanyagaikat és nyers esszenciájukat"
-LiteralText,DISMISS,ELUTASÍT
-LiteralText,DISMOUNT,LESZÁLL
+LiteralText,Dismiss,Elutasít
+LiteralText,Dismount,Leszáll
 LiteralText,Dismount which direction?,Melyik irányba szeretnél leszállni?
 LiteralText,Display dice rolls in the help,Kockadobás mutatása a súgóban
+LiteralText,Display full screen,
 LiteralText,distribution,tulajdonságok
 LiteralText,divine item,megfejtés
 LiteralText,DIVINED,MEGFEJTETT
 LiteralText,divined items,megfejtett tárgyak
 LiteralText,Do you want to save or quit this adventure?,Elmenteni vagy befejezni szeretnéd ezt a kalandot?
 LiteralText,domestic,háziasított
-LiteralText,DONATE,ADOMÁNYOZÁS
+LiteralText,Donate,Adományozás
 LiteralText,Donate to say thanks,Adományozz hálád jeléül
 LiteralText,DOOR,AJTÓ
 LiteralText,double damage when mounted,dupla sebzés hátason
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,használat után
 LiteralText,downloading update,frissítés letöltése
 LiteralText,drain item,
-LiteralText,drop,elejt
-LiteralText,DROP,ELEJT
+LiteralText,Drop,Elejt
 LiteralText,DUAL WIELD,KÉTKEZES
 LiteralText,duration,idő
+LiteralText,Eat,
 LiteralText,edible items,ehető tárgyak
 LiteralText,egg,tojás
 LiteralText,else,vagy
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,terhelési küszöb
 LiteralText,End this adventure,Kaland befejezése
 LiteralText,ended,befejeződött
 LiteralText,engulf entity,elnyelés
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,MENNYISÉG MEGADÁSA
 LiteralText,ENTITIES,ENTITÁSOK
 LiteralText,entity,entitás
 LiteralText,entropy accidents,entrópiabalesetek
-LiteralText,EQUIP,FELSZEREL
-LiteralText,equipped,felszerelve
+LiteralText,Equip,Felszerel
+LiteralText,equipment,felszerelve
 LiteralText,ESCAPE,ELMENEKÜLÉS
 LiteralText,escape traps,csapdákból való kijutás
 LiteralText,escape with,kijutás
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,KICSERÉL
 LiteralText,exchange entity,kicserél
 LiteralText,EXIT PATHOS,KILÉPÉS A PATHOSBÓL
 LiteralText,EXPAND,KIBŐVÍT
-LiteralText,EXPEL,KIUTASÍT
+LiteralText,Expel,Kiutasít
 LiteralText,experience,tapasztalat
 LiteralText,EXPERIENCE,TAPASZTALAT
 LiteralText,explosion,robbanás
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,HIBANAPLÓ
 LiteralText,feats,jellegzetességek
 LiteralText,feature,tereptárgy
 LiteralText,FEATURES,TEREPTÁRGYAK
-LiteralText,FEED,MEGETET
+LiteralText,Feed,Megetet
 LiteralText,FEEDBACK,VISSZAJELZÉS
 LiteralText,Feedback information,
 LiteralText,FILES,FÁJLOK
@@ -3306,24 +3433,26 @@ LiteralText,fixed,fixált
 LiteralText,fixed range,állandó hatótávolság
 LiteralText,FIZZLE,PEZSGÉS
 LiteralText,Floor,Padló
-LiteralText,FOLLOW,KÖVET
-LiteralText,Follow me on Twitter,Kövess Twitteren
-LiteralText,free panning mode,szabadon pásztázómód
+LiteralText,Follow,Követ
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,rémület
 LiteralText,fumbling,ügyetlenség
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,KARMA MEGSZERZÉSE
 LiteralText,gain level,szint megszerzése
 LiteralText,GAIN LEVEL,SZINTE MEGSZERZÉSE
 LiteralText,gain nutrition,tápanyag megszerzése
 LiteralText,gain skill,képesség megszerzése
+LiteralText,GAMEPLAY,
 LiteralText,gate,kapu
 LiteralText,gates,
 LiteralText,gather,összegyűjt
 LiteralText,gender,nem
 LiteralText,genocide,népirtás
-LiteralText,GENOCIDE,NÉPIRTÁS
 LiteralText,GIVE,ÁTAD
 LiteralText,GIVE ALL,ÖSSZES ÁTADÁSA
+LiteralText,GLOBAL,VILÁG
 LiteralText,GLYPHS,KÉPEK
 LiteralText,GOD MODE,
 LiteralText,gold,arany
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,kikeltés
 LiteralText,hatched by,kikelti:
 LiteralText,Having trouble finding the stairs down to the next level?,Nem találod a következő szintre vezető lépcsősort?
 LiteralText,Help,Súgó
-LiteralText,HELP,SÚGÓ
 LiteralText,HIDDEN,REJTETT
-LiteralText,HIDE,ELREJTŐZÉS
+LiteralText,Hide,Elrejtőzés
 LiteralText,hiding,rejtőzködő
 LiteralText,HINT,TIPP
-LiteralText,HIRE,FELBÉREL
+LiteralText,Hire,Felbérel
+LiteralText,HJKL directional keys,
 LiteralText,horde,
 LiteralText,HORDES,HORDÁK
 LiteralText,HOST,LÉTREHOZÁS
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Te döntöd el, hogy frissítés előtt be szeretnéd-e fejezni a megkezdett kalandokat vagy sem."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Remélem élvezed a kalandokat! Bármilyen visszajelzéssel vagy javaslattal fordulj hozzám bizalommal.
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,azonosított tárgyak
-LiteralText,identify all items,azonosítás összes
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,A PADLÓN LÉVŐ ÖSSZES TÁRGY AZONOSÍTÁSA
-LiteralText,identify one item,azonosítás egy
+LiteralText,Identify all items,Azonosítás összes
+LiteralText,Identify one item,Azonosítás egy
+LiteralText,identity,
 LiteralText,ILLITERATE,ÍRÁSTUDATLAN
 LiteralText,illusion,illúzió
 LiteralText,ILLUSION,ILLÚZIÓ
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,bebörtönzés
 LiteralText,incarceration,BEBÖRTÖNZÉS
 LiteralText,INCREASE,NÖVEL
 LiteralText,INDEX,NÉVMUTATÓ
-LiteralText,individual crafting,egyéni barkácsolás
+LiteralText,Individual crafting,egyéni barkácsolás
 LiteralText,infinite quantity,végtelen mennyiség
 LiteralText,influenced actions,befolyásolt cselekedetek
 LiteralText,INSCRIBE,BELEÍR
 LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
-LiteralText,instruct each character,
+LiteralText,Inspect,
+LiteralText,Instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
+LiteralText,INTERFACE,
 LiteralText,Inventory,Leltár
-LiteralText,INVENTORY,LELTÁR
-LiteralText,ITEM,TÁRGY
-LiteralText,items,tárgyak
+LiteralText,Item,Tárgy
 LiteralText,ITEMS,TÁRGYAK
 LiteralText,JOIN,CSATLAKOZÁS
 LiteralText,Journal,Napló
 LiteralText,JOURNAL,NAPLÓ
-LiteralText,JUMP,UGRÁS
+LiteralText,Jump,Ugrás
 LiteralText,Jump which direction?,Melyik irányba szeretnél ugrani?
 LiteralText,karma,karma
 LiteralText,KARMA,KARMA
 LiteralText,key?,kulcs?
+LiteralText,Keyboard,
+LiteralText,Kick,Rúgás
 LiteralText,Kick which direction?,Melyik irányba szeretnél rúgni?
-LiteralText,KICK!,RÚGÁS!
 LiteralText,kills,ölések
 LiteralText,kit,felszerelés
-LiteralText,KNOWLEDGE,ISMERETEK
+LiteralText,Knowledge,Ismeretek
 LiteralText,LANGUAGE,NYELV
-LiteralText,LEARN ALL SPELLS,ÖSSZES VARÁZSLAT MEGTANULÁSA
+LiteralText,Learn all spells,Összes varázslat megtanulása
 LiteralText,learn spells,varázslatok megtanulása
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Left,
 LiteralText,LEFT RING,BAL GYŰRŰ
 LiteralText,LEVEL CHART,SZINT TÁBLÁZAT
 LiteralText,level//rank,szint
@@ -3414,20 +3544,19 @@ LiteralText,life,életerő
 LiteralText,LIFE,ÉLETERŐ
 LiteralText,Life represents your physical health and death occurs at zero.,"Az életerő a testi egészségedet mutatja, így mikor eléri a 0-t, meghalsz."
 LiteralText,light,fény
-LiteralText,LIGHT,FÉNY
 LiteralText,light radius,fény hatósugara
+LiteralText,Lighten area,
 LiteralText,limits,határértékek
 LiteralText,LIST,LISTA
 LiteralText,lit,meggyújt
 LiteralText,LIVING,ÉLŐ
 LiteralText,loading,töltés
-LiteralText,LOCK,ZÁR
-LiteralText,locked,zárt
-LiteralText,LOCKED,ZÁRT
-LiteralText,locked scaling mode,zoomolás zárolva
+LiteralText,Lock,ZÁR
+LiteralText,Locked,Zárt
 LiteralText,locking,zárás
-LiteralText,loot,zsákmány
-LiteralText,LOOT,ZSÁKMÁNY
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Zsákmány
+LiteralText,Loot//verb,Zsákmány
 LiteralText,LOSE KARMA,KARMA ELVESZTÉSE
 LiteralText,LOSE LEVEL,SZINT ELVESZTÉSE
 LiteralText,lose nutrition,tápanyag elvesztése
@@ -3440,39 +3569,44 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,A mana a varázslatokhoz szükséges energia szintjét mutatja.
 LiteralText,Map,Térkép
 LiteralText,MAP,TÉRKÉP
-LiteralText,mapping,feltérképezés
+LiteralText,Mapping,Feltérképezés
 LiteralText,material,anyag
 LiteralText,materials,anyagok
 LiteralText,melting,
-LiteralText,MENU,MENÜ
+LiteralText,Menu,Menü
 LiteralText,mercenary,zsoldos
-LiteralText,MIMIC,MÍMEL
+LiteralText,Mimic,Mímel
 LiteralText,mimicking,mímelés
 LiteralText,mobilise block,
 LiteralText,modifier,módosító
+LiteralText,MODULE,
 LiteralText,MORE INFO,
-LiteralText,MOUNT,FELSZÁLL
+LiteralText,Mount,Felszáll
 LiteralText,Mount which direction?,Melyik irányba szeretnél felszállni?
 LiteralText,MOUNTED,HÁTASON
-LiteralText,MOVE,RÁLÉP
+LiteralText,Move,Rálép
 LiteralText,move down one level,menj lejjebb egy szinttel
 LiteralText,move up one level,menj feljebb egy szinttel
 LiteralText,MULTIPLAYER,TÖBBJÁTÉKOS MÓD
+LiteralText,Multiplayer Chat,
 LiteralText,murder,gyilkosság
 LiteralText,MURDER ENTITIES EVERYWHERE,ENTITÁSOK MEGÖLÉSE MINDENHOL
 LiteralText,music volume,zene hangerő
 LiteralText,N/A,nincs adat
-LiteralText,name,név
-LiteralText,NAME,ELNEVEZÉS
 LiteralText,name?,átnevez?
+LiteralText,Name//noun,Név
+LiteralText,Name//verb,Elnevezés
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,semleges
 LiteralText,never,soha sem
-LiteralText,NEW,
+LiteralText,Next character,
 LiteralText,no additional effects,nincs további hatás
 LiteralText,no allies,nincsenek szövetségesek
 LiteralText,no ambient sounds,nincsenek környezeti hangok
 LiteralText,No appropriate items available,Nem érhető el megfelelő tárgy
-LiteralText,no available knowledge,nincs elérhető tudás
+LiteralText,No key,
 LiteralText,no records found,
 LiteralText,no resistances,nincsenek ellenállások
 LiteralText,no talents,nincsenek készségek
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,semmi sem történik
 LiteralText,Nothing of interest,Semmi érdekes
 LiteralText,nothing to give,nincs mit adni
 LiteralText,nothing to take,nincs mit elvenni
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,tápanyag
 LiteralText,NUTRITION,TÁPANYAGSZINT
 LiteralText,OBSTRUCTED,AKADÁLYOZOTT
 LiteralText,OFFLINE,OFFLINE
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,EGYSZERRE EGY
 LiteralText,oOo,oOo
-LiteralText,OPEN,KINYIT
+LiteralText,Open,Kinyit
 LiteralText,OPENED,NYITOTT
 LiteralText,opening,kinyitás
 LiteralText,OR,VAGY
 LiteralText,ORIGINAL,EREDETI
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,FELÜLÍRT
 LiteralText,OVERVIEW,ÁTTEKINTÉS
 LiteralText,Palette,Paletta
 LiteralText,PARTY,CSAPAT
-LiteralText,passive (no attacking),passzív (nincs támadás)
+LiteralText,Passive (no attacking),passzív (nincs támadás)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,"A Pathost osztott képernyőn, 4 játékos kooperatív módban is lehet játszani."
 LiteralText,pathos development @ paypal,Pathos-támogatás @ PayPal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"A Pathos nem tudja betölteni a kalandot. Kérlek, küldd el a mentési fájlodat, hogy megtalálhassam a probléma forrását. Előfordulhat, hogy sikerül magát a fájlproblémát kijavítanom, vagy egy frissítéssel orvosolni a hibát. Megértésedet köszönöm."
-LiteralText,Pathos might be the next evolution of Nethack.,A Pathos lehet a Nethack fejlődésének következő szintje.
+LiteralText,Pathos might be the next evolution of NetHack.,A Pathos lehet a NetHack fejlődésének következő szintje.
 LiteralText,penalty,büntetés
 LiteralText,penetrates,behatol
 LiteralText,per level,/szint
+LiteralText,Perform,
 LiteralText,permanent,állandó
 LiteralText,PERSONAL,SZEMÉLYES
+LiteralText,Pick up,
 LiteralText,PLACE,ELHELYEZ
 LiteralText,PLACE ALL,ÖSSZES ELHELYEZÉSE
 LiteralText,place curse,megátkozás
 LiteralText,platform,platform
 LiteralText,Play,Játék
 LiteralText,Play a sound effect?,Lejátszható hangeffektek
+LiteralText,Play Demo,
 LiteralText,Player,Játékos
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
 LiteralText,Please offer any clarification,"Kérlek, tisztázd a dolgot"
 LiteralText,Please provide your feedback,"Kérlek, adj visszajelzést"
 LiteralText,Please rotate your device to landscape :-),"Kérlek, forgasd fekvő üzemmódba az eszközt :-)"
-LiteralText,POLYMORPH,ÁTVÁLTOZÁS
+LiteralText,Polymorph,Átváltozás
 LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,Mivé szeretnél átváltozni?
 LiteralText,polymorph item,
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,ÁTVÁLTOZOTT
 LiteralText,portal,portál
 LiteralText,PORTALS,
 LiteralText,porter,hordár
-LiteralText,PRAY,IMA
+LiteralText,POSITIVE,
+LiteralText,Pray,Ima
 LiteralText,preservation,konzerválás
-LiteralText,prevent revenant levels,kísértetszintek meggátolása
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,kísértetszintek meggátolása
+LiteralText,Previous character,
 LiteralText,prisoner,fogoly
 LiteralText,probability,valószínűség
 LiteralText,PROMOTE,ELŐLÉPTETÉS
 LiteralText,PROPERTIES,TULAJDONSÁGOK
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,büntetés
 LiteralText,PUNISHED,BÖNTETETT
 LiteralText,punishment?,büntetés?
 LiteralText,PUNISHMENTS,BÜNTETÉSEK
+LiteralText,Purchase,
 LiteralText,QUANTITY,MENNYISÉG
-LiteralText,QUICK LOAD,GYORS BETÖLTÉS
-LiteralText,QUICK SAVE,GYORS MENTÉS
+LiteralText,QUESTS,
+LiteralText,Quick load,Gyors betöltés
+LiteralText,Quick save,Gyors mentés
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,kilépett
-LiteralText,QUIT,BEFEJEZÉS
+LiteralText,Quit,Befejezés
 LiteralText,R//replica symbol,M
 LiteralText,race,faj
 LiteralText,RACES,FAJOK
 LiteralText,random,véletlenszerű
-LiteralText,RANDOM,VÉLETLENSZERŰ
-LiteralText,random dungeon seed,választható kazamata-seed
 LiteralText,random level,
 LiteralText,random points,véletlenszerű pontok
+LiteralText,random seed,választható kazamata-seed
 LiteralText,rank,rang
 LiteralText,rarity,ritkaság
 LiteralText,rate & review on the app store,értékelés az app store-ban
-LiteralText,RE-ACT,ÚJRACSELEKVÉS
-LiteralText,RE-CAST,ÚJRAVARÁZSLÁS
-LiteralText,RE-EQUIP,ÚJRA FELSZERELÉS
+LiteralText,Re-act,Újracselekvés
+LiteralText,Re-cast,Újravarázslás
+LiteralText,Re-equip,Újra felszerelés
 LiteralText,Re-roll,Újradob
 LiteralText,re-rolls,újradobások
-LiteralText,RE-USE,ÚJRAHASZNÁL
+LiteralText,Re-use,Újrahasznál
 LiteralText,Read books to learn spells,A varázslatok megtanulásához olvass könyveket
-LiteralText,READ!,OLVAS!
-LiteralText,REAL-TIME,VALÓS IDEJŰ
+LiteralText,Read!,Olvas!
+LiteralText,Real-time,Valós idejű
 LiteralText,REALLY CRASH?,BIZTOS ÖSSZEZÚZOD?
 LiteralText,recall party,visszahívás
 LiteralText,Recommend Pathos,Pathos ajánlása
 LiteralText,Redo,Visszaállít
 LiteralText,reflects,tükrözés
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,REGISZTRÁCIÓ
 LiteralText,REGISTER PLAYER HANDLE,JÁTÉKOSAZONOSÍTÓ REGISZTRÁLÁSA
 LiteralText,reinforced,megerősített
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,MEGERŐSÍTETT
 LiteralText,release entity,elengedés
 LiteralText,remove all transients,összes átmeneti hatás eltávolítása
 LiteralText,remove curse,átoklevétel
-LiteralText,REMOVE CURSE,ÁTOKLEVÉTEL
 LiteralText,remove random resistance,véletlenszerű ellenállás eltávolítása
 LiteralText,remove random talent,véletlenszerű készség eltávolítása
 LiteralText,remove with,eltávolítás ezzel:
 LiteralText,remove with boulder,eltávolítás akadállyal
 LiteralText,REMOVE//container,ELTÁVOLÍT
-LiteralText,REMOVE//equipment,ELTÁVOLÍT
+LiteralText,Remove//equipment,Eltávolít
 LiteralText,RENAME,ÁTNEVEZ
 LiteralText,RENAME CHARACTER,KARAKTER ÁTNEVEZÉSE
 LiteralText,RENAME ITEM,TÁRGY ÁTNEVEZÉSE
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,
 LiteralText,replenish mana,
 LiteralText,replica,másolat
 LiteralText,replicate item,eszköz lemásolása
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,szükség van hozzá a zártörés képességre
 LiteralText,reset random equipment,véletlenszerű felszerelés visszaállítása
+LiteralText,Reset to defaults,
 LiteralText,resident?,ott tartózkodó?
 LiteralText,resistances,ellenállások
 LiteralText,RESISTS,ELLENÁLL
 LiteralText,Rest,Pihenés
 LiteralText,Rest how many turns?,Hány körön át tartson a pihenés?
+LiteralText,Rest once,
 LiteralText,restarting to update,újraindítás a frissítés befejezéséhez
 LiteralText,restock shop items,feltöltés
 LiteralText,restore ability,adottság-visszaállítás
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Feltámasztás és folytatás
 LiteralText,resurrections,felélesztések
 LiteralText,retaliations,visszaütések
 LiteralText,RETURN,VISSZA
-LiteralText,REVEAL,FELFED
+LiteralText,Reveal,Felfed
 LiteralText,REVEAL ALL MAPS,EGÉSZ TÉRKÉP FELFEDÉSE
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,felfedve
 LiteralText,revenant,
-LiteralText,REVERT,VISSZAÁLLÍTÁS
+LiteralText,Revert,Visszaállítás
+LiteralText,Right,
 LiteralText,RIGHT RING,JOBB GYŰRŰ
 LiteralText,rigid,szilárd
 LiteralText,ROTATE,FORGAT
 LiteralText,route entity,
 LiteralText,rumour,híresztelés
 LiteralText,sacrifice item,áldozat
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,HITELESSÉG ELLENŐRZÉSE
 LiteralText,SAVE,MENTÉS
 LiteralText,SAVE & QUIT,MENTÉS ÉS KILÉPÉS
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,ELMENTETT KALANDOK
 LiteralText,SAVED BONES,ELMENTETT BONE FÁJLOK
 LiteralText,school,iskola
-LiteralText,scrap,szétszedés
-LiteralText,SCRAP,SZÉTSZEDÉS
+LiteralText,Scrap,Szétszedés
 LiteralText,SEALED,CSUKOTT
 LiteralText,Search,Keresés
 LiteralText,Search how many turns?,Hány kör keresés?
+LiteralText,Search once,
 LiteralText,searching,keresés
 LiteralText,secret,titok
 LiteralText,SECRET,TITOK
 LiteralText,seed,seed
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,ATMOSZFÉRA KIVÁLASZTÁSA
 LiteralText,Select Companion Tile,
 LiteralText,Select Hero Tile,
 LiteralText,SELECT ITEM,TÁRGY KIVÁLASZTÁSA
-LiteralText,SELECT LANGUAGE,NYELV KIVÁLASZTÁSA
 LiteralText,SELECT MAP,TÉRKÉP KIVÁLASZTÁSA
-LiteralText,SELECT PORTRAIT,PORTRÉ KIVÁLASZTÁSA
 LiteralText,SELECT RESIDENT,OTT TARTÓZKODÓ KIVÁLASZTÁSA
 LiteralText,SELECT SQUARE,NÉGYZET KIVÁLASZTÁSA
-LiteralText,SELECT TILESET,TILESET KIVÁLASZTÁSA
 LiteralText,self,önmaga
+LiteralText,Self menu,
 LiteralText,SELL,ELAD
 LiteralText,SELL ALL,ÖSSZES ELADÁSA
 LiteralText,SEND,ELKÜLD
 LiteralText,Send me an email,Küldj e-mailt
-LiteralText,SERVICES,SZOLGÁLTATÁSOK
+LiteralText,Services,Szolgáltatások
 LiteralText,SET DIFFICULTY,NEHÉZSÉG BEÁLLÍTÁSA
 LiteralText,set starting location,kezdőpont beállítása
-LiteralText,SETTINGS,BEÁLLÍTÁSOK
+LiteralText,Settings,Beállítások
 LiteralText,sfx volume,sfx hangerő
-LiteralText,SHARE//exchange,MEGOSZTÁS
+LiteralText,Share//exchange,Megosztás
 LiteralText,SHARE//publish,MEGOSZTÁS
 LiteralText,SHOPS,BOLTOK
 LiteralText,Show debugging information,Hibakeresési adatok mutatása
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,BEJELENTKEZÉS
 LiteralText,size,méret
 LiteralText,skills,képességek
 LiteralText,SKILLS,KÉPESSÉGEK
-LiteralText,SLIDE,CSÚSZÁS
+LiteralText,Slide,Csúszás
 LiteralText,Slide which direction?,Melyik irányba szeretnél csúszni?
 LiteralText,slower animations,lassabb animációk
 LiteralText,SONICS,HANGOK
@@ -3686,17 +3847,17 @@ LiteralText,special,különleges
 LiteralText,SPECIALS,KÜLÖNLEGESEK
 LiteralText,speed,sebesség
 LiteralText,SPEED,SEBESSÉG
-LiteralText,SPELL,VARÁZSLAT
+LiteralText,Spell,Varázslat
 LiteralText,SPELLS,VARÁZSLATOK
 LiteralText,Square,Négyzet
 LiteralText,stack,egész halom
 LiteralText,START,KEZDÉS
 LiteralText,Start a game to be joined by other players.,"Kezdj egy játékot, amelyhez mások is csatlakozhatnak."
 LiteralText,Start new adventure,Új kaland elkezdése
-LiteralText,start without companion,kezdés társ nélkül
+LiteralText,Start without companion,kezdés társ nélkül
 LiteralText,starvation,éhezés
 LiteralText,starved,kiéhezett
-LiteralText,STAY,MARAD
+LiteralText,Stay,Marad
 LiteralText,steal,lopás
 LiteralText,STOP,STOP
 LiteralText,storage,tárhely
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,STUDIO KALANDOK
 LiteralText,SUBMIT,BEÁLLÍT
 LiteralText,summon,entitás megidézése:
 LiteralText,SUSTAINED,KITARTÓ
-LiteralText,SWAP,HELYCSERE
-LiteralText,SWITCH,VÁLTÁS
+LiteralText,Swap,Helycsere
+LiteralText,Switch,Váltás
 LiteralText,symptoms,tünet(ek)
 LiteralText,Table of Contents,Tartalomjegyzék
-LiteralText,TAKE,FELVESZ
+LiteralText,Take,Felvesz
 LiteralText,TAKE ALL,ÖSSZES ELVÉTELE
 LiteralText,talents,készségek
 LiteralText,TALENTS,KÉSZSÉGEK
-LiteralText,TALK,
+LiteralText,Talk,
 LiteralText,target,célpont
-LiteralText,TELEKINESIS,TELEKINÉZIS
+LiteralText,Telekinesis,Telekinézis
 LiteralText,Telekinesis which direction?,Melyik irányba történjen telekinézis?
 LiteralText,Telekinesis which object?,Melyik objektumon történjen telekinézis?
-LiteralText,TELEPORT,TELEPORTÁLÁS
+LiteralText,Teleport,Teleportálás
+LiteralText,Teleport end,
 LiteralText,teleport entity,karakter teleportálása
 LiteralText,teleport item away,elteleportálás
 LiteralText,Teleport to where?,Hova szeretnél teleportálni?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,TERMINÁL
 LiteralText,terrain,terep
 LiteralText,The attack score is your aptitude for hitting an opponent.,"A támadási pontszám megmutatja, hogy mekkora eséllyel tudod ellefeleidet eltalálni."
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"A kihívás a mechanika fejlesztése anélkül, hogy a játék elveszítse azon mivoltát, ami minden idők egyik legnagyobbjává tette."
+LiteralText,The damage you do to an opponent upon a successful attack.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,"A védekezési pontszám megmutatja, hogy milyen mértékben vagy védett az ellenséges találatok ellen."
 LiteralText,There is a new update available!,Elérhető egy új frissítés!
 LiteralText,there is nothing to place here,ide semmit nem lehet rakni
 LiteralText,there is nothing to remove here,innen semmit nem lehet eltávolítani
 LiteralText,there is nothing to trade with this merchant,nincs mit kereskedni ezzel a kereskedővel
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,ezen a szinten
 LiteralText,this merchant has no stock to trade,ez a kereskedő nem tud semmit áruba bocsátani
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Ezen a névvel kerülnek rögzítésre eredményeid a Dicsőség Csarnokában.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,"Játszhatsz barátaiddal ugyanabban a kazamatában, amennyiben megosztod ezt a seedet velük"
 LiteralText,threw,eldobta
-LiteralText,THROW,ELDOB
+LiteralText,Throw,Eldob
+LiteralText,TILESET,TILESET KIVÁLASZTÁSA
 LiteralText,tin,konzerv
 LiteralText,tinning,konzerválás
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,TÚL NAGY
 LiteralText,TOO HEAVY,TÚL NEHÉZ
 LiteralText,TOO HUNGRY,TÚL ÉHES
 LiteralText,TOO SMALL,TÚL KICSI
 LiteralText,TOO WEAK,TÚL GYENGE
 LiteralText,TRACKS,ZENE
-LiteralText,TRADE,KERESKEDÉS
+LiteralText,Trade,Kereskedés
 LiteralText,transform to,átalakul:
 LiteralText,transients,átmeneti hatások
 LiteralText,TRANSIENTS,ÁTMENETI HATÁSOK
@@ -3759,15 +3926,16 @@ LiteralText,trapped,csapdában
 LiteralText,TRAPPED,CSAPDÁBAN
 LiteralText,trapped container,breagadt tároló
 LiteralText,trapped door,beragadt ajtó
-LiteralText,TRIGGER,AKTIVÁLÁS
+LiteralText,Trigger,Aktiválás
 LiteralText,trigger once,egyszeri aktiválás
 LiteralText,trigger unlimited times,aktiválás végtelenszer
 LiteralText,truth,igazság
-LiteralText,TUNNEL,ALAGÚT
+LiteralText,Tunnel,Alagút
 LiteralText,Tunnel which direction?,Melyik irányba szeretnél ásni?
-LiteralText,TURN-BASED,KÖRÖKRE OSZTOTT
+LiteralText,Turn-based,Körökre osztott
 LiteralText,turns,kör
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Írj be bármilyen szót vagy kifejezést ahhoz, hogy random kazamata seedet generálj."
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,"Írj be bármilyen szót vagy kifejezést ahhoz, hogy random kazamata seedet generálj."
 LiteralText,unable to load,nem lehet betölteni
 LiteralText,unafflict,tisztít
 LiteralText,UNDEAD,ÉLŐHOLT
@@ -3775,16 +3943,20 @@ LiteralText,Undo,Visszavon
 LiteralText,unidentified items,azonosítatlan tárgyak
 LiteralText,unique,kivételes
 LiteralText,UNIQUES,KIVÉTELESEK
-LiteralText,UNLOCK,KINYIT
+LiteralText,unknown effects,
+LiteralText,Unlock,Kinyit
 LiteralText,unlock door or container,ajtó vagy tároló kinyitása
-LiteralText,UNLOCKED,KINYITVA
+LiteralText,Unlocked,Kinyitva
 LiteralText,unpolymorph,visszaváltozás
 LiteralText,unpunish,büntetéseltávolítás
 LiteralText,unskilled,gyakorlatlan
 LiteralText,UNSKILLED,GYAKORLATLAN
 LiteralText,unstuck,
-LiteralText,UNTRAP,HATÁSTALANÍT
+LiteralText,Untrap,Hatástalanít
 LiteralText,UNTRAPPED,HATÁSTALANÍTVA
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,frissítés elérhető
 LiteralText,update cancelled,frissítés törölve
 LiteralText,update failed,frissítés sikertelen
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,FRISSÍTÉSEK
 LiteralText,upgrade to,következő(k)re fejleszthető
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,"Ha seeddel játszol, nem kerülhetsz be a Dicsőség Csarnokába."
 LiteralText,Vanity,Tükör
+LiteralText,Victory!,
 LiteralText,VIEW,NÉZET
 LiteralText,visit shop,bolt meglátogatása
 LiteralText,visit shrine,szentély meglátogatása
-LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,visit zoo,terem meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
 LiteralText,volatile,
 LiteralText,VOLATILES,
 LiteralText,vomit nutrition,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
-LiteralText,WAIT,VÁR
+LiteralText,Wait,Vár
 LiteralText,Wait how many turns?,Hány kör várakozás?
-LiteralText,warping,eltévelyedés
-LiteralText,WARPING,ELTÉVELYEDÉS
+LiteralText,Warping,Eltévelyedés
 LiteralText,was killed,elesett
 LiteralText,weakness to,gyenge a következővel szemben:
 LiteralText,weight,súly
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,pusztítás
 LiteralText,WON'T EAT,NEM FOG ENNI
 LiteralText,WORKBENCH MATERIALS,ALAPANYAGOK MUNKAPADHOZ
 LiteralText,World,Világ
-LiteralText,WORLD,VILÁG
 LiteralText,WRONG WAY,ROSSZ IRÁNY
 LiteralText,"You are playing as anonymous, please register!","Jelenleg név nélkül játszol, regisztrálj, kérlek!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Keress titkos ajtókat a SZEM gomb segítségével.
 LiteralText,Your current movement and action speed in squares per second.,Jelenlegi mozgási és cselekvési időd négyzet/másodpercben.
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,NAGYÍTÁS
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,TERMEK
 LiteralText,zZz,zZz
 LocalityName,area,
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,zöldség
 MaterialName,water,víz
 MaterialName,wax,viasz
 MaterialName,wood,fa
-MeasurementSystemName,imperial,fenséges
-MeasurementSystemName,metric,metrikus
+MeasurementSystemName,imperial units,fenséges
+MeasurementSystemName,metric units,metrikus
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Fedezz fel procedurálisan generált kazamatákat és barlangokat végtelen újrajátszhatóság mellett. A Pathosszal ismerkedők számára ajánlott.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Egyénileg tervezett pályák egy epikus szárazföldi kalandban. Lépj ki a kazamaták világából és kezdj neki egy kihívásokkal teli küldetésnek.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Játssz a Sandbox-móddal, hogy megtapasztalhasd a Pathos játékmenetét. Próbálj ki minden tárgyat, csapdát és tereptárgyat egy egyszerű, két szobából álló pályán."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
 ModuleName,Dhak Legacy,Dhak örökség
 ModuleName,Kaloi Opus,
-ModuleName,Nethack Codex,Nethack-Kódex
+ModuleName,NetHack Codex,NetHack-Kódex
 ModuleName,Pixel Sojourn,Pixelkaland
 ModuleName,Sandbox Play,Sandbox játék
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,Mélység
 ModuleTerm,Ambush,
 ModuleTerm,Ant Cave,
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,felfelé vezető agyaglépcsősor
 PortalName,jade ladder down,lefelé vezető jádelétra
 PortalName,jade ladder up,felfelé vezető jádelétra
 PortalName,rift,átjáró
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,lefelé vezető kőlépcsősor
 PortalName,stone staircase up,felfelé vezető kőlépcsősor
 PortalName,transportal,portál
 PortalName,wooden ladder down,lefelé vezető falétra
 PortalName,wooden ladder up,felfelé vezető falétra
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,"Egy csillogó, mágikus pajzs veszi körül tested, segítve a védekezést és megnövelve annak az esélyét, hogy a feléd kilőtt lövedékek eltérüljenek."
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",A sikamlós és olajos gyantabevonatnak köszönhetően egyszerűen csúszol ki bármilyen szájból és szorításból.
-PropertyDescription,Control when and where you teleport.,"Irányítsd, hogy mikor és hova szeretnél teleportálni."
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,"Haragtól tébolyultan, gondolkodás és ok nélkül esel neki mind barátnak, mind ellenségnek."
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.","Az adottságpontjaid fixek, így nem romolhatnak, de nem is javulhatnak."
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,"Különös tünetekkel járó, rettenetes betegség sújt, és folyamatos hányingerrel küzdesz."
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,"Előzetes figyelmeztetést ad a közelben leselkedő szörnyekről, és azok hozzávetőleges veszélyességi szintjéről."
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.",Egy szörnyekkel teli kazamatában békésen hajtod álomra fejedet.
+PropertyDescription,Assess the number of charges in an item when you pick it up.,"Meg tudod állapítani az adott tárgy töltéseinek számát azzal, ha csupán felveszed."
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,"Irányítsd, hogy mikor és hova szeretnél teleportálni."
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",A sikamlós és olajos gyantabevonatnak köszönhetően egyszerűen csúszol ki bármilyen szájból és szorításból.
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.","Felemészt a folyamatos étvágy, de tudod, hogy sosem lakhatsz jól."
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.","Haragtól tébolyultan, gondolkodás és ok nélkül esel neki mind barátnak, mind ellenségnek."
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,"Vizuális érzékelésed torzul, amint elméd abszurd és rémálomba illő formákká alakítja a hétköznapi tárgyakat és entitásokat."
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,"Növeli látásod, így láthatóvá válnak egyébként láthatatlan lényeket."
-PropertyDescription,Fainting from lack of food.,Éhség okozta ájulás.
-PropertyDescription,Fly above the ground to avoid many types of traps.,"Repülj a talaj fölé, hogy elkerüld a rád leselkedő csapdákat."
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,"Az ügyetlenség miatt harc közben elejted fegyvereidet, valamint megbotlasz a lépcsőkben."
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,A gravitációval való dacolás segítségével sokféle csapdát elkerülhetsz. De csak ha egyidejűleg elérnéd a talajt.
+PropertyDescription,"Fly above the ground, avoiding many types of traps.","Repülj a talaj fölé, hogy elkerüld a rád leselkedő csapdákat."
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,A sugár- és a tekintettel indított támadások visszaverődnek a támadóra.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,"Előzetes figyelmeztetést ad a közelben leselkedő szörnyekről, és azok hozzávetőleges veszélyességi szintjéről."
-PropertyDescription,Gripped by terror you cannot attack and should flee.,"A rémület szorításában képtelen vagy támadni, így hát menekülőre kell fognod."
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,A kazamatában csendesen haladva az alvó szörnyek mögé lopózhatsz.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Megakadályozza, hogy átváltozz, de természetes alakod felvételében is meggátol."
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.","A rémület szorításában képtelen vagy támadni, így hát menekülőre kell fognod."
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.","A tested merevvé és nehézkessé válik, mintha éppen kővé dermedne. Minden mozgás nehéz, és olyan törékenynek érzed magad, hogy a következő ütéstől ezer darabra szét tudnál hullani."
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,A saját fajtád húsának és szerveinek bűntudat nélküli elfogyasztása.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,"Az érzékelésed és a figyelmed megnő, így erőfeszítés nélkül megtalálod a titkos ajtókat és csapdákat."
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,Ezen látásromlás hatására csak közvetlen közelről látod a dolgokat.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.","Jelenléted agressziót és erőszakot szül. Még az alapból békés entitások is egymás torkának esnek. Ez a tulajdonság egyszerre hasznos és veszélyes is, így ajánlott körültekintően használni. Ezen kívül, ez a tulajdonság a táplálkozási szintre is kimerítően hat."
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Ennek a sebességnövelésnek hála gyakrabban tudsz mozogni és támadni.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,A puszta jelenléted felbosszant mindenkit a kazamatában.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,Éhség okozta ájulás.
+PropertyDescription,Move objects without physical contact through the power of your mind.,"Használd az elméd erejét, és mozgass tárgyakat anélkül, hogy hozzájuk kellene érned."
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.","Kísérteties csendben mozogsz, és egy árva hangot sem tudsz kiadni."
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",A kazamatában csendesen haladva az alvó szörnyek mögé lopózhatsz.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.","Izmaid mozgásképtelenné váltak, így hagyva téged teljesen védtelenül."
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","A tested félúton van a tér síkjai között, így könnyedén át tudsz haladni falakon, ajtókon és akadályokon."
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.","Lábaid, mint erős rugók, amelyek készek téged nagy távolságokra röpíteni."
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.","Megakadályozza, hogy átváltozz, de természetes alakod felvételében is meggátol."
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,"Ez a súlyos halláskárosodás lehetetlenné teszi, hogy halld a világ hangjait."
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Elméd védve van fortély, csalás és hazugság ellen."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Megvéd a mozgásodat lassító, bénító, vagy bárhogyan hátráltató hatásoktól."
-PropertyDescription,Recover mana at an increased rate.,Gyorsabb ütemű manavisszanyerés.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,"Tested megújulása gyors gyógyulás és újraképződés révén. Az anyagcseréd jelentősen megnövekszik, így a szokásosnál több élelemre van szükséged."
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Gyorsabb ütemű manavisszanyerés.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Ezen sebességcsökkenés hatására ritkábban tudsz mozogni és támadni.
+PropertyDescription,Resilient to all forms of natural and magical illness.,"Ellenálló vagy, így semmiféle természetes vagy mágikus betegség nincs rád hatással."
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,Halál után életed felét visszatölti egy alkatpontért cserébe.
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,"Hirtelen elalszol, míg magadtól felébredsz vagy fel nem ébresztenek."
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","A teleportálás hatására karaktered az adott kazamataszinten belül változtat helyet. Irányítatlan teleportálásnál ez véletlenszerűen megy végbe, ami bizonyos fokú kiszámíthatatlanságot ad az utazáshoz. Az irányított teleportálás lehetővé teszi, hogy a térképen kiválaszd, hova szeretnél érkezni."
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,A saját fajtád húsának és szerveinek bűntudat nélküli elfogyasztása.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,"Lehetővé teszi számodra, hogy észleld az elmék jelenlétét és tartózkodási helyét, de csak akkor, ha nem látsz."
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,"Ennek hatására alakod nem egészen ott jelenik meg, ahol valójában vagy. Az értelmes ellenfelek emiatt nehezebben tudnak lesújtani rád. Továbbá a mágikus hatások, például a sugarak és egyéb támadások kisebb eséllyel találnak el."
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Ennek a sebességnövelésnek hála gyakrabban tudsz mozogni és támadni.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Ezen látásromlás hatására csak közvetlen közelről látod a dolgokat.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,A gravitációval való dacolás segítségével sokféle csapdát elkerülhetsz. De csak ha egyidejűleg elérnéd a talajt.
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,"Tested megújulása gyors gyógyulás és újraképződés révén. Az anyagcseréd jelentősen megnövekszik, így a szokásosnál több élelemre van szükséged."
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,"A láthatatlanság állapota. Mozgás közben enyhén torzul a fény körülötted, amely csak akkor érzékelhető, ha valaki közelében vagy."
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,"Ez a súlyos halláskárosodás lehetetlenné teszi, hogy halld a világ hangjait."
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Ezen sebességcsökkenés hatására ritkábban tudsz mozogni és támadni.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,"Ez a különleges látási képesség lehetővé teszi számodra, hogy lásd a meleg testű entitásokat a kazamata sötét részein."
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","Alakulj át egy másik entitássá, annak összes előnyével vagy hátrányával. Például: egyes entitásoknak nincs kezük, viszont képesek repülni, és halálos energiasugarakkal támadni. Amikor átváltozott alakban pusztulsz el, gyakran visszaváltozol eredeti formádra."
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,"Használd az elméd erejét, és mozgass tárgyakat anélkül, hogy hozzájuk kellene érned."
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,"Vizuális érzékelésed torzul, amint elméd abszurd és rémálomba illő formákká alakítja a hétköznapi tárgyakat és entitásokat."
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"Zavart állapotban nehezen fogsz döntéseket meghozni. Előfordulhat, hogy akaratlan irányba indulsz el vagy támadsz, és képtelen leszel varázsolni. Tekercsek olvasásakor rosszul ejthetsz ki szavakat, amik így a várttól eltérő hatásokat okozhatnak. Lehetetlen a könyvek tanulmányozásához elég ideig koncentrálni."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","Kábultan nem tudsz egyenes vonalban járni vagy komolyabb feladatokat elvégezni, épp úgy, mint zavarodottság esetén."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,"Különös tünetekkel járó, rettenetes betegség sújt, és folyamatos hányingerrel küzdesz."
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",Egy szörnyekkel teli kazamatában békésen hajtod álomra fejedet.
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Felemészt a folyamatos étvágy, de tudod, hogy sosem lakhatsz jól."
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,"Ellenálló vagy, így semmiféle természetes vagy mágikus betegség nincs rád hatással."
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,"Felszerelésed megfelelő arra, hogy alagutakat áss, és a saját utadat járhasd a kazamatában."
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Meg tudod állapítani az adott tárgy töltéseinek számát azzal, ha csupán felveszed."
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,"Irányított átalakulással bármelyik általad választott entitás formáját felveheted, azonban ez a képesség csak a már megölt entitásokra érvényes. Valamint, az átalakulás kényszerítése csak a táplálkozási szint kárára valósulhat meg."
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,"Jelenléted agressziót és erőszakot szül. Még az alapból békés entitások is egymás torkának esnek. Ez a tulajdonság egyszerre hasznos és veszélyes is, így ajánlott körültekintően használni. Ezen kívül, ez a tulajdonság a táplálkozási szintre is kimerítően hat."
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,"Labilis vagy, és úgy érzed, bármelyik pillanatban felemészthet a düh."
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Tudsz a kazamatában tartózkodó többi entitásról.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,"Képes vagy megfejteni a tárgyak valódi természetét azáltal, hogy csupán felveszed őket."
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,"Kísérteties csendben mozogsz, és egy árva hangot sem tudsz kiadni."
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,"Az adottságpontjaid fixek, így nem romolhatnak, de nem is javulhatnak."
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"A tested merevvé és nehézkessé válik, mintha éppen kővé dermedne. Minden mozgás nehéz, és olyan törékenynek érzed magad, hogy a következő ütéstől ezer darabra szét tudnál hullani."
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","A tested félúton van a tér síkjai között, így könnyedén át tudsz haladni falakon, ajtókon és akadályokon."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,"Lábaid, mint erős rugók, amelyek készek téged nagy távolságokra röpíteni."
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,A puszta jelenléted felbosszant mindenkit a kazamatában.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,"Anyagcseréd lelassult, ezért sokkal kevesebb táplálékra van szükséged."
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Elméd védve van fortély, csalás és hazugság ellen."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"Izmaid mozgásképtelenné váltak, így hagyva téged teljesen védtelenül."
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,"Az érzékelésed és a figyelmed megnő, így erőfeszítés nélkül megtalálod a titkos ajtókat és csapdákat."
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,"Helyzeted bizonytalan, és kevés erőfeszítéssel képes vagy eltűnni, majd újra megjelenni."
+PropertyDescription,Sense the divine status of an item simply by picking it up.,"Képes vagy megfejteni a tárgyak valódi természetét azáltal, hogy csupán felveszed őket."
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,"Lehetővé teszi számodra, hogy észleld az elmék jelenlétét és tartózkodási helyét, de csak akkor, ha nem látsz."
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.","Zavart állapotban nehezen fogsz döntéseket meghozni. Előfordulhat, hogy akaratlan irányba indulsz el vagy támadsz, és képtelen leszel varázsolni. Tekercsek olvasásakor rosszul ejthetsz ki szavakat, amik így a várttól eltérő hatásokat okozhatnak. Lehetetlen a könyvek tanulmányozásához elég ideig koncentrálni."
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"Kábultan nem tudsz egyenes vonalban járni vagy komolyabb feladatokat elvégezni, épp úgy, mint zavarodottság esetén."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.","Egy csillogó, mágikus pajzs veszi körül tested, segítve a védekezést és megnövelve annak az esélyét, hogy a feléd kilőtt lövedékek eltérüljenek."
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,"Anyagcseréd lelassult, ezért sokkal kevesebb táplálékra van szükséged."
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,"Ez a különleges látási képesség lehetővé teszi számodra, hogy lásd a meleg testű entitásokat a kazamata sötét részein."
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.",
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,"Hirtelen elalszol, míg magadtól felébredsz vagy fel nem ébresztenek."
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.","Irányított átalakulással bármelyik általad választott entitás formáját felveheted, azonban ez a képesség csak a már megölt entitásokra érvényes. Valamint, az átalakulás kényszerítése csak a táplálkozási szint kárára valósulhat meg."
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","Alakulj át egy másik entitássá, annak összes előnyével vagy hátrányával. Például: egyes entitásoknak nincs kezük, viszont képesek repülni, és halálos energiasugarakkal támadni. Amikor átváltozott alakban pusztulsz el, gyakran visszaváltozol eredeti formádra."
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.","A teleportálás hatására karaktered az adott kazamataszinten belül változtat helyet. Irányítatlan teleportálásnál ez véletlenszerűen megy végbe, ami bizonyos fokú kiszámíthatatlanságot ad az utazáshoz. Az irányított teleportálás lehetővé teszi, hogy a térképen kiválaszd, hova szeretnél érkezni."
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Tudsz a kazamatában tartózkodó többi entitásról.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,"Az ügyetlenség miatt harc közben elejted fegyvereidet, valamint megbotlasz a lépcsőkben."
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.","A láthatatlanság állapota. Mozgás közben enyhén torzul a fény körülötted, amely csak akkor érzékelhető, ha valaki közelében vagy."
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,"Labilis vagy, és úgy érzed, bármelyik pillanatban felemészthet a düh."
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,"Helyzeted bizonytalan, és kevés erőfeszítéssel képes vagy eltűnni, majd újra megjelenni."
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.","Ennek hatására alakod nem egészen ott jelenik meg, ahol valójában vagy. Az értelmes ellenfelek emiatt nehezebben tudnak lesújtani rád. Továbbá a mágikus hatások, például a sugarak és egyéb támadások kisebb eséllyel találnak el."
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,"Felszerelésed megfelelő arra, hogy alagutakat áss, és a saját utadat járhasd a kazamatában."
 PropertyName,aggravation,felbosszantás
 PropertyName,appraisal,becslés
 PropertyName,beatitude,üdvözültség
@@ -4563,6 +4739,7 @@ SonicName,explosion,robbanás
 SonicName,fizzle,pezsgés
 SonicName,flash,villantás
 SonicName,flute,fuvolázás
+SonicName,focus tap,
 SonicName,food,élelem
 SonicName,footsteps,lépés
 SonicName,force,energia
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,átutazott
 TraversalPresentName,ascend,felmegy
 TraversalPresentName,descend,leereszkedik
 TraversalPresentName,travel,utazik
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,
 VolatileName,blood,
 VolatileName,electricity,

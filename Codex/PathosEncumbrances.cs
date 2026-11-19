@@ -26,8 +26,8 @@ namespace Pathos
       }
 
       Unencumbered = AddEncumbrance("unencumbered", "Your movements are unencumbered.", Inv.Colour.DarkGreen, NutritionConsumption: false, Offbalanced: false);
-      Burdened = AddEncumbrance("burdened", "Your movements are slightly slowed because of your load.", Inv.Colour.DarkYellow, NutritionConsumption: true, Offbalanced: false);
-      Stressed = AddEncumbrance("stressed", "You rebalance your load but movement is difficult.", Inv.Colour.DarkOrange, NutritionConsumption: true, Offbalanced: true);
+      Burdened = AddEncumbrance("burdened", "Your movements are slightly slowed because of your load.", Inv.Colour.DarkGoldenrod, NutritionConsumption: true, Offbalanced: false);
+      Stressed = AddEncumbrance("stressed", "You rebalance your load but movement is difficult.", Inv.Colour.OrangeRed.Darken(0.25F), NutritionConsumption: true, Offbalanced: true);
       Strained = AddEncumbrance("strained", "You stagger under your load.", Inv.Colour.DarkRed, NutritionConsumption: true, Offbalanced: true);
       Overtaxed = AddEncumbrance("overtaxed", "You can barely move with this load.", Inv.Colour.DarkRed, NutritionConsumption: true, Offbalanced: true);
       Overloaded = AddEncumbrance("overloaded", "You collapse under your load.", Inv.Colour.DarkRed, NutritionConsumption: true, Offbalanced: true);

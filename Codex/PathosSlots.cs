@@ -162,8 +162,8 @@ namespace Pathos
         new SlotRow(eyewear, helmet, earwear),
         new SlotRow(cloak, shirt, amulet),
         new SlotRow(quiver, suit, light),
-        new SlotRow(main_hand, barding, left_ring),
-        new SlotRow(offhand, gloves, right_ring),
+        new SlotRow(main_hand, barding, offhand),
+        new SlotRow(left_ring, gloves, right_ring),
         new SlotRow(purse, boots, keys),
       ];
 

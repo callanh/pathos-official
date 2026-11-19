@@ -35,16 +35,21 @@ namespace Pathos
 
       SetManifest(Codex.Manifest);
 
-      AddModule(new NethackModule(Codex));
-      AddModule(new OpusModule(Codex));
-      AddModule(new SPDModule(Codex));
-      AddModule(new DhakModule(Codex));
-      AddModule(new SandboxModule(Codex));
+      // demo module must be the first module in the demo version.
+      if (EngineVersion.IsDemo)
+        AddModule(new ShortDungeonModule(Codex)); 
+      AddModule(new NetHackCodexModule(Codex));
+      AddModule(new KaloiOpusModule(Codex));
+      AddModule(new PixelSojournModule(Codex));
+      AddModule(new DhakLegacyModule(Codex));
+      if (!EngineVersion.IsDemo)
+        AddModule(new ShortDungeonModule(Codex));
+      AddModule(new SandboxPlayModule(Codex));
 
+      AddAtlasType("sonyvanda");
       AddAtlasType("absurd");
       AddAtlasType("classic");
       AddAtlasType("geoduck");
-      AddAtlasType("sonyvanda");
 
       AddAlbumType("freesound");
     }

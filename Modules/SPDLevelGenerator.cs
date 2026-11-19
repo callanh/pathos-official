@@ -6,6 +6,7 @@ using Inv.Support;
 
 namespace Pathos
 {
+#if !DEMO
   internal sealed class SPDLevelGenerator
   {
     public static void Run(Codex Codex, Generator Generator)
@@ -62,25 +63,25 @@ namespace Pathos
                 1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
+                1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,5,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,2,2,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
+                1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,3,1,1,1,1,1,3,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,1,0,0,0,1,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
                 1,1,1,1,3,1,1,1,1,0,0,0,0,0,1,2,1,1,1,1,1,2,1,0,0,0,0,0,1,1,1,1,3,1,1,1,1,
-                0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,3,1,2,2,2,1,3,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
-                0,0,0,0,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,0,0,0,0,
-                0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
-                0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
-                0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
-                0,0,0,0,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,0,0,0,0,
-                0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,3,1,2,2,2,1,3,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,
-                1,1,1,1,3,1,1,1,1,0,0,0,0,0,1,2,1,1,1,1,1,2,1,0,0,0,0,0,1,1,1,1,3,1,1,1,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,1,0,0,0,1,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,3,1,1,1,1,1,3,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
+                0,0,0,1,2,1,1,1,1,1,1,1,1,1,1,3,1,2,2,2,1,3,1,1,1,1,1,1,1,1,1,1,2,1,0,0,0,
+                0,0,0,1,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,1,0,0,0,
+                0,0,0,1,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,1,0,0,0,
+                0,0,0,1,2,1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,1,2,1,0,0,0,
+                0,0,0,1,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,1,0,0,0,
+                0,0,0,1,2,2,2,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,2,2,2,2,2,1,0,0,0,
+                0,0,0,1,2,1,1,1,1,1,1,1,1,1,1,3,1,2,2,2,1,3,1,1,1,1,1,1,1,1,1,1,2,1,0,0,0,
+                1,1,1,1,3,1,1,1,1,0,0,0,0,0,1,2,1,1,1,1,1,2,1,0,0,0,0,1,1,1,1,1,3,1,1,1,1,
+                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,1,0,0,0,1,2,1,0,0,0,0,1,1,2,2,2,2,2,2,2,1,
+                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,3,1,1,1,1,1,3,1,0,0,0,0,1,1,2,2,2,2,2,2,2,1,
+                1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,2,2,2,2,3,2,2,2,2,2,3,2,2,2,4,2,2,2,1,
-                1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
+                1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
                 1,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,1,
                 1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
@@ -103,6 +104,8 @@ namespace Pathos
         var thisLevel = SPDDebug.mainSite.AddLevel(SPDDebug.currentmap.depth, SPDDebug.currentmap.pathosMap);
         thisLevel.SetTransitions(Entrance, Exit);
         Boss(SPDDebug.currentmap.pathosMap[18, 12], 5);
+
+        // NOTE: these are replaced later with permanent walls... not sure if they are placeholding for a reason.
         SPDDebug.generator.PlaceSolidWall(Entrance, SPDDebug.codex.Barriers.iron_bars, WallSegment.Cross);
         SPDDebug.generator.PlaceSolidWall(Exit, SPDDebug.codex.Barriers.iron_bars, WallSegment.Cross);
 
@@ -300,7 +303,7 @@ namespace Pathos
         };
         var width = 13;
         var height = 26;
-        SPDDebug.currentmap.map = new Inv.DistinctList<SPDMapPoint>();
+        SPDDebug.currentmap.map = [];
         for (var i = 0; i < height; i++)
         {
           for (var j = 0; j < width; j++)
@@ -396,6 +399,8 @@ namespace Pathos
       SPDDebug.generator.PlacePermanentWall(Exit, SPDDebug.codex.Barriers.iron_bars, WallSegment.Cross);
       SetDifficulty();
       AddTriggers();
+
+      SPDDebug.currentmap.pathosMap.AddFullArea();
     }
     private void Boss(Square Square, int depth)
     {
@@ -527,6 +532,7 @@ namespace Pathos
 
             SPDDebug.generator.OutfitCharacter(boss);
             var boss25killedscript = boss.InsertScript();
+            boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.victory).SetTarget(null);
             boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[9, 1]);
             boss25killedscript.Killed.Sequence.Add(SPDDebug.codex.Tricks.cleared_way).SetTarget(SPDDebug.currentmap.pathosMap[9, 9]);
             break;
@@ -747,9 +753,26 @@ namespace Pathos
       GenerateTraps(StandardPointList);
       GenerateFacilities(StandardPointList);
 
+      // surround corridors with walls.
+      foreach (var point in SPDDebug.currentmap.map)
+      {
+        var pointSquare = SPDDebug.currentmap.pathosMap[point.x, point.y];
+
+        if (pointSquare.Floor != null && pointSquare.Wall == null)
+        {
+          foreach (var AroundSquare in pointSquare.GetAroundSquares())
+          {
+            if (AroundSquare.Floor == null && AroundSquare.Wall == null)
+              SPDDebug.generator.PlaceWall(AroundSquare, SPDDebug.codex.Barriers.stone_wall, WallStructure.Solid, WallSegment.Pillar);
+          }
+        }
+      }
+
       SPDDebug.generator.RepairWalls(SPDDebug.currentmap.pathosMap, SPDDebug.currentmap.pathosMap.Region);
       SPDDebug.generator.RepairDoors(SPDDebug.currentmap.pathosMap, SPDDebug.currentmap.pathosMap.Region);
       SPDDebug.generator.RepairVoid(SPDDebug.currentmap.pathosMap, SPDDebug.currentmap.pathosMap.Region);
+
+      SPDDebug.currentmap.pathosMap.AddFullArea();
     }
     private void SetDifficulty()
     {
@@ -810,7 +833,7 @@ namespace Pathos
           case SPDMapPoint.ENTRANCE:
             SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.stone_floor);
             if (SPDDebug.currentmap.depth == 1)
-              SPDDebug.generator.PlacePassage(pointSquare, SPDDebug.codex.Portals.stone_staircase_up, null);
+              SPDDebug.generator.PlaceFloor(pointSquare, SPDDebug.codex.Grounds.granite_floor);
             else
               SPDDebug.generator.PlacePassage(pointSquare, SPDDebug.codex.Portals.stone_staircase_up, SPDDebug.previousmap.pathosMap[SPDDebug.previousmap.exit.x, SPDDebug.previousmap.exit.y]);
             if (SPDDebug.currentmap.depth == 25)
@@ -931,7 +954,7 @@ namespace Pathos
       SPDDebug.adventure = null;
       SPDDebug.codex = null;
       SPDDebug.mainSite = null;
-      SPDDebug.startRegion = Region.Zero;
+      SPDDebug.startRegion = null;
       SPDDebug.startZone = null;
       SPDDebug.maps = null;
       SPDDebug.currentmap = null;
@@ -1054,7 +1077,6 @@ namespace Pathos
       SPDDebug.generator.ResidentShop(shopkeeper, Square, shop);
       SPDDebug.generator.NeutralCharacter(shopkeeper);
       SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
-      SPDDebug.generator.NameCharacter(shopkeeper, SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
       Asset StallAdd(Item StallItem, int? Quantity = null)
       {
@@ -1147,7 +1169,6 @@ namespace Pathos
       SPDDebug.generator.ResidentShop(shopkeeper, square, shop);
       SPDDebug.generator.NeutralCharacter(shopkeeper);
       SPDDebug.generator.RequireCompetency(shopkeeper, SPDDebug.codex.Skills.bartering, SPDDebug.codex.Qualifications.champion);
-      SPDDebug.generator.NameCharacter(shopkeeper, SPDDebug.generator.GetCharacterName(shop.KeeperNames));
 
       void StallAdd(Item StallItem) => stall.Stash.Add(SPDDebug.generator.NewSpecificAsset(square, StallItem));
 
@@ -1374,4 +1395,5 @@ namespace Pathos
     private readonly SPDPainter SPDPainter;
     private readonly SPDBuilder SPDBuilder;
   }
+#endif
 }

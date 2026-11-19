@@ -23,7 +23,6 @@ namespace Pathos
           E.Name = Name;
           E.Colour = Colour;
           E.Threshold = Threshold;
-          E.Glyph = Glyphs.appetite;
 
           CodexRecruiter.Enrol(() => EditorAction(E));
         });
@@ -41,14 +40,14 @@ namespace Pathos
         A.PriceMultiplier = 1;
       });
 
-      hungry = AddAppetite("hungry", Inv.Colour.DarkYellow, 50, A =>
+      hungry = AddAppetite("hungry", Inv.Colour.DarkGoldenrod, 50, A =>
       {
         A.UnableAtWill = true;
         A.PriceMultiplier = 2;
         A.Interrupt = true;
       });
 
-      weak = AddAppetite("weak", Inv.Colour.DarkOrange, 1, A =>
+      weak = AddAppetite("weak", Inv.Colour.OrangeRed.Darken(0.25F), 1, A =>
       {
         A.StrengthModifier = -1;
         A.UnableAtWill = true;

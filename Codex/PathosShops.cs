@@ -51,19 +51,20 @@ namespace Pathos
         "Zonagan", "Zerbarry", "Zean"
       };
 
-      Shop AddShop(string Name, Glyph Glyph, int Rarity, Func<IEnumerable<Stock>> BuyStockFunc, Func<IEnumerable<Item>> SellItemFunc)
+      Shop AddShop(string Name, Glyph SymbolGlyph, Glyph KeeperGlyph, int Rarity, Func<IEnumerable<Stock>> BuyStockFunc, Func<IEnumerable<Item>> SellItemFunc)
       {
         return Register.Add(S =>
         {
           S.Name = Name;
-          S.Glyph = Glyph;
+          S.SymbolGlyph = SymbolGlyph;
           S.Sonic = Codex.Sonics.chime;
           S.Rarity = Rarity;
+          S.KeeperGlyph = KeeperGlyph;
           S.KeeperEntity = Entities.merchant;
-          S.SetServantEntities([Entities.small_mimic, Entities.large_mimic, Entities.giant_mimic]);
           S.KeeperFeature = Features.stall;
           S.SetKeeperNames(MerchantNameArray);
           S.SetServices(Services.List.ToArray());
+          S.SetServantEntities([Entities.small_mimic, Entities.large_mimic, Entities.giant_mimic]);
 
           CodexRecruiter.Enrol(() =>
           {
@@ -79,51 +80,51 @@ namespace Pathos
       //  () => new[] { Stocks.food, Stocks.gem },
       //  () => Stocks.food.ItemList.Where(I => I.Rarity > 0 && I.Material == Material.Animal).Union(new Item[] { Items.animal_corpse }));
 
-      general_store = AddShop("general store", Glyphs.general_stock, Rarity: 44,
+      general_store = AddShop("general store", Glyphs.general_stock, Glyphs.general_merchant, Rarity: 44,
         () => Stocks.List,
         () => Items.List.Where(I => I.Rarity > 0 || (!I.Grade.Unique && I.IsAbolitionCandidate())));
 
-      gun_mart = AddShop("gun mart", Glyphs.firearm_stock, Rarity: 2,
+      gun_mart = AddShop("gun mart", Glyphs.firearm_stock, Glyphs.firearm_merchant, Rarity: 2,
         () => [Stocks.weapon, Stocks.gem],
         () => Stocks.weapon.Items.Where(I => I.IsAbolitionCandidate()));
 
-      used_armour_dealership = AddShop("used armour dealership", Glyphs.armour_stock, Rarity: 14,
+      used_armour_dealership = AddShop("used armour dealership", Glyphs.armour_stock, Glyphs.armour_merchant, Rarity: 14,
         () => [Stocks.armour, Stocks.gem],
         () => Stocks.armour.Items.Where(I => I.Rarity > 0));
 
-      secondhand_stationery_store = AddShop("second-hand stationery store", Glyphs.scroll_stock, Rarity: 10,
+      secondhand_stationery_store = AddShop("second-hand stationery store", Glyphs.scroll_stock, Glyphs.scroll_merchant, Rarity: 10,
         () => [Stocks.scroll, Stocks.book, Stocks.gem],
         () => Stocks.scroll.Items.Where(I => I.Rarity > 0)/*.Union([Items.potion_of_ink])*/);
 
-      liquor_emporium = AddShop("liquor emporium", Glyphs.potion_stock, Rarity: 10,
+      liquor_emporium = AddShop("liquor emporium", Glyphs.potion_stock, Glyphs.potion_merchant, Rarity: 10,
         () => [Stocks.potion, Stocks.gem],
         () => Stocks.potion.Items.Where(I => I.Rarity > 0));
 
-      antique_weapons_outlet = AddShop("antique weapons outlet", Glyphs.weapon_stock, Rarity: 5,
+      antique_weapons_outlet = AddShop("antique weapons outlet", Glyphs.weapon_stock, Glyphs.weapon_merchant, Rarity: 5,
         () => [Stocks.weapon, Stocks.gem],
         () => Stocks.weapon.Items.Where(I => I.Rarity > 0 && !I.IsAbolitionCandidate()));
 
-      delicatessen = AddShop("delicatessen", Glyphs.food_stock, Rarity: 5,
+      delicatessen = AddShop("delicatessen", Glyphs.food_stock, Glyphs.food_merchant, Rarity: 5,
         () => [Stocks.food, Stocks.gem],
         () => Stocks.food.Items.Where(I => I.Rarity > 0).Union([Items.potion_of_water, Items.potion_of_booze, Items.potion_of_fruit_juice, Items.ice_box, Items.horn_of_plenty]));
 
-      jewellers = AddShop("jewellers", Glyphs.ring_stock, Rarity: 3,
+      jewellers = AddShop("jewellers", Glyphs.ring_stock, Glyphs.jewel_merchant, Rarity: 3,
         () => [Stocks.ring, Stocks.amulet, Stocks.gem],
         () => Stocks.ring.Items.Union(Stocks.amulet.Items).Union(Stocks.gem.Items).Where(I => I.Rarity > 0));
 
-      quality_apparel_and_accessories = AddShop("quality apparel and accessories", Glyphs.wand_stock, Rarity: 3,
+      quality_apparel_and_accessories = AddShop("quality apparel and accessories", Glyphs.wand_stock, Glyphs.wand_merchant, Rarity: 3,
         () => [Stocks.wand, Stocks.gem],
         () => Stocks.wand.Items.Where(I => I.Rarity > 0).Union([Items.leather_gloves, Items.elven_cloak]));
 
-      hardware_store = AddShop("hardware store", Glyphs.tool_stock, Rarity: 3,
+      hardware_store = AddShop("hardware store", Glyphs.tool_stock, Glyphs.tool_merchant, Rarity: 3,
         () => [Stocks.tool, Stocks.gem],
         () => Stocks.tool.Items.Where(I => I.Rarity > 0));
 
-      rare_books = AddShop("rare books", Glyphs.book_stock, Rarity: 3,
+      rare_books = AddShop("rare books", Glyphs.book_stock, Glyphs.book_merchant, Rarity: 3,
         () => [Stocks.book, Stocks.gem],
         () => Stocks.book.Items.Where(I => I.Rarity > 0));
 
-      lighting_store = AddShop("lighting store", Glyphs.light_stock, Rarity: 3,
+      lighting_store = AddShop("lighting store", Glyphs.light_stock, Glyphs.light_merchant, Rarity: 3,
         () => [Stocks.tool, Stocks.gem],
         () => [Items.oil_lamp, Items.magic_lamp, Items.lantern, Items.torch, Items.magic_candle, Items.wax_candle, Items.potion_of_oil, Items.wand_of_light]);
     }

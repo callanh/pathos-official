@@ -40,16 +40,142 @@ namespace Pathos
         });
       }
 
+      sand = AddGround("sand", Materials.sand, Glyphs.sand, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.sand_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      snow = AddGround("snow", Materials.ice, Glyphs.snow, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.snow_join);
+        G.SpeedMultiplier = 0.80F; // 80% speed when moving through snow.
+        G.SetBlock(Codex.Blocks.stone_boulder);
+        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertGround(FromGround: snow, ToGround: dirt, Locality.Square));
+      });
+
+      moss = AddGround("moss", Materials.vegetable, Glyphs.moss, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.moss_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      grass = AddGround("grass", Materials.vegetable, Glyphs.grass, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.grass_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      dirt = AddGround("dirt", Materials.sand, Glyphs.dirt, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.dirt_join);
+        G.SetBlock(Codex.Blocks.clay_boulder);
+      });
+
       cave_floor = AddGround("cave floor", Materials.stone, Glyphs.cave_floor, G =>
       {
         G.Description = null;
 
+        G.SetJoin(Glyphs.cave_join);
         G.SetBlock(Codex.Blocks.clay_boulder);
+      });
+
+      gold_floor = AddGround("gold floor", Materials.gold, Glyphs.gold_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.gold_join);
+        G.SetBlock(Codex.Blocks.gold_boulder);
+        G.AddReaction(Chance.OneIn5, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, Duration: 1.d100() + 100)); // gold is highly conductive.
+      });
+
+      granite_floor = AddGround("granite floor", Materials.stone, Glyphs.granite_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.granite_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      hive_floor = AddGround("hive floor", Materials.stone, Glyphs.hive_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.hive_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      marble_floor = AddGround("marble floor", Materials.stone, Glyphs.marble_floor, G =>
+      {
+        G.Description = "The cool stone surface has immaculate craftsmanship but is marked by damage and time.";
+
+        G.SetJoin(Glyphs.marble_join);
+        G.SetBlock(Codex.Blocks.crystal_boulder);
+      });
+
+      metal_floor = AddGround("metal floor", Materials.iron, Glyphs.metal_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.metal_join);
+        G.SetBlock(Codex.Blocks.wooden_barrel);
+        G.AddReaction(Chance.OneIn10, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, Duration: 1.d100() + 100));
+      });
+
+      obsidian_floor = AddGround("obsidian floor", Materials.stone, Glyphs.obsidian_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.obsidian_join);
+        G.SetBlock(Codex.Blocks.crystal_boulder);
+      });
+
+      sewer_floor = AddGround("sewer floor", Materials.stone, Glyphs.sewer_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.sewer_join);
+        G.SetBlock(Codex.Blocks.wooden_barrel);
+      });
+
+      stone_floor = AddGround("stone floor", Materials.stone, Glyphs.stone_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.stone_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      stone_path = AddGround("stone path", Materials.stone, Glyphs.stone_path, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.stone_path_join);
+        G.SetBlock(Codex.Blocks.stone_boulder);
+      });
+
+      wooden_floor = AddGround("wooden floor", Materials.wood, Glyphs.wooden_floor, G =>
+      {
+        G.Description = null;
+
+        G.SetJoin(Glyphs.wooden_join);
+        G.AddReaction(Chance.OneIn10, Elements.fire, A => A.CreateVolatile(Volatiles.blaze, Duration: 1.d100() + 100));
+        G.SetBlock(Codex.Blocks.wooden_barrel);
       });
 
       chasm = AddGround("chasm", Materials.air, Glyphs.chasm, G =>
       {
-        G.Description = null;
+        G.Description = "A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.";
 
         G.SetSunken(Inv.Colour.Black.Opacity(0.50F), Element: null, Sonics.thump, Skill: null,
           Enter =>
@@ -60,50 +186,14 @@ namespace Pathos
           Drop => Drop.TransitionDescend(SpatialProperty: null, AdjustmentDice: Dice.One, Fixed: true));
       });
 
-      dirt = AddGround("dirt", Materials.sand, Glyphs.dirt, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.clay_boulder);
-      });
-
-      gold_floor = AddGround("gold floor", Materials.gold, Glyphs.gold_floor, G =>
-      {
-        G.Description = null;
-
-        G.AddReaction(Chance.OneIn5, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, 1.d100() + 100)); // gold is highly conductive.
-
-        G.SetBlock(Codex.Blocks.gold_boulder);
-      });
-
-      granite_floor = AddGround("granite floor", Materials.stone, Glyphs.granite_floor, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
-      grass = AddGround("grass", Materials.vegetable, Glyphs.grass, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
-      hive_floor = AddGround("hive floor", Materials.stone, Glyphs.hive_floor, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
       ice = AddGround("ice", Materials.ice, Glyphs.ice, G =>
       {
-        G.SetSlippery(Codex.Anatomies.limbs, Codex.Attributes.dexterity, Sonics.slip);
-        G.SetBlock(Codex.Blocks.stone_boulder);
+        G.Description = null;
 
+        G.SetBlock(Codex.Blocks.stone_boulder);
+        G.SetSlippery(Codex.Anatomies.limbs, Codex.Attributes.dexterity, Sonics.slip);
         G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertGround(FromGround: ice, ToGround: water, Locality.Square));
-        G.AddReaction(Chance.Always, Elements.cold, A => A.CreateVolatile(Volatiles.freeze, 1.d100() + 100));
+        G.AddReaction(Chance.Always, Elements.cold, A => A.CreateVolatile(Volatiles.freeze, Duration: 1.d100() + 100));
       });
 
       lava = AddGround("lava", Materials.lava, Glyphs.lava, G =>
@@ -111,83 +201,12 @@ namespace Pathos
         G.Description = null;
 
         G.SetBlock(Codex.Blocks.stone_boulder);
-
-        G.AddReaction(Chance.Always, Elements.water, A => A.CreateVolatile(Volatiles.steam, 1.d100() + 100));
-
         G.SetSunken(Inv.Colour.Red.Opacity(0.50F), Elements.fire, Sonics.burn, Skills.swimming,
           Enter => Enter.HarmEntity(Elements.fire, 100.d10()),
           Drop => Drop.DestroyTargetItem(CountDice: null)); // TODO: fire resistant items should not be destroyed?
+        G.AddReaction(Chance.Always, Elements.water, A => A.CreateVolatile(Volatiles.steam, Duration: 1.d100() + 100));
 
         // TODO: cold element _could_ converts lava to obsidian... but is it really cold enough to do that?
-      });
-
-      marble_floor = AddGround("marble floor", Materials.stone, Glyphs.marble_floor, G =>
-      {
-        G.Description = "The cool stone surface has immaculate craftsmanship but is marked by damage and time.";
-
-        G.SetBlock(Codex.Blocks.crystal_boulder);
-      });
-
-      metal_floor = AddGround("metal floor", Materials.iron, Glyphs.metal_floor, G =>
-      {
-        G.Description = null;
-
-        G.AddReaction(Chance.OneIn10, Elements.shock, A => A.CreateVolatile(Volatiles.electricity, 1.d100() + 100));
-
-        G.SetBlock(Codex.Blocks.wooden_barrel);
-      });
-
-      moss = AddGround("moss", Materials.vegetable, Glyphs.moss, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
-      obsidian_floor = AddGround("obsidian floor", Materials.stone, Glyphs.obsidian_floor, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.crystal_boulder);
-      });
-
-      sand = AddGround("sand", Materials.sand, Glyphs.sand, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
-      sewer_floor = AddGround("sewer floor", Materials.stone, Glyphs.sewer_floor, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.wooden_barrel);
-      });
-
-      snow = AddGround("snow", Materials.ice, Glyphs.snow, G =>
-      {
-        G.Description = null;
-
-        G.SpeedMultiplier = 0.80F; // 80% speed when moving through snow.
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-
-        G.AddReaction(Chance.Always, Elements.fire, A => A.ConvertGround(FromGround: snow, ToGround: dirt, Locality.Square));
-      });
-
-      stone_floor = AddGround("stone floor", Materials.stone, Glyphs.stone_floor, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
-      });
-
-      stone_path = AddGround("stone path", Materials.stone, Glyphs.stone_path, G =>
-      {
-        G.Description = null;
-
-        G.SetBlock(Codex.Blocks.stone_boulder);
       });
 
       water = AddGround("water", Materials.water, Glyphs.water, G =>
@@ -195,11 +214,9 @@ namespace Pathos
         G.Description = null;
 
         G.SetBlock(Codex.Blocks.stone_boulder);
-
         G.AddReaction(Chance.Always, Elements.cold, A => A.ConvertGround(FromGround: water, ToGround: ice, Locality.Square));
         G.AddReaction(Chance.Always, Elements.shock, A => A.ApplyTransient(Properties.stunned, 3.d6()));
-        G.AddReaction(Chance.Always, Elements.fire, A => A.CreateVolatile(Volatiles.steam, 1.d100() + 100));
-
+        G.AddReaction(Chance.Always, Elements.fire, A => A.CreateVolatile(Volatiles.steam, Duration: 1.d100() + 100));
         G.SetSunken(Inv.Colour.Blue.Opacity(0.50F), Elements.water, Sonics.water_impact, Skills.swimming,
           Enter =>
           {
@@ -215,15 +232,6 @@ namespace Pathos
             Drop.ConvertItem(Codex.Stocks.book, WholeStack: true, Codex.Items.book_of_blank_paper);
           }
         );
-      });
-
-      wooden_floor = AddGround("wooden floor", Materials.wood, Glyphs.wooden_floor, G =>
-      {
-        G.Description = null;
-
-        G.AddReaction(Chance.OneIn10, Elements.fire, A => A.CreateVolatile(Volatiles.blaze, 1.d100() + 100));
-
-        G.SetBlock(Codex.Blocks.wooden_barrel);
       });
 
       // renames.

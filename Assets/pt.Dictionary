@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Veneno mortal navega pela suas veias.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,Veneno mortal navega pela suas veias.
 AfflictionDescription,Something deeply unsettling is happening... down there.,Algo profundamente desconcertante está acontecendo... naquele lugar.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Uma sensação de algo roendo no fundo do seu estômago.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Essa doença viral causa inflamação do cérebro e é espalhada por animais infectados.
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,vestimenta de mithril delicada
 AppearanceName,fizzy potion,poção gasosa
 AppearanceName,flute,flauta
 AppearanceName,forked polearm,arma de haste bifurcada
+AppearanceName,frayed cloth,pedaço de pano
 AppearanceName,fur boots,botas felpudas
 AppearanceName,fuzzy book,livro felpudo
 AppearanceName,glass orb,globo de vidro
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,livro de papiro
 AppearanceName,parchment book,livro de pergaminho
 AppearanceName,pearl earrings,brincos de pérola
 AppearanceName,pearl ring,anel de pérola
-AppearanceName,piece of cloth,pedaço de pano
 AppearanceName,pink book,livro rosa
 AppearanceName,pink potion,poção rosa
 AppearanceName,plaid book,livro xadrez
@@ -549,8 +587,10 @@ BoonName,undead army,exército morto-vivo
 BoonName,unicorn friend,amigo unicórnio
 CalendarText,d MMMM yyyy,d MMMM yyyy
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
+CharacterName,Armax,
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arrom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belietha
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brouwer
+CharacterName,Busko,
 CharacterName,Cailie,Cailie
 CharacterName,Capo,Capo
 CharacterName,Carthyre,Carthyre
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Crepsal
 CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
+CharacterName,Dastrne,
 CharacterName,Davicohr,Davicohr
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,Donneller
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Ericendrick
 CharacterName,Eybrinde,Eybrindo
 CharacterName,Faraze,Faraze
+CharacterName,Farleen,
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenraymond
+CharacterName,Fizzit,
 CharacterName,Floki,Floki
 CharacterName,Forro,Forro
 CharacterName,Franzia,Franzia
@@ -591,15 +637,20 @@ CharacterName,Galday,Galday
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Gleichman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomack
 CharacterName,Grytt,Grytto
 CharacterName,Haelom,Haelom
 CharacterName,Haique,Haique
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,Haquian
 CharacterName,Hendrick,Hendrick
 CharacterName,Hough,Hough
+CharacterName,Hylatia,
 CharacterName,Illitasha,Illitasha
+CharacterName,Iralna,
 CharacterName,Ishgood,Ishgood
 CharacterName,Istophe,Istophe
 CharacterName,Isylav,Isylav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Javarl
 CharacterName,Jayenason,Jayenason
 CharacterName,Jeem,Jeem
 CharacterName,Jessera,Jessera
+CharacterName,Jevard,
 CharacterName,Jonat,Jonat
+CharacterName,Karasque,
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kennold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagratha
 CharacterName,Lanetwalz,Lanetwalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Lesha
+CharacterName,Liloquy,
 CharacterName,Luickean,Luickean
+CharacterName,Lunch,
 CharacterName,Lzay,Lzay
 CharacterName,Malasuth,Malasuth
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melchai
 CharacterName,Meloty,Meloty
+CharacterName,Mili,
 CharacterName,Miller,Miller
 CharacterName,Misteph,Misteph
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,Nichaeltoy
 CharacterName,Ninerma,Nierma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Ninny
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,
 CharacterName,Okennwood,Okennwood
 CharacterName,Ollac,Ollac
 CharacterName,Omdarro,Omdarro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oscar
+CharacterName,Ovira,
 CharacterName,Paltrick,Paltrick
 CharacterName,Pauwinner,Pauwinner
 CharacterName,Penevieve,Penevieve
@@ -653,13 +713,17 @@ CharacterName,Quarah,Quarah
 CharacterName,Quibb,Quibb
 CharacterName,Quizchak,Quizchak
 CharacterName,Quohnrupley,Quohnrupley
+CharacterName,Rake,
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugarr
 CharacterName,Razz,Razz
 CharacterName,Rebenna,Rebenna
+CharacterName,Relinsarn,
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokijoo
 CharacterName,Rupley,Rupley
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,Sarlia
 CharacterName,Shinaas,Shinaaso
 CharacterName,Smither,Smither
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stewite
 CharacterName,Sully,Sully
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanyacka
+CharacterName,Tempus,
 CharacterName,Thakuline,Thakuline
 CharacterName,Threepo,Threepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,
 CharacterName,Trank,Trank
+CharacterName,Uballon,
 CharacterName,Udfoot,Udfoot
 CharacterName,Uffle,Uffle
 CharacterName,Ujopayne,Ujopayne
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethome
 CharacterName,Viophie,Viophie
 CharacterName,Vorzian,Vorzian
+CharacterName,Waldrin,
 CharacterName,Wallison,Wallison
 CharacterName,Waltis,Waltis
 CharacterName,Walzen,Walzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Xank
 CharacterName,Xantari,Xantari
 CharacterName,Xarrung,Xarrung
 CharacterName,Xiolet,Xiolet
+CharacterName,Yahoa,
 CharacterName,Yarromdee,Yarromdee
 CharacterName,Yassage,Yassage
 CharacterName,Yorque,Yorque
 CharacterName,Yral,Yral
 CharacterName,Yuvaloren,Yuvaloren
+CharacterName,Zarja,
 CharacterName,Zean,Zean
 CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,
 CharacterName,Zultry,Zultry
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Após muitos anos de contemplação profunda, estes adivinhos estão prontos para se aventurar no mundo. Mestres da própria mente, são capazes de atos de formidável força de vontade."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Cuidadores benevolentes, sempre dispostos a ajudar os fracos. Acostumados a lidar com doenças, são exemplos de higiene e limpeza, destinados à ajuda. Assim sendo, precisam de companhia constante para sobreviver."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,Resistência com
 ElementDescription,Complete resistance to life and mana draining effects.,Resistência completa a efeitos de dreno de saúde e mana.
 ElementDescription,Complete resistance to petrification effects.,Resistência completa a efeitos de petrificação.
 ElementDescription,Complete resistance to poison damage.,Resistência completa a dano venenoso.
-ElementDescription,Protects you against pure magical effects.,Protege contra efeitos de magia pura.
-ElementDescription,You resist attempts to render you into a magical slumber.,Você resiste a qualquer tentativa de lhe por em sono mágico.
+ElementDescription,Complete resistance to purely magical damage and effects.,Protege contra efeitos de magia pura.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,Você resiste a qualquer tentativa de lhe por em sono mágico.
 ElementName,acid,ácido
 ElementName,cold,gelo
 ElementName,digging,cavar
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,pesado
 EncumbranceName,unencumbered,não sobrecarregado
 EngulfmentName,engulfed,engolfado
 EngulfmentName,swallowed,engolido
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Uma criatura de tamanho médio propensa a grande ambição. Vivem pouco, mas são onipresentes; eles não devem ser subestimados."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Seres amorfos que não possuem um formato típico, mas que de vez em quando assumem uma forma humanoide translúcida. Ainda que inconfundíveis com qualquer outra coisa a não ser uma gosma plasmática, essa forma possibilita o uso de roupas e ferramentas."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Uma antiga raça de reclusos imponentes. Seu tamanho aterrorizante lhes dá imensa força, complementada por uma dieta voraz de carnes e minerais."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Seres astrais que são recipientes para o espírito indomável de aventureiros que sucumbiram . Não tendo motivações próprias, eles estão felizes em permitir a possessão; para o aventureiro falecido, é uma segunda chance para vingança ou redenção . Nascidos da matéria astral, eles são ligeiramente fracos, translúcidos e conseguem se mover livremente através de obstáculos físicos."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Seres belos e celestiais, dotados de características areólas e asas emplumadas. Fortemente ligados à disputa entre o bem e o mal, podem sentir a natureza divina de tudo que tocam."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,Cuidado com essa engenhosa máquina de guerra.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,Autômatos mecânicos bípedes com inteligência artificial praticamente ilimitada. Eles são alimentados por um motor de núcleo derretido que requer suprimento constante de metais brutos e é suscetível a danos por água.
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Criaturas féericas ligadas por poderosos espíritos da natureza para alimentar suas travessuras . Eles são atarracados com corpos inferiores peludos, cascos fendidos de cabra e chifres enrolados de carneiro . Irreverentes e espertos, eles alegremente conduzem aventuras hedonísticas de bebida , dança e luta ."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Imponentes e robustos, eles lembram dragões humanoides com focinho, pele escamosa e asas funcionais."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandes reptilianos omnívoros cujos ancestrais bestiais dominaram o mundo muito antes do nascimento da civilização. Eles são predadores temíveis, capazes de saltar distâncias impressionantes e evitar muitos ataques com suas escamas."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Criaturas monstruosas com a cabeça e cauda de um touro e o corpo de um homem.
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Criaturas perversas que manifestam-se em muitas aberrações, mas sempre com pele rubra e terríveis chifres. Sua mera presença desperta em outrem os impulsos mais sombrios e violentos."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Espécie voraz e predatória de gigantes humanóides, eles são extremamente corcundas, o que faz com que a parte de trás das suas mãos se arraste no chão . Apesar da aparência física estranha, eles são extremamente fortes e famosos por sua habilidade de se recuperar rapidamente de qualquer ferimento causado a sua pele extremamente resistente ."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Demônios que mudam de forma, que prosperam em seus talentos enganosos."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"Pessoas pequenas que preferem vidas simples. Elas são notavelmente sociáveis, e seus equipamentos lhes servem bem para esforços não tão nobres."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Seres espirituais que gostam de natureza e magia. Eles são fisicamente semelhantes aos humanos, porém, frequentemente, menores e mais ágeis."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","Robustos, pequenos e resistentes. Eles são conhecidos por sua teimosia, metalurgia e amor ao álcool."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Povos subterrâneos de estatura média, gostam de consertos e fazer mágica. Evoluídos para a vida de subsistência, seu metabolismo é adequado para longas aventuras onde a comida é escassa."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","O menor dos dois pudins ferrocigóticos, o pudim marrom é dito ter sabor mais parecido com leite apodrecido do que com uma sobremesa de chocolate. O pudim se alimenta de tecidos e se esconde de tudo, mas seu mais famoso atributo é seu método único de reprodução. Quando entra em contato com ferro, o milagre da fissura binária da geléia apodrecida acontece, criando duas proles vorazes. Devido à ubiquidade do ferro nas armas empunhadas pelos aventureiros, a população dessa criatura só tem crescido com o tempo."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Este monstro mumificado foi criado mergulhando um cadáver humano em mel. Tendo sido reanimado misteriosamente por um culto de monges, agora ele é perigoso e delicioso."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Essa bolha viva de fluidos corrosivos esquisita não parece ter quaisquer capacidades ofensivas.
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Pequenos espíritos alados, inerentemente mágicos e extraordinariamente belos. Quando ameaçados, eles podem escapar através de distorções na realidade espacial."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Tartarugas nômades sobreviventes que saem de seu local de nascimento assim que aprendem  a andar, com o objetivo de viajar o mundo com o conforto e proteção de uma casa em suas costas"
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",Criaturas feias e brutais com tendências canibais; essa raça guerreira é conhecida por sua impressionante força e incapacidades intelectuais.
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,dragão prateado bebê
 EntityName,baby white dragon,dragão branco bebê
 EntityName,baby yellow dragon,dragão amarelo bebê
 EntityName,bad egg,ovo estragado
-EntityName,balrog,balrog
 EntityName,baluchitherium,baluchitherium
 EntityName,banshee,banshee
 EntityName,bar-lgura,bar-Igura
@@ -1175,6 +1277,7 @@ EntityName,dao,dao
 EntityName,dark cleric,clérigo
 EntityName,Death,Morte
 EntityName,death dog,cachorro da morte
+EntityName,decinder,decinder
 EntityName,deep gnome,gnomo roxo
 EntityName,deep one,o profundo
 EntityName,deeper one,o mais profundo
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,doppelgänger
 EntityName,dracolich,dragolich
 EntityName,dracon,draconato
 EntityName,dragon king,rei dragão
+EntityName,dread wraith,dread wraith
 EntityName,dretch,dretch
 EntityName,drow,drow
 EntityName,dryad,driáde
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,múmia anão
 EntityName,dwarf thief,ladrão anão
 EntityName,dwarf warrior,guerreiro anão
 EntityName,dwarf zombie,zumbi anão
-EntityName,Earendil,Earendil
 EntityName,earth binder,dobrador de terra
 EntityName,earth elemental,elemental de terra
 EntityName,earth maker,mago de terra
@@ -1227,7 +1330,6 @@ EntityName,elf king,rei elfo
 EntityName,elf lord,lorde elfo
 EntityName,elf mummy,múmia elfo
 EntityName,elf zombie,zumbi elfo
-EntityName,Elwing,Elwing
 EntityName,embalmer,embalsamador
 EntityName,emerald golem,golem de esmeralda
 EntityName,energy vortex,vórtice de energia
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,zumbi ettin
 EntityName,exterminator,exterminador
 EntityName,fairy,fada
 EntityName,Famine,Fome
+EntityName,Farwander,Farwander
 EntityName,Father Dagon,Pai Dagon
 EntityName,fiend,demônio
 EntityName,fire ant,formiga-de-fogo
@@ -1274,6 +1377,7 @@ EntityName,ghost,fantasma
 EntityName,ghoul,morto-vivo
 EntityName,ghoul mage,mago morto-vivo
 EntityName,ghoul queen,rainha morto-vivo
+EntityName,Ghuyaxil,Ghuyaxil
 EntityName,giant,gigante
 EntityName,giant ant,formiga gigante
 EntityName,giant badger,texugo gigante
@@ -1380,9 +1484,9 @@ EntityName,jackal,chacal
 EntityName,jackalwere,homem-chacal
 EntityName,jaguar,jaguar
 EntityName,jellyfish,água-viva
+EntityName,Jharothy,Jharothy
 EntityName,jiggling blob,bolha chacoalhante
 EntityName,juggernaut,fanático
-EntityName,Juiblex,Juiblex
 EntityName,juvenile raven,filhote de corvo
 EntityName,Kaloi Thrym,Senhor das Trevas
 EntityName,kamadan,kamadan
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,zumbi kobold
 EntityName,komodo dragon,dragão de comodo
 EntityName,kraken,kraken
 EntityName,lamb,cordeiro
-EntityName,Lareth,Lareth
 EntityName,large cat,gato grande
 EntityName,large dingo,dingo grande
 EntityName,large dog,cachorro grande
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,homem lagarto chefe do clã
 EntityName,lizardman mage,homem-lagarto mago
 EntityName,lizardman shaman,homem-lagarto xamã
 EntityName,lizardman warrior,homem-lagarto guerreiro
-EntityName,Lolth,Lolth
 EntityName,long worm,minhoca longa
 EntityName,long worm tail,cauda de minhoca longa
 EntityName,Lord Carnarvon,Lorde Carnarvon
@@ -1481,7 +1583,6 @@ EntityName,mumak,mumak
 EntityName,nabassu,nabassu
 EntityName,nalfeshnee,nalfeshnee
 EntityName,Nalzok,Nalzok
-EntityName,nazgul,nazgul
 EntityName,neanderthal,troglodita
 EntityName,Neferet,Neferet o Verde
 EntityName,newt,tritão
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,nupperibo
 EntityName,nurse,enfermeira
 EntityName,occultist,necromante
 EntityName,ochre jelly,geléia ocre
+EntityName,Oeziblegh,Oeziblegh
 EntityName,ogre,ogro
 EntityName,ogre king,rei ogro
 EntityName,ogre lord,lorde ogro
 EntityName,ogre mage,mago ogro
+EntityName,Oleyth,Oleyth
 EntityName,olog-hai,olog-hai
 EntityName,Oracle,Oráculo
 EntityName,orange jelly,geléia laranja
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,guerreiro orc
 EntityName,orc zombie,zumbi orc
 EntityName,Orcus,Orco
 EntityName,Orion,Orion
+EntityName,Orvalth,Orvalth
 EntityName,owlbear,ursuruja
 EntityName,pack rat,ratazana
 EntityName,page,escudeiro
@@ -1550,6 +1654,7 @@ EntityName,rabbit,coelho
 EntityName,rabid rabbit,coelho rabioso
 EntityName,rabid rat,rato rabioso
 EntityName,rabid wolf,lobo rabioso
+EntityName,Raedilan,Raedilan
 EntityName,rancid jelly,geléia rançosa
 EntityName,rat king,rei rato
 EntityName,ratwere,homem-rato
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,golem de rubi
 EntityName,rust monster,monstro de ferrugem
 EntityName,rutterkin,rutterkin
 EntityName,sabre-toothed cat,gato de dente-de-sabre
+EntityName,Sairou,Sairou
 EntityName,salamander,salamandra
 EntityName,sandestin,sandestin
 EntityName,sapphire golem,golem de safira
@@ -1629,8 +1735,7 @@ EntityName,student,estudante
 EntityName,succubus,súcubo
 EntityName,swamp kobold,kobold do pântano
 EntityName,tengu,tengu
-EntityName,Thorin,Thorin
-EntityName,Thoth Amon,Thoth Amon
+EntityName,Tholmak,Tholmak
 EntityName,thug,vândalo
 EntityName,tiger,tigre
 EntityName,tigerwere,homem-tigre
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,múmia troll
 EntityName,tsetse fly,mosca tsé-tsé
 EntityName,tunnel worm,minhoca tuneladora
 EntityName,two-headed troll,troll de duas cabeças
-EntityName,Twoflower,Twoflower
 EntityName,umber hulk,brutamontes umbro
 EntityName,undead slayer,matador de mortos-vivos
 EntityName,vampire,vampiro
@@ -1656,7 +1760,7 @@ EntityName,vampire king,rei vampiro
 EntityName,vampire lord,lorde vampiro
 EntityName,vampire mage,mago vampiro
 EntityName,Van Helsing,Van Helsing
-EntityName,Vecna,Vecna
+EntityName,Vercrux,Vercrux
 EntityName,violet fungus,fungo violeta
 EntityName,vorpal jabberwock,jabberwock vorpal
 EntityName,vrock,vrock
@@ -1703,7 +1807,6 @@ EntityName,wumpus,wumpu
 EntityName,wyvern,wyvern
 EntityName,xan,xan
 EntityName,xorn,xorn
-EntityName,Yeenoghu,Yeenoghu
 EntityName,yellow jacket,zangão amarelo
 EntityName,yellow jelly,geléia amarela
 EntityName,yellow light,luz amarela
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} foi cancelado
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} foi danificado por {ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} foi destruído por {ElementName}
 FormatText,{AssetName} was disintegrated,{AssetName} foi desintegrado
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} decapitou {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} assustou até a morte {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} matou {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} lamenta o que aconteceu a {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} tornou {Defender:CharacterName} hostil!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} tornou-se hostil contra {Defender:CharacterName}
-FormatText,{Base} in {Range},{Base} em {Range}
 FormatText,{BeamName} beam,feixe {BeamName}
 FormatText,{BlockName} was disintegrated,{BlockName} foi desintegrado
 FormatText,{BoonName} which direction?,{BoonName} em que direção?
 FormatText,{BoonName} which item?,{BoonName} que item?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,quando {Chance}
 FormatText,{Chance} leaves corpse,{Chance} deixa cadáver
 FormatText,{Chance} per room,{Chance} por sala
 FormatText,{Chance} react to {ElementName},{Chance} reage a {ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} em {Use:AssetName} {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} em {Use:FixtureName} {With:AssetName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} para a masmorra {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} habilmente {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} habilmente {MotionPastName} {Use:AssetName} com {With:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} avançou para o nível {LevelNumber}
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} roubou itens de {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
-FormatText,after reaching dungeon level {RecordDepth},após alcançar o nivel {RecordDepth} da masmorra
+FormatText,after reaching depth {RecordDepth},após alcançar o nivel {RecordDepth} da masmorra
 FormatText,animate {CharacterName},animar {CharacterName}
 FormatText,boost {AttributeName} by enchantment,aumenta {AttributeName} através de encantamento
 FormatText,break {FeatureName},quebrar {FeatureName}
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},níveis {From}-{To}
 FormatText,levels {Number}+,níveis {Number}+
 FormatText,LOCKED {GATENAME},{GATENAME} TRANCADA
 FormatText,lose {PropertyName} talent,perder talento {PropertyName}
-FormatText,not {EffectProperty},não {EffectProperty}
 FormatText,polymorph into {EntityNames},polimorfar {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},ressuscitar morto {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},alcance {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,ativar {Dice} vezes
 FormatText,unless resists {ElementName},a menos que resista a {ElementName}
 FormatText,unless target has {PropertyName},a menos que o alvo tenha {PropertyName}
 FormatText,versus {Something},versus {Something}
-FormatText,when {Chance},quando {Chance}
 FormatText,when {GROUNDNAME},quando {GROUNDNAME}
 FormatText,when {ITEMNAME},quando {ITEMNAME}
-FormatText,when {KINDNAMES},quando {KINDNAMES}
 FormatText,when {MATERIALNAME},quando {MATERIALNAME}
 FormatText,when {PROPERTYNAME},quando {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},quando {SANCTITYNAME}
 FormatText,when {Something},quando {Something}
 FormatText,when {STANDINGNAME},quando {STANDINGNAME}
 FormatText,when resists {ElementName},quando resiste {ElementName}
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Essa porta pesada é feita de formações de cristais sólidos e não pode ser facilmente danificada.
 GateName,crystal door,porta de cristal
 GateName,gold door,porta de ouro
@@ -2051,9 +2159,11 @@ GenderName,neuter,assexuado
 GenderName,non-binary,não-binario
 GenerationType,module,módulo
 GenerationType,quest,jornada
+GenerationType,workshop,
 GradeName,artifact,artefato
 GradeName,exotic,exótico
 GradeName,standard,padrão
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,A superfície de pedra gelada tem um artesanato imaculado mas está marcada pelo tempo e um pouco danificada.
 GroundName,cave floor,chão de caverna
 GroundName,chasm,abismo
@@ -2504,7 +2614,9 @@ ItemName,glaive,gládio
 ItemName,gold coin,moeda de ouro
 ItemName,gold dragon scale mail,malha de escama de dragão dourado
 ItemName,gold dragon scales,escamas de dragão dourado
+ItemName,gold flail,
 ItemName,Gold Key,chave de ouro
+ItemName,gold plate mail,
 ItemName,great dagger,adaga grande
 ItemName,green dragon scale mail,armadura de escama de dragão verde
 ItemName,green dragon scales,escamas de dragão verde
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!MODO MESTRE!
 LiteralText,(2d6 instead of 2-12),(2d6 em vez de 2-12)
 LiteralText,(game information status text),(informações textuais do status do jogo)
 LiteralText,(not eligible for hall of fame),(não elegível para o hall da fama)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(recomendado para telas AMOLED)
 LiteralText,(SUPPRESSED),(SUPRIMIDO)
 LiteralText,[MASTER],[MESTRE]
-LiteralText,abolition of firearms,desabilitar armamentos de fogo
+LiteralText,Abolition of firearms,desabilitar armamentos de fogo
 LiteralText,ABOUT,SOBRE
-LiteralText,About Pathos,Sobre Pathos
-LiteralText,accelerated resting,descanso acelerado
+LiteralText,Accelerated resting,descanso acelerado
+LiteralText,Achievements,
 LiteralText,actions,ações
 LiteralText,ADD LEVEL,ADICIONAR NÍVEL
 LiteralText,Add new adventurer,Adicionar aventureiro
@@ -3025,8 +3138,8 @@ LiteralText,alias?,apelido?
 LiteralText,ALL,TUDO
 LiteralText,ALL AT ONCE,TUDO DE UMA VEZ
 LiteralText,all kind,todos os tipos
+LiteralText,all levels,
 LiteralText,always,sempre
-LiteralText,AMBIENT SOUNDS,SONS AMBIENTES
 LiteralText,amnesia,amnésia
 LiteralText,AMNESIA,AMNÉSIA
 LiteralText,anatomy,anatomia
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,animar fantasmas
 LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,ANÔNIMO
 LiteralText,anticlockwise 90 degrees,90 graus anti-horário
+LiteralText,antique art,
 LiteralText,any item,qualquer item
 LiteralText,APPLICATION FILES,ARQUIVOS DO APLICATIVO
 LiteralText,Are you sure you want to end your adventure?,Tem certeza que quer escapar da masmorra e encerrar sua aventura?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,VOCÊ TEM CERTEZA?
 LiteralText,area of effect,efeito em área
 LiteralText,area transient,transitório em área
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,ARTEFATOS
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,SUBIR PARA O ANDAR ANTERIOR
 LiteralText,assess item,estimar
 LiteralText,assets,recursos
 LiteralText,ATMOSPHERE,ATMOSFERA
 LiteralText,attack modifier,modificador de ataque
 LiteralText,Attack which direction?,Atacar em que direção?
-LiteralText,attack//noun,ataque
-LiteralText,ATTACK//noun,ATAQUE
-LiteralText,attack//verb,atacar
-LiteralText,ATTACK//verb,ATACAR
+LiteralText,Attack//noun,Ataque
+LiteralText,Attack//verb,Atacar
 LiteralText,attacks,ataques
+LiteralText,AUDIO,
 LiteralText,AUTO,AUTOMÁTICO
 LiteralText,auto saving,salvando
+LiteralText,avatar,
 LiteralText,AWAKE,ACORDAR
-LiteralText,BACK,VOLTAR
 LiteralText,backfire,falhar
 LiteralText,barrier,barreira
 LiteralText,BARRIERS,BARREIRAS
 LiteralText,bazaar,bazar
 LiteralText,Begin the adventure,Iniciar a aventura
 LiteralText,beholds,contempla
-LiteralText,beta discussions,discussões beta
 LiteralText,Black background,Plano de fundo preto
 LiteralText,blasphemy,blasfêmia
-LiteralText,BLINK,LAMPEJAR
+LiteralText,Blink,Lampejar
 LiteralText,blink entity,lampejante
 LiteralText,Blink which direction?,Lampejar em que direção?
 LiteralText,block,bloquear
 LiteralText,BLOCKED,BLOQUEADO
 LiteralText,BLOCKS,BLOQUEIOS
-LiteralText,BOONS,DÁDIVAS
+LiteralText,Boons,Dádivas
 LiteralText,boost attack by enchantment,encantamento aumenta o ataque
 LiteralText,boost damage by enchantment,encantamento aumenta o dano
 LiteralText,boost defence by enchantment,encantamento aumenta a defesa
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,NÃO PODE VER
 LiteralText,CAN'T SLIDE,NÃO PODE DESLIZAR
 LiteralText,CAN'T TELEKINESIS,NÃO PODE USAR TELECINÉSIA
 LiteralText,CAN'T THROW,NÃO PODE ARREMESSAR
-LiteralText,CANCEL,CANCELAR
+LiteralText,Cancel,Cancelar
 LiteralText,cancellation,cancelamento
 LiteralText,CANCELLED,CANCELADO
 LiteralText,capture any entity,captura
@@ -3105,13 +3219,12 @@ LiteralText,Cast,Lançar
 LiteralText,CAST SPELLS,LANÇAR FEITIÇOS
 LiteralText,challenge,desafio
 LiteralText,CHAMPION,CAMPEÃO
+LiteralText,Change,
 LiteralText,Character,Personagem
-LiteralText,CHARACTER,PERSONAGEM
 LiteralText,charged items,itens com cargas
-LiteralText,Chat on Discord,Converse no Discord
 LiteralText,check for updates?,checar atualizações?
 LiteralText,checking for updates,checando atualizações
-LiteralText,CHOOSE,ESCOLHA
+LiteralText,Choose,Escolha
 LiteralText,Choose your quick action,Escolha sua ação rápida
 LiteralText,class,classe
 LiteralText,CLASSES,CLASSES
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,clique para tentar novamente
 LiteralText,Click to send detected issues to the author,Clique para enviar problemas detectados ao autor
 LiteralText,clone source entity,clonar personagem fonte
 LiteralText,clone target entity,clonar personagem alvo
-LiteralText,CLOSE,FECHAR
+LiteralText,Close,Fechar
 LiteralText,closed,fechado
-LiteralText,Coding on Medium,Codificando no Medium
 LiteralText,coins,moedas
-LiteralText,COMMAND,
+LiteralText,Command,
+LiteralText,Community,
 LiteralText,companion,companheiro
 LiteralText,compression,compressão
-LiteralText,CONCEAL,ESCONDER
+LiteralText,Conceal,Esconder
 LiteralText,CONCEALED,ESCONDIDO
 LiteralText,concealing,escondendo
 LiteralText,CONDUCT,CONDUZIR
-LiteralText,CONFIRM,CONFIRMAR
+LiteralText,Confirm,Confirmar
+LiteralText,Connect,
 LiteralText,connect portal,conectar passagem
 LiteralText,Connect to game hosted by another player.,Conectar a uma partida hospedada por outro jogador.
-LiteralText,CONSOLE,CONSOLE
+LiteralText,Console,Console
 LiteralText,constructed,construído
-LiteralText,CONTACT,CONTATO
 LiteralText,Continue,Continuar
 LiteralText,CONTINUE,CONTINUAR
 LiteralText,CONTROLLED,CONTROLADO
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,converter pedregulho
 LiteralText,conveyance,transmissão
 LiteralText,COPY,COPIAR
 LiteralText,corpse,cadáver
 LiteralText,CRACK!,QUEBRADO!
-LiteralText,craft,fabricar
-LiteralText,CRAFT,fabricar
+LiteralText,Craft,Fabricar
 LiteralText,Craft which item?,Fabricar que item?
 LiteralText,CRASH APP!,BAAAAM!
 LiteralText,CRASH!,BAAAAM!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Criar em que direção?
 LiteralText,CREDITS,CRÉDITOS
 LiteralText,CROP,RECORTAR
 LiteralText,CURSED,AMALDIÇOADO
-LiteralText,CUSTOM,PERSONALIZADO
 LiteralText,CUSTOM HERO,HERÓI PERSONALIZADO
 LiteralText,CUSTOM MODULES,MÚDULOS PERSONALIZADOS
+LiteralText,customise controls,
 LiteralText,damage,
 LiteralText,DAMAGE,
 LiteralText,dark,escuro
+LiteralText,Darken area,
 LiteralText,DEAD END,SEM SAÍDA
 LiteralText,death,morte
 LiteralText,deathray,raio da morte
 LiteralText,decapitate entity,decapitar
 LiteralText,decapitation,decapitar
 LiteralText,DECEASED,FALECIDO
-LiteralText,decelerated real-time,tempo real desacelerado
+LiteralText,Decelerated real-time,tempo real desacelerado
 LiteralText,DECREASE,DIMINUIR
 LiteralText,defence,defesa
 LiteralText,DEFENCE,DEFESA
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,DELETAR
 LiteralText,delete this level,deletar este nível
 LiteralText,DEMOTE,DEMOVER
 LiteralText,depth,profundeza
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,DESCER PARA O PRÓXIMO ANDAR
 LiteralText,destination,destino
 LiteralText,destroy,destruir
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,VOCÊ NÃO RANQUEOU NO
 LiteralText,diet,dieta
 LiteralText,difficulty,dificuldade
 LiteralText,digging,cavar
-LiteralText,disable ambient sounds,desabilitar som ambiente
+LiteralText,Disable ambient sounds,desabilitar som ambiente
 LiteralText,Disable auto save on transition,Desabilitar salvamento nas transições
+LiteralText,Disable automatic camera,modo panorâmico livre
 LiteralText,Disable button tap sounds,desabilitar sons de toque
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,desabilitar boom de conclusão
 LiteralText,Disable continue button,desabilitar o botão de continuar
-LiteralText,disable haptic feedback,desabilitar vibração de feedback
+LiteralText,Disable haptic feedback,desabilitar vibração de feedback
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,desabilitar animações ociosas
 LiteralText,Disable introduction boom,desabilitar boom de introdução
+LiteralText,Disable manual zoom,modo de escala travado
 LiteralText,Disable mask animations,desabilitar animações de máscara
 LiteralText,Disable online services,Desabilitar serviços online
 LiteralText,Disable pitch shifting,desabilitar mudança de tom
+LiteralText,Disable processing rate limit,
 LiteralText,Disable radial quick menu,
 LiteralText,Disable side quick menus,
 LiteralText,Disable spacebar real-time toggle,Desabilitar tempo real ao apertar espaço
 LiteralText,Disable swipe gestures,desabilitar deslize para agir
+LiteralText,Disable tutorial,
 LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,desarmar
-LiteralText,DISCONNECT,DESCONECTAR
+LiteralText,Disconnect,Desconectar
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Desconexão detectada. Por favor certifique-se de que você está conectado à internet e que todos os aparelhos estão na mesma versão do Pathos.
 LiteralText,discover item,iluminação
-LiteralText,Discuss on Reddit,Discuta no Reddit
+LiteralText,discoveries,
 LiteralText,disenchant item,desencanta
 LiteralText,dismantle items to extract the base materials and raw essence,desmonte itens para extrair suas essências e materiais crus.
-LiteralText,DISMISS,DISPENSAR
-LiteralText,DISMOUNT,DESMONTAR
+LiteralText,Dismiss,Dispensar
+LiteralText,Dismount,Desmontar
 LiteralText,Dismount which direction?,Desmontar em que direção?
 LiteralText,Display dice rolls in the help,Mostrar rolagem de dados na ajuda
+LiteralText,Display full screen,
 LiteralText,distribution,atributos
 LiteralText,divine item,predizer
 LiteralText,DIVINED,PREDITO
 LiteralText,divined items,itens preditos
 LiteralText,Do you want to save or quit this adventure?,Você deseja salvar ou desistir dessa aventura?
 LiteralText,domestic,doméstico
-LiteralText,DONATE,DOAR
+LiteralText,Donate,Doar
 LiteralText,Donate to say thanks,Doe para agradecer
 LiteralText,DOOR,PORTA
 LiteralText,double damage when mounted,dano dobrado quando em uma montaria
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,quando desencantado
 LiteralText,downloading update,baixando atualização
 LiteralText,drain item,drenar item
-LiteralText,drop,largar
-LiteralText,DROP,LARGAR
+LiteralText,Drop,Largar
 LiteralText,DUAL WIELD,EMPUNHADURA DUPLA
 LiteralText,duration,duração
+LiteralText,Eat,
 LiteralText,edible items,itens comestíveis
 LiteralText,egg,ovo
 LiteralText,else,senão
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,limites de sobrecarga
 LiteralText,End this adventure,Acabar essa aventura
 LiteralText,ended,finalizado
 LiteralText,engulf entity,engolfar
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,INSIRA A QUANTIDADE
 LiteralText,ENTITIES,ENTIDADES
 LiteralText,entity,entidade
 LiteralText,entropy accidents,acidentes entrópicos
-LiteralText,EQUIP,EQUIPAR
-LiteralText,equipped,equipado
+LiteralText,Equip,Equipar
+LiteralText,equipment,equipado
 LiteralText,ESCAPE,ESCAPAR
 LiteralText,escape traps,escapar de armadilhas
 LiteralText,escape with,escapar com
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,TROCA
 LiteralText,exchange entity,trocar
 LiteralText,EXIT PATHOS,SAIR DO PATHOS
 LiteralText,EXPAND,EXPANDIR
-LiteralText,EXPEL,EXPELIR
+LiteralText,Expel,Expelir
 LiteralText,experience,experiência
 LiteralText,EXPERIENCE,EXPERIÊNCIA
 LiteralText,explosion,explosão
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,REGISTRO DE FALHAS
 LiteralText,feats,proezas
 LiteralText,feature,característica
 LiteralText,FEATURES,CARACTERÍSTICAS
-LiteralText,FEED,ALIMENTAR
+LiteralText,Feed,Alimentar
 LiteralText,FEEDBACK,FEEDBACK
 LiteralText,Feedback information,informação de feedback
 LiteralText,FILES,ARQUIVOS
@@ -3306,24 +3433,26 @@ LiteralText,fixed,consertado
 LiteralText,fixed range,alcance fixo
 LiteralText,FIZZLE,CHIADO
 LiteralText,Floor,Chão
-LiteralText,FOLLOW,SEGUIR
-LiteralText,Follow me on Twitter,Siga-me no Twitter
-LiteralText,free panning mode,modo panorâmico livre
+LiteralText,Follow,Seguir
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,pavor
 LiteralText,fumbling,atrapalhamento
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,GANHAR CARMA
 LiteralText,gain level,ganhar nível
 LiteralText,GAIN LEVEL,GANHAR NÍVEL
 LiteralText,gain nutrition,ganhar nutrição
 LiteralText,gain skill,ganhar abilidade
+LiteralText,GAMEPLAY,
 LiteralText,gate,portão
 LiteralText,gates,portão
 LiteralText,gather,reunir
 LiteralText,gender,gênero
 LiteralText,genocide,genocídio
-LiteralText,GENOCIDE,GENOCÍDIO
 LiteralText,GIVE,DAR
 LiteralText,GIVE ALL,DAR TUDO
+LiteralText,GLOBAL,MUNDO
 LiteralText,GLYPHS,GLIFOS
 LiteralText,GOD MODE,
 LiteralText,gold,ouro
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,chocar
 LiteralText,hatched by,chocado por
 LiteralText,Having trouble finding the stairs down to the next level?,Está com problemas para encontrar a escadaria para o próximo nível?
 LiteralText,Help,Ajuda
-LiteralText,HELP,AJUDA
 LiteralText,HIDDEN,ESCONDIDO
-LiteralText,HIDE,ESCONDER
+LiteralText,Hide,Esconder
 LiteralText,hiding,ocultação
 LiteralText,HINT,DICA
-LiteralText,HIRE,CONTRATAR
+LiteralText,Hire,Contratar
+LiteralText,HJKL directional keys,
 LiteralText,horde,horda
 LiteralText,HORDES,HORDAS
 LiteralText,HOST,ANFITRIÃO
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Entretanto, você pode querer completar suas aventuras antes de baixar a atualização."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Espero que você esteja aproveitando suas aventuras sinta-se livre para contactar-me com suas sugestões e feedback.
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,itens identificados
-LiteralText,identify all items,identificar tudo
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,IDENTIFICAR TODOS OS ITENS DO CHÃO
-LiteralText,identify one item,identificar um
+LiteralText,Identify all items,Identificar tudo
+LiteralText,Identify one item,Identificar um
+LiteralText,identity,
 LiteralText,ILLITERATE,ILETRADO
 LiteralText,illusion,ilusão
 LiteralText,ILLUSION,ILUSÃO
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,encarcerar
 LiteralText,incarceration,encarceramento
 LiteralText,INCREASE,AUMENTAR
 LiteralText,INDEX,INDEXAR
-LiteralText,individual crafting,manufatura individual
+LiteralText,Individual crafting,manufatura individual
 LiteralText,infinite quantity,quantidade infinita
 LiteralText,influenced actions,ações influenciadas
 LiteralText,INSCRIBE,INSCREVER
 LiteralText,INSCRIBE ITEM,INSCREVER ITEM
 LiteralText,inscription?,inscrição?
-LiteralText,instruct each character,instruir cada personagem
+LiteralText,Inspect,
+LiteralText,Instruct each character,instruir cada personagem
 LiteralText,INSUFFICIENT GOLD,OURO INSUFICIENTE
+LiteralText,INTERFACE,
 LiteralText,Inventory,Inventário
-LiteralText,INVENTORY,INVENTÁRIO
-LiteralText,ITEM,ITEM
-LiteralText,items,itens
+LiteralText,Item,Item
 LiteralText,ITEMS,ITENS
 LiteralText,JOIN,ENTRAR
 LiteralText,Journal,Diário
 LiteralText,JOURNAL,DIÁRIO
-LiteralText,JUMP,PULAR
+LiteralText,Jump,Pular
 LiteralText,Jump which direction?,Pular em que direção?
 LiteralText,karma,carma
 LiteralText,KARMA,CARMA
 LiteralText,key?,chave?
+LiteralText,Keyboard,
+LiteralText,Kick,Chute
 LiteralText,Kick which direction?,Chutar em que direção?
-LiteralText,KICK!,CHUTE!
 LiteralText,kills,abates
 LiteralText,kit,kit
-LiteralText,KNOWLEDGE,CONHECIMENTO
+LiteralText,Knowledge,Conhecimento
 LiteralText,LANGUAGE,IDIOMA
-LiteralText,LEARN ALL SPELLS,APRENDER TODOS os FEITIÇOS
+LiteralText,Learn all spells,Aprender todos os feitiços
 LiteralText,learn spells,aprender feitiços
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Left,
 LiteralText,LEFT RING,ANEL ESQUERDO
 LiteralText,LEVEL CHART,MAPA DE NÍVEIS
 LiteralText,level//rank,nível
@@ -3414,20 +3544,19 @@ LiteralText,life,saúde
 LiteralText,LIFE,SAÚDE
 LiteralText,Life represents your physical health and death occurs at zero.,Saúde representa sua condição física e morte ocorre quando zerada.
 LiteralText,light,luz
-LiteralText,LIGHT,LUZ
 LiteralText,light radius,raio da luz
+LiteralText,Lighten area,
 LiteralText,limits,limites
 LiteralText,LIST,LISTA
 LiteralText,lit,aceso
 LiteralText,LIVING,VIVO
 LiteralText,loading,carregando
-LiteralText,LOCK,TRAVAR
-LiteralText,locked,trancado
-LiteralText,LOCKED,TRANCADO
-LiteralText,locked scaling mode,modo de escala travado
+LiteralText,Lock,Travar
+LiteralText,Locked,Trancado
 LiteralText,locking,travamento
-LiteralText,loot,saque
-LiteralText,LOOT,SAQUEAR
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Saque
+LiteralText,Loot//verb,Saquear
 LiteralText,LOSE KARMA,PERDER CARMA
 LiteralText,LOSE LEVEL,PERDER NÍVEL
 LiteralText,lose nutrition,perder nutrição
@@ -3440,39 +3569,44 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,Mana representa sua energia para lançar feitiços.
 LiteralText,Map,Mapa
 LiteralText,MAP,MAPA
-LiteralText,mapping,mapeamento
+LiteralText,Mapping,Mapeamento
 LiteralText,material,material
 LiteralText,materials,materiais
 LiteralText,melting,derretimento
-LiteralText,MENU,MENU
+LiteralText,Menu,Menu
 LiteralText,mercenary,mercenário
-LiteralText,MIMIC,MÍMICA
+LiteralText,Mimic,Mímica
 LiteralText,mimicking,mimetizando
 LiteralText,mobilise block,mobilizar pedregulho
 LiteralText,modifier,modificador
+LiteralText,MODULE,
 LiteralText,MORE INFO,
-LiteralText,MOUNT,MONTAR
+LiteralText,Mount,Montar
 LiteralText,Mount which direction?,Montar em qual direção?
 LiteralText,MOUNTED,MONTADO
-LiteralText,MOVE,MOVER
+LiteralText,Move,Mover
 LiteralText,move down one level,mover abaixo um nível
 LiteralText,move up one level,mover acima um nível
 LiteralText,MULTIPLAYER,MULTIJOGADOR
+LiteralText,Multiplayer Chat,
 LiteralText,murder,assassinar
 LiteralText,MURDER ENTITIES EVERYWHERE,ASSASSINAR ENTIDADES EM TODOS OS LUGARES
 LiteralText,music volume,volume da música
 LiteralText,N/A,N/D
-LiteralText,name,nome
-LiteralText,NAME,NOME
 LiteralText,name?,nome?
+LiteralText,Name//noun,Nome
+LiteralText,Name//verb,Nome
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,neutro
 LiteralText,never,nunca
-LiteralText,NEW,NOVO
+LiteralText,Next character,
 LiteralText,no additional effects,sem efeitos adicionais
 LiteralText,no allies,sem aliados
 LiteralText,no ambient sounds,sem sons ambientes
 LiteralText,No appropriate items available,Sem itens apropriados disponíveis
-LiteralText,no available knowledge,sem conhecimento disponível
+LiteralText,No key,
 LiteralText,no records found,nenhum registro encontrado
 LiteralText,no resistances,sem resistências
 LiteralText,no talents,sem talentos
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,nada acontece
 LiteralText,Nothing of interest,Nada de interessante
 LiteralText,nothing to give,nada para dar
 LiteralText,nothing to take,nada para pegar
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,nutrição
 LiteralText,NUTRITION,NUTRIÇÃO
 LiteralText,OBSTRUCTED,OBSTRUÍDO
 LiteralText,OFFLINE,DESCONECTADO
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,UM POR VEZ
 LiteralText,oOo,oOo
-LiteralText,OPEN,ABRIR
+LiteralText,Open,Abrir
 LiteralText,OPENED,ABRIU
 LiteralText,opening,abertura
 LiteralText,OR,OU
 LiteralText,ORIGINAL,ORIGINAL
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,SOBREPOR
 LiteralText,OVERVIEW,VISÃO GERAL
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPO
-LiteralText,passive (no attacking),passiva (sem atacar)
+LiteralText,Passive (no attacking),passiva (sem atacar)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos pode ser jogado no modo cooperativo em tela dividida com até quatro jogadores.
 LiteralText,pathos development @ paypal,desenvolvimento do pathos no paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos não conseguiu carregar sua aventura. Por favor envie o arquivo para investigação. Posso até conseguir repará-lo ou atualizar o programa com uma correção.
-LiteralText,Pathos might be the next evolution of Nethack.,Pathos tem capacidade para ser a nova evolução do Nethack.
+LiteralText,Pathos might be the next evolution of NetHack.,Pathos tem capacidade para ser a nova evolução do NetHack.
 LiteralText,penalty,penalidade
 LiteralText,penetrates,penetra
 LiteralText,per level,por nível
+LiteralText,Perform,
 LiteralText,permanent,permanente
 LiteralText,PERSONAL,PESSOAL
+LiteralText,Pick up,
 LiteralText,PLACE,POR
 LiteralText,PLACE ALL,POR TUDO
 LiteralText,place curse,colocar maldição
 LiteralText,platform,plataforma
 LiteralText,Play,Tocar
 LiteralText,Play a sound effect?,Tocar efeito sonoro?
+LiteralText,Play Demo,
 LiteralText,Player,Jogador
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,"Por favor entenda que sair do aplicativo sem salvar durante o jogo pode resultar em arquivos de salvamento truncados, que não podem ser recuperados."
 LiteralText,Please offer any clarification,Por favor esclareça
 LiteralText,Please provide your feedback,Por favor envie seu feedback
 LiteralText,Please rotate your device to landscape :-),Por Favor gire o seu aparelho para a horizontal :-)
-LiteralText,POLYMORPH,POLIMORFAR
+LiteralText,Polymorph,Polimorfar
 LiteralText,polymorph entity,polimorfar entidade
 LiteralText,Polymorph into what?,Polimorfar em que?
 LiteralText,polymorph item,polimorfar item
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,POLIMORFADO
 LiteralText,portal,portal
 LiteralText,PORTALS,PORTAIS
 LiteralText,porter,carregador
-LiteralText,PRAY,ORAR
+LiteralText,POSITIVE,
+LiteralText,Pray,Orar
 LiteralText,preservation,preservação
-LiteralText,prevent revenant levels,desabilitar fantasmas de personagem
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,desabilitar fantasmas de personagem
+LiteralText,Previous character,
 LiteralText,prisoner,prisioneiro
 LiteralText,probability,probabilidade
 LiteralText,PROMOTE,PROMOVER
 LiteralText,PROPERTIES,PROPRIEDADES
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,punir
 LiteralText,PUNISHED,PUNIDO
 LiteralText,punishment?,punição?
 LiteralText,PUNISHMENTS,PUNIÇÃO
+LiteralText,Purchase,
 LiteralText,QUANTITY,QUANTIDADE
-LiteralText,QUICK LOAD,CARREGAMENTO RÁPIDO
-LiteralText,QUICK SAVE,SALVAMENTO RÁPIDO
+LiteralText,QUESTS,
+LiteralText,Quick load,Carregamento rápido
+LiteralText,Quick save,Salvamento rápido
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,desistiu
-LiteralText,QUIT,SAIR
+LiteralText,Quit,Sair
 LiteralText,R//replica symbol,R
 LiteralText,race,raça
 LiteralText,RACES,RAÇAS
 LiteralText,random,aleatório
-LiteralText,RANDOM,ALEATÓRIO
-LiteralText,random dungeon seed,masmorra aleatória (seed)
 LiteralText,random level,level aleatório
 LiteralText,random points,pontos aleatórios
+LiteralText,random seed,masmorra aleatória (seed)
 LiteralText,rank,ranque
 LiteralText,rarity,raridade
 LiteralText,rate & review on the app store,avalie na app store
-LiteralText,RE-ACT,CONTRA-ATACAR
-LiteralText,RE-CAST,RELANÇAR
-LiteralText,RE-EQUIP,REEQUIPAR
+LiteralText,Re-act,Contra-atacar
+LiteralText,Re-cast,Relançar
+LiteralText,Re-equip,Reequipar
 LiteralText,Re-roll,Rolar novamente
 LiteralText,re-rolls,rerrolagem
-LiteralText,RE-USE,REUTILIZAR
+LiteralText,Re-use,Reutilizar
 LiteralText,Read books to learn spells,Leia livros para aprender feitiços
-LiteralText,READ!,LER!
-LiteralText,REAL-TIME,TEMPO REAL
+LiteralText,Read!,Ler!
+LiteralText,Real-time,Tempo real
 LiteralText,REALLY CRASH?,DESEJA REALMENTE DESTRUIR?
 LiteralText,recall party,trazer aliados
 LiteralText,Recommend Pathos,Recomendar Pathos
 LiteralText,Redo,Refazer
 LiteralText,reflects,reflete
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,REGISTRO
 LiteralText,REGISTER PLAYER HANDLE,REGISTRAR NOME DO JOGADOR
 LiteralText,reinforced,reforçado
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,REFORÇADO
 LiteralText,release entity,liberar
 LiteralText,remove all transients,remove todos os efeitos transitórios
 LiteralText,remove curse,remover maldição
-LiteralText,REMOVE CURSE,REMOVER MALDIÇÃO
 LiteralText,remove random resistance,remove resistência aleatória
 LiteralText,remove random talent,remove talento aleatório
 LiteralText,remove with,remover com
 LiteralText,remove with boulder,remover com pedregulho
 LiteralText,REMOVE//container,REMOVER
-LiteralText,REMOVE//equipment,REMOVER
+LiteralText,Remove//equipment,Remover
 LiteralText,RENAME,RENOMEAR
 LiteralText,RENAME CHARACTER,RENOMEAR PERSONAGEM
 LiteralText,RENAME ITEM,RENOMEAR ITEM
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,reencher vida
 LiteralText,replenish mana,reencher mana
 LiteralText,replica,réplica
 LiteralText,replicate item,replicar espólio
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,requer a habilidade de arrombar travas
 LiteralText,reset random equipment,reestabelece equipamentos aleatórios
+LiteralText,Reset to defaults,
 LiteralText,resident?,residente?
 LiteralText,resistances,resistências
 LiteralText,RESISTS,RESISTE
 LiteralText,Rest,Descansar
 LiteralText,Rest how many turns?,Descansar quantos turnos?
+LiteralText,Rest once,
 LiteralText,restarting to update,reiniciando para atualizar
 LiteralText,restock shop items,reabastecer
 LiteralText,restore ability,restaurar atributo
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Ressuscitar e continuar
 LiteralText,resurrections,ressurreições
 LiteralText,retaliations,retalhações
 LiteralText,RETURN,RETORNAR
-LiteralText,REVEAL,REVELAR
+LiteralText,Reveal,Revelar
 LiteralText,REVEAL ALL MAPS,REVELAR MAPAS
 LiteralText,REVEAL THIS MAP,REVELAR ESSE MAPA
 LiteralText,revealed,revelado
 LiteralText,revenant,revenante
-LiteralText,REVERT,REVERTER
+LiteralText,Revert,Reverter
+LiteralText,Right,
 LiteralText,RIGHT RING,ANEL DIREITO
 LiteralText,rigid,rígido
 LiteralText,ROTATE,ROTACIONAR
 LiteralText,route entity,rota da entidade
 LiteralText,rumour,espalhar
 LiteralText,sacrifice item,sacrificar
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,CHECAR SANIDADE
 LiteralText,SAVE,SALVAR
 LiteralText,SAVE & QUIT,SALVAR & SAIR
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,AVENTURAS SALVAS
 LiteralText,SAVED BONES,OSSOS SALVOS
 LiteralText,school,escola
-LiteralText,scrap,sucatear
-LiteralText,SCRAP,SUCATEAR
+LiteralText,Scrap,Sucatear
 LiteralText,SEALED,SELADO
 LiteralText,Search,Procurar
 LiteralText,Search how many turns?,Procurar por quantos turnos?
+LiteralText,Search once,
 LiteralText,searching,procurar
 LiteralText,secret,segredo
 LiteralText,SECRET,SEGREDO
 LiteralText,seed,semente
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,SELECIONAR ATMOSFERA
 LiteralText,Select Companion Tile,Selecionar Quadrado do Companheiro
 LiteralText,Select Hero Tile,Selecionar Quadrado do Herói
 LiteralText,SELECT ITEM,SELECIONAR ITEM
-LiteralText,SELECT LANGUAGE,SELECIONAR IDIOMA
 LiteralText,SELECT MAP,SELECIONAR MAPA
-LiteralText,SELECT PORTRAIT,SELECIONAR RETRATO
 LiteralText,SELECT RESIDENT,SELECIONAR RESIDENTE
 LiteralText,SELECT SQUARE,SELECIONAR QUADRADO
-LiteralText,SELECT TILESET,SELECIONAR GRÁFICOS
 LiteralText,self,si
+LiteralText,Self menu,
 LiteralText,SELL,VENDER
 LiteralText,SELL ALL,VENDER TUDO
 LiteralText,SEND,ENVIAR
 LiteralText,Send me an email,Envie-me um email
-LiteralText,SERVICES,SERVIÇOS
+LiteralText,Services,Serviços
 LiteralText,SET DIFFICULTY,DEFINIR DIFICULDADE
 LiteralText,set starting location,definir localização inicial
-LiteralText,SETTINGS,CONFIGURAÇÕES
+LiteralText,Settings,Configurações
 LiteralText,sfx volume,volume dos efeitos
-LiteralText,SHARE//exchange,PARTILHA
+LiteralText,Share//exchange,Partilha
 LiteralText,SHARE//publish,PARTILHA
 LiteralText,SHOPS,LOJAS
 LiteralText,Show debugging information,Mostrar informações de debugging
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,ENTRAR
 LiteralText,size,tamanho
 LiteralText,skills,habilidades
 LiteralText,SKILLS,HABILIDADES
-LiteralText,SLIDE,DESLIZAR
+LiteralText,Slide,DESLIZAR
 LiteralText,Slide which direction?,Deslizar em qual direção?
 LiteralText,slower animations,animações lentas
 LiteralText,SONICS,SONS
@@ -3686,17 +3847,17 @@ LiteralText,special,especial
 LiteralText,SPECIALS,ESPECIAIS
 LiteralText,speed,velocidade
 LiteralText,SPEED,VELOCIDADE
-LiteralText,SPELL,FEITIÇO
+LiteralText,Spell,Fetiço
 LiteralText,SPELLS,FEITIÇOS
 LiteralText,Square,Quadrado
 LiteralText,stack,toda a pilha
 LiteralText,START,COMEÇO
 LiteralText,Start a game to be joined by other players.,Iniciar partida na qual jogadores poderão entrar.
 LiteralText,Start new adventure,Começar nova aventura
-LiteralText,start without companion,desabilitar pet inicial
+LiteralText,Start without companion,desabilitar pet inicial
 LiteralText,starvation,fome
 LiteralText,starved,morreu de fome
-LiteralText,STAY,FICAR
+LiteralText,Stay,Ficar
 LiteralText,steal,roubar
 LiteralText,STOP,PARAR
 LiteralText,storage,armazenamento
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,PEQUENAS AVENTURAS
 LiteralText,SUBMIT,ENVIAR
 LiteralText,summon,convocar entidade
 LiteralText,SUSTAINED,MANTIDO
-LiteralText,SWAP,TROCAR
-LiteralText,SWITCH,MUDAR
+LiteralText,Swap,Trocar
+LiteralText,Switch,MUDAR
 LiteralText,symptoms,sintomas
 LiteralText,Table of Contents,Mesa de conteúdos
-LiteralText,TAKE,PEGAR
+LiteralText,Take,Pegar
 LiteralText,TAKE ALL,PEGAR TUDO
 LiteralText,talents,talentos
 LiteralText,TALENTS,TALENTOS
-LiteralText,TALK,FALAR
+LiteralText,Talk,Falar
 LiteralText,target,alvo
-LiteralText,TELEKINESIS,TELECINÉSIA
+LiteralText,Telekinesis,Telecinésia
 LiteralText,Telekinesis which direction?,Usar a telecinésia em qual direção ?
 LiteralText,Telekinesis which object?,Usar a telecinésia em qual objeto ?
-LiteralText,TELEPORT,TELEPORTAR
+LiteralText,Teleport,Teleportar
+LiteralText,Teleport end,
 LiteralText,teleport entity,teleportar personagem
 LiteralText,teleport item away,teleportar-se para longe
 LiteralText,Teleport to where?,Teleportar para onde?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,TERMINAL
 LiteralText,terrain,terreno
 LiteralText,The attack score is your aptitude for hitting an opponent.,A pontuação de ataque é a sua aptidão em atacar um oponente.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,O desafio é melhorar as mecânicas e manter a essência do que o faz o melhor jogo de todos os tempos.
+LiteralText,The damage you do to an opponent upon a successful attack.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,A pontuação de defesa é o quanto você está protegido quando atacado por um oponente.
 LiteralText,There is a new update available!,Há uma atualização disponível!
 LiteralText,there is nothing to place here,não há nada para por aqui
 LiteralText,there is nothing to remove here,não há nada para remover daqui
 LiteralText,there is nothing to trade with this merchant,não há nada para ser negociado com este comerciante
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,esse nível
 LiteralText,this merchant has no stock to trade,este comerciante não tem estoque para negociar
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Esse nome é usado para gravar suas conquistas no Hall da Fama.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Essa semente pode ser compartilhada com seus amigos para desafiá-los na mesma masmorra.
 LiteralText,threw,arremessou
-LiteralText,THROW,ARREMESSAR
+LiteralText,Throw,Arremessar
+LiteralText,TILESET,SELECIONAR GRÁFICOS
 LiteralText,tin,lata
 LiteralText,tinning,enlatar
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,MUITO GRANDE
 LiteralText,TOO HEAVY,MUITO PESADO
 LiteralText,TOO HUNGRY,MUITO FAMINTO
 LiteralText,TOO SMALL,MUITO PEQUENO
 LiteralText,TOO WEAK,MUITO FRACO
 LiteralText,TRACKS,FAIXAS
-LiteralText,TRADE,NEGOCIAR
+LiteralText,Trade,Negociar
 LiteralText,transform to,se transformar em
 LiteralText,transients,temporários
 LiteralText,TRANSIENTS,TEMPORÁRIOS
@@ -3759,15 +3926,16 @@ LiteralText,trapped,armadilhado
 LiteralText,TRAPPED,ARMADILHADO
 LiteralText,trapped container,recipiente armadilhado
 LiteralText,trapped door,porta armadilhada
-LiteralText,TRIGGER,ATIVAR
+LiteralText,Trigger,Ativar
 LiteralText,trigger once,ativar uma vez
 LiteralText,trigger unlimited times,ativar infinitas vezes
 LiteralText,truth,verdade
-LiteralText,TUNNEL,TÚNEL
+LiteralText,Tunnel,Túnel
 LiteralText,Tunnel which direction?,Fazer túnel em que direção?
-LiteralText,TURN-BASED,EM TURNOS
+LiteralText,Turn-based,Em turnos
 LiteralText,turns,turnos
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,Digite qualquer palavra ou frase para gerar uma semente de masmorra aleatória.
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,Digite qualquer palavra ou frase para gerar uma semente de masmorra aleatória.
 LiteralText,unable to load,não foi possível carregar
 LiteralText,unafflict,desaflige
 LiteralText,UNDEAD,MORTO-VIVO
@@ -3775,16 +3943,20 @@ LiteralText,Undo,Desfazer
 LiteralText,unidentified items,itens não identificados
 LiteralText,unique,único
 LiteralText,UNIQUES,ÚNICOS
-LiteralText,UNLOCK,DESTRAVAR
+LiteralText,unknown effects,
+LiteralText,Unlock,Destravar
 LiteralText,unlock door or container,destravar porta ou recipiente
-LiteralText,UNLOCKED,DESTRAVADO
+LiteralText,Unlocked,Destravado
 LiteralText,unpolymorph,despolimorfa
 LiteralText,unpunish,tira a punição
 LiteralText,unskilled,inexperiente
 LiteralText,UNSKILLED,INEXPERIENTE
 LiteralText,unstuck,desprender
-LiteralText,UNTRAP,DESARMAR
+LiteralText,Untrap,Desarmar
 LiteralText,UNTRAPPED,DESARMADO
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,atualização disponível
 LiteralText,update cancelled,atualização cancelada
 LiteralText,update failed,a atualização falhou
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,ATUALIZAÇÕES
 LiteralText,upgrade to,quando encantado
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Usar uma semente significa que você não será elegível no Hall da Fama.
 LiteralText,Vanity,Vaidade
+LiteralText,Victory!,
 LiteralText,VIEW,VER
 LiteralText,visit shop,visitar loja
 LiteralText,visit shrine,visitar santuário
-LiteralText,Visit the website,Visite o website
 LiteralText,visit zoo,visitar zoologico
 LiteralText,VOID SPACE,ESPAÇO VAZIO
 LiteralText,volatile,volatil
 LiteralText,VOLATILES,VOLÁTEIS
 LiteralText,vomit nutrition,vomitar
 LiteralText,vulnerable to,vulnerável a
-LiteralText,WAIT,ESPERAR
+LiteralText,Wait,Esperar
 LiteralText,Wait how many turns?,Esperar quantos turnos?
-LiteralText,warping,deformar
-LiteralText,WARPING,DEFORMANDO
+LiteralText,Warping,Deformando
 LiteralText,was killed,foi morto
 LiteralText,weakness to,fraco contra
 LiteralText,weight,peso
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,destruição
 LiteralText,WON'T EAT,NÃO COMERÁ
 LiteralText,WORKBENCH MATERIALS,MATERIAIS DE BANCADA
 LiteralText,World,Mundo
-LiteralText,WORLD,MUNDO
 LiteralText,WRONG WAY,CAMINHO ERRADO
 LiteralText,"You are playing as anonymous, please register!","Você está jogando como anônimo, por favor registre-se!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Você precisará PROCURAR por portas secretas usando o botão com um OLHO.
 LiteralText,Your current movement and action speed in squares per second.,Sua velocidade de movimento atual e ações em quadrados por segundos.
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,ZOOM
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,ZOOS
 LiteralText,zZz,zZz
 LocalityName,area,área
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,vegetal
 MaterialName,water,água
 MaterialName,wax,cera
 MaterialName,wood,madeira
-MeasurementSystemName,imperial,imperial
-MeasurementSystemName,metric,métrico
+MeasurementSystemName,imperial units,imperial
+MeasurementSystemName,metric units,métrico
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Desça masmorras e cavernas geradas proceduralmente. Rejogabilidade infinita e recomendado para jogadores novatos.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Explore um vasto, proceduralmente gerado mapa que contém masmorras opcionais, encontros intrigantes e cenários elaborados."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Mapas desenhados a mão em uma aventura épica pelas superficie. Tire uma folga dos confinametos das masmorras e embarque nessa aventura!
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Salas e segredos interessantes te esperam, mas não pense em parar; você precisa descer ou morrer. Baseado na geração de mapa de Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Modo livre para experimentar as mecânicas do Pathos. Jogue com cada item, armadilha e funções das masmorra num mapa simples de duas salas."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Alguma notícia da superfície? Eu estou aqui embaixo já faz tanto tempo que eu sinto falta da luz do sol e do clima.
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Você sabia que metade do que os mercadores vendem é coletado de corpos de aventureiros como você?
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Todos estão falando da possibilidade de uma invasão orc, mas eu não acredito que isso aconteceria nem um milhão de anos!."
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Sabe, eu costumava ser um aventureiro como você... Talvez você devesse buscar um emprego fixo? Afinal, *aventureiro* é um termo que pode ser usado como sinônimo de sem-teto desempregado."
 ModuleName,Dhak Legacy,Legado Dhak
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Codex Nethack
+ModuleName,NetHack Codex,Codex NetHack
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Modo Caixa de Areia
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,Abismo
 ModuleTerm,Ambush,Emboscada
 ModuleTerm,Ant Cave,Caverna das Formigas
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,escadaria de argila para cima
 PortalName,jade ladder down,escada de jade para baixo
 PortalName,jade ladder up,escada de jade para cima
 PortalName,rift,fenda
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,escadaria de pedra para baixo
 PortalName,stone staircase up,escadaria de pedra para cima
 PortalName,transportal,transportalização
 PortalName,wooden ladder down,escada de madeira para baixo
 PortalName,wooden ladder up,escada de madeira para cima
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,Um escudo cintilante rodeia seu corpo e ajuda na sua defesa.
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.","Coberto por uma camada escorregadia e oleosa, você desliza por entre apertos e a mandíbulas."
-PropertyDescription,Control when and where you teleport.,Controla quando e onde você teleporta.
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,Cego em ira você ataca aliados e inimigos sem pensar duas vezes.
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.",Seus pontos de atributo são fixos por isso não podem diminuir mas também não podem aumentar.
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,Você é afligido por uma doença terrível com sintomas estranhos e tem que reprimir o impulso de vomitar.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,Lhe avisa com antecedência da presença de monstros e seus níveis de ameaça.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.","Você está dormindo, descansando calmamente. Numa masmorra cheia de monstros."
+PropertyDescription,Assess the number of charges in an item when you pick it up.,Você afere a quantidade de cargas de um item simplesmente pegando-o.
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,Controla quando e onde você teleporta.
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.","Coberto por uma camada escorregadia e oleosa, você desliza por entre apertos e a mandíbulas."
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.","Você é consumido pelo impulso de comer, consciente que nunca estará saciado."
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.",Cego em ira você ataca aliados e inimigos sem pensar duas vezes.
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,Sua percepção visual está distorcida enquanto sua mente transforma itens e entidades normais em formas absurdas e pesadelos.
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,Melhora sua visão para que você veja criaturas que antes eram invisíveis.
-PropertyDescription,Fainting from lack of food.,Desmaiando por falta de alimentação.
-PropertyDescription,Fly above the ground to avoid many types of traps.,Voe acima do chão para evitar vários tipos de armadilhas.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,"Atrapalhado, você derruba sua arma e cai pelos degraus."
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,Isso é um desafio à gravidade e é útil para evitar vários tipos de armadilhas. Se apenas você alcançasse o chão ao mesmo tempo.
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",Voe acima do chão para evitar vários tipos de armadilhas.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Feixes e encarões são refletidos de volta ao arremessador.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Lhe avisa com antecedência da presença de monstros e seus níveis de ameaça.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,Dominado pelo terror você não consegue atacar e portanto deve fugir.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Nesse estado de intoxicação alcoólica, a sua confiança maluca só é superada pelo seu senso de julgamento de um bêbado."
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Movendo-se quietamente pela masmorra você pode se esgueirar por monstros adormecidos.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Lhe impede de ser polimorfizado mas também lhe impede de voltar a sua forma natural.
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",Dominado pelo terror você não consegue atacar e portanto deve fugir.
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.",Seu corpo se torna duro e rígido quase como se estivesse se transformando em pedra. Todo movimento é difícil e você se sente quebradiço como se o próximo golpe fosse lhe despedaçar.
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,A prática sem culpa de comer carne e órgãos de seres da sua própria raça.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,"Sua percepção e consciência são aumentados, você pode achar portas secretas e armadilhas sem nenhum esforço."
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,Esse impedimento de visão faz com que você só veja de muito perto.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",Você faz com que tudo ao seu redor se torne agressão e violência. Até entidades normalmente pacíficas irão atacar umas as outras. Tanto útil quanto perigosa essa propriedade deve ser usada com cuidado. Você também sente que seus níveis de nutrição estão se esgotando por causa dessa propriedade.
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Esse aumento de velocidade lhe permite mover-se e atacar com maior frequência.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,Sua mera presença enfurece todos na masmorra.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,Desmaiando por falta de alimentação.
+PropertyDescription,Move objects without physical contact through the power of your mind.,Use o poder da sua mente para mexer objetos sem fazer contato físico.
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",Você se move num silêncio misterioso e não consegue proferir nem sequer uma sílaba.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",Movendo-se quietamente pela masmorra você pode se esgueirar por monstros adormecidos.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.",Seus músculos ficam presos e lhe deixam imóvel e sem defesa.
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","Seu corpo está entre planos e isso significa que você pode atravessar paredes, portas e pedregulhos sem esforço."
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",Suas pernas se sentem como molas fortes prontas para saltar na ação e sobre grandes distâncias.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.",Lhe impede de ser polimorfizado mas também lhe impede de voltar a sua forma natural.
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,Um profundo impedimento de audição corta sua relação com o mundo audível.
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Sua mente está protegida contra enganações, truques e mentiras."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Lhe protege de efeitos que causam lentidão, paralisia ou restrição de movimento."
-PropertyDescription,Recover mana at an increased rate.,Recupera mana mais rápido.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,Isso é uma renovação do seu corpo através de cura rápida e crescimento de membros amputados. Seu metabolismo aumenta grandemente e você precisa de mais comida do que o normal.
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Recupera mana mais rápido.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Essa redução de velocidade faz com que você se mova e ataque com menor frequência.
+PropertyDescription,Resilient to all forms of natural and magical illness.,"Você está resistente e não pode ser afetado por qualquer tipo de doença, seja ela natural ou mágica."
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,Lhe revive para metade da sua saúde total quando você morre a custo de um ponto de constituição.
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Repentinamente você cairá no sono até que acorde ou seja acordado.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","Teletransporte transporta seu personagem pelo nível de masmorra em que ele se encontra. Quando descontrolado, esse é um evento aleatório que adiciona um grau de imprevisibilidade à sua jornada. Teleporte controlado lhe permite selecionar seu destino no mapa."
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,A prática sem culpa de comer carne e órgãos de seres da sua própria raça.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,Lhe permite detectar a presença e localização de mentes mas apenas quando você não consegue ver.
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Faz com que sua imagem apareça não bem onde você realmente está. Para oponentes sensíveis isso faz com que eles tenham dificuldade em lhe atacar. Efeitos mágicos como feixes e pancadas tem uma chance reduzida de acertar você.
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Esse aumento de velocidade lhe permite mover-se e atacar com maior frequência.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Esse impedimento de visão faz com que você só veja de muito perto.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Isso é um desafio à gravidade e é útil para evitar vários tipos de armadilhas. Se apenas você alcançasse o chão ao mesmo tempo.
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,Isso é uma renovação do seu corpo através de cura rápida e crescimento de membros amputados. Seu metabolismo aumenta grandemente e você precisa de mais comida do que o normal.
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,Nesse estado você não pode ser visto. Você se move com uma leve distorção da luz notável apenas quando você se aproxima.
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,Um profundo impedimento de audição corta sua relação com o mundo audível.
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Essa redução de velocidade faz com que você se mova e ataque com menor frequência.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,Essa visão especial lhe permite ver o calor corporal de entidades nas áreas escuras da masmorra.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","Transforma em outra entidade com todas as vantagens e desvantagens consequentes. Por exemplo, entidades podem não ter mãos mas podem voar e soltar feixes de energia"
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,Use o poder da sua mente para mexer objetos sem fazer contato físico.
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,Sua percepção visual está distorcida enquanto sua mente transforma itens e entidades normais em formas absurdas e pesadelos.
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,Quando confuso você terá problemas em tomar decisões. Você pode mover-se ou atacar numa direção indesejada e também não pode lançar feitiços. Quando estiver lendo pergaminhos você pode pronunciar erroneamente as palavras e causar efeitos diferente dos esperados. É impossível focar tempo suficiente para estudar um livro.
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","Quando atordoado você não consegue andar em linha reta ou realizar qualquer tarefa de alto nível, como quando você está confuso."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Você é afligido por uma doença terrível com sintomas estranhos e tem que reprimir o impulso de vomitar.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Você está dormindo, descansando calmamente. Numa masmorra cheia de monstros."
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Você é consumido pelo impulso de comer, consciente que nunca estará saciado."
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,"Você está resistente e não pode ser afetado por qualquer tipo de doença, seja ela natural ou mágica."
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Você está bem equipado para cavar túneis e criar seus próprios caminhos através da masmorra.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,Você afere a quantidade de cargas de um item simplesmente pegando-o.
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,Você pode se transformar na entidade de sua escolha quando tiver controle de polimorfia. Esse controle é limitado a entidades que você já matou. Forçar uma transformação custa seu nível de nutrição.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,Você faz com que tudo ao seu redor se torne agressão e violência. Até entidades normalmente pacíficas irão atacar umas as outras. Tanto útil quanto perigosa essa propriedade deve ser usada com cuidado. Você também sente que seus níveis de nutrição estão se esgotando por causa dessa propriedade.
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,Você se sente instável como se pudesse ser consumido com fúria a qualquer momento.
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Você toma ciência das entidades que estão em outros lugares da masmorra.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,Você aprende o estado divino de um item simplesmente pegando-o.
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Você se move num silêncio misterioso e não consegue proferir nem sequer uma sílaba.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,Seus pontos de atributo são fixos por isso não podem diminuir mas também não podem aumentar.
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,Seu corpo se torna duro e rígido quase como se estivesse se transformando em pedra. Todo movimento é difícil e você se sente quebradiço como se o próximo golpe fosse lhe despedaçar.
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","Seu corpo está entre planos e isso significa que você pode atravessar paredes, portas e pedregulhos sem esforço."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Suas pernas se sentem como molas fortes prontas para saltar na ação e sobre grandes distâncias.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Sua mera presença enfurece todos na masmorra.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Seu metabolismo se torna lento e você precisa de bem menos nutrição.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Sua mente está protegida contra enganações, truques e mentiras."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,Seus músculos ficam presos e lhe deixam imóvel e sem defesa.
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,"Sua percepção e consciência são aumentados, você pode achar portas secretas e armadilhas sem nenhum esforço."
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,Sua posição é incerta e com um pouco de esforço você pode desaparecer e reaparecer.
+PropertyDescription,Sense the divine status of an item simply by picking it up.,Você aprende o estado divino de um item simplesmente pegando-o.
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,Lhe permite detectar a presença e localização de mentes mas apenas quando você não consegue ver.
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.",Quando confuso você terá problemas em tomar decisões. Você pode mover-se ou atacar numa direção indesejada e também não pode lançar feitiços. Quando estiver lendo pergaminhos você pode pronunciar erroneamente as palavras e causar efeitos diferente dos esperados. É impossível focar tempo suficiente para estudar um livro.
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"Quando atordoado você não consegue andar em linha reta ou realizar qualquer tarefa de alto nível, como quando você está confuso."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.",Um escudo cintilante rodeia seu corpo e ajuda na sua defesa.
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,Seu metabolismo se torna lento e você precisa de bem menos nutrição.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,Essa visão especial lhe permite ver o calor corporal de entidades nas áreas escuras da masmorra.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.","Nesse estado de intoxicação alcoólica, a sua confiança maluca só é superada pelo seu senso de julgamento de um bêbado."
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,Repentinamente você cairá no sono até que acorde ou seja acordado.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",Você pode se transformar na entidade de sua escolha quando tiver controle de polimorfia. Esse controle é limitado a entidades que você já matou. Forçar uma transformação custa seu nível de nutrição.
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","Transforma em outra entidade com todas as vantagens e desvantagens consequentes. Por exemplo, entidades podem não ter mãos mas podem voar e soltar feixes de energia"
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.","Teletransporte transporta seu personagem pelo nível de masmorra em que ele se encontra. Quando descontrolado, esse é um evento aleatório que adiciona um grau de imprevisibilidade à sua jornada. Teleporte controlado lhe permite selecionar seu destino no mapa."
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Você toma ciência das entidades que estão em outros lugares da masmorra.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,"Atrapalhado, você derruba sua arma e cai pelos degraus."
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",Nesse estado você não pode ser visto. Você se move com uma leve distorção da luz notável apenas quando você se aproxima.
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,Você se sente instável como se pudesse ser consumido com fúria a qualquer momento.
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,Sua posição é incerta e com um pouco de esforço você pode desaparecer e reaparecer.
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",Faz com que sua imagem apareça não bem onde você realmente está. Para oponentes sensíveis isso faz com que eles tenham dificuldade em lhe atacar. Efeitos mágicos como feixes e pancadas tem uma chance reduzida de acertar você.
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,Você está bem equipado para cavar túneis e criar seus próprios caminhos através da masmorra.
 PropertyName,aggravation,enfurecimento
 PropertyName,appraisal,apreciação
 PropertyName,beatitude,beatitude
@@ -4563,6 +4739,7 @@ SonicName,explosion,explosão
 SonicName,fizzle,chiado
 SonicName,flash,clarão
 SonicName,flute,flauta
+SonicName,focus tap,
 SonicName,food,comida
 SonicName,footsteps,passos
 SonicName,force,força
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,viajou
 TraversalPresentName,ascend,subir
 TraversalPresentName,descend,descer
 TraversalPresentName,travel,viajar
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,chama
 VolatileName,blood,sangue
 VolatileName,electricity,eletricidade

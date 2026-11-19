@@ -1,59 +1,64 @@
 # Commands; 命令
-. Single tap/left click or arrow keys to move and attack.; 轻按，左键或者方向键来移动和攻击。
+. Single tap/left click or direction keys to move and attack.; 轻按，左键或者方向键来移动和攻击。
 . Long press/right click to operate doors/traps.; 长按或者右键来操作门/陷阱以及装备/使用背包或者地板上的道具。
 . Double tap to pick up items, traverse stairs or wait one move.; 双击来捡起地上的道具，在楼层间移动或者等待一个回合。
 /
-- . | wait one turn (also double tap on self); . | 等待一回合（也可以双击自身来完成）
-- , | pick up the top item on the floor; , | 捡起地上的第一个道具
-- A | toggle log (click the log to expand/collapse); A | 打开/或关闭日志 (点击日志来展开/隐藏)
-- B | move down-left; B | 向左下移动
-- C | toggle character; C | 切换玩家
-- D | re-use last item; D | 重新使用上一个道具
-- E | mount or dismount your steed; E | 骑乘或离开你的坐骑
-- F | toggle floor; F | 调整楼层
-- G | re-equip last item; G | 重新装备最后一个物品
-- H | move left; H | 向左移动
-- I | toggle inventory; I | 打开/关闭背包
-- J | move down; J | 向下移动
-- K | move up; K | 向上移动
-- L | move right; L | 向右移动
-- M | toggle map; M | 打开/关闭地图
-- N | move down-right; N | 向右下方移动
-- O | hide from view; O | 躲藏进阴影（需要隐藏天赋）
-- P | polymorph at will; P | 自由变身（如果你能那么做）
-- Q | save or quit this game; Q | 保存或者放弃游戏
-- R | for rest mode to recover life and mana; R | 进入休息模式来恢复生命和魔法
-- S | for search mode for secret doors and traps; S | 进入搜索模式来搜索暗门和陷阱
-- T | teleport at will; T | 自由传送（如果你能那么做）
-- U | move up-right; U | 向右上移动
-- V | kick in a direction; V | 朝某个方向踢
-- W | jump in a direction (if you have the talent); W | 朝某个方向跳跃（如果你有跳跃天赋）
-- X | re-cast last spell; X | 重新施放上一个法术
-- Y | move up-left; Y | 向左上移动
-- Z | toggle cast spells (read books to learn spells); Z | 打开/关闭施法菜单（通过读魔法书来学习魔法）
-- ' | blink in a direction; ' | 向某方向闪现
-- ;; | telekinesis in a direction; ;; | 念力控制一直线上的单位
-- > | descend stairs; > | 下楼
-- < | ascend stairs; < | 上楼
-- / | toggle chat in multiplayer; / | 显示/隐藏多人游戏中的聊天功能
-- \ | view knowledge panel; \ | 浏览知识面板
-- + | zoom in; + | 放大
-- - | zoom out; - | 缩小
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | 左侧快捷动作(使用shift+数字 切换动作)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | 右侧快捷动作(使用shift+数字 切换动作)
-- INSERT | toggle tunnelling mode; INSERT | 切換至創造通道模式
-- SHIFT + arrow | fire a missile without moving; SHIFT + 方向键 | 原地进行远程攻击
-- CTRL + arrow | interact with the target without moving; Ctrl + 方向键 | 原地与目标进行交互
-- ENTER | select the top item on the floor; ENTER | 选择地板上的第一个道具
-- ESCAPE | hides open panels and clears your target; ESCAPE | 关闭菜单面板，取消目标选择
+- $Left$ | move left; $Left$ | 向左移动
+- $Right$ | move right; $Right$ | 向右移动
+- $Up$ | move up; $Up$ | 向上移动
+- $Down$ | move down; $Down$ | 向下移动
+- $UpLeft$ | move up-left; $UpLeft$ | 向左上移动
+- $UpRight$ | move up-right; $UpRight$ | 向右上移动
+- $DownLeft$ | move down-left; $DownLeft$ | 向左下移动
+- $DownRight$ | move down-right; $DownRight$ | 向右下方移动
+- SHIFT + direction | fire a missile without moving; SHIFT + 方向键 | 原地进行远程攻击
+- CTRL + direction | interact with the target without moving; Ctrl + 方向键 | 原地与目标进行交互
+- $Select$ | select the top item on the floor; $Select$ | 选择地板上的第一个道具
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | 关闭菜单面板，取消目标选择
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | 关闭打开的对话窗口并解除目标选中
 - SPACE | toggle real-time or turn-based; SPACE | 切换实时模式
-- PgUp | switch to previous character; PgUp | 切换上一个角色
-- PgDown | switch to next character; PgDown | 切换下一个角色
-- ALT | show labels; ALT | 显示对象标签
-- F1 | show this help; F1 | 显示帮助
-- F6 | quick save; F6 | 快速存档
-- F10 | open side menu; F10 | 打开侧边栏
+- CTRL/ALT | show labels; CTRL/ALT | 显示对象标签
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | 捡起地上的第一个道具
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | 等待一回合（也可以双击自身来完成）
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | 进入休息模式来恢复生命和魔法
+- $Search$ | for search mode for secret doors and traps; $Search$ | 进入搜索模式来搜索暗门和陷阱
+- $Descend$ | descend stairs; $Descend$ | 下楼
+- $Ascend$ | ascend stairs; $Ascend$ | 上楼
+- $Character$ | toggle character; $Character$ | 切换玩家
+- $Inventory$ | toggle inventory; $Inventory$ | 打开/关闭背包
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | 打开/关闭施法菜单（通过读魔法书来学习魔法）
+- $Floor$ | toggle floor; $Floor$ | 调整楼层
+- $Map$ | toggle map; $Map$ | 打开/关闭地图
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | 打开/或关闭日志 (点击日志来展开/隐藏)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | 浏览知识面板
+- $Chat$ | toggle chat in multiplayer; $Chat$ | 显示/隐藏多人游戏中的聊天功能
+- $Kick$ | kick in a direction; $Kick$ | 朝某个方向踢
+- $Mount$ | mount or dismount your steed; $Mount$ | 骑乘或离开你的坐骑
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | 朝某个方向跳跃（如果你有跳跃天赋）
+- $Slide$ | slide in a direction; $Slide$ | 朝一个方向滑行
+- $Blink$ | blink in a direction; $Blink$ | 向某方向闪现
+- $Teleport$ | teleport at will; $Teleport$ | 自由传送（如果你能那么做）
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | 念力控制一直线上的单位
+- $Polymorph$ | polymorph at will; $Polymorph$ | 自由变身（如果你能那么做）
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | 切換至創造通道模式
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | 打开侧边栏
+- $QuickSave$ | quick save; $QuickSave$ | 快速存档
+- $Help$ | show this help; $Help$ | 显示帮助
+- $Quit$ | save or quit this game; $Quit$ | 保存或者放弃游戏
+- $ZoomIn$ | zoom in; $ZoomIn$ | 放大
+- $ZoomOut$ | zoom out; $ZoomOut$ | 缩小
+- $ActionReuse$ | re-use last item; $ActionReuse$ | 重新使用上一个道具
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | 重新装备最后一个物品
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | 重新施放上一个法术
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down; $NavigateDown$ | 自动寻路到下楼处
+- $NavigateUp$ | navigate to the way up; $NavigateUp$ | 自动寻路到上楼处
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | 切换上一个角色
+- $SwitchDown$ | switch to next character; $SwitchDown$ | 切换下一个角色
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | 左侧快捷动作(使用shift+数字 切换动作)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | 右侧快捷动作(使用shift+数字 切换动作)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | 切换全屏和窗口模式（Window桌面版有效）
 
 # General mechanics; 一般机制
@@ -62,7 +67,7 @@
 . The aim of Pathos is to survive all the way to level 40 before escaping back at level 1.; Pathos的游戏目标是活到40层，然后逃回1层。
 . Pathos is turn-based so take your time and consider your options when things get serious.; Pathos是回合制的，所以当事情变得麻烦起来的时候你可以慢慢思考该怎么办。
 . Each class starts with different items, skills and abilities.; 每个职业的初始道具，专精和天赋都不一样。
-. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 药剂、卷轴、戒指和部分防具的效果（外形）会在游戏开始时随机设置。这意味着不同游戏之间的知识并不通用。
+. The effects of potions, scrolls, rings, wands and some armour are shuffled at the start of each adventure.; 每次冒险开始时，药剂、卷轴、戒指、魔杖和部分护甲的效果都会被打乱。这意味着不同游戏之间的知识并不通用。
 . For example, the orange potion will not have a consistent effect across different adventures.; 比如说，橙色药剂的效果在不同的冒险中会不一样。
 
 # Combat; 战斗
@@ -303,7 +308,7 @@
 . Items can be scrapped into their raw essence and base material on a workbench.; 在工作台上你可以将道具分解为精华和原料。
 . Essence is the building block of creation and can be extracted from both mundane and magical items.; 精华是制造道具的必需品，可以通过分解普通道具和魔法道具得到。
 . New items can be crafted on a workbench using enough of the base material and essence.; 如果拥有足够多的精华和原料，你可以制造新的道具。但是，你只能制造出你找到过的道具。
-. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 工作台在被创建时会附带一些原料和精华。
+. Workbenches are generated with leftover materials (0 - 10 essence and six random materials 10 - 200).; 工作台生成时会附带一些剩余材料（0 到 10 点精华，以及六种数量在 10 到 200 之间的随机材料）。
 . Materials are not transferable between workbenches.; 原料无法在工作台之间转移。
 /
 . The crafting skill influences how much material you gain when scrapping.; 制作专精会影响你分解道具时获得的原料和精华。
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + 属性调整值 x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + 已获得天赋数 x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + 已获得抵抗数 x {Multiplier}
+` + Achievements² x {Multiplier}; + 成就数² × {Multiplier}
 ` + Total Inventory Worth (in gold); + 总背包价值 (以金币为单位)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; 总背包价值受到限制，最高不会超过其他得分总和。
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; 你可能会发现你的角色并不能脱身，很快又会死掉。
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; 你可以无限复活，但是你得到的声望会被清零。
 . Fame achieved subsequent to your resurrection will contribute to your score.; 在你角色复活之后得到的声望会计入你的分数。
-. This is similar to the 'explorer mode' from the original Nethack.; 这个功能和原版Nethack中的探索者模式很像。
+. This is similar to the 'explorer mode' from the original NetHack.; 这个功能和原版NetHack中的探索者模式很像。
 
 # Multiplayer; 多人模式
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;多人模式由Invention平台的图像telnet技术开发。
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; 这是一个作弊模式，目的是让你更快了解Pathos的秘密。
 . Any adventures in this mode will not be tracked in the hall of fame.; 任何在该模式下的冒险不会进入名人堂。
 /
-- ` | open master console (more commands); ` | 打开大师模式控制台 (更多命令)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | 在区域内制造黑暗
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | 产生一个随机的吞噬者并被吞入
-- shift + F | all adjacent enemies are charmed; shift + F | 魅惑所有相邻的敌人
-- shift + G | gain 1000 gold; shift + G | 获得1000金币
-- shift + I | identify all items on the floor; shift + I | 鉴定地上的所有道具
-- shift + W | jump at will; shift + W | 随意跳跃
-- shift + D | light this zone; shift + D | 点亮该区域
-- shift + M | reveal the entire map; shift + M | 揭示完整地图
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | 揭示所有楼层的完整地图
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | 改变地图（脱离时的地图变化）
-- shift + P | polymorph into any entity; shift + P | 变成任何单位
-- shift + T | teleport to a target zone; shift + T | 传送到目标区域
-- shift + Z | learn all spells; shift + Z | 学会所有咒语
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | 关闭/开启自动使用模式 (当你走到一个格子上时，你会使用那里的所有道具)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | 前进到上一层（就算不在楼梯上也可以用）
-- > | descend to the next dungeon level (even when not on a staircase); > | 前进到下一层（就算不在楼梯上也可以用）
-- F5 | refresh the screen; F5 | 刷新屏幕
-- F9 | quick load; F9 | 快速读档
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | 打开大师模式控制台 (更多命令)
+- $MasterLightness$ | light this zone; $MasterLightness$ | 点亮该区域
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | 在区域内制造黑暗
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | 产生一个随机的吞噬者并被吞入
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | 魅惑所有相邻的敌人
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | 获得1000金币
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | 鉴定地上的所有道具
+- $MasterJump$ | jump at will; $MasterJump$ | 随意跳跃
+- $MasterBlink$ | blink at will; $MasterBlink$ | 随意闪现
+- $MasterSlide$ | slide at will; $MasterSlide$ | 随意滑行
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | 随意使用念力
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | 揭示完整地图
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | 揭示所有楼层的完整地图
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | 改变地图（脱离时的地图变化）
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | 变成任何单位
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | 传送到目标区域
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | 传送到最上层
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | 传送到最深层
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | 学会所有咒语
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | 关闭/开启自动使用模式 (当你走到一个格子上时，你会使用那里的所有道具)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | 前进到上一层（就算不在楼梯上也可以用）
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | 前进到下一层（就算不在楼梯上也可以用）
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | 刷新屏幕
+- $QuickLoad$ | quick load; $QuickLoad$ | 快速读档
 /
 . There are additional manipulations built into the character panel and contextual help.; 在角色面板和别的地方还有一些提示。

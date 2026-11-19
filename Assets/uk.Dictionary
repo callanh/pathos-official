@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,По твоїм жилам тече смертельна отрута.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,По твоїм жилам тече смертельна отрута.
 AfflictionDescription,Something deeply unsettling is happening... down there.,"Відбувається щось дуже неприємне... отам, унизу."
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,У вас у шлунку немовби щось гризе.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Ця хвороба викликає запалення мозку та передається зараженими тваринами.
@@ -12,7 +50,7 @@ AfflictionName,rabies,сказ
 AfflictionName,reflux,рефлюкс
 AfflictionName,sliming,сходить слизом
 AfflictionName,worms,глисти
-AnatomyAbsenceText,HORNS,
+AnatomyAbsenceText,HORNS,РОГИ
 AnatomyAbsenceText,MINDLESS,НЕ РОЗУМНИЙ
 AnatomyAbsenceText,NO BLOOD,БЕЗКРОВНИЙ
 AnatomyAbsenceText,NO EARS,БЕЗ ВУХ
@@ -32,7 +70,7 @@ AnatomyName,eyes,очі
 AnatomyName,feet,ноги
 AnatomyName,hands,руки
 AnatomyName,head,голова
-AnatomyName,horns,
+AnatomyName,horns,роги
 AnatomyName,limbs,кінцівки
 AnatomyName,mind,розум
 AnatomyName,mounted,верховий
@@ -43,7 +81,7 @@ AppearanceDescription,A short but sturdy looking coat of mithril armour.,"Кор
 AppearanceDescription,A slender and delicate looking coat of mithril armour.,Тонкий і делікатний міфріловий обладунок.
 AppearanceDescription,A slender and glossy looking coat of mithril armour.,Тонкий глянсовий міфріловий обладунок.
 AppearanceDescription,This classic wizard accessory is a pointed hat decorated with moons and stars.,"Класичний аксесуар чарівника: загострений капелюх, прикрашений місяцем і зірками."
-AppearanceName,adamantine slug,
+AppearanceName,adamantine slug,адамантитова куля
 AppearanceName,adamantine staff,адамантитовий посох
 AppearanceName,agate ring,агатова каблучка
 AppearanceName,aluminium wand,алюмінієва паличка
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,якісний міфріловий облад�
 AppearanceName,fizzy potion,пінне зілля
 AppearanceName,flute,флейта
 AppearanceName,forked polearm,спис-вила
+AppearanceName,frayed cloth,шматок сукна
 AppearanceName,fur boots,ботинки на міху
 AppearanceName,fuzzy book,пухнаста книга
 AppearanceName,glass orb,скляний шар
@@ -197,12 +236,12 @@ AppearanceName,large round shield,великий круглий щит
 AppearanceName,leather apron,шкіряний фартух
 AppearanceName,leather book,шкіряна книжка
 AppearanceName,leather hat,шкіряна шляпа
-AppearanceName,light blue book,голуба книжка
-AppearanceName,light brown book,свштло-коричнева книжка
+AppearanceName,light blue book,блакитна книжка
+AppearanceName,light brown book,світло-коричнева книжка
 AppearanceName,light green book,світло-зелена книжка
 AppearanceName,long barrelled gun,довгоствольний пістолет
 AppearanceName,long book,довга книга
-AppearanceName,long bow,довний лук
+AppearanceName,long bow,довгий лук
 AppearanceName,long gun,довгий пістолет
 AppearanceName,long poleaxe,довгий полекс
 AppearanceName,long samurai sword,довгий самурайський меч
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,книжка
 AppearanceName,parchment book,пергаментна книжка
 AppearanceName,pearl earrings,сережки з перлинами
 AppearanceName,pearl ring,каблучка із перлиною
-AppearanceName,piece of cloth,шматок сукна
 AppearanceName,pink book,рожева книжка
 AppearanceName,pink potion,рожеве зілля
 AppearanceName,plaid book,картата книжка
@@ -433,14 +471,14 @@ AttributeBad,fragile,крихкий
 AttributeBad,repulsive,відштовхуючий
 AttributeBad,stupid,тупий
 AttributeBad,weak,слабкий
-AttributeCode,CHA,ЧАР
+AttributeCode,CHA,ХАР
 AttributeCode,CON,СТА
 AttributeCode,DEX,СПР
 AttributeCode,INT,ІНТ
 AttributeCode,STR,СИЛ
 AttributeCode,WIS,МУД
 AttributeDescription,Agility and hand-eye coordination affects your defence as well as skill with ranged weapons.,Спритність і координація рухів впливають на ваш захист та володіння метальною зброєю.
-AttributeDescription,Bulk muscle size and condition affects the damage you inflict as well as carrying capacity.,"Об’єм і тренованість м'язів впливають на пошкодження, що ви наносите, і вагу, що ви можете нести."
+AttributeDescription,Bulk muscle size and condition affects the damage you inflict as well as carrying capacity.,"Об’єм і тренованість м'язів впливають на шкоду, яку ви наносите, і на вагу, яку можете нести."
 AttributeDescription,Capacity for logic and self-awareness affects how much you learn from new experiences.,"Логіка і самоусвідомлення впливають на те, наскільки пізнавальний для вас новий досвід."
 AttributeDescription,Common sense and understanding of the world affects your mana potential and recovery rate.,Здоровий глузд і розуміння світу впливають на ваш магічний потенціал і швидкість відновлення мани.
 AttributeDescription,Core fitness and endurance affects your life potential and recovery rate.,Тренованість і витривалість тіла впливають на вашу життєву силу і швидкість одужання.
@@ -471,7 +509,7 @@ BeamName,acid,кислоти
 BeamName,cold,холоду
 BeamName,death,смерті
 BeamName,digging,копання
-BeamName,disintegration,дезінтеграції
+BeamName,disintegration,дезинтеграції
 BeamName,fire,вогню
 BeamName,lightning,блискавки
 BeamName,magic missile,магічної стріли
@@ -505,7 +543,7 @@ BoonDescription,Learn the name of one random unknown item.,Взнати назв
 BoonDescription,Make an imitation copy of an item.,Робить імітаційну копію предмета.
 BoonDescription,Partially recharge a spent item.,Частково перезарядити використану річ.
 BoonDescription,Place a curse on one equipped or carried item.,Накласти прокляття на одну надіту або річ в інвентарі.
-BoonDescription,Reanimate a corpse as a loyal revenant.,"Реанімувати труп, що вірно служитиме як повсталий"
+BoonDescription,Reanimate a corpse as a loyal revenant.,"Реанімувати труп, що вірно служитиме як привид"
 BoonDescription,Remove all magic from an item.,Прибрати всі чари з речі.
 BoonDescription,Remove the curse on one equipped or carried item.,Зняти прокляття з одної речі на собі або в інвентарі.
 BoonDescription,Rename an item for vanity and as a small protection against cancellation.,Перейменувати предмет задля понтів і невеличого захисту від відчарування.
@@ -549,8 +587,10 @@ BoonName,undead army,армія мерців
 BoonName,unicorn friend,друг-єдиноріг
 CalendarText,d MMMM yyyy,d дд MM yy
 CharacterName,Adebesi,Адебесі
+CharacterName,Akoya,Акоя
 CharacterName,Alista,Алиста
 CharacterName,Amaya,Амая
+CharacterName,Armax,Армакс
 CharacterName,Arnoken,Арнокен
 CharacterName,Arrom,Арром
 CharacterName,Atral,Атраль
@@ -561,6 +601,7 @@ CharacterName,Belietha,Белієта
 CharacterName,Bok,Бок
 CharacterName,Bolan,Болан
 CharacterName,Brouwer,Браулер
+CharacterName,Busko,Баско
 CharacterName,Cailie,Кайлі
 CharacterName,Capo,Капо
 CharacterName,Carthyre,Катерина
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Крепсал
 CharacterName,D'rey,Д’рей
 CharacterName,Damano,дама
 CharacterName,Daracy,Дерейсі
+CharacterName,Dastrne,Дастрн
 CharacterName,Davicohr,Давікоер
+CharacterName,Denier,Денаїр
+CharacterName,Derent,Дерент
 CharacterName,Donneller,Доннеллер
 CharacterName,Dug,Даг
 CharacterName,Elishmeli,Елішмелі
@@ -582,24 +626,31 @@ CharacterName,Enlan,Енлан
 CharacterName,Ericendrick,Ерікендрік
 CharacterName,Eybrinde,Ейбрінд
 CharacterName,Faraze,Фараз
+CharacterName,Farleen,Фарлін
 CharacterName,Fenlas,Фенлас
 CharacterName,Fenraymond,Фенреймонд
+CharacterName,Fizzit,Фізит
 CharacterName,Floki,Флокі
 CharacterName,Forro,Форро
 CharacterName,Franzia,Франчія
-CharacterName,Galday,Галдай
-CharacterName,Gasberg,Гасберг
-CharacterName,Gleichman,Глейхман
-CharacterName,Gmima,Гміма
-CharacterName,Gohu,Гоху
-CharacterName,Gomack,Гомак
-CharacterName,Grytt,Грітті
+CharacterName,Galday,Ґолдей
+CharacterName,Gasberg,Ґасберг
+CharacterName,Gleichman,Ґлейхмен
+CharacterName,Gmima,Ґміма
+CharacterName,Goggie,ҐоҐі
+CharacterName,Gohu,Ґоху
+CharacterName,Gomack,Ґомак
+CharacterName,Grytt,Ґрітт
 CharacterName,Haelom,Хейлом
 CharacterName,Haique,Хаік’ю
+CharacterName,Hal,Хал
+CharacterName,Hampte,Хампт
 CharacterName,Haquian,Хакіан
 CharacterName,Hendrick,Хендрік
 CharacterName,Hough,Хаф
+CharacterName,Hylatia,Галатія
 CharacterName,Illitasha,Ілліташа
+CharacterName,Iralna,Ірална
 CharacterName,Ishgood,Ішгуд
 CharacterName,Istophe,Історн
 CharacterName,Isylav,Ісілав
@@ -608,7 +659,9 @@ CharacterName,Javarl,Джаварл
 CharacterName,Jayenason,Джайєнасон
 CharacterName,Jeem,Джім
 CharacterName,Jessera,Джессера
+CharacterName,Jevard,Джевард
 CharacterName,Jonat,Джонат
+CharacterName,Karasque,Караск
 CharacterName,Karbri,Карбрі
 CharacterName,Kennold,Кеннолд
 CharacterName,Kevugo,Кевуго
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Лаграза
 CharacterName,Lanetwalz,Ланетвальз
 CharacterName,Lant,Лент
 CharacterName,Lesha,Льоша
+CharacterName,Liloquy,Лілокуи
 CharacterName,Luickean,Льюкеан
+CharacterName,Lunch,Ланч
 CharacterName,Lzay,Лзай
 CharacterName,Malasuth,Маласус
 CharacterName,Marisa,Марися
 CharacterName,Melchai,Мелчай
 CharacterName,Meloty,Мелоті
+CharacterName,Mili,Мілі
 CharacterName,Miller,Міллер
 CharacterName,Misteph,Містеф
+CharacterName,Mizra,Мізра
+CharacterName,Neeva,Неева
 CharacterName,Nichaeltoy,Нічєлтой
 CharacterName,Ninerma,Нієрма
 CharacterName,Ninhart,Нінхарт
 CharacterName,Ninny,Нінні
 CharacterName,Nodin,Нодін
 CharacterName,Norbant,Норбант
+CharacterName,Norvric,Норврік
 CharacterName,Okennwood,Окенвуд
 CharacterName,Ollac,Оллак
 CharacterName,Omdarro,Омдарро
 CharacterName,Orankin,Оранкін
 CharacterName,Oscae,Оскайє
+CharacterName,Ovira,Овіра
 CharacterName,Paltrick,Палтрік
 CharacterName,Pauwinner,Паувіннер
 CharacterName,Penevieve,Пеневь’єва
@@ -653,13 +713,17 @@ CharacterName,Quarah,Кварах
 CharacterName,Quibb,Квібб
 CharacterName,Quizchak,Квіжчак
 CharacterName,Quohnrupley,Квонраплі
+CharacterName,Rake,Рейк
 CharacterName,Rambrant,Рембрант
 CharacterName,Raugarr,Рогарр
 CharacterName,Razz,Разз
 CharacterName,Rebenna,Ребенна
+CharacterName,Relinsarn,Релінсарн
 CharacterName,Renorber,Ренорбер
 CharacterName,Rokiju,Рок’ю
 CharacterName,Rupley,Раплі
+CharacterName,Rytto,Ритто
+CharacterName,Samrae,Самрей
 CharacterName,Sarlia,Сарлія
 CharacterName,Shinaas,Шінаас
 CharacterName,Smither,Смізер
@@ -668,10 +732,13 @@ CharacterName,Stewite,Стювіт
 CharacterName,Sully,Саллі
 CharacterName,Talon,Талон
 CharacterName,Tanyacka,Таньячка
+CharacterName,Tempus,Темпус
 CharacterName,Thakuline,Такулін
 CharacterName,Threepo,Тріпо
 CharacterName,Timonen,Тімотен
+CharacterName,Toland,Толанд
 CharacterName,Trank,Тренк
+CharacterName,Uballon,Убалон
 CharacterName,Udfoot,Удфут
 CharacterName,Uffle,Аффл
 CharacterName,Ujopayne,Уджопайне
@@ -683,6 +750,7 @@ CharacterName,Vidar,Відар
 CharacterName,Vikethome,Вікетоме
 CharacterName,Viophie,Віофія
 CharacterName,Vorzian,Ворзіям
+CharacterName,Waldrin,Волдрін
 CharacterName,Wallison,Валлісон
 CharacterName,Waltis,Уолтіс
 CharacterName,Walzen,Вальзен
@@ -694,15 +762,18 @@ CharacterName,Xank,Ксанк
 CharacterName,Xantari,Ксантари
 CharacterName,Xarrung,Ксарруг
 CharacterName,Xiolet,Ксайолет
+CharacterName,Yahoa,Яхоа
 CharacterName,Yarromdee,Йарромді
 CharacterName,Yassage,Йассаж
 CharacterName,Yorque,Йорг
 CharacterName,Yral,Йрал
 CharacterName,Yuvaloren,Ювалорен
+CharacterName,Zarja,Зар'я
 CharacterName,Zean,Зіан
 CharacterName,Zerbarry,Зерберрі
 CharacterName,Zimn,Зімн
 CharacterName,Zonagan,Зонаган
+CharacterName,Zuki,Зукі
 CharacterName,Zultry,Зултрі
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Після багатьох років напруженого міркування ці віщуни готові піти у світ. Володіючи власним розумом наповну, вони здатні діяти застосовуючи грізну силу волі."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Доброзичливі доглядачі завжди бажають подати помічну руку слабким. Привчені розправлятися зі хворобами, вони не тільки призначені для допомоги, а й є зразками чистоти та гігієни. Вони повинні покладатися лише на постійних товаришів заради спільгого виживання."
@@ -737,7 +808,7 @@ ClassDescription,"Wilderness sentinels who understand the true balance of the un
 ClassName,barbarian//female,варварка
 ClassName,barbarian//male,варвар
 ClassName,barbarian//non-binary,варвар
-ClassName,bard//female,бард
+ClassName,bard//female,бардеса
 ClassName,bard//male,бард
 ClassName,bard//non-binary,бард
 ClassName,caveman//female,печерна людина
@@ -746,28 +817,28 @@ ClassName,caveman//non-binary,печерна людина
 ClassName,convict//female,злодійка
 ClassName,convict//male,злодій
 ClassName,convict//non-binary,злодій
-ClassName,druid//female,друїд
-ClassName,druid//male,друїдка
+ClassName,druid//female,друїдка
+ClassName,druid//male,друїд
 ClassName,druid//non-binary,друїд
 ClassName,explorer//female,дослідниця
 ClassName,explorer//male,дослідник
 ClassName,explorer//non-binary,дослідник
-ClassName,gladiator//female,гладіатор
-ClassName,gladiator//male,гладіаторка
+ClassName,gladiator//female,гладіаторка
+ClassName,gladiator//male,гладіатор
 ClassName,gladiator//non-binary,гладіатор
-ClassName,gunslinger//female,стрілець
-ClassName,gunslinger//male,стрілкиня
+ClassName,gunslinger//female,стрілкиня
+ClassName,gunslinger//male,стрілець
 ClassName,gunslinger//non-binary,стрілець
 ClassName,healer//female,цілителька
 ClassName,healer//male,цілитель
 ClassName,healer//non-binary,цілитель
-ClassName,hunter//female,мисливець
-ClassName,hunter//male,мисливчиня
+ClassName,hunter//female,мисливчиня
+ClassName,hunter//male,мисливець
 ClassName,hunter//non-binary,мисливець
-ClassName,jester//female,блазень
+ClassName,jester//female,блазнючка
 ClassName,jester//male,блазень
 ClassName,jester//non-binary,блазень
-ClassName,knight//female,лицар
+ClassName,knight//female,лицарка
 ClassName,knight//male,лицар
 ClassName,knight//non-binary,лицар
 ClassName,miner//female,шахтарка
@@ -779,26 +850,26 @@ ClassName,monk//non-binary,монах
 ClassName,mystic//female,містикиня
 ClassName,mystic//male,містик
 ClassName,mystic//non-binary,містик
-ClassName,necromancer//female,некромант
+ClassName,necromancer//female,некромантка
 ClassName,necromancer//male,некромант
 ClassName,necromancer//non-binary,некромант
 ClassName,ninja//female,ніндзя
 ClassName,ninja//male,ніндзя
 ClassName,ninja//non-binary,ніндзя
-ClassName,paladin//female,паладін
-ClassName,paladin//male,паладін
-ClassName,paladin//non-binary,паладін
+ClassName,paladin//female,паладинка
+ClassName,paladin//male,паладин
+ClassName,paladin//non-binary,паладин
 ClassName,pirate//female,піратка
 ClassName,pirate//male,пірат
 ClassName,pirate//non-binary,пірат
 ClassName,priest//female,священниця
 ClassName,priest//male,священик
 ClassName,priest//non-binary,священик
-ClassName,ranger//female,слідопит
+ClassName,ranger//female,слідопитка
 ClassName,ranger//male,слідопит
 ClassName,ranger//non-binary,слідопит
-ClassName,reaver//female,головоріз
-ClassName,reaver//male,головорізка
+ClassName,reaver//female,головорізка
+ClassName,reaver//male,головоріз
 ClassName,reaver//non-binary,головоріз
 ClassName,rogue//female,шахрайка
 ClassName,rogue//male,шахрай
@@ -806,7 +877,7 @@ ClassName,rogue//non-binary,шахрай
 ClassName,samurai//female,самурай
 ClassName,samurai//male,самурай
 ClassName,samurai//non-binary,самурай
-ClassName,shaman//female,шаман
+ClassName,shaman//female,шаманка
 ClassName,shaman//male,шаман
 ClassName,shaman//non-binary,шаман
 ClassName,templar//female,тамплієрка
@@ -818,9 +889,9 @@ ClassName,tinker//non-binary,майстер
 ClassName,tourist//female,туристка
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
-ClassName,valkyrie//female,Валькірія
-ClassName,valkyrie//male,Валькірія
-ClassName,valkyrie//non-binary,Валькірія
+ClassName,valkyrie//female,валькірія
+ClassName,valkyrie//male,валькірія
+ClassName,valkyrie//non-binary,валькірія
 ClassName,wizard//female,чарівниця
 ClassName,wizard//male,чарівник
 ClassName,wizard//non-binary,чарівник
@@ -970,18 +1041,18 @@ EggName,white dragon,білий дракон
 EggName,yellow dragon,жовтий дракон
 ElementDescription,Complete resistance to acid and corrosive damage.,Повна стійкість до ушкоджень кислотою і корозією.
 ElementDescription,Complete resistance to cold and ice damage.,Повна стійкість до ушкоджень холодом і льодом.
-ElementDescription,Complete resistance to disintegration damage.,Повна стійкість до ушкоджень від дезінтеграції.
-ElementDescription,Complete resistance to electric and shock damage.,Повна стійкість до ушкоджень електрикою і струсом.
+ElementDescription,Complete resistance to disintegration damage.,Повна стійкість до ушкоджень від дезинтеграції.
+ElementDescription,Complete resistance to electric and shock damage.,Повна стійкість до ушкоджень електрикою і шоком.
 ElementDescription,Complete resistance to fire and heat damage.,Повна стійкість до ушкоджень вогнем і жаром.
 ElementDescription,Complete resistance to life and mana draining effects.,Повна стійкість до витягування життєвих сил і мани.
 ElementDescription,Complete resistance to petrification effects.,Повна стійкість до скам'яніння.
 ElementDescription,Complete resistance to poison damage.,Повна стійкість до ушкоджень отрутою.
-ElementDescription,Protects you against pure magical effects.,Захищає вас від повністю чарівних ефектів.
-ElementDescription,You resist attempts to render you into a magical slumber.,Ви стійкі до спроб наслати на вас чарівний сон.
+ElementDescription,Complete resistance to purely magical damage and effects.,Захищає вас від повністю чарівних ефектів.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,Ви стійкі до спроб наслати на вас чарівний сон.
 ElementName,acid,кислота
 ElementName,cold,холод
 ElementName,digging,копання
-ElementName,disintegrate,дезінтеграція
+ElementName,disintegrate,дезинтеграція
 ElementName,drain,витягування
 ElementName,fire,вогонь
 ElementName,force,сила
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,обтяжений
 EncumbranceName,unencumbered,необтяжений
 EngulfmentName,engulfed,охоплений
 EngulfmentName,swallowed,проглочений
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Істота середнього розміру, великоамбіційна. Не довго живе, але всюдисуща. Її не варто недооцінювати."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Безформні створіння, які не мають сталої форми, але зазвичай набувають напівпрозорого людиноподібного вигляду. Незважаючи на те, що вони виглядають як плазмова маса, ця форма дозволяє їм носити одяг та користуватися знаряддями."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Давня раса жорстоких затворників. Їх страхітливий розмір надає їм величезної сили, доповненої рясною дієтою м'яса та мінеральних речовин."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Астральні створіння, що слугують посудиною для незламного духу поваленого шукача пригод. Позбавлені власних прагнень, вони охоче приймають одержимість; для загиблого авантюриста це можливість знову прагнути помсти чи спокути. Сформовані з астральної субстанції, вони тендітні, прозорі та здатні безперешкодно проникати крізь матеріальні об'єкти."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Прекрасні, потойбічні істоти характеризуються ореолом підпису та пернатих крил. Сильно налаштовані на боротьбі між добром і злом, вони відчувають божественність у всьому, що їм належить."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,Бережіться цього механічного знаряддя війни.
-EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,"Двуногі механічні автомати, з майже безмежним штучним інтелектом. Живляться від двигуна з розплавленим ядром, який потребує постійного постачання сирих металів та вразливий до пошкодження водою."
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Чарівні істоти, пов'язані з могутніми духами природи, які наснажують їхні пустощі. Вони присадкуваті, з хутряними нижніми частинами тіла, козлячими ратицями та баранячими закрученими рогами. Грайливі та хитрі, вони з радістю влаштовують гедоністичні пригоди, сповнені випивки, танців та бійок."
-EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
+EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Величні та міцної статури, вони нагадують людиноподібних драконів з мордою, лускатою шкірою та функціональними крилами."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Великі хижі рептилії, чиї предки-звірі панували у світі задовго до народження цивілізації. Вони є страхітливими хижаками, що здатні стрибати на довжелезні відстані і відштовхуватися від атак своїми густими лускатими шкурами."
-EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Монструозні істоти з головою та хвостом бика та тілом людини.
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Перекручені істоти багатьох аберацій, але завжди з малиновою шкірою та рогами. Сама їх присутність змушує інших виконувати свої найтемніші, найжорстокіші бажання."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Ненаситний, хижий вид потворних людиноподібних істот з виразним горбом, через який їхні руки волочаться по землі. Попри незграбну зовнішність, вони мають міцну статуру і славляться здатністю блискавично загоювати будь-які рани на своїй еластичній шкірі."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Девіанти, що змінюють форму, процвітають у своїх оманливих талантах."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"Маленькі люди, які віддають перевагу простому життю. Вони помітно вразливі, і їхній настрій піддає їм менш ніж благородні починання."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Духовні істоти, які люблять природу та магію. Вони фізично схожі на людину, але часто менші та спритніші."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","Твердий, короткий і витривалий народ. Вони відомі своєю впертістю, металообробкою та любов’ю до алкоголю."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Підземні народи, що мають маленький ріст, захоплюються майстерністю та магією. Еволюціонувавши, їх метаболізм підходить для довгих пригод, де їжі не вистачає."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","Менша з двох феррумзіготних мас - бура маса, яка за смаком схоже на кислим молоком, ніж шоколадному десерту. Харчується усіма видами тканин і шкур. Унікальна здатність бурою маси - репродуктивний метод. Коли маса вступає в контакт із залізом, пр виходить її поділ на два. З огляду на повсюдного використання залізного зброї авантюристами, популяція цієї істоти тільки зросла."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Цей мумійований делікатес створено шляхом просочення людського тіла медом. Дивним чином оживлена таємничим орденом ченців, ця істота є водночас смертельно небезпечною та неймовірно смачною."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,"Цей дивний живий міхур, наповнений їдкою рідиною, не проявляє агресії."
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Крихітні крилаті духи, за своєю суттю магічні та надзвичайно красиві. Загрожуючи, вони можуть вирватися через спотворення в просторовій реальності."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Схожі на черепах кочові діти природи, які залишають рідні місця, як тільки навчаться ходити, щоб мандрувати світом, несучи на спині комфорт і захист власної домівки."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Некрасиві, брутальні істоти зі схильністю до канібалізма; ця войовнича раса відома своєю силою, що вражає, та інтелектуальною нездатністю."
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,срібний дракончик
 EntityName,baby white dragon,білий дракончик
 EntityName,baby yellow dragon,жовтий дракончик
 EntityName,bad egg,погане яйце
-EntityName,balrog,Балрог
 EntityName,baluchitherium,белуджітерій
 EntityName,banshee,баньши
 EntityName,bar-lgura,бар-лгура
@@ -1175,6 +1277,7 @@ EntityName,dao,дао
 EntityName,dark cleric,жрець
 EntityName,Death,Смерть
 EntityName,death dog,собака смерті
+EntityName,decinder,Балрог
 EntityName,deep gnome,глибинний гном
 EntityName,deep one,глибинник
 EntityName,deeper one,глибинніший
@@ -1189,7 +1292,7 @@ EntityName,dingo,дінго
 EntityName,dingo puppy,щеня дінго
 EntityName,disenchanter,знімає чари
 EntityName,disgusting mould,мерзенна цвіль
-EntityName,disintegrator,дезінтегратор
+EntityName,disintegrator,дезинтегратор
 EntityName,Dispater,Діспатер
 EntityName,displacer beast,дісплейсер
 EntityName,djinni,джин
@@ -1197,8 +1300,9 @@ EntityName,Doctor Frankenstein,Доктор Франкенштейн
 EntityName,dog,собака
 EntityName,doppelgänger,допельгангер
 EntityName,dracolich,драколіч
-EntityName,dracon,
+EntityName,dracon,дракон
 EntityName,dragon king,цар драконів
+EntityName,dread wraith,назгул
 EntityName,dretch,дретч
 EntityName,drow,дроу
 EntityName,dryad,дріада
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,мумія дварфа
 EntityName,dwarf thief,дварф-злодій
 EntityName,dwarf warrior,дварф-воїн
 EntityName,dwarf zombie,зомбі-дварф
-EntityName,Earendil,Еаренділь
 EntityName,earth binder,адепт магії землі
 EntityName,earth elemental,земляний елементаль
 EntityName,earth maker,майстер магії землі
@@ -1227,7 +1330,6 @@ EntityName,elf king,ельф-король
 EntityName,elf lord,ельф-лорд
 EntityName,elf mummy,мумія ельфа
 EntityName,elf zombie,зомбі-ельф
-EntityName,Elwing,Ельвінг
 EntityName,embalmer,бальзаматор
 EntityName,emerald golem,смарагдовий голем
 EntityName,energy vortex,енергетичний вихор
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,зомбі-еттін
 EntityName,exterminator,знищувач
 EntityName,fairy,фея
 EntityName,Famine,Голод
+EntityName,Farwander,Двацветок
 EntityName,Father Dagon,Батько Дагон
 EntityName,fiend,лиходій
 EntityName,fire ant,вогняний мураха
@@ -1274,6 +1377,7 @@ EntityName,ghost,привид
 EntityName,ghoul,гуль
 EntityName,ghoul mage,гуль-маг
 EntityName,ghoul queen,гуль-королева
+EntityName,Ghuyaxil,Йеногу
 EntityName,giant,велетень
 EntityName,giant ant,величезний мураха
 EntityName,giant badger,гігантський борсук
@@ -1380,9 +1484,9 @@ EntityName,jackal,шакал
 EntityName,jackalwere,шакал-перевертень
 EntityName,jaguar,ягуар
 EntityName,jellyfish,медуза
+EntityName,Jharothy,Той Амон
 EntityName,jiggling blob,променистий міхур
 EntityName,juggernaut,Джаггернаут
-EntityName,Juiblex,Джуіблекс
 EntityName,juvenile raven,юний ворон
 EntityName,Kaloi Thrym,Повелитель пітьми
 EntityName,kamadan,камадан
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,зомбі-кобольд
 EntityName,komodo dragon,комодський дракон
 EntityName,kraken,кракен
 EntityName,lamb,ягня
-EntityName,Lareth,Ларет
 EntityName,large cat,велика кішка
 EntityName,large dingo,великий дінго
 EntityName,large dog,велика собака
@@ -1430,13 +1533,12 @@ EntityName,lightning bug,блискавичний жук
 EntityName,little dog,щеня
 EntityName,living wall,жива стіна
 EntityName,lizard,ящірка
-EntityName,lizardman,ящерколюд
-EntityName,lizardman berserker,ящерколюд-берсеркер
-EntityName,lizardman chieftain,вождь ящерколюдів
-EntityName,lizardman mage,ящерколюд-чаклун
-EntityName,lizardman shaman,ящерколюд-шаман
-EntityName,lizardman warrior,ящерколюд-воїн
-EntityName,Lolth,Лолс
+EntityName,lizardman,ящеролюд
+EntityName,lizardman berserker,ящеролюд-берсеркер
+EntityName,lizardman chieftain,вождь ящеролюдів
+EntityName,lizardman mage,ящеролюд-чаклун
+EntityName,lizardman shaman,ящеролюд-шаман
+EntityName,lizardman warrior,ящеролюд-воїн
 EntityName,long worm,довгий черв'як
 EntityName,long worm tail,хвіст довгий хробака
 EntityName,Lord Carnarvon,Лорд Карнарвон
@@ -1464,7 +1566,7 @@ EntityName,migo queen,королева мі-го
 EntityName,migo warrior,мі-го-воїн
 EntityName,mind flayer,пожирач розуму
 EntityName,minotaur,Мінотавр
-EntityName,minotaur lord,
+EntityName,minotaur lord,володар мінотаврів
 EntityName,mist wolf,туманний вовк
 EntityName,mithril golem,міфріловий голем
 EntityName,mobat,мотопирь
@@ -1481,7 +1583,6 @@ EntityName,mumak,мумак
 EntityName,nabassu,набассу
 EntityName,nalfeshnee,нальфешні
 EntityName,Nalzok,Налзок
-EntityName,nazgul,назгул
 EntityName,neanderthal,неандерталець
 EntityName,Neferet,Неферет Зелена
 EntityName,newt,тритон
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,напперібо
 EntityName,nurse,медсестра
 EntityName,occultist,некромант
 EntityName,ochre jelly,вохристих холодець
+EntityName,Oeziblegh,Джуіблекс
 EntityName,ogre,огр
 EntityName,ogre king,огр-вождь
 EntityName,ogre lord,огр-лорд
 EntityName,ogre mage,огр-маг
+EntityName,Oleyth,Ларет
 EntityName,olog-hai,олог-хай
 EntityName,Oracle,Оракул
 EntityName,orange jelly,помаранчевий холодець
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,орк-воїн
 EntityName,orc zombie,зомбі-орк
 EntityName,Orcus,Оркус
 EntityName,Orion,Оріон
+EntityName,Orvalth,Лолс
 EntityName,owlbear,совомедведь
 EntityName,pack rat,зграйний щур
 EntityName,page,паж
@@ -1550,6 +1654,7 @@ EntityName,rabbit,кролик
 EntityName,rabid rabbit,скажений кролик
 EntityName,rabid rat,скажений щур
 EntityName,rabid wolf,скажений вовк
+EntityName,Raedilan,Еаренділь
 EntityName,rancid jelly,тухлий холодець
 EntityName,rat king,щурячий король
 EntityName,ratwere,щур-перевертень
@@ -1560,7 +1665,7 @@ EntityName,red naga,червона нага
 EntityName,red naga hatchling,дитинча червоної наги
 EntityName,rhaumbusun,ромбусун
 EntityName,rhumbat,румтопирь
-EntityName,robot,
+EntityName,robot,робот
 EntityName,rock kobold,скельний кобольд
 EntityName,rock mole,скельний кріт
 EntityName,rock piercer,скельний пронзатель
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,рубіновий голем
 EntityName,rust monster,ржавільщік
 EntityName,rutterkin,раттеркін
 EntityName,sabre-toothed cat,саблезуба кішка
+EntityName,Sairou,Ельвінг
 EntityName,salamander,саламандра
 EntityName,sandestin,сандестін
 EntityName,sapphire golem,сапфіровий голем
@@ -1593,9 +1699,9 @@ EntityName,shark,акула
 EntityName,sheep,вівця
 EntityName,shifter,перевертень
 EntityName,shinobi,синоби
-EntityName,shock binder,адепт магії блискавок
-EntityName,shock maker,майстер магії блискавок
-EntityName,shock seeker,послушник магії блискавок
+EntityName,shock binder,адепт магії шоку
+EntityName,shock maker,майстер магії шоку
+EntityName,shock seeker,послушник магії шоку
 EntityName,shock sphere,шокова сфера
 EntityName,shoggoth,шоггот
 EntityName,shrieker,гриб-клекотун
@@ -1629,8 +1735,7 @@ EntityName,student,студент
 EntityName,succubus,суккуб
 EntityName,swamp kobold,болотний кобольд
 EntityName,tengu,тенгу
-EntityName,Thorin,Торін
-EntityName,Thoth Amon,Той Амон
+EntityName,Tholmak,Торін
 EntityName,thug,бандит
 EntityName,tiger,тигр
 EntityName,tigerwere,тигр-перевертень
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,мумія троля
 EntityName,tsetse fly,муха цеце
 EntityName,tunnel worm,тунельний черв'як
 EntityName,two-headed troll,двоголовий троль
-EntityName,Twoflower,Двацветок
 EntityName,umber hulk,коричневий громила
 EntityName,undead slayer,мисливець на мерців
 EntityName,vampire,вампір
@@ -1656,7 +1760,7 @@ EntityName,vampire king,вампір-повелитель
 EntityName,vampire lord,лорд вампірів
 EntityName,vampire mage,вампір-маг
 EntityName,Van Helsing,Ван Хелсінг
-EntityName,Vecna,Векна
+EntityName,Vercrux,Векна
 EntityName,violet fungus,фіолетовий гриб
 EntityName,vorpal jabberwock,Вбивчий Бармаглот
 EntityName,vrock,вроки
@@ -1703,7 +1807,6 @@ EntityName,wumpus,вампус
 EntityName,wyvern,Віверн
 EntityName,xan,Ксан
 EntityName,xorn,ксорн
-EntityName,Yeenoghu,Йеногу
 EntityName,yellow jacket,оса-вбивця
 EntityName,yellow jelly,жовтий холодець
 EntityName,yellow light,жовте світло
@@ -1777,19 +1880,20 @@ FormatText,{AssetName} suddenly disappeared!,{AssetName} раптово зник
 FormatText,{AssetName} was cancelled,{AssetName} було скасовано
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} було пошкоджено {ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} зруйновано {ElementName}
-FormatText,{AssetName} was disintegrated,{AssetName} дезінтеговано
+FormatText,{AssetName} was disintegrated,{AssetName} дезинтеговано
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} зніс голову {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} нагнав смертельного жаху на {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} вбиває {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} сумує щодо долі {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} зробив {Defender:CharacterName} ворогом!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} прийшов у лють на {Defender:CharacterName}!
-FormatText,{Base} in {Range},{Base} в {Range}
 FormatText,{BeamName} beam,промінь {BeamName}
-FormatText,{BlockName} was disintegrated,{BlockName} дезінтегровано
+FormatText,{BlockName} was disintegrated,{BlockName} дезинтегровано
 FormatText,{BoonName} which direction?,{BoonName} в який бік?
 FormatText,{BoonName} which item?,{BoonName} яку річ?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,імовірність {Chance} що:
 FormatText,{Chance} leaves corpse,{Chance} залишає труп
 FormatText,{Chance} per room,{Chance} на кімнату
 FormatText,{Chance} react to {ElementName},{Chance} реакція на: {ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} на {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} на {With:AssetName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} в підземеллі {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} adroitly {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} вправно {MotionPastName} {Use:AssetName} за допомогою {With:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} підвищується до {LevelNumber} рівня
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} обкрадає {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} кг
 FormatText,{WeightUnits} lbs,{WeightUnits} фунтів
-FormatText,after reaching dungeon level {RecordDepth},після досягнення {RecordDepth} рівня підземелля
+FormatText,after reaching depth {RecordDepth},після досягнення {RecordDepth} рівня підземелля
 FormatText,animate {CharacterName},анімований {CharacterName}
 FormatText,boost {AttributeName} by enchantment,збільшення {AttributeName} через чари
 FormatText,break {FeatureName},зламати {FeatureName}
@@ -1966,7 +2071,7 @@ FormatText,convert {LocalityName} from {FromBarrierName} to {ToBarrierName},пе
 FormatText,convert {LocalityName} from {FromGateName} to {ToGateName},перетворює двері {LocalityName} {FromGateName} {ToGateName}
 FormatText,convert {LocalityName} from {FromGroundName} to {ToGroundName},перетворює підлогу {LocalityName} {FromGroundName} {ToGroundName}
 FormatText,convert {LocalityName} from {FromVolatileName} to {ToVolatileName},перетворює лужу {LocalityName} {FromVolatileName} {ToVolatileName}
-FormatText,convert {StockName} {QualifierText} into {ItemNames},
+FormatText,convert {StockName} {QualifierText} into {ItemNames},перетворити {StockName} {QualifierText} на {ItemNames}
 FormatText,cripple {AttributeName},скалічило {AttributeName}
 FormatText,decrease {AttributeName} by {AdjustmentDice},зменшити {AttributeName} на {AdjustmentDice}
 FormatText,decrease all abilities by {AdjustmentDice},зменшити всі здібності на {AdjustmentDice}
@@ -1984,7 +2089,7 @@ FormatText,from {Cause},від {Cause}
 FormatText,gain {Percent}% {ElementName} resistance,отримати {Percent}% стійкості до: {ElementName}
 FormatText,gain {PropertyName} talent,надає: {PropertyName}
 FormatText,"Hail {CharacterName}, {CharacterDescription}","Вітаємо {CharacterName}, {CharacterDescription}"
-FormatText,Hail {PlayerHandle}!,"Вітаємо, {PlayerHandle}!"
+FormatText,Hail {PlayerHandle}!,Вітаємо {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},завдати {DamageDice} шкоди елементом: {ElementName}
 FormatText,heal {LifeDice},вилікувати {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},збільшити {AttributeName} на {AdjustmentDice}
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},рівні {From}-{To}
 FormatText,levels {Number}+,рівні {Number}+
 FormatText,LOCKED {GATENAME},ЗАМКНЕНІ {GATENAME}
 FormatText,lose {PropertyName} talent,віднімає талант {PropertyName}
-FormatText,not {EffectProperty},що не {EffectProperty}
 FormatText,polymorph into {EntityNames},перетворює {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},підіймає мерця {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},дистанція {Dice}
@@ -2008,7 +2112,7 @@ FormatText,"Resurrected {CharacterName}, {CharacterDescription}","відродж
 FormatText,retaliate {Chance} {AttackType},{Chance} вдарити у відповідь: {AttackType}
 FormatText,retaliate {Chance} on death {AttackType},"{Chance} вдарити у відповідь на, коли помирає від {AttackType}"
 FormatText,retaliate {Chance} on hit {AttackType},{Chance} вдарити у відповідь на {AttackType}
-FormatText,revenant {CharacterName},повсталий {CharacterName}
+FormatText,revenant {CharacterName},привид {CharacterName}
 FormatText,sanctify {ItemName} as {SanctityName},освячує {ItemName} {SanctityName}
 FormatText,shoot {ItemName} {ElementName} {DamageDice},стріляти {ItemName} {ElementName} {DamageDice}
 FormatText,stuck {DurationDice},застряг {DurationDice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,спрацьовує {Dice} раз
 FormatText,unless resists {ElementName},якщо не стійкий до: {ElementName}
 FormatText,unless target has {PropertyName},якщо у цілі нема: {PropertyName}
 FormatText,versus {Something},проти {Something}
-FormatText,when {Chance},імовірність {Chance} що:
 FormatText,when {GROUNDNAME},коли {GROUNDNAME}
 FormatText,when {ITEMNAME},коли {ITEMNAME}
-FormatText,when {KINDNAMES},коли {KINDNAMES}
 FormatText,when {MATERIALNAME},коли {MATERIALNAME}
 FormatText,when {PROPERTYNAME},коли {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},коли {SANCTITYNAME}
 FormatText,when {Something},коли {Something}
 FormatText,when {STANDINGNAME},коли {STANDINGNAME}
 FormatText,when resists {ElementName},коли має стійкість до елементу: {ElementName}
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,"Ці важкі двері зроблені з самородного кришталя, тож їх нелегко буде зламати."
 GateName,crystal door,кришталеві двері
 GateName,gold door,золоті двері
@@ -2051,9 +2159,11 @@ GenderName,neuter,безстатевий
 GenderName,non-binary,небінарний
 GenerationType,module,модуль
 GenerationType,quest,завдання (квест)
+GenerationType,workshop,
 GradeName,artifact,артефакт
 GradeName,exotic,екзотичний
 GradeName,standard,звичайний
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"У прохолодною кам'яній поверхні бездоганне майстерність, але відзначена ушкодженнями і часом."
 GroundName,cave floor,печерна підлога
 GroundName,chasm,прірва
@@ -2100,7 +2210,7 @@ HordeName,jackal,шакал
 HordeName,keystone,Кістоунці
 HordeName,kobold,кобольд
 HordeName,lemure,лемур
-HordeName,lizardman,ящерколюд
+HordeName,lizardman,ящеролюд
 HordeName,louse,воша
 HordeName,mane,мейн
 HordeName,mangler,кромсатель
@@ -2256,12 +2366,12 @@ ItemName,adamantine arrow,адамантитова стріла
 ItemName,adamantine axe,адамантитова сокира
 ItemName,adamantine bident,адамантитовий двозуб
 ItemName,adamantine bow,адамантитовий лук
-ItemName,adamantine bullet,
+ItemName,adamantine bullet,адамантинова куля
 ItemName,adamantine dagger,адамантитовий кинжал
-ItemName,adamantine dart,
+ItemName,adamantine dart,адамантитовий дротик
 ItemName,adamantine greataxe,адамантитова бойова сокира
 ItemName,adamantine greatsword,великий адамантитовий меч
-ItemName,adamantine hatchet,
+ItemName,adamantine hatchet,адамантинова сокира
 ItemName,adamantine long sword,адамантитовий довгий меч
 ItemName,adamantine plate mail,адамантитовий пластичний обладунок
 ItemName,adamantine rapier,адамантитова рапіра
@@ -2337,13 +2447,13 @@ ItemName,book of create familiar,книга створення фамільяр�
 ItemName,book of crushing sphere,сфера нищення
 ItemName,book of curing,книга зцілення
 ItemName,book of darkness,книга темряви
-ItemName,book of deflection,книга відбиття
+ItemName,book of deflection,книга ухилення
 ItemName,book of detect food,книга виявлення їжі
 ItemName,book of detect monsters,книга виявлення монстрів
 ItemName,book of detect treasure,книга виявлення скарбів
 ItemName,book of detect unseen,книга виявлення невидимого
 ItemName,book of dig,книга копання
-ItemName,book of disintegrate,книга дезінтеграції
+ItemName,book of disintegrate,книга дезинтеграції
 ItemName,book of drain life,книга витягування життів
 ItemName,book of extra healing,книга великого лікування
 ItemName,book of fear,книга жаху
@@ -2411,7 +2521,7 @@ ItemName,chrysoberyl,хризоберил
 ItemName,citrine,цитрин
 ItemName,Cleaver,Тесак
 ItemName,cloak of blinking,плащ телепорту
-ItemName,cloak of deflection,плащ захисту
+ItemName,cloak of deflection,плащ ухилення
 ItemName,cloak of displacement,плащ зміщення
 ItemName,cloak of invisibility,плащ невидимості
 ItemName,cloak of magic resistance,плащ стійкості до магії
@@ -2504,7 +2614,9 @@ ItemName,glaive,глефа
 ItemName,gold coin,золота монета
 ItemName,gold dragon scale mail,обладунок з луски золотого дракона
 ItemName,gold dragon scales,золота драконяча луска
+ItemName,gold flail,
 ItemName,Gold Key,золотий ключ
+ItemName,gold plate mail,
 ItemName,great dagger,великий кинджал
 ItemName,green dragon scale mail,обладунок з луски зеленого дракона
 ItemName,green dragon scales,луска зеленого дракона
@@ -2638,7 +2750,7 @@ ItemName,Pandora's Box,Скриня Пандори
 ItemName,panic boots,ботинки паніки
 ItemName,partisan,протазан
 ItemName,pear,груша
-ItemName,pearl,
+ItemName,pearl,перлина
 ItemName,phantom key,ключ привіда
 ItemName,Philosophers Stone,Філосьфський камінь
 ItemName,pick-axe,кирка
@@ -2944,7 +3056,7 @@ KindName,changeling,змінці
 KindName,demon,демони
 KindName,devourer,поглиначі
 KindName,dog,псові
-KindName,dracon,
+KindName,dracon,дракон
 KindName,dragon,дракони
 KindName,dwarf,дварфи
 KindName,echo,ехо
@@ -2970,7 +3082,7 @@ KindName,kobold,кобольди
 KindName,lich,лічі
 KindName,light,світло
 KindName,lizard,ящери
-KindName,lizardman,ящерколюд
+KindName,lizardman,ящеролюд
 KindName,lycanthrope,лікантроп
 KindName,marine,морські
 KindName,mercenary,найманці
@@ -2984,7 +3096,7 @@ KindName,orc,орки
 KindName,plasmoid,плазмоїди
 KindName,pudding,маса
 KindName,quadruped,чотириногі
-KindName,robot,
+KindName,robot,робот
 KindName,rodent,гризуни
 KindName,satyr,сатир
 KindName,snake,змії
@@ -2992,7 +3104,7 @@ KindName,spider,павуки
 KindName,tortle,черепахолюди
 KindName,trapper,ловці
 KindName,troll,тролі
-KindName,umber,умбра
+KindName,umber,амбер
 KindName,vampire,вампіри
 KindName,vortex,вихор
 KindName,worm,черви
@@ -3003,19 +3115,20 @@ LiteralText,!MASTER MODE!,РЕЖИМА МАЙСТРА
 LiteralText,(2d6 instead of 2-12),(2d6 замість 2-12)
 LiteralText,(game information status text),(інформаційний ігровий статус)
 LiteralText,(not eligible for hall of fame),(без права на зал слави)
+LiteralText,(optional),(опціонально)
 LiteralText,(recommended for AMOLED screens),(рекомендується для AMOLED екранів)
 LiteralText,(SUPPRESSED),(ПОДАВЛЕНИЙ)
 LiteralText,[MASTER],[МАЙСТЕР]
-LiteralText,abolition of firearms,без вогнепальної зброї
+LiteralText,Abolition of firearms,Без вогнепальної зброї
 LiteralText,ABOUT,ПРО ГРУ
-LiteralText,About Pathos,Про Pathos
-LiteralText,accelerated resting,прискорений відпочинок
+LiteralText,Accelerated resting,Прискорений відпочинок
+LiteralText,Achievements,
 LiteralText,actions,дії
 LiteralText,ADD LEVEL,ДОДАТИ РІВЕНЬ
 LiteralText,Add new adventurer,Додати ще гравця
 LiteralText,ADJUST,НАЛАШТУВАННЯ
-LiteralText,adjust difficulty,
-LiteralText,adventurer,
+LiteralText,adjust difficulty,налаштувати складність
+LiteralText,adventurer,шукач пригод
 LiteralText,afflict,пороблено
 LiteralText,AFFLICTED,СТРАЖДЕННИЙ
 LiteralText,affliction?,страждання?
@@ -3025,16 +3138,17 @@ LiteralText,alias?,псевдонім
 LiteralText,ALL,ВСЕ
 LiteralText,ALL AT ONCE,ВСЕ РАЗОМ
 LiteralText,all kind,всі види
+LiteralText,all levels,
 LiteralText,always,завжди
-LiteralText,AMBIENT SOUNDS,НАВКОЛИШНІ ЗВУКИ
 LiteralText,amnesia,амнезія
 LiteralText,AMNESIA,АМНЕЗІЯ
 LiteralText,anatomy,анатомія
 LiteralText,animate mount,анімувати їздового
-LiteralText,animate revenant,анімувати повсталі
-LiteralText,ANNOUNCEMENT,
+LiteralText,animate revenant,анімувати привида
+LiteralText,ANNOUNCEMENT,ОГОЛОШЕННЯ
 LiteralText,ANONYMOUS,АНОНІМ
 LiteralText,anticlockwise 90 degrees,на 90 градусів anticlockwise
+LiteralText,antique art,античний арт
 LiteralText,any item,будь-яка річ
 LiteralText,APPLICATION FILES,ФАЙЛИ ЗАСТОСУНКУ
 LiteralText,Are you sure you want to end your adventure?,"Ви впевнені, що хочете вийти з підземелля і закінчити вашу пригоду?"
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,ВИ ВПЕВНЕНІ?
 LiteralText,area of effect,область ефекту
 LiteralText,area transient,область тимчасово
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,АРТЕФАКТИ
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,ПІДЙОМ НА ПОПЕРЕДНІЙ РІВЕНЬ
 LiteralText,assess item,оцінити
 LiteralText,assets,предмети
 LiteralText,ATMOSPHERE,АТМОСФЕРА
 LiteralText,attack modifier,модифікатор атаки
 LiteralText,Attack which direction?,В який бік атакувати?
-LiteralText,attack//noun,напад
-LiteralText,ATTACK//noun,НАПАД
-LiteralText,attack//verb,напасти
-LiteralText,ATTACK//verb,НАПАСТИ
+LiteralText,Attack//noun,Напад
+LiteralText,Attack//verb,Напасти
 LiteralText,attacks,атаки
+LiteralText,AUDIO,АУДІО
 LiteralText,AUTO,АВТО
 LiteralText,auto saving,автоматичне збереження
+LiteralText,avatar,аватар
 LiteralText,AWAKE,ПРОКИДАЄТЬСЯ
-LiteralText,BACK,НАЗАД
 LiteralText,backfire,зворотний ефект
 LiteralText,barrier,бар’єр
 LiteralText,BARRIERS,БАР'ЄРИ
 LiteralText,bazaar,базар
 LiteralText,Begin the adventure,Почати пригоду
 LiteralText,beholds,спостерігає
-LiteralText,beta discussions,Саме тут можна обговорити гру.
 LiteralText,Black background,Чорний фон
 LiteralText,blasphemy,богохульство
-LiteralText,BLINK,ТЕЛЕПОРТУ
+LiteralText,Blink,Телепорту
 LiteralText,blink entity,телепротувати
 LiteralText,Blink which direction?,Куди телепортуватися?
 LiteralText,block,клітина
 LiteralText,BLOCKED,заблоковано
 LiteralText,BLOCKS,БЛОКИ
-LiteralText,BOONS,ДАРИ
+LiteralText,Boons,Дари
 LiteralText,boost attack by enchantment,магічне посилення атаки
 LiteralText,boost damage by enchantment,магічне збільшення ушкоджень
 LiteralText,boost defence by enchantment,магічне покращення захисту
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,НЕ МОЖЕ БАЧИТИ
 LiteralText,CAN'T SLIDE,НЕ МОЖЕ З'ЇЖДЖАТИ
 LiteralText,CAN'T TELEKINESIS,НЕ МОЖЕ ВИКОРИСТОВУВАТИ ТЕЛЕКІНЕЗ
 LiteralText,CAN'T THROW,НЕ МОЖЕ КИНУТИ
-LiteralText,CANCEL,СКАСУВАТИ
+LiteralText,Cancel,Скасувати
 LiteralText,cancellation,скасування
 LiteralText,CANCELLED,СКАСОВАНО
 LiteralText,capture any entity,захоплює
@@ -3104,14 +3218,13 @@ LiteralText,carried,що її несе
 LiteralText,Cast,Заклинання
 LiteralText,CAST SPELLS,ТВОРИТИ ЗАКЛИНАННЯ
 LiteralText,challenge,виклик
-LiteralText,CHAMPION,ЧЕМПІОНИ
+LiteralText,CHAMPION,ЧЕМПІОН
+LiteralText,Change,
 LiteralText,Character,Персонаж
-LiteralText,CHARACTER,ПЕРСОНАЖ
 LiteralText,charged items,заряджає предмети
-LiteralText,Chat on Discord,Сервер в Discord
 LiteralText,check for updates?,Перевірити наявність оновлень?
 LiteralText,checking for updates,перевірка оновлень
-LiteralText,CHOOSE,ВИБРАТИ
+LiteralText,Choose,Вибрати
 LiteralText,Choose your quick action,Виберіть швидку дію
 LiteralText,class,клас
 LiteralText,CLASSES,КЛАСИ
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,"Натисніть, щоб повторити спр
 LiteralText,Click to send detected issues to the author,"Натисніть, щоб надіслати звіт про помилки"
 LiteralText,clone source entity,клонує персонажа джерело
 LiteralText,clone target entity,клонує персонажа ціль
-LiteralText,CLOSE,ЗАКРИТИ
+LiteralText,Close,Закрити
 LiteralText,closed,закрито
-LiteralText,Coding on Medium,Нотатки щодо програмування на Medium
 LiteralText,coins,монети
-LiteralText,COMMAND,
+LiteralText,Command,Команда
+LiteralText,Community,
 LiteralText,companion,компаньйон
 LiteralText,compression,стиснення
-LiteralText,CONCEAL,ЗАХОВАТИ
+LiteralText,Conceal,Заховати
 LiteralText,CONCEALED,ЗАХОВАНІ
 LiteralText,concealing,приховує
-LiteralText,CONDUCT,СУПРОВОДЖУЄ
-LiteralText,CONFIRM,ПІДТВЕРДИТИ
+LiteralText,CONDUCT,ПОВЕДІНКА
+LiteralText,Confirm,Підтвердити
+LiteralText,Connect,
 LiteralText,connect portal,з'єднати переходи
 LiteralText,Connect to game hosted by another player.,Під’єднатися до гри створеної іншим гравцем.
-LiteralText,CONSOLE,КОНСОЛЬ
+LiteralText,Console,Консоль
 LiteralText,constructed,рукотворне
-LiteralText,CONTACT,ЗВ'ЯЗОК
 LiteralText,Continue,Далі
 LiteralText,CONTINUE,ДАЛІ
 LiteralText,CONTROLLED,КЕРОВАНИЙ
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,перетворює брилу
 LiteralText,conveyance,поїдання
 LiteralText,COPY,КОПІЮВАТИ
 LiteralText,corpse,труп
 LiteralText,CRACK!,ХРУСЬ!
-LiteralText,craft,створити
-LiteralText,CRAFT,СТВОРИТИ
+LiteralText,Craft,Створити
 LiteralText,Craft which item?,Яку річ створити?
 LiteralText,CRASH APP!,ХРЯСЬ!
 LiteralText,CRASH!,ХРЯСЬ!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Створити в якому напрям�
 LiteralText,CREDITS,ПОДЯКИ
 LiteralText,CROP,УРОЖАЙ
 LiteralText,CURSED,ПРОКЛЯТИЙ
-LiteralText,CUSTOM,СВОЄ
 LiteralText,CUSTOM HERO,СВІЙ ГЕРОЙ
 LiteralText,CUSTOM MODULES,СВОЇ МОДУЛІ
-LiteralText,damage,
-LiteralText,DAMAGE,
+LiteralText,customise controls,
+LiteralText,damage,шкода
+LiteralText,DAMAGE,ШКОДА
 LiteralText,dark,темний
+LiteralText,Darken area,
 LiteralText,DEAD END,ТУПІК
 LiteralText,death,смерть
 LiteralText,deathray,промінь смерті
 LiteralText,decapitate entity,обезголовує
 LiteralText,decapitation,обезголовлення
 LiteralText,DECEASED,ЗАГИБЛИЙ
-LiteralText,decelerated real-time,уповільнений реальний час
+LiteralText,Decelerated real-time,Уповільнений реальний час
 LiteralText,DECREASE,ЗНИЗИТИ
 LiteralText,defence,захист
 LiteralText,DEFENCE,ЗАХИСТ
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,ВИДАЛИТИ
 LiteralText,delete this level,видалити цей рівень
 LiteralText,DEMOTE,ПОНИЗИТИ
 LiteralText,depth,глибина
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,ВНИЗ НА НАСТУПНИЙ РІВЕНЬ
 LiteralText,destination,пункт призначення
 LiteralText,destroy,знищити
@@ -3201,56 +3317,66 @@ LiteralText,device,пристрій
 LiteralText,DEVICES,МЕХАНІЗМИ
 LiteralText,devour item,зжерти цінність
 LiteralText,DIAGNOSTICS,ДІАГНОСТИКА
-LiteralText,DIALOGUE,
-LiteralText,dialogue?,
+LiteralText,DIALOGUE,ДІАЛОГ
+LiteralText,dialogue?,діалог?
 LiteralText,DID NOT RANK,БЕЗРАНГОВИЙ
 LiteralText,diet,дієта
 LiteralText,difficulty,складність
 LiteralText,digging,копає
-LiteralText,disable ambient sounds,вимкнути звуки довкілля
-LiteralText,Disable auto save on transition,вимкнути автосейв при переході
+LiteralText,Disable ambient sounds,Вимкнути звуки довкілля
+LiteralText,Disable auto save on transition,Вимкнути автосейв при переході
+LiteralText,Disable automatic camera,Вільна прокрутка
 LiteralText,Disable button tap sounds,Вимкнути звуки клавіш
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,Вимкнути 'бум' наприкінці
 LiteralText,Disable continue button,Вимкнути кнопку 'продовжити'
-LiteralText,disable haptic feedback,вимкнути вібрацію
-LiteralText,Disable idle animations,вимкнути анімації очікування
+LiteralText,Disable haptic feedback,Вимкнути вібрацію
+LiteralText,Disable hardware acceleration,
+LiteralText,Disable idle animations,Вимкнути анімації очікування
 LiteralText,Disable introduction boom,Вимкнути 'бум' на початку
+LiteralText,Disable manual zoom,Блокування масштабування
 LiteralText,Disable mask animations,Вимкнути маску анімацій
 LiteralText,Disable online services,Вимкнути онлайн сервіси
 LiteralText,Disable pitch shifting,Вимкнути зміну тону звуку
-LiteralText,Disable radial quick menu,
-LiteralText,Disable side quick menus,
+LiteralText,Disable processing rate limit,Вимкнути обмеження швидкості обробки
+LiteralText,Disable radial quick menu,Вимкнути швидке радіальне меню
+LiteralText,Disable side quick menus,Вимкнути швидке бокове меню
 LiteralText,Disable spacebar real-time toggle,Вимкнути перемикач реального часу
 LiteralText,Disable swipe gestures,Вимкнути керування жестами
-LiteralText,Disable Zeroth announcement,
+LiteralText,Disable tutorial,
+LiteralText,Disable Zeroth announcement,Вимкнути оголошення про Zeroth
 LiteralText,disarm entity,розряджає
-LiteralText,DISCONNECT,ВІД’ЄДНАТИСЯ
+LiteralText,Disconnect,Від’єднатися
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,"Виявлено роз'єднання. Будь ласка, переконайтеся, що у вас надійне мережеве з'єднання і всі пристрої використовують однакову версію Pathos."
 LiteralText,discover item,просвітлює
-LiteralText,Discuss on Reddit,Обговорюйте на Reddit
+LiteralText,discoveries,
 LiteralText,disenchant item,расколдовивает
 LiteralText,dismantle items to extract the base materials and raw essence,витяг з предметів основних матеріалів і есенцій
-LiteralText,DISMISS,ВИГНАТИ
-LiteralText,DISMOUNT,зпішитися
+LiteralText,Dismiss,Вигнати
+LiteralText,Dismount,Зпішитися
 LiteralText,Dismount which direction?,В який бік спішитися?
 LiteralText,Display dice rolls in the help,Показувати кидання кубікив в довідці
+LiteralText,Display full screen,Показати повний екран
 LiteralText,distribution,атрибути
 LiteralText,divine item,пророкує
 LiteralText,DIVINED,ДУХОВНІСТЬ ВИЗНАЧЕНО
 LiteralText,divined items,визначена духовність речей
 LiteralText,Do you want to save or quit this adventure?,Ви бажаєте зберегти або закінчити гру?
 LiteralText,domestic,приручений
-LiteralText,DONATE,ПОЖЕРТВУВАННЯ
+LiteralText,Donate,Пожертвування
 LiteralText,Donate to say thanks,"Пожертвуйте, щоб віддячити"
 LiteralText,DOOR,ДВЕРІ
 LiteralText,double damage when mounted,"подвійні ушкодження, коли верхи"
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,погіршується до
 LiteralText,downloading update,завантаження оновлення
-LiteralText,drain item,
-LiteralText,drop,викинути
-LiteralText,DROP,ВИКИНУТИ
+LiteralText,drain item,висушити предмет
+LiteralText,Drop,Викинути
 LiteralText,DUAL WIELD,В ДРУГУ РУКУ
-LiteralText,duration,термін дії
+LiteralText,duration,тривалість
+LiteralText,Eat,
 LiteralText,edible items,їстівні предмети
 LiteralText,egg,яйце
 LiteralText,else,інакше
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,пороги обтяження
 LiteralText,End this adventure,Кінець цієї пригоди
 LiteralText,ended,закінчений
 LiteralText,engulf entity,проковтує
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,Введіть кількість
 LiteralText,ENTITIES,ІСТОТИ
 LiteralText,entity,істота
 LiteralText,entropy accidents,нещасні випадки через ентропію
-LiteralText,EQUIP,ВДЯГТИ
-LiteralText,equipped,одягнута
+LiteralText,Equip,Вдягти
+LiteralText,equipment,одягнута
 LiteralText,ESCAPE,ЗАЛИШИТИ
 LiteralText,escape traps,уникнути пасток
 LiteralText,escape with,уникнути за допомогою
@@ -3282,50 +3409,52 @@ LiteralText,EXCHANGE,ОБМІН
 LiteralText,exchange entity,обміняти
 LiteralText,EXIT PATHOS,ВИЙТИ З PATHOS
 LiteralText,EXPAND,РОЗШИРИТИ
-LiteralText,EXPEL,ВИГНАТИ
+LiteralText,Expel,Вигнати
 LiteralText,experience,досвід
 LiteralText,EXPERIENCE,ДОСВІД
 LiteralText,explosion,вибух
 LiteralText,EXPORT,ЕКСПОРТ
-LiteralText,extinctions,гасіння
+LiteralText,extinctions,винищено
 LiteralText,extinguish,загасити
 LiteralText,FAILED,НЕВДАЧА
 LiteralText,failed to download,не вдалося завантажити
-LiteralText,fame,слави
+LiteralText,fame,слава
 LiteralText,faster animations,прискорені анімації
 LiteralText,faster consumption of nutrition,збільшення потреби в їжі
 LiteralText,FAULT LOGS,ЛОГ ПОМИЛОК
 LiteralText,feats,подвиги
 LiteralText,feature,особливість
 LiteralText,FEATURES,ОСОБЛИВІ ОБ'ЄКТИ
-LiteralText,FEED,ГОДУВАТИ
-LiteralText,FEEDBACK,Зворотній зв'язок
-LiteralText,Feedback information,Інформація про зворотній зв'язок
+LiteralText,Feed,Годувати
+LiteralText,FEEDBACK,Відгук
+LiteralText,Feedback information,Інформація про відгук
 LiteralText,FILES,ФАЙЛИ
 LiteralText,fixed,фіксоване
 LiteralText,fixed range,фіксовану відстань
 LiteralText,FIZZLE,ФІАСКО
 LiteralText,Floor,Підлога
-LiteralText,FOLLOW,ЗА МНОЮ
-LiteralText,Follow me on Twitter,Слідкуйте за Twitter
-LiteralText,free panning mode,вільна прокрутка
+LiteralText,Follow,За мною
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,переляк
 LiteralText,fumbling,незручність
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,ЗБІЛЬШИТИ КАРМУ
 LiteralText,gain level,отримує рівень
 LiteralText,GAIN LEVEL,ПІДВИЩИТИ РІВЕНЬ
 LiteralText,gain nutrition,підвищити ситість
 LiteralText,gain skill,отримати вміння
+LiteralText,GAMEPLAY,ҐЕЙМПЛЕЙ
 LiteralText,gate,ворота
-LiteralText,gates,
+LiteralText,gates,ворота
 LiteralText,gather,зібрати
 LiteralText,gender,пол
 LiteralText,genocide,геноцид
-LiteralText,GENOCIDE,ГЕНОЦИД
 LiteralText,GIVE,ДАТИ
 LiteralText,GIVE ALL,ДАТИ ВСЕ
-LiteralText,GLYPHS,РУНИ
-LiteralText,GOD MODE,
+LiteralText,GLOBAL,СВІТ
+LiteralText,GLYPHS,ГЛІФИ
+LiteralText,GOD MODE,РЕЖИМ БОГА
 LiteralText,gold,золото
 LiteralText,GOLD,ЗОЛОТО
 LiteralText,GRAPHICS,ГРАФІКА
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,вилупляється
 LiteralText,hatched by,висижує
 LiteralText,Having trouble finding the stairs down to the next level?,Проблеми з пошуком сходів на наступний рівень?
 LiteralText,Help,Довідка
-LiteralText,HELP,ДОВІДКА
 LiteralText,HIDDEN,ПРИХОВАНИЙ
-LiteralText,HIDE,ПРИХОВАТИ
+LiteralText,Hide,Приховати
 LiteralText,hiding,ховання
 LiteralText,HINT,ПІДКАЗКА
-LiteralText,HIRE,НАЙНЯТИ
-LiteralText,horde,
+LiteralText,Hire,Найняти
+LiteralText,HJKL directional keys,
+LiteralText,horde,орда
 LiteralText,HORDES,ОРДИ
 LiteralText,HOST,СТВОРИТИ СЕРВЕР
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Однак, можливо, ви захочете дограти свою пригоду, перш ніж оновити гру."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,"Я сподіваюся, ви насолоджуєтеся пригоди, і будь ласка, не соромтеся відправляти мені ваші відгуки і пропозиції."
-LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
-LiteralText,I'm developing a new game called ZEROTH!,
+LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Я розробляю нову гру під назвою ZEROTH. Це платформер-рогалик, на базі механік з Pathos. Натисніть сюди, щоб дізнатись більше."
+LiteralText,I'm developing a new game called ZEROTH!,Я розробляю нову гру під назвою ZEROTH!
 LiteralText,identified items,розпізнав речі
-LiteralText,identify all items,пізнає все
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,УПІЗНАНО ВСІ ПРЕДМЕТИ НА ПІДЛОЗІ
-LiteralText,identify one item,пізнає один
+LiteralText,Identify all items,Пізнає все
+LiteralText,Identify one item,Пізнає один
+LiteralText,identity,особистість
 LiteralText,ILLITERATE,НЕГРАМОТНІСТЬ
 LiteralText,illusion,ілюзія
 LiteralText,ILLUSION,ІЛЮЗІЯ
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,ув’язнює
 LiteralText,incarceration,ув’язнення
 LiteralText,INCREASE,ЗБІЛЬШИТИ
 LiteralText,INDEX,АЛФАВІТНИЙ ВКАЗІВНИК
-LiteralText,individual crafting,індивідуальне виробництво
+LiteralText,Individual crafting,Індивідуальне створення
 LiteralText,infinite quantity,нескінченна кількість
 LiteralText,influenced actions,вплив на дії
 LiteralText,INSCRIBE,ПІДПИСАТИ
 LiteralText,INSCRIBE ITEM,ПІДПИСАТИ ПРЕДМЕТ
 LiteralText,inscription?,підпис?
-LiteralText,instruct each character,командувати кожним персонажем
+LiteralText,Inspect,
+LiteralText,Instruct each character,командувати кожним персонажем
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТНЬО ЗОЛОТA
+LiteralText,INTERFACE,ІНТЕРФЕЙС
 LiteralText,Inventory,Інвентар
-LiteralText,INVENTORY,ІНВЕНТАР
-LiteralText,ITEM,ПРЕДМЕТ
-LiteralText,items,предмети
+LiteralText,Item,Предмет
 LiteralText,ITEMS,ПРЕДМЕТИ
 LiteralText,JOIN,ПРИЄДНАТИСЯ
 LiteralText,Journal,Журнал
 LiteralText,JOURNAL,ЖУРНАЛ
-LiteralText,JUMP,СТРИБНУТИ
+LiteralText,Jump,Стрибнути
 LiteralText,Jump which direction?,В яку сторону стрибнути?
 LiteralText,karma,карма
 LiteralText,KARMA,КАРМА
 LiteralText,key?,ключ?
+LiteralText,Keyboard,
+LiteralText,Kick,Копнути
 LiteralText,Kick which direction?,В яку сторону копнути?
-LiteralText,KICK!,КОПНУТИ!
 LiteralText,kills,вбивств
 LiteralText,kit,спорядження
-LiteralText,KNOWLEDGE,ЗНАННЯ
+LiteralText,Knowledge,Знання
 LiteralText,LANGUAGE,МОВА
-LiteralText,LEARN ALL SPELLS,ВИВЧИТИ ВСІ ЗАКЛИНАННЯ
+LiteralText,Learn all spells,Вивчити всі заклинання
 LiteralText,learn spells,вивчити закляття
-LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,"Довідуйся правил світу через веселі смерті. Так ти зможеш провести своїх героїв, поки вони шукають вихід з нульового круга пекла."
+LiteralText,Left,
 LiteralText,LEFT RING,ЛІВИЙ ПЕРСТЕНЬ
 LiteralText,LEVEL CHART,ТАБЛИЦЯ РІВНІВ
 LiteralText,level//rank,рівень
@@ -3414,23 +3544,22 @@ LiteralText,life,здоров'я
 LiteralText,LIFE,ЗДОРОВ'Я
 LiteralText,Life represents your physical health and death occurs at zero.,Здоров’я представляє ваш фізичний стан; на нулі ви помираєте.
 LiteralText,light,світло
-LiteralText,LIGHT,СВІТЛО
 LiteralText,light radius,радіус освітлення
+LiteralText,Lighten area,
 LiteralText,limits,межі
 LiteralText,LIST,СПИСОК
 LiteralText,lit,засвітлений
 LiteralText,LIVING,ЖИВИЙ
 LiteralText,loading,завантаження
-LiteralText,LOCK,замкнути
-LiteralText,locked,замкнений
-LiteralText,LOCKED,замкнені
-LiteralText,locked scaling mode,блокування масштабування
+LiteralText,Lock,Замкнути
+LiteralText,Locked,Замкнені
 LiteralText,locking,замикає
-LiteralText,loot,здобич
-LiteralText,LOOT,ЗДОБИЧ
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Здобич
+LiteralText,Loot//verb,Здобич
 LiteralText,LOSE KARMA,ВТРАТИТИ КАРМУ
 LiteralText,LOSE LEVEL,знизити рівень
-LiteralText,lose nutrition,знизився ситністю
+LiteralText,lose nutrition,зменшити ситість
 LiteralText,lose skill,втратити вміння
 LiteralText,LOW MANA,МАЛО мани
 LiteralText,loyal only,лише якщо вірний
@@ -3440,39 +3569,44 @@ LiteralText,MANA,МАНА
 LiteralText,Mana represents your energy supply for casting spells.,Мана представляє ваш запас енергії для створення заклинань.
 LiteralText,Map,Мапа
 LiteralText,MAP,МАПА
-LiteralText,mapping,картографує
+LiteralText,Mapping,Картографує
 LiteralText,material,матеріал
 LiteralText,materials,матеріали
 LiteralText,melting,плавлення
-LiteralText,MENU,МЕНЮ
+LiteralText,Menu,Меню
 LiteralText,mercenary,найманці
-LiteralText,MIMIC,МІМІКРУЙ
+LiteralText,Mimic,Мімікруй
 LiteralText,mimicking,мімікувати
 LiteralText,mobilise block,дозволити зрушення істостами
 LiteralText,modifier,модифікатор
-LiteralText,MORE INFO,
-LiteralText,MOUNT,СІСТИ ВЕРХИ
+LiteralText,MODULE,МОДУЛІ
+LiteralText,MORE INFO,БІЛЬШЕ ІНФОРМАЦІЇ
+LiteralText,Mount,Сісти верхи
 LiteralText,Mount which direction?,Влізти в якому напрямку?
 LiteralText,MOUNTED,ВЕРХОВИЙ
-LiteralText,MOVE,ЗАЙТИ
+LiteralText,Move,Зайти
 LiteralText,move down one level,спустися вниз на один рівень
 LiteralText,move up one level,піднятися на один рівень угору
 LiteralText,MULTIPLAYER,МУЛЬТИПЛЕЄР
+LiteralText,Multiplayer Chat,
 LiteralText,murder,вбивство
 LiteralText,MURDER ENTITIES EVERYWHERE,ВБИТИ ВСЕ ЖИВЕ
 LiteralText,music volume,гучність музики
 LiteralText,N/A,(НЕМА)
-LiteralText,name,ім’я
-LiteralText,NAME,НАЗВАТИ
 LiteralText,name?,ім’я?
+LiteralText,Name//noun,Ім’я
+LiteralText,Name//verb,Назвати
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,НЕГАТИВНІ
 LiteralText,neutral,нейтральний
 LiteralText,never,ніколи
-LiteralText,NEW,НОВЕ
+LiteralText,Next character,
 LiteralText,no additional effects,немає додаткових ефектів
 LiteralText,no allies,нема отряду
 LiteralText,no ambient sounds,без навколишніх звуків
 LiteralText,No appropriate items available,Немає відповідних доступних речей
-LiteralText,no available knowledge,немає доступних знань
+LiteralText,No key,
 LiteralText,no records found,немає записів
 LiteralText,no resistances,нема стійкості
 LiteralText,no talents,немає талантів
@@ -3482,98 +3616,122 @@ LiteralText,non divined items,речі з невизначеною духовн�
 LiteralText,non edible items,неїстівні предмети
 LiteralText,non enchanted items,незачаровані речі
 LiteralText,normal animations,звичайні анімації
-LiteralText,NOT NOW!,
+LiteralText,NOT NOW!,НЕ ЗАРАЗ!
 LiteralText,Nothing equipped or carried,Нічого не вдягнено і з собою нема
 LiteralText,nothing happens,нічого не станеться
 LiteralText,Nothing of interest,Нічого цікавого
 LiteralText,nothing to give,нічого дати
 LiteralText,nothing to take,нема чого взяти
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,ситість
 LiteralText,NUTRITION,СИТІСТЬ
 LiteralText,OBSTRUCTED,УТРУДНЕНЕ
 LiteralText,OFFLINE,НЕ В МЕРЕЖІ
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,ОДИН ЗА РАЗ
 LiteralText,oOo,oOo
-LiteralText,OPEN,ВІДКРИТИ
+LiteralText,Open,Відкрити
 LiteralText,OPENED,ВІДКРИТИЙ
 LiteralText,opening,відкривання
-LiteralText,OR,ЧИ
+LiteralText,OR,АБО
 LiteralText,ORIGINAL,ОРИГІНАЛЬНИЙ
+LiteralText,original art,оригінальний
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.","Понад десять років розробки перетворили Pathos на фентезійну рольову пригоду, що забезпечує глибоке занурення в ігровий світ. Незабаром покращена версія гри вперше з’явиться в Steam."
 LiteralText,OVERRIDE,ЗАМІСТИТИ
 LiteralText,OVERVIEW,ОГЛЯД
 LiteralText,Palette,Палітра
 LiteralText,PARTY,ГРУПА
-LiteralText,passive (no attacking),пасивний (не нападає)
+LiteralText,Passive (no attacking),пасивний (не нападає)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,У грі є режим розділеного екрану. Підтримується до чотирьох гравців включно.
 LiteralText,pathos development @ paypal,Підтримайте Pathos у Paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,"Pathos не в змозі завантажити вашу пригоду. Будь ласка, надішліть мені файл збереження, щоб я зміг дослідити проблему. Я також, мабуть, зможу відновити файл або оновити застосунок з виправленням."
-LiteralText,Pathos might be the next evolution of Nethack.,"Можливо, Pathos — це наступний сходинка еволюції NetHack."
+LiteralText,Pathos might be the next evolution of NetHack.,"Можливо, Pathos — це наступний сходинка еволюції NetHack."
 LiteralText,penalty,покарання
 LiteralText,penetrates,пронизує
 LiteralText,per level,кожен рівень
+LiteralText,Perform,
 LiteralText,permanent,постійний
 LiteralText,PERSONAL,ПЕРСОНАЛЬНИЙ
+LiteralText,Pick up,
 LiteralText,PLACE,ВІДДАТИ
 LiteralText,PLACE ALL,ВІДДАТИ ВСЕ
 LiteralText,place curse,накладає прокляття
 LiteralText,platform,платформа
 LiteralText,Play,Відтворити
 LiteralText,Play a sound effect?,Відтворити який ефект?
+LiteralText,Play Demo,Грати в демо
 LiteralText,Player,Гравець
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Будь ласка майте на увазі що некоректний вихід з застосунку може призвести до втрати збережень.
 LiteralText,Please offer any clarification,"Будь ласка, напишіть пояснення"
 LiteralText,Please provide your feedback,"Будь ласка, напишіть свій відгук"
 LiteralText,Please rotate your device to landscape :-),"Будь ласка, поверніть пристрій в альбомний режим :)"
-LiteralText,POLYMORPH,ПЕРЕТВОРЕННЯ
-LiteralText,polymorph entity,
+LiteralText,Polymorph,Перетворення
+LiteralText,polymorph entity,перетворити істоту
 LiteralText,Polymorph into what?,Перетворитися на кого?
-LiteralText,polymorph item,
-LiteralText,polymorph trap,
+LiteralText,polymorph item,перетворити предмет
+LiteralText,polymorph trap,перетворити пастку
 LiteralText,POLYMORPHED,ПЕРЕТВОРЕНИЙ НА
 LiteralText,portal,портал
 LiteralText,PORTALS,ПОРТАЛИ
 LiteralText,porter,портер
-LiteralText,PRAY,МОЛИТИСЯ
+LiteralText,POSITIVE,ПОЗИТИВНІ
+LiteralText,Pray,Молитися
 LiteralText,preservation,збереження
-LiteralText,prevent revenant levels,заборонити набір рівнів повсталими
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,Заборонити набір рівнів привидам
+LiteralText,Previous character,
 LiteralText,prisoner,в'язень
 LiteralText,probability,ймовірність:
 LiteralText,PROMOTE,ПІДВИЩИТИ
 LiteralText,PROPERTIES,ВЛАСТИВОСТІ
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,карає
 LiteralText,PUNISHED,ПОКАРАНИЙ
 LiteralText,punishment?,покарання?
 LiteralText,PUNISHMENTS,ПОКАРАННЯ
+LiteralText,Purchase,
 LiteralText,QUANTITY,КІЛЬКІСТЬ
-LiteralText,QUICK LOAD,ШВИДКО ЗАВАНТАЖИТИ
-LiteralText,QUICK SAVE,ШВИДКО ЗБЕРЕГТИ
+LiteralText,QUESTS,КВЕСТИ
+LiteralText,Quick load,Швидко завантажити
+LiteralText,Quick save,Швидко зберегти
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,покинув
-LiteralText,QUIT,ЗАЛИШИТИ
+LiteralText,Quit,ЗАЛИШИТИ
 LiteralText,R//replica symbol,<репл.>
 LiteralText,race,раса
 LiteralText,RACES,РАСИ
 LiteralText,random,випадково
-LiteralText,RANDOM,ВИПАДКОВО
-LiteralText,random dungeon seed,випадкове насіння підземелля
-LiteralText,random level,
+LiteralText,random level,випадковий рівень
 LiteralText,random points,очок випадкового вміння
+LiteralText,random seed,випадкове насіння підземелля
 LiteralText,rank,місце
 LiteralText,rarity,рідкість
 LiteralText,rate & review on the app store,Поставте оцінку та напишіть відгук.
-LiteralText,RE-ACT,ПОВТОР ДІЇ
-LiteralText,RE-CAST,ПОВТОР ЗАКЛИНАННЯ
-LiteralText,RE-EQUIP,ПОВТОР ВДЯГНЕННЯ
+LiteralText,Re-act,Повтор дії
+LiteralText,Re-cast,Повтор заклинання
+LiteralText,Re-equip,Повтор вдягнення
 LiteralText,Re-roll,Перекинути
-LiteralText,re-rolls,перекинути
-LiteralText,RE-USE,ПОВТОР ВИКОРИСТАННЯ
+LiteralText,re-rolls,перекидів
+LiteralText,Re-use,Повтор використання
 LiteralText,Read books to learn spells,Читай книги для вивчення заклинань
-LiteralText,READ!,ЧИТАТИ!
-LiteralText,REAL-TIME,РЕАЛЬНИЙ ЧАС
+LiteralText,Read!,Читати!
+LiteralText,Real-time,Реальний час
 LiteralText,REALLY CRASH?,ДІЙСНО ЗЛАМАТИ?
 LiteralText,recall party,відкликає
 LiteralText,Recommend Pathos,Порекомендуйте Pathos
 LiteralText,Redo,Повернути назад
 LiteralText,reflects,відбиває
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,РЕЄСТРАЦІЯ
 LiteralText,REGISTER PLAYER HANDLE,РЕЄСТРАЦІЯ ГРАВЦЯ
 LiteralText,reinforced,зміцнений
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,ЗМІЦНЕНИЙ
 LiteralText,release entity,випустити
 LiteralText,remove all transients,знімає всі тимчасові
 LiteralText,remove curse,знімає прокляття
-LiteralText,REMOVE CURSE,ЗНЯТИ ПРОКЛЯТТЯ
 LiteralText,remove random resistance,прибирає випадкову стійкість
 LiteralText,remove random talent,прибирає випадковий талант
 LiteralText,remove with,позбутися за допомогою
 LiteralText,remove with boulder,закрити брилою
 LiteralText,REMOVE//container,ВИЙНЯТИ
-LiteralText,REMOVE//equipment,ЗНЯТИ
+LiteralText,Remove//equipment,Зняти
 LiteralText,RENAME,ПЕРЕЙМЕНУВАТИ
 LiteralText,RENAME CHARACTER,ПЕРЕЙМЕНУВАТИ ПЕРСОНАЖА
 LiteralText,RENAME ITEM,ПЕРЕЙМЕНУВАТИ ПРЕДМЕТ
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,відновити життя
 LiteralText,replenish mana,відновити ману
 LiteralText,replica,копія
 LiteralText,replicate item,копіює цінність
+LiteralText,Report faults,Звітувати про помилку
 LiteralText,requires the skill to pick locks,необхідно вміння злому
 LiteralText,reset random equipment,обнулює випадкове спорядження
+LiteralText,Reset to defaults,
 LiteralText,resident?,ОБИВАТЕЛЬ
 LiteralText,resistances,стійкість
 LiteralText,RESISTS,СТІЙКІСТЬ
 LiteralText,Rest,Відпочинок
 LiteralText,Rest how many turns?,ВІдвочивати скільки ходів?
+LiteralText,Rest once,
 LiteralText,restarting to update,перезавантаження для оновлення
 LiteralText,restock shop items,поновлює асортимент
 LiteralText,restore ability,відновлює характеристику
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Воскресити і продовжити
 LiteralText,resurrections,воскрешень
 LiteralText,retaliations,контрнапад
 LiteralText,RETURN,ПОВЕРНУТИСЯ
-LiteralText,REVEAL,РОЗКРИТИ
+LiteralText,Reveal,Розкрити
 LiteralText,REVEAL ALL MAPS,ВІДКРИТИ ВСІ КАРТИ
 LiteralText,REVEAL THIS MAP,РОЗКРИТИ ЦЮ КАРТУ
 LiteralText,revealed,виявлено
-LiteralText,revenant,повсталий/ла
-LiteralText,REVERT,ВЕРНУТИ НАЗАД
+LiteralText,revenant,привид
+LiteralText,Revert,Вернути назад
+LiteralText,Right,
 LiteralText,RIGHT RING,ПРАВИЙ ПЕРСТЕНЬ
 LiteralText,rigid,жорсткий
 LiteralText,ROTATE,ПОВЕРНУТИ
-LiteralText,route entity,
+LiteralText,route entity,направити істоту
 LiteralText,rumour,чутка
 LiteralText,sacrifice item,приносить жертву
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,ПЕРЕВІРКА ЦІЛОСНОСТІ
 LiteralText,SAVE,ЗБЕРЕГТИ
 LiteralText,SAVE & QUIT,ЗБЕРЕГТИ І ВИЙТИ
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,ЗБЕРЕЖЕНІ ПРИГОДИ
 LiteralText,SAVED BONES,ЗБЕРЕЖЕНІ КІСТКИ
 LiteralText,school,школа
-LiteralText,scrap,розібрати
-LiteralText,SCRAP,РОЗІБРАТИ
+LiteralText,Scrap,Розібрати
 LiteralText,SEALED,ЗАКОРКОВАНО
 LiteralText,Search,Шукати
 LiteralText,Search how many turns?,Шукати скільки ходів?
+LiteralText,Search once,
 LiteralText,searching,шукає
 LiteralText,secret,секрет
 LiteralText,SECRET,СЕКРЕТ
 LiteralText,seed,насіння
+LiteralText,Select,Обрати
 LiteralText,SELECT ATMOSPHERE,ВИБЕРІТЬ АТМОСФЕРУ
-LiteralText,Select Companion Tile,Обрати портрет Компаньона
+LiteralText,Select Companion Tile,Обрати портрет компаньона
 LiteralText,Select Hero Tile,Обрати портрет Героя
 LiteralText,SELECT ITEM,ВИБЕРІТЬ ПРЕДМЕТ
-LiteralText,SELECT LANGUAGE,ВИБЕРІТЬ МОВУ
 LiteralText,SELECT MAP,ВИБЕРІТЬ МАПУ
-LiteralText,SELECT PORTRAIT,ВИБЕРІТЬ ПОРТРЕТ
 LiteralText,SELECT RESIDENT,ВИБЕРІТЬ ОБИВАТЕЛЯ
 LiteralText,SELECT SQUARE,ВИБЕРІТЬ ПЛОЩУ
-LiteralText,SELECT TILESET,ВИБЕРІТЬ ГРАФІКУ
 LiteralText,self,себе
+LiteralText,Self menu,
 LiteralText,SELL,ПРОДАТИ
 LiteralText,SELL ALL,ПРОДАЮ ВСЕ
 LiteralText,SEND,НАДІСЛАТИ
 LiteralText,Send me an email,Надішліть мені електронного листа
-LiteralText,SERVICES,ПОСЛУГИ
+LiteralText,Services,Послуги
 LiteralText,SET DIFFICULTY,УСТАНОВИТИ СКЛАДКІСТЬ
 LiteralText,set starting location,встановити стартову локацію
-LiteralText,SETTINGS,НАЛАШТУВАННЯ
+LiteralText,Settings,Налаштування
 LiteralText,sfx volume,гучн. звук. ефектів
-LiteralText,SHARE//exchange,ДІЛИТИСЯ
+LiteralText,Share//exchange,Ділитися
 LiteralText,SHARE//publish,ДІЛИТИСЯ
 LiteralText,SHOPS,МАГАЗИНИ
 LiteralText,Show debugging information,Показати дані відладки
@@ -3671,10 +3832,10 @@ LiteralText,SIGN-IN,ЛОГІН
 LiteralText,size,розмір
 LiteralText,skills,навички
 LiteralText,SKILLS,ВМІННЯ
-LiteralText,SLIDE,З'ЇХАТИ
+LiteralText,Slide,З'їхати
 LiteralText,Slide which direction?,З'їхати в який бік?
 LiteralText,slower animations,уповільнені анімації
-LiteralText,SONICS,ЗВУКОВЕ
+LiteralText,SONICS,ЗВУКИ
 LiteralText,"Sorry, this device is a bit too small :-(","Вибачте, цей прилад трошки замаленький :-("
 LiteralText,SOUND BOARD,КЕРУВАННЯ ЗВУКОМ
 LiteralText,Sound on/off,Звук вмк/вимк
@@ -3686,17 +3847,17 @@ LiteralText,special,особливе
 LiteralText,SPECIALS,ОСОБЛИВІ
 LiteralText,speed,швидкість
 LiteralText,SPEED,ШВИДКІСТЬ
-LiteralText,SPELL,ЗАКЛИНАННЯ
+LiteralText,Spell,Заклинання
 LiteralText,SPELLS,ЗАКЛИНАННЯ
 LiteralText,Square,Площа
 LiteralText,stack,заповнити повністю
 LiteralText,START,СТАРТ
 LiteralText,Start a game to be joined by other players.,Розпочніть гру приєднавшись до інших гравців
 LiteralText,Start new adventure,Почати нову пригоду
-LiteralText,start without companion,почати без компаньйона
+LiteralText,Start without companion,Почати без компаньйона
 LiteralText,starvation,голод
 LiteralText,starved,виснажений
-LiteralText,STAY,СТІЙ ТУТ
+LiteralText,Stay,Стій тут
 LiteralText,steal,краде
 LiteralText,STOP,СТОП
 LiteralText,storage,сховище
@@ -3706,68 +3867,75 @@ LiteralText,STUDIO QUESTS,СТУДІЯ ЗАВДАНЬ
 LiteralText,SUBMIT,ЗАПРОПОНУВАТИ
 LiteralText,summon,закликає істота
 LiteralText,SUSTAINED,ЗАКРІПЛЕНІ
-LiteralText,SWAP,ПОСУНЬСЯ
-LiteralText,SWITCH,ПЕРЕМКНУТИ
+LiteralText,Swap,Посунься
+LiteralText,Switch,Перемкнути
 LiteralText,symptoms,симптоми
 LiteralText,Table of Contents,Зміст
-LiteralText,TAKE,ВЗЯТИ
+LiteralText,Take,Взяти
 LiteralText,TAKE ALL,ВЗЯТИ ВСЕ
 LiteralText,talents,таланти
 LiteralText,TALENTS,ТАЛАНТИ
-LiteralText,TALK,
+LiteralText,Talk,Говорити
 LiteralText,target,ціль
-LiteralText,TELEKINESIS,ТЕЛЕКІНЕЗ
+LiteralText,Telekinesis,Телекінез
 LiteralText,Telekinesis which direction?,Застосувати телекінез у який бік?
 LiteralText,Telekinesis which object?,Застосувати телекінез до...
-LiteralText,TELEPORT,ТЕЛЕПОРТ
+LiteralText,Teleport,Телепорт
+LiteralText,Teleport end,
 LiteralText,teleport entity,переміщує персонажа
 LiteralText,teleport item away,телепортує геть
 LiteralText,Teleport to where?,Переміститися куди?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,ТЕРМІНАЛ
 LiteralText,terrain,земля
 LiteralText,The attack score is your aptitude for hitting an opponent.,Індекс атаки - це ваша спроможність влучити по супротивникові.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,"Виклик полягає в тому, щоб поліпшити механіку, зберігши душу того, що є найкращою грою всіх часів."
+LiteralText,The damage you do to an opponent upon a successful attack.,Скільки ушкодження ви нанесете супротивнику.
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Індекс захисту - це наскільки ви захищені від влучення суперником.
 LiteralText,There is a new update available!,Є оновлення!
 LiteralText,there is nothing to place here,тут не можна нічого покласти в контейнер
 LiteralText,there is nothing to remove here,тут нема чого витягати з контейнера
 LiteralText,there is nothing to trade with this merchant,нема чим торгувати з цим торговцем
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",Ця демоверсія являє собою підземелля із 16 рівнів; успішне проходження займає 2–3 години. Це підземелля є частиною одного з чотирьох модулів повної гри та пропонує складний і показовий ігровий досвід.
 LiteralText,this level,цей рівень
 LiteralText,this merchant has no stock to trade,цей торговець не має нічого на продаж
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Це ім'я буде використано для запису ваших досягнень в Залі Слави.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Цим ​​сім'ям генерації можна поділитися з друзями і позмагатися з ними в одному і тому ж підземелля.
 LiteralText,threw,жбурнув
-LiteralText,THROW,ЖБУРНУТИ
+LiteralText,Throw,Жбурнути
+LiteralText,TILESET,ВИБЕРІТЬ ГРАФІКУ
 LiteralText,tin,консерви
 LiteralText,tinning,консервує
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,ЗАНАДТО ВЕЛИКА
 LiteralText,TOO HEAVY,ЗАНАДТО ВАЖКИЙ
 LiteralText,TOO HUNGRY,ЗАНАДТО ГОЛОДНИЙ
 LiteralText,TOO SMALL,ЗАНАДТО МАЛИЙ
 LiteralText,TOO WEAK,ЗАНАДТО СЛАБКИЙ
-LiteralText,TRACKS,СЛІДИ
-LiteralText,TRADE,ТОРГ
+LiteralText,TRACKS,КОМПОЗИЦІЇ
+LiteralText,Trade,Торг
 LiteralText,transform to,трансформувати на
 LiteralText,transients,тимчасові ефекти
 LiteralText,TRANSIENTS,ТИМЧАСОВІ ЕФЕКТИ
 LiteralText,transition,перехід
 LiteralText,TRANSLATIONS,ПЕРЕКЛАДИ
-LiteralText,transport entity,
+LiteralText,transport entity,переправити істоту
 LiteralText,TRAP,ПАСТКА
 LiteralText,trap?,пастка
 LiteralText,trapped,в пастці
 LiteralText,TRAPPED,В ПАСТЦІ
 LiteralText,trapped container,контейнер з пасткою
 LiteralText,trapped door,двері з пасткою
-LiteralText,TRIGGER,СПРАЦЮВАЛА
+LiteralText,Trigger,Спрацювала
 LiteralText,trigger once,спрацьовує один раз
 LiteralText,trigger unlimited times,спрацьовує необмежену кількість разів
 LiteralText,truth,довіру
-LiteralText,TUNNEL,ТУНЕЛЬ
+LiteralText,Tunnel,Тунель
 LiteralText,Tunnel which direction?,В якому напрямку прокласти тунель?
-LiteralText,TURN-BASED,покрокова
+LiteralText,Turn-based,покрокова
 LiteralText,turns,ходи
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,"Введіть будь-яке слово або фразу, щоб згенерувати випадкове зернятко підземелля."
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,"Введіть будь-яке слово або фразу, щоб згенерувати випадкове зернятко підземелля."
 LiteralText,unable to load,не можу завантажити
 LiteralText,unafflict,знимає пороблене
 LiteralText,UNDEAD,МРЕЦЬ
@@ -3775,16 +3943,20 @@ LiteralText,Undo,Скасувати сподіваюся
 LiteralText,unidentified items,непізнані речі
 LiteralText,unique,унікальний
 LiteralText,UNIQUES,УНІКАЛЬНІ
-LiteralText,UNLOCK,ВІДІМКНУТИ
+LiteralText,unknown effects,
+LiteralText,Unlock,Відімкнути
 LiteralText,unlock door or container,відімкнути двері або контейнер
-LiteralText,UNLOCKED,ВІДІМКНУТИЙ
+LiteralText,Unlocked,Відімкнутий
 LiteralText,unpolymorph,знімає перетворення
 LiteralText,unpunish,знімає покарання
 LiteralText,unskilled,невмілий
 LiteralText,UNSKILLED,НЕВМІЛИЙ
 LiteralText,unstuck,вибратись
-LiteralText,UNTRAP,ЗНЕШКОДИТИ
+LiteralText,Untrap,Знешкодити
 LiteralText,UNTRAPPED,ЗНЕШКОДЖЕНО
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,є оновлення
 LiteralText,update cancelled,оновлення скасовано
 LiteralText,update failed,Не вдалося оновити.
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,ОНОВЛЕННЯ
 LiteralText,upgrade to,поліпшити до
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,"Використання зернятка означає, що ви не будете мати право на Зал Слави."
 LiteralText,Vanity,Марнославство
+LiteralText,Victory!,Перемога!
 LiteralText,VIEW,ОГЛЯД
 LiteralText,visit shop,відвідати крамницю
 LiteralText,visit shrine,відвідати святилище
-LiteralText,Visit the website,Відвідайте вебсайт
 LiteralText,visit zoo,відвідати зоопарк
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
-LiteralText,volatile,
+LiteralText,volatile,леткий
 LiteralText,VOLATILES,ЛЕТКІ
 LiteralText,vomit nutrition,блює
 LiteralText,vulnerable to,вразливий до
-LiteralText,WAIT,ЧЕКАТИ
+LiteralText,Wait,Чекати
 LiteralText,Wait how many turns?,Чекати скільки ходів?
-LiteralText,warping,скручує
-LiteralText,WARPING,УВАГА
+LiteralText,Warping,Увага
 LiteralText,was killed,було вбито
 LiteralText,weakness to,слабкий до
 LiteralText,weight,вага
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,знищення
 LiteralText,WON'T EAT,НЕ ЇСТИМЕ
 LiteralText,WORKBENCH MATERIALS,РОБОЧІ МАТЕРІАЛИ
 LiteralText,World,Світ
-LiteralText,WORLD,СВІТ
 LiteralText,WRONG WAY,НЕ В ТОЙ БІК
 LiteralText,"You are playing as anonymous, please register!","Ви граєте анонімно, будь ласка, зареєструйтеся"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,"Коли вам знадобиться ВІДШУКАТИ секретні двері, використовуйте кнопку з ОКОМ."
 LiteralText,Your current movement and action speed in squares per second.,Ваша поточна швидкість руху і дій у клітинах на секунду.
-LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
+LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.","Zeroth - це дебютна гра моєї нової студії Contrary Games. Це духовний наступник для Pathos, але з анімаціями паперових ляльок, платформером в реальному часі, симуляцією фізики та таким же глибоким, реграбельним геймплеєм."
 LiteralText,ZOOM,ЗБІЛЬШЕННЯ
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,ЗООПАРК
 LiteralText,zZz,Хр-р-р
 LocalityName,area,місцина
@@ -3871,45 +4043,47 @@ MaterialName,vegetable,овоч
 MaterialName,water,вода
 MaterialName,wax,віск
 MaterialName,wood,деревина
-MeasurementSystemName,imperial,англійська
-MeasurementSystemName,metric,метрична
+MeasurementSystemName,imperial units,англійська
+MeasurementSystemName,metric units,метрична
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,"Спустіться в процедурно-згенеровані підземелля і печери. Нескінченна реіграбельность, рекомендовано для новачків в Pathos."
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Досліджуйте величезну, процедурно згенеровану карту місцевості, що містить побічні підземелля, складні декорації та захоплюючі зустрічі."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Створені вручну карти для пригод на поверхні. Вийдіть з підземелля і відправтеся на виконання Квесту.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"На вас чекають цікаві кімнати, але не затримуйтеся; маєте спускатися або померти. Основане на генераторі з Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Пісочниця для експериментів з ігровою механікою Pathos. Пограйте з кожною річчю, пастками і механізмами нашого підземелля на простий двокімнатній карті."
-ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
-ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
-ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
-ModuleDialogue,Goodbye.,
-ModuleDialogue,Have you noticed that there's too many gnomes around here?,
-ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,
-ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.",
-ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.",
-ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,
-ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.",
-ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.",
-ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,
-ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.",
-ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,
-ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.",
-ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,
-ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,
-ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!",
-ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.",
-ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!",
-ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,
-ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,
-ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.",
-ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.",
-ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,
-ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,
-ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.","Досліджуйте небезпечні підземелля, щоб знайти Майнтаун, та ретельно готуйтесь подолати глибини Андердіпу."
+ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,"Є якісь новини з поверхні? Я тут так довго, що сумую за світлом сонця та погодою."
+ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,"Чи знали ви, що половина речей, які продає торговець, отримана з трупів шукачів пригод таких як ти?"
+ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Всі говорять про вторгнення орків, але я не вірю, що це колись станеться."
+ModuleDialogue,Goodbye.,Допобачення.
+ModuleDialogue,Have you noticed that there's too many gnomes around here?,"Чи помічали ви, що тут забагато гномів?"
+ModuleDialogue,I can't believe I have to explain this but make sure you have a pick-axe before going into the mines. You can even craft one at the town workbench with plenty of scrap iron.,"Я не можу повірити, що мені доводиться пояснювати це, але переконайся, що в тебе є кайло, перш ніж йти до шахт. Ти навіть можеш створити одну на міському верстаці з купки металу."
+ModuleDialogue,"I don't know why adventurers think they can shoot, shoot, shoot around the town with their arrows and darts. We are fed up with it, so even an accidental strike on our townsfolk will be met with deadly force.","Я не знаю, чого шукачі пригод думають, що вони можуть стріляти, стріляти, стріляти навколо міста своїми стрілами чи дротиками. Ми вже ситі цим по горло, тож навіть випадкове попадання по одному з жителів буде призведе до застосування нищивної сили."
+ModuleDialogue,"I swear you adventurers are harbingers of misfortune! Every time one of you degenerates turns up, we lose a dozen men.","Присягаюся, ви шукачі пригод - провісники лиха! Кожен раз, коли один з вас, дегенератів, з'являється, ми втрачаємо з десяток людей."
+ModuleDialogue,I'm tired and my feet hurt! I can't wait for this patrol to be over so I can go to bed.,"Я втомився і в мене болять ноги! Не можу дочекатись, коли патруль закінчиться і я зможу піти до ліжка."
+ModuleDialogue,"I've been told that there is a dwarven city underneath the gnomish mines. That's not a journey I will ever want to take - too many smelly, short people down there for my liking.","Мені сказали, що під шахтами гномів знаходиться дварфійське місто. Це не та подорож, яку я коли-небудь захочу здійснити - забагато смердючих, коротких людей, як на мене."
+ModuleDialogue,"Keep an eye out for illusionary cave walls because pesky gnomish wizards have been at work recently. Absolute pests, the lot of them.","Звертайте увагу на химерні стіни печер, бо надокучливі маги гноми нещодавно попрацювали."
+ModuleDialogue,Make sure you trade with the town merchants and support the local economy! I wouldn't recommend doing it on an empty stomach though.,"Обов'язково, торгуйте з міськими торговцями та підтримуйте місцеву економіку! До речі, не радив би вам це робити на голодний шлунок."
+ModuleDialogue,"Sometimes, powerful and famous heroes from across the lands grace us with their presence... I'll let you know if I see one today.","Іноді, могутні та відомі герої, з далеких земель, благословляють нас своєю присутністю... Я дам тобі знати, коли побачу такого сьогодні."
+ModuleDialogue,Stay out of my way! I'm on an important patrol and you adventurers are always blocking my path.,"Геть з дороги! Я на важливому патрулюванні, а ви, ризиканти, завжди стоїте на дорозі."
+ModuleDialogue,"The **Oracle** stares at you in mute sympathy, entirely unnerving you with her sorrowful expression.||Fate must have something truly *unpleasant* planned for you.","**Оракул** дивиться на вас з німим співчуттям, повністю нервуючи вас своїм сумним виразом обличчя.||Доля, мабуть, приготувала для вас щось справді *неприємне*."
+ModuleDialogue,The food is so lousy here. Why do you think we kill monsters and have that workbench in the middle of town?,"Їжа тут така паршива. Як ти гадаєш, чому ми вбиваємо монстрів та маємо цей верстак посеред міста?"
+ModuleDialogue,The mines are a dangerous place to travel alone so you should consider hiring some of the local mercenaries to help you out. Be aware though that they are only reliable up until your coin runs out.,"Шахти - небезпечне місце, щоб подорожувати одному. Вам варто взяти місцевих найманців на допомогу. Тільки майте на увазі, що на них можна покластися, допоки у вас не закінчаться монети."
+ModuleDialogue,"The town shrine offers many boons to the virtuous adventurer, make sure you visit today and donate any spare coins. Bless you adventurer on your travels!","Міська святиня пропонує багато благ для доброчесних авантюристів. Обов'язково навідайтеся туди та пожертвуйте зайвою монетою. Благословляю вас, шукачу пригод, у ваших подорожах!"
+ModuleDialogue,"The Watch and the Merchant Guild have a long-standing agreement, so don't get any funny ideas.","Варта та торгова гільдія мають давню угоду, тож не вигадуй безглиздих ідей."
+ModuleDialogue,"There's a gem-rush going on in the mines below town. Expensive gemstones just lying around, not the usual worthless pieces of glass!","В шахтах під містом зараз коштовна лихоманка. Дорогоцінне каміння валяється навкруги, а не те нікудишнє скло, як зазвичай!"
+ModuleDialogue,There's a staircase to the mines in the caves outside of town. Maybe you should go down and never come back?,В печері за містом є сходи до шахти. Може тобі краще спуститись і ніколи не повертатись?
+ModuleDialogue,This is my last patrol before my retirement from the Watch. I sure hope nothing untoward happens!,"Це мій останній патруль перед відставкою з варти. Я дуже сподіваюся, що нічого поганого не станеться!"
+ModuleDialogue,"This town is a wonderful place to spend time and prepare yourself for your journey ahead. Don't be in a rush to leave here, there's plenty of things to see and do before you delve further into the dungeon.","Це місто – чудове місце, щоб провести час та підготуватися до майбутньої подорожі. Не квапся йти звідси, є багато речей, які можна побачити та зробити, перш ніж ви заглибитесь у підземелля."
+ModuleDialogue,"Watch your step when you first enter the mines, those sneaky gnomish bastards love to ambush an unprepared adventurer.","Дивіться під ноги, коли вперше заходите до шахт. Ці підступні гномські покидьки люблять влаштовувати засідку на непідготовленого шукача пригод."
+ModuleDialogue,Why don't you go play in the caves outside of town? There's lots of free stuff to collect but be aware that we don't patrol outside of town so make sure you can run back if you get into any trouble.,"Чому б вам не погратись в печерах за містом? Там багато безкоштовних речей для збору, але знайте, що ми не патрулюємо за містом, тож переконайтеся, що зможете повернутись, якщо втрапите у неприємності."
+ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to get this uniform wet so if you splash me I swear: *I will end you.*,"Можете будь ласка перестати гратись у фонтані? Мені заборонено мочити цю форму, то ж якщо ви забризкаєте мене, я клянусь: *Я прикончу тебе.*"
+ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Знаєш, колись я теж був відчайдухою як ти... Може тобі теж варто знайти роботу? Всеж *шукач пригод* просто вишуканий спосіб сказати 'бездомний', або 'безробітний'."
 ModuleName,Dhak Legacy,Спадщина Дхаки
 ModuleName,Kaloi Opus,Опус Калоя
-ModuleName,Nethack Codex,Кодекс «Nethack»
-ModuleName,Pixel Sojourn,Екскурсія до Pixel
+ModuleName,NetHack Codex,Кодекс «NetHack»
+ModuleName,Pixel Sojourn,Екскурсія до «Pixel»
 ModuleName,Sandbox Play,Пісочниця
+ModuleName,Short Dungeon,Коротке підземелля
 ModuleTerm,Abyss,Безодня
 ModuleTerm,Ambush,Засідка
 ModuleTerm,Ant Cave,Печера мурах
@@ -4092,7 +4266,7 @@ MotionPresentName,play,грає
 MotionPresentName,pray,молиться
 MotionPresentName,quaff,випиває
 MotionPresentName,read,читає
-MotionPresentName,recline,відкидається
+MotionPresentName,recline,вмоститись
 MotionPresentName,refill,наповнює
 MotionPresentName,release,випускає
 MotionPresentName,rename,перейменовує
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,глиняні сходи нагору
 PortalName,jade ladder down,нефритові сходи вниз
 PortalName,jade ladder up,нефритові сходи нагору
 PortalName,rift,яма
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,кам'яні сходи вниз
 PortalName,stone staircase up,кам'яні сходи нагору
 PortalName,transportal,транспортал
 PortalName,wooden ladder down,дерев'яні сходи вниз
 PortalName,wooden ladder up,дерев'яні сходи нагору
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,"Мерехтливий магічний щит оточує ваше тіло, посилюючи ваш захист."
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",Покрившись гладкою та жирною смолою  ви просто вислизаєте з рук.
-PropertyDescription,Control when and where you teleport.,"Ви можете контролювати, коли і куди телепортіруетесь."
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,"Божевілля, коли ви кидаєтеся на друзів і ворогів без жодної на те причини."
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.","Ваші характеристики закріплюються таким чином, що вони не здатні ані погіршитися, ані покращитися."
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,Ви вражені жахливою хворобою з дивними симптомами і ледь стримуєте нудоту.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,Дає своєчасне попередження про наближення монстрів і їх рівень загрози.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.","Ви мирно засинаєте і відпочиваєте. В підземеллі, повному монстрів."
+PropertyDescription,Assess the number of charges in an item when you pick it up.,"Ви оцінюєте кількість зарядів в предметі, просто підіймаючи його."
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,"Ви можете контролювати, коли і куди телепортіруетесь."
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",Покрившись гладкою та жирною смолою  ви просто вислизаєте з рук.
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.","Ви прагнете з'їсти якомога більше і знаєте, що ніколи не будете задоволені."
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.","Божевілля, коли ви кидаєтеся на друзів і ворогів без жодної на те причини."
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,"Візуальне сприйняття спотворено, бо ваш мозок перетворює звичайні речі і істот на абсурдні і кошмарні форми."
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,"Покращує ваш зір, дозволяючи вам бачити невидимих ​​істот."
-PropertyDescription,Fainting from lack of food.,В непритомності від нестачі їжі.
-PropertyDescription,Fly above the ground to avoid many types of traps.,Політ над землею і більшістю типів пасток.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Незручність змушує вас упускати зброю під час бою і падати зі сходів.
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,"Це зневага гравітацією вельми корисно при уникненні більшості типів пасток. Якби тільки ви могли дістати до підлоги, коли це потрібно."
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",Політ над землею і більшістю типів пасток.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Променеві атаки і Погляд відбиваються назад в заклинателя.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Дає своєчасне попередження про наближення монстрів і їх рівень загрози.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,Охоплені жахом ви не можете атакувати і повинні бігти.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Горілка вдарила в голову: ви почуваєтеся героєм, здатним гори перевернути, але насправді ледве розумієте, що відбувається навколо."
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,"Ви скрадаєтеся підземеллями так тихо, що можете підкрастися до монстрів, поки вони сплять."
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Запобігає ваше перетворення, але так само не дозволяє повернутися в справжню форму."
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",Охоплені жахом ви не можете атакувати і повинні бігти.
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.","Ваше тіло стає твердіше і жорсткіше, ви немовби перетворюєтеся на камінь. Всі рухи ускладнені, ви почуваєтеся крихким, неначе наступний удар може розібити вас на тисячу уламків."
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,Практика поїдання м'яса і органів тіл істот власної раси вважається моральною в вашій культурі.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,"Ваші сприйняття і обізнаність зростають, дозволяючи знаходити секретні двері і пастки без їх активації."
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,"Це погіршення зору має на увазі, що ви можете бачити речі лише тільки поблизу."
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.","Ви пробуджуєте агресію і жорстокість в усіх навколо. Навіть зазвичай мирні істоти нападають на сусідів. Ця одночасно корисна і небезпечна властивість потребує обережності. Придбавши цю властивість, ви можете відчути зростаючий голод."
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Удосконалена швидкість дозволяє рухатися і атакувати частіше.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,Сама лише Ваша присутність загострює ситуацію на всьому рівні.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,В непритомності від нестачі їжі.
+PropertyDescription,Move objects without physical contact through the power of your mind.,Використання сили розуму для переміщення об'єктів без необхідності фізичної взаємодії.
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",Ви рухаєтеся в моторошній тиші і не можете вимовити ані звука.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.","Ви скрадаєтеся підземеллями так тихо, що можете підкрастися до монстрів, поки вони сплять."
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.","Ваші м'язи застигають в одному положенні, не дозволяючи вам рухатися чи захищатися."
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","Ваше тіло знаходиться на півдорозі між планами існування, тож ви легко проходите крізь стіни, двері та брили"
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",Ваші ноги повні сил і готові до стрибків і походу на великі дистанції.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.","Запобігає ваше перетворення, але так само не дозволяє повернутися в справжню форму."
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,Це глибоке порушення слуху відрізало вас від виразного світу.
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Ваш розум захищено від обманів, трюків та ілюзій"
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Захищає вас від ефектів уповільнення, паралічу та інших обмежень вашого руху."
-PropertyDescription,Recover mana at an increased rate.,Прискорене відновлення мани.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,"Процес оновлення вашого тіла за рахунок швидкого загоєння і зростання. Ваш метаболізм сильно прискорюється і вам необхідно більше їжі, ніж зазвичай."
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Прискорене відновлення мани.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Зменшення швидкості примушує вас рухатися і атакувати рідше.
+PropertyDescription,Resilient to all forms of natural and magical illness.,Ви дуже життєздатні і на вас не діють ніякі хвороби магічного або природного походження.
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,Відроджує вас після смерті з половиною здоров'я за рахунок одного очка статури.
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Ви раптово засинаєте на деякий термін або поки вас не розбудять.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","Телепортація переміщує вашого персонажа в будь-яку точку даного рівня. Коли вона неконтрольована, то додає у вашу подорож несподіванок. Контрольована телепортація дозволяє обирати пункт призначення на карті."
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,Практика поїдання м'яса і органів тіл істот власної раси вважається моральною в вашій культурі.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,"Це дозволяє виявляти присутність та місцезнаходження умів, але тільки коли ви позбавлені зору."
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,"Ваш образ видно не зовсім там, де ви насправді є. Розумним противникам стає набагато важче по вам влучити. Чарівні ефекти, такі як промінь або удар, мають менший шанс влучити по вам."
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Удосконалена швидкість дозволяє рухатися і атакувати частіше.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,"Це погіршення зору має на увазі, що ви можете бачити речі лише тільки поблизу."
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,"Це зневага гравітацією вельми корисно при уникненні більшості типів пасток. Якби тільки ви могли дістати до підлоги, коли це потрібно."
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,"Процес оновлення вашого тіла за рахунок швидкого загоєння і зростання. Ваш метаболізм сильно прискорюється і вам необхідно більше їжі, ніж зазвичай."
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,"Це стан незримості. Коли ви рухаєтеся, то світло лише трошки тремтить, коли проходить крізь ваше тіло; ви помітні тільки зблизька."
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,Це глибоке порушення слуху відрізало вас від виразного світу.
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Зменшення швидкості примушує вас рухатися і атакувати рідше.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,Цей особливий зір дозволяє помічати теплокровних істот в темних областях підземелля.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","Перетворення на іншу істоту, з усіма її перевагами і недоліками. Наприклад, істота без рук, але може літати і вивергати смертельну енергію. Смерть придбаної форми повертає вас у початкове тіло."
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,Використання сили розуму для переміщення об'єктів без необхідності фізичної взаємодії.
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,"Візуальне сприйняття спотворено, бо ваш мозок перетворює звичайні речі і істот на абсурдні і кошмарні форми."
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"Коли ви в сум’ятті, вам складніше приймати рішення. Ви можете рухатися або атакувати в небажаному напрямку, а також ви нездатні чаклувати. При прочитанні сувоїв ви можете переплутати слова, тим самим викликавши непередбачувані ефекти. До того ж, це не дозволяє зосередитися на довготривалому вивченні книг."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","Будучи приголомшеним, ви не можете ходити прямо або виконувати складніші дії, подібно до ефекту сум’ятті."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Ви вражені жахливою хворобою з дивними симптомами і ледь стримуєте нудоту.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Ви мирно засинаєте і відпочиваєте. В підземеллі, повному монстрів."
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Ви прагнете з'їсти якомога більше і знаєте, що ніколи не будете задоволені."
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Ви дуже життєздатні і на вас не діють ніякі хвороби магічного або природного походження.
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Ви добре підготовлені до копання тоннелів і прокладання власного шляху кріз підземелля.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Ви оцінюєте кількість зарядів в предметі, просто підіймаючи його."
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,"Ви можете перетворитися на будь-яку істоту на ваш вибір, маючи при собі контроль перетворень. Цей контроль обмежений істотами, яких ви винищили. Вимушене перетворення буде коштувати вам рівня ситості."
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,"Ви пробуджуєте агресію і жорстокість в усіх навколо. Навіть зазвичай мирні істоти нападають на сусідів. Ця одночасно корисна і небезпечна властивість потребує обережності. Придбавши цю властивість, ви можете відчути зростаючий голод."
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,Ви почуваєтеся неврівноваженим і в будь-який момент можете впасти в лють.
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Ви попереджені про присутність інших істот на даному рівні.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,"Ви визначаєте духовний статус речі, просто піднявши її."
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Ви рухаєтеся в моторошній тиші і не можете вимовити ані звука.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,"Ваші характеристики закріплюються таким чином, що вони не здатні ані погіршитися, ані покращитися."
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"Ваше тіло стає твердіше і жорсткіше, ви немовби перетворюєтеся на камінь. Всі рухи ускладнені, ви почуваєтеся крихким, неначе наступний удар може розібити вас на тисячу уламків."
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","Ваше тіло знаходиться на півдорозі між планами існування, тож ви легко проходите крізь стіни, двері та брили"
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Ваші ноги повні сил і готові до стрибків і походу на великі дистанції.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Сама лише Ваша присутність загострює ситуацію на всьому рівні.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Ваш метаболізм уповільнений і ви потребуєте набагато менше їжі.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Ваш розум захищено від обманів, трюків та ілюзій"
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"Ваші м'язи застигають в одному положенні, не дозволяючи вам рухатися чи захищатися."
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,"Ваші сприйняття і обізнаність зростають, дозволяючи знаходити секретні двері і пастки без їхактивації."
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,"Ваше місцеположення невизначене, тож з невеликим зусиллям ви можете зникати і з’являтися"
+PropertyDescription,Sense the divine status of an item simply by picking it up.,"Ви визначаєте духовний статус речі, просто піднявши її."
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,"Це дозволяє виявляти присутність та місцезнаходження умів, але тільки коли ви позбавлені зору."
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.","Коли ви в сум’ятті, вам складніше приймати рішення. Ви можете рухатися або атакувати в небажаному напрямку, а також ви нездатні чаклувати. При прочитанні сувоїв ви можете переплутати слова, тим самим викликавши непередбачувані ефекти. До того ж, це не дозволяє зосередитися на довготривалому вивченні книг."
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"Будучи приголомшеним, ви не можете ходити прямо або виконувати складніші дії, подібно до ефекту сум’ятті."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.","Мерехтливий магічний щит оточує ваше тіло, посилюючи ваш захист."
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,Ваш метаболізм уповільнений і ви потребуєте набагато менше їжі.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,Цей особливий зір дозволяє помічати теплокровних істот в темних областях підземелля.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.","Горілка вдарила в голову: ви почуваєтеся героєм, здатним гори перевернути, але насправді ледве розумієте, що відбувається навколо."
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,Ви раптово засинаєте на деякий термін або поки вас не розбудять.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.","Ви можете перетворитися на будь-яку істоту на ваш вибір, маючи при собі контроль перетворень. Цей контроль обмежений істотами, яких ви винищили. Вимушене перетворення буде коштувати вам рівня ситості."
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","Перетворення на іншу істоту, з усіма її перевагами і недоліками. Наприклад, істота без рук, але може літати і вивергати смертельну енергію. Смерть придбаної форми повертає вас у початкове тіло."
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.","Телепортація переміщує вашого персонажа в будь-яку точку даного рівня. Коли вона неконтрольована, то додає у вашу подорож несподіванок. Контрольована телепортація дозволяє обирати пункт призначення на карті."
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Ви попереджені про присутність інших істот на даному рівні.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,Незручність змушує вас упускати зброю під час бою і падати зі сходів.
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.","Це стан незримості. Коли ви рухаєтеся, то світло лише трошки тремтить, коли проходить крізь ваше тіло; ви помітні тільки зблизька."
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,Ви почуваєтеся неврівноваженим і в будь-який момент можете впасти в лють.
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,"Ваше місцеположення невизначене, тож з невеликим зусиллям ви можете зникати і з’являтися"
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.","Ваш образ видно не зовсім там, де ви насправді є. Розумним противникам стає набагато важче по вам влучити. Чарівні ефекти, такі як промінь або удар, мають менший шанс влучити по вам."
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,Ви добре підготовлені до копання тоннелів і прокладання власного шляху кріз підземелля.
 PropertyName,aggravation,роздратування
 PropertyName,appraisal,оцінка
 PropertyName,beatitude,блаженство
@@ -4194,7 +4370,7 @@ PropertyName,conflict,конфліктність
 PropertyName,confusion,сум'яття
 PropertyName,dark vision,темний зір
 PropertyName,deafness,глухота
-PropertyName,deflection,відбиття
+PropertyName,deflection,ухилення
 PropertyName,displacement,зміщення
 PropertyName,fainting,непритомність
 PropertyName,fear,переляк
@@ -4210,7 +4386,7 @@ PropertyName,levitation,левітація
 PropertyName,life regeneration,регенерація здоров'я
 PropertyName,lifesaving,порятунок життя
 PropertyName,mana regeneration,регенерація мани
-PropertyName,narcolepsy,нарколепсії
+PropertyName,narcolepsy,нарколепсія
 PropertyName,paralysis,заціпеніння
 PropertyName,petrifying,скам'яніння
 PropertyName,phasing,фазування
@@ -4218,7 +4394,7 @@ PropertyName,polymorph,перетворення
 PropertyName,polymorph control,контроль перетворення
 PropertyName,quickness,швидкість
 PropertyName,rage,лють
-PropertyName,reflection,відображення
+PropertyName,reflection,відбиття
 PropertyName,searching,пошук
 PropertyName,see invisible,бачити невидимих
 PropertyName,sickness,хвороба
@@ -4243,7 +4419,7 @@ PunishmentDescription,All your knowledge has disappeared and retaining new infor
 PunishmentDescription,Everything you touch will quite literally turn into gold.,"Все, чого ви торкаєтеся, буквально перетворюється на золото"
 PunishmentDescription,"Malevolence and ghostly blackness seeps from your fingertips, corrupting all that you touch.",Злість і примарна чорнота проникає з ваших пальців розбещуючи все чого ви торкаєтесь.
 PunishmentDescription,"This derangement makes you prone to fits of rage, hallucination, fear, agitation and the occasional act of cannibalism.","Це безумство робить вас схильним до нападів люті, переляку, паніки, галюцинацій і випадкових актів канібалізму."
-PunishmentDescription,This formal rejection means your actions will not be rewarded and your prayers will be unanswered.,"Це офіціальне відлучення означає, що ваші дії не будуть винагороджені, а на ваші молитви ніхто не відповість."
+PunishmentDescription,This formal rejection means your actions will not be rewarded and your prayers will be unanswered.,"Це формальне відторгнення означає, що ваші дії не будуть винагороджені, а на ваші молитви ніхто не відповість."
 PunishmentDescription,This malaise has rendered you completely unable to read or write.,Через цю недугу ви абсолютно нездатні читати і писати.
 PunishmentDescription,You are marked as a criminal and wanted by authorities.,"Вас позначено злодієм, і ви розшукуєтеся владою."
 PunishmentDescription,You are overwhelmed by the compulsion to eat and consume anything that you find.,"Ви маєте нездоланну потребу в їжі і поглинаєте все, що знаходите."
@@ -4255,7 +4431,7 @@ PunishmentName,illiteracy,безграмотність
 PunishmentName,malignant aura,аура зла
 PunishmentName,midas touch,мідасів дотик
 PunishmentName,psychosis,психоз
-PunishmentName,shunning,відлучення
+PunishmentName,shunning,ізольований
 PunishmentName,thirst,спрага
 PunishmentName,wanted,в розшуку
 QualificationCode,c,ч
@@ -4263,7 +4439,7 @@ QualificationCode,e,е
 QualificationCode,m,м
 QualificationCode,p,у
 QualificationCode,s,з
-QualificationName,champion,чемпіони
+QualificationName,champion,чемпіон
 QualificationName,expert,експерт
 QualificationName,master,майстер
 QualificationName,proficient,умілий
@@ -4271,21 +4447,21 @@ QualificationName,specialist,фахівець
 RaceName,angel//female,янголиця
 RaceName,angel//male,янгол
 RaceName,angel//non-binary,янгол
-RaceName,changeling//female,змінець
+RaceName,changeling//female,змінниця
 RaceName,changeling//male,змінець
 RaceName,changeling//non-binary,змінець
 RaceName,demon//female,демониця
 RaceName,demon//male,демон
 RaceName,demon//non-binary,демон
-RaceName,dracon//female,
-RaceName,dracon//male,
-RaceName,dracon//non-binary,
-RaceName,dwarf//female,дварфка
+RaceName,dracon//female,дракониця
+RaceName,dracon//male,дракон
+RaceName,dracon//non-binary,дракон
+RaceName,dwarf//female,дварфійка
 RaceName,dwarf//male,дварф
 RaceName,dwarf//non-binary,дварф
-RaceName,echo//female,еха
-RaceName,echo//male,ехо
-RaceName,echo//non-binary,ехо
+RaceName,echo//female,луна
+RaceName,echo//male,лун
+RaceName,echo//non-binary,луна
 RaceName,elf//female,ельфка
 RaceName,elf//male,ельф
 RaceName,elf//non-binary,ельф
@@ -4298,7 +4474,7 @@ RaceName,fairy//non-binary,фей
 RaceName,giant//female,гігантка
 RaceName,giant//male,гігант
 RaceName,giant//non-binary,гігант
-RaceName,gnoll//female,гнолиха
+RaceName,gnoll//female,гнолиця
 RaceName,gnoll//male,гнол
 RaceName,gnoll//non-binary,гнол
 RaceName,gnome//female,гномеса
@@ -4307,22 +4483,22 @@ RaceName,gnome//non-binary,гном
 RaceName,goblin//female,гоблінша
 RaceName,goblin//male,гоблін
 RaceName,goblin//non-binary,гоблін
-RaceName,halfling//female,напівзросля
-RaceName,halfling//male,напівзрослик
-RaceName,halfling//non-binary,напівзрослик
+RaceName,halfling//female,напіврослиця
+RaceName,halfling//male,напіврослик
+RaceName,halfling//non-binary,напіврослик
 RaceName,human//female,людина
 RaceName,human//male,людина
 RaceName,human//non-binary,людина
-RaceName,kobold//female,кобольдиха
+RaceName,kobold//female,кобольдиця
 RaceName,kobold//male,кобольд
 RaceName,kobold//non-binary,кобольд
-RaceName,leprechaun//female,лепрекониха
+RaceName,leprechaun//female,лепреконша
 RaceName,leprechaun//male,лепрекон
 RaceName,leprechaun//non-binary,лепрекон
 RaceName,lizardman//female,людина-ящірка
 RaceName,lizardman//male,людина-ящірка
 RaceName,lizardman//non-binary,людина-ящірка
-RaceName,minotaur//female,мінотавр
+RaceName,minotaur//female,мінотавриця
 RaceName,minotaur//male,мінотавр
 RaceName,minotaur//non-binary,мінотавр
 RaceName,nymph//female,німфа
@@ -4337,9 +4513,9 @@ RaceName,orc//non-binary,орк
 RaceName,plasmoid//female,плазмоїд
 RaceName,plasmoid//male,плазмоїд
 RaceName,plasmoid//non-binary,плазмоїд
-RaceName,robot//female,
-RaceName,robot//male,
-RaceName,robot//non-binary,
+RaceName,robot//female,робот
+RaceName,robot//male,робот
+RaceName,robot//non-binary,робот
 RaceName,satyr//female,сатирка
 RaceName,satyr//male,сатир
 RaceName,satyr//non-binary,сатир
@@ -4491,7 +4667,7 @@ SkillName,divination,ворожба
 SkillName,dual wielding,парна зброя
 SkillName,enchantment,зачарування
 SkillName,evocation,втілення
-SkillName,firearms,вогнепальну зброю
+SkillName,firearms,вогнепальна зброя
 SkillName,flail,ціпи
 SkillName,hammer,молоти
 SkillName,heavy armour,важкі обладунки
@@ -4506,7 +4682,7 @@ SkillName,medium armour,середні обладунки
 SkillName,medium blade,середні клинки
 SkillName,music,музика
 SkillName,necromancy,некромантія
-SkillName,pick,копання
+SkillName,pick,кирка
 SkillName,polearm,держакова зброя
 SkillName,riding,верхова їзда
 SkillName,sling,пращі
@@ -4563,6 +4739,7 @@ SonicName,explosion,вибух
 SonicName,fizzle,пшик
 SonicName,flash,спалах
 SonicName,flute,флейта
+SonicName,focus tap,
 SonicName,food,їжа
 SonicName,footsteps,кроки
 SonicName,force,сила
@@ -4676,7 +4853,7 @@ SpecialDescription,Gifted with extrasensory perception to identify entities othe
 SpecialDescription,"Highly attuned servants of elemental earth, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії землі, вони можуть викликати вибухові сфери для знищення своїх ворогів."
 SpecialDescription,"Highly attuned servants of elemental flame, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії вогню, вони можуть викликати вибухові сфери для знищення своїх ворогів."
 SpecialDescription,"Highly attuned servants of elemental frost, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії морозу, вони можуть викликати вибухові сфери для знищення своїх ворогів."
-SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії блискавки, вони можуть викликати вибухові сфери для знищення своїх ворогів."
+SpecialDescription,"Highly attuned servants of elemental shock, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії шоку, вони можуть викликати вибухові сфери для знищення своїх ворогів."
 SpecialDescription,"Highly attuned servants of elemental water, they can conjure exploding spheres to destroy their enemies.","Високо налаштовані служителі стихії води, вони можуть викликати вибухові сфери для знищення своїх ворогів."
 SpecialDescription,Lifetime of study has focused on learning from books at the cost of other hobbies and fitness.,Життя присвячене вивченню книг. Звичайно ж ціною інших захоплень та фізичних тренувань.
 SpecialDescription,Main character syndrome has resulted in a reliance on plot armour but they are destined for a major reality check.,"Синдром головного героя призвів до залежності від сюжетної броні, але у житті кожного настає момент коли доводиться зіткнутися з суворою реальністю."
@@ -4718,13 +4895,13 @@ SpellName,create familiar,створення фамільяра
 SpellName,crushing sphere,сфера нищення
 SpellName,curing,зцілення
 SpellName,darkness,темрява
-SpellName,deflection,відбиття
+SpellName,deflection,ухилення
 SpellName,detect food,виявлення їжі
 SpellName,detect monsters,виявлення монстрів
 SpellName,detect treasure,виявлення скарбів
 SpellName,detect unseen,виявлення невидимого
 SpellName,dig,копання
-SpellName,disintegrate,дезінтеграція
+SpellName,disintegrate,дезинтеграція
 SpellName,drain life,витягування життя
 SpellName,extra healing,велике лікування
 SpellName,fear,жах
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,подорожував
 TraversalPresentName,ascend,підіймається
 TraversalPresentName,descend,спускається
 TraversalPresentName,travel,подорожує
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,полум'я
 VolatileName,blood,кров
 VolatileName,electricity,електрика

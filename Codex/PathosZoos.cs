@@ -203,7 +203,7 @@ namespace Pathos
 
       tavern = AddZoo("tavern", Sonics.quaff, Z =>
       {
-        var TavernEntityArray = Codex.Kinds.mercenary.Entities.Where(E => E.Frequency > 0 && E.IsEncounter && E.Difficulty <= 20).ToArray();
+        var TavernEntityArray = Codex.Kinds.mercenary.Entities.Where(E => E.Frequency != Frequency.None && E.IsEncounter && E.Difficulty <= 20).ToArray();
         Debug.Assert(TavernEntityArray.All(E => E.IsMercenary), "All tavern entities are intended to be mercenaries.");
 
         Z.Difficulty = 15;

@@ -1,59 +1,64 @@
 # Commands; Câu lệnh
-. Single tap/left click or arrow keys to move and attack.; Nhấn một lần / nhấp chuột trái hoặc các phím mũi tên để di chuyển và tấn công.
+. Single tap/left click or direction keys to move and attack.; Nhấn một lần / nhấp chuột trái hoặc các phím mũi tên để di chuyển và tấn công.
 . Long press/right click to operate doors/traps.; Nhấn giữ / nhấp chuột phải để vận hành cửa / bẫy.
 . Double tap to pick up items, traverse stairs or wait one move.; Nhấn hai lần để nhặt các vật phẩm, đi qua cầu thang hoặc đợi một lần di chuyển.
 /
-- . | wait one turn (also double tap on self); . | chờ một lượt (hoặc nhấn hai lần vào bản thân)
-- , | pick up the top item on the floor; , | nhặt vật phẩm hàng đầu trên sàn
-- A | toggle log (click the log to expand/collapse); A | bật nhật ký (nhấp vào nhật ký để mở rộng / thu gọn)
-- B | move down-left; B | di chuyển xuống bên trái
-- C | toggle character; C | bật bảng chỉ số nhân vật
-- D | re-use last item; D | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
-- E | mount or dismount your steed; E | cưỡi hoặc xuống chiến mã của bạn
-- F | toggle floor; F | Bật hiển thị sàn
-- G | re-equip last item; G | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
-- H | move left; H | di chuyển sang trái
-- I | toggle inventory; I | Bật túi đồ
-- J | move down; J | di chuyển xuống
-- K | move up; K | di chuyển lên
-- L | move right; L | di chuyển sang phải
-- M | toggle map; M | Bật bản đồ
-- N | move down-right; N | di chuyển xuống bên phải
-- O | hide from view; O | trốn khỏi tầm nhìn
-- P | polymorph at will; P | đa hình theo ý muốn
-- Q | save or quit this game; Q | Lưu game hoặc thoát khỏi trò chơi
-- R | for rest mode to recover life and mana; R | sang chế độ nghỉ ngơi để phục hồi sinh mệnh và năng lượng
-- S | for search mode for secret doors and traps; S | sang chế độ dò tìm các cửa và bẫy bí mật
-- T | teleport at will; T | dịch chuyển theo ý muốn
-- U | move up-right; U | di chuyển lên bên phải
-- V | kick in a direction; V | đá theo một hướng nào đấy
-- W | jump in a direction (if you have the talent); W | nhảy theo một hướng (nếu bạn có tài năng)
-- X | re-cast last spell; X | sử dụng lại phép thuật lần cuối bạn đã sử dụng
-- Y | move up-left; Y | di chuyển lên bên trái
-- Z | toggle cast spells (read books to learn spells); Z | bật bảng niệm phép thuật (đọc sách để học phép thuật)
-- ' | blink in a direction; ' | nhấp nháy theo một hướng
-- ;; | telekinesis in a direction; ;; | Chuyển động từ xa theo một hướng
-- > | descend stairs; > | đi xuống cầu thang
-- < | ascend stairs; < | đi lên cầu thang
-- / | toggle chat in multiplayer; / | bật khung trò chuyện trong chế độ nhiều người chơi
-- \ | view knowledge panel; \ | xem bảng tri thức
-- + | zoom in; + | phóng to
-- - | zoom out; - | thu nhỏ
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | hành động nhanh bên trái (thay đổi hành động bằng cách bấm shift + số)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | hành động nhanh bên phải (thay đổi hành động bằng cách bấm shift + số)
-- INSERT | toggle tunnelling mode; INSERT | bật chế độ đào hầm
-- SHIFT + arrow | fire a missile without moving; SHIFT + mũi tên | bắn tên lửa nhưng không cần di chuyển
-- CTRL + arrow | interact with the target without moving; CTRL + mũi tên | tương tác với mục tiêu mà không cần di chuyển
-- ENTER | select the top item on the floor; ENTER | chọn vật phẩm hàng đầu trên sàn
-- ESCAPE | hides open panels and clears your target; ESCAPE | ẩn các bảng đang mở và xóa mục tiêu của bạn
+- $Left$ | move left; $Left$ | di chuyển sang trái
+- $Right$ | move right; $Right$ | di chuyển sang phải
+- $Up$ | move up; $Up$ | di chuyển lên
+- $Down$ | move down; $Down$ | di chuyển xuống
+- $UpLeft$ | move up-left; $UpLeft$ | di chuyển lên bên trái
+- $UpRight$ | move up-right; $UpRight$ | di chuyển lên bên phải
+- $DownLeft$ | move down-left; $DownLeft$ | di chuyển xuống bên trái
+- $DownRight$ | move down-right; $DownRight$ | di chuyển xuống bên phải
+- SHIFT + direction | fire a missile without moving; SHIFT + mũi tên | bắn tên lửa nhưng không cần di chuyển
+- CTRL + direction | interact with the target without moving; CTRL + mũi tên | tương tác với mục tiêu mà không cần di chuyển
+- $Select$ | select the top item on the floor; $Select$ | chọn vật phẩm hàng đầu trên sàn
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | ẩn các bảng đang mở và xóa mục tiêu của bạn
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | hủy hộp thoại đang mở và xóa tiêu điểm bàn phím
 - SPACE | toggle real-time or turn-based; SPACE | bật thời gian thực hoặc đánh theo lượt
-- PgUp | switch to previous character; PgUp | chuyển sang nhân vật trước đó
-- PgDown | switch to next character; PgDown | chuyển sang nhân vật kế tiếp
-- ALT | show labels; ALT | hiển thị nhãn mác
-- F1 | show this help; F1 | hiển thị bảng menu này
-- F6 | quick save; F6 | Lưu nhanh
-- F10 | open side menu; F10 | mở menu bên
+- CTRL/ALT | show labels; CTRL/ALT | hiển thị nhãn mác
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | nhặt vật phẩm hàng đầu trên sàn
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | chờ một lượt (hoặc nhấn hai lần vào bản thân)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | sang chế độ nghỉ ngơi để phục hồi sinh mệnh và năng lượng
+- $Search$ | for search mode for secret doors and traps; $Search$ | sang chế độ dò tìm các cửa và bẫy bí mật
+- $Descend$ | descend stairs; $Descend$ | đi xuống cầu thang
+- $Ascend$ | ascend stairs; $Ascend$ | đi lên cầu thang
+- $Character$ | toggle character; $Character$ | bật bảng chỉ số nhân vật
+- $Inventory$ | toggle inventory; $Inventory$ | Bật túi đồ
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | bật bảng niệm phép thuật (đọc sách để học phép thuật)
+- $Floor$ | toggle floor; $Floor$ | Bật hiển thị sàn
+- $Map$ | toggle map; $Map$ | Bật bản đồ
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | bật nhật ký (nhấp vào nhật ký để mở rộng / thu gọn)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | xem bảng tri thức
+- $Chat$ | toggle chat in multiplayer; $Chat$ | bật khung trò chuyện trong chế độ nhiều người chơi
+- $Kick$ | kick in a direction; $Kick$ | đá theo một hướng nào đấy
+- $Mount$ | mount or dismount your steed; $Mount$ | cưỡi hoặc xuống chiến mã của bạn
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | nhảy theo một hướng (nếu bạn có tài năng)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | nhấp nháy theo một hướng
+- $Teleport$ | teleport at will; $Teleport$ | dịch chuyển theo ý muốn
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | Chuyển động từ xa theo một hướng
+- $Polymorph$ | polymorph at will; $Polymorph$ | đa hình theo ý muốn
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | bật chế độ đào hầm
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | mở menu bên
+- $QuickSave$ | quick save; $QuickSave$ | Lưu nhanh
+- $Help$ | show this help; $Help$ | hiển thị bảng menu này
+- $Quit$ | save or quit this game; $Quit$ | Lưu game hoặc thoát khỏi trò chơi
+- $ZoomIn$ | zoom in; $ZoomIn$ | phóng to
+- $ZoomOut$ | zoom out; $ZoomOut$ | thu nhỏ
+- $ActionReuse$ | re-use last item; $ActionReuse$ | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | sử dụng lại vật phẩm lần cuối bạn đã sử dụng
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | sử dụng lại phép thuật lần cuối bạn đã sử dụng
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | chuyển sang nhân vật trước đó
+- $SwitchDown$ | switch to next character; $SwitchDown$ | chuyển sang nhân vật kế tiếp
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | hành động nhanh bên trái (thay đổi hành động bằng cách bấm shift + số)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | hành động nhanh bên phải (thay đổi hành động bằng cách bấm shift + số)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | để chuyển từ chế độ toàn màn hình sang chế độ cửa sổ (Windows Desktop)
 
 # General mechanics; Cơ chế tổng quát
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + Các thuộc tính được điều chỉnh x {Hiệu ứng số nhân}
 ` + Acquired Talents x {Multiplier}; + Tài năng có được x {Hiệu ứng số nhân}
 ` + Gained Resistances x {Multiplier}; + Tăng kháng cự x {Hiệu ứng số nhân} (Ví dụ nhân x1 khi tăng cấp sẽ nhân x2)
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); + Tổng giá trị túi đồ trong kho (bằng vàng)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; Tổng giá trị của túi đồ trong kho được giới hạn nên không thể vượt quá phần còn lại của điểm số.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.; Bạn sẽ học được rằng nhân vật của bạn không thể tồn tại được lâu và cái chết lại ập đến một cách nhanh chóng.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.; Bạn có thể hồi sinh vô hạn lần nhưng tất cả danh vọng bạn đạt được sẽ bị đặt lại về con số 0.
 . Fame achieved subsequent to your resurrection will contribute to your score.; Danh vọng sẽ đạt được sau khi bạn sống lại sẽ đóng góp vào điểm số của bạn.
-. This is similar to the 'explorer mode' from the original Nethack.; Điều này tương tự như 'chế độ thám hiểm' từ Nethack gốc.
+. This is similar to the 'explorer mode' from the original NetHack.; Điều này tương tự như 'chế độ thám hiểm' từ NetHack gốc.
 
 # Multiplayer; Chế độ nhiều người chơi
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.; Chế độ nhiều người chơi được dựa trên công nghệ 'mạng viễn thông đồ họa' từ nền tảng Invention.
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.; Đây là một chế độ gian lận để có thể giúp bạn học nhanh hơn những bị mật trong Pathos.
 . Any adventures in this mode will not be tracked in the hall of fame.; Bất kỳ chuyến phiêu lưu nào trong chế độ này sẽ không được ghi nhận lại trong đại sảnh danh vọng
 /
-- ` | open master console (more commands); ` | Để mở bảng điều khiển chính (Thêm những câu lệnh khác)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | Để xóa bóng tối trong khu vực này
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | Để triệu hồi và bị nuốt chửng bởi một con thú ngẫu nhiên
-- shift + F | all adjacent enemies are charmed; shift + F | Tất cả kẻ thù lân cận đều bị quyến rũ
-- shift + G | gain 1000 gold; Shift + G | Để nhận được 1000 vàng
-- shift + I | identify all items on the floor; shift + I | Để xác định tất cả các vật phẩm ở trên sàn
-- shift + W | jump at will; shift + W | Để nhảy theo ý muốn
-- shift + D | light this zone; shift + D | Thắp sáng khu vực này
-- shift + M | reveal the entire map; shift + M | Để tiết lộ toàn bộ bản đồ
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | Tiết lộ bản đồ cho tất cả các cấp
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | Be cong dungeon đại loại là thế .-. (bản đồ endgame biến đổi)
-- shift + P | polymorph into any entity; shift + P | Biến hình thành bất kỳ thực thể nào trong trò chơi
-- shift + T | teleport to a target zone; shift + T | Dịch chuyển đến một khu vực tự chọn trong hầm ngục
-- shift + Z | learn all spells; shift + Z | Học hết tất cả phép thuật
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | Bật chế độ tự động (bước lên hình vuông và bạn sẽ sử dụng tất cả các vật phẩm)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | Nhảy xuống cấp độ hầm ngục trước đó (ngay cả khi không ở trên cầu thang)
-- > | descend to the next dungeon level (even when not on a staircase); > | Nhảy đến cấp độ hầm ngục tiếp theo (ngay cả khi không ở trên cầu thang)
-- F5 | refresh the screen; F5 | làm mới màn hình
-- F9 | quick load; F9 | tải nhanh
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | Để mở bảng điều khiển chính (Thêm những câu lệnh khác)
+- $MasterLightness$ | light this zone; $MasterLightness$ | Thắp sáng khu vực này
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | Để xóa bóng tối trong khu vực này
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | Để triệu hồi và bị nuốt chửng bởi một con thú ngẫu nhiên
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | Tất cả kẻ thù lân cận đều bị quyến rũ
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | Để nhận được 1000 vàng
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | Để xác định tất cả các vật phẩm ở trên sàn
+- $MasterJump$ | jump at will; $MasterJump$ | Để nhảy theo ý muốn
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | Để tiết lộ toàn bộ bản đồ
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | Tiết lộ bản đồ cho tất cả các cấp
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | Be cong dungeon đại loại là thế .-. (bản đồ endgame biến đổi)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | Biến hình thành bất kỳ thực thể nào trong trò chơi
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | Dịch chuyển đến một khu vực tự chọn trong hầm ngục
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | Học hết tất cả phép thuật
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | Bật chế độ tự động (bước lên hình vuông và bạn sẽ sử dụng tất cả các vật phẩm)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | Nhảy xuống cấp độ hầm ngục trước đó (ngay cả khi không ở trên cầu thang)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | Nhảy đến cấp độ hầm ngục tiếp theo (ngay cả khi không ở trên cầu thang)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | làm mới màn hình
+- $QuickLoad$ | quick load; $QuickLoad$ | tải nhanh
 /
 . There are additional manipulations built into the character panel and contextual help.; Có các thao tác bổ sung được tích hợp trong bảng ký tự và trợ giúp theo ngữ cảnh.

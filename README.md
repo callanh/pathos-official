@@ -60,7 +60,7 @@ The `Codex` is a way of naming the individual content that is registered in the 
 
 Because of the way .NET JIT (Just-In-Time) compilation works, it is desirable to serialise the codex into a binary file. This is named `Pathos.Codex` and is automatically compiled by the `PathosMaker` tool.
 
-## Debuggin and Troubleshooting
+## Debugging and Troubleshooting
 
 In Visual Studio, the View > Output window shows information about the build. The `PathosMaker` tool will give information about what happened including any errors or warnings.
 

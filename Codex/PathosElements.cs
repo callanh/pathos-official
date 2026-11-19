@@ -42,7 +42,7 @@ namespace Pathos
 
       force = AddElement("force", null);
 
-      magical = AddElement("magical", "Protects you against pure magical effects.");
+      magical = AddElement("magical", "Complete resistance to purely magical damage and effects.");
 
       necrotic = AddElement("necrotic", null);
 
@@ -54,7 +54,7 @@ namespace Pathos
 
       shock = AddElement("shock", "Complete resistance to electric and shock damage.");
 
-      sleep = AddElement("sleep", "You resist attempts to render you into a magical slumber.");
+      sleep = AddElement("sleep", "Prevents effects that would cast you into a magical slumber.");
 
       water = AddElement("water", null);
     }

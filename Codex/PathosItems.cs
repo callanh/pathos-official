@@ -290,6 +290,8 @@ namespace Pathos
       var ArtifactRarity = 1;
       var AdamantineRarity = 1; // deliberately on par with generating an artifact; adamantine is a straight upgrade as compared to the equivalent weapon/armour.
       var MithrilRarity = 2;
+      var GoldRarity = 3;
+      var SilverRarity = 3;
 
       #region artifact.
       var ArtifactEssence = Essence.Zero; // artifacts cannot be scrapped into essence.
@@ -2028,8 +2030,8 @@ namespace Pathos
       cloak_of_displacement = AddArmour(ItemType.Cloak, "cloak of displacement", I =>
       {
         I.Description = null;
-        I.SetAppearance("piece of cloth", null);
-        I.Glyph = Glyphs.piece_of_cloth;
+        I.SetAppearance("frayed cloth", null);
+        I.Glyph = Glyphs.frayed_cloth;
         I.Sonic = Sonics.armour;
         I.Series = CloakSeries;
         I.Rarity = 10;
@@ -2174,7 +2176,7 @@ namespace Pathos
         I.Series = null;
         I.Rarity = 25;
         I.Size = Size.Large;
-        I.Weight = Weight.FromUnits(4500);
+        I.Weight = Weight.FromUnits(3500);
         I.Material = Materials.copper;
         I.Essence = ArmourEssence2;
         I.Price = Gold.FromCoins(400);
@@ -2183,7 +2185,7 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 900, Delay.FromTurns(50), Sonics.armour);
       });
 
-      plate_mail = AddArmour(ItemType.Suit, "plate mail", I =>
+      plate_mail = AddArmour(ItemType.Suit, "plate mail", I => // 'iron' plate mail.
       {
         I.Description = null;
         I.Glyph = Glyphs.plate_mail;
@@ -2198,6 +2200,23 @@ namespace Pathos
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(50), Sonics.armour);
         I.SetArmour(Skills.heavy_armour, D: 7, P: +0, S: +1, B: +0);
         I.AddObviousIngestUse(Motions.eat, 900, Delay.FromTurns(50), Sonics.armour);
+      });
+
+      gold_plate_mail = AddArmour(ItemType.Suit, "gold plate mail", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.gold_plate_mail;
+        I.Sonic = Sonics.armour;
+        I.Series = null;
+        I.Rarity = 0; // has to be converted with midas touch.
+        I.Size = Size.Large;
+        I.Weight = Weight.FromUnits(9000);
+        I.Material = Materials.gold;
+        I.Essence = ArmourEssence3;
+        I.Price = Gold.FromCoins(1120);
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(50), Sonics.armour);
+        I.SetArmour(Skills.heavy_armour, D: 7, P: -1, S: -1, B: +2);
+        I.AddObviousIngestUse(Motions.eat, 1500, Delay.FromTurns(50), Sonics.armour);
       });
 
       crystal_plate_mail = AddArmour(ItemType.Suit, "crystal plate mail", I =>
@@ -2243,7 +2262,7 @@ namespace Pathos
         I.Sonic = Sonics.armour;
         I.OriginRace = Races.elf;
         I.Series = null;
-        I.Rarity = 4;
+        I.Rarity = MithrilRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(1500);
         I.Material = Materials.mithril;
@@ -9434,13 +9453,15 @@ namespace Pathos
         I.AddDiscoverUse(Motions.capture, Delay.FromTurns(20), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.magic, Dice.One)
-             .SetTargetSelf(false);
+             .SetTargetSelf(false)
+             .SetTerminates();
           Capture(Use.Apply);
         });
         I.AddDiscoverUse(Motions.release, Delay.FromTurns(20), Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.magic, Dice.One)
-             .SetTargetSelf(false);
+             .SetTargetSelf(false)
+             .SetTerminates();
           Use.Apply.ReleaseEntity();
         });
         I.AddPretendUse(Motions.open, Delay.FromTurns(10), Sonics.magic, Use =>
@@ -11018,18 +11039,16 @@ namespace Pathos
         I.SetWeakness(LightWeakness);
         I.SetIllumination(2);
         I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool);
-
-        // TODO: do we want to refill lanterns with candles?
-        //I.AddDiscoverUse(Motions.Refill, Delay.FromTurns(30), Sonics.lit_fuse, Use =>
+        // TODO: do we want to refill lanterns with candles instead of potion of oil?
+        //I.AddDiscoverUse(Motions.refill, Delay.FromTurns(30), Sonics.lit_fuse, Use =>
         //{
-        //  Use.SetCast().SelectItem(lantern);
-        //  Use.Cast.AssetIndividualised = true;
+        //  Use.SetCast().FilterItem(lantern).SetAssetIndividualised().FilterCharged();
         //  Use.Consume();
         //  Use.Apply.WithSourceSanctity
         //  (
-        //    B => B.Charging(Dice.One, Dice.Fixed(100)), // 100%
-        //    U => U.Charging(Dice.One, 1.d20() + 70),    // 71..90%
-        //    C => C.Charging(Dice.One, 1.d20() + 30)     // 31..50%
+        //    B => B.ChargingItem(Dice.One, Dice.Fixed(100)), // 100%
+        //    U => U.ChargingItem(Dice.One, 1.d20() + 70),    // 71..90%
+        //    C => C.ChargingItem(Dice.One, 1.d20() + 30)     // 31..50%
         //  );
         //});
         I.AddObviousIngestUse(Motions.eat, 10, Delay.FromTurns(10), Sonics.tool, A =>
@@ -12289,7 +12308,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_axe;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(720);
         I.Material = Materials.silver;
@@ -12657,7 +12676,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_crossbow_bolt;
         I.Sonic = Sonics.ammo;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(12);
         I.Material = Materials.silver;
@@ -13045,6 +13064,23 @@ namespace Pathos
         I.SetOneHandedWeapon(Skills.flail, null, Elements.physical, DamageType.Bludgeon, 1.d6() + 1);
       });
 
+      gold_flail = AddMeleeWeapon("gold flail", I =>
+      {
+        I.Description = null;
+        I.Glyph = Glyphs.gold_flail;
+        I.Sonic = Sonics.weapon;
+        I.Series = null;
+        I.Rarity = GoldRarity;
+        I.Size = Size.Medium;
+        I.Weight = Weight.FromUnits(1200);
+        I.Material = Materials.gold;
+        I.Essence = WeaponEssence2;
+        I.Price = Gold.FromCoins(80);
+        I.AddObviousIngestUse(Motions.eat, 900, Delay.FromTurns(30), Sonics.weapon);
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon);
+        I.SetOneHandedWeapon(Skills.flail, null, Elements.physical, DamageType.Bludgeon, 1.d6() + 3).AttackModifier = Modifier.Minus1;
+      });
+
       glaive = AddReachWeapon("glaive", I =>
       {
         I.Description = "This weapon consists of a large blade on the end of a long pole. The blade is affixed in a socket-shaft configuration similar to an axe head.";
@@ -13139,7 +13175,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_heavy_hammer;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(720);
         I.Material = Materials.silver;
@@ -13987,7 +14023,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_arrow;
         I.Sonic = Sonics.ammo;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(12);
         I.Material = Materials.silver;
@@ -14007,7 +14043,7 @@ namespace Pathos
         I.Sonic = Sonics.weapon;
         I.BundleDice = Dice.One;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(120);
         I.Material = Materials.silver;
@@ -14024,7 +14060,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_long_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(480);
         I.Material = Materials.silver;
@@ -14041,7 +14077,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_mace;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(360);
         I.Material = Materials.silver;
@@ -14058,7 +14094,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_sabre;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(400);
         I.Material = Materials.silver;
@@ -14075,7 +14111,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_short_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Small;
         I.Weight = Weight.FromUnits(360);
         I.Material = Materials.silver;
@@ -14092,7 +14128,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_spear;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Medium;
         I.Weight = Weight.FromUnits(420);
         I.Material = Materials.silver;
@@ -14109,7 +14145,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_lance;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(2160);
         I.Material = Materials.silver;
@@ -14322,7 +14358,7 @@ namespace Pathos
         I.Glyph = Glyphs.silver_twohanded_sword;
         I.Sonic = Sonics.weapon;
         I.Series = null;
-        I.Rarity = 2;
+        I.Rarity = SilverRarity;
         I.Size = Size.Large;
         I.Weight = Weight.FromUnits(960);
         I.Material = Materials.silver;
@@ -15194,7 +15230,7 @@ namespace Pathos
           {
             Debug.Assert(Silver.Name == "silver " + Iron.Name, Silver.Name);
             Debug.Assert(Silver.Material == Materials.silver, Silver.Name);
-            Debug.Assert(Silver.Rarity == 2, Silver.Name);
+            Debug.Assert(Silver.Rarity == SilverRarity, Silver.Name);
 
             if (Silver.IsRangedMissile())
               Debug.Assert(Silver.Essence == AmmoEssence1, Silver.Name);
@@ -15335,6 +15371,7 @@ namespace Pathos
     // suits.
     public readonly Item banded_mail;
     public readonly Item bronze_plate_mail;
+    public readonly Item gold_plate_mail;
     public readonly Item chain_mail;
     public readonly Item crystal_plate_mail;
     public readonly Item mithril_plate_mail;
@@ -15438,6 +15475,7 @@ namespace Pathos
     public readonly Item poison_dart;
     public readonly Item fauchard;
     public readonly Item flail;
+    public readonly Item gold_flail;
     public readonly Item glaive;
     public readonly Item great_dagger;
     public readonly Item guisarme;

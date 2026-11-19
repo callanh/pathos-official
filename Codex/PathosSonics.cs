@@ -18,6 +18,7 @@ namespace Pathos
 
       Register.ShortTap = short_tap;
       Register.LongTap = long_tap;
+      Register.FocusTap = focus_tap;
       Register.Switch = @switch;
       Register.Realtime = realtime;
       Register.Turnbased = turnbased;
@@ -30,11 +31,6 @@ namespace Pathos
       Register.Warp = warping;
       Register.Hit = hit;
       Register.Miss = miss;
-    }
-
-    internal Sonic GetSonicOrNull(string Name)
-    {
-      return List.Find(G => G.Name.Equals(Name, StringComparison.OrdinalIgnoreCase));
     }
 #endif
 
@@ -183,6 +179,7 @@ namespace Pathos
     public readonly Sonic turnbased;
     public readonly Sonic short_tap;
     public readonly Sonic long_tap;
+    public readonly Sonic focus_tap;
 
     public readonly Sonic dice;
     public readonly Sonic birds;

@@ -55,7 +55,7 @@ namespace Pathos
 
         A.SetSymptom(Chance.OneIn100, P =>
         {
-          P.WhenChance(Chance.OneIn2, T => T.DecreaseAbility(Attributes.Charisma, Dice.One));
+          P.WhenChance(Chance.OneIn2, T => T.DecreaseAbility(Attributes.charisma, Dice.One));
           P.WhenProbability(R =>
           {
             R.Add(10, S => S.IncreaseAbility(Attributes.Strength, Dice.One));

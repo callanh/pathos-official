@@ -1,3 +1,260 @@
+2026-11-19
+- improved title screen layout for mobile devices.
+- removed auto focus of search box in help screen, for mobile devices.
+- removed audio warmup for Android and iOS versions as candidate fix for startup slowdown.
+
+2026-11-16
+- fix for regression of quick commands on the action menu (eg. click on an item and then press 'G' to take it, while the menu is up).
+- entity descriptions for chicken, gelatinous cube, coyote, fox, jackal, brown mold, lichen, giant cockroach, gecko, newt, abbot, acolyte, black marketeer, chieftain, exterminator, neanderthal, occultist, page, proudfoot, thug, transmuter, undead slayer, goblin, giant rat, rabbit, sewer rat.
+
+2026-11-15
+- fix for porter not able to capture allies.
+- fix for iOS persistent slowdown after importing or exporting a file.
+- fix for shift + numpad direction not working (when using numpad for directional keys).
+
+2026-11-14
+- bindable command for re-act (defaults to 'Ctrl+X').
+- entity descriptions for bat, vampire bat, athol, hellbat, mobat and mongbat.
+
+2026-11-13
+- studio maximum map size restricted to 512x512.
+- studio double click to select squares has been optimized.
+
+2026-11-12
+- default zoom calculation has been adjusted so that the journal doesn't obscure room exits.
+- middle mouse button can now be held down to pan around.
+
+2026-11-11
+- active focused button now has an animated orange background.
+- controller can now navigate focus to all buttons on all screens.
+- opening the menus (inventory, etc) with the controller focuses the first item.
+- two-player with a single controller will now be assigned to the second player (first player is keyboard/mouse/touch).
+- audio chime is played when a controller connects or disconnects.
+- map panel can be panned using the right thumbstick on the controller.
+- fix for the lose ability sfx which had a playback distortion at the start of the audio file.
+
+2026-11-10
+- fixed regression of blessed genocide failing to take out the player (eg. dwarf player reads blessed genocide on a dwarf lord, will now kill the player as intended).
+
+2026-11-09
+- fix for branch merchants not selecting the correct character glyph for the type of shop.
+
+2026-11-08
+- when flying above a sunken floor (chasm, water, lava), you can now choose to descend into it.
+- pinch-zoom touch screen gesture implemented for Steam and Windows Desktop editions.
+- allow untrapping of doors trapped with a pit.
+- bindable command for selecting an item to eat (defaults to 'E' and moves the mount command to 'Ctrl+E').
+- bindable command for accessing the vanity panel (default to 'Ctrl+V').
+
+2026-11-07
+- sarcophagus on the early levels will now spawn the lowest level mummy (for the 30% create mummy case) instead of doing nothing.
+- improved phrasing of property descriptions.
+- included property descriptions for classes, races and specials in character selection.
+- Steam rich presence updates when you change dungeon levels (eg. 'Chermon, level 3 male satyr templar, Dungeon 2').
+
+2026-11-04
+- swapped controller left/right trigger for more ergonomic movement.
+- nazgul renamed to dread wraith.
+- balrog renamed to decinder.
+- Thoth Amon renamed to Jharothy.
+
+2026-11-02
+- Vecna renamed to Vercrux.
+- Twoflower renamed to Farwander.
+- Earendil renamed to Raedilan.
+- Elwing renamed to Sairou.
+- Lolth renamed to Orvalth.
+- Yeenoghu renamed to Ghuyaxil.
+- Juiblex renamed to Oeziblegh.
+- Thorin renamed to Tholmak.
+- Lareth renamed to Oleyth.
+
+2026-10-30
+- new item: gold plate mail.
+
+2026-10-29
+- Steam Cloud integration for settings, custom heroes, save files and bone files.
+- new setting: disable cloud sync.
+- controller left thumbstick now requires left trigger to confirm movement (held down moves you around quickly) and in combination with right trigger, now forces an attack (held down attacks repeatedly).
+- controller right thumbstick is now a cursor that can be moved over any square and pans the map (left trigger moves to the cursor and right trigger inspects the square at the cursor).
+- controller right thumbstick zoom function no longer implemented.
+- new achievement: bouldering, push a boulder.
+- new achievement: tunneling, dig through a wall.
+- new achievement: teleportitis, acquire uncontrolled teleportation.
+- new achievement: shoplifter, steal an item from a shop.
+- new achievement: survivor, recover from 1 life point.
+- new achievement: vore, eat a non-food item.
+- new achievement: polymorphism, transform into another form.
+- new achievement: polypiling, transform an item on the ground.
+- new achievement: peak form, maximize all ability scores.
+- new achievement: immunity, gain complete natural resistances.
+- new achievement: exceptional, acquire all positive talents.
+- new achievement: spellbound, learn to cast every spell.
+- new achievement: grand champion, train every skill to the limit.
+- new achievement: great experience, $reach experience level {Codex.Manifest.Levelling.LevelCap}.
+- new achievement: all curation, discover every item.
+- new achievement: well met, encounter every entity.
+- new achievement: deathless, win without resurrecting.
+- achievements are now recorded for each run and display in the character sheet, knowledge panel.
+- achievements now contribute to the fame score with the formula = Achievements² x {Multiplier} (eg. 5 achievements is 5x5x1000 = 25,000 and 16 achievements is 16x16x1000 = 256,000).
+- renamed cloak appearance 'piece of cloth' to 'frayed cloth'.
+
+2026-10-27
+- new onboarding tutorial with 20 cards (disable in Settings > Interface).
+
+2026-10-26
+- controller left thumbstick implemented for 8-direction movement.
+- controller right thumbstick implemented for panning.
+- controller focus of buttons in the action menu including (A) select and (B) cancel.
+- controller right thumbstick with right trigger held down now zooms the map.
+
+2026-10-20
+- new commands to navigate the player to the up/down stairwells.
+- keyboard command 'navigate way up' is bound to Ctrl+comma.
+- keyboard command 'navigate way down' is bound to Ctrl+period.
+- keyboard command 'continue' is bound to F3.
+- optimized enemy decision making performance, especially for large maps with lots of entities.
+- action menus now support relevant commands while active (eg. move into a locked door, menu opens, player presses the 'kick' command).
+
+2026-10-19
+- stronger indication of which menu button has keyboard focus.
+
+2026-10-18
+- minor rearrangement of the vanity to have better layout for the main/off hand and left/right ring slots.
+
+2026-10-15
+- features now enforce the required ability score for an action (eg. must have >3 Charisma to sacrifice at an altar).
+
+2026-10-14
+- Studio designed quests can be uploaded to Steam Workshop and shared with other players, including a separate Hall of Fame.
+
+2026-10-13
+- default keyboard binding for 're-equip' has been changed from 'G' to 'Ctrl+D'.
+- default keyboard binding for 'pick-up item' has been changed from ',' to 'G'.
+
+2026-10-09
+- increased zoom factor when using the mouse wheel so it doesn't feel as stiff.
+- added support for female tiles for the player races (eg. satyr).
+- new setting: customize controller buttons, including adjustment by left/right triggers.
+
+2026-10-05
+- new setting: customize controls, allow rebinding of keyboard shortcuts including ctrl/alt/shift modifiers and toggling between arrow and HJKL directional keys.
+- spacebar realtime toggle is now disabled by default.
+- slide now has a key binding (O) which replaces the hide action.
+- commands in the guides display the active key bindings.
+- renamed setting 'Free panning mode' to 'Disable automatic camera'.
+- renamed setting 'Locked scaling mode' to 'Disable manual zoom'.
+- custom hero start button is no longer disabled and will jump to the section with a flash of color to highlight the missed requirement (eg. forgot to select gender).
+- fix to snap to the camera when using 'disable automatic camera' and you are teleported outside the current viewport.
+
+2026-10-03
+- hardware acceleration is now disabled by default for the Steam Deck.
+
+2026-10-02
+- new setting: disable hardware acceleration (for troubleshooting Steam Deck flicker issue).
+
+2026-09-28
+- removed second 'busy' screen after starting a new adventure.
+- entity generation frequency (abundant, typical, occasional, scarce, elusive) is now included in the help.
+- new portal: sewer ladder.
+
+2026-09-27
+- individual merchant tiles for the 12 shops (sonyvanda).
+
+2026-09-25
+- improvement to panning and zooming so the camera does not snap back to the player.
+
+2026-09-24
+- new item: gold flail (-1 attack, +2 damage, weighs much more than normal flail).
+- dark cleric (sepulcher shrine) now carries a flail or a gold flail.
+- dungeons are generated with walls around the corridors and nooks.
+- digging through 'void' squares now creates surrounding walls.
+- inventory panel shows weight totals for each stock type, eg. potion (5 kg).
+- inventory panel now has an 'equipment' label at the top, also including total weight of equipment.
+- floor tiles are rendered with 'joins' when they are next to other floor types.
+
+2026-09-23
+- current spell casting skill level is emphasized in the spell help information (eg. 'proficient cast' is highlighted).
+- show a little more information to indicate unknown effects on unidentified items.
+- show weapon/armor skill for unknown items in the contextual help.
+- mention which item that was recharged in the journal.
+- allow 5% increments on the audio settings (instead of 10%).
+
+2026-09-17
+- redesigned module selection screen.
+- studio quests can now have a description that's displayed on the module selection screen.
+- support for a custom font per language.
+
+2026-09-12
+- fix for quest editor when you rotate the map and the walls are not repaired.
+- modules NetHack Codex and Pixel Sojourn now display area banners when transitioning between levels (eg. 'level 2').
+
+2026-09-11
+- show demo message on first play.
+- attempted fix for the issue when the journal is fading out and a new message is written.
+
+2026-09-10
+- redesigned the remaining bottom menus and added icons.
+
+2026-09-08
+- mutual hatred between certain kinds of enemies (eg. angel vs. demon) means they will attack each other if either are hostile and they are nearby.
+
+2026-09-07
+- support for rendering floor tile variations using a pseudo-random hashing algorithm based on seed, level and X/Y coordinate.
+- redesign for help screen to have navigation tabs, list and preview.
+
+2026-09-05
+- new Steam achievements: one for completing each module with a deathless victory.
+
+2026-08-30
+- major user interface uplift to match the new style.
+- auto-save when changing levels no longer shows the full 'busy screen', just quickly displays 'auto saving' footer.
+
+2026-08-28
+- implemented processing limit so that high refresh rate monitors don't make the game run super fast.
+- new setting: disable processing limit.
+
+2026-08-20
+- started the demo build.
+- demo build only: added new Demo Dungeon (Selection of Nethak Codex including dungeon levels 1-3, Minetown, Mines, Underdeep - demo complete when you defeat the dwarf king).
+- demo build only: Sonyvanda, disabled other tilesets.
+- demo build only: disabled the four full modules.
+- demo build only: disabled experimental multiplayer.
+- demo build only: disabled split screen local co-op.
+- demo build only: disabled multiple character parties.
+- demo build only: disabled all modding and quest editor.
+- demo build only: disabled master mode.
+
+2026-08-19
+- new setting: toggle for full screen (windows only).
+- rudimentary controller support (Windows Desktop).
+
+2026-08-18
+- instructed NVIDIA graphics cards to use hardware acceleration, such as when playing on a laptop with integrated graphics.
+
+2026-08-17
+- new setting: toggle between antique/original visuals (Steam Edition).
+
+2026-08-14
+- redesign for tileset selection screen.
+- redesign for language selection screen.
+
+2026-08-11
+- redesign for about and credits screens.
+
+2026-08-10
+- new settings screen, combining the side menu options with toggles from the diagnostics screen.
+
+2026-08-09
+- new title screen before the character selection.
+
+2026-08-07
+- updated application icon with antique style (windows desktop).
+- redesigned busy screen and included old book illustration posters for antique style.
+
+2026-08-06
+- started 'antique' visual edition for release on Steam.
+
 2026-07-11
 - map panel now exits on click more cleanly
 - map label has a down arrow to indicate it's a button
@@ -174,7 +431,7 @@
 - improved contextual help for polymorph effect on item, entity and trap.
 
 2024-11-02
-- Nethack Codex, Minetown watchmen have dialogue allowing you to 'talk' to them and learn about the town.
+- NetHack Codex, Minetown watchmen have dialogue allowing you to 'talk' to them and learn about the town.
 
 2024-10-27
 - updated naga tiles to represent that nagas do not have arms (absurd and sonyvanda).
@@ -529,7 +786,7 @@
 
 2023-01-06
 - living walls can now conceal themselves as mimicked walls.
-- Nethack Codex flood warp now can be water, lava or chasm (no longer ice).
+- NetHack Codex flood warp now can be water, lava or chasm (no longer ice).
 
 2023-01-04
 - interrupt glyph can now be modded (the yellow dashes in a circle when you are interrupted by a hostile).
@@ -1080,7 +1337,7 @@
 
 2021-04-13
 - master mode: deceased allies are now listed in the party panel, allowing you to dismiss them.
-- nethack codex: on nether levels (30-39), the generation will no longer place the same type of shrine, shop or zoo.
+- NetHack Codex: on nether levels (30-39), the generation will no longer place the same type of shrine, shop or zoo.
 
 2021-04-11
 - additional quick actions added for keys 2-9 (hardware keyboard only), rebind with Shift+Number, rightmost quick action key shortcut rebound from '2' to '0'.
@@ -1476,7 +1733,7 @@
 
 2020-08-24
 - Windows Desktop version now has module support which allows player written, custom world generation in C#, unzip C:\Games\Pathos\Modules\PathosTemplate.zip, open PathosTemplate.sln in Visual Studio 2019, and then Run PathosModule project.
-- released modules include: Nethack Codex, Dhak Legacy, Sandbox Play, and Template Adventure (this is a good starting point for designing your own world generation algorithms).
+- released modules include: NetHack Codex, Dhak Legacy, Sandbox Play, and Template Adventure (this is a good starting point for designing your own world generation algorithms).
 
 2020-08-17
 - new weapons: katar, mithril katar, mithril saber.
@@ -2282,7 +2539,7 @@
 - efreeti now have a retaliation fire attack.
 
 2019-01-20
-- babau and balrog now have retaliation attacks.
+- babau and decinder now have retaliation attacks.
 - Baalzebub can now summon 2-6 random insects 'Lord of the Flyers / Flies'.
 - Asmodeus can now cast evocation spells.
 
@@ -2613,7 +2870,7 @@
 - 75 new lore descriptions for items.
 
 2018-12-10
-- balrog reclassified as level 16->35 and difficulty 20->37.
+- decinder reclassified as level 16->35 and difficulty 20->37.
 - marilith reclassified as level 7->29 and difficulty 11->35.
 - pit fiend reclassified as level 13->33 and difficulty 16->36.
 - nalfeshnee reclassified as level 11->31 and difficulty 15->35.
@@ -2947,7 +3204,7 @@
 - all shops will now buy/trade gems with you.
 
 2018-08-07
-- new branch: rift to the Abyss found on level 40 in the Nethack Codex quest (challenge branch before you start your escape).
+- new branch: rift to the Abyss found on level 40 in the NetHack Codex quest (challenge branch before you start your escape).
 - Elf Kingdom branch maps are now randomly rotated.
 
 2018-08-05
@@ -4797,7 +5054,7 @@
 - added backpack item for dropping when a player dies in co-op.
 
 2016-10-30
-- preview for local co-op - splitscreen multiplayer nethack!
+- preview for local co-op - splitscreen multiplayer NetHack!
 
 2016-10-28
 - container, trade and share panels now group items by stock category (just like the inventory).
@@ -5394,7 +5651,7 @@
 - new artifact amulet: Eye of Aethiopica.
 
 2016-06-30
-- hall of fame separated for dhak legacy and nethack codex.
+- hall of fame separated for dhak legacy and NetHack Codex.
 
 2016-06-29
 - added 'donate to say thanks' button to the about screen.
@@ -5815,7 +6072,7 @@
 
 2016-03-03
 - fixed bug where you could duplicate an item when stuck in a pit/web, etc.
-- completed divergence of entities
+- completed divergence of entities.
 - rust monsters have a chance of destroying metal equipment.
 - black puddings have a chance of destroying organic equipment.
 - panels are no longer slightly transparent to help with performance.
@@ -5945,7 +6202,7 @@
 - green dragon now resists their own breath weapon (and poison resistance will protect you as well).
 
 2016-02-09
-- displays damage rating when interacting with a weapon
+- displays damage rating when interacting with a weapon.
 - magic marker regression fix due to previous changes on item targeting.
 
 2016-02-07
@@ -5955,14 +6212,14 @@
 - hover labels are now in white font with a strong background color.
 
 2016-02-06
-- magic missile and gray dragon breath weapon is now resisted with magic resistance
+- magic missile and gray dragon breath weapon is now resisted with magic resistance.
 - fixed issue where cast panel was disabling buttons based on the skilled mana cost.
-- damage bubble for harmful effects now respects direction of attack (which shows the double hit by a bouncing beam attack)
-- gaze attacks will now be reflected back on the attacker if you have the talent
-- cleaned up the classic and geoduck tilesets to have end pieces for wall segments (mazes are a bit nicer)
+- damage bubble for harmful effects now respects direction of attack (which shows the double hit by a bouncing beam attack).
+- gaze attacks will now be reflected back on the attacker if you have the talent.
+- cleaned up the classic and geoduck tilesets to have end pieces for wall segments (mazes are a bit nicer).
 
 2016-02-05
-- domestic animals have a 50/50 chance of starting neutral or hostile (feral)
+- domestic animals have a 50/50 chance of starting neutral or hostile (feral).
 - sacrificing a priest on their own shrine is a very bad idea.
 
 2016-01-30
@@ -5972,7 +6229,7 @@
 - performance optimization to load balance AI over frames.
 
 2016-01-28
-- giant's no longer carry boulders (because they don't throw them yet)
+- giant's no longer carry boulders (because they don't throw them yet).
 
 2016-01-26
 - button caching for floor and inventory to reduce memory use.
@@ -5986,16 +6243,16 @@
 - fixed memory leak in inventory.
 
 2016-01-22
-- choose from three tile graphics: absurd, classic and geoduck
-- absurd is the original Pathos tiles
-- classic is a retro style set based on the default Nethack tiles
+- choose from three tile graphics: absurd, classic and geoduck.
+- absurd is the original Pathos tiles.
+- classic is a retro style set based on the default NetHack tiles.
 - geoduck is an ascii inspired tileset by geoduck.
 
 2016-01-17
 - digging through a grave will now open the pit.
 - digging is massively damaging against entities made of earth.
 - unicorn horns are now two-handed weapons
-- imported item descriptions from the Nethack4 project data.base (and modified to be accurate for Pathos).
+- studied item descriptions from the NetHack4 project data.base and modified to be accurate for Pathos.
 - items with boost effects (eg. ring of gain strength) will have their enhantment known when first equipped.
 - apply transient teleportation when you have control
 
@@ -6034,7 +6291,7 @@
 - new graveyard special room with a ghost and gravestones and dirt floors for theme
 - bee hives special rooms has golden tile floors for theme
 - only 75% of squares now have gold in the treasure zoo
-- ant hole speical room new ant hole trap in the ant hole special room (also ants collect sandwiches and cheese)
+- ant hole special room new ant hole trap in the ant hole special room (also ants collect sandwiches and cheese)
 
 2016-01-04
 - light sources and refill with potion of oil
@@ -6112,35 +6369,35 @@
 - companions will rest and search with you.
 
 2015-12-15
-- charming non-domestics will wear off in time and become neutral
+- charming non-domestics will wear off in time and become neutral.
 
 2015-12-14
-- panning the view
+- panning the view.
 
 2015-12-13
-- real-time versus turn-based
-- ring of beserking
-- potion of rage
-- orc shaman, kobold shaman, gnomish wizard now have attacks
+- real-time versus turn-based.
+- ring of berserking.
+- potion of rage.
+- orc shaman, kobold shaman, gnomish wizard now have attacks.
 
 2015-12-07
-- starting pet companion (cat or dog)
-- encountered neutral domestic animals can be fed to tame them
-- scroll of taming and charm spell now work
-- you can name your newly tamed/charmed monsters
-- magic whistle recalls your pet
-- cats and dogs will grow up with experience
-- swap place with your pet (including auto pathing)
-- conflict status icon
-- zoom setting
-- start without companion setting
-- specific random dungeon seed setting
+- starting pet companion (cat or dog).
+- encountered neutral domestic animals can be fed to tame them.
+- scroll of taming and charm spell now work.
+- you can name your newly tamed/charmed monsters.
+- magic whistle recalls your pet.
+- cats and dogs will grow up with experience.
+- swap place with your pet (including auto pathing).
+- conflict status icon.
+- zoom setting.
+- start without companion setting.
+- specific random dungeon seed setting.
 
 2015-12-01
 - change language to French or English.
 
 2015-11-28
-- save&quit and help moved to the new side flyout (swipe in from left hand side)
+- save&quit and help moved to the new side flyout (swipe in from left hand side).
 - mute sound effects.
 - diagnostics page to resend fault logs.
 - cats & dogs are neutral by default.
@@ -6149,40 +6406,40 @@
 - fountains have a chance of becoming a water trap when you drink from it.
 
 2015-11-21
-- autosave on level transition as 'crash resistance'
-- double tap to 'wait'
-- monsters that can't move will 'wait' to reduce CPU usage
+- autosave on level transition as 'crash resistance'.
+- double tap to 'wait'.
+- monsters that can't move will 'wait' to reduce CPU usage.
 
 2015-11-16
 - hall of fame is now a top 20!
-- journal fades out when idle
-- action to dip items with the fountains (more discoverable than 'drop')
-- action to divine items on the altar (more discoverable than 'drop')
-- action to anoint items with the fountain (blessed fountains allow you to uncurse your items)
-- polymorph sfx
-- projectile animation
-- graves can be dug up with pick ax
-- force bolt/wand of striking have animation and sfx
-- camera flash has an animation
-- venom spitting by certain monsters
-- beholder has more gaze attacks
-- teleport SFX
-- squeaky board will become a hole if used up
-- can no longer use an item with itself
-- turns remaining shown in top left of status icons (eg. confusion)
-- wands fire, cold, lighting do a little more damage when blessed and a little less when cursed
-- confused scroll effects are now possible -> eg. create monster scroll when confused now summons 8 x acid blob
+- journal fades out when idle.
+- action to dip items with the fountains (more discoverable than 'drop').
+- action to divine items on the altar (more discoverable than 'drop').
+- action to anoint items with the fountain (blessed fountains allow you to uncurse your items).
+- polymorph sfx.
+- projectile animation.
+- graves can be dug up with pick ax.
+- force bolt/wand of striking have animation and sfx.
+- camera flash has an animation.
+- venom spitting by certain monsters.
+- beholder has more gaze attacks.
+- teleport SFX.
+- squeaky board will become a hole if used up.
+- can no longer use an item with itself.
+- turns remaining shown in top left of status icons (eg. confusion).
+- wands fire, cold, lighting do a little more damage when blessed and a little less when cursed.
+- confused scroll effects are now possible -> eg. create monster scroll when confused now summons 8 x acid blob.
 
 2015-11-11
-- excluded non-players from hunger effects
-- coins have no sanctity and start identified
-- interrupt when polymorph/unpolymorph
-- teleportation and polymorph status icon
-- umber hulk ranged gaze causes confusion
-- striking and force bolt penetrates
-- can't reach containers when levitating
-- killing monsters increases your karma
-- which direction query will temporarily hide any open panels
+- excluded non-players from hunger effects.
+- coins have no sanctity and start identified.
+- interrupt when polymorph/unpolymorph.
+- teleportation and polymorph status icon.
+- umber hulk ranged gaze causes confusion.
+- striking and force bolt penetrates.
+- can't reach containers when levitating.
+- killing monsters increases your karma.
+- which direction query will temporarily hide any open panels.
 
 2015-11-09
 - preparing for multiple language support.

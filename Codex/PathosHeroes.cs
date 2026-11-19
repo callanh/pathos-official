@@ -16,15 +16,19 @@ namespace Pathos
     {
       var Genders = Codex.Genders;
       var Classes = Codex.Classes;
-      var Entities = Codex.Entities;
+      var Races = Codex.Races;
+      var Companions = Codex.Companions;
 
-      Hero AddHero(string Name, Gender Gender, Entity Entity, Class Class, Action<HeroEditor> EditorAction)
+      Hero AddHero(string Name, Gender Gender, Race Race, Class Class, Action<HeroEditor> EditorAction)
       {
+        if (Inv.Assert.IsEnabled)
+          Inv.Assert.Check(Race.BaseEntity != null, "Only races with a base entity may be selected a hero.");
+
         return Register.Add(H =>
         {
           H.Name = Name;
           H.Gender = Gender;
-          H.Entity = Entity;
+          H.Race = Race;
           H.Class = Class;
           H.Special = null;
           H.CustomGlyph = null;
@@ -33,85 +37,127 @@ namespace Pathos
         });
       }
 
-      OrcBarbarian = AddHero("Grytt", Genders.male, Entities.orc, Classes.barbarian, H =>
-      {
-        H.Pet = H.NewPet("Razz", Genders.male, Entities.little_dog);
-      });
+      MaleOrcBarbarian = AddHero("Grytt", Genders.male, Races.orc, Classes.barbarian, H => H
+        .Pet("Razz", Genders.male, Companions.dog));
 
-      HumanCaveman = AddHero("Bok", Genders.male, Entities.human, Classes.caveman, H =>
-      {
-        H.Pet = H.NewPet("Dug", Genders.male, Entities.little_dog);
-      });
+      MaleGnomeBard = AddHero("Jevard", Genders.male, Races.gnome, Classes.bard, H => H
+        .Pet("Liloquy", Genders.female, Companions.bird));
 
-      DwarfExplorer = AddHero("Quandon", Genders.female, Entities.dwarf, Classes.explorer, H =>
-      {
-        H.Pet = H.NewPet("Pinkerton", Genders.female, Entities.kitten);
-      });
+      MaleHumanCaveman = AddHero("Bok", Genders.male, Races.human, Classes.caveman, H => H
+        .Pet("Dug", Genders.male, Companions.dog));
 
-      GnomeHealer = AddHero("Malasuth", Genders.female, Entities.gnome, Classes.healer, H =>
-      {
-        H.Pet = H.NewPet("Capo", Genders.male, Entities.kitten);
-      });
+      MaleChangelingConvict = AddHero("Uballon", Genders.male, Races.changeling, Classes.convict, H => H
+        .Pet("Lunch", Genders.male, Companions.rat));
 
-      HumanKnight = AddHero("Valorn", Genders.male, Entities.human, Classes.knight, H =>
-      {
-        H.Pet = H.NewPet("Perceval", Genders.male, Entities.pony);
-      });
+      FemaleDwarfExplorer = AddHero("Quandon", Genders.female, Races.dwarf, Classes.explorer, H => H
+        .Pet("Pinkerton", Genders.female, Companions.cat));
 
-      OrcMonk = AddHero("Eybrinde", Genders.male, Entities.orc, Classes.monk, H =>
-      {
-        H.Pet = H.NewPet("Talon", Genders.male, Entities.kitten);
-      });
+      GiantMaleGladiator = AddHero("Norvric", Genders.male, Races.giant, Classes.gladiator, H => H
+        .Pet("Busko", Genders.male, Companions.dog));
 
-      DwarfPriest = AddHero("Chemron", Genders.male, Entities.dwarf, Classes.priest, H =>
-      {
-        H.Pet = H.NewPet("Gasberg", Genders.female, Entities.kitten);
-      });
+      MaleHumanGunslinger = AddHero("Toland", Genders.male, Races.human, Classes.gunslinger, H => H
+        .Pet("Rake", Genders.male, Companions.dog));
 
-      HumanRanger = AddHero("Amaya", Genders.female, Entities.human, Classes.ranger, H =>
-      {
-        H.Pet = H.NewPet("Cheyne", Genders.male, Entities.little_dog);
-      });
+      FemaleTrollDruid = AddHero("Karasque", Genders.female, Races.troll, Classes.druid, H => H
+        .Pet("Mili", Genders.female, Companions.cat));
 
-      ElfRogue = AddHero("Xantari", Genders.female, Entities.elf, Classes.rogue, H =>
-      {
-        H.Pet = H.NewPet("Adebesi", Genders.female, Entities.little_dog);
-      });
+      MaleDwarfJester = AddHero("Yahoa", Genders.male, Races.dwarf, Classes.jester, H => H
+        .Pet("Fizzit", Genders.female, Companions.monkey));
 
-      HumanSamurai = AddHero("Rokiju", Genders.male, Entities.human, Classes.samurai, H =>
-      {
-        H.Pet = H.NewPet("Kira", Genders.female, Entities.little_dog);
-      });
+      FemaleSatyrHealer = AddHero("Malasuth", Genders.female, Races.satyr, Classes.healer, H => H
+        .Pet("Capo", Genders.male, Companions.cat));
 
-      GnomeTourist = AddHero("Pnerfa", Genders.female, Entities.gnome, Classes.tourist, H =>
-      {
-        H.Pet = H.NewPet("Ninny", Genders.male, Entities.little_dog);
-      });
+      FemaleDraconHunter = AddHero("Farleen", Genders.female, Races.dracon, Classes.hunter, H => H
+        .Pet("Denier", Genders.male, Companions.horse));
 
-      HumanValkyrie = AddHero("Lagratha", Genders.female, Entities.human, Classes.valkyrie, H =>
-      {
-        H.Pet = H.NewPet("Floki", Genders.male, Entities.fledgling_raven);
-      });
+      MaleHumanKnight = AddHero("Valorn", Genders.male, Races.human, Classes.knight, H => H
+        .Pet("Perceval", Genders.male, Companions.horse));
 
-      ElfWizard = AddHero("Shinaas", Genders.male, Entities.elf, Classes.wizard, H =>
-      {
-        H.Pet = H.NewPet("Poe", Genders.female, Entities.fledgling_raven);
-      });
+      MalePlasmoidMiner = AddHero("Waldrin", Genders.male, Races.plasmoid, Classes.miner, H => H // TODO: nonbinary
+        .Pet("Rytto", Genders.female, Companions.rat));
+
+      FemaleFairyMystic = AddHero("Ovira", Genders.female, Races.fairy, Classes.mystic, H => H
+        .Pet("Hampte", Genders.female, Companions.bird));
+
+      MaleMinotaurMonk = AddHero("Eybrinde", Genders.male, Races.minotaur, Classes.monk, H => H
+        .Pet("Talon", Genders.male, Companions.cat));
+
+      FemaleElfNinja = AddHero("Akoya", Genders.female, Races.elf, Classes.ninja, H => H
+        .Pet("Zuki", Genders.male, Companions.rat));
+
+      FemaleKoboldNecromancer = AddHero("Dastrne", Genders.female, Races.kobold, Classes.necromancer, H => H
+        .Pet("Samrae", Genders.male, Companions.ghoul));
+
+      FemaleHumanPaladin = AddHero("Hylatia", Genders.female, Races.human, Classes.paladin, H => H
+        .Pet("Tempus", Genders.male, Companions.horse));
+
+      FemaleDemonPirate = AddHero("Neeva", Genders.female, Races.demon, Classes.pirate, H => H
+        .Pet("Derent", Genders.male, Companions.monkey));
+
+      MaleDwarfPriest = AddHero("Chemron", Genders.male, Races.dwarf, Classes.priest, H => H
+        .Pet("Gasberg", Genders.female, Companions.cat));
+
+      FemaleHumanRanger = AddHero("Amaya", Genders.female, Races.human, Classes.ranger, H => H
+        .Pet("Cheyne", Genders.male, Companions.dog));
+
+      MaleLizardmanReaver = AddHero("Relinsarn", Genders.female, Races.lizardman, Classes.reaver, H => H
+        .Pet("Mizra", Genders.female, Companions.imp));
+
+      FemaleElfRogue = AddHero("Xantari", Genders.female, Races.elf, Classes.rogue, H => H
+        .Pet("Adebesi", Genders.female, Companions.dog));
+
+      MaleHumanSamurai = AddHero("Rokiju", Genders.male, Races.human, Classes.samurai, H => H
+        .Pet("Kira", Genders.female, Companions.dog));
+
+      FemaleTortleShaman = AddHero("Iralna", Genders.female, Races.tortle, Classes.shaman, H => H
+        .Pet("Armax", Genders.female, Companions.dog));
+
+      MaleAngelTemplar = AddHero("Carthyre", Genders.male, Races.angel, Classes.templar, H => H // TODO: nonbinary
+        .Pet("Hal", Genders.male, Companions.bird));
+
+      FemaleRobotTinker = AddHero("Zarja", Genders.male, Races.robot, Classes.tinker, H => H
+        .Pet("Goggie", Genders.male, Companions.monkey));
+
+      FemaleHalflingTourist = AddHero("Pnerfa", Genders.female, Races.halfling, Classes.tourist, H => H
+        .Pet("Ninny", Genders.male, Companions.dog));
+
+      FemaleEchoValkyrie = AddHero("Lagratha", Genders.female, Races.echo, Classes.valkyrie, H => H
+        .Pet("Floki", Genders.male, Companions.bird));
+
+      MaleElfWizard = AddHero("Shinaas", Genders.male, Races.elf, Classes.wizard, H => H
+        .Pet("Poe", Genders.female, Companions.bird));
     }
 #endif
 
-    public readonly Hero OrcBarbarian;
-    public readonly Hero OrcMonk;
-    public readonly Hero DwarfExplorer;
-    public readonly Hero DwarfPriest;
-    public readonly Hero GnomeHealer;
-    public readonly Hero GnomeTourist;
-    public readonly Hero HumanCaveman;
-    public readonly Hero HumanRanger;
-    public readonly Hero HumanKnight;
-    public readonly Hero HumanSamurai;
-    public readonly Hero HumanValkyrie;
-    public readonly Hero ElfRogue;
-    public readonly Hero ElfWizard;
+    public Hero MaleOrcBarbarian { get; }
+    public Hero MaleGnomeBard { get; }
+    public Hero MaleHumanCaveman { get; }
+    public Hero MaleChangelingConvict { get; }
+    public Hero FemaleDwarfExplorer { get; }
+    public Hero GiantMaleGladiator { get; }
+    public Hero MaleHumanGunslinger { get; }
+    public Hero FemaleTrollDruid { get; }
+    public Hero MaleDwarfJester { get; }
+    public Hero FemaleSatyrHealer { get; }
+    public Hero FemaleDraconHunter { get; }
+    public Hero MaleHumanKnight { get; }
+    public Hero MalePlasmoidMiner { get; }
+    public Hero FemaleFairyMystic { get; }
+    public Hero MaleMinotaurMonk { get; }
+    public Hero FemaleElfNinja { get; }
+    public Hero FemaleKoboldNecromancer { get; }
+    public Hero FemaleHumanPaladin { get; }
+    public Hero FemaleDemonPirate { get; }
+    public Hero MaleDwarfPriest { get; }
+    public Hero FemaleHumanRanger { get; }
+    public Hero MaleLizardmanReaver { get; }
+    public Hero FemaleElfRogue { get; }
+    public Hero FemaleHalflingTourist { get; }
+    public Hero MaleHumanSamurai { get; }
+    public Hero FemaleTortleShaman { get; }
+    public Hero MaleAngelTemplar { get; }
+    public Hero FemaleRobotTinker { get; }
+    public Hero FemaleEchoValkyrie { get; }
+    public Hero MaleElfWizard { get; }
   }
 }

@@ -51,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Codex\PathosAchievements.cs" />
     <Compile Include="Codex\PathosAfflictions.cs" />
     <Compile Include="Codex\PathosAnatomies.cs" />
     <Compile Include="Codex\PathosAppetites.cs" />
@@ -111,15 +112,16 @@
     <Compile Include="Codex\PathosVolatiles.cs" />
     <Compile Include="Codex\PathosWarnings.cs" />
     <Compile Include="Codex\PathosZoos.cs" />
-    <Compile Include="Modules\PathosDhak.cs" />
+    <Compile Include="Modules\PathosShortDungeon.cs" />
+    <Compile Include="Modules\PathosDhakLegacy.cs" />
     <Compile Include="Modules\PathosModuleResources.cs" />
-    <Compile Include="Modules\PathosNethack.cs" />
-    <Compile Include="Modules\PathosOpus.cs" />
-    <Compile Include="Modules\PathosSandbox.cs" />
+    <Compile Include="Modules\PathosNetHackCodex.cs" />
+    <Compile Include="Modules\PathosKaloiOpus.cs" />
+    <Compile Include="Modules\PathosSandboxPlay.cs" />
     <Compile Include="Modules\SPDBuilder.cs" />
     <Compile Include="Modules\SPDDebug.cs" />
     <Compile Include="Modules\SPDGameList.cs" />
-    <Compile Include="Modules\SPDGen.cs" />
+    <Compile Include="Modules\PathosPixelSojourn.cs" />
     <Compile Include="Modules\SPDLevelGenerator.cs" />
     <Compile Include="Modules\SPDMap.cs" />
     <Compile Include="Modules\SPDMapPoint.cs" />
@@ -130,8 +132,15 @@
     <Compile Include="Modules\SPDRect.cs" />
     <Compile Include="Modules\SPDRoom.cs" />
     <Compile Include="PathosOfficial.cs" />
+  </ItemGroup>
 
+  <ItemGroup Condition="'$(DefineConstants)' != '' And !$(DefineConstants.Contains('DEMO'))">
     <EmbeddedResource Include="Resources\**\*" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(DefineConstants)' != '' And $(DefineConstants.Contains('DEMO'))">
+    <EmbeddedResource Include="Resources\Quests\Underdeep.Quest" />
+    <EmbeddedResource Include="Resources\Specials\*" />
   </ItemGroup>
 
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />

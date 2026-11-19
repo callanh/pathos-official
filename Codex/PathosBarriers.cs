@@ -86,7 +86,7 @@ namespace Pathos
         B.Description = null;
       });
 
-      sewer_wall = AddBarrier("sewer wall", Materials.stone, Grounds.stone_floor, Glyph: null, Opaque: true, Rebound: true, B =>
+      sewer_wall = AddBarrier("sewer wall", Materials.stone, Grounds.sewer_floor, Glyph: null, Opaque: true, Rebound: true, B =>
       {
         B.Description = null;
       });

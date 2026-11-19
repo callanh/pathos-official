@@ -1,59 +1,64 @@
 # Commands;Komutalar
-. Single tap/left click or arrow keys to move and attack.;Saldırmak ve hareket etmek için sol tıklamayı veya yön tuşlarını kullanabilirsin.
+. Single tap/left click or direction keys to move and attack.;Saldırmak ve hareket etmek için sol tıklamayı veya yön tuşlarını kullanabilirsin.
 . Long press/right click to operate doors/traps.;Sağ fare tuşunu tıklayarak veya basılı tutarak kapıları ve tuzakları kullanabilir, envanterindeki ya da yerdeki bir eşyayı kullanabilir veya kuşanabilirsin.
 . Double tap to pick up items, traverse stairs or wait one move.;Çift tıklayarak eşyaları yerden alablir, merdivenleri kullanabilir veya bir tur bekleyebilirsin.
 /
-- . | wait one turn (also double tap on self); . | bir tur bekle (veya kendine çift tıkla)
-- , | pick up the top item on the floor; , | yerde en üstteki eşyayı al
-- A | toggle log (click the log to expand/collapse); A | kayıdı değiştir (kayıda tıklayarak büyült veya küçült)
-- B | move down-left; B | sol alt çapraza ilerle
-- C | toggle character; C | karakter değiştir
-- D | re-use last item; D | son kullandığın eşyayı yeniden kullan
-- E | mount or dismount your steed; E | bineğe bin yada in
-- F | toggle floor; F | zemini değiştir
-- G | re-equip last item; G | son eşyayı tekrar kuşan
-- H | move left; H | sola ilerle
-- I | toggle inventory; I | envanteri değiştir
-- J | move down; J | aşağıya ilerle
-- K | move up; K | yukarı ilerle
-- L | move right; L | sağa ilerle
-- M | toggle map; M | haritayı değiştir
-- N | move down-right; N | sağ alt çapraza ilerle
-- O | hide from view; O | gölgelerde saklan
-- P | polymorph at will; P | şekil değiştir
-- Q | save or quit this game; Q | oyundan çık veya kaydet
-- R | for rest mode to recover life and mana; R | canını ve mananı yenilemek için dinlen
-- S | for search mode for secret doors and traps; S | kapıları ve tuzakları aramak için göz gezdir
-- T | teleport at will; T | ışınlan
-- U | move up-right; U | yukarı sağ çapraza ilerle
-- V | kick in a direction; V | bir yöne tekme at
-- W | jump in a direction (if you have the talent); W | bir yöne zıpla (eğer yeteneğin varsa)
-- X | re-cast last spell; X | son kullandığın büyüyü yeniden kullan
-- Y | move up-left; Y | yukarı sol çapraza ilerle
-- Z | toggle cast spells (read books to learn spells); Z | büyü değiştir (büyü öğrenmek için kitap oku)
-- ' | blink in a direction; ' | bir yöne ışınlan
-- ;; | telekinesis in a direction;
-- > | descend stairs; > | merdivenlerden in
-- < | ascend stairs; < | merdivenlerden çık
-- / | toggle chat in multiplayer; / | çok oyunculuda sohbeti aç-kapat
-- \ | view knowledge panel; \ | bilgi panelini görüntüle
-- + | zoom in; + | yakınlaştır
-- - | zoom out; - | uzaklaştır
-- 1,2,3,4,5 | left quick actions (change action using shift + number); 1,2,3,4,5 | soldaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
-- 0,9,8,7,6 | right quick actions (change action using shift + number); 0,9,8,7,6 | sağdaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
-- INSERT | toggle tunnelling mode;
-- SHIFT + arrow | fire a missile without moving; SHIFT + ok tuşu | hareket etmeden bir cisim fırlat
-- CTRL + arrow | interact with the target without moving; CTRL + ok tuşu | hareket etmeden hedefle etkileşime geç
-- ENTER | select the top item on the floor; ENTER | yerde en üstte kalan eşyayı seç
-- ESCAPE | hides open panels and clears your target; ESCAPE | açık sekmeleri kapatıp hedefini belirler
+- $Left$ | move left; $Left$ | sola ilerle
+- $Right$ | move right; $Right$ | sağa ilerle
+- $Up$ | move up; $Up$ | yukarı ilerle
+- $Down$ | move down; $Down$ | aşağıya ilerle
+- $UpLeft$ | move up-left; $UpLeft$ | yukarı sol çapraza ilerle
+- $UpRight$ | move up-right; $UpRight$ | yukarı sağ çapraza ilerle
+- $DownLeft$ | move down-left; $DownLeft$ | sol alt çapraza ilerle
+- $DownRight$ | move down-right; $DownRight$ | sağ alt çapraza ilerle
+- SHIFT + direction | fire a missile without moving; SHIFT + ok tuşu | hareket etmeden bir cisim fırlat
+- CTRL + direction | interact with the target without moving; CTRL + ok tuşu | hareket etmeden hedefle etkileşime geç
+- $Select$ | select the top item on the floor; $Select$ | yerde en üstte kalan eşyayı seç
+- $Cancel$ | hides open panels and clears your target; $Cancel$ | açık sekmeleri kapatıp hedefini belirler
 - BACKSPACE | cancels open dialogs and clears the keyboard focus; BACKSPACE | açık diyalogları kapatıp görüntüyü temizler
 - SPACE | toggle real-time or turn-based; SPACE | gerçek zamanlı ile tur bazlı arasında geçiş yap
-- PgUp | switch to previous character; PgUp | önceki karaktere geç
-- PgDown | switch to next character; PgDown | sonraki karaktere geç
-- ALT | show labels; ALT | etiketleri göster
-- F1 | show this help; F1 | bu yardımı göster
-- F6 | quick save; F6 | hızlı kaydet
-- F10 | open side menu; F10 | yan menüyü aç
+- CTRL/ALT | show labels; CTRL/ALT | etiketleri göster
+- $PickUp$ | pick up the top item on the floor; $PickUp$ | yerde en üstteki eşyayı al
+- $Wait$ | wait one turn (also double tap on self); $Wait$ | bir tur bekle (veya kendine çift tıkla)
+- $Rest$ | for rest mode to recover life and mana; $Rest$ | canını ve mananı yenilemek için dinlen
+- $Search$ | for search mode for secret doors and traps; $Search$ | kapıları ve tuzakları aramak için göz gezdir
+- $Descend$ | descend stairs; $Descend$ | merdivenlerden in
+- $Ascend$ | ascend stairs; $Ascend$ | merdivenlerden çık
+- $Character$ | toggle character; $Character$ | karakter değiştir
+- $Inventory$ | toggle inventory; $Inventory$ | envanteri değiştir
+- $Cast$ | toggle cast spells (read books to learn spells); $Cast$ | büyü değiştir (büyü öğrenmek için kitap oku)
+- $Floor$ | toggle floor; $Floor$ | zemini değiştir
+- $Map$ | toggle map; $Map$ | haritayı değiştir
+- $Journal$ | toggle log (click the log to expand/collapse); $Journal$ | kayıdı değiştir (kayıda tıklayarak büyült veya küçült)
+- $Knowledge$ | view knowledge panel; $Knowledge$ | bilgi panelini görüntüle
+- $Chat$ | toggle chat in multiplayer; $Chat$ | çok oyunculuda sohbeti aç-kapat
+- $Kick$ | kick in a direction; $Kick$ | bir yöne tekme at
+- $Mount$ | mount or dismount your steed; $Mount$ | bineğe bin yada in
+- $Jump$ | jump in a direction (if you have the talent); $Jump$ | bir yöne zıpla (eğer yeteneğin varsa)
+- $Slide$ | slide in a direction; $Slide$ | slide in a direction
+- $Blink$ | blink in a direction; $Blink$ | bir yöne ışınlan
+- $Teleport$ | teleport at will; $Teleport$ | ışınlan
+- $Telekinesis$ | telekinesis in a direction; $Telekinesis$ | telekinesis in a direction
+- $Polymorph$ | polymorph at will; $Polymorph$ | şekil değiştir
+- $Tunnel$ | toggle tunnelling mode; $Tunnel$ | toggle tunnelling mode
+- $Eat$ | eat food;
+- $Vanity$ | open vanity panel;
+- $Menu$ | open side menu; $Menu$ | yan menüyü aç
+- $QuickSave$ | quick save; $QuickSave$ | hızlı kaydet
+- $Help$ | show this help; $Help$ | bu yardımı göster
+- $Quit$ | save or quit this game; $Quit$ | oyundan çık veya kaydet
+- $ZoomIn$ | zoom in; $ZoomIn$ | yakınlaştır
+- $ZoomOut$ | zoom out; $ZoomOut$ | uzaklaştır
+- $ActionReuse$ | re-use last item; $ActionReuse$ | son kullandığın eşyayı yeniden kullan
+- $ActionReequip$ | re-equip last item; $ActionReequip$ | son eşyayı tekrar kuşan
+- $ActionRecast$ | re-cast last spell; $ActionRecast$ | son kullandığın büyüyü yeniden kullan
+- $ActionReact$ | re-act last action;
+- $NavigateDown$ | navigate to the way down;
+- $NavigateUp$ | navigate to the way up;
+- $SwitchUp$ | switch to previous character; $SwitchUp$ | önceki karaktere geç
+- $SwitchDown$ | switch to next character; $SwitchDown$ | sonraki karaktere geç
+- $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | left quick actions (change action using shift + number); $QuickSlot1$,$QuickSlot2$,$QuickSlot3$,$QuickSlot4$,$QuickSlot5$ | soldaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
+- $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | right quick actions (change action using shift + number); $QuickSlot0$,$QuickSlot9$,$QuickSlot8$,$QuickSlot7$,$QuickSlot6$ | sağdaki hızlı tuş slotları (slotları kullanmak için shift + rakam)
 - ALT + ENTER | toggle full screen to window mode (Windows Desktop); ALT + ENTER | Pencere moduna tam ekrana arasında geçiş yap (Windows Masaüstü)
 
 # General mechanics;Genel Mekanikler
@@ -387,6 +392,7 @@
 ` + Adjusted Abilities x {Multiplier}; + Elde Edilen Nitelik Puanları  x {Multiplier}
 ` + Acquired Talents x {Multiplier}; + Elde Edilen Kabiliyetler  x {Multiplier}
 ` + Gained Resistances x {Multiplier}; + Kazanılmış Dirençler  x {Multiplier}
+` + Achievements² x {Multiplier};
 ` + Total Inventory Worth (in gold); + Envanterinin Değeri (altın ile hesaplanır)
 /
 . The total inventory worth is capped so cannot exceed the rest of the score.; Toplam envanter kıymeti şan'ı belli bir sınıra kadar yükseltebilir.
@@ -396,7 +402,7 @@
 . You may learn that your character was not viable and death comes quick again.;Bazen karakterinin yetersiz olduğunu öğrenerek tekrar ölürsün.
 . You can resurrect infinitely but all your achieved fame will be reset to zero.;Sonsuza kadar tekrar canlanabilirsin ama kazandığın şan sıfırlanır.
 . Fame achieved subsequent to your resurrection will contribute to your score.;Tekrar canlanmana müteakip bütün şanlar skoruna eklenir.
-. This is similar to the 'explorer mode' from the original Nethack.;Bu asıl Nethack'teki "Keşif Modu" gibidir.
+. This is similar to the 'explorer mode' from the original NetHack.;Bu asıl NetHack'teki "Keşif Modu" gibidir.
 
 # Multiplayer;Çoklu oyuncu
 . Multiplayer is based on the 'graphical telnet' technology from the Invention platform.;Çoklu oyuncu Invention platformunda bulunan 'graphical telnet' teknolojisiyle yapıldı
@@ -425,24 +431,29 @@
 . This is a cheat mode for more quickly learning the secrets of Pathos.;Bu Pathos'un sırlarını çabuk öğrenmek için bir hile modudur.
 . Any adventures in this mode will not be tracked in the hall of fame.;Bu modda yaşadığın hiçbir macera şan salonuna eklenmez.
 /
-- ` | open master console (more commands); ` | usta konsolunu aç (daha fazla komutlar)
-- ctrl + shift + D | darkness in this zone; ctrl + shift + D | bölgede karanlık
-- shift + E | spawn and be swallowed by a random engulfer; shift + E | Canlan ve rastgele bir yutucu tarafından yutul
-- shift + F | all adjacent enemies are charmed; shift + F | etrafındaki bütün canlılar cezbedilir
-- shift + G | gain 1000 gold; shift + G | 1000 altın kazan
-- shift + I | identify all items on the floor; shift + I | yerdeki bütün eşyaları tanımla
-- shift + W | jump at will; shift + W | keyfine göre zıpla
-- shift + D | light this zone; shift + D | bölgeyi ışıklandır
-- shift + M | reveal the entire map; shift + M | bütün haritayı açığa çıkar
-- ctrl + shift + M | reveal the map for all levels; ctrl + shift + M | bütün seviyelerde haritaları açığa çıkar
-- ctrl + shift + O | warp the dungeon (the endgame map transforms); ctrl + shift + O | zindanın şeklini boz (oyun sonu haritası değişir)
-- shift + P | polymorph into any entity; shift + P | bir canlıya dönüş
-- shift + T | teleport to a target zone; shift + T | hedeflenen bölgeye ışınlan
-- shift + Z | learn all spells; shift + Z | bütün büyüleri öğren
-- ! | toggle auto-use mode (step on a square and you will use all items); ! | otomatik kullanma modunu aç/kapa (bir kareye adım at ve bütün eşyalar kullanılsın)
-- < | ascend to the previous dungeon level (even when not on a staircase); < | bir önceki seviyeye yüksel (merdivene yakın olman gerekmez)
-- > | descend to the next dungeon level (even when not on a staircase); > | aşağıdakı seviyeye düş (merdivene yakın olman gerekmez)
-- F5 | refresh the screen; F5 | ekranı yenile
-- F9 | quick load; F9 | hızlı yükle
+- $MasterConsole$ | open master console (more commands); $MasterConsole$ | usta konsolunu aç (daha fazla komutlar)
+- $MasterLightness$ | light this zone; $MasterLightness$ | bölgeyi ışıklandır
+- $MasterDarkness$ | darkness in this zone; $MasterDarkness$ | bölgede karanlık
+- $MasterEngulfment$ | spawn and be swallowed by a random engulfer; $MasterEngulfment$ | Canlan ve rastgele bir yutucu tarafından yutul
+- $MasterFriendship$ | all adjacent enemies are charmed; $MasterFriendship$ | etrafındaki bütün canlılar cezbedilir
+- $MasterGain1000Coins$ | gain 1000 gold; $MasterGain1000Coins$ | 1000 altın kazan
+- $MasterIdentifyAll$ | identify all items; $MasterIdentifyAll$ | yerdeki bütün eşyaları tanımla
+- $MasterJump$ | jump at will; $MasterJump$ | keyfine göre zıpla
+- $MasterBlink$ | blink at will; $MasterBlink$ | blink at will
+- $MasterSlide$ | slide at will; $MasterSlide$ | slide at will
+- $MasterTelekinesis$ | telekinesis at will; $MasterTelekinesis$ | telekinesis at will
+- $MasterMappingLevel$ | reveal the entire map; $MasterMappingLevel$ | bütün haritayı açığa çıkar
+- $MasterMappingAll$ | reveal the map for all levels; $MasterMappingAll$ | bütün seviyelerde haritaları açığa çıkar
+- $MasterWarping$ | warp the dungeon (the endgame map transforms); $MasterWarping$ | zindanın şeklini boz (oyun sonu haritası değişir)
+- $MasterPolymorph$ | polymorph into any entity; $MasterPolymorph$ | bir canlıya dönüş
+- $MasterTeleport$ | teleport to a target zone; $MasterTeleport$ | hedeflenen bölgeye ışınlan
+- $MasterTeleportTop$ | teleport to the top level; $MasterTeleportTop$ | teleport to the top level
+- $MasterTeleportEnd$ | teleport to the end level; $MasterTeleportEnd$ | teleport to the end level
+- $MasterLearnSpells$ | learn all spells; $MasterLearnSpells$ | bütün büyüleri öğren
+- $MasterToggleAutoUse$ | toggle auto-use mode (step on a square and you will use all items); $MasterToggleAutoUse$ | otomatik kullanma modunu aç/kapa (bir kareye adım at ve bütün eşyalar kullanılsın)
+- $Ascend$ | ascend to the previous dungeon level (even when not on a staircase); $Ascend$ | bir önceki seviyeye yüksel (merdivene yakın olman gerekmez)
+- $Descend$ | descend to the next dungeon level (even when not on a staircase); $Descend$ | aşağıdakı seviyeye düş (merdivene yakın olman gerekmez)
+- $MasterRefresh$ | refresh the screen; $MasterRefresh$ | ekranı yenile
+- $QuickLoad$ | quick load; $QuickLoad$ | hızlı yükle
 /
 . There are additional manipulations built into the character panel and contextual help.;Oyundaki karakter paneli sana anlık yardım sunacak.

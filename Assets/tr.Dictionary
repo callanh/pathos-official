@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Ölümcül bir zehir damarlarında dolaşıyor.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,Ölümcül bir zehir damarlarında dolaşıyor.
 AfflictionDescription,Something deeply unsettling is happening... down there.,Aşağıda... çok rahatsız edici şeyler oluyor.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Midenin derinleri kemiriliyormuş gibi hissediyorsun.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Hayvanlardan bulaşan bu hastalık beyinde iltihaplanmaya neden oluyor.
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,kaliteli mitril palto
 AppearanceName,fizzy potion,gazlı iksir
 AppearanceName,flute,flüt
 AppearanceName,forked polearm,çatallı kargı
+AppearanceName,frayed cloth,kumaş parçası
 AppearanceName,fur boots,kürk çizme
 AppearanceName,fuzzy book,tüylü kitap
 AppearanceName,glass orb,cam küre
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,papirüs kitap
 AppearanceName,parchment book,parşömen kitap
 AppearanceName,pearl earrings,inci küpe
 AppearanceName,pearl ring,inci yüzük
-AppearanceName,piece of cloth,kumaş parçası
 AppearanceName,pink book,pembe kitap
 AppearanceName,pink potion,pembe iksir
 AppearanceName,plaid book,ekoseli kitap
@@ -549,8 +587,10 @@ BoonName,undead army,hortlak ordusu
 BoonName,unicorn friend,dost tek boynuzlu at
 CalendarText,d MMMM yyyy,d MMMM yyyy
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaya
+CharacterName,Armax,
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arrom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belietha
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brouwer
+CharacterName,Busko,
 CharacterName,Cailie,Cailie
 CharacterName,Capo,Capo
 CharacterName,Carthyre,Carthyre
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Crepsal
 CharacterName,D'rey,D'rey
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daracy
+CharacterName,Dastrne,
 CharacterName,Davicohr,Davicohr
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,Donneler
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elishmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Ericendrick
 CharacterName,Eybrinde,Eybrinde
 CharacterName,Faraze,Faraze
+CharacterName,Farleen,
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenraymond
+CharacterName,Fizzit,
 CharacterName,Floki,Floki
 CharacterName,Forro,Forro
 CharacterName,Franzia,Franzia
@@ -591,15 +637,20 @@ CharacterName,Galday,Galday
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Gleichman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomack
 CharacterName,Grytt,Grytt
 CharacterName,Haelom,Haelom
 CharacterName,Haique,Haique
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,Haquian
 CharacterName,Hendrick,Hendrick
 CharacterName,Hough,Hough
+CharacterName,Hylatia,
 CharacterName,Illitasha,Illitasha
+CharacterName,Iralna,
 CharacterName,Ishgood,Ishgood
 CharacterName,Istophe,Istophe
 CharacterName,Isylav,Isylav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Javarl
 CharacterName,Jayenason,Jayenason
 CharacterName,Jeem,Jeem
 CharacterName,Jessera,Jessera
+CharacterName,Jevard,
 CharacterName,Jonat,Jonat
+CharacterName,Karasque,
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kennold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagratha
 CharacterName,Lanetwalz,Lanetwalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Lesha
+CharacterName,Liloquy,
 CharacterName,Luickean,Luickean
+CharacterName,Lunch,
 CharacterName,Lzay,Lzay
 CharacterName,Malasuth,Malasuth
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melchai
 CharacterName,Meloty,Meloty
+CharacterName,Mili,
 CharacterName,Miller,Miller
 CharacterName,Misteph,Misteph
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,Nichaeltoy
 CharacterName,Ninerma,Ninerma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Ninny
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,
 CharacterName,Okennwood,Okennwood
 CharacterName,Ollac,Ollac
 CharacterName,Omdarro,Omdarro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oscae
+CharacterName,Ovira,
 CharacterName,Paltrick,Paltrick
 CharacterName,Pauwinner,Pauwinner
 CharacterName,Penevieve,Penevieve
@@ -653,13 +713,17 @@ CharacterName,Quarah,Quarah
 CharacterName,Quibb,Quibb
 CharacterName,Quizchak,Quizchak
 CharacterName,Quohnrupley,Quohnrupley
+CharacterName,Rake,
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugarr
 CharacterName,Razz,Razz
 CharacterName,Rebenna,Rebenna
+CharacterName,Relinsarn,
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokiju
 CharacterName,Rupley,Rupley
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,Sarlia
 CharacterName,Shinaas,Shinaas
 CharacterName,Smither,Smither
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stewite
 CharacterName,Sully,Sully
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanyacka
+CharacterName,Tempus,
 CharacterName,Thakuline,Thakuline
 CharacterName,Threepo,Threepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,
 CharacterName,Trank,Trank
+CharacterName,Uballon,
 CharacterName,Udfoot,Udfoot
 CharacterName,Uffle,Uffle
 CharacterName,Ujopayne,Ujopayne
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethome
 CharacterName,Viophie,Viophie
 CharacterName,Vorzian,Vorzian
+CharacterName,Waldrin,
 CharacterName,Wallison,Wallison
 CharacterName,Waltis,Waltis
 CharacterName,Walzen,Walzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Xank
 CharacterName,Xantari,Xantari
 CharacterName,Xarrung,Xarrung
 CharacterName,Xiolet,Xiolet
+CharacterName,Yahoa,
 CharacterName,Yarromdee,Yarromdee
 CharacterName,Yassage,Yassage
 CharacterName,Yorque,Yorque
 CharacterName,Yral,Yral
 CharacterName,Yuvaloren,Yuvaloren
+CharacterName,Zarja,
 CharacterName,Zean,Zean
 CharacterName,Zerbarry,Zerbarry
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,
 CharacterName,Zultry,Zultry
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.",Uzun yıllar süren düşsel eğitimin ardından bu falcılar dünyaya açılmaya hazır. Kendi zihinlerinin harikası bu kişiler kayda değer irade gücüne sahiptirler
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Her zaman zayıflara yardım eli uzatmaya istekli iyiliksever bakıcılardır. Hastalıkla başa çıkmaya alışkın olan bu kişiler, yardım için tasarlanmış hijyen ve temizlik abideleridir. Bu yüzden hayatta kalmak için sürekli yoldaşlığa bel bağlamak zorundadırlar."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,Ateşe ve ısı 
 ElementDescription,Complete resistance to life and mana draining effects.,Can ve mana çalan etkilere tam dayanıklık.
 ElementDescription,Complete resistance to petrification effects.,Taşlaşma etkilerine tam dayanıklık
 ElementDescription,Complete resistance to poison damage.,Zehir hasarına tam dayanıklık.
-ElementDescription,Protects you against pure magical effects.,Seni saf büyü etkilerine karşı korur..
-ElementDescription,You resist attempts to render you into a magical slumber.,Seni büyülü bir uykuya yatırma çabalarına dayanırsın.
+ElementDescription,Complete resistance to purely magical damage and effects.,Seni saf büyü etkilerine karşı korur..
+ElementDescription,Prevents effects that would cast you into a magical slumber.,Seni büyülü bir uykuya yatırma çabalarına dayanırsın.
 ElementName,acid,asit
 ElementName,cold,soğuk
 ElementName,digging,kazı
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,aşırı yüklü
 EncumbranceName,unencumbered,tüy gibi yük
 EngulfmentName,engulfed,yutulmuş
 EngulfmentName,swallowed,yutuldu
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.",
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.",
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.",
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.",
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Yanıltıcı yeteneklerine güvenen, şekil değiştirici asiler."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.",
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.",
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.",
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.",Ferrozigotic pudinglerin küçük olanı. Kahverengi pudingin tadi çikolatalı bir tatlıdan daha çok bayat süt gibidir. İpek ve derilerden beslenir ama eşsiz üreme yöntemiyle tanınır. Demirle temasa geçtiğinde çift fizyon gerçekleştirerek iki obur yavru olur. Zindana giren maceracıların demir silahların yaygınlığı sayesinde nüfusu zamanla artmıştır.
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.",
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Bu garip aşındırıcı sıvı yığınının herhangi bir saldırı yetisi yok gibi gözüküyor.
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.",
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.",
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.",
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,bebek gümüş ejderha
 EntityName,baby white dragon,bebek beyaz ejderha
 EntityName,baby yellow dragon,bebek sarı ejderha
 EntityName,bad egg,kötü yumurta
-EntityName,balrog,balrog
 EntityName,baluchitherium,baluchitherium
 EntityName,banshee,ölüm perisi
 EntityName,bar-lgura,bar-lgura
@@ -1175,6 +1277,7 @@ EntityName,dao,dao
 EntityName,dark cleric,karanlık rahip
 EntityName,Death,Ölüm
 EntityName,death dog,ölüm köpeği
+EntityName,decinder,decinder
 EntityName,deep gnome,derin cüce
 EntityName,deep one,derin olan
 EntityName,deeper one,derinliğe varan
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,ikiz
 EntityName,dracolich,Liş ejderha
 EntityName,dracon,
 EntityName,dragon king,ejderha kral
+EntityName,dread wraith,dread wraith
 EntityName,dretch,direç
 EntityName,drow,kara elf
 EntityName,dryad,orman perisi
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,bodur mumya
 EntityName,dwarf thief,bodur hırsız
 EntityName,dwarf warrior,bodur savaşçı
 EntityName,dwarf zombie,bodur zombi
-EntityName,Earendil,Earendil
 EntityName,earth binder,
 EntityName,earth elemental,toprak elementseli
 EntityName,earth maker,toprak büyücüsü
@@ -1227,7 +1330,6 @@ EntityName,elf king,elf kral
 EntityName,elf lord,elf lordu
 EntityName,elf mummy,elf mumya
 EntityName,elf zombie,elf zombi
-EntityName,Elwing,Elwing
 EntityName,embalmer,mumyalayıcı
 EntityName,emerald golem,
 EntityName,energy vortex,enerji fırtınası
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,zombi ettin
 EntityName,exterminator,yok edici
 EntityName,fairy,peri
 EntityName,Famine,Kıtlık
+EntityName,Farwander,Skortacı
 EntityName,Father Dagon,Yüce Dagon
 EntityName,fiend,iblis
 EntityName,fire ant,ateş karıncası
@@ -1274,6 +1377,7 @@ EntityName,ghost,hortlak
 EntityName,ghoul,gulyabani
 EntityName,ghoul mage,büyücü gulyabani
 EntityName,ghoul queen,gulyabani kraliçe
+EntityName,Ghuyaxil,Ghuyaxil
 EntityName,giant,dev
 EntityName,giant ant,dev karınca
 EntityName,giant badger,dev porsuk
@@ -1380,9 +1484,9 @@ EntityName,jackal,çakal
 EntityName,jackalwere,çakalımsı
 EntityName,jaguar,jaguar
 EntityName,jellyfish,denizanası
+EntityName,Jharothy,Jharothy
 EntityName,jiggling blob,sallanan birikinti
 EntityName,juggernaut,durdurulamayan
-EntityName,Juiblex,Juiblex
 EntityName,juvenile raven,genç kuzgun
 EntityName,Kaloi Thrym,Karanlık Lord
 EntityName,kamadan,kamadan
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,kobold zombi
 EntityName,komodo dragon,komodo ejderhası
 EntityName,kraken,kraken
 EntityName,lamb,kuzu
-EntityName,Lareth,Lareth
 EntityName,large cat,büyük kedi
 EntityName,large dingo,büyük dingo
 EntityName,large dog,büyük köpek
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,başbuğ kertenkele adam
 EntityName,lizardman mage,büyücü kertenkele adam
 EntityName,lizardman shaman,şaman kertenkele adam
 EntityName,lizardman warrior,savaşçı kertenkele adam
-EntityName,Lolth,Lolth
 EntityName,long worm,uzun solucan
 EntityName,long worm tail,usun solucan kuyruğu
 EntityName,Lord Carnarvon,Lord Carnarvon
@@ -1481,7 +1583,6 @@ EntityName,mumak,mumak
 EntityName,nabassu,nabassu
 EntityName,nalfeshnee,nalfeshnee
 EntityName,Nalzok,Nalzok
-EntityName,nazgul,nazgul
 EntityName,neanderthal,neanderthal
 EntityName,Neferet,Yeşil Neferet
 EntityName,newt,semender
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,nupperibo
 EntityName,nurse,hemşire
 EntityName,occultist,hayat büyücüsü
 EntityName,ochre jelly,toprak jöle
+EntityName,Oeziblegh,Oeziblegh
 EntityName,ogre,ogre
 EntityName,ogre king,ogre kral
 EntityName,ogre lord,ogre lord
 EntityName,ogre mage,ogre büyücü
+EntityName,Oleyth,Oleyth
 EntityName,olog-hai,olog-hai
 EntityName,Oracle,Kahin
 EntityName,orange jelly,turuncu jöle
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,savaşçı ork
 EntityName,orc zombie,zombi ork
 EntityName,Orcus,Orcus
 EntityName,Orion,Oryon
+EntityName,Orvalth,Orvalth
 EntityName,owlbear,Bayıkuş
 EntityName,pack rat,ev faresi
 EntityName,page,sayfa
@@ -1550,6 +1654,7 @@ EntityName,rabbit,tavşan
 EntityName,rabid rabbit,kuduz tavşan
 EntityName,rabid rat,kuduz fare
 EntityName,rabid wolf,kuduz kurt
+EntityName,Raedilan,Raedilan
 EntityName,rancid jelly,kokan jöle
 EntityName,rat king,fare kral
 EntityName,ratwere,faremsi
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,yakut golem
 EntityName,rust monster,pas canavarı
 EntityName,rutterkin,kavgacıl
 EntityName,sabre-toothed cat,kılıç dişli kedi
+EntityName,Sairou,Sairou
 EntityName,salamander,büyük semender
 EntityName,sandestin,sandestin
 EntityName,sapphire golem,gökyakut golem
@@ -1629,8 +1735,7 @@ EntityName,student,öğrenci
 EntityName,succubus,succubus
 EntityName,swamp kobold,bataklık kobold
 EntityName,tengu,tengu
-EntityName,Thorin,Thorin
-EntityName,Thoth Amon,Thoth Amon
+EntityName,Tholmak,Tholmak
 EntityName,thug,haydut
 EntityName,tiger,kaplan
 EntityName,tigerwere,kaplanımsı
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,troll mumya
 EntityName,tsetse fly,çeçe sineği
 EntityName,tunnel worm,tünel solucanı
 EntityName,two-headed troll,iki başlı troll
-EntityName,Twoflower,Skortacı
 EntityName,umber hulk,kahverengı dev
 EntityName,undead slayer,yürüyen ölü boğan
 EntityName,vampire,vampir
@@ -1656,7 +1760,7 @@ EntityName,vampire king,vampir kral
 EntityName,vampire lord,vampir lordu
 EntityName,vampire mage,vampir büyücü
 EntityName,Van Helsing,Van Helsing
-EntityName,Vecna,Vecna
+EntityName,Vercrux,Vercrux
 EntityName,violet fungus,mor mantar
 EntityName,vorpal jabberwock,ölümcül jabberwock
 EntityName,vrock,vrock
@@ -1703,7 +1807,6 @@ EntityName,wumpus,wumpus
 EntityName,wyvern,ejder
 EntityName,xan,xan
 EntityName,xorn,xorn
-EntityName,Yeenoghu,Yeenoghu
 EntityName,yellow jacket,sarı ceket
 EntityName,yellow jelly,sarı jöle
 EntityName,yellow light,sarı ışık
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} iptal edildi
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} {ElementName} tarafından hasar gördü
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} {ElementName} tarafından yok edildi
 FormatText,{AssetName} was disintegrated,{AssetName} ufalandı
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından uzuvları uçuruldu
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından korkutularak öldürüldü
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından öldürüldü
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} {Defender:CharacterName} ile alakalı yaşananlar için pişman
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Defender:CharacterName} {Attacker:CharacterName} tarafından düşman edinildi!
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} {Defender:CharacterName} tarafından düşman edinildi!
-FormatText,{Base} in {Range},{Base} {Range} uzaklıkta
 FormatText,{BeamName} beam,{BeamName} ışını
 FormatText,{BlockName} was disintegrated,{BlockName} ufalandı
 FormatText,{BoonName} which direction?,hangi yöne {BoonName}?
 FormatText,{BoonName} which item?,hangi eşyayı {BoonName}?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,{Chance} olduğunda
 FormatText,{Chance} leaves corpse,{Chance} ceset bırakır
 FormatText,{Chance} per room,oda başına {Chance}
 FormatText,{Chance} react to {ElementName},{Chance} ihtimalle {ElementName} elementine tepki göster
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Fixtu
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {Use:AssetName} ile {With:AssetName} {MotionPastName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {Use:FixtureName} ile {With:AssetName} 'ı {MotionPastName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {MapName} zindanına {TraversalPastName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} seviye {LevelNumber} oldu
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},
 FormatText,{WeightUnits} kg,{WeightUnits} kg ağırlık
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs ağırlık
-FormatText,after reaching dungeon level {RecordDepth},{RecordDepth} derinliğine ulaştıktan sonra
+FormatText,after reaching depth {RecordDepth},{RecordDepth} derinliğine ulaştıktan sonra
 FormatText,animate {CharacterName},
 FormatText,boost {AttributeName} by enchantment,Efsunla {AttributeName} özelliğini yükselt
 FormatText,break {FeatureName},
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},
 FormatText,levels {Number}+,
 FormatText,LOCKED {GATENAME},{GATENAME} Kilitli
 FormatText,lose {PropertyName} talent,yetenek kaybet {PropertyName}
-FormatText,not {EffectProperty},olmamış {EffectProperty}
 FormatText,polymorph into {EntityNames},şekil değiştir {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},ölüyü canlandırma {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},menzil {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,tetik {Dice} defa
 FormatText,unless resists {ElementName},{ElementName} 'a dayanmazsa
 FormatText,unless target has {PropertyName},
 FormatText,versus {Something},düello {Something}
-FormatText,when {Chance},{Chance} olduğunda
 FormatText,when {GROUNDNAME},
 FormatText,when {ITEMNAME},{ITEMNAME}olduğunda
-FormatText,when {KINDNAMES},{KINDNAMES}olduğunda
 FormatText,when {MATERIALNAME},{MATERIALNAME}olduğunda
 FormatText,when {PROPERTYNAME},{PROPERTYNAME}olduğunda
 FormatText,when {SANCTITYNAME},{SANCTITYNAME}olduğunda
 FormatText,when {Something},ne zaman {Something}
 FormatText,when {STANDINGNAME},{STANDINGNAME}olduğunda
 FormatText,when resists {ElementName},
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Bu kapı sert kristallerden yapıldığından dolayı çok dayanıklı.
 GateName,crystal door,kristal kapı
 GateName,gold door,
@@ -2051,9 +2159,11 @@ GenderName,neuter,cinsiyetsiz
 GenderName,non-binary,
 GenerationType,module,
 GenerationType,quest,
+GenerationType,workshop,
 GradeName,artifact,eser
 GradeName,exotic,
 GradeName,standard,
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,Soğuk taş yüzeyi usta eller tarafından kazılmış ama zamanla hasar görmüş.
 GroundName,cave floor,
 GroundName,chasm,
@@ -2504,7 +2614,9 @@ ItemName,glaive,kılıç
 ItemName,gold coin,altın sikke
 ItemName,gold dragon scale mail,
 ItemName,gold dragon scales,
+ItemName,gold flail,
 ItemName,Gold Key,altın anahtar
+ItemName,gold plate mail,
 ItemName,great dagger,büyük hançer
 ItemName,green dragon scale mail,yeşil ejderha pul zırhı
 ItemName,green dragon scales,yeşil ejderha pulları
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!USTA MODU!
 LiteralText,(2d6 instead of 2-12),(2-12 yerine 2d6)
 LiteralText,(game information status text),(oyun bilgi durumu yazısı)
 LiteralText,(not eligible for hall of fame),(şan salonuna katılmaya uygun değil)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(AMOLED ekranları için önerilir)
 LiteralText,(SUPPRESSED),(BASKILANMIŞ)
 LiteralText,[MASTER],[USTA]
-LiteralText,abolition of firearms,ateşli silah yasağı
+LiteralText,Abolition of firearms,ateşli silah yasağı
 LiteralText,ABOUT,HAKKINDA
-LiteralText,About Pathos,Pathos hakkında
-LiteralText,accelerated resting,hızlandırılmış dinlenme
+LiteralText,Accelerated resting,hızlandırılmış dinlenme
+LiteralText,Achievements,
 LiteralText,actions,aksiyon
 LiteralText,ADD LEVEL,SEVİYE EKLE
 LiteralText,Add new adventurer,Yeni maceracı ekle
@@ -3025,8 +3138,8 @@ LiteralText,alias?,takma ad?
 LiteralText,ALL,HEPSİ
 LiteralText,ALL AT ONCE,HEPSİ BİRDEN
 LiteralText,all kind,her türler
+LiteralText,all levels,
 LiteralText,always,her zaman
-LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
 LiteralText,anatomy,anatomi
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,hortlaklar hareketlendir
 LiteralText,ANNOUNCEMENT,
 LiteralText,ANONYMOUS,İSİMSİZ
 LiteralText,anticlockwise 90 degrees,saatin tersinde 90 derece
+LiteralText,antique art,
 LiteralText,any item,herhangi bir eşya
 LiteralText,APPLICATION FILES,UYGULAMA DÜKKANLARI
 LiteralText,Are you sure you want to end your adventure?,Zindandan kaçıp maceranı bitirmek istediğine emin misin?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,EMİN MİSİN?
 LiteralText,area of effect,alan etkisi
 LiteralText,area transient,alan geçici
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,ESERLER
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,BİR ÖNCEKİ SEVİYEYE YÜKSEL
 LiteralText,assess item,değer biç
 LiteralText,assets,teçhizatlar
 LiteralText,ATMOSPHERE,ATMOSFER
 LiteralText,attack modifier,saldırı düzenleyici
 LiteralText,Attack which direction?,Hangi yöne saldıracaksın?
-LiteralText,attack//noun,saldır
-LiteralText,ATTACK//noun,SALDIR
-LiteralText,attack//verb,saldır
-LiteralText,ATTACK//verb,SALDIR
+LiteralText,Attack//noun,Saldir
+LiteralText,Attack//verb,Saldir
 LiteralText,attacks,saldırılar
+LiteralText,AUDIO,
 LiteralText,AUTO,OTOMATİK
 LiteralText,auto saving,otomatik kayıt
+LiteralText,avatar,
 LiteralText,AWAKE,UYANIK
-LiteralText,BACK,GERİ
 LiteralText,backfire,geri atıldı
 LiteralText,barrier,bariyer
 LiteralText,BARRIERS,BARİYERLER
 LiteralText,bazaar,pazar
 LiteralText,Begin the adventure,Macerayı başlat
 LiteralText,beholds,baktı
-LiteralText,beta discussions,beta muhabbeti
 LiteralText,Black background,Siyah arkaplan
 LiteralText,blasphemy,kafirlik
-LiteralText,BLINK,SIÇRA
+LiteralText,Blink,Siçra
 LiteralText,blink entity,sıçramak
 LiteralText,Blink which direction?,Hangi yöne sıçra?
 LiteralText,block,blok
 LiteralText,BLOCKED,ENGELLENMİŞ
 LiteralText,BLOCKS,BLOKLAR
-LiteralText,BOONS,KUTSAMALAR
+LiteralText,Boons,Kutsamalar
 LiteralText,boost attack by enchantment,saldırıyı geliştir
 LiteralText,boost damage by enchantment,hasarı geliştir
 LiteralText,boost defence by enchantment,savunmayı geliştir
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,GÖRÜLEMEZ
 LiteralText,CAN'T SLIDE,KAYILAMAZ
 LiteralText,CAN'T TELEKINESIS,
 LiteralText,CAN'T THROW,FIRLATILAMAZ
-LiteralText,CANCEL,İPTAL
+LiteralText,Cancel,İptal
 LiteralText,cancellation,iptalleme
 LiteralText,CANCELLED,İPTAL EDİLDİ
 LiteralText,capture any entity,yakala
@@ -3105,13 +3219,12 @@ LiteralText,Cast,Kullan
 LiteralText,CAST SPELLS,büyü kullan
 LiteralText,challenge,meydan okuma
 LiteralText,CHAMPION,ŞAMPİYON
+LiteralText,Change,
 LiteralText,Character,Karakter
-LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,şarjlı itemler
-LiteralText,Chat on Discord,Discordda muhabbete gel
 LiteralText,check for updates?,güncellemeleri kontrol et?
 LiteralText,checking for updates,güncellemeler kontrol ediliyor
-LiteralText,CHOOSE,SEÇ
+LiteralText,Choose,SEÇ
 LiteralText,Choose your quick action,hızlı hareketini seç
 LiteralText,class,sınıf
 LiteralText,CLASSES,SINIFLAR
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,tekrar denemek için tıkla
 LiteralText,Click to send detected issues to the author,Saptanan sorunları geliştiriciye yollamak için tıkla
 LiteralText,clone source entity,karakteri klonla kaynak
 LiteralText,clone target entity,karakteri klonla hedef
-LiteralText,CLOSE,KAPAT
+LiteralText,Close,Kapat
 LiteralText,closed,kapalı
-LiteralText,Coding on Medium,Kodlama Medium'umda
 LiteralText,coins,para
-LiteralText,COMMAND,
+LiteralText,Command,
+LiteralText,Community,
 LiteralText,companion,dost
 LiteralText,compression,sıkıştırma
-LiteralText,CONCEAL,SAKLA
+LiteralText,Conceal,Sakla
 LiteralText,CONCEALED,SAKLI
 LiteralText,concealing,gizle
 LiteralText,CONDUCT,EYLEM
-LiteralText,CONFIRM,ONAYLA
+LiteralText,Confirm,Onayla
+LiteralText,Connect,
 LiteralText,connect portal,
 LiteralText,Connect to game hosted by another player.,Başka oyuncu tarafından kurulmuş bir oyuna katıl.
-LiteralText,CONSOLE,KONSOL
+LiteralText,Console,Konsol
 LiteralText,constructed,
-LiteralText,CONTACT,İLETİŞİM
 LiteralText,Continue,Devam et
 LiteralText,CONTINUE,DEVAM ET
 LiteralText,CONTROLLED,KONTROL ALTINDA
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,kayayı dönüştür
 LiteralText,conveyance,nakil
 LiteralText,COPY,KOPYALA
 LiteralText,corpse,ceset
 LiteralText,CRACK!,ÇAT!
-LiteralText,craft,oluştur
-LiteralText,CRAFT,OLUŞTUR
+LiteralText,Craft,Oluştur
 LiteralText,Craft which item?,Hangi eşyayı oluştur?
 LiteralText,CRASH APP!,KÜT!
 LiteralText,CRASH!,KÜT!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Hangi yöne oluştur?
 LiteralText,CREDITS,KATKIDA BULUNANLAR
 LiteralText,CROP,KIRP
 LiteralText,CURSED,LANETLİ
-LiteralText,CUSTOM,ÖZEL YAPIM
 LiteralText,CUSTOM HERO,ÖZEL YAPIM KAHRAMAN
 LiteralText,CUSTOM MODULES,ÖZEL MODÜL
+LiteralText,customise controls,
 LiteralText,damage,
 LiteralText,DAMAGE,
 LiteralText,dark,karanlık
+LiteralText,Darken area,
 LiteralText,DEAD END,ÇIKMAZ
 LiteralText,death,ölüm
 LiteralText,deathray,ölüm ışını
 LiteralText,decapitate entity,uzuv kaybet
 LiteralText,decapitation,uzuv kaybı
 LiteralText,DECEASED,ÖLÜ
-LiteralText,decelerated real-time,gerçek zamana yavaşlatıldı
+LiteralText,Decelerated real-time,gerçek zamana yavaşlatıldı
 LiteralText,DECREASE,AZALT
 LiteralText,defence,savunma
 LiteralText,DEFENCE,SAVUNMA
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,SİL
 LiteralText,delete this level,bu katı sil
 LiteralText,DEMOTE,PATLAT
 LiteralText,depth,derinlik
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,BİR SONRAKİ SEVİYEYE İN
 LiteralText,destination,hedef
 LiteralText,destroy,yok et
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,SIRAYA ALINMADI
 LiteralText,diet,diyet
 LiteralText,difficulty,zorluk
 LiteralText,digging,kazmak
-LiteralText,disable ambient sounds,ambians sesini kapat
+LiteralText,Disable ambient sounds,ambians sesini kapat
 LiteralText,Disable auto save on transition,etkileşime geçince otomatik kaydetmeyi kapat
+LiteralText,Disable automatic camera,serbest kamera modu
 LiteralText,Disable button tap sounds,buton seslerini kapat
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,çözülme patlamasını kapat
 LiteralText,Disable continue button,
-LiteralText,disable haptic feedback,haptic geri bildirimini kapat
+LiteralText,Disable haptic feedback,haptic geri bildirimini kapat
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,durağan animasyonları kapat
 LiteralText,Disable introduction boom,tanıtım patlamasını kapat
+LiteralText,Disable manual zoom,kilitli oran modu
 LiteralText,Disable mask animations,
 LiteralText,Disable online services,online servisleri kapat
 LiteralText,Disable pitch shifting,tizlik rastgeleyiciyi kapat
+LiteralText,Disable processing rate limit,
 LiteralText,Disable radial quick menu,
 LiteralText,Disable side quick menus,
 LiteralText,Disable spacebar real-time toggle,gerçek zamanlı ve sıra tabanlı değişim tuşunu kapat
 LiteralText,Disable swipe gestures,
+LiteralText,Disable tutorial,
 LiteralText,Disable Zeroth announcement,
 LiteralText,disarm entity,silahsızlaştır
-LiteralText,DISCONNECT,BAĞLANTINI KOPART
+LiteralText,Disconnect,Bağlantini kopart
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,
 LiteralText,discover item,aydınlat
-LiteralText,Discuss on Reddit,Reddit'te muhabbet et
+LiteralText,discoveries,
 LiteralText,disenchant item,efsunu boz
 LiteralText,dismantle items to extract the base materials and raw essence,eşyaları dağıtarak temel mazlemelerine ve esansına ulaş
-LiteralText,DISMISS,DAĞIL
-LiteralText,DISMOUNT,İN
+LiteralText,Dismiss,Dağil
+LiteralText,Dismount,İn
 LiteralText,Dismount which direction?,Hangi yöne ineceksin?
 LiteralText,Display dice rolls in the help,yardım ekranında zar değerlerini göster
+LiteralText,Display full screen,
 LiteralText,distribution,özellikler
 LiteralText,divine item,ilahileştir
 LiteralText,DIVINED,İLAHİLEŞTİRİLMİŞ
 LiteralText,divined items,ilahileştirilmiş eşyalar
 LiteralText,Do you want to save or quit this adventure?,Bu macerayı silmek mi yoksa ondan çıkmak mı istiyorsun?
 LiteralText,domestic,evcil
-LiteralText,DONATE,BAĞIŞLA
+LiteralText,Donate,Bağişla
 LiteralText,Donate to say thanks,Teşekkür etmek için bağış yap
 LiteralText,DOOR,KAPI
 LiteralText,double damage when mounted,Binekteyken hasarını ikiye katla
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,derevesini düşür
 LiteralText,downloading update,güncelleme indiriliyor
 LiteralText,drain item,
-LiteralText,drop,bırak
-LiteralText,DROP,BIRAK
+LiteralText,Drop,Birak
 LiteralText,DUAL WIELD,ÇİFT ELLE KULLAN
 LiteralText,duration,Süre
+LiteralText,Eat,
 LiteralText,edible items,Yiyilebilir eşyalar
 LiteralText,egg,yumurta
 LiteralText,else,başka
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,Yük engeli seviyeleri
 LiteralText,End this adventure,Bu macerayı sonlandir
 LiteralText,ended,bitmiş
 LiteralText,engulf entity,yut
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,MİKTARI GİR
 LiteralText,ENTITIES,VARLIKLAR
 LiteralText,entity,varlık
 LiteralText,entropy accidents,entropi kazası
-LiteralText,EQUIP,KUŞAN
-LiteralText,equipped,donan
+LiteralText,Equip,Kuşan
+LiteralText,equipment,donan
 LiteralText,ESCAPE,KAÇ
 LiteralText,escape traps,tuzaklardan kaç
 LiteralText,escape with,birşey kullanarak kaç
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,TAKAS ET
 LiteralText,exchange entity,değiş
 LiteralText,EXIT PATHOS,PATHOS'TAN ÇIK
 LiteralText,EXPAND,GENİŞLE
-LiteralText,EXPEL,TÜKÜR
+LiteralText,Expel,Tükür
 LiteralText,experience,tecrübe
 LiteralText,EXPERIENCE,TECRÜBE
 LiteralText,explosion,patlama
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,HATA KAYITLARI
 LiteralText,feats,başarılar
 LiteralText,feature,özellik
 LiteralText,FEATURES,ÖZELLİKLER
-LiteralText,FEED,BESLE
+LiteralText,Feed,Besle
 LiteralText,FEEDBACK,GERİ BİLDİRİ
 LiteralText,Feedback information,
 LiteralText,FILES,DOSYALAR
@@ -3306,24 +3433,26 @@ LiteralText,fixed,
 LiteralText,fixed range,sabit mezil
 LiteralText,FIZZLE,KÖPÜRME
 LiteralText,Floor,Zemin
-LiteralText,FOLLOW,TAKİP ET
-LiteralText,Follow me on Twitter,Twitter'da beni takip et
-LiteralText,free panning mode,serbest kamera modu
+LiteralText,Follow,Takip et
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,korkut
 LiteralText,fumbling,sakarlık
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,KARMA KAZAN
 LiteralText,gain level,seviye kazan
 LiteralText,GAIN LEVEL,SEVİYE KAZAN
 LiteralText,gain nutrition,besin kazan
 LiteralText,gain skill,yetenek kazan
+LiteralText,GAMEPLAY,
 LiteralText,gate,geçit
 LiteralText,gates,
 LiteralText,gather,topla
 LiteralText,gender,cins
 LiteralText,genocide,soykırım
-LiteralText,GENOCIDE,SOYKIRIM
 LiteralText,GIVE,VER
 LiteralText,GIVE ALL,HEPSİNİ VER
+LiteralText,GLOBAL,DÜNYA
 LiteralText,GLYPHS,GLİF
 LiteralText,GOD MODE,
 LiteralText,gold,altın
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,kabuğu kır
 LiteralText,hatched by,yumurtadan çıkaran
 LiteralText,Having trouble finding the stairs down to the next level?,Bir sonraki seviyeye ulaşmakta zorluk mu çekiyorsun?
 LiteralText,Help,Yardım
-LiteralText,HELP,YARDIM
 LiteralText,HIDDEN,GİZLİ
-LiteralText,HIDE,GİZLE
+LiteralText,Hide,Gizle
 LiteralText,hiding,saklanma
 LiteralText,HINT,İPUCU
-LiteralText,HIRE,İŞE AL
+LiteralText,Hire,İşe al
+LiteralText,HJKL directional keys,
 LiteralText,horde,
 LiteralText,HORDES,ORDULAR
 LiteralText,HOST,
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Ancak, güncelleme başlamadan önce maceranı bitirmek isteyebilirsin."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Umarım maceralarından keyif alıyorsundur. Bana ulaşıp fikirlerini beyan etmekten lütfen çekinme.
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.",
 LiteralText,I'm developing a new game called ZEROTH!,
 LiteralText,identified items,tanımlanmış eşyalar
-LiteralText,identify all items,tanımla hepsi
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,YERDEKİ BÜTÜN EŞYALARI TANIMLA
-LiteralText,identify one item,tanımla biri
+LiteralText,Identify all items,Tanımla hepsi
+LiteralText,Identify one item,Tanımla biri
+LiteralText,identity,
 LiteralText,ILLITERATE,OKUMA YAZMA BİLEN
 LiteralText,illusion,
 LiteralText,ILLUSION,İLÜZYON
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,hapset
 LiteralText,incarceration,hapsetme
 LiteralText,INCREASE,ARTIR
 LiteralText,INDEX,INDEKS
-LiteralText,individual crafting,tekli oluştur
+LiteralText,Individual crafting,tekli oluştur
 LiteralText,infinite quantity,
 LiteralText,influenced actions,destekli hareketler
 LiteralText,INSCRIBE,
 LiteralText,INSCRIBE ITEM,
 LiteralText,inscription?,
-LiteralText,instruct each character,
+LiteralText,Inspect,
+LiteralText,Instruct each character,
 LiteralText,INSUFFICIENT GOLD,YETERSİZ ALTIN
-LiteralText,Inventory,
-LiteralText,INVENTORY,ENVANTER
-LiteralText,ITEM,
-LiteralText,items,eşyalar
+LiteralText,INTERFACE,
+LiteralText,Inventory,Envanter
+LiteralText,Item,
 LiteralText,ITEMS,EŞYALAR
 LiteralText,JOIN,
 LiteralText,Journal,
 LiteralText,JOURNAL,SEYİR DEFTERİ
-LiteralText,JUMP,SIÇRA
+LiteralText,Jump,Siçra
 LiteralText,Jump which direction?,Hangi yöne sıçrayacaksın?
 LiteralText,karma,karma
 LiteralText,KARMA,KARMA
 LiteralText,key?,
+LiteralText,Keyboard,
+LiteralText,Kick,Tekmele
 LiteralText,Kick which direction?,Hangi yöne tekme atacaksın?
-LiteralText,KICK!,TEKMELE!
 LiteralText,kills,leşler
 LiteralText,kit,malzeme
-LiteralText,KNOWLEDGE,BİLGİ
+LiteralText,Knowledge,Bilgi
 LiteralText,LANGUAGE,
-LiteralText,LEARN ALL SPELLS,
+LiteralText,Learn all spells,
 LiteralText,learn spells,
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,
+LiteralText,Left,
 LiteralText,LEFT RING,
 LiteralText,LEVEL CHART,SEVİYE TAHTASI
 LiteralText,level//rank,seviye
@@ -3413,21 +3543,20 @@ LiteralText,lies,yalanlar
 LiteralText,life,hayat
 LiteralText,LIFE,HAYAT
 LiteralText,Life represents your physical health and death occurs at zero.,
-LiteralText,light,
-LiteralText,LIGHT,IŞIK
+LiteralText,light,işik
 LiteralText,light radius,Işık alanı
+LiteralText,Lighten area,
 LiteralText,limits,Sınırlar
 LiteralText,LIST,LİSTE
 LiteralText,lit,
 LiteralText,LIVING,YAŞARKEN
 LiteralText,loading,yükleniyor
-LiteralText,LOCK,KİLİTLE
-LiteralText,locked,kilitli
-LiteralText,LOCKED,KİLİTLİ
-LiteralText,locked scaling mode,kilitli oran modu
+LiteralText,Lock,Kilitle
+LiteralText,Locked,Kilitli
 LiteralText,locking,kilitle
-LiteralText,loot,ganimet
-LiteralText,LOOT,GANİMET
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Ganimet
+LiteralText,Loot//verb,Ganimet
 LiteralText,LOSE KARMA,KARMA KAYBET
 LiteralText,LOSE LEVEL,SEVİYE KAYBET
 LiteralText,lose nutrition,besin kaybet
@@ -3440,39 +3569,44 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,
 LiteralText,Map,
 LiteralText,MAP,HARİTA
-LiteralText,mapping,haritalamak
+LiteralText,Mapping,Haritalamak
 LiteralText,material,
 LiteralText,materials,malzemeler
 LiteralText,melting,
-LiteralText,MENU,
+LiteralText,Menu,
 LiteralText,mercenary,paralı asker
-LiteralText,MIMIC,MİMİK
+LiteralText,Mimic,Mimik
 LiteralText,mimicking,
 LiteralText,mobilise block,
 LiteralText,modifier,düzenleyici
+LiteralText,MODULE,
 LiteralText,MORE INFO,
-LiteralText,MOUNT,BİN
+LiteralText,Mount,Bin
 LiteralText,Mount which direction?,
 LiteralText,MOUNTED,BİNİLDİ
-LiteralText,MOVE,YÜRÜ
+LiteralText,Move,Yürü
 LiteralText,move down one level,
 LiteralText,move up one level,
 LiteralText,MULTIPLAYER,
+LiteralText,Multiplayer Chat,
 LiteralText,murder,katlet
 LiteralText,MURDER ENTITIES EVERYWHERE,bütün canlıları katlet
 LiteralText,music volume,
 LiteralText,N/A,BİLİNMEYEN
-LiteralText,name,
-LiteralText,NAME,İSİMLENDİR
 LiteralText,name?,
+LiteralText,Name//noun,
+LiteralText,Name//verb,İsimlendir
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,
 LiteralText,never,asla
-LiteralText,NEW,
+LiteralText,Next character,
 LiteralText,no additional effects,yan etki yok
 LiteralText,no allies,yoldaş yok
 LiteralText,no ambient sounds,
 LiteralText,No appropriate items available,uygun bir eşya yok
-LiteralText,no available knowledge,bilgi yok
+LiteralText,No key,
 LiteralText,no records found,
 LiteralText,no resistances,
 LiteralText,no talents,yeteneksiz
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,hiçbir şey olmadı
 LiteralText,Nothing of interest,İlgi çekici birşey yok
 LiteralText,nothing to give,vermek için birşey yok
 LiteralText,nothing to take,almak için birşey yok
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,besin
 LiteralText,NUTRITION,BESİN
 LiteralText,OBSTRUCTED,ENGELLENMİŞ
 LiteralText,OFFLINE,ÇEVRİMDIŞI
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,TEKER TEKER
 LiteralText,oOo,oOo
-LiteralText,OPEN,AÇ
+LiteralText,Open,Aç
 LiteralText,OPENED,AÇIK
 LiteralText,opening,açıklık
 LiteralText,OR,
 LiteralText,ORIGINAL,
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,
 LiteralText,OVERVIEW,GENEL BAKIŞ
 LiteralText,Palette,
 LiteralText,PARTY,GRUP
-LiteralText,passive (no attacking),pasif (saldırgan değil)
+LiteralText,Passive (no attacking),pasif (saldırgan değil)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,
 LiteralText,pathos development @ paypal,Pathos'un gelişimine Paypal'dan
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,
-LiteralText,Pathos might be the next evolution of Nethack.,Pathos Nethack'in bir sonraki evrimi olabilir.
+LiteralText,Pathos might be the next evolution of NetHack.,Pathos NetHack'in bir sonraki evrimi olabilir.
 LiteralText,penalty,
 LiteralText,penetrates,delip geçer
 LiteralText,per level,seviye başına
+LiteralText,Perform,
 LiteralText,permanent,
 LiteralText,PERSONAL,KİŞİSEL
+LiteralText,Pick up,
 LiteralText,PLACE,YERLEŞTİR
 LiteralText,PLACE ALL,HEPSİNİ YERLEŞTİR
 LiteralText,place curse,lanet yerleştir
 LiteralText,platform,
 LiteralText,Play,
 LiteralText,Play a sound effect?,Ses efekti oynat?
+LiteralText,Play Demo,
 LiteralText,Player,
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,
 LiteralText,Please offer any clarification,Lütfen bir açıklama ekleyin
 LiteralText,Please provide your feedback,Lüften geri bildiri yapın
 LiteralText,Please rotate your device to landscape :-),
-LiteralText,POLYMORPH,ŞEKİL DEĞİŞTİR
+LiteralText,Polymorph,Şekil değiştir
 LiteralText,polymorph entity,
 LiteralText,Polymorph into what?,Hangi şekle girmek istiyorsun?
 LiteralText,polymorph item,
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,ŞEKİL DEĞİŞTİRDİ
 LiteralText,portal,
 LiteralText,PORTALS,
 LiteralText,porter,
-LiteralText,PRAY,DUA ET
+LiteralText,POSITIVE,
+LiteralText,Pray,Dua et
 LiteralText,preservation,korunma
-LiteralText,prevent revenant levels,mezar kaçkını seviyelerini engelle
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,mezar kaçkını seviyelerini engelle
+LiteralText,Previous character,
 LiteralText,prisoner,
 LiteralText,probability,olasılık
 LiteralText,PROMOTE,
 LiteralText,PROPERTIES,YETENEKLER
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,cezalandır
 LiteralText,PUNISHED,
 LiteralText,punishment?,
 LiteralText,PUNISHMENTS,CEZALAR
+LiteralText,Purchase,
 LiteralText,QUANTITY,MİKTAR
-LiteralText,QUICK LOAD,
-LiteralText,QUICK SAVE,OTOMATİK KAYDET
+LiteralText,QUESTS,
+LiteralText,Quick load,
+LiteralText,Quick save,Otomatik kaydet
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,çık
-LiteralText,QUIT,ÇIK
+LiteralText,Quit,ÇIK
 LiteralText,R//replica symbol,
 LiteralText,race,ırk
 LiteralText,RACES,IRKLAR
 LiteralText,random,rastgele
-LiteralText,RANDOM,RASTGELE
-LiteralText,random dungeon seed,rastgele zindan tohum kodu
 LiteralText,random level,
 LiteralText,random points,rasgele puanlar
+LiteralText,random seed,rastgele zindan tohum kodu
 LiteralText,rank,
 LiteralText,rarity,enderlik
 LiteralText,rate & review on the app store,uygulama dükkanında değerlendir ve eleştir.
-LiteralText,RE-ACT,YENİDEN YAP
-LiteralText,RE-CAST,TEKRAR BÜYÜYÜ KULLAN
-LiteralText,RE-EQUIP,TEKRAR KUŞAN
+LiteralText,Re-act,Yeniden yap
+LiteralText,Re-cast,Tekrar büyüyü kullan
+LiteralText,Re-equip,Tekrar kuşan
 LiteralText,Re-roll,
 LiteralText,re-rolls,
-LiteralText,RE-USE,TEKRAR KULLAN
+LiteralText,Re-use,Tekrar kullan
 LiteralText,Read books to learn spells,Büyü öğrenmek için kitap oku
-LiteralText,READ!,OKU!
-LiteralText,REAL-TIME,GERÇEK-ZAMANLI
+LiteralText,Read!,Oku!
+LiteralText,Real-time,Gerçek-zamanli
 LiteralText,REALLY CRASH?,CİDDEN ÇÖKSÜN MÜ?
 LiteralText,recall party,geri çağır
 LiteralText,Recommend Pathos,Pathos'u Öner
 LiteralText,Redo,
 LiteralText,reflects,yansıtır
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,KAYIT OL
 LiteralText,REGISTER PLAYER HANDLE,LAKABINI KAYDET
 LiteralText,reinforced,
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,GÜÇLENDİR
 LiteralText,release entity,serbest bırak
 LiteralText,remove all transients,geçici olan her şeyi kaldırır
 LiteralText,remove curse,lanet kaldır
-LiteralText,REMOVE CURSE,LANETİ BOZ
 LiteralText,remove random resistance,rastgele direnci kaldır
 LiteralText,remove random talent,rastgele yeteneği kaldır
 LiteralText,remove with,çıkarmak için
 LiteralText,remove with boulder,kaya ile çıkar
 LiteralText,REMOVE//container,ÇIKAR
-LiteralText,REMOVE//equipment,ÇIKAR
+LiteralText,Remove//equipment,Çikar
 LiteralText,RENAME,
 LiteralText,RENAME CHARACTER,
 LiteralText,RENAME ITEM,
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,
 LiteralText,replenish mana,
 LiteralText,replica,taklit
 LiteralText,replicate item,varlığı kopyala
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,kilit çözmek için beceriye ihtiyaç var
 LiteralText,reset random equipment,rastgele bir teçhizatı yenile
+LiteralText,Reset to defaults,
 LiteralText,resident?,
 LiteralText,resistances,dayanıklılıklar
 LiteralText,RESISTS,DAYANDI
 LiteralText,Rest,
 LiteralText,Rest how many turns?,
+LiteralText,Rest once,
 LiteralText,restarting to update,güncellemek için tekrar başlatılıyor
 LiteralText,restock shop items,tekrar doldur
 LiteralText,restore ability,kabiliyeti geri kazan
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Tekrar canlan ve devam et
 LiteralText,resurrections,tekrar canlandırmalar
 LiteralText,retaliations,
 LiteralText,RETURN,GERİ VER
-LiteralText,REVEAL,AÇIĞA KAVUŞTUR
+LiteralText,Reveal,Açiğa kavuştur
 LiteralText,REVEAL ALL MAPS,
 LiteralText,REVEAL THIS MAP,
 LiteralText,revealed,
 LiteralText,revenant,
-LiteralText,REVERT,GERİ AL
+LiteralText,Revert,Geri al
+LiteralText,Right,
 LiteralText,RIGHT RING,
 LiteralText,rigid,
 LiteralText,ROTATE,
 LiteralText,route entity,
 LiteralText,rumour,dedikodu
 LiteralText,sacrifice item,kurban et
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,RUH SAĞLIĞI KONTROLÜ
 LiteralText,SAVE,KAYDET
 LiteralText,SAVE & QUIT,KAYDET & ÇIK
@@ -3632,36 +3794,35 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,KAYITLI MACERALAR
 LiteralText,SAVED BONES,KAYITLI KEMİKLER
 LiteralText,school,
-LiteralText,scrap,parçalara ayır
-LiteralText,SCRAP,PARÇALARA AYIR
+LiteralText,Scrap,Parçalara ayir
 LiteralText,SEALED,
 LiteralText,Search,
 LiteralText,Search how many turns?,
+LiteralText,Search once,
 LiteralText,searching,ara
 LiteralText,secret,
 LiteralText,SECRET,
 LiteralText,seed,tohum
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,
 LiteralText,Select Companion Tile,
 LiteralText,Select Hero Tile,
 LiteralText,SELECT ITEM,
-LiteralText,SELECT LANGUAGE,
 LiteralText,SELECT MAP,
-LiteralText,SELECT PORTRAIT,
 LiteralText,SELECT RESIDENT,
 LiteralText,SELECT SQUARE,
-LiteralText,SELECT TILESET,
 LiteralText,self,kendine
+LiteralText,Self menu,
 LiteralText,SELL,SAT
 LiteralText,SELL ALL,HEPSİNİ SAT
 LiteralText,SEND,YOLLA
 LiteralText,Send me an email,Bana bir e-mail at
-LiteralText,SERVICES,HİZMETLER
+LiteralText,Services,Hizmetler
 LiteralText,SET DIFFICULTY,
 LiteralText,set starting location,
-LiteralText,SETTINGS,AYARLAR
+LiteralText,Settings,Ayarlar
 LiteralText,sfx volume,
-LiteralText,SHARE//exchange,PAYLAŞ
+LiteralText,Share//exchange,Paylaş
 LiteralText,SHARE//publish,PAYLAŞ
 LiteralText,SHOPS,DÜKKANLAR
 LiteralText,Show debugging information,Onarma bilgilerini göster
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,
 LiteralText,size,boyut
 LiteralText,skills,beceriler
 LiteralText,SKILLS,BECERİLER
-LiteralText,SLIDE,
+LiteralText,Slide,
 LiteralText,Slide which direction?,
 LiteralText,slower animations,
 LiteralText,SONICS,
@@ -3686,17 +3847,17 @@ LiteralText,special,
 LiteralText,SPECIALS,
 LiteralText,speed,hız
 LiteralText,SPEED,HIZ
-LiteralText,SPELL,
+LiteralText,Spell,
 LiteralText,SPELLS,BÜYÜLER
 LiteralText,Square,
 LiteralText,stack,
 LiteralText,START,BAŞLA
 LiteralText,Start a game to be joined by other players.,
 LiteralText,Start new adventure,Yeni maceraya başla
-LiteralText,start without companion,dostsuz başla
+LiteralText,Start without companion,dostsuz başla
 LiteralText,starvation,açlık
 LiteralText,starved,açlıktan öldü
-LiteralText,STAY,ORDA KAL
+LiteralText,Stay,Orda kal
 LiteralText,steal,çal
 LiteralText,STOP,DUR
 LiteralText,storage,depo
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,
 LiteralText,SUBMIT,YOLLA
 LiteralText,summon,canlı çağır
 LiteralText,SUSTAINED,SÜRDÜRÜLDÜ
-LiteralText,SWAP,DEĞİŞTİR
-LiteralText,SWITCH,
+LiteralText,Swap,Değiştir
+LiteralText,Switch,
 LiteralText,symptoms,semptomlar
 LiteralText,Table of Contents,
-LiteralText,TAKE,AL
+LiteralText,Take,Al
 LiteralText,TAKE ALL,HEPSİNİ AL
 LiteralText,talents,yetenekler
 LiteralText,TALENTS,YETENEKLER
-LiteralText,TALK,
+LiteralText,Talk,
 LiteralText,target,hedef
-LiteralText,TELEKINESIS,
+LiteralText,Telekinesis,
 LiteralText,Telekinesis which direction?,
 LiteralText,Telekinesis which object?,
-LiteralText,TELEPORT,IŞINLAN
+LiteralText,Teleport,Işinlan
+LiteralText,Teleport end,
 LiteralText,teleport entity,karakteri ışınla
 LiteralText,teleport item away,ışınlanarak çık
 LiteralText,Teleport to where?,Nereye ışınlanacaksın?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,
 LiteralText,terrain,arazi
 LiteralText,The attack score is your aptitude for hitting an opponent.,Saldırı puanın rakibe vurma becerindir.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Zorluğu mekanikleri geliştirirken onu en iyi oyun yapan hissiyatı kaybetmemek
+LiteralText,The damage you do to an opponent upon a successful attack.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Savunma puanın rakibin vuruşlarından ne kadar korunduğunu gösterir.
 LiteralText,There is a new update available!,Yeni bir güncelleme mevcut!
 LiteralText,there is nothing to place here,buraya yerleştirilebileek bir şeyin yok
 LiteralText,there is nothing to remove here,buradan kaldırılabilecek bir şey yok
 LiteralText,there is nothing to trade with this merchant,bu tüccara satabileceğin birşey yok
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,bulunduğun seviye
 LiteralText,this merchant has no stock to trade,bu tüccarın deposunda satacak birşey yok
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Başarılarınız Şan Salonuna bu isimle kaydedilecek.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Bu tohum kodunu arkadaşlarınla paylaşıp aynı zindanı yenmeye meydan okuyabilirsin
 LiteralText,threw,fırlattı
-LiteralText,THROW,FIRLAT
+LiteralText,Throw,Firlat
+LiteralText,TILESET,
 LiteralText,tin,teneke
 LiteralText,tinning,kalaylama
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,ÇOK BÜYÜK
 LiteralText,TOO HEAVY,
 LiteralText,TOO HUNGRY,ÇOK AÇ
 LiteralText,TOO SMALL,ÇOK KÜÇÜK
 LiteralText,TOO WEAK,ÇOK ZAYIF
 LiteralText,TRACKS,
-LiteralText,TRADE,ALIŞVERİŞ
+LiteralText,Trade,Alişveriş
 LiteralText,transform to,
 LiteralText,transients,geçİcİler
 LiteralText,TRANSIENTS,GEÇİCİLER
@@ -3759,15 +3926,16 @@ LiteralText,trapped,yakalandı
 LiteralText,TRAPPED,YAKALANDI
 LiteralText,trapped container,tuzaklı kap
 LiteralText,trapped door,tuzaklı kapı
-LiteralText,TRIGGER,TETİK
+LiteralText,Trigger,Tetik
 LiteralText,trigger once,tetik bir kere
 LiteralText,trigger unlimited times,tetik sınırsız eşyalar
 LiteralText,truth,doğru
-LiteralText,TUNNEL,TÜNEL
+LiteralText,Tunnel,Tünel
 LiteralText,Tunnel which direction?,Hangi yöne kaz?
-LiteralText,TURN-BASED,SIRA-BAZLI
+LiteralText,Turn-based,Sira-bazli
 LiteralText,turns,sıralar
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,Rastgele bir zindan tohum kodu oluşturmak için istediğin bir kelime yada cümleyi gir.
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,Rastgele bir zindan tohum kodu oluşturmak için istediğin bir kelime yada cümleyi gir.
 LiteralText,unable to load,yüklenemiyor
 LiteralText,unafflict,etkiden kurtama
 LiteralText,UNDEAD,YÜRÜYEN ÖLÜYKEN
@@ -3775,16 +3943,20 @@ LiteralText,Undo,
 LiteralText,unidentified items,tanımlanamayan eşyalar
 LiteralText,unique,eşsiz
 LiteralText,UNIQUES,EŞŞİZLER
-LiteralText,UNLOCK,KİLİDİ AÇ
+LiteralText,unknown effects,
+LiteralText,Unlock,Kilidi aç
 LiteralText,unlock door or container,kapıyı veya kabı aç
-LiteralText,UNLOCKED,KİLDİ AÇILDI
+LiteralText,Unlocked,Kildi açildi
 LiteralText,unpolymorph,şekli düzeltme
 LiteralText,unpunish,ceza kaldırma
 LiteralText,unskilled,yetersiz beceri
 LiteralText,UNSKILLED,YETERSİZ BECERİ
 LiteralText,unstuck,
-LiteralText,UNTRAP,SİLAHSIZLAŞTIR
+LiteralText,Untrap,Silahsizlaştir
 LiteralText,UNTRAPPED,SİLAHSIZLAŞTIRILMIŞ
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,güncelleme mevcut
 LiteralText,update cancelled,güncelleme iptal edildi
 LiteralText,update failed,güncelleme başarısız
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,GÜNCELLEMELER
 LiteralText,upgrade to,geliştir
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Eğer bir tohum kodu kullanırsan Şan Salonuna giremezsin.
 LiteralText,Vanity,
+LiteralText,Victory!,
 LiteralText,VIEW,
 LiteralText,visit shop,dükkana git
 LiteralText,visit shrine,tapınağa git
-LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,visit zoo,habitata git
 LiteralText,VOID SPACE,BOŞLUK
 LiteralText,volatile,
 LiteralText,VOLATILES,
 LiteralText,vomit nutrition,
 LiteralText,vulnerable to,karşısında savunmasız
-LiteralText,WAIT,BEKLE
+LiteralText,Wait,Bekle
 LiteralText,Wait how many turns?,
-LiteralText,warping,ışınlan
-LiteralText,WARPING,EĞRİLME
+LiteralText,Warping,Eğrilme
 LiteralText,was killed,öldürüldü
 LiteralText,weakness to,
 LiteralText,weight,ağırlık
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,yık
 LiteralText,WON'T EAT,YEMİYOR
 LiteralText,WORKBENCH MATERIALS,ÇALIŞMA MASASI MALZEMELERİ
 LiteralText,World,
-LiteralText,WORLD,DÜNYA
 LiteralText,WRONG WAY,YANLIŞ YÖN
 LiteralText,"You are playing as anonymous, please register!","Kimliksiz oynuyorsun, lütfen kayıt ol!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Gizli kapıları ARAMAK için GÖZ tuşuna bas.
 LiteralText,Your current movement and action speed in squares per second.,Saniyede kare cinsinde şu anki hareket ve saldırı hızın.
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.",
 LiteralText,ZOOM,YAKINLAŞTIR
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,YAŞAM ALANLARI
 LiteralText,zZz,
 LocalityName,area,
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,sebze
 MaterialName,water,su
 MaterialName,wax,balmumu
 MaterialName,wood,tahta
-MeasurementSystemName,imperial,emperyal
-MeasurementSystemName,metric,metrik
+MeasurementSystemName,imperial units,emperyal
+MeasurementSystemName,metric units,metrik
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Prosedürlerle oluşturulan zindanlara ve mağaralara in. sonsuz tekrar oynama potansiyeline sahip ve Pathosun acemi oyunularına önerilir.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.",
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Dağlardan ovalardan geçen el yapımı bir macera. Zindanın limitlerinden kurtul ve zorlayıcı bir maceraya atıl.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Pathos'un mekanikleriyle oynaman için bir kum havuzu. Bütün eşyalarla, tuzaklarla ve zindan möbleleriyle iki basit odada oyna."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.",
 ModuleName,Dhak Legacy,Dhak Mirası
 ModuleName,Kaloi Opus,
-ModuleName,Nethack Codex,Nethack Kodeksi
+ModuleName,NetHack Codex,NetHack Kodeksi
 ModuleName,Pixel Sojourn,
 ModuleName,Sandbox Play,Kum Havuzu
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,boşluk
 ModuleTerm,Ambush,
 ModuleTerm,Ant Cave,
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,yukarı çıkan kil merdiven
 PortalName,jade ladder down,aşağı inen yeşimtaşı merdiven
 PortalName,jade ladder up,yukarı çıkan yeşimtaşı merdiven
 PortalName,rift,
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,aşağı inen taş merdiven
 PortalName,stone staircase up,yukarı çıkan taş merdiven
 PortalName,transportal,transportal
 PortalName,wooden ladder down,aşağı inen tahta merdiven
 PortalName,wooden ladder up,yukarı çıkantahta merdiven
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,Savunmana yardım eden parlak bir büyü kalkanı vücudunu sarıyor.
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.",
-PropertyDescription,Control when and where you teleport.,Ne zaman ve nereye ışınlandığını kontrol et.
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,Öfkeden delirerek dost düşman dinlemeden etrafına saldırıyorsun.
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.",Kabiliyet puanların sabitlenir. Ne yükselebilirler ne de azalabilirler.
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,Seni garip etkilere ve kusma isteğine maruz bırakan berbat bir hastalığa yakalandın.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,Yakındaki canavarlar ve ortalama tehlike seviyeleri hakkında önceden uyarı verir.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.",Huzur içinde uyuyorsun. Canavarlarla dolu bir zindanda.
+PropertyDescription,Assess the number of charges in an item when you pick it up.,Bir eşyanın kullanım limitini eline aldığında anlarsın.
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,Ne zaman ve nereye ışınlandığını kontrol et.
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.",
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",Yeme dürtüsü seni alıp götürür ve asla tatmin olmayacağını bilirsin.
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.",Öfkeden delirerek dost düşman dinlemeden etrafına saldırıyorsun.
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,Görüşün bozulur sıradan canlılar ve eşyalar kabusumsu bir şekilde garip gözükür.
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,Görüşünü geliştirerek görünmeyen canlıları görmeni sağlar.
-PropertyDescription,Fainting from lack of food.,açlıktan bayılmak.
-PropertyDescription,Fly above the ground to avoid many types of traps.,Birçok tuzak türünden sıyrılmak için havada süzülerek git.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Sakarlık çatışma sırasında silahını düşürmene ve merdivenlerden yuvarlanmana yol açar.
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,Yerçekimine meydan okur ve çoğu tuzağğı tetiklemezsin. Keşke aynı anda yere yetişebilseydin.
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",Birçok tuzak türünden sıyrılmak için havada süzülerek git.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Bakış ve ışın saldırıları kaynağına yansıtılır.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Yakındaki canavarlar ve ortalama tehlike seviyeleri hakkında önceden uyarı verir.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,Dehşet düşerek saldırma yetini kaybedersin ve kaçmalısın.
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Zindanda sessizce gezerek uyuyan canavarlara gizlice yaklaşabilirsin.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,Hem şekil değiştirmeni hem de eski haline dönmeni engeller.
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.",Dehşet düşerek saldırma yetini kaybedersin ve kaçmalısın.
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.",Vücudun taşa dönüşürcesine sertleşir ve hareketin zorlaşır. Sanki bir darbede bin parçaya ayrılacakmışsın gibi kırılgan hissedersin.
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,",Kendi ırkından canlıları suçluluk hissi olmadan yeme deneyimi."
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,Görüşünü ve farkındalığın artarak gizli kapıları ve tuzakları çaba sarfetmeden bulmanı sağlar.
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,Görüşüne gelen bu azalma sadece yakınını görmene neden olur.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",Etrafındaki herkes öfke ve şiddet tarafından yutulur. Normalda barışcıl olan canlılar bile birbirlerine saldırırlar. Bu özelliği dikkatli kullanmalısın. Besin seviyeni yavaşça emer.
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Hızına gelen bu artış daha hızlı hareket etmeni ve daha sık vurmanı sağlar.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,Varlığın zindandaki herkesi sinirlendirir.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,açlıktan bayılmak.
+PropertyDescription,Move objects without physical contact through the power of your mind.,
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",Garip bir sessizlikle yürür ve bir heceyi bile seslendiremezsin.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",Zindanda sessizce gezerek uyuyan canavarlara gizlice yaklaşabilirsin.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.",Kasların sıkılaşarak seni olduğun yerde hareketsiz ve savunmasız bırakırlar.
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.",
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",Bacakların güçlü ve uzun mesafeleri tek hamlede katedebilecek hareketlere hazır birer yaymış gibi hissedersin.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.",Hem şekil değiştirmeni hem de eski haline dönmeni engeller.
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Zihnin kandırılmalara, numaralara ve yalanlara karşı korunuyor."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Yavaşlatıcı, felç edici ya da hareketini kısıtlayabilecek güçlerden seni korur."
-PropertyDescription,Recover mana at an increased rate.,Mananı daha hızlı geri kazan.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,Vücudunun iyileşmesi geliştiği için metabolizmen hızlandı. Yeni sindirim hızın besin ihtiyacını yükseltecek.
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Mananı daha hızlı geri kazan.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Hızına gelen bu azalma hareketini yavaşlatır ve daha seyrek saldırmana neden olur.
+PropertyDescription,Resilient to all forms of natural and magical illness.,Her türlü büyülü veya doğal hastalığa dayanıklısın ve etkilenmezsin.
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,Öldüğünde seni bir bünye puanı karşılığında yarı canla hayata döndürür.
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Uyanana veya uyandırılana kadar uykuya dalarsın.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.",Işınlanmak bulunduğun zindan seviyesinde hareket etmeni sağlar. Kontrolsüz olduğunda macerana tahmin edilemeyen bir etken olur Kontrollü olduğunda gitmek istediğin yeri haritada seçerek kullanabilirsin.
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,",Kendi ırkından canlıları suçluluk hissi olmadan yeme deneyimi."
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,Kör olduğunda zihinlerin varlıklarını ve yerlerini saptamanı sağlar.
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Görünüşünün tam olarak durduğun yerde gözükmemesine neden olur. Bu bilinçli canlıların sana vurmmasını zorlaştırır. Işın ve darbe gibi büyülü saldırıların sana vurma ihtimali düşer.
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Hızına gelen bu artış daha hızlı hareket etmeni ve daha sık vurmanı sağlar.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Görüşüne gelen bu azalma sadece yakınını görmene neden olur.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Yerçekimine meydan okur ve çoğu tuzağğı tetiklemezsin. Keşke aynı anda yere yetişebilseydin.
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,Vücudunun iyileşmesi geliştiği için metabolizmen hızlandı. Yeni sindirim hızın besin ihtiyacını yükseltecek.
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,Görünmez olursun. hareket ettiğinde sadee ışıkta hafif bir bükülme gözükür.
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Hızına gelen bu azalma hareketini yavaşlatır ve daha seyrek saldırmana neden olur.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,Bu özel görüş karanlık odalarda sıcakkanlı canlıları görmeni sağlar.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.",Başka bir canlıya faydalarını ve zararlarını benimseyerek dönüş. Mesela bir canlının elleri olmayabilir ama uçup ateş ışınları soluyabilir. Dönüştükten sonra ölürsen normal haline dönersin.
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,Görüşün bozulur sıradan canlılar ve eşyalar kabusumsu bir şekilde garip gözükür.
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,Şaşkın olduğunda karar vermekte zorlanırsın. İstemediğin bir yöne doğru saldırabilir veya hareket edebilirsin ayrıca büyü de yapamazsın. Parşömen okurken kelimeleri yanlış telaffuz etmelerin istenmeyen etkilere neden olur. Kitap okuyacak kadar uzun süre odaklanamazsın.
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.",Sersemlediğinde düz yürüyemezsin ve karmaşık işleri beceremezsin. Yani neredeyse şaşmış gibi olursun.
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Seni garip etkilere ve kusma isteğine maruz bırakan berbat bir hastalığa yakalandın.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",Huzur içinde uyuyorsun. Canavarlarla dolu bir zindanda.
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Yeme dürtüsü seni alıp götürür ve asla tatmin olmayacağını bilirsin.
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Her türlü büyülü veya doğal hastalığa dayanıklısın ve etkilenmezsin.
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Tüneller kazıp zindanda kendi yolunu açabilmek için yeterince kuşandın.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,Bir eşyanın kullanım limitini eline aldığında anlarsın.
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,Şekil değiştirme kontrolün olduğunda önceden katletmiş olduğun istediğin canlıya dönüşebilirsin. Bir dönüşümü zorla yaparsan besin seviyen azalır.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,Etrafındaki herkes öfke ve şiddet tarafından yutulur. Normalda barışcıl olan canlılar bile birbirlerine saldırırlar. Bu özelliği dikkatli kullanmalısın. Besin seviyeni yavaşça emer.
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,Her an öfkeyle kendini kaybedebilecekmiş gibi dengesiz hissedersin.
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Zindanın başka yerlerindeki canlıların varlıklarını farkedersin.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,Eşyaların ilahilik durumlarını eline alarak öğrenirsin.
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Garip bir sessizlikle yürür ve bir heceyi bile seslendiremezsin.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,Kabiliyet puanların sabitlenir. Ne yükselebilirler ne de azalabilirler.
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,Vücudun taşa dönüşürcesine sertleşir ve hareketin zorlaşır. Sanki bir darbede bin parçaya ayrılacakmışsın gibi kırılgan hissedersin.
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.",
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Bacakların güçlü ve uzun mesafeleri tek hamlede katedebilecek hareketlere hazır birer yaymış gibi hissedersin.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Varlığın zindandaki herkesi sinirlendirir.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Metabolizman yavaşlar ve daha az besin tüketirsin.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Zihnin kandırılmalara, numaralara ve yalanlara karşı korunuyor."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,Kasların sıkılaşarak seni olduğun yerde hareketsiz ve savunmasız bırakırlar.
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,Görüşünü ve farkındalığın artarak gizli kapıları ve tuzakları çaba sarfetmeden bulmanı sağlar.
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,
+PropertyDescription,Sense the divine status of an item simply by picking it up.,Eşyaların ilahilik durumlarını eline alarak öğrenirsin.
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,Kör olduğunda zihinlerin varlıklarını ve yerlerini saptamanı sağlar.
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.",Şaşkın olduğunda karar vermekte zorlanırsın. İstemediğin bir yöne doğru saldırabilir veya hareket edebilirsin ayrıca büyü de yapamazsın. Parşömen okurken kelimeleri yanlış telaffuz etmelerin istenmeyen etkilere neden olur. Kitap okuyacak kadar uzun süre odaklanamazsın.
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,Sersemlediğinde düz yürüyemezsin ve karmaşık işleri beceremezsin. Yani neredeyse şaşmış gibi olursun.
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.",Savunmana yardım eden parlak bir büyü kalkanı vücudunu sarıyor.
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,Metabolizman yavaşlar ve daha az besin tüketirsin.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,Bu özel görüş karanlık odalarda sıcakkanlı canlıları görmeni sağlar.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.",
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,Uyanana veya uyandırılana kadar uykuya dalarsın.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",Şekil değiştirme kontrolün olduğunda önceden katletmiş olduğun istediğin canlıya dönüşebilirsin. Bir dönüşümü zorla yaparsan besin seviyen azalır.
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.",Başka bir canlıya faydalarını ve zararlarını benimseyerek dönüş. Mesela bir canlının elleri olmayabilir ama uçup ateş ışınları soluyabilir. Dönüştükten sonra ölürsen normal haline dönersin.
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.",Işınlanmak bulunduğun zindan seviyesinde hareket etmeni sağlar. Kontrolsüz olduğunda macerana tahmin edilemeyen bir etken olur Kontrollü olduğunda gitmek istediğin yeri haritada seçerek kullanabilirsin.
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Zindanın başka yerlerindeki canlıların varlıklarını farkedersin.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,Sakarlık çatışma sırasında silahını düşürmene ve merdivenlerden yuvarlanmana yol açar.
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",Görünmez olursun. hareket ettiğinde sadee ışıkta hafif bir bükülme gözükür.
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,Her an öfkeyle kendini kaybedebilecekmiş gibi dengesiz hissedersin.
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",Görünüşünün tam olarak durduğun yerde gözükmemesine neden olur. Bu bilinçli canlıların sana vurmmasını zorlaştırır. Işın ve darbe gibi büyülü saldırıların sana vurma ihtimali düşer.
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,Tüneller kazıp zindanda kendi yolunu açabilmek için yeterince kuşandın.
 PropertyName,aggravation,kızgınlık
 PropertyName,appraisal,değer bilme
 PropertyName,beatitude,kutsallık
@@ -4563,6 +4739,7 @@ SonicName,explosion,patlama
 SonicName,fizzle,köpürme
 SonicName,flash,kamerayla flaşı
 SonicName,flute,flüt çal
+SonicName,focus tap,
 SonicName,food,yemek
 SonicName,footsteps,ayak sesleri
 SonicName,force,güç darbesi
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,yol katetti
 TraversalPresentName,ascend,yukarı çık
 TraversalPresentName,descend,aşağı in
 TraversalPresentName,travel,yol katet
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,
 VolatileName,blood,
 VolatileName,electricity,

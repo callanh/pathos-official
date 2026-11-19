@@ -1,4 +1,42 @@
-﻿AfflictionDescription,Deadly venom courses through your veins.,Smrtonosni otrov teče kroz tvoje vene.
+﻿AchievementDescription,acquire all positive talents.,
+AchievementDescription,acquire uncontrolled teleportation.,
+AchievementDescription,Complete the module with a deathless victory.,
+AchievementDescription,dig through a wall.,
+AchievementDescription,discover every item.,
+AchievementDescription,eat a non-food item.,
+AchievementDescription,encounter every entity.,
+AchievementDescription,gain complete natural resistances.,
+AchievementDescription,learn to cast every spell.,
+AchievementDescription,maximise all ability scores.,
+AchievementDescription,push a boulder.,
+AchievementDescription,reach experience level 40.,
+AchievementDescription,recover from 1 life point.,
+AchievementDescription,train every skill to the limit.,
+AchievementDescription,transform an item on the ground.,
+AchievementDescription,transform into another form.,
+AchievementDescription,win without resurrecting.,
+AchievementName,all curation,
+AchievementName,bouldering,
+AchievementName,deathless,
+AchievementName,Dhak Legacy,
+AchievementName,exceptional,
+AchievementName,grand champion,
+AchievementName,great experience,
+AchievementName,immunity,
+AchievementName,Kaloi Opus,
+AchievementName,NetHack Codex,
+AchievementName,peak form,
+AchievementName,Pixel Sojourn,
+AchievementName,polymorphism,
+AchievementName,polypiling,
+AchievementName,Short Dungeon,
+AchievementName,spellbound,
+AchievementName,survivor,
+AchievementName,teleportitis,
+AchievementName,tunnelling,
+AchievementName,vore,
+AchievementName,well met,
+AfflictionDescription,Deadly venom courses through your veins.,Smrtonosni otrov teče kroz tvoje vene.
 AfflictionDescription,Something deeply unsettling is happening... down there.,Nešto duboko uznemirujuće se dešava ... tamo dole.
 AfflictionDescription,There is a gnawing sensation from deep inside your stomach.,Postoji osećaj grizenja iz dubine stomaka.
 AfflictionDescription,This viral disease causes inflammation of the brain and is spread by infected animals.,Ova virusna bolest uzrokuje upalu mozga i širi se zaraženim životinjama.
@@ -141,6 +179,7 @@ AppearanceName,fine mithril-coat,elegantni mitrilni plašt
 AppearanceName,fizzy potion,gazirani napitak
 AppearanceName,flute,flauta
 AppearanceName,forked polearm,račvasto bojno koplje
+AppearanceName,frayed cloth,komad tkanine
 AppearanceName,fur boots,krznene čizme
 AppearanceName,fuzzy book,knjiga sa mekanom površinom
 AppearanceName,glass orb,staklena kugla
@@ -249,7 +288,6 @@ AppearanceName,papyrus book,papirus knjiga
 AppearanceName,parchment book,knjiga pergamenta
 AppearanceName,pearl earrings,biserne minđuše
 AppearanceName,pearl ring,biserni prsten
-AppearanceName,piece of cloth,komad tkanine
 AppearanceName,pink book,roza knjiga
 AppearanceName,pink potion,rozi napitak
 AppearanceName,plaid book,karirana knjiga
@@ -549,8 +587,10 @@ BoonName,undead army,nemrtva armija
 BoonName,unicorn friend,prijatelj jednorog
 CalendarText,d MMMM yyyy,d MMMM yyyy
 CharacterName,Adebesi,Adebesi
+CharacterName,Akoya,
 CharacterName,Alista,Alista
 CharacterName,Amaya,Amaja
+CharacterName,Armax,
 CharacterName,Arnoken,Arnoken
 CharacterName,Arrom,Arom
 CharacterName,Atral,Atral
@@ -561,6 +601,7 @@ CharacterName,Belietha,Belida
 CharacterName,Bok,Bok
 CharacterName,Bolan,Bolan
 CharacterName,Brouwer,Brover
+CharacterName,Busko,
 CharacterName,Cailie,Kalie
 CharacterName,Capo,Kapo
 CharacterName,Carthyre,Kartir
@@ -572,7 +613,10 @@ CharacterName,Crepsal,Krepsal
 CharacterName,D'rey,D'rej
 CharacterName,Damano,Damano
 CharacterName,Daracy,Daraci
+CharacterName,Dastrne,
 CharacterName,Davicohr,Davikor
+CharacterName,Denier,
+CharacterName,Derent,
 CharacterName,Donneller,Doneler
 CharacterName,Dug,Dug
 CharacterName,Elishmeli,Elišmeli
@@ -582,8 +626,10 @@ CharacterName,Enlan,Enlan
 CharacterName,Ericendrick,Erikendrik
 CharacterName,Eybrinde,Ejbrind
 CharacterName,Faraze,Faraz
+CharacterName,Farleen,
 CharacterName,Fenlas,Fenlas
 CharacterName,Fenraymond,Fenrajmond
+CharacterName,Fizzit,
 CharacterName,Floki,Floki
 CharacterName,Forro,Foro
 CharacterName,Franzia,Franzija
@@ -591,15 +637,20 @@ CharacterName,Galday,Galdej
 CharacterName,Gasberg,Gasberg
 CharacterName,Gleichman,Glejčman
 CharacterName,Gmima,Gmima
+CharacterName,Goggie,
 CharacterName,Gohu,Gohu
 CharacterName,Gomack,Gomak
 CharacterName,Grytt,Grit
 CharacterName,Haelom,Helom
 CharacterName,Haique,Hajkve
+CharacterName,Hal,
+CharacterName,Hampte,
 CharacterName,Haquian,Hakvian
 CharacterName,Hendrick,Hendrik
 CharacterName,Hough,Hugh
+CharacterName,Hylatia,
 CharacterName,Illitasha,Ilitaša
+CharacterName,Iralna,
 CharacterName,Ishgood,Išgud
 CharacterName,Istophe,Istofi
 CharacterName,Isylav,Izilav
@@ -608,7 +659,9 @@ CharacterName,Javarl,Džavari
 CharacterName,Jayenason,Džejenason
 CharacterName,Jeem,Džim
 CharacterName,Jessera,Džesera
+CharacterName,Jevard,
 CharacterName,Jonat,Džonat
+CharacterName,Karasque,
 CharacterName,Karbri,Karbri
 CharacterName,Kennold,Kenold
 CharacterName,Kevugo,Kevugo
@@ -619,25 +672,32 @@ CharacterName,Lagratha,Lagrata
 CharacterName,Lanetwalz,Lanetvalz
 CharacterName,Lant,Lant
 CharacterName,Lesha,Liša
+CharacterName,Liloquy,
 CharacterName,Luickean,Lujkean
+CharacterName,Lunch,
 CharacterName,Lzay,Lzaj
 CharacterName,Malasuth,Malasut
 CharacterName,Marisa,Marisa
 CharacterName,Melchai,Melčaj
 CharacterName,Meloty,Meloti
+CharacterName,Mili,
 CharacterName,Miller,Miler
 CharacterName,Misteph,Mistef
+CharacterName,Mizra,
+CharacterName,Neeva,
 CharacterName,Nichaeltoy,Nikaeltoj
 CharacterName,Ninerma,Ninerma
 CharacterName,Ninhart,Ninhart
 CharacterName,Ninny,Nini
 CharacterName,Nodin,Nodin
 CharacterName,Norbant,Norbant
+CharacterName,Norvric,
 CharacterName,Okennwood,Okenvud
 CharacterName,Ollac,Olak
 CharacterName,Omdarro,Omdaro
 CharacterName,Orankin,Orankin
 CharacterName,Oscae,Oska
+CharacterName,Ovira,
 CharacterName,Paltrick,Paltrik
 CharacterName,Pauwinner,Paviner
 CharacterName,Penevieve,Penevivi
@@ -653,13 +713,17 @@ CharacterName,Quarah,Kvarah
 CharacterName,Quibb,Kvib
 CharacterName,Quizchak,Kvizčak
 CharacterName,Quohnrupley,Kvonruplej
+CharacterName,Rake,
 CharacterName,Rambrant,Rambrant
 CharacterName,Raugarr,Raugar
 CharacterName,Razz,Raz
 CharacterName,Rebenna,Rebina
+CharacterName,Relinsarn,
 CharacterName,Renorber,Renorber
 CharacterName,Rokiju,Rokidžu
 CharacterName,Rupley,Ruplej
+CharacterName,Rytto,
+CharacterName,Samrae,
 CharacterName,Sarlia,Sarlija
 CharacterName,Shinaas,Šinas
 CharacterName,Smither,Smajder
@@ -668,10 +732,13 @@ CharacterName,Stewite,Stjuvit
 CharacterName,Sully,Suli
 CharacterName,Talon,Talon
 CharacterName,Tanyacka,Tanjaka
+CharacterName,Tempus,
 CharacterName,Thakuline,Takulin
 CharacterName,Threepo,Trepo
 CharacterName,Timonen,Timonen
+CharacterName,Toland,
 CharacterName,Trank,Trank
+CharacterName,Uballon,
 CharacterName,Udfoot,Udfut
 CharacterName,Uffle,Ufl
 CharacterName,Ujopayne,Udžopejn
@@ -683,6 +750,7 @@ CharacterName,Vidar,Vidar
 CharacterName,Vikethome,Vikethom
 CharacterName,Viophie,Vjofi
 CharacterName,Vorzian,Vorzijan
+CharacterName,Waldrin,
 CharacterName,Wallison,Valison
 CharacterName,Waltis,Valtis
 CharacterName,Walzen,Valzen
@@ -694,15 +762,18 @@ CharacterName,Xank,Ksank
 CharacterName,Xantari,Ksantari
 CharacterName,Xarrung,Ksarung
 CharacterName,Xiolet,Ksiolet
+CharacterName,Yahoa,
 CharacterName,Yarromdee,Jaromdi
 CharacterName,Yassage,Jasadž
 CharacterName,Yorque,Jorkve
 CharacterName,Yral,Iral
 CharacterName,Yuvaloren,Juvaloren
+CharacterName,Zarja,
 CharacterName,Zean,Zin
 CharacterName,Zerbarry,Zerberi
 CharacterName,Zimn,Zimn
 CharacterName,Zonagan,Zonagan
+CharacterName,Zuki,
 CharacterName,Zultry,Zultraj
 ClassDescription,"After many years of intense contemplation these soothsayers are ready to venture into the world. Masters of their own mind, they are capable of acts of formidable willpower.","Posle mnogo godina intenzivne kontemplacije, ovi gatari su spremni da se upuste u svet. Gospodari sopstvenog uma, sposobni su za dela ogromne snage volje."
 ClassDescription,"Benevolent caretakers, always willing to lend a helping hand to the weak. Accustomed to dealing with illness, they are paragons of hygiene and cleanliness, purposed for aid. As such, they must rely on constant companionship to survive.","Dobronamerni staratelji, uvek spremni da pruže ruku pomoći slabima. Navikli da se nose sa bolešću, oni su uzori higijene i čistoće, namenjeni za pomoć. Kao takvi, moraju se oslanjati na stalno druženje da bi preživeli."
@@ -976,8 +1047,8 @@ ElementDescription,Complete resistance to fire and heat damage.,Potpuna otpornos
 ElementDescription,Complete resistance to life and mana draining effects.,Potpuna otpornost na efekte isceđivanje života i mane.
 ElementDescription,Complete resistance to petrification effects.,Potpuna otpornost na efekte petrifikacije.
 ElementDescription,Complete resistance to poison damage.,Potpuna otpornost na oštećenja od otrova.
-ElementDescription,Protects you against pure magical effects.,Štiti vas od čistih magijskih efekata.
-ElementDescription,You resist attempts to render you into a magical slumber.,Opirete se pokušajima da vas uvedu u magični san.
+ElementDescription,Complete resistance to purely magical damage and effects.,Štiti vas od čistih magijskih efekata.
+ElementDescription,Prevents effects that would cast you into a magical slumber.,Opirete se pokušajima da vas uvedu u magični san.
 ElementName,acid,kiselina
 ElementName,cold,hladnoća
 ElementName,digging,kopanje
@@ -1007,27 +1078,59 @@ EncumbranceName,stressed,stresan
 EncumbranceName,unencumbered,neopterećeni
 EngulfmentName,engulfed,zahvatiti
 EngulfmentName,swallowed,progutati
+EntityDescription,"A bipedal and semi-flightless species of domesticated fowl. Their merit is almost exclusively in their sourcing of food, be it through their eggs or their own meat.",
+EntityDescription,"A cubic amorph, perfectly shaped for cleaning right-angled dungeons. Has a penchant for indiscriminate consumption, courtesy of its highly corrosive chemical composition.",
+EntityDescription,"A lowly-ranked religious assistant, devoted to the faith and its teachings.",
 EntityDescription,A medium-sized creature prone to great ambition. Short-lived but ubiquitous; they are not to be underestimated.,"Stvorenje srednje veličine sklono velikim ambicijama. Kratkotrajna, ali sveprisutna; nisu za potcenjivanje."
+EntityDescription,"A modestly-sized predatory canine, well-known for adaptability and resourcefulness.",
+EntityDescription,A particularly cowardly variant of lizard which cannot blink.,
+EntityDescription,"A repulsive insect grown to unprecedented size. Although they are frightening to behold, they are unlikely to pose any serious threat.",
+EntityDescription,"A small canine with bright reddish-orange coat, a triangular face, pointed ears and bushy tail.",
+EntityDescription,"A sorcerer who has sworn an oath of darkness to master death, and in doing so has cursed their soul.",
+EntityDescription,"A stoic specialist, dedicated to the thankless task of keeping the insect population in check. Armed with a fly swatter, he takes his duties very seriously.",
+EntityDescription,"A tiny salamander, frequently found scampering around or swimming in ponds and streams. According to folk legends, the eye of the newt contains a touch of magical essence.",
+EntityDescription,"A trader of ill-repute, carrying criminally acquired stocks. Not a problem for you, unless they attempt a hostile acquisition of your holdings.",
+EntityDescription,"A vicious and overgrown rodent. Despite their evolution, they are still widely regarded as nothing much more than pests.",
+EntityDescription,"A violent outlaw, only motivated by the contents of your coin purse.",
+EntityDescription,"A young knight-in-training, squire to some dead fool deep down in the dungeons, no doubt.",
 EntityDescription,"Amorphous beings who have no typical shape but often take on a translucent humanoid form. While unmistakable for anything other than a plasma-like ooze, this form enables the use of clothing and tools.","Amorfna bića koja nemaju tipičan oblik, ali često poprimaju prozirni humanoidni oblik. Iako je nepogrešiv za bilo šta drugo osim za curenje nalik plazmi, ovaj oblik omogućava upotrebu odeće i alata."
 EntityDescription,"An ancient race of towering recluses. Their terrifying size gives them immense strength, supplemented by a voracious diet of meats and minerals.","Drevna rasa visokih pustinjaka. Njihova zastrašujuća veličina daje im ogromnu snagu, dopunjenu proždrljivom ishranom mesa i minerala."
+EntityDescription,"An especially squat, bold and swaggering halfling.",
+EntityDescription,An expert sorcerer whose focus is the manipulation of physical reality.,
+EntityDescription,"An overgrown, acrid fungus that seems to emit oddly chilling fumes.",
+EntityDescription,"An ugly, dimwitted, bestial sort of hominid, possessing remarkable strength.",
+EntityDescription,"An unbelievably slow composite organism made of algae and fungi that is very similar to a plant, evolved from a species that is nearly identical but immobile.",
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Astralna bića koja su posuda za nesalomivi duh pobeđenog avanturiste. Bez sopstvene motivacije, rado dozvoljavaju posedovanje; za preminulog avanturiste, to je druga šansa za osvetu ili iskupljenje. Rođena iz astralne materije , blago su građeni, providni i mogu se slobodno kretati kroz fizičke prepreke."
+EntityDescription,Bats of demonic origin that cannot be burned. Their unpleasant flesh passes on this resistance when consumed.,
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Prelepa, vanzemaljska bića koja se odlikuju svojim prepoznatljivim oreolom i pernatim krilima. Snažno usklađeni sa borbom između dobra i zla, oni osećaju božanstvo unutar svega što drže."
+EntityDescription,Benign critters prone to hopping and cuteness.,
 EntityDescription,Beware this clockwork machine of war.,Čuvajte se ove ratne mašinerije.
 EntityDescription,Bipedal mechanical automatons with nearly unbounded artificial intelligence. Powered by a molten core engine that requires a constant supply of raw metals and is susceptible to water damage.,Dvonožni mehanički automati sa gotovo neograničenom veštačkom inteligencijom. Pokretani motorom sa rastopljenim jezgrom koji zahteva stalan dotok sirovih metala i osetljiv je na oštećenja izazvana vodom.
+EntityDescription,"Devious little monsters prone to mischief and treachery. However, their remarkably low intellect does not allow for anything more than petty scheming.",
+EntityDescription,"Evil monkeys with bat wings, perhaps created by a wizard experimenting with transformation magic. They are obsessed with food and notorious for stealing it before flying away!",
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Feja stvorenja povezana moćnim prirodnim duhovima da podstiču njihove ludosti. Oni su zdepasti sa krznenim donjim delovima tela, iscepljenim kozjim kopitima i uvijenim rogovima ovna. Ribasti i pametni, veselo vode hedonističke eskapade opijanja, plesa i tuče."
 EntityDescription,"Imposing and heavily built, they resemble humanoid dragons with a snout, scaly hide and functional wings.","Impozantni i masivne građe, podsećaju na humanoidne zmajeve sa njuškom, krljuštastom kožom i funkcionalnim krilima."
 EntityDescription,"Large, omnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Veliki, svaštojedni reptili čiji su zverski preci dominirali svetom mnogo pre rođenja civilizacije. Oni su strašni grabežljivci, sposobni da skaču na impresivne udaljenosti i da odvrate mnoge napade svojom debelom ljuskavom kožom."
 EntityDescription,Monstrous creatures with the head and tail of a bull and the body of a man.,Čudovišna bića sa glavom i repom bika i telom čoveka.
+EntityDescription,Oversized rodents who make their homes in cesspools and gutters.,
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Izopačena stvorenja sa mnogo aberacija, ali uvek sa grimiznom kožom i rogovima. Njihovo samo prisustvo primorava druge da glume svoje najmračnije, najnasilnije želje."
 EntityDescription,"Ravenous, predatory species of monstrous humanoid with a severe hunch that causes the backs of their hands to drag on the ground. Despite the awkward physical appearance, they are powerfully built and are infamous for their ability to rapidly recover from any wound to their rubbery hide.","Ravenantna, grabežljiva vrsta monstruoznog humanoida sa teškim predosećajem zbog kojeg se nadlanice vuku po zemlji. Uprkos nezgodnom fizičkom izgledu, snažno su građeni i zloglasni su po svojoj sposobnosti da se brzo oporave od bilo koje rane. njihova gumena koža."
 EntityDescription,"Shape-shifting deviants, who thrive on their deceptive talents.","Devijantima koji menjaju oblik, koji napreduju na svojim prevarantskim talentima."
+EntityDescription,"Small canines with a talent for scavenging. They are long-legged opportunistic omnivores, feeding mainly on small game unless starved and desperate.",
 EntityDescription,Small folk who prefer simple lives. They are notably gregarious and their build lends them well to less-than-noble endeavours.,"Mali ljudi koji preferiraju jednostavne živote. Oni su naročito društveni, a njihova građa im dobro daje manje nego plemenite poduhvate."
+EntityDescription,Small red bats which feast upon blood. Drinking from magical creatures has enhanced their abilities far beyond those of ordinary bats.,
+EntityDescription,"Small, frail but swift, they feed on mosquitoes and moths in the wild. Little more than nuisances in the dungeon, they're not even worth eating.",
 EntityDescription,"Spiritual beings fond of nature and magic. They are physically similar to humans, but often smaller and nimbler.","Duhovna bića koja vole prirodu i magiju. Fizički su slična ljudima, ali često manja i spretnija."
 EntityDescription,"Stout, short and hardy folk. They are known for their stubbornness, metalworking and love of alcohol.","Krepi, niski i izdržljivi ljudi. Poznati su po svojoj tvrdoglavosti, obradi metala i ljubavi prema alkoholu."
 EntityDescription,"Subterranean peoples of diminutive stature, fond of tinkering and magic. Evolved for subsistence living, their metabolism is suited for long adventures where food is scarce.","Podzemni narodi malog rasta, vole petljanje i magiju. Razvijeni za egzistenciju, njihov metabolizam je pogodan za duge avanture u kojima je oskudna hrana."
+EntityDescription,"The bane of ghouls and ghasts, vampire hunter extraordinaire - or so he would call himself. Always comes prepared with the standard assortment of silver and stakes to fulfil his lifelong purpose.",
+EntityDescription,"The head of a monastic operation, wise in all manners except for his meditative decision to delve into the dungeon.",
+EntityDescription,"The leader of a warrior clan somewhere out on the surface, carrying out the vengeful will of their ancestors. Their mountainous physique makes short work of anyone foolish enough to cross them.",
 EntityDescription,"The lesser of the two ferrozygotic puddings, the brown pudding is said to taste more akin to rotted milk than a chocolate dessert. The pudding itself feeds upon fabrics and hides of all kind but its most known ability is its unique reproductive method. When brought into contact with iron the miracle of rotten slime binary fission takes place, creating two voracious offspring. Owing to the ubiquity of iron in the arms wielded by adventurers, this creature's population has only been growing with time.","Smanji od dva ferozigotna pudinga, braon puding ima ukus više nalik pokvarenom mleku nego čokoladnom desertu. Sam puding se hrani tkaninama i kožama svih vrsta, ali njegova najpoznatija sposobnost je njegova jedinstvena reproduktivna metoda. Kada se dovede u kontakt sa gvožđem, dešava se čudo binarne fisije trule sluzi, stvarajući dva proždrljiva potomka Zbog sveprisutnosti gvožđa u rukama avanturista, populacija ovog stvorenja samo je rasla s vremenom."
+EntityDescription,"These flying beasts lurk in the upper floors of the dungeon, seeking easy meals with their massive jaws. They prefer to avoid a difficult fight.",
 EntityDescription,"This mummy confection was created by steeping a human cadaver in honey. Somehow reanimated by an obscure cult of monks, it is both deadly and delicious.","Ova poslastica od mumije nastala je namakanjem ljudskog leša u med. Nekako reanimirana opskurnim kultom monaha, istovremeno je smrtonosna i ukusna."
 EntityDescription,This strange living bubble of corrosive fluids doesn't appear to have any offensive capabilities.,Čini se da ovaj čudni živi mehur korozivnih tečnosti nema nikakve ofanzivne sposobnosti.
+EntityDescription,"Though it may look like an insect, this bat behaves more like a howler monkey. Its piercing shriek is deafening and alerts nearby creatures to the presence of intruders.",
 EntityDescription,"Tiny winged spirits, inherently magical and extraordinarily beautiful. When threatened, they can escape through distortions in spatial reality.","Mali krilati duhovi, inherentno magični i izuzetno lepi. Kada su u opasnosti, mogu da pobegnu kroz izobličenja u prostornoj stvarnosti."
 EntityDescription,"Tortoise-like nomadic survivalists who leave their birthplace, from the moment they can walk, to travel the world with the comfort and protection of home on their backs.","Nomadski preživeli nalik kornjačama koji napuštaju svoje rodno mesto, od trenutka kada mogu da hodaju, da putuju svetom sa udobnošću i zaštitom doma na svojim leđima."
 EntityDescription,"Ugly, brutish creatures with cannibalistic tendencies; this warlike race is known for their impressive strength and intellectual incapabilities.","Ružna, brutalna stvorenja sa kanibalističkim tendencijama; ova ratoborna rasa je poznata po svojoj impresivnoj snazi i intelektualnim nesposobnostima."
@@ -1100,7 +1203,6 @@ EntityName,baby silver dragon,beba srebrni zmaj
 EntityName,baby white dragon,beba beli zmaj
 EntityName,baby yellow dragon,beba žuti zmaj
 EntityName,bad egg,loše jaje
-EntityName,balrog,balrog
 EntityName,baluchitherium,balučiterijum
 EntityName,banshee,banši
 EntityName,bar-lgura,bar-lgura
@@ -1175,6 +1277,7 @@ EntityName,dao,dao
 EntityName,dark cleric,crni sveštenik
 EntityName,Death,Smrt
 EntityName,death dog,mrtav pas
+EntityName,decinder,decinder
 EntityName,deep gnome,duboki gnom
 EntityName,deep one,jedan duboki
 EntityName,deeper one,jedan dublji
@@ -1199,6 +1302,7 @@ EntityName,doppelgänger,dvojnik
 EntityName,dracolich,drakolič
 EntityName,dracon,drakon
 EntityName,dragon king,kralj zmajeva
+EntityName,dread wraith,dread wraith
 EntityName,dretch,dretč
 EntityName,drow,drov
 EntityName,dryad,drijada
@@ -1212,7 +1316,6 @@ EntityName,dwarf mummy,patuljak mumija
 EntityName,dwarf thief,patuljak kradljivac
 EntityName,dwarf warrior,patuljak ratnik
 EntityName,dwarf zombie,patuljak zombi
-EntityName,Earendil,Irendil
 EntityName,earth binder,zemljano vezivo
 EntityName,earth elemental,zemaljski elementar
 EntityName,earth maker,tvorac zemlje
@@ -1227,7 +1330,6 @@ EntityName,elf king,kralj vilenjaka
 EntityName,elf lord,gospodar vilenjaka
 EntityName,elf mummy,viljenak mumija
 EntityName,elf zombie,vilenjak zombi
-EntityName,Elwing,Elving
 EntityName,embalmer,balzamator
 EntityName,emerald golem,smaragdni golem
 EntityName,energy vortex,energetski vrtlog
@@ -1238,6 +1340,7 @@ EntityName,ettin zombie,etin zombi
 EntityName,exterminator,istrebljivač
 EntityName,fairy,vila
 EntityName,Famine,Glad
+EntityName,Farwander,Tvuflover
 EntityName,Father Dagon,Tata Zmaj
 EntityName,fiend,đavo
 EntityName,fire ant,vatreni mrav
@@ -1274,6 +1377,7 @@ EntityName,ghost,duh
 EntityName,ghoul,goul
 EntityName,ghoul mage,goul čarobnjak
 EntityName,ghoul queen,goul kraljica
+EntityName,Ghuyaxil,Jinogu
 EntityName,giant,džin
 EntityName,giant ant,gigantski mrav
 EntityName,giant badger,džinovski jazavac
@@ -1380,9 +1484,9 @@ EntityName,jackal,šakal
 EntityName,jackalwere,šakaldlak
 EntityName,jaguar,jaguar
 EntityName,jellyfish,meduza
+EntityName,Jharothy,Tot Amon
 EntityName,jiggling blob,klimava kapljica
 EntityName,juggernaut,džagernaut
-EntityName,Juiblex,Džuibleks
 EntityName,juvenile raven,juvenilni gavran
 EntityName,Kaloi Thrym,Kaloj Trim
 EntityName,kamadan,kamadan
@@ -1409,7 +1513,6 @@ EntityName,kobold zombie,kobold zombi
 EntityName,komodo dragon,komodo zmaj
 EntityName,kraken,kraken
 EntityName,lamb,jagnje
-EntityName,Lareth,Laret
 EntityName,large cat,ogromna mačka
 EntityName,large dingo,ogromni dingo
 EntityName,large dog,ogromni pas
@@ -1436,7 +1539,6 @@ EntityName,lizardman chieftain,čovek gušter poglavica
 EntityName,lizardman mage,čovek gušter čarobnjak
 EntityName,lizardman shaman,čovek gušter šaman
 EntityName,lizardman warrior,čovek gušter ratnik
-EntityName,Lolth,Lolt
 EntityName,long worm,dugačak crv
 EntityName,long worm tail,dugačak crvlji rep
 EntityName,Lord Carnarvon,Gospodar Karnarvon
@@ -1481,7 +1583,6 @@ EntityName,mumak,mamut sa četiri kljove
 EntityName,nabassu,nabasu
 EntityName,nalfeshnee,nalfešni
 EntityName,Nalzok,Nalzok
-EntityName,nazgul,nazgul
 EntityName,neanderthal,neandertalac
 EntityName,Neferet,Neferet
 EntityName,newt,mali gušter
@@ -1493,10 +1594,12 @@ EntityName,nupperibo,nuperibu
 EntityName,nurse,medicinska sestra
 EntityName,occultist,okultista
 EntityName,ochre jelly,oker žele
+EntityName,Oeziblegh,Džuibleks
 EntityName,ogre,ogar
 EntityName,ogre king,kralj ogrova
 EntityName,ogre lord,gospodar ogrova
 EntityName,ogre mage,ogar čarobnjak
+EntityName,Oleyth,Laret
 EntityName,olog-hai,olog haj
 EntityName,Oracle,Proročnik
 EntityName,orange jelly,narandžasti žele
@@ -1511,6 +1614,7 @@ EntityName,orc warrior,ork ratnik
 EntityName,orc zombie,ork zombi
 EntityName,Orcus,Orkus
 EntityName,Orion,Orijon
+EntityName,Orvalth,Lolt
 EntityName,owlbear,sova medved
 EntityName,pack rat,putnički pacov
 EntityName,page,stranica
@@ -1550,6 +1654,7 @@ EntityName,rabbit,zec
 EntityName,rabid rabbit,besni zec
 EntityName,rabid rat,besni pacov
 EntityName,rabid wolf,besni vuk
+EntityName,Raedilan,Irendil
 EntityName,rancid jelly,užegli žele
 EntityName,rat king,kralj pacova
 EntityName,ratwere,pacovdlak
@@ -1573,6 +1678,7 @@ EntityName,ruby golem,rubin džin
 EntityName,rust monster,rđavo čudovište
 EntityName,rutterkin,ruterkin
 EntityName,sabre-toothed cat,sabljozuba mačka
+EntityName,Sairou,Elving
 EntityName,salamander,repati vodozemac
 EntityName,sandestin,sandestin
 EntityName,sapphire golem,safirski džin
@@ -1629,8 +1735,7 @@ EntityName,student,student
 EntityName,succubus,sukub
 EntityName,swamp kobold,močvarni kobold
 EntityName,tengu,tengu
-EntityName,Thorin,Torin
-EntityName,Thoth Amon,Tot Amon
+EntityName,Tholmak,Torin
 EntityName,thug,nasilnik
 EntityName,tiger,tigar
 EntityName,tigerwere,tigardlak
@@ -1647,7 +1752,6 @@ EntityName,troll mummy,trol mumija
 EntityName,tsetse fly,cece muva
 EntityName,tunnel worm,tunelski crv
 EntityName,two-headed troll,dvoglavi trol
-EntityName,Twoflower,Tvuflover
 EntityName,umber hulk,ambr hulk
 EntityName,undead slayer,ubica nemrtvih
 EntityName,vampire,vampir
@@ -1656,7 +1760,7 @@ EntityName,vampire king,kralj vampira
 EntityName,vampire lord,gospodar vampira
 EntityName,vampire mage,vampirski čarobnjak
 EntityName,Van Helsing,Van Helsing
-EntityName,Vecna,Vekna
+EntityName,Vercrux,Vekna
 EntityName,violet fungus,ljubičasta gljiva
 EntityName,vorpal jabberwock,vorpal džabervok
 EntityName,vrock,vrok
@@ -1703,7 +1807,6 @@ EntityName,wumpus,vumpus
 EntityName,wyvern,vivern
 EntityName,xan,ksan
 EntityName,xorn,ksorn
-EntityName,Yeenoghu,Jinogu
 EntityName,yellow jacket,žuti džaket
 EntityName,yellow jelly,žuti žele
 EntityName,yellow light,žuto svetlo
@@ -1778,18 +1881,19 @@ FormatText,{AssetName} was cancelled,{AssetName} otkazan
 FormatText,{AssetName} was damaged by {ElementName},{AssetName} je oštećen od {ElementName}
 FormatText,{AssetName} was destroyed by {ElementName},{AssetName} je uništen od {ElementName}
 FormatText,{AssetName} was disintegrated,{AssetName} bio dezintegrisan
+FormatText,{AssetName} was recharged,
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} obezglavio {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} nasmrt uplašio {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} je ubio {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} žali šta se dogodilo {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} je postao neprijatelj prema {Defender:CharacterName} !
 FormatText,{Attacker:CharacterName} turned hostile against {Defender:CharacterName}!,{Attacker:CharacterName} je postao neprijateljski raspoložen prema {Defender:CharacterName}!
-FormatText,{Base} in {Range},{Base} u {Range}
 FormatText,{BeamName} beam,{BeamName} mlaz
 FormatText,{BlockName} was disintegrated,{BlockName} je dezintegrisan
 FormatText,{BoonName} which direction?,{BoonName} u kom pravcu?
 FormatText,{BoonName} which item?,{BoonName} koja stavka?
 FormatText,{Chance} {Count} {Entities},{Chance} {Count} {Entities}
+FormatText,{Chance} chance:,kada {Chance}
 FormatText,{Chance} leaves corpse,{Chance} ostavlja leš
 FormatText,{Chance} per room,{Chance} po sobi
 FormatText,{Chance} react to {ElementName},{Chance} reaguje na {ElementName}
@@ -1801,6 +1905,7 @@ FormatText,{CharacterName} {MotionPastName} {FixtureName},{CharacterName} {Motio
 FormatText,{CharacterName} {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:AssetName} sa {With:AssetName}
 FormatText,{CharacterName} {MotionPastName} {Use:FixtureName} with {With:AssetName},{CharacterName} {MotionPastName} {Use:FixtureName} sa {With:AssetName}
 FormatText,{CharacterName} {TraversalPastName} to {MapName},{CharacterName} {TraversalPastName} do {MapName}
+FormatText,"{CharacterName} achieved {AchievementName}, {AchievementDescription}",
 FormatText,{CharacterName} adroitly {MotionPastName} {AssetName},{CharacterName} vešto {MotionPastName} {AssetName}
 FormatText,{CharacterName} adroitly {MotionPastName} {Use:AssetName} with {With:AssetName},{CharacterName} vešto {MotionPastName} {Use:AssetName} sa {With:AssetName}
 FormatText,{CharacterName} advanced to level {LevelNumber},{CharacterName} je napredovao do {LevelNumber} nivoa
@@ -1952,7 +2057,7 @@ FormatText,{Thief:CharacterName} stole {AssetName} from {Victim:CharacterName},{
 FormatText,{Thief:CharacterName} stole items from {Victim:CharacterName},{Thief:CharacterName} je ukrao predmete od {Victim:CharacterName}
 FormatText,{WeightUnits} kg,{WeightUnits} kg
 FormatText,{WeightUnits} lbs,{WeightUnits} lbs
-FormatText,after reaching dungeon level {RecordDepth},nakon dostizanja nivoa tamnice {RecordDepth}
+FormatText,after reaching depth {RecordDepth},nakon dostizanja nivoa tamnice {RecordDepth}
 FormatText,animate {CharacterName},animiraj {CharacterName}
 FormatText,boost {AttributeName} by enchantment,pojačajte {AttributeName} očaravanjem
 FormatText,break {FeatureName},polomi {FeatureName}
@@ -1998,7 +2103,6 @@ FormatText,levels {From}-{To},nivoi {From}-{To}
 FormatText,levels {Number}+,nivoi {Number}+
 FormatText,LOCKED {GATENAME},ZAKLJUČANA {GATENAME}
 FormatText,lose {PropertyName} talent,izgubi {PropertyName} talenat
-FormatText,not {EffectProperty},nije {EffectProperty}
 FormatText,polymorph into {EntityNames},polimorf u {EntityNames}
 FormatText,raise dead {Percent}% {LoyalText} {CorruptText},podizati mrtve {Percent}% {LoyalText} {CorruptText}
 FormatText,range {Dice},domet {Dice}
@@ -2022,16 +2126,20 @@ FormatText,trigger {Dice} times,pokrenuti {Dice} puta
 FormatText,unless resists {ElementName},osim ako se odupre {ElementName}
 FormatText,unless target has {PropertyName},osim ako meta ima {PropertyName}
 FormatText,versus {Something},prtoiv {Something}
-FormatText,when {Chance},kada {Chance}
 FormatText,when {GROUNDNAME},kada {GROUNDNAME}
 FormatText,when {ITEMNAME},kada {ITEMNAME}
-FormatText,when {KINDNAMES},kada {KINDNAMES}
 FormatText,when {MATERIALNAME},kada {MATERIALNAME}
 FormatText,when {PROPERTYNAME},kada {PROPERTYNAME}
 FormatText,when {SANCTITYNAME},kada {SANCTITYNAME}
 FormatText,when {Something},kada {Something}
 FormatText,when {STANDINGNAME},kada {STANDINGNAME}
 FormatText,when resists {ElementName},kada se opire {ElementName}
+FrequencyName,abundant,
+FrequencyName,elusive,
+FrequencyName,none,
+FrequencyName,occasional,
+FrequencyName,scarce,
+FrequencyName,typical,
 GateDescription,This heavy door is made out of hard crystal formations and is not easily damaged.,Ova teška vrata su napravljena od tvrdih kristalnih formacija i ne mogu se lako oštetiti.
 GateName,crystal door,kristalna vrata
 GateName,gold door,zlatna vrata
@@ -2051,9 +2159,11 @@ GenderName,neuter,srednji rod
 GenderName,non-binary,nebinarni
 GenerationType,module,modul
 GenerationType,quest,zadatak
+GenerationType,workshop,
 GradeName,artifact,artefakt
 GradeName,exotic,ekzotično
 GradeName,standard,standardno
+GroundDescription,"A dark, deep fissure in the ground. Stepping into it sends you plunging into the depths below.",
 GroundDescription,The cool stone surface has immaculate craftsmanship but is marked by damage and time.,"Hladna kamena površina ima besprekornu izradu, ali je obeležena oštećenjem i vremenom."
 GroundName,cave floor,pećinski pod
 GroundName,chasm,ponor
@@ -2504,7 +2614,9 @@ ItemName,glaive,koplje sa sečivom
 ItemName,gold coin,zlatni novčić
 ItemName,gold dragon scale mail,krljušni oklop zlatnog zmaja
 ItemName,gold dragon scales,krljušti zlatnog zmaja
+ItemName,gold flail,
 ItemName,Gold Key,Zlatni Ključ
+ItemName,gold plate mail,
 ItemName,great dagger,veliki nož
 ItemName,green dragon scale mail,krljušni oklop zelenog zmaja
 ItemName,green dragon scales,krljušti zelenog zmaja
@@ -3003,13 +3115,14 @@ LiteralText,!MASTER MODE!,!MASTER MOD!
 LiteralText,(2d6 instead of 2-12),(2d6 umesto 2-12)
 LiteralText,(game information status text),(tekst statusa informacija o igri)
 LiteralText,(not eligible for hall of fame),(ne ispunjava uslove za kuću slavnih)
+LiteralText,(optional),
 LiteralText,(recommended for AMOLED screens),(preporučuje se za AMOLED ekrane)
 LiteralText,(SUPPRESSED),(POTISNUTO)
 LiteralText,[MASTER],[MAGISTAR]
-LiteralText,abolition of firearms,ukidanje vatrenog oružja
+LiteralText,Abolition of firearms,ukidanje vatrenog oružja
 LiteralText,ABOUT,O PATHOSU
-LiteralText,About Pathos,O Patosu
-LiteralText,accelerated resting,ubrzano odmaranje
+LiteralText,Accelerated resting,ubrzano odmaranje
+LiteralText,Achievements,
 LiteralText,actions,akcije
 LiteralText,ADD LEVEL,DODAJ NIVO
 LiteralText,Add new adventurer,Dodaj novog avanturistu
@@ -3025,8 +3138,8 @@ LiteralText,alias?,pseudonim?
 LiteralText,ALL,SVE
 LiteralText,ALL AT ONCE,SVE OD JEDNOM
 LiteralText,all kind,sve vrste
+LiteralText,all levels,
 LiteralText,always,uvek
-LiteralText,AMBIENT SOUNDS,AMBIENTSKI ZVUCI
 LiteralText,amnesia,amnezija
 LiteralText,AMNESIA,AMNEZIJA
 LiteralText,anatomy,anatomija
@@ -3035,6 +3148,7 @@ LiteralText,animate revenant,animiraj revenanta
 LiteralText,ANNOUNCEMENT,SAOPŠTENJE
 LiteralText,ANONYMOUS,ANONIMAN
 LiteralText,anticlockwise 90 degrees,u smeru suprotnom od kazaljke na satu 90 stepeni
+LiteralText,antique art,
 LiteralText,any item,bilo koji predmet
 LiteralText,APPLICATION FILES,FAJLOVI APLIKACIJE
 LiteralText,Are you sure you want to end your adventure?,Da li ste sigurni da želite da završite svoju avanturu?
@@ -3042,38 +3156,38 @@ LiteralText,Are you sure you want to lose this character and end your adventure?
 LiteralText,ARE YOU SURE?,DA LI STE SIGURNI?
 LiteralText,area of effect,oblast efekta
 LiteralText,area transient,prolazna oblast
+LiteralText,Arrow directional keys,
 LiteralText,ARTIFACTS,ARTIFAKTI
+LiteralText,Ascend,
 LiteralText,ASCEND TO PREVIOUS LEVEL,SIĐITE NA PROŠLI NIVO
 LiteralText,assess item,proceni stavku
 LiteralText,assets,aseti
 LiteralText,ATMOSPHERE,ATMOSFERA
 LiteralText,attack modifier,modifikator napada
 LiteralText,Attack which direction?,Napadni na koju stranu?
-LiteralText,attack//noun,napad//imenica
-LiteralText,ATTACK//noun,NAPAD//imenica
-LiteralText,attack//verb,napasti//glagol
-LiteralText,ATTACK//verb,NAPASTI//glagol
+LiteralText,Attack//noun,Napad
+LiteralText,Attack//verb,Napasti
 LiteralText,attacks,napadi
+LiteralText,AUDIO,
 LiteralText,AUTO,AUTOMATSKI
 LiteralText,auto saving,automatsko memorisanje
+LiteralText,avatar,
 LiteralText,AWAKE,BUDAN
-LiteralText,BACK,NAZAD
 LiteralText,backfire,povratni udar
 LiteralText,barrier,barijera
 LiteralText,BARRIERS,BARIJERE
 LiteralText,bazaar,bazar
 LiteralText,Begin the adventure,Započnite avanturu
 LiteralText,beholds,pogledati
-LiteralText,beta discussions,beta diskusije
 LiteralText,Black background,Crna pozadina
 LiteralText,blasphemy,blasfemija
-LiteralText,BLINK,BLJESKATI
+LiteralText,Blink,Bljeskati
 LiteralText,blink entity,bljeskajte biće
 LiteralText,Blink which direction?,Bljeskajte na koju stranu?
 LiteralText,block,odbraniti
 LiteralText,BLOCKED,blokiran
 LiteralText,BLOCKS,BLOKADE
-LiteralText,BOONS,BLAGODAT
+LiteralText,Boons,Blagodat
 LiteralText,boost attack by enchantment,pojačajte napad začaravanjem
 LiteralText,boost damage by enchantment,pojačajte štetu začaravanjem
 LiteralText,boost defence by enchantment,pojačajte odbranu začaravanjem
@@ -3096,7 +3210,7 @@ LiteralText,CAN'T SEE,NE MOŽE DA VIDI
 LiteralText,CAN'T SLIDE,NE MOŽE DA KLIZI
 LiteralText,CAN'T TELEKINESIS,NE MOŽE DA TELEKINEZUJE
 LiteralText,CAN'T THROW,NE MOŽE DA BACI
-LiteralText,CANCEL,OTKAŽITE
+LiteralText,Cancel,Otkažite
 LiteralText,cancellation,otkazivanje
 LiteralText,CANCELLED,OTKAZAN
 LiteralText,capture any entity,hvatanje bića
@@ -3105,13 +3219,12 @@ LiteralText,Cast,Baca
 LiteralText,CAST SPELLS,BACI MAGIJE
 LiteralText,challenge,izazov
 LiteralText,CHAMPION,ŠAMPION
+LiteralText,Change,
 LiteralText,Character,Karakter
-LiteralText,CHARACTER,KARAKTER
 LiteralText,charged items,napunjene stavke
-LiteralText,Chat on Discord,Dopisuj se na Diskordu
 LiteralText,check for updates?,proveriti ažuriranja?
 LiteralText,checking for updates,proveravanje ažuriranja
-LiteralText,CHOOSE,IZABERITE
+LiteralText,Choose,Izaberite
 LiteralText,Choose your quick action,Izaberite svoju brzu akciju
 LiteralText,class,klasa
 LiteralText,CLASSES,KLASE
@@ -3121,33 +3234,34 @@ LiteralText,click to retry,kliknite da pokušate ponovo
 LiteralText,Click to send detected issues to the author,Kliknite da biste poslali otkrivene probleme autoru
 LiteralText,clone source entity,klonirajte izvorno biće
 LiteralText,clone target entity,klonirajte ciljno biće
-LiteralText,CLOSE,ZATVORITE
+LiteralText,Close,Zatvorite
 LiteralText,closed,zatvoreno
-LiteralText,Coding on Medium,Kodiranje na Mediumu
 LiteralText,coins,novčići
-LiteralText,COMMAND,
+LiteralText,Command,
+LiteralText,Community,
 LiteralText,companion,pratilac
 LiteralText,compression,kompresija
-LiteralText,CONCEAL,PRIKRITE
+LiteralText,Conceal,Prikrite
 LiteralText,CONCEALED,PREKRIVEN
 LiteralText,concealing,prekrivanje
 LiteralText,CONDUCT,SPROVESTI
-LiteralText,CONFIRM,POTVRDITE
+LiteralText,Confirm,Potvrdite
+LiteralText,Connect,
 LiteralText,connect portal,konektujte portal
 LiteralText,Connect to game hosted by another player.,Povežite se sa igrom koju vodi drugi igrač.
-LiteralText,CONSOLE,KONZOLA
+LiteralText,Console,Konzola
 LiteralText,constructed,konstruisano
-LiteralText,CONTACT,KONTAKTIRAJTE
 LiteralText,Continue,Nastavite
 LiteralText,CONTINUE,NASTAVITE
 LiteralText,CONTROLLED,KONTROLISAN
+LiteralText,Controller,
+LiteralText,Controls,
 LiteralText,convert block to barrier,konvertujte blok u barijeru
 LiteralText,conveyance,prenošenje
 LiteralText,COPY,KOPIRAJTE
 LiteralText,corpse,leš
 LiteralText,CRACK!,KRC!
-LiteralText,craft,izradite
-LiteralText,CRAFT,IZRADITE
+LiteralText,Craft,Izradite
 LiteralText,Craft which item?,Izradite koji predmet?
 LiteralText,CRASH APP!,RAZBIJ APLIKACIJU
 LiteralText,CRASH!,TRAS!
@@ -3171,19 +3285,20 @@ LiteralText,Create which direction?,Napraviti u kom pravcu?
 LiteralText,CREDITS,ZASLUGA
 LiteralText,CROP,OBREZATI
 LiteralText,CURSED,UKLET
-LiteralText,CUSTOM,KREIRANI
 LiteralText,CUSTOM HERO,KREIRANI HEROJ
 LiteralText,CUSTOM MODULES,KREIRANI MODULI
+LiteralText,customise controls,
 LiteralText,damage,
 LiteralText,DAMAGE,
 LiteralText,dark,mračno
+LiteralText,Darken area,
 LiteralText,DEAD END,ĆORSOKAK
 LiteralText,death,smrt
 LiteralText,deathray,smrtonosni zrak
 LiteralText,decapitate entity,obezglaviti biće
 LiteralText,decapitation,obezglaviti
 LiteralText,DECEASED,POKOJNI
-LiteralText,decelerated real-time,usporen u realnom vremenu
+LiteralText,Decelerated real-time,usporen u realnom vremenu
 LiteralText,DECREASE,SMANJITI
 LiteralText,defence,odbrana
 LiteralText,DEFENCE,ODBRANA
@@ -3192,6 +3307,7 @@ LiteralText,DELETE,IZBRISATI
 LiteralText,delete this level,izbrisati ovaj nivo
 LiteralText,DEMOTE,SNIZITI ČIN
 LiteralText,depth,dubina
+LiteralText,Descend,
 LiteralText,DESCEND TO NEXT LEVEL,SIĐITE NA SLEDEĆI NIVO
 LiteralText,destination,destinacija
 LiteralText,destroy,uništiti
@@ -3207,50 +3323,60 @@ LiteralText,DID NOT RANK,NIJE RANGOVANO
 LiteralText,diet,dijeta
 LiteralText,difficulty,težina
 LiteralText,digging,kopa
-LiteralText,disable ambient sounds,onemogućite ambijentalne zvukove
+LiteralText,Disable ambient sounds,onemogućite ambijentalne zvukove
 LiteralText,Disable auto save on transition,Onemogućite automatsko memorisanje na prelazu
+LiteralText,Disable automatic camera,režim slobodnog pomeranja
 LiteralText,Disable button tap sounds,Onemogućite zvukove dodira dugmeta
+LiteralText,Disable cloud sync,
 LiteralText,Disable conclusion boom,Onemogući bum zaključka
 LiteralText,Disable continue button,Onemogućite dugme za nastavak
-LiteralText,disable haptic feedback,onemogućite haptičku povratnu informaciju
+LiteralText,Disable haptic feedback,onemogućite haptičku povratnu informaciju
+LiteralText,Disable hardware acceleration,
 LiteralText,Disable idle animations,Onemogućite animacije u mirovanju
 LiteralText,Disable introduction boom,Onemogućite uvodni bum
+LiteralText,Disable manual zoom,zaključani režim skaliranja
 LiteralText,Disable mask animations,Onemogućite animacije maski
 LiteralText,Disable online services,Onemogućite usluge na mreži
 LiteralText,Disable pitch shifting,Onemogući pomeranje visine tona
+LiteralText,Disable processing rate limit,
 LiteralText,Disable radial quick menu,Onemogućite radijalni brzi meni
 LiteralText,Disable side quick menus,
 LiteralText,Disable spacebar real-time toggle,Onemogućite spejs dugme u realnom vremenu
 LiteralText,Disable swipe gestures,Onemogućite pokrete prevlačenja
+LiteralText,Disable tutorial,
 LiteralText,Disable Zeroth announcement,Onemogućite Zeroth najavu
 LiteralText,disarm entity,razoružati biće
-LiteralText,DISCONNECT,DISKONEKTUJTE SE
+LiteralText,Disconnect,Diskonektujte se
 LiteralText,Disconnected detected. Please make sure you have a reliable network connection and all devices are on the same version of Pathos.,Otkriven je prekid veze. Uverite se da imate pouzdanu mrežnu vezu i da su svi uređaji na istoj verziji Pathosa.
 LiteralText,discover item,otkrijte stavku
-LiteralText,Discuss on Reddit,Diskutujte na Redditu
+LiteralText,discoveries,
 LiteralText,disenchant item,ukloniti čaroliju stavke
 LiteralText,dismantle items to extract the base materials and raw essence,demontirajte predmete da biste izvukli osnovne materijale i sirovu suštinu
-LiteralText,DISMISS,ODBACI
-LiteralText,DISMOUNT,SJAŠITI
+LiteralText,Dismiss,Odbaci
+LiteralText,Dismount,Sjašiti
 LiteralText,Dismount which direction?,Sjašite u kom pravcu?
 LiteralText,Display dice rolls in the help,Prikažite bacanje kockica u pomoć
+LiteralText,Display full screen,
 LiteralText,distribution,atributi
 LiteralText,divine item,božanska stavka
 LiteralText,DIVINED,BOŽANSKI
 LiteralText,divined items,božanske stavke
 LiteralText,Do you want to save or quit this adventure?,Da li želite da sačuvate ili napustite ovu avanturu?
 LiteralText,domestic,domaći
-LiteralText,DONATE,DONIRAJ
+LiteralText,Donate,Doniraj
 LiteralText,Donate to say thanks,Doniraj da bi ste rekli hvala
 LiteralText,DOOR,VRATA
 LiteralText,double damage when mounted,dvostruko oštećenje kada uzjašete
+LiteralText,Down,
+LiteralText,Down-left,
+LiteralText,Down-right,
 LiteralText,downgrade to,smanjiti na
 LiteralText,downloading update,preuzimanje ažuriranja
 LiteralText,drain item,iscedi stavku
-LiteralText,drop,ispustiti
-LiteralText,DROP,ISPUSTITI
+LiteralText,Drop,Ispustiti
 LiteralText,DUAL WIELD,DRŽANJE DVA ORUŽJA
 LiteralText,duration,trajanje
+LiteralText,Eat,
 LiteralText,edible items,jestive stvari
 LiteralText,egg,jaje
 LiteralText,else,drugo
@@ -3264,12 +3390,13 @@ LiteralText,encumbrance thresholds,pragovi opterećenja
 LiteralText,End this adventure,Završite ovu avanturu
 LiteralText,ended,završteno
 LiteralText,engulf entity,obuhvatite biće
+LiteralText,Engulfment,
 LiteralText,ENTER QUANTITY,UNESITE KOLIČINU
 LiteralText,ENTITIES,BIĆA
 LiteralText,entity,bića
 LiteralText,entropy accidents,entropijske nezgode
-LiteralText,EQUIP,OPREMI
-LiteralText,equipped,opremljen
+LiteralText,Equip,Opremi
+LiteralText,equipment,opremljen
 LiteralText,ESCAPE,POBEGNITE
 LiteralText,escape traps,pobegao iz zamke
 LiteralText,escape with,pobegao sa
@@ -3282,7 +3409,7 @@ LiteralText,EXCHANGE,RAZMENITE
 LiteralText,exchange entity,razmenite biće
 LiteralText,EXIT PATHOS,IZAĐITE IZ PATHOSA
 LiteralText,EXPAND,PROŠIRITE
-LiteralText,EXPEL,PROTERAJTE
+LiteralText,Expel,Proterajte
 LiteralText,experience,iskustvo
 LiteralText,EXPERIENCE,ISKUSTVO
 LiteralText,explosion,eksplozija
@@ -3298,7 +3425,7 @@ LiteralText,FAULT LOGS,ZAPISNICI O KVAROVIMA
 LiteralText,feats,podvige
 LiteralText,feature,karakteristika
 LiteralText,FEATURES,KARAKTERISTIKE
-LiteralText,FEED,NAHRANITE
+LiteralText,Feed,Nahranite
 LiteralText,FEEDBACK,REAKCIJA
 LiteralText,Feedback information,Povratna informacija
 LiteralText,FILES,FAJLOVI
@@ -3306,24 +3433,26 @@ LiteralText,fixed,popravljeno
 LiteralText,fixed range,popravljen domet
 LiteralText,FIZZLE,FIZL
 LiteralText,Floor,Patos
-LiteralText,FOLLOW,PRATITE
-LiteralText,Follow me on Twitter,Pratite me na Tviteru
-LiteralText,free panning mode,režim slobodnog pomeranja
+LiteralText,Follow,Pratite
+LiteralText,frequency,
+LiteralText,Friendship,
 LiteralText,fright,strah
 LiteralText,fumbling,mumlati
+LiteralText,Gain 1000 coins,
 LiteralText,GAIN KARMA,UNAPREDITE KARMU
 LiteralText,gain level,napredovao na novi nivo
 LiteralText,GAIN LEVEL,UNAPREDITE NIVO
 LiteralText,gain nutrition,unapredio ishranu
 LiteralText,gain skill,unapredio skill
+LiteralText,GAMEPLAY,
 LiteralText,gate,kapija
 LiteralText,gates,kapije
 LiteralText,gather,skupio
 LiteralText,gender,pol
 LiteralText,genocide,izvršio genocid
-LiteralText,GENOCIDE,GENOCID
 LiteralText,GIVE,DAJTE
 LiteralText,GIVE ALL,DAJTE SVE
+LiteralText,GLOBAL,SVET
 LiteralText,GLYPHS,GLIFOVI
 LiteralText,GOD MODE,
 LiteralText,gold,zlato
@@ -3342,24 +3471,23 @@ LiteralText,hatch egg,izlegnuti jaje
 LiteralText,hatched by,izlegnut od
 LiteralText,Having trouble finding the stairs down to the next level?,Imate problema sa pronalaženjem stepenica do sledećeg nivoa?
 LiteralText,Help,Pomoć
-LiteralText,HELP,POMOĆ
 LiteralText,HIDDEN,SKRIVEN
-LiteralText,HIDE,SKRITI
+LiteralText,Hide,Skriti
 LiteralText,hiding,skrivajući se
 LiteralText,HINT,NAGOVEŠTAJ
-LiteralText,HIRE,UNAJMITE
+LiteralText,Hire,Unajmite
+LiteralText,HJKL directional keys,
 LiteralText,horde,horda
 LiteralText,HORDES,HORDE
 LiteralText,HOST,DOMAĆIN
-LiteralText,How much damage you do to an opponent.,
 LiteralText,"However, you may want to complete your adventures before receiving the update.","Međutim, možda ćete želeti da završite svoje avanture pre nego što dobijete ažuriranje."
 LiteralText,I hope you are enjoying your adventures and please feel free to contact me with your feedback and suggestions.,Nadam se da uživate u svojim avanturama i slobodno me kontaktirajte sa svojim povratnim informacijama i predlozima.
 LiteralText,"I'm developing a new game called ZEROTH, a roguelike platformer based on the mechanics from Pathos. Tap here for more info.","Razvijam novu igru pod nazivom ZEROTH, platformer u stilu roguelike-a zasnovan na mehanikama iz Pathos-a. Dodirnite ovde za više informacija."
 LiteralText,I'm developing a new game called ZEROTH!,Razvijam novu igru koja se zove Zeroth.
 LiteralText,identified items,identifikovani predmeti
-LiteralText,identify all items,indetifikujte sve predmete
-LiteralText,IDENTIFY ALL ITEMS ON THE FLOOR,INDENTIFIKUJTE SVE PREDMETE SA PODA
-LiteralText,identify one item,indentifikujte jedan predmet
+LiteralText,Identify all items,Indetifikujte sve predmete
+LiteralText,Identify one item,Indentifikujte jedan predmet
+LiteralText,identity,
 LiteralText,ILLITERATE,NEPISMENI
 LiteralText,illusion,iluzija
 LiteralText,ILLUSION,ILUZIJA
@@ -3375,36 +3503,38 @@ LiteralText,incarcerate entity,utamničiti biće
 LiteralText,incarceration,utamničiti
 LiteralText,INCREASE,POVEĆAJTE
 LiteralText,INDEX,INDEKS
-LiteralText,individual crafting,individualna izrada
+LiteralText,Individual crafting,individualna izrada
 LiteralText,infinite quantity,beskonačna količina
 LiteralText,influenced actions,uticajni postupci
 LiteralText,INSCRIBE,UPIŠITE
 LiteralText,INSCRIBE ITEM,UPIŠITE PREDMET
 LiteralText,inscription?,natpis?
-LiteralText,instruct each character,uputi svaki lik
+LiteralText,Inspect,
+LiteralText,Instruct each character,uputi svaki lik
 LiteralText,INSUFFICIENT GOLD,NEMATE DOVOLJNO ZLATA
+LiteralText,INTERFACE,
 LiteralText,Inventory,inventar
-LiteralText,INVENTORY,INVENTAR
-LiteralText,ITEM,STAVKA
-LiteralText,items,stavke
+LiteralText,Item,Stavka
 LiteralText,ITEMS,STAVKE
 LiteralText,JOIN,PRUDRUŽITE SE
 LiteralText,Journal,Dnevnik
 LiteralText,JOURNAL,DNEVNIK
-LiteralText,JUMP,SKOČITE
+LiteralText,Jump,Skočite
 LiteralText,Jump which direction?,Skočite u kom pravcu?
 LiteralText,karma,karma
 LiteralText,KARMA,KARMA
 LiteralText,key?,ključ?
+LiteralText,Keyboard,
+LiteralText,Kick,Udarac
 LiteralText,Kick which direction?,Udarite u kom pravcu?
-LiteralText,KICK!,UDARAC!
 LiteralText,kills,ubistva
 LiteralText,kit,komplet
-LiteralText,KNOWLEDGE,ZNANJE
+LiteralText,Knowledge,Znanje
 LiteralText,LANGUAGE,JEZIK
-LiteralText,LEARN ALL SPELLS,NAUČITE SVE MAGIJE
+LiteralText,Learn all spells,Naučite sve magije
 LiteralText,learn spells,naučite magije
 LiteralText,Learn the rules of the world through hilarious deaths so that you can guide your heroes as they seek to escape the 0th circle of Haell.,Naučite pravila sveta kroz urnebesne smrti kako biste mogli da vodite svoje heroje dok pokušavaju da pobegnu iz nultog kruga Haela.
+LiteralText,Left,
 LiteralText,LEFT RING,LEVI PRSTEN
 LiteralText,LEVEL CHART,ŠEMA ZA NIVOE
 LiteralText,level//rank,nivo//rank
@@ -3414,20 +3544,19 @@ LiteralText,life,život
 LiteralText,LIFE,ŽIVOT
 LiteralText,Life represents your physical health and death occurs at zero.,"Život predstavlja vaše fizičko zdravlje, a smrt se dešava na nuli."
 LiteralText,light,svetlo
-LiteralText,LIGHT,SVETLO
 LiteralText,light radius,svetlosni radijus
+LiteralText,Lighten area,
 LiteralText,limits,limiti
 LiteralText,LIST,LISTA
 LiteralText,lit,upaliti
 LiteralText,LIVING,ŽIVETI
 LiteralText,loading,učitavanje
-LiteralText,LOCK,ZAKLJUČATI
-LiteralText,locked,zaključano
-LiteralText,LOCKED,ZAKLJUČANO
-LiteralText,locked scaling mode,zaključani režim skaliranja
+LiteralText,Lock,Zaključati
+LiteralText,Locked,Zaključano
 LiteralText,locking,zaključava
-LiteralText,loot,plen
-LiteralText,LOOT,ZAPLENITI
+LiteralText,Loot floor,
+LiteralText,Loot//noun,Plen
+LiteralText,Loot//verb,Zapleniti
 LiteralText,LOSE KARMA,IZGUBITI KARMU
 LiteralText,LOSE LEVEL,IZGUBITI NIVO
 LiteralText,lose nutrition,izgubiti ishranu
@@ -3440,39 +3569,44 @@ LiteralText,MANA,MANA
 LiteralText,Mana represents your energy supply for casting spells.,Mana predstavlja vaše zalihe energije za bacanje čini.
 LiteralText,Map,Mapa
 LiteralText,MAP,MAPA
-LiteralText,mapping,mapiranje
+LiteralText,Mapping,Mapiranje
 LiteralText,material,materijal
 LiteralText,materials,materijali
 LiteralText,melting,topiti
-LiteralText,MENU,MENI
+LiteralText,Menu,Meni
 LiteralText,mercenary,plaćenik
-LiteralText,MIMIC,MIMIK
+LiteralText,Mimic,Mimik
 LiteralText,mimicking,mimikovati
 LiteralText,mobilise block,mobilizovati blok
 LiteralText,modifier,modifikator
+LiteralText,MODULE,
 LiteralText,MORE INFO,JOŠ INFORMACIJA
-LiteralText,MOUNT,ZAJAŠITE
+LiteralText,Mount,Zajašite
 LiteralText,Mount which direction?,Zajašite u kom pravcu?
 LiteralText,MOUNTED,ZAJAŠILI STE
-LiteralText,MOVE,POMERITE SE
+LiteralText,Move,Pomerite se
 LiteralText,move down one level,siđite jedan nivo dole
 LiteralText,move up one level,popnite se jedan nivo gore
 LiteralText,MULTIPLAYER,MULTIPLEJER
+LiteralText,Multiplayer Chat,
 LiteralText,murder,ubiti
 LiteralText,MURDER ENTITIES EVERYWHERE,UBITI BIĆA SVUGDE
 LiteralText,music volume,jačina muzike
 LiteralText,N/A,NEPOZNATO
-LiteralText,name,ime
-LiteralText,NAME,IME
 LiteralText,name?,ime?
+LiteralText,Name//noun,Ime
+LiteralText,Name//verb,Ime
+LiteralText,Navigate way down,
+LiteralText,Navigate way up,
+LiteralText,NEGATIVE,
 LiteralText,neutral,neutralno
 LiteralText,never,nikada
-LiteralText,NEW,NOVO
+LiteralText,Next character,
 LiteralText,no additional effects,nema dodatnih efekata
 LiteralText,no allies,nema saveznika
 LiteralText,no ambient sounds,nema ambijentalnih zvukova
 LiteralText,No appropriate items available,Nema dostupnih odgovarajućih artikala
-LiteralText,no available knowledge,nema dostupnog znanja
+LiteralText,No key,
 LiteralText,no records found,nije pronađen nijedan zapis
 LiteralText,no resistances,nema otpora
 LiteralText,no talents,nema talenata
@@ -3488,43 +3622,50 @@ LiteralText,nothing happens,ništa se ne dešava
 LiteralText,Nothing of interest,Ništa interesantnoništa da da
 LiteralText,nothing to give,ništa da da
 LiteralText,nothing to take,ništa za uzeti
+LiteralText,Numpad directional keys,
 LiteralText,nutrition,ishrana
 LiteralText,NUTRITION,ISHRANA
 LiteralText,OBSTRUCTED,PREPREČITI
 LiteralText,OFFLINE,OFLAJN
+LiteralText,On Steam,
 LiteralText,ONE AT A TIME,JEDAN PO JEDAN
 LiteralText,oOo,oOo
-LiteralText,OPEN,OTVORITE
+LiteralText,Open,Otvorite
 LiteralText,OPENED,OTVORENO
 LiteralText,opening,otvara se
 LiteralText,OR,ILI
 LiteralText,ORIGINAL,ORIGINALNO
+LiteralText,original art,
+LiteralText,"Over a decade of development has shaped Pathos into a deeply immersive fantasy roleplaying adventure. For the first time, an enhanced version is coming very soon to Steam.",
 LiteralText,OVERRIDE,NADJAČAJTE
 LiteralText,OVERVIEW,PREGLED
 LiteralText,Palette,Paleta
 LiteralText,PARTY,GRUPA
-LiteralText,passive (no attacking),pasivno (bez napada)
+LiteralText,Passive (no attacking),pasivno (bez napada)
 LiteralText,Pathos can be played in split-screen cooperative mode with up to four players.,Pathos se može igrati u kooperativnom režimu podeljenog ekrana sa do četiri igrača.
 LiteralText,pathos development @ paypal,pathos development @ paypal
 LiteralText,Pathos is unable to load your adventure. Please send me your save file so I can investigate the issue. I may even be able to repair the file or update the app with a fix. Your understanding is appreciated.,Pathos ne može da učita vašu avanturu. Molimo vas da mi pošaljete svoju datoteku za čuvanje kako bih mogao da istražim problem. Možda ću čak moći da popravim datoteku ili ažuriram aplikaciju pomoću ispravke. Cenimo vaše razumevanje.
-LiteralText,Pathos might be the next evolution of Nethack.,Pathos bi mogao biti sledeća evolucija Nethacka.
+LiteralText,Pathos might be the next evolution of NetHack.,Pathos bi mogao biti sledeća evolucija NetHacka.
 LiteralText,penalty,penali
 LiteralText,penetrates,prodire
 LiteralText,per level,po nivou
+LiteralText,Perform,
 LiteralText,permanent,permamentan
 LiteralText,PERSONAL,LIČNI
+LiteralText,Pick up,
 LiteralText,PLACE,POSTAVITE
 LiteralText,PLACE ALL,POSTAVITE SVE
 LiteralText,place curse,postavite prokletstvo
 LiteralText,platform,platforma
 LiteralText,Play,IGRAJTE
 LiteralText,Play a sound effect?,Pustite zvučni efekat?
+LiteralText,Play Demo,
 LiteralText,Player,Plejer
 LiteralText,Please note that using force-quit on the app can result in truncated save files which cannot be recovered.,Imajte na umu da korišćenje prinudnog zatvaranja u aplikaciji može dovesti do skraćenih datoteka za čuvanje koje se ne mogu oporaviti.
 LiteralText,Please offer any clarification,Molimo ponudite bilo kakvo pojašnjenje
 LiteralText,Please provide your feedback,Pošaljite povratne informacije
 LiteralText,Please rotate your device to landscape :-),Zarotirajte svoj uređaj u pejzaž :-)
-LiteralText,POLYMORPH,POLIMORF
+LiteralText,Polymorph,Polimorf
 LiteralText,polymorph entity,polimorfišite biće
 LiteralText,Polymorph into what?,Polimorf u šta?
 LiteralText,polymorph item,polimorfišite stavku
@@ -3533,47 +3674,64 @@ LiteralText,POLYMORPHED,POLIMORFISAN
 LiteralText,portal,portal
 LiteralText,PORTALS,PORTALI
 LiteralText,porter,portir
-LiteralText,PRAY,MOLITE SE
+LiteralText,POSITIVE,
+LiteralText,Pray,Molite se
 LiteralText,preservation,očuvanje
-LiteralText,prevent revenant levels,sprečiti revenant nivoe
+LiteralText,Press a button to assign it to this command.,
+LiteralText,Prevent revenant levels,sprečiti revenant nivoe
+LiteralText,Previous character,
 LiteralText,prisoner,zatvorenik
 LiteralText,probability,verovatnoća
 LiteralText,PROMOTE,PROMOVIŠITE
 LiteralText,PROPERTIES,SVOJSTVA
+LiteralText,Publish,
+LiteralText,Publish to Pathos Workshop,
 LiteralText,punish,kazniti
 LiteralText,PUNISHED,KAŽNJEN
 LiteralText,punishment?,kazniti?
 LiteralText,PUNISHMENTS,KAZNE
+LiteralText,Purchase,
 LiteralText,QUANTITY,KOLIČINA
-LiteralText,QUICK LOAD,BRZ POVRATAK
-LiteralText,QUICK SAVE,BRZO MEMORISANJE
+LiteralText,QUESTS,
+LiteralText,Quick load,Brz povratak
+LiteralText,Quick save,Brzo memorisanje
+LiteralText,Quick slot 0,
+LiteralText,Quick slot 1,
+LiteralText,Quick slot 2,
+LiteralText,Quick slot 3,
+LiteralText,Quick slot 4,
+LiteralText,Quick slot 5,
+LiteralText,Quick slot 6,
+LiteralText,Quick slot 7,
+LiteralText,Quick slot 8,
+LiteralText,Quick slot 9,
 LiteralText,quit,je izašao iz
-LiteralText,QUIT,IZAĐITE
+LiteralText,Quit,Izađite
 LiteralText,R//replica symbol,R//simbol replike
 LiteralText,race,rasa
 LiteralText,RACES,RASE
 LiteralText,random,nasumično
-LiteralText,RANDOM,NASUMIČNO
-LiteralText,random dungeon seed,random seme tamnice
 LiteralText,random level,random nivo
 LiteralText,random points,random pojeni
+LiteralText,random seed,random seme tamnice
 LiteralText,rank,rank
 LiteralText,rarity,retkost
 LiteralText,rate & review on the app store,ocenite i pregledajte u prodavnici aplikacije
-LiteralText,RE-ACT,REAGUJTE PONOVO
-LiteralText,RE-CAST,BACITE PONOVO
-LiteralText,RE-EQUIP,OPREMITE PONOVO
+LiteralText,Re-act,Reagujte ponovo
+LiteralText,Re-cast,Bacite ponovo
+LiteralText,Re-equip,Opremite ponovo
 LiteralText,Re-roll,Re-roll
 LiteralText,re-rolls,zakotrljao ponovo
-LiteralText,RE-USE,ISKORISTITE PONOVO
+LiteralText,Re-use,Iskoristite ponovo
 LiteralText,Read books to learn spells,Pročitajte knjige da bi ste naučili magije.
-LiteralText,READ!,PROČITAJTE!
-LiteralText,REAL-TIME,REALNO-VREME
+LiteralText,Read!,Pročitajte!
+LiteralText,Real-time,Realno-vreme
 LiteralText,REALLY CRASH?,STVARNO SRUŠITI?
 LiteralText,recall party,opozovite grupu
 LiteralText,Recommend Pathos,Preporučite Pathos
 LiteralText,Redo,Uradite ponovo
 LiteralText,reflects,odražava
+LiteralText,Refresh the screen,
 LiteralText,REGISTER,REGISTRUJTE SE
 LiteralText,REGISTER PLAYER HANDLE,REGISTRUJTE IME IGRAČA
 LiteralText,reinforced,ojačano
@@ -3581,13 +3739,12 @@ LiteralText,REINFORCED,OJAČANO
 LiteralText,release entity,osloboditi biće
 LiteralText,remove all transients,ukloniti sve prelazne pojave
 LiteralText,remove curse,ukloniti prokletstvo
-LiteralText,REMOVE CURSE,UKLONITE PROKLETSTVO
 LiteralText,remove random resistance,uklonite random otpor
 LiteralText,remove random talent,uklonite random talent
 LiteralText,remove with,uklonite sa
 LiteralText,remove with boulder,ukloniti gromadom
-LiteralText,REMOVE//container,UKLONITI//posudu
-LiteralText,REMOVE//equipment,UKLONITI//opremu
+LiteralText,REMOVE//container,UKLONITI
+LiteralText,Remove//equipment,Ukloniti
 LiteralText,RENAME,PREIMENUJTE
 LiteralText,RENAME CHARACTER,PREIMENUJTE KARAKTERA
 LiteralText,RENAME ITEM,PREIMENUJTE STAVKU
@@ -3597,13 +3754,16 @@ LiteralText,replenish life,dopuni život
 LiteralText,replenish mana,dopuni manu
 LiteralText,replica,replika
 LiteralText,replicate item,kopirajte stavku
+LiteralText,Report faults,
 LiteralText,requires the skill to pick locks,zahteva veštinu za obaranje brava
 LiteralText,reset random equipment,resetujte random opremu
+LiteralText,Reset to defaults,
 LiteralText,resident?,rezident?
 LiteralText,resistances,otpori
 LiteralText,RESISTS,OPIRE SE
 LiteralText,Rest,Odmorite se
 LiteralText,Rest how many turns?,Odmor koliko okreta?
+LiteralText,Rest once,
 LiteralText,restarting to update,ponovno pokretanje za ažuriranje
 LiteralText,restock shop items,obnova zaliha artikala u prodavnici
 LiteralText,restore ability,vratiti sposobnost
@@ -3613,18 +3773,20 @@ LiteralText,Resurrect and continue,Oživeti i nastaviti
 LiteralText,resurrections,oživljavanja
 LiteralText,retaliations,odmazde
 LiteralText,RETURN,VRATITE SE
-LiteralText,REVEAL,OTKRITE
+LiteralText,Reveal,Otkrite
 LiteralText,REVEAL ALL MAPS,OTKRITE SVE MAPE
 LiteralText,REVEAL THIS MAP,OTKRITE OVU MAPU
 LiteralText,revealed,otkriven
 LiteralText,revenant,revenant
-LiteralText,REVERT,VRATITE
+LiteralText,Revert,Vratite
+LiteralText,Right,
 LiteralText,RIGHT RING,DESNI PRSTEN
 LiteralText,rigid,rigidan
 LiteralText,ROTATE,ROTIRAJTE
 LiteralText,route entity,dajte rutu biću
 LiteralText,rumour,glasina
 LiteralText,sacrifice item,žrtvovati stavku
+LiteralText,Same spot,
 LiteralText,SANITY CHECK,PROVERA RAZUMA
 LiteralText,SAVE,MEMORIŠITE
 LiteralText,SAVE & QUIT,MEMORIŠITE I IZBACITE SE
@@ -3632,37 +3794,36 @@ LiteralText,Saved adventure files are intended to be compatible across updates.,
 LiteralText,SAVED ADVENTURES,SAČUVANE AVANTURE
 LiteralText,SAVED BONES,SAČUVANE KOSTI
 LiteralText,school,škola
-LiteralText,scrap,otpad
-LiteralText,SCRAP,BACITI U STARO GVOŽĐE
+LiteralText,Scrap,Baciti u staro gvožđe
 LiteralText,SEALED,ZAPEČAĆENO
 LiteralText,Search,Potražite
 LiteralText,Search how many turns?,Poražite koliko okreta
+LiteralText,Search once,
 LiteralText,searching,potraga u toku
 LiteralText,secret,tajna
 LiteralText,SECRET,TAJNA
 LiteralText,seed,seme
+LiteralText,Select,
 LiteralText,SELECT ATMOSPHERE,IZABERITE ATMOSFERU
 LiteralText,Select Companion Tile,Izaberite pločicu za pratioca
 LiteralText,Select Hero Tile,Izaberite pločicu za karaktera
 LiteralText,SELECT ITEM,IZABERITE STAVKU
-LiteralText,SELECT LANGUAGE,IZABERITE JEZIK
 LiteralText,SELECT MAP,IZABERITE MAPU
-LiteralText,SELECT PORTRAIT,IZABERITE PORTRET
 LiteralText,SELECT RESIDENT,ODABERI ČLANA ZAJEDNICE
 LiteralText,SELECT SQUARE,IZABERITE KVADRAT
-LiteralText,SELECT TILESET,IZABERITE GRAFIČKI SET
 LiteralText,self,sebe
+LiteralText,Self menu,
 LiteralText,SELL,PRODAJTE
 LiteralText,SELL ALL,PRODAJTE SVE
 LiteralText,SEND,POŠALJITE
 LiteralText,Send me an email,Pošaljite mi email
-LiteralText,SERVICES,USLUGE
+LiteralText,Services,Usluge
 LiteralText,SET DIFFICULTY,NAMESTITE TEŽINU
 LiteralText,set starting location,postavite početnu lokaciju
-LiteralText,SETTINGS,PODEŠAVANJA
+LiteralText,Settings,Podešavanja
 LiteralText,sfx volume,sfx jačina
-LiteralText,SHARE//exchange,PODELITE//razmenite
-LiteralText,SHARE//publish,PODELITE//objavite
+LiteralText,Share//exchange,Podelite
+LiteralText,SHARE//publish,PODELITE
 LiteralText,SHOPS,PRODAVNICE
 LiteralText,Show debugging information,Prikaži informacije za otklanjanje grešaka
 LiteralText,Show time clock,Prikažite sat
@@ -3671,7 +3832,7 @@ LiteralText,SIGN-IN,ULOGUJTE SE
 LiteralText,size,veličina
 LiteralText,skills,skilovi
 LiteralText,SKILLS,SKILOVI
-LiteralText,SLIDE,KLIZITE
+LiteralText,Slide,Klizite
 LiteralText,Slide which direction?,Klizite u kom pravcu?
 LiteralText,slower animations,sporije animacije
 LiteralText,SONICS,SONIČNI
@@ -3686,17 +3847,17 @@ LiteralText,special,specijalno
 LiteralText,SPECIALS,SPECIJALNI
 LiteralText,speed,brzina
 LiteralText,SPEED,BRZINA
-LiteralText,SPELL,MAGIJA
+LiteralText,Spell,Magija
 LiteralText,SPELLS,MAGIJE
 LiteralText,Square,Kvadrat
 LiteralText,stack,gomila
 LiteralText,START,ZAPOČNITE IGRU
 LiteralText,Start a game to be joined by other players.,Započnite igru da bi vam se pridružili drugi igrači.
 LiteralText,Start new adventure,Započnite novu avanturu
-LiteralText,start without companion,početi bez pratioca
+LiteralText,Start without companion,početi bez pratioca
 LiteralText,starvation,gladovanje
 LiteralText,starved,umire od gladi
-LiteralText,STAY,OSTANITE
+LiteralText,Stay,Ostanite
 LiteralText,steal,ukrasi
 LiteralText,STOP,STANITE
 LiteralText,storage,skladište
@@ -3706,47 +3867,53 @@ LiteralText,STUDIO QUESTS,STUDIO ISTRAGE
 LiteralText,SUBMIT,PODNESITE
 LiteralText,summon,pozvati
 LiteralText,SUSTAINED,PODRŽANO
-LiteralText,SWAP,ZAMENITE
-LiteralText,SWITCH,PROMENITE
+LiteralText,Swap,Zamenite
+LiteralText,Switch,Promenite
 LiteralText,symptoms,simptomi
 LiteralText,Table of Contents,Sadržaj
-LiteralText,TAKE,UZMITE
+LiteralText,Take,Uzmite
 LiteralText,TAKE ALL,UZMITE SVE
 LiteralText,talents,talenti
 LiteralText,TALENTS,TALENTI
-LiteralText,TALK,PRIČAJTE
+LiteralText,Talk,Pričajte
 LiteralText,target,meta
-LiteralText,TELEKINESIS,TELEKINEZA
+LiteralText,Telekinesis,Telekineza
 LiteralText,Telekinesis which direction?,Telekineza u kom pravcu?
 LiteralText,Telekinesis which object?,Telekineza koji objekat?
-LiteralText,TELEPORT,TELEPORT
+LiteralText,Teleport,Teleport
+LiteralText,Teleport end,
 LiteralText,teleport entity,teleportujte biće
 LiteralText,teleport item away,teleportujte stavku
 LiteralText,Teleport to where?,Gde hoćete da se Tepeleportujte?
+LiteralText,Teleport top,
 LiteralText,TERMINAL,TERMINAL
 LiteralText,terrain,teren
 LiteralText,The attack score is your aptitude for hitting an opponent.,Rezultat napada je vaša sposobnost da pogodite protivnika.
 LiteralText,The challenge is to improve the mechanics while retaining the essence of what makes it the greatest game of all time.,Izazov je poboljšati mehaniku uz zadržavanje suštine onoga što je čini najboljom igrom svih vremena.
+LiteralText,The damage you do to an opponent upon a successful attack.,
 LiteralText,The defence score is how protected you are from being hit by an opponent.,Rezultat odbrane je koliko ste zaštićeni od udarca protivnika.
 LiteralText,There is a new update available!,Dostupno je novo ažuriranje!
 LiteralText,there is nothing to place here,nema šta da se stavi ovde
 LiteralText,there is nothing to remove here,ovde nema šta da se ukloni
 LiteralText,there is nothing to trade with this merchant,sa ovim trgovcem nema šta da se trguje
+LiteralText,"This demo is a 16-level dungeon where a successful run takes 2-3 hours. The dungeon is a subset of one of the full game's four modules, offering a challenging and representative experience.",
 LiteralText,this level,ovaj nivo
 LiteralText,this merchant has no stock to trade,ovaj trgovac nema zalihe za trgovinu
 LiteralText,This name is used to record your achievements in the Hall of Fame.,Ovo ime se koristi za beleženje vaših dostignuća u Kući slavnih.
 LiteralText,This seed can be shared with your friends and challenge each other to the same dungeon.,Ovo seme se može podeliti sa svojim prijateljima i izazvati jedni druge u istoj tamnici.
 LiteralText,threw,baciti
-LiteralText,THROW,BACITE
+LiteralText,Throw,Bacite
+LiteralText,TILESET,IZABERITE GRAFIČKI SET
 LiteralText,tin,lim
 LiteralText,tinning,kalajisanje
+LiteralText,Toggle auto use,
 LiteralText,TOO BIG,PREVIŠE VELIK
 LiteralText,TOO HEAVY,PREVIŠE TEŽAK
 LiteralText,TOO HUNGRY,PREVIŠE GLADAN
 LiteralText,TOO SMALL,PREMALI
 LiteralText,TOO WEAK,PREVIŠE SLAB
 LiteralText,TRACKS,STAZE
-LiteralText,TRADE,TRGOVATI
+LiteralText,Trade,Trgovati
 LiteralText,transform to,transformsati se u
 LiteralText,transients,tranzijenti
 LiteralText,TRANSIENTS,TRANZIJENTI
@@ -3759,15 +3926,16 @@ LiteralText,trapped,zarobljeni
 LiteralText,TRAPPED,ZAROBLJENI
 LiteralText,trapped container,zarobljena posuda
 LiteralText,trapped door,zarobljena vrata
-LiteralText,TRIGGER,POKRENITE
+LiteralText,Trigger,Pokrenite
 LiteralText,trigger once,pokrenite jednom
 LiteralText,trigger unlimited times,pokrenite bezbroj puta
 LiteralText,truth,istina
-LiteralText,TUNNEL,TUNEL
+LiteralText,Tunnel,Tunel
 LiteralText,Tunnel which direction?,Tunel u kom pravcu?
-LiteralText,TURN-BASED,POTEZNO
+LiteralText,Turn-based,POTEZNO
 LiteralText,turns,pokreti
-LiteralText,Type in any word or phrase to generate a random dungeon seed.,Unesite bilo koju reč ili frazu da biste generisali nasumično seme tamnice.
+LiteralText,Tutorial,
+LiteralText,Type in any word or phrase to generate a random seed.,Unesite bilo koju reč ili frazu da biste generisali nasumično seme tamnice.
 LiteralText,unable to load,nije moguće učitati
 LiteralText,unafflict,neporaziti
 LiteralText,UNDEAD,NEMRTVI
@@ -3775,16 +3943,20 @@ LiteralText,Undo,Vratite Unazad
 LiteralText,unidentified items,neidintifikovane stavke
 LiteralText,unique,jedinstveni
 LiteralText,UNIQUES,JEDINSTVENI
-LiteralText,UNLOCK,OTKLJUČAJTE
+LiteralText,unknown effects,
+LiteralText,Unlock,Otključajte
 LiteralText,unlock door or container,otključajte vrata ili posudu
-LiteralText,UNLOCKED,OTKLJUČANO
+LiteralText,Unlocked,Otključano
 LiteralText,unpolymorph,odpolimorfišite
 LiteralText,unpunish,ne kaznite
 LiteralText,unskilled,ne skilovani
 LiteralText,UNSKILLED,NE SKILOVANI
 LiteralText,unstuck,izbavite se
-LiteralText,UNTRAP,UKLONITE ZAMKU
+LiteralText,Untrap,Uklonite zamku
 LiteralText,UNTRAPPED,OSLOBOĐEN IZ ZAMKE
+LiteralText,Up,
+LiteralText,Up-left,
+LiteralText,Up-right,
 LiteralText,update available,dostupno ažuriranje
 LiteralText,update cancelled,ažuriranje je otkazano
 LiteralText,update failed,ažuriranje nije uspelo
@@ -3794,20 +3966,19 @@ LiteralText,UPDATES,AŽURIRANJA
 LiteralText,upgrade to,nadogradite do
 LiteralText,Using a seed means that you will not be eligible for the Hall of Fame.,Korišćenje semena znači da nećete imati pravo na Kuću slavnih.
 LiteralText,Vanity,Oholost
+LiteralText,Victory!,
 LiteralText,VIEW,POGLED
 LiteralText,visit shop,posetite prodavnicu
 LiteralText,visit shrine,posetite oltar
-LiteralText,Visit the website,Posetite Website
 LiteralText,visit zoo,posetite zoološki vrt
 LiteralText,VOID SPACE,PRAZAN PROSTOR
 LiteralText,volatile,promenjiv
 LiteralText,VOLATILES,PROMENLJIVI
 LiteralText,vomit nutrition,povraćajte ishranu
 LiteralText,vulnerable to,ranjiv na
-LiteralText,WAIT,ČEKATI
+LiteralText,Wait,Čekati
 LiteralText,Wait how many turns?,Čekati koliko pokreta?
-LiteralText,warping,prebacivanje
-LiteralText,WARPING,PREBACIVANJE
+LiteralText,Warping,Prebacivanje
 LiteralText,was killed,je bio ubijen
 LiteralText,weakness to,slabost na
 LiteralText,weight,težina
@@ -3823,13 +3994,14 @@ LiteralText,with demolition,sa rušenjem
 LiteralText,WON'T EAT,NEĆE DA JEDE
 LiteralText,WORKBENCH MATERIALS,MATERIJALI ZA RADNI STO
 LiteralText,World,Svet
-LiteralText,WORLD,SVET
 LiteralText,WRONG WAY,POGREŠAN PUT
 LiteralText,"You are playing as anonymous, please register!","Igrate kao anonimni, molimo vas da se registrujete!"
 LiteralText,You may need to SEARCH for secret doors using the EYE button.,Možda ćete morati da TRAŽITE tajna vrata pomoću dugmeta OKO.
 LiteralText,Your current movement and action speed in squares per second.,Vaša trenutna brzina kretanja i akcije u kvadratima u sekundi.
 LiteralText,"Zeroth is the debut title for my new studio, Contrary Games. It is a spiritual successor to Pathos, but with paperdoll animations, real-time platforming, physics simulation and the same deep, replayable gameplay.","Zeroth je debitantski naslov za moj novi studio, Contrary Games. To je duhovni naslednik Pathos-a, ali sa animacijama papirnih lutki, platformingom u realnom vremenu, simulacijom fizike i istim dubokim, ponovno igrajućim gejmplejem."
 LiteralText,ZOOM,ZUMIRAJTE
+LiteralText,Zoom in,
+LiteralText,Zoom out,
 LiteralText,ZOOS,ZOOLOŠKI VRTOVI
 LiteralText,zZz,zZz
 LocalityName,area,area
@@ -3871,13 +4043,14 @@ MaterialName,vegetable,povrće
 MaterialName,water,voda
 MaterialName,wax,vosak
 MaterialName,wood,drvo
-MeasurementSystemName,imperial,imperijal
-MeasurementSystemName,metric,merni
+MeasurementSystemName,imperial units,imperijal
+MeasurementSystemName,metric units,merni
 ModuleDescription,Descend through procedurally generated dungeons and caverns. Infinite re-playability and recommended for players new to Pathos.,Spustite se kroz proceduralno generisane tamnice i pećine. Beskonačna mogućnost ponovnog igranja i preporučuje se igračima koji su novi u Pathosu.
 ModuleDescription,"Explore a vast, procedurally generated overland map containing side dungeons, elaborate set pieces and intriguing encounters.","Istražite ogromnu, proceduralno generisanu kopnenu mapu koja sadrži bočne tamnice, složene komade i intrigantne susrete."
 ModuleDescription,Hand-designed maps in an epic overland adventure. Take a break from the confines of the dungeon and embark on a challenging quest.,Ručno dizajnirane mape u epskoj kopnenoj avanturi. Odmorite se od granica tamnice i krenite u izazovnu potragu.
 ModuleDescription,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Zanimljive sobe i tajne čekaju, ali ne zadržavaju se; morate sići ​​ili umreti. Zasnovano na generisanju mapa iz Shattered Pixel Dungeon."
 ModuleDescription,"Sandbox for experimenting with the mechanics of Pathos. Play with every item, trap and dungeon feature in a simple two room map.","Sendboks za eksperimentisanje sa mehanikom Patosa. Igrajte se sa svakim predmetom, zamkom i funkcijom tamnice na jednostavnoj mapi za dve sobe."
+ModuleDescription,"Survive the dungeon to reach Minetown and then venture into the tunnels below, which connect to the perilous Underdeep.",
 ModuleDialogue,Any news from the surface? I've been down here so long that I miss sunshine and weather.,Ima li vesti sa površine? Toliko sam dugo ovde da mi nedostaju sunce i vreme.
 ModuleDialogue,Did you know that half of what the merchants sell is sourced from the corpses of adventurers like you?,Da li ste znali da polovina onoga što trgovci prodaju potiče od leševa avanturista poput vas?
 ModuleDialogue,Everyone is talking about an orcish invasion but I don't believe it will ever happen.,"Svi pričaju o invaziji orka, ali ja ne verujem da će se to ikada dogoditi."
@@ -3907,9 +4080,10 @@ ModuleDialogue,Will you please stop playing in the fountains. I'm not allowed to
 ModuleDialogue,"You know, I once was an adventurer like you... maybe you should get a job as well? After all, *adventurer* is just a fancy way of saying homeless and unemployed.","Znaš, i ja sam nekada bio avanturista poput tebe... možda bi trebalo da nađeš neki posao? Na kraju krajeva, *avanturista* je samo lep naziv za beskućnika i nezaposlenog."
 ModuleName,Dhak Legacy,Dhak Legacy
 ModuleName,Kaloi Opus,Kaloi Opus
-ModuleName,Nethack Codex,Nethack Codex
+ModuleName,NetHack Codex,NetHack Codex
 ModuleName,Pixel Sojourn,Pixel Sojourn
 ModuleName,Sandbox Play,Sandbox Play
+ModuleName,Short Dungeon,
 ModuleTerm,Abyss,Ambis
 ModuleTerm,Ambush,Zaseda
 ModuleTerm,Ant Cave,Mravlja Pećina
@@ -4119,68 +4293,70 @@ PortalName,clay staircase up,glineno stepenište gore
 PortalName,jade ladder down,merdevine od žada dole
 PortalName,jade ladder up,merdevine od žada gore
 PortalName,rift,rift
+PortalName,sewer ladder down,
+PortalName,sewer ladder up,
 PortalName,stone staircase down,kamene stepenice dole
 PortalName,stone staircase up,kamene stepenice gore
 PortalName,transportal,transportal
 PortalName,wooden ladder down,drvene lestve dole
 PortalName,wooden ladder up,drvene lestve gore
-PropertyDescription,A shimmering magical shield surrounds your body which aids in your defence and has a chance to deflect incoming missiles.,"Sjajni magični štit obavija vaše telo, pomaže u odbrani i ima šansu da odbije dolazeće projektile."
-PropertyDescription,"Coated in a slick and oily resin, you simply slide out of grasp and maw.","Prekriven klizavom i masnom smolom, jednostavno se izvlačite iz stiska i čeljusti."
-PropertyDescription,Control when and where you teleport.,Kontrolišite kada i gde se teleportujete.
-PropertyDescription,Deranged with anger you lash out at friend and foe alike without thought or reason.,"Izbezumljeni od besa, napadate i prijatelje i neprijatelje bez razmišljanja ili razloga."
+PropertyDescription,"Ability scores are locked in place, preventing both deterioration and improvement.","Vaši rezultati sposobnosti su fiksirani tako da se ne mogu pogoršati, ali se ne mogu ni poboljšati."
+PropertyDescription,Affected by a terrible illness that brings strange symptoms and an overwhelming urge to vomit.,Pogođeni ste strašnom bolešću sa čudnim simptomima i morate savladati nagon za povraćanjem.
+PropertyDescription,Alerts you to nearby monsters beyond your field of vision and indicates their threat level.,Daje vam unapred upozorenje o obližnjim čudovištima i njihovom približnom nivou pretnje.
+PropertyDescription,"Asleep, resting peacefully. Possibly surrounded by monsters.","Spavate, mirno odmarate. U tamnici punoj čudovišta."
+PropertyDescription,Assess the number of charges in an item when you pick it up.,Procenjujete broj punjenja u predmetu jednostavnim podizanjem istog.
+PropertyDescription,Choose when and where you teleport but only when teleportation occurs.,Kontrolišite kada i gde se teleportujete.
+PropertyDescription,"Coated in a slick, oily resin that lets you slip effortlessly from grasping hands and snapping jaws.","Prekriven klizavom i masnom smolom, jednostavno se izvlačite iz stiska i čeljusti."
+PropertyDescription,"Consumed by the urge to eat, yet never leaves you fully satisfied.",Obuzeti ste potrebom za hranom i znate da nikada nećete biti potpuno zadovoljni.
+PropertyDescription,"Deranged with anger, you lash out at friend and foe alike without thought or reason.","Izbezumljeni od besa, napadate i prijatelje i neprijatelje bez razmišljanja ili razloga."
+PropertyDescription,Distorted senses transform ordinary sights and sounds into absurd and nightmarish experiences.,Vizuelna percepcija je iskrivljena dok vaš um izvrće obične predmete i bića u apsurdne i košmarne oblike.
 PropertyDescription,Enhances your vision so you can see otherwise invisible creatures.,Poboljšava vaš vid tako da možete videti inače nevidljiva stvorenja.
-PropertyDescription,Fainting from lack of food.,Onesvešćujete se od gladi.
-PropertyDescription,Fly above the ground to avoid many types of traps.,Letite iznad tla kako biste izbegli mnoge vrste zamki.
-PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Neveštost uzrokuje da ispuštate oružje tokom borbe i padate niz i uz stepenice.
+PropertyDescription,Floating above the ground allows you avoid many types of traps. If only you could reach the floor at the same time.,Ovo prkosi gravitaciji i korisno je za izbegavanje mnogih vrsta zamki. Kad biste samo mogli istovremeno da dodirnete tlo.
+PropertyDescription,"Fly above the ground, avoiding many types of traps.",Letite iznad tla kako biste izbegli mnoge vrste zamki.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Pogledi i napadi zracima se odbijaju natrag ka bacaču.
-PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Daje vam unapred upozorenje o obližnjim čudovištima i njihovom približnom nivou pretnje.
-PropertyDescription,Gripped by terror you cannot attack and should flee.,"Obuzeti užasom, ne možete napadati i trebalo bi da bežite."
-PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","U ovom opojnom stanju, vaše povećano samopouzdanje je nadoknađeno lošim prosuđivanjem."
-PropertyDescription,Moving quietly through the dungeon you can sneak up on sleeping monsters.,Tiho se krećete kroz tamnicu i možete se prišunjati usnulim čudovištima.
-PropertyDescription,Prevents you being polymorphed but also prevents you turning back into your natural form.,"Sprečava vas da budete polimorfisani, ali i sprečava da se vratite u svoj prirodni oblik."
+PropertyDescription,"Gripped by terror, you cannot attack and are overcome by the urge to flee.","Obuzeti užasom, ne možete napadati i trebalo bi da bežite."
+PropertyDescription,"Growing stiff and rigid, almost like turning to stone. Movement becomes difficult and you feel brittle, as though the next blow could shatter you into a thousand pieces.","Vaše telo postaje ukočeno i kruto, gotovo kao da se pretvara u kamen. Svako kretanje je teško, a osećate se lomljivo, kao da će vas sledeći udarac razbiti u hiljadu komada."
+PropertyDescription,Guilt-free consumption of flesh and organs from beings of your own kind.,Bez griže savesti jedete meso i organe bića iz vaše sopstvene rase.
+PropertyDescription,Heightened perception and awareness reveal secret doors and traps with ease.,Vaša percepcija i svest su povećane tako da možete pronaći tajna vrata i zamke bez ikakvog napora.
+PropertyDescription,Impairment of vision means you can only see things in a very close proximity.,Ovo oštećenje vida znači da možete videti stvari samo u vrlo bliskoj blizini.
+PropertyDescription,"Incites aggression and violence in those around you, driving even normally peaceful entities to attack one another. Useful but dangerous, it demands caution and comes at the cost of increased nutritional needs.",Uzrokujete da svi oko vas postanu agresivni i nasilni. Čak i obično mirna bića će napadati jedno drugo. Ovo svojstvo je i korisno i opasno i trebalo bi ga koristiti s oprezom. Takođe osećate da ovo svojstvo iscrpljuje vaš nivo ishrane.
+PropertyDescription,Increased speed allows you to move and attack more frequently.,Ovo poboljšanje brzine omogućava vam da se krećete i napadate češće.
+PropertyDescription,Irritating disposition that provokes hostility and attracts unwanted attention.,Samo vaše prisustvo uznemirava sve u tamnici.
+PropertyDescription,Loss of consciousness usually caused by lack of food.,Onesvešćujete se od gladi.
+PropertyDescription,Move objects without physical contact through the power of your mind.,Koristite snagu uma da pomerate predmete bez fizičke interakcije.
+PropertyDescription,"Moving in eerie silence, unable to utter even a single syllable out loud.",Krećete se u jezivoj tišini i ne možete izgovoriti ni jedan slog naglas.
+PropertyDescription,"Moving quietly, you can sneak up on sleeping monsters.",Tiho se krećete kroz tamnicu i možete se prišunjati usnulim čudovištima.
+PropertyDescription,"Muscles seized an unresponsive, leaving you motionless and defenceless.","Vaši mišići su ukočeni, ostavljajući vas nepokretnim i bespomoćnim."
+PropertyDescription,"Partially shifted between planes, allowing you to pass effortlessly through walls, doors and boulders.","Vaše telo je na pola puta između dimenzija, što znači da možete bez napora prolaziti kroz zidove, vrata i stene."
+PropertyDescription,"Powerful, spring-like legs allow you to leap great distances.",Vaše noge deluju kao snažne opruge spremne da skoče u akciju i pređu velike udaljenosti.
+PropertyDescription,"Prevents polymorphing or reverting to your natural form, locking you in your current state.","Sprečava vas da budete polimorfisani, ali i sprečava da se vratite u svoj prirodni oblik."
+PropertyDescription,Profound hearing impairment that cuts you off from the audible world.,Ovaj ozbiljan gubitak sluha vas je odsekao od čujnog sveta.
+PropertyDescription,"Protection against deception, trickery and falsehoods that cloud the mind.","Vaš um je zaštićen od obmana, trikova i laži."
 PropertyDescription,"Protects you from effects that slow, paralyse or otherwise restrain your movement.","Štiti vas od efekata koji usporavaju, paralizuju ili na drugi način ograničavaju vaše kretanje."
-PropertyDescription,Recover mana at an increased rate.,Obnavljate manu bržom brzinom.
+PropertyDescription,Rapid healing and regrowth renew your body but a greatly increased metabolism leaves you hungrier than normal.,Ovo je obnova vašeg tela kroz brzo isceljenje i ponovni rast. Vaš metabolizam je značajno ubrzan i potrebna vam je više hrane nego obično.
+PropertyDescription,Rapid mana recovery restores your magical reserves at an increased rate but a greatly increased metabolism leaves you hungrier than normal.,Obnavljate manu bržom brzinom.
+PropertyDescription,Reduced speed causes you to move and attack less frequently.,Ovo smanjenje brzine uzrokuje da se krećete i napadate ređe.
+PropertyDescription,Resilient to all forms of natural and magical illness.,Otporni ste i ne podložni bilo kojoj vrsti prirodnih ili magičnih bolesti.
 PropertyDescription,Revives you to half-health when you die at the cost of one point of constitution.,"Oživljava vas sa pola zdravlja kada umrete, ali po cenu jednog poena konstitucije."
-PropertyDescription,Suddenly you will fall asleep until you wake or are woken.,Iznenada ćete zaspati dok se ne probudite ili vas neko ne probudi.
-PropertyDescription,"Teleportation transports your character around the immediate dungeon level. When uncontrolled, this is a random event that adds a degree of unpredictability to your journey. Controlled teleportation allows you to select on the map your destination location.","Teleportacija transportuje vaš lik po trenutnom nivou tamnice. Kada nije kontrolisana, ovo je nasumičan događaj koji unosi nepredvidivost u vaše putovanje. Kontrolisana teleportacija omogućava vam da odaberete svoju destinaciju na mapi."
-PropertyDescription,The guilt-free practice of eating the flesh and organs of beings from your own race.,Bez griže savesti jedete meso i organe bića iz vaše sopstvene rase.
-PropertyDescription,This allows you to detect the presence and location of minds but only when you cannot see.,"Ovo vam omogućava da otkrijete prisustvo i lokaciju umova, ali samo kada ne možete videti."
-PropertyDescription,This causes your image to appear not quite where you are located. For sentient opponents this makes it more difficult for them to strike at you. Magical effects such as beams and strikes have a reduced chance to hit you.,Ovo uzrokuje da se vaša slika ne pojavljuje tačno tamo gde se nalazite. Za svesne protivnike ovo otežava da vas pogode. Magični efekti poput zraka i udaraca imaju manju šansu da vas pogode.
-PropertyDescription,This enhancement to your speed allows you to move and attack more often.,Ovo poboljšanje brzine omogućava vam da se krećete i napadate češće.
-PropertyDescription,This impairment of vision means you can only see things in a very close proximity.,Ovo oštećenje vida znači da možete videti stvari samo u vrlo bliskoj blizini.
-PropertyDescription,This is in defiance to gravity and is useful to avoid many types of traps. If only you could reach the floor at the same time.,Ovo prkosi gravitaciji i korisno je za izbegavanje mnogih vrsta zamki. Kad biste samo mogli istovremeno da dodirnete tlo.
-PropertyDescription,This is the renewal of your body through rapid healing and regrowth. Your metabolism is greatly increased and you require more food than normal.,Ovo je obnova vašeg tela kroz brzo isceljenje i ponovni rast. Vaš metabolizam je značajno ubrzan i potrebna vam je više hrane nego obično.
-PropertyDescription,This is the state of being unseen. You move with a slight distortion of light that is only noticeable when you are nearby.,Ovo je stanje nevidljivosti. Krećete se uz blago izobličenje svetlosti koje je primetno samo kada ste u blizini.
-PropertyDescription,This profound hearing impairment has cut you off from the audible world.,Ovaj ozbiljan gubitak sluha vas je odsekao od čujnog sveta.
-PropertyDescription,This reduction to your speed causes you to move and attack less often.,Ovo smanjenje brzine uzrokuje da se krećete i napadate ređe.
-PropertyDescription,This special vision allows you to see warm-bodied entities in the dark areas of the dungeon.,Ovaj poseban vid vam omogućava da vidite toplotna tela u mračnim delovima tamnice.
-PropertyDescription,"Transform into another entity with all the advantages or disadvantages that brings. For example, entities may not have hands but can fly and breathe deadly beams of energy. When you perish in your polymorphed form you will often revert to your original form.","Transformišite se u drugo biće sa svim prednostima ili nedostacima koje to nosi. Na primer, bića možda nemaju ruke, ali mogu leteti i disati smrtonosne zrake energije. Kada umrete u svom polimorfisanom obliku, često ćete se vratiti u svoj originalni oblik."
-PropertyDescription,Using the power of your mind to move objects without physical interaction.,Koristite snagu uma da pomerate predmete bez fizičke interakcije.
-PropertyDescription,Visual perception is distorted as your mind twists ordinary items and entities into absurd and nightmarish forms.,Vizuelna percepcija je iskrivljena dok vaš um izvrće obične predmete i bića u apsurdne i košmarne oblike.
-PropertyDescription,When confused you will struggle to make decisions. You may move or attack in an unintended direction and you cannot cast spells. When reading scrolls you may mispronounce the words and cause different effects than expected. It is impossible to focus for long enough to study a book.,"Kada ste zbunjeni, teško donosite odluke. Možete se kretati ili napadati u neželjenom pravcu i ne možete bacati čini. Kada čitate svitke, možete pogrešno izgovoriti reči i izazvati drugačije efekte od očekivanih. Nemoguće je dovoljno dugo se fokusirati da biste proučili knjigu."
-PropertyDescription,"When stunned you are unable to walk in a straight line or perform any higher level tasks, much like when confused.","Kada ste omamljeni, ne možete hodati pravolinijski niti obavljati bilo kakve složenije zadatke, slično kao kada ste zbunjeni."
-PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Pogođeni ste strašnom bolešću sa čudnim simptomima i morate savladati nagon za povraćanjem.
-PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Spavate, mirno odmarate. U tamnici punoj čudovišta."
-PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Obuzeti ste potrebom za hranom i znate da nikada nećete biti potpuno zadovoljni.
-PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Otporni ste i ne podložni bilo kojoj vrsti prirodnih ili magičnih bolesti.
-PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Dobro ste opremljeni za kopanje tunela i pravljenje sopstvenog puta kroz tamnicu.
-PropertyDescription,You assess the number of charges in an item simply by picking it up.,Procenjujete broj punjenja u predmetu jednostavnim podizanjem istog.
-PropertyDescription,You can transform into the entity of your choice when you have polymorph control. This control is limited to entities that you have already killed. Forcing a transformation comes at a cost to your nutrition level.,Možete se transformisati u biće po svom izboru kada imate kontrolu polimorfizma. Ova kontrola je ograničena na bića koja ste već ubili. Forsiranje transformacije dolazi po cenu nivoa ishrane.
-PropertyDescription,You cause all around you to devolve into aggression and violence. Even normally peaceful entities will attack each other. Both useful and dangerous this property should be used with caution. You also feel that your nutrition levels are being sapped by this property.,Uzrokujete da svi oko vas postanu agresivni i nasilni. Čak i obično mirna bića će napadati jedno drugo. Ovo svojstvo je i korisno i opasno i trebalo bi ga koristiti s oprezom. Takođe osećate da ovo svojstvo iscrpljuje vaš nivo ishrane.
-PropertyDescription,You feel unstable like you could be consumed with rage at any time.,"Osećate se nestabilno, kao da vas u svakom trenutku može obuzeti bes."
-PropertyDescription,You have an awareness of other entities elsewhere in the dungeon.,Imate svest o drugim bićima na drugim mestima u tamnici.
-PropertyDescription,You learn the divine status of an item simply by picking it up.,Saznajete božanski status predmeta jednostavnim podizanjem istog.
-PropertyDescription,You move in eerie silence and cannot utter even a single syllable out loud.,Krećete se u jezivoj tišini i ne možete izgovoriti ni jedan slog naglas.
-PropertyDescription,Your ability scores are fixed so they cannot degrade but also cannot improve.,"Vaši rezultati sposobnosti su fiksirani tako da se ne mogu pogoršati, ali se ne mogu ni poboljšati."
-PropertyDescription,Your body becomes stiff and rigid almost like it is turning to stone. All movement is difficult and you feel brittle like the next blow will shatter you into a thousand pieces.,"Vaše telo postaje ukočeno i kruto, gotovo kao da se pretvara u kamen. Svako kretanje je teško, a osećate se lomljivo, kao da će vas sledeći udarac razbiti u hiljadu komada."
-PropertyDescription,"Your body is halfway between planes and this means you can pass effortlessly through walls, doors and boulders.","Vaše telo je na pola puta između dimenzija, što znači da možete bez napora prolaziti kroz zidove, vrata i stene."
-PropertyDescription,Your legs feel like strong coils ready to spring into action and over great distances.,Vaše noge deluju kao snažne opruge spremne da skoče u akciju i pređu velike udaljenosti.
-PropertyDescription,Your mere presence aggravates everyone in the dungeon.,Samo vaše prisustvo uznemirava sve u tamnici.
-PropertyDescription,Your metabolism is slowed and you require a lot less nutrition.,Vaš metabolizam je usporen i potrebna vam je mnogo manja ishrana.
-PropertyDescription,"Your mind is protected against deception, trickery and falsehoods.","Vaš um je zaštićen od obmana, trikova i laži."
-PropertyDescription,Your muscles are seized in position leaving you motionless and defenceless.,"Vaši mišići su ukočeni, ostavljajući vas nepokretnim i bespomoćnim."
-PropertyDescription,Your perception and awareness are increased so you can find secret doors and traps without any effort.,Vaša percepcija i svest su povećane tako da možete pronaći tajna vrata i zamke bez ikakvog napora.
-PropertyDescription,Your position is uncertain and with a little effort you can vanish and then reappear.,Vaša pozicija je nesigurna i uz malo truda možete nestati i ponovo se pojaviti.
+PropertyDescription,Sense the divine status of an item simply by picking it up.,Saznajete božanski status predmeta jednostavnim podizanjem istog.
+PropertyDescription,Sense the presence and location of other minds but only when they are beyond your sight.,"Ovo vam omogućava da otkrijete prisustvo i lokaciju umova, ali samo kada ne možete videti."
+PropertyDescription,"Serious impairment of judgement and concentration. You may move or attack in unintended directions and cannot cast spells. Reading scrolls risks mispronouncing their words and producing unexpected effects, while studying books becomes impossible.","Kada ste zbunjeni, teško donosite odluke. Možete se kretati ili napadati u neželjenom pravcu i ne možete bacati čini. Kada čitate svitke, možete pogrešno izgovoriti reči i izazvati drugačije efekte od očekivanih. Nemoguće je dovoljno dugo se fokusirati da biste proučili knjigu."
+PropertyDescription,Severe disorientation leaves you staggering unpredictably and unable to perform even simple tasks.,"Kada ste omamljeni, ne možete hodati pravolinijski niti obavljati bilo kakve složenije zadatke, slično kao kada ste zbunjeni."
+PropertyDescription,"Shimmering magical shield surrounds your body, bolstering your defence and sometimes deflecting incoming missiles.","Sjajni magični štit obavija vaše telo, pomaže u odbrani i ima šansu da odbije dolazeće projektile."
+PropertyDescription,Slowed metabolism reduces your need for food and sustenance.,Vaš metabolizam je usporen i potrebna vam je mnogo manja ishrana.
+PropertyDescription,Special vision that allows you to see warm-bodied entities in the darkness.,Ovaj poseban vid vam omogućava da vidite toplotna tela u mračnim delovima tamnice.
+PropertyDescription,"State of intoxication that brings wildly increased confidence, offset by badly impaired judgement.","U ovom opojnom stanju, vaše povećano samopouzdanje je nadoknađeno lošim prosuđivanjem."
+PropertyDescription,Sudden bouts of sleep that leave you unconscious until you wake naturally or are roused.,Iznenada ćete zaspati dok se ne probudite ili vas neko ne probudi.
+PropertyDescription,"Transform into an entity of your choice, limited to those you have already killed. Forcing a transformation comes at the cost of increased nutritional needs.",Možete se transformisati u biće po svom izboru kada imate kontrolu polimorfizma. Ova kontrola je ograničena na bića koja ste već ubili. Forsiranje transformacije dolazi po cenu nivoa ishrane.
+PropertyDescription,"Transform into another entity, gaining its advantages and disadvantages. If you perish while polymorphed, you will revert to your original form.","Transformišite se u drugo biće sa svim prednostima ili nedostacima koje to nosi. Na primer, bića možda nemaju ruke, ali mogu leteti i disati smrtonosne zrake energije. Kada umrete u svom polimorfisanom obliku, često ćete se vratiti u svoj originalni oblik."
+PropertyDescription,"Transports you to another location on the current level. Uncontrolled teleportation takes you to a random destination, while controlled teleportation lets you choose your destination on the map.","Teleportacija transportuje vaš lik po trenutnom nivou tamnice. Kada nije kontrolisana, ovo je nasumičan događaj koji unosi nepredvidivost u vaše putovanje. Kontrolisana teleportacija omogućava vam da odaberete svoju destinaciju na mapi."
+PropertyDescription,Uncanny awareness of other entities beyond your immediate vicinity.,Imate svest o drugim bićima na drugim mestima u tamnici.
+PropertyDescription,Unfortunate tendency to drop your weapon during combat and stumble on the stairs.,Neveštost uzrokuje da ispuštate oružje tokom borbe i padate niz i uz stepenice.
+PropertyDescription,"Unseen by most, with only a faint distortion of light betraying your presence at close range.",Ovo je stanje nevidljivosti. Krećete se uz blago izobličenje svetlosti koje je primetno samo kada ste u blizini.
+PropertyDescription,Unstable temperament leaves you perpetually on the brink of uncontrollable rage.,"Osećate se nestabilno, kao da vas u svakom trenutku može obuzeti bes."
+PropertyDescription,Vanish and reappear a short distance away in the blink of an eye.,Vaša pozicija je nesigurna i uz malo truda možete nestati i ponovo se pojaviti.
+PropertyDescription,"Visual distortion obscures your true position, making it harder for opponents to land physical and magical attacks.",Ovo uzrokuje da se vaša slika ne pojavljuje tačno tamo gde se nalazite. Za svesne protivnike ovo otežava da vas pogode. Magični efekti poput zraka i udaraca imaju manju šansu da vas pogode.
+PropertyDescription,Well equipped to dig tunnels and carve your own path.,Dobro ste opremljeni za kopanje tunela i pravljenje sopstvenog puta kroz tamnicu.
 PropertyName,aggravation,pogoršanje
 PropertyName,appraisal,procena
 PropertyName,beatitude,blaženstvo
@@ -4563,6 +4739,7 @@ SonicName,explosion,eksplozija
 SonicName,fizzle,fizl
 SonicName,flash,fleš
 SonicName,flute,flauta
+SonicName,focus tap,
 SonicName,food,hrana
 SonicName,footsteps,koraci
 SonicName,force,sila
@@ -4811,6 +4988,26 @@ TraversalPastName,travelled,putovao
 TraversalPresentName,ascend,uzdignut
 TraversalPresentName,descend,spušten
 TraversalPresentName,travel,putuje
+TutorialText,"Earn experience by killing enemies to gain levels.||As you level up, your life and mana increase and you gain feats determined by your class.",
+TutorialText,Help contains an exhaustive index of everything in the game as well as detailed guides on how to play.,
+TutorialText,"Inspect enemies, corpses and items to learn more about them.||Long press, right click or press CTRL+Direction to inspect a square.",
+TutorialText,"Items are found on the floor, in chests and carried by enemies.||Double tap an item to pick it up or use the floor panel.",
+TutorialText,"Keyboard and controller bindings are adjusted in Settings under Interface.||To play exclusively with the keyboard, press TAB to focus, the arrow keys to change focus and BACKSPACE to exit focus.",
+TutorialText,Manage your equipment and items in your inventory.||Review your stats in your character sheet.,
+TutorialText,Many items you find will have unknown effects.||Risk using them to discover what they do or identify them beforehand.,
+TutorialText,"Move into enemies to attack them.||Press SHIFT+Direction to force an attack, which is important for reach, ranged and thrown weapons.",
+TutorialText,"Moving to distant squares will be interrupted if an enemy appears.||Once you've dealt with the enemy, use the continue button to resume your path.",
+TutorialText,"Pathos can be played entirely with a mouse or touch screen.||Tap a square to move, interact or attack.",
+TutorialText,Pathos is an ever-changing world where each adventure is unique.||You'll face different enemies and items will have different effects.,
+TutorialText,"Pathos is turn-based, so take your time in dangerous situations.||Your character moves in eight directions on a grid but sometimes the best move is to wait.",
+TutorialText,The hunger clock is ticking so don't be too picky with what you eat.||Learning which corpses are safe to eat is essential to your survival.,
+TutorialText,"When you have low life or mana, it's a good idea to rest before your next encounter.||Fight groups of enemies by leading them to a choke point such as a doorway or corridor.",
+TutorialText,"You can kick to break open locked doors and chests.||They might be trapped, so use keys or lock picks whenever possible.",
+TutorialText,"You have completed the tutorial and are ready to begin your adventure.||If needed, you can always turn this tutorial back on in Settings under Interface.",
+TutorialText,You may encounter dead ends due to secret doors and illusionary walls.||Patiently search around walls to reveal them.,
+TutorialText,You may stumble into hidden traps on the floor.||Try to untrap them with a chance determined by your trapping skill.,
+TutorialText,Your behaviour in the dungeon affects your karma.||Karma can be spent at shrines to receive powerful boons.,
+TutorialText,Zoom in and out using the mouse wheel or the pinch gesture.||Drag to pan and hold CTRL or ALT to show names for enemies and objects.,
 VolatileName,blaze,požar
 VolatileName,blood,krv
 VolatileName,electricity,elektricitet
