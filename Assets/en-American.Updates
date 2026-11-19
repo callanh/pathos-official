@@ -2,6 +2,8 @@
 - improved title screen layout for mobile devices.
 - removed auto focus of search box in help screen, for mobile devices.
 - removed audio warmup for Android and iOS versions as candidate fix for startup slowdown.
+- new Windows Desktop command line argument to disable audio warmup, eg. `PathosGame.exe disable-warmup`.
+- new Windows splash screen for 'Contrary Games' and company logo.
 
 2026-11-16
 - fix for regression of quick commands on the action menu (eg. click on an item and then press 'G' to take it, while the menu is up).
