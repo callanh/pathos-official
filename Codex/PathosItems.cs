@@ -2579,6 +2579,28 @@ namespace Pathos
         });
       });
 
+      gauntlets_of_tunnelling = AddArmour(ItemType.Gloves, "gauntlets of tunnelling", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("safety gloves", null);
+        I.Glyph = Glyphs.safety_gloves;
+        I.Sonic = Sonics.armour;
+        I.Series = GlovesSeries;
+        I.Rarity = 8;
+        I.Size = Size.Small;
+        I.Weight = Weight.FromUnits(100);
+        I.Material = Materials.leather;
+        I.Essence = ArmourEssence5;
+        I.Price = Gold.FromCoins(50);
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.armour)
+         .SetTalent(Properties.tunnelling);
+        I.SetArmour(Skills.medium_armour, 1);
+        I.AddObviousIngestUse(Motions.eat, 50, Delay.FromTurns(10), Sonics.armour, A =>
+        {
+          A.MajorProperty(Properties.tunnelling);
+        });
+      });
+
       gauntlets_of_power = AddArmour(ItemType.Gloves, "gauntlets of power", I =>
       {
         I.Description = null;
@@ -2596,9 +2618,9 @@ namespace Pathos
         {
           A.IncreaseAbility(Attributes.strength, Dice.One);
         });
+        I.SetArmour(Skills.heavy_armour, 1);
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.armour)
          .SetBoostAttribute(Attributes.strength);
-        I.SetArmour(Skills.heavy_armour, 1);
       });
 
       hawaiian_shirt = AddArmour(ItemType.Shirt, "hawaiian shirt", I =>
@@ -8053,6 +8075,28 @@ namespace Pathos
         I.AddObviousIngestUse(Motions.eat, 20, Delay.FromTurns(10), Sonics.ring, A =>
         {
           A.MajorProperty(Properties.appraisal);
+        });
+      });
+
+      divine_earrings = AddItem(Stocks.ring, ItemType.Earwear, "divine earrings", I =>
+      {
+        I.Description = null;
+        I.SetAppearance("gemstone earrings", null);
+        I.Glyph = Glyphs.gemstone_earrings;
+        I.Sonic = Sonics.ring;
+        I.Series = EarringsSeries;
+        I.Rarity = 5;
+        I.Size = Size.Tiny;
+        I.Weight = Weight.FromUnits(10);
+        I.Material = Materials.gemstone;
+        I.Essence = RingEssence4;
+        I.Price = Gold.FromCoins(120);
+        I.SetWeakness(EarringsWeakness);
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(20), Sonics.ring)
+         .SetTalent(Properties.beatitude);
+        I.AddObviousIngestUse(Motions.eat, 20, Delay.FromTurns(10), Sonics.ring, A =>
+        {
+          A.MajorProperty(Properties.beatitude);
         });
       });
 
@@ -15434,6 +15478,7 @@ namespace Pathos
     public readonly Item gauntlets_of_fumbling;
     public readonly Item gauntlets_of_phasing;
     public readonly Item gauntlets_of_power;
+    public readonly Item gauntlets_of_tunnelling;
     public readonly Item leather_gloves;
 
     // shields.
@@ -15751,6 +15796,7 @@ namespace Pathos
     public readonly Item costume_earrings;
     public readonly Item mute_earrings;
     public readonly Item proof_earrings;
+    public readonly Item divine_earrings;
     public readonly Item expensive_camera;
     public readonly Item fire_horn;
     public readonly Item fly_swatter;

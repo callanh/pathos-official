@@ -670,6 +670,7 @@ namespace Pathos
     public readonly Glyph bone_earrings;
     public readonly Glyph gold_earrings;
     public readonly Glyph pearl_earrings;
+    public readonly Glyph gemstone_earrings;
     public readonly Glyph pearl_golem;
     public readonly Glyph efreeti;
     public readonly Glyph egg;
@@ -2473,6 +2474,7 @@ namespace Pathos
     public readonly Glyph padded_gloves;
     public readonly Glyph black_gloves;
     public readonly Glyph riding_gloves;
+    public readonly Glyph safety_gloves;
     public readonly Glyph etched_helmet;
     public readonly Glyph crested_helmet;
     public readonly Glyph mithril_helmet;
